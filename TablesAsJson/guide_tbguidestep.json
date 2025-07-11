@@ -1,0 +1,3930 @@
+﻿{
+  "20701": {
+    "video_XSX": "",
+    "id": 20701,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "部位破坏",
+      "InKey": "name_20701",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "部分目标甚至首领的某些部位可被破坏，破坏部位会使其无法使用对应部位的能力，甚至暂时失去行动能力。",
+      "InKey": "content_20701",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/21.21",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_20701",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/21.21",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/21.21",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "10801": {
+    "video_XSX": "",
+    "id": 10801,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "备注点击任务奖励",
+      "InKey": "name_10801",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "完成任务后可以在这里领取奖励，千万不要忘记！",
+      "InKey": "content_10801",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10801",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnReceiveAward",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "WBP_LobbyMain",
+    "pos": {},
+    "uiname": {
+      "1": "WBP_MainTask"
+    }
+  },
+  "20201": {
+    "video_XSX": "",
+    "id": 20201,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "秘宝",
+      "InKey": "name_20201",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "秘宝提供基础的战斗属性，凑齐一套还可以激活强力的套装属性，击败首领还可以获得更为强力的传说级秘宝。",
+      "InKey": "content_20201",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/10.10",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_20201",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/10.10",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/10.10",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "20202": {
+    "video_XSX": "",
+    "id": 20202,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "秘宝",
+      "InKey": "name_20202",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "秘宝可以分享给队友进行使用。",
+      "InKey": "content_20202",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/12.12",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_20202",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/12.12",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/12.12",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "31001": {
+    "video_XSX": "",
+    "id": 31001,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注存档保存",
+      "InKey": "name_31001",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "成功通关修正行动层，已解锁存档功能！现在可以保存每次修正行动的权限、潜能密钥、秘宝方案，并使用该方案挑战失序链区。",
+      "InKey": "content_31001",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_31001",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnClickOpenSnap",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": 0,
+        "value": -125
+      }
+    },
+    "uiname": {
+      "1": "BDload"
+    }
+  },
+  "10301": {
+    "video_XSX": "",
+    "id": 10301,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注主线选关入口",
+      "InKey": "name_10301",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "恭喜！已解锁了新世界。请点击进入模式切换。",
+      "InKey": "content_10301",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10301",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnViewShow_UI_MainModeSelection",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "WBP_LobbyMain",
+    "pos": {
+      "1": {
+        "key": -130,
+        "value": 0
+      }
+    },
+    "uiname": {
+      "1": "RGBeginnerGuidance_ChangeMode"
+    }
+  },
+  "10302": {
+    "video_XSX": "",
+    "id": 10302,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "备注主线选关选模式",
+      "InKey": "name_10302",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "请选择常规模式。",
+      "InKey": "content_10302",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10302",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnChangeThumbnailModeItem",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "ModeSelect"
+    }
+  },
+  "10303": {
+    "video_XSX": "",
+    "id": 10303,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "备注主线选关选世界",
+      "InKey": "name_10303",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "请选择炽热焦土，前往探索。",
+      "InKey": "content_10303",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10303",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnSingleModeItemClicked",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "CanvasPanel_LevelGuide_Step2"
+    }
+  },
+  "10304": {
+    "video_XSX": "",
+    "id": 10304,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注主线选关选择难度",
+      "InKey": "name_10304",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "请打开难度选择面板。",
+      "InKey": "content_10304",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10304",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnDifficultLevelPanelShow",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -100,
+        "value": 80
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_LevelGuide_Step3"
+    }
+  },
+  "10305": {
+    "video_XSX": "",
+    "id": 10305,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注主线选关选择难度",
+      "InKey": "name_10305",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "尝试选择新解锁的难度吧。难度越高，目标就越强大。一定要小心谨慎。",
+      "InKey": "content_10305",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10305",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnChangeModeDifficultLevelItem",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -100,
+        "value": 130
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_LevelGuide_Step4"
+    }
+  },
+  "10306": {
+    "video_XSX": "",
+    "id": 10306,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注主线选关选择难度（穿插）",
+      "InKey": "name_10306",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "在这里查看下一难度的解锁条件。",
+      "InKey": "content_10306",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "好的",
+      "InKey": "btncontent_10306",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -100,
+        "value": 80
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_LevelGuide_Step5"
+    }
+  },
+  "21102": {
+    "video_XSX": "/Game/Rouge/Video/BeginnerGuidance/guidebook/guideE.guideE",
+    "id": 21102,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "技能类型",
+      "InKey": "name_21102",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "、主要技能：通过拾取场景中掉落的特定道具补充释放次数。",
+      "InKey": "content_21102",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "/Game/Rouge/Video/BeginnerGuidance/guidebook/guideE.guideE",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_21102",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "/Game/Rouge/Video/BeginnerGuidance/guidebook/guideE.guideE",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "21103": {
+    "video_XSX": "/Game/Rouge/Video/BeginnerGuidance/guidebook/guideC.guideC",
+    "id": 21103,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "技能类型",
+      "InKey": "name_21103",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "、次要技能：无需消耗，可直接释放，但是技能释放有冷却间隔。",
+      "InKey": "content_21103",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "/Game/Rouge/Video/BeginnerGuidance/guidebook/guideC.guideC",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_21103",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "/Game/Rouge/Video/BeginnerGuidance/guidebook/guideC.guideC",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "30502": {
+    "video_XSX": "",
+    "id": 30502,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "首次失败教学备注",
+      "InKey": "name_30502",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "现在进入能力模块提升一下吧。",
+      "InKey": "content_30502",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_30502",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnClickSettlementTalent",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": 0,
+        "value": -125
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_Fail_step1"
+    }
+  },
+  "20601": {
+    "video_XSX": "",
+    "id": 20601,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "弱点伤害",
+      "InKey": "name_20601",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "命中目标弱点，可造成高额伤害，战斗中可提升弱点伤害倍率，从而提升命中弱点的伤害。",
+      "InKey": "content_20601",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/20.20",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_20601",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/20.20",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/20.20",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "30001": {
+    "video_XSX": "",
+    "id": 30001,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "潜能密钥引导备注",
+      "InKey": "name_30001",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "潜能密钥会提供个随机的能力强化效果，激发角色额外的潜能。",
+      "InKey": "content_30001",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_30001",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": true,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "Canvas_SubtitleTip",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "CanvasPanel_SpecificModify_step1"
+    }
+  },
+  "30002": {
+    "video_XSX": "",
+    "id": 30002,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "潜能密钥引导备注",
+      "InKey": "name_30002",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "每次只能选择一个强化效果。",
+      "InKey": "content_30002",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_30002",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "Canvas_SubtitleTip",
+    "nexttriggerevent": "OnGenericModifyFinishInteract",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "CanvasPanel_SpecificModify_step2"
+    }
+  },
+  "10701": {
+    "video_XSX": "",
+    "id": 10701,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "备注点击任务查看",
+      "InKey": "name_10701",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "点击此处可以查看接到的任务，一定不要忘记查看哦！",
+      "InKey": "content_10701",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10701",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnMainTaskDetailViewShow",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "CanvasPanel_MainTask"
+    }
+  },
+  "20101": {
+    "video_XSX": "",
+    "id": 20101,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "权限教学",
+      "InKey": "name_20101",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "战斗中会随机出现不同法则的权限，选择适合的权限，可以大幅提升本场战斗能力。",
+      "InKey": "content_20101",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/5.5",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_20101",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/5.5",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/5.5",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "20102": {
+    "video_XSX": "",
+    "id": 20102,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "权限教学",
+      "InKey": "name_20102",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "权限之间可以进行替换。",
+      "InKey": "content_20102",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/6.6",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_20102",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/6.6",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/6.6",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "30901": {
+    "video_XSX": "",
+    "id": 30901,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "首次成功教学【备注】",
+      "InKey": "name_30901",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "做得好，现在我会重新生成你的数据体。",
+      "InKey": "content_30901",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "下一步",
+      "InKey": "btncontent_30901",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": true,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "10201": {
+    "video_XSX": "",
+    "id": 10201,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注天赋教学简单介绍",
+      "InKey": "name_10201",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "清理病毒会获得源码，使用源码能够重新激活我的能力模块。",
+      "InKey": "content_10201",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "下一步",
+      "InKey": "btncontent_10201",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": 0,
+        "value": -125
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_TalentGuide_Step1"
+    }
+  },
+  "10202": {
+    "video_XSX": "",
+    "id": 10202,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注天赋教学分支介绍",
+      "InKey": "name_10202",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "能力模块拥有不同分支，每个分支都对应一类强化路线。",
+      "InKey": "content_10202",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "下一步",
+      "InKey": "btncontent_10202",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": 0,
+        "value": -125
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_TalentGuide_Step1"
+    }
+  },
+  "10203": {
+    "video_XSX": "",
+    "id": 10203,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注天赋教学源码之力",
+      "InKey": "name_10203",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "消耗足够多源码之后，还可以额外解锁特定能力。",
+      "InKey": "content_10203",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "下一步",
+      "InKey": "btncontent_10203",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": 40,
+        "value": -145
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_TalentGuide_Step3"
+    }
+  },
+  "10204": {
+    "video_XSX": "",
+    "id": 10204,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注天赋教学写入节点",
+      "InKey": "name_10204",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "等你获得了足够的源码，记得及时写入能力模块的节点哦。",
+      "InKey": "content_10204",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "好的",
+      "InKey": "btncontent_10204",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "WBP_CommonTalent",
+    "pos": {
+      "1": {
+        "key": 0,
+        "value": -125
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_TalentGuide_Step4"
+    }
+  },
+  "21001": {
+    "video_XSX": "",
+    "id": 21001,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "战斗矩阵",
+      "InKey": "name_21001",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "通关任意世界难度后解锁战斗矩阵。战斗矩阵中镶嵌模组，模组品质越好提升的属性越高。难度越高可获得的模组品质越好。",
+      "InKey": "content_21001",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/24.24",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_21001",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/24.24",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/24.24",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "30401": {
+    "video_XSX": "",
+    "id": 30401,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "首次商店教学备注",
+      "InKey": "name_30401",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "丘比：商店会售卖三种类型的商品：强化道具、秘宝、恢复道具。",
+      "InKey": "content_30401",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_30401",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": true,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "Canvas_SubtitleTip",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "CanvasPanel_Shop_step1"
+    }
+  },
+  "30402": {
+    "video_XSX": "",
+    "id": 30402,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "首次商店教学备注",
+      "InKey": "name_30402",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "丘比：购买道具需要消耗金币。",
+      "InKey": "content_30402",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_30402",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": true,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "Canvas_SubtitleTip",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "CanvasPanel_Shop_step2"
+    }
+  },
+  "30403": {
+    "video_XSX": "",
+    "id": 30403,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "首次商店教学备注",
+      "InKey": "name_30403",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "丘比：此处可以查看道具的详细信息。",
+      "InKey": "content_30403",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_30403",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": true,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "Canvas_SubtitleTip",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "CanvasPanel_Shop_step3"
+    }
+  },
+  "30404": {
+    "video_XSX": "",
+    "id": 30404,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "首次商店教学备注",
+      "InKey": "name_30404",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "丘比：确认价格后，就可以进行购买了。",
+      "InKey": "content_30404",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_30404",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": true,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "Canvas_SubtitleTip",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "CanvasPanel_Shop_step4"
+    }
+  },
+  "11101": {
+    "video_XSX": "",
+    "id": 11101,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注模式切换入口",
+      "InKey": "name_11101",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "恭喜解锁新模式修正行动，去看看吧。",
+      "InKey": "content_11101",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_11101",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnViewShow_UI_MainModeSelection",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "WBP_LobbyMain",
+    "pos": {
+      "1": {
+        "key": -130,
+        "value": 0
+      }
+    },
+    "uiname": {
+      "1": "RGBeginnerGuidance_ChangeMode"
+    }
+  },
+  "11102": {
+    "video_XSX": "",
+    "id": 11102,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注选择爬塔模式",
+      "InKey": "name_11102",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "点击此处进入修正行动。",
+      "InKey": "content_11102",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_11102",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnViewShow_UI_ClimbTower",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": 60,
+        "value": 0
+      }
+    },
+    "uiname": {
+      "1": "ModeSelect2"
+    }
+  },
+  "11103": {
+    "video_XSX": "",
+    "id": 11103,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注介绍",
+      "InKey": "name_11103",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "只有故障积分满足该层要求时才能进入修正行动。",
+      "InKey": "content_11103",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "下一步",
+      "InKey": "btncontent_11103",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": 80,
+        "value": 0
+      }
+    },
+    "uiname": {
+      "1": "Guidance_DebuffList"
+    }
+  },
+  "11104": {
+    "video_XSX": "",
+    "id": 11104,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注介绍最低要求",
+      "InKey": "name_11104",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "选择的故障协议数量越多，探索难度就越高。",
+      "InKey": "content_11104",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "下一步",
+      "InKey": "btncontent_11104",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -20,
+        "value": 80
+      }
+    },
+    "uiname": {
+      "1": "Guidance_DebuffList2"
+    }
+  },
+  "11105": {
+    "video_XSX": "",
+    "id": 11105,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注介绍异象词条",
+      "InKey": "name_11105",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "每层有不同的紊乱效果，可以根据效果选择不同的英雄出战。",
+      "InKey": "content_11105",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "下一步",
+      "InKey": "btncontent_11105",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -120,
+        "value": 50
+      }
+    },
+    "uiname": {
+      "1": "Guidance_Recommended"
+    }
+  },
+  "11106": {
+    "video_XSX": "",
+    "id": 11106,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注介绍每日奖励",
+      "InKey": "name_11106",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "派遣英雄可以收获行动积分，每小时可以领取一次行动积分，通过积分兑换奖励。",
+      "InKey": "content_11106",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "好的",
+      "InKey": "btncontent_11106",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -120,
+        "value": -50
+      }
+    },
+    "uiname": {
+      "1": "Guidance_DailyRewards"
+    }
+  },
+  "31301": {
+    "video_XSX": "",
+    "id": 31301,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注模式切换入口",
+      "InKey": "name_31301",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "已解锁新模式失序链区！",
+      "InKey": "content_31301",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_31301",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnViewShow_UI_MainModeSelection",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "WBP_LobbyMain",
+    "pos": {
+      "1": {
+        "key": -130,
+        "value": 0
+      }
+    },
+    "uiname": {
+      "1": "RGBeginnerGuidance_ChangeMode"
+    }
+  },
+  "10601": {
+    "video_XSX": "",
+    "id": 10601,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注点击开始游戏",
+      "InKey": "name_10601",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "根据收集到的坐标数据，我成功定位到了法则们的位置，快出发吧！",
+      "InKey": "content_10601",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10601",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnClickedLobbyStartMatchButton",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "WBP_LobbyMain",
+    "pos": {
+      "1": {
+        "key": -130,
+        "value": -40
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_start"
+    }
+  },
+  "20000": {
+    "video_XSX": "",
+    "id": 20000,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "战斗教程",
+      "InKey": "name_20000",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "战斗中可选择权限和秘宝等物品提升实力，快组建最适合自己的强力组合吧！",
+      "InKey": "content_20000",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/22.22",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_20000",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/22.22",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/22.22",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "20001": {
+    "video_XSX": "",
+    "id": 20001,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "战斗教程",
+      "InKey": "name_20001",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "战斗失败后，也不会有任何损失。",
+      "InKey": "content_20001",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/23.23",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_20001",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/23.23",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/23.23",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "10100": {
+    "video_XSX": "",
+    "id": 10100,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "备注主线点击引导（已屏蔽）",
+      "InKey": "name_10100",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "快点击左侧的提示，有人正在终端内联系你！",
+      "InKey": "content_10100",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10100",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnMainTaskDialogueShow",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "WBP_MainTask_RequestConversation",
+    "pos": {},
+    "uiname": {
+      "1": "BtnOpenDialogue"
+    }
+  },
+  "10101": {
+    "video_XSX": "",
+    "id": 10101,
+    "pivot": {
+      "1": {
+        "key": 100,
+        "value": 100
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注角色教学入口",
+      "InKey": "name_10101",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "接下来的任务非常重要，先挑选喜欢的角色吧。",
+      "InKey": "content_10101",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10101",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnRoleMainShow",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "RoleSelectButton"
+    }
+  },
+  "10102": {
+    "video_XSX": "",
+    "id": 10102,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注角色教学切角色",
+      "InKey": "name_10102",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "点击下方的角色头像可以选中角色，点击出战即可使用该角色。",
+      "InKey": "content_10102",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "下一步",
+      "InKey": "btncontent_10102",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": 0,
+        "value": -140
+      }
+    },
+    "uiname": {
+      "1": "Guidance_RoleChangeList"
+    }
+  },
+  "10103": {
+    "video_XSX": "",
+    "id": 10103,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "备注角色教学属性",
+      "InKey": "name_10103",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "请仔细查看角色属性和技能特点，这样在战斗中才能更加得心应手。",
+      "InKey": "content_10103",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "下一步",
+      "InKey": "btncontent_10103",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "CanvasPanel_RoleGuide_Step3"
+    }
+  },
+  "10104": {
+    "video_XSX": "",
+    "id": 10104,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注角色教学武器",
+      "InKey": "name_10104",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "每次战斗只能携带一把武器，后续会获得更多新武器。",
+      "InKey": "content_10104",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "下一步",
+      "InKey": "btncontent_10104",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -120,
+        "value": 0
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_RoleGuide_Step4"
+    }
+  },
+  "10105": {
+    "video_XSX": "",
+    "id": 10105,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "备注角色教学返回大厅",
+      "InKey": "name_10105",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "一切准备就绪后，就准备执行任务吧！",
+      "InKey": "content_10105",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "好的",
+      "InKey": "btncontent_10105",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "20901": {
+    "video_XSX": "",
+    "id": 20901,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "能力模块",
+      "InKey": "name_20901",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "激活能力模块可以提升不同的能力，让每次探索变得更加轻松。攻击模块：提升各项攻击能力。生存模块：提升各项生存能力，包括体力、护盾以及救援能力。资源模块：提升每次探索中的资源获取效率，包括金币，商店打折等。",
+      "InKey": "content_20901",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/19.19",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_20901",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/19.19",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/19.19",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "20902": {
+    "video_XSX": "",
+    "id": 20902,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "能力模块",
+      "InKey": "name_20902",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "每次探索均可获得源码，难度越高可获得的源码越多。",
+      "InKey": "content_20902",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/19.19",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_20902",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/19.19",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/19.19",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "30301": {
+    "video_XSX": "",
+    "id": 30301,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "二次获得权限引导备注",
+      "InKey": "name_30301",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "不同类型的权限有不同的特殊效果，注意针对特殊效果选择后续的权限，可以达成事半功倍的效果。",
+      "InKey": "content_30301",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_30301",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": true,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "Canvas_SubtitleTip",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "CanvasPanel_SpecificModify_step4"
+    }
+  },
+  "30302": {
+    "video_XSX": "",
+    "id": 30302,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "二次获得权限引导备注",
+      "InKey": "name_30302",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "请选择一个最喜欢的权限吧。",
+      "InKey": "content_30302",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_30302",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "Canvas_SubtitleTip",
+    "nexttriggerevent": "OnGenericModifyFinishInteract",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "CanvasPanel_SpecificModify_step4"
+    }
+  },
+  "11001": {
+    "video_XSX": "",
+    "id": 11001,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注主线选关入口",
+      "InKey": "name_11001",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "恭喜！已解锁了更高的挑战难度。请点击进入模式切换。",
+      "InKey": "content_11001",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_11001",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnViewShow_UI_MainModeSelection",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "WBP_LobbyMain",
+    "pos": {
+      "1": {
+        "key": -130,
+        "value": 0
+      }
+    },
+    "uiname": {
+      "1": "RGBeginnerGuidance_ChangeMode"
+    }
+  },
+  "11002": {
+    "video_XSX": "",
+    "id": 11002,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "备注主线选关选模式",
+      "InKey": "name_11002",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "请选择常规模式。",
+      "InKey": "content_11002",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_11002",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnChangeThumbnailModeItem",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "ModeSelect"
+    }
+  },
+  "11003": {
+    "video_XSX": "",
+    "id": 11003,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注主线选关选择难度",
+      "InKey": "name_11003",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "请打开难度选择面板。",
+      "InKey": "content_11003",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_11003",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnDifficultLevelPanelShow",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -100,
+        "value": 80
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_LevelGuide_Step3"
+    }
+  },
+  "11004": {
+    "video_XSX": "",
+    "id": 11004,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注主线选关选择难度",
+      "InKey": "name_11004",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "尝试选择新解锁的难度吧。难度越高，目标就越强大。一定要小心谨慎。",
+      "InKey": "content_11004",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_11004",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnChangeModeDifficultLevelItem",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -100,
+        "value": 130
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_LevelGuide_Step4"
+    }
+  },
+  "11005": {
+    "video_XSX": "",
+    "id": 11005,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注主线选关选择难度（穿插）",
+      "InKey": "name_11005",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "在这里查看下一难度的解锁条件。",
+      "InKey": "content_11005",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "好的",
+      "InKey": "btncontent_11005",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -100,
+        "value": 80
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_LevelGuide_Step5"
+    }
+  },
+  "31201": {
+    "video_XSX": "",
+    "id": 31201,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注模式切换入口",
+      "InKey": "name_31201",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "已解锁新模式病毒狂潮！",
+      "InKey": "content_31201",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_31201",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnViewShow_UI_MainModeSelection",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "WBP_LobbyMain",
+    "pos": {
+      "1": {
+        "key": -130,
+        "value": 0
+      }
+    },
+    "uiname": {
+      "1": "RGBeginnerGuidance_ChangeMode"
+    }
+  },
+  "10501": {
+    "video_XSX": "",
+    "id": 10501,
+    "pivot": {
+      "1": {
+        "key": 100,
+        "value": 100
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注装备模组入口",
+      "InKey": "name_10501",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "恭喜你获得了模组，装备模组可以大幅提升角色能力。",
+      "InKey": "content_10501",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10501",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnRoleMainShow",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "RoleSelectButton"
+    }
+  },
+  "10502": {
+    "video_XSX": "",
+    "id": 10502,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注装备模组入口",
+      "InKey": "name_10502",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "请进入战斗矩阵界面，将获得的模组装配到战斗矩阵中。",
+      "InKey": "content_10502",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10502",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnViewShow_UI_Puzzle",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -120,
+        "value": -115
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_ChipEquipGuide_EnterChip"
+    }
+  },
+  "10503": {
+    "video_XSX": "",
+    "id": 10503,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注装备模组模组介绍",
+      "InKey": "name_10503",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "每个模组由不同的模块组成，鼠标悬停可查看模组的具体属性。",
+      "InKey": "content_10503",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "下一步",
+      "InKey": "btncontent_10503",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": 0,
+        "value": -110
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_PuzzleGuide_Step1"
+    }
+  },
+  "10504": {
+    "video_XSX": "",
+    "id": 10504,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注装备模组槽位介绍",
+      "InKey": "name_10504",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "每个角色的战斗矩阵形状不同。",
+      "InKey": "content_10504",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "下一步",
+      "InKey": "btncontent_10504",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": 0,
+        "value": 310
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_PuzzleGuide_Step4"
+    }
+  },
+  "10505": {
+    "video_XSX": "",
+    "id": 10505,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注装备模组装备",
+      "InKey": "name_10505",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "将模组拖拽到战斗矩阵之中，就可以获得属性提升。",
+      "InKey": "content_10505",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "知道了",
+      "InKey": "btncontent_10505",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": 0,
+        "value": -110
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_PuzzleGuide_Step1"
+    }
+  },
+  "30701": {
+    "video_XSX": "",
+    "id": 30701,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "初次获得权限引导备注",
+      "InKey": "name_30701",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "丘比：权限效果同样会添加到玩家的状态数据内，可通过开启状态界面查看已获得的权限详情。",
+      "InKey": "content_30701",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_30701",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": true,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "Canvas_SubtitleTip",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "CanvasPanel_HUD_step1"
+    }
+  },
+  "31303": {
+    "video_XSX": "",
+    "id": 31303,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注介绍门票",
+      "InKey": "name_31303",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "每个进入失序链区的队伍都需要队长消耗指定数量的定位器才可以定位失序区域",
+      "InKey": "content_31303",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "好的",
+      "InKey": "btncontent_31303",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnClickOpenSnap",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -120,
+        "value": 50
+      }
+    },
+    "uiname": {
+      "1": "TicketGuidance_01"
+    }
+  },
+  "31302": {
+    "video_XSX": "",
+    "id": 31302,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注选择失序链区",
+      "InKey": "name_31302",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "点击此处进入失序链区",
+      "InKey": "content_31302",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_31302",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnViewShow_UI_BossRush",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -120,
+        "value": 0
+      }
+    },
+    "uiname": {
+      "1": "ModeSelect4"
+    }
+  },
+  "31203": {
+    "video_XSX": "",
+    "id": 31203,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注介绍门票",
+      "InKey": "name_31203",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "消耗抑制代码参与病毒狂潮，队伍需拥有指定数量的抑制代码才可进入病毒狂潮",
+      "InKey": "content_31203",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "好的",
+      "InKey": "btncontent_31203",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -120,
+        "value": 50
+      }
+    },
+    "uiname": {
+      "1": "DifficultyGuidance"
+    }
+  },
+  "31202": {
+    "video_XSX": "",
+    "id": 31202,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注选择病毒狂潮",
+      "InKey": "name_31202",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "点击此处进入病毒狂潮",
+      "InKey": "content_31202",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_31202",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnViewShow_UI_SurvivalPanel",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -120,
+        "value": 0
+      }
+    },
+    "uiname": {
+      "1": "ModeSelect3"
+    }
+  },
+  "30601": {
+    "video_XSX": "",
+    "id": 30601,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "初次获得权限引导备注",
+      "InKey": "name_30601",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "权限是法则们提供的能力，可以针对个固定能力带来不同的强化效果。",
+      "InKey": "content_30601",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_30601",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": true,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "Canvas_SubtitleTip",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "CanvasPanel_GenericModify_step1",
+      "2": "CanvasPanel_GenericModify_step1_1"
+    }
+  },
+  "20801": {
+    "video_XSX": "",
+    "id": 20801,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "能力词条",
+      "InKey": "name_20801",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "随着难度提升，目标会出现强化词条，不同词条的目标需要运用不同攻击策略。",
+      "InKey": "content_20801",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/25.25",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_20801",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/25.25",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/25.25",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "30902": {
+    "video_XSX": "",
+    "id": 30902,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "首次成功教学【备注】",
+      "InKey": "name_30902",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "安全起见，本次作用于数据体的增益都将被净化，比如权限和与秘宝带来的增益。但你收集到的模组与源码等道具则可以安全带回来。",
+      "InKey": "content_30902",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "好的",
+      "InKey": "btncontent_30902",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": true,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "30201": {
+    "video_XSX": "",
+    "id": 30201,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "初次权限升级引导备注",
+      "InKey": "name_30201",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "先选择一个最适合的权限进行提升。",
+      "InKey": "content_30201",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_30201",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "Canvas_SubtitleTip",
+    "nexttriggerevent": "OnGenericModifyFinishInteract",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "CanvasPanel_SpecificModify_step4"
+    }
+  },
+  "30801": {
+    "video_XSX": "",
+    "id": 30801,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "初次权限升级引导备注",
+      "InKey": "name_30801",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "丘比：可以在这里查看权限等级。",
+      "InKey": "content_30801",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_30801",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": true,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "Canvas_SubtitleTip",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "CanvasPanel_HUD_step1"
+    }
+  },
+  "30501": {
+    "video_XSX": "",
+    "id": 30501,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "首次失败教学备注",
+      "InKey": "name_30501",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "安全起见，本次作用于数据体的增益都将被净化，比如权限和与秘宝带来的增益。",
+      "InKey": "content_30501",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "下一步",
+      "InKey": "btncontent_30501",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": true,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "21101": {
+    "video_XSX": "/Game/Rouge/Video/BeginnerGuidance/guidebook/guideQ.guideQ",
+    "id": 21101,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "技能类型",
+      "InKey": "name_21101",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "角色一共有三种类型技能：、终极技能：通过时间回复能量，能量满后可进行释放。",
+      "InKey": "content_21101",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "/Game/Rouge/Video/BeginnerGuidance/guidebook/guideQ.guideQ",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_21101",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "/Game/Rouge/Video/BeginnerGuidance/guidebook/guideQ.guideQ",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "10901": {
+    "video_XSX": "",
+    "id": 10901,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "备注熟练度入口",
+      "InKey": "name_10901",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "当前使用角色成功提升了熟练度等级，去看看吧。",
+      "InKey": "content_10901",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10901",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnRoleMainShow",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": 0,
+        "value": 50
+      }
+    },
+    "uiname": {
+      "1": "RoleSelectButton"
+    }
+  },
+  "10902": {
+    "video_XSX": "",
+    "id": 10902,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注熟练度入口",
+      "InKey": "name_10902",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "请点击熟练度的入口。",
+      "InKey": "content_10902",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10902",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnProficiencyViewShow",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": 40,
+        "value": 0
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_ProficiencyGuide_Step2"
+    }
+  },
+  "10903": {
+    "video_XSX": "",
+    "id": 10903,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注熟练度等级介绍",
+      "InKey": "name_10903",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "每个角色共有个熟练度等级。每次战斗，都会获得熟练度经验。",
+      "InKey": "content_10903",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "下一步",
+      "InKey": "btncontent_10903",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": 0,
+        "value": -110
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_ProficiencyGuide_Step3"
+    }
+  },
+  "10904": {
+    "video_XSX": "",
+    "id": 10904,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注熟练度奖励介绍",
+      "InKey": "name_10904",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "请领取当前熟练度等级的奖励吧。",
+      "InKey": "content_10904",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10904",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnViewShow_UI_Common_GetProps",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": 0,
+        "value": -110
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_ProficiencyGuide_Step7"
+    }
+  },
+  "10905": {
+    "video_XSX": "",
+    "id": 10905,
+    "pivot": {
+      "1": {
+        "key": 100,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注熟练度领取奖励",
+      "InKey": "name_10905",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "点击确定领取。",
+      "InKey": "content_10905",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10905",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnGetPropsViewHide",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -120,
+        "value": 50
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_ProficiencyGuide_Step5"
+    }
+  },
+  "10906": {
+    "video_XSX": "",
+    "id": 10906,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注熟练度故事介绍",
+      "InKey": "name_10906",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "随着熟练度等级提升，角色的相关故事也会逐步解锁，请点击查看当前角色的故事吧。",
+      "InKey": "content_10906",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10906",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnViewShow_UI_ProficiencyLegendSynopsis",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -120,
+        "value": 0
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_ProficiencyGuide_Step6"
+    }
+  },
+  "21201": {
+    "video_XSX": "",
+    "id": 21201,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "狂暴",
+      "InKey": "name_21201",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "一定时间未击败的目标会进入狂暴状态，攻击力永久提升。",
+      "InKey": "content_21201",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/26.26",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_21201",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/26.26",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/26.26",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "31101": {
+    "video_XSX": "",
+    "id": 31101,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注介绍存档选择",
+      "InKey": "name_31101",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "点击此处查看存档内容。",
+      "InKey": "content_31101",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_31101",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnClickOpenSnap",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -120,
+        "value": -50
+      }
+    },
+    "uiname": {
+      "1": "Guidance_BDchoose"
+    }
+  },
+  "10401": {
+    "video_XSX": "",
+    "id": 10401,
+    "pivot": {
+      "1": {
+        "key": 100,
+        "value": 100
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注更换武器入口",
+      "InKey": "name_10401",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "恭喜你解锁了当前角色的新武器！快去看看吧。",
+      "InKey": "content_10401",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10401",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnRoleMainShow",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "RoleSelectButton"
+    }
+  },
+  "10402": {
+    "video_XSX": "",
+    "id": 10402,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注更换武器入口",
+      "InKey": "name_10402",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "先进入熟练度界面，领取新解锁的武器。",
+      "InKey": "content_10402",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10402",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnProficiencyViewShow",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": 40,
+        "value": 0
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_ProficiencyGuide_Step2"
+    }
+  },
+  "10403": {
+    "video_XSX": "",
+    "id": 10403,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注更换武器奖励介绍",
+      "InKey": "name_10403",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "先领取这把新解锁的武器吧。",
+      "InKey": "content_10403",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10403",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnViewShow_UI_Common_GetProps",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": 0,
+        "value": -105
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_ProficiencyGuide_Step8"
+    }
+  },
+  "10404": {
+    "video_XSX": "",
+    "id": 10404,
+    "pivot": {
+      "1": {
+        "key": 100,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注更换武器领取奖励",
+      "InKey": "name_10404",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "点击确定领取。",
+      "InKey": "content_10404",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10404",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnGetPropsViewHide",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -120,
+        "value": 50
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_ProficiencyGuide_Step5"
+    }
+  },
+  "10405": {
+    "video_XSX": "",
+    "id": 10405,
+    "pivot": {
+      "1": {
+        "key": 100,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注更换武器退出熟练度特殊奖励页面",
+      "InKey": "name_10405",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "返回熟练度页面。",
+      "InKey": "content_10405",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10405",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnProfySpecialAwardDetailPanelHide",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -130,
+        "value": -125
+      }
+    },
+    "uiname": {
+      "1": "CanvasPanel_WeaponChangeGuide_ExitSpecialAwardPanel"
+    }
+  },
+  "10406": {
+    "video_XSX": "",
+    "id": 10406,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "备注更换武器入口",
+      "InKey": "name_10406",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "请前往武器装备界面进行更换。",
+      "InKey": "content_10406",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10406",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnWeaponSubViewShow",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "ViewSetToggle_UI_WeaponMain"
+    }
+  },
+  "10407": {
+    "video_XSX": "",
+    "id": 10407,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "备注更换武器",
+      "InKey": "name_10407",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "请点击更换武器。",
+      "InKey": "content_10407",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10407",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "OnClickWeaponBagItem",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "Guide_weapon"
+    }
+  },
+  "10408": {
+    "video_XSX": "",
+    "id": 10408,
+    "pivot": {
+      "1": {
+        "key": 0,
+        "value": 0
+      }
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "备注更换武器",
+      "InKey": "name_10408",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "请点击装备武器。",
+      "InKey": "content_10408",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_10408",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "EquippedWeaponInfoChanged",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {
+      "1": {
+        "key": -120,
+        "value": -50
+      }
+    },
+    "uiname": {
+      "1": "Guide_equipe"
+    }
+  },
+  "30602": {
+    "video_XSX": "",
+    "id": 30602,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "初次获得权限引导备注",
+      "InKey": "name_30602",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "不同权限提供的强化能力有很大差别，在选择时请谨慎思考。",
+      "InKey": "content_30602",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_30602",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": true,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "Canvas_SubtitleTip",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": true,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "CanvasPanel_GenericModify_step2"
+    }
+  },
+  "30603": {
+    "video_XSX": "",
+    "id": 30603,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "初次获得权限引导备注",
+      "InKey": "name_30603",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "先选择一个最适合的强化效果吧。",
+      "InKey": "content_30603",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_30603",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "",
+    "bRaiseTargetLayer": true,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "",
+    "CanSkip": false,
+    "TipUIName": "Canvas_SubtitleTip",
+    "nexttriggerevent": "OnGenericModifyFinishInteract",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {
+      "1": "CanvasPanel_SpecificModify_step2"
+    }
+  },
+  "20502": {
+    "video_XSX": "",
+    "id": 20502,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "数字祈愈程序",
+      "InKey": "name_20502",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "数字祈愈程序护盾可提升护盾上限，同时回复等量护盾值。",
+      "InKey": "content_20502",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/13.13",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_20502",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/13.13",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/13.13",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "20501": {
+    "video_XSX": "",
+    "id": 20501,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "数字祈愈程序",
+      "InKey": "name_20501",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "数字祈愈程序体力可提升体力上限，同时回复等量体力值。",
+      "InKey": "content_20501",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/4.4",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_20501",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/4.4",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/4.4",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "20402": {
+    "video_XSX": "",
+    "id": 20402,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "道具商店",
+      "InKey": "name_20402",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "购买所需的金币在击败目标后掉落，也可以通过击碎场景中的箱子获得。",
+      "InKey": "content_20402",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/3.3",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_20402",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/3.3",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/3.3",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  },
+  "20401": {
+    "video_XSX": "",
+    "id": 20401,
+    "pivot": {},
+    "nameLocMeta": {
+      "InTextLiteral": "道具商店",
+      "InKey": "name_20401",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "商店中可购买多种类型的道具，消耗金币可进行购买。有一定概率会出现随机权限可供购买。",
+      "InKey": "content_20401",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "video": "",
+    "image_PS": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/8.8",
+    "btncontentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "btncontent_20401",
+      "InNamespace": "guide_TBGuideStep"
+    },
+    "image_XSX": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/8.8",
+    "bRaiseTargetLayer": false,
+    "TipHeadIconPath": "",
+    "CanClickToNextStep": false,
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/guidebook/8.8",
+    "CanSkip": false,
+    "TipUIName": "",
+    "nexttriggerevent": "",
+    "video_PS": "",
+    "NotCanClickSelectArea": false,
+    "bpname": "",
+    "pos": {},
+    "uiname": {}
+  }
+}

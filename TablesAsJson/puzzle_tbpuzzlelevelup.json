@@ -1,0 +1,2471 @@
+﻿{
+  "0": {
+    "resetGetResources": {
+      "1": {
+        "quality": 0,
+        "resources": {}
+      },
+      "2": {
+        "quality": 1,
+        "resources": {}
+      },
+      "3": {
+        "quality": 2,
+        "resources": {}
+      },
+      "4": {
+        "quality": 3,
+        "resources": {}
+      },
+      "5": {
+        "quality": 4,
+        "resources": {}
+      },
+      "6": {
+        "quality": 5,
+        "resources": {}
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 0,
+        "key": 1
+      },
+      "2": {
+        "value": 0,
+        "key": 2
+      },
+      "3": {
+        "value": 0,
+        "key": 3
+      },
+      "4": {
+        "value": 0,
+        "key": 4
+      },
+      "5": {
+        "value": 0,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 0,
+        "resources": {}
+      },
+      "2": {
+        "quality": 1,
+        "resources": {}
+      },
+      "3": {
+        "quality": 2,
+        "resources": {}
+      },
+      "4": {
+        "quality": 3,
+        "resources": {}
+      },
+      "5": {
+        "quality": 4,
+        "resources": {}
+      },
+      "6": {
+        "quality": 5,
+        "resources": {}
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 200,
+        "key": 1
+      },
+      "2": {
+        "value": 400,
+        "key": 2
+      },
+      "3": {
+        "value": 600,
+        "key": 3
+      },
+      "4": {
+        "value": 1200,
+        "key": 4
+      },
+      "5": {
+        "value": 1200,
+        "key": 5
+      }
+    },
+    "ID": 0
+  },
+  "1": {
+    "resetGetResources": {
+      "1": {
+        "quality": 0,
+        "resources": {
+          "1": {
+            "value": 64,
+            "key": 99010
+          }
+        }
+      },
+      "2": {
+        "quality": 1,
+        "resources": {
+          "1": {
+            "value": 64,
+            "key": 99010
+          }
+        }
+      },
+      "3": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 96,
+            "key": 99010
+          }
+        }
+      },
+      "4": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 128,
+            "key": 99010
+          }
+        }
+      },
+      "5": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 192,
+            "key": 99010
+          }
+        }
+      },
+      "6": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 192,
+            "key": 99010
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 200,
+        "key": 1
+      },
+      "2": {
+        "value": 400,
+        "key": 2
+      },
+      "3": {
+        "value": 600,
+        "key": 3
+      },
+      "4": {
+        "value": 1000,
+        "key": 4
+      },
+      "5": {
+        "value": 1000,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 0,
+        "resources": {
+          "1": {
+            "value": 80,
+            "key": 99010
+          }
+        }
+      },
+      "2": {
+        "quality": 1,
+        "resources": {
+          "1": {
+            "value": 80,
+            "key": 99010
+          }
+        }
+      },
+      "3": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 120,
+            "key": 99010
+          }
+        }
+      },
+      "4": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 160,
+            "key": 99010
+          }
+        }
+      },
+      "5": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 240,
+            "key": 99010
+          }
+        }
+      },
+      "6": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 240,
+            "key": 99010
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 320,
+        "key": 1
+      },
+      "2": {
+        "value": 640,
+        "key": 2
+      },
+      "3": {
+        "value": 960,
+        "key": 3
+      },
+      "4": {
+        "value": 1760,
+        "key": 4
+      },
+      "5": {
+        "value": 1760,
+        "key": 5
+      }
+    },
+    "ID": 1
+  },
+  "2": {
+    "resetGetResources": {
+      "1": {
+        "quality": 0,
+        "resources": {
+          "1": {
+            "value": 70,
+            "key": 99010
+          }
+        }
+      },
+      "2": {
+        "quality": 1,
+        "resources": {
+          "1": {
+            "value": 70,
+            "key": 99010
+          }
+        }
+      },
+      "3": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 106,
+            "key": 99010
+          }
+        }
+      },
+      "4": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 141,
+            "key": 99010
+          }
+        }
+      },
+      "5": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 211,
+            "key": 99010
+          }
+        }
+      },
+      "6": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 211,
+            "key": 99010
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 440,
+        "key": 1
+      },
+      "2": {
+        "value": 880,
+        "key": 2
+      },
+      "3": {
+        "value": 1320,
+        "key": 3
+      },
+      "4": {
+        "value": 2200,
+        "key": 4
+      },
+      "5": {
+        "value": 2200,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 0,
+        "resources": {
+          "1": {
+            "value": 88,
+            "key": 99010
+          }
+        }
+      },
+      "2": {
+        "quality": 1,
+        "resources": {
+          "1": {
+            "value": 88,
+            "key": 99010
+          }
+        }
+      },
+      "3": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 132,
+            "key": 99010
+          }
+        }
+      },
+      "4": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 176,
+            "key": 99010
+          }
+        }
+      },
+      "5": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 264,
+            "key": 99010
+          }
+        }
+      },
+      "6": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 264,
+            "key": 99010
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 512,
+        "key": 1
+      },
+      "2": {
+        "value": 1024,
+        "key": 2
+      },
+      "3": {
+        "value": 1536,
+        "key": 3
+      },
+      "4": {
+        "value": 2720,
+        "key": 4
+      },
+      "5": {
+        "value": 2720,
+        "key": 5
+      }
+    },
+    "ID": 2
+  },
+  "3": {
+    "resetGetResources": {
+      "1": {
+        "quality": 0,
+        "resources": {
+          "1": {
+            "value": 77,
+            "key": 99010
+          }
+        }
+      },
+      "2": {
+        "quality": 1,
+        "resources": {
+          "1": {
+            "value": 77,
+            "key": 99010
+          }
+        }
+      },
+      "3": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 115,
+            "key": 99010
+          }
+        }
+      },
+      "4": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 154,
+            "key": 99010
+          }
+        }
+      },
+      "5": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 230,
+            "key": 99010
+          }
+        }
+      },
+      "6": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 230,
+            "key": 99010
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 720,
+        "key": 1
+      },
+      "2": {
+        "value": 1440,
+        "key": 2
+      },
+      "3": {
+        "value": 2160,
+        "key": 3
+      },
+      "4": {
+        "value": 3600,
+        "key": 4
+      },
+      "5": {
+        "value": 3600,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 0,
+        "resources": {
+          "1": {
+            "value": 96,
+            "key": 99010
+          }
+        }
+      },
+      "2": {
+        "quality": 1,
+        "resources": {
+          "1": {
+            "value": 96,
+            "key": 99010
+          }
+        }
+      },
+      "3": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 144,
+            "key": 99010
+          }
+        }
+      },
+      "4": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 192,
+            "key": 99010
+          }
+        }
+      },
+      "5": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 288,
+            "key": 99010
+          }
+        }
+      },
+      "6": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 288,
+            "key": 99010
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 776,
+        "key": 1
+      },
+      "2": {
+        "value": 1552,
+        "key": 2
+      },
+      "3": {
+        "value": 2328,
+        "key": 3
+      },
+      "4": {
+        "value": 4080,
+        "key": 4
+      },
+      "5": {
+        "value": 4080,
+        "key": 5
+      }
+    },
+    "ID": 3
+  },
+  "4": {
+    "resetGetResources": {
+      "1": {
+        "quality": 0,
+        "resources": {
+          "1": {
+            "value": 83,
+            "key": 99010
+          }
+        }
+      },
+      "2": {
+        "quality": 1,
+        "resources": {
+          "1": {
+            "value": 83,
+            "key": 99010
+          }
+        }
+      },
+      "3": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 125,
+            "key": 99010
+          }
+        }
+      },
+      "4": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 166,
+            "key": 99010
+          }
+        }
+      },
+      "5": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 250,
+            "key": 99010
+          }
+        }
+      },
+      "6": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 250,
+            "key": 99010
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 1040,
+        "key": 1
+      },
+      "2": {
+        "value": 2080,
+        "key": 2
+      },
+      "3": {
+        "value": 3120,
+        "key": 3
+      },
+      "4": {
+        "value": 5200,
+        "key": 4
+      },
+      "5": {
+        "value": 5200,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 0,
+        "resources": {
+          "1": {
+            "value": 104,
+            "key": 99010
+          }
+        }
+      },
+      "2": {
+        "quality": 1,
+        "resources": {
+          "1": {
+            "value": 104,
+            "key": 99010
+          }
+        }
+      },
+      "3": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 156,
+            "key": 99010
+          }
+        }
+      },
+      "4": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 208,
+            "key": 99010
+          }
+        }
+      },
+      "5": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 312,
+            "key": 99010
+          }
+        }
+      },
+      "6": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 312,
+            "key": 99010
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 992,
+        "key": 1
+      },
+      "2": {
+        "value": 1984,
+        "key": 2
+      },
+      "3": {
+        "value": 2976,
+        "key": 3
+      },
+      "4": {
+        "value": 5120,
+        "key": 4
+      },
+      "5": {
+        "value": 5120,
+        "key": 5
+      }
+    },
+    "ID": 4
+  },
+  "5": {
+    "resetGetResources": {
+      "1": {
+        "quality": 0,
+        "resources": {
+          "1": {
+            "value": 90,
+            "key": 99010
+          }
+        }
+      },
+      "2": {
+        "quality": 1,
+        "resources": {
+          "1": {
+            "value": 90,
+            "key": 99010
+          }
+        }
+      },
+      "3": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 134,
+            "key": 99010
+          }
+        }
+      },
+      "4": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 179,
+            "key": 99010
+          }
+        }
+      },
+      "5": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 269,
+            "key": 99010
+          }
+        }
+      },
+      "6": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 269,
+            "key": 99010
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 1400,
+        "key": 1
+      },
+      "2": {
+        "value": 2800,
+        "key": 2
+      },
+      "3": {
+        "value": 4200,
+        "key": 3
+      },
+      "4": {
+        "value": 7000,
+        "key": 4
+      },
+      "5": {
+        "value": 7000,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 0,
+        "resources": {
+          "1": {
+            "value": 112,
+            "key": 99010
+          }
+        }
+      },
+      "2": {
+        "quality": 1,
+        "resources": {
+          "1": {
+            "value": 112,
+            "key": 99010
+          }
+        }
+      },
+      "3": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 168,
+            "key": 99010
+          }
+        }
+      },
+      "4": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 224,
+            "key": 99010
+          }
+        }
+      },
+      "5": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 336,
+            "key": 99010
+          }
+        }
+      },
+      "6": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 336,
+            "key": 99010
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 1280,
+        "key": 1
+      },
+      "2": {
+        "value": 2560,
+        "key": 2
+      },
+      "3": {
+        "value": 3840,
+        "key": 3
+      },
+      "4": {
+        "value": 6560,
+        "key": 4
+      },
+      "5": {
+        "value": 6560,
+        "key": 5
+      }
+    },
+    "ID": 5
+  },
+  "6": {
+    "resetGetResources": {
+      "1": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 144,
+            "key": 99010
+          },
+          "2": {
+            "value": 5,
+            "key": 99011
+          }
+        }
+      },
+      "2": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 192,
+            "key": 99010
+          },
+          "2": {
+            "value": 5,
+            "key": 99011
+          }
+        }
+      },
+      "3": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 288,
+            "key": 99010
+          },
+          "2": {
+            "value": 8,
+            "key": 99011
+          }
+        }
+      },
+      "4": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 288,
+            "key": 99010
+          },
+          "2": {
+            "value": 8,
+            "key": 99011
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 6000,
+        "key": 3
+      },
+      "2": {
+        "value": 9000,
+        "key": 4
+      },
+      "3": {
+        "value": 9000,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 180,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99011
+          }
+        }
+      },
+      "2": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 240,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99011
+          }
+        }
+      },
+      "3": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 360,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99011
+          }
+        }
+      },
+      "4": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 360,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99011
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 5280,
+        "key": 3
+      },
+      "2": {
+        "value": 8160,
+        "key": 4
+      },
+      "3": {
+        "value": 8160,
+        "key": 5
+      }
+    },
+    "ID": 6
+  },
+  "7": {
+    "resetGetResources": {
+      "1": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 154,
+            "key": 99010
+          },
+          "2": {
+            "value": 5,
+            "key": 99011
+          }
+        }
+      },
+      "2": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 205,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99011
+          }
+        }
+      },
+      "3": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 307,
+            "key": 99010
+          },
+          "2": {
+            "value": 8,
+            "key": 99011
+          }
+        }
+      },
+      "4": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 307,
+            "key": 99010
+          },
+          "2": {
+            "value": 8,
+            "key": 99011
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 8040,
+        "key": 3
+      },
+      "2": {
+        "value": 11200,
+        "key": 4
+      },
+      "3": {
+        "value": 11200,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 192,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99011
+          }
+        }
+      },
+      "2": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 256,
+            "key": 99010
+          },
+          "2": {
+            "value": 8,
+            "key": 99011
+          }
+        }
+      },
+      "3": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 384,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99011
+          }
+        }
+      },
+      "4": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 384,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99011
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 6912,
+        "key": 3
+      },
+      "2": {
+        "value": 9920,
+        "key": 4
+      },
+      "3": {
+        "value": 9920,
+        "key": 5
+      }
+    },
+    "ID": 7
+  },
+  "8": {
+    "resetGetResources": {
+      "1": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 163,
+            "key": 99010
+          },
+          "2": {
+            "value": 5,
+            "key": 99011
+          }
+        }
+      },
+      "2": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 218,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99011
+          }
+        }
+      },
+      "3": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 326,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99011
+          }
+        }
+      },
+      "4": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 326,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99011
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 10320,
+        "key": 3
+      },
+      "2": {
+        "value": 13600,
+        "key": 4
+      },
+      "3": {
+        "value": 13600,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 204,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99011
+          }
+        }
+      },
+      "2": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 272,
+            "key": 99010
+          },
+          "2": {
+            "value": 8,
+            "key": 99011
+          }
+        }
+      },
+      "3": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 408,
+            "key": 99010
+          },
+          "2": {
+            "value": 12,
+            "key": 99011
+          }
+        }
+      },
+      "4": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 408,
+            "key": 99010
+          },
+          "2": {
+            "value": 12,
+            "key": 99011
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 8736,
+        "key": 3
+      },
+      "2": {
+        "value": 11840,
+        "key": 4
+      },
+      "3": {
+        "value": 11840,
+        "key": 5
+      }
+    },
+    "ID": 8
+  },
+  "9": {
+    "resetGetResources": {
+      "1": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 173,
+            "key": 99010
+          },
+          "2": {
+            "value": 5,
+            "key": 99011
+          }
+        }
+      },
+      "2": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 230,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99011
+          }
+        }
+      },
+      "3": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 346,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99011
+          }
+        }
+      },
+      "4": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 346,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99011
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 13800,
+        "key": 3
+      },
+      "2": {
+        "value": 16200,
+        "key": 4
+      },
+      "3": {
+        "value": 16200,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 216,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99011
+          }
+        }
+      },
+      "2": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 288,
+            "key": 99010
+          },
+          "2": {
+            "value": 8,
+            "key": 99011
+          }
+        }
+      },
+      "3": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 432,
+            "key": 99010
+          },
+          "2": {
+            "value": 12,
+            "key": 99011
+          }
+        }
+      },
+      "4": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 432,
+            "key": 99010
+          },
+          "2": {
+            "value": 12,
+            "key": 99011
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 11520,
+        "key": 3
+      },
+      "2": {
+        "value": 13920,
+        "key": 4
+      },
+      "3": {
+        "value": 13920,
+        "key": 5
+      }
+    },
+    "ID": 9
+  },
+  "10": {
+    "resetGetResources": {
+      "1": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 269,
+            "key": 99010
+          },
+          "2": {
+            "value": 8,
+            "key": 99011
+          }
+        }
+      },
+      "2": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 358,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99011
+          }
+        }
+      },
+      "3": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 538,
+            "key": 99010
+          },
+          "2": {
+            "value": 14,
+            "key": 99011
+          }
+        }
+      },
+      "4": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 538,
+            "key": 99010
+          },
+          "2": {
+            "value": 14,
+            "key": 99011
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 17640,
+        "key": 3
+      },
+      "2": {
+        "value": 20800,
+        "key": 4
+      },
+      "3": {
+        "value": 20800,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 2,
+        "resources": {
+          "1": {
+            "value": 336,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99011
+          }
+        }
+      },
+      "2": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 448,
+            "key": 99010
+          },
+          "2": {
+            "value": 12,
+            "key": 99011
+          }
+        }
+      },
+      "3": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 672,
+            "key": 99010
+          },
+          "2": {
+            "value": 18,
+            "key": 99011
+          }
+        }
+      },
+      "4": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 672,
+            "key": 99010
+          },
+          "2": {
+            "value": 18,
+            "key": 99011
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 14592,
+        "key": 3
+      },
+      "2": {
+        "value": 17600,
+        "key": 4
+      },
+      "3": {
+        "value": 17600,
+        "key": 5
+      }
+    },
+    "ID": 10
+  },
+  "11": {
+    "resetGetResources": {
+      "1": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 384,
+            "key": 99010
+          },
+          "2": {
+            "value": 5,
+            "key": 99012
+          }
+        }
+      },
+      "2": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 576,
+            "key": 99010
+          },
+          "2": {
+            "value": 8,
+            "key": 99012
+          }
+        }
+      },
+      "3": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 576,
+            "key": 99010
+          },
+          "2": {
+            "value": 8,
+            "key": 99012
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 25800,
+        "key": 4
+      },
+      "2": {
+        "value": 25800,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 480,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99012
+          }
+        }
+      },
+      "2": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 720,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99012
+          }
+        }
+      },
+      "3": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 720,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99012
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 21600,
+        "key": 4
+      },
+      "2": {
+        "value": 21600,
+        "key": 5
+      }
+    },
+    "ID": 11
+  },
+  "12": {
+    "resetGetResources": {
+      "1": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 410,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99012
+          }
+        }
+      },
+      "2": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 614,
+            "key": 99010
+          },
+          "2": {
+            "value": 8,
+            "key": 99012
+          }
+        }
+      },
+      "3": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 614,
+            "key": 99010
+          },
+          "2": {
+            "value": 8,
+            "key": 99012
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 31200,
+        "key": 4
+      },
+      "2": {
+        "value": 31200,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 512,
+            "key": 99010
+          },
+          "2": {
+            "value": 8,
+            "key": 99012
+          }
+        }
+      },
+      "2": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 768,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99012
+          }
+        }
+      },
+      "3": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 768,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99012
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 25920,
+        "key": 4
+      },
+      "2": {
+        "value": 25920,
+        "key": 5
+      }
+    },
+    "ID": 12
+  },
+  "13": {
+    "resetGetResources": {
+      "1": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 435,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99012
+          }
+        }
+      },
+      "2": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 653,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99012
+          }
+        }
+      },
+      "3": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 653,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99012
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 37000,
+        "key": 4
+      },
+      "2": {
+        "value": 37000,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 544,
+            "key": 99010
+          },
+          "2": {
+            "value": 8,
+            "key": 99012
+          }
+        }
+      },
+      "2": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 816,
+            "key": 99010
+          },
+          "2": {
+            "value": 12,
+            "key": 99012
+          }
+        }
+      },
+      "3": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 816,
+            "key": 99010
+          },
+          "2": {
+            "value": 12,
+            "key": 99012
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 30560,
+        "key": 4
+      },
+      "2": {
+        "value": 30560,
+        "key": 5
+      }
+    },
+    "ID": 13
+  },
+  "14": {
+    "resetGetResources": {
+      "1": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 461,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99012
+          }
+        }
+      },
+      "2": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 691,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99012
+          }
+        }
+      },
+      "3": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 691,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99012
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 43200,
+        "key": 4
+      },
+      "2": {
+        "value": 43200,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 576,
+            "key": 99010
+          },
+          "2": {
+            "value": 8,
+            "key": 99012
+          }
+        }
+      },
+      "2": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 864,
+            "key": 99010
+          },
+          "2": {
+            "value": 12,
+            "key": 99012
+          }
+        }
+      },
+      "3": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 864,
+            "key": 99010
+          },
+          "2": {
+            "value": 12,
+            "key": 99012
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 35520,
+        "key": 4
+      },
+      "2": {
+        "value": 35520,
+        "key": 5
+      }
+    },
+    "ID": 14
+  },
+  "15": {
+    "resetGetResources": {
+      "1": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 666,
+            "key": 99010
+          },
+          "2": {
+            "value": 10,
+            "key": 99012
+          }
+        }
+      },
+      "2": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 998,
+            "key": 99010
+          },
+          "2": {
+            "value": 13,
+            "key": 99012
+          }
+        }
+      },
+      "3": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 998,
+            "key": 99010
+          },
+          "2": {
+            "value": 13,
+            "key": 99012
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 52600,
+        "key": 4
+      },
+      "2": {
+        "value": 52600,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 3,
+        "resources": {
+          "1": {
+            "value": 832,
+            "key": 99010
+          },
+          "2": {
+            "value": 12,
+            "key": 99012
+          }
+        }
+      },
+      "2": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 1248,
+            "key": 99010
+          },
+          "2": {
+            "value": 16,
+            "key": 99012
+          }
+        }
+      },
+      "3": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 1248,
+            "key": 99010
+          },
+          "2": {
+            "value": 16,
+            "key": 99012
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 43040,
+        "key": 4
+      },
+      "2": {
+        "value": 43040,
+        "key": 5
+      }
+    },
+    "ID": 15
+  },
+  "16": {
+    "resetGetResources": {
+      "1": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 1056,
+            "key": 99010
+          },
+          "2": {
+            "value": 5,
+            "key": 99013
+          }
+        }
+      },
+      "2": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 1056,
+            "key": 99010
+          },
+          "2": {
+            "value": 5,
+            "key": 99013
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 62600,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 1320,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99013
+          }
+        }
+      },
+      "2": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 1320,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99013
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 51040,
+        "key": 5
+      }
+    },
+    "ID": 16
+  },
+  "17": {
+    "resetGetResources": {
+      "1": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 1114,
+            "key": 99010
+          },
+          "2": {
+            "value": 5,
+            "key": 99013
+          }
+        }
+      },
+      "2": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 1114,
+            "key": 99010
+          },
+          "2": {
+            "value": 5,
+            "key": 99013
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 73200,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 1392,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99013
+          }
+        }
+      },
+      "2": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 1392,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99013
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 59520,
+        "key": 5
+      }
+    },
+    "ID": 17
+  },
+  "18": {
+    "resetGetResources": {
+      "1": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 1171,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99013
+          }
+        }
+      },
+      "2": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 1171,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99013
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 84400,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 1464,
+            "key": 99010
+          },
+          "2": {
+            "value": 7,
+            "key": 99013
+          }
+        }
+      },
+      "2": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 1464,
+            "key": 99010
+          },
+          "2": {
+            "value": 7,
+            "key": 99013
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 68000,
+        "key": 5
+      }
+    },
+    "ID": 18
+  },
+  "19": {
+    "resetGetResources": {
+      "1": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 1229,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99013
+          }
+        }
+      },
+      "2": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 1229,
+            "key": 99010
+          },
+          "2": {
+            "value": 6,
+            "key": 99013
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 96200,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 1536,
+            "key": 99010
+          },
+          "2": {
+            "value": 7,
+            "key": 99013
+          }
+        }
+      },
+      "2": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 1536,
+            "key": 99010
+          },
+          "2": {
+            "value": 7,
+            "key": 99013
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 77440,
+        "key": 5
+      }
+    },
+    "ID": 19
+  },
+  "20": {
+    "resetGetResources": {
+      "1": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 1651,
+            "key": 99010
+          },
+          "2": {
+            "value": 7,
+            "key": 99013
+          }
+        }
+      },
+      "2": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 1651,
+            "key": 99010
+          },
+          "2": {
+            "value": 7,
+            "key": 99013
+          }
+        }
+      }
+    },
+    "upgradeExp": {
+      "1": {
+        "value": 112400,
+        "key": 5
+      }
+    },
+    "upgradeCostResources": {
+      "1": {
+        "quality": 4,
+        "resources": {
+          "1": {
+            "value": 2064,
+            "key": 99010
+          },
+          "2": {
+            "value": 9,
+            "key": 99013
+          }
+        }
+      },
+      "2": {
+        "quality": 5,
+        "resources": {
+          "1": {
+            "value": 2064,
+            "key": 99010
+          },
+          "2": {
+            "value": 9,
+            "key": 99013
+          }
+        }
+      }
+    },
+    "eatExp": {
+      "1": {
+        "value": 90400,
+        "key": 5
+      }
+    },
+    "ID": 20
+  }
+}

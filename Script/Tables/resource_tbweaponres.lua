@@ -1,0 +1,13 @@
+local resource_tbweaponres = {
+  [11100702] = {ID = 11100702, BarrelID = 100702},
+  [11100902] = {ID = 11100902, BarrelID = 100902},
+  [11200302] = {ID = 11200302, BarrelID = 200302},
+  [11200602] = {ID = 11200602, BarrelID = 200602},
+  [11100802] = {ID = 11100802, BarrelID = 100802},
+  [11101002] = {ID = 11101002, BarrelID = 101002},
+  [11200102] = {ID = 11200102, BarrelID = 200102},
+  [11200202] = {ID = 11200202, BarrelID = 200202},
+  [11200402] = {ID = 11200402, BarrelID = 200402},
+  [11200502] = {ID = 11200502, BarrelID = 200502}
+}
+return resource_tbweaponres

@@ -1,0 +1,22 @@
+return {
+  hero_tbfetterslot = "Tables.hero_tbfetterslot",
+  hero_tbheromonster = "Tables.hero_tbheromonster",
+  hero_tbheroskill = "Tables.hero_tbheroskill",
+  hero_tbherostar = "Tables.hero_tbherostar",
+  hero_tbskilltag = "Tables.hero_tbskilltag",
+  lobby_tbplayerlevel = "Tables.lobby_tbplayerlevel",
+  resource_tbcurrency = "Tables.resource_tbcurrency",
+  resource_tbgeneral = "Tables.resource_tbgeneral",
+  resource_tbhero = "Tables.resource_tbhero",
+  resource_tbprop = "Tables.resource_tbprop",
+  resource_tbweaponskin = "Tables.resource_tbweaponskin",
+  resource_tbcharacterskin = "Tables.resource_tbcharacterskin",
+  talent_tbherotalent = "Tables.talent_tbherotalent",
+  talent_tbtalent = "Tables.talent_tbtalent",
+  mall_tbgachapond = "Tables.mall_tbgachapond",
+  Types = "Tables.Types",
+  weapon_tbweapon = "Tables.weapon_tbweapon",
+  weapon_tbaccessory = "Tables.weapon_tbaccessory",
+  resource_tbpresetweaponres = "Tables.resource_tbpresetweaponres",
+  chat_tbchat = "Tables.chat_tbchat"
+}

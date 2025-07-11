@@ -1,0 +1,2 @@
+local resource_tbrespuzzleupgradematerial = {}
+return resource_tbrespuzzleupgradematerial

@@ -1,0 +1,257 @@
+﻿{
+  "freshmanbd_firstpass_reward": {
+    "Reason": "freshmanbd_firstpass_reward",
+    "IsShow": 1,
+    "Desc": "新手首通奖励"
+  },
+  "pandora": {
+    "Reason": "pandora",
+    "IsShow": 1,
+    "Desc": "潘多拉"
+  },
+  "puzzle_wash_slotnum_cost": {
+    "Reason": "puzzle_wash_slotnum_cost",
+    "IsShow": 1,
+    "Desc": "拼图槽位数量洗练"
+  },
+  "random_gift": {
+    "Reason": "random_gift",
+    "IsShow": 1,
+    "Desc": "随机礼包"
+  },
+  "exchange": {
+    "Reason": "exchange",
+    "IsShow": 1,
+    "Desc": "兑换"
+  },
+  "puzzle_reset_reward": {
+    "Reason": "puzzle_reset_reward",
+    "IsShow": 1,
+    "Desc": "拼图重置"
+  },
+  "puzzle_wash_shape_cost": {
+    "Reason": "puzzle_wash_shape_cost",
+    "IsShow": 1,
+    "Desc": "拼图形状洗练"
+  },
+  "gacha_common": {
+    "Reason": "gacha_common",
+    "IsShow": 0,
+    "Desc": "抽卡普通奖励"
+  },
+  "decompose": {
+    "Reason": "decompose",
+    "IsShow": 1,
+    "Desc": "分解"
+  },
+  "gem_decompose_reward": {
+    "Reason": "gem_decompose_reward",
+    "IsShow": 1,
+    "Desc": "宝石分解"
+  },
+  "gem_mutation_cost": {
+    "Reason": "gem_mutation_cost",
+    "IsShow": 1,
+    "Desc": "宝石突变"
+  },
+  "climbtower_dailyreward": {
+    "Reason": "climbtower_dailyreward",
+    "IsShow": 1,
+    "Desc": "爬塔每日奖励"
+  },
+  "gem_upgrade_cost": {
+    "Reason": "gem_upgrade_cost",
+    "IsShow": 1,
+    "Desc": "宝石升级"
+  },
+  "shop": {
+    "Reason": "shop",
+    "IsShow": 1,
+    "Desc": "商城购买"
+  },
+  "activate_familytreasure": {
+    "Reason": "activate_familytreasure",
+    "IsShow": 0,
+    "Desc": "激活传家宝"
+  },
+  "upgrade_familytreasure": {
+    "Reason": "upgrade_familytreasure",
+    "IsShow": 0,
+    "Desc": "升级传家宝"
+  },
+  "timelimit_resource_expire": {
+    "Reason": "timelimit_resource_expire",
+    "IsShow": 1,
+    "Desc": "时限资源过期"
+  },
+  "task_reward": {
+    "Reason": "task_reward",
+    "IsShow": 1,
+    "Desc": "任务领奖"
+  },
+  "climbtower_globalpassreward": {
+    "Reason": "climbtower_globalpassreward",
+    "IsShow": 1,
+    "Desc": "爬塔全服通关奖励"
+  },
+  "team_ticket_cost": {
+    "Reason": "team_ticket_cost",
+    "IsShow": 1,
+    "Desc": "组队扣除门票"
+  },
+  "puzzle_wash_inscription_cost": {
+    "Reason": "puzzle_wash_inscription_cost",
+    "IsShow": 1,
+    "Desc": "拼图洗练词条"
+  },
+  "bonus": {
+    "Reason": "bonus",
+    "IsShow": 0,
+    "Desc": "加成奖励"
+  },
+  "team_ticket_rollback": {
+    "Reason": "team_ticket_rollback",
+    "IsShow": 1,
+    "Desc": "组队扣除门票回滚"
+  },
+  "buy": {
+    "Reason": "buy",
+    "IsShow": 1,
+    "Desc": "购买"
+  },
+  "taskgroup_reward": {
+    "Reason": "taskgroup_reward",
+    "IsShow": 1,
+    "Desc": "任务组领奖"
+  },
+  "mail": {
+    "Reason": "mail",
+    "IsShow": 1,
+    "Desc": "邮件"
+  },
+  "change_name": {
+    "Reason": "change_name",
+    "IsShow": 1,
+    "Desc": "改名"
+  },
+  "puzzle_decompose_reward": {
+    "Reason": "puzzle_decompose_reward",
+    "IsShow": 1,
+    "Desc": "拼图分解"
+  },
+  "timelimit_resource_cover": {
+    "Reason": "timelimit_resource_cover",
+    "IsShow": 1,
+    "Desc": "时限资源覆盖"
+  },
+  "gift": {
+    "Reason": "gift",
+    "IsShow": 1,
+    "Desc": "礼包"
+  },
+  "sevenday_login": {
+    "Reason": "sevenday_login",
+    "IsShow": 1,
+    "Desc": "七天登录"
+  },
+  "seasonability_upgrade": {
+    "Reason": "seasonability_upgrade",
+    "IsShow": 1,
+    "Desc": "升级赛季能力"
+  },
+  "seasonability_unlockscheme": {
+    "Reason": "seasonability_unlockscheme",
+    "IsShow": 1,
+    "Desc": "赛季能力解锁预设方案"
+  },
+  "seasonability_levelup": {
+    "Reason": "seasonability_levelup",
+    "IsShow": 1,
+    "Desc": "赛季能力升级"
+  },
+  "seasonability_reset": {
+    "Reason": "seasonability_reset",
+    "IsShow": 1,
+    "Desc": "重置赛季能力"
+  },
+  "gacha_safeguard": {
+    "Reason": "gacha_safeguard",
+    "IsShow": 0,
+    "Desc": "抽卡保底奖励"
+  },
+  "seasonability_exchange": {
+    "Reason": "seasonability_exchange",
+    "IsShow": 1,
+    "Desc": "赛季能力点兑换"
+  },
+  "seasonability_addexp": {
+    "Reason": "seasonability_addexp",
+    "IsShow": 1,
+    "Desc": "增加赛季能力经验"
+  },
+  "battlepass_reward": {
+    "Reason": "battlepass_reward",
+    "IsShow": 0,
+    "Desc": "通行证奖励"
+  },
+  "gm": {
+    "Reason": "gm",
+    "IsShow": 1,
+    "Desc": "gm"
+  },
+  "puzzle_wash_subattr_cost": {
+    "Reason": "puzzle_wash_subattr_cost",
+    "IsShow": 1,
+    "Desc": "拼图副属性洗练"
+  },
+  "puzzle_wash": {
+    "Reason": "puzzle_wash",
+    "IsShow": 1,
+    "Desc": "拼图洗练"
+  },
+  "battlepass_activeultra": {
+    "Reason": "battlepass_activeultra",
+    "IsShow": 1,
+    "Desc": "激活典藏通行证"
+  },
+  "puzzle_upgrade_cost": {
+    "Reason": "puzzle_upgrade_cost",
+    "IsShow": 1,
+    "Desc": "拼图升级消耗"
+  },
+  "puzzle_mutation_cost": {
+    "Reason": "puzzle_mutation_cost",
+    "IsShow": 1,
+    "Desc": "拼图突变"
+  },
+  "profy_reward": {
+    "Reason": "profy_reward",
+    "IsShow": 1,
+    "Desc": "熟练度奖励"
+  },
+  "activity_reward_ruletask": {
+    "Reason": "activity_reward_ruletask",
+    "IsShow": 1,
+    "Desc": "法则任务活动奖励"
+  },
+  "season_reset": {
+    "Reason": "season_reset",
+    "IsShow": 1,
+    "Desc": "赛季重置"
+  },
+  "test": {
+    "Reason": "test",
+    "IsShow": 1,
+    "Desc": "测试"
+  },
+  "chip_upgrade": {
+    "Reason": "chip_upgrade",
+    "IsShow": 1,
+    "Desc": "芯片升級消耗"
+  },
+  "battlepass_activepremium": {
+    "Reason": "battlepass_activepremium",
+    "IsShow": 1,
+    "Desc": "激活高级通行证"
+  }
+}

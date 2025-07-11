@@ -1,0 +1,998 @@
+﻿{
+  "JO": {
+    "CountryCode": "JO",
+    "ID": 114
+  },
+  "NG": {
+    "CountryCode": "NG",
+    "ID": 161
+  },
+  "IO": {
+    "CountryCode": "IO",
+    "ID": 32
+  },
+  "NO": {
+    "CountryCode": "NO",
+    "ID": 166
+  },
+  "UG": {
+    "CountryCode": "UG",
+    "ID": 231
+  },
+  "MO": {
+    "CountryCode": "MO",
+    "ID": 131
+  },
+  "RO": {
+    "CountryCode": "RO",
+    "ID": 181
+  },
+  "SO": {
+    "CountryCode": "SO",
+    "ID": 205
+  },
+  "RW": {
+    "CountryCode": "RW",
+    "ID": 183
+  },
+  "GG": {
+    "CountryCode": "GG",
+    "ID": 92
+  },
+  "MG": {
+    "CountryCode": "MG",
+    "ID": 132
+  },
+  "TO": {
+    "CountryCode": "TO",
+    "ID": 224
+  },
+  "KG": {
+    "CountryCode": "KG",
+    "ID": 121
+  },
+  "AF": {
+    "CountryCode": "AF",
+    "ID": 1
+  },
+  "MW": {
+    "CountryCode": "MW",
+    "ID": 133
+  },
+  "KW": {
+    "CountryCode": "KW",
+    "ID": 120
+  },
+  "PW": {
+    "CountryCode": "PW",
+    "ID": 169
+  },
+  "CF": {
+    "CountryCode": "CF",
+    "ID": 42
+  },
+  "BF": {
+    "CountryCode": "BF",
+    "ID": 35
+  },
+  "CN": {
+    "CountryCode": "CN",
+    "ID": 45
+  },
+  "BN": {
+    "CountryCode": "BN",
+    "ID": 33
+  },
+  "BW": {
+    "CountryCode": "BW",
+    "ID": 29
+  },
+  "CW": {
+    "CountryCode": "CW",
+    "ID": 56
+  },
+  "GN": {
+    "CountryCode": "GN",
+    "ID": 93
+  },
+  "GW": {
+    "CountryCode": "GW",
+    "ID": 94
+  },
+  "UA": {
+    "CountryCode": "UA",
+    "ID": 232
+  },
+  "ZW": {
+    "CountryCode": "ZW",
+    "ID": 248
+  },
+  "KP": {
+    "CountryCode": "KP",
+    "ID": 118
+  },
+  "JP": {
+    "CountryCode": "JP",
+    "ID": 112
+  },
+  "MP": {
+    "CountryCode": "MP",
+    "ID": 165
+  },
+  "AW": {
+    "CountryCode": "AW",
+    "ID": 12
+  },
+  "KZ": {
+    "CountryCode": "KZ",
+    "ID": 115
+  },
+  "NP": {
+    "CountryCode": "NP",
+    "ID": 155
+  },
+  "GH": {
+    "CountryCode": "GH",
+    "ID": 84
+  },
+  "YE": {
+    "CountryCode": "YE",
+    "ID": 246
+  },
+  "EH": {
+    "CountryCode": "EH",
+    "ID": 245
+  },
+  "WF": {
+    "CountryCode": "WF",
+    "ID": 244
+  },
+  "KH": {
+    "CountryCode": "KH",
+    "ID": 38
+  },
+  "VI": {
+    "CountryCode": "VI",
+    "ID": 243
+  },
+  "MH": {
+    "CountryCode": "MH",
+    "ID": 138
+  },
+  "VG": {
+    "CountryCode": "VG",
+    "ID": 242
+  },
+  "GA": {
+    "CountryCode": "GA",
+    "ID": 80
+  },
+  "AG": {
+    "CountryCode": "AG",
+    "ID": 9
+  },
+  "MX": {
+    "CountryCode": "MX",
+    "ID": 143
+  },
+  "SJ": {
+    "CountryCode": "SJ",
+    "ID": 213
+  },
+  "NE": {
+    "CountryCode": "NE",
+    "ID": 160
+  },
+  "EG": {
+    "CountryCode": "EG",
+    "ID": 65
+  },
+  "BG": {
+    "CountryCode": "BG",
+    "ID": 34
+  },
+  "CG": {
+    "CountryCode": "CG",
+    "ID": 51
+  },
+  "BO": {
+    "CountryCode": "BO",
+    "ID": 26
+  },
+  "CO": {
+    "CountryCode": "CO",
+    "ID": 48
+  },
+  "UZ": {
+    "CountryCode": "UZ",
+    "ID": 238
+  },
+  "AO": {
+    "CountryCode": "AO",
+    "ID": 6
+  },
+  "FO": {
+    "CountryCode": "FO",
+    "ID": 73
+  },
+  "TC": {
+    "CountryCode": "TC",
+    "ID": 228
+  },
+  "DO": {
+    "CountryCode": "DO",
+    "ID": 63
+  },
+  "SB": {
+    "CountryCode": "SB",
+    "ID": 204
+  },
+  "NI": {
+    "CountryCode": "NI",
+    "ID": 159
+  },
+  "IQ": {
+    "CountryCode": "IQ",
+    "ID": 106
+  },
+  "ML": {
+    "CountryCode": "ML",
+    "ID": 136
+  },
+  "GB": {
+    "CountryCode": "GB",
+    "ID": 234
+  },
+  "AE": {
+    "CountryCode": "AE",
+    "ID": 233
+  },
+  "MQ": {
+    "CountryCode": "MQ",
+    "ID": 139
+  },
+  "AX": {
+    "CountryCode": "AX",
+    "ID": 249
+  },
+  "SY": {
+    "CountryCode": "SY",
+    "ID": 216
+  },
+  "FI": {
+    "CountryCode": "FI",
+    "ID": 75
+  },
+  "GI": {
+    "CountryCode": "GI",
+    "ID": 85
+  },
+  "VA": {
+    "CountryCode": "VA",
+    "ID": 98
+  },
+  "UY": {
+    "CountryCode": "UY",
+    "ID": 237
+  },
+  "TM": {
+    "CountryCode": "TM",
+    "ID": 227
+  },
+  "KI": {
+    "CountryCode": "KI",
+    "ID": 117
+  },
+  "LI": {
+    "CountryCode": "LI",
+    "ID": 128
+  },
+  "EE": {
+    "CountryCode": "EE",
+    "ID": 69
+  },
+  "DE": {
+    "CountryCode": "DE",
+    "ID": 83
+  },
+  "KY": {
+    "CountryCode": "KY",
+    "ID": 41
+  },
+  "LY": {
+    "CountryCode": "LY",
+    "ID": 127
+  },
+  "MY": {
+    "CountryCode": "MY",
+    "ID": 134
+  },
+  "CH": {
+    "CountryCode": "CH",
+    "ID": 215
+  },
+  "BH": {
+    "CountryCode": "BH",
+    "ID": 17
+  },
+  "PY": {
+    "CountryCode": "PY",
+    "ID": 173
+  },
+  "GS": {
+    "CountryCode": "GS",
+    "ID": 207
+  },
+  "BY": {
+    "CountryCode": "BY",
+    "ID": 20
+  },
+  "CY": {
+    "CountryCode": "CY",
+    "ID": 57
+  },
+  "TG": {
+    "CountryCode": "TG",
+    "ID": 222
+  },
+  "NF": {
+    "CountryCode": "NF",
+    "ID": 163
+  },
+  "TH": {
+    "CountryCode": "TH",
+    "ID": 220
+  },
+  "GY": {
+    "CountryCode": "GY",
+    "ID": 95
+  },
+  "GP": {
+    "CountryCode": "GP",
+    "ID": 89
+  },
+  "TZ": {
+    "CountryCode": "TZ",
+    "ID": 219
+  },
+  "NR": {
+    "CountryCode": "NR",
+    "ID": 154
+  },
+  "MR": {
+    "CountryCode": "MR",
+    "ID": 140
+  },
+  "LR": {
+    "CountryCode": "LR",
+    "ID": 126
+  },
+  "KR": {
+    "CountryCode": "KR",
+    "ID": 119
+  },
+  "KE": {
+    "CountryCode": "KE",
+    "ID": 116
+  },
+  "IR": {
+    "CountryCode": "IR",
+    "ID": 105
+  },
+  "HR": {
+    "CountryCode": "HR",
+    "ID": 54
+  },
+  "GR": {
+    "CountryCode": "GR",
+    "ID": 86
+  },
+  "TJ": {
+    "CountryCode": "TJ",
+    "ID": 218
+  },
+  "TW": {
+    "CountryCode": "TW",
+    "ID": 217
+  },
+  "TR": {
+    "CountryCode": "TR",
+    "ID": 230
+  },
+  "SR": {
+    "CountryCode": "SR",
+    "ID": 212
+  },
+  "SE": {
+    "CountryCode": "SE",
+    "ID": 214
+  },
+  "SZ": {
+    "CountryCode": "SZ",
+    "ID": 70
+  },
+  "FJ": {
+    "CountryCode": "FJ",
+    "ID": 74
+  },
+  "VE": {
+    "CountryCode": "VE",
+    "ID": 240
+  },
+  "SD": {
+    "CountryCode": "SD",
+    "ID": 211
+  },
+  "SI": {
+    "CountryCode": "SI",
+    "ID": 203
+  },
+  "NZ": {
+    "CountryCode": "NZ",
+    "ID": 158
+  },
+  "AI": {
+    "CountryCode": "AI",
+    "ID": 7
+  },
+  "BI": {
+    "CountryCode": "BI",
+    "ID": 36
+  },
+  "CI": {
+    "CountryCode": "CI",
+    "ID": 59
+  },
+  "PH": {
+    "CountryCode": "PH",
+    "ID": 175
+  },
+  "SK": {
+    "CountryCode": "SK",
+    "ID": 202
+  },
+  "GE": {
+    "CountryCode": "GE",
+    "ID": 82
+  },
+  "AQ": {
+    "CountryCode": "AQ",
+    "ID": 8
+  },
+  "BQ": {
+    "CountryCode": "BQ",
+    "ID": 27
+  },
+  "JE": {
+    "CountryCode": "JE",
+    "ID": 113
+  },
+  "DZ": {
+    "CountryCode": "DZ",
+    "ID": 3
+  },
+  "CZ": {
+    "CountryCode": "CZ",
+    "ID": 58
+  },
+  "BZ": {
+    "CountryCode": "BZ",
+    "ID": 22
+  },
+  "AZ": {
+    "CountryCode": "AZ",
+    "ID": 15
+  },
+  "MS": {
+    "CountryCode": "MS",
+    "ID": 149
+  },
+  "TK": {
+    "CountryCode": "TK",
+    "ID": 223
+  },
+  "GF": {
+    "CountryCode": "GF",
+    "ID": 77
+  },
+  "LS": {
+    "CountryCode": "LS",
+    "ID": 125
+  },
+  "IS": {
+    "CountryCode": "IS",
+    "ID": 102
+  },
+  "PK": {
+    "CountryCode": "PK",
+    "ID": 168
+  },
+  "MK": {
+    "CountryCode": "MK",
+    "ID": 164
+  },
+  "MD": {
+    "CountryCode": "MD",
+    "ID": 145
+  },
+  "US": {
+    "CountryCode": "US",
+    "ID": 236
+  },
+  "LK": {
+    "CountryCode": "LK",
+    "ID": 210
+  },
+  "SS": {
+    "CountryCode": "SS",
+    "ID": 208
+  },
+  "SX": {
+    "CountryCode": "SX",
+    "ID": 201
+  },
+  "TD": {
+    "CountryCode": "TD",
+    "ID": 43
+  },
+  "HK": {
+    "CountryCode": "HK",
+    "ID": 100
+  },
+  "SG": {
+    "CountryCode": "SG",
+    "ID": 200
+  },
+  "FK": {
+    "CountryCode": "FK",
+    "ID": 72
+  },
+  "DJ": {
+    "CountryCode": "DJ",
+    "ID": 61
+  },
+  "SL": {
+    "CountryCode": "SL",
+    "ID": 199
+  },
+  "BD": {
+    "CountryCode": "BD",
+    "ID": 18
+  },
+  "AD": {
+    "CountryCode": "AD",
+    "ID": 5
+  },
+  "BL": {
+    "CountryCode": "BL",
+    "ID": 185
+  },
+  "RS": {
+    "CountryCode": "RS",
+    "ID": 197
+  },
+  "WS": {
+    "CountryCode": "WS",
+    "ID": 192
+  },
+  "ID": {
+    "CountryCode": "ID",
+    "ID": 104
+  },
+  "FR": {
+    "CountryCode": "FR",
+    "ID": 76
+  },
+  "ER": {
+    "CountryCode": "ER",
+    "ID": 68
+  },
+  "IE": {
+    "CountryCode": "IE",
+    "ID": 107
+  },
+  "CR": {
+    "CountryCode": "CR",
+    "ID": 53
+  },
+  "BR": {
+    "CountryCode": "BR",
+    "ID": 31
+  },
+  "AR": {
+    "CountryCode": "AR",
+    "ID": 10
+  },
+  "ST": {
+    "CountryCode": "ST",
+    "ID": 194
+  },
+  "SM": {
+    "CountryCode": "SM",
+    "ID": 193
+  },
+  "LT": {
+    "CountryCode": "LT",
+    "ID": 129
+  },
+  "SH": {
+    "CountryCode": "SH",
+    "ID": 186
+  },
+  "TL": {
+    "CountryCode": "TL",
+    "ID": 221
+  },
+  "MT": {
+    "CountryCode": "MT",
+    "ID": 137
+  },
+  "HT": {
+    "CountryCode": "HT",
+    "ID": 96
+  },
+  "GT": {
+    "CountryCode": "GT",
+    "ID": 91
+  },
+  "PL": {
+    "CountryCode": "PL",
+    "ID": 177
+  },
+  "IT": {
+    "CountryCode": "IT",
+    "ID": 110
+  },
+  "TT": {
+    "CountryCode": "TT",
+    "ID": 225
+  },
+  "IL": {
+    "CountryCode": "IL",
+    "ID": 109
+  },
+  "LC": {
+    "CountryCode": "LC",
+    "ID": 188
+  },
+  "KN": {
+    "CountryCode": "KN",
+    "ID": 187
+  },
+  "PT": {
+    "CountryCode": "PT",
+    "ID": 178
+  },
+  "VC": {
+    "CountryCode": "VC",
+    "ID": 191
+  },
+  "SC": {
+    "CountryCode": "SC",
+    "ID": 198
+  },
+  "GL": {
+    "CountryCode": "GL",
+    "ID": 87
+  },
+  "CK": {
+    "CountryCode": "CK",
+    "ID": 52
+  },
+  "DK": {
+    "CountryCode": "DK",
+    "ID": 60
+  },
+  "RE": {
+    "CountryCode": "RE",
+    "ID": 184
+  },
+  "RU": {
+    "CountryCode": "RU",
+    "ID": 182
+  },
+  "QA": {
+    "CountryCode": "QA",
+    "ID": 180
+  },
+  "PR": {
+    "CountryCode": "PR",
+    "ID": 179
+  },
+  "GD": {
+    "CountryCode": "GD",
+    "ID": 88
+  },
+  "YT": {
+    "CountryCode": "YT",
+    "ID": 142
+  },
+  "ES": {
+    "CountryCode": "ES",
+    "ID": 209
+  },
+  "PE": {
+    "CountryCode": "PE",
+    "ID": 174
+  },
+  "PG": {
+    "CountryCode": "PG",
+    "ID": 172
+  },
+  "LV": {
+    "CountryCode": "LV",
+    "ID": 123
+  },
+  "AS": {
+    "CountryCode": "AS",
+    "ID": 4
+  },
+  "BS": {
+    "CountryCode": "BS",
+    "ID": 16
+  },
+  "CC": {
+    "CountryCode": "CC",
+    "ID": 47
+  },
+  "PS": {
+    "CountryCode": "PS",
+    "ID": 170
+  },
+  "OM": {
+    "CountryCode": "OM",
+    "ID": 167
+  },
+  "LU": {
+    "CountryCode": "LU",
+    "ID": 130
+  },
+  "MU": {
+    "CountryCode": "MU",
+    "ID": 141
+  },
+  "NU": {
+    "CountryCode": "NU",
+    "ID": 162
+  },
+  "GU": {
+    "CountryCode": "GU",
+    "ID": 90
+  },
+  "HU": {
+    "CountryCode": "HU",
+    "ID": 101
+  },
+  "LB": {
+    "CountryCode": "LB",
+    "ID": 124
+  },
+  "PM": {
+    "CountryCode": "PM",
+    "ID": 190
+  },
+  "IM": {
+    "CountryCode": "IM",
+    "ID": 108
+  },
+  "JM": {
+    "CountryCode": "JM",
+    "ID": 111
+  },
+  "KM": {
+    "CountryCode": "KM",
+    "ID": 49
+  },
+  "VU": {
+    "CountryCode": "VU",
+    "ID": 239
+  },
+  "NC": {
+    "CountryCode": "NC",
+    "ID": 157
+  },
+  "FM": {
+    "CountryCode": "FM",
+    "ID": 144
+  },
+  "GM": {
+    "CountryCode": "GM",
+    "ID": 81
+  },
+  "HM": {
+    "CountryCode": "HM",
+    "ID": 97
+  },
+  "BB": {
+    "CountryCode": "BB",
+    "ID": 19
+  },
+  "AL": {
+    "CountryCode": "AL",
+    "ID": 2
+  },
+  "NL": {
+    "CountryCode": "NL",
+    "ID": 156
+  },
+  "CL": {
+    "CountryCode": "CL",
+    "ID": 44
+  },
+  "NA": {
+    "CountryCode": "NA",
+    "ID": 153
+  },
+  "MM": {
+    "CountryCode": "MM",
+    "ID": 152
+  },
+  "MZ": {
+    "CountryCode": "MZ",
+    "ID": 151
+  },
+  "MA": {
+    "CountryCode": "MA",
+    "ID": 150
+  },
+  "ME": {
+    "CountryCode": "ME",
+    "ID": 148
+  },
+  "ZM": {
+    "CountryCode": "ZM",
+    "ID": 247
+  },
+  "MC": {
+    "CountryCode": "MC",
+    "ID": 146
+  },
+  "ET": {
+    "CountryCode": "ET",
+    "ID": 71
+  },
+  "UM": {
+    "CountryCode": "UM",
+    "ID": 235
+  },
+  "MV": {
+    "CountryCode": "MV",
+    "ID": 135
+  },
+  "BT": {
+    "CountryCode": "BT",
+    "ID": 25
+  },
+  "AT": {
+    "CountryCode": "AT",
+    "ID": 14
+  },
+  "LA": {
+    "CountryCode": "LA",
+    "ID": 122
+  },
+  "PF": {
+    "CountryCode": "PF",
+    "ID": 78
+  },
+  "IN": {
+    "CountryCode": "IN",
+    "ID": 103
+  },
+  "HN": {
+    "CountryCode": "HN",
+    "ID": 99
+  },
+  "PA": {
+    "CountryCode": "PA",
+    "ID": 171
+  },
+  "TF": {
+    "CountryCode": "TF",
+    "ID": 79
+  },
+  "MN": {
+    "CountryCode": "MN",
+    "ID": 147
+  },
+  "SA": {
+    "CountryCode": "SA",
+    "ID": 195
+  },
+  "SN": {
+    "CountryCode": "SN",
+    "ID": 196
+  },
+  "TV": {
+    "CountryCode": "TV",
+    "ID": 229
+  },
+  "SV": {
+    "CountryCode": "SV",
+    "ID": 66
+  },
+  "PN": {
+    "CountryCode": "PN",
+    "ID": 176
+  },
+  "MF": {
+    "CountryCode": "MF",
+    "ID": 189
+  },
+  "VN": {
+    "CountryCode": "VN",
+    "ID": 241
+  },
+  "ZA": {
+    "CountryCode": "ZA",
+    "ID": 206
+  },
+  "TN": {
+    "CountryCode": "TN",
+    "ID": 226
+  },
+  "AM": {
+    "CountryCode": "AM",
+    "ID": 11
+  },
+  "BM": {
+    "CountryCode": "BM",
+    "ID": 24
+  },
+  "CM": {
+    "CountryCode": "CM",
+    "ID": 39
+  },
+  "DM": {
+    "CountryCode": "DM",
+    "ID": 62
+  },
+  "GQ": {
+    "CountryCode": "GQ",
+    "ID": 67
+  },
+  "EC": {
+    "CountryCode": "EC",
+    "ID": 64
+  },
+  "BA": {
+    "CountryCode": "BA",
+    "ID": 28
+  },
+  "CA": {
+    "CountryCode": "CA",
+    "ID": 40
+  },
+  "CU": {
+    "CountryCode": "CU",
+    "ID": 55
+  },
+  "CD": {
+    "CountryCode": "CD",
+    "ID": 50
+  },
+  "CV": {
+    "CountryCode": "CV",
+    "ID": 37
+  },
+  "BV": {
+    "CountryCode": "BV",
+    "ID": 30
+  },
+  "CX": {
+    "CountryCode": "CX",
+    "ID": 46
+  },
+  "BJ": {
+    "CountryCode": "BJ",
+    "ID": 23
+  },
+  "AU": {
+    "CountryCode": "AU",
+    "ID": 13
+  },
+  "BE": {
+    "CountryCode": "BE",
+    "ID": 21
+  }
+}

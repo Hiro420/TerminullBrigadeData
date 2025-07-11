@@ -1,0 +1,80 @@
+﻿{
+  "sa": {
+    "serverlist": {
+      "1": "15001"
+    },
+    "port": 50001,
+    "address": "battle-15001-sa.playprojectr.com",
+    "costTypeLocMeta": {
+      "InTextLiteral": "南美",
+      "InNamespace": "lobby_TBBattleServerList",
+      "InKey": "costType_sa"
+    },
+    "region": "sa"
+  },
+  "europe": {
+    "serverlist": {
+      "1": "15001"
+    },
+    "port": 50001,
+    "address": "battle-15001-eu.playprojectr.com",
+    "costTypeLocMeta": {
+      "InTextLiteral": "欧洲",
+      "InNamespace": "lobby_TBBattleServerList",
+      "InKey": "costType_europe"
+    },
+    "region": "europe"
+  },
+  "jp": {
+    "serverlist": {
+      "1": "15001"
+    },
+    "port": 50001,
+    "address": "battle-15001-jp.playprojectr.com",
+    "costTypeLocMeta": {
+      "InTextLiteral": "日本",
+      "InNamespace": "lobby_TBBattleServerList",
+      "InKey": "costType_jp"
+    },
+    "region": "jp"
+  },
+  "va": {
+    "serverlist": {
+      "1": "15001"
+    },
+    "port": 50001,
+    "address": "battle-15001-va.playprojectr.com",
+    "costTypeLocMeta": {
+      "InTextLiteral": "弗吉尼亞",
+      "InNamespace": "lobby_TBBattleServerList",
+      "InKey": "costType_va"
+    },
+    "region": "va"
+  },
+  "sv": {
+    "serverlist": {
+      "1": "15001"
+    },
+    "port": 50001,
+    "address": "battle-15001-sv.playprojectr.com",
+    "costTypeLocMeta": {
+      "InTextLiteral": "硅谷",
+      "InNamespace": "lobby_TBBattleServerList",
+      "InKey": "costType_sv"
+    },
+    "region": "sv"
+  },
+  "sea": {
+    "serverlist": {
+      "1": "15001"
+    },
+    "port": 50001,
+    "address": "battle-15001-sg.playprojectr.com",
+    "costTypeLocMeta": {
+      "InTextLiteral": "新加坡",
+      "InNamespace": "lobby_TBBattleServerList",
+      "InKey": "costType_sea"
+    },
+    "region": "sea"
+  }
+}

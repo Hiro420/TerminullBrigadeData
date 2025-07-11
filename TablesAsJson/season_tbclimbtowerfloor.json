@@ -1,0 +1,2729 @@
+﻿{
+  "1": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 20,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1020
+    },
+    "FloorID": 1,
+    "GlobalPassReward": {
+      "1": {
+        "value": 1,
+        "key": 1
+      }
+    },
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900111
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62015
+      }
+    },
+    "MinDebuffValue": 4,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240040,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99989
+    }
+  },
+  "2": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 30,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1040
+    },
+    "FloorID": 2,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900112
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 500,
+        "key": 300006
+      }
+    },
+    "MinDebuffValue": 4,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240040,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99989
+    }
+  },
+  "3": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 40,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1000
+    },
+    "FloorID": 3,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900113
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62015
+      }
+    },
+    "MinDebuffValue": 8,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240040,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99989
+    }
+  },
+  "4": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 50,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1020,
+      "2": 1040,
+      "3": 1030
+    },
+    "FloorID": 4,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900114
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99026
+      }
+    },
+    "MinDebuffValue": 8,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240040,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99989
+    }
+  },
+  "5": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 60,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1010,
+      "3": 1000
+    },
+    "FloorID": 5,
+    "GlobalPassReward": {
+      "1": {
+        "value": 1,
+        "key": 1
+      }
+    },
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900115
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62016
+      }
+    },
+    "MinDebuffValue": 12,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240040,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99989
+    }
+  },
+  "6": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 70,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1010,
+      "2": 1020,
+      "3": 1030
+    },
+    "FloorID": 6,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900116
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99030
+      }
+    },
+    "MinDebuffValue": 12,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240040,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99989
+    }
+  },
+  "7": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 80,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1010,
+      "3": 1000
+    },
+    "FloorID": 7,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900117
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62016
+      }
+    },
+    "MinDebuffValue": 16,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240040,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99989
+    }
+  },
+  "8": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 90,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1030
+    },
+    "FloorID": 8,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900118
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99028
+      }
+    },
+    "MinDebuffValue": 16,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240040,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99989
+    }
+  },
+  "9": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 100,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1040,
+      "3": 1000
+    },
+    "FloorID": 9,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900119
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      }
+    },
+    "MinDebuffValue": 20,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240040,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99989
+    }
+  },
+  "10": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 110,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060
+    },
+    "FloorID": 10,
+    "GlobalPassReward": {
+      "1": {
+        "value": 1,
+        "key": 1
+      }
+    },
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900120
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 12,
+        "key": 99019
+      }
+    },
+    "MinDebuffValue": 20,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240040,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99989
+    }
+  },
+  "11": {
+    "DropResourcesRatioKey": {
+      "1": "240044",
+      "2": "99019"
+    },
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 120,
+    "DropResourcesRatioValue": {
+      "1": {
+        "InKey": "OBJClimbTowerFloor_DropResourcesRatioValue_11_1",
+        "InNamespace": "season_TBClimbTowerFloor",
+        "InTextLiteral": "新"
+      },
+      "2": {
+        "InKey": "OBJClimbTowerFloor_DropResourcesRatioValue_11_2",
+        "InNamespace": "season_TBClimbTowerFloor",
+        "InTextLiteral": "新"
+      }
+    },
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1020
+    },
+    "FloorID": 11,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900111
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62021
+      }
+    },
+    "MinDebuffValue": 24,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240044,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99989
+    }
+  },
+  "12": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 130,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1040
+    },
+    "FloorID": 12,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900112
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 500,
+        "key": 300006
+      }
+    },
+    "MinDebuffValue": 24,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240044,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99989
+    }
+  },
+  "13": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 140,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1000
+    },
+    "FloorID": 13,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900113
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62021
+      }
+    },
+    "MinDebuffValue": 28,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240044,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99989
+    }
+  },
+  "14": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 150,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1020,
+      "2": 1040,
+      "3": 1030
+    },
+    "FloorID": 14,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900114
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99026
+      }
+    },
+    "MinDebuffValue": 28,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240044,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99989
+    }
+  },
+  "15": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 160,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1010,
+      "3": 1000
+    },
+    "FloorID": 15,
+    "GlobalPassReward": {
+      "1": {
+        "value": 1,
+        "key": 1
+      }
+    },
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900115
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62022
+      }
+    },
+    "MinDebuffValue": 32,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240044,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99989
+    }
+  },
+  "16": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 170,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1010,
+      "2": 1020,
+      "3": 1030
+    },
+    "FloorID": 16,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900116
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99030
+      }
+    },
+    "MinDebuffValue": 32,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240044,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99989
+    }
+  },
+  "17": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 180,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1010,
+      "3": 1000
+    },
+    "FloorID": 17,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900117
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62022
+      }
+    },
+    "MinDebuffValue": 36,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240044,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99989
+    }
+  },
+  "18": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 190,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1030
+    },
+    "FloorID": 18,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900118
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99028
+      }
+    },
+    "MinDebuffValue": 36,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240044,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99989
+    }
+  },
+  "19": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 200,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1040,
+      "3": 1000
+    },
+    "FloorID": 19,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900119
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240044,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99989
+    }
+  },
+  "20": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 210,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060
+    },
+    "FloorID": 20,
+    "GlobalPassReward": {
+      "1": {
+        "value": 1,
+        "key": 1
+      }
+    },
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900120
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 70781
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240044,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99989
+    }
+  },
+  "21": {
+    "DropResourcesRatioKey": {
+      "1": "240048",
+      "2": "99018"
+    },
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 220,
+    "DropResourcesRatioValue": {
+      "1": {
+        "InKey": "OBJClimbTowerFloor_DropResourcesRatioValue_21_1",
+        "InNamespace": "season_TBClimbTowerFloor",
+        "InTextLiteral": "新"
+      },
+      "2": {
+        "InKey": "OBJClimbTowerFloor_DropResourcesRatioValue_21_2",
+        "InNamespace": "season_TBClimbTowerFloor",
+        "InTextLiteral": "新"
+      }
+    },
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1020
+    },
+    "FloorID": 21,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900111
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62024
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240048,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99018,
+      "8": 99989
+    }
+  },
+  "22": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 230,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1040
+    },
+    "FloorID": 22,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900112
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 500,
+        "key": 300006
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240048,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99018,
+      "8": 99989
+    }
+  },
+  "23": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 240,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1000
+    },
+    "FloorID": 23,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900113
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62024
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240048,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99018,
+      "8": 99989
+    }
+  },
+  "24": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 250,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1020,
+      "2": 1040,
+      "3": 1030
+    },
+    "FloorID": 24,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900114
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99026
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240048,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99018,
+      "8": 99989
+    }
+  },
+  "25": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 260,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1010,
+      "3": 1000
+    },
+    "FloorID": 25,
+    "GlobalPassReward": {
+      "1": {
+        "value": 1,
+        "key": 1
+      }
+    },
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900115
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62025
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240048,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99018,
+      "8": 99989
+    }
+  },
+  "26": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 270,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1010,
+      "2": 1020,
+      "3": 1030
+    },
+    "FloorID": 26,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900116
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99030
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240048,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99018,
+      "8": 99989
+    }
+  },
+  "27": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 280,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1010,
+      "3": 1000
+    },
+    "FloorID": 27,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900117
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62025
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240048,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99018,
+      "8": 99989
+    }
+  },
+  "28": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 290,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1030
+    },
+    "FloorID": 28,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900118
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99028
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240048,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99018,
+      "8": 99989
+    }
+  },
+  "29": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 300,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1040,
+      "3": 1000
+    },
+    "FloorID": 29,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900119
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240048,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99018,
+      "8": 99989
+    }
+  },
+  "30": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 310,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060
+    },
+    "FloorID": 30,
+    "GlobalPassReward": {
+      "1": {
+        "value": 1,
+        "key": 1
+      }
+    },
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900120
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 70782
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240048,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99018,
+      "8": 99989
+    }
+  },
+  "31": {
+    "DropResourcesRatioKey": {
+      "1": "240049",
+      "2": "99034"
+    },
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 320,
+    "DropResourcesRatioValue": {
+      "1": {
+        "InKey": "OBJClimbTowerFloor_DropResourcesRatioValue_31_1",
+        "InNamespace": "season_TBClimbTowerFloor",
+        "InTextLiteral": "新"
+      },
+      "2": {
+        "InKey": "OBJClimbTowerFloor_DropResourcesRatioValue_31_2",
+        "InNamespace": "season_TBClimbTowerFloor",
+        "InTextLiteral": "新"
+      }
+    },
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1020
+    },
+    "FloorID": 31,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900111
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62026
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "32": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 330,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1040
+    },
+    "FloorID": 32,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900112
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 500,
+        "key": 300006
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "33": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 340,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1000
+    },
+    "FloorID": 33,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900113
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62026
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "34": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 350,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1020,
+      "2": 1040,
+      "3": 1030
+    },
+    "FloorID": 34,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900114
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99026
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "35": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 360,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1010,
+      "3": 1000
+    },
+    "FloorID": 35,
+    "GlobalPassReward": {
+      "1": {
+        "value": 1,
+        "key": 1
+      }
+    },
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900115
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62026
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "36": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 370,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1010,
+      "2": 1020,
+      "3": 1030
+    },
+    "FloorID": 36,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900116
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99030
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "37": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 380,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1010,
+      "3": 1000
+    },
+    "FloorID": 37,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900117
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62027
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "38": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 390,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1030
+    },
+    "FloorID": 38,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900118
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99028
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "39": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 400,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1040,
+      "3": 1000
+    },
+    "FloorID": 39,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900119
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "40": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 410,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060
+    },
+    "FloorID": 40,
+    "GlobalPassReward": {
+      "1": {
+        "value": 1,
+        "key": 1
+      }
+    },
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900120
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 70783
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "41": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 420,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1020
+    },
+    "FloorID": 41,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900111
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62027
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "42": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 430,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1040
+    },
+    "FloorID": 42,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900112
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 500,
+        "key": 300006
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "43": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 440,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1000
+    },
+    "FloorID": 43,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900113
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62027
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "44": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 450,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1020,
+      "2": 1040,
+      "3": 1030
+    },
+    "FloorID": 44,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900114
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99026
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "45": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 460,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1010,
+      "3": 1000
+    },
+    "FloorID": 45,
+    "GlobalPassReward": {
+      "1": {
+        "value": 1,
+        "key": 1
+      }
+    },
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900115
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62027
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "46": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 470,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1010,
+      "2": 1020,
+      "3": 1030
+    },
+    "FloorID": 46,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900116
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99030
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "47": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 480,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1010,
+      "3": 1000
+    },
+    "FloorID": 47,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900117
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 62027
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "48": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 490,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1030
+    },
+    "FloorID": 48,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900118
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99028
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "49": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 500,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060,
+      "2": 1040,
+      "3": 1000
+    },
+    "FloorID": 49,
+    "GlobalPassReward": {},
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900119
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  },
+  "50": {
+    "DropResourcesRatioKey": {},
+    "FloorDescription": {},
+    "DailyRewardBaseValue": 510,
+    "DropResourcesRatioValue": {},
+    "RecommendedTeams": {
+      "1": 1060
+    },
+    "FloorID": 50,
+    "GlobalPassReward": {
+      "1": {
+        "value": 1,
+        "key": 1
+      }
+    },
+    "ExtraEffectsDesc": {},
+    "LobbyAnomalyID": {},
+    "BattleAnomalyID": {
+      "1": 6900120
+    },
+    "DebuffGroupIDs": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16
+    },
+    "FirstWinRewards": {
+      "1": {
+        "value": 1,
+        "key": 70784
+      }
+    },
+    "MinDebuffValue": 40,
+    "DisableDebuff": false,
+    "DropResources": {
+      "1": 240049,
+      "2": 99026,
+      "3": 99030,
+      "4": 99028,
+      "5": 99033,
+      "6": 99019,
+      "7": 99034,
+      "8": 99989
+    }
+  }
+}

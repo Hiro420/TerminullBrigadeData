@@ -1,0 +1,6005 @@
+﻿{
+  "10500901": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500901,
+    "WeaponID": 5009,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500901,
+    "LinkId": "10101",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "熟练度级获得",
+      "InKey": "LinkDesc_10500901"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "倾心",
+      "InKey": "SkinName_10500901"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【倾心】默认外观。",
+      "InKey": "Desc_10500901"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Qing_Yp.Gun01_Qing_Yp"
+  },
+  "10500902": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500902,
+    "WeaponID": 5009,
+    "ParamList": {
+      "1": 1
+    },
+    "SpecialText": "",
+    "SkinID": 500902,
+    "LinkId": "1005",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "数据宝库·浮世绘卷",
+      "InKey": "LinkDesc_10500902"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "倾心·苇草",
+      "InKey": "SkinName_10500902"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【倾心】稀有级外观。",
+      "InKey": "Desc_10500902"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Qing_Ff_G1.Gun01_Qing_Ff_G1"
+  },
+  "10500903": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500903,
+    "WeaponID": 5009,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500903,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500903"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "倾心·风信",
+      "InKey": "SkinName_10500903"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【倾心】稀有级外观。",
+      "InKey": "Desc_10500903"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Qing_Ff_G2.Gun01_Qing_Ff_G2"
+  },
+  "10500904": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500904,
+    "WeaponID": 5009,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500904,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500904"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "倾心·天堂鸟",
+      "InKey": "SkinName_10500904"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【倾心】稀有级外观。",
+      "InKey": "Desc_10500904"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Qing_Ff_G3.Gun01_Qing_Ff_G3"
+  },
+  "10500905": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500905,
+    "WeaponID": 5009,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500905,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500905"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "倾心·血痕",
+      "InKey": "SkinName_10500905"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【倾心】稀有级外观。",
+      "InKey": "Desc_10500905"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Qing_Ff_G4.Gun01_Qing_Ff_G4"
+  },
+  "10500906": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500906,
+    "WeaponID": 5009,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500906,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500906"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "倾心·紫罗兰",
+      "InKey": "SkinName_10500906"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【倾心】稀有级外观。",
+      "InKey": "Desc_10500906"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Qing_Ff_G5.Gun01_Qing_Ff_G5"
+  },
+  "10500907": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500907,
+    "WeaponID": 5009,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500907,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500907"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "倾心·微光",
+      "InKey": "SkinName_10500907"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【倾心】稀有级外观。",
+      "InKey": "Desc_10500907"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Qing_Ff_G6.Gun01_Qing_Ff_G6"
+  },
+  "10501421": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501421,
+    "WeaponID": 5014,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501421,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501421"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "乐趣橙光",
+      "InKey": "SkinName_10501421"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【元气甜心】稀有级外观。",
+      "InKey": "Desc_10501421"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Gloria_Ff_B1.Gun01_Gloria_Ff_B1"
+  },
+  "10501422": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501422,
+    "WeaponID": 5014,
+    "ParamList": {
+      "1": 2,
+      "2": 501422
+    },
+    "SpecialText": "",
+    "SkinID": 501422,
+    "LinkId": "1007",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "购买",
+      "InKey": "LinkDesc_10501422"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "复古印花",
+      "InKey": "SkinName_10501422"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【元气甜心】稀有级外观。",
+      "InKey": "Desc_10501422"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Gloria_Ff_B2.Gun01_Gloria_Ff_B2"
+  },
+  "10502701": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502701,
+    "WeaponID": 5027,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502701,
+    "LinkId": "10101",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "熟练度级获得",
+      "InKey": "LinkDesc_10502701"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "零度新星",
+      "InKey": "SkinName_10502701"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【零度新星】默认外观。",
+      "InKey": "Desc_10502701"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Hyks_Ff.Gun02_Hyks_Ff"
+  },
+  "10502702": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502702,
+    "WeaponID": 5027,
+    "ParamList": {
+      "1": 1
+    },
+    "SpecialText": "",
+    "SkinID": 502702,
+    "LinkId": "1005",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "数据宝库·浮世绘卷",
+      "InKey": "LinkDesc_10502702"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "零度新星·荒原",
+      "InKey": "SkinName_10502702"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【零度新星】稀有级外观。",
+      "InKey": "Desc_10502702"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Hyks_Ff_G1.Gun02_Hyks_Ff_G1"
+  },
+  "10502703": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502703,
+    "WeaponID": 5027,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502703,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502703"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "零度新星·幽邃",
+      "InKey": "SkinName_10502703"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【零度新星】稀有级外观。",
+      "InKey": "Desc_10502703"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Hyks_Ff_G2.Gun02_Hyks_Ff_G2"
+  },
+  "10502704": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502704,
+    "WeaponID": 5027,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502704,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502704"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "零度新星·蝰蛇",
+      "InKey": "SkinName_10502704"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【零度新星】稀有级外观。",
+      "InKey": "Desc_10502704"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Hyks_Ff_G3.Gun02_Hyks_Ff_G3"
+  },
+  "10502705": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502705,
+    "WeaponID": 5027,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502705,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502705"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "零度新星·云雀",
+      "InKey": "SkinName_10502705"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【零度新星】稀有级外观。",
+      "InKey": "Desc_10502705"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Hyks_Ff_G4.Gun02_Hyks_Ff_G4"
+  },
+  "10500921": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500921,
+    "WeaponID": 5009,
+    "ParamList": {
+      "1": 2,
+      "2": 500921
+    },
+    "SpecialText": "",
+    "SkinID": 500921,
+    "LinkId": "1007",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "购买",
+      "InKey": "LinkDesc_10500921"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "时空守护者",
+      "InKey": "SkinName_10500921"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【倾心】稀有级外观。",
+      "InKey": "Desc_10500921"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Qing_Ff_B1.Gun01_Qing_Ff_B1"
+  },
+  "10500922": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500922,
+    "WeaponID": 5009,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500922,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500922"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "天启",
+      "InKey": "SkinName_10500922"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【倾心】稀有级外观。",
+      "InKey": "Desc_10500922"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Qing_Ff_B2.Gun01_Qing_Ff_B2"
+  },
+  "10502201": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502201,
+    "WeaponID": 5022,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502201,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502201"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "一发就荡平",
+      "InKey": "SkinName_10502201"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【一发就荡平】默认外观。",
+      "InKey": "Desc_10502201"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Nax_Yp.Gun03_Nax_Yp"
+  },
+  "10502202": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502202,
+    "WeaponID": 5022,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502202,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502202"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "一发就荡平·暗紫",
+      "InKey": "SkinName_10502202"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【一发就荡平】稀有级外观。",
+      "InKey": "Desc_10502202"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Nax_Yp_G1.Gun03_Nax_Yp_G1"
+  },
+  "10502203": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502203,
+    "WeaponID": 5022,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502203,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502203"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "一发就荡平·幽夜",
+      "InKey": "SkinName_10502203"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【一发就荡平】稀有级外观。",
+      "InKey": "Desc_10502203"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Nax_Yp_G2.Gun03_Nax_Yp_G2"
+  },
+  "10502204": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502204,
+    "WeaponID": 5022,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502204,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502204"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "一发就荡平·枯绿",
+      "InKey": "SkinName_10502204"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【一发就荡平】稀有级外观。",
+      "InKey": "Desc_10502204"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Nax_Yp_G3.Gun03_Nax_Yp_G3"
+  },
+  "10502205": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502205,
+    "WeaponID": 5022,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502205,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502205"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "一发就荡平·橙黄",
+      "InKey": "SkinName_10502205"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【一发就荡平】稀有级外观。",
+      "InKey": "Desc_10502205"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Nax_Yp_G4.Gun03_Nax_Yp_G4"
+  },
+  "10501441": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501441,
+    "WeaponID": 5014,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501441,
+    "LinkId": "",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501441"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "夏日余晖",
+      "InKey": "SkinName_10501441"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【元气甜心】史诗级外观。",
+      "InKey": "Desc_10501441"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Gloria_Ff_P1.Gun01_Gloria_Ff_P1"
+  },
+  "10501442": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501442,
+    "WeaponID": 5014,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501442,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501442"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "红粉蒸汽",
+      "InKey": "SkinName_10501442"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【元气甜心】史诗级外观。",
+      "InKey": "Desc_10501442"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Gloria_Ff_P2.Gun01_Gloria_Ff_P2"
+  },
+  "10501701": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501701,
+    "WeaponID": 5017,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501701,
+    "LinkId": "10101",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "熟练度级获得",
+      "InKey": "LinkDesc_10501701"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "战斗小熊",
+      "InKey": "SkinName_10501701"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【战斗小熊】默认外观。",
+      "InKey": "Desc_10501701"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Gloria_Yp.Gun02_Gloria_Yp"
+  },
+  "10501702": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501702,
+    "WeaponID": 5017,
+    "ParamList": {
+      "1": 1
+    },
+    "SpecialText": "",
+    "SkinID": 501702,
+    "LinkId": "1005",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "数据宝库·浮世绘卷",
+      "InKey": "LinkDesc_10501702"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "战斗小熊·枫红",
+      "InKey": "SkinName_10501702"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【战斗小熊】稀有级外观。",
+      "InKey": "Desc_10501702"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Gloria_Ff_G1.Gun02_Gloria_Ff_G1"
+  },
+  "10501703": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501703,
+    "WeaponID": 5017,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501703,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501703"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "战斗小熊·护卫",
+      "InKey": "SkinName_10501703"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【战斗小熊】稀有级外观。",
+      "InKey": "Desc_10501703"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Gloria_Ff_G2.Gun02_Gloria_Ff_G2"
+  },
+  "10501704": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501704,
+    "WeaponID": 5017,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501704,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501704"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "战斗小熊·电幻",
+      "InKey": "SkinName_10501704"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【战斗小熊】稀有级外观。",
+      "InKey": "Desc_10501704"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Gloria_Ff_G3.Gun02_Gloria_Ff_G3"
+  },
+  "10501705": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501705,
+    "WeaponID": 5017,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501705,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501705"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "战斗小熊·森游",
+      "InKey": "SkinName_10501705"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【战斗小熊】稀有级外观。",
+      "InKey": "Desc_10501705"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Gloria_Ff_G4.Gun02_Gloria_Ff_G4"
+  },
+  "10500941": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10500941,
+    "WeaponID": 5009,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500941,
+    "LinkId": "",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "内测获得",
+      "InKey": "LinkDesc_10500941"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "量子裂隙",
+      "InKey": "SkinName_10500941"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【倾心】史诗级外观。",
+      "InKey": "Desc_10500941"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Qing_Ff_P1.Gun01_Qing_Ff_P1"
+  },
+  "10500942": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10500942,
+    "WeaponID": 5009,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500942,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500942"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "能量风暴",
+      "InKey": "SkinName_10500942"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【倾心】史诗级外观。",
+      "InKey": "Desc_10500942"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Qing_Ff_P2.Gun01_Qing_Ff_P2"
+  },
+  "10501201": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501201,
+    "WeaponID": 5012,
+    "ParamList": {
+      "1": 10000
+    },
+    "SpecialText": "",
+    "SkinID": 501201,
+    "LinkId": "1015",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "获取角色后解锁",
+      "InKey": "LinkDesc_10501201"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "星云",
+      "InKey": "SkinName_10501201"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【星云】默认外观。",
+      "InKey": "Desc_10501201"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Linglan_Yp.Gun01_Linglan_Yp"
+  },
+  "10501202": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501202,
+    "WeaponID": 5012,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501202,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501202"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "星云·曼陀罗",
+      "InKey": "SkinName_10501202"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【星云】稀有级外观。",
+      "InKey": "Desc_10501202"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Linglan_Yp_G1.Gun01_Linglan_Yp_G1"
+  },
+  "10501203": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501203,
+    "WeaponID": 5012,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501203,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501203"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "星云·石英",
+      "InKey": "SkinName_10501203"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【星云】稀有级外观。",
+      "InKey": "Desc_10501203"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Linglan_Yp_G2.Gun01_Linglan_Yp_G2"
+  },
+  "10501204": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501204,
+    "WeaponID": 5012,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501204,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501204"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "星云·蓝晶",
+      "InKey": "SkinName_10501204"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【星云】稀有级外观。",
+      "InKey": "Desc_10501204"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Linglan_Yp_G3.Gun01_Linglan_Yp_G3"
+  },
+  "10501205": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501205,
+    "WeaponID": 5012,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501205,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501205"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "星云·曜紫",
+      "InKey": "SkinName_10501205"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【星云】稀有级外观。",
+      "InKey": "Desc_10501205"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Linglan_Yp_G4.Gun01_Linglan_Yp_G4"
+  },
+  "10501206": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501206,
+    "WeaponID": 5012,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501206,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501206"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "星云·繁荣",
+      "InKey": "SkinName_10501206"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【星云】稀有级外观。",
+      "InKey": "Desc_10501206"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Linglan_Yp_G5.Gun01_Linglan_Yp_G5"
+  },
+  "10501207": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501207,
+    "WeaponID": 5012,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501207,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501207"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "星云·黯绿",
+      "InKey": "SkinName_10501207"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【星云】稀有级外观。",
+      "InKey": "Desc_10501207"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Linglan_Yp_G6.Gun01_Linglan_Yp_G6"
+  },
+  "10500701": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500701,
+    "WeaponID": 5007,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500701,
+    "LinkId": "1008",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "通关环都世界难度",
+      "InKey": "LinkDesc_10500701"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "宠信",
+      "InKey": "SkinName_10500701"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【宠信】默认外观。",
+      "InKey": "Desc_10500701"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Qing_Yp.Gun02_Qing_Yp"
+  },
+  "10500702": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500702,
+    "WeaponID": 5007,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500702,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500702"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "宠信·苇草",
+      "InKey": "SkinName_10500702"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【宠信】稀有级外观。",
+      "InKey": "Desc_10500702"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Qing_Ff_G1.Gun02_Qing_Ff_G1"
+  },
+  "10500703": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500703,
+    "WeaponID": 5007,
+    "ParamList": {
+      "1": 2
+    },
+    "SpecialText": "",
+    "SkinID": 500703,
+    "LinkId": "1005",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "数据宝库·浮世骇客",
+      "InKey": "LinkDesc_10500703"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "宠信·风信",
+      "InKey": "SkinName_10500703"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【宠信】稀有级外观。",
+      "InKey": "Desc_10500703"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Qing_Ff_G2.Gun02_Qing_Ff_G2"
+  },
+  "10500704": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500704,
+    "WeaponID": 5007,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500704,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500704"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "宠信·天堂鸟",
+      "InKey": "SkinName_10500704"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【宠信】稀有级外观。",
+      "InKey": "Desc_10500704"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Qing_Ff_G3.Gun02_Qing_Ff_G3"
+  },
+  "10500705": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500705,
+    "WeaponID": 5007,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500705,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500705"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "宠信·玫瑰",
+      "InKey": "SkinName_10500705"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【宠信】稀有级外观。",
+      "InKey": "Desc_10500705"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Qing_Ff_G4.Gun02_Qing_Ff_G4"
+  },
+  "10500706": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500706,
+    "WeaponID": 5007,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500706,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500706"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "宠信·紫罗兰",
+      "InKey": "SkinName_10500706"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【宠信】稀有级外观。",
+      "InKey": "Desc_10500706"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Qing_Ff_G5.Gun02_Qing_Ff_G5"
+  },
+  "10500707": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500707,
+    "WeaponID": 5007,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500707,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500707"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "宠信·沙影",
+      "InKey": "SkinName_10500707"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【宠信】稀有级外观。",
+      "InKey": "Desc_10500707"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Qing_Ff_G6.Gun02_Qing_Ff_G6"
+  },
+  "10501221": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501221,
+    "WeaponID": 5012,
+    "ParamList": {
+      "1": 2,
+      "2": 501221
+    },
+    "SpecialText": "",
+    "SkinID": 501221,
+    "LinkId": "1007",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "购买",
+      "InKey": "LinkDesc_10501221"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "方解石",
+      "InKey": "SkinName_10501221"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【星云】稀有级外观。",
+      "InKey": "Desc_10501221"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Linglan_Yp_B1.Gun01_Linglan_Yp_B1"
+  },
+  "10501222": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501222,
+    "WeaponID": 5012,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501222,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501222"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "赤潮",
+      "InKey": "SkinName_10501222"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【星云】稀有级外观。",
+      "InKey": "Desc_10501222"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Linglan_Yp_B2.Gun01_Linglan_Yp_B2"
+  },
+  "10502501": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502501,
+    "WeaponID": 5025,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502501,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502501"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "节奏狂潮",
+      "InKey": "SkinName_10502501"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【节奏狂潮】默认外观。",
+      "InKey": "Desc_10502501"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Cotia_Ff.Gun02_Cotia_Ff"
+  },
+  "10502502": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502502,
+    "WeaponID": 5025,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502502,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502502"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "节奏狂潮·粉音",
+      "InKey": "SkinName_10502502"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【节奏狂潮】稀有级外观。",
+      "InKey": "Desc_10502502"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Cotia_Ff_G1.Gun02_Cotia_Ff_G1"
+  },
+  "10502503": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502503,
+    "WeaponID": 5025,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502503,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502503"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "节奏狂潮·蓝调",
+      "InKey": "SkinName_10502503"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【节奏狂潮】稀有级外观。",
+      "InKey": "Desc_10502503"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Cotia_Ff_G2.Gun02_Cotia_Ff_G2"
+  },
+  "10502504": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502504,
+    "WeaponID": 5025,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502504,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502504"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "节奏狂潮·音翠",
+      "InKey": "SkinName_10502504"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【节奏狂潮】稀有级外观。",
+      "InKey": "Desc_10502504"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Cotia_Ff_G3.Gun02_Cotia_Ff_G3"
+  },
+  "10502505": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502505,
+    "WeaponID": 5025,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502505,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502505"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "节奏狂潮·亮音",
+      "InKey": "SkinName_10502505"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【节奏狂潮】稀有级外观。",
+      "InKey": "Desc_10502505"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Cotia_Ff_G4.Gun02_Cotia_Ff_G4"
+  },
+  "10500721": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500721,
+    "WeaponID": 5007,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500721,
+    "LinkId": "",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500721"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "数域潜行者",
+      "InKey": "SkinName_10500721"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【宠信】稀有级外观。",
+      "InKey": "Desc_10500721"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Qing_Ff_B1.Gun02_Qing_Ff_B1"
+  },
+  "10500722": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500722,
+    "WeaponID": 5007,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500722,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500722"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "绿霓幻影",
+      "InKey": "SkinName_10500722"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【宠信】稀有级外观。",
+      "InKey": "Desc_10500722"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Qing_Ff_B2.Gun02_Qing_Ff_B2"
+  },
+  "10502001": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502001,
+    "WeaponID": 5020,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502001,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502001"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "裁决者",
+      "InKey": "SkinName_10502001"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【裁决者】默认外观。",
+      "InKey": "Desc_10502001"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Taros_Yp.Gun03_Taros_Yp"
+  },
+  "10501241": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501241,
+    "WeaponID": 5012,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501241,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501241"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "启示录",
+      "InKey": "SkinName_10501241"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【星云】史诗级外观。",
+      "InKey": "Desc_10501241"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Linglan_Yp_P1.Gun01_Linglan_Yp_P1"
+  },
+  "10501242": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501242,
+    "WeaponID": 5012,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501242,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501242"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "月光结",
+      "InKey": "SkinName_10501242"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【星云】史诗级外观。",
+      "InKey": "Desc_10501242"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Linglan_Yp_P2.Gun01_Linglan_Yp_P2"
+  },
+  "10501501": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501501,
+    "WeaponID": 5015,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501501,
+    "LinkId": "1023",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "获取角色后解锁",
+      "InKey": "LinkDesc_10501501"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "病毒暗星",
+      "InKey": "SkinName_10501501"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【病毒暗星】默认外观。",
+      "InKey": "Desc_10501501"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Hyks_Yp.Gun01_Hyks_Yp"
+  },
+  "10501502": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501502,
+    "WeaponID": 5015,
+    "ParamList": {
+      "1": 2,
+      "2": 501502
+    },
+    "SpecialText": "",
+    "SkinID": 501502,
+    "LinkId": "1007",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "购买",
+      "InKey": "LinkDesc_10501502"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "病毒暗星·荒原",
+      "InKey": "SkinName_10501502"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【病毒暗星】稀有级外观。",
+      "InKey": "Desc_10501502"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Hyks_Ff_G1.Gun01_Hyks_Ff_G1"
+  },
+  "10501503": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501503,
+    "WeaponID": 5015,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501503,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501503"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "病毒暗星·幽邃",
+      "InKey": "SkinName_10501503"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【病毒暗星】稀有级外观。",
+      "InKey": "Desc_10501503"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Hyks_Ff_G2.Gun01_Hyks_Ff_G2"
+  },
+  "10501504": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501504,
+    "WeaponID": 5015,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501504,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501504"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "病毒暗星·蝰蛇",
+      "InKey": "SkinName_10501504"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【病毒暗星】稀有级外观。",
+      "InKey": "Desc_10501504"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Hyks_Ff_G3.Gun01_Hyks_Ff_G3"
+  },
+  "10501505": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501505,
+    "WeaponID": 5015,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501505,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501505"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "病毒暗星·云雀",
+      "InKey": "SkinName_10501505"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【病毒暗星】稀有级外观。",
+      "InKey": "Desc_10501505"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Hyks_Ff_G4.Gun01_Hyks_Ff_G4"
+  },
+  "10500741": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10500741,
+    "WeaponID": 5007,
+    "ParamList": {
+      "1": 1,
+      "2": 1005
+    },
+    "SpecialText": "",
+    "SkinID": 500741,
+    "LinkId": "1016",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "购买捆绑包",
+      "InKey": "LinkDesc_10500741"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "霓虹迷踪",
+      "InKey": "SkinName_10500741"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【宠信】史诗级外观。",
+      "InKey": "Desc_10500741"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Qing_Ff_P1.Gun02_Qing_Ff_P1"
+  },
+  "10500742": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10500742,
+    "WeaponID": 5007,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500742,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500742"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "赤焰灼心",
+      "InKey": "SkinName_10500742"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "影刃武器【宠信】史诗级外观。",
+      "InKey": "Desc_10500742"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Qing_Ff_P2.Gun02_Qing_Ff_P2"
+  },
+  "10501001": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501001,
+    "WeaponID": 5010,
+    "ParamList": {
+      "1": 10000
+    },
+    "SpecialText": "",
+    "SkinID": 501001,
+    "LinkId": "1015",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "获取角色后解锁",
+      "InKey": "LinkDesc_10501001"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "捍卫者",
+      "InKey": "SkinName_10501001"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【捍卫者】默认外观。",
+      "InKey": "Desc_10501001"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Taros_Yp.Gun01_Taros_Yp"
+  },
+  "10501002": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501002,
+    "WeaponID": 5010,
+    "ParamList": {
+      "1": 2
+    },
+    "SpecialText": "",
+    "SkinID": 501002,
+    "LinkId": "1005",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "数据宝库·浮世骇客",
+      "InKey": "LinkDesc_10501002"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "捍卫者·雨林",
+      "InKey": "SkinName_10501002"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【捍卫者】稀有级外观。",
+      "InKey": "Desc_10501002"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Taros_Ff_G1.Gun01_Taros_Ff_G1"
+  },
+  "10501003": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501003,
+    "WeaponID": 5010,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501003,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501003"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "捍卫者·翠光",
+      "InKey": "SkinName_10501003"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【捍卫者】稀有级外观。",
+      "InKey": "Desc_10501003"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Taros_Ff_G2.Gun01_Taros_Ff_G2"
+  },
+  "10501004": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501004,
+    "WeaponID": 5010,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501004,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501004"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "捍卫者·极光",
+      "InKey": "SkinName_10501004"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【捍卫者】稀有级外观。",
+      "InKey": "Desc_10501004"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Taros_Ff_G3.Gun01_Taros_Ff_G3"
+  },
+  "10501005": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501005,
+    "WeaponID": 5010,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501005,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501005"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "捍卫·骨瓷",
+      "InKey": "SkinName_10501005"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【捍卫者】稀有级外观。",
+      "InKey": "Desc_10501005"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Taros_Ff_G4.Gun01_Taros_Ff_G4"
+  },
+  "10501006": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501006,
+    "WeaponID": 5010,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501006,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501006"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "捍卫者·熔核",
+      "InKey": "SkinName_10501006"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【捍卫者】稀有级外观。",
+      "InKey": "Desc_10501006"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Taros_Ff_G5.Gun01_Taros_Ff_G5"
+  },
+  "10501007": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501007,
+    "WeaponID": 5010,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501007,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501007"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "捍卫者·平原",
+      "InKey": "SkinName_10501007"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【捍卫者】稀有级外观。",
+      "InKey": "Desc_10501007"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Taros_Ff_G6.Gun01_Taros_Ff_G6"
+  },
+  "10501521": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501521,
+    "WeaponID": 5015,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501521,
+    "LinkId": "1023",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "原爆点通行证获取",
+      "InKey": "LinkDesc_10501521"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "感官制裁",
+      "InKey": "SkinName_10501521"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【病毒暗星】稀有级外观。",
+      "InKey": "Desc_10501521"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Hyks_Ff_B1.Gun01_Hyks_Ff_B1"
+  },
+  "10501522": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501522,
+    "WeaponID": 5015,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501522,
+    "LinkId": "",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501522"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "苍穹灰影",
+      "InKey": "SkinName_10501522"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【病毒暗星】稀有级外观。",
+      "InKey": "Desc_10501522"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Hyks_Ff_B2.Gun01_Hyks_Ff_B2"
+  },
+  "10502801": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502801,
+    "WeaponID": 5028,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502801,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502801"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "烬灭",
+      "InKey": "SkinName_10502801"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【烬灭】默认外观。",
+      "InKey": "Desc_10502801"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Yuri_Ff.Gun02_Yuri_Ff"
+  },
+  "10502802": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502802,
+    "WeaponID": 5028,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502802,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502802"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "烬灭·蓝光",
+      "InKey": "SkinName_10502802"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【烬灭】稀有级外观。",
+      "InKey": "Desc_10502802"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Yuri_Ff_G1.Gun02_Yuri_Ff_G1"
+  },
+  "10502803": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502803,
+    "WeaponID": 5028,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502803,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502803"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "烬灭·红焰",
+      "InKey": "SkinName_10502803"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【烬灭】稀有级外观。",
+      "InKey": "Desc_10502803"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Yuri_Ff_G2.Gun02_Yuri_Ff_G2"
+  },
+  "10502804": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502804,
+    "WeaponID": 5028,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502804,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502804"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "烬灭·翠星",
+      "InKey": "SkinName_10502804"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【烬灭】稀有级外观。",
+      "InKey": "Desc_10502804"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Yuri_Ff_G3.Gun02_Yuri_Ff_G3"
+  },
+  "10502805": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502805,
+    "WeaponID": 5028,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502805,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502805"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "烬灭·紫芒",
+      "InKey": "SkinName_10502805"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【烬灭】稀有级外观。",
+      "InKey": "Desc_10502805"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Yuri_Ff_G4.Gun02_Yuri_Ff_G4"
+  },
+  "10501021": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501021,
+    "WeaponID": 5010,
+    "ParamList": {
+      "1": 2,
+      "2": 501021
+    },
+    "SpecialText": "",
+    "SkinID": 501021,
+    "LinkId": "1007",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "购买",
+      "InKey": "LinkDesc_10501021"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "暴雨危途",
+      "InKey": "SkinName_10501021"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【捍卫者】稀有级外观。",
+      "InKey": "Desc_10501021"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Taros_Ff_B1.Gun01_Taros_Ff_B1"
+  },
+  "10501022": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501022,
+    "WeaponID": 5010,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501022,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501022"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "航迹守卫",
+      "InKey": "SkinName_10501022"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【捍卫者】稀有级外观。",
+      "InKey": "Desc_10501022"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Taros_Yp.Gun01_Taros_Yp"
+  },
+  "10502301": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502301,
+    "WeaponID": 5023,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502301,
+    "LinkId": "1013",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502301"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "超星",
+      "InKey": "SkinName_10502301"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【超星】默认外观。",
+      "InKey": "Desc_10502301"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Yuri_Ff.Gun01_Yuri_Ff"
+  },
+  "10502302": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502302,
+    "WeaponID": 5023,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502302,
+    "LinkId": "1013",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502302"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "超星·蓝光",
+      "InKey": "SkinName_10502302"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【超星】稀有级外观。",
+      "InKey": "Desc_10502302"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Yuri_Ff_G1.Gun01_Yuri_Ff_G1"
+  },
+  "10502303": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502303,
+    "WeaponID": 5023,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502303,
+    "LinkId": "1013",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502303"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "超星·红焰",
+      "InKey": "SkinName_10502303"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【超星】稀有级外观。",
+      "InKey": "Desc_10502303"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Yuri_Ff_G2.Gun01_Yuri_Ff_G2"
+  },
+  "10502304": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502304,
+    "WeaponID": 5023,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502304,
+    "LinkId": "1013",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502304"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "超星·翠星",
+      "InKey": "SkinName_10502304"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【超星】稀有级外观。",
+      "InKey": "Desc_10502304"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Yuri_Ff_G3.Gun01_Yuri_Ff_G3"
+  },
+  "10502305": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502305,
+    "WeaponID": 5023,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502305,
+    "LinkId": "1013",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502305"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "超星·紫芒",
+      "InKey": "SkinName_10502305"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【超星】稀有级外观。",
+      "InKey": "Desc_10502305"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Yuri_Ff_G4.Gun01_Yuri_Ff_G4"
+  },
+  "10501541": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501541,
+    "WeaponID": 5015,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501541,
+    "LinkId": "",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501541"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "瑰色风暴",
+      "InKey": "SkinName_10501541"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【病毒暗星】史诗级外观。",
+      "InKey": "Desc_10501541"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Hyks_Ff_P1.Gun01_Hyks_Ff_P1"
+  },
+  "10501542": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501542,
+    "WeaponID": 5015,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501542,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501542"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "荒野追击",
+      "InKey": "SkinName_10501542"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【病毒暗星】史诗级外观。",
+      "InKey": "Desc_10501542"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Hyks_Ff_P2.Gun01_Hyks_Ff_P2"
+  },
+  "10501801": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501801,
+    "WeaponID": 5018,
+    "ParamList": {
+      "1": 7,
+      "2": 10707002
+    },
+    "SpecialText": "",
+    "SkinID": 501801,
+    "LinkId": "1007",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "通行证积分兑换",
+      "InKey": "LinkDesc_10501801"
+    },
+    "HeirloomIconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_qiang02_01.Icon_qiang02_01",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "浮世霓光·寂灭",
+      "InKey": "SkinName_10501801"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "冷酷，果断，正如同它那美丽的主人一样。",
+      "InKey": "Desc_10501801"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Qing01_Ff.Gun03_Qing01_Ff"
+  },
+  "10501802": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501802,
+    "WeaponID": 5018,
+    "ParamList": {
+      "1": 2
+    },
+    "SpecialText": "",
+    "SkinID": 501802,
+    "LinkId": "1005",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "数据宝库·浮世骇客",
+      "InKey": "LinkDesc_10501802"
+    },
+    "HeirloomIconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_qiang01_01.Icon_qiang01_01",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "浮世霓光·超音速",
+      "InKey": "SkinName_10501802"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "流光瞬息，弹影无痕。一把好枪，不亚于一位好知己。",
+      "InKey": "Desc_10501802"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Qing_Yp.Gun03_Qing_Yp"
+  },
+  "10501803": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501803,
+    "WeaponID": 5018,
+    "ParamList": {
+      "1": 1
+    },
+    "SpecialText": "",
+    "SkinID": 501803,
+    "LinkId": "1005",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "数据宝库·浮世绘卷",
+      "InKey": "LinkDesc_10501803"
+    },
+    "HeirloomIconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_qiang03_01.Icon_qiang03_01",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "浮世霓光·百鬼夜行",
+      "InKey": "SkinName_10501803"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "把百鬼装点在枪上，似乎是在预示着那些曾丧命于枪口下的灵魂。",
+      "InKey": "Desc_10501803"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Qing02_Ff.Gun03_Qing02_Ff"
+  },
+  "10501041": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501041,
+    "WeaponID": 5010,
+    "ParamList": {
+      "1": 10001
+    },
+    "SpecialText": "",
+    "SkinID": 501041,
+    "LinkId": "1015",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "【法则轶闻】活动获得",
+      "InKey": "LinkDesc_10501041"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "光荣之路",
+      "InKey": "SkinName_10501041"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【捍卫者】史诗级外观。",
+      "InKey": "Desc_10501041"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Taros_Ff_P1.Gun01_Taros_Ff_P1"
+  },
+  "10501042": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501042,
+    "WeaponID": 5010,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501042,
+    "LinkId": "1023",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "原爆点通行证获取",
+      "InKey": "LinkDesc_10501042"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "闷燃余火",
+      "InKey": "SkinName_10501042"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【捍卫者】史诗级外观。",
+      "InKey": "Desc_10501042"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Taros_Ff_P2.Gun01_Taros_Ff_P2"
+  },
+  "10502321": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502321,
+    "WeaponID": 5023,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502321,
+    "LinkId": "1013",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502321"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "紫光动力",
+      "InKey": "SkinName_10502321"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【超星】稀有级外观。",
+      "InKey": "Desc_10502321"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Yuri_Ff_B1.Gun01_Yuri_Ff_B1"
+  },
+  "10502322": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502322,
+    "WeaponID": 5023,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502322,
+    "LinkId": "1013",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502322"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "星空蓝影",
+      "InKey": "SkinName_10502322"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【超星】稀有级外观。",
+      "InKey": "Desc_10502322"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Yuri_Ff_B2.Gun01_Yuri_Ff_B2"
+  },
+  "10503311": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10503311,
+    "WeaponID": 50331,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 503311,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10503311"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "哨箭枪测试皮肤穿透",
+      "InKey": "SkinName_10503311"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "Desc_10503311"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Gloria_Yp.Gun03_Gloria_Yp"
+  },
+  "10503301": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10503301,
+    "WeaponID": 5033,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 503301,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10503301"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "哨箭枪测试皮肤锁定",
+      "InKey": "SkinName_10503301"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "Desc_10503301"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Gloria_Yp.Gun03_Gloria_Yp"
+  },
+  "10501942": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501942,
+    "WeaponID": 5019,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501942,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501942"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "幻紫狂欢",
+      "InKey": "SkinName_10501942"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "叛音武器【弦乐战斧】史诗级外观。",
+      "InKey": "Desc_10501942"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Cotia_Ff_P2.Gun01_Cotia_Ff_P2"
+  },
+  "10502842": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10502842,
+    "WeaponID": 5028,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502842,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502842"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "赤焰星辰",
+      "InKey": "SkinName_10502842"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【烬灭】史诗级外观。",
+      "InKey": "Desc_10502842"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Yuri_Ff_P2.Gun02_Yuri_Ff_P2"
+  },
+  "10502841": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10502841,
+    "WeaponID": 5028,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502841,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502841"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "赤紫星海",
+      "InKey": "SkinName_10502841"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【烬灭】史诗级外观。",
+      "InKey": "Desc_10502841"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Yuri_Ff_P1.Gun02_Yuri_Ff_P1"
+  },
+  "10500801": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500801,
+    "WeaponID": 5008,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500801,
+    "LinkId": "10101",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "熟练度级获得",
+      "InKey": "LinkDesc_10500801"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "庇护者",
+      "InKey": "SkinName_10500801"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【庇护者】默认外观。",
+      "InKey": "Desc_10500801"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Taros_Yp.Gun02_Taros_Yp"
+  },
+  "10500802": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500802,
+    "WeaponID": 5008,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500802,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500802"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "庇护者·雨林",
+      "InKey": "SkinName_10500802"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【庇护者】稀有级外观。",
+      "InKey": "Desc_10500802"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Taros_Ff_G1.Gun02_Taros_Ff_G1"
+  },
+  "10500803": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500803,
+    "WeaponID": 5008,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500803,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500803"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "庇护者·翠光",
+      "InKey": "SkinName_10500803"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【庇护者】稀有级外观。",
+      "InKey": "Desc_10500803"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Taros_Ff_G2.Gun02_Taros_Ff_G2"
+  },
+  "10500804": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500804,
+    "WeaponID": 5008,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500804,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500804"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "庇护者·极光",
+      "InKey": "SkinName_10500804"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【庇护者】稀有级外观。",
+      "InKey": "Desc_10500804"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Taros_Ff_G3.Gun02_Taros_Ff_G3"
+  },
+  "10500805": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500805,
+    "WeaponID": 5008,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500805,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500805"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "庇护者·骨瓷",
+      "InKey": "SkinName_10500805"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【庇护者】稀有级外观。",
+      "InKey": "Desc_10500805"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Taros_Ff_G4.Gun02_Taros_Ff_G4"
+  },
+  "10500806": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500806,
+    "WeaponID": 5008,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500806,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500806"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "庇护者·熔核",
+      "InKey": "SkinName_10500806"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【庇护者】稀有级外观。",
+      "InKey": "Desc_10500806"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Taros_Ff_G5.Gun02_Taros_Ff_G5"
+  },
+  "10500807": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500807,
+    "WeaponID": 5008,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500807,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500807"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "庇护者·平原",
+      "InKey": "SkinName_10500807"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【庇护者】稀有级外观。",
+      "InKey": "Desc_10500807"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Taros_Ff_G6.Gun02_Taros_Ff_G6"
+  },
+  "10502822": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502822,
+    "WeaponID": 5028,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502822,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502822"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "深蓝之海",
+      "InKey": "SkinName_10502822"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【烬灭】稀有级外观。",
+      "InKey": "Desc_10502822"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Yuri_Ff_B2.Gun02_Yuri_Ff_B2"
+  },
+  "10502821": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502821,
+    "WeaponID": 5028,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502821,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502821"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "紫焰星云",
+      "InKey": "SkinName_10502821"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【烬灭】稀有级外观。",
+      "InKey": "Desc_10502821"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Yuri_Ff_B1.Gun02_Yuri_Ff_B1"
+  },
+  "10502807": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502807,
+    "WeaponID": 5028,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502807,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502807"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "烬灭·青域",
+      "InKey": "SkinName_10502807"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【烬灭】稀有级外观。",
+      "InKey": "Desc_10502807"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Yuri_Ff_G6.Gun02_Yuri_Ff_G6"
+  },
+  "10502341": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10502341,
+    "WeaponID": 5023,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502341,
+    "LinkId": "1013",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502341"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "星际幽紫",
+      "InKey": "SkinName_10502341"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【超星】史诗级外观。",
+      "InKey": "Desc_10502341"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Yuri_Ff_P1.Gun01_Yuri_Ff_P1"
+  },
+  "10502342": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10502342,
+    "WeaponID": 5023,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502342,
+    "LinkId": "1013",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502342"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "绯焰暗流",
+      "InKey": "SkinName_10502342"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【超星】史诗级外观。",
+      "InKey": "Desc_10502342"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Yuri_Ff_P2.Gun01_Yuri_Ff_P2"
+  },
+  "10502806": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502806,
+    "WeaponID": 5028,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502806,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502806"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "烬灭·黄昏",
+      "InKey": "SkinName_10502806"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【烬灭】稀有级外观。",
+      "InKey": "Desc_10502806"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Yuri_Ff_G5.Gun02_Yuri_Ff_G5"
+  },
+  "10502542": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10502542,
+    "WeaponID": 5025,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502542,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502542"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "音符潮流",
+      "InKey": "SkinName_10502542"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【节奏狂潮】史诗级外观。",
+      "InKey": "Desc_10502542"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Cotia_Ff_P2.Gun02_Cotia_Ff_P2"
+  },
+  "10502541": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10502541,
+    "WeaponID": 5025,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502541,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502541"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "狂潮乐舞",
+      "InKey": "SkinName_10502541"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【节奏狂潮】史诗级外观。",
+      "InKey": "Desc_10502541"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Cotia_Ff_P1.Gun02_Cotia_Ff_P1"
+  },
+  "10502522": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502522,
+    "WeaponID": 5025,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502522,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502522"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "梦蓝乐响",
+      "InKey": "SkinName_10502522"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【节奏狂潮】稀有级外观。",
+      "InKey": "Desc_10502522"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Cotia_Ff_B2.Gun02_Cotia_Ff_B2"
+  },
+  "10502521": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502521,
+    "WeaponID": 5025,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502521,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502521"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "潮汐旋律",
+      "InKey": "SkinName_10502521"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【节奏狂潮】稀有级外观。",
+      "InKey": "Desc_10502521"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Cotia_Ff_B1.Gun02_Cotia_Ff_B1"
+  },
+  "10502507": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502507,
+    "WeaponID": 5025,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502507,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502507"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "节奏狂潮·红律",
+      "InKey": "SkinName_10502507"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【节奏狂潮】稀有级外观。",
+      "InKey": "Desc_10502507"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Cotia_Ff_G6.Gun02_Cotia_Ff_G6"
+  },
+  "10502506": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502506,
+    "WeaponID": 5025,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502506,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502506"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "节奏狂潮·橙响",
+      "InKey": "SkinName_10502506"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【节奏狂潮】稀有级外观。",
+      "InKey": "Desc_10502506"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Cotia_Ff_G5.Gun02_Cotia_Ff_G5"
+  },
+  "10502441": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10502441,
+    "WeaponID": 5024,
+    "ParamList": {
+      "1": 2
+    },
+    "SpecialText": "",
+    "SkinID": 502441,
+    "LinkId": "1005",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "数据宝库·浮世骇客",
+      "InKey": "LinkDesc_10502441"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "小恶魔",
+      "InKey": "SkinName_10502441"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【凛冬】史诗级外观。",
+      "InKey": "Desc_10502441"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Linglan_Ff_P1.Gun03_Linglan_Ff_P1"
+  },
+  "10500821": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500821,
+    "WeaponID": 5008,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500821,
+    "LinkId": "",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500821"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "守望之星",
+      "InKey": "SkinName_10500821"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【庇护者】稀有级外观。",
+      "InKey": "Desc_10500821"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Taros_Ff_B1.Gun02_Taros_Ff_B1"
+  },
+  "10500822": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10500822,
+    "WeaponID": 5008,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500822,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500822"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "无声夜幕",
+      "InKey": "SkinName_10500822"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【庇护者】稀有级外观。",
+      "InKey": "Desc_10500822"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Taros_Yp.Gun02_Taros_Yp"
+  },
+  "10501506": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501506,
+    "WeaponID": 5015,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501506,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501506"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "病毒暗星·耀斑",
+      "InKey": "SkinName_10501506"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【病毒暗星】稀有级外观。",
+      "InKey": "Desc_10501506"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Hyks_Ff_G5.Gun01_Hyks_Ff_G5"
+  },
+  "10502307": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502307,
+    "WeaponID": 5023,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502307,
+    "LinkId": "1013",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502307"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "超星·青域",
+      "InKey": "SkinName_10502307"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【超星】稀有级外观。",
+      "InKey": "Desc_10502307"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Yuri_Ff_G6.Gun01_Yuri_Ff_G6"
+  },
+  "10502306": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502306,
+    "WeaponID": 5023,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502306,
+    "LinkId": "1013",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502306"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "超星·黄昏",
+      "InKey": "SkinName_10502306"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "尤莉武器【超星】稀有级外观。",
+      "InKey": "Desc_10502306"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Yuri_Ff_G5.Gun01_Yuri_Ff_G5"
+  },
+  "10502101": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502101,
+    "WeaponID": 5021,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502101,
+    "LinkId": "",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "获取角色后解锁",
+      "InKey": "LinkDesc_10502101"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "来切点什么",
+      "InKey": "SkinName_10502101"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来切点什么】默认外观。",
+      "InKey": "Desc_10502101"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Nax_Yp.Gun02_Nax_Yp"
+  },
+  "10502102": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502102,
+    "WeaponID": 5021,
+    "ParamList": {
+      "1": 2
+    },
+    "SpecialText": "",
+    "SkinID": 502102,
+    "LinkId": "1005",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "数据宝库·浮世骇客",
+      "InKey": "LinkDesc_10502102"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "来切点什么·暗紫",
+      "InKey": "SkinName_10502102"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来切点什么】稀有级外观。",
+      "InKey": "Desc_10502102"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Nax_Yp_G1.Gun02_Nax_Yp_G1"
+  },
+  "10502103": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502103,
+    "WeaponID": 5021,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502103,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502103"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "来切点什么·幽夜",
+      "InKey": "SkinName_10502103"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来切点什么】稀有级外观。",
+      "InKey": "Desc_10502103"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Nax_Yp_G2.Gun02_Nax_Yp_G2"
+  },
+  "10502104": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502104,
+    "WeaponID": 5021,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502104,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502104"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "来切点什么·枯绿",
+      "InKey": "SkinName_10502104"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来切点什么】稀有级外观。",
+      "InKey": "Desc_10502104"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Nax_Yp_G3.Gun02_Nax_Yp_G3"
+  },
+  "10502105": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502105,
+    "WeaponID": 5021,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502105,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502105"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "来切点什么·旋涡",
+      "InKey": "SkinName_10502105"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来切点什么】稀有级外观。",
+      "InKey": "Desc_10502105"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Nax_Yp_G4.Gun02_Nax_Yp_G4"
+  },
+  "10502106": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502106,
+    "WeaponID": 5021,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502106,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502106"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "来切点什么·褐石",
+      "InKey": "SkinName_10502106"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来切点什么】稀有级外观。",
+      "InKey": "Desc_10502106"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Nax_Yp_G5.Gun02_Nax_Yp_G5"
+  },
+  "10502107": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502107,
+    "WeaponID": 5021,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502107,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502107"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "来切点什么·橙黄",
+      "InKey": "SkinName_10502107"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来切点什么】稀有级外观。",
+      "InKey": "Desc_10502107"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Nax_Yp_G6.Gun02_Nax_Yp_G6"
+  },
+  "10502282": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 5,
+    "Sort": 0,
+    "ID": 10502282,
+    "WeaponID": 5022,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502282,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502282"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "一发就荡平·橙",
+      "InKey": "SkinName_10502282"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【一发就荡平】不朽级外观。",
+      "InKey": "Desc_10502282"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Nax_Yp.Gun01_Nax_Yp"
+  },
+  "10502281": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 5,
+    "Sort": 0,
+    "ID": 10502281,
+    "WeaponID": 5022,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502281,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502281"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "一发就荡平·橙",
+      "InKey": "SkinName_10502281"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【一发就荡平】不朽级外观。",
+      "InKey": "Desc_10502281"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Nax_Yp.Gun01_Nax_Yp"
+  },
+  "10502242": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10502242,
+    "WeaponID": 5022,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502242,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502242"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "疯涌蓝光",
+      "InKey": "SkinName_10502242"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【一发就荡平】史诗级外观。",
+      "InKey": "Desc_10502242"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Nax_Yp_P2.Gun03_Nax_Yp_P2"
+  },
+  "10501601": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501601,
+    "WeaponID": 5016,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501601,
+    "LinkId": "10101",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "熟练度级获得",
+      "InKey": "LinkDesc_10501601"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "来炸点什么",
+      "InKey": "SkinName_10501601"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来炸点什么】默认外观。",
+      "InKey": "Desc_10501601"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Nax_Yp.Gun01_Nax_Yp"
+  },
+  "10501602": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501602,
+    "WeaponID": 5016,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501602,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501602"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "来炸点什么·暗紫",
+      "InKey": "SkinName_10501602"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来炸点什么】稀有级外观。",
+      "InKey": "Desc_10501602"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Nax_Ff_G1.Gun01_Nax_Ff_G1"
+  },
+  "10501603": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501603,
+    "WeaponID": 5016,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501603,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501603"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "来炸点什么·幽夜",
+      "InKey": "SkinName_10501603"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来炸点什么】稀有级外观。",
+      "InKey": "Desc_10501603"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Nax_Ff_G2.Gun01_Nax_Ff_G2"
+  },
+  "10501604": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501604,
+    "WeaponID": 5016,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501604,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501604"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "来炸点什么·枯绿",
+      "InKey": "SkinName_10501604"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来炸点什么】稀有级外观。",
+      "InKey": "Desc_10501604"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Nax_Ff_G3.Gun01_Nax_Ff_G3"
+  },
+  "10501605": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501605,
+    "WeaponID": 5016,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501605,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501605"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "来炸点什么·旋涡",
+      "InKey": "SkinName_10501605"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来炸点什么】稀有级外观。",
+      "InKey": "Desc_10501605"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Nax_Ff_G4.Gun01_Nax_Ff_G4"
+  },
+  "10500841": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10500841,
+    "WeaponID": 5008,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500841,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500841"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "巡弋之光",
+      "InKey": "SkinName_10500841"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【庇护者】史诗级外观。",
+      "InKey": "Desc_10500841"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Taros_P1.Gun02_Taros_P1"
+  },
+  "10500842": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10500842,
+    "WeaponID": 5008,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 500842,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10500842"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "流光暗影",
+      "InKey": "SkinName_10500842"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "上校武器【庇护者】史诗级外观。",
+      "InKey": "Desc_10500842"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Taros_P2.Gun02_Taros_P2"
+  },
+  "10502241": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10502241,
+    "WeaponID": 5022,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502241,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502241"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "猩红呐喊",
+      "InKey": "SkinName_10502241"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【一发就荡平】史诗级外观。",
+      "InKey": "Desc_10502241"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Nax_Yp_P1.Gun03_Nax_Yp_P1"
+  },
+  "10502222": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502222,
+    "WeaponID": 5022,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502222,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502222"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "无尽沙丘",
+      "InKey": "SkinName_10502222"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【一发就荡平】稀有级外观。",
+      "InKey": "Desc_10502222"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Nax_Yp_B2.Gun03_Nax_Yp_B2"
+  },
+  "10502221": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502221,
+    "WeaponID": 5022,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502221,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502221"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "迷彩狂怒",
+      "InKey": "SkinName_10502221"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【一发就荡平】稀有级外观。",
+      "InKey": "Desc_10502221"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Nax_Yp_B1.Gun03_Nax_Yp_B1"
+  },
+  "10501101": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501101,
+    "WeaponID": 5011,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501101,
+    "LinkId": "10101",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "熟练度级获得",
+      "InKey": "LinkDesc_10501101"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "彗耀",
+      "InKey": "SkinName_10501101"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【彗耀】默认外观。",
+      "InKey": "Desc_10501101"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Linglan01_Yp.Gun02_Linglan01_Yp"
+  },
+  "10501102": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501102,
+    "WeaponID": 5011,
+    "ParamList": {
+      "1": 1
+    },
+    "SpecialText": "",
+    "SkinID": 501102,
+    "LinkId": "1005",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "数据宝库·浮世绘卷",
+      "InKey": "LinkDesc_10501102"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "彗耀·曼陀罗",
+      "InKey": "SkinName_10501102"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【彗耀】稀有级外观。",
+      "InKey": "Desc_10501102"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Linglan_Ff_G1.Gun02_Linglan_Ff_G1"
+  },
+  "10501103": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501103,
+    "WeaponID": 5011,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501103,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501103"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "彗耀·石英",
+      "InKey": "SkinName_10501103"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【彗耀】稀有级外观。",
+      "InKey": "Desc_10501103"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Linglan_Ff_G2.Gun02_Linglan_Ff_G2"
+  },
+  "10501104": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501104,
+    "WeaponID": 5011,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501104,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501104"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "彗耀·蓝晶",
+      "InKey": "SkinName_10501104"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【彗耀】稀有级外观。",
+      "InKey": "Desc_10501104"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Linglan_Ff_G3.Gun02_Linglan_Ff_G3"
+  },
+  "10501105": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501105,
+    "WeaponID": 5011,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501105,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501105"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "彗耀·曜紫",
+      "InKey": "SkinName_10501105"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【彗耀】稀有级外观。",
+      "InKey": "Desc_10501105"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Linglan_Ff_G4.Gun02_Linglan_Ff_G4"
+  },
+  "10501106": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501106,
+    "WeaponID": 5011,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501106,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501106"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "彗耀·繁荣",
+      "InKey": "SkinName_10501106"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【彗耀】稀有级外观。",
+      "InKey": "Desc_10501106"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Linglan_Ff_G5.Gun02_Linglan_Ff_G5"
+  },
+  "10501107": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501107,
+    "WeaponID": 5011,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501107,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501107"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "星云·黯绿",
+      "InKey": "SkinName_10501107"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【彗耀】稀有级外观。",
+      "InKey": "Desc_10501107"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Linglan_Ff_G6.Gun02_Linglan_Ff_G6"
+  },
+  "10502207": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502207,
+    "WeaponID": 5022,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502207,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502207"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "一发就荡平·旋涡",
+      "InKey": "SkinName_10502207"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【一发就荡平】稀有级外观。",
+      "InKey": "Desc_10502207"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Nax_Yp_G6.Gun03_Nax_Yp_G6"
+  },
+  "10502206": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502206,
+    "WeaponID": 5022,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502206,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502206"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "一发就荡平·褐石",
+      "InKey": "SkinName_10502206"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【一发就荡平】稀有级外观。",
+      "InKey": "Desc_10502206"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Nax_Yp_G5.Gun03_Nax_Yp_G5"
+  },
+  "10502142": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10502142,
+    "WeaponID": 5021,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502142,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502142"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "迷失蓝域",
+      "InKey": "SkinName_10502142"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来切点什么】史诗级外观。",
+      "InKey": "Desc_10502142"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Nax_Yp_P2.Gun02_Nax_Yp_P2"
+  },
+  "10501621": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501621,
+    "WeaponID": 5016,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501621,
+    "LinkId": "",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501621"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "迷彩伪装",
+      "InKey": "SkinName_10501621"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来炸点什么】稀有级外观。",
+      "InKey": "Desc_10501621"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Nax_Ff_B1.Gun01_Nax_Ff_B1"
+  },
+  "10501622": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501622,
+    "WeaponID": 5016,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501622,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501622"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "褐色狂心",
+      "InKey": "SkinName_10501622"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来炸点什么】稀有级外观。",
+      "InKey": "Desc_10501622"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Nax_Ff_B2.Gun01_Nax_Ff_B2"
+  },
+  "10502141": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10502141,
+    "WeaponID": 5021,
+    "ParamList": {
+      "1": 2,
+      "2": 502141
+    },
+    "SpecialText": "",
+    "SkinID": 502141,
+    "LinkId": "1007",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "购买",
+      "InKey": "LinkDesc_10502141"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "盛夏浪潮",
+      "InKey": "SkinName_10502141"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来切点什么】史诗级外观。",
+      "InKey": "Desc_10502141"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Nax_Yp_P1.Gun02_Nax_Yp_P1"
+  },
+  "10502122": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502122,
+    "WeaponID": 5021,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502122,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502122"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "荒芜砂石",
+      "InKey": "SkinName_10502122"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来切点什么】稀有级外观。",
+      "InKey": "Desc_10502122"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Nax_Yp_B2.Gun02_Nax_Yp_B2"
+  },
+  "10502121": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502121,
+    "WeaponID": 5021,
+    "ParamList": {
+      "1": 1,
+      "2": 1001
+    },
+    "SpecialText": "",
+    "SkinID": 502121,
+    "LinkId": "1016",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "购买捆绑包",
+      "InKey": "LinkDesc_10502121"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "狂野伪装",
+      "InKey": "SkinName_10502121"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来切点什么】稀有级外观。",
+      "InKey": "Desc_10502121"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Nax_Yp_B1.Gun02_Nax_Yp_B1"
+  },
+  "10502901": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502901,
+    "WeaponID": 5029,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502901,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "测试占位",
+      "InKey": "LinkDesc_10502901"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "灵巫之愈",
+      "InKey": "SkinName_10502901"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【灵巫之愈】默认外观。",
+      "InKey": "Desc_10502901"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Gloria_Yp.Gun03_Gloria_Yp"
+  },
+  "10501941": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501941,
+    "WeaponID": 5019,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501941,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501941"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "炽热之音",
+      "InKey": "SkinName_10501941"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "叛音武器【弦乐战斧】史诗级外观。",
+      "InKey": "Desc_10501941"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Cotia_Ff_P1.Gun01_Cotia_Ff_P1"
+  },
+  "10501922": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501922,
+    "WeaponID": 5019,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501922,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501922"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "迷雾乐章",
+      "InKey": "SkinName_10501922"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "叛音武器【弦乐战斧】稀有级外观。",
+      "InKey": "Desc_10501922"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Cotia_Ff_B2.Gun01_Cotia_Ff_B2"
+  },
+  "10501921": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501921,
+    "WeaponID": 5019,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501921,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501921"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "潮流跃动",
+      "InKey": "SkinName_10501921"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "叛音武器【弦乐战斧】稀有级外观。",
+      "InKey": "Desc_10501921"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Cotia_Ff_B1.Gun01_Cotia_Ff_B1"
+  },
+  "10501907": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501907,
+    "WeaponID": 5019,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501907,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501907"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "弦乐战斧·亮音",
+      "InKey": "SkinName_10501907"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "叛音武器【弦乐战斧】稀有级外观。",
+      "InKey": "Desc_10501907"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Cotia_Ff_G6.Gun01_Cotia_Ff_G6"
+  },
+  "10501121": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501121,
+    "WeaponID": 5011,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501121,
+    "LinkId": "",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501121"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "磷灰石",
+      "InKey": "SkinName_10501121"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【彗耀】稀有级外观。",
+      "InKey": "Desc_10501121"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Linglan_Ff_B1.Gun02_Linglan_Ff_B1"
+  },
+  "10501122": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501122,
+    "WeaponID": 5011,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501122,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501122"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "炽热之梦",
+      "InKey": "SkinName_10501122"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【彗耀】稀有级外观。",
+      "InKey": "Desc_10501122"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Linglan_Ff_B2.Gun02_Linglan_Ff_B2"
+  },
+  "10501906": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501906,
+    "WeaponID": 5019,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501906,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501906"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "弦乐战斧·橙响",
+      "InKey": "SkinName_10501906"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "叛音武器【弦乐战斧】稀有级外观。",
+      "InKey": "Desc_10501906"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Cotia_Ff_G5.Gun01_Cotia_Ff_G5"
+  },
+  "10501741": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501741,
+    "WeaponID": 5017,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501741,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501741"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "旭日",
+      "InKey": "SkinName_10501741"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【战斗小熊】史诗级外观。",
+      "InKey": "Desc_10501741"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Gloria_Ff_P1.Gun02_Gloria_Ff_P1"
+  },
+  "10501742": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501742,
+    "WeaponID": 5017,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501742,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501742"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "红粉旋律",
+      "InKey": "SkinName_10501742"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【战斗小熊】史诗级外观。",
+      "InKey": "Desc_10501742"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Gloria_Ff_P2.Gun02_Gloria_Ff_P2"
+  },
+  "10502401": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502401,
+    "WeaponID": 5024,
+    "ParamList": {
+      "1": 7,
+      "2": 10703003
+    },
+    "SpecialText": "",
+    "SkinID": 502401,
+    "LinkId": "1007",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "帝谷币兑换",
+      "InKey": "LinkDesc_10502401"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "凛冬",
+      "InKey": "SkinName_10502401"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【凛冬】默认外观。",
+      "InKey": "Desc_10502401"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun03_Linglan_Ff_Yp.Gun03_Linglan_Ff_Yp"
+  },
+  "10501507": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501507,
+    "WeaponID": 5015,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501507,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501507"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "病毒暗星·幽暗",
+      "InKey": "SkinName_10501507"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【病毒暗星】稀有级外观。",
+      "InKey": "Desc_10501507"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Hyks_Ff_G6.Gun01_Hyks_Ff_G6"
+  },
+  "10502706": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502706,
+    "WeaponID": 5027,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502706,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502706"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "零度新星·耀斑",
+      "InKey": "SkinName_10502706"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【零度新星】稀有级外观。",
+      "InKey": "Desc_10502706"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Hyks_Ff_G5.Gun02_Hyks_Ff_G5"
+  },
+  "10502742": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10502742,
+    "WeaponID": 5027,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502742,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502742"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "耀光猎手",
+      "InKey": "SkinName_10502742"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【零度新星】史诗级外观。",
+      "InKey": "Desc_10502742"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Hyks_Ff_P2.Gun02_Hyks_Ff_P2"
+  },
+  "10502741": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10502741,
+    "WeaponID": 5027,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502741,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502741"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "燃情闪耀",
+      "InKey": "SkinName_10502741"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【零度新星】史诗级外观。",
+      "InKey": "Desc_10502741"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Hyks_Ff_P1.Gun02_Hyks_Ff_P1"
+  },
+  "10501641": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501641,
+    "WeaponID": 5016,
+    "ParamList": {
+      "1": 1
+    },
+    "SpecialText": "",
+    "SkinID": 501641,
+    "LinkId": "1005",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "数据宝库·浮世绘卷",
+      "InKey": "LinkDesc_10501641"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "完全过载",
+      "InKey": "SkinName_10501641"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来炸点什么】史诗级外观。",
+      "InKey": "Desc_10501641"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Nax_Ff_P1.Gun01_Nax_Ff_P1"
+  },
+  "10501642": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501642,
+    "WeaponID": 5016,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501642,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501642"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "暗影梦魇",
+      "InKey": "SkinName_10501642"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来炸点什么】史诗级外观。",
+      "InKey": "Desc_10501642"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Nax_Ff_P2.Gun01_Nax_Ff_P2"
+  },
+  "10502722": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502722,
+    "WeaponID": 5027,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502722,
+    "LinkId": "",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502722"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "灰影突击",
+      "InKey": "SkinName_10502722"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【零度新星】稀有级外观。",
+      "InKey": "Desc_10502722"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Hyks_Ff_B2.Gun02_Hyks_Ff_B2"
+  },
+  "10502721": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502721,
+    "WeaponID": 5027,
+    "ParamList": {
+      "1": 7,
+      "2": 10707004
+    },
+    "SpecialText": "",
+    "SkinID": 502721,
+    "LinkId": "1007",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "通行证积分兑换",
+      "InKey": "LinkDesc_10502721"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "碧波猎手",
+      "InKey": "SkinName_10502721"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【零度新星】稀有级外观。",
+      "InKey": "Desc_10502721"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Hyks_Ff_B1.Gun02_Hyks_Ff_B1"
+  },
+  "10502707": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10502707,
+    "WeaponID": 5027,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 502707,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10502707"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "零度新星·幽暗",
+      "InKey": "SkinName_10502707"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "海因克斯武器【零度新星】稀有级外观。",
+      "InKey": "Desc_10502707"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Hyks_Ff_G6.Gun02_Hyks_Ff_G6"
+  },
+  "10501901": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501901,
+    "WeaponID": 5019,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501901,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501901"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "弦乐战斧",
+      "InKey": "SkinName_10501901"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "叛音武器【弦乐战斧】默认外观。",
+      "InKey": "Desc_10501901"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Cotia_Ff.Gun01_Cotia_Ff"
+  },
+  "10501902": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501902,
+    "WeaponID": 5019,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501902,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501902"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "弦乐战斧·潮流",
+      "InKey": "SkinName_10501902"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "叛音武器【弦乐战斧】稀有级外观。",
+      "InKey": "Desc_10501902"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Cotia_Ff_G1.Gun01_Cotia_Ff_G1"
+  },
+  "10501903": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501903,
+    "WeaponID": 5019,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501903,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501903"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "弦乐战斧·蓝调",
+      "InKey": "SkinName_10501903"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "叛音武器【弦乐战斧】稀有级外观。",
+      "InKey": "Desc_10501903"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Cotia_Ff_G2.Gun01_Cotia_Ff_G2"
+  },
+  "10501904": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501904,
+    "WeaponID": 5019,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501904,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501904"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "弦乐战斧·音翠",
+      "InKey": "SkinName_10501904"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "叛音武器【弦乐战斧】稀有级外观。",
+      "InKey": "Desc_10501904"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Cotia_Ff_G3.Gun01_Cotia_Ff_G3"
+  },
+  "10501905": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501905,
+    "WeaponID": 5019,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501905,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501905"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "弦乐战斧·韵紫",
+      "InKey": "SkinName_10501905"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "叛音武器【弦乐战斧】稀有级外观。",
+      "InKey": "Desc_10501905"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Cotia_Ff_G4.Gun01_Cotia_Ff_G4"
+  },
+  "10501141": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501141,
+    "WeaponID": 5011,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501141,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501141"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "预言书",
+      "InKey": "SkinName_10501141"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【彗耀】史诗级外观。",
+      "InKey": "Desc_10501141"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Linglan_Ff_P1.Gun02_Linglan_Ff_P1"
+  },
+  "10501142": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 3,
+    "Sort": 0,
+    "ID": 10501142,
+    "WeaponID": 5011,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501142,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501142"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "重晚晴",
+      "InKey": "SkinName_10501142"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "曙光武器【彗耀】史诗级外观。",
+      "InKey": "Desc_10501142"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Linglan_Ff_P2.Gun02_Linglan_Ff_P2"
+  },
+  "10501722": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501722,
+    "WeaponID": 5017,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501722,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501722"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "复古潮流",
+      "InKey": "SkinName_10501722"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【战斗小熊】稀有级外观。",
+      "InKey": "Desc_10501722"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Gloria_Ff_B2.Gun02_Gloria_Ff_B2"
+  },
+  "10501721": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501721,
+    "WeaponID": 5017,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501721,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501721"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "焦糖",
+      "InKey": "SkinName_10501721"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【战斗小熊】稀有级外观。",
+      "InKey": "Desc_10501721"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Gloria_Ff_B1.Gun02_Gloria_Ff_B1"
+  },
+  "10501707": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501707,
+    "WeaponID": 5017,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501707,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501707"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "战斗小熊·葡萄藤",
+      "InKey": "SkinName_10501707"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【战斗小熊】稀有级外观。",
+      "InKey": "Desc_10501707"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Gloria_Ff_G6.Gun02_Gloria_Ff_G6"
+  },
+  "10501401": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501401,
+    "WeaponID": 5014,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501401,
+    "LinkId": "",
+    "IsShow": true,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "获取角色后解锁",
+      "InKey": "LinkDesc_10501401"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "元气甜心",
+      "InKey": "SkinName_10501401"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【元气甜心】默认外观。",
+      "InKey": "Desc_10501401"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Gloria_Yp.Gun01_Gloria_Yp"
+  },
+  "10501402": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501402,
+    "WeaponID": 5014,
+    "ParamList": {
+      "1": 2
+    },
+    "SpecialText": "",
+    "SkinID": 501402,
+    "LinkId": "1005",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "数据宝库·浮世骇客",
+      "InKey": "LinkDesc_10501402"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "元气甜心·枫红",
+      "InKey": "SkinName_10501402"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【元气甜心】稀有级外观。",
+      "InKey": "Desc_10501402"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Gloria_Ff_G1.Gun01_Gloria_Ff_G1"
+  },
+  "10501403": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501403,
+    "WeaponID": 5014,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501403,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501403"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "元气甜心·护卫",
+      "InKey": "SkinName_10501403"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【元气甜心】稀有级外观。",
+      "InKey": "Desc_10501403"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Gloria_Ff_G2.Gun01_Gloria_Ff_G2"
+  },
+  "10501404": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501404,
+    "WeaponID": 5014,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501404,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501404"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "元气甜心·电幻",
+      "InKey": "SkinName_10501404"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【元气甜心】稀有级外观。",
+      "InKey": "Desc_10501404"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Gloria_Ff_G3.Gun01_Gloria_Ff_G3"
+  },
+  "10501405": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501405,
+    "WeaponID": 5014,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501405,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501405"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "元气甜心·森游",
+      "InKey": "SkinName_10501405"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【元气甜心】稀有级外观。",
+      "InKey": "Desc_10501405"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Gloria_Ff_G4.Gun01_Gloria_Ff_G4"
+  },
+  "10501406": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501406,
+    "WeaponID": 5014,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501406,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501406"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "元气甜心·春草",
+      "InKey": "SkinName_10501406"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【元气甜心】稀有级外观。",
+      "InKey": "Desc_10501406"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Gloria_Ff_G5.Gun01_Gloria_Ff_G5"
+  },
+  "10501407": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501407,
+    "WeaponID": 5014,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501407,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501407"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "元气甜心·葡萄藤",
+      "InKey": "SkinName_10501407"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【元气甜心】稀有级外观。",
+      "InKey": "Desc_10501407"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Gloria_Ff_G6.Gun01_Gloria_Ff_G6"
+  },
+  "10501706": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501706,
+    "WeaponID": 5017,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501706,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501706"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "战斗小熊·春草",
+      "InKey": "SkinName_10501706"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "格罗莉亚武器【战斗小熊】稀有级外观。",
+      "InKey": "Desc_10501706"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Gloria_Ff_G5.Gun02_Gloria_Ff_G5"
+  },
+  "10501607": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501607,
+    "WeaponID": 5016,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501607,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501607"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "来炸点什么·橙黄",
+      "InKey": "SkinName_10501607"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来炸点什么】稀有级外观。",
+      "InKey": "Desc_10501607"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Nax_Ff_G6.Gun01_Nax_Ff_G6"
+  },
+  "10501606": {
+    "SpecialBgIcon": "",
+    "SkinRarity": 2,
+    "Sort": 0,
+    "ID": 10501606,
+    "WeaponID": 5016,
+    "ParamList": {},
+    "SpecialText": "",
+    "SkinID": 501606,
+    "LinkId": "",
+    "IsShow": false,
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "",
+      "InKey": "LinkDesc_10501606"
+    },
+    "HeirloomIconPath": "",
+    "SkinNameLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "来炸点什么·褐石",
+      "InKey": "SkinName_10501606"
+    },
+    "DescLocMeta": {
+      "InNamespace": "resource_TBWeaponSkin",
+      "InTextLiteral": "麦克斯武器【来炸点什么】稀有级外观。",
+      "InKey": "Desc_10501606"
+    },
+    "IsUnlockShow": false,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Nax_Ff_G5.Gun01_Nax_Ff_G5"
+  }
+}

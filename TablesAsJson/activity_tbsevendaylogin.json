@@ -1,0 +1,149 @@
+﻿{
+  "7": {
+    "desc": "天赋材料橙色芯片蓝紫芯片",
+    "Day": 7,
+    "Icon": "",
+    "RewardList": {
+      "1": {
+        "value": 10,
+        "key": 62004
+      },
+      "2": {
+        "value": 10,
+        "key": 62006
+      },
+      "3": {
+        "value": 50,
+        "key": 62003
+      },
+      "4": {
+        "value": 50,
+        "key": 62002
+      },
+      "5": {
+        "value": 1000,
+        "key": 99994
+      }
+    },
+    "showType": 2,
+    "unLockTimeLocMeta": {
+      "InTextLiteral": "9-25",
+      "InKey": "unLockTime_7",
+      "InNamespace": "activity_TBSevenDayLogin"
+    }
+  },
+  "1": {
+    "desc": "天赋材料蓝色芯片礼包",
+    "Day": 1,
+    "Icon": "",
+    "RewardList": {
+      "1": {
+        "value": 100,
+        "key": 99994
+      },
+      "2": {
+        "value": 5,
+        "key": 62002
+      }
+    },
+    "showType": 2,
+    "unLockTimeLocMeta": {
+      "InTextLiteral": "9-19",
+      "InKey": "unLockTime_1",
+      "InNamespace": "activity_TBSevenDayLogin"
+    }
+  },
+  "2": {
+    "desc": "橙色芯片礼包",
+    "Day": 2,
+    "Icon": "",
+    "RewardList": {
+      "1": {
+        "value": 1,
+        "key": 62011
+      },
+      "2": {
+        "value": 1,
+        "key": 62012
+      },
+      "3": {
+        "value": 1,
+        "key": 62013
+      }
+    },
+    "showType": 2,
+    "unLockTimeLocMeta": {
+      "InTextLiteral": "9-20",
+      "InKey": "unLockTime_2",
+      "InNamespace": "activity_TBSevenDayLogin"
+    }
+  },
+  "3": {
+    "desc": "格罗莉亚",
+    "Day": 3,
+    "Icon": "/Game/Rouge/UI/Sprite/LoginRewards/Frames/Login_Hero02.Login_Hero02",
+    "RewardList": {
+      "1": {
+        "value": 1,
+        "key": 100008
+      }
+    },
+    "showType": 1,
+    "unLockTimeLocMeta": {
+      "InTextLiteral": "9-21",
+      "InKey": "unLockTime_3",
+      "InNamespace": "activity_TBSevenDayLogin"
+    }
+  },
+  "4": {
+    "desc": "纳克斯",
+    "Day": 4,
+    "Icon": "/Game/Rouge/UI/Sprite/LoginRewards/Frames/Login_Hero01.Login_Hero01",
+    "RewardList": {
+      "1": {
+        "value": 1,
+        "key": 100010
+      }
+    },
+    "showType": 1,
+    "unLockTimeLocMeta": {
+      "InTextLiteral": "9-22",
+      "InKey": "unLockTime_4",
+      "InNamespace": "activity_TBSevenDayLogin"
+    }
+  },
+  "5": {
+    "desc": "赛季芯片",
+    "Day": 5,
+    "Icon": "",
+    "RewardList": {
+      "1": {
+        "value": 5,
+        "key": 62005
+      }
+    },
+    "showType": 2,
+    "unLockTimeLocMeta": {
+      "InTextLiteral": "9-23",
+      "InKey": "unLockTime_5",
+      "InNamespace": "activity_TBSevenDayLogin"
+    }
+  },
+  "6": {
+    "desc": "海因克斯",
+    "Day": 6,
+    "Icon": "",
+    "RewardList": {
+      "1": {
+        "value": 1,
+        "key": 100009
+      }
+    },
+    "showType": 1,
+    "unLockTimeLocMeta": {
+      "InTextLiteral": "9-24",
+      "InKey": "unLockTime_6",
+      "InNamespace": "activity_TBSevenDayLogin"
+    }
+  }
+}

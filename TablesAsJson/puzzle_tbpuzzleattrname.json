@@ -1,0 +1,38 @@
+﻿{
+  "11_20": {
+    "NameLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleAttrName",
+      "InKey": "Name_11_20",
+      "InTextLiteral": "裂变"
+    },
+    "AttrCombination": "11_20",
+    "DevelopDesc": "生命技能攻击"
+  },
+  "11_18": {
+    "NameLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleAttrName",
+      "InKey": "Name_11_18",
+      "InTextLiteral": "穹锋"
+    },
+    "AttrCombination": "11_18",
+    "DevelopDesc": "生命基础攻击"
+  },
+  "12_19": {
+    "NameLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleAttrName",
+      "InKey": "Name_12_19",
+      "InTextLiteral": "锋卫"
+    },
+    "AttrCombination": "12_19",
+    "DevelopDesc": "护盾物理攻击"
+  },
+  "12_18": {
+    "NameLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleAttrName",
+      "InKey": "Name_12_18",
+      "InTextLiteral": "星垒"
+    },
+    "AttrCombination": "12_18",
+    "DevelopDesc": "护盾基础攻击"
+  }
+}

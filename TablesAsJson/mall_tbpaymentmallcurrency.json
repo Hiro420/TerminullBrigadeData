@@ -1,0 +1,122 @@
+﻿{
+  "1": {
+    "ID": 1,
+    "PresentedContentLocMeta": {
+      "InKey": "PresentedContent_1",
+      "InNamespace": "mall_TBPaymentMallCurrency",
+      "InTextLiteral": ""
+    },
+    "Comment": "",
+    "Quantity": 60
+  },
+  "2": {
+    "ID": 2,
+    "PresentedContentLocMeta": {
+      "InKey": "PresentedContent_2",
+      "InNamespace": "mall_TBPaymentMallCurrency",
+      "InTextLiteral": ""
+    },
+    "Comment": "",
+    "Quantity": 300
+  },
+  "3": {
+    "ID": 3,
+    "PresentedContentLocMeta": {
+      "InKey": "PresentedContent_3",
+      "InNamespace": "mall_TBPaymentMallCurrency",
+      "InTextLiteral": "额外赠送"
+    },
+    "Comment": "",
+    "Quantity": 680
+  },
+  "4": {
+    "ID": 4,
+    "PresentedContentLocMeta": {
+      "InKey": "PresentedContent_4",
+      "InNamespace": "mall_TBPaymentMallCurrency",
+      "InTextLiteral": "额外赠送"
+    },
+    "Comment": "",
+    "Quantity": 1180
+  },
+  "5": {
+    "ID": 5,
+    "PresentedContentLocMeta": {
+      "InKey": "PresentedContent_5",
+      "InNamespace": "mall_TBPaymentMallCurrency",
+      "InTextLiteral": "额外赠送"
+    },
+    "Comment": "",
+    "Quantity": 3280
+  },
+  "6": {
+    "ID": 6,
+    "PresentedContentLocMeta": {
+      "InKey": "PresentedContent_6",
+      "InNamespace": "mall_TBPaymentMallCurrency",
+      "InTextLiteral": "额外赠送"
+    },
+    "Comment": "",
+    "Quantity": 5980
+  },
+  "7": {
+    "ID": 7,
+    "PresentedContentLocMeta": {
+      "InKey": "PresentedContent_7",
+      "InNamespace": "mall_TBPaymentMallCurrency",
+      "InTextLiteral": ""
+    },
+    "Comment": "",
+    "Quantity": 60
+  },
+  "8": {
+    "ID": 8,
+    "PresentedContentLocMeta": {
+      "InKey": "PresentedContent_8",
+      "InNamespace": "mall_TBPaymentMallCurrency",
+      "InTextLiteral": ""
+    },
+    "Comment": "",
+    "Quantity": 300
+  },
+  "9": {
+    "ID": 9,
+    "PresentedContentLocMeta": {
+      "InKey": "PresentedContent_9",
+      "InNamespace": "mall_TBPaymentMallCurrency",
+      "InTextLiteral": "额外赠送"
+    },
+    "Comment": "",
+    "Quantity": 680
+  },
+  "10": {
+    "ID": 10,
+    "PresentedContentLocMeta": {
+      "InKey": "PresentedContent_10",
+      "InNamespace": "mall_TBPaymentMallCurrency",
+      "InTextLiteral": "额外赠送"
+    },
+    "Comment": "",
+    "Quantity": 1180
+  },
+  "11": {
+    "ID": 11,
+    "PresentedContentLocMeta": {
+      "InKey": "PresentedContent_11",
+      "InNamespace": "mall_TBPaymentMallCurrency",
+      "InTextLiteral": "额外赠送"
+    },
+    "Comment": "",
+    "Quantity": 3280
+  },
+  "12": {
+    "ID": 12,
+    "PresentedContentLocMeta": {
+      "InKey": "PresentedContent_12",
+      "InNamespace": "mall_TBPaymentMallCurrency",
+      "InTextLiteral": "额外赠送"
+    },
+    "Comment": "",
+    "Quantity": 5980
+  }
+}

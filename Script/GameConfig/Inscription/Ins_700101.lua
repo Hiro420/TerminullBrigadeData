@@ -1,0 +1,37 @@
+local Ins_700101 = 
+{
+	ID = 700101,
+	Name = nil,
+	Desc = nil,
+	bIsCustomDesc = false,
+	bIstMergeEffectInUI  = true,
+	Rarity = 1,
+	Icon = "",
+	InscriptionDataAry = 
+	{
+		{
+			GenericModifyLevelId = "",
+			bIsShowGenericModifyLevelDescInUI = true,
+			ModifyLevelDescShowType = 0,
+			bIsShowHelpInUI = false,
+			bUseGenericModifyLevelData = false,
+			Desc = "E技能命中后有20%概率添加智能锁定标记",
+		},
+	},
+	ModifyLevelDescShowMode = 1,
+	ModifyLevelDescFmt = nil,
+	bIsUseDescWhenNotActived = false,
+	InscriptionCDData = 
+	{
+		CDName = nil,
+		CDDesc = nil,
+		CDIcon = "",
+		bIsShowCD = false,
+		bIsShowCDInBuff = true,
+	},
+	ModAdditionalNoteMap = 
+	{
+	},
+	ModGenreRoutineRowName = "",
+}
+return Ins_700101

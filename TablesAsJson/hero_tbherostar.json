@@ -1,0 +1,138 @@
+﻿{
+  "1": {
+    "Level": 1,
+    "ArrCost": {
+      "1": {
+        "value": 10,
+        "key": 200003
+      }
+    },
+    "ArrAttr": {
+      "1": {
+        "value": 10,
+        "key": 10002
+      }
+    },
+    "ID": 1003
+  },
+  "2": {
+    "Level": 1,
+    "ArrCost": {
+      "1": {
+        "value": 10,
+        "key": 200004
+      }
+    },
+    "ArrAttr": {
+      "1": {
+        "value": 10,
+        "key": 10002
+      }
+    },
+    "ID": 1010
+  },
+  "3": {
+    "Level": 1,
+    "ArrCost": {
+      "1": {
+        "value": 10,
+        "key": 200005
+      }
+    },
+    "ArrAttr": {
+      "1": {
+        "value": 10,
+        "key": 10002
+      }
+    },
+    "ID": 2020
+  },
+  "4": {
+    "Level": 1,
+    "ArrCost": {
+      "1": {
+        "value": 10,
+        "key": 201001
+      }
+    },
+    "ArrAttr": {},
+    "ID": 1101
+  },
+  "5": {
+    "Level": 1,
+    "ArrCost": {
+      "1": {
+        "value": 10,
+        "key": 201002
+      }
+    },
+    "ArrAttr": {},
+    "ID": 1102
+  },
+  "6": {
+    "Level": 1,
+    "ArrCost": {
+      "1": {
+        "value": 10,
+        "key": 201003
+      }
+    },
+    "ArrAttr": {},
+    "ID": 1103
+  },
+  "7": {
+    "Level": 1,
+    "ArrCost": {
+      "1": {
+        "value": 10,
+        "key": 201004
+      }
+    },
+    "ArrAttr": {},
+    "ID": 1104
+  },
+  "8": {
+    "Level": 1,
+    "ArrCost": {
+      "1": {
+        "value": 10,
+        "key": 201005
+      }
+    },
+    "ArrAttr": {},
+    "ID": 1105
+  },
+  "9": {
+    "Level": 1,
+    "ArrCost": {
+      "1": {
+        "value": 10,
+        "key": 201006
+      }
+    },
+    "ArrAttr": {},
+    "ID": 1106
+  },
+  "10": {
+    "Level": 1,
+    "ArrCost": {
+      "1": {
+        "value": 10,
+        "key": 201007
+      }
+    },
+    "ArrAttr": {},
+    "ID": 1107
+  },
+  "11": {
+    "Level": 1,
+    "ArrCost": {
+      "1": {
+        "value": 10,
+        "key": 201008
+      }
+    },
+    "ArrAttr": {},
+    "ID": 1108
+  }
+}

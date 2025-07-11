@@ -1,0 +1,887 @@
+local resource_tbportrait = {
+  [81001] = {
+    ID = 81001,
+    portraitID = 1,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81001", "\228\187\163\229\143\183R"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Head01_07.Icon_Head01_07",
+    acquirePathID = 0,
+    initunlock = true,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81001", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81002] = {
+    ID = 81002,
+    portraitID = 2,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81002", "\230\179\168\232\167\134"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Head01_06.Icon_Head01_06",
+    acquirePathID = 0,
+    initunlock = true,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81002", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81003] = {
+    ID = 81003,
+    portraitID = 3,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81003", "\229\164\154\232\130\137\231\155\145\232\167\134\229\153\168"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Head01_05.Icon_Head01_05",
+    acquirePathID = 0,
+    initunlock = true,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81003", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81004] = {
+    ID = 81004,
+    portraitID = 4,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81004", "\231\142\175\233\131\189"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Head01_04.Icon_Head01_04",
+    acquirePathID = 0,
+    initunlock = true,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81004", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81005] = {
+    ID = 81005,
+    portraitID = 5,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81005", "\229\141\131\233\148\164\231\153\190\231\130\188"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Head01_03.Icon_Head01_03",
+    acquirePathID = 0,
+    initunlock = true,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81005", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81006] = {
+    ID = 81006,
+    portraitID = 6,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81006", "\232\137\190\229\174\137"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_G05.Icon_Head_G05",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81006", "\233\166\150\230\181\139\233\128\154\229\133\179\232\142\183\229\143\150"),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81201] = {
+    ID = 81201,
+    portraitID = 201,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81201", "\229\143\141\230\138\151\232\128\133"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B01.Icon_Head_B01",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81201", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81202] = {
+    ID = 81202,
+    portraitID = 202,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81202", "\231\131\136\231\129\171"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B08.Icon_Head_B08",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81202", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81203] = {
+    ID = 81203,
+    portraitID = 203,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81203", "\231\136\134\231\130\184"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B09.Icon_Head_B09",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81203", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81204] = {
+    ID = 81204,
+    portraitID = 204,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81204", "\231\136\134\231\160\180"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B10.Icon_Head_B10",
+    acquirePathID = 1023,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81204", "\229\142\159\231\136\134\231\130\185\233\128\154\232\161\140\232\175\129\232\142\183\229\190\151"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81205] = {
+    ID = 81205,
+    portraitID = 205,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81205", "\229\176\150\229\136\186\228\187\153\228\186\186\230\142\140"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B11.Icon_Head_B11",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81205", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81206] = {
+    ID = 81206,
+    portraitID = 206,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81206", "\233\135\141\230\139\179\229\135\186\229\135\187"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B12.Icon_Head_B12",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81206", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81207] = {
+    ID = 81207,
+    portraitID = 207,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81207", "\229\164\167\232\132\154\232\189\166"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B13.Icon_Head_B13",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81207", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81208] = {
+    ID = 81208,
+    portraitID = 208,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81208", "\231\167\152\229\175\134\231\155\145\230\142\167"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B14.Icon_Head_B14",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81208", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81209] = {
+    ID = 81209,
+    portraitID = 209,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81209", "\229\134\160\229\134\155"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B15.Icon_Head_B15",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81209", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81210] = {
+    ID = 81210,
+    portraitID = 210,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81210", "\230\188\130\231\167\187\228\184\173"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B16.Icon_Head_B16",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81210", "\231\155\184\228\189\141\230\181\139\232\175\149\232\142\183\229\190\151"),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81211] = {
+    ID = 81211,
+    portraitID = 211,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81211", "\229\134\160\229\134\155\230\137\139\230\159\132"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B17.Icon_Head_B17",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81211", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81212] = {
+    ID = 81212,
+    portraitID = 212,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81212", "\230\156\186\230\162\176"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B18.Icon_Head_B18",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81212", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81213] = {
+    ID = 81213,
+    portraitID = 213,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81213", "\231\159\169\233\152\181"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B19.Icon_Head_B19",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81213", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81214] = {
+    ID = 81214,
+    portraitID = 214,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81214", "\231\140\171\229\164\180\233\185\176"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B20.Icon_Head_B20",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81214", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81215] = {
+    ID = 81215,
+    portraitID = 215,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81215", "\233\189\191\232\189\174"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B21.Icon_Head_B21",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81215", "\229\149\134\229\159\142-\229\184\157\232\176\183\229\184\129\229\133\145\230\141\162"),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81216] = {
+    ID = 81216,
+    portraitID = 216,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81216", "\233\156\135\231\136\134\229\188\185"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B22.Icon_Head_B22",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81216", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81217] = {
+    ID = 81217,
+    portraitID = 217,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81217", "\230\186\144\228\184\150\231\149\140"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B23.Icon_Head_B23",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81217", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81218] = {
+    ID = 81218,
+    portraitID = 218,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81218", "\230\156\186\229\153\168\228\186\186"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B24.Icon_Head_B24",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81218", "\231\155\184\228\189\141\230\181\139\232\175\149\232\142\183\229\190\151"),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81401] = {
+    ID = 81401,
+    portraitID = 401,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81401", "\229\143\140\230\158\170"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P01.Icon_Head_P01",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81401", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81402] = {
+    ID = 81402,
+    portraitID = 402,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81402", "\229\143\140\231\148\159"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P02.Icon_Head_P02",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81402", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81403] = {
+    ID = 81403,
+    portraitID = 403,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81403", "\230\137\139\233\155\183"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B27.Icon_Head_B27",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81403", "\229\133\136\233\148\139\230\181\139\232\175\149\232\142\183\229\190\151"),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81404] = {
+    ID = 81404,
+    portraitID = 404,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81404", "\233\166\153\232\149\137\230\137\139\233\155\183"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P04.Icon_Head_P04",
+    acquirePathID = 1005,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81404", "\230\149\176\230\141\174\229\174\157\229\186\147\194\183\230\181\174\228\184\150\233\170\135\229\174\162"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81405] = {
+    ID = 81405,
+    portraitID = 405,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81405", "\230\184\184\230\136\143\230\156\186"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P05.Icon_Head_P05",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81405", "\229\133\136\233\148\139\230\181\139\232\175\149\232\142\183\229\190\151"),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81406] = {
+    ID = 81406,
+    portraitID = 406,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81406", "\230\154\151\229\189\177\230\179\168\232\167\134"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P06.Icon_Head_P06",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81406", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81407] = {
+    ID = 81407,
+    portraitID = 407,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81407", "\229\149\164\233\133\146\230\161\182\229\133\136\231\148\159"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P07.Icon_Head_P07",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81407", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81408] = {
+    ID = 81408,
+    portraitID = 408,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81408", "\230\155\153\229\133\137\229\137\170\229\189\177"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P08.Icon_Head_P08",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81408", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81409] = {
+    ID = 81409,
+    portraitID = 409,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81409", "\232\131\189\233\135\143\231\148\181\230\177\160"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P09.Icon_Head_P09",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81409", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81410] = {
+    ID = 81410,
+    portraitID = 410,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81410", ""),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P15.Icon_Head_P15",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81410", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81411] = {
+    ID = 81411,
+    portraitID = 411,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81411", ""),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P18.Icon_Head_P18",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81411", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81412] = {
+    ID = 81412,
+    portraitID = 412,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81412", "404\233\148\153\232\175\175"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P12.Icon_Head_P12",
+    acquirePathID = 1005,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81412", "\230\149\176\230\141\174\229\174\157\229\186\147\194\183\230\181\174\228\184\150\233\170\135\229\174\162"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81413] = {
+    ID = 81413,
+    portraitID = 413,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81413", "\230\163\146\230\163\146\231\179\150"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P13.Icon_Head_P13",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81413", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81414] = {
+    ID = 81414,
+    portraitID = 414,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81414", "\233\187\145\229\174\162"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P10.Icon_Head_P10",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81414", "\233\162\132\231\186\166\229\165\150\229\138\177"),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81415] = {
+    ID = 81415,
+    portraitID = 415,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81415", "404\230\141\159\230\175\129"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P11.Icon_Head_P11",
+    acquirePathID = 1023,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81415", "\229\142\159\231\136\134\231\130\185\233\128\154\232\161\140\232\175\129\232\142\183\229\190\151"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81416] = {
+    ID = 81416,
+    portraitID = 416,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81416", "\229\174\135\232\136\170\229\145\152"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P16.Icon_Head_P16",
+    acquirePathID = 1005,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81416", "\230\149\176\230\141\174\229\174\157\229\186\147\194\183\230\181\174\228\184\150\233\170\135\229\174\162"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81417] = {
+    ID = 81417,
+    portraitID = 417,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81417", "\229\164\169\228\189\191\233\153\141\228\184\180"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P17.Icon_Head_P17",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81417", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81418] = {
+    ID = 81418,
+    portraitID = 418,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81418", "\229\133\136\233\169\177\232\128\133"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P14.Icon_Head_P14",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81418", "\229\133\177\231\160\148\229\164\180\229\143\183\231\142\169\229\174\182\228\184\147\229\177\158"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81419] = {
+    ID = 81419,
+    portraitID = 419,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81419", "\228\187\147\233\188\160\229\164\167\231\155\151"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P19.Icon_Head_P19",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81419", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81420] = {
+    ID = 81420,
+    portraitID = 420,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81420", "\232\181\155\229\141\154\231\140\171"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P20.Icon_Head_P20",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81420", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81421] = {
+    ID = 81421,
+    portraitID = 421,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81421", "\232\128\179\230\156\186"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P21.Icon_Head_P21",
+    acquirePathID = 1005,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81421", "\230\149\176\230\141\174\229\174\157\229\186\147\194\183\230\181\174\228\184\150\231\187\152\229\141\183"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81422] = {
+    ID = 81422,
+    portraitID = 422,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81422", "\230\156\186\230\162\176\229\133\148"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P22.Icon_Head_P22",
+    acquirePathID = 1005,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81422", "\230\149\176\230\141\174\229\174\157\229\186\147\194\183\230\181\174\228\184\150\231\187\152\229\141\183"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81423] = {
+    ID = 81423,
+    portraitID = 423,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81423", "\231\140\171\229\146\170\230\132\159\230\159\147"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P23.Icon_Head_P23",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81423", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81424] = {
+    ID = 81424,
+    portraitID = 424,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81424", "\229\165\165\228\188\138\229\133\185"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P24.Icon_Head_P24",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81424", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81425] = {
+    ID = 81425,
+    portraitID = 425,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81425", "\229\133\148\229\133\148\229\163\171\229\133\181"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P25.Icon_Head_P25",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81425", ""),
+    EffectPath = "",
+    IsUnlockShow = false
+  },
+  [81426] = {
+    ID = 81426,
+    portraitID = 426,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81426", "\233\163\158\231\162\159\230\156\186\229\153\168\228\186\186"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P26.Icon_Head_P26",
+    acquirePathID = 1005,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81426", "\230\149\176\230\141\174\229\174\157\229\186\147\194\183\230\181\174\228\184\150\231\187\152\229\141\183"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81427] = {
+    ID = 81427,
+    portraitID = 427,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81427", ""),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P27.Icon_Head_P27",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81427", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81428] = {
+    ID = 81428,
+    portraitID = 428,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81428", ""),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P28.Icon_Head_P28",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81428", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81429] = {
+    ID = 81429,
+    portraitID = 429,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81429", ""),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P29.Icon_Head_P29",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81429", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81430] = {
+    ID = 81430,
+    portraitID = 430,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81430", "\230\152\159\233\151\168"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P30.Icon_Head_P30",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81430", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81431] = {
+    ID = 81431,
+    portraitID = 431,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81431", ""),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P31.Icon_Head_P31",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81431", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81432] = {
+    ID = 81432,
+    portraitID = 432,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81432", ""),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P32.Icon_Head_P32",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81432", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81433] = {
+    ID = 81433,
+    portraitID = 433,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81433", ""),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P33.Icon_Head_P33",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81433", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81434] = {
+    ID = 81434,
+    portraitID = 434,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81434", "\230\132\159\230\159\147\232\128\133"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_O10.Icon_Head_O10",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81434", ""),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81435] = {
+    ID = 81435,
+    portraitID = 435,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81435", "\229\133\177\229\136\155\232\128\133"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P35.Icon_Head_P35",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81435", ""),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81436] = {
+    ID = 81436,
+    portraitID = 436,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81436", "\230\181\183\229\155\160\229\133\139\230\150\175"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P36.Icon_Head_P36",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81436", ""),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81437] = {
+    ID = 81437,
+    portraitID = 437,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81437", "\231\190\129\231\187\138"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P37.Icon_Head_P37",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81437", ""),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81438] = {
+    ID = 81438,
+    portraitID = 438,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81438", ""),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P38.Icon_Head_P38",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81438", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81439] = {
+    ID = 81439,
+    portraitID = 439,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81439", "WEGAME"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P39.Icon_Head_P39",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81439", "WEGAME\228\184\147\229\177\158"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81440] = {
+    ID = 81440,
+    portraitID = 440,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81440", "STEAM"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P40.Icon_Head_P40",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81440", "STEAM\228\184\147\229\177\158"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81441] = {
+    ID = 81441,
+    portraitID = 441,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81441", "QQ\231\189\145\229\144\167"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P41.Icon_Head_P41",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81441", "QQ\231\189\145\229\144\167\228\184\147\229\177\158"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81442] = {
+    ID = 81442,
+    portraitID = 442,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81442", "\231\189\145\233\177\188\231\189\145\229\146\150"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P42.Icon_Head_P42",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81442", "\231\189\145\233\177\188\231\189\145\229\146\150\228\184\147\229\177\158"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81443] = {
+    ID = 81443,
+    portraitID = 443,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81443", "\229\190\174\228\191\161"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P43.Icon_Head_P43",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81443", "\229\190\174\228\191\161\228\184\147\229\177\158"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81444] = {
+    ID = 81444,
+    portraitID = 444,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81444", "QQ"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P44.Icon_Head_P44",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81444", "QQ\228\184\147\229\177\158"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81445] = {
+    ID = 81445,
+    portraitID = 445,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81445", "\232\182\133\230\160\184\231\142\169\229\174\182"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P45.Icon_Head_P45",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81445", "\232\182\133\230\160\184\231\142\169\229\174\182\228\184\147\229\177\158"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81446] = {
+    ID = 81446,
+    portraitID = 446,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81446", "\229\191\131\230\130\166\228\191\177\228\185\144\233\131\168"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P46.Icon_Head_P46",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81446", "\229\191\131\230\130\166\228\191\177\228\185\144\233\131\168\228\184\147\229\177\158"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81447] = {
+    ID = 81447,
+    portraitID = 447,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81447", "\229\138\160\233\128\159\229\153\168"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P47.Icon_Head_P47",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81447", "\229\138\160\233\128\159\229\153\168\228\184\147\229\177\158"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81448] = {
+    ID = 81448,
+    portraitID = 448,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81448", "\229\176\143\233\187\145\231\155\146"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P48.Icon_Head_P48",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81448", "\229\176\143\233\187\145\231\155\146\228\184\147\229\177\158"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81449] = {
+    ID = 81449,
+    portraitID = 449,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81449", "\233\155\182\230\151\165\229\141\177\230\156\186"),
+    portraitIconPath = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P49.Icon_Head_P49",
+    acquirePathID = 1023,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81449", "\229\142\159\231\136\134\231\130\185\233\128\154\232\161\140\232\175\129\232\142\183\229\190\151"),
+    EffectPath = "",
+    IsUnlockShow = true
+  },
+  [81701] = {
+    ID = 81701,
+    portraitID = 701,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81701", "\228\184\138\230\160\161\229\137\170\229\189\177"),
+    portraitIconPath = "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81701", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "/Game/Rouge/UI/VX/UI_Effect/Avatar/WBP_Eff_Avatar_TLS_1.WBP_Eff_Avatar_TLS_1",
+    IsUnlockShow = true
+  },
+  [81702] = {
+    ID = 81702,
+    portraitID = 702,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81702", "\229\131\143\231\180\160\230\155\153\229\133\137"),
+    portraitIconPath = "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81702", ""),
+    EffectPath = "/Game/Rouge/UI/VX/UI_Effect/Avatar/WBP_Eff_Avatar_RiMu.WBP_Eff_Avatar_RiMu",
+    IsUnlockShow = false
+  },
+  [81703] = {
+    ID = 81703,
+    portraitID = 703,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81703", "\230\156\186\230\162\176\231\134\138\229\133\136\231\148\159"),
+    portraitIconPath = "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81703", ""),
+    EffectPath = "/Game/Rouge/UI/VX/UI_Effect/Avatar/WBP_Eff_Avatar_XLL_1.WBP_Eff_Avatar_XLL_1",
+    IsUnlockShow = false
+  },
+  [81704] = {
+    ID = 81704,
+    portraitID = 704,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81704", "\233\172\188\233\157\162\229\133\183"),
+    portraitIconPath = "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81704", ""),
+    EffectPath = "/Game/Rouge/UI/VX/UI_Effect/Avatar/WBP_Eff_Avatar_YLN_1.WBP_Eff_Avatar_YLN_1",
+    IsUnlockShow = false
+  },
+  [81705] = {
+    ID = 81705,
+    portraitID = 705,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81705", "\231\139\144\233\157\162\229\133\183"),
+    portraitIconPath = "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81705", "[\228\184\141\231\191\187\232\175\145]\228\184\141\230\138\149\230\148\190"),
+    EffectPath = "/Game/Rouge/UI/VX/UI_Effect/Avatar/WBP_Eff_Avatar_Fox.WBP_Eff_Avatar_Fox",
+    IsUnlockShow = true
+  },
+  [81709] = {
+    ID = 81709,
+    portraitID = 709,
+    portraitNameLocMeta = NSLOCTEXT("resource_TBPortrait", "portraitName_81709", "\231\151\133\230\175\146\231\187\136\231\187\147\232\128\133"),
+    portraitIconPath = "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
+    acquirePathID = 0,
+    initunlock = false,
+    LinkDescLocMeta = NSLOCTEXT("resource_TBPortrait", "LinkDesc_81709", "\229\149\134\229\159\142-\228\191\174\230\173\163\232\161\140\229\138\168\229\133\145\230\141\162"),
+    EffectPath = "/Game/Rouge/UI/VX/UI_Effect/Avatar/WBP_Eff_Avatar_S1.WBP_Eff_Avatar_S1",
+    IsUnlockShow = false
+  }
+}
+local LinkTb = {
+  portraitName = "portraitNameLocMeta",
+  LinkDesc = "LinkDescLocMeta"
+}
+local LuaTableMeta = {
+  __index = function(table, key)
+    local keyIdx = LinkTb[key]
+    if keyIdx then
+      return table[keyIdx]()
+    elseif rawget(table, key) then
+      return rawget(table, key)
+    end
+  end
+}
+IteratorSetMetaTable(resource_tbportrait, LuaTableMeta)
+return resource_tbportrait

@@ -1,0 +1,116 @@
+﻿{
+  "1": {
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv2.Icon_FamilyHeirloom_Lv2",
+    "CostResources": {
+      "1": {
+        "value": 1,
+        "key": 6201015
+      }
+    },
+    "ParamList": {},
+    "GiftID": 6201012,
+    "LinkDescLocMeta": {
+      "InNamespace": "hero_TBFamilyTreasureUpgrade",
+      "InTextLiteral": "商城捆绑包获取",
+      "InKey": "LinkDesc_101_2"
+    },
+    "Level": 2,
+    "LinkId": "1012",
+    "ID": 101
+  },
+  "2": {
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv3.Icon_FamilyHeirloom_Lv3",
+    "CostResources": {
+      "1": {
+        "value": 1,
+        "key": 6201015
+      }
+    },
+    "ParamList": {},
+    "GiftID": 6201013,
+    "LinkDescLocMeta": {
+      "InNamespace": "hero_TBFamilyTreasureUpgrade",
+      "InTextLiteral": "商城捆绑包获取",
+      "InKey": "LinkDesc_101_3"
+    },
+    "Level": 3,
+    "LinkId": "1012",
+    "ID": 101
+  },
+  "3": {
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv4.Icon_FamilyHeirloom_Lv4",
+    "CostResources": {
+      "1": {
+        "value": 1,
+        "key": 6201015
+      }
+    },
+    "ParamList": {},
+    "GiftID": 6201014,
+    "LinkDescLocMeta": {
+      "InNamespace": "hero_TBFamilyTreasureUpgrade",
+      "InTextLiteral": "商城捆绑包获取",
+      "InKey": "LinkDesc_101_4"
+    },
+    "Level": 4,
+    "LinkId": "1012",
+    "ID": 101
+  },
+  "4": {
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv2.Icon_FamilyHeirloom_Lv2",
+    "CostResources": {
+      "1": {
+        "value": 1,
+        "key": 6203015
+      }
+    },
+    "ParamList": {},
+    "GiftID": 6203012,
+    "LinkDescLocMeta": {
+      "InNamespace": "hero_TBFamilyTreasureUpgrade",
+      "InTextLiteral": "抽卡系统获取",
+      "InKey": "LinkDesc_1031_2"
+    },
+    "Level": 2,
+    "LinkId": "1005",
+    "ID": 1031
+  },
+  "5": {
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv3.Icon_FamilyHeirloom_Lv3",
+    "CostResources": {
+      "1": {
+        "value": 1,
+        "key": 6203015
+      }
+    },
+    "ParamList": {},
+    "GiftID": 6203013,
+    "LinkDescLocMeta": {
+      "InNamespace": "hero_TBFamilyTreasureUpgrade",
+      "InTextLiteral": "抽卡系统获取",
+      "InKey": "LinkDesc_1031_3"
+    },
+    "Level": 3,
+    "LinkId": "1005",
+    "ID": 1031
+  },
+  "6": {
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv4.Icon_FamilyHeirloom_Lv4",
+    "CostResources": {
+      "1": {
+        "value": 1,
+        "key": 6203015
+      }
+    },
+    "ParamList": {},
+    "GiftID": 6203014,
+    "LinkDescLocMeta": {
+      "InNamespace": "hero_TBFamilyTreasureUpgrade",
+      "InTextLiteral": "抽卡系统获取",
+      "InKey": "LinkDesc_1031_4"
+    },
+    "Level": 4,
+    "LinkId": "1005",
+    "ID": 1031
+  }
+}

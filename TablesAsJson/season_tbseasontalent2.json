@@ -1,0 +1,740 @@
+﻿{
+  "2010102": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 0,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010102",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010102,
+    "SeasonTalentGroupID": 20101,
+    "Level": 2,
+    "FrontGroupIds": {},
+    "Inscription": 6010102,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010102",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010103": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 0,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010103",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010103,
+    "SeasonTalentGroupID": 20101,
+    "Level": 3,
+    "FrontGroupIds": {},
+    "Inscription": 6010103,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010103",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010601": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010601",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010601,
+    "SeasonTalentGroupID": 20106,
+    "Level": 1,
+    "FrontGroupIds": {
+      "1": 20105
+    },
+    "Inscription": 6010901,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010601",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010602": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010602",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010602,
+    "SeasonTalentGroupID": 20106,
+    "Level": 2,
+    "FrontGroupIds": {
+      "1": 20105
+    },
+    "Inscription": 6010902,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010602",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010603": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010603",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010603,
+    "SeasonTalentGroupID": 20106,
+    "Level": 3,
+    "FrontGroupIds": {
+      "1": 20105
+    },
+    "Inscription": 6010903,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010603",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010201": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 0,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010201",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010201,
+    "SeasonTalentGroupID": 20102,
+    "Level": 1,
+    "FrontGroupIds": {},
+    "Inscription": 6010201,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010201",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010202": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 0,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010202",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010202,
+    "SeasonTalentGroupID": 20102,
+    "Level": 2,
+    "FrontGroupIds": {},
+    "Inscription": 6010202,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010202",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010203": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 0,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010203",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010203,
+    "SeasonTalentGroupID": 20102,
+    "Level": 3,
+    "FrontGroupIds": {},
+    "Inscription": 6010203,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010203",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2011103": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2011103",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2011103,
+    "SeasonTalentGroupID": 20111,
+    "Level": 3,
+    "FrontGroupIds": {
+      "1": 20110
+    },
+    "Inscription": 6010209,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2011103",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010701": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010701",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010701,
+    "SeasonTalentGroupID": 20107,
+    "Level": 1,
+    "FrontGroupIds": {
+      "1": 20105
+    },
+    "Inscription": 6011001,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010701",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010702": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010702",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010702,
+    "SeasonTalentGroupID": 20107,
+    "Level": 2,
+    "FrontGroupIds": {
+      "1": 20105
+    },
+    "Inscription": 6011002,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010702",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010703": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010703",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010703,
+    "SeasonTalentGroupID": 20107,
+    "Level": 3,
+    "FrontGroupIds": {
+      "1": 20105
+    },
+    "Inscription": 6011003,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010703",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010301": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 0,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010301",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010301,
+    "SeasonTalentGroupID": 20103,
+    "Level": 1,
+    "FrontGroupIds": {},
+    "Inscription": 6010701,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010301",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010302": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 0,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010302",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010302,
+    "SeasonTalentGroupID": 20103,
+    "Level": 2,
+    "FrontGroupIds": {},
+    "Inscription": 6010702,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010302",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010303": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 0,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010303",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010303,
+    "SeasonTalentGroupID": 20103,
+    "Level": 3,
+    "FrontGroupIds": {},
+    "Inscription": 6010703,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010303",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010801": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010801",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010801,
+    "SeasonTalentGroupID": 20108,
+    "Level": 1,
+    "FrontGroupIds": {
+      "1": 20110
+    },
+    "Inscription": 6010301,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010801",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010802": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010802",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010802,
+    "SeasonTalentGroupID": 20108,
+    "Level": 2,
+    "FrontGroupIds": {
+      "1": 20110
+    },
+    "Inscription": 6010302,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010802",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010803": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010803",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010803,
+    "SeasonTalentGroupID": 20108,
+    "Level": 3,
+    "FrontGroupIds": {
+      "1": 20110
+    },
+    "Inscription": 6010303,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010803",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010401": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010401",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010401,
+    "SeasonTalentGroupID": 20104,
+    "Level": 1,
+    "FrontGroupIds": {
+      "1": 20105
+    },
+    "Inscription": 6010801,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010401",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010402": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010402",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010402,
+    "SeasonTalentGroupID": 20104,
+    "Level": 2,
+    "FrontGroupIds": {
+      "1": 20105
+    },
+    "Inscription": 6010802,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010402",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010403": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010403",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010403,
+    "SeasonTalentGroupID": 20104,
+    "Level": 3,
+    "FrontGroupIds": {
+      "1": 20105
+    },
+    "Inscription": 6010803,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010403",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2011501": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 9,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2011501",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2011501,
+    "SeasonTalentGroupID": 20115,
+    "Level": 1,
+    "FrontGroupIds": {
+      "1": 20108,
+      "2": 20109,
+      "3": 20111
+    },
+    "Inscription": 6010601,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2011501",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010901": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010901",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010901,
+    "SeasonTalentGroupID": 20109,
+    "Level": 1,
+    "FrontGroupIds": {
+      "1": 20110
+    },
+    "Inscription": 6011101,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010901",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010902": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010902",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010902,
+    "SeasonTalentGroupID": 20109,
+    "Level": 2,
+    "FrontGroupIds": {
+      "1": 20110
+    },
+    "Inscription": 6011102,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010902",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010903": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010903",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010903,
+    "SeasonTalentGroupID": 20109,
+    "Level": 3,
+    "FrontGroupIds": {
+      "1": 20110
+    },
+    "Inscription": 6011103,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010903",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010501": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 9,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010501",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010501,
+    "SeasonTalentGroupID": 20105,
+    "Level": 1,
+    "FrontGroupIds": {
+      "1": 20101,
+      "2": 20102,
+      "3": 20103
+    },
+    "Inscription": 6010401,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010501",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2011102": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2011102",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2011102,
+    "SeasonTalentGroupID": 20111,
+    "Level": 2,
+    "FrontGroupIds": {
+      "1": 20110
+    },
+    "Inscription": 6010208,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2011102",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2011101": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 1,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2011101",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2011101,
+    "SeasonTalentGroupID": 20111,
+    "Level": 1,
+    "FrontGroupIds": {
+      "1": 20110
+    },
+    "Inscription": 6010207,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2011101",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2010101": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 0,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2010101",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2010101,
+    "SeasonTalentGroupID": 20101,
+    "Level": 1,
+    "FrontGroupIds": {},
+    "Inscription": 6010101,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2010101",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  },
+  "2011001": {
+    "MovieUrl": "",
+    "Icon": "",
+    "Type": 0,
+    "FrontGroupsLevel": 9,
+    "DescLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Desc_2011001",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "SeasonTalentID": 2011001,
+    "SeasonTalentGroupID": 20110,
+    "Level": 1,
+    "FrontGroupIds": {
+      "1": 20104,
+      "2": 20106,
+      "3": 20107
+    },
+    "Inscription": 6010501,
+    "NameLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "Name_2011001",
+      "InNamespace": "season_TBSeasonTalent2"
+    },
+    "AcquiredSpecialPoint": 5,
+    "ConsumerResourceNum": 1
+  }
+}

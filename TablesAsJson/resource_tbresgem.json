@@ -1,0 +1,2012 @@
+﻿{
+  "37014": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 1.6,
+        "key": 19
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Epic02_02.Icon_Core_Epic02_02",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 4,
+        "key": 19
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37014,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37015": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 2,
+        "key": 19
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Legend02_02.Icon_Core_Legend02_02",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 5,
+        "key": 19
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37015,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37016": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 2.4,
+        "key": 19
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Immortal02_02.Icon_Core_Immortal02_02",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 6,
+        "key": 19
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37016,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37046": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 18,
+        "key": 12
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Immortal02_05.Icon_Core_Immortal02_05",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 6,
+        "key": 12
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37046,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37045": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 15,
+        "key": 12
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Legend02_05.Icon_Core_Legend02_05",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 5,
+        "key": 12
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37045,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37021": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 0.4,
+        "key": 20
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Normal02_03.Icon_Core_Normal02_03",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 1,
+        "key": 20
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37021,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37022": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 0.8,
+        "key": 20
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Excellent02_03.Icon_Core_Excellent02_03",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 2,
+        "key": 20
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37022,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37023": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 1.2,
+        "key": 20
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Rare02_03.Icon_Core_Rare02_03",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 3,
+        "key": 20
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37023,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37024": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 1.6,
+        "key": 20
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Epic02_03.Icon_Core_Epic02_03",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 4,
+        "key": 20
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37024,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37025": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 2,
+        "key": 20
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Legend02_03.Icon_Core_Legend02_03",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 5,
+        "key": 20
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37025,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37026": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 2.4,
+        "key": 20
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Immortal02_03.Icon_Core_Immortal02_03",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 6,
+        "key": 20
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37026,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37044": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 12,
+        "key": 12
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Epic02_05.Icon_Core_Epic02_05",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 4,
+        "key": 12
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37044,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37043": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 9,
+        "key": 12
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Rare02_05.Icon_Core_Rare02_05",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 3,
+        "key": 12
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37043,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37042": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 6,
+        "key": 12
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Excellent02_05.Icon_Core_Excellent02_05",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 2,
+        "key": 12
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37042,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37033": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 15,
+        "key": 11
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Rare02_04.Icon_Core_Rare02_04",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 3,
+        "key": 11
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37033,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37031": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 5,
+        "key": 11
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Normal02_04.Icon_Core_Normal02_04",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 1,
+        "key": 11
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37031,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37001": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 0.2,
+        "key": 18
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Normal02_01.Icon_Core_Normal02_01",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 1,
+        "key": 18
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37001,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37002": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 0.4,
+        "key": 18
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Excellent02_01.Icon_Core_Excellent02_01",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 2,
+        "key": 18
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37002,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37003": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 0.6,
+        "key": 18
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Rare02_01.Icon_Core_Rare02_01",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 3,
+        "key": 18
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37003,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37004": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 0.8,
+        "key": 18
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Epic02_01.Icon_Core_Epic02_01",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 4,
+        "key": 18
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37004,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37005": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 1,
+        "key": 18
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Legend02_01.Icon_Core_Legend02_01",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 5,
+        "key": 18
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37005,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37006": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 1.2,
+        "key": 18
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Immortal02_01.Icon_Core_Immortal02_01",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 6,
+        "key": 18
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37006,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37036": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 30,
+        "key": 11
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Immortal02_04.Icon_Core_Immortal02_04",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 6,
+        "key": 11
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37036,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37035": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 25,
+        "key": 11
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Legend02_04.Icon_Core_Legend02_04",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 5,
+        "key": 11
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37035,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37034": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 20,
+        "key": 11
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Epic02_04.Icon_Core_Epic02_04",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 4,
+        "key": 11
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37034,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37041": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 3,
+        "key": 12
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Normal02_05.Icon_Core_Normal02_05",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 1,
+        "key": 12
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37041,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37011": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 0.4,
+        "key": 19
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Normal02_02.Icon_Core_Normal02_02",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 1,
+        "key": 19
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37011,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37012": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 0.8,
+        "key": 19
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Excellent02_02.Icon_Core_Excellent02_02",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 2,
+        "key": 19
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37012,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37013": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 1.2,
+        "key": 19
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Rare02_02.Icon_Core_Rare02_02",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 3,
+        "key": 19
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37013,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  },
+  "37032": {
+    "MutationNegativeRange": {
+      "1": 0.05,
+      "2": 0.5
+    },
+    "Attr": {
+      "1": {
+        "value": 10,
+        "key": 11
+      }
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Excellent02_04.Icon_Core_Excellent02_04",
+    "MutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99033
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    },
+    "AttrWeight": {
+      "1": {
+        "weight": 2,
+        "key": 11
+      }
+    },
+    "MutationAddAttrRandom": {
+      "1": {
+        "x": 18,
+        "y": 1,
+        "weight": 10
+      },
+      "2": {
+        "x": 19,
+        "y": 2,
+        "weight": 5
+      },
+      "3": {
+        "x": 20,
+        "y": 2,
+        "weight": 5
+      },
+      "4": {
+        "x": 11,
+        "y": 25,
+        "weight": 20
+      },
+      "5": {
+        "x": 12,
+        "y": 15,
+        "weight": 10
+      }
+    },
+    "ID": 37032,
+    "SeniorMutationCost": {
+      "1": {
+        "value": 1,
+        "key": 99036
+      },
+      "2": {
+        "value": 1000,
+        "key": 99989
+      }
+    }
+  }
+}

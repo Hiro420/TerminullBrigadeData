@@ -1,0 +1,100 @@
+﻿{
+  "3": {
+    "SeasonNameLocMeta": {
+      "InNamespace": "rank_TBRankMode",
+      "InKey": "SeasonName_3",
+      "InTextLiteral": "赛季"
+    },
+    "ModeId": 3002,
+    "Desc": "",
+    "ModeNameLocMeta": {
+      "InNamespace": "rank_TBRankMode",
+      "InKey": "ModeName_3",
+      "InTextLiteral": "病毒狂潮"
+    },
+    "SoloBoardType": 0,
+    "bEnable": true,
+    "RowName": 3,
+    "SeasonId": 1,
+    "WorldIds": {
+      "1": 33,
+      "2": 34,
+      "3": 35,
+      "4": 36,
+      "5": 37
+    },
+    "TeamBoardType": 6
+  },
+  "1": {
+    "SeasonNameLocMeta": {
+      "InNamespace": "rank_TBRankMode",
+      "InKey": "SeasonName_1",
+      "InTextLiteral": "赛季"
+    },
+    "ModeId": 1001,
+    "Desc": "",
+    "ModeNameLocMeta": {
+      "InNamespace": "rank_TBRankMode",
+      "InKey": "ModeName_1",
+      "InTextLiteral": "常规模式"
+    },
+    "SoloBoardType": 2,
+    "bEnable": true,
+    "RowName": 1,
+    "SeasonId": 1,
+    "WorldIds": {
+      "1": 23,
+      "2": 24
+    },
+    "TeamBoardType": 1
+  },
+  "2": {
+    "SeasonNameLocMeta": {
+      "InNamespace": "rank_TBRankMode",
+      "InKey": "SeasonName_2",
+      "InTextLiteral": "赛季"
+    },
+    "ModeId": 1003,
+    "Desc": "",
+    "ModeNameLocMeta": {
+      "InNamespace": "rank_TBRankMode",
+      "InKey": "ModeName_2",
+      "InTextLiteral": "修正行动"
+    },
+    "SoloBoardType": 3,
+    "bEnable": true,
+    "RowName": 2,
+    "SeasonId": 1,
+    "WorldIds": {
+      "1": 38
+    },
+    "TeamBoardType": 4
+  },
+  "4": {
+    "SeasonNameLocMeta": {
+      "InNamespace": "rank_TBRankMode",
+      "InKey": "SeasonName_4",
+      "InTextLiteral": "赛季"
+    },
+    "ModeId": 3001,
+    "Desc": "",
+    "ModeNameLocMeta": {
+      "InNamespace": "rank_TBRankMode",
+      "InKey": "ModeName_4",
+      "InTextLiteral": "失序链区"
+    },
+    "SoloBoardType": 0,
+    "bEnable": true,
+    "RowName": 4,
+    "SeasonId": 1,
+    "WorldIds": {
+      "1": 100,
+      "2": 101,
+      "3": 102,
+      "4": 103,
+      "5": 104,
+      "6": 105
+    },
+    "TeamBoardType": 5
+  }
+}

@@ -1,0 +1,884 @@
+﻿{
+  "240030": {
+    "PropType": 1,
+    "ID": 240030,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240031": {
+    "PropType": 1,
+    "ID": 240031,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240032": {
+    "PropType": 1,
+    "ID": 240032,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240033": {
+    "PropType": 1,
+    "ID": 240033,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240034": {
+    "PropType": 1,
+    "ID": 240034,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240035": {
+    "PropType": 1,
+    "ID": 240035,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240037": {
+    "PropType": 1,
+    "ID": 240037,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240038": {
+    "PropType": 1,
+    "ID": 240038,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240039": {
+    "PropType": 1,
+    "ID": 240039,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240040": {
+    "PropType": 1,
+    "ID": 240040,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240041": {
+    "PropType": 1,
+    "ID": 240041,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "901204": {
+    "PropType": 1,
+    "ID": 901204,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "901205": {
+    "PropType": 1,
+    "ID": 901205,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "901206": {
+    "PropType": 1,
+    "ID": 901206,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "901207": {
+    "PropType": 1,
+    "ID": 901207,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "901208": {
+    "PropType": 1,
+    "ID": 901208,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240047": {
+    "PropType": 1,
+    "ID": 240047,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240048": {
+    "PropType": 1,
+    "ID": 240048,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240049": {
+    "PropType": 1,
+    "ID": 240049,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902101": {
+    "PropType": 1,
+    "ID": 902101,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902102": {
+    "PropType": 1,
+    "ID": 902102,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902103": {
+    "PropType": 1,
+    "ID": 902103,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902104": {
+    "PropType": 1,
+    "ID": 902104,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902105": {
+    "PropType": 1,
+    "ID": 902105,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902106": {
+    "PropType": 1,
+    "ID": 902106,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902107": {
+    "PropType": 1,
+    "ID": 902107,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902108": {
+    "PropType": 1,
+    "ID": 902108,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902109": {
+    "PropType": 1,
+    "ID": 902109,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902110": {
+    "PropType": 1,
+    "ID": 902110,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902111": {
+    "PropType": 1,
+    "ID": 902111,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902112": {
+    "PropType": 1,
+    "ID": 902112,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240046": {
+    "PropType": 1,
+    "ID": 240046,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240045": {
+    "PropType": 1,
+    "ID": 240045,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240044": {
+    "PropType": 1,
+    "ID": 240044,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "901101": {
+    "PropType": 1,
+    "ID": 901101,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "901102": {
+    "PropType": 1,
+    "ID": 901102,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "901103": {
+    "PropType": 1,
+    "ID": 901103,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "901104": {
+    "PropType": 1,
+    "ID": 901104,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "901105": {
+    "PropType": 1,
+    "ID": 901105,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "901106": {
+    "PropType": 1,
+    "ID": 901106,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "901107": {
+    "PropType": 1,
+    "ID": 901107,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "901108": {
+    "PropType": 1,
+    "ID": 901108,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240043": {
+    "PropType": 1,
+    "ID": 240043,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99994": {
+    "PropType": 1,
+    "ID": 99994,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99995": {
+    "PropType": 1,
+    "ID": 99995,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240042": {
+    "PropType": 1,
+    "ID": 240042,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99036": {
+    "PropType": 1,
+    "ID": 99036,
+    "ResetType": 1,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99035": {
+    "PropType": 1,
+    "ID": 99035,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99034": {
+    "PropType": 1,
+    "ID": 99034,
+    "ResetType": 1,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99033": {
+    "PropType": 1,
+    "ID": 99033,
+    "ResetType": 1,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240016": {
+    "PropType": 1,
+    "ID": 240016,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240012": {
+    "PropType": 1,
+    "ID": 240012,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240011": {
+    "PropType": 1,
+    "ID": 240011,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240010": {
+    "PropType": 1,
+    "ID": 240010,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240009": {
+    "PropType": 1,
+    "ID": 240009,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99027": {
+    "PropType": 1,
+    "ID": 99027,
+    "ResetType": 1,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99026": {
+    "PropType": 1,
+    "ID": 99026,
+    "ResetType": 1,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99025": {
+    "PropType": 1,
+    "ID": 99025,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902210": {
+    "PropType": 1,
+    "ID": 902210,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "901306": {
+    "PropType": 1,
+    "ID": 901306,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "901307": {
+    "PropType": 1,
+    "ID": 901307,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902208": {
+    "PropType": 1,
+    "ID": 902208,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "1100011": {
+    "PropType": 1,
+    "ID": 1100011,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99005": {
+    "PropType": 1,
+    "ID": 99005,
+    "ResetType": 1,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99004": {
+    "PropType": 1,
+    "ID": 99004,
+    "ResetType": 1,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99003": {
+    "PropType": 1,
+    "ID": 99003,
+    "ResetType": 1,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99001": {
+    "PropType": 1,
+    "ID": 99001,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99002": {
+    "PropType": 1,
+    "ID": 99002,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "210001": {
+    "PropType": 1,
+    "ID": 210001,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "210002": {
+    "PropType": 1,
+    "ID": 210002,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "210003": {
+    "PropType": 1,
+    "ID": 210003,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "210004": {
+    "PropType": 1,
+    "ID": 210004,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "210005": {
+    "PropType": 1,
+    "ID": 210005,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "210006": {
+    "PropType": 1,
+    "ID": 210006,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "210007": {
+    "PropType": 1,
+    "ID": 210007,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902302": {
+    "PropType": 1,
+    "ID": 902302,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902301": {
+    "PropType": 1,
+    "ID": 902301,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902212": {
+    "PropType": 1,
+    "ID": 902212,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902211": {
+    "PropType": 1,
+    "ID": 902211,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "6203015": {
+    "PropType": 1,
+    "ID": 6203015,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99015": {
+    "PropType": 1,
+    "ID": 99015,
+    "ResetType": 1,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "902209": {
+    "PropType": 1,
+    "ID": 902209,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99017": {
+    "PropType": 1,
+    "ID": 99017,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99018": {
+    "PropType": 1,
+    "ID": 99018,
+    "ResetType": 1,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99019": {
+    "PropType": 1,
+    "ID": 99019,
+    "ResetType": 1,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "201001": {
+    "PropType": 1,
+    "ID": 201001,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "201002": {
+    "PropType": 1,
+    "ID": 201002,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "201003": {
+    "PropType": 1,
+    "ID": 201003,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "201004": {
+    "PropType": 1,
+    "ID": 201004,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "201005": {
+    "PropType": 1,
+    "ID": 201005,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "201006": {
+    "PropType": 1,
+    "ID": 201006,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "201007": {
+    "PropType": 1,
+    "ID": 201007,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "201008": {
+    "PropType": 1,
+    "ID": 201008,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99028": {
+    "PropType": 1,
+    "ID": 99028,
+    "ResetType": 1,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99029": {
+    "PropType": 1,
+    "ID": 99029,
+    "ResetType": 1,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99030": {
+    "PropType": 1,
+    "ID": 99030,
+    "ResetType": 1,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99031": {
+    "PropType": 1,
+    "ID": 99031,
+    "ResetType": 1,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "99032": {
+    "PropType": 1,
+    "ID": 99032,
+    "ResetType": 1,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240003": {
+    "PropType": 1,
+    "ID": 240003,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240004": {
+    "PropType": 1,
+    "ID": 240004,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240005": {
+    "PropType": 1,
+    "ID": 240005,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240006": {
+    "PropType": 1,
+    "ID": 240006,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240007": {
+    "PropType": 1,
+    "ID": 240007,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "200003": {
+    "PropType": 1,
+    "ID": 200003,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "200004": {
+    "PropType": 1,
+    "ID": 200004,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "200005": {
+    "PropType": 1,
+    "ID": 200005,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "200006": {
+    "PropType": 1,
+    "ID": 200006,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "200007": {
+    "PropType": 1,
+    "ID": 200007,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240013": {
+    "PropType": 1,
+    "ID": 240013,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240014": {
+    "PropType": 1,
+    "ID": 240014,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240015": {
+    "PropType": 1,
+    "ID": 240015,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "6201015": {
+    "PropType": 1,
+    "ID": 6201015,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240017": {
+    "PropType": 1,
+    "ID": 240017,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240018": {
+    "PropType": 1,
+    "ID": 240018,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240019": {
+    "PropType": 1,
+    "ID": 240019,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240020": {
+    "PropType": 1,
+    "ID": 240020,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240021": {
+    "PropType": 1,
+    "ID": 240021,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240022": {
+    "PropType": 1,
+    "ID": 240022,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240023": {
+    "PropType": 1,
+    "ID": 240023,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240024": {
+    "PropType": 1,
+    "ID": 240024,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240025": {
+    "PropType": 1,
+    "ID": 240025,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240026": {
+    "PropType": 1,
+    "ID": 240026,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240027": {
+    "PropType": 1,
+    "ID": 240027,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240028": {
+    "PropType": 1,
+    "ID": 240028,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240029": {
+    "PropType": 1,
+    "ID": 240029,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  },
+  "240008": {
+    "PropType": 1,
+    "ID": 240008,
+    "ResetType": 0,
+    "StackLimit": 99999,
+    "Stack": true
+  }
+}

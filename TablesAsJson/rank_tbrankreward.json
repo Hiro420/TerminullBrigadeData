@@ -1,0 +1,89 @@
+﻿{
+  "1": {
+    "boardReward": {
+      "1": {
+        "rankPhase": {
+          "value": 10,
+          "key": 1
+        },
+        "rewards": {
+          "1": {
+            "value": 1,
+            "key": 300001
+          },
+          "2": {
+            "value": 1,
+            "key": 300002
+          }
+        }
+      },
+      "2": {
+        "rankPhase": {
+          "value": 20,
+          "key": 11
+        },
+        "rewards": {
+          "1": {
+            "value": 1,
+            "key": 300001
+          },
+          "2": {
+            "value": 1,
+            "key": 300002
+          }
+        }
+      },
+      "3": {
+        "rankPhase": {
+          "value": 50,
+          "key": 21
+        },
+        "rewards": {
+          "1": {
+            "value": 1,
+            "key": 300001
+          },
+          "2": {
+            "value": 1,
+            "key": 300002
+          }
+        }
+      },
+      "4": {
+        "rankPhase": {
+          "value": 100,
+          "key": 51
+        },
+        "rewards": {
+          "1": {
+            "value": 1,
+            "key": 300001
+          },
+          "2": {
+            "value": 1,
+            "key": 300002
+          }
+        }
+      },
+      "5": {
+        "rankPhase": {
+          "value": 200,
+          "key": 101
+        },
+        "rewards": {
+          "1": {
+            "value": 1,
+            "key": 300001
+          },
+          "2": {
+            "value": 1,
+            "key": 300002
+          }
+        }
+      }
+    },
+    "boardMeta": "{\"gameMode\":1001,\"gameWorld\":23}",
+    "rewardID": 1,
+    "boardType": 1
+  }
+}

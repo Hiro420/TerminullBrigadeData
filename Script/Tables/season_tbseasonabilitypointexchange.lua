@@ -1,0 +1,63 @@
+local season_tbseasonabilitypointexchange = {
+  {
+    AbilityPointID = 1,
+    SeasonIDX = 1,
+    ExchangeResource = {key = 99003, value = 50}
+  },
+  {
+    AbilityPointID = 2,
+    SeasonIDX = 1,
+    ExchangeResource = {key = 99003, value = 50}
+  },
+  {
+    AbilityPointID = 3,
+    SeasonIDX = 1,
+    ExchangeResource = {key = 99003, value = 50}
+  },
+  {
+    AbilityPointID = 4,
+    SeasonIDX = 1,
+    ExchangeResource = {key = 99003, value = 50}
+  },
+  {
+    AbilityPointID = 5,
+    SeasonIDX = 1,
+    ExchangeResource = {key = 99003, value = 50}
+  },
+  {
+    AbilityPointID = 6,
+    SeasonIDX = 1,
+    ExchangeResource = {key = 99003, value = 50}
+  },
+  {
+    AbilityPointID = 7,
+    SeasonIDX = 1,
+    ExchangeResource = {key = 99003, value = 50}
+  },
+  {
+    AbilityPointID = 8,
+    SeasonIDX = 1,
+    ExchangeResource = {key = 99003, value = 50}
+  },
+  {
+    AbilityPointID = 9,
+    SeasonIDX = 1,
+    ExchangeResource = {key = 99003, value = 50}
+  },
+  {
+    AbilityPointID = 10,
+    SeasonIDX = 1,
+    ExchangeResource = {key = 99003, value = 50}
+  },
+  {
+    AbilityPointID = 11,
+    SeasonIDX = 1,
+    ExchangeResource = {key = 99003, value = 50}
+  },
+  {
+    AbilityPointID = 12,
+    SeasonIDX = 1,
+    ExchangeResource = {key = 99003, value = 50}
+  }
+}
+return season_tbseasonabilitypointexchange

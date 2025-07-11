@@ -1,0 +1,293 @@
+local chip_tbchiplevelup = {
+  [0] = {
+    ID = 0,
+    upgradeExp = {
+      {key = 1, value = 0},
+      {key = 2, value = 0},
+      {key = 3, value = 0},
+      {key = 4, value = 0},
+      {key = 5, value = 0}
+    },
+    eatExp = {
+      {key = 1, value = 200},
+      {key = 2, value = 400},
+      {key = 3, value = 600},
+      {key = 4, value = 1200},
+      {key = 5, value = 1200}
+    }
+  },
+  [1] = {
+    ID = 1,
+    upgradeExp = {
+      {key = 1, value = 200},
+      {key = 2, value = 400},
+      {key = 3, value = 600},
+      {key = 4, value = 1000},
+      {key = 5, value = 1000}
+    },
+    eatExp = {
+      {key = 1, value = 320},
+      {key = 2, value = 640},
+      {key = 3, value = 960},
+      {key = 4, value = 1760},
+      {key = 5, value = 1760}
+    }
+  },
+  [2] = {
+    ID = 2,
+    upgradeExp = {
+      {key = 1, value = 440},
+      {key = 2, value = 880},
+      {key = 3, value = 1320},
+      {key = 4, value = 2200},
+      {key = 5, value = 2200}
+    },
+    eatExp = {
+      {key = 1, value = 512},
+      {key = 2, value = 1024},
+      {key = 3, value = 1536},
+      {key = 4, value = 2720},
+      {key = 5, value = 2720}
+    }
+  },
+  [3] = {
+    ID = 3,
+    upgradeExp = {
+      {key = 1, value = 720},
+      {key = 2, value = 1440},
+      {key = 3, value = 2160},
+      {key = 4, value = 3600},
+      {key = 5, value = 3600}
+    },
+    eatExp = {
+      {key = 1, value = 776},
+      {key = 2, value = 1552},
+      {key = 3, value = 2328},
+      {key = 4, value = 4080},
+      {key = 5, value = 4080}
+    }
+  },
+  [4] = {
+    ID = 4,
+    upgradeExp = {
+      {key = 1, value = 1040},
+      {key = 2, value = 2080},
+      {key = 3, value = 3120},
+      {key = 4, value = 5200},
+      {key = 5, value = 5200}
+    },
+    eatExp = {
+      {key = 1, value = 992},
+      {key = 2, value = 1984},
+      {key = 3, value = 2976},
+      {key = 4, value = 5120},
+      {key = 5, value = 5120}
+    }
+  },
+  [5] = {
+    ID = 5,
+    upgradeExp = {
+      {key = 1, value = 1400},
+      {key = 2, value = 2800},
+      {key = 3, value = 4200},
+      {key = 4, value = 7000},
+      {key = 5, value = 7000}
+    },
+    eatExp = {
+      {key = 1, value = 1280},
+      {key = 2, value = 2560},
+      {key = 3, value = 3840},
+      {key = 4, value = 6560},
+      {key = 5, value = 6560}
+    }
+  },
+  [6] = {
+    ID = 6,
+    upgradeExp = {
+      {key = 1, value = 2000},
+      {key = 2, value = 4000},
+      {key = 3, value = 6000},
+      {key = 4, value = 9000},
+      {key = 5, value = 9000}
+    },
+    eatExp = {
+      {key = 1, value = 1760},
+      {key = 2, value = 3520},
+      {key = 3, value = 5280},
+      {key = 4, value = 8160},
+      {key = 5, value = 8160}
+    }
+  },
+  [7] = {
+    ID = 7,
+    upgradeExp = {
+      {key = 2, value = 5360},
+      {key = 3, value = 8040},
+      {key = 4, value = 11200},
+      {key = 5, value = 11200}
+    },
+    eatExp = {
+      {key = 2, value = 4608},
+      {key = 3, value = 6912},
+      {key = 4, value = 9920},
+      {key = 5, value = 9920}
+    }
+  },
+  [8] = {
+    ID = 8,
+    upgradeExp = {
+      {key = 2, value = 6880},
+      {key = 3, value = 10320},
+      {key = 4, value = 13600},
+      {key = 5, value = 13600}
+    },
+    eatExp = {
+      {key = 2, value = 5824},
+      {key = 3, value = 8736},
+      {key = 4, value = 11840},
+      {key = 5, value = 11840}
+    }
+  },
+  [9] = {
+    ID = 9,
+    upgradeExp = {
+      {key = 2, value = 9200},
+      {key = 3, value = 13800},
+      {key = 4, value = 16200},
+      {key = 5, value = 16200}
+    },
+    eatExp = {
+      {key = 2, value = 7680},
+      {key = 3, value = 11520},
+      {key = 4, value = 13920},
+      {key = 5, value = 13920}
+    }
+  },
+  [10] = {
+    ID = 10,
+    upgradeExp = {
+      {key = 3, value = 17640},
+      {key = 4, value = 20800},
+      {key = 5, value = 20800}
+    },
+    eatExp = {
+      {key = 3, value = 14592},
+      {key = 4, value = 17600},
+      {key = 5, value = 17600}
+    }
+  },
+  [11] = {
+    ID = 11,
+    upgradeExp = {
+      {key = 3, value = 21840},
+      {key = 4, value = 25800},
+      {key = 5, value = 25800}
+    },
+    eatExp = {
+      {key = 3, value = 17952},
+      {key = 4, value = 21600},
+      {key = 5, value = 21600}
+    }
+  },
+  [12] = {
+    ID = 12,
+    upgradeExp = {
+      {key = 3, value = 27720},
+      {key = 4, value = 31200},
+      {key = 5, value = 31200}
+    },
+    eatExp = {
+      {key = 3, value = 22656},
+      {key = 4, value = 25920},
+      {key = 5, value = 25920}
+    }
+  },
+  [13] = {
+    ID = 13,
+    upgradeExp = {
+      {key = 4, value = 37000},
+      {key = 5, value = 37000}
+    },
+    eatExp = {
+      {key = 4, value = 30560},
+      {key = 5, value = 30560}
+    }
+  },
+  [14] = {
+    ID = 14,
+    upgradeExp = {
+      {key = 4, value = 43200},
+      {key = 5, value = 43200}
+    },
+    eatExp = {
+      {key = 4, value = 35520},
+      {key = 5, value = 35520}
+    }
+  },
+  [15] = {
+    ID = 15,
+    upgradeExp = {
+      {key = 4, value = 52600},
+      {key = 5, value = 52600}
+    },
+    eatExp = {
+      {key = 4, value = 43040},
+      {key = 5, value = 43040}
+    }
+  },
+  [16] = {
+    ID = 16,
+    upgradeExp = {
+      {key = 5, value = 62600}
+    },
+    eatExp = {
+      {key = 5, value = 51040}
+    }
+  },
+  [17] = {
+    ID = 17,
+    upgradeExp = {
+      {key = 5, value = 73200}
+    },
+    eatExp = {
+      {key = 5, value = 59520}
+    }
+  },
+  [18] = {
+    ID = 18,
+    upgradeExp = {
+      {key = 5, value = 84400}
+    },
+    eatExp = {
+      {key = 5, value = 68480}
+    }
+  },
+  [19] = {
+    ID = 19,
+    upgradeExp = {
+      {key = 5, value = 96200}
+    },
+    eatExp = {
+      {key = 5, value = 77920}
+    }
+  },
+  [20] = {
+    ID = 20,
+    upgradeExp = {
+      {key = 5, value = 112400}
+    },
+    eatExp = {
+      {key = 5, value = 90880}
+    }
+  },
+  [21] = {
+    ID = 21,
+    upgradeExp = {
+      {key = 5, value = 129400}
+    },
+    eatExp = {
+      {key = 5, value = 104480}
+    }
+  }
+}
+return chip_tbchiplevelup

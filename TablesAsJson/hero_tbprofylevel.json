@@ -1,0 +1,172 @@
+﻿{
+  "1": {
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "IconPath": "",
+    "Exp": 0,
+    "HeadFrameNameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "HeadFrameName_1",
+      "InTextLiteral": ""
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "Name_1",
+      "InTextLiteral": "初入矩阵"
+    },
+    "Level": 1,
+    "HeadFrameID": 0
+  },
+  "2": {
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "IconPath": "",
+    "Exp": 700,
+    "HeadFrameNameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "HeadFrameName_2",
+      "InTextLiteral": ""
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "Name_2",
+      "InTextLiteral": "小试身手"
+    },
+    "Level": 2,
+    "HeadFrameID": 0
+  },
+  "3": {
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "IconPath": "",
+    "Exp": 2100,
+    "HeadFrameNameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "HeadFrameName_3",
+      "InTextLiteral": ""
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "Name_3",
+      "InTextLiteral": "渐入佳境"
+    },
+    "Level": 3,
+    "HeadFrameID": 0
+  },
+  "4": {
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "IconPath": "",
+    "Exp": 3900,
+    "HeadFrameNameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "HeadFrameName_4",
+      "InTextLiteral": ""
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "Name_4",
+      "InTextLiteral": "熟练高玩"
+    },
+    "Level": 4,
+    "HeadFrameID": 0
+  },
+  "5": {
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "IconPath": "",
+    "Exp": 6200,
+    "HeadFrameNameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "HeadFrameName_5",
+      "InTextLiteral": ""
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "Name_5",
+      "InTextLiteral": "小有成就"
+    },
+    "Level": 5,
+    "HeadFrameID": 0
+  },
+  "6": {
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "IconPath": "",
+    "Exp": 8400,
+    "HeadFrameNameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "HeadFrameName_6",
+      "InTextLiteral": ""
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "Name_6",
+      "InTextLiteral": "精湛专家"
+    },
+    "Level": 6,
+    "HeadFrameID": 0
+  },
+  "7": {
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "IconPath": "",
+    "Exp": 11200,
+    "HeadFrameNameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "HeadFrameName_7",
+      "InTextLiteral": ""
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "Name_7",
+      "InTextLiteral": "矩阵漫客"
+    },
+    "Level": 7,
+    "HeadFrameID": 0
+  },
+  "8": {
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "IconPath": "",
+    "Exp": 14700,
+    "HeadFrameNameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "HeadFrameName_8",
+      "InTextLiteral": ""
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "Name_8",
+      "InTextLiteral": "矩阵达人"
+    },
+    "Level": 8,
+    "HeadFrameID": 0
+  },
+  "9": {
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "IconPath": "",
+    "Exp": 18200,
+    "HeadFrameNameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "HeadFrameName_9",
+      "InTextLiteral": ""
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "Name_9",
+      "InTextLiteral": "奇迹骇客"
+    },
+    "Level": 9,
+    "HeadFrameID": 0
+  },
+  "10": {
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "IconPath": "",
+    "Exp": 21700,
+    "HeadFrameNameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "HeadFrameName_10",
+      "InTextLiteral": ""
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfyLevel",
+      "InKey": "Name_10",
+      "InTextLiteral": "传奇玩家"
+    },
+    "Level": 10,
+    "HeadFrameID": 0
+  }
+}

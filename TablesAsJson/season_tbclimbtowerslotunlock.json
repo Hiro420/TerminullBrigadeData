@@ -1,0 +1,102 @@
+﻿{
+  "1": {
+    "UnlockFloor": 0,
+    "UnLockDesLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "UnLockDes_1",
+      "InNamespace": "season_TBClimbTowerSlotUnlock"
+    },
+    "SlotId": 1,
+    "WaveWindowId": 1502
+  },
+  "2": {
+    "UnlockFloor": 0,
+    "UnLockDesLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "UnLockDes_2",
+      "InNamespace": "season_TBClimbTowerSlotUnlock"
+    },
+    "SlotId": 2,
+    "WaveWindowId": 1502
+  },
+  "3": {
+    "UnlockFloor": 2,
+    "UnLockDesLocMeta": {
+      "InTextLiteral": "通关修正行动层",
+      "InKey": "UnLockDes_3",
+      "InNamespace": "season_TBClimbTowerSlotUnlock"
+    },
+    "SlotId": 3,
+    "WaveWindowId": 1502
+  },
+  "4": {
+    "UnlockFloor": 4,
+    "UnLockDesLocMeta": {
+      "InTextLiteral": "通关修正行动层",
+      "InKey": "UnLockDes_4",
+      "InNamespace": "season_TBClimbTowerSlotUnlock"
+    },
+    "SlotId": 4,
+    "WaveWindowId": 1502
+  },
+  "5": {
+    "UnlockFloor": 6,
+    "UnLockDesLocMeta": {
+      "InTextLiteral": "通关修正行动层",
+      "InKey": "UnLockDes_5",
+      "InNamespace": "season_TBClimbTowerSlotUnlock"
+    },
+    "SlotId": 5,
+    "WaveWindowId": 1502
+  },
+  "6": {
+    "UnlockFloor": 8,
+    "UnLockDesLocMeta": {
+      "InTextLiteral": "通关修正行动层",
+      "InKey": "UnLockDes_6",
+      "InNamespace": "season_TBClimbTowerSlotUnlock"
+    },
+    "SlotId": 6,
+    "WaveWindowId": 1502
+  },
+  "7": {
+    "UnlockFloor": 51,
+    "UnLockDesLocMeta": {
+      "InTextLiteral": "暂不开放",
+      "InKey": "UnLockDes_7",
+      "InNamespace": "season_TBClimbTowerSlotUnlock"
+    },
+    "SlotId": 7,
+    "WaveWindowId": 1502
+  },
+  "8": {
+    "UnlockFloor": 51,
+    "UnLockDesLocMeta": {
+      "InTextLiteral": "暂不开放",
+      "InKey": "UnLockDes_8",
+      "InNamespace": "season_TBClimbTowerSlotUnlock"
+    },
+    "SlotId": 8,
+    "WaveWindowId": 1502
+  },
+  "9": {
+    "UnlockFloor": 51,
+    "UnLockDesLocMeta": {
+      "InTextLiteral": "暂不开放",
+      "InKey": "UnLockDes_9",
+      "InNamespace": "season_TBClimbTowerSlotUnlock"
+    },
+    "SlotId": 9,
+    "WaveWindowId": 1502
+  },
+  "10": {
+    "UnlockFloor": 51,
+    "UnLockDesLocMeta": {
+      "InTextLiteral": "暂不开放",
+      "InKey": "UnLockDes_10",
+      "InNamespace": "season_TBClimbTowerSlotUnlock"
+    },
+    "SlotId": 10,
+    "WaveWindowId": 1502
+  }
+}

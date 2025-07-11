@@ -1,0 +1,102 @@
+﻿{
+  "99014": {
+    "ID": 99014,
+    "ResetType": 1,
+    "StackLimit": 9999999
+  },
+  "99016": {
+    "ID": 99016,
+    "ResetType": 0,
+    "StackLimit": 9999999
+  },
+  "99020": {
+    "ID": 99020,
+    "ResetType": 1,
+    "StackLimit": 9999999
+  },
+  "99021": {
+    "ID": 99021,
+    "ResetType": 1,
+    "StackLimit": 9999999
+  },
+  "99022": {
+    "ID": 99022,
+    "ResetType": 1,
+    "StackLimit": 9999999
+  },
+  "99023": {
+    "ID": 99023,
+    "ResetType": 1,
+    "StackLimit": 9999999
+  },
+  "99024": {
+    "ID": 99024,
+    "ResetType": 1,
+    "StackLimit": 9999999
+  },
+  "99025": {
+    "ID": 99025,
+    "ResetType": 1,
+    "StackLimit": 9999999
+  },
+  "300001": {
+    "ID": 300001,
+    "ResetType": 0,
+    "StackLimit": 9999999
+  },
+  "300002": {
+    "ID": 300002,
+    "ResetType": 0,
+    "StackLimit": 9999999
+  },
+  "300003": {
+    "ID": 300003,
+    "ResetType": 1,
+    "StackLimit": 9999999
+  },
+  "300004": {
+    "ID": 300004,
+    "ResetType": 1,
+    "StackLimit": 9999999
+  },
+  "300005": {
+    "ID": 300005,
+    "ResetType": 0,
+    "StackLimit": 9999999
+  },
+  "300006": {
+    "ID": 300006,
+    "ResetType": 0,
+    "StackLimit": 9999999
+  },
+  "300007": {
+    "ID": 300007,
+    "ResetType": 0,
+    "StackLimit": 9999999
+  },
+  "99010": {
+    "ID": 99010,
+    "ResetType": 1,
+    "StackLimit": 9999999
+  },
+  "99011": {
+    "ID": 99011,
+    "ResetType": 1,
+    "StackLimit": 9999999
+  },
+  "99012": {
+    "ID": 99012,
+    "ResetType": 1,
+    "StackLimit": 9999999
+  },
+  "99013": {
+    "ID": 99013,
+    "ResetType": 1,
+    "StackLimit": 9999999
+  },
+  "99989": {
+    "ID": 99989,
+    "ResetType": 1,
+    "StackLimit": 9999999
+  }
+}

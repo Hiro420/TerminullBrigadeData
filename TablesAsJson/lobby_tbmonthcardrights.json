@@ -1,0 +1,180 @@
+﻿{
+  "405": {
+    "Type": 2,
+    "MailTemplateID": 0,
+    "ReceiveSeasonID": 0,
+    "Desc": "【本人】权益金币",
+    "RightsType": 0,
+    "RightsReward": {},
+    "ID": 405,
+    "RightsValue": 0,
+    "Quality": 1,
+    "ReceiveType": 0,
+    "Name": ""
+  },
+  "1": {
+    "Type": 1,
+    "MailTemplateID": 0,
+    "ReceiveSeasonID": 0,
+    "Desc": "高能权益",
+    "RightsType": 1,
+    "RightsReward": {},
+    "ID": 1,
+    "RightsValue": 1,
+    "Quality": 0,
+    "ReceiveType": 1,
+    "Name": "RewardIncreaseBonus"
+  },
+  "2": {
+    "Type": 1,
+    "MailTemplateID": 0,
+    "ReceiveSeasonID": 0,
+    "Desc": "存档权益",
+    "RightsType": 1,
+    "RightsReward": {},
+    "ID": 2,
+    "RightsValue": 1,
+    "Quality": 0,
+    "ReceiveType": 0,
+    "Name": "BDSchemeNumBonus"
+  },
+  "3": {
+    "Type": 1,
+    "MailTemplateID": 0,
+    "ReceiveSeasonID": 0,
+    "Desc": "源码权益",
+    "RightsType": 3,
+    "RightsReward": {},
+    "ID": 3,
+    "RightsValue": 50,
+    "Quality": 0,
+    "ReceiveType": 0,
+    "Name": "AccountBonus.talent"
+  },
+  "4": {
+    "Type": 1,
+    "MailTemplateID": 0,
+    "ReceiveSeasonID": 0,
+    "Desc": "权限刷新权益",
+    "RightsType": 1,
+    "RightsReward": {},
+    "ID": 4,
+    "RightsValue": 1,
+    "Quality": 0,
+    "ReceiveType": 0,
+    "Name": "ModifyFreeRefresh"
+  },
+  "5": {
+    "Type": 1,
+    "MailTemplateID": 0,
+    "ReceiveSeasonID": 0,
+    "Desc": "复活权益",
+    "RightsType": 0,
+    "RightsReward": {},
+    "ID": 5,
+    "RightsValue": 0,
+    "Quality": 0,
+    "ReceiveType": 0,
+    "Name": "RevivalCount"
+  },
+  "6": {
+    "Type": 1,
+    "MailTemplateID": 0,
+    "ReceiveSeasonID": 0,
+    "Desc": "熟练度权益",
+    "RightsType": 3,
+    "RightsReward": {},
+    "ID": 6,
+    "RightsValue": 50,
+    "Quality": 0,
+    "ReceiveType": 0,
+    "Name": "AccountBonus.proficiency"
+  },
+  "7": {
+    "Type": 1,
+    "MailTemplateID": 7,
+    "ReceiveSeasonID": 0,
+    "Desc": "赛季道具权益",
+    "RightsType": 2,
+    "RightsReward": {
+      "1": {
+        "value": 1,
+        "key": 99018
+      },
+      "2": {
+        "value": 1,
+        "key": 99019
+      }
+    },
+    "ID": 7,
+    "RightsValue": 0,
+    "Quality": 0,
+    "ReceiveType": 2,
+    "Name": "SeasonTicketReward"
+  },
+  "401": {
+    "Type": 2,
+    "MailTemplateID": 0,
+    "ReceiveSeasonID": 0,
+    "Desc": "【本人】权益模组掉落",
+    "RightsType": 0,
+    "RightsReward": {},
+    "ID": 401,
+    "RightsValue": 0,
+    "Quality": 1,
+    "ReceiveType": 0,
+    "Name": "CurrencyIncreaseNormalPrivilege"
+  },
+  "402": {
+    "Type": 2,
+    "MailTemplateID": 0,
+    "ReceiveSeasonID": 0,
+    "Desc": "【队友】权益模组掉落",
+    "RightsType": 0,
+    "RightsReward": {},
+    "ID": 402,
+    "RightsValue": 0,
+    "Quality": 0,
+    "ReceiveType": 0,
+    "Name": ""
+  },
+  "403": {
+    "Type": 2,
+    "MailTemplateID": 0,
+    "ReceiveSeasonID": 0,
+    "Desc": "【本人】权益通货掉落",
+    "RightsType": 0,
+    "RightsReward": {},
+    "ID": 403,
+    "RightsValue": 0,
+    "Quality": 2,
+    "ReceiveType": 0,
+    "Name": ""
+  },
+  "404": {
+    "Type": 2,
+    "MailTemplateID": 0,
+    "ReceiveSeasonID": 0,
+    "Desc": "【队友】权益通货掉落（）",
+    "RightsType": 0,
+    "RightsReward": {},
+    "ID": 404,
+    "RightsValue": 0,
+    "Quality": 0,
+    "ReceiveType": 0,
+    "Name": ""
+  },
+  "406": {
+    "Type": 2,
+    "MailTemplateID": 0,
+    "ReceiveSeasonID": 0,
+    "Desc": "【本人】权益模组掉落",
+    "RightsType": 0,
+    "RightsReward": {},
+    "ID": 406,
+    "RightsValue": 0,
+    "Quality": 1,
+    "ReceiveType": 0,
+    "Name": ""
+  }
+}

@@ -1,0 +1,62 @@
+﻿{
+  "0": {
+    "OpenLevel": 8,
+    "ChannelNameLocMeta": {
+      "InKey": "ChannelName_0",
+      "InNamespace": "chat_TBChat",
+      "InTextLiteral": "大厅"
+    },
+    "TextLimit": 100,
+    "Channel": 0,
+    "IconPath": "",
+    "Period": 10
+  },
+  "1": {
+    "OpenLevel": 1,
+    "ChannelNameLocMeta": {
+      "InKey": "ChannelName_1",
+      "InNamespace": "chat_TBChat",
+      "InTextLiteral": "队伍"
+    },
+    "TextLimit": 100,
+    "Channel": 1,
+    "IconPath": "",
+    "Period": 5
+  },
+  "2": {
+    "OpenLevel": 1,
+    "ChannelNameLocMeta": {
+      "InKey": "ChannelName_2",
+      "InNamespace": "chat_TBChat",
+      "InTextLiteral": "好友"
+    },
+    "TextLimit": 100,
+    "Channel": 2,
+    "IconPath": "",
+    "Period": 1
+  },
+  "3": {
+    "OpenLevel": 0,
+    "ChannelNameLocMeta": {
+      "InKey": "ChannelName_3",
+      "InNamespace": "chat_TBChat",
+      "InTextLiteral": "招募"
+    },
+    "TextLimit": 0,
+    "Channel": 3,
+    "IconPath": "",
+    "Period": 0
+  },
+  "4": {
+    "OpenLevel": 0,
+    "ChannelNameLocMeta": {
+      "InKey": "ChannelName_4",
+      "InNamespace": "chat_TBChat",
+      "InTextLiteral": "系统"
+    },
+    "TextLimit": 0,
+    "Channel": 4,
+    "IconPath": "",
+    "Period": 0
+  }
+}

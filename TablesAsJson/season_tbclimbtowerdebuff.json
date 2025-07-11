@@ -1,0 +1,426 @@
+﻿{
+  "15": {
+    "LevelData": 0,
+    "DebuffLevel": 1,
+    "Remark": "",
+    "DebuffGroupID": 15,
+    "Type": 2,
+    "ContentLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Content_15",
+      "InTextLiteral": "废弃击败一定数量怪物之前，随机封印一个技能"
+    },
+    "DebuffValues": {
+      "1": 5
+    },
+    "InstructionIDs": {
+      "1": 9030301
+    },
+    "TitleLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Title_15",
+      "InTextLiteral": "击败名敌人前，随机禁用一个技能"
+    },
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_15.Icon_ClimbTower_Attr_15"
+  },
+  "1": {
+    "LevelData": -10,
+    "DebuffLevel": 3,
+    "Remark": "",
+    "DebuffGroupID": 1,
+    "Type": 0,
+    "ContentLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Content_1",
+      "InTextLiteral": "废弃生命和护盾上限"
+    },
+    "DebuffValues": {
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "InstructionIDs": {
+      "1": 9030091,
+      "2": 9030092,
+      "3": 9030093
+    },
+    "TitleLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Title_1",
+      "InTextLiteral": "体力和护盾上限"
+    },
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_01.Icon_ClimbTower_Attr_01"
+  },
+  "2": {
+    "LevelData": 10,
+    "DebuffLevel": 3,
+    "Remark": "",
+    "DebuffGroupID": 2,
+    "Type": 0,
+    "ContentLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Content_2",
+      "InTextLiteral": "废弃承受伤害"
+    },
+    "DebuffValues": {
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "InstructionIDs": {
+      "1": 9030011,
+      "2": 9030012,
+      "3": 9030013
+    },
+    "TitleLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Title_2",
+      "InTextLiteral": "承受伤害"
+    },
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_02.Icon_ClimbTower_Attr_02"
+  },
+  "3": {
+    "LevelData": -10,
+    "DebuffLevel": 3,
+    "Remark": "",
+    "DebuffGroupID": 3,
+    "Type": 0,
+    "ContentLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Content_3",
+      "InTextLiteral": "废弃移动速度"
+    },
+    "DebuffValues": {
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "InstructionIDs": {
+      "1": 9030021,
+      "2": 9030022,
+      "3": 9030023
+    },
+    "TitleLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Title_3",
+      "InTextLiteral": "移动速度"
+    },
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_03.Icon_ClimbTower_Attr_03"
+  },
+  "4": {
+    "LevelData": 3,
+    "DebuffLevel": 3,
+    "Remark": "",
+    "DebuffGroupID": 4,
+    "Type": 0,
+    "ContentLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Content_4",
+      "InTextLiteral": "废弃救援被救援时间"
+    },
+    "DebuffValues": {
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "InstructionIDs": {
+      "1": 9030031,
+      "2": 9030032,
+      "3": 9030033
+    },
+    "TitleLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Title_4",
+      "InTextLiteral": "救援和被救援时间"
+    },
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_04.Icon_ClimbTower_Attr_04"
+  },
+  "5": {
+    "LevelData": 10,
+    "DebuffLevel": 3,
+    "Remark": "",
+    "DebuffGroupID": 5,
+    "Type": 0,
+    "ContentLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Content_5",
+      "InTextLiteral": "废弃技能恢复时间"
+    },
+    "DebuffValues": {
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "InstructionIDs": {
+      "1": 9030041,
+      "2": 9030042,
+      "3": 9030043
+    },
+    "TitleLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Title_5",
+      "InTextLiteral": "技能冷却速度"
+    },
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_05.Icon_ClimbTower_Attr_05"
+  },
+  "6": {
+    "LevelData": -10,
+    "DebuffLevel": 3,
+    "Remark": "",
+    "DebuffGroupID": 6,
+    "Type": 0,
+    "ContentLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Content_6",
+      "InTextLiteral": "废弃暴击率"
+    },
+    "DebuffValues": {
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "InstructionIDs": {
+      "1": 9030051,
+      "2": 9030052,
+      "3": 9030053
+    },
+    "TitleLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Title_6",
+      "InTextLiteral": "暴击率"
+    },
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_06.Icon_ClimbTower_Attr_06"
+  },
+  "7": {
+    "LevelData": -20,
+    "DebuffLevel": 3,
+    "Remark": "",
+    "DebuffGroupID": 7,
+    "Type": 0,
+    "ContentLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Content_7",
+      "InTextLiteral": "废弃弱点伤害倍率"
+    },
+    "DebuffValues": {
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "InstructionIDs": {
+      "1": 9030061,
+      "2": 9030062,
+      "3": 9030063
+    },
+    "TitleLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Title_7",
+      "InTextLiteral": "弱点伤害倍率"
+    },
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_07.Icon_ClimbTower_Attr_07"
+  },
+  "8": {
+    "LevelData": 30,
+    "DebuffLevel": 3,
+    "Remark": "",
+    "DebuffGroupID": 8,
+    "Type": 0,
+    "ContentLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Content_8",
+      "InTextLiteral": "废弃换弹时间"
+    },
+    "DebuffValues": {
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "InstructionIDs": {
+      "1": 9030071,
+      "2": 9030072,
+      "3": 9030073
+    },
+    "TitleLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Title_8",
+      "InTextLiteral": "换弹速度"
+    },
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_08.Icon_ClimbTower_Attr_08"
+  },
+  "9": {
+    "LevelData": -30,
+    "DebuffLevel": 2,
+    "Remark": "",
+    "DebuffGroupID": 9,
+    "Type": 0,
+    "ContentLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Content_9",
+      "InTextLiteral": "废弃弹匣容量"
+    },
+    "DebuffValues": {
+      "1": 2,
+      "2": 4
+    },
+    "InstructionIDs": {
+      "1": 9030081,
+      "2": 9030082
+    },
+    "TitleLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Title_9",
+      "InTextLiteral": "弹匣容量"
+    },
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_09.Icon_ClimbTower_Attr_09"
+  },
+  "10": {
+    "LevelData": 30,
+    "DebuffLevel": 2,
+    "Remark": "",
+    "DebuffGroupID": 10,
+    "Type": 0,
+    "ContentLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Content_10",
+      "InTextLiteral": "废弃商店购买价格"
+    },
+    "DebuffValues": {
+      "1": 2,
+      "2": 4
+    },
+    "InstructionIDs": {
+      "1": 9030001,
+      "2": 9030002
+    },
+    "TitleLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Title_10",
+      "InTextLiteral": "商店购买价格"
+    },
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_10.Icon_ClimbTower_Attr_10"
+  },
+  "11": {
+    "LevelData": -20,
+    "DebuffLevel": 2,
+    "Remark": "",
+    "DebuffGroupID": 11,
+    "Type": 0,
+    "ContentLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Content_11",
+      "InTextLiteral": "废弃掉落金币"
+    },
+    "DebuffValues": {
+      "1": 2,
+      "2": 4
+    },
+    "InstructionIDs": {
+      "1": 9030501,
+      "2": 9030502
+    },
+    "TitleLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Title_11",
+      "InTextLiteral": "金币掉落数量"
+    },
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_11.Icon_ClimbTower_Attr_11"
+  },
+  "12": {
+    "LevelData": -20,
+    "DebuffLevel": 2,
+    "Remark": "",
+    "DebuffGroupID": 12,
+    "Type": 0,
+    "ContentLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Content_12",
+      "InTextLiteral": "废弃回血道具的回复量"
+    },
+    "DebuffValues": {
+      "1": 2,
+      "2": 4
+    },
+    "InstructionIDs": {
+      "1": 9030111,
+      "2": 9030112
+    },
+    "TitleLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Title_12",
+      "InTextLiteral": "回复道具效果"
+    },
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_12.Icon_ClimbTower_Attr_12"
+  },
+  "13": {
+    "LevelData": 0,
+    "DebuffLevel": 1,
+    "Remark": "",
+    "DebuffGroupID": 13,
+    "Type": 2,
+    "ContentLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Content_13",
+      "InTextLiteral": "废弃潜能密钥只能二选一"
+    },
+    "DebuffValues": {
+      "1": 5
+    },
+    "InstructionIDs": {
+      "1": 9030101
+    },
+    "TitleLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Title_13",
+      "InTextLiteral": "选择潜能密钥时只有个潜能密钥可选择"
+    },
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_13.Icon_ClimbTower_Attr_13"
+  },
+  "14": {
+    "LevelData": 0,
+    "DebuffLevel": 1,
+    "Remark": "",
+    "DebuffGroupID": 14,
+    "Type": 2,
+    "ContentLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Content_14",
+      "InTextLiteral": "废弃权限只能二选一"
+    },
+    "DebuffValues": {
+      "1": 5
+    },
+    "InstructionIDs": {
+      "1": 9030201
+    },
+    "TitleLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Title_14",
+      "InTextLiteral": "选择权限时只有个权限可选择"
+    },
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_14.Icon_ClimbTower_Attr_14"
+  },
+  "16": {
+    "LevelData": 0,
+    "DebuffLevel": 1,
+    "Remark": "",
+    "DebuffGroupID": 16,
+    "Type": 2,
+    "ContentLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Content_16",
+      "InTextLiteral": "废弃战胜首领后不再回复血量"
+    },
+    "DebuffValues": {
+      "1": 5
+    },
+    "InstructionIDs": {
+      "1": 9030401
+    },
+    "TitleLocMeta": {
+      "InNamespace": "season_TBClimbTowerDebuff",
+      "InKey": "Title_16",
+      "InTextLiteral": "战胜首领后不再回复体力"
+    },
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_16.Icon_ClimbTower_Attr_16"
+  }
+}

@@ -1,0 +1,58 @@
+﻿{
+  "1": {
+    "Remark": "",
+    "Inscription": 5020501,
+    "SeasonIDX": 1,
+    "SpecialAbilityID": 1,
+    "SpecialAbilityPointNum": 10
+  },
+  "2": {
+    "Remark": "",
+    "Inscription": 5020502,
+    "SeasonIDX": 1,
+    "SpecialAbilityID": 2,
+    "SpecialAbilityPointNum": 20
+  },
+  "3": {
+    "Remark": "",
+    "Inscription": 5020503,
+    "SeasonIDX": 1,
+    "SpecialAbilityID": 3,
+    "SpecialAbilityPointNum": 30
+  },
+  "4": {
+    "Remark": "",
+    "Inscription": 5020501,
+    "SeasonIDX": 1,
+    "SpecialAbilityID": 4,
+    "SpecialAbilityPointNum": 50
+  },
+  "5": {
+    "Remark": "",
+    "Inscription": 5020502,
+    "SeasonIDX": 1,
+    "SpecialAbilityID": 5,
+    "SpecialAbilityPointNum": 70
+  },
+  "6": {
+    "Remark": "",
+    "Inscription": 5020503,
+    "SeasonIDX": 1,
+    "SpecialAbilityID": 6,
+    "SpecialAbilityPointNum": 90
+  },
+  "7": {
+    "Remark": "",
+    "Inscription": 5020501,
+    "SeasonIDX": 1,
+    "SpecialAbilityID": 7,
+    "SpecialAbilityPointNum": 130
+  },
+  "8": {
+    "Remark": "",
+    "Inscription": 5020502,
+    "SeasonIDX": 1,
+    "SpecialAbilityID": 8,
+    "SpecialAbilityPointNum": 180
+  }
+}

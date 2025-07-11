@@ -1,0 +1,336 @@
+﻿{
+  "1": {
+    "gachaDynamicGiftPackage": {
+      "1": {
+        "weightParam": 4,
+        "initWeight": 100,
+        "resourceID": 10101010,
+        "amount": 1
+      },
+      "2": {
+        "weightParam": -2,
+        "initWeight": 6000,
+        "resourceID": 10100801,
+        "amount": 1
+      },
+      "3": {
+        "weightParam": -2,
+        "initWeight": 6000,
+        "resourceID": 10103501,
+        "amount": 1
+      },
+      "4": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 10904201,
+        "amount": 1
+      },
+      "5": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 10103202,
+        "amount": 1
+      },
+      "6": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 10502441,
+        "amount": 1
+      },
+      "7": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 10501802,
+        "amount": 1
+      },
+      "8": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 81404,
+        "amount": 1
+      },
+      "9": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 81412,
+        "amount": 1
+      },
+      "10": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 81416,
+        "amount": 1
+      },
+      "11": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 82409,
+        "amount": 1
+      },
+      "12": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 82410,
+        "amount": 1
+      },
+      "13": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 82411,
+        "amount": 1
+      },
+      "14": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 10100004,
+        "amount": 1
+      },
+      "15": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 10102004,
+        "amount": 1
+      },
+      "16": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 10103004,
+        "amount": 1
+      },
+      "17": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 10904004,
+        "amount": 1
+      },
+      "18": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 10500703,
+        "amount": 1
+      },
+      "19": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 10501002,
+        "amount": 1
+      },
+      "20": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 10502102,
+        "amount": 1
+      },
+      "21": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 10501402,
+        "amount": 1
+      },
+      "22": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 20700001,
+        "amount": 1
+      },
+      "23": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 20703005,
+        "amount": 1
+      },
+      "24": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 20700005,
+        "amount": 1
+      },
+      "25": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 20700009,
+        "amount": 1
+      },
+      "26": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 20700011,
+        "amount": 1
+      },
+      "27": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 20703014,
+        "amount": 1
+      }
+    },
+    "ID": 1
+  },
+  "2": {
+    "gachaDynamicGiftPackage": {
+      "1": {
+        "weightParam": 4,
+        "initWeight": 100,
+        "resourceID": 10101010,
+        "amount": 1
+      },
+      "2": {
+        "weightParam": -2,
+        "initWeight": 6000,
+        "resourceID": 10904801,
+        "amount": 1
+      },
+      "3": {
+        "weightParam": -2,
+        "initWeight": 6000,
+        "resourceID": 10102501,
+        "amount": 1
+      },
+      "4": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 10100202,
+        "amount": 1
+      },
+      "5": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 10106202,
+        "amount": 1
+      },
+      "6": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 10501641,
+        "amount": 1
+      },
+      "7": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 10501803,
+        "amount": 1
+      },
+      "8": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 81421,
+        "amount": 1
+      },
+      "9": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 81422,
+        "amount": 1
+      },
+      "10": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 81426,
+        "amount": 1
+      },
+      "11": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 82412,
+        "amount": 1
+      },
+      "12": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 82414,
+        "amount": 1
+      },
+      "13": {
+        "weightParam": -2,
+        "initWeight": 24000,
+        "resourceID": 82415,
+        "amount": 1
+      },
+      "14": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 10904005,
+        "amount": 1
+      },
+      "15": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 10102005,
+        "amount": 1
+      },
+      "16": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 10100005,
+        "amount": 1
+      },
+      "17": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 10106004,
+        "amount": 1
+      },
+      "18": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 10501102,
+        "amount": 1
+      },
+      "19": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 10500902,
+        "amount": 1
+      },
+      "20": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 10501702,
+        "amount": 1
+      },
+      "21": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 10502702,
+        "amount": 1
+      },
+      "22": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 20700015,
+        "amount": 1
+      },
+      "23": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 20703007,
+        "amount": 1
+      },
+      "24": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 20703011,
+        "amount": 1
+      },
+      "25": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 20703001,
+        "amount": 1
+      },
+      "26": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 20703002,
+        "amount": 1
+      },
+      "27": {
+        "weightParam": -2,
+        "initWeight": 53422,
+        "resourceID": 20703015,
+        "amount": 1
+      }
+    },
+    "ID": 2
+  }
+}

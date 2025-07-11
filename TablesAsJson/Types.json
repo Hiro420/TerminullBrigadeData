@@ -1,0 +1,1025 @@
+﻿{
+  "tables": {
+    "1": {
+      "index": "Level",
+      "value_type": "lobby.OBJPlayerLevel",
+      "name": "TBPlayerLevel",
+      "file": "lobby_tbplayerlevel",
+      "mode": "map"
+    },
+    "2": {
+      "index": "Id",
+      "value_type": "lobby.OBJSystemMail",
+      "name": "TBSystemMail",
+      "file": "lobby_tbsystemmail",
+      "mode": "map"
+    },
+    "3": {
+      "index": "ID",
+      "value_type": "lobby.OBJErrorCode",
+      "name": "TBErrorCode",
+      "file": "lobby_tberrorcode",
+      "mode": "map"
+    },
+    "4": {
+      "index": "ID",
+      "value_type": "lobby.OBJInscriptionMutex",
+      "name": "TBInscriptionMutex",
+      "file": "lobby_tbinscriptionmutex",
+      "mode": "map"
+    },
+    "5": {
+      "index": "ID",
+      "value_type": "lobby.OBJGameFloorUnlock",
+      "name": "TBGameFloorUnlock",
+      "file": "lobby_tbgamefloorunlock",
+      "mode": "map"
+    },
+    "6": {
+      "index": "Class",
+      "value_type": "reddot.OBJRedDot",
+      "name": "TBRedDot",
+      "file": "reddot_tbreddot",
+      "mode": "map"
+    },
+    "7": {
+      "index": "ID",
+      "value_type": "lobby.OBJGameMode",
+      "name": "TBGameMode",
+      "file": "lobby_tbgamemode",
+      "mode": "map"
+    },
+    "8": {
+      "index": "ID",
+      "value_type": "lobby.OBJBanReason",
+      "name": "TBBanReason",
+      "file": "lobby_tbbanreason",
+      "mode": "map"
+    },
+    "9": {
+      "index": "ID",
+      "value_type": "lobby.OBJSystemClickStatistics",
+      "name": "TBSystemClickStatistics",
+      "file": "lobby_tbsystemclickstatistics",
+      "mode": "map"
+    },
+    "10": {
+      "index": "Reason",
+      "value_type": "lobby.OBJGetPropsReason",
+      "name": "TBGetPropsReason",
+      "file": "lobby_tbgetpropsreason",
+      "mode": "map"
+    },
+    "11": {
+      "name": "TBConsts",
+      "file": "lobby_tbconsts",
+      "value_type": "lobby.OBJConsts",
+      "mode": "one"
+    },
+    "12": {
+      "index": "SystemID",
+      "value_type": "lobby.OBJSystemUnlock",
+      "name": "TBSystemUnlock",
+      "file": "lobby_tbsystemunlock",
+      "mode": "map"
+    },
+    "13": {
+      "index": "ID",
+      "value_type": "lobby.OBJSystemUnlockEvents",
+      "name": "TBSystemUnlockEvents",
+      "file": "lobby_tbsystemunlockevents",
+      "mode": "map"
+    },
+    "14": {
+      "index": "ID",
+      "value_type": "lobby.OBJGameModeTicket",
+      "name": "TBGameModeTicket",
+      "file": "lobby_tbgamemodeticket",
+      "mode": "map"
+    },
+    "15": {
+      "index": "region",
+      "value_type": "lobby.OBJBattleServerList",
+      "name": "TBBattleServerList",
+      "file": "lobby_tbbattleserverlist",
+      "mode": "map"
+    },
+    "16": {
+      "index": "ID",
+      "value_type": "lobby.OBJMonthCardRights",
+      "name": "TBMonthCardRights",
+      "file": "lobby_tbmonthcardrights",
+      "mode": "map"
+    },
+    "17": {
+      "index": "CountryCode",
+      "value_type": "lobby.OBJRechargeValidCountry",
+      "name": "TBRechargeValidCountry",
+      "file": "lobby_tbrechargevalidcountry",
+      "mode": "map"
+    },
+    "18": {
+      "index": "PlatformName",
+      "value_type": "lobby.OBJPlatformIcon",
+      "name": "TBPlatformIcon",
+      "file": "lobby_tbplatformicon",
+      "mode": "map"
+    },
+    "19": {
+      "index": "privilegeType",
+      "value_type": "lobby.OBJNetBarPrivilege",
+      "name": "TBNEtBarPrivilege",
+      "file": "lobby_tbnetbarprivilege",
+      "mode": "map"
+    },
+    "20": {
+      "index": "ID",
+      "value_type": "lobby.OBJNetBarPrivilegeDes",
+      "name": "TBNEtBarPrivilegeDes",
+      "file": "lobby_tbnetbarprivilegedes",
+      "mode": "map"
+    },
+    "21": {
+      "index": "NumericCode",
+      "value_type": "lobby.OBJISOCountryCode",
+      "name": "TBISOCountryCode",
+      "file": "lobby_tbisocountrycode",
+      "mode": "map"
+    },
+    "22": {
+      "index": "ID",
+      "value_type": "resource.OBJGenaral",
+      "name": "TBGeneral",
+      "file": "resource_tbgeneral",
+      "mode": "map"
+    },
+    "23": {
+      "index": "ID",
+      "value_type": "resource.OBJProp",
+      "name": "TBProp",
+      "file": "resource_tbprop",
+      "mode": "map"
+    },
+    "24": {
+      "index": "ID",
+      "value_type": "resource.OBJCurrency",
+      "name": "TBCurrency",
+      "file": "resource_tbcurrency",
+      "mode": "map"
+    },
+    "25": {
+      "index": "ID",
+      "value_type": "resource.OBJHero",
+      "name": "TBHero",
+      "file": "resource_tbhero",
+      "mode": "map"
+    },
+    "26": {
+      "index": "ID",
+      "value_type": "resource.OBJRandomGift",
+      "name": "TBRandomGift",
+      "file": "resource_tbrandomgift",
+      "mode": "map"
+    },
+    "27": {
+      "index": "ID",
+      "value_type": "resource.OBJWeaponRes",
+      "name": "TBWeaponRes",
+      "file": "resource_tbweaponres",
+      "mode": "map"
+    },
+    "28": {
+      "index": "ID",
+      "value_type": "resource.OBJAccessroyRes",
+      "name": "TBAccessoryRes",
+      "file": "resource_tbaccessoryres",
+      "mode": "map"
+    },
+    "29": {
+      "index": "ID",
+      "value_type": "resource.OBJPresetWeaponRes",
+      "name": "TBPresetWeaponRes",
+      "file": "resource_tbpresetweaponres",
+      "mode": "map"
+    },
+    "30": {
+      "index": "ID",
+      "value_type": "resource.OBJCharacterSkin",
+      "name": "TBCharacterSkin",
+      "file": "resource_tbcharacterskin",
+      "mode": "map"
+    },
+    "31": {
+      "index": "ID",
+      "value_type": "resource.OBJWeaponSkin",
+      "name": "TBWeaponSkin",
+      "file": "resource_tbweaponskin",
+      "mode": "map"
+    },
+    "32": {
+      "index": "ID",
+      "value_type": "resource.OBJDigitalCollection",
+      "name": "TBDigitalCollection",
+      "file": "resource_tbdigitalcollection",
+      "mode": "map"
+    },
+    "33": {
+      "index": "ID",
+      "value_type": "resource.OBJResFamilyTreasure",
+      "name": "TBResFamilyTreasure",
+      "file": "resource_tbresfamilytreasure",
+      "mode": "map"
+    },
+    "34": {
+      "index": "ID",
+      "value_type": "resource.OBJResHeroAppearance",
+      "name": "TBResHeroAppearance",
+      "file": "resource_tbresheroappearance",
+      "mode": "map"
+    },
+    "35": {
+      "index": "ID",
+      "value_type": "resource.OBJResHeroCommuniRoulette",
+      "name": "TBResHeroCommuniRoulette",
+      "file": "resource_tbresherocommuniroulette",
+      "mode": "map"
+    },
+    "36": {
+      "index": "ID",
+      "value_type": "resource.OBJGift",
+      "name": "TBGift",
+      "file": "resource_tbgift",
+      "mode": "map"
+    },
+    "37": {
+      "index": "ID",
+      "value_type": "resource.OBJInfiniteProp",
+      "name": "TBInfiniteProp",
+      "file": "resource_tbinfiniteprop",
+      "mode": "map"
+    },
+    "38": {
+      "index": "ID",
+      "value_type": "resource.OBJResAchievementBadge",
+      "name": "TBResAchievementBadge",
+      "file": "resource_tbresachievementbadge",
+      "mode": "map"
+    },
+    "39": {
+      "index": "ID",
+      "value_type": "resource.OBJPortrait",
+      "name": "TBPortrait",
+      "file": "resource_tbportrait",
+      "mode": "map"
+    },
+    "40": {
+      "index": "ID",
+      "value_type": "resource.OBJBanner",
+      "name": "TBBanner",
+      "file": "resource_tbbanner",
+      "mode": "map"
+    },
+    "41": {
+      "index": "ID",
+      "value_type": "resource.OBJResChip",
+      "name": "TBResChip",
+      "file": "resource_tbreschip",
+      "mode": "map"
+    },
+    "42": {
+      "index": "TargetResourceID",
+      "value_type": "resource.OBJResourceExchange",
+      "name": "TBResourceExchange",
+      "file": "resource_tbresourceexchange",
+      "mode": "map"
+    },
+    "43": {
+      "index": "ID",
+      "value_type": "resource.OBJChipUpgradeMaterial",
+      "name": "TBResourceChipUpgradeMaterial",
+      "file": "resource_tbresourcechipupgradematerial",
+      "mode": "map"
+    },
+    "44": {
+      "index": "ID",
+      "value_type": "resource.OBJResPuzzle",
+      "name": "TBResPuzzle",
+      "file": "resource_tbrespuzzle",
+      "mode": "map"
+    },
+    "45": {
+      "index": "ID",
+      "value_type": "resource.OBJResGem",
+      "name": "TBResGem",
+      "file": "resource_tbresgem",
+      "mode": "map"
+    },
+    "46": {
+      "index": "ID",
+      "value_type": "resource.OBJOptionalGift",
+      "name": "TBOptionalGift",
+      "file": "resource_tboptionalgift",
+      "mode": "map"
+    },
+    "47": {
+      "index": "ID",
+      "value_type": "resource.OBJPaymentCurrency",
+      "name": "TBPaymentCurrency",
+      "file": "resource_tbpaymentcurrency",
+      "mode": "map"
+    },
+    "48": {
+      "index": "ID",
+      "value_type": "resource.OBJMonthCard",
+      "name": "TBMonthCard",
+      "file": "resource_tbmonthcard",
+      "mode": "map"
+    },
+    "49": {
+      "index": "ID",
+      "value_type": "resource.OBJTimeLimitGift",
+      "name": "TBTimeLimitGift",
+      "file": "resource_tbtimelimitgift",
+      "mode": "map"
+    },
+    "50": {
+      "index": "ID",
+      "value_type": "resource.OBJHeroProfyExp",
+      "name": "TBHeroProfyExp",
+      "file": "resource_tbheroprofyexp",
+      "mode": "map"
+    },
+    "51": {
+      "index": "ID",
+      "value_type": "resource.OBJResPrivilege",
+      "name": "TBResPrivilege",
+      "file": "resource_tbresprivilege",
+      "mode": "map"
+    },
+    "52": {
+      "index": "ID",
+      "value_type": "hero.OBJSkillTag",
+      "name": "TBSkillTag",
+      "file": "hero_tbskilltag",
+      "mode": "map"
+    },
+    "53": {
+      "index": "ID",
+      "value_type": "hero.OBJHeroMonster",
+      "name": "TBHeroMonster",
+      "file": "hero_tbheromonster",
+      "mode": "map"
+    },
+    "54": {
+      "index": "ID",
+      "value_type": "hero.OBJFetterSlot",
+      "name": "TBFetterSlot",
+      "file": "hero_tbfetterslot",
+      "mode": "map"
+    },
+    "55": {
+      "index": "ID+Star",
+      "value_type": "hero.OBJHeroSkill",
+      "name": "TBHeroSkill",
+      "file": "hero_tbheroskill",
+      "mode": "list"
+    },
+    "56": {
+      "index": "ID+Level",
+      "value_type": "hero.OBJHeroStar",
+      "name": "TBHeroStar",
+      "file": "hero_tbherostar",
+      "mode": "list"
+    },
+    "57": {
+      "index": "ID",
+      "value_type": "talent.OBJTalent",
+      "name": "TBTalent",
+      "file": "talent_tbtalent",
+      "mode": "map"
+    },
+    "58": {
+      "index": "Level",
+      "value_type": "hero.OBJProfyLevel",
+      "name": "TBProfyLevel",
+      "file": "hero_tbprofylevel",
+      "mode": "map"
+    },
+    "59": {
+      "index": "ID",
+      "value_type": "hero.OBJProfyGeneral",
+      "name": "TBProfyGeneral",
+      "file": "hero_tbprofygeneral",
+      "mode": "map"
+    },
+    "60": {
+      "index": "ID",
+      "value_type": "hero.OBJFamilyTreasure",
+      "name": "TBFamilyTreasure",
+      "file": "hero_tbfamilytreasure",
+      "mode": "map"
+    },
+    "61": {
+      "index": "ID+Level",
+      "value_type": "hero.OBJFamilyTreasureUpgrade",
+      "name": "TBFamilyTreasureUpgrade",
+      "file": "hero_tbfamilytreasureupgrade",
+      "mode": "list"
+    },
+    "62": {
+      "index": "ID",
+      "value_type": "hero.OBJHeroSkinExchange",
+      "name": "TBHeroSkinExchange",
+      "file": "hero_tbheroskinexchange",
+      "mode": "map"
+    },
+    "63": {
+      "index": "ID",
+      "value_type": "mall.OBJGachaPond",
+      "name": "TBGachaPond",
+      "file": "mall_tbgachapond",
+      "mode": "map"
+    },
+    "64": {
+      "index": "ID",
+      "value_type": "mall.OBJGachaSafeguard",
+      "name": "TBGachaSafeguard",
+      "file": "mall_tbgachasafeguard",
+      "mode": "map"
+    },
+    "65": {
+      "index": "ID",
+      "value_type": "mall.OBJMall",
+      "name": "TBMall",
+      "file": "mall_tbmall",
+      "mode": "map"
+    },
+    "66": {
+      "index": "ID",
+      "value_type": "mall.OBJMallShelf",
+      "name": "TBMallShelf",
+      "file": "mall_tbmallshelf",
+      "mode": "map"
+    },
+    "67": {
+      "index": "ID",
+      "value_type": "mall.OBJMallRecommendPage",
+      "name": "TBMallRecommendPage",
+      "file": "mall_tbmallrecommendpage",
+      "mode": "map"
+    },
+    "68": {
+      "index": "ID",
+      "value_type": "mall.OBJPaymentMall",
+      "name": "TBPaymentMall",
+      "file": "mall_tbpaymentmall",
+      "mode": "map"
+    },
+    "69": {
+      "index": "ID",
+      "value_type": "mall.OBJPaymentMallMallShelf",
+      "name": "TBPaymentMallMallShelf",
+      "file": "mall_tbpaymentmallmallshelf",
+      "mode": "map"
+    },
+    "70": {
+      "index": "ID",
+      "value_type": "mall.OBJShelfSecondTab",
+      "name": "TBShelfSecondTab",
+      "file": "mall_tbshelfsecondtab",
+      "mode": "map"
+    },
+    "71": {
+      "index": "ID",
+      "value_type": "mall.OBJPaymentMallCurrency",
+      "name": "TBPaymentMallCurrency",
+      "file": "mall_tbpaymentmallcurrency",
+      "mode": "map"
+    },
+    "72": {
+      "index": "ID",
+      "value_type": "mall.OBJGachaReward",
+      "name": "TBGachaReward",
+      "file": "mall_tbgachareward",
+      "mode": "map"
+    },
+    "73": {
+      "index": "BarrelID",
+      "value_type": "weapon.OBJWeapon",
+      "name": "TBWeapon",
+      "file": "weapon_tbweapon",
+      "mode": "map"
+    },
+    "74": {
+      "index": "AccessoryID",
+      "value_type": "weapon.OBJAccessroy",
+      "name": "TBAccessory",
+      "file": "weapon_tbaccessory",
+      "mode": "map"
+    },
+    "75": {
+      "index": "id",
+      "value_type": "guide.OBJGuide",
+      "name": "TBGuide",
+      "file": "guide_tbguide",
+      "mode": "map"
+    },
+    "76": {
+      "index": "id",
+      "value_type": "guide.OBJGuideStep",
+      "name": "TBGuideStep",
+      "file": "guide_tbguidestep",
+      "mode": "map"
+    },
+    "77": {
+      "index": "id",
+      "value_type": "guide.OBJGuidebooktype",
+      "name": "TBGuidebooktype",
+      "file": "guide_tbguidebooktype",
+      "mode": "map"
+    },
+    "78": {
+      "index": "Channel",
+      "value_type": "chat.OBJChat",
+      "name": "TBChat",
+      "file": "chat_tbchat",
+      "mode": "map"
+    },
+    "79": {
+      "index": "ID",
+      "value_type": "chat.OBJChatContent",
+      "name": "TBChatContent",
+      "file": "chat_tbchatcontent",
+      "mode": "map"
+    },
+    "80": {
+      "index": "ID",
+      "value_type": "chat.OBJSystemMsg",
+      "name": "TBSystemMsg",
+      "file": "chat_tbsystemmsg",
+      "mode": "map"
+    },
+    "81": {
+      "index": "id",
+      "value_type": "task.OBJTaskGroup",
+      "name": "TBTaskGroupData",
+      "file": "task_tbtaskgroupdata",
+      "mode": "map"
+    },
+    "82": {
+      "index": "id",
+      "value_type": "task.OBJTask",
+      "name": "TBTaskData",
+      "file": "task_tbtaskdata",
+      "mode": "map"
+    },
+    "83": {
+      "index": "id",
+      "value_type": "task.OBJUnlockEvent",
+      "name": "TBUnlockEventData",
+      "file": "task_tbunlockeventdata",
+      "mode": "map"
+    },
+    "84": {
+      "index": "id",
+      "value_type": "task.OBJTargetEvent",
+      "name": "TBTargetEventData",
+      "file": "task_tbtargeteventdata",
+      "mode": "map"
+    },
+    "85": {
+      "index": "FloorID",
+      "value_type": "season.OBJClimbTowerFloor",
+      "name": "TBClimbTowerFloor",
+      "file": "season_tbclimbtowerfloor",
+      "mode": "map"
+    },
+    "86": {
+      "index": "DebuffGroupID",
+      "value_type": "season.OBJClimbTowerDebuff",
+      "name": "TBClimbTowerDebuff",
+      "file": "season_tbclimbtowerdebuff",
+      "mode": "map"
+    },
+    "87": {
+      "index": "AnomalyID",
+      "value_type": "season.OBJClimbTowerLobbyAnomaly",
+      "name": "TBClimbTowerLobbyAnomaly",
+      "file": "season_tbclimbtowerlobbyanomaly",
+      "mode": "map"
+    },
+    "88": {
+      "index": "HeroID",
+      "value_type": "season.OBJClimbTowerDailyRewardBonusRate",
+      "name": "TBClimbTowerDailyRewardBonusRate",
+      "file": "season_tbclimbtowerdailyrewardbonusrate",
+      "mode": "map"
+    },
+    "89": {
+      "index": "RewardID",
+      "value_type": "season.OBJClimbTowerGlobalPassReward",
+      "name": "TBClimbTowerGlobalPassReward",
+      "file": "season_tbclimbtowerglobalpassreward",
+      "mode": "map"
+    },
+    "90": {
+      "index": "SlotId",
+      "value_type": "season.OBJClimbTowerSlotUnlock",
+      "name": "TBClimbTowerSlotUnlock",
+      "file": "season_tbclimbtowerslotunlock",
+      "mode": "map"
+    },
+    "91": {
+      "index": "SeasonAbilityID",
+      "value_type": "season.OBJHeroSeasonAbility",
+      "name": "TBHeroSeasonAbility",
+      "file": "season_tbheroseasonability",
+      "mode": "map"
+    },
+    "92": {
+      "index": "SeasonTalentID",
+      "value_type": "season.OBJSeasonTalent",
+      "name": "TBSeasonTalent",
+      "file": "season_tbseasontalent",
+      "mode": "map"
+    },
+    "93": {
+      "index": "SpecialAbilityID+SeasonIDX",
+      "value_type": "season.OBJSpecialAbility",
+      "name": "TBSpecialAbility",
+      "file": "season_tbspecialability",
+      "mode": "list"
+    },
+    "94": {
+      "index": "PresentSchemeID+SeasonIDX",
+      "value_type": "season.OBJSeasonAbilityPresentScheme",
+      "name": "TBSeasonAbilityPresentScheme",
+      "file": "season_tbseasonabilitypresentscheme",
+      "mode": "list"
+    },
+    "95": {
+      "index": "AbilityPointID+SeasonIDX",
+      "value_type": "season.OBJSeasonAbilityPointExchange",
+      "name": "TBSeasonAbilityPointExchange",
+      "file": "season_tbseasonabilitypointexchange",
+      "mode": "list"
+    },
+    "96": {
+      "index": "SeasonID",
+      "value_type": "season.OBJSeasonGeneral",
+      "name": "TBSeasonGeneral",
+      "file": "season_tbseasongeneral",
+      "mode": "map"
+    },
+    "97": {
+      "index": "Id",
+      "value_type": "season.OBJBossRush",
+      "name": "TBBossRush",
+      "file": "season_tbbossrush",
+      "mode": "map"
+    },
+    "98": {
+      "index": "Id",
+      "value_type": "season.OBJSurvival",
+      "name": "TBSurvival",
+      "file": "season_tbsurvival",
+      "mode": "map"
+    },
+    "99": {
+      "index": "id",
+      "value_type": "story.OBJStoryWorld",
+      "name": "TBWorld",
+      "file": "story_tbworld",
+      "mode": "map"
+    },
+    "100": {
+      "index": "id",
+      "value_type": "story.OBJStoryClue",
+      "name": "TBClue",
+      "file": "story_tbclue",
+      "mode": "map"
+    },
+    "101": {
+      "index": "id",
+      "value_type": "story.OBJStoryFragment",
+      "name": "TBFragment",
+      "file": "story_tbfragment",
+      "mode": "map"
+    },
+    "102": {
+      "index": "id",
+      "value_type": "story.OBJStoryWorldIntelligence",
+      "name": "TBWorldIntelligence",
+      "file": "story_tbworldintelligence",
+      "mode": "map"
+    },
+    "103": {
+      "index": "id",
+      "value_type": "achievement.OBJAchievement",
+      "name": "TBAchievement",
+      "file": "achievement_tbachievement",
+      "mode": "map"
+    },
+    "104": {
+      "index": "id",
+      "value_type": "achievement.OBJAchievementPoint",
+      "name": "TBAchievementPoint",
+      "file": "achievement_tbachievementpoint",
+      "mode": "map"
+    },
+    "105": {
+      "index": "ObjectID",
+      "value_type": "achievement.OBJPS5Achievement",
+      "name": "TBPS5Achievement",
+      "file": "achievement_tbps5achievement",
+      "mode": "map"
+    },
+    "106": {
+      "index": "Xboxid",
+      "value_type": "achievement.OBJXBoxAchievement",
+      "name": "TBXBoxAchievement",
+      "file": "achievement_tbxboxachievement",
+      "mode": "map"
+    },
+    "107": {
+      "index": "id",
+      "value_type": "mainstoryline.OBJStoryLineMission",
+      "name": "TBMainStoryLine",
+      "file": "mainstoryline_tbmainstoryline",
+      "mode": "map"
+    },
+    "108": {
+      "index": "ID",
+      "value_type": "chip.OBJChipSubAttrInit",
+      "name": "TBChipSubAttrInit",
+      "file": "chip_tbchipsubattrinit",
+      "mode": "map"
+    },
+    "109": {
+      "index": "ID",
+      "value_type": "chip.OBJChipSubAttrLvUp",
+      "name": "TBChipSubAttrLvUp",
+      "file": "chip_tbchipsubattrlvup",
+      "mode": "map"
+    },
+    "110": {
+      "index": "ID",
+      "value_type": "chip.OBJChipInitInscription",
+      "name": "TBChipInitInscription",
+      "file": "chip_tbchipinitinscription",
+      "mode": "map"
+    },
+    "111": {
+      "index": "ID",
+      "value_type": "chip.OBJCHipLevelUp",
+      "name": "TBChipLevelUp",
+      "file": "chip_tbchiplevelup",
+      "mode": "map"
+    },
+    "112": {
+      "index": "ID",
+      "value_type": "chip.OBJCHipSlots",
+      "name": "TBChipSlots",
+      "file": "chip_tbchipslots",
+      "mode": "map"
+    },
+    "113": {
+      "index": "ID",
+      "value_type": "chip.OBJCHipMainAttrLvUp",
+      "name": "TBMainAttrLvUp",
+      "file": "chip_tbmainattrlvup",
+      "mode": "map"
+    },
+    "114": {
+      "index": "ID",
+      "value_type": "chip.OBJChipBindHero",
+      "name": "TBBindHero",
+      "file": "chip_tbbindhero",
+      "mode": "map"
+    },
+    "115": {
+      "index": "ID",
+      "value_type": "puzzle.OBJPuzzleSubAttrInit",
+      "name": "TBPuzzleSubAttrInit",
+      "file": "puzzle_tbpuzzlesubattrinit",
+      "mode": "map"
+    },
+    "116": {
+      "index": "ID",
+      "value_type": "puzzle.OBJPuzzleSubAttrLvUp",
+      "name": "TBPuzzleSubAttrLvUp",
+      "file": "puzzle_tbpuzzlesubattrlvup",
+      "mode": "map"
+    },
+    "117": {
+      "index": "ID",
+      "value_type": "puzzle.OBJPuzzleInitInscription",
+      "name": "TBPuzzleInitInscription",
+      "file": "puzzle_tbpuzzleinitinscription",
+      "mode": "map"
+    },
+    "118": {
+      "index": "ID",
+      "value_type": "puzzle.OBJPuzzleLevelUp",
+      "name": "TBPuzzleLevelUp",
+      "file": "puzzle_tbpuzzlelevelup",
+      "mode": "map"
+    },
+    "119": {
+      "index": "ID",
+      "value_type": "puzzle.OBJPuzzleSlots",
+      "name": "TBPuzzleSlots",
+      "file": "puzzle_tbpuzzleslots",
+      "mode": "map"
+    },
+    "120": {
+      "index": "ID",
+      "value_type": "puzzle.OBJPuzzleMainAttrLvUp",
+      "name": "TBPuzzleMainAttrLvUp",
+      "file": "puzzle_tbpuzzlemainattrlvup",
+      "mode": "map"
+    },
+    "121": {
+      "index": "ID",
+      "value_type": "puzzle.OBJPuzzleBindHero",
+      "name": "TBPuzzleBindHero",
+      "file": "puzzle_tbpuzzlebindhero",
+      "mode": "map"
+    },
+    "122": {
+      "index": "WorldId",
+      "value_type": "puzzle.OBJPuzzleWorld",
+      "name": "TBPuzzleWorld",
+      "file": "puzzle_tbpuzzleworld",
+      "mode": "map"
+    },
+    "123": {
+      "index": "HeroId",
+      "value_type": "puzzle.OBJPuzzleHero",
+      "name": "TBPuzzleHero",
+      "file": "puzzle_tbpuzzlehero",
+      "mode": "map"
+    },
+    "124": {
+      "index": "slotNum",
+      "value_type": "puzzle.OBJPuzzleWashSlots",
+      "name": "TBPuzzleWashSlots",
+      "file": "puzzle_tbpuzzlewashslots",
+      "mode": "map"
+    },
+    "125": {
+      "index": "SlotNum",
+      "value_type": "puzzle.OBJPuzzleSlotsWeight",
+      "name": "TBPuzzleSlotsWeight",
+      "file": "puzzle_tbpuzzleslotsweight",
+      "mode": "map"
+    },
+    "126": {
+      "index": "shapeID",
+      "value_type": "puzzle.OBJPuzzleShape",
+      "name": "TBPuzzleShape",
+      "file": "puzzle_tbpuzzleshape",
+      "mode": "map"
+    },
+    "127": {
+      "index": "ID",
+      "value_type": "puzzle.OBJPuzzleInscriptionGroup",
+      "name": "TBPuzzleInscriptionGroup",
+      "file": "puzzle_tbpuzzleinscriptiongroup",
+      "mode": "map"
+    },
+    "128": {
+      "index": "GradeID",
+      "value_type": "puzzle.OBJPuzzleGrade",
+      "name": "TBPuzzleGrade",
+      "file": "puzzle_tbpuzzlegrade",
+      "mode": "map"
+    },
+    "129": {
+      "index": "AttrCombination",
+      "value_type": "puzzle.OBJPuzzleAttrName",
+      "name": "TBPuzzleAttrName",
+      "file": "puzzle_tbpuzzleattrname",
+      "mode": "map"
+    },
+    "130": {
+      "index": "InscriptionId",
+      "value_type": "puzzle.OBJPuzzleInscriptionName",
+      "name": "TBPuzzleInscriptionName",
+      "file": "puzzle_tbpuzzleinscriptionname",
+      "mode": "map"
+    },
+    "131": {
+      "index": "ShapeId",
+      "value_type": "puzzle.OBJPuzzleShapeName",
+      "name": "TBPuzzleShapeName",
+      "file": "puzzle_tbpuzzleshapename",
+      "mode": "map"
+    },
+    "132": {
+      "index": "ID",
+      "value_type": "gem.OBJGemLevelUp",
+      "name": "TBGemLevelUp",
+      "file": "gem_tbgemlevelup",
+      "mode": "map"
+    },
+    "133": {
+      "index": "ID",
+      "value_type": "gem.OBJGemLevelUpAttr",
+      "name": "TBGemLevelUpAttr",
+      "file": "gem_tbgemlevelupattr",
+      "mode": "map"
+    },
+    "134": {
+      "index": "Day",
+      "value_type": "activity.OBJSevenDayLogin",
+      "name": "TBSevenDayLogin",
+      "file": "activity_tbsevendaylogin",
+      "mode": "map"
+    },
+    "135": {
+      "index": "activityID",
+      "value_type": "activity.OBJActivityGeneral",
+      "name": "TBActivityGeneral",
+      "file": "activity_tbactivitygeneral",
+      "mode": "map"
+    },
+    "136": {
+      "index": "activityID",
+      "value_type": "activity.OBJRuleTask",
+      "name": "TBRuleTask",
+      "file": "activity_tbruletask",
+      "mode": "map"
+    },
+    "137": {
+      "index": "ruleInfoID",
+      "value_type": "activity.OBJRuleInfo",
+      "name": "TBRuleInfo",
+      "file": "activity_tbruleinfo",
+      "mode": "map"
+    },
+    "138": {
+      "index": "Id",
+      "value_type": "activity.OBJPandoraInfo",
+      "name": "TBPandoraInfo",
+      "file": "activity_tbpandorainfo",
+      "mode": "map"
+    },
+    "139": {
+      "index": "RowName",
+      "value_type": "rank.OBJRankMode",
+      "name": "TBRankMode",
+      "file": "rank_tbrankmode",
+      "mode": "map"
+    },
+    "140": {
+      "index": "BattlePassID",
+      "value_type": "battlepass.OBJBattlePass",
+      "name": "TBBattlePass",
+      "file": "battlepass_tbbattlepass",
+      "mode": "map"
+    },
+    "141": {
+      "index": "BattlePassID+BattlePassLevel",
+      "value_type": "battlepass.OBJBattlePassReward",
+      "name": "TBBattlePassReward",
+      "file": "battlepass_tbbattlepassreward",
+      "mode": "list"
+    },
+    "142": {
+      "index": "ItemID",
+      "value_type": "battlepass.OBJBattlePassRewardShow",
+      "name": "TBBattlePassRewardShow",
+      "file": "battlepass_tbbattlepassrewardshow",
+      "mode": "map"
+    },
+    "143": {
+      "index": "ID",
+      "value_type": "battlepass.OBJBattlePassTask",
+      "name": "TBBattlePassTask",
+      "file": "battlepass_tbbattlepasstask",
+      "mode": "map"
+    },
+    "144": {
+      "index": "id",
+      "value_type": "gameplay.OBJGenericModifyDialog",
+      "name": "TBGenericModifyDialog",
+      "file": "gameplay_tbgenericmodifydialog",
+      "mode": "map"
+    },
+    "145": {
+      "index": "Index",
+      "value_type": "cheat.OBJLobbyBatchCheat",
+      "name": "TBLobbyBatchCheat",
+      "file": "cheat_tblobbybatchcheat",
+      "mode": "map"
+    },
+    "146": {
+      "index": "Index",
+      "value_type": "cheat.OBJBattleBatchCheat",
+      "name": "TBBattleBatchCheat",
+      "file": "cheat_tbbattlebatchcheat",
+      "mode": "map"
+    }
+  }
+}

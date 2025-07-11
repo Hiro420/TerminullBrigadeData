@@ -1,0 +1,12 @@
+﻿{
+  "1": {
+    "ContentLocMeta": {
+      "InNamespace": "season_TBClimbTowerLobbyAnomaly",
+      "InTextLiteral": "【测试】队伍成员必须使用不同的角色战斗",
+      "InKey": "Content_1"
+    },
+    "AnomalyID": 1,
+    "Remark": "不能有相同英雄",
+    "Params": {}
+  }
+}

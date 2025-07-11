@@ -1,0 +1,1802 @@
+﻿{
+  "20201": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "数据波动日志：在用户奥尔加附近定位到数次异常数据波动，根据数据解析，破译出异常数据的信息为：“臣服于我，我会给你更强大的力量，以及你想要的一切。”",
+      "InKey": "content_20201"
+    },
+    "image": "",
+    "id": 20201,
+    "battleFragmentPropID": 902201,
+    "taskID": 920201,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_ElectronicData_01.Icon_ElectronicData_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "数据波动日志",
+      "InKey": "title_20201"
+    }
+  },
+  "20202": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "在用户奥尔加附近定位到数次异常数据波动，对数据进行解析后重构出以下画面：、奥尔加对抗乔里失败、乔里引发的暴力浪潮席卷全球",
+      "InKey": "content_20202"
+    },
+    "image": "",
+    "id": 20202,
+    "battleFragmentPropID": 902202,
+    "taskID": 920202,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_ElectronicData_01.Icon_ElectronicData_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "影像数据记录",
+      "InKey": "title_20202"
+    }
+  },
+  "20203": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“再一次从噩梦之中惊醒，身上大汗淋漓。自从来到炽热焦土之后，那个该死的噩梦就始终困扰着我。在梦里我看到了自己的失败，我所努力和坚持的一切都随着我的失败而成空。真是该死，我怎么会失败，我是不会失败的。这该死的噩梦再也别想束缚我。我会尽快击败乔里的，我一定会尽快结束这一切……。在这之后，一切就会尘埃落定了。”",
+      "InKey": "content_20203"
+    },
+    "image": "",
+    "id": 20203,
+    "battleFragmentPropID": 902203,
+    "taskID": 920203,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_01.Icon_Diary_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "奥尔加的日志：噩梦",
+      "InKey": "title_20203"
+    }
+  },
+  "20204": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "沙漠鼠联盟成员玛雅：你有没有注意到奥尔加最近的变化？他似乎比以前更加激进了。沙漠鼠联盟成员雷克斯：是啊，奥尔加老大现在做决定都不跟我们商量了。就像是……他被什么东西驱使着似的。沙漠鼠联盟成员玛雅：我听说他在夜里总是在做噩梦。他那渴望力量的眼神，真是让人害怕……沙漠鼠联盟成员雷克斯：这不是我们认识的奥尔加。他曾经是那么的团队精神，现在却……我不知道，他好像什么都不相信了。沙漠鼠联盟成员玛雅：明天我们一起找他谈谈吧。希望他能听进去。",
+      "InKey": "content_20204"
+    },
+    "image": "",
+    "id": 20204,
+    "battleFragmentPropID": 902204,
+    "taskID": 920204,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_06.Icon_Plot_06",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "对话记录：有关奥尔加",
+      "InKey": "title_20204"
+    }
+  },
+  "20205": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "帝谷集团安全数据报告报告编号：地点：绿洲详情：帝谷安全部门在常规检测过程中发现，一股强大的不明数据突然出现在炽热焦土。该数据特征与之前出现在奥尔加附近的数据为同一数据源。目前，安全部门正在与信息技术部门定位数据来源。",
+      "InKey": "content_20205"
+    },
+    "image": "",
+    "id": 20205,
+    "battleFragmentPropID": 902205,
+    "taskID": 920205,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_08.Icon_Plot_08",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "风险数据报告",
+      "InKey": "title_20205"
+    }
+  },
+  "20206": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "帝谷集团的无人机盘旋在炽热焦土的上空记录着乔里与奥尔加的战斗，由于二人的战斗过于激烈，无人机只能在安全距离远远地观望。战斗即将进入尾声，奥尔加与乔里的身形完全被浓烟包围，虽然视线受阻，却丝毫不能影响围观玩家的热情。无论是谁占据了上风，这些鬣狗帮成员都在四周爆发出雷鸣的呼声，不同于沙漠鼠联盟成员为奥尔加提心吊胆，鬣狗帮成员并不在意乔里的安危，他们只忠诚于力量，谁拥有力量，谁就会是下一个“乔里”。从他们狂热的目光之中不难看出，一旦“乔里”失败，很快就会有下一个“乔里”出现。",
+      "InKey": "content_20206"
+    },
+    "image": "",
+    "id": 20206,
+    "battleFragmentPropID": 902206,
+    "taskID": 920206,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_ElectronicData_01.Icon_ElectronicData_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "无人机数据记录",
+      "InKey": "title_20206"
+    }
+  },
+  "10301": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "周一：收容名欠费用户，将其带至转换库植入病毒。名用户均未出现不良反应，通过传输流将目标传至环网单元层。周二：收容名欠费用户，将其带往转换库植入病毒。名用户在转化库发生暴动，已通知应龙武装解决。周三：收容名欠费用户，其中一人在车库自杀。其余人员被带往转化库。名用户出现排异反应，将死亡用户转移至地下车库。其余用户通过传输流传至环网单元层。周四：收容名欠费用户，将其带往转换库植入病毒。名用户出现排异反应，将死亡用户转移至地下车库。其余用户通过传输流传至环网单元层。周五：收容名欠费用户，将其带往转化库植入病毒。名用户出现排异反应，将死亡用户转移至地下车库。其余用户通过传输流传至环网单元层。",
+      "InKey": "content_10301"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg39.Plot_Bg39",
+    "id": 10301,
+    "battleFragmentPropID": 901301,
+    "taskID": 910301,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_03.Icon_Plot_03",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "实验报告（一）",
+      "InKey": "title_10301"
+    }
+  },
+  "10302": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“哼，什么所有人的生命都是平等的，西泽这套文绉绉的词我已经听得烦了，只有掌握资源、掌握财富、掌握权力才能在这个世道活下去，什么所谓的理想乡，不过是他们的臆想而已。看看吧，我们就是活生生的例子，如今我掌握了一切，而他呢？”",
+      "InKey": "content_10302"
+    },
+    "image": "",
+    "id": 10302,
+    "battleFragmentPropID": 901302,
+    "taskID": 910302,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_02.Icon_Diary_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "马尔科姆的日记（四）",
+      "InKey": "title_10302"
+    }
+  },
+  "10303": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“我们已经容忍和退让到了这种地步，但我们的生活变好了吗？自从第三区计划后，想想看他们都对我们做了些什么吧，哭拳已经一落千丈，萧条的只剩下夜游者和贫民，应龙不但不来改善我们的处境，还创造了像鬼魂一样萦绕在我们头顶的第三区。那简直就是噩梦。就连刚学会说话的小孩都知道，第三区是个骗局，那地方就是让人有去无回。天知道应龙会对那些所谓被抓去第三区的人做点什么？我听说有人体实验和改造。现在应龙逮捕的群体范围是非法暴力分子和欠债用户，谁知道以后会抓什么人？也许是你，也许是我。已经没有人能保护我们了，醒醒吧，现在还不晚！”",
+      "InKey": "content_10303"
+    },
+    "image": "",
+    "id": 10303,
+    "battleFragmentPropID": 901303,
+    "taskID": 910303,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_02.Icon_Diary_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "反抗宣言",
+      "InKey": "title_10303"
+    }
+  },
+  "10304": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“这是一个很有意思的现象根据用户不同的上载数据，在病毒植入后，他们会异变成不同的个体，虽然个体有着些许差异，但就现在的结果来看，主要会异变成三类个体：强壮型、隐蔽型、医疗型。对于被病毒植入的群体，我们将其称为夜游者。”",
+      "InKey": "content_10304"
+    },
+    "image": "",
+    "id": 10304,
+    "battleFragmentPropID": 901304,
+    "taskID": 910304,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_03.Icon_Plot_03",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "实验报告（二）",
+      "InKey": "title_10304"
+    }
+  },
+  "10305": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“没错，这些低贱的用户根本就不配享有权利，让他们呼吸新鲜的空气已经是便宜他们了，他们就应该被我控制，成为夜游者，无条件服从我的命令。服从，服从，服从，服从……”接下来的内容密密麻麻地写着“服从”两个字，而笔记也变得越来越扭曲……",
+      "InKey": "content_10305"
+    },
+    "image": "",
+    "id": 10305,
+    "battleFragmentPropID": 901305,
+    "taskID": 910305,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_02.Icon_Diary_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "马尔科姆的日记（五）",
+      "InKey": "title_10305"
+    }
+  },
+  "10306": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“根据马尔科姆的指示，我们已经将夜游者投放至哭拳街、绘世街等区域，这一切都是为了能够更好地实行第三区计划……”",
+      "InKey": "content_10306"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg36.Plot_Bg36",
+    "id": 10306,
+    "battleFragmentPropID": 901306,
+    "taskID": 910306,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_03.Icon_Plot_03",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "投放记录",
+      "InKey": "title_10306"
+    }
+  },
+  "10307": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "报告类型：机密报告内容：目前有越来越多的用户开始反抗应龙公司的管理，他们甚至聚集在中心塔与公司附近抗议请指示如何处理。马尔科姆：把他们全部抓起来吧，一堆无关紧要的小虫子。",
+      "InKey": "content_10307"
+    },
+    "image": "",
+    "id": 10307,
+    "battleFragmentPropID": 901307,
+    "taskID": 910307,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_ElectronicData_02.Icon_ElectronicData_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "机密报告",
+      "InKey": "title_10307"
+    }
+  },
+  "10308": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "欲望才会使人进步。从原始丛林到钢筋丛林，从呱呱坠地到老态龙钟。无论渺小还是伟大、欲望贯穿着人类文明之中。只有不受约束，才能拥有真正自由的权力。“信奉我吧，我将满足你的欲望。”",
+      "InKey": "content_10308"
+    },
+    "image": "",
+    "id": 10308,
+    "battleFragmentPropID": 901308,
+    "taskID": 910308,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_02.Icon_Diary_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "神秘数据",
+      "InKey": "title_10308"
+    }
+  },
+  "20101": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "年，由帝谷集团研发的炽热焦土在矩阵中正式上线，作为一款主打生存夺宝的虚拟世界，帝谷集团将炽热焦土的背景设定在废土之中，任何自然资源在炽热焦土都成为了炙手可热的奢侈品，而玩家们的终极目标就是成为最后的幸存者，并赢取巨额奖金。巨额奖金意味着一夜间跨越阶层，从此过上梦想中的新生活，名声、地位、钱，应有尽有。而这一切，只需要在每年的竞赛中成为最终赢家。为此，帝谷旗下的寰宇通讯对炽热焦土全程直播，在帝谷集团的影响力下，炽热焦土很快就成为了全世界观看与付费率排名第一的虚拟现实节目。",
+      "InKey": "content_20101"
+    },
+    "image": "",
+    "id": 20101,
+    "battleFragmentPropID": 902101,
+    "taskID": 920101,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_04.Icon_Plot_04",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "炽热焦土企划案",
+      "InKey": "title_20101"
+    }
+  },
+  "20102": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "呼啸而奔驰的列车，围绕炽热焦土不间断地行驶。这是所有上载到矩阵中的用户进入炽热焦土的第一站，作为世界上最成功的商业项目，这辆永不停歇的火车负责将每一个参赛者送入炽热焦土，由于其代表了希望之旅的开端，因此也被称为希望列车。每到赛季开始时，便可看到成千上万位狂热的参赛者怀揣着一夜暴富的梦想与激情嘶吼着，狂叫着，拥挤着冲出列车，前往荒漠深处追寻神秘的宝藏与无限的名气。",
+      "InKey": "content_20102"
+    },
+    "image": "",
+    "id": 20102,
+    "battleFragmentPropID": 902102,
+    "taskID": 920102,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_07.Icon_Plot_07",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "炽热焦土生存手册：列车",
+      "InKey": "title_20102"
+    }
+  },
+  "20103": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "没错，咱就是说，就像你们见到的那样，这个大火车现在属于鬣狗帮了！什么狗屁希望列车，告诉你们吧，在这里，服从鬣狗帮就是唯一的希望！看到那些其他的工会了吗，和鬣狗帮作对的下场就是被我们全部打烂！如果你们想反抗的话，我很乐意驾驶着大火车把你们的营地全部都碾成碎片！【附录】：你们就算不反抗，我们也会驾驶着大火车把你们的营地碾成碎片。【还是附录】：以后每隔三天，我们就要驾驶着大火车到处抢抢抢，你们最好提前准备好你们的钱和资源。【又一个附录】：对了，以后大火车叫作地狱鬣犬号了！",
+      "InKey": "content_20103"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg24.Plot_Bg24",
+    "id": 20103,
+    "battleFragmentPropID": 902103,
+    "taskID": 920103,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_01.Icon_Diary_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "散落的通知单",
+      "InKey": "title_20103"
+    }
+  },
+  "20104": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "为了打造，鬣狗帮在炽热焦土内展开了一场又一场的劫掠行动，就连沙漠鼠联盟也没能幸免，那时的我们还没有意识到鬣狗帮疯狂行动背后的目的，直到在火车上的登场，才让我们明白鬣狗帮制造出了一个强大而又凶残的机械野兽。自从有了以后，鬣狗帮的袭击就越来越频繁了，而每次掠夺的材料装置都会再一次强化的配置，如此强大的火力正是鬣狗帮能够在炽热焦土横行霸道的原因，不过他们并不知道什么才是真正的力量，等着看吧，我一定会收拾掉这群蠢货的。",
+      "InKey": "content_20104"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg19.Plot_Bg19",
+    "id": 20104,
+    "battleFragmentPropID": 902104,
+    "taskID": 920104,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_04.Icon_Plot_04",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "奥尔加日志：",
+      "InKey": "title_20104"
+    }
+  },
+  "20105": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "绵延而又广阔的荒原之中隐藏着无数的财宝，这里被称为炽热焦土的动脉，如果你曾经去到达过荒原，或许便会了解其中的含义。和炽热焦土的其他区域相似，荒原也有其不为人知的另一面，在夜晚，月光指引着玩家前往各处的补给站恢复体力，然而静谧与夜色也为暗杀提供了无声的庇护。到了白日，当太阳升起的第一刻起，这里将会化作汹涌的战场，各个工会的玩家汇集于此，以或光明或阴暗的手段梦想着扬名立万。",
+      "InKey": "content_20105"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg30.Plot_Bg30",
+    "id": 20105,
+    "battleFragmentPropID": 902105,
+    "taskID": 920105,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_01.Icon_Diary_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "炽热焦土生存手册：荒原",
+      "InKey": "title_20105"
+    }
+  },
+  "20106": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "如今的荒原和之前已经完全不同了，在那场影响深远的病毒入侵事件之后，荒原为数不多的建筑也随之被一同摧毁，由于帝谷集团的失联，荒原已经彻底失去控制，沦为暴力和血腥的集会，如今再也没有人能够制衡日渐疯狂的鬣狗帮，为了强化自己的武器，他们大肆追捕帝谷投放的小机器人们大量小机器人将荒原作为避难所……这一切必须得到制止。",
+      "InKey": "content_20106"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg31.Plot_Bg31",
+    "id": 20106,
+    "battleFragmentPropID": 902106,
+    "taskID": 920106,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_04.Icon_Plot_04",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "奥尔加日志：荒原",
+      "InKey": "title_20106"
+    }
+  },
+  "10201": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "一份雇佣杀手的订单。内容为雇佣杀手影刃来到环都抢夺西泽的机密文件。",
+      "InKey": "content_10201"
+    },
+    "image": "",
+    "id": 10201,
+    "battleFragmentPropID": 901201,
+    "taskID": 910201,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_01.Icon_Plot_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "雇佣订单",
+      "InKey": "title_10201"
+    }
+  },
+  "10202": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "在西泽死亡前夕，马尔科姆的账户中出现了多笔大额的转账记录。",
+      "InKey": "content_10202"
+    },
+    "image": "",
+    "id": 10202,
+    "battleFragmentPropID": 901202,
+    "taskID": 910202,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_03.Icon_Plot_03",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "转账记录",
+      "InKey": "title_10202"
+    }
+  },
+  "10203": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "根据应龙公司的员工爆料，西泽与马尔科姆在应龙公司内部已然势同水火。理想主义的西泽与锐意进取的马尔科姆无时无刻不在爆发激烈的争吵。以下为该员工透漏出的对话记录：马尔科姆：你到底在想什么！难道要把所有人都逼疯你才满意吗？西泽：人人平等，对你就那么困难吗？马尔科姆：人人平等，就代表没有人平等，这个世界上从来就没有绝对的公平！西泽：真是可惜，我原本以为我们的想法是一致的，现在看来，你和那些只注重自我利益的人没有差别。马尔科姆：走着瞧吧，你会知道什么是失败的。",
+      "InKey": "content_10203"
+    },
+    "image": "",
+    "id": 10203,
+    "battleFragmentPropID": 901203,
+    "taskID": 910203,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_02.Icon_Plot_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "《小报：上层的争吵》",
+      "InKey": "title_10203"
+    }
+  },
+  "10204": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“西泽这个蠢货，空长着一个聪明的脑袋，却根本不懂什么叫作公司，什么叫做资本！居然还搞了一个无相来控制一切，如果按照他那样做，人人都是平等的，那么大家哪里来的进步动力？谁又会想着奋斗和拼搏，社会的发展从来都不是靠他所设想的那样发展的，在这个世界上一定要有人立于顶点，而这个人，只能是我！”",
+      "InKey": "content_10204"
+    },
+    "image": "",
+    "id": 10204,
+    "battleFragmentPropID": 901204,
+    "taskID": 910204,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_02.Icon_Diary_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "马尔科姆的日记（一）",
+      "InKey": "title_10204"
+    }
+  },
+  "10205": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "操作记录：破解阶段开始破解西泽的上载密钥……密钥破解成功。进入下一步。数据访问阶段使用密钥访问上载数据……数据访问成功。是否确认删除？已确认删除。删除数据阶段确认执行删除操作……西泽的上载数据已删除。",
+      "InKey": "content_10205"
+    },
+    "image": "",
+    "id": 10205,
+    "battleFragmentPropID": 901205,
+    "taskID": 910205,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_ElectronicData_02.Icon_ElectronicData_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "操作记录",
+      "InKey": "title_10205"
+    }
+  },
+  "10206": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“这就是天赐的良机，矩阵已经完全和现实世界失联，那些烦人的帝谷集团运营不见了，西泽也死了，没有人能够再阻止我了！”",
+      "InKey": "content_10206"
+    },
+    "image": "",
+    "id": 10206,
+    "battleFragmentPropID": 901206,
+    "taskID": 910206,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_02.Icon_Diary_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "马尔科姆的日记（二）",
+      "InKey": "title_10206"
+    }
+  },
+  "10207": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "在病毒入侵之后，马尔科姆借助应龙公司这个强有力的推手在环都实行了一系列经济手段：·重新划定土地的所有权，将所有土地按照使用类型分类，并统归应龙公司管理。·取消环都对各个企业的补贴和保护措施，并确定了自由市场的建立。·推动一系列利于大企业的政策，如降低企业税率、放宽对大型企业并购的限制。随着时间的推移，越来越多的小公司因为无法承受财务压力和市场竞争而倒闭，中等规模的企业也被迫出售或被并购。最终，环都世界的商业版图被彻底重塑，只剩下了应龙公司这一庞大的企业集团。除了原本的安保产业，应龙公司几乎控制了环都世界的所有重要资源和产业，成为了无可争议的商业霸主。",
+      "InKey": "content_10207"
+    },
+    "image": "",
+    "id": 10207,
+    "battleFragmentPropID": 901207,
+    "taskID": 910207,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_02.Icon_Plot_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "经济改革（一）",
+      "InKey": "title_10207"
+    }
+  },
+  "10208": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "在马尔科姆主导的垄断体系下，普通用户在环都世界中的生活变得越来越艰难。由于应龙公司几乎控制了所有资源和产业，普通用户失去了在市场中公平竞争的机会。他们面临着高昂的生活成本和有限的经济机会，这导致了社会不平等的加剧。",
+      "InKey": "content_10208"
+    },
+    "image": "",
+    "id": 10208,
+    "battleFragmentPropID": 901208,
+    "taskID": 910208,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_02.Icon_Plot_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "经济改革（二）",
+      "InKey": "title_10208"
+    }
+  },
+  "10209": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“该死的西泽，居然给无相设置了最高管理权限，没想到他做得那么绝，就连他自己都没有对于无相的控制权，看来想要获取无相的管理权限，必须要用一些特殊的办法了。”",
+      "InKey": "content_10209"
+    },
+    "image": "",
+    "id": 10209,
+    "battleFragmentPropID": 901209,
+    "taskID": 910209,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_02.Icon_Diary_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "马尔科姆的日记（三）",
+      "InKey": "title_10209"
+    }
+  },
+  "10210": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "报告类型：关于对目标无相神经植入病毒研究日志报告内容：内容已被锁定，可被检阅部分如下在马尔科姆的指示下，技术小组试图使用病毒覆盖无相的数据，目前已经取得了初步成效我们可以在某种程度上控制无相，作为应龙安保的管理中枢，现在应龙安保的管理权限已经归于马尔科姆。但该实验仍然存在不足，首先是无相本身的数据过于复杂，病毒必须持续覆写，预计还会持续一段时间，目前已经将无相转移至压制场内。",
+      "InKey": "content_10210"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg40.Plot_Bg40",
+    "id": 10210,
+    "battleFragmentPropID": 901210,
+    "taskID": 910210,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_03.Icon_Plot_03",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "研发日志（一）",
+      "InKey": "title_10210"
+    }
+  },
+  "10211": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“由于无相的失控，受无相管理的应龙安保也出现了离线状态，好在我们启动了应急方案，避免了一系列的问题，目前应龙安保的管理权限已经由无相转接至马尔科姆。”",
+      "InKey": "content_10211"
+    },
+    "image": "",
+    "id": 10211,
+    "battleFragmentPropID": 901211,
+    "taskID": 910211,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_03.Icon_Plot_03",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "研发日志（二）",
+      "InKey": "title_10211"
+    }
+  },
+  "10212": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“亲爱的市民们，我们注意到环都出现了部分名为夜游者的不明群体，经调查，夜游者群体是被病毒感染的异化用户，为了维护环都的秩序以及保障用户安全，根据最高指示，应龙武装部门将实行第三区计划，该计划会集中清剿夜游者，同时将有感染风险的用户带入第三区接受治疗。请各位市民保持配合，以免造成不必要的损失”",
+      "InKey": "content_10212"
+    },
+    "image": "",
+    "id": 10212,
+    "battleFragmentPropID": 901212,
+    "taskID": 910212,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_01.Icon_Plot_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "应龙公告：第三区计划",
+      "InKey": "title_10212"
+    }
+  },
+  "20119": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "奥尔加登记在炽热焦土的上载档案：姓名：奥尔加·斯特朗昵称：奥尔加性别：男年龄：性格：坚韧不拔、偏执",
+      "InKey": "content_20119"
+    },
+    "image": "",
+    "id": 20119,
+    "battleFragmentPropID": 902119,
+    "taskID": 920119,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_ElectronicData_01.Icon_ElectronicData_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "上载档案：奥尔加",
+      "InKey": "title_20119"
+    }
+  },
+  "20120": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "散落在炽热焦土庞大的数据库中的通话数据，来源似乎是奥尔加与某位沙漠鼠联盟成员的对话：沙漠鼠联盟成员：奥尔加，你最近怎么了？看起来很疲惫。奥尔加：没事我只是常常陷入一些幻象一些不好的幻象。沙漠鼠联盟成员：你的压力太大了，放轻松些，乔里那家伙绝对不是你的对手。奥尔加：嗯……我只是在担心，万一我输了会怎么办？沙漠鼠联盟成员：嘿，不必担心，这不过是一场游戏而已。奥尔加：不这并不是一场游戏，正如幻象展现的那样，我必须阻止乔里……终结他所犯下的罪行。",
+      "InKey": "content_20120"
+    },
+    "image": "",
+    "id": 20120,
+    "battleFragmentPropID": 902120,
+    "taskID": 920120,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_ElectronicData_01.Icon_ElectronicData_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "通讯数据记录：奥尔加",
+      "InKey": "title_20120"
+    }
+  },
+  "20121": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "乔里所引发的暴力浪潮已经蔓延到了全世界的各个角落，这暴力像沙尘暴一样，吞噬了我们的平静。我能看到受害者的眼睛。他们想要和平。然而人人都把它当做一场终将结束的沙尘，却没有人选择勇敢地直面。我发誓，我会亲手终结这场闹剧。我们不是为了战斗而战斗，我们是为了一个没有恐惧、没有暴力的世界而战。",
+      "InKey": "content_20121"
+    },
+    "image": "",
+    "id": 20121,
+    "battleFragmentPropID": 902121,
+    "taskID": 920121,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_01.Icon_Diary_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "奥尔加的日志：暴力浪潮",
+      "InKey": "title_20121"
+    }
+  },
+  "20122": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "鬣狗帮工会在炽热焦土的申请记录：工会名称：鬣狗帮会长：乔里工会宗旨：在炽热焦土中成为最具势力的组织。成员背景：职业猎人、匪徒，所有强大的玩家。活动范围：炽热焦土及其周边地区，不断扩张领土和影响力。工会规则：忠诚于工会，团结一致对抗外敌。积极参与工会活动，包括领地争夺、资源掠夺等。服从高级成员，但每个成员都有机会依靠实力和功绩上升。工会目标：吞并所有帮派！干掉所有人！",
+      "InKey": "content_20122"
+    },
+    "image": "",
+    "id": 20122,
+    "battleFragmentPropID": 902122,
+    "taskID": 920122,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_06.Icon_Plot_06",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "工会申请记录：鬣狗帮",
+      "InKey": "title_20122"
+    }
+  },
+  "20123": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "全球犯罪率数据记录：年，全球犯罪率为每万人中有起犯罪事件，比年下降了。年，全球犯罪率为每万人中有起犯罪事件，比年下降了。年，全球犯罪率为每万人中有起犯罪事件，比年上升了。备注：在炽热焦土节目播出之后，全球犯罪率出现了大幅增长，犯罪事件主要包括人际暴力、土地资源争夺的暴力冲突、帮派间的领土或控制权争斗，以及武装团体的掠夺性暴力和屠杀。虽无严谨的数据指出全球犯罪事件飙升与炽热焦土节目的播出有关，但社会普遍认为是乔里及其麾下的鬣狗帮引发了全球范围的暴力浪潮。",
+      "InKey": "content_20123"
+    },
+    "image": "",
+    "id": 20123,
+    "battleFragmentPropID": 902123,
+    "taskID": 920123,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_09.Icon_Plot_09",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "犯罪记录",
+      "InKey": "title_20123"
+    }
+  },
+  "20124": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "俗话说，太阳底下没有新鲜事，看来这句话在炽热焦土并不适用。鬣狗帮，这个曾让整个炽热焦土颤抖的帮会现在也遇到了真正的挑战。由奥尔加率领的沙漠鼠联盟啃下了一场又一场硬仗，居然一跃成为了炽热焦土第二强大的帮会，仅在上个星期就有超过的用户选择加入沙漠鼠联盟。不过这个势头还能保持多久呢？",
+      "InKey": "content_20124"
+    },
+    "image": "",
+    "id": 20124,
+    "battleFragmentPropID": 902124,
+    "taskID": 920124,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_08.Icon_Plot_08",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "焦土小报：棋逢对手",
+      "InKey": "title_20124"
+    }
+  },
+  "20125": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "那家伙是个不折不扣的混蛋，自大，狂妄，一开始我就看出来了，毋庸置疑，鬣狗帮的崛起是早晚的事。现在乔里率领着鬣狗帮的主力军团，在炽热焦土内乱抢乱砸，真是没有追求他最好别老招惹我们，否则我要把他的车拆个稀巴烂，再狠狠揍他一顿。",
+      "InKey": "content_20125"
+    },
+    "image": "",
+    "id": 20125,
+    "battleFragmentPropID": 902125,
+    "taskID": 920125,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_01.Icon_Diary_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "奥尔加的日志：乔里",
+      "InKey": "title_20125"
+    }
+  },
+  "20126": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "沙漠鼠联盟工会在炽热焦土的申请记录：工会名称：沙漠鼠联盟会长：奥尔加工会宗旨：在炽热焦土中建立和维护良好的秩序和规则，通过友谊和团结对抗暴力和不公。成员背景：来自炽热焦土的冒险家、以及其他生存者。活动范围：以小镇为据点，致力于恢复和维护小镇的秩序，以及扩展联盟的影响力。工会规则：成员间保持良好的友谊和互助精神。遵守和维护工会内部的秩序和规则。团结一致，共同对抗外部威胁和过度暴力现象。工会目标：重建和维护小镇的和平与秩序。对抗鬣狗帮等外部势力的侵略和暴行。",
+      "InKey": "content_20126"
+    },
+    "image": "",
+    "id": 20126,
+    "battleFragmentPropID": 902126,
+    "taskID": 920126,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_06.Icon_Plot_06",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "工会申请记录：沙漠鼠联盟",
+      "InKey": "title_20126"
+    }
+  },
+  "20127": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "格罗莉亚登记在炽热焦土的上载档案：姓名：格罗莉亚性别：女年龄：性格：古灵精怪、调皮捣蛋。",
+      "InKey": "content_20127"
+    },
+    "image": "",
+    "id": 20127,
+    "battleFragmentPropID": 902127,
+    "taskID": 920127,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_ElectronicData_01.Icon_ElectronicData_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "上载档案：格罗莉亚",
+      "InKey": "title_20127"
+    }
+  },
+  "20128": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "沙漠鼠联盟雷克斯：你听说了吗？那个新加入的小鬼格罗莉亚，她居然做到了！沙漠鼠联盟玛雅：真是难以置信！一个小孩子，竟然能发明出那么多机器人。沙漠鼠联盟雷克斯：对啊，她的机器人军团把鬣狗帮打得落花流水。我还以为我们完了呢。沙漠鼠联盟玛雅：她不仅救了沙漠鼠联盟，还让我们重新看到了希望没有奥尔加的日子可太难过了。沙漠鼠联盟雷克斯：我们得好好感谢格罗莉亚，也许是时候给她的机器人们升级一下了。",
+      "InKey": "content_20128"
+    },
+    "image": "",
+    "id": 20128,
+    "battleFragmentPropID": 902128,
+    "taskID": 920128,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_04.Icon_Plot_04",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "对话记录：有关格罗莉亚",
+      "InKey": "title_20128"
+    }
+  },
+  "20129": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "公告：决斗结果：乔里绿洲击败奥尔加。我们对参赛者的努力表示敬意，并祝贺乔里的胜利。帝谷集团承诺将持续提供公平的竞技环境，并期待大家踊跃参加炽热焦土的各类活动。",
+      "InKey": "content_20129"
+    },
+    "image": "",
+    "id": 20129,
+    "battleFragmentPropID": 902129,
+    "taskID": 920129,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_04.Icon_Plot_04",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "运营公告",
+      "InKey": "title_20129"
+    }
+  },
+  "20130": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "第一段：犹豫！纠结！烦！到底应该加入鬣狗帮还是沙漠鼠联盟呢？这两个工会都强得离谱，不过沙漠鼠联盟似乎对新人比较友好，但是鬣狗帮的装备和武器又比较厉害第二段：太好了！奥尔加和乔里马上就要开战了，到时候谁赢了我就加入谁的工会！第三段：真是没人想得到，奥尔加居然栽在了乔里的手里！奥尔加一输，沙漠鼠联盟被鬣狗帮围猎得像是一群无头苍蝇。我决定好了，投靠鬣狗帮！跟着胜利者跑才有未来。看着那些跟我一样的家伙们，我们都知道鬣狗帮才是未来的霸主。至于沙漠鼠联盟？哼，他们已经过气了，没人会把赌注放在一个没落的工会上。",
+      "InKey": "content_20130"
+    },
+    "image": "",
+    "id": 20130,
+    "battleFragmentPropID": 902130,
+    "taskID": 920130,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_06.Icon_Plot_06",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "某个玩家的日志",
+      "InKey": "title_20130"
+    }
+  },
+  "10101": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "欢迎来到环都！环都是由帝谷集团倾力打造的全球顶尖虚拟现实项目，致力于为用户提供一个真实、自由、无限可能的虚拟未来都市。在这里，您可以：平等生活，突破束缚无论您是谁，无论您来自何方，环都都为您提供了一个平等的舞台。在这里，您可以自由地展现自己的风采，无需担心现实世界的限制。沉浸式虚拟都市，感受未来生活环都世界以先进的虚拟现实技术，为所有用户打造出一个栩栩如生的未来都市。每个角落都充满了平等和机会，让您可以公平地享受每一次探索。突破现实桎梏，尽享精彩娱乐在环都，娱乐和乐趣不再受限于您的社会地位或背景。每个人都可以在这里找到属于自己的乐趣，享受公平的娱乐体验。环都，是您实现梦想、体验未来的理想平台。立即加入环都，开启您的未来都市新生活！",
+      "InKey": "content_10101"
+    },
+    "image": "",
+    "id": 10101,
+    "battleFragmentPropID": 901101,
+    "taskID": 910101,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_02.Icon_Plot_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "环都：理想人生，无限可能！",
+      "InKey": "title_10101"
+    }
+  },
+  "10102": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "混乱与秩序，物质的贫困和精神的富足，死亡与新生，压抑和希望这注定是一个矛盾的区域，无家可归的流浪汉在篝火旁举起酒杯，借着夜色掩饰身形的地下武装人员在暗处潜行，走私犯和正义的热血青年共同生活在这片土地上。它曾繁华热闹，如今却在一系列经济政策的调整中逐渐凋零。哭拳，一个曾有过辉煌历史的名字，尽管往日不复，但仍然散发着一股吸引人靠近的魅力。这是最靠近工业心脏地带的地区，曾以繁忙的空中码头和繁荣的贸易而著名。上层地区的巨型企业在哭拳周围纷纷设立厂区，并派遣应龙的安保部队镇守价值不菲的工厂和货仓，曾一度工业竞争剧烈。工业的繁荣也带来了商业的兴盛，伴随着厂区人口的聚集和增多，渐渐，哭拳街兴起，迎来了琳琅满目的店铺和各色货品。然而，这一切繁荣都伴随着应龙公司的经济政策调整而萧条。如今，由于上下层区之间的冲突激烈、夜游者四处肆虐等众所周知的原因，大多数厂房都已人去楼空，沦为非法暴力分子的聚集地，曾灯火通明的哭拳街也逐渐冷清起来，沦为底层犯罪和堕落的温床。",
+      "InKey": "content_10102"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg11.Plot_Bg11",
+    "id": 10102,
+    "battleFragmentPropID": 901102,
+    "taskID": 910102,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_01.Icon_Plot_01",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "哭拳地区萧条史",
+      "InKey": "title_10102"
+    }
+  },
+  "10103": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "欢迎收看第一热线频道，现在为您带来哭拳街本地新闻。据悉，截至月日，目前已有起聚集性暴乱事件在哭拳地区发生，这些活动目前都是违法行为，并已被应龙安保镇压。环都哭拳地区的暴乱群体和应龙公司的冲突由来已久，该争端在一周前剧烈爆发，当时应龙武装为了强化哭拳地区的秩序维护工作，对哭拳通往外部的主干道进行了交通管制，但是那些无视应龙管理条例的违法暴乱分子非法攻击应龙武装，导致双方爆发了激烈冲突。结果是在这场混乱的暴力行为中，失踪人数高达人，后续又有名失踪人员被上报。目前，应龙公司已经在哭拳地区部署了更多的战略压制小队以维持哭拳地区的安危。",
+      "InKey": "content_10103"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg10.Plot_Bg10",
+    "id": 10103,
+    "battleFragmentPropID": 901103,
+    "taskID": 910103,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_03.Icon_Plot_03",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "新闻报道——第一热线频道",
+      "InKey": "title_10103"
+    }
+  },
+  "10104": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "绘世街曾经是环都的象征，它不仅包含琳琅满目的商铺，也有潮流动感的娱乐项目。但是如今，在马尔科姆的操盘下，大部分属于绘世街的荣光都被夺走，于是绘世街陷入了短暂的萧条，但是虚拟世界最不缺的就是人，很快绘世街就以自己的方式重新恢复了生命力。现在的绘世街拥挤的巷子中充斥着廉价的店面以及刺眼霓虹灯所组成的酒吧，人们在此处寻欢作乐，醉生梦死。然而热闹只是这里的表层，人们在这里交织着现实和虚拟，沉醉于音乐、光影和数字的交错之中。绘世街成为了一颗璀璨明星，吸引着那些渴望逃离现实的灵魂。",
+      "InKey": "content_10104"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg07.Plot_Bg07",
+    "id": 10104,
+    "battleFragmentPropID": 901104,
+    "taskID": 910104,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_02.Icon_Diary_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "绘世街旅游指南（一）",
+      "InKey": "title_10104"
+    }
+  },
+  "10105": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "关于绘世街有数不胜数的故事，不过有一句谚语总结得好：“你要不就没去过绘世街，要不就会去无数次。”作为环都下层首屈一指的街道，这里的音响播放着全环都最时兴的摇滚，这里的灯光氛围恰到好处，这里的客人既有寻欢作乐者，也有失意旅人，而无论是哪一种人，总能在这里找到归属。然而，不知从何时起，绘世街内出现了许多来历不明的人，尽管是酩酊大醉的醉汉也能看出他们与这里格格不入，但就算是最聪明的人也无法探查到他们的来历。或许绘世街从一开始就没有如此纯粹，但是，谁关心呢？在这个今天生明天死的世道，还是一醉方休吧，干杯，敬生者。",
+      "InKey": "content_10105"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg08.Plot_Bg08",
+    "id": 10105,
+    "battleFragmentPropID": 901105,
+    "taskID": 910105,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_02.Icon_Diary_02",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "绘世街旅游指南（二）",
+      "InKey": "title_10105"
+    }
+  },
+  "10106": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "欢迎收看应龙新闻。早些时候，令人尊重的应龙公司创始人马尔科姆宣布中心塔正式上线，以下为马尔科姆先生的演讲实录：“亲爱的环都居民们，我在此正式向你们宣布——环都的象征，中心塔正式上线！经过应龙科研部门的不懈努力，终于使这一历史性的任务圆满成功！”面对部分居民的误解，马尔科姆先生也给出以下答复：“这种说法毫无依据，中心塔绝不是什么天堑，而是代表了环都的美好与繁荣！当你们仰望天空时，看到雄伟的塔顶与城市，难道不足以激发起你们的热情吗？所以为了自己，好好奋斗吧！”",
+      "InKey": "content_10106"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg32.Plot_Bg32",
+    "id": 10106,
+    "battleFragmentPropID": 901106,
+    "taskID": 910106,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_02.Icon_Plot_02",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "新闻热点：马尔科姆有关中心塔的演讲",
+      "InKey": "title_10106"
+    }
+  },
+  "10107": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“中心塔，光是提起这个名字我就不自觉生出了敬畏之心。这是一座多么伟大的建筑？或许你看不到天空，看不到星空，但只要你身处环都，就一定看得到壮丽的中心塔。中心塔是环都的基石，也是全体用户的憧憬，我简直不敢想象如果有一天看不到中心塔的日子！愿中心塔永远矗立！”",
+      "InKey": "content_10107"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg17.Plot_Bg17",
+    "id": 10107,
+    "battleFragmentPropID": 901107,
+    "taskID": 910107,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_02.Icon_Diary_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“伟大的中心塔”——都市夜谈",
+      "InKey": "title_10107"
+    }
+  },
+  "10108": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "应龙的使命是让所有人过上理想人生！我们旨在为企业和个人创造更美好的未来，点燃生命的火花。为此，我们致力于提供更优渥的工作待遇、更健康自然的生活环境、更健全的医疗保障、更先进的教育和文化。我们为环都的运转提供强力支持，业务范围包括安全保卫、本地生活服务、商业贸易、交通运输、城市建设、教育医疗、银行、媒体娱乐、创新业务等多个领域。我们的愿景是共同建设乌托邦美好环都，让每一个居民都能够心满意足地工作、生活。我们相信人类在科技、未来和理想之间可以和谐共生，因此，我们致力于为人类创造更美好的生活环境和更加繁荣的未来。我们的核心价值观是合作、创新、服务、责任和卓越，这些价值观贯穿于我们的业务运营和公司文化之中。作为一个充满活力、不断发展的企业，应龙公司将继续推动科技、文化和商业的发展，为人类的未来贡献力量。",
+      "InKey": "content_10108"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg14.Plot_Bg14",
+    "id": 10108,
+    "battleFragmentPropID": 901108,
+    "taskID": 910108,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_02.Icon_Plot_02",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "应龙：您的理想打造者",
+      "InKey": "title_10108"
+    }
+  },
+  "10109": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "无人能知晓，究竟是何等的智慧和力量让马尔科姆凭一己之力引领起惊天之变革，彻底改变了环都的历史。如今，我们能安居乐业，健康而有尊严地生活在绝对安全、远离犯罪和贫穷的土地上，都依赖于马尔科姆当初的决策。“不能完全相信人性，我们必须把劣等的那一部分排除在外。”犹记得当年新政策颁布时，马尔科姆睿智而清醒的发言。历史证明，马尔科姆的判断是明智的。看看如今下层区混乱、贫穷且充斥着犯罪的现状吧，劣等居民的人性之恶暴露无遗。",
+      "InKey": "content_10109"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg15.Plot_Bg15",
+    "id": 10109,
+    "battleFragmentPropID": 901109,
+    "taskID": 910109,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_02.Icon_Diary_02",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "应龙：腾飞之龙【第三章节选】",
+      "InKey": "title_10109"
+    }
+  },
+  "10110": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "记者：欢迎大家收看今天的专访节目。很荣幸邀请到了环都的创始人之一，西泽先生。西泽：你好。记者：环都作为首批虚拟数字星球之一，吸引了全球大量用户。请问，环都是如何诞生的呢？西泽：环都世界的诞生源于我对一个更美好社会的渴望。现实生活中，我们面对着支离破碎的国际秩序、疏离的人际关系，社会暴力和物价飞涨让人们痛苦不堪。我一直梦想着创造一个没有战争、歧视、人人平等的宜居城市。环都正是脱胎于这个梦想。记者：您提到了“平等”，这在环都世界中非常重要。那么，您是如何实现这一理念的呢？西泽：我们采用了程序分析的手段，避免了人为偏差。由无相负责管理一切。实现完全的平等管理。记者：那么，您对环都世界的未来有何期许？西泽：我希望环都能成为一个美好的家园，人们自由自在追求梦想。无论是艺术家、工程师、医生还是普通劳动者，每个人都能在这里找到属于自己的幸福。",
+      "InKey": "content_10110"
+    },
+    "image": "",
+    "id": 10110,
+    "battleFragmentPropID": 901110,
+    "taskID": 910110,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_02.Icon_Plot_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "采访摘编：西泽的理想主义",
+      "InKey": "title_10110"
+    }
+  },
+  "10111": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "应龙公司致力于维护公平竞争和城市治安，为了维护环都的城市稳定，我们自豪地宣布，一项革命性的安全服务——应龙安保，将在半个月后发售。应龙安保利用最先进的技术，为环都的居民提供了一个安全稳定的环境，确保每个人都能在一个公正无私的平台上生活和工作。应龙安保的特点包括：先进监控系统：全天候监控，实时数据分析，快速响应任何安全威胁。公正执行：确保所有用户都受到相同的保护，无论身份地位。智能预防措施：通过预测性分析预防犯罪，减少不公平竞争行为。紧急响应团队：专业的安保团队随时待命，处理任何紧急情况。应龙安保不仅仅是一个安保服务，它代表了我们对公平和正义的承诺。选择应龙安保，就是选择一个更加安全、公平的环都。让我们携手共创一个和谐的环都。",
+      "InKey": "content_10111"
+    },
+    "image": "",
+    "id": 10111,
+    "battleFragmentPropID": 901111,
+    "taskID": 910111,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_01.Icon_Plot_01",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "应龙武装——公平的维护者",
+      "InKey": "title_10111"
+    }
+  },
+  "10112": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "【公告】在运营初期，我们遭遇了一系列挑战，这些挑战考验着我们对公平和平等的承诺。首先，用户数量的迅速增长超出了我们的预期，这导致了服务器的不稳定甚至崩溃。我们的技术团队不得不夜以继日地工作，以确保每位用户都能获得应有体验。此外，我们还发现了一些用户在环都中进行恶意的不公平竞争。这些行为不仅破坏了环都应有的公平环境，也严重损害了其他用户的利益。尽管面临这些困难，我们仍然坚持我们的愿景，即创建一个每个人都能享受公平和平等机会的虚拟世界。我们相信，通过不懈努力和持续改进，环都能够成为一个真正意义上的公平和平等。感谢您的支持和理解，让我们一起努力，克服挑战，共创美好未来。",
+      "InKey": "content_10112"
+    },
+    "image": "",
+    "id": 10112,
+    "battleFragmentPropID": 901112,
+    "taskID": 910112,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_03.Icon_Plot_03",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "运营公告",
+      "InKey": "title_10112"
+    }
+  },
+  "10113": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "在环都运营初期，恶意竞争和混乱充斥着这座未来都市。而两个名不见经传的穷小子，凭借着远见卓识，推出了划时代的科技产品——应龙安保。这一举措不仅稳定了环都的社会秩序，也为居民提供了一个安全、公平的生活环境。这无疑是应龙公司最为明智的决定之一。由于机器人无需休息、没有人类的情感和偏见，能够更好地管理和执行任务。这些高度智能的机器人，搭载着先进的算法和数据分析能力，可以实时监控环都的安全局势，保障环都秩序。正是由于应龙安保在用户之间的普及，应龙公司才得以赚取到第一桶金，并成功转型为一家综合性的公司。",
+      "InKey": "content_10113"
+    },
+    "image": "",
+    "id": 10113,
+    "battleFragmentPropID": 901113,
+    "taskID": 910113,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_01.Icon_Plot_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "应龙的发家史",
+      "InKey": "title_10113"
+    }
+  },
+  "10114": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "应龙，一个名字，却蕴含着无处不在的文化；一家科技企业，宛若无穷宇宙；一个遥远的名称，却扎根在每个环都居民的日常生活。它是人们忠诚的服务者，也是伟大环都世界的缔造者。应龙不断创新并改变着我们的生活，为所有追梦者提供着靠近理想的可行路径。二十年风雨历程，应龙已不再是那个以虚拟现实科技而起家的公司，而是一个巨大的综合业务巨头，支撑着整个环都的运行。应龙见证了环都从荒凉到繁荣的伟大历史，而这一切，都离不开那个带来了伟大变革的人：马尔科姆。自从马尔科姆从上一任掌舵人西泽手中接过掌管应龙集团的重担后，应龙迎来了突破式的发展上下世界的颠倒绘制出了新的视觉奇观，合理的城市规划使得所有人各司其职，繁华的环都中心塔傲然伫立，崭新的应龙安保逐渐出现在人们的视野，安保业务欣欣向荣",
+      "InKey": "content_10114"
+    },
+    "image": "",
+    "id": 10114,
+    "battleFragmentPropID": 901114,
+    "taskID": 910114,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_02.Icon_Diary_02",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "应龙：腾飞之龙【第一章节选】",
+      "InKey": "title_10114"
+    }
+  },
+  "10115": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "杰森：这帮公司的混蛋，花这么多钱、用了这么多人建造一个莫名其妙的塔，除了好看又有什么用？莫尔：没错……为了自己好好奋斗，真是一句鬼话，在这里生活比现实世界还要累，那我还来这儿干嘛？杰森：是啊，就这样还敢宣扬自己是未来都市的典范，真搞笑。莫尔：你来得晚，有很多事都不知道，自从应龙公司换了老板以后，环都才变成现在这样了……",
+      "InKey": "content_10115"
+    },
+    "image": "",
+    "id": 10115,
+    "battleFragmentPropID": 901115,
+    "taskID": 910115,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_01.Icon_Plot_01",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "居民的对话记录",
+      "InKey": "title_10115"
+    }
+  },
+  "10116": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "【应龙公司官方声明】近期，我们注意到在哭拳街和绘世街地区流传着一些关于名为“夜游者”攻击用户的传言。应龙公司对此表示十分关注。应龙公司一直致力于为用户提供安全、可靠的服务环境。我们已经开始采取措施，加大巡查力度，以确保此类事件得到妥善处理。我们呼吁所有用户不要轻信未经证实的信息，对于任何可疑活动，请及时通过官方渠道向我们报告。应龙公司一直致力于为用户提供一个安全、公平的虚拟环境。我们感谢广大用户的信任与支持，并承诺将继续不遗余力地维护环都的和谐与稳定。",
+      "InKey": "content_10116"
+    },
+    "image": "",
+    "id": 10116,
+    "battleFragmentPropID": 901116,
+    "taskID": 910116,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_01.Icon_Plot_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "官方声明",
+      "InKey": "title_10116"
+    }
+  },
+  "10117": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "报告类型：机密项目代号：收件人：马尔科姆报告内容：“虽然在研究途中经历了几次意外，但是我们仍然取得了一定的突破，将未知物质与目标用户进行融合后产生了巨大的反应，目标的数据在各方面都突破了限制现在唯一的问题是，这种未知物质极其不稳定，在研究过程中出现了多起失控事件……”“",
+      "InKey": "content_10117"
+    },
+    "image": "",
+    "id": 10117,
+    "battleFragmentPropID": 901117,
+    "taskID": 910117,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_03.Icon_Plot_03",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "研发报告（一）",
+      "InKey": "title_10117"
+    }
+  },
+  "10118": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "报告类型：机密项目代号：收件人：马尔科姆报告内容：“目前我们想进行更进一步的实验，但随着样本量的增加，失败的几率也逐渐上升，一旦试验失败，用户的数据体就会被损毁，目前被损毁的数据体放置在中心塔内，研发小组已经在抓紧时间解决这个问题了。”",
+      "InKey": "content_10118"
+    },
+    "image": "",
+    "id": 10118,
+    "battleFragmentPropID": 901118,
+    "taskID": 910118,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_03.Icon_Plot_03",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "研发报告（二）",
+      "InKey": "title_10118"
+    }
+  },
+  "10119": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "存放在应龙公司的文件，上面记录着数十个名字，无一例外，这些人都是最强大的杀手，而影刃的名字赫然在列。",
+      "InKey": "content_10119"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg46.Plot_Bg46",
+    "id": 10119,
+    "battleFragmentPropID": 901119,
+    "taskID": 910119,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_02.Icon_Plot_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "残存的文件",
+      "InKey": "title_10119"
+    }
+  },
+  "10120": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "上载档案：影刃有关影刃的档案已经被删除。目前无法在数据库中检索到影刃的上载信息。",
+      "InKey": "content_10120"
+    },
+    "image": "",
+    "id": 10120,
+    "battleFragmentPropID": 901120,
+    "taskID": 910120,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_ElectronicData_02.Icon_ElectronicData_02",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "被删除的上载档案",
+      "InKey": "title_10120"
+    }
+  },
+  "10121": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "尊敬的市民们：我们深感悲痛地通知大家，应龙公司的创始成员之一——西泽先生，不幸遭到刺杀。这是一起令人震惊且悲剧的事件，我们对西泽先生的逝世表示最深切的哀悼。应龙公司一直致力于维护正义和秩序，我们不能容忍这样的罪行在我们的社会中发生。因此，我们已经启动了对凶手影刃的全面追捕行动。我们将与帝谷集团密切合作，使用一切必要的资源来追捕影刃，确保正义得以伸张。我们呼吁所有市民保持警惕，并与我们合作，共同打击犯罪。如果您有任何关于影刃行踪的信息，请立即与当地执法机关联系。为了保护市民的安全，应龙公司已经设立了举报渠道，并承诺对提供有价值线索的市民给予奖励。",
+      "InKey": "content_10121"
+    },
+    "image": "",
+    "id": 10121,
+    "battleFragmentPropID": 901121,
+    "taskID": 910121,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_01.Icon_Plot_01",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "通缉公告",
+      "InKey": "title_10121"
+    }
+  },
+  "10122": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“已经是这个月的第四次了，只要西泽和马尔科姆两个人出现在同一个会议之中，我们就会吵来吵去。真不知道这两个人为什么不能好好坐下来谈谈。”",
+      "InKey": "content_10122"
+    },
+    "image": "",
+    "id": 10122,
+    "battleFragmentPropID": 901122,
+    "taskID": 910122,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_01.Icon_Plot_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "员工的对话记录",
+      "InKey": "title_10122"
+    }
+  },
+  "10123": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "一份由马尔科姆主导的计划，详细记载了建造中心塔的未来计划，然而却遭遇了西泽的极力反对，因而始终未能推行。",
+      "InKey": "content_10123"
+    },
+    "image": "",
+    "id": 10123,
+    "battleFragmentPropID": 901123,
+    "taskID": 910123,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_03.Icon_Plot_03",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "中心塔计划书",
+      "InKey": "title_10123"
+    }
+  },
+  "10124": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "针对影刃的通缉令，由应龙公司在向帝谷集团申请权限后发布。",
+      "InKey": "content_10124"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg34.Plot_Bg34",
+    "id": 10124,
+    "battleFragmentPropID": 901124,
+    "taskID": 910124,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_ElectronicData_02.Icon_ElectronicData_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "通缉令：影刃",
+      "InKey": "title_10124"
+    }
+  },
+  "10125": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "我目睹了这一切。原本我还不知道那是应龙公司总裁西泽的车辆，直到第二天应龙公司发布公告我才意识到那是针对西泽的谋杀。那个神秘的杀手就像一道魅影，转瞬之间就突破了应龙安保的守卫并且逼停了西泽的车辆，后续的事情我就看不到了，那场面实在太混乱了。",
+      "InKey": "content_10125"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg35.Plot_Bg35",
+    "id": 10125,
+    "battleFragmentPropID": 901125,
+    "taskID": 910125,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_02.Icon_Plot_02",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "证言",
+      "InKey": "title_10125"
+    }
+  },
+  "10126": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "经过数据审查和分析，确认西泽死因是其上载数据被销毁。数据销毁细节：数据类型：上载数据销毁方式：彻底删除数据状态：无法恢复分析结果：西泽的数据被认定为机密数据，包含多层加密和安全协议。然而，最终这些数据遭到了未知攻击者的破坏。详细的日志分析显示，攻击发生在系统的多个入口点，导致数据完全丧失。目前尚未得知攻击者是通过何种方式销毁了西泽的上载数据。",
+      "InKey": "content_10126"
+    },
+    "image": "",
+    "id": 10126,
+    "battleFragmentPropID": 901126,
+    "taskID": 910126,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_ElectronicData_02.Icon_ElectronicData_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "被封存的数据",
+      "InKey": "title_10126"
+    }
+  },
+  "10127": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "在西泽死后，马尔科姆成为了应龙公司实际上的唯一掌门人。他雷厉风行地推动了多项针对应龙公司未来发展策略的革新。作为环都最庞大的经济体，应龙公司的发展策略在很大程度上也影响了环都的发展。而这一切会将环都带到什么方向，还要拭目以待。",
+      "InKey": "content_10127"
+    },
+    "image": "",
+    "id": 10127,
+    "battleFragmentPropID": 901127,
+    "taskID": 910127,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_02.Icon_Plot_02",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "马尔科姆的改革",
+      "InKey": "title_10127"
+    }
+  },
+  "10128": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "庞大的应龙安保队伍现在遍布整个环都，应龙公司有必要也有义务对应龙安保的行动准则进行监管，这其中的重点是我们必须要摒弃一切人为的管理，一旦当权者根据个人的意志决定事情的走向，无论这个人有多么睿智，都不免根据自己的主观意志做出判断。从这个角度来看，用理性的分析代替人为的决断是必然的结果。我们会用无相代替应龙高层对于应龙安保的管理，我知道这会引起很多人的不满但是为了我们心中的理想乡，我不会在这件事上让步，绝不会。",
+      "InKey": "content_10128"
+    },
+    "image": "",
+    "id": 10128,
+    "battleFragmentPropID": 901128,
+    "taskID": 910128,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_02.Icon_Diary_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "西泽的日记：无相",
+      "InKey": "title_10128"
+    }
+  },
+  "10129": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "关于实验体袭击事件说明：在实施控制措施失败后，实验体强行突破安全隔离设施，导致名研究人员受伤，实验室遭受重大设备损毁。数据工程师紧急展开数据恢复行动，已成功恢复的实验数据结果。目前实验体现已被转运至中心塔中并进行严密监禁。对于实验体突袭事件的所有相关信息，必须严密保密，禁止对外泄露。",
+      "InKey": "content_10129"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg02.Plot_Bg02",
+    "id": 10129,
+    "battleFragmentPropID": 901129,
+    "taskID": 910129,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_03.Icon_Plot_03",
+    "type": 1,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "袭击事件说明",
+      "InKey": "title_10129"
+    }
+  },
+  "10130": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“海姆达尔是我的骄傲，也是整个应龙的骄傲。自从环都上线以来，我们注意到部分玩家为了一己私利公然违背环都一贯坚持的公平原则，为了彻底杜绝此类乱象，应龙的技术团队不分昼夜研发出了监管型机器人海姆达尔，作为环都的守卫者，海姆达尔可以出色地完成自己的任务。”",
+      "InKey": "content_10130"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg03.Plot_Bg03",
+    "id": 10130,
+    "battleFragmentPropID": 901130,
+    "taskID": 910130,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_02.Icon_Diary_02",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "西泽的日记：惩戒者",
+      "InKey": "title_10130"
+    }
+  },
+  "20207": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“所以沙漠鼠联盟就这样要完了吗？在那场病毒来袭之后，鬣狗帮和沙漠鼠联盟的交手次数明显变得多了，然而每次都是鬣狗帮更占上风，现在沙漠鼠联盟节节败退，原本拥有的几个据点也都被鬣狗帮占领了，看来乔里和奥尔加的实力差距已经很明显了”",
+      "InKey": "content_20207"
+    },
+    "image": "",
+    "id": 20207,
+    "battleFragmentPropID": 902207,
+    "taskID": 920207,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_08.Icon_Plot_08",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "废土小报：沙漠鼠联盟的末路",
+      "InKey": "title_20207"
+    }
+  },
+  "20208": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "在病毒来袭之后，奥尔加对于沙漠鼠联盟每一场战斗都写下了详细的作战指令。然而由于沙漠鼠联盟内部较为松散的风气，这些指令并没有被严格贯彻，这也是沙漠鼠联盟渐渐落入下风的重要原因之一。",
+      "InKey": "content_20208"
+    },
+    "image": "",
+    "id": 20208,
+    "battleFragmentPropID": 902208,
+    "taskID": 920208,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_09.Icon_Plot_09",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "作战指令",
+      "InKey": "title_20208"
+    }
+  },
+  "20209": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "沙漠鼠联盟成员雷克斯你们听说了吗？奥尔加好像对我们的这几次的失败很生气。沙漠鼠联盟成员玛雅是啊，奥尔加的压力最近太大了。每次见到他似乎总觉得他很不对劲。沙漠鼠联盟成员雷克斯我不喜欢这样，我们只是普通人而已，要不是那场该死的病毒，我们根本就不会这么拼命。我们不是士兵，我们也不是鬣狗帮那样的疯子……沙漠鼠联盟成员玛雅问题是我们没得选择。要么死，要么干。",
+      "InKey": "content_20209"
+    },
+    "image": "",
+    "id": 20209,
+    "battleFragmentPropID": 902209,
+    "taskID": 920209,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_08.Icon_Plot_08",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "对话记录：不满与担忧",
+      "InKey": "title_20209"
+    }
+  },
+  "20210": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“这场该死的病毒摧毁了我精心布置的一切现在好了，我们都没办法回到现实世界了，然而眼前更需要考虑的如何活下去，炽热焦土的资源都是有限的，如果想要在这里存活下去就必须要获得尽可能多的资源，但是现在的沙漠鼠联盟远远不是鬣狗帮的对手，看看鬣狗帮吧，他们信奉着乔里，他们有着统一的信仰，他们才能战无不胜或许我从一开始就是错的。”",
+      "InKey": "content_20210"
+    },
+    "image": "",
+    "id": 20210,
+    "battleFragmentPropID": 902210,
+    "taskID": 920210,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_01.Icon_Diary_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "奥尔加的日志：失望",
+      "InKey": "title_20210"
+    }
+  },
+  "20211": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "数据日志条目警告检测到系统异常。初步分析表明，未知病毒侵入了图像数据库，并对数据进行了未授权的修改。具体来说，奥尔加的形象参数被不正当地替换成了乔里的参数。以下是受影响的参数列表：形象编码由原始编码更改为。视觉特征奥尔加的视觉特征数据集被乔里的数据集覆盖。个性化设置奥尔加的语音和动作参数被用户乔里的原参数覆盖。",
+      "InKey": "content_20211"
+    },
+    "image": "",
+    "id": 20211,
+    "battleFragmentPropID": 902211,
+    "taskID": 920211,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_ElectronicData_01.Icon_ElectronicData_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "数据检测日志",
+      "InKey": "title_20211"
+    }
+  },
+  "20212": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "调查日志：根据技术部门的反馈，我们立刻对出现在炽热焦土的不明信号源进行了排查，经筛查，该信号源不存在于矩阵的数据库中，亦无法定位，无法复现，目前我们正在组织人手以便展开新一轮的筛查。",
+      "InKey": "content_20212"
+    },
+    "image": "",
+    "id": 20212,
+    "battleFragmentPropID": 902212,
+    "taskID": 920212,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_08.Icon_Plot_08",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "调查日志",
+      "InKey": "title_20212"
+    }
+  },
+  "20301": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“乔里会保佑我们所有人，我们的战斗将无往不利，我们的生命将永不消逝，我们的领土将永无边际，而我们的荣誉将永归乔里。”",
+      "InKey": "content_20301"
+    },
+    "image": "",
+    "id": 20301,
+    "battleFragmentPropID": 902301,
+    "taskID": 920301,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_07.Icon_Plot_07",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "鬣狗帮宣言",
+      "InKey": "title_20301"
+    }
+  },
+  "20302": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“现在我成为了乔里，成为了曾经我最痛恨的人但是我并不后悔，只有掌握所有的力量才能改变这个不完美的世界，现在所有人都没有办法离开炽热焦土，而我也将在这里创造一个全新的世界。”",
+      "InKey": "content_20302"
+    },
+    "image": "",
+    "id": 20302,
+    "battleFragmentPropID": 902302,
+    "taskID": 920302,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_01.Icon_Diary_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "奥尔加的日志",
+      "InKey": "title_20302"
+    }
+  },
+  "20303": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "病毒入侵之后，没有人能逃出这个贫瘠疯狂的荒漠。几乎所有的用户都陷入了恐慌之中。而解决了奥尔加的乔里给出了一个疯狂的方案——让整个炽热焦土都成为鬣狗帮的地盘。不久之后，鬣狗帮对于乔里的疯狂崇拜蔓延至了炽热焦土的每个角落。“为了乔里！”这一句简单的口号，成为了炽热焦土内最响亮的口号。",
+      "InKey": "content_20303"
+    },
+    "image": "",
+    "id": 20303,
+    "battleFragmentPropID": 902303,
+    "taskID": 920303,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_09.Icon_Plot_09",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "疯狂的鬣狗帮",
+      "InKey": "title_20303"
+    }
+  },
+  "20304": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "在奥尔加被乔里击败、病毒入侵矩阵等一系列事件之后，一部分沙漠鼠联盟的成员选择加入鬣狗帮，然而绝大部分的成员仍然坚守在这里。",
+      "InKey": "content_20304"
+    },
+    "image": "",
+    "id": 20304,
+    "battleFragmentPropID": 902304,
+    "taskID": 920304,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_08.Icon_Plot_08",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "沙漠鼠联盟的变动",
+      "InKey": "title_20304"
+    }
+  },
+  "20305": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“格罗莉亚，加入鬣狗帮吧，你应该知道的沙漠鼠联盟之所以强大都是因为我的存在，没有我之后，你们不过是一群乌合之众，炽热焦土早晚都会是我的掌中之物，这里需要一个秩序，需要一个真正的旗帜。”",
+      "InKey": "content_20305"
+    },
+    "image": "",
+    "id": 20305,
+    "battleFragmentPropID": 902305,
+    "taskID": 920305,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_07.Icon_Plot_07",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "乔里的来信",
+      "InKey": "title_20305"
+    }
+  },
+  "20306": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "沙漠鼠联盟行动记录：在奥尔加和格罗莉亚见面之后，沙漠鼠联盟烧毁了奥尔加留在沙漠鼠联盟的一切物品。",
+      "InKey": "content_20306"
+    },
+    "image": "",
+    "id": 20306,
+    "battleFragmentPropID": 902306,
+    "taskID": 920306,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_05.Icon_Plot_05",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "行动记录",
+      "InKey": "title_20306"
+    }
+  },
+  "20307": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "“真正的希望不是寄托在别人身上，而是在自己的双手中铸就。”用这句话来形容如今的沙漠鼠联盟再合适不过。\u00A0在奥尔加离开之后，沙漠鼠联盟遭受了前所未有的打击。领袖不在，成员们步履蹒跚，他们曾经辉煌的领地，如今正被其他工会一点点侵蚀。然而，这场危机并未摧毁他们，反而唤醒了他们内心的火焰。他们似乎认识到，曾经对奥尔加的过度依赖，使得他们自身变得脆弱。现在，奥尔加不在了，他们只能依靠自己，这种自力更生的觉悟，反而让他们看清了过去的错误。\u00A0如今，沙漠鼠联盟依旧在逆境中挣扎求生，但看起来他们已经找到了真正的力量之源——不是依赖于某个人，而是每个成员内心的坚韧与自立。",
+      "InKey": "content_20307"
+    },
+    "image": "",
+    "id": 20307,
+    "battleFragmentPropID": 902307,
+    "taskID": 920307,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_08.Icon_Plot_08",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "焦土小报：新的希望",
+      "InKey": "title_20307"
+    }
+  },
+  "20308": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "欲望才会使人进步。从原始丛林到钢筋丛林，从呱呱坠地到老态龙钟。无论渺小还是伟大、欲望贯穿着人类文明之中。只有你自己足够强大，才能拯救这个世界。“信奉我吧，我将满足你的欲望。”",
+      "InKey": "content_20308"
+    },
+    "image": "",
+    "id": 20308,
+    "battleFragmentPropID": 902308,
+    "taskID": 920308,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_07.Icon_Plot_07",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "神秘数据",
+      "InKey": "title_20308"
+    }
+  },
+  "20118": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "档案编号档案保密级别：最高级交易内容账号名称乔里账号级别超级账号账号特权该账号拥有定制化的武器与装备，以及在炽热焦土的各类活动特权交易条件乔里账号将在交易完成后立即提供至西格弗里德。帝谷集团保证账号的安全性和功能性。西格弗里德承诺在交易完成后小时内支付全款。交易状态完成签字西格弗里德签名保密",
+      "InKey": "content_20118"
+    },
+    "image": "",
+    "id": 20118,
+    "battleFragmentPropID": 902118,
+    "taskID": 920118,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_ElectronicData_01.Icon_ElectronicData_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "机密档案：账号交易记录",
+      "InKey": "title_20118"
+    }
+  },
+  "20117": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "鬣狗帮成员正在向新加入鬣狗帮的菜鸟们宣传乔里的光辉事迹：“你们知道吗，乔里老大就是炽热焦土的王！他的名字就像沙漠中的风暴，无情地吞噬一切敢于挑战我们的蠢货。奥尔加那个笨蛋以为他能跟老大一较高下？乔里老大把奥尔加踢得像只瘸腿的狗一样，让他滚出了炽热焦土。老大的名字一响，敌人的心就颤三颤！不要以为乔里老大是普通的领袖，他是我们的英雄，是我们心中的狂野之火！跟着他，鬣狗帮就是不败的传说！在乔里老大的旗帜下，我们将征服一切，让所有敌人颤抖！乔里老大，万岁！”",
+      "InKey": "content_20117"
+    },
+    "image": "",
+    "id": 20117,
+    "battleFragmentPropID": 902117,
+    "taskID": 920117,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_07.Icon_Plot_07",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "鬣狗帮日志",
+      "InKey": "title_20117"
+    }
+  },
+  "20116": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "主题：与西格弗里德总裁的访谈小结对话摘要：记者西格弗里德先生，您对于炽热焦土在全球引发的暴力浪潮有何看法？西格弗里德我认为这是一个严峻的问题。炽热焦土的混乱它已经成为了全球性的威胁。我们必须督促帝谷集团找到解决之道。记者您对引发暴力浪潮的鬣狗帮有何评论？西格弗里德鬣狗帮的行为无疑是不可接受的。他们的行动不仅破坏了社会秩序，还给人民的生活带来了恐惧。记者关于您的家庭，特别是关于您和弟弟之间不和的谣言，您有何回应？西格弗里德我的家庭是我的私事，我通常不愿意在公众面前谈论。但是，我可以明确地说，我和我的兄弟之间没有不和。我们有着正常的家庭关系，谣言只是谣言。记者感谢您的分享，西格弗里德先生。西格弗里德不客气，这是我的荣幸。——————————————————————————————总结：在本次访谈中，西格弗里德表达出了炽热焦土在全球引发暴力浪潮的担忧，并痛斥了鬣狗帮的不良行为，率先在公共场合以私人身份对此事发出评论。另外西格弗里德还回应了公众对于其家庭隐私的猜测，并首次正面回答了公众对其家庭，尤其是兄弟不和的谣言。",
+      "InKey": "content_20116"
+    },
+    "image": "",
+    "id": 20116,
+    "battleFragmentPropID": 902116,
+    "taskID": 920116,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_06.Icon_Plot_06",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "访谈小结",
+      "InKey": "title_20116"
+    }
+  },
+  "20115": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "麦克斯，那个疯疯癫癫的炸弹小子，没想到他还挺能干的，居然能在鬣狗帮的包围下逃出来，并且还巧妙地耍了乔里那家伙一把，真是好样的。如果能把他拉进沙漠鼠联盟就好了，不过我们的几次尝试都以失败告终。听说麦克斯和乔里之间有一些特殊的关系，不过大概只是谣言罢了。",
+      "InKey": "content_20115"
+    },
+    "image": "",
+    "id": 20115,
+    "battleFragmentPropID": 902115,
+    "taskID": 920115,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_01.Icon_Diary_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "奥尔加日志：麦克斯",
+      "InKey": "title_20115"
+    }
+  },
+  "20114": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "在归零日之前，曾在麦克斯的上载数据中识别到了异常的数据波动，与入侵矩阵的病毒数据似乎为同一来源。该数据波动曾上传至帝谷的数据库中进行解析，但不知为何最终石沉大海。",
+      "InKey": "content_20114"
+    },
+    "image": "",
+    "id": 20114,
+    "battleFragmentPropID": 902114,
+    "taskID": 920114,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_ElectronicData_01.Icon_ElectronicData_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "异常数据波动",
+      "InKey": "title_20114"
+    }
+  },
+  "20113": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "麦克斯登记在炽热焦土的上载档案：姓名：沃克·麦克斯昵称：火箭麦克斯性别：男年龄：性格：热爱自由、热爱冒险、热爱炸！炸！炸！",
+      "InKey": "content_20113"
+    },
+    "image": "",
+    "id": 20113,
+    "battleFragmentPropID": 902113,
+    "taskID": 920113,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_ElectronicData_01.Icon_ElectronicData_01",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "上载档案：麦克斯",
+      "InKey": "title_20113"
+    }
+  },
+  "20112": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "格罗莉亚在炽热焦土写下的愿望单，上面记录了格罗莉亚的三个愿望：第一个愿望：保护好炽热焦土的机器人们，他们都是很好很好的朋友，鬣狗帮不能欺负机器人！第二个愿望：继承奥尔加的愿望！第三个愿望：好好捉弄一下麦克斯！",
+      "InKey": "content_20112"
+    },
+    "image": "",
+    "id": 20112,
+    "battleFragmentPropID": 902112,
+    "taskID": 920112,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_05.Icon_Plot_05",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "格罗莉亚的愿望单",
+      "InKey": "title_20112"
+    }
+  },
+  "20111": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "",
+      "InKey": "content_20111"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/CN/Plot/Icon_Wanted_01.Icon_Wanted_01",
+    "id": 20111,
+    "battleFragmentPropID": 902111,
+    "taskID": 920111,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_06.Icon_Plot_06",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "通缉令",
+      "InKey": "title_20111"
+    }
+  },
+  "20110": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "鬣狗帮成员纳尔：最近乔里老大好像有点反常啊鬣狗帮成员赛克斯：闭上你的乌鸦嘴，你也敢随便评价乔里老大。鬣狗帮成员纳尔：你没有感觉到吗，自从打赢奥尔加后，乔里老大都不怎么露面了，要塞内的事务都交给大喇叭了。这几个月我连乔里老大的面都没见过。鬣狗帮成员赛克斯：乔里老大哪是你想见就见的，说不定乔里老大又在策划什么大劫掠行动呢！哈哈哈！",
+      "InKey": "content_20110"
+    },
+    "image": "",
+    "id": 20110,
+    "battleFragmentPropID": 902110,
+    "taskID": 920110,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_04.Icon_Plot_04",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "对话记录",
+      "InKey": "title_20110"
+    }
+  },
+  "20109": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "乔里万岁！乔里老大在绿洲狠狠地修理了奥尔加一顿，现在炽热焦土的所有人都应该知道谁才是这里的老大了吧！什么沙漠鼠联盟，都是鬣狗帮的手下败将。顺便再告诉你们一声，绿洲以后属于鬣狗帮了，以后这里就是鬣狗帮的大本营了，现在它叫作要塞，鬣狗帮的要塞！再有什么人想要偷走这里的物资就是和鬣狗帮作对，而和鬣狗帮作对的下场就是死！",
+      "InKey": "content_20109"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg29.Plot_Bg29",
+    "id": 20109,
+    "battleFragmentPropID": 902109,
+    "taskID": 920109,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_07.Icon_Plot_07",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "胜利宣言",
+      "InKey": "title_20109"
+    }
+  },
+  "20108": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "绿洲位于炽热焦土的中央区域，也是整个炽热焦土的高资源区，在资源贫瘠的炽热焦土，绿洲就像是一颗璀璨的珍珠。这里的资源永不枯竭，使绿洲成为所有参赛者梦寐以求的宝地，也让绿洲成为了争斗的中心。强大的参赛者们为了掌握资源而不断地在绿洲内部展开争夺，在激烈的竞争下，从来没有哪一个人或团体能够永远霸占绿洲。",
+      "InKey": "content_20108"
+    },
+    "image": "",
+    "id": 20108,
+    "battleFragmentPropID": 902108,
+    "taskID": 920108,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_07.Icon_Plot_07",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "炽热焦土生存手册：绿洲",
+      "InKey": "title_20108"
+    }
+  },
+  "20107": {
+    "contentLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "由于炽热焦土的参赛者众多，为了及时为玩家提供帮助和指引，以及维持炽热之地的正常运转，帝谷集团投放大量服务型机器人用于公共区域维持秩序、为人类用户提供资源支持和各类帮助。服务型机器人，属于公共机器人，无法被玩家所调用，但玩家可以通过和终端型号的机器人沟通以获得帮助。可以伴随在人类用户身边提供各类支援，例如医疗、物资、生活帮助等等。同时，小型功能机也会听从终端型机器人的指令，统一维护和建设其所对应的安全区域。权限能够覆盖至多个互相毗邻的安全区。在除了为玩家提供帮助以外，这些机器人也会实况转播玩家的行为，为直播节目提供素材。可以说，这些机器人就相当于人类用户的小时管家。",
+      "InKey": "content_20107"
+    },
+    "image": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments/Plot_Bg42.Plot_Bg42",
+    "id": 20107,
+    "battleFragmentPropID": 902107,
+    "taskID": 920107,
+    "icon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Plot_04.Icon_Plot_04",
+    "type": 0,
+    "titleLocMeta": {
+      "InNamespace": "story_TBFragment",
+      "InTextLiteral": "炽热焦土生存手册：机器人",
+      "InKey": "title_20107"
+    }
+  }
+}

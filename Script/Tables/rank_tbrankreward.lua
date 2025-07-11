@@ -1,0 +1,45 @@
+local rank_tbrankreward = {
+  [1] = {
+    rewardID = 1,
+    boardType = 1,
+    boardMeta = "{\"gameMode\":1001,\"gameWorld\":23}",
+    boardReward = {
+      {
+        rankPhase = {key = 1, value = 10},
+        rewards = {
+          {key = 300001, value = 1},
+          {key = 300002, value = 1}
+        }
+      },
+      {
+        rankPhase = {key = 11, value = 20},
+        rewards = {
+          {key = 300001, value = 1},
+          {key = 300002, value = 1}
+        }
+      },
+      {
+        rankPhase = {key = 21, value = 50},
+        rewards = {
+          {key = 300001, value = 1},
+          {key = 300002, value = 1}
+        }
+      },
+      {
+        rankPhase = {key = 51, value = 100},
+        rewards = {
+          {key = 300001, value = 1},
+          {key = 300002, value = 1}
+        }
+      },
+      {
+        rankPhase = {key = 101, value = 200},
+        rewards = {
+          {key = 300001, value = 1},
+          {key = 300002, value = 1}
+        }
+      }
+    }
+  }
+}
+return rank_tbrankreward

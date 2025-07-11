@@ -1,0 +1,40 @@
+﻿{
+  "1": {
+    "TitleLocMeta": {
+      "InNamespace": "season_TBSeasonGeneral",
+      "InTextLiteral": "原爆点",
+      "InKey": "Title_1"
+    },
+    "SeasonModeList": {
+      "1": 1003,
+      "2": 3001,
+      "3": 3002
+    },
+    "AwardLinkParam1": {},
+    "AwardLinkParam2": {},
+    "SeasonContentPath": "/Game/Rouge/UI/Atlas_Alpha/A_DT/Bgimage/bg06.bg06",
+    "SeasonID": 1,
+    "AwardLinkID2": 1023,
+    "SeasonBgPath": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments_B/Plot_Bg13.Plot_Bg13",
+    "AwardLinkID1": 1005
+  },
+  "2": {
+    "TitleLocMeta": {
+      "InNamespace": "season_TBSeasonGeneral",
+      "InTextLiteral": "原爆点",
+      "InKey": "Title_2"
+    },
+    "SeasonModeList": {
+      "1": 1003,
+      "2": 3001,
+      "3": 3002
+    },
+    "AwardLinkParam1": {},
+    "AwardLinkParam2": {},
+    "SeasonContentPath": "/Game/Rouge/UI/Atlas_Alpha/A_DT/Bgimage/bg06.bg06",
+    "SeasonID": 2,
+    "AwardLinkID2": 1023,
+    "SeasonBgPath": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments_B/Plot_Bg13.Plot_Bg13",
+    "AwardLinkID1": 1005
+  }
+}

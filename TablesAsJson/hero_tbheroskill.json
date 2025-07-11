@@ -1,0 +1,1917 @@
+﻿{
+  "1": {
+    "Star": 1,
+    "ID": 9022,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 3
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "明星级表演！",
+      "InKey": "Name_9022_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/LLan/LLan_QSkill.LLan_QSkill",
+    "Group": 101,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillLinglan_QH.Bat_SkillLinglan_QH",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "展开力场并造成停滞效果。",
+      "InKey": "SimpleDesc_9022_1"
+    },
+    "Type": 3,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "选择区域展开个持续秒的力场，力场中的敌人将被附加停滞效果。在终极技能持续期间，射击命中敌人时，有概率涌现数据流造成额外伤害。",
+      "InKey": "Desc_9022_1"
+    }
+  },
+  "2": {
+    "Star": 1,
+    "ID": 9023,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 4
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "抓到你咯！",
+      "InKey": "Name_9023_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/LLan/LLan_ESkill.LLan_ESkill",
+    "Group": 102,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillLinglan_E.Bat_SkillLinglan_E",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "投掷耀变体爆炸造成范围伤害，并进行牵引。",
+      "InKey": "SimpleDesc_9023_1"
+    },
+    "Type": 4,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "朝前方投掷耀变体，爆炸后，将处于爆炸范围内的敌人牵引到中心，并为敌人添加持续秒的停滞效果。",
+      "InKey": "Desc_9023_1"
+    }
+  },
+  "3": {
+    "Star": 1,
+    "ID": 9025,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 1
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "飞起来了！",
+      "InKey": "Name_9025_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/LLan/LLan_CSkill.LLan_CSkill",
+    "Group": 103,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillLinglan_C.Bat_SkillLinglan_C",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "向上方闪身，并获得短暂飞行能力。",
+      "InKey": "SimpleDesc_9025_1"
+    },
+    "Type": 5,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "曙光向上闪身并停留在空中，可以在空中飞行秒。再次释放时释放下落攻击并结束飞行状态。（飞行时通过和控制起落。）",
+      "InKey": "Desc_9025_1"
+    }
+  },
+  "4": {
+    "Star": 1,
+    "ID": 1401,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 3
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "黑洞",
+      "InKey": "Name_1401_1"
+    },
+    "VideoUrl": "",
+    "Group": 104,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Texture/lobby/Frames/Skill_linglan_04_png.Skill_linglan_04_png",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "",
+      "InKey": "SimpleDesc_1401_1"
+    },
+    "Type": 2,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "敬请期待",
+      "InKey": "Desc_1401_1"
+    }
+  },
+  "5": {
+    "Star": 1,
+    "ID": 1501,
+    "InscriptionId": 8020101,
+    "SkillTags": {
+      "1": 1,
+      "2": 2
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "生命守护",
+      "InKey": "Name_1501_1"
+    },
+    "VideoUrl": "",
+    "Group": 105,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Texture/lobby/Frames/Skill_linglan_04_png.Skill_linglan_04_png",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "受到致命伤害时，免疫伤害并获得无敌秒。冷却秒",
+      "InKey": "SimpleDesc_1501_1"
+    },
+    "Type": 1,
+    "DescParams": {
+      "1": 5,
+      "2": 300
+    },
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "受到致命伤害时，免疫伤害并获得无敌秒钟，冷却秒",
+      "InKey": "Desc_1501_1"
+    }
+  },
+  "6": {
+    "Star": 1,
+    "ID": 1601,
+    "InscriptionId": 0,
+    "SkillTags": {},
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "连控带打！",
+      "InKey": "Name_1601_1"
+    },
+    "VideoUrl": "",
+    "Group": 106,
+    "Quality": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillLinglan_B.Bat_SkillLinglan_B",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "击中带有停滞效果的敌人，有概率触发数据流。",
+      "InKey": "SimpleDesc_1601_1"
+    },
+    "Type": 6,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "击中被控制的敌人，几率触发数据流。",
+      "InKey": "Desc_1601_1"
+    }
+  },
+  "7": {
+    "Star": 1,
+    "ID": 30003,
+    "InscriptionId": 0,
+    "SkillTags": {},
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "数据弹",
+      "InKey": "Name_30003_1"
+    },
+    "VideoUrl": "",
+    "Group": 207,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillLinglan_Q2.Bat_SkillLinglan_Q2",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "发射一枚威力巨大的数据弹",
+      "InKey": "SimpleDesc_30003_1"
+    },
+    "Type": 7,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "【右键】：·发射一枚威力巨大的数据弹",
+      "InKey": "Desc_30003_1"
+    }
+  },
+  "8": {
+    "Star": 1,
+    "ID": 10042,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 6
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "巡猎之拥",
+      "InKey": "Name_10042_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/XQing/XQing_QSkill.XQing_QSkill",
+    "Group": 201,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillqing_QH.Bat_Skillqing_QH",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "范围【斩击】并【收刀】造成伤害，命中敌人大幅缩减疾掠之影的冷却时间。",
+      "InKey": "SimpleDesc_10042_1"
+    },
+    "Type": 3,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "对范围内随机个敌人发动斩击，再对范围内所有敌人造成一次收刀范围伤害，技能释放期间每次命中敌人都会减少次要技能疾掠之影秒冷却时间。技能释放期间，影刃处于无法选中状态，并免疫伤害。",
+      "InKey": "Desc_10042_1"
+    }
+  },
+  "9": {
+    "Star": 1,
+    "ID": 10041,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 5
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "破命之锋",
+      "InKey": "Name_10041_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/XQing/XQing_ESkill.XQing_ESkill",
+    "Group": 202,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillqing_E.Bat_Skillqing_E",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "消耗紫怨利刃击出刀光，命中敌人小幅缩减疾掠之影冷却时间。可快速连击次。",
+      "InKey": "SimpleDesc_10041_1"
+    },
+    "Type": 4,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "向前击出刀光，每次命中敌人减少次要技能疾掠之影的冷却时间。可以快速连击次。",
+      "InKey": "Desc_10041_1"
+    }
+  },
+  "10": {
+    "Star": 1,
+    "ID": 10043,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 7
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "疾掠之影",
+      "InKey": "Name_10043_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/XQing/XQing_CSkill.XQing_CSkill",
+    "Group": 203,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillqing_C.Bat_Skillqing_C",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "向前冲刺并造成范围伤害。",
+      "InKey": "SimpleDesc_10043_1"
+    },
+    "Type": 5,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "向前冲刺，对路径上的敌人造成范围伤害。期间影刃无法被选中，并免疫伤害。",
+      "InKey": "Desc_10043_1"
+    }
+  },
+  "11": {
+    "Star": 1,
+    "ID": 2401,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 7
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "闪",
+      "InKey": "Name_2401_1"
+    },
+    "VideoUrl": "",
+    "Group": 204,
+    "Quality": 3,
+    "IconPath": "",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "",
+      "InKey": "SimpleDesc_2401_1"
+    },
+    "Type": 2,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "敬请期待",
+      "InKey": "Desc_2401_1"
+    }
+  },
+  "12": {
+    "Star": 1,
+    "ID": 4010101,
+    "InscriptionId": 8010101,
+    "SkillTags": {
+      "1": 9,
+      "2": 10
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "致命游戏",
+      "InKey": "Name_4010101_1"
+    },
+    "VideoUrl": "",
+    "Group": 205,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_01_png.Skill_linglan_01_png",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "角色护盾破碎时，影刃从半空出现砸地，造成高额范围伤害。在地面处留下范围场【持续秒】，角色在其中每秒减少和技能秒的冷却时间。",
+      "InKey": "SimpleDesc_4010101_1"
+    },
+    "Type": 1,
+    "DescParams": {
+      "1": 8,
+      "2": 0.5
+    },
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "护盾破碎时，影刃从半空出现砸地，造成高额范围伤害。在地面处留下范围场【持续秒】，角色在其中每秒减少和技能秒的冷却时间",
+      "InKey": "Desc_4010101_1"
+    }
+  },
+  "13": {
+    "Star": 1,
+    "ID": 2601,
+    "InscriptionId": 0,
+    "SkillTags": {},
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "致死本能",
+      "InKey": "Name_2601_1"
+    },
+    "VideoUrl": "",
+    "Group": 206,
+    "Quality": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillqing_B.Bat_Skillqing_B",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "破命之锋与巡猎之拥造成伤害时，缩减疾掠之影冷却时间。",
+      "InKey": "SimpleDesc_2601_1"
+    },
+    "Type": 6,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "主要技能破命之锋与终极技能巡猎之拥造成伤害时，缩减次要技能疾掠之影冷却时间。",
+      "InKey": "Desc_2601_1"
+    }
+  },
+  "14": {
+    "Star": 1,
+    "ID": 30001,
+    "InscriptionId": 0,
+    "SkillTags": {},
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "突袭",
+      "InKey": "Name_30001_1"
+    },
+    "VideoUrl": "",
+    "Group": 207,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillqing_Q2.Bat_Skillqing_Q2",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "连续近战攻击",
+      "InKey": "SimpleDesc_30001_1"
+    },
+    "Type": 7,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "【突袭】·释放一次近战突袭·一定时间内再次将发动强力一击，并恢复体力与护盾，武器技能将进入秒冷却【加速】：·命中或释放其他技能可以缩减冷却",
+      "InKey": "Desc_30001_1"
+    }
+  },
+  "15": {
+    "Star": 1,
+    "ID": 10051,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "弱化场域",
+      "InKey": "Name_10051_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/Taros/Taros_QSkill.Taros_QSkill",
+    "Group": 301,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillTaros_ShieldH.Bat_SkillTaros_ShieldH",
+    "InscriptionExplainInfoList": {
+      "1": {
+        "InNamespace": "hero_TBHeroSkill",
+        "InTextLiteral": "弱化敌人受到的伤害增加。",
+        "InKey": "OBJHeroSkill_InscriptionExplainInfoList_10051_1_1"
+      }
+    },
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "发射无人机进行轰炸，被击中的敌人将被赋予弱化效果。",
+      "InKey": "SimpleDesc_10051_1"
+    },
+    "Type": 3,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "选定区域并发射无人机持续轰炸目标区域秒。被轰炸的敌人会被赋予弱化效果。",
+      "InKey": "Desc_10051_1"
+    }
+  },
+  "16": {
+    "Star": 1,
+    "ID": 10052,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 4
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "正义轰击",
+      "InKey": "Name_10052_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/Taros/Taros_ESkill.Taros_ESkill",
+    "Group": 302,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillTaros_bombard.Bat_SkillTaros_bombard",
+    "InscriptionExplainInfoList": {
+      "1": {
+        "InNamespace": "hero_TBHeroSkill",
+        "InTextLiteral": "弱化敌人受到的伤害增加。",
+        "InKey": "OBJHeroSkill_InscriptionExplainInfoList_10052_1_1"
+      }
+    },
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "锁定单体发射导弹并赋予弱化效果。",
+      "InKey": "SimpleDesc_10052_1"
+    },
+    "Type": 4,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "发射枚导弹，锁定前方敌人并造成弱化效果。",
+      "InKey": "Desc_10052_1"
+    }
+  },
+  "17": {
+    "Star": 1,
+    "ID": 10053,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 1
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "战术护盾",
+      "InKey": "Name_10053_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/Taros/Taros_CSkill.Taros_CSkill",
+    "Group": 303,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillTaros_MF.Bat_SkillTaros_MF",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "在秒内为所有友方提供上校体力值的临时护盾上限和等量的临时护盾值。",
+      "InKey": "SimpleDesc_10053_1"
+    },
+    "Type": 5,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "在秒内为所有友方提供上校体力值的临时护盾上限和等量的临时护盾值。",
+      "InKey": "Desc_10053_1"
+    }
+  },
+  "18": {
+    "Star": 1,
+    "ID": 3401,
+    "InscriptionId": 0,
+    "SkillTags": {},
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "上校光环",
+      "InKey": "Name_3401_1"
+    },
+    "VideoUrl": "",
+    "Group": 304,
+    "Quality": 3,
+    "IconPath": "",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "",
+      "InKey": "SimpleDesc_3401_1"
+    },
+    "Type": 2,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "敬请期待",
+      "InKey": "Desc_3401_1"
+    }
+  },
+  "19": {
+    "Star": 1,
+    "ID": 4020101,
+    "InscriptionId": 8020101,
+    "SkillTags": {
+      "1": 1,
+      "2": 2
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "电磁屏障",
+      "InKey": "Name_4020101_1"
+    },
+    "VideoUrl": "",
+    "Group": 305,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Texture/lobby/Frames/Skill_linglan_04_png.Skill_linglan_04_png",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "受到致命伤害时，免疫伤害并获得无敌秒，冷却秒。",
+      "InKey": "SimpleDesc_4020101_1"
+    },
+    "Type": 1,
+    "DescParams": {
+      "1": 5,
+      "2": 300
+    },
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "受到致命伤害时，免疫伤害并获得无敌秒，冷却秒",
+      "InKey": "Desc_4020101_1"
+    }
+  },
+  "20": {
+    "Star": 1,
+    "ID": 3601,
+    "InscriptionId": 0,
+    "SkillTags": {},
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "战术推演",
+      "InKey": "Name_3601_1"
+    },
+    "VideoUrl": "",
+    "Group": 306,
+    "Quality": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillTaros_passive.Bat_SkillTaros_passive",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "每命中敌人次弱点，回复次主要技能使用次数。上校攻击处于弱化状态的敌人时，将其全身视为弱点。",
+      "InKey": "SimpleDesc_3601_1"
+    },
+    "Type": 6,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "每命中敌人次弱点，回复次主要技能使用次数。上校攻击处于弱化状态的敌人时，将其全身视为弱点。",
+      "InKey": "Desc_3601_1"
+    }
+  },
+  "21": {
+    "Star": 1,
+    "ID": 30002,
+    "InscriptionId": 0,
+    "SkillTags": {},
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "护盾",
+      "InKey": "Name_30002_1"
+    },
+    "VideoUrl": "",
+    "Group": 307,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillTaros_spear02.Bat_SkillTaros_spear02",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "给自己或队友添加护盾。",
+      "InKey": "SimpleDesc_30002_1"
+    },
+    "Type": 7,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "【键】：·给自己或队友添加护盾。",
+      "InKey": "Desc_30002_1"
+    }
+  },
+  "22": {
+    "Star": 1,
+    "ID": 19080001,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "和弦挥击",
+      "InKey": "Name_19080001_1"
+    },
+    "VideoUrl": "",
+    "Group": 1081,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillKdy_E.Bat_SkillKdy_E",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "挥动吉他攻击面前的敌人。",
+      "InKey": "SimpleDesc_19080001_1"
+    },
+    "Type": 4,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "挥动吉他攻击面前的敌人。",
+      "InKey": "Desc_19080001_1"
+    }
+  },
+  "23": {
+    "Star": 1,
+    "ID": 19080002,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "音乐狂潮",
+      "InKey": "Name_19080002_1"
+    },
+    "VideoUrl": "",
+    "Group": 1082,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillKdy_Q.Bat_SkillKdy_Q",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "进入狂欢状态，状态持续期间子弹无限，且逐渐提升射速。",
+      "InKey": "SimpleDesc_19080002_1"
+    },
+    "Type": 3,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "进入狂欢状态，状态持续期间子弹无限，且逐渐提升射速。",
+      "InKey": "Desc_19080002_1"
+    }
+  },
+  "24": {
+    "Star": 1,
+    "ID": 19080003,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "音袭",
+      "InKey": "Name_19080003_1"
+    },
+    "VideoUrl": "",
+    "Group": 1083,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillKdy_C.Bat_SkillKdy_C",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "冲锋并攻击敌人，冲锋过程中获得减伤和免控效果。",
+      "InKey": "SimpleDesc_19080003_1"
+    },
+    "Type": 5,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "冲锋并裹挟周围的敌人一起到目的地，冲锋结束后使用吉他砸向面前的敌人，在冲锋过程中，叛音获得减伤和免控效果。",
+      "InKey": "Desc_19080003_1"
+    }
+  },
+  "25": {
+    "Star": 1,
+    "ID": 19080004,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "旋律狂欢",
+      "InKey": "Name_19080004_1"
+    },
+    "VideoUrl": "",
+    "Group": 1084,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillKdy_passive.Bat_SkillKdy_passive",
+    "InscriptionExplainInfoList": {
+      "1": {
+        "InNamespace": "hero_TBHeroSkill",
+        "InTextLiteral": "旋律激荡【狂欢】点时提升射速。",
+        "InKey": "OBJHeroSkill_InscriptionExplainInfoList_19080004_1_1"
+      },
+      "2": {
+        "InNamespace": "hero_TBHeroSkill",
+        "InTextLiteral": "音符共鸣【狂欢】点时每次射击将发射枚音符造成额外伤害。",
+        "InKey": "OBJHeroSkill_InscriptionExplainInfoList_19080004_1_2"
+      },
+      "3": {
+        "InNamespace": "hero_TBHeroSkill",
+        "InTextLiteral": "音浪潮流【狂欢】点时每次射击将发射音浪造成额外范围伤害。",
+        "InKey": "OBJHeroSkill_InscriptionExplainInfoList_19080004_1_3"
+      },
+      "4": {
+        "InNamespace": "hero_TBHeroSkill",
+        "InTextLiteral": "灵感爆发【狂欢】点时，以叛音为中心扩散出一道音波造成巨额伤害。",
+        "InKey": "OBJHeroSkill_InscriptionExplainInfoList_19080004_1_4"
+      }
+    },
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "武器和技能命中时，叠加增益状态。",
+      "InKey": "SimpleDesc_19080004_1"
+    },
+    "Type": 6,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "叛音会在战斗中进入狂欢状态！每次武器和技能命中时将叠加【狂欢】点数。射击命中时增加点。主要技能命中时增加点。次要技能增加点。终极技能释放时立刻充满【狂欢】点。",
+      "InKey": "Desc_19080004_1"
+    }
+  },
+  "26": {
+    "Star": 1,
+    "ID": 11111001,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "技能",
+      "InKey": "Name_11111001_1"
+    },
+    "VideoUrl": "",
+    "Group": 1111,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillKdy_E.Bat_SkillKdy_E",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "技能",
+      "InKey": "SimpleDesc_11111001_1"
+    },
+    "Type": 4,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "技能",
+      "InKey": "Desc_11111001_1"
+    }
+  },
+  "27": {
+    "Star": 1,
+    "ID": 11111002,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "技能",
+      "InKey": "Name_11111002_1"
+    },
+    "VideoUrl": "",
+    "Group": 1112,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillKdy_Q.Bat_SkillKdy_Q",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "技能",
+      "InKey": "SimpleDesc_11111002_1"
+    },
+    "Type": 3,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "技能",
+      "InKey": "Desc_11111002_1"
+    }
+  },
+  "28": {
+    "Star": 1,
+    "ID": 11111003,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "技能",
+      "InKey": "Name_11111003_1"
+    },
+    "VideoUrl": "",
+    "Group": 1113,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillKdy_C.Bat_SkillKdy_C",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "技能",
+      "InKey": "SimpleDesc_11111003_1"
+    },
+    "Type": 5,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "技能",
+      "InKey": "Desc_11111003_1"
+    }
+  },
+  "29": {
+    "Star": 1,
+    "ID": 11111004,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "被动",
+      "InKey": "Name_11111004_1"
+    },
+    "VideoUrl": "",
+    "Group": 1114,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillKdy_passive.Bat_SkillKdy_passive",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "被动",
+      "InKey": "SimpleDesc_11111004_1"
+    },
+    "Type": 6,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "被动",
+      "InKey": "Desc_11111004_1"
+    }
+  },
+  "30": {
+    "Star": 1,
+    "ID": 10032,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "火箭骑士",
+      "InKey": "Name_10032_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/Nax/Nax_QSkill.Nax_QSkill",
+    "Group": 1031,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillnax_QH.Bat_Skillnax_QH",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "骑乘火箭，并引爆火箭造成范围伤害。",
+      "InKey": "SimpleDesc_10032_1"
+    },
+    "Type": 3,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "麦克斯驾驶火箭，成为火箭骑士！途中生成恢复雾气，可恢复友方体力值。旋转镜头控制火箭方向，引爆火箭，控制分离；导弹引爆前飞行越久，伤害越高！导弹爆炸时，对范围内的可破坏部位额外造成伤害，若麦克斯也在爆炸范围内，体力值降至点，并在秒内回复大量体力值、护盾值与临时护盾值。",
+      "InKey": "Desc_10032_1"
+    }
+  },
+  "31": {
+    "Star": 1,
+    "ID": 10033,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "命不该绝",
+      "InKey": "Name_10033_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/Nax/Nax_CSkill.Nax_CSkill",
+    "Group": 1032,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillnax_E.Bat_Skillnax_E",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "回复损失体力，并提升自身能力。",
+      "InKey": "SimpleDesc_10033_1"
+    },
+    "Type": 5,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "回复已损失体力，同时随机获得以下种强化效果中的种：伤害强化：概率造成次枪械伤害（不对技能生效）。移速强化：移速提升。操控强化：发射间隔缩短，换弹速度提升。",
+      "InKey": "Desc_10033_1"
+    }
+  },
+  "32": {
+    "Star": 1,
+    "ID": 10031,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "危险翻滚",
+      "InKey": "Name_10031_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/Nax/Nax_ESkill.Nax_ESkill",
+    "Group": 1033,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillnax_C.Bat_Skillnax_C",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "向指定方向跳起并重重下砸，造成范围伤害。",
+      "InKey": "SimpleDesc_10031_1"
+    },
+    "Type": 4,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "向前翻滚并快速落地，在落地位置造成范围伤害。每次释放扣除最大体力值。",
+      "InKey": "Desc_10031_1"
+    }
+  },
+  "33": {
+    "Star": 1,
+    "ID": 10035,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "绝境派对",
+      "InKey": "Name_10035_1"
+    },
+    "VideoUrl": "",
+    "Group": 1034,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillnax_BD.Bat_Skillnax_BD",
+    "InscriptionExplainInfoList": {
+      "1": {
+        "InNamespace": "hero_TBHeroSkill",
+        "InTextLiteral": "免死受到致命伤害时，立即回复最大体力，并获得无敌效果，持续秒。此效果有秒冷却时间。",
+        "InKey": "OBJHeroSkill_InscriptionExplainInfoList_10035_1_1"
+      },
+      "2": {
+        "InNamespace": "hero_TBHeroSkill",
+        "InTextLiteral": "狂躁攻击力提升。",
+        "InKey": "OBJHeroSkill_InscriptionExplainInfoList_10035_1_2"
+      },
+      "3": {
+        "InNamespace": "hero_TBHeroSkill",
+        "InTextLiteral": "狂热攻击力提升，移速提升。",
+        "InKey": "OBJHeroSkill_InscriptionExplainInfoList_10035_1_3"
+      },
+      "4": {
+        "InNamespace": "hero_TBHeroSkill",
+        "InTextLiteral": "狂欢攻击力提升，移速提升，角色暴击率，角色暴伤倍率。",
+        "InKey": "OBJHeroSkill_InscriptionExplainInfoList_10035_1_4"
+      }
+    },
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "体力越低，攻击越强。",
+      "InKey": "SimpleDesc_10035_1"
+    },
+    "Type": 6,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "麦克斯拥有【免死】状态，并根据当前体力获得强化：体力小于时，获得【狂躁】。体力小于时，将【狂躁】替换为【狂热】。当体力等于时，将【狂热】替换为【狂欢】。当麦克斯的体力变为点，并获得【狂欢】后的秒内，即使提升体力值，也不会移除【狂欢】效果。",
+      "InKey": "Desc_10035_1"
+    }
+  },
+  "34": {
+    "Star": 1,
+    "ID": 10064,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "哨箭：",
+      "InKey": "Name_10064_1"
+    },
+    "VideoUrl": "",
+    "Group": 1101,
+    "Quality": 3,
+    "IconPath": "Game/Rouge/UI/Sprite/IconRoleSkills/Frames/Bat_Skillnax_QH.Bat_Skillnax_QH",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "加盾伤害反击",
+      "InKey": "SimpleDesc_10064_1"
+    },
+    "Type": 5,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "获得临时护盾，造成任意伤害均附加次技能伤害。护盾存在期间，受伤会反击敌人。",
+      "InKey": "Desc_10064_1"
+    }
+  },
+  "35": {
+    "Star": 1,
+    "ID": 10065,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "哨箭：大招",
+      "InKey": "Name_10065_1"
+    },
+    "VideoUrl": "",
+    "Group": 1102,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillnax_E.Bat_Skillnax_E",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "射击移速弹道，召唤小剑自动攻击",
+      "InKey": "SimpleDesc_10065_1"
+    },
+    "Type": 3,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "射击移速，弹道，持续秒；召唤小剑自动攻击",
+      "InKey": "Desc_10065_1"
+    }
+  },
+  "36": {
+    "Star": 1,
+    "ID": 10066,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "哨箭：",
+      "InKey": "Name_10066_1"
+    },
+    "VideoUrl": "",
+    "Group": 1103,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillnax_C.Bat_Skillnax_C",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "持续牵引，造成除以外的伤害可以让的范围与伤害提升",
+      "InKey": "SimpleDesc_10066_1"
+    },
+    "Type": 4,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "召唤剑阵，持续牵引敌人。一段时间后造成高额技能伤害造成其他类型伤害，均可以让剑阵的范围与伤害提升。",
+      "InKey": "Desc_10066_1"
+    }
+  },
+  "37": {
+    "Star": 1,
+    "ID": 10067,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "哨箭：被动",
+      "InKey": "Name_10067_1"
+    },
+    "VideoUrl": "",
+    "Group": 1104,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Sprite/IconOneoutothree/Frames/Bat_SkilNAX_B.Bat_SkilNAX_B",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "造成伤害提供叠层伤害",
+      "InKey": "SimpleDesc_10067_1"
+    },
+    "Type": 6,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "哨箭造成伤害后，秒内提高哨箭伤害。",
+      "InKey": "Desc_10067_1"
+    }
+  },
+  "38": {
+    "Star": 1,
+    "ID": 10091,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "全息视界",
+      "InKey": "Name_10091_1"
+    },
+    "VideoUrl": "",
+    "Group": 1091,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillYuri_Q.Bat_SkillYuri_Q",
+    "InscriptionExplainInfoList": {
+      "1": {
+        "InNamespace": "hero_TBHeroSkill",
+        "InTextLiteral": "全息视界尤莉开启感知目镜，解析身边一切事物，开启期间，可以看到视野外的敌人与隐藏在掩体后的敌人。",
+        "InKey": "OBJHeroSkill_InscriptionExplainInfoList_10091_1_1"
+      }
+    },
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "尤莉看到所有敌人的位置，并强化下一次攻击的威力。",
+      "InKey": "SimpleDesc_10091_1"
+    },
+    "Type": 3,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "终极技能激活【全息视界】，持续时间内攻击力提升。同时强化下次射击，使其造成巨额伤害并自动锁定敌人身上的部位或弱点。",
+      "InKey": "Desc_10091_1"
+    }
+  },
+  "39": {
+    "Star": 1,
+    "ID": 10092,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "迅疾射击",
+      "InKey": "Name_10092_1"
+    },
+    "VideoUrl": "",
+    "Group": 1092,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillYuri_E.Bat_SkillYuri_E",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "疾速移动，并射出一发自动追踪敌人的强化子弹。",
+      "InKey": "SimpleDesc_10092_1"
+    },
+    "Type": 4,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "尤莉疾速移动，并在过程中射出一发自动追踪敌人弱点部位的强化子弹。",
+      "InKey": "Desc_10092_1"
+    }
+  },
+  "40": {
+    "Star": 1,
+    "ID": 10093,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "残影匿踪",
+      "InKey": "Name_10093_1"
+    },
+    "VideoUrl": "",
+    "Group": 1093,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillYuri_C.Bat_SkillYuri_C",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "隐身并留下全息幻影吸引敌人注意",
+      "InKey": "SimpleDesc_10093_1"
+    },
+    "Type": 5,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "尤莉隐匿身形，脱离敌人的视野，并在原地留下全息幻影吸引敌人注意。下次武器或技能伤害将获得伤害增幅。",
+      "InKey": "Desc_10093_1"
+    }
+  },
+  "41": {
+    "Star": 1,
+    "ID": 10094,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "弱点追击",
+      "InKey": "Name_10094_1"
+    },
+    "VideoUrl": "",
+    "Group": 1094,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillYuri_Passive_Role.Bat_SkillYuri_Passive_Role",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "提升攻击弱点或部位的伤害",
+      "InKey": "SimpleDesc_10094_1"
+    },
+    "Type": 6,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "对弱点或独立部位，造成的伤害提升",
+      "InKey": "Desc_10094_1"
+    }
+  },
+  "42": {
+    "Star": 1,
+    "ID": 6101,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 8
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "奥义！病毒爆发乱射！",
+      "InKey": "Name_6101_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/Hyks/hyks_QSkill.hyks_QSkill",
+    "Group": 601,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillHyks_Q1.Bat_SkillHyks_Q1",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "短时间内向前方一定范围进行次锁定攻击",
+      "InKey": "SimpleDesc_6101_1"
+    },
+    "Type": 3,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "秒内，向前方一定范围内的敌人进行次锁定攻击；释放期间可以按击方向键进行位移，位移结束后海因克斯生成只病毒手臂进行一次强力锁定攻击。",
+      "InKey": "Desc_6101_1"
+    }
+  },
+  "43": {
+    "Star": 1,
+    "ID": 6201,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 4
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "病毒能量",
+      "InKey": "Name_6201_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/Hyks/hyks_ESkill.hyks_ESkill",
+    "Group": 602,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillHyks_E1.Bat_SkillHyks_E1",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "发射病毒能量体吸引敌人并造成持续伤害",
+      "InKey": "SimpleDesc_6201_1"
+    },
+    "Type": 4,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "向前发出个沿固定轨迹飞行的病毒能量体，可吸引敌人并持续造成伤害。",
+      "InKey": "Desc_6201_1"
+    }
+  },
+  "44": {
+    "Star": 1,
+    "ID": 6301,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 1
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "双生乱舞",
+      "InKey": "Name_6301_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/Hyks/hyks_CSkill.hyks_CSkill",
+    "Group": 603,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillHyks_C1.Bat_SkillHyks_C1",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "海因克斯旋转射击，对周围所有敌人造成伤害。",
+      "InKey": "SimpleDesc_6301_1"
+    },
+    "Type": 5,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "海因克斯旋转射击，对周围所有敌人造成伤害。",
+      "InKey": "Desc_6301_1"
+    }
+  },
+  "45": {
+    "Star": 1,
+    "ID": 6401,
+    "InscriptionId": 0,
+    "SkillTags": {},
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "海因克斯光环",
+      "InKey": "Name_6401_1"
+    },
+    "VideoUrl": "",
+    "Group": 604,
+    "Quality": 3,
+    "IconPath": "",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "",
+      "InKey": "SimpleDesc_6401_1"
+    },
+    "Type": 2,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "敬请期待",
+      "InKey": "Desc_6401_1"
+    }
+  },
+  "46": {
+    "Star": 1,
+    "ID": 4060101,
+    "InscriptionId": 8020101,
+    "SkillTags": {
+      "1": 1,
+      "2": 2
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "电磁屏障",
+      "InKey": "Name_4060101_1"
+    },
+    "VideoUrl": "",
+    "Group": 605,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillGloria_B.Bat_SkillGloria_B",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "",
+      "InKey": "SimpleDesc_4060101_1"
+    },
+    "Type": 1,
+    "DescParams": {
+      "1": 5,
+      "2": 300
+    },
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "敬请期待",
+      "InKey": "Desc_4060101_1"
+    }
+  },
+  "47": {
+    "Star": 1,
+    "ID": 6601,
+    "InscriptionId": 0,
+    "SkillTags": {},
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "病毒之力",
+      "InKey": "Name_6601_1"
+    },
+    "VideoUrl": "",
+    "Group": 606,
+    "Quality": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillHyks_BD1.Bat_SkillHyks_BD1",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "释放技能获得自锁攻击",
+      "InKey": "SimpleDesc_6601_1"
+    },
+    "Type": 6,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "释放技能获得病毒活性，拥有病毒活性时射击会自动锁定敌人，病毒活性在射击时减少。击败被病毒感染的敌人会有概率掉落病毒因子，海因克斯每吸收个病毒因子提升自身所有伤害，同时提升队友所有伤害，最高次。",
+      "InKey": "Desc_6601_1"
+    }
+  },
+  "48": {
+    "Star": 1,
+    "ID": 19040000,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 12
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "攻击炮塔",
+      "InKey": "Name_19040000_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/Gloria/Gloria_ESkill.Gloria_ESkill",
+    "Group": 401,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillGloria_E.Bat_SkillGloria_E",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "放置攻击炮塔，炮塔会自动攻击附近的敌人。",
+      "InKey": "SimpleDesc_19040000_1"
+    },
+    "Type": 4,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "放置召唤物·攻击炮塔，炮塔优先攻击格罗莉亚肩射状态下命中的敌人。炮塔最多存在秒，最多同时存在个。主要技能可强化炮塔使其攻速翻倍。",
+      "InKey": "Desc_19040000_1"
+    }
+  },
+  "49": {
+    "Star": 1,
+    "ID": 19040001,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 11
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "轰炸小队",
+      "InKey": "Name_19040001_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/Gloria/Gloria_QSkill.Gloria_QSkill",
+    "Group": 402,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillGloria_QH.Bat_SkillGloria_QH",
+    "InscriptionExplainInfoList": {
+      "1": {
+        "InNamespace": "hero_TBHeroSkill",
+        "InTextLiteral": "防御零件拾取后的秒内获得体力值上限的临时护盾值。",
+        "InKey": "OBJHeroSkill_InscriptionExplainInfoList_19040001_1_1"
+      },
+      "2": {
+        "InNamespace": "hero_TBHeroSkill",
+        "InTextLiteral": "攻击零件拾取后的秒内提升最终伤害。",
+        "InKey": "OBJHeroSkill_InscriptionExplainInfoList_19040001_1_2"
+      }
+    },
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "回收所有召唤物并发射导弹攻击目标。",
+      "InKey": "SimpleDesc_19040001_1"
+    },
+    "Type": 3,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "格罗莉亚发射枚导弹攻击敌人，若场上有、技能放置的面包机与炮塔，则格罗莉亚将其分解并重组为枚导弹。每个被分解的召唤物会留下不同零件：被分解的面包机提供个【防御零件】、被分解的炮塔提供个【攻击零件】。",
+      "InKey": "Desc_19040001_1"
+    }
+  },
+  "50": {
+    "Star": 1,
+    "ID": 19040002,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 1,
+      "2": 9
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "面包机",
+      "InKey": "Name_19040002_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/Gloria/Gloria_CSkill.Gloria_CSkill",
+    "Group": 403,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillGloria_C.Bat_SkillGloria_C",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "放置面包机并获得护盾，为周围的友方单位持续恢复护盾。",
+      "InKey": "SimpleDesc_19040002_1"
+    },
+    "Type": 5,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "放置召唤物·面包机持续产出使友方单位恢复护盾的面包。面包机最多存在秒。最多同时存在个。面包机会自动强化，并提升恢复速度、范围以及护盾上限。放置面包机时会为格罗莉亚施加当前最大护盾值的临时护盾。",
+      "InKey": "Desc_19040002_1"
+    }
+  },
+  "51": {
+    "Star": 1,
+    "ID": 19040003,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 12
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "万能发明家",
+      "InKey": "Name_19040003_1"
+    },
+    "VideoUrl": "/Game/Rouge/Video/Skill/Gloria/Gloria_PassiveSkill.Gloria_PassiveSkill",
+    "Group": 404,
+    "Quality": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillGloria_B.Bat_SkillGloria_B",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "格罗莉亚可以远程释放无人机救援队友。",
+      "InKey": "SimpleDesc_19040003_1"
+    },
+    "Type": 6,
+    "DescParams": {},
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "格罗莉亚可以远程释放无人机救援队友。",
+      "InKey": "Desc_19040003_1"
+    }
+  },
+  "52": {
+    "Star": 1,
+    "ID": 3030101,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 11
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "重火力",
+      "InKey": "Name_3030101_1"
+    },
+    "VideoUrl": "",
+    "Group": 1001,
+    "Quality": 2,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_03_png.Skill_linglan_03_png",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "武器伤害增加点",
+      "InKey": "SimpleDesc_3030101_1"
+    },
+    "Type": 1,
+    "DescParams": {
+      "1": 50
+    },
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "武器伤害增加点",
+      "InKey": "Desc_3030101_1"
+    }
+  },
+  "53": {
+    "Star": 1,
+    "ID": 3030201,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 11
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "淬毒弹头",
+      "InKey": "Name_3030201_1"
+    },
+    "VideoUrl": "",
+    "Group": 1002,
+    "Quality": 2,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_03_png.Skill_linglan_03_png",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "毒元素伤害",
+      "InKey": "SimpleDesc_3030201_1"
+    },
+    "Type": 1,
+    "DescParams": {
+      "1": 100
+    },
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "毒元素伤害",
+      "InKey": "Desc_3030201_1"
+    }
+  },
+  "54": {
+    "Star": 1,
+    "ID": 3030301,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 11
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "感知",
+      "InKey": "Name_3030301_1"
+    },
+    "VideoUrl": "",
+    "Group": 1003,
+    "Quality": 2,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_03_png.Skill_linglan_03_png",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "弱点伤害提升",
+      "InKey": "SimpleDesc_3030301_1"
+    },
+    "Type": 1,
+    "DescParams": {
+      "1": 200
+    },
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "弱点伤害提升",
+      "InKey": "Desc_3030301_1"
+    }
+  },
+  "55": {
+    "Star": 1,
+    "ID": 3030401,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 11
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "幸运儿",
+      "InKey": "Name_3030401_1"
+    },
+    "VideoUrl": "",
+    "Group": 1004,
+    "Quality": 2,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_03_png.Skill_linglan_03_png",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "幸运一击伤害提升点",
+      "InKey": "SimpleDesc_3030401_1"
+    },
+    "Type": 1,
+    "DescParams": {
+      "1": 100
+    },
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "幸运一击伤害提升点",
+      "InKey": "Desc_3030401_1"
+    }
+  },
+  "56": {
+    "Star": 1,
+    "ID": 3030501,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 11
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "动能扩散",
+      "InKey": "Name_3030501_1"
+    },
+    "VideoUrl": "",
+    "Group": 1005,
+    "Quality": 2,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_03_png.Skill_linglan_03_png",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "技能伤害提升点",
+      "InKey": "SimpleDesc_3030501_1"
+    },
+    "Type": 1,
+    "DescParams": {
+      "1": 100
+    },
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "技能伤害提升点",
+      "InKey": "Desc_3030501_1"
+    }
+  },
+  "57": {
+    "Star": 1,
+    "ID": 3030601,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 11
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "效能超载",
+      "InKey": "Name_3030601_1"
+    },
+    "VideoUrl": "",
+    "Group": 1006,
+    "Quality": 2,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_03_png.Skill_linglan_03_png",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "技能提升点",
+      "InKey": "SimpleDesc_3030601_1"
+    },
+    "Type": 1,
+    "DescParams": {
+      "1": 100
+    },
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "技能提升点",
+      "InKey": "Desc_3030601_1"
+    }
+  },
+  "58": {
+    "Star": 1,
+    "ID": 3030701,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 11
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "燃烧弹头",
+      "InKey": "Name_3030701_1"
+    },
+    "VideoUrl": "",
+    "Group": 1007,
+    "Quality": 2,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_03_png.Skill_linglan_03_png",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "火元素伤害",
+      "InKey": "SimpleDesc_3030701_1"
+    },
+    "Type": 1,
+    "DescParams": {
+      "1": 100
+    },
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "火元素伤害",
+      "InKey": "Desc_3030701_1"
+    }
+  },
+  "59": {
+    "Star": 1,
+    "ID": 3030801,
+    "InscriptionId": 0,
+    "SkillTags": {
+      "1": 11
+    },
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "感电弹头",
+      "InKey": "Name_3030801_1"
+    },
+    "VideoUrl": "",
+    "Group": 1008,
+    "Quality": 2,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_03_png.Skill_linglan_03_png",
+    "InscriptionExplainInfoList": {},
+    "SkillDetailDesc": {},
+    "SimpleDescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "电元素伤害",
+      "InKey": "SimpleDesc_3030801_1"
+    },
+    "Type": 1,
+    "DescParams": {
+      "1": 100
+    },
+    "DescLocMeta": {
+      "InNamespace": "hero_TBHeroSkill",
+      "InTextLiteral": "电元素伤害",
+      "InKey": "Desc_3030801_1"
+    }
+  }
+}

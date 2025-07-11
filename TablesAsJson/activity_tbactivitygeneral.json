@@ -1,0 +1,78 @@
+﻿{
+  "10000": {
+    "descLocMeta": {
+      "InKey": "desc_10000",
+      "InNamespace": "activity_TBActivityGeneral",
+      "InTextLiteral": "签到七天，获取全新角色与外观。"
+    },
+    "rankScore": 10,
+    "openTime": "",
+    "nameLocMeta": {
+      "InKey": "name_10000",
+      "InNamespace": "activity_TBActivityGeneral",
+      "InTextLiteral": "七日签到"
+    },
+    "uiEndTime": "2045-12-31 05:00:00",
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/Activity/ActivityCommon/Frames/Icon_Activity_LoginReward_01.Icon_Activity_LoginReward_01",
+    "mallShelfList": {},
+    "UITitleAnim": "Ani_LoginRewardActivity_in",
+    "uiStartTime": "2023-03-01 00:00:00",
+    "uiTemplate": "UI_LoginRewardActivity",
+    "isShow": true,
+    "taskGroupList": {
+      "1": 200001
+    },
+    "ruleDescLocMeta": {
+      "InKey": "ruleDesc_10000",
+      "InNamespace": "activity_TBActivityGeneral",
+      "InTextLiteral": "基础规则：玩家每日可上线进行签到。累计签到天可领取心仪角色自选包。累计签到天可领取上校史诗外观赤途骑士。累计签到天共获取个解码器。"
+    },
+    "activityID": 10000
+  },
+  "10001": {
+    "descLocMeta": {
+      "InKey": "desc_10001",
+      "InNamespace": "activity_TBActivityGeneral",
+      "InTextLiteral": "完成法则的委托，获取丰厚奖赏。"
+    },
+    "rankScore": 9,
+    "openTime": "",
+    "nameLocMeta": {
+      "InKey": "name_10001",
+      "InNamespace": "activity_TBActivityGeneral",
+      "InTextLiteral": "法则轶闻"
+    },
+    "uiEndTime": "2045-12-31 05:00:00",
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/Activity/RuleTask/Frames/Icon_Activity_RuleTask_02.Icon_Activity_RuleTask_02",
+    "mallShelfList": {},
+    "UITitleAnim": "Ani_RuleTaskPanel_in",
+    "uiStartTime": "2023-03-01 00:00:00",
+    "uiTemplate": "UI_RuleTask",
+    "isShow": true,
+    "taskGroupList": {
+      "1": 200101,
+      "2": 200102,
+      "3": 200103,
+      "4": 200104,
+      "5": 200105,
+      "6": 200106,
+      "7": 200107,
+      "8": 200108,
+      "9": 200109,
+      "10": 200110,
+      "11": 200111,
+      "12": 200112,
+      "13": 200113,
+      "14": 200114,
+      "15": 200115,
+      "16": 200116,
+      "17": 200120
+    },
+    "ruleDescLocMeta": {
+      "InKey": "ruleDesc_10001",
+      "InNamespace": "activity_TBActivityGeneral",
+      "InTextLiteral": "基础规则：每日登录游戏接取法则委托。完成各法则的主要委托，即可领取对应奖励，并解锁下一法则委托。完成法则附加委托可以获得额外数据凭证。累计数据凭证可以兑换丰厚大奖。"
+    },
+    "activityID": 10001
+  }
+}

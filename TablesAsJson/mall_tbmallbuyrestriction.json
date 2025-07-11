@@ -1,0 +1,14 @@
+﻿{
+  "1": {
+    "OwnedAmount": 1,
+    "Desc": "武器皮肤检查",
+    "ResourceType": 9,
+    "ID": 1
+  },
+  "2": {
+    "OwnedAmount": 1,
+    "Desc": "英雄皮肤检查",
+    "ResourceType": 10,
+    "ID": 2
+  }
+}

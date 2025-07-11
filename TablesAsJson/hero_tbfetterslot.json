@@ -1,0 +1,26 @@
+﻿{
+  "3": {
+    "ID": 3,
+    "LevelReq": 0,
+    "ArrCost": {},
+    "DefaultOpen": true
+  },
+  "1": {
+    "ID": 1,
+    "LevelReq": 0,
+    "ArrCost": {},
+    "DefaultOpen": true
+  },
+  "2": {
+    "ID": 2,
+    "LevelReq": 0,
+    "ArrCost": {},
+    "DefaultOpen": true
+  },
+  "4": {
+    "ID": 4,
+    "LevelReq": 0,
+    "ArrCost": {},
+    "DefaultOpen": true
+  }
+}

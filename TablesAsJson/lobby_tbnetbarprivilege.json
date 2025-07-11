@@ -1,0 +1,16 @@
+﻿{
+  "2": {
+    "enhancedPrivilege": {
+      "1": {
+        "value": 20,
+        "key": 1
+      },
+      "2": {
+        "value": 20,
+        "key": 2
+      }
+    },
+    "firstNetBarReward": 9,
+    "privilegeType": 2
+  }
+}

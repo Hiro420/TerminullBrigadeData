@@ -1,0 +1,50 @@
+﻿{
+  "1": {
+    "ID": 1,
+    "ContentLocMeta": {
+      "InKey": "Content_1",
+      "InNamespace": "chat_TBChatContent",
+      "InTextLiteral": "内有敏感词，发送失败"
+    }
+  },
+  "2": {
+    "ID": 2,
+    "ContentLocMeta": {
+      "InKey": "Content_2",
+      "InNamespace": "chat_TBChatContent",
+      "InTextLiteral": "聊天消息发送过长"
+    }
+  },
+  "3": {
+    "ID": 3,
+    "ContentLocMeta": {
+      "InKey": "Content_3",
+      "InNamespace": "chat_TBChatContent",
+      "InTextLiteral": "发言频率太高，请秒后再试"
+    }
+  },
+  "4": {
+    "ID": 4,
+    "ContentLocMeta": {
+      "InKey": "Content_4",
+      "InNamespace": "chat_TBChatContent",
+      "InTextLiteral": "您的发言频率太快，请稍后再试"
+    }
+  },
+  "5": {
+    "ID": 5,
+    "ContentLocMeta": {
+      "InKey": "Content_5",
+      "InNamespace": "chat_TBChatContent",
+      "InTextLiteral": "对方已经离线，存入留言箱"
+    }
+  },
+  "6": {
+    "ID": 6,
+    "ContentLocMeta": {
+      "InKey": "Content_6",
+      "InNamespace": "chat_TBChatContent",
+      "InTextLiteral": "静默"
+    }
+  }
+}

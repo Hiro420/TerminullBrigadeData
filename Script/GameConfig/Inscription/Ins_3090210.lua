@@ -1,0 +1,37 @@
+local Ins_3090210 = 
+{
+	ID = 3090210,
+	Name = nil,
+	Desc = nil,
+	bIsCustomDesc = false,
+	bIstMergeEffectInUI  = true,
+	Rarity = 0,
+	Icon = "",
+	InscriptionDataAry = 
+	{
+		{
+			GenericModifyLevelId = "",
+			bIsShowGenericModifyLevelDescInUI = true,
+			ModifyLevelDescShowType = 0,
+			bIsShowHelpInUI = false,
+			bUseGenericModifyLevelData = false,
+			Desc = "造成角色2技能后",
+		},
+	},
+	ModifyLevelDescShowMode = 1,
+	ModifyLevelDescFmt = nil,
+	bIsUseDescWhenNotActived = false,
+	InscriptionCDData = 
+	{
+		CDName = nil,
+		CDDesc = nil,
+		CDIcon = "",
+		bIsShowCD = false,
+		bIsShowCDInBuff = true,
+	},
+	ModAdditionalNoteMap = 
+	{
+	},
+	ModGenreRoutineRowName = "",
+}
+return Ins_3090210

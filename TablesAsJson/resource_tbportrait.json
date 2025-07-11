@@ -1,0 +1,1503 @@
+﻿{
+  "81407": {
+    "ID": 81407,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P07.Icon_Head_P07",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81407",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81407",
+      "InTextLiteral": "啤酒桶先生"
+    },
+    "portraitID": 407,
+    "IsUnlockShow": false
+  },
+  "81408": {
+    "ID": 81408,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P08.Icon_Head_P08",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81408",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81408",
+      "InTextLiteral": "曙光剪影"
+    },
+    "portraitID": 408,
+    "IsUnlockShow": false
+  },
+  "81409": {
+    "ID": 81409,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P09.Icon_Head_P09",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81409",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81409",
+      "InTextLiteral": "能量电池"
+    },
+    "portraitID": 409,
+    "IsUnlockShow": false
+  },
+  "81410": {
+    "ID": 81410,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P15.Icon_Head_P15",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81410",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81410",
+      "InTextLiteral": ""
+    },
+    "portraitID": 410,
+    "IsUnlockShow": true
+  },
+  "81411": {
+    "ID": 81411,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P18.Icon_Head_P18",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81411",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81411",
+      "InTextLiteral": ""
+    },
+    "portraitID": 411,
+    "IsUnlockShow": true
+  },
+  "81412": {
+    "ID": 81412,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P12.Icon_Head_P12",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81412",
+      "InTextLiteral": "数据宝库·浮世骇客"
+    },
+    "initunlock": false,
+    "acquirePathID": 1005,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81412",
+      "InTextLiteral": "错误"
+    },
+    "portraitID": 412,
+    "IsUnlockShow": true
+  },
+  "81413": {
+    "ID": 81413,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P13.Icon_Head_P13",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81413",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81413",
+      "InTextLiteral": "棒棒糖"
+    },
+    "portraitID": 413,
+    "IsUnlockShow": false
+  },
+  "81414": {
+    "ID": 81414,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P10.Icon_Head_P10",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81414",
+      "InTextLiteral": "预约奖励"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81414",
+      "InTextLiteral": "黑客"
+    },
+    "portraitID": 414,
+    "IsUnlockShow": false
+  },
+  "81415": {
+    "ID": 81415,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P11.Icon_Head_P11",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81415",
+      "InTextLiteral": "原爆点通行证获得"
+    },
+    "initunlock": false,
+    "acquirePathID": 1023,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81415",
+      "InTextLiteral": "损毁"
+    },
+    "portraitID": 415,
+    "IsUnlockShow": true
+  },
+  "81416": {
+    "ID": 81416,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P16.Icon_Head_P16",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81416",
+      "InTextLiteral": "数据宝库·浮世骇客"
+    },
+    "initunlock": false,
+    "acquirePathID": 1005,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81416",
+      "InTextLiteral": "宇航员"
+    },
+    "portraitID": 416,
+    "IsUnlockShow": true
+  },
+  "81417": {
+    "ID": 81417,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P17.Icon_Head_P17",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81417",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81417",
+      "InTextLiteral": "天使降临"
+    },
+    "portraitID": 417,
+    "IsUnlockShow": false
+  },
+  "81418": {
+    "ID": 81418,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P14.Icon_Head_P14",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81418",
+      "InTextLiteral": "共研头号玩家专属"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81418",
+      "InTextLiteral": "先驱者"
+    },
+    "portraitID": 418,
+    "IsUnlockShow": true
+  },
+  "81419": {
+    "ID": 81419,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P19.Icon_Head_P19",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81419",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81419",
+      "InTextLiteral": "仓鼠大盗"
+    },
+    "portraitID": 419,
+    "IsUnlockShow": false
+  },
+  "81420": {
+    "ID": 81420,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P20.Icon_Head_P20",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81420",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81420",
+      "InTextLiteral": "赛博猫"
+    },
+    "portraitID": 420,
+    "IsUnlockShow": false
+  },
+  "81421": {
+    "ID": 81421,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P21.Icon_Head_P21",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81421",
+      "InTextLiteral": "数据宝库·浮世绘卷"
+    },
+    "initunlock": false,
+    "acquirePathID": 1005,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81421",
+      "InTextLiteral": "耳机"
+    },
+    "portraitID": 421,
+    "IsUnlockShow": true
+  },
+  "81422": {
+    "ID": 81422,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P22.Icon_Head_P22",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81422",
+      "InTextLiteral": "数据宝库·浮世绘卷"
+    },
+    "initunlock": false,
+    "acquirePathID": 1005,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81422",
+      "InTextLiteral": "机械兔"
+    },
+    "portraitID": 422,
+    "IsUnlockShow": true
+  },
+  "81423": {
+    "ID": 81423,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P23.Icon_Head_P23",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81423",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81423",
+      "InTextLiteral": "猫咪感染"
+    },
+    "portraitID": 423,
+    "IsUnlockShow": false
+  },
+  "81424": {
+    "ID": 81424,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P24.Icon_Head_P24",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81424",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81424",
+      "InTextLiteral": "奥伊兹"
+    },
+    "portraitID": 424,
+    "IsUnlockShow": false
+  },
+  "81425": {
+    "ID": 81425,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P25.Icon_Head_P25",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81425",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81425",
+      "InTextLiteral": "兔兔士兵"
+    },
+    "portraitID": 425,
+    "IsUnlockShow": false
+  },
+  "81426": {
+    "ID": 81426,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P26.Icon_Head_P26",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81426",
+      "InTextLiteral": "数据宝库·浮世绘卷"
+    },
+    "initunlock": false,
+    "acquirePathID": 1005,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81426",
+      "InTextLiteral": "飞碟机器人"
+    },
+    "portraitID": 426,
+    "IsUnlockShow": true
+  },
+  "81427": {
+    "ID": 81427,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P27.Icon_Head_P27",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81427",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81427",
+      "InTextLiteral": ""
+    },
+    "portraitID": 427,
+    "IsUnlockShow": true
+  },
+  "81428": {
+    "ID": 81428,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P28.Icon_Head_P28",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81428",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81428",
+      "InTextLiteral": ""
+    },
+    "portraitID": 428,
+    "IsUnlockShow": true
+  },
+  "81429": {
+    "ID": 81429,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P29.Icon_Head_P29",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81429",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81429",
+      "InTextLiteral": ""
+    },
+    "portraitID": 429,
+    "IsUnlockShow": true
+  },
+  "81430": {
+    "ID": 81430,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P30.Icon_Head_P30",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81430",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81430",
+      "InTextLiteral": "星门"
+    },
+    "portraitID": 430,
+    "IsUnlockShow": true
+  },
+  "81431": {
+    "ID": 81431,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P31.Icon_Head_P31",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81431",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81431",
+      "InTextLiteral": ""
+    },
+    "portraitID": 431,
+    "IsUnlockShow": true
+  },
+  "81432": {
+    "ID": 81432,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P32.Icon_Head_P32",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81432",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81432",
+      "InTextLiteral": ""
+    },
+    "portraitID": 432,
+    "IsUnlockShow": true
+  },
+  "81433": {
+    "ID": 81433,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P33.Icon_Head_P33",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81433",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81433",
+      "InTextLiteral": ""
+    },
+    "portraitID": 433,
+    "IsUnlockShow": true
+  },
+  "81434": {
+    "ID": 81434,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_O10.Icon_Head_O10",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81434",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81434",
+      "InTextLiteral": "感染者"
+    },
+    "portraitID": 434,
+    "IsUnlockShow": true
+  },
+  "81435": {
+    "ID": 81435,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P35.Icon_Head_P35",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81435",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81435",
+      "InTextLiteral": "共创者"
+    },
+    "portraitID": 435,
+    "IsUnlockShow": true
+  },
+  "81436": {
+    "ID": 81436,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P36.Icon_Head_P36",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81436",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81436",
+      "InTextLiteral": "海因克斯"
+    },
+    "portraitID": 436,
+    "IsUnlockShow": true
+  },
+  "81437": {
+    "ID": 81437,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P37.Icon_Head_P37",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81437",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81437",
+      "InTextLiteral": "羁绊"
+    },
+    "portraitID": 437,
+    "IsUnlockShow": true
+  },
+  "81438": {
+    "ID": 81438,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P38.Icon_Head_P38",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81438",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81438",
+      "InTextLiteral": ""
+    },
+    "portraitID": 438,
+    "IsUnlockShow": true
+  },
+  "81439": {
+    "ID": 81439,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P39.Icon_Head_P39",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81439",
+      "InTextLiteral": "专属"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81439",
+      "InTextLiteral": "WEGAME"
+    },
+    "portraitID": 439,
+    "IsUnlockShow": true
+  },
+  "81440": {
+    "ID": 81440,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P40.Icon_Head_P40",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81440",
+      "InTextLiteral": "专属"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81440",
+      "InTextLiteral": "STEAM"
+    },
+    "portraitID": 440,
+    "IsUnlockShow": true
+  },
+  "81441": {
+    "ID": 81441,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P41.Icon_Head_P41",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81441",
+      "InTextLiteral": "网吧专属"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81441",
+      "InTextLiteral": "网吧"
+    },
+    "portraitID": 441,
+    "IsUnlockShow": true
+  },
+  "81442": {
+    "ID": 81442,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P42.Icon_Head_P42",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81442",
+      "InTextLiteral": "网鱼网咖专属"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81442",
+      "InTextLiteral": "网鱼网咖"
+    },
+    "portraitID": 442,
+    "IsUnlockShow": true
+  },
+  "81443": {
+    "ID": 81443,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P43.Icon_Head_P43",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81443",
+      "InTextLiteral": "微信专属"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81443",
+      "InTextLiteral": "微信"
+    },
+    "portraitID": 443,
+    "IsUnlockShow": true
+  },
+  "81444": {
+    "ID": 81444,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P44.Icon_Head_P44",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81444",
+      "InTextLiteral": "专属"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81444",
+      "InTextLiteral": "QQ"
+    },
+    "portraitID": 444,
+    "IsUnlockShow": true
+  },
+  "81445": {
+    "ID": 81445,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P45.Icon_Head_P45",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81445",
+      "InTextLiteral": "超核玩家专属"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81445",
+      "InTextLiteral": "超核玩家"
+    },
+    "portraitID": 445,
+    "IsUnlockShow": true
+  },
+  "81446": {
+    "ID": 81446,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P46.Icon_Head_P46",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81446",
+      "InTextLiteral": "心悦俱乐部专属"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81446",
+      "InTextLiteral": "心悦俱乐部"
+    },
+    "portraitID": 446,
+    "IsUnlockShow": true
+  },
+  "81447": {
+    "ID": 81447,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P47.Icon_Head_P47",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81447",
+      "InTextLiteral": "加速器专属"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81447",
+      "InTextLiteral": "加速器"
+    },
+    "portraitID": 447,
+    "IsUnlockShow": true
+  },
+  "81448": {
+    "ID": 81448,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P48.Icon_Head_P48",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81448",
+      "InTextLiteral": "小黑盒专属"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81448",
+      "InTextLiteral": "小黑盒"
+    },
+    "portraitID": 448,
+    "IsUnlockShow": true
+  },
+  "81449": {
+    "ID": 81449,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P49.Icon_Head_P49",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81449",
+      "InTextLiteral": "原爆点通行证获得"
+    },
+    "initunlock": false,
+    "acquirePathID": 1023,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81449",
+      "InTextLiteral": "零日危机"
+    },
+    "portraitID": 449,
+    "IsUnlockShow": true
+  },
+  "81704": {
+    "ID": 81704,
+    "portraitIconPath": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
+    "EffectPath": "/Game/Rouge/UI/VX/UI_Effect/Avatar/WBP_Eff_Avatar_YLN_1.WBP_Eff_Avatar_YLN_1",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81704",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81704",
+      "InTextLiteral": "鬼面具"
+    },
+    "portraitID": 704,
+    "IsUnlockShow": false
+  },
+  "81705": {
+    "ID": 81705,
+    "portraitIconPath": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
+    "EffectPath": "/Game/Rouge/UI/VX/UI_Effect/Avatar/WBP_Eff_Avatar_Fox.WBP_Eff_Avatar_Fox",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81705",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81705",
+      "InTextLiteral": "狐面具"
+    },
+    "portraitID": 705,
+    "IsUnlockShow": true
+  },
+  "81201": {
+    "ID": 81201,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B01.Icon_Head_B01",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81201",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81201",
+      "InTextLiteral": "反抗者"
+    },
+    "portraitID": 201,
+    "IsUnlockShow": false
+  },
+  "81202": {
+    "ID": 81202,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B08.Icon_Head_B08",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81202",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81202",
+      "InTextLiteral": "烈火"
+    },
+    "portraitID": 202,
+    "IsUnlockShow": false
+  },
+  "81203": {
+    "ID": 81203,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B09.Icon_Head_B09",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81203",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81203",
+      "InTextLiteral": "爆炸"
+    },
+    "portraitID": 203,
+    "IsUnlockShow": true
+  },
+  "81204": {
+    "ID": 81204,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B10.Icon_Head_B10",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81204",
+      "InTextLiteral": "原爆点通行证获得"
+    },
+    "initunlock": false,
+    "acquirePathID": 1023,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81204",
+      "InTextLiteral": "爆破"
+    },
+    "portraitID": 204,
+    "IsUnlockShow": true
+  },
+  "81205": {
+    "ID": 81205,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B11.Icon_Head_B11",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81205",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81205",
+      "InTextLiteral": "尖刺仙人掌"
+    },
+    "portraitID": 205,
+    "IsUnlockShow": true
+  },
+  "81206": {
+    "ID": 81206,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B12.Icon_Head_B12",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81206",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81206",
+      "InTextLiteral": "重拳出击"
+    },
+    "portraitID": 206,
+    "IsUnlockShow": true
+  },
+  "81207": {
+    "ID": 81207,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B13.Icon_Head_B13",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81207",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81207",
+      "InTextLiteral": "大脚车"
+    },
+    "portraitID": 207,
+    "IsUnlockShow": true
+  },
+  "81208": {
+    "ID": 81208,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B14.Icon_Head_B14",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81208",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81208",
+      "InTextLiteral": "秘密监控"
+    },
+    "portraitID": 208,
+    "IsUnlockShow": true
+  },
+  "81209": {
+    "ID": 81209,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B15.Icon_Head_B15",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81209",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81209",
+      "InTextLiteral": "冠军"
+    },
+    "portraitID": 209,
+    "IsUnlockShow": true
+  },
+  "81210": {
+    "ID": 81210,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B16.Icon_Head_B16",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81210",
+      "InTextLiteral": "相位测试获得"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81210",
+      "InTextLiteral": "漂移中"
+    },
+    "portraitID": 210,
+    "IsUnlockShow": false
+  },
+  "81211": {
+    "ID": 81211,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B17.Icon_Head_B17",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81211",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81211",
+      "InTextLiteral": "冠军手柄"
+    },
+    "portraitID": 211,
+    "IsUnlockShow": true
+  },
+  "81212": {
+    "ID": 81212,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B18.Icon_Head_B18",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81212",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81212",
+      "InTextLiteral": "机械"
+    },
+    "portraitID": 212,
+    "IsUnlockShow": true
+  },
+  "81213": {
+    "ID": 81213,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B19.Icon_Head_B19",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81213",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81213",
+      "InTextLiteral": "矩阵"
+    },
+    "portraitID": 213,
+    "IsUnlockShow": true
+  },
+  "81214": {
+    "ID": 81214,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B20.Icon_Head_B20",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81214",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81214",
+      "InTextLiteral": "猫头鹰"
+    },
+    "portraitID": 214,
+    "IsUnlockShow": true
+  },
+  "81215": {
+    "ID": 81215,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B21.Icon_Head_B21",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81215",
+      "InTextLiteral": "商城帝谷币兑换"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81215",
+      "InTextLiteral": "齿轮"
+    },
+    "portraitID": 215,
+    "IsUnlockShow": false
+  },
+  "81216": {
+    "ID": 81216,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B22.Icon_Head_B22",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81216",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81216",
+      "InTextLiteral": "震爆弹"
+    },
+    "portraitID": 216,
+    "IsUnlockShow": true
+  },
+  "81217": {
+    "ID": 81217,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B23.Icon_Head_B23",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81217",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81217",
+      "InTextLiteral": "源世界"
+    },
+    "portraitID": 217,
+    "IsUnlockShow": true
+  },
+  "81218": {
+    "ID": 81218,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B24.Icon_Head_B24",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81218",
+      "InTextLiteral": "相位测试获得"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81218",
+      "InTextLiteral": "机器人"
+    },
+    "portraitID": 218,
+    "IsUnlockShow": false
+  },
+  "81001": {
+    "ID": 81001,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Head01_07.Icon_Head01_07",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81001",
+      "InTextLiteral": ""
+    },
+    "initunlock": true,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81001",
+      "InTextLiteral": "代号"
+    },
+    "portraitID": 1,
+    "IsUnlockShow": false
+  },
+  "81002": {
+    "ID": 81002,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Head01_06.Icon_Head01_06",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81002",
+      "InTextLiteral": ""
+    },
+    "initunlock": true,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81002",
+      "InTextLiteral": "注视"
+    },
+    "portraitID": 2,
+    "IsUnlockShow": false
+  },
+  "81003": {
+    "ID": 81003,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Head01_05.Icon_Head01_05",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81003",
+      "InTextLiteral": ""
+    },
+    "initunlock": true,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81003",
+      "InTextLiteral": "多肉监视器"
+    },
+    "portraitID": 3,
+    "IsUnlockShow": false
+  },
+  "81004": {
+    "ID": 81004,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Head01_04.Icon_Head01_04",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81004",
+      "InTextLiteral": ""
+    },
+    "initunlock": true,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81004",
+      "InTextLiteral": "环都"
+    },
+    "portraitID": 4,
+    "IsUnlockShow": false
+  },
+  "81005": {
+    "ID": 81005,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Head01_03.Icon_Head01_03",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81005",
+      "InTextLiteral": ""
+    },
+    "initunlock": true,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81005",
+      "InTextLiteral": "千锤百炼"
+    },
+    "portraitID": 5,
+    "IsUnlockShow": false
+  },
+  "81006": {
+    "ID": 81006,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_G05.Icon_Head_G05",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81006",
+      "InTextLiteral": "首测通关获取"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81006",
+      "InTextLiteral": "艾安"
+    },
+    "portraitID": 6,
+    "IsUnlockShow": false
+  },
+  "81709": {
+    "ID": 81709,
+    "portraitIconPath": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
+    "EffectPath": "/Game/Rouge/UI/VX/UI_Effect/Avatar/WBP_Eff_Avatar_S1.WBP_Eff_Avatar_S1",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81709",
+      "InTextLiteral": "商城修正行动兑换"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81709",
+      "InTextLiteral": "病毒终结者"
+    },
+    "portraitID": 709,
+    "IsUnlockShow": false
+  },
+  "81703": {
+    "ID": 81703,
+    "portraitIconPath": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
+    "EffectPath": "/Game/Rouge/UI/VX/UI_Effect/Avatar/WBP_Eff_Avatar_XLL_1.WBP_Eff_Avatar_XLL_1",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81703",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81703",
+      "InTextLiteral": "机械熊先生"
+    },
+    "portraitID": 703,
+    "IsUnlockShow": false
+  },
+  "81702": {
+    "ID": 81702,
+    "portraitIconPath": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
+    "EffectPath": "/Game/Rouge/UI/VX/UI_Effect/Avatar/WBP_Eff_Avatar_RiMu.WBP_Eff_Avatar_RiMu",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81702",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81702",
+      "InTextLiteral": "像素曙光"
+    },
+    "portraitID": 702,
+    "IsUnlockShow": false
+  },
+  "81401": {
+    "ID": 81401,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P01.Icon_Head_P01",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81401",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81401",
+      "InTextLiteral": "双枪"
+    },
+    "portraitID": 401,
+    "IsUnlockShow": false
+  },
+  "81402": {
+    "ID": 81402,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P02.Icon_Head_P02",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81402",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81402",
+      "InTextLiteral": "双生"
+    },
+    "portraitID": 402,
+    "IsUnlockShow": false
+  },
+  "81403": {
+    "ID": 81403,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_B27.Icon_Head_B27",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81403",
+      "InTextLiteral": "先锋测试获得"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81403",
+      "InTextLiteral": "手雷"
+    },
+    "portraitID": 403,
+    "IsUnlockShow": false
+  },
+  "81404": {
+    "ID": 81404,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P04.Icon_Head_P04",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81404",
+      "InTextLiteral": "数据宝库·浮世骇客"
+    },
+    "initunlock": false,
+    "acquirePathID": 1005,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81404",
+      "InTextLiteral": "香蕉手雷"
+    },
+    "portraitID": 404,
+    "IsUnlockShow": true
+  },
+  "81405": {
+    "ID": 81405,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P05.Icon_Head_P05",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81405",
+      "InTextLiteral": "先锋测试获得"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81405",
+      "InTextLiteral": "游戏机"
+    },
+    "portraitID": 405,
+    "IsUnlockShow": false
+  },
+  "81406": {
+    "ID": 81406,
+    "portraitIconPath": "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P06.Icon_Head_P06",
+    "EffectPath": "",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81406",
+      "InTextLiteral": ""
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81406",
+      "InTextLiteral": "暗影注视"
+    },
+    "portraitID": 406,
+    "IsUnlockShow": false
+  },
+  "81701": {
+    "ID": 81701,
+    "portraitIconPath": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
+    "EffectPath": "/Game/Rouge/UI/VX/UI_Effect/Avatar/WBP_Eff_Avatar_TLS_1.WBP_Eff_Avatar_TLS_1",
+    "LinkDescLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "LinkDesc_81701",
+      "InTextLiteral": "不翻译不投放"
+    },
+    "initunlock": false,
+    "acquirePathID": 0,
+    "portraitNameLocMeta": {
+      "InNamespace": "resource_TBPortrait",
+      "InKey": "portraitName_81701",
+      "InTextLiteral": "上校剪影"
+    },
+    "portraitID": 701,
+    "IsUnlockShow": true
+  }
+}

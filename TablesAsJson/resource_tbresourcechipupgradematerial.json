@@ -1,0 +1,21 @@
+﻿{
+  "99006": {
+    "Type": 1,
+    "ID": 99006,
+    "Exp": 500,
+    "StackLimit": 9999,
+    "CanEatByChipType": {
+      "1": 1,
+      "2": 2
+    }
+  },
+  "99007": {
+    "Type": 1,
+    "ID": 99007,
+    "Exp": 1000,
+    "StackLimit": 9999,
+    "CanEatByChipType": {
+      "1": 2
+    }
+  }
+}

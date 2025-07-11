@@ -1,0 +1,578 @@
+﻿{
+  "31": {
+    "ObjectID": 31,
+    "TaskGroupid": 6031,
+    "PSPoint": 50,
+    "UnlockType": "Binary",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "通关难度的环都",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_31"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "理想主义",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_31"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 31
+  },
+  "1": {
+    "ObjectID": 1,
+    "TaskGroupid": 6001,
+    "PSPoint": 10,
+    "UnlockType": "Binary",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "账号等级达到级",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_1"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "初识矩阵",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_1"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 1
+  },
+  "2": {
+    "ObjectID": 2,
+    "TaskGroupid": 6002,
+    "PSPoint": 10,
+    "UnlockType": "Binary",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "名角色的熟练度达到级",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_2"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "心意相通",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_2"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 2
+  },
+  "3": {
+    "ObjectID": 3,
+    "TaskGroupid": 6003,
+    "PSPoint": 10,
+    "UnlockType": "Binary",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "拥有第个好友",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_3"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "社交新人",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_3"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 3
+  },
+  "4": {
+    "ObjectID": 4,
+    "TaskGroupid": 6004,
+    "PSPoint": 20,
+    "UnlockType": "Binary",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "拥有个好友",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_4"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "社交名流",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_4"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 4
+  },
+  "5": {
+    "ObjectID": 5,
+    "TaskGroupid": 6005,
+    "PSPoint": 20,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "命中敌人弱点次",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_5"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "精准命中",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_5"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 5
+  },
+  "6": {
+    "ObjectID": 6,
+    "TaskGroupid": 6006,
+    "PSPoint": 10,
+    "UnlockType": "Binary",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "击败惩戒者次",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_6"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "监管者",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_6"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 6
+  },
+  "7": {
+    "ObjectID": 7,
+    "TaskGroupid": 6007,
+    "PSPoint": 10,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "击败个敌人",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_7"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "清理能手",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_7"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 7
+  },
+  "8": {
+    "ObjectID": 8,
+    "TaskGroupid": 6008,
+    "PSPoint": 10,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "救援队友次",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_8"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "团队合作",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_8"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 8
+  },
+  "9": {
+    "ObjectID": 9,
+    "TaskGroupid": 6009,
+    "PSPoint": 10,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "击败首领次",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_9"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "巨人捕手",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_9"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 9
+  },
+  "10": {
+    "ObjectID": 10,
+    "TaskGroupid": 6010,
+    "PSPoint": 10,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "打爆个炸药桶",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_10"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "燃起来了",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_10"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 10
+  },
+  "11": {
+    "ObjectID": 11,
+    "TaskGroupid": 6011,
+    "PSPoint": 10,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "提升权限品质次",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_11"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "神之子",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_11"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 11
+  },
+  "12": {
+    "ObjectID": 12,
+    "TaskGroupid": 6012,
+    "PSPoint": 10,
+    "UnlockType": "Binary",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "获得次",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_12"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "第一名",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_12"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 12
+  },
+  "13": {
+    "ObjectID": 13,
+    "TaskGroupid": 6013,
+    "PSPoint": 10,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "在商店购买商品次",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_13"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "欢迎光临",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_13"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 13
+  },
+  "14": {
+    "ObjectID": 14,
+    "TaskGroupid": 6014,
+    "PSPoint": 10,
+    "UnlockType": "Binary",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "首次获得传说品质稳宝",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_14"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "秘宝发掘者",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_14"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 14
+  },
+  "15": {
+    "ObjectID": 15,
+    "TaskGroupid": 6015,
+    "PSPoint": 20,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "获得次传说品质秘宝",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_15"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "秘宝收藏家",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_15"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 15
+  },
+  "16": {
+    "ObjectID": 16,
+    "TaskGroupid": 6016,
+    "PSPoint": 10,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "在场景中拾取到个数据情报",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_16"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "小插曲",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_16"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 16
+  },
+  "17": {
+    "ObjectID": 17,
+    "TaskGroupid": 6017,
+    "PSPoint": 10,
+    "UnlockType": "Binary",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "成功通过次任意世界",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_17"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "势不可当",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_17"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 17
+  },
+  "18": {
+    "ObjectID": 18,
+    "TaskGroupid": 6018,
+    "PSPoint": 10,
+    "UnlockType": "Binary",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "激活任意条能力模块的强化分支",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_18"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "职业规划",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_18"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 18
+  },
+  "19": {
+    "ObjectID": 19,
+    "TaskGroupid": 6019,
+    "PSPoint": 50,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "账号等级达到级",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_19"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "熟能生巧",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_19"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 19
+  },
+  "20": {
+    "ObjectID": 20,
+    "TaskGroupid": 6020,
+    "PSPoint": 20,
+    "UnlockType": "Binary",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "名角色的熟练度达到级",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_20"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "亲密关系",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_20"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 20
+  },
+  "21": {
+    "ObjectID": 21,
+    "TaskGroupid": 6021,
+    "PSPoint": 20,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "获得次",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_21"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "战斗大师",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_21"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 21
+  },
+  "22": {
+    "ObjectID": 22,
+    "TaskGroupid": 6022,
+    "PSPoint": 50,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "命中敌人弱点次",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_22"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "一击必中",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_22"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 22
+  },
+  "23": {
+    "ObjectID": 23,
+    "TaskGroupid": 6023,
+    "PSPoint": 50,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "在商店购买商品次",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_23"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "购物清单",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_23"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 23
+  },
+  "24": {
+    "ObjectID": 24,
+    "TaskGroupid": 6024,
+    "PSPoint": 50,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "战斗内累计获得金币",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_24"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "大富翁",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_24"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 24
+  },
+  "25": {
+    "ObjectID": 25,
+    "TaskGroupid": 6025,
+    "PSPoint": 100,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "获得次传说品质秘宝",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_25"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "秘宝专家",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_25"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 25
+  },
+  "26": {
+    "ObjectID": 26,
+    "TaskGroupid": 6026,
+    "PSPoint": 50,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "成功通过次任意世界",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_26"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "势如破竹",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_26"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 26
+  },
+  "27": {
+    "ObjectID": 27,
+    "TaskGroupid": 6027,
+    "PSPoint": 50,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "在场景中拾取到个数据情报",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_27"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "情报达人",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_27"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 27
+  },
+  "28": {
+    "ObjectID": 28,
+    "TaskGroupid": 6028,
+    "PSPoint": 100,
+    "UnlockType": "Binary",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "激活全部条能力模块的强化分支",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_28"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "全面成长",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_28"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 28
+  },
+  "29": {
+    "ObjectID": 29,
+    "TaskGroupid": 6029,
+    "PSPoint": 50,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "获得次双重权限",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_29"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "智能眷顾",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_29"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 29
+  },
+  "30": {
+    "ObjectID": 30,
+    "TaskGroupid": 6030,
+    "PSPoint": 100,
+    "UnlockType": "Progressive",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "击败首领次",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_30"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "巨人终结者",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_30"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 30
+  },
+  "32": {
+    "ObjectID": 32,
+    "TaskGroupid": 6032,
+    "PSPoint": 50,
+    "UnlockType": "Binary",
+    "TaskcontentLocMeta": {
+      "InTextLiteral": "通关难度的炽热焦土次",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskcontent_32"
+    },
+    "TasknameLocMeta": {
+      "InTextLiteral": "真正的信仰",
+      "InNamespace": "achievement_TBPS5Achievement",
+      "InKey": "Taskname_32"
+    },
+    "trophyGroupObjectId": "_baseGameGroup",
+    "TrophyID": 32
+  }
+}

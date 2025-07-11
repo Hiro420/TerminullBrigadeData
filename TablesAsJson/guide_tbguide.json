@@ -1,0 +1,824 @@
+﻿{
+  "200": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "战斗教程",
+      "InKey": "name_200"
+    },
+    "guidelist": {
+      "1": 20000,
+      "2": 20001
+    },
+    "id": 200,
+    "eventtype": 2,
+    "intohandbook": 1,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 2,
+    "guidetype": 4,
+    "triggerevent": ""
+  },
+  "201": {
+    "note": "不投放",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "权限能力",
+      "InKey": "name_201"
+    },
+    "guidelist": {
+      "1": 20101,
+      "2": 20102
+    },
+    "id": 201,
+    "eventtype": 2,
+    "intohandbook": 1,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 2,
+    "guidetype": 2,
+    "triggerevent": "World.GenericModify.OnPlayerEnterArea_Mute"
+  },
+  "202": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "秘宝",
+      "InKey": "name_202"
+    },
+    "guidelist": {
+      "1": 20201,
+      "2": 20202
+    },
+    "id": 202,
+    "eventtype": 2,
+    "intohandbook": 1,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 2,
+    "guidetype": 2,
+    "triggerevent": "World.AttributeModify.OnPickup"
+  },
+  "204": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "道具商店",
+      "InKey": "name_204"
+    },
+    "guidelist": {
+      "1": 20401,
+      "2": 20402
+    },
+    "id": 204,
+    "eventtype": 2,
+    "intohandbook": 1,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 2,
+    "guidetype": 4,
+    "triggerevent": ""
+  },
+  "205": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "数字祈愈程序",
+      "InKey": "name_205"
+    },
+    "guidelist": {
+      "1": 20501
+    },
+    "id": 205,
+    "eventtype": 2,
+    "intohandbook": 1,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 2,
+    "guidetype": 4,
+    "triggerevent": ""
+  },
+  "206": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "弱点伤害",
+      "InKey": "name_206"
+    },
+    "guidelist": {
+      "1": 20601
+    },
+    "id": 206,
+    "eventtype": 2,
+    "intohandbook": 1,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 2,
+    "guidetype": 4,
+    "triggerevent": ""
+  },
+  "207": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "部位破坏",
+      "InKey": "name_207"
+    },
+    "guidelist": {
+      "1": 20701
+    },
+    "id": 207,
+    "eventtype": 2,
+    "intohandbook": 1,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 2,
+    "guidetype": 4,
+    "triggerevent": ""
+  },
+  "208": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "能力词条",
+      "InKey": "name_208"
+    },
+    "guidelist": {
+      "1": 20801
+    },
+    "id": 208,
+    "eventtype": 2,
+    "intohandbook": 1,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 2,
+    "guidetype": 4,
+    "triggerevent": ""
+  },
+  "209": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "能力模块",
+      "InKey": "name_209"
+    },
+    "guidelist": {
+      "1": 20901,
+      "2": 20902
+    },
+    "id": 209,
+    "eventtype": 2,
+    "intohandbook": 1,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 2,
+    "guidetype": 4,
+    "triggerevent": ""
+  },
+  "210": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "战斗矩阵",
+      "InKey": "name_210"
+    },
+    "guidelist": {
+      "1": 21001
+    },
+    "id": 210,
+    "eventtype": 2,
+    "intohandbook": 1,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 2,
+    "guidetype": 4,
+    "triggerevent": ""
+  },
+  "211": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "技能类型",
+      "InKey": "name_211"
+    },
+    "guidelist": {
+      "1": 21101,
+      "2": 21102,
+      "3": 21103
+    },
+    "id": 211,
+    "eventtype": 2,
+    "intohandbook": 1,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 2,
+    "guidetype": 4,
+    "triggerevent": ""
+  },
+  "212": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "狂暴",
+      "InKey": "name_212"
+    },
+    "guidelist": {
+      "1": 21201
+    },
+    "id": 212,
+    "eventtype": 3,
+    "intohandbook": 1,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 2,
+    "guidetype": 3,
+    "triggerevent": "Global.BossBerserk"
+  },
+  "100": {
+    "note": "不投放",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "主线任务通话备注",
+      "InKey": "name_100"
+    },
+    "guidelist": {
+      "1": 10100
+    },
+    "id": 100,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnInviteDialogueShow_Mute"
+  },
+  "101": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "角色教学备注",
+      "InKey": "name_101"
+    },
+    "guidelist": {
+      "1": 10101,
+      "2": 10102,
+      "3": 10103,
+      "4": 10104,
+      "5": 10105
+    },
+    "id": 101,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnInitialHeroSelected"
+  },
+  "102": {
+    "note": "",
+    "preguidelist": {
+      "1": 106
+    },
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "能力模块教学备注",
+      "InKey": "name_102"
+    },
+    "guidelist": {
+      "1": 10201,
+      "2": 10202,
+      "3": 10203,
+      "4": 10204
+    },
+    "id": 102,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnTalentPanelShow"
+  },
+  "103": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "主线选关新世界备注",
+      "InKey": "name_103"
+    },
+    "guidelist": {
+      "1": 10301,
+      "2": 10302,
+      "3": 10303
+    },
+    "id": 103,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnBanditUnLock"
+  },
+  "104": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "更换武器备注",
+      "InKey": "name_104"
+    },
+    "guidelist": {
+      "1": 10401,
+      "2": 10402,
+      "3": 10403,
+      "4": 10404,
+      "5": 10405,
+      "6": 10406,
+      "7": 10407,
+      "8": 10408
+    },
+    "id": 104,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnOwningSecondWeapon"
+  },
+  "105": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "装备模组备注",
+      "InKey": "name_105"
+    },
+    "guidelist": {
+      "1": 10501,
+      "2": 10502,
+      "3": 10503,
+      "4": 10504,
+      "5": 10505
+    },
+    "id": 105,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnOwningPuzzle"
+  },
+  "106": {
+    "note": "",
+    "preguidelist": {
+      "1": 101
+    },
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "引导点开始游戏备注",
+      "InKey": "name_106"
+    },
+    "guidelist": {
+      "1": 10601
+    },
+    "id": 106,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnLobbyShowAndChecked"
+  },
+  "107": {
+    "note": "",
+    "preguidelist": {
+      "1": 106
+    },
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "点击任务查看备注",
+      "InKey": "name_107"
+    },
+    "guidelist": {
+      "1": 10701
+    },
+    "id": 107,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnLobbyShowAndChecked"
+  },
+  "108": {
+    "note": "不投放",
+    "preguidelist": {
+      "1": 106
+    },
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "领取任务奖励",
+      "InKey": "name_108"
+    },
+    "guidelist": {
+      "1": 10801
+    },
+    "id": 108,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 2,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnMainTaskRewardUnlock_Mute"
+  },
+  "109": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "熟练度",
+      "InKey": "name_109"
+    },
+    "guidelist": {
+      "1": 10901,
+      "2": 10902,
+      "3": 10903,
+      "4": 10904,
+      "5": 10905,
+      "6": 10906
+    },
+    "id": 109,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnProficiencyUnlock"
+  },
+  "110": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "新难度备注",
+      "InKey": "name_110"
+    },
+    "guidelist": {
+      "1": 11001,
+      "2": 11002,
+      "3": 11003,
+      "4": 11004,
+      "5": 11005
+    },
+    "id": 110,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnRingedCityUnLockDifficulty2"
+  },
+  "111": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "爬塔备注",
+      "InKey": "name_111"
+    },
+    "guidelist": {
+      "1": 11101,
+      "2": 11102,
+      "3": 11103,
+      "4": 11104,
+      "5": 11105,
+      "6": 11106
+    },
+    "id": 111,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 3,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnClimbTowerUnLock"
+  },
+  "301": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "首次引导备注",
+      "InKey": "name_301"
+    },
+    "guidelist": {},
+    "id": 301,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": true,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": ""
+  },
+  "302": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "初次权限升级引导备注",
+      "InKey": "name_302"
+    },
+    "guidelist": {
+      "1": 30201
+    },
+    "id": 302,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": true,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": ""
+  },
+  "303": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "二次获得权限引导备注",
+      "InKey": "name_303"
+    },
+    "guidelist": {
+      "1": 30301,
+      "2": 30302
+    },
+    "id": 303,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": true,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": ""
+  },
+  "304": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "首次商店教学备注",
+      "InKey": "name_304"
+    },
+    "guidelist": {
+      "1": 30401,
+      "2": 30402,
+      "3": 30403,
+      "4": 30404
+    },
+    "id": 304,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": true,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": ""
+  },
+  "305": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "首次失败教学通用【通用】备注",
+      "InKey": "name_305"
+    },
+    "guidelist": {
+      "1": 30501,
+      "2": 30502
+    },
+    "id": 305,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnSettlementFail"
+  },
+  "306": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "初次获得权限引导备注",
+      "InKey": "name_306"
+    },
+    "guidelist": {
+      "1": 30601,
+      "2": 30602,
+      "3": 30603
+    },
+    "id": 306,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": true,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": ""
+  },
+  "307": {
+    "note": "不投放",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "首次权限（废弃",
+      "InKey": "name_307"
+    },
+    "guidelist": {
+      "1": 30701
+    },
+    "id": 307,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": true,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": ""
+  },
+  "308": {
+    "note": "不投放",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "权限升级（废弃",
+      "InKey": "name_308"
+    },
+    "guidelist": {
+      "1": 30801
+    },
+    "id": 308,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": true,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": ""
+  },
+  "309": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "首次成功教学通用【备注】备注",
+      "InKey": "name_309"
+    },
+    "guidelist": {
+      "1": 30901,
+      "2": 30902
+    },
+    "id": 309,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnSettlementSuccess"
+  },
+  "310": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "首次触发存档【备注】备注",
+      "InKey": "name_310"
+    },
+    "guidelist": {
+      "1": 31001
+    },
+    "id": 310,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 4,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnSettlementInComeViewShow"
+  },
+  "311": {
+    "note": "",
+    "preguidelist": {
+      "1": 313
+    },
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "首次讨伐选择【备注】备注",
+      "InKey": "name_311"
+    },
+    "guidelist": {
+      "1": 31101
+    },
+    "id": 311,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 4,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnViewShow_UI_BossRush"
+  },
+  "312": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "首次幸存者",
+      "InKey": "name_312"
+    },
+    "guidelist": {
+      "1": 31201,
+      "2": 31202,
+      "3": 31203
+    },
+    "id": 312,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 3,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnSurvivalUnLock"
+  },
+  "313": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "首次讨伐",
+      "InKey": "name_313"
+    },
+    "guidelist": {
+      "1": 31301,
+      "2": 31302,
+      "3": 31303
+    },
+    "id": 313,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 3,
+    "IsNotRequestToLobbyServer": false,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": "OnBossRushUnLock"
+  },
+  "300": {
+    "note": "",
+    "preguidelist": {},
+    "nameLocMeta": {
+      "InNamespace": "guide_TBGuide",
+      "InTextLiteral": "潜能密钥引导备注",
+      "InKey": "name_300"
+    },
+    "guidelist": {
+      "1": 30001,
+      "2": 30002
+    },
+    "id": 300,
+    "eventtype": 1,
+    "intohandbook": 0,
+    "priority": 1,
+    "IsNotRequestToLobbyServer": true,
+    "type": 1,
+    "guidetype": 1,
+    "triggerevent": ""
+  }
+}

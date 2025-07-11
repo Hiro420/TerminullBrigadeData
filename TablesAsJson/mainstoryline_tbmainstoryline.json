@@ -1,0 +1,61 @@
+﻿{
+  "3": {
+    "icon": "",
+    "nameLocMeta": {
+      "InKey": "name_3",
+      "InTextLiteral": "上线第一版主线",
+      "InNamespace": "mainstoryline_TBMainStoryLine"
+    },
+    "taskgrouplist": {
+      "1": 3001,
+      "2": 3002
+    },
+    "id": 3,
+    "descLocMeta": {
+      "InKey": "desc_3",
+      "InTextLiteral": "上线第一版主线",
+      "InNamespace": "mainstoryline_TBMainStoryLine"
+    },
+    "centralgroup": 3003
+  },
+  "1": {
+    "icon": "",
+    "nameLocMeta": {
+      "InKey": "name_1",
+      "InTextLiteral": "配置版主线",
+      "InNamespace": "mainstoryline_TBMainStoryLine"
+    },
+    "taskgrouplist": {
+      "1": 4001,
+      "2": 5001
+    },
+    "id": 1,
+    "descLocMeta": {
+      "InKey": "desc_1",
+      "InTextLiteral": "测试版主线",
+      "InNamespace": "mainstoryline_TBMainStoryLine"
+    },
+    "centralgroup": 0
+  },
+  "2": {
+    "icon": "",
+    "nameLocMeta": {
+      "InKey": "name_2",
+      "InTextLiteral": "周年庆主线",
+      "InNamespace": "mainstoryline_TBMainStoryLine"
+    },
+    "taskgrouplist": {
+      "1": 4001,
+      "2": 4002,
+      "3": 4003,
+      "4": 3004
+    },
+    "id": 2,
+    "descLocMeta": {
+      "InKey": "desc_2",
+      "InTextLiteral": "周年庆主线",
+      "InNamespace": "mainstoryline_TBMainStoryLine"
+    },
+    "centralgroup": 4005
+  }
+}

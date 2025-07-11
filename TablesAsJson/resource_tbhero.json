@@ -1,0 +1,128 @@
+﻿{
+  "100006": {
+    "ResourceNum": 100,
+    "ResourceID": 200006,
+    "HeroID": 1010,
+    "ID": 100006
+  },
+  "100007": {
+    "ResourceNum": 100,
+    "ResourceID": 200007,
+    "HeroID": 1020,
+    "ID": 100007
+  },
+  "100008": {
+    "ResourceNum": 100,
+    "ResourceID": 200008,
+    "HeroID": 1040,
+    "ID": 100008
+  },
+  "100009": {
+    "ResourceNum": 100,
+    "ResourceID": 200009,
+    "HeroID": 1060,
+    "ID": 100009
+  },
+  "100010": {
+    "ResourceNum": 100,
+    "ResourceID": 200010,
+    "HeroID": 1030,
+    "ID": 100010
+  },
+  "100011": {
+    "ResourceNum": 100,
+    "ResourceID": 200011,
+    "HeroID": 1080,
+    "ID": 100011
+  },
+  "100012": {
+    "ResourceNum": 100,
+    "ResourceID": 200012,
+    "HeroID": 1090,
+    "ID": 100012
+  },
+  "100013": {
+    "ResourceNum": 100,
+    "ResourceID": 200013,
+    "HeroID": 1022,
+    "ID": 100013
+  },
+  "100014": {
+    "ResourceNum": 100,
+    "ResourceID": 200014,
+    "HeroID": 1100,
+    "ID": 100014
+  },
+  "100015": {
+    "ResourceNum": 100,
+    "ResourceID": 200015,
+    "HeroID": 1110,
+    "ID": 100015
+  },
+  "101008": {
+    "ResourceNum": 100,
+    "ResourceID": 201008,
+    "HeroID": 1108,
+    "ID": 101008
+  },
+  "101007": {
+    "ResourceNum": 100,
+    "ResourceID": 201007,
+    "HeroID": 1107,
+    "ID": 101007
+  },
+  "101006": {
+    "ResourceNum": 100,
+    "ResourceID": 201006,
+    "HeroID": 1106,
+    "ID": 101006
+  },
+  "101005": {
+    "ResourceNum": 100,
+    "ResourceID": 201005,
+    "HeroID": 1105,
+    "ID": 101005
+  },
+  "101004": {
+    "ResourceNum": 100,
+    "ResourceID": 201004,
+    "HeroID": 1104,
+    "ID": 101004
+  },
+  "101003": {
+    "ResourceNum": 100,
+    "ResourceID": 201003,
+    "HeroID": 1103,
+    "ID": 101003
+  },
+  "101002": {
+    "ResourceNum": 100,
+    "ResourceID": 201002,
+    "HeroID": 1102,
+    "ID": 101002
+  },
+  "100003": {
+    "ResourceNum": 100,
+    "ResourceID": 200003,
+    "HeroID": 1000,
+    "ID": 100003
+  },
+  "100004": {
+    "ResourceNum": 100,
+    "ResourceID": 200004,
+    "HeroID": 1004,
+    "ID": 100004
+  },
+  "100005": {
+    "ResourceNum": 100,
+    "ResourceID": 200005,
+    "HeroID": 1005,
+    "ID": 100005
+  },
+  "101001": {
+    "ResourceNum": 100,
+    "ResourceID": 201001,
+    "HeroID": 1101,
+    "ID": 101001
+  }
+}

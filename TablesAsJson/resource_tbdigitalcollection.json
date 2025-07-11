@@ -1,0 +1,2642 @@
+﻿{
+  "4042010": {
+    "unlockMethodJump": "",
+    "ID": 4042010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4042011": {
+    "unlockMethodJump": "",
+    "ID": 4042011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4042012": {
+    "unlockMethodJump": "",
+    "ID": 4042012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4042013": {
+    "unlockMethodJump": "",
+    "ID": 4042013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4042014": {
+    "unlockMethodJump": "",
+    "ID": 4042014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4042015": {
+    "unlockMethodJump": "",
+    "ID": 4042015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4042016": {
+    "unlockMethodJump": "",
+    "ID": 4042016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4042017": {
+    "unlockMethodJump": "",
+    "ID": 4042017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4202000": {
+    "unlockMethodJump": "",
+    "ID": 4202000,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4202001": {
+    "unlockMethodJump": "",
+    "ID": 4202001,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4202002": {
+    "unlockMethodJump": "",
+    "ID": 4202002,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4202003": {
+    "unlockMethodJump": "",
+    "ID": 4202003,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4202004": {
+    "unlockMethodJump": "",
+    "ID": 4202004,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4202005": {
+    "unlockMethodJump": "",
+    "ID": 4202005,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4202006": {
+    "unlockMethodJump": "",
+    "ID": 4202006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4132000": {
+    "unlockMethodJump": "",
+    "ID": 4132000,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4132001": {
+    "unlockMethodJump": "",
+    "ID": 4132001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4132002": {
+    "unlockMethodJump": "",
+    "ID": 4132002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4132003": {
+    "unlockMethodJump": "",
+    "ID": 4132003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4132004": {
+    "unlockMethodJump": "",
+    "ID": 4132004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4132005": {
+    "unlockMethodJump": "",
+    "ID": 4132005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4132006": {
+    "unlockMethodJump": "",
+    "ID": 4132006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4062000": {
+    "unlockMethodJump": "",
+    "ID": 4062000,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4062001": {
+    "unlockMethodJump": "",
+    "ID": 4062001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4062002": {
+    "unlockMethodJump": "",
+    "ID": 4062002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4062003": {
+    "unlockMethodJump": "",
+    "ID": 4062003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4062004": {
+    "unlockMethodJump": "",
+    "ID": 4062004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4062005": {
+    "unlockMethodJump": "",
+    "ID": 4062005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4062006": {
+    "unlockMethodJump": "",
+    "ID": 4062006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4062007": {
+    "unlockMethodJump": "",
+    "ID": 4062007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4062008": {
+    "unlockMethodJump": "",
+    "ID": 4062008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4062009": {
+    "unlockMethodJump": "",
+    "ID": 4062009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4062010": {
+    "unlockMethodJump": "",
+    "ID": 4062010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4062011": {
+    "unlockMethodJump": "",
+    "ID": 4062011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4062012": {
+    "unlockMethodJump": "",
+    "ID": 4062012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4062013": {
+    "unlockMethodJump": "",
+    "ID": 4062013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4062014": {
+    "unlockMethodJump": "",
+    "ID": 4062014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4062015": {
+    "unlockMethodJump": "",
+    "ID": 4062015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4062016": {
+    "unlockMethodJump": "",
+    "ID": 4062016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4062017": {
+    "unlockMethodJump": "",
+    "ID": 4062017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4202009": {
+    "unlockMethodJump": "",
+    "ID": 4202009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4202010": {
+    "unlockMethodJump": "",
+    "ID": 4202010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4202011": {
+    "unlockMethodJump": "",
+    "ID": 4202011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4212000": {
+    "unlockMethodJump": "",
+    "ID": 4212000,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4212001": {
+    "unlockMethodJump": "",
+    "ID": 4212001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4212002": {
+    "unlockMethodJump": "",
+    "ID": 4212002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4222000": {
+    "unlockMethodJump": "",
+    "ID": 4222000,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4222001": {
+    "unlockMethodJump": "",
+    "ID": 4222001,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4222002": {
+    "unlockMethodJump": "",
+    "ID": 4222002,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4222003": {
+    "unlockMethodJump": "",
+    "ID": 4222003,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4222004": {
+    "unlockMethodJump": "",
+    "ID": 4222004,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4222005": {
+    "unlockMethodJump": "",
+    "ID": 4222005,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4232017": {
+    "unlockMethodJump": "",
+    "ID": 4232017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4152000": {
+    "unlockMethodJump": "",
+    "ID": 4152000,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4152001": {
+    "unlockMethodJump": "",
+    "ID": 4152001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4152002": {
+    "unlockMethodJump": "",
+    "ID": 4152002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4152003": {
+    "unlockMethodJump": "",
+    "ID": 4152003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4152004": {
+    "unlockMethodJump": "",
+    "ID": 4152004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4152005": {
+    "unlockMethodJump": "",
+    "ID": 4152005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4152006": {
+    "unlockMethodJump": "",
+    "ID": 4152006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4082000": {
+    "unlockMethodJump": "",
+    "ID": 4082000,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4082001": {
+    "unlockMethodJump": "",
+    "ID": 4082001,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4082002": {
+    "unlockMethodJump": "",
+    "ID": 4082002,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4082003": {
+    "unlockMethodJump": "",
+    "ID": 4082003,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4082004": {
+    "unlockMethodJump": "",
+    "ID": 4082004,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4082005": {
+    "unlockMethodJump": "",
+    "ID": 4082005,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4082006": {
+    "unlockMethodJump": "",
+    "ID": 4082006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4012000": {
+    "unlockMethodJump": "",
+    "ID": 4012000,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4012001": {
+    "unlockMethodJump": "",
+    "ID": 4012001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4012002": {
+    "unlockMethodJump": "",
+    "ID": 4012002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4012003": {
+    "unlockMethodJump": "",
+    "ID": 4012003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4012004": {
+    "unlockMethodJump": "",
+    "ID": 4012004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4012005": {
+    "unlockMethodJump": "",
+    "ID": 4012005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4012006": {
+    "unlockMethodJump": "",
+    "ID": 4012006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4012007": {
+    "unlockMethodJump": "",
+    "ID": 4012007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4012008": {
+    "unlockMethodJump": "",
+    "ID": 4012008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4012009": {
+    "unlockMethodJump": "",
+    "ID": 4012009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4012010": {
+    "unlockMethodJump": "",
+    "ID": 4012010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4012011": {
+    "unlockMethodJump": "",
+    "ID": 4012011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4012012": {
+    "unlockMethodJump": "",
+    "ID": 4012012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4012013": {
+    "unlockMethodJump": "",
+    "ID": 4012013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4012014": {
+    "unlockMethodJump": "",
+    "ID": 4012014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4012015": {
+    "unlockMethodJump": "",
+    "ID": 4012015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4012016": {
+    "unlockMethodJump": "",
+    "ID": 4012016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4012017": {
+    "unlockMethodJump": "",
+    "ID": 4012017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4232016": {
+    "unlockMethodJump": "",
+    "ID": 4232016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4232015": {
+    "unlockMethodJump": "",
+    "ID": 4232015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4232014": {
+    "unlockMethodJump": "",
+    "ID": 4232014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4232013": {
+    "unlockMethodJump": "",
+    "ID": 4232013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4232012": {
+    "unlockMethodJump": "",
+    "ID": 4232012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4232011": {
+    "unlockMethodJump": "",
+    "ID": 4232011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4232010": {
+    "unlockMethodJump": "",
+    "ID": 4232010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4232009": {
+    "unlockMethodJump": "",
+    "ID": 4232009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4232008": {
+    "unlockMethodJump": "",
+    "ID": 4232008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4232007": {
+    "unlockMethodJump": "",
+    "ID": 4232007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4122009": {
+    "unlockMethodJump": "",
+    "ID": 4122009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4122010": {
+    "unlockMethodJump": "",
+    "ID": 4122010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4122011": {
+    "unlockMethodJump": "",
+    "ID": 4122011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4122012": {
+    "unlockMethodJump": "",
+    "ID": 4122012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4122013": {
+    "unlockMethodJump": "",
+    "ID": 4122013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4122014": {
+    "unlockMethodJump": "",
+    "ID": 4122014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4122015": {
+    "unlockMethodJump": "",
+    "ID": 4122015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4212017": {
+    "unlockMethodJump": "",
+    "ID": 4212017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4212016": {
+    "unlockMethodJump": "",
+    "ID": 4212016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4212015": {
+    "unlockMethodJump": "",
+    "ID": 4212015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4212014": {
+    "unlockMethodJump": "",
+    "ID": 4212014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4212013": {
+    "unlockMethodJump": "",
+    "ID": 4212013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4212012": {
+    "unlockMethodJump": "",
+    "ID": 4212012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4212011": {
+    "unlockMethodJump": "",
+    "ID": 4212011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4212010": {
+    "unlockMethodJump": "",
+    "ID": 4212010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4212009": {
+    "unlockMethodJump": "",
+    "ID": 4212009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4212008": {
+    "unlockMethodJump": "",
+    "ID": 4212008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4212007": {
+    "unlockMethodJump": "",
+    "ID": 4212007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4212006": {
+    "unlockMethodJump": "",
+    "ID": 4212006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4212005": {
+    "unlockMethodJump": "",
+    "ID": 4212005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4212004": {
+    "unlockMethodJump": "",
+    "ID": 4212004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4212003": {
+    "unlockMethodJump": "",
+    "ID": 4212003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4242000": {
+    "unlockMethodJump": "",
+    "ID": 4242000,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4242001": {
+    "unlockMethodJump": "",
+    "ID": 4242001,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4242002": {
+    "unlockMethodJump": "",
+    "ID": 4242002,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4242003": {
+    "unlockMethodJump": "",
+    "ID": 4242003,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4242004": {
+    "unlockMethodJump": "",
+    "ID": 4242004,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4242005": {
+    "unlockMethodJump": "",
+    "ID": 4242005,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4202008": {
+    "unlockMethodJump": "",
+    "ID": 4202008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172000": {
+    "unlockMethodJump": "",
+    "ID": 4172000,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172001": {
+    "unlockMethodJump": "",
+    "ID": 4172001,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172002": {
+    "unlockMethodJump": "",
+    "ID": 4172002,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172003": {
+    "unlockMethodJump": "",
+    "ID": 4172003,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172004": {
+    "unlockMethodJump": "",
+    "ID": 4172004,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172005": {
+    "unlockMethodJump": "",
+    "ID": 4172005,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172006": {
+    "unlockMethodJump": "",
+    "ID": 4172006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4102000": {
+    "unlockMethodJump": "",
+    "ID": 4102000,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4102001": {
+    "unlockMethodJump": "",
+    "ID": 4102001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4102002": {
+    "unlockMethodJump": "",
+    "ID": 4102002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4102003": {
+    "unlockMethodJump": "",
+    "ID": 4102003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4102004": {
+    "unlockMethodJump": "",
+    "ID": 4102004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4102005": {
+    "unlockMethodJump": "",
+    "ID": 4102005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4102006": {
+    "unlockMethodJump": "",
+    "ID": 4102006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4032000": {
+    "unlockMethodJump": "",
+    "ID": 4032000,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4032001": {
+    "unlockMethodJump": "",
+    "ID": 4032001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4032002": {
+    "unlockMethodJump": "",
+    "ID": 4032002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4032003": {
+    "unlockMethodJump": "",
+    "ID": 4032003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4032004": {
+    "unlockMethodJump": "",
+    "ID": 4032004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4032005": {
+    "unlockMethodJump": "",
+    "ID": 4032005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4032006": {
+    "unlockMethodJump": "",
+    "ID": 4032006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4032007": {
+    "unlockMethodJump": "",
+    "ID": 4032007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4032008": {
+    "unlockMethodJump": "",
+    "ID": 4032008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4032009": {
+    "unlockMethodJump": "",
+    "ID": 4032009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4032010": {
+    "unlockMethodJump": "",
+    "ID": 4032010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4032011": {
+    "unlockMethodJump": "",
+    "ID": 4032011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4032012": {
+    "unlockMethodJump": "",
+    "ID": 4032012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4032013": {
+    "unlockMethodJump": "",
+    "ID": 4032013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4032014": {
+    "unlockMethodJump": "",
+    "ID": 4032014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4032015": {
+    "unlockMethodJump": "",
+    "ID": 4032015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4032016": {
+    "unlockMethodJump": "",
+    "ID": 4032016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4032017": {
+    "unlockMethodJump": "",
+    "ID": 4032017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4202007": {
+    "unlockMethodJump": "",
+    "ID": 4202007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4192017": {
+    "unlockMethodJump": "",
+    "ID": 4192017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4192016": {
+    "unlockMethodJump": "",
+    "ID": 4192016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4192015": {
+    "unlockMethodJump": "",
+    "ID": 4192015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4192014": {
+    "unlockMethodJump": "",
+    "ID": 4192014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4192013": {
+    "unlockMethodJump": "",
+    "ID": 4192013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4192012": {
+    "unlockMethodJump": "",
+    "ID": 4192012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4192011": {
+    "unlockMethodJump": "",
+    "ID": 4192011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4192010": {
+    "unlockMethodJump": "",
+    "ID": 4192010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4192009": {
+    "unlockMethodJump": "",
+    "ID": 4192009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4192008": {
+    "unlockMethodJump": "",
+    "ID": 4192008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4192007": {
+    "unlockMethodJump": "",
+    "ID": 4192007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172009": {
+    "unlockMethodJump": "",
+    "ID": 4172009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172010": {
+    "unlockMethodJump": "",
+    "ID": 4172010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172011": {
+    "unlockMethodJump": "",
+    "ID": 4172011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172012": {
+    "unlockMethodJump": "",
+    "ID": 4172012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172013": {
+    "unlockMethodJump": "",
+    "ID": 4172013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172014": {
+    "unlockMethodJump": "",
+    "ID": 4172014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172015": {
+    "unlockMethodJump": "",
+    "ID": 4172015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4182017": {
+    "unlockMethodJump": "",
+    "ID": 4182017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4182016": {
+    "unlockMethodJump": "",
+    "ID": 4182016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4182015": {
+    "unlockMethodJump": "",
+    "ID": 4182015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4182014": {
+    "unlockMethodJump": "",
+    "ID": 4182014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4182013": {
+    "unlockMethodJump": "",
+    "ID": 4182013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4182012": {
+    "unlockMethodJump": "",
+    "ID": 4182012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4182011": {
+    "unlockMethodJump": "",
+    "ID": 4182011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4182010": {
+    "unlockMethodJump": "",
+    "ID": 4182010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4182009": {
+    "unlockMethodJump": "",
+    "ID": 4182009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4182008": {
+    "unlockMethodJump": "",
+    "ID": 4182008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4182007": {
+    "unlockMethodJump": "",
+    "ID": 4182007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4072008": {
+    "unlockMethodJump": "",
+    "ID": 4072008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4072009": {
+    "unlockMethodJump": "",
+    "ID": 4072009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4072010": {
+    "unlockMethodJump": "",
+    "ID": 4072010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4072011": {
+    "unlockMethodJump": "",
+    "ID": 4072011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4072012": {
+    "unlockMethodJump": "",
+    "ID": 4072012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4072013": {
+    "unlockMethodJump": "",
+    "ID": 4072013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4072014": {
+    "unlockMethodJump": "",
+    "ID": 4072014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172017": {
+    "unlockMethodJump": "",
+    "ID": 4172017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172016": {
+    "unlockMethodJump": "",
+    "ID": 4172016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4192000": {
+    "unlockMethodJump": "",
+    "ID": 4192000,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4192001": {
+    "unlockMethodJump": "",
+    "ID": 4192001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4192002": {
+    "unlockMethodJump": "",
+    "ID": 4192002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4192003": {
+    "unlockMethodJump": "",
+    "ID": 4192003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4192004": {
+    "unlockMethodJump": "",
+    "ID": 4192004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4192005": {
+    "unlockMethodJump": "",
+    "ID": 4192005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4192006": {
+    "unlockMethodJump": "",
+    "ID": 4192006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4122000": {
+    "unlockMethodJump": "",
+    "ID": 4122000,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4122001": {
+    "unlockMethodJump": "",
+    "ID": 4122001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4122002": {
+    "unlockMethodJump": "",
+    "ID": 4122002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4122003": {
+    "unlockMethodJump": "",
+    "ID": 4122003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4122004": {
+    "unlockMethodJump": "",
+    "ID": 4122004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4122005": {
+    "unlockMethodJump": "",
+    "ID": 4122005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4122006": {
+    "unlockMethodJump": "",
+    "ID": 4122006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4052000": {
+    "unlockMethodJump": "",
+    "ID": 4052000,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4052001": {
+    "unlockMethodJump": "",
+    "ID": 4052001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4052002": {
+    "unlockMethodJump": "",
+    "ID": 4052002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4052003": {
+    "unlockMethodJump": "",
+    "ID": 4052003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4052004": {
+    "unlockMethodJump": "",
+    "ID": 4052004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4052005": {
+    "unlockMethodJump": "",
+    "ID": 4052005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4052006": {
+    "unlockMethodJump": "",
+    "ID": 4052006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4052007": {
+    "unlockMethodJump": "",
+    "ID": 4052007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4052008": {
+    "unlockMethodJump": "",
+    "ID": 4052008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4052009": {
+    "unlockMethodJump": "",
+    "ID": 4052009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4052010": {
+    "unlockMethodJump": "",
+    "ID": 4052010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4052011": {
+    "unlockMethodJump": "",
+    "ID": 4052011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4052012": {
+    "unlockMethodJump": "",
+    "ID": 4052012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4052013": {
+    "unlockMethodJump": "",
+    "ID": 4052013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4052014": {
+    "unlockMethodJump": "",
+    "ID": 4052014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4052015": {
+    "unlockMethodJump": "",
+    "ID": 4052015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4052016": {
+    "unlockMethodJump": "",
+    "ID": 4052016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4052017": {
+    "unlockMethodJump": "",
+    "ID": 4052017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172008": {
+    "unlockMethodJump": "",
+    "ID": 4172008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4172007": {
+    "unlockMethodJump": "",
+    "ID": 4172007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4162017": {
+    "unlockMethodJump": "",
+    "ID": 4162017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4162016": {
+    "unlockMethodJump": "",
+    "ID": 4162016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4162015": {
+    "unlockMethodJump": "",
+    "ID": 4162015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4162014": {
+    "unlockMethodJump": "",
+    "ID": 4162014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4162013": {
+    "unlockMethodJump": "",
+    "ID": 4162013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4162012": {
+    "unlockMethodJump": "",
+    "ID": 4162012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4162011": {
+    "unlockMethodJump": "",
+    "ID": 4162011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4162010": {
+    "unlockMethodJump": "",
+    "ID": 4162010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4162009": {
+    "unlockMethodJump": "",
+    "ID": 4162009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4162008": {
+    "unlockMethodJump": "",
+    "ID": 4162008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4162007": {
+    "unlockMethodJump": "",
+    "ID": 4162007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112013": {
+    "unlockMethodJump": "",
+    "ID": 4112013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112014": {
+    "unlockMethodJump": "",
+    "ID": 4112014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112015": {
+    "unlockMethodJump": "",
+    "ID": 4112015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112016": {
+    "unlockMethodJump": "",
+    "ID": 4112016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112017": {
+    "unlockMethodJump": "",
+    "ID": 4112017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4122007": {
+    "unlockMethodJump": "",
+    "ID": 4122007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4122008": {
+    "unlockMethodJump": "",
+    "ID": 4122008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4152017": {
+    "unlockMethodJump": "",
+    "ID": 4152017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4152016": {
+    "unlockMethodJump": "",
+    "ID": 4152016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4152015": {
+    "unlockMethodJump": "",
+    "ID": 4152015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4152014": {
+    "unlockMethodJump": "",
+    "ID": 4152014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4152013": {
+    "unlockMethodJump": "",
+    "ID": 4152013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4152012": {
+    "unlockMethodJump": "",
+    "ID": 4152012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4152011": {
+    "unlockMethodJump": "",
+    "ID": 4152011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4152010": {
+    "unlockMethodJump": "",
+    "ID": 4152010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4152009": {
+    "unlockMethodJump": "",
+    "ID": 4152009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4152008": {
+    "unlockMethodJump": "",
+    "ID": 4152008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4152007": {
+    "unlockMethodJump": "",
+    "ID": 4152007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4142017": {
+    "unlockMethodJump": "",
+    "ID": 4142017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4142016": {
+    "unlockMethodJump": "",
+    "ID": 4142016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4142015": {
+    "unlockMethodJump": "",
+    "ID": 4142015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4142014": {
+    "unlockMethodJump": "",
+    "ID": 4142014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4142013": {
+    "unlockMethodJump": "",
+    "ID": 4142013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4142012": {
+    "unlockMethodJump": "",
+    "ID": 4142012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4142011": {
+    "unlockMethodJump": "",
+    "ID": 4142011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003000": {
+    "unlockMethodJump": "",
+    "ID": 4003000,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003001": {
+    "unlockMethodJump": "",
+    "ID": 4003001,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003002": {
+    "unlockMethodJump": "",
+    "ID": 4003002,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003003": {
+    "unlockMethodJump": "",
+    "ID": 4003003,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003004": {
+    "unlockMethodJump": "",
+    "ID": 4003004,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003005": {
+    "unlockMethodJump": "",
+    "ID": 4003005,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003006": {
+    "unlockMethodJump": "",
+    "ID": 4003006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003007": {
+    "unlockMethodJump": "",
+    "ID": 4003007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003008": {
+    "unlockMethodJump": "",
+    "ID": 4003008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003009": {
+    "unlockMethodJump": "",
+    "ID": 4003009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003010": {
+    "unlockMethodJump": "",
+    "ID": 4003010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003011": {
+    "unlockMethodJump": "",
+    "ID": 4003011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003012": {
+    "unlockMethodJump": "",
+    "ID": 4003012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003013": {
+    "unlockMethodJump": "",
+    "ID": 4003013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003014": {
+    "unlockMethodJump": "",
+    "ID": 4003014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003015": {
+    "unlockMethodJump": "",
+    "ID": 4003015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003016": {
+    "unlockMethodJump": "",
+    "ID": 4003016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003017": {
+    "unlockMethodJump": "",
+    "ID": 4003017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003018": {
+    "unlockMethodJump": "",
+    "ID": 4003018,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003019": {
+    "unlockMethodJump": "",
+    "ID": 4003019,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003020": {
+    "unlockMethodJump": "",
+    "ID": 4003020,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003021": {
+    "unlockMethodJump": "",
+    "ID": 4003021,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003022": {
+    "unlockMethodJump": "",
+    "ID": 4003022,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003023": {
+    "unlockMethodJump": "",
+    "ID": 4003023,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003024": {
+    "unlockMethodJump": "",
+    "ID": 4003024,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003025": {
+    "unlockMethodJump": "",
+    "ID": 4003025,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003026": {
+    "unlockMethodJump": "",
+    "ID": 4003026,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4003027": {
+    "unlockMethodJump": "",
+    "ID": 4003027,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4003028": {
+    "unlockMethodJump": "",
+    "ID": 4003028,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4003029": {
+    "unlockMethodJump": "",
+    "ID": 4003029,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4003030": {
+    "unlockMethodJump": "",
+    "ID": 4003030,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4003031": {
+    "unlockMethodJump": "",
+    "ID": 4003031,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4003032": {
+    "unlockMethodJump": "",
+    "ID": 4003032,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4003033": {
+    "unlockMethodJump": "",
+    "ID": 4003033,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4003034": {
+    "unlockMethodJump": "",
+    "ID": 4003034,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4003035": {
+    "unlockMethodJump": "",
+    "ID": 4003035,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4003036": {
+    "unlockMethodJump": "",
+    "ID": 4003036,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4003037": {
+    "unlockMethodJump": "",
+    "ID": 4003037,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4003038": {
+    "unlockMethodJump": "",
+    "ID": 4003038,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4003039": {
+    "unlockMethodJump": "",
+    "ID": 4003039,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4003040": {
+    "unlockMethodJump": "",
+    "ID": 4003040,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4003041": {
+    "unlockMethodJump": "",
+    "ID": 4003041,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4003042": {
+    "unlockMethodJump": "",
+    "ID": 4003042,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4003043": {
+    "unlockMethodJump": "",
+    "ID": 4003043,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4142010": {
+    "unlockMethodJump": "",
+    "ID": 4142010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4142009": {
+    "unlockMethodJump": "",
+    "ID": 4142009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4142008": {
+    "unlockMethodJump": "",
+    "ID": 4142008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4142007": {
+    "unlockMethodJump": "",
+    "ID": 4142007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4142006": {
+    "unlockMethodJump": "",
+    "ID": 4142006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003049": {
+    "unlockMethodJump": "",
+    "ID": 4003049,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003050": {
+    "unlockMethodJump": "",
+    "ID": 4003050,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003051": {
+    "unlockMethodJump": "",
+    "ID": 4003051,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4003052": {
+    "unlockMethodJump": "",
+    "ID": 4003052,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4142005": {
+    "unlockMethodJump": "",
+    "ID": 4142005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4142004": {
+    "unlockMethodJump": "",
+    "ID": 4142004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4142003": {
+    "unlockMethodJump": "",
+    "ID": 4142003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4142002": {
+    "unlockMethodJump": "",
+    "ID": 4142002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4142001": {
+    "unlockMethodJump": "",
+    "ID": 4142001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4142000": {
+    "unlockMethodJump": "",
+    "ID": 4142000,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4132017": {
+    "unlockMethodJump": "",
+    "ID": 4132017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4132016": {
+    "unlockMethodJump": "",
+    "ID": 4132016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4132015": {
+    "unlockMethodJump": "",
+    "ID": 4132015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4132014": {
+    "unlockMethodJump": "",
+    "ID": 4132014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4132013": {
+    "unlockMethodJump": "",
+    "ID": 4132013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4132012": {
+    "unlockMethodJump": "",
+    "ID": 4132012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4132011": {
+    "unlockMethodJump": "",
+    "ID": 4132011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4132010": {
+    "unlockMethodJump": "",
+    "ID": 4132010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4132009": {
+    "unlockMethodJump": "",
+    "ID": 4132009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4132008": {
+    "unlockMethodJump": "",
+    "ID": 4132008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4132007": {
+    "unlockMethodJump": "",
+    "ID": 4132007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4122017": {
+    "unlockMethodJump": "",
+    "ID": 4122017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4122016": {
+    "unlockMethodJump": "",
+    "ID": 4122016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4232000": {
+    "unlockMethodJump": "",
+    "ID": 4232000,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4232001": {
+    "unlockMethodJump": "",
+    "ID": 4232001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4232002": {
+    "unlockMethodJump": "",
+    "ID": 4232002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4232003": {
+    "unlockMethodJump": "",
+    "ID": 4232003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4232004": {
+    "unlockMethodJump": "",
+    "ID": 4232004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4232005": {
+    "unlockMethodJump": "",
+    "ID": 4232005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4232006": {
+    "unlockMethodJump": "",
+    "ID": 4232006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4162000": {
+    "unlockMethodJump": "",
+    "ID": 4162000,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4162001": {
+    "unlockMethodJump": "",
+    "ID": 4162001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4162002": {
+    "unlockMethodJump": "",
+    "ID": 4162002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4162003": {
+    "unlockMethodJump": "",
+    "ID": 4162003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4162004": {
+    "unlockMethodJump": "",
+    "ID": 4162004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4162005": {
+    "unlockMethodJump": "",
+    "ID": 4162005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4162006": {
+    "unlockMethodJump": "",
+    "ID": 4162006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4092000": {
+    "unlockMethodJump": "",
+    "ID": 4092000,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4092001": {
+    "unlockMethodJump": "",
+    "ID": 4092001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4092002": {
+    "unlockMethodJump": "",
+    "ID": 4092002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4092003": {
+    "unlockMethodJump": "",
+    "ID": 4092003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4092004": {
+    "unlockMethodJump": "",
+    "ID": 4092004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4092005": {
+    "unlockMethodJump": "",
+    "ID": 4092005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4092006": {
+    "unlockMethodJump": "",
+    "ID": 4092006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4022000": {
+    "unlockMethodJump": "",
+    "ID": 4022000,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4022001": {
+    "unlockMethodJump": "",
+    "ID": 4022001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4022002": {
+    "unlockMethodJump": "",
+    "ID": 4022002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4022003": {
+    "unlockMethodJump": "",
+    "ID": 4022003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4022004": {
+    "unlockMethodJump": "",
+    "ID": 4022004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4022005": {
+    "unlockMethodJump": "",
+    "ID": 4022005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4022006": {
+    "unlockMethodJump": "",
+    "ID": 4022006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4022007": {
+    "unlockMethodJump": "",
+    "ID": 4022007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4022008": {
+    "unlockMethodJump": "",
+    "ID": 4022008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4022009": {
+    "unlockMethodJump": "",
+    "ID": 4022009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4022010": {
+    "unlockMethodJump": "",
+    "ID": 4022010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4022011": {
+    "unlockMethodJump": "",
+    "ID": 4022011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4022012": {
+    "unlockMethodJump": "",
+    "ID": 4022012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4022013": {
+    "unlockMethodJump": "",
+    "ID": 4022013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4022014": {
+    "unlockMethodJump": "",
+    "ID": 4022014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4022015": {
+    "unlockMethodJump": "",
+    "ID": 4022015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4022016": {
+    "unlockMethodJump": "",
+    "ID": 4022016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4022017": {
+    "unlockMethodJump": "",
+    "ID": 4022017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112012": {
+    "unlockMethodJump": "",
+    "ID": 4112012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112011": {
+    "unlockMethodJump": "",
+    "ID": 4112011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112010": {
+    "unlockMethodJump": "",
+    "ID": 4112010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112009": {
+    "unlockMethodJump": "",
+    "ID": 4112009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112008": {
+    "unlockMethodJump": "",
+    "ID": 4112008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112007": {
+    "unlockMethodJump": "",
+    "ID": 4112007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4072001": {
+    "unlockMethodJump": "",
+    "ID": 4072001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4072002": {
+    "unlockMethodJump": "",
+    "ID": 4072002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4072003": {
+    "unlockMethodJump": "",
+    "ID": 4072003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4072004": {
+    "unlockMethodJump": "",
+    "ID": 4072004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4072005": {
+    "unlockMethodJump": "",
+    "ID": 4072005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4072006": {
+    "unlockMethodJump": "",
+    "ID": 4072006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4072007": {
+    "unlockMethodJump": "",
+    "ID": 4072007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4102017": {
+    "unlockMethodJump": "",
+    "ID": 4102017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4102016": {
+    "unlockMethodJump": "",
+    "ID": 4102016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4102015": {
+    "unlockMethodJump": "",
+    "ID": 4102015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4102014": {
+    "unlockMethodJump": "",
+    "ID": 4102014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4102013": {
+    "unlockMethodJump": "",
+    "ID": 4102013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4102012": {
+    "unlockMethodJump": "",
+    "ID": 4102012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4102011": {
+    "unlockMethodJump": "",
+    "ID": 4102011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4102010": {
+    "unlockMethodJump": "",
+    "ID": 4102010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4102009": {
+    "unlockMethodJump": "",
+    "ID": 4102009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4102008": {
+    "unlockMethodJump": "",
+    "ID": 4102008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4102007": {
+    "unlockMethodJump": "",
+    "ID": 4102007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4092017": {
+    "unlockMethodJump": "",
+    "ID": 4092017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4092016": {
+    "unlockMethodJump": "",
+    "ID": 4092016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4092015": {
+    "unlockMethodJump": "",
+    "ID": 4092015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4092014": {
+    "unlockMethodJump": "",
+    "ID": 4092014,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4092013": {
+    "unlockMethodJump": "",
+    "ID": 4092013,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4092012": {
+    "unlockMethodJump": "",
+    "ID": 4092012,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4092011": {
+    "unlockMethodJump": "",
+    "ID": 4092011,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4092010": {
+    "unlockMethodJump": "",
+    "ID": 4092010,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4092009": {
+    "unlockMethodJump": "",
+    "ID": 4092009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4092008": {
+    "unlockMethodJump": "",
+    "ID": 4092008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4092007": {
+    "unlockMethodJump": "",
+    "ID": 4092007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4082007": {
+    "unlockMethodJump": "",
+    "ID": 4082007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4072017": {
+    "unlockMethodJump": "",
+    "ID": 4072017,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4072016": {
+    "unlockMethodJump": "",
+    "ID": 4072016,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4072015": {
+    "unlockMethodJump": "",
+    "ID": 4072015,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4182000": {
+    "unlockMethodJump": "",
+    "ID": 4182000,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4182001": {
+    "unlockMethodJump": "",
+    "ID": 4182001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4182002": {
+    "unlockMethodJump": "",
+    "ID": 4182002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4182003": {
+    "unlockMethodJump": "",
+    "ID": 4182003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4182004": {
+    "unlockMethodJump": "",
+    "ID": 4182004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4182005": {
+    "unlockMethodJump": "",
+    "ID": 4182005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4182006": {
+    "unlockMethodJump": "",
+    "ID": 4182006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112000": {
+    "unlockMethodJump": "",
+    "ID": 4112000,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112001": {
+    "unlockMethodJump": "",
+    "ID": 4112001,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112002": {
+    "unlockMethodJump": "",
+    "ID": 4112002,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112003": {
+    "unlockMethodJump": "",
+    "ID": 4112003,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112004": {
+    "unlockMethodJump": "",
+    "ID": 4112004,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112005": {
+    "unlockMethodJump": "",
+    "ID": 4112005,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4112006": {
+    "unlockMethodJump": "",
+    "ID": 4112006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4042000": {
+    "unlockMethodJump": "",
+    "ID": 4042000,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4042001": {
+    "unlockMethodJump": "",
+    "ID": 4042001,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4042002": {
+    "unlockMethodJump": "",
+    "ID": 4042002,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4042003": {
+    "unlockMethodJump": "",
+    "ID": 4042003,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4042004": {
+    "unlockMethodJump": "",
+    "ID": 4042004,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4042005": {
+    "unlockMethodJump": "",
+    "ID": 4042005,
+    "backgroundEffect": "",
+    "initunlock": true
+  },
+  "4042006": {
+    "unlockMethodJump": "",
+    "ID": 4042006,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4042007": {
+    "unlockMethodJump": "",
+    "ID": 4042007,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4042008": {
+    "unlockMethodJump": "",
+    "ID": 4042008,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4042009": {
+    "unlockMethodJump": "",
+    "ID": 4042009,
+    "backgroundEffect": "",
+    "initunlock": false
+  },
+  "4072000": {
+    "unlockMethodJump": "",
+    "ID": 4072000,
+    "backgroundEffect": "",
+    "initunlock": true
+  }
+}

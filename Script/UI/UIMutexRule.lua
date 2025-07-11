@@ -1,0 +1,2 @@
+local UIMutexRule = {}
+return UIMutexRule

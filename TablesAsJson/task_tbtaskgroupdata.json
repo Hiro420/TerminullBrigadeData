@@ -1,0 +1,4671 @@
+﻿{
+  "1": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1,
+    "starttime": "",
+    "tasklist": {
+      "1": 1
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】初始角色赠送",
+      "InKey": "name_1",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": true,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "10001": {
+    "resetautosendtomail": true,
+    "eventtrigger": false,
+    "endtime": "2024-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 10001,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 10010001,
+      "2": 10010002,
+      "3": 10010003,
+      "4": 10010004,
+      "5": 10010005
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "超载通行证周常任务",
+      "InKey": "name_10001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {
+      "1": {
+        "key": 99009,
+        "value": 7000
+      }
+    },
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_10001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_10001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 2
+  },
+  "10002": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2024-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 10002,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 10020001,
+      "2": 10020002,
+      "3": 10020003,
+      "4": 10020004,
+      "5": 10020005,
+      "6": 10020006,
+      "7": 10020007,
+      "8": 10020008,
+      "9": 10020009,
+      "10": 10020010,
+      "11": 10020011,
+      "12": 10020012,
+      "13": 10020013
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "超载通行证活动任务",
+      "InKey": "name_10002",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_10002",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_10002",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "10003": {
+    "resetautosendtomail": true,
+    "eventtrigger": false,
+    "endtime": "2025-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 10003,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 10010006,
+      "2": 10010007,
+      "3": 10010008,
+      "4": 10010009,
+      "5": 10010010
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "原爆点通行证周常任务",
+      "InKey": "name_10003",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {
+      "1": {
+        "key": 99008,
+        "value": 7000
+      }
+    },
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_10003",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_10003",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 2
+  },
+  "10004": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2025-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 10004,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 10020014,
+      "2": 10020015,
+      "3": 10020016,
+      "4": 10020017,
+      "5": 10020018,
+      "6": 10020019,
+      "7": 10020020,
+      "8": 10020021,
+      "9": 10020022,
+      "10": 10020023,
+      "11": 10020024,
+      "12": 10020025,
+      "13": 10020026
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "原爆点通行证活动任务",
+      "InKey": "name_10004",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_10004",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_10004",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1101": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1101,
+    "starttime": "",
+    "tasklist": {
+      "1": 110101,
+      "2": 110102,
+      "3": 110103,
+      "4": 110104,
+      "5": 110105,
+      "6": 110106,
+      "7": 110107,
+      "8": 110108,
+      "9": 110109
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "成就点档位任务",
+      "InKey": "name_1101",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1101",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1101",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1102": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1102,
+    "starttime": "",
+    "tasklist": {
+      "1": 110201,
+      "2": 110202,
+      "3": 110203
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "击杀惩戒者任务",
+      "InKey": "name_1102",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1102",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1102",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1103": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1103,
+    "starttime": "",
+    "tasklist": {
+      "1": 110301,
+      "2": 110302,
+      "3": 110303
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "成功通关任务",
+      "InKey": "name_1103",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1103",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1103",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1104": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1104,
+    "starttime": "",
+    "tasklist": {
+      "1": 110401,
+      "2": 110402,
+      "3": 110403
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "账号等级任务",
+      "InKey": "name_1104",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1104",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1104",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1105": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1105,
+    "starttime": "",
+    "tasklist": {
+      "1": 110501,
+      "2": 110502,
+      "3": 110503,
+      "4": 110504
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "社交新手",
+      "InKey": "name_1105",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1105",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1105",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1106": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1106,
+    "starttime": "",
+    "tasklist": {
+      "1": 110601,
+      "2": 110602,
+      "3": 110603
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "天道酬勤",
+      "InKey": "name_1106",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1106",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1106",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1107": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1107,
+    "starttime": "",
+    "tasklist": {
+      "1": 110701,
+      "2": 110702,
+      "3": 110703
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "锦衣华府",
+      "InKey": "name_1107",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1107",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1107",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1108": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1108,
+    "starttime": "",
+    "tasklist": {
+      "1": 110801,
+      "2": 110802,
+      "3": 110803
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "藏兵阁主",
+      "InKey": "name_1108",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1108",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1108",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1109": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1109,
+    "starttime": "",
+    "tasklist": {
+      "1": 110901,
+      "2": 110902,
+      "3": 110903
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "文韬武略",
+      "InKey": "name_1109",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1109",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1109",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1110": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1110,
+    "starttime": "",
+    "tasklist": {
+      "1": 111001,
+      "2": 111002,
+      "3": 111003
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "天赋专精",
+      "InKey": "name_1110",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1110",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1110",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1111": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1111,
+    "starttime": "",
+    "tasklist": {
+      "1": 111101,
+      "2": 111102,
+      "3": 111103
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "天眼练锐",
+      "InKey": "name_1111",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1111",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1111",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1112": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1112,
+    "starttime": "",
+    "tasklist": {
+      "1": 111201,
+      "2": 111202,
+      "3": 111203
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "天命者",
+      "InKey": "name_1112",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1112",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1112",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1113": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1113,
+    "starttime": "",
+    "tasklist": {
+      "1": 111301,
+      "2": 111302,
+      "3": 111303
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "利刃",
+      "InKey": "name_1113",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1113",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1113",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1114": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1114,
+    "starttime": "",
+    "tasklist": {
+      "1": 111401,
+      "2": 111402,
+      "3": 111403
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "救死扶伤",
+      "InKey": "name_1114",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1114",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1114",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1115": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1115,
+    "starttime": "",
+    "tasklist": {
+      "1": 111501,
+      "2": 111502,
+      "3": 111503
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "杀手",
+      "InKey": "name_1115",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1115",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1115",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1116": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1116,
+    "starttime": "",
+    "tasklist": {
+      "1": 111601,
+      "2": 111602,
+      "3": 111603
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "炸药桶杀手",
+      "InKey": "name_1116",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1116",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1116",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1117": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1117,
+    "starttime": "",
+    "tasklist": {
+      "1": 111701,
+      "2": 111702,
+      "3": 111703
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "神之子",
+      "InKey": "name_1117",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1117",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1117",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1118": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1118,
+    "starttime": "",
+    "tasklist": {
+      "1": 111801,
+      "2": 111802,
+      "3": 111803
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "贸易专家",
+      "InKey": "name_1118",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1118",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1118",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1119": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1119,
+    "starttime": "",
+    "tasklist": {
+      "1": 111901,
+      "2": 111902,
+      "3": 111903
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "守点专家",
+      "InKey": "name_1119",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1119",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1119",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1120": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1120,
+    "starttime": "",
+    "tasklist": {
+      "1": 112001
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "赛博专家",
+      "InKey": "name_1120",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1120",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1120",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1121": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1121,
+    "starttime": "",
+    "tasklist": {
+      "1": 112101
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "焦土专家",
+      "InKey": "name_1121",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1121",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1121",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1122": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1122,
+    "starttime": "",
+    "tasklist": {
+      "1": 112201,
+      "2": 112202,
+      "3": 112203
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "攻略专家",
+      "InKey": "name_1122",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1122",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1122",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1123": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1123,
+    "starttime": "",
+    "tasklist": {
+      "1": 112301,
+      "2": 112302,
+      "3": 112303
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "胜友如云",
+      "InKey": "name_1123",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1123",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1123",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1124": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1124,
+    "starttime": "",
+    "tasklist": {
+      "1": 112401,
+      "2": 112402,
+      "3": 112403
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "不朽收藏者",
+      "InKey": "name_1124",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1124",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1124",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1125": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1125,
+    "starttime": "",
+    "tasklist": {
+      "1": 112501,
+      "2": 112502,
+      "3": 112503
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "大富翁",
+      "InKey": "name_1125",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1125",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1125",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1126": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1126,
+    "starttime": "",
+    "tasklist": {
+      "1": 112601,
+      "2": 112602,
+      "3": 112603
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "智能眷顾",
+      "InKey": "name_1126",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1126",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1126",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1127": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1127,
+    "starttime": "",
+    "tasklist": {
+      "1": 112701,
+      "2": 112702,
+      "3": 112703
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "厚积薄发",
+      "InKey": "name_1127",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1127",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1127",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1128": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1128,
+    "starttime": "",
+    "tasklist": {
+      "1": 112801,
+      "2": 112802,
+      "3": 112803
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "藏品收藏家",
+      "InKey": "name_1128",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1128",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1128",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1129": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1129,
+    "starttime": "",
+    "tasklist": {
+      "1": 112901,
+      "2": 112902,
+      "3": 112903
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "小插曲",
+      "InKey": "name_1129",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1129",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1129",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1130": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1130,
+    "starttime": "",
+    "tasklist": {
+      "1": 113001,
+      "2": 113002,
+      "3": 113003
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "电竞选手",
+      "InKey": "name_1130",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1130",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1130",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1131": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1131,
+    "starttime": "",
+    "tasklist": {
+      "1": 113101,
+      "2": 113102,
+      "3": 113103
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "杀手",
+      "InKey": "name_1131",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1131",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1131",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1132": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1132,
+    "starttime": "",
+    "tasklist": {
+      "1": 113201,
+      "2": 113202,
+      "3": 113203
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "指挥官",
+      "InKey": "name_1132",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1132",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1132",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1133": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1133,
+    "starttime": "",
+    "tasklist": {
+      "1": 113301,
+      "2": 113302,
+      "3": 113303
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "小小发明家",
+      "InKey": "name_1133",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1133",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1133",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1134": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1134,
+    "starttime": "",
+    "tasklist": {
+      "1": 113401,
+      "2": 113402,
+      "3": 113403
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "救世主",
+      "InKey": "name_1134",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1134",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1134",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "1135": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 1135,
+    "starttime": "",
+    "tasklist": {
+      "1": 113501,
+      "2": 113502,
+      "3": 113503
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "BOOM!",
+      "InKey": "name_1135",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_1135",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_1135",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7001": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7001,
+    "starttime": "",
+    "tasklist": {
+      "1": 712301
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】初识矩阵",
+      "InKey": "name_7001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7002": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7002,
+    "starttime": "",
+    "tasklist": {
+      "1": 710201
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】心意相通",
+      "InKey": "name_7002",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7002",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7002",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7003": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7003,
+    "starttime": "",
+    "tasklist": {
+      "1": 711601
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】社交新人",
+      "InKey": "name_7003",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7003",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7003",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7004": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7004,
+    "starttime": "",
+    "tasklist": {
+      "1": 711701
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】社交名流",
+      "InKey": "name_7004",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7004",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7004",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7005": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7005,
+    "starttime": "",
+    "tasklist": {
+      "1": 712801
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】精准命中",
+      "InKey": "name_7005",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7005",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7005",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7006": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7006,
+    "starttime": "",
+    "tasklist": {
+      "1": 710401
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】监管者",
+      "InKey": "name_7006",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7006",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7006",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7007": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7007,
+    "starttime": "",
+    "tasklist": {
+      "1": 711201
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】清理能手",
+      "InKey": "name_7007",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7007",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7007",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7008": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7008,
+    "starttime": "",
+    "tasklist": {
+      "1": 710301
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】团队合作",
+      "InKey": "name_7008",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7008",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7008",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7009": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7009,
+    "starttime": "",
+    "tasklist": {
+      "1": 711001
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】巨人捕手",
+      "InKey": "name_7009",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7009",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7009",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7010": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7010,
+    "starttime": "",
+    "tasklist": {
+      "1": 710903
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】燃起来了",
+      "InKey": "name_7010",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7010",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7010",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7011": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7011,
+    "starttime": "",
+    "tasklist": {
+      "1": 711203
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】神之子",
+      "InKey": "name_7011",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7011",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7011",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7012": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7012,
+    "starttime": "",
+    "tasklist": {
+      "1": 711801
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】第一名",
+      "InKey": "name_7012",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7012",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7012",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7013": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7013,
+    "starttime": "",
+    "tasklist": {
+      "1": 711302
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】欢迎光临",
+      "InKey": "name_7013",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7013",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7013",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7014": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7014,
+    "starttime": "",
+    "tasklist": {
+      "1": 711003
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】秘宝发掘者",
+      "InKey": "name_7014",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7014",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7014",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7015": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7015,
+    "starttime": "",
+    "tasklist": {
+      "1": 712601
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】秘宝收藏家",
+      "InKey": "name_7015",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7015",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7015",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7016": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7016,
+    "starttime": "",
+    "tasklist": {
+      "1": 712001
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】小插曲",
+      "InKey": "name_7016",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7016",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7016",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7017": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7017,
+    "starttime": "",
+    "tasklist": {
+      "1": 710901
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】势不可当",
+      "InKey": "name_7017",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7017",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7017",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7018": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7018,
+    "starttime": "",
+    "tasklist": {
+      "1": 711401
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】职业规划",
+      "InKey": "name_7018",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7018",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7018",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7019": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7019,
+    "starttime": "",
+    "tasklist": {
+      "1": 711301
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】熟能生巧",
+      "InKey": "name_7019",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7019",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7019",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7020": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7020,
+    "starttime": "",
+    "tasklist": {
+      "1": 711101
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】亲密关系",
+      "InKey": "name_7020",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7020",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7020",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6001": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6001,
+    "starttime": "",
+    "tasklist": {
+      "1": 610401
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】初识矩阵",
+      "InKey": "name_6001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6002": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6002,
+    "starttime": "",
+    "tasklist": {
+      "1": 610901
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】心意相通",
+      "InKey": "name_6002",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6002",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6002",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6003": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6003,
+    "starttime": "",
+    "tasklist": {
+      "1": 612300
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】社交新人",
+      "InKey": "name_6003",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6003",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6003",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6004": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6004,
+    "starttime": "",
+    "tasklist": {
+      "1": 612301
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】社交名流",
+      "InKey": "name_6004",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6004",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6004",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6005": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6005,
+    "starttime": "",
+    "tasklist": {
+      "1": 611301
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】精准命中",
+      "InKey": "name_6005",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6005",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6005",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "100101": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 100101,
+    "starttime": "",
+    "tasklist": {
+      "1": 910101,
+      "2": 910102,
+      "3": 910103,
+      "4": 910104,
+      "5": 910105,
+      "6": 910106,
+      "7": 910107,
+      "8": 910108,
+      "9": 910109,
+      "10": 910110,
+      "11": 910111,
+      "12": 910112,
+      "13": 910113,
+      "14": 910114,
+      "15": 910115,
+      "16": 910116,
+      "17": 910117,
+      "18": 910118,
+      "19": 910119,
+      "20": 910120,
+      "21": 910121,
+      "22": 910122,
+      "23": 910123,
+      "24": 910124,
+      "25": 910125,
+      "26": 910126,
+      "27": 910127,
+      "28": 910128,
+      "29": 910129,
+      "30": 910130
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】剧情系统线索",
+      "InKey": "name_100101",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_100101",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_100101",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "100102": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 100102,
+    "starttime": "",
+    "tasklist": {
+      "1": 910201,
+      "2": 910202,
+      "3": 910203,
+      "4": 910204,
+      "5": 910205,
+      "6": 910206,
+      "7": 910207,
+      "8": 910208,
+      "9": 910209,
+      "10": 910210,
+      "11": 910211,
+      "12": 910212
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】剧情系统线索",
+      "InKey": "name_100102",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_100102",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_100102",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "100103": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 100103,
+    "starttime": "",
+    "tasklist": {
+      "1": 910301,
+      "2": 910302,
+      "3": 910303,
+      "4": 910304,
+      "5": 910305,
+      "6": 910306,
+      "7": 910307,
+      "8": 910308
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】剧情系统线索",
+      "InKey": "name_100103",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_100103",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_100103",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6009": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6009,
+    "starttime": "",
+    "tasklist": {
+      "1": 611501
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】巨人捕手",
+      "InKey": "name_6009",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6009",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6009",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6010": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6010,
+    "starttime": "",
+    "tasklist": {
+      "1": 611601
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】燃起来了",
+      "InKey": "name_6010",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6010",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6010",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6011": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6011,
+    "starttime": "",
+    "tasklist": {
+      "1": 611701
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】神之子",
+      "InKey": "name_6011",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6011",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6011",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6012": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6012,
+    "starttime": "",
+    "tasklist": {
+      "1": 611201
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】第一名",
+      "InKey": "name_6012",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6012",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6012",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6013": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6013,
+    "starttime": "",
+    "tasklist": {
+      "1": 611801
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】欢迎光临",
+      "InKey": "name_6013",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6013",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6013",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6014": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6014,
+    "starttime": "",
+    "tasklist": {
+      "1": 612800
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】秘宝发掘者",
+      "InKey": "name_6014",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6014",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6014",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6015": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6015,
+    "starttime": "",
+    "tasklist": {
+      "1": 612801
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】秘宝收藏家",
+      "InKey": "name_6015",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6015",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6015",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6016": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6016,
+    "starttime": "",
+    "tasklist": {
+      "1": 612901
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】小插曲",
+      "InKey": "name_6016",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6016",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6016",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6017": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6017,
+    "starttime": "",
+    "tasklist": {
+      "1": 610301
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】势不可当",
+      "InKey": "name_6017",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6017",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6017",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6018": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6018,
+    "starttime": "",
+    "tasklist": {
+      "1": 611001
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】职业规划",
+      "InKey": "name_6018",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6018",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6018",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6019": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6019,
+    "starttime": "",
+    "tasklist": {
+      "1": 610404
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】熟能生巧",
+      "InKey": "name_6019",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6019",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6019",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6020": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6020,
+    "starttime": "",
+    "tasklist": {
+      "1": 610903
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】亲密关系",
+      "InKey": "name_6020",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6020",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6020",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "5001": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 5001,
+    "starttime": "",
+    "tasklist": {
+      "1": 60201,
+      "2": 60202,
+      "3": 60203,
+      "4": 60204,
+      "5": 60205,
+      "6": 60206,
+      "7": 60207,
+      "8": 60208,
+      "9": 60209,
+      "10": 60210
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "炽热焦土",
+      "InKey": "name_5001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "/Game/Rouge/UI/Atlas/Beginner/Frames/icon_zhuxian02_01.icon_zhuxian02_01",
+    "resourceslimit": {},
+    "image": "/Game/Rouge/UI/Atlas/Beginner/Frames/Bat_Zx_tab.Bat_Zx_tab",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "爆炸新星",
+      "InKey": "content_5001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "炽热焦土",
+      "InKey": "title_5001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6022": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6022,
+    "starttime": "",
+    "tasklist": {
+      "1": 611302
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】一击必中",
+      "InKey": "name_6022",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6022",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6022",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6023": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6023,
+    "starttime": "",
+    "tasklist": {
+      "1": 611803
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】购物清单",
+      "InKey": "name_6023",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6023",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6023",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6024": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6024,
+    "starttime": "",
+    "tasklist": {
+      "1": 612501
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】大富翁",
+      "InKey": "name_6024",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6024",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6024",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6025": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6025,
+    "starttime": "",
+    "tasklist": {
+      "1": 612803
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】秘宝专家",
+      "InKey": "name_6025",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6025",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6025",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6026": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6026,
+    "starttime": "",
+    "tasklist": {
+      "1": 610304
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】势如破竹",
+      "InKey": "name_6026",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6026",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6026",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6027": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6027,
+    "starttime": "",
+    "tasklist": {
+      "1": 612902
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】情报达人",
+      "InKey": "name_6027",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6027",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6027",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6028": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6028,
+    "starttime": "",
+    "tasklist": {
+      "1": 611003
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】全面成长",
+      "InKey": "name_6028",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6028",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6028",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6029": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6029,
+    "starttime": "",
+    "tasklist": {
+      "1": 612601
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】智能眷顾",
+      "InKey": "name_6029",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6029",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6029",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6030": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6030,
+    "starttime": "",
+    "tasklist": {
+      "1": 611504
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】巨人终结者",
+      "InKey": "name_6030",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6030",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6030",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6031": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6031,
+    "starttime": "",
+    "tasklist": {
+      "1": 612001
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】理想主义",
+      "InKey": "name_6031",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6031",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6031",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6032": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6032,
+    "starttime": "",
+    "tasklist": {
+      "1": 612101
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】真正的信仰",
+      "InKey": "name_6032",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6032",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6032",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "4001": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 4001,
+    "starttime": "",
+    "tasklist": {
+      "1": 60101,
+      "2": 60102,
+      "3": 60103,
+      "4": 60104,
+      "5": 60105,
+      "6": 60106,
+      "7": 60107,
+      "8": 60108,
+      "9": 60109,
+      "10": 60110
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "环都",
+      "InKey": "name_4001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "/Game/Rouge/UI/Atlas/Beginner/Frames/icon_zhuxian01_01.icon_zhuxian01_01",
+    "resourceslimit": {},
+    "image": "/Game/Rouge/UI/Atlas/Beginner/Frames/Bat_Zx_tab01.Bat_Zx_tab01",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "肆虐的病毒",
+      "InKey": "content_4001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "环都",
+      "InKey": "title_4001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200101": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200101,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 2001011,
+      "2": 2001012,
+      "3": 2001013,
+      "4": 2001014
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【法则逸闻】安全主要",
+      "InKey": "name_200101",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {
+      "1": {
+        "key": 99994,
+        "value": 1000
+      }
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200101",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200101",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200102": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200102,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 2001021,
+      "2": 2001022
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【法则逸闻】安全附加",
+      "InKey": "name_200102",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200102",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200102",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200103": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200103,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 2001031,
+      "2": 2001032,
+      "3": 2001033,
+      "4": 2001034
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【法则逸闻】爱欲主要",
+      "InKey": "name_200103",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {
+      "1": {
+        "key": 300001,
+        "value": 100
+      }
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200103",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200103",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200104": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200104,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 2001041,
+      "2": 2001042
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【法则逸闻】爱欲附加",
+      "InKey": "name_200104",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200104",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200104",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200105": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200105,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 2001051,
+      "2": 2001052,
+      "3": 2001053,
+      "4": 2001054
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【法则逸闻】幸运主要",
+      "InKey": "name_200105",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {
+      "1": {
+        "key": 99016,
+        "value": 10
+      }
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200105",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200105",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200106": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200106,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 2001061,
+      "2": 2001062
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【法则逸闻】幸运附加",
+      "InKey": "name_200106",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200106",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200106",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200107": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200107,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 2001071,
+      "2": 2001072,
+      "3": 2001073,
+      "4": 2001074
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【法则逸闻】能量主要",
+      "InKey": "name_200107",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {
+      "1": {
+        "key": 300001,
+        "value": 100
+      }
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200107",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200107",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200108": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200108,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 2001081,
+      "2": 2001082
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【法则逸闻】能量附加",
+      "InKey": "name_200108",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200108",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200108",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200109": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200109,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 2001091,
+      "2": 2001092,
+      "3": 2001093,
+      "4": 2001094
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【法则逸闻】电玩主要",
+      "InKey": "name_200109",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {
+      "1": {
+        "key": 20703019,
+        "value": 1
+      }
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200109",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200109",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200110": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200110,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 2001101,
+      "2": 2001102
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【法则逸闻】电玩附加",
+      "InKey": "name_200110",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200110",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200110",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200111": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200111,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 2001111,
+      "2": 2001112,
+      "3": 2001113,
+      "4": 2001114
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【法则逸闻】节奏主要",
+      "InKey": "name_200111",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {
+      "1": {
+        "key": 99994,
+        "value": 2500
+      }
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200111",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200111",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200112": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200112,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 2001121,
+      "2": 2001122
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【法则逸闻】节奏附加",
+      "InKey": "name_200112",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200112",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200112",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200113": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200113,
+    "starttime": "2024-12-10 00:00:00",
+    "tasklist": {
+      "1": 2001131,
+      "2": 2001132,
+      "3": 2001133,
+      "4": 2001134
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【法则逸闻】财富主要",
+      "InKey": "name_200113",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {
+      "1": {
+        "key": 20720202,
+        "value": 1
+      }
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200113",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200113",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200114": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200114,
+    "starttime": "2024-12-10 00:00:00",
+    "tasklist": {
+      "1": 2001141,
+      "2": 2001142
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【法则逸闻】财富附加",
+      "InKey": "name_200114",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200114",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200114",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200115": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200115,
+    "starttime": "2024-10-31 05:00:00",
+    "tasklist": {
+      "1": 2001151,
+      "2": 2001152,
+      "3": 2001153,
+      "4": 2001154
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【法则逸闻】雷霆主要",
+      "InKey": "name_200115",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {
+      "1": {
+        "key": 99994,
+        "value": 2500
+      }
+    },
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200115",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200115",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200116": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200116,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 2001161,
+      "2": 2001162
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【法则逸闻】雷霆附加",
+      "InKey": "name_200116",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200116",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200116",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200120": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200120,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 2001201,
+      "2": 2001202,
+      "3": 2001203,
+      "4": 2001204
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【法则轶闻】积分奖励",
+      "InKey": "name_200120",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200120",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200120",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7032": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7032,
+    "starttime": "",
+    "tasklist": {
+      "1": 712803
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】真正的信仰",
+      "InKey": "name_7032",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7032",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7032",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7031": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7031,
+    "starttime": "",
+    "tasklist": {
+      "1": 712501
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】理想主义",
+      "InKey": "name_7031",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7031",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7031",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7030": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7030,
+    "starttime": "",
+    "tasklist": {
+      "1": 710404
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】巨人终结者",
+      "InKey": "name_7030",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7030",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7030",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7029": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7029,
+    "starttime": "",
+    "tasklist": {
+      "1": 712902
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】智能眷顾",
+      "InKey": "name_7029",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7029",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7029",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7028": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7028,
+    "starttime": "",
+    "tasklist": {
+      "1": 711501
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】全面成长",
+      "InKey": "name_7028",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7028",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7028",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7027": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7027,
+    "starttime": "",
+    "tasklist": {
+      "1": 712101
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】情报达人",
+      "InKey": "name_7027",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7027",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7027",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7026": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7026,
+    "starttime": "",
+    "tasklist": {
+      "1": 712300
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】势如破竹",
+      "InKey": "name_7026",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7026",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7026",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "100201": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 100201,
+    "starttime": "",
+    "tasklist": {
+      "1": 920101,
+      "2": 920102,
+      "3": 920103,
+      "4": 920104,
+      "5": 920105,
+      "6": 920106,
+      "7": 920107,
+      "8": 920108,
+      "9": 920109,
+      "10": 920110,
+      "11": 920111,
+      "12": 920112,
+      "13": 920113,
+      "14": 920114,
+      "15": 920115,
+      "16": 920116,
+      "17": 920117,
+      "18": 920118,
+      "19": 920119,
+      "20": 920120,
+      "21": 920121,
+      "22": 920122,
+      "23": 920123,
+      "24": 920124,
+      "25": 920125,
+      "26": 920126,
+      "27": 920127,
+      "28": 920128,
+      "29": 920129,
+      "30": 920130
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】剧情系统线索",
+      "InKey": "name_100201",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_100201",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_100201",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "100202": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 100202,
+    "starttime": "",
+    "tasklist": {
+      "1": 920201,
+      "2": 920202,
+      "3": 920203,
+      "4": 920204,
+      "5": 920205,
+      "6": 920206,
+      "7": 920207,
+      "8": 920208,
+      "9": 920209,
+      "10": 920210,
+      "11": 920211,
+      "12": 920212
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】剧情系统线索",
+      "InKey": "name_100202",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_100202",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_100202",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "100203": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 100203,
+    "starttime": "",
+    "tasklist": {
+      "1": 920301,
+      "2": 920302,
+      "3": 920303,
+      "4": 920304,
+      "5": 920305,
+      "6": 920306,
+      "7": 920307,
+      "8": 920308
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】剧情系统线索",
+      "InKey": "name_100203",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_100203",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_100203",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7025": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7025,
+    "starttime": "",
+    "tasklist": {
+      "1": 711504
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】秘宝专家",
+      "InKey": "name_7025",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7025",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7025",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7024": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7024,
+    "starttime": "",
+    "tasklist": {
+      "1": 710304
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】大富翁",
+      "InKey": "name_7024",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7024",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7024",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7023": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7023,
+    "starttime": "",
+    "tasklist": {
+      "1": 711803
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】购物清单",
+      "InKey": "name_7023",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7023",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7023",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7022": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7022,
+    "starttime": "",
+    "tasklist": {
+      "1": 712901
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】一击必中",
+      "InKey": "name_7022",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7022",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7022",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "7021": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 7021,
+    "starttime": "",
+    "tasklist": {
+      "1": 712800
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】战斗大师",
+      "InKey": "name_7021",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_7021",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_7021",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6021": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6021,
+    "starttime": "",
+    "tasklist": {
+      "1": 611203
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】战斗大师",
+      "InKey": "name_6021",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6021",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6021",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6008": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6008,
+    "starttime": "",
+    "tasklist": {
+      "1": 611401
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】团队合作",
+      "InKey": "name_6008",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6008",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6008",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6007": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6007,
+    "starttime": "",
+    "tasklist": {
+      "1": 611101
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】清理能手",
+      "InKey": "name_6007",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6007",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6007",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "6006": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 6006,
+    "starttime": "",
+    "tasklist": {
+      "1": 610201
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】监管者",
+      "InKey": "name_6006",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_6006",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_6006",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "101": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": false,
+    "id": 101,
+    "starttime": "",
+    "tasklist": {
+      "1": 10101
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】解锁海因克斯",
+      "InKey": "name_101",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_101",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_101",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "3001": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "",
+    "discarded": false,
+    "enable": true,
+    "id": 3001,
+    "starttime": "",
+    "tasklist": {
+      "1": 300101,
+      "2": 300102,
+      "3": 300103,
+      "4": 300104,
+      "5": 300105,
+      "6": 300106
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【备注】成功通关任务",
+      "InKey": "name_3001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_3001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_3001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  },
+  "200001": {
+    "resetautosendtomail": false,
+    "eventtrigger": false,
+    "endtime": "2045-12-31 05:00:00",
+    "discarded": false,
+    "enable": true,
+    "id": 200001,
+    "starttime": "2023-03-01 00:00:00",
+    "tasklist": {
+      "1": 2000011,
+      "2": 2000012,
+      "3": 2000013,
+      "4": 2000014,
+      "5": 2000015,
+      "6": 2000016,
+      "7": 2000017
+    },
+    "nameLocMeta": {
+      "InTextLiteral": "【七日签到】任务组",
+      "InKey": "name_200001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "icon": "",
+    "resourceslimit": {},
+    "image": "",
+    "autoreward": false,
+    "rewardlist": {},
+    "contentLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "content_200001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "titleLocMeta": {
+      "InTextLiteral": "",
+      "InKey": "title_200001",
+      "InNamespace": "task_TBTaskGroupData"
+    },
+    "reset": 0
+  }
+}

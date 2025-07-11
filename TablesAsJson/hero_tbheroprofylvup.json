@@ -1,0 +1,12 @@
+﻿{
+  "1": {
+    "Exp": 100,
+    "NameLocMeta": {
+      "InNamespace": "hero_TBHeroProfyLvUp",
+      "InTextLiteral": "等级",
+      "InKey": "Name_1"
+    },
+    "Level": 1,
+    "IconPath": "/iconf/xxx.icon"
+  }
+}

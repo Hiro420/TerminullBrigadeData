@@ -1,0 +1,47 @@
+﻿{
+  "1": {
+    "AnnotationLocMeta": {
+      "InNamespace": "lobby_TBBanReason",
+      "InTextLiteral": "发布违规信息",
+      "InKey": "Annotation_1"
+    },
+    "Tips": "发布违规信息",
+    "ID": 1
+  },
+  "2": {
+    "AnnotationLocMeta": {
+      "InNamespace": "lobby_TBBanReason",
+      "InTextLiteral": "个人资料违规",
+      "InKey": "Annotation_2"
+    },
+    "Tips": "个人资料违规",
+    "ID": 2
+  },
+  "3": {
+    "AnnotationLocMeta": {
+      "InNamespace": "lobby_TBBanReason",
+      "InTextLiteral": "恶意游戏行为",
+      "InKey": "Annotation_3"
+    },
+    "Tips": "恶意游戏行为",
+    "ID": 3
+  },
+  "4": {
+    "AnnotationLocMeta": {
+      "InNamespace": "lobby_TBBanReason",
+      "InTextLiteral": "使用作弊工具",
+      "InKey": "Annotation_4"
+    },
+    "Tips": "使用作弊工具",
+    "ID": 4
+  },
+  "5": {
+    "AnnotationLocMeta": {
+      "InNamespace": "lobby_TBBanReason",
+      "InTextLiteral": "恶意游戏行为",
+      "InKey": "Annotation_5"
+    },
+    "Tips": "恶意游戏行为",
+    "ID": 5
+  }
+}

@@ -1,0 +1,302 @@
+﻿{
+  "1068012": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1068012
+  },
+  "1068013": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1068013
+  },
+  "1018011": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1018011
+  },
+  "1018012": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1018012
+  },
+  "1018013": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1018013
+  },
+  "1065011": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1065011
+  },
+  "1065012": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1065012
+  },
+  "1065013": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1065013
+  },
+  "1015011": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1015011
+  },
+  "1015012": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1015012
+  },
+  "1015013": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1015013
+  },
+  "9048013": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 9048013
+  },
+  "1035011": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1035011
+  },
+  "1008011": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1008011
+  },
+  "1008012": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1008012
+  },
+  "1008013": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1008013
+  },
+  "9045012": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 9045012
+  },
+  "9045013": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 9045013
+  },
+  "1035013": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1035013
+  },
+  "9048012": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 9048012
+  },
+  "1005011": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1005011
+  },
+  "1005012": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1005012
+  },
+  "1005013": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1005013
+  },
+  "9048011": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 9048011
+  },
+  "9045011": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 9045011
+  },
+  "1025011": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1025011
+  },
+  "1025012": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1025012
+  },
+  "1025013": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1025013
+  },
+  "1068011": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1068011
+  },
+  "1035012": {
+    "CostResources": {
+      "1": {
+        "value": 10,
+        "key": 99017
+      }
+    },
+    "GoodsID": 12,
+    "ID": 1035012
+  }
+}

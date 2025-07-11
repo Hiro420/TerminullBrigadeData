@@ -1,0 +1,769 @@
+local puzzle_tbpuzzleinitinscription = {
+  [1] = {
+    ID = 1,
+    InscriptionWeight = {
+      {key = 54100031, value = 20},
+      {key = 54100032, value = 50},
+      {key = 54100033, value = 30},
+      {key = 54100041, value = 20},
+      {key = 54100042, value = 50},
+      {key = 54100043, value = 30},
+      {key = 54100061, value = 20},
+      {key = 54100062, value = 50},
+      {key = 54100063, value = 30},
+      {key = 54100071, value = 20},
+      {key = 54100072, value = 50},
+      {key = 54100073, value = 30},
+      {key = 54100081, value = 20},
+      {key = 54100082, value = 50},
+      {key = 54100083, value = 30},
+      {key = 54100091, value = 20},
+      {key = 54100092, value = 50},
+      {key = 54100093, value = 30},
+      {key = 54100101, value = 20},
+      {key = 54100102, value = 50},
+      {key = 54100103, value = 30},
+      {key = 54100121, value = 20},
+      {key = 54100122, value = 50},
+      {key = 54100123, value = 30},
+      {key = 54100141, value = 20},
+      {key = 54100142, value = 50},
+      {key = 54100143, value = 30},
+      {key = 54100151, value = 33},
+      {key = 54100152, value = 67},
+      {key = 54100191, value = 20},
+      {key = 54100192, value = 50},
+      {key = 54100193, value = 30},
+      {key = 54100221, value = 20},
+      {key = 54100222, value = 50},
+      {key = 54100223, value = 30},
+      {key = 54100231, value = 20},
+      {key = 54100232, value = 50},
+      {key = 54100233, value = 30},
+      {key = 54100241, value = 20},
+      {key = 54100242, value = 50},
+      {key = 54100243, value = 30},
+      {key = 54100251, value = 20},
+      {key = 54100252, value = 50},
+      {key = 54100253, value = 30},
+      {key = 54100261, value = 20},
+      {key = 54100262, value = 50},
+      {key = 54100263, value = 30},
+      {key = 54100271, value = 20},
+      {key = 54100272, value = 50},
+      {key = 54100273, value = 30},
+      {key = 54100281, value = 20},
+      {key = 54100282, value = 50},
+      {key = 54100283, value = 30},
+      {key = 54100291, value = 20},
+      {key = 54100292, value = 50},
+      {key = 54100293, value = 30},
+      {key = 54100321, value = 20},
+      {key = 54100322, value = 50},
+      {key = 54100323, value = 30},
+      {key = 5410038, value = 50},
+      {key = 54100421, value = 20},
+      {key = 54100422, value = 50},
+      {key = 54100423, value = 30},
+      {key = 54100451, value = 20},
+      {key = 54100452, value = 50},
+      {key = 54100453, value = 30},
+      {key = 54100481, value = 20},
+      {key = 54100482, value = 50},
+      {key = 54100483, value = 30},
+      {key = 54100491, value = 20},
+      {key = 54100492, value = 50},
+      {key = 54100493, value = 30},
+      {key = 54100501, value = 20},
+      {key = 54100502, value = 50},
+      {key = 54100503, value = 30},
+      {key = 54100511, value = 20},
+      {key = 54100512, value = 50},
+      {key = 54100513, value = 30},
+      {key = 54100551, value = 20},
+      {key = 54100552, value = 50},
+      {key = 54100553, value = 30},
+      {key = 54100621, value = 20},
+      {key = 54100622, value = 50},
+      {key = 54100623, value = 30},
+      {key = 54100751, value = 20},
+      {key = 54100752, value = 50},
+      {key = 54100753, value = 30},
+      {key = 54100761, value = 20},
+      {key = 54100762, value = 50},
+      {key = 54100763, value = 30},
+      {key = 5991017, value = 50},
+      {key = 5991018, value = 50}
+    }
+  },
+  [2] = {
+    ID = 2,
+    InscriptionWeight = {
+      {key = 5320001, value = 10},
+      {key = 5320002, value = 10},
+      {key = 5320003, value = 10},
+      {key = 5320004, value = 10},
+      {key = 5320005, value = 10},
+      {key = 5320006, value = 10},
+      {key = 5320007, value = 10},
+      {key = 5320008, value = 10},
+      {key = 5320009, value = 10},
+      {key = 5320010, value = 10},
+      {key = 5320011, value = 10},
+      {key = 5320012, value = 10},
+      {key = 5320013, value = 10},
+      {key = 5320014, value = 10},
+      {key = 5321010, value = 5},
+      {key = 5321011, value = 5},
+      {key = 5321020, value = 5},
+      {key = 5321021, value = 5},
+      {key = 5321000, value = 5},
+      {key = 5321001, value = 5},
+      {key = 5321040, value = 5},
+      {key = 5321041, value = 5},
+      {key = 5321030, value = 5},
+      {key = 5321031, value = 5},
+      {key = 5321060, value = 5},
+      {key = 5321061, value = 5},
+      {key = 3070110, value = 10},
+      {key = 3000110, value = 10},
+      {key = 3020110, value = 10},
+      {key = 3040110, value = 10},
+      {key = 3050110, value = 10},
+      {key = 3030110, value = 10},
+      {key = 3010110, value = 10},
+      {key = 3060110, value = 10},
+      {key = 541000771, value = 5}
+    }
+  },
+  [3] = {
+    ID = 3,
+    InscriptionWeight = {
+      {key = 54100031, value = 100},
+      {key = 54100041, value = 100},
+      {key = 54100061, value = 100},
+      {key = 54100071, value = 100},
+      {key = 54100081, value = 100},
+      {key = 54100091, value = 100},
+      {key = 54100101, value = 100},
+      {key = 54100121, value = 100},
+      {key = 54100191, value = 100},
+      {key = 54100321, value = 100},
+      {key = 54100421, value = 100},
+      {key = 54100451, value = 100},
+      {key = 54100501, value = 100},
+      {key = 54100761, value = 100}
+    }
+  },
+  [4] = {
+    ID = 4,
+    InscriptionWeight = {
+      {key = 54100141, value = 100},
+      {key = 54100151, value = 100},
+      {key = 54100221, value = 100},
+      {key = 54100231, value = 100},
+      {key = 54100241, value = 100},
+      {key = 54100251, value = 100},
+      {key = 54100261, value = 100},
+      {key = 54100271, value = 100},
+      {key = 54100281, value = 100},
+      {key = 54100291, value = 100},
+      {key = 54100481, value = 100},
+      {key = 54100491, value = 100},
+      {key = 54100511, value = 100},
+      {key = 54100551, value = 100},
+      {key = 54100621, value = 100},
+      {key = 54100751, value = 100},
+      {key = 54100381, value = 100},
+      {key = 59910171, value = 100},
+      {key = 59910181, value = 100},
+      {key = 54100032, value = 60},
+      {key = 54100033, value = 40},
+      {key = 54100042, value = 60},
+      {key = 54100043, value = 40},
+      {key = 54100062, value = 60},
+      {key = 54100063, value = 40},
+      {key = 54100072, value = 60},
+      {key = 54100073, value = 40},
+      {key = 54100082, value = 60},
+      {key = 54100083, value = 40},
+      {key = 54100092, value = 60},
+      {key = 54100093, value = 40},
+      {key = 54100102, value = 60},
+      {key = 54100103, value = 40},
+      {key = 54100122, value = 60},
+      {key = 54100123, value = 40},
+      {key = 54100192, value = 60},
+      {key = 54100193, value = 40},
+      {key = 54100322, value = 60},
+      {key = 54100323, value = 40},
+      {key = 54100422, value = 60},
+      {key = 54100423, value = 40},
+      {key = 54100452, value = 60},
+      {key = 54100453, value = 40},
+      {key = 54100502, value = 60},
+      {key = 54100503, value = 40},
+      {key = 54100762, value = 60},
+      {key = 54100763, value = 40}
+    }
+  },
+  [5] = {
+    ID = 5,
+    InscriptionWeight = {
+      {key = 54100142, value = 100},
+      {key = 54100152, value = 100},
+      {key = 54100222, value = 100},
+      {key = 54100232, value = 100},
+      {key = 54100242, value = 100},
+      {key = 54100252, value = 100},
+      {key = 54100262, value = 100},
+      {key = 54100272, value = 100},
+      {key = 54100282, value = 100},
+      {key = 54100292, value = 100},
+      {key = 54100482, value = 100},
+      {key = 54100492, value = 100},
+      {key = 54100512, value = 100},
+      {key = 54100552, value = 100},
+      {key = 54100622, value = 100},
+      {key = 54100752, value = 100},
+      {key = 54100382, value = 100},
+      {key = 59910172, value = 100},
+      {key = 59910182, value = 100},
+      {key = 54100034, value = 60},
+      {key = 54100035, value = 40},
+      {key = 54100044, value = 60},
+      {key = 54100045, value = 40},
+      {key = 54100064, value = 60},
+      {key = 54100065, value = 40},
+      {key = 54100074, value = 60},
+      {key = 54100075, value = 40},
+      {key = 54100084, value = 60},
+      {key = 54100085, value = 40},
+      {key = 54100094, value = 60},
+      {key = 54100095, value = 40},
+      {key = 54100104, value = 60},
+      {key = 54100105, value = 40},
+      {key = 54100124, value = 60},
+      {key = 54100125, value = 40},
+      {key = 54100194, value = 60},
+      {key = 54100195, value = 40},
+      {key = 54100324, value = 60},
+      {key = 54100325, value = 40},
+      {key = 54100424, value = 60},
+      {key = 54100425, value = 40},
+      {key = 54100454, value = 60},
+      {key = 54100455, value = 40},
+      {key = 54100504, value = 60},
+      {key = 54100505, value = 40},
+      {key = 54100764, value = 60},
+      {key = 54100765, value = 40}
+    }
+  },
+  [6] = {
+    ID = 6,
+    InscriptionWeight = {
+      {key = 54100143, value = 100},
+      {key = 54100153, value = 100},
+      {key = 54100223, value = 100},
+      {key = 54100233, value = 100},
+      {key = 54100243, value = 100},
+      {key = 54100253, value = 100},
+      {key = 54100263, value = 100},
+      {key = 54100273, value = 100},
+      {key = 54100283, value = 100},
+      {key = 54100293, value = 100},
+      {key = 54100483, value = 100},
+      {key = 54100493, value = 100},
+      {key = 54100513, value = 100},
+      {key = 54100553, value = 100},
+      {key = 54100623, value = 100},
+      {key = 54100753, value = 100},
+      {key = 54100383, value = 100},
+      {key = 59910173, value = 100},
+      {key = 59910183, value = 100},
+      {key = 54100036, value = 60},
+      {key = 54100037, value = 40},
+      {key = 54100046, value = 60},
+      {key = 54100047, value = 40},
+      {key = 54100066, value = 60},
+      {key = 54100067, value = 40},
+      {key = 54100076, value = 60},
+      {key = 54100077, value = 40},
+      {key = 54100086, value = 60},
+      {key = 54100087, value = 40},
+      {key = 54100096, value = 60},
+      {key = 54100097, value = 40},
+      {key = 54100106, value = 60},
+      {key = 54100107, value = 40},
+      {key = 54100126, value = 60},
+      {key = 54100127, value = 40},
+      {key = 54100196, value = 60},
+      {key = 54100197, value = 40},
+      {key = 54100326, value = 60},
+      {key = 54100327, value = 40},
+      {key = 54100426, value = 60},
+      {key = 54100427, value = 40},
+      {key = 54100456, value = 60},
+      {key = 54100457, value = 40},
+      {key = 54100506, value = 60},
+      {key = 54100507, value = 40},
+      {key = 54100766, value = 60},
+      {key = 54100767, value = 40}
+    }
+  },
+  [7] = {
+    ID = 7,
+    InscriptionWeight = {
+      {key = 5321010, value = 1},
+      {key = 5321011, value = 1},
+      {key = 5321060, value = 1},
+      {key = 5321061, value = 1},
+      {key = 5321041, value = 1},
+      {key = 5320001, value = 1},
+      {key = 5320002, value = 1},
+      {key = 5320003, value = 1},
+      {key = 5320004, value = 1},
+      {key = 5320005, value = 1},
+      {key = 5320006, value = 1},
+      {key = 5320007, value = 1},
+      {key = 5320008, value = 1},
+      {key = 5320009, value = 1},
+      {key = 5320010, value = 1},
+      {key = 5320011, value = 1},
+      {key = 5320012, value = 1},
+      {key = 5320013, value = 1},
+      {key = 5320014, value = 1},
+      {key = 3070110, value = 1},
+      {key = 3000110, value = 1},
+      {key = 3020110, value = 1},
+      {key = 3040110, value = 1},
+      {key = 3050110, value = 1},
+      {key = 3030110, value = 1},
+      {key = 3010110, value = 1},
+      {key = 3060110, value = 1},
+      {key = 541000771, value = 1}
+    }
+  },
+  [8] = {
+    ID = 8,
+    InscriptionWeight = {
+      {key = 5321020, value = 1},
+      {key = 5321021, value = 1},
+      {key = 5321030, value = 1},
+      {key = 5321031, value = 1},
+      {key = 5321041, value = 1},
+      {key = 5320001, value = 1},
+      {key = 5320002, value = 1},
+      {key = 5320003, value = 1},
+      {key = 5320004, value = 1},
+      {key = 5320005, value = 1},
+      {key = 5320006, value = 1},
+      {key = 5320007, value = 1},
+      {key = 5320008, value = 1},
+      {key = 5320009, value = 1},
+      {key = 5320010, value = 1},
+      {key = 5320011, value = 1},
+      {key = 5320012, value = 1},
+      {key = 5320013, value = 1},
+      {key = 5320014, value = 1},
+      {key = 3070110, value = 1},
+      {key = 3000110, value = 1},
+      {key = 3020110, value = 1},
+      {key = 3040110, value = 1},
+      {key = 3050110, value = 1},
+      {key = 3030110, value = 1},
+      {key = 3010110, value = 1},
+      {key = 3060110, value = 1},
+      {key = 541000771, value = 1}
+    }
+  },
+  [9] = {
+    ID = 9,
+    InscriptionWeight = {
+      {key = 5321000, value = 1},
+      {key = 5321001, value = 1},
+      {key = 5321040, value = 1},
+      {key = 5321041, value = 1},
+      {key = 5320001, value = 1},
+      {key = 5320002, value = 1},
+      {key = 5320003, value = 1},
+      {key = 5320004, value = 1},
+      {key = 5320005, value = 1},
+      {key = 5320006, value = 1},
+      {key = 5320007, value = 1},
+      {key = 5320008, value = 1},
+      {key = 5320009, value = 1},
+      {key = 5320010, value = 1},
+      {key = 5320011, value = 1},
+      {key = 5320012, value = 1},
+      {key = 5320013, value = 1},
+      {key = 5320014, value = 1},
+      {key = 3070110, value = 1},
+      {key = 3000110, value = 1},
+      {key = 3020110, value = 1},
+      {key = 3040110, value = 1},
+      {key = 3050110, value = 1},
+      {key = 3030110, value = 1},
+      {key = 3010110, value = 1},
+      {key = 3060110, value = 1},
+      {key = 541000771, value = 1}
+    }
+  },
+  [10] = {
+    ID = 10,
+    InscriptionWeight = {
+      {key = 54100144, value = 1},
+      {key = 54100154, value = 1},
+      {key = 54100224, value = 1},
+      {key = 54100234, value = 1},
+      {key = 54100244, value = 1},
+      {key = 54100254, value = 1},
+      {key = 54100264, value = 1},
+      {key = 54100274, value = 1},
+      {key = 54100284, value = 1},
+      {key = 54100294, value = 1},
+      {key = 54100484, value = 1},
+      {key = 54100494, value = 1},
+      {key = 54100514, value = 1},
+      {key = 54100554, value = 1},
+      {key = 54100624, value = 1},
+      {key = 54100754, value = 1},
+      {key = 54100384, value = 1},
+      {key = 59910174, value = 1},
+      {key = 59910184, value = 1},
+      {key = 54100038, value = 1},
+      {key = 54100048, value = 1},
+      {key = 54100068, value = 1},
+      {key = 54100078, value = 1},
+      {key = 54100088, value = 1},
+      {key = 54100098, value = 1},
+      {key = 54100108, value = 1},
+      {key = 54100128, value = 1},
+      {key = 54100198, value = 1},
+      {key = 54100328, value = 1},
+      {key = 54100428, value = 1},
+      {key = 54100458, value = 1},
+      {key = 54100508, value = 1},
+      {key = 54100768, value = 1}
+    }
+  },
+  [100] = {
+    ID = 100,
+    InscriptionWeight = {
+      {key = 5410002, value = 80}
+    }
+  },
+  [101] = {
+    ID = 101,
+    InscriptionWeight = {
+      {key = 5410001, value = 10}
+    }
+  },
+  [102] = {
+    ID = 102,
+    InscriptionWeight = {
+      {key = 5410002, value = 10}
+    }
+  },
+  [103] = {
+    ID = 103,
+    InscriptionWeight = {
+      {key = 5410003, value = 10}
+    }
+  },
+  [104] = {
+    ID = 104,
+    InscriptionWeight = {
+      {key = 5410004, value = 10}
+    }
+  },
+  [105] = {
+    ID = 105,
+    InscriptionWeight = {
+      {key = 5410005, value = 10}
+    }
+  },
+  [106] = {
+    ID = 106,
+    InscriptionWeight = {
+      {key = 5410006, value = 10}
+    }
+  },
+  [107] = {
+    ID = 107,
+    InscriptionWeight = {
+      {key = 5410007, value = 10}
+    }
+  },
+  [108] = {
+    ID = 108,
+    InscriptionWeight = {
+      {key = 5410008, value = 10}
+    }
+  },
+  [109] = {
+    ID = 109,
+    InscriptionWeight = {
+      {key = 5410009, value = 10}
+    }
+  },
+  [110] = {
+    ID = 110,
+    InscriptionWeight = {
+      {key = 5410010, value = 10}
+    }
+  },
+  [111] = {
+    ID = 111,
+    InscriptionWeight = {
+      {key = 5410011, value = 10}
+    }
+  },
+  [112] = {
+    ID = 112,
+    InscriptionWeight = {
+      {key = 5410012, value = 10}
+    }
+  },
+  [113] = {
+    ID = 113,
+    InscriptionWeight = {
+      {key = 5410013, value = 10}
+    }
+  },
+  [114] = {
+    ID = 114,
+    InscriptionWeight = {
+      {key = 5410014, value = 10}
+    }
+  },
+  [115] = {
+    ID = 115,
+    InscriptionWeight = {
+      {key = 5410015, value = 10}
+    }
+  },
+  [116] = {
+    ID = 116,
+    InscriptionWeight = {
+      {key = 5410016, value = 10}
+    }
+  },
+  [117] = {
+    ID = 117,
+    InscriptionWeight = {
+      {key = 5410017, value = 10}
+    }
+  },
+  [118] = {
+    ID = 118,
+    InscriptionWeight = {
+      {key = 5410018, value = 10}
+    }
+  },
+  [119] = {
+    ID = 119,
+    InscriptionWeight = {
+      {key = 5410019, value = 10}
+    }
+  },
+  [120] = {
+    ID = 120,
+    InscriptionWeight = {
+      {key = 5410022, value = 10}
+    }
+  },
+  [121] = {
+    ID = 121,
+    InscriptionWeight = {
+      {key = 5410023, value = 10}
+    }
+  },
+  [122] = {
+    ID = 122,
+    InscriptionWeight = {
+      {key = 5410024, value = 10}
+    }
+  },
+  [123] = {
+    ID = 123,
+    InscriptionWeight = {
+      {key = 5410025, value = 10}
+    }
+  },
+  [124] = {
+    ID = 124,
+    InscriptionWeight = {
+      {key = 5410026, value = 10}
+    }
+  },
+  [125] = {
+    ID = 125,
+    InscriptionWeight = {
+      {key = 5410027, value = 10}
+    }
+  },
+  [126] = {
+    ID = 126,
+    InscriptionWeight = {
+      {key = 5410028, value = 10}
+    }
+  },
+  [127] = {
+    ID = 127,
+    InscriptionWeight = {
+      {key = 5410029, value = 10}
+    }
+  },
+  [128] = {
+    ID = 128,
+    InscriptionWeight = {
+      {key = 5410031, value = 10}
+    }
+  },
+  [129] = {
+    ID = 129,
+    InscriptionWeight = {
+      {key = 5410032, value = 10}
+    }
+  },
+  [130] = {
+    ID = 130,
+    InscriptionWeight = {
+      {key = 5410033, value = 10}
+    }
+  },
+  [131] = {
+    ID = 131,
+    InscriptionWeight = {
+      {key = 5410038, value = 10}
+    }
+  },
+  [132] = {
+    ID = 132,
+    InscriptionWeight = {
+      {key = 5410042, value = 10}
+    }
+  },
+  [133] = {
+    ID = 133,
+    InscriptionWeight = {
+      {key = 5410045, value = 10}
+    }
+  },
+  [134] = {
+    ID = 134,
+    InscriptionWeight = {
+      {key = 5410048, value = 10}
+    }
+  },
+  [135] = {
+    ID = 135,
+    InscriptionWeight = {
+      {key = 5410049, value = 10}
+    }
+  },
+  [136] = {
+    ID = 136,
+    InscriptionWeight = {
+      {key = 5410050, value = 10}
+    }
+  },
+  [137] = {
+    ID = 137,
+    InscriptionWeight = {
+      {key = 5410051, value = 10}
+    }
+  },
+  [138] = {
+    ID = 138,
+    InscriptionWeight = {
+      {key = 5410055, value = 10}
+    }
+  },
+  [139] = {
+    ID = 139,
+    InscriptionWeight = {
+      {key = 5410056, value = 10}
+    }
+  },
+  [140] = {
+    ID = 140,
+    InscriptionWeight = {
+      {key = 5410057, value = 10}
+    }
+  },
+  [141] = {
+    ID = 141,
+    InscriptionWeight = {
+      {key = 5410058, value = 10}
+    }
+  },
+  [142] = {
+    ID = 142,
+    InscriptionWeight = {
+      {key = 5410060, value = 10}
+    }
+  },
+  [143] = {
+    ID = 143,
+    InscriptionWeight = {
+      {key = 5410062, value = 10}
+    }
+  },
+  [144] = {
+    ID = 144,
+    InscriptionWeight = {
+      {key = 5410075, value = 10}
+    }
+  },
+  [145] = {
+    ID = 145,
+    InscriptionWeight = {
+      {key = 5410076, value = 10}
+    }
+  },
+  [146] = {
+    ID = 146,
+    InscriptionWeight = {
+      {key = 5410077, value = 10}
+    }
+  },
+  [147] = {
+    ID = 147,
+    InscriptionWeight = {
+      {key = 5991018, value = 10}
+    }
+  },
+  [148] = {
+    ID = 148,
+    InscriptionWeight = {
+      {key = 5991017, value = 10}
+    }
+  },
+  [149] = {
+    ID = 149,
+    InscriptionWeight = {
+      {key = 5410084, value = 10}
+    }
+  },
+  [150] = {
+    ID = 150,
+    InscriptionWeight = {
+      {key = 5410085, value = 10}
+    }
+  },
+  [151] = {
+    ID = 151,
+    InscriptionWeight = {
+      {key = 5410086, value = 10}
+    }
+  },
+  [152] = {
+    ID = 152,
+    InscriptionWeight = {
+      {key = 5021204, value = 10}
+    }
+  }
+}
+return puzzle_tbpuzzleinitinscription

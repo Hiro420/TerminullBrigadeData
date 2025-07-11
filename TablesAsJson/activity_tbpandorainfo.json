@@ -1,0 +1,38 @@
+﻿{
+  "3": {
+    "TabIdIntl": 3074,
+    "Id": 3,
+    "JumpParamsIntl": "{\"locateAppId\":3201}",
+    "desc": "抽奖积分二选一",
+    "TabId": 6978,
+    "LinkId": 1015,
+    "JumpParams": "{\"locateAppId\":7468}"
+  },
+  "1": {
+    "TabIdIntl": 3074,
+    "Id": 1,
+    "JumpParamsIntl": "{\"locateAppId\":3197}",
+    "desc": "超值首充",
+    "TabId": 6978,
+    "LinkId": 1015,
+    "JumpParams": "{\"locateAppId\":7449}"
+  },
+  "2": {
+    "TabIdIntl": 3074,
+    "Id": 2,
+    "JumpParamsIntl": "{\"locateAppId\":3196}",
+    "desc": "海岸魅影",
+    "TabId": 6978,
+    "LinkId": 1015,
+    "JumpParams": "{\"locateAppId\":7444}"
+  },
+  "9999": {
+    "TabIdIntl": 3074,
+    "Id": 9999,
+    "JumpParamsIntl": "{\"locateAppId\":3201}",
+    "desc": "测试",
+    "TabId": 6978,
+    "LinkId": 1015,
+    "JumpParams": "{\"locateAppId\":6738}"
+  }
+}

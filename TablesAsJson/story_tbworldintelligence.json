@@ -1,0 +1,86 @@
+﻿{
+  "1": {
+    "storyLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "story_TBWorldIntelligence",
+      "InKey": "story_1"
+    },
+    "id": 1,
+    "nameLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "story_TBWorldIntelligence",
+      "InKey": "name_1"
+    },
+    "image": "/Game/Rouge/UI/Sprite/IconCharacterbust/Frames/Bat_djsboss_icon.Bat_djsboss_icon"
+  },
+  "2": {
+    "storyLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "story_TBWorldIntelligence",
+      "InKey": "story_2"
+    },
+    "id": 2,
+    "nameLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "story_TBWorldIntelligence",
+      "InKey": "name_2"
+    },
+    "image": "/Game/Rouge/UI/Sprite/IconCharacterbust/Frames/Bat_DJQR_icon.Bat_DJQR_icon"
+  },
+  "3": {
+    "storyLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "story_TBWorldIntelligence",
+      "InKey": "story_3"
+    },
+    "id": 3,
+    "nameLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "story_TBWorldIntelligence",
+      "InKey": "name_3"
+    },
+    "image": "/Game/Rouge/UI/Sprite/IconCharacterbust/Frames/Bat_FXB_icon.Bat_FXB_icon"
+  },
+  "11": {
+    "storyLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "story_TBWorldIntelligence",
+      "InKey": "story_11"
+    },
+    "id": 11,
+    "nameLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "story_TBWorldIntelligence",
+      "InKey": "name_11"
+    },
+    "image": "/Game/Rouge/UI/Sprite/IconCharacterbust/Frames/Bat_djsboss_icon.Bat_djsboss_icon"
+  },
+  "12": {
+    "storyLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "story_TBWorldIntelligence",
+      "InKey": "story_12"
+    },
+    "id": 12,
+    "nameLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "story_TBWorldIntelligence",
+      "InKey": "name_12"
+    },
+    "image": "/Game/Rouge/UI/Sprite/IconCharacterbust/Frames/Bat_DJQR_icon.Bat_DJQR_icon"
+  },
+  "13": {
+    "storyLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "story_TBWorldIntelligence",
+      "InKey": "story_13"
+    },
+    "id": 13,
+    "nameLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "story_TBWorldIntelligence",
+      "InKey": "name_13"
+    },
+    "image": "/Game/Rouge/UI/Sprite/IconCharacterbust/Frames/Bat_FXB_icon.Bat_FXB_icon"
+  }
+}

@@ -1,0 +1,476 @@
+local chip_tbchipsubattrinit = {
+  [1] = {
+    ID = 1,
+    AttrNum = {
+      {key = 2, value = 100}
+    },
+    AttrWeight = {
+      {key = 1, value = 10},
+      {key = 2, value = 10},
+      {key = 3, value = 10},
+      {key = 4, value = 10},
+      {key = 5, value = 10},
+      {key = 6, value = 10},
+      {key = 7, value = 10},
+      {key = 8, value = 10},
+      {key = 9, value = 10},
+      {key = 10, value = 10},
+      {key = 11, value = 10},
+      {key = 12, value = 10}
+    },
+    Attr = {
+      {
+        x = 1,
+        y = 16,
+        z = 24
+      },
+      {
+        x = 2,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 3,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 4,
+        y = 5,
+        z = 8
+      },
+      {
+        x = 5,
+        y = 5,
+        z = 7
+      },
+      {
+        x = 6,
+        y = 5,
+        z = 7
+      },
+      {
+        x = 7,
+        y = 5,
+        z = 6
+      },
+      {
+        x = 8,
+        y = 6,
+        z = 8
+      },
+      {
+        x = 9,
+        y = 3,
+        z = 4
+      },
+      {
+        x = 10,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 11,
+        y = 10,
+        z = 12
+      },
+      {
+        x = 12,
+        y = 8,
+        z = 10
+      }
+    }
+  },
+  [2] = {
+    ID = 2,
+    AttrNum = {
+      {key = 3, value = 100}
+    },
+    AttrWeight = {
+      {key = 1, value = 10},
+      {key = 2, value = 10},
+      {key = 3, value = 10},
+      {key = 4, value = 10},
+      {key = 5, value = 10},
+      {key = 6, value = 10},
+      {key = 7, value = 10},
+      {key = 8, value = 10},
+      {key = 9, value = 10},
+      {key = 10, value = 10},
+      {key = 11, value = 10},
+      {key = 12, value = 10}
+    },
+    Attr = {
+      {
+        x = 1,
+        y = 16,
+        z = 24
+      },
+      {
+        x = 2,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 3,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 4,
+        y = 5,
+        z = 8
+      },
+      {
+        x = 5,
+        y = 5,
+        z = 7
+      },
+      {
+        x = 6,
+        y = 5,
+        z = 7
+      },
+      {
+        x = 7,
+        y = 5,
+        z = 6
+      },
+      {
+        x = 8,
+        y = 6,
+        z = 8
+      },
+      {
+        x = 9,
+        y = 3,
+        z = 4
+      },
+      {
+        x = 10,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 11,
+        y = 10,
+        z = 12
+      },
+      {
+        x = 12,
+        y = 8,
+        z = 10
+      }
+    }
+  },
+  [3] = {
+    ID = 3,
+    AttrNum = {
+      {key = 4, value = 100}
+    },
+    AttrWeight = {
+      {key = 1, value = 10},
+      {key = 2, value = 10},
+      {key = 3, value = 10},
+      {key = 4, value = 10},
+      {key = 5, value = 10},
+      {key = 6, value = 10},
+      {key = 7, value = 10},
+      {key = 8, value = 10},
+      {key = 9, value = 10},
+      {key = 10, value = 10},
+      {key = 11, value = 10},
+      {key = 12, value = 10}
+    },
+    Attr = {
+      {
+        x = 1,
+        y = 16,
+        z = 24
+      },
+      {
+        x = 2,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 3,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 4,
+        y = 5,
+        z = 8
+      },
+      {
+        x = 5,
+        y = 5,
+        z = 7
+      },
+      {
+        x = 6,
+        y = 5,
+        z = 7
+      },
+      {
+        x = 7,
+        y = 5,
+        z = 6
+      },
+      {
+        x = 8,
+        y = 6,
+        z = 8
+      },
+      {
+        x = 9,
+        y = 3,
+        z = 4
+      },
+      {
+        x = 10,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 11,
+        y = 10,
+        z = 12
+      },
+      {
+        x = 12,
+        y = 8,
+        z = 10
+      }
+    }
+  },
+  [4] = {
+    ID = 4,
+    AttrNum = {
+      {key = 5, value = 100}
+    },
+    AttrWeight = {
+      {key = 1, value = 10},
+      {key = 2, value = 10},
+      {key = 3, value = 10},
+      {key = 4, value = 10},
+      {key = 5, value = 10},
+      {key = 6, value = 10},
+      {key = 7, value = 10},
+      {key = 8, value = 10},
+      {key = 9, value = 10},
+      {key = 10, value = 10},
+      {key = 11, value = 10},
+      {key = 12, value = 10}
+    },
+    Attr = {
+      {
+        x = 1,
+        y = 16,
+        z = 24
+      },
+      {
+        x = 2,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 3,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 4,
+        y = 5,
+        z = 8
+      },
+      {
+        x = 5,
+        y = 5,
+        z = 7
+      },
+      {
+        x = 6,
+        y = 5,
+        z = 7
+      },
+      {
+        x = 7,
+        y = 5,
+        z = 6
+      },
+      {
+        x = 8,
+        y = 6,
+        z = 8
+      },
+      {
+        x = 9,
+        y = 3,
+        z = 4
+      },
+      {
+        x = 10,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 11,
+        y = 10,
+        z = 12
+      },
+      {
+        x = 12,
+        y = 8,
+        z = 10
+      }
+    }
+  },
+  [5] = {
+    ID = 5,
+    AttrNum = {
+      {key = 5, value = 100}
+    },
+    AttrWeight = {
+      {key = 1, value = 10},
+      {key = 2, value = 10},
+      {key = 3, value = 10},
+      {key = 4, value = 10},
+      {key = 5, value = 10},
+      {key = 6, value = 10},
+      {key = 7, value = 10},
+      {key = 8, value = 10},
+      {key = 9, value = 10},
+      {key = 10, value = 10},
+      {key = 11, value = 10},
+      {key = 12, value = 10}
+    },
+    Attr = {
+      {
+        x = 1,
+        y = 16,
+        z = 24
+      },
+      {
+        x = 2,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 3,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 4,
+        y = 5,
+        z = 8
+      },
+      {
+        x = 5,
+        y = 5,
+        z = 7
+      },
+      {
+        x = 6,
+        y = 5,
+        z = 7
+      },
+      {
+        x = 7,
+        y = 5,
+        z = 6
+      },
+      {
+        x = 8,
+        y = 6,
+        z = 8
+      },
+      {
+        x = 9,
+        y = 3,
+        z = 4
+      },
+      {
+        x = 10,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 11,
+        y = 10,
+        z = 12
+      },
+      {
+        x = 12,
+        y = 8,
+        z = 10
+      }
+    }
+  },
+  [6] = {
+    ID = 6,
+    AttrNum = {
+      {key = 3, value = 100}
+    },
+    AttrWeight = {
+      {key = 1, value = 10},
+      {key = 2, value = 10},
+      {key = 3, value = 10}
+    },
+    Attr = {
+      {
+        x = 1,
+        y = 16,
+        z = 24
+      },
+      {
+        x = 2,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 3,
+        y = 8,
+        z = 12
+      }
+    }
+  },
+  [7] = {
+    ID = 7,
+    AttrNum = {
+      {key = 3, value = 100},
+      {key = 4, value = 100}
+    },
+    AttrWeight = {
+      {key = 1, value = 10},
+      {key = 2, value = 10},
+      {key = 3, value = 10},
+      {key = 4, value = 10}
+    },
+    Attr = {
+      {
+        x = 1,
+        y = 16,
+        z = 24
+      },
+      {
+        x = 2,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 3,
+        y = 8,
+        z = 12
+      },
+      {
+        x = 4,
+        y = 5,
+        z = 8
+      }
+    }
+  }
+}
+return chip_tbchipsubattrinit

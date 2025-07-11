@@ -1,0 +1,194 @@
+﻿{
+  "1000104": {
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/Iconrule/Frames/Bat_energy_icony.Bat_energy_icony",
+    "MainTaskGroupId": 200107,
+    "DescLocMeta": {
+      "InNamespace": "activity_TBRuleInfo",
+      "InTextLiteral": "性格孤僻的保守主义者，以自己所坚持的能量之路看待矩阵的未来。负责管理矩阵中的能量。",
+      "InKey": "Desc_1000104"
+    },
+    "ruleInfoID": 1000104,
+    "TaskBGIconPath": "/Game/Rouge/UI/Sprite/ShopCommon/Frames/Bat_Quality_02.Bat_Quality_02",
+    "FinishedIconPath": "/Game/Rouge/UI/Atlas_DT/Activity/RuleTask/Frames/Img_Activity_RuleTask_Completed_04.Img_Activity_RuleTask_Completed_04",
+    "TaskTitleColor": "#45fffb",
+    "MinorTaskGroupId": 200108,
+    "TipIconColor": "#45fffb",
+    "RuleIconPath": "/Game/Rouge/UI/Atlas_Alpha/A_DT/Activity/RuleTask/Img_Activity_RuleTask_TipRole_04.Img_Activity_RuleTask_TipRole_04",
+    "NameLocMeta": {
+      "InNamespace": "activity_TBRuleInfo",
+      "InTextLiteral": "能量法则·赫莱尔",
+      "InKey": "Name_1000104"
+    },
+    "MainTaskBGColor": "#45fffb",
+    "TitleBGIconPath": "/Game/Rouge/UI/VX/Texture/T_UI_Group_icon_3.T_UI_Group_icon_3",
+    "BGBPPath": "/Game/Rouge/UI/GenericModify/GenericModifyDialog/WBP_GenericModifyDialog_Group_3.WBP_GenericModifyDialog_Group_3_C"
+  },
+  "1000105": {
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/Iconrule/Frames/Bat_videogame_Icony.Bat_videogame_Icony",
+    "MainTaskGroupId": 200109,
+    "DescLocMeta": {
+      "InNamespace": "activity_TBRuleInfo",
+      "InTextLiteral": "潘将万事万物视作一场游戏，其行为促成了矩阵在某时期达成的过度娱乐化。",
+      "InKey": "Desc_1000105"
+    },
+    "ruleInfoID": 1000105,
+    "TaskBGIconPath": "/Game/Rouge/UI/Sprite/ShopCommon/Frames/Bat_Quality_04.Bat_Quality_04",
+    "FinishedIconPath": "/Game/Rouge/UI/Atlas_DT/Activity/RuleTask/Frames/Img_Activity_RuleTask_Completed_05.Img_Activity_RuleTask_Completed_05",
+    "TaskTitleColor": "#8e6bff",
+    "MinorTaskGroupId": 200110,
+    "TipIconColor": "#8e6bff",
+    "RuleIconPath": "/Game/Rouge/UI/Atlas_Alpha/A_DT/Activity/RuleTask/Img_Activity_RuleTask_TipRole_05.Img_Activity_RuleTask_TipRole_05",
+    "NameLocMeta": {
+      "InNamespace": "activity_TBRuleInfo",
+      "InTextLiteral": "电玩法则·潘",
+      "InKey": "Name_1000105"
+    },
+    "MainTaskBGColor": "#8e6bff",
+    "TitleBGIconPath": "/Game/Rouge/UI/VX/Texture/T_UI_Group_icon_4.T_UI_Group_icon_4",
+    "BGBPPath": "/Game/Rouge/UI/GenericModify/GenericModifyDialog/WBP_GenericModifyDialog_Group_4.WBP_GenericModifyDialog_Group_4_C"
+  },
+  "1000106": {
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/Iconrule/Frames/Bat_Rhythm_Icony.Bat_Rhythm_Icony",
+    "MainTaskGroupId": 200111,
+    "DescLocMeta": {
+      "InNamespace": "activity_TBRuleInfo",
+      "InTextLiteral": "执掌音乐的法则，热情而又活泼。所到之处，无不洋溢着各式的节奏。",
+      "InKey": "Desc_1000106"
+    },
+    "ruleInfoID": 1000106,
+    "TaskBGIconPath": "/Game/Rouge/UI/Sprite/ShopCommon/Frames/Bat_Quality_04.Bat_Quality_04",
+    "FinishedIconPath": "/Game/Rouge/UI/Atlas_DT/Activity/RuleTask/Frames/Img_Activity_RuleTask_Completed_06.Img_Activity_RuleTask_Completed_06",
+    "TaskTitleColor": "#29c36e",
+    "MinorTaskGroupId": 200112,
+    "TipIconColor": "#29c36e",
+    "RuleIconPath": "/Game/Rouge/UI/Atlas_Alpha/A_DT/Activity/RuleTask/Img_Activity_RuleTask_TipRole_06.Img_Activity_RuleTask_TipRole_06",
+    "NameLocMeta": {
+      "InNamespace": "activity_TBRuleInfo",
+      "InTextLiteral": "音乐法则·奥伊兹",
+      "InKey": "Name_1000106"
+    },
+    "MainTaskBGColor": "#29c36e",
+    "TitleBGIconPath": "/Game/Rouge/UI/VX/Texture/T_UI_Group_icon_5.T_UI_Group_icon_5",
+    "BGBPPath": "/Game/Rouge/UI/GenericModify/GenericModifyDialog/WBP_GenericModifyDialog_Group_5.WBP_GenericModifyDialog_Group_5_C"
+  },
+  "1000107": {
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/Iconrule/Frames/Bat_Wealth_Icony.Bat_Wealth_Icony",
+    "MainTaskGroupId": 200113,
+    "DescLocMeta": {
+      "InNamespace": "activity_TBRuleInfo",
+      "InTextLiteral": "让用户又爱又恨的法则，执掌财富与金钱。常以笑脸迎人，然而在无人看到的角落又是另一幅面孔。",
+      "InKey": "Desc_1000107"
+    },
+    "ruleInfoID": 1000107,
+    "TaskBGIconPath": "/Game/Rouge/UI/Sprite/ShopCommon/Frames/Bat_Quality_05.Bat_Quality_05",
+    "FinishedIconPath": "/Game/Rouge/UI/Atlas_DT/Activity/RuleTask/Frames/Img_Activity_RuleTask_Completed_07.Img_Activity_RuleTask_Completed_07",
+    "TaskTitleColor": "#ffc94c",
+    "MinorTaskGroupId": 200114,
+    "TipIconColor": "#ffc94c",
+    "RuleIconPath": "/Game/Rouge/UI/Atlas_Alpha/A_DT/Activity/RuleTask/Img_Activity_RuleTask_TipRole_07.Img_Activity_RuleTask_TipRole_07",
+    "NameLocMeta": {
+      "InNamespace": "activity_TBRuleInfo",
+      "InTextLiteral": "财富法则·道斯",
+      "InKey": "Name_1000107"
+    },
+    "MainTaskBGColor": "#ffc94c",
+    "TitleBGIconPath": "/Game/Rouge/UI/VX/Texture/T_UI_Group_icon_6.T_UI_Group_icon_6",
+    "BGBPPath": "/Game/Rouge/UI/GenericModify/GenericModifyDialog/WBP_GenericModifyDialog_Group_6.WBP_GenericModifyDialog_Group_6_C"
+  },
+  "1000101": {
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/Iconrule/Frames/Bat_Secure_Icony.Bat_Secure_Icony",
+    "MainTaskGroupId": 200101,
+    "DescLocMeta": {
+      "InNamespace": "activity_TBRuleInfo",
+      "InTextLiteral": "深思熟虑的清理者，架构了虚拟世界的安全屏障。与托拉尔德互为攻防的两端，关系却不甚紧密。",
+      "InKey": "Desc_1000101"
+    },
+    "ruleInfoID": 1000101,
+    "TaskBGIconPath": "/Game/Rouge/UI/Sprite/ShopCommon/Frames/Bat_Quality_02.Bat_Quality_02",
+    "FinishedIconPath": "/Game/Rouge/UI/Atlas_DT/Activity/RuleTask/Frames/Img_Activity_RuleTask_Completed_01.Img_Activity_RuleTask_Completed_01",
+    "TaskTitleColor": "#41a1e6",
+    "MinorTaskGroupId": 200102,
+    "TipIconColor": "#41a1e6",
+    "RuleIconPath": "/Game/Rouge/UI/Atlas_Alpha/A_DT/Activity/RuleTask/Img_Activity_RuleTask_TipRole_01.Img_Activity_RuleTask_TipRole_01",
+    "NameLocMeta": {
+      "InNamespace": "activity_TBRuleInfo",
+      "InTextLiteral": "安全法则·阿西迪亚",
+      "InKey": "Name_1000101"
+    },
+    "MainTaskBGColor": "#41a1e6",
+    "TitleBGIconPath": "/Game/Rouge/UI/VX/Texture/T_UI_Group_icon_0.T_UI_Group_icon_0",
+    "BGBPPath": "/Game/Rouge/UI/GenericModify/GenericModifyDialog/WBP_GenericModifyDialog_Group_0.WBP_GenericModifyDialog_Group_0_C"
+  },
+  "1000102": {
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/Iconrule/Frames/Bat_Love_Icony.Bat_Love_Icony",
+    "MainTaskGroupId": 200103,
+    "DescLocMeta": {
+      "InNamespace": "activity_TBRuleInfo",
+      "InTextLiteral": "生灵皆有爱欲。即便是存在于虚拟世界亦不能逃脱。阿什梅黛负责处理爱欲，常以身材高挑的女郎形象现身。",
+      "InKey": "Desc_1000102"
+    },
+    "ruleInfoID": 1000102,
+    "TaskBGIconPath": "/Game/Rouge/UI/Sprite/ShopCommon/Frames/Bat_Quality_02.Bat_Quality_02",
+    "FinishedIconPath": "/Game/Rouge/UI/Atlas_DT/Activity/RuleTask/Frames/Img_Activity_RuleTask_Completed_02.Img_Activity_RuleTask_Completed_02",
+    "TaskTitleColor": "#ff4d83",
+    "MinorTaskGroupId": 200104,
+    "TipIconColor": "#ff4d83",
+    "RuleIconPath": "/Game/Rouge/UI/Atlas_Alpha/A_DT/Activity/RuleTask/Img_Activity_RuleTask_TipRole_02.Img_Activity_RuleTask_TipRole_02",
+    "NameLocMeta": {
+      "InNamespace": "activity_TBRuleInfo",
+      "InTextLiteral": "爱欲法则·阿什梅黛",
+      "InKey": "Name_1000102"
+    },
+    "MainTaskBGColor": "#ff4d83",
+    "TitleBGIconPath": "/Game/Rouge/UI/VX/Texture/T_UI_Group_icon_1.T_UI_Group_icon_1",
+    "BGBPPath": "/Game/Rouge/UI/GenericModify/GenericModifyDialog/WBP_GenericModifyDialog_Group_1.WBP_GenericModifyDialog_Group_1_C"
+  },
+  "1000103": {
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/Iconrule/Frames/Bat_goodfortune_icony.Bat_goodfortune_icony",
+    "MainTaskGroupId": 200105,
+    "DescLocMeta": {
+      "InNamespace": "activity_TBRuleInfo",
+      "InTextLiteral": "概率神秘而又不可揣测，唯有凌驾其上才能洞察本质。操纵着概率，又因其常在不经意间寄予巨大惊喜而被看作是幸运化身。",
+      "InKey": "Desc_1000103"
+    },
+    "ruleInfoID": 1000103,
+    "TaskBGIconPath": "/Game/Rouge/UI/Sprite/ShopCommon/Frames/Bat_Quality_02.Bat_Quality_02",
+    "FinishedIconPath": "/Game/Rouge/UI/Atlas_DT/Activity/RuleTask/Frames/Img_Activity_RuleTask_Completed_03.Img_Activity_RuleTask_Completed_03",
+    "TaskTitleColor": "#dc363c",
+    "MinorTaskGroupId": 200106,
+    "TipIconColor": "#dc363c",
+    "RuleIconPath": "/Game/Rouge/UI/Atlas_Alpha/A_DT/Activity/RuleTask/Img_Activity_RuleTask_TipRole_03.Img_Activity_RuleTask_TipRole_03",
+    "NameLocMeta": {
+      "InNamespace": "activity_TBRuleInfo",
+      "InTextLiteral": "幸运法则·塞穆拉",
+      "InKey": "Name_1000103"
+    },
+    "MainTaskBGColor": "#dc363c",
+    "TitleBGIconPath": "/Game/Rouge/UI/VX/Texture/T_UI_Group_icon_2.T_UI_Group_icon_2",
+    "BGBPPath": "/Game/Rouge/UI/GenericModify/GenericModifyDialog/WBP_GenericModifyDialog_Group_2.WBP_GenericModifyDialog_Group_2_C"
+  },
+  "1000108": {
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/Iconrule/Frames/Bat_thunderclap_icony.Bat_thunderclap_icony",
+    "MainTaskGroupId": 200115,
+    "DescLocMeta": {
+      "InNamespace": "activity_TBRuleInfo",
+      "InTextLiteral": "矩阵的剑，脾气火爆的清理者，无止境地执着于清理矩阵中的错误代码，其行为在漫长的时间里确保了矩阵的绝对安全。",
+      "InKey": "Desc_1000108"
+    },
+    "ruleInfoID": 1000108,
+    "TaskBGIconPath": "/Game/Rouge/UI/Sprite/ShopCommon/Frames/Bat_Quality_05.Bat_Quality_05",
+    "FinishedIconPath": "/Game/Rouge/UI/Atlas_DT/Activity/RuleTask/Frames/Img_Activity_RuleTask_Completed_08.Img_Activity_RuleTask_Completed_08",
+    "TaskTitleColor": "#796fff",
+    "MinorTaskGroupId": 200116,
+    "TipIconColor": "#796fff",
+    "RuleIconPath": "/Game/Rouge/UI/Atlas_Alpha/A_DT/Activity/RuleTask/Img_Activity_RuleTask_TipRole_08.Img_Activity_RuleTask_TipRole_08",
+    "NameLocMeta": {
+      "InNamespace": "activity_TBRuleInfo",
+      "InTextLiteral": "雷霆法则·托拉尔德",
+      "InKey": "Name_1000108"
+    },
+    "MainTaskBGColor": "#796fff",
+    "TitleBGIconPath": "/Game/Rouge/UI/VX/Texture/T_UI_Group_icon_7.T_UI_Group_icon_7",
+    "BGBPPath": "/Game/Rouge/UI/GenericModify/GenericModifyDialog/WBP_GenericModifyDialog_Group_7.WBP_GenericModifyDialog_Group_7_C"
+  }
+}

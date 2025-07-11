@@ -1,0 +1,1450 @@
+﻿{
+  "1090": {
+    "ActorPath": "/Game/Rouge/UI/Lobby/RolePreset/BP_LobbyRole_Yuri.BP_LobbyRole_Yuri_C",
+    "RoleLightName": "1010Light",
+    "Tag": {
+      "1": {
+        "InKey": "OBJHeroMonster_Tag_1090_1",
+        "InTextLiteral": "狙击",
+        "InNamespace": "hero_TBHeroMonster"
+      }
+    },
+    "GenericModifyRole": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bless_xq.Role_Bless_xq",
+    "Type": 1,
+    "LevelDanger": 2,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_15_png.Role_Bust_15_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1090",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 1,
+    "Appearance": {
+      "1": 600001,
+      "2": 600002,
+      "3": 600003
+    },
+    "SkillList": {
+      "1": 1091,
+      "2": 1092,
+      "3": 1093,
+      "4": 1094
+    },
+    "ArrSkill": {
+      "1": 3,
+      "2": 3,
+      "3": 1,
+      "4": 3
+    },
+    "ResourceId": 100012,
+    "FragmentNum": 20,
+    "ID": 1090,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1090",
+      "InTextLiteral": "白发狙",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 0.98,
+    "ActorIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Bat_Gloria_icon.Bat_Gloria_icon",
+    "Solutions": "",
+    "FetterHeadIcon": "",
+    "FragmentId": 200006,
+    "CanChoose": false,
+    "LinkId": "",
+    "TagIcon": "/Game/Rouge/UI/Atlas_DT/RoleMain/Frames/Icon_zhiye06_01.Icon_zhiye06_01",
+    "UpgradeBGIcon": "",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1090",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": -90,
+    "NameLocMeta": {
+      "InKey": "Name_1090",
+      "InTextLiteral": "尤莉",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 109001,
+    "ParamList": {},
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_15_png.Role_portrait_15_png",
+    "WeaponID": 5023
+  },
+  "1060": {
+    "ActorPath": "/Game/Rouge/UI/Lobby/RolePreset/BP_LobbyRole_Hyks.BP_LobbyRole_Hyks_C",
+    "RoleLightName": "1010Light",
+    "Tag": {
+      "1": {
+        "InKey": "OBJHeroMonster_Tag_1060_1",
+        "InTextLiteral": "游侠",
+        "InNamespace": "hero_TBHeroMonster"
+      }
+    },
+    "GenericModifyRole": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bless_tls.Role_Bless_tls",
+    "Type": 1,
+    "LevelDanger": 2,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_14_png.Role_Bust_14_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1060",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 1,
+    "Appearance": {
+      "1": 600001,
+      "2": 600002,
+      "3": 600003
+    },
+    "SkillList": {
+      "1": 601,
+      "2": 602,
+      "3": 603,
+      "4": 604,
+      "5": 605,
+      "6": 606
+    },
+    "ArrSkill": {
+      "1": 2,
+      "2": 3,
+      "3": 1,
+      "4": 3
+    },
+    "ResourceId": 100005,
+    "FragmentNum": 20,
+    "ID": 1060,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1060",
+      "InTextLiteral": "海因克斯",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 0.85,
+    "ActorIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Bat_Hyks_icon.Bat_Hyks_icon",
+    "Solutions": "",
+    "FetterHeadIcon": "",
+    "FragmentId": 200009,
+    "CanChoose": true,
+    "LinkId": "1023",
+    "TagIcon": "/Game/Rouge/UI/Atlas_DT/RoleMain/Frames/Icon_zhiye05_01.Icon_zhiye05_01",
+    "UpgradeBGIcon": "",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1060",
+      "InTextLiteral": "原爆点通行证获得",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": -90,
+    "NameLocMeta": {
+      "InKey": "Name_1060",
+      "InTextLiteral": "海因克斯",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 106001,
+    "ParamList": {},
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_14_png.Role_portrait_14_png",
+    "WeaponID": 5015
+  },
+  "100": {
+    "ActorPath": "/Game/Rouge/UI/Lobby/RolePreset/BP_LobbyRole_Protagonist.BP_LobbyRole_Protagonist_C",
+    "RoleLightName": "1010Light",
+    "Tag": {
+      "1": {
+        "InKey": "OBJHeroMonster_Tag_100_1",
+        "InTextLiteral": "枪手",
+        "InNamespace": "hero_TBHeroMonster"
+      }
+    },
+    "GenericModifyRole": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bless_tls.Role_Bless_tls",
+    "Type": 1,
+    "LevelDanger": 2,
+    "InitialRoleMediaId": 3,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_14_png.Role_Bust_14_png",
+    "DescLocMeta": {
+      "InKey": "Desc_100",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 0.9,
+    "Appearance": {
+      "1": 600001,
+      "2": 600002,
+      "3": 600003
+    },
+    "SkillList": {
+      "1": 301,
+      "2": 302,
+      "3": 303,
+      "4": 304,
+      "5": 305,
+      "6": 306
+    },
+    "ArrSkill": {
+      "1": 2,
+      "2": 3,
+      "3": 1,
+      "4": 3
+    },
+    "ResourceId": 100005,
+    "FragmentNum": 20,
+    "ID": 100,
+    "NickNameLocMeta": {
+      "InKey": "NickName_100",
+      "InTextLiteral": "上校",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 0.8,
+    "ActorIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Bat_Taros_icon.Bat_Taros_icon",
+    "Solutions": "",
+    "FetterHeadIcon": "",
+    "FragmentId": 200007,
+    "CanChoose": false,
+    "LinkId": "",
+    "TagIcon": "/Game/Rouge/UI/Atlas_DT/RoleMain/Frames/Icon_zhiye01_01.Icon_zhiye01_01",
+    "UpgradeBGIcon": "",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_100",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": -90,
+    "NameLocMeta": {
+      "InKey": "Name_100",
+      "InTextLiteral": "上校",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 102001,
+    "ParamList": {},
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_14_png.Role_portrait_14_png",
+    "WeaponID": 5010
+  },
+  "1000": {
+    "ActorPath": "/Game/Rouge/UI/Lobby/RolePreset/BP_LobbyRole_Heroine.BP_LobbyRole_Heroine_C",
+    "RoleLightName": "1000Light",
+    "Tag": {
+      "1": {
+        "InKey": "OBJHeroMonster_Tag_1000_1",
+        "InTextLiteral": "控制",
+        "InNamespace": "hero_TBHeroMonster"
+      }
+    },
+    "GenericModifyRole": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bless_ll.Role_Bless_ll",
+    "Type": 1,
+    "LevelDanger": 2,
+    "InitialRoleMediaId": 2,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_15_png.Role_Bust_15_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1000",
+      "InTextLiteral": "作为世上首屈一指的电竞选手，曙光将一切当成一场游戏，而游戏只能有一个赢家，那就是自己。如今，病毒占据了矩阵大部分的世界，曙光也因此找到了全新目标——攻略病毒！",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 1,
+    "Appearance": {
+      "1": 600001,
+      "2": 600002,
+      "3": 600003
+    },
+    "SkillList": {
+      "1": 101,
+      "2": 102,
+      "3": 103,
+      "4": 104,
+      "5": 105,
+      "6": 106
+    },
+    "ArrSkill": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 3
+    },
+    "ResourceId": 100003,
+    "FragmentNum": 20,
+    "ID": 1000,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1000",
+      "InTextLiteral": "曙光",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 0.9,
+    "ActorIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Bat_RImu_icon.Bat_RImu_icon",
+    "Solutions": "",
+    "FetterHeadIcon": "",
+    "FragmentId": 200003,
+    "CanChoose": true,
+    "LinkId": "1015",
+    "TagIcon": "/Game/Rouge/UI/Atlas_DT/RoleMain/Frames/Icon_zhiye02_01.Icon_zhiye02_01",
+    "UpgradeBGIcon": "",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1000",
+      "InTextLiteral": "七日登录获得",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": -95,
+    "NameLocMeta": {
+      "InKey": "Name_1000",
+      "InTextLiteral": "曙光",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 100001,
+    "ParamList": {
+      "1": 10000
+    },
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_16_png.Role_portrait_16_png",
+    "WeaponID": 5012
+  },
+  "1104": {
+    "ActorPath": "",
+    "RoleLightName": "",
+    "Tag": {},
+    "GenericModifyRole": "",
+    "Type": 2,
+    "LevelDanger": 3,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_02_png.Role_Bust_02_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1104",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 0,
+    "Appearance": {},
+    "SkillList": {
+      "1": 1004
+    },
+    "ArrSkill": {},
+    "ResourceId": 101004,
+    "FragmentNum": 20,
+    "ID": 1104,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1104",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 0,
+    "ActorIcon": "",
+    "Solutions": "",
+    "FetterHeadIcon": "/Game/Rouge/UI/Texture/Ranking/Frames/Ranking_Head_xxx_01_png.Ranking_Head_xxx_01_png",
+    "FragmentId": 201004,
+    "CanChoose": false,
+    "LinkId": "",
+    "TagIcon": "",
+    "UpgradeBGIcon": "/Game/Rouge/UI/Texture/Hoist/Frames/Hoist_Com_01_png.Hoist_Com_01_png",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1104",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": 0,
+    "NameLocMeta": {
+      "InKey": "Name_1104",
+      "InTextLiteral": "安保投弹兵",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 0,
+    "ParamList": {},
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_02_png.Role_portrait_02_png",
+    "WeaponID": 0
+  },
+  "1100": {
+    "ActorPath": "/Game/Rouge/UI/Lobby/RolePreset/BP_LobbyRole_Heroine.BP_LobbyRole_Heroine_C",
+    "RoleLightName": "1000Light",
+    "Tag": {
+      "1": {
+        "InKey": "OBJHeroMonster_Tag_1100_1",
+        "InTextLiteral": "控制",
+        "InNamespace": "hero_TBHeroMonster"
+      }
+    },
+    "GenericModifyRole": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bless_ll.Role_Bless_ll",
+    "Type": 1,
+    "LevelDanger": 2,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_15_png.Role_Bust_15_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1100",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 1,
+    "Appearance": {
+      "1": 600001,
+      "2": 600002,
+      "3": 600003
+    },
+    "SkillList": {
+      "1": 1101,
+      "2": 1102,
+      "3": 1103,
+      "4": 1104
+    },
+    "ArrSkill": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 3
+    },
+    "ResourceId": 100014,
+    "FragmentNum": 20,
+    "ID": 1100,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1100",
+      "InTextLiteral": "哨箭【测试版】",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 0.9,
+    "ActorIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Bat_RImu_icon.Bat_RImu_icon",
+    "Solutions": "",
+    "FetterHeadIcon": "",
+    "FragmentId": 200014,
+    "CanChoose": false,
+    "LinkId": "",
+    "TagIcon": "/Game/Rouge/UI/Atlas_DT/RoleMain/Frames/Icon_zhiye02_01.Icon_zhiye02_01",
+    "UpgradeBGIcon": "",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1100",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": -95,
+    "NameLocMeta": {
+      "InKey": "Name_1100",
+      "InTextLiteral": "哨箭【测试版】",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 100001,
+    "ParamList": {},
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_16_png.Role_portrait_16_png",
+    "WeaponID": 5033
+  },
+  "1101": {
+    "ActorPath": "",
+    "RoleLightName": "",
+    "Tag": {},
+    "GenericModifyRole": "",
+    "Type": 2,
+    "LevelDanger": 2,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_02_png.Role_Bust_02_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1101",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 0,
+    "Appearance": {},
+    "SkillList": {
+      "1": 1001
+    },
+    "ArrSkill": {},
+    "ResourceId": 101001,
+    "FragmentNum": 20,
+    "ID": 1101,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1101",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 0,
+    "ActorIcon": "",
+    "Solutions": "",
+    "FetterHeadIcon": "/Game/Rouge/UI/Texture/Ranking/Frames/Ranking_Head_xxx_01_png.Ranking_Head_xxx_01_png",
+    "FragmentId": 201001,
+    "CanChoose": false,
+    "LinkId": "",
+    "TagIcon": "",
+    "UpgradeBGIcon": "/Game/Rouge/UI/Texture/Hoist/Frames/Hoist_Com_01_png.Hoist_Com_01_png",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1101",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": 0,
+    "NameLocMeta": {
+      "InKey": "Name_1101",
+      "InTextLiteral": "安保步枪兵",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 0,
+    "ParamList": {},
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_02_png.Role_portrait_02_png",
+    "WeaponID": 0
+  },
+  "1040": {
+    "ActorPath": "/Game/Rouge/UI/Lobby/RolePreset/BP_LobbyRole_Gloria.BP_LobbyRole_Gloria_C",
+    "RoleLightName": "1010Light",
+    "Tag": {
+      "1": {
+        "InKey": "OBJHeroMonster_Tag_1040_1",
+        "InTextLiteral": "狙击",
+        "InNamespace": "hero_TBHeroMonster"
+      }
+    },
+    "GenericModifyRole": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bless_ll.Role_Bless_ll",
+    "Type": 1,
+    "LevelDanger": 2,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_15_png.Role_Bust_15_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1040",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 1.125,
+    "Appearance": {
+      "1": 600001,
+      "2": 600002,
+      "3": 600003
+    },
+    "SkillList": {
+      "1": 401,
+      "2": 402,
+      "3": 403,
+      "4": 404,
+      "5": 105,
+      "6": 404
+    },
+    "ArrSkill": {
+      "1": 1,
+      "2": 3,
+      "3": 2,
+      "4": 3
+    },
+    "ResourceId": 100003,
+    "FragmentNum": 20,
+    "ID": 1040,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1040",
+      "InTextLiteral": "妮娜",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 1.05,
+    "ActorIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Bat_Gloria_icon.Bat_Gloria_icon",
+    "Solutions": "",
+    "FetterHeadIcon": "",
+    "FragmentId": 200008,
+    "CanChoose": true,
+    "LinkId": "9999",
+    "TagIcon": "/Game/Rouge/UI/Atlas_DT/RoleMain/Frames/Icon_zhiye06_01.Icon_zhiye06_01",
+    "UpgradeBGIcon": "",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1040",
+      "InTextLiteral": "超值礼赠获得",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": -93,
+    "NameLocMeta": {
+      "InKey": "Name_1040",
+      "InTextLiteral": "格罗莉亚",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 904001,
+    "ParamList": {
+      "1": 9999
+    },
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_16_png.Role_portrait_16_png",
+    "WeaponID": 5014
+  },
+  "1010": {
+    "ActorPath": "/Game/Rouge/UI/Lobby/RolePreset/BP_LobbyRole_XQing.BP_LobbyRole_XQing_C",
+    "RoleLightName": "1010Light",
+    "Tag": {
+      "1": {
+        "InKey": "OBJHeroMonster_Tag_1010_1",
+        "InTextLiteral": "刺客",
+        "InNamespace": "hero_TBHeroMonster"
+      }
+    },
+    "GenericModifyRole": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bless_xq.Role_Bless_xq",
+    "Type": 1,
+    "LevelDanger": 2,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_15_png.Role_Bust_15_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1010",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 1,
+    "Appearance": {
+      "1": 600001,
+      "2": 600002,
+      "3": 600003
+    },
+    "SkillList": {
+      "1": 201,
+      "2": 202,
+      "3": 203,
+      "4": 204,
+      "5": 205,
+      "6": 206
+    },
+    "ArrSkill": {
+      "1": 3,
+      "2": 1,
+      "3": 3,
+      "4": 3
+    },
+    "ResourceId": 100006,
+    "FragmentNum": 20,
+    "ID": 1010,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1010",
+      "InTextLiteral": "影刃",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 0.92,
+    "ActorIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Bat_Qing_icon.Bat_Qing_icon",
+    "Solutions": "",
+    "FetterHeadIcon": "",
+    "FragmentId": 200006,
+    "CanChoose": true,
+    "LinkId": "1008",
+    "TagIcon": "/Game/Rouge/UI/Atlas_DT/RoleMain/Frames/Icon_zhiye03_01.Icon_zhiye03_01",
+    "UpgradeBGIcon": "",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1010",
+      "InTextLiteral": "通关环都世界难度",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": -100,
+    "NameLocMeta": {
+      "InKey": "Name_1010",
+      "InTextLiteral": "影刃",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 101001,
+    "ParamList": {
+      "1": 23,
+      "2": 3,
+      "3": 1001
+    },
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_15_png.Role_portrait_15_png",
+    "WeaponID": 5007
+  },
+  "9040": {
+    "ActorPath": "/Game/Rouge/UI/Lobby/RolePreset/BP_LobbyRole_Gloria.BP_LobbyRole_Gloria_C",
+    "RoleLightName": "1010Light",
+    "Tag": {
+      "1": {
+        "InKey": "OBJHeroMonster_Tag_9040_1",
+        "InTextLiteral": "狙击",
+        "InNamespace": "hero_TBHeroMonster"
+      }
+    },
+    "GenericModifyRole": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bless_ll.Role_Bless_ll",
+    "Type": 1,
+    "LevelDanger": 2,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_15_png.Role_Bust_15_png",
+    "DescLocMeta": {
+      "InKey": "Desc_9040",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 1,
+    "Appearance": {
+      "1": 600001,
+      "2": 600002,
+      "3": 600003
+    },
+    "SkillList": {
+      "1": 401,
+      "2": 402,
+      "3": 403,
+      "4": 404,
+      "5": 105,
+      "6": 404
+    },
+    "ArrSkill": {
+      "1": 1,
+      "2": 3,
+      "3": 2,
+      "4": 3
+    },
+    "ResourceId": 100003,
+    "FragmentNum": 20,
+    "ID": 9040,
+    "NickNameLocMeta": {
+      "InKey": "NickName_9040",
+      "InTextLiteral": "小红帽",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 1.05,
+    "ActorIcon": "/Game/Rouge/UI/Sprite/IconCharacteravatar/Frames/Bat_Gloria_icon.Bat_Gloria_icon",
+    "Solutions": "",
+    "FetterHeadIcon": "",
+    "FragmentId": 200008,
+    "CanChoose": false,
+    "LinkId": "",
+    "TagIcon": "/Game/Rouge/UI/Atlas_DT/RoleMain/Frames/Icon_zhiye06_01.Icon_zhiye06_01",
+    "UpgradeBGIcon": "",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_9040",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": -93,
+    "NameLocMeta": {
+      "InKey": "Name_9040",
+      "InTextLiteral": "【废弃】格罗莉亚",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 904001,
+    "ParamList": {},
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_16_png.Role_portrait_16_png",
+    "WeaponID": 5014
+  },
+  "1105": {
+    "ActorPath": "",
+    "RoleLightName": "",
+    "Tag": {},
+    "GenericModifyRole": "",
+    "Type": 2,
+    "LevelDanger": 3,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_04_png.Role_Bust_04_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1105",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 0,
+    "Appearance": {},
+    "SkillList": {
+      "1": 1005
+    },
+    "ArrSkill": {},
+    "ResourceId": 101005,
+    "FragmentNum": 20,
+    "ID": 1105,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1105",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 0,
+    "ActorIcon": "",
+    "Solutions": "：黑医会连接其他士兵，为他们提供强有力的护盾，记得优先击杀。",
+    "FetterHeadIcon": "/Game/Rouge/UI/Texture/Ranking/Frames/Ranking_Head_xxx_01_png.Ranking_Head_xxx_01_png",
+    "FragmentId": 201005,
+    "CanChoose": false,
+    "LinkId": "",
+    "TagIcon": "",
+    "UpgradeBGIcon": "/Game/Rouge/UI/Texture/Hoist/Frames/Hoist_Com_01_png.Hoist_Com_01_png",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1105",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": 0,
+    "NameLocMeta": {
+      "InKey": "Name_1105",
+      "InTextLiteral": "黑医",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 0,
+    "ParamList": {},
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_04_png.Role_portrait_04_png",
+    "WeaponID": 0
+  },
+  "1106": {
+    "ActorPath": "",
+    "RoleLightName": "",
+    "Tag": {},
+    "GenericModifyRole": "",
+    "Type": 2,
+    "LevelDanger": 4,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_12_png.Role_Bust_12_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1106",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 0,
+    "Appearance": {},
+    "SkillList": {
+      "1": 1006
+    },
+    "ArrSkill": {},
+    "ResourceId": 101006,
+    "FragmentNum": 20,
+    "ID": 1106,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1106",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 0,
+    "ActorIcon": "",
+    "Solutions": "：注意看头顶！会快速接近敌人，并造成发范围的爆炸伤害。",
+    "FetterHeadIcon": "/Game/Rouge/UI/Texture/Ranking/Frames/Ranking_Head_xxx_01_png.Ranking_Head_xxx_01_png",
+    "FragmentId": 201006,
+    "CanChoose": false,
+    "LinkId": "",
+    "TagIcon": "",
+    "UpgradeBGIcon": "/Game/Rouge/UI/Texture/Hoist/Frames/Hoist_Com_01_png.Hoist_Com_01_png",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1106",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": 0,
+    "NameLocMeta": {
+      "InKey": "Name_1106",
+      "InTextLiteral": "蜂鸣型突袭者",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 0,
+    "ParamList": {},
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_12_png.Role_portrait_12_png",
+    "WeaponID": 0
+  },
+  "1107": {
+    "ActorPath": "",
+    "RoleLightName": "",
+    "Tag": {},
+    "GenericModifyRole": "",
+    "Type": 2,
+    "LevelDanger": 4,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_05_png.Role_Bust_05_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1107",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 0,
+    "Appearance": {},
+    "SkillList": {
+      "1": 1007
+    },
+    "ArrSkill": {},
+    "ResourceId": 101007,
+    "FragmentNum": 20,
+    "ID": 1107,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1107",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 0,
+    "ActorIcon": "",
+    "Solutions": "",
+    "FetterHeadIcon": "/Game/Rouge/UI/Texture/Ranking/Frames/Ranking_Head_xxx_01_png.Ranking_Head_xxx_01_png",
+    "FragmentId": 201007,
+    "CanChoose": false,
+    "LinkId": "",
+    "TagIcon": "",
+    "UpgradeBGIcon": "/Game/Rouge/UI/Texture/Hoist/Frames/Hoist_Com_01_png.Hoist_Com_01_png",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1107",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": 0,
+    "NameLocMeta": {
+      "InKey": "Name_1107",
+      "InTextLiteral": "索命师",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 0,
+    "ParamList": {},
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_05_png.Role_portrait_05_png",
+    "WeaponID": 0
+  },
+  "1108": {
+    "ActorPath": "",
+    "RoleLightName": "",
+    "Tag": {},
+    "GenericModifyRole": "",
+    "Type": 2,
+    "LevelDanger": 4,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_06_png.Role_Bust_06_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1108",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 0,
+    "Appearance": {},
+    "SkillList": {
+      "1": 1008
+    },
+    "ArrSkill": {},
+    "ResourceId": 101008,
+    "FragmentNum": 20,
+    "ID": 1108,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1108",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 0,
+    "ActorIcon": "",
+    "Solutions": "应对方式：一定要注意看地面，他会悄无声息的化为暗影，快速接近目标。",
+    "FetterHeadIcon": "/Game/Rouge/UI/Texture/Ranking/Frames/Ranking_Head_xxx_01_png.Ranking_Head_xxx_01_png",
+    "FragmentId": 201008,
+    "CanChoose": false,
+    "LinkId": "",
+    "TagIcon": "",
+    "UpgradeBGIcon": "/Game/Rouge/UI/Texture/Hoist/Frames/Hoist_Com_01_png.Hoist_Com_01_png",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1108",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": 0,
+    "NameLocMeta": {
+      "InKey": "Name_1108",
+      "InTextLiteral": "游地师",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 0,
+    "ParamList": {},
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_06_png.Role_portrait_06_png",
+    "WeaponID": 0
+  },
+  "1103": {
+    "ActorPath": "",
+    "RoleLightName": "",
+    "Tag": {},
+    "GenericModifyRole": "",
+    "Type": 2,
+    "LevelDanger": 3,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_02_png.Role_Bust_02_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1103",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 0,
+    "Appearance": {},
+    "SkillList": {
+      "1": 1003
+    },
+    "ArrSkill": {},
+    "ResourceId": 101003,
+    "FragmentNum": 20,
+    "ID": 1103,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1103",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 0,
+    "ActorIcon": "",
+    "Solutions": "",
+    "FetterHeadIcon": "/Game/Rouge/UI/Texture/Ranking/Frames/Ranking_Head_xxx_01_png.Ranking_Head_xxx_01_png",
+    "FragmentId": 201003,
+    "CanChoose": false,
+    "LinkId": "",
+    "TagIcon": "",
+    "UpgradeBGIcon": "/Game/Rouge/UI/Texture/Hoist/Frames/Hoist_Com_01_png.Hoist_Com_01_png",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1103",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": 0,
+    "NameLocMeta": {
+      "InKey": "Name_1103",
+      "InTextLiteral": "安保狙击手",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 0,
+    "ParamList": {},
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_02_png.Role_portrait_02_png",
+    "WeaponID": 0
+  },
+  "1110": {
+    "ActorPath": "/Game/Rouge/UI/Lobby/RolePreset/BP_LobbyRole_Cotia.BP_LobbyRole_Cotia_C",
+    "RoleLightName": "1000Light",
+    "Tag": {
+      "1": {
+        "InKey": "OBJHeroMonster_Tag_1110_1",
+        "InTextLiteral": "狙击",
+        "InNamespace": "hero_TBHeroMonster"
+      }
+    },
+    "GenericModifyRole": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bless_ll.Role_Bless_ll",
+    "Type": 1,
+    "LevelDanger": 2,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_15_png.Role_Bust_15_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1110",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 1,
+    "Appearance": {
+      "1": 600001,
+      "2": 600002,
+      "3": 600003
+    },
+    "SkillList": {
+      "1": 1111,
+      "2": 1112,
+      "3": 1113,
+      "4": 1114
+    },
+    "ArrSkill": {
+      "1": 3,
+      "2": 1,
+      "3": 3,
+      "4": 3
+    },
+    "ResourceId": 100015,
+    "FragmentNum": 20,
+    "ID": 1110,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1110",
+      "InTextLiteral": "DVA",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 0.9,
+    "ActorIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Bat_Gloria_icon.Bat_Gloria_icon",
+    "Solutions": "",
+    "FetterHeadIcon": "",
+    "FragmentId": 200015,
+    "CanChoose": false,
+    "LinkId": "",
+    "TagIcon": "/Game/Rouge/UI/Atlas_DT/RoleMain/Frames/Icon_zhiye02_01.Icon_zhiye02_01",
+    "UpgradeBGIcon": "",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1110",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": -95,
+    "NameLocMeta": {
+      "InKey": "Name_1110",
+      "InTextLiteral": "DVA",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 111001,
+    "ParamList": {},
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_16_png.Role_portrait_16_png",
+    "WeaponID": 5036
+  },
+  "1080": {
+    "ActorPath": "/Game/Rouge/UI/Lobby/RolePreset/BP_LobbyRole_Cotia.BP_LobbyRole_Cotia_C",
+    "RoleLightName": "1010Light",
+    "Tag": {
+      "1": {
+        "InKey": "OBJHeroMonster_Tag_1080_1",
+        "InTextLiteral": "战士",
+        "InNamespace": "hero_TBHeroMonster"
+      }
+    },
+    "GenericModifyRole": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bless_xq.Role_Bless_xq",
+    "Type": 1,
+    "LevelDanger": 2,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_15_png.Role_Bust_15_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1080",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 1,
+    "Appearance": {
+      "1": 600001,
+      "2": 600002,
+      "3": 600003
+    },
+    "SkillList": {
+      "1": 1081,
+      "2": 1082,
+      "3": 1083,
+      "4": 1084
+    },
+    "ArrSkill": {
+      "1": 3,
+      "2": 1,
+      "3": 3,
+      "4": 3
+    },
+    "ResourceId": 100004,
+    "FragmentNum": 20,
+    "ID": 1080,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1080",
+      "InTextLiteral": "叛音",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 1,
+    "ActorIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Bat_Gloria_icon.Bat_Gloria_icon",
+    "Solutions": "",
+    "FetterHeadIcon": "",
+    "FragmentId": 200006,
+    "CanChoose": false,
+    "LinkId": "",
+    "TagIcon": "/Game/Rouge/UI/Atlas_DT/RoleMain/Frames/Icon_zhiye04_01.Icon_zhiye04_01",
+    "UpgradeBGIcon": "",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1080",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": -100,
+    "NameLocMeta": {
+      "InKey": "Name_1080",
+      "InTextLiteral": "叛音",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 108001,
+    "ParamList": {},
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_15_png.Role_portrait_15_png",
+    "WeaponID": 5019
+  },
+  "1102": {
+    "ActorPath": "",
+    "RoleLightName": "",
+    "Tag": {},
+    "GenericModifyRole": "",
+    "Type": 2,
+    "LevelDanger": 2,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_02_png.Role_Bust_02_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1102",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 0,
+    "Appearance": {},
+    "SkillList": {
+      "1": 1002
+    },
+    "ArrSkill": {},
+    "ResourceId": 101002,
+    "FragmentNum": 20,
+    "ID": 1102,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1102",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 0,
+    "ActorIcon": "",
+    "Solutions": "",
+    "FetterHeadIcon": "/Game/Rouge/UI/Texture/Ranking/Frames/Ranking_Head_xxx_01_png.Ranking_Head_xxx_01_png",
+    "FragmentId": 201002,
+    "CanChoose": false,
+    "LinkId": "",
+    "TagIcon": "",
+    "UpgradeBGIcon": "/Game/Rouge/UI/Texture/Hoist/Frames/Hoist_Com_01_png.Hoist_Com_01_png",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1102",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": 0,
+    "NameLocMeta": {
+      "InKey": "Name_1102",
+      "InTextLiteral": "安保近战兵",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 0,
+    "ParamList": {},
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_02_png.Role_portrait_02_png",
+    "WeaponID": 0
+  },
+  "1020": {
+    "ActorPath": "/Game/Rouge/UI/Lobby/RolePreset/BP_LobbyRole_Protagonist.BP_LobbyRole_Protagonist_C",
+    "RoleLightName": "1010Light",
+    "Tag": {
+      "1": {
+        "InKey": "OBJHeroMonster_Tag_1020_1",
+        "InTextLiteral": "枪手",
+        "InNamespace": "hero_TBHeroMonster"
+      }
+    },
+    "GenericModifyRole": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bless_tls.Role_Bless_tls",
+    "Type": 1,
+    "LevelDanger": 2,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_14_png.Role_Bust_14_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1020",
+      "InTextLiteral": "军人出身的上校极为重视荣誉，并依照军人的准则要求自己与身边所有人，即便在虚拟世界中也是如此。病毒入侵后，为了拯救同伴，上校响应了艾安的征召，开始执行清理病毒的任务。",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 0.9,
+    "Appearance": {
+      "1": 600001,
+      "2": 600002,
+      "3": 600003
+    },
+    "SkillList": {
+      "1": 301,
+      "2": 302,
+      "3": 303,
+      "4": 304,
+      "5": 305,
+      "6": 306
+    },
+    "ArrSkill": {
+      "1": 2,
+      "2": 3,
+      "3": 1,
+      "4": 3
+    },
+    "ResourceId": 100007,
+    "FragmentNum": 20,
+    "ID": 1020,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1020",
+      "InTextLiteral": "上校",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 0.8,
+    "ActorIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Bat_Taros_icon.Bat_Taros_icon",
+    "Solutions": "",
+    "FetterHeadIcon": "",
+    "FragmentId": 200007,
+    "CanChoose": true,
+    "LinkId": "1015",
+    "TagIcon": "/Game/Rouge/UI/Atlas_DT/RoleMain/Frames/Icon_zhiye01_01.Icon_zhiye01_01",
+    "UpgradeBGIcon": "",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1020",
+      "InTextLiteral": "七日登录获得",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": -90,
+    "NameLocMeta": {
+      "InKey": "Name_1020",
+      "InTextLiteral": "上校",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 102001,
+    "ParamList": {
+      "1": 10000
+    },
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_14_png.Role_portrait_14_png",
+    "WeaponID": 5010
+  },
+  "1030": {
+    "ActorPath": "/Game/Rouge/UI/Lobby/RolePreset/BP_LobbyRole_Nax.BP_LobbyRole_Nax_C",
+    "RoleLightName": "1010Light",
+    "Tag": {
+      "1": {
+        "InKey": "OBJHeroMonster_Tag_1030_1",
+        "InTextLiteral": "爆破",
+        "InNamespace": "hero_TBHeroMonster"
+      }
+    },
+    "GenericModifyRole": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bless_tls.Role_Bless_tls",
+    "Type": 1,
+    "LevelDanger": 2,
+    "InitialRoleMediaId": 5021,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_14_png.Role_Bust_14_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1030",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 1.175,
+    "Appearance": {
+      "1": 600001,
+      "2": 600002,
+      "3": 600003
+    },
+    "SkillList": {
+      "1": 1031,
+      "2": 1032,
+      "3": 1033,
+      "4": 1034
+    },
+    "ArrSkill": {
+      "1": 2,
+      "2": 3,
+      "3": 1,
+      "4": 3
+    },
+    "ResourceId": 100005,
+    "FragmentNum": 20,
+    "ID": 1030,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1030",
+      "InTextLiteral": "麦克斯",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 1,
+    "ActorIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Bat_Nakesi_icon.Bat_Nakesi_icon",
+    "Solutions": "",
+    "FetterHeadIcon": "",
+    "FragmentId": 200010,
+    "CanChoose": true,
+    "LinkId": "1035",
+    "TagIcon": "/Game/Rouge/UI/Atlas_DT/RoleMain/Frames/Icon_zhiye01_02.Icon_zhiye01_02",
+    "UpgradeBGIcon": "",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1030",
+      "InTextLiteral": "常驻商城获取",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": -90,
+    "NameLocMeta": {
+      "InKey": "Name_1030",
+      "InTextLiteral": "麦克斯",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 103001,
+    "ParamList": {
+      "1": 10703001
+    },
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_14_png.Role_portrait_14_png",
+    "WeaponID": 5021
+  },
+  "1022": {
+    "ActorPath": "/Game/Rouge/UI/Lobby/RolePreset/BP_LobbyRole_Protagonist.BP_LobbyRole_Protagonist_C",
+    "RoleLightName": "1010Light",
+    "Tag": {
+      "1": {
+        "InKey": "OBJHeroMonster_Tag_1022_1",
+        "InTextLiteral": "枪手",
+        "InNamespace": "hero_TBHeroMonster"
+      }
+    },
+    "GenericModifyRole": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bless_tls.Role_Bless_tls",
+    "Type": 1,
+    "LevelDanger": 2,
+    "InitialRoleMediaId": 0,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_14_png.Role_Bust_14_png",
+    "DescLocMeta": {
+      "InKey": "Desc_1022",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 0.9,
+    "Appearance": {
+      "1": 600001,
+      "2": 600002,
+      "3": 600003
+    },
+    "SkillList": {
+      "1": 301,
+      "2": 302,
+      "3": 303,
+      "4": 304,
+      "5": 305,
+      "6": 306
+    },
+    "ArrSkill": {
+      "1": 2,
+      "2": 3,
+      "3": 1,
+      "4": 3
+    },
+    "ResourceId": 100005,
+    "FragmentNum": 20,
+    "ID": 1022,
+    "NickNameLocMeta": {
+      "InKey": "NickName_1022",
+      "InTextLiteral": "上校新测试",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 0.85,
+    "ActorIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Bat_Taros_icon.Bat_Taros_icon",
+    "Solutions": "",
+    "FetterHeadIcon": "",
+    "FragmentId": 200007,
+    "CanChoose": false,
+    "LinkId": "",
+    "TagIcon": "/Game/Rouge/UI/Atlas_DT/RoleMain/Frames/Icon_zhiye01_01.Icon_zhiye01_01",
+    "UpgradeBGIcon": "",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_1022",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": -90,
+    "NameLocMeta": {
+      "InKey": "Name_1022",
+      "InTextLiteral": "上校新测试",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 102201,
+    "ParamList": {},
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_14_png.Role_portrait_14_png",
+    "WeaponID": 5010
+  },
+  "9060": {
+    "ActorPath": "/Game/Rouge/UI/Lobby/RolePreset/BP_LobbyRole_Hyks.BP_LobbyRole_Hyks_C",
+    "RoleLightName": "1010Light",
+    "Tag": {
+      "1": {
+        "InKey": "OBJHeroMonster_Tag_9060_1",
+        "InTextLiteral": "游侠",
+        "InNamespace": "hero_TBHeroMonster"
+      }
+    },
+    "GenericModifyRole": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bless_tls.Role_Bless_tls",
+    "Type": 1,
+    "LevelDanger": 2,
+    "InitialRoleMediaId": 5015,
+    "HalfPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_Bust_14_png.Role_Bust_14_png",
+    "DescLocMeta": {
+      "InKey": "Desc_9060",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "LobbyDisplayRoleModelScale": 1,
+    "Appearance": {
+      "1": 600001,
+      "2": 600002,
+      "3": 600003
+    },
+    "SkillList": {
+      "1": 601,
+      "2": 602,
+      "3": 603,
+      "4": 604,
+      "5": 605,
+      "6": 606
+    },
+    "ArrSkill": {
+      "1": 2,
+      "2": 3,
+      "3": 1,
+      "4": 3
+    },
+    "ResourceId": 100005,
+    "FragmentNum": 20,
+    "ID": 9060,
+    "NickNameLocMeta": {
+      "InKey": "NickName_9060",
+      "InTextLiteral": "神兵",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModelScale": 1,
+    "ActorIcon": "/Game/Rouge/UI/Sprite/IconCharacteravatar/Frames/Bat_Taros_icon.Bat_Taros_icon",
+    "Solutions": "",
+    "FetterHeadIcon": "",
+    "FragmentId": 200009,
+    "CanChoose": false,
+    "LinkId": "",
+    "TagIcon": "/Game/Rouge/UI/Atlas_DT/RoleMain/Frames/Icon_zhiye05_01.Icon_zhiye05_01",
+    "UpgradeBGIcon": "",
+    "UnlockPathLocMeta": {
+      "InKey": "UnlockPath_9060",
+      "InTextLiteral": "",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "RoleModeRotator": -90,
+    "NameLocMeta": {
+      "InKey": "Name_9060",
+      "InTextLiteral": "【废弃】海因克斯",
+      "InNamespace": "hero_TBHeroMonster"
+    },
+    "SkinID": 906001,
+    "ParamList": {},
+    "FullPaintingPath": "/Game/Rouge/UI/Texture/Role_portrait/Frames/Role_portrait_14_png.Role_portrait_14_png",
+    "WeaponID": 5015
+  }
+}

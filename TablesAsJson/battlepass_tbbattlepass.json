@@ -1,0 +1,82 @@
+﻿{
+  "1": {
+    "PremiumUnlockResourceID": 300304,
+    "Name": "原爆点",
+    "BattlePassGoodsID": 990080,
+    "BattlePassID": 1,
+    "EndTime": "2029-06-01 00:00:00",
+    "UltraReward": {
+      "1": {
+        "value": 1,
+        "key": 600002
+      },
+      "2": {
+        "value": 1,
+        "key": 600001
+      },
+      "3": {
+        "value": 1,
+        "key": 81449
+      },
+      "4": {
+        "value": 1,
+        "key": 82451
+      },
+      "5": {
+        "value": 1,
+        "key": 20703051
+      }
+    },
+    "PremiumToUltraResourceID": 300306,
+    "UltraDescLocMeta": {
+      "InTextLiteral": "典藏版通行证奖励",
+      "InKey": "UltraDesc_1",
+      "InNamespace": "battlepass_TBBattlePass"
+    },
+    "NormalDescLocMeta": {
+      "InTextLiteral": "高级版通行证奖励",
+      "InKey": "NormalDesc_1",
+      "InNamespace": "battlepass_TBBattlePass"
+    },
+    "StartTime": "2025-06-02 00:00:00",
+    "IconPath": "",
+    "BattlePassExpID": 99008,
+    "UltraUnlockResourceID": 300305
+  },
+  "2": {
+    "PremiumUnlockResourceID": 300301,
+    "Name": "超载通行证",
+    "BattlePassGoodsID": 990090,
+    "BattlePassID": 2,
+    "EndTime": "2025-06-01 00:00:00",
+    "UltraReward": {
+      "1": {
+        "value": 10000,
+        "key": 99008
+      },
+      "2": {
+        "value": 100,
+        "key": 300001
+      },
+      "3": {
+        "value": 5,
+        "key": 36143
+      }
+    },
+    "PremiumToUltraResourceID": 300303,
+    "UltraDescLocMeta": {
+      "InTextLiteral": "典藏版通行证奖励",
+      "InKey": "UltraDesc_2",
+      "InNamespace": "battlepass_TBBattlePass"
+    },
+    "NormalDescLocMeta": {
+      "InTextLiteral": "高级版通行证奖励",
+      "InKey": "NormalDesc_2",
+      "InNamespace": "battlepass_TBBattlePass"
+    },
+    "StartTime": "2023-03-01 00:00:00",
+    "IconPath": "",
+    "BattlePassExpID": 99009,
+    "UltraUnlockResourceID": 300302
+  }
+}

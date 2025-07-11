@@ -1,0 +1,187 @@
+﻿{
+  "1": {
+    "Attachlist": {
+      "1": {
+        "key": 400001,
+        "value": 1
+      },
+      "2": {
+        "key": 200004,
+        "value": 10
+      }
+    },
+    "TitleLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Title_1",
+      "InTextLiteral": "维护补偿"
+    },
+    "ContentLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Content_1",
+      "InTextLiteral": "亲爱的骇客：更新维护已经完成了，大人您又可以继续愉快游戏啦。骇客总办也准备了一份效力，请大人们记得领取哦"
+    },
+    "Id": 1,
+    "SenderLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Sender_1",
+      "InTextLiteral": "系统邮件"
+    }
+  },
+  "2": {
+    "Attachlist": {},
+    "TitleLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Title_2",
+      "InTextLiteral": "维护公告通知"
+    },
+    "ContentLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Content_2",
+      "InTextLiteral": "亲爱的骇客：为了给大家带来更好的游戏体验，本服务器将于月日（周三）早上进行停服维护，如未能按时完成，则开服时间顺延。"
+    },
+    "Id": 2,
+    "SenderLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Sender_2",
+      "InTextLiteral": "系统邮件"
+    }
+  },
+  "3": {
+    "Attachlist": {},
+    "TitleLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Title_3",
+      "InTextLiteral": "赛季重置"
+    },
+    "ContentLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Content_3",
+      "InTextLiteral": "赛季已经结束，您在赛季中获得的赛季模组和赛季养成材料已经转化为新的赛季养成材料，请查收！"
+    },
+    "Id": 3,
+    "SenderLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Sender_3",
+      "InTextLiteral": "系统邮件"
+    }
+  },
+  "4": {
+    "Attachlist": {},
+    "TitleLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Title_4",
+      "InTextLiteral": "过期道具补发"
+    },
+    "ContentLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Content_4",
+      "InTextLiteral": "您好，过期未领取的道具已通过邮件补发，请查收！"
+    },
+    "Id": 4,
+    "SenderLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Sender_4",
+      "InTextLiteral": "系统邮件"
+    }
+  },
+  "5": {
+    "Attachlist": {},
+    "TitleLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Title_5",
+      "InTextLiteral": "排行榜奖励"
+    },
+    "ContentLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Content_5",
+      "InTextLiteral": "您好！前排行榜奖励"
+    },
+    "Id": 5,
+    "SenderLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Sender_5",
+      "InTextLiteral": "系统邮件"
+    }
+  },
+  "6": {
+    "Attachlist": {},
+    "TitleLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Title_6",
+      "InTextLiteral": "排行榜奖励"
+    },
+    "ContentLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Content_6",
+      "InTextLiteral": "您好！前排行榜奖励"
+    },
+    "Id": 6,
+    "SenderLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Sender_6",
+      "InTextLiteral": "系统邮件"
+    }
+  },
+  "7": {
+    "Attachlist": {},
+    "TitleLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Title_7",
+      "InTextLiteral": "月卡权益"
+    },
+    "ContentLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Content_7",
+      "InTextLiteral": "您好，本周的月卡门票奖励已由邮件发放，请在附件查收"
+    },
+    "Id": 7,
+    "SenderLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Sender_7",
+      "InTextLiteral": "系统邮件"
+    }
+  },
+  "8": {
+    "Attachlist": {},
+    "TitleLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Title_8",
+      "InTextLiteral": "资源过期"
+    },
+    "ContentLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Content_8",
+      "InTextLiteral": "您好，您有资源已过期！"
+    },
+    "Id": 8,
+    "SenderLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Sender_8",
+      "InTextLiteral": "系统邮件"
+    }
+  },
+  "9": {
+    "Attachlist": {
+      "1": {
+        "key": 500015,
+        "value": 1
+      }
+    },
+    "TitleLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Title_9",
+      "InTextLiteral": "网吧奖励"
+    },
+    "ContentLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Content_9",
+      "InTextLiteral": "首次登录网吧奖励！！"
+    },
+    "Id": 9,
+    "SenderLocMeta": {
+      "InNamespace": "lobby_TBSystemMail",
+      "InKey": "Sender_9",
+      "InTextLiteral": "系统邮件"
+    }
+  }
+}

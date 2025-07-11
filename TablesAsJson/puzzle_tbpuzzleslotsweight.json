@@ -1,0 +1,104 @@
+﻿{
+  "0": {
+    "SlotNumWeight": {
+      "1": {
+        "key": 1,
+        "weight": 90
+      },
+      "2": {
+        "key": 2,
+        "weight": 0
+      },
+      "3": {
+        "key": 3,
+        "weight": 10
+      }
+    },
+    "SlotNum": 0
+  },
+  "1": {
+    "SlotNumWeight": {
+      "1": {
+        "key": 1,
+        "weight": 70
+      },
+      "2": {
+        "key": 2,
+        "weight": 10
+      },
+      "3": {
+        "key": 3,
+        "weight": 20
+      }
+    },
+    "SlotNum": 1
+  },
+  "2": {
+    "SlotNumWeight": {
+      "1": {
+        "key": 1,
+        "weight": 50
+      },
+      "2": {
+        "key": 2,
+        "weight": 20
+      },
+      "3": {
+        "key": 3,
+        "weight": 30
+      }
+    },
+    "SlotNum": 2
+  },
+  "3": {
+    "SlotNumWeight": {
+      "1": {
+        "key": 1,
+        "weight": 40
+      },
+      "2": {
+        "key": 2,
+        "weight": 15
+      },
+      "3": {
+        "key": 3,
+        "weight": 45
+      }
+    },
+    "SlotNum": 3
+  },
+  "4": {
+    "SlotNumWeight": {
+      "1": {
+        "key": 1,
+        "weight": 20
+      },
+      "2": {
+        "key": 2,
+        "weight": 20
+      },
+      "3": {
+        "key": 3,
+        "weight": 60
+      }
+    },
+    "SlotNum": 4
+  },
+  "5": {
+    "SlotNumWeight": {
+      "1": {
+        "key": 1,
+        "weight": 0
+      },
+      "2": {
+        "key": 2,
+        "weight": 0
+      },
+      "3": {
+        "key": 3,
+        "weight": 10
+      }
+    },
+    "SlotNum": 5
+  }
+}

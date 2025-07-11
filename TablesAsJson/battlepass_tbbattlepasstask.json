@@ -1,0 +1,30 @@
+﻿{
+  "3": {
+    "Name": "周常任务",
+    "BattlePassID": 1,
+    "ID": 3,
+    "TaskGroupID": 10003,
+    "TaskType": 0
+  },
+  "1": {
+    "Name": "超载测试周常任务",
+    "BattlePassID": 2,
+    "ID": 1,
+    "TaskGroupID": 10001,
+    "TaskType": 0
+  },
+  "2": {
+    "Name": "超载测试活动任务",
+    "BattlePassID": 2,
+    "ID": 2,
+    "TaskGroupID": 10002,
+    "TaskType": 1
+  },
+  "4": {
+    "Name": "活动任务",
+    "BattlePassID": 1,
+    "ID": 4,
+    "TaskGroupID": 10004,
+    "TaskType": 1
+  }
+}

@@ -1,0 +1,74 @@
+﻿{
+  "7": {
+    "Level": 7,
+    "IconPath": "",
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfy",
+      "InKey": "Name_7",
+      "InTextLiteral": "奇迹骇客"
+    }
+  },
+  "1": {
+    "Level": 1,
+    "IconPath": "",
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfy",
+      "InKey": "Name_1",
+      "InTextLiteral": "初入矩阵"
+    }
+  },
+  "2": {
+    "Level": 2,
+    "IconPath": "",
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfy",
+      "InKey": "Name_2",
+      "InTextLiteral": "小试身手"
+    }
+  },
+  "3": {
+    "Level": 3,
+    "IconPath": "",
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfy",
+      "InKey": "Name_3",
+      "InTextLiteral": "渐入佳境"
+    }
+  },
+  "4": {
+    "Level": 4,
+    "IconPath": "",
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfy",
+      "InKey": "Name_4",
+      "InTextLiteral": "熟练高玩"
+    }
+  },
+  "5": {
+    "Level": 5,
+    "IconPath": "",
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfy",
+      "InKey": "Name_5",
+      "InTextLiteral": "精湛专家"
+    }
+  },
+  "6": {
+    "Level": 6,
+    "IconPath": "",
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfy",
+      "InKey": "Name_6",
+      "InTextLiteral": "矩阵漫客"
+    }
+  },
+  "8": {
+    "Level": 8,
+    "IconPath": "",
+    "NameLocMeta": {
+      "InNamespace": "hero_TBProfy",
+      "InKey": "Name_8",
+      "InTextLiteral": "传奇玩家"
+    }
+  }
+}

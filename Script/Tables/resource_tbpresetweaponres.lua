@@ -1,0 +1,123 @@
+local resource_tbpresetweaponres = {
+  [50001] = {
+    ID = 50001,
+    BarrelID = 100702,
+    WeaponID = 5005,
+    ArrSlot = {
+      {key = 2, value = 100703},
+      {key = 4, value = 100705},
+      {key = 5, value = 100706},
+      {key = 6, value = 100707},
+      {key = 8, value = 100709}
+    }
+  },
+  [50002] = {
+    ID = 50002,
+    BarrelID = 100902,
+    WeaponID = 5005,
+    ArrSlot = {
+      {key = 2, value = 100903},
+      {key = 4, value = 100905},
+      {key = 5, value = 100906},
+      {key = 6, value = 100907},
+      {key = 8, value = 100909}
+    }
+  },
+  [50003] = {
+    ID = 50003,
+    BarrelID = 200302,
+    WeaponID = 5006,
+    ArrSlot = {
+      {key = 2, value = 200303},
+      {key = 4, value = 200305},
+      {key = 5, value = 200306},
+      {key = 6, value = 200307},
+      {key = 8, value = 200309}
+    }
+  },
+  [50004] = {
+    ID = 50004,
+    BarrelID = 200602,
+    WeaponID = 5006,
+    ArrSlot = {
+      {key = 2, value = 200603},
+      {key = 4, value = 200605},
+      {key = 5, value = 200606},
+      {key = 6, value = 200607},
+      {key = 8, value = 200609}
+    }
+  },
+  [50005] = {
+    ID = 50005,
+    BarrelID = 100802,
+    WeaponID = 5005,
+    ArrSlot = {
+      {key = 2, value = 100803},
+      {key = 4, value = 100805},
+      {key = 5, value = 100806},
+      {key = 6, value = 100807},
+      {key = 8, value = 100809}
+    }
+  },
+  [50006] = {
+    ID = 50006,
+    BarrelID = 101002,
+    WeaponID = 5005,
+    ArrSlot = {
+      {key = 2, value = 101003},
+      {key = 4, value = 101005},
+      {key = 5, value = 101006},
+      {key = 6, value = 101007},
+      {key = 8, value = 101009}
+    }
+  },
+  [50007] = {
+    ID = 50007,
+    BarrelID = 200102,
+    WeaponID = 5006,
+    ArrSlot = {
+      {key = 2, value = 200103},
+      {key = 4, value = 200105},
+      {key = 5, value = 200106},
+      {key = 6, value = 200107},
+      {key = 8, value = 200109}
+    }
+  },
+  [50008] = {
+    ID = 50008,
+    BarrelID = 200202,
+    WeaponID = 5006,
+    ArrSlot = {
+      {key = 2, value = 200203},
+      {key = 4, value = 200205},
+      {key = 5, value = 200206},
+      {key = 6, value = 200207},
+      {key = 8, value = 200209}
+    }
+  },
+  [50009] = {
+    ID = 50009,
+    BarrelID = 200402,
+    WeaponID = 5006,
+    ArrSlot = {
+      {key = 2, value = 200403},
+      {key = 4, value = 200405},
+      {key = 5, value = 200406},
+      {key = 6, value = 200407},
+      {key = 8, value = 200409}
+    }
+  },
+  [50010] = {
+    ID = 50010,
+    BarrelID = 200502,
+    WeaponID = 5006,
+    ArrSlot = {
+      {key = 2, value = 200503},
+      {key = 4, value = 200505},
+      {key = 5, value = 200506},
+      {key = 6, value = 200507},
+      {key = 8, value = 200509}
+    }
+  }
+}
+return resource_tbpresetweaponres

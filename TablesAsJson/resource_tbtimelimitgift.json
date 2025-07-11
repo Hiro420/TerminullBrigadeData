@@ -1,0 +1,544 @@
+﻿{
+  "510012": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-07-02 15:00:00",
+        "resourceID": 300418,
+        "amount": 1,
+        "timeLimitType": 2
+      }
+    },
+    "Desc": "【测试】【】权益模组掉落概率增加",
+    "Icon": "",
+    "ID": 510012,
+    "isShow": false
+  },
+  "500001": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {
+          "1": {
+            "value": 10,
+            "key": 99994
+          }
+        },
+        "timeLimitParam": "1",
+        "resourceID": 99018,
+        "amount": 1,
+        "timeLimitType": 1
+      }
+    },
+    "Desc": "限时资源测试道具",
+    "Icon": "",
+    "ID": 500001,
+    "isShow": false
+  },
+  "500002": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {
+          "1": {
+            "value": 10,
+            "key": 99994
+          }
+        },
+        "timeLimitParam": "2",
+        "resourceID": 300002,
+        "amount": 1,
+        "timeLimitType": 1
+      }
+    },
+    "Desc": "限时资源测试货币",
+    "Icon": "",
+    "ID": 500002,
+    "isShow": false
+  },
+  "500003": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {
+          "1": {
+            "value": 10,
+            "key": 99994
+          }
+        },
+        "timeLimitParam": "1",
+        "resourceID": 82002,
+        "amount": 1,
+        "timeLimitType": 1
+      }
+    },
+    "Desc": "限时资源测试横幅",
+    "Icon": "",
+    "ID": 500003,
+    "isShow": false
+  },
+  "500004": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {
+          "1": {
+            "value": 10,
+            "key": 99994
+          }
+        },
+        "timeLimitParam": "2",
+        "resourceID": 10100801,
+        "amount": 1,
+        "timeLimitType": 1
+      }
+    },
+    "Desc": "限时资源测试角色皮肤",
+    "Icon": "",
+    "ID": 500004,
+    "isShow": false
+  },
+  "500005": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {
+          "1": {
+            "value": 10,
+            "key": 99994
+          }
+        },
+        "timeLimitParam": "2",
+        "resourceID": 81204,
+        "amount": 1,
+        "timeLimitType": 1
+      }
+    },
+    "Desc": "限时资源测试头像",
+    "Icon": "",
+    "ID": 500005,
+    "isShow": false
+  },
+  "500006": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {
+          "1": {
+            "value": 10,
+            "key": 99994
+          }
+        },
+        "timeLimitParam": "3",
+        "resourceID": 5014,
+        "amount": 1,
+        "timeLimitType": 1
+      }
+    },
+    "Desc": "限时资源测试武器",
+    "Icon": "",
+    "ID": 500006,
+    "isShow": false
+  },
+  "500007": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {
+          "1": {
+            "value": 10,
+            "key": 99994
+          }
+        },
+        "timeLimitParam": "4",
+        "resourceID": 10501441,
+        "amount": 1,
+        "timeLimitType": 1
+      }
+    },
+    "Desc": "限时资源测试武器皮肤",
+    "Icon": "",
+    "ID": 500007,
+    "isShow": false
+  },
+  "500008": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {
+          "1": {
+            "value": 10,
+            "key": 99994
+          }
+        },
+        "timeLimitParam": "1",
+        "resourceID": 20720103,
+        "amount": 1,
+        "timeLimitType": 1
+      }
+    },
+    "Desc": "限时资源测试轮盘",
+    "Icon": "",
+    "ID": 500008,
+    "isShow": false
+  },
+  "500009": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {
+          "1": {
+            "value": 10,
+            "key": 99994
+          }
+        },
+        "timeLimitParam": "2",
+        "resourceID": 100009,
+        "amount": 1,
+        "timeLimitType": 1
+      }
+    },
+    "Desc": "限时资源测试英雄",
+    "Icon": "",
+    "ID": 500009,
+    "isShow": false
+  },
+  "500010": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {
+          "1": {
+            "value": 10,
+            "key": 99994
+          }
+        },
+        "timeLimitParam": "2025-07-06 00:00:00",
+        "resourceID": 99018,
+        "amount": 10,
+        "timeLimitType": 2
+      }
+    },
+    "Desc": "限时资源测试道具（定时",
+    "Icon": "",
+    "ID": 500010,
+    "isShow": false
+  },
+  "500011": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {
+          "1": {
+            "value": 10,
+            "key": 99994
+          }
+        },
+        "timeLimitParam": "2025-07-06 00:00:00",
+        "resourceID": 300005,
+        "amount": 1000,
+        "timeLimitType": 2
+      }
+    },
+    "Desc": "限时资源测试货币（定时",
+    "Icon": "",
+    "ID": 500011,
+    "isShow": false
+  },
+  "500012": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {
+          "1": {
+            "value": 10,
+            "key": 99994
+          }
+        },
+        "timeLimitParam": "3",
+        "resourceID": 5017,
+        "amount": 1,
+        "timeLimitType": 1
+      }
+    },
+    "Desc": "限时资源格洛丽亚枪",
+    "Icon": "",
+    "ID": 500012,
+    "isShow": false
+  },
+  "500013": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {
+          "1": {
+            "value": 10,
+            "key": 99994
+          }
+        },
+        "timeLimitParam": "2",
+        "resourceID": 100007,
+        "amount": 1,
+        "timeLimitType": 1
+      }
+    },
+    "Desc": "限时资源测试英雄上校",
+    "Icon": "",
+    "ID": 500013,
+    "isShow": false
+  },
+  "500014": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {
+          "1": {
+            "value": 10,
+            "key": 99994
+          }
+        },
+        "timeLimitParam": "2025-07-06 00:00:00",
+        "resourceID": 300001,
+        "amount": 1000,
+        "timeLimitType": 2
+      }
+    },
+    "Desc": "限时资源测试货币（定时",
+    "Icon": "",
+    "ID": 500014,
+    "isShow": false
+  },
+  "500015": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {
+          "1": {
+            "value": 100,
+            "key": 99994
+          }
+        },
+        "timeLimitParam": "14",
+        "resourceID": 10100007,
+        "amount": 1,
+        "timeLimitType": 1
+      }
+    },
+    "Desc": "电幻·舞者（天）",
+    "Icon": "",
+    "ID": 500015,
+    "isShow": false
+  },
+  "510001": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-09-24 05:00:00",
+        "resourceID": 300401,
+        "amount": 1,
+        "timeLimitType": 2
+      },
+      "2": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-09-24 05:00:00",
+        "resourceID": 300402,
+        "amount": 1,
+        "timeLimitType": 2
+      }
+    },
+    "Desc": "【橙】权益模组掉落",
+    "Icon": "",
+    "ID": 510001,
+    "isShow": false
+  },
+  "510002": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-09-24 05:00:00",
+        "resourceID": 300403,
+        "amount": 1,
+        "timeLimitType": 2
+      },
+      "2": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-09-24 05:00:00",
+        "resourceID": 300404,
+        "amount": 1,
+        "timeLimitType": 2
+      }
+    },
+    "Desc": "【红】权益通货掉落",
+    "Icon": "",
+    "ID": 510002,
+    "isShow": false
+  },
+  "510003": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-09-24 05:00:00",
+        "resourceID": 300405,
+        "amount": 1,
+        "timeLimitType": 2
+      }
+    },
+    "Desc": "【橙】权益金币",
+    "Icon": "",
+    "ID": 510003,
+    "isShow": false
+  },
+  "510004": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-09-24 05:00:00",
+        "resourceID": 300406,
+        "amount": 1,
+        "timeLimitType": 2
+      }
+    },
+    "Desc": "【】权益模组掉落概率增加",
+    "Icon": "",
+    "ID": 510004,
+    "isShow": false
+  },
+  "510005": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-07-02 10:15:00",
+        "resourceID": 300407,
+        "amount": 1,
+        "timeLimitType": 2
+      },
+      "2": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-07-02 10:15:00",
+        "resourceID": 300408,
+        "amount": 1,
+        "timeLimitType": 2
+      }
+    },
+    "Desc": "【测试】【橙】权益模组掉落",
+    "Icon": "",
+    "ID": 510005,
+    "isShow": false
+  },
+  "510006": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-07-02 10:15:00",
+        "resourceID": 300409,
+        "amount": 1,
+        "timeLimitType": 2
+      },
+      "2": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-07-02 10:15:00",
+        "resourceID": 300410,
+        "amount": 1,
+        "timeLimitType": 2
+      }
+    },
+    "Desc": "【测试】【红】权益通货掉落",
+    "Icon": "",
+    "ID": 510006,
+    "isShow": false
+  },
+  "510007": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-07-02 10:15:00",
+        "resourceID": 300411,
+        "amount": 1,
+        "timeLimitType": 2
+      }
+    },
+    "Desc": "【测试】【橙】权益金币",
+    "Icon": "",
+    "ID": 510007,
+    "isShow": false
+  },
+  "510008": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-07-02 10:15:00",
+        "resourceID": 300412,
+        "amount": 1,
+        "timeLimitType": 2
+      }
+    },
+    "Desc": "【测试】【】权益模组掉落概率增加",
+    "Icon": "",
+    "ID": 510008,
+    "isShow": false
+  },
+  "510009": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-07-02 15:00:00",
+        "resourceID": 300413,
+        "amount": 1,
+        "timeLimitType": 2
+      },
+      "2": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-07-02 15:00:00",
+        "resourceID": 300414,
+        "amount": 1,
+        "timeLimitType": 2
+      }
+    },
+    "Desc": "【测试】【橙】权益模组掉落",
+    "Icon": "",
+    "ID": 510009,
+    "isShow": false
+  },
+  "510010": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-07-02 15:00:00",
+        "resourceID": 300415,
+        "amount": 1,
+        "timeLimitType": 2
+      },
+      "2": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-07-02 15:00:00",
+        "resourceID": 300416,
+        "amount": 1,
+        "timeLimitType": 2
+      }
+    },
+    "Desc": "【测试】【红】权益通货掉落",
+    "Icon": "",
+    "ID": 510010,
+    "isShow": false
+  },
+  "510011": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {},
+        "timeLimitParam": "2025-07-02 15:00:00",
+        "resourceID": 300417,
+        "amount": 1,
+        "timeLimitType": 2
+      }
+    },
+    "Desc": "【测试】【橙】权益金币",
+    "Icon": "",
+    "ID": 510011,
+    "isShow": false
+  },
+  "30703029": {
+    "giftPackage": {
+      "1": {
+        "timeLimitedDecomposeResources": {
+          "1": {
+            "value": 10,
+            "key": 99989
+          }
+        },
+        "timeLimitParam": "1",
+        "resourceID": 20703029,
+        "amount": 1,
+        "timeLimitType": 1
+      }
+    },
+    "Desc": "格罗莉亚的百宝箱（天）",
+    "Icon": "",
+    "ID": 30703029,
+    "isShow": false
+  }
+}

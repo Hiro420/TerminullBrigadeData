@@ -1,0 +1,482 @@
+﻿{
+  "31": {
+    "Xboxid": 31,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "通关难度的环都",
+      "InKey": "Taskcontent_31"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "理想主义",
+      "InKey": "Taskname_31"
+    },
+    "Gamescore": 50,
+    "TaskGroupid": 7031
+  },
+  "1": {
+    "Xboxid": 1,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "账号等级达到级",
+      "InKey": "Taskcontent_1"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "初识矩阵",
+      "InKey": "Taskname_1"
+    },
+    "Gamescore": 10,
+    "TaskGroupid": 7001
+  },
+  "2": {
+    "Xboxid": 2,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "名角色的熟练度达到级",
+      "InKey": "Taskcontent_2"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "心意相通",
+      "InKey": "Taskname_2"
+    },
+    "Gamescore": 10,
+    "TaskGroupid": 7002
+  },
+  "3": {
+    "Xboxid": 3,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "拥有第个好友",
+      "InKey": "Taskcontent_3"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "社交新人",
+      "InKey": "Taskname_3"
+    },
+    "Gamescore": 10,
+    "TaskGroupid": 7003
+  },
+  "4": {
+    "Xboxid": 4,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "拥有个好友",
+      "InKey": "Taskcontent_4"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "社交名流",
+      "InKey": "Taskname_4"
+    },
+    "Gamescore": 20,
+    "TaskGroupid": 7004
+  },
+  "5": {
+    "Xboxid": 5,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "命中敌人弱点次",
+      "InKey": "Taskcontent_5"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "精准命中",
+      "InKey": "Taskname_5"
+    },
+    "Gamescore": 20,
+    "TaskGroupid": 7005
+  },
+  "6": {
+    "Xboxid": 6,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "击败惩戒者次",
+      "InKey": "Taskcontent_6"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "监管者",
+      "InKey": "Taskname_6"
+    },
+    "Gamescore": 10,
+    "TaskGroupid": 7006
+  },
+  "7": {
+    "Xboxid": 7,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "击败个敌人",
+      "InKey": "Taskcontent_7"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "清理能手",
+      "InKey": "Taskname_7"
+    },
+    "Gamescore": 10,
+    "TaskGroupid": 7007
+  },
+  "8": {
+    "Xboxid": 8,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "救援队友次",
+      "InKey": "Taskcontent_8"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "团队合作",
+      "InKey": "Taskname_8"
+    },
+    "Gamescore": 10,
+    "TaskGroupid": 7008
+  },
+  "9": {
+    "Xboxid": 9,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "击败首领次",
+      "InKey": "Taskcontent_9"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "巨人捕手",
+      "InKey": "Taskname_9"
+    },
+    "Gamescore": 10,
+    "TaskGroupid": 7009
+  },
+  "10": {
+    "Xboxid": 10,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "打爆个炸药桶",
+      "InKey": "Taskcontent_10"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "燃起来了",
+      "InKey": "Taskname_10"
+    },
+    "Gamescore": 10,
+    "TaskGroupid": 7010
+  },
+  "11": {
+    "Xboxid": 11,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "提升权限品质次",
+      "InKey": "Taskcontent_11"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "神之子",
+      "InKey": "Taskname_11"
+    },
+    "Gamescore": 10,
+    "TaskGroupid": 7011
+  },
+  "12": {
+    "Xboxid": 12,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "获得次",
+      "InKey": "Taskcontent_12"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "第一名",
+      "InKey": "Taskname_12"
+    },
+    "Gamescore": 10,
+    "TaskGroupid": 7012
+  },
+  "13": {
+    "Xboxid": 13,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "在商店购买商品次",
+      "InKey": "Taskcontent_13"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "欢迎光临",
+      "InKey": "Taskname_13"
+    },
+    "Gamescore": 10,
+    "TaskGroupid": 7013
+  },
+  "14": {
+    "Xboxid": 14,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "首次获得传说品质稳宝",
+      "InKey": "Taskcontent_14"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "秘宝发掘者",
+      "InKey": "Taskname_14"
+    },
+    "Gamescore": 10,
+    "TaskGroupid": 7014
+  },
+  "15": {
+    "Xboxid": 15,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "获得次传说品质秘宝",
+      "InKey": "Taskcontent_15"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "秘宝收藏家",
+      "InKey": "Taskname_15"
+    },
+    "Gamescore": 20,
+    "TaskGroupid": 7015
+  },
+  "16": {
+    "Xboxid": 16,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "在场景中拾取到个数据情报",
+      "InKey": "Taskcontent_16"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "小插曲",
+      "InKey": "Taskname_16"
+    },
+    "Gamescore": 10,
+    "TaskGroupid": 7016
+  },
+  "17": {
+    "Xboxid": 17,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "成功通过次任意世界",
+      "InKey": "Taskcontent_17"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "势不可当",
+      "InKey": "Taskname_17"
+    },
+    "Gamescore": 10,
+    "TaskGroupid": 7017
+  },
+  "18": {
+    "Xboxid": 18,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "激活任意条能力模块的强化分支",
+      "InKey": "Taskcontent_18"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "职业规划",
+      "InKey": "Taskname_18"
+    },
+    "Gamescore": 10,
+    "TaskGroupid": 7018
+  },
+  "19": {
+    "Xboxid": 19,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "账号等级达到级",
+      "InKey": "Taskcontent_19"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "熟能生巧",
+      "InKey": "Taskname_19"
+    },
+    "Gamescore": 50,
+    "TaskGroupid": 7019
+  },
+  "20": {
+    "Xboxid": 20,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "名角色的熟练度达到级",
+      "InKey": "Taskcontent_20"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "亲密关系",
+      "InKey": "Taskname_20"
+    },
+    "Gamescore": 20,
+    "TaskGroupid": 7020
+  },
+  "21": {
+    "Xboxid": 21,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "获得次",
+      "InKey": "Taskcontent_21"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "战斗大师",
+      "InKey": "Taskname_21"
+    },
+    "Gamescore": 20,
+    "TaskGroupid": 7021
+  },
+  "22": {
+    "Xboxid": 22,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "命中敌人弱点次",
+      "InKey": "Taskcontent_22"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "一击必中",
+      "InKey": "Taskname_22"
+    },
+    "Gamescore": 50,
+    "TaskGroupid": 7022
+  },
+  "23": {
+    "Xboxid": 23,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "在商店购买商品次",
+      "InKey": "Taskcontent_23"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "购物清单",
+      "InKey": "Taskname_23"
+    },
+    "Gamescore": 50,
+    "TaskGroupid": 7023
+  },
+  "24": {
+    "Xboxid": 24,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "战斗内累计获得金币",
+      "InKey": "Taskcontent_24"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "大富翁",
+      "InKey": "Taskname_24"
+    },
+    "Gamescore": 50,
+    "TaskGroupid": 7024
+  },
+  "25": {
+    "Xboxid": 25,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "获得次传说品质秘宝",
+      "InKey": "Taskcontent_25"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "秘宝专家",
+      "InKey": "Taskname_25"
+    },
+    "Gamescore": 100,
+    "TaskGroupid": 7025
+  },
+  "26": {
+    "Xboxid": 26,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "成功通过次任意世界",
+      "InKey": "Taskcontent_26"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "势如破竹",
+      "InKey": "Taskname_26"
+    },
+    "Gamescore": 50,
+    "TaskGroupid": 7026
+  },
+  "27": {
+    "Xboxid": 27,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "在场景中拾取到个数据情报",
+      "InKey": "Taskcontent_27"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "情报达人",
+      "InKey": "Taskname_27"
+    },
+    "Gamescore": 50,
+    "TaskGroupid": 7027
+  },
+  "28": {
+    "Xboxid": 28,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "激活全部条能力模块的强化分支",
+      "InKey": "Taskcontent_28"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "全面成长",
+      "InKey": "Taskname_28"
+    },
+    "Gamescore": 100,
+    "TaskGroupid": 7028
+  },
+  "29": {
+    "Xboxid": 29,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "获得次双重权限",
+      "InKey": "Taskcontent_29"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "智能眷顾",
+      "InKey": "Taskname_29"
+    },
+    "Gamescore": 50,
+    "TaskGroupid": 7029
+  },
+  "30": {
+    "Xboxid": 30,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "击败首领次",
+      "InKey": "Taskcontent_30"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "巨人终结者",
+      "InKey": "Taskname_30"
+    },
+    "Gamescore": 100,
+    "TaskGroupid": 7030
+  },
+  "32": {
+    "Xboxid": 32,
+    "TaskcontentLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "通关难度的炽热焦土次",
+      "InKey": "Taskcontent_32"
+    },
+    "TasknameLocMeta": {
+      "InNamespace": "achievement_TBXBoxAchievement",
+      "InTextLiteral": "真正的信仰",
+      "InKey": "Taskname_32"
+    },
+    "Gamescore": 50,
+    "TaskGroupid": 7032
+  }
+}

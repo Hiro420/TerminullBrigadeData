@@ -1,0 +1,422 @@
+﻿{
+  "LobbyMall": {
+    "ID": "LobbyMall",
+    "wbp_name": "",
+    "tag_key": "LobbyLabel.Mall",
+    "hot_key": "",
+    "button_name": ""
+  },
+  "LobbyMallExterior": {
+    "ID": "LobbyMallExterior",
+    "wbp_name": "",
+    "tag_key": "LobbyLabel.Mall.Exterior",
+    "hot_key": "",
+    "button_name": ""
+  },
+  "LobbyMallBoundle": {
+    "ID": "LobbyMallBoundle",
+    "wbp_name": "",
+    "tag_key": "LobbyLabel.Mall.Bundle",
+    "hot_key": "",
+    "button_name": ""
+  },
+  "InGameIGuideGeneric": {
+    "ID": "InGameIGuideGeneric",
+    "wbp_name": "WBP_NavigationBar",
+    "tag_key": "",
+    "hot_key": "H",
+    "button_name": "WBP_NavigationTitle_IGuide"
+  },
+  "IguideGeneric": {
+    "ID": "IguideGeneric",
+    "wbp_name": "WBP_IllustratedGuide_Menu",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "GenericModify"
+  },
+  "LobbyMallProps": {
+    "ID": "LobbyMallProps",
+    "wbp_name": "",
+    "tag_key": "LobbyLabel.Mall.Props",
+    "hot_key": "",
+    "button_name": ""
+  },
+  "CharacterFight": {
+    "ID": "CharacterFight",
+    "wbp_name": "WBP_RoleMain",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Btn_Choose"
+  },
+  "LobbyTeamEntrance": {
+    "ID": "LobbyTeamEntrance",
+    "wbp_name": "WBP_LobbyPanel",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Btn_AddTeam"
+  },
+  "ProficiencyStory": {
+    "ID": "ProficiencyStory",
+    "wbp_name": "WBP_ProficiencyView",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Btn_Synopsis"
+  },
+  "AchievementExplore": {
+    "ID": "AchievementExplore",
+    "wbp_name": "WBP_AchievementView",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "WBP_AchievementToggle_1"
+  },
+  "AppearanceHeroSkin": {
+    "ID": "AppearanceHeroSkin",
+    "wbp_name": "WBP_SkinView",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "WBP_SkinToggleHero"
+  },
+  "Iguide": {
+    "ID": "Iguide",
+    "wbp_name": "",
+    "tag_key": "LobbyLabel.IllustratedGuideMenu",
+    "hot_key": "",
+    "button_name": ""
+  },
+  "FriendsPlatform": {
+    "ID": "FriendsPlatform",
+    "wbp_name": "WBP_ContactPersonList",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "WBP_SingleContactButton_3"
+  },
+  "LobbyCharacter": {
+    "ID": "LobbyCharacter",
+    "wbp_name": "WBP_LobbyMenuButton",
+    "tag_key": "LobbyLabel.Role",
+    "hot_key": "",
+    "button_name": ""
+  },
+  "LobbyAutomaticMatchingMode": {
+    "ID": "LobbyAutomaticMatchingMode",
+    "wbp_name": "WBP_StartOrMatch",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Btn_NotMatching_1"
+  },
+  "ShowBOSSWeakness": {
+    "ID": "ShowBOSSWeakness",
+    "wbp_name": "",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": ""
+  },
+  "CharacterWeapon": {
+    "ID": "CharacterWeapon",
+    "wbp_name": "WBP_RoleMain",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "FirstWeaponItem"
+  },
+  "ResultExtraReward": {
+    "ID": "ResultExtraReward",
+    "wbp_name": "WBP_SettleInComeView",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Btn_RewardIncrease"
+  },
+  "Achievement": {
+    "ID": "Achievement",
+    "wbp_name": "WBP_PlayerInfoMainView",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "WBP_PlayerInfoMainToggleAchievement"
+  },
+  "LobbyModeChoose": {
+    "ID": "LobbyModeChoose",
+    "wbp_name": "WBP_LobbyMain",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Btn_ChangeMode"
+  },
+  "FriendsInvite": {
+    "ID": "FriendsInvite",
+    "wbp_name": "WBP_ContactPersonOperateButtonPanel",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "InviteTeamPanel"
+  },
+  "FriendsChat": {
+    "ID": "FriendsChat",
+    "wbp_name": "WBP_ContactPersonOperateButtonPanel",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "ChatPanel"
+  },
+  "MailReceive": {
+    "ID": "MailReceive",
+    "wbp_name": "",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": ""
+  },
+  "LobbyMallGoods": {
+    "ID": "LobbyMallGoods",
+    "wbp_name": "",
+    "tag_key": "LobbyLabel.Mall.Recommend",
+    "hot_key": "",
+    "button_name": ""
+  },
+  "AppearanceWeaponSkin": {
+    "ID": "AppearanceWeaponSkin",
+    "wbp_name": "WBP_SkinView",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "WBP_SkinToggleWeapon"
+  },
+  "PotentialRefresh": {
+    "ID": "PotentialRefresh",
+    "wbp_name": "WBP_GenericModifyChoosePanel",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "BP_ButtonWithSoundRefresh"
+  },
+  "CharacterDetailedProperties": {
+    "ID": "CharacterDetailedProperties",
+    "wbp_name": "WBP_RoleMain",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Btn_DetailAttribute"
+  },
+  "ReadinessChip": {
+    "ID": "ReadinessChip",
+    "wbp_name": "WBP_ViewSet",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": ""
+  },
+  "LobbyJoinTeam": {
+    "ID": "LobbyJoinTeam",
+    "wbp_name": "WBP_MatchingPanel",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Btn_JoinTeam"
+  },
+  "OpenBackpack": {
+    "ID": "OpenBackpack",
+    "wbp_name": "",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": ""
+  },
+  "DamageStatistics": {
+    "ID": "DamageStatistics",
+    "wbp_name": "",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": ""
+  },
+  "WriteNode": {
+    "ID": "WriteNode",
+    "wbp_name": "WBP_CommonTalent",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Btn_Confirm"
+  },
+  "LobbySetting": {
+    "ID": "LobbySetting",
+    "wbp_name": "WBP_LobbyEscMenuPanel",
+    "tag_key": "",
+    "hot_key": "O",
+    "button_name": "Btn_Setting"
+  },
+  "OpenState": {
+    "ID": "OpenState",
+    "wbp_name": "",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": ""
+  },
+  "SelectTeammates": {
+    "ID": "SelectTeammates",
+    "wbp_name": "",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": ""
+  },
+  "LobbyCopyTeamcode": {
+    "ID": "LobbyCopyTeamcode",
+    "wbp_name": "WBP_MatchingPanel",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Btn_Copy"
+  },
+  "AbilityModule": {
+    "ID": "AbilityModule",
+    "wbp_name": "WBP_LobbyMenuButton",
+    "tag_key": "LobbyLabel.Talent",
+    "hot_key": "",
+    "button_name": ""
+  },
+  "PreparingChangeCharacter": {
+    "ID": "PreparingChangeCharacter",
+    "wbp_name": "WBP_HeroSelectionMainPanel",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Btn_ChangeHero"
+  },
+  "LobbyChatOpen": {
+    "ID": "LobbyChatOpen",
+    "wbp_name": "WBP_ChatView",
+    "tag_key": "",
+    "hot_key": "Enter",
+    "button_name": "BP_ButtonWithSoundEnter"
+  },
+  "AchievementReward": {
+    "ID": "AchievementReward",
+    "wbp_name": "WBP_AchievementView",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "ButtonWithSoundAwardListDetails"
+  },
+  "LobbyAutomaticMatching": {
+    "ID": "LobbyAutomaticMatching",
+    "wbp_name": "WBP_StartOrMatch",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Btn_NotMatching"
+  },
+  "Tutorial": {
+    "ID": "Tutorial",
+    "wbp_name": "WBP_LobbyFunctionPanel",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Btn_GuideBook"
+  },
+  "PlayerInfo": {
+    "ID": "PlayerInfo",
+    "wbp_name": "WBP_PlayerInfoMainView",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "WBP_PlayerInfoMainTogglePlayerInfo"
+  },
+  "PromoteAbilitymodule": {
+    "ID": "PromoteAbilitymodule",
+    "wbp_name": "WBP_SettleInComeView",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "BP_ButtonWithSoundTalent"
+  },
+  "StoreRefresh": {
+    "ID": "StoreRefresh",
+    "wbp_name": "WBP_Shop",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Btn_Refresh"
+  },
+  "CharacterProficiencyEntrance": {
+    "ID": "CharacterProficiencyEntrance",
+    "wbp_name": "WBP_RoleMain",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "BP_ButtonWithSoundProficiency"
+  },
+  "AchievementSurvival": {
+    "ID": "AchievementSurvival",
+    "wbp_name": "WBP_AchievementView",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "WBP_AchievementToggle_2"
+  },
+  "ReadinessProficiency": {
+    "ID": "ReadinessProficiency",
+    "wbp_name": "WBP_ViewSet",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": ""
+  },
+  "ReadinessWeapon": {
+    "ID": "ReadinessWeapon",
+    "wbp_name": "WBP_ViewSet",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": ""
+  },
+  "Appearance": {
+    "ID": "Appearance",
+    "wbp_name": "WBP_RoleMain",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Button_waiguan"
+  },
+  "MailAllReceive": {
+    "ID": "MailAllReceive",
+    "wbp_name": "WBP_MailView",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Btn_AllReceive"
+  },
+  "IguideFocus": {
+    "ID": "IguideFocus",
+    "wbp_name": "WBP_IGuide_GenericModify",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Btn_Focus"
+  },
+  "Friends": {
+    "ID": "Friends",
+    "wbp_name": "WBP_LobbyFunctionPanel",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "BP_ButtonWithSound__Friends"
+  },
+  "AppearanceHeirloom": {
+    "ID": "AppearanceHeirloom",
+    "wbp_name": "WBP_AppearanceView",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "WBP_ApperanceToggleHeirloom"
+  },
+  "Mail": {
+    "ID": "Mail",
+    "wbp_name": "WBP_LobbyFunctionPanel",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "BP_ButtonWithSound_Email"
+  },
+  "PreparingLockCharacter": {
+    "ID": "PreparingLockCharacter",
+    "wbp_name": "WBP_HeroSelectionMainPanel",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Btn_Pick"
+  },
+  "AchievementFight": {
+    "ID": "AchievementFight",
+    "wbp_name": "WBP_AchievementView",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "WBP_AchievementToggle"
+  },
+  "LobbyTeamInvite": {
+    "ID": "LobbyTeamInvite",
+    "wbp_name": "WBP_MatchingPanel",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "WBP_MultiTeamMemberItem"
+  },
+  "IguideSpecific": {
+    "ID": "IguideSpecific",
+    "wbp_name": "WBP_IllustratedGuide_Menu",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "SpecificModify"
+  },
+  "IguidePiece": {
+    "ID": "IguidePiece",
+    "wbp_name": "WBP_IllustratedGuide_Menu",
+    "tag_key": "",
+    "hot_key": "",
+    "button_name": "Fragment"
+  }
+}

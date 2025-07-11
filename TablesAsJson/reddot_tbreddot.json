@@ -1,0 +1,1507 @@
+﻿{
+  "MainModeSelect_Menu_1003": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_MainModeSelect_Menu_1003"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "GameMode_Menu"
+    },
+    "IsCacheEnable": false,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "MainModeSelect_Menu_1003"
+  },
+  "Skin_Menu1": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Skin_Menu1"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Role_Skin"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Skin_Menu1"
+  },
+  "ClimbTower_PassReward_Layer": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_ClimbTower_PassReward_Layer"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "ClimbTower_PassReward"
+    },
+    "IsCacheEnable": false,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "ClimbTower_PassReward_Layer"
+  },
+  "Specific_GenericList": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Specific_GenericList"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Specific_HeroList_Item"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "",
+    "IsStubborn": false,
+    "Class": "Specific_GenericList"
+  },
+  "Achievement_IconItem": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Achievement_IconItem"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Achievement_Filter_Num"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Achievement_IconItem"
+  },
+  "Weapon_Menu_2": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Weapon_Menu_2"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Weapon_Menu"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": false,
+    "Class": "Weapon_Menu_2"
+  },
+  "Role_Weapon": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Role_Weapon"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": false,
+    "Class": "Role_Weapon"
+  },
+  "Talent_SingleItem": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Talent_SingleItem"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "LobbyLabel.Talent",
+      "2": "Talent_Settlement"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Icon",
+    "IsStubborn": false,
+    "Class": "Talent_SingleItem"
+  },
+  "Role_Skin": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Role_Skin"
+    },
+    "RedDotTypePriorityList": {
+      "1": "Num",
+      "2": "Icon",
+      "3": "Normal",
+      "4": "Text"
+    },
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "",
+    "IsStubborn": false,
+    "Class": "Role_Skin"
+  },
+  "LobbyLabel.Mall.Props_2": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_LobbyLabel.Mall.Props_2"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "LobbyLabel.Mall"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "LobbyLabel.Mall.Props_2"
+  },
+  "GameMode_Level_Num": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_GameMode_Level_Num"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "GameMode_World_Num"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "GameMode_Level_Num"
+  },
+  "Skin_Menu2": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Skin_Menu2"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Role_Skin"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": false,
+    "Class": "Skin_Menu2"
+  },
+  "Learn_Gameplay": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Learn_Gameplay"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Learn_Menu"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": false,
+    "Class": "Learn_Gameplay"
+  },
+  "Friend_Chat_Item": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Friend_Chat_Item"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Friend_Chat"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Num",
+    "IsStubborn": true,
+    "Class": "Friend_Chat_Item"
+  },
+  "Chip_Item": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Chip_Item"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Toggle_UI_Chip"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": false,
+    "Class": "Chip_Item"
+  },
+  "Props": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Props"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "LobbyLabel.Mall.Props"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "Props"
+  },
+  "BattlePass_Reward": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_BattlePass_Reward"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "BattlePass_Menu_Reward"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "BattlePass_Reward"
+  },
+  "All_RoleSkin_Item": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_All_RoleSkin_Item"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "All_RoleSkin"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "All_RoleSkin_Item"
+  },
+  "All_WeaponSkin_Item": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_All_WeaponSkin_Item"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "All_WeaponSkin"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "All_WeaponSkin_Item"
+  },
+  "Weapon_Menu_1": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Weapon_Menu_1"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Weapon_Menu"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Weapon_Menu_1"
+  },
+  "Mail_Menu": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Mail_Menu"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": false,
+    "Class": "Mail_Menu"
+  },
+  "BattlePass_Task": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_BattlePass_Task"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "BattlePass_Task_Group"
+    },
+    "IsCacheEnable": false,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "BattlePass_Task"
+  },
+  "Specific_GenericList_Item": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Specific_GenericList_Item"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Specific_GenericList"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "Specific_GenericList_Item"
+  },
+  "Skin_WeaponSkin": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Skin_WeaponSkin"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Skin_Menu1"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "Skin_WeaponSkin"
+  },
+  "Piece_Clue_Num": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Piece_Clue_Num"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Piece_World_Num"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Piece_Clue_Num"
+  },
+  "Skin_RoleSkin": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Skin_RoleSkin"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Skin_Menu1"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "Skin_RoleSkin"
+  },
+  "Roulette_Paint": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Roulette_Paint"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Skin_Menu3"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "Roulette_Paint"
+  },
+  "Roulette_Voice_Item": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Roulette_Voice_Item"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Roulette_Voice"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "Roulette_Voice_Item"
+  },
+  "Achievement_Menu_1": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Achievement_Menu_1"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Personal_Menu"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Achievement_Menu_1"
+  },
+  "LobbyLabel.Mall.Exterior_1": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_LobbyLabel.Mall.Exterior_1"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "LobbyLabel.Mall"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "LobbyLabel.Mall.Exterior_1"
+  },
+  "Friend_Menu": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Friend_Menu"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": false,
+    "Class": "Friend_Menu"
+  },
+  "Roulette_Voice": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Roulette_Voice"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Skin_Menu3"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "Roulette_Voice"
+  },
+  "All_RoleSkin": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_All_RoleSkin"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "LobbyLabel.Mall.Exterior"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "All_RoleSkin"
+  },
+  "Proficiency_Menu_1": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Proficiency_Menu_1"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Proficiency_Menu_1"
+  },
+  "Learn_Menu": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Learn_Menu"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": false,
+    "Class": "Learn_Menu"
+  },
+  "LobbyLabel.Mall.Exterior": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_LobbyLabel.Mall.Exterior"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "LobbyLabel.Mall"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "LobbyLabel.Mall.Exterior"
+  },
+  "Activity_Menu": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Activity_Menu"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Activity_Menu"
+  },
+  "GameMode_Menu": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_GameMode_Menu"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": false,
+    "Class": "GameMode_Menu"
+  },
+  "Achievement_PhaseAward": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Achievement_PhaseAward"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Achievement_Menu_1"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Achievement_PhaseAward"
+  },
+  "GameMode_World_Num": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_GameMode_World_Num"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "GameMode_Menu"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": false,
+    "Class": "GameMode_World_Num"
+  },
+  "Proficiency_LegendTask": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Proficiency_LegendTask"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Proficiency_Menu_1"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Proficiency_LegendTask"
+  },
+  "LobbyLabel.Mall.Props_1": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_LobbyLabel.Mall.Props_1"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "LobbyLabel.Mall"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "LobbyLabel.Mall.Props_1"
+  },
+  "All_WeaponSkin": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_All_WeaponSkin"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "LobbyLabel.Mall.Exterior"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "All_WeaponSkin"
+  },
+  "ClimbTower_DailyRewards": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_ClimbTower_DailyRewards"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "MainModeSelect_Menu_1003"
+    },
+    "IsCacheEnable": false,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "ClimbTower_DailyRewards"
+  },
+  "Learn_Gameplay_Num": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Learn_Gameplay_Num"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Learn_Gameplay"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "Learn_Gameplay_Num"
+  },
+  "LobbyLabel.Role": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_LobbyLabel.Role"
+    },
+    "RedDotTypePriorityList": {
+      "1": "Num",
+      "2": "Icon",
+      "3": "Normal",
+      "4": "Text"
+    },
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "",
+    "IsStubborn": false,
+    "Class": "LobbyLabel.Role"
+  },
+  "Mail_SingleItem": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Mail_SingleItem"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Mail_Menu"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": false,
+    "Class": "Mail_SingleItem"
+  },
+  "Toggle_UI_Chip": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Toggle_UI_Chip"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Role_Chip"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": false,
+    "Class": "Toggle_UI_Chip"
+  },
+  "Activity_GenericMission_RewardList": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Activity_GenericMission_RewardList"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Activity_TabList"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Activity_GenericMission_RewardList"
+  },
+  "Activity_GenericMission_FinalReward": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Activity_GenericMission_FinalReward"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Activity_TabList"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Activity_GenericMission_FinalReward"
+  },
+  "Activity_GenericMission_DataBase": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Activity_GenericMission_DataBase"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Activity_TabList"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Activity_GenericMission_DataBase"
+  },
+  "Skin_RoleSkin_Item": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Skin_RoleSkin_Item"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Skin_RoleSkin"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "Skin_RoleSkin_Item"
+  },
+  "Activity_SevenDay_Reward": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Activity_SevenDay_Reward"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Activity_TabList"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Activity_SevenDay_Reward"
+  },
+  "Weapon_Menu": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Weapon_Menu"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Role_Weapon"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": false,
+    "Class": "Weapon_Menu"
+  },
+  "LobbyLabel.Mall.Bundle_1": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_LobbyLabel.Mall.Bundle_1"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "LobbyLabel.Mall"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "LobbyLabel.Mall.Bundle_1"
+  },
+  "Recruit_ApplyList": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Recruit_ApplyList"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Num",
+    "IsStubborn": false,
+    "Class": "Recruit_ApplyList"
+  },
+  "Weapon_WeaponItem": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Weapon_WeaponItem"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Weapon_Menu_1"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "Weapon_WeaponItem"
+  },
+  "Activity_TabList": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Activity_TabList"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Activity_Menu"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Activity_TabList"
+  },
+  "BattlePass_Task_Group": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_BattlePass_Task_Group"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "BattlePass_Menu_Task"
+    },
+    "IsCacheEnable": false,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "BattlePass_Task_Group"
+  },
+  "BattlePass_Menu_Reward": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_BattlePass_Menu_Reward"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "BattlePass_Entry"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "BattlePass_Menu_Reward"
+  },
+  "LobbyLabel.Mall.Bundle_2": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_LobbyLabel.Mall.Bundle_2"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "LobbyLabel.Mall"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "LobbyLabel.Mall.Bundle_2"
+  },
+  "BattlePass_Menu_Task": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_BattlePass_Menu_Task"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "BattlePass_Entry"
+    },
+    "IsCacheEnable": false,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "BattlePass_Menu_Task"
+  },
+  "BattlePass_Entry": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_BattlePass_Entry"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "BattlePass_Entry"
+  },
+  "Roulette_Paint_Item": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Roulette_Paint_Item"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Roulette_Paint"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "Roulette_Paint_Item"
+  },
+  "Skin_Menu3": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Skin_Menu3"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Role_Skin"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Skin_Menu3"
+  },
+  "LobbyLabel.Talent": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_LobbyLabel.Talent"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": false,
+    "Class": "LobbyLabel.Talent"
+  },
+  "Achievement_Filter_Num": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Achievement_Filter_Num"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Achievement_Menu_1"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Achievement_Filter_Num"
+  },
+  "Personal_Menu": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Personal_Menu"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "",
+    "IsStubborn": true,
+    "Class": "Personal_Menu"
+  },
+  "Skin_WeaponSkin_WeaponName": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Skin_WeaponSkin_WeaponName"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Skin_WeaponSkin",
+      "2": "Weapon_Menu_2"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "Skin_WeaponSkin_WeaponName"
+  },
+  "Role_Chip": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Role_Chip"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "LobbyLabel.Role"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "",
+    "IsStubborn": false,
+    "Class": "Role_Chip"
+  },
+  "Proficiency_SynopsisItem_Num": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Proficiency_SynopsisItem_Num"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Proficiency_LegendTask"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Proficiency_SynopsisItem_Num"
+  },
+  "Piece_Item_Num": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Piece_Item_Num"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Piece_Clue_Num"
+    },
+    "IsCacheEnable": false,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Piece_Item_Num"
+  },
+  "Piece_World_Num": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Piece_World_Num"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Piece_Database"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Piece_World_Num"
+  },
+  "Event_LoginReward": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Event_LoginReward"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": false,
+    "Class": "Event_LoginReward"
+  },
+  "Piece_LayerStory_Num": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Piece_LayerStory_Num"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Piece_Clue_Num"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": false,
+    "Class": "Piece_LayerStory_Num"
+  },
+  "Event_LoginReward_Item": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Event_LoginReward_Item"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Event_LoginReward"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Event_LoginReward_Item"
+  },
+  "Piece_Database": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Piece_Database"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "LobbyLabel.IllustratedGuideMenu"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "",
+    "IsStubborn": true,
+    "Class": "Piece_Database"
+  },
+  "ClimbTower_PassReward_Item": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_ClimbTower_PassReward_Item"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "ClimbTower_PassReward_Layer"
+    },
+    "IsCacheEnable": false,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "ClimbTower_PassReward_Item"
+  },
+  "Specific_ChooseHero": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Specific_ChooseHero"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Specific_Database"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "",
+    "IsStubborn": false,
+    "Class": "Specific_ChooseHero"
+  },
+  "LobbyLabel.IllustratedGuideMenu": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_LobbyLabel.IllustratedGuideMenu"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "",
+    "IsStubborn": false,
+    "Class": "LobbyLabel.IllustratedGuideMenu"
+  },
+  "Specific_Database": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Specific_Database"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "LobbyLabel.IllustratedGuideMenu"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "",
+    "IsStubborn": false,
+    "Class": "Specific_Database"
+  },
+  "Role_SingleItem": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Role_SingleItem"
+    },
+    "RedDotTypePriorityList": {
+      "1": "Num",
+      "2": "Icon",
+      "3": "Normal",
+      "4": "Text"
+    },
+    "ParentIdList": {
+      "1": "LobbyLabel.Role"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "",
+    "IsStubborn": true,
+    "Class": "Role_SingleItem"
+  },
+  "Skin_WeaponSkin_Item": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Skin_WeaponSkin_Item"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Skin_WeaponSkin_WeaponName"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "Skin_WeaponSkin_Item"
+  },
+  "Login_Announcement": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Login_Announcement"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": false,
+    "RedDotType": "Normal",
+    "IsStubborn": false,
+    "Class": "Login_Announcement"
+  },
+  "Activity_Tab": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Activity_Tab"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Activity_Menu"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Activity_Tab"
+  },
+  "Role_SingleItem_Lock": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Role_SingleItem_Lock"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Role_SingleItem"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Role_SingleItem_Lock"
+  },
+  "Proficiency_LevelBonus_Num": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Proficiency_LevelBonus_Num"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Proficiency_Menu_1"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Proficiency_LevelBonus_Num"
+  },
+  "Friend_Chat": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Friend_Chat"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Friend_Menu"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Num",
+    "IsStubborn": false,
+    "Class": "Friend_Chat"
+  },
+  "LobbyLabel.Mall.Exterior_2": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_LobbyLabel.Mall.Exterior_2"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "LobbyLabel.Mall"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "LobbyLabel.Mall.Exterior_2"
+  },
+  "Talent_Settlement": {
+    "TextLocMeta": {
+      "InTextLiteral": "可提升",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Talent_Settlement"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": false,
+    "Class": "Talent_Settlement"
+  },
+  "ClimbTower_PassReward": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_ClimbTower_PassReward"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "MainModeSelect_Menu_1003"
+    },
+    "IsCacheEnable": false,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "ClimbTower_PassReward"
+  },
+  "Bundle_SingleItem": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Bundle_SingleItem"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "LobbyLabel.Mall.Bundle"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "Bundle_SingleItem"
+  },
+  "LobbyLabel.Mall": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_LobbyLabel.Mall"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Root"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": false,
+    "Class": "LobbyLabel.Mall"
+  },
+  "Skin_Heirloom_LevelItem": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Skin_Heirloom_LevelItem"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Skin_Menu2"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Skin_Heirloom_LevelItem"
+  },
+  "Specific_HeroList_Item": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Specific_HeroList_Item"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Specific_ChooseHero"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "",
+    "IsStubborn": false,
+    "Class": "Specific_HeroList_Item"
+  },
+  "Friend_Request": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Friend_Request"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "Friend_Menu"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": true,
+    "Class": "Friend_Request"
+  },
+  "Root": {
+    "TextLocMeta": {
+      "InTextLiteral": "",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_Root"
+    },
+    "RedDotTypePriorityList": {
+      "1": "Num",
+      "2": "Icon",
+      "3": "Normal",
+      "4": "Text"
+    },
+    "ParentIdList": {},
+    "IsCacheEnable": true,
+    "RedDotType": "Normal",
+    "IsStubborn": false,
+    "Class": "Root"
+  },
+  "LobbyLabel.Mall.Bundle": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_LobbyLabel.Mall.Bundle"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "LobbyLabel.Mall"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "LobbyLabel.Mall.Bundle"
+  },
+  "LobbyLabel.Mall.Props": {
+    "TextLocMeta": {
+      "InTextLiteral": "新",
+      "InNamespace": "reddot_TBRedDot",
+      "InKey": "Text_LobbyLabel.Mall.Props"
+    },
+    "RedDotTypePriorityList": {},
+    "ParentIdList": {
+      "1": "LobbyLabel.Mall"
+    },
+    "IsCacheEnable": true,
+    "RedDotType": "Text",
+    "IsStubborn": true,
+    "Class": "LobbyLabel.Mall.Props"
+  }
+}
