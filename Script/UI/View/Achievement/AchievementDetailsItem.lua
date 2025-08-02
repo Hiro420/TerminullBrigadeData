@@ -1,10 +1,13 @@
 local AchievementDetailsItem = UnLua.Class()
+
 function AchievementDetailsItem:Construct()
   self.ButtonWithSoundLeft.OnClicked:Add(self, self.OnLeftClick)
   self.ButtonWithSoundRight.OnClicked:Add(self, self.OnRightClick)
 end
+
 function AchievementDetailsItem:Destruct()
 end
+
 function AchievementDetailsItem:InitAchievementDetailsItem(AchievementItemDataParam, taskId, ParentView)
   if not AchievementItemDataParam then
     print("AchievementDetailsItem:InitAchievementDetailsItem AchievementItemDataParam Is Nil", taskId)
@@ -46,12 +49,15 @@ function AchievementDetailsItem:InitAchievementDetailsItem(AchievementItemDataPa
   HideOtherItem(self.HorizontalBoxStep, #AchievementItemDataParam.tbTaskList + 1)
   self.RGStateControllerLock:ChangeStatus(tostring(achievementItemLockState))
 end
+
 function AchievementDetailsItem:OnMouseEnter()
   self.RGStateControllerHover:ChangeStatus(tostring(2))
 end
+
 function AchievementDetailsItem:OnMouseLeave()
   self.RGStateControllerHover:ChangeStatus(tostring(1))
 end
+
 function AchievementDetailsItem:OnLeftClick()
   if not self.DisplayAchievementItemData then
     return
@@ -64,6 +70,7 @@ function AchievementDetailsItem:OnLeftClick()
     self.ParentView:SwitchShowModel(self.ParentView.viewModel.AchievementShowModel, self.DisplayAchievementItemData.tbTaskList[self.CurSelectIdx], self.DisplayAchievementItemData.tbTaskGroup.id, true)
   end
 end
+
 function AchievementDetailsItem:OnRightClick()
   if not self.DisplayAchievementItemData then
     return
@@ -76,4 +83,5 @@ function AchievementDetailsItem:OnRightClick()
     self.ParentView:SwitchShowModel(self.ParentView.viewModel.AchievementShowModel, self.DisplayAchievementItemData.tbTaskList[self.CurSelectIdx], self.DisplayAchievementItemData.tbTaskGroup.id, true)
   end
 end
+
 return AchievementDetailsItem

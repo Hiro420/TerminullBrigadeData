@@ -1,12 +1,15 @@
 local WBP_WeaponHandBookAccessoryTips_C = UnLua.Class()
 local WeaponDescItemClsPath = "/Game/Rouge/UI/Lobby/WeaponHandBook/WBP_WeaponHandBookAccessoryDescItem.WBP_WeaponHandBookAccessoryDescItem_C"
 local AccessaryItemPath = "/Game/Rouge/UI/Lobby/WeaponHandBook/WBP_WeaponHandBookParts.WBP_WeaponHandBookParts_C"
+
 function WBP_WeaponHandBookAccessoryTips_C:Construct()
   self.RGToggleGroupAccessory.OnCheckStateChanged:Add(self, WBP_WeaponHandBookAccessoryTips_C.BindOnAccessoryCheckChanged)
 end
+
 function WBP_WeaponHandBookAccessoryTips_C:Destruct()
   self.RGToggleGroupAccessory.OnCheckStateChanged:Remove(self, WBP_WeaponHandBookAccessoryTips_C.BindOnAccessoryCheckChanged)
 end
+
 function WBP_WeaponHandBookAccessoryTips_C:InitInfo(AccessoryId, bIsAdditionalDescTipsLeft)
   self.AccessoryId = AccessoryId
   local AccessaryItemCls = UE.UClass.Load(AccessaryItemPath)
@@ -43,6 +46,7 @@ function WBP_WeaponHandBookAccessoryTips_C:InitInfo(AccessoryId, bIsAdditionalDe
     end
   end
 end
+
 function WBP_WeaponHandBookAccessoryTips_C:BindOnAccessoryCheckChanged(SelectIdex)
   UpdateVisibility(self.VerticalBoxDesc, true)
   local WeaponDescItemCls = UE.UClass.Load(WeaponDescItemClsPath)
@@ -64,6 +68,8 @@ function WBP_WeaponHandBookAccessoryTips_C:BindOnAccessoryCheckChanged(SelectIde
     end
   end
 end
+
 function WBP_WeaponHandBookAccessoryTips_C:Select(WeaponBarrelIdParam)
 end
+
 return WBP_WeaponHandBookAccessoryTips_C

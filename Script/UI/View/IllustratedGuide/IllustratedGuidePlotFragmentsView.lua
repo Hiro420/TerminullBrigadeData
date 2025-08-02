@@ -6,6 +6,7 @@ local OrderedMap = require("Framework.DataStruct.OrderedMap")
 local IllustratedGuideData = require("Modules.IllustratedGuide.IllustratedGuideData")
 local IllustratedGuideHandler = require("Protocol.IllustratedGuide.IllustratedGuideHandler")
 local IllustratedGuidePlotFragmentsView = Class(ViewBase)
+
 function IllustratedGuidePlotFragmentsView:OnBindUIInput()
   if not IsListeningForInputAction(self, "PauseGame") then
     ListenForInputAction("PauseGame", UE.EInputEvent.IE_Pressed, true, {
@@ -17,6 +18,7 @@ function IllustratedGuidePlotFragmentsView:OnBindUIInput()
   self.WBP_InteractTipWidgetNext:BindInteractAndClickEvent(self, self.NextChangeWorld)
   self.WBP_InteractTipWidgetEsc.Btn_Main.OnClicked:Add(self, self.BindCloseSelf)
 end
+
 function IllustratedGuidePlotFragmentsView:OnUnBindUIInput()
   if IsListeningForInputAction(self, "PauseGame") then
     StopListeningForInputAction(self, "PauseGame", UE.EInputEvent.IE_Pressed)
@@ -25,19 +27,24 @@ function IllustratedGuidePlotFragmentsView:OnUnBindUIInput()
   self.WBP_InteractTipWidgetNext:UnBindInteractAndClickEvent(self, self.NextChangeWorld)
   self.WBP_InteractTipWidgetEsc.Btn_Main.OnClicked:Remove(self, self.BindCloseSelf)
 end
+
 function IllustratedGuidePlotFragmentsView:BindClickHandler()
   self.Btn_ChangeWorld.OnClicked:Add(self, self.BindOnShowChangeWorld)
 end
+
 function IllustratedGuidePlotFragmentsView:UnBindClickHandler()
   self.Btn_ChangeWorld.OnClicked:Remove(self, self.BindOnShowChangeWorld)
 end
+
 function IllustratedGuidePlotFragmentsView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function IllustratedGuidePlotFragmentsView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function IllustratedGuidePlotFragmentsView:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -48,6 +55,7 @@ function IllustratedGuidePlotFragmentsView:OnShow(...)
   self:BindOnPlotFragmentsWorldChange(IllustratedGuideData.CurrentWorldId, true)
   self:PlayAnimationForward(self.Ani_in)
 end
+
 function IllustratedGuidePlotFragmentsView:BindCloseSelf()
   print("IllustratedGuidePlotFragmentsView:BindCloseSelf")
   if self:IsAnyAnimationPlaying() then
@@ -60,6 +68,7 @@ function IllustratedGuidePlotFragmentsView:BindCloseSelf()
     self:PlayAnimationForward(self.Ani_out)
   end
 end
+
 function IllustratedGuidePlotFragmentsView:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -68,10 +77,12 @@ function IllustratedGuidePlotFragmentsView:OnHide()
   EventSystem.RemoveListener(EventDef.IllustratedGuide.OnPlotFragmentsItemChanged, self.BindOnPlotFragmentsItemChanged, self)
   UpdateVisibility(self.WBP_IGuide_PlotFragmentsChangeWorldTips, false)
 end
+
 function IllustratedGuidePlotFragmentsView:BindOnShowChangeWorld()
   self.WBP_IGuide_PlotFragmentsChangeWorldTips:InitPlotFragmentsChangeWorldTip(self)
   UpdateVisibility(self.WBP_IGuide_PlotFragmentsChangeWorldTips, true)
 end
+
 function IllustratedGuidePlotFragmentsView:BindOnPlotFragmentsWorldChange(WorldId, bResetPageIndex)
   IllustratedGuideData.CurrentWorldId = WorldId
   IllustratedGuideData.CurrentClueId = -1
@@ -102,6 +113,7 @@ function IllustratedGuidePlotFragmentsView:BindOnPlotFragmentsWorldChange(WorldI
     self.Level = nil
   end
 end
+
 function IllustratedGuidePlotFragmentsView:BindOnPlotFragmentsItemChanged(ClueId, FragmentId)
   if IllustratedGuideData.CurrentClueId == ClueId and IllustratedGuideData.CurrentFragmentId == FragmentId then
     return
@@ -128,6 +140,7 @@ function IllustratedGuidePlotFragmentsView:BindOnPlotFragmentsItemChanged(ClueId
     end
   end
 end
+
 function IllustratedGuidePlotFragmentsView:PreChangeWorld()
   if self:IsAnyAnimationPlaying() then
     return
@@ -147,6 +160,7 @@ function IllustratedGuidePlotFragmentsView:PreChangeWorld()
   end
   EventSystem.Invoke(EventDef.IllustratedGuide.OnPlotFragmentsWorldChange, WorldIdList[index])
 end
+
 function IllustratedGuidePlotFragmentsView:NextChangeWorld()
   if self:IsAnyAnimationPlaying() then
     return
@@ -166,9 +180,11 @@ function IllustratedGuidePlotFragmentsView:NextChangeWorld()
   end
   EventSystem.Invoke(EventDef.IllustratedGuide.OnPlotFragmentsWorldChange, WorldIdList[index])
 end
+
 function IllustratedGuidePlotFragmentsView:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     UIMgr:Hide(ViewID.UI_IllustratedGuidePlotFragments, true)
   end
 end
+
 return IllustratedGuidePlotFragmentsView

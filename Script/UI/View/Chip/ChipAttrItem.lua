@@ -1,8 +1,11 @@
 local ChipAttrItem = UnLua.Class()
+
 function ChipAttrItem:Construct()
 end
+
 function ChipAttrItem:Destruct()
 end
+
 function ChipAttrItem:InitChipAttrItem(Desc, Value, ChangeState, AttrID, ChangeAniState)
   UpdateVisibility(self, true)
   self.RGTextDesc:SetText(Desc)
@@ -24,7 +27,9 @@ function ChipAttrItem:InitChipAttrItem(Desc, Value, ChangeState, AttrID, ChangeA
     self:PlayAnimation(self.Ani_add_number)
   end
 end
+
 function ChipAttrItem:Hide()
   UpdateVisibility(self, false)
 end
+
 return ChipAttrItem

@@ -1,6 +1,7 @@
 local WBP_PuzzleItem = UnLua.Class()
 local PuzzleData = require("Modules.Puzzle.PuzzleData")
 local PuzzleInfoConfig = require("GameConfig.Puzzle.PuzzleInfoConfig")
+
 function WBP_PuzzleItem:Show(InPuzzleId)
   self.DataObj = {PuzzleId = InPuzzleId}
   self.ResourceId = PuzzleData:GetPuzzleResourceIdByUid(self.DataObj.PuzzleId)
@@ -13,6 +14,7 @@ function WBP_PuzzleItem:Show(InPuzzleId)
   self:UpdatePuzzleDetailInfo()
   UpdateVisibility(self.CanvasPanel_Select, false)
 end
+
 function WBP_PuzzleItem:OnListItemObjectSet(DataObj)
   self.DataObj = DataObj
   self.ResourceId = PuzzleData:GetPuzzleResourceIdByUid(self.DataObj.PuzzleId)
@@ -29,6 +31,7 @@ function WBP_PuzzleItem:OnListItemObjectSet(DataObj)
   EventSystem.AddListenerNew(EventDef.Puzzle.OnPuzzleItemSelected, self, self.BindOnPuzzleItemSelected)
   EventSystem.AddListenerNew(EventDef.Puzzle.OnUpdatePuzzleDetailInfo, self, self.BindOnUpdatePuzzleDetailInfo)
 end
+
 function WBP_PuzzleItem:PlayInAnimation(Index)
   local DelayTime = Index * self.InAnimInterval
   if DelayTime <= 0 then
@@ -44,6 +47,7 @@ function WBP_PuzzleItem:PlayInAnimation(Index)
     }, DelayTime, false)
   end
 end
+
 function WBP_PuzzleItem:PlayDecomposeInAnimtion(Index)
   local Column = math.floor(Index / self.DecomposeColumnNum)
   local Row = Index % self.DecomposeColumnNum
@@ -61,6 +65,7 @@ function WBP_PuzzleItem:PlayDecomposeInAnimtion(Index)
     }, DelayTime, false)
   end
 end
+
 function WBP_PuzzleItem:InitDisplayInfo()
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, self.ResourceId)
   if not Result then
@@ -89,6 +94,7 @@ function WBP_PuzzleItem:InitDisplayInfo()
     end
   end
 end
+
 function WBP_PuzzleItem:UpdatePuzzlePackageInfo()
   local PackageInfo = PuzzleData:GetPuzzlePackageInfo(self.DataObj.PuzzleId)
   UpdateVisibility(self.CanvasPanel_Lock, PackageInfo.state == EPuzzleStatus.Lock)
@@ -105,6 +111,7 @@ function WBP_PuzzleItem:UpdatePuzzlePackageInfo()
     SetImageBrushByPath(self.Img_Icon, ShapeRowInfo.Icon, self.IconSize)
   end
 end
+
 function WBP_PuzzleItem:UpdatePuzzleDetailInfo(...)
   local IsShowGoldenQuality = false
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, self.ResourceId)
@@ -139,18 +146,21 @@ function WBP_PuzzleItem:UpdatePuzzleDetailInfo(...)
     HideOtherItem(self.Horizontal_GemIcon, Index)
   end
 end
+
 function WBP_PuzzleItem:BindOnUpdatePuzzlePackageInfo(PuzzleIdList)
   if PuzzleIdList and not table.Contain(PuzzleIdList, self.DataObj.PuzzleId) then
     return
   end
   self:UpdatePuzzlePackageInfo()
 end
+
 function WBP_PuzzleItem:BindOnUpdatePuzzleDetailInfo(PuzzleIdList)
   if PuzzleIdList and not table.Contain(PuzzleIdList, self.DataObj.PuzzleId) then
     return
   end
   self:UpdatePuzzleDetailInfo()
 end
+
 function WBP_PuzzleItem:BindOnPuzzleItemSelected(PuzzleId)
   local ViewModel = self.DataObj.ViewModel
   if not ViewModel then
@@ -162,6 +172,7 @@ function WBP_PuzzleItem:BindOnPuzzleItemSelected(PuzzleId)
     UpdateVisibility(self.CanvasPanel_Select, ViewModel:GetCurSelectPuzzleId() == self.DataObj.PuzzleId)
   end
 end
+
 function WBP_PuzzleItem:BindOnUpdatePuzzleListStyle()
   local PuzzleViewModel = self.DataObj.ViewModel
   local IsShowDetail = PuzzleViewModel and PuzzleViewModel.GetIsShowPuzzleDetailList and PuzzleViewModel:GetIsShowPuzzleDetailList() or false
@@ -197,6 +208,7 @@ function WBP_PuzzleItem:BindOnUpdatePuzzleListStyle()
     end
   end
 end
+
 function WBP_PuzzleItem:OnDragDetected(MyGeometry, PointerEvent)
   if not self.CanDrag then
     return nil
@@ -213,10 +225,12 @@ function WBP_PuzzleItem:OnDragDetected(MyGeometry, PointerEvent)
   EventSystem.Invoke(EventDef.Puzzle.OnPuzzleDrag, self.DataObj.PuzzleId)
   return DragOperation
 end
+
 function WBP_PuzzleItem:OnDragCancelled(MyGeometry, PointerEvent)
   print("DragCancelled")
   EventSystem.Invoke(EventDef.Puzzle.OnPuzzleboardDragCancelled, self.DataObj.PuzzleId)
 end
+
 function WBP_PuzzleItem:OnMouseEnter()
   if self.CanShowToolTipWidget then
     return
@@ -229,6 +243,7 @@ function WBP_PuzzleItem:OnMouseEnter()
   local PixelPos, ViewportPos = UE.USlateBlueprintLibrary.LocalToViewport(self, MyGeometry, LocalPosition, nil, nil)
   EventSystem.Invoke(EventDef.Puzzle.OnUpdatePuzzleItemHoverStatus, true, self.DataObj.PuzzleId, false, ViewportPos, self)
 end
+
 function WBP_PuzzleItem:OnMouseLeave()
   if self.CanShowToolTipWidget then
     return
@@ -237,6 +252,7 @@ function WBP_PuzzleItem:OnMouseLeave()
   self:PlayAnimation(self.Ani_hover_out)
   EventSystem.Invoke(EventDef.Puzzle.OnUpdatePuzzleItemHoverStatus, false)
 end
+
 function WBP_PuzzleItem:GetToolTipWidget(...)
   if not self.CanShowToolTipWidget then
     return
@@ -246,6 +262,7 @@ function WBP_PuzzleItem:GetToolTipWidget(...)
   Widget:HideOperateTip()
   return Widget
 end
+
 function WBP_PuzzleItem:OnLeftMouseButtonDown(...)
   local PuzzleViewModel = self.DataObj.ViewModel
   if PuzzleViewModel then
@@ -261,6 +278,7 @@ function WBP_PuzzleItem:OnLeftMouseButtonDown(...)
   PlaySound2DByName(self.SelectSoundName, "WBP_PuzzleItem:OnLeftMouseButtonDown")
   EventSystem.Invoke(EventDef.Puzzle.OnPuzzleItemSelected, self.DataObj.PuzzleId)
 end
+
 function WBP_PuzzleItem:OnRightMouseButtonDown(...)
   if not self.CanDrag then
     return UE.UWidgetBlueprintLibrary.Unhandled()
@@ -270,6 +288,7 @@ function WBP_PuzzleItem:OnRightMouseButtonDown(...)
     PuzzleView:OnRightMouseButtonDown()
   end
 end
+
 function WBP_PuzzleItem:OnMouseButtonUp(MyGeometry, MouseEvent)
   if not self.CanDrag then
     return UE.UWidgetBlueprintLibrary.Unhandled()
@@ -280,6 +299,7 @@ function WBP_PuzzleItem:OnMouseButtonUp(MyGeometry, MouseEvent)
     PuzzleView:SetFocus()
   end
 end
+
 function WBP_PuzzleItem:BP_OnEntryReleased()
   self.DataObj = nil
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.InAnimTimer) then
@@ -290,7 +310,9 @@ function WBP_PuzzleItem:BP_OnEntryReleased()
   EventSystem.RemoveListenerNew(EventDef.Puzzle.OnPuzzleItemSelected, self, self.BindOnPuzzleItemSelected)
   EventSystem.RemoveListenerNew(EventDef.Puzzle.OnUpdatePuzzleDetailInfo, self, self.BindOnUpdatePuzzleDetailInfo)
 end
+
 function WBP_PuzzleItem:Destruct(...)
   self:BP_OnEntryReleased()
 end
+
 return WBP_PuzzleItem

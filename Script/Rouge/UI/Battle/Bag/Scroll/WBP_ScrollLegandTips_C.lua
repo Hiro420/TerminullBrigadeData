@@ -1,4 +1,5 @@
 local WBP_ScrollLegandTips_C = UnLua.Class()
+
 function WBP_ScrollLegandTips_C:InitScrollLegandItem(AttributeModifyId, Duration)
   local ResultModify, ModifyRow = GetRowData(DT.DT_AttributeModify, AttributeModifyId)
   if ResultModify then
@@ -27,13 +28,16 @@ function WBP_ScrollLegandTips_C:InitScrollLegandItem(AttributeModifyId, Duration
     }, StartTime, false)
   end
 end
+
 function WBP_ScrollLegandTips_C:FadeOut()
   self:StopAnimation(self.Ani_in)
   self:PlayAnimation(self.Ani_out)
 end
+
 function WBP_ScrollLegandTips_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_ScrollLegandTips_C:Destruct()
   self.Overridden.Destruct(self)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.Timer) then
@@ -41,4 +45,5 @@ function WBP_ScrollLegandTips_C:Destruct()
     self.Timer = nil
   end
 end
+
 return WBP_ScrollLegandTips_C

@@ -1,4 +1,5 @@
 local WBP_GenericModifyItem_C = UnLua.Class()
+
 function WBP_GenericModifyItem_C:InitGenericModifyItem(ModifyId, bIsShowName)
   UpdateVisibility(self, true)
   UpdateVisibility(self.RGTextName, bIsShowName)
@@ -24,6 +25,7 @@ function WBP_GenericModifyItem_C:InitGenericModifyItem(ModifyId, bIsShowName)
     end
   end
 end
+
 function WBP_GenericModifyItem_C:InitSpecificModifyItem(Inscription, bIsShowName, bIsFromIGuideSpecificModify)
   UpdateVisibility(self, true)
   UpdateVisibility(self.RGTextName, bIsShowName)
@@ -48,6 +50,7 @@ function WBP_GenericModifyItem_C:InitSpecificModifyItem(Inscription, bIsShowName
     self.ImageRarityShadow:SetRenderOpacity(ItemRarityData.GenericModifyRareBgColor.A)
   end
 end
+
 function WBP_GenericModifyItem_C:InitGenericModifyItemByMod(ModId, bIsShowName)
   UpdateVisibility(self, true)
   UpdateVisibility(self.RGTextName, bIsShowName)
@@ -72,7 +75,9 @@ function WBP_GenericModifyItem_C:InitGenericModifyItemByMod(ModId, bIsShowName)
     self.ImageRarityShadow:SetRenderOpacity(ItemRarityData.GenericModifyRareBgColor.A)
   end
 end
+
 function WBP_GenericModifyItem_C:Hide()
   UpdateVisibility(self, false)
 end
+
 return WBP_GenericModifyItem_C

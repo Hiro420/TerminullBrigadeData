@@ -1,4 +1,5 @@
 local WBP_GRFetterTypeBox_C = UnLua.Class()
+
 function WBP_GRFetterTypeBox_C:UpdateSkillTag(SkillTagList)
   local TagItemList = self.SkillTagList:GetAllChildren()
   for i, SingleTagItem in iterator(TagItemList) do
@@ -24,4 +25,5 @@ function WBP_GRFetterTypeBox_C:UpdateSkillTag(SkillTagList)
     end
   end
 end
+
 return WBP_GRFetterTypeBox_C

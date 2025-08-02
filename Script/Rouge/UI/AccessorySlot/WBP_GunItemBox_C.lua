@@ -1,7 +1,9 @@
 local WBP_GunItemBox_C = UnLua.Class()
+
 function WBP_GunItemBox_C:Construct()
   self.wbp_GunItemClass = UE.UClass.Load("/Game/Rouge/UI/AccessorySlot/WBP_GunItem.WBP_GunItem_C")
 end
+
 function WBP_GunItemBox_C:UpdateGunItemBox(GunInfoTable)
   local number = #GunInfoTable
   local padding = UE.FMargin()
@@ -18,4 +20,5 @@ function WBP_GunItemBox_C:UpdateGunItemBox(GunInfoTable)
     end
   end
 end
+
 return WBP_GunItemBox_C

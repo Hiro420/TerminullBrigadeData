@@ -1,8 +1,11 @@
 local AchievementBadgeTip = UnLua.Class()
+
 function AchievementBadgeTip:Construct()
 end
+
 function AchievementBadgeTip:Destruct()
 end
+
 function AchievementBadgeTip:InitAchievementBadgeTip(tbGenralData)
   if not tbGenralData then
     return
@@ -19,13 +22,16 @@ function AchievementBadgeTip:InitAchievementBadgeTip(tbGenralData)
   end
   self:PlayAnimation(self.Ani_in)
 end
+
 function AchievementBadgeTip:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     UpdateVisibility(self, false)
   end
 end
+
 function AchievementBadgeTip:Hide()
   SetHitTestInvisible(self)
   self:PlayAnimation(self.Ani_out)
 end
+
 return AchievementBadgeTip

@@ -1,4 +1,5 @@
 local WBP_LoadingPanelItem = UnLua.Class()
+
 function WBP_LoadingPanelItem:Show(Status, IconObj)
   UpdateVisibility(self.CanvasPanel_NoPass, 1 == Status)
   UpdateVisibility(self.CanvasPanel_Current, 2 == Status)
@@ -11,4 +12,5 @@ function WBP_LoadingPanelItem:Show(Status, IconObj)
     SetImageBrushBySoftObject(self.Img_Icon, IconObj)
   end
 end
+
 return WBP_LoadingPanelItem

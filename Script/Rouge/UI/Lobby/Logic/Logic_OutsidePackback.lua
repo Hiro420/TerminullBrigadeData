@@ -10,9 +10,11 @@ local MonthCradHandler = require("Protocol.MonthCard.MonthCardHandler")
 local PrivilegeHandler = require("Protocol.Privilege.PrivilegeHandler")
 local PlayerInfoHandler = require("Protocol.PlayerInfo.PlayerInfoHandler")
 local ProficiencyData = require("Modules.Proficiency.ProficiencyData")
+
 function LogicOutsidePackback.Init()
   EventSystem.AddListener(nil, EventDef.WSMessage.ResourceUpdate, LogicOutsidePackback.BindOnResourceUpdate)
 end
+
 function LogicOutsidePackback.BindOnResourceUpdate(JsonStr)
   local JsonTable = rapidjson.decode(JsonStr)
   if JsonTable.wallet then
@@ -133,10 +135,12 @@ function LogicOutsidePackback.BindOnResourceUpdate(JsonStr)
   end
   EventSystem.Invoke(EventDef.Lobby.UpdateResourceInfo)
 end
+
 function LogicOutsidePackback.GetHeroIdBySkinId(Id)
   local IdStr = tostring(Id)
   return tonumber(string.sub(IdStr, 1, 4))
 end
+
 function LogicOutsidePackback.GetResourceInfoById(Id)
   local ResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   if ResourceTable then
@@ -144,6 +148,7 @@ function LogicOutsidePackback.GetResourceInfoById(Id)
   end
   return nil
 end
+
 function LogicOutsidePackback.GetResourceNumById(ResourceId)
   local CurrencyInfo = LogicOutsidePackback.GetResourceInfoById(ResourceId)
   if not CurrencyInfo then
@@ -156,6 +161,7 @@ function LogicOutsidePackback.GetResourceNumById(ResourceId)
     return DataMgr.GetPackbackNumById(ResourceId)
   end
 end
+
 function LogicOutsidePackback.Clear()
   EventSystem.RemoveListener(EventDef.WSMessage.ResourceUpdate, LogicOutsidePackback.BindOnResourceUpdate)
 end

@@ -4,17 +4,22 @@ local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local WBP_RuleTaskCreditExchangePanel = Class(ViewBase)
 local RuleTaskData = require("Modules.RuleTask.RuleTaskData")
+
 function WBP_RuleTaskCreditExchangePanel:BindClickHandler()
 end
+
 function WBP_RuleTaskCreditExchangePanel:UnBindClickHandler()
 end
+
 function WBP_RuleTaskCreditExchangePanel:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function WBP_RuleTaskCreditExchangePanel:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_RuleTaskCreditExchangePanel:OnShow(TaskGroupId, IsShowByDetail)
   if IsShowByDetail then
     return
@@ -25,6 +30,7 @@ function WBP_RuleTaskCreditExchangePanel:OnShow(TaskGroupId, IsShowByDetail)
   self:PlayAnimation(self.Ani_in)
   EventSystem.AddListenerNew(EventDef.MainTask.OnMainTaskRefres, self, self.BindOnMainTaskRefresh)
 end
+
 function WBP_RuleTaskCreditExchangePanel:RefreshItemList(...)
   local Result, TaskGroupRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBTaskGroupData, self.TaskGroupId)
   if not Result then
@@ -56,6 +62,7 @@ function WBP_RuleTaskCreditExchangePanel:RefreshItemList(...)
   end
   HideOtherItem(self.CanvasPanel_ItemList, Index)
 end
+
 function WBP_RuleTaskCreditExchangePanel:RefreshProgressInfo()
   local Result, TaskGroupRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBTaskGroupData, self.TaskGroupId)
   if not Result then
@@ -72,6 +79,7 @@ function WBP_RuleTaskCreditExchangePanel:RefreshProgressInfo()
   self.Txt_CurPoint:SetText(TargetPointNum)
   self.ProgressBar_Point:SetPercent(TargetPointNum / self.MaxPointNum)
 end
+
 function WBP_RuleTaskCreditExchangePanel:BindOnMainTaskRefresh(TaskGroupIdList)
   if not table.Contain(TaskGroupIdList, self.TaskGroupId) then
     return
@@ -82,10 +90,13 @@ function WBP_RuleTaskCreditExchangePanel:BindOnMainTaskRefresh(TaskGroupIdList)
     SingleItem:RefreshStatus()
   end
 end
+
 function WBP_RuleTaskCreditExchangePanel:OnHide()
   EventSystem.RemoveListenerNew(EventDef.MainTask.OnMainTaskRefres, self, self.BindOnMainTaskRefresh)
 end
+
 function WBP_RuleTaskCreditExchangePanel:Destruct(...)
   self:OnHide()
 end
+
 return WBP_RuleTaskCreditExchangePanel

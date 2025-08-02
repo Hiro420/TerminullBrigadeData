@@ -1,4 +1,5 @@
 local WBP_SingleAccumulativeTalentItem_C = UnLua.Class()
+
 function WBP_SingleAccumulativeTalentItem_C:InitInfo(Step, TalentId, Type, PreStepTalentId, NextStepTalentId)
   self.Step = Step
   self.TalentId = TalentId
@@ -14,13 +15,16 @@ function WBP_SingleAccumulativeTalentItem_C:InitInfo(Step, TalentId, Type, PreSt
   end
   EventSystem.AddListener(self, EventDef.Lobby.UpdateCommonTalentInfo, self.BindOnUpdateCommonTalentsInfo)
 end
+
 function WBP_SingleAccumulativeTalentItem_C:BindOnUpdateCommonTalentsInfo()
   self:RefreshCostTip()
 end
+
 function WBP_SingleAccumulativeTalentItem_C:RefreshStatus()
   self.WBP_SingleTalentItem:RefreshStatus()
   self:RefreshCostTip()
 end
+
 function WBP_SingleAccumulativeTalentItem_C:RefreshCostTip()
   local PreLevel = 1
   if self.PreStepTalentId ~= nil then
@@ -44,6 +48,7 @@ function WBP_SingleAccumulativeTalentItem_C:RefreshCostTip()
     self.CostTipPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_SingleAccumulativeTalentItem_C:RefreshProgress()
   if self.NextStepTalentId == nil then
     self.ProgressSizeBox:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -67,10 +72,13 @@ function WBP_SingleAccumulativeTalentItem_C:RefreshProgress()
   local CurCostNum = DataMgr.GetCommonTalentsAccumulativeCostById(CurStepCostInfo.key)
   self.Progress_AccumulativeNum:SetPercent(math.clamp((CurCostNum - CurStepCostInfo.value) / (NextStepCostInfo.value - CurStepCostInfo.value), 0, 1))
 end
+
 function WBP_SingleAccumulativeTalentItem_C:Hide()
   EventSystem.RemoveListener(EventDef.Lobby.UpdateCommonTalentInfo, self.BindOnUpdateCommonTalentsInfo, self)
 end
+
 function WBP_SingleAccumulativeTalentItem_C:Destruct()
   self:Hide()
 end
+
 return WBP_SingleAccumulativeTalentItem_C

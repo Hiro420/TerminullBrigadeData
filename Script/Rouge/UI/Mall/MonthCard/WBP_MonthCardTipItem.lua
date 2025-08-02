@@ -1,6 +1,7 @@
 local WBP_MonthCardTipItem = UnLua.Class()
 local MonthCardData = require("Modules.MonthCard.MonthCardData")
 local PrivilegeData = require("Modules.Privilege.PrivilegeData")
+
 function WBP_MonthCardTipItem:Show(MonthCardId, RemainTime, IsPrivilegeItem)
   UpdateVisibility(self, true)
   local ResourceId = MonthCardData:GetMonthCardResourceId(tonumber(MonthCardId))
@@ -30,7 +31,9 @@ function WBP_MonthCardTipItem:Show(MonthCardId, RemainTime, IsPrivilegeItem)
   end
   self.Txt_RemainTime:SetText(RemainTimeStr)
 end
+
 function WBP_MonthCardTipItem:Hide(...)
   UpdateVisibility(self, false)
 end
+
 return WBP_MonthCardTipItem

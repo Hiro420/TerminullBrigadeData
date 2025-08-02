@@ -1,9 +1,11 @@
 local WBP_PuzzleSortRuleComboBox = UnLua.Class()
+
 function WBP_PuzzleSortRuleComboBox:Construct()
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
   self.MainToggleGroup.OnCheckStateChanged:Add(self, self.BindOnCheckStateChanged)
   UpdateVisibility(self, false)
 end
+
 function WBP_PuzzleSortRuleComboBox:Show(ParentView, IsGem)
   UpdateVisibility(self, true)
   UpdateVisibility(self.Overlay_Expand, false, true, true)
@@ -37,12 +39,15 @@ function WBP_PuzzleSortRuleComboBox:Show(ParentView, IsGem)
   end
   self.MainToggleGroup:SelectId(DefaultIndex)
 end
+
 function WBP_PuzzleSortRuleComboBox:BindOnMainButtonClicked(...)
   UpdateVisibility(self.Overlay_Expand, not self.Overlay_Expand:IsVisible())
 end
+
 function WBP_PuzzleSortRuleComboBox:HideExpandList(...)
   UpdateVisibility(self.Overlay_Expand, false)
 end
+
 function WBP_PuzzleSortRuleComboBox:BindOnCheckStateChanged(Id)
   if not self.ParentView then
     return
@@ -51,4 +56,5 @@ function WBP_PuzzleSortRuleComboBox:BindOnCheckStateChanged(Id)
   self.ParentView:BindOnSortRuleSelectionChanged(Id, self.IsGem)
   UpdateVisibility(self.Overlay_Expand, false)
 end
+
 return WBP_PuzzleSortRuleComboBox

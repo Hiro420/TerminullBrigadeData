@@ -1,7 +1,6 @@
 ﻿{
   "7": {
-    "SeasonAbilityID": 7,
-    "HeroID": 1080,
+    "SeasonIDX": 1,
     "TalentGroupIDS": {
       "1": 6111,
       "2": 6112,
@@ -40,13 +39,13 @@
       "35": 6353,
       "36": 6323
     },
-    "note": "科蒂亚",
-    "SeasonIDX": 1,
-    "RoleBG": ""
+    "HeroID": 1080,
+    "SeasonAbilityID": 7,
+    "RoleBG": "",
+    "note": "科蒂亚"
   },
   "1": {
-    "SeasonAbilityID": 1,
-    "HeroID": 1000,
+    "SeasonIDX": 1,
     "TalentGroupIDS": {
       "1": 5111,
       "2": 5112,
@@ -85,13 +84,13 @@
       "35": 5353,
       "36": 5323
     },
-    "note": "曙光",
-    "SeasonIDX": 1,
-    "RoleBG": ""
+    "HeroID": 1000,
+    "SeasonAbilityID": 1,
+    "RoleBG": "",
+    "note": "曙光"
   },
   "2": {
-    "SeasonAbilityID": 2,
-    "HeroID": 1010,
+    "SeasonIDX": 1,
     "TalentGroupIDS": {
       "1": 1111,
       "2": 1112,
@@ -130,13 +129,13 @@
       "35": 1353,
       "36": 1323
     },
-    "note": "影刃",
-    "SeasonIDX": 1,
-    "RoleBG": ""
+    "HeroID": 1010,
+    "SeasonAbilityID": 2,
+    "RoleBG": "",
+    "note": "影刃"
   },
   "3": {
-    "SeasonAbilityID": 3,
-    "HeroID": 1020,
+    "SeasonIDX": 1,
     "TalentGroupIDS": {
       "1": 4111,
       "2": 4112,
@@ -175,13 +174,13 @@
       "35": 4353,
       "36": 4323
     },
-    "note": "上校",
-    "SeasonIDX": 1,
-    "RoleBG": ""
+    "HeroID": 1020,
+    "SeasonAbilityID": 3,
+    "RoleBG": "",
+    "note": "上校"
   },
   "4": {
-    "SeasonAbilityID": 4,
-    "HeroID": 1030,
+    "SeasonIDX": 1,
     "TalentGroupIDS": {
       "1": 3111,
       "2": 3112,
@@ -220,13 +219,13 @@
       "35": 3353,
       "36": 3323
     },
-    "note": "麦克斯",
-    "SeasonIDX": 1,
-    "RoleBG": ""
+    "HeroID": 1030,
+    "SeasonAbilityID": 4,
+    "RoleBG": "",
+    "note": "麦克斯"
   },
   "5": {
-    "SeasonAbilityID": 5,
-    "HeroID": 1040,
+    "SeasonIDX": 1,
     "TalentGroupIDS": {
       "1": 8111,
       "2": 8112,
@@ -265,13 +264,13 @@
       "35": 8353,
       "36": 8323
     },
-    "note": "妮娜",
-    "SeasonIDX": 1,
-    "RoleBG": ""
+    "HeroID": 1040,
+    "SeasonAbilityID": 5,
+    "RoleBG": "",
+    "note": "妮娜"
   },
   "6": {
-    "SeasonAbilityID": 6,
-    "HeroID": 1060,
+    "SeasonIDX": 1,
     "TalentGroupIDS": {
       "1": 7111,
       "2": 7112,
@@ -310,13 +309,13 @@
       "35": 7353,
       "36": 7323
     },
-    "note": "海因克斯",
-    "SeasonIDX": 1,
-    "RoleBG": ""
+    "HeroID": 1060,
+    "SeasonAbilityID": 6,
+    "RoleBG": "",
+    "note": "海因克斯"
   },
   "8": {
-    "SeasonAbilityID": 8,
-    "HeroID": 1090,
+    "SeasonIDX": 1,
     "TalentGroupIDS": {
       "1": 2111,
       "2": 2112,
@@ -355,8 +354,9 @@
       "35": 2353,
       "36": 2323
     },
-    "note": "尤莉",
-    "SeasonIDX": 1,
-    "RoleBG": ""
+    "HeroID": 1090,
+    "SeasonAbilityID": 8,
+    "RoleBG": "",
+    "note": "尤莉"
   }
 }

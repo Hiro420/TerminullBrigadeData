@@ -1,10 +1,12 @@
 local OrderedMap = require("Framework.DataStruct.OrderedMap")
 local ViewSetChangeHeroTip = UnLua.Class()
 local tbHeroMonster = LuaTableMgr.GetLuaTableByName(TableNames.TBHeroMonster)
+
 function ViewSetChangeHeroTip:OnShow(ParentView, HeroToIdxOrderMap, RedDotClass, bIsHideLockHero)
   self.IsNeedHideByUIMgr = true
   self:InitViewSetChangeHeroTip(ParentView, HeroToIdxOrderMap, RedDotClass, bIsHideLockHero)
 end
+
 function ViewSetChangeHeroTip:InitViewSetChangeHeroTip(ParentView, HeroToIdxOrderMap, RedDotClass, bIsHideLockHero)
   self.ParentView = ParentView
   self.BP_ButtonWithSoundClose.OnClicked:Add(self, self.Hide)
@@ -53,12 +55,14 @@ function ViewSetChangeHeroTip:InitViewSetChangeHeroTip(ParentView, HeroToIdxOrde
   HideOtherItem(self.WrapBoxHeroList, idx)
   self:PlayAnimation(self.Ani_in)
 end
+
 function ViewSetChangeHeroTip:OnFirstGroupCheckStateChanged(selectId)
   if UE.RGUtil.IsUObjectValid(self.ParentView) and self.ParentView.SelectHeroId then
     self.ParentView:SelectHeroId(selectId)
     self:Hide()
   end
 end
+
 function ViewSetChangeHeroTip:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     UpdateVisibility(self, false)
@@ -69,6 +73,7 @@ function ViewSetChangeHeroTip:OnAnimationFinished(Animation)
     end
   end
 end
+
 function ViewSetChangeHeroTip:Hide(bNotFadeOut)
   if bNotFadeOut then
     UpdateVisibility(self, false)
@@ -81,7 +86,9 @@ function ViewSetChangeHeroTip:Hide(bNotFadeOut)
   self.BP_ButtonWithSoundMask.OnClicked:Remove(self, self.Hide)
   self.RGToggleGroupHero.OnCheckStateChanged:Remove(self, self.OnFirstGroupCheckStateChanged)
 end
+
 function ViewSetChangeHeroTip:OnHide(...)
   self:Hide(true)
 end
+
 return ViewSetChangeHeroTip

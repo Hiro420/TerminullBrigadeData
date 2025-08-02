@@ -1,7 +1,9 @@
 local WBP_ScrollSetTipsDescItem_C = UnLua.Class()
+
 function WBP_ScrollSetTipsDescItem_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_ScrollSetTipsDescItem_C:InitScrollSetTipsDescItem(bActivate, Desc, Lv)
   UpdateVisibility(self, true)
   UpdateVisibility(self.URGImageActived, bActivate)
@@ -19,9 +21,12 @@ function WBP_ScrollSetTipsDescItem_C:InitScrollSetTipsDescItem(bActivate, Desc, 
     self.RichTextBlockDesc:SetIsEnabled(false)
   end
 end
+
 function WBP_ScrollSetTipsDescItem_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_ScrollSetTipsDescItem_C:Destruct()
 end
+
 return WBP_ScrollSetTipsDescItem_C

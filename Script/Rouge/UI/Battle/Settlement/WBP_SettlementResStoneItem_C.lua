@@ -1,8 +1,11 @@
 local WBP_SettlementResStoneItem_C = UnLua.Class()
+
 function WBP_SettlementResStoneItem_C:Construct()
 end
+
 function WBP_SettlementResStoneItem_C:Destruct()
 end
+
 function WBP_SettlementResStoneItem_C:InitSettlementResStoneItem(resStoneIdParam, num, ParentView)
   UpdateVisibility(self, true, true)
   self.ParentView = ParentView
@@ -16,17 +19,21 @@ function WBP_SettlementResStoneItem_C:InitSettlementResStoneItem(resStoneIdParam
     self.URGImageIcon:SetBrush(BrushIconDraw)
   end
 end
+
 function WBP_SettlementResStoneItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
     self.ParentView:ShowResStoneTips(true, self.StoneId, self)
   end
 end
+
 function WBP_SettlementResStoneItem_C:OnMouseLeave(MyGeometry, MouseEvent)
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
     self.ParentView:ShowResStoneTips(false)
   end
 end
+
 function WBP_SettlementResStoneItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return WBP_SettlementResStoneItem_C

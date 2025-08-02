@@ -1,4 +1,5 @@
 local WBP_GenericModifyBagTips_C = UnLua.Class()
+
 function WBP_GenericModifyBagTips_C:InitGenericModifyTips(GenericModifyId, bIsUpgrade, Slot, bHideAdditionTips, GenericModifyData)
   self.bHideAdditionTips = bHideAdditionTips
   self.GenericModifyId = GenericModifyId
@@ -85,6 +86,7 @@ function WBP_GenericModifyBagTips_C:InitGenericModifyTips(GenericModifyId, bIsUp
     self:RefresVideohInfo(Slot, false)
   end
 end
+
 function WBP_GenericModifyBagTips_C:InitGenericModifyTipsBySettlement(GenericModifyData, Slot, bHideAdditionTips)
   self.bHideAdditionTips = bHideAdditionTips
   local GenericModifyId = GenericModifyData.ModifyId
@@ -140,6 +142,7 @@ function WBP_GenericModifyBagTips_C:InitGenericModifyTipsBySettlement(GenericMod
     self:RefresVideohInfo(Slot, false)
   end
 end
+
 function WBP_GenericModifyBagTips_C:InitSpecificModifyTips(SpecificModifyId, bHideAdditionTips)
   self.bHideAdditionTips = bHideAdditionTips
   self.SpecificModifyId = SpecificModifyId
@@ -182,9 +185,11 @@ function WBP_GenericModifyBagTips_C:InitSpecificModifyTips(SpecificModifyId, bHi
   end
   self:RefresVideohInfo(UE.ERGGenericModifySlot.None, true)
 end
+
 function WBP_GenericModifyBagTips_C:FadeIn()
   self:PlayAnimation(self.ani_GenericModifyTips_in)
 end
+
 function WBP_GenericModifyBagTips_C:UpdateAdditionNotes(Inscription)
   if self.bHideAdditionTips then
     UpdateVisibility(self.CanvasPanelAdditionNote, false)
@@ -213,6 +218,7 @@ function WBP_GenericModifyBagTips_C:UpdateAdditionNotes(Inscription)
   end
   UpdateVisibility(self.CanvasPanelAdditionNote, bIsShowTips)
 end
+
 function WBP_GenericModifyBagTips_C:UpdateModifyItemPos(bIsUpgrade)
   local CanvasPanelSlot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.WBP_GenericModifyItem)
   if bIsUpgrade then
@@ -221,6 +227,7 @@ function WBP_GenericModifyBagTips_C:UpdateModifyItemPos(bIsUpgrade)
     CanvasPanelSlot:SetPosition(self.NormalItemPos)
   end
 end
+
 function WBP_GenericModifyBagTips_C:InitName(GenericModifyId, Text)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -239,6 +246,7 @@ function WBP_GenericModifyBagTips_C:InitName(GenericModifyId, Text)
     end
   end
 end
+
 function WBP_GenericModifyBagTips_C:UpdateTagList(InscriptionDataAsset)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -258,6 +266,7 @@ function WBP_GenericModifyBagTips_C:UpdateTagList(InscriptionDataAsset)
   end
   HideOtherItem(self.HorizontalBoxTag, Index)
 end
+
 function WBP_GenericModifyBagTips_C:UpdateDescList(InscriptionDataAsset)
   local Index = 1
   if InscriptionDataAsset.ModifyLevelDescShowMode == UE.EModifyLevelDescShowMode.InAttrItem or self.bIsUpgrade then
@@ -272,6 +281,7 @@ function WBP_GenericModifyBagTips_C:UpdateDescList(InscriptionDataAsset)
   end
   HideOtherItem(self.VerticalBoxEffectDesc, Index)
 end
+
 function WBP_GenericModifyBagTips_C:RefresVideohInfo(Slot, bIsSpecify)
   if self.ModifyChooseType == ModifyChooseType.GenericModify or self.ModifyChooseType == ModifyChooseType.UpgradeModify then
     local Result, RowData = GetRowData(DT.DT_GenericModify, tostring(self.GenericModifyId))
@@ -288,6 +298,7 @@ function WBP_GenericModifyBagTips_C:RefresVideohInfo(Slot, bIsSpecify)
     end
   end
 end
+
 function WBP_GenericModifyBagTips_C:RefreshMedia(ObjRef)
   self.MediaPlayer:SetLooping(true)
   if ObjRef and UE.UKismetSystemLibrary.IsValidSoftObjectReference(ObjRef) then
@@ -301,6 +312,7 @@ function WBP_GenericModifyBagTips_C:RefreshMedia(ObjRef)
     UpdateVisibility(self.WBP_RGMaskWidget, false)
   end
 end
+
 function WBP_GenericModifyBagTips_C:Hide()
   UpdateVisibility(self, false)
   self.GenericModifyId = nil
@@ -309,4 +321,5 @@ function WBP_GenericModifyBagTips_C:Hide()
   self.modComponent = nil
   self.ModifyChooseType = nil
 end
+
 return WBP_GenericModifyBagTips_C

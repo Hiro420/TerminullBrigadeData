@@ -947,7 +947,7 @@ local hero_tbprofygeneral = {
     },
     inscriptions = {},
     StoryRewardList = {
-      {key = 4122008, value = 1}
+      {key = 4152008, value = 1}
     },
     ItemTagNameLocMeta = NSLOCTEXT("hero_TBProfyGeneral", "ItemTagName_7003", "\230\150\176\230\173\166\229\153\168")
   },
@@ -981,7 +981,7 @@ local hero_tbprofygeneral = {
     },
     inscriptions = {},
     StoryRewardList = {
-      {key = 4122009, value = 1}
+      {key = 4152009, value = 1}
     },
     ItemTagNameLocMeta = NSLOCTEXT("hero_TBProfyGeneral", "ItemTagName_7005", "")
   },
@@ -1015,7 +1015,7 @@ local hero_tbprofygeneral = {
     },
     inscriptions = {},
     StoryRewardList = {
-      {key = 4122010, value = 1}
+      {key = 4152010, value = 1}
     },
     ItemTagNameLocMeta = NSLOCTEXT("hero_TBProfyGeneral", "ItemTagName_7007", "")
   },

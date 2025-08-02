@@ -1,4 +1,5 @@
 local WBP_AssistanceSkillPanel_C = UnLua.Class()
+
 function WBP_AssistanceSkillPanel_C:Construct()
   self.Overridden.Construct(self)
   EventSystem.AddListener(self, EventDef.GenericModify.OnAddModify, WBP_AssistanceSkillPanel_C.BindOnAddModify)
@@ -9,6 +10,7 @@ function WBP_AssistanceSkillPanel_C:Construct()
   end
   ListenObjectMessage(nil, "World.Skill.AssistanceActivad", self, self.BindOnAssistanceActivated)
 end
+
 function WBP_AssistanceSkillPanel_C:BindOnAssistanceActivated(ActivatedActor)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if ActivatedActor == Character then
@@ -40,6 +42,7 @@ function WBP_AssistanceSkillPanel_C:BindOnAssistanceActivated(ActivatedActor)
     self:PlayAnimationForward(self.ani_AssistanceSkillPanel)
   end
 end
+
 function WBP_AssistanceSkillPanel_C:InitAssistanceSkillInfo()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -57,6 +60,7 @@ function WBP_AssistanceSkillPanel_C:InitAssistanceSkillInfo()
   end
   self.VerticalPaintingPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_AssistanceSkillPanel_C:BindOnAddModify(RGGenericModifyParam)
   local ModifyId = RGGenericModifyParam.ModifyId
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -83,8 +87,10 @@ function WBP_AssistanceSkillPanel_C:BindOnAddModify(RGGenericModifyParam)
     end
   end
 end
+
 function WBP_AssistanceSkillPanel_C:Destruct()
   EventSystem.RemoveListener(EventDef.GenericModify.OnAddModify, WBP_AssistanceSkillPanel_C.BindOnAddModify, self)
   UnListenObjectMessage("World.Skill.AssistanceActivad")
 end
+
 return WBP_AssistanceSkillPanel_C

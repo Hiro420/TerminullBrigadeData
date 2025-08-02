@@ -3,6 +3,7 @@ local rapidjson = require("rapidjson")
 local GemData = require("Modules.Gem.GemData")
 local PuzzleData = require("Modules.Puzzle.PuzzleData")
 local PuzzleInfoConfig = require("GameConfig.Puzzle.PuzzleInfoConfig")
+
 function GemHandler:RequestCancelLockOrDiscardGemToServer(GemId)
   HttpCommunication.Request("hero/cancellockordiscardgem", {uniqueID = GemId}, {
     GameInstance,
@@ -13,6 +14,7 @@ function GemHandler:RequestCancelLockOrDiscardGemToServer(GemId)
     end
   })
 end
+
 function GemHandler:RequestDecomposeGemsToServer(IdList)
   HttpCommunication.Request("hero/decomposegems", {gemUniqueIDs = IdList}, {
     GameInstance,
@@ -25,6 +27,7 @@ function GemHandler:RequestDecomposeGemsToServer(IdList)
     end
   })
 end
+
 function GemHandler:RequestDiscardGemToServer(Id)
   HttpCommunication.Request("hero/discardgem", {uniqueID = Id}, {
     GameInstance,
@@ -35,6 +38,7 @@ function GemHandler:RequestDiscardGemToServer(Id)
     end
   })
 end
+
 function GemHandler:RequestEquipGemToServer(PuzzleId, SlotId, GemId)
   local GemPackageInfo = GemData:GetGemPackageInfoByUId(GemId)
   local OldEquipPuzzleId = GemPackageInfo.pzUniqueID
@@ -78,6 +82,7 @@ function GemHandler:RequestEquipGemToServer(PuzzleId, SlotId, GemId)
     end
   })
 end
+
 function GemHandler:RequestGetGemPackageInfoToServer(...)
   HttpCommunication.RequestByGet("hero/getgempackage", {
     GameInstance,
@@ -91,6 +96,7 @@ function GemHandler:RequestGetGemPackageInfoToServer(...)
     end
   })
 end
+
 function GemHandler:RequestLockGemToServer(Id)
   HttpCommunication.Request("hero/lockgem", {uniqueID = Id}, {
     GameInstance,
@@ -101,6 +107,7 @@ function GemHandler:RequestLockGemToServer(Id)
     end
   })
 end
+
 function GemHandler:RequestUnEquipGemToServer(PuzzleId, SlotId)
   local JsonParam = {
     slotID = tonumber(SlotId),
@@ -122,6 +129,7 @@ function GemHandler:RequestUnEquipGemToServer(PuzzleId, SlotId)
     end
   })
 end
+
 function GemHandler:RequestUpgradeGemToServer(GemId, Level)
   local JsonParam = {uniqueID = GemId, targetLevel = Level}
   HttpCommunication.Request("hero/upgradegem", JsonParam, {
@@ -137,6 +145,7 @@ function GemHandler:RequestUpgradeGemToServer(GemId, Level)
     end
   })
 end
+
 function GemHandler:RequestGemMutationToServer(GemIdList, IsSeniorMutation)
   local JsonParam = {uniqueIDs = GemIdList, isSeniorMutation = IsSeniorMutation}
   HttpCommunication.Request("hero/gemmutation", JsonParam, {
@@ -174,4 +183,5 @@ function GemHandler:RequestGemMutationToServer(GemIdList, IsSeniorMutation)
     end
   })
 end
+
 return GemHandler

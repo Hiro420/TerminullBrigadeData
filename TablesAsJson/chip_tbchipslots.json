@@ -1,128 +1,128 @@
 ﻿{
   "7": {
     "Icon": "",
-    "descLocMeta": {
-      "InNamespace": "chip_TBChipSlots",
-      "InKey": "desc_7",
-      "InTextLiteral": "只有在七日登录活动与击败难度及以上的首领的情况下，才会掉落特殊Ω模组。模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。特殊Ω模组的词条与普通模组互相独立。"
-    },
-    "UnlockWorld": 0,
     "ID": 7,
+    "UnlockWorld": 0,
     "nameLocMeta": {
       "InNamespace": "chip_TBChipSlots",
-      "InKey": "name_7",
-      "InTextLiteral": "特殊Ω"
+      "InTextLiteral": "特殊Ω",
+      "InKey": "name_7"
     },
-    "DropFloor": 5,
+    "descLocMeta": {
+      "InNamespace": "chip_TBChipSlots",
+      "InTextLiteral": "只有在七日登录活动与击败难度及以上的首领的情况下，才会掉落特殊Ω模组。模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。特殊Ω模组的词条与普通模组互相独立。",
+      "InKey": "desc_7"
+    },
     "WorldID": 0,
+    "DropFloor": 5,
     "Type": 1
   },
   "1": {
     "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Cyber.Icon_Cyber",
-    "descLocMeta": {
-      "InNamespace": "chip_TBChipSlots",
-      "InKey": "desc_1",
-      "InTextLiteral": "探索环都会掉落不同品质的环都Ⅰ模组。模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。"
-    },
-    "UnlockWorld": 0,
     "ID": 1,
+    "UnlockWorld": 0,
     "nameLocMeta": {
       "InNamespace": "chip_TBChipSlots",
-      "InKey": "name_1",
-      "InTextLiteral": "环都Ⅰ"
+      "InTextLiteral": "环都Ⅰ",
+      "InKey": "name_1"
     },
-    "DropFloor": 0,
+    "descLocMeta": {
+      "InNamespace": "chip_TBChipSlots",
+      "InTextLiteral": "探索环都会掉落不同品质的环都Ⅰ模组。模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。",
+      "InKey": "desc_1"
+    },
     "WorldID": 23,
+    "DropFloor": 0,
     "Type": 0
   },
   "2": {
     "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Wasteland.Icon_Wasteland",
-    "descLocMeta": {
-      "InNamespace": "chip_TBChipSlots",
-      "InKey": "desc_2",
-      "InTextLiteral": "探索炽热焦土会掉落不同品质的炽热焦土Ⅰ模组。模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。"
-    },
-    "UnlockWorld": 24,
     "ID": 2,
+    "UnlockWorld": 24,
     "nameLocMeta": {
       "InNamespace": "chip_TBChipSlots",
-      "InKey": "name_2",
-      "InTextLiteral": "炽热焦土Ⅰ"
+      "InTextLiteral": "炽热焦土Ⅰ",
+      "InKey": "name_2"
     },
-    "DropFloor": 0,
+    "descLocMeta": {
+      "InNamespace": "chip_TBChipSlots",
+      "InTextLiteral": "探索炽热焦土会掉落不同品质的炽热焦土Ⅰ模组。模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。",
+      "InKey": "desc_2"
+    },
     "WorldID": 24,
+    "DropFloor": 0,
     "Type": 0
   },
   "3": {
     "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Interstellar.Icon_Interstellar",
-    "descLocMeta": {
-      "InNamespace": "chip_TBChipSlots",
-      "InKey": "desc_3",
-      "InTextLiteral": "探索环都会掉落不同品质的环都Ⅱ模组。模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。"
-    },
-    "UnlockWorld": 0,
     "ID": 3,
+    "UnlockWorld": 0,
     "nameLocMeta": {
       "InNamespace": "chip_TBChipSlots",
-      "InKey": "name_3",
-      "InTextLiteral": "环都Ⅱ"
+      "InTextLiteral": "环都Ⅱ",
+      "InKey": "name_3"
     },
-    "DropFloor": 0,
+    "descLocMeta": {
+      "InNamespace": "chip_TBChipSlots",
+      "InTextLiteral": "探索环都会掉落不同品质的环都Ⅱ模组。模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。",
+      "InKey": "desc_3"
+    },
     "WorldID": 23,
+    "DropFloor": 0,
     "Type": 0
   },
   "4": {
     "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_FairyTales.Icon_FairyTales",
-    "descLocMeta": {
-      "InNamespace": "chip_TBChipSlots",
-      "InKey": "desc_4",
-      "InTextLiteral": "探索炽热焦土会掉落不同品质的炽热焦土Ⅱ模组。模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。"
-    },
-    "UnlockWorld": 24,
     "ID": 4,
+    "UnlockWorld": 24,
     "nameLocMeta": {
       "InNamespace": "chip_TBChipSlots",
-      "InKey": "name_4",
-      "InTextLiteral": "炽热焦土Ⅱ"
+      "InTextLiteral": "炽热焦土Ⅱ",
+      "InKey": "name_4"
     },
-    "DropFloor": 0,
+    "descLocMeta": {
+      "InNamespace": "chip_TBChipSlots",
+      "InTextLiteral": "探索炽热焦土会掉落不同品质的炽热焦土Ⅱ模组。模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。",
+      "InKey": "desc_4"
+    },
     "WorldID": 24,
+    "DropFloor": 0,
     "Type": 0
   },
   "5": {
     "Icon": "",
-    "descLocMeta": {
-      "InNamespace": "chip_TBChipSlots",
-      "InKey": "desc_5",
-      "InTextLiteral": "只有在七日登录活动与击败难度及以上的首领的情况下，才会掉落特殊α模组。模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。特殊α模组的词条与普通模组互相独立。"
-    },
-    "UnlockWorld": 0,
     "ID": 5,
+    "UnlockWorld": 0,
     "nameLocMeta": {
       "InNamespace": "chip_TBChipSlots",
-      "InKey": "name_5",
-      "InTextLiteral": "特殊α"
+      "InTextLiteral": "特殊α",
+      "InKey": "name_5"
     },
-    "DropFloor": 5,
+    "descLocMeta": {
+      "InNamespace": "chip_TBChipSlots",
+      "InTextLiteral": "只有在七日登录活动与击败难度及以上的首领的情况下，才会掉落特殊α模组。模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。特殊α模组的词条与普通模组互相独立。",
+      "InKey": "desc_5"
+    },
     "WorldID": 0,
+    "DropFloor": 5,
     "Type": 1
   },
   "6": {
     "Icon": "",
-    "descLocMeta": {
-      "InNamespace": "chip_TBChipSlots",
-      "InKey": "desc_6",
-      "InTextLiteral": "只有在七日登录活动与击败难度及以上的首领的情况下，才会掉落特殊β模组。模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。特殊β模组的词条与普通模组互相独立。"
-    },
-    "UnlockWorld": 0,
     "ID": 6,
+    "UnlockWorld": 0,
     "nameLocMeta": {
       "InNamespace": "chip_TBChipSlots",
-      "InKey": "name_6",
-      "InTextLiteral": "特殊β"
+      "InTextLiteral": "特殊β",
+      "InKey": "name_6"
     },
-    "DropFloor": 5,
+    "descLocMeta": {
+      "InNamespace": "chip_TBChipSlots",
+      "InTextLiteral": "只有在七日登录活动与击败难度及以上的首领的情况下，才会掉落特殊β模组。模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。特殊β模组的词条与普通模组互相独立。",
+      "InKey": "desc_6"
+    },
     "WorldID": 0,
+    "DropFloor": 5,
     "Type": 1
   }
 }

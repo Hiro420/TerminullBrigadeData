@@ -1,0 +1,226 @@
+[
+  {
+    "Xboxid": 1,
+    "TaskGroupid": 7001,
+    "Taskname": "初识矩阵",
+    "Taskcontent": "账号等级达到5级",
+    "Gamescore": 10
+  },
+  {
+    "Xboxid": 2,
+    "TaskGroupid": 7002,
+    "Taskname": "心意相通",
+    "Taskcontent": "1名角色的熟练度达\n到4级",
+    "Gamescore": 10
+  },
+  {
+    "Xboxid": 3,
+    "TaskGroupid": 7003,
+    "Taskname": "社交新人",
+    "Taskcontent": "拥有第1个好友",
+    "Gamescore": 10
+  },
+  {
+    "Xboxid": 4,
+    "TaskGroupid": 7004,
+    "Taskname": "社交名流",
+    "Taskcontent": "拥有10个好友",
+    "Gamescore": 20
+  },
+  {
+    "Xboxid": 5,
+    "TaskGroupid": 7005,
+    "Taskname": "精准命中",
+    "Taskcontent": "命中敌人弱点2000次",
+    "Gamescore": 20
+  },
+  {
+    "Xboxid": 6,
+    "TaskGroupid": 7006,
+    "Taskname": "监管者",
+    "Taskcontent": "击败惩戒者1次",
+    "Gamescore": 10
+  },
+  {
+    "Xboxid": 7,
+    "TaskGroupid": 7007,
+    "Taskname": "清理能手",
+    "Taskcontent": "击败400个敌人",
+    "Gamescore": 10
+  },
+  {
+    "Xboxid": 8,
+    "TaskGroupid": 7008,
+    "Taskname": "团队合作",
+    "Taskcontent": "救援队友10次",
+    "Gamescore": 10
+  },
+  {
+    "Xboxid": 9,
+    "TaskGroupid": 7009,
+    "Taskname": "巨人捕手",
+    "Taskcontent": "击败首领10次",
+    "Gamescore": 10
+  },
+  {
+    "Xboxid": 10,
+    "TaskGroupid": 7010,
+    "Taskname": "燃起来了",
+    "Taskcontent": "打爆10个炸药桶",
+    "Gamescore": 10
+  },
+  {
+    "Xboxid": 11,
+    "TaskGroupid": 7011,
+    "Taskname": "神之子",
+    "Taskcontent": "提升权限品质10次",
+    "Gamescore": 10
+  },
+  {
+    "Xboxid": 12,
+    "TaskGroupid": 7012,
+    "Taskname": "第一名",
+    "Taskcontent": "获得3次MVP",
+    "Gamescore": 10
+  },
+  {
+    "Xboxid": 13,
+    "TaskGroupid": 7013,
+    "Taskname": "欢迎光临",
+    "Taskcontent": "在商店购买商品10次",
+    "Gamescore": 10
+  },
+  {
+    "Xboxid": 14,
+    "TaskGroupid": 7014,
+    "Taskname": "秘宝发掘者",
+    "Taskcontent": "首次获得传说品质稳\n宝",
+    "Gamescore": 10
+  },
+  {
+    "Xboxid": 15,
+    "TaskGroupid": 7015,
+    "Taskname": "秘宝收藏家",
+    "Taskcontent": "获得20次传说品质秘\n宝",
+    "Gamescore": 20
+  },
+  {
+    "Xboxid": 16,
+    "TaskGroupid": 7016,
+    "Taskname": "小插曲",
+    "Taskcontent": "在场景中拾取到10个\n数据情报",
+    "Gamescore": 10
+  },
+  {
+    "Xboxid": 17,
+    "TaskGroupid": 7017,
+    "Taskname": "势不可当",
+    "Taskcontent": "成功通过1次任意世界",
+    "Gamescore": 10
+  },
+  {
+    "Xboxid": 18,
+    "TaskGroupid": 7018,
+    "Taskname": "职业规划",
+    "Taskcontent": "激活任意1条能力模\n块的强化分支",
+    "Gamescore": 10
+  },
+  {
+    "Xboxid": 19,
+    "TaskGroupid": 7019,
+    "Taskname": "熟能生巧",
+    "Taskcontent": "账号等级达到40级",
+    "Gamescore": 50
+  },
+  {
+    "Xboxid": 20,
+    "TaskGroupid": 7020,
+    "Taskname": "亲密关系",
+    "Taskcontent": "3名角色的熟练度达\n到4级",
+    "Gamescore": 20
+  },
+  {
+    "Xboxid": 21,
+    "TaskGroupid": 7021,
+    "Taskname": "战斗大师",
+    "Taskcontent": "获得10次MVP",
+    "Gamescore": 20
+  },
+  {
+    "Xboxid": 22,
+    "TaskGroupid": 7022,
+    "Taskname": "一击必中",
+    "Taskcontent": "命中敌人弱点10000次",
+    "Gamescore": 50
+  },
+  {
+    "Xboxid": 23,
+    "TaskGroupid": 7023,
+    "Taskname": "购物清单",
+    "Taskcontent": "在商店购买商品300次",
+    "Gamescore": 50
+  },
+  {
+    "Xboxid": 24,
+    "TaskGroupid": 7024,
+    "Taskname": "大富翁",
+    "Taskcontent": "战斗内累计获得\n20000金币",
+    "Gamescore": 50
+  },
+  {
+    "Xboxid": 25,
+    "TaskGroupid": 7025,
+    "Taskname": "秘宝专家",
+    "Taskcontent": "获得100次传说品质秘宝",
+    "Gamescore": 100
+  },
+  {
+    "Xboxid": 26,
+    "TaskGroupid": 7026,
+    "Taskname": "势如破竹",
+    "Taskcontent": "成功通过50次任意世\n界",
+    "Gamescore": 50
+  },
+  {
+    "Xboxid": 27,
+    "TaskGroupid": 7027,
+    "Taskname": "情报达人",
+    "Taskcontent": "在场景中拾取到50个数据情报",
+    "Gamescore": 50
+  },
+  {
+    "Xboxid": 28,
+    "TaskGroupid": 7028,
+    "Taskname": "全面成长",
+    "Taskcontent": "激活全部3条能力模块的强化分支",
+    "Gamescore": 100
+  },
+  {
+    "Xboxid": 29,
+    "TaskGroupid": 7029,
+    "Taskname": "智能眷顾",
+    "Taskcontent": "获得10次双重权限",
+    "Gamescore": 50
+  },
+  {
+    "Xboxid": 30,
+    "TaskGroupid": 7030,
+    "Taskname": "巨人终结者",
+    "Taskcontent": "击败首领200次",
+    "Gamescore": 100
+  },
+  {
+    "Xboxid": 31,
+    "TaskGroupid": 7031,
+    "Taskname": "理想主义",
+    "Taskcontent": "通关难度10的环都1",
+    "Gamescore": 50
+  },
+  {
+    "Xboxid": 32,
+    "TaskGroupid": 7032,
+    "Taskname": "真正的信仰",
+    "Taskcontent": "通关难度10的炽热焦土1次",
+    "Gamescore": 50
+  }
+]

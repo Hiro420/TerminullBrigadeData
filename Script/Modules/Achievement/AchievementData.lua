@@ -5,6 +5,7 @@ _G.EAchievementItemSelectState = _G.EAchievementItemSelectState or EAchievementI
 local EAchievementShowModel = {Normal = 1, Details = 2}
 _G.EAchievementShowModel = _G.EAchievementShowModel or EAchievementShowModel
 local AchievementItemData = LuaClass()
+
 function AchievementItemData:Ctor(...)
   self:Reset()
   local params = {
@@ -14,11 +15,13 @@ function AchievementItemData:Ctor(...)
     self.tbTaskGroup = params[1]
   end
 end
+
 function AchievementItemData:Reset()
   self.tbTaskGroup = {}
   self.tbTaskList = {}
   self.Badges = {}
 end
+
 local AchievementData = {
   TypeToTbAchievement = {},
   CurAchievementPointNum = 0,
@@ -33,6 +36,7 @@ local AchievementData = {
   AchivementPointTaskGroup = 1101,
   AchievementTaskGroupIdSet = {}
 }
+
 function AchievementData:DealWithTable()
   AchievementData.TypeToTbAchievement = {}
   local platformName = UE.URGBlueprintLibrary.GetPlatformName()
@@ -98,6 +102,7 @@ function AchievementData:DealWithTable()
     return A.id < B.id
   end)
 end
+
 function AchievementData:InitTaskGroupToBadges(achievementItemData, rewardlist)
   local tbGeneral = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   for i, v in ipairs(rewardlist) do
@@ -108,6 +113,7 @@ function AchievementData:InitTaskGroupToBadges(achievementItemData, rewardlist)
     end
   end
 end
+
 function AchievementData:GetAchievementTypeList()
   local typeList = {}
   local tbAchievement = LuaTableMgr.GetLuaTableByName(TableNames.TBAchievement)
@@ -120,18 +126,21 @@ function AchievementData:GetAchievementTypeList()
   end
   return typeList
 end
+
 function AchievementData:GetAchievementByType(AchievementType)
   if table.IsEmpty(AchievementData.TypeToTbAchievement) then
     self:DealWithTable()
   end
   return AchievementData.TypeToTbAchievement[AchievementType]
 end
+
 function AchievementData:GetAchievementItemDataListByType(AchievementType)
   if table.IsEmpty(AchievementData.TypeToTbAchievement) then
     self:DealWithTable()
   end
   return AchievementData.TypeToTbAchievement[AchievementType].AchievementItemDataList
 end
+
 function AchievementData:GetAllAchievementItemDataList()
   if table.IsEmpty(AchievementData.TypeToTbAchievement) then
     self:DealWithTable()
@@ -144,6 +153,7 @@ function AchievementData:GetAllAchievementItemDataList()
   end
   return tbAchievementItemDataList
 end
+
 function AchievementData:GetAchievementTaskGroupListByType(AchievementType)
   if table.IsEmpty(AchievementData.TypeToTbAchievement) then
     self:DealWithTable()
@@ -153,6 +163,7 @@ function AchievementData:GetAchievementTaskGroupListByType(AchievementType)
   end
   return {}
 end
+
 function AchievementData:GetCurDoingPointTask()
   for i, v in ipairs(self.tbAchievementPointSort) do
     local taskId = v.taskid
@@ -163,6 +174,7 @@ function AchievementData:GetCurDoingPointTask()
   end
   return self.tbAchievementPointSort[#self.tbAchievementPointSort].taskid, #self.tbAchievementPointSort
 end
+
 function AchievementData:GetCurDoingPointAwards()
   local taskId, idx = self:GetCurDoingPointTask()
   local tbTaskData = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskData)
@@ -171,6 +183,7 @@ function AchievementData:GetCurDoingPointAwards()
   end
   return nil, nil
 end
+
 function AchievementData:GetAwardsByIdx(Idx)
   local tbTaskData = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskData)
   if self.tbAchievementPointSort and self.tbAchievementPointSort[Idx] then
@@ -181,15 +194,18 @@ function AchievementData:GetAwardsByIdx(Idx)
   end
   return nil
 end
+
 function AchievementData:GetPointTaskIdByIdx(Idx)
   if self.tbAchievementPointSort and self.tbAchievementPointSort[Idx] then
     return self.tbAchievementPointSort[Idx].taskid
   end
   return -1
 end
+
 function AchievementData:GetCurAchievementPointNum()
   return self.CurAchievementPointNum
 end
+
 function AchievementData:GetDisplayBadges()
   local displayBadges = {}
   for i, v in ipairs(self.DisplayBadges) do
@@ -199,10 +215,12 @@ function AchievementData:GetDisplayBadges()
   end
   return displayBadges
 end
+
 function AchievementData:CheckIsAchievementTask(TaskGroupId)
   if table.IsEmpty(AchievementData.AchievementTaskGroupIdSet) then
     self:DealWithTable()
   end
   return AchievementData.AchievementTaskGroupIdSet[TaskGroupId]
 end
+
 return AchievementData, AchievementItemData

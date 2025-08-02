@@ -116,6 +116,7 @@ local SetCommonWeaponActorTransform = function(self, RowName, Transform)
     self.ChildActorWeapon:K2_SetWorldTransform(rowRole.RoleMainTransform, false, nil, false)
   end
 end
+
 function BP_AppearanceActor_C:SetCommonCameraTransform(RowName)
   local rowName = "BattlePassWeapon"
   if RowName then
@@ -126,6 +127,7 @@ function BP_AppearanceActor_C:SetCommonCameraTransform(RowName)
     self.ChildActorCamera:K2_SetWorldTransform(row.CameraTransform, false, nil, false)
   end
 end
+
 local GetcameraDataList = function(self, SkinId)
   local cameraDataList
   if IsMultiLayerCameraMode(self) then
@@ -166,13 +168,16 @@ local GetDefaultCameraIdx = function(SkinId)
   end
   return 0
 end
+
 function BP_AppearanceActor_C:ReceiveBeginPlay()
   self.Overridden.ReceiveBeginPlay(self)
   self:UpdateActived(self.bIsActived, true)
 end
+
 function BP_AppearanceActor_C:ReceiveEndPlay(EndPlayReason)
   self.Overridden.ReceiveEndPlay(self, EndPlayReason)
 end
+
 function BP_AppearanceActor_C:ReceiveTick(DeltaSeconds)
   self.Overridden.ReceiveTick(self, DeltaSeconds)
   if not NearlyEquals(CameraTimer, -1) then
@@ -218,9 +223,11 @@ function BP_AppearanceActor_C:ReceiveTick(DeltaSeconds)
     end
   end
 end
+
 function BP_AppearanceActor_C:BPLeftMouseButtonDown(bIsMouseDown)
   self.bIsMouseDown = bIsMouseDown
 end
+
 function BP_AppearanceActor_C:InitAppearanceActor(HeroId, SkinId, WeaponSkinId, bShowGlitchMatEffect, bShowDrawCardShowMatEffect, bForceInit, SkinChangedCallback)
   self:InitAppearanceActorInfo(HeroId, SkinId, WeaponSkinId, bShowGlitchMatEffect, bShowDrawCardShowMatEffect, bForceInit, SkinChangedCallback)
   if not UE.RGUtil.IsUObjectValid(self.MultiLayerCameraActor) then
@@ -234,6 +241,7 @@ function BP_AppearanceActor_C:InitAppearanceActor(HeroId, SkinId, WeaponSkinId, 
   CameraMotionIdx = GetDefaultCameraIdx(SkinId)
   SetCameraData(self, SkinId, CameraMotionIdx)
 end
+
 function BP_AppearanceActor_C:InitCommonActor(HeroId, SkinId, WeaponSkinId, CameraID, Transform)
   self:InitAppearanceActorInfo(HeroId, SkinId, WeaponSkinId)
   SetCommonActorTransform(self, CameraID, Transform)
@@ -243,6 +251,7 @@ function BP_AppearanceActor_C:InitCommonActor(HeroId, SkinId, WeaponSkinId, Came
   end
   self:SetCommonCameraTransform(cameraID)
 end
+
 function BP_AppearanceActor_C:InitAppearanceActorInfo(HeroId, SkinId, WeaponSkinId, bShowGlitchMatEffect, bShowDrawCardShowMatEffect, bForceInit, SkinChangedCallback)
   self.DoesSkinChanged = false
   self.MultiLayerCameraActor = nil
@@ -263,23 +272,27 @@ function BP_AppearanceActor_C:InitAppearanceActorInfo(HeroId, SkinId, WeaponSkin
     self.ChildActorProp:SetHiddenInGame(true)
   end
 end
+
 function BP_AppearanceActor_C:InitRoleScaleByHeroId(HeroId)
   local CharacterRow = LogicRole.GetCharacterTableRow(HeroId)
   if CharacterRow then
     self.ChildActor:SetWorldScale3D(UE.FVector(CharacterRow.RoleModelScale))
   end
 end
+
 function BP_AppearanceActor_C:AppearanceToggleSkipEnter(bSkipEnterParam)
   if self.ChildActor.ChildActor then
     self.ChildActor.ChildActor:LobbyRoleActorToggleSkipEnter(bSkipEnterParam)
     LogicAudio.bSkipEnter = bSkipEnterParam
   end
 end
+
 function BP_AppearanceActor_C:AppearanceResetAnimation()
   if self.ChildActor.ChildActor then
     self.ChildActor.ChildActor:LobbyRoleActorResetAnimation()
   end
 end
+
 function BP_AppearanceActor_C:SetAllActorShow(IsShow)
   self.ChildActorWeapon:SetHiddenInGame(not IsShow)
   self.ChildActor:SetHiddenInGame(not IsShow)
@@ -287,10 +300,12 @@ function BP_AppearanceActor_C:SetAllActorShow(IsShow)
     self.ChildActorProp:SetHiddenInGame(not IsShow)
   end
 end
+
 function BP_AppearanceActor_C:RefreshRoleAniStatus(skinId)
   self.ChildActor.ChildActor:ResetChildActorAnimation()
   LogicAudio.OnLobbyPlayHeroSound(skinId, self)
 end
+
 function BP_AppearanceActor_C:InitWeaponMesh(WeaponSkinId, WeaponResId, bShowGlitchMatEffect)
   self:InitWeaponMeshInfo(WeaponSkinId, WeaponResId, bShowGlitchMatEffect)
   self:UpdateWeaponMeshDisplayData(WeaponResId)
@@ -298,6 +313,7 @@ function BP_AppearanceActor_C:InitWeaponMesh(WeaponSkinId, WeaponResId, bShowGli
   CameraMotionIdx = GetDefaultCameraIdx(WeaponSkinId)
   SetCameraData(self, WeaponSkinId, CameraMotionIdx)
 end
+
 function BP_AppearanceActor_C:InitBattlePassWeaponMesh(WeaponSkinId, WeaponResId, CameraID, Transform)
   self:InitWeaponMeshInfo(WeaponSkinId, WeaponResId)
   SetCommonWeaponActorTransform(self, nil, Transform)
@@ -307,6 +323,7 @@ function BP_AppearanceActor_C:InitBattlePassWeaponMesh(WeaponSkinId, WeaponResId
   end
   self:SetCommonCameraTransform(CameraID)
 end
+
 function BP_AppearanceActor_C:InitWeaponMeshInfo(WeaponSkinId, WeaponResId, bShowGlitchMatEffect)
   self.MultiLayerCameraActor = nil
   self.WeaponSkinId = WeaponSkinId
@@ -319,6 +336,7 @@ function BP_AppearanceActor_C:InitWeaponMeshInfo(WeaponSkinId, WeaponResId, bSho
     self.ChildActorProp:SetHiddenInGame(true)
   end
 end
+
 function BP_AppearanceActor_C:SetActorAnim(Path, SkinId)
   if Path then
     local AnimClass = UE.LoadClass(Path)
@@ -334,6 +352,7 @@ function BP_AppearanceActor_C:SetActorAnim(Path, SkinId)
     end
   end
 end
+
 function BP_AppearanceActor_C:UpdateWeaponMeshDisplayData(WeaponResId)
   if not UE.RGUtil.IsUObjectValid(self.ChildActorWeapon.ChildActor) then
     print("BP_AppearanceActor_C:UpdateWeaponMeshDisplayData ChildActor IsNull")
@@ -363,6 +382,7 @@ function BP_AppearanceActor_C:UpdateWeaponMeshDisplayData(WeaponResId)
     end
   end
 end
+
 function BP_AppearanceActor_C:MoveNextCameraTrans()
   if CameraMotionIdx <= 1 then
     return
@@ -381,6 +401,7 @@ function BP_AppearanceActor_C:MoveNextCameraTrans()
   CameraMotionIdx = CameraMotionIdx - 1
   CameraTimer = 0
 end
+
 function BP_AppearanceActor_C:MovePreCameraTrans()
   if not NearlyEquals(CameraTimer, -1) then
     return
@@ -403,6 +424,7 @@ function BP_AppearanceActor_C:MovePreCameraTrans()
   CameraMotionIdx = CameraMotionIdx + 1
   CameraTimer = 0
 end
+
 function BP_AppearanceActor_C:OnMultiLayerCameraBeginPlay(MultiLayerCamera)
   self.MultiLayerCameraActor = MultiLayerCamera
   if self.DoesSkinChanged and self.DisplayMeshStatus == EDisplayMeshStatus.Role then
@@ -411,6 +433,7 @@ function BP_AppearanceActor_C:OnMultiLayerCameraBeginPlay(MultiLayerCamera)
     SetCameraData(self, self.SkinId, CameraMotionIdx)
   end
 end
+
 function BP_AppearanceActor_C:OnMultiLayerCameraSkinChanged()
   self.DoesSkinChanged = true
   if not UE.RGUtil.IsUObjectValid(self.MultiLayerCameraActor) then
@@ -427,6 +450,7 @@ function BP_AppearanceActor_C:OnMultiLayerCameraSkinChanged()
   else
   end
 end
+
 function BP_AppearanceActor_C:UpdateActived(bIsActived, bNotChangeRoleMainHeroVisble, bAutoQuit)
   if bIsActived then
     EventSystem.AddListenerNew(EventDef.Heirloom.MultiLayerCameraBeginPlay, self, self.OnMultiLayerCameraBeginPlay)
@@ -474,6 +498,7 @@ function BP_AppearanceActor_C:UpdateActived(bIsActived, bNotChangeRoleMainHeroVi
     LogicRole.HideCurSkinLightMap()
   end
 end
+
 function BP_AppearanceActor_C:GetTypeId(Widget)
   local Character = Widget:GetOwningPlayerPawn()
   if not Character then
@@ -481,6 +506,7 @@ function BP_AppearanceActor_C:GetTypeId(Widget)
   end
   return Character:GetTypeID()
 end
+
 function BP_AppearanceActor_C:HideMesh()
   self.ChildActorWeapon:SetHiddenInGame(true)
   self.ChildActor:SetHiddenInGame(true)
@@ -488,6 +514,7 @@ function BP_AppearanceActor_C:HideMesh()
     self.ChildActorProp:SetHiddenInGame(true)
   end
 end
+
 function BP_AppearanceActor_C:InitPropByActorPath(ActorPath)
   if not self.ChildActorProp then
     print("BP_AppearanceActor_C:InitPropByActorPath ChildActorProp IsNull")
@@ -504,15 +531,18 @@ function BP_AppearanceActor_C:InitPropByActorPath(ActorPath)
   self.ChildActorProp:SetHiddenInGame(false)
   SetCameraData(self, 0, 1)
 end
+
 function BP_AppearanceActor_C:RequestToDisableDraggingRole()
   DisableRoleMouseDraggingCounter = DisableRoleMouseDraggingCounter + 1
 end
+
 function BP_AppearanceActor_C:RequestToEnableDraggingRole()
   DisableRoleMouseDraggingCounter = DisableRoleMouseDraggingCounter - 1
   if DisableRoleMouseDraggingCounter < 0 then
     DisableRoleMouseDraggingCounter = 0
   end
 end
+
 function BP_AppearanceActor_C:ChangeToActivedCamera()
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
   if PC then
@@ -520,6 +550,7 @@ function BP_AppearanceActor_C:ChangeToActivedCamera()
     PC:SetViewTargetwithBlend(self.ChildActorCamera.ChildActor, 0)
   end
 end
+
 function BP_AppearanceActor_C:ChangeTransformByIndex(Index)
   if self.TransformList and self.TransformList:IsValidIndex(Index) then
     local transform = self.TransformList:Get(Index)
@@ -528,9 +559,11 @@ function BP_AppearanceActor_C:ChangeTransformByIndex(Index)
     end
   end
 end
+
 function BP_AppearanceActor_C:HideDrawCardShowMatEffect()
   if self.ChildActor.ChildActor then
     self.ChildActor.ChildActor:HideDrawCardShowMatEffect()
   end
 end
+
 return BP_AppearanceActor_C

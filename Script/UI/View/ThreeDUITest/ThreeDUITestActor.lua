@@ -1,16 +1,21 @@
 local ThreeDUITestData = require("Modules.ThreeDUITest.ThreeDUITestData")
 local ThreeDUITestActor = Class()
+
 function ThreeDUITestActor:OnInit()
 end
+
 function ThreeDUITestActor:OnDestroy()
 end
+
 function ThreeDUITestActor:OnShow(...)
   self:InitWidgetItem()
   self:UpdateActived(true)
 end
+
 function ThreeDUITestActor:OnHide()
   self:UpdateActived(false)
 end
+
 function ThreeDUITestActor:HoverChanged(HoverWidget, PreviousHoverWidget)
   if HoverWidget then
     HoverWidget:GetWidget():Hover()
@@ -19,6 +24,7 @@ function ThreeDUITestActor:HoverChanged(HoverWidget, PreviousHoverWidget)
     PreviousHoverWidget:GetWidget():UnHover()
   end
 end
+
 function ThreeDUITestActor:InitWidgetItem()
   for i, v in ipairs(ThreeDUITestData.ItemData) do
     local str = "RGWidget" .. i
@@ -27,6 +33,7 @@ function ThreeDUITestActor:InitWidgetItem()
     end
   end
 end
+
 function ThreeDUITestActor:UpdateActived(bIsActived)
   self:SetActorHiddenInGame(not bIsActived)
   if bIsActived then
@@ -49,4 +56,5 @@ function ThreeDUITestActor:UpdateActived(bIsActived)
     end
   end
 end
+
 return ThreeDUITestActor

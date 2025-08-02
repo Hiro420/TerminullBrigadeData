@@ -1,0 +1,152 @@
+[
+  {
+    "Id": 1,
+    "LevelId": 30021,
+    "DifficultyName": "普通",
+    "FloorDescription": [
+      "<img id=\\\"ModeDown\\\"/>\u00A0 敌人词条等级：<CZ_HighLight>初级</>",
+      "<img id=\\\"ModeDown\\\"/>\u00A0 精英敌人等级：<CZ_HighLight>普通</>",
+      "<img id=\\\"ModeDown\\\"/>\u00A0 有几率遭遇特殊事件：<CZ_HighLight>数据屏障、战斗协助</>"
+    ],
+    "DropResources": [
+      99027,
+      99029,
+      240021
+    ],
+    "DropResourcesRatioKey": [
+      "99027",
+      "99029",
+      "240021"
+    ],
+    "DropResourcesRatioValue": [
+      "新",
+      "新",
+      "概率"
+    ],
+    "SmallIcon": "",
+    "DifficultyIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_01.Icon_Mode_01",
+    "BigIcon": "",
+    "PanelIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_01.Icon_Mode_Transparency_01",
+    "TicketID": 7
+  },
+  {
+    "Id": 2,
+    "LevelId": 30022,
+    "DifficultyName": "困难",
+    "FloorDescription": [
+      "<img id=\\\"ModeDown\\\"/>\u00A0 敌人词条等级：<CZ_HighLight>中级</>",
+      "<img id=\\\"ModeDown\\\"/>\u00A0 精英敌人等级：<CZ_HighLight>困难</>",
+      "<img id=\\\"ModeDown\\\"/>\u00A0 有几率遭遇特殊事件：<CZ_HighLight>数据屏障、战斗协助</>"
+    ],
+    "DropResources": [
+      99027,
+      99029,
+      240021
+    ],
+    "DropResourcesRatioKey": [
+      "99027",
+      "99029",
+      "240021"
+    ],
+    "DropResourcesRatioValue": [
+      "概率<img id=\\\"DropUP\\\"/>",
+      "概率<img id=\\\"DropUP\\\"/>",
+      "概率<img id=\\\"DropUP\\\"/>"
+    ],
+    "SmallIcon": "",
+    "DifficultyIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_02.Icon_Mode_02",
+    "BigIcon": "",
+    "PanelIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_02.Icon_Mode_Transparency_02",
+    "TicketID": 8
+  },
+  {
+    "Id": 3,
+    "LevelId": 30023,
+    "DifficultyName": "噩梦",
+    "FloorDescription": [
+      "<img id=\\\"ModeDown\\\"/>\u00A0 敌人词条等级：<CZ_HighLight>中级</>",
+      "<img id=\\\"ModeDown\\\"/>\u00A0 精英敌人等级：<CZ_HighLight>噩梦</>",
+      "<img id=\\\"ModeDown\\\"/>\u00A0 有几率遭遇特殊事件：<CZ_HighLight>数据屏障、战斗协助</>"
+    ],
+    "DropResources": [
+      99027,
+      99029,
+      240021
+    ],
+    "DropResourcesRatioKey": [
+      "99027",
+      "99029",
+      "240021"
+    ],
+    "DropResourcesRatioValue": [
+      "概率<img id=\\\"DropUP\\\"/>",
+      "概率<img id=\\\"DropUP\\\"/>",
+      "概率<img id=\\\"DropUP\\\"/>"
+    ],
+    "SmallIcon": "",
+    "DifficultyIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_03.Icon_Mode_03",
+    "BigIcon": "",
+    "PanelIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_03.Icon_Mode_Transparency_03",
+    "TicketID": 9
+  },
+  {
+    "Id": 4,
+    "LevelId": 30024,
+    "DifficultyName": "地狱",
+    "FloorDescription": [
+      "<img id=\\\"ModeDown\\\"/>\u00A0 敌人词条等级：<CZ_HighLight>高级</>",
+      "<img id=\\\"ModeDown\\\"/>\u00A0 精英敌人等级：<CZ_HighLight>地狱</>",
+      "<img id=\\\"ModeDown\\\"/>\u00A0 有几率遭遇特殊事件：<CZ_HighLight>数据屏障、战斗协助</>"
+    ],
+    "DropResources": [
+      99027,
+      99029,
+      240021
+    ],
+    "DropResourcesRatioKey": [
+      "99027",
+      "99029",
+      "240021"
+    ],
+    "DropResourcesRatioValue": [
+      "概率<img id=\\\"DropUP\\\"/>",
+      "概率<img id=\\\"DropUP\\\"/>",
+      "概率<img id=\\\"DropUP\\\"/>"
+    ],
+    "SmallIcon": "",
+    "DifficultyIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_04.Icon_Mode_04",
+    "BigIcon": "",
+    "PanelIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_04.Icon_Mode_Transparency_04",
+    "TicketID": 10
+  },
+  {
+    "Id": 5,
+    "LevelId": 30025,
+    "DifficultyName": "狂潮",
+    "FloorDescription": [
+      "<img id=\\\"ModeDown\\\"/>\u00A0 敌人词条等级：<CZ_HighLight>高级</>",
+      "<img id=\\\"ModeDown\\\"/>\u00A0 精英敌人等级：<CZ_HighLight>狂潮</>",
+      "<img id=\\\"ModeDown\\\"/>\u00A0 有几率遭遇特殊事件：<CZ_HighLight>数据屏障、战斗协助</>"
+    ],
+    "DropResources": [
+      99027,
+      99029,
+      240021
+    ],
+    "DropResourcesRatioKey": [
+      "99027",
+      "99029",
+      "240021"
+    ],
+    "DropResourcesRatioValue": [
+      "概率<img id=\\\"DropUP\\\"/>",
+      "概率<img id=\\\"DropUP\\\"/>",
+      "概率<img id=\\\"DropUP\\\"/>"
+    ],
+    "SmallIcon": "",
+    "DifficultyIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_05.Icon_Mode_05",
+    "BigIcon": "",
+    "PanelIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_05.Icon_Mode_Transparency_05",
+    "TicketID": 11
+  }
+]

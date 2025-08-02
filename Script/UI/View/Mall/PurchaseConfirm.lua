@@ -5,6 +5,7 @@ local rapidjson = require("rapidjson")
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local SkinHandler = require("Protocol.Appearance.Skin.SkinHandler")
 local PurchaseConfirm = Class(ViewBase)
+
 function PurchaseConfirm:OnBindUIInput()
   if IsListeningForInputAction(self, "PauseGame") then
     StopListeningForInputAction(self, "PauseGame", UE.EInputEvent.IE_Pressed)
@@ -17,6 +18,7 @@ function PurchaseConfirm:OnBindUIInput()
   self.WBP_InteractTipWidgetBuyLeft:BindInteractAndClickEvent(self, self.OnSingleBuyBtnLeftClicked)
   self.WBP_InteractTipWidgetBuyRight:BindInteractAndClickEvent(self, self.OnSingleBuyBtnRightClicked)
 end
+
 function PurchaseConfirm:OnUnBindUIInput()
   if IsListeningForInputAction(self, "PauseGame") then
     StopListeningForInputAction(self, "PauseGame", UE.EInputEvent.IE_Pressed)
@@ -25,21 +27,26 @@ function PurchaseConfirm:OnUnBindUIInput()
   self.WBP_InteractTipWidgetBuyLeft:UnBindInteractAndClickEvent(self, self.OnSingleBuyBtnLeftClicked)
   self.WBP_InteractTipWidgetBuyRight:UnBindInteractAndClickEvent(self, self.OnSingleBuyBtnRightClicked)
 end
+
 function PurchaseConfirm:BindClickHandler()
   self.Btn1.OnClicked:Add(self, self.OnSingleBuyBtnClicked)
   self.Btn2.OnClicked:Add(self, self.OnSingleBuyBtnLeftClicked)
   self.Btn3.OnClicked:Add(self, self.OnSingleBuyBtnRightClicked)
 end
+
 function PurchaseConfirm:UnBindClickHandler()
 end
+
 function PurchaseConfirm:OnInit()
   self.DataBindTable = {}
   self.ViewModel = UIModelMgr:Get("PurchaseConfirmViewModel")
   self:BindClickHandler()
 end
+
 function PurchaseConfirm:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function PurchaseConfirm:OnShow(GoodsId, shelfID, CurAmount, InitAmount)
   if nil == CurAmount then
     CurAmount = 0
@@ -84,9 +91,11 @@ function PurchaseConfirm:OnShow(GoodsId, shelfID, CurAmount, InitAmount)
   self:OnSelNumChange(InitAmount)
   self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Add(self, self.CloseWindow)
 end
+
 function PurchaseConfirm:CloseWindow()
   UIMgr:Hide(ViewID.UI_Mall_PurchaseConfirm, true)
 end
+
 function PurchaseConfirm:IsOptional(ResourcesID)
   local TBGeneral = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   if TBGeneral[ResourcesID] then
@@ -94,12 +103,14 @@ function PurchaseConfirm:IsOptional(ResourcesID)
   end
   return false
 end
+
 function PurchaseConfirm:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
   end
   self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Remove(self, self.CloseWindow)
 end
+
 function PurchaseConfirm:Buy()
   local bConsume, ConsumeNum = self:CheckGoodsType()
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBResourceExchange, self.resourceID)
@@ -186,6 +197,7 @@ function PurchaseConfirm:Buy()
     OnConfirmClick({nil})
   end
 end
+
 function PurchaseConfirm:CheckGoodsType()
   local ConsumeNum = self.resourceNum * self.SelectNum
   local GoddsId = tonumber(self.GoodsId)
@@ -202,10 +214,12 @@ function PurchaseConfirm:CheckGoodsType()
   end
   return ConsumeNum <= CurNum, ConsumeNum - CurNum
 end
+
 function PurchaseConfirm:OnBuyTime(StartTime, EndTime)
   local CurTimeTemp = os.time()
   return tonumber(StartTime) <= tonumber(CurTimeTemp) and tonumber(CurTimeTemp) <= tonumber(EndTime)
 end
+
 function PurchaseConfirm:OnSingleBuyBtnClicked()
   if 0 ~= self.Switcher:GetActiveWidgetIndex() then
     return
@@ -218,6 +232,7 @@ function PurchaseConfirm:OnSingleBuyBtnClicked()
     self:Buy()
   end
 end
+
 function PurchaseConfirm:OnSingleBuyBtnLeftClicked()
   if 1 ~= self.Switcher:GetActiveWidgetIndex() then
     return
@@ -230,6 +245,7 @@ function PurchaseConfirm:OnSingleBuyBtnLeftClicked()
     self:Buy()
   end
 end
+
 function PurchaseConfirm:OnSingleBuyBtnRightClicked()
   if 1 ~= self.Switcher:GetActiveWidgetIndex() then
     return
@@ -242,6 +258,7 @@ function PurchaseConfirm:OnSingleBuyBtnRightClicked()
     self:Buy()
   end
 end
+
 function PurchaseConfirm:OnSelNumChange(Num)
   self.SelectNum = Num
   local TBMall = LuaTableMgr.GetLuaTableByName(TableNames.TBMall)
@@ -255,4 +272,5 @@ function PurchaseConfirm:OnSelNumChange(Num)
     end
   end
 end
+
 return PurchaseConfirm

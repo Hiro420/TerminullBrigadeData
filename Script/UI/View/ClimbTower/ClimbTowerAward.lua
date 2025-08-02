@@ -1,5 +1,6 @@
 local ClimbTowerData = require("UI.View.ClimbTower.ClimbTowerData")
 local ClimbTowerAward = UnLua.Class()
+
 function ClimbTowerAward:InitClimbTowerAward(Floor)
   local PassFloor = 0
   if ClimbTowerData.PassData and ClimbTowerData.PassData[tostring(ClimbTowerData.WorldId)] then
@@ -61,6 +62,8 @@ function ClimbTowerAward:InitClimbTowerAward(Floor)
   end
   HideOtherItem(self.AwardList, Index, true)
 end
+
 function ClimbTowerAward:RefreshFloorDropPanel(Floor)
 end
+
 return ClimbTowerAward

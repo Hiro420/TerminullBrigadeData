@@ -47,6 +47,7 @@ local CheckShowINTLUnderAgeTip = function()
   end
   return false
 end
+
 function TopupHandler:RequestBuyMisdasProduct(ProductId, Quantity)
   if not ProductId or not Quantity then
     return
@@ -172,6 +173,7 @@ function TopupHandler:RequestBuyMisdasProduct(ProductId, Quantity)
     return true
   end
 end
+
 function TopupHandler:RequestGetAllProductInfo()
   if not TopupData:IsExecuteINTLPayLogic() then
     return
@@ -180,6 +182,7 @@ function TopupHandler:RequestGetAllProductInfo()
   local Result = UE.URGPlatformFunctionLibrary.CTIGetProductInfo(AllMidasProductId)
   print("TopupHandler:RequestGetAllProductInfo", Result)
 end
+
 function TopupHandler:RequestPaymentCurrencyAfterPay()
   local PaymentCurrencyTable = LuaTableMgr.GetLuaTableByName(TableNames.TBPaymentCurrency)
   local CurrenctIdList = {}
@@ -224,6 +227,7 @@ function TopupHandler:RequestPaymentCurrencyAfterPay()
     end
   })
 end
+
 function TopupHandler:JumpToTopupPanel()
   ShowWaveWindowWithDelegate(-11, {}, {
     GameInstance,
@@ -244,4 +248,5 @@ function TopupHandler:JumpToTopupPanel()
     end
   })
 end
+
 return TopupHandler

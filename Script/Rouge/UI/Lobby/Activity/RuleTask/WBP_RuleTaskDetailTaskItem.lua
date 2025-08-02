@@ -1,8 +1,10 @@
 local WBP_RuleTaskDetailTaskItem = UnLua.Class()
 local RuleTaskData = require("Modules.RuleTask.RuleTaskData")
+
 function WBP_RuleTaskDetailTaskItem:Construct()
   self.Btn_Receive.OnMainButtonClicked:Add(self, self.BindOnReceiveButtonClicked)
 end
+
 function WBP_RuleTaskDetailTaskItem:Show(TaskId, TaskGroupId, IsMainTaskGroup, MainTaskBottomColor)
   UpdateVisibility(self, true)
   UpdateVisibility(self.Overlay_MainTaskFlag, IsMainTaskGroup)
@@ -26,6 +28,7 @@ function WBP_RuleTaskDetailTaskItem:Show(TaskId, TaskGroupId, IsMainTaskGroup, M
   self:RefreshTaskStatus()
   self:ChangeLineVis(false)
 end
+
 function WBP_RuleTaskDetailTaskItem:RefreshTaskStatus()
   if not self:CanRefreshTaskStatus() then
     return
@@ -51,9 +54,11 @@ function WBP_RuleTaskDetailTaskItem:RefreshTaskStatus()
   self.Btn_Receive:SetStyleByBottomStyleRowName(StyleName)
   self.Btn_Receive:SetContentText(ContentText)
 end
+
 function WBP_RuleTaskDetailTaskItem:CanRefreshTaskStatus()
   return -1 ~= self.TaskGroupId and -1 ~= self.TaskId
 end
+
 function WBP_RuleTaskDetailTaskItem:BindOnReceiveButtonClicked(...)
   local TaskState = RuleTaskData:GetTaskState(self.TaskId)
   if TaskState ~= ETaskState.Finished then
@@ -61,12 +66,15 @@ function WBP_RuleTaskDetailTaskItem:BindOnReceiveButtonClicked(...)
   end
   Logic_MainTask.ReceiveAward(self.TaskGroupId, self.TaskId)
 end
+
 function WBP_RuleTaskDetailTaskItem:ChangeLineVis(IsShow)
   UpdateVisibility(self.URGImage_Line, IsShow)
 end
+
 function WBP_RuleTaskDetailTaskItem:Hide()
   UpdateVisibility(self, false)
   self.TaskId = -1
   self.TaskGroupId = -1
 end
+
 return WBP_RuleTaskDetailTaskItem

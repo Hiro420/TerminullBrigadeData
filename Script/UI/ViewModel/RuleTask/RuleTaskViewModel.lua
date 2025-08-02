@@ -11,13 +11,16 @@ RuleTaskViewModel.propertyBindings = {
   BasicInfo = {}
 }
 RuleTaskViewModel.subViewModels = {}
+
 function RuleTaskViewModel:OnInit()
   self.Super.OnInit(self)
 end
+
 function RuleTaskViewModel:InitInfo(ActivityId)
   self.ActivityId = ActivityId
   self:DealWithTable()
 end
+
 function RuleTaskViewModel:DealWithTable(...)
   self.MainTaskGroupIdList = {}
   local Result, ActivityRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBRuleTask, self.ActivityId)
@@ -30,9 +33,11 @@ function RuleTaskViewModel:DealWithTable(...)
     end
   end
 end
+
 function RuleTaskViewModel:GetMainTaskGroupList()
   return self.MainTaskGroupIdList
 end
+
 function RuleTaskViewModel:GetAllTaskGroupList()
   local Result, ActivityRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBActivityGeneral, self.ActivityId)
   if Result then
@@ -40,7 +45,9 @@ function RuleTaskViewModel:GetAllTaskGroupList()
   end
   return {}
 end
+
 function RuleTaskViewModel:OnShutdown()
   self.Super.OnShutdown(self)
 end
+
 return RuleTaskViewModel

@@ -1,9 +1,11 @@
 local HeirloomChildItemView = UnLua.Class()
+
 function HeirloomChildItemView:Construct()
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
   self.Btn_Main.OnHovered:Add(self, self.BindOnMainButtonHovered)
   self.Btn_Main.OnUnhovered:Add(self, self.BindOnMainButtonUnhovered)
 end
+
 function HeirloomChildItemView:Show(ResourceId)
   self.ResourceId = ResourceId
   local GeneralResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
@@ -37,23 +39,28 @@ function HeirloomChildItemView:Show(ResourceId)
   end
   EventSystem.AddListener(self, EventDef.Heirloom.OnHeirloomSelectedItemChanged, self.BindOnHeirloomSelectedItemChanged)
 end
+
 function HeirloomChildItemView:BindOnMainButtonClicked()
   if self.CurSelectedResourceId ~= self.ResourceId then
     EventSystem.Invoke(EventDef.Heirloom.OnHeirloomSelectedItemChanged, self.ResourceId)
   end
 end
+
 function HeirloomChildItemView:BindOnMainButtonHovered()
   self.HoveredPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self:PlayAnimationForward(self.Ani_hover_in)
 end
+
 function HeirloomChildItemView:BindOnMainButtonUnhovered()
   self:PlayAnimationForward(self.Ani_hover_out)
 end
+
 function HeirloomChildItemView:OnAnimationFinished(Animation)
   if Animation == self.Ani_hover_out then
     self.HoveredPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function HeirloomChildItemView:RefreshSelectedStatus(ResourceId)
   self.CurSelectedResourceId = ResourceId
   if ResourceId == self.ResourceId then
@@ -66,9 +73,11 @@ function HeirloomChildItemView:RefreshSelectedStatus(ResourceId)
     UpdateVisibility(self.SelectPanel, false)
   end
 end
+
 function HeirloomChildItemView:Hide()
   self.ResourceId = -1
   self.CurSelectedResourceId = -1
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return HeirloomChildItemView

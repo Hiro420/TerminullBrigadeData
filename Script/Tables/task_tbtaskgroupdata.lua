@@ -882,6 +882,30 @@ local task_tbtaskgroupdata = {
     starttime = "",
     endtime = ""
   },
+  [1136] = {
+    id = 1136,
+    nameLocMeta = NSLOCTEXT("task_TBTaskGroupData", "name_1136", "\228\191\174\230\173\163\232\161\140\229\138\168"),
+    icon = "",
+    image = "",
+    titleLocMeta = NSLOCTEXT("task_TBTaskGroupData", "title_1136", ""),
+    contentLocMeta = NSLOCTEXT("task_TBTaskGroupData", "content_1136", ""),
+    tasklist = {
+      113601,
+      113602,
+      113603,
+      113604
+    },
+    rewardlist = {},
+    autoreward = false,
+    reset = 0,
+    discarded = false,
+    enable = true,
+    eventtrigger = false,
+    resetautosendtomail = false,
+    resourceslimit = {},
+    starttime = "",
+    endtime = ""
+  },
   [100101] = {
     id = 100101,
     nameLocMeta = NSLOCTEXT("task_TBTaskGroupData", "name_100101", "\227\128\144\229\164\135\230\179\168\227\128\145\229\137\167\230\131\133\231\179\187\231\187\159\231\186\191\231\180\162101"),
@@ -1146,8 +1170,8 @@ local task_tbtaskgroupdata = {
     rewardlist = {},
     autoreward = false,
     reset = 2,
-    discarded = false,
-    enable = true,
+    discarded = true,
+    enable = false,
     eventtrigger = false,
     resetautosendtomail = true,
     resourceslimit = {
@@ -1181,8 +1205,8 @@ local task_tbtaskgroupdata = {
     rewardlist = {},
     autoreward = false,
     reset = 0,
-    discarded = false,
-    enable = true,
+    discarded = true,
+    enable = false,
     eventtrigger = false,
     resetautosendtomail = false,
     resourceslimit = {},
@@ -1533,7 +1557,7 @@ local task_tbtaskgroupdata = {
       2001134
     },
     rewardlist = {
-      {key = 20720202, value = 1}
+      {key = 20720203, value = 1}
     },
     autoreward = false,
     reset = 0,

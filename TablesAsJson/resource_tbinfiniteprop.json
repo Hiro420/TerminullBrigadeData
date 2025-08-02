@@ -1,4032 +1,4019 @@
 ﻿{
   "2021005": {
-    "unlockMethodJump": "",
-    "ID": 2021005,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2021005"
+      "InKey": "unlockMethodDesc_2021005",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021005,
+    "infinitePropType": 1
   },
   "2021006": {
-    "unlockMethodJump": "",
-    "ID": 2021006,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2021006"
+      "InKey": "unlockMethodDesc_2021006",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021006,
+    "infinitePropType": 1
   },
   "2021007": {
-    "unlockMethodJump": "",
-    "ID": 2021007,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2021007"
+      "InKey": "unlockMethodDesc_2021007",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021007,
+    "infinitePropType": 1
   },
   "2021008": {
-    "unlockMethodJump": "",
-    "ID": 2021008,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2021008"
+      "InKey": "unlockMethodDesc_2021008",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021008,
+    "infinitePropType": 1
   },
   "2021009": {
-    "unlockMethodJump": "",
-    "ID": 2021009,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2021009"
+      "InKey": "unlockMethodDesc_2021009",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021009,
+    "infinitePropType": 1
   },
   "2021011": {
-    "unlockMethodJump": "",
-    "ID": 2021011,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2021011"
+      "InKey": "unlockMethodDesc_2021011",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021011,
+    "infinitePropType": 1
   },
   "2021012": {
-    "unlockMethodJump": "",
-    "ID": 2021012,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2021012"
+      "InKey": "unlockMethodDesc_2021012",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021012,
+    "infinitePropType": 1
   },
   "2021013": {
-    "unlockMethodJump": "",
-    "ID": 2021013,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2021013"
+      "InKey": "unlockMethodDesc_2021013",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021013,
+    "infinitePropType": 1
   },
   "2021014": {
-    "unlockMethodJump": "",
-    "ID": 2021014,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2021014"
+      "InKey": "unlockMethodDesc_2021014",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021014,
+    "infinitePropType": 1
   },
   "2021015": {
-    "unlockMethodJump": "",
-    "ID": 2021015,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2021015"
+      "InKey": "unlockMethodDesc_2021015",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021015,
+    "infinitePropType": 1
   },
   "2021016": {
-    "unlockMethodJump": "",
-    "ID": 2021016,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2021016"
+      "InKey": "unlockMethodDesc_2021016",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021016,
+    "infinitePropType": 1
   },
   "2021017": {
-    "unlockMethodJump": "",
-    "ID": 2021017,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2021017"
+      "InKey": "unlockMethodDesc_2021017",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021017,
+    "infinitePropType": 1
   },
   "2021018": {
-    "unlockMethodJump": "",
-    "ID": 2021018,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2021018"
+      "InKey": "unlockMethodDesc_2021018",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021018,
+    "infinitePropType": 1
   },
   "2021019": {
-    "unlockMethodJump": "",
-    "ID": 2021019,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2021019"
+      "InKey": "unlockMethodDesc_2021019",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021019,
+    "infinitePropType": 1
   },
   "9040116": {
-    "unlockMethodJump": "",
-    "ID": 9040116,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_9040116"
+      "InKey": "unlockMethodDesc_9040116",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 9040116,
+    "infinitePropType": 1
   },
   "9040117": {
-    "unlockMethodJump": "",
-    "ID": 9040117,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_9040117"
+      "InKey": "unlockMethodDesc_9040117",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 9040117,
+    "infinitePropType": 1
   },
   "9040118": {
-    "unlockMethodJump": "",
-    "ID": 9040118,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_9040118"
+      "InKey": "unlockMethodDesc_9040118",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 9040118,
+    "infinitePropType": 1
   },
   "2020001": {
-    "unlockMethodJump": "",
-    "ID": 2020001,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020001"
+      "InKey": "unlockMethodDesc_2020001",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020001,
+    "infinitePropType": 1
   },
   "2020002": {
-    "unlockMethodJump": "",
-    "ID": 2020002,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020002"
+      "InKey": "unlockMethodDesc_2020002",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020002,
+    "infinitePropType": 1
   },
   "2020003": {
-    "unlockMethodJump": "",
-    "ID": 2020003,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020003"
+      "InKey": "unlockMethodDesc_2020003",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020003,
+    "infinitePropType": 1
   },
   "9040122": {
-    "unlockMethodJump": "",
-    "ID": 9040122,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_9040122"
+      "InKey": "unlockMethodDesc_9040122",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 9040122,
+    "infinitePropType": 1
   },
   "9040123": {
-    "unlockMethodJump": "",
-    "ID": 9040123,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_9040123"
+      "InKey": "unlockMethodDesc_9040123",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 9040123,
+    "infinitePropType": 1
   },
   "9040124": {
-    "unlockMethodJump": "",
-    "ID": 9040124,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_9040124"
+      "InKey": "unlockMethodDesc_9040124",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 9040124,
+    "infinitePropType": 1
   },
   "9040125": {
-    "unlockMethodJump": "",
-    "ID": 9040125,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_9040125"
+      "InKey": "unlockMethodDesc_9040125",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 9040125,
+    "infinitePropType": 1
   },
   "2020011": {
-    "unlockMethodJump": "",
-    "ID": 2020011,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020011"
+      "InKey": "unlockMethodDesc_2020011",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020011,
+    "infinitePropType": 1
   },
   "2020012": {
-    "unlockMethodJump": "",
-    "ID": 2020012,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020012"
+      "InKey": "unlockMethodDesc_2020012",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020012,
+    "infinitePropType": 1
   },
   "2020013": {
-    "unlockMethodJump": "",
-    "ID": 2020013,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020013"
+      "InKey": "unlockMethodDesc_2020013",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020013,
+    "infinitePropType": 1
   },
   "8040105": {
-    "unlockMethodJump": "",
-    "ID": 8040105,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8040105"
+      "InKey": "unlockMethodDesc_8040105",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8040105,
+    "infinitePropType": 2
   },
   "8040106": {
-    "unlockMethodJump": "",
-    "ID": 8040106,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8040106"
+      "InKey": "unlockMethodDesc_8040106",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8040106,
+    "infinitePropType": 2
   },
   "2020021": {
-    "unlockMethodJump": "",
-    "ID": 2020021,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020021"
+      "InKey": "unlockMethodDesc_2020021",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020021,
+    "infinitePropType": 1
   },
   "2020022": {
-    "unlockMethodJump": "",
-    "ID": 2020022,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020022"
+      "InKey": "unlockMethodDesc_2020022",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020022,
+    "infinitePropType": 1
   },
   "2020023": {
-    "unlockMethodJump": "",
-    "ID": 2020023,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020023"
+      "InKey": "unlockMethodDesc_2020023",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020023,
+    "infinitePropType": 1
   },
   "2020031": {
-    "unlockMethodJump": "",
-    "ID": 2020031,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020031"
+      "InKey": "unlockMethodDesc_2020031",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020031,
+    "infinitePropType": 1
   },
   "2020032": {
-    "unlockMethodJump": "",
-    "ID": 2020032,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020032"
+      "InKey": "unlockMethodDesc_2020032",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020032,
+    "infinitePropType": 1
   },
   "2020033": {
-    "unlockMethodJump": "",
-    "ID": 2020033,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020033"
+      "InKey": "unlockMethodDesc_2020033",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020033,
+    "infinitePropType": 1
   },
   "2020041": {
-    "unlockMethodJump": "",
-    "ID": 2020041,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020041"
+      "InKey": "unlockMethodDesc_2020041",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020041,
+    "infinitePropType": 1
   },
   "2020042": {
-    "unlockMethodJump": "",
-    "ID": 2020042,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020042"
+      "InKey": "unlockMethodDesc_2020042",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020042,
+    "infinitePropType": 1
   },
   "2020043": {
-    "unlockMethodJump": "",
-    "ID": 2020043,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020043"
+      "InKey": "unlockMethodDesc_2020043",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020043,
+    "infinitePropType": 1
   },
   "2020051": {
-    "unlockMethodJump": "",
-    "ID": 2020051,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020051"
+      "InKey": "unlockMethodDesc_2020051",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020051,
+    "infinitePropType": 1
   },
   "2020052": {
-    "unlockMethodJump": "",
-    "ID": 2020052,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020052"
+      "InKey": "unlockMethodDesc_2020052",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020052,
+    "infinitePropType": 1
   },
   "2020053": {
-    "unlockMethodJump": "",
-    "ID": 2020053,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020053"
+      "InKey": "unlockMethodDesc_2020053",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020053,
+    "infinitePropType": 1
   },
   "2020061": {
-    "unlockMethodJump": "",
-    "ID": 2020061,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020061"
+      "InKey": "unlockMethodDesc_2020061",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020061,
+    "infinitePropType": 1
   },
   "2020062": {
-    "unlockMethodJump": "",
-    "ID": 2020062,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020062"
+      "InKey": "unlockMethodDesc_2020062",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020062,
+    "infinitePropType": 1
   },
   "2020063": {
-    "unlockMethodJump": "",
-    "ID": 2020063,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020063"
+      "InKey": "unlockMethodDesc_2020063",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020063,
+    "infinitePropType": 1
   },
   "8990105": {
-    "unlockMethodJump": "",
-    "ID": 8990105,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8990105"
+      "InKey": "unlockMethodDesc_8990105",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8990105,
+    "infinitePropType": 2
   },
   "2020071": {
-    "unlockMethodJump": "",
-    "ID": 2020071,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020071"
+      "InKey": "unlockMethodDesc_2020071",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020071,
+    "infinitePropType": 1
   },
   "2020072": {
-    "unlockMethodJump": "",
-    "ID": 2020072,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020072"
+      "InKey": "unlockMethodDesc_2020072",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020072,
+    "infinitePropType": 1
   },
   "2020073": {
-    "unlockMethodJump": "",
-    "ID": 2020073,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020073"
+      "InKey": "unlockMethodDesc_2020073",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020073,
+    "infinitePropType": 1
   },
   "2091103": {
-    "unlockMethodJump": "",
-    "ID": 2091103,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2091103"
+      "InKey": "unlockMethodDesc_2091103",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2091103,
+    "infinitePropType": 1
   },
   "2091104": {
-    "unlockMethodJump": "",
-    "ID": 2091104,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2091104"
+      "InKey": "unlockMethodDesc_2091104",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2091104,
+    "infinitePropType": 1
   },
   "2091105": {
-    "unlockMethodJump": "",
-    "ID": 2091105,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2091105"
+      "InKey": "unlockMethodDesc_2091105",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2091105,
+    "infinitePropType": 1
   },
   "2091106": {
-    "unlockMethodJump": "",
-    "ID": 2091106,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2091106"
+      "InKey": "unlockMethodDesc_2091106",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2091106,
+    "infinitePropType": 1
   },
   "2091107": {
-    "unlockMethodJump": "",
-    "ID": 2091107,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2091107"
+      "InKey": "unlockMethodDesc_2091107",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2091107,
+    "infinitePropType": 1
   },
   "2091108": {
-    "unlockMethodJump": "",
-    "ID": 2091108,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2091108"
+      "InKey": "unlockMethodDesc_2091108",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2091108,
+    "infinitePropType": 1
   },
   "2091109": {
-    "unlockMethodJump": "",
-    "ID": 2091109,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2091109"
+      "InKey": "unlockMethodDesc_2091109",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2091109,
+    "infinitePropType": 1
   },
   "2020081": {
-    "unlockMethodJump": "",
-    "ID": 2020081,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020081"
+      "InKey": "unlockMethodDesc_2020081",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020081,
+    "infinitePropType": 1
   },
   "2020082": {
-    "unlockMethodJump": "",
-    "ID": 2020082,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020082"
+      "InKey": "unlockMethodDesc_2020082",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020082,
+    "infinitePropType": 1
   },
   "2020083": {
-    "unlockMethodJump": "",
-    "ID": 2020083,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020083"
+      "InKey": "unlockMethodDesc_2020083",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020083,
+    "infinitePropType": 1
   },
   "2091113": {
-    "unlockMethodJump": "",
-    "ID": 2091113,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2091113"
+      "InKey": "unlockMethodDesc_2091113",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2091113,
+    "infinitePropType": 1
   },
   "8060105": {
-    "unlockMethodJump": "",
-    "ID": 8060105,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8060105"
+      "InKey": "unlockMethodDesc_8060105",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8060105,
+    "infinitePropType": 2
   },
   "8060106": {
-    "unlockMethodJump": "",
-    "ID": 8060106,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8060106"
+      "InKey": "unlockMethodDesc_8060106",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8060106,
+    "infinitePropType": 2
   },
   "2091116": {
-    "unlockMethodJump": "",
-    "ID": 2091116,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2091116"
+      "InKey": "unlockMethodDesc_2091116",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2091116,
+    "infinitePropType": 1
   },
   "2020091": {
-    "unlockMethodJump": "",
-    "ID": 2020091,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020091"
+      "InKey": "unlockMethodDesc_2020091",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020091,
+    "infinitePropType": 1
   },
   "2020092": {
-    "unlockMethodJump": "",
-    "ID": 2020092,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020092"
+      "InKey": "unlockMethodDesc_2020092",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020092,
+    "infinitePropType": 1
   },
   "2020093": {
-    "unlockMethodJump": "",
-    "ID": 2020093,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020093"
+      "InKey": "unlockMethodDesc_2020093",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020093,
+    "infinitePropType": 1
   },
   "2020101": {
-    "unlockMethodJump": "",
-    "ID": 2020101,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020101"
+      "InKey": "unlockMethodDesc_2020101",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020101,
+    "infinitePropType": 1
   },
   "2020102": {
-    "unlockMethodJump": "",
-    "ID": 2020102,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020102"
+      "InKey": "unlockMethodDesc_2020102",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020102,
+    "infinitePropType": 1
   },
   "2020103": {
-    "unlockMethodJump": "",
-    "ID": 2020103,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020103"
+      "InKey": "unlockMethodDesc_2020103",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020103,
+    "infinitePropType": 1
   },
   "2020111": {
-    "unlockMethodJump": "",
-    "ID": 2020111,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020111"
+      "InKey": "unlockMethodDesc_2020111",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020111,
+    "infinitePropType": 1
   },
   "2020112": {
-    "unlockMethodJump": "",
-    "ID": 2020112,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020112"
+      "InKey": "unlockMethodDesc_2020112",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020112,
+    "infinitePropType": 1
   },
   "2020113": {
-    "unlockMethodJump": "",
-    "ID": 2020113,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020113"
+      "InKey": "unlockMethodDesc_2020113",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020113,
+    "infinitePropType": 1
   },
   "2061000": {
-    "unlockMethodJump": "",
-    "ID": 2061000,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2061000"
+      "InKey": "unlockMethodDesc_2061000",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2061000,
+    "infinitePropType": 1
   },
   "2020121": {
-    "unlockMethodJump": "",
-    "ID": 2020121,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020121"
+      "InKey": "unlockMethodDesc_2020121",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020121,
+    "infinitePropType": 1
   },
   "2020122": {
-    "unlockMethodJump": "",
-    "ID": 2020122,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020122"
+      "InKey": "unlockMethodDesc_2020122",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020122,
+    "infinitePropType": 1
   },
   "2020123": {
-    "unlockMethodJump": "",
-    "ID": 2020123,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020123"
+      "InKey": "unlockMethodDesc_2020123",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020123,
+    "infinitePropType": 1
   },
   "2990002": {
-    "unlockMethodJump": "",
-    "ID": 2990002,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2990002"
+      "InKey": "unlockMethodDesc_2990002",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2990002,
+    "infinitePropType": 1
   },
   "2990003": {
-    "unlockMethodJump": "",
-    "ID": 2990003,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2990003"
+      "InKey": "unlockMethodDesc_2990003",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2990003,
+    "infinitePropType": 1
   },
   "2990004": {
-    "unlockMethodJump": "",
-    "ID": 2990004,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2990004"
+      "InKey": "unlockMethodDesc_2990004",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2990004,
+    "infinitePropType": 1
   },
   "2990005": {
-    "unlockMethodJump": "",
-    "ID": 2990005,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2990005"
+      "InKey": "unlockMethodDesc_2990005",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2990005,
+    "infinitePropType": 1
   },
   "2990006": {
-    "unlockMethodJump": "",
-    "ID": 2990006,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2990006"
+      "InKey": "unlockMethodDesc_2990006",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2990006,
+    "infinitePropType": 1
   },
   "2990007": {
-    "unlockMethodJump": "",
-    "ID": 2990007,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "完成场对局解锁",
-      "InKey": "unlockMethodDesc_2990007"
+      "InKey": "unlockMethodDesc_2990007",
+      "InTextLiteral": "完成场对局解锁"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 300105,
-    "backgroundEffect": ""
+    "ID": 2990007,
+    "infinitePropType": 1
   },
   "2990008": {
-    "unlockMethodJump": "",
-    "ID": 2990008,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "完成场对局解锁",
-      "InKey": "unlockMethodDesc_2990008"
+      "InKey": "unlockMethodDesc_2990008",
+      "InTextLiteral": "完成场对局解锁"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 300104,
-    "backgroundEffect": ""
+    "ID": 2990008,
+    "infinitePropType": 1
   },
   "2020131": {
-    "unlockMethodJump": "",
-    "ID": 2020131,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020131"
+      "InKey": "unlockMethodDesc_2020131",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020131,
+    "infinitePropType": 1
   },
   "2020132": {
-    "unlockMethodJump": "",
-    "ID": 2020132,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020132"
+      "InKey": "unlockMethodDesc_2020132",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020132,
+    "infinitePropType": 1
   },
   "2020133": {
-    "unlockMethodJump": "",
-    "ID": 2020133,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020133"
+      "InKey": "unlockMethodDesc_2020133",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020133,
+    "infinitePropType": 1
   },
   "2990012": {
-    "unlockMethodJump": "",
-    "ID": 2990012,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "完成场对局解锁",
-      "InKey": "unlockMethodDesc_2990012"
+      "InKey": "unlockMethodDesc_2990012",
+      "InTextLiteral": "完成场对局解锁"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 300101,
-    "backgroundEffect": ""
+    "ID": 2990012,
+    "infinitePropType": 1
   },
   "2990013": {
-    "unlockMethodJump": "",
-    "ID": 2990013,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "完成场对局解锁",
-      "InKey": "unlockMethodDesc_2990013"
+      "InKey": "unlockMethodDesc_2990013",
+      "InTextLiteral": "完成场对局解锁"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 300101,
-    "backgroundEffect": ""
+    "ID": 2990013,
+    "infinitePropType": 1
   },
   "2990014": {
-    "unlockMethodJump": "",
-    "ID": 2990014,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2990014"
+      "InKey": "unlockMethodDesc_2990014",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2990014,
+    "infinitePropType": 1
   },
   "2990015": {
-    "unlockMethodJump": "",
-    "ID": 2990015,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2990015"
+      "InKey": "unlockMethodDesc_2990015",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2990015,
+    "infinitePropType": 1
   },
   "2990016": {
-    "unlockMethodJump": "",
-    "ID": 2990016,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "完成场对局解锁",
-      "InKey": "unlockMethodDesc_2990016"
+      "InKey": "unlockMethodDesc_2990016",
+      "InTextLiteral": "完成场对局解锁"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 300102,
-    "backgroundEffect": ""
+    "ID": 2990016,
+    "infinitePropType": 1
   },
   "2990017": {
-    "unlockMethodJump": "",
-    "ID": 2990017,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "完成场对局解锁",
-      "InKey": "unlockMethodDesc_2990017"
+      "InKey": "unlockMethodDesc_2990017",
+      "InTextLiteral": "完成场对局解锁"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 300102,
-    "backgroundEffect": ""
+    "ID": 2990017,
+    "infinitePropType": 1
   },
   "2990018": {
-    "unlockMethodJump": "",
-    "ID": 2990018,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "完成场对局解锁",
-      "InKey": "unlockMethodDesc_2990018"
+      "InKey": "unlockMethodDesc_2990018",
+      "InTextLiteral": "完成场对局解锁"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 300105,
-    "backgroundEffect": ""
+    "ID": 2990018,
+    "infinitePropType": 1
   },
   "2020141": {
-    "unlockMethodJump": "",
-    "ID": 2020141,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020141"
+      "InKey": "unlockMethodDesc_2020141",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020141,
+    "infinitePropType": 1
   },
   "2020142": {
-    "unlockMethodJump": "",
-    "ID": 2020142,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020142"
+      "InKey": "unlockMethodDesc_2020142",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020142,
+    "infinitePropType": 1
   },
   "2020143": {
-    "unlockMethodJump": "",
-    "ID": 2020143,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020143"
+      "InKey": "unlockMethodDesc_2020143",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020143,
+    "infinitePropType": 1
   },
   "2990022": {
-    "unlockMethodJump": "",
-    "ID": 2990022,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2990022"
+      "InKey": "unlockMethodDesc_2990022",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2990022,
+    "infinitePropType": 1
   },
   "2990023": {
-    "unlockMethodJump": "",
-    "ID": 2990023,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2990023"
+      "InKey": "unlockMethodDesc_2990023",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2990023,
+    "infinitePropType": 1
   },
   "2990024": {
-    "unlockMethodJump": "",
-    "ID": 2990024,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2990024"
+      "InKey": "unlockMethodDesc_2990024",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2990024,
+    "infinitePropType": 1
   },
   "2990025": {
-    "unlockMethodJump": "",
-    "ID": 2990025,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2990025"
+      "InKey": "unlockMethodDesc_2990025",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2990025,
+    "infinitePropType": 1
   },
   "2990026": {
-    "unlockMethodJump": "",
-    "ID": 2990026,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2990026"
+      "InKey": "unlockMethodDesc_2990026",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2990026,
+    "infinitePropType": 1
   },
   "2020151": {
-    "unlockMethodJump": "",
-    "ID": 2020151,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020151"
+      "InKey": "unlockMethodDesc_2020151",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020151,
+    "infinitePropType": 1
   },
   "2020152": {
-    "unlockMethodJump": "",
-    "ID": 2020152,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020152"
+      "InKey": "unlockMethodDesc_2020152",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020152,
+    "infinitePropType": 1
   },
   "2020153": {
-    "unlockMethodJump": "",
-    "ID": 2020153,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020153"
+      "InKey": "unlockMethodDesc_2020153",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020153,
+    "infinitePropType": 1
   },
   "8080103": {
-    "unlockMethodJump": "",
-    "ID": 8080103,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8080103"
+      "InKey": "unlockMethodDesc_8080103",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8080103,
+    "infinitePropType": 2
   },
   "8080104": {
-    "unlockMethodJump": "",
-    "ID": 8080104,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8080104"
+      "InKey": "unlockMethodDesc_8080104",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8080104,
+    "infinitePropType": 2
   },
   "8080105": {
-    "unlockMethodJump": "",
-    "ID": 8080105,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8080105"
+      "InKey": "unlockMethodDesc_8080105",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8080105,
+    "infinitePropType": 2
   },
   "8010102": {
-    "unlockMethodJump": "",
-    "ID": 8010102,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8010102"
+      "InKey": "unlockMethodDesc_8010102",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8010102,
+    "infinitePropType": 2
   },
   "2020161": {
-    "unlockMethodJump": "",
-    "ID": 2020161,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020161"
+      "InKey": "unlockMethodDesc_2020161",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020161,
+    "infinitePropType": 1
   },
   "2020162": {
-    "unlockMethodJump": "",
-    "ID": 2020162,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020162"
+      "InKey": "unlockMethodDesc_2020162",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020162,
+    "infinitePropType": 1
   },
   "2020163": {
-    "unlockMethodJump": "",
-    "ID": 2020163,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020163"
+      "InKey": "unlockMethodDesc_2020163",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020163,
+    "infinitePropType": 1
   },
   "8010106": {
-    "unlockMethodJump": "",
-    "ID": 8010106,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8010106"
+      "InKey": "unlockMethodDesc_8010106",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8010106,
+    "infinitePropType": 2
   },
   "2020171": {
-    "unlockMethodJump": "",
-    "ID": 2020171,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020171"
+      "InKey": "unlockMethodDesc_2020171",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020171,
+    "infinitePropType": 1
   },
   "2020172": {
-    "unlockMethodJump": "",
-    "ID": 2020172,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020172"
+      "InKey": "unlockMethodDesc_2020172",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020172,
+    "infinitePropType": 1
   },
   "2020173": {
-    "unlockMethodJump": "",
-    "ID": 2020173,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2020173"
+      "InKey": "unlockMethodDesc_2020173",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2020173,
+    "infinitePropType": 1
   },
   "2081000": {
-    "unlockMethodJump": "",
-    "ID": 2081000,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2081000"
+      "InKey": "unlockMethodDesc_2081000",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2081000,
+    "infinitePropType": 1
   },
   "2081001": {
-    "unlockMethodJump": "",
-    "ID": 2081001,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2081001"
+      "InKey": "unlockMethodDesc_2081001",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2081001,
+    "infinitePropType": 1
   },
   "2081002": {
-    "unlockMethodJump": "",
-    "ID": 2081002,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2081002"
+      "InKey": "unlockMethodDesc_2081002",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2081002,
+    "infinitePropType": 1
   },
   "2081003": {
-    "unlockMethodJump": "",
-    "ID": 2081003,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2081003"
+      "InKey": "unlockMethodDesc_2081003",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2081003,
+    "infinitePropType": 1
   },
   "2081004": {
-    "unlockMethodJump": "",
-    "ID": 2081004,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2081004"
+      "InKey": "unlockMethodDesc_2081004",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2081004,
+    "infinitePropType": 1
   },
   "2081005": {
-    "unlockMethodJump": "",
-    "ID": 2081005,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2081005"
+      "InKey": "unlockMethodDesc_2081005",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2081005,
+    "infinitePropType": 1
   },
   "2081006": {
-    "unlockMethodJump": "",
-    "ID": 2081006,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2081006"
+      "InKey": "unlockMethodDesc_2081006",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2081006,
+    "infinitePropType": 1
   },
   "2081007": {
-    "unlockMethodJump": "",
-    "ID": 2081007,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2081007"
+      "InKey": "unlockMethodDesc_2081007",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2081007,
+    "infinitePropType": 1
   },
   "2011001": {
-    "unlockMethodJump": "",
-    "ID": 2011001,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011001"
+      "InKey": "unlockMethodDesc_2011001",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011001,
+    "infinitePropType": 1
   },
   "2011002": {
-    "unlockMethodJump": "",
-    "ID": 2011002,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011002"
+      "InKey": "unlockMethodDesc_2011002",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011002,
+    "infinitePropType": 1
   },
   "2081010": {
-    "unlockMethodJump": "",
-    "ID": 2081010,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2081010"
+      "InKey": "unlockMethodDesc_2081010",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2081010,
+    "infinitePropType": 1
   },
   "2081011": {
-    "unlockMethodJump": "",
-    "ID": 2081011,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2081011"
+      "InKey": "unlockMethodDesc_2081011",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2081011,
+    "infinitePropType": 1
   },
   "2011005": {
-    "unlockMethodJump": "",
-    "ID": 2011005,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011005"
+      "InKey": "unlockMethodDesc_2011005",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011005,
+    "infinitePropType": 1
   },
   "2011006": {
-    "unlockMethodJump": "",
-    "ID": 2011006,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011006"
+      "InKey": "unlockMethodDesc_2011006",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011006,
+    "infinitePropType": 1
   },
   "2011009": {
-    "unlockMethodJump": "",
-    "ID": 2011009,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011009"
+      "InKey": "unlockMethodDesc_2011009",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011009,
+    "infinitePropType": 1
   },
   "2011012": {
-    "unlockMethodJump": "",
-    "ID": 2011012,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011012"
+      "InKey": "unlockMethodDesc_2011012",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011012,
+    "infinitePropType": 1
   },
   "2011013": {
-    "unlockMethodJump": "",
-    "ID": 2011013,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011013"
+      "InKey": "unlockMethodDesc_2011013",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011013,
+    "infinitePropType": 1
   },
   "2011014": {
-    "unlockMethodJump": "",
-    "ID": 2011014,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011014"
+      "InKey": "unlockMethodDesc_2011014",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011014,
+    "infinitePropType": 1
   },
   "2011015": {
-    "unlockMethodJump": "",
-    "ID": 2011015,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011015"
+      "InKey": "unlockMethodDesc_2011015",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011015,
+    "infinitePropType": 1
   },
   "2011016": {
-    "unlockMethodJump": "",
-    "ID": 2011016,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011016"
+      "InKey": "unlockMethodDesc_2011016",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011016,
+    "infinitePropType": 1
   },
   "2011017": {
-    "unlockMethodJump": "",
-    "ID": 2011017,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011017"
+      "InKey": "unlockMethodDesc_2011017",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011017,
+    "infinitePropType": 1
   },
   "2011018": {
-    "unlockMethodJump": "",
-    "ID": 2011018,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011018"
+      "InKey": "unlockMethodDesc_2011018",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011018,
+    "infinitePropType": 1
   },
   "2010011": {
-    "unlockMethodJump": "",
-    "ID": 2010011,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010011"
+      "InKey": "unlockMethodDesc_2010011",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010011,
+    "infinitePropType": 1
   },
   "2010012": {
-    "unlockMethodJump": "",
-    "ID": 2010012,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010012"
+      "InKey": "unlockMethodDesc_2010012",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010012,
+    "infinitePropType": 1
   },
   "2010013": {
-    "unlockMethodJump": "",
-    "ID": 2010013,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010013"
+      "InKey": "unlockMethodDesc_2010013",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010013,
+    "infinitePropType": 1
   },
   "8030105": {
-    "unlockMethodJump": "",
-    "ID": 8030105,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8030105"
+      "InKey": "unlockMethodDesc_8030105",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8030105,
+    "infinitePropType": 2
   },
   "8030106": {
-    "unlockMethodJump": "",
-    "ID": 8030106,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8030106"
+      "InKey": "unlockMethodDesc_8030106",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8030106,
+    "infinitePropType": 2
   },
   "2010021": {
-    "unlockMethodJump": "",
-    "ID": 2010021,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010021"
+      "InKey": "unlockMethodDesc_2010021",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010021,
+    "infinitePropType": 1
   },
   "2010022": {
-    "unlockMethodJump": "",
-    "ID": 2010022,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010022"
+      "InKey": "unlockMethodDesc_2010022",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010022,
+    "infinitePropType": 1
   },
   "2010023": {
-    "unlockMethodJump": "",
-    "ID": 2010023,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010023"
+      "InKey": "unlockMethodDesc_2010023",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010023,
+    "infinitePropType": 1
   },
   "2010031": {
-    "unlockMethodJump": "",
-    "ID": 2010031,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010031"
+      "InKey": "unlockMethodDesc_2010031",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010031,
+    "infinitePropType": 1
   },
   "2010032": {
-    "unlockMethodJump": "",
-    "ID": 2010032,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010032"
+      "InKey": "unlockMethodDesc_2010032",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010032,
+    "infinitePropType": 1
   },
   "2010033": {
-    "unlockMethodJump": "",
-    "ID": 2010033,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010033"
+      "InKey": "unlockMethodDesc_2010033",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010033,
+    "infinitePropType": 1
   },
   "2010041": {
-    "unlockMethodJump": "",
-    "ID": 2010041,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010041"
+      "InKey": "unlockMethodDesc_2010041",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010041,
+    "infinitePropType": 1
   },
   "2010042": {
-    "unlockMethodJump": "",
-    "ID": 2010042,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010042"
+      "InKey": "unlockMethodDesc_2010042",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010042,
+    "infinitePropType": 1
   },
   "2010043": {
-    "unlockMethodJump": "",
-    "ID": 2010043,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010043"
+      "InKey": "unlockMethodDesc_2010043",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010043,
+    "infinitePropType": 1
   },
   "2031001": {
-    "unlockMethodJump": "",
-    "ID": 2031001,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2031001"
+      "InKey": "unlockMethodDesc_2031001",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2031001,
+    "infinitePropType": 1
   },
   "2010051": {
-    "unlockMethodJump": "",
-    "ID": 2010051,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010051"
+      "InKey": "unlockMethodDesc_2010051",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010051,
+    "infinitePropType": 1
   },
   "2010052": {
-    "unlockMethodJump": "",
-    "ID": 2010052,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010052"
+      "InKey": "unlockMethodDesc_2010052",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010052,
+    "infinitePropType": 1
   },
   "2010053": {
-    "unlockMethodJump": "",
-    "ID": 2010053,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010053"
+      "InKey": "unlockMethodDesc_2010053",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010053,
+    "infinitePropType": 1
   },
   "2031005": {
-    "unlockMethodJump": "",
-    "ID": 2031005,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2031005"
+      "InKey": "unlockMethodDesc_2031005",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2031005,
+    "infinitePropType": 1
   },
   "2031006": {
-    "unlockMethodJump": "",
-    "ID": 2031006,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2031006"
+      "InKey": "unlockMethodDesc_2031006",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2031006,
+    "infinitePropType": 1
   },
   "2031007": {
-    "unlockMethodJump": "",
-    "ID": 2031007,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2031007"
+      "InKey": "unlockMethodDesc_2031007",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2031007,
+    "infinitePropType": 1
   },
   "2031008": {
-    "unlockMethodJump": "",
-    "ID": 2031008,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2031008"
+      "InKey": "unlockMethodDesc_2031008",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2031008,
+    "infinitePropType": 1
   },
   "2031009": {
-    "unlockMethodJump": "",
-    "ID": 2031009,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2031009"
+      "InKey": "unlockMethodDesc_2031009",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2031009,
+    "infinitePropType": 1
   },
   "2031010": {
-    "unlockMethodJump": "",
-    "ID": 2031010,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2031010"
+      "InKey": "unlockMethodDesc_2031010",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2031010,
+    "infinitePropType": 1
   },
   "2031011": {
-    "unlockMethodJump": "",
-    "ID": 2031011,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2031011"
+      "InKey": "unlockMethodDesc_2031011",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2031011,
+    "infinitePropType": 1
   },
   "2010061": {
-    "unlockMethodJump": "",
-    "ID": 2010061,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010061"
+      "InKey": "unlockMethodDesc_2010061",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010061,
+    "infinitePropType": 1
   },
   "2010062": {
-    "unlockMethodJump": "",
-    "ID": 2010062,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010062"
+      "InKey": "unlockMethodDesc_2010062",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010062,
+    "infinitePropType": 1
   },
   "2010063": {
-    "unlockMethodJump": "",
-    "ID": 2010063,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010063"
+      "InKey": "unlockMethodDesc_2010063",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010063,
+    "infinitePropType": 1
   },
   "2031015": {
-    "unlockMethodJump": "",
-    "ID": 2031015,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2031015"
+      "InKey": "unlockMethodDesc_2031015",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2031015,
+    "infinitePropType": 1
   },
   "2031016": {
-    "unlockMethodJump": "",
-    "ID": 2031016,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2031016"
+      "InKey": "unlockMethodDesc_2031016",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2031016,
+    "infinitePropType": 1
   },
   "2031017": {
-    "unlockMethodJump": "",
-    "ID": 2031017,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2031017"
+      "InKey": "unlockMethodDesc_2031017",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2031017,
+    "infinitePropType": 1
   },
   "2031018": {
-    "unlockMethodJump": "",
-    "ID": 2031018,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2031018"
+      "InKey": "unlockMethodDesc_2031018",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2031018,
+    "infinitePropType": 1
   },
   "2010071": {
-    "unlockMethodJump": "",
-    "ID": 2010071,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010071"
+      "InKey": "unlockMethodDesc_2010071",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010071,
+    "infinitePropType": 1
   },
   "2010072": {
-    "unlockMethodJump": "",
-    "ID": 2010072,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010072"
+      "InKey": "unlockMethodDesc_2010072",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010072,
+    "infinitePropType": 1
   },
   "2010073": {
-    "unlockMethodJump": "",
-    "ID": 2010073,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010073"
+      "InKey": "unlockMethodDesc_2010073",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010073,
+    "infinitePropType": 1
   },
   "2011101": {
-    "unlockMethodJump": "",
-    "ID": 2011101,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2011101"
+      "InKey": "unlockMethodDesc_2011101",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011101,
+    "infinitePropType": 1
   },
   "2011102": {
-    "unlockMethodJump": "",
-    "ID": 2011102,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011102"
+      "InKey": "unlockMethodDesc_2011102",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011102,
+    "infinitePropType": 1
   },
   "2010081": {
-    "unlockMethodJump": "",
-    "ID": 2010081,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010081"
+      "InKey": "unlockMethodDesc_2010081",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010081,
+    "infinitePropType": 1
   },
   "2010082": {
-    "unlockMethodJump": "",
-    "ID": 2010082,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010082"
+      "InKey": "unlockMethodDesc_2010082",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010082,
+    "infinitePropType": 1
   },
   "2010083": {
-    "unlockMethodJump": "",
-    "ID": 2010083,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010083"
+      "InKey": "unlockMethodDesc_2010083",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010083,
+    "infinitePropType": 1
   },
   "2011106": {
-    "unlockMethodJump": "",
-    "ID": 2011106,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011106"
+      "InKey": "unlockMethodDesc_2011106",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011106,
+    "infinitePropType": 1
   },
   "2011107": {
-    "unlockMethodJump": "",
-    "ID": 2011107,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011107"
+      "InKey": "unlockMethodDesc_2011107",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011107,
+    "infinitePropType": 1
   },
   "2011108": {
-    "unlockMethodJump": "",
-    "ID": 2011108,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011108"
+      "InKey": "unlockMethodDesc_2011108",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011108,
+    "infinitePropType": 1
   },
   "2011109": {
-    "unlockMethodJump": "",
-    "ID": 2011109,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011109"
+      "InKey": "unlockMethodDesc_2011109",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011109,
+    "infinitePropType": 1
   },
   "2011110": {
-    "unlockMethodJump": "",
-    "ID": 2011110,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011110"
+      "InKey": "unlockMethodDesc_2011110",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011110,
+    "infinitePropType": 1
   },
   "2011111": {
-    "unlockMethodJump": "",
-    "ID": 2011111,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011111"
+      "InKey": "unlockMethodDesc_2011111",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011111,
+    "infinitePropType": 1
   },
   "2010091": {
-    "unlockMethodJump": "",
-    "ID": 2010091,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010091"
+      "InKey": "unlockMethodDesc_2010091",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010091,
+    "infinitePropType": 1
   },
   "2010092": {
-    "unlockMethodJump": "",
-    "ID": 2010092,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010092"
+      "InKey": "unlockMethodDesc_2010092",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010092,
+    "infinitePropType": 1
   },
   "2010093": {
-    "unlockMethodJump": "",
-    "ID": 2010093,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010093"
+      "InKey": "unlockMethodDesc_2010093",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010093,
+    "infinitePropType": 1
   },
   "2010101": {
-    "unlockMethodJump": "",
-    "ID": 2010101,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010101"
+      "InKey": "unlockMethodDesc_2010101",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010101,
+    "infinitePropType": 1
   },
   "2010102": {
-    "unlockMethodJump": "",
-    "ID": 2010102,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010102"
+      "InKey": "unlockMethodDesc_2010102",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010102,
+    "infinitePropType": 1
   },
   "2010103": {
-    "unlockMethodJump": "",
-    "ID": 2010103,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010103"
+      "InKey": "unlockMethodDesc_2010103",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010103,
+    "infinitePropType": 1
   },
   "2010111": {
-    "unlockMethodJump": "",
-    "ID": 2010111,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010111"
+      "InKey": "unlockMethodDesc_2010111",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010111,
+    "infinitePropType": 1
   },
   "2010112": {
-    "unlockMethodJump": "",
-    "ID": 2010112,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010112"
+      "InKey": "unlockMethodDesc_2010112",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010112,
+    "infinitePropType": 1
   },
   "2010113": {
-    "unlockMethodJump": "",
-    "ID": 2010113,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010113"
+      "InKey": "unlockMethodDesc_2010113",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010113,
+    "infinitePropType": 1
   },
   "2010121": {
-    "unlockMethodJump": "",
-    "ID": 2010121,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010121"
+      "InKey": "unlockMethodDesc_2010121",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010121,
+    "infinitePropType": 1
   },
   "2010122": {
-    "unlockMethodJump": "",
-    "ID": 2010122,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010122"
+      "InKey": "unlockMethodDesc_2010122",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010122,
+    "infinitePropType": 1
   },
   "2010123": {
-    "unlockMethodJump": "",
-    "ID": 2010123,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010123"
+      "InKey": "unlockMethodDesc_2010123",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010123,
+    "infinitePropType": 1
   },
   "2010131": {
-    "unlockMethodJump": "",
-    "ID": 2010131,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010131"
+      "InKey": "unlockMethodDesc_2010131",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010131,
+    "infinitePropType": 1
   },
   "2010132": {
-    "unlockMethodJump": "",
-    "ID": 2010132,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010132"
+      "InKey": "unlockMethodDesc_2010132",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010132,
+    "infinitePropType": 1
   },
   "2010133": {
-    "unlockMethodJump": "",
-    "ID": 2010133,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010133"
+      "InKey": "unlockMethodDesc_2010133",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010133,
+    "infinitePropType": 1
   },
   "2010141": {
-    "unlockMethodJump": "",
-    "ID": 2010141,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010141"
+      "InKey": "unlockMethodDesc_2010141",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010141,
+    "infinitePropType": 1
   },
   "2010142": {
-    "unlockMethodJump": "",
-    "ID": 2010142,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010142"
+      "InKey": "unlockMethodDesc_2010142",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010142,
+    "infinitePropType": 1
   },
   "2010143": {
-    "unlockMethodJump": "",
-    "ID": 2010143,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010143"
+      "InKey": "unlockMethodDesc_2010143",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010143,
+    "infinitePropType": 1
   },
   "2010151": {
-    "unlockMethodJump": "",
-    "ID": 2010151,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010151"
+      "InKey": "unlockMethodDesc_2010151",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010151,
+    "infinitePropType": 1
   },
   "2010152": {
-    "unlockMethodJump": "",
-    "ID": 2010152,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010152"
+      "InKey": "unlockMethodDesc_2010152",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010152,
+    "infinitePropType": 1
   },
   "2010153": {
-    "unlockMethodJump": "",
-    "ID": 2010153,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010153"
+      "InKey": "unlockMethodDesc_2010153",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010153,
+    "infinitePropType": 1
   },
   "8000102": {
-    "unlockMethodJump": "",
-    "ID": 8000102,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8000102"
+      "InKey": "unlockMethodDesc_8000102",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8000102,
+    "infinitePropType": 2
   },
   "2010161": {
-    "unlockMethodJump": "",
-    "ID": 2010161,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010161"
+      "InKey": "unlockMethodDesc_2010161",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010161,
+    "infinitePropType": 1
   },
   "2010162": {
-    "unlockMethodJump": "",
-    "ID": 2010162,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010162"
+      "InKey": "unlockMethodDesc_2010162",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010162,
+    "infinitePropType": 1
   },
   "2010163": {
-    "unlockMethodJump": "",
-    "ID": 2010163,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010163"
+      "InKey": "unlockMethodDesc_2010163",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010163,
+    "infinitePropType": 1
   },
   "8000106": {
-    "unlockMethodJump": "",
-    "ID": 8000106,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8000106"
+      "InKey": "unlockMethodDesc_8000106",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8000106,
+    "infinitePropType": 2
   },
   "2010171": {
-    "unlockMethodJump": "",
-    "ID": 2010171,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010171"
+      "InKey": "unlockMethodDesc_2010171",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010171,
+    "infinitePropType": 1
   },
   "2010172": {
-    "unlockMethodJump": "",
-    "ID": 2010172,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010172"
+      "InKey": "unlockMethodDesc_2010172",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010172,
+    "infinitePropType": 1
   },
   "2010173": {
-    "unlockMethodJump": "",
-    "ID": 2010173,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010173"
+      "InKey": "unlockMethodDesc_2010173",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010173,
+    "infinitePropType": 1
   },
   "8030104": {
-    "unlockMethodJump": "",
-    "ID": 8030104,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8030104"
+      "InKey": "unlockMethodDesc_8030104",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8030104,
+    "infinitePropType": 2
   },
   "8030103": {
-    "unlockMethodJump": "",
-    "ID": 8030103,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8030103"
+      "InKey": "unlockMethodDesc_8030103",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8030103,
+    "infinitePropType": 2
   },
   "8030102": {
-    "unlockMethodJump": "",
-    "ID": 8030102,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8030102"
+      "InKey": "unlockMethodDesc_8030102",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8030102,
+    "infinitePropType": 2
   },
   "8060104": {
+    "initunlock": false,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_8060104",
+      "InTextLiteral": ""
+    },
     "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
     "ID": 8060104,
-    "infinitePropType": 2,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8060104"
-    },
-    "initunlock": false,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "8060103": {
-    "unlockMethodJump": "",
-    "ID": 8060103,
-    "infinitePropType": 2,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8060103"
-    },
-    "initunlock": false,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "infinitePropType": 2
   },
   "2010181": {
-    "unlockMethodJump": "",
-    "ID": 2010181,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010181"
+      "InKey": "unlockMethodDesc_2010181",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010181,
+    "infinitePropType": 1
   },
   "2010182": {
-    "unlockMethodJump": "",
-    "ID": 2010182,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010182"
+      "InKey": "unlockMethodDesc_2010182",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010182,
+    "infinitePropType": 1
   },
   "2010183": {
-    "unlockMethodJump": "",
-    "ID": 2010183,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2010183"
+      "InKey": "unlockMethodDesc_2010183",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2010183,
+    "infinitePropType": 1
+  },
+  "8060103": {
+    "initunlock": false,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_8060103",
+      "InTextLiteral": ""
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 8060103,
+    "infinitePropType": 2
   },
   "8060102": {
-    "unlockMethodJump": "",
-    "ID": 8060102,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8060102"
+      "InKey": "unlockMethodDesc_8060102",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8060102,
+    "infinitePropType": 2
   },
   "8990103": {
-    "unlockMethodJump": "",
-    "ID": 8990103,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8990103"
+      "InKey": "unlockMethodDesc_8990103",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8990103,
+    "infinitePropType": 2
   },
   "8990101": {
-    "unlockMethodJump": "",
-    "ID": 8990101,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8990101"
+      "InKey": "unlockMethodDesc_8990101",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8990101,
+    "infinitePropType": 2
   },
   "8080102": {
-    "unlockMethodJump": "",
-    "ID": 8080102,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8080102"
+      "InKey": "unlockMethodDesc_8080102",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8080102,
+    "infinitePropType": 2
   },
   "8040104": {
-    "unlockMethodJump": "",
-    "ID": 8040104,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8040104"
+      "InKey": "unlockMethodDesc_8040104",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8040104,
+    "infinitePropType": 2
   },
   "8040103": {
-    "unlockMethodJump": "",
-    "ID": 8040103,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8040103"
+      "InKey": "unlockMethodDesc_8040103",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8040103,
+    "infinitePropType": 2
   },
   "8040102": {
-    "unlockMethodJump": "",
-    "ID": 8040102,
-    "infinitePropType": 2,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8040102"
-    },
     "initunlock": false,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "2031012": {
-    "unlockMethodJump": "",
-    "ID": 2031012,
-    "infinitePropType": 1,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2031012"
+      "InKey": "unlockMethodDesc_8040102",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "2031004": {
     "unlockMethodJump": "",
-    "ID": 2031004,
-    "infinitePropType": 1,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2031004"
-    },
-    "initunlock": true,
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8040102,
+    "infinitePropType": 2
   },
   "2031013": {
+    "initunlock": false,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_2031013",
+      "InTextLiteral": "提升角色熟练度获取"
+    },
     "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
     "ID": 2031013,
-    "infinitePropType": 1,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2031013"
-    },
-    "initunlock": false,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "infinitePropType": 1
   },
-  "8020103": {
-    "unlockMethodJump": "",
-    "ID": 8020103,
-    "infinitePropType": 2,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8020103"
-    },
-    "initunlock": false,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "8020102": {
-    "unlockMethodJump": "",
-    "ID": 8020102,
-    "infinitePropType": 2,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8020102"
-    },
-    "initunlock": false,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "8010105": {
-    "unlockMethodJump": "",
-    "ID": 8010105,
-    "infinitePropType": 2,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8010105"
-    },
-    "initunlock": false,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "8010104": {
-    "unlockMethodJump": "",
-    "ID": 8010104,
-    "infinitePropType": 2,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8010104"
-    },
-    "initunlock": false,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "8010103": {
-    "unlockMethodJump": "",
-    "ID": 8010103,
-    "infinitePropType": 2,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8010103"
-    },
-    "initunlock": false,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "8000105": {
-    "unlockMethodJump": "",
-    "ID": 8000105,
-    "infinitePropType": 2,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8000105"
-    },
-    "initunlock": false,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "8000104": {
-    "unlockMethodJump": "",
-    "ID": 8000104,
-    "infinitePropType": 2,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8000104"
-    },
-    "initunlock": false,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "8000103": {
-    "unlockMethodJump": "",
-    "ID": 8000103,
-    "infinitePropType": 2,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8000103"
-    },
-    "initunlock": false,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "2001026": {
-    "unlockMethodJump": "",
-    "ID": 2001026,
-    "infinitePropType": 1,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2001026"
-    },
+  "2031012": {
     "initunlock": true,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "2081009": {
-    "unlockMethodJump": "",
-    "ID": 2081009,
-    "infinitePropType": 1,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2081009"
+      "InKey": "unlockMethodDesc_2031012",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "2081008": {
     "unlockMethodJump": "",
-    "ID": 2081008,
-    "infinitePropType": 1,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2081008"
-    },
-    "initunlock": true,
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "2091112": {
-    "unlockMethodJump": "",
-    "ID": 2091112,
-    "infinitePropType": 1,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2091112"
-    },
-    "initunlock": true,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "2091111": {
-    "unlockMethodJump": "",
-    "ID": 2091111,
-    "infinitePropType": 1,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2091111"
-    },
-    "initunlock": true,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "2091110": {
-    "unlockMethodJump": "",
-    "ID": 2091110,
-    "infinitePropType": 1,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2091110"
-    },
-    "initunlock": true,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "2091102": {
-    "unlockMethodJump": "",
-    "ID": 2091102,
-    "infinitePropType": 1,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2091102"
-    },
-    "initunlock": true,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "2091101": {
-    "unlockMethodJump": "",
-    "ID": 2091101,
-    "infinitePropType": 1,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2091101"
-    },
-    "initunlock": false,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2031012,
+    "infinitePropType": 1
   },
   "2031014": {
-    "unlockMethodJump": "",
-    "ID": 2031014,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2031014"
+      "InKey": "unlockMethodDesc_2031014",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2031014,
+    "infinitePropType": 1
+  },
+  "8020103": {
+    "initunlock": false,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_8020103",
+      "InTextLiteral": ""
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 8020103,
+    "infinitePropType": 2
+  },
+  "8020102": {
+    "initunlock": false,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_8020102",
+      "InTextLiteral": ""
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 8020102,
+    "infinitePropType": 2
+  },
+  "8010105": {
+    "initunlock": false,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_8010105",
+      "InTextLiteral": ""
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 8010105,
+    "infinitePropType": 2
+  },
+  "8010104": {
+    "initunlock": false,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_8010104",
+      "InTextLiteral": ""
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 8010104,
+    "infinitePropType": 2
+  },
+  "8010103": {
+    "initunlock": false,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_8010103",
+      "InTextLiteral": ""
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 8010103,
+    "infinitePropType": 2
+  },
+  "8000105": {
+    "initunlock": false,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_8000105",
+      "InTextLiteral": ""
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 8000105,
+    "infinitePropType": 2
+  },
+  "8000104": {
+    "initunlock": false,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_8000104",
+      "InTextLiteral": ""
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 8000104,
+    "infinitePropType": 2
+  },
+  "8000103": {
+    "initunlock": false,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_8000103",
+      "InTextLiteral": ""
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 8000103,
+    "infinitePropType": 2
+  },
+  "2001026": {
+    "initunlock": true,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_2001026",
+      "InTextLiteral": ""
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 2001026,
+    "infinitePropType": 1
+  },
+  "2081009": {
+    "initunlock": true,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_2081009",
+      "InTextLiteral": ""
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 2081009,
+    "infinitePropType": 1
+  },
+  "2081008": {
+    "initunlock": true,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_2081008",
+      "InTextLiteral": ""
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 2081008,
+    "infinitePropType": 1
+  },
+  "2091112": {
+    "initunlock": true,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_2091112",
+      "InTextLiteral": ""
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 2091112,
+    "infinitePropType": 1
+  },
+  "2091111": {
+    "initunlock": true,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_2091111",
+      "InTextLiteral": ""
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 2091111,
+    "infinitePropType": 1
+  },
+  "2091110": {
+    "initunlock": true,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_2091110",
+      "InTextLiteral": ""
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 2091110,
+    "infinitePropType": 1
+  },
+  "2091102": {
+    "initunlock": true,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_2091102",
+      "InTextLiteral": ""
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 2091102,
+    "infinitePropType": 1
+  },
+  "2091101": {
+    "initunlock": false,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_2091101",
+      "InTextLiteral": "提升角色熟练度获取"
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 2091101,
+    "infinitePropType": 1
   },
   "2001013": {
-    "unlockMethodJump": "",
-    "ID": 2001013,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2001013"
+      "InKey": "unlockMethodDesc_2001013",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2001013,
+    "infinitePropType": 1
   },
   "2001014": {
-    "unlockMethodJump": "",
-    "ID": 2001014,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2001014"
+      "InKey": "unlockMethodDesc_2001014",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2001014,
+    "infinitePropType": 1
   },
   "2001015": {
-    "unlockMethodJump": "",
-    "ID": 2001015,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2001015"
+      "InKey": "unlockMethodDesc_2001015",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2001015,
+    "infinitePropType": 1
   },
   "2001016": {
-    "unlockMethodJump": "",
-    "ID": 2001016,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2001016"
+      "InKey": "unlockMethodDesc_2001016",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2001016,
+    "infinitePropType": 1
   },
   "2001017": {
-    "unlockMethodJump": "",
-    "ID": 2001017,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2001017"
+      "InKey": "unlockMethodDesc_2001017",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2001017,
+    "infinitePropType": 1
   },
   "2001018": {
-    "unlockMethodJump": "",
-    "ID": 2001018,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2001018"
+      "InKey": "unlockMethodDesc_2001018",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2001018,
+    "infinitePropType": 1
   },
   "2001019": {
-    "unlockMethodJump": "",
-    "ID": 2001019,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2001019"
+      "InKey": "unlockMethodDesc_2001019",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2001019,
+    "infinitePropType": 1
   },
   "2001020": {
-    "unlockMethodJump": "",
-    "ID": 2001020,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2001020"
+      "InKey": "unlockMethodDesc_2001020",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2001020,
+    "infinitePropType": 1
   },
   "2001021": {
-    "unlockMethodJump": "",
-    "ID": 2001021,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2001021"
+      "InKey": "unlockMethodDesc_2001021",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2001021,
+    "infinitePropType": 1
   },
   "2001022": {
-    "unlockMethodJump": "",
-    "ID": 2001022,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2001022"
+      "InKey": "unlockMethodDesc_2001022",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2001022,
+    "infinitePropType": 1
   },
   "2000001": {
-    "unlockMethodJump": "",
-    "ID": 2000001,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2000001"
+      "InKey": "unlockMethodDesc_2000001",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2000001,
+    "infinitePropType": 1
   },
   "2000002": {
-    "unlockMethodJump": "",
-    "ID": 2000002,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2000002"
+      "InKey": "unlockMethodDesc_2000002",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2000002,
+    "infinitePropType": 1
   },
   "2000003": {
-    "unlockMethodJump": "",
-    "ID": 2000003,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2000003"
+      "InKey": "unlockMethodDesc_2000003",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2000003,
+    "infinitePropType": 1
   },
   "2000004": {
-    "unlockMethodJump": "",
-    "ID": 2000004,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2000004"
+      "InKey": "unlockMethodDesc_2000004",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2000004,
+    "infinitePropType": 1
   },
   "2000005": {
-    "unlockMethodJump": "",
-    "ID": 2000005,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2000005"
+      "InKey": "unlockMethodDesc_2000005",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2000005,
+    "infinitePropType": 1
   },
   "2000006": {
-    "unlockMethodJump": "",
-    "ID": 2000006,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2000006"
+      "InKey": "unlockMethodDesc_2000006",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2000006,
+    "infinitePropType": 1
   },
   "2000007": {
-    "unlockMethodJump": "",
-    "ID": 2000007,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2000007"
+      "InKey": "unlockMethodDesc_2000007",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2000007,
+    "infinitePropType": 1
   },
   "2000008": {
-    "unlockMethodJump": "",
-    "ID": 2000008,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2000008"
+      "InKey": "unlockMethodDesc_2000008",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2000008,
+    "infinitePropType": 1
   },
   "2000009": {
-    "unlockMethodJump": "",
-    "ID": 2000009,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2000009"
+      "InKey": "unlockMethodDesc_2000009",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2000009,
+    "infinitePropType": 1
   },
   "2000010": {
-    "unlockMethodJump": "",
-    "ID": 2000010,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2000010"
+      "InKey": "unlockMethodDesc_2000010",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2000010,
+    "infinitePropType": 1
   },
   "2000011": {
-    "unlockMethodJump": "",
-    "ID": 2000011,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2000011"
+      "InKey": "unlockMethodDesc_2000011",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2000011,
+    "infinitePropType": 1
   },
   "2000012": {
-    "unlockMethodJump": "",
-    "ID": 2000012,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2000012"
+      "InKey": "unlockMethodDesc_2000012",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2000012,
+    "infinitePropType": 1
   },
   "8020104": {
-    "unlockMethodJump": "",
-    "ID": 8020104,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8020104"
+      "InKey": "unlockMethodDesc_8020104",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8020104,
+    "infinitePropType": 2
   },
   "8020105": {
-    "unlockMethodJump": "",
-    "ID": 8020105,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8020105"
+      "InKey": "unlockMethodDesc_8020105",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8020105,
+    "infinitePropType": 2
   },
   "8020106": {
-    "unlockMethodJump": "",
-    "ID": 8020106,
-    "infinitePropType": 2,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_8020106"
+      "InKey": "unlockMethodDesc_8020106",
+      "InTextLiteral": ""
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 8020106,
+    "infinitePropType": 2
+  },
+  "2031004": {
+    "initunlock": true,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_2031004",
+      "InTextLiteral": ""
+    },
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
+    "ID": 2031004,
+    "infinitePropType": 1
   },
   "2031003": {
-    "unlockMethodJump": "",
-    "ID": 2031003,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2031003"
+      "InKey": "unlockMethodDesc_2031003",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2031003,
+    "infinitePropType": 1
   },
   "2031002": {
-    "unlockMethodJump": "",
-    "ID": 2031002,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2031002"
+      "InKey": "unlockMethodDesc_2031002",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2031002,
+    "infinitePropType": 1
   },
   "9040200": {
-    "unlockMethodJump": "",
-    "ID": 9040200,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_9040200"
+      "InKey": "unlockMethodDesc_9040200",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 9040200,
+    "infinitePropType": 1
   },
   "9040121": {
-    "unlockMethodJump": "",
-    "ID": 9040121,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_9040121"
+      "InKey": "unlockMethodDesc_9040121",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 9040121,
+    "infinitePropType": 1
   },
   "9040120": {
-    "unlockMethodJump": "",
-    "ID": 9040120,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_9040120"
+      "InKey": "unlockMethodDesc_9040120",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 9040120,
+    "infinitePropType": 1
   },
   "9040119": {
-    "unlockMethodJump": "",
-    "ID": 9040119,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_9040119"
+      "InKey": "unlockMethodDesc_9040119",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 9040119,
+    "infinitePropType": 1
   },
   "9040115": {
-    "unlockMethodJump": "",
-    "ID": 9040115,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_9040115"
+      "InKey": "unlockMethodDesc_9040115",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 9040115,
+    "infinitePropType": 1
   },
   "9040114": {
-    "unlockMethodJump": "",
-    "ID": 9040114,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_9040114"
+      "InKey": "unlockMethodDesc_9040114",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 9040114,
+    "infinitePropType": 1
   },
   "9040113": {
-    "unlockMethodJump": "",
-    "ID": 9040113,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_9040113"
+      "InKey": "unlockMethodDesc_9040113",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 9040113,
+    "infinitePropType": 1
   },
   "9040112": {
-    "unlockMethodJump": "",
-    "ID": 9040112,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_9040112"
+      "InKey": "unlockMethodDesc_9040112",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 9040112,
+    "infinitePropType": 1
   },
   "9040111": {
-    "unlockMethodJump": "",
-    "ID": 9040111,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_9040111"
+      "InKey": "unlockMethodDesc_9040111",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 9040111,
+    "infinitePropType": 1
   },
   "9040110": {
+    "initunlock": true,
+    "unlockMethodDescLocMeta": {
+      "InNamespace": "resource_TBInfiniteProp",
+      "InKey": "unlockMethodDesc_9040110",
+      "InTextLiteral": ""
+    },
     "unlockMethodJump": "",
+    "backgroundEffect": "",
+    "unlockTaskId": 0,
     "ID": 9040110,
-    "infinitePropType": 1,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_9040110"
-    },
-    "initunlock": true,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
-  },
-  "2061010": {
-    "unlockMethodJump": "",
-    "ID": 2061010,
-    "infinitePropType": 1,
-    "unlockMethodDescLocMeta": {
-      "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2061010"
-    },
-    "initunlock": true,
-    "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "infinitePropType": 1
   },
   "2061009": {
-    "unlockMethodJump": "",
-    "ID": 2061009,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2061009"
+      "InKey": "unlockMethodDesc_2061009",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2061009,
+    "infinitePropType": 1
   },
   "2061008": {
-    "unlockMethodJump": "",
-    "ID": 2061008,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2061008"
+      "InKey": "unlockMethodDesc_2061008",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2061008,
+    "infinitePropType": 1
   },
   "2061007": {
-    "unlockMethodJump": "",
-    "ID": 2061007,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2061007"
+      "InKey": "unlockMethodDesc_2061007",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2061007,
+    "infinitePropType": 1
   },
   "2061006": {
-    "unlockMethodJump": "",
-    "ID": 2061006,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2061006"
+      "InKey": "unlockMethodDesc_2061006",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2061006,
+    "infinitePropType": 1
   },
   "2061005": {
-    "unlockMethodJump": "",
-    "ID": 2061005,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2061005"
+      "InKey": "unlockMethodDesc_2061005",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2061005,
+    "infinitePropType": 1
   },
   "2061004": {
-    "unlockMethodJump": "",
-    "ID": 2061004,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2061004"
+      "InKey": "unlockMethodDesc_2061004",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2061004,
+    "infinitePropType": 1
   },
   "2061003": {
-    "unlockMethodJump": "",
-    "ID": 2061003,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2061003"
+      "InKey": "unlockMethodDesc_2061003",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2061003,
+    "infinitePropType": 1
   },
   "2061002": {
-    "unlockMethodJump": "",
-    "ID": 2061002,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2061002"
+      "InKey": "unlockMethodDesc_2061002",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2061002,
+    "infinitePropType": 1
   },
   "2061001": {
-    "unlockMethodJump": "",
-    "ID": 2061001,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2061001"
+      "InKey": "unlockMethodDesc_2061001",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2061001,
+    "infinitePropType": 1
   },
   "2001025": {
-    "unlockMethodJump": "",
-    "ID": 2001025,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2001025"
+      "InKey": "unlockMethodDesc_2001025",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2001025,
+    "infinitePropType": 1
   },
   "2001024": {
-    "unlockMethodJump": "",
-    "ID": 2001024,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2001024"
+      "InKey": "unlockMethodDesc_2001024",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2001024,
+    "infinitePropType": 1
   },
   "2001023": {
-    "unlockMethodJump": "",
-    "ID": 2001023,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2001023"
+      "InKey": "unlockMethodDesc_2001023",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2001023,
+    "infinitePropType": 1
   },
   "2990021": {
-    "unlockMethodJump": "",
-    "ID": 2990021,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "完成场对局解锁",
-      "InKey": "unlockMethodDesc_2990021"
+      "InKey": "unlockMethodDesc_2990021",
+      "InTextLiteral": "完成场对局解锁"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 300103,
-    "backgroundEffect": ""
+    "ID": 2990021,
+    "infinitePropType": 1
   },
   "2990020": {
-    "unlockMethodJump": "",
-    "ID": 2990020,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "完成场对局解锁",
-      "InKey": "unlockMethodDesc_2990020"
+      "InKey": "unlockMethodDesc_2990020",
+      "InTextLiteral": "完成场对局解锁"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 300103,
-    "backgroundEffect": ""
+    "ID": 2990020,
+    "infinitePropType": 1
   },
   "2990019": {
-    "unlockMethodJump": "",
-    "ID": 2990019,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "完成场对局解锁",
-      "InKey": "unlockMethodDesc_2990019"
+      "InKey": "unlockMethodDesc_2990019",
+      "InTextLiteral": "完成场对局解锁"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 300104,
-    "backgroundEffect": ""
+    "ID": 2990019,
+    "infinitePropType": 1
   },
   "2990011": {
-    "unlockMethodJump": "",
-    "ID": 2990011,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "完成场对局解锁",
-      "InKey": "unlockMethodDesc_2990011"
+      "InKey": "unlockMethodDesc_2990011",
+      "InTextLiteral": "完成场对局解锁"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 300106,
-    "backgroundEffect": ""
+    "ID": 2990011,
+    "infinitePropType": 1
   },
   "2990010": {
-    "unlockMethodJump": "",
-    "ID": 2990010,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2990010"
+      "InKey": "unlockMethodDesc_2990010",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2990010,
+    "infinitePropType": 1
   },
   "2990009": {
-    "unlockMethodJump": "",
-    "ID": 2990009,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "完成场对局解锁",
-      "InKey": "unlockMethodDesc_2990009"
+      "InKey": "unlockMethodDesc_2990009",
+      "InTextLiteral": "完成场对局解锁"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 300105,
-    "backgroundEffect": ""
+    "ID": 2990009,
+    "infinitePropType": 1
   },
   "2990001": {
-    "unlockMethodJump": "",
-    "ID": 2990001,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2990001"
+      "InKey": "unlockMethodDesc_2990001",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2990001,
+    "infinitePropType": 1
   },
   "2011105": {
-    "unlockMethodJump": "",
-    "ID": 2011105,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2011105"
+      "InKey": "unlockMethodDesc_2011105",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011105,
+    "infinitePropType": 1
   },
   "2011104": {
-    "unlockMethodJump": "",
-    "ID": 2011104,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2011104"
+      "InKey": "unlockMethodDesc_2011104",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011104,
+    "infinitePropType": 1
   },
   "2021001": {
-    "unlockMethodJump": "",
-    "ID": 2021001,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2021001"
+      "InKey": "unlockMethodDesc_2021001",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021001,
+    "infinitePropType": 1
   },
   "2021002": {
-    "unlockMethodJump": "",
-    "ID": 2021002,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2021002"
+      "InKey": "unlockMethodDesc_2021002",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021002,
+    "infinitePropType": 1
   },
   "2021003": {
-    "unlockMethodJump": "",
-    "ID": 2021003,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2021003"
+      "InKey": "unlockMethodDesc_2021003",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021003,
+    "infinitePropType": 1
   },
   "2021004": {
-    "unlockMethodJump": "",
-    "ID": 2021004,
-    "infinitePropType": 1,
+    "initunlock": true,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "",
-      "InKey": "unlockMethodDesc_2021004"
+      "InKey": "unlockMethodDesc_2021004",
+      "InTextLiteral": ""
     },
-    "initunlock": true,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2021004,
+    "infinitePropType": 1
   },
   "2011103": {
-    "unlockMethodJump": "",
-    "ID": 2011103,
-    "infinitePropType": 1,
+    "initunlock": false,
     "unlockMethodDescLocMeta": {
       "InNamespace": "resource_TBInfiniteProp",
-      "InTextLiteral": "提升角色熟练度获取",
-      "InKey": "unlockMethodDesc_2011103"
+      "InKey": "unlockMethodDesc_2011103",
+      "InTextLiteral": "提升角色熟练度获取"
     },
-    "initunlock": false,
+    "unlockMethodJump": "",
+    "backgroundEffect": "",
     "unlockTaskId": 0,
-    "backgroundEffect": ""
+    "ID": 2011103,
+    "infinitePropType": 1
   }
 }

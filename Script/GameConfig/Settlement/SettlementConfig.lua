@@ -73,8 +73,21 @@ local SettlementIncomePropId =
     99989,
     99019,
 }
-
 _G.SettlementIncomePropId = _G.SettlementIncomePropId or SettlementIncomePropId
+
+local SettlementstatisticsIdMap = 
+{
+    [99026] = true,
+    [99027] = true,
+    [99028] = true,
+    [99029] = true,
+    [99030] = true,
+    [99031] = true,
+    [99032] = true,
+    [99033] = true,
+    [99036] = true,
+}
+_G.SettlementstatisticsIdMap = _G.SettlementstatisticsIdMap or SettlementstatisticsIdMap
 
 local SettlementPrivilegeConfig = {
     [UE.ERGPrivilegeSource.MonthCard] = {DescFmt = NSLOCTEXT("SettlementPrivilegeConfig", "MonthCardDescFmt", "{0}%"), IconPath = "/Game/Rouge/UI/Atlas/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon"},

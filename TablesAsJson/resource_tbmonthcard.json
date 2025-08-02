@@ -1,44 +1,44 @@
 ﻿{
   "300202": {
     "MonthCardID": 2,
-    "Desc": "存档权益",
+    "Duration": 30,
     "ID": 300202,
-    "Duration": 30
+    "Desc": "存档权益"
   },
   "300203": {
     "MonthCardID": 3,
-    "Desc": "源码权益",
+    "Duration": 30,
     "ID": 300203,
-    "Duration": 30
+    "Desc": "源码权益"
   },
   "300204": {
     "MonthCardID": 4,
-    "Desc": "权限刷新权益",
+    "Duration": 30,
     "ID": 300204,
-    "Duration": 30
+    "Desc": "权限刷新权益"
   },
   "300205": {
     "MonthCardID": 5,
-    "Desc": "额外复活次数",
+    "Duration": 30,
     "ID": 300205,
-    "Duration": 30
+    "Desc": "额外复活次数"
   },
   "300206": {
     "MonthCardID": 6,
-    "Desc": "熟练度权益",
+    "Duration": 30,
     "ID": 300206,
-    "Duration": 30
+    "Desc": "熟练度权益"
   },
   "300207": {
     "MonthCardID": 7,
-    "Desc": "赛季道具权益",
+    "Duration": 30,
     "ID": 300207,
-    "Duration": 30
+    "Desc": "赛季道具权益"
   },
   "300201": {
     "MonthCardID": 1,
-    "Desc": "高能时刻",
+    "Duration": 30,
     "ID": 300201,
-    "Duration": 30
+    "Desc": "高能时刻"
   }
 }

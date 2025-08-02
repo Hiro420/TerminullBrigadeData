@@ -1,16 +1,20 @@
 local ruletaskhandler = require("Protocol.RuleTask.RuleTaskHandler")
 local rapidjson = require("rapidjson")
 local WBP_OptionalGiftMsgWaveWindow_C = UnLua.Class()
+
 function WBP_OptionalGiftMsgWaveWindow_C:Construct()
   self.WBP_CommonButton.OnMainButtonClicked:Add(self, self.OnMainButtonClick)
   EventSystem.AddListener(self, EventDef.Gift.OnOptionalGiftItemSelect, WBP_OptionalGiftMsgWaveWindow_C.OnItemSelectionChanged)
 end
+
 function WBP_OptionalGiftMsgWaveWindow_C:Destruct()
   self.WBP_CommonButton.OnMainButtonClicked:Remove(self, self.OnMainButtonClick)
   EventSystem.RemoveListener(EventDef.Gift.OnOptionalGiftItemSelect, WBP_OptionalGiftMsgWaveWindow_C.OnItemSelectionChanged, self)
 end
+
 function WBP_OptionalGiftMsgWaveWindow_C:SetWaveWindowParam(WaveWindowParamParam)
 end
+
 function WBP_OptionalGiftMsgWaveWindow_C:InitOptionalGift(GiftId, SourceId, Type, Num, TaskId)
   self.GiftId = GiftId
   self.SourceId = SourceId
@@ -57,6 +61,7 @@ function WBP_OptionalGiftMsgWaveWindow_C:InitOptionalGift(GiftId, SourceId, Type
   self.SelectProgress:SetText("0/" .. self.Num)
   self.WBP_InteractTipWidgetEsc:BindInteractAndClickEvent(self, self.K2_CloseWaveWindow)
 end
+
 function WBP_OptionalGiftMsgWaveWindow_C:OnItemSelectionChanged(Index, SelectNum)
   if self.OptionalGiftIndexsTable == nil or 1 == self.Num then
     self.OptionalGiftIndexsTable = {}
@@ -82,9 +87,11 @@ function WBP_OptionalGiftMsgWaveWindow_C:OnItemSelectionChanged(Index, SelectNum
     self.RGStateController_Btn:ChangeStatus("Disable")
   end
 end
+
 function WBP_OptionalGiftMsgWaveWindow_C:BindOnConfirmClick(Func)
   self.OnConfirmClickFunc = Func
 end
+
 function WBP_OptionalGiftMsgWaveWindow_C:OnMainButtonClick()
   if not self.bBtnEnabled then
     ShowWaveWindow(self.WaveWindow_Disable)
@@ -101,6 +108,7 @@ function WBP_OptionalGiftMsgWaveWindow_C:OnMainButtonClick()
     self:K2_OnConfirmClick()
   end
 end
+
 function WBP_OptionalGiftMsgWaveWindow_C:K2_OnConfirmClick()
   if self.OptionalGiftIndexs == nil then
     return
@@ -155,13 +163,17 @@ function WBP_OptionalGiftMsgWaveWindow_C:K2_OnConfirmClick()
     self.OnConfirmClickFunc(optionalGiftInfos)
   end
 end
+
 function WBP_OptionalGiftMsgWaveWindow_C:K2_OnCancelClick()
 end
+
 function WBP_OptionalGiftMsgWaveWindow_C:K2_CloseWaveWindow()
   CloseWaveWindow(self)
   self:SetEnhancedInputActionBlocking(false)
   self.WBP_InteractTipWidgetEsc:UnBindInteractAndClickEvent(self, self.K2_CloseWaveWindow)
 end
+
 function WBP_OptionalGiftMsgWaveWindow_C:SetMultipleSelection(IsMultipleSelection)
 end
+
 return WBP_OptionalGiftMsgWaveWindow_C

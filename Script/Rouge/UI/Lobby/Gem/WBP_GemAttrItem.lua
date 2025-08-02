@@ -1,4 +1,5 @@
 local WBP_GemAttrItem = UnLua.Class()
+
 function WBP_GemAttrItem:Show(IsEmpty, AttrId, Value, MutationType)
   UpdateVisibility(self, true)
   UpdateVisibility(self.Img_AttrIcon, not IsEmpty)
@@ -20,6 +21,7 @@ function WBP_GemAttrItem:Show(IsEmpty, AttrId, Value, MutationType)
   local CurValueText = UE.URGBlueprintLibrary.GetAttributeDisplayText(Value, AttrModifyOp.AttributeDisplayType, AttrModifyOp.Unit, AttrModifyOp.RateDisplayInUI)
   self.Txt_Value:SetText(CurValueText)
 end
+
 function WBP_GemAttrItem:ShowMutationAttr(AttrId, Value)
   UpdateVisibility(self.Overlay_MutationAttr, true)
   local Result, AttrModifyOp = GetRowData(DT.DT_AttributeModifyOp, tostring(AttrId))
@@ -30,6 +32,7 @@ function WBP_GemAttrItem:ShowMutationAttr(AttrId, Value)
   local CurValueText = UE.URGBlueprintLibrary.GetAttributeDisplayText(Value, AttrModifyOp.AttributeDisplayType, AttrModifyOp.Unit, AttrModifyOp.RateDisplayInUI)
   self.Txt_MutationValue:SetText(CurValueText)
 end
+
 function WBP_GemAttrItem:PlaySlotInAnim(DelayTime)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.SlotInAnimTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.SlotInAnimTimer)
@@ -45,13 +48,16 @@ function WBP_GemAttrItem:PlaySlotInAnim(DelayTime)
     }, DelayTime, false)
   end
 end
+
 function WBP_GemAttrItem:Hide(...)
   UpdateVisibility(self, false)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.SlotInAnimTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.SlotInAnimTimer)
   end
 end
+
 function WBP_GemAttrItem:Destruct()
   self:Hide()
 end
+
 return WBP_GemAttrItem

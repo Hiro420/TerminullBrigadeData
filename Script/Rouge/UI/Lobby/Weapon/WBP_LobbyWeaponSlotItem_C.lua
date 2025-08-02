@@ -1,16 +1,20 @@
 local WBP_LobbyWeaponSlotItem_C = UnLua.Class()
+
 function WBP_LobbyWeaponSlotItem_C:Construct()
   self.Btn_Main.OnHovered:Add(self, WBP_LobbyWeaponSlotItem_C.BindOnMainButtonHovered)
   self.Btn_Main.OnUnhovered:Add(self, WBP_LobbyWeaponSlotItem_C.BindOnMainButtonUnHovered)
   self.Btn_Main.OnClicked:Add(self, WBP_LobbyWeaponSlotItem_C.BindOnMainButtonClicked)
   EventSystem.AddListener(self, EventDef.Lobby.WeaponSlotSelected, WBP_LobbyWeaponSlotItem_C.BindOnWeaponSlotSelected)
 end
+
 function WBP_LobbyWeaponSlotItem_C:OnBindUIInput()
   self.WBP_InteractTipWidgetChangeWeapon:BindInteractAndClickEvent(self, WBP_LobbyWeaponSlotItem_C.BindOnMainButtonClicked)
 end
+
 function WBP_LobbyWeaponSlotItem_C:OnUnBindUIInput()
   self.WBP_InteractTipWidgetChangeWeapon:UnBindInteractAndClickEvent(self, WBP_LobbyWeaponSlotItem_C.BindOnMainButtonClicked)
 end
+
 function WBP_LobbyWeaponSlotItem_C:BindOnMainButtonHovered()
   UpdateVisibility(self.Img_Hovered, true)
   if not self.WeaponInfo or 0 == tonumber(self.WeaponInfo.resourceId) then
@@ -18,10 +22,12 @@ function WBP_LobbyWeaponSlotItem_C:BindOnMainButtonHovered()
   end
   EventSystem.Invoke(EventDef.Lobby.LobbyWeaponSlotHoverStatusChanged, true, self.WeaponInfo)
 end
+
 function WBP_LobbyWeaponSlotItem_C:BindOnMainButtonUnHovered()
   UpdateVisibility(self.Img_Hovered, false)
   EventSystem.Invoke(EventDef.Lobby.LobbyWeaponSlotHoverStatusChanged, false)
 end
+
 function WBP_LobbyWeaponSlotItem_C:BindOnMainButtonClicked()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.WEAPON) then
@@ -29,6 +35,7 @@ function WBP_LobbyWeaponSlotItem_C:BindOnMainButtonClicked()
   end
   EventSystem.Invoke(EventDef.Lobby.WeaponSlotSelected, true, self.SlotId)
 end
+
 function WBP_LobbyWeaponSlotItem_C:BindOnWeaponSlotSelected(IsSelect, SlotId)
   self.CurSelectSlotId = SlotId
   if IsSelect then
@@ -42,6 +49,7 @@ function WBP_LobbyWeaponSlotItem_C:BindOnWeaponSlotSelected(IsSelect, SlotId)
     self.CurSelectSlotId = -1
   end
 end
+
 function WBP_LobbyWeaponSlotItem_C:RefreshInfo(WeaponInfo, IsNotSlot)
   self.WeaponInfo = WeaponInfo
   self.IsSlot = IsNotSlot
@@ -77,12 +85,15 @@ function WBP_LobbyWeaponSlotItem_C:RefreshInfo(WeaponInfo, IsNotSlot)
     self.URGImage_38:SetColorAndOpacity(self.DefColor)
   end
 end
+
 function WBP_LobbyWeaponSlotItem_C:PlayAniInAnimation()
   self:PlayAnimationForward(self.Ani_in)
 end
+
 function WBP_LobbyWeaponSlotItem_C:GetWeaponBodyId()
   return tonumber(self.WeaponInfo.resourceId)
 end
+
 function WBP_LobbyWeaponSlotItem_C:GetInfoToolTipWidget()
   if not self.WeaponInfo or 0 == tonumber(self.WeaponInfo.resourceId) then
     return
@@ -101,7 +112,9 @@ function WBP_LobbyWeaponSlotItem_C:GetInfoToolTipWidget()
   end
   return self.WeaponToolTipWidget
 end
+
 function WBP_LobbyWeaponSlotItem_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.WeaponSlotSelected, WBP_LobbyWeaponSlotItem_C.BindOnWeaponSlotSelected, self)
 end
+
 return WBP_LobbyWeaponSlotItem_C

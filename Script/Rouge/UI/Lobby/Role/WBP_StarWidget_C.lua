@@ -1,4 +1,5 @@
 local WBP_StarWidget_C = UnLua.Class()
+
 function WBP_StarWidget_C:RefreshInfo(StarNum, MaxStar)
   local AllChildren = self.AttributeList:GetAllChildren()
   for Index, SingleItem in pairs(AllChildren) do
@@ -10,4 +11,5 @@ function WBP_StarWidget_C:RefreshInfo(StarNum, MaxStar)
     end
   end
 end
+
 return WBP_StarWidget_C

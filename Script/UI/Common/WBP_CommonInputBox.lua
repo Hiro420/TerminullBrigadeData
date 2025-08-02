@@ -1,4 +1,5 @@
 local WBP_CommonInputBox = UnLua.Class()
+
 function WBP_CommonInputBox:Construct()
   self.Btn_Add.OnMainButtonClicked:Add(self, self.BindOnAddButtonClicked)
   self.Btn_Reduce.OnMainButtonClicked:Add(self, self.BindOnReduceButtonClicked)
@@ -6,6 +7,7 @@ function WBP_CommonInputBox:Construct()
   self.TXT_SelectNum.OnTextChanged:Add(self, self.OnTextChanged)
   self.SelectNum = 0
 end
+
 function WBP_CommonInputBox:BindOnReduceButtonClicked(...)
   if 0 == self.SelectNum then
     return
@@ -13,36 +15,44 @@ function WBP_CommonInputBox:BindOnReduceButtonClicked(...)
   self:UpdateSelectNum(self.SelectNum - 1)
   self.OnReduceButtonClicked:Broadcast(self.SelectNum)
 end
+
 function WBP_CommonInputBox:BindOnAddButtonClicked(...)
   if self:CheckCanAdd() then
     self:UpdateSelectNum(self.SelectNum + 1)
     self.OnAddButtonClicked:Broadcast(self.SelectNum)
   end
 end
+
 function WBP_CommonInputBox:Destruct(...)
   self.Btn_Add.OnMainButtonClicked:Remove(self, self.BindOnAddButtonClicked)
   self.Btn_Reduce.OnMainButtonClicked:Remove(self, self.BindOnReduceButtonClicked)
 end
+
 function WBP_CommonInputBox:UpdateSelectNum(Num)
   self.SelectNum = Num
   self.TXT_SelectNum:SetText(Num)
   self:RefreshButtonState()
 end
+
 function WBP_CommonInputBox:RefreshButtonState()
   self.Btn_Reduce:SetStyleByBottomStyleRowName(0 ~= self.SelectNum and "FrenzyVirus_Btn_Changes_0" or "FrenzyVirus_Btn_Changes_enable")
 end
+
 function WBP_CommonInputBox:SetCheckFun(Parent, Fun)
   self.Parent = Parent
   self.CheckCanAddFun = Fun
 end
+
 function WBP_CommonInputBox:SetMaxNum(Num)
   self.MaxNum = Num
 end
+
 function WBP_CommonInputBox:CheckCanAdd()
   if self.Parent and self.CheckCanAdd then
     return self.CheckCanAddFun(self.Parent, self.SelectNum)
   end
 end
+
 function WBP_CommonInputBox:OnTextChanged(Text)
   print(Text)
   local str = ""
@@ -61,6 +71,7 @@ function WBP_CommonInputBox:OnTextChanged(Text)
     self.TXT_SelectNum:SetText(str)
   end
 end
+
 function WBP_CommonInputBox:OnTextCommitted(Text, CommitMethod)
   local CurNum = self.SelectNum
   local CanChange = false
@@ -90,7 +101,9 @@ function WBP_CommonInputBox:OnTextCommitted(Text, CommitMethod)
     self:UpdateSelectNum(CurNum)
   end
 end
+
 function WBP_CommonInputBox:SetCheckChangeFun(CheckCanChangeFun)
   self.CheckCanChangeFun = CheckCanChangeFun
 end
+
 return WBP_CommonInputBox

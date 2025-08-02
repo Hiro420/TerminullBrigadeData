@@ -4,18 +4,23 @@ local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local EscName = "PauseGame"
 local WeaponMainView = Class(ViewBase)
+
 function WeaponMainView:BindClickHandler()
 end
+
 function WeaponMainView:UnBindClickHandler()
 end
+
 function WeaponMainView:OnInit()
   self.DataBindTable = {}
   self.viewModel = UIModelMgr:Get("WeaponMainViewModel")
   self:BindClickHandler()
 end
+
 function WeaponMainView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WeaponMainView:OnShow(...)
   self.Super:AttachViewModel(self.viewModel, self.DataBindTable, self)
   local param = {
@@ -30,11 +35,13 @@ function WeaponMainView:OnShow(...)
   self.viewModel:SetCloseCallback(closeCallback)
   self:PushInputAction()
 end
+
 function WeaponMainView:OnHide()
   StopListeningForInputAction(self, EscName, UE.EInputEvent.IE_Pressed)
   ChangeLobbyCamera(self, "Role")
   self.Super:DetachViewModel(self.viewModel, self.DataBindTable, self)
 end
+
 function WeaponMainView:UpdateViewByHeroId(HeroId, bIsShowWeaponSubParam, resStoneSlot, weaponResId)
   local bIsShowWeaponSub = bIsShowWeaponSubParam
   bIsShowWeaponSub = bIsShowWeaponSub or true
@@ -51,8 +58,10 @@ function WeaponMainView:UpdateViewByHeroId(HeroId, bIsShowWeaponSubParam, resSto
   end
   EventSystem.Invoke(EventDef.Lobby.WeaponListChanged)
 end
+
 function WeaponMainView:HideViewByViewSet()
   UIMgr:Hide(ViewID.UI_WeaponSub)
   UIMgr:Hide(ViewID.UI_WeaponMain, true)
 end
+
 return WeaponMainView

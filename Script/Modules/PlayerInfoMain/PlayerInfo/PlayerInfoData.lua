@@ -220,6 +220,7 @@ local PlayerInfoData = {
   RecentSeasonID = {},
   PortraitIdToTBPortraitData = {}
 }
+
 function PlayerInfoData:DealWithTable()
   local tbBanner = LuaTableMgr.GetLuaTableByName(TableNames.TBBanner)
   if tbBanner then
@@ -234,10 +235,12 @@ function PlayerInfoData:DealWithTable()
     end
   end
 end
+
 function PlayerInfoData:ResetWhenLogin()
   self.BattleStatistic = {}
   self.CurShowHeroId = -1
 end
+
 function PlayerInfoData:NewStatisticData(tb)
   if not tb then
     return {}
@@ -272,6 +275,7 @@ function PlayerInfoData:NewStatisticData(tb)
   end
   return battleStatistic
 end
+
 function PlayerInfoData:GetPortraitList()
   local tbPortraitSort = {}
   local tbPortrait = LuaTableMgr.GetLuaTableByName(TableNames.TBPortrait)
@@ -290,18 +294,21 @@ function PlayerInfoData:GetPortraitList()
   end)
   return tbPortraitSort
 end
+
 function PlayerInfoData:GetTBBannerDataByBannerId(BannerId)
   if table.IsEmpty(self.BannerIdToTBBannerData) then
     self:DealWithTable()
   end
   return self.BannerIdToTBBannerData[BannerId]
 end
+
 function PlayerInfoData:GetTBPortraitDataByPortraitId(PortraitId)
   if table.IsEmpty(self.PortraitIdToTBPortraitData) then
     self:DealWithTable()
   end
   return self.PortraitIdToTBPortraitData[PortraitId]
 end
+
 function PlayerInfoData:GetBannerList()
   local tbBannerSort = {}
   local tbBanner = LuaTableMgr.GetLuaTableByName(TableNames.TBBanner)
@@ -320,6 +327,7 @@ function PlayerInfoData:GetBannerList()
   end)
   return tbBannerSort
 end
+
 function PlayerInfoData:GetMostUsedHeroInfo(RoleID)
   local roleID = RoleID or DataMgr.GetUserId()
   local heroId = -1
@@ -335,6 +343,7 @@ function PlayerInfoData:GetMostUsedHeroInfo(RoleID)
   end
   return heroId, count
 end
+
 function PlayerInfoData:GetMostUsedWeaponIdByHeroId(HeroId, RoleID)
   local roleID = RoleID or DataMgr.GetUserId()
   local weaponResId = -1
@@ -356,4 +365,5 @@ function PlayerInfoData:GetMostUsedWeaponIdByHeroId(HeroId, RoleID)
   end
   return weaponResId, count
 end
+
 return PlayerInfoData

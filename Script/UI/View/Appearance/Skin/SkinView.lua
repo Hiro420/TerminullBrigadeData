@@ -86,6 +86,7 @@ local CheckHaveCustomSkin = function(self, SkinID)
   end
   return #RowInfo.AttachList > 0, RowInfo.AttachList
 end
+
 function SkinView:OnBindUIInput()
   if not IsListeningForInputAction(self, PreCameraData) then
     ListenForInputAction(PreCameraData, UE.EInputEvent.IE_Pressed, true, {
@@ -116,7 +117,9 @@ function SkinView:OnBindUIInput()
   self.WBP_InteractTipWidgetHideUI.OnMainButtonClicked:Add(self, self.HideUI)
   self.WBP_InteractTipWidgetSetting.OnMainButtonClicked:Add(self, self.OpenSetting)
   self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Add(self, self.EscView)
+  self.WBP_RedDotClearButtonView:BindInteractAndClickEvent()
 end
+
 function SkinView:OnUnBindUIInput()
   StopListeningForInputAction(self, PreCameraData, UE.EInputEvent.IE_Pressed)
   StopListeningForInputAction(self, NextCameraData, UE.EInputEvent.IE_Pressed)
@@ -127,26 +130,32 @@ function SkinView:OnUnBindUIInput()
   self.WBP_InteractTipWidgetHideUI.OnMainButtonClicked:Remove(self, self.HideUI)
   self.WBP_InteractTipWidgetSetting.OnMainButtonClicked:Remove(self, self.OpenSetting)
   self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Remove(self, self.EscView)
+  self.WBP_RedDotClearButtonView:UnBindInteractAndClickEvent()
 end
+
 function SkinView:BindClickHandler()
   self.RGToggleGroupWeaponSkin.OnCheckStateChanged:Add(self, self.OnWeaponSkinGroupCheckStateChanged)
   self.RGToggleGroupFirst.OnCheckStateChanged:Add(self, self.OnFirstGroupCheckStateChanged)
   self.RGToggleGroupHeirloomLv.OnCheckStateChanged:Add(self, self.OnHeirloomLvChanged)
 end
+
 function SkinView:UnBindClickHandler()
   self.RGToggleGroupWeaponSkin.OnCheckStateChanged:Remove(self, self.OnWeaponSkinGroupCheckStateChanged)
   self.RGToggleGroupFirst.OnCheckStateChanged:Remove(self, self.OnFirstGroupCheckStateChanged)
   self.RGToggleGroupHeirloomLv.OnCheckStateChanged:Remove(self, self.OnHeirloomLvChanged)
 end
+
 function SkinView:OnInit()
   self.DataBindTable = {}
   self.viewModel = UIModelMgr:Get("SkinViewModel")
   self:BindClickHandler()
 end
+
 function SkinView:OnDestroy()
   self:UnBindClickHandler()
   self:SequenceFinished()
 end
+
 function SkinView:OnShow(...)
   self.Super:AttachViewModel(self.viewModel, self.DataBindTable, self)
   local apearanceView = UIMgr:GetLuaFromActiveView(ViewID.UI_Apearance)
@@ -181,17 +190,20 @@ function SkinView:OnShow(...)
   self.WBP_RedDotViewWeaponSkin:ChangeRedDotIdByTag(self.viewModel.CurHeroId)
   self:RegisterScrollRecipient(self.WBP_RoleSkinList)
 end
+
 function SkinView:OnRollback()
   self:RebackView()
   self:RegisterScrollRecipient(self.WBP_RoleSkinList)
   self.WBP_CommonBg.ShowAnimation = true
 end
+
 function SkinView:EscView()
   local luaInst = UIMgr:GetLuaFromActiveView(ViewID.UI_Apearance)
   if UE.RGUtil.IsUObjectValid(luaInst) then
     luaInst:ListenForEscInputAction()
   end
 end
+
 function SkinView:OnAccessClick()
   if self.viewModel.CurSelectSkinToggle == ESkinToggleStatus.HeroSkin then
     local heroSkinData = self.viewModel:GetHeroSkinDataBySkinResId(self.viewModel.CurSelectHeroSkinResId)
@@ -262,6 +274,7 @@ function SkinView:OnAccessClick()
     end
   end
 end
+
 function SkinView:OnEquipClick()
   if self.viewModel.CurSelectSkinToggle == ESkinToggleStatus.HeroSkin then
     self.viewModel:SendEquipHeroSkinReq(self.viewModel.CurHeroId, self.viewModel.CurSelectHeroSkinResId)
@@ -269,14 +282,17 @@ function SkinView:OnEquipClick()
     self.viewModel:EquipWeaponSkin(self.viewModel.CurSelectWeaponSkinResId)
   end
 end
+
 function SkinView:OnAccessHovered()
   self:StopAnimation(self.Ani_hover_out)
   self:PlayAnimation(self.Ani_hover_in, 0)
 end
+
 function SkinView:OnAccessUnhovered()
   self:StopAnimation(self.Ani_hover_in)
   self:PlayAnimation(self.Ani_hover_out, 0)
 end
+
 function SkinView:OnEffectHover()
   local AttachID = self.viewModel.CurSelectHeroSkinResId
   local SkinData = self.viewModel:GetHeroSkinDataBySkinResId(self.viewModel.CurSelectHeroSkinResId)
@@ -296,33 +312,41 @@ function SkinView:OnEffectHover()
   self.TipsWidget = ShowCommonTips(nil, self.Btn_Effect, nil, WidgetClassPath, nil, nil, UE.FVector2D(-40, 0))
   self.TipsWidget:ShowTips(EffectText, self.EffectContent, nil, nil, nil, nil, ProEffType)
 end
+
 function SkinView:OnEffectUnhover()
   UpdateVisibility(self.TipsWidget, false)
 end
+
 function SkinView:BindOnBtnDisplayClicked()
   if self.LocalEffectState then
     return
   end
   self:SwitchEffectState(true)
 end
+
 function SkinView:BindOnBtnDisplayHovered()
   self.RGStateController_Display_Hover:ChangeStatus("Hover")
 end
+
 function SkinView:BindOnBtnDisplayUnhovered()
   self.RGStateController_Display_Hover:ChangeStatus("UnHover")
 end
+
 function SkinView:BindOnBtnHideClicked()
   if not self.LocalEffectState then
     return
   end
   self:SwitchEffectState(false)
 end
+
 function SkinView:BindOnBtnHideHovered()
   self.RGStateController_Hide_Hover:ChangeStatus("Hover")
 end
+
 function SkinView:BindOnBtnHideUnhovered()
   self.RGStateController_Hide_Hover:ChangeStatus("Hover")
 end
+
 function SkinView:SwitchEffectState(IsShow)
   self.RGStateController_Display_Select:ChangeStatus(IsShow and "Select" or "Normal")
   self.RGStateController_Hide_Select:ChangeStatus(IsShow and "Normal" or "Select")
@@ -342,9 +366,11 @@ function SkinView:SwitchEffectState(IsShow)
   local ShowActor = GetAppearanceActor(self).ChildActor.ChildActor.ChildActor.ChildActor
   LogicRole.SetEffectState(ShowActor, CurSkinData.HeroSkinTb.SkinID, nil, IsShow)
 end
+
 function SkinView:SetEffectState(EffectState, SkinId)
   self.WBP_SkinDetailsItem:SetEffectState(EffectState, SkinId)
 end
+
 function SkinView:RebackView()
   local AppearanceActorTemp = GetAppearanceActor(self)
   if UE.RGUtil.IsUObjectValid(AppearanceActorTemp) then
@@ -367,6 +393,7 @@ function SkinView:RebackView()
     end
   end
 end
+
 function SkinView:HideUI()
   local luaInst = UIMgr:GetLuaFromActiveView(ViewID.UI_Apearance)
   if UE.RGUtil.IsUObjectValid(luaInst) then
@@ -374,9 +401,11 @@ function SkinView:HideUI()
   end
   self:StopVoice()
 end
+
 function SkinView:OpenSetting()
   LogicGameSetting.ShowGameSettingPanel()
 end
+
 function SkinView:MediaPlayerFinish()
   print("SkinView:MediaPlayerFinish")
   self:UpdateMovie(false)
@@ -385,6 +414,7 @@ function SkinView:MediaPlayerFinish()
     self.AppearanceActor:RefreshRoleAniStatus(self.viewModel.CurSelectHeroSkinResId)
   end
 end
+
 function SkinView:UpdateMovie(bIsShow, SequenceFinish)
   LogicAudio.bIsPlayingMovie = false
   if not self.viewModel.CurSelectHeroSkinResId or self.viewModel.CurSelectHeroSkinResId <= 0 then
@@ -447,6 +477,7 @@ function SkinView:UpdateMovie(bIsShow, SequenceFinish)
     self.LastAkEventName = nil
   end
 end
+
 function SkinView:PlaySkinSound()
   local result, row = GetRowData(DT.DT_HeirloomSkin, tostring(self.viewModel.CurSelectHeroSkinResId))
   local heirloogMediaData
@@ -465,6 +496,7 @@ function SkinView:PlaySkinSound()
     end
   end
 end
+
 function SkinView:OnPreHide()
   if UE.RGUtil.IsUObjectValid(self.AppearanceActor) then
     self.AppearanceActor:UpdateActived(false)
@@ -479,11 +511,13 @@ function SkinView:OnPreHide()
   UpdateVisibility(self.TipsWidget, false)
   self.ScrollBoxWeaponSkinList.OnUserScrolled:Remove(self, self.OnWeaponSkinListScrolled)
 end
+
 function SkinView:OnHide()
   self:StopAllAnimations()
   UpdateVisibility(self.CanvasPanelRoot, true)
   self:UnregisterScrollRecipient(self.WBP_RoleSkinList)
 end
+
 function SkinView:ListenForPreCameraData()
   if self.EnterList then
     return
@@ -493,6 +527,7 @@ function SkinView:ListenForPreCameraData()
     AppearanceActorTemp:MovePreCameraTrans()
   end
 end
+
 function SkinView:ListenForNextCameraData()
   if self.EnterList then
     return
@@ -502,6 +537,7 @@ function SkinView:ListenForNextCameraData()
     AppearanceActorTemp:MoveNextCameraTrans()
   end
 end
+
 function SkinView:ListenForChangeDisplayModel(bNotShowGlitchMatEffect)
   local bShowGlitchMatEffect = not bNotShowGlitchMatEffect
   if self.viewModel.CurSelectSkinToggle == ESkinToggleStatus.WeaponSkin then
@@ -519,6 +555,7 @@ function SkinView:ListenForChangeDisplayModel(bNotShowGlitchMatEffect)
     UpdateVisibility(self.WBP_InteractTipWidgetChangeWeaponDisplay, false)
   end
 end
+
 function SkinView:OnMouseButtonDown(myMouseButtonDown, mouseEvent)
   local AppearanceActorTemp = GetAppearanceActor(self)
   if UE.RGUtil.IsUObjectValid(AppearanceActorTemp) then
@@ -526,6 +563,7 @@ function SkinView:OnMouseButtonDown(myMouseButtonDown, mouseEvent)
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function SkinView:OnMouseButtonUp(myMouseButtonDown, mouseEvent)
   local AppearanceActorTemp = GetAppearanceActor(self)
   if UE.RGUtil.IsUObjectValid(AppearanceActorTemp) then
@@ -533,6 +571,7 @@ function SkinView:OnMouseButtonUp(myMouseButtonDown, mouseEvent)
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function SkinView:OnAnimationFinished(Animation)
   if Animation == self.Ani_CanvasPanelWeaponSkin_in then
     UE.URGBlueprintLibrary.SetTimerForNextTick(GameInstance, {
@@ -544,6 +583,7 @@ function SkinView:OnAnimationFinished(Animation)
     })
   end
 end
+
 function SkinView:OnHeroSkinListUpdate(ShowHeroSkinData, CurSelectHeroSkinResId)
   if not CheckIsVisility(self.CanvasPanelRoleSkin) then
     self:PlayAnimation(self.Ani_CanvasPanelRoleSkin_in)
@@ -646,6 +686,7 @@ function SkinView:OnHeroSkinListUpdate(ShowHeroSkinData, CurSelectHeroSkinResId)
     self:SelectHeroSkin(curSelectIdx, true)
   end
 end
+
 function SkinView:SelectItem(SelectId)
   local displayItemAry = self.WBP_RoleSkinList.TileViewRoleSkin:GetDisplayedEntryWidgets()
   for i, v in pairs(displayItemAry) do
@@ -662,6 +703,7 @@ function SkinView:SelectItem(SelectId)
   end
   self.viewModel:UpdateCurSelectHeroSkin(SelectId, true, true)
 end
+
 function SkinView:OnWeaponSkinListUpdate(ShowWeaponSkinDataMap, showWeaponIdList, CurSelectWeaponSkinResId)
   if not CheckIsVisility(self.CanvasPanelWeaponSkin) then
     self:PlayAnimation(self.Ani_CanvasPanelWeaponSkin_in)
@@ -695,7 +737,12 @@ function SkinView:OnWeaponSkinListUpdate(ShowWeaponSkinDataMap, showWeaponIdList
       if weaponSkinListData.EquipedSkinId >= 0 then
         needSelectId = weaponSkinListData.EquipedSkinId
       else
-        needSelectId = weaponSkinListData.SkinDataList[1].WeaponSkinTb.SkinID
+        for i, v in ipairs(weaponSkinListData.SkinDataList) do
+          if self:CheckIsShow(v.WeaponSkinTb, v.bUnlocked) then
+            needSelectId = v.WeaponSkinTb.SkinID
+            break
+          end
+        end
       end
     end
     local weaponSkinTitleItemTop = GetOrCreateItem(self.VerticalBoxWeaponTitleTop, i, self.WBP_WeaponSkinTitleItemTop:GetClass())
@@ -729,6 +776,7 @@ function SkinView:OnWeaponSkinListUpdate(ShowWeaponSkinDataMap, showWeaponIdList
     self.RGToggleGroupWeaponSkin:SelectId(CurSelectWeaponSkinResId)
   end
 end
+
 function SkinView:OnSkinTitleSelect(WeaponResId)
   if self.WeaponIdToWeaponSkinListItem and self.WeaponIdToWeaponSkinListItem[WeaponResId] then
     local idx = self.WeaponIdToSkinTitleItemTop[WeaponResId].Idx
@@ -736,9 +784,11 @@ function SkinView:OnSkinTitleSelect(WeaponResId)
     self.ScrollBoxWeaponSkinList:ScrollWidgetIntoView(self.WeaponIdToWeaponSkinListItem[WeaponResId].Item, true, UE.EDescendantScrollDestination.TopOrLeft, offset)
   end
 end
+
 function SkinView:OnWeaponSkinListScrolled(CurrentOffset)
   self:UpdateWeaponSkinTitle(CurrentOffset)
 end
+
 function SkinView:UpdateWeaponSkinTitle(CurrentOffset)
   local GeometryScrollBoxWeaponSkinList = self.ScrollBoxWeaponSkinList:GetCachedGeometry()
   for k, v in pairs(self.WeaponIdToWeaponSkinListItem) do
@@ -764,6 +814,7 @@ function SkinView:UpdateWeaponSkinTitle(CurrentOffset)
     end
   end
 end
+
 function SkinView:OnUpdateHeroSkinToggleProgress(ShowHeroSkinData)
   local curHeroSkinNum = 0
   local totalHeroSkinNum = #ShowHeroSkinData.SkinDataList
@@ -774,6 +825,7 @@ function SkinView:OnUpdateHeroSkinToggleProgress(ShowHeroSkinData)
   end
   self.WBP_SkinToggleHero:InitSkinToggle(curHeroSkinNum, totalHeroSkinNum)
 end
+
 function SkinView:OnUpdateWeaponSkinToggleProgress(ShowWeaponSkinDataMap)
   local curWeaponSkinNum = 0
   local totalWeaponSkinNum = 0
@@ -788,6 +840,7 @@ function SkinView:OnUpdateWeaponSkinToggleProgress(ShowWeaponSkinDataMap)
   end
   self.WBP_SkinToggleWeapon:InitSkinToggle(curWeaponSkinNum, totalWeaponSkinNum)
 end
+
 function SkinView:UpdateHeroSkinDetailsView(HeroSkinData, bUpdateMovie)
   if not HeroSkinData then
     return
@@ -809,6 +862,7 @@ function SkinView:UpdateHeroSkinDetailsView(HeroSkinData, bUpdateMovie)
   self:UpdateHeorHeirloomLv(HeroSkinData)
   self:UpdateUIColor(tostring(HeroSkinData.HeroSkinTb.SkinID))
 end
+
 function SkinView:PlaySeq(SoftObjPath)
   local seqSubSys = UE.URGSequenceSubsystem.GetInstance(self)
   if not seqSubSys then
@@ -836,6 +890,7 @@ function SkinView:PlaySeq(SoftObjPath)
   self.SequencePlayer.OnFinished:Add(self, self.LevelSequenceFinish)
   self.SequencePlayer:Play()
 end
+
 function SkinView:LevelSequenceFinish()
   self:UpdateMovie(false, true)
   local CurSkinData = self.viewModel:GetHeroSkinDataBySkinResId(self.viewModel.CurSelectHeroSkinResId)
@@ -847,6 +902,7 @@ function SkinView:LevelSequenceFinish()
     self.AppearanceActor:RefreshRoleAniStatus(self.viewModel.CurSelectHeroSkinResId)
   end
 end
+
 function SkinView:SequenceFinished(SequenceFinish)
   if self.SequencePlayer then
     if self.LastAkEventName then
@@ -862,20 +918,24 @@ function SkinView:SequenceFinished(SequenceFinish)
     end
   end
 end
+
 function SkinView:OnHideByOther()
   local AppearanceActorTemp = GetAppearanceActor(self)
   if UE.RGUtil.IsUObjectValid(AppearanceActorTemp) then
     AppearanceActorTemp:UpdateActived(false, true)
   end
 end
+
 function SkinView:UpdateEquipButton()
   self.WBP_SkinDetailsItem:UpdateEquipButton()
 end
+
 function SkinView:UpdateCustomSkinItemSelct(SkinID)
   for i, v in ipairs(self.SBox_CustomSkin:GetAllChildren():ToTable()) do
     v:SetSel(v.SkinID == SkinID)
   end
 end
+
 function SkinView:PlaySkinVoice(SKinID)
   if not self.LastVoiceTime or os.time() - self.LastVoiceTime >= 10 then
     local heroSkinData = self.viewModel:GetHeroSkinDataBySkinResId(SKinID)
@@ -886,12 +946,14 @@ function SkinView:PlaySkinVoice(SKinID)
     end
   end
 end
+
 function SkinView:StopVoice()
   if self.VoiceID and self.VoiceID > 0 then
     UE.URGBlueprintLibrary.StopVoice(self.VoiceID)
     self.VoiceID = 0
   end
 end
+
 function SkinView:UpdateUIColor(SkinId)
   local result, row = GetRowData(DT.DT_DisplaySkinUIColor, SkinId)
   if not result then
@@ -901,6 +963,7 @@ function SkinView:UpdateUIColor(SkinId)
     self.TextToggleTitle:SetColorAndOpacity(row.UIColor)
   end
 end
+
 function SkinView:UpdateHeorHeirloomLv(HeroSkinData, EquipedSkinId)
   UpdateVisibility(self.CanvasPanelHeirloom, HeroSkinData.HeirloomId > 0)
   if HeroSkinData.HeirloomId > 0 then
@@ -925,6 +988,7 @@ function SkinView:UpdateHeorHeirloomLv(HeroSkinData, EquipedSkinId)
     self.RGToggleGroupHeirloomLv:SelectId(HeroSkinData.HeroSkinTb.SkinID)
   end
 end
+
 function SkinView:UpdateWeaponSkinDetailsView(WeaponSkinData)
   local ResID = GetTbSkinRowNameBySkinID(self.viewModel.CurSelectWeaponSkinResId)
   self.WBP_SkinDetailsItem:UpdateDetailsView(ResID, self.AppearanceMovieList, self)
@@ -937,17 +1001,21 @@ function SkinView:UpdateWeaponSkinDetailsView(WeaponSkinData)
   end
   self:UpdateUIColor(tostring(WeaponSkinData.WeaponSkinTb.SkinID))
 end
+
 function SkinView:UpdateWeaponEquipButton(WeaponSkinData)
   self.WBP_SkinDetailsItem:UpdateEquipButton(WeaponSkinData)
 end
+
 function SkinView:SelectHeroSkin(HeroSkinResId, bUpdateMovie)
   self.viewModel:UpdateCurSelectHeroSkin(HeroSkinResId, bUpdateMovie)
 end
+
 function SkinView:OnWeaponSkinGroupCheckStateChanged(SelectId)
   print("OnWeaponSkinGroupCheckStateChanged", SelectId)
   self:UpdateMovie(false)
   self.viewModel:UpdateCurSelectWeaponSkin(SelectId)
 end
+
 function SkinView:OnFirstGroupCheckStateChanged(SelectId)
   print("OnFirstGroupCheckStateChanged", SelectId)
   if SelectId ~= ESkinToggleStatus.HeroSkin and not self.bHideByOther then
@@ -965,6 +1033,7 @@ function SkinView:OnFirstGroupCheckStateChanged(SelectId)
     self.WBP_RoleSkinList.TileViewRoleSkin:ScrollToTop()
   end
 end
+
 function SkinView:ScrollToTargetWeaponSkin(WeaponResId, WeaponSkinId)
   local WeaponWidget
   local AllChildren = self.ScrollBoxWeaponSkinList:GetAllChildren()
@@ -990,28 +1059,33 @@ function SkinView:ScrollToTargetWeaponSkin(WeaponResId, WeaponSkinId)
   end
   self.ScrollBoxWeaponSkinList:ScrollWidgetIntoView(WeaponSkinWidget)
 end
+
 function SkinView:OnHeirloomLvChanged(SkinId)
   self:SelectHeroSkin(SkinId, false)
 end
+
 function SkinView:OnHideMovieClick()
   local apearanceView = UIMgr:GetLuaFromActiveView(ViewID.UI_Apearance)
   if UE.RGUtil.IsUObjectValid(apearanceView) then
     apearanceView.WBP_AppearanceMovieList:Hide()
   end
 end
+
 function SkinView:OnShowRole(bShowGlitchMatEffect)
   local AppearanceActorTemp = GetAppearanceActor(self)
   if UE.RGUtil.IsUObjectValid(AppearanceActorTemp) then
     self.AppearanceActor:AppearanceToggleSkipEnter(true)
-    AppearanceActorTemp:InitAppearanceActor(self.viewModel.CurHeroId, self.viewModel.CurSelectHeroSkinResId, AppearanceActorTemp.WeaponSkinId, true, bShowGlitchMatEffect)
+    AppearanceActorTemp:InitAppearanceActor(self.viewModel.CurHeroId, self.viewModel.CurSelectHeroSkinResId, AppearanceActorTemp.WeaponSkinId, bShowGlitchMatEffect)
   end
 end
+
 function SkinView:OnShowWeapon(bShowGlitchMatEffect)
   local AppearanceActorTemp = GetAppearanceActor(self)
   if UE.RGUtil.IsUObjectValid(AppearanceActorTemp) then
     AppearanceActorTemp:InitWeaponMesh(self.viewModel.CurSelectWeaponSkinResId, self.viewModel:GetWeaponResIdBySkinId(self.viewModel.CurSelectWeaponSkinResId), bShowGlitchMatEffect)
   end
 end
+
 function SkinView:LinkPurchaseConfirm(LinkId, ParamList)
   if tonumber(LinkId) ~= 1007 then
     return false
@@ -1019,6 +1093,7 @@ function SkinView:LinkPurchaseConfirm(LinkId, ParamList)
   ComLink(LinkId, nil, ParamList[2], ParamList[1], 1)
   return true
 end
+
 function SkinView:InitBuyPanel(LinkId, GoodsId, bUnlocked, AccessDesc)
   if bUnlocked then
     UpdateVisibility(self.CanvasPanelButtonMain, false)
@@ -1050,6 +1125,7 @@ function SkinView:InitBuyPanel(LinkId, GoodsId, bUnlocked, AccessDesc)
     self.WBP_CommonButton_Main:SetContentText(AccessDesc)
   end
 end
+
 function SkinView:InitAttachBuyPanel(SkinId)
   local result, rowinfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBHeroSkinExchange, SkinId)
   if result then
@@ -1058,12 +1134,14 @@ function SkinView:InitAttachBuyPanel(SkinId)
     self.WBP_Price_2:SetPrice(rowinfo.CostResources[1].value, nil, rowinfo.CostResources[1].key)
   end
 end
+
 function SkinView:CheckIsShow(SkinTb, IsUnlocked)
   if SkinTb.IsUnlockShow and not IsUnlocked then
     return false
   end
   return SkinTb.IsShow and (0 == SkinTb.ParentSkinId or SkinTb.ParentSkinId == nil)
 end
+
 function SkinView:CheckUnLockOriSkin(SkinResID)
   local result, rowinfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBCharacterSkin, SkinResID)
   if result then
@@ -1073,14 +1151,17 @@ function SkinView:CheckUnLockOriSkin(SkinResID)
   end
   return false
 end
+
 function SkinView:SkinDetailsCallBack()
   self:SequenceFinished()
   local AppearanceActorTemp = GetAppearanceActor(self)
   self.AppearanceActor:UpdateActived(false, true, false)
 end
+
 function SkinView:SequenceCallBack()
   self.WBP_CommonBg.ShowAnimation = false
   self.WBP_CommonBg:AnimationToEnd()
   self:PlayAnimation(self.Anim_IN)
 end
+
 return SkinView

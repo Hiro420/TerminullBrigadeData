@@ -1,4 +1,5 @@
 local WBP_CostResourceItem_C = UnLua.Class()
+
 function WBP_CostResourceItem_C:SetCompareInfo(CostId, CostNum)
   local ResourceInfo = LogicOutsidePackback.GetResourceInfoById(CostId)
   if ResourceInfo then
@@ -12,4 +13,5 @@ function WBP_CostResourceItem_C:SetCompareInfo(CostId, CostNum)
     self.Txt_Cost:SetColorAndOpacity(self.EnoughColor)
   end
 end
+
 return WBP_CostResourceItem_C

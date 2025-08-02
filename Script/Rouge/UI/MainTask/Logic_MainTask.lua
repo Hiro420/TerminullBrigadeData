@@ -32,6 +32,7 @@ Logic_MainTask = Logic_MainTask or {
   TaskInfo = {},
   CacheInviteDialogue = {}
 }
+
 function Logic_MainTask.GetAllGroupIds()
   local taskGroupList = {}
   local taskGroupMap = {}
@@ -97,10 +98,12 @@ function Logic_MainTask.GetAllGroupIds()
   end
   return taskGroupList
 end
+
 function Logic_MainTask.GetAllMainTaskGroupIds()
   local MainStoryLine = LuaTableMgr.GetLuaTableByName(TableNames.TBMainStoryLine)
   return MainStoryLine[1].taskgrouplist
 end
+
 function Logic_MainTask.LoadMainTaskModule()
   print("LoadMainTaskModule")
   Logic_MainTask.GroupInfo = {}
@@ -112,6 +115,7 @@ function Logic_MainTask.LoadMainTaskModule()
   Logic_MainTask.PullTask()
   Logic_MainTask.LoadInviteDialogue()
 end
+
 function Logic_MainTask.LoadInviteDialogue()
   if Logic_MainTask.CacheInviteDialogue == nil then
     Logic_MainTask.CacheInviteDialogue = {}
@@ -120,6 +124,7 @@ function Logic_MainTask.LoadInviteDialogue()
     EventSystem.Invoke(EventDef.Lobby.OnInviteDialogue, true, value)
   end
 end
+
 function Logic_MainTask.OnTaskUpdate(Json)
   local JsonTable = rapidjson.decode(Json)
   local GroupIdList = {}
@@ -130,6 +135,7 @@ function Logic_MainTask.OnTaskUpdate(Json)
   end
   Logic_MainTask.PullTask(GroupIdList, true)
 end
+
 function Logic_MainTask.PullTask(GroupIdList, bIsFromTaskUpdage)
   local JsonParams = {}
   if GroupIdList then
@@ -157,6 +163,7 @@ function Logic_MainTask.PullTask(GroupIdList, bIsFromTaskUpdage)
     end
   })
 end
+
 function Logic_MainTask.DoTaskInfoChange(TaskGroups, bIsFromTaskUpdage)
   local TaskGroupIdList = {}
   for key0, GroupValue in pairs(TaskGroups) do
@@ -168,6 +175,7 @@ function Logic_MainTask.DoTaskInfoChange(TaskGroups, bIsFromTaskUpdage)
   end
   EventSystem.Invoke(EventDef.MainTask.OnMainTaskRefres, TaskGroupIdList)
 end
+
 function Logic_MainTask.CheckTaskState(TaskValue, GroupID, bIsFromTaskUpdage)
   if nil == TaskValue then
     return
@@ -231,6 +239,7 @@ function Logic_MainTask.CheckTaskState(TaskValue, GroupID, bIsFromTaskUpdage)
   Logic_MainTask.TaskInfo[TaskValue.taskID] = TaskValue
   EventSystem.Invoke(EventDef.MainTask.OnMainTaskChange, GroupID, ChangeTask, true, false)
 end
+
 function Logic_MainTask.UpdateConsoleAchievementsProgress(TaskGroupId, TaskId, TaskValue)
   if AchievementData:CheckIsAchievementTask(TaskGroupId) then
     local FirstCount = 0
@@ -253,6 +262,7 @@ function Logic_MainTask.UpdateConsoleAchievementsProgress(TaskGroupId, TaskId, T
     UE.UOnlineGameUtilsLibrary.MakeAchievement(GameInstance, TaskId, Percent)
   end
 end
+
 function Logic_MainTask.CheckShowTaskTips(TaskGroupId, TaskId)
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
   if not WaveWindowManager then
@@ -273,6 +283,7 @@ function Logic_MainTask.CheckShowTaskTips(TaskGroupId, TaskId)
     WaveWindowManager:ShowWaveWindowWithWaveParam(1178, Param, nil, {}, {}, WaveWindowParam)
   end
 end
+
 function Logic_MainTask.GetTaskInfoByTaskId(TaskId)
   local TaskData = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskData)
   if nil ~= TaskData and nil ~= TaskData[TaskId] then
@@ -280,12 +291,14 @@ function Logic_MainTask.GetTaskInfoByTaskId(TaskId)
   end
   return nil
 end
+
 function Logic_MainTask.GetStateByTaskId(TaskId)
   if Logic_MainTask.TaskInfo[TaskId] then
     return Logic_MainTask.TaskInfo[TaskId].state
   end
   return -1
 end
+
 function Logic_MainTask.GetFirstCountValueByTaskId(TaskId)
   if Logic_MainTask.TaskInfo[TaskId] then
     for key, counterV in pairs(Logic_MainTask.TaskInfo[TaskId].counters) do
@@ -294,6 +307,7 @@ function Logic_MainTask.GetFirstCountValueByTaskId(TaskId)
   end
   return "0"
 end
+
 function Logic_MainTask.GetFirstTargetValueByTaskId(TaskId)
   if Logic_MainTask.TaskInfo[TaskId] then
     for key, counterV in pairs(Logic_MainTask.TaskInfo[TaskId].counters) do
@@ -302,6 +316,7 @@ function Logic_MainTask.GetFirstTargetValueByTaskId(TaskId)
   end
   return 0
 end
+
 function Logic_MainTask.IsGroupUnLock(TaskGroupId)
   if Logic_MainTask.GroupInfo[TaskGroupId] == nil then
     print(" Logic_MainTask.GroupInfo[TaskGroupId] == nil", TaskGroupId)
@@ -314,6 +329,7 @@ function Logic_MainTask.IsGroupUnLock(TaskGroupId)
   end
   return false
 end
+
 function Logic_MainTask.IsProfyTaskGroupUnlock(HeroId, GearLv, TaskGroupId)
   if Logic_MainTask.IsGroupReceive(TaskGroupId) then
     return false
@@ -327,6 +343,7 @@ function Logic_MainTask.IsProfyTaskGroupUnlock(HeroId, GearLv, TaskGroupId)
   end
   return true
 end
+
 function Logic_MainTask.IsProfyTaskGroupOrGotAward(HeroId, GearLv, TaskGroupId)
   if 1 == GearLv then
     return true
@@ -337,9 +354,11 @@ function Logic_MainTask.IsProfyTaskGroupOrGotAward(HeroId, GearLv, TaskGroupId)
   end
   return true
 end
+
 function Logic_MainTask.GetMaxUnlockGearLv(HeroId)
   return 0
 end
+
 function Logic_MainTask.IsGroupFinish(TaskGroupId)
   if Logic_MainTask.GroupInfo[TaskGroupId] == nil then
     print(" Logic_MainTask.GroupInfo[TaskGroupId] == nil", TaskGroupId)
@@ -352,6 +371,7 @@ function Logic_MainTask.IsGroupFinish(TaskGroupId)
   end
   return Logic_MainTask.GroupInfo[TaskGroupId].state == ETaskGroupState.Finished
 end
+
 function Logic_MainTask.IsGroupReceive(TaskGroupId)
   if Logic_MainTask.GroupInfo[TaskGroupId] == nil then
     print(" Logic_MainTask.GroupInfo[TaskGroupId] == nil", TaskGroupId)
@@ -359,6 +379,7 @@ function Logic_MainTask.IsGroupReceive(TaskGroupId)
   end
   return Logic_MainTask.GroupInfo[TaskGroupId].state == ETaskGroupState.GotAward
 end
+
 function Logic_MainTask.IsTaskReceive(TaskId)
   if Logic_MainTask.TaskInfo[TaskId] == nil then
     print(" Logic_MainTask.TaskInfo[TaskGroupId] == nil", TaskId)
@@ -366,6 +387,7 @@ function Logic_MainTask.IsTaskReceive(TaskId)
   end
   return 3 == Logic_MainTask.TaskInfo[TaskId].state
 end
+
 function Logic_MainTask.GetActiveGroups()
   local ActiveGroups = {}
   if Logic_MainTask.GetAllMainTaskGroupIds() == nil then
@@ -378,6 +400,7 @@ function Logic_MainTask.GetActiveGroups()
   end
   return ActiveGroups
 end
+
 function Logic_MainTask.GetGroupActiveTask(GroupId)
   if Logic_MainTask.IsGroupUnLock(GroupId) and not Logic_MainTask.IsGroupFinish(GroupId) then
     if Logic_MainTask.GroupInfo[GroupId] == nil then
@@ -396,12 +419,14 @@ function Logic_MainTask.GetGroupActiveTask(GroupId)
   end
   return nil
 end
+
 function Logic_MainTask.HaveReceiveAward(TsakId)
   local TaskData = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskData)
   if nil ~= TaskData and nil ~= TaskData[TsakId] then
     return 0 ~= table.count(TaskData[TsakId].rewardlist)
   end
 end
+
 function Logic_MainTask.GetGroupShowTask(GroupId)
   local ReturnIds = {}
   if not Logic_MainTask.GroupInfo[GroupId] then
@@ -414,6 +439,7 @@ function Logic_MainTask.GetGroupShowTask(GroupId)
   end
   return ReturnIds
 end
+
 function Logic_MainTask.ReceiveAward(GroupId, TaskId, bNotShowPropTip, callback, callbackObj, IgnoreStateCheck, bShowLoading)
   if not TaskId then
     local taskIDs = {}
@@ -492,6 +518,7 @@ function Logic_MainTask.ReceiveAward(GroupId, TaskId, bNotShowPropTip, callback,
     end
   }, false, bShowLoading)
 end
+
 function Logic_MainTask.IsOptionalAward(TaskId)
   local TaskDate = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskData)
   if TaskDate[TaskId] then
@@ -504,6 +531,7 @@ function Logic_MainTask.IsOptionalAward(TaskId)
   end
   return false
 end
+
 function Logic_MainTask.ReceiveTaskGroupAward(GroupId, bNotShowPropTip)
   local JsonParams = {groupID = GroupId}
   HttpCommunication.Request("task/receivereward/taskgroup", JsonParams, {
@@ -518,6 +546,7 @@ function Logic_MainTask.ReceiveTaskGroupAward(GroupId, bNotShowPropTip)
     end
   })
 end
+
 function Logic_MainTask.BindInviteDialogue(bShow, Id, InviteDialogueWidget)
   if bShow then
     if not table.Contain(Logic_MainTask.CacheInviteDialogue, Id) and Logic_MainTask.CheckDialogueId(Id) then
@@ -538,6 +567,7 @@ function Logic_MainTask.BindInviteDialogue(bShow, Id, InviteDialogueWidget)
   InviteDialogueWidget:RefreshList()
   UpdateVisibility(InviteDialogueWidget, 0 ~= #Logic_MainTask.CacheInviteDialogue)
 end
+
 function Logic_MainTask.OnReceiveAward(TaskId)
   local TaskData = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskData)
   if TaskData[TaskId] and TaskData[TaskId].finishunlockdialog and 0 ~= TaskData[TaskId].finishunlockdialog then
@@ -553,6 +583,7 @@ function Logic_MainTask.OnReceiveAward(TaskId)
     Logic_MainTask.CaCheDialogueTask[Logic_MainTask.WaitFinishTask[TaskId].Id] = Logic_MainTask.WaitFinishTask[TaskId].TaskId
   end
 end
+
 function Logic_MainTask.OnMainTaskFinish(GroupId, TaskId)
   local TaskData = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskData)
   if not TaskData[TaskId] or TaskData[TaskId].finishunlockdialog then
@@ -562,6 +593,7 @@ function Logic_MainTask.OnMainTaskFinish(GroupId, TaskId)
   end
   UE.UOnlineGameUtilsLibrary.EndActivity(GameInstance, TaskId, UE.ERGOnlineActivityOutcome.Completed)
 end
+
 function Logic_MainTask.OnMainTaskUnLock(GroupId, TaskId)
   local TaskData = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskData)
   if TaskData[TaskId] and TaskData[TaskId].unlockdialog and 0 ~= TaskData[TaskId].unlockdialog then
@@ -572,6 +604,7 @@ function Logic_MainTask.OnMainTaskUnLock(GroupId, TaskId)
   end
   Logic_MainTask.CheckDialogueTask(GroupId, TaskId)
 end
+
 function Logic_MainTask.CheckDialogueTask(GroupId, TaskId)
   local TaskData = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskData)
   if TaskData[TaskId] and TaskData[TaskId].targetEventsList then
@@ -592,6 +625,7 @@ function Logic_MainTask.CheckDialogueTask(GroupId, TaskId)
     end
   end
 end
+
 function Logic_MainTask.FinishDialogueTask(TaskId, EventId)
   HttpCommunication.Request("task/event/clienttarget", {id = EventId, module = "1"}, {
     GameInstance,
@@ -603,6 +637,7 @@ function Logic_MainTask.FinishDialogueTask(TaskId, EventId)
     end
   })
 end
+
 function Logic_MainTask.CacheDialogueId(Id)
   if Logic_MainTask.FinishDialogueId == nil then
     Logic_MainTask.FinishDialogueId = {}
@@ -617,6 +652,7 @@ function Logic_MainTask.CacheDialogueId(Id)
   end
   UE.URGBlueprintLibrary.SaveStringToFile(FilePath, OutStr)
 end
+
 function Logic_MainTask.CheckDialogueId(Id)
   if Logic_MainTask.FinishDialogueId == nil or Logic_MainTask.FinishDialogueId == {} then
     Logic_MainTask.FinishDialogueId = {}

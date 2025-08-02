@@ -1,18 +1,21 @@
 local WBP_SchemeItem = UnLua.Class()
 local SeasonAbilityData = require("Modules.SeasonAbility.SeasonAbilityData")
 local SeasonAbilityHandler = require("Protocol.SeasonAbility.SeasonAbilityHandler")
+
 function WBP_SchemeItem:Construct()
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
   self.Btn_Main.OnHovered:Add(self, self.BindOnMainButtonHovered)
   self.Btn_Main.OnUnhovered:Add(self, self.BindOnMainButtonUnhovered)
   self.Btn_ChangeSchemeName.OnClicked:Add(self, self.BindOnChangeSchemeNameButtonClicked)
 end
+
 function WBP_SchemeItem:Show(SchemeId, HeroId)
   self.SchemeId = SchemeId
   self.CurHeroId = HeroId
   UpdateVisibility(self, true)
   self:RefreshSchemeInfo()
 end
+
 function WBP_SchemeItem:RefreshSchemeInfo(...)
   local SeasonAbilityInfo = SeasonAbilityData:GetSeasonAbilityInfo(self.CurHeroId)
   if not SeasonAbilityInfo then
@@ -49,6 +52,7 @@ function WBP_SchemeItem:RefreshSchemeInfo(...)
   self.Txt_SchemeName:SetText(SchemeName)
   UpdateVisibility(self.CanvasPanel_Select, self.SchemeId == CurSelectSchemeId)
 end
+
 function WBP_SchemeItem:BindOnMainButtonClicked(...)
   local CurSelectSchemeId = SeasonAbilityData:GetCurEquipSchemeId(self.CurHeroId)
   local CurSchemeInfo = SeasonAbilityData:GetSeasonAbilityInfoBySchemeId(self.CurHeroId, self.SchemeId)
@@ -60,16 +64,21 @@ function WBP_SchemeItem:BindOnMainButtonClicked(...)
     SeasonAbilityHandler:RequestEquipSchemeToServer(self.CurHeroId, self.SchemeId)
   end
 end
+
 function WBP_SchemeItem:BindOnMainButtonHovered(...)
   UpdateVisibility(self.CanvasPanel_Hover, true)
 end
+
 function WBP_SchemeItem:BindOnMainButtonUnhovered(...)
   UpdateVisibility(self.CanvasPanel_Hover, false)
 end
+
 function WBP_SchemeItem:BindOnChangeSchemeNameButtonClicked(...)
   UIMgr:Show(ViewID.UI_ChangeSchemeNamePanel, false, self.CurHeroId, self.SchemeId)
 end
+
 function WBP_SchemeItem:Hide()
   UpdateVisibility(self, false)
 end
+
 return WBP_SchemeItem

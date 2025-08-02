@@ -23,6 +23,7 @@ local GetAppearanceActor = function(self)
   self.AppearanceActor = LogicLobby.GetAppearanceActor(self)
   return self.AppearanceActor
 end
+
 function BattlePassSubView:BindClickHandler()
   self.RGListView_Award.ListViewScrolledChanged:Add(self, self.RGListView_Award_OnUserScrolled)
   self.Btn_Left.OnClicked:Add(self, self.Btn_Left_OnClicked)
@@ -33,6 +34,7 @@ function BattlePassSubView:BindClickHandler()
   self.Btn_Tips.OnMainButtonHovered:Add(self, self.Btn_Tips_OnHovered)
   self.Btn_Tips.OnMainButtonUnhovered:Add(self, self.Btn_Tips_OnUnhovered)
 end
+
 function BattlePassSubView:UnBindClickHandler()
   self.ScrollBox_Award.OnUserScrolled:Remove(self, self.RGListView_Award_OnUserScrolled)
   self.Btn_Left.OnClicked:Remove(self, self.Btn_Left_OnClicked)
@@ -42,6 +44,7 @@ function BattlePassSubView:UnBindClickHandler()
   self.Btn_Tips.OnMainButtonHovered:Remove(self, self.Btn_Tips_OnHovered)
   self.Btn_Tips.OnMainButtonUnhovered:Remove(self, self.Btn_Tips_OnUnhovered)
 end
+
 function BattlePassSubView:Construct()
   self.viewModel = UIModelMgr:Get("BattlePassSubViewModel")
   self.GrandPrizeItemList = {}
@@ -61,10 +64,12 @@ function BattlePassSubView:Construct()
     self.TotallevelExp = BPAwardList[2].Exp - BPAwardList[1].Exp
   end
 end
+
 function BattlePassSubView:Destruct()
   self:UnBindClickHandler()
   self.Super:DetachViewModel(self.viewModel, self.DataBindTable, self)
 end
+
 function BattlePassSubView:OnShow(BattlePassID)
   if self.viewModel then
     self.Super:AttachViewModel(self.viewModel, self.DataBindTable, self)
@@ -97,13 +102,16 @@ function BattlePassSubView:OnShow(BattlePassID)
   local actor = GetAppearanceActor(self)
   actor:SetCommonCameraTransform()
 end
+
 function BattlePassSubView:OnAnimationFinished(Animation)
   if Animation == self.Ani_in then
     self.StartTime = 0
   end
 end
+
 function BattlePassSubView:OnPreHide()
 end
+
 function BattlePassSubView:LuaTick(InDeltaTime)
   if self.IsScrolled then
     local curOffset = UE.UKismetMathLibrary.FInterpTo(self.ListViewOffset, self.EndOffset, InDeltaTime, 10)
@@ -151,10 +159,12 @@ function BattlePassSubView:LuaTick(InDeltaTime)
     self:UpdateView(self.CurBattlePassInfo)
   end
 end
+
 function BattlePassSubView:OnHide()
   self:StopAllAnimations()
   self.Super:DetachViewModel(self.viewModel, self.DataBindTable, self)
 end
+
 function BattlePassSubView:UpdateBattlePassData(BattlePassInfo)
   if self.PlayUpgradeAni then
     return
@@ -190,6 +200,7 @@ function BattlePassSubView:UpdateBattlePassData(BattlePassInfo)
     self:UpdateView(BattlePassInfo)
   end
 end
+
 function BattlePassSubView:UpdateView(BattlePassInfo)
   print(" BattlePassSubView : UpdateBattlePassData")
   table.Print(self.ScrollBox_Award)
@@ -293,6 +304,7 @@ function BattlePassSubView:UpdateView(BattlePassInfo)
   self.ProgressBar_Exp:SetPercent(curExp / self.TotallevelExp)
   self.TXT_Level:SetText(level)
 end
+
 function BattlePassSubView:UpdateGrandPrize(CurrentOffset)
   for i, v in ipairs(self.GrandPrizeItemList) do
     if CurrentOffset * self.AwardItemSizeX + self.RGListView_Award.Slot:GetSize().X < v * self.AwardItemSizeX then
@@ -309,6 +321,7 @@ function BattlePassSubView:UpdateGrandPrize(CurrentOffset)
     end
   end
 end
+
 function BattlePassSubView:OnItemClicked(ItemID, Level, Index, NotReceive)
   self.SelectGroup.SelectItemID = ItemID
   self.SelectGroup.SelectLevel = Level
@@ -334,6 +347,7 @@ function BattlePassSubView:OnItemClicked(ItemID, Level, Index, NotReceive)
   end
   self.viewModel:SendReceiveAward(self.BattlePassID, Level)
 end
+
 function BattlePassSubView:UpdateAwardItemClickedState(AwardItem, Level, Index)
   for NormalIndex, NormalItem in ipairs(AwardItem.VBox_Normal:GetAllChildren():ToTable()) do
     if NormalItem.Level == Level and NormalItem.Index == Index then
@@ -350,6 +364,7 @@ function BattlePassSubView:UpdateAwardItemClickedState(AwardItem, Level, Index)
     end
   end
 end
+
 function BattlePassSubView:UpdateItemDetail(ItemID)
   local result, rowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, ItemID)
   local bRoulette = false
@@ -383,6 +398,7 @@ function BattlePassSubView:UpdateItemDetail(ItemID)
         bIsSelected = false,
         ParentView = self
       }
+      self.WBP_VoiceItem:SetInteractive(false)
       self.WBP_VoiceItem:InitVoiceItem(voiceData)
     end
     return
@@ -465,10 +481,12 @@ function BattlePassSubView:UpdateItemDetail(ItemID)
     end
   end
 end
+
 function BattlePassSubView:SendGetBattlePassData(BattlePassID)
   self.BattlePassID = BattlePassID
   self.viewModel:SendGetBattlePassData(BattlePassID)
 end
+
 function BattlePassSubView:ReceiveReward(Level, AwardList)
   local ShowAward = {}
   for i, v in ipairs(AwardList.resources) do
@@ -484,6 +502,7 @@ function BattlePassSubView:ReceiveReward(Level, AwardList)
   self.viewModel:SendGetBattlePassData(self.BattlePassID)
   self:ShowGetAwardTip(ShowAward, PremiumAward)
 end
+
 function BattlePassSubView:ReceiveAllReward(AwardList)
   local NormalAwardList = {}
   local PremiumAwardList = {}
@@ -508,6 +527,7 @@ function BattlePassSubView:ReceiveAllReward(AwardList)
   end
   self:ShowGetAwardTip(ShowAward, PremiumAwardList)
 end
+
 function BattlePassSubView:ShowGetAwardTip(NormalAward, PremiumAward)
   UpdateVisibility(self.WBP_BattlePassGetAwardPopup, true)
   local showUpAward = {}
@@ -537,9 +557,11 @@ function BattlePassSubView:ShowGetAwardTip(NormalAward, PremiumAward)
   local showReward_2 = battlepassdata:MergeAwardList(showMergeDownAward)
   self.WBP_BattlePassGetAwardPopup:ShowTip(showReward, showReward_2, self.BattlePassID, self.ActivateState)
 end
+
 function BattlePassSubView:CheckBuyBtnShow()
   UpdateVisibility(self.Btn_BuyLevel, tonumber(self.Level) < #self.AwardItemList, true)
 end
+
 function BattlePassSubView:CheckAllReceiveBtnShow()
   for i, v in pairs(self.BattlePassInfo.battlePassData) do
     if self.ActivateState == BattlePassState.Normal then
@@ -552,11 +574,13 @@ function BattlePassSubView:CheckAllReceiveBtnShow()
   end
   return false
 end
+
 function BattlePassSubView:ReOpenSubView()
   if self.BattlePassID then
     self.viewModel:SendGetBattlePassData(self.BattlePassID)
   end
 end
+
 function BattlePassSubView:Btn_Left_OnClicked()
   if 1 == self.CurPage then
     return
@@ -568,6 +592,7 @@ function BattlePassSubView:Btn_Left_OnClicked()
   self.RGListView_Award:SetVisibility(ESlateVisibility.HitTestInvisible)
   self.IsScrolled = true
 end
+
 function BattlePassSubView:Btn_Right_OnClicked()
   if self.CurPage == self.MaxPage then
     return
@@ -587,11 +612,13 @@ function BattlePassSubView:Btn_Right_OnClicked()
   }, 0.3)
   self.IsScrolled = true
 end
+
 function BattlePassSubView:Btn_UnLock_OnClicked()
   UIMgr:Hide(ViewID.UI_BattlePassMainView, true)
   local UnlockView = UIMgr:Show(ViewID.UI_BattlePassUnLockView)
   UnlockView:InitInfo(self.BattlePassID, self.ActivateState)
 end
+
 function BattlePassSubView:Btn_BuyLevel_OnClicked()
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGWaveWindowManager:StaticClass())
   self.buyView = WaveWindowManager:ShowWaveWindowWithDelegate(1202, {}, nil, {
@@ -639,15 +666,22 @@ function BattlePassSubView:Btn_BuyLevel_OnClicked()
   })
   self.buyView:InitWindow(self.BattlePassInfo, self.BattlePassID)
 end
+
 function BattlePassSubView:Btn_ReceiveAll_OnClicked()
+  if self.PlayUpgradeAni then
+    return
+  end
   self.viewModel:SendReceiveAllReward(self.BattlePassID)
 end
+
 function BattlePassSubView:Btn_Tips_OnHovered()
   ShowCommonTips(nil, self.Btn_Tips, self.WBP_RuleDescription, nil, nil, nil, nil, nil, 0.5)
 end
+
 function BattlePassSubView:Btn_Tips_OnUnhovered()
   UpdateVisibility(self.WBP_RuleDescription, false)
 end
+
 function BattlePassSubView:RGListView_Award_OnUserScrolled(CurrentOffset)
   self:UpdateGrandPrize(CurrentOffset)
   self.ListViewOffset = CurrentOffset
@@ -665,9 +699,11 @@ function BattlePassSubView:RGListView_Award_OnUserScrolled(CurrentOffset)
     end
   end
 end
+
 function BattlePassSubView:SelectVoice(CommId)
   self:PlaySound(CommId)
 end
+
 function BattlePassSubView:PlaySound(CommId)
   local RouletteId = CommunicationData.GetRoulleteIdByCommId(CommId)
   local Result, CommunicationRowInfo = GetRowData(DT.DT_CommunicationWheel, RouletteId)
@@ -681,10 +717,12 @@ function BattlePassSubView:PlaySound(CommId)
     self.SoundId = PlaySound2DByName(SoundEventName, "BattlePassSubView:PlaySound")
   end
 end
+
 function BattlePassSubView:StopSound()
   if -1 == self.SoundId then
     return
   end
   UE.URGBlueprintLibrary.StopVoice(self.SoundId)
 end
+
 return BattlePassSubView

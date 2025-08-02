@@ -1,14 +1,17 @@
 local WBP_EquipSlotCore_C = UnLua.Class()
+
 function WBP_EquipSlotCore_C:Construct()
   EventSystem.AddListener(self, EventDef.GamePokey.OnInscriptionHovered, WBP_EquipSlotCore_C.OnInscriptionHovered)
   EventSystem.AddListener(self, EventDef.GamePokey.OnInscriptionUnHovered, WBP_EquipSlotCore_C.OnInscriptionUnHovered)
   EventSystem.AddListener(self, EventDef.GamePokey.OnAccessorySlotClicked, WBP_EquipSlotCore_C.OnAccessorySlotClicked)
 end
+
 function WBP_EquipSlotCore_C:Destruct()
   EventSystem.RemoveListener(EventDef.GamePokey.OnInscriptionHovered, WBP_EquipSlotCore_C.OnInscriptionHovered)
   EventSystem.RemoveListener(EventDef.GamePokey.OnInscriptionUnHovered, WBP_EquipSlotCore_C.OnInscriptionUnHovered)
   EventSystem.RemoveListener(EventDef.GamePokey.OnAccessorySlotClicked, WBP_EquipSlotCore_C.OnAccessorySlotClicked)
 end
+
 function WBP_EquipSlotCore_C:OnMouseEnter(MyGeometry, MouseEvent)
   EventSystem.Invoke(EventDef.GamePokey.OnAccessorySlotHovered, self.AccessoryId)
   self:UpdateAccessoryInfoTip(true)
@@ -17,6 +20,7 @@ function WBP_EquipSlotCore_C:OnMouseEnter(MyGeometry, MouseEvent)
     WBP_EquipSlotCore_C.UpdateAccessoryNoteTipFunc
   }, 0.05, false)
 end
+
 function WBP_EquipSlotCore_C:OnMouseLeave(MouseEvent)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TipTimer) then
     UE.UKismetSystemLibrary.K2_ClearTimerHandle(self, self.TipTimer)
@@ -25,6 +29,7 @@ function WBP_EquipSlotCore_C:OnMouseLeave(MouseEvent)
   self:UpdateAccessoryInfoTip(false)
   self:UpdateAccessoryNoteTip(false)
 end
+
 function WBP_EquipSlotCore_C:InitInfo(GamePokey, EquipSlot, AccessoryType)
   if GamePokey then
     self.GamePokey = GamePokey
@@ -36,6 +41,7 @@ function WBP_EquipSlotCore_C:InitInfo(GamePokey, EquipSlot, AccessoryType)
     self:InitImage()
   end
 end
+
 function WBP_EquipSlotCore_C:InitToolTipInfo()
   self.ToolWidget = self.GamePokey.WBP_GPAccessoryDisplayInfo
   self.ToolNoteWidget = self.GamePokey.WBP_GPExtraDescItemsPanel
@@ -43,6 +49,7 @@ function WBP_EquipSlotCore_C:InitToolTipInfo()
   self.EquipWidgetSlot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.EquipSlot)
   self.ToolNoteWidgetSlot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.ToolNoteWidget)
 end
+
 function WBP_EquipSlotCore_C:InitButton()
   if self.GamePokey then
     local accessoryComponent = self.GamePokey:GetAccessoryComp()
@@ -57,6 +64,7 @@ function WBP_EquipSlotCore_C:InitButton()
     end
   end
 end
+
 function WBP_EquipSlotCore_C:InitImage()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if DTSubsystem then
@@ -70,11 +78,13 @@ function WBP_EquipSlotCore_C:InitImage()
     end
   end
 end
+
 function WBP_EquipSlotCore_C:InitAngle()
   self.Angle = true
   self.Overlay_EquipSlot:SetRenderTransformAngle(180)
   self.Text_AccessoryName:SetRenderTransformAngle(180)
 end
+
 function WBP_EquipSlotCore_C:GetInscriptions()
   local inscriptionIdArray = UE.TArray(0)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -96,14 +106,17 @@ function WBP_EquipSlotCore_C:GetInscriptions()
   end
   return inscriptionIdArray
 end
+
 function WBP_EquipSlotCore_C:ClearButtonClicked()
   self.bButtonChoose = false
   self.Image_EquipChoose:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_EquipSlotCore_C:SetButtonClicked()
   self.bButtonChoose = true
   self.Image_EquipChoose:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_EquipSlotCore_C:CanClickedButton()
   if not self.GamePokey then
     return false
@@ -111,6 +124,7 @@ function WBP_EquipSlotCore_C:CanClickedButton()
     return not self:IsAccessoryRotate() and not self.bButtonChoose
   end
 end
+
 function WBP_EquipSlotCore_C:UnEquipAccessory()
   if self.bEquipped and self.GamePokey then
     if self.GamePokey:WillShowMessage(self.AccessoryId) then
@@ -123,9 +137,11 @@ function WBP_EquipSlotCore_C:UnEquipAccessory()
     end
   end
 end
+
 function WBP_EquipSlotCore_C:BoxConfirmUnEquip(Box)
   self:ConfirmUnEquip()
 end
+
 function WBP_EquipSlotCore_C:ConfirmUnEquip()
   if self.GamePokey then
     local accessoryComponent = self.GamePokey:GetAccessoryComp()
@@ -141,6 +157,7 @@ function WBP_EquipSlotCore_C:ConfirmUnEquip()
     end
   end
 end
+
 function WBP_EquipSlotCore_C:UpdateEquipSlot(AccessoryId, Empty)
   self.AccessoryId = AccessoryId
   if Empty then
@@ -182,11 +199,13 @@ function WBP_EquipSlotCore_C:UpdateEquipSlot(AccessoryId, Empty)
     end
   end
 end
+
 function WBP_EquipSlotCore_C:IsAccessoryRotate()
   if self.GamePokey then
     return self.GamePokey:IsAccessoryRotate()
   end
 end
+
 function WBP_EquipSlotCore_C:OnButtonClicked()
   if self:CanClickedButton() then
     self:SetButtonClicked()
@@ -198,6 +217,7 @@ function WBP_EquipSlotCore_C:OnButtonClicked()
     self.GamePokey:RecoverAccessoriesPanel()
   end
 end
+
 function WBP_EquipSlotCore_C:UpdateAccessoryNameByID(AccessoryId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if DTSubsystem then
@@ -208,6 +228,7 @@ function WBP_EquipSlotCore_C:UpdateAccessoryNameByID(AccessoryId)
     end
   end
 end
+
 function WBP_EquipSlotCore_C:UpdateAccessoryNameVisibility(Show)
   local visibility
   if Show then
@@ -217,6 +238,7 @@ function WBP_EquipSlotCore_C:UpdateAccessoryNameVisibility(Show)
   end
   self.Text_AccessoryName:SetVisibility(visibility)
 end
+
 function WBP_EquipSlotCore_C:UpdateAccessoryInfoTip(Show)
   if not (self.ToolWidget and self.bEquipped and self.EquipWidgetSlot) or not self.ToolWidgetSlot then
     return
@@ -247,9 +269,11 @@ function WBP_EquipSlotCore_C:UpdateAccessoryInfoTip(Show)
     self.ToolWidget:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 function WBP_EquipSlotCore_C:UpdateAccessoryNoteTipFunc()
   self:UpdateAccessoryNoteTip(true)
 end
+
 function WBP_EquipSlotCore_C:UpdateAccessoryNoteTip(Show)
   if not (self.ToolNoteWidget and (self.ToolNoteWidgetSlot or self.bEquipped)) or not self.ToolWidgetSlot then
     return
@@ -280,6 +304,7 @@ function WBP_EquipSlotCore_C:UpdateAccessoryNoteTip(Show)
     self.ToolNoteWidget:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 function WBP_EquipSlotCore_C:OnInscriptionHovered(InscriptionId)
   local insAry = self:GetInscriptions()
   for key, value in pairs(insAry) do
@@ -288,12 +313,15 @@ function WBP_EquipSlotCore_C:OnInscriptionHovered(InscriptionId)
     end
   end
 end
+
 function WBP_EquipSlotCore_C:OnInscriptionUnHovered()
   self:UpdateAccessoryNameVisibility(false)
 end
+
 function WBP_EquipSlotCore_C:OnAccessorySlotClicked(AccessoryType)
   if self.AccessoryType ~= AccessoryType then
     self:ClearButtonClicked()
   end
 end
+
 return WBP_EquipSlotCore_C

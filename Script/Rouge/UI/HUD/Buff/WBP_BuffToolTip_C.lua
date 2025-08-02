@@ -1,4 +1,5 @@
 local WBP_BuffToolTip_C = UnLua.Class()
+
 function WBP_BuffToolTip_C:InitInfo(Info)
   self.BuffInfo = Info
   if self.BuffInfo.IsElement then
@@ -24,4 +25,5 @@ function WBP_BuffToolTip_C:InitInfo(Info)
     end
   end
 end
+
 return WBP_BuffToolTip_C

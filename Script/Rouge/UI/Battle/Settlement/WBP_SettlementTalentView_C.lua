@@ -8,6 +8,7 @@ local WBP_SettlementTalentView_C = UnLua.Class()
 local FinisCountDown = 9
 local WorldPath = "/Game/Rouge/UI/Battle/Settlement/WBP_SettlementWorldItem.WBP_SettlementWorldItem_C"
 local SettleRewardItemPath = "/Game/Rouge/UI/Battle/Settlement/WBP_SettlementRewardItem.WBP_SettlementRewardItem_C"
+
 function WBP_SettlementTalentView_C:InitSettlementTalentView()
   self.WBP_TalentPanel:BindOnCommonTalentButtonClicked()
   self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Add(self, self.EscView)
@@ -18,9 +19,11 @@ function WBP_SettlementTalentView_C:InitSettlementTalentView()
     })
   end
 end
+
 function WBP_SettlementTalentView_C:EscView()
   if self.WBP_TalentPanel.CommonTalent:CanDirectExit() then
     LogicSettlement:HideSettlement()
   end
 end
+
 return WBP_SettlementTalentView_C

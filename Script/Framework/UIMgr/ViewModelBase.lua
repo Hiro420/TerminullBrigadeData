@@ -16,6 +16,7 @@ defaultViewModel._isDefaultViewModelType = true
 defaultViewModel._CallbackKeyMap = {}
 _G.bindingTargetMap = _G.bindingTargetMap or {}
 local targetMap = _G.bindingTargetMap
+
 function defaultViewModel:OnInit()
   if self.subViewModels then
     for name, path in pairs(self.subViewModels) do
@@ -23,6 +24,7 @@ function defaultViewModel:OnInit()
     end
   end
 end
+
 function defaultViewModel:OnShutdown()
   if self.subViewModels then
     for name, path in pairs(self.subViewModels) do
@@ -32,6 +34,7 @@ function defaultViewModel:OnShutdown()
     end
   end
 end
+
 function defaultViewModel:OnClear()
   if self.subViewModels then
     for name, path in pairs(self.subViewModels) do
@@ -43,6 +46,7 @@ function defaultViewModel:OnClear()
     end
   end
 end
+
 function defaultViewModel:RegisterPropertyChanged(tab, view)
   local bindings = self._bindings
   for v, _ in pairs(bindings) do
@@ -57,15 +61,18 @@ function defaultViewModel:RegisterPropertyChanged(tab, view)
   self:NotifyAllPropertyToView(view)
   bindings[view]._CacheInit = true
 end
+
 function defaultViewModel:UnRegisterPropertyChanged(tab, view)
   local bindings = self._bindings
   if nil ~= bindings[view] then
     bindings[view] = nil
   end
 end
+
 function defaultViewModel:UnRegisterAllPropertyChanged()
   self._bindings = {}
 end
+
 function defaultViewModel:NotifyAllPropertyToView(view)
   local bindings = self._bindings
   local viewBindingList = bindings[view]
@@ -92,6 +99,7 @@ function defaultViewModel:NotifyAllPropertyToView(view)
     self:InvokePropertyChangedHandler(view, bindProp, self[bindProp.Source])
   end
 end
+
 function defaultViewModel.PrivateProcessKey(key, bindProp, viewBindingList)
   if viewBindingList._CacheInit then
     return
@@ -109,6 +117,7 @@ function defaultViewModel.PrivateProcessKey(key, bindProp, viewBindingList)
     table_insert(viewBindingList[key], bindProp)
   end
 end
+
 function defaultViewModel:NotifyPropertyChanged(key, newValue)
   local bindings = self._bindings
   for view, bindList in pairs(bindings) do
@@ -129,6 +138,7 @@ function defaultViewModel:NotifyPropertyChanged(key, newValue)
     end
   end
 end
+
 function defaultViewModel:InvokePropertyChangedHandler(view, bindProp, newValue)
   local policy = bindProp.Policy
   local srcVal = newValue
@@ -158,6 +168,7 @@ function defaultViewModel:InvokePropertyChangedHandler(view, bindProp, newValue)
     bindProp.Callback(view, srcVal)
   end
 end
+
 function defaultViewModel:GetFirstView()
   local bindings = self._bindings
   for view, _ in pairs(bindings) do
@@ -168,6 +179,7 @@ function defaultViewModel:GetFirstView()
     end
   end
 end
+
 local _meta_set = function(tab, key, val)
   local properties = rawget(tab, "propertyBindings")
   if nil ~= properties then
@@ -198,10 +210,12 @@ local _meta_get = function(tab, key)
   end
   return rawget(tab, key)
 end
+
 function defaultViewModel:SetupMetaTable()
   local meta = {__newindex = _meta_set, __index = _meta_get}
   setmetatable(self, meta)
 end
+
 local function DeepCopy(dst, src)
   for k, v in pairs(src) do
     if "table" == type(v) then
@@ -218,6 +232,7 @@ local function DeepCopy(dst, src)
     end
   end
 end
+
 local CreateDefaultViewModel = function()
   local newViewModel = {}
   DeepCopy(newViewModel, defaultViewModel)
@@ -231,6 +246,7 @@ local InstantiateViewModel = function(template)
   newViewModel:SetupMetaTable()
   return newViewModel
 end
+
 function defaultViewModel:SetSubViewModel(name, count)
   local svms = self[name]
   if count > svms._count then
@@ -249,5 +265,6 @@ function defaultViewModel:SetSubViewModel(name, count)
   end
   svms._count = count
 end
+
 _G.CreateDefaultViewModel = CreateDefaultViewModel
 _G.InstantiateViewModel = InstantiateViewModel

@@ -10,17 +10,22 @@ local OrderedMap = require("Framework.DataStruct.OrderedMap")
 local MainPanelLeftSwitchName = "MainPanelLeftSwitch"
 local MainPanelRightSwitchName = "MainPanelRightSwitch"
 local GRInfoView = Class(ViewBase)
+
 function GRInfoView:BindClickHandler()
 end
+
 function GRInfoView:UnBindClickHandler()
 end
+
 function GRInfoView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function GRInfoView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function GRInfoView:OnShow(UniqueId, WorldId, GameModeId, Score, bTeam, HeroId, SeasonId)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -58,6 +63,7 @@ function GRInfoView:OnShow(UniqueId, WorldId, GameModeId, Score, bTeam, HeroId, 
   self:RequestServerElementData()
   self:OnBtnRule()
 end
+
 function GRInfoView:ListenForLeftInputAction()
   local SelectId = self.RGToggleGroupPlayerInfoTitle.CurSelectId
   local LastSelectId = self.RGToggleGroupPlayerInfoTitle.CurSelectId
@@ -71,6 +77,7 @@ function GRInfoView:ListenForLeftInputAction()
     self.RGToggleGroupPlayerInfoTitle:SelectId(SelectId)
   end
 end
+
 function GRInfoView:ListenForRightInputAction()
   local SelectId = self.RGToggleGroupPlayerInfoTitle.CurSelectId
   for index, value in ipairs(self.RoleIdTable) do
@@ -83,6 +90,7 @@ function GRInfoView:ListenForRightInputAction()
     self.RGToggleGroupPlayerInfoTitle:SelectId(SelectId)
   end
 end
+
 function GRInfoView:OnRequestServerElementDataSuccess(Data)
   self.Data = RankData.ElementData[tostring(self.SelId)]
   self:InitTitle()
@@ -98,6 +106,7 @@ function GRInfoView:OnRequestServerElementDataSuccess(Data)
   self:RefreshEquipAttr()
   UpdateVisibility(self.Pnl_Rule, self.SelRule)
 end
+
 function GRInfoView:OnBtnRule()
   UpdateVisibility(self.Pnl_Rule, true)
   UpdateVisibility(self.Pnl_Model, false)
@@ -107,6 +116,7 @@ function GRInfoView:OnBtnRule()
   UpdateVisibility(self.Btn_Model_Normal, true)
   self.SelRule = true
 end
+
 function GRInfoView:OnBtnModel()
   UpdateVisibility(self.Pnl_Rule, false)
   UpdateVisibility(self.Pnl_Model, true)
@@ -116,6 +126,7 @@ function GRInfoView:OnBtnModel()
   UpdateVisibility(self.Btn_Rule_Normal, true)
   self.SelRule = false
 end
+
 function GRInfoView:InitToggleGroup(UniqueId)
   local RoleIdTable = Split(UniqueId, "_")
   self.RoleIdTable = RoleIdTable
@@ -135,6 +146,7 @@ function GRInfoView:InitToggleGroup(UniqueId)
   self.RGToggleGroupPlayerInfoTitle:SelectId(tonumber(RoleIdTable[1]))
   self:OnToggleCheckStateChanged(tonumber(RoleIdTable[1]))
 end
+
 function GRInfoView:OnToggleCheckStateChanged(SelId)
   self.SelId = SelId
   self.Data = RankData.ElementData[tostring(SelId)]
@@ -153,6 +165,7 @@ function GRInfoView:OnToggleCheckStateChanged(SelId)
   self.WBP_PuzzleSpecifiedBoard:Show(self.Data.heroId, self.Data.puzzleslots, JsonTable.hero.puzzleslotsinfo, self.Data.puzzles, JsonTable.gems)
   self:RefreshEquipAttr()
 end
+
 function GRInfoView:InitTitle()
   UpdateVisibility(self.CanvasPanelLeft, table.count(self.Data) > 1)
   UpdateVisibility(self.CanvasPanelRight, table.count(self.Data) > 1)
@@ -193,6 +206,7 @@ function GRInfoView:InitTitle()
   self.RGTextTime:SetText(Format(seconds, "hh:mm:ss"))
   UpdateVisibility(self.Text_Mvp, self.Data.mvp)
 end
+
 function GRInfoView:UpdateGenericList()
   for index, value in ipairs(self.WrapBoxGenericModify:GetAllChildren():ToTable()) do
     value:InitBagRoleGenericItem(nil, UE.ERGGenericModifySlot.None)
@@ -240,6 +254,7 @@ function GRInfoView:UpdateGenericList()
     end
   end
 end
+
 function GRInfoView:UpdateScrollSetList()
   local scrollSetList = self.Data.attributeModifySet
   for i, v in ipairs(scrollSetList) do
@@ -248,6 +263,7 @@ function GRInfoView:UpdateScrollSetList()
   end
   HideOtherItem(self.WrapBoxScrollSetList, #scrollSetList + 1)
 end
+
 function GRInfoView:UpdateScrollList()
   for i = 1, Logic_Scroll.MaxScrollNum do
     local v
@@ -260,9 +276,11 @@ function GRInfoView:UpdateScrollList()
   end
   HideOtherItem(self.WrapBoxScrollList, Logic_Scroll.MaxScrollNum + 1)
 end
+
 function GRInfoView:PauseGame()
   UIMgr:Hide(ViewID.UI_GRInfoView)
 end
+
 function GRInfoView:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -271,6 +289,7 @@ function GRInfoView:OnHide()
   StopListeningForInputAction(self, "PauseGame", UE.EInputEvent.IE_Pressed)
   self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Remove(self, GRInfoView.PauseGame)
 end
+
 function GRInfoView:UpdateGenericModifyTipsFunc(bIsShow, Data, ModifyChooseTypeParam, Slot)
   if bIsShow then
     if ModifyChooseTypeParam == ModifyChooseType.GenericModify then
@@ -283,6 +302,7 @@ function GRInfoView:UpdateGenericModifyTipsFunc(bIsShow, Data, ModifyChooseTypeP
     self.WBP_GenericModifyBagTips:Hide()
   end
 end
+
 function GRInfoView:UpdateShowPickupTipsView(bIsShowTipsView, ScrollId, TargetItem, ScrollTipsOpenType, bIsNeedInit)
   if ScrollId and ScrollId > 0 then
     self.WBP_ScrollPickUpTipsView:InitScrollTipsView(ScrollId, ScrollTipsOpenType, TargetItem, bIsNeedInit)
@@ -293,6 +313,7 @@ function GRInfoView:UpdateShowPickupTipsView(bIsShowTipsView, ScrollId, TargetIt
   end
   UpdateVisibility(self.WBP_ScrollPickUpTipsView.TipsPanel, false)
 end
+
 function GRInfoView:UpdateScrollSetTips(bIsShow, ActivatedSetData, ScrollSetItem)
   UpdateVisibility(self.WBP_ScrollSetTips, bIsShow)
   if bIsShow then
@@ -306,10 +327,12 @@ function GRInfoView:UpdateScrollSetTips(bIsShow, ActivatedSetData, ScrollSetItem
     end
   end
 end
+
 function GRInfoView:RequestServerElementData()
   local GameMode, GameWorld, HeroId, UniqueID = self.GameModeId, self.WorldId, self.HeroId, self.UniqueId
   RankData.RequestServerElementData(self.SeasonId, GameMode, GameWorld, HeroId, UniqueID)
 end
+
 function GRInfoView:RefreshEquipAttr()
   local AttrList = {}
   for key, PuzzleInfo in pairs(self.Data.puzzles) do
@@ -391,4 +414,5 @@ function GRInfoView:RefreshEquipAttr()
   end
   HideOtherItem(self.ScrollBoxAttrRoot, Index, true)
 end
+
 return GRInfoView

@@ -1,4 +1,5 @@
 local WBP_ProgressBar_C = UnLua.Class()
+
 function WBP_ProgressBar_C:Construct()
   self.bIsStopMoveVirtualBar = true
   local BottomIcon = UE.UKismetSystemLibrary.LoadAsset_Blocking(self.BottomBrush)
@@ -28,6 +29,7 @@ function WBP_ProgressBar_C:Construct()
     self.Img_VirtualWhite:SetClippingValue(AttributeValue / MaxAttributeValue)
   end
 end
+
 function WBP_ProgressBar_C:BindOrUnBindAttributeValueChangeDelegate(IsBind)
   if not self.OwningActor then
     return
@@ -74,6 +76,7 @@ function WBP_ProgressBar_C:BindOrUnBindAttributeValueChangeDelegate(IsBind)
     self.IsBound = false
   end
 end
+
 function WBP_ProgressBar_C:InitInfo(OwningActor)
   self.OwningActor = OwningActor
   self:BindOrUnBindAttributeValueChangeDelegate(true)
@@ -83,24 +86,30 @@ function WBP_ProgressBar_C:InitInfo(OwningActor)
   self.VirtualBar:SetClippingValue(self:GetAttributeValue() / self:GetMaxAttributeValue())
   self:UpdateChargingBarVisibility()
 end
+
 function WBP_ProgressBar_C:InitASCInfo(OwningActor)
   self.OwningActor = OwningActor
   self:BindOrUnBindAttributeValueChangeDelegate(true)
   self:UpdateBarInfo(self:GetAttributeValue(), self:GetAttributeValue())
 end
+
 function WBP_ProgressBar_C:BindOnAttributeChange(NewValue, OldValue)
   self:UpdateBarInfo(NewValue, OldValue)
 end
+
 function WBP_ProgressBar_C:BindOnMaxAttributeChange(NewValue, OldValue)
   self:UpdateBarInfo(NewValue, OldValue)
 end
+
 function WBP_ProgressBar_C:BindOnChargingAttributeChange(NewValue, OldValue)
   self:UpdateChargingBarVisibility()
   self:UpdateChargingBarInfo(NewValue, OldValue)
 end
+
 function WBP_ProgressBar_C:BindOnMaxChargingAttributeChange(NewValue, OldValue)
   self:UpdateChargingBarVisibility()
 end
+
 function WBP_ProgressBar_C:OnAttributeModifyCacheAdded(AttributeCacheModifyData)
   if UE.UAbilitySystemBlueprintLibrary.EqualEqual_GameplayAttributeGameplayAttribute(AttributeCacheModifyData.ConfigData.Attribute, self.Attribute) or UE.UAbilitySystemBlueprintLibrary.EqualEqual_GameplayAttributeGameplayAttribute(AttributeCacheModifyData.ConfigData.Attribute, self.MaxAttribute) then
     local TempTable = {
@@ -114,6 +123,7 @@ function WBP_ProgressBar_C:OnAttributeModifyCacheAdded(AttributeCacheModifyData)
     self.IsUpdateAttributeCache = true
   end
 end
+
 function WBP_ProgressBar_C:OnAttributeModifyCacheRemove(AttributeCacheModifyData)
   if UE.UAbilitySystemBlueprintLibrary.EqualEqual_GameplayAttributeGameplayAttribute(AttributeCacheModifyData.ConfigData.Attribute, self.Attribute) or UE.UAbilitySystemBlueprintLibrary.EqualEqual_GameplayAttributeGameplayAttribute(AttributeCacheModifyData.ConfigData.Attribute, self.MaxAttribute) then
     self.AttributeModifyCacheList[AttributeCacheModifyData.ModifyID] = nil
@@ -127,6 +137,7 @@ function WBP_ProgressBar_C:OnAttributeModifyCacheRemove(AttributeCacheModifyData
     end
   end
 end
+
 function WBP_ProgressBar_C:UpdateAttributeCachedModify(DeltaTime)
   if not self.CurrentAttributeValue then
     self.CurrentAttributeValue = self:GetAttributeValue()
@@ -139,6 +150,7 @@ function WBP_ProgressBar_C:UpdateAttributeCachedModify(DeltaTime)
   end
   self:SetBarInfo(self.CurrentAttributeValue)
 end
+
 function WBP_ProgressBar_C:SetBarInfo(TargetAttributeValue)
   local AttributeValue = self:GetAttributeValue()
   if TargetAttributeValue then
@@ -165,9 +177,11 @@ function WBP_ProgressBar_C:SetBarInfo(TargetAttributeValue)
     end
   end
 end
+
 function WBP_ProgressBar_C:ResetBarValue()
   self.Img_Fill:SetClippingValue(0)
 end
+
 function WBP_ProgressBar_C:UpdateBarInfo(NewValue, OldValue)
   self.CurrentAttributeValue = NewValue
   local OldFillPercent = self.CurFillPercent
@@ -183,6 +197,7 @@ function WBP_ProgressBar_C:UpdateBarInfo(NewValue, OldValue)
     self:UpdateVirtualWhiteValue(OldValue, NewValue)
   end
 end
+
 function WBP_ProgressBar_C:PlayReduceAnim(OldPercent, TargetPercent)
   local Slot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.ReduceFXWidget)
   if not Slot then
@@ -196,6 +211,7 @@ function WBP_ProgressBar_C:PlayReduceAnim(OldPercent, TargetPercent)
   self.ReduceFXWidget:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.ReduceFXWidget:PlayReduceAnim(self.ReduceAnimName)
 end
+
 function WBP_ProgressBar_C:UpdateVirtualBarValue(DifferenceValue)
   if DifferenceValue < 0 then
     self.bIsStopMoveVirtualBar = false
@@ -223,6 +239,7 @@ function WBP_ProgressBar_C:UpdateVirtualBarValue(DifferenceValue)
     end
   end
 end
+
 function WBP_ProgressBar_C:UpdateVirtualWhiteValue(OldValue, NewValue)
   local DifferenceValue = NewValue - OldValue
   if DifferenceValue < 0 then
@@ -243,10 +260,12 @@ function WBP_ProgressBar_C:UpdateVirtualWhiteValue(OldValue, NewValue)
     self:EndVirtualWhiteAnim()
   end
 end
+
 function WBP_ProgressBar_C:StartPlayVirtualWhiteAnim()
   self.VirtualWhiteAnimTime = 0
   self.IsPlayVirtualWhiteAnim = true
 end
+
 function WBP_ProgressBar_C:EndVirtualWhiteAnim()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.VirtualWhiteTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.VirtualWhiteTimer)
@@ -261,6 +280,7 @@ function WBP_ProgressBar_C:EndVirtualWhiteAnim()
     self.Img_VirtualWhite:SetClippingValue(AttributeValue / MaxAttributeValue)
   end
 end
+
 function WBP_ProgressBar_C:GetAttributeValue()
   if not self.OwningActor then
     return 0
@@ -272,6 +292,7 @@ function WBP_ProgressBar_C:GetAttributeValue()
   local AttributeValue = UE.UAbilitySystemBlueprintLibrary.GetFloatAttributeFromAbilitySystemComponent(ASC, self.Attribute, nil)
   return AttributeValue
 end
+
 function WBP_ProgressBar_C:GetMaxAttributeValue()
   if not self.OwningActor then
     return 0
@@ -283,6 +304,7 @@ function WBP_ProgressBar_C:GetMaxAttributeValue()
   local MaxAttributeValue = UE.UAbilitySystemBlueprintLibrary.GetFloatAttributeFromAbilitySystemComponent(ASC, self.MaxAttribute, nil)
   return MaxAttributeValue
 end
+
 function WBP_ProgressBar_C:PlayChangeVirtualBarAnim()
   self.TimerHandle = nil
   self.HealthTimer = UE.UKismetSystemLibrary.K2_SetTimerDelegate({
@@ -293,6 +315,7 @@ function WBP_ProgressBar_C:PlayChangeVirtualBarAnim()
     self:ChangeVirtualBarAnim()
   end
 end
+
 function WBP_ProgressBar_C:ChangeVirtualBarAnim()
   if not self.GetAttributeValue then
     return
@@ -320,9 +343,11 @@ function WBP_ProgressBar_C:ChangeVirtualBarAnim()
     end
   end
 end
+
 function WBP_ProgressBar_C:UpdateBarStyle(Color)
   self.Img_Fill:SetColorAndOpacity(Color)
 end
+
 function WBP_ProgressBar_C:UpdateBarGrid(BarLength)
   self.GridBarList:ClearChildren()
   local SpawnNum = math.ceil(self:GetMaxAttributeValue() / self.SingleGridValue) - 1
@@ -338,6 +363,7 @@ function WBP_ProgressBar_C:UpdateBarGrid(BarLength)
     Item:SetColorAndOpacity(UE.FLinearColor(0.234551, 0.234551, 0.234551, 1.0))
   end
 end
+
 function WBP_ProgressBar_C:Destruct()
   self:BindOrUnBindAttributeValueChangeDelegate(false)
   self.IsBound = false
@@ -351,6 +377,7 @@ function WBP_ProgressBar_C:Destruct()
   UnListenObjectMessage(GMP.MSG_World_OnAttributeModifyCacheRemove, self)
   self.OnValueChangeFunc = nil
 end
+
 function WBP_ProgressBar_C:UpdateChargingBarInfo(NewValue, OldValue)
   if self.HasCharging then
     if 1 == self:GetAttributeValue() / self:GetMaxAttributeValue() then
@@ -376,6 +403,7 @@ function WBP_ProgressBar_C:UpdateChargingBarInfo(NewValue, OldValue)
     end
   end
 end
+
 function WBP_ProgressBar_C:UpdateChargingBarVisibility()
   if 0 == self:GetMaxChargingValue() then
     self.ProgressBar_Charging:SetVisibility(UE.ESlateVisibility.Hidden)
@@ -389,6 +417,7 @@ function WBP_ProgressBar_C:UpdateChargingBarVisibility()
     end
   end
 end
+
 function WBP_ProgressBar_C:ForceChargingPercent()
   print("WBP_ProgressBar_C :ForceChargingPercent")
   if self.OwningActor then
@@ -401,6 +430,7 @@ function WBP_ProgressBar_C:ForceChargingPercent()
   self.Img_VirtualWhite:SetClippingValue(0)
   self.ProgressBar_Charging:SetPercent(self.NewChargingPercent)
 end
+
 function WBP_ProgressBar_C:UpdateVirtualWhiteAnim(InDeltaTime)
   self.VirtualWhiteAnimTime = self.VirtualWhiteAnimTime + InDeltaTime
   local MinTime, MaxTime = self.VirtualWhiteAnimCurve:GetTimeRange()
@@ -417,13 +447,16 @@ function WBP_ProgressBar_C:UpdateVirtualWhiteAnim(InDeltaTime)
     self.Img_VirtualWhite:SetClippingValue(TargetOldVirtualWhiteValue / MaxAttributeValue)
   end
 end
+
 function WBP_ProgressBar_C:BindOnValueChange(OnValueChangeFunc)
   self.OnValueChangeFunc = OnValueChangeFunc
   if self.CurFillPercent then
     self.OnValueChangeFunc(self.CurFillPercent)
   end
 end
+
 function WBP_ProgressBar_C:UnBindOnValueChange()
   self.OnValueChangeFunc = nil
 end
+
 return WBP_ProgressBar_C

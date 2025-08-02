@@ -1,7 +1,9 @@
 local WBP_ScrollSetTipsItem_C = UnLua.Class()
+
 function WBP_ScrollSetTipsItem_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_ScrollSetTipsItem_C:InitScrollSetTipsItem(AttributeModifySetId, AttributeModifyId, ScrollTipsOpenTypeParam)
   UpdateVisibility(self, true)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -82,6 +84,7 @@ function WBP_ScrollSetTipsItem_C:InitScrollSetTipsItem(AttributeModifySetId, Att
     end
   end
 end
+
 function WBP_ScrollSetTipsItem_C:GetAttributeModifySetDataBySetId(SetId)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if Character and Character.AttributeModifyComponent then
@@ -93,12 +96,16 @@ function WBP_ScrollSetTipsItem_C:GetAttributeModifySetDataBySetId(SetId)
   end
   return nil
 end
+
 function WBP_ScrollSetTipsItem_C:CheckHaveScroll(AttributeModifId)
   return false
 end
+
 function WBP_ScrollSetTipsItem_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_ScrollSetTipsItem_C:Destruct()
 end
+
 return WBP_ScrollSetTipsItem_C

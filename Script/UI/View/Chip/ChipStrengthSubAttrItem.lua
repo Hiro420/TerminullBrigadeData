@@ -1,9 +1,12 @@
 local EStateControllerRandAttr = {Attr = 1, RandTip = 2}
 local ChipStrengthSubAttrItem = UnLua.Class()
+
 function ChipStrengthSubAttrItem:Construct()
 end
+
 function ChipStrengthSubAttrItem:Destruct()
 end
+
 function ChipStrengthSubAttrItem:InitChipStrengthSubAttrItem(mainAttrGrowth, bHaveRandAttrChange, bIsNew)
   UpdateVisibility(self, true)
   if bIsNew then
@@ -22,7 +25,9 @@ function ChipStrengthSubAttrItem:InitChipStrengthSubAttrItem(mainAttrGrowth, bHa
     end
   end
 end
+
 function ChipStrengthSubAttrItem:Hide()
   UpdateVisibility(self, false)
 end
+
 return ChipStrengthSubAttrItem

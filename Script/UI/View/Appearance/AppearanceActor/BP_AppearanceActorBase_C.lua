@@ -8,6 +8,7 @@ local EDisplayMeshStatus = {
   Weapon = 2,
   Prop = 3
 }
+
 function BP_AppearanceActorBase_C:GetcameraData(SkinId, MotionIdx)
   local cameraData
   local cameraDataList = self.CameraDataMap.CameraDataListMap:Find(tonumber(SkinId))
@@ -21,6 +22,7 @@ function BP_AppearanceActorBase_C:GetcameraData(SkinId, MotionIdx)
   end
   return cameraData
 end
+
 function BP_AppearanceActorBase_C:GetcameraDataList(SkinId)
   local cameraDataList = self.CameraDataMap.CameraDataListMap:Find(tonumber(SkinId))
   cameraDataList = cameraDataList or self.CameraDataMap.CameraDataListMap:Find("Default")
@@ -29,6 +31,7 @@ function BP_AppearanceActorBase_C:GetcameraDataList(SkinId)
   end
   return nil
 end
+
 local SetCameraData = function(self, skinId, MotionIdx)
   local cameraData = self:GetcameraData(skinId, MotionIdx)
   if cameraData then
@@ -37,13 +40,16 @@ local SetCameraData = function(self, skinId, MotionIdx)
   end
   CameraTimer = -1
 end
+
 function BP_AppearanceActorBase_C:ReceiveBeginPlay()
   self.Overridden.ReceiveBeginPlay(self)
   self:UpdateActived(self.bIsActived, true)
 end
+
 function BP_AppearanceActorBase_C:ReceiveEndPlay(EndPlayReason)
   self.Overridden.ReceiveEndPlay(self, EndPlayReason)
 end
+
 function BP_AppearanceActorBase_C:ReceiveTick(DeltaSeconds)
   self.Overridden.ReceiveTick(self, DeltaSeconds)
   if not NearlyEquals(CameraTimer, -1) then
@@ -90,9 +96,11 @@ function BP_AppearanceActorBase_C:ReceiveTick(DeltaSeconds)
     end
   end
 end
+
 function BP_AppearanceActorBase_C:BPLeftMouseButtonDown(bIsMouseDown)
   self.bIsMouseDown = bIsMouseDown
 end
+
 function BP_AppearanceActorBase_C:InitAppearanceActor(HeroId, SkinId, WeaponSkinId)
   self.SkinId = SkinId
   self.DisplayMeshStatus = EDisplayMeshStatus.Role
@@ -112,6 +120,7 @@ function BP_AppearanceActorBase_C:InitAppearanceActor(HeroId, SkinId, WeaponSkin
   CameraMotionIdx = 1
   SetCameraData(self, SkinId, CameraMotionIdx)
 end
+
 function BP_AppearanceActorBase_C:InitWeaponMesh(WeaponSkinId, WeaponResId)
   self.WeaponSkinId = WeaponSkinId
   self.DisplayMeshStatus = EDisplayMeshStatus.Weapon
@@ -125,6 +134,7 @@ function BP_AppearanceActorBase_C:InitWeaponMesh(WeaponSkinId, WeaponResId)
   CameraMotionIdx = 1
   SetCameraData(self, WeaponSkinId, CameraMotionIdx)
 end
+
 function BP_AppearanceActorBase_C:UpdateWeaponMeshDisplayData(WeaponResId)
   if not UE.RGUtil.IsUObjectValid(self.ChildActorWeapon.ChildActor) then
     print("BP_AppearanceActorBase_C:UpdateWeaponMeshDisplayData ChildActor IsNull")
@@ -154,6 +164,7 @@ function BP_AppearanceActorBase_C:UpdateWeaponMeshDisplayData(WeaponResId)
     end
   end
 end
+
 function BP_AppearanceActorBase_C:MoveNextCameraTrans()
   if CameraMotionIdx <= 1 then
     return
@@ -172,6 +183,7 @@ function BP_AppearanceActorBase_C:MoveNextCameraTrans()
   CameraMotionIdx = CameraMotionIdx - 1
   CameraTimer = 0
 end
+
 function BP_AppearanceActorBase_C:MovePreCameraTrans()
   if not NearlyEquals(CameraTimer, -1) then
     return
@@ -194,6 +206,7 @@ function BP_AppearanceActorBase_C:MovePreCameraTrans()
   CameraMotionIdx = CameraMotionIdx + 1
   CameraTimer = 0
 end
+
 function BP_AppearanceActorBase_C:UpdateActived(bIsActived, bNeedNotHideRoleMain, bAutoQuit)
   if nil == bAutoQuit then
     bAutoQuit = true
@@ -233,6 +246,7 @@ function BP_AppearanceActorBase_C:UpdateActived(bIsActived, bNeedNotHideRoleMain
     LogicRole.HideCurSkinLightMap()
   end
 end
+
 function BP_AppearanceActorBase_C:GetTypeId(Widget)
   local Character = Widget:GetOwningPlayerPawn()
   if not Character then
@@ -240,6 +254,7 @@ function BP_AppearanceActorBase_C:GetTypeId(Widget)
   end
   return Character:GetTypeID()
 end
+
 function BP_AppearanceActorBase_C:HideMesh()
   self.ChildActorWeapon:SetHiddenInGame(false)
   self.ChildActor:SetHiddenInGame(false)
@@ -247,6 +262,7 @@ function BP_AppearanceActorBase_C:HideMesh()
     self.ChildActorProp:SetHiddenInGame(false)
   end
 end
+
 function BP_AppearanceActorBase_C:InitPropByActorPath(ActorPath)
   if not self.ChildActorProp then
     print("BP_AppearanceActorBase_C:InitPropByActorPath ChildActorProp IsNull")
@@ -262,4 +278,5 @@ function BP_AppearanceActorBase_C:InitPropByActorPath(ActorPath)
   self.ChildActorProp:SetHiddenInGame(false)
   SetCameraData(self, 0, 1)
 end
+
 return BP_AppearanceActorBase_C

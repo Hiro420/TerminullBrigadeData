@@ -32,12 +32,15 @@ local HideAllEffects = function(self)
     self.RGStateControllerTitle:ChangeStatus(EChoosePanelTitleStatus.Other)
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:OnPreload()
   self.Overridden.OnPreload(self)
 end
+
 function WBP_GenericModifyChoosePanel_C:OnPreloadReset()
   self.Overridden.OnPreloadReset(self)
 end
+
 function WBP_GenericModifyChoosePanel_C:OnCreate()
   self.Overridden.OnCreate(self)
   self.EscActionName = "PauseGame"
@@ -45,6 +48,7 @@ function WBP_GenericModifyChoosePanel_C:OnCreate()
   self.CKeyEvent = "BattleRoleInfoShortcut"
   self.SwitchBag = "SwitchBag"
 end
+
 function WBP_GenericModifyChoosePanel_C:FocusInput()
   self.Overridden.FocusInput(self)
   SetInputIgnore(self:GetOwningPlayerPawn(), true)
@@ -77,6 +81,7 @@ function WBP_GenericModifyChoosePanel_C:FocusInput()
   end
   self:UpdateHudListNav()
 end
+
 function WBP_GenericModifyChoosePanel_C:RefreshNum()
   if self.ModifyChooseType == ModifyChooseType.SpecificModify or self.ModifyChooseType == ModifyChooseType.SpecificModifyReplace then
     return
@@ -88,6 +93,7 @@ function WBP_GenericModifyChoosePanel_C:RefreshNum()
     self.RGTextRefreshNum:SetText(refreshCount)
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:OnDisplay()
   self.Overridden.OnDisplay(self)
   self:ComInitGeneric()
@@ -118,6 +124,7 @@ function WBP_GenericModifyChoosePanel_C:OnDisplay()
   UpdateVisibility(self.CanvasPanel_SurvivalModify, self:IsSurvivalMode())
   self:BindAttributeChanged()
 end
+
 function WBP_GenericModifyChoosePanel_C:BindAttributeChanged()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -132,6 +139,7 @@ function WBP_GenericModifyChoosePanel_C:BindAttributeChanged()
     self.BindOnHealthAttributeChanged
   })
 end
+
 function WBP_GenericModifyChoosePanel_C:UnBindAttributeChanged()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -146,6 +154,7 @@ function WBP_GenericModifyChoosePanel_C:UnBindAttributeChanged()
     self.BindOnHealthAttributeChanged
   })
 end
+
 function WBP_GenericModifyChoosePanel_C:ComInitGeneric()
   self.ShopNPC = nil
   self:SetFromDialog(false)
@@ -158,9 +167,11 @@ function WBP_GenericModifyChoosePanel_C:ComInitGeneric()
   UpdateVisibility(self.CanvasPanelAbandoned, false)
   UpdateVisibility(self.CanvasPanel_Invincible, false)
 end
+
 function WBP_GenericModifyChoosePanel_C:CloseChoosePanel()
   LogicGenericModify:CloseGenericModifyChoosePanel(self.Target)
 end
+
 function WBP_GenericModifyChoosePanel_C:ListenForEscInputAction()
   if self:CanExitPanel() then
     if self:CheckNeedConfirmExit() then
@@ -179,6 +190,7 @@ function WBP_GenericModifyChoosePanel_C:ListenForEscInputAction()
     end
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:OnTabKeyEvent()
   if not self:IsAnimationPlaying(self.ani_33_modchoosepanel_in) and not self:IsAnimationPlaying(self.ani_33_modchoosepanel_out) and not self.ModChoose and SwitchUI(self.MainPanelClass, true) then
     local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGUIManager:StaticClass())
@@ -190,6 +202,7 @@ function WBP_GenericModifyChoosePanel_C:OnTabKeyEvent()
     end
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:OnCKeyEvent()
   local TutorialLevelSubSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGTutorialLevelSystem:StaticClass())
   if TutorialLevelSubSystem and TutorialLevelSubSystem:IsFreshPlayer() then
@@ -210,11 +223,14 @@ function WBP_GenericModifyChoosePanel_C:OnCKeyEvent()
     end
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:OnSwitchBag()
 end
+
 function WBP_GenericModifyChoosePanel_C:SetFromDialog(bIsFromDialog)
   self.bIsFromDialog = bIsFromDialog
 end
+
 function WBP_GenericModifyChoosePanel_C:InitGenericModifyChoosePanel(InteractComp, Target)
   self.Target = Target
   self.IsInShop = false
@@ -379,6 +395,7 @@ function WBP_GenericModifyChoosePanel_C:InitGenericModifyChoosePanel(InteractCom
   end
   self:PlayAnimation(self.ani_GenericModifyChoosePanel_in)
 end
+
 function WBP_GenericModifyChoosePanel_C:ShowSpecificReplaceTips(bIsShow, ModifyId)
   if bIsShow then
     self.WBP_GenericModifyBagTips:InitSpecificModifyTips(ModifyId)
@@ -387,6 +404,7 @@ function WBP_GenericModifyChoosePanel_C:ShowSpecificReplaceTips(bIsShow, ModifyI
     UpdateVisibility(self.CanvasPanel_SpecificExchangeTips, false)
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:ShowSpecificModifyReplaceHover(bIsShow, ModifyId)
   if bIsShow then
     SetHitTestInvisible(self.WBP_GenericModifySpecificExchangeNew)
@@ -402,6 +420,7 @@ function WBP_GenericModifyChoosePanel_C:ShowSpecificModifyReplaceHover(bIsShow, 
     self:PlayAnimation(self.Ani_replacement_out)
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:InitGenericModifyChoosePanelByPushPreview(PreviewModifyList)
   LogicGenericModify.bCanOperator = true
   self.ModifyChooseType = ModifyChooseType.DoubleGenericModifyUpgrade
@@ -436,6 +455,7 @@ function WBP_GenericModifyChoosePanel_C:InitGenericModifyChoosePanelByPushPrevie
   end
   self:PlayAnimation(self.ani_GenericModifyChoosePanel_in)
 end
+
 function WBP_GenericModifyChoosePanel_C:OnItemChanged(ArticleId, OldStack, NewStack)
   local RGGlobalSettings = UE.URGGlobalSettings.GetSettings()
   if RGGlobalSettings and UE.URGBlueprintLibrary.GetArticleIdConfigId(ArticleId) == RGGlobalSettings.SpecificModifyRefreshCostConfigId then
@@ -445,6 +465,7 @@ function WBP_GenericModifyChoosePanel_C:OnItemChanged(ArticleId, OldStack, NewSt
     self:InitSurvivalModifyCount()
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:UpdateSpecificModifyRefresh()
   if self.ModifyChooseType == ModifyChooseType.SpecificModify or self.ModifyChooseType == ModifyChooseType.SpecificModifyReplace then
     local PlayerPawn = self:GetOwningPlayerPawn()
@@ -477,6 +498,7 @@ function WBP_GenericModifyChoosePanel_C:UpdateSpecificModifyRefresh()
     end
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:InitTitle(Title, Color, ShadowColor, Sprite)
   local Font = self.RGTextGenericModifyGroupNameShadow.Font
   Font.OutlineSettings.OutlineColor = ShadowColor
@@ -488,9 +510,11 @@ function WBP_GenericModifyChoosePanel_C:InitTitle(Title, Color, ShadowColor, Spr
   SetImageBrushBySoftObject(self.URGImageIcon_1, Sprite)
   UpdateVisibility(self.CanvasPanelGroupName, true)
 end
+
 function WBP_GenericModifyChoosePanel_C:FinishInteractGenericModify()
   LogicGenericModify:FinishInteractGenericModify(self.Target)
 end
+
 function WBP_GenericModifyChoosePanel_C:UpdatePanel(PreviewModifyListParam)
   if PreviewModifyListParam then
     self.WBP_GenericModifyChooseItemList:UpdatePanel(PreviewModifyListParam, self.InteractComp, self.HoverFunc, self, true)
@@ -500,12 +524,14 @@ function WBP_GenericModifyChoosePanel_C:UpdatePanel(PreviewModifyListParam)
   UpdateVisibility(self.URGImageMask, false)
   self:UpdateSpecificModifyRefresh()
 end
+
 function WBP_GenericModifyChoosePanel_C:PreviewSpecificModifyRefreshed(Result)
   UpdateVisibility(self.URGImageMask, false)
   if ResultToWaveId[Result] then
     ShowWaveWindow(ResultToWaveId[Result])
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:UpdateModifyListByShop(PreviewModifyList, ShopNPC)
   self.ShopNPC = ShopNPC
   local PlayerPawn = self:GetOwningPlayerPawn()
@@ -559,6 +585,7 @@ function WBP_GenericModifyChoosePanel_C:UpdateModifyListByShop(PreviewModifyList
   print("Shop", PlayerPawn.GenericModifyComponent:GetGenericModifyRefreshCount(), self.ModifyChooseType, ModifyChooseType.GenericModify)
   self:PlayAnimation(self.ani_GenericModifyChoosePanel_in)
 end
+
 function WBP_GenericModifyChoosePanel_C:InitSurvivalModifyList(PreviewModifyData)
   local PlayerPawn = self:GetOwningPlayerPawn()
   self.IsInShop = false
@@ -606,6 +633,7 @@ function WBP_GenericModifyChoosePanel_C:InitSurvivalModifyList(PreviewModifyData
   self:InitSurvivalModifyCount()
   self.RGStateController_SurvivalModifyMode:ChangeStatus("PermissionSelect")
 end
+
 function WBP_GenericModifyChoosePanel_C:BattleLagacyModifyClose()
   UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(GameInstance, self.BattleLagacyCountDownHandle)
   if self.ModifyChooseType == ModifyChooseType.BattleLagacy then
@@ -617,6 +645,7 @@ function WBP_GenericModifyChoosePanel_C:BattleLagacyModifyClose()
     LogicGenericModify:CloseGenericModifyChoosePanel(self.Target)
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:InitGenericModifyChoosePanelByBattleLagacy(BattleLagacyIDs)
   LogicGenericModify.bCanOperator = true
   self:PlayAnimation(self.Ani_in)
@@ -669,6 +698,7 @@ function WBP_GenericModifyChoosePanel_C:InitGenericModifyChoosePanelByBattleLaga
   }, delay, false)
   UpdateVisibility(self.BP_ButtonWithSoundRefresh, false)
 end
+
 function WBP_GenericModifyChoosePanel_C:UpdateAbandonedInfo()
   if UE.RGUtil.IsUObjectValid(LogicShop.ShopNPC) then
     local ShopInteractComp = LogicShop.ShopNPC:GetComponentByClass(UE.URGInteractComponent_Shop:StaticClass())
@@ -703,6 +733,7 @@ function WBP_GenericModifyChoosePanel_C:UpdateAbandonedInfo()
     UpdateVisibility(self.CanvasPanelAbandoned, true)
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:OnAbandonedClick()
   if self:IsAnimationPlaying(self.ani_GenericModifyChoosePanel_out) then
     print("WBP_GenericModifyChoosePanel_C", "OnAbandonedClick")
@@ -750,6 +781,7 @@ function WBP_GenericModifyChoosePanel_C:OnAbandonedClick()
     end
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:OnRefreshClick()
   if not LogicGenericModify.bCanOperator then
     print("WBP_GenericModifyChoosePanel_C:OnRefreshClick LogicGenericModify.bCanOperator Is False")
@@ -816,6 +848,7 @@ function WBP_GenericModifyChoosePanel_C:OnRefreshClick()
     end
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:CanExitPanel()
   if self.IsInShop then
     return false
@@ -825,12 +858,14 @@ function WBP_GenericModifyChoosePanel_C:CanExitPanel()
     return true
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:CheckNeedConfirmExit()
   if self.ModifyChooseType == ModifyChooseType.BattleLagacy then
     return true
   end
   return false
 end
+
 function WBP_GenericModifyChoosePanel_C:OnUpgradeModify(RGGenericModifyParam)
   if self.ModifyChooseType == ModifyChooseType.DoubleGenericModifyUpgrade then
     self:UpdateChoosePanel(RGGenericModifyParam, true)
@@ -838,6 +873,7 @@ function WBP_GenericModifyChoosePanel_C:OnUpgradeModify(RGGenericModifyParam)
     self:UpdateChoosePanel(RGGenericModifyParam, false)
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:CloseChoosePanelEx(ModifyId)
   self:PlayAnimation(self.ani_GenericModifyChoosePanel_out, 0, 1, UE.EUMGSequencePlayMode.Forward, 2)
   print("LogicGenericModify: 1 UpdateChoosePanel" .. self.Object:GetVisibility())
@@ -851,6 +887,7 @@ function WBP_GenericModifyChoosePanel_C:CloseChoosePanelEx(ModifyId)
   self.WBP_GenericModifyChooseItemList:FadeOut(ModifyId, GroupId)
   print("LogicGenericModify: 2 UpdateChoosePanel" .. self.Object:GetVisibility())
 end
+
 function WBP_GenericModifyChoosePanel_C:UpdateChoosePanel(RGGenericModifyParam, bIsHide)
   print("WBP_GenericModifyChoosePanel_C:UpdateChoosePanel", RGGenericModifyParam, self.IsInShop)
   local ModifyId = RGGenericModifyParam.ModifyId or self.ModifyId
@@ -862,10 +899,12 @@ function WBP_GenericModifyChoosePanel_C:UpdateChoosePanel(RGGenericModifyParam, 
     self:CloseChoosePanelEx(ModifyId)
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:SelectModifyId(ModifyId)
   print("WBP_GenericModifyChoosePanel_C:SelectModifyId", ModifyId, self.ModifyId)
   self.ModifyId = ModifyId
 end
+
 function WBP_GenericModifyChoosePanel_C:OnCancelChoosePanel(Target, Instigator)
   print("WBP_GenericModifyChoosePanel_C:OnCancelChoosePanel")
   if LogicGenericModify.IsFinishChooseModify then
@@ -877,6 +916,7 @@ function WBP_GenericModifyChoosePanel_C:OnCancelChoosePanel(Target, Instigator)
   print("WBP_GenericModifyChoosePanel_C:OnCancelChoosePanel CloseChoosePanel")
   self:CloseChoosePanel()
 end
+
 function WBP_GenericModifyChoosePanel_C:OnFinishChoosePanel(Target, Instigator)
   print("WBP_GenericModifyChoosePanel_C:OnFinishChoosePanel", self.IsInShop)
   if self.IsInShop then
@@ -907,6 +947,7 @@ function WBP_GenericModifyChoosePanel_C:OnFinishChoosePanel(Target, Instigator)
     self:CloseChoosePanel()
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:OnFinishChooseBattleLagacy(CurBattleLagacyData)
   if CurBattleLagacyData.BattleLagacyType ~= EBattleLagacyType.GeneircModify then
     return
@@ -928,12 +969,14 @@ function WBP_GenericModifyChoosePanel_C:OnFinishChooseBattleLagacy(CurBattleLaga
     LogicGenericModify:CloseGenericModifyChoosePanel(nil)
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:OnSelectBattleLagacyFailed()
   if self.ModifyChooseType == ModifyChooseType.BattleLagacy then
     EventSystem.Invoke(EventDef.BattleLagacy.OnBattleLagacyModifyClose)
   end
   LogicGenericModify:CloseGenericModifyChoosePanel(nil)
 end
+
 function WBP_GenericModifyChoosePanel_C:UpdateSpecificChoosePanel(RGSpecificModifyParam)
   print("WBP_GenericModifyChoosePanel_C:UpdateSpecificChoosePanel", RGSpecificModifyParam, self.IsInShop)
   if self.IsInShop then
@@ -946,6 +989,7 @@ function WBP_GenericModifyChoosePanel_C:UpdateSpecificChoosePanel(RGSpecificModi
   end
   UpdateVisibility(self.BP_ButtonWithSoundRefresh, false)
 end
+
 function WBP_GenericModifyChoosePanel_C:OnAnimationFinished(Animation)
   if Animation == self.ani_GenericModifyChoosePanel_out then
     if self.ModifyChooseType == ModifyChooseType.BattleLagacy then
@@ -955,12 +999,15 @@ function WBP_GenericModifyChoosePanel_C:OnAnimationFinished(Animation)
     LogicGenericModify:CloseGenericModifyChoosePanel(self.Target)
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:HoverFunc(Slot, bIsHover)
   self.WBP_HUD_GenericModifyList:HighLightModifyItem(Slot, bIsHover)
 end
+
 function WBP_GenericModifyChoosePanel_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_GenericModifyChoosePanel_C:UnfocusInput()
   self.Overridden.UnfocusInput(self)
   SetInputIgnore(self:GetOwningPlayerPawn(), false)
@@ -980,6 +1027,7 @@ function WBP_GenericModifyChoosePanel_C:UnfocusInput()
   self.WBP_InteractTipWidgetEsc.Btn_Main.OnClicked:Remove(self, self.ListenForEscInputAction)
   self.BP_ButtonWithSoundAbandoned.OnClicked:Remove(self, self.OnAbandonedClick)
 end
+
 function WBP_GenericModifyChoosePanel_C:OnUnDisplay()
   self.Overridden.OnUnDisplay(self, true)
   self:SetFromDialog(false)
@@ -1030,10 +1078,12 @@ function WBP_GenericModifyChoosePanel_C:OnUnDisplay()
     CloseWaveWindow(self.BattleLagacyConfirmWnd)
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:OnClose()
   self.Overridden.OnClose(self)
   self:Reset()
 end
+
 function WBP_GenericModifyChoosePanel_C:Reset()
   if self.InteractComp then
     if self.InteractComp.OnPreviewGenericModifyRep then
@@ -1047,6 +1097,7 @@ function WBP_GenericModifyChoosePanel_C:Reset()
   self.InteractComp = nil
   self.Target = nil
 end
+
 function WBP_GenericModifyChoosePanel_C:GetLeftRefreshCount()
   if self.ModifyChooseType == ModifyChooseType.SpecificModify then
     local PlayerPawn = self:GetOwningPlayerPawn()
@@ -1078,6 +1129,7 @@ function WBP_GenericModifyChoosePanel_C:GetLeftRefreshCount()
   end
   return 0
 end
+
 function WBP_GenericModifyChoosePanel_C:CheckRefreshCost()
   if self.ModifyChooseType == ModifyChooseType.SpecificModify then
     local PlayerPawn = self:GetOwningPlayerPawn()
@@ -1115,9 +1167,11 @@ function WBP_GenericModifyChoosePanel_C:CheckRefreshCost()
   end
   return false, 0, 0
 end
+
 function WBP_GenericModifyChoosePanel_C:UpdateHudListNav()
   self.WBP_HUD_GenericModifyList:InitFirstItemLeftNavTargetWidget(self.WBP_GenericModifyChooseItemList.WBP_GenericModifyChooseItem1)
 end
+
 function WBP_GenericModifyChoosePanel_C:ShowTitle(GroupId, bIsShowMove)
   self.StateCtrl_TitleEff:ChangeStatus(GroupId)
   local TitleEffName = "AutoLoad_TitleGroup_" .. GroupId
@@ -1135,10 +1189,12 @@ function WBP_GenericModifyChoosePanel_C:ShowTitle(GroupId, bIsShowMove)
     end
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:Destruct()
   self:Reset()
   self:UnBindAttributeChanged()
 end
+
 function WBP_GenericModifyChoosePanel_C:BindOnHealthAttributeChanged(NewValue, OldValue)
   local bReduce = NewValue < OldValue
   if not bReduce then
@@ -1146,6 +1202,7 @@ function WBP_GenericModifyChoosePanel_C:BindOnHealthAttributeChanged(NewValue, O
   end
   LogicGenericModify:CloseGenericModifyChoosePanel(self.Target)
 end
+
 function WBP_GenericModifyChoosePanel_C:InitSurvivalUpgradeModifyData(PreviewUpgradeModifyData)
   local PreviewModifyList = PreviewUpgradeModifyData.PreviewModifyList
   LogicGenericModify.bCanOperator = true
@@ -1195,6 +1252,7 @@ function WBP_GenericModifyChoosePanel_C:InitSurvivalUpgradeModifyData(PreviewUpg
   self:InitSurvivalModifyCount()
   self.RGStateController_SurvivalModifyMode:ChangeStatus("PermissionLevelUp")
 end
+
 function WBP_GenericModifyChoosePanel_C:InitSurvivalSpecificModifyData(PreviewSpecificModifyData)
   LogicGenericModify.bCanOperator = true
   self.IsInShop = false
@@ -1254,6 +1312,7 @@ function WBP_GenericModifyChoosePanel_C:InitSurvivalSpecificModifyData(PreviewSp
   UpdateVisibility(self.BP_ButtonWithSoundRefresh, true, true)
   self.RGStateController_SurvivalModifyMode:ChangeStatus("PotentialKey")
 end
+
 function WBP_GenericModifyChoosePanel_C:UpdateSurvivalSpecificModifyRefresh()
   if self.ModifyChooseType == ModifyChooseType.SurvivalSpecificModify then
     local RGGlobalSettings = UE.URGGlobalSettings.GetSettings()
@@ -1282,9 +1341,11 @@ function WBP_GenericModifyChoosePanel_C:UpdateSurvivalSpecificModifyRefresh()
     end
   end
 end
+
 function WBP_GenericModifyChoosePanel_C:IsSurvivalMode()
   return LogicSurvivor.IsSurvivalMode()
 end
+
 function WBP_GenericModifyChoosePanel_C:InitSurvivalModifyCount()
   UpdateVisibility(self.CanvasPanel_SurvivalModify, self:IsSurvivalMode())
   local Count = 0
@@ -1297,4 +1358,5 @@ function WBP_GenericModifyChoosePanel_C:InitSurvivalModifyCount()
   end
   self.Txt_SurvivalModifyCount:SetText(Count)
 end
+
 return WBP_GenericModifyChoosePanel_C

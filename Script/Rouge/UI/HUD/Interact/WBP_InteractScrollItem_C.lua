@@ -1,9 +1,11 @@
 local WBP_InteractScrollItem_C = UnLua.Class()
 local ItemSizeY = 0
 local ScrollListSizeY = 0
+
 function WBP_InteractScrollItem_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_InteractScrollItem_C:InitInteractScrollIten(TargetActor, bIsSelect)
   if not UE.RGUtil.IsUObjectValid(TargetActor) then
     UpdateVisibility(self, false)
@@ -34,7 +36,9 @@ function WBP_InteractScrollItem_C:InitInteractScrollIten(TargetActor, bIsSelect)
   end
   UpdateVisibility(self.URGImageSelect, bIsSelect)
 end
+
 function WBP_InteractScrollItem_C:Hide()
   UpdateVisibility(self, false)
 end
+
 return WBP_InteractScrollItem_C

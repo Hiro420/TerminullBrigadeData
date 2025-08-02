@@ -1,18 +1,23 @@
 local VoiceControlModule = LuaClass()
 local rapidjson = require("rapidjson")
+
 function VoiceControlModule:Ctor()
 end
+
 function VoiceControlModule:OnInit()
   print("VoiceControlModule:OnInit...........")
 end
+
 function VoiceControlModule:OnShutdown()
   print("VoiceControlModule:OnShutdown...........")
 end
+
 function VoiceControlModule:SaveGrowthSnapDataToLocal()
   local localSaveSnapData = SaveGrowthSnapData.SaveGrowthSnapTipNoUseTimes
   local localSaveGrowthSnapDataJson = RapidJsonEncode(localSaveSnapData)
   UE.URGBlueprintLibrary.SaveStringToFile(LocalSaveGrowthSnapFilePath, localSaveGrowthSnapDataJson)
 end
+
 function VoiceControlModule:CheckIsVoiceControl(Target, Callback)
   if not self:CheckIsVoiceControlEnable() then
     return false
@@ -29,6 +34,7 @@ function VoiceControlModule:CheckIsVoiceControl(Target, Callback)
   end
   return false
 end
+
 function VoiceControlModule:RemoveLiEvent(Target, Event)
   if not self:CheckIsVoiceControlEnable() then
     return
@@ -45,9 +51,11 @@ function VoiceControlModule:RemoveLiEvent(Target, Event)
     print("[LIPass] LIPassSystem is nil")
   end
 end
+
 function VoiceControlModule:CheckIsVoiceControlEnable()
   return UE.URGPlatformFunctionLibrary.IsLIPassEnabled()
 end
+
 function VoiceControlModule:OnLiPassEvent(evt, Target, Callback)
   local VoiceControlModuleTemp = ModuleManager:Get("VoiceControlModule")
   if nil == VoiceControlModuleTemp then
@@ -73,4 +81,5 @@ function VoiceControlModule:OnLiPassEvent(evt, Target, Callback)
     end
   end
 end
+
 return VoiceControlModule

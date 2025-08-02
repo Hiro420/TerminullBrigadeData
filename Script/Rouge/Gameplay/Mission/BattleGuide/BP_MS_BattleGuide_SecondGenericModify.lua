@@ -1,5 +1,6 @@
 local BP_MS_BattleGuide_SecondGenericModify = UnLua.Class()
 local BattleModule = require("Modules.Beginner.BeginnerGuideModule")
+
 function BP_MS_BattleGuide_SecondGenericModify:MissionStarted(...)
   if not UE.RGUtil.IsDedicatedServer() then
     EventSystem.AddListener(self, EventDef.GenericModify.OnChoosePanelHideByFinishInteract, self.BindOnFinishInteract)
@@ -9,15 +10,18 @@ function BP_MS_BattleGuide_SecondGenericModify:MissionStarted(...)
     end
   end
 end
+
 function BP_MS_BattleGuide_SecondGenericModify:TriggerUIGuide(...)
   if 0 == self.UIGuideId then
     return
   end
   BattleModule:InitByGuideId(self.UIGuideId)
 end
+
 function BP_MS_BattleGuide_SecondGenericModify:BindOnGenericModifyPanelShow(...)
   self:TriggerUIGuide()
 end
+
 function BP_MS_BattleGuide_SecondGenericModify:BindOnFinishInteract(IsFinishInteract)
   if IsFinishInteract then
     self:MakeMissionFinished()
@@ -29,4 +33,5 @@ function BP_MS_BattleGuide_SecondGenericModify:BindOnFinishInteract(IsFinishInte
     UIMgr:Hide(ViewID.UI_BeginnerGuidanceSystemTips)
   end
 end
+
 return BP_MS_BattleGuide_SecondGenericModify

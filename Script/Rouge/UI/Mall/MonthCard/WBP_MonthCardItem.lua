@@ -2,9 +2,11 @@ local WBP_MonthCardItem = UnLua.Class()
 local MonthCardData = require("Modules.MonthCard.MonthCardData")
 local TopupData = require("Modules.Topup.TopupData")
 local TopupHandler = require("Protocol.Topup.TopupHandler")
+
 function WBP_MonthCardItem:Construct()
   self.Btn_Buy.OnClicked:Add(self, self.BindOnBuyButtonClicked)
 end
+
 function WBP_MonthCardItem:Show(ProductId)
   self.ProductId = ProductId
   local ProductId = self.ProductId
@@ -38,11 +40,11 @@ function WBP_MonthCardItem:Show(ProductId)
   local MonthCardInfo = MonthCardData:GetMonthCardInfoByRoleId(DataMgr.GetUserId())
   if MonthCardInfo then
     local EndTime = MonthCardInfo[tostring(MonthCardResourceInfo.MonthCardID)] and tonumber(MonthCardInfo[tostring(MonthCardResourceInfo.MonthCardID)])
-    local CurTime = GetLocalTimestampByServerTimeZone()
+    local CurTime = GetLocalTimestamp()
     if EndTime and EndTime > CurTime then
       UpdateVisibility(self.Overlay_RemainTime, true)
       self.Txt_Buy:SetText(self.RenewText)
-      local RemainTime = EndTime - GetLocalTimestampByServerTimeZone()
+      local RemainTime = EndTime - GetLocalTimestamp()
       local Day = math.floor(RemainTime / 86400)
       local Hour = math.floor(RemainTime % 86400 / 3600)
       local Minute = math.floor(RemainTime % 3600 / 60)
@@ -71,16 +73,21 @@ function WBP_MonthCardItem:Show(ProductId)
     self.RGStateController_Have:ChangeStatus("UnHave")
   end
 end
+
 function WBP_MonthCardItem:BindOnBuyButtonClicked(...)
   TopupHandler:RequestBuyMisdasProduct(self.ProductId, 1)
 end
+
 function WBP_MonthCardItem:GetToolTipWidget()
   return self.WBP_Item:GetToolTipWidget()
 end
+
 function WBP_MonthCardItem:Hide(...)
   UpdateVisibility(self, false)
 end
+
 function WBP_MonthCardItem:Destruct(...)
   self.Btn_Buy.OnClicked:Remove(self, self.BindOnBuyButtonClicked)
 end
+
 return WBP_MonthCardItem

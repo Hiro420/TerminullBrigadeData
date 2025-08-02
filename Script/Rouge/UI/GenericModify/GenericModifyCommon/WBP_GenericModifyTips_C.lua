@@ -5,23 +5,27 @@ local EModifyLvUpStatus = {
   LvUp = 2,
   Specific = 3
 }
+
 function WBP_GenericModifyTips_C:Construct()
   self.BP_ButtonWithSoundChangeShowModify.OnHovered:Add(self, self.OnShowModifyChange)
   self.BP_ButtonWithSoundChangeShowModify.OnUnhovered:Add(self, self.OnHideModifyChange)
   self.BP_ButtonWithSoundReplaceShowModify.OnHovered:Add(self, self.OnShowModifyChange)
   self.BP_ButtonWithSoundReplaceShowModify.OnUnhovered:Add(self, self.OnHideModifyChange)
 end
+
 function WBP_GenericModifyTips_C:Destruct()
   self.BP_ButtonWithSoundChangeShowModify.OnHovered:Remove(self, self.OnShowModifyChange)
   self.BP_ButtonWithSoundChangeShowModify.OnUnhovered:Remove(self, self.OnHideModifyChange)
   self.BP_ButtonWithSoundReplaceShowModify.OnHovered:Remove(self, self.OnShowModifyChange)
   self.BP_ButtonWithSoundReplaceShowModify.OnUnhovered:Remove(self, self.OnHideModifyChange)
 end
+
 function WBP_GenericModifyTips_C:InitGenericModifyTipsBySell(GenericModifyId, bIsUpgrade, ParentView)
   self.bSell = true
   self:InitGenericModifyTips(GenericModifyId, bIsUpgrade, ParentView)
   UpdateVisibility(self.HorizontalBoxSell, true)
 end
+
 function WBP_GenericModifyTips_C:InitGenericModifyTips(GenericModifyId, bIsUpgrade, ParentView, ModifyChooseTypeParam)
   self.GenericModifyId = GenericModifyId
   self.bIsUpgrade = bIsUpgrade
@@ -117,6 +121,7 @@ function WBP_GenericModifyTips_C:InitGenericModifyTips(GenericModifyId, bIsUpgra
     end
   end
 end
+
 function WBP_GenericModifyTips_C:InitSpecificModifyTips(SpecificModifyId)
   self.SpecificModifyId = SpecificModifyId
   local bIsUpgrade = false
@@ -165,6 +170,7 @@ function WBP_GenericModifyTips_C:InitSpecificModifyTips(SpecificModifyId)
     SetImageBrushBySoftObject(self.URGImageBg, ItemRarityData.GenericModifyRareBg)
   end
 end
+
 function WBP_GenericModifyTips_C:InitGenericModifyTipsByChanged(GenericModifyId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -216,6 +222,7 @@ function WBP_GenericModifyTips_C:InitGenericModifyTipsByChanged(GenericModifyId)
     end
   end
 end
+
 function WBP_GenericModifyTips_C:FadeIn(bRefresh)
   print("WBP_GenericModifyTips_C:FadeInFinished", bRefresh)
   if not bRefresh then
@@ -260,6 +267,7 @@ function WBP_GenericModifyTips_C:FadeIn(bRefresh)
     end
   end
 end
+
 function WBP_GenericModifyTips_C:UpdateModifyItemPos(bIsUpgrade)
   local CanvasPanelSlot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.WBP_GenericModifyItem)
   if bIsUpgrade then
@@ -268,6 +276,7 @@ function WBP_GenericModifyTips_C:UpdateModifyItemPos(bIsUpgrade)
     CanvasPanelSlot:SetPosition(self.NormalItemPos)
   end
 end
+
 function WBP_GenericModifyTips_C:InitNameAndImg(GenericModifyId, Text, Img)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -298,6 +307,7 @@ function WBP_GenericModifyTips_C:InitNameAndImg(GenericModifyId, Text, Img)
     end
   end
 end
+
 function WBP_GenericModifyTips_C:UpdateTagList(InscriptionDataAsset)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -317,6 +327,7 @@ function WBP_GenericModifyTips_C:UpdateTagList(InscriptionDataAsset)
   end
   HideOtherItem(self.HorizontalBoxTag, Index)
 end
+
 function WBP_GenericModifyTips_C:UpdateDescList(InscriptionDataAsset)
   local DescItemCls = UE.UClass.Load("/Game/Rouge/UI/GenericModify/GenericModifyChoose/WBP_GenericModifyDescItem.WBP_GenericModifyDescItem_C")
   local Index = 1
@@ -332,6 +343,7 @@ function WBP_GenericModifyTips_C:UpdateDescList(InscriptionDataAsset)
   end
   HideOtherItem(self.VerticalBoxEffectDesc, Index)
 end
+
 function WBP_GenericModifyTips_C:Hide()
   UpdateVisibility(self, false)
   self.GenericModifyId = nil
@@ -339,6 +351,7 @@ function WBP_GenericModifyTips_C:Hide()
   self.ModId = nil
   self.modComponent = nil
 end
+
 function WBP_GenericModifyTips_C:OnShowModifyChange()
   if not LogicGenericModify.bCanOperator then
     print("WBP_GenericModifyTips_C:OnShowModifyChange LogicGenericModify.bCanOperator false")
@@ -365,6 +378,7 @@ function WBP_GenericModifyTips_C:OnShowModifyChange()
   self:PlayAnimation(self.Ani_flushed)
   self.RGStateControllerChange:ChangeStatus(EHover.Hover)
 end
+
 function WBP_GenericModifyTips_C:OnHideModifyChange()
   if not LogicGenericModify.bCanOperator then
     print("WBP_GenericModifyTips_C:OnHideModifyChange LogicGenericModify.bCanOperator false")
@@ -388,11 +402,13 @@ function WBP_GenericModifyTips_C:OnHideModifyChange()
   self:PlayAnimation(self.Ani_flushed)
   self.RGStateControllerChange:ChangeStatus(EHover.UnHover)
 end
+
 function WBP_GenericModifyTips_C:ModifyTips_Nav_Up()
   if IsValidObj(self.ParentView) then
     return self.ParentView
   end
 end
+
 function WBP_GenericModifyTips_C:ModifyTips_Nav_Down()
   if IsValidObj(self.ParentView) and IsValidObj(self.ParentView.ParentView) then
     if CheckIsVisility(self.ParentView.ParentView.CanvasPanelAbandoned) then
@@ -403,4 +419,5 @@ function WBP_GenericModifyTips_C:ModifyTips_Nav_Down()
     end
   end
 end
+
 return WBP_GenericModifyTips_C

@@ -1,4 +1,5 @@
 local WBP_GRFetterItem_C = UnLua.Class()
+
 function WBP_GRFetterItem_C:UpdateGRFetterItem(FetterInfo)
   local tbHeroSkillTable = LuaTableMgr.GetLuaTableByName(TableNames.TBHeroSkill)
   local fetterData
@@ -24,4 +25,5 @@ function WBP_GRFetterItem_C:UpdateGRFetterItem(FetterInfo)
   self.WBP_LobbyStarWidget:UpdateStar(fetterData.Star)
   self.WBP_GRFetterTypeBox:UpdateSkillTag(fetterData.SkillTags)
 end
+
 return WBP_GRFetterItem_C

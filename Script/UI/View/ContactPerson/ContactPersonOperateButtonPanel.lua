@@ -2,6 +2,7 @@ local ContactPersonOperateButtonPanel = UnLua.Class()
 local ContactPersonManager = ModuleManager:Get("ContactPersonModule")
 local ContactPersonData = require("Modules.ContactPerson.ContactPersonData")
 local ContactPersonHandler = require("Protocol.ContactPerson.ContactPersonHandler")
+
 function ContactPersonOperateButtonPanel:BindClickHandler()
   self.InviteTeamPanel.Btn_Main.OnClicked:Add(self, self.BindOnInviteTeamButtonClicked)
   self.SizeBoxShield.Btn_Main.OnClicked:Add(self, self.BindOnShieldButtonClicked)
@@ -15,6 +16,7 @@ function ContactPersonOperateButtonPanel:BindClickHandler()
   self.ReportPanel.Btn_Main.OnClicked:Add(self, self.BindOnReport)
   self.PlatformPanel.Btn_Main.OnClicked:Add(self, self.BindOnPlatformClicked)
 end
+
 function ContactPersonOperateButtonPanel:UnBindClickHandler()
   self.InviteTeamPanel.Btn_Main.OnClicked:Remove(self, self.BindOnInviteTeamButtonClicked)
   self.SizeBoxShield.Btn_Main.OnClicked:Remove(self, self.BindOnShieldButtonClicked)
@@ -28,13 +30,16 @@ function ContactPersonOperateButtonPanel:UnBindClickHandler()
   self.ReportPanel.Btn_Main.OnClicked:Remove(self, self.BindOnCheckPlayerInfo)
   self.PlatformPanel.Btn_Main.OnClicked:Remove(self, self.BindOnPlatformClicked)
 end
+
 function ContactPersonOperateButtonPanel:OnInit()
   self:BindClickHandler()
   self.IsFirstShow = true
 end
+
 function ContactPersonOperateButtonPanel:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function ContactPersonOperateButtonPanel:OnShow(MousePosition, PlayerInfo, SourceFromType, ...)
   if not self.IsFirstShow then
     self:SetRenderOpacity(0.0)
@@ -57,6 +62,7 @@ function ContactPersonOperateButtonPanel:OnShow(MousePosition, PlayerInfo, Sourc
     self.ChatContent = (...)
   end
 end
+
 function ContactPersonOperateButtonPanel:JudgePanelPosition(MousePosition)
   local MainPanelSlot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.MainPanel)
   local Alignment = MainPanelSlot:GetAlignment()
@@ -77,12 +83,14 @@ function ContactPersonOperateButtonPanel:JudgePanelPosition(MousePosition)
     MainPanelSlot:SetPosition(MousePosition)
   end
 end
+
 function ContactPersonOperateButtonPanel:HidePanel()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.PanelPositionTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.PanelPositionTimer)
   end
   UIMgr:Hide(ViewID.UI_ContactPersonOperateButtonPanel)
 end
+
 function ContactPersonOperateButtonPanel:BindOnInviteTeamButtonClicked()
   local UserClickStatisticsMgr = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUserClickStatistics:StaticClass())
   if UserClickStatisticsMgr then
@@ -95,19 +103,23 @@ function ContactPersonOperateButtonPanel:BindOnInviteTeamButtonClicked()
   ContactPersonManager:SendInviteOrApplyTeamRequest(self.PlayerInfo, InviteTeamWay)
   self:HidePanel()
 end
+
 function ContactPersonOperateButtonPanel:BindOnShieldButtonClicked()
   local bIsSheilded = ChatDataMgr.CheckPlayerIsBeSheilded(tonumber(self.PlayerInfo.roleid))
   LogicChat:SheildPlayerMsg(tonumber(self.PlayerInfo.roleid), not bIsSheilded, self.PlayerInfo.nickname)
   self:HidePanel()
 end
+
 function ContactPersonOperateButtonPanel:BindOnAddFriendButtonClicked()
   ContactPersonHandler:RequestAddFriendToServer(self.PlayerInfo.roleid, self.SourceFromType)
   self:HidePanel()
 end
+
 function ContactPersonOperateButtonPanel:BindOnDeleteFriendButtonClicked()
   ContactPersonHandler:RequestDeleteFriendToServer(self.PlayerInfo.roleid)
   self:HidePanel()
 end
+
 function ContactPersonOperateButtonPanel:BindOnChatButtonClicked()
   local UserClickStatisticsMgr = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUserClickStatistics:StaticClass())
   if UserClickStatisticsMgr then
@@ -121,18 +133,22 @@ function ContactPersonOperateButtonPanel:BindOnChatButtonClicked()
   EventSystem.Invoke(EventDef.ContactPerson.UpdatePersonalChatPanelVis, true, PlayerInfo)
   self:HidePanel()
 end
+
 function ContactPersonOperateButtonPanel:BindOnAddBlackListButtonClicked()
   ContactPersonHandler:RequestBlackListPlayerToServer(self.PlayerInfo.roleid)
   self:HidePanel()
 end
+
 function ContactPersonOperateButtonPanel:BindOnRemoveBlackListButtonClicked()
   ContactPersonHandler:RequestCancelBlackListPlayerToServer(self.PlayerInfo.roleid)
   self:HidePanel()
 end
+
 function ContactPersonOperateButtonPanel:BindOnRemarkNameButtonClicked()
   UIMgr:Show(ViewID.UI_FriendRemarkName, nil, self.PlayerInfo)
   self:HidePanel()
 end
+
 function ContactPersonOperateButtonPanel:BindOnCheckPlayerInfo()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.CAREER) then
@@ -142,10 +158,12 @@ function ContactPersonOperateButtonPanel:BindOnCheckPlayerInfo()
   self:HidePanel()
   UIMgr:Show(ViewID.UI_PlayerInfoMain, true, roleID)
 end
+
 function ContactPersonOperateButtonPanel:BindOnPlatformClicked()
   DataMgr.ShowPlatformProfile(self.PlayerInfo.roleid, self.PlayerInfo.channelUID)
   self:HidePanel()
 end
+
 function ContactPersonOperateButtonPanel:BindOnReport()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.DELATE) then
@@ -159,6 +177,7 @@ function ContactPersonOperateButtonPanel:BindOnReport()
     UIMgr:Show(ViewID.UI_ReportView, false, 2, self.PlayerInfo.roleid, self.PlayerInfo.nickname)
   end
 end
+
 function ContactPersonOperateButtonPanel:RefreshOperateButtonVis()
   local AllChildItem = self.OperateButtonPanel:GetAllChildren()
   for key, SingleItem in pairs(AllChildItem) do
@@ -223,6 +242,7 @@ function ContactPersonOperateButtonPanel:RefreshOperateButtonVis()
     self:HidePanel()
   end
 end
+
 function ContactPersonOperateButtonPanel:UpdatePlatformInfo()
   if not self.PlatformPanel then
     return
@@ -242,6 +262,7 @@ function ContactPersonOperateButtonPanel:UpdatePlatformInfo()
     end)
   end
 end
+
 function ContactPersonOperateButtonPanel:OnBGMouseButtonDown(MyGeometry, MouseEvent)
   if not UE.UKismetInputLibrary.PointerEvent_IsMouseButtonDown(MouseEvent, self.LeftMouseKey) then
     return UE.UWidgetBlueprintLibrary.Handled()
@@ -249,13 +270,16 @@ function ContactPersonOperateButtonPanel:OnBGMouseButtonDown(MyGeometry, MouseEv
   self:HidePanel()
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function ContactPersonOperateButtonPanel:OnHide()
   self.PlayerInfo = nil
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.PanelPositionTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.PanelPositionTimer)
   end
 end
+
 function ContactPersonOperateButtonPanel:Destruct()
   self:HidePanel()
 end
+
 return ContactPersonOperateButtonPanel

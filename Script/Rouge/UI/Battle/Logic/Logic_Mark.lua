@@ -1,5 +1,6 @@
 local ListContainer = require("Rouge.UI.Common.ListContainer")
 LogicMark = LogicMark or {IsInit = false}
+
 function LogicMark.Init()
   if LogicMark.IsInit then
     print("LogicMark\229\183\178\229\136\157\229\167\139\229\140\150")
@@ -14,6 +15,7 @@ function LogicMark.Init()
   LogicMark.BindDelegate()
   LogicMark.BindOnMarkListChanged()
 end
+
 function LogicMark.BindDelegate()
   local GS = UE.UGameplayStatics.GetGameState(GameInstance)
   if GS then
@@ -25,6 +27,7 @@ function LogicMark.BindDelegate()
     end
   end
 end
+
 function LogicMark.BindOnMarkListChanged()
   local GS = UE.UGameplayStatics.GetGameState(GameInstance)
   if not GS then
@@ -54,6 +57,7 @@ function LogicMark.BindOnMarkListChanged()
     end
   end
 end
+
 function LogicMark.Clear()
   LogicMark.IsInit = false
   LogicMark.CurMarkList = {}

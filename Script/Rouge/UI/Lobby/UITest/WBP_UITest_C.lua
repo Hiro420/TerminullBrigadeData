@@ -10,15 +10,18 @@ local TabList = {
 }
 local Duration = 0.5
 local WBP_UITest_C = UnLua.Class()
+
 function WBP_UITest_C:Construct()
   self.Overridden.Construct(self)
   self.Timer = Duration + 1
   self.BP_ButtonEsc.OnClicked:Add(self, self.EscContent)
 end
+
 function WBP_UITest_C:Destruct()
   self.RGToggleGroup.OnCheckStateChanged:Remove(self, self.OnCheckStateChanged)
   self.Overridden.Destruct(self)
 end
+
 function WBP_UITest_C:LuaTick(InDeltaTime)
   if self.Timer < Duration then
     local TitleSlot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.RGTextTitle)
@@ -27,6 +30,7 @@ function WBP_UITest_C:LuaTick(InDeltaTime)
     self.Timer = self.Timer + InDeltaTime
   end
 end
+
 function WBP_UITest_C:Init()
   self.RGToggleGroup:ClearGroup()
   self.ItemTab = {}
@@ -40,6 +44,7 @@ function WBP_UITest_C:Init()
   end
   self.RGToggleGroup.OnCheckStateChanged:Add(self, self.OnCheckStateChanged)
 end
+
 function WBP_UITest_C:OnCheckStateChanged(SelectId)
   if SelectId > 0 then
     UpdateVisibility(self.CanvasPanelDetails, true)
@@ -62,6 +67,7 @@ function WBP_UITest_C:OnCheckStateChanged(SelectId)
     self.CanvasPanelDetails:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 function WBP_UITest_C:EscContent()
   self.CanvasPanelDetails:SetVisibility(UE.ESlateVisibility.Hidden)
   UpdateVisibility(self.ScrollBoxRoot, true)
@@ -70,4 +76,5 @@ function WBP_UITest_C:EscContent()
     UpdateVisibility(v, true)
   end
 end
+
 return WBP_UITest_C

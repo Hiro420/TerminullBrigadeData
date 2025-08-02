@@ -1,4 +1,5 @@
 LogicSurvivor = LogicSurvivor or {IsInit = false}
+
 function LogicSurvivor.Init()
   LogicSurvivor.UIWidget = nil
   LogicSurvivor.UIWidgetPath = "/Game/Rouge/UI/Survivor/WBP_SurvivorProgressBar.WBP_SurvivorProgressBar_C"
@@ -16,11 +17,13 @@ function LogicSurvivor.Init()
     end
   end
 end
+
 function LogicSurvivor.OnSpawnWaveStart(WaveIndex, SurvivorSpawnStage)
   local WaveIndex = WaveIndex + 1
   local RuleID = SurvivorSpawnStage.RuleID
   LogicSurvivor.ShowProgressBarByRule(WaveIndex, RuleID)
 end
+
 function LogicSurvivor.ShowProgressBarByRule(WaveIndex, RuleID)
   if LogicSurvivor.CanShowProgressBar(WaveIndex, RuleID) then
     LogicSurvivor.ChangeSurWidgetVis(WaveIndex, RuleID)
@@ -28,6 +31,7 @@ function LogicSurvivor.ShowProgressBarByRule(WaveIndex, RuleID)
     LogicSurvivor.ChangeInVis()
   end
 end
+
 function LogicSurvivor.CanShowProgressBar(WaveIndex, RuleID)
   if not WaveIndex then
     return false
@@ -52,6 +56,7 @@ function LogicSurvivor.CanShowProgressBar(WaveIndex, RuleID)
   end
   return rowWave.ShowProgressBar
 end
+
 function LogicSurvivor.GetWaveIds(RuleID)
   local result, row = GetRowData(DT.DT_SurvivorSpawnRule, RuleID)
   if not result then
@@ -62,6 +67,7 @@ function LogicSurvivor.GetWaveIds(RuleID)
   end
   return row.WaveIds:ToTable()
 end
+
 function LogicSurvivor.GetTotalWave(RuleID)
   local result, row = GetRowData(DT.DT_SurvivorSpawnRule, RuleID)
   if not result then
@@ -69,6 +75,7 @@ function LogicSurvivor.GetTotalWave(RuleID)
   end
   return row.TotalWaveForSur
 end
+
 function LogicSurvivor.GetWaveTypeByIndex(RuleID, WaveIndex)
   local result, row = GetRowData(DT.DT_SurvivorSpawnRule, RuleID)
   if not result then
@@ -87,11 +94,13 @@ function LogicSurvivor.GetWaveTypeByIndex(RuleID, WaveIndex)
   end
   return rowWave.WaveType
 end
+
 function LogicSurvivor.ChangeInVis()
   if LogicSurvivor.UIWidget and LogicSurvivor.UIWidget:IsValid() then
     LogicSurvivor.UIWidget:HideBar()
   end
 end
+
 function LogicSurvivor.ChangeSurWidgetVis(WaveIndex, RuleID)
   local WidgetClassObj = UE.UClass.Load(LogicSurvivor.UIWidgetPath)
   if not WidgetClassObj then
@@ -116,6 +125,7 @@ function LogicSurvivor.ChangeSurWidgetVis(WaveIndex, RuleID)
   end
   LogicSurvivor.UIWidget:ShowBar(WaveIndex, RuleID)
 end
+
 function LogicSurvivor.IsSurvivalMode()
   local LevelSubSystem = UE.URGGameLevelSystem.GetInstance(GameInstance)
   local WorldId = LevelSubSystem:GetGameMode()
@@ -126,6 +136,7 @@ function LogicSurvivor.IsSurvivalMode()
   end
   return IsSurvival
 end
+
 function LogicSurvivor.Clear()
   UnListenObjectMessage(GMP.MSG_LevelM_SpawnWave_Start)
   LogicSurvivor.UIWidget = nil

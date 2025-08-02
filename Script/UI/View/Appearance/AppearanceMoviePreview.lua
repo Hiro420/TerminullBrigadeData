@@ -1,12 +1,15 @@
 local AppearanceMoviePreview = UnLua.Class()
+
 function AppearanceMoviePreview:Construct()
   self.Overridden.Construct(self)
   self.BP_ButtonShowMovie.OnClicked:Add(self, self.ShowMovie)
 end
+
 function AppearanceMoviePreview:Destruct()
   self.BP_ButtonShowMovie.OnClicked:Remove(self, self.ShowMovie)
   self.Overridden.Destruct(self)
 end
+
 function AppearanceMoviePreview:UpdateMoviePreview(SkinId, AppearanceMovieList)
   self.CurSkinId = SkinId
   self.AppearanceMovieList = AppearanceMovieList
@@ -36,6 +39,7 @@ function AppearanceMoviePreview:UpdateMoviePreview(SkinId, AppearanceMovieList)
   self.RGTextTitle:SetText(heirloomMediaData.Title)
   return true
 end
+
 function AppearanceMoviePreview:ShowMovie()
   local skinView = UIMgr:GetLuaFromActiveView(ViewID.UI_Skin)
   if UE.RGUtil.IsUObjectValid(skinView) and skinView.SequencePlayer then
@@ -45,4 +49,5 @@ function AppearanceMoviePreview:ShowMovie()
     self.AppearanceMovieList:InitMovieList(self.CurSkinId)
   end
 end
+
 return AppearanceMoviePreview

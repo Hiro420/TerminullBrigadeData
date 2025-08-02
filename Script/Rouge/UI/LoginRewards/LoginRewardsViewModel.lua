@@ -7,15 +7,18 @@ local HttpService = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(RGUti
 local LoginRewardsViewModel = CreateDefaultViewModel()
 LoginRewardsViewModel.propertyBindings = {}
 LoginRewardsViewModel.subViewModels = {}
+
 function LoginRewardsViewModel:OnInit()
   self.Super.OnInit(self)
   self.bFirstShow = true
   EventSystem.AddListener(self, EventDef.Lobby.OnUpdateAllowMultiPlayerTeam, self.RequesRewards)
 end
+
 function LoginRewardsViewModel:OnShutdown()
   self.Super.OnShutdown(self)
   EventSystem.RemoveListener(EventDef.Lobby.OnUpdateAllowMultiPlayerTeam, self.RequesRewards, self)
 end
+
 function LoginRewardsViewModel:RequesRewards()
   local Path = "playergrowth/sevendaylogin/info"
   HttpCommunication.RequestByGet(Path, {
@@ -46,6 +49,7 @@ function LoginRewardsViewModel:RequesRewards()
     end
   }, false, true)
 end
+
 function LoginRewardsViewModel:HaveRewards()
   local ServerOpenTime = DataMgr:GetServerOpenTime()
   local LocalTime = tonumber(os.time())
@@ -55,4 +59,5 @@ function LoginRewardsViewModel:HaveRewards()
   end
   return Days > table.count(self.Rewards)
 end
+
 return LoginRewardsViewModel

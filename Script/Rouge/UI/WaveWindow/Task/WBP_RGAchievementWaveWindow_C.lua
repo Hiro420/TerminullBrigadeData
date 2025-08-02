@@ -1,13 +1,16 @@
 local AchievementData, AchievementItemData = require("Modules.Achievement.AchievementData")
 local WBP_RGAchievementWaveWindow_C = UnLua.Class()
+
 function WBP_RGAchievementWaveWindow_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_RGAchievementWaveWindow_C:SetWaveWindowParam(WaveWindowParamParam)
   local TaskGroup = WaveWindowParamParam.IntParam0
   local TaskId = WaveWindowParamParam.IntParam1
   self:Show(TaskGroup, TaskId)
 end
+
 function WBP_RGAchievementWaveWindow_C:Show(TaskGroup, TaskId)
   self:PlayAnimation(self.Ani_in)
   local fadeOutAniDuration = self.Ani_out:GetEndTime()
@@ -43,18 +46,23 @@ function WBP_RGAchievementWaveWindow_C:Show(TaskGroup, TaskId)
     HideOtherItem(self.HorizontalBoxStep, #tbTaskGroup[TaskGroup].tasklist + 1)
   end
 end
+
 function WBP_RGAchievementWaveWindow_C:PlayAniFadeOut()
   self:PlayAnimation(self.Ani_out)
 end
+
 function WBP_RGAchievementWaveWindow_C:K2_CloseWaveWindow()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.DelayFadeOutHandle) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(GameInstance, self.DelayFadeOutHandle)
     self.DelayFadeOutHandle = nil
   end
 end
+
 function WBP_RGAchievementWaveWindow_C:Destruct()
   self.Overridden.Destruct(self)
 end
+
 function WBP_RGAchievementWaveWindow_C:Hide()
 end
+
 return WBP_RGAchievementWaveWindow_C

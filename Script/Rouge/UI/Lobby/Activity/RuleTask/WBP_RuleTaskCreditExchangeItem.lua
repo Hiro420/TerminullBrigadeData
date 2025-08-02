@@ -1,8 +1,10 @@
 local WBP_RuleTaskCreditExchangeItem = UnLua.Class()
 local RuleTaskData = require("Modules.RuleTask.RuleTaskData")
+
 function WBP_RuleTaskCreditExchangeItem:Construct()
   self.WBP_Item.OnClicked:Add(self, self.BindOnMainButtonClicked)
 end
+
 function WBP_RuleTaskCreditExchangeItem:Show(TaskId, TaskGroupId)
   UpdateVisibility(self, true)
   self.TaskId = TaskId
@@ -22,6 +24,7 @@ function WBP_RuleTaskCreditExchangeItem:Show(TaskId, TaskGroupId)
   end
   self:RefreshStatus()
 end
+
 function WBP_RuleTaskCreditExchangeItem:RefreshStatus(...)
   if not self.IsShow then
     return
@@ -33,6 +36,7 @@ function WBP_RuleTaskCreditExchangeItem:RefreshStatus(...)
   UpdateVisibility(self.AchieveBottomPanel, State == ETaskState.GotAward or State == ETaskState.Finished)
   UpdateVisibility(self.UnAchieveBottomPanel, State ~= ETaskState.GotAward and State ~= ETaskState.Finished)
 end
+
 function WBP_RuleTaskCreditExchangeItem:BindOnMainButtonClicked()
   local State = RuleTaskData:GetTaskState(self.TaskId)
   if State ~= ETaskState.Finished then
@@ -40,10 +44,12 @@ function WBP_RuleTaskCreditExchangeItem:BindOnMainButtonClicked()
   end
   Logic_MainTask.ReceiveAward(self.TaskGroupId, self.TaskId)
 end
+
 function WBP_RuleTaskCreditExchangeItem:Hide(...)
   UpdateVisibility(self, false)
   self.TaskId = -1
   self.TaskGroupId = -1
   self.IsHide = false
 end
+
 return WBP_RuleTaskCreditExchangeItem

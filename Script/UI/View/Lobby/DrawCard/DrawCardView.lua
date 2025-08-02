@@ -19,6 +19,7 @@ local GetAppearanceActor = function(self)
   self.AppearanceActor = LogicLobby.GetAppearanceActor(self)
   return self.AppearanceActor
 end
+
 function DrawCardView:BindClickHandler()
   EventSystem.AddListener(self, EventDef.Lobby.UpdateResourceInfo, self.UpdateCost)
   self.ButtonOnce.OnClicked:Add(self, self.DrawOnce)
@@ -36,6 +37,7 @@ function DrawCardView:BindClickHandler()
   EventSystem.AddListener(self, EventDef.DrawCard.OnGetDrawCardResult, self.BindOnGetDrawCardResult)
   EventSystem.AddListener(self, EventDef.DrawCard.OnGetCardPoolList, self.BindOnGetCardPoolList)
 end
+
 function DrawCardView:UnBindClickHandler()
   EventSystem.RemoveListener(EventDef.Lobby.UpdateResourceInfo, self.UpdateCost)
   self.ButtonOnce.OnClicked:Remove(self, self.DrawOnce)
@@ -56,6 +58,7 @@ function DrawCardView:UnBindClickHandler()
   EventSystem.RemoveListener(EventDef.DrawCard.OnGetDrawCardResult, self.BindOnGetDrawCardResult, self)
   EventSystem.RemoveListener(EventDef.DrawCard.OnGetCardPoolList, self.BindOnGetCardPoolList, self)
 end
+
 function DrawCardView:OnInit()
   self.DataBindTable = {
     {
@@ -83,8 +86,10 @@ function DrawCardView:OnInit()
   }
   self.viewModel = UIModelMgr:Get("DrawCardViewModel")
 end
+
 function DrawCardView:OnDestroy()
 end
+
 function DrawCardView:OnShow(...)
   self.Super:AttachViewModel(self.viewModel, self.DataBindTable, self)
   self.bIsSequencePlaying = false
@@ -112,6 +117,7 @@ function DrawCardView:OnShow(...)
   end
   self:RefreshInteractTipWidgetBindEvent()
 end
+
 function DrawCardView:OnShowLink(LinkParams, FormView)
   if LinkParams and LinkParams:IsValidIndex(1) then
     self.CardPoolId = LinkParams:GetRef(1).IntParam
@@ -122,6 +128,7 @@ function DrawCardView:OnShowLink(LinkParams, FormView)
     self.bShowLink = true
   end
 end
+
 function DrawCardView:OnPreHide()
   self.Super:DetachViewModel(self.viewModel, self.DataBindTable, self)
   local AppearanceActorTemp = GetAppearanceActor(self)
@@ -141,6 +148,7 @@ function DrawCardView:OnPreHide()
   self.WBP_ChatView:UnfocusInput()
   LogicLobby.ShowOrHideDrawCardLevel(false)
 end
+
 function DrawCardView:OnHide()
   self.AnimMap = {}
   self:UnBindClickHandler()
@@ -150,6 +158,7 @@ function DrawCardView:OnHide()
   self.WBP_DrawMultiResultView:OnHide()
   self:HideCommonTips()
 end
+
 function DrawCardView:ListenForEscInputAction()
   if self.bIsDrawRequesting then
     print("ywtao,ListenForEscInputAction: bIsDrawRequesting is true")
@@ -171,25 +180,31 @@ function DrawCardView:ListenForEscInputAction()
     self.WBP_DrawCardPoolDetailView:HideSelf()
   end
 end
+
 function DrawCardView:DrawOnce()
   self:Draw(1)
 end
+
 function DrawCardView:DrawMulti()
   self:Draw(MultiDrawTimes)
 end
+
 function DrawCardView:BtnShowPrivilege_1_OnHover()
-  self.TipsWidget = ShowCommonTips(nil, self.Btn_ShowPrivilege_1, self.WBP_CommonTips, nil, nil, nil, UE.FVector2D(-40, 0))
+  self.TipsWidget = ShowCommonTips(nil, self.Btn_ShowPrivilege_1, self.WBP_CommonTips)
   self.TipsWidget:ShowTipsByItemID(self.RightResPrivilegeId)
 end
+
 function DrawCardView:BtnShowPrivilege_2_OnHover()
-  self.TipsWidget = ShowCommonTips(nil, self.Btn_ShowPrivilege_2, self.WBP_CommonTips, nil, nil, nil, UE.FVector2D(-40, 0))
+  self.TipsWidget = ShowCommonTips(nil, self.Btn_ShowPrivilege_2, self.WBP_CommonTips)
   self.TipsWidget:ShowTipsByItemID(self.LeftResPrivilegeId)
 end
+
 function DrawCardView:HideCommonTips()
   if self.TipsWidget then
     UpdateVisibility(self.TipsWidget, false)
   end
 end
+
 function DrawCardView:Draw(DrawTimes, CallBack)
   if self.bIsDrawRequesting then
     print("ywtao\239\188\140\230\138\189\229\141\161\232\175\183\230\177\130\230\173\163\229\156\168\232\191\155\232\161\140\228\184\173\239\188\140\231\166\129\230\173\162\232\191\158\231\130\185")
@@ -207,6 +222,7 @@ function DrawCardView:Draw(DrawTimes, CallBack)
   self.bIsDrawRequesting = true
   DrawCardHandler.RequestDrawCardToServer(self.CardPoolId, DrawTimes)
 end
+
 function DrawCardView:BindOnGetDrawCardResult(DrawCardResult)
   self.bIsDrawRequesting = false
   if nil == DrawCardResult then
@@ -226,6 +242,7 @@ function DrawCardView:BindOnGetDrawCardResult(DrawCardResult)
   end)
   self:RequestHeroInfo(DrawCardResult.Resources)
 end
+
 function DrawCardView:BindOnGetCardPoolList(GachaList)
   if nil == GachaList then
     print("ywtao,DrawCardView:BindOnGetCardPoolList: JsonTable == nil")
@@ -247,6 +264,7 @@ function DrawCardView:BindOnGetCardPoolList(GachaList)
   EventSystem.Invoke(EventDef.DrawCard.OnChangeDrawCardPoolSelected, self.CardPoolId)
   HideOtherItem(self.ScrollBox_CardPoolList, #ServerPoolList + 1)
 end
+
 function DrawCardView:RequestHeroInfo(Resources)
   local bNeedRequestHeroInfo = false
   for i, v in ipairs(Resources) do
@@ -258,6 +276,7 @@ function DrawCardView:RequestHeroInfo(Resources)
     LogicRole:RequestMyHeroInfoToServer()
   end
 end
+
 function DrawCardView:DrawResultOnce(Resource, ParentView)
   self.Canvas_Main:SetVisibility(UE.ESlateVisibility.Collapsed)
   if ParentView == self then
@@ -265,11 +284,13 @@ function DrawCardView:DrawResultOnce(Resource, ParentView)
   end
   self.WBP_DrawOnceResultView:InitInfo(Resource, self.CardPoolId, ParentView)
 end
+
 function DrawCardView:DrawResultMulti(ResourceList)
   self.Canvas_Main:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.ViewType = DrawCardViewType.DrawCardMulti
   self.WBP_DrawMultiResultView:InitInfo(ResourceList, self.CardPoolId, self.CheckBox_SkipAni:IsChecked(), self)
 end
+
 function DrawCardView:ShowCardPoolDetail()
   self.Canvas_Main:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.WBP_DrawCardPoolDetailView:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -277,11 +298,13 @@ function DrawCardView:ShowCardPoolDetail()
   self.ViewType = DrawCardViewType.DrawCardPoolDetail
   self.WBP_DrawCardPoolDetailView:InitCardPoolInfo(self.CardPoolId, self)
 end
+
 function DrawCardView:BindOnExchangeButtonClicked()
   ComLink(1017, function()
     self:ListenForEscInputAction()
   end)
 end
+
 function DrawCardView:InitInfoByCardPoolId(CardPoolId)
   self.Canvas_Main:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.CardPoolId = CardPoolId
@@ -309,6 +332,7 @@ function DrawCardView:InitInfoByCardPoolId(CardPoolId)
     self:RefreshHeroPicture()
   end
 end
+
 function DrawCardView:UpdateCost()
   local CostResId, CostNum, bIsEnough = self.viewModel:GetCost(1, self.CardPoolId)
   local ResNum = DataMgr.GetPackbackNumById(CostResId)
@@ -319,9 +343,11 @@ function DrawCardView:UpdateCost()
     self.WBP_DrawOnceResultView:UpdateCost()
   end
 end
+
 function DrawCardView:BindFadeOutFinished()
   self.viewModel:HideSelf()
 end
+
 function DrawCardView:UpdateCardGuarantList(GuarantList)
   local _index = 0
   local TotalGuarantTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGachaSafeguard)
@@ -342,10 +368,12 @@ function DrawCardView:UpdateCardGuarantList(GuarantList)
   HideOtherItem(self.ScrollBox_GuarantList, _index + 1)
   self.WBP_DrawMultiResultView:UpdateCardGuarantList(GuarantStrList)
 end
+
 function DrawCardView:UpdateOpenCount(OpenCount)
   local CountDownTxt = UE.FTextFormat(self.CountDownTextFmt, tostring(OpenCount))
   self.RGRichTextBlock_OpenCount:SetText(CountDownTxt)
 end
+
 function DrawCardView:UpdateCardPoolEndTime(EndTime)
   local year, month, day, hour, minute, second = EndTime:match("(%d+)-(%d+)-(%d+) (%d+):(%d+):(%d+)")
   year = tonumber(year)
@@ -365,9 +393,11 @@ function DrawCardView:UpdateCardPoolEndTime(EndTime)
   local timestamp = os.time(timeTable)
   self.WBP_ItemCountdown:SetCountdownInfo(timestamp)
 end
+
 function DrawCardView:BindOnChangeDrawCardPoolSelected(PoolId)
   self:InitInfoByCardPoolId(PoolId)
 end
+
 function DrawCardView:PlaySeq(SoftObjPath)
   local seqSubSys = UE.URGSequenceSubsystem.GetInstance(self)
   if not seqSubSys then
@@ -395,16 +425,19 @@ function DrawCardView:PlaySeq(SoftObjPath)
   self.SequencePlayer.OnFinished:Add(self, self.LevelSequenceFinish)
   self.SequencePlayer:Play()
 end
+
 function DrawCardView:LevelSequencePlay()
   EventSystem.Invoke(EventDef.DrawCard.OnDrawCardSequencePlay)
   self:ChangeInteractTipWidgetStatus("Skip")
   self.bIsSequencePlaying = true
 end
+
 function DrawCardView:LevelSequenceFinish()
   self:SequenceFinished(true)
   EventSystem.Invoke(EventDef.DrawCard.OnDrawCardSequenceFinished)
   self.bIsSequencePlaying = false
 end
+
 function DrawCardView:SequenceFinished(SequenceFinish)
   if self.SequencePlayer then
     self.SequencePlayer:K2_DestroyActor()
@@ -413,6 +446,7 @@ function DrawCardView:SequenceFinished(SequenceFinish)
     self.SequenceActor = nil
   end
 end
+
 function DrawCardView:PlayAnimationIn()
   if not self.CardPoolId then
     return
@@ -422,7 +456,15 @@ function DrawCardView:PlayAnimationIn()
     return
   end
   self:PlayAnimation(self.Anim_IN)
+  self:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
 end
+
+function DrawCardView:OnAnimationFinished(Animation)
+  if Animation == self.Anim_IN then
+    self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
+  end
+end
+
 function DrawCardView:RefreshHeroPicture()
   local PoolInfo = self.viewModel:GetPoolInfoByPoolId(self.CardPoolId)
   if not PoolInfo then
@@ -440,17 +482,20 @@ function DrawCardView:RefreshHeroPicture()
     end
   end
 end
+
 function DrawCardView:ListenForContinueInputAction()
   if not self.bIsSequencePlaying and not self.WBP_DrawMultiResultView.bShowRewardFinished then
     self.WBP_DrawOnceResultView:HideSelf()
     self.WBP_DrawMultiResultView:ContinueInitInfo()
   end
 end
+
 function DrawCardView:ListenForSkipInputAction()
   if self.bIsSequencePlaying then
     self:LevelSequenceFinish()
   end
 end
+
 function DrawCardView:ChangeInteractTipWidgetStatus(Status)
   self.RGStateController_InteractTipWidget:ChangeStatus(Status)
   UE.URGBlueprintLibrary.SetTimerForNextTick(GameInstance, {
@@ -460,6 +505,7 @@ function DrawCardView:ChangeInteractTipWidgetStatus(Status)
     end
   })
 end
+
 function DrawCardView:RefreshInteractTipWidgetBindEvent()
   if not self.WBP_InteractTipWidget_Esc:IsVisible() then
     self.WBP_InteractTipWidget_Esc:UnBindInteractAndClickEvent(self, self.ListenForEscInputAction)
@@ -480,11 +526,15 @@ function DrawCardView:RefreshInteractTipWidgetBindEvent()
     self.WBP_InteractTipWidget_Skip:BindInteractAndClickEvent(self, self.ListenForSkipInputAction)
   end
 end
+
 function DrawCardView:BindOnRuleDescriptionButtonClicked()
   UIMgr:Show(ViewID.UI_DrawCardRule)
 end
+
 function DrawCardView:BindOnRuleDescriptionButtonHovered()
 end
+
 function DrawCardView:BindOnRuleDescriptionButtonUnhovered()
 end
+
 return DrawCardView

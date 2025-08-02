@@ -58,6 +58,7 @@ local PandoraData = {
   AdList = {},
   DisruptiveUI = {}
 }
+
 function PandoraData:GetAnnounceAppId()
   local openAppId = ""
   if UE.URGPlatformFunctionLibrary.IsIntlEdition() then
@@ -77,6 +78,7 @@ function PandoraData:GetAnnounceAppId()
   end
   return openAppId
 end
+
 function PandoraData:GetEventAppId()
   local openAppId = ""
   if UE.URGPlatformFunctionLibrary.IsIntlEdition() then
@@ -96,6 +98,7 @@ function PandoraData:GetEventAppId()
   end
   return openAppId
 end
+
 function PandoraData:GetPayAppId()
   local openAppId = ""
   if UE.URGPlatformFunctionLibrary.IsIntlEdition() then
@@ -115,6 +118,7 @@ function PandoraData:GetPayAppId()
   end
   return openAppId
 end
+
 function PandoraData:GetProductInfoAppId()
   local openAppId = ""
   for key, SingleADInfo in pairs(PandoraData.AdList) do
@@ -125,6 +129,7 @@ function PandoraData:GetProductInfoAppId()
   end
   return openAppId
 end
+
 function PandoraData:GetCarouselImageAppId()
   local openAppId
   if UE.URGPlatformFunctionLibrary.IsIntlEdition() then
@@ -144,6 +149,7 @@ function PandoraData:GetCarouselImageAppId()
   end
   return openAppId
 end
+
 function PandoraData:GetTreasureAppId()
   local openAppId
   if UE.URGPlatformFunctionLibrary.IsIntlEdition() then
@@ -163,15 +169,19 @@ function PandoraData:GetTreasureAppId()
   end
   return openAppId
 end
+
 function PandoraData:ClearData()
   PandoraData.AdList = {}
 end
+
 function PandoraData:AddAdInfo(AdId, AdInfo)
   PandoraData.AdList[AdId] = AdInfo
 end
+
 function PandoraData:HasApp()
   return table.count(PandoraData.AdList) > 0
 end
+
 function PandoraData:ShowPandoraPanle(AppId)
   local Config = {}
   if UE.URGPlatformFunctionLibrary.IsIntlEdition() then
@@ -186,6 +196,7 @@ function PandoraData:ShowPandoraPanle(AppId)
   end
   return false
 end
+
 function PandoraData:IsDisruptiveUI(AppId)
   local Config = {}
   if UE.URGPlatformFunctionLibrary.IsIntlEdition() then
@@ -200,4 +211,5 @@ function PandoraData:IsDisruptiveUI(AppId)
   end
   return false
 end
+
 return PandoraData

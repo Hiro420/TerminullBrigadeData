@@ -1,4 +1,5 @@
 local WBP_MainTaskItem_C = UnLua.Class()
+
 function WBP_MainTaskItem_C:GotoMainTaskDetail()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.TASK) then
@@ -6,12 +7,14 @@ function WBP_MainTaskItem_C:GotoMainTaskDetail()
   end
   UIMgr:Show(ViewID.UI_MainTaskDetail, true, self.GroupId)
 end
+
 function WBP_MainTaskItem_C:Construct()
   self.Btn.OnClicked:Clear()
   self.Btn.OnClicked:Add(self, self.GotoMainTaskDetail)
   self.ReceiveAward.OnClicked:Clear()
   self.ReceiveAward.OnClicked:Add(self, self.GotoMainTaskDetail)
 end
+
 function WBP_MainTaskItem_C:InitMainTaskItem(ActiveGroupId)
   local TaskGroupData = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskGroupData)
   local ActiveTask = Logic_MainTask.GetGroupActiveTask(ActiveGroupId)
@@ -40,4 +43,5 @@ function WBP_MainTaskItem_C:InitMainTaskItem(ActiveGroupId)
   UpdateVisibility(self.Overlay_UnActivated, 0 == ActiveTask.state)
   UpdateVisibility(self.Overlay_Finish, 2 == ActiveTask.state and Logic_MainTask.HaveReceiveAward(tonumber(ActiveTask.taskID)))
 end
+
 return WBP_MainTaskItem_C

@@ -1,8 +1,10 @@
 local WBP_SkipWidget_C = UnLua.Class()
 local Frequency = 0.05
 local MatParamValue = "percent"
+
 function WBP_SkipWidget_C:Construct()
 end
+
 function WBP_SkipWidget_C:Init(CountDownTime, FinishCallback, FinishCallbackObj)
   if self.TeamTimer and UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TeamTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.TeamTimer)
@@ -31,11 +33,13 @@ function WBP_SkipWidget_C:Init(CountDownTime, FinishCallback, FinishCallbackObj)
   end
   self.WBP_InteractTipWidget.OnMainButtonClicked:Add(self, self.OnJumpClick)
 end
+
 function WBP_SkipWidget_C:OnJumpClick()
   if self.FinishCallback and self.FinishCallbackObj then
     self.FinishCallback(self.FinishCallbackObj)
   end
 end
+
 function WBP_SkipWidget_C:UpdateCountDown()
   self.CountDownTime = self.CountDownTime - 1
   local CountDownTimeStr = string.format("%02dS", self.CountDownTime)
@@ -44,6 +48,7 @@ function WBP_SkipWidget_C:UpdateCountDown()
     self.FinishCallback(self.FinishCallbackObj)
   end
 end
+
 function WBP_SkipWidget_C:UpdateCountDownCircle()
   self.Timer = self.Timer + Frequency
   local Mat = self.URGImageCircle:GetDynamicMaterial()
@@ -52,6 +57,7 @@ function WBP_SkipWidget_C:UpdateCountDownCircle()
     Mat:SetScalarParameterValue(MatParamValue, PercentValue)
   end
 end
+
 function WBP_SkipWidget_C:Reset()
   if self.TeamTimer and UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TeamTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.TeamTimer)
@@ -66,7 +72,9 @@ function WBP_SkipWidget_C:Reset()
   self.FinishCallback = nil
   self.FinishCallbackObj = nil
 end
+
 function WBP_SkipWidget_C:Destruct()
   self.WBP_InteractTipWidget.OnMainButtonClicked:Remove(self, self.OnJumpClick)
 end
+
 return WBP_SkipWidget_C

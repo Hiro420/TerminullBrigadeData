@@ -4,6 +4,7 @@ local CostTextColor = {
   Yellow = UE.FLinearColor(0.304987, 0.116971, 0.025187, 1.0),
   Black = UE.FLinearColor(0, 0, 0, 1.0)
 }
+
 function WBP_GRSingleModType_C:UpdateSingleModType(ModIdList, ModName, ModIcon)
   local padding = UE.FMargin()
   if self.IsLegend then
@@ -19,4 +20,5 @@ function WBP_GRSingleModType_C:UpdateSingleModType(ModIdList, ModName, ModIcon)
   end
   self.WBP_ModInfoBox:UpdateModInfoBox(ModIdList, self.IsLegend, padding)
 end
+
 return WBP_GRSingleModType_C

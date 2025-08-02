@@ -3,10 +3,13 @@ local DefaultFormat = NSLOCTEXT("WBP_ItemCountdown_C", "DefaultFormat", "00\229\
 local DHFormat = NSLOCTEXT("WBP_ItemCountdown_C", "DHFormat", "{0}\229\164\169")
 local HMFormat = NSLOCTEXT("WBP_ItemCountdown_C", "HMFormat", "{0}\229\176\143\230\151\182")
 local MSFormat = NSLOCTEXT("WBP_ItemCountdown_C", "MSFormat", "{0}\229\136\134")
+
 function WBP_ItemCountdown_C:Construct()
 end
+
 function WBP_ItemCountdown_C:Destruct()
 end
+
 function WBP_ItemCountdown_C:SetCountdownInfo(EndTime)
   self.CurTime = os.time()
   if EndTime < self.CurTime then
@@ -28,6 +31,7 @@ function WBP_ItemCountdown_C:SetCountdownInfo(EndTime)
     }, 1, true)
   end
 end
+
 function WBP_ItemCountdown_C:SetCountdownText()
   if self.TimeDifference == nil then
     return
@@ -51,4 +55,5 @@ function WBP_ItemCountdown_C:SetCountdownText()
   end
   self.TextBlock:SetText(UE.FTextFormat(MSFormat(), math.floor(self.TimeDifference / 60)))
 end
+
 return WBP_ItemCountdown_C

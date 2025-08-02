@@ -1,4 +1,5 @@
 local WBP_Item_C = UnLua.Class()
+
 function WBP_Item_C:Construct()
   if self.MainBtnOverride then
     self.MainBtnOverride.OnClicked:Add(self, self.OnMainButtonClicked)
@@ -10,6 +11,7 @@ function WBP_Item_C:Construct()
     self.MainBtn.OnUnhovered:Add(self, self.OnMainButtonUnhovered)
   end
 end
+
 function WBP_Item_C:Destruct()
   if self.MainBtnOverride then
     self.MainBtnOverride.OnClicked:Remove(self, self.OnMainButtonClicked)
@@ -21,6 +23,7 @@ function WBP_Item_C:Destruct()
     self.MainBtn.OnUnhovered:Remove(self, self.OnMainButtonUnhovered)
   end
 end
+
 function WBP_Item_C:InitItem(ItemId, Num, IsInscription, bShowName)
   self:Init()
   self:InitItemProEff(ItemId)
@@ -75,6 +78,7 @@ function WBP_Item_C:InitItem(ItemId, Num, IsInscription, bShowName)
     UpdateVisibility(self.NumPanel, false)
   end
 end
+
 function WBP_Item_C:InitItemProEff(ItemID)
   local ItemId = tonumber(ItemID)
   if not ItemId then
@@ -98,12 +102,15 @@ function WBP_Item_C:InitItemProEff(ItemID)
   UpdateVisibility(self.AutoLoad_ComItemProEff_1, true)
   self.AutoLoad_ComItemProEff_1.ChildWidget:InitComProEff(ItemId)
 end
+
 function WBP_Item_C:UpdateNum(InNum)
   self.Text_Num:SetText(InNum)
 end
+
 function WBP_Item_C:UpdateBrush(Icon)
   SetImageBrushBySoftObject(self.Img_Icon, Icon)
 end
+
 function WBP_Item_C:BindOnMainButtonClicked(Delegate, Target)
   self.OnClicked:Clear()
   if Target then
@@ -112,32 +119,40 @@ function WBP_Item_C:BindOnMainButtonClicked(Delegate, Target)
     self.OnClicked:Add(self, Delegate)
   end
 end
+
 function WBP_Item_C:BindOnMainButtonHovered(Delegate)
   self.OnHovered:Clear()
   self.OnHovered:Add(self, Delegate)
 end
+
 function WBP_Item_C:BindOnMainButtonUnHovered(Delegate)
   self.OnUnHovered:Clear()
   self.OnUnHovered:Add(self, Delegate)
 end
+
 function WBP_Item_C:SetSel(bSel)
   UpdateVisibility(self.Overlay_Sel, bSel)
 end
+
 function WBP_Item_C:SetLock(bLock)
   UpdateVisibility(self.Overlay_Lock, bLock)
 end
+
 function WBP_Item_C:SetMark(bMark)
   UpdateVisibility(self.Overlay_Mark, bMark)
 end
+
 function WBP_Item_C:SetOwn(bOwn)
   UpdateVisibility(self.Canvas_Own, bOwn)
 end
+
 function WBP_Item_C:SetDecompose(bDecompose, DecomposeNum, DecomposeId)
   UpdateVisibility(self.Canvas_Decompose, bDecompose)
   if bDecompose then
     self.WBP_Price_Decompose:SetPrice(DecomposeNum, DecomposeNum, DecomposeId)
   end
 end
+
 function WBP_Item_C:SetQuality(Quality)
   self.Rare = Quality
   if self.Config and self.Config.bUseQualityBg and self.Config.QualityBgConfig then
@@ -154,22 +169,27 @@ function WBP_Item_C:SetQuality(Quality)
     self.Img_Quality:SetColorAndOpacity(Info.DisplayNameColor.SpecifiedColor)
   end
 end
+
 function WBP_Item_C:OnMainButtonClicked()
   self.OnClicked:Broadcast()
   PlaySound2DEffect(self.Config.ClickAkName, "WBP_Item_C OnMainButtonClicked")
 end
+
 function WBP_Item_C:OnMainButtonHovered()
   UpdateVisibility(self.Overlay_Hover, true)
   self.OnHovered:Broadcast()
   PlaySound2DEffect(self.Config.HoverAkName, "WBP_Item_C OnMainButtonHovered")
 end
+
 function WBP_Item_C:OnMainButtonUnhovered()
   UpdateVisibility(self.Overlay_Hover, false)
   self.OnUnHovered:Broadcast()
 end
+
 function WBP_Item_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_Item_C:GetToolTipWidget()
   if not self.TipsClass then
     return
@@ -180,13 +200,16 @@ function WBP_Item_C:GetToolTipWidget()
   end
   return Widget
 end
+
 function WBP_Item_C:UpdateReceivedPanelVis(IsShow)
   UpdateVisibility(self.CanvasPanel_Received, IsShow)
 end
+
 function WBP_Item_C:ShowOrHideLoopAnimWidget(IsShow)
   UpdateVisibility(self.WBP_RGMaskWidget_loop, IsShow)
   UpdateVisibility(self.CanvasPanel_loop, IsShow)
 end
+
 function WBP_Item_C:SetTargetExpirationTime(expireAt)
   self.expireAt = expireAt
   self.WBP_CommonCountdown:SetItemId(self.ItemId)
@@ -203,6 +226,16 @@ function WBP_Item_C:SetTargetExpirationTime(expireAt)
     self.WBP_CommonCountdown:SetTargetTimestamp(nil)
   end
 end
+
+function WBP_Item_C:SetTargetTimestampById(Id, resourceID)
+  if nil ~= Id and Id > 0 then
+    UpdateVisibility(self.Overlay_Countdown, true)
+    self.WBP_CommonCountdown:SetTargetTimestampById(Id, resourceID)
+  else
+    UpdateVisibility(self.Overlay_Countdown, false)
+  end
+end
+
 function WBP_Item_C:ShowSpecialTag(ItemId, expireAt)
   local TableName = TableNames.TBGeneral
   local TotalResourceTable = LuaTableMgr.GetLuaTableByName(TableName)
@@ -234,4 +267,5 @@ function WBP_Item_C:ShowSpecialTag(ItemId, expireAt)
     self.ShowTag:SetText(self.CharacterSkinText)
   end
 end
+
 return WBP_Item_C

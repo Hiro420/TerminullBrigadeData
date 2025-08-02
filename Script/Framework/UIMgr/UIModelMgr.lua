@@ -9,6 +9,7 @@ local UIModelMgr = {
 local ErrorFunc = function(err)
   UnLua.LogError("UIModelMgr ErrorFunc:", err)
 end
+
 function UIModelMgr:Init()
   if self.bInited then
     return
@@ -26,11 +27,13 @@ function UIModelMgr:Init()
   end, 0)
   self:RegisterAllViewModels()
 end
+
 function UIModelMgr:Shutdown()
   self:Tick()
   GlobalTimer.DeleteTickTimer(self.timerKey)
   self:UnRegisterAllViewModels()
 end
+
 function UIModelMgr:ClearDirtyViewModel()
   UIMgr:ClearAllViews()
   if nil ~= UIModelDef then
@@ -57,11 +60,13 @@ function UIModelMgr:ClearDirtyViewModel()
     end
   end
 end
+
 function UIModelMgr:OnClear()
   for _, v in pairs(self.allViewModels) do
     v:OnClear()
   end
 end
+
 function UIModelMgr:Tick(deltaTime)
   for k, v in pairs(self.allTickViewModels) do
     if v then
@@ -73,12 +78,15 @@ function UIModelMgr:Tick(deltaTime)
     self.pendingBatchNotifications[viewModel] = nil
   end
 end
+
 function UIModelMgr:AddBatchNotifications(viewModel)
   self.pendingBatchNotifications[viewModel] = true
 end
+
 function UIModelMgr:RemoveBatchNotifications(viewModel)
   self.pendingBatchNotifications[viewModel] = nil
 end
+
 function UIModelMgr:RegisterAllViewModels()
   self.allTickViewModels = {}
   if nil ~= UIModelDef then
@@ -95,6 +103,7 @@ function UIModelMgr:RegisterAllViewModels()
     end
   end
 end
+
 function UIModelMgr:UnRegisterAllViewModels()
   for k, v in pairs(self.allViewModels) do
     v:OnShutdown()
@@ -102,15 +111,18 @@ function UIModelMgr:UnRegisterAllViewModels()
   self.allViewModels = {}
   self.allTickViewModels = {}
 end
+
 function UIModelMgr:Get(viewname)
   if self.allViewModels == nil then
     return nil
   end
   return self.allViewModels[viewname]
 end
+
 function UIModelMgr:UnRegisterAllPropertyChanged()
   for k, v in pairs(self.allViewModels) do
     v:UnRegisterAllPropertyChanged()
   end
 end
+
 _G.UIModelMgr = _G.UIModelMgr or UIModelMgr

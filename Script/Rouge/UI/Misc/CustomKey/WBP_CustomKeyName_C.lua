@@ -1,11 +1,14 @@
 local WBP_CustomKeyName_C = UnLua.Class()
+
 function WBP_CustomKeyName_C:Construct()
   self:InitInfo()
 end
+
 function WBP_CustomKeyName_C:SetCustomKeyConfig(KeyRowName)
   self.KeyRowName = KeyRowName
   self:InitInfo()
 end
+
 function WBP_CustomKeyName_C:SetCustomKeyDisplayInfoByRowNameAry(KMKeyRowNameAry, PadKeyRowNameAry)
   local customKeyDisplayInfo = self.CustomKeyDisplayInfo
   customKeyDisplayInfo.KMKeyRowNameList:Clear()
@@ -24,6 +27,7 @@ function WBP_CustomKeyName_C:SetCustomKeyDisplayInfoByRowNameAry(KMKeyRowNameAry
   end
   self:SetCustomKeyDisplayInfo(customKeyDisplayInfo)
 end
+
 function WBP_CustomKeyName_C:SetStyleConfig(BottomIcon, IconSize, BottomColorAndOpacity, BottomIconSize, TextColorAndOpacity)
   if BottomIcon then
     self.BottomIcon = BottomIcon
@@ -41,22 +45,27 @@ function WBP_CustomKeyName_C:SetStyleConfig(BottomIcon, IconSize, BottomColorAnd
     self.TextColorAndOpacity = TextColorAndOpacity
   end
 end
+
 function WBP_CustomKeyName_C:SetBottomOpacity(Opacity)
   self.FirstKeyName:SetBottomOpacity(Opacity)
   self.SecondKeyName:SetBottomOpacity(Opacity)
 end
+
 function WBP_CustomKeyName_C:SetTextOpacity(Opacity)
   self.FirstKeyName:SetTextOpacity(Opacity)
   self.SecondKeyName:SetTextOpacity(Opacity)
 end
+
 function WBP_CustomKeyName_C:SetTextColorAndOpacity(ColorAndOpacity)
   self.FirstKeyName:SetTextColorAndOpacity(ColorAndOpacity)
   self.SecondKeyName:SetTextColorAndOpacity(ColorAndOpacity)
 end
+
 function WBP_CustomKeyName_C:SetIconColorAndOpacity(ColorAndOpacity)
   self.FirstKeyName:SetIconColorAndOpacity(ColorAndOpacity)
   self.SecondKeyName:SetIconColorAndOpacity(ColorAndOpacity)
 end
+
 function WBP_CustomKeyName_C:Hide()
   UpdateVisibility(self, false)
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
@@ -68,6 +77,7 @@ function WBP_CustomKeyName_C:Hide()
   self.FirstKeyName:Hide()
   self.SecondKeyName:Hide()
 end
+
 function WBP_CustomKeyName_C:PlayHoverOrUnhoverAnim(IsHover)
   if IsHover then
     self:PlayAnimationForward(self.Ani_hover_in)
@@ -75,6 +85,7 @@ function WBP_CustomKeyName_C:PlayHoverOrUnhoverAnim(IsHover)
     self:PlayAnimationForward(self.Ani_hover_out)
   end
 end
+
 function WBP_CustomKeyName_C:InitInfo()
   UpdateVisibility(self, true)
   self:StopAllAnimations()
@@ -88,9 +99,11 @@ function WBP_CustomKeyName_C:InitInfo()
   end
   self:ChangeCustomKeyAppearance()
 end
+
 function WBP_CustomKeyName_C:BindOnInputMethodChanged(InputType)
   self:ChangeCustomKeyAppearance()
 end
+
 function WBP_CustomKeyName_C:ChangeCustomKeyAppearance()
   local TargetKeyRowNameList = {}
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
@@ -135,7 +148,9 @@ function WBP_CustomKeyName_C:ChangeCustomKeyAppearance()
     end
   end
 end
+
 function WBP_CustomKeyName_C:Destruct()
   self:Hide()
 end
+
 return WBP_CustomKeyName_C

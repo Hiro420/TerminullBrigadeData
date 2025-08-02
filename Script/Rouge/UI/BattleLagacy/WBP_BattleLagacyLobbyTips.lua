@@ -3,9 +3,11 @@ local BattleLagacyModule = require("Modules.BattleLagacy.BattleLagacyModule")
 local BattleLagacyData = require("Modules.BattleLagacy.BattleLagacyData")
 local WBP_BattleLagacyLobbyTips = UnLua.Class()
 local ShowDetailsName = "ViewFullAttributeList"
+
 function WBP_BattleLagacyLobbyTips:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_BattleLagacyLobbyTips:InitBattleLagacyLobbyTips(CurBattleLagacyData, ParentView)
   UpdateVisibility(self, true)
   self.CurBattleLagacyData = CurBattleLagacyData
@@ -57,6 +59,7 @@ function WBP_BattleLagacyLobbyTips:InitBattleLagacyLobbyTips(CurBattleLagacyData
     UpdateVisibility(self.TextGroupName, false)
   end
 end
+
 function WBP_BattleLagacyLobbyTips:ListenForShowDetailsInputAction()
   if not self.ParentView then
     return
@@ -66,12 +69,14 @@ function WBP_BattleLagacyLobbyTips:ListenForShowDetailsInputAction()
   end
   self.ParentView:ShowLagacyModifyDetailsTips(true, self.CurBattleLagacyData)
 end
+
 function WBP_BattleLagacyLobbyTips:ListenForHideDetailsInputAction()
   if not self.ParentView then
     return
   end
   self.ParentView:ShowLagacyModifyDetailsTips(false)
 end
+
 function WBP_BattleLagacyLobbyTips:Hide()
   if IsListeningForInputAction(self, ShowDetailsName) then
     StopListeningForInputAction(self, ShowDetailsName, UE.EInputEvent.IE_Pressed)
@@ -81,7 +86,9 @@ function WBP_BattleLagacyLobbyTips:Hide()
   self.CurBattleLagacyData = nil
   UpdateVisibility(self, false)
 end
+
 function WBP_BattleLagacyLobbyTips:Destruct()
   self.Overridden.Destruct(self)
 end
+
 return WBP_BattleLagacyLobbyTips

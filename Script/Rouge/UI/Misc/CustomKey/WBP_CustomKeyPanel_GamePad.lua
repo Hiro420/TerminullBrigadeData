@@ -1,9 +1,11 @@
 local WBP_CustomKeyPanel_GamePad = UnLua.Class()
+
 function WBP_CustomKeyPanel_GamePad:SaveSettings()
   self:SaveKeyMappings()
   local GameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
   GameUserSettings:SaveSettings()
 end
+
 function WBP_CustomKeyPanel_GamePad:SaveKeyMappings()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -38,16 +40,20 @@ function WBP_CustomKeyPanel_GamePad:SaveKeyMappings()
   LogicGameSetting.ClearPreCustomKeyList()
   EventSystem.Invoke(EventDef.GameSettings.OnKeyChanged, ChangedKeyRowNameList)
 end
+
 function WBP_CustomKeyPanel_GamePad:CancelSaveSettings()
   LogicGameSetting.ClearPreCustomKeyList()
 end
+
 function WBP_CustomKeyPanel_GamePad:ChangeFocusToFirstItem()
   local KeyItemList = self.AllLabelKeyItemList[self.AllKeyRowNames[1]]
   EventSystem.Invoke(EventDef.GameSettings.OnFocusGamePadCustomKeyItem, self.AllKeyRowNames[1], KeyItemList[1])
 end
+
 function WBP_CustomKeyPanel_GamePad:DoCustomNavigation(Type)
   EventSystem.Invoke(EventDef.GameSettings.OnItemNavigation, Type)
 end
+
 function WBP_CustomKeyPanel_GamePad:Show()
   LogicGameSetting.ClearPreCustomKeyList()
   self.AllLabelRowNames = GetAllRowNames(DT.DT_CustomKeyLabel)
@@ -94,6 +100,7 @@ function WBP_CustomKeyPanel_GamePad:Show()
     SetImageBrushBySoftObject(self.Img_Icon, TargetIconSoftObj)
   end
 end
+
 function WBP_CustomKeyPanel_GamePad:RefreshGamepadInfo()
   local AllChildren = self.CanvasPanel_Gamepad:GetAllChildren()
   for key, SingleItem in pairs(AllChildren) do
@@ -102,6 +109,7 @@ function WBP_CustomKeyPanel_GamePad:RefreshGamepadInfo()
     end
   end
 end
+
 function WBP_CustomKeyPanel_GamePad:BindOnRestoreButtonClicked()
   local GameUserSetting = UE.URGGameUserSettings.GetRGGameUserSettings()
   local UserId = DataMgr.GetUserId()
@@ -128,6 +136,7 @@ function WBP_CustomKeyPanel_GamePad:BindOnRestoreButtonClicked()
   EnhancedInputLocalPlayerSystem:RemoveAllPlayerMappedKeys(Options)
   EventSystem.Invoke(EventDef.GameSettings.OnKeyChanged, ChangedKeyRowNameList)
 end
+
 function WBP_CustomKeyPanel_GamePad:BindOnGamepadCustomKeyNavitionUp(LabelItemName)
   local CurLabelIndex = table.IndexOf(self.AllKeyRowNames, LabelItemName)
   if 1 == CurLabelIndex then
@@ -137,13 +146,16 @@ function WBP_CustomKeyPanel_GamePad:BindOnGamepadCustomKeyNavitionUp(LabelItemNa
     EventSystem.Invoke(EventDef.GameSettings.OnFocusGamePadCustomKeyItem, self.AllKeyRowNames[CurLabelIndex - 1])
   end
 end
+
 function WBP_CustomKeyPanel_GamePad:BindOnCustomKeySelected(ChangedKeyRowNameList)
   self:RefreshGamepadInfo()
 end
+
 function WBP_CustomKeyPanel_GamePad:IsNeedShowSaveTip()
   local List = LogicGameSetting.GetPreCustomKeyList()
   return table.count(List) > 0
 end
+
 function WBP_CustomKeyPanel_GamePad:HidePanel(...)
   local AllChildren = self.CustomKeyList:GetAllChildren()
   for key, SingleItem in pairs(AllChildren) do
@@ -153,4 +165,5 @@ function WBP_CustomKeyPanel_GamePad:HidePanel(...)
   EventSystem.RemoveListenerNew(EventDef.GameSettings.OnGamepadCustomKeyNavitionUp, self, self.BindOnGamepadCustomKeyNavitionUp)
   EventSystem.RemoveListenerNew(EventDef.GameSettings.OnCustomKeySelected, self, self.BindOnCustomKeySelected)
 end
+
 return WBP_CustomKeyPanel_GamePad

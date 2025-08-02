@@ -4,6 +4,7 @@ local UILayer = require("Framework.UIMgr.UILayer")
 local MAXSCREENSIZE = 2.388888888888889
 local MINSCREENSIZE = 1.3333333333333333
 local RGUIManager_C = UnLua.Class()
+
 function RGUIManager_C:Bp_Init()
   if not UE.UKismetSystemLibrary.IsDedicatedServer(self) then
     print("RGUIManager_C Bp_Init on Client")
@@ -11,6 +12,7 @@ function RGUIManager_C:Bp_Init()
     ChatDataMgr.Init()
   end
 end
+
 function RGUIManager_C:BP_OnViewportResized(x, y)
   local PlatformName = UE.URGBlueprintLibrary.GetPlatformName()
   if "Windows" ~= PlatformName then
@@ -98,6 +100,7 @@ function RGUIManager_C:BP_OnViewportResized(x, y)
   end
   EventSystem.Invoke(EventDef.Global.OnViewportResized)
 end
+
 function RGUIManager_C:Bp_UnInit()
   if not UE.UKismetSystemLibrary.IsDedicatedServer(self) then
     print("RGUIManager_C:Bp_UnInit on Client")
@@ -105,20 +108,25 @@ function RGUIManager_C:Bp_UnInit()
     ChatDataMgr.Clear()
   end
 end
+
 function RGUIManager_C:Bp_SendMsg(Msg, RoleId, ChannelId)
   ChatDataMgr.SendChatMsg(RoleId, ChannelId, Msg)
 end
+
 function RGUIManager_C:Bp_GetCurSceneStatus()
   return GetCurSceneStatus()
 end
+
 function RGUIManager_C:AddErroMsgToChannelImp(ChannelId)
   local ErrorStr = UE.URGBlueprintLibrary.TextFromStringTable("1101")
   ChatDataMgr.AddErroMsgToChannel(ChannelId, ErrorStr)
 end
+
 function RGUIManager_C:SetImageIcon(itemID, ImageWidget)
   local TBGeneral = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   if TBGeneral[tonumber(itemID)] then
     SetImageBrushByPath(ImageWidget, TBGeneral[tonumber(itemID)].Icon)
   end
 end
+
 return RGUIManager_C

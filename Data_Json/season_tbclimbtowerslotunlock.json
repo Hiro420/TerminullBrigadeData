@@ -1,0 +1,62 @@
+[
+  {
+    "SlotId": 1,
+    "UnlockFloor": 0,
+    "UnLockDes": "",
+    "WaveWindowId": 1502
+  },
+  {
+    "SlotId": 2,
+    "UnlockFloor": 0,
+    "UnLockDes": "",
+    "WaveWindowId": 1502
+  },
+  {
+    "SlotId": 3,
+    "UnlockFloor": 2,
+    "UnLockDes": "通关修正行动2层",
+    "WaveWindowId": 1502
+  },
+  {
+    "SlotId": 4,
+    "UnlockFloor": 4,
+    "UnLockDes": "通关修正行动4层",
+    "WaveWindowId": 1502
+  },
+  {
+    "SlotId": 5,
+    "UnlockFloor": 6,
+    "UnLockDes": "通关修正行动6层",
+    "WaveWindowId": 1502
+  },
+  {
+    "SlotId": 6,
+    "UnlockFloor": 8,
+    "UnLockDes": "通关修正行动8层",
+    "WaveWindowId": 1502
+  },
+  {
+    "SlotId": 7,
+    "UnlockFloor": 51,
+    "UnLockDes": "暂不开放",
+    "WaveWindowId": 1502
+  },
+  {
+    "SlotId": 8,
+    "UnlockFloor": 51,
+    "UnLockDes": "暂不开放",
+    "WaveWindowId": 1502
+  },
+  {
+    "SlotId": 9,
+    "UnlockFloor": 51,
+    "UnLockDes": "暂不开放",
+    "WaveWindowId": 1502
+  },
+  {
+    "SlotId": 10,
+    "UnlockFloor": 51,
+    "UnLockDes": "暂不开放",
+    "WaveWindowId": 1502
+  }
+]

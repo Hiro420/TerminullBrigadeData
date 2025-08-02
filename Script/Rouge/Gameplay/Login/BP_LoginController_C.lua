@@ -16,6 +16,7 @@ local PuzzleData = require("Modules.Puzzle.PuzzleData")
 local TopupData = require("Modules.Topup.TopupData")
 local BP_LoginController_C = UnLua.Class()
 local BanTipId = 303005
+
 function BP_LoginController_C:ReceiveBeginPlay()
   self.Overridden.ReceiveBeginPlay(self)
   if self:IsLocalController() then
@@ -96,8 +97,13 @@ function BP_LoginController_C:ReceiveBeginPlay()
     if RedDotModule then
       RedDotModule:SaveRedDotDataToLocal()
     end
+    local TeamVoiceModule = ModuleManager:Get("TeamVoiceModule")
+    if TeamVoiceModule then
+      TeamVoiceModule:InitGVoice()
+    end
   end
 end
+
 function BP_LoginController_C:BindOnHttpBusinessErrorTip(ErrorCode, ErrorMsg)
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGWaveWindowManager:StaticClass())
   if not WaveWindowManager or "" == ErrorMsg then
@@ -124,6 +130,7 @@ function BP_LoginController_C:BindOnHttpBusinessErrorTip(ErrorCode, ErrorMsg)
     ShowWaveWindowWithConsoleCheck(TargetId, Params, ErrorCode)
   end
 end
+
 function BP_LoginController_C:BindOnHttpBanDelegate(BanInfo)
   ChatDataMgr.UpdateVoiceBanInfo(BanInfo)
   print("BP_LoginController_C:BindOnHttpBanDelegate", BanInfo.BanReasonId, BanInfo.BanEndTime, BanInfo.ErrorCode)
@@ -145,6 +152,7 @@ function BP_LoginController_C:BindOnHttpBanDelegate(BanInfo)
   }
   ShowWaveWindowWithConsoleCheck(BanTipId, Params, BanInfo.ErrorCode)
 end
+
 function BP_LoginController_C:OnWindowCloseRequested()
   print("BP_LoginController_C:OnWindowCloseRequested")
   if DataMgr.GetDistributionChannel() == LogicLobby.DistributionChannelList.WeGame then
@@ -157,6 +165,7 @@ function BP_LoginController_C:OnWindowCloseRequested()
   end
   return true
 end
+
 function BP_LoginController_C:IsAutoProcess()
   local CmdLine = UE.UKismetSystemLibrary.GetCommandLine()
   local Tokens, Switches, Params = UE.UKismetSystemLibrary.ParseCommandLine(CmdLine, nil, nil, nil)
@@ -212,6 +221,7 @@ function BP_LoginController_C:IsAutoProcess()
     return true
   end
 end
+
 function BP_LoginController_C:ReceiveEndPlay()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGUIManager:StaticClass())
   if UIManager then
@@ -229,7 +239,9 @@ function BP_LoginController_C:ReceiveEndPlay()
   end
   LogicOutsideWeapon.Clear()
 end
+
 function BP_LoginController_C:GetCurSceneStatus()
   return UE.ESceneStatus.ELogin
 end
+
 return BP_LoginController_C

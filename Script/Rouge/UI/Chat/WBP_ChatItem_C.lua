@@ -1,9 +1,11 @@
 local WBP_ChatItem_C = UnLua.Class()
 local RecruitHandler = require("Protocol.Recruit.RecruitHandler")
+
 function WBP_ChatItem_C:Construct()
   self.Overridden.Construct(self)
   self.RichTextBlockName.HyperLinkClick:Add(self, self.OnHyperLinkClick)
 end
+
 function WBP_ChatItem_C:OnListItemObjectSet(ListItemObj)
   self.DataObj = ListItemObj
   local ChannelRow = LogicChat:GetChannelRow(ListItemObj.ChannelId)
@@ -59,12 +61,15 @@ function WBP_ChatItem_C:OnListItemObjectSet(ListItemObj)
   UpdateVisibility(self.SizeBoxErrorContent, ListItemObj.MsgType == ChatDataMgr.EMsgType.Error)
   UpdateVisibility(self.SizeBoxContent, ListItemObj.MsgType ~= ChatDataMgr.EMsgType.Error)
 end
+
 function WBP_ChatItem_C:BP_OnEntryReleased()
   self.DataObj = nil
 end
+
 function WBP_ChatItem_C:BP_OnItemSelectionChanged(bIsSelected)
   print("WBP_ChatItem_C:BP_OnItemSelectionChanged", bIsSelected)
 end
+
 function WBP_ChatItem_C:OnHyperLinkClick(TypeParam, MetaData)
   if TypeParam == UE.ELinkType.ChatLinkPlayerClick then
     if self.DataObj.ChatType == ChatDataMgr.EChatType.Battle then
@@ -94,9 +99,11 @@ function WBP_ChatItem_C:OnHyperLinkClick(TypeParam, MetaData)
     RecruitHandler:SendApplyRecruitTeam(LogicLobby.GetBrunchType(), self.DataObj.TeamID, self.DataObj.Version)
   end
 end
+
 function WBP_ChatItem_C:Destruct()
   self.Overridden.Destruct(self)
   self.DataObj = nil
   self.RichTextBlockName.HyperLinkClick:Remove(self, self.OnHyperLinkClick)
 end
+
 return WBP_ChatItem_C

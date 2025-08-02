@@ -1,8 +1,10 @@
 local WBP_AccessoryCard_C = UnLua.Class()
+
 function WBP_AccessoryCard_C:Construct()
   self.Button.OnClicked:Add(self, WBP_AccessoryCard_C.OnClicked_Button)
   self:GetWeaponCapture()
 end
+
 function WBP_AccessoryCard_C:UpdateCard(InAccessoryId)
   self.AccessoryId = InAccessoryId
   local accessoryManager = UE.URGAccessoryStatics.GetAccessoryManager(self)
@@ -31,6 +33,7 @@ function WBP_AccessoryCard_C:UpdateCard(InAccessoryId)
     end
   end
 end
+
 function WBP_AccessoryCard_C:OnClicked_Button()
   if self:IsAccessoryRotate() then
     return
@@ -43,4 +46,5 @@ function WBP_AccessoryCard_C:OnClicked_Button()
     self:OnAccessoryClicked(true)
   end
 end
+
 return WBP_AccessoryCard_C

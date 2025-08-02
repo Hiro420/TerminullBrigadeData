@@ -1,5 +1,6 @@
 local WBP_SpecialAbilityTip = UnLua.Class()
 local SeasonAbilityData = require("Modules.SeasonAbility.SeasonAbilityData")
+
 function WBP_SpecialAbilityTip:RefreshInfo(SpecialAbilityId)
   self.SpecialAbilityId = SpecialAbilityId
   local SpecialAbilityTable = LuaTableMgr.GetLuaTableByName(TableNames.TBSpecialAbility)
@@ -25,4 +26,5 @@ function WBP_SpecialAbilityTip:RefreshInfo(SpecialAbilityId)
     self.Txt_UnlockNumDesc:SetText(UE.FTextFormat(self.UnlockNumDescText, TargetRowInfo.SpecialAbilityPointNum - HistoryUsePointNum))
   end
 end
+
 return WBP_SpecialAbilityTip

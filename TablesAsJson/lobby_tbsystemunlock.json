@@ -1,245 +1,245 @@
 ﻿{
   "1": {
-    "SystemName": "Mall",
-    "SystemID": 1,
+    "Desc": "商城",
+    "UnlockEventsList": {
+      "1": {
+        "id": 1,
+        "params": {},
+        "value": 1
+      }
+    },
     "UnlockTipsLocMeta": {
-      "InNamespace": "lobby_TBSystemUnlock",
       "InTextLiteral": "",
+      "InNamespace": "lobby_TBSystemUnlock",
       "InKey": "UnlockTips_1"
     },
-    "UnlockEventsList": {
-      "1": {
-        "params": {},
-        "id": 1,
-        "value": 1
-      }
-    },
     "ViewNameList": {},
-    "Desc": "商城"
+    "SystemID": 1,
+    "SystemName": "Mall"
   },
   "2": {
-    "SystemName": "BattlePass",
-    "SystemID": 2,
+    "Desc": "通行证",
+    "UnlockEventsList": {
+      "1": {
+        "id": 1,
+        "params": {},
+        "value": 1
+      }
+    },
     "UnlockTipsLocMeta": {
-      "InNamespace": "lobby_TBSystemUnlock",
       "InTextLiteral": "",
+      "InNamespace": "lobby_TBSystemUnlock",
       "InKey": "UnlockTips_2"
     },
-    "UnlockEventsList": {
-      "1": {
-        "params": {},
-        "id": 1,
-        "value": 1
-      }
-    },
     "ViewNameList": {},
-    "Desc": "通行证"
+    "SystemID": 2,
+    "SystemName": "BattlePass"
   },
   "3": {
-    "SystemName": "Puzzle",
-    "SystemID": 3,
+    "Desc": "战斗矩阵",
+    "UnlockEventsList": {
+      "1": {
+        "id": 5,
+        "params": {
+          "1": {
+            "param": "1001",
+            "id": 1
+          },
+          "2": {
+            "param": "3",
+            "id": 2
+          }
+        },
+        "value": 1
+      }
+    },
     "UnlockTipsLocMeta": {
-      "InNamespace": "lobby_TBSystemUnlock",
       "InTextLiteral": "完美通关任意世界难度解锁战斗矩阵",
+      "InNamespace": "lobby_TBSystemUnlock",
       "InKey": "UnlockTips_3"
     },
-    "UnlockEventsList": {
-      "1": {
-        "params": {
-          "1": {
-            "id": 1,
-            "param": "1001"
-          },
-          "2": {
-            "id": 2,
-            "param": "3"
-          }
-        },
-        "id": 5,
-        "value": 1
-      }
-    },
     "ViewNameList": {},
-    "Desc": "战斗矩阵"
+    "SystemID": 3,
+    "SystemName": "Puzzle"
   },
   "4": {
-    "SystemName": "RewardIncrease",
-    "SystemID": 4,
+    "Desc": "高能时刻",
+    "UnlockEventsList": {
+      "1": {
+        "id": 5,
+        "params": {
+          "1": {
+            "param": "1001",
+            "id": 1
+          },
+          "2": {
+            "param": "3",
+            "id": 2
+          }
+        },
+        "value": 1
+      }
+    },
     "UnlockTipsLocMeta": {
-      "InNamespace": "lobby_TBSystemUnlock",
       "InTextLiteral": "完美通关任意世界难度解锁高能时刻",
+      "InNamespace": "lobby_TBSystemUnlock",
       "InKey": "UnlockTips_4"
     },
-    "UnlockEventsList": {
-      "1": {
-        "params": {
-          "1": {
-            "id": 1,
-            "param": "1001"
-          },
-          "2": {
-            "id": 2,
-            "param": "3"
-          }
-        },
-        "id": 5,
-        "value": 1
-      }
-    },
     "ViewNameList": {},
-    "Desc": "高能时刻"
+    "SystemID": 4,
+    "SystemName": "RewardIncrease"
   },
   "5": {
-    "SystemName": "",
-    "SystemID": 5,
+    "Desc": "爬塔兑换商店Ⅱ",
+    "UnlockEventsList": {
+      "1": {
+        "id": 5,
+        "params": {
+          "1": {
+            "param": "1003",
+            "id": 1
+          },
+          "2": {
+            "param": "5",
+            "id": 2
+          }
+        },
+        "value": 1
+      }
+    },
     "UnlockTipsLocMeta": {
-      "InNamespace": "lobby_TBSystemUnlock",
       "InTextLiteral": "通关修正行动第层后解锁",
+      "InNamespace": "lobby_TBSystemUnlock",
       "InKey": "UnlockTips_5"
     },
-    "UnlockEventsList": {
-      "1": {
-        "params": {
-          "1": {
-            "id": 1,
-            "param": "1003"
-          },
-          "2": {
-            "id": 2,
-            "param": "5"
-          }
-        },
-        "id": 5,
-        "value": 1
-      }
-    },
     "ViewNameList": {},
-    "Desc": "爬塔兑换商店Ⅱ"
+    "SystemID": 5,
+    "SystemName": ""
   },
   "6": {
-    "SystemName": "",
-    "SystemID": 6,
+    "Desc": "爬塔兑换商店Ⅲ",
+    "UnlockEventsList": {
+      "1": {
+        "id": 5,
+        "params": {
+          "1": {
+            "param": "1003",
+            "id": 1
+          },
+          "2": {
+            "param": "10",
+            "id": 2
+          }
+        },
+        "value": 1
+      }
+    },
     "UnlockTipsLocMeta": {
-      "InNamespace": "lobby_TBSystemUnlock",
       "InTextLiteral": "通关修正行动第层后解锁",
+      "InNamespace": "lobby_TBSystemUnlock",
       "InKey": "UnlockTips_6"
     },
-    "UnlockEventsList": {
-      "1": {
-        "params": {
-          "1": {
-            "id": 1,
-            "param": "1003"
-          },
-          "2": {
-            "id": 2,
-            "param": "10"
-          }
-        },
-        "id": 5,
-        "value": 1
-      }
-    },
     "ViewNameList": {},
-    "Desc": "爬塔兑换商店Ⅲ"
+    "SystemID": 6,
+    "SystemName": ""
   },
   "7": {
-    "SystemName": "ClimbTower",
-    "SystemID": 7,
+    "Desc": "修正行动",
+    "UnlockEventsList": {
+      "1": {
+        "id": 5,
+        "params": {
+          "1": {
+            "param": "1001",
+            "id": 1
+          },
+          "2": {
+            "param": "6",
+            "id": 2
+          }
+        },
+        "value": 1
+      }
+    },
     "UnlockTipsLocMeta": {
-      "InNamespace": "lobby_TBSystemUnlock",
       "InTextLiteral": "完美通关任意世界难度解锁",
+      "InNamespace": "lobby_TBSystemUnlock",
       "InKey": "UnlockTips_7"
     },
-    "UnlockEventsList": {
-      "1": {
-        "params": {
-          "1": {
-            "id": 1,
-            "param": "1001"
-          },
-          "2": {
-            "id": 2,
-            "param": "6"
-          }
-        },
-        "id": 5,
-        "value": 1
-      }
-    },
     "ViewNameList": {},
-    "Desc": "修正行动"
+    "SystemID": 7,
+    "SystemName": "ClimbTower"
   },
   "8": {
-    "SystemName": "Survivor",
-    "SystemID": 8,
+    "Desc": "病毒狂潮",
+    "UnlockEventsList": {
+      "1": {
+        "id": 5,
+        "params": {
+          "1": {
+            "param": "1003",
+            "id": 1
+          },
+          "2": {
+            "param": "10",
+            "id": 2
+          }
+        },
+        "value": 1
+      }
+    },
     "UnlockTipsLocMeta": {
-      "InNamespace": "lobby_TBSystemUnlock",
       "InTextLiteral": "通关修正行动第层后解锁",
+      "InNamespace": "lobby_TBSystemUnlock",
       "InKey": "UnlockTips_8"
     },
-    "UnlockEventsList": {
-      "1": {
-        "params": {
-          "1": {
-            "id": 1,
-            "param": "1003"
-          },
-          "2": {
-            "id": 2,
-            "param": "10"
-          }
-        },
-        "id": 5,
-        "value": 1
-      }
-    },
     "ViewNameList": {},
-    "Desc": "病毒狂潮"
+    "SystemID": 8,
+    "SystemName": "Survivor"
   },
   "9": {
-    "SystemName": "BossRush",
-    "SystemID": 9,
-    "UnlockTipsLocMeta": {
-      "InNamespace": "lobby_TBSystemUnlock",
-      "InTextLiteral": "通关修正行动第层后解锁普通难度",
-      "InKey": "UnlockTips_9"
-    },
+    "Desc": "失序链区",
     "UnlockEventsList": {
       "1": {
+        "id": 5,
         "params": {
           "1": {
-            "id": 1,
-            "param": "1003"
+            "param": "1003",
+            "id": 1
           },
           "2": {
-            "id": 2,
-            "param": "10"
+            "param": "10",
+            "id": 2
           }
         },
-        "id": 5,
         "value": 1
       }
     },
+    "UnlockTipsLocMeta": {
+      "InTextLiteral": "通关修正行动第层后解锁普通难度",
+      "InNamespace": "lobby_TBSystemUnlock",
+      "InKey": "UnlockTips_9"
+    },
     "ViewNameList": {},
-    "Desc": "失序链区"
+    "SystemID": 9,
+    "SystemName": "BossRush"
   },
   "101": {
-    "SystemName": "",
-    "SystemID": 101,
-    "UnlockTipsLocMeta": {
-      "InNamespace": "lobby_TBSystemUnlock",
-      "InTextLiteral": "提升角色熟练度至级后解锁",
-      "InKey": "UnlockTips_101"
-    },
+    "Desc": "熟练度（无实际功能）",
     "UnlockEventsList": {
       "1": {
-        "params": {},
         "id": 1,
+        "params": {},
         "value": 100
       }
     },
+    "UnlockTipsLocMeta": {
+      "InTextLiteral": "提升角色熟练度至级后解锁",
+      "InNamespace": "lobby_TBSystemUnlock",
+      "InKey": "UnlockTips_101"
+    },
     "ViewNameList": {},
-    "Desc": "熟练度（无实际功能）"
+    "SystemID": 101,
+    "SystemName": ""
   }
 }

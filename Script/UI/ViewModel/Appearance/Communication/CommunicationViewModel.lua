@@ -28,6 +28,7 @@ local HeroCommListSort = function(A, B)
   end
   return A.ID > B.ID
 end
+
 function CommunicationViewModel:OnInit()
   self.Super:OnInit()
   EventSystem.AddListenerNew(EventDef.WSMessage.ResourceUpdate, self, self.OnResourceUpdate)
@@ -35,12 +36,14 @@ function CommunicationViewModel:OnInit()
   EventSystem.AddListenerNew(EventDef.Communication.OnRouletteAreaSelectChanged, self, self.OnRouletteAreaSelectChanged)
   CommunicationData.InitData()
 end
+
 function CommunicationViewModel:OnShutdown()
   EventSystem.RemoveListenerNew(EventDef.WSMessage.ResourceUpdate, self, self.OnResourceUpdate)
   EventSystem.RemoveListenerNew(EventDef.Communication.OnGetCommList, self, self.OnGetCommList)
   EventSystem.RemoveListenerNew(EventDef.Communication.OnRouletteAreaSelectChanged, self, self.OnRouletteAreaSelectChanged)
   self.Super:OnShutdown()
 end
+
 function CommunicationViewModel:OnResourceUpdate(JsonStr)
   local TotalResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   local bNeedRequest = false
@@ -57,9 +60,11 @@ function CommunicationViewModel:OnResourceUpdate(JsonStr)
     self:SendGetCommList()
   end
 end
+
 function CommunicationViewModel:SendGetCommList(SuccCallback)
   CommunicationHandler.RequestGetCommunicationBag(SuccCallback)
 end
+
 function CommunicationViewModel:OnGetCommList(CommList)
   self:UpdateRoulette()
   local t = self.CurHeroId
@@ -79,6 +84,7 @@ function CommunicationViewModel:OnGetCommList(CommList)
   end
   self:UpdateRedDotIdList()
 end
+
 function CommunicationViewModel:UpdateCurHeroId(CurHeroId)
   if self.CurHeroId == CurHeroId then
     return
@@ -89,6 +95,7 @@ function CommunicationViewModel:UpdateCurHeroId(CurHeroId)
   self:UpdateVoiceList()
   self:UpdateRedDotIdList()
 end
+
 function CommunicationViewModel:UpdateRoulette()
   local rouletteSlots = DataMgr.GetRouletteSlotsByHeroId(self.CurHeroId)
   CommunicationData.HeroCommEquip = {}
@@ -98,6 +105,7 @@ function CommunicationViewModel:UpdateRoulette()
     end
   end
 end
+
 function CommunicationViewModel:UpdateCurSelectCommunicationToggle(ToggleIndex)
   if self.CurSelectCommunicationToggle == ToggleIndex then
     return
@@ -113,6 +121,7 @@ function CommunicationViewModel:UpdateCurSelectCommunicationToggle(ToggleIndex)
     self.IsEmptyShowList = 0 == #self.ShowVoiceData.VoiceList
   end
 end
+
 function CommunicationViewModel:UpdateSprayList()
   local curHeroId = self.CurHeroId
   local showHeroSprayData = {
@@ -129,7 +138,9 @@ function CommunicationViewModel:UpdateSprayList()
         bIsSelected = v.ID == self.CurSelectSparyId,
         bIsUnlockShow = v.IsUnlockShow
       }
-      table.insert(showHeroSprayData.SprayList, t)
+      if self:CheckIsShow(t) then
+        table.insert(showHeroSprayData.SprayList, t)
+      end
     end
   end
   table.sort(showHeroSprayData.SprayList, HeroCommListSort)
@@ -139,6 +150,7 @@ function CommunicationViewModel:UpdateSprayList()
   end
   self.ShowSprayData = showHeroSprayData
 end
+
 function CommunicationViewModel:UpdateVoiceList()
   local curHeroId = self.CurHeroId
   local showHeroVoiceData = {
@@ -152,9 +164,12 @@ function CommunicationViewModel:UpdateVoiceList()
         ID = v.ID,
         bIsUnlocked = CommunicationData.CheckCommIsUnlock(v.ID),
         bIsEquiped = CommunicationData.CheckCommIsEquiped(v.ID),
-        bIsSelected = v.ID == self.CurSelectVoiceId
+        bIsSelected = v.ID == self.CurSelectVoiceId,
+        bIsUnlockShow = v.IsUnlockShow
       }
-      table.insert(showHeroVoiceData.VoiceList, t)
+      if self:CheckIsShow(t) then
+        table.insert(showHeroVoiceData.VoiceList, t)
+      end
     end
   end
   table.sort(showHeroVoiceData.VoiceList, HeroCommListSort)
@@ -164,6 +179,7 @@ function CommunicationViewModel:UpdateVoiceList()
   end
   self.ShowVoiceData = showHeroVoiceData
 end
+
 function CommunicationViewModel:UpdateCurSelectSpary(CommId)
   if self.CurSelectSparyId == CommId then
     return
@@ -181,6 +197,7 @@ function CommunicationViewModel:UpdateCurSelectSpary(CommId)
     end
   })
 end
+
 function CommunicationViewModel:UpdateCurSelectVoice(CommId)
   if self.CurSelectVoiceId == CommId then
     return
@@ -188,6 +205,7 @@ function CommunicationViewModel:UpdateCurSelectVoice(CommId)
   self.CurSelectVoiceId = CommId
   EventSystem.Invoke(EventDef.Communication.OnCommSelectChanged, CommId)
 end
+
 function CommunicationViewModel:GetCommDataByCommId(CommId)
   local tbGeneral = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   local tbCommunication = LuaTableMgr.GetLuaTableByName(TableNames.TBResHeroCommuniRoulette)
@@ -201,12 +219,15 @@ function CommunicationViewModel:GetCommDataByCommId(CommId)
   end
   return CommData
 end
+
 function CommunicationViewModel:GetVoiceDataByCommId(CommId)
   return self:GetCommDataByCommId(CommId)
 end
+
 function CommunicationViewModel:GetSprayDataByCommId(CommId)
   return self:GetCommDataByCommId(CommId)
 end
+
 function CommunicationViewModel:GetCurCommData()
   if -1 ~= self.CurSelectSparyId then
     return self:GetSprayDataByCommId(self.CurSelectSparyId)
@@ -214,6 +235,7 @@ function CommunicationViewModel:GetCurCommData()
     return self:GetVoiceDataByCommId(self.CurSelectVoiceId)
   end
 end
+
 function CommunicationViewModel:EquipCommBySlotId(SlotId)
   local curCommData = self:GetCurCommData()
   if not curCommData then
@@ -225,6 +247,7 @@ function CommunicationViewModel:EquipCommBySlotId(SlotId)
     end)
   end)
 end
+
 function CommunicationViewModel:UnequipCommBySlotId(SlotId)
   CommunicationHandler.RequestUnEquipCommunication(self.CurHeroId, SlotId - 1, function()
     LogicRole.RequestMyHeroInfoToServer(function()
@@ -232,6 +255,7 @@ function CommunicationViewModel:UnequipCommBySlotId(SlotId)
     end)
   end)
 end
+
 function CommunicationViewModel:GetRouletteIdBySlotId(SlotId)
   local rouletteSlots = DataMgr.GetRouletteSlotsByHeroId(self.CurHeroId)
   if not rouletteSlots[SlotId] then
@@ -240,6 +264,7 @@ function CommunicationViewModel:GetRouletteIdBySlotId(SlotId)
   local rouletteId = rouletteSlots[SlotId]
   return rouletteSlots[SlotId]
 end
+
 function CommunicationViewModel:OnRouletteAreaSelectChanged(SlotId)
   local rouletteId = self:GetRouletteIdBySlotId(SlotId)
   if 0 == rouletteId then
@@ -258,6 +283,7 @@ function CommunicationViewModel:OnRouletteAreaSelectChanged(SlotId)
     self:UpdateCurSelectVoice(commId)
   end
 end
+
 function CommunicationViewModel:UpdateRedDotIdList()
   self.RedDotIdList = {}
   local heroSprayList = CommunicationData.GetSprayListByHeroId(self.CurHeroId)
@@ -271,6 +297,7 @@ function CommunicationViewModel:UpdateRedDotIdList()
   end
   self.RedDotIdList = redDotIdList
 end
+
 function CommunicationViewModel:GetSprayIndexById(SprayId)
   if self.ShowSprayData and self.ShowSprayData.SprayList then
     for i, v in ipairs(self.ShowSprayData.SprayList) do
@@ -281,6 +308,7 @@ function CommunicationViewModel:GetSprayIndexById(SprayId)
   end
   return -1
 end
+
 function CommunicationViewModel:GetVoiceIndexById(VoiceId)
   if self.ShowVoiceData and self.ShowVoiceData.VoiceList then
     for i, v in ipairs(self.ShowVoiceData.VoiceList) do
@@ -291,7 +319,9 @@ function CommunicationViewModel:GetVoiceIndexById(VoiceId)
   end
   return -1
 end
+
 function CommunicationViewModel:CheckIsShow(Data)
   return not Data.bIsUnlockShow or Data.bIsUnlocked
 end
+
 return CommunicationViewModel

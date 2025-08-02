@@ -1,12 +1,15 @@
 local WBP_WeaponSkin_C = UnLua.Class()
 local TypeTitleList = UE.TArray(UE.FString)
 local IdList = UE.TArray(0)
+
 function WBP_WeaponSkin_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_WeaponSkin_C:InitWidget()
   self.Overridden.InitWidget(self)
 end
+
 function WBP_WeaponSkin_C:OnOpen()
   self.Overridden.OnOpen(self)
   local SkinTable = LuaTableMgr.GetLuaTableByName(TableNames.TBWeaponSkin)
@@ -28,6 +31,7 @@ function WBP_WeaponSkin_C:OnOpen()
   end
   self:CreateTypeButtonList(TypeTitleList)
 end
+
 function WBP_WeaponSkin_C:OnTypeButtonClick(Button, ItemData)
   self.Overridden.OnTypeButtonClick(self, Button)
   local index = ItemData.Index + 1
@@ -39,4 +43,5 @@ function WBP_WeaponSkin_C:OnTypeButtonClick(Button, ItemData)
   local Info = SkinTable[IdList:Get(index)]
   self.Overridden.ShowCustomPanel(self, Info.SkinID, Info.WeaponID, Info.SkinRarity, Info.SkinName, Info.Desc)
 end
+
 return WBP_WeaponSkin_C

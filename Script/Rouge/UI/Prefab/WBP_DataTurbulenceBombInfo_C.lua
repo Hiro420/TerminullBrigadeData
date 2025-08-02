@@ -3,6 +3,7 @@ local AnimPlayTime = 3
 local CountdownTimeConfig = 10
 local Level_Dataflow_Countdown = "Level_Dataflow_Countdown"
 local Level_Dataflow_Explosion = "Level_Dataflow_Explosion"
+
 function WBP_DataTurbulenceBombInfo_C:LuaTick(InDeltaTime)
   self:UpdateWidgetPosition()
   if self.CurSegment == UE.ERGDeliverSegment.Segment2 then
@@ -33,15 +34,18 @@ function WBP_DataTurbulenceBombInfo_C:LuaTick(InDeltaTime)
     end
   end
 end
+
 function WBP_DataTurbulenceBombInfo_C:Destruct()
   if self.OwningBomb then
     self.OwningBomb.OnDeliverSegmentChange:Remove(self, WBP_DataTurbulenceBombInfo_C.OnSegmentChange)
   end
 end
+
 function WBP_DataTurbulenceBombInfo_C:SetOwningBomb(OwningBomb)
   self.OwningBomb = OwningBomb
   self:InitWidget()
 end
+
 function WBP_DataTurbulenceBombInfo_C:InitWidget()
   if self.OwningBomb then
     self.OwningBomb.OnDeliverSegmentChange:Remove(self, WBP_DataTurbulenceBombInfo_C.OnSegmentChange)
@@ -55,6 +59,7 @@ function WBP_DataTurbulenceBombInfo_C:InitWidget()
   self.IsSpecialAnimPlayed = false
   self.CountdownTime = 0
 end
+
 function WBP_DataTurbulenceBombInfo_C:OnSegmentChange(CurSegment)
   self.CurSegment = CurSegment
   if self.CurSegment == UE.ERGDeliverSegment.Segment1 then
@@ -76,6 +81,7 @@ function WBP_DataTurbulenceBombInfo_C:OnSegmentChange(CurSegment)
     self:PlayAnimation(self.Ani_bang)
   end
 end
+
 local MappedRangeValueClamped = function(Value, InMin, InMax, OutMin, OutMax)
   if InMin == InMax then
     error("Input range is invalid (InMin should not be equal to InMax)")
@@ -84,6 +90,7 @@ local MappedRangeValueClamped = function(Value, InMin, InMax, OutMin, OutMax)
   local mappedValue = OutMin + (OutMax - OutMin) * normalized
   return math.clamp(mappedValue, OutMin, OutMax)
 end
+
 function WBP_DataTurbulenceBombInfo_C:UpdateWidgetPosition()
   local CameraManager = UE.UGameplayStatics.GetPlayerCameraManager(self, 0)
   if CameraManager and self.OwningBomb then
@@ -95,10 +102,12 @@ function WBP_DataTurbulenceBombInfo_C:UpdateWidgetPosition()
     self:SetRenderScale(UE.FVector2D(ScaleFactor, ScaleFactor))
   end
 end
+
 function WBP_DataTurbulenceBombInfo_C:PlayVoice(EventName, Speaker)
   local RGSoundSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGSoundSubsystem:StaticClass())
   if RGSoundSubsystem then
     RGSoundSubsystem:PlaySound3DByName(EventName, Speaker, nil, false, "")
   end
 end
+
 return WBP_DataTurbulenceBombInfo_C

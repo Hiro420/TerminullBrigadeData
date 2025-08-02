@@ -8,13 +8,13 @@ local resource_tbweaponskin = {
     DescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "Desc_10500701", "\229\189\177\229\136\131\230\173\166\229\153\168\227\128\144\229\174\160\228\191\161\227\128\145\233\187\152\232\174\164\229\164\150\232\167\130\227\128\130"),
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Qing_Yp.Gun02_Qing_Yp",
     LinkId = "1008",
-    LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10500701", "\233\128\154\229\133\179\231\142\175\233\131\189\228\184\150\231\149\140\233\154\190\229\186\1663"),
+    LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10500701", "\232\142\183\229\143\150\232\167\146\232\137\178\229\144\142\232\167\163\233\148\129"),
     ParamList = {},
     HeirloomIconPath = "",
     Sort = 0,
     IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500701", ""),
     SpecialBgIcon = ""
   },
   [10500702] = {
@@ -32,7 +32,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500702", ""),
     SpecialBgIcon = ""
   },
   [10500703] = {
@@ -48,9 +48,9 @@ local resource_tbweaponskin = {
     ParamList = {2},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500703", ""),
     SpecialBgIcon = ""
   },
   [10500704] = {
@@ -68,7 +68,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500704", ""),
     SpecialBgIcon = ""
   },
   [10500705] = {
@@ -86,7 +86,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500705", ""),
     SpecialBgIcon = ""
   },
   [10500706] = {
@@ -104,7 +104,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500706", ""),
     SpecialBgIcon = ""
   },
   [10500707] = {
@@ -122,7 +122,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500707", ""),
     SpecialBgIcon = ""
   },
   [10500721] = {
@@ -133,14 +133,14 @@ local resource_tbweaponskin = {
     SkinNameLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SkinName_10500721", "\230\149\176\229\159\159\230\189\156\232\161\140\232\128\133"),
     DescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "Desc_10500721", "\229\189\177\229\136\131\230\173\166\229\153\168\227\128\144\229\174\160\228\191\161\227\128\145\231\168\128\230\156\137\231\186\167\229\164\150\232\167\130\227\128\130"),
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Qing_Ff_B1.Gun02_Qing_Ff_B1",
-    LinkId = "",
-    LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10500721", ""),
-    ParamList = {},
+    LinkId = "9999",
+    LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10500721", "\230\180\187\229\138\168\232\142\183\229\190\151"),
+    ParamList = {5},
     HeirloomIconPath = "",
     Sort = 0,
     IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500721", ""),
     SpecialBgIcon = ""
   },
   [10500722] = {
@@ -158,7 +158,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500722", ""),
     SpecialBgIcon = ""
   },
   [10500741] = {
@@ -174,9 +174,9 @@ local resource_tbweaponskin = {
     ParamList = {1, 1005},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500741", ""),
     SpecialBgIcon = ""
   },
   [10500742] = {
@@ -194,7 +194,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500742", ""),
     SpecialBgIcon = ""
   },
   [10500901] = {
@@ -212,7 +212,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500901", ""),
     SpecialBgIcon = ""
   },
   [10500902] = {
@@ -228,9 +228,9 @@ local resource_tbweaponskin = {
     ParamList = {1},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500902", ""),
     SpecialBgIcon = ""
   },
   [10500903] = {
@@ -248,7 +248,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500903", ""),
     SpecialBgIcon = ""
   },
   [10500904] = {
@@ -266,7 +266,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500904", ""),
     SpecialBgIcon = ""
   },
   [10500905] = {
@@ -284,7 +284,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500905", ""),
     SpecialBgIcon = ""
   },
   [10500906] = {
@@ -302,7 +302,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500906", ""),
     SpecialBgIcon = ""
   },
   [10500907] = {
@@ -320,7 +320,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500907", ""),
     SpecialBgIcon = ""
   },
   [10500921] = {
@@ -336,9 +336,9 @@ local resource_tbweaponskin = {
     ParamList = {2, 500921},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500921", ""),
     SpecialBgIcon = ""
   },
   [10500922] = {
@@ -356,7 +356,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500922", ""),
     SpecialBgIcon = ""
   },
   [10500941] = {
@@ -367,14 +367,14 @@ local resource_tbweaponskin = {
     SkinNameLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SkinName_10500941", "\233\135\143\229\173\144\232\163\130\233\154\153"),
     DescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "Desc_10500941", "\229\189\177\229\136\131\230\173\166\229\153\168\227\128\144\229\128\190\229\191\131\227\128\145\229\143\178\232\175\151\231\186\167\229\164\150\232\167\130\227\128\130"),
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Qing_Ff_P1.Gun01_Qing_Ff_P1",
-    LinkId = "",
+    LinkId = "1000",
     LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10500941", "\229\134\133\230\181\139\232\142\183\229\190\151"),
     ParamList = {},
     HeirloomIconPath = "",
     Sort = 0,
     IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500941", ""),
     SpecialBgIcon = ""
   },
   [10500942] = {
@@ -392,7 +392,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500942", ""),
     SpecialBgIcon = ""
   },
   [10501801] = {
@@ -408,9 +408,9 @@ local resource_tbweaponskin = {
     ParamList = {7, 10707002},
     HeirloomIconPath = "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_qiang02_01.Icon_qiang02_01",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501801", ""),
     SpecialBgIcon = ""
   },
   [10501802] = {
@@ -426,9 +426,9 @@ local resource_tbweaponskin = {
     ParamList = {2},
     HeirloomIconPath = "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_qiang01_01.Icon_qiang01_01",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501802", ""),
     SpecialBgIcon = ""
   },
   [10501803] = {
@@ -444,9 +444,9 @@ local resource_tbweaponskin = {
     ParamList = {1},
     HeirloomIconPath = "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_qiang03_01.Icon_qiang03_01",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501803", ""),
     SpecialBgIcon = ""
   },
   [10501001] = {
@@ -464,7 +464,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501001", ""),
     SpecialBgIcon = ""
   },
   [10501002] = {
@@ -480,9 +480,9 @@ local resource_tbweaponskin = {
     ParamList = {2},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501002", ""),
     SpecialBgIcon = ""
   },
   [10501003] = {
@@ -500,7 +500,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501003", ""),
     SpecialBgIcon = ""
   },
   [10501004] = {
@@ -518,7 +518,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501004", ""),
     SpecialBgIcon = ""
   },
   [10501005] = {
@@ -536,7 +536,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501005", ""),
     SpecialBgIcon = ""
   },
   [10501006] = {
@@ -554,7 +554,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501006", ""),
     SpecialBgIcon = ""
   },
   [10501007] = {
@@ -572,7 +572,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501007", ""),
     SpecialBgIcon = ""
   },
   [10501021] = {
@@ -588,9 +588,9 @@ local resource_tbweaponskin = {
     ParamList = {2, 501021},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501021", ""),
     SpecialBgIcon = ""
   },
   [10501022] = {
@@ -608,7 +608,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501022", ""),
     SpecialBgIcon = ""
   },
   [10501041] = {
@@ -626,7 +626,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501041", ""),
     SpecialBgIcon = ""
   },
   [10501042] = {
@@ -642,9 +642,9 @@ local resource_tbweaponskin = {
     ParamList = {},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501042", ""),
     SpecialBgIcon = ""
   },
   [10500801] = {
@@ -662,7 +662,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500801", ""),
     SpecialBgIcon = ""
   },
   [10500802] = {
@@ -680,7 +680,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500802", ""),
     SpecialBgIcon = ""
   },
   [10500803] = {
@@ -698,7 +698,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500803", ""),
     SpecialBgIcon = ""
   },
   [10500804] = {
@@ -716,7 +716,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500804", ""),
     SpecialBgIcon = ""
   },
   [10500805] = {
@@ -734,7 +734,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500805", ""),
     SpecialBgIcon = ""
   },
   [10500806] = {
@@ -752,7 +752,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500806", ""),
     SpecialBgIcon = ""
   },
   [10500807] = {
@@ -770,7 +770,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500807", ""),
     SpecialBgIcon = ""
   },
   [10500821] = {
@@ -782,13 +782,13 @@ local resource_tbweaponskin = {
     DescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "Desc_10500821", "\228\184\138\230\160\161\230\173\166\229\153\168\227\128\144\229\186\135\230\138\164\232\128\133\227\128\145\231\168\128\230\156\137\231\186\167\229\164\150\232\167\130\227\128\130"),
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Taros_Ff_B1.Gun02_Taros_Ff_B1",
     LinkId = "",
-    LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10500821", ""),
+    LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10500821", "[\230\151\160\233\156\128\231\191\187\232\175\145]Y"),
     ParamList = {},
     HeirloomIconPath = "",
     Sort = 0,
     IsShow = true,
-    IsUnlockShow = false,
-    SpecialText = "",
+    IsUnlockShow = true,
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500821", ""),
     SpecialBgIcon = ""
   },
   [10500822] = {
@@ -806,7 +806,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500822", ""),
     SpecialBgIcon = ""
   },
   [10500841] = {
@@ -824,7 +824,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500841", ""),
     SpecialBgIcon = ""
   },
   [10500842] = {
@@ -842,7 +842,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10500842", ""),
     SpecialBgIcon = ""
   },
   [10501101] = {
@@ -860,7 +860,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501101", ""),
     SpecialBgIcon = ""
   },
   [10501102] = {
@@ -876,9 +876,9 @@ local resource_tbweaponskin = {
     ParamList = {1},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501102", ""),
     SpecialBgIcon = ""
   },
   [10501103] = {
@@ -896,7 +896,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501103", ""),
     SpecialBgIcon = ""
   },
   [10501104] = {
@@ -914,7 +914,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501104", ""),
     SpecialBgIcon = ""
   },
   [10501105] = {
@@ -932,7 +932,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501105", ""),
     SpecialBgIcon = ""
   },
   [10501106] = {
@@ -950,7 +950,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501106", ""),
     SpecialBgIcon = ""
   },
   [10501107] = {
@@ -968,7 +968,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501107", ""),
     SpecialBgIcon = ""
   },
   [10501121] = {
@@ -980,13 +980,13 @@ local resource_tbweaponskin = {
     DescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "Desc_10501121", "\230\155\153\229\133\137\230\173\166\229\153\168\227\128\144\229\189\151\232\128\128\227\128\145\231\168\128\230\156\137\231\186\167\229\164\150\232\167\130\227\128\130"),
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Linglan_Ff_B1.Gun02_Linglan_Ff_B1",
     LinkId = "",
-    LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10501121", ""),
+    LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10501121", "[\230\151\160\233\156\128\231\191\187\232\175\145]Y"),
     ParamList = {},
     HeirloomIconPath = "",
     Sort = 0,
     IsShow = true,
-    IsUnlockShow = false,
-    SpecialText = "",
+    IsUnlockShow = true,
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501121", ""),
     SpecialBgIcon = ""
   },
   [10501122] = {
@@ -1004,7 +1004,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501122", ""),
     SpecialBgIcon = ""
   },
   [10501141] = {
@@ -1022,7 +1022,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501141", ""),
     SpecialBgIcon = ""
   },
   [10501142] = {
@@ -1040,7 +1040,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501142", ""),
     SpecialBgIcon = ""
   },
   [10501201] = {
@@ -1058,7 +1058,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501201", ""),
     SpecialBgIcon = ""
   },
   [10501202] = {
@@ -1076,7 +1076,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501202", ""),
     SpecialBgIcon = ""
   },
   [10501203] = {
@@ -1094,7 +1094,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501203", ""),
     SpecialBgIcon = ""
   },
   [10501204] = {
@@ -1112,7 +1112,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501204", ""),
     SpecialBgIcon = ""
   },
   [10501205] = {
@@ -1130,7 +1130,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501205", ""),
     SpecialBgIcon = ""
   },
   [10501206] = {
@@ -1141,14 +1141,14 @@ local resource_tbweaponskin = {
     SkinNameLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SkinName_10501206", "\230\152\159\228\186\145\194\183\231\185\129\232\141\163"),
     DescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "Desc_10501206", "\230\155\153\229\133\137\230\173\166\229\153\168\227\128\144\230\152\159\228\186\145\227\128\145\231\168\128\230\156\137\231\186\167\229\164\150\232\167\130\227\128\130"),
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Linglan_Yp_G5.Gun01_Linglan_Yp_G5",
-    LinkId = "",
-    LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10501206", ""),
-    ParamList = {},
+    LinkId = "9999",
+    LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10501206", "\230\180\187\229\138\168\232\142\183\229\190\151"),
+    ParamList = {4},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501206", ""),
     SpecialBgIcon = ""
   },
   [10501207] = {
@@ -1166,7 +1166,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501207", ""),
     SpecialBgIcon = ""
   },
   [10501221] = {
@@ -1182,9 +1182,9 @@ local resource_tbweaponskin = {
     ParamList = {2, 501221},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501221", ""),
     SpecialBgIcon = ""
   },
   [10501222] = {
@@ -1202,7 +1202,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501222", ""),
     SpecialBgIcon = ""
   },
   [10501241] = {
@@ -1220,7 +1220,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501241", ""),
     SpecialBgIcon = ""
   },
   [10501242] = {
@@ -1238,7 +1238,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501242", ""),
     SpecialBgIcon = ""
   },
   [10501601] = {
@@ -1256,7 +1256,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501601", ""),
     SpecialBgIcon = ""
   },
   [10501602] = {
@@ -1274,7 +1274,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501602", ""),
     SpecialBgIcon = ""
   },
   [10501603] = {
@@ -1292,7 +1292,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501603", ""),
     SpecialBgIcon = ""
   },
   [10501604] = {
@@ -1310,7 +1310,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501604", ""),
     SpecialBgIcon = ""
   },
   [10501605] = {
@@ -1328,7 +1328,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501605", ""),
     SpecialBgIcon = ""
   },
   [10501606] = {
@@ -1346,7 +1346,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501606", ""),
     SpecialBgIcon = ""
   },
   [10501607] = {
@@ -1364,7 +1364,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501607", ""),
     SpecialBgIcon = ""
   },
   [10501621] = {
@@ -1380,9 +1380,9 @@ local resource_tbweaponskin = {
     ParamList = {},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = true,
+    IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501621", ""),
     SpecialBgIcon = ""
   },
   [10501622] = {
@@ -1400,7 +1400,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501622", ""),
     SpecialBgIcon = ""
   },
   [10501641] = {
@@ -1416,9 +1416,9 @@ local resource_tbweaponskin = {
     ParamList = {1},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501641", ""),
     SpecialBgIcon = ""
   },
   [10501642] = {
@@ -1436,7 +1436,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501642", ""),
     SpecialBgIcon = ""
   },
   [10501401] = {
@@ -1447,14 +1447,14 @@ local resource_tbweaponskin = {
     SkinNameLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SkinName_10501401", "\229\133\131\230\176\148\231\148\156\229\191\131"),
     DescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "Desc_10501401", "\230\160\188\231\189\151\232\142\137\228\186\154\230\173\166\229\153\168\227\128\144\229\133\131\230\176\148\231\148\156\229\191\131\227\128\145\233\187\152\232\174\164\229\164\150\232\167\130\227\128\130"),
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Gloria_Yp.Gun01_Gloria_Yp",
-    LinkId = "",
+    LinkId = "1007",
     LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10501401", "\232\142\183\229\143\150\232\167\146\232\137\178\229\144\142\232\167\163\233\148\129"),
-    ParamList = {},
+    ParamList = {7, 10703002},
     HeirloomIconPath = "",
     Sort = 0,
     IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501401", ""),
     SpecialBgIcon = ""
   },
   [10501402] = {
@@ -1470,9 +1470,9 @@ local resource_tbweaponskin = {
     ParamList = {2},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501402", ""),
     SpecialBgIcon = ""
   },
   [10501403] = {
@@ -1490,7 +1490,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501403", ""),
     SpecialBgIcon = ""
   },
   [10501404] = {
@@ -1508,7 +1508,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501404", ""),
     SpecialBgIcon = ""
   },
   [10501405] = {
@@ -1526,7 +1526,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501405", ""),
     SpecialBgIcon = ""
   },
   [10501406] = {
@@ -1544,7 +1544,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501406", ""),
     SpecialBgIcon = ""
   },
   [10501407] = {
@@ -1562,7 +1562,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501407", ""),
     SpecialBgIcon = ""
   },
   [10501421] = {
@@ -1580,7 +1580,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501421", ""),
     SpecialBgIcon = ""
   },
   [10501422] = {
@@ -1596,9 +1596,9 @@ local resource_tbweaponskin = {
     ParamList = {2, 501422},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501422", ""),
     SpecialBgIcon = ""
   },
   [10501441] = {
@@ -1609,14 +1609,14 @@ local resource_tbweaponskin = {
     SkinNameLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SkinName_10501441", "\229\164\143\230\151\165\228\189\153\230\153\150"),
     DescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "Desc_10501441", "\230\160\188\231\189\151\232\142\137\228\186\154\230\173\166\229\153\168\227\128\144\229\133\131\230\176\148\231\148\156\229\191\131\227\128\145\229\143\178\232\175\151\231\186\167\229\164\150\232\167\130\227\128\130"),
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Gloria_Ff_P1.Gun01_Gloria_Ff_P1",
-    LinkId = "",
-    LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10501441", ""),
-    ParamList = {},
+    LinkId = "9999",
+    LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10501441", "\227\128\144\230\181\183\229\178\184\233\173\133\229\189\177\227\128\145\230\180\187\229\138\168\232\142\183\229\190\151"),
+    ParamList = {2},
     HeirloomIconPath = "",
     Sort = 0,
     IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501441", ""),
     SpecialBgIcon = ""
   },
   [10501442] = {
@@ -1634,7 +1634,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501442", ""),
     SpecialBgIcon = ""
   },
   [10501701] = {
@@ -1652,7 +1652,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501701", ""),
     SpecialBgIcon = ""
   },
   [10501702] = {
@@ -1668,9 +1668,9 @@ local resource_tbweaponskin = {
     ParamList = {1},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501702", ""),
     SpecialBgIcon = ""
   },
   [10501703] = {
@@ -1688,7 +1688,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501703", ""),
     SpecialBgIcon = ""
   },
   [10501704] = {
@@ -1699,14 +1699,14 @@ local resource_tbweaponskin = {
     SkinNameLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SkinName_10501704", "\230\136\152\230\150\151\229\176\143\231\134\138\194\183\231\148\181\229\185\187"),
     DescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "Desc_10501704", "\230\160\188\231\189\151\232\142\137\228\186\154\230\173\166\229\153\168\227\128\144\230\136\152\230\150\151\229\176\143\231\134\138\227\128\145\231\168\128\230\156\137\231\186\167\229\164\150\232\167\130\227\128\130"),
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Gloria_Ff_G3.Gun02_Gloria_Ff_G3",
-    LinkId = "",
-    LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10501704", ""),
-    ParamList = {},
+    LinkId = "9999",
+    LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10501704", "\232\182\133\229\128\188\233\166\150\229\133\133"),
+    ParamList = {1},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501704", ""),
     SpecialBgIcon = ""
   },
   [10501705] = {
@@ -1724,7 +1724,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501705", ""),
     SpecialBgIcon = ""
   },
   [10501706] = {
@@ -1742,7 +1742,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501706", ""),
     SpecialBgIcon = ""
   },
   [10501707] = {
@@ -1760,7 +1760,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501707", ""),
     SpecialBgIcon = ""
   },
   [10501721] = {
@@ -1778,7 +1778,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501721", ""),
     SpecialBgIcon = ""
   },
   [10501722] = {
@@ -1796,7 +1796,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501722", ""),
     SpecialBgIcon = ""
   },
   [10501741] = {
@@ -1814,7 +1814,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501741", ""),
     SpecialBgIcon = ""
   },
   [10501742] = {
@@ -1832,7 +1832,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501742", ""),
     SpecialBgIcon = ""
   },
   [10501501] = {
@@ -1848,9 +1848,9 @@ local resource_tbweaponskin = {
     ParamList = {},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501501", ""),
     SpecialBgIcon = ""
   },
   [10501502] = {
@@ -1866,9 +1866,9 @@ local resource_tbweaponskin = {
     ParamList = {2, 501502},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501502", ""),
     SpecialBgIcon = ""
   },
   [10501503] = {
@@ -1886,7 +1886,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501503", ""),
     SpecialBgIcon = ""
   },
   [10501504] = {
@@ -1904,7 +1904,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501504", ""),
     SpecialBgIcon = ""
   },
   [10501505] = {
@@ -1922,7 +1922,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501505", ""),
     SpecialBgIcon = ""
   },
   [10501506] = {
@@ -1940,7 +1940,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501506", ""),
     SpecialBgIcon = ""
   },
   [10501507] = {
@@ -1958,7 +1958,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501507", ""),
     SpecialBgIcon = ""
   },
   [10501521] = {
@@ -1974,9 +1974,9 @@ local resource_tbweaponskin = {
     ParamList = {},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501521", ""),
     SpecialBgIcon = ""
   },
   [10501522] = {
@@ -1992,9 +1992,9 @@ local resource_tbweaponskin = {
     ParamList = {},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = true,
+    IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501522", ""),
     SpecialBgIcon = ""
   },
   [10501541] = {
@@ -2005,14 +2005,14 @@ local resource_tbweaponskin = {
     SkinNameLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SkinName_10501541", "\231\145\176\232\137\178\233\163\142\230\154\180"),
     DescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "Desc_10501541", "\230\181\183\229\155\160\229\133\139\230\150\175\230\173\166\229\153\168\227\128\144\231\151\133\230\175\146\230\154\151\230\152\159\227\128\145\229\143\178\232\175\151\231\186\167\229\164\150\232\167\130\227\128\130"),
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun01_Hyks_Ff_P1.Gun01_Hyks_Ff_P1",
-    LinkId = "",
-    LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10501541", ""),
-    ParamList = {},
+    LinkId = "9999",
+    LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10501541", "\227\128\144\229\164\143\230\151\165\229\128\190\230\131\133\227\128\145\230\180\187\229\138\168\232\142\183\229\190\151"),
+    ParamList = {3},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = true,
+    IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501541", ""),
     SpecialBgIcon = ""
   },
   [10501542] = {
@@ -2030,7 +2030,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501542", ""),
     SpecialBgIcon = ""
   },
   [10502701] = {
@@ -2048,7 +2048,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502701", ""),
     SpecialBgIcon = ""
   },
   [10502702] = {
@@ -2064,9 +2064,9 @@ local resource_tbweaponskin = {
     ParamList = {1},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502702", ""),
     SpecialBgIcon = ""
   },
   [10502703] = {
@@ -2084,7 +2084,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502703", ""),
     SpecialBgIcon = ""
   },
   [10502704] = {
@@ -2102,7 +2102,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502704", ""),
     SpecialBgIcon = ""
   },
   [10502705] = {
@@ -2120,7 +2120,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502705", ""),
     SpecialBgIcon = ""
   },
   [10502706] = {
@@ -2138,7 +2138,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502706", ""),
     SpecialBgIcon = ""
   },
   [10502707] = {
@@ -2156,7 +2156,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502707", ""),
     SpecialBgIcon = ""
   },
   [10502721] = {
@@ -2172,9 +2172,9 @@ local resource_tbweaponskin = {
     ParamList = {7, 10707004},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502721", ""),
     SpecialBgIcon = ""
   },
   [10502722] = {
@@ -2190,9 +2190,9 @@ local resource_tbweaponskin = {
     ParamList = {},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = true,
+    IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502722", ""),
     SpecialBgIcon = ""
   },
   [10502741] = {
@@ -2210,7 +2210,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502741", ""),
     SpecialBgIcon = ""
   },
   [10502742] = {
@@ -2228,7 +2228,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502742", ""),
     SpecialBgIcon = ""
   },
   [10501901] = {
@@ -2246,7 +2246,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501901", ""),
     SpecialBgIcon = ""
   },
   [10501902] = {
@@ -2264,7 +2264,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501902", ""),
     SpecialBgIcon = ""
   },
   [10501903] = {
@@ -2282,7 +2282,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501903", ""),
     SpecialBgIcon = ""
   },
   [10501904] = {
@@ -2300,7 +2300,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501904", ""),
     SpecialBgIcon = ""
   },
   [10501905] = {
@@ -2318,7 +2318,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501905", ""),
     SpecialBgIcon = ""
   },
   [10501906] = {
@@ -2336,7 +2336,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501906", ""),
     SpecialBgIcon = ""
   },
   [10501907] = {
@@ -2354,7 +2354,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501907", ""),
     SpecialBgIcon = ""
   },
   [10501921] = {
@@ -2372,7 +2372,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501921", ""),
     SpecialBgIcon = ""
   },
   [10501922] = {
@@ -2390,7 +2390,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501922", ""),
     SpecialBgIcon = ""
   },
   [10501941] = {
@@ -2408,7 +2408,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501941", ""),
     SpecialBgIcon = ""
   },
   [10501942] = {
@@ -2426,7 +2426,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10501942", ""),
     SpecialBgIcon = ""
   },
   [10502001] = {
@@ -2444,7 +2444,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502001", ""),
     SpecialBgIcon = ""
   },
   [10502101] = {
@@ -2455,14 +2455,14 @@ local resource_tbweaponskin = {
     SkinNameLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SkinName_10502101", "\230\157\165\229\136\135\231\130\185\228\187\128\228\185\136"),
     DescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "Desc_10502101", "\233\186\166\229\133\139\230\150\175\230\173\166\229\153\168\227\128\144\230\157\165\229\136\135\231\130\185\228\187\128\228\185\136\227\128\145\233\187\152\232\174\164\229\164\150\232\167\130\227\128\130"),
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewWeapon/Frames/Gun02_Nax_Yp.Gun02_Nax_Yp",
-    LinkId = "",
+    LinkId = "1007",
     LinkDescLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "LinkDesc_10502101", "\232\142\183\229\143\150\232\167\146\232\137\178\229\144\142\232\167\163\233\148\129"),
-    ParamList = {},
+    ParamList = {7, 10703001},
     HeirloomIconPath = "",
     Sort = 0,
     IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502101", ""),
     SpecialBgIcon = ""
   },
   [10502102] = {
@@ -2478,9 +2478,9 @@ local resource_tbweaponskin = {
     ParamList = {2},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502102", ""),
     SpecialBgIcon = ""
   },
   [10502103] = {
@@ -2498,7 +2498,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502103", ""),
     SpecialBgIcon = ""
   },
   [10502104] = {
@@ -2516,7 +2516,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502104", ""),
     SpecialBgIcon = ""
   },
   [10502105] = {
@@ -2534,7 +2534,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502105", ""),
     SpecialBgIcon = ""
   },
   [10502106] = {
@@ -2552,7 +2552,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502106", ""),
     SpecialBgIcon = ""
   },
   [10502107] = {
@@ -2570,7 +2570,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502107", ""),
     SpecialBgIcon = ""
   },
   [10502121] = {
@@ -2586,9 +2586,9 @@ local resource_tbweaponskin = {
     ParamList = {1, 1001},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502121", ""),
     SpecialBgIcon = ""
   },
   [10502122] = {
@@ -2606,7 +2606,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502122", ""),
     SpecialBgIcon = ""
   },
   [10502141] = {
@@ -2622,9 +2622,9 @@ local resource_tbweaponskin = {
     ParamList = {2, 502141},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502141", ""),
     SpecialBgIcon = ""
   },
   [10502142] = {
@@ -2642,7 +2642,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502142", ""),
     SpecialBgIcon = ""
   },
   [10502201] = {
@@ -2660,7 +2660,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502201", ""),
     SpecialBgIcon = ""
   },
   [10502202] = {
@@ -2678,7 +2678,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502202", ""),
     SpecialBgIcon = ""
   },
   [10502203] = {
@@ -2696,7 +2696,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502203", ""),
     SpecialBgIcon = ""
   },
   [10502204] = {
@@ -2714,7 +2714,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502204", ""),
     SpecialBgIcon = ""
   },
   [10502205] = {
@@ -2732,7 +2732,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502205", ""),
     SpecialBgIcon = ""
   },
   [10502206] = {
@@ -2750,7 +2750,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502206", ""),
     SpecialBgIcon = ""
   },
   [10502207] = {
@@ -2768,7 +2768,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502207", ""),
     SpecialBgIcon = ""
   },
   [10502221] = {
@@ -2786,7 +2786,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502221", ""),
     SpecialBgIcon = ""
   },
   [10502222] = {
@@ -2804,7 +2804,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502222", ""),
     SpecialBgIcon = ""
   },
   [10502241] = {
@@ -2822,7 +2822,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502241", ""),
     SpecialBgIcon = ""
   },
   [10502242] = {
@@ -2840,7 +2840,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502242", ""),
     SpecialBgIcon = ""
   },
   [10502281] = {
@@ -2858,7 +2858,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502281", ""),
     SpecialBgIcon = ""
   },
   [10502282] = {
@@ -2876,7 +2876,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502282", ""),
     SpecialBgIcon = ""
   },
   [10502301] = {
@@ -2894,7 +2894,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502301", ""),
     SpecialBgIcon = ""
   },
   [10502302] = {
@@ -2912,7 +2912,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502302", ""),
     SpecialBgIcon = ""
   },
   [10502303] = {
@@ -2930,7 +2930,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502303", ""),
     SpecialBgIcon = ""
   },
   [10502304] = {
@@ -2948,7 +2948,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502304", ""),
     SpecialBgIcon = ""
   },
   [10502305] = {
@@ -2966,7 +2966,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502305", ""),
     SpecialBgIcon = ""
   },
   [10502306] = {
@@ -2984,7 +2984,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502306", ""),
     SpecialBgIcon = ""
   },
   [10502307] = {
@@ -3002,7 +3002,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502307", ""),
     SpecialBgIcon = ""
   },
   [10502321] = {
@@ -3020,7 +3020,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502321", ""),
     SpecialBgIcon = ""
   },
   [10502322] = {
@@ -3038,7 +3038,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502322", ""),
     SpecialBgIcon = ""
   },
   [10502341] = {
@@ -3056,7 +3056,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502341", ""),
     SpecialBgIcon = ""
   },
   [10502342] = {
@@ -3074,7 +3074,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502342", ""),
     SpecialBgIcon = ""
   },
   [10502401] = {
@@ -3090,9 +3090,9 @@ local resource_tbweaponskin = {
     ParamList = {7, 10703003},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502401", ""),
     SpecialBgIcon = ""
   },
   [10502441] = {
@@ -3108,9 +3108,9 @@ local resource_tbweaponskin = {
     ParamList = {2},
     HeirloomIconPath = "",
     Sort = 0,
-    IsShow = false,
+    IsShow = true,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502441", ""),
     SpecialBgIcon = ""
   },
   [10502501] = {
@@ -3128,7 +3128,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502501", ""),
     SpecialBgIcon = ""
   },
   [10502502] = {
@@ -3146,7 +3146,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502502", ""),
     SpecialBgIcon = ""
   },
   [10502503] = {
@@ -3164,7 +3164,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502503", ""),
     SpecialBgIcon = ""
   },
   [10502504] = {
@@ -3182,7 +3182,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502504", ""),
     SpecialBgIcon = ""
   },
   [10502505] = {
@@ -3200,7 +3200,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502505", ""),
     SpecialBgIcon = ""
   },
   [10502506] = {
@@ -3218,7 +3218,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502506", ""),
     SpecialBgIcon = ""
   },
   [10502507] = {
@@ -3236,7 +3236,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502507", ""),
     SpecialBgIcon = ""
   },
   [10502521] = {
@@ -3254,7 +3254,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502521", ""),
     SpecialBgIcon = ""
   },
   [10502522] = {
@@ -3272,7 +3272,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502522", ""),
     SpecialBgIcon = ""
   },
   [10502541] = {
@@ -3290,7 +3290,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502541", ""),
     SpecialBgIcon = ""
   },
   [10502542] = {
@@ -3308,7 +3308,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502542", ""),
     SpecialBgIcon = ""
   },
   [10502801] = {
@@ -3326,7 +3326,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502801", ""),
     SpecialBgIcon = ""
   },
   [10502802] = {
@@ -3344,7 +3344,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502802", ""),
     SpecialBgIcon = ""
   },
   [10502803] = {
@@ -3362,7 +3362,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502803", ""),
     SpecialBgIcon = ""
   },
   [10502804] = {
@@ -3380,7 +3380,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502804", ""),
     SpecialBgIcon = ""
   },
   [10502805] = {
@@ -3398,7 +3398,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502805", ""),
     SpecialBgIcon = ""
   },
   [10502806] = {
@@ -3416,7 +3416,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502806", ""),
     SpecialBgIcon = ""
   },
   [10502807] = {
@@ -3434,7 +3434,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502807", ""),
     SpecialBgIcon = ""
   },
   [10502821] = {
@@ -3452,7 +3452,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502821", ""),
     SpecialBgIcon = ""
   },
   [10502822] = {
@@ -3470,7 +3470,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502822", ""),
     SpecialBgIcon = ""
   },
   [10502841] = {
@@ -3488,7 +3488,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502841", ""),
     SpecialBgIcon = ""
   },
   [10502842] = {
@@ -3506,7 +3506,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502842", ""),
     SpecialBgIcon = ""
   },
   [10502901] = {
@@ -3524,7 +3524,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10502901", ""),
     SpecialBgIcon = ""
   },
   [10503301] = {
@@ -3542,7 +3542,7 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10503301", ""),
     SpecialBgIcon = ""
   },
   [10503311] = {
@@ -3560,14 +3560,15 @@ local resource_tbweaponskin = {
     Sort = 0,
     IsShow = false,
     IsUnlockShow = false,
-    SpecialText = "",
+    SpecialTextLocMeta = NSLOCTEXT("resource_TBWeaponSkin", "SpecialText_10503311", ""),
     SpecialBgIcon = ""
   }
 }
 local LinkTb = {
   SkinName = "SkinNameLocMeta",
   Desc = "DescLocMeta",
-  LinkDesc = "LinkDescLocMeta"
+  LinkDesc = "LinkDescLocMeta",
+  SpecialText = "SpecialTextLocMeta"
 }
 local LuaTableMeta = {
   __index = function(table, key)

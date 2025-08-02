@@ -1,11 +1,15 @@
 local ChipAttrListTip = UnLua.Class()
+
 function ChipAttrListTip:Construct()
 end
+
 function ChipAttrListTip:Destruct()
 end
+
 function ChipAttrListTip:InitEmpty()
   UpdateVisibility(self.CanvasPanel_Root, false)
 end
+
 function ChipAttrListTip:InitChipAttrListTip(ChipBagsItemData, bEquiped, ChipCompareState, ChipViewState, bForceShowFit)
   UpdateVisibility(self.CanvasPanel_Root, true)
   local viewModel = UIModelMgr:Get("ChipViewModel")
@@ -97,7 +101,9 @@ function ChipAttrListTip:InitChipAttrListTip(ChipBagsItemData, bEquiped, ChipCom
   end
   self.RGStateControllerOperator:ChangeStatus(tostring(ChipBagsItemData.Chip.state))
 end
+
 function ChipAttrListTip:Hide()
   UpdateVisibility(self, false)
 end
+
 return ChipAttrListTip

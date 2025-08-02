@@ -1,5 +1,6 @@
 local BattleRoleInfoConfig = require("GameConfig.BattleRoleInfo.BattleRoleInfoConfig")
 local WBP_BattleRoleSkillItem_C = UnLua.Class()
+
 function WBP_BattleRoleSkillItem_C:Construct()
   self.Btn_Main.OnHovered:Add(self, WBP_BattleRoleSkillItem_C.BindOnMainButtonHovered)
   self.Btn_Main.OnUnhovered:Add(self, WBP_BattleRoleSkillItem_C.BindOnMainButtonUnhovered)
@@ -7,6 +8,7 @@ function WBP_BattleRoleSkillItem_C:Construct()
   self.SkillGroupId = -1
   self.LuaSkillTypeToName = self.SkillTypeToName:ToTable()
 end
+
 function WBP_BattleRoleSkillItem_C:RefreshInfo(RowInfo)
   self.SkillGroupId = RowInfo.Group
   local SoftObjectReference = MakeStringToSoftObjectReference(RowInfo.IconPath)
@@ -38,6 +40,7 @@ function WBP_BattleRoleSkillItem_C:RefreshInfo(RowInfo)
     UpdateVisibility(self.WBP_CustomKeyName, false)
   end
 end
+
 function WBP_BattleRoleSkillItem_C:BindOnMainButtonHovered()
   self.Img_Hovered:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   local PixelPos, ViewPos = UE.USlateBlueprintLibrary.LocalToViewport(self, self.Img_Frame:GetCachedGeometry(), UE.FVector2D(0.0, 0.0), nil, nil)
@@ -49,8 +52,10 @@ function WBP_BattleRoleSkillItem_C:BindOnMainButtonHovered()
   end
   EventSystem.Invoke(EventDef.Lobby.RoleSkillTip, true, Id, self.Name, bIsWeaponSkill, self)
 end
+
 function WBP_BattleRoleSkillItem_C:BindOnMainButtonUnhovered()
   self.Img_Hovered:SetVisibility(UE.ESlateVisibility.Collapsed)
   EventSystem.Invoke(EventDef.Lobby.RoleSkillTip, false)
 end
+
 return WBP_BattleRoleSkillItem_C

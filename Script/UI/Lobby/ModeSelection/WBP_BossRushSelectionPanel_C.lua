@@ -4,6 +4,7 @@ local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local SaveGrowthSnapData = require("Modules.SaveGrowthSnap.SaveGrowthSnapData")
 local WBP_BossRushSelectionPanel_C = Class(ViewBase)
+
 function WBP_BossRushSelectionPanel_C:BindClickHandler()
   self.Button_StartMatch.OnClicked:Add(self, self.StartMatch)
   self.WBP_InteractTipWidget:BindInteractAndClickEvent(self, self.BindOnEscKeyPressed)
@@ -12,20 +13,25 @@ function WBP_BossRushSelectionPanel_C:BindClickHandler()
   EventSystem.AddListener(self, EventDef.ModeSelection.OnChangeModeSelectionItem_BossRush, self.BindOnChangeModeSelectionItem)
   EventSystem.AddListener(self, EventDef.ModeSelection.OnChangeModeDifficultLevelItem_BossRush, self.BindOnChangeModeDifficultLevelItem)
 end
+
 function WBP_BossRushSelectionPanel_C:UnBindClickHandler()
   self.Button_StartMatch.OnClicked:Remove(self, self.StartMatch)
   self.WBP_InteractTipWidget:UnBindInteractAndClickEvent(self, self.BindOnEscKeyPressed)
   EventSystem.RemoveListener(EventDef.ModeSelection.OnChangeModeSelectionItem_BossRush, self.BindOnChangeModeSelectionItem, self)
   EventSystem.RemoveListener(EventDef.ModeSelection.OnChangeModeDifficultLevelItem_BossRush, self.BindOnChangeModeDifficultLevelItem, self)
 end
+
 function WBP_BossRushSelectionPanel_C:OnInit()
   self.DataBindTable = {}
 end
+
 function WBP_BossRushSelectionPanel_C:OnDestroy()
 end
+
 function WBP_BossRushSelectionPanel_C:OnShowLink(...)
   print("WBP_BossRushSelectionPanel_C:OnShowLink", ...)
 end
+
 function WBP_BossRushSelectionPanel_C:OnShow(...)
   self:BindClickHandler()
   self.GameModeId = 3001
@@ -40,12 +46,14 @@ function WBP_BossRushSelectionPanel_C:OnShow(...)
   self:SetEnhancedInputActionBlocking(true)
   UpdateVisibility(self.Button_StartMatch, not DataMgr.IsInTeam() or LogicTeam.IsCaptain(), true)
 end
+
 function WBP_BossRushSelectionPanel_C:OnHide()
   self:UnBindClickHandler()
   EventSystem.RemoveListenerNew(EventDef.SaveGrowthSnap.OnRefreshSelect, self, self.UpdateSaveGrowthSnapTxt)
   self.WBP_CommonButton_Snap.OnMainButtonClicked:Remove(self, self.OnOpenSnap)
   self:SetEnhancedInputActionBlocking(false)
 end
+
 function WBP_BossRushSelectionPanel_C:UpdateSaveGrowthSnapTxt()
   if not SaveGrowthSnapData:CheckIsEmpty(SaveGrowthSnapData.CurSelectPos) then
     local remark = SaveGrowthSnapData.SaveGrowthSnapMap[SaveGrowthSnapData.CurSelectPos].Remark
@@ -57,13 +65,16 @@ function WBP_BossRushSelectionPanel_C:UpdateSaveGrowthSnapTxt()
     self.RichText_Snap:SetText(desc)
   end
 end
+
 function WBP_BossRushSelectionPanel_C:OnOpenSnap()
   self.WBP_SaveGrowthSnap:ShowSnap(ESaveGrowthSnapFrom.ClimbTower)
   EventSystem.Invoke(EventDef.BeginnerGuide.OnClickOpenSnap)
 end
+
 function WBP_BossRushSelectionPanel_C:BindOnEscKeyPressed()
   UIMgr:Hide(ViewID.UI_BossRush, true)
 end
+
 function WBP_BossRushSelectionPanel_C:RefreshModeList()
   local TBBossRush = LuaTableMgr.GetLuaTableByName(TableNames.TBBossRush)
   local Index = 1
@@ -98,6 +109,7 @@ function WBP_BossRushSelectionPanel_C:RefreshModeList()
     end
   }, 0.25, false)
 end
+
 function WBP_BossRushSelectionPanel_C:StartMatch()
   if not self:IsUnlock() then
     print("\230\178\161\230\156\137\232\167\163\233\148\129")
@@ -130,6 +142,7 @@ function WBP_BossRushSelectionPanel_C:StartMatch()
     LogicLobby.ChangeLobbyPanelLabelSelected(LobbyPanelTagName)
   end
 end
+
 function WBP_BossRushSelectionPanel_C:OnHoverItem(bHover, ModeItem, ModeId, WorldId)
   if not bHover then
     UpdateVisibility(self.WBP_LockWordTip, bHover)
@@ -160,6 +173,7 @@ function WBP_BossRushSelectionPanel_C:OnHoverItem(bHover, ModeItem, ModeId, Worl
     UpdateVisibility(self.WBP_LockWordTip, true)
   end
 end
+
 function WBP_BossRushSelectionPanel_C:BindOnChangeModeSelectionItem(BossId, ModeId, GameModeId)
   self.CurSelectedWorldIndex = ModeId
   self.CurSelectMode = GameModeId
@@ -182,6 +196,7 @@ function WBP_BossRushSelectionPanel_C:BindOnChangeModeSelectionItem(BossId, Mode
     self:PlayAnimation(self.Ani_Difficulty_click)
   end
 end
+
 function WBP_BossRushSelectionPanel_C:BindOnChangeModeDifficultLevelItem(WorldIndex, Floor, GameModeId)
   self.CurSelectFloor = Floor
   self:RefreshModeList()
@@ -198,6 +213,7 @@ function WBP_BossRushSelectionPanel_C:BindOnChangeModeDifficultLevelItem(WorldIn
     self.RGStateController_Lock:ChangeStatus("Lock")
   end
 end
+
 function WBP_BossRushSelectionPanel_C:RefreshGameFloorDesc(GameModeIndex, Floor)
   local TBBossRush = LuaTableMgr.GetLuaTableByName(TableNames.TBBossRush)
   if TBBossRush[self.CurBossId] then
@@ -259,6 +275,7 @@ function WBP_BossRushSelectionPanel_C:RefreshGameFloorDesc(GameModeIndex, Floor)
     UpdateVisibility(self.FloorExtraDescPanel, false)
   end
 end
+
 function WBP_BossRushSelectionPanel_C:RefreshFloorDropPanel(GameModeIndex, Floor)
   local TBBossRush = LuaTableMgr.GetLuaTableByName(TableNames.TBBossRush)
   if TBBossRush[self.CurBossId] then
@@ -292,20 +309,24 @@ function WBP_BossRushSelectionPanel_C:RefreshFloorDropPanel(GameModeIndex, Floor
     UpdateVisibility(self.FloorDropPanel, false)
   end
 end
+
 function WBP_BossRushSelectionPanel_C:RefreshBeginnerClearRewardPanel()
 end
+
 function WBP_BossRushSelectionPanel_C:SetDifficulty_Easy()
   self.Btn_Difficulty:SetSelect(true)
   self.Btn_Difficulty_1:SetSelect(false)
   self:PlayAnimation(self.Ani_Easy_in)
   EventSystem.Invoke(EventDef.ModeSelection.OnChangeModeDifficultLevelItem_BossRush, self.CurSelectedWorldIndex, TableEnums.ENUMDifficultyType.Normal, self.CurSelectMode)
 end
+
 function WBP_BossRushSelectionPanel_C:SetDifficulty_Difficulty()
   self.Btn_Difficulty:SetSelect(false)
   self.Btn_Difficulty_1:SetSelect(true)
   self:PlayAnimation(self.Ani_Difficulty_in)
   EventSystem.Invoke(EventDef.ModeSelection.OnChangeModeDifficultLevelItem_BossRush, self.CurSelectedWorldIndex, TableEnums.ENUMDifficultyType.Hard, self.CurSelectMode)
 end
+
 function WBP_BossRushSelectionPanel_C:IsUnlock()
   local TBGameFloor = LuaTableMgr.GetLuaTableByName(TableNames.TBGameFloorUnlock)
   if TBGameFloor then
@@ -324,4 +345,5 @@ function WBP_BossRushSelectionPanel_C:IsUnlock()
   end
   return true
 end
+
 return WBP_BossRushSelectionPanel_C

@@ -1,12 +1,15 @@
 local WBP_IGuide_AttributeModify_C = UnLua.Class()
+
 function WBP_IGuide_AttributeModify_C:Construct()
   Logic_IllustratedGuide.PullUnLockAttributeModify()
   self:BindFunction()
   self:RefreshSetList()
 end
+
 function WBP_IGuide_AttributeModify_C:Destruct()
   self:UnBindFunction()
 end
+
 function WBP_IGuide_AttributeModify_C:BindFunction()
   self.SearchBtn.OnClicked:Add(self, WBP_IGuide_AttributeModify_C.ConfirmSearch)
   self.BtnCancelSearch.OnClicked:Add(self, WBP_IGuide_AttributeModify_C.CancelSearch)
@@ -16,12 +19,15 @@ function WBP_IGuide_AttributeModify_C:BindFunction()
   EventSystem.AddListener(self, EventDef.IllustratedGuide.AttributeModifyHoveredTip, WBP_IGuide_AttributeModify_C.RefreshFloatingWindow)
   EventSystem.AddListener(self, EventDef.Lobby.LobbyPanelChanged, self.BindOnLobbyPanelChanged)
 end
+
 function WBP_IGuide_AttributeModify_C:BindOnLobbyPanelChanged(LastActiveWidget, CurActiveWidget)
   self:CancelSearch()
 end
+
 function WBP_IGuide_AttributeModify_C:UnBindFunction()
   self.SearchBtn.OnClicked:Remove(self, WBP_IGuide_AttributeModify_C.ConfirmSearch)
 end
+
 function WBP_IGuide_AttributeModify_C:RefreshSetList()
   local ItemDatas = Logic_IllustratedGuide.GetSetListData()
   ItemDatas = Logic_IllustratedGuide.SortSetListData(ItemDatas)
@@ -33,10 +39,12 @@ function WBP_IGuide_AttributeModify_C:RefreshSetList()
   end
   self.SetList:SetSelectedIndex(0)
 end
+
 function WBP_IGuide_AttributeModify_C:ConfirmSearch()
   Logic_IllustratedGuide.SearchKeyword = self.EditableText_Search:GetText()
   self:RefreshSetList()
 end
+
 function WBP_IGuide_AttributeModify_C:CancelSearch()
   self.EditableText_Search:SetText("")
   if "" == Logic_IllustratedGuide.SearchKeyword then
@@ -46,6 +54,7 @@ function WBP_IGuide_AttributeModify_C:CancelSearch()
   self.EditableText_Search:SetText("")
   self:RefreshSetList()
 end
+
 function WBP_IGuide_AttributeModify_C:RefreshFloatingWindow(ItemWidget, Id, bShow)
   self.WBP_AttributeModify_HoveredTip:SetSelected(self.SetList:BP_GetSelectedItem() and self.SetList:BP_GetSelectedItem().Data.Id == Id)
   self.SetList:BP_GetSelectedItem()
@@ -62,6 +71,7 @@ function WBP_IGuide_AttributeModify_C:RefreshFloatingWindow(ItemWidget, Id, bSho
     self.WBP_AttributeModify_HoveredTip.Slot:SetPosition(LocalPosition + self.Offset)
   end
 end
+
 function WBP_IGuide_AttributeModify_C:OnItemSelectionChanged(Item, IsSelected)
   if IsSelected then
     self.SelectItem = Item
@@ -69,6 +79,7 @@ function WBP_IGuide_AttributeModify_C:OnItemSelectionChanged(Item, IsSelected)
     self:RefreshAttributeModifyList(Item.Data.Id)
   end
 end
+
 function WBP_IGuide_AttributeModify_C:RefreshAttributeModifyList(SetId)
   self.AttributeModifyList:ClearListItems()
   for key, value in pairs(Logic_IllustratedGuide.GetAttributeModifyListData(SetId)) do
@@ -76,12 +87,14 @@ function WBP_IGuide_AttributeModify_C:RefreshAttributeModifyList(SetId)
   end
   self.AttributeModifyList:SetSelectedIndex(0)
 end
+
 function WBP_IGuide_AttributeModify_C:OnSearchTextChanged(Text)
   UpdateVisibility(self.BtnCancelSearch, "" ~= Text, true)
   if string.len(Text) > self.MaxInputLength then
     self.EditableText_Search:SetText(string.sub(Text, 1, self.MaxInputLength))
   end
 end
+
 function WBP_IGuide_AttributeModify_C:OnItemHoveredChanged(item, bHovered)
   if bHovered then
     UpdateVisibility(self.Overlay_WBP_ScrollLegandTips, true)
@@ -95,4 +108,5 @@ function WBP_IGuide_AttributeModify_C:OnItemHoveredChanged(item, bHovered)
     UpdateVisibility(self.Overlay_WBP_ScrollLegandTips, false)
   end
 end
+
 return WBP_IGuide_AttributeModify_C

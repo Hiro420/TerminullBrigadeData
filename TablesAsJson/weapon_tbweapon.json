@@ -1,535 +1,566 @@
 ﻿{
   "200602": {
-    "LinkId": "",
-    "BarrelID": 200602,
-    "SkinID": 500701,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 200602,
+    "Priority": 0,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1005
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_200602",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 500701
   },
   "5024": {
-    "LinkId": "1038",
-    "BarrelID": 5024,
-    "SkinID": 502401,
     "ParamList": {
       "1": 10703003
     },
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 5024,
+    "Priority": 3,
+    "BarrelRarity": 4,
+    "LinkId": "1038",
     "HeroRelate": {
       "1": 1000
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5024",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": "兑换商城购买"
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 502401
   },
   "50331": {
-    "LinkId": "",
-    "BarrelID": 50331,
-    "SkinID": 501101,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 50331,
+    "Priority": 0,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1100
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_50331",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 501101
   },
   "101002": {
-    "LinkId": "",
-    "BarrelID": 101002,
-    "SkinID": 500701,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 101002,
+    "Priority": 0,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1004
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_101002",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 500701
   },
   "5027": {
-    "LinkId": "1006",
-    "BarrelID": 5027,
-    "SkinID": 502701,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 5027,
+    "Priority": 2,
+    "BarrelRarity": 4,
+    "LinkId": "1006",
     "HeroRelate": {
       "1": 1060
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5027",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": "角色熟练度解锁"
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 502701
   },
   "5028": {
-    "LinkId": "",
-    "BarrelID": 5028,
-    "SkinID": 502801,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 5028,
+    "Priority": 2,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1090
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5028",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 502801
   },
   "5033": {
-    "LinkId": "",
-    "BarrelID": 5033,
-    "SkinID": 501101,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 5033,
+    "Priority": 1,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1100
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5033",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 501101
   },
   "5023": {
-    "LinkId": "",
-    "BarrelID": 5023,
-    "SkinID": 502301,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 5023,
+    "Priority": 1,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1090
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5023",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 502301
   },
   "200202": {
-    "LinkId": "",
-    "BarrelID": 200202,
-    "SkinID": 500701,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 200202,
+    "Priority": 0,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1005
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_200202",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 500701
   },
   "5019": {
-    "LinkId": "",
-    "BarrelID": 5019,
-    "SkinID": 501901,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 5019,
+    "Priority": 1,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1080
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5019",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 501901
   },
   "200302": {
-    "LinkId": "",
-    "BarrelID": 200302,
-    "SkinID": 500701,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 200302,
+    "Priority": 0,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1005
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_200302",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 500701
   },
   "5012": {
-    "LinkId": "",
-    "BarrelID": 5012,
-    "SkinID": 501201,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 5012,
+    "Priority": 1,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1000
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5012",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 501201
   },
   "5016": {
-    "LinkId": "1006",
-    "BarrelID": 5016,
-    "SkinID": 501601,
     "ParamList": {},
+    "HeroProfy": 2,
+    "HeirloomIconPath": "",
+    "BarrelID": 5016,
+    "Priority": 2,
+    "BarrelRarity": 4,
+    "LinkId": "1006",
     "HeroRelate": {
       "1": 1030
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5016",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": "角色熟练度解锁"
     },
-    "HeroProfy": 2,
-    "BarrelRarity": 4
+    "SkinID": 501601
   },
   "100702": {
-    "LinkId": "",
-    "BarrelID": 100702,
-    "SkinID": 500701,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 100702,
+    "Priority": 0,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1004
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_100702",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 500701
   },
   "5006": {
-    "LinkId": "",
-    "BarrelID": 5006,
-    "SkinID": 500701,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 5006,
+    "Priority": 0,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1004,
       "2": 1005
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5006",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 500701
   },
   "5007": {
-    "LinkId": "",
-    "BarrelID": 5007,
-    "SkinID": 500701,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 5007,
+    "Priority": 1,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1010
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5007",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 500701
   },
   "5008": {
-    "LinkId": "1006",
-    "BarrelID": 5008,
-    "SkinID": 500801,
     "ParamList": {},
+    "HeroProfy": 2,
+    "HeirloomIconPath": "",
+    "BarrelID": 5008,
+    "Priority": 2,
+    "BarrelRarity": 4,
+    "LinkId": "1006",
     "HeroRelate": {
       "1": 1020
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5008",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": "角色熟练度解锁"
     },
-    "HeroProfy": 2,
-    "BarrelRarity": 4
+    "SkinID": 500801
   },
   "200402": {
-    "LinkId": "",
-    "BarrelID": 200402,
-    "SkinID": 500701,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 200402,
+    "Priority": 0,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1004
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_200402",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 500701
   },
   "5010": {
-    "LinkId": "",
-    "BarrelID": 5010,
-    "SkinID": 501001,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 5010,
+    "Priority": 1,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1020
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5010",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 501001
   },
   "5011": {
-    "LinkId": "1006",
-    "BarrelID": 5011,
-    "SkinID": 501101,
     "ParamList": {},
+    "HeroProfy": 2,
+    "HeirloomIconPath": "",
+    "BarrelID": 5011,
+    "Priority": 2,
+    "BarrelRarity": 4,
+    "LinkId": "1006",
     "HeroRelate": {
       "1": 1000
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5011",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": "角色熟练度解锁"
     },
-    "HeroProfy": 2,
-    "BarrelRarity": 4
+    "SkinID": 501101
   },
   "100802": {
-    "LinkId": "",
-    "BarrelID": 100802,
-    "SkinID": 500701,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 100802,
+    "Priority": 0,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1004
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_100802",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 500701
   },
   "5005": {
-    "LinkId": "",
-    "BarrelID": 5005,
-    "SkinID": 500701,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 5005,
+    "Priority": 0,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1004,
       "2": 1005
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5005",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 500701
   },
   "5014": {
-    "LinkId": "",
-    "BarrelID": 5014,
-    "SkinID": 501401,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 5014,
+    "Priority": 1,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1040
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5014",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 501401
   },
   "5015": {
-    "LinkId": "",
-    "BarrelID": 5015,
-    "SkinID": 501501,
     "ParamList": {},
+    "HeroProfy": 2,
+    "HeirloomIconPath": "",
+    "BarrelID": 5015,
+    "Priority": 1,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1060
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5015",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 2,
-    "BarrelRarity": 4
+    "SkinID": 501501
   },
   "200502": {
-    "LinkId": "",
-    "BarrelID": 200502,
-    "SkinID": 500701,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 200502,
+    "Priority": 0,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1004
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_200502",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 500701
   },
   "5017": {
-    "LinkId": "1006",
-    "BarrelID": 5017,
-    "SkinID": 501701,
     "ParamList": {},
+    "HeroProfy": 2,
+    "HeirloomIconPath": "",
+    "BarrelID": 5017,
+    "Priority": 2,
+    "BarrelRarity": 4,
+    "LinkId": "1006",
     "HeroRelate": {
       "1": 1040
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5017",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": "角色熟练度解锁"
     },
-    "HeroProfy": 2,
-    "BarrelRarity": 4
+    "SkinID": 501701
   },
   "5018": {
-    "LinkId": "1039",
-    "BarrelID": 5018,
-    "SkinID": 501801,
     "ParamList": {
       "1": 10707002
     },
+    "HeroProfy": 0,
+    "HeirloomIconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_qiang02_01.Icon_qiang02_01",
+    "BarrelID": 5018,
+    "Priority": 3,
+    "BarrelRarity": 4,
+    "LinkId": "1039",
     "HeroRelate": {
       "1": 1010
     },
-    "HeirloomIconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_qiang02_01.Icon_qiang02_01",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5018",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": "兑换商城购买"
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 501801
   },
   "100902": {
-    "LinkId": "",
-    "BarrelID": 100902,
-    "SkinID": 500701,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 100902,
+    "Priority": 0,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1004
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_100902",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 500701
   },
   "5009": {
-    "LinkId": "1006",
-    "BarrelID": 5009,
-    "SkinID": 500901,
     "ParamList": {},
+    "HeroProfy": 2,
+    "HeirloomIconPath": "",
+    "BarrelID": 5009,
+    "Priority": 2,
+    "BarrelRarity": 4,
+    "LinkId": "1006",
     "HeroRelate": {
       "1": 1010
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5009",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": "角色熟练度解锁"
     },
-    "HeroProfy": 2,
-    "BarrelRarity": 4
+    "SkinID": 500901
   },
   "5021": {
-    "LinkId": "",
-    "BarrelID": 5021,
-    "SkinID": 502101,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 5021,
+    "Priority": 1,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1030
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_5021",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": "枪械未解锁"
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 502101
   },
   "200102": {
-    "LinkId": "",
-    "BarrelID": 200102,
-    "SkinID": 500701,
     "ParamList": {},
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "BarrelID": 200102,
+    "Priority": 0,
+    "BarrelRarity": 4,
+    "LinkId": "",
     "HeroRelate": {
       "1": 1005
     },
-    "HeirloomIconPath": "",
     "LinkDescLocMeta": {
-      "InNamespace": "weapon_TBWeapon",
       "InKey": "LinkDesc_200102",
+      "InNamespace": "weapon_TBWeapon",
       "InTextLiteral": ""
     },
-    "HeroProfy": 0,
-    "BarrelRarity": 4
+    "SkinID": 500701
   }
 }

@@ -1,0 +1,94 @@
+[
+  {
+    "ID": 1,
+    "Name": "商城-捆绑包货架",
+    "IsOpen": true,
+    "StartTime": "2023-03-01 00:00:00",
+    "EndTime": "2035-06-01 00:00:00",
+    "TapList": [],
+    "TemplateId": 1
+  },
+  {
+    "ID": 2,
+    "Name": "商城-常驻货架",
+    "IsOpen": true,
+    "StartTime": "2023-03-01 00:00:00",
+    "EndTime": "2035-06-01 00:00:00",
+    "TapList": [
+      1,
+      2
+    ],
+    "TemplateId": 2
+  },
+  {
+    "ID": 3,
+    "Name": "商城-道具货架",
+    "IsOpen": true,
+    "StartTime": "2023-03-01 00:00:00",
+    "EndTime": "2035-06-01 00:00:00",
+    "TapList": [],
+    "TemplateId": 3
+  },
+  {
+    "ID": 4,
+    "Name": "商城-充值货架",
+    "IsOpen": true,
+    "StartTime": "2023-03-01 00:00:00",
+    "EndTime": "2035-06-01 00:00:00",
+    "TapList": [],
+    "TemplateId": 0
+  },
+  {
+    "ID": 5,
+    "Name": "商城-通行证货架",
+    "IsOpen": true,
+    "StartTime": "2023-03-01 00:00:00",
+    "EndTime": "2035-06-01 00:00:00",
+    "TapList": [],
+    "TemplateId": 0
+  },
+  {
+    "ID": 6,
+    "Name": "商城-抽卡道具",
+    "IsOpen": true,
+    "StartTime": "2023-03-01 00:00:00",
+    "EndTime": "2035-06-01 00:00:00",
+    "TapList": [],
+    "TemplateId": 0
+  },
+  {
+    "ID": 7,
+    "Name": "商城-爬塔商城货架",
+    "IsOpen": true,
+    "StartTime": "2023-03-01 00:00:00",
+    "EndTime": "2035-06-01 00:00:00",
+    "TapList": [
+      3,
+      9,
+      7,
+      4,
+      5,
+      6,
+      10
+    ],
+    "TemplateId": 2
+  },
+  {
+    "ID": 8,
+    "Name": "商城-BP商城货架",
+    "IsOpen": true,
+    "StartTime": "2023-03-01 00:00:00",
+    "EndTime": "2035-06-01 00:00:00",
+    "TapList": [],
+    "TemplateId": 3
+  },
+  {
+    "ID": 9,
+    "Name": "商城-常驻捆绑包货架",
+    "IsOpen": true,
+    "StartTime": "2023-03-01 00:00:00",
+    "EndTime": "2035-06-01 00:00:00",
+    "TapList": [],
+    "TemplateId": 1
+  }
+]

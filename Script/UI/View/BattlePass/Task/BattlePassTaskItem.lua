@@ -1,14 +1,17 @@
 local BattlePassTaskItem = UnLua.Class()
+
 function BattlePassTaskItem:Construct()
   self.WBP_CommonButton_Receive.OnMainButtonClicked:Add(self, self.Receive)
   EventSystem.AddListener(self, EventDef.MainTask.OnMainTaskChange, self.OnMainTaskChange)
 end
+
 function BattlePassTaskItem:OnMainTaskChange(GroupId, TaskId)
   if GroupId == self.GroupId and TaskId == self.TaskId then
     self:InitTaskItem(TaskId)
     print("BattlePassTaskItem", TaskId)
   end
 end
+
 function BattlePassTaskItem:OnListItemObjectSet(Item)
   if not Item then
     return
@@ -21,6 +24,7 @@ function BattlePassTaskItem:OnListItemObjectSet(Item)
   print(self.GroupId, self.TaskId)
   self.WBP_RedDotView:ChangeRedDotIdByTag(self.GroupId .. "_" .. self.TaskId)
 end
+
 function BattlePassTaskItem:InitTaskItem(TaskId)
   local TBTask = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskData)
   if TBTask[TaskId] then
@@ -62,6 +66,7 @@ function BattlePassTaskItem:InitTaskItem(TaskId)
     self.Progress:SetPercent(CountValue / TargetValue)
   end
 end
+
 function BattlePassTaskItem:GetLoopToolTipWidget()
   if not self.ToolTipWidget then
     self.ToolTipWidget = UE.UWidgetBlueprintLibrary.Create(self, self.WBP_BattlePassTask_LoopTips:GetClass())
@@ -77,7 +82,9 @@ function BattlePassTaskItem:GetLoopToolTipWidget()
   end
   return self.ToolTipWidget
 end
+
 function BattlePassTaskItem:Receive()
   Logic_MainTask.ReceiveAward(self.GroupId, self.TaskId)
 end
+
 return BattlePassTaskItem

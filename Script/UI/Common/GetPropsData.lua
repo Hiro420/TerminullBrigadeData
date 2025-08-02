@@ -1,4 +1,5 @@
 local ChipItemData = UnLua.Class()
+
 function ChipItemData:Reset()
   self.PropId = 0
   self.PropNum = 0
@@ -6,4 +7,5 @@ function ChipItemData:Reset()
   self.extra = {}
   self.ExchangedAmount = 0
 end
+
 return ChipItemData

@@ -1,6 +1,7 @@
 local WBP_LifeBar_C = UnLua.Class()
 local ListContainer = require("Rouge.UI.Common.ListContainer")
 local MaxBuffShowNum = 4
+
 function WBP_LifeBar_C:Construct()
   self.Overridden.Construct(self)
   if not self.OwningActor then
@@ -81,6 +82,7 @@ function WBP_LifeBar_C:Construct()
   BuffComp.OnBuffChanged:Add(self, WBP_LifeBar_C.BindOnBuffChanged)
   EventSystem.AddListener(self, EventDef.Battle.ElementChanged, WBP_LifeBar_C.BindOnElementChanged)
 end
+
 function WBP_LifeBar_C:OnBindUpdateName()
   local BuffDataSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.UBuffDataGISubsystem:StaticClass())
   if not BuffDataSubsystem then
@@ -102,12 +104,15 @@ function WBP_LifeBar_C:OnBindUpdateName()
     end
   end
 end
+
 function WBP_LifeBar_C:ShowPanel()
   self.MainInfoPanel:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
 end
+
 function WBP_LifeBar_C:HidePanel()
   self.MainInfoPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_LifeBar_C:UpdateShieldBarVisibility()
   if 0 == self:GetMaxShieldValue() then
     self.ShieldBar:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -115,9 +120,11 @@ function WBP_LifeBar_C:UpdateShieldBarVisibility()
     self.ShieldBar:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function WBP_LifeBar_C:BindOnMaxShieldAttributeChanged(NewValue, OldValue)
   self:UpdateShieldBarVisibility()
 end
+
 function WBP_LifeBar_C:SetBottomBrush()
   if not self.OwningActor then
     return
@@ -157,32 +164,39 @@ function WBP_LifeBar_C:SetBottomBrush()
   self.Img_Bottom:SetBrush(self.EliteBottom)
   self.Img_Elite:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_LifeBar_C:InitWidgetInfo(OwningActor)
   self.OwningActor = OwningActor
   self.HealthBar:InitInfo(self.OwningActor)
   self.ShieldBar:InitInfo(self.OwningActor)
 end
+
 function WBP_LifeBar_C:CalculateBuffIconSizeByDistance(Distance)
   local TargetDistance = math.clamp(Distance, self.MinDistance, self.MaxDistance)
   return (self.MinBuffIconSize - self.MaxBuffIconSize) / (self.MaxDistance - self.MinDistance) * (TargetDistance - self.MinDistance) + self.MaxBuffIconSize
 end
+
 function WBP_LifeBar_C:CalculateBarLengthByDistance(Distance)
   local TargetDistance = math.clamp(Distance, self.MinDistance, self.MaxDistance)
   return (self.MinLength - self.MaxLength) / (self.MaxDistance - self.MinDistance) * (TargetDistance - self.MinDistance) + self.MaxLength
 end
+
 function WBP_LifeBar_C:CalculateBarIntervalByDistance(Distance)
   local TargetDistance = math.clamp(Distance, self.MinDistance, self.MaxDistance)
   local MinInterval, MaxInterval = 4, 8
   return (MinInterval - MaxInterval) / (self.MaxDistance - self.MinDistance) * (TargetDistance - self.MinDistance) + MaxInterval
 end
+
 function WBP_LifeBar_C:CalculateHealthHeightByDistance(Distance)
   local TargetDistance = math.clamp(Distance, self.MinDistance, self.MaxDistance)
   return (self.MinBarHeight - self.MaxBarHeight) / (self.MaxDistance - self.MinDistance) * (TargetDistance - self.MinDistance) + self.MaxBarHeight
 end
+
 function WBP_LifeBar_C:CalculateShieldHealthHeightByDistance(Distance)
   local TargetDistance = math.clamp(Distance, self.MinDistance, self.MaxDistance)
   return (self.MinShieldBarHeight - self.MaxShieldBarHeight) / (self.MaxDistance - self.MinDistance) * (TargetDistance - self.MinDistance) + self.MaxShieldBarHeight
 end
+
 function WBP_LifeBar_C:BindOnBuffChanged(AddedBuff)
   local BuffDataSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.UBuffDataGISubsystem:StaticClass())
   if not BuffDataSubsystem then
@@ -208,11 +222,13 @@ function WBP_LifeBar_C:BindOnBuffChanged(AddedBuff)
     self:RefreshBuffList()
   end
 end
+
 function WBP_LifeBar_C:BindOnBuffRemoved(RemovedBuff)
   table.RemoveItem(self.AllBuffIds, RemovedBuff.ID)
   self.AllBuffInfos[RemovedBuff.ID] = nil
   self:RefreshBuffList()
 end
+
 function WBP_LifeBar_C.BindOnElementChanged(Target, BuffId, Params, IsAdd)
   local self = Target
   local TargetActor
@@ -257,6 +273,7 @@ function WBP_LifeBar_C.BindOnElementChanged(Target, BuffId, Params, IsAdd)
   end
   self:RefreshBuffList()
 end
+
 function WBP_LifeBar_C:RefreshBuffList()
   for i, SingleWidget in iterator(self.BuffList:GetAllChildren()) do
     SingleWidget:Hide()
@@ -290,6 +307,7 @@ function WBP_LifeBar_C:RefreshBuffList()
   end
   self.BuffListChildren = self.BuffList:GetAllChildren()
 end
+
 function WBP_LifeBar_C:UpdateBarLength(Distance)
   local HealthSlot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.HealthBar)
   local ShieldSlot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.ShieldBar)
@@ -329,6 +347,7 @@ function WBP_LifeBar_C:UpdateBarLength(Distance)
   Margin.Bottom = BottomSlot:GetOffsets().Bottom
   BottomSlot:SetOffsets(Margin)
 end
+
 function WBP_LifeBar_C:UpdateFonSize(Distance)
   local HalfDistance = (self.MaxDistance - self.MinDistance) / 2
   local FontSize = 0
@@ -339,6 +358,7 @@ function WBP_LifeBar_C:UpdateFonSize(Distance)
   end
   self:SetFontSize(FontSize)
 end
+
 function WBP_LifeBar_C:UpdateBuffIcon(Distance)
   if not self.BuffListChildren then
     return
@@ -356,6 +376,7 @@ function WBP_LifeBar_C:UpdateBuffIcon(Distance)
     end
   end
 end
+
 function WBP_LifeBar_C:ClearAllBuff()
   for i, SingleWidget in iterator(self.BuffList:GetAllChildren()) do
     SingleWidget:Hide()
@@ -363,6 +384,7 @@ function WBP_LifeBar_C:ClearAllBuff()
   self.ShieldBar:ResetBarValue()
   self.HealthBar:ResetBarValue()
 end
+
 function WBP_LifeBar_C:Destruct()
   self.Overridden.Destruct(self)
   if not self.OwningActor then
@@ -395,6 +417,7 @@ function WBP_LifeBar_C:Destruct()
   end
   print("AIInfo Destruct")
 end
+
 function WBP_LifeBar_C:LuaTick(InDeltaTime)
   local CameraManager = UE.UGameplayStatics.GetPlayerCameraManager(self, 0)
   if CameraManager and self.OwningActor then
@@ -406,4 +429,5 @@ function WBP_LifeBar_C:LuaTick(InDeltaTime)
     self:UpdateFonSize(Distance)
   end
 end
+
 return WBP_LifeBar_C

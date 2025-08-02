@@ -1,10 +1,12 @@
 local WBP_IGuide_GM_God_Item_C = UnLua.Class()
+
 function WBP_IGuide_GM_God_Item_C:Construct()
   self:InitIGuideItem()
   self:SetSelect(7 == self.GodId)
   self:OnFocusModify()
   self:CheckEffective()
 end
+
 function WBP_IGuide_GM_God_Item_C:CheckEffective()
   self.bEffective = true
   UpdateVisibility(self.Overlay_Lock, false)
@@ -25,6 +27,7 @@ function WBP_IGuide_GM_God_Item_C:CheckEffective()
     self.bEffective = false
   end
 end
+
 function WBP_IGuide_GM_God_Item_C:InitIGuideItem()
   EventSystem.AddListener(self, EventDef.IllustratedGuide.OnGenericModifyGodItemClicked, WBP_IGuide_GM_God_Item_C.OnGodListItemClicked)
   EventSystem.AddListener(self, EventDef.IllustratedGuide.OnFocusModify, WBP_IGuide_GM_God_Item_C.OnFocusModify)
@@ -35,6 +38,7 @@ function WBP_IGuide_GM_God_Item_C:InitIGuideItem()
     SetImageBrushBySoftObject(self.Img_Icon_1, RowInfo.ChoosePanelIcon)
   end
 end
+
 function WBP_IGuide_GM_God_Item_C:SetSelect(bSelect)
   UpdateVisibility(self.Overlay_Select_straight, bSelect)
   UpdateVisibility(self.Overlay_Select_inverted, bSelect)
@@ -46,16 +50,20 @@ function WBP_IGuide_GM_God_Item_C:SetSelect(bSelect)
     self.ScaleWidget:SetUserSpecifiedScale(1)
   end
 end
+
 function WBP_IGuide_GM_God_Item_C:SetCover(bCover)
   UpdateVisibility(self.Img_Cover_4, bCover)
 end
+
 function WBP_IGuide_GM_God_Item_C:SetMark(bMark)
   UpdateVisibility(self.Overlay_inverted, bMark)
   UpdateVisibility(self.Overlay_straight, bMark)
 end
+
 function WBP_IGuide_GM_God_Item_C:OnGodListItemClicked(GodId)
   self:SetSelect(GodId == self.GodId)
 end
+
 function WBP_IGuide_GM_God_Item_C:OnFocusModify()
   if Logic_IllustratedGuide.IsLobbyRoom() then
     self:SetMark(false)
@@ -75,6 +83,7 @@ function WBP_IGuide_GM_God_Item_C:OnFocusModify()
   end
   self:SetMark(bMark)
 end
+
 function WBP_IGuide_GM_God_Item_C:OnMouseButtonDown(MyGeometry, MouseEvent)
   PlaySound2DByName(self.ClickSoundName, "WBP_IGuide_GM_God_Item_C")
   if not Logic_IllustratedGuide.IsLobbyRoom() and not self.bEffective then
@@ -84,6 +93,7 @@ function WBP_IGuide_GM_God_Item_C:OnMouseButtonDown(MyGeometry, MouseEvent)
   EventSystem.Invoke(EventDef.IllustratedGuide.OnGenericModifyGodItemClicked, self.GodId)
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function WBP_IGuide_GM_God_Item_C:OnMouseEnter(MyGeometry, MouseEvent)
   PlaySound2DByName(self.HoverSoundName, "WBP_IGuide_GM_God_Item_C")
   self:SetCover(true)
@@ -91,15 +101,18 @@ function WBP_IGuide_GM_God_Item_C:OnMouseEnter(MyGeometry, MouseEvent)
     EventSystem.Invoke(EventDef.IllustratedGuide.OnGenericModifyGodItemHover, self.GodId, true)
   end
 end
+
 function WBP_IGuide_GM_God_Item_C:OnMouseLeave(MyGeometry, MouseEvent)
   self:SetCover(false)
   if Logic_IllustratedGuide.IsLobbyRoom() then
     EventSystem.Invoke(EventDef.IllustratedGuide.OnGenericModifyGodItemHover, self.GodId, false)
   end
 end
+
 function WBP_IGuide_GM_God_Item_C:OnCustomNavigation_God(GodId)
   if self.GodId == GodId then
     self:SetKeyboardFocus()
   end
 end
+
 return WBP_IGuide_GM_God_Item_C

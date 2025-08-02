@@ -1,3892 +1,3892 @@
 ﻿{
   "501021": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 501021,
-    "BuyLimit": 1,
-    "ID": 501021,
-    "NameLocMeta": {
-      "InTextLiteral": "暴雨危途",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_501021"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10501021,
     "Shelfs": {
       "1": 2
+    },
+    "Sort": 501021,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 501021,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_501021",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "暴雨危途"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_501021",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "上校武器【捍卫者】稀有级外观。"
     },
     "TapList": {
       "1": 2
     },
-    "GainResourcesID": 10501021,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 300005,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "上校武器【捍卫者】稀有级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_501021"
-    },
-    "Quality": 2
+    "Quality": 2,
+    "IsNew": false
   },
   "10707001": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 1,
-    "BuyLimit": 1,
-    "ID": 10707001,
-    "NameLocMeta": {
-      "InTextLiteral": "海因克斯",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10707001"
-    },
-    "SaleStartTime": "2025-09-24 05:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 980,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300007,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 980,
+    "GainResourcesID": 100009,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 1,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10707001,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10707001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "海因克斯"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10707001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "第赛季开启后，可在通行证兑换商城中兑换新角色海因克斯。"
     },
     "TapList": {
       "1": 7
     },
-    "GainResourcesID": 100009,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 980,
+    "ConsumeResourcesID": 300007,
+    "SaleStartTime": "2025-09-24 05:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 980,
     "ConsumeResources": {
       "1": {
-        "y": 980,
+        "z": 980,
         "x": 300007,
-        "z": 980
+        "y": 980
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "第赛季开启后，可在通行证兑换商城中兑换新角色海因克斯。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10707001"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10707002": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 2,
-    "BuyLimit": 1,
-    "ID": 10707002,
-    "NameLocMeta": {
-      "InTextLiteral": "浮世霓光·寂灭",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10707002"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 700,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300007,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 700,
+    "GainResourcesID": 5018,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 2,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10707002,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10707002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "浮世霓光·寂灭"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10707002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "可解锁影刃武器【浮世霓光·寂灭】。"
     },
     "TapList": {
       "1": 7
     },
-    "GainResourcesID": 5018,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 700,
+    "ConsumeResourcesID": 300007,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 700,
     "ConsumeResources": {
       "1": {
-        "y": 700,
+        "z": 700,
         "x": 300007,
-        "z": 700
+        "y": 700
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "可解锁影刃武器【浮世霓光·寂灭】。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10707002"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10707004": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 4,
-    "BuyLimit": 1,
-    "ID": 10707004,
-    "NameLocMeta": {
-      "InTextLiteral": "碧波猎手",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10707004"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300007,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10502721,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 4,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10707004,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10707004",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "碧波猎手"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10707004",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "海因克斯【零度新星】稀有级外观。"
     },
     "TapList": {
       "1": 7
     },
-    "GainResourcesID": 10502721,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 300007,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 300007,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "海因克斯【零度新星】稀有级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10707004"
-    },
-    "Quality": 2
+    "Quality": 2,
+    "IsNew": false
   },
   "10707005": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 5,
-    "BuyLimit": 1,
-    "ID": 10707005,
-    "NameLocMeta": {
-      "InTextLiteral": "沙滩车",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10707005"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 180,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300007,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 180,
+    "GainResourcesID": 20703018,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 5,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10707005,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10707005",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "沙滩车"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10707005",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "沟通喷漆通用。"
     },
     "TapList": {
       "1": 7
     },
-    "GainResourcesID": 20703018,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 180,
+    "ConsumeResourcesID": 300007,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 180,
     "ConsumeResources": {
       "1": {
-        "y": 180,
+        "z": 180,
         "x": 300007,
-        "z": 180
+        "y": 180
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "沟通喷漆通用。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10707005"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10707006": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 6,
-    "BuyLimit": 1,
-    "ID": 10707006,
-    "NameLocMeta": {
-      "InTextLiteral": "威胁",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10707006"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 180,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300007,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 180,
+    "GainResourcesID": 20703030,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 6,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10707006,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10707006",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "威胁"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10707006",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "沟通喷漆通用。"
     },
     "TapList": {
       "1": 7
     },
-    "GainResourcesID": 20703030,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 180,
+    "ConsumeResourcesID": 300007,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 180,
     "ConsumeResources": {
       "1": {
-        "y": 180,
+        "z": 180,
         "x": 300007,
-        "z": 180
+        "y": 180
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "沟通喷漆通用。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10707006"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10707007": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 7,
-    "BuyLimit": 1,
-    "ID": 10707007,
-    "NameLocMeta": {
-      "InTextLiteral": "害怕就躲远点",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10707007"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 80,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300007,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 80,
+    "GainResourcesID": 20720201,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 7,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10707007,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10707007",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "害怕就躲远点"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10707007",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "沟通语音上校专属。"
     },
     "TapList": {
       "1": 7
     },
-    "GainResourcesID": 20720201,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 80,
+    "ConsumeResourcesID": 300007,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 80,
     "ConsumeResources": {
       "1": {
-        "y": 80,
+        "z": 80,
         "x": 300007,
-        "z": 80
+        "y": 80
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "沟通语音上校专属。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10707007"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10707008": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 8,
-    "BuyLimit": 1,
-    "ID": 10707008,
-    "NameLocMeta": {
-      "InTextLiteral": "干得漂亮",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10707008"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 80,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300007,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 80,
+    "GainResourcesID": 20720002,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 8,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10707008,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10707008",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "干得漂亮"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10707008",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "沟通语音曙光专属。"
     },
     "TapList": {
       "1": 7
     },
-    "GainResourcesID": 20720002,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 80,
+    "ConsumeResourcesID": 300007,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 80,
     "ConsumeResources": {
       "1": {
-        "y": 80,
+        "z": 80,
         "x": 300007,
-        "z": 80
+        "y": 80
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "沟通语音曙光专属。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10707008"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10300101": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 101,
-    "BuyLimit": 20,
-    "ID": 10300101,
-    "NameLocMeta": {
-      "InTextLiteral": "抑制代码",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10300101"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 4,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 4,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 4,
+    "GainResourcesID": 99019,
     "Shelfs": {
       "1": 3
     },
+    "Sort": 101,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10300101,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10300101",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "抑制代码"
+    },
+    "BuyLimitType": 4,
+    "DescLocMeta": {
+      "InKey": "Desc_10300101",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "包含净化数据的代码，可以使用户在病毒侵蚀严重的区域自由活动。用途：赛季特殊模式“病毒狂潮”的入场门票"
+    },
     "TapList": {},
-    "GainResourcesID": 99019,
+    "GainNum": 1,
+    "BuyLimit": 20,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 4,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 4,
     "ConsumeResources": {
       "1": {
-        "y": 4,
+        "z": 4,
         "x": 300005,
-        "z": 4
+        "y": 4
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "包含净化数据的代码，可以使用户在病毒侵蚀严重的区域自由活动。用途：赛季特殊模式“病毒狂潮”的入场门票",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10300101"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10300102": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 102,
-    "BuyLimit": 2,
-    "ID": 10300102,
-    "NameLocMeta": {
-      "InTextLiteral": "高级定位器",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10300102"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 4,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 100,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 100,
+    "GainResourcesID": 99034,
     "Shelfs": {
       "1": 3
     },
+    "Sort": 102,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10300102,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10300102",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "高级定位器"
+    },
+    "BuyLimitType": 4,
+    "DescLocMeta": {
+      "InKey": "Desc_10300102",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "艾安制作的高级数据定位器，能够在矩阵庞大的数据网络中定位失序链区的位置。用途：赛季特殊模式“失序链区”的入场门票"
+    },
     "TapList": {},
-    "GainResourcesID": 99034,
+    "GainNum": 1,
+    "BuyLimit": 2,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 100,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 100,
     "ConsumeResources": {
       "1": {
-        "y": 100,
+        "z": 100,
         "x": 300005,
-        "z": 100
+        "y": 100
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "艾安制作的高级数据定位器，能够在矩阵庞大的数据网络中定位失序链区的位置。用途：赛季特殊模式“失序链区”的入场门票",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10300102"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10300103": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 103,
-    "BuyLimit": 2,
-    "ID": 10300103,
-    "NameLocMeta": {
-      "InTextLiteral": "初级定位器",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10300103"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 4,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 50,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 50,
+    "GainResourcesID": 99018,
     "Shelfs": {
       "1": 3
     },
+    "Sort": 103,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10300103,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10300103",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "初级定位器"
+    },
+    "BuyLimitType": 4,
+    "DescLocMeta": {
+      "InKey": "Desc_10300103",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "艾安制作的初级数据定位器，能够在矩阵庞大的数据网络中定位失序链区的位置。用途：赛季特殊模式“失序链区”的入场门票"
+    },
     "TapList": {},
-    "GainResourcesID": 99018,
+    "GainNum": 1,
+    "BuyLimit": 2,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 50,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 50,
     "ConsumeResources": {
       "1": {
-        "y": 50,
+        "z": 50,
         "x": 300005,
-        "z": 50
+        "y": 50
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "艾安制作的初级数据定位器，能够在矩阵庞大的数据网络中定位失序链区的位置。用途：赛季特殊模式“失序链区”的入场门票",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10300103"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10703202": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 202,
-    "BuyLimit": 1,
-    "ID": 10703202,
-    "NameLocMeta": {
-      "InTextLiteral": "林中密语",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10703202"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 180,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300001,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 180,
+    "GainResourcesID": 82427,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 202,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10703202,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10703202",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "林中密语"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10703202",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "名片背景林中密语。"
     },
     "TapList": {
       "1": 3
     },
-    "GainResourcesID": 82427,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 180,
+    "ConsumeResourcesID": 300001,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 180,
     "ConsumeResources": {
       "1": {
-        "y": 180,
+        "z": 180,
         "x": 300001,
-        "z": 180
+        "y": 180
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "名片背景林中密语。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10703202"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10703203": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 203,
-    "BuyLimit": 1,
-    "ID": 10703203,
-    "NameLocMeta": {
-      "InTextLiteral": "蓝盾之心",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10703203"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 680,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300001,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 680,
+    "GainResourcesID": 10102201,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 203,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10703203,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10703203",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "蓝盾之心"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10703203",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "上校史诗级外观。"
     },
     "TapList": {
       "1": 3
     },
-    "GainResourcesID": 10102201,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 680,
+    "ConsumeResourcesID": 300001,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 680,
     "ConsumeResources": {
       "1": {
-        "y": 680,
+        "z": 680,
         "x": 300001,
-        "z": 680
+        "y": 680
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "上校史诗级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10703203"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "501422": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 501422,
-    "BuyLimit": 1,
-    "ID": 501422,
-    "NameLocMeta": {
-      "InTextLiteral": "复古印花",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_501422"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10501422,
     "Shelfs": {
       "1": 2
+    },
+    "Sort": 501422,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 501422,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_501422",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "复古印花"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_501422",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "格罗莉亚【元气甜心】稀有级外观。"
     },
     "TapList": {
       "1": 2
     },
-    "GainResourcesID": 10501422,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 300005,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "格罗莉亚【元气甜心】稀有级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_501422"
-    },
-    "Quality": 2
+    "Quality": 2,
+    "IsNew": false
   },
   "10706001": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 1,
-    "BuyLimit": 10,
-    "ID": 10706001,
-    "NameLocMeta": {
-      "InTextLiteral": "传奇穹锋裂变模组随机包强度",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10706001"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 3,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 2000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 2000,
+    "GainResourcesID": 62036,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 1,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10706001,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10706001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "传奇穹锋裂变模组随机包强度"
+    },
+    "BuyLimitType": 3,
+    "DescLocMeta": {
+      "InKey": "Desc_10706001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "随机获取一个强度为的传奇品质穹锋裂变模组，可前往【角色战斗矩阵】中查看详情。"
     },
     "TapList": {
       "1": 6
     },
-    "GainResourcesID": 62036,
+    "GainNum": 1,
+    "BuyLimit": 10,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 2000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 2000,
     "ConsumeResources": {
       "1": {
-        "y": 2000,
+        "z": 2000,
         "x": 300006,
-        "z": 2000
+        "y": 2000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "随机获取一个强度为的传奇品质穹锋裂变模组，可前往【角色战斗矩阵】中查看详情。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10706001"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "101502": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 101502,
-    "BuyLimit": 1,
-    "ID": 101502,
-    "NameLocMeta": {
-      "InTextLiteral": "灼痕过载",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_101502"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 980,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 980,
+    "GainResourcesID": 10101502,
     "Shelfs": {
       "1": 2
+    },
+    "Sort": 101502,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 101502,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_101502",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "灼痕过载"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_101502",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "影刃传奇级外观。"
     },
     "TapList": {
       "1": 1
     },
-    "GainResourcesID": 10101502,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 980,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 980,
     "ConsumeResources": {
       "1": {
-        "y": 980,
+        "z": 980,
         "x": 300005,
-        "z": 980
+        "y": 980
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "影刃传奇级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_101502"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10706004": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 4,
-    "BuyLimit": 8,
-    "ID": 10706004,
-    "NameLocMeta": {
-      "InTextLiteral": "塑形晶核",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10706004"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 3,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 2000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 2000,
+    "GainResourcesID": 99026,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 4,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10706004,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10706004",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "塑形晶核"
+    },
+    "BuyLimitType": 3,
+    "DescLocMeta": {
+      "InKey": "Desc_10706004",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "用于重新生成模组的形状。"
     },
     "TapList": {
       "1": 6
     },
-    "GainResourcesID": 99026,
+    "GainNum": 1,
+    "BuyLimit": 8,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 2000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 2000,
     "ConsumeResources": {
       "1": {
-        "y": 2000,
+        "z": 2000,
         "x": 300006,
-        "z": 2000
+        "y": 2000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "用于重新生成模组的形状。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10706004"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10706005": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 5,
-    "BuyLimit": 12,
-    "ID": 10706005,
-    "NameLocMeta": {
-      "InTextLiteral": "转换晶核",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10706005"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 3,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 2000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 2000,
+    "GainResourcesID": 99030,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 5,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10706005,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10706005",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "转换晶核"
+    },
+    "BuyLimitType": 3,
+    "DescLocMeta": {
+      "InKey": "Desc_10706005",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "用于重置模组的随机一条副属性。"
     },
     "TapList": {
       "1": 6
     },
-    "GainResourcesID": 99030,
+    "GainNum": 1,
+    "BuyLimit": 12,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 2000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 2000,
     "ConsumeResources": {
       "1": {
-        "y": 2000,
+        "z": 2000,
         "x": 300006,
-        "z": 2000
+        "y": 2000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "用于重置模组的随机一条副属性。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10706005"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "500921": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 500921,
-    "BuyLimit": 1,
-    "ID": 500921,
-    "NameLocMeta": {
-      "InTextLiteral": "时空守护者",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_500921"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10500921,
     "Shelfs": {
       "1": 2
+    },
+    "Sort": 500921,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 500921,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_500921",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "时空守护者"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_500921",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "影刃武器【倾心】稀有级外观。"
     },
     "TapList": {
       "1": 2
     },
-    "GainResourcesID": 10500921,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 300005,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "影刃武器【倾心】稀有级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_500921"
-    },
-    "Quality": 2
+    "Quality": 2,
+    "IsNew": false
   },
   "10706007": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 7,
-    "BuyLimit": 8,
-    "ID": 10706007,
-    "NameLocMeta": {
-      "InTextLiteral": "高级定位器",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10706007"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 3,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 10000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 10000,
+    "GainResourcesID": 99034,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 7,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10706007,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10706007",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "高级定位器"
+    },
+    "BuyLimitType": 3,
+    "DescLocMeta": {
+      "InKey": "Desc_10706007",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "艾安制作的高级数据定位器，能够在矩阵庞大的数据网络中定位失序链区的位置。用途：赛季特殊模式“失序链区”的入场门票"
     },
     "TapList": {
       "1": 6
     },
-    "GainResourcesID": 99034,
+    "GainNum": 1,
+    "BuyLimit": 8,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 10000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 10000,
     "ConsumeResources": {
       "1": {
-        "y": 10000,
+        "z": 10000,
         "x": 300006,
-        "z": 10000
+        "y": 10000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "艾安制作的高级数据定位器，能够在矩阵庞大的数据网络中定位失序链区的位置。用途：赛季特殊模式“失序链区”的入场门票",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10706007"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10706008": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 8,
-    "BuyLimit": 8,
-    "ID": 10706008,
-    "NameLocMeta": {
-      "InTextLiteral": "初级定位器",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10706008"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 3,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 5000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 5000,
+    "GainResourcesID": 99018,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 8,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10706008,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10706008",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "初级定位器"
+    },
+    "BuyLimitType": 3,
+    "DescLocMeta": {
+      "InKey": "Desc_10706008",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "艾安制作的初级数据定位器，能够在矩阵庞大的数据网络中定位失序链区的位置。用途：赛季特殊模式“失序链区”的入场门票"
     },
     "TapList": {
       "1": 6
     },
-    "GainResourcesID": 99018,
+    "GainNum": 1,
+    "BuyLimit": 8,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 5000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 5000,
     "ConsumeResources": {
       "1": {
-        "y": 5000,
+        "z": 5000,
         "x": 300006,
-        "z": 5000
+        "y": 5000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "艾安制作的初级数据定位器，能够在矩阵庞大的数据网络中定位失序链区的位置。用途：赛季特殊模式“失序链区”的入场门票",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10706008"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10706009": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 9,
-    "BuyLimit": 80,
-    "ID": 10706009,
-    "NameLocMeta": {
-      "InTextLiteral": "抑制代码",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10706009"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 3,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 400,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 400,
+    "GainResourcesID": 99019,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 9,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10706009,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10706009",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "抑制代码"
+    },
+    "BuyLimitType": 3,
+    "DescLocMeta": {
+      "InKey": "Desc_10706009",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "包含净化数据的代码，可以使用户在病毒侵蚀严重的区域自由活动。用途：赛季特殊模式“病毒狂潮”的入场门票"
     },
     "TapList": {
       "1": 6
     },
-    "GainResourcesID": 99019,
+    "GainNum": 1,
+    "BuyLimit": 80,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 400,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 400,
     "ConsumeResources": {
       "1": {
-        "y": 400,
+        "z": 400,
         "x": 300006,
-        "z": 400
+        "y": 400
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "包含净化数据的代码，可以使用户在病毒侵蚀严重的区域自由活动。用途：赛季特殊模式“病毒狂潮”的入场门票",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10706009"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "101002": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 101002,
-    "BuyLimit": 1,
-    "ID": 101002,
-    "NameLocMeta": {
-      "InTextLiteral": "猎手·苇草",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_101002"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10101002,
     "Shelfs": {
       "1": 2
+    },
+    "Sort": 101002,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 101002,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_101002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "猎手·苇草"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_101002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "影刃稀有级外观。"
     },
     "TapList": {
       "1": 1
     },
-    "GainResourcesID": 10101002,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 300005,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "影刃稀有级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_101002"
-    },
-    "Quality": 2
+    "Quality": 2,
+    "IsNew": false
   },
   "100501": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 100501,
-    "BuyLimit": 1,
-    "ID": 100501,
-    "NameLocMeta": {
-      "InTextLiteral": "病毒选手",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_100501"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 980,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 980,
+    "GainResourcesID": 10100501,
     "Shelfs": {
       "1": 2
+    },
+    "Sort": 100501,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 100501,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_100501",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "病毒选手"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_100501",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "曙光传奇级外观。"
     },
     "TapList": {
       "1": 1
     },
-    "GainResourcesID": 10100501,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 980,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 980,
     "ConsumeResources": {
       "1": {
-        "y": 980,
+        "z": 980,
         "x": 300005,
-        "z": 980
+        "y": 980
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "曙光传奇级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_100501"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10705002": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 2,
-    "BuyLimit": 3,
-    "ID": 10705002,
-    "NameLocMeta": {
-      "InTextLiteral": "传奇穹锋裂变模组随机包强度",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10705002"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 2,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 2000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 2000,
+    "GainResourcesID": 62033,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 2,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10705002,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10705002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "传奇穹锋裂变模组随机包强度"
+    },
+    "BuyLimitType": 2,
+    "DescLocMeta": {
+      "InKey": "Desc_10705002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "随机获取一个强度为的传奇品质穹锋裂变模组，可前往【角色战斗矩阵】中查看详情。"
     },
     "TapList": {
       "1": 5
     },
-    "GainResourcesID": 62033,
+    "GainNum": 1,
+    "BuyLimit": 3,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 2000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 2000,
     "ConsumeResources": {
       "1": {
-        "y": 2000,
+        "z": 2000,
         "x": 300006,
-        "z": 2000
+        "y": 2000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "随机获取一个强度为的传奇品质穹锋裂变模组，可前往【角色战斗矩阵】中查看详情。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10705002"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10705003": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 3,
-    "BuyLimit": 3,
-    "ID": 10705003,
-    "NameLocMeta": {
-      "InTextLiteral": "传奇锋卫星垒模组随机包强度",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10705003"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 2,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 2000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 2000,
+    "GainResourcesID": 62034,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 3,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10705003,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10705003",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "传奇锋卫星垒模组随机包强度"
+    },
+    "BuyLimitType": 2,
+    "DescLocMeta": {
+      "InKey": "Desc_10705003",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "随机获取一个强度为的传奇品质锋卫星垒模组，可前往【角色战斗矩阵】中查看详情。"
     },
     "TapList": {
       "1": 5
     },
-    "GainResourcesID": 62034,
+    "GainNum": 1,
+    "BuyLimit": 3,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 2000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 2000,
     "ConsumeResources": {
       "1": {
-        "y": 2000,
+        "z": 2000,
         "x": 300006,
-        "z": 2000
+        "y": 2000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "随机获取一个强度为的传奇品质锋卫星垒模组，可前往【角色战斗矩阵】中查看详情。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10705003"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10300001": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 1,
-    "BuyLimit": 0,
-    "ID": 10300001,
-    "NameLocMeta": {
-      "InTextLiteral": "着色器·华彩",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10300001"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 0,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 50,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 50,
+    "GainResourcesID": 99017,
     "Shelfs": {
       "1": 3
     },
+    "Sort": 1,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10300001,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10300001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "着色器·华彩"
+    },
+    "BuyLimitType": 0,
+    "DescLocMeta": {
+      "InKey": "Desc_10300001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "用于解锁可定制皮肤换色方案的材料。"
+    },
     "TapList": {},
-    "GainResourcesID": 99017,
+    "GainNum": 1,
+    "BuyLimit": 0,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 50,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 50,
     "ConsumeResources": {
       "1": {
-        "y": 50,
+        "z": 50,
         "x": 300005,
-        "z": 50
+        "y": 50
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "用于解锁可定制皮肤换色方案的材料。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10300001"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10300002": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 2,
-    "BuyLimit": 0,
-    "ID": 10300002,
-    "NameLocMeta": {
-      "InTextLiteral": "着色器",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10300002"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 0,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 30,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 30,
+    "GainResourcesID": 99025,
     "Shelfs": {
       "1": 3
     },
+    "Sort": 2,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10300002,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10300002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "着色器"
+    },
+    "BuyLimitType": 0,
+    "DescLocMeta": {
+      "InKey": "Desc_10300002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "用于解锁可定制皮肤换色方案的材料。"
+    },
     "TapList": {},
-    "GainResourcesID": 99025,
+    "GainNum": 1,
+    "BuyLimit": 0,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 30,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 30,
     "ConsumeResources": {
       "1": {
-        "y": 30,
+        "z": 30,
         "x": 300005,
-        "z": 30
+        "y": 30
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "用于解锁可定制皮肤换色方案的材料。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10300002"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10703101": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 101,
-    "BuyLimit": 5,
-    "ID": 10703101,
-    "NameLocMeta": {
-      "InTextLiteral": "检索指令",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10703101"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 3,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 60,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300001,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 60,
+    "GainResourcesID": 210001,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 101,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10703101,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10703101",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "解码器"
+    },
+    "BuyLimitType": 3,
+    "DescLocMeta": {
+      "InKey": "Desc_10703101",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "用于解码数据宝库的信息数据。每解码一次，需要消耗一个解码器。"
     },
     "TapList": {
       "1": 3
     },
-    "GainResourcesID": 210001,
+    "GainNum": 1,
+    "BuyLimit": 5,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 60,
+    "ConsumeResourcesID": 300001,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 60,
     "ConsumeResources": {
       "1": {
-        "y": 60,
+        "z": 60,
         "x": 300001,
-        "z": 60
+        "y": 60
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "用于解码数据宝库的信息数据。每解码一次，需要消耗一个解码器。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10703101"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10705007": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 7,
-    "BuyLimit": 3,
-    "ID": 10705007,
-    "NameLocMeta": {
-      "InTextLiteral": "重置晶核",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10705007"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 2,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 2000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 2000,
+    "GainResourcesID": 99028,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 7,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10705007,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10705007",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "重置晶核"
+    },
+    "BuyLimitType": 2,
+    "DescLocMeta": {
+      "InKey": "Desc_10705007",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "用于重置模组的副属性的数值区间。"
     },
     "TapList": {
       "1": 5
     },
-    "GainResourcesID": 99028,
+    "GainNum": 1,
+    "BuyLimit": 3,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 2000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 2000,
     "ConsumeResources": {
       "1": {
-        "y": 2000,
+        "z": 2000,
         "x": 300006,
-        "z": 2000
+        "y": 2000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "用于重置模组的副属性的数值区间。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10705007"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10705009": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 9,
-    "BuyLimit": 6,
-    "ID": 10705009,
-    "NameLocMeta": {
-      "InTextLiteral": "抑制代码",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10705009"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 2,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 400,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 400,
+    "GainResourcesID": 99019,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 9,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10705009,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10705009",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "抑制代码"
+    },
+    "BuyLimitType": 2,
+    "DescLocMeta": {
+      "InKey": "Desc_10705009",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "包含净化数据的代码，可以使用户在病毒侵蚀严重的区域自由活动。用途：赛季特殊模式“病毒狂潮”的入场门票"
     },
     "TapList": {
       "1": 5
     },
-    "GainResourcesID": 99019,
+    "GainNum": 1,
+    "BuyLimit": 6,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 400,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 400,
     "ConsumeResources": {
       "1": {
-        "y": 400,
+        "z": 400,
         "x": 300006,
-        "z": 400
+        "y": 400
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "包含净化数据的代码，可以使用户在病毒侵蚀严重的区域自由活动。用途：赛季特殊模式“病毒狂潮”的入场门票",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10705009"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "100003": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 100003,
-    "BuyLimit": 1,
-    "ID": 100003,
-    "NameLocMeta": {
-      "InTextLiteral": "电幻·暮光",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_100003"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10100003,
     "Shelfs": {
       "1": 2
+    },
+    "Sort": 100003,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 100003,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_100003",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "电幻·暮光"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_100003",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "曙光稀有级外观。"
     },
     "TapList": {
       "1": 1
     },
-    "GainResourcesID": 10100003,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 300005,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "曙光稀有级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_100003"
-    },
-    "Quality": 2
+    "Quality": 2,
+    "IsNew": false
   },
   "106101": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 106101,
-    "BuyLimit": 1,
-    "ID": 106101,
-    "NameLocMeta": {
-      "InTextLiteral": "掠夺者",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_106101"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10106101,
     "Shelfs": {
       "1": 2
+    },
+    "Sort": 106101,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 106101,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_106101",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "掠夺者"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_106101",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "海因克斯稀有级外观。"
     },
     "TapList": {
       "1": 1
     },
-    "GainResourcesID": 10106101,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 300005,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "海因克斯稀有级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_106101"
-    },
-    "Quality": 2
+    "Quality": 2,
+    "IsNew": false
   },
   "10704001": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 1,
-    "BuyLimit": 1,
-    "ID": 10704001,
-    "NameLocMeta": {
-      "InTextLiteral": "柑橘折射",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10704001"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 20000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 20000,
+    "GainResourcesID": 10904202,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 1,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10704001,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10704001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "柑橘折射"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10704001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "格罗莉亚史诗级外观。"
     },
     "TapList": {
       "1": 4
     },
-    "GainResourcesID": 10904202,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 20000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 20000,
     "ConsumeResources": {
       "1": {
-        "y": 20000,
+        "z": 20000,
         "x": 300006,
-        "z": 20000
+        "y": 20000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "格罗莉亚史诗级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10704001"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10704002": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 2,
-    "BuyLimit": 3,
-    "ID": 10704002,
-    "NameLocMeta": {
-      "InTextLiteral": "传奇穹锋裂变模组随机包强度",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10704002"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 2,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 2000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 2000,
+    "GainResourcesID": 62030,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 2,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10704002,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10704002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "传奇穹锋裂变模组随机包强度"
+    },
+    "BuyLimitType": 2,
+    "DescLocMeta": {
+      "InKey": "Desc_10704002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "随机获取一个强度为的传奇品质穹锋裂变模组，可前往【角色战斗矩阵】中查看详情。"
     },
     "TapList": {
       "1": 4
     },
-    "GainResourcesID": 62030,
+    "GainNum": 1,
+    "BuyLimit": 3,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 2000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 2000,
     "ConsumeResources": {
       "1": {
-        "y": 2000,
+        "z": 2000,
         "x": 300006,
-        "z": 2000
+        "y": 2000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "随机获取一个强度为的传奇品质穹锋裂变模组，可前往【角色战斗矩阵】中查看详情。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10704002"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10704003": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 3,
-    "BuyLimit": 3,
-    "ID": 10704003,
-    "NameLocMeta": {
-      "InTextLiteral": "传奇锋卫星垒模组随机包强度",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10704003"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 2,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 2000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 2000,
+    "GainResourcesID": 62031,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 3,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10704003,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10704003",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "传奇锋卫星垒模组随机包强度"
+    },
+    "BuyLimitType": 2,
+    "DescLocMeta": {
+      "InKey": "Desc_10704003",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "随机获取一个强度为的传奇品质锋卫星垒模组，可前往【角色战斗矩阵】中查看详情。"
     },
     "TapList": {
       "1": 4
     },
-    "GainResourcesID": 62031,
+    "GainNum": 1,
+    "BuyLimit": 3,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 2000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 2000,
     "ConsumeResources": {
       "1": {
-        "y": 2000,
+        "z": 2000,
         "x": 300006,
-        "z": 2000
+        "y": 2000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "随机获取一个强度为的传奇品质锋卫星垒模组，可前往【角色战斗矩阵】中查看详情。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10704003"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10704004": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 4,
-    "BuyLimit": 5,
-    "ID": 10704004,
-    "NameLocMeta": {
-      "InTextLiteral": "基础模组随机包强度",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10704004"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 2,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 500,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 500,
+    "GainResourcesID": 62032,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 4,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10704004,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10704004",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "基础模组随机包强度"
+    },
+    "BuyLimitType": 2,
+    "DescLocMeta": {
+      "InKey": "Desc_10704004",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "随机获取一个强度为，且品质在稀有及以上的模组，可前往【角色战斗矩阵】中查看详情。"
     },
     "TapList": {
       "1": 4
     },
-    "GainResourcesID": 62032,
+    "GainNum": 1,
+    "BuyLimit": 5,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 500,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 500,
     "ConsumeResources": {
       "1": {
-        "y": 500,
+        "z": 500,
         "x": 300006,
-        "z": 500
+        "y": 500
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "随机获取一个强度为，且品质在稀有及以上的模组，可前往【角色战斗矩阵】中查看详情。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10704004"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10704005": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 5,
-    "BuyLimit": 5,
-    "ID": 10704005,
-    "NameLocMeta": {
-      "InTextLiteral": "重构数据",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10704005"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 2,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 1000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 1000,
+    "GainResourcesID": 99033,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 5,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10704005,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10704005",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "重构数据"
+    },
+    "BuyLimitType": 2,
+    "DescLocMeta": {
+      "InKey": "Desc_10704005",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "可重构模组或核芯的底层数据，从而解锁全新词条。"
     },
     "TapList": {
       "1": 4
     },
-    "GainResourcesID": 99033,
+    "GainNum": 1,
+    "BuyLimit": 5,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 1000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 1000,
     "ConsumeResources": {
       "1": {
-        "y": 1000,
+        "z": 1000,
         "x": 300006,
-        "z": 1000
+        "y": 1000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "可重构模组或核芯的底层数据，从而解锁全新词条。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10704005"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10703001": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 1,
-    "BuyLimit": 1,
-    "ID": 10703001,
-    "NameLocMeta": {
-      "InTextLiteral": "麦克斯",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10703001"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 980,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300001,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 980,
+    "GainResourcesID": 100010,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 1,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10703001,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10703001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "麦克斯"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10703001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "可解锁新角色麦克斯。"
     },
     "TapList": {
       "1": 3
     },
-    "GainResourcesID": 100010,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 980,
+    "ConsumeResourcesID": 300001,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 980,
     "ConsumeResources": {
       "1": {
-        "y": 980,
+        "z": 980,
         "x": 300001,
-        "z": 980
+        "y": 980
       },
       "2": {
-        "y": 980,
+        "z": 980,
         "x": 300005,
-        "z": 980
+        "y": 980
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "可解锁新角色麦克斯。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10703001"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10703002": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 1,
-    "BuyLimit": 1,
-    "ID": 10703002,
-    "NameLocMeta": {
-      "InTextLiteral": "格罗莉亚",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10703002"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 980,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300001,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 980,
+    "GainResourcesID": 100008,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 1,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10703002,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10703002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "格罗莉亚"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10703002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "可解锁新角色格罗莉亚。"
     },
     "TapList": {
       "1": 3
     },
-    "GainResourcesID": 100008,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 980,
+    "ConsumeResourcesID": 300001,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 980,
     "ConsumeResources": {
       "1": {
-        "y": 980,
+        "z": 980,
         "x": 300001,
-        "z": 980
+        "y": 980
       },
       "2": {
-        "y": 980,
+        "z": 980,
         "x": 300005,
-        "z": 980
+        "y": 980
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "可解锁新角色格罗莉亚。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10703002"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10703003": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 3,
-    "BuyLimit": 1,
-    "ID": 10703003,
-    "NameLocMeta": {
-      "InTextLiteral": "凛冬",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10703003"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 700,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300001,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 700,
+    "GainResourcesID": 5024,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 3,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10703003,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10703003",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "凛冬"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10703003",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "可解锁曙光武器【凛冬】。"
     },
     "TapList": {
       "1": 3
     },
-    "GainResourcesID": 5024,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 700,
+    "ConsumeResourcesID": 300001,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 700,
     "ConsumeResources": {
       "1": {
-        "y": 700,
+        "z": 700,
         "x": 300001,
-        "z": 700
+        "y": 700
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "可解锁曙光武器【凛冬】。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10703003"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "501221": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 501221,
-    "BuyLimit": 1,
-    "ID": 501221,
-    "NameLocMeta": {
-      "InTextLiteral": "方解石",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_501221"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10501221,
     "Shelfs": {
       "1": 2
+    },
+    "Sort": 501221,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 501221,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_501221",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "方解石"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_501221",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "曙光武器【星云】稀有级外观。"
     },
     "TapList": {
       "1": 2
     },
-    "GainResourcesID": 10501221,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 300005,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "曙光武器【星云】稀有级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_501221"
-    },
-    "Quality": 2
+    "Quality": 2,
+    "IsNew": false
   },
   "60000": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 1,
-    "BuyLimit": 0,
-    "ID": 60000,
-    "NameLocMeta": {
-      "InTextLiteral": "【测试】抽卡道具",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_60000"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 0,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-06-01 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 60,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-06-01 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 60,
+    "GainResourcesID": 61050,
     "Shelfs": {
       "1": 6
     },
+    "Sort": 1,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-06-01 00:00:00",
+    "ID": 60000,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_60000",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "【测试】抽卡道具"
+    },
+    "BuyLimitType": 0,
+    "DescLocMeta": {
+      "InKey": "Desc_60000",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "【测试】消耗一个抽卡道具，进行一次抽卡。"
+    },
     "TapList": {},
-    "GainResourcesID": 61050,
+    "GainNum": 1,
+    "BuyLimit": 0,
+    "SaleEndTime": "2035-06-01 00:00:00",
+    "DiscountPrice": 60,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 60,
     "ConsumeResources": {
       "1": {
-        "y": 60,
+        "z": 60,
         "x": 300005,
-        "z": 60
+        "y": 60
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "【测试】消耗一个抽卡道具，进行一次抽卡。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_60000"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10703201": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 201,
-    "BuyLimit": 1,
-    "ID": 10703201,
-    "NameLocMeta": {
-      "InTextLiteral": "齿轮",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10703201"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 60,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300001,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 60,
+    "GainResourcesID": 81215,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 201,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10703201,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10703201",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "齿轮"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10703201",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "个人头像齿轮。"
     },
     "TapList": {
       "1": 3
     },
-    "GainResourcesID": 81215,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 60,
+    "ConsumeResourcesID": 300001,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 60,
     "ConsumeResources": {
       "1": {
-        "y": 60,
+        "z": 60,
         "x": 300001,
-        "z": 60
+        "y": 60
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "个人头像齿轮。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10703201"
-    },
-    "Quality": 2
+    "Quality": 2,
+    "IsNew": false
   },
   "990080": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 1,
-    "BuyLimit": 0,
-    "ID": 990080,
-    "NameLocMeta": {
-      "InTextLiteral": "原爆点通行证等级道具",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_990080"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 0,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 60,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1000,
-    "ConsumeNum": 60,
+    "GainResourcesID": 99008,
     "Shelfs": {
       "1": 5
     },
+    "Sort": 1,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 990080,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_990080",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "原爆点通行证等级道具"
+    },
+    "BuyLimitType": 0,
+    "DescLocMeta": {
+      "InKey": "Desc_990080",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "原爆点通行证等级道具"
+    },
     "TapList": {},
-    "GainResourcesID": 99008,
+    "GainNum": 1000,
+    "BuyLimit": 0,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 60,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 60,
     "ConsumeResources": {
       "1": {
-        "y": 60,
+        "z": 60,
         "x": 300005,
-        "z": 60
+        "y": 60
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "原爆点通行证等级道具",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_990080"
-    },
-    "Quality": 1
+    "Quality": 1,
+    "IsNew": false
   },
   "5001": {
-    "ShelfsShowType": 2,
-    "IsNew": false,
-    "Sort": 499,
-    "BuyLimit": 1,
-    "ID": 5001,
-    "NameLocMeta": {
-      "InTextLiteral": "解码器补给包",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_5001"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 2,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 600,
+    "GainResourcesID": 61012,
     "Shelfs": {
       "1": 1
     },
+    "Sort": 499,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 5001,
+    "ShelfsShowType": 2,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_5001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "解码器补给包"
+    },
+    "BuyLimitType": 2,
+    "DescLocMeta": {
+      "InKey": "Desc_5001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "内含个解码器。可用于解码数据宝库的信息数据。每解码一次，需要消耗一个解码器。"
+    },
     "TapList": {},
-    "GainResourcesID": 61012,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 600,
     "ConsumeResources": {
       "1": {
-        "y": 600,
+        "z": 300,
         "x": 300005,
-        "z": 300
+        "y": 600
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "内含个解码器。可用于解码数据宝库的信息数据。每解码一次，需要消耗一个解码器。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_5001"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "1005": {
-    "ShelfsShowType": 1,
-    "IsNew": false,
-    "Sort": 502,
-    "BuyLimit": 1,
-    "ID": 1005,
-    "NameLocMeta": {
-      "InTextLiteral": "灼痕过载捆绑包",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_1005"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2025-09-24 05:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 980,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2025-09-24 05:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 1840,
+    "GainResourcesID": 61048,
     "Shelfs": {
       "1": 1
     },
+    "Sort": 502,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "ID": 1005,
+    "ShelfsShowType": 1,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_1005",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "灼痕过载捆绑包"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_1005",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": ""
+    },
     "TapList": {},
-    "GainResourcesID": 61048,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "DiscountPrice": 980,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 1840,
     "ConsumeResources": {
       "1": {
-        "y": 1840,
+        "z": 980,
         "x": 300005,
-        "z": 980
+        "y": 1840
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_1005"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "1004": {
-    "ShelfsShowType": 1,
-    "IsNew": false,
-    "Sort": 4,
-    "BuyLimit": 1,
-    "ID": 1004,
-    "NameLocMeta": {
-      "InTextLiteral": "荧蚀崩解捆绑包",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_1004"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2024-09-24 05:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 980,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2024-09-24 05:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 1840,
+    "GainResourcesID": 61047,
     "Shelfs": {
       "1": 1
     },
+    "Sort": 4,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2024-09-24 05:00:00",
+    "ID": 1004,
+    "ShelfsShowType": 1,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_1004",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "荧蚀崩解捆绑包"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_1004",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": ""
+    },
     "TapList": {},
-    "GainResourcesID": 61047,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2024-09-24 05:00:00",
+    "DiscountPrice": 980,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 1840,
     "ConsumeResources": {
       "1": {
-        "y": 1840,
+        "z": 980,
         "x": 300005,
-        "z": 980
+        "y": 1840
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_1004"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "1003": {
-    "ShelfsShowType": 1,
-    "IsNew": false,
-    "Sort": 3,
-    "BuyLimit": 1,
-    "ID": 1003,
-    "NameLocMeta": {
-      "InTextLiteral": "病毒猎手捆绑包",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_1003"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2024-09-24 05:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 580,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2024-09-24 05:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 1120,
+    "GainResourcesID": 61037,
     "Shelfs": {
       "1": 1
     },
+    "Sort": 3,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2024-09-24 05:00:00",
+    "ID": 1003,
+    "ShelfsShowType": 1,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_1003",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "病毒猎手捆绑包"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_1003",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "1980"
+    },
     "TapList": {},
-    "GainResourcesID": 61037,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2024-09-24 05:00:00",
+    "DiscountPrice": 580,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 1120,
     "ConsumeResources": {
       "1": {
-        "y": 1120,
+        "z": 580,
         "x": 300005,
-        "z": 580
+        "y": 1120
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "1980",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_1003"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "1002": {
-    "ShelfsShowType": 1,
-    "IsNew": false,
-    "Sort": 501,
-    "BuyLimit": 1,
-    "ID": 1002,
-    "NameLocMeta": {
-      "InTextLiteral": "病毒选手捆绑包",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_1002"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2025-09-24 05:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 580,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2025-09-24 05:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 1120,
+    "GainResourcesID": 61036,
     "Shelfs": {
       "1": 1
     },
+    "Sort": 501,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "ID": 1002,
+    "ShelfsShowType": 1,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_1002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "病毒选手捆绑包"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_1002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "1980"
+    },
     "TapList": {},
-    "GainResourcesID": 61036,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "DiscountPrice": 580,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 1120,
     "ConsumeResources": {
       "1": {
-        "y": 1120,
+        "z": 580,
         "x": 300005,
-        "z": 580
+        "y": 1120
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "1980",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_1002"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "1001": {
-    "ShelfsShowType": 1,
-    "IsNew": false,
-    "Sort": 1001,
-    "BuyLimit": 1,
-    "ID": 1001,
-    "NameLocMeta": {
-      "InTextLiteral": "麦克斯大礼包",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_1001"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 1680,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 2640,
+    "GainResourcesID": 61035,
     "Shelfs": {
       "1": 1
     },
+    "Sort": 1001,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 1001,
+    "ShelfsShowType": 1,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_1001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "麦克斯大礼包"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_1001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "内含：角色麦克斯，麦克斯熟练度满级补给，武器外观狂野伪装，专属语音炸弹先锋。"
+    },
     "TapList": {},
-    "GainResourcesID": 61035,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 1680,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 2640,
     "ConsumeResources": {
       "1": {
-        "y": 2640,
+        "z": 1680,
         "x": 300005,
-        "z": 1680
+        "y": 2640
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "内含：角色麦克斯，麦克斯熟练度满级补给，武器外观来切点什么·暗紫，专属语音烧烤。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_1001"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "106": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 1,
-    "BuyLimit": 0,
-    "ID": 106,
-    "NameLocMeta": {
-      "InTextLiteral": "充值档位",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_106"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 0,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2025-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 0,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 0,
-    "Tab": 1,
-    "ShowEndTime": "2025-12-31 00:00:00",
-    "GainNum": 6480,
-    "ConsumeNum": 0,
+    "GainResourcesID": 300001,
     "Shelfs": {
       "1": 4
     },
-    "TapList": {},
-    "GainResourcesID": 300001,
-    "ConsumeResources": {},
-    "DescLocMeta": {
-      "InTextLiteral": "6480",
+    "Sort": 1,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-12-31 00:00:00",
+    "ID": 106,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_106",
       "InNamespace": "mall_TBMall",
-      "InKey": "Desc_106"
+      "InTextLiteral": "充值档位"
     },
-    "Quality": 4
+    "BuyLimitType": 0,
+    "DescLocMeta": {
+      "InKey": "Desc_106",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "6480"
+    },
+    "TapList": {},
+    "GainNum": 6480,
+    "BuyLimit": 0,
+    "SaleEndTime": "2025-12-31 00:00:00",
+    "DiscountPrice": 0,
+    "ConsumeResourcesID": 0,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 0,
+    "ConsumeResources": {},
+    "Quality": 4,
+    "IsNew": false
   },
   "10709004": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 4,
-    "BuyLimit": 1,
-    "ID": 10709004,
-    "NameLocMeta": {
-      "InTextLiteral": "我是天才！",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10709004"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2025-09-24 05:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 90,
-    "IsCountDown": true,
-    "ConsumeResourcesID": 99035,
-    "Tab": 1,
-    "ShowEndTime": "2025-09-24 05:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 90,
+    "GainResourcesID": 20720471,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 4,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "ID": 10709004,
+    "ShelfsShowType": 0,
+    "IsCountDown": true,
+    "NameLocMeta": {
+      "InKey": "Name_10709004",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "我是天才！"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10709004",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "沟通语音格罗莉亚专属。"
     },
     "TapList": {
       "1": 9
     },
-    "GainResourcesID": 20720471,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "DiscountPrice": 90,
+    "ConsumeResourcesID": 99035,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 90,
     "ConsumeResources": {
       "1": {
-        "y": 90,
+        "z": 90,
         "x": 99035,
-        "z": 90
+        "y": 90
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "沟通语音格罗莉亚专属。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10709004"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10710001": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 1,
-    "BuyLimit": 0,
-    "ID": 10710001,
-    "NameLocMeta": {
-      "InTextLiteral": "基础模组随机包强度",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10710001"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 0,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 240,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 99012,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 240,
+    "GainResourcesID": 62039,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 1,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10710001,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10710001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "基础模组随机包强度"
+    },
+    "BuyLimitType": 0,
+    "DescLocMeta": {
+      "InKey": "Desc_10710001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "随机获取一个强度为，且品质在稀有及以上的模组，可前往【角色战斗矩阵】中查看详情。"
     },
     "TapList": {
       "1": 10
     },
-    "GainResourcesID": 62039,
+    "GainNum": 1,
+    "BuyLimit": 0,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 240,
+    "ConsumeResourcesID": 99012,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 240,
     "ConsumeResources": {
       "1": {
-        "y": 240,
+        "z": 240,
         "x": 99012,
-        "z": 240
+        "y": 240
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "随机获取一个强度为，且品质在稀有及以上的模组，可前往【角色战斗矩阵】中查看详情。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10710001"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10710002": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 2,
-    "BuyLimit": 0,
-    "ID": 10710002,
-    "NameLocMeta": {
-      "InTextLiteral": "基础模组随机包强度",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10710002"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 0,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 240,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 99013,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 240,
+    "GainResourcesID": 62040,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 2,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10710002,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10710002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "基础模组随机包强度"
+    },
+    "BuyLimitType": 0,
+    "DescLocMeta": {
+      "InKey": "Desc_10710002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "随机获取一个强度为，且品质在稀有及以上的模组，可前往【角色战斗矩阵】中查看详情。"
     },
     "TapList": {
       "1": 10
     },
-    "GainResourcesID": 62040,
+    "GainNum": 1,
+    "BuyLimit": 0,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 240,
+    "ConsumeResourcesID": 99013,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 240,
     "ConsumeResources": {
       "1": {
-        "y": 240,
+        "z": 240,
         "x": 99013,
-        "z": 240
+        "y": 240
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "随机获取一个强度为，且品质在稀有及以上的模组，可前往【角色战斗矩阵】中查看详情。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10710002"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10710003": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 3,
-    "BuyLimit": 0,
-    "ID": 10710003,
-    "NameLocMeta": {
-      "InTextLiteral": "基础模组随机包强度",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10710003"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 0,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 240,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 99014,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 240,
+    "GainResourcesID": 62041,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 3,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10710003,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10710003",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "基础模组随机包强度"
+    },
+    "BuyLimitType": 0,
+    "DescLocMeta": {
+      "InKey": "Desc_10710003",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "随机获取一个强度为，且品质在稀有及以上的模组，可前往【角色战斗矩阵】中查看详情。"
     },
     "TapList": {
       "1": 10
     },
-    "GainResourcesID": 62041,
+    "GainNum": 1,
+    "BuyLimit": 0,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 240,
+    "ConsumeResourcesID": 99014,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 240,
     "ConsumeResources": {
       "1": {
-        "y": 240,
+        "z": 240,
         "x": 99014,
-        "z": 240
+        "y": 240
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "随机获取一个强度为，且品质在稀有及以上的模组，可前往【角色战斗矩阵】中查看详情。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10710003"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "104": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 3,
-    "BuyLimit": 0,
-    "ID": 104,
-    "NameLocMeta": {
-      "InTextLiteral": "充值档位",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_104"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 0,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2025-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 0,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 0,
-    "Tab": 1,
-    "ShowEndTime": "2025-12-31 00:00:00",
-    "GainNum": 1980,
-    "ConsumeNum": 0,
+    "GainResourcesID": 300001,
     "Shelfs": {
       "1": 4
     },
-    "TapList": {},
-    "GainResourcesID": 300001,
-    "ConsumeResources": {},
-    "DescLocMeta": {
-      "InTextLiteral": "1980",
+    "Sort": 3,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-12-31 00:00:00",
+    "ID": 104,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_104",
       "InNamespace": "mall_TBMall",
-      "InKey": "Desc_104"
+      "InTextLiteral": "充值档位"
     },
-    "Quality": 4
+    "BuyLimitType": 0,
+    "DescLocMeta": {
+      "InKey": "Desc_104",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "1980"
+    },
+    "TapList": {},
+    "GainNum": 1980,
+    "BuyLimit": 0,
+    "SaleEndTime": "2025-12-31 00:00:00",
+    "DiscountPrice": 0,
+    "ConsumeResourcesID": 0,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 0,
+    "ConsumeResources": {},
+    "Quality": 4,
+    "IsNew": false
   },
   "10706010": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 10,
-    "BuyLimit": 0,
-    "ID": 10706010,
-    "NameLocMeta": {
-      "InTextLiteral": "矩阵币",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10706010"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 0,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 2000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1000,
-    "ConsumeNum": 2000,
+    "GainResourcesID": 99989,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 10,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10706010,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10706010",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "矩阵币"
+    },
+    "BuyLimitType": 0,
+    "DescLocMeta": {
+      "InKey": "Desc_10706010",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "内含个矩阵币。"
     },
     "TapList": {
       "1": 6
     },
-    "GainResourcesID": 99989,
+    "GainNum": 1000,
+    "BuyLimit": 0,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 2000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 2000,
     "ConsumeResources": {
       "1": {
-        "y": 2000,
+        "z": 2000,
         "x": 300006,
-        "z": 2000
+        "y": 2000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "内含个矩阵币。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10706010"
-    },
-    "Quality": 2
+    "Quality": 2,
+    "IsNew": false
   },
   "10706006": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 6,
-    "BuyLimit": 12,
-    "ID": 10706006,
-    "NameLocMeta": {
-      "InTextLiteral": "重置晶核",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10706006"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 3,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 2000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 2000,
+    "GainResourcesID": 99028,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 6,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10706006,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10706006",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "重置晶核"
+    },
+    "BuyLimitType": 3,
+    "DescLocMeta": {
+      "InKey": "Desc_10706006",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "用于重置模组的副属性的数值区间。"
     },
     "TapList": {
       "1": 6
     },
-    "GainResourcesID": 99028,
+    "GainNum": 1,
+    "BuyLimit": 12,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 2000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 2000,
     "ConsumeResources": {
       "1": {
-        "y": 2000,
+        "z": 2000,
         "x": 300006,
-        "z": 2000
+        "y": 2000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "用于重置模组的副属性的数值区间。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10706006"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10709009": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 7,
-    "BuyLimit": 1,
-    "ID": 10709009,
-    "NameLocMeta": {
-      "InTextLiteral": "幻彩星踪",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10709009"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2025-09-24 05:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": true,
-    "ConsumeResourcesID": 99035,
-    "Tab": 1,
-    "ShowEndTime": "2025-09-24 05:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10100202,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 7,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "ID": 10709009,
+    "ShelfsShowType": 0,
+    "IsCountDown": true,
+    "NameLocMeta": {
+      "InKey": "Name_10709009",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "幻彩星踪"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10709009",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "曙光史诗级外观。"
     },
     "TapList": {
       "1": 9
     },
-    "GainResourcesID": 10100202,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 99035,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 99035,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "曙光史诗级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10709009"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10705005": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 5,
-    "BuyLimit": 3,
-    "ID": 10705005,
-    "NameLocMeta": {
-      "InTextLiteral": "塑形晶核",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10705005"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 2,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 2000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 2000,
+    "GainResourcesID": 99026,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 5,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10705005,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10705005",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "塑形晶核"
+    },
+    "BuyLimitType": 2,
+    "DescLocMeta": {
+      "InKey": "Desc_10705005",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "用于重新生成模组的形状。"
     },
     "TapList": {
       "1": 5
     },
-    "GainResourcesID": 99026,
+    "GainNum": 1,
+    "BuyLimit": 3,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 2000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 2000,
     "ConsumeResources": {
       "1": {
-        "y": 2000,
+        "z": 2000,
         "x": 300006,
-        "z": 2000
+        "y": 2000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "用于重新生成模组的形状。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10705005"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10705006": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 6,
-    "BuyLimit": 5,
-    "ID": 10705006,
-    "NameLocMeta": {
-      "InTextLiteral": "转换晶核",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10705006"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 2,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 2000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 2000,
+    "GainResourcesID": 99030,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 6,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10705006,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10705006",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "转换晶核"
+    },
+    "BuyLimitType": 2,
+    "DescLocMeta": {
+      "InKey": "Desc_10705006",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "用于重置模组的随机一条副属性。"
     },
     "TapList": {
       "1": 5
     },
-    "GainResourcesID": 99030,
+    "GainNum": 1,
+    "BuyLimit": 5,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 2000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 2000,
     "ConsumeResources": {
       "1": {
-        "y": 2000,
+        "z": 2000,
         "x": 300006,
-        "z": 2000
+        "y": 2000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "用于重置模组的随机一条副属性。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10705006"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10706002": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 2,
-    "BuyLimit": 10,
-    "ID": 10706002,
-    "NameLocMeta": {
-      "InTextLiteral": "传奇锋卫星垒模组随机包强度",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10706002"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 3,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 2000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 2000,
+    "GainResourcesID": 62037,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 2,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10706002,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10706002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "传奇锋卫星垒模组随机包强度"
+    },
+    "BuyLimitType": 3,
+    "DescLocMeta": {
+      "InKey": "Desc_10706002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "随机获取一个强度为的传奇品质锋卫星垒模组，可前往【角色战斗矩阵】中查看详情。"
     },
     "TapList": {
       "1": 6
     },
-    "GainResourcesID": 62037,
+    "GainNum": 1,
+    "BuyLimit": 10,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 2000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 2000,
     "ConsumeResources": {
       "1": {
-        "y": 2000,
+        "z": 2000,
         "x": 300006,
-        "z": 2000
+        "y": 2000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "随机获取一个强度为的传奇品质锋卫星垒模组，可前往【角色战斗矩阵】中查看详情。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10706002"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "101": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 6,
-    "BuyLimit": 0,
-    "ID": 101,
-    "NameLocMeta": {
-      "InTextLiteral": "充值档位",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_101"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 0,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2025-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 0,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 0,
-    "Tab": 1,
-    "ShowEndTime": "2025-12-31 00:00:00",
-    "GainNum": 100,
-    "ConsumeNum": 0,
+    "GainResourcesID": 300001,
     "Shelfs": {
       "1": 4
     },
-    "TapList": {},
-    "GainResourcesID": 300001,
-    "ConsumeResources": {},
-    "DescLocMeta": {
-      "InTextLiteral": "100",
+    "Sort": 6,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-12-31 00:00:00",
+    "ID": 101,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_101",
       "InNamespace": "mall_TBMall",
-      "InKey": "Desc_101"
+      "InTextLiteral": "充值档位"
     },
-    "Quality": 4
+    "BuyLimitType": 0,
+    "DescLocMeta": {
+      "InKey": "Desc_101",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "100"
+    },
+    "TapList": {},
+    "GainNum": 100,
+    "BuyLimit": 0,
+    "SaleEndTime": "2025-12-31 00:00:00",
+    "DiscountPrice": 0,
+    "ConsumeResourcesID": 0,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 0,
+    "ConsumeResources": {},
+    "Quality": 4,
+    "IsNew": false
   },
   "102": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 5,
-    "BuyLimit": 0,
-    "ID": 102,
-    "NameLocMeta": {
-      "InTextLiteral": "充值档位",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_102"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 0,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2025-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 0,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 0,
-    "Tab": 1,
-    "ShowEndTime": "2025-12-31 00:00:00",
-    "GainNum": 300,
-    "ConsumeNum": 0,
+    "GainResourcesID": 300001,
     "Shelfs": {
       "1": 4
     },
-    "TapList": {},
-    "GainResourcesID": 300001,
-    "ConsumeResources": {},
-    "DescLocMeta": {
-      "InTextLiteral": "300",
+    "Sort": 5,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-12-31 00:00:00",
+    "ID": 102,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_102",
       "InNamespace": "mall_TBMall",
-      "InKey": "Desc_102"
+      "InTextLiteral": "充值档位"
     },
-    "Quality": 4
+    "BuyLimitType": 0,
+    "DescLocMeta": {
+      "InKey": "Desc_102",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "300"
+    },
+    "TapList": {},
+    "GainNum": 300,
+    "BuyLimit": 0,
+    "SaleEndTime": "2025-12-31 00:00:00",
+    "DiscountPrice": 0,
+    "ConsumeResourcesID": 0,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 0,
+    "ConsumeResources": {},
+    "Quality": 4,
+    "IsNew": false
   },
   "103": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 4,
-    "BuyLimit": 0,
-    "ID": 103,
-    "NameLocMeta": {
-      "InTextLiteral": "充值档位",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_103"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 0,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2025-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 0,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 0,
-    "Tab": 1,
-    "ShowEndTime": "2025-12-31 00:00:00",
-    "GainNum": 980,
-    "ConsumeNum": 0,
+    "GainResourcesID": 300001,
     "Shelfs": {
       "1": 4
     },
-    "TapList": {},
-    "GainResourcesID": 300001,
-    "ConsumeResources": {},
-    "DescLocMeta": {
-      "InTextLiteral": "980",
+    "Sort": 4,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-12-31 00:00:00",
+    "ID": 103,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_103",
       "InNamespace": "mall_TBMall",
-      "InKey": "Desc_103"
+      "InTextLiteral": "充值档位"
     },
-    "Quality": 4
+    "BuyLimitType": 0,
+    "DescLocMeta": {
+      "InKey": "Desc_103",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "980"
+    },
+    "TapList": {},
+    "GainNum": 980,
+    "BuyLimit": 0,
+    "SaleEndTime": "2025-12-31 00:00:00",
+    "DiscountPrice": 0,
+    "ConsumeResourcesID": 0,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 0,
+    "ConsumeResources": {},
+    "Quality": 4,
+    "IsNew": false
   },
   "103101": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 103101,
-    "BuyLimit": 1,
-    "ID": 103101,
-    "NameLocMeta": {
-      "InTextLiteral": "金属喷漆",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_103101"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10103101,
     "Shelfs": {
       "1": 2
+    },
+    "Sort": 103101,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 103101,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_103101",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "金属喷漆"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_103101",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "麦克斯稀有级外观。"
     },
     "TapList": {
       "1": 1
     },
-    "GainResourcesID": 10103101,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 300005,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "麦克斯稀有级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_103101"
-    },
-    "Quality": 2
+    "Quality": 2,
+    "IsNew": false
   },
   "105": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 2,
-    "BuyLimit": 0,
-    "ID": 105,
-    "NameLocMeta": {
-      "InTextLiteral": "充值档位",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_105"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 0,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2025-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 0,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 0,
-    "Tab": 1,
-    "ShowEndTime": "2025-12-31 00:00:00",
-    "GainNum": 3280,
-    "ConsumeNum": 0,
+    "GainResourcesID": 300001,
     "Shelfs": {
       "1": 4
     },
-    "TapList": {},
-    "GainResourcesID": 300001,
-    "ConsumeResources": {},
-    "DescLocMeta": {
-      "InTextLiteral": "3280",
+    "Sort": 2,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-12-31 00:00:00",
+    "ID": 105,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_105",
       "InNamespace": "mall_TBMall",
-      "InKey": "Desc_105"
+      "InTextLiteral": "充值档位"
     },
-    "Quality": 4
+    "BuyLimitType": 0,
+    "DescLocMeta": {
+      "InKey": "Desc_105",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "3280"
+    },
+    "TapList": {},
+    "GainNum": 3280,
+    "BuyLimit": 0,
+    "SaleEndTime": "2025-12-31 00:00:00",
+    "DiscountPrice": 0,
+    "ConsumeResourcesID": 0,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 0,
+    "ConsumeResources": {},
+    "Quality": 4,
+    "IsNew": false
   },
   "501502": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 501502,
-    "BuyLimit": 1,
-    "ID": 501502,
-    "NameLocMeta": {
-      "InTextLiteral": "病毒暗星·荒原",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_501502"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10501502,
     "Shelfs": {
       "1": 2
+    },
+    "Sort": 501502,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 501502,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_501502",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "病毒暗星·荒原"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_501502",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "海因克斯【病毒暗星】稀有级外观。"
     },
     "TapList": {
       "1": 2
     },
-    "GainResourcesID": 10501502,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 300005,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "海因克斯【病毒暗星】稀有级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_501502"
-    },
-    "Quality": 2
+    "Quality": 2,
+    "IsNew": false
   },
   "10709001": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 1,
-    "BuyLimit": 1,
-    "ID": 10709001,
-    "NameLocMeta": {
-      "InTextLiteral": "浮世霓光·暮夜傀姬",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10709001"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2025-09-24 05:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 10000,
-    "IsCountDown": true,
-    "ConsumeResourcesID": 99035,
-    "Tab": 1,
-    "ShowEndTime": "2025-09-24 05:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 10000,
+    "GainResourcesID": 10101010,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 1,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "ID": 10709001,
+    "ShelfsShowType": 0,
+    "IsCountDown": true,
+    "NameLocMeta": {
+      "InKey": "Name_10709001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "浮世霓光·暮夜傀姬"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10709001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "一抹幻光现世，徒留人间浮屠。这是属于影刃的夜晚，百鬼之夜，众生喧嚣。她如魅影般在城市里穿梭，留下一个又一个瑰丽离奇的故事。"
     },
     "TapList": {
       "1": 9
     },
-    "GainResourcesID": 10101010,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "DiscountPrice": 8888,
+    "ConsumeResourcesID": 99035,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 8888,
     "ConsumeResources": {
       "1": {
-        "y": 10000,
+        "z": 8888,
         "x": 99035,
-        "z": 10000
+        "y": 8888
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "一抹幻光现世，徒留人间浮屠。这是属于影刃的夜晚，百鬼之夜，众生喧嚣。她如魅影般在城市里穿梭，留下一个又一个瑰丽离奇的故事。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10709001"
-    },
-    "Quality": 5
+    "Quality": 5,
+    "IsNew": false
   },
   "10709002": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 2,
-    "BuyLimit": 1,
-    "ID": 10709002,
-    "NameLocMeta": {
-      "InTextLiteral": "着色器·华彩",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10709002"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 2,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2025-09-24 05:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": true,
-    "ConsumeResourcesID": 99035,
-    "Tab": 1,
-    "ShowEndTime": "2025-09-24 05:00:00",
-    "GainNum": 10,
-    "ConsumeNum": 300,
+    "GainResourcesID": 99017,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 2,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "ID": 10709002,
+    "ShelfsShowType": 0,
+    "IsCountDown": true,
+    "NameLocMeta": {
+      "InKey": "Name_10709002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "着色器·华彩"
+    },
+    "BuyLimitType": 2,
+    "DescLocMeta": {
+      "InKey": "Desc_10709002",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "内含个着色器·华彩。可用于解锁辉耀传奇皮肤换色方案。"
     },
     "TapList": {
       "1": 9
     },
-    "GainResourcesID": 99017,
+    "GainNum": 10,
+    "BuyLimit": 1,
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 99035,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 99035,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "内含个着色器·华彩。可用于解锁辉耀传奇皮肤换色方案。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10709002"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10709003": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 3,
-    "BuyLimit": 1,
-    "ID": 10709003,
-    "NameLocMeta": {
-      "InTextLiteral": "弱点",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10709003"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2025-09-24 05:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 90,
-    "IsCountDown": true,
-    "ConsumeResourcesID": 99035,
-    "Tab": 1,
-    "ShowEndTime": "2025-09-24 05:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 90,
+    "GainResourcesID": 20720171,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 3,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "ID": 10709003,
+    "ShelfsShowType": 0,
+    "IsCountDown": true,
+    "NameLocMeta": {
+      "InKey": "Name_10709003",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "弱点"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10709003",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "沟通语音影刃专属。"
     },
     "TapList": {
       "1": 9
     },
-    "GainResourcesID": 20720171,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "DiscountPrice": 90,
+    "ConsumeResourcesID": 99035,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 90,
     "ConsumeResources": {
       "1": {
-        "y": 90,
+        "z": 90,
         "x": 99035,
-        "z": 90
+        "y": 90
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "沟通语音影刃专属。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10709003"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "502141": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 502141,
-    "BuyLimit": 1,
-    "ID": 502141,
-    "NameLocMeta": {
-      "InTextLiteral": "盛夏浪潮",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_502141"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 680,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 680,
+    "GainResourcesID": 10502141,
     "Shelfs": {
       "1": 2
+    },
+    "Sort": 502141,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 502141,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_502141",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "盛夏浪潮"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_502141",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "麦克斯【来切点什么】史诗级外观。"
     },
     "TapList": {
       "1": 2
     },
-    "GainResourcesID": 10502141,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 680,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 680,
     "ConsumeResources": {
       "1": {
-        "y": 680,
+        "z": 680,
         "x": 300005,
-        "z": 680
+        "y": 680
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "麦克斯【来切点什么】史诗级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_502141"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10709005": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 5,
-    "BuyLimit": 1,
-    "ID": 10709005,
-    "NameLocMeta": {
-      "InTextLiteral": "末路狂花",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10709005"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2025-09-24 05:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": true,
-    "ConsumeResourcesID": 99035,
-    "Tab": 1,
-    "ShowEndTime": "2025-09-24 05:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10904201,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 5,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "ID": 10709005,
+    "ShelfsShowType": 0,
+    "IsCountDown": true,
+    "NameLocMeta": {
+      "InKey": "Name_10709005",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "末路狂花"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10709005",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "格罗莉亚史诗级外观。"
     },
     "TapList": {
       "1": 9
     },
-    "GainResourcesID": 10904201,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 99035,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 99035,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "格罗莉亚史诗级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10709005"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10709006": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 6,
-    "BuyLimit": 1,
-    "ID": 10709006,
-    "NameLocMeta": {
-      "InTextLiteral": "幻彩狂热",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10709006"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2025-09-24 05:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": true,
-    "ConsumeResourcesID": 99035,
-    "Tab": 1,
-    "ShowEndTime": "2025-09-24 05:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10103202,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 6,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "ID": 10709006,
+    "ShelfsShowType": 0,
+    "IsCountDown": true,
+    "NameLocMeta": {
+      "InKey": "Name_10709006",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "幻彩狂热"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10709006",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "麦克斯史诗级外观。"
     },
     "TapList": {
       "1": 9
     },
-    "GainResourcesID": 10103202,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 99035,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 99035,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "麦克斯史诗级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10709006"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10709007": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 9,
-    "BuyLimit": 1,
-    "ID": 10709007,
-    "NameLocMeta": {
-      "InTextLiteral": "小恶魔",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10709007"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2025-09-24 05:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": true,
-    "ConsumeResourcesID": 99035,
-    "Tab": 1,
-    "ShowEndTime": "2025-09-24 05:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10502441,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 9,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "ID": 10709007,
+    "ShelfsShowType": 0,
+    "IsCountDown": true,
+    "NameLocMeta": {
+      "InKey": "Name_10709007",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "小恶魔"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10709007",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "曙光【凛冬】史诗级外观。"
     },
     "TapList": {
       "1": 9
     },
-    "GainResourcesID": 10502441,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 99035,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 99035,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "曙光【凛冬】史诗级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10709007"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10709008": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 10,
-    "BuyLimit": 1,
-    "ID": 10709008,
-    "NameLocMeta": {
-      "InTextLiteral": "浮世霓光·超音速",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10709008"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2025-09-24 05:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": true,
-    "ConsumeResourcesID": 99035,
-    "Tab": 1,
-    "ShowEndTime": "2025-09-24 05:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10501802,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 10,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "ID": 10709008,
+    "ShelfsShowType": 0,
+    "IsCountDown": true,
+    "NameLocMeta": {
+      "InKey": "Name_10709008",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "浮世霓光·超音速"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10709008",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "影刃【浮世霓光·寂灭】史诗级外观。"
     },
     "TapList": {
       "1": 9
     },
-    "GainResourcesID": 10501802,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 99035,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 99035,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "影刃【浮世霓光·寂灭】史诗级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10709008"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "904101": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 904101,
-    "BuyLimit": 1,
-    "ID": 904101,
-    "NameLocMeta": {
-      "InTextLiteral": "甜心芭比",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_904101"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10904101,
     "Shelfs": {
       "1": 2
+    },
+    "Sort": 904101,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 904101,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_904101",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "甜心芭比"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_904101",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "格罗莉亚稀有级外观。"
     },
     "TapList": {
       "1": 1
     },
-    "GainResourcesID": 10904101,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 300005,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "格罗莉亚稀有级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_904101"
-    },
-    "Quality": 2
+    "Quality": 2,
+    "IsNew": false
   },
   "10709010": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 8,
-    "BuyLimit": 1,
-    "ID": 10709010,
-    "NameLocMeta": {
-      "InTextLiteral": "暗网游侠",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10709010"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2025-09-24 05:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": true,
-    "ConsumeResourcesID": 99035,
-    "Tab": 1,
-    "ShowEndTime": "2025-09-24 05:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10106202,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 8,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "ID": 10709010,
+    "ShelfsShowType": 0,
+    "IsCountDown": true,
+    "NameLocMeta": {
+      "InKey": "Name_10709010",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "暗网游侠"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10709010",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "海因克斯史诗级外观。"
     },
     "TapList": {
       "1": 9
     },
-    "GainResourcesID": 10106202,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 99035,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 99035,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "海因克斯史诗级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10709010"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10709011": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 11,
-    "BuyLimit": 1,
-    "ID": 10709011,
-    "NameLocMeta": {
-      "InTextLiteral": "完全过载",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10709011"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2025-09-24 05:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": true,
-    "ConsumeResourcesID": 99035,
-    "Tab": 1,
-    "ShowEndTime": "2025-09-24 05:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10501641,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 11,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "ID": 10709011,
+    "ShelfsShowType": 0,
+    "IsCountDown": true,
+    "NameLocMeta": {
+      "InKey": "Name_10709011",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "完全过载"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10709011",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "麦克斯【来炸点什么】史诗级外观。"
     },
     "TapList": {
       "1": 9
     },
-    "GainResourcesID": 10501641,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 99035,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 99035,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "麦克斯【来炸点什么】史诗级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10709011"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10709012": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 12,
-    "BuyLimit": 1,
-    "ID": 10709012,
-    "NameLocMeta": {
-      "InTextLiteral": "浮世霓光·百鬼夜行",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10709012"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2025-09-24 05:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": true,
-    "ConsumeResourcesID": 99035,
-    "Tab": 1,
-    "ShowEndTime": "2025-09-24 05:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10501803,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 12,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "ID": 10709012,
+    "ShelfsShowType": 0,
+    "IsCountDown": true,
+    "NameLocMeta": {
+      "InKey": "Name_10709012",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "浮世霓光·百鬼夜行"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10709012",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "影刃【浮世霓光·寂灭】史诗级外观。"
     },
     "TapList": {
       "1": 9
     },
-    "GainResourcesID": 10501803,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 99035,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 99035,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "影刃【浮世霓光·寂灭】史诗级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10709012"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "10705004": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 4,
-    "BuyLimit": 5,
-    "ID": 10705004,
-    "NameLocMeta": {
-      "InTextLiteral": "基础模组随机包强度",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10705004"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 2,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 500,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 500,
+    "GainResourcesID": 62035,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 4,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10705004,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10705004",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "基础模组随机包强度"
+    },
+    "BuyLimitType": 2,
+    "DescLocMeta": {
+      "InKey": "Desc_10705004",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "随机获取一个强度为，且品质在稀有及以上的模组，可前往【角色战斗矩阵】中查看详情。"
     },
     "TapList": {
       "1": 5
     },
-    "GainResourcesID": 62035,
+    "GainNum": 1,
+    "BuyLimit": 5,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 500,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 500,
     "ConsumeResources": {
       "1": {
-        "y": 500,
+        "z": 500,
         "x": 300006,
-        "z": 500
+        "y": 500
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "随机获取一个强度为，且品质在稀有及以上的模组，可前往【角色战斗矩阵】中查看详情。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10705004"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   },
   "102101": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 102101,
-    "BuyLimit": 1,
-    "ID": 102101,
-    "NameLocMeta": {
-      "InTextLiteral": "秩序信念",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_102101"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 300,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 300,
+    "GainResourcesID": 10102101,
     "Shelfs": {
       "1": 2
+    },
+    "Sort": 102101,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 102101,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_102101",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "秩序信念"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_102101",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "上校稀有级外观。"
     },
     "TapList": {
       "1": 1
     },
-    "GainResourcesID": 10102101,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 300,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 300,
     "ConsumeResources": {
       "1": {
-        "y": 300,
+        "z": 300,
         "x": 300005,
-        "z": 300
+        "y": 300
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "上校稀有级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_102101"
-    },
-    "Quality": 2
+    "Quality": 2,
+    "IsNew": false
   },
   "10300202": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 202,
-    "BuyLimit": 0,
-    "ID": 10300202,
-    "NameLocMeta": {
-      "InTextLiteral": "复活币",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10300202"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 0,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 20,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 20,
+    "GainResourcesID": 99016,
     "Shelfs": {
       "1": 3
     },
+    "Sort": 202,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10300202,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10300202",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "复活币"
+    },
+    "BuyLimitType": 0,
+    "DescLocMeta": {
+      "InKey": "Desc_10300202",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "当角色在局内倒地后，使用复活币可以立刻复苏，并回复所有体力值。"
+    },
     "TapList": {},
-    "GainResourcesID": 99016,
+    "GainNum": 1,
+    "BuyLimit": 0,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 20,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 20,
     "ConsumeResources": {
       "1": {
-        "y": 20,
+        "z": 20,
         "x": 300005,
-        "z": 20
+        "y": 20
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "当角色在局内倒地后，使用复活币可以立刻复苏，并回复所有体力值。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10300202"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10705001": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 1,
-    "BuyLimit": 1,
-    "ID": 10705001,
-    "NameLocMeta": {
-      "InTextLiteral": "病毒终结者",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10705001"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 10000,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300006,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 10000,
+    "GainResourcesID": 81709,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 1,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10705001,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10705001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "病毒终结者"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_10705001",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "个人头像病毒终结者"
     },
     "TapList": {
       "1": 5
     },
-    "GainResourcesID": 81709,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 10000,
+    "ConsumeResourcesID": 300006,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 10000,
     "ConsumeResources": {
       "1": {
-        "y": 10000,
+        "z": 10000,
         "x": 300006,
-        "z": 10000
+        "y": 10000
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "个人头像病毒终结者",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10705001"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "10707010": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 10,
-    "BuyLimit": 10,
-    "ID": 10707010,
-    "NameLocMeta": {
-      "InTextLiteral": "源码",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10707010"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 2,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 10,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300007,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 100,
-    "ConsumeNum": 10,
+    "GainResourcesID": 99994,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 10,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10707010,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10707010",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "源码"
+    },
+    "BuyLimitType": 2,
+    "DescLocMeta": {
+      "InKey": "Desc_10707010",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "内含个源码。"
     },
     "TapList": {
       "1": 7
     },
-    "GainResourcesID": 99994,
+    "GainNum": 100,
+    "BuyLimit": 10,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 10,
+    "ConsumeResourcesID": 300007,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 10,
     "ConsumeResources": {
       "1": {
-        "y": 10,
+        "z": 10,
         "x": 300007,
-        "z": 10
+        "y": 10
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "内含个源码。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10707010"
-    },
-    "Quality": 1
+    "Quality": 1,
+    "IsNew": false
   },
   "10707009": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 9,
-    "BuyLimit": 2,
-    "ID": 10707009,
-    "NameLocMeta": {
-      "InTextLiteral": "解码器",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10707009"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 2,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 60,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300007,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 60,
+    "GainResourcesID": 210001,
     "Shelfs": {
       "1": 7
+    },
+    "Sort": 9,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10707009,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10707009",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "解码器"
+    },
+    "BuyLimitType": 2,
+    "DescLocMeta": {
+      "InKey": "Desc_10707009",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "用于解码数据宝库的信息数据。每解码一次，需要消耗一个解码器。"
     },
     "TapList": {
       "1": 7
     },
-    "GainResourcesID": 210001,
+    "GainNum": 1,
+    "BuyLimit": 2,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 60,
+    "ConsumeResourcesID": 300007,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 60,
     "ConsumeResources": {
       "1": {
-        "y": 60,
+        "z": 60,
         "x": 300007,
-        "z": 60
+        "y": 60
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "用于检索英雄角色的信息数据。每检索一次，需要消耗一个检索指令。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10707009"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "990090": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 2,
-    "BuyLimit": 0,
-    "ID": 990090,
-    "NameLocMeta": {
-      "InTextLiteral": "超载通行证等级道具",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_990090"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 0,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 60,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1000,
-    "ConsumeNum": 60,
+    "GainResourcesID": 99009,
     "Shelfs": {
       "1": 5
     },
+    "Sort": 2,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 990090,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_990090",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "超载通行证等级道具"
+    },
+    "BuyLimitType": 0,
+    "DescLocMeta": {
+      "InKey": "Desc_990090",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "超载通行证等级道具"
+    },
     "TapList": {},
-    "GainResourcesID": 99009,
+    "GainNum": 1000,
+    "BuyLimit": 0,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 60,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 60,
     "ConsumeResources": {
       "1": {
-        "y": 60,
+        "z": 60,
         "x": 300005,
-        "z": 60
+        "y": 60
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "超载通行证等级道具",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_990090"
-    },
-    "Quality": 1
+    "Quality": 1,
+    "IsNew": false
   },
   "10300201": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 201,
-    "BuyLimit": 0,
-    "ID": 10300201,
-    "NameLocMeta": {
-      "InTextLiteral": "改名卡",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_10300201"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 0,
-    "AleardyOwnedLimit": 0,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 100,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 100,
+    "GainResourcesID": 300002,
     "Shelfs": {
       "1": 3
     },
+    "Sort": 201,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 10300201,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_10300201",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "改名卡"
+    },
+    "BuyLimitType": 0,
+    "DescLocMeta": {
+      "InKey": "Desc_10300201",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "用于修改您的昵称。"
+    },
     "TapList": {},
-    "GainResourcesID": 300002,
+    "GainNum": 1,
+    "BuyLimit": 0,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 100,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 0,
+    "ConsumeNum": 100,
     "ConsumeResources": {
       "1": {
-        "y": 100,
+        "z": 100,
         "x": 300005,
-        "z": 100
+        "y": 100
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "用于修改您的昵称。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_10300201"
-    },
-    "Quality": 4
+    "Quality": 4,
+    "IsNew": false
   },
   "106201": {
-    "ShelfsShowType": 0,
-    "IsNew": false,
-    "Sort": 106201,
-    "BuyLimit": 1,
-    "ID": 106201,
-    "NameLocMeta": {
-      "InTextLiteral": "誓仇者",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Name_106201"
-    },
-    "SaleStartTime": "2023-03-01 00:00:00",
-    "BuyLimitType": 1,
-    "AleardyOwnedLimit": 1,
-    "SaleEndTime": "2035-12-31 00:00:00",
-    "ShowStartTime": "2023-03-01 00:00:00",
-    "DiscountPrice": 680,
-    "IsCountDown": false,
-    "ConsumeResourcesID": 300005,
-    "Tab": 1,
-    "ShowEndTime": "2035-12-31 00:00:00",
-    "GainNum": 1,
-    "ConsumeNum": 680,
+    "GainResourcesID": 10106201,
     "Shelfs": {
       "1": 2
+    },
+    "Sort": 106201,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "ID": 106201,
+    "ShelfsShowType": 0,
+    "IsCountDown": false,
+    "NameLocMeta": {
+      "InKey": "Name_106201",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "誓仇者"
+    },
+    "BuyLimitType": 1,
+    "DescLocMeta": {
+      "InKey": "Desc_106201",
+      "InNamespace": "mall_TBMall",
+      "InTextLiteral": "海因克斯史诗级外观。"
     },
     "TapList": {
       "1": 1
     },
-    "GainResourcesID": 10106201,
+    "GainNum": 1,
+    "BuyLimit": 1,
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "DiscountPrice": 680,
+    "ConsumeResourcesID": 300005,
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "Tab": 1,
+    "AleardyOwnedLimit": 1,
+    "ConsumeNum": 680,
     "ConsumeResources": {
       "1": {
-        "y": 680,
+        "z": 680,
         "x": 300005,
-        "z": 680
+        "y": 680
       }
     },
-    "DescLocMeta": {
-      "InTextLiteral": "海因克斯史诗级外观。",
-      "InNamespace": "mall_TBMall",
-      "InKey": "Desc_106201"
-    },
-    "Quality": 3
+    "Quality": 3,
+    "IsNew": false
   }
 }

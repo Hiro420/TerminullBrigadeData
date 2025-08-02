@@ -1,4 +1,5 @@
 local CountdownData = {}
+
 function CountdownData:CacheCountdownData(ItemId, TargetTimestamp)
   if not ItemId or not TargetTimestamp then
     return
@@ -11,4 +12,5 @@ function CountdownData:CacheCountdownData(ItemId, TargetTimestamp)
     EventSystem:Invoke(EventDef.Lobby.UpdateLimitedResource, ItemId, TargetTimestamp)
   end
 end
+
 return CountdownData

@@ -8,6 +8,7 @@ local WBP_AutoProcessPanel_C = UnLua.Class()
 local GetRobotVersionID = function()
   return GetVersionID()
 end
+
 function WBP_AutoProcessPanel_C:Construct()
   print("WBP_AutoProcessPanel_C Construct")
   EventSystem.AddListener(self, EventDef.WSMessage.ConnectWSSuccess, WBP_AutoProcessPanel_C.BindOnWSConnSucc)
@@ -24,11 +25,13 @@ function WBP_AutoProcessPanel_C:Construct()
   self:StartLogin()
   self.MsgSenderRoleInfoList = {}
 end
+
 function WBP_AutoProcessPanel_C:BindOnWSConnSucc(Json)
   print("Auto BindOnWSConnSucc")
   LogicAutoRobot.IsLogin = true
   self:StartLobby()
 end
+
 function WBP_AutoProcessPanel_C:BindOnConnectBattleServer(Json)
   print("WBP_AutoProcessPanel_C:BindOnConnectBattleServer", Json)
   local JsonTable = rapidjson.decode(Json)
@@ -54,9 +57,11 @@ function WBP_AutoProcessPanel_C:BindOnConnectBattleServer(Json)
     end
   end
 end
+
 function WBP_AutoProcessPanel_C:BindOnTeamUpdate()
   self:GetMyTeamInfo()
 end
+
 function WBP_AutoProcessPanel_C:BindOnReceiveStartGame()
   print("BindOnReceiveStartGame")
   self.IsReceiveWSStartGame = true
@@ -69,6 +74,7 @@ function WBP_AutoProcessPanel_C:BindOnReceiveStartGame()
   self:RequestJoinGame()
   print("BindOnReceiveStartGame \229\143\145\233\128\129JoinGame")
 end
+
 function WBP_AutoProcessPanel_C:BindOnReceiveNewMsg(ChatContentData)
   print("BindOnReceiveNewMsg", ChatContentData)
   if LogicAutoRobot.GetIsTeamCaptain() then
@@ -112,6 +118,7 @@ function WBP_AutoProcessPanel_C:BindOnReceiveNewMsg(ChatContentData)
   end
   self:DealWithChatContent(JsonTable.sender, JsonTable.msg)
 end
+
 function WBP_AutoProcessPanel_C:BindOnLoginProtocolSuccess()
   BeginnerGuideHandler.RequestFinishGuideToServer(301)
   HttpCommunication.Request("playerservice/nickname", {
@@ -141,6 +148,7 @@ function WBP_AutoProcessPanel_C:BindOnLoginProtocolSuccess()
   })
   self:ConnectWSGate()
 end
+
 function WBP_AutoProcessPanel_C:DealWithChatContent(Id, ChatMsg)
   local TargetPlayerInfo = self.MsgSenderRoleInfoList[Id]
   if not string.sub(TargetPlayerInfo.nickname, 1, #LogicAutoRobot.GetBotNamePrefix()) == LogicAutoRobot.GetBotNamePrefix() then
@@ -149,6 +157,7 @@ function WBP_AutoProcessPanel_C:DealWithChatContent(Id, ChatMsg)
   end
   self:JoinTeam(ChatMsg)
 end
+
 function WBP_AutoProcessPanel_C:RequestJoinGame()
   local TeamInfo = DataMgr.GetTeamInfo()
   HttpCommunication.Request("team/joingame", {
@@ -165,6 +174,7 @@ function WBP_AutoProcessPanel_C:RequestJoinGame()
     end
   })
 end
+
 function WBP_AutoProcessPanel_C:StartLogin()
   if not GameInstance then
     return
@@ -190,6 +200,7 @@ function WBP_AutoProcessPanel_C:StartLogin()
   UE.URGGameplayLibrary.TriggerOnClientLoginSuccess(GameInstance, "Wooduan", self.UserName, "")
   self:Login()
 end
+
 function WBP_AutoProcessPanel_C:JudgeCanChangeMode()
   LogicAutoRobot.AddModeIndex()
   local TargetModeId = LogicAutoRobot.GetTargetGameMode()
@@ -209,6 +220,7 @@ function WBP_AutoProcessPanel_C:JudgeCanChangeMode()
     self:GetMyTeamInfo()
   end
 end
+
 function WBP_AutoProcessPanel_C:Login()
   local HttpService = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, HttpCommunication.GetHttpServiceClass())
   if not HttpService then
@@ -247,10 +259,12 @@ function WBP_AutoProcessPanel_C:Login()
     LoginHandler.RequestLoginDevToServer(self.UserName, DeviceInfo)
   end)
 end
+
 function WBP_AutoProcessPanel_C:ConnectWSGate()
   local GateService = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self:GetWorld(), UE.UWSGateService:StaticClass())
   GateService:Connect(self.DevelopServerIp, self.DevelopServerPort, HttpCommunication.GetToken(), self.IsTls)
 end
+
 function WBP_AutoProcessPanel_C:OnGetRoleSuccess(JsonResponse)
   print("OnGetRoleSuccess", JsonResponse.Content)
   local Response = rapidjson.decode(JsonResponse.Content)
@@ -260,10 +274,12 @@ function WBP_AutoProcessPanel_C:OnGetRoleSuccess(JsonResponse)
     end
   end
 end
+
 function WBP_AutoProcessPanel_C:StartLobby()
   self.Txt_Step:SetText("\229\164\167\229\142\133")
   self:RefreshLogicStatus()
 end
+
 function WBP_AutoProcessPanel_C:CreateTeam()
   local TargetModeId = LogicAutoRobot.GetTargetGameMode()
   if not TargetModeId then
@@ -302,6 +318,7 @@ function WBP_AutoProcessPanel_C:CreateTeam()
     end
   })
 end
+
 function WBP_AutoProcessPanel_C:RefreshLogicStatus()
   HttpCommunication.Request("playerservice/roles", {
     idList = {
@@ -357,9 +374,11 @@ function WBP_AutoProcessPanel_C:RefreshLogicStatus()
     end
   })
 end
+
 function WBP_AutoProcessPanel_C:DealWithTeam()
   self:GetMyTeamInfo()
 end
+
 function WBP_AutoProcessPanel_C:GetMyTeamInfo()
   print("WBP_AutoProcessPanel_C:GetMyTeamInfo")
   HttpCommunication.RequestByGet("team/getmyteamdata", {
@@ -371,6 +390,7 @@ function WBP_AutoProcessPanel_C:GetMyTeamInfo()
     end
   })
 end
+
 function WBP_AutoProcessPanel_C:BindOnGetMyTeamDataSuccess(JsonResponse)
   print("GetMyTeamData", JsonResponse.Content)
   local TeamInfoTable = rapidjson.decode(JsonResponse.Content)
@@ -415,6 +435,7 @@ function WBP_AutoProcessPanel_C:BindOnGetMyTeamDataSuccess(JsonResponse)
     end
   end
 end
+
 function WBP_AutoProcessPanel_C:SendTeamCodeMsg()
   local TeamInfo = DataMgr.GetTeamInfo()
   if 0 ~= TeamInfo.state then
@@ -443,6 +464,7 @@ function WBP_AutoProcessPanel_C:SendTeamCodeMsg()
     end
   })
 end
+
 function WBP_AutoProcessPanel_C:JoinTeam(TeamId)
   print("WBP_AutoProcessPanel_C:JoinTeam", TeamId)
   self.IsRequestJoinTeam = true
@@ -464,6 +486,7 @@ function WBP_AutoProcessPanel_C:JoinTeam(TeamId)
     end
   })
 end
+
 function WBP_AutoProcessPanel_C:StartGame()
   print("WBP_AutoProcessPanel_C:StartGame", LogicAutoRobot.GetIsTeamCaptain())
   if self.IsSendStartGame then
@@ -525,6 +548,7 @@ function WBP_AutoProcessPanel_C:StartGame()
     })
   end
 end
+
 function WBP_AutoProcessPanel_C:RefreshTeamInfo()
   local TeamInfo = DataMgr.GetTeamInfo()
   local TeamMemberCount = table.count(TeamInfo.players)
@@ -562,6 +586,7 @@ function WBP_AutoProcessPanel_C:RefreshTeamInfo()
     end
   end
 end
+
 function WBP_AutoProcessPanel_C:Destruct()
   print("WBP_AutoProcessPanel_C Destruct")
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.FindGITimer) then
@@ -580,4 +605,5 @@ function WBP_AutoProcessPanel_C:Destruct()
   EventSystem.RemoveListener(EventDef.WSMessage.ChatMsg, self.BindOnReceiveNewMsg, self)
   EventSystem.RemoveListener(EventDef.Login.OnLoginProtocolSuccess, self.BindOnLoginProtocolSuccess, self)
 end
+
 return WBP_AutoProcessPanel_C

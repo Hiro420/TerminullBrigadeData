@@ -1,7 +1,9 @@
 local WBP_RGBeginnerReturnToLobby = UnLua.Class()
+
 function WBP_RGBeginnerReturnToLobby:Construct()
   self:Show()
 end
+
 function WBP_RGBeginnerReturnToLobby:Show()
   local WorldId = LogicTeam.GetWorldId()
   local AllLevels = LuaTableMgr.GetLuaTableByName(TableNames.TBGameFloorUnlock)
@@ -24,4 +26,5 @@ function WBP_RGBeginnerReturnToLobby:Show()
   end
   HideOtherItem(self.BeginnerClearRewardList, Index, true)
 end
+
 return WBP_RGBeginnerReturnToLobby

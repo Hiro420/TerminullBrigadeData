@@ -1,15 +1,19 @@
 local WBP_DyingIconItem_C = UnLua.Class()
+
 function WBP_DyingIconItem_C:Construct()
   self.WBP_DyingMaterial.OnRescueRatioChangeEvent:Add(self, WBP_DyingIconItem_C.OnRescueStateChange)
 end
+
 function WBP_DyingIconItem_C:Destruct()
   self.WBP_DyingMaterial.OnRescueRatioChangeEvent:Remove(self, WBP_DyingIconItem_C.OnRescueStateChange)
 end
+
 function WBP_DyingIconItem_C:OnAnimationFinished(Animation)
   if Animation == self.ShowAni then
     self:PlayAnimation(self.Flushni, 0, 0)
   end
 end
+
 function WBP_DyingIconItem_C:OnRescueStateChange(Rescue, Ratio)
   if Rescue then
     if not self.CloseRange then
@@ -27,4 +31,5 @@ function WBP_DyingIconItem_C:OnRescueStateChange(Rescue, Ratio)
     SetImageBrushBySoftObject(self.Image_BG, self.NotRescue)
   end
 end
+
 return WBP_DyingIconItem_C

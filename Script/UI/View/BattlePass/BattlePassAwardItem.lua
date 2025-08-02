@@ -15,24 +15,32 @@ local BattlePassState = {
   Premiun = 1,
   Ultra = 2
 }
+
 function BattlePassAwardItem:BindClickHandler()
 end
+
 function BattlePassAwardItem:UnBindClickHandler()
 end
+
 function BattlePassAwardItem:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function BattlePassAwardItem:OnDestroy()
 end
+
 function BattlePassAwardItem:Construct()
   EventSystem.AddListenerNew(EventDef.BattlePass.OnUpgrade, self, self.BindOnUpgrade)
 end
+
 function BattlePassAwardItem:Destruct()
   EventSystem.RemoveListener(EventDef.BattlePass.OnUpgrade, self.BindOnUpgrade, self)
 end
+
 function BattlePassAwardItem:OnPreHide()
 end
+
 function BattlePassAwardItem:OnListItemObjectSet(ListItemObj)
   local Level = ListItemObj.Level
   local ParentView = ListItemObj.ParentView
@@ -42,6 +50,7 @@ function BattlePassAwardItem:OnListItemObjectSet(ListItemObj)
   local IsNormal = ListItemObj.IsNormal
   self:InitItem(NormalAward, PremiumAward, Level, ParentView, State, IsNormal)
 end
+
 function BattlePassAwardItem:InitItem(NormalAward, PremiumAward, Level, ParentView, State, IsNormal)
   self.ParentView = ParentView
   self.Level = Level
@@ -90,6 +99,7 @@ function BattlePassAwardItem:InitItem(NormalAward, PremiumAward, Level, ParentVi
     self.RGStateController_Lock:ChangeStatus(LevelState == AwardState.ReceivePremiun and "Lock" or "UnLock")
   end
 end
+
 function BattlePassAwardItem:SetReceive()
   for i, item in pairs(self.Items.NormalItems) do
     item:SetReceive(true, true)
@@ -101,6 +111,7 @@ function BattlePassAwardItem:SetReceive()
   end
   self.RGStateController_Lock:ChangeStatus("Lock")
 end
+
 function BattlePassAwardItem:BindOnUpgrade()
   if not self.ParentView then
     return
@@ -122,4 +133,5 @@ function BattlePassAwardItem:BindOnUpgrade()
     end
   end
 end
+
 return BattlePassAwardItem

@@ -1,5 +1,6 @@
 LogicPickup = LogicPickup or {IsInit = false}
 local ListContainer = require("Rouge.UI.Common.ListContainer")
+
 function LogicPickup.Init()
   if LogicPickup.IsInit then
     print("LogicPickup \229\183\178\229\136\157\229\167\139\229\140\150")
@@ -15,11 +16,14 @@ function LogicPickup.Init()
   LogicPickup:BindDelegate(Character)
   EventSystem.AddListener(nil, EventDef.Battle.OnControlledPawnChanged, LogicPickup.BindOnControlledPawnChanged)
 end
+
 function LogicPickup.BindOnControlledPawnChanged(Character)
   LogicPickup:BindDelegate(Character)
 end
+
 function LogicPickup:BindDelegate(Character)
 end
+
 function LogicPickup.SetIsIgnoreInput(IsIngore)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -34,6 +38,7 @@ function LogicPickup.SetIsIgnoreInput(IsIngore)
     InputComp:SetMoveInputIgnored(false)
   end
 end
+
 function LogicPickup.Clear()
   EventSystem.RemoveListener(EventDef.Battle.OnControlledPawnChanged, LogicPickup.BindOnControlledPawnChanged, nil)
   LogicPickup.IsInit = false

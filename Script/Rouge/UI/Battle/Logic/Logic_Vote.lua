@@ -1,4 +1,5 @@
 LogicVote = LogicVote or {IsInit = false}
+
 function LogicVote.Init()
   LogicVote.UIWidget = nil
   LogicVote.UIWidgetPath = "/Game/Rouge/UI/LevelReady/WBP_LevelReady.WBP_LevelReady_C"
@@ -24,6 +25,7 @@ function LogicVote.Init()
     LogicVote.IsInit = true
   end
 end
+
 function LogicVote.InitVotePanel()
   local GS = UE.UGameplayStatics.GetGameState(GameInstance)
   if not GS then
@@ -41,6 +43,7 @@ function LogicVote.InitVotePanel()
     end
   end
 end
+
 function LogicVote.OnVoteChanged(VoteType, State, UserId, ModeId, StartTime)
   print("OnVoteChanged", VoteType, State, UserId, ModeId, StartTime)
   if UE.UKismetSystemLibrary.IsStandalone(GameInstance) then
@@ -62,6 +65,7 @@ function LogicVote.OnVoteChanged(VoteType, State, UserId, ModeId, StartTime)
     LogicVote.UIWidget:Hide()
   end
 end
+
 function LogicVote.OnShowOrHideLevelPassCheckPanel(StartTime, Duration)
   local ModeID = UE.URGLevelLibrary.GetMatchGameMode()
   print("LogicVote.OnShowOrHideLevelPassCheckPanel", StartTime, Duration, ModeID)
@@ -75,12 +79,14 @@ function LogicVote.OnShowOrHideLevelPassCheckPanel(StartTime, Duration)
     print("LogicVote.OnShowOrHideLevelPassCheckPanel Show not found ui WBP_LevelPassCheck_C")
   end
 end
+
 function LogicVote.OnCancelCheckRewardTip()
   print("LogicVote.OnCancelCheckRewardTip")
   if RGUIMgr:IsShown(UIConfig.WBP_LevelPassCheck_C.UIName) then
     RGUIMgr:HideUI(UIConfig.WBP_LevelPassCheck_C.UIName)
   end
 end
+
 function LogicVote.BindOnOptimalTargetChanged(OptimalTarget)
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if not UIManager then
@@ -106,6 +112,7 @@ function LogicVote.BindOnOptimalTargetChanged(OptimalTarget)
     LogicVote.CurModeNPC = nil
   end
 end
+
 function LogicVote.BindOnBeginInteract(Target, TargetActor)
   if not TargetActor then
     return
@@ -129,6 +136,7 @@ function LogicVote.BindOnBeginInteract(Target, TargetActor)
     WaveWindowManager:ShowWaveWindow(LogicVote.RefuseOverCountTipId)
   end
 end
+
 function LogicVote.ChangeReadyWidgetVis()
   local WidgetClassObj = UE.UClass.Load(LogicVote.UIWidgetPath)
   if not WidgetClassObj then
@@ -151,6 +159,7 @@ function LogicVote.ChangeReadyWidgetVis()
   end
   LogicVote.UIWidget:Show()
 end
+
 function LogicVote.CanRefuse()
   local GS = UE.UGameplayStatics.GetGameState(GameInstance)
   if not GS then
@@ -163,6 +172,7 @@ function LogicVote.CanRefuse()
   local VoteData = VoteSystemComp:GetVoteData()
   return VoteData.MaxRefuseCount > VoteData.CurrRefuseCount
 end
+
 function LogicVote.Clear()
   UnListenObjectMessage(GMP.MSG_Interact_VoteChange)
   UnListenObjectMessage(GMP.MSG_Level_CheckRewardTip)

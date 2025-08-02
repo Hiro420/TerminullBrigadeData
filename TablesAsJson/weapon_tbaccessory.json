@@ -1,494 +1,494 @@
 ﻿{
   "200406": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 5,
     "AccessoryID": 200406,
-    "SlotType": 5
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200407": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 6,
     "AccessoryID": 200407,
-    "SlotType": 6
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200408": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 7,
     "AccessoryID": 200408,
-    "SlotType": 7
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200409": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 8,
     "AccessoryID": 200409,
-    "SlotType": 8
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200410": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 9,
     "AccessoryID": 200410,
-    "SlotType": 9
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200303": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 2,
     "AccessoryID": 200303,
-    "SlotType": 2
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200304": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 3,
     "AccessoryID": 200304,
-    "SlotType": 3
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200305": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 4,
     "AccessoryID": 200305,
-    "SlotType": 4
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200306": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 5,
     "AccessoryID": 200306,
-    "SlotType": 5
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200307": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 6,
     "AccessoryID": 200307,
-    "SlotType": 6
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200308": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 7,
     "AccessoryID": 200308,
-    "SlotType": 7
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200309": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 8,
     "AccessoryID": 200309,
-    "SlotType": 8
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200310": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 9,
     "AccessoryID": 200310,
-    "SlotType": 9
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "101003": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 2,
     "AccessoryID": 101003,
-    "SlotType": 2
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "101004": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 3,
     "AccessoryID": 101004,
-    "SlotType": 3
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "101005": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 4,
     "AccessoryID": 101005,
-    "SlotType": 4
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "101006": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 5,
     "AccessoryID": 101006,
-    "SlotType": 5
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "101007": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 6,
     "AccessoryID": 101007,
-    "SlotType": 6
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "101008": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 7,
     "AccessoryID": 101008,
-    "SlotType": 7
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "101009": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 8,
     "AccessoryID": 101009,
-    "SlotType": 8
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "101010": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 9,
     "AccessoryID": 101010,
-    "SlotType": 9
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200203": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 2,
     "AccessoryID": 200203,
-    "SlotType": 2
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200204": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 3,
     "AccessoryID": 200204,
-    "SlotType": 3
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200205": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 4,
     "AccessoryID": 200205,
-    "SlotType": 4
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200206": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 5,
     "AccessoryID": 200206,
-    "SlotType": 5
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200207": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 6,
     "AccessoryID": 200207,
-    "SlotType": 6
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200208": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 7,
     "AccessoryID": 200208,
-    "SlotType": 7
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200209": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 8,
     "AccessoryID": 200209,
-    "SlotType": 8
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200210": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 9,
     "AccessoryID": 200210,
-    "SlotType": 9
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100903": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 2,
     "AccessoryID": 100903,
-    "SlotType": 2
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100904": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 3,
     "AccessoryID": 100904,
-    "SlotType": 3
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100905": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 4,
     "AccessoryID": 100905,
-    "SlotType": 4
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100906": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 5,
     "AccessoryID": 100906,
-    "SlotType": 5
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100907": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 6,
     "AccessoryID": 100907,
-    "SlotType": 6
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100908": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 7,
     "AccessoryID": 100908,
-    "SlotType": 7
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100909": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 8,
     "AccessoryID": 100909,
-    "SlotType": 8
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100910": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 9,
     "AccessoryID": 100910,
-    "SlotType": 9
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200606": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 5,
     "AccessoryID": 200606,
-    "SlotType": 5
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200607": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 6,
     "AccessoryID": 200607,
-    "SlotType": 6
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200608": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 7,
     "AccessoryID": 200608,
-    "SlotType": 7
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200609": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 8,
     "AccessoryID": 200609,
-    "SlotType": 8
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200610": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 9,
     "AccessoryID": 200610,
-    "SlotType": 9
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200103": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 2,
     "AccessoryID": 200103,
-    "SlotType": 2
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200104": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 3,
     "AccessoryID": 200104,
-    "SlotType": 3
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200105": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 4,
     "AccessoryID": 200105,
-    "SlotType": 4
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200106": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 5,
     "AccessoryID": 200106,
-    "SlotType": 5
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200107": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 6,
     "AccessoryID": 200107,
-    "SlotType": 6
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200108": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 7,
     "AccessoryID": 200108,
-    "SlotType": 7
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200109": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 8,
     "AccessoryID": 200109,
-    "SlotType": 8
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200110": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 9,
     "AccessoryID": 200110,
-    "SlotType": 9
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100803": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 2,
     "AccessoryID": 100803,
-    "SlotType": 2
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100804": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 3,
     "AccessoryID": 100804,
-    "SlotType": 3
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100805": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 4,
     "AccessoryID": 100805,
-    "SlotType": 4
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100806": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 5,
     "AccessoryID": 100806,
-    "SlotType": 5
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100807": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 6,
     "AccessoryID": 100807,
-    "SlotType": 6
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100808": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 7,
     "AccessoryID": 100808,
-    "SlotType": 7
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100809": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 8,
     "AccessoryID": 100809,
-    "SlotType": 8
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100810": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 9,
     "AccessoryID": 100810,
-    "SlotType": 9
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200506": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 5,
     "AccessoryID": 200506,
-    "SlotType": 5
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200507": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 6,
     "AccessoryID": 200507,
-    "SlotType": 6
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200508": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 7,
     "AccessoryID": 200508,
-    "SlotType": 7
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200509": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 8,
     "AccessoryID": 200509,
-    "SlotType": 8
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200510": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 9,
     "AccessoryID": 200510,
-    "SlotType": 9
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "5006": {
-    "AccessoryRarity": 1,
-    "AccessoryType": 1,
+    "SlotType": 1,
     "AccessoryID": 5006,
-    "SlotType": 1
+    "AccessoryType": 1,
+    "AccessoryRarity": 1
   },
   "5005": {
-    "AccessoryRarity": 1,
-    "AccessoryType": 1,
+    "SlotType": 1,
     "AccessoryID": 5005,
-    "SlotType": 1
+    "AccessoryType": 1,
+    "AccessoryRarity": 1
   },
   "200505": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 4,
     "AccessoryID": 200505,
-    "SlotType": 4
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200504": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 3,
     "AccessoryID": 200504,
-    "SlotType": 3
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200503": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 2,
     "AccessoryID": 200503,
-    "SlotType": 2
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200405": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 4,
     "AccessoryID": 200405,
-    "SlotType": 4
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200404": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 3,
     "AccessoryID": 200404,
-    "SlotType": 3
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200403": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 2,
     "AccessoryID": 200403,
-    "SlotType": 2
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200605": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 4,
     "AccessoryID": 200605,
-    "SlotType": 4
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200604": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 3,
     "AccessoryID": 200604,
-    "SlotType": 3
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100703": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 2,
     "AccessoryID": 100703,
-    "SlotType": 2
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100704": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 3,
     "AccessoryID": 100704,
-    "SlotType": 3
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100705": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 4,
     "AccessoryID": 100705,
-    "SlotType": 4
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100706": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 5,
     "AccessoryID": 100706,
-    "SlotType": 5
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100707": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 6,
     "AccessoryID": 100707,
-    "SlotType": 6
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100708": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 7,
     "AccessoryID": 100708,
-    "SlotType": 7
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100709": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 8,
     "AccessoryID": 100709,
-    "SlotType": 8
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "100710": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 9,
     "AccessoryID": 100710,
-    "SlotType": 9
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   },
   "200603": {
-    "AccessoryRarity": 2,
-    "AccessoryType": 2,
+    "SlotType": 2,
     "AccessoryID": 200603,
-    "SlotType": 2
+    "AccessoryType": 2,
+    "AccessoryRarity": 2
   }
 }

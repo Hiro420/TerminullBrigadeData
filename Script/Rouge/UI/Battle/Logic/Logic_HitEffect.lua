@@ -1,5 +1,6 @@
 LogicHitEffect = LogicHitEffect or {IsInit = false}
 local ListContainer = require("Rouge.UI.Common.ListContainer")
+
 function LogicHitEffect.Init()
   if LogicHitEffect.IsInit then
     print("LogicHitEffect \229\183\178\229\136\157\229\167\139\229\140\150")
@@ -15,6 +16,7 @@ function LogicHitEffect.Init()
     PC.DamageComponent.OnMakeDamage:Add(GameInstance, LogicHitEffect.BindOnMakeDamage)
   end
 end
+
 function LogicHitEffect.InitHealthAndShieldValue()
   local LocalPlayer = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   local CoreComp = LocalPlayer.CoreComponent
@@ -24,6 +26,7 @@ function LogicHitEffect.InitHealthAndShieldValue()
   LogicHitEffect.LastHealthValue = CoreComp:GetHealth()
   LogicHitEffect.LastShieldValue = CoreComp:GetShield()
 end
+
 function LogicHitEffect:BindOnMakeDamage(SourceActor, TargetActor, Params)
   if not SourceActor then
     return
@@ -66,6 +69,7 @@ function LogicHitEffect:BindOnMakeDamage(SourceActor, TargetActor, Params)
   end
   LogicHitEffect.ListContainer:ShowItem(Item, SourceActor, Ratio, IsHealthDamage)
 end
+
 function LogicHitEffect:Clear()
   print("Clear LogicHitEffect")
   if LogicHitEffect.ListContainer then

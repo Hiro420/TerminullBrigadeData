@@ -1,4 +1,5 @@
 local WBP_MainTask_C = UnLua.Class()
+
 function WBP_MainTask_C:Construct()
   if self.ActiveIndex == nil then
     self.ActiveIndex = 1
@@ -18,6 +19,7 @@ function WBP_MainTask_C:Construct()
   EventSystem.AddListener(self, EventDef.MainTask.OnMainTaskRefres, WBP_MainTask_C.OnMainTaskRefres)
   EventSystem.Invoke(EventDef.MainTask.OnMainTaskRefres)
 end
+
 function WBP_MainTask_C:OnMainTaskRefres()
   self.ActiveGroups = Logic_MainTask.GetActiveGroups()
   UpdateVisibility(self.WBP_Selector, #self.ActiveGroups > 1)
@@ -28,6 +30,7 @@ function WBP_MainTask_C:OnMainTaskRefres()
   end)
   self:SelectIndex(self.ActiveIndex)
 end
+
 function WBP_MainTask_C:SelectIndex(Index)
   for i, value in ipairs(self.ActiveGroups) do
     if i == Index then
@@ -36,6 +39,7 @@ function WBP_MainTask_C:SelectIndex(Index)
     end
   end
 end
+
 function WBP_MainTask_C:CheckMainTaskUnLockTip(Id)
   local FilePath = UE.UKismetSystemLibrary.GetProjectSavedDirectory() .. "/MainTask/" .. DataMgr.GetUserId() .. "Cache.txt"
   local OutString = ""
@@ -54,4 +58,5 @@ function WBP_MainTask_C:CheckMainTaskUnLockTip(Id)
   UE.URGBlueprintLibrary.SaveStringToFile(FilePath, OutStr)
   return true
 end
+
 return WBP_MainTask_C

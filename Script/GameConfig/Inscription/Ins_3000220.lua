@@ -15,7 +15,7 @@ local Ins_3000220 =
 			ModifyLevelDescShowType = 0,
 			bIsShowHelpInUI = false,
 			bUseGenericModifyLevelData = false,
-			Desc = "本次武器伤害增加-1%",
+			Desc = "",
 		},
 		{
 			GenericModifyLevelId = "3000220",

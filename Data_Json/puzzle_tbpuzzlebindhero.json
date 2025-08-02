@@ -1,0 +1,100 @@
+[
+  {
+    "ID": 1,
+    "HeroWeight": [
+      {
+        "key": 1000,
+        "value": 10
+      },
+      {
+        "key": 1010,
+        "value": 10
+      },
+      {
+        "key": 1020,
+        "value": 10
+      },
+      {
+        "key": 1030,
+        "value": 10
+      },
+      {
+        "key": 1040,
+        "value": 10
+      },
+      {
+        "key": 1060,
+        "value": 10
+      },
+      {
+        "key": 1080,
+        "value": 10
+      },
+      {
+        "key": 1090,
+        "value": 10
+      }
+    ],
+    "notes": "全英雄池"
+  },
+  {
+    "ID": 1000,
+    "HeroWeight": [
+      {
+        "key": 1000,
+        "value": 10
+      }
+    ],
+    "notes": "日暮池"
+  },
+  {
+    "ID": 1010,
+    "HeroWeight": [
+      {
+        "key": 1010,
+        "value": 10
+      }
+    ],
+    "notes": "影刃池"
+  },
+  {
+    "ID": 1020,
+    "HeroWeight": [
+      {
+        "key": 1020,
+        "value": 10
+      }
+    ],
+    "notes": "上校池"
+  },
+  {
+    "ID": 1030,
+    "HeroWeight": [
+      {
+        "key": 1030,
+        "value": 10
+      }
+    ],
+    "notes": "麦克斯"
+  },
+  {
+    "ID": 1040,
+    "HeroWeight": [
+      {
+        "key": 1040,
+        "value": 10
+      }
+    ],
+    "notes": "妮娜"
+  },
+  {
+    "ID": 1060,
+    "HeroWeight": [
+      {
+        "key": 1060,
+        "value": 10
+      }
+    ],
+    "notes": "海因克斯"
+  }
+]

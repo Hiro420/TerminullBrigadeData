@@ -1,4 +1,5 @@
 local WBP_FightAndSkillNotifyIcon_C = UnLua.Class()
+
 function WBP_FightAndSkillNotifyIcon_C:SetShowType(ShowType)
   if ShowType == UE.ERGFightSkillType.SkillStart then
     self:SetIconBrush(self.SkillStartIcon)
@@ -10,9 +11,11 @@ function WBP_FightAndSkillNotifyIcon_C:SetShowType(ShowType)
     self:SetIconBrush(self.OutScreenIcon)
   end
 end
+
 function WBP_FightAndSkillNotifyIcon_C:SetShowAngel(Target)
   self:SetRenderTransformAngle(self:GetAngle(Target))
 end
+
 function WBP_FightAndSkillNotifyIcon_C:GetAngle(Target)
   local LocalLocation = UE.URGBlueprintLibrary.ConvertWorldLocationToLocal(self, Target, 25.0)
   local ASind = UE.UKismetMathLibrary.DegAsin(LocalLocation.X / UE.UKismetMathLibrary.Distance2D(LocalLocation, UE.FVector2D(0, 0)))
@@ -22,7 +25,9 @@ function WBP_FightAndSkillNotifyIcon_C:GetAngle(Target)
     return ASind * -1
   end
 end
+
 function WBP_FightAndSkillNotifyIcon_C:SetIconBrush(Sprite)
   self.NotifyIcon:SetBrush(UE.UPaperSpriteBlueprintLibrary.MakeBrushFromSprite(Sprite, 0, 0))
 end
+
 return WBP_FightAndSkillNotifyIcon_C

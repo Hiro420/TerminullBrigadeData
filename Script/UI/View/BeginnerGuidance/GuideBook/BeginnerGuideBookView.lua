@@ -4,6 +4,7 @@ local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local BeginnerGuideHandler = require("Protocol.BeginnerGuide.BeginnerGuideHandler")
 local BeginnerGuideBookView = Class(ViewBase)
+
 function BeginnerGuideBookView:OnBindUIInput()
   ListenForInputAction("PauseGame", UE.EInputEvent.IE_Pressed, true, {
     self,
@@ -12,11 +13,13 @@ function BeginnerGuideBookView:OnBindUIInput()
   self.WBP_InteractTipWidgetPrev:BindInteractAndClickEvent(self, self.LastGuide)
   self.WBP_InteractTipWidgetNext:BindInteractAndClickEvent(self, self.NextGuide)
 end
+
 function BeginnerGuideBookView:OnUnBindUIInput()
   StopListeningForInputAction(self, "PauseGame", UE.EInputEvent.IE_Pressed)
   self.WBP_InteractTipWidgetPrev:UnBindInteractAndClickEvent(self, self.LastGuide)
   self.WBP_InteractTipWidgetNext:UnBindInteractAndClickEvent(self, self.NextGuide)
 end
+
 function BeginnerGuideBookView:BindClickHandler()
   self.BP_ButtonWithSoundEsc.OnClicked:Add(self, self.OnEscInputAction)
   self.Button_Last.OnClicked:Add(self, self.LastGuide)
@@ -29,6 +32,7 @@ function BeginnerGuideBookView:BindClickHandler()
   EventSystem.AddListener(self, EventDef.BeginnerGuide.OnBeginnerGuideBookTypeChanged, BeginnerGuideBookView.BindOnBeginnerGuideBookTypeChanged)
   EventSystem.AddListener(self, EventDef.BeginnerGuide.OnGetFinishedGuideList, BeginnerGuideBookView.OnFinishedGuideListChange)
 end
+
 function BeginnerGuideBookView:UnBindClickHandler()
   self.BP_ButtonWithSoundEsc.OnClicked:Remove(self, self.OnEscInputAction)
   self.Button_Last.OnClicked:Remove(self, self.LastGuide)
@@ -41,6 +45,7 @@ function BeginnerGuideBookView:UnBindClickHandler()
   EventSystem.RemoveListener(EventDef.BeginnerGuide.OnBeginnerGuideBookTypeChanged, BeginnerGuideBookView.BindOnBeginnerGuideBookTypeChanged, self)
   EventSystem.RemoveListener(EventDef.BeginnerGuide.OnGetFinishedGuideList, BeginnerGuideBookView.OnFinishedGuideListChange, self)
 end
+
 function BeginnerGuideBookView:OnInit()
   self.DataBindTable = {
     {
@@ -51,9 +56,11 @@ function BeginnerGuideBookView:OnInit()
   self.viewModel = UIModelMgr:Get("BeginnerGuideBookViewModel")
   self:BindClickHandler()
 end
+
 function BeginnerGuideBookView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function BeginnerGuideBookView:OnShow(...)
   local args = {
     ...
@@ -69,6 +76,7 @@ function BeginnerGuideBookView:OnShow(...)
     PC.bShowMouseCursor = true
   end
 end
+
 function BeginnerGuideBookView:OnHide()
   self.Super:DetachViewModel(self.viewModel, self.DataBindTable, self)
   if not LogicLobby.IsInit then
@@ -80,16 +88,20 @@ function BeginnerGuideBookView:OnHide()
     PC.bShowMouseCursor = false
   end
 end
+
 function BeginnerGuideBookView:OnEscInputAction()
   UIMgr:Hide(ViewID.UI_BeginnerGuideBookView, true)
 end
+
 function BeginnerGuideBookView:OnFinishedGuideListChange(FinishedGuideList)
   self.FinishedGuideList = FinishedGuideList
   self:UpdateGuideBook()
 end
+
 function BeginnerGuideBookView:UpdateGuideBook()
   self:UpdateGuideTypeItemList()
 end
+
 function BeginnerGuideBookView:UpdateGuideItemList()
   local TotalGuideTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGuide)
   local index = 0
@@ -112,6 +124,7 @@ function BeginnerGuideBookView:UpdateGuideItemList()
   end
   HideOtherItem(self.ScrollBox_GuidItemList, index + 1)
 end
+
 function BeginnerGuideBookView:UpdateGuideTypeItemList()
   local TotalGuideTypeTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGuidebooktype)
   local index = 0
@@ -125,6 +138,7 @@ function BeginnerGuideBookView:UpdateGuideTypeItemList()
   end
   HideOtherItem(self.ScrollBox_GuideTypeItemList, index + 1)
 end
+
 function BeginnerGuideBookView:NextGuide()
   local NextGuideId = self:GetNextGuideId()
   if nil == NextGuideId then
@@ -133,6 +147,7 @@ function BeginnerGuideBookView:NextGuide()
   end
   self:UpdateInfo(self.GuideId, NextGuideId)
 end
+
 function BeginnerGuideBookView:LastGuide()
   local LastGuideId = self:GetLastGuideId()
   if nil == LastGuideId then
@@ -141,6 +156,7 @@ function BeginnerGuideBookView:LastGuide()
   end
   self:UpdateInfo(self.GuideId, LastGuideId)
 end
+
 function BeginnerGuideBookView:UpdateInfo(GuideId, GuideStepId)
   if nil == GuideStepId then
     GuideStepId = self:GetNextGuideId()
@@ -148,6 +164,7 @@ function BeginnerGuideBookView:UpdateInfo(GuideId, GuideStepId)
   self:UpdateGuideStepInfo(GuideId, GuideStepId)
   self:UpdateButton()
 end
+
 function BeginnerGuideBookView:UpdateButton()
   if self:GetLastGuideId() == nil then
     self.RGStateController_Last:ChangeStatus("Disable")
@@ -160,6 +177,7 @@ function BeginnerGuideBookView:UpdateButton()
     self.RGStateController_Next:ChangeStatus("Enable")
   end
 end
+
 function BeginnerGuideBookView:UpdateGuideInfo(GuideId)
   local GuideInfo = LuaTableMgr.GetLuaTableByName(TableNames.TBGuide)[GuideId]
   self.RichTextBlock_GuideName:SetText(GuideInfo.name)
@@ -167,6 +185,7 @@ function BeginnerGuideBookView:UpdateGuideInfo(GuideId)
   self.GuideId = GuideId
   self.GuideStepId = nil
 end
+
 function BeginnerGuideBookView:UpdateGuideStepInfo(GuideId, GuideStepId)
   if nil == GuideStepId then
     self.RichTextBlock_GuideName:SetText("\230\156\170\233\133\141\231\189\174\230\140\135\229\188\149\230\173\165\233\170\164\229\144\141")
@@ -181,6 +200,7 @@ function BeginnerGuideBookView:UpdateGuideStepInfo(GuideId, GuideStepId)
   self.GuideId = GuideId
   self:InitMovie(GuideStepId)
 end
+
 function BeginnerGuideBookView:InitMovie(GuideStepId)
   if nil == GuideStepId then
     self.MoviePanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -219,16 +239,19 @@ function BeginnerGuideBookView:InitMovie(GuideStepId)
     self.ImagePanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function BeginnerGuideBookView:BindOnBeginnerGuideBookGuideChanged(GuideId)
   local GuideInfo = LuaTableMgr.GetLuaTableByName(TableNames.TBGuide)[GuideId]
   self.GuideId = GuideId
   self.GuideStepId = nil
   self:UpdateInfo(GuideId, nil)
 end
+
 function BeginnerGuideBookView:BindOnBeginnerGuideBookTypeChanged(GuideTypeId)
   self.GuideTypeId = GuideTypeId
   self:UpdateGuideItemList()
 end
+
 function BeginnerGuideBookView:GetNextGuideId()
   local GuideInfo = LuaTableMgr.GetLuaTableByName(TableNames.TBGuide)[self.GuideId]
   if nil == GuideInfo then
@@ -244,6 +267,7 @@ function BeginnerGuideBookView:GetNextGuideId()
     end
   end
 end
+
 function BeginnerGuideBookView:GetLastGuideId()
   local GuideInfo = LuaTableMgr.GetLuaTableByName(TableNames.TBGuide)[self.GuideId]
   if self.GuideStepId == nil then
@@ -256,16 +280,21 @@ function BeginnerGuideBookView:GetLastGuideId()
     end
   end
 end
+
 function BeginnerGuideBookView:OnLastHovered()
   self.LastButtonHoverPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function BeginnerGuideBookView:OnLastUnhovered()
   self.LastButtonHoverPanel:SetVisibility(UE.ESlateVisibility.Hidden)
 end
+
 function BeginnerGuideBookView:OnNextHovered()
   self.NextButtonHoverPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function BeginnerGuideBookView:OnNextUnhovered()
   self.NextButtonHoverPanel:SetVisibility(UE.ESlateVisibility.Hidden)
 end
+
 return BeginnerGuideBookView

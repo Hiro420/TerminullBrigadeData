@@ -1,8 +1,10 @@
 local rapidjson = require("rapidjson")
 local RedDotData = require("Modules.RedDot.RedDotData")
 local LoginRewardActivityItemView = UnLua.Class()
+
 function LoginRewardActivityItemView:Construct()
 end
+
 function LoginRewardActivityItemView:InitLoginRewardActivityItem(Index, TaskId, TaskGroupId)
   self.Index = Index
   self.TaskId = TaskId
@@ -36,13 +38,16 @@ function LoginRewardActivityItemView:InitLoginRewardActivityItem(Index, TaskId, 
     self:InitSkin(taskInfo.icon)
   end
 end
+
 function LoginRewardActivityItemView:GetToolTipWidget()
 end
+
 function LoginRewardActivityItemView:InitSkin(ImagePath)
   self.bIsSkin = true
   UpdateVisibility(self.SclBox_Skin, true)
   SetImageBrushByPath(self.URGImage_Icon, ImagePath)
 end
+
 function LoginRewardActivityItemView:InitItem(RewardList)
   self.bIsSkin = false
   UpdateVisibility(self.Canvas_ItemList_New, true)
@@ -58,6 +63,7 @@ function LoginRewardActivityItemView:InitItem(RewardList)
     end
   end
 end
+
 function LoginRewardActivityItemView:CloseAnim()
   UE.UKismetSystemLibrary.K2_SetTimerDelegate({
     self,
@@ -66,13 +72,16 @@ function LoginRewardActivityItemView:CloseAnim()
     end
   }, 0.05, false)
 end
+
 function LoginRewardActivityItemView:OnHover()
   self.RGStateController_Hover:ChangeStatus("Hover", true)
   PlaySound2DByName(self.HoverSoundName, "LoginRewardActivityItemView")
 end
+
 function LoginRewardActivityItemView:OnUnHover()
   self.RGStateController_Hover:ChangeStatus("UnHover", true)
 end
+
 function LoginRewardActivityItemView:OnMouseEnter(MyGeometry, MouseEvent)
   self:OnHover()
   if self.bIsSkin then
@@ -83,10 +92,12 @@ function LoginRewardActivityItemView:OnMouseEnter(MyGeometry, MouseEvent)
     self.TipsWidget:InitCommonItemDetail(rewardList[1].key)
   end
 end
+
 function LoginRewardActivityItemView:OnMouseLeave(MyGeometry, MouseEvent)
   self:OnUnHover()
   UpdateVisibility(self.TipsWidget)
 end
+
 function LoginRewardActivityItemView:OnMouseButtonDown(MyGeometry, MouseEvent)
   if UE.UKismetInputLibrary.PointerEvent_GetEffectingButton(MouseEvent) == self.RightMouseButton then
     PlaySound2DByName(self.ClickSoundName, "LoginRewardActivityItemView")
@@ -99,4 +110,5 @@ function LoginRewardActivityItemView:OnMouseButtonDown(MyGeometry, MouseEvent)
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 return LoginRewardActivityItemView

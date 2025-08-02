@@ -1,6 +1,7 @@
 local ContactPersonHandler = require("Protocol.ContactPerson.ContactPersonHandler")
 local ContactPersonData = require("Modules.ContactPerson.ContactPersonData")
 local WBP_SettlementTeamPlayerItem_C = UnLua.Class()
+
 function WBP_SettlementTeamPlayerItem_C:Construct()
   self.DamageItemClass = UE.UClass.Load("/Game/Rouge/UI/Battle/WBP_SingleDamageItem.WBP_SingleDamageItem_C")
   self.ButtonCheck.OnClicked:Add(self, self.OnCheckPlayerInfoClick)
@@ -9,6 +10,7 @@ function WBP_SettlementTeamPlayerItem_C:Construct()
   self.StateCtrl_AddFriend:ChangeStatus(EEnable.Enable)
   UpdateVisibility(self.PlatformPanel, false)
 end
+
 function WBP_SettlementTeamPlayerItem_C:Report()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.DELATE) then
@@ -16,6 +18,7 @@ function WBP_SettlementTeamPlayerItem_C:Report()
   end
   UIMgr:Show(ViewID.UI_ReportView, false, 3, self.PlayerId, self.RGTextName:GetText())
 end
+
 function WBP_SettlementTeamPlayerItem_C:RequestFriend()
   local func = function()
     if IsValidObj(self) then
@@ -24,6 +27,7 @@ function WBP_SettlementTeamPlayerItem_C:RequestFriend()
   end
   ContactPersonHandler:RequestAddFriendToServer(tostring(self.PlayerId), EOperateButtonPanelSourceFromType.RecentList, func)
 end
+
 function WBP_SettlementTeamPlayerItem_C:InitTitle(TitleInfo)
   self.TitleInfo = TitleInfo
   if TitleInfo then
@@ -41,6 +45,7 @@ function WBP_SettlementTeamPlayerItem_C:InitTitle(TitleInfo)
     self.CanvasPanelAchievement:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_SettlementTeamPlayerItem_C:InitPlayerInfo(PlayerId, Name, HeroId, ParentView)
   print("WBP_SettlementTeamPlayerItem_C:InitPlayerInfo", PlayerId, Name, HeroId)
   self.RGTextName:SetText(Name)
@@ -67,6 +72,7 @@ function WBP_SettlementTeamPlayerItem_C:InitPlayerInfo(PlayerId, Name, HeroId, P
     self.PlatformIconPanel:UpdateChannelInfo(PlayerId)
   end
 end
+
 function WBP_SettlementTeamPlayerItem_C:InitMvp(MvpInfo)
   self.MvpInfo = MvpInfo
   if MvpInfo and MvpInfo.PlayerId == self.PlayerId then
@@ -77,12 +83,15 @@ function WBP_SettlementTeamPlayerItem_C:InitMvp(MvpInfo)
     UpdateVisibility(self.CanvasPanelAchievement, self.TitleInfo)
   end
 end
+
 function WBP_SettlementTeamPlayerItem_C:OnCheckPlayerInfoClick()
   if self.PlayerId and self.PlayerId > 0 and UE.RGUtil.IsUObjectValid(self.ParentView) then
     self.ParentView:ShowSettlementPlayerInfoView(self.PlayerId)
   end
 end
+
 function WBP_SettlementTeamPlayerItem_C:Destruct()
   self.ButtonCheck.OnClicked:Remove(self, self.OnCheckPlayerInfoClick)
 end
+
 return WBP_SettlementTeamPlayerItem_C

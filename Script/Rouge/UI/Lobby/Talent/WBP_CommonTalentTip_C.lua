@@ -1,12 +1,15 @@
 local WBP_CommonTalentTip_C = UnLua.Class()
+
 function WBP_CommonTalentTip_C:Construct()
   EventSystem.AddListener(self, EventDef.Lobby.UpdateCommonTalentPresetCost, WBP_CommonTalentTip_C.BindOnUpdateCommonTalentPresetCost)
 end
+
 function WBP_CommonTalentTip_C:BindOnUpdateCommonTalentPresetCost()
   self.Txt_HaveNum:SetText(LogicTalent.GetPreRemainCostNum(self.CostId))
   self.CurHaveNum = LogicTalent.GetPreRemainCostNum(self.CostId)
   self:UpdateHaveCurrencyColor()
 end
+
 function WBP_CommonTalentTip_C:RefreshInfo(TalentId, Type)
   self:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
   local PreLevel = LogicTalent.GetPreCommonTalentLevel(TalentId)
@@ -89,6 +92,7 @@ function WBP_CommonTalentTip_C:RefreshInfo(TalentId, Type)
   end
   self:UpdateTalentStatus(TalentId, Type)
 end
+
 function WBP_CommonTalentTip_C:UpdateHaveCurrencyColor()
   if not (self.CurHaveNum and self.CurCostNum) or self.CurHaveNum >= self.CurCostNum then
     self.Txt_HaveNum:SetColorAndOpacity(self.CurrencyEnoughColor)
@@ -96,6 +100,7 @@ function WBP_CommonTalentTip_C:UpdateHaveCurrencyColor()
     self.Txt_HaveNum:SetColorAndOpacity(self.CurrencyNotEnoughColor)
   end
 end
+
 function WBP_CommonTalentTip_C:UpdateTalentStatus(TalentId, Type)
   if Type == UE.ETalentItemType.AccumulativeCost then
     self.ConditionNotMeetPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -142,7 +147,9 @@ function WBP_CommonTalentTip_C:UpdateTalentStatus(TalentId, Type)
     end
   end
 end
+
 function WBP_CommonTalentTip_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.UpdateCommonTalentPresetCost, WBP_CommonTalentTip_C.BindOnUpdateCommonTalentPresetCost, self)
 end
+
 return WBP_CommonTalentTip_C

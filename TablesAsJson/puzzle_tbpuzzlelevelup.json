@@ -2,28 +2,28 @@
   "0": {
     "resetGetResources": {
       "1": {
-        "quality": 0,
-        "resources": {}
+        "resources": {},
+        "quality": 0
       },
       "2": {
-        "quality": 1,
-        "resources": {}
+        "resources": {},
+        "quality": 1
       },
       "3": {
-        "quality": 2,
-        "resources": {}
+        "resources": {},
+        "quality": 2
       },
       "4": {
-        "quality": 3,
-        "resources": {}
+        "resources": {},
+        "quality": 3
       },
       "5": {
-        "quality": 4,
-        "resources": {}
+        "resources": {},
+        "quality": 4
       },
       "6": {
-        "quality": 5,
-        "resources": {}
+        "resources": {},
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -50,28 +50,28 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 0,
-        "resources": {}
+        "resources": {},
+        "quality": 0
       },
       "2": {
-        "quality": 1,
-        "resources": {}
+        "resources": {},
+        "quality": 1
       },
       "3": {
-        "quality": 2,
-        "resources": {}
+        "resources": {},
+        "quality": 2
       },
       "4": {
-        "quality": 3,
-        "resources": {}
+        "resources": {},
+        "quality": 3
       },
       "5": {
-        "quality": 4,
-        "resources": {}
+        "resources": {},
+        "quality": 4
       },
       "6": {
-        "quality": 5,
-        "resources": {}
+        "resources": {},
+        "quality": 5
       }
     },
     "eatExp": {
@@ -101,58 +101,58 @@
   "1": {
     "resetGetResources": {
       "1": {
-        "quality": 0,
         "resources": {
           "1": {
             "value": 64,
             "key": 99010
           }
-        }
+        },
+        "quality": 0
       },
       "2": {
-        "quality": 1,
         "resources": {
           "1": {
             "value": 64,
             "key": 99010
           }
-        }
+        },
+        "quality": 1
       },
       "3": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 96,
             "key": 99010
           }
-        }
+        },
+        "quality": 2
       },
       "4": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 128,
             "key": 99010
           }
-        }
+        },
+        "quality": 3
       },
       "5": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 192,
             "key": 99010
           }
-        }
+        },
+        "quality": 5
       },
       "6": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 192,
             "key": 99010
           }
-        }
+        },
+        "quality": 4
       }
     },
     "upgradeExp": {
@@ -179,58 +179,58 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 0,
         "resources": {
           "1": {
             "value": 80,
             "key": 99010
           }
-        }
+        },
+        "quality": 0
       },
       "2": {
-        "quality": 1,
         "resources": {
           "1": {
             "value": 80,
             "key": 99010
           }
-        }
+        },
+        "quality": 1
       },
       "3": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 120,
             "key": 99010
           }
-        }
+        },
+        "quality": 2
       },
       "4": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 160,
             "key": 99010
           }
-        }
+        },
+        "quality": 3
       },
       "5": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 240,
             "key": 99010
           }
-        }
+        },
+        "quality": 4
       },
       "6": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 240,
             "key": 99010
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -260,58 +260,58 @@
   "2": {
     "resetGetResources": {
       "1": {
-        "quality": 0,
         "resources": {
           "1": {
             "value": 70,
             "key": 99010
           }
-        }
+        },
+        "quality": 0
       },
       "2": {
-        "quality": 1,
         "resources": {
           "1": {
             "value": 70,
             "key": 99010
           }
-        }
+        },
+        "quality": 1
       },
       "3": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 106,
             "key": 99010
           }
-        }
+        },
+        "quality": 2
       },
       "4": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 141,
             "key": 99010
           }
-        }
+        },
+        "quality": 3
       },
       "5": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 211,
             "key": 99010
           }
-        }
+        },
+        "quality": 4
       },
       "6": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 211,
             "key": 99010
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -338,58 +338,58 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 0,
         "resources": {
           "1": {
             "value": 88,
             "key": 99010
           }
-        }
+        },
+        "quality": 0
       },
       "2": {
-        "quality": 1,
         "resources": {
           "1": {
             "value": 88,
             "key": 99010
           }
-        }
+        },
+        "quality": 1
       },
       "3": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 132,
             "key": 99010
           }
-        }
+        },
+        "quality": 2
       },
       "4": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 176,
             "key": 99010
           }
-        }
+        },
+        "quality": 3
       },
       "5": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 264,
             "key": 99010
           }
-        }
+        },
+        "quality": 4
       },
       "6": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 264,
             "key": 99010
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -419,58 +419,58 @@
   "3": {
     "resetGetResources": {
       "1": {
-        "quality": 0,
         "resources": {
           "1": {
             "value": 77,
             "key": 99010
           }
-        }
+        },
+        "quality": 0
       },
       "2": {
-        "quality": 1,
         "resources": {
           "1": {
             "value": 77,
             "key": 99010
           }
-        }
+        },
+        "quality": 1
       },
       "3": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 115,
             "key": 99010
           }
-        }
+        },
+        "quality": 2
       },
       "4": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 154,
             "key": 99010
           }
-        }
+        },
+        "quality": 3
       },
       "5": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 230,
             "key": 99010
           }
-        }
+        },
+        "quality": 4
       },
       "6": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 230,
             "key": 99010
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -497,58 +497,58 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 0,
         "resources": {
           "1": {
             "value": 96,
             "key": 99010
           }
-        }
+        },
+        "quality": 0
       },
       "2": {
-        "quality": 1,
         "resources": {
           "1": {
             "value": 96,
             "key": 99010
           }
-        }
+        },
+        "quality": 1
       },
       "3": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 144,
             "key": 99010
           }
-        }
+        },
+        "quality": 2
       },
       "4": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 192,
             "key": 99010
           }
-        }
+        },
+        "quality": 3
       },
       "5": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 288,
             "key": 99010
           }
-        }
+        },
+        "quality": 4
       },
       "6": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 288,
             "key": 99010
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -578,58 +578,58 @@
   "4": {
     "resetGetResources": {
       "1": {
-        "quality": 0,
         "resources": {
           "1": {
             "value": 83,
             "key": 99010
           }
-        }
+        },
+        "quality": 0
       },
       "2": {
-        "quality": 1,
         "resources": {
           "1": {
             "value": 83,
             "key": 99010
           }
-        }
+        },
+        "quality": 1
       },
       "3": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 125,
             "key": 99010
           }
-        }
+        },
+        "quality": 2
       },
       "4": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 166,
             "key": 99010
           }
-        }
+        },
+        "quality": 3
       },
       "5": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 250,
             "key": 99010
           }
-        }
+        },
+        "quality": 5
       },
       "6": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 250,
             "key": 99010
           }
-        }
+        },
+        "quality": 4
       }
     },
     "upgradeExp": {
@@ -656,58 +656,58 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 0,
         "resources": {
           "1": {
             "value": 104,
             "key": 99010
           }
-        }
+        },
+        "quality": 0
       },
       "2": {
-        "quality": 1,
         "resources": {
           "1": {
             "value": 104,
             "key": 99010
           }
-        }
+        },
+        "quality": 1
       },
       "3": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 156,
             "key": 99010
           }
-        }
+        },
+        "quality": 2
       },
       "4": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 208,
             "key": 99010
           }
-        }
+        },
+        "quality": 3
       },
       "5": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 312,
             "key": 99010
           }
-        }
+        },
+        "quality": 4
       },
       "6": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 312,
             "key": 99010
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -737,58 +737,58 @@
   "5": {
     "resetGetResources": {
       "1": {
-        "quality": 0,
         "resources": {
           "1": {
             "value": 90,
             "key": 99010
           }
-        }
+        },
+        "quality": 0
       },
       "2": {
-        "quality": 1,
         "resources": {
           "1": {
             "value": 90,
             "key": 99010
           }
-        }
+        },
+        "quality": 1
       },
       "3": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 134,
             "key": 99010
           }
-        }
+        },
+        "quality": 2
       },
       "4": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 179,
             "key": 99010
           }
-        }
+        },
+        "quality": 3
       },
       "5": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 269,
             "key": 99010
           }
-        }
+        },
+        "quality": 4
       },
       "6": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 269,
             "key": 99010
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -815,58 +815,58 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 0,
         "resources": {
           "1": {
             "value": 112,
             "key": 99010
           }
-        }
+        },
+        "quality": 0
       },
       "2": {
-        "quality": 1,
         "resources": {
           "1": {
             "value": 112,
             "key": 99010
           }
-        }
+        },
+        "quality": 1
       },
       "3": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 168,
             "key": 99010
           }
-        }
+        },
+        "quality": 2
       },
       "4": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 224,
             "key": 99010
           }
-        }
+        },
+        "quality": 3
       },
       "5": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 336,
             "key": 99010
           }
-        }
+        },
+        "quality": 4
       },
       "6": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 336,
             "key": 99010
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -896,7 +896,6 @@
   "6": {
     "resetGetResources": {
       "1": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 144,
@@ -906,10 +905,10 @@
             "value": 5,
             "key": 99011
           }
-        }
+        },
+        "quality": 2
       },
       "2": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 192,
@@ -919,10 +918,10 @@
             "value": 5,
             "key": 99011
           }
-        }
+        },
+        "quality": 3
       },
       "3": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 288,
@@ -932,10 +931,10 @@
             "value": 8,
             "key": 99011
           }
-        }
+        },
+        "quality": 4
       },
       "4": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 288,
@@ -945,7 +944,8 @@
             "value": 8,
             "key": 99011
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -964,7 +964,6 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 180,
@@ -974,10 +973,10 @@
             "value": 6,
             "key": 99011
           }
-        }
+        },
+        "quality": 2
       },
       "2": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 240,
@@ -987,10 +986,10 @@
             "value": 6,
             "key": 99011
           }
-        }
+        },
+        "quality": 3
       },
       "3": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 360,
@@ -1000,10 +999,10 @@
             "value": 10,
             "key": 99011
           }
-        }
+        },
+        "quality": 4
       },
       "4": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 360,
@@ -1013,7 +1012,8 @@
             "value": 10,
             "key": 99011
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -1035,7 +1035,6 @@
   "7": {
     "resetGetResources": {
       "1": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 154,
@@ -1045,10 +1044,10 @@
             "value": 5,
             "key": 99011
           }
-        }
+        },
+        "quality": 2
       },
       "2": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 205,
@@ -1058,10 +1057,10 @@
             "value": 6,
             "key": 99011
           }
-        }
+        },
+        "quality": 3
       },
       "3": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 307,
@@ -1071,10 +1070,10 @@
             "value": 8,
             "key": 99011
           }
-        }
+        },
+        "quality": 4
       },
       "4": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 307,
@@ -1084,7 +1083,8 @@
             "value": 8,
             "key": 99011
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -1103,7 +1103,6 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 192,
@@ -1113,10 +1112,10 @@
             "value": 6,
             "key": 99011
           }
-        }
+        },
+        "quality": 2
       },
       "2": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 256,
@@ -1126,10 +1125,10 @@
             "value": 8,
             "key": 99011
           }
-        }
+        },
+        "quality": 3
       },
       "3": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 384,
@@ -1139,10 +1138,10 @@
             "value": 10,
             "key": 99011
           }
-        }
+        },
+        "quality": 4
       },
       "4": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 384,
@@ -1152,7 +1151,8 @@
             "value": 10,
             "key": 99011
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -1174,7 +1174,6 @@
   "8": {
     "resetGetResources": {
       "1": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 163,
@@ -1184,10 +1183,10 @@
             "value": 5,
             "key": 99011
           }
-        }
+        },
+        "quality": 2
       },
       "2": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 218,
@@ -1197,10 +1196,10 @@
             "value": 6,
             "key": 99011
           }
-        }
+        },
+        "quality": 3
       },
       "3": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 326,
@@ -1210,10 +1209,10 @@
             "value": 10,
             "key": 99011
           }
-        }
+        },
+        "quality": 4
       },
       "4": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 326,
@@ -1223,7 +1222,8 @@
             "value": 10,
             "key": 99011
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -1242,7 +1242,6 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 204,
@@ -1252,10 +1251,10 @@
             "value": 6,
             "key": 99011
           }
-        }
+        },
+        "quality": 2
       },
       "2": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 272,
@@ -1265,10 +1264,10 @@
             "value": 8,
             "key": 99011
           }
-        }
+        },
+        "quality": 3
       },
       "3": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 408,
@@ -1278,10 +1277,10 @@
             "value": 12,
             "key": 99011
           }
-        }
+        },
+        "quality": 4
       },
       "4": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 408,
@@ -1291,7 +1290,8 @@
             "value": 12,
             "key": 99011
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -1313,7 +1313,6 @@
   "9": {
     "resetGetResources": {
       "1": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 173,
@@ -1323,10 +1322,10 @@
             "value": 5,
             "key": 99011
           }
-        }
+        },
+        "quality": 2
       },
       "2": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 230,
@@ -1336,10 +1335,10 @@
             "value": 6,
             "key": 99011
           }
-        }
+        },
+        "quality": 3
       },
       "3": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 346,
@@ -1349,10 +1348,10 @@
             "value": 10,
             "key": 99011
           }
-        }
+        },
+        "quality": 4
       },
       "4": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 346,
@@ -1362,7 +1361,8 @@
             "value": 10,
             "key": 99011
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -1381,7 +1381,6 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 216,
@@ -1391,10 +1390,10 @@
             "value": 6,
             "key": 99011
           }
-        }
+        },
+        "quality": 2
       },
       "2": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 288,
@@ -1404,10 +1403,10 @@
             "value": 8,
             "key": 99011
           }
-        }
+        },
+        "quality": 3
       },
       "3": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 432,
@@ -1417,10 +1416,10 @@
             "value": 12,
             "key": 99011
           }
-        }
+        },
+        "quality": 4
       },
       "4": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 432,
@@ -1430,7 +1429,8 @@
             "value": 12,
             "key": 99011
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -1452,7 +1452,6 @@
   "10": {
     "resetGetResources": {
       "1": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 269,
@@ -1462,10 +1461,10 @@
             "value": 8,
             "key": 99011
           }
-        }
+        },
+        "quality": 2
       },
       "2": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 358,
@@ -1475,10 +1474,10 @@
             "value": 10,
             "key": 99011
           }
-        }
+        },
+        "quality": 3
       },
       "3": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 538,
@@ -1488,10 +1487,10 @@
             "value": 14,
             "key": 99011
           }
-        }
+        },
+        "quality": 4
       },
       "4": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 538,
@@ -1501,7 +1500,8 @@
             "value": 14,
             "key": 99011
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -1520,7 +1520,6 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 2,
         "resources": {
           "1": {
             "value": 336,
@@ -1530,10 +1529,10 @@
             "value": 10,
             "key": 99011
           }
-        }
+        },
+        "quality": 2
       },
       "2": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 448,
@@ -1543,10 +1542,10 @@
             "value": 12,
             "key": 99011
           }
-        }
+        },
+        "quality": 3
       },
       "3": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 672,
@@ -1556,10 +1555,10 @@
             "value": 18,
             "key": 99011
           }
-        }
+        },
+        "quality": 4
       },
       "4": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 672,
@@ -1569,7 +1568,8 @@
             "value": 18,
             "key": 99011
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -1591,7 +1591,6 @@
   "11": {
     "resetGetResources": {
       "1": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 384,
@@ -1601,10 +1600,10 @@
             "value": 5,
             "key": 99012
           }
-        }
+        },
+        "quality": 3
       },
       "2": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 576,
@@ -1614,10 +1613,10 @@
             "value": 8,
             "key": 99012
           }
-        }
+        },
+        "quality": 4
       },
       "3": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 576,
@@ -1627,7 +1626,8 @@
             "value": 8,
             "key": 99012
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -1642,7 +1642,6 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 480,
@@ -1652,10 +1651,10 @@
             "value": 6,
             "key": 99012
           }
-        }
+        },
+        "quality": 3
       },
       "2": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 720,
@@ -1665,10 +1664,10 @@
             "value": 10,
             "key": 99012
           }
-        }
+        },
+        "quality": 4
       },
       "3": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 720,
@@ -1678,7 +1677,8 @@
             "value": 10,
             "key": 99012
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -1696,7 +1696,6 @@
   "12": {
     "resetGetResources": {
       "1": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 410,
@@ -1706,10 +1705,10 @@
             "value": 6,
             "key": 99012
           }
-        }
+        },
+        "quality": 3
       },
       "2": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 614,
@@ -1719,10 +1718,10 @@
             "value": 8,
             "key": 99012
           }
-        }
+        },
+        "quality": 4
       },
       "3": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 614,
@@ -1732,7 +1731,8 @@
             "value": 8,
             "key": 99012
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -1747,7 +1747,6 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 512,
@@ -1757,10 +1756,10 @@
             "value": 8,
             "key": 99012
           }
-        }
+        },
+        "quality": 3
       },
       "2": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 768,
@@ -1770,10 +1769,10 @@
             "value": 10,
             "key": 99012
           }
-        }
+        },
+        "quality": 4
       },
       "3": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 768,
@@ -1783,7 +1782,8 @@
             "value": 10,
             "key": 99012
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -1801,7 +1801,6 @@
   "13": {
     "resetGetResources": {
       "1": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 435,
@@ -1811,10 +1810,10 @@
             "value": 6,
             "key": 99012
           }
-        }
+        },
+        "quality": 3
       },
       "2": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 653,
@@ -1824,10 +1823,10 @@
             "value": 10,
             "key": 99012
           }
-        }
+        },
+        "quality": 4
       },
       "3": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 653,
@@ -1837,7 +1836,8 @@
             "value": 10,
             "key": 99012
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -1852,7 +1852,6 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 544,
@@ -1862,10 +1861,10 @@
             "value": 8,
             "key": 99012
           }
-        }
+        },
+        "quality": 3
       },
       "2": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 816,
@@ -1875,10 +1874,10 @@
             "value": 12,
             "key": 99012
           }
-        }
+        },
+        "quality": 4
       },
       "3": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 816,
@@ -1888,7 +1887,8 @@
             "value": 12,
             "key": 99012
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -1906,7 +1906,6 @@
   "14": {
     "resetGetResources": {
       "1": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 461,
@@ -1916,10 +1915,10 @@
             "value": 6,
             "key": 99012
           }
-        }
+        },
+        "quality": 3
       },
       "2": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 691,
@@ -1929,10 +1928,10 @@
             "value": 10,
             "key": 99012
           }
-        }
+        },
+        "quality": 4
       },
       "3": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 691,
@@ -1942,7 +1941,8 @@
             "value": 10,
             "key": 99012
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -1957,7 +1957,6 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 576,
@@ -1967,10 +1966,10 @@
             "value": 8,
             "key": 99012
           }
-        }
+        },
+        "quality": 3
       },
       "2": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 864,
@@ -1980,10 +1979,10 @@
             "value": 12,
             "key": 99012
           }
-        }
+        },
+        "quality": 4
       },
       "3": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 864,
@@ -1993,7 +1992,8 @@
             "value": 12,
             "key": 99012
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -2011,7 +2011,6 @@
   "15": {
     "resetGetResources": {
       "1": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 666,
@@ -2021,10 +2020,10 @@
             "value": 10,
             "key": 99012
           }
-        }
+        },
+        "quality": 3
       },
       "2": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 998,
@@ -2034,10 +2033,10 @@
             "value": 13,
             "key": 99012
           }
-        }
+        },
+        "quality": 4
       },
       "3": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 998,
@@ -2047,7 +2046,8 @@
             "value": 13,
             "key": 99012
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -2062,7 +2062,6 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 3,
         "resources": {
           "1": {
             "value": 832,
@@ -2072,10 +2071,10 @@
             "value": 12,
             "key": 99012
           }
-        }
+        },
+        "quality": 3
       },
       "2": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 1248,
@@ -2085,10 +2084,10 @@
             "value": 16,
             "key": 99012
           }
-        }
+        },
+        "quality": 4
       },
       "3": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 1248,
@@ -2098,7 +2097,8 @@
             "value": 16,
             "key": 99012
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -2116,7 +2116,6 @@
   "16": {
     "resetGetResources": {
       "1": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 1056,
@@ -2126,10 +2125,10 @@
             "value": 5,
             "key": 99013
           }
-        }
+        },
+        "quality": 4
       },
       "2": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 1056,
@@ -2139,7 +2138,8 @@
             "value": 5,
             "key": 99013
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -2150,7 +2150,6 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 1320,
@@ -2160,10 +2159,10 @@
             "value": 6,
             "key": 99013
           }
-        }
+        },
+        "quality": 4
       },
       "2": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 1320,
@@ -2173,7 +2172,8 @@
             "value": 6,
             "key": 99013
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -2187,7 +2187,6 @@
   "17": {
     "resetGetResources": {
       "1": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 1114,
@@ -2197,10 +2196,10 @@
             "value": 5,
             "key": 99013
           }
-        }
+        },
+        "quality": 4
       },
       "2": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 1114,
@@ -2210,7 +2209,8 @@
             "value": 5,
             "key": 99013
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -2221,7 +2221,6 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 1392,
@@ -2231,10 +2230,10 @@
             "value": 6,
             "key": 99013
           }
-        }
+        },
+        "quality": 4
       },
       "2": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 1392,
@@ -2244,7 +2243,8 @@
             "value": 6,
             "key": 99013
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -2258,7 +2258,6 @@
   "18": {
     "resetGetResources": {
       "1": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 1171,
@@ -2268,10 +2267,10 @@
             "value": 6,
             "key": 99013
           }
-        }
+        },
+        "quality": 4
       },
       "2": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 1171,
@@ -2281,7 +2280,8 @@
             "value": 6,
             "key": 99013
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -2292,7 +2292,6 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 1464,
@@ -2302,10 +2301,10 @@
             "value": 7,
             "key": 99013
           }
-        }
+        },
+        "quality": 4
       },
       "2": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 1464,
@@ -2315,7 +2314,8 @@
             "value": 7,
             "key": 99013
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -2329,7 +2329,6 @@
   "19": {
     "resetGetResources": {
       "1": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 1229,
@@ -2339,10 +2338,10 @@
             "value": 6,
             "key": 99013
           }
-        }
+        },
+        "quality": 4
       },
       "2": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 1229,
@@ -2352,7 +2351,8 @@
             "value": 6,
             "key": 99013
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -2363,7 +2363,6 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 1536,
@@ -2373,10 +2372,10 @@
             "value": 7,
             "key": 99013
           }
-        }
+        },
+        "quality": 4
       },
       "2": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 1536,
@@ -2386,7 +2385,8 @@
             "value": 7,
             "key": 99013
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {
@@ -2400,7 +2400,6 @@
   "20": {
     "resetGetResources": {
       "1": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 1651,
@@ -2410,10 +2409,10 @@
             "value": 7,
             "key": 99013
           }
-        }
+        },
+        "quality": 4
       },
       "2": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 1651,
@@ -2423,7 +2422,8 @@
             "value": 7,
             "key": 99013
           }
-        }
+        },
+        "quality": 5
       }
     },
     "upgradeExp": {
@@ -2434,7 +2434,6 @@
     },
     "upgradeCostResources": {
       "1": {
-        "quality": 4,
         "resources": {
           "1": {
             "value": 2064,
@@ -2444,10 +2443,10 @@
             "value": 9,
             "key": 99013
           }
-        }
+        },
+        "quality": 4
       },
       "2": {
-        "quality": 5,
         "resources": {
           "1": {
             "value": 2064,
@@ -2457,7 +2456,8 @@
             "value": 9,
             "key": 99013
           }
-        }
+        },
+        "quality": 5
       }
     },
     "eatExp": {

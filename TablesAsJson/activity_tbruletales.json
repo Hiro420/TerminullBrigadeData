@@ -1,8 +1,8 @@
 ﻿{
   "10001": {
-    "creditExchangeTaskGroupId": 0,
-    "activityID": 10001,
     "fullActivationReward": {},
-    "ruleInfoList": {}
+    "ruleInfoList": {},
+    "activityID": 10001,
+    "creditExchangeTaskGroupId": 0
   }
 }

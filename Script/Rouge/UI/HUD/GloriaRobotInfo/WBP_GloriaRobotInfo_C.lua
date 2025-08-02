@@ -1,8 +1,10 @@
 local GloriaTypeId = 1040
 local WBP_GloriaRobotInfo_C = UnLua.Class()
+
 function WBP_GloriaRobotInfo_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_GloriaRobotInfo_C:Destruct()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -30,6 +32,7 @@ function WBP_GloriaRobotInfo_C:Destruct()
   })
   self.Overridden.Destruct(self)
 end
+
 function WBP_GloriaRobotInfo_C:Init()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -62,6 +65,7 @@ function WBP_GloriaRobotInfo_C:Init()
   })
   self:InitNum()
 end
+
 function WBP_GloriaRobotInfo_C:InitNum()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -78,6 +82,7 @@ function WBP_GloriaRobotInfo_C:InitNum()
   local TreatTurretPlaceMaxNumTemp = CoreComp:GetCurrentAttributeValue(self.TreatTurretPlaceMaxNum)
   self.WBP_GloriaTreatRobotItem:Init(self.TreatTurretIcon, TreatTurretPlaceNumTemp, TreatTurretPlaceMaxNumTemp)
 end
+
 function WBP_GloriaRobotInfo_C:BindOnAttackTurretPlaceNumAttributeChanged(NewValue, OldValue)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -92,6 +97,7 @@ function WBP_GloriaRobotInfo_C:BindOnAttackTurretPlaceNumAttributeChanged(NewVal
   self.WBP_GloriaAttackRobotItem:Init(self.AttackTurretIcon, AttackTurretPlaceNumTemp, AttackTurretPlaceMaxNumTemp)
   self:UpdateInteractTipVis()
 end
+
 function WBP_GloriaRobotInfo_C:BindOnTreatTurretPlaceNumAttributeChanged(NewValue, OldValue)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -106,6 +112,7 @@ function WBP_GloriaRobotInfo_C:BindOnTreatTurretPlaceNumAttributeChanged(NewValu
   self.WBP_GloriaTreatRobotItem:Init(self.TreatTurretIcon, TreatTurretPlaceNumTemp, TreatTurretPlaceMaxNumTemp)
   self:UpdateInteractTipVis()
 end
+
 function WBP_GloriaRobotInfo_C:UpdateInteractTipVis()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -123,4 +130,5 @@ function WBP_GloriaRobotInfo_C:UpdateInteractTipVis()
     UpdateVisibility(self.InteractTip, true)
   end
 end
+
 return WBP_GloriaRobotInfo_C

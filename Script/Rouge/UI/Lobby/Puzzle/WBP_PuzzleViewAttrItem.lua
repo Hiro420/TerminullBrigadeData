@@ -1,4 +1,5 @@
 local WBP_PuzzleViewAttrItem = UnLua.Class()
+
 function WBP_PuzzleViewAttrItem:Show(AttrIdStr, AttrValue)
   local Result, AttrModifyOp = GetRowData(DT.DT_AttributeModifyOp, AttrIdStr)
   if not Result then
@@ -10,4 +11,5 @@ function WBP_PuzzleViewAttrItem:Show(AttrIdStr, AttrValue)
   local ValueText = UE.URGBlueprintLibrary.GetAttributeDisplayText(AttrValue, AttrModifyOp.AttributeDisplayType, AttrModifyOp.Unit, AttrModifyOp.RateDisplayInUI)
   self.Txt_Value:SetText(ValueText)
 end
+
 return WBP_PuzzleViewAttrItem

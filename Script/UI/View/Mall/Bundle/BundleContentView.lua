@@ -7,24 +7,31 @@ local SkinData = require("Modules.Appearance.Skin.SkinData")
 local CommunicationData = require("Modules.Appearance.Communication.CommunicationData")
 local PlayerInfoData = require("Modules.PlayerInfoMain.PlayerInfo.PlayerInfoData")
 local BundleContentView = Class(ViewBase)
+
 function BundleContentView:OnBindUIInput()
   self.WBP_InteractTipWidgetEsc:BindInteractAndClickEvent(self, self.ReturnLobby)
 end
+
 function BundleContentView:OnUnBindUIInput()
   self.WBP_InteractTipWidgetEsc:UnBindInteractAndClickEvent(self, self.ReturnLobby)
 end
+
 function BundleContentView:BindClickHandler()
 end
+
 function BundleContentView:UnBindClickHandler()
 end
+
 function BundleContentView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function BundleContentView:OnDestroy()
   self:UnBindClickHandler()
   self:StopVoice()
 end
+
 function BundleContentView:OnShowLink(LinkParams, HeroId, GoodsIdTable)
   local GoodsId = GoodsIdTable[2]
   if not GoodsId then
@@ -48,6 +55,7 @@ function BundleContentView:OnShowLink(LinkParams, HeroId, GoodsIdTable)
   self:UpDateList(GoodsId, BundleInfo)
   LogicRole.ShowOrHideRoleMainHero(false)
 end
+
 function BundleContentView:OnShow()
   print("BundleContentView OnShow")
   self.ViewModel = UIModelMgr:Get("BundleViewContentModel")
@@ -65,17 +73,21 @@ function BundleContentView:OnShow()
   self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Add(self, self.ReturnLobby)
   self:PlayAnimation(self.Ani_in)
 end
+
 function BundleContentView:OpenSetting()
   LogicGameSetting.ShowGameSettingPanel()
 end
+
 function BundleContentView:ReturnLobby()
   UIMgr:Hide(ViewID.UI_Mall_Bundle_Content, true)
 end
+
 function BundleContentView:OnHideByOther()
   self.CameraActor = self:GetCameraActor(self)
   self.CameraActor:UpdateActived(false, true, false)
   self:StopVoice()
 end
+
 function BundleContentView:OnRollback()
   self.CameraActor = self:GetCameraActor(self)
   if self.ShowType == TableEnums.ENUMResourceType.HeroCommuniRoulette or self.ShowType == TableEnums.ENUMResourceType.Banner or self.ShowType == TableEnums.ENUMResourceType.PROP then
@@ -84,6 +96,7 @@ function BundleContentView:OnRollback()
   end
   self.WBP_CommonBg.ShowAnimation = true
 end
+
 function BundleContentView:PlaySound(CommId)
   local RouletteId = CommunicationData.GetRoulleteIdByCommId(CommId)
   local Result, CommunicationRowInfo = GetRowData(DT.DT_CommunicationWheel, RouletteId)
@@ -95,6 +108,7 @@ function BundleContentView:PlaySound(CommId)
     self.PlayingVoiceId = PlaySound2DByName(SoundEventName, "BundleContentView:PlaySound")
   end
 end
+
 function BundleContentView:StopVoice()
   if self.PlayingVoiceId then
     self.ItemVoice = nil
@@ -102,6 +116,7 @@ function BundleContentView:StopVoice()
     self.PlayingVoiceId = nil
   end
 end
+
 function BundleContentView:BP_OnItemClicked(Item)
   if nil == Item then
     return
@@ -116,14 +131,17 @@ function BundleContentView:BP_OnItemClicked(Item)
     self.WBP_SkinDetailsItem:UpdateBuyButtonByGoodsId(self.GoddsId, not self.bCanBuy)
   end
 end
+
 function BundleContentView:SequenceEscView()
   self:ReturnLobby()
 end
+
 function BundleContentView:SequenceCallBack()
   self.WBP_CommonBg.ShowAnimation = false
   self.WBP_CommonBg:AnimationToEnd()
   self:PlayAnimation(self.Ani_in)
 end
+
 function BundleContentView:UpDateCamera(bShow, HeroId, SkinId, WeaponSkinId, WeaponResId)
   local CameraActor = self:GetCameraActor()
   if bShow then
@@ -142,6 +160,7 @@ function BundleContentView:UpDateCamera(bShow, HeroId, SkinId, WeaponSkinId, Wea
     ChangeToLobbyAnimCamera()
   end
 end
+
 function BundleContentView:UpdateCameraByShowItem(bShow, HeroId, SkinId, WeaponSkinId, WeaponResId)
   local CameraActor = self:GetCameraActor()
   if bShow then
@@ -160,10 +179,12 @@ function BundleContentView:UpdateCameraByShowItem(bShow, HeroId, SkinId, WeaponS
     LogicRole.ShowOrLoadLevel(-1)
   end
 end
+
 function BundleContentView:GetCameraActor()
   self.AppearanceActor = LogicLobby.GetAppearanceActor(self)
   return self.AppearanceActor
 end
+
 function BundleContentView:OnHide()
   print("BundleContentView OnHide")
   self:PlayAnimation(self.Ani_out)
@@ -182,11 +203,13 @@ function BundleContentView:OnHide()
   LogicRole.ShowOrLoadLevel(-1)
   LogicRole.ShowLevelForSequence(true)
 end
+
 function BundleContentView:Refresh(JsonStr)
   if self.BundleInfo and self.GoddsId then
     self:UpDateList(self.GoddsId, self.BundleInfo)
   end
 end
+
 function BundleContentView:UpDateList(GoddsId, BundleInfo, Item)
   self.GoddsId = GoddsId
   self.BundleInfo = BundleInfo
@@ -262,6 +285,7 @@ function BundleContentView:UpDateList(GoddsId, BundleInfo, Item)
     self.Text_Name:SetText(MailInfo[GoddsId].Name)
   end
 end
+
 function BundleContentView:RefreshWeaponSkill(WeaponId)
   local Result, RowData = GetRowData(DT.DT_Weapon, tostring(WeaponId))
   local index = 1
@@ -276,6 +300,7 @@ function BundleContentView:RefreshWeaponSkill(WeaponId)
   UpdateVisibility(self.VerticalBoxWeaponSkill, true)
   HideOtherItem(self.VerticalBoxWeaponSkill, index)
 end
+
 function BundleContentView:CheckGoodsType()
   local ConsumeNum = 0
   local GoddsId = tonumber(self.ViewModel.GoodsId)
@@ -297,8 +322,10 @@ function BundleContentView:CheckGoodsType()
   end
   return ConsumeNum <= CurNum, ConsumeNum - CurNum
 end
+
 function BundleContentView:SelectHeroSkin(HeroSkinResId, bUpdateMovie)
   local ResID = GetTbSkinRowNameBySkinID(HeroSkinResId)
   self.WBP_ComShowGoodsItem:InitCharacterSkin(ResID)
 end
+
 return BundleContentView

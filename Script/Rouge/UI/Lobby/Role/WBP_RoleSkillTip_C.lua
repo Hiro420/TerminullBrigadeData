@@ -1,6 +1,8 @@
 local WBP_RoleSkillTip_C = UnLua.Class()
+
 function WBP_RoleSkillTip_C:Construct()
 end
+
 function WBP_RoleSkillTip_C:RefreshInfo(SkillGroupId, CurHeroId, GenricModifyDataList)
   self.CurHeroId = CurHeroId
   local SkillGroupInfo = LogicRole.GetSkillTableRow(SkillGroupId)
@@ -54,9 +56,11 @@ function WBP_RoleSkillTip_C:RefreshInfo(SkillGroupId, CurHeroId, GenricModifyDat
     UpdateVisibility(self.RGRichTextBlockGeneric, false)
   end
 end
+
 function WBP_RoleSkillTip_C:GetDefaultFontStyle()
   return self.TxtTemplate.DefaultTextStyleOverride
 end
+
 function WBP_RoleSkillTip_C:UpdateSkillLevelInfo(SkillGroupInfo)
   local AllLevelItems = self.SkillLevelPanel:GetAllChildren()
   for i, SingleItem in iterator(AllLevelItems) do
@@ -92,6 +96,7 @@ function WBP_RoleSkillTip_C:UpdateSkillLevelInfo(SkillGroupInfo)
     Index = Index + 1
   end
 end
+
 function WBP_RoleSkillTip_C:UpdateSkillTag(SkillTagList)
   local TagItemList = self.SkillTagList:GetAllChildren()
   for i, SingleTagItem in iterator(TagItemList) do
@@ -117,7 +122,9 @@ function WBP_RoleSkillTip_C:UpdateSkillTag(SkillTagList)
     end
   end
 end
+
 function WBP_RoleSkillTip_C:HideChangeFetterPanel()
   self.ChangeFetterPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return WBP_RoleSkillTip_C

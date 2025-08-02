@@ -3,16 +3,19 @@ local pairs = pairs
 local str_format = string.format
 local UnLua = _G.UnLua
 local FuncUtil = {}
+
 function __TRACEBACK__()
   local traceback = debug.traceback()
   return traceback
 end
+
 function FuncUtil.ErrPrint(err)
   err = str_format([[
 %s
 %s]], err, __TRACEBACK__())
   UnLua.LogError(err)
 end
+
 function FuncUtil.IsEqualTable(tbLeft, tbRight, depth)
   for Key, Value in pairs(tbLeft) do
     if nil == tbRight[Key] or not FuncUtil.IsEqualVar(Value, tbRight[Key], depth - 1) then
@@ -26,7 +29,9 @@ function FuncUtil.IsEqualTable(tbLeft, tbRight, depth)
   end
   return true
 end
+
 local Max_Table_Depth = 4
+
 function FuncUtil.IsEqualVar(varLeft, varRight, depth)
   depth = depth or Max_Table_Depth
   local type_left = type(varLeft)
@@ -40,6 +45,7 @@ function FuncUtil.IsEqualVar(varLeft, varRight, depth)
   end
   return "table" == type_left and FuncUtil.IsEqualTable(varLeft, varRight, depth)
 end
+
 function FuncUtil.PrintTable(t, name)
   if UE_BUILD_DEVELOPMENT or UE_BUILD_DEBUG then
     local serialize_table = function(t, name)
@@ -62,6 +68,7 @@ function FuncUtil.PrintTable(t, name)
           return string.format("%q", so)
         end
       end
+      
       local function addtocart(value, name, indent, saved, field)
         indent = indent or ""
         saved = saved or {}
@@ -88,6 +95,7 @@ function FuncUtil.PrintTable(t, name)
           end
         end
       end
+      
       name = name or "PRINT_Table"
       if "table" ~= type(t) then
         return name .. " = " .. basicSerialize(t)
@@ -100,6 +108,7 @@ function FuncUtil.PrintTable(t, name)
     print(str)
   end
 end
+
 function FuncUtil.AddClickStatistics(statistic_key)
   if not statistic_key then
     error("statistic_key is nil.")
@@ -110,5 +119,6 @@ function FuncUtil.AddClickStatistics(statistic_key)
     UserClickStatisticsMgr:AddClickStatistics(statistic_key)
   end
 end
+
 _G.FuncUtil = _G.FuncUtil or FuncUtil
 return FuncUtil

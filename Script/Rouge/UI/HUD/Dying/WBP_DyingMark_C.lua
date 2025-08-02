@@ -4,10 +4,12 @@ local DyingIdxTxt = NSLOCTEXT("WBP_DyingMark_C", "DyingIdxTxt", "\231\172\172{0}
 local SecTxt = NSLOCTEXT("WBP_DyingMark_C", "SecTxt", "{0}\231\167\146")
 local RescueTxt = NSLOCTEXT("WBP_DyingMark_C", "RescueTxt", "\233\149\191\230\140\137 <keyname id=\"17\"/> \232\191\155\232\161\140\230\149\145\230\143\180")
 local RescuingTxt = NSLOCTEXT("WBP_DyingMark_C", "RescuingTxt", "\230\173\163\229\156\168\230\149\145\230\143\180")
+
 function WBP_DyingMark_C:Construct()
   self.Target = nil
   self.RGRichTextBlock_Interact:SetText(RescueTxt)
 end
+
 function WBP_DyingMark_C:InitNative()
   self.Overridden.InitNative(self)
   self.Ratio = 0
@@ -16,6 +18,7 @@ function WBP_DyingMark_C:InitNative()
   self.WBP_DyingIconItem_Edge:PlayAnimation(self.WBP_DyingIconItem_Edge.ShowAni)
   self.WBP_DyingIconItem:PlayAnimation(self.WBP_DyingIconItem.ShowAni)
 end
+
 function WBP_DyingMark_C:OnCharacterDying(Character)
   self:ShowDyingInfo(true)
   if Character and Character:IsValid() then
@@ -28,6 +31,7 @@ function WBP_DyingMark_C:OnCharacterDying(Character)
     end
   end
 end
+
 function WBP_DyingMark_C:OnRescueRatioChange(Character, Ratio)
   if self.Target == Character then
     UpdateVisibility(self.RGTextRescueTime, false)
@@ -44,6 +48,7 @@ function WBP_DyingMark_C:OnRescueRatioChange(Character, Ratio)
     self.Ratio = Ratio
   end
 end
+
 function WBP_DyingMark_C:ChangeState(bIsNear)
   if self.bIsNear ~= bIsNear then
     if bIsNear then
@@ -56,6 +61,7 @@ function WBP_DyingMark_C:ChangeState(bIsNear)
   end
   self.bIsNear = bIsNear
 end
+
 function WBP_DyingMark_C:ResetNative()
   self.Overridden.ResetNative(self)
   self.Target = nil
@@ -65,6 +71,7 @@ function WBP_DyingMark_C:ResetNative()
   UpdateVisibility(self.VerticalBox_CloseToShow, false)
   self.bIsNear = nil
 end
+
 function WBP_DyingMark_C:LuaTick(InDeltaTime)
   if not self.Target then
     self.Target = UE.URGBlueprintLibrary.GetMarkInfoById(self, self:GetMarkID()).TargetActor
@@ -100,4 +107,5 @@ function WBP_DyingMark_C:LuaTick(InDeltaTime)
     end
   end
 end
+
 return WBP_DyingMark_C

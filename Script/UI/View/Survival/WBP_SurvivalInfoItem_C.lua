@@ -1,16 +1,19 @@
 local WBP_SurvivalInfoItem_C = UnLua.Class()
 local LockText = NSLOCTEXT("WBP_SurvivalInfoItem_C", "LockText", "\232\175\183\229\133\136\233\128\154\229\133\179{0}")
+
 function WBP_SurvivalInfoItem_C:Construct()
   self.IsSelect = false
   self.Btn_Select.OnClicked:Add(self, self.OnBtnSelectClicked)
   self.Btn_Select.OnHovered:Add(self, self.OnBtnSelectHovered)
   self.Btn_Select.OnUnhovered:Add(self, self.OnBtnSelectUnhovered)
 end
+
 function WBP_SurvivalInfoItem_C:OnDestroy()
   self.Btn_Select.OnClicked:Remove(self, self.OnBtnSelectClicked)
   self.Btn_Select.OnHovered:Remove(self, self.OnBtnSelectHovered)
   self.Btn_Select.OnUnhovered:Remove(self, self.OnBtnSelectUnhovered)
 end
+
 function WBP_SurvivalInfoItem_C:InitInfo(SurvivalInfo, ModeId, ParentView, index)
   self.SurvivalInfo = SurvivalInfo
   self.LevelId = SurvivalInfo.LevelId
@@ -42,6 +45,7 @@ function WBP_SurvivalInfoItem_C:InitInfo(SurvivalInfo, ModeId, ParentView, index
   local result, rowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGameFloorUnlock, self.LevelId)
   if result then
     self.LevelInfo = rowInfo
+    self.WorldId = rowInfo.gameWorldID
   end
   self.TicketID = self.LevelInfo.ticketID
   self:SetSelect(false)
@@ -61,15 +65,25 @@ function WBP_SurvivalInfoItem_C:InitInfo(SurvivalInfo, ModeId, ParentView, index
   UpdateVisibility(self.Img_Ban, self.IsTeamMemberLock)
   self:PlayAnimation(self.Ani_loop, 0, 0)
 end
+
 function WBP_SurvivalInfoItem_C:SetSelect(IsSelect)
   self.IsSelect = IsSelect
   UpdateVisibility(self.CanvasPanel_UnSelect, not IsSelect)
   UpdateVisibility(self.CanvasPanel_Select, IsSelect)
 end
+
 function WBP_SurvivalInfoItem_C:OnBtnSelectClicked()
+  if not LogicTeam.IsCaptain() then
+    ShowWaveWindow(1466)
+    return
+  end
+  self:UpdateViewInfo()
+end
+
+function WBP_SurvivalInfoItem_C:UpdateViewInfo()
   self:SetSelect(true)
   self:PlayAnimation(self.Ani_click)
-  self.ParentView.SelectItemChange(self.ParentView, self.LevelId, self.TicketID)
+  self.ParentView.SelectItemChange(self.ParentView, self.LevelId, self.TicketID, self.Index)
   SetImageBrushByPath(self.ParentView.Img_Icon, self.SurvivalInfo.PanelIcon)
   self.ParentView.TXT_Difficulty:SetText(self.SurvivalInfo.DifficultyName)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGameModeTicket, self.LevelInfo.ticketID)
@@ -92,12 +106,15 @@ function WBP_SurvivalInfoItem_C:OnBtnSelectClicked()
     self.ParentView.TXT_NeedNum:SetText(RowInfo.costResources[1].value * TeamMemberCount)
   end
 end
+
 function WBP_SurvivalInfoItem_C:OnBtnSelectHovered()
   self:PlayAnimation(self.Ani_hover_in)
 end
+
 function WBP_SurvivalInfoItem_C:OnBtnSelectUnhovered()
   self:PlayAnimation(self.Ani_hover_out)
 end
+
 function WBP_SurvivalInfoItem_C:GetDependName(DependLevelID)
   local result, rowinfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGameFloorUnlock, DependLevelID)
   if result then
@@ -105,6 +122,7 @@ function WBP_SurvivalInfoItem_C:GetDependName(DependLevelID)
   end
   return "Error"
 end
+
 function WBP_SurvivalInfoItem_C:IsUnlock()
   if self.LevelInfo.initUnlock then
     return true
@@ -121,4 +139,5 @@ function WBP_SurvivalInfoItem_C:IsUnlock()
     end
   end
 end
+
 return WBP_SurvivalInfoItem_C

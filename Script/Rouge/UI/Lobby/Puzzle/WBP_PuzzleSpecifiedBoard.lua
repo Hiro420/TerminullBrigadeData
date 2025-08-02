@@ -1,5 +1,6 @@
 local WBP_PuzzleSpecifiedBoard = UnLua.Class()
 local PuzzleData = require("Modules.Puzzle.PuzzleData")
+
 function WBP_PuzzleSpecifiedBoard:Show(HeroId, SlotLockList, InSlotEquipList, PuzzleInfoList, GemPackageInfoList)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBPuzzleHero, HeroId)
   if Result then
@@ -49,13 +50,16 @@ function WBP_PuzzleSpecifiedBoard:Show(HeroId, SlotLockList, InSlotEquipList, Pu
   end
   HideOtherItem(self.Canvaspanel_Puzzleboard, Index, true)
 end
+
 function WBP_PuzzleSpecifiedBoard:Hide(...)
   local AllChildren = self.Canvaspanel_Puzzleboard:GetAllChildren()
   for k, SingleItem in pairs(AllChildren) do
     SingleItem:Hide()
   end
 end
+
 function WBP_PuzzleSpecifiedBoard:Destruct(...)
   self:Hide()
 end
+
 return WBP_PuzzleSpecifiedBoard

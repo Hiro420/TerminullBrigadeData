@@ -4,10 +4,13 @@ local EChipSlotType = {
   Equiped = "Equiped"
 }
 local ChipSlotItem = UnLua.Class()
+
 function ChipSlotItem:Construct()
 end
+
 function ChipSlotItem:Destruct()
 end
+
 function ChipSlotItem:InitChipSlotItem(EquipChipData, bUnLock, ParentView, Slot, EquipSlot)
   UpdateVisibility(self, true, true)
   self.ParentView = ParentView
@@ -49,6 +52,7 @@ function ChipSlotItem:InitChipSlotItem(EquipChipData, bUnLock, ParentView, Slot,
     end
   end
 end
+
 function ChipSlotItem:OnMouseEnter(MyGeometry, MouseEvent)
   self.RGStateControllerHover:ChangeStatus(EHover.Hover)
   if not UE.RGUtil.IsUObjectValid(self.ParentView) then
@@ -59,6 +63,7 @@ function ChipSlotItem:OnMouseEnter(MyGeometry, MouseEvent)
   end
   self.ParentView:ShowChipAttrListTip(true, self.EquipChipData, self.EquipChipData.TbChipData.Slot)
 end
+
 function ChipSlotItem:OnMouseLeave(MyGeometry, MouseEvent)
   self.RGStateControllerHover:ChangeStatus(EHover.UnHover)
   if not UE.RGUtil.IsUObjectValid(self.ParentView) then
@@ -66,6 +71,7 @@ function ChipSlotItem:OnMouseLeave(MyGeometry, MouseEvent)
   end
   self.ParentView:ShowChipAttrListTip(false)
 end
+
 function ChipSlotItem:OnMouseButtonDown(MyGeometry, MouseEvent)
   if not UE.RGUtil.IsUObjectValid(self.ParentView) then
     return
@@ -75,9 +81,11 @@ function ChipSlotItem:OnMouseButtonDown(MyGeometry, MouseEvent)
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function ChipSlotItem:Hide()
   self.EquipChipData = nil
   self.ParentView = nil
   UpdateVisibility(self, false)
 end
+
 return ChipSlotItem

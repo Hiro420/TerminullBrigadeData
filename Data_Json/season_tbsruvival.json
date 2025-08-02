@@ -1,0 +1,28 @@
+[
+  {
+    "Id": 1,
+    "LevelId": 1,
+    "DifficultyName": "普通",
+    "FloorDescription": [
+      "<img id=\\\"ModeDown\\\"/>\u00A0 敌人词条等级：<CZ_HighLight>挑战</>",
+      "<img id=\\\"ModeDown\\\"/>\u00A0 精英敌人等级：<CZ_HighLight>低</>",
+      "<img id=\\\"ModeDown\\\"/>\u00A0 有几率遭遇特殊事件：<CZ_HighLight>落雷</>"
+    ],
+    "DropResources": [
+      99994,
+      240036,
+      240023,
+      240024
+    ],
+    "DropResourcesRatioKey": [
+      "99994",
+      "240021"
+    ],
+    "DropResourcesRatioValue": [
+      "+40%",
+      "新"
+    ],
+    "SmallIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_01.Img_BossRush01_01",
+    "BigIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossSilhouette/Img_Blade_BossSilhouette.Img_Blade_BossSilhouette"
+  }
+]

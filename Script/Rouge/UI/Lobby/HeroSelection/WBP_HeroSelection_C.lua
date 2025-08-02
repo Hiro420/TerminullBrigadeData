@@ -2,6 +2,7 @@ local ProficiencyData = require("Modules.Proficiency.ProficiencyData")
 local climbtowerdata = require("UI.View.ClimbTower.ClimbTowerData")
 local SkinData = require("Modules.Appearance.Skin.SkinData")
 local WBP_HeroSelection_C = UnLua.Class()
+
 function WBP_HeroSelection_C:Construct()
   self.Btn_Choose.OnClicked:Add(self, self.BindOnChooseButtonClicked)
   self.Btn_Choose.OnHovered:Add(self, self.BindOnChooseButtonHovered)
@@ -16,6 +17,7 @@ function WBP_HeroSelection_C:Construct()
     break
   end
 end
+
 function WBP_HeroSelection_C:BindOrUnBindEvent(IsBind)
   if IsBind then
     EventSystem.AddListener(self, EventDef.Lobby.RoleItemClicked, self.BindOnChangeRoleItemClicked)
@@ -49,17 +51,21 @@ function WBP_HeroSelection_C:BindOrUnBindEvent(IsBind)
     self.Btn_Debuff.OnClicked:Remove(self, self.OnDebuffClicked)
   end
 end
+
 function WBP_HeroSelection_C:BindOnHeroTalentInfoUpdate(HeroId)
   if self.CurHeroId == HeroId then
     self:RefreshHeroAttributeInfo()
   end
 end
+
 function WBP_HeroSelection_C:BindOnUpdateCommonTalentInfo()
   self:RefreshHeroAttributeInfo()
 end
+
 function WBP_HeroSelection_C:BindOnFetterHeroInfoUpdate()
   self:RefreshHeroAttributeInfo()
 end
+
 function WBP_HeroSelection_C:BindOnEquippedWeaponInfoChanged(HeroId)
   if self.CurHeroId ~= HeroId then
     return
@@ -70,6 +76,7 @@ function WBP_HeroSelection_C:BindOnEquippedWeaponInfoChanged(HeroId)
     self.TargetRoleActor:ChangeWeaponMesh(self.CurHeroId)
   end
 end
+
 function WBP_HeroSelection_C:RefreshRoleTagList(RowInfo)
   local AllChildren = self.RoleTagList:GetAllChildren()
   for key, SingleItem in pairs(AllChildren) do
@@ -88,6 +95,7 @@ function WBP_HeroSelection_C:RefreshRoleTagList(RowInfo)
     SetImageBrushByPath(Item.Img_TagBottom, RowInfo.TagIcon)
   end
 end
+
 function WBP_HeroSelection_C:BindOnWeaponSlotSelected(IsSelect, SlotId)
   self.IsSelectWeapon = IsSelect
   if IsSelect then
@@ -100,11 +108,14 @@ function WBP_HeroSelection_C:BindOnWeaponSlotSelected(IsSelect, SlotId)
     EventSystem.Invoke(EventDef.Lobby.WeaponListChanged)
   end
 end
+
 function WBP_HeroSelection_C:OnWeaponSelectBGClicked()
   EventSystem.Invoke(EventDef.Lobby.WeaponSlotSelected, false)
 end
+
 function WBP_HeroSelection_C:BindOnWeaponListChanged()
 end
+
 function WBP_HeroSelection_C:BindOnLobbyWeaponSlotHoverStatusChanged(IsHover, WeaponInfo)
   if IsHover then
     self.WeaponItemDisplayInfo:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -114,6 +125,7 @@ function WBP_HeroSelection_C:BindOnLobbyWeaponSlotHoverStatusChanged(IsHover, We
     self.WeaponItemDisplayInfo:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_HeroSelection_C:BindOnWeaponItemHoveredStateChanged(IsHover, WeaponInfo)
   if IsHover then
     local EquippedWeaponInfo = DataMgr.GetEquippedWeaponList(self.CurHeroId)
@@ -132,6 +144,7 @@ function WBP_HeroSelection_C:BindOnWeaponItemHoveredStateChanged(IsHover, Weapon
     self.WeaponItemDisplayInfo:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_HeroSelection_C:BindOnPickHeroStateChanged(IsPick, HeroId)
   self:RefreshChooseButtonStatus()
   self:PlayAnimation(self.Ani_Bth_chuzhan)
@@ -139,9 +152,11 @@ function WBP_HeroSelection_C:BindOnPickHeroStateChanged(IsPick, HeroId)
     self.RoleChangeList:UpdateSelectStatusToTargetHero(LogicHeroSelect.GetCurSelectHero())
   end
 end
+
 function WBP_HeroSelection_C:BindOnUpdateMyTeamInfo()
   self:RefreshChooseButtonStatus()
 end
+
 function WBP_HeroSelection_C:RefreshWeaponDisplayInfoTip(TargetWidget, WeaponInfo, IsEquipped)
   local TipText
   local IsShowOperateIcon = false
@@ -156,6 +171,7 @@ function WBP_HeroSelection_C:RefreshWeaponDisplayInfoTip(TargetWidget, WeaponInf
     TargetWidget:ShowTipPanel(TipText, IsShowOperateIcon)
   end
 end
+
 function WBP_HeroSelection_C:RefreshWeaponSelectList()
   local AllChildren = self.WeaponListPanel:GetAllChildren()
   for key, SingleItem in pairs(AllChildren) do
@@ -179,6 +195,7 @@ function WBP_HeroSelection_C:RefreshWeaponSelectList()
     Index = Index + 1
   end
 end
+
 function WBP_HeroSelection_C:BindOnChooseButtonClicked()
   LuaAddClickStatistics("PreparingLockCharacter")
   if LogicHeroSelect.GetCurSelectHero() == self.CurHeroId then
@@ -193,27 +210,35 @@ function WBP_HeroSelection_C:BindOnChooseButtonClicked()
     self:PlayAnimation(self.Ani_Bth_chuzhan)
   end
 end
+
 function WBP_HeroSelection_C:BindOnChooseButtonHovered()
   self.ChooseButtonHoverPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_HeroSelection_C:BindOnChooseButtonUnhovered()
   self.ChooseButtonHoverPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_HeroSelection_C:BindOnDetailAttributeButtonClicked()
   self:ExpandAttr()
 end
+
 function WBP_HeroSelection_C:BindOnDetailAttributeButtonHovered()
   self.Img_DetailAttributeHover:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_HeroSelection_C:BindOnDetailAttributeButtonUnhovered()
   self.Img_DetailAttributeHover:SetVisibility(UE.ESlateVisibility.Hidden)
 end
+
 function WBP_HeroSelection_C:BindOnCancelPickButtonClicked(...)
   LogicHeroSelect.RequestCancelPickHeroToServer()
 end
+
 function WBP_HeroSelection_C:BindOnRoleInfoButtonClicked()
   self.RoleMainPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_HeroSelection_C:Show()
   self:StopAllAnimations()
   UpdateVisibility(self, true)
@@ -225,6 +250,7 @@ function WBP_HeroSelection_C:Show()
   EventSystem.Invoke(EventDef.Lobby.RoleItemClicked, LogicHeroSelect.GetCurSelectHero(), true)
   UpdateVisibility(self.ScaleBox, climbtowerdata.GameMode == LogicTeam.GetModeId())
 end
+
 function WBP_HeroSelection_C:RefreshWeaponSlotList()
   local AllItem = self.WeaponSlotList:GetAllChildren()
   local EquippedWeaponInfo
@@ -246,6 +272,7 @@ function WBP_HeroSelection_C:RefreshWeaponSlotList()
     end
   end
 end
+
 function WBP_HeroSelection_C:Hide()
   self:BindOrUnBindEvent(false)
   self.WBP_TotalAttrTips:Hide()
@@ -254,10 +281,12 @@ function WBP_HeroSelection_C:Hide()
   self:ResetToCurSelectHeroInfo()
   self:PlayAnimation(self.Ani_out)
 end
+
 function WBP_HeroSelection_C:ResetToCurSelectHeroInfo()
   local MyHeroInfo = DataMgr.GetMyHeroInfo()
   EventSystem.Invoke(EventDef.Lobby.RoleItemClicked, LogicHeroSelect.GetCurSelectHero())
 end
+
 function WBP_HeroSelection_C:BindOnChangeRoleItemClicked(HeroId, bNotShowGlitchMatEffect)
   local bShowGlitchMatEffect = not bNotShowGlitchMatEffect
   if self.TargetRoleActor then
@@ -302,17 +331,21 @@ function WBP_HeroSelection_C:BindOnChangeRoleItemClicked(HeroId, bNotShowGlitchM
   local Text = RowInfo.Desc
   self.Txt_BGDesc:SetText(Text)
 end
+
 function WBP_HeroSelection_C:UpdateRoleListStatusToHeroSelectId()
   self.RoleChangeList:UpdateSelectStatusToTargetHero(LogicHeroSelect.GetCurSelectHero())
 end
+
 function WBP_HeroSelection_C:RefreshHeroAttributeInfo()
   self:RefreshLobbyHeroAttribtueInfo()
 end
+
 local SortAttrRow = function(A, B)
   local ResultA, AAttrDisplay = GetRowData(DT.DT_HeroBasicAttribute, tostring(A))
   local ResultB, BAttrDisplay = GetRowData(DT.DT_HeroBasicAttribute, tostring(B))
   return AAttrDisplay.PriorityLevel > BAttrDisplay.PriorityLevel
 end
+
 function WBP_HeroSelection_C:GetAttrDisplayNameList()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -332,11 +365,14 @@ function WBP_HeroSelection_C:GetAttrDisplayNameList()
   table.sort(RowNameTb, SortAttrRow)
   return RowNameTb
 end
+
 function WBP_HeroSelection_C:RefreshLobbyHeroAttribtueInfo()
 end
+
 function WBP_HeroSelection_C:ExpandAttr()
   self.WBP_TotalAttrTips:LobbyShow(self.CurHeroId)
 end
+
 function WBP_HeroSelection_C:RefreshChooseButtonStatus()
   local IsPick = false
   local TeamInfo = DataMgr.GetTeamInfo()
@@ -360,6 +396,7 @@ function WBP_HeroSelection_C:RefreshChooseButtonStatus()
     self.Txt_ChooseStatus:SetText(self.LockText)
   end
 end
+
 function WBP_HeroSelection_C:BindOnShowSkillTips(IsShow, SkillGroupId, KeyName, SkillInputName, inputNameAryPad, HoverItem)
   if IsShow then
     local Offset = UE.FVector2D(-35, 0)
@@ -370,10 +407,12 @@ function WBP_HeroSelection_C:BindOnShowSkillTips(IsShow, SkillGroupId, KeyName, 
     self.NormalSkillTip:Hide()
   end
 end
+
 function WBP_HeroSelection_C:BindOnUpdateMyHeroInfo()
   self:RefreshChooseButtonStatus()
   self:ResetToCurSelectHeroInfo()
 end
+
 function WBP_HeroSelection_C:RefreshSkillInfo(RowInfo)
   local AllSkillItems = self.SkillList:GetAllChildren()
   local SkillItemList = {}
@@ -402,6 +441,7 @@ function WBP_HeroSelection_C:RefreshSkillInfo(RowInfo)
   end
   self:RefreshWeaponSkillInfo()
 end
+
 function WBP_HeroSelection_C:RefreshWeaponSkillInfo()
   UpdateVisibility(self.WeaponSkill, false)
   local EquippedWeaponInfo = DataMgr.GetEquippedWeaponList(self.CurHeroId)
@@ -427,6 +467,7 @@ function WBP_HeroSelection_C:RefreshWeaponSkillInfo()
     end
   end
 end
+
 function WBP_HeroSelection_C:OnDebuffClicked()
   UpdateVisibility(self.WBP_ClimbTower_DebuffPanle, true, true)
   local TeamInfo = DataMgr.GetTeamInfo()
@@ -439,12 +480,15 @@ function WBP_HeroSelection_C:OnDebuffClicked()
   table.insert(Players, DataMgr.GetUserId())
   self.WBP_ClimbTower_DebuffPanle:Init(Players, 2)
 end
+
 function WBP_HeroSelection_C:Destruct()
   self:BindOrUnBindEvent(false)
 end
+
 function WBP_HeroSelection_C:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     UpdateVisibility(self, false)
   end
 end
+
 return WBP_HeroSelection_C

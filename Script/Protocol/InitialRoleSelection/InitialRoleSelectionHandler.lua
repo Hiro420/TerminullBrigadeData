@@ -3,6 +3,7 @@ local UnLua = _G.UnLua
 local rapidjson = require("rapidjson")
 local SkinHandler = require("Protocol.Appearance.Skin.SkinHandler")
 local InitialRoleSelectionHandler = {}
+
 function InitialRoleSelectionHandler.RequestSelectHero(HeroId)
   HttpCommunication.Request("hero/selecthero", {
     heroId = tonumber(HeroId)
@@ -24,4 +25,5 @@ function InitialRoleSelectionHandler.RequestSelectHero(HeroId)
     end
   })
 end
+
 return InitialRoleSelectionHandler

@@ -1,14 +1,17 @@
 local rapidjson = require("rapidjson")
 local WBP_SoulCoreEquipItem_C = UnLua.Class()
+
 function WBP_SoulCoreEquipItem_C:Construct()
   self.ButtonEquip.OnClicked:Add(self, self.EquipFetterHeroByPos)
 end
+
 function WBP_SoulCoreEquipItem_C:Destruct()
   self.ButtonEquip.OnClicked:Remove(self, self.EquipFetterHeroByPos)
   self.ParentView = nil
   self.SelectCallback = nil
   self.UnSelectCallback = nil
 end
+
 function WBP_SoulCoreEquipItem_C:InitInfo(ParentView, SlotId, MainHeroId, SelectCallback, UnSelectCallback)
   self:SetVisibility(UE.ESlateVisibility.Visible)
   self.SlotId = SlotId
@@ -38,6 +41,7 @@ function WBP_SoulCoreEquipItem_C:InitInfo(ParentView, SlotId, MainHeroId, Select
     self.URGImageRareLace:SetColorAndOpacity(UE.FLinearColor(1, 1, 1, 1))
   end
 end
+
 function WBP_SoulCoreEquipItem_C:UpdateItem(SlotHeroId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -72,9 +76,11 @@ function WBP_SoulCoreEquipItem_C:UpdateItem(SlotHeroId)
   end
   SetImageBrushByPath(self.URGImageIcon, IconPath)
 end
+
 function WBP_SoulCoreEquipItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_SoulCoreEquipItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   self.bIsSelectItem = true
   local SlotHeroId = LogicRole.GetCurSlotHeroId(self.MainHeroId, self.SlotId)
@@ -88,6 +94,7 @@ function WBP_SoulCoreEquipItem_C:OnMouseEnter(MyGeometry, MouseEvent)
     self.SelectCallback(self.ParentView, SlotHeroId)
   end
 end
+
 function WBP_SoulCoreEquipItem_C:OnMouseLeave(MouseEvent)
   self.bIsSelectItem = false
   self.URGImageSelect:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -96,6 +103,7 @@ function WBP_SoulCoreEquipItem_C:OnMouseLeave(MouseEvent)
     self.UnSelectCallback(self.ParentView)
   end
 end
+
 function WBP_SoulCoreEquipItem_C:EquipFetterHeroByPos()
   local SlotHeroId = LogicRole.GetCurSlotHeroId(self.MainHeroId, self.SlotId)
   if SlotHeroId ~= LogicSoulCore.CurSelectSoulCoreId or SlotHeroId <= 0 then
@@ -104,8 +112,10 @@ function WBP_SoulCoreEquipItem_C:EquipFetterHeroByPos()
     LogicRole.UnlockFetterSlot(self.SlotId)
   end
 end
+
 function WBP_SoulCoreEquipItem_C:OnGetHeroFetterInfoSuccess(JsonResponse)
   print("OnGetHeroFetterInfoSuccess", JsonResponse.Content)
   LogicRole.InitFetterHeroesMesh(self.MainHeroId)
 end
+
 return WBP_SoulCoreEquipItem_C

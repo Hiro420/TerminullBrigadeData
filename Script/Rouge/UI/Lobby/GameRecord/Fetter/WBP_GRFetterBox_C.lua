@@ -1,7 +1,9 @@
 local WBP_GRFetterBox_C = UnLua.Class()
+
 function WBP_GRFetterBox_C:Construct()
   self.wbp_GRFetterItemClass = UE.UClass.Load("/Game/Rouge/UI/Lobby/GameRecord/Fetter/WBP_GRFetterItem.WBP_GRFetterItem_C")
 end
+
 function WBP_GRFetterBox_C:UpdateGRFetterBox(CurrentFetterData)
   if not CurrentFetterData then
     self:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -23,4 +25,5 @@ function WBP_GRFetterBox_C:UpdateGRFetterBox(CurrentFetterData)
   end
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 return WBP_GRFetterBox_C

@@ -1,7 +1,9 @@
 local WBP_ScrollSetLvListItem_C = UnLua.Class()
+
 function WBP_ScrollSetLvListItem_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_ScrollSetLvListItem_C:InitSetLvListItem(CurLevel, selfLevel, bHaveNext, PreSetLv)
   UpdateVisibility(self, true)
   local Cls = self.WBP_ScrollSetLvItem:GetClass()
@@ -18,9 +20,12 @@ function WBP_ScrollSetLvListItem_C:InitSetLvListItem(CurLevel, selfLevel, bHaveN
   end
   HideOtherItem(self.HorizontalBoxList, Index)
 end
+
 function WBP_ScrollSetLvListItem_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_ScrollSetLvListItem_C:Destruct()
 end
+
 return WBP_ScrollSetLvListItem_C

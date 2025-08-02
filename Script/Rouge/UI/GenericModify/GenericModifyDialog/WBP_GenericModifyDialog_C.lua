@@ -1,17 +1,40 @@
 local WBP_GenericModifyDialog_C = UnLua.Class()
+
 function WBP_GenericModifyDialog_C:Construct()
   self.Btn_NextPage.OnClicked:Add(self, function()
     self:NextPage(self.Index + 1)
   end)
 end
+
 function WBP_GenericModifyDialog_C:InitGenericModifyDialog()
   SetInputIgnore(self:GetOwningPlayerPawn(), true)
   self.Index = 1
 end
+
+function WBP_GenericModifyDialog_C:OnDisplay()
+  self.Overridden.OnDisplay(self)
+  EventSystem.AddListener(self, EventDef.GenericModify.OnCancelInteract, WBP_GenericModifyDialog_C.OnCancelChoosePanel)
+end
+
 function WBP_GenericModifyDialog_C:UnDisplay()
   self.Overridden.UnDisplay(self)
+  EventSystem.RemoveListener(EventDef.GenericModify.OnCancelInteract, WBP_GenericModifyDialog_C.OnCancelChoosePanel, self)
   self.bFromModifyPack = false
 end
+
+function WBP_GenericModifyDialog_C:OnClose()
+  self.Overridden.OnClose(self)
+  EventSystem.RemoveListener(EventDef.GenericModify.OnCancelInteract, WBP_GenericModifyDialog_C.OnCancelChoosePanel, self)
+end
+
+function WBP_GenericModifyDialog_C:OnCancelChoosePanel(Target, Instigator)
+  print("WBP_GenericModifyDialog_C:OnCancelChoosePanel", Target, self.Target)
+  if Target ~= self.Target then
+    return
+  end
+  self:CloseGenericModifyDialog(true)
+end
+
 function WBP_GenericModifyDialog_C:OpenGenericModifyDialogByPack(DialogueId, bDebug)
   self.bFromModifyPack = true
   self.bDebug = bDebug
@@ -39,6 +62,7 @@ function WBP_GenericModifyDialog_C:OpenGenericModifyDialogByPack(DialogueId, bDe
   end
   self:NextPage(1)
 end
+
 function WBP_GenericModifyDialog_C:OpenGenericModifyDialog(InteractComp, Target)
   self.bFromModifyPack = false
   self:PlayAnimation(self.anim_in)
@@ -77,10 +101,12 @@ function WBP_GenericModifyDialog_C:OpenGenericModifyDialog(InteractComp, Target)
   end
   self:NextPage(1)
 end
+
 function WBP_GenericModifyDialog_C:UpdatePanel(PreviewModifyListParam)
   self:OpenGenericModifyDialog(self.InteractComp, self.Target)
 end
-function WBP_GenericModifyDialog_C:CloseGenericModifyDialog()
+
+function WBP_GenericModifyDialog_C:CloseGenericModifyDialog(bNotShowGeneric)
   local bFromModifyPack = self.bFromModifyPack
   self.WBP_InteractTipWidget:UnBindInteractAndClickEvent(self, self.CloseGenericModifyDialog, "JumpAction")
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.Timer) then
@@ -101,12 +127,14 @@ function WBP_GenericModifyDialog_C:CloseGenericModifyDialog()
   end
   if bFromModifyPack then
     if not RGUIMgr:IsShown(UIConfig.WBP_GenericModify_Pack_Choose_C.UIName) then
-      RGUIMgr:OpenUI(UIConfig.WBP_GenericModify_Pack_Choose_C.UIName, true)
-      local ChoosePanel = RGUIMgr:GetUI(UIConfig.WBP_GenericModify_Pack_Choose_C.UIName)
-      if ChoosePanel then
-        ChoosePanel:SetFromDialog(true)
-        ChoosePanel:ShowTitle()
-        LogicHUD:UpdateGenericModifyListShow(false)
+      if not bNotShowGeneric then
+        RGUIMgr:OpenUI(UIConfig.WBP_GenericModify_Pack_Choose_C.UIName, true)
+        local ChoosePanel = RGUIMgr:GetUI(UIConfig.WBP_GenericModify_Pack_Choose_C.UIName)
+        if ChoosePanel then
+          ChoosePanel:SetFromDialog(true)
+          ChoosePanel:ShowTitle()
+          LogicHUD:UpdateGenericModifyListShow(false)
+        end
       end
       LogicGenericModify.bCanOperator = true
       LogicGenericModify.bCanFinish = true
@@ -114,12 +142,14 @@ function WBP_GenericModifyDialog_C:CloseGenericModifyDialog()
       print("WBP_GenericModifyDialog_C:CloseGenericModifyDialog Failed")
     end
   elseif not RGUIMgr:IsShown(UIConfig.WBP_GenericModifyChoosePanel_C.UIName) then
-    RGUIMgr:OpenUI(UIConfig.WBP_GenericModifyChoosePanel_C.UIName, true)
-    local ChoosePanel = RGUIMgr:GetUI(UIConfig.WBP_GenericModifyChoosePanel_C.UIName)
-    if ChoosePanel and self.Target then
-      ChoosePanel:SetFromDialog(true)
-      ChoosePanel:InitGenericModifyChoosePanel(self.InteractComp, self.Target)
-      LogicHUD:UpdateGenericModifyListShow(false)
+    if not bNotShowGeneric then
+      RGUIMgr:OpenUI(UIConfig.WBP_GenericModifyChoosePanel_C.UIName, true)
+      local ChoosePanel = RGUIMgr:GetUI(UIConfig.WBP_GenericModifyChoosePanel_C.UIName)
+      if ChoosePanel and self.Target then
+        ChoosePanel:SetFromDialog(true)
+        ChoosePanel:InitGenericModifyChoosePanel(self.InteractComp, self.Target)
+        LogicHUD:UpdateGenericModifyListShow(false)
+      end
     end
     LogicGenericModify.bCanOperator = true
     LogicGenericModify.bCanFinish = true
@@ -127,6 +157,7 @@ function WBP_GenericModifyDialog_C:CloseGenericModifyDialog()
     print("WBP_GenericModifyWaitPanel_C:WaitFinish Failed")
   end
 end
+
 function WBP_GenericModifyDialog_C:NextPage(Index)
   local r, v = GetRowData(DT.DT_GenericModifyDialogueItem, self.DialogueId)
   if not r then
@@ -158,8 +189,10 @@ function WBP_GenericModifyDialog_C:NextPage(Index)
     end
   end
 end
+
 function WBP_GenericModifyDialog_C:CloseTimer()
   UpdateVisibility(self.WBP_InteractTipWidget, true, true)
   self.WBP_InteractTipWidget:BindInteractAndClickEvent(self, self.CloseGenericModifyDialog, "JumpAction")
 end
+
 return WBP_GenericModifyDialog_C

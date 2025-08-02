@@ -1,5 +1,7 @@
 ﻿{
   "7": {
+    "HeroID": 1080,
+    "SeasonIDX": 1,
     "SeasonAbilityID": 7,
     "TalentGroupIDS": {
       "1": 20101,
@@ -14,11 +16,11 @@
       "10": 20110,
       "11": 20111,
       "12": 20115
-    },
-    "SeasonIDX": 1,
-    "HeroID": 1080
+    }
   },
   "1": {
+    "HeroID": 1000,
+    "SeasonIDX": 1,
     "SeasonAbilityID": 1,
     "TalentGroupIDS": {
       "1": 20101,
@@ -33,11 +35,11 @@
       "10": 20110,
       "11": 20111,
       "12": 20115
-    },
-    "SeasonIDX": 1,
-    "HeroID": 1000
+    }
   },
   "2": {
+    "HeroID": 1010,
+    "SeasonIDX": 1,
     "SeasonAbilityID": 2,
     "TalentGroupIDS": {
       "1": 20101,
@@ -52,11 +54,11 @@
       "10": 20110,
       "11": 20111,
       "12": 20115
-    },
-    "SeasonIDX": 1,
-    "HeroID": 1010
+    }
   },
   "3": {
+    "HeroID": 1020,
+    "SeasonIDX": 1,
     "SeasonAbilityID": 3,
     "TalentGroupIDS": {
       "1": 20101,
@@ -71,11 +73,11 @@
       "10": 20110,
       "11": 20111,
       "12": 20115
-    },
-    "SeasonIDX": 1,
-    "HeroID": 1020
+    }
   },
   "4": {
+    "HeroID": 1030,
+    "SeasonIDX": 1,
     "SeasonAbilityID": 4,
     "TalentGroupIDS": {
       "1": 20101,
@@ -90,11 +92,11 @@
       "10": 20110,
       "11": 20111,
       "12": 20115
-    },
-    "SeasonIDX": 1,
-    "HeroID": 1030
+    }
   },
   "5": {
+    "HeroID": 1040,
+    "SeasonIDX": 1,
     "SeasonAbilityID": 5,
     "TalentGroupIDS": {
       "1": 20101,
@@ -109,11 +111,11 @@
       "10": 20110,
       "11": 20111,
       "12": 20115
-    },
-    "SeasonIDX": 1,
-    "HeroID": 1040
+    }
   },
   "6": {
+    "HeroID": 1060,
+    "SeasonIDX": 1,
     "SeasonAbilityID": 6,
     "TalentGroupIDS": {
       "1": 20101,
@@ -128,11 +130,11 @@
       "10": 20110,
       "11": 20111,
       "12": 20115
-    },
-    "SeasonIDX": 1,
-    "HeroID": 1060
+    }
   },
   "8": {
+    "HeroID": 1090,
+    "SeasonIDX": 1,
     "SeasonAbilityID": 8,
     "TalentGroupIDS": {
       "1": 20101,
@@ -147,8 +149,6 @@
       "10": 20110,
       "11": 20111,
       "12": 20115
-    },
-    "SeasonIDX": 1,
-    "HeroID": 1090
+    }
   }
 }

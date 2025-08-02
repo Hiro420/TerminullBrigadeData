@@ -6,17 +6,22 @@ local EscName = "PauseGame"
 local RecruitMainView = Class(ViewBase)
 local NotFilterText = NSLOCTEXT("WBP_RecruitWindow_C", "NotFilterText", "\229\133\168\233\131\168")
 local DifficultyText = NSLOCTEXT("WBP_RecruitWindow_C", "DifficultyText", "\233\154\190\229\186\166")
+
 function RecruitMainView:BindClickHandler()
 end
+
 function RecruitMainView:UnBindClickHandler()
 end
+
 function RecruitMainView:OnInit()
   self.DataBindTable = {}
   self.viewModel = UIModelMgr:Get("RecruitMainViewModel")
   self:BindClickHandler()
 end
+
 function RecruitMainView:OnDestroy()
 end
+
 function RecruitMainView:OnShow(...)
   self.Super:AttachViewModel(self.viewModel, self.DataBindTable, self)
   self.IsFilter = true
@@ -45,6 +50,7 @@ function RecruitMainView:OnShow(...)
   end
   LogicRole.ShowOrHideRoleMainHero(false)
 end
+
 function RecruitMainView:ClearTimerList()
   if self.TimerList then
     for _, timer in pairs(self.TimerList) do
@@ -55,6 +61,7 @@ function RecruitMainView:ClearTimerList()
   end
   self.TimerList = {}
 end
+
 function RecruitMainView:OnPreHide()
   self.Super:DetachViewModel(self.viewModel, self.DataBindTable, self)
   self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Remove(self, self.EscView)
@@ -66,10 +73,12 @@ function RecruitMainView:OnPreHide()
   self:StopAllAnimations()
   self:ClearTimerList()
 end
+
 function RecruitMainView:OnHide()
   self:StopAllAnimations()
   StopListeningForInputAction(self, EscName, UE.EInputEvent.IE_Pressed)
 end
+
 function RecruitMainView:UpdateRecruitList(TeamList)
   local Interval = 0
   if self.IsInit then
@@ -104,9 +113,11 @@ function RecruitMainView:UpdateRecruitList(TeamList)
   UpdateVisibility(self.CanvasPanel_Empty, 0 == #TeamList)
   HideOtherItem(self.ScrollBox_TeamList, #TeamList + 1)
 end
+
 function RecruitMainView:TestInitTeamItemInfo()
   self.WBP_SquadItem:InitTeamItemInfo()
 end
+
 function RecruitMainView:EscView()
   if self.IsOpenWindow then
     UpdateVisibility(self.WBP_RecruitWindow, false)
@@ -120,11 +131,13 @@ function RecruitMainView:EscView()
   self.IsClose = true
   self:PlayAnimation(self.Ani_out)
 end
+
 function RecruitMainView:OnAnimationFinished(Animation)
   if self.Ani_out == Animation and self.IsClose then
     UIMgr:Hide(ViewID.UI_RecruitMainView, true)
   end
 end
+
 function RecruitMainView:OnClicked_BtnChangeList()
   local AutoJoin = self.IsFilter and self.viewModel.FilterAutoJoin or false
   local Floor = self.IsFilter and self.viewModel.FilterFloor or 0
@@ -133,10 +146,12 @@ function RecruitMainView:OnClicked_BtnChangeList()
   self.viewModel:SendGetRecruitTeamList(AutoJoin, Floor, GameMode, World)
   self:PlayAnimation(self.Ani_refresh, 0)
 end
+
 function RecruitMainView:OnClicked_BtnFilter()
   self.WBP_RecruitWindow:ShowWindow(false, self)
   self.IsOpenWindow = true
 end
+
 function RecruitMainView:OnClicked_BtnRecruit()
   if not self.CheckIsCaptain() then
     return
@@ -144,11 +159,13 @@ function RecruitMainView:OnClicked_BtnRecruit()
   self.IsOpenWindow = true
   self.WBP_RecruitWindow:ShowWindow(true, self)
 end
+
 function RecruitMainView:OnClicked_Btnstop()
   if DataMgr.IsInTeam() then
     RecruitHandler:SendStopRecruit(DataMgr.MyTeamInfo.teamid)
   end
 end
+
 function RecruitMainView:OnClicked_BtnQuickJoin()
   if not self.CheckIsCaptain() then
     return
@@ -167,9 +184,11 @@ function RecruitMainView:OnClicked_BtnQuickJoin()
     ShowWaveWindow(1189)
   end
 end
+
 function RecruitMainView:OnClicked_BtnCancelFilter()
   self:UpdateFilterState(false)
 end
+
 function RecruitMainView:SetFilterParams(AutoJoin, Floor, GameMode, WorldID)
   self.viewModel.FilterAutoJoin = AutoJoin
   self.viewModel.FilterFloor = Floor
@@ -177,6 +196,7 @@ function RecruitMainView:SetFilterParams(AutoJoin, Floor, GameMode, WorldID)
   self.viewModel.FilterWorld = WorldID
   self.viewModel:RefreshItemList()
 end
+
 function RecruitMainView:CheckIsCaptain()
   if not LogicTeam:IsCaptain() then
     ShowWaveWindow(15007)
@@ -185,6 +205,7 @@ function RecruitMainView:CheckIsCaptain()
     return true
   end
 end
+
 function RecruitMainView:SendGetRolesGameInfo()
   local roleIds = {}
   if #DataMgr.MyTeamInfo == nil or 0 == #DataMgr.MyTeamInfo.players then
@@ -196,15 +217,17 @@ function RecruitMainView:SendGetRolesGameInfo()
   end
   self.viewModel:SendRolesGameFloorData(roleIds)
 end
+
 function RecruitMainView:UpdateFilterInfo(ModeID, WorldID, Floor)
   local Result, RowInfo = GetRowData(DT.DT_GameMode, tostring(WorldID))
   if Result then
     local modeTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGameMode)
-    local InfoText = UE.FTextFormat(self.RecruitInfoText, modeTable[ModeID].Name, RowInfo.Name, DifficultyText, Floor)
+    local InfoText = UE.FTextFormat(self.RecruitInfoText, modeTable[ModeID].Name, RowInfo.Name, self.DifficultyText, Floor)
     self.Txt_Difficulty:SetText(InfoText)
     self:UpdateFilterState(true)
   end
 end
+
 function RecruitMainView:UpdateFilterState(IsFilter)
   self.IsFilter = IsFilter
   UpdateVisibility(self.Txt_Difficulty, IsFilter)
@@ -213,6 +236,7 @@ function RecruitMainView:UpdateFilterState(IsFilter)
     self.Txt_Difficulty:SetText(NotFilterText)
   end
 end
+
 function RecruitMainView:ShowPlayerInfoTips(bIsShow, PlayerInfo, TargetItem)
   if bIsShow then
     self.WBP_SocialPlayerInfoTips:InitSocailPlayerInfoTips(PlayerInfo)
@@ -225,4 +249,5 @@ function RecruitMainView:ShowPlayerInfoTips(bIsShow, PlayerInfo, TargetItem)
     self.WBP_SocialPlayerInfoTips:Hide()
   end
 end
+
 return RecruitMainView

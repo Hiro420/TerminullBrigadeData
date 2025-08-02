@@ -1,9 +1,12 @@
 local WBP_RGPickupItemWaveWindow_C = UnLua.Class()
+
 function WBP_RGPickupItemWaveWindow_C:Construct()
 end
+
 function WBP_RGPickupItemWaveWindow_C:PlayFadeInWidgetAnim()
   self:PlayAnimationForward(self.StartAnim)
 end
+
 function WBP_RGPickupItemWaveWindow_C:Show(ItemData, Count)
   self.Index = 1
   if not self.Count or -1 == self.Count then
@@ -37,14 +40,17 @@ function WBP_RGPickupItemWaveWindow_C:Show(ItemData, Count)
     WBP_RGPickupItemWaveWindow_C.BindOnFadeOutAnimFinished
   })
 end
+
 function WBP_RGPickupItemWaveWindow_C:ChangeDisplayInfo(InName, InIcon)
   self.Txt_Name:SetText(InName)
   SetImageBrushBySoftObject(self.Img_Icon, InIcon, self.IconSize)
   SetImageBrushBySoftObject(self.Img_Icon_miaobian, InIcon, self.IconSize)
 end
+
 function WBP_RGPickupItemWaveWindow_C:PlayRemoveWidgetAnim()
   self:PlayAnimation(self.FadeOutAnim, 0.0, 1, UE.EUMGSequencePlayMode.Forward, 1.0)
 end
+
 function WBP_RGPickupItemWaveWindow_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.Index = 1
@@ -58,16 +64,20 @@ function WBP_RGPickupItemWaveWindow_C:Hide()
   })
   self:StopAnimation(self.FadeOutAnim)
 end
+
 function WBP_RGPickupItemWaveWindow_C:BindOnFadeOutAnimFinished()
   self:Hide()
   EventSystem.Invoke(EventDef.PickTipList.HidePickTipItem, self)
 end
+
 function WBP_RGPickupItemWaveWindow_C:GetESkillCount()
   return self:GetAttributeValue(self.ESkillCount)
 end
+
 function WBP_RGPickupItemWaveWindow_C:GetESkillMaxCount()
   return self:GetAttributeValue(self.ESkillMaxCount)
 end
+
 function WBP_RGPickupItemWaveWindow_C:GetAttributeValue(Attribute)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -80,4 +90,5 @@ function WBP_RGPickupItemWaveWindow_C:GetAttributeValue(Attribute)
   local AttributeValue = UE.UAbilitySystemBlueprintLibrary.GetFloatAttributeFromAbilitySystemComponent(ASC, Attribute, nil)
   return AttributeValue
 end
+
 return WBP_RGPickupItemWaveWindow_C

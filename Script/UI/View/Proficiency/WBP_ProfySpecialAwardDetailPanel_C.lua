@@ -13,6 +13,7 @@ local GetAppearanceActor = function(self)
   self.AppearanceActor = LogicLobby.GetAppearanceActor(self)
   return self.AppearanceActor
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:BindClickHandler()
   self.WBP_InteractTipWidgetChangeWeaponDisplay.OnMainButtonClicked:Add(self, self.ListenForChangeDisplayModel)
   self.WBP_InteractTipWidgetChangeDisplay.OnMainButtonClicked:Add(self, self.ListenForChangeDisplayModel)
@@ -20,6 +21,7 @@ function WBP_ProfySpecialAwardDetailPanel_C:BindClickHandler()
   self.WBP_InteractTipWidgetSetting.OnMainButtonClicked:Add(self, self.OnSettingKeyPressed)
   self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Add(self, self.ListenForEscKeyPressed)
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:UnBindClickHandler()
   self.WBP_InteractTipWidgetChangeWeaponDisplay.OnMainButtonClicked:Remove(self, self.ListenForChangeDisplayModel)
   self.WBP_InteractTipWidgetChangeDisplay.OnMainButtonClicked:Remove(self, self.ListenForChangeDisplayModel)
@@ -27,13 +29,16 @@ function WBP_ProfySpecialAwardDetailPanel_C:UnBindClickHandler()
   self.WBP_InteractTipWidgetSetting.OnMainButtonClicked:Remove(self, self.OnSettingKeyPressed)
   self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Remove(self, self.ListenForEscKeyPressed)
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -54,10 +59,12 @@ function WBP_ProfySpecialAwardDetailPanel_C:OnShow(...)
   self:RefreshDescPanel()
   EventSystem.AddListenerNew(EventDef.Weapon.WeaponSkillTip, self, self.BindOnShowSkillTips)
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:OnRollback(...)
   ChangeLobbyCamera(self, "Proficiency")
   self.AppearanceActor:UpdateActived(true)
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:InitModel()
   local CurEquipHeroSkinResId = SkinData.GetEquipedSkinIdByHeroId(self.CurHeroId)
   local CurBGSkinId = CurEquipHeroSkinResId
@@ -86,6 +93,7 @@ function WBP_ProfySpecialAwardDetailPanel_C:InitModel()
   LogicRole.ShowOrLoadLevel(CurBGSkinId)
   self.AppearanceActor:UpdateActived(true)
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:RefreshDescPanel()
   UpdateVisibility(self.SkinDescPanel, false)
   UpdateVisibility(self.WeaponDescPanel, false)
@@ -112,6 +120,7 @@ function WBP_ProfySpecialAwardDetailPanel_C:RefreshDescPanel()
     end
   end
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:ListenInputEvent()
   if not IsListeningForInputAction(self, TabKeyEvent) then
     ListenForInputAction(TabKeyEvent, UE.EInputEvent.IE_Pressed, true, {
@@ -144,6 +153,7 @@ function WBP_ProfySpecialAwardDetailPanel_C:ListenInputEvent()
     })
   end
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:ListenForChangeDisplayModel(bNotShowGlitchMatEffect)
   local bShowGlitchMatEffectTemp = not bNotShowGlitchMatEffect
   if self.Type ~= TableEnums.ENUMResourceType.WeaponSkin and self.Type ~= TableEnums.ENUMResourceType.Weapon then
@@ -159,6 +169,7 @@ function WBP_ProfySpecialAwardDetailPanel_C:ListenForChangeDisplayModel(bNotShow
   UpdateVisibility(self.WBP_InteractTipWidgetChangeDisplay, self.CurDisplayModel == EWeaponSkinDisplayModel.WeaponModel)
   UpdateVisibility(self.WBP_InteractTipWidgetChangeWeaponDisplay, self.CurDisplayModel == EWeaponSkinDisplayModel.HeroModel)
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:OnShowRole(bShowGlitchMatEffectTemp)
   local AppearanceActorTemp = GetAppearanceActor(self)
   if UE.RGUtil.IsUObjectValid(AppearanceActorTemp) then
@@ -177,6 +188,7 @@ function WBP_ProfySpecialAwardDetailPanel_C:OnShowRole(bShowGlitchMatEffectTemp)
     AppearanceActorTemp:InitAppearanceActor(self.CurHeroId, SkinData.GetEquipedSkinIdByHeroId(self.CurHeroId), WeaponSkinId, bShowGlitchMatEffectTemp)
   end
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:OnShowWeapon(bShowGlitchMatEffectTemp)
   local AppearanceActorTemp = GetAppearanceActor(self)
   if UE.RGUtil.IsUObjectValid(AppearanceActorTemp) then
@@ -197,6 +209,7 @@ function WBP_ProfySpecialAwardDetailPanel_C:OnShowWeapon(bShowGlitchMatEffectTem
     AppearanceActorTemp:InitWeaponMesh(SkinId, WeaponId, bShowGlitchMatEffectTemp)
   end
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:BindOnShowSkillTips(IsShow, WeaponSkillData, KeyName)
   if IsShow then
     self.NormalSkillTip:RefreshInfoByWeaponSkillData(WeaponSkillData, KeyName)
@@ -205,6 +218,7 @@ function WBP_ProfySpecialAwardDetailPanel_C:BindOnShowSkillTips(IsShow, WeaponSk
     self.NormalSkillTip:Hide()
   end
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:ListenForUpdateViewShowInputAction()
   if self.bIsViewShow then
     self.bIsViewShow = false
@@ -222,25 +236,30 @@ function WBP_ProfySpecialAwardDetailPanel_C:ListenForUpdateViewShowInputAction()
     end
   end
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:ListenForPreCameraData()
   local AppearanceActorTemp = GetAppearanceActor(self)
   if UE.RGUtil.IsUObjectValid(AppearanceActorTemp) then
     AppearanceActorTemp:MovePreCameraTrans()
   end
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:ListenForNextCameraData()
   local AppearanceActorTemp = GetAppearanceActor(self)
   if UE.RGUtil.IsUObjectValid(AppearanceActorTemp) then
     AppearanceActorTemp:MoveNextCameraTrans()
   end
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:ListenForEscKeyPressed()
   UIMgr:Hide(ViewID.UI_ProficiencySpecialAwardDetailPanel, true)
   EventSystem.Invoke(EventDef.BeginnerGuide.OnProfySpecialAwardDetailPanelHide)
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:OnSettingKeyPressed(...)
   LogicGameSetting.ShowGameSettingPanel()
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:OnMouseButtonDown(myMouseButtonDown, mouseEvent)
   local AppearanceActorTemp = GetAppearanceActor(self)
   if UE.RGUtil.IsUObjectValid(AppearanceActorTemp) then
@@ -248,6 +267,7 @@ function WBP_ProfySpecialAwardDetailPanel_C:OnMouseButtonDown(myMouseButtonDown,
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:OnMouseButtonUp(myMouseButtonDown, mouseEvent)
   local AppearanceActorTemp = GetAppearanceActor(self)
   if UE.RGUtil.IsUObjectValid(AppearanceActorTemp) then
@@ -255,6 +275,7 @@ function WBP_ProfySpecialAwardDetailPanel_C:OnMouseButtonUp(myMouseButtonDown, m
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:OnPreHide(...)
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -269,6 +290,8 @@ function WBP_ProfySpecialAwardDetailPanel_C:OnPreHide(...)
   StopListeningForInputAction(self, NextCameraData, UE.EInputEvent.IE_Pressed)
   EventSystem.RemoveListenerNew(EventDef.Weapon.WeaponSkillTip, self, self.BindOnShowSkillTips)
 end
+
 function WBP_ProfySpecialAwardDetailPanel_C:OnHide()
 end
+
 return WBP_ProfySpecialAwardDetailPanel_C

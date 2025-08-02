@@ -1,5 +1,6 @@
 local RedDotData = require("Modules.RedDot.RedDotData")
 local MallExteriorTypeView = UnLua.Class()
+
 function MallExteriorTypeView:OnListItemObjectSet(ListItemObj)
   if ListItemObj then
     self.SecondShelfId = ListItemObj.SecondShelfId
@@ -16,7 +17,9 @@ function MallExteriorTypeView:OnListItemObjectSet(ListItemObj)
   self.WBP_RedDotView:ChangeRedDotIdByTag(self.ShelfId .. "_" .. self.SecondShelfId)
   UpdateVisibility(self.WBP_SkinToggleHero.CheckBox, true, false)
 end
+
 function MallExteriorTypeView:BP_OnItemSelectionChanged(bSelected)
   self.WBP_SkinToggleHero:OnSelect(bSelected)
 end
+
 return MallExteriorTypeView

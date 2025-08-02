@@ -1,19 +1,24 @@
 local AchievementAwardList = UnLua.Class()
 local MaxShowNum = 11
+
 function AchievementAwardList:BindUIInput()
   self.WBP_InteractTipWidgetReward:BindInteractAndClickEvent(self, self.OnGetAllAwardClick)
 end
+
 function AchievementAwardList:UnBindUIInput()
   self.WBP_InteractTipWidgetReward:UnBindInteractAndClickEvent(self, self.OnGetAllAwardClick)
 end
+
 function AchievementAwardList:Construct()
   self.ButtonWithSoundLeft.OnClicked:Add(self, self.OnLeftClick)
   self.ButtonWithSoundRight.OnClicked:Add(self, self.OnRightClick)
   self.ButtonWithSoundGetAllAward.OnClicked:Add(self, self.OnGetAllAwardClick)
   self.WBP_InteractTipWidget.Btn_Main.OnClicked:Add(self, self.OnExitClick)
 end
+
 function AchievementAwardList:Destruct()
 end
+
 function AchievementAwardList:InitAchievementAwardList(TbAchievementPointSort, taskId, ParentView)
   if not TbAchievementPointSort then
     return
@@ -65,9 +70,11 @@ function AchievementAwardList:InitAchievementAwardList(TbAchievementPointSort, t
     self.RGStateControllerGetAllEnable:ChangeStatus(EEnable.Disable)
   end
 end
+
 function AchievementAwardList:InitPointNum(PointNum)
   self.RGTextPointNum:SetText(PointNum)
 end
+
 function AchievementAwardList:InitAwardListByPageIdx()
   local tbTask = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskData)
   local selectItem
@@ -103,6 +110,7 @@ function AchievementAwardList:InitAwardListByPageIdx()
     self.URGImageProgress:SetClippingValue(0)
   end
 end
+
 function AchievementAwardList:OnLeftClick()
   if self.CurSelectPageIdx <= 1 then
     return
@@ -110,6 +118,7 @@ function AchievementAwardList:OnLeftClick()
   self.CurSelectPageIdx = self.CurSelectPageIdx - 1
   self:InitAwardListByPageIdx()
 end
+
 function AchievementAwardList:OnRightClick()
   if self.CurSelectPageIdx >= self.PageNum then
     return
@@ -117,6 +126,7 @@ function AchievementAwardList:OnRightClick()
   self.CurSelectPageIdx = self.CurSelectPageIdx + 1
   self:InitAwardListByPageIdx()
 end
+
 function AchievementAwardList:OnGetAllAwardClick()
   if not self.ParentView then
     return
@@ -133,6 +143,7 @@ function AchievementAwardList:OnGetAllAwardClick()
   end
   self.ParentView:ReceivePointAwards(taskIds)
 end
+
 function AchievementAwardList:CheckHaveAwardActive()
   local taskIds = {}
   for i, v in ipairs(self.TbAchievementPointSort) do
@@ -143,9 +154,11 @@ function AchievementAwardList:CheckHaveAwardActive()
   end
   return false
 end
+
 function AchievementAwardList:OnExitClick()
   UpdateVisibility(self, false)
 end
+
 function AchievementAwardList:ShowAwardTips(resId, bIsShow, AwardItem)
   if bIsShow then
     local tbGeneral = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
@@ -178,4 +191,5 @@ function AchievementAwardList:ShowAwardTips(resId, bIsShow, AwardItem)
     self.WBP_CommonItemDetail:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 return AchievementAwardList

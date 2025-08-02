@@ -1,4 +1,5 @@
 local WBP_AccessoryTipIcon_C = UnLua.Class()
+
 function WBP_AccessoryTipIcon_C:InitAccessoryInfo(ArticleId)
   self.ArticleId = ArticleId
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -11,4 +12,5 @@ function WBP_AccessoryTipIcon_C:InitAccessoryInfo(ArticleId)
     self:LoadRarityImage(itemRarityData.SpriteIcon)
   end
 end
+
 return WBP_AccessoryTipIcon_C

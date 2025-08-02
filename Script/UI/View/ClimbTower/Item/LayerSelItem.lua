@@ -1,11 +1,13 @@
 local ClimbTowerData = require("UI.View.ClimbTower.ClimbTowerData")
 local LayerSelItem = UnLua.Class()
+
 function LayerSelItem:Construct()
   self.MainButton.OnClicked:Add(self, self.SelLayer)
   self.MainButton.OnHovered:Add(self, self.OnHovered)
   self.MainButton.OnUnhovered:Add(self, self.OnUnhovered)
   EventSystem.AddListener(self, EventDef.ClimbTowerView.OnLayerChange, self.OnLayerChange)
 end
+
 function LayerSelItem:OnHovered()
   UpdateVisibility(self.CanvasPanel_Hover, true)
   if self.SelIndex == self.Index then
@@ -14,6 +16,7 @@ function LayerSelItem:OnHovered()
     self:PlayAnimation(self.Ani_hover_in)
   end
 end
+
 function LayerSelItem:OnUnhovered()
   UpdateVisibility(self.CanvasPanel_Hover, false)
   if self.SelIndex == self.Index then
@@ -22,6 +25,7 @@ function LayerSelItem:OnUnhovered()
     self:PlayAnimation(self.Ani_hover_out)
   end
 end
+
 function LayerSelItem:Init(Index)
   self.RGStateController_Main:ChangeStatus("Normal", true)
   self.RGStateController_Lock:ChangeStatus("UnLock", true)
@@ -36,6 +40,7 @@ function LayerSelItem:Init(Index)
     self.RGStateController_Lock:ChangeStatus("Lock", true)
   end
 end
+
 function LayerSelItem:SelLayer()
   if DataMgr.IsInTeam() and LogicTeam.IsCaptain() then
     local TeamInfo = DataMgr.GetTeamInfo()
@@ -59,6 +64,7 @@ function LayerSelItem:SelLayer()
   self.SelIndex = self.Index
   EventSystem.Invoke(EventDef.ClimbTowerView.OnLayerChange, self.Index)
 end
+
 function LayerSelItem:OnLayerChange(Index)
   if Index == self.Index then
     self.RGStateController_Main:ChangeStatus("Select", true)
@@ -66,4 +72,5 @@ function LayerSelItem:OnLayerChange(Index)
   end
   self.SelIndex = Index
 end
+
 return LayerSelItem

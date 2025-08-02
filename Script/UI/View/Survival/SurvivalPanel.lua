@@ -1,8 +1,10 @@
 local ViewBase = require("Framework.UIMgr.ViewBase")
 local SurvivalPanel = UnLua.Class()
+
 function SurvivalPanel:Construct()
   self.CurSelectIndex = 0
 end
+
 function SurvivalPanel:BindClickHandler()
   self.Btn_Tips.OnHovered:Add(self, self.BindOnTipsHovered)
   self.Btn_Tips.OnUnhovered:Add(self, self.BindOnTipsUnhovered)
@@ -11,6 +13,7 @@ function SurvivalPanel:BindClickHandler()
   EventSystem.AddListener(self, EventDef.Lobby.UpdateMyTeamInfo, self.BindOnUpdateMyTeamInfo)
   EventSystem.AddListener(self, EventDef.Lobby.UpdateRoomMembersInfo, self.InitTeamMember)
 end
+
 function SurvivalPanel:UnBindClickHandler()
   self.Btn_Tips.OnHovered:Remove(self, self.BindOnTipsHovered)
   self.Btn_Tips.OnUnhovered:Remove(self, self.BindOnTipsUnhovered)
@@ -19,6 +22,7 @@ function SurvivalPanel:UnBindClickHandler()
   EventSystem.RemoveListener(self, EventDef.Lobby.UpdateMyTeamInfo, self.BindOnUpdateMyTeamInfo)
   EventSystem.RemoveListener(self, EventDef.Lobby.UpdateRoomMembersInfo, self.InitTeamMember)
 end
+
 function SurvivalPanel:OnShow()
   self:BindClickHandler()
   self.CurSelectMode = TableEnums.ENUMGameMode.SURVIVAL
@@ -37,10 +41,13 @@ function SurvivalPanel:OnShow()
       Item:InitInfo(RowInfo, self.CurSelectMode, self, index)
       if 0 == self.CurSelectIndex then
         if 1 == Index then
-          Item:OnBtnSelectClicked()
+          Item:UpdateViewInfo()
         end
       elseif Index == self.CurSelectIndex then
-        Item:OnBtnSelectClicked()
+        Item:UpdateViewInfo()
+      end
+      if not LogicTeam.IsCaptain() and Item.WorldId == LogicTeam.GetWorldId() then
+        Item:UpdateViewInfo()
       end
       Index = Index + 1
     end
@@ -51,12 +58,14 @@ function SurvivalPanel:OnShow()
   UpdateVisibility(self.Btn_Select, LogicTeam.IsCaptain())
   self:SetEnhancedInputActionBlocking(true)
 end
+
 function SurvivalPanel:OnHide()
   self.WBP_SelfSurvivalTeamMember:UnBindHandle()
   self:UnBindClickHandler()
   self:SetEnhancedInputActionBlocking(false)
   UpdateVisibility(self.WBP_RuleDescription, false)
 end
+
 function SurvivalPanel:InitTeamMember()
   local TeamMember = DataMgr.GetTeamMembersInfo()
   local BasicInfo = DataMgr.GetBasicInfo()
@@ -80,7 +89,8 @@ function SurvivalPanel:InitTeamMember()
     end
   end
 end
-function SurvivalPanel:SelectItemChange(CurLevelId, TickID)
+
+function SurvivalPanel:SelectItemChange(CurLevelId, TickID, Index)
   for i, v in ipairs(self.SurvivalItems) do
     v:SetSelect(v.LevelId == CurLevelId)
     if v.LevelId == CurLevelId then
@@ -88,6 +98,7 @@ function SurvivalPanel:SelectItemChange(CurLevelId, TickID)
     end
   end
   self.TickID = TickID
+  self.CurSelectIndex = Index
   self.Btn_Select:SetStyleByBottomStyleRowName(self.TargetItem:IsUnlock() and "ViralFrenzy_Btn_Confirm" or "ViralFrenzy_Btn_Disable")
   local ModeId = LogicTeam.GetModeId()
   if ModeId == self.CurSelectMode then
@@ -96,10 +107,10 @@ function SurvivalPanel:SelectItemChange(CurLevelId, TickID)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGameModeTicket, TickID)
   if Result then
     local TeamMemberCount = DataMgr.GetTeamMemberCount()
-    self.MaxNum = RowInfo.costResources[1].value * TeamMemberCount
-    self.TXT_NeedNum:SetText(self.MaxNum)
+    self.TXT_NeedNum:SetText(RowInfo.costResources[1].value * TeamMemberCount)
   end
 end
+
 function SurvivalPanel:IsUnlock()
   if self.LevelInfo.initUnlock then
     return true
@@ -116,6 +127,7 @@ function SurvivalPanel:IsUnlock()
     end
   end
 end
+
 function SurvivalPanel:BindOnUpdateMyTeamInfo()
   self.TXT_CurNum:SetText(LogicTeam.GetTeamTicketNum())
   local ModeId = LogicTeam.GetModeId()
@@ -136,12 +148,15 @@ function SurvivalPanel:BindOnUpdateMyTeamInfo()
   end
   self:InitTeamMember()
 end
+
 function SurvivalPanel:BindOnTipsHovered()
   UpdateVisibility(self.WBP_RuleDescription, true)
 end
+
 function SurvivalPanel:BindOnTipsUnhovered()
   UpdateVisibility(self.WBP_RuleDescription, false)
 end
+
 function SurvivalPanel:BindOnSelectClicked()
   if not self.TargetItem.IsSelfUnlock then
     ShowWaveWindow(1461, {
@@ -153,8 +168,10 @@ function SurvivalPanel:BindOnSelectClicked()
   UIMgr:Hide(ViewID.UI_MainModeSelection, true)
   EventSystem.Invoke(EventDef.Lobby.OnLobbyLabelSelected, "LobbyLabel.LobbyMain")
 end
+
 function SurvivalPanel:BindOnEscKeyPressed()
   UIMgr:Hide(ViewID.UI_SurvivalPanel, true)
   LogicTeam.RequestSetTeamDataToServer(self.OldTeamSet[1], self.OldTeamSet[2], self.OldTeamSet[3])
 end
+
 return SurvivalPanel

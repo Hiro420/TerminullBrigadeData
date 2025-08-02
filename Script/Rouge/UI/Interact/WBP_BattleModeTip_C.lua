@@ -1,4 +1,5 @@
 local WBP_BattleModeTip_C = UnLua.Class()
+
 function WBP_BattleModeTip_C:InitInfo(Owner)
   self.Owner = Owner
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -12,9 +13,11 @@ function WBP_BattleModeTip_C:InitInfo(Owner)
   self.Txt_Name:SetText(RowInfo.Name)
   self.Txt_Desc:SetText(self.Owner:GetBattleDesc())
 end
+
 function WBP_BattleModeTip_C:SetIsInteract(IsInteract)
   self.IsInteract = IsInteract
 end
+
 function WBP_BattleModeTip_C:ChangeStatusWidget(Type)
   local LastType = self.Type
   self.Type = Type
@@ -40,6 +43,7 @@ function WBP_BattleModeTip_C:ChangeStatusWidget(Type)
   end
   self.StatusWidgetSwitcher:SetActiveWidget(TargetWidget)
 end
+
 function WBP_BattleModeTip_C:RefreshFinishRewardList()
   local AllChildren = self.FinishRewardList:GetAllChildren()
   for key, SingleItem in pairs(AllChildren) do
@@ -98,6 +102,8 @@ function WBP_BattleModeTip_C:RefreshFinishRewardList()
     SpecialWidget:Show(GroupItem)
   end
 end
+
 function WBP_BattleModeTip_C:Destruct()
 end
+
 return WBP_BattleModeTip_C

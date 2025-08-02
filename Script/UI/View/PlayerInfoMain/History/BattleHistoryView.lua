@@ -9,6 +9,7 @@ local DetailsCommonlyUsedHeroDesc = NSLOCTEXT("BattleHistoryView", "CommonlyUsed
 local AllHeroInfoTxt = NSLOCTEXT("BattleHistoryView", "AllHeroInfoTxt", "\229\133\168\233\131\168")
 local BattleHistoryView = Class(ViewBase)
 local TableIDList = {}
+
 function BattleHistoryView:OnBindUIInput()
   if not IsListeningForInputAction(self, EscName) then
     ListenForInputAction(EscName, UE.EInputEvent.IE_Pressed, true, {
@@ -19,27 +20,33 @@ function BattleHistoryView:OnBindUIInput()
   self.WBP_InteractTipWidgetMenuPrev:BindInteractAndClickEvent(self, self.OnSelectPrevHero)
   self.WBP_InteractTipWidgetMenuNext:BindInteractAndClickEvent(self, self.OnSelectNextHero)
 end
+
 function BattleHistoryView:OnUnBindUIInput()
   StopListeningForInputAction(self, EscName, UE.EInputEvent.IE_Pressed)
   self.WBP_InteractTipWidgetMenuPrev:UnBindInteractAndClickEvent(self, self.OnSelectPrevHero)
   self.WBP_InteractTipWidgetMenuNext:UnBindInteractAndClickEvent(self, self.OnSelectNextHero)
 end
+
 function BattleHistoryView:BindClickHandler()
   self.RGToggleGroupHistoryRole.OnCheckStateChanged:Add(self, self.OnCheckStateChanged)
   self.WBP_InteractTipWidgetEsc.Btn_Main.OnClicked:Add(self, self.ListenForEscInputAction)
 end
+
 function BattleHistoryView:UnBindClickHandler()
   self.RGToggleGroupHistoryRole.OnCheckStateChanged:Remove(self, self.OnCheckStateChanged)
   self.WBP_InteractTipWidgetEsc.Btn_Main.OnClicked:Remove(self, self.ListenForEscInputAction)
 end
+
 function BattleHistoryView:OnInit()
   self.DataBindTable = {}
   self.viewModel = UIModelMgr:Get("BattleHistoryViewModel")
   self:BindClickHandler()
 end
+
 function BattleHistoryView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function BattleHistoryView:OnShow(...)
   self.Super:AttachViewModel(self.viewModel, self.DataBindTable, self)
   self.AllHeroSelectId = self.viewModel:GetAllHeroSelectId()
@@ -58,8 +65,10 @@ function BattleHistoryView:OnShow(...)
   LogicRole.ShowOrHideRoleMainHero(false)
   self:UpdateRoleList()
 end
+
 function BattleHistoryView:OnShowLink(LinkParams)
 end
+
 function BattleHistoryView:SetBattleHistoryViewEmpty()
   HideOtherItem(self.ScrollBoxHistoryList, 1)
   UpdateVisibility(self.CanvasPanelBasic, false)
@@ -68,10 +77,12 @@ function BattleHistoryView:SetBattleHistoryViewEmpty()
   UpdateVisibility(self.RGTextHeroName_1, false)
   UpdateVisibility(self.CanvasPanelHistory, false)
 end
+
 function BattleHistoryView:OnRollback()
   LogicRole.ShowOrLoadLevel(-1)
   LogicRole.ShowOrHideRoleMainHero(false)
 end
+
 function BattleHistoryView:OnPreHide()
   self.HistoryItemTb = {}
   self.HistoryIdx = 1
@@ -80,12 +91,15 @@ function BattleHistoryView:OnPreHide()
   LogicRole.ShowOrHideRoleMainHero(false)
   self.Super:DetachViewModel(self.viewModel, self.DataBindTable, self)
 end
+
 function BattleHistoryView:OnHide()
 end
+
 function BattleHistoryView:ListenForEscInputAction()
   local playerInfoMainViewModel = UIModelMgr:Get("PlayerInfoMainViewModel")
   playerInfoMainViewModel:HidePlayerMainView()
 end
+
 function BattleHistoryView:OnSelectPrevHero()
   local CurSelectBattleHistoryHeroId = self.viewModel:GetCurSelectBattleHistoryHeroId()
   local CurrentSelectIndex
@@ -101,6 +115,7 @@ function BattleHistoryView:OnSelectPrevHero()
   end
   self.RGToggleGroupHistoryRole:SelectId(TableIDList[CurrentSelectIndex])
 end
+
 function BattleHistoryView:OnSelectNextHero()
   local CurSelectBattleHistoryHeroId = self.viewModel:GetCurSelectBattleHistoryHeroId()
   local CurrentSelectIndex
@@ -116,6 +131,7 @@ function BattleHistoryView:OnSelectNextHero()
   end
   self.RGToggleGroupHistoryRole:SelectId(TableIDList[CurrentSelectIndex])
 end
+
 function BattleHistoryView:LuaTick(InDeltaTime)
   if table.IsEmpty(self.HistoryItemTb) then
     return
@@ -142,6 +158,7 @@ function BattleHistoryView:LuaTick(InDeltaTime)
     self.PreTimeStamp = self.PreTimeStamp + InDeltaTime
   end
 end
+
 function BattleHistoryView:UpdateRoleList()
   TableIDList = {}
   local allCharacterList = LogicRole.GetAllCanSelectCharacterList()
@@ -164,9 +181,11 @@ function BattleHistoryView:UpdateRoleList()
   HideOtherItem(self.HorizontalBoxRoleList, #allCharacterList + 1)
   self.RGToggleGroupHistoryRole:SelectId(curSelectBattleHistoryHeroId)
 end
+
 function BattleHistoryView:OnGetBattleHistory(HistoryDatas, HeroId)
   self:OnUpdateBattleHistory(HistoryDatas, HeroId)
 end
+
 function BattleHistoryView:OnUpdateBattleHistory(HistoryDatas, HeroId)
   local playerInfoMainVM = UIModelMgr:Get("PlayerInfoMainViewModel")
   if HeroId ~= self.viewModel:GetAllHeroSelectId() then
@@ -231,6 +250,7 @@ function BattleHistoryView:OnUpdateBattleHistory(HistoryDatas, HeroId)
   end
   UpdateVisibility(self.CanvasPanelHistory, true)
 end
+
 function BattleHistoryView:UpdateGenericModifyTipsFunc(bIsShow, Data, ModifyChooseTypeParam, Slot, HoverItem)
   if bIsShow then
     ShowCommonTips(nil, HoverItem, self.WBP_GenericModifyBagTips)
@@ -239,6 +259,7 @@ function BattleHistoryView:UpdateGenericModifyTipsFunc(bIsShow, Data, ModifyChoo
     UpdateVisibility(self.WBP_GenericModifyBagTips, false, true, true)
   end
 end
+
 function BattleHistoryView:OnUpdateStatistics(HeroStatistic, HeroId)
   UpdateVisibility(self.WBP_BattleHistoryDetailsCommonlyUsedItem, true)
   UpdateVisibility(self.WBP_BattleHistoryDetailsItemSkillCount, true)
@@ -317,6 +338,7 @@ function BattleHistoryView:OnUpdateStatistics(HeroStatistic, HeroId)
     end
   end
 end
+
 function BattleHistoryView:OnUpdateAllHeroStatistics(HeroStatistic, HeroId)
   UpdateVisibility(self.WBP_BattleHistoryDetailsItemSkillCount, false)
   UpdateVisibility(self.CanvasPanelBasic, true)
@@ -395,16 +417,19 @@ function BattleHistoryView:OnUpdateAllHeroStatistics(HeroStatistic, HeroId)
     UpdateVisibility(self.WBP_BattleHistoryDetailsCommonlyUsedItem.ScaleBox_KuangHero, true)
   end
 end
+
 function BattleHistoryView:OnCheckStateChanged(SelectId)
   local playerInfoMainVM = UIModelMgr:Get("PlayerInfoMainViewModel")
   local roleID = playerInfoMainVM:GetCurRoleID()
   print("BattleHistoryView:OnCheckStateChanged", SelectId)
   self.viewModel:SelectHeroId(SelectId, roleID)
 end
+
 function BattleHistoryView:ShowBattleHistoryPlayerInfo(HistoryData)
   self.viewModel:SetCurHistoryData(HistoryData)
   local PlayerInfoMainViewModel = UIModelMgr:Get("PlayerInfoMainViewModel")
   self.WBP_SettlementPlayerInfoView:InitBattleHistoryPlayerInfo(PlayerInfoMainViewModel:GetCurRoleID(), HistoryData)
   UpdateVisibility(self.WBP_SettlementPlayerInfoView, true)
 end
+
 return BattleHistoryView

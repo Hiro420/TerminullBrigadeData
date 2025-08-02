@@ -1,58 +1,58 @@
 ﻿{
   "1": {
+    "SpecialAbilityID": 1,
     "Remark": "",
     "Inscription": 5020501,
-    "SeasonIDX": 1,
-    "SpecialAbilityID": 1,
-    "SpecialAbilityPointNum": 10
+    "SpecialAbilityPointNum": 10,
+    "SeasonIDX": 1
   },
   "2": {
+    "SpecialAbilityID": 2,
     "Remark": "",
     "Inscription": 5020502,
-    "SeasonIDX": 1,
-    "SpecialAbilityID": 2,
-    "SpecialAbilityPointNum": 20
+    "SpecialAbilityPointNum": 20,
+    "SeasonIDX": 1
   },
   "3": {
+    "SpecialAbilityID": 3,
     "Remark": "",
     "Inscription": 5020503,
-    "SeasonIDX": 1,
-    "SpecialAbilityID": 3,
-    "SpecialAbilityPointNum": 30
+    "SpecialAbilityPointNum": 30,
+    "SeasonIDX": 1
   },
   "4": {
+    "SpecialAbilityID": 4,
     "Remark": "",
     "Inscription": 5020501,
-    "SeasonIDX": 1,
-    "SpecialAbilityID": 4,
-    "SpecialAbilityPointNum": 50
+    "SpecialAbilityPointNum": 50,
+    "SeasonIDX": 1
   },
   "5": {
+    "SpecialAbilityID": 5,
     "Remark": "",
     "Inscription": 5020502,
-    "SeasonIDX": 1,
-    "SpecialAbilityID": 5,
-    "SpecialAbilityPointNum": 70
+    "SpecialAbilityPointNum": 70,
+    "SeasonIDX": 1
   },
   "6": {
+    "SpecialAbilityID": 6,
     "Remark": "",
     "Inscription": 5020503,
-    "SeasonIDX": 1,
-    "SpecialAbilityID": 6,
-    "SpecialAbilityPointNum": 90
+    "SpecialAbilityPointNum": 90,
+    "SeasonIDX": 1
   },
   "7": {
+    "SpecialAbilityID": 7,
     "Remark": "",
     "Inscription": 5020501,
-    "SeasonIDX": 1,
-    "SpecialAbilityID": 7,
-    "SpecialAbilityPointNum": 130
+    "SpecialAbilityPointNum": 130,
+    "SeasonIDX": 1
   },
   "8": {
+    "SpecialAbilityID": 8,
     "Remark": "",
     "Inscription": 5020502,
-    "SeasonIDX": 1,
-    "SpecialAbilityID": 8,
-    "SpecialAbilityPointNum": 180
+    "SpecialAbilityPointNum": 180,
+    "SeasonIDX": 1
   }
 }

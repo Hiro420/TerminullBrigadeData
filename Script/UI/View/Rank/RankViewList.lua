@@ -1,5 +1,6 @@
 local RankData = require("UI.View.Rank.RankData")
 local RankViewList = UnLua.Class()
+
 function RankViewList:Construct()
   self.Button_Left.OnClicked:Add(self, RankViewList.OnButton_Left)
   self.Button_Right.OnClicked:Add(self, RankViewList.OnButton_Right)
@@ -11,6 +12,7 @@ function RankViewList:Construct()
   EventSystem.AddListener(self, EventDef.Rank.OnRequestServerElementDataSuccess, RankViewList.OnRequestServerElementDataSuccess)
   self.TextBlock_CurrentPage.OnTextCommitted:Add(self, self.OnTextCommitted)
 end
+
 function RankViewList:OnBtnMVPDown()
   if self.MVPIndex == nil then
     self.MVPIndex = 1
@@ -21,6 +23,7 @@ function RankViewList:OnBtnMVPDown()
   end
   self.WBP_RankMVP_Info:SetMVPInfo(self.ShowTeamTable[self.MVPIndex])
 end
+
 function RankViewList:OnBtnMVPUp()
   if self.MVPIndex == nil then
     self.MVPIndex = 1
@@ -31,6 +34,7 @@ function RankViewList:OnBtnMVPUp()
   end
   self.WBP_RankMVP_Info:SetMVPInfo(self.ShowTeamTable[self.MVPIndex])
 end
+
 function RankViewList:OnRequestServerElementDataSuccess(Data)
   self.ShowTeamTable = {}
   local MVPId = ""
@@ -54,18 +58,21 @@ function RankViewList:OnRequestServerElementDataSuccess(Data)
   end
   self.WBP_RankMVP_Info:SetMVPInfo(self.ShowTeamTable[self.MVPIndex])
 end
+
 function RankViewList:OnButton_Left()
   if self.CurrentPageNumber <= 1 then
     return
   end
   self:SetCurPage(self.CurrentPageNumber - 1)
 end
+
 function RankViewList:OnButton_Right()
   if self.CurrentPageNumber >= self.ShowPageNumm then
     return
   end
   self:SetCurPage(self.CurrentPageNumber + 1)
 end
+
 function RankViewList:OnTextCommitted(Text, CommitMethod)
   if CommitMethod == UE.ETextCommit.OnUserMovedFocus or CommitMethod == UE.ETextCommit.OnCleared then
     self.TextBlock_CurrentPage:SetText(tostring(self.CurrentPageNumber))
@@ -82,6 +89,7 @@ function RankViewList:OnTextCommitted(Text, CommitMethod)
   end
   self:SetCurPage(Index)
 end
+
 function RankViewList:BP_OnItemClicked(ItemObj)
   if nil == ItemObj then
     return
@@ -96,6 +104,7 @@ function RankViewList:BP_OnItemClicked(ItemObj)
   end
   RankData.RequestServerElementData(SeasonId, GameMode, GameWorld, HeroId, UniqueID)
 end
+
 function RankViewList:SetShowType(bTeam, WorldMode, GameMode, HeroId, SeasonId)
   self.bTeam = bTeam
   self.WorldMode = WorldMode
@@ -105,6 +114,7 @@ function RankViewList:SetShowType(bTeam, WorldMode, GameMode, HeroId, SeasonId)
   UpdateVisibility(self.Pnl_Team, bTeam)
   UpdateVisibility(self.Pnl_Single, not bTeam)
 end
+
 function RankViewList:SetCurPage(Index)
   self.CurrentPageNumber = Index
   self.TextBlock_CurrentPage:SetText(tostring(Index))
@@ -167,6 +177,7 @@ function RankViewList:SetCurPage(Index)
   end
   DataMgr.GetOrQueryPlayerInfo(RoleIds, false, OnGetRoleSuccess, nil, 300)
 end
+
 function RankViewList:UpdateRankPagesInfo()
   self.NumberOfPage = self.MaxShowNum / self.MaxPage
   self.ShowPageNumm = math.ceil(#self.RankListInfo.ranklist / self.NumberOfPage)
@@ -182,6 +193,7 @@ function RankViewList:UpdateRankPagesInfo()
   end
   HideOtherItem(self.HorizontalBoxStep, table.count(self.RankStepItemTable) + 1, true)
 end
+
 function RankViewList:UpdateRankList(RankListInfo)
   if self:IsFirstShowList() and 0 == DataMgr.GetPlayerInvisible(2) then
     ShowWaveWindowWithDelegate(self.RankInvisibleWaveId, {}, function()
@@ -219,6 +231,7 @@ function RankViewList:UpdateRankList(RankListInfo)
     end
   end
 end
+
 function RankViewList:IsFirstShowList()
   local FilePath = UE.UKismetSystemLibrary.GetProjectSavedDirectory() .. "/Rank/" .. DataMgr.GetUserId() .. "Rank.txt"
   local OutString = ""
@@ -230,4 +243,5 @@ function RankViewList:IsFirstShowList()
   UE.URGBlueprintLibrary.SaveStringToFile(FilePath, OutStr)
   return true
 end
+
 return RankViewList

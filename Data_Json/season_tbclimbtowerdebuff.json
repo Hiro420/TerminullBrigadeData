@@ -1,0 +1,298 @@
+[
+  {
+    "DebuffGroupID": 1,
+    "InstructionIDs": [
+      9030091,
+      9030092,
+      9030093
+    ],
+    "DebuffLevel": 3,
+    "DebuffValues": [
+      1,
+      2,
+      3
+    ],
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_01.Icon_ClimbTower_Attr_01",
+    "Title": "体力和护盾上限",
+    "Content": "[废弃]生命和护盾上限",
+    "LevelData": -10,
+    "Type": 0,
+    "Remark": ""
+  },
+  {
+    "DebuffGroupID": 2,
+    "InstructionIDs": [
+      9030011,
+      9030012,
+      9030013
+    ],
+    "DebuffLevel": 3,
+    "DebuffValues": [
+      1,
+      2,
+      3
+    ],
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_02.Icon_ClimbTower_Attr_02",
+    "Title": "承受伤害",
+    "Content": "[废弃]承受伤害",
+    "LevelData": 10,
+    "Type": 0,
+    "Remark": ""
+  },
+  {
+    "DebuffGroupID": 3,
+    "InstructionIDs": [
+      9030021,
+      9030022,
+      9030023
+    ],
+    "DebuffLevel": 3,
+    "DebuffValues": [
+      1,
+      2,
+      3
+    ],
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_03.Icon_ClimbTower_Attr_03",
+    "Title": "移动速度",
+    "Content": "[废弃]移动速度",
+    "LevelData": -10,
+    "Type": 0,
+    "Remark": ""
+  },
+  {
+    "DebuffGroupID": 4,
+    "InstructionIDs": [
+      9030031,
+      9030032,
+      9030033
+    ],
+    "DebuffLevel": 3,
+    "DebuffValues": [
+      1,
+      2,
+      3
+    ],
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_04.Icon_ClimbTower_Attr_04",
+    "Title": "救援和被救援时间",
+    "Content": "[废弃]救援/被救援时间",
+    "LevelData": 3,
+    "Type": 0,
+    "Remark": ""
+  },
+  {
+    "DebuffGroupID": 5,
+    "InstructionIDs": [
+      9030041,
+      9030042,
+      9030043
+    ],
+    "DebuffLevel": 3,
+    "DebuffValues": [
+      1,
+      2,
+      3
+    ],
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_05.Icon_ClimbTower_Attr_05",
+    "Title": "技能冷却速度",
+    "Content": "[废弃]技能恢复时间",
+    "LevelData": 10,
+    "Type": 0,
+    "Remark": ""
+  },
+  {
+    "DebuffGroupID": 6,
+    "InstructionIDs": [
+      9030051,
+      9030052,
+      9030053
+    ],
+    "DebuffLevel": 3,
+    "DebuffValues": [
+      1,
+      2,
+      3
+    ],
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_06.Icon_ClimbTower_Attr_06",
+    "Title": "暴击率",
+    "Content": "[废弃]暴击率",
+    "LevelData": -10,
+    "Type": 0,
+    "Remark": ""
+  },
+  {
+    "DebuffGroupID": 7,
+    "InstructionIDs": [
+      9030061,
+      9030062,
+      9030063
+    ],
+    "DebuffLevel": 3,
+    "DebuffValues": [
+      1,
+      2,
+      3
+    ],
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_07.Icon_ClimbTower_Attr_07",
+    "Title": "弱点伤害倍率",
+    "Content": "[废弃]弱点伤害倍率",
+    "LevelData": -20,
+    "Type": 0,
+    "Remark": ""
+  },
+  {
+    "DebuffGroupID": 8,
+    "InstructionIDs": [
+      9030071,
+      9030072,
+      9030073
+    ],
+    "DebuffLevel": 3,
+    "DebuffValues": [
+      1,
+      2,
+      3
+    ],
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_08.Icon_ClimbTower_Attr_08",
+    "Title": "换弹速度",
+    "Content": "[废弃]换弹时间",
+    "LevelData": 30,
+    "Type": 0,
+    "Remark": ""
+  },
+  {
+    "DebuffGroupID": 9,
+    "InstructionIDs": [
+      9030081,
+      9030082
+    ],
+    "DebuffLevel": 2,
+    "DebuffValues": [
+      2,
+      4
+    ],
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_09.Icon_ClimbTower_Attr_09",
+    "Title": "弹匣容量",
+    "Content": "[废弃]弹匣容量",
+    "LevelData": -30,
+    "Type": 0,
+    "Remark": ""
+  },
+  {
+    "DebuffGroupID": 10,
+    "InstructionIDs": [
+      9030001,
+      9030002
+    ],
+    "DebuffLevel": 2,
+    "DebuffValues": [
+      2,
+      4
+    ],
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_10.Icon_ClimbTower_Attr_10",
+    "Title": "商店购买价格",
+    "Content": "[废弃]商店购买价格",
+    "LevelData": 30,
+    "Type": 0,
+    "Remark": ""
+  },
+  {
+    "DebuffGroupID": 11,
+    "InstructionIDs": [
+      9030501,
+      9030502
+    ],
+    "DebuffLevel": 2,
+    "DebuffValues": [
+      2,
+      4
+    ],
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_11.Icon_ClimbTower_Attr_11",
+    "Title": "金币掉落数量",
+    "Content": "[废弃]掉落金币",
+    "LevelData": -20,
+    "Type": 0,
+    "Remark": ""
+  },
+  {
+    "DebuffGroupID": 12,
+    "InstructionIDs": [
+      9030111,
+      9030112
+    ],
+    "DebuffLevel": 2,
+    "DebuffValues": [
+      2,
+      4
+    ],
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_12.Icon_ClimbTower_Attr_12",
+    "Title": "回复道具效果",
+    "Content": "[废弃]回血道具的回复量",
+    "LevelData": -20,
+    "Type": 0,
+    "Remark": ""
+  },
+  {
+    "DebuffGroupID": 13,
+    "InstructionIDs": [
+      9030101
+    ],
+    "DebuffLevel": 1,
+    "DebuffValues": [
+      5
+    ],
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_13.Icon_ClimbTower_Attr_13",
+    "Title": "选择潜能密钥时只有2个潜能密钥可选择",
+    "Content": "[废弃]潜能密钥只能二选一",
+    "LevelData": 0,
+    "Type": 2,
+    "Remark": ""
+  },
+  {
+    "DebuffGroupID": 14,
+    "InstructionIDs": [
+      9030201
+    ],
+    "DebuffLevel": 1,
+    "DebuffValues": [
+      5
+    ],
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_14.Icon_ClimbTower_Attr_14",
+    "Title": "选择权限时只有2个权限可选择",
+    "Content": "[废弃]权限只能二选一",
+    "LevelData": 0,
+    "Type": 2,
+    "Remark": ""
+  },
+  {
+    "DebuffGroupID": 15,
+    "InstructionIDs": [
+      9030301
+    ],
+    "DebuffLevel": 1,
+    "DebuffValues": [
+      5
+    ],
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_15.Icon_ClimbTower_Attr_15",
+    "Title": "击败50名敌人前，随机禁用一个技能",
+    "Content": "[废弃]击败一定数量怪物之前，随机封印一个技能",
+    "LevelData": 0,
+    "Type": 2,
+    "Remark": ""
+  },
+  {
+    "DebuffGroupID": 16,
+    "InstructionIDs": [
+      9030401
+    ],
+    "DebuffLevel": 1,
+    "DebuffValues": [
+      5
+    ],
+    "ICon": "/Game/Rouge/UI/Atlas_DT/IconClimbTower/Frames/Icon_ClimbTower_Attr_16.Icon_ClimbTower_Attr_16",
+    "Title": "战胜首领后不再回复体力",
+    "Content": "[废弃]战胜首领后不再回复血量",
+    "LevelData": 0,
+    "Type": 2,
+    "Remark": ""
+  }
+]

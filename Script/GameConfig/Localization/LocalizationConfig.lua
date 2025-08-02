@@ -27,8 +27,16 @@ local EVoiceCultureType =
     [2] = "Japanese",
     [3] = "Korean",
 }
-
 _G.EVoiceCultureType = EVoiceCultureType
+
+local CultureToVoice =
+{
+    ["zh-Hans-CN"] = 0, --"Chinese",
+    ["en"] = 1, --"English",
+    ["ko"] = 3,  --"Korean",
+    ["ja"] = 2,    --"Japanese",
+}
+_G.CultureToVoice = CultureToVoice
 
 
 -- https://doc.weixin.qq.com/doc/w3_AUMA6AZCAIMXF9msySeSxmRI3cTJF?scode=AJEAIQdfAAot0HHTQZAUMA6AZCAIM

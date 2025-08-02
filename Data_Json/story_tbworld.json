@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "worldID": 23,
+    "name": "环都",
+    "clueIDList": [
+      101,
+      102,
+      103
+    ],
+    "icon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments_B/Plot_Bg10.Plot_Bg10",
+    "baseImage": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments_B/Plot_Bg10.Plot_Bg10",
+    "worldIntelligenceID": [
+      1,
+      2,
+      3
+    ],
+    "SettlementIncomeItemIcon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_Diary_02.Icon_Diary_02",
+    "SettlementIncomeItemName": "数据情报"
+  },
+  {
+    "id": 2,
+    "worldID": 24,
+    "name": "炽热焦土",
+    "clueIDList": [
+      201,
+      202,
+      203
+    ],
+    "icon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments_B/Plot_Bg28.Plot_Bg28",
+    "baseImage": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments_B/Plot_Bg28.Plot_Bg28",
+    "worldIntelligenceID": [
+      11,
+      12,
+      13
+    ],
+    "SettlementIncomeItemIcon": "/Game/Rouge/UI/Atlas_DT/IconPlotFragments/Frames/Icon_ElectronicData_01.Icon_ElectronicData_01",
+    "SettlementIncomeItemName": "数据情报"
+  }
+]

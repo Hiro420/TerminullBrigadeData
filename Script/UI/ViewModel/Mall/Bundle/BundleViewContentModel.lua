@@ -4,12 +4,15 @@ local rapidjson = require("rapidjson")
 local StringExt = require("Utils.StringExt")
 local HttpService = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(RGUtil.GetWorld(), HttpCommunication.GetHttpServiceClass())
 local BundleViewContentModel = CreateDefaultViewModel()
+
 function BundleViewContentModel:OnInit()
   self.Super.OnInit(self)
 end
+
 function BundleViewContentModel:OnShutdown()
   self.Super.OnShutdown(self)
 end
+
 function BundleViewContentModel:ShowBundleContent(GiftId, GoodsId, Item)
   self.GoodsId = GoodsId
   if nil == GiftId then
@@ -26,4 +29,5 @@ function BundleViewContentModel:ShowBundleContent(GiftId, GoodsId, Item)
     BundleContentView:UpDateList(GoodsId, self.BundleInfo, Item)
   end
 end
+
 return BundleViewContentModel

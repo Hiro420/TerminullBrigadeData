@@ -1,80 +1,80 @@
 ﻿{
-  "sa": {
-    "serverlist": {
-      "1": "15001"
-    },
-    "port": 50001,
-    "address": "battle-15001-sa.playprojectr.com",
-    "costTypeLocMeta": {
-      "InTextLiteral": "南美",
-      "InNamespace": "lobby_TBBattleServerList",
-      "InKey": "costType_sa"
-    },
-    "region": "sa"
-  },
-  "europe": {
-    "serverlist": {
-      "1": "15001"
-    },
-    "port": 50001,
-    "address": "battle-15001-eu.playprojectr.com",
-    "costTypeLocMeta": {
-      "InTextLiteral": "欧洲",
-      "InNamespace": "lobby_TBBattleServerList",
-      "InKey": "costType_europe"
-    },
-    "region": "europe"
-  },
-  "jp": {
-    "serverlist": {
-      "1": "15001"
-    },
-    "port": 50001,
-    "address": "battle-15001-jp.playprojectr.com",
-    "costTypeLocMeta": {
-      "InTextLiteral": "日本",
-      "InNamespace": "lobby_TBBattleServerList",
-      "InKey": "costType_jp"
-    },
-    "region": "jp"
-  },
-  "va": {
-    "serverlist": {
-      "1": "15001"
-    },
-    "port": 50001,
-    "address": "battle-15001-va.playprojectr.com",
-    "costTypeLocMeta": {
-      "InTextLiteral": "弗吉尼亞",
-      "InNamespace": "lobby_TBBattleServerList",
-      "InKey": "costType_va"
-    },
-    "region": "va"
-  },
   "sv": {
+    "port": 50001,
     "serverlist": {
       "1": "15001"
     },
-    "port": 50001,
+    "region": "sv",
     "address": "battle-15001-sv.playprojectr.com",
     "costTypeLocMeta": {
-      "InTextLiteral": "硅谷",
       "InNamespace": "lobby_TBBattleServerList",
-      "InKey": "costType_sv"
-    },
-    "region": "sv"
+      "InKey": "costType_sv",
+      "InTextLiteral": "北美服（西部）"
+    }
   },
   "sea": {
+    "port": 50001,
     "serverlist": {
       "1": "15001"
     },
-    "port": 50001,
+    "region": "sea",
     "address": "battle-15001-sg.playprojectr.com",
     "costTypeLocMeta": {
-      "InTextLiteral": "新加坡",
       "InNamespace": "lobby_TBBattleServerList",
-      "InKey": "costType_sea"
+      "InKey": "costType_sea",
+      "InTextLiteral": "东南亚服"
+    }
+  },
+  "sa": {
+    "port": 50001,
+    "serverlist": {
+      "1": "15001"
     },
-    "region": "sea"
+    "region": "sa",
+    "address": "battle-15001-sa.playprojectr.com",
+    "costTypeLocMeta": {
+      "InNamespace": "lobby_TBBattleServerList",
+      "InKey": "costType_sa",
+      "InTextLiteral": "南美服"
+    }
+  },
+  "va": {
+    "port": 50001,
+    "serverlist": {
+      "1": "15001"
+    },
+    "region": "va",
+    "address": "battle-15001-ue.playprojectr.com",
+    "costTypeLocMeta": {
+      "InNamespace": "lobby_TBBattleServerList",
+      "InKey": "costType_va",
+      "InTextLiteral": "北美服（东部）"
+    }
+  },
+  "europe": {
+    "port": 50001,
+    "serverlist": {
+      "1": "15001"
+    },
+    "region": "europe",
+    "address": "battle-15001-eu.playprojectr.com",
+    "costTypeLocMeta": {
+      "InNamespace": "lobby_TBBattleServerList",
+      "InKey": "costType_europe",
+      "InTextLiteral": "欧服"
+    }
+  },
+  "jp": {
+    "port": 50001,
+    "serverlist": {
+      "1": "15001"
+    },
+    "region": "jp",
+    "address": "battle-15001-jp.playprojectr.com",
+    "costTypeLocMeta": {
+      "InNamespace": "lobby_TBBattleServerList",
+      "InKey": "costType_jp",
+      "InTextLiteral": "亚服"
+    }
   }
 }

@@ -9,19 +9,24 @@ local ToggleIdToViewId = {
   [EPuzzleGemDevelopId.GemUpgrade] = ViewID.UI_GemUpgrade,
   [EPuzzleGemDevelopId.GemDecompose] = ViewID.UI_GemDecompose
 }
+
 function WBP_PuzzleDevelopMainView:BindClickHandler()
   self.MenuToggleGroup.OnCheckStateChanged:Add(self, self.BindOnCheckStateChanged)
 end
+
 function WBP_PuzzleDevelopMainView:UnBindClickHandler()
   self.MenuToggleGroup.OnCheckStateChanged:Remove(self, self.BindOnCheckStateChanged)
 end
+
 function WBP_PuzzleDevelopMainView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function WBP_PuzzleDevelopMainView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_PuzzleDevelopMainView:OnShow(SelectedPuzzleId, ToggleId)
   self.CurSelectPuzzleId = SelectedPuzzleId
   self.CurSelectGemId = SelectedPuzzleId
@@ -35,6 +40,7 @@ function WBP_PuzzleDevelopMainView:OnShow(SelectedPuzzleId, ToggleId)
   self.WBP_InteractTipWidget:BindInteractAndClickEvent(self, self.BindOnEscKeyPressed)
   self:SetEnhancedInputActionBlocking(true)
 end
+
 function WBP_PuzzleDevelopMainView:BindOnCheckStateChanged(ToggleId)
   local LastViewId = ToggleIdToViewId[self.SelectToggleId]
   if LastViewId then
@@ -53,6 +59,7 @@ function WBP_PuzzleDevelopMainView:BindOnCheckStateChanged(ToggleId)
   end
   UIMgr:Show(TargetViewId, false, TargetId)
 end
+
 function WBP_PuzzleDevelopMainView:BindOnEscKeyPressed(...)
   local TargetSubViewId = ToggleIdToViewId[self.SelectToggleId]
   if TargetSubViewId then
@@ -60,11 +67,14 @@ function WBP_PuzzleDevelopMainView:BindOnEscKeyPressed(...)
   end
   UIMgr:Hide(ViewID.UI_PuzzleDevelopMain, true)
 end
+
 function WBP_PuzzleDevelopMainView:OnHide()
   self.WBP_InteractTipWidget:UnBindInteractAndClickEvent(self, self.BindOnEscKeyPressed)
   self:SetEnhancedInputActionBlocking(false)
 end
+
 function WBP_PuzzleDevelopMainView:Destruct(...)
   self:OnHide()
 end
+
 return WBP_PuzzleDevelopMainView

@@ -2,11 +2,14 @@ local RankData = require("UI.View.Rank.RankData")
 local PlayerInfoConfig = require("GameConfig.PlayerInfo.PlayerInfoConfig")
 local rapidjson = require("rapidjson")
 local WBP_RankMVPInfo_C = UnLua.Class()
+
 function WBP_RankMVPInfo_C:Construct()
   EventSystem.AddListener(self, EventDef.Rank.OnRefreshMVP, self.OnRefreshMVP)
 end
+
 function WBP_RankMVPInfo_C:OnRefreshMVP()
 end
+
 function WBP_RankMVPInfo_C:SetMVPInfo(RoleId)
   print("SetMVPInfo", RoleId)
   self.RoleId = RoleId
@@ -66,4 +69,5 @@ function WBP_RankMVPInfo_C:SetMVPInfo(RoleId)
     self.PlatformIconPanel:UpdateChannelInfo(RoleId)
   end
 end
+
 return WBP_RankMVPInfo_C

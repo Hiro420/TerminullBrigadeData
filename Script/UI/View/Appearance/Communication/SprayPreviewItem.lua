@@ -1,11 +1,14 @@
 local UnLua = _G.UnLua
 local SprayPreviewItem = UnLua.Class()
+
 function SprayPreviewItem:Construct()
   self.Overridden.Construct(self)
 end
+
 function SprayPreviewItem:Destruct()
   self.Overridden.Destruct(self)
 end
+
 function SprayPreviewItem:InitSprayPreviewItemById(SprayId)
   UpdateVisibility(self, true)
   local CommunicationViewModel = UIModelMgr:Get("CommunicationViewModel")
@@ -17,10 +20,12 @@ function SprayPreviewItem:InitSprayPreviewItemById(SprayId)
   UpdateVisibility(self.URGImageHeadIcon, sprayData.RowInfo.BigIcon ~= "")
   self:InitEffect(sprayData.RowInfo.EffectPath)
 end
+
 function SprayPreviewItem:InitSprayPreviewItem(IconPath, EffectPath)
   SetImageBrushByPath(self.URGImageHeadIcon, IconPath)
   self:InitEffect(EffectPath)
 end
+
 function SprayPreviewItem:InitSprayPreviewItemByPortraitID(PortraitID)
   local result, portraitRow = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBPortrait, PortraitID)
   if result then
@@ -28,16 +33,19 @@ function SprayPreviewItem:InitSprayPreviewItemByPortraitID(PortraitID)
     self:InitEffect(portraitRow.EffectPath)
   end
 end
+
 function SprayPreviewItem:InitSprayPreviewItemByBrush(Brush, EffectPath)
   self.URGImageHeadIcon:SetBrush(Brush)
   self:InitEffect(EffectPath)
 end
+
 function SprayPreviewItem:InitEffect(EffectPath)
   local EffObj = self:GetOrCreateEffObj(EffectPath)
   if not EffObj then
     UpdateVisibility(self.CanvasPanelEffect, false)
   end
 end
+
 function SprayPreviewItem:GetOrCreateEffObj(EffectPath)
   if table.IsEmpty(self.EffMap) then
     self.EffMap = {}
@@ -72,4 +80,5 @@ function SprayPreviewItem:GetOrCreateEffObj(EffectPath)
     return nil
   end
 end
+
 return SprayPreviewItem

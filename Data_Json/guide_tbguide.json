@@ -1,0 +1,672 @@
+[
+  {
+    "id": 100,
+    "name": "主线任务通话[备注]",
+    "note": "不投放",
+    "guidelist": [
+      10100
+    ],
+    "triggerevent": "OnInviteDialogueShow_Mute",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 101,
+    "name": "角色教学[备注]",
+    "note": "",
+    "guidelist": [
+      10101,
+      10102,
+      10103,
+      10104,
+      10105
+    ],
+    "triggerevent": "OnInitialHeroSelected",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 102,
+    "name": "能力模块教学[备注]",
+    "note": "",
+    "guidelist": [
+      10201,
+      10202,
+      10203,
+      10204
+    ],
+    "triggerevent": "OnTalentPanelShow",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [
+      106
+    ],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 103,
+    "name": "主线选关-新世界[备注]",
+    "note": "",
+    "guidelist": [
+      10301,
+      10302,
+      10303
+    ],
+    "triggerevent": "OnBanditUnLock",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 104,
+    "name": "更换武器[备注]",
+    "note": "",
+    "guidelist": [
+      10401,
+      10402,
+      10403,
+      10404,
+      10405,
+      10406,
+      10407,
+      10408
+    ],
+    "triggerevent": "OnOwningSecondWeapon",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 105,
+    "name": "装备模组[备注]",
+    "note": "",
+    "guidelist": [
+      10501,
+      10502,
+      10503,
+      10504,
+      10505
+    ],
+    "triggerevent": "OnOwningPuzzle",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 106,
+    "name": "引导点开始游戏[备注]",
+    "note": "",
+    "guidelist": [
+      10601
+    ],
+    "triggerevent": "OnLobbyShowAndChecked",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [
+      101
+    ],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 107,
+    "name": "点击任务查看[备注]",
+    "note": "",
+    "guidelist": [
+      10701
+    ],
+    "triggerevent": "OnLobbyShowAndChecked",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [
+      106
+    ],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 108,
+    "name": "领取任务奖励",
+    "note": "不投放",
+    "guidelist": [
+      10801
+    ],
+    "triggerevent": "OnMainTaskRewardUnlock_Mute",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [
+      106
+    ],
+    "priority": 2,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 109,
+    "name": "熟练度",
+    "note": "",
+    "guidelist": [
+      10901,
+      10902,
+      10903,
+      10904,
+      10905,
+      10906
+    ],
+    "triggerevent": "OnProficiencyUnlock",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 110,
+    "name": "新难度[备注]",
+    "note": "",
+    "guidelist": [
+      11001,
+      11002,
+      11003,
+      11004,
+      11005
+    ],
+    "triggerevent": "OnRingedCityUnLockDifficulty2",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 111,
+    "name": "爬塔[备注]",
+    "note": "",
+    "guidelist": [
+      11101,
+      11102,
+      11103,
+      11104,
+      11105,
+      11106
+    ],
+    "triggerevent": "OnClimbTowerUnLock",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 3,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 201,
+    "name": "权限能力",
+    "note": "不投放",
+    "guidelist": [
+      20101,
+      20102
+    ],
+    "triggerevent": "World.GenericModify.OnPlayerEnterArea_Mute",
+    "eventtype": 2,
+    "guidetype": 2,
+    "intohandbook": 1,
+    "type": 2,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 202,
+    "name": "秘宝",
+    "note": "",
+    "guidelist": [
+      20201,
+      20202
+    ],
+    "triggerevent": "World.AttributeModify.OnPickup",
+    "eventtype": 2,
+    "guidetype": 2,
+    "intohandbook": 1,
+    "type": 2,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 200,
+    "name": "战斗教程",
+    "note": "",
+    "guidelist": [
+      20000,
+      20001
+    ],
+    "triggerevent": "",
+    "eventtype": 2,
+    "guidetype": 4,
+    "intohandbook": 1,
+    "type": 2,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 204,
+    "name": "道具商店",
+    "note": "",
+    "guidelist": [
+      20401,
+      20402
+    ],
+    "triggerevent": "",
+    "eventtype": 2,
+    "guidetype": 4,
+    "intohandbook": 1,
+    "type": 2,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 205,
+    "name": "数字祈愈程序",
+    "note": "",
+    "guidelist": [
+      20501
+    ],
+    "triggerevent": "",
+    "eventtype": 2,
+    "guidetype": 4,
+    "intohandbook": 1,
+    "type": 2,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 206,
+    "name": "弱点伤害",
+    "note": "",
+    "guidelist": [
+      20601
+    ],
+    "triggerevent": "",
+    "eventtype": 2,
+    "guidetype": 4,
+    "intohandbook": 1,
+    "type": 2,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 207,
+    "name": "部位破坏",
+    "note": "",
+    "guidelist": [
+      20701
+    ],
+    "triggerevent": "",
+    "eventtype": 2,
+    "guidetype": 4,
+    "intohandbook": 1,
+    "type": 2,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 208,
+    "name": "能力词条",
+    "note": "",
+    "guidelist": [
+      20801
+    ],
+    "triggerevent": "",
+    "eventtype": 2,
+    "guidetype": 4,
+    "intohandbook": 1,
+    "type": 2,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 209,
+    "name": "能力模块",
+    "note": "",
+    "guidelist": [
+      20901,
+      20902
+    ],
+    "triggerevent": "",
+    "eventtype": 2,
+    "guidetype": 4,
+    "intohandbook": 1,
+    "type": 2,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 210,
+    "name": "战斗矩阵",
+    "note": "",
+    "guidelist": [
+      21001
+    ],
+    "triggerevent": "",
+    "eventtype": 2,
+    "guidetype": 4,
+    "intohandbook": 1,
+    "type": 2,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 211,
+    "name": "技能类型",
+    "note": "",
+    "guidelist": [
+      21101,
+      21102,
+      21103
+    ],
+    "triggerevent": "",
+    "eventtype": 2,
+    "guidetype": 4,
+    "intohandbook": 1,
+    "type": 2,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 212,
+    "name": "狂暴",
+    "note": "",
+    "guidelist": [
+      21201
+    ],
+    "triggerevent": "Global.BossBerserk",
+    "eventtype": 3,
+    "guidetype": 3,
+    "intohandbook": 0,
+    "type": 2,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 300,
+    "name": "潜能密钥引导[备注]",
+    "note": "",
+    "guidelist": [
+      30001,
+      30002
+    ],
+    "triggerevent": "",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": true
+  },
+  {
+    "id": 301,
+    "name": "首次引导[备注]",
+    "note": "",
+    "guidelist": [],
+    "triggerevent": "",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": true
+  },
+  {
+    "id": 302,
+    "name": "初次权限升级引导[备注]",
+    "note": "",
+    "guidelist": [
+      30201
+    ],
+    "triggerevent": "",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": true
+  },
+  {
+    "id": 303,
+    "name": "二次获得权限引导[备注]",
+    "note": "",
+    "guidelist": [
+      30301,
+      30302
+    ],
+    "triggerevent": "",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": true
+  },
+  {
+    "id": 304,
+    "name": "首次商店教学[备注]",
+    "note": "",
+    "guidelist": [
+      30401,
+      30402,
+      30403,
+      30404
+    ],
+    "triggerevent": "",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": true
+  },
+  {
+    "id": 305,
+    "name": "首次失败教学-通用【通用】[备注]",
+    "note": "",
+    "guidelist": [
+      30501,
+      30502
+    ],
+    "triggerevent": "OnSettlementFail",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 306,
+    "name": "初次获得权限引导[备注]",
+    "note": "",
+    "guidelist": [
+      30601,
+      30602,
+      30603
+    ],
+    "triggerevent": "",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": true
+  },
+  {
+    "id": 309,
+    "name": "首次成功教学-通用【备注】[备注]",
+    "note": "",
+    "guidelist": [
+      30901,
+      30902
+    ],
+    "triggerevent": "OnSettlementSuccess",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 310,
+    "name": "首次触发BD存档【备注】[备注]",
+    "note": "",
+    "guidelist": [
+      31001
+    ],
+    "triggerevent": "OnSettlementInComeViewShow",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 4,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 311,
+    "name": "首次BOSS讨伐选择BD【备注】[备注]",
+    "note": "",
+    "guidelist": [
+      31101
+    ],
+    "triggerevent": "OnViewShow_UI_BossRush",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [
+      313
+    ],
+    "priority": 4,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 312,
+    "name": "首次幸存者",
+    "note": "",
+    "guidelist": [
+      31201,
+      31202,
+      31203
+    ],
+    "triggerevent": "OnSurvivalUnLock",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 3,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 313,
+    "name": "首次BOSS讨伐",
+    "note": "",
+    "guidelist": [
+      31301,
+      31302,
+      31303
+    ],
+    "triggerevent": "OnBossRushUnLock",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 3,
+    "IsNotRequestToLobbyServer": false
+  },
+  {
+    "id": 307,
+    "name": "首次权限-HUD（废弃",
+    "note": "不投放",
+    "guidelist": [
+      30701
+    ],
+    "triggerevent": "",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": true
+  },
+  {
+    "id": 308,
+    "name": "权限升级-HUD（废弃",
+    "note": "不投放",
+    "guidelist": [
+      30801
+    ],
+    "triggerevent": "",
+    "eventtype": 1,
+    "guidetype": 1,
+    "intohandbook": 0,
+    "type": 1,
+    "preguidelist": [],
+    "priority": 1,
+    "IsNotRequestToLobbyServer": true
+  }
+]

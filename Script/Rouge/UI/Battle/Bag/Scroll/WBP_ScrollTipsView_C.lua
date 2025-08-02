@@ -2,10 +2,12 @@ local WBP_ScrollTipsView_C = UnLua.Class()
 local ScrollSetTipsItemPath = "/Game/Rouge/UI/Battle/Bag/Scroll/WBP_ScrollSetTipsItem.WBP_ScrollSetTipsItem_C"
 local InteractDuration = 0.4
 local InteractTimerRate = 0.02
+
 function WBP_ScrollTipsView_C:Construct()
   self.Overridden.Construct(self)
   self.BenchMark = "BenchMark"
 end
+
 function WBP_ScrollTipsView_C:ListenForBenchInputAction()
   if self.ScrollTipsOpenType == EScrollTipsOpenType.EFromBag then
     self:ListenForBenchInputActionReleased()
@@ -22,6 +24,7 @@ function WBP_ScrollTipsView_C:ListenForBenchInputAction()
     self:ShareAndMarkModify()
   end
 end
+
 function WBP_ScrollTipsView_C:ShareAndMarkModify()
   if self:CheckPickUpCanShare() then
     local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
@@ -49,6 +52,7 @@ function WBP_ScrollTipsView_C:ShareAndMarkModify()
     MarkHandle:ServerAddMark(MarkInfo)
   end
 end
+
 function WBP_ScrollTipsView_C:RefreshProgress()
   if self.StartTime >= InteractDuration then
     if self.ScrollTipsOpenType == EScrollTipsOpenType.EFromBag then
@@ -78,12 +82,14 @@ function WBP_ScrollTipsView_C:RefreshProgress()
     self:UpdateProgress(self.StartTime / InteractDuration)
   end
 end
+
 function WBP_ScrollTipsView_C:ShowBuyTipPanel()
   local AllChildren = self.TipsPanel:GetAllChildren()
   for index, SingleItem in pairs(AllChildren) do
     SingleItem:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_ScrollTipsView_C:CheckPickUpCanShare()
   if not Logic_Scroll.PreOptimalTarget then
     print(" WBP_ScrollTipsView_C:CheckCanShare PreOptimalTarget IsNull")
@@ -95,12 +101,14 @@ function WBP_ScrollTipsView_C:CheckPickUpCanShare()
   end
   return not Logic_Scroll.PreOptimalTarget:IsShared()
 end
+
 function WBP_ScrollTipsView_C:UpdateProgress(Percent)
   local Mat = self.WBP_ScrollInteractItemShare.RGImageProgress:GetDynamicMaterial()
   if Mat then
     Mat:SetScalarParameterValue("Percent", Percent)
   end
 end
+
 function WBP_ScrollTipsView_C:ListenForBenchInputActionReleased()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.Timer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.Timer)
@@ -108,6 +116,7 @@ function WBP_ScrollTipsView_C:ListenForBenchInputActionReleased()
   self:UpdateProgress(-1)
   self.StartTime = 0
 end
+
 function WBP_ScrollTipsView_C:InitScrollTipsView(ScrollId, ScrollTipsOpenTypeParam)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -177,16 +186,19 @@ function WBP_ScrollTipsView_C:InitScrollTipsView(ScrollId, ScrollTipsOpenTypePar
   self:BindOnKeyChanged()
   EventSystem.AddListener(self, EventDef.GameSettings.OnKeyChanged, WBP_ScrollTipsView_C.BindOnKeyChanged)
 end
+
 function WBP_ScrollTipsView_C:Reset()
   self:ListenForBenchInputActionReleased()
   StopListeningForInputAction(self, self.BenchMark, UE.EInputEvent.IE_Pressed)
   StopListeningForInputAction(self, self.BenchMark, UE.EInputEvent.IE_Released)
   EventSystem.RemoveListener(EventDef.GameSettings.OnKeyChanged, WBP_ScrollTipsView_C.BindOnKeyChanged, self)
 end
+
 function WBP_ScrollTipsView_C:Destruct()
   self.Overridden.Destruct(self)
   self:Reset()
 end
+
 function WBP_ScrollTipsView_C:BindOnKeyChanged()
   local ScrollInteractItemText, bIsImg = LogicGameSetting.GetCurSelectedKeyNameByKeyRowName("Interact")
   if not bIsImg then
@@ -201,4 +213,5 @@ function WBP_ScrollTipsView_C:BindOnKeyChanged()
     self.ShareAndMarkInteractItem.RGTextTag:SetText(ShareAndMarkInteractItemText)
   end
 end
+
 return WBP_ScrollTipsView_C

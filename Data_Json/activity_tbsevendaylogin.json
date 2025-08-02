@@ -1,0 +1,121 @@
+[
+  {
+    "Day": 1,
+    "Icon": "",
+    "desc": "天赋材料;蓝色芯片礼包*5",
+    "RewardList": [
+      {
+        "key": 99994,
+        "value": 100
+      },
+      {
+        "key": 62002,
+        "value": 5
+      }
+    ],
+    "showType": 2,
+    "unLockTime": "9-19"
+  },
+  {
+    "Day": 2,
+    "Icon": "",
+    "desc": "橙色芯片礼包*3",
+    "RewardList": [
+      {
+        "key": 62011,
+        "value": 1
+      },
+      {
+        "key": 62012,
+        "value": 1
+      },
+      {
+        "key": 62013,
+        "value": 1
+      }
+    ],
+    "showType": 2,
+    "unLockTime": "9-20"
+  },
+  {
+    "Day": 3,
+    "Icon": "/Game/Rouge/UI/Sprite/LoginRewards/Frames/Login_Hero02.Login_Hero02",
+    "desc": "格罗莉亚",
+    "RewardList": [
+      {
+        "key": 100008,
+        "value": 1
+      }
+    ],
+    "showType": 1,
+    "unLockTime": "9-21"
+  },
+  {
+    "Day": 4,
+    "Icon": "/Game/Rouge/UI/Sprite/LoginRewards/Frames/Login_Hero01.Login_Hero01",
+    "desc": "纳克斯 ",
+    "RewardList": [
+      {
+        "key": 100010,
+        "value": 1
+      }
+    ],
+    "showType": 1,
+    "unLockTime": "9-22"
+  },
+  {
+    "Day": 5,
+    "Icon": "",
+    "desc": "赛季芯片*5",
+    "RewardList": [
+      {
+        "key": 62005,
+        "value": 5
+      }
+    ],
+    "showType": 2,
+    "unLockTime": "9-23"
+  },
+  {
+    "Day": 6,
+    "Icon": "",
+    "desc": "海因克斯",
+    "RewardList": [
+      {
+        "key": 100009,
+        "value": 1
+      }
+    ],
+    "showType": 1,
+    "unLockTime": "9-24"
+  },
+  {
+    "Day": 7,
+    "Icon": "",
+    "desc": "天赋材料;橙色芯片;蓝紫芯片",
+    "RewardList": [
+      {
+        "key": 62004,
+        "value": 10
+      },
+      {
+        "key": 62006,
+        "value": 10
+      },
+      {
+        "key": 62003,
+        "value": 50
+      },
+      {
+        "key": 62002,
+        "value": 50
+      },
+      {
+        "key": 99994,
+        "value": 1000
+      }
+    ],
+    "showType": 2,
+    "unLockTime": "9-25"
+  }
+]

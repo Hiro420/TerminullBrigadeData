@@ -1,11 +1,14 @@
 local UnLua = _G.UnLua
 local ComBannerItem = UnLua.Class()
+
 function ComBannerItem:Construct()
   self.Overridden.Construct(self)
 end
+
 function ComBannerItem:Destruct()
   self.Overridden.Destruct(self)
 end
+
 function ComBannerItem:InitComBannerItem(IconPath, EffectPath)
   SetImageBrushByPath(self.URGImageBanner, IconPath)
   local EffObj = self:GetOrCreateEffObj(EffectPath)
@@ -13,12 +16,14 @@ function ComBannerItem:InitComBannerItem(IconPath, EffectPath)
     UpdateVisibility(self.CanvasPanelEffect, false)
   end
 end
+
 function ComBannerItem:InitComBannerItemByBannerID(BannerID)
   local result, BannerRow = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBBanner, BannerID)
   if result then
     self:InitComBannerItem(BannerRow.BannerIconPath, BannerRow.EffectPath)
   end
 end
+
 function ComBannerItem:GetOrCreateEffObj(EffectPath)
   if table.IsEmpty(self.EffMap) then
     self.EffMap = {}
@@ -53,4 +58,5 @@ function ComBannerItem:GetOrCreateEffObj(EffectPath)
     return nil
   end
 end
+
 return ComBannerItem

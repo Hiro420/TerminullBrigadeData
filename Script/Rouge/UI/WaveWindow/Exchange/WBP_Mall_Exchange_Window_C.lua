@@ -1,5 +1,6 @@
 local rapidJson = require("rapidjson")
 local WBP_Mall_Exchange_Window_C = UnLua.Class()
+
 function WBP_Mall_Exchange_Window_C:InitExchangeWindow(TargetResourceId, ExchangeNum)
   self.TargetResourceId = TargetResourceId
   self.ExchangeNum = ExchangeNum
@@ -37,11 +38,13 @@ function WBP_Mall_Exchange_Window_C:InitExchangeWindow(TargetResourceId, Exchang
   self.WBP_Item_1:InitItem(self.TargetResourceId, self.ExchangeNum * self.ExchangeRatio.value, nil, true)
   self.WBP_InteractTipWidgetEsc:BindInteractAndClickEvent(self, self.BindOnCancelButtonClicked)
 end
+
 function WBP_Mall_Exchange_Window_C:BindOnCancelButtonClicked()
   CloseWaveWindow(self)
   self.WBP_InteractTipWidgetEsc:UnBindInteractAndClickEvent(self, self.BindOnCancelButtonClicked)
   self:SetEnhancedInputActionBlocking(false)
 end
+
 function WBP_Mall_Exchange_Window_C:BindOnConfirmButtonClicked()
   local JsonParam = {
     exchangeResourceList = {
@@ -81,6 +84,7 @@ function WBP_Mall_Exchange_Window_C:BindOnConfirmButtonClicked()
     end
   })
 end
+
 function WBP_Mall_Exchange_Window_C:K2_OnConfirmClick()
   local ExchangeResourceNum = LogicOutsidePackback.GetResourceNumById(self.ExchangeResourceId)
   local ExchangeResourceNeedNum = self.ExchangeNum * self.ExchangeRatio.key
@@ -110,4 +114,5 @@ function WBP_Mall_Exchange_Window_C:K2_OnConfirmClick()
     self:BindOnConfirmButtonClicked()
   end
 end
+
 return WBP_Mall_Exchange_Window_C

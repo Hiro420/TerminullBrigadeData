@@ -1,4 +1,5 @@
 local WBP_RedWarning_C = UnLua.Class()
+
 function WBP_RedWarning_C:ShowRedWarning()
   local Quality = BattleUIScalability:GetRedWarningScalability()
   if Quality == UIQuality.LOW then
@@ -18,6 +19,7 @@ function WBP_RedWarning_C:ShowRedWarning()
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self:PlayAnimationTimeRange(self.Ani_aim, TargetAnimTime, AnimEndTime, 1, UE.EUMGSequencePlayMode.Forward)
 end
+
 function WBP_RedWarning_C:HideRedWarning()
   local Quality = BattleUIScalability:GetRedWarningScalability()
   if Quality == UIQuality.LOW then
@@ -28,4 +30,5 @@ function WBP_RedWarning_C:HideRedWarning()
   end
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return WBP_RedWarning_C

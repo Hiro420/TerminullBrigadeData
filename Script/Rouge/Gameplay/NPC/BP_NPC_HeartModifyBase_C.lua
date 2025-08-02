@@ -1,4 +1,5 @@
 local BP_NPC_HeartModifyBase_C = UnLua.Class()
+
 function BP_NPC_HeartModifyBase_C:ReceiveBeginPlay()
   self.Overridden.ReceiveBeginPlay(self)
   if UE.UKismetSystemLibrary.IsServer(self) then
@@ -17,11 +18,13 @@ function BP_NPC_HeartModifyBase_C:ReceiveBeginPlay()
     self.RGInteractComponent_ApplyBuff.OnActorFinishInteract:Add(self, self.FinishInteract)
   end
 end
+
 function BP_NPC_HeartModifyBase_C:OnUIReady(Widget)
   if Widget:Cast(UE.URGHUDWidget:StaticClass()) then
     self:NPCAppear(true)
   end
 end
+
 function BP_NPC_HeartModifyBase_C:NPCAppear(bIsAppear)
   if not UE.UKismetSystemLibrary.IsServer(self) then
     if bIsAppear then
@@ -40,9 +43,11 @@ function BP_NPC_HeartModifyBase_C:NPCAppear(bIsAppear)
     end
   end
 end
+
 function BP_NPC_HeartModifyBase_C:FinishInteract(Target, Instigator)
   self:NPCAppear(false)
 end
+
 function BP_NPC_HeartModifyBase_C:PlayHeartModifyUIEffect()
   ShowWaveWindow(self.UseWaveId, {})
   local HUD = RGUIMgr:GetUI(UIConfig.WBP_HUD_C.UIName)
@@ -50,6 +55,7 @@ function BP_NPC_HeartModifyBase_C:PlayHeartModifyUIEffect()
     HUD.WBP_HUDInfo:PlayHeartModifyAnim()
   end
 end
+
 function BP_NPC_HeartModifyBase_C:ReceiveEndPlay(EndPlayReason)
   self.Overridden.ReceiveEndPlay(self, EndPlayReason)
   if UE.UKismetSystemLibrary.IsServer(self) then
@@ -68,4 +74,5 @@ function BP_NPC_HeartModifyBase_C:ReceiveEndPlay(EndPlayReason)
     self.RGInteractComponent_ApplyBuff.OnActorFinishInteract:Remove(self, self.FinishInteract)
   end
 end
+
 return BP_NPC_HeartModifyBase_C

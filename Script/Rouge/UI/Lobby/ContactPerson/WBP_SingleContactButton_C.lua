@@ -1,4 +1,5 @@
 local WBP_SingleContactButton_C = UnLua.Class()
+
 function WBP_SingleContactButton_C:Construct()
   SetImageBrushBySoftObject(self.Img_SelectBottom, self.SelectBottomImage)
   SetImageBrushBySoftObject(self.Img_UnSelectBottom, self.UnSelectBottomImage)
@@ -13,4 +14,5 @@ function WBP_SingleContactButton_C:Construct()
   Brush.Margin = Margin
   self.Img_Hovered:SetBrush(Brush)
 end
+
 return WBP_SingleContactButton_C

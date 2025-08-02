@@ -1,4 +1,5 @@
 local WBP_ModViewPanel_C = UnLua.Class()
+
 function WBP_ModViewPanel_C:Construct()
   local pawn = self:GetOwningPlayerPawn()
   if pawn then
@@ -9,9 +10,11 @@ function WBP_ModViewPanel_C:Construct()
   end
   EventSystem.AddListener(self, EventDef.MainPanel.MainPanelChanged, WBP_ModViewPanel_C.OnActiveWidgetChange)
 end
+
 function WBP_ModViewPanel_C:Destruct()
   EventSystem.RemoveListener(EventDef.MainPanel.MainPanelChanged, WBP_ModViewPanel_C.OnActiveWidgetChange)
 end
+
 function WBP_ModViewPanel_C:InitAllModInfo(TypeID)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if DTSubsystem then
@@ -47,15 +50,18 @@ function WBP_ModViewPanel_C:InitAllModInfo(TypeID)
     end
   end
 end
+
 function WBP_ModViewPanel_C:UpdateAllModInfo()
   self.WBP_SingleModTypePanel_Legend:UpdateModInfo()
   for key, value in iterator(self.CanvasPanel_ESQ:GetAllChildren()) do
     value:UpdateModInfo()
   end
 end
+
 function WBP_ModViewPanel_C:OnActiveWidgetChange(LastActiveWidget, CurActiveWidget)
   if CurActiveWidget == self then
     self:UpdateAllModInfo()
   end
 end
+
 return WBP_ModViewPanel_C

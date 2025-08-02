@@ -3,12 +3,15 @@ local ViewBase = require("Framework.UIMgr.ViewBase")
 local UKismetTextLibrary = UE.UKismetTextLibrary
 local RecruitHandler = require("Protocol.Recruit.RecruitHandler")
 local RecruitTeamItem = UnLua.Class()
+
 function RecruitTeamItem:Construct()
   self.Btn_Apply.OnClicked:Add(self, self.BtnApply_Onclicked)
 end
+
 function RecruitTeamItem:Destruct()
   self.Btn_Apply.OnClicked:Remove(self, self.BtnApply_Onclicked)
 end
+
 function RecruitTeamItem:InitTeamItemInfo(TeamData, Parent)
   self:PlayAnimation(self.Ani_in, 0)
   self.TeamData = TeamData
@@ -42,9 +45,11 @@ function RecruitTeamItem:InitTeamItemInfo(TeamData, Parent)
     self.TXT_Mode:SetText(modeTable[TeamData.gameMode].NameLocMeta)
   end
 end
+
 function RecruitTeamItem:Hide()
   UpdateVisibility(self, false)
 end
+
 function RecruitTeamItem:BtnApply_Onclicked()
   if not LogicTeam:IsCaptain() then
     ShowWaveWindow(15007)
@@ -57,6 +62,7 @@ function RecruitTeamItem:BtnApply_Onclicked()
   end
   RecruitHandler:SendApplyRecruitTeam(teamData.branch, teamData.teamID, teamData.version)
 end
+
 function RecruitTeamItem:OnHovered_PlayerHead(IsHovered, RoleId, Target)
   if IsHovered then
     for i, v in ipairs(self.PlayerInfoList) do
@@ -68,10 +74,12 @@ function RecruitTeamItem:OnHovered_PlayerHead(IsHovered, RoleId, Target)
     self.Parent:ShowPlayerInfoTips(IsHovered)
   end
 end
+
 function RecruitTeamItem:OnClicked_PlayerHead(MousePosition, SourceFrom, RoleId)
   local PlayerInfo = self:GetPlayerInfoById(RoleId)
   UIMgr:Show(ViewID.UI_ContactPersonOperateButtonPanel, nil, MousePosition, PlayerInfo, SourceFrom)
 end
+
 function RecruitTeamItem:GetPlayerInfoById(RoleId)
   for i, v in ipairs(self.PlayerInfoList) do
     if v.roleid == RoleId then
@@ -80,4 +88,5 @@ function RecruitTeamItem:GetPlayerInfoById(RoleId)
   end
   return nil
 end
+
 return RecruitTeamItem

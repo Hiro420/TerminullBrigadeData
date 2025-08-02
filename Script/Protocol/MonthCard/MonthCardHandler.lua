@@ -1,6 +1,7 @@
 local MonthCardHandler = {}
 local rapidjson = require("rapidjson")
 local MonthCardData = require("Modules.MonthCard.MonthCardData")
+
 function MonthCardHandler:RequestRolesMonthCardInfoToServer(IdList)
   local Params = {roleIDs = IdList}
   HttpCommunication.Request("playergrowth/monthcard/rolesmonthcardinfo", Params, {
@@ -15,4 +16,5 @@ function MonthCardHandler:RequestRolesMonthCardInfoToServer(IdList)
     end
   })
 end
+
 return MonthCardHandler

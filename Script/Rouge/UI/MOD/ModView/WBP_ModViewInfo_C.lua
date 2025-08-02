@@ -1,14 +1,18 @@
 local WBP_ModViewInfo_C = UnLua.Class()
+
 function WBP_ModViewInfo_C:OnMouseEnter(MyGeometry, MouseEvent)
   self.Image_ModHover:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_ModViewInfo_C:OnMouseLeave(MouseEvent)
   self.Image_ModHover:SetVisibility(UE.ESlateVisibility.Hidden)
 end
+
 local CostTextColor = {
   White = UE.FLinearColor(1.0, 1.0, 1.0, 1.0),
   Yellow = UE.FLinearColor(1, 0.300544, 0.029557, 1.0)
 }
+
 function WBP_ModViewInfo_C:InitModInfo(bIsLegend, InitModID, ChooseType, ModType)
   self.InitModID = InitModID
   self.CurrentModID = InitModID
@@ -61,6 +65,7 @@ function WBP_ModViewInfo_C:InitModInfo(bIsLegend, InitModID, ChooseType, ModType
     print("Pawn is null.")
   end
 end
+
 function WBP_ModViewInfo_C:UpdateModInfo()
   if self.modComponent then
     self:UpdateModIDFromLevelList()
@@ -85,6 +90,7 @@ function WBP_ModViewInfo_C:UpdateModInfo()
     end
   end
 end
+
 function WBP_ModViewInfo_C:GetToolTipWidget()
   if self.InitModID > 0 and self.modComponent then
     local widgetClass = UE.UClass.Load("/Game/Rouge/UI/MOD/ModView/WBP_ModViewTip.WBP_ModViewTip_C")
@@ -104,6 +110,7 @@ function WBP_ModViewInfo_C:GetToolTipWidget()
     return nil
   end
 end
+
 function WBP_ModViewInfo_C:UpdateModIDFromLevelList()
   local gameState = UE.UGameplayStatics.GetGameState(self)
   if not gameState then
@@ -125,4 +132,5 @@ function WBP_ModViewInfo_C:UpdateModIDFromLevelList()
     end
   end
 end
+
 return WBP_ModViewInfo_C

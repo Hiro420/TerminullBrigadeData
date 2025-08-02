@@ -11,28 +11,35 @@ local SubViewId = {
 }
 local CurrentToggleIndex = 1
 local PlayerInfoMainView = Class(ViewBase)
+
 function PlayerInfoMainView:OnBindUIInput()
   self.WBP_InteractTipWidgetMenuPrev:BindInteractAndClickEvent(self, self.BindOnSelectPrevMenu)
   self.WBP_InteractTipWidgetMenuNext:BindInteractAndClickEvent(self, self.BindOnSelectNextMenu)
 end
+
 function PlayerInfoMainView:OnUnBindUIInput()
   self.WBP_InteractTipWidgetMenuPrev:UnBindInteractAndClickEvent(self, self.BindOnSelectPrevMenu)
   self.WBP_InteractTipWidgetMenuNext:UnBindInteractAndClickEvent(self, self.BindOnSelectNextMenu)
 end
+
 function PlayerInfoMainView:BindClickHandler()
   self.RGToggleGroupFirst.OnCheckStateChanged:Add(self, self.OnFirstGroupCheckStateChanged)
 end
+
 function PlayerInfoMainView:UnBindClickHandler()
   self.RGToggleGroupFirst.OnCheckStateChanged:Remove(self, self.OnFirstGroupCheckStateChanged)
 end
+
 function PlayerInfoMainView:OnInit()
   self.DataBindTable = {}
   self.viewModel = UIModelMgr:Get("PlayerInfoMainViewModel")
   self:BindClickHandler()
 end
+
 function PlayerInfoMainView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function PlayerInfoMainView:OnShow(...)
   self.Super:AttachViewModel(self.viewModel, self.DataBindTable, self)
   local param = {
@@ -45,6 +52,7 @@ function PlayerInfoMainView:OnShow(...)
   self.RGToggleGroupFirst:SelectId(EPlayerInfoMainToggleStatus.PlayerInfo)
   self.bIsAppearanceViewIsShow = false
 end
+
 function PlayerInfoMainView:BindOnSelectPrevMenu()
   CurrentToggleIndex = CurrentToggleIndex - 1
   if CurrentToggleIndex < 1 then
@@ -52,6 +60,7 @@ function PlayerInfoMainView:BindOnSelectPrevMenu()
   end
   self.RGToggleGroupFirst:SelectId(CurrentToggleIndex)
 end
+
 function PlayerInfoMainView:BindOnSelectNextMenu()
   CurrentToggleIndex = CurrentToggleIndex + 1
   if CurrentToggleIndex > #SubViewId then
@@ -59,6 +68,7 @@ function PlayerInfoMainView:BindOnSelectNextMenu()
   end
   self.RGToggleGroupFirst:SelectId(CurrentToggleIndex)
 end
+
 function PlayerInfoMainView:OnShowLink(LinkParams)
   local firstToggleIdx = 1
   if LinkParams:IsValidIndex(1) then
@@ -67,10 +77,12 @@ function PlayerInfoMainView:OnShowLink(LinkParams)
   self.RGToggleGroupFirst:SelectId(firstToggleIdx)
   self.viewModel:SwitchLink(firstToggleIdx, LinkParams)
 end
+
 function PlayerInfoMainView:OnHide()
   self.viewModel:ResetData()
   self.Super:DetachViewModel(self.viewModel, self.DataBindTable, self)
 end
+
 function PlayerInfoMainView:ListenForEscInputAction(withoutAnimation)
   for i, v in ipairs(SubViewId) do
     local luaInst = UIMgr:GetLuaFromActiveView(v)
@@ -81,10 +93,12 @@ function PlayerInfoMainView:ListenForEscInputAction(withoutAnimation)
   end
   UIMgr:Hide(ViewID.UI_PlayerInfoMain, true, false, withoutAnimation)
 end
+
 function PlayerInfoMainView:UpdateUIColor(UIColor)
   self.RGTextTitle:SetColorAndOpacity(UIColor)
   self.RGTextRoleName:SetColorAndOpacity(UIColor)
 end
+
 function PlayerInfoMainView:OnFirstGroupCheckStateChanged(SelectId)
   print("PlayerInfoMainView:OnFirstGroupCheckStateChanged", SelectId)
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
@@ -100,4 +114,5 @@ function PlayerInfoMainView:OnFirstGroupCheckStateChanged(SelectId)
   self.viewModel:Switch(SelectId)
   CurrentToggleIndex = SelectId
 end
+
 return PlayerInfoMainView

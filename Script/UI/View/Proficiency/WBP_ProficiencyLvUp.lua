@@ -1,10 +1,13 @@
 local SpaceName = "Space"
 local EscName = "PauseGame"
 local WBP_ProficiencyLvUp = UnLua.Class()
+
 function WBP_ProficiencyLvUp:Construct()
 end
+
 function WBP_ProficiencyLvUp:Destruct()
 end
+
 function WBP_ProficiencyLvUp:InitProfyLvUp(ProfyData, ParentView, AwardList)
   self.ParentView = ParentView
   self.ProfyData = ProfyData
@@ -29,16 +32,19 @@ function WBP_ProficiencyLvUp:InitProfyLvUp(ProfyData, ParentView, AwardList)
   end
   self:PlayAnimation(self.ANi_IN)
 end
+
 function WBP_ProficiencyLvUp:OnrShowProfyLvUpByOpacity()
   self:SetRenderOpacity(1)
   self:PlayAnimation(self.ANi_IN)
 end
+
 function WBP_ProficiencyLvUp:Hide()
   self:StopAnimation(self.ANi_IN)
   self:PlayAnimation(self.ANi_OUT, 0, 1, UE.EUMGSequencePlayMode.Forward, 1, true)
   StopListeningForInputAction(self, SpaceName, UE.EInputEvent.IE_Pressed)
   StopListeningForInputAction(self, EscName, UE.EInputEvent.IE_Pressed)
 end
+
 function WBP_ProficiencyLvUp:OnAnimationFinished(Animation)
   if Animation == self.ANi_OUT then
     UpdateVisibility(self, false)
@@ -46,6 +52,8 @@ function WBP_ProficiencyLvUp:OnAnimationFinished(Animation)
     end
   end
 end
+
 function WBP_ProficiencyLvUp:OnEscPress()
 end
+
 return WBP_ProficiencyLvUp

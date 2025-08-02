@@ -1,42 +1,42 @@
 ﻿{
   "3": {
     "NameLocMeta": {
+      "InKey": "Name_3",
       "InNamespace": "puzzle_TBPuzzleGrade",
-      "InTextLiteral": "强度",
-      "InKey": "Name_3"
+      "InTextLiteral": "强度"
     },
-    "GradeID": 3,
     "TipIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Grade01_03.Icon_Grade01_03",
+    "GradeID": 3,
     "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Grade02_03.Icon_Grade02_03"
   },
   "1": {
     "NameLocMeta": {
+      "InKey": "Name_1",
       "InNamespace": "puzzle_TBPuzzleGrade",
-      "InTextLiteral": "强度",
-      "InKey": "Name_1"
+      "InTextLiteral": "强度"
     },
-    "GradeID": 1,
     "TipIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Grade01_01.Icon_Grade01_01",
+    "GradeID": 1,
     "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Grade02_01.Icon_Grade02_01"
   },
   "2": {
     "NameLocMeta": {
+      "InKey": "Name_2",
       "InNamespace": "puzzle_TBPuzzleGrade",
-      "InTextLiteral": "强度",
-      "InKey": "Name_2"
+      "InTextLiteral": "强度"
     },
-    "GradeID": 2,
     "TipIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Grade01_02.Icon_Grade01_02",
+    "GradeID": 2,
     "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Grade02_02.Icon_Grade02_02"
   },
   "4": {
     "NameLocMeta": {
+      "InKey": "Name_4",
       "InNamespace": "puzzle_TBPuzzleGrade",
-      "InTextLiteral": "强度",
-      "InKey": "Name_4"
+      "InTextLiteral": "强度"
     },
-    "GradeID": 4,
     "TipIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Grade01_03.Icon_Grade01_03",
+    "GradeID": 4,
     "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Grade02_03.Icon_Grade02_03"
   }
 }

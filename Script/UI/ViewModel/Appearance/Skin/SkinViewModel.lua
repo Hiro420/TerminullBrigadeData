@@ -72,6 +72,7 @@ local CheckWeaponSkinCanEquip = function(self, SkinResId)
   end
   return true
 end
+
 function SkinViewModel:OnInit()
   self.Super:OnInit()
   EventSystem.AddListenerNew(EventDef.Skin.OnEquipHeroSkin, self, self.OnEquipHeroSkin)
@@ -87,6 +88,7 @@ function SkinViewModel:OnInit()
   self:InitHeroSkinList()
   self.ShowSeq = true
 end
+
 function SkinViewModel:OnShutdown()
   EventSystem.RemoveListenerNew(EventDef.Skin.OnEquipHeroSkin, self, self.OnEquipHeroSkin)
   EventSystem.RemoveListenerNew(EventDef.Skin.OnEquipWeaponSkin, self, self.OnEquipWeaponSkin)
@@ -98,6 +100,7 @@ function SkinViewModel:OnShutdown()
   EventSystem.RemoveListenerNew(EventDef.Heirloom.OnHeirloomInfoChanged, self, self.OnHeirloomInfoChanged)
   self.Super:OnShutdown()
 end
+
 function SkinViewModel:InitHeroSkinList()
   SkinData.ClearData()
   local characterSkinList = LuaTableMgr.GetLuaTableByName(TableNames.TBCharacterSkin)
@@ -135,6 +138,7 @@ function SkinViewModel:InitHeroSkinList()
     table.insert(SkinData.WeaponSkinMap[v.WeaponID].SkinDataList, WeaponSkinData)
   end
 end
+
 function SkinViewModel:UpdateCurSelectSkinToggle(ToggleIndex)
   if self.CurSelectSkinToggle == ToggleIndex then
     return
@@ -149,6 +153,7 @@ function SkinViewModel:UpdateCurSelectSkinToggle(ToggleIndex)
   end
   self:UpdateDetailsView()
 end
+
 function SkinViewModel:UpdateRoleSkinList(bNotUpdateList)
   local curHeroId = self.CurHeroId
   if not SkinData.HeroSkinMap[curHeroId] then
@@ -173,6 +178,7 @@ function SkinViewModel:UpdateRoleSkinList(bNotUpdateList)
     view:OnUpdateHeroSkinToggleProgress(showHeroSkinData)
   end
 end
+
 function SkinViewModel:UpdateWeaponSkinList()
   local curHeroId = self.CurHeroId
   local curCanEquipedWeapon = LogicOutsideWeapon.GetAllCanEquipWeaponList(curHeroId)
@@ -220,6 +226,7 @@ function SkinViewModel:UpdateWeaponSkinList()
     view:OnUpdateWeaponSkinToggleProgress(showWeaponSkinDataMap)
   end
 end
+
 function SkinViewModel:UpdateCurHeroId(CurHeroId)
   if self.CurHeroId == CurHeroId then
     return
@@ -228,6 +235,7 @@ function SkinViewModel:UpdateCurHeroId(CurHeroId)
   self:UpdateRoleSkinList()
   self:UpdateWeaponSkinList()
 end
+
 function SkinViewModel:UpdateCurSelectHeroSkin(SelectSkinResId, bUpdateMovie, bNotUpdateList)
   if self.CurSelectHeroSkinResId == SelectSkinResId then
     return
@@ -240,6 +248,7 @@ function SkinViewModel:UpdateCurSelectHeroSkin(SelectSkinResId, bUpdateMovie, bN
     self:GetFirstView():UpdateMovie(true)
   end
 end
+
 function SkinViewModel:UpdateCurSelectWeaponSkin(SelectSkinResId)
   if self.CurSelectWeaponSkinResId == SelectSkinResId then
     return
@@ -248,6 +257,7 @@ function SkinViewModel:UpdateCurSelectWeaponSkin(SelectSkinResId)
   self:UpdateWeaponSkinList()
   self:UpdateDetailsView()
 end
+
 function SkinViewModel:UpdateDetailsView(bUpdateMovie)
   local skinId
   if self.CurSelectSkinToggle == ESkinToggleStatus.HeroSkin then
@@ -271,6 +281,7 @@ function SkinViewModel:UpdateDetailsView(bUpdateMovie)
     end
   end
 end
+
 function SkinViewModel:EquipWeaponSkin(SelectSkinResId)
   if CheckWeaponSkinCanEquip(self, SelectSkinResId) then
     local weaponSkinData = self:GetWeaponSkinDataBySkinResId(self.CurSelectWeaponSkinResId)
@@ -287,27 +298,34 @@ function SkinViewModel:EquipWeaponSkin(SelectSkinResId)
     end
   end
 end
+
 function SkinViewModel:SendEquipHeroSkinReq(HeroId, skinId)
   SkinHandler.SendEquipHeroSkinReq(HeroId, skinId)
 end
+
 function SkinViewModel:SendGetHeroSkinList()
   SkinHandler.SendGetHeroSkinList()
 end
+
 function SkinViewModel:SendEquipWeaponSkinReq(SkinId, WeaponId)
   SkinHandler.SendEquipWeaponSkinReq(SkinId, WeaponId)
 end
+
 function SkinViewModel:SendGetWeaponSkinList()
   SkinHandler.SendGetWeaponSkinList()
 end
+
 function SkinViewModel:SendSetSkinEffectState(EffectState, SkinID)
   SkinHandler.SendSetHeroSkinEffectState(EffectState, SkinID)
 end
+
 function SkinViewModel:OnEffectStateChange(EffectState, SkinId)
   local view = self:GetFirstView()
   if view then
     view:SetEffectState(EffectState, SkinId)
   end
 end
+
 function SkinViewModel:OnGetHeroSkinList(HeroSkinList)
   if not HeroSkinList then
     UnLua.LogError("SkinViewModel:OnGetHeroSkinList - data is nil.")
@@ -315,6 +333,7 @@ function SkinViewModel:OnGetHeroSkinList(HeroSkinList)
   self:UpdateRoleSkinList()
   self:UpdateDetailsView()
 end
+
 function SkinViewModel:OnGetWeaponSkinList(WeaponSkinList)
   if not WeaponSkinList then
     UnLua.LogError("SkinViewModel:OnGetWeaponSkinList - data is nil.")
@@ -322,6 +341,7 @@ function SkinViewModel:OnGetWeaponSkinList(WeaponSkinList)
   self:UpdateWeaponSkinList()
   self:UpdateDetailsView()
 end
+
 function SkinViewModel:OnEquipHeroSkin(data, HeroId, skinId)
   if not data then
     UnLua.LogError("SkinViewModel:OnEquipHeroSkin - data is nil.")
@@ -330,6 +350,7 @@ function SkinViewModel:OnEquipHeroSkin(data, HeroId, skinId)
   DataMgr.UpdateHeroInfoSkin(HeroId, skinId)
   EventSystem.Invoke(EventDef.Lobby.UpdateMyHeroInfo)
 end
+
 function SkinViewModel:OnEquipWeaponSkin(data, SkinId, WeaponId)
   if not data then
     UnLua.LogError("SkinViewModel:OnEquipWeaponSkin - data is nil.")
@@ -337,6 +358,7 @@ function SkinViewModel:OnEquipWeaponSkin(data, SkinId, WeaponId)
   DataMgr.UpdateWeaponListBySkinId(SkinId, WeaponId)
   EventSystem.Invoke(EventDef.Lobby.WeaponListChanged, SkinId, WeaponId)
 end
+
 function SkinViewModel:OnWeaponInfoChanged(SkinId, WeaponId)
   for i, v in ipairs(DataMgr.AllWeaponList) do
     if SkinData.WeaponSkinMap[tonumber(v.resourceId)] then
@@ -346,6 +368,7 @@ function SkinViewModel:OnWeaponInfoChanged(SkinId, WeaponId)
   self:UpdateWeaponSkinList()
   EventSystem.Invoke(EventDef.Skin.OnWeaponSkinUpdate, SkinId, WeaponId)
 end
+
 function SkinViewModel:OnUpdateMyHeroInfo()
   for i, v in ipairs(DataMgr.GetMyHeroInfo().heros) do
     if SkinData.HeroSkinMap[v.id] then
@@ -356,13 +379,16 @@ function SkinViewModel:OnUpdateMyHeroInfo()
   self:UpdateDetailsView()
   EventSystem.Invoke(EventDef.Skin.OnHeroSkinUpdate)
 end
+
 function SkinViewModel:OnHeirloomInfoChanged()
   self:UpdateRoleSkinList()
   self:UpdateDetailsView()
 end
+
 function SkinViewModel:GetWeaponResIdBySkinId(SkinId)
   return SkinData.GetWeaponResIdBySkinId(SkinId)
 end
+
 function SkinViewModel:GetHeirloomCurPreviewSkin(HeirloomId, EquipedSkinId)
   for i, v in pairs(HeirloomData.AllHeirloomInfo[HeirloomId]) do
     local skinId = self:GetHeroSkinByHeirloomLevel(HeirloomId, i)
@@ -378,9 +404,11 @@ function SkinViewModel:GetHeirloomCurPreviewSkin(HeirloomId, EquipedSkinId)
     return HeirloomData:GetHeirloomInfoByLevel(HeirloomId, unLockLv), unLockLv
   end
 end
+
 function SkinViewModel:GetHeirloomInfoListByHeirloomId(HeirloomId)
   return HeirloomData:GetHeirloomInfoListByHeirloomId(HeirloomId)
 end
+
 function SkinViewModel:IsUnLockHeirloom(HeirloomId, Level)
   local TargetSkinId, IsCurLevelHasSkin = HeirloomData:GetHeroSkinByHeirloomLevel(HeirloomId, Level)
   local heroSkinData = self:GetHeroSkinDataBySkinResId(TargetSkinId)
@@ -389,6 +417,7 @@ function SkinViewModel:IsUnLockHeirloom(HeirloomId, Level)
   end
   return HeirloomData:IsUnLockHeirloom(HeirloomId, Level)
 end
+
 function SkinViewModel:GetMaxUnLockHeirloomLevel(HeirloomId)
   local maxLv = HeirloomData:GetHeirloomMaxLevel(HeirloomId)
   local maxUnlockLv = -1
@@ -404,15 +433,19 @@ function SkinViewModel:GetMaxUnLockHeirloomLevel(HeirloomId)
   end
   return HeirloomData:GetMaxUnLockHeirloomLevel(HeirloomId)
 end
+
 function SkinViewModel:GetHeirloomMaxLevel(HeirloomId)
   return HeirloomData:GetHeirloomMaxLevel(HeirloomId)
 end
+
 function SkinViewModel:GetHeroSkinByHeirloomLevel(HeirloomId, Level)
   return HeirloomData:GetHeroSkinByHeirloomLevel(HeirloomId, Level)
 end
+
 function SkinViewModel:GetHeirloomIdBySkinId(SkinId)
   return HeirloomData:GetHeirloomBySkinId(SkinId)
 end
+
 function SkinViewModel:GetTbIdBySkinId(SkinId)
   local heroSkinTb = LuaTableMgr.GetLuaTableByName(TableNames.TBCharacterSkin)
   if heroSkinTb then
@@ -424,6 +457,7 @@ function SkinViewModel:GetTbIdBySkinId(SkinId)
   end
   return -1
 end
+
 function SkinViewModel:GetHeroSkinDataBySkinResId(SkinResId)
   for k, v in pairs(SkinData.HeroSkinMap) do
     for i, vSkinData in ipairs(v.SkinDataList) do
@@ -434,6 +468,7 @@ function SkinViewModel:GetHeroSkinDataBySkinResId(SkinResId)
   end
   return nil
 end
+
 function SkinViewModel:GetWeaponSkinDataBySkinResId(SkinResId)
   for k, v in pairs(SkinData.WeaponSkinMap) do
     for i, vSkinData in ipairs(v.SkinDataList) do
@@ -444,6 +479,7 @@ function SkinViewModel:GetWeaponSkinDataBySkinResId(SkinResId)
   end
   return nil
 end
+
 function SkinViewModel:CheckSkinCost(PackageID, SkinId)
   local OwnPackageNum = DataMgr.GetPackbackNumById(PackageID)
   local result, rowinfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBHeroSkinExchange, SkinId)
@@ -453,15 +489,18 @@ function SkinViewModel:CheckSkinCost(PackageID, SkinId)
   end
   return false
 end
+
 function SkinViewModel:GetHeroIDEquipID(curHeroId)
   return SkinData.HeroSkinMap[curHeroId].EquipedSkinId
 end
+
 function SkinViewModel:GetParentIdByResId(SkinID)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBCharacterSkin, SkinID)
   if Result then
     return RowInfo.ParentSkinId
   end
 end
+
 function SkinViewModel:CheckAllChildSkinUnlocked(ResID)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBCharacterSkin, ResID)
   if Result then
@@ -474,6 +513,7 @@ function SkinViewModel:CheckAllChildSkinUnlocked(ResID)
     return true
   end
 end
+
 function SkinViewModel:GetSpecialEffectStateByHeroID(HeroID)
   local HeroInfo = DataMgr.GetMyHeroInfo()
   for i, HeroInfo in ipairs(HeroInfo.heros) do
@@ -483,4 +523,5 @@ function SkinViewModel:GetSpecialEffectStateByHeroID(HeroID)
   end
   return {}
 end
+
 return SkinViewModel

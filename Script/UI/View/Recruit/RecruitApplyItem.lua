@@ -3,14 +3,17 @@ local ViewBase = require("Framework.UIMgr.ViewBase")
 local UKismetTextLibrary = UE.UKismetTextLibrary
 local RecruitHandler = require("Protocol.Recruit.RecruitHandler")
 local RecruitApplyItem = UnLua.Class()
+
 function RecruitApplyItem:Construct()
   self.Btn_Reject.OnClicked:Add(self, self.BtnReject_Onclicked)
   self.Btn_Agree.OnClicked:Add(self, self.BtnAgree_Onclicked)
 end
+
 function RecruitApplyItem:Destruct()
   self.Btn_Reject.OnClicked:Remove(self, self.BtnReject_Onclicked)
   self.Btn_Agree.OnClicked:Remove(self, self.BtnAgree_Onclicked)
 end
+
 function RecruitApplyItem:InitApplyItemInfo(PlayerInfo)
   UpdateVisibility(self, true)
   self.PlayerInfo = PlayerInfo
@@ -24,19 +27,24 @@ function RecruitApplyItem:InitApplyItemInfo(PlayerInfo)
     self.PlatformIconPanel:UpdateChannelInfo(PlayerInfo.roleid, false, PlayerInfo.channelUID)
   end
 end
+
 function RecruitApplyItem:Hide()
   UpdateVisibility(self, false)
 end
+
 function RecruitApplyItem:BtnAgree_Onclicked()
   RecruitHandler:SendAgreeRecruitApply(self.RoleID, DataMgr.GetTeamInfo().teamid, self)
 end
+
 function RecruitApplyItem:BtnReject_Onclicked()
   RecruitHandler:SendRefuseRecruitApply(self.RoleID, DataMgr.GetTeamInfo().teamid, self)
 end
+
 function RecruitApplyItem:RemoveSelf()
   UpdateVisibility(self, false)
   self.Parent:RemoveApplyItem(self.RoleID)
 end
+
 function RecruitApplyItem:OnHovered_HeadIcon(bIsShow, PlayerInfo, TargetItem)
   if bIsShow then
     self.Parent.WBP_SocialPlayerInfoTips:InitSocailPlayerInfoTips(self.PlayerInfo)
@@ -49,7 +57,9 @@ function RecruitApplyItem:OnHovered_HeadIcon(bIsShow, PlayerInfo, TargetItem)
     self.Parent.WBP_SocialPlayerInfoTips:Hide()
   end
 end
+
 function RecruitApplyItem:OnClicked_HeadIcon(MousePosition, SourceFrom)
   UIMgr:Show(ViewID.UI_ContactPersonOperateButtonPanel, nil, MousePosition, self.PlayerInfo, SourceFrom)
 end
+
 return RecruitApplyItem

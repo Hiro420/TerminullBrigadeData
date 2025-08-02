@@ -1,6 +1,7 @@
 local UnLua = _G.UnLua
 local rapidjson = require("rapidjson")
 local RewardIncreaseHandler = {}
+
 function RewardIncreaseHandler.RequestGetRewardIncreaseCount()
   HttpCommunication.RequestByGet("playergrowth/rewardincrease/rewardincreasecount", {
     GameInstance,
@@ -17,6 +18,7 @@ function RewardIncreaseHandler.RequestGetRewardIncreaseCount()
     end
   }, false, true)
 end
+
 function RewardIncreaseHandler.RequestReceiverewardIncrease()
   HttpCommunication.Request("playergrowth/rewardincrease/receiverewardincrease", {}, {
     GameInstance,
@@ -38,4 +40,5 @@ function RewardIncreaseHandler.RequestReceiverewardIncrease()
     end
   }, false, true)
 end
+
 return RewardIncreaseHandler

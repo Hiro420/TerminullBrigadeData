@@ -13,6 +13,7 @@ local SortModifyAttrRow = function(A, B)
   local ResultB, BAttrDisplay = GetRowData(DT.DT_HeroModifyAttribute, tostring(B))
   return AAttrDisplay.PriorityLevel > BAttrDisplay.PriorityLevel
 end
+
 function WBP_BattleRoleInfo_C:Construct()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if Character then
@@ -34,6 +35,7 @@ function WBP_BattleRoleInfo_C:Construct()
   ListenObjectMessage(nil, GMP.MSG_World_GenericModify_OnUpdateTeamSpirit, self, self.OnUpdateTeamSpirit)
   self.WBP_OperatingHintsFour.Btn_Main.OnClicked:Add(self, WBP_BattleRoleInfo_C.OnEscClick)
 end
+
 function WBP_BattleRoleInfo_C:InitBuffList()
   if not self:GetOwningPlayerPawn() then
     return
@@ -62,6 +64,7 @@ function WBP_BattleRoleInfo_C:InitBuffList()
   end
   EventSystem.AddListener(self, EventDef.Battle.RemoveInscriptionItem, WBP_BattleRoleInfo_C.BindOnRemoveInscriptionItem)
 end
+
 function WBP_BattleRoleInfo_C:OnOpen(MainPanel)
   self.MainPanel = MainPanel
   if self:IsAnimationPlaying(self.Ani_in_switch) then
@@ -73,6 +76,7 @@ function WBP_BattleRoleInfo_C:OnOpen(MainPanel)
     UnLua.LogError("WBP_BattleRoleInfo_C:OnOpen GamePadFocus Error:", ErrorsGamePadFocus)
   end
 end
+
 function WBP_BattleRoleInfo_C:GamePadFocus()
   if CheckIsVisility(self.WBP_TotalAttrTips) then
     self.WBP_TotalAttrTips.WBP_InteractTipWidget:SetFocus()
@@ -80,6 +84,7 @@ function WBP_BattleRoleInfo_C:GamePadFocus()
     self.WBP_BattleRoleEquipedWeaponItem:SetFocus()
   end
 end
+
 function WBP_BattleRoleInfo_C:InitElementInfo()
   local ElementList = LogicElement.AllActorElementList[self:GetOwningPlayerPawn()]
   if ElementList then
@@ -92,6 +97,7 @@ function WBP_BattleRoleInfo_C:InitElementInfo()
     end
   end
 end
+
 function WBP_BattleRoleInfo_C:RefreshBuffList()
   local BuffIndex = 0
   self:HoverBuffTips(false)
@@ -116,6 +122,7 @@ function WBP_BattleRoleInfo_C:RefreshBuffList()
   end
   HideOtherItem(self.WrapBoxBuffList, BuffIndex + 1)
 end
+
 function WBP_BattleRoleInfo_C:HoverBuffTips(bIsShow, BuffInfo, Item)
   UpdateVisibility(self.WBP_BagRoleBuffToolTip, bIsShow)
   if bIsShow then
@@ -124,6 +131,7 @@ function WBP_BattleRoleInfo_C:HoverBuffTips(bIsShow, BuffInfo, Item)
     ShowCommonTips(nil, Item, self.WBP_BagRoleBuffToolTip)
   end
 end
+
 function WBP_BattleRoleInfo_C:BindOnBuffChanged(AddedBuff)
   local BuffDataSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.UBuffDataGISubsystem:StaticClass())
   if not BuffDataSubsystem then
@@ -145,11 +153,13 @@ function WBP_BattleRoleInfo_C:BindOnBuffChanged(AddedBuff)
     self:RefreshBuffList()
   end
 end
+
 function WBP_BattleRoleInfo_C:BindOnBuffRemoved(RemovedBuff)
   table.RemoveItem(self.AllBuffIds, RemovedBuff.ID)
   self.AllBuffInfos[RemovedBuff.ID] = nil
   self:RefreshBuffList()
 end
+
 function WBP_BattleRoleInfo_C:InitBuffInfo()
   local BuffComp = self:GetOwningPlayerPawn():GetComponentByClass(UE.UBuffComponent)
   if not BuffComp then
@@ -174,6 +184,7 @@ function WBP_BattleRoleInfo_C:InitBuffInfo()
     end
   end
 end
+
 function WBP_BattleRoleInfo_C:BindOnClientUpdateInscriptionCD(InscriptionId, RemainTime)
   local LogicCommandSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.ULogicCommandDataSubSystem:StaticClass())
   if not LogicCommandSubsystem then
@@ -214,11 +225,13 @@ function WBP_BattleRoleInfo_C:BindOnClientUpdateInscriptionCD(InscriptionId, Rem
   end
   self:RefreshBuffList()
 end
+
 function WBP_BattleRoleInfo_C:BindOnRemoveInscriptionItem(InscriptionId)
   self.AllBuffInfos[InscriptionId] = nil
   table.RemoveItem(self.AllBuffIds, InscriptionId)
   self:RefreshBuffList()
 end
+
 function WBP_BattleRoleInfo_C:BindOnMainPanelChanged(LastActiveWidget, CurActiveWidget, MainPanel)
   self.MainPanel = MainPanel
   if CurActiveWidget == self then
@@ -244,6 +257,7 @@ function WBP_BattleRoleInfo_C:BindOnMainPanelChanged(LastActiveWidget, CurActive
     self.WBP_TotalAttrTips:Hide()
   end
 end
+
 function WBP_BattleRoleInfo_C:RefreshInfo(HeroId)
   local RowInfo = LogicRole.GetCharacterTableRow(HeroId)
   if not RowInfo then
@@ -272,12 +286,14 @@ function WBP_BattleRoleInfo_C:RefreshInfo(HeroId)
   local Text = RowInfo.Desc
   self.Txt_BGDesc:SetText(Text)
 end
+
 function WBP_BattleRoleInfo_C:OnUpdateTeamSpirit(UserID)
   if UserID == tonumber(DataMgr.GetUserId()) then
     return
   end
   self:RefreshGenericList()
 end
+
 function WBP_BattleRoleInfo_C:RefreshGenericList()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -331,6 +347,7 @@ function WBP_BattleRoleInfo_C:RefreshGenericList()
     HideOtherItem(self.WrapBoxGenericPassiveList, passiveIndex)
   end
 end
+
 function WBP_BattleRoleInfo_C:UpdateGenericItemHightLight(GenricModifyDataList, bIsHightLight)
   if bIsHightLight then
     for i = 1, self.WrapBoxGenericList:GetChildrenCount() do
@@ -353,6 +370,7 @@ function WBP_BattleRoleInfo_C:UpdateGenericItemHightLight(GenricModifyDataList, 
     end
   end
 end
+
 function WBP_BattleRoleInfo_C:UpdateGenericModifyTipsFunc(bIsShow, Data, ModifyChooseTypeParam, Slot, Item)
   if bIsShow then
     if ModifyChooseTypeParam == ModifyChooseType.GenericModify then
@@ -365,6 +383,7 @@ function WBP_BattleRoleInfo_C:UpdateGenericModifyTipsFunc(bIsShow, Data, ModifyC
     self.WBP_GenericModifyBagTips:Hide()
   end
 end
+
 function WBP_BattleRoleInfo_C:GetMaxAttributeValue(MaxAttribute)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -377,6 +396,7 @@ function WBP_BattleRoleInfo_C:GetMaxAttributeValue(MaxAttribute)
   local MaxAttributeValue = UE.UAbilitySystemBlueprintLibrary.GetFloatAttributeFromAbilitySystemComponent(ASC, MaxAttribute, nil)
   return MaxAttributeValue
 end
+
 function WBP_BattleRoleInfo_C:RefreshSkillInfo(RowInfo)
   local a
   local RoleStar = 1
@@ -387,36 +407,35 @@ function WBP_BattleRoleInfo_C:RefreshSkillInfo(RowInfo)
         local nameStr = "WBP_BattleRoleSkillItem" .. iSkillType
         local TargetSkillLevelInfo = SkillRowInfo[RoleStar]
         if TargetSkillLevelInfo then
-          if vSkillType ~= TargetSkillLevelInfo.Type then
-            goto lbl_53
+          if vSkillType == TargetSkillLevelInfo.Type then
+            local Item = self[nameStr]
+            if Item then
+              Item:RefreshInfo(TargetSkillLevelInfo)
+            end
+            break
           end
-          local Item = self[nameStr]
-          if Item then
-            Item:RefreshInfo(TargetSkillLevelInfo)
-          end
-          break
         elseif SkillRowInfo[1] then
-          if vSkillType ~= SkillRowInfo[1].Type then
-            goto lbl_53
+          if vSkillType == SkillRowInfo[1].Type then
+            local Item = self[nameStr]
+            if Item then
+              Item:RefreshInfo(SkillRowInfo[1])
+            end
+            break
           end
-          local Item = self[nameStr]
-          if Item then
-            Item:RefreshInfo(SkillRowInfo[1])
-          end
-          break
         else
           print("WBP_BattleRoleInfo_C:RefreshSkillInfo not found star1 info, skillgroupid:", SingleSkillId)
         end
       end
-      ::lbl_53::
     end
   end
 end
+
 function WBP_BattleRoleInfo_C:OnEquipedWeaponInfoChanged(HeroId)
   if self.CurHeroId == HeroId then
     self:RefreshWeaponSlotList()
   end
 end
+
 function WBP_BattleRoleInfo_C:RefreshWeaponSlotList()
   local EquippedWeaponInfo = DataMgr.GetEquippedWeaponList(self.CurHeroId)
   if EquippedWeaponInfo and EquippedWeaponInfo[1] then
@@ -425,9 +444,11 @@ function WBP_BattleRoleInfo_C:RefreshWeaponSlotList()
     LogicOutsideWeapon.RequestEquippedWeaponInfo(self.CurHeroId)
   end
 end
+
 function WBP_BattleRoleInfo_C:RefreshAttrDisplay()
   self.WBP_AbridgeAttrTips:InitAbridgeAttrTips(self:GetAttrDisplayList(), self)
 end
+
 function WBP_BattleRoleInfo_C:ExpandAttr()
   local EquippedWeaponInfo = DataMgr.GetEquippedWeaponList(self.CurHeroId)
   local resId = -1
@@ -437,9 +458,11 @@ function WBP_BattleRoleInfo_C:ExpandAttr()
   self.WBP_TotalAttrTips:Show(self:GetAttrDisplayList(), resId, self:GetModifyAttrList(), self)
   self.WBP_TotalAttrTips:SetFocus()
 end
+
 function WBP_BattleRoleInfo_C:BackToParentView()
   self.WBP_AbridgeAttrTips.BP_ButtonExpand:SetFocus()
 end
+
 function WBP_BattleRoleInfo_C:GetAttrDisplayList()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -452,6 +475,7 @@ function WBP_BattleRoleInfo_C:GetAttrDisplayList()
   table.sort(RowNameTb, SortAttrRow)
   return RowNameTb
 end
+
 function WBP_BattleRoleInfo_C:GetModifyAttrList()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -464,6 +488,7 @@ function WBP_BattleRoleInfo_C:GetModifyAttrList()
   table.sort(RowNameTb, SortModifyAttrRow)
   return RowNameTb
 end
+
 function WBP_BattleRoleInfo_C:BindOnShowSkillTips(IsShow, SkillGroupId, KeyName, bIsWeaponSkill, Item)
   if IsShow then
     local GenricModifyDataList = self:GetGenericListBySkillGroupId(SkillGroupId)
@@ -480,6 +505,7 @@ function WBP_BattleRoleInfo_C:BindOnShowSkillTips(IsShow, SkillGroupId, KeyName,
     self:UpdateGenericItemHightLight({}, false)
   end
 end
+
 function WBP_BattleRoleInfo_C:BindOnShowFetterSkillTips(IsShow, SkillGroupId, HeroId)
   if IsShow then
     local GenricModifyDataList = self:GetGenericListBySkillGroupId(SkillGroupId)
@@ -491,6 +517,7 @@ function WBP_BattleRoleInfo_C:BindOnShowFetterSkillTips(IsShow, SkillGroupId, He
     self:UpdateGenericItemHightLight({}, false)
   end
 end
+
 function WBP_BattleRoleInfo_C:GetGenericListBySkillGroupId(SkillGroupId)
   local SkillGroupInfo = LogicRole.GetSkillTableRow(SkillGroupId)
   if not SkillGroupInfo then
@@ -545,14 +572,17 @@ function WBP_BattleRoleInfo_C:GetGenericListBySkillGroupId(SkillGroupId)
   end
   return GenericNameList
 end
+
 function WBP_BattleRoleInfo_C:Hover(IsHover, WeaponInfo)
   self:BindOnLobbyWeaponSlotHoverStatusChanged(IsHover, WeaponInfo)
 end
+
 function WBP_BattleRoleInfo_C:OnEscClick()
   if UE.RGUtil.IsUObjectValid(self.MainPanel) then
     self.MainPanel:ExitMainPanel()
   end
 end
+
 function WBP_BattleRoleInfo_C:BindOnLobbyWeaponSlotHoverStatusChanged(IsHover, WeaponInfo)
   if IsHover then
     self.WeaponItemDisplayInfo:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -567,17 +597,21 @@ function WBP_BattleRoleInfo_C:BindOnLobbyWeaponSlotHoverStatusChanged(IsHover, W
     self.WeaponItemDisplayInfo:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_BattleRoleInfo_C:RefreshWeaponDisplayInfoTip(WeaponInfo, IsEquipped)
   self.WeaponItemDisplayInfo:InitInfo(WeaponInfo.resourceId, {}, true, WeaponInfo)
 end
+
 function WBP_BattleRoleInfo_C:OnExitPanel()
   self:PlayAnimation(self.Ani_out)
 end
+
 function WBP_BattleRoleInfo_C:OnClose()
   LogicRole.HideAllHeroLight()
   LogicRole.ChangeRoleSkyLight(false)
   self:BindOnLobbyWeaponSlotHoverStatusChanged(false, nil)
 end
+
 function WBP_BattleRoleInfo_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.RoleSkillTip, WBP_BattleRoleInfo_C.BindOnShowSkillTips, self)
   EventSystem.RemoveListener(EventDef.Lobby.RoleFetterSkillTip, WBP_BattleRoleInfo_C.BindOnShowFetterSkillTips, self)
@@ -586,4 +620,5 @@ function WBP_BattleRoleInfo_C:Destruct()
   EventSystem.RemoveListenerNew(EventDef.Lobby.EquippedWeaponInfoChanged, self, self.OnEquipedWeaponInfoChanged)
   UnListenObjectMessage(GMP.MSG_World_GenericModify_OnUpdateTeamSpirit, self)
 end
+
 return WBP_BattleRoleInfo_C

@@ -9,15 +9,18 @@ local HttpService = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(RGUti
 local ProficiencyViewModel = CreateDefaultViewModel()
 ProficiencyViewModel.propertyBindings = {}
 ProficiencyViewModel.subViewModels = {}
+
 function ProficiencyViewModel:OnInit()
   self.Super.OnInit(self)
   ProficiencyData:DealWithTable()
   EventSystem.AddListener(self, EventDef.Lobby.UpdateMyHeroInfo, self.BindOnUpdateMyHeroInfo)
 end
+
 function ProficiencyViewModel:OnShutdown()
   EventSystem.RemoveListener(EventDef.Lobby.UpdateMyHeroInfo, self.BindOnUpdateMyHeroInfo, self)
   self.Super.OnShutdown(self)
 end
+
 function ProficiencyViewModel:UpdateCurHeroId(...)
   local tbParam = {
     ...
@@ -25,22 +28,28 @@ function ProficiencyViewModel:UpdateCurHeroId(...)
   local CurHeroId = tbParam[1]
   self.CurHeroId = CurHeroId
 end
+
 function ProficiencyViewModel:GetCurHeroId()
   return self.CurHeroId
 end
+
 function ProficiencyViewModel:GetMaxUnlockProfyLevel()
   return ProficiencyData:GetMaxUnlockProfyLevel(self.CurHeroId)
 end
+
 function ProficiencyViewModel:GetEquippedSkinIdByHeroId(HeroId)
   return SkinData.GetEquipedSkinIdByHeroId(HeroId)
 end
+
 function ProficiencyViewModel:BindOnUpdateMyHeroInfo()
   if self:GetFirstView() then
     self:GetFirstView():RefreshLevelAndExpInfo()
   end
 end
+
 function ProficiencyViewModel:ResetData()
   self.CurSelectGearLv = nil
   self.CurHeroId = nil
 end
+
 return ProficiencyViewModel

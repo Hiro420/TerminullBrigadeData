@@ -8,6 +8,7 @@ local CheckIsAlone = function()
   end
   return 1 == TeamSubsystem.TeamInfo.AllPlayerInfos:Num()
 end
+
 function WBP_HUDInfo_C:Construct()
   UE.URGBlueprintLibrary.SetTimerForNextTick(self, {
     self,
@@ -82,6 +83,7 @@ function WBP_HUDInfo_C:Construct()
   ListenObjectMessage(nil, GMP.MSG_Damage_OnHealthLock_HealEnd, self, self.BindOnHealthLockHealEnd)
   ListenObjectMessage(nil, GMP.MSG_Game_PlayerRevivalSuccess, self, self.Bind_MSG_Game_PlayerRevivalSuccess)
 end
+
 function WBP_HUDInfo_C:InitListInfo()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -94,9 +96,11 @@ function WBP_HUDInfo_C:InitListInfo()
   self.ShieldList:UpdateBarGrid(ShieldSize.X, ShieldSize.Y)
   local HealthSlot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.HealthList)
   local HealthSize = HealthSlot:GetSize()
+  
   function self.HealthList.CanPlayReduceAnim(OldPercent, NewPercent)
     return OldPercent - NewPercent >= self.BigDamageHealthPercent
   end
+  
   self.HealthList:InitInfo(Character)
   self.HealthList:UpdateBarGrid(HealthSize.X, HealthSize.Y)
   self:UpdateHealthText()
@@ -107,6 +111,7 @@ function WBP_HUDInfo_C:InitListInfo()
     SetImageBrushBySoftObject(self.Icon_Head, RowData.HUDRoleIcon)
   end
 end
+
 function WBP_HUDInfo_C:InitTeamIndexInfo()
   print("InitTeamIndexInfo")
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
@@ -132,6 +137,7 @@ function WBP_HUDInfo_C:InitTeamIndexInfo()
     end
   end
 end
+
 function WBP_HUDInfo_C:InitRevivalInfo()
   local GS = UE.UGameplayStatics.GetGameState(self)
   if not GS then
@@ -151,6 +157,7 @@ function WBP_HUDInfo_C:InitRevivalInfo()
     self.RGStateController_EqualToZero:ChangeStatus(StatusStr)
   end
 end
+
 function WBP_HUDInfo_C:GetSelfTeamIndex()
   local TeamSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTeamSubsystem:StaticClass())
   if not TeamSubsystem then
@@ -167,6 +174,7 @@ function WBP_HUDInfo_C:GetSelfTeamIndex()
   end
   return 1
 end
+
 function WBP_HUDInfo_C:UpdateTeamCaptainVis()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -184,6 +192,7 @@ function WBP_HUDInfo_C:UpdateTeamCaptainVis()
     self.Image_Leader:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_HUDInfo_C:BindOnHealthAttributeChanged(NewValue, OldValue)
   self:UpdateHealthText()
   self:PlayLowHealthEffect(NewValue, OldValue)
@@ -195,20 +204,24 @@ function WBP_HUDInfo_C:BindOnHealthAttributeChanged(NewValue, OldValue)
     self:PlayAnimation(self.ShieldFlareGreen, 0.0, 1, UE.EUMGSequencePlayMode.Forward)
   end
 end
+
 function WBP_HUDInfo_C:BindOnMaxHealthAttributeChanged(NewValue, OldValue)
   self:UpdateHealthText()
   self:PlayLowHealthEffect(NewValue, OldValue)
 end
+
 function WBP_HUDInfo_C:BindOnShieldAttributeChanged(NewValue, OldValue)
   if NewValue <= 0 then
     self:PlayAnimation(self.ShieldExplo, 0.0, 1, UE.EUMGSequencePlayMode.Forward)
   end
 end
+
 function WBP_HUDInfo_C:BindOnExtraShieldAttributeChanged(NewValue, OldValue)
   if NewValue <= 0 then
     self:PlayAnimation(self.ShieldExplo_2, 0.0, 1, UE.EUMGSequencePlayMode.Forward)
   end
 end
+
 function WBP_HUDInfo_C:BindOnShieleAttributeChanged(NewValue, OldValue)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -223,9 +236,11 @@ function WBP_HUDInfo_C:BindOnShieleAttributeChanged(NewValue, OldValue)
   self.LastShield = CoreComp:GetShield()
   self:UpdateShieldText()
 end
+
 function WBP_HUDInfo_C:BindOnArmorAttributeChanged(NewValue, OldValue)
   self:UpdateArmor()
 end
+
 function WBP_HUDInfo_C:PlayLowHealthEffect(NewValue, OldValue)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -262,8 +277,10 @@ function WBP_HUDInfo_C:PlayLowHealthEffect(NewValue, OldValue)
     end
   end
 end
+
 function WBP_HUDInfo_C:InitRevival()
 end
+
 function WBP_HUDInfo_C:CheckIsLowHelath(CoreComp)
   if CoreComp:GetMaxHealth() < LowHelalthValue then
     return false
@@ -277,9 +294,11 @@ function WBP_HUDInfo_C:CheckIsLowHelath(CoreComp)
   end
   return true
 end
+
 function WBP_HUDInfo_C:BindOnTeamCaptainChanged()
   self:UpdateTeamCaptainVis()
 end
+
 function WBP_HUDInfo_C:GetAttributeValue(Attribute)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -292,6 +311,7 @@ function WBP_HUDInfo_C:GetAttributeValue(Attribute)
   local AttributeValue = UE.UAbilitySystemBlueprintLibrary.GetFloatAttributeFromAbilitySystemComponent(ASC, Attribute, nil)
   return AttributeValue
 end
+
 function WBP_HUDInfo_C:UpdateSpeakingTag(RoomName, OpenId, MemberId, Status)
   if not LogicTeam.CheckIsOwnerVoiceRoom(RoomName) then
     return
@@ -314,6 +334,7 @@ function WBP_HUDInfo_C:UpdateSpeakingTag(RoomName, OpenId, MemberId, Status)
     end
   end
 end
+
 function WBP_HUDInfo_C:UpdateSpeakingStatus(bIsShow)
   if CheckIsAlone() then
     UpdateVisibility(self.Image_Voice, false)
@@ -329,6 +350,7 @@ function WBP_HUDInfo_C:UpdateSpeakingStatus(bIsShow)
     end
   end
 end
+
 function WBP_HUDInfo_C:UpdateArmor()
   local ArmorValue = self:GetAttributeValue(self.ArmorAttribute)
   local MaxArmorValue = self:GetAttributeValue(self.MaxArmorAttribute)
@@ -345,6 +367,7 @@ function WBP_HUDInfo_C:UpdateArmor()
     self.Img_ArmorBar:SetClippingValue(ArmorValue / MaxArmorValue)
   end
 end
+
 function WBP_HUDInfo_C:HideArmor()
   self.Img_ArmorBar:SetVisibility(UE.ESlateVisibility.Collapsed)
   if self.IsPlayingArmorAnim then
@@ -352,22 +375,26 @@ function WBP_HUDInfo_C:HideArmor()
     EventSystem.Invoke(EventDef.HUD.PlayScreenEdgeShieldEffect, self.ArmorHideAnim)
   end
 end
+
 function WBP_HUDInfo_C:PlayHeartModifyAnim()
   self.ShieldFX:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.HealthFX:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self:PlayAnimationForward(self.ShieldFXAnim)
   self:PlayAnimationForward(self.HealthFXAnim)
 end
+
 function WBP_HUDInfo_C:BindOnHealthLockHealBegin(...)
   print("WBP_HUDInfo_C:BindOnHealthLockHealBegin")
   self:PlayAnimation(self.Ani_DeathProtection_in)
   self.WBP_HeartModifyScreenEffect_second:PlayAnimation(self.WBP_HeartModifyScreenEffect_second.Ani_DeathProtection_in)
 end
+
 function WBP_HUDInfo_C:BindOnHealthLockHealEnd(...)
   print("WBP_HUDInfo_C:BindOnHealthLockHealEnd")
   self:PlayAnimation(self.Ani_DeathProtection_out)
   self.WBP_HeartModifyScreenEffect_second:PlayAnimation(self.WBP_HeartModifyScreenEffect_second.Ani_DeathProtection_out)
 end
+
 function WBP_HUDInfo_C:Bind_MSG_Game_PlayerRevivalSuccess(UserId, RevivalCount, RevivalCoinNum)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -379,6 +406,7 @@ function WBP_HUDInfo_C:Bind_MSG_Game_PlayerRevivalSuccess(UserId, RevivalCount, 
     self.RGStateController_EqualToZero:ChangeStatus(StatusStr)
   end
 end
+
 function WBP_HUDInfo_C:Destruct()
   self:BindHealthAndShieldAttributeModifyText(false)
   local Character = self:GetOwningPlayerPawn()
@@ -432,4 +460,5 @@ function WBP_HUDInfo_C:Destruct()
   end
   self.WBP_HeartModifyScreenEffect_second:StopAllAnimations()
 end
+
 return WBP_HUDInfo_C

@@ -1,4 +1,5 @@
 local WBP_ThumbnailModeToolTip_C = UnLua.Class()
+
 function WBP_ThumbnailModeToolTip_C:RefreshInfo(GameModeIndex, LevelFloorInfo)
   local Result, RowInfo = GetRowData(DT.DT_GameMode, tostring(GameModeIndex))
   if not Result then
@@ -53,4 +54,5 @@ function WBP_ThumbnailModeToolTip_C:RefreshInfo(GameModeIndex, LevelFloorInfo)
     self.Txt_LockTip:SetText(Text)
   end
 end
+
 return WBP_ThumbnailModeToolTip_C

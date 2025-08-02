@@ -9,21 +9,26 @@ AppearanceViewModel.propertyBindings = {
   AppearanceToggleType = EAppearanceToggleStatus.Skin
 }
 AppearanceViewModel.subViewModels = {}
+
 function AppearanceViewModel:OnInit()
   self.Super.OnInit(self)
 end
+
 function AppearanceViewModel:OnShutdown()
   self.Super.OnShutdown(self)
 end
+
 local AppearanceTypeToWidgetNameReflaction = {
   [EAppearanceToggleStatus.Skin] = ViewID.UI_Skin,
   [EAppearanceToggleStatus.Heirloom] = ViewID.UI_Heirloom,
   [EAppearanceToggleStatus.Communication] = ViewID.UI_Communication
 }
+
 function AppearanceViewModel:RegisterPropertyChanged(BindingTable, View)
   self.Super.RegisterPropertyChanged(self, BindingTable, View)
   EventSystem.Invoke(EventDef.Lobby.WeaponListChanged)
 end
+
 function AppearanceViewModel:Switch(AppearanceToggleTypeParam)
   if self.CurShowWidgetName then
     local Widget = UIMgr:GetFromActiveView(self.CurShowWidgetName)
@@ -37,6 +42,7 @@ function AppearanceViewModel:Switch(AppearanceToggleTypeParam)
     self.CurShowWidgetName = TargetWidgetName
   end
 end
+
 function AppearanceViewModel:SwitchLink(AppearanceToggleTypeParam, LinkParams)
   if self.CurShowWidgetName then
     local Widget = UIMgr:GetFromActiveView(self.CurShowWidgetName)
@@ -50,6 +56,7 @@ function AppearanceViewModel:SwitchLink(AppearanceToggleTypeParam, LinkParams)
     self.CurShowWidgetName = TargetWidgetName
   end
 end
+
 function AppearanceViewModel:UpdateCurHeroId(...)
   self:Switch(true)
   local tbParam = {
@@ -62,6 +69,7 @@ function AppearanceViewModel:UpdateCurHeroId(...)
   CommunicationViewModel:UpdateCurHeroId(CurHeroId)
   AppearanceData:SetCurHeroId(CurHeroId)
 end
+
 function AppearanceViewModel:UpdateHeroSkinDetailsView(skinId)
   if self:GetFirstView() then
     local result, row = GetRowData(DT.DT_DisplaySkinUIColor, skinId)
@@ -73,9 +81,11 @@ function AppearanceViewModel:UpdateHeroSkinDetailsView(skinId)
     end
   end
 end
+
 function AppearanceViewModel:UpdateUIColor(Color)
   if self:GetFirstView() then
     self:GetFirstView():UpdateUIColor(Color)
   end
 end
+
 return AppearanceViewModel

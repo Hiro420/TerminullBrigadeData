@@ -1,7 +1,9 @@
 local SocailPlayerInfoTips = Class()
+
 function SocailPlayerInfoTips:Construct()
   self.Overridden.Construct(self)
 end
+
 function SocailPlayerInfoTips:InitSocailPlayerInfoTips(PlayerInfo)
   self:StopAnimation(self.Ani_out)
   UpdateVisibility(self, true)
@@ -44,13 +46,16 @@ function SocailPlayerInfoTips:InitSocailPlayerInfoTips(PlayerInfo)
   end, false)
   self:PlayAnimation(self.Ani_in)
 end
+
 function SocailPlayerInfoTips:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     UpdateVisibility(self, false)
   end
 end
+
 function SocailPlayerInfoTips:Hide()
   self:StopAnimation(self.Ani_in)
   self:PlayAnimation(self.Ani_out)
 end
+
 return SocailPlayerInfoTips

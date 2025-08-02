@@ -1,4 +1,5 @@
 local WBP_CustomKeyItemList = UnLua.Class()
+
 function WBP_CustomKeyItemList:Show(LabelName, LabelKeyNames, InputType)
   UpdateVisibility(self, true)
   self.LabelName = LabelName
@@ -24,6 +25,7 @@ function WBP_CustomKeyItemList:Show(LabelName, LabelKeyNames, InputType)
   HideOtherItem(self.ItemList, Index, true)
   EventSystem.AddListenerNew(EventDef.GameSettings.OnFocusGamePadCustomKeyItem, self, self.BindOnFocusGamePadCustomKeyItem)
 end
+
 function WBP_CustomKeyItemList:DoCustomNavigation(Type)
   if Type == UE.EUINavigation.Left then
     EventSystem.Invoke(EventDef.GameSettings.OnItemNavigation, Type)
@@ -31,6 +33,7 @@ function WBP_CustomKeyItemList:DoCustomNavigation(Type)
     EventSystem.Invoke(EventDef.GameSettings.OnGamepadCustomKeyNavitionUp, self.LabelKeyNames[1])
   end
 end
+
 function WBP_CustomKeyItemList:BindOnFocusGamePadCustomKeyItem(KeyItemName)
   local Index = table.IndexOf(self.LabelKeyNames, KeyItemName)
   if not Index then
@@ -49,6 +52,7 @@ function WBP_CustomKeyItemList:BindOnFocusGamePadCustomKeyItem(KeyItemName)
     end
   end
 end
+
 function WBP_CustomKeyItemList:Hide(...)
   UpdateVisibility(self, false)
   local AllChildren = self.ItemList:GetAllChildren()
@@ -57,7 +61,9 @@ function WBP_CustomKeyItemList:Hide(...)
   end
   EventSystem.RemoveListenerNew(EventDef.GameSettings.OnFocusGamePadCustomKeyItem, self, self.BindOnFocusGamePadCustomKeyItem)
 end
+
 function WBP_CustomKeyItemList:Destruct(...)
   self:Hide()
 end
+
 return WBP_CustomKeyItemList

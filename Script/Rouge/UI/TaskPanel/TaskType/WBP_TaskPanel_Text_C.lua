@@ -1,4 +1,5 @@
 local WBP_TaskPanel_Text_C = UnLua.Class()
+
 function WBP_TaskPanel_Text_C:InitEventPanel(TaskEventConfig, EventId, TaskId)
   self.EventId = EventId
   self.TaskId = TaskId
@@ -30,6 +31,7 @@ function WBP_TaskPanel_Text_C:InitEventPanel(TaskEventConfig, EventId, TaskId)
     self.Txt_TaskName:SetText(TaskEventConfig.EventName)
   end
 end
+
 function WBP_TaskPanel_Text_C:UpdateEventPanel(TaskInfo)
   for Index, EventData in ipairs(TaskInfo.Current:ToTable()) do
     if EventData.EventId == self.EventId and self.Status ~= EventData.Status then
@@ -38,6 +40,7 @@ function WBP_TaskPanel_Text_C:UpdateEventPanel(TaskInfo)
     end
   end
 end
+
 function WBP_TaskPanel_Text_C:SetWidgetStyle(Status)
   UpdateVisibility(self.Img_TaskCompleted, Status == UE.ERGActionEvent_TaskConditionStatus.Meet)
   if Status == UE.ERGActionEvent_TaskConditionStatus.Meet then
@@ -49,4 +52,5 @@ function WBP_TaskPanel_Text_C:SetWidgetStyle(Status)
     SetImageBrushBySoftObjectPath(self.Img_TaskState, self.TaskEventConfig.EventErrorIcon)
   end
 end
+
 return WBP_TaskPanel_Text_C

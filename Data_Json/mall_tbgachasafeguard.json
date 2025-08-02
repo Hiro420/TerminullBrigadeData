@@ -1,0 +1,65 @@
+[
+  {
+    "ID": 1,
+    "Name": "卡池1的循环小保底",
+    "Desc": "T2紫色小保底",
+    "Rare": 3,
+    "GachaTimes": 10,
+    "SafeguardGiftId": 400002,
+    "SafeguardTriggerTimes": 0
+  },
+  {
+    "ID": 2,
+    "Name": "卡池1的许循环保底",
+    "Desc": "橙色保底",
+    "Rare": 4,
+    "GachaTimes": 40,
+    "SafeguardGiftId": 400003,
+    "SafeguardTriggerTimes": 0
+  },
+  {
+    "ID": 3,
+    "Name": "卡池1的大保底",
+    "Desc": "橙pro大保底",
+    "Rare": 4,
+    "GachaTimes": 80,
+    "SafeguardGiftId": 400004,
+    "SafeguardTriggerTimes": 0
+  },
+  {
+    "ID": 4,
+    "Name": "卡池2的循环小保底",
+    "Desc": "紫色小保底",
+    "Rare": 3,
+    "GachaTimes": 10,
+    "SafeguardGiftId": 400006,
+    "SafeguardTriggerTimes": 0
+  },
+  {
+    "ID": 5,
+    "Name": "卡池2的许循环保底",
+    "Desc": "橙色保底",
+    "Rare": 4,
+    "GachaTimes": 40,
+    "SafeguardGiftId": 400007,
+    "SafeguardTriggerTimes": 0
+  },
+  {
+    "ID": 6,
+    "Name": "卡池2的大保底",
+    "Desc": "橙pro大保底",
+    "Rare": 4,
+    "GachaTimes": 80,
+    "SafeguardGiftId": 400008,
+    "SafeguardTriggerTimes": 0
+  },
+  {
+    "ID": 7,
+    "Name": "传家宝大保底",
+    "Desc": "传家宝大保底",
+    "Rare": 5,
+    "GachaTimes": 800,
+    "SafeguardGiftId": 400009,
+    "SafeguardTriggerTimes": 0
+  }
+]

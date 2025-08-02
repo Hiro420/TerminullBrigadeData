@@ -1,4 +1,5 @@
 local WBP_Shop_Equipment_Props_C = UnLua.Class()
+
 function WBP_Shop_Equipment_Props_C:Construct()
   self:UpdateScrollList()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
@@ -7,6 +8,7 @@ function WBP_Shop_Equipment_Props_C:Construct()
     Character.AttributeModifyComponent.OnRemoveModify:Add(self, self.UpdateScrollList)
   end
 end
+
 function WBP_Shop_Equipment_Props_C:UpdateScrollList()
   self:UpdateScrollTips(false)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
@@ -45,6 +47,7 @@ function WBP_Shop_Equipment_Props_C:UpdateScrollList()
     end
   end
 end
+
 function WBP_Shop_Equipment_Props_C:UpdateScrollTips(bIsShow, ModifyId, Item)
   if bIsShow then
     self.WBP_ScrollPickUpTipsView:Show(false)
@@ -63,4 +66,5 @@ function WBP_Shop_Equipment_Props_C:UpdateScrollTips(bIsShow, ModifyId, Item)
   end
   self.WBP_ScrollPickUpTipsView:InitScrollTipsView(ModifyId, EScrollTipsOpenType.EFromShop)
 end
+
 return WBP_Shop_Equipment_Props_C

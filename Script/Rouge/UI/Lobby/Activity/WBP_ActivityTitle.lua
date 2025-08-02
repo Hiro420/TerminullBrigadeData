@@ -1,7 +1,9 @@
 local WBP_ActivityTitle = UnLua.Class()
+
 function WBP_ActivityTitle:Construct()
   self.Btn_RuleDesc.OnClicked:Add(self, self.BindOnRuleDescButtonClicked)
 end
+
 function WBP_ActivityTitle:Show(ActivityId)
   self.ActivityId = ActivityId
   UpdateVisibility(self, true)
@@ -14,10 +16,13 @@ function WBP_ActivityTitle:Show(ActivityId)
   self.Txt_Time:SetText(ActivityRowInfo.openTime)
   self.Txt_Desc:SetText(ActivityRowInfo.desc)
 end
+
 function WBP_ActivityTitle:Hide(...)
   UpdateVisibility(self, false)
 end
+
 function WBP_ActivityTitle:BindOnRuleDescButtonClicked(...)
   UIMgr:Show(ViewID.UI_ActivityRuleDesc, false, self.ActivityId)
 end
+
 return WBP_ActivityTitle

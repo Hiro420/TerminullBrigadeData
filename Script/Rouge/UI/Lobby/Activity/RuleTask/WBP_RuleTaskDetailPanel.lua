@@ -1,8 +1,10 @@
 local WBP_RuleTaskDetailPanel = UnLua.Class()
 local RuleTaskData = require("Modules.RuleTask.RuleTaskData")
+
 function WBP_RuleTaskDetailPanel:Construct()
   self.Btn_Receive.OnMainButtonClicked:Add(self, self.BindOnReceiveButtonClicked)
 end
+
 function WBP_RuleTaskDetailPanel:OnShow(RuleInfoId)
   UpdateVisibility(self, true)
   self.RuleInfoId = RuleInfoId
@@ -25,6 +27,7 @@ function WBP_RuleTaskDetailPanel:OnShow(RuleInfoId)
   self:RefreshTaskScrollList()
   EventSystem.AddListenerNew(EventDef.MainTask.OnMainTaskRefres, self, self.BindOnMainTaskGroupRefresh)
 end
+
 function WBP_RuleTaskDetailPanel:InitBG(TargetBGPath)
   local AssetObj
   if not UE.UKismetStringLibrary.IsEmpty(TargetBGPath) then
@@ -51,6 +54,7 @@ function WBP_RuleTaskDetailPanel:InitBG(TargetBGPath)
     TargetItem:PlayAnimation(TargetItem.Ani_GenericModifyChoose_in)
   end
 end
+
 function WBP_RuleTaskDetailPanel:RefreshMainTaskGroupInfo()
   local Result, TaskGroupRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBTaskGroupData, self.MainTaskGroupId)
   if not Result then
@@ -66,6 +70,7 @@ function WBP_RuleTaskDetailPanel:RefreshMainTaskGroupInfo()
   end
   self:RefreshMainTaskGroupStatus()
 end
+
 function WBP_RuleTaskDetailPanel:RefreshMainTaskGroupStatus(...)
   local FinishTaskNum, AllTaskNum = RuleTaskData:GetTaskGroupProgress(self.MainTaskGroupId)
   self.Txt_CurFinishTaskNum:SetText(FinishTaskNum)
@@ -90,6 +95,7 @@ function WBP_RuleTaskDetailPanel:RefreshMainTaskGroupStatus(...)
   self.Btn_Receive:SetStyleByBottomStyleRowName(StyleName)
   UpdateVisibility(self.NiagaraSystemWidget_94, MainGroupState == ETaskGroupState.Finished)
 end
+
 function WBP_RuleTaskDetailPanel:RefreshTaskScrollList(...)
   local MainResult, MainTaskGroupRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBTaskGroupData, self.MainTaskGroupId)
   if not MainResult then
@@ -125,6 +131,7 @@ function WBP_RuleTaskDetailPanel:RefreshTaskScrollList(...)
   end
   HideOtherItem(self.ScrollBox_Task, Index)
 end
+
 function WBP_RuleTaskDetailPanel:BindOnMainTaskGroupRefresh(TaskGroupIdList)
   local IsContainMainTaskGroup = table.Contain(TaskGroupIdList, self.MainTaskGroupId)
   if IsContainMainTaskGroup then
@@ -138,6 +145,7 @@ function WBP_RuleTaskDetailPanel:BindOnMainTaskGroupRefresh(TaskGroupIdList)
     self:RefreshTaskItemStatus()
   end
 end
+
 function WBP_RuleTaskDetailPanel:RefreshTaskItemStatus(...)
   local AllChildren = self.ScrollBox_Task:GetAllChildren()
   for k, SingleItem in pairs(AllChildren) do
@@ -146,6 +154,7 @@ function WBP_RuleTaskDetailPanel:RefreshTaskItemStatus(...)
     end
   end
 end
+
 function WBP_RuleTaskDetailPanel:BindOnReceiveButtonClicked()
   local MainGroupState = RuleTaskData:GetTaskGroupState(self.MainTaskGroupId)
   if MainGroupState ~= ETaskGroupState.Finished then
@@ -153,9 +162,11 @@ function WBP_RuleTaskDetailPanel:BindOnReceiveButtonClicked()
   end
   Logic_MainTask.ReceiveTaskGroupAward(self.MainTaskGroupId)
 end
+
 function WBP_RuleTaskDetailPanel:ListenForEscKeyPressed(...)
   UIMgr:Hide(ViewID.UI_RuleTaskDetailPanel)
 end
+
 function WBP_RuleTaskDetailPanel:OnHide()
   UpdateVisibility(self, false)
   self.WBP_InteractTipWidget:UnBindInteractAndClickEvent(self, self.ListenForEscKeyPressed)
@@ -168,7 +179,9 @@ function WBP_RuleTaskDetailPanel:OnHide()
   end
   self:StopAllAnimations()
 end
+
 function WBP_RuleTaskDetailPanel:Destruct(...)
   self:OnHide()
 end
+
 return WBP_RuleTaskDetailPanel

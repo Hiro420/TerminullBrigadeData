@@ -1,22 +1,22 @@
 ﻿{
   "Windows": {
-    "PlatformName": "Windows",
     "LightIconPath": "/Game/Rouge/UI/Atlas/LobbyFriend/Frames/Icon_Pc_01.Icon_Pc_01",
+    "PlatformName": "Windows",
     "DarkIconPath": "/Game/Rouge/UI/Atlas/LobbyFriend/Frames/Icon_Pc_01.Icon_Pc_01"
   },
-  "PS5": {
-    "PlatformName": "PS5",
-    "LightIconPath": "/Game/Rouge/UI/Atlas/LobbyFriend/Frames/Icon_Ps_02.Icon_Ps_02",
-    "DarkIconPath": "/Game/Rouge/UI/Atlas/LobbyFriend/Frames/Icon_Ps_03.Icon_Ps_03"
-  },
   "OhterConsole": {
-    "PlatformName": "OhterConsole",
     "LightIconPath": "/Game/Rouge/UI/Atlas/LobbyFriend/Frames/Icon_Handle_01.Icon_Handle_01",
+    "PlatformName": "OhterConsole",
     "DarkIconPath": "/Game/Rouge/UI/Atlas/LobbyFriend/Frames/Icon_Handle_01.Icon_Handle_01"
   },
   "XSX": {
-    "PlatformName": "XSX",
     "LightIconPath": "/Game/Rouge/UI/Atlas/LobbyFriend/Frames/Icon_Xbox_01.Icon_Xbox_01",
+    "PlatformName": "XSX",
     "DarkIconPath": "/Game/Rouge/UI/Atlas/LobbyFriend/Frames/Icon_Xbox_01.Icon_Xbox_01"
+  },
+  "PS5": {
+    "LightIconPath": "/Game/Rouge/UI/Atlas/LobbyFriend/Frames/Icon_Ps_02.Icon_Ps_02",
+    "PlatformName": "PS5",
+    "DarkIconPath": "/Game/Rouge/UI/Atlas/LobbyFriend/Frames/Icon_Ps_03.Icon_Ps_03"
   }
 }

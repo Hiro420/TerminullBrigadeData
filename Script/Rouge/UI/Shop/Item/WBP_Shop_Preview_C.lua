@@ -1,4 +1,5 @@
 local WBP_Shop_Preview_C = UnLua.Class()
+
 function WBP_Shop_Preview_C:RefreshItemPreview(ItemInfo)
   if nil == ItemInfo then
     print("WBP_Shop_Preview_C ,RefreshItemPreview() ItemInfo == nil")
@@ -46,6 +47,7 @@ function WBP_Shop_Preview_C:RefreshItemPreview(ItemInfo)
     self:UpdateRecoveryPropsList(ItemRowInfo)
   end
 end
+
 function WBP_Shop_Preview_C:UpdateAttributeList(ItemRowInfo)
   local BuffDataSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.UBuffDataGISubsystem:StaticClass())
   if not BuffDataSubsystem then
@@ -102,6 +104,7 @@ function WBP_Shop_Preview_C:UpdateAttributeList(ItemRowInfo)
   self.NewShield:SetText(ShieldStr)
   self.NewShieldMax:SetText(MaxShieldStr)
 end
+
 function WBP_Shop_Preview_C:CalcAttributeAddition(ModifyAttribute)
   if ModifyAttribute.ValueModifyRule == UE.EAttributeModifyRule.StaticValue then
     return ModifyAttribute.BaseValue
@@ -123,6 +126,7 @@ function WBP_Shop_Preview_C:CalcAttributeAddition(ModifyAttribute)
     return TargetValue
   end
 end
+
 function WBP_Shop_Preview_C:GetAttributeValue(Attribute)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -135,6 +139,7 @@ function WBP_Shop_Preview_C:GetAttributeValue(Attribute)
   local AttributeValue = UE.UAbilitySystemBlueprintLibrary.GetFloatAttributeFromAbilitySystemComponent(ASC, Attribute, nil)
   return AttributeValue
 end
+
 function WBP_Shop_Preview_C:UpdateRecoveryPropsList(ItemRowInfo)
   local BuffDataSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.UBuffDataGISubsystem:StaticClass())
   if not BuffDataSubsystem then
@@ -171,4 +176,5 @@ function WBP_Shop_Preview_C:UpdateRecoveryPropsList(ItemRowInfo)
   HealthStr = string.format("%d", UE.UKismetMathLibrary.Round(tonumber(string.format("%.2f", math.clamp(CurHealth, 0, CurMaxHealth)))))
   self.NewHealth_2:SetText(HealthStr)
 end
+
 return WBP_Shop_Preview_C

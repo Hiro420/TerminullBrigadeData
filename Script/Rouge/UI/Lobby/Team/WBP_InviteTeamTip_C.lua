@@ -1,10 +1,12 @@
 local BattleLagacyData = require("Modules.BattleLagacy.BattleLagacyData")
 local WBP_InviteTeamTip_C = UnLua.Class()
+
 function WBP_InviteTeamTip_C:Construct()
   self.Btn_Confirm.OnClicked:Add(self, self.BindOnConfirmButtonClicked)
   self.Btn_Refuse.OnClicked:Add(self, self.BindOnRefuseButtonClicked)
   EventSystem.AddListenerNew(EventDef.BattleLagacy.OnGetCurrBattleLagacyLogin, self, self.OnGetCurrBattleLagacyLogin)
 end
+
 function WBP_InviteTeamTip_C:ClearSession()
   if not UE.URGBlueprintLibrary.IsPlatformConsole() then
     return
@@ -14,6 +16,7 @@ function WBP_InviteTeamTip_C:ClearSession()
     RGPlayerSessionSubsystem:Clear()
   end
 end
+
 function WBP_InviteTeamTip_C:BindOnConfirmButtonClicked()
   self:ClearSession()
   if not LogicTeam.IsTeammate(self.InviterInfo.InviterId) then
@@ -30,6 +33,7 @@ function WBP_InviteTeamTip_C:BindOnConfirmButtonClicked()
   end
   LogicTeam.ShowNextTeamInviteTipWindow()
 end
+
 function WBP_InviteTeamTip_C:BindOnRefuseButtonClicked()
   self:ClearSession()
   if not LogicTeam.IsTeammate(self.InviterInfo.InviterId) then
@@ -46,6 +50,7 @@ function WBP_InviteTeamTip_C:BindOnRefuseButtonClicked()
   end
   LogicTeam.ShowNextTeamInviteTipWindow()
 end
+
 function WBP_InviteTeamTip_C:OnGetCurrBattleLagacyLogin()
   UpdateVisibility(self.RGTextBattleLagacyInvalid, false)
   if self.InviterInfo and self.InviterInfo.InviteJoinTeamInfo and BattleLagacyData.CurBattleLagacyData ~= nil and BattleLagacyData.CurBattleLagacyData.BattleLagacyId ~= "0" then
@@ -55,6 +60,7 @@ function WBP_InviteTeamTip_C:OnGetCurrBattleLagacyLogin()
     end
   end
 end
+
 function WBP_InviteTeamTip_C:RefreshInfo(InviterInfo)
   self.InviterInfo = InviterInfo
   self:OnGetCurrBattleLagacyLogin()
@@ -110,25 +116,30 @@ function WBP_InviteTeamTip_C:RefreshInfo(InviterInfo)
     self.PlatformIconPanel:UpdateChannelInfo(self.InviterInfo.InviterId, false, self.InviterInfo.PlayerInfo.channelUID)
   end
 end
+
 function WBP_InviteTeamTip_C:PlayOutAnimation()
   self.IsInitiativeStop = false
   self:PlayAnimationForward(self.Ani_out)
 end
+
 function WBP_InviteTeamTip_C:OnAnimationFinished(Animation)
   if Animation == self.Ani_out and not self.IsInitiativeStop then
     UIMgr:Hide(ViewID.UI_InviteTeamTip)
   end
 end
+
 function WBP_InviteTeamTip_C:OnHide()
   self.InviterInfo = {}
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.RemainTimeHandle) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.RemainTimeHandle)
   end
 end
+
 function WBP_InviteTeamTip_C:Destruct()
   EventSystem.RemoveListenerNew(EventDef.BattleLagacy.OnGetCurrBattleLagacyLogin, self, self.OnGetCurrBattleLagacyLogin)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.RemainTimeHandle) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.RemainTimeHandle)
   end
 end
+
 return WBP_InviteTeamTip_C

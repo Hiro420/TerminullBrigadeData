@@ -3,6 +3,7 @@ local CostTextColor = {
   White = UE.FLinearColor(1.0, 1.0, 1.0, 1.0),
   Yellow = UE.FLinearColor(0.381326, 0.116971, 0.015996, 1.0)
 }
+
 function WBP_ModTitleInfo_C:InitModTitles(bIsLegend, ModInfo)
   self.ModType = ModInfo.ModType
   self.ChooseType = UE.ERGMODChooseType.Character
@@ -34,6 +35,7 @@ function WBP_ModTitleInfo_C:InitModTitles(bIsLegend, ModInfo)
   self.TextBlock_MaxNumber:SetColorAndOpacity(SlateColor)
   self:UpdateModTitles()
 end
+
 function WBP_ModTitleInfo_C:UpdateModTitles()
   local pawn = self:GetOwningPlayerPawn()
   if pawn then
@@ -51,4 +53,5 @@ function WBP_ModTitleInfo_C:UpdateModTitles()
     print("Pawn is null.")
   end
 end
+
 return WBP_ModTitleInfo_C

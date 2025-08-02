@@ -1026,7 +1026,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Legend01_01.Icon_Core_Legend01_01",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_240021", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_240021", "\233\129\147\229\133\183"),
     Rare = 4,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -1095,14 +1095,14 @@ local resource_tbgeneral = {
   },
   [240026] = {
     ID = 240026,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_240026", "\231\130\189\231\131\173\231\132\166\229\156\159-\231\168\128\230\156\137\230\168\161\231\187\132\239\188\136\229\186\159\229\188\131\239\188\137"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_240026", ""),
-    Note = "",
-    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleCombined_01.Icon_PuzzleCombined_01",
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_240026", "\228\188\160\229\165\135\230\168\161\231\187\132\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_240026", "\229\135\187\232\180\165\230\153\174\233\128\154\233\166\150\233\162\134\229\146\140\228\184\150\231\149\140\233\166\150\233\162\134\230\156\128\233\171\152\229\143\175\232\142\183\229\190\151\230\142\137\232\144\189<Legend>\228\188\160\229\165\135</>[\231\169\185\233\148\139][\232\163\130\229\143\152]\230\168\161\231\187\132\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    Note = "\230\169\153\232\137\178\230\168\161\231\187\132T3\231\142\175\233\131\189",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleCombined_2.Icon_PuzzleCombined_2",
     CurrencyIcon = "",
     Type = 2,
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_240026", "\233\129\147\229\133\183"),
-    Rare = 2,
+    Rare = 4,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -1110,14 +1110,14 @@ local resource_tbgeneral = {
   },
   [240027] = {
     ID = 240027,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_240027", "\231\130\189\231\131\173\231\132\166\229\156\159-\229\143\178\232\175\151\230\168\161\231\187\132\239\188\136\229\186\159\229\188\131\239\188\137"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_240027", ""),
-    Note = "",
-    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleCombined_01.Icon_PuzzleCombined_01",
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_240027", "\228\188\160\229\165\135\230\168\161\231\187\132\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_240027", "\229\135\187\232\180\165\230\153\174\233\128\154\233\166\150\233\162\134\229\146\140\228\184\150\231\149\140\233\166\150\233\162\134\230\156\128\233\171\152\229\143\175\232\142\183\229\190\151\230\142\137\232\144\189<Legend>\228\188\160\229\165\135</>[\231\169\185\233\148\139][\232\163\130\229\143\152]\230\168\161\231\187\132\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    Note = "\230\169\153\232\137\178\230\168\161\231\187\132T4\231\142\175\233\131\189",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleCombined_2.Icon_PuzzleCombined_2",
     CurrencyIcon = "",
     Type = 2,
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_240027", "\233\129\147\229\133\183"),
-    Rare = 3,
+    Rare = 4,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -1125,14 +1125,14 @@ local resource_tbgeneral = {
   },
   [240028] = {
     ID = 240028,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_240028", "\231\130\189\231\131\173\231\132\166\229\156\159-\231\168\128\230\156\137\230\168\161\231\187\132\239\188\136\229\186\159\229\188\131\239\188\137"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_240028", ""),
-    Note = "",
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_240028", "\228\188\160\229\165\135\230\168\161\231\187\132\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_240028", "\229\135\187\232\180\165\230\153\174\233\128\154\233\166\150\233\162\134\229\146\140\228\184\150\231\149\140\233\166\150\233\162\134\230\156\128\233\171\152\229\143\175\232\142\183\229\190\151\230\142\137\232\144\189<Legend>\228\188\160\229\165\135</>[\233\148\139\229\141\171][\230\152\159\229\158\146]\230\168\161\231\187\132\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    Note = "\230\169\153\232\137\178\230\168\161\231\187\132T3\231\130\189\231\131\173\231\132\166\229\156\159",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleCombined_01.Icon_PuzzleCombined_01",
     CurrencyIcon = "",
     Type = 2,
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_240028", "\233\129\147\229\133\183"),
-    Rare = 2,
+    Rare = 4,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -1140,14 +1140,14 @@ local resource_tbgeneral = {
   },
   [240029] = {
     ID = 240029,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_240029", "\231\130\189\231\131\173\231\132\166\229\156\159-\229\143\178\232\175\151\230\168\161\231\187\132\239\188\136\229\186\159\229\188\131\239\188\137"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_240029", ""),
-    Note = "",
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_240029", "\228\188\160\229\165\135\230\168\161\231\187\132\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_240029", "\229\135\187\232\180\165\230\153\174\233\128\154\233\166\150\233\162\134\229\146\140\228\184\150\231\149\140\233\166\150\233\162\134\230\156\128\233\171\152\229\143\175\232\142\183\229\190\151\230\142\137\232\144\189<Legend>\228\188\160\229\165\135</>[\233\148\139\229\141\171][\230\152\159\229\158\146]\230\168\161\231\187\132\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    Note = "\230\169\153\232\137\178\230\168\161\231\187\132T4\231\130\189\231\131\173\231\132\166\229\156\159",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleCombined_01.Icon_PuzzleCombined_01",
     CurrencyIcon = "",
     Type = 2,
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_240029", "\233\129\147\229\133\183"),
-    Rare = 3,
+    Rare = 4,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -1878,7 +1878,7 @@ local resource_tbgeneral = {
   [99025] = {
     ID = 99025,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_99025", "\231\157\128\232\137\178\229\153\168"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_99025", "\231\148\168\228\186\142\232\167\163\233\148\129\228\188\160\229\165\135\231\154\174\232\130\164\230\141\162\232\137\178\230\150\185\230\161\136\231\154\132\230\157\144\230\150\153\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_99025", "\231\148\168\228\186\142\232\167\163\233\148\129\228\188\160\229\165\135\229\164\150\232\167\130\230\141\162\232\137\178\230\150\185\230\161\136\231\154\132\230\157\144\230\150\153\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainPropsB/Frames/Icon_Shader_02.Icon_Shader_02",
     CurrencyIcon = "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_Shader_02.Icon_Shader_02",
@@ -2181,21 +2181,6 @@ local resource_tbgeneral = {
     EnableResourceAcquireTaskEvent = false,
     ProEffType = 0
   },
-  [300102] = {
-    ID = 300102,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_300102", "\230\181\139\232\175\149-\228\187\152\232\180\185\232\180\167\229\184\1292"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_300102", ""),
-    Note = "",
-    Icon = "",
-    CurrencyIcon = "",
-    Type = 29,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_300102", "\228\187\152\232\180\185\232\180\167\229\184\129"),
-    Rare = 4,
-    DecomposeResources = {},
-    TimeLimitedDecomposeResources = {},
-    EnableResourceAcquireTaskEvent = false,
-    ProEffType = 0
-  },
   [300201] = {
     ID = 300201,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_300201", "\233\171\152\232\131\189\230\157\131\231\155\138"),
@@ -2409,27 +2394,12 @@ local resource_tbgeneral = {
   [300401] = {
     ID = 300401,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_300401", "\233\171\152\231\186\167\230\168\161\231\187\132\232\181\160\231\164\188"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_300401", "\229\135\187\232\180\165\229\143\175\232\131\189\230\142\137\232\144\189\230\168\161\231\187\132\231\154\132\229\143\178\232\175\151\233\166\150\233\162\134\230\151\182\239\188\140\229\191\133\229\174\154\233\162\157\229\164\150\232\142\183\229\190\1512\228\184\170\230\168\161\231\187\132\239\188\140\233\152\159\229\143\139\229\191\133\229\174\154\233\162\157\229\164\150\232\142\183\229\190\1511\228\184\170\230\168\161\231\187\132\227\128\130\229\156\168\229\164\177\229\186\143\233\147\190\229\140\186\230\168\161\229\188\143\228\184\173\239\188\140\229\191\133\229\174\154\233\162\157\229\164\150\232\142\183\229\190\1511\228\184\170\230\168\161\231\187\132\239\188\140\233\152\159\229\143\139\230\148\182\231\155\138\229\135\143\229\141\138\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_300401", "\229\135\187\232\180\165\229\143\175\232\131\189\230\142\137\232\144\189\230\168\161\231\187\132\231\154\132\229\143\178\232\175\151\233\166\150\233\162\134\230\151\182\239\188\140\229\191\133\229\174\154\233\162\157\229\164\150\232\142\183\229\190\1512\228\184\170\230\168\161\231\187\132\239\188\140\233\152\159\229\143\139\229\191\133\229\174\154\233\162\157\229\164\150\232\142\183\229\190\1511\228\184\170\230\168\161\231\187\132\227\128\130\229\156\168\229\164\177\229\186\143\233\147\190\229\140\186\230\168\161\229\188\143\228\184\173\239\188\140\229\191\133\229\174\154\233\162\157\229\164\150\232\142\183\229\190\1511\228\184\170\230\168\161\231\187\132\239\188\140\233\152\159\229\143\139\230\156\13750%\230\166\130\231\142\135\233\162\157\229\164\150\232\142\183\229\190\1511\228\184\170\230\168\161\231\187\132\227\128\130"),
     Note = "\227\128\144\232\135\170\229\183\177\231\148\159\230\149\136\227\128\145\229\177\128\229\134\133boss\229\133\179\232\142\183\229\143\150\230\168\161\231\187\132\230\151\182\239\188\140\233\162\157\229\164\150\232\142\183\229\190\1512\228\184\170\230\168\161\231\187\132\227\128\130",
     Icon = "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_11.Icon_MonthCard_Benefits_11",
     CurrencyIcon = "",
     Type = 34,
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_300401", "\230\157\131\231\155\138"),
-    Rare = 4,
-    DecomposeResources = {},
-    TimeLimitedDecomposeResources = {},
-    EnableResourceAcquireTaskEvent = false,
-    ProEffType = 0
-  },
-  [300402] = {
-    ID = 300402,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_300402", "\227\128\144\230\151\160\233\156\128\231\191\187\232\175\145\227\128\145\227\128\144\233\152\159\229\143\139\227\128\145DS\230\157\131\231\155\138-\230\168\161\231\187\132\230\142\137\232\144\189+1"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_300402", ""),
-    Note = "\227\128\144\233\152\159\229\143\139\231\148\159\230\149\136\227\128\145\229\177\128\229\134\133boss\229\133\179\232\142\183\229\143\150\230\168\161\231\187\132\230\151\182\239\188\140\233\162\157\229\164\150\232\142\183\229\190\1511\228\184\170\230\168\161\231\187\132\227\128\130",
-    Icon = "",
-    CurrencyIcon = "",
-    Type = 34,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_300402", "\230\157\131\231\155\138"),
     Rare = 4,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -2445,21 +2415,6 @@ local resource_tbgeneral = {
     CurrencyIcon = "",
     Type = 34,
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_300403", "\230\157\131\231\155\138"),
-    Rare = 5,
-    DecomposeResources = {},
-    TimeLimitedDecomposeResources = {},
-    EnableResourceAcquireTaskEvent = false,
-    ProEffType = 0
-  },
-  [300404] = {
-    ID = 300404,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_300404", "\227\128\144\230\151\160\233\156\128\231\191\187\232\175\145\227\128\145\227\128\144\233\152\159\229\143\139\227\128\145DS\230\157\131\231\155\138-\233\128\154\232\180\167\230\142\137\232\144\189+1\239\188\13650%\239\188\137"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_300404", ""),
-    Note = "\227\128\144\233\152\159\229\143\139\231\148\159\230\149\136\227\128\145\229\177\128\229\134\133boss\229\133\179\232\142\183\229\143\150\230\168\161\231\187\132\230\151\182\239\188\14050%\230\166\130\231\142\135\233\162\157\229\164\150\232\142\183\229\190\1511\228\184\170\230\153\182\230\160\184\227\128\130",
-    Icon = "",
-    CurrencyIcon = "",
-    Type = 34,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_300404", "\230\157\131\231\155\138"),
     Rare = 5,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -2511,21 +2466,6 @@ local resource_tbgeneral = {
     EnableResourceAcquireTaskEvent = false,
     ProEffType = 0
   },
-  [300408] = {
-    ID = 300408,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_300408", "\227\128\144\232\191\135\230\156\159\230\181\139\232\175\149AM\227\128\145\227\128\144\230\151\160\233\156\128\231\191\187\232\175\145\227\128\145\227\128\144\233\152\159\229\143\139\227\128\145DS\230\157\131\231\155\138-\230\168\161\231\187\132\230\142\137\232\144\189+1"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_300408", ""),
-    Note = "\227\128\144\233\152\159\229\143\139\231\148\159\230\149\136\227\128\145\229\177\128\229\134\133boss\229\133\179\232\142\183\229\143\150\230\168\161\231\187\132\230\151\182\239\188\140\233\162\157\229\164\150\232\142\183\229\190\1511\228\184\170\230\168\161\231\187\132\227\128\130",
-    Icon = "",
-    CurrencyIcon = "",
-    Type = 34,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_300408", "\230\157\131\231\155\138"),
-    Rare = 4,
-    DecomposeResources = {},
-    TimeLimitedDecomposeResources = {},
-    EnableResourceAcquireTaskEvent = false,
-    ProEffType = 0
-  },
   [300409] = {
     ID = 300409,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_300409", "\227\128\144\232\191\135\230\156\159\230\181\139\232\175\149AM\227\128\145\227\128\144\230\151\160\233\156\128\231\191\187\232\175\145\227\128\145\230\153\182\230\160\184\232\181\160\231\164\188"),
@@ -2535,21 +2475,6 @@ local resource_tbgeneral = {
     CurrencyIcon = "",
     Type = 34,
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_300409", "\230\157\131\231\155\138"),
-    Rare = 5,
-    DecomposeResources = {},
-    TimeLimitedDecomposeResources = {},
-    EnableResourceAcquireTaskEvent = false,
-    ProEffType = 0
-  },
-  [300410] = {
-    ID = 300410,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_300410", "\227\128\144\232\191\135\230\156\159\230\181\139\232\175\149AM\227\128\145\227\128\144\230\151\160\233\156\128\231\191\187\232\175\145\227\128\145\227\128\144\233\152\159\229\143\139\227\128\145DS\230\157\131\231\155\138-\233\128\154\232\180\167\230\142\137\232\144\189+1\239\188\13650%\239\188\137"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_300410", ""),
-    Note = "",
-    Icon = "",
-    CurrencyIcon = "",
-    Type = 34,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_300410", "\230\157\131\231\155\138"),
     Rare = 5,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -2601,21 +2526,6 @@ local resource_tbgeneral = {
     EnableResourceAcquireTaskEvent = false,
     ProEffType = 0
   },
-  [300414] = {
-    ID = 300414,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_300414", "\227\128\144\232\191\135\230\156\159\230\181\139\232\175\149PM\227\128\145\227\128\144\230\151\160\233\156\128\231\191\187\232\175\145\227\128\145\227\128\144\233\152\159\229\143\139\227\128\145DS\230\157\131\231\155\138-\230\168\161\231\187\132\230\142\137\232\144\189+1"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_300414", ""),
-    Note = "",
-    Icon = "",
-    CurrencyIcon = "",
-    Type = 34,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_300414", "\230\157\131\231\155\138"),
-    Rare = 4,
-    DecomposeResources = {},
-    TimeLimitedDecomposeResources = {},
-    EnableResourceAcquireTaskEvent = false,
-    ProEffType = 0
-  },
   [300415] = {
     ID = 300415,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_300415", "\227\128\144\232\191\135\230\156\159\230\181\139\232\175\149PM\227\128\145\227\128\144\230\151\160\233\156\128\231\191\187\232\175\145\227\128\145\230\153\182\230\160\184\232\181\160\231\164\188"),
@@ -2625,21 +2535,6 @@ local resource_tbgeneral = {
     CurrencyIcon = "",
     Type = 34,
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_300415", "\230\157\131\231\155\138"),
-    Rare = 5,
-    DecomposeResources = {},
-    TimeLimitedDecomposeResources = {},
-    EnableResourceAcquireTaskEvent = false,
-    ProEffType = 0
-  },
-  [300416] = {
-    ID = 300416,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_300416", "\227\128\144\232\191\135\230\156\159\230\181\139\232\175\149PM\227\128\145\227\128\144\230\151\160\233\156\128\231\191\187\232\175\145\227\128\145\227\128\144\233\152\159\229\143\139\227\128\145DS\230\157\131\231\155\138-\233\128\154\232\180\167\230\142\137\232\144\189+1\239\188\13650%\239\188\137"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_300416", ""),
-    Note = "",
-    Icon = "",
-    CurrencyIcon = "",
-    Type = 34,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_300416", "\230\157\131\231\155\138"),
     Rare = 5,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -3584,7 +3479,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10100001", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -3601,7 +3496,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10100002", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -3618,7 +3513,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10100003", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -3669,7 +3564,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10100006", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -3678,7 +3573,7 @@ local resource_tbgeneral = {
   [10100007] = {
     ID = 10100007,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_10100007", "\231\148\181\229\185\187\194\183\232\136\158\232\128\133"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10100007", "\230\155\153\229\133\137\231\168\128\230\156\137\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10100007", "\231\137\185\230\157\131\228\184\147\229\177\158\231\154\174\232\130\164"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_RImu_Ff_G6.Role_RImu_Ff_G6",
     CurrencyIcon = "",
@@ -3686,7 +3581,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10100007", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -3703,7 +3598,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10100101", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -3720,7 +3615,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10100102", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -3729,7 +3624,7 @@ local resource_tbgeneral = {
   [10100103] = {
     ID = 10100103,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_10100103", "\230\169\153\231\132\176\229\150\181\229\189\177"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10100103", "\230\155\153\229\133\137\229\143\178\232\175\151\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10100103", "WeGame\230\179\168\229\134\140\228\184\147\229\177\158\231\154\174\232\130\164"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_RImu_Ff_B3.Role_RImu_Ff_B3",
     CurrencyIcon = "",
@@ -3737,7 +3632,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10100103", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -3746,7 +3641,7 @@ local resource_tbgeneral = {
   [10100104] = {
     ID = 10100104,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_10100104", "\232\146\184\230\177\189\232\147\157\229\189\169"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10100104", "\230\155\153\229\133\137\229\143\178\232\175\151\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10100104", "Steam\230\179\168\229\134\140\228\184\147\229\177\158\231\154\174\232\130\164"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_RImu_Ff_B4.Role_RImu_Ff_B4",
     CurrencyIcon = "",
@@ -3754,7 +3649,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10100104", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -3805,7 +3700,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10100203", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -3878,13 +3773,13 @@ local resource_tbgeneral = {
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_10100502", "\232\141\167\232\154\128\229\180\169\232\167\163"),
     DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10100502", "\230\155\153\229\133\137\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
     Note = "",
-    Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_RImu_Ff_S2_0.Role_RImu_Ff_S2_0",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_RImu_Ff_S2.Role_RImu_Ff_S2",
     CurrencyIcon = "",
     Type = 10,
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10100502", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -3938,7 +3833,7 @@ local resource_tbgeneral = {
   [10100801] = {
     ID = 10100801,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_10100801", "\231\148\156\229\191\131\230\138\164\229\163\171"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10100801", "\230\155\153\229\133\137\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10100801", "<AttributeModifyLegend>\230\155\153\229\133\137\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\232\153\154\230\139\159\228\184\150\231\149\140\231\154\132\228\186\186\228\187\172\231\156\159\231\154\132\233\156\128\232\166\129\230\137\147\233\146\136\229\144\151\239\188\159\n\231\156\139\231\157\128\230\137\139\228\184\173\231\154\132\230\138\164\229\163\171\229\136\182\230\156\141\239\188\140\230\155\153\229\133\137\233\153\183\229\133\165\228\186\134\230\178\137\230\128\157\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_RImu_Ff_O1.Role_RImu_Ff_O1",
     CurrencyIcon = "",
@@ -3957,7 +3852,7 @@ local resource_tbgeneral = {
   [101008011] = {
     ID = 101008011,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101008011", "\231\148\156\229\191\131\230\138\164\229\163\171"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101008011", "\230\155\153\229\133\137\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101008011", "<AttributeModifyLegend>\230\155\153\229\133\137\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\232\153\154\230\139\159\228\184\150\231\149\140\231\154\132\228\186\186\228\187\172\231\156\159\231\154\132\233\156\128\232\166\129\230\137\147\233\146\136\229\144\151\239\188\159\n\231\156\139\231\157\128\230\137\139\228\184\173\231\154\132\230\138\164\229\163\171\229\136\182\230\156\141\239\188\140\230\155\153\229\133\137\233\153\183\229\133\165\228\186\134\230\178\137\230\128\157\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_RImu_Ff_O1_1.Role_RImu_Ff_O1_1",
     CurrencyIcon = "",
@@ -3972,7 +3867,7 @@ local resource_tbgeneral = {
   [101008012] = {
     ID = 101008012,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101008012", "\231\148\156\229\191\131\230\138\164\229\163\171"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101008012", "\230\155\153\229\133\137\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101008012", "<AttributeModifyLegend>\230\155\153\229\133\137\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\232\153\154\230\139\159\228\184\150\231\149\140\231\154\132\228\186\186\228\187\172\231\156\159\231\154\132\233\156\128\232\166\129\230\137\147\233\146\136\229\144\151\239\188\159\n\231\156\139\231\157\128\230\137\139\228\184\173\231\154\132\230\138\164\229\163\171\229\136\182\230\156\141\239\188\140\230\155\153\229\133\137\233\153\183\229\133\165\228\186\134\230\178\137\230\128\157\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_RImu_Ff_O1_2.Role_RImu_Ff_O1_2",
     CurrencyIcon = "",
@@ -3987,7 +3882,7 @@ local resource_tbgeneral = {
   [101008013] = {
     ID = 101008013,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101008013", "\231\148\156\229\191\131\230\138\164\229\163\171"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101008013", "\230\155\153\229\133\137\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101008013", "<AttributeModifyLegend>\230\155\153\229\133\137\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\232\153\154\230\139\159\228\184\150\231\149\140\231\154\132\228\186\186\228\187\172\231\156\159\231\154\132\233\156\128\232\166\129\230\137\147\233\146\136\229\144\151\239\188\159\n\231\156\139\231\157\128\230\137\139\228\184\173\231\154\132\230\138\164\229\163\171\229\136\182\230\156\141\239\188\140\230\155\153\229\133\137\233\153\183\229\133\165\228\186\134\230\178\137\230\128\157\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_RImu_Ff_O1_3.Role_RImu_Ff_O1_3",
     CurrencyIcon = "",
@@ -4002,7 +3897,7 @@ local resource_tbgeneral = {
   [10100802] = {
     ID = 10100802,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_10100802", "\233\178\168\230\187\169\229\164\143\233\159\181"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10100802", "\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10100802", "<AttributeModifyLegend>\230\155\153\229\133\137\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_RImu_Ff_O2.Role_RImu_Ff_O2",
     CurrencyIcon = "",
@@ -4010,7 +3905,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10100802", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 600}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4019,7 +3914,7 @@ local resource_tbgeneral = {
   [101008021] = {
     ID = 101008021,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101008021", "\233\178\168\230\187\169\229\164\143\233\159\181"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101008021", "\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101008021", "<AttributeModifyLegend>\230\155\153\229\133\137\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_RImu_Ff_O2_1.Role_RImu_Ff_O2_1",
     CurrencyIcon = "",
@@ -4034,7 +3929,7 @@ local resource_tbgeneral = {
   [101008022] = {
     ID = 101008022,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101008022", "\233\178\168\230\187\169\229\164\143\233\159\181"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101008022", "\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101008022", "<AttributeModifyLegend>\230\155\153\229\133\137\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_RImu_Ff_O2_2.Role_RImu_Ff_O2_2",
     CurrencyIcon = "",
@@ -4049,7 +3944,7 @@ local resource_tbgeneral = {
   [101008023] = {
     ID = 101008023,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101008023", "\233\178\168\230\187\169\229\164\143\233\159\181"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101008023", "\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101008023", "<AttributeModifyLegend>\230\155\153\229\133\137\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_RImu_Ff_O2_3.Role_RImu_Ff_O2_3",
     CurrencyIcon = "",
@@ -4072,7 +3967,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10102001", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4089,7 +3984,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10102002", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4106,7 +4001,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10102003", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4157,7 +4052,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10102006", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4174,7 +4069,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10102007", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4191,7 +4086,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10102101", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4208,7 +4103,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10102102", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4225,7 +4120,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10102201", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4242,7 +4137,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10102202", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4321,7 +4216,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101001", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4338,7 +4233,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101002", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4355,7 +4250,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101003", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4372,7 +4267,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101004", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4389,7 +4284,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101005", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4406,7 +4301,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101006", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4423,7 +4318,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101007", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4440,7 +4335,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101101", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4457,7 +4352,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101102", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4466,7 +4361,7 @@ local resource_tbgeneral = {
   [10101103] = {
     ID = 10101103,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_10101103", "\233\156\147\229\189\169\228\191\161\230\160\135"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10101103", "\229\189\177\229\136\131\229\143\178\232\175\151\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10101103", "QQ\231\189\145\229\144\167\228\184\147\229\177\158\231\154\174\232\130\164"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Qing_Ff_B3.Role_Qing_Ff_B3",
     CurrencyIcon = "",
@@ -4474,7 +4369,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101103", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4483,7 +4378,7 @@ local resource_tbgeneral = {
   [10101104] = {
     ID = 10101104,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_10101104", "\230\183\177\231\169\186\232\132\137\229\134\178"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10101104", "\229\189\177\229\136\131\229\143\178\232\175\151\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10101104", "\231\189\145\233\177\188\231\148\181\231\171\158\228\184\147\229\177\158\231\154\174\232\130\164"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Qing_Ff_B4.Role_Qing_Ff_B4",
     CurrencyIcon = "",
@@ -4491,7 +4386,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101104", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4508,7 +4403,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101201", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4525,7 +4420,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101202", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4542,7 +4437,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101203", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4559,7 +4454,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101204", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4568,7 +4463,7 @@ local resource_tbgeneral = {
   [10101008] = {
     ID = 10101008,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_10101008", "\230\181\174\228\184\150\233\156\147\229\133\137\194\183\230\154\151\229\189\177"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10101008", "\231\148\177\229\189\177\229\136\131\228\186\178\230\137\139\228\184\186\232\135\170\229\183\177\232\174\190\232\174\161\231\154\132\230\156\186\230\162\176\228\185\137\228\189\147\239\188\140\229\156\168\230\154\151\229\164\156\228\184\173\230\151\160\229\189\177\231\169\191\230\162\173\239\188\140\228\184\141\231\149\153\228\184\128\228\184\157\231\151\149\232\191\185\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10101008", "<AttributeModifyImmortal>\229\189\177\229\136\131\228\184\141\230\156\189\231\186\167\229\164\150\232\167\130</>\n\228\184\128\230\138\185\229\185\187\229\133\137\231\142\176\228\184\150\239\188\140\229\190\146\231\149\153\228\186\186\233\151\180\230\181\174\229\177\160\227\128\130\n\232\191\153\230\152\175\229\177\158\228\186\142\229\189\177\229\136\131\231\154\132\229\164\156\230\153\154\239\188\140\231\153\190\233\172\188\228\185\139\229\164\156\239\188\140\228\188\151\231\148\159\229\150\167\229\154\163\227\128\130\229\165\185\229\166\130\233\173\133\229\189\177\232\136\172\229\156\168\229\159\142\229\184\130\233\135\140\231\169\191\230\162\173\239\188\140\231\149\153\228\184\139\228\184\128\228\184\170\229\143\136\228\184\128\228\184\170\231\145\176\228\184\189\231\166\187\229\165\135\231\154\132\230\149\133\228\186\139\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Qing_Cjb_R1.Role_Qing_Cjb_R1",
     CurrencyIcon = "",
@@ -4576,7 +4471,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101008", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 5,
     DecomposeResources = {
-      {key = 99035, value = 3000}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4585,7 +4480,7 @@ local resource_tbgeneral = {
   [10101009] = {
     ID = 10101009,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_10101009", "\230\181\174\228\184\150\233\156\147\229\133\137\194\183\229\185\187\231\186\177"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10101009", "\226\128\156\229\189\147\230\157\128\230\137\139\231\154\132\230\151\165\229\173\144\228\185\133\228\186\134\239\188\140\229\129\182\229\176\148\228\185\159\233\156\128\232\166\129\231\187\153\232\135\170\229\183\177\229\138\160\231\130\185\232\163\133\230\137\174\227\128\130\226\128\157\n\232\191\153\229\176\177\230\152\175\229\189\177\229\136\131\232\186\171\228\184\138\233\130\163\229\185\187\229\166\130\232\150\132\233\155\190\231\154\132\230\138\171\233\163\142\231\154\132\231\148\177\230\157\165\239\188\140\229\144\172\232\175\180\230\152\175\231\148\177\230\159\144\228\189\141\229\143\139\228\186\186\232\181\160\228\186\136\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10101009", "<AttributeModifyImmortal>\229\189\177\229\136\131\228\184\141\230\156\189\231\186\167\229\164\150\232\167\130</>\n\228\184\128\230\138\185\229\185\187\229\133\137\231\142\176\228\184\150\239\188\140\229\190\146\231\149\153\228\186\186\233\151\180\230\181\174\229\177\160\227\128\130\n\232\191\153\230\152\175\229\177\158\228\186\142\229\189\177\229\136\131\231\154\132\229\164\156\230\153\154\239\188\140\231\153\190\233\172\188\228\185\139\229\164\156\239\188\140\228\188\151\231\148\159\229\150\167\229\154\163\227\128\130\229\165\185\229\166\130\233\173\133\229\189\177\232\136\172\229\156\168\229\159\142\229\184\130\233\135\140\231\169\191\230\162\173\239\188\140\231\149\153\228\184\139\228\184\128\228\184\170\229\143\136\228\184\128\228\184\170\231\145\176\228\184\189\231\166\187\229\165\135\231\154\132\230\149\133\228\186\139\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Qing_Cjb_R2.Role_Qing_Cjb_R2",
     CurrencyIcon = "",
@@ -4593,7 +4488,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101009", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 5,
     DecomposeResources = {
-      {key = 99035, value = 3000}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4602,7 +4497,7 @@ local resource_tbgeneral = {
   [10101010] = {
     ID = 10101010,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_10101010", "\230\181\174\228\184\150\233\156\147\229\133\137\194\183\230\154\174\229\164\156\229\130\128\229\167\172"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10101010", "\228\184\128\230\138\185\229\185\187\229\133\137\231\142\176\228\184\150\239\188\140\229\190\146\231\149\153\228\186\186\233\151\180\230\181\174\229\177\160\227\128\130\n\232\191\153\230\152\175\229\177\158\228\186\142\229\189\177\229\136\131\231\154\132\229\164\156\230\153\154\239\188\140\231\153\190\233\172\188\228\185\139\229\164\156\239\188\140\228\188\151\231\148\159\229\150\167\229\154\163\227\128\130\229\165\185\229\166\130\233\173\133\229\189\177\232\136\172\229\156\168\229\159\142\229\184\130\233\135\140\231\169\191\230\162\173\239\188\140\231\149\153\228\184\139\228\184\128\228\184\170\229\143\136\228\184\128\228\184\170\231\145\176\228\184\189\231\166\187\229\165\135\231\154\132\230\149\133\228\186\139\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10101010", "<AttributeModifyImmortal>\229\189\177\229\136\131\228\184\141\230\156\189\231\186\167\229\164\150\232\167\130</>\n\228\184\128\230\138\185\229\185\187\229\133\137\231\142\176\228\184\150\239\188\140\229\190\146\231\149\153\228\186\186\233\151\180\230\181\174\229\177\160\227\128\130\n\232\191\153\230\152\175\229\177\158\228\186\142\229\189\177\229\136\131\231\154\132\229\164\156\230\153\154\239\188\140\231\153\190\233\172\188\228\185\139\229\164\156\239\188\140\228\188\151\231\148\159\229\150\167\229\154\163\227\128\130\229\165\185\229\166\130\233\173\133\229\189\177\232\136\172\229\156\168\229\159\142\229\184\130\233\135\140\231\169\191\230\162\173\239\188\140\231\149\153\228\184\139\228\184\128\228\184\170\229\143\136\228\184\128\228\184\170\231\145\176\228\184\189\231\166\187\229\165\135\231\154\132\230\149\133\228\186\139\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Qing_Cjb_R3.Role_Qing_Cjb_R3",
     CurrencyIcon = "",
@@ -4619,7 +4514,7 @@ local resource_tbgeneral = {
   [101010101] = {
     ID = 101010101,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101010101", "\230\181\174\228\184\150\233\156\147\229\133\137\194\183\230\154\174\229\164\156\229\130\128\229\167\172"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101010101", "\228\184\128\230\138\185\229\185\187\229\133\137\231\142\176\228\184\150\239\188\140\229\190\146\231\149\153\228\186\186\233\151\180\230\181\174\229\177\160\227\128\130\n\232\191\153\230\152\175\229\177\158\228\186\142\229\189\177\229\136\131\231\154\132\229\164\156\230\153\154\239\188\140\231\153\190\233\172\188\228\185\139\229\164\156\239\188\140\228\188\151\231\148\159\229\150\167\229\154\163\227\128\130\229\165\185\229\166\130\233\173\133\229\189\177\232\136\172\229\156\168\229\159\142\229\184\130\233\135\140\231\169\191\230\162\173\239\188\140\231\149\153\228\184\139\228\184\128\228\184\170\229\143\136\228\184\128\228\184\170\231\145\176\228\184\189\231\166\187\229\165\135\231\154\132\230\149\133\228\186\139\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101010101", "<AttributeModifyImmortal>\229\189\177\229\136\131\228\184\141\230\156\189\231\186\167\229\164\150\232\167\130</>\n\228\184\128\230\138\185\229\185\187\229\133\137\231\142\176\228\184\150\239\188\140\229\190\146\231\149\153\228\186\186\233\151\180\230\181\174\229\177\160\227\128\130\n\232\191\153\230\152\175\229\177\158\228\186\142\229\189\177\229\136\131\231\154\132\229\164\156\230\153\154\239\188\140\231\153\190\233\172\188\228\185\139\229\164\156\239\188\140\228\188\151\231\148\159\229\150\167\229\154\163\227\128\130\229\165\185\229\166\130\233\173\133\229\189\177\232\136\172\229\156\168\229\159\142\229\184\130\233\135\140\231\169\191\230\162\173\239\188\140\231\149\153\228\184\139\228\184\128\228\184\170\229\143\136\228\184\128\228\184\170\231\145\176\228\184\189\231\166\187\229\165\135\231\154\132\230\149\133\228\186\139\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Qing_Cjb_R3.Role_Qing_Cjb_R3",
     CurrencyIcon = "",
@@ -4627,7 +4522,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_101010101", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 5,
     DecomposeResources = {
-      {key = 99035, value = 3000}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4636,7 +4531,7 @@ local resource_tbgeneral = {
   [101010102] = {
     ID = 101010102,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101010102", "\230\181\174\228\184\150\233\156\147\229\133\137\194\183\230\154\174\229\164\156\229\130\128\229\167\172"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101010102", "\228\184\128\230\138\185\229\185\187\229\133\137\231\142\176\228\184\150\239\188\140\229\190\146\231\149\153\228\186\186\233\151\180\230\181\174\229\177\160\227\128\130\n\232\191\153\230\152\175\229\177\158\228\186\142\229\189\177\229\136\131\231\154\132\229\164\156\230\153\154\239\188\140\231\153\190\233\172\188\228\185\139\229\164\156\239\188\140\228\188\151\231\148\159\229\150\167\229\154\163\227\128\130\229\165\185\229\166\130\233\173\133\229\189\177\232\136\172\229\156\168\229\159\142\229\184\130\233\135\140\231\169\191\230\162\173\239\188\140\231\149\153\228\184\139\228\184\128\228\184\170\229\143\136\228\184\128\228\184\170\231\145\176\228\184\189\231\166\187\229\165\135\231\154\132\230\149\133\228\186\139\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101010102", "<AttributeModifyImmortal>\229\189\177\229\136\131\228\184\141\230\156\189\231\186\167\229\164\150\232\167\130</>\n\228\184\128\230\138\185\229\185\187\229\133\137\231\142\176\228\184\150\239\188\140\229\190\146\231\149\153\228\186\186\233\151\180\230\181\174\229\177\160\227\128\130\n\232\191\153\230\152\175\229\177\158\228\186\142\229\189\177\229\136\131\231\154\132\229\164\156\230\153\154\239\188\140\231\153\190\233\172\188\228\185\139\229\164\156\239\188\140\228\188\151\231\148\159\229\150\167\229\154\163\227\128\130\229\165\185\229\166\130\233\173\133\229\189\177\232\136\172\229\156\168\229\159\142\229\184\130\233\135\140\231\169\191\230\162\173\239\188\140\231\149\153\228\184\139\228\184\128\228\184\170\229\143\136\228\184\128\228\184\170\231\145\176\228\184\189\231\166\187\229\165\135\231\154\132\230\149\133\228\186\139\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Qing_Cjb_R3.Role_Qing_Cjb_R3",
     CurrencyIcon = "",
@@ -4644,7 +4539,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_101010102", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 5,
     DecomposeResources = {
-      {key = 99035, value = 3000}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4653,7 +4548,7 @@ local resource_tbgeneral = {
   [101010103] = {
     ID = 101010103,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101010103", "\230\181\174\228\184\150\233\156\147\229\133\137\194\183\230\154\174\229\164\156\229\130\128\229\167\172"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101010103", "\228\184\128\230\138\185\229\185\187\229\133\137\231\142\176\228\184\150\239\188\140\229\190\146\231\149\153\228\186\186\233\151\180\230\181\174\229\177\160\227\128\130\n\232\191\153\230\152\175\229\177\158\228\186\142\229\189\177\229\136\131\231\154\132\229\164\156\230\153\154\239\188\140\231\153\190\233\172\188\228\185\139\229\164\156\239\188\140\228\188\151\231\148\159\229\150\167\229\154\163\227\128\130\229\165\185\229\166\130\233\173\133\229\189\177\232\136\172\229\156\168\229\159\142\229\184\130\233\135\140\231\169\191\230\162\173\239\188\140\231\149\153\228\184\139\228\184\128\228\184\170\229\143\136\228\184\128\228\184\170\231\145\176\228\184\189\231\166\187\229\165\135\231\154\132\230\149\133\228\186\139\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101010103", "<AttributeModifyImmortal>\229\189\177\229\136\131\228\184\141\230\156\189\231\186\167\229\164\150\232\167\130</>\n\228\184\128\230\138\185\229\185\187\229\133\137\231\142\176\228\184\150\239\188\140\229\190\146\231\149\153\228\186\186\233\151\180\230\181\174\229\177\160\227\128\130\n\232\191\153\230\152\175\229\177\158\228\186\142\229\189\177\229\136\131\231\154\132\229\164\156\230\153\154\239\188\140\231\153\190\233\172\188\228\185\139\229\164\156\239\188\140\228\188\151\231\148\159\229\150\167\229\154\163\227\128\130\229\165\185\229\166\130\233\173\133\229\189\177\232\136\172\229\156\168\229\159\142\229\184\130\233\135\140\231\169\191\230\162\173\239\188\140\231\149\153\228\184\139\228\184\128\228\184\170\229\143\136\228\184\128\228\184\170\231\145\176\228\184\189\231\166\187\229\165\135\231\154\132\230\149\133\228\186\139\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Qing_Cjb_R3.Role_Qing_Cjb_R3",
     CurrencyIcon = "",
@@ -4661,7 +4556,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_101010103", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 5,
     DecomposeResources = {
-      {key = 99035, value = 3000}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4678,7 +4573,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101501", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4794,7 +4689,7 @@ local resource_tbgeneral = {
   [10101801] = {
     ID = 10101801,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_10101801", "\231\129\181\232\155\135"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10101801", "\229\189\177\229\136\131\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10101801", "<AttributeModifyLegend>\229\189\177\229\136\131\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\231\162\167\230\179\162\228\184\186\229\136\131\239\188\140\229\176\152\231\188\152\229\176\189\230\150\173\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Qing_Ff_O1.Role_Qing_Ff_O1",
     CurrencyIcon = "",
@@ -4802,7 +4697,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101801", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 600}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4811,7 +4706,7 @@ local resource_tbgeneral = {
   [101018011] = {
     ID = 101018011,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101018011", "\231\129\181\232\155\135"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101018011", "\229\189\177\229\136\131\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101018011", "<AttributeModifyLegend>\229\189\177\229\136\131\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\231\162\167\230\179\162\228\184\186\229\136\131\239\188\140\229\176\152\231\188\152\229\176\189\230\150\173\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Qing_Ff_O1_1.Role_Qing_Ff_O1_1",
     CurrencyIcon = "",
@@ -4826,7 +4721,7 @@ local resource_tbgeneral = {
   [101018012] = {
     ID = 101018012,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101018012", "\231\129\181\232\155\135"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101018012", "\229\189\177\229\136\131\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101018012", "<AttributeModifyLegend>\229\189\177\229\136\131\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\231\162\167\230\179\162\228\184\186\229\136\131\239\188\140\229\176\152\231\188\152\229\176\189\230\150\173\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Qing_Ff_O1_2.Role_Qing_Ff_O1_2",
     CurrencyIcon = "",
@@ -4841,7 +4736,7 @@ local resource_tbgeneral = {
   [101018013] = {
     ID = 101018013,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101018013", "\231\129\181\232\155\135"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101018013", "\229\189\177\229\136\131\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101018013", "<AttributeModifyLegend>\229\189\177\229\136\131\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\231\162\167\230\179\162\228\184\186\229\136\131\239\188\140\229\176\152\231\188\152\229\176\189\230\150\173\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Qing_Ff_O1_3.Role_Qing_Ff_O1_3",
     CurrencyIcon = "",
@@ -4856,7 +4751,7 @@ local resource_tbgeneral = {
   [10101802] = {
     ID = 10101802,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_10101802", "\230\181\183\229\178\184\233\173\133\229\189\177"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10101802", "\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10101802", "<AttributeModifyLegend>\229\189\177\229\136\131\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Qing_Ff_O2.Role_Qing_Ff_O2",
     CurrencyIcon = "",
@@ -4864,7 +4759,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10101802", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 600}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4873,7 +4768,7 @@ local resource_tbgeneral = {
   [101018021] = {
     ID = 101018021,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101018021", "\230\181\183\229\178\184\233\173\133\229\189\177"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101018021", "\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101018021", "<AttributeModifyLegend>\229\189\177\229\136\131\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Qing_Ff_O2_1.Role_Qing_Ff_O2_1",
     CurrencyIcon = "",
@@ -4888,7 +4783,7 @@ local resource_tbgeneral = {
   [101018022] = {
     ID = 101018022,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101018022", "\230\181\183\229\178\184\233\173\133\229\189\177"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101018022", "\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101018022", "<AttributeModifyLegend>\229\189\177\229\136\131\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Qing_Ff_O2_2.Role_Qing_Ff_O2_2",
     CurrencyIcon = "",
@@ -4903,7 +4798,7 @@ local resource_tbgeneral = {
   [101018023] = {
     ID = 101018023,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101018023", "\230\181\183\229\178\184\233\173\133\229\189\177"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101018023", "\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101018023", "<AttributeModifyLegend>\229\189\177\229\136\131\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Qing_Ff_O2_3.Role_Qing_Ff_O2_3",
     CurrencyIcon = "",
@@ -4926,7 +4821,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10103001", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4943,7 +4838,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10103002", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4960,7 +4855,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10103003", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -4994,7 +4889,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10103005", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5011,7 +4906,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10103006", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5028,7 +4923,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10103007", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5045,7 +4940,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10103101", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5062,7 +4957,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10103102", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5079,7 +4974,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10103201", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5167,7 +5062,7 @@ local resource_tbgeneral = {
   [10103801] = {
     ID = 10103801,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_10103801", "\232\181\164\231\158\179\230\129\182\231\129\181"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10103801", "\233\186\166\229\133\139\230\150\175\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10103801", "<AttributeModifyLegend>\233\186\166\229\133\139\230\150\175\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\232\181\164\231\158\179\230\129\182\231\129\181\228\184\141\231\136\177\232\163\133\231\165\158\229\188\132\233\172\188\239\188\140\228\187\150\229\143\170\231\136\177\231\136\134\231\130\184\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Nax_FF_O1.Role_Nax_FF_O1",
     CurrencyIcon = "",
@@ -5175,7 +5070,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10103801", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 600}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5192,7 +5087,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10103901", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 5,
     DecomposeResources = {
-      {key = 99035, value = 3000}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5209,7 +5104,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_101039011", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 5,
     DecomposeResources = {
-      {key = 99035, value = 3000}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5226,7 +5121,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_101039012", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 5,
     DecomposeResources = {
-      {key = 99035, value = 3000}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5243,7 +5138,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_101039013", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 5,
     DecomposeResources = {
-      {key = 99035, value = 3000}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5260,7 +5155,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10103902", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 5,
     DecomposeResources = {
-      {key = 99035, value = 3000}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5277,7 +5172,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10103903", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 5,
     DecomposeResources = {
-      {key = 99035, value = 3000}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5294,7 +5189,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10904001", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5311,7 +5206,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10904002", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5328,7 +5223,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10904003", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5379,7 +5274,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10904006", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5396,7 +5291,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10904007", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5413,7 +5308,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10904101", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5430,7 +5325,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10904102", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5464,7 +5359,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10904202", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5481,7 +5376,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10904501", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5535,7 +5430,7 @@ local resource_tbgeneral = {
   [10904801] = {
     ID = 10904801,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_10904801", "\229\133\148\229\133\148\232\173\166\229\174\152"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10904801", "\230\160\188\231\189\151\232\142\137\228\186\154\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10904801", "<AttributeModifyLegend>\230\160\188\231\189\151\232\142\137\228\186\154\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\231\171\153\228\189\143\239\188\129\228\184\141\232\174\184\229\138\168\239\188\129"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Gloria_Ff_O1.Role_Gloria_Ff_O1",
     CurrencyIcon = "",
@@ -5552,7 +5447,7 @@ local resource_tbgeneral = {
   [109048011] = {
     ID = 109048011,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_109048011", "\229\133\148\229\133\148\232\173\166\229\174\152"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_109048011", "\230\160\188\231\189\151\232\142\137\228\186\154\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_109048011", "<AttributeModifyLegend>\230\160\188\231\189\151\232\142\137\228\186\154\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\231\171\153\228\189\143\239\188\129\228\184\141\232\174\184\229\138\168\239\188\129"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Gloria_Ff_O1_1.Role_Gloria_Ff_O1_1",
     CurrencyIcon = "",
@@ -5567,7 +5462,7 @@ local resource_tbgeneral = {
   [109048012] = {
     ID = 109048012,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_109048012", "\229\133\148\229\133\148\232\173\166\229\174\152"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_109048012", "\230\160\188\231\189\151\232\142\137\228\186\154\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_109048012", "<AttributeModifyLegend>\230\160\188\231\189\151\232\142\137\228\186\154\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\231\171\153\228\189\143\239\188\129\228\184\141\232\174\184\229\138\168\239\188\129"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Gloria_Ff_O1_2.Role_Gloria_Ff_O1_2",
     CurrencyIcon = "",
@@ -5582,7 +5477,7 @@ local resource_tbgeneral = {
   [109048013] = {
     ID = 109048013,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_109048013", "\229\133\148\229\133\148\232\173\166\229\174\152"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_109048013", "\230\160\188\231\189\151\232\142\137\228\186\154\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_109048013", "<AttributeModifyLegend>\230\160\188\231\189\151\232\142\137\228\186\154\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\231\171\153\228\189\143\239\188\129\228\184\141\232\174\184\229\138\168\239\188\129"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Gloria_Ff_O1_3.Role_Gloria_Ff_O1_3",
     CurrencyIcon = "",
@@ -5597,7 +5492,7 @@ local resource_tbgeneral = {
   [10904802] = {
     ID = 10904802,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_10904802", "\230\153\180\230\181\183\231\171\165\232\182\163"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10904802", "\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10904802", "<AttributeModifyLegend>\230\160\188\231\189\151\232\142\137\228\186\154\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Gloria_Ff_O2.Role_Gloria_Ff_O2",
     CurrencyIcon = "",
@@ -5605,7 +5500,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10904802", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 600}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5614,7 +5509,7 @@ local resource_tbgeneral = {
   [109048021] = {
     ID = 109048021,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_109048021", "\230\153\180\230\181\183\231\171\165\232\182\163"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_109048021", "\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_109048021", "<AttributeModifyLegend>\230\160\188\231\189\151\232\142\137\228\186\154\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Gloria_Ff_O2_1.Role_Gloria_Ff_O2_1",
     CurrencyIcon = "",
@@ -5629,7 +5524,7 @@ local resource_tbgeneral = {
   [109048022] = {
     ID = 109048022,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_109048022", "\230\153\180\230\181\183\231\171\165\232\182\163"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_109048022", "\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_109048022", "<AttributeModifyLegend>\230\160\188\231\189\151\232\142\137\228\186\154\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Gloria_Ff_O2_2.Role_Gloria_Ff_O2_2",
     CurrencyIcon = "",
@@ -5644,7 +5539,7 @@ local resource_tbgeneral = {
   [109048023] = {
     ID = 109048023,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_109048023", "\230\153\180\230\181\183\231\171\165\232\182\163"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_109048023", "\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_109048023", "<AttributeModifyLegend>\230\160\188\231\189\151\232\142\137\228\186\154\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\229\164\143\230\151\165\229\176\134\232\135\179\239\188\140\228\188\151\229\164\154\231\148\168\230\136\183\231\186\183\231\186\183\230\141\162\228\184\138\230\179\179\232\163\133\239\188\140\229\156\168\231\187\154\228\184\189\231\154\132\230\181\183\230\187\169\232\190\185\228\184\190\229\138\158\230\180\190\229\175\185\239\188\140\228\186\171\229\143\151\232\191\153\233\154\190\229\190\151\231\154\132\228\188\145\233\151\178\230\151\182\229\133\137\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Gloria_Ff_O2_3.Role_Gloria_Ff_O2_3",
     CurrencyIcon = "",
@@ -5667,7 +5562,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10106001", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5684,7 +5579,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10106002", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5701,7 +5596,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10106003", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5735,7 +5630,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10106005", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5752,7 +5647,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10106006", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5769,7 +5664,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10106007", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5786,7 +5681,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10106101", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5803,7 +5698,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10106102", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5820,7 +5715,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10106201", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5854,7 +5749,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10106203", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5871,7 +5766,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10106501", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5925,7 +5820,7 @@ local resource_tbgeneral = {
   [10106801] = {
     ID = 10106801,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_10106801", "\232\165\191\233\131\168\229\190\128\228\186\139"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10106801", "\230\181\183\229\155\160\229\133\139\230\150\175\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_10106801", "<AttributeModifyLegend>\230\181\183\229\155\160\229\133\139\230\150\175\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\229\156\168\230\159\144\228\184\170\228\187\165\232\165\191\233\131\168\230\150\135\229\140\150\228\189\156\228\184\186\228\184\187\233\162\152\231\154\132\228\184\150\231\149\140\228\184\173\239\188\140\231\153\189\232\137\178\231\154\132\231\137\155\228\187\148\229\135\173\229\128\159\230\137\139\228\184\173\231\154\132\229\143\140\230\158\170\230\151\160\229\190\128\228\184\141\229\136\169\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Hyks_FF_O1.Role_Hyks_FF_O1",
     CurrencyIcon = "",
@@ -5933,7 +5828,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10106801", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 600}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -5942,7 +5837,7 @@ local resource_tbgeneral = {
   [101068011] = {
     ID = 101068011,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101068011", "\232\165\191\233\131\168\229\190\128\228\186\139"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101068011", "\230\181\183\229\155\160\229\133\139\230\150\175\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101068011", "<AttributeModifyLegend>\230\181\183\229\155\160\229\133\139\230\150\175\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\229\156\168\230\159\144\228\184\170\228\187\165\232\165\191\233\131\168\230\150\135\229\140\150\228\189\156\228\184\186\228\184\187\233\162\152\231\154\132\228\184\150\231\149\140\228\184\173\239\188\140\231\153\189\232\137\178\231\154\132\231\137\155\228\187\148\229\135\173\229\128\159\230\137\139\228\184\173\231\154\132\229\143\140\230\158\170\230\151\160\229\190\128\228\184\141\229\136\169\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Hyks_FF_O1_1.Role_Hyks_FF_O1_1",
     CurrencyIcon = "",
@@ -5957,7 +5852,7 @@ local resource_tbgeneral = {
   [101068012] = {
     ID = 101068012,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101068012", "\232\165\191\233\131\168\229\190\128\228\186\139"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101068012", "\230\181\183\229\155\160\229\133\139\230\150\175\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101068012", "<AttributeModifyLegend>\230\181\183\229\155\160\229\133\139\230\150\175\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\229\156\168\230\159\144\228\184\170\228\187\165\232\165\191\233\131\168\230\150\135\229\140\150\228\189\156\228\184\186\228\184\187\233\162\152\231\154\132\228\184\150\231\149\140\228\184\173\239\188\140\231\153\189\232\137\178\231\154\132\231\137\155\228\187\148\229\135\173\229\128\159\230\137\139\228\184\173\231\154\132\229\143\140\230\158\170\230\151\160\229\190\128\228\184\141\229\136\169\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Hyks_FF_O1_2.Role_Hyks_FF_O1_2",
     CurrencyIcon = "",
@@ -5972,7 +5867,7 @@ local resource_tbgeneral = {
   [101068013] = {
     ID = 101068013,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_101068013", "\232\165\191\233\131\168\229\190\128\228\186\139"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101068013", "\230\181\183\229\155\160\229\133\139\230\150\175\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_101068013", "<AttributeModifyLegend>\230\181\183\229\155\160\229\133\139\230\150\175\232\190\137\232\128\128\228\188\160\229\165\135\231\186\167\229\164\150\232\167\130\227\128\130</>\n\229\156\168\230\159\144\228\184\170\228\187\165\232\165\191\233\131\168\230\150\135\229\140\150\228\189\156\228\184\186\228\184\187\233\162\152\231\154\132\228\184\150\231\149\140\228\184\173\239\188\140\231\153\189\232\137\178\231\154\132\231\137\155\228\187\148\229\135\173\229\128\159\230\137\139\228\184\173\231\154\132\229\143\140\230\158\170\230\151\160\229\190\128\228\184\141\229\136\169\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Hyks_FF_O1_3.Role_Hyks_FF_O1_3",
     CurrencyIcon = "",
@@ -5995,7 +5890,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10108001", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6012,7 +5907,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10108002", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6029,7 +5924,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10108003", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6046,7 +5941,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10108004", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6063,7 +5958,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10108005", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6080,7 +5975,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10108006", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6097,7 +5992,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10108007", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6114,7 +6009,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10108101", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6131,7 +6026,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10108102", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6148,7 +6043,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10108201", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6165,7 +6060,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10108202", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6182,7 +6077,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10109001", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6199,7 +6094,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10109002", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6216,7 +6111,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10109003", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6233,7 +6128,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10109004", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6250,7 +6145,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10109005", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6267,7 +6162,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10109006", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6284,7 +6179,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10109007", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6301,7 +6196,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10109101", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6318,7 +6213,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10109102", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6335,7 +6230,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10109201", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6352,7 +6247,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10109202", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6369,7 +6264,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10110001", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6386,7 +6281,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10111001", "\232\139\177\233\155\132\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6403,7 +6298,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500701", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6420,7 +6315,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500702", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6454,7 +6349,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500704", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6471,7 +6366,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500705", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6488,7 +6383,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500706", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6505,7 +6400,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500707", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6522,7 +6417,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500721", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6539,7 +6434,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500722", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6556,7 +6451,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500741", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6573,7 +6468,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500742", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6590,7 +6485,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500901", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6624,7 +6519,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500903", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6641,7 +6536,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500904", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6658,7 +6553,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500905", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6675,7 +6570,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500906", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6692,7 +6587,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500907", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6709,7 +6604,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500921", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6726,7 +6621,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500922", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6743,7 +6638,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500941", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6760,7 +6655,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500942", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6777,7 +6672,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501801", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6828,7 +6723,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501001", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6862,7 +6757,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501003", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6879,7 +6774,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501004", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6896,7 +6791,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501005", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6913,7 +6808,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501006", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6930,7 +6825,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501007", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6947,7 +6842,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501021", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6964,7 +6859,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501022", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6981,7 +6876,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501041", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -6998,7 +6893,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501042", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7015,7 +6910,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500801", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7032,7 +6927,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500802", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7049,7 +6944,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500803", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7066,7 +6961,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500804", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7083,7 +6978,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500805", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7100,7 +6995,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500806", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7117,7 +7012,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500807", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7134,7 +7029,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500821", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7151,7 +7046,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500822", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7168,7 +7063,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500841", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7185,7 +7080,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10500842", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7202,7 +7097,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501101", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7236,7 +7131,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501103", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7253,7 +7148,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501104", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7270,7 +7165,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501105", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7287,7 +7182,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501106", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7304,7 +7199,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501107", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7321,7 +7216,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501121", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7338,7 +7233,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501122", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7355,7 +7250,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501141", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7372,7 +7267,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501142", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7389,7 +7284,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501201", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7406,7 +7301,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501202", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7423,7 +7318,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501203", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7440,7 +7335,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501204", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7457,7 +7352,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501205", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7474,7 +7369,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501206", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7491,7 +7386,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501207", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7508,7 +7403,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501221", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7525,7 +7420,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501222", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7542,7 +7437,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501241", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7559,7 +7454,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501242", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7576,7 +7471,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501601", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7593,7 +7488,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501602", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7610,7 +7505,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501603", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7627,7 +7522,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501604", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7644,7 +7539,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501605", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7661,7 +7556,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501606", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7678,7 +7573,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501607", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7695,7 +7590,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501621", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7712,7 +7607,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501622", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7746,7 +7641,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501642", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7763,7 +7658,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501401", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7797,7 +7692,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501403", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7814,7 +7709,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501404", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7831,7 +7726,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501405", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7848,7 +7743,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501406", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7865,7 +7760,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501407", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7882,7 +7777,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501421", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7899,7 +7794,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501422", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7916,7 +7811,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501441", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {
       {key = 300001, value = 10}
@@ -7935,7 +7830,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501442", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7952,7 +7847,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501701", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -7986,7 +7881,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501703", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8003,7 +7898,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501704", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8020,7 +7915,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501705", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8037,7 +7932,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501706", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8054,7 +7949,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501707", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8071,7 +7966,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501721", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8088,7 +7983,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501722", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8105,7 +8000,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501741", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8122,7 +8017,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501742", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8139,7 +8034,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501501", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8156,7 +8051,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501502", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8173,7 +8068,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501503", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8190,7 +8085,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501504", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8207,7 +8102,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501505", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8224,7 +8119,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501506", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8241,7 +8136,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501507", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8258,7 +8153,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501521", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8275,7 +8170,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501522", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8292,7 +8187,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501541", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8309,7 +8204,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501542", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8326,7 +8221,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502701", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8360,7 +8255,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502703", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8377,7 +8272,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502704", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8394,7 +8289,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502705", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8411,7 +8306,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502706", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8428,7 +8323,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502707", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8445,7 +8340,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502721", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8462,7 +8357,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502722", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8479,7 +8374,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502741", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8496,7 +8391,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502742", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8513,7 +8408,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501901", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8530,7 +8425,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501902", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8547,7 +8442,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501903", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8564,7 +8459,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501904", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8581,7 +8476,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501905", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8598,7 +8493,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501906", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8615,7 +8510,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501907", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8632,7 +8527,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501921", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8649,7 +8544,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501922", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8666,7 +8561,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501941", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8683,7 +8578,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10501942", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8700,7 +8595,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502001", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8717,7 +8612,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502101", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8751,7 +8646,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502103", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8768,7 +8663,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502104", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8785,7 +8680,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502105", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8802,7 +8697,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502106", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8819,7 +8714,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502107", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8853,7 +8748,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502122", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8870,7 +8765,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502141", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8887,7 +8782,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502142", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8904,7 +8799,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502201", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8921,7 +8816,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502202", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8938,7 +8833,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502203", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8955,7 +8850,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502204", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8972,7 +8867,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502205", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -8989,7 +8884,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502206", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9006,7 +8901,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502207", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9023,7 +8918,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502221", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9040,7 +8935,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502222", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9057,7 +8952,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502241", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9074,7 +8969,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502242", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9121,7 +9016,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502301", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9138,7 +9033,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502302", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9155,7 +9050,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502303", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9172,7 +9067,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502304", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9189,7 +9084,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502305", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9206,7 +9101,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502306", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9223,7 +9118,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502307", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9240,7 +9135,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502321", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9257,7 +9152,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502322", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9274,7 +9169,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502341", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9291,7 +9186,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502342", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9308,7 +9203,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502401", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9342,7 +9237,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502501", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9359,7 +9254,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502502", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9376,7 +9271,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502503", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9393,7 +9288,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502504", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9410,7 +9305,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502505", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9427,7 +9322,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502506", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9444,7 +9339,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502507", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9461,7 +9356,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502521", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9478,7 +9373,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502522", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9495,7 +9390,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502541", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9512,7 +9407,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502542", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9529,7 +9424,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502801", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9546,7 +9441,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502802", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9563,7 +9458,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502803", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9580,7 +9475,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502804", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9597,7 +9492,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502805", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9614,7 +9509,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502806", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9631,7 +9526,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502807", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9648,7 +9543,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502821", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9665,7 +9560,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502822", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9682,7 +9577,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502841", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9699,7 +9594,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502842", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9716,7 +9611,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10502901", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9733,7 +9628,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10503301", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9750,7 +9645,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10503311", "\230\173\166\229\153\168\231\154\174\232\130\164"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -9789,7 +9684,7 @@ local resource_tbgeneral = {
   [61012] = {
     ID = 61012,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_61012", "\232\167\163\231\160\129\229\153\168\232\161\165\231\187\153\229\140\133"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_61012", "\232\180\173\228\185\176\230\160\188\231\189\151\232\142\137\228\186\154\231\154\132\231\153\190\229\174\157\231\174\177\239\188\1361\229\164\169\239\188\137*10\239\188\140\229\143\175\232\142\183\232\181\160\232\167\163\231\160\129\229\153\168*10\239\188\140\229\143\175\231\148\168\228\186\142\232\167\163\231\160\129\230\149\176\230\141\174\229\174\157\229\186\147\231\154\132\228\191\161\230\129\175\230\149\176\230\141\174\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_61012", "\232\180\173\228\185\176\231\153\190\229\174\157\231\174\177\239\188\1361\229\164\169\239\188\137*10\239\188\140\229\143\175\232\142\183\232\181\160\232\167\163\231\160\129\229\153\168*10\239\188\140\229\143\175\231\148\168\228\186\142\232\167\163\231\160\129\230\149\176\230\141\174\229\174\157\229\186\147\231\154\132\228\191\161\230\129\175\230\149\176\230\141\174\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_ShopBundle_01.Icon_ShopBundle_01",
     CurrencyIcon = "",
@@ -10103,8 +9998,8 @@ local resource_tbgeneral = {
   },
   [61035] = {
     ID = 61035,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_61035", "\233\186\166\229\133\139\230\150\175\231\134\159\231\187\131\229\186\166MAX\232\167\146\232\137\178\229\140\133"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_61035", "\229\134\133\229\144\171\239\188\154\232\167\146\232\137\178-\233\186\166\229\133\139\230\150\175\239\188\140\231\134\159\231\187\131\229\186\166MAX\229\140\133\239\188\140\230\173\166\229\153\168\229\164\150\232\167\130-\230\157\165\229\136\135\231\130\185\228\187\128\228\185\136\194\183\230\154\151\231\180\171\239\188\140\228\184\147\229\177\158\232\175\173\233\159\179\239\188\154\231\131\167\231\131\164"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_61035", "\233\186\166\229\133\139\230\150\175\229\164\167\231\164\188\229\140\133"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_61035", "\229\134\133\229\144\171\239\188\154\232\167\146\232\137\178-\233\186\166\229\133\139\230\150\175\239\188\140\231\134\159\231\187\131\229\186\166MAX\229\140\133\239\188\140\230\173\166\229\153\168\229\164\150\232\167\130-\231\139\130\233\135\142\228\188\170\232\163\133\239\188\140\228\184\147\229\177\158\232\175\173\233\159\179\239\188\154\231\130\184\229\188\185\229\133\136\233\148\139\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_Nax_YP.Role_Nax_YP",
     CurrencyIcon = "",
@@ -10284,7 +10179,7 @@ local resource_tbgeneral = {
   [61047] = {
     ID = 61047,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_61047", "\232\141\167\232\154\128\229\180\169\232\167\163\230\141\134\231\187\145\229\140\133"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_61047", "\229\134\133\229\144\171\239\188\154\230\151\182\232\163\133-\232\141\167\232\154\128\229\180\169\232\167\163"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_61047", "\229\134\133\229\144\171\239\188\154\230\151\182\232\163\133-\232\141\167\232\154\128\229\180\169\232\167\163\239\188\140\228\184\147\229\177\158\232\175\173\233\159\179-\229\164\154\232\183\159\230\136\145\229\173\166\231\157\128\231\130\185"),
     Note = "\227\128\144\230\181\139\232\175\149\227\128\145\230\155\153\229\133\137\230\169\153\231\154\174\229\140\133\239\188\136S1\239\188\154\232\133\144\232\154\128\239\188\137-\229\148\174\228\187\18398",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconSkinviewRoleW/Frames/Role_RImu_Ff_S2_0.Role_RImu_Ff_S2_0",
     CurrencyIcon = "",
@@ -10329,7 +10224,7 @@ local resource_tbgeneral = {
   [61050] = {
     ID = 61050,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_61050", "\232\167\163\231\160\129\229\153\168\231\164\188\229\140\133"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_61050", "\232\180\173\228\185\176\230\160\188\231\189\151\232\142\137\228\186\154\231\154\132\231\153\190\229\174\157\231\174\177\239\188\1361\229\164\169\239\188\137*1\239\188\140\229\143\175\232\142\183\232\181\160\232\167\163\231\160\129\229\153\168*1\239\188\140\229\143\175\231\148\168\228\186\142\232\167\163\231\160\129\230\149\176\230\141\174\229\174\157\229\186\147\231\154\132\228\191\161\230\129\175\230\149\176\230\141\174\227\128\130\230\175\143\232\167\163\231\160\129\228\184\128\230\172\161\239\188\140\233\156\128\232\166\129\230\182\136\232\128\151\228\184\128\228\184\170\232\167\163\231\160\129\229\153\168\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_61050", "\232\180\173\228\185\176\231\153\190\229\174\157\231\174\177\239\188\1361\229\164\169\239\188\137*1\239\188\140\229\143\175\232\142\183\232\181\160\232\167\163\231\160\129\229\153\168*1\239\188\140\229\143\175\231\148\168\228\186\142\232\167\163\231\160\129\230\149\176\230\141\174\229\174\157\229\186\147\231\154\132\228\191\161\230\129\175\230\149\176\230\141\174\227\128\130\230\175\143\232\167\163\231\160\129\228\184\128\230\172\161\239\188\140\233\156\128\232\166\129\230\182\136\232\128\151\228\184\128\228\184\170\232\167\163\231\160\129\229\153\168\227\128\130"),
     Note = "\227\128\144\230\138\189\229\141\161\227\128\145\228\185\176\229\150\183\230\188\134\232\181\160\232\167\163\231\160\129\229\153\168",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_ShopBundle_01.Icon_ShopBundle_01",
     CurrencyIcon = "",
@@ -10354,6 +10249,126 @@ local resource_tbgeneral = {
     DecomposeResources = {
       {key = 6201015, value = 1}
     },
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [61051] = {
+    ID = 61051,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_61051", "\227\128\144\230\181\139\232\175\149\227\128\145\229\186\148\233\190\153\230\150\176\229\162\158T2\230\168\161\231\187\132\229\164\167\231\164\188\229\140\133"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_61051", ""),
+    Note = "",
+    Icon = "",
+    CurrencyIcon = "",
+    Type = 17,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_61051", "\231\164\188\229\140\133"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [61052] = {
+    ID = 61052,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_61052", "\227\128\144\230\181\139\232\175\149\227\128\145\229\186\148\233\190\153\230\150\176\229\162\158T3\230\168\161\231\187\132\229\164\167\231\164\188\229\140\133"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_61052", ""),
+    Note = "",
+    Icon = "",
+    CurrencyIcon = "",
+    Type = 17,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_61052", "\231\164\188\229\140\133"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [61053] = {
+    ID = 61053,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_61053", "\227\128\144\230\181\139\232\175\149\227\128\145\229\186\148\233\190\153\230\150\176\229\162\158T4\230\169\153\230\168\161\231\187\132\229\164\167\231\164\188\229\140\133"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_61053", ""),
+    Note = "",
+    Icon = "",
+    CurrencyIcon = "",
+    Type = 17,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_61053", "\231\164\188\229\140\133"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [61054] = {
+    ID = 61054,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_61054", "\227\128\144\230\181\139\232\175\149\227\128\145\229\186\148\233\190\153\230\150\176\229\162\158T4\231\186\162\230\168\161\231\187\132\229\164\167\231\164\188\229\140\133"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_61054", ""),
+    Note = "",
+    Icon = "",
+    CurrencyIcon = "",
+    Type = 17,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_61054", "\231\164\188\229\140\133"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [61055] = {
+    ID = 61055,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_61055", "\227\128\144\230\181\139\232\175\149\227\128\145\228\184\187\231\186\191\230\150\176\229\162\158T1\231\165\158\232\181\1441\230\168\161\231\187\132\229\164\167\231\164\188\229\140\133"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_61055", ""),
+    Note = "",
+    Icon = "",
+    CurrencyIcon = "",
+    Type = 17,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_61055", "\231\164\188\229\140\133"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [61056] = {
+    ID = 61056,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_61056", "\227\128\144\230\181\139\232\175\149\227\128\145\228\184\187\231\186\191\230\150\176\229\162\158T2\231\165\158\232\181\1441\230\168\161\231\187\132\229\164\167\231\164\188\229\140\133"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_61056", ""),
+    Note = "",
+    Icon = "",
+    CurrencyIcon = "",
+    Type = 17,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_61056", "\231\164\188\229\140\133"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [61057] = {
+    ID = 61057,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_61057", "\227\128\144\230\181\139\232\175\149\227\128\145\228\184\187\231\186\191\230\150\176\229\162\158T3\231\165\158\232\181\1441\230\168\161\231\187\132\229\164\167\231\164\188\229\140\133"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_61057", ""),
+    Note = "",
+    Icon = "",
+    CurrencyIcon = "",
+    Type = 17,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_61057", "\231\164\188\229\140\133"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [61058] = {
+    ID = 61058,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_61058", "\227\128\144\230\181\139\232\175\149\227\128\145\228\184\187\231\186\191\230\150\176\229\162\158T4\231\165\158\232\181\1441\230\169\153\230\168\161\231\187\132\229\164\167\231\164\188\229\140\133"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_61058", ""),
+    Note = "",
+    Icon = "",
+    CurrencyIcon = "",
+    Type = 17,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_61058", "\231\164\188\229\140\133"),
+    Rare = 4,
+    DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
     ProEffType = 0
@@ -10536,7 +10551,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10600001", "\232\139\177\233\155\132\229\164\150\232\167\130"),
     Rare = 1,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10553,7 +10568,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10600002", "\232\139\177\233\155\132\229\164\150\232\167\130"),
     Rare = 1,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10570,7 +10585,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_10600003", "\232\139\177\233\155\132\229\164\150\232\167\130"),
     Rare = 1,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10604,7 +10619,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700002", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10621,7 +10636,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700003", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10638,7 +10653,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700004", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10672,7 +10687,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700006", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10689,7 +10704,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700007", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10706,7 +10721,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700008", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10740,7 +10755,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700010", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10774,7 +10789,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700012", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10791,7 +10806,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700013", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10808,7 +10823,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700014", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10842,7 +10857,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700016", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10859,7 +10874,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700017", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10876,7 +10891,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700018", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10893,7 +10908,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700019", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10910,7 +10925,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700020", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10927,7 +10942,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700021", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10944,7 +10959,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700022", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10961,7 +10976,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700023", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10978,7 +10993,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700024", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -10995,7 +11010,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700025", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11012,7 +11027,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700026", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11029,7 +11044,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700027", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11046,7 +11061,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20700028", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11097,7 +11112,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703004", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11148,7 +11163,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703008", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11165,7 +11180,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703009", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11182,7 +11197,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703010", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11216,7 +11231,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703012", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11233,7 +11248,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703013", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11284,7 +11299,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703016", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11301,7 +11316,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703017", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11318,7 +11333,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703018", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11335,7 +11350,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703019", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11352,7 +11367,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703020", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11369,7 +11384,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703022", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11386,7 +11401,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703024", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11403,7 +11418,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703025", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11420,7 +11435,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703026", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11437,7 +11452,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703027", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11454,7 +11469,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703028", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11462,7 +11477,7 @@ local resource_tbgeneral = {
   },
   [20703029] = {
     ID = 20703029,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703029", "\230\160\188\231\189\151\232\142\137\228\186\154\231\154\132\231\153\190\229\174\157\231\174\177"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703029", "\231\153\190\229\174\157\231\174\177"),
     DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703029", "\230\178\159\233\128\154\229\150\183\230\188\134-\233\128\154\231\148\168"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Paint_P29.Icon_Paint_P29",
@@ -11471,7 +11486,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703029", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11488,7 +11503,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703030", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11505,7 +11520,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703031", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11522,7 +11537,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703032", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11539,7 +11554,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703033", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11556,7 +11571,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703034", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11564,8 +11579,8 @@ local resource_tbgeneral = {
   },
   [20703035] = {
     ID = 20703035,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703035", "\231\151\133\230\175\146\231\159\169\233\152\181"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703035", "\230\178\159\233\128\154\229\150\183\230\188\134-\233\128\154\231\148\168"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703035", "\229\133\177\229\136\155\232\128\133"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703035", "\229\136\155\228\189\156\232\128\133\228\184\147\229\177\158"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Paint_P35.Icon_Paint_P35",
     CurrencyIcon = "",
@@ -11573,7 +11588,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703035", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11590,7 +11605,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703036", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11598,8 +11613,8 @@ local resource_tbgeneral = {
   },
   [20703037] = {
     ID = 20703037,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703037", "\232\139\177\233\155\132\231\153\187\229\156\186"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703037", "\230\178\159\233\128\154\229\150\183\230\188\134-\233\128\154\231\148\168"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703037", "\229\133\177\229\136\155\232\128\133"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703037", "\229\136\155\228\189\156\232\128\133\228\184\147\229\177\158"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Paint_P37.Icon_Paint_P37",
     CurrencyIcon = "",
@@ -11607,7 +11622,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703037", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11615,8 +11630,8 @@ local resource_tbgeneral = {
   },
   [20703038] = {
     ID = 20703038,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703038", "\229\133\136\233\169\177"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703038", "\230\178\159\233\128\154\229\150\183\230\188\134-\233\128\154\231\148\168"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703038", "\229\133\136\233\169\177\232\128\133"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703038", "\229\133\177\231\160\148\229\164\180\229\143\183\231\142\169\229\174\182\228\184\147\229\177\158"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Paint_P38.Icon_Paint_P38",
     CurrencyIcon = "",
@@ -11624,7 +11639,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703038", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11641,7 +11656,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703039", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11658,7 +11673,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703040", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11675,7 +11690,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703041", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11692,7 +11707,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703042", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11700,8 +11715,8 @@ local resource_tbgeneral = {
   },
   [20703043] = {
     ID = 20703043,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703043", "WEGAME"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703043", "\230\178\159\233\128\154\229\150\183\230\188\134-\233\128\154\231\148\168"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703043", "\230\154\151\233\135\145"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703043", "WeGame\228\184\147\229\177\158\229\150\183\230\188\134"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Paint_P43.Icon_Paint_P43",
     CurrencyIcon = "",
@@ -11709,7 +11724,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703043", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11717,8 +11732,8 @@ local resource_tbgeneral = {
   },
   [20703044] = {
     ID = 20703044,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703044", "STEAM"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703044", "\230\178\159\233\128\154\229\150\183\230\188\134-\233\128\154\231\148\168"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703044", "\232\147\157\233\152\128"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703044", "Steam\228\184\147\229\177\158\229\150\183\230\188\134"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Paint_P44.Icon_Paint_P44",
     CurrencyIcon = "",
@@ -11726,7 +11741,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703044", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11734,8 +11749,8 @@ local resource_tbgeneral = {
   },
   [20703045] = {
     ID = 20703045,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703045", "QQ\231\189\145\229\144\167"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703045", "\230\178\159\233\128\154\229\150\183\230\188\134-\233\128\154\231\148\168"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703045", "\230\169\153\231\132\176\233\185\133"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703045", "QQ\231\189\145\229\144\167\228\184\147\229\177\158\229\150\183\230\188\134"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Paint_P45.Icon_Paint_P45",
     CurrencyIcon = "",
@@ -11743,7 +11758,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703045", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11751,8 +11766,8 @@ local resource_tbgeneral = {
   },
   [20703046] = {
     ID = 20703046,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703046", "\231\189\145\233\177\188\231\189\145\229\146\150"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703046", "\230\178\159\233\128\154\229\150\183\230\188\134-\233\128\154\231\148\168"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703046", "\230\189\156\232\162\173"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703046", "\231\189\145\233\177\188\231\148\181\231\171\158\228\184\147\229\177\158\229\150\183\230\188\134"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Paint_P46.Icon_Paint_P46",
     CurrencyIcon = "",
@@ -11760,7 +11775,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703046", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11768,8 +11783,8 @@ local resource_tbgeneral = {
   },
   [20703047] = {
     ID = 20703047,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703047", "\232\182\133\230\160\184\231\142\169\229\174\182"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703047", "\230\178\159\233\128\154\229\150\183\230\188\134-\233\128\154\231\148\168"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703047", "\233\148\144\233\152\182"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703047", "\232\182\133\230\160\184\231\142\169\229\174\182\228\184\147\229\177\158\229\150\183\230\188\134"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Paint_P47.Icon_Paint_P47",
     CurrencyIcon = "",
@@ -11777,7 +11792,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703047", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11785,8 +11800,8 @@ local resource_tbgeneral = {
   },
   [20703048] = {
     ID = 20703048,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703048", "\229\191\131\230\130\166\228\191\177\228\185\144\233\131\168"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703048", "\230\178\159\233\128\154\229\150\183\230\188\134-\233\128\154\231\148\168"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_20703048", "\230\130\166\229\134\149"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_20703048", "\229\191\131\230\130\166\228\191\177\228\185\144\233\131\168\228\184\147\229\177\158\229\150\183\230\188\134"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Paint_P48.Icon_Paint_P48",
     CurrencyIcon = "",
@@ -11794,7 +11809,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703048", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11811,7 +11826,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703049", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11828,7 +11843,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703050", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11845,7 +11860,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703051", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11862,7 +11877,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20703052", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11879,7 +11894,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20707001", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11896,7 +11911,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20707002", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11913,7 +11928,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20707003", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11930,7 +11945,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20707004", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11947,7 +11962,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20710001", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11964,7 +11979,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720001", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11981,7 +11996,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720002", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -11998,7 +12013,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720003", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12032,7 +12047,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720005", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12049,7 +12064,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720071", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12066,7 +12081,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720072", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12083,7 +12098,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720101", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12100,7 +12115,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720102", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12136,7 +12151,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720104", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12153,7 +12168,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720105", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12170,7 +12185,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720171", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12187,7 +12202,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720172", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12204,7 +12219,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720201", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12221,7 +12236,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720202", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12238,7 +12253,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720203", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12255,7 +12270,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720204", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12272,7 +12287,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720205", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12289,7 +12304,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720271", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12323,7 +12338,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720302", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12340,7 +12355,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720303", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12357,7 +12372,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720304", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12374,7 +12389,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720305", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12391,7 +12406,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720371", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12408,7 +12423,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720401", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12425,7 +12440,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720402", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12442,7 +12457,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720403", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12459,7 +12474,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720404", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12476,7 +12491,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720405", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12493,7 +12508,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720471", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12510,7 +12525,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720601", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12527,7 +12542,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720602", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12544,7 +12559,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720603", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12561,7 +12576,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720604", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12578,7 +12593,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720605", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -12595,7 +12610,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_20720671", "\232\139\177\233\155\132\230\178\159\233\128\154\232\189\174\231\155\152"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -14373,7 +14388,7 @@ local resource_tbgeneral = {
   },
   [70781] = {
     ID = 70781,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_70781", "\228\191\174\230\173\163\232\161\140\229\138\168I"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_70781", "\232\135\179\233\171\152\232\141\163\232\170\137"),
     DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_70781", "S0\232\181\155\229\173\163\233\128\154\229\133\179\228\191\174\230\173\163\232\161\140\229\138\16820\229\177\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconAchievementA/Frames/Icon_Achieve01_30.Icon_Achieve01_30",
@@ -14388,14 +14403,14 @@ local resource_tbgeneral = {
   },
   [70782] = {
     ID = 70782,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_70782", "\228\191\174\230\173\163\232\161\140\229\138\168II"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_70782", "\232\135\179\233\171\152\232\141\163\232\170\137"),
     DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_70782", "S0\232\181\155\229\173\163\233\128\154\229\133\179\228\191\174\230\173\163\232\161\140\229\138\16830\229\177\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconAchievementA/Frames/Icon_Achieve02_30.Icon_Achieve02_30",
     CurrencyIcon = "",
     Type = 12,
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_70782", "\231\178\190\232\137\175"),
-    Rare = 0,
+    Rare = 1,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -14403,14 +14418,14 @@ local resource_tbgeneral = {
   },
   [70783] = {
     ID = 70783,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_70783", "\228\191\174\230\173\163\232\161\140\229\138\168III"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_70783", "\232\135\179\233\171\152\232\141\163\232\170\137"),
     DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_70783", "S0\232\181\155\229\173\163\233\128\154\229\133\179\228\191\174\230\173\163\232\161\140\229\138\16840\229\177\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconAchievementA/Frames/Icon_Achieve03_30.Icon_Achieve03_30",
     CurrencyIcon = "",
     Type = 12,
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_70783", "\231\168\128\230\156\137"),
-    Rare = 0,
+    Rare = 2,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -14418,14 +14433,14 @@ local resource_tbgeneral = {
   },
   [70784] = {
     ID = 70784,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_70784", "\228\191\174\230\173\163\232\161\140\229\138\168IV"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_70784", "\232\135\179\233\171\152\232\141\163\232\170\137"),
     DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_70784", "S0\232\181\155\229\173\163\233\128\154\229\133\179\228\191\174\230\173\163\232\161\140\229\138\16850\229\177\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconAchievementA/Frames/Icon_Achieve04_30.Icon_Achieve04_30",
     CurrencyIcon = "",
     Type = 12,
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_70784", "\229\143\178\232\175\151"),
-    Rare = 0,
+    Rare = 3,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15627,7 +15642,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81001", "\229\164\180\229\131\143"),
     Rare = 0,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15644,7 +15659,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81002", "\229\164\180\229\131\143"),
     Rare = 0,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15661,7 +15676,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81003", "\229\164\180\229\131\143"),
     Rare = 0,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15678,7 +15693,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81004", "\229\164\180\229\131\143"),
     Rare = 0,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15695,7 +15710,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81005", "\229\164\180\229\131\143"),
     Rare = 0,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15712,7 +15727,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81006", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15729,7 +15744,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81201", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15746,7 +15761,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81202", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15763,7 +15778,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81203", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15780,7 +15795,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81204", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {
       {key = 300001, value = 10}
@@ -15799,7 +15814,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81205", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15816,7 +15831,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81206", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15833,7 +15848,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81207", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15850,7 +15865,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81208", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15867,7 +15882,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81209", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15884,7 +15899,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81210", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15901,7 +15916,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81211", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15918,7 +15933,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81212", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15935,7 +15950,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81213", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15952,7 +15967,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81214", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15969,7 +15984,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81215", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -15986,7 +16001,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81216", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16003,7 +16018,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81217", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16020,7 +16035,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81218", "\229\164\180\229\131\143"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16037,7 +16052,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81401", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16054,7 +16069,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81402", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16071,7 +16086,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81403", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16105,7 +16120,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81405", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16122,7 +16137,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81406", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16139,7 +16154,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81407", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16173,7 +16188,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81409", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16190,7 +16205,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81410", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16207,7 +16222,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81411", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16241,7 +16256,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81413", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16249,8 +16264,8 @@ local resource_tbgeneral = {
   },
   [81414] = {
     ID = 81414,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81414", "\233\187\145\229\174\162"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81414", "\228\184\170\228\186\186\229\164\180\229\131\143-\233\187\145\229\174\162"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81414", "\230\154\151\233\187\145\230\160\184\229\191\131"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81414", "\229\174\152\231\189\145\231\187\145\229\174\154\228\184\147\229\177\158\229\164\180\229\131\143"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P10.Icon_Head_P10",
     CurrencyIcon = "",
@@ -16258,7 +16273,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81414", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16275,7 +16290,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81415", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16309,7 +16324,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81417", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16318,7 +16333,7 @@ local resource_tbgeneral = {
   [81418] = {
     ID = 81418,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81418", "\229\133\136\233\169\177\232\128\133"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81418", "\228\184\170\228\186\186\229\164\180\229\131\143-\229\133\136\233\169\177\232\128\133"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81418", "\229\133\177\231\160\148\229\164\180\229\143\183\231\142\169\229\174\182\228\184\147\229\177\158"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P14.Icon_Head_P14",
     CurrencyIcon = "",
@@ -16326,7 +16341,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81418", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16343,7 +16358,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81419", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16360,7 +16375,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81420", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16411,7 +16426,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81423", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16428,7 +16443,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81424", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16445,7 +16460,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81425", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16479,7 +16494,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81427", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16496,7 +16511,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81428", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16513,7 +16528,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81429", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16530,7 +16545,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81430", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16547,7 +16562,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81431", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16564,7 +16579,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81432", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16581,7 +16596,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81433", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16598,7 +16613,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81434", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16607,7 +16622,7 @@ local resource_tbgeneral = {
   [81435] = {
     ID = 81435,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81435", "\229\133\177\229\136\155\232\128\133"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81435", "\228\184\170\228\186\186\229\164\180\229\131\143-\229\133\177\229\136\155\232\128\133"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81435", "\229\136\155\228\189\156\232\128\133\228\184\147\229\177\158"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P35.Icon_Head_P35",
     CurrencyIcon = "",
@@ -16615,7 +16630,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81435", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16632,7 +16647,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81436", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16649,7 +16664,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81437", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16666,7 +16681,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81438", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16674,8 +16689,8 @@ local resource_tbgeneral = {
   },
   [81439] = {
     ID = 81439,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81439", "WEGAME"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81439", "\228\184\170\228\186\186\229\164\180\229\131\143-WEGAME"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81439", "\230\154\151\233\135\145\230\158\162\232\138\146"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81439", "WeGame\228\184\147\229\177\158\229\164\180\229\131\143"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P39.Icon_Head_P39",
     CurrencyIcon = "",
@@ -16683,7 +16698,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81439", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16691,8 +16706,8 @@ local resource_tbgeneral = {
   },
   [81440] = {
     ID = 81440,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81440", "STEAM"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81440", "\228\184\170\228\186\186\229\164\180\229\131\143-STEAM"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81440", "\232\147\157\233\152\128\230\184\161\231\134\181"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81440", "Steam\228\184\147\229\177\158\229\164\180\229\131\143"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P40.Icon_Head_P40",
     CurrencyIcon = "",
@@ -16700,7 +16715,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81440", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16708,8 +16723,8 @@ local resource_tbgeneral = {
   },
   [81441] = {
     ID = 81441,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81441", "QQ\231\189\145\229\144\167"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81441", "\228\184\170\228\186\186\229\164\180\229\131\143-QQ\231\189\145\229\144\167"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81441", "\230\169\153\231\132\176\233\185\133\233\169\191"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81441", "QQ\231\189\145\229\144\167\228\184\147\229\177\158\229\164\180\229\131\143"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P41.Icon_Head_P41",
     CurrencyIcon = "",
@@ -16717,7 +16732,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81441", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16725,8 +16740,8 @@ local resource_tbgeneral = {
   },
   [81442] = {
     ID = 81442,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81442", "\231\189\145\233\177\188\231\189\145\229\146\150"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81442", "\228\184\170\228\186\186\229\164\180\229\131\143-\231\189\145\233\177\188\231\189\145\229\146\150"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81442", "\231\189\145\233\177\188\230\189\174\232\136\177"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81442", "\231\189\145\233\177\188\231\148\181\231\171\158\228\184\147\229\177\158\229\164\180\229\131\143"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P42.Icon_Head_P42",
     CurrencyIcon = "",
@@ -16734,7 +16749,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81442", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16742,8 +16757,8 @@ local resource_tbgeneral = {
   },
   [81443] = {
     ID = 81443,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81443", "\229\190\174\228\191\161"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81443", "\228\184\170\228\186\186\229\164\180\229\131\143-\229\190\174\228\191\161"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81443", "\228\191\161\230\182\159"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81443", "\229\190\174\228\191\161\228\184\147\229\177\158\229\164\180\229\131\143"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P43.Icon_Head_P43",
     CurrencyIcon = "",
@@ -16751,7 +16766,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81443", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16759,8 +16774,8 @@ local resource_tbgeneral = {
   },
   [81444] = {
     ID = 81444,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81444", "QQ"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81444", "\228\184\170\228\186\186\229\164\180\229\131\143-QQ"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81444", "\231\186\162\229\155\180\232\174\175\228\189\191"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81444", "QQ\228\184\147\229\177\158\229\164\180\229\131\143"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P44.Icon_Head_P44",
     CurrencyIcon = "",
@@ -16768,7 +16783,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81444", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16776,8 +16791,8 @@ local resource_tbgeneral = {
   },
   [81445] = {
     ID = 81445,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81445", "\232\182\133\230\160\184\231\142\169\229\174\182"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81445", "\228\184\170\228\186\186\229\164\180\229\131\143-\232\182\133\230\160\184\231\142\169\229\174\182"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81445", "\230\160\184\232\138\146\233\148\144\233\152\182"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81445", "\232\182\133\230\160\184\231\142\169\229\174\182\228\184\147\229\177\158\229\164\180\229\131\143"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P45.Icon_Head_P45",
     CurrencyIcon = "",
@@ -16785,7 +16800,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81445", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16793,8 +16808,8 @@ local resource_tbgeneral = {
   },
   [81446] = {
     ID = 81446,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81446", "\229\191\131\230\130\166\228\191\177\228\185\144\233\131\168"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81446", "\228\184\170\228\186\186\229\164\180\229\131\143-\229\191\131\230\130\166\228\191\177\228\185\144\233\131\168"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81446", "\230\130\166\229\134\149\230\158\162\231\155\159"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81446", "\229\191\131\230\130\166\228\191\177\228\185\144\233\131\168\228\184\147\229\177\158\229\164\180\229\131\143"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P46.Icon_Head_P46",
     CurrencyIcon = "",
@@ -16802,7 +16817,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81446", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16810,8 +16825,8 @@ local resource_tbgeneral = {
   },
   [81447] = {
     ID = 81447,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81447", "\229\138\160\233\128\159\229\153\168"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81447", "\228\184\170\228\186\186\229\164\180\229\131\143-\229\138\160\233\128\159\229\153\168"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81447", "\233\128\159\232\138\146\231\160\180\229\159\159"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81447", "\229\138\160\233\128\159\229\153\168\228\184\147\229\177\158\229\164\180\229\131\143"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P47.Icon_Head_P47",
     CurrencyIcon = "",
@@ -16819,7 +16834,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81447", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16827,8 +16842,8 @@ local resource_tbgeneral = {
   },
   [81448] = {
     ID = 81448,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81448", "\229\176\143\233\187\145\231\155\146"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81448", "\228\184\170\228\186\186\229\164\180\229\131\143-\229\176\143\233\187\145\231\155\146"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_81448", "\231\155\146\231\149\140\232\167\130\229\188\136"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_81448", "\229\176\143\233\187\145\231\155\146\228\184\147\229\177\158\229\164\180\229\131\143"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconHead/Frames/Icon_Head_P48.Icon_Head_P48",
     CurrencyIcon = "",
@@ -16836,7 +16851,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81448", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16853,7 +16868,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81449", "\229\164\180\229\131\143"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16870,7 +16885,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81701", "\229\164\180\229\131\143"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16887,7 +16902,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81702", "\229\164\180\229\131\143"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16904,7 +16919,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81703", "\229\164\180\229\131\143"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16921,7 +16936,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81704", "\229\164\180\229\131\143"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16938,7 +16953,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81705", "\229\164\180\229\131\143"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16955,7 +16970,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_81709", "\229\164\180\229\131\143"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16972,7 +16987,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82001", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -16989,7 +17004,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82002", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {
       {key = 300001, value = 10}
@@ -17008,7 +17023,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82003", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17025,7 +17040,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82004", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17042,7 +17057,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82005", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17059,7 +17074,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82006", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17076,7 +17091,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82007", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17093,7 +17108,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82008", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17110,7 +17125,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82009", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17127,7 +17142,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82010", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17144,7 +17159,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82201", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17161,7 +17176,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82202", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17178,7 +17193,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82203", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17195,7 +17210,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82204", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17212,7 +17227,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82205", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17229,7 +17244,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82206", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17246,7 +17261,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82207", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17263,7 +17278,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82401", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17280,7 +17295,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82402", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17297,7 +17312,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82403", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17314,7 +17329,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82404", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17331,7 +17346,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82405", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17348,7 +17363,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82406", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17365,7 +17380,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82407", "\230\168\170\229\185\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17374,7 +17389,7 @@ local resource_tbgeneral = {
   [82408] = {
     ID = 82408,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82408", "\231\167\152\229\175\134\229\133\165\228\190\181"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82408", "\229\144\141\231\137\135\232\131\140\230\153\175-\231\167\152\229\175\134\229\133\165\228\190\181"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82408", "\229\174\152\231\189\145\229\133\179\230\179\168\228\188\129\229\190\174\228\184\147\229\177\158\229\144\141\231\137\135"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Card_P08.Icon_Card_P08",
     CurrencyIcon = "",
@@ -17382,7 +17397,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82408", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17467,7 +17482,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82413", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17518,7 +17533,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82416", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17535,7 +17550,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82417", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17552,7 +17567,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82418", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17569,7 +17584,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82419", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17586,7 +17601,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82420", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17603,7 +17618,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82421", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17620,7 +17635,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82422", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17637,7 +17652,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82423", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17654,7 +17669,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82424", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17671,7 +17686,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82425", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17688,7 +17703,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82426", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17705,7 +17720,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82427", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17722,7 +17737,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82428", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17739,7 +17754,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82429", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17756,7 +17771,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82430", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17773,7 +17788,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82431", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17790,7 +17805,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82432", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17807,7 +17822,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82433", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17824,7 +17839,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82434", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17841,7 +17856,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82435", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17858,7 +17873,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82436", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17867,7 +17882,7 @@ local resource_tbgeneral = {
   [82437] = {
     ID = 82437,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82437", "\229\133\177\229\136\155\232\128\133"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82437", "\229\144\141\231\137\135\232\131\140\230\153\175-\229\133\177\229\136\155\232\128\133"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82437", "\229\136\155\228\189\156\232\128\133\228\184\147\229\177\158"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Card_P37.Icon_Card_P37",
     CurrencyIcon = "",
@@ -17875,7 +17890,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82437", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17884,7 +17899,7 @@ local resource_tbgeneral = {
   [82438] = {
     ID = 82438,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82438", "\229\133\136\233\169\177\232\128\133"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82438", "\229\144\141\231\137\135\232\131\140\230\153\175-\229\133\136\233\169\177\232\128\133"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82438", "\229\133\177\231\160\148\229\164\180\229\143\183\231\142\169\229\174\182\228\184\147\229\177\158"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Card_P38.Icon_Card_P38",
     CurrencyIcon = "",
@@ -17892,7 +17907,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82438", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17909,7 +17924,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82439", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17926,7 +17941,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82440", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17934,8 +17949,8 @@ local resource_tbgeneral = {
   },
   [82441] = {
     ID = 82441,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82441", "WEGAME"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82441", "\229\144\141\231\137\135\232\131\140\230\153\175-WEGAME"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82441", "\232\190\137\230\158\162\231\153\187\228\184\180"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82441", "WeGame\228\184\147\229\177\158\229\144\141\231\137\135"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Card_P41.Icon_Card_P41",
     CurrencyIcon = "",
@@ -17943,7 +17958,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82441", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17951,8 +17966,8 @@ local resource_tbgeneral = {
   },
   [82442] = {
     ID = 82442,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82442", "STEAM"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82442", "\229\144\141\231\137\135\232\131\140\230\153\175-STEAM"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82442", "\233\152\128\231\149\140\230\189\156\232\162\173"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82442", "Steam\228\184\147\229\177\158\229\144\141\231\137\135"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Card_P42.Icon_Card_P42",
     CurrencyIcon = "",
@@ -17960,7 +17975,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82442", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17968,8 +17983,8 @@ local resource_tbgeneral = {
   },
   [82443] = {
     ID = 82443,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82443", "QQ\231\189\145\229\144\167"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82443", "\229\144\141\231\137\135\232\131\140\230\153\175-QQ\231\189\145\229\144\167"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82443", "\230\169\153\231\132\176\233\169\191\230\136\152"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82443", "QQ\231\189\145\229\144\167\228\184\147\229\177\158\229\144\141\231\137\135"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Card_P43.Icon_Card_P43",
     CurrencyIcon = "",
@@ -17977,7 +17992,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82443", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -17985,8 +18000,8 @@ local resource_tbgeneral = {
   },
   [82444] = {
     ID = 82444,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82444", "\231\189\145\233\177\188\231\189\145\229\146\150"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82444", "\229\144\141\231\137\135\232\131\140\230\153\175-\231\189\145\233\177\188\231\189\145\229\146\150"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82444", "\232\147\157\230\189\174"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82444", "\231\189\145\233\177\188\231\148\181\231\171\158\228\184\147\229\177\158\229\144\141\231\137\135"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Card_P44.Icon_Card_P44",
     CurrencyIcon = "",
@@ -17994,7 +18009,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82444", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -18002,8 +18017,8 @@ local resource_tbgeneral = {
   },
   [82445] = {
     ID = 82445,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82445", "\229\190\174\228\191\161"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82445", "\229\144\141\231\137\135\232\131\140\230\153\175-\229\190\174\228\191\161"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82445", "\228\191\161\232\138\146"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82445", "\229\190\174\228\191\161\228\184\147\229\177\158\229\144\141\231\137\135"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Card_P45.Icon_Card_P45",
     CurrencyIcon = "",
@@ -18011,7 +18026,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82445", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -18019,8 +18034,8 @@ local resource_tbgeneral = {
   },
   [82446] = {
     ID = 82446,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82446", "QQ"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82446", "\229\144\141\231\137\135\232\131\140\230\153\175-QQ"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82446", "\231\186\162\229\155\180\232\174\175\230\189\174"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82446", "QQ\228\184\147\229\177\158\229\144\141\231\137\135"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Card_P46.Icon_Card_P46",
     CurrencyIcon = "",
@@ -18028,7 +18043,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82446", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -18036,8 +18051,8 @@ local resource_tbgeneral = {
   },
   [82447] = {
     ID = 82447,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82447", "\232\182\133\230\160\184\231\142\169\229\174\182"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82447", "\229\144\141\231\137\135\232\131\140\230\153\175-\232\182\133\230\160\184\231\142\169\229\174\182"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82447", "\230\160\184\232\138\146\233\148\144\229\144\175"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82447", "\232\182\133\230\160\184\231\142\169\229\174\182\228\184\147\229\177\158\229\144\141\231\137\135"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Card_P47.Icon_Card_P47",
     CurrencyIcon = "",
@@ -18045,7 +18060,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82447", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -18053,8 +18068,8 @@ local resource_tbgeneral = {
   },
   [82448] = {
     ID = 82448,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82448", "\229\191\131\230\130\166\228\191\177\228\185\144\233\131\168"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82448", "\229\144\141\231\137\135\232\131\140\230\153\175-\229\191\131\230\130\166\228\191\177\228\185\144\233\131\168"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82448", "\230\130\166\229\134\149\231\155\159"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82448", "\229\191\131\230\130\166\228\191\177\228\185\144\233\131\168\228\184\147\229\177\158\229\144\141\231\137\135"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Card_P48.Icon_Card_P48",
     CurrencyIcon = "",
@@ -18062,7 +18077,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82448", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -18070,8 +18085,8 @@ local resource_tbgeneral = {
   },
   [82449] = {
     ID = 82449,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82449", "\229\138\160\233\128\159\229\153\168"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82449", "\229\144\141\231\137\135\232\131\140\230\153\175-\229\138\160\233\128\159\229\153\168"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82449", "\233\128\159\232\138\146\231\160\180\229\159\159"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82449", "\229\138\160\233\128\159\229\153\168\228\184\147\229\177\158\229\144\141\231\137\135"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Card_P49.Icon_Card_P49",
     CurrencyIcon = "",
@@ -18079,7 +18094,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82449", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -18087,8 +18102,8 @@ local resource_tbgeneral = {
   },
   [82450] = {
     ID = 82450,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82450", "\229\176\143\233\187\145\231\155\146"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82450", "\229\144\141\231\137\135\232\131\140\230\153\175-\229\176\143\233\187\145\231\155\146"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_82450", "\231\155\146\232\167\130\230\189\174"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_82450", "\229\176\143\233\187\145\231\155\146\228\184\147\229\177\158\229\144\141\231\137\135"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Card_P50.Icon_Card_P50",
     CurrencyIcon = "",
@@ -18096,7 +18111,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82450", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -18113,7 +18128,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82451", "\230\168\170\229\185\133"),
     Rare = 3,
     DecomposeResources = {
-      {key = 99035, value = 60}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -18130,7 +18145,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82701", "\230\168\170\229\185\133"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -18147,7 +18162,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82702", "\230\168\170\229\185\133"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -18164,7 +18179,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82703", "\230\168\170\229\185\133"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -18181,7 +18196,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82704", "\230\168\170\229\185\133"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -18198,7 +18213,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82705", "\230\168\170\229\185\133"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -18215,7 +18230,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_82706", "\230\168\170\229\185\133"),
     Rare = 4,
     DecomposeResources = {
-      {key = 99035, value = 200}
+      {key = 99989, value = 100}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -25805,21 +25820,6 @@ local resource_tbgeneral = {
     CurrencyIcon = "",
     Type = 18,
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_2061009", "\230\151\160\228\184\138\233\153\144\233\129\147\229\133\183"),
-    Rare = 4,
-    DecomposeResources = {},
-    TimeLimitedDecomposeResources = {},
-    EnableResourceAcquireTaskEvent = false,
-    ProEffType = 0
-  },
-  [2061010] = {
-    ID = 2061010,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_2061010", "\232\167\163\233\148\129\230\189\156\232\131\189\229\175\134\233\146\165-\231\136\134\232\163\130\231\139\130\232\136\158"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_2061010", "\230\181\183\229\155\160\229\133\139\230\150\175\230\172\161\232\166\129\230\138\128\232\131\189\229\134\183\229\141\180\231\188\169\231\159\173\232\135\179<CZ_HighLight>1</>\231\167\146\239\188\140\228\188\164\229\174\179\229\135\143\229\176\145<CZ_HighLight>80%</>\239\188\140\228\184\148\230\175\143\230\172\161\233\128\160\230\136\144\228\188\164\229\174\179\230\151\182\233\153\132\229\138\160\228\184\128\230\172\161\229\189\147\229\137\141\230\173\166\229\153\168\228\188\164\229\174\179\227\128\130"),
-    Note = "",
-    Icon = "/Game/Rouge/UI/Atlas_DT/IconProficiency/Frames/Icon_hyks_Potential_01.Icon_hyks_Potential_01",
-    CurrencyIcon = "",
-    Type = 18,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_2061010", "\230\151\160\228\184\138\233\153\144\233\129\147\229\133\183"),
     Rare = 4,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53023,6 +53023,9006 @@ local resource_tbgeneral = {
     EnableResourceAcquireTaskEvent = false,
     ProEffType = 0
   },
+  [39401] = {
+    ID = 39401,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39401", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39401", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05.Icon_Cyber05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39401", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39402] = {
+    ID = 39402,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39402", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39402", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_01.Icon_Cyber05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39402", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39403] = {
+    ID = 39403,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39403", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39403", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_02.Icon_Cyber05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39403", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39404] = {
+    ID = 39404,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39404", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39404", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_03.Icon_Cyber05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39404", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39405] = {
+    ID = 39405,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39405", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39405", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_04.Icon_Cyber05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39405", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39406] = {
+    ID = 39406,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39406", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39406", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_05.Icon_Cyber05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39406", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39407] = {
+    ID = 39407,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39407", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39407", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_06.Icon_Cyber05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39407", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39408] = {
+    ID = 39408,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39408", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39408", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_07.Icon_Cyber05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39408", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39409] = {
+    ID = 39409,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39409", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39409", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_08.Icon_Cyber05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39409", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39410] = {
+    ID = 39410,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39410", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39410", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_09.Icon_Cyber05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39410", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39411] = {
+    ID = 39411,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39411", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39411", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_10.Icon_Cyber05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39411", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39412] = {
+    ID = 39412,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39412", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39412", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_11.Icon_Cyber05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39412", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39413] = {
+    ID = 39413,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39413", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39413", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_12.Icon_Cyber05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39413", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39414] = {
+    ID = 39414,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39414", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39414", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_13.Icon_Cyber05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39414", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39415] = {
+    ID = 39415,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39415", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39415", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_14.Icon_Cyber05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39415", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39416] = {
+    ID = 39416,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39416", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39416", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_15.Icon_Cyber05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39416", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39417] = {
+    ID = 39417,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39417", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39417", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_16.Icon_Cyber05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39417", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39418] = {
+    ID = 39418,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39418", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39418", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_17.Icon_Cyber05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39418", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39419] = {
+    ID = 39419,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39419", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39419", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_25.Icon_Cyber05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39419", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39420] = {
+    ID = 39420,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39420", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39420", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_18.Icon_Cyber05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39420", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39421] = {
+    ID = 39421,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39421", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39421", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_19.Icon_Cyber05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39421", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39422] = {
+    ID = 39422,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39422", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39422", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_20.Icon_Cyber05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39422", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39423] = {
+    ID = 39423,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39423", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39423", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_22.Icon_Cyber05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39423", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39424] = {
+    ID = 39424,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39424", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39424", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_23.Icon_Cyber05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39424", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39425] = {
+    ID = 39425,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39425", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39425", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_24.Icon_Cyber05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39425", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39426] = {
+    ID = 39426,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39426", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39426", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05.Icon_Wasteland05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39426", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39427] = {
+    ID = 39427,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39427", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39427", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_01.Icon_Wasteland05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39427", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39428] = {
+    ID = 39428,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39428", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39428", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_02.Icon_Wasteland05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39428", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39429] = {
+    ID = 39429,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39429", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39429", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_03.Icon_Wasteland05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39429", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39430] = {
+    ID = 39430,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39430", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39430", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_04.Icon_Wasteland05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39430", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39431] = {
+    ID = 39431,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39431", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39431", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_05.Icon_Wasteland05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39431", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39432] = {
+    ID = 39432,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39432", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39432", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_06.Icon_Wasteland05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39432", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39433] = {
+    ID = 39433,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39433", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39433", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_07.Icon_Wasteland05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39433", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39434] = {
+    ID = 39434,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39434", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39434", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_08.Icon_Wasteland05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39434", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39435] = {
+    ID = 39435,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39435", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39435", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_09.Icon_Wasteland05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39435", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39436] = {
+    ID = 39436,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39436", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39436", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_10.Icon_Wasteland05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39436", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39437] = {
+    ID = 39437,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39437", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39437", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_11.Icon_Wasteland05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39437", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39438] = {
+    ID = 39438,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39438", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39438", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_12.Icon_Wasteland05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39438", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39439] = {
+    ID = 39439,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39439", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39439", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_13.Icon_Wasteland05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39439", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39440] = {
+    ID = 39440,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39440", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39440", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_14.Icon_Wasteland05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39440", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39441] = {
+    ID = 39441,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39441", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39441", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_15.Icon_Wasteland05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39441", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39442] = {
+    ID = 39442,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39442", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39442", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_16.Icon_Wasteland05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39442", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39443] = {
+    ID = 39443,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39443", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39443", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_17.Icon_Wasteland05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39443", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39444] = {
+    ID = 39444,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39444", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39444", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_25.Icon_Wasteland05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39444", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39445] = {
+    ID = 39445,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39445", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39445", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_18.Icon_Wasteland05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39445", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39446] = {
+    ID = 39446,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39446", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39446", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_19.Icon_Wasteland05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39446", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39447] = {
+    ID = 39447,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39447", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39447", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_20.Icon_Wasteland05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39447", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39448] = {
+    ID = 39448,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39448", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39448", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_22.Icon_Wasteland05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39448", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39449] = {
+    ID = 39449,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39449", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39449", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_23.Icon_Wasteland05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39449", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39450] = {
+    ID = 39450,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39450", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39450", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_24.Icon_Wasteland05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39450", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39451] = {
+    ID = 39451,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39451", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39451", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05.Icon_Interstellar05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39451", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39452] = {
+    ID = 39452,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39452", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39452", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_01.Icon_Interstellar05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39452", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39453] = {
+    ID = 39453,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39453", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39453", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_02.Icon_Interstellar05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39453", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39454] = {
+    ID = 39454,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39454", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39454", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_03.Icon_Interstellar05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39454", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39455] = {
+    ID = 39455,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39455", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39455", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_04.Icon_Interstellar05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39455", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39456] = {
+    ID = 39456,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39456", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39456", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_05.Icon_Interstellar05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39456", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39457] = {
+    ID = 39457,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39457", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39457", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_06.Icon_Interstellar05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39457", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39458] = {
+    ID = 39458,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39458", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39458", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_07.Icon_Interstellar05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39458", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39459] = {
+    ID = 39459,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39459", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39459", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_08.Icon_Interstellar05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39459", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39460] = {
+    ID = 39460,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39460", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39460", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_09.Icon_Interstellar05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39460", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39461] = {
+    ID = 39461,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39461", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39461", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_10.Icon_Interstellar05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39461", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39462] = {
+    ID = 39462,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39462", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39462", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_11.Icon_Interstellar05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39462", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39463] = {
+    ID = 39463,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39463", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39463", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_12.Icon_Interstellar05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39463", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39464] = {
+    ID = 39464,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39464", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39464", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_13.Icon_Interstellar05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39464", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39465] = {
+    ID = 39465,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39465", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39465", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_14.Icon_Interstellar05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39465", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39466] = {
+    ID = 39466,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39466", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39466", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_15.Icon_Interstellar05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39466", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39467] = {
+    ID = 39467,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39467", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39467", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_16.Icon_Interstellar05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39467", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39468] = {
+    ID = 39468,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39468", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39468", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_17.Icon_Interstellar05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39468", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39469] = {
+    ID = 39469,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39469", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39469", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39469", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39470] = {
+    ID = 39470,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39470", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39470", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_18.Icon_Interstellar05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39470", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39471] = {
+    ID = 39471,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39471", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39471", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_19.Icon_Interstellar05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39471", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39472] = {
+    ID = 39472,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39472", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39472", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_20.Icon_Interstellar05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39472", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39473] = {
+    ID = 39473,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39473", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39473", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_22.Icon_Interstellar05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39473", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39474] = {
+    ID = 39474,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39474", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39474", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_23.Icon_Interstellar05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39474", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39475] = {
+    ID = 39475,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39475", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39475", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_24.Icon_Interstellar05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39475", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39476] = {
+    ID = 39476,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39476", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39476", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05.Icon_FairyTales05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39476", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39477] = {
+    ID = 39477,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39477", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39477", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_01.Icon_FairyTales05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39477", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39478] = {
+    ID = 39478,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39478", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39478", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_02.Icon_FairyTales05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39478", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39479] = {
+    ID = 39479,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39479", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39479", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_03.Icon_FairyTales05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39479", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39480] = {
+    ID = 39480,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39480", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39480", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_04.Icon_FairyTales05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39480", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39481] = {
+    ID = 39481,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39481", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39481", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_05.Icon_FairyTales05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39481", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39482] = {
+    ID = 39482,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39482", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39482", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_06.Icon_FairyTales05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39482", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39483] = {
+    ID = 39483,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39483", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39483", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_07.Icon_FairyTales05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39483", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39484] = {
+    ID = 39484,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39484", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39484", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_08.Icon_FairyTales05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39484", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39485] = {
+    ID = 39485,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39485", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39485", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_09.Icon_FairyTales05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39485", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39486] = {
+    ID = 39486,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39486", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39486", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_10.Icon_FairyTales05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39486", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39487] = {
+    ID = 39487,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39487", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39487", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_11.Icon_FairyTales05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39487", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39488] = {
+    ID = 39488,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39488", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39488", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_12.Icon_FairyTales05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39488", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39489] = {
+    ID = 39489,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39489", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39489", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_13.Icon_FairyTales05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39489", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39490] = {
+    ID = 39490,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39490", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39490", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_14.Icon_FairyTales05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39490", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39491] = {
+    ID = 39491,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39491", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39491", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_15.Icon_FairyTales05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39491", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39492] = {
+    ID = 39492,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39492", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39492", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_16.Icon_FairyTales05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39492", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39493] = {
+    ID = 39493,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39493", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39493", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_17.Icon_FairyTales05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39493", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39494] = {
+    ID = 39494,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39494", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39494", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_25.Icon_FairyTales05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39494", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39495] = {
+    ID = 39495,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39495", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39495", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_18.Icon_FairyTales05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39495", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39496] = {
+    ID = 39496,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39496", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39496", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_19.Icon_FairyTales05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39496", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39497] = {
+    ID = 39497,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39497", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39497", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_20.Icon_FairyTales05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39497", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39498] = {
+    ID = 39498,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39498", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39498", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_22.Icon_FairyTales05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39498", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39499] = {
+    ID = 39499,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39499", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39499", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_23.Icon_FairyTales05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39499", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39500] = {
+    ID = 39500,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39500", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166II\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39500", ""),
+    Note = "T2\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39500", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39501] = {
+    ID = 39501,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39501", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39501", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05.Icon_Cyber05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39501", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39502] = {
+    ID = 39502,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39502", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39502", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_01.Icon_Cyber05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39502", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39503] = {
+    ID = 39503,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39503", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39503", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_02.Icon_Cyber05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39503", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39504] = {
+    ID = 39504,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39504", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39504", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_03.Icon_Cyber05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39504", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39505] = {
+    ID = 39505,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39505", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39505", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_04.Icon_Cyber05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39505", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39506] = {
+    ID = 39506,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39506", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39506", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_05.Icon_Cyber05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39506", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39507] = {
+    ID = 39507,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39507", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39507", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_06.Icon_Cyber05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39507", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39508] = {
+    ID = 39508,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39508", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39508", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_07.Icon_Cyber05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39508", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39509] = {
+    ID = 39509,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39509", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39509", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_08.Icon_Cyber05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39509", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39510] = {
+    ID = 39510,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39510", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39510", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_09.Icon_Cyber05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39510", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39511] = {
+    ID = 39511,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39511", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39511", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_10.Icon_Cyber05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39511", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39512] = {
+    ID = 39512,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39512", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39512", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_11.Icon_Cyber05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39512", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39513] = {
+    ID = 39513,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39513", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39513", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_12.Icon_Cyber05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39513", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39514] = {
+    ID = 39514,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39514", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39514", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_13.Icon_Cyber05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39514", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39515] = {
+    ID = 39515,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39515", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39515", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_14.Icon_Cyber05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39515", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39516] = {
+    ID = 39516,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39516", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39516", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_15.Icon_Cyber05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39516", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39517] = {
+    ID = 39517,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39517", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39517", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_16.Icon_Cyber05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39517", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39518] = {
+    ID = 39518,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39518", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39518", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_17.Icon_Cyber05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39518", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39519] = {
+    ID = 39519,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39519", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39519", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_25.Icon_Cyber05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39519", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39520] = {
+    ID = 39520,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39520", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39520", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_18.Icon_Cyber05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39520", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39521] = {
+    ID = 39521,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39521", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39521", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_19.Icon_Cyber05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39521", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39522] = {
+    ID = 39522,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39522", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39522", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_20.Icon_Cyber05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39522", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39523] = {
+    ID = 39523,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39523", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39523", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_22.Icon_Cyber05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39523", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39524] = {
+    ID = 39524,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39524", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39524", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_23.Icon_Cyber05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39524", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39525] = {
+    ID = 39525,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39525", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39525", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_24.Icon_Cyber05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39525", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39526] = {
+    ID = 39526,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39526", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39526", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05.Icon_Wasteland05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39526", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39527] = {
+    ID = 39527,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39527", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39527", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_01.Icon_Wasteland05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39527", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39528] = {
+    ID = 39528,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39528", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39528", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_02.Icon_Wasteland05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39528", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39529] = {
+    ID = 39529,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39529", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39529", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_03.Icon_Wasteland05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39529", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39530] = {
+    ID = 39530,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39530", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39530", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_04.Icon_Wasteland05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39530", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39531] = {
+    ID = 39531,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39531", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39531", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_05.Icon_Wasteland05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39531", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39532] = {
+    ID = 39532,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39532", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39532", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_06.Icon_Wasteland05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39532", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39533] = {
+    ID = 39533,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39533", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39533", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_07.Icon_Wasteland05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39533", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39534] = {
+    ID = 39534,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39534", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39534", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_08.Icon_Wasteland05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39534", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39535] = {
+    ID = 39535,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39535", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39535", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_09.Icon_Wasteland05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39535", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39536] = {
+    ID = 39536,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39536", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39536", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_10.Icon_Wasteland05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39536", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39537] = {
+    ID = 39537,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39537", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39537", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_11.Icon_Wasteland05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39537", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39538] = {
+    ID = 39538,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39538", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39538", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_12.Icon_Wasteland05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39538", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39539] = {
+    ID = 39539,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39539", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39539", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_13.Icon_Wasteland05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39539", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39540] = {
+    ID = 39540,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39540", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39540", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_14.Icon_Wasteland05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39540", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39541] = {
+    ID = 39541,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39541", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39541", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_15.Icon_Wasteland05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39541", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39542] = {
+    ID = 39542,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39542", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39542", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_16.Icon_Wasteland05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39542", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39543] = {
+    ID = 39543,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39543", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39543", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_17.Icon_Wasteland05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39543", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39544] = {
+    ID = 39544,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39544", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39544", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_25.Icon_Wasteland05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39544", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39545] = {
+    ID = 39545,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39545", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39545", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_18.Icon_Wasteland05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39545", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39546] = {
+    ID = 39546,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39546", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39546", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_19.Icon_Wasteland05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39546", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39547] = {
+    ID = 39547,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39547", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39547", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_20.Icon_Wasteland05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39547", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39548] = {
+    ID = 39548,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39548", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39548", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_22.Icon_Wasteland05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39548", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39549] = {
+    ID = 39549,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39549", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39549", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_23.Icon_Wasteland05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39549", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39550] = {
+    ID = 39550,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39550", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39550", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_24.Icon_Wasteland05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39550", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39551] = {
+    ID = 39551,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39551", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39551", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05.Icon_Interstellar05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39551", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39552] = {
+    ID = 39552,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39552", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39552", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_01.Icon_Interstellar05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39552", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39553] = {
+    ID = 39553,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39553", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39553", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_02.Icon_Interstellar05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39553", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39554] = {
+    ID = 39554,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39554", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39554", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_03.Icon_Interstellar05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39554", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39555] = {
+    ID = 39555,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39555", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39555", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_04.Icon_Interstellar05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39555", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39556] = {
+    ID = 39556,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39556", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39556", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_05.Icon_Interstellar05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39556", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39557] = {
+    ID = 39557,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39557", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39557", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_06.Icon_Interstellar05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39557", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39558] = {
+    ID = 39558,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39558", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39558", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_07.Icon_Interstellar05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39558", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39559] = {
+    ID = 39559,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39559", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39559", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_08.Icon_Interstellar05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39559", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39560] = {
+    ID = 39560,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39560", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39560", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_09.Icon_Interstellar05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39560", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39561] = {
+    ID = 39561,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39561", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39561", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_10.Icon_Interstellar05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39561", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39562] = {
+    ID = 39562,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39562", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39562", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_11.Icon_Interstellar05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39562", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39563] = {
+    ID = 39563,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39563", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39563", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_12.Icon_Interstellar05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39563", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39564] = {
+    ID = 39564,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39564", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39564", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_13.Icon_Interstellar05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39564", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39565] = {
+    ID = 39565,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39565", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39565", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_14.Icon_Interstellar05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39565", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39566] = {
+    ID = 39566,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39566", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39566", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_15.Icon_Interstellar05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39566", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39567] = {
+    ID = 39567,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39567", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39567", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_16.Icon_Interstellar05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39567", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39568] = {
+    ID = 39568,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39568", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39568", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_17.Icon_Interstellar05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39568", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39569] = {
+    ID = 39569,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39569", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39569", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39569", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39570] = {
+    ID = 39570,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39570", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39570", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_18.Icon_Interstellar05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39570", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39571] = {
+    ID = 39571,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39571", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39571", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_19.Icon_Interstellar05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39571", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39572] = {
+    ID = 39572,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39572", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39572", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_20.Icon_Interstellar05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39572", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39573] = {
+    ID = 39573,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39573", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39573", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_22.Icon_Interstellar05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39573", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39574] = {
+    ID = 39574,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39574", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39574", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_23.Icon_Interstellar05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39574", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39575] = {
+    ID = 39575,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39575", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39575", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_24.Icon_Interstellar05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39575", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39576] = {
+    ID = 39576,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39576", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39576", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05.Icon_FairyTales05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39576", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39577] = {
+    ID = 39577,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39577", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39577", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_01.Icon_FairyTales05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39577", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39578] = {
+    ID = 39578,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39578", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39578", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_02.Icon_FairyTales05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39578", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39579] = {
+    ID = 39579,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39579", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39579", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_03.Icon_FairyTales05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39579", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39580] = {
+    ID = 39580,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39580", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39580", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_04.Icon_FairyTales05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39580", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39581] = {
+    ID = 39581,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39581", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39581", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_05.Icon_FairyTales05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39581", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39582] = {
+    ID = 39582,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39582", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39582", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_06.Icon_FairyTales05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39582", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39583] = {
+    ID = 39583,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39583", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39583", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_07.Icon_FairyTales05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39583", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39584] = {
+    ID = 39584,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39584", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39584", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_08.Icon_FairyTales05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39584", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39585] = {
+    ID = 39585,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39585", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39585", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_09.Icon_FairyTales05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39585", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39586] = {
+    ID = 39586,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39586", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39586", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_10.Icon_FairyTales05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39586", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39587] = {
+    ID = 39587,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39587", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39587", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_11.Icon_FairyTales05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39587", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39588] = {
+    ID = 39588,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39588", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39588", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_12.Icon_FairyTales05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39588", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39589] = {
+    ID = 39589,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39589", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39589", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_13.Icon_FairyTales05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39589", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39590] = {
+    ID = 39590,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39590", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39590", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_14.Icon_FairyTales05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39590", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39591] = {
+    ID = 39591,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39591", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39591", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_15.Icon_FairyTales05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39591", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39592] = {
+    ID = 39592,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39592", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39592", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_16.Icon_FairyTales05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39592", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39593] = {
+    ID = 39593,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39593", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39593", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_17.Icon_FairyTales05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39593", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39594] = {
+    ID = 39594,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39594", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39594", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_25.Icon_FairyTales05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39594", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39595] = {
+    ID = 39595,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39595", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39595", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_18.Icon_FairyTales05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39595", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39596] = {
+    ID = 39596,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39596", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39596", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_19.Icon_FairyTales05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39596", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39597] = {
+    ID = 39597,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39597", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39597", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_20.Icon_FairyTales05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39597", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39598] = {
+    ID = 39598,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39598", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39598", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_22.Icon_FairyTales05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39598", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39599] = {
+    ID = 39599,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39599", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39599", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_23.Icon_FairyTales05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39599", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39600] = {
+    ID = 39600,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39600", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166III\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39600", ""),
+    Note = "T3\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39600", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39601] = {
+    ID = 39601,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39601", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39601", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05.Icon_Cyber05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39601", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39602] = {
+    ID = 39602,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39602", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39602", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_01.Icon_Cyber05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39602", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39603] = {
+    ID = 39603,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39603", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39603", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_02.Icon_Cyber05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39603", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39604] = {
+    ID = 39604,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39604", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39604", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_03.Icon_Cyber05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39604", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39605] = {
+    ID = 39605,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39605", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39605", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_04.Icon_Cyber05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39605", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39606] = {
+    ID = 39606,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39606", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39606", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_05.Icon_Cyber05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39606", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39607] = {
+    ID = 39607,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39607", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39607", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_06.Icon_Cyber05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39607", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39608] = {
+    ID = 39608,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39608", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39608", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_07.Icon_Cyber05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39608", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39609] = {
+    ID = 39609,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39609", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39609", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_08.Icon_Cyber05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39609", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39610] = {
+    ID = 39610,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39610", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39610", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_09.Icon_Cyber05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39610", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39611] = {
+    ID = 39611,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39611", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39611", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_10.Icon_Cyber05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39611", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39612] = {
+    ID = 39612,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39612", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39612", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_11.Icon_Cyber05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39612", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39613] = {
+    ID = 39613,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39613", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39613", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_12.Icon_Cyber05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39613", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39614] = {
+    ID = 39614,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39614", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39614", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_13.Icon_Cyber05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39614", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39615] = {
+    ID = 39615,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39615", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39615", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_14.Icon_Cyber05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39615", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39616] = {
+    ID = 39616,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39616", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39616", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_15.Icon_Cyber05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39616", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39617] = {
+    ID = 39617,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39617", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39617", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_16.Icon_Cyber05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39617", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39618] = {
+    ID = 39618,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39618", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39618", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_17.Icon_Cyber05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39618", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39619] = {
+    ID = 39619,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39619", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39619", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_25.Icon_Cyber05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39619", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39620] = {
+    ID = 39620,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39620", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39620", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_18.Icon_Cyber05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39620", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39621] = {
+    ID = 39621,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39621", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39621", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_19.Icon_Cyber05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39621", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39622] = {
+    ID = 39622,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39622", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39622", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_20.Icon_Cyber05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39622", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39623] = {
+    ID = 39623,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39623", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39623", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_22.Icon_Cyber05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39623", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39624] = {
+    ID = 39624,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39624", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39624", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_23.Icon_Cyber05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39624", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39625] = {
+    ID = 39625,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39625", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39625", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_24.Icon_Cyber05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39625", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39626] = {
+    ID = 39626,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39626", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39626", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05.Icon_Wasteland05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39626", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39627] = {
+    ID = 39627,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39627", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39627", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_01.Icon_Wasteland05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39627", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39628] = {
+    ID = 39628,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39628", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39628", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_02.Icon_Wasteland05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39628", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39629] = {
+    ID = 39629,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39629", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39629", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_03.Icon_Wasteland05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39629", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39630] = {
+    ID = 39630,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39630", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39630", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_04.Icon_Wasteland05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39630", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39631] = {
+    ID = 39631,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39631", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39631", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_05.Icon_Wasteland05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39631", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39632] = {
+    ID = 39632,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39632", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39632", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_06.Icon_Wasteland05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39632", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39633] = {
+    ID = 39633,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39633", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39633", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_07.Icon_Wasteland05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39633", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39634] = {
+    ID = 39634,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39634", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39634", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_08.Icon_Wasteland05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39634", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39635] = {
+    ID = 39635,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39635", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39635", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_09.Icon_Wasteland05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39635", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39636] = {
+    ID = 39636,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39636", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39636", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_10.Icon_Wasteland05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39636", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39637] = {
+    ID = 39637,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39637", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39637", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_11.Icon_Wasteland05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39637", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39638] = {
+    ID = 39638,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39638", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39638", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_12.Icon_Wasteland05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39638", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39639] = {
+    ID = 39639,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39639", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39639", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_13.Icon_Wasteland05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39639", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39640] = {
+    ID = 39640,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39640", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39640", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_14.Icon_Wasteland05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39640", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39641] = {
+    ID = 39641,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39641", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39641", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_15.Icon_Wasteland05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39641", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39642] = {
+    ID = 39642,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39642", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39642", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_16.Icon_Wasteland05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39642", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39643] = {
+    ID = 39643,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39643", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39643", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_17.Icon_Wasteland05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39643", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39644] = {
+    ID = 39644,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39644", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39644", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_25.Icon_Wasteland05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39644", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39645] = {
+    ID = 39645,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39645", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39645", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_18.Icon_Wasteland05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39645", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39646] = {
+    ID = 39646,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39646", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39646", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_19.Icon_Wasteland05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39646", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39647] = {
+    ID = 39647,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39647", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39647", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_20.Icon_Wasteland05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39647", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39648] = {
+    ID = 39648,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39648", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39648", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_22.Icon_Wasteland05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39648", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39649] = {
+    ID = 39649,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39649", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39649", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_23.Icon_Wasteland05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39649", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39650] = {
+    ID = 39650,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39650", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39650", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_24.Icon_Wasteland05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39650", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39651] = {
+    ID = 39651,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39651", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39651", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05.Icon_Interstellar05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39651", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39652] = {
+    ID = 39652,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39652", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39652", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_01.Icon_Interstellar05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39652", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39653] = {
+    ID = 39653,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39653", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39653", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_02.Icon_Interstellar05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39653", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39654] = {
+    ID = 39654,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39654", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39654", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_03.Icon_Interstellar05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39654", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39655] = {
+    ID = 39655,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39655", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39655", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_04.Icon_Interstellar05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39655", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39656] = {
+    ID = 39656,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39656", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39656", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_05.Icon_Interstellar05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39656", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39657] = {
+    ID = 39657,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39657", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39657", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_06.Icon_Interstellar05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39657", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39658] = {
+    ID = 39658,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39658", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39658", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_07.Icon_Interstellar05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39658", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39659] = {
+    ID = 39659,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39659", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39659", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_08.Icon_Interstellar05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39659", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39660] = {
+    ID = 39660,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39660", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39660", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_09.Icon_Interstellar05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39660", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39661] = {
+    ID = 39661,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39661", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39661", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_10.Icon_Interstellar05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39661", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39662] = {
+    ID = 39662,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39662", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39662", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_11.Icon_Interstellar05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39662", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39663] = {
+    ID = 39663,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39663", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39663", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_12.Icon_Interstellar05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39663", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39664] = {
+    ID = 39664,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39664", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39664", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_13.Icon_Interstellar05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39664", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39665] = {
+    ID = 39665,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39665", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39665", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_14.Icon_Interstellar05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39665", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39666] = {
+    ID = 39666,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39666", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39666", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_15.Icon_Interstellar05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39666", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39667] = {
+    ID = 39667,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39667", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39667", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_16.Icon_Interstellar05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39667", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39668] = {
+    ID = 39668,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39668", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39668", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_17.Icon_Interstellar05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39668", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39669] = {
+    ID = 39669,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39669", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39669", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39669", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39670] = {
+    ID = 39670,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39670", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39670", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_18.Icon_Interstellar05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39670", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39671] = {
+    ID = 39671,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39671", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39671", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_19.Icon_Interstellar05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39671", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39672] = {
+    ID = 39672,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39672", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39672", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_20.Icon_Interstellar05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39672", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39673] = {
+    ID = 39673,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39673", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39673", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_22.Icon_Interstellar05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39673", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39674] = {
+    ID = 39674,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39674", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39674", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_23.Icon_Interstellar05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39674", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39675] = {
+    ID = 39675,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39675", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39675", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_24.Icon_Interstellar05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39675", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39676] = {
+    ID = 39676,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39676", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39676", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05.Icon_FairyTales05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39676", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39677] = {
+    ID = 39677,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39677", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39677", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_01.Icon_FairyTales05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39677", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39678] = {
+    ID = 39678,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39678", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39678", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_02.Icon_FairyTales05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39678", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39679] = {
+    ID = 39679,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39679", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39679", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_03.Icon_FairyTales05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39679", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39680] = {
+    ID = 39680,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39680", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39680", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_04.Icon_FairyTales05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39680", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39681] = {
+    ID = 39681,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39681", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39681", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_05.Icon_FairyTales05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39681", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39682] = {
+    ID = 39682,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39682", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39682", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_06.Icon_FairyTales05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39682", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39683] = {
+    ID = 39683,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39683", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39683", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_07.Icon_FairyTales05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39683", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39684] = {
+    ID = 39684,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39684", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39684", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_08.Icon_FairyTales05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39684", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39685] = {
+    ID = 39685,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39685", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39685", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_09.Icon_FairyTales05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39685", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39686] = {
+    ID = 39686,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39686", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39686", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_10.Icon_FairyTales05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39686", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39687] = {
+    ID = 39687,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39687", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39687", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_11.Icon_FairyTales05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39687", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39688] = {
+    ID = 39688,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39688", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39688", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_12.Icon_FairyTales05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39688", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39689] = {
+    ID = 39689,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39689", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39689", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_13.Icon_FairyTales05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39689", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39690] = {
+    ID = 39690,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39690", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39690", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_14.Icon_FairyTales05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39690", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39691] = {
+    ID = 39691,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39691", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39691", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_15.Icon_FairyTales05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39691", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39692] = {
+    ID = 39692,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39692", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39692", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_16.Icon_FairyTales05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39692", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39693] = {
+    ID = 39693,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39693", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39693", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_17.Icon_FairyTales05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39693", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39694] = {
+    ID = 39694,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39694", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39694", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_25.Icon_FairyTales05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39694", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39695] = {
+    ID = 39695,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39695", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39695", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_18.Icon_FairyTales05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39695", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39696] = {
+    ID = 39696,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39696", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39696", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_19.Icon_FairyTales05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39696", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39697] = {
+    ID = 39697,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39697", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39697", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_20.Icon_FairyTales05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39697", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39698] = {
+    ID = 39698,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39698", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39698", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_22.Icon_FairyTales05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39698", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39699] = {
+    ID = 39699,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39699", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39699", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_23.Icon_FairyTales05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39699", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39700] = {
+    ID = 39700,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39700", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39700", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39700", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39701] = {
+    ID = 39701,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39701", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39701", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05.Icon_Cyber05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39701", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39702] = {
+    ID = 39702,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39702", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39702", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_01.Icon_Cyber05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39702", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39703] = {
+    ID = 39703,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39703", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39703", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_02.Icon_Cyber05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39703", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39704] = {
+    ID = 39704,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39704", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39704", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_03.Icon_Cyber05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39704", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39705] = {
+    ID = 39705,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39705", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39705", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_04.Icon_Cyber05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39705", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39706] = {
+    ID = 39706,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39706", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39706", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_05.Icon_Cyber05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39706", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39707] = {
+    ID = 39707,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39707", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39707", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_06.Icon_Cyber05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39707", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39708] = {
+    ID = 39708,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39708", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39708", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_07.Icon_Cyber05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39708", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39709] = {
+    ID = 39709,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39709", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39709", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_08.Icon_Cyber05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39709", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39710] = {
+    ID = 39710,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39710", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39710", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_09.Icon_Cyber05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39710", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39711] = {
+    ID = 39711,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39711", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39711", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_10.Icon_Cyber05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39711", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39712] = {
+    ID = 39712,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39712", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39712", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_11.Icon_Cyber05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39712", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39713] = {
+    ID = 39713,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39713", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39713", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_12.Icon_Cyber05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39713", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39714] = {
+    ID = 39714,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39714", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39714", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_13.Icon_Cyber05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39714", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39715] = {
+    ID = 39715,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39715", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39715", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_14.Icon_Cyber05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39715", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39716] = {
+    ID = 39716,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39716", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39716", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_15.Icon_Cyber05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39716", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39717] = {
+    ID = 39717,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39717", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39717", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_16.Icon_Cyber05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39717", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39718] = {
+    ID = 39718,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39718", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39718", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_17.Icon_Cyber05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39718", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39719] = {
+    ID = 39719,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39719", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39719", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_25.Icon_Cyber05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39719", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39720] = {
+    ID = 39720,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39720", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39720", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_18.Icon_Cyber05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39720", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39721] = {
+    ID = 39721,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39721", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39721", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_19.Icon_Cyber05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39721", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39722] = {
+    ID = 39722,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39722", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39722", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_20.Icon_Cyber05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39722", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39723] = {
+    ID = 39723,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39723", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39723", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_22.Icon_Cyber05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39723", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39724] = {
+    ID = 39724,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39724", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39724", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_23.Icon_Cyber05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39724", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39725] = {
+    ID = 39725,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39725", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39725", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_24.Icon_Cyber05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39725", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39726] = {
+    ID = 39726,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39726", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39726", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05.Icon_Wasteland05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39726", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39727] = {
+    ID = 39727,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39727", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39727", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_01.Icon_Wasteland05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39727", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39728] = {
+    ID = 39728,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39728", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39728", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_02.Icon_Wasteland05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39728", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39729] = {
+    ID = 39729,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39729", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39729", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_03.Icon_Wasteland05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39729", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39730] = {
+    ID = 39730,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39730", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39730", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_04.Icon_Wasteland05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39730", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39731] = {
+    ID = 39731,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39731", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39731", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_05.Icon_Wasteland05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39731", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39732] = {
+    ID = 39732,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39732", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39732", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_06.Icon_Wasteland05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39732", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39733] = {
+    ID = 39733,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39733", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39733", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_07.Icon_Wasteland05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39733", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39734] = {
+    ID = 39734,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39734", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39734", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_08.Icon_Wasteland05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39734", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39735] = {
+    ID = 39735,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39735", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39735", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_09.Icon_Wasteland05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39735", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39736] = {
+    ID = 39736,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39736", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39736", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_10.Icon_Wasteland05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39736", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39737] = {
+    ID = 39737,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39737", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39737", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_11.Icon_Wasteland05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39737", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39738] = {
+    ID = 39738,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39738", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39738", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_12.Icon_Wasteland05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39738", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39739] = {
+    ID = 39739,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39739", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39739", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_13.Icon_Wasteland05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39739", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39740] = {
+    ID = 39740,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39740", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39740", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_14.Icon_Wasteland05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39740", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39741] = {
+    ID = 39741,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39741", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39741", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_15.Icon_Wasteland05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39741", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39742] = {
+    ID = 39742,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39742", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39742", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_16.Icon_Wasteland05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39742", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39743] = {
+    ID = 39743,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39743", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39743", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_17.Icon_Wasteland05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39743", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39744] = {
+    ID = 39744,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39744", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39744", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_25.Icon_Wasteland05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39744", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39745] = {
+    ID = 39745,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39745", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39745", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_18.Icon_Wasteland05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39745", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39746] = {
+    ID = 39746,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39746", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39746", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_19.Icon_Wasteland05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39746", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39747] = {
+    ID = 39747,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39747", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39747", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_20.Icon_Wasteland05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39747", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39748] = {
+    ID = 39748,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39748", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39748", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_22.Icon_Wasteland05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39748", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39749] = {
+    ID = 39749,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39749", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39749", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_23.Icon_Wasteland05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39749", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39750] = {
+    ID = 39750,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39750", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132I\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39750", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_24.Icon_Wasteland05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39750", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39751] = {
+    ID = 39751,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39751", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39751", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05.Icon_Interstellar05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39751", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39752] = {
+    ID = 39752,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39752", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39752", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_01.Icon_Interstellar05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39752", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39753] = {
+    ID = 39753,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39753", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39753", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_02.Icon_Interstellar05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39753", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39754] = {
+    ID = 39754,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39754", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39754", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_03.Icon_Interstellar05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39754", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39755] = {
+    ID = 39755,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39755", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39755", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_04.Icon_Interstellar05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39755", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39756] = {
+    ID = 39756,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39756", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39756", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_05.Icon_Interstellar05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39756", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39757] = {
+    ID = 39757,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39757", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39757", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_06.Icon_Interstellar05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39757", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39758] = {
+    ID = 39758,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39758", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39758", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_07.Icon_Interstellar05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39758", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39759] = {
+    ID = 39759,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39759", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39759", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_08.Icon_Interstellar05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39759", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39760] = {
+    ID = 39760,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39760", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39760", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_09.Icon_Interstellar05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39760", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39761] = {
+    ID = 39761,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39761", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39761", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_10.Icon_Interstellar05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39761", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39762] = {
+    ID = 39762,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39762", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39762", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_11.Icon_Interstellar05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39762", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39763] = {
+    ID = 39763,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39763", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39763", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_12.Icon_Interstellar05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39763", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39764] = {
+    ID = 39764,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39764", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39764", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_13.Icon_Interstellar05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39764", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39765] = {
+    ID = 39765,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39765", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39765", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_14.Icon_Interstellar05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39765", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39766] = {
+    ID = 39766,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39766", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39766", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_15.Icon_Interstellar05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39766", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39767] = {
+    ID = 39767,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39767", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39767", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_16.Icon_Interstellar05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39767", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39768] = {
+    ID = 39768,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39768", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39768", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_17.Icon_Interstellar05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39768", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39769] = {
+    ID = 39769,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39769", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39769", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39769", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39770] = {
+    ID = 39770,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39770", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39770", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_18.Icon_Interstellar05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39770", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39771] = {
+    ID = 39771,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39771", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39771", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_19.Icon_Interstellar05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39771", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39772] = {
+    ID = 39772,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39772", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39772", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_20.Icon_Interstellar05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39772", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39773] = {
+    ID = 39773,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39773", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39773", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_22.Icon_Interstellar05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39773", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39774] = {
+    ID = 39774,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39774", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39774", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_23.Icon_Interstellar05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39774", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39775] = {
+    ID = 39775,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39775", "\227\128\144\229\164\135\230\179\168\227\128\145\231\142\175\233\131\189\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39775", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_24.Icon_Interstellar05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39775", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39776] = {
+    ID = 39776,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39776", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39776", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05.Icon_FairyTales05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39776", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39777] = {
+    ID = 39777,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39777", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39777", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_01.Icon_FairyTales05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39777", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39778] = {
+    ID = 39778,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39778", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39778", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_02.Icon_FairyTales05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39778", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39779] = {
+    ID = 39779,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39779", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39779", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_03.Icon_FairyTales05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39779", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39780] = {
+    ID = 39780,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39780", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39780", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_04.Icon_FairyTales05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39780", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39781] = {
+    ID = 39781,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39781", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39781", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_05.Icon_FairyTales05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39781", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39782] = {
+    ID = 39782,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39782", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39782", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_06.Icon_FairyTales05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39782", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39783] = {
+    ID = 39783,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39783", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39783", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_07.Icon_FairyTales05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39783", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39784] = {
+    ID = 39784,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39784", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39784", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_08.Icon_FairyTales05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39784", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39785] = {
+    ID = 39785,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39785", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39785", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_09.Icon_FairyTales05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39785", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39786] = {
+    ID = 39786,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39786", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39786", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_10.Icon_FairyTales05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39786", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39787] = {
+    ID = 39787,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39787", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39787", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_11.Icon_FairyTales05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39787", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39788] = {
+    ID = 39788,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39788", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39788", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_12.Icon_FairyTales05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39788", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39789] = {
+    ID = 39789,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39789", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39789", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_13.Icon_FairyTales05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39789", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39790] = {
+    ID = 39790,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39790", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39790", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_14.Icon_FairyTales05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39790", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39791] = {
+    ID = 39791,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39791", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39791", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_15.Icon_FairyTales05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39791", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39792] = {
+    ID = 39792,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39792", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39792", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_16.Icon_FairyTales05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39792", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39793] = {
+    ID = 39793,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39793", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39793", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_17.Icon_FairyTales05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39793", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39794] = {
+    ID = 39794,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39794", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39794", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_25.Icon_FairyTales05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39794", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39795] = {
+    ID = 39795,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39795", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39795", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_18.Icon_FairyTales05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39795", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39796] = {
+    ID = 39796,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39796", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39796", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_19.Icon_FairyTales05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39796", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39797] = {
+    ID = 39797,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39797", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39797", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_20.Icon_FairyTales05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39797", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39798] = {
+    ID = 39798,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39798", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39798", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_22.Icon_FairyTales05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39798", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39799] = {
+    ID = 39799,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39799", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39799", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_23.Icon_FairyTales05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39799", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39800] = {
+    ID = 39800,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39800", "\227\128\144\229\164\135\230\179\168\227\128\145\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132II\239\188\136\229\188\186\229\186\166IV\239\188\137\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39800", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1442",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39800", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39801] = {
+    ID = 39801,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39801", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39801", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05.Icon_Cyber05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39801", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39802] = {
+    ID = 39802,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39802", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39802", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_01.Icon_Cyber05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39802", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39803] = {
+    ID = 39803,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39803", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39803", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_02.Icon_Cyber05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39803", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39804] = {
+    ID = 39804,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39804", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39804", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_03.Icon_Cyber05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39804", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39805] = {
+    ID = 39805,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39805", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39805", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_04.Icon_Cyber05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39805", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39806] = {
+    ID = 39806,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39806", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39806", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_05.Icon_Cyber05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39806", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39807] = {
+    ID = 39807,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39807", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39807", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_06.Icon_Cyber05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39807", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39808] = {
+    ID = 39808,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39808", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39808", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_07.Icon_Cyber05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39808", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39809] = {
+    ID = 39809,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39809", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39809", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_08.Icon_Cyber05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39809", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39810] = {
+    ID = 39810,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39810", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39810", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_09.Icon_Cyber05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39810", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39811] = {
+    ID = 39811,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39811", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39811", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_10.Icon_Cyber05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39811", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39812] = {
+    ID = 39812,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39812", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39812", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_11.Icon_Cyber05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39812", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39813] = {
+    ID = 39813,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39813", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39813", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_12.Icon_Cyber05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39813", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39814] = {
+    ID = 39814,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39814", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39814", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_13.Icon_Cyber05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39814", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39815] = {
+    ID = 39815,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39815", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39815", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_14.Icon_Cyber05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39815", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39816] = {
+    ID = 39816,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39816", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39816", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_15.Icon_Cyber05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39816", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39817] = {
+    ID = 39817,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39817", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39817", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_16.Icon_Cyber05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39817", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39818] = {
+    ID = 39818,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39818", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39818", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_17.Icon_Cyber05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39818", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39819] = {
+    ID = 39819,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39819", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39819", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_25.Icon_Cyber05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39819", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39820] = {
+    ID = 39820,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39820", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39820", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_18.Icon_Cyber05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39820", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39821] = {
+    ID = 39821,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39821", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39821", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_19.Icon_Cyber05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39821", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39822] = {
+    ID = 39822,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39822", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39822", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_20.Icon_Cyber05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39822", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39823] = {
+    ID = 39823,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39823", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39823", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_22.Icon_Cyber05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39823", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39824] = {
+    ID = 39824,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39824", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39824", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_23.Icon_Cyber05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39824", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39825] = {
+    ID = 39825,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39825", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39825", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_24.Icon_Cyber05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39825", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39826] = {
+    ID = 39826,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39826", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39826", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05.Icon_Wasteland05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39826", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39827] = {
+    ID = 39827,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39827", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39827", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_01.Icon_Wasteland05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39827", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39828] = {
+    ID = 39828,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39828", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39828", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_02.Icon_Wasteland05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39828", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39829] = {
+    ID = 39829,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39829", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39829", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_03.Icon_Wasteland05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39829", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39830] = {
+    ID = 39830,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39830", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39830", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_04.Icon_Wasteland05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39830", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39831] = {
+    ID = 39831,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39831", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39831", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_05.Icon_Wasteland05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39831", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39832] = {
+    ID = 39832,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39832", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39832", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_06.Icon_Wasteland05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39832", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39833] = {
+    ID = 39833,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39833", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39833", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_07.Icon_Wasteland05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39833", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39834] = {
+    ID = 39834,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39834", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39834", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_08.Icon_Wasteland05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39834", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39835] = {
+    ID = 39835,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39835", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39835", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_09.Icon_Wasteland05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39835", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39836] = {
+    ID = 39836,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39836", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39836", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_10.Icon_Wasteland05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39836", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39837] = {
+    ID = 39837,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39837", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39837", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_11.Icon_Wasteland05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39837", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39838] = {
+    ID = 39838,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39838", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39838", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_12.Icon_Wasteland05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39838", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39839] = {
+    ID = 39839,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39839", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39839", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_13.Icon_Wasteland05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39839", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39840] = {
+    ID = 39840,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39840", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39840", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_14.Icon_Wasteland05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39840", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39841] = {
+    ID = 39841,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39841", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39841", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_15.Icon_Wasteland05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39841", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39842] = {
+    ID = 39842,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39842", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39842", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_16.Icon_Wasteland05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39842", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39843] = {
+    ID = 39843,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39843", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39843", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_17.Icon_Wasteland05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39843", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39844] = {
+    ID = 39844,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39844", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39844", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_25.Icon_Wasteland05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39844", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39845] = {
+    ID = 39845,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39845", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39845", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_18.Icon_Wasteland05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39845", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39846] = {
+    ID = 39846,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39846", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39846", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_19.Icon_Wasteland05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39846", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39847] = {
+    ID = 39847,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39847", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39847", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_20.Icon_Wasteland05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39847", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39848] = {
+    ID = 39848,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39848", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39848", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_22.Icon_Wasteland05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39848", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39849] = {
+    ID = 39849,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39849", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39849", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_23.Icon_Wasteland05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39849", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39850] = {
+    ID = 39850,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39850", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39850", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_24.Icon_Wasteland05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39850", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39851] = {
+    ID = 39851,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39851", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39851", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05.Icon_Interstellar05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39851", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39852] = {
+    ID = 39852,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39852", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39852", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_01.Icon_Interstellar05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39852", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39853] = {
+    ID = 39853,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39853", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39853", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_02.Icon_Interstellar05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39853", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39854] = {
+    ID = 39854,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39854", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39854", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_03.Icon_Interstellar05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39854", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39855] = {
+    ID = 39855,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39855", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39855", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_04.Icon_Interstellar05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39855", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39856] = {
+    ID = 39856,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39856", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39856", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_05.Icon_Interstellar05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39856", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39857] = {
+    ID = 39857,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39857", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39857", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_06.Icon_Interstellar05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39857", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39858] = {
+    ID = 39858,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39858", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39858", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_07.Icon_Interstellar05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39858", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39859] = {
+    ID = 39859,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39859", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39859", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_08.Icon_Interstellar05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39859", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39860] = {
+    ID = 39860,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39860", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39860", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_09.Icon_Interstellar05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39860", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39861] = {
+    ID = 39861,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39861", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39861", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_10.Icon_Interstellar05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39861", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39862] = {
+    ID = 39862,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39862", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39862", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_11.Icon_Interstellar05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39862", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39863] = {
+    ID = 39863,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39863", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39863", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_12.Icon_Interstellar05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39863", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39864] = {
+    ID = 39864,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39864", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39864", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_13.Icon_Interstellar05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39864", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39865] = {
+    ID = 39865,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39865", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39865", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_14.Icon_Interstellar05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39865", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39866] = {
+    ID = 39866,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39866", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39866", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_15.Icon_Interstellar05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39866", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39867] = {
+    ID = 39867,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39867", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39867", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_16.Icon_Interstellar05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39867", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39868] = {
+    ID = 39868,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39868", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39868", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_17.Icon_Interstellar05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39868", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39869] = {
+    ID = 39869,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39869", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39869", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39869", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39870] = {
+    ID = 39870,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39870", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39870", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_18.Icon_Interstellar05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39870", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39871] = {
+    ID = 39871,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39871", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39871", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_19.Icon_Interstellar05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39871", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39872] = {
+    ID = 39872,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39872", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39872", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_20.Icon_Interstellar05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39872", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39873] = {
+    ID = 39873,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39873", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39873", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_22.Icon_Interstellar05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39873", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39874] = {
+    ID = 39874,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39874", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39874", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_23.Icon_Interstellar05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39874", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39875] = {
+    ID = 39875,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39875", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39875", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_24.Icon_Interstellar05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39875", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39876] = {
+    ID = 39876,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39876", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39876", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05.Icon_FairyTales05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39876", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39877] = {
+    ID = 39877,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39877", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39877", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_01.Icon_FairyTales05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39877", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39878] = {
+    ID = 39878,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39878", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39878", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_02.Icon_FairyTales05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39878", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39879] = {
+    ID = 39879,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39879", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39879", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_03.Icon_FairyTales05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39879", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39880] = {
+    ID = 39880,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39880", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39880", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_04.Icon_FairyTales05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39880", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39881] = {
+    ID = 39881,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39881", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39881", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_05.Icon_FairyTales05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39881", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39882] = {
+    ID = 39882,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39882", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39882", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_06.Icon_FairyTales05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39882", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39883] = {
+    ID = 39883,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39883", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39883", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_07.Icon_FairyTales05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39883", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39884] = {
+    ID = 39884,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39884", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39884", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_08.Icon_FairyTales05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39884", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39885] = {
+    ID = 39885,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39885", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39885", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_09.Icon_FairyTales05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39885", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39886] = {
+    ID = 39886,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39886", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39886", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_10.Icon_FairyTales05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39886", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39887] = {
+    ID = 39887,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39887", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39887", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_11.Icon_FairyTales05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39887", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39888] = {
+    ID = 39888,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39888", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39888", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_12.Icon_FairyTales05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39888", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39889] = {
+    ID = 39889,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39889", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39889", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_13.Icon_FairyTales05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39889", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39890] = {
+    ID = 39890,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39890", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39890", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_14.Icon_FairyTales05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39890", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39891] = {
+    ID = 39891,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39891", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39891", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_15.Icon_FairyTales05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39891", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39892] = {
+    ID = 39892,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39892", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39892", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_16.Icon_FairyTales05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39892", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39893] = {
+    ID = 39893,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39893", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39893", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_17.Icon_FairyTales05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39893", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39894] = {
+    ID = 39894,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39894", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39894", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_25.Icon_FairyTales05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39894", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39895] = {
+    ID = 39895,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39895", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39895", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_18.Icon_FairyTales05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39895", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39896] = {
+    ID = 39896,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39896", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39896", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_19.Icon_FairyTales05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39896", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39897] = {
+    ID = 39897,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39897", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39897", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_20.Icon_FairyTales05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39897", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39898] = {
+    ID = 39898,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39898", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39898", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_22.Icon_FairyTales05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39898", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39899] = {
+    ID = 39899,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39899", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39899", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_23.Icon_FairyTales05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39899", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39900] = {
+    ID = 39900,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39900", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39900", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39900", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39901] = {
+    ID = 39901,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39901", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39901", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05.Icon_Cyber05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39901", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39902] = {
+    ID = 39902,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39902", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39902", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_01.Icon_Cyber05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39902", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39903] = {
+    ID = 39903,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39903", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39903", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_02.Icon_Cyber05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39903", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39904] = {
+    ID = 39904,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39904", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39904", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_03.Icon_Cyber05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39904", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39905] = {
+    ID = 39905,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39905", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39905", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_04.Icon_Cyber05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39905", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39906] = {
+    ID = 39906,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39906", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39906", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_05.Icon_Cyber05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39906", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39907] = {
+    ID = 39907,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39907", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39907", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_06.Icon_Cyber05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39907", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39908] = {
+    ID = 39908,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39908", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39908", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_07.Icon_Cyber05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39908", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39909] = {
+    ID = 39909,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39909", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39909", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_08.Icon_Cyber05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39909", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39910] = {
+    ID = 39910,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39910", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39910", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_09.Icon_Cyber05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39910", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39911] = {
+    ID = 39911,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39911", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39911", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_10.Icon_Cyber05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39911", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39912] = {
+    ID = 39912,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39912", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39912", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_11.Icon_Cyber05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39912", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39913] = {
+    ID = 39913,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39913", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39913", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_12.Icon_Cyber05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39913", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39914] = {
+    ID = 39914,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39914", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39914", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_13.Icon_Cyber05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39914", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39915] = {
+    ID = 39915,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39915", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39915", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_14.Icon_Cyber05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39915", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39916] = {
+    ID = 39916,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39916", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39916", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_15.Icon_Cyber05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39916", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39917] = {
+    ID = 39917,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39917", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39917", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_16.Icon_Cyber05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39917", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39918] = {
+    ID = 39918,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39918", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39918", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_17.Icon_Cyber05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39918", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39919] = {
+    ID = 39919,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39919", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39919", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_25.Icon_Cyber05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39919", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39920] = {
+    ID = 39920,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39920", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39920", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_18.Icon_Cyber05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39920", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39921] = {
+    ID = 39921,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39921", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39921", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_19.Icon_Cyber05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39921", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39922] = {
+    ID = 39922,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39922", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39922", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_20.Icon_Cyber05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39922", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39923] = {
+    ID = 39923,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39923", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39923", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_22.Icon_Cyber05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39923", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39924] = {
+    ID = 39924,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39924", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39924", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_23.Icon_Cyber05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39924", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39925] = {
+    ID = 39925,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39925", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39925", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_24.Icon_Cyber05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39925", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39926] = {
+    ID = 39926,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39926", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39926", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05.Icon_Wasteland05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39926", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39927] = {
+    ID = 39927,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39927", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39927", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_01.Icon_Wasteland05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39927", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39928] = {
+    ID = 39928,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39928", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39928", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_02.Icon_Wasteland05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39928", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39929] = {
+    ID = 39929,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39929", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39929", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_03.Icon_Wasteland05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39929", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39930] = {
+    ID = 39930,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39930", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39930", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_04.Icon_Wasteland05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39930", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39931] = {
+    ID = 39931,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39931", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39931", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_05.Icon_Wasteland05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39931", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39932] = {
+    ID = 39932,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39932", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39932", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_06.Icon_Wasteland05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39932", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39933] = {
+    ID = 39933,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39933", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39933", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_07.Icon_Wasteland05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39933", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39934] = {
+    ID = 39934,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39934", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39934", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_08.Icon_Wasteland05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39934", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39935] = {
+    ID = 39935,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39935", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39935", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_09.Icon_Wasteland05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39935", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39936] = {
+    ID = 39936,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39936", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39936", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_10.Icon_Wasteland05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39936", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39937] = {
+    ID = 39937,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39937", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39937", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_11.Icon_Wasteland05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39937", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39938] = {
+    ID = 39938,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39938", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39938", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_12.Icon_Wasteland05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39938", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39939] = {
+    ID = 39939,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39939", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39939", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_13.Icon_Wasteland05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39939", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39940] = {
+    ID = 39940,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39940", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39940", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_14.Icon_Wasteland05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39940", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39941] = {
+    ID = 39941,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39941", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39941", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_15.Icon_Wasteland05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39941", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39942] = {
+    ID = 39942,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39942", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39942", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_16.Icon_Wasteland05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39942", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39943] = {
+    ID = 39943,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39943", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39943", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_17.Icon_Wasteland05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39943", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39944] = {
+    ID = 39944,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39944", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39944", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_25.Icon_Wasteland05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39944", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39945] = {
+    ID = 39945,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39945", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39945", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_18.Icon_Wasteland05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39945", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39946] = {
+    ID = 39946,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39946", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39946", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_19.Icon_Wasteland05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39946", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39947] = {
+    ID = 39947,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39947", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39947", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_20.Icon_Wasteland05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39947", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39948] = {
+    ID = 39948,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39948", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39948", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_22.Icon_Wasteland05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39948", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39949] = {
+    ID = 39949,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39949", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39949", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_23.Icon_Wasteland05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39949", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39950] = {
+    ID = 39950,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39950", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39950", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_24.Icon_Wasteland05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39950", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39951] = {
+    ID = 39951,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39951", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39951", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05.Icon_Interstellar05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39951", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39952] = {
+    ID = 39952,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39952", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39952", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_01.Icon_Interstellar05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39952", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39953] = {
+    ID = 39953,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39953", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39953", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_02.Icon_Interstellar05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39953", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39954] = {
+    ID = 39954,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39954", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39954", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_03.Icon_Interstellar05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39954", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39955] = {
+    ID = 39955,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39955", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39955", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_04.Icon_Interstellar05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39955", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39956] = {
+    ID = 39956,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39956", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39956", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_05.Icon_Interstellar05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39956", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39957] = {
+    ID = 39957,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39957", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39957", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_06.Icon_Interstellar05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39957", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39958] = {
+    ID = 39958,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39958", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39958", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_07.Icon_Interstellar05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39958", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39959] = {
+    ID = 39959,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39959", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39959", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_08.Icon_Interstellar05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39959", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39960] = {
+    ID = 39960,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39960", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39960", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_09.Icon_Interstellar05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39960", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39961] = {
+    ID = 39961,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39961", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39961", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_10.Icon_Interstellar05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39961", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39962] = {
+    ID = 39962,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39962", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39962", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_11.Icon_Interstellar05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39962", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39963] = {
+    ID = 39963,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39963", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39963", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_12.Icon_Interstellar05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39963", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39964] = {
+    ID = 39964,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39964", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39964", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_13.Icon_Interstellar05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39964", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39965] = {
+    ID = 39965,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39965", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39965", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_14.Icon_Interstellar05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39965", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39966] = {
+    ID = 39966,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39966", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39966", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_15.Icon_Interstellar05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39966", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39967] = {
+    ID = 39967,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39967", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39967", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_16.Icon_Interstellar05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39967", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39968] = {
+    ID = 39968,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39968", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39968", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_17.Icon_Interstellar05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39968", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39969] = {
+    ID = 39969,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39969", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39969", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39969", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39970] = {
+    ID = 39970,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39970", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39970", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_18.Icon_Interstellar05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39970", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39971] = {
+    ID = 39971,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39971", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39971", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_19.Icon_Interstellar05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39971", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39972] = {
+    ID = 39972,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39972", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39972", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_20.Icon_Interstellar05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39972", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39973] = {
+    ID = 39973,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39973", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39973", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_22.Icon_Interstellar05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39973", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39974] = {
+    ID = 39974,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39974", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39974", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_23.Icon_Interstellar05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39974", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39975] = {
+    ID = 39975,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39975", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39975", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_24.Icon_Interstellar05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39975", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39976] = {
+    ID = 39976,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39976", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39976", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05.Icon_FairyTales05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39976", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39977] = {
+    ID = 39977,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39977", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39977", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_01.Icon_FairyTales05_01",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39977", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39978] = {
+    ID = 39978,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39978", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39978", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_02.Icon_FairyTales05_02",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39978", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39979] = {
+    ID = 39979,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39979", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39979", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_03.Icon_FairyTales05_03",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39979", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39980] = {
+    ID = 39980,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39980", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39980", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_04.Icon_FairyTales05_04",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39980", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39981] = {
+    ID = 39981,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39981", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39981", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_05.Icon_FairyTales05_05",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39981", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39982] = {
+    ID = 39982,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39982", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39982", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_06.Icon_FairyTales05_06",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39982", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39983] = {
+    ID = 39983,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39983", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39983", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_07.Icon_FairyTales05_07",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39983", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39984] = {
+    ID = 39984,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39984", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39984", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_08.Icon_FairyTales05_08",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39984", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39985] = {
+    ID = 39985,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39985", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39985", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_09.Icon_FairyTales05_09",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39985", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39986] = {
+    ID = 39986,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39986", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39986", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_10.Icon_FairyTales05_10",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39986", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39987] = {
+    ID = 39987,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39987", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39987", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_11.Icon_FairyTales05_11",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39987", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39988] = {
+    ID = 39988,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39988", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39988", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_12.Icon_FairyTales05_12",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39988", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39989] = {
+    ID = 39989,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39989", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39989", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_13.Icon_FairyTales05_13",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39989", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39990] = {
+    ID = 39990,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39990", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39990", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_14.Icon_FairyTales05_14",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39990", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39991] = {
+    ID = 39991,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39991", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39991", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_15.Icon_FairyTales05_15",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39991", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39992] = {
+    ID = 39992,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39992", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39992", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_16.Icon_FairyTales05_16",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39992", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39993] = {
+    ID = 39993,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39993", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39993", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_17.Icon_FairyTales05_17",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39993", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39994] = {
+    ID = 39994,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39994", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39994", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_25.Icon_FairyTales05_25",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39994", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39995] = {
+    ID = 39995,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39995", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39995", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_18.Icon_FairyTales05_18",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39995", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39996] = {
+    ID = 39996,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39996", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39996", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_19.Icon_FairyTales05_19",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39996", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39997] = {
+    ID = 39997,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39997", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39997", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_20.Icon_FairyTales05_20",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39997", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39998] = {
+    ID = 39998,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39998", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39998", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_22.Icon_FairyTales05_22",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39998", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [39999] = {
+    ID = 39999,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_39999", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_39999", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_23.Icon_FairyTales05_23",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_39999", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [40000] = {
+    ID = 40000,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_40000", "\227\128\144\229\164\135\230\179\168\227\128\145T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_40000", ""),
+    Note = "T4\230\168\161\231\187\132\229\191\133\229\174\154\231\165\158\232\181\1441\239\188\136\231\186\162\239\188\137",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_40000", "\230\168\161\231\187\132"),
+    Rare = 5,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
   [37001] = {
     ID = 37001,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_37001", "\231\160\180\229\157\143\230\160\184\232\138\175"),
@@ -53031,7 +62031,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Normal01_01.Icon_Core_Normal01_01",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37001", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37001", "\230\160\184\232\138\175"),
     Rare = 0,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53046,7 +62046,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Excellent01_01.Icon_Core_Excellent01_01",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37002", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37002", "\230\160\184\232\138\175"),
     Rare = 1,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53061,7 +62061,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Rare01_01.Icon_Core_Rare01_01",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37003", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37003", "\230\160\184\232\138\175"),
     Rare = 2,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53076,7 +62076,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Epic01_01.Icon_Core_Epic01_01",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37004", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37004", "\230\160\184\232\138\175"),
     Rare = 3,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53091,7 +62091,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Legend01_01.Icon_Core_Legend01_01",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37005", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37005", "\230\160\184\232\138\175"),
     Rare = 4,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53106,7 +62106,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Immortal01_01.Icon_Core_Immortal01_01",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37006", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37006", "\230\160\184\232\138\175"),
     Rare = 5,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53121,7 +62121,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Normal01_02.Icon_Core_Normal01_02",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37011", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37011", "\230\160\184\232\138\175"),
     Rare = 0,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53136,7 +62136,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Excellent01_02.Icon_Core_Excellent01_02",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37012", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37012", "\230\160\184\232\138\175"),
     Rare = 1,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53151,7 +62151,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Rare01_02.Icon_Core_Rare01_02",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37013", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37013", "\230\160\184\232\138\175"),
     Rare = 2,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53166,7 +62166,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Epic01_02.Icon_Core_Epic01_02",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37014", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37014", "\230\160\184\232\138\175"),
     Rare = 3,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53181,7 +62181,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Legend01_02.Icon_Core_Legend01_02",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37015", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37015", "\230\160\184\232\138\175"),
     Rare = 4,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53196,7 +62196,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Immortal01_02.Icon_Core_Immortal01_02",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37016", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37016", "\230\160\184\232\138\175"),
     Rare = 5,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53211,7 +62211,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Normal01_03.Icon_Core_Normal01_03",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37021", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37021", "\230\160\184\232\138\175"),
     Rare = 0,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53226,7 +62226,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Excellent01_03.Icon_Core_Excellent01_03",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37022", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37022", "\230\160\184\232\138\175"),
     Rare = 1,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53241,7 +62241,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Rare01_03.Icon_Core_Rare01_03",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37023", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37023", "\230\160\184\232\138\175"),
     Rare = 2,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53256,7 +62256,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Epic01_03.Icon_Core_Epic01_03",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37024", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37024", "\230\160\184\232\138\175"),
     Rare = 3,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53271,7 +62271,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Legend01_03.Icon_Core_Legend01_03",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37025", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37025", "\230\160\184\232\138\175"),
     Rare = 4,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53286,7 +62286,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Immortal01_03.Icon_Core_Immortal01_03",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37026", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37026", "\230\160\184\232\138\175"),
     Rare = 5,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53301,7 +62301,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Normal01_04.Icon_Core_Normal01_04",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37031", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37031", "\230\160\184\232\138\175"),
     Rare = 0,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53316,7 +62316,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Excellent01_04.Icon_Core_Excellent01_04",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37032", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37032", "\230\160\184\232\138\175"),
     Rare = 1,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53331,7 +62331,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Rare01_04.Icon_Core_Rare01_04",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37033", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37033", "\230\160\184\232\138\175"),
     Rare = 2,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53346,7 +62346,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Epic01_04.Icon_Core_Epic01_04",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37034", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37034", "\230\160\184\232\138\175"),
     Rare = 3,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53361,7 +62361,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Legend01_04.Icon_Core_Legend01_04",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37035", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37035", "\230\160\184\232\138\175"),
     Rare = 4,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53376,7 +62376,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Immortal01_04.Icon_Core_Immortal01_04",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37036", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37036", "\230\160\184\232\138\175"),
     Rare = 5,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53391,7 +62391,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Normal01_05.Icon_Core_Normal01_05",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37041", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37041", "\230\160\184\232\138\175"),
     Rare = 0,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53406,7 +62406,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Excellent01_05.Icon_Core_Excellent01_05",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37042", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37042", "\230\160\184\232\138\175"),
     Rare = 1,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53421,7 +62421,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Rare01_05.Icon_Core_Rare01_05",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37043", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37043", "\230\160\184\232\138\175"),
     Rare = 2,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53436,7 +62436,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Epic01_05.Icon_Core_Epic01_05",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37044", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37044", "\230\160\184\232\138\175"),
     Rare = 3,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53451,7 +62451,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Legend01_05.Icon_Core_Legend01_05",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37045", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37045", "\230\160\184\232\138\175"),
     Rare = 4,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53466,7 +62466,7 @@ local resource_tbgeneral = {
     Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Core/Frames/Icon_Core_Immortal01_05.Icon_Core_Immortal01_05",
     CurrencyIcon = "",
     Type = 27,
-    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37046", "\229\174\157\231\159\179"),
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_37046", "\230\160\184\232\138\175"),
     Rare = 5,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},
@@ -53694,7 +62694,7 @@ local resource_tbgeneral = {
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_500015", "\233\153\144\230\151\182\232\181\132\230\186\144\231\164\188\229\140\133"),
     Rare = 2,
     DecomposeResources = {
-      {key = 99035, value = 10}
+      {key = 99989, value = 10}
     },
     TimeLimitedDecomposeResources = {},
     EnableResourceAcquireTaskEvent = false,
@@ -53703,7 +62703,7 @@ local resource_tbgeneral = {
   [510001] = {
     ID = 510001,
     NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_510001", "\233\171\152\231\186\167\230\168\161\231\187\132\232\181\160\231\164\188"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_510001", "\229\135\187\232\180\165\229\143\175\232\131\189\230\142\137\232\144\189\230\168\161\231\187\132\231\154\132\229\143\178\232\175\151\233\166\150\233\162\134\230\151\182\239\188\140\229\191\133\229\174\154\233\162\157\229\164\150\232\142\183\229\190\1512\228\184\170\230\168\161\231\187\132\239\188\140\233\152\159\229\143\139\229\191\133\229\174\154\233\162\157\229\164\150\232\142\183\229\190\1511\228\184\170\230\168\161\231\187\132\227\128\130\229\156\168\229\164\177\229\186\143\233\147\190\229\140\186\230\168\161\229\188\143\228\184\173\239\188\140\229\191\133\229\174\154\233\162\157\229\164\150\232\142\183\229\190\1511\228\184\170\230\168\161\231\187\132\239\188\140\233\152\159\229\143\139\230\148\182\231\155\138\229\135\143\229\141\138\227\128\130"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_510001", "\229\135\187\232\180\165\229\143\175\232\131\189\230\142\137\232\144\189\230\168\161\231\187\132\231\154\132\229\143\178\232\175\151\233\166\150\233\162\134\230\151\182\239\188\140\229\191\133\229\174\154\233\162\157\229\164\150\232\142\183\229\190\1512\228\184\170\230\168\161\231\187\132\239\188\140\233\152\159\229\143\139\229\191\133\229\174\154\233\162\157\229\164\150\232\142\183\229\190\1511\228\184\170\230\168\161\231\187\132\227\128\130\229\156\168\229\164\177\229\186\143\233\147\190\229\140\186\230\168\161\229\188\143\228\184\173\239\188\140\229\191\133\229\174\154\233\162\157\229\164\150\232\142\183\229\190\1511\228\184\170\230\168\161\231\187\132\239\188\140\233\152\159\229\143\139\230\156\13750%\230\166\130\231\142\135\233\162\157\229\164\150\232\142\183\229\190\1511\228\184\170\230\168\161\231\187\132\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_11.Icon_MonthCard_Benefits_11",
     CurrencyIcon = "",
@@ -53882,8 +62882,8 @@ local resource_tbgeneral = {
   },
   [30703029] = {
     ID = 30703029,
-    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_30703029", "\230\160\188\231\189\151\232\142\137\228\186\154\231\154\132\231\153\190\229\174\157\231\174\177\239\188\1361\229\164\169\239\188\137"),
-    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_30703029", "\232\142\183\229\190\151\229\144\142\229\143\175\229\133\141\232\180\185\228\189\191\231\148\168\230\178\159\233\128\154\229\150\183\230\188\134-\230\160\188\231\189\151\232\142\137\228\186\154\231\154\132\231\153\190\229\174\157\231\174\1771\229\164\169\227\128\130"),
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_30703029", "\231\153\190\229\174\157\231\174\177\239\188\1361\229\164\169\239\188\137"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_30703029", "\232\142\183\229\190\151\229\144\142\229\143\175\229\133\141\232\180\185\228\189\191\231\148\168\230\178\159\233\128\154\229\150\183\230\188\134-\231\153\190\229\174\157\231\174\1771\229\164\169\227\128\130"),
     Note = "",
     Icon = "/Game/Rouge/UI/Atlas_DT/IconObtainProps/Frames/Icon_Paint_P29.Icon_Paint_P29",
     CurrencyIcon = "",
@@ -54281,6 +63281,906 @@ local resource_tbgeneral = {
     CurrencyIcon = "",
     Type = 26,
     TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_350824", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360101] = {
+    ID = 360101,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360101", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360101", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360101", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360102] = {
+    ID = 360102,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360102", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360102", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360102", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360103] = {
+    ID = 360103,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360103", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360103", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360103", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360104] = {
+    ID = 360104,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360104", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360104", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360104", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360105] = {
+    ID = 360105,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360105", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360105", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360105", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360106] = {
+    ID = 360106,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360106", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360106", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360106", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360201] = {
+    ID = 360201,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360201", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360201", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360201", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360202] = {
+    ID = 360202,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360202", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360202", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360202", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360203] = {
+    ID = 360203,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360203", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360203", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360203", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360204] = {
+    ID = 360204,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360204", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360204", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360204", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360205] = {
+    ID = 360205,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360205", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360205", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360205", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360206] = {
+    ID = 360206,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360206", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360206", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360206", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360301] = {
+    ID = 360301,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360301", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360301", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360301", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360302] = {
+    ID = 360302,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360302", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360302", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360302", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360303] = {
+    ID = 360303,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360303", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360303", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360303", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360304] = {
+    ID = 360304,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360304", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360304", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360304", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360305] = {
+    ID = 360305,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360305", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360305", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360305", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360306] = {
+    ID = 360306,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360306", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360306", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360306", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360401] = {
+    ID = 360401,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360401", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360401", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360401", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360402] = {
+    ID = 360402,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360402", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360402", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360402", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360403] = {
+    ID = 360403,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360403", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360403", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360403", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360404] = {
+    ID = 360404,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360404", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360404", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360404", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360405] = {
+    ID = 360405,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360405", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360405", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360405", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360406] = {
+    ID = 360406,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360406", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360406", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360406", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360111] = {
+    ID = 360111,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360111", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360111", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360111", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360112] = {
+    ID = 360112,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360112", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360112", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360112", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360113] = {
+    ID = 360113,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360113", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360113", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360113", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360114] = {
+    ID = 360114,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360114", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360114", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360114", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360115] = {
+    ID = 360115,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360115", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360115", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360115", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360116] = {
+    ID = 360116,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360116", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360116", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360116", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360211] = {
+    ID = 360211,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360211", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360211", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360211", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360212] = {
+    ID = 360212,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360212", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360212", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360212", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360213] = {
+    ID = 360213,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360213", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360213", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360213", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360214] = {
+    ID = 360214,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360214", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360214", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360214", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360215] = {
+    ID = 360215,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360215", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360215", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360215", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360216] = {
+    ID = 360216,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360216", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360216", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360216", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360311] = {
+    ID = 360311,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360311", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360311", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360311", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360312] = {
+    ID = 360312,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360312", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360312", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360312", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360313] = {
+    ID = 360313,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360313", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360313", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360313", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360314] = {
+    ID = 360314,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360314", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360314", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360314", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360315] = {
+    ID = 360315,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360315", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360315", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360315", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360316] = {
+    ID = 360316,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360316", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360316", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360316", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360411] = {
+    ID = 360411,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360411", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360411", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360411", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360412] = {
+    ID = 360412,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360412", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360412", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360412", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360413] = {
+    ID = 360413,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360413", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360413", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360413", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360414] = {
+    ID = 360414,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360414", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360414", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360414", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360415] = {
+    ID = 360415,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360415", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360415", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360415", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [360416] = {
+    ID = 360416,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_360416", "\231\130\189\231\131\173\231\132\166\229\156\159\230\168\161\231\187\132\226\133\161[\230\181\139\232\175\1491-30]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_360416", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_360416", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [350901] = {
+    ID = 350901,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_350901", "\231\180\171\232\137\178\231\159\169\233\152\181[\230\181\139\232\175\1491-24]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_350901", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_350901", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [350902] = {
+    ID = 350902,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_350902", "\231\180\171\232\137\178\231\159\169\233\152\181[\230\181\139\232\175\1491-24]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_350902", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_350902", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [350903] = {
+    ID = 350903,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_350903", "\231\180\171\232\137\178\231\159\169\233\152\181[\230\181\139\232\175\1491-24]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_350903", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_350903", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [350904] = {
+    ID = 350904,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_350904", "\231\180\171\232\137\178\231\159\169\233\152\181[\230\181\139\232\175\1491-24]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_350904", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_350904", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [350905] = {
+    ID = 350905,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_350905", "\231\180\171\232\137\178\231\159\169\233\152\181[\230\181\139\232\175\1491-24]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_350905", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_350905", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [350906] = {
+    ID = 350906,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_350906", "\231\180\171\232\137\178\231\159\169\233\152\181[\230\181\139\232\175\1491-24]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_350906", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_350906", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [350907] = {
+    ID = 350907,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_350907", "\231\180\171\232\137\178\231\159\169\233\152\181[\230\181\139\232\175\1491-24]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_350907", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_350907", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [350908] = {
+    ID = 350908,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_350908", "\231\180\171\232\137\178\231\159\169\233\152\181[\230\181\139\232\175\1491-24]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_350908", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_350908", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [350909] = {
+    ID = 350909,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_350909", "\231\180\171\232\137\178\231\159\169\233\152\181[\230\181\139\232\175\1491-24]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_350909", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_350909", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [350910] = {
+    ID = 350910,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_350910", "\231\180\171\232\137\178\231\159\169\233\152\181[\230\181\139\232\175\1491-24]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_350910", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_350910", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [350911] = {
+    ID = 350911,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_350911", "\231\180\171\232\137\178\231\159\169\233\152\181[\230\181\139\232\175\1491-24]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_350911", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_350911", "\230\168\161\231\187\132"),
+    Rare = 4,
+    DecomposeResources = {},
+    TimeLimitedDecomposeResources = {},
+    EnableResourceAcquireTaskEvent = false,
+    ProEffType = 0
+  },
+  [350912] = {
+    ID = 350912,
+    NameLocMeta = NSLOCTEXT("resource_TBGeneral", "Name_350912", "\231\180\171\232\137\178\231\159\169\233\152\181[\230\181\139\232\175\1491-24]"),
+    DescLocMeta = NSLOCTEXT("resource_TBGeneral", "Desc_350912", ""),
+    Note = "\229\141\160\228\189\141\231\148\168",
+    Icon = "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
+    CurrencyIcon = "",
+    Type = 26,
+    TypeDescLocMeta = NSLOCTEXT("resource_TBGeneral", "TypeDesc_350912", "\230\168\161\231\187\132"),
     Rare = 4,
     DecomposeResources = {},
     TimeLimitedDecomposeResources = {},

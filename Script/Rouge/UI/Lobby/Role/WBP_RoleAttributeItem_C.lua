@@ -13,6 +13,7 @@ local FormatValue = function(value, AttributeDisplayType)
   end
   return "0"
 end
+
 function WBP_RoleAttributeItem_C:Show(RowInfo, Value)
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.Txt_Name:SetText(RowInfo.DisplayNameInUI)
@@ -20,7 +21,9 @@ function WBP_RoleAttributeItem_C:Show(RowInfo, Value)
   self:PlayAnimationForward(self.Ani_in)
   SetImageBrushBySoftObject(self.Img_Icon, RowInfo.SpriteIcon, self.IconSize)
 end
+
 function WBP_RoleAttributeItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return WBP_RoleAttributeItem_C

@@ -8,16 +8,20 @@ local SkinData = require("Modules.Appearance.Skin.SkinData")
 local HeroIsLockedWaveId = 1141
 local LuaCurveNames = {}
 local PauseKey = "PauseGame"
+
 function WBP_RoleMain_C:Construct()
   LuaCurveNames = self.CurveNames:ToTable()
 end
+
 function WBP_RoleMain_C:OnInit()
   self.DataBindTable = {}
   self.viewModel = UIModelMgr:Get("RoleMainViewModel")
 end
+
 function WBP_RoleMain_C:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_RoleMain_C:BindClickHandler()
   EventSystem.AddListener(self, EventDef.Lobby.RoleItemClicked, WBP_RoleMain_C.BindOnChangeRoleItemClicked)
   EventSystem.AddListener(self, EventDef.Lobby.RoleSkillTip, WBP_RoleMain_C.BindOnShowSkillTips)
@@ -40,6 +44,7 @@ function WBP_RoleMain_C:BindClickHandler()
   self.Btn_Puzzle.OnClicked:Add(self, self.BindOnPuzzleButtonClicked)
   self.FetterSlotUnLockClickTime = 0
 end
+
 function WBP_RoleMain_C:UnBindClickHandler()
   EventSystem.RemoveListener(EventDef.Lobby.RoleItemClicked, WBP_RoleMain_C.BindOnChangeRoleItemClicked)
   EventSystem.RemoveListener(EventDef.Lobby.RoleSkillTip, WBP_RoleMain_C.BindOnShowSkillTips)
@@ -49,6 +54,7 @@ function WBP_RoleMain_C:UnBindClickHandler()
   EventSystem.RemoveListener(EventDef.Lobby.LobbyWeaponSlotHoverStatusChanged, WBP_RoleMain_C.BindOnLobbyWeaponSlotHoverStatusChanged, self)
   EventSystem.RemoveListenerNew(EventDef.Lobby.OnChangeCanDirectChangedStatus, self, self.OnChangeCanDirectChangedStatus)
 end
+
 function WBP_RoleMain_C:OnAnimationFinished(Animation)
   if Animation == self.ani_rolemain_out then
     self:BindOnOutAnimationFinished()
@@ -56,12 +62,14 @@ function WBP_RoleMain_C:OnAnimationFinished(Animation)
     UpdateVisibility(self.CanvasPanel_Cz, false)
   end
 end
+
 function WBP_RoleMain_C:BindOnOutAnimationFinished()
   UIMgr:Hide(ViewID.UI_WeaponSub)
   UIMgr:Hide(ViewID.UI_WeaponMain)
   self.IsPlayOutAnimation = true
   EventSystem.Invoke(EventDef.Lobby.OnLobbyLabelSelected, LogicLobby.GetPendingSelectedLabelTagName())
 end
+
 function WBP_RoleMain_C:CanDirectSwitch(NextTabWidget)
   if not self.IsPlayOutAnimation then
     if not self:IsAnimationPlaying(self.ani_rolemain_out) then
@@ -71,6 +79,7 @@ function WBP_RoleMain_C:CanDirectSwitch(NextTabWidget)
   end
   return self.IsPlayOutAnimation
 end
+
 function WBP_RoleMain_C:BindOnOpenAppearance()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.HERO_SKIN) then
@@ -78,27 +87,35 @@ function WBP_RoleMain_C:BindOnOpenAppearance()
   end
   UIMgr:Show(ViewID.UI_Apearance, true, self.CurHeroId)
 end
+
 function WBP_RoleMain_C:BindOnAppearanceButtonHovered()
   self.AppearanceButtonHoverPanel:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
 end
+
 function WBP_RoleMain_C:BindOnAppearanceButtonUnhovered()
   self.AppearanceButtonHoverPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_RoleMain_C:BindOnDetailAttributeButtonClicked()
   self:ExpandAttr()
 end
+
 function WBP_RoleMain_C:BindOnDetailAttributeButtonHovered()
   self.Img_DetailAttributeHover:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_RoleMain_C:BindOnDetailAttributeButtonUnhovered()
   self.Img_DetailAttributeHover:SetVisibility(UE.ESlateVisibility.Hidden)
 end
+
 function WBP_RoleMain_C:BindOnAuthorizedProgramButtonHovered()
   self.AuthorizedProgramButtonHoverPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_RoleMain_C:BindOnAuthorizedProgramButtonUnhovered()
   self.AuthorizedProgramButtonHoverPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_RoleMain_C:BindOnProficiencyClicked()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.HERO_MASTERY) then
@@ -110,6 +127,7 @@ function WBP_RoleMain_C:BindOnProficiencyClicked()
   end
   UIMgr:Show(ViewID.UI_DevelopMain, true, 3, self.CurHeroId)
 end
+
 function WBP_RoleMain_C:BindOnChipClicked()
   if not DataMgr.IsOwnHero(self.CurHeroId) then
     ShowWaveWindow(HeroIsLockedWaveId, {})
@@ -117,6 +135,7 @@ function WBP_RoleMain_C:BindOnChipClicked()
   end
   UIMgr:Show(ViewID.UI_DevelopMain, true, 2, self.CurHeroId)
 end
+
 function WBP_RoleMain_C:BindOnPuzzleButtonClicked(...)
   local PuzzelSystemID = 3
   local SystemUnlockModule = ModuleManager:Get("SystemUnlockModule")
@@ -143,12 +162,15 @@ function WBP_RoleMain_C:BindOnPuzzleButtonClicked(...)
   end
   UIMgr:Show(ViewID.UI_DevelopMain, true, 4, self.CurHeroId)
 end
+
 function WBP_RoleMain_C:ExpandAttr()
   EventSystem.Invoke(EventDef.RoleMain.OnTotalAttributeTipsVisChanged, true, self.CurHeroId)
 end
+
 function WBP_RoleMain_C:ShowByLobbyPanel()
   self.IsShowByLobbyPanel = true
 end
+
 function WBP_RoleMain_C:OnShow()
   self.Super:AttachViewModel(self.viewModel, self.DataBindTable, self)
   self:BindClickHandler()
@@ -168,6 +190,7 @@ function WBP_RoleMain_C:OnShow()
   EventSystem.Invoke(EventDef.Lobby.LobbyWeaponSlotHoverStatusChanged, false)
   self:PlayAnimation(self.Ani_loop_chuzhan, 0.0, 0)
 end
+
 function WBP_RoleMain_C:OnHide()
   self.IsShowByLobbyPanel = false
   self:Hide()
@@ -180,6 +203,7 @@ function WBP_RoleMain_C:OnHide()
   self:UnBindClickHandler()
   self.Super:DetachViewModel(self.viewModel, self.DataBindTable, self)
 end
+
 function WBP_RoleMain_C:OnHideByOther()
   if UE.URGGameplayStatics.TryGetWorld(self.TargetRoleActor) then
     self.TargetRoleActor:GlitchAniEnd()
@@ -187,8 +211,10 @@ function WBP_RoleMain_C:OnHideByOther()
   end
   self:UnBindClickHandler()
 end
+
 function WBP_RoleMain_C:FocusPanel()
 end
+
 function WBP_RoleMain_C:UpdateChip()
   if not DataMgr.IsOwnHero(self.CurHeroId) then
     UpdateVisibility(self.CanvasPanelChip, false)
@@ -212,6 +238,7 @@ function WBP_RoleMain_C:UpdateChip()
   end
   HideOtherItem(self.HorizontalBoxChipSlot, idx)
 end
+
 function WBP_RoleMain_C:BindOnEquippedWeaponInfoChanged(HeroId)
   print("WBP_RoleMain_C:BindOnEquippedWeaponInfoChanged", HeroId, self.CurHeroId)
   if self.CurHeroId ~= HeroId then
@@ -227,6 +254,7 @@ function WBP_RoleMain_C:BindOnEquippedWeaponInfoChanged(HeroId)
   self:RefreshWeaponSkillInfo()
   self.IsNeedPlayWeaponAnimByChangeHero = false
 end
+
 function WBP_RoleMain_C:BindOnWeaponSlotSelected(IsSelect, SlotId)
   if not DataMgr.IsOwnHero(self.CurHeroId) then
     if IsSelect then
@@ -241,6 +269,7 @@ function WBP_RoleMain_C:BindOnWeaponSlotSelected(IsSelect, SlotId)
   else
   end
 end
+
 function WBP_RoleMain_C:ShowWeapon(bIsWeaponSub, SlotIdx)
   local UserClickStatisticsMgr = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUserClickStatistics:StaticClass())
   if UserClickStatisticsMgr then
@@ -248,12 +277,14 @@ function WBP_RoleMain_C:ShowWeapon(bIsWeaponSub, SlotIdx)
   end
   UIMgr:Show(ViewID.UI_DevelopMain, true, 1, self.CurHeroId)
 end
+
 function WBP_RoleMain_C:BindOnWeaponListChanged()
   if self.TargetRoleActor then
     self.TargetRoleActor:ChangeWeaponMesh(self.CurHeroId)
   end
   self:RefreshWeaponSelectList()
 end
+
 function WBP_RoleMain_C:BindOnLobbyWeaponItemHovered(IsHover, WeaponInfo, IsEquipped)
   if IsHover then
     self.WeaponItemDisplayInfo:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -262,6 +293,7 @@ function WBP_RoleMain_C:BindOnLobbyWeaponItemHovered(IsHover, WeaponInfo, IsEqui
     self.WeaponItemDisplayInfo:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_RoleMain_C:BindOnLobbyWeaponSlotHoverStatusChanged(IsHover, WeaponInfo)
   if IsHover then
     self.WeaponItemDisplayInfo:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -272,9 +304,11 @@ function WBP_RoleMain_C:BindOnLobbyWeaponSlotHoverStatusChanged(IsHover, WeaponI
     self.WeaponItemDisplayInfo:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_RoleMain_C:OnChangeCanDirectChangedStatus(bCanDirectChanged)
   self.IsPlayOutAnimation = bCanDirectChanged
 end
+
 function WBP_RoleMain_C:RefreshWeaponDisplayInfoTip(WeaponInfo, IsEquipped)
   local AccessoryList = {}
   local TipText
@@ -297,8 +331,10 @@ function WBP_RoleMain_C:RefreshWeaponDisplayInfoTip(WeaponInfo, IsEquipped)
     self.WeaponItemDisplayInfo:ShowTipPanel(TipText, IsShowOperateIcon)
   end
 end
+
 function WBP_RoleMain_C:RefreshWeaponSelectList()
 end
+
 function WBP_RoleMain_C:RefreshProfyData()
   if not self.CurHeroId then
     return
@@ -317,6 +353,7 @@ function WBP_RoleMain_C:RefreshProfyData()
     SetImageBrushByPath(self.pro_level, tbProfy.IconPath)
   end
 end
+
 function WBP_RoleMain_C:BindOnLinkButtonClicked()
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBHeroMonster, self.CurHeroId)
   if Result and RowInfo.LinkId and RowInfo.LinkId ~= "" then
@@ -325,6 +362,7 @@ function WBP_RoleMain_C:BindOnLinkButtonClicked()
     ComLinkForParam(RowInfo.LinkId, nil, RowInfo.ParamList, ExtraData)
   end
 end
+
 function WBP_RoleMain_C:BindOnChooseButtonClicked()
   LogicRole.RequestEquipHeroToServer(self.CurHeroId, function()
     self:PlayAnimationForward(self.Ani_Btn_chuzhan, 1, true)
@@ -338,12 +376,15 @@ function WBP_RoleMain_C:BindOnChooseButtonClicked()
     end
   end)
 end
+
 function WBP_RoleMain_C:BindOnChooseButtonHovered()
   self.ChooseButtonHoverPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_RoleMain_C:BindOnChooseButtonUnhovered()
   self.ChooseButtonHoverPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_RoleMain_C:BindOnRoleInfoButtonClicked()
   LogicRole.RequestMyHeroInfoToServer()
   if DataMgr.IsOwnHero(self.CurHeroId) then
@@ -354,6 +395,7 @@ function WBP_RoleMain_C:BindOnRoleInfoButtonClicked()
   self.FetterMainPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.IsShowFetterPanel = false
 end
+
 function WBP_RoleMain_C:ShowFetterHeroPanel()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGUIManager:StaticClass())
   if not UIManager then
@@ -367,6 +409,7 @@ function WBP_RoleMain_C:ShowFetterHeroPanel()
     Widget:InitInfo(self.CurHeroId)
   end
 end
+
 function WBP_RoleMain_C:Show()
   self:BindOnRoleInfoButtonClicked()
   LogicRole.IsRoleMainShow = true
@@ -389,12 +432,15 @@ function WBP_RoleMain_C:Show()
   BeginnerGuideData:UpdateWBP("WBP_RoleMain", self)
   EventSystem.Invoke(EventDef.BeginnerGuide.OnRoleMainShow)
 end
+
 function WBP_RoleMain_C:BindOnEscKeyPressed()
 end
+
 function WBP_RoleMain_C:OnBindUIInput()
   self.WBP_InteractTipWidgetWaiguan:BindInteractAndClickEvent(self, self.BindOnOpenAppearance)
   self.WBP_InteractTipWidgetPuzzel:BindInteractAndClickEvent(self, self.BindOnPuzzleButtonClicked)
 end
+
 function WBP_RoleMain_C:OnUnBindUIInput()
   if IsListeningForInputAction(self, PauseKey) then
     StopListeningForInputAction(self, PauseKey, UE.EInputEvent.IE_Pressed)
@@ -402,6 +448,7 @@ function WBP_RoleMain_C:OnUnBindUIInput()
   self.WBP_InteractTipWidgetWaiguan:UnBindInteractAndClickEvent(self, self.BindOnOpenAppearance)
   self.WBP_InteractTipWidgetPuzzel:UnBindInteractAndClickEvent(self, self.BindOnPuzzleButtonClicked)
 end
+
 function WBP_RoleMain_C:OnRollback()
   if not IsListeningForInputAction(self, PauseKey) then
     ListenForInputAction(PauseKey, UE.EInputEvent.IE_Pressed, true, {
@@ -439,14 +486,17 @@ function WBP_RoleMain_C:OnRollback()
   EventSystem.Invoke(EventDef.BeginnerGuide.OnRoleMainShow)
   self:PlayAnimation(self.Ani_loop_chuzhan, 0.0, 0)
 end
+
 function WBP_RoleMain_C:LuaTick(deltaSeconds)
   self:AddStandbyTime(deltaSeconds)
 end
+
 function WBP_RoleMain_C:EditorMapShow(HeroId)
   self.RoleWidgetSwitcher:SetActiveWidgetIndex(0)
   self.RoleMainPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.FetterMainPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_RoleMain_C:RefreshWeaponSlotList()
   print("WBP_RoleMain_C:RefreshWeaponSlotList", self.CurHeroId)
   local AllItem = self.WeaponSlotList:GetAllChildren()
@@ -473,6 +523,7 @@ function WBP_RoleMain_C:RefreshWeaponSlotList()
     end
   end
 end
+
 function WBP_RoleMain_C:OnResStoneSlotClick(SlotIdx)
   if not DataMgr.IsOwnHero(self.CurHeroId) then
     ShowWaveWindow(HeroIsLockedWaveId, {})
@@ -480,6 +531,7 @@ function WBP_RoleMain_C:OnResStoneSlotClick(SlotIdx)
   end
   self:ShowWeapon(false, SlotIdx)
 end
+
 function WBP_RoleMain_C:Hide()
   LogicRole.IsRoleMainShow = false
   self.IsPlayOutAnimation = true
@@ -493,6 +545,7 @@ function WBP_RoleMain_C:Hide()
     UE.URGBlueprintLibrary.StopVoice(self.PlayingVoiceID)
   end
 end
+
 function WBP_RoleMain_C:BindOnChangeRoleItemClicked(HeroId, bForceUpdate, bNotShowGlitchMatEffect)
   local bShowGlitchMatEffect = not bNotShowGlitchMatEffect
   if self.CurHeroId and self.CurHeroId == HeroId and not bForceUpdate then
@@ -555,6 +608,7 @@ function WBP_RoleMain_C:BindOnChangeRoleItemClicked(HeroId, bForceUpdate, bNotSh
     UpdateVisibility(self.WBP_CommonExpireAt_69, false)
   end
 end
+
 function WBP_RoleMain_C:RefreshRoleTagList(RowInfo)
   local AllChildren = self.RoleTagList:GetAllChildren()
   for key, SingleItem in pairs(AllChildren) do
@@ -573,6 +627,7 @@ function WBP_RoleMain_C:RefreshRoleTagList(RowInfo)
     SetImageBrushByPath(Item.Img_TagBottom, RowInfo.TagIcon)
   end
 end
+
 function WBP_RoleMain_C:RefreshChooseButtonStatus()
   self.CanChoosePanel:SetRenderOpacity(1)
   UpdateVisibility(self.Txt_ChooseStatusAni, false)
@@ -612,6 +667,7 @@ function WBP_RoleMain_C:RefreshChooseButtonStatus()
     UpdateVisibility(self.CanvasPanel_Equiped, false)
   end
 end
+
 function WBP_RoleMain_C:BindOnShowSkillTips(IsShow, SkillGroupId, KeyName, SkillInputNameAry, inputNameAryPad, SkillItem)
   if IsShow then
     self.NormalSkillTip:RefreshInfo(SkillGroupId, KeyName, nil, SkillInputNameAry, inputNameAryPad)
@@ -621,6 +677,7 @@ function WBP_RoleMain_C:BindOnShowSkillTips(IsShow, SkillGroupId, KeyName, Skill
     self.NormalSkillTip:Hide()
   end
 end
+
 function WBP_RoleMain_C:BindOnUpdateMyHeroInfo()
   self:RefreshChooseButtonStatus()
   self:RefreshProfyData()
@@ -633,6 +690,7 @@ function WBP_RoleMain_C:BindOnUpdateMyHeroInfo()
     UpdateVisibility(self.WBP_CommonExpireAt_69, false)
   end
 end
+
 function WBP_RoleMain_C:RefreshSkillInfo(RowInfo)
   local AllSkillItems = self.SkillList:GetAllChildren()
   local SkillItemList = {}
@@ -660,6 +718,7 @@ function WBP_RoleMain_C:RefreshSkillInfo(RowInfo)
     end
   end
 end
+
 function WBP_RoleMain_C:RefreshWeaponSkillInfo()
   UpdateVisibility(self.WeaponSkill, false)
   local EquippedWeaponInfo = DataMgr.GetEquippedWeaponList(self.CurHeroId)
@@ -685,13 +744,16 @@ function WBP_RoleMain_C:RefreshWeaponSkillInfo()
     end
   end
 end
+
 function WBP_RoleMain_C:Destruct()
   LuaCurveNames = {}
   self.TargetRoleActor = nil
 end
+
 function WBP_RoleMain_C:OnMouseMove(MyGeometry, MouseEvent)
   self:ResetStandby()
 end
+
 function WBP_RoleMain_C:AddStandbyTime(InDeltaTime)
   if self.StandbyTime == nil then
     self.StandbyTime = 0
@@ -702,7 +764,9 @@ function WBP_RoleMain_C:AddStandbyTime(InDeltaTime)
     self:ResetStandby()
   end
 end
+
 function WBP_RoleMain_C:ResetStandby()
   self.StandbyTime = 0
 end
+
 return WBP_RoleMain_C

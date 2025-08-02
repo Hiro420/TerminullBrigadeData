@@ -1,6 +1,7 @@
 local OrderedMap = require("Framework.DataStruct.OrderedMap")
 local IllustratedGuideData = require("Modules.IllustratedGuide.IllustratedGuideData")
 local WBP_IGuide_PlotFragmentsWorldMenuItem_C = UnLua.Class()
+
 function WBP_IGuide_PlotFragmentsWorldMenuItem_C:Construct()
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
   self.Btn_Main.OnHovered:Add(self, self.BindOnMainButtonHovered)
@@ -8,12 +9,14 @@ function WBP_IGuide_PlotFragmentsWorldMenuItem_C:Construct()
   self.WorldId = -1
   EventSystem.AddListener(self, EventDef.IllustratedGuide.OnPlotFragmentsWorldChange, self.BindOnPlotFragmentsWorldChange)
 end
+
 function WBP_IGuide_PlotFragmentsWorldMenuItem_C:Destruct()
   self.Btn_Main.OnClicked:Remove(self, self.BindOnMainButtonClicked)
   self.Btn_Main.OnHovered:Remove(self, self.BindOnMainButtonHovered)
   self.Btn_Main.OnUnhovered:Remove(self, self.BindOnMainButtonUnhovered)
   EventSystem.RemoveListener(EventDef.IllustratedGuide.OnPlotFragmentsWorldChange, self.BindOnPlotFragmentsWorldChange, self)
 end
+
 function WBP_IGuide_PlotFragmentsWorldMenuItem_C:InitInfo(WorldId)
   self.WorldId = WorldId
   local WorldInfo = IllustratedGuideData:GetWorldInfoByWorldId(WorldId)
@@ -41,6 +44,7 @@ function WBP_IGuide_PlotFragmentsWorldMenuItem_C:InitInfo(WorldId)
   end
   self.WBP_RedDotView:ChangeRedDotIdByTag(WorldId)
 end
+
 function WBP_IGuide_PlotFragmentsWorldMenuItem_C:InitInfoFromWorldMenu(WorldId)
   self:PlayAnimationForward(self.Ani_in)
   self.WBP_RedDotView:ChangeRedDotIdByTag(WorldId)
@@ -75,9 +79,11 @@ function WBP_IGuide_PlotFragmentsWorldMenuItem_C:InitInfoFromWorldMenu(WorldId)
     end
   end
 end
+
 function WBP_IGuide_PlotFragmentsWorldMenuItem_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_IGuide_PlotFragmentsWorldMenuItem_C:BindOnMainButtonClicked()
   if -1 == self.WorldId then
     print("ywtao\239\188\140\230\149\172\232\175\183\230\156\159\229\190\133\228\184\150\231\149\140\228\184\141\232\131\189\231\130\185\229\135\187\239\188\129")
@@ -85,6 +91,7 @@ function WBP_IGuide_PlotFragmentsWorldMenuItem_C:BindOnMainButtonClicked()
   end
   EventSystem.Invoke(EventDef.IllustratedGuide.OnPlotFragmentsWorldChange, self.WorldId)
 end
+
 function WBP_IGuide_PlotFragmentsWorldMenuItem_C:BindOnMainButtonHovered()
   if -1 == self.WorldId then
     print("ywtao\239\188\140\230\149\172\232\175\183\230\156\159\229\190\133\228\184\150\231\149\140\228\184\141\232\131\189Hover\239\188\129")
@@ -95,12 +102,14 @@ function WBP_IGuide_PlotFragmentsWorldMenuItem_C:BindOnMainButtonHovered()
     UpdateVisibility(self.HrzBox_ProgressText, true)
   end
 end
+
 function WBP_IGuide_PlotFragmentsWorldMenuItem_C:BindOnMainButtonUnhovered()
   UpdateVisibility(self.Canvas_Hover, false)
   if self.HrzBox_ProgressText then
     UpdateVisibility(self.HrzBox_ProgressText, false, false)
   end
 end
+
 function WBP_IGuide_PlotFragmentsWorldMenuItem_C:BindOnPlotFragmentsWorldChange(WorldId)
   if WorldId == self.WorldId then
     UpdateVisibility(self.Canvas_Checked, true)
@@ -108,4 +117,5 @@ function WBP_IGuide_PlotFragmentsWorldMenuItem_C:BindOnPlotFragmentsWorldChange(
     UpdateVisibility(self.Canvas_Checked, false)
   end
 end
+
 return WBP_IGuide_PlotFragmentsWorldMenuItem_C

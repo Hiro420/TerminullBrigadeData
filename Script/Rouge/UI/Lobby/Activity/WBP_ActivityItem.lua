@@ -1,14 +1,17 @@
 local PandoraModule = require("Modules.Pandora.PandoraModule")
 local WBP_ActivityItem = UnLua.Class()
+
 function WBP_ActivityItem:Construct()
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
 end
+
 function WBP_ActivityItem:BindOnMainButtonClicked(...)
   if self.ActivityId and self.ActivityId == 10001 then
     FuncUtil.AddClickStatistics("ActivityRuleInfoMenu")
   end
   EventSystem.Invoke(EventDef.Activity.OnChangeActivityItemSelected, self.ActivityId, self.bByPandora)
 end
+
 function WBP_ActivityItem:Show(ActivityId)
   UpdateVisibility(self, true)
   self.ActivityId = ActivityId
@@ -20,6 +23,7 @@ function WBP_ActivityItem:Show(ActivityId)
   self.WBP_RedDotView:ChangeRedDotIdByTag(self.ActivityId)
   EventSystem.AddListenerNew(EventDef.Activity.OnChangeActivityItemSelected, self, self.BindOnChangeActivityItemSelected)
 end
+
 function WBP_ActivityItem:ShowByPandora(MsgObj)
   UpdateVisibility(self, true)
   self.ActivityId = MsgObj.appId
@@ -36,6 +40,7 @@ function WBP_ActivityItem:ShowByPandora(MsgObj)
   self.WBP_RedDotView:ChangeRedDotIdByTag(self.ActivityId)
   EventSystem.AddListenerNew(EventDef.Activity.OnChangeActivityItemSelected, self, self.BindOnChangeActivityItemSelected)
 end
+
 function WBP_ActivityItem:BindOnChangeActivityItemSelected(ActivityId)
   UpdateVisibility(self.Overlay_Selected, ActivityId == self.ActivityId)
   if ActivityId == self.ActivityId then
@@ -48,11 +53,14 @@ function WBP_ActivityItem:BindOnChangeActivityItemSelected(ActivityId)
     self.Txt_Name:SetColorAndOpacity(self.NormalNameColor)
   end
 end
+
 function WBP_ActivityItem:Hide(...)
   UpdateVisibility(self, false)
   EventSystem.RemoveListenerNew(EventDef.Activity.OnChangeActivityItemSelected, self, self.BindOnChangeActivityItemSelected)
 end
+
 function WBP_ActivityItem:Destruct(...)
   self:Hide()
 end
+
 return WBP_ActivityItem

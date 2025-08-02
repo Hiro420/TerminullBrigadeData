@@ -1,4706 +1,4720 @@
 ﻿{
   "24017": {
+    "ID": 24017,
     "AnnotationLocMeta": {
       "InTextLiteral": "赛季能力点不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24017"
     },
-    "ID": 24017,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "赛季能力点不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24017"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24018": {
+    "ID": 24018,
     "AnnotationLocMeta": {
       "InTextLiteral": "赛季能力点达到上限",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24018"
     },
-    "ID": 24018,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "赛季能力点达到上限",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24018"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24019": {
+    "ID": 24019,
     "AnnotationLocMeta": {
       "InTextLiteral": "赛季能力无需重置",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24019"
     },
-    "ID": 24019,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "赛季能力无需重置",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24019"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24020": {
+    "ID": 24020,
     "AnnotationLocMeta": {
       "InTextLiteral": "特殊能力未解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24020"
     },
-    "ID": 24020,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "特殊能力未解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24020"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24021": {
+    "ID": 24021,
     "AnnotationLocMeta": {
       "InTextLiteral": "特殊能力已经激活",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24021"
     },
-    "ID": 24021,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "特殊能力已经激活",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24021"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24022": {
+    "ID": 24022,
     "AnnotationLocMeta": {
       "InTextLiteral": "通行证等级不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24022"
     },
-    "ID": 24022,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "等级暂未达到领奖条件",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24022"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "23001": {
+    "ID": 23001,
     "AnnotationLocMeta": {
       "InTextLiteral": "无效的状态转换",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_23001"
     },
-    "ID": 23001,
-    "Module": "playerservice",
     "TipsLocMeta": {
       "InTextLiteral": "无效的状态转换",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_23001"
-    }
+    },
+    "Module": "playerservice"
   },
   "23002": {
+    "ID": 23002,
     "AnnotationLocMeta": {
       "InTextLiteral": "不可修改昵称",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_23002"
     },
-    "ID": 23002,
-    "Module": "playerservice",
     "TipsLocMeta": {
       "InTextLiteral": "当前暂时不可修改昵称",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_23002"
-    }
+    },
+    "Module": "playerservice"
   },
   "23003": {
+    "ID": 23003,
     "AnnotationLocMeta": {
       "InTextLiteral": "未拥有该头像",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_23003"
     },
-    "ID": 23003,
-    "Module": "playerservice",
     "TipsLocMeta": {
       "InTextLiteral": "未拥有该头像",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_23003"
-    }
+    },
+    "Module": "playerservice"
   },
   "23004": {
+    "ID": 23004,
     "AnnotationLocMeta": {
       "InTextLiteral": "未拥有该横幅",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_23004"
     },
-    "ID": 23004,
-    "Module": "playerservice",
     "TipsLocMeta": {
       "InTextLiteral": "未拥有该横幅",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_23004"
-    }
+    },
+    "Module": "playerservice"
   },
   "23005": {
+    "ID": 23005,
     "AnnotationLocMeta": {
       "InTextLiteral": "禁止修改昵称",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_23005"
     },
-    "ID": 23005,
-    "Module": "playerservice",
     "TipsLocMeta": {
       "InTextLiteral": "当前账号禁止修改昵称",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_23005"
-    }
+    },
+    "Module": "playerservice"
   },
   "23006": {
+    "ID": 23006,
     "AnnotationLocMeta": {
       "InTextLiteral": "禁止搜索玩家",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_23006"
     },
-    "ID": 23006,
-    "Module": "playerservice",
     "TipsLocMeta": {
       "InTextLiteral": "禁止搜索玩家",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_23006"
-    }
+    },
+    "Module": "playerservice"
   },
   "23007": {
+    "ID": 23007,
     "AnnotationLocMeta": {
       "InTextLiteral": "昵称不可用",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_23007"
     },
-    "ID": 23007,
-    "Module": "playerservice",
     "TipsLocMeta": {
       "InTextLiteral": "此昵称存在不可用词汇，请修改后再试",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_23007"
-    }
+    },
+    "Module": "playerservice"
   },
   "23008": {
+    "ID": 23008,
     "AnnotationLocMeta": {
       "InTextLiteral": "昵称有特殊字符",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_23008"
     },
-    "ID": 23008,
-    "Module": "playerservice",
     "TipsLocMeta": {
       "InTextLiteral": "用户昵称存在特殊字符，请修改后再试",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_23008"
-    }
+    },
+    "Module": "playerservice"
   },
   "23009": {
+    "ID": 23009,
     "AnnotationLocMeta": {
       "InTextLiteral": "昵称长度不合法",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_23009"
     },
-    "ID": 23009,
-    "Module": "playerservice",
     "TipsLocMeta": {
       "InTextLiteral": "用户昵称长度不得超过个汉字或个字母和数字",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_23009"
-    }
+    },
+    "Module": "playerservice"
   },
   "23010": {
+    "ID": 23010,
     "AnnotationLocMeta": {
       "InTextLiteral": "昵称重复",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_23010"
     },
-    "ID": 23010,
-    "Module": "playerservice",
     "TipsLocMeta": {
       "InTextLiteral": "用户昵称已存在，请修改后再试",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_23010"
-    }
+    },
+    "Module": "playerservice"
   },
   "23011": {
+    "ID": 23011,
     "AnnotationLocMeta": {
       "InTextLiteral": "新昵称与当前昵称相同",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_23011"
     },
-    "ID": 23011,
-    "Module": "playerservice",
     "TipsLocMeta": {
       "InTextLiteral": "新昵称与当前昵称相同",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_23011"
-    }
+    },
+    "Module": "playerservice"
   },
   "22001": {
+    "ID": 22001,
     "AnnotationLocMeta": {
       "InTextLiteral": "找不到奖池",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_22001"
     },
-    "ID": 22001,
-    "Module": "mallservice",
     "TipsLocMeta": {
       "InTextLiteral": "找不到奖池",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_22001"
-    }
+    },
+    "Module": "mallservice"
   },
   "22002": {
+    "ID": 22002,
     "AnnotationLocMeta": {
       "InTextLiteral": "找不到礼包",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_22002"
     },
-    "ID": 22002,
-    "Module": "mallservice",
     "TipsLocMeta": {
       "InTextLiteral": "找不到礼包",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_22002"
-    }
+    },
+    "Module": "mallservice"
   },
   "22003": {
+    "ID": 22003,
     "AnnotationLocMeta": {
       "InTextLiteral": "礼包随机失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_22003"
     },
-    "ID": 22003,
-    "Module": "mallservice",
     "TipsLocMeta": {
       "InTextLiteral": "礼包随机失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_22003"
-    }
+    },
+    "Module": "mallservice"
   },
   "22004": {
+    "ID": 22004,
     "AnnotationLocMeta": {
       "InTextLiteral": "找不到保底策略",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_22004"
     },
-    "ID": 22004,
-    "Module": "mallservice",
     "TipsLocMeta": {
       "InTextLiteral": "找不到保底策略",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_22004"
-    }
+    },
+    "Module": "mallservice"
   },
   "22005": {
+    "ID": 22005,
     "AnnotationLocMeta": {
       "InTextLiteral": "奖池未开启",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_22005"
     },
-    "ID": 22005,
-    "Module": "mallservice",
     "TipsLocMeta": {
       "InTextLiteral": "奖池未开启",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_22005"
-    }
+    },
+    "Module": "mallservice"
   },
   "22006": {
+    "ID": 22006,
     "AnnotationLocMeta": {
       "InTextLiteral": "商品表格数据不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_22006"
     },
-    "ID": 22006,
-    "Module": "mallservice",
     "TipsLocMeta": {
       "InTextLiteral": "商品表格数据不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_22006"
-    }
+    },
+    "Module": "mallservice"
   },
   "22007": {
+    "ID": 22007,
     "AnnotationLocMeta": {
       "InTextLiteral": "货架表格数据不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_22007"
     },
-    "ID": 22007,
-    "Module": "mallservice",
     "TipsLocMeta": {
       "InTextLiteral": "货架表格数据不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_22007"
-    }
+    },
+    "Module": "mallservice"
   },
   "22008": {
+    "ID": 22008,
     "AnnotationLocMeta": {
       "InTextLiteral": "超过商品购买上限",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_22008"
     },
-    "ID": 22008,
-    "Module": "mallservice",
     "TipsLocMeta": {
       "InTextLiteral": "超过商品购买上限",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_22008"
-    }
+    },
+    "Module": "mallservice"
   },
   "22009": {
+    "ID": 22009,
     "AnnotationLocMeta": {
       "InTextLiteral": "超过货架购买上限",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_22009"
     },
-    "ID": 22009,
-    "Module": "mallservice",
     "TipsLocMeta": {
       "InTextLiteral": "超过货架购买上限",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_22009"
-    }
+    },
+    "Module": "mallservice"
   },
   "22010": {
+    "ID": 22010,
     "AnnotationLocMeta": {
       "InTextLiteral": "获取资源的已拥有数量失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_22010"
     },
-    "ID": 22010,
-    "Module": "mallservice",
     "TipsLocMeta": {
       "InTextLiteral": "获取资源的已拥有数量失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_22010"
-    }
+    },
+    "Module": "mallservice"
   },
   "22011": {
+    "ID": 22011,
     "AnnotationLocMeta": {
       "InTextLiteral": "超过商品拥有购买上限",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_22011"
     },
-    "ID": 22011,
-    "Module": "mallservice",
     "TipsLocMeta": {
       "InTextLiteral": "超过商品拥有购买上限",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_22011"
-    }
+    },
+    "Module": "mallservice"
   },
   "22012": {
+    "ID": 22012,
     "AnnotationLocMeta": {
       "InTextLiteral": "商品的消耗资源错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_22012"
     },
-    "ID": 22012,
-    "Module": "mallservice",
     "TipsLocMeta": {
       "InTextLiteral": "商品的消耗资源错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_22012"
-    }
+    },
+    "Module": "mallservice"
   },
   "22013": {
+    "ID": 22013,
     "AnnotationLocMeta": {
       "InTextLiteral": "货架未开启",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_22013"
     },
-    "ID": 22013,
-    "Module": "mallservice",
     "TipsLocMeta": {
       "InTextLiteral": "货架未开启",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_22013"
-    }
+    },
+    "Module": "mallservice"
   },
   "21001": {
+    "ID": 21001,
     "AnnotationLocMeta": {
       "InTextLiteral": "找不到货币",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_21001"
     },
-    "ID": 21001,
-    "Module": "resourceservice",
     "TipsLocMeta": {
       "InTextLiteral": "找不到货币",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_21001"
-    }
+    },
+    "Module": "resourceservice"
   },
   "21002": {
+    "ID": 21002,
     "AnnotationLocMeta": {
       "InTextLiteral": "解析表失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_21002"
     },
-    "ID": 21002,
-    "Module": "resourceservice",
     "TipsLocMeta": {
       "InTextLiteral": "解析表失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_21002"
-    }
+    },
+    "Module": "resourceservice"
   },
   "21003": {
+    "ID": 21003,
     "AnnotationLocMeta": {
       "InTextLiteral": "解析数据库失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_21003"
     },
-    "ID": 21003,
-    "Module": "resourceservice",
     "TipsLocMeta": {
       "InTextLiteral": "解析数据库失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_21003"
-    }
+    },
+    "Module": "resourceservice"
   },
   "21004": {
+    "ID": 21004,
     "AnnotationLocMeta": {
       "InTextLiteral": "扣除道具至负数",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_21004"
     },
-    "ID": 21004,
-    "Module": "resourceservice",
     "TipsLocMeta": {
       "InTextLiteral": "道具不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_21004"
-    }
+    },
+    "Module": "resourceservice"
   },
   "21005": {
+    "ID": 21005,
     "AnnotationLocMeta": {
       "InTextLiteral": "背包空间不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_21005"
     },
-    "ID": 21005,
-    "Module": "resourceservice",
     "TipsLocMeta": {
       "InTextLiteral": "背包空间不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_21005"
-    }
+    },
+    "Module": "resourceservice"
   },
   "21006": {
+    "ID": 21006,
     "AnnotationLocMeta": {
       "InTextLiteral": "奖励重复领取",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_21006"
     },
-    "ID": 21006,
-    "Module": "resourceservice",
     "TipsLocMeta": {
       "InTextLiteral": "奖励重复领取",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_21006"
-    }
+    },
+    "Module": "resourceservice"
   },
   "21007": {
+    "ID": 21007,
     "AnnotationLocMeta": {
       "InTextLiteral": "资源无法兑换",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_21007"
     },
-    "ID": 21007,
-    "Module": "resourceservice",
     "TipsLocMeta": {
       "InTextLiteral": "资源无法兑换",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_21007"
-    }
+    },
+    "Module": "resourceservice"
   },
   "21008": {
+    "ID": 21008,
     "AnnotationLocMeta": {
       "InTextLiteral": "无效的资源",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_21008"
     },
-    "ID": 21008,
-    "Module": "resourceservice",
     "TipsLocMeta": {
       "InTextLiteral": "无效的资源",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_21008"
-    }
+    },
+    "Module": "resourceservice"
   },
   "21009": {
+    "ID": 21009,
     "AnnotationLocMeta": {
       "InTextLiteral": "无效的资源类型",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_21009"
     },
-    "ID": 21009,
-    "Module": "resourceservice",
     "TipsLocMeta": {
       "InTextLiteral": "无效的资源类型",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_21009"
-    }
+    },
+    "Module": "resourceservice"
   },
   "20001": {
+    "ID": 20001,
     "AnnotationLocMeta": {
       "InTextLiteral": "找不到类型",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_20001"
     },
-    "ID": 20001,
-    "Module": "recordservice",
     "TipsLocMeta": {
       "InTextLiteral": "找不到类型",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_20001"
-    }
+    },
+    "Module": "recordservice"
   },
   "19001": {
+    "ID": 19001,
     "AnnotationLocMeta": {
       "InTextLiteral": "找不到匹配",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_19001"
     },
-    "ID": 19001,
-    "Module": "matchservice",
     "TipsLocMeta": {
       "InTextLiteral": "找不到匹配",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_19001"
-    }
+    },
+    "Module": "matchservice"
   },
   "19002": {
+    "ID": 19002,
     "AnnotationLocMeta": {
       "InTextLiteral": "匹配已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_19002"
     },
-    "ID": 19002,
-    "Module": "matchservice",
     "TipsLocMeta": {
       "InTextLiteral": "匹配已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_19002"
-    }
+    },
+    "Module": "matchservice"
   },
   "19003": {
+    "ID": 19003,
     "AnnotationLocMeta": {
       "InTextLiteral": "匹配未准备好",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_19003"
     },
-    "ID": 19003,
-    "Module": "matchservice",
     "TipsLocMeta": {
       "InTextLiteral": "匹配未准备好",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_19003"
-    }
+    },
+    "Module": "matchservice"
   },
   "19004": {
+    "ID": 19004,
     "AnnotationLocMeta": {
       "InTextLiteral": "匹配未开始",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_19004"
     },
-    "ID": 19004,
-    "Module": "matchservice",
     "TipsLocMeta": {
       "InTextLiteral": "匹配未开始",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_19004"
-    }
+    },
+    "Module": "matchservice"
   },
   "19005": {
+    "ID": 19005,
     "AnnotationLocMeta": {
       "InTextLiteral": "匹配已开始",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_19005"
     },
-    "ID": 19005,
-    "Module": "matchservice",
     "TipsLocMeta": {
       "InTextLiteral": "匹配已开始",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_19005"
-    }
+    },
+    "Module": "matchservice"
   },
   "19006": {
+    "ID": 19006,
     "AnnotationLocMeta": {
       "InTextLiteral": "匹配已结束",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_19006"
     },
-    "ID": 19006,
-    "Module": "matchservice",
     "TipsLocMeta": {
       "InTextLiteral": "匹配已结束",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_19006"
-    }
+    },
+    "Module": "matchservice"
   },
   "19007": {
+    "ID": 19007,
     "AnnotationLocMeta": {
       "InTextLiteral": "匹配已取消",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_19007"
     },
-    "ID": 19007,
-    "Module": "matchservice",
     "TipsLocMeta": {
       "InTextLiteral": "匹配已取消",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_19007"
-    }
+    },
+    "Module": "matchservice"
   },
   "19008": {
+    "ID": 19008,
     "AnnotationLocMeta": {
       "InTextLiteral": "匹配超时",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_19008"
     },
-    "ID": 19008,
-    "Module": "matchservice",
     "TipsLocMeta": {
       "InTextLiteral": "匹配超时",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_19008"
-    }
+    },
+    "Module": "matchservice"
   },
   "19009": {
+    "ID": 19009,
     "AnnotationLocMeta": {
       "InTextLiteral": "匹配失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_19009"
     },
-    "ID": 19009,
-    "Module": "matchservice",
     "TipsLocMeta": {
       "InTextLiteral": "匹配失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_19009"
-    }
+    },
+    "Module": "matchservice"
   },
   "18001": {
+    "ID": 18001,
     "AnnotationLocMeta": {
       "InTextLiteral": "找不到可用的服务器",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_18001"
     },
-    "ID": 18001,
-    "Module": "transferservice",
     "TipsLocMeta": {
       "InTextLiteral": "找不到可用的服务器",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_18001"
-    }
+    },
+    "Module": "transferservice"
   },
   "18002": {
+    "ID": 18002,
     "AnnotationLocMeta": {
       "InTextLiteral": "需要更新客户端",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_18002"
     },
-    "ID": 18002,
-    "Module": "transferservice",
     "TipsLocMeta": {
       "InTextLiteral": "需要更新客户端",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_18002"
-    }
+    },
+    "Module": "transferservice"
   },
   "18003": {
+    "ID": 18003,
     "AnnotationLocMeta": {
       "InTextLiteral": "转发失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_18003"
     },
-    "ID": 18003,
-    "Module": "transferservice",
     "TipsLocMeta": {
       "InTextLiteral": "转发失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_18003"
-    }
+    },
+    "Module": "transferservice"
   },
   "18004": {
+    "ID": 18004,
     "AnnotationLocMeta": {
       "InTextLiteral": "已经在家园中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_18004"
     },
-    "ID": 18004,
-    "Module": "transferservice",
     "TipsLocMeta": {
       "InTextLiteral": "已经在家园中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_18004"
-    }
+    },
+    "Module": "transferservice"
   },
   "18005": {
+    "ID": 18005,
     "AnnotationLocMeta": {
       "InTextLiteral": "连接战斗服失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_18005"
     },
-    "ID": 18005,
-    "Module": "transferservice",
     "TipsLocMeta": {
       "InTextLiteral": "连接战斗服失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_18005"
-    }
+    },
+    "Module": "transferservice"
   },
   "18006": {
+    "ID": 18006,
     "AnnotationLocMeta": {
       "InTextLiteral": "失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_18006"
     },
-    "ID": 18006,
-    "Module": "transferservice",
     "TipsLocMeta": {
       "InTextLiteral": "失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_18006"
-    }
+    },
+    "Module": "transferservice"
   },
   "18007": {
+    "ID": 18007,
     "AnnotationLocMeta": {
       "InTextLiteral": "战斗不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_18007"
     },
-    "ID": 18007,
-    "Module": "transferservice",
     "TipsLocMeta": {
       "InTextLiteral": "战斗不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_18007"
-    }
+    },
+    "Module": "transferservice"
   },
   "18008": {
+    "ID": 18008,
     "AnnotationLocMeta": {
       "InTextLiteral": "重连战斗服失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_18008"
     },
-    "ID": 18008,
-    "Module": "transferservice",
     "TipsLocMeta": {
       "InTextLiteral": "战斗已结束，重连失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_18008"
-    }
+    },
+    "Module": "transferservice"
   },
   "180007": {
+    "ID": 180007,
     "AnnotationLocMeta": {
       "InTextLiteral": "战斗不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_180007"
     },
-    "ID": 180007,
-    "Module": "transferservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_180007"
-    }
+    },
+    "Module": "transferservice"
   },
   "17001": {
+    "ID": 17001,
     "AnnotationLocMeta": {
       "InTextLiteral": "玩家不在群组中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_17001"
     },
-    "ID": 17001,
-    "Module": "chatservice",
     "TipsLocMeta": {
       "InTextLiteral": "玩家不在群组中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_17001"
-    }
+    },
+    "Module": "chatservice"
   },
   "17002": {
+    "ID": 17002,
     "AnnotationLocMeta": {
       "InTextLiteral": "群组已经存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_17002"
     },
-    "ID": 17002,
-    "Module": "chatservice",
     "TipsLocMeta": {
       "InTextLiteral": "群组已经存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_17002"
-    }
+    },
+    "Module": "chatservice"
   },
   "17003": {
+    "ID": 17003,
     "AnnotationLocMeta": {
       "InTextLiteral": "玩家已经在群组中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_17003"
     },
-    "ID": 17003,
-    "Module": "chatservice",
     "TipsLocMeta": {
       "InTextLiteral": "玩家已经在群组中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_17003"
-    }
+    },
+    "Module": "chatservice"
   },
   "17004": {
+    "ID": 17004,
     "AnnotationLocMeta": {
       "InTextLiteral": "群组不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_17004"
     },
-    "ID": 17004,
-    "Module": "chatservice",
     "TipsLocMeta": {
       "InTextLiteral": "群组不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_17004"
-    }
+    },
+    "Module": "chatservice"
   },
   "17005": {
+    "ID": 17005,
     "AnnotationLocMeta": {
       "InTextLiteral": "玩家等级不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_17005"
     },
-    "ID": 17005,
-    "Module": "chatservice",
     "TipsLocMeta": {
       "InTextLiteral": "账号等级级开启",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_17005"
-    }
+    },
+    "Module": "chatservice"
   },
   "17006": {
+    "ID": 17006,
     "AnnotationLocMeta": {
       "InTextLiteral": "内容太长",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_17006"
     },
-    "ID": 17006,
-    "Module": "chatservice",
     "TipsLocMeta": {
       "InTextLiteral": "内容太长",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_17006"
-    }
+    },
+    "Module": "chatservice"
   },
   "17007": {
+    "ID": 17007,
     "AnnotationLocMeta": {
       "InTextLiteral": "玩家被禁言",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_17007"
     },
-    "ID": 17007,
-    "Module": "chatservice",
     "TipsLocMeta": {
       "InTextLiteral": "玩家被禁言",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_17007"
-    }
+    },
+    "Module": "chatservice"
   },
   "17008": {
+    "ID": 17008,
     "AnnotationLocMeta": {
       "InTextLiteral": "玩家被静默",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_17008"
     },
-    "ID": 17008,
-    "Module": "chatservice",
     "TipsLocMeta": {
       "InTextLiteral": "玩家被静默",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_17008"
-    }
+    },
+    "Module": "chatservice"
   },
   "17009": {
+    "ID": 17009,
     "AnnotationLocMeta": {
       "InTextLiteral": "非好友不允许私聊",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_17009"
     },
-    "ID": 17009,
-    "Module": "chatservice",
     "TipsLocMeta": {
       "InTextLiteral": "非好友不允许私聊",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_17009"
-    }
+    },
+    "Module": "chatservice"
   },
   "17010": {
+    "ID": 17010,
     "AnnotationLocMeta": {
       "InTextLiteral": "禁止玩家实时语音",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_17010"
     },
-    "ID": 17010,
-    "Module": "chatservice",
     "TipsLocMeta": {
       "InTextLiteral": "禁止玩家实时语音",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_17010"
-    }
+    },
+    "Module": "chatservice"
   },
   "17011": {
+    "ID": 17011,
     "AnnotationLocMeta": {
       "InTextLiteral": "创建群组、添加玩家存在错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_17011"
     },
-    "ID": 17011,
-    "Module": "chatservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_17011"
-    }
+    },
+    "Module": "chatservice"
   },
   "16001": {
+    "ID": 16001,
     "AnnotationLocMeta": {
       "InTextLiteral": "错误的邮件",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_16001"
     },
-    "ID": 16001,
-    "Module": "mailservice",
     "TipsLocMeta": {
       "InTextLiteral": "错误的邮件",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_16001"
-    }
+    },
+    "Module": "mailservice"
   },
   "16002": {
+    "ID": 16002,
     "AnnotationLocMeta": {
       "InTextLiteral": "错误的邮件模板",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_16002"
     },
-    "ID": 16002,
-    "Module": "mailservice",
     "TipsLocMeta": {
       "InTextLiteral": "错误的邮件模板",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_16002"
-    }
+    },
+    "Module": "mailservice"
   },
   "16003": {
+    "ID": 16003,
     "AnnotationLocMeta": {
       "InTextLiteral": "错误的邮件类型",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_16003"
     },
-    "ID": 16003,
-    "Module": "mailservice",
     "TipsLocMeta": {
       "InTextLiteral": "错误的邮件类型",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_16003"
-    }
+    },
+    "Module": "mailservice"
   },
   "15000": {
+    "ID": 15000,
     "AnnotationLocMeta": {
       "InTextLiteral": "已经在队伍中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15000"
     },
-    "ID": 15000,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "已经在队伍中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15000"
-    }
+    },
+    "Module": "teamservice"
   },
   "15001": {
+    "ID": 15001,
     "AnnotationLocMeta": {
       "InTextLiteral": "不在队伍中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15001"
     },
-    "ID": 15001,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "不在队伍中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15001"
-    }
+    },
+    "Module": "teamservice"
   },
   "15002": {
+    "ID": 15002,
     "AnnotationLocMeta": {
       "InTextLiteral": "队伍满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15002"
     },
-    "ID": 15002,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "队伍满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15002"
-    }
+    },
+    "Module": "teamservice"
   },
   "15003": {
+    "ID": 15003,
     "AnnotationLocMeta": {
       "InTextLiteral": "找不到队伍",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15003"
     },
-    "ID": 15003,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "找不到队伍",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15003"
-    }
+    },
+    "Module": "teamservice"
   },
   "15004": {
+    "ID": 15004,
     "AnnotationLocMeta": {
       "InTextLiteral": "队伍状态转换失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15004"
     },
-    "ID": 15004,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "队伍状态转换失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15004"
-    }
+    },
+    "Module": "teamservice"
   },
   "15005": {
+    "ID": 15005,
     "AnnotationLocMeta": {
       "InTextLiteral": "申请战斗服失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15005"
     },
-    "ID": 15005,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "战斗区域繁忙，请稍后重试",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15005"
-    }
+    },
+    "Module": "teamservice"
   },
   "15007": {
+    "ID": 15007,
     "AnnotationLocMeta": {
       "InTextLiteral": "没有权限操作队伍",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15007"
     },
-    "ID": 15007,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "没有权限操作队伍",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15007"
-    }
+    },
+    "Module": "teamservice"
   },
   "15008": {
+    "ID": 15008,
     "AnnotationLocMeta": {
       "InTextLiteral": "游戏楼层无效",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15008"
     },
-    "ID": 15008,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "未解锁该难度",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15008"
-    }
+    },
+    "Module": "teamservice"
   },
   "15009": {
+    "ID": 15009,
     "AnnotationLocMeta": {
       "InTextLiteral": "已经选定了英雄",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15009"
     },
-    "ID": 15009,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "已经选定了英雄",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15009"
-    }
+    },
+    "Module": "teamservice"
   },
   "15010": {
+    "ID": 15010,
     "AnnotationLocMeta": {
       "InTextLiteral": "玩家被暂时封禁，不能加入队伍",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15010"
     },
-    "ID": 15010,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "玩家被暂时封禁，不能加入队伍",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15010"
-    }
+    },
+    "Module": "teamservice"
   },
   "15011": {
+    "ID": 15011,
     "AnnotationLocMeta": {
       "InTextLiteral": "无效的队伍码",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15011"
     },
-    "ID": 15011,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "原队伍不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15011"
-    }
+    },
+    "Module": "teamservice"
   },
   "15012": {
+    "ID": 15012,
     "AnnotationLocMeta": {
       "InTextLiteral": "我方已经进入匹配状态",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15012"
     },
-    "ID": 15012,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "我方已经进入匹配状态",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15012"
-    }
+    },
+    "Module": "teamservice"
   },
   "15013": {
+    "ID": 15013,
     "AnnotationLocMeta": {
       "InTextLiteral": "我方已经开始游戏",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15013"
     },
-    "ID": 15013,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "我方已经开始游戏",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15013"
-    }
+    },
+    "Module": "teamservice"
   },
   "15020": {
+    "ID": 15020,
     "AnnotationLocMeta": {
       "InTextLiteral": "我方队伍已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15020"
     },
-    "ID": 15020,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "我方队伍已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15020"
-    }
+    },
+    "Module": "teamservice"
   },
   "15021": {
+    "ID": 15021,
     "AnnotationLocMeta": {
       "InTextLiteral": "对方队伍已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15021"
     },
-    "ID": 15021,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "对方队伍已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15021"
-    }
+    },
+    "Module": "teamservice"
   },
   "15027": {
+    "ID": 15027,
     "AnnotationLocMeta": {
       "InTextLiteral": "对方队伍已经匹配",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15027"
     },
-    "ID": 15027,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "对方队伍已经匹配",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15027"
-    }
+    },
+    "Module": "teamservice"
   },
   "15028": {
+    "ID": 15028,
     "AnnotationLocMeta": {
       "InTextLiteral": "对方队伍已经开始游戏",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15028"
     },
-    "ID": 15028,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "对方队伍已经开始游戏",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15028"
-    }
+    },
+    "Module": "teamservice"
   },
   "15029": {
+    "ID": 15029,
     "AnnotationLocMeta": {
       "InTextLiteral": "版本不一致",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15029"
     },
-    "ID": 15029,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "版本不一致",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15029"
-    }
+    },
+    "Module": "teamservice"
   },
   "15030": {
+    "ID": 15030,
     "AnnotationLocMeta": {
       "InTextLiteral": "玩家不在战斗中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15030"
     },
-    "ID": 15030,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "玩家不在战斗中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15030"
-    }
+    },
+    "Module": "teamservice"
   },
   "15031": {
+    "ID": 15031,
     "AnnotationLocMeta": {
       "InTextLiteral": "邀请被邀请加入队伍被",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15031"
     },
-    "ID": 15031,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "禁止邀请组队",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15031"
-    }
+    },
+    "Module": "teamservice"
   },
   "15032": {
+    "ID": 15032,
     "AnnotationLocMeta": {
       "InTextLiteral": "进入队伍被",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15032"
     },
-    "ID": 15032,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "禁止加入队伍",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15032"
-    }
+    },
+    "Module": "teamservice"
   },
   "15033": {
+    "ID": 15033,
     "AnnotationLocMeta": {
       "InTextLiteral": "自己不能多人组队",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15033"
     },
-    "ID": 15033,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "自己不能多人组队",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15033"
-    }
+    },
+    "Module": "teamservice"
   },
   "15034": {
+    "ID": 15034,
     "AnnotationLocMeta": {
       "InTextLiteral": "对方不能多人组队",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15034"
     },
-    "ID": 15034,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "对方不能多人组队",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15034"
-    }
+    },
+    "Module": "teamservice"
   },
   "15035": {
+    "ID": 15035,
     "AnnotationLocMeta": {
       "InTextLiteral": "爬塔模式好友未解锁该难度",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15035"
     },
-    "ID": 15035,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "好友暂未解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15035"
-    }
+    },
+    "Module": "teamservice"
   },
   "15036": {
+    "ID": 15036,
     "AnnotationLocMeta": {
       "InTextLiteral": "爬塔模式队友未解锁该难度",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15036"
     },
-    "ID": 15036,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "队友暂未解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15036"
-    }
+    },
+    "Module": "teamservice"
   },
   "15037": {
+    "ID": 15037,
     "AnnotationLocMeta": {
       "InTextLiteral": "爬塔模式要加入的队伍难度太高",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15037"
     },
-    "ID": 15037,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "暂未解锁，无法加入",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15037"
-    }
+    },
+    "Module": "teamservice"
   },
   "15038": {
+    "ID": 15038,
     "AnnotationLocMeta": {
       "InTextLiteral": "爬塔模式不能创建该难度的队伍",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15038"
     },
-    "ID": 15038,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "无法创建该层数的队伍",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15038"
-    }
+    },
+    "Module": "teamservice"
   },
   "15039": {
+    "ID": 15039,
     "AnnotationLocMeta": {
       "InTextLiteral": "爬塔模式不合法",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15039"
     },
-    "ID": 15039,
-    "Module": "teamservice",
     "TipsLocMeta": {
-      "InTextLiteral": "故障清单不可用",
+      "InTextLiteral": "自身或队员的故障清单积分选择不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15039"
-    }
+    },
+    "Module": "teamservice"
   },
   "15040": {
+    "ID": 15040,
     "AnnotationLocMeta": {
       "InTextLiteral": "爬塔模式当前模式不是爬塔模式不能设置",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15040"
     },
-    "ID": 15040,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "当前模式不是爬塔，无法设置故障清单",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15040"
-    }
+    },
+    "Module": "teamservice"
   },
   "15041": {
+    "ID": 15041,
     "AnnotationLocMeta": {
       "InTextLiteral": "爬塔模式异象与其他队员英雄重复",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15041"
     },
-    "ID": 15041,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "与其他队员使用角色重复",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15041"
-    }
+    },
+    "Module": "teamservice"
   },
   "15042": {
+    "ID": 15042,
     "AnnotationLocMeta": {
       "InTextLiteral": "爬塔模式异象不支持的异象",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15042"
     },
-    "ID": 15042,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "不支持的异象",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15042"
-    }
+    },
+    "Module": "teamservice"
   },
   "15043": {
+    "ID": 15043,
     "AnnotationLocMeta": {
       "InTextLiteral": "招募我的队伍已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15043"
     },
-    "ID": 15043,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "我的队伍已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15043"
-    }
+    },
+    "Module": "teamservice"
   },
   "15044": {
+    "ID": 15044,
     "AnnotationLocMeta": {
       "InTextLiteral": "招募玩家不在申请列表中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15044"
     },
-    "ID": 15044,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "玩家已不再申请列表中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15044"
-    }
+    },
+    "Module": "teamservice"
   },
   "15045": {
+    "ID": 15045,
     "AnnotationLocMeta": {
       "InTextLiteral": "招募已经申请过该队伍",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15045"
     },
-    "ID": 15045,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "已申请过该队伍",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15045"
-    }
+    },
+    "Module": "teamservice"
   },
   "15046": {
+    "ID": 15046,
     "AnnotationLocMeta": {
       "InTextLiteral": "招募该队伍已经停止招募",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15046"
     },
-    "ID": 15046,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "该队伍已停止招募",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15046"
-    }
+    },
+    "Module": "teamservice"
   },
   "15047": {
+    "ID": 15047,
     "AnnotationLocMeta": {
       "InTextLiteral": "招募该队伍申请列表已经满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15047"
     },
-    "ID": 15047,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "该队伍的招募申请列表已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15047"
-    }
+    },
+    "Module": "teamservice"
   },
   "15048": {
+    "ID": 15048,
     "AnnotationLocMeta": {
       "InTextLiteral": "招募自己队伍正在招募中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15048"
     },
-    "ID": 15048,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "我的队伍正在招募中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15048"
-    }
+    },
+    "Module": "teamservice"
   },
   "15049": {
+    "ID": 15049,
     "AnnotationLocMeta": {
       "InTextLiteral": "招募对方队伍申请列表已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15049"
     },
-    "ID": 15049,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "对方队伍申请列表已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15049"
-    }
+    },
+    "Module": "teamservice"
   },
   "15050": {
+    "ID": 15050,
     "AnnotationLocMeta": {
       "InTextLiteral": "招募申请招募",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15050"
     },
-    "ID": 15050,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "请勿频繁申请",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15050"
-    }
+    },
+    "Module": "teamservice"
   },
   "15051": {
+    "ID": 15051,
     "AnnotationLocMeta": {
       "InTextLiteral": "无法切换单人模式",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15051"
     },
-    "ID": 15051,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "无法切换至教学模式",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15051"
-    }
+    },
+    "Module": "teamservice"
   },
   "15052": {
+    "ID": 15052,
     "AnnotationLocMeta": {
       "InTextLiteral": "对方队伍是单人模式",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15052"
     },
-    "ID": 15052,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "对方处于教学模式，无法组队",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15052"
-    }
+    },
+    "Module": "teamservice"
   },
   "15053": {
+    "ID": 15053,
     "AnnotationLocMeta": {
       "InTextLiteral": "我方队伍是单人模式",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15053"
     },
-    "ID": 15053,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "当前处于教学模式，无法组队",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15053"
-    }
+    },
+    "Module": "teamservice"
   },
   "15054": {
+    "ID": 15054,
     "AnnotationLocMeta": {
       "InTextLiteral": "单人模式不能匹配",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15054"
     },
-    "ID": 15054,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "教学模式无法匹配队友",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15054"
-    }
+    },
+    "Module": "teamservice"
   },
   "15055": {
+    "ID": 15055,
     "AnnotationLocMeta": {
       "InTextLiteral": "单人模式不能招募",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15055"
     },
-    "ID": 15055,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "教学模式无法招募队友",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15055"
-    }
+    },
+    "Module": "teamservice"
   },
   "15056": {
+    "ID": 15056,
     "AnnotationLocMeta": {
       "InTextLiteral": "对方玩家不能加入队伍",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15056"
     },
-    "ID": 15056,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "对方玩家不能加入队伍",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15056"
-    }
+    },
+    "Module": "teamservice"
   },
   "15057": {
+    "ID": 15057,
     "AnnotationLocMeta": {
       "InTextLiteral": "当前玩家不能加入队伍",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15057"
     },
-    "ID": 15057,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "当前玩家不能加入队伍",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15057"
-    }
+    },
+    "Module": "teamservice"
   },
   "15058": {
+    "ID": 15058,
     "AnnotationLocMeta": {
       "InTextLiteral": "多人队伍不可以取消游戏",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15058"
     },
-    "ID": 15058,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "多人队伍不可以取消游戏",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15058"
-    }
+    },
+    "Module": "teamservice"
   },
   "15059": {
+    "ID": 15059,
     "AnnotationLocMeta": {
       "InTextLiteral": "不能取消游戏队伍状态不是选择英雄中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15059"
     },
-    "ID": 15059,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "不能取消游戏队伍状态不是选择英雄中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15059"
-    }
+    },
+    "Module": "teamservice"
   },
   "15060": {
+    "ID": 15060,
     "AnnotationLocMeta": {
       "InTextLiteral": "玩家已经通关了新手",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15060"
     },
-    "ID": 15060,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "新手教学模式已关闭",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15060"
-    }
+    },
+    "Module": "teamservice"
   },
   "15061": {
+    "ID": 15061,
     "AnnotationLocMeta": {
       "InTextLiteral": "只有模式才可以快速开始游戏",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15061"
     },
-    "ID": 15061,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "只有教学模式可以快速开始游戏",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15061"
-    }
+    },
+    "Module": "teamservice"
   },
   "15062": {
+    "ID": 15062,
     "AnnotationLocMeta": {
       "InTextLiteral": "有队员员没有解锁该模式",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15062"
     },
-    "ID": 15062,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "有队伍成员未解锁该模式",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15062"
-    }
+    },
+    "Module": "teamservice"
   },
   "15063": {
+    "ID": 15063,
     "AnnotationLocMeta": {
       "InTextLiteral": "有队员没有解锁该世界",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15063"
     },
-    "ID": 15063,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "有队伍成员未解锁该世界",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15063"
-    }
+    },
+    "Module": "teamservice"
   },
   "15064": {
+    "ID": 15064,
     "AnnotationLocMeta": {
       "InTextLiteral": "有队员没有解锁该难度",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15064"
     },
-    "ID": 15064,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "有队伍成员未解锁该难度",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15064"
-    }
+    },
+    "Module": "teamservice"
   },
   "15065": {
+    "ID": 15065,
     "AnnotationLocMeta": {
       "InTextLiteral": "我方队伍状态在空闲中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15065"
     },
-    "ID": 15065,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "我方队伍在空闲状态中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15065"
-    }
+    },
+    "Module": "teamservice"
   },
   "15066": {
+    "ID": 15066,
     "AnnotationLocMeta": {
       "InTextLiteral": "我方队伍在匹配中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15066"
     },
-    "ID": 15066,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "操作失败，我方队伍已在匹配中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15066"
-    }
+    },
+    "Module": "teamservice"
   },
   "12001": {
+    "ID": 12001,
     "AnnotationLocMeta": {
       "InTextLiteral": "找不到英雄",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12001"
     },
-    "ID": 12001,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "找不到英雄",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12001"
-    }
+    },
+    "Module": "heroservice"
   },
   "12002": {
+    "ID": 12002,
     "AnnotationLocMeta": {
       "InTextLiteral": "英雄没有解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12002"
     },
-    "ID": 12002,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "英雄没有解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12002"
-    }
+    },
+    "Module": "heroservice"
   },
   "12003": {
+    "ID": 12003,
     "AnnotationLocMeta": {
       "InTextLiteral": "英雄已经解锁过了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12003"
     },
-    "ID": 12003,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "英雄已经解锁过了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12003"
-    }
+    },
+    "Module": "heroservice"
   },
   "12004": {
+    "ID": 12004,
     "AnnotationLocMeta": {
       "InTextLiteral": "找不到皮肤",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12004"
     },
-    "ID": 12004,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "找不到皮肤",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12004"
-    }
+    },
+    "Module": "heroservice"
   },
   "12005": {
+    "ID": 12005,
     "AnnotationLocMeta": {
       "InTextLiteral": "英雄不能装备该皮肤",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12005"
     },
-    "ID": 12005,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "英雄不能装备该皮肤",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12005"
-    }
+    },
+    "Module": "heroservice"
   },
   "12006": {
+    "ID": 12006,
     "AnnotationLocMeta": {
       "InTextLiteral": "找不到武器或者配件",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12006"
     },
-    "ID": 12006,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "找不到武器或者配件",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12006"
-    }
+    },
+    "Module": "heroservice"
   },
   "12007": {
+    "ID": 12007,
     "AnnotationLocMeta": {
       "InTextLiteral": "背包满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12007"
     },
-    "ID": 12007,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "背包满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12007"
-    }
+    },
+    "Module": "heroservice"
   },
   "12008": {
+    "ID": 12008,
     "AnnotationLocMeta": {
       "InTextLiteral": "资源不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12008"
     },
-    "ID": 12008,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "资源不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12008"
-    }
+    },
+    "Module": "heroservice"
   },
   "12009": {
+    "ID": 12009,
     "AnnotationLocMeta": {
       "InTextLiteral": "武器不能装备该皮肤",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12009"
     },
-    "ID": 12009,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "武器不能装备该皮肤",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12009"
-    }
+    },
+    "Module": "heroservice"
   },
   "12010": {
+    "ID": 12010,
     "AnnotationLocMeta": {
       "InTextLiteral": "传家宝需要先激活",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12010"
     },
-    "ID": 12010,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "传家宝需要先激活",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12010"
-    }
+    },
+    "Module": "heroservice"
   },
   "12011": {
+    "ID": 12011,
     "AnnotationLocMeta": {
       "InTextLiteral": "传家宝升级到了最高级",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12011"
     },
-    "ID": 12011,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "传家宝升级到了最高级",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12011"
-    }
+    },
+    "Module": "heroservice"
   },
   "12012": {
+    "ID": 12012,
     "AnnotationLocMeta": {
       "InTextLiteral": "外观未解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12012"
     },
-    "ID": 12012,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "外观未解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12012"
-    }
+    },
+    "Module": "heroservice"
   },
   "12013": {
+    "ID": 12013,
     "AnnotationLocMeta": {
       "InTextLiteral": "外观已经解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12013"
     },
-    "ID": 12013,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "外观已经解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12013"
-    }
+    },
+    "Module": "heroservice"
   },
   "12014": {
+    "ID": 12014,
     "AnnotationLocMeta": {
       "InTextLiteral": "英雄不能装备该外观",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12014"
     },
-    "ID": 12014,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "英雄不能装备该外观",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12014"
-    }
+    },
+    "Module": "heroservice"
   },
   "12015": {
+    "ID": 12015,
     "AnnotationLocMeta": {
       "InTextLiteral": "轮盘未解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12015"
     },
-    "ID": 12015,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "轮盘未解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12015"
-    }
+    },
+    "Module": "heroservice"
   },
   "12016": {
+    "ID": 12016,
     "AnnotationLocMeta": {
       "InTextLiteral": "轮盘已经解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12016"
     },
-    "ID": 12016,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "轮盘已经解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12016"
-    }
+    },
+    "Module": "heroservice"
   },
   "12017": {
+    "ID": 12017,
     "AnnotationLocMeta": {
       "InTextLiteral": "英雄不能装备该轮盘",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12017"
     },
-    "ID": 12017,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "英雄不能装备该轮盘",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12017"
-    }
+    },
+    "Module": "heroservice"
   },
   "12018": {
+    "ID": 12018,
     "AnnotationLocMeta": {
       "InTextLiteral": "天赋已经升级到满级了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12018"
     },
-    "ID": 12018,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "天赋已经升级到满级了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12018"
-    }
+    },
+    "Module": "heroservice"
   },
   "12019": {
+    "ID": 12019,
     "AnnotationLocMeta": {
       "InTextLiteral": "通用天赋已经升级过了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12019"
     },
-    "ID": 12019,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "通用天赋已经升级过了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12019"
-    }
+    },
+    "Module": "heroservice"
   },
   "12020": {
+    "ID": 12020,
     "AnnotationLocMeta": {
       "InTextLiteral": "该装备位没有装备",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12020"
     },
-    "ID": 12020,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "该装备位没有装备",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12020"
-    }
+    },
+    "Module": "heroservice"
   },
   "12021": {
+    "ID": 12021,
     "AnnotationLocMeta": {
       "InTextLiteral": "该装备位已经有相同的模组了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12021"
     },
-    "ID": 12021,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "该装备位已经有相同的模组了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12021"
-    }
+    },
+    "Module": "heroservice"
   },
   "11000": {
+    "ID": 11000,
     "AnnotationLocMeta": {
       "InTextLiteral": "未知错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_11000"
     },
-    "ID": 11000,
-    "Module": "common",
     "TipsLocMeta": {
       "InTextLiteral": "遇到未知错误，请稍后重试",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_11000"
-    }
+    },
+    "Module": "common"
   },
   "11001": {
+    "ID": 11001,
     "AnnotationLocMeta": {
       "InTextLiteral": "排行榜不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_11001"
     },
-    "ID": 11001,
-    "Module": "rankservice",
     "TipsLocMeta": {
       "InTextLiteral": "排行榜不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_11001"
-    }
+    },
+    "Module": "rankservice"
   },
   "12024": {
+    "ID": 12024,
     "AnnotationLocMeta": {
       "InTextLiteral": "赛季槽位没有开放",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12024"
     },
-    "ID": 12024,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "赛季槽位没有开放",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12024"
-    }
+    },
+    "Module": "heroservice"
   },
   "12025": {
+    "ID": 12025,
     "AnnotationLocMeta": {
       "InTextLiteral": "找不到模组",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12025"
     },
-    "ID": 12025,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "找不到模组",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12025"
-    }
+    },
+    "Module": "heroservice"
   },
   "12026": {
+    "ID": 12026,
     "AnnotationLocMeta": {
       "InTextLiteral": "不能装备模组到同一位置",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12026"
     },
-    "ID": 12026,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "不能装备模组到同一位置",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12026"
-    }
+    },
+    "Module": "heroservice"
   },
   "12027": {
+    "ID": 12027,
     "AnnotationLocMeta": {
       "InTextLiteral": "对应槽位没有模组",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12027"
     },
-    "ID": 12027,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "对应槽位没有模组",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12027"
-    }
+    },
+    "Module": "heroservice"
   },
   "12028": {
+    "ID": 12028,
     "AnnotationLocMeta": {
       "InTextLiteral": "槽位不对应",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12028"
     },
-    "ID": 12028,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "槽位不对应",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12028"
-    }
+    },
+    "Module": "heroservice"
   },
   "12029": {
+    "ID": 12029,
     "AnnotationLocMeta": {
       "InTextLiteral": "模组已装备",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12029"
     },
-    "ID": 12029,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组已装备",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12029"
-    }
+    },
+    "Module": "heroservice"
   },
   "12030": {
+    "ID": 12030,
     "AnnotationLocMeta": {
       "InTextLiteral": "模组升级到满级",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12030"
     },
-    "ID": 12030,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组升级到满级",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12030"
-    }
+    },
+    "Module": "heroservice"
   },
   "12031": {
+    "ID": 12031,
     "AnnotationLocMeta": {
       "InTextLiteral": "模组升级报错",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12031"
     },
-    "ID": 12031,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组升级报错",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12031"
-    }
+    },
+    "Module": "heroservice"
   },
   "12032": {
+    "ID": 12032,
     "AnnotationLocMeta": {
       "InTextLiteral": "错误的模组状态",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12032"
     },
-    "ID": 12032,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "错误的模组状态",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12032"
-    }
+    },
+    "Module": "heroservice"
   },
   "12033": {
+    "ID": 12033,
     "AnnotationLocMeta": {
       "InTextLiteral": "模组被锁不能被吃",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12033"
     },
-    "ID": 12033,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组处于锁定状态",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12033"
-    }
+    },
+    "Module": "heroservice"
   },
   "12034": {
+    "ID": 12034,
     "AnnotationLocMeta": {
       "InTextLiteral": "模组被装备，不能被吃",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12034"
     },
-    "ID": 12034,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组处于锁定状态",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12034"
-    }
+    },
+    "Module": "heroservice"
   },
   "12035": {
+    "ID": 12035,
     "AnnotationLocMeta": {
       "InTextLiteral": "重复领取熟练度奖励",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12035"
     },
-    "ID": 12035,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "重复领取熟练度奖励",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12035"
-    }
+    },
+    "Module": "heroservice"
   },
   "12036": {
+    "ID": 12036,
     "AnnotationLocMeta": {
       "InTextLiteral": "熟练度等级错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12036"
     },
-    "ID": 12036,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "熟练度等级错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12036"
-    }
+    },
+    "Module": "heroservice"
   },
   "12037": {
+    "ID": 12037,
     "AnnotationLocMeta": {
       "InTextLiteral": "升级模组不能吃掉自己",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12037"
     },
-    "ID": 12037,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "升级模组不能吃掉自己",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12037"
-    }
+    },
+    "Module": "heroservice"
   },
   "12038": {
+    "ID": 12038,
     "AnnotationLocMeta": {
       "InTextLiteral": "模组不能装备到该英雄身上",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12038"
     },
-    "ID": 12038,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组不能装备至该角色",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12038"
-    }
+    },
+    "Module": "heroservice"
   },
   "12039": {
+    "ID": 12039,
     "AnnotationLocMeta": {
       "InTextLiteral": "模组升级材料不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12039"
     },
-    "ID": 12039,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组升级材料不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12039"
-    }
+    },
+    "Module": "heroservice"
   },
   "12040": {
+    "ID": 12040,
     "AnnotationLocMeta": {
       "InTextLiteral": "模组升级材料不能升级该模组",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12040"
     },
-    "ID": 12040,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组升级材料不能给该模组升级",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12040"
-    }
+    },
+    "Module": "heroservice"
   },
   "12041": {
+    "ID": 12041,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图背包满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12041"
     },
-    "ID": 12041,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组背包已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12041"
-    }
+    },
+    "Module": "heroservice"
   },
   "12042": {
+    "ID": 12042,
     "AnnotationLocMeta": {
       "InTextLiteral": "找不到拼图",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12042"
     },
-    "ID": 12042,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "找不到该模组",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12042"
-    }
+    },
+    "Module": "heroservice"
   },
   "12043": {
+    "ID": 12043,
     "AnnotationLocMeta": {
       "InTextLiteral": "错误的拼图状态",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12043"
     },
-    "ID": 12043,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "错误的模组状态",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12043"
-    }
+    },
+    "Module": "heroservice"
   },
   "12044": {
+    "ID": 12044,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图升级到满级",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12044"
     },
-    "ID": 12044,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组升至满级",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12044"
-    }
+    },
+    "Module": "heroservice"
   },
   "10001": {
+    "ID": 10001,
     "AnnotationLocMeta": {
       "InTextLiteral": "无效",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_10001"
     },
-    "ID": 10001,
-    "Module": "common",
     "TipsLocMeta": {
       "InTextLiteral": "无效",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_10001"
-    }
+    },
+    "Module": "common"
   },
   "10002": {
+    "ID": 10002,
     "AnnotationLocMeta": {
       "InTextLiteral": "找不到",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_10002"
     },
-    "ID": 10002,
-    "Module": "common",
     "TipsLocMeta": {
       "InTextLiteral": "找不到",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_10002"
-    }
+    },
+    "Module": "common"
   },
   "10003": {
+    "ID": 10003,
     "AnnotationLocMeta": {
       "InTextLiteral": "无效的",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_10003"
     },
-    "ID": 10003,
-    "Module": "common",
     "TipsLocMeta": {
       "InTextLiteral": "无效的",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_10003"
-    }
+    },
+    "Module": "common"
   },
   "10004": {
+    "ID": 10004,
     "AnnotationLocMeta": {
       "InTextLiteral": "无效参数",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_10004"
     },
-    "ID": 10004,
-    "Module": "common",
     "TipsLocMeta": {
       "InTextLiteral": "无效参数",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_10004"
-    }
+    },
+    "Module": "common"
   },
   "10005": {
+    "ID": 10005,
     "AnnotationLocMeta": {
       "InTextLiteral": "没有权限",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_10005"
     },
-    "ID": 10005,
-    "Module": "common",
     "TipsLocMeta": {
       "InTextLiteral": "没有权限",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_10005"
-    }
+    },
+    "Module": "common"
   },
   "10006": {
+    "ID": 10006,
     "AnnotationLocMeta": {
       "InTextLiteral": "保存到数据库失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_10006"
     },
-    "ID": 10006,
-    "Module": "common",
     "TipsLocMeta": {
       "InTextLiteral": "保存到数据库失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_10006"
-    }
+    },
+    "Module": "common"
   },
   "10007": {
+    "ID": 10007,
     "AnnotationLocMeta": {
       "InTextLiteral": "查询数据库失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_10007"
     },
-    "ID": 10007,
-    "Module": "common",
     "TipsLocMeta": {
       "InTextLiteral": "查询数据库失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_10007"
-    }
+    },
+    "Module": "common"
   },
   "10008": {
+    "ID": 10008,
     "AnnotationLocMeta": {
       "InTextLiteral": "赛季无效",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_10008"
     },
-    "ID": 10008,
-    "Module": "common",
     "TipsLocMeta": {
       "InTextLiteral": "赛季无效",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_10008"
-    }
+    },
+    "Module": "common"
   },
   "10009": {
+    "ID": 10009,
     "AnnotationLocMeta": {
       "InTextLiteral": "禁止操作",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_10009"
     },
-    "ID": 10009,
-    "Module": "common",
     "TipsLocMeta": {
       "InTextLiteral": "禁止操作",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_10009"
-    }
+    },
+    "Module": "common"
   },
   "10010": {
+    "ID": 10010,
     "AnnotationLocMeta": {
       "InTextLiteral": "频率限制",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_10010"
     },
-    "ID": 10010,
-    "Module": "common",
     "TipsLocMeta": {
       "InTextLiteral": "服务器繁忙，请稍后再试",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_10010"
-    }
+    },
+    "Module": "common"
   },
   "10011": {
+    "ID": 10011,
     "AnnotationLocMeta": {
       "InTextLiteral": "敏感文本",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_10011"
     },
-    "ID": 10011,
-    "Module": "common",
     "TipsLocMeta": {
       "InTextLiteral": "存在不可用内容，请修改后再试",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_10011"
-    }
+    },
+    "Module": "common"
   },
   "10012": {
+    "ID": 10012,
     "AnnotationLocMeta": {
       "InTextLiteral": "系统锁定",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_10012"
     },
-    "ID": 10012,
-    "Module": "common",
     "TipsLocMeta": {
       "InTextLiteral": "系统暂未解锁，请解锁后再来",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_10012"
-    }
+    },
+    "Module": "common"
   },
   "12057": {
+    "ID": 12057,
     "AnnotationLocMeta": {
       "InTextLiteral": "重置拼图道具不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12057"
     },
-    "ID": 12057,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "重置模组道具不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12057"
-    }
+    },
+    "Module": "heroservice"
   },
   "12058": {
+    "ID": 12058,
     "AnnotationLocMeta": {
       "InTextLiteral": "找不到宝石",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12058"
     },
-    "ID": 12058,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "找不到核芯",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12058"
-    }
+    },
+    "Module": "heroservice"
   },
   "12059": {
+    "ID": 12059,
     "AnnotationLocMeta": {
       "InTextLiteral": "宝石背包满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12059"
     },
-    "ID": 12059,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "核芯已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12059"
-    }
+    },
+    "Module": "heroservice"
   },
   "12060": {
+    "ID": 12060,
     "AnnotationLocMeta": {
       "InTextLiteral": "宝石升级到满级",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12060"
     },
-    "ID": 12060,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "核芯已升至满级",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12060"
-    }
+    },
+    "Module": "heroservice"
   },
   "12061": {
+    "ID": 12061,
     "AnnotationLocMeta": {
       "InTextLiteral": "宝石槽位不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12061"
     },
-    "ID": 12061,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "核芯槽位不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12061"
-    }
+    },
+    "Module": "heroservice"
   },
   "12062": {
+    "ID": 12062,
     "AnnotationLocMeta": {
       "InTextLiteral": "宝石槽位为空",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12062"
     },
-    "ID": 12062,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "核芯槽位为空",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12062"
-    }
+    },
+    "Module": "heroservice"
   },
   "12063": {
+    "ID": 12063,
     "AnnotationLocMeta": {
       "InTextLiteral": "宝石已经装备",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12063"
     },
-    "ID": 12063,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "核芯已经装备",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12063"
-    }
+    },
+    "Module": "heroservice"
   },
   "12064": {
+    "ID": 12064,
     "AnnotationLocMeta": {
       "InTextLiteral": "宝石不在拼图上",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12064"
     },
-    "ID": 12064,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "核芯不在模组上",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12064"
-    }
+    },
+    "Module": "heroservice"
   },
   "12065": {
+    "ID": 12065,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图洗练资源不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12065"
     },
-    "ID": 12065,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组洗练资源不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12065"
-    }
+    },
+    "Module": "heroservice"
   },
   "12066": {
+    "ID": 12066,
     "AnnotationLocMeta": {
       "InTextLiteral": "不能重复购买该皮肤",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12066"
     },
-    "ID": 12066,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "不能重复购买该皮肤",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12066"
-    }
+    },
+    "Module": "heroservice"
   },
   "12067": {
+    "ID": 12067,
     "AnnotationLocMeta": {
       "InTextLiteral": "皮肤兑换资源不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12067"
     },
-    "ID": 12067,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "皮肤兑换资源不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12067"
-    }
+    },
+    "Module": "heroservice"
   },
   "12068": {
+    "ID": 12068,
     "AnnotationLocMeta": {
       "InTextLiteral": "皮肤所属英雄没有解锁，无法购买",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12068"
     },
-    "ID": 12068,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "皮肤所属英雄没有解锁，无法购买",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12068"
-    }
+    },
+    "Module": "heroservice"
   },
   "12069": {
+    "ID": 12069,
     "AnnotationLocMeta": {
       "InTextLiteral": "皮肤原皮没有购买，无法购买",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12069"
     },
-    "ID": 12069,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "皮肤原皮没有购买，无法购买",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12069"
-    }
+    },
+    "Module": "heroservice"
   },
   "12070": {
+    "ID": 12070,
     "AnnotationLocMeta": {
       "InTextLiteral": "不是套装皮肤，无法设置效果状态",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12070"
     },
-    "ID": 12070,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "不是套装皮肤，无法设置效果状态",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12070"
-    }
+    },
+    "Module": "heroservice"
   },
   "12071": {
+    "ID": 12071,
     "AnnotationLocMeta": {
       "InTextLiteral": "皮肤套装没有全部购买，无法设置效果状态",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12071"
     },
-    "ID": 12071,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "皮肤套装没有全部购买，无法设置效果状态",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12071"
-    }
+    },
+    "Module": "heroservice"
   },
   "12072": {
+    "ID": 12072,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图形状洗练资源不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12072"
     },
-    "ID": 12072,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组形状洗练资源不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12072"
-    }
+    },
+    "Module": "heroservice"
   },
   "12073": {
+    "ID": 12073,
     "AnnotationLocMeta": {
       "InTextLiteral": "宝石重构资源不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12073"
     },
-    "ID": 12073,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "核芯重构资源不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12073"
-    }
+    },
+    "Module": "heroservice"
   },
   "12074": {
+    "ID": 12074,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图副属性洗练资源不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12074"
     },
-    "ID": 12074,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组副属性洗练资源不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12074"
-    }
+    },
+    "Module": "heroservice"
   },
   "12075": {
+    "ID": 12075,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图副属性洗练槽位类型错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12075"
     },
-    "ID": 12075,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "该模组没有副属性，重置失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12075"
-    }
+    },
+    "Module": "heroservice"
   },
   "12076": {
+    "ID": 12076,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图已经重构过了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12076"
     },
-    "ID": 12076,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组已经重构过了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12076"
-    }
+    },
+    "Module": "heroservice"
   },
   "12077": {
+    "ID": 12077,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图没有词条不能洗练词条",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12077"
     },
-    "ID": 12077,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组没有词条不能洗练词条",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12077"
-    }
+    },
+    "Module": "heroservice"
   },
   "12078": {
+    "ID": 12078,
     "AnnotationLocMeta": {
       "InTextLiteral": "宝石已经重构过了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12078"
     },
-    "ID": 12078,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "核芯已经重构过了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12078"
-    }
+    },
+    "Module": "heroservice"
   },
   "12079": {
+    "ID": 12079,
     "AnnotationLocMeta": {
       "InTextLiteral": "洗练拼图词条失败，池子是空的",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12079"
     },
-    "ID": 12079,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "洗练模组词条失败，池子是空的",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12079"
-    }
+    },
+    "Module": "heroservice"
   },
   "12080": {
+    "ID": 12080,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图已经装备了，不能被洗练",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12080"
     },
-    "ID": 12080,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组已经装备了，不能被洗练",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12080"
-    }
+    },
+    "Module": "heroservice"
   },
   "12081": {
+    "ID": 12081,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图副属性洗练槽位位置错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12081"
     },
-    "ID": 12081,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "该模组没有副属性，重置失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12081"
-    }
+    },
+    "Module": "heroservice"
   },
   "12082": {
+    "ID": 12082,
     "AnnotationLocMeta": {
       "InTextLiteral": "已经有该武器了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12082"
     },
-    "ID": 12082,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "已经有该武器了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12082"
-    }
+    },
+    "Module": "heroservice"
   },
   "12083": {
+    "ID": 12083,
     "AnnotationLocMeta": {
       "InTextLiteral": "已经有该武器皮肤了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12083"
     },
-    "ID": 12083,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "已经有该武器皮肤了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12083"
-    }
+    },
+    "Module": "heroservice"
   },
   "12084": {
+    "ID": 12084,
     "AnnotationLocMeta": {
       "InTextLiteral": "已经选择过英雄了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12084"
     },
-    "ID": 12084,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "已经选择过英雄了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12084"
-    }
+    },
+    "Module": "heroservice"
   },
   "12085": {
+    "ID": 12085,
     "AnnotationLocMeta": {
       "InTextLiteral": "不能选择该英雄",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12085"
     },
-    "ID": 12085,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "不能选择该英雄",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12085"
-    }
+    },
+    "Module": "heroservice"
   },
   "12086": {
+    "ID": 12086,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图装备了宝石不能被分解",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12086"
     },
-    "ID": 12086,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组装备了核芯，无法被分解",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12086"
-    }
+    },
+    "Module": "heroservice"
   },
   "12087": {
+    "ID": 12087,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图被装备了，不能被分解",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12087"
     },
-    "ID": 12087,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组已被装备，无法被分解",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12087"
-    }
+    },
+    "Module": "heroservice"
   },
   "12088": {
+    "ID": 12088,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图没有副属性，不能重构",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12088"
     },
-    "ID": 12088,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12088"
-    }
+    },
+    "Module": "heroservice"
   },
   "12089": {
+    "ID": 12089,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图词条组是红色词条组，不能洗练",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12089"
     },
-    "ID": 12089,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12089"
-    }
+    },
+    "Module": "heroservice"
+  },
+  "12093": {
+    "ID": 12093,
+    "AnnotationLocMeta": {
+      "InTextLiteral": "升级宝石传入的等级错误",
+      "InNamespace": "lobby_TBErrorCode",
+      "InKey": "Annotation_12093"
+    },
+    "TipsLocMeta": {
+      "InTextLiteral": "请勿频繁操作",
+      "InNamespace": "lobby_TBErrorCode",
+      "InKey": "Tips_12093"
+    },
+    "Module": "heroservice"
   },
   "31001": {
+    "ID": 31001,
     "AnnotationLocMeta": {
       "InTextLiteral": "找不到定时器",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_31001"
     },
-    "ID": 31001,
-    "Module": "timerservice",
     "TipsLocMeta": {
       "InTextLiteral": "找不到定时器",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_31001"
-    }
+    },
+    "Module": "timerservice"
   },
   "30001": {
+    "ID": 30001,
     "AnnotationLocMeta": {
       "InTextLiteral": "找不到会话",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_30001"
     },
-    "ID": 30001,
-    "Module": "loginservice",
     "TipsLocMeta": {
       "InTextLiteral": "找不到会话",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_30001"
-    }
+    },
+    "Module": "loginservice"
   },
   "30002": {
+    "ID": 30002,
     "AnnotationLocMeta": {
       "InTextLiteral": "登录失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_30002"
     },
-    "ID": 30002,
-    "Module": "loginservice",
     "TipsLocMeta": {
       "InTextLiteral": "登录失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_30002"
-    }
+    },
+    "Module": "loginservice"
   },
   "30003": {
+    "ID": 30003,
     "AnnotationLocMeta": {
       "InTextLiteral": "登录被禁用",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_30003"
     },
-    "ID": 30003,
-    "Module": "loginservice",
     "TipsLocMeta": {
       "InTextLiteral": "登录被禁用",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_30003"
-    }
+    },
+    "Module": "loginservice"
   },
   "30004": {
+    "ID": 30004,
     "AnnotationLocMeta": {
       "InTextLiteral": "用户被封禁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_30004"
     },
-    "ID": 30004,
-    "Module": "loginservice",
     "TipsLocMeta": {
       "InTextLiteral": "用户被封禁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_30004"
-    }
+    },
+    "Module": "loginservice"
   },
   "30005": {
+    "ID": 30005,
     "AnnotationLocMeta": {
       "InTextLiteral": "中控防沉迷",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_30005"
     },
-    "ID": 30005,
-    "Module": "loginservice",
     "TipsLocMeta": {
       "InTextLiteral": "中控防沉迷",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_30005"
-    }
+    },
+    "Module": "loginservice"
   },
   "30006": {
+    "ID": 30006,
     "AnnotationLocMeta": {
       "InTextLiteral": "登录失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_30006"
     },
-    "ID": 30006,
-    "Module": "loginservice",
     "TipsLocMeta": {
       "InTextLiteral": "登录失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_30006"
-    }
+    },
+    "Module": "loginservice"
   },
   "30007": {
+    "ID": 30007,
     "AnnotationLocMeta": {
       "InTextLiteral": "封禁到期时间小于当前时间",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_30007"
     },
-    "ID": 30007,
-    "Module": "loginservice",
     "TipsLocMeta": {
       "InTextLiteral": "封禁到期时间小于当前时间",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_30007"
-    }
+    },
+    "Module": "loginservice"
   },
   "30008": {
+    "ID": 30008,
     "AnnotationLocMeta": {
       "InTextLiteral": "服务关闭",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_30008"
     },
-    "ID": 30008,
-    "Module": "loginservice",
     "TipsLocMeta": {
       "InTextLiteral": "服务器维护中，请稍后重试",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_30008"
-    }
+    },
+    "Module": "loginservice"
   },
   "30009": {
+    "ID": 30009,
     "AnnotationLocMeta": {
       "InTextLiteral": "登录失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_30009"
     },
-    "ID": 30009,
-    "Module": "loginservice",
     "TipsLocMeta": {
       "InTextLiteral": "登录态失效，请重新登录",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_30009"
-    }
+    },
+    "Module": "loginservice"
   },
   "30010": {
+    "ID": 30010,
     "AnnotationLocMeta": {
       "InTextLiteral": "登录禁用",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_30010"
     },
-    "ID": 30010,
-    "Module": "loginservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_30010"
-    }
+    },
+    "Module": "loginservice"
   },
   "30011": {
+    "ID": 30011,
     "AnnotationLocMeta": {
       "InTextLiteral": "登录禁用",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_30011"
     },
-    "ID": 30011,
-    "Module": "loginservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_30011"
-    }
+    },
+    "Module": "loginservice"
   },
   "29001": {
+    "ID": 29001,
     "AnnotationLocMeta": {
       "InTextLiteral": "订单已经发货",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_29001"
     },
-    "ID": 29001,
-    "Module": "payservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_29001"
-    }
+    },
+    "Module": "payservice"
   },
   "29002": {
+    "ID": 29002,
     "AnnotationLocMeta": {
       "InTextLiteral": "国内支付禁用",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_29002"
     },
-    "ID": 29002,
-    "Module": "payservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_29002"
-    }
+    },
+    "Module": "payservice"
   },
   "29003": {
+    "ID": 29003,
     "AnnotationLocMeta": {
       "InTextLiteral": "海外支付禁用",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_29003"
     },
-    "ID": 29003,
-    "Module": "payservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_29003"
-    }
+    },
+    "Module": "payservice"
   },
   "29005": {
+    "ID": 29005,
     "AnnotationLocMeta": {
       "InTextLiteral": "渠道风控限额",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_29005"
     },
-    "ID": 29005,
-    "Module": "payservice",
     "TipsLocMeta": {
       "InTextLiteral": "根据应用健康系统规定，暂时无法向未成年人提供付费服务，感谢您的理解。",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_29005"
-    }
+    },
+    "Module": "payservice"
   },
   "29006": {
+    "ID": 29006,
     "AnnotationLocMeta": {
       "InTextLiteral": "渠道制裁地区",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_29006"
     },
-    "ID": 29006,
-    "Module": "payservice",
     "TipsLocMeta": {
       "InTextLiteral": "根据规定，暂时无法为您所在地区提供服务，感谢您的理解。",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_29006"
-    }
+    },
+    "Module": "payservice"
   },
   "29007": {
+    "ID": 29007,
     "AnnotationLocMeta": {
       "InTextLiteral": "渠道黑产",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_29007"
     },
-    "ID": 29007,
-    "Module": "payservice",
     "TipsLocMeta": {
       "InTextLiteral": "您的交易存在风险，请规范行为，或联系客服投诉。",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_29007"
-    }
+    },
+    "Module": "payservice"
   },
   "29008": {
+    "ID": 29008,
     "AnnotationLocMeta": {
       "InTextLiteral": "渠道币种锁区",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_29008"
     },
-    "ID": 29008,
-    "Module": "payservice",
     "TipsLocMeta": {
       "InTextLiteral": "非本地用户目前无法使用此货币进行交易，感谢您的理解。",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_29008"
-    }
+    },
+    "Module": "payservice"
   },
   "28001": {
+    "ID": 28001,
     "AnnotationLocMeta": {
       "InTextLiteral": "爬塔每日奖励英雄槽位已经解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_28001"
     },
-    "ID": 28001,
-    "Module": "acticityservice",
     "TipsLocMeta": {
       "InTextLiteral": "爬塔每日奖励英雄槽位已经解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_28001"
-    }
+    },
+    "Module": "acticityservice"
   },
   "28002": {
+    "ID": 28002,
     "AnnotationLocMeta": {
       "InTextLiteral": "爬塔每日奖励英雄槽位未解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_28002"
     },
-    "ID": 28002,
-    "Module": "acticityservice",
     "TipsLocMeta": {
       "InTextLiteral": "爬塔每日奖励英雄槽位未解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_28002"
-    }
+    },
+    "Module": "acticityservice"
   },
   "28003": {
+    "ID": 28003,
     "AnnotationLocMeta": {
       "InTextLiteral": "爬塔每日奖励英雄已装备",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_28003"
     },
-    "ID": 28003,
-    "Module": "activityservice",
     "TipsLocMeta": {
       "InTextLiteral": "爬塔每日奖励英雄已装备",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_28003"
-    }
+    },
+    "Module": "activityservice"
   },
   "28004": {
+    "ID": 28004,
     "AnnotationLocMeta": {
       "InTextLiteral": "爬塔每日奖励英雄槽位未装备",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_28004"
     },
-    "ID": 28004,
-    "Module": "activityservice",
     "TipsLocMeta": {
       "InTextLiteral": "爬塔每日奖励英雄槽位未装备",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_28004"
-    }
+    },
+    "Module": "activityservice"
   },
   "28005": {
+    "ID": 28005,
     "AnnotationLocMeta": {
       "InTextLiteral": "活动未开启",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_28005"
     },
-    "ID": 28005,
-    "Module": "activityservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_28005"
-    }
+    },
+    "Module": "activityservice"
   },
   "28006": {
+    "ID": 28006,
     "AnnotationLocMeta": {
       "InTextLiteral": "法则任务活动奖励已经领取",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_28006"
     },
-    "ID": 28006,
-    "Module": "activityservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_28006"
-    }
+    },
+    "Module": "activityservice"
   },
   "28007": {
+    "ID": 28007,
     "AnnotationLocMeta": {
       "InTextLiteral": "法则任务活动奖励不能领取",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_28007"
     },
-    "ID": 28007,
-    "Module": "activityservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_28007"
-    }
+    },
+    "Module": "activityservice"
   },
   "28008": {
+    "ID": 28008,
     "AnnotationLocMeta": {
       "InTextLiteral": "无可领取的全服通关奖励",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_28008"
     },
-    "ID": 28008,
-    "Module": "activityservice",
     "TipsLocMeta": {
       "InTextLiteral": "无可领取的全服通关奖励",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_28008"
-    }
+    },
+    "Module": "activityservice"
   },
   "28009": {
+    "ID": 28009,
     "AnnotationLocMeta": {
       "InTextLiteral": "全服通关奖励已经领取",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_28009"
     },
-    "ID": 28009,
-    "Module": "activityservice",
     "TipsLocMeta": {
       "InTextLiteral": "全服通关奖励已经领取，无法重复领取",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_28009"
-    }
+    },
+    "Module": "activityservice"
   },
   "28010": {
+    "ID": 28010,
     "AnnotationLocMeta": {
       "InTextLiteral": "全服通关奖励未达成",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_28010"
     },
-    "ID": 28010,
-    "Module": "activityservice",
     "TipsLocMeta": {
       "InTextLiteral": "全服通关奖励未达成，领取失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_28010"
-    }
+    },
+    "Module": "activityservice"
   },
   "24028": {
+    "ID": 24028,
     "AnnotationLocMeta": {
       "InTextLiteral": "通行证已结束",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24028"
     },
-    "ID": 24028,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "通行证已结束",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24028"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24027": {
+    "ID": 24027,
     "AnnotationLocMeta": {
       "InTextLiteral": "重复完成新手",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24027"
     },
-    "ID": 24027,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "重复完成教学模式",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24027"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24026": {
+    "ID": 24026,
     "AnnotationLocMeta": {
       "InTextLiteral": "无可领取的通行证奖励",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24026"
     },
-    "ID": 24026,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "暂无可领取的奖励",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24026"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24025": {
+    "ID": 24025,
     "AnnotationLocMeta": {
       "InTextLiteral": "通行证未开启",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24025"
     },
-    "ID": 24025,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "通行证暂未开启",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24025"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24024": {
+    "ID": 24024,
     "AnnotationLocMeta": {
       "InTextLiteral": "典藏通行证已经激活",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24024"
     },
-    "ID": 24024,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "已拥有典藏通行证",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24024"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24023": {
+    "ID": 24023,
     "AnnotationLocMeta": {
       "InTextLiteral": "高级通行证已经激活",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24023"
     },
-    "ID": 24023,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "已拥有高级通行证",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24023"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "12023": {
+    "ID": 12023,
     "AnnotationLocMeta": {
       "InTextLiteral": "槽位没有开放",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12023"
     },
-    "ID": 12023,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "槽位没有开放",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12023"
-    }
+    },
+    "Module": "heroservice"
   },
   "12045": {
+    "ID": 12045,
     "AnnotationLocMeta": {
       "InTextLiteral": "升级拼图不能吃掉自己",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12045"
     },
-    "ID": 12045,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "升级模组不能吞噬自身",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12045"
-    }
+    },
+    "Module": "heroservice"
   },
   "27001": {
+    "ID": 27001,
     "AnnotationLocMeta": {
       "InTextLiteral": "服务初始化出错",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_27001"
     },
-    "ID": 27001,
-    "Module": "diplomatservice",
     "TipsLocMeta": {
       "InTextLiteral": "服务初始化出错",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_27001"
-    }
+    },
+    "Module": "diplomatservice"
   },
   "27002": {
+    "ID": 27002,
     "AnnotationLocMeta": {
       "InTextLiteral": "服务卸载出错",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_27002"
     },
-    "ID": 27002,
-    "Module": "diplomatservice",
     "TipsLocMeta": {
       "InTextLiteral": "服务卸载出错",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_27002"
-    }
+    },
+    "Module": "diplomatservice"
   },
   "27003": {
+    "ID": 27003,
     "AnnotationLocMeta": {
       "InTextLiteral": "上传客户端数据包到错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_27003"
     },
-    "ID": 27003,
-    "Module": "diplomatservice",
     "TipsLocMeta": {
       "InTextLiteral": "上传客户端数据包到错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_27003"
-    }
+    },
+    "Module": "diplomatservice"
   },
   "27004": {
+    "ID": 27004,
     "AnnotationLocMeta": {
       "InTextLiteral": "玩家数据到失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_27004"
     },
-    "ID": 27004,
-    "Module": "diplomatservice",
     "TipsLocMeta": {
       "InTextLiteral": "玩家数据到失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_27004"
-    }
+    },
+    "Module": "diplomatservice"
   },
   "27005": {
+    "ID": 27005,
     "AnnotationLocMeta": {
       "InTextLiteral": "玩家数据到失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_27005"
     },
-    "ID": 27005,
-    "Module": "diplomatservice",
     "TipsLocMeta": {
       "InTextLiteral": "玩家数据到失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_27005"
-    }
+    },
+    "Module": "diplomatservice"
   },
   "27006": {
+    "ID": 27006,
     "AnnotationLocMeta": {
       "InTextLiteral": "玩家心跳数据到失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_27006"
     },
-    "ID": 27006,
-    "Module": "diplomatservice",
     "TipsLocMeta": {
       "InTextLiteral": "玩家心跳数据到失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_27006"
-    }
+    },
+    "Module": "diplomatservice"
   },
   "27007": {
+    "ID": 27007,
     "AnnotationLocMeta": {
       "InTextLiteral": "获取玩家登录信息失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_27007"
     },
-    "ID": 27007,
-    "Module": "diplomatservice",
     "TipsLocMeta": {
       "InTextLiteral": "获取玩家登录信息失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_27007"
-    }
+    },
+    "Module": "diplomatservice"
   },
   "27008": {
+    "ID": 27008,
     "AnnotationLocMeta": {
       "InTextLiteral": "缓冲大小设置错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_27008"
     },
-    "ID": 27008,
-    "Module": "diplomatservice",
     "TipsLocMeta": {
       "InTextLiteral": "缓冲大小设置错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_27008"
-    }
+    },
+    "Module": "diplomatservice"
   },
   "27009": {
+    "ID": 27009,
     "AnnotationLocMeta": {
       "InTextLiteral": "请求取消",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_27009"
     },
-    "ID": 27009,
-    "Module": "diplomatservice",
     "TipsLocMeta": {
       "InTextLiteral": "请求取消",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_27009"
-    }
+    },
+    "Module": "diplomatservice"
   },
   "27010": {
+    "ID": 27010,
     "AnnotationLocMeta": {
       "InTextLiteral": "调用出错",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_27010"
     },
-    "ID": 27010,
-    "Module": "diplomatservice",
     "TipsLocMeta": {
       "InTextLiteral": "调用出错",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_27010"
-    }
+    },
+    "Module": "diplomatservice"
   },
   "27011": {
+    "ID": 27011,
     "AnnotationLocMeta": {
       "InTextLiteral": "敏感词调用失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_27011"
     },
-    "ID": 27011,
-    "Module": "diplomatservice",
     "TipsLocMeta": {
       "InTextLiteral": "敏感词调用失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_27011"
-    }
+    },
+    "Module": "diplomatservice"
   },
   "24029": {
+    "ID": 24029,
     "AnnotationLocMeta": {
       "InTextLiteral": "无效的",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24029"
     },
-    "ID": 24029,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24029"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24030": {
+    "ID": 24030,
     "AnnotationLocMeta": {
       "InTextLiteral": "成长快照备注长度超过限制",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24030"
     },
-    "ID": 24030,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "存档名称超过限制",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24030"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24031": {
+    "ID": 24031,
     "AnnotationLocMeta": {
       "InTextLiteral": "成长快照过期",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24031"
     },
-    "ID": 24031,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "存档已过期",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24031"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24032": {
+    "ID": 24032,
     "AnnotationLocMeta": {
       "InTextLiteral": "高级通行证未激活",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24032"
     },
-    "ID": 24032,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "高级通行证暂未激活",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24032"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "12054": {
+    "ID": 12054,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图绑定的英雄不匹配",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12054"
     },
-    "ID": 12054,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组绑定的角色不匹配",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12054"
-    }
+    },
+    "Module": "heroservice"
   },
   "15084": {
+    "ID": 15084,
     "AnnotationLocMeta": {
       "InTextLiteral": "没有英雄，无法创建队伍",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15084"
     },
-    "ID": 15084,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15084"
-    }
+    },
+    "Module": "teamservice"
   },
   "15085": {
+    "ID": 15085,
     "AnnotationLocMeta": {
       "InTextLiteral": "没有英雄，无法加入队伍",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15085"
     },
-    "ID": 15085,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15085"
-    }
+    },
+    "Module": "teamservice"
   },
   "15068": {
+    "ID": 15068,
     "AnnotationLocMeta": {
       "InTextLiteral": "我方队伍在选择英雄中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15068"
     },
-    "ID": 15068,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "操作失败，我方队伍已在选择英雄阶段",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15068"
-    }
+    },
+    "Module": "teamservice"
   },
   "15067": {
+    "ID": 15067,
     "AnnotationLocMeta": {
       "InTextLiteral": "我方队伍在准备中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15067"
     },
-    "ID": 15067,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "操作失败，我方队伍已在准备阶段",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15067"
-    }
+    },
+    "Module": "teamservice"
   },
   "12056": {
+    "ID": 12056,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图分解拼图数量太多",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12056"
     },
-    "ID": 12056,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "分解模组数量太多",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12056"
-    }
+    },
+    "Module": "heroservice"
   },
   "12055": {
+    "ID": 12055,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图升级资源不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12055"
     },
-    "ID": 12055,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组升级材料不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12055"
-    }
+    },
+    "Module": "heroservice"
   },
   "26001": {
+    "ID": 26001,
     "AnnotationLocMeta": {
       "InTextLiteral": "玩家不能对自身操作",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_26001"
     },
-    "ID": 26001,
-    "Module": "sociaservice",
     "TipsLocMeta": {
       "InTextLiteral": "玩家不能对自身操作",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_26001"
-    }
+    },
+    "Module": "sociaservice"
   },
   "26002": {
+    "ID": 26002,
     "AnnotationLocMeta": {
       "InTextLiteral": "已经是好友了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_26002"
     },
-    "ID": 26002,
-    "Module": "sociaservice",
     "TipsLocMeta": {
       "InTextLiteral": "已经是好友了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_26002"
-    }
+    },
+    "Module": "sociaservice"
   },
   "26003": {
+    "ID": 26003,
     "AnnotationLocMeta": {
       "InTextLiteral": "已经是黑名单中了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_26003"
     },
-    "ID": 26003,
-    "Module": "sociaservice",
     "TipsLocMeta": {
       "InTextLiteral": "已经是黑名单中了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_26003"
-    }
+    },
+    "Module": "sociaservice"
   },
   "26004": {
+    "ID": 26004,
     "AnnotationLocMeta": {
       "InTextLiteral": "已经是申请者了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_26004"
     },
-    "ID": 26004,
-    "Module": "sociaservice",
     "TipsLocMeta": {
       "InTextLiteral": "已经是申请者了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_26004"
-    }
+    },
+    "Module": "sociaservice"
   },
   "26005": {
+    "ID": 26005,
     "AnnotationLocMeta": {
       "InTextLiteral": "不是申请者，无法同意申请请求",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_26005"
     },
-    "ID": 26005,
-    "Module": "sociaservice",
     "TipsLocMeta": {
       "InTextLiteral": "不是申请者，无法同意申请请求",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_26005"
-    }
+    },
+    "Module": "sociaservice"
   },
   "26006": {
+    "ID": 26006,
     "AnnotationLocMeta": {
       "InTextLiteral": "删除失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_26006"
     },
-    "ID": 26006,
-    "Module": "sociaservice",
     "TipsLocMeta": {
       "InTextLiteral": "删除失败",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_26006"
-    }
+    },
+    "Module": "sociaservice"
   },
   "26007": {
+    "ID": 26007,
     "AnnotationLocMeta": {
       "InTextLiteral": "好友已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_26007"
     },
-    "ID": 26007,
-    "Module": "sociaservice",
     "TipsLocMeta": {
       "InTextLiteral": "好友已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_26007"
-    }
+    },
+    "Module": "sociaservice"
   },
   "26008": {
+    "ID": 26008,
     "AnnotationLocMeta": {
       "InTextLiteral": "黑名单已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_26008"
     },
-    "ID": 26008,
-    "Module": "sociaservice",
     "TipsLocMeta": {
       "InTextLiteral": "黑名单已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_26008"
-    }
+    },
+    "Module": "sociaservice"
   },
   "26009": {
+    "ID": 26009,
     "AnnotationLocMeta": {
       "InTextLiteral": "申请者已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_26009"
     },
-    "ID": 26009,
-    "Module": "sociaservice",
     "TipsLocMeta": {
       "InTextLiteral": "申请者已满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_26009"
-    }
+    },
+    "Module": "sociaservice"
   },
   "26010": {
+    "ID": 26010,
     "AnnotationLocMeta": {
       "InTextLiteral": "申请加好友失败，在对方黑名单中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_26010"
     },
-    "ID": 26010,
-    "Module": "sociaservice",
     "TipsLocMeta": {
       "InTextLiteral": "申请加好友失败，在对方黑名单中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_26010"
-    }
+    },
+    "Module": "sociaservice"
   },
   "26011": {
+    "ID": 26011,
     "AnnotationLocMeta": {
       "InTextLiteral": "不是好友，无法设置备注",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_26011"
     },
-    "ID": 26011,
-    "Module": "sociaservice",
     "TipsLocMeta": {
       "InTextLiteral": "不是好友，无法设置备注",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_26011"
-    }
+    },
+    "Module": "sociaservice"
   },
   "26012": {
+    "ID": 26012,
     "AnnotationLocMeta": {
       "InTextLiteral": "禁止修改备注",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_26012"
     },
-    "ID": 26012,
-    "Module": "sociaservice",
     "TipsLocMeta": {
       "InTextLiteral": "禁止修改备注",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_26012"
-    }
+    },
+    "Module": "sociaservice"
   },
   "26013": {
+    "ID": 26013,
     "AnnotationLocMeta": {
       "InTextLiteral": "禁止发送好友请求",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_26013"
     },
-    "ID": 26013,
-    "Module": "sociaservice",
     "TipsLocMeta": {
       "InTextLiteral": "禁止发送好友请求",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_26013"
-    }
+    },
+    "Module": "sociaservice"
   },
   "12046": {
+    "ID": 12046,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图被装备，不能被吃",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12046"
     },
-    "ID": 12046,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组已被装备，无法被吞噬",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12046"
-    }
+    },
+    "Module": "heroservice"
   },
   "12047": {
+    "ID": 12047,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图升级材料不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12047"
     },
-    "ID": 12047,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组升级材料不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12047"
-    }
+    },
+    "Module": "heroservice"
   },
   "12048": {
+    "ID": 12048,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图已经装备到其他英雄身上了",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12048"
     },
-    "ID": 12048,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "该模组已装备至其他角色矩阵中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12048"
-    }
+    },
+    "Module": "heroservice"
   },
   "12049": {
+    "ID": 12049,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图槽位重叠，不能装备",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12049"
     },
-    "ID": 12049,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组槽位重叠，无法镶嵌",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12049"
-    }
+    },
+    "Module": "heroservice"
   },
   "12050": {
+    "ID": 12050,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图槽位超出上限",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12050"
     },
-    "ID": 12050,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组槽位超出上限",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12050"
-    }
+    },
+    "Module": "heroservice"
   },
   "12051": {
+    "ID": 12051,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图世界槽位数量超出上限",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12051"
     },
-    "ID": 12051,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "已超过该世界槽位限定的装备数量",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12051"
-    }
+    },
+    "Module": "heroservice"
   },
   "12052": {
+    "ID": 12052,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图被锁定，不能被吃",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12052"
     },
-    "ID": 12052,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组被锁定，无法被吞噬",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12052"
-    }
+    },
+    "Module": "heroservice"
   },
   "12053": {
+    "ID": 12053,
     "AnnotationLocMeta": {
       "InTextLiteral": "拼图槽位不合法",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12053"
     },
-    "ID": 12053,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组槽位不合法",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12053"
-    }
+    },
+    "Module": "heroservice"
   },
   "24006": {
+    "ID": 24006,
     "AnnotationLocMeta": {
       "InTextLiteral": "战斗遗产过期",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24006"
     },
-    "ID": 24006,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "已超过秒金手指领取时间",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24006"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "25001": {
+    "ID": 25001,
     "AnnotationLocMeta": {
       "InTextLiteral": "任务不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_25001"
     },
-    "ID": 25001,
-    "Module": "taskservice",
     "TipsLocMeta": {
       "InTextLiteral": "任务不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_25001"
-    }
+    },
+    "Module": "taskservice"
   },
   "25002": {
+    "ID": 25002,
     "AnnotationLocMeta": {
       "InTextLiteral": "任务组不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_25002"
     },
-    "ID": 25002,
-    "Module": "taskservice",
     "TipsLocMeta": {
       "InTextLiteral": "任务组不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_25002"
-    }
+    },
+    "Module": "taskservice"
   },
   "25003": {
+    "ID": 25003,
     "AnnotationLocMeta": {
       "InTextLiteral": "状态转换错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_25003"
     },
-    "ID": 25003,
-    "Module": "taskservice",
     "TipsLocMeta": {
       "InTextLiteral": "状态转换错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_25003"
-    }
+    },
+    "Module": "taskservice"
   },
   "25004": {
+    "ID": 25004,
     "AnnotationLocMeta": {
       "InTextLiteral": "当前状态禁止操作",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_25004"
     },
-    "ID": 25004,
-    "Module": "taskservice",
     "TipsLocMeta": {
       "InTextLiteral": "当前状态禁止操作",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_25004"
-    }
+    },
+    "Module": "taskservice"
   },
   "25005": {
+    "ID": 25005,
     "AnnotationLocMeta": {
       "InTextLiteral": "批量解锁事件接口错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_25005"
     },
-    "ID": 25005,
-    "Module": "taskservice",
     "TipsLocMeta": {
       "InTextLiteral": "批量解锁事件接口错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_25005"
-    }
+    },
+    "Module": "taskservice"
   },
   "25006": {
+    "ID": 25006,
     "AnnotationLocMeta": {
       "InTextLiteral": "批量完成事件接口错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_25006"
     },
-    "ID": 25006,
-    "Module": "taskservice",
     "TipsLocMeta": {
       "InTextLiteral": "批量完成事件接口错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_25006"
-    }
+    },
+    "Module": "taskservice"
   },
   "25007": {
+    "ID": 25007,
     "AnnotationLocMeta": {
       "InTextLiteral": "达成事件解锁事件不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_25007"
     },
-    "ID": 25007,
-    "Module": "taskservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_25007"
-    }
+    },
+    "Module": "taskservice"
   },
   "15083": {
+    "ID": 15083,
     "AnnotationLocMeta": {
       "InTextLiteral": "错误的门票扣除类型",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15083"
     },
-    "ID": 15083,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15083"
-    }
+    },
+    "Module": "teamservice"
   },
   "15082": {
+    "ID": 15082,
     "AnnotationLocMeta": {
       "InTextLiteral": "门票数量不足",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15082"
     },
-    "ID": 15082,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15082"
-    }
+    },
+    "Module": "teamservice"
   },
   "15081": {
+    "ID": 15081,
     "AnnotationLocMeta": {
       "InTextLiteral": "门票规则不支持队员选择扣除门票数量",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15081"
     },
-    "ID": 15081,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15081"
-    }
+    },
+    "Module": "teamservice"
   },
   "15080": {
+    "ID": 15080,
     "AnnotationLocMeta": {
       "InTextLiteral": "队伍模式不支持扣除门票",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15080"
     },
-    "ID": 15080,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15080"
-    }
+    },
+    "Module": "teamservice"
   },
   "15079": {
+    "ID": 15079,
     "AnnotationLocMeta": {
       "InTextLiteral": "门票数量不合法",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15079"
     },
-    "ID": 15079,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15079"
-    }
+    },
+    "Module": "teamservice"
   },
   "15078": {
+    "ID": 15078,
     "AnnotationLocMeta": {
       "InTextLiteral": "对方无法响应",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15078"
     },
-    "ID": 15078,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "操作失败，对方暂时无法响应",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15078"
-    }
+    },
+    "Module": "teamservice"
   },
   "15077": {
+    "ID": 15077,
     "AnnotationLocMeta": {
       "InTextLiteral": "游戏服区域不合法",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15077"
     },
-    "ID": 15077,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15077"
-    }
+    },
+    "Module": "teamservice"
   },
   "15076": {
+    "ID": 15076,
     "AnnotationLocMeta": {
       "InTextLiteral": "对方队伍在招募中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15076"
     },
-    "ID": 15076,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "操作失败，对方队伍已在招募中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15076"
-    }
+    },
+    "Module": "teamservice"
   },
   "15075": {
+    "ID": 15075,
     "AnnotationLocMeta": {
       "InTextLiteral": "对方队伍在战斗中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15075"
     },
-    "ID": 15075,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "操作失败，对方队伍已在战斗中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15075"
-    }
+    },
+    "Module": "teamservice"
   },
   "15074": {
+    "ID": 15074,
     "AnnotationLocMeta": {
       "InTextLiteral": "对方队伍在选择英雄中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15074"
     },
-    "ID": 15074,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "操作失败，对方队伍已在选择英雄阶段",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15074"
-    }
+    },
+    "Module": "teamservice"
   },
   "15073": {
+    "ID": 15073,
     "AnnotationLocMeta": {
       "InTextLiteral": "对方队伍在准备中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15073"
     },
-    "ID": 15073,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "操作失败，对方队伍已在准备阶段",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15073"
-    }
+    },
+    "Module": "teamservice"
   },
   "15072": {
+    "ID": 15072,
     "AnnotationLocMeta": {
       "InTextLiteral": "对方队伍在匹配中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15072"
     },
-    "ID": 15072,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "操作失败，对方队伍已在匹配中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15072"
-    }
+    },
+    "Module": "teamservice"
   },
   "15071": {
+    "ID": 15071,
     "AnnotationLocMeta": {
       "InTextLiteral": "对方队伍在空闲中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15071"
     },
-    "ID": 15071,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "对方队伍处于空闲状态中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15071"
-    }
+    },
+    "Module": "teamservice"
   },
   "15070": {
+    "ID": 15070,
     "AnnotationLocMeta": {
       "InTextLiteral": "我方队伍在招募中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15070"
     },
-    "ID": 15070,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "操作失败，我方队伍已在招募中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15070"
-    }
+    },
+    "Module": "teamservice"
   },
   "15069": {
+    "ID": 15069,
     "AnnotationLocMeta": {
       "InTextLiteral": "我方队伍在战斗中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_15069"
     },
-    "ID": 15069,
-    "Module": "teamservice",
     "TipsLocMeta": {
       "InTextLiteral": "操作失败，我方队伍已在战斗中",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_15069"
-    }
+    },
+    "Module": "teamservice"
   },
   "24001": {
+    "ID": 24001,
     "AnnotationLocMeta": {
       "InTextLiteral": "奖励重复领取",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24001"
     },
-    "ID": 24001,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "奖励重复领取",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24001"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24002": {
+    "ID": 24002,
     "AnnotationLocMeta": {
       "InTextLiteral": "表格数据错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24002"
     },
-    "ID": 24002,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "表格数据错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24002"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24003": {
+    "ID": 24003,
     "AnnotationLocMeta": {
       "InTextLiteral": "重复完成新手关",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24003"
     },
-    "ID": 24003,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "重复完成新手关",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24003"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24004": {
+    "ID": 24004,
     "AnnotationLocMeta": {
       "InTextLiteral": "引导不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24004"
     },
-    "ID": 24004,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "引导不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24004"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24005": {
+    "ID": 24005,
     "AnnotationLocMeta": {
       "InTextLiteral": "错误的战斗遗产",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24005"
     },
-    "ID": 24005,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "错误的金手指",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24005"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "500": {
+    "ID": 500,
     "AnnotationLocMeta": {
       "InTextLiteral": "未知错误",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_500"
     },
-    "ID": 500,
-    "Module": "common",
     "TipsLocMeta": {
       "InTextLiteral": "遇到未知错误，请稍后重试",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_500"
-    }
+    },
+    "Module": "common"
   },
   "24007": {
+    "ID": 24007,
     "AnnotationLocMeta": {
       "InTextLiteral": "错误的战斗遗产",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24007"
     },
-    "ID": 24007,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "错误的金手指",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24007"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24008": {
+    "ID": 24008,
     "AnnotationLocMeta": {
       "InTextLiteral": "不能设置该勋章",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24008"
     },
-    "ID": 24008,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "不能设置该勋章",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24008"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24009": {
+    "ID": 24009,
     "AnnotationLocMeta": {
       "InTextLiteral": "超过单个英雄消耗限制",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24009"
     },
-    "ID": 24009,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "超过单个英雄消耗限制",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24009"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24010": {
+    "ID": 24010,
     "AnnotationLocMeta": {
       "InTextLiteral": "不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24010"
     },
-    "ID": 24010,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "不存在",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24010"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24011": {
+    "ID": 24011,
     "AnnotationLocMeta": {
       "InTextLiteral": "不存在的主线任务组",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24011"
     },
-    "ID": 24011,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "不存在的主线任务组",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24011"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24012": {
+    "ID": 24012,
     "AnnotationLocMeta": {
       "InTextLiteral": "已经领取了七日奖励信息",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24012"
     },
-    "ID": 24012,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "已经领取了七日奖励信息",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24012"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24013": {
+    "ID": 24013,
     "AnnotationLocMeta": {
       "InTextLiteral": "没有达到领取七日奖励条件",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24013"
     },
-    "ID": 24013,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "没有达到领取七日奖励条件",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24013"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24014": {
+    "ID": 24014,
     "AnnotationLocMeta": {
       "InTextLiteral": "没有加成次数",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24014"
     },
-    "ID": 24014,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "没有加成次数",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24014"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24015": {
+    "ID": 24015,
     "AnnotationLocMeta": {
       "InTextLiteral": "赛季能力预设方案未解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24015"
     },
-    "ID": 24015,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "赛季能力预设方案未解锁",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24015"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "24016": {
+    "ID": 24016,
     "AnnotationLocMeta": {
       "InTextLiteral": "预设方案数达到上限",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_24016"
     },
-    "ID": 24016,
-    "Module": "playergrowthservice",
     "TipsLocMeta": {
       "InTextLiteral": "预设方案数达到上限",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_24016"
-    }
+    },
+    "Module": "playergrowthservice"
   },
   "12022": {
+    "ID": 12022,
     "AnnotationLocMeta": {
       "InTextLiteral": "模组背包满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Annotation_12022"
     },
-    "ID": 12022,
-    "Module": "heroservice",
     "TipsLocMeta": {
       "InTextLiteral": "模组背包满",
       "InNamespace": "lobby_TBErrorCode",
       "InKey": "Tips_12022"
-    }
+    },
+    "Module": "heroservice"
   }
 }

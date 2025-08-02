@@ -19,12 +19,15 @@ DrawCardViewModel.propertyBindings = {
   CurCardPoolEndTime = "2025-06-01 00:00:00",
   CurCardPoolBgPath = ""
 }
+
 function DrawCardViewModel:OnInit()
   self.Super:OnInit()
 end
+
 function DrawCardViewModel:OnShutdown()
   self.Super:OnShutdown()
 end
+
 function DrawCardViewModel:InitInfoByCardPoolId(CardPoolId)
   self.CardPoolId = CardPoolId
   local PoolInfo = self:GetPoolInfoByPoolId(CardPoolId)
@@ -34,15 +37,18 @@ function DrawCardViewModel:InitInfoByCardPoolId(CardPoolId)
   self.CurCardPoolEndTime = PoolInfo.EndTime
   self.CurCardPoolBgPath = PoolInfo.BgPath
 end
+
 function DrawCardViewModel:ShowDrawCard()
   RGUIMgr:OpenUI(UIConfig.WBP_DrawCardView_C.UIName)
   local DardCardView = RGUIMgr:GetUI(UIConfig.WBP_DrawCardView_C.UIName)
   DardCardView:InitInfo(1)
 end
+
 function DrawCardViewModel:HideSelf()
   UIMgr:Hide(ViewID.UI_DrawCard, true)
   self.DrawWidget = nil
 end
+
 function DrawCardViewModel:GetHeroTableRow(ResourceId)
   local HeroTb = LuaTableMgr.GetLuaTableByName(TableNames.TBHero)
   if not HeroTb then
@@ -50,6 +56,7 @@ function DrawCardViewModel:GetHeroTableRow(ResourceId)
   end
   return HeroTb[ResourceId]
 end
+
 function DrawCardViewModel:GetHeroArtResTableRow(IdParam)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -63,6 +70,7 @@ function DrawCardViewModel:GetHeroArtResTableRow(IdParam)
   print("\233\133\141\231\189\174\229\188\130\229\184\184\239\188\140\232\175\165\231\173\137\231\186\167\229\156\168\232\161\168\228\184\173\228\184\141\229\173\152\229\156\168", IdParam)
   return nil
 end
+
 function DrawCardViewModel:DrawCard(DrawTimes, PondId)
   if not self.DrawWidget then
     self.DrawWidget = RGUIMgr:GetUI(UIConfig.WBP_DrawCardView_C.UIName)
@@ -75,6 +83,7 @@ function DrawCardViewModel:DrawCard(DrawTimes, PondId)
     self.DrawWidget.DrawFailed
   })
 end
+
 function DrawCardViewModel:DrawCardResult(JsonResponse)
   local Response = rapidjson.decode(JsonResponse.Content)
   if not Response then
@@ -89,8 +98,10 @@ function DrawCardViewModel:DrawCardResult(JsonResponse)
     self.DrawWidget:DrawResultMulti(Response.Resources)
   end
 end
+
 function DrawCardViewModel:DrawFailed()
 end
+
 function DrawCardViewModel:GetCost(Times, PondId)
   local GachaPondTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGachaPond)
   for i, v in ipairs(GachaPondTable[PondId].ExpendResource) do
@@ -98,10 +109,12 @@ function DrawCardViewModel:GetCost(Times, PondId)
   end
   return 0, 0, false
 end
+
 function DrawCardViewModel:GetCostIcon(CostResId)
   local GeneralTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   return GeneralTable[CostResId].Icon
 end
+
 function DrawCardViewModel:GetPriceInfo(PoolId)
   local TBMall = LuaTableMgr.GetLuaTableByName(TableNames.TBMall)
   local PoolInfo = self:GetPoolInfoByPoolId(PoolId)
@@ -115,15 +128,18 @@ function DrawCardViewModel:GetPriceInfo(PoolId)
   end
   return CostResId, CostNum, ResCurrencyId, ResOldPrice, ResCurPrice
 end
+
 function DrawCardViewModel:GetPoolInfoByPoolId(PoolId)
   local GachaPondTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGachaPond)
   local PoolId, PoolInfo = pairs(GachaPondTable[PoolId])
   return PoolInfo
 end
+
 function DrawCardViewModel:GetPoolInfo()
   local GachaPondTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGachaPond)
   return GachaPondTable
 end
+
 function DrawCardViewModel:CheckCost(Times, PondId)
   local NeedCostNumTb = {}
   local GachaPondTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGachaPond)
@@ -146,9 +162,11 @@ function DrawCardViewModel:CheckCost(Times, PondId)
   end
   return true
 end
+
 function DrawCardViewModel:Clear()
   self:HideSelf()
 end
+
 function DrawCardViewModel:CheckResIsUnLock(ResourceId)
   local TotalResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   local TotalCharacterSkinTable = LuaTableMgr.GetLuaTableByName(TableNames.TBCharacterSkin)
@@ -176,22 +194,28 @@ function DrawCardViewModel:CheckResIsUnLock(ResourceId)
     return PlayerInfoViewModel:GetBannerState(PlayerInfoViewModel:GetBannerIdByResourceId(ResourceId)) ~= EPlayerInfoEquipedState.Lock
   end
 end
+
 function DrawCardViewModel:SetCardPoolOpenCount(CardPoolId, OpenCount)
   DrawCardData:SetCardPoolOpenCount(CardPoolId, OpenCount)
 end
+
 function DrawCardViewModel:GetCardPoolOpenCountById(CardPoolId)
   return DrawCardData:GetCardPoolOpenCountById(CardPoolId)
 end
+
 function DrawCardViewModel:SetCardPoolGuarantList(CardPoolId, GuarantList)
   DrawCardData:SetCardPoolGuarantList(CardPoolId, GuarantList)
 end
+
 function DrawCardViewModel:GetCardPoolGuarantListById(CardPoolId)
   return DrawCardData:GetCardPoolGuarantListById(CardPoolId)
 end
+
 function DrawCardViewModel:GetGoodsIdByCardPoolId(CardPoolId)
   local GachaPondTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGachaPond)
   return GachaPondTable[CardPoolId].GoodsId
 end
+
 function DrawCardViewModel:SortResourceList(ResourceList)
   local TotalResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   table.sort(ResourceList, function(A, B)
@@ -203,4 +227,5 @@ function DrawCardViewModel:SortResourceList(ResourceList)
     return ARare > BRare
   end)
 end
+
 return DrawCardViewModel

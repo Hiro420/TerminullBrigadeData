@@ -4,6 +4,7 @@ local ChatCDTxt = NSLOCTEXT("LogicChat", "ChatCDTxt", "\229\143\145\232\168\128\
 local NoTeamTxt = NSLOCTEXT("LogicChat", "NoTeamTxt", "\230\130\168\232\191\152\230\156\170\229\138\160\229\133\165\233\152\159\228\188\141")
 local UnlockTxt = NSLOCTEXT("LogicChat", "UnlockTxt", "\232\175\165\232\129\138\229\164\169\233\162\145\233\129\147\232\191\152\230\156\170\232\167\163\233\148\129,{0}\231\186\167\232\167\163\233\148\129")
 local SensitiveTxt = NSLOCTEXT("LogicChat", "SensitiveTxt", "\229\134\133\230\156\137\230\149\143\230\132\159\232\175\141\239\188\140\229\143\145\233\128\129\229\164\177\232\180\165")
+
 function LogicChat:Init(WidgetParam)
   if not self.bIsInited then
     EventSystem.AddListener(nil, EventDef.Chat.ReciveNewMsg, LogicChat.OnReciveNewMsg)
@@ -15,6 +16,7 @@ function LogicChat:Init(WidgetParam)
   end
   table.insert(LogicChat.Widgets, WidgetParam)
 end
+
 function LogicChat.OnReciveNewMsg(ChatContentData)
   if LogicChat.Widgets then
     for i, v in ipairs(LogicChat.Widgets) do
@@ -44,6 +46,7 @@ function LogicChat.OnReciveNewMsg(ChatContentData)
     end
   end
 end
+
 function LogicChat.OnSendChatMsgFailed(errcode, lastTimeStr, period, SendData)
   local lastTime = tonumber(lastTimeStr)
   print("OnSendChatMsgFailed", errcode, os.time(), lastTime, period)
@@ -74,6 +77,7 @@ function LogicChat.OnSendChatMsgFailed(errcode, lastTimeStr, period, SendData)
     end
   end
 end
+
 function LogicChat:SendChatMsg(Id, ChannelId, Msg)
   print("LogicChat:SendChatMsg11", Msg, Id, ChannelId)
   local IsUnLock, OpenLevel = LogicChat:CheckChannelUnLock(ChannelId)
@@ -97,6 +101,7 @@ function LogicChat:SendChatMsg(Id, ChannelId, Msg)
     ChatDataMgr.SendChatMsg(Id, ChannelId, Msg)
   end
 end
+
 function LogicChat:CheckSendMsgCD(ChannelId, bAddErrorMsg)
   if not LogicChat.CDData then
     LogicChat.CDData = {}
@@ -116,6 +121,7 @@ function LogicChat:CheckSendMsgCD(ChannelId, bAddErrorMsg)
   end
   return false
 end
+
 function LogicChat:CheckIsLongMsg(Msg, ChannelId)
   if not Msg then
     print("LogicChat:CheckIsLongMsg Msg Is Null")
@@ -133,6 +139,7 @@ function LogicChat:CheckIsLongMsg(Msg, ChannelId)
   end
   return false
 end
+
 function LogicChat:SendPersonChatMsg(UserId, Msg)
   HttpCommunication.Request("chatservice/personalmessage", {
     receiver = UserId,
@@ -140,6 +147,7 @@ function LogicChat:SendPersonChatMsg(UserId, Msg)
     channelUID = DataMgr.ChannelUserIdWithPrefix
   }, {}, {})
 end
+
 function LogicChat:CheckChannelUnLock(ChannelId)
   local ChatTb = LuaTableMgr.GetLuaTableByName(TableNames.TBChat)
   if not ChatTb then
@@ -153,9 +161,11 @@ function LogicChat:CheckChannelUnLock(ChannelId)
   print("LogicChat:CheckChannelUnLock", ChatTb[ChannelId].OpenLevel, DataMgr.GetRoleLevel())
   return ChatTb[ChannelId].OpenLevel > DataMgr.GetRoleLevel(), ChatTb[ChannelId].OpenLevel
 end
+
 function LogicChat:SheildPlayerMsg(UserId, bIsSheild, NickName)
   ChatDataMgr.SheildPlayerMsg(UserId, LogicChat.CurSelectChannel, bIsSheild, NickName)
 end
+
 function LogicChat:GetChannelRow(Channel)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -167,6 +177,7 @@ function LogicChat:GetChannelRow(Channel)
   end
   return nil
 end
+
 function LogicChat:UnBindWidget(Widget)
   if not LogicChat.Widgets then
     return
@@ -178,6 +189,7 @@ function LogicChat:UnBindWidget(Widget)
     LogicChat:Clear()
   end
 end
+
 function LogicChat:Clear()
   LogicChat.Widgets = nil
   self.bIsInited = false

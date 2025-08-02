@@ -1,5 +1,6 @@
 local rapidjson = require("rapidjson")
 local WBP_GameTypePanel_C = UnLua.Class()
+
 function WBP_GameTypePanel_C:Construct()
   self.Button_Confirm.OnClicked:Add(self, WBP_GameTypePanel_C.OnClicked_Confirm)
   self.Button_Test.OnClicked:Add(self, WBP_GameTypePanel_C.OnClicked_Test)
@@ -15,6 +16,7 @@ function WBP_GameTypePanel_C:Construct()
   end
   self:RequestDBGUnlockGameFloor(settings.InitLockFloor - 1)
 end
+
 function WBP_GameTypePanel_C:Destruct()
   self.Button_Confirm.OnClicked:Remove(self, WBP_GameTypePanel_C.OnClicked_Confirm)
   self.Button_Test.OnClicked:Remove(self, WBP_GameTypePanel_C.OnClicked_Test)
@@ -22,17 +24,21 @@ function WBP_GameTypePanel_C:Destruct()
   self.Button_Temp_Mod.OnClicked:Remove(self, WBP_GameTypePanel_C.OnClicked_Temp_Mod)
   self:BindOnLobbyDebugUI(false)
 end
+
 function WBP_GameTypePanel_C:Show(selfHitTestInvisible, Activate)
   self.Overridden.Show(self, selfHitTestInvisible, Activate)
   self:PlayWidgetAnimation(true)
 end
+
 function WBP_GameTypePanel_C:OnAnimationFinished(Animation)
   if Animation == self.ani_gametypepanel_out then
     self:HideGameTypePanel()
   end
 end
+
 function WBP_GameTypePanel_C:RequestRoleInfo()
 end
+
 function WBP_GameTypePanel_C:RequestSetGameFloor(game_floor)
   self.Image_EnableClicked:SetVisibility(UE.ESlateVisibility.Visible)
   local RoomInfo = DataMgr.GetRoomInfo()
@@ -47,6 +53,7 @@ function WBP_GameTypePanel_C:RequestSetGameFloor(game_floor)
     WBP_GameTypePanel_C.OnSetGameFloorFail
   })
 end
+
 function WBP_GameTypePanel_C:RequestSetGameMod(game_mod)
   self.Image_EnableClicked:SetVisibility(UE.ESlateVisibility.Visible)
   local RoomInfo = DataMgr.GetRoomInfo()
@@ -61,6 +68,7 @@ function WBP_GameTypePanel_C:RequestSetGameMod(game_mod)
     WBP_GameTypePanel_C.OnSetGameModFail
   })
 end
+
 function WBP_GameTypePanel_C:RequestDBGUnlockGameFloor(InFloor)
   HttpCommunication.Request("dbg/playerservice/unlockgamefloor", {gamemode = 1, floor = InFloor}, {
     self,
@@ -70,6 +78,7 @@ function WBP_GameTypePanel_C:RequestDBGUnlockGameFloor(InFloor)
     WBP_GameTypePanel_C.OnDBGUnlockGameFloorFail
   })
 end
+
 function WBP_GameTypePanel_C:BindOnLobbyDebugUI(Bind)
   local setting = UE.URGLobbySettings.GetSettings()
   if setting then
@@ -80,11 +89,13 @@ function WBP_GameTypePanel_C:BindOnLobbyDebugUI(Bind)
     end
   end
 end
+
 function WBP_GameTypePanel_C:OnClicked_Confirm()
   local game_floor = self.WBP_DifficultPanel.ChooseDifficultySlot.TableRow.DifficultyID
   self:RequestSetGameFloor(game_floor)
   self:RequestSetGameMod(1)
 end
+
 function WBP_GameTypePanel_C:OnSetGameFloorSuccess()
   print("SetGameFloor Success")
   self.SetGameFloorSuccess = true
@@ -95,11 +106,13 @@ function WBP_GameTypePanel_C:OnSetGameFloorSuccess()
     self:PlayWidgetAnimation(false)
   end
 end
+
 function WBP_GameTypePanel_C:OnSetGameFloorFail()
   print("SetGameFloor Fail")
   self.SetGameFloorSuccess = false
   self.Image_EnableClicked:SetVisibility(UE.ESlateVisibility.selfHitTestInvisible)
 end
+
 function WBP_GameTypePanel_C:OnSetGameModSuccess()
   print("SetGameMod Success")
   self.SetGameModSuccess = true
@@ -110,11 +123,13 @@ function WBP_GameTypePanel_C:OnSetGameModSuccess()
     self:PlayWidgetAnimation(false)
   end
 end
+
 function WBP_GameTypePanel_C:OnSetGameModFail()
   print("SetGameMod Fail")
   self.SetGameModSuccess = false
   self.Image_EnableClicked:SetVisibility(UE.ESlateVisibility.selfHitTestInvisible)
 end
+
 function WBP_GameTypePanel_C:OnClicked_Test()
   if self.Overlay_Debug:IsVisible() then
     self.Overlay_Debug:SetVisibility(UE.ESlateVisibility.Hidden)
@@ -122,22 +137,27 @@ function WBP_GameTypePanel_C:OnClicked_Test()
     self.Overlay_Debug:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function WBP_GameTypePanel_C:OnClicked_Debug()
   self.Overlay_Debug:SetVisibility(UE.ESlateVisibility.Hidden)
   local floor = tonumber(self.EditableText_Difficult:GetText())
   self:RequestDBGUnlockGameFloor(floor)
 end
+
 function WBP_GameTypePanel_C:OnClicked_Temp_Mod()
   local game_floor = 1
   self:RequestSetGameFloor(game_floor)
 end
+
 function WBP_GameTypePanel_C:OnDBGUnlockGameFloorSuccess()
   print("DBGUnlockGameFloor Success")
   self:RequestRoleInfo()
 end
+
 function WBP_GameTypePanel_C:OnDBGUnlockGameFloorFailed()
   print("DBGUnlockGameFloor Fail")
 end
+
 function WBP_GameTypePanel_C:OnGetRoleSuccess(JsonResponse)
   print("OnGetRoleSuccess", JsonResponse.Content)
   local Response = rapidjson.decode(JsonResponse.Content)
@@ -148,10 +168,12 @@ function WBP_GameTypePanel_C:OnGetRoleSuccess(JsonResponse)
   end
   self.WBP_DifficultPanel:InitScrollBox()
 end
+
 function WBP_GameTypePanel_C:OnGetRoleFail(ErrorMessage)
   print("OnGetRoleFail", ErrorMessage.ErrorMessage)
   self:RequestRoleInfo()
 end
+
 function WBP_GameTypePanel_C:OnLobbyDebugUI()
   local setting = UE.URGLobbySettings.GetSettings()
   if setting then
@@ -162,6 +184,7 @@ function WBP_GameTypePanel_C:OnLobbyDebugUI()
     end
   end
 end
+
 function WBP_GameTypePanel_C:HideGameTypePanel()
   local rgUIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self:GetWorld(), UE.URGUIManager:StaticClass())
   if rgUIManager then
@@ -172,6 +195,7 @@ function WBP_GameTypePanel_C:HideGameTypePanel()
     end
   end
 end
+
 function WBP_GameTypePanel_C:PlayWidgetAnimation(InAnimation)
   if InAnimation then
     self:PlayAnimation(self.ani_gametypepanel_in)
@@ -183,4 +207,5 @@ function WBP_GameTypePanel_C:PlayWidgetAnimation(InAnimation)
     self:PlayAnimation(self.ani_gametypepanel_out)
   end
 end
+
 return WBP_GameTypePanel_C

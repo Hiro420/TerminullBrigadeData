@@ -1,0 +1,47 @@
+[
+  {
+    "slotNum": 0,
+    "costs": [
+      {
+        "key": 99029,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "slotNum": 1,
+    "costs": [
+      {
+        "key": 99029,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "slotNum": 2,
+    "costs": [
+      {
+        "key": 99029,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "slotNum": 3,
+    "costs": [
+      {
+        "key": 99029,
+        "value": 2
+      }
+    ]
+  },
+  {
+    "slotNum": 4,
+    "costs": [
+      {
+        "key": 99029,
+        "value": 2
+      }
+    ]
+  }
+]

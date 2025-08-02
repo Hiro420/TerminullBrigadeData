@@ -1,6 +1,7 @@
 local ProficiencyData = {
   AllHeroProficiencyInfo = {}
 }
+
 function ProficiencyData:DealWithTable()
   local ProfyGeneralTable = LuaTableMgr.GetLuaTableByName(TableNames.TBProfyGeneral)
   if not ProfyGeneralTable then
@@ -15,9 +16,11 @@ function ProficiencyData:DealWithTable()
     HeroProficiencyInfo[RowInfo.Level] = RowId
   end
 end
+
 function ProficiencyData:GetAllProficiencyInfoByHeroId(HeroId)
   return ProficiencyData.AllHeroProficiencyInfo[HeroId]
 end
+
 function ProficiencyData:GetProficiencyRowInfoByHeroIdAndLevel(HeroId, Level)
   local HeroProficiencyInfo = ProficiencyData.AllHeroProficiencyInfo[HeroId]
   local RowId = HeroProficiencyInfo[Level]
@@ -28,6 +31,7 @@ function ProficiencyData:GetProficiencyRowInfoByHeroIdAndLevel(HeroId, Level)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBProfyGeneral, RowId)
   return Result, RowInfo
 end
+
 function ProficiencyData:GetMaxProfyLevel(HeroId)
   local MaxLevel = 0
   local AllProficiencyInfo = ProficiencyData.AllHeroProficiencyInfo[HeroId]
@@ -40,6 +44,7 @@ function ProficiencyData:GetMaxProfyLevel(HeroId)
   end
   return MaxLevel
 end
+
 function ProficiencyData:GetMaxUnlockProfyLevel(HeroId)
   local MyHeroInfo = DataMgr.GetMyHeroInfo()
   for index, SingleHeroInfo in ipairs(MyHeroInfo.heros) do
@@ -49,6 +54,7 @@ function ProficiencyData:GetMaxUnlockProfyLevel(HeroId)
   end
   return 0
 end
+
 function ProficiencyData:GetAllInscriptionReward(HeroId)
   local InscriptionList = {}
   local MaxUnlockLevel = ProficiencyData:GetMaxUnlockProfyLevel(HeroId)
@@ -63,6 +69,7 @@ function ProficiencyData:GetAllInscriptionReward(HeroId)
   end
   return InscriptionList
 end
+
 function ProficiencyData:GetCurProfyExp(HeroId)
   local MyHeroInfo = DataMgr.GetMyHeroInfo()
   for index, SingleHeroInfo in ipairs(MyHeroInfo.heros) do
@@ -72,6 +79,7 @@ function ProficiencyData:GetCurProfyExp(HeroId)
   end
   return 0
 end
+
 function ProficiencyData:GetNextLevelProfyMaxExp(HeroId)
   local MaxUnlockLevel = ProficiencyData:GetMaxUnlockProfyLevel(HeroId)
   local MaxLevel = ProficiencyData:GetMaxProfyLevel(HeroId)
@@ -79,6 +87,7 @@ function ProficiencyData:GetNextLevelProfyMaxExp(HeroId)
   local Result, NextLevelRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBProfyLevel, TargetLevel)
   return Result and NextLevelRowInfo.Exp or 0
 end
+
 function ProficiencyData:IsCurProfyLevelRewardReceived(HeroId, Level)
   local MyHeroInfo = DataMgr.GetMyHeroInfo()
   for index, SingleHeroInfo in ipairs(MyHeroInfo.heros) do
@@ -88,6 +97,7 @@ function ProficiencyData:IsCurProfyLevelRewardReceived(HeroId, Level)
   end
   return false
 end
+
 function ProficiencyData:IsCurProfyStoryRewardReceived(HeroId, Level)
   local MyHeroInfo = DataMgr.GetMyHeroInfo()
   for index, SingleHeroInfo in ipairs(MyHeroInfo.heros) do
@@ -97,6 +107,7 @@ function ProficiencyData:IsCurProfyStoryRewardReceived(HeroId, Level)
   end
   return false
 end
+
 function ProficiencyData:ShowReceiveAwardPanel(HeroId, Level, IsStoryReward)
   local AllAttachmentList = {}
   local Result, RowInfo = ProficiencyData:GetProficiencyRowInfoByHeroIdAndLevel(HeroId, Level)
@@ -114,4 +125,5 @@ function ProficiencyData:ShowReceiveAwardPanel(HeroId, Level, IsStoryReward)
     EventSystem.Invoke(EventDef.Lobby.OnGetPropTip, AllAttachmentList)
   end
 end
+
 return ProficiencyData

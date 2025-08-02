@@ -4,6 +4,7 @@ EFollowStatus = {
   PreFocusOn = 2
 }
 local WBP_FocusOnMarkWidget = UnLua.Class()
+
 function WBP_FocusOnMarkWidget:Construct()
   local Player = self:GetOwningPlayerPawn()
   if Player then
@@ -14,13 +15,16 @@ function WBP_FocusOnMarkWidget:Construct()
     end
   end
 end
+
 function WBP_FocusOnMarkWidget:Destruct()
 end
+
 function WBP_FocusOnMarkWidget:OnFocusModifySubGroupListChanged(SubGroupList)
   if self.ModifyId then
     self:Init(self.ModifyId)
   end
 end
+
 function WBP_FocusOnMarkWidget:Init(ModifyId)
   if GetCurSceneStatus() ~= UE.ESceneStatus.EBattle then
     self:SetFollowStatus(EFollowStatus.FocusOn)
@@ -54,6 +58,7 @@ function WBP_FocusOnMarkWidget:Init(ModifyId)
   self:SetFollowStatus(EFollowStatus.UnFocusOn)
   return EFollowStatus.UnFocusOn
 end
+
 function WBP_FocusOnMarkWidget:SetFollowStatus(Status)
   self.FollowStatus = Status
   UpdateVisibility(self.Img_FocusOn, false)
@@ -64,4 +69,5 @@ function WBP_FocusOnMarkWidget:SetFollowStatus(Status)
     UpdateVisibility(self.Img_PerFocusOn, true)
   end
 end
+
 return WBP_FocusOnMarkWidget

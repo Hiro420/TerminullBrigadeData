@@ -1,4 +1,5 @@
 local WBP_PickUpInscriptionItem_C = UnLua.Class()
+
 function WBP_PickUpInscriptionItem_C:InitInfo(InscriptionId, UpgradeLevel)
   self:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
   local LogicCommandSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.ULogicCommandDataSubSystem:StaticClass())
@@ -23,13 +24,17 @@ function WBP_PickUpInscriptionItem_C:InitInfo(InscriptionId, UpgradeLevel)
     SetImageBrushBySoftObject(self.Img_CompareStatus, self.LowSpriteIcon)
   end
 end
+
 function WBP_PickUpInscriptionItem_C:SetInscriptionNameColor(SlateColor)
   self.Txt_InscriptionName:SetDefaultColorAndOpacity(SlateColor)
 end
+
 function WBP_PickUpInscriptionItem_C:SetSizeBoxWidth(Length)
   self.TextSizeBox:SetWidthOverride(Length)
 end
+
 function WBP_PickUpInscriptionItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return WBP_PickUpInscriptionItem_C

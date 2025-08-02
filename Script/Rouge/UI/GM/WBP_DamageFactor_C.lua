@@ -1,4 +1,5 @@
 local WBP_DamageFactor_C = UnLua.Class()
+
 function WBP_DamageFactor_C:Construct()
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
   if not PC then
@@ -9,6 +10,7 @@ function WBP_DamageFactor_C:Construct()
   end
   PC.DamageComponent.OnDebugParams:Add(self, WBP_DamageFactor_C.BindOnDebugParams)
 end
+
 function WBP_DamageFactor_C:BindOnDebugParams(SourceActor, TargetActor, Params)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character or Character ~= SourceActor and Character ~= TargetActor then
@@ -45,4 +47,5 @@ function WBP_DamageFactor_C:BindOnDebugParams(SourceActor, TargetActor, Params)
   self.ExplodeRatio:UpdateNotAttributeInfo(string.format("%.2f", Params.ExplodeRatio))
   self.DistanceRatio:UpdateNotAttributeInfo(string.format("%.2f", Params.DistanceRatio))
 end
+
 return WBP_DamageFactor_C

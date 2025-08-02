@@ -1,0 +1,2471 @@
+[
+  {
+    "ID": 0,
+    "upgradeExp": [
+      {
+        "key": 1,
+        "value": 0
+      },
+      {
+        "key": 2,
+        "value": 0
+      },
+      {
+        "key": 3,
+        "value": 0
+      },
+      {
+        "key": 4,
+        "value": 0
+      },
+      {
+        "key": 5,
+        "value": 0
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 1,
+        "value": 200
+      },
+      {
+        "key": 2,
+        "value": 400
+      },
+      {
+        "key": 3,
+        "value": 600
+      },
+      {
+        "key": 4,
+        "value": 1200
+      },
+      {
+        "key": 5,
+        "value": 1200
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 0,
+        "resources": []
+      },
+      {
+        "quality": 1,
+        "resources": []
+      },
+      {
+        "quality": 2,
+        "resources": []
+      },
+      {
+        "quality": 3,
+        "resources": []
+      },
+      {
+        "quality": 4,
+        "resources": []
+      },
+      {
+        "quality": 5,
+        "resources": []
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 0,
+        "resources": []
+      },
+      {
+        "quality": 1,
+        "resources": []
+      },
+      {
+        "quality": 2,
+        "resources": []
+      },
+      {
+        "quality": 3,
+        "resources": []
+      },
+      {
+        "quality": 4,
+        "resources": []
+      },
+      {
+        "quality": 5,
+        "resources": []
+      }
+    ]
+  },
+  {
+    "ID": 1,
+    "upgradeExp": [
+      {
+        "key": 1,
+        "value": 200
+      },
+      {
+        "key": 2,
+        "value": 400
+      },
+      {
+        "key": 3,
+        "value": 600
+      },
+      {
+        "key": 4,
+        "value": 1000
+      },
+      {
+        "key": 5,
+        "value": 1000
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 1,
+        "value": 320
+      },
+      {
+        "key": 2,
+        "value": 640
+      },
+      {
+        "key": 3,
+        "value": 960
+      },
+      {
+        "key": 4,
+        "value": 1760
+      },
+      {
+        "key": 5,
+        "value": 1760
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 0,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 80
+          }
+        ]
+      },
+      {
+        "quality": 1,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 80
+          }
+        ]
+      },
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 120
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 160
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 240
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 240
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 0,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 64
+          }
+        ]
+      },
+      {
+        "quality": 1,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 64
+          }
+        ]
+      },
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 96
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 128
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 192
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 192
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 2,
+    "upgradeExp": [
+      {
+        "key": 1,
+        "value": 440
+      },
+      {
+        "key": 2,
+        "value": 880
+      },
+      {
+        "key": 3,
+        "value": 1320
+      },
+      {
+        "key": 4,
+        "value": 2200
+      },
+      {
+        "key": 5,
+        "value": 2200
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 1,
+        "value": 512
+      },
+      {
+        "key": 2,
+        "value": 1024
+      },
+      {
+        "key": 3,
+        "value": 1536
+      },
+      {
+        "key": 4,
+        "value": 2720
+      },
+      {
+        "key": 5,
+        "value": 2720
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 0,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 88
+          }
+        ]
+      },
+      {
+        "quality": 1,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 88
+          }
+        ]
+      },
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 132
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 176
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 264
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 264
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 0,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 70
+          }
+        ]
+      },
+      {
+        "quality": 1,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 70
+          }
+        ]
+      },
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 106
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 141
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 211
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 211
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 3,
+    "upgradeExp": [
+      {
+        "key": 1,
+        "value": 720
+      },
+      {
+        "key": 2,
+        "value": 1440
+      },
+      {
+        "key": 3,
+        "value": 2160
+      },
+      {
+        "key": 4,
+        "value": 3600
+      },
+      {
+        "key": 5,
+        "value": 3600
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 1,
+        "value": 776
+      },
+      {
+        "key": 2,
+        "value": 1552
+      },
+      {
+        "key": 3,
+        "value": 2328
+      },
+      {
+        "key": 4,
+        "value": 4080
+      },
+      {
+        "key": 5,
+        "value": 4080
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 0,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 96
+          }
+        ]
+      },
+      {
+        "quality": 1,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 96
+          }
+        ]
+      },
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 144
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 192
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 288
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 288
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 0,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 77
+          }
+        ]
+      },
+      {
+        "quality": 1,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 77
+          }
+        ]
+      },
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 115
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 154
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 230
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 230
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 4,
+    "upgradeExp": [
+      {
+        "key": 1,
+        "value": 1040
+      },
+      {
+        "key": 2,
+        "value": 2080
+      },
+      {
+        "key": 3,
+        "value": 3120
+      },
+      {
+        "key": 4,
+        "value": 5200
+      },
+      {
+        "key": 5,
+        "value": 5200
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 1,
+        "value": 992
+      },
+      {
+        "key": 2,
+        "value": 1984
+      },
+      {
+        "key": 3,
+        "value": 2976
+      },
+      {
+        "key": 4,
+        "value": 5120
+      },
+      {
+        "key": 5,
+        "value": 5120
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 0,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 104
+          }
+        ]
+      },
+      {
+        "quality": 1,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 104
+          }
+        ]
+      },
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 156
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 208
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 312
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 312
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 0,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 83
+          }
+        ]
+      },
+      {
+        "quality": 1,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 83
+          }
+        ]
+      },
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 125
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 166
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 250
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 250
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 5,
+    "upgradeExp": [
+      {
+        "key": 1,
+        "value": 1400
+      },
+      {
+        "key": 2,
+        "value": 2800
+      },
+      {
+        "key": 3,
+        "value": 4200
+      },
+      {
+        "key": 4,
+        "value": 7000
+      },
+      {
+        "key": 5,
+        "value": 7000
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 1,
+        "value": 1280
+      },
+      {
+        "key": 2,
+        "value": 2560
+      },
+      {
+        "key": 3,
+        "value": 3840
+      },
+      {
+        "key": 4,
+        "value": 6560
+      },
+      {
+        "key": 5,
+        "value": 6560
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 0,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 112
+          }
+        ]
+      },
+      {
+        "quality": 1,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 112
+          }
+        ]
+      },
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 168
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 224
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 336
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 336
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 0,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 90
+          }
+        ]
+      },
+      {
+        "quality": 1,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 90
+          }
+        ]
+      },
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 134
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 179
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 269
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 269
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 6,
+    "upgradeExp": [
+      {
+        "key": 3,
+        "value": 6000
+      },
+      {
+        "key": 4,
+        "value": 9000
+      },
+      {
+        "key": 5,
+        "value": 9000
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 3,
+        "value": 5280
+      },
+      {
+        "key": 4,
+        "value": 8160
+      },
+      {
+        "key": 5,
+        "value": 8160
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 180
+          },
+          {
+            "key": 99011,
+            "value": 6
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 240
+          },
+          {
+            "key": 99011,
+            "value": 6
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 360
+          },
+          {
+            "key": 99011,
+            "value": 10
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 360
+          },
+          {
+            "key": 99011,
+            "value": 10
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 144
+          },
+          {
+            "key": 99011,
+            "value": 5
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 192
+          },
+          {
+            "key": 99011,
+            "value": 5
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 288
+          },
+          {
+            "key": 99011,
+            "value": 8
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 288
+          },
+          {
+            "key": 99011,
+            "value": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 7,
+    "upgradeExp": [
+      {
+        "key": 3,
+        "value": 8040
+      },
+      {
+        "key": 4,
+        "value": 11200
+      },
+      {
+        "key": 5,
+        "value": 11200
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 3,
+        "value": 6912
+      },
+      {
+        "key": 4,
+        "value": 9920
+      },
+      {
+        "key": 5,
+        "value": 9920
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 192
+          },
+          {
+            "key": 99011,
+            "value": 6
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 256
+          },
+          {
+            "key": 99011,
+            "value": 8
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 384
+          },
+          {
+            "key": 99011,
+            "value": 10
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 384
+          },
+          {
+            "key": 99011,
+            "value": 10
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 154
+          },
+          {
+            "key": 99011,
+            "value": 5
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 205
+          },
+          {
+            "key": 99011,
+            "value": 6
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 307
+          },
+          {
+            "key": 99011,
+            "value": 8
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 307
+          },
+          {
+            "key": 99011,
+            "value": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 8,
+    "upgradeExp": [
+      {
+        "key": 3,
+        "value": 10320
+      },
+      {
+        "key": 4,
+        "value": 13600
+      },
+      {
+        "key": 5,
+        "value": 13600
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 3,
+        "value": 8736
+      },
+      {
+        "key": 4,
+        "value": 11840
+      },
+      {
+        "key": 5,
+        "value": 11840
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 204
+          },
+          {
+            "key": 99011,
+            "value": 6
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 272
+          },
+          {
+            "key": 99011,
+            "value": 8
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 408
+          },
+          {
+            "key": 99011,
+            "value": 12
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 408
+          },
+          {
+            "key": 99011,
+            "value": 12
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 163
+          },
+          {
+            "key": 99011,
+            "value": 5
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 218
+          },
+          {
+            "key": 99011,
+            "value": 6
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 326
+          },
+          {
+            "key": 99011,
+            "value": 10
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 326
+          },
+          {
+            "key": 99011,
+            "value": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 9,
+    "upgradeExp": [
+      {
+        "key": 3,
+        "value": 13800
+      },
+      {
+        "key": 4,
+        "value": 16200
+      },
+      {
+        "key": 5,
+        "value": 16200
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 3,
+        "value": 11520
+      },
+      {
+        "key": 4,
+        "value": 13920
+      },
+      {
+        "key": 5,
+        "value": 13920
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 216
+          },
+          {
+            "key": 99011,
+            "value": 6
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 288
+          },
+          {
+            "key": 99011,
+            "value": 8
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 432
+          },
+          {
+            "key": 99011,
+            "value": 12
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 432
+          },
+          {
+            "key": 99011,
+            "value": 12
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 173
+          },
+          {
+            "key": 99011,
+            "value": 5
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 230
+          },
+          {
+            "key": 99011,
+            "value": 6
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 346
+          },
+          {
+            "key": 99011,
+            "value": 10
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 346
+          },
+          {
+            "key": 99011,
+            "value": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 10,
+    "upgradeExp": [
+      {
+        "key": 3,
+        "value": 17640
+      },
+      {
+        "key": 4,
+        "value": 20800
+      },
+      {
+        "key": 5,
+        "value": 20800
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 3,
+        "value": 14592
+      },
+      {
+        "key": 4,
+        "value": 17600
+      },
+      {
+        "key": 5,
+        "value": 17600
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 336
+          },
+          {
+            "key": 99011,
+            "value": 10
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 448
+          },
+          {
+            "key": 99011,
+            "value": 12
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 672
+          },
+          {
+            "key": 99011,
+            "value": 18
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 672
+          },
+          {
+            "key": 99011,
+            "value": 18
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 2,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 269
+          },
+          {
+            "key": 99011,
+            "value": 8
+          }
+        ]
+      },
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 358
+          },
+          {
+            "key": 99011,
+            "value": 10
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 538
+          },
+          {
+            "key": 99011,
+            "value": 14
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 538
+          },
+          {
+            "key": 99011,
+            "value": 14
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 11,
+    "upgradeExp": [
+      {
+        "key": 4,
+        "value": 25800
+      },
+      {
+        "key": 5,
+        "value": 25800
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 4,
+        "value": 21600
+      },
+      {
+        "key": 5,
+        "value": 21600
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 480
+          },
+          {
+            "key": 99012,
+            "value": 6
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 720
+          },
+          {
+            "key": 99012,
+            "value": 10
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 720
+          },
+          {
+            "key": 99012,
+            "value": 10
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 384
+          },
+          {
+            "key": 99012,
+            "value": 5
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 576
+          },
+          {
+            "key": 99012,
+            "value": 8
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 576
+          },
+          {
+            "key": 99012,
+            "value": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 12,
+    "upgradeExp": [
+      {
+        "key": 4,
+        "value": 31200
+      },
+      {
+        "key": 5,
+        "value": 31200
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 4,
+        "value": 25920
+      },
+      {
+        "key": 5,
+        "value": 25920
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 512
+          },
+          {
+            "key": 99012,
+            "value": 8
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 768
+          },
+          {
+            "key": 99012,
+            "value": 10
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 768
+          },
+          {
+            "key": 99012,
+            "value": 10
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 410
+          },
+          {
+            "key": 99012,
+            "value": 6
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 614
+          },
+          {
+            "key": 99012,
+            "value": 8
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 614
+          },
+          {
+            "key": 99012,
+            "value": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 13,
+    "upgradeExp": [
+      {
+        "key": 4,
+        "value": 37000
+      },
+      {
+        "key": 5,
+        "value": 37000
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 4,
+        "value": 30560
+      },
+      {
+        "key": 5,
+        "value": 30560
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 544
+          },
+          {
+            "key": 99012,
+            "value": 8
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 816
+          },
+          {
+            "key": 99012,
+            "value": 12
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 816
+          },
+          {
+            "key": 99012,
+            "value": 12
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 435
+          },
+          {
+            "key": 99012,
+            "value": 6
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 653
+          },
+          {
+            "key": 99012,
+            "value": 10
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 653
+          },
+          {
+            "key": 99012,
+            "value": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 14,
+    "upgradeExp": [
+      {
+        "key": 4,
+        "value": 43200
+      },
+      {
+        "key": 5,
+        "value": 43200
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 4,
+        "value": 35520
+      },
+      {
+        "key": 5,
+        "value": 35520
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 576
+          },
+          {
+            "key": 99012,
+            "value": 8
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 864
+          },
+          {
+            "key": 99012,
+            "value": 12
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 864
+          },
+          {
+            "key": 99012,
+            "value": 12
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 461
+          },
+          {
+            "key": 99012,
+            "value": 6
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 691
+          },
+          {
+            "key": 99012,
+            "value": 10
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 691
+          },
+          {
+            "key": 99012,
+            "value": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 15,
+    "upgradeExp": [
+      {
+        "key": 4,
+        "value": 52600
+      },
+      {
+        "key": 5,
+        "value": 52600
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 4,
+        "value": 43040
+      },
+      {
+        "key": 5,
+        "value": 43040
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 832
+          },
+          {
+            "key": 99012,
+            "value": 12
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1248
+          },
+          {
+            "key": 99012,
+            "value": 16
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1248
+          },
+          {
+            "key": 99012,
+            "value": 16
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 3,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 666
+          },
+          {
+            "key": 99012,
+            "value": 10
+          }
+        ]
+      },
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 998
+          },
+          {
+            "key": 99012,
+            "value": 13
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 998
+          },
+          {
+            "key": 99012,
+            "value": 13
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 16,
+    "upgradeExp": [
+      {
+        "key": 5,
+        "value": 62600
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 5,
+        "value": 51040
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1320
+          },
+          {
+            "key": 99013,
+            "value": 6
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1320
+          },
+          {
+            "key": 99013,
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1056
+          },
+          {
+            "key": 99013,
+            "value": 5
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1056
+          },
+          {
+            "key": 99013,
+            "value": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 17,
+    "upgradeExp": [
+      {
+        "key": 5,
+        "value": 73200
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 5,
+        "value": 59520
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1392
+          },
+          {
+            "key": 99013,
+            "value": 6
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1392
+          },
+          {
+            "key": 99013,
+            "value": 6
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1114
+          },
+          {
+            "key": 99013,
+            "value": 5
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1114
+          },
+          {
+            "key": 99013,
+            "value": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 18,
+    "upgradeExp": [
+      {
+        "key": 5,
+        "value": 84400
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 5,
+        "value": 68000
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1464
+          },
+          {
+            "key": 99013,
+            "value": 7
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1464
+          },
+          {
+            "key": 99013,
+            "value": 7
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1171
+          },
+          {
+            "key": 99013,
+            "value": 6
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1171
+          },
+          {
+            "key": 99013,
+            "value": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 19,
+    "upgradeExp": [
+      {
+        "key": 5,
+        "value": 96200
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 5,
+        "value": 77440
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1536
+          },
+          {
+            "key": 99013,
+            "value": 7
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1536
+          },
+          {
+            "key": 99013,
+            "value": 7
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1229
+          },
+          {
+            "key": 99013,
+            "value": 6
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1229
+          },
+          {
+            "key": 99013,
+            "value": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 20,
+    "upgradeExp": [
+      {
+        "key": 5,
+        "value": 112400
+      }
+    ],
+    "eatExp": [
+      {
+        "key": 5,
+        "value": 90400
+      }
+    ],
+    "upgradeCostResources": [
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 2064
+          },
+          {
+            "key": 99013,
+            "value": 9
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 2064
+          },
+          {
+            "key": 99013,
+            "value": 9
+          }
+        ]
+      }
+    ],
+    "resetGetResources": [
+      {
+        "quality": 4,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1651
+          },
+          {
+            "key": 99013,
+            "value": 7
+          }
+        ]
+      },
+      {
+        "quality": 5,
+        "resources": [
+          {
+            "key": 99010,
+            "value": 1651
+          },
+          {
+            "key": 99013,
+            "value": 7
+          }
+        ]
+      }
+    ]
+  }
+]

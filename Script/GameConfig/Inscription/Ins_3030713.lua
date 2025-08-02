@@ -10,12 +10,28 @@ local Ins_3030713 =
 	InscriptionDataAry = 
 	{
 		{
+			GenericModifyLevelId = "",
+			bIsShowGenericModifyLevelDescInUI = true,
+			ModifyLevelDescShowType = 0,
+			bIsShowHelpInUI = false,
+			bUseGenericModifyLevelData = false,
+			Desc = "当武器换弹时",
+		},
+		{
 			GenericModifyLevelId = "3030713",
 			bIsShowGenericModifyLevelDescInUI = false,
 			ModifyLevelDescShowType = 0,
 			bIsShowHelpInUI = false,
 			bUseGenericModifyLevelData = false,
-			Desc = "",
+			Desc = "当武器换弹时移除持久：武器攻击命中增加武器伤害",
+		},
+		{
+			GenericModifyLevelId = "",
+			bIsShowGenericModifyLevelDescInUI = true,
+			ModifyLevelDescShowType = 0,
+			bIsShowHelpInUI = false,
+			bUseGenericModifyLevelData = false,
+			Desc = "造成武器伤害时移除未命名BUFF",
 		},
 	},
 	ModifyLevelDescShowMode = 1,

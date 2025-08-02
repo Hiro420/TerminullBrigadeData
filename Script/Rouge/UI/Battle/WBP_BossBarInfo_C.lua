@@ -1,6 +1,7 @@
 local WBP_BossBarInfo_C = UnLua.Class()
 local ListContainer = require("Rouge.UI.Common.ListContainer")
 local reddot_tbreddot = require("Tables.reddot_tbreddot")
+
 function WBP_BossBarInfo_C:Construct()
   self.Overridden.Construct(self)
   self.IsStopMoveVirtualBar = true
@@ -8,6 +9,7 @@ function WBP_BossBarInfo_C:Construct()
   EventSystem.AddListener(self, EventDef.BossTips.BossBerserk, WBP_BossBarInfo_C.OnBossBerserk)
   self.UIQuality = BattleUIScalability:GetBossBarInfoScalability()
 end
+
 function WBP_BossBarInfo_C:ShowSubBossBar(BossSubActor)
   for index, value in ipairs(self.HorizontalBox_BarsNum:GetAllChildren():ToTable()) do
     value:ShowSubBar(nil ~= BossSubActor)
@@ -32,6 +34,7 @@ function WBP_BossBarInfo_C:ShowSubBossBar(BossSubActor)
   self.SubBar:InitInfo(BossSubActor)
   print("WBP_BossBarInfo_C:ShowSubBossBar", BossSubActor)
 end
+
 function WBP_BossBarInfo_C:SubBossDeath()
   print("WBP_BossBarInfo_C:SubBossDeath")
   for index, value in ipairs(self.HorizontalBox_BarsNum:GetAllChildren():ToTable()) do
@@ -52,6 +55,7 @@ function WBP_BossBarInfo_C:SubBossDeath()
     UpdateVisibility(self.Image_frame_lang, false)
   end
 end
+
 function WBP_BossBarInfo_C:Destruct()
   self.Overridden.Destruct(self)
   UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.HealthTimer)
@@ -102,10 +106,12 @@ function WBP_BossBarInfo_C:Destruct()
   UIManager.ShowSubBossBarDelegate:Remove(self, WBP_BossBarInfo_C.ShowSubBossBar)
   print("WBP_BossBarInfo_C ShowSubBossBarDelegate ", self, UIManager.ShowSubBossBarDelegate)
 end
+
 function WBP_BossBarInfo_C:LuaTick(InDeltaTime)
   self:InterpToTargetHealth(InDeltaTime)
   self:UpdateVirtualBarValue(InDeltaTime)
 end
+
 function WBP_BossBarInfo_C:BindOnBuffChanged(AddedBuff)
   local BuffDataSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.UBuffDataGISubsystem:StaticClass())
   if not BuffDataSubsystem then
@@ -127,12 +133,14 @@ function WBP_BossBarInfo_C:BindOnBuffChanged(AddedBuff)
     self:RefreshVirusInfo()
   end
 end
+
 function WBP_BossBarInfo_C:BindOnBuffRemoved(RemovedBuff)
   table.RemoveItem(self.AllBuffIds, RemovedBuff.ID)
   self.AllBuffInfos[RemovedBuff.ID] = nil
   self:RefreshBuffList()
   self:RefreshVirusInfo()
 end
+
 function WBP_BossBarInfo_C:BindOnElementChanged(Target, BuffId, Params, IsAdd)
   local self = Target
   local TargetActor
@@ -178,6 +186,7 @@ function WBP_BossBarInfo_C:BindOnElementChanged(Target, BuffId, Params, IsAdd)
   self:RefreshBuffList()
   self:RefreshVirusInfo()
 end
+
 function WBP_BossBarInfo_C:RefreshBuffList()
   for i, SingleWidget in iterator(self.BuffList:GetAllChildren()) do
     SingleWidget:Hide()
@@ -211,6 +220,7 @@ function WBP_BossBarInfo_C:RefreshBuffList()
   end
   self.BuffListChildren = self.BuffList:GetAllChildren()
 end
+
 function WBP_BossBarInfo_C:UpdateShieldBarVisibility()
   if 0 == self:GetMaxShieldValue() then
     self.ShieldBar:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -218,6 +228,7 @@ function WBP_BossBarInfo_C:UpdateShieldBarVisibility()
     self.ShieldBar:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function WBP_BossBarInfo_C:GetMaxShieldValue()
   if self.Boss then
     if self.Boss.AbilitySystemComponent then
@@ -229,6 +240,7 @@ function WBP_BossBarInfo_C:GetMaxShieldValue()
     end
   end
 end
+
 function WBP_BossBarInfo_C:CheckHealthState(NewValue, OldValue)
   if OldValue < NewValue then
     self.AddState = true
@@ -240,6 +252,7 @@ function WBP_BossBarInfo_C:CheckHealthState(NewValue, OldValue)
     self:ReduceHealthAnim()
   end
 end
+
 function WBP_BossBarInfo_C:ResetHealthAnim()
   UpdateVisibility(self.CanvasPanelResetHealth, false)
   self.HealthDynamicMaterial:SetScalarParameterValue("\229\144\175\231\148\168\231\135\131\231\131\167", 0)
@@ -250,6 +263,7 @@ function WBP_BossBarInfo_C:ResetHealthAnim()
     self:StopAnimation(self.loop)
   end
 end
+
 function WBP_BossBarInfo_C:ReduceHealthAnim()
   UpdateVisibility(self.CanvasPanelResetHealth, true)
   if self.UIQuality ~= UIQuality.LOW and not self:IsAnimationPlaying(self.Ani_Bleeding) then
@@ -260,6 +274,7 @@ function WBP_BossBarInfo_C:ReduceHealthAnim()
     self.CanvasPanel_Animation:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 function WBP_BossBarInfo_C:UpdateReduceSlotLocation(CurPercent)
   if self.StopAnim then
     return
@@ -273,6 +288,7 @@ function WBP_BossBarInfo_C:UpdateReduceSlotLocation(CurPercent)
     CanvasPanelResetHealthSlot:SetPosition(UE.FVector2D(CurPercent * self.SPX_Offset.Z + self.SPX_Offset.X, Y))
   end
 end
+
 function WBP_BossBarInfo_C:AddHealthAnim()
   if self.HealthDynamicMaterial then
     self.HealthDynamicMaterial:SetScalarParameterValue("\229\144\175\231\148\168\231\135\131\231\131\167", 1)
@@ -282,6 +298,7 @@ function WBP_BossBarInfo_C:AddHealthAnim()
     self.CanvasPanel_Animation:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function WBP_BossBarInfo_C:UpdateAddSlotLocation(CurPercent)
   if self.StopAnim then
     return
@@ -291,6 +308,7 @@ function WBP_BossBarInfo_C:UpdateAddSlotLocation(CurPercent)
     CanvasPanel_AnimationSlot:SetPosition(UE.FVector2D(CurPercent * 699, 128))
   end
 end
+
 function WBP_BossBarInfo_C:InterpToTargetHealth(DeltaTime)
   if self.MultiBloodBarBaseValue == nil or 0 == self.MultiBloodBarBaseValue then
     return
@@ -336,6 +354,7 @@ function WBP_BossBarInfo_C:InterpToTargetHealth(DeltaTime)
     self.URGImage_81:SetClippingValue(CurPercent)
   end
 end
+
 function WBP_BossBarInfo_C:UpdateVirtualBarValue(DeltaTime)
   if self.HealthDynamicMaterial == nil then
     return
@@ -358,6 +377,7 @@ function WBP_BossBarInfo_C:UpdateVirtualBarValue(DeltaTime)
   end
   self.Img_VirtualBloodBar:SetClippingValue(self.VirtualBarValue)
 end
+
 function WBP_BossBarInfo_C:StopMoveVirtualBar(IsStop)
   self.IsStopMoveVirtualBar = IsStop
   if IsStop then
@@ -367,6 +387,7 @@ function WBP_BossBarInfo_C:StopMoveVirtualBar(IsStop)
     end
   end
 end
+
 function WBP_BossBarInfo_C.BindOnElementChanged(Target, BuffId, Params, IsAdd)
   local self = Target
   local TargetActor
@@ -412,6 +433,7 @@ function WBP_BossBarInfo_C.BindOnElementChanged(Target, BuffId, Params, IsAdd)
   self:RefreshBuffList()
   self:RefreshVirusInfo()
 end
+
 function WBP_BossBarInfo_C:InitBar()
   self:InitHealthBar()
   self.Img_VirtualBloodBar:SetClippingValue(self.CoreComponent:GetHealthPercent())
@@ -421,6 +443,7 @@ function WBP_BossBarInfo_C:InitBar()
   self:UpdateShieldBarVisibility()
   self.bTransitionAnim = false
 end
+
 function WBP_BossBarInfo_C:SetBossName(InText)
   local LevelSubSystem = UE.URGGameLevelSystem.GetInstance(GameInstance)
   local Difficulty = 0
@@ -439,6 +462,7 @@ function WBP_BossBarInfo_C:SetBossName(InText)
   end
   self.TextBlock_BossName:SetText(InText)
 end
+
 function WBP_BossBarInfo_C:InitHealthBar()
   self.HealthDynamicMaterial = self.Image_Blood:GetDynamicMaterial()
   if self.HealthDynamicMaterial then
@@ -449,6 +473,7 @@ function WBP_BossBarInfo_C:InitHealthBar()
     self:HealthInitState()
   end
 end
+
 function WBP_BossBarInfo_C:HealthInitState()
   if self.HealthDynamicMaterial then
     self.HealthDynamicMaterial:SetScalarParameterValue("ProgressPercent", self.NewHealthPercent)
@@ -457,6 +482,7 @@ function WBP_BossBarInfo_C:HealthInitState()
     self.BeginAddLerp = false
   end
 end
+
 function WBP_BossBarInfo_C:BlueprintBeginPlay(Boss)
   if Boss == self.Boss and nil ~= Boss then
     return
@@ -569,6 +595,7 @@ function WBP_BossBarInfo_C:BlueprintBeginPlay(Boss)
     UpdateVisibility(self.CanvasPanel_loop, LevelSubSystem:GetMatchGameMode() == TableEnums.ENUMGameMode.BOSSRUSH)
   end
 end
+
 function WBP_BossBarInfo_C:BindOnCharacterDeath()
   print("WBP_BossBarInfo_C:BindOnCharacterDeath")
   UpdateVisibility(self.ImageShieldBossBerserk, false)
@@ -579,6 +606,7 @@ function WBP_BossBarInfo_C:BindOnCharacterDeath()
   end
   self.Boss = nil
 end
+
 function WBP_BossBarInfo_C:BindOnAbilityTagUpdate(Tag, bTagExist, OwnerActor)
   if UE.UBlueprintGameplayTagLibrary.EqualEqual_GameplayTag(Tag, self.InvincibleTag) then
     if not bTagExist then
@@ -600,6 +628,7 @@ function WBP_BossBarInfo_C:BindOnAbilityTagUpdate(Tag, bTagExist, OwnerActor)
     end
   end
 end
+
 function WBP_BossBarInfo_C:HealthAttributeChanged(NewValue, OldValue)
   self.NewHealthValue = self.CoreComponent:GetHealth()
   local MaxHealth = self.CoreComponent:GetMaxHealth()
@@ -609,9 +638,11 @@ function WBP_BossBarInfo_C:HealthAttributeChanged(NewValue, OldValue)
     self.Text_Progress:SetText(string.format("%.2f%%", self.NewHealthValue / MaxHealth * 100))
   end
 end
+
 function WBP_BossBarInfo_C:ShieldAttributeChanged(NewValue, OldValue)
   self:UpdateShieldBarVisibility()
 end
+
 function WBP_BossBarInfo_C:ToughnessAttributeChanged(NewValue, OldValue)
   if OldValue < NewValue then
     if self.UIQuality ~= UIQuality.LOW then
@@ -624,6 +655,7 @@ function WBP_BossBarInfo_C:ToughnessAttributeChanged(NewValue, OldValue)
   end
   self:UpdateToughnessAttribute(NewValue)
 end
+
 function WBP_BossBarInfo_C:UpdateToughnessAttribute(NewValue)
   if NewValue <= 0 then
     ShowWaveWindow(1165)
@@ -633,6 +665,7 @@ function WBP_BossBarInfo_C:UpdateToughnessAttribute(NewValue)
     self:RecoverToughness()
   end
 end
+
 function WBP_BossBarInfo_C:RecoverToughness()
   self.RecoverToughnessProgress = 0
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.RecoverToughnessTimer) then
@@ -649,6 +682,7 @@ function WBP_BossBarInfo_C:RecoverToughness()
     end
   }, 0.05, true)
 end
+
 function WBP_BossBarInfo_C:GetDisplayHealthPercent(Health, MaxHealth)
   if self.MultiBloodBarBaseValue == nil or 0 == self.MultiBloodBarBaseValue then
     self.MultiBloodBarBaseValue = 5000
@@ -695,12 +729,14 @@ function WBP_BossBarInfo_C:GetDisplayHealthPercent(Health, MaxHealth)
     return CurRemainingValue / (self.MultiBloodBarBaseValue + ExcessBlood)
   end
 end
+
 function WBP_BossBarInfo_C:GetDisplayHealthPercentByValue(NewValue)
   if IsValidObj(self.CoreComponent) then
     return self:GetDisplayHealthPercent(NewValue, self.CoreComponent:GetMaxHealth())
   end
   return 0
 end
+
 function WBP_BossBarInfo_C:CheckBarsNum(CurStageHealth, CurStageMaxHealth)
   if self.MultiBloodBarBaseValue == nil or 0 == self.MultiBloodBarBaseValue then
     self.MultiBloodBarBaseValue = 5000
@@ -714,6 +750,7 @@ function WBP_BossBarInfo_C:CheckBarsNum(CurStageHealth, CurStageMaxHealth)
   end
   return DisplayQuantityRemaining
 end
+
 function WBP_BossBarInfo_C:OnBossBerserk(Boss)
   if Boss == self.Boss then
     print("OnBossBerserk")
@@ -722,6 +759,7 @@ function WBP_BossBarInfo_C:OnBossBerserk(Boss)
     UpdateVisibility(self.ImageBossBerserk, self.ShieldBar:GetVisibility() ~= UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function WBP_BossBarInfo_C:SetDisplayStyle(BossNumber)
   if 1 == BossNumber then
     self.SizeBox_All:SetWidthOverride(750)
@@ -739,6 +777,7 @@ function WBP_BossBarInfo_C:SetDisplayStyle(BossNumber)
     self.SPX_Offset.Y = 58
   end
 end
+
 function WBP_BossBarInfo_C:GetCurStageMaxHealth(MaxHealth)
   local Stage = self:GetCurStage()
   Stage = Stage or 1
@@ -755,6 +794,7 @@ function WBP_BossBarInfo_C:GetCurStageMaxHealth(MaxHealth)
     return (MultiSectionBlood.StartRatio - MultiSectionBlood.EndRatio) * MaxHealth
   end
 end
+
 function WBP_BossBarInfo_C:GetCurStageHealth(Health, MaxHealth)
   local Stage = self:GetCurStage()
   Stage = Stage or 1
@@ -771,6 +811,7 @@ function WBP_BossBarInfo_C:GetCurStageHealth(Health, MaxHealth)
     return Health - MultiSectionBlood.EndRatio * MaxHealth
   end
 end
+
 function WBP_BossBarInfo_C:GetCurStage(bShow)
   local MultiSectionBloodComponent = UE.URGMultiSectionBloodComponent.FindMultiSectionBloodComponent(self.Boss)
   if not MultiSectionBloodComponent then
@@ -778,6 +819,7 @@ function WBP_BossBarInfo_C:GetCurStage(bShow)
   end
   return MultiSectionBloodComponent:GetCurrentMultibloodIndex() + 1
 end
+
 function WBP_BossBarInfo_C:GetStageNum()
   local MultiSectionBloodComponent = UE.URGMultiSectionBloodComponent.FindMultiSectionBloodComponent(self.Boss)
   if MultiSectionBloodComponent then
@@ -786,6 +828,7 @@ function WBP_BossBarInfo_C:GetStageNum()
   end
   return 1
 end
+
 function WBP_BossBarInfo_C:OnStageChange(NewValue)
   if self.ShowStage == nil then
     self.ShowStage = 1
@@ -820,6 +863,7 @@ function WBP_BossBarInfo_C:OnStageChange(NewValue)
   end
   self.ShowStage = NewValue
 end
+
 function WBP_BossBarInfo_C:OnSectionBloodFinished(Boss, Index)
   if Boss ~= self.Boss then
     return
@@ -830,6 +874,7 @@ function WBP_BossBarInfo_C:OnSectionBloodFinished(Boss, Index)
     self:OnStageChange(Index + 2)
   end
 end
+
 function WBP_BossBarInfo_C:ChangeNextColor(DisplayQuantityRemaining)
   if self.CurBarColor == nil or 0 == self.CurBarColor then
     self.BarColorIndex = 1
@@ -859,6 +904,7 @@ function WBP_BossBarInfo_C:ChangeNextColor(DisplayQuantityRemaining)
   end
   self.BarColorIndex = self.BarColorIndex + 1
 end
+
 function WBP_BossBarInfo_C:RefreshVirusInfo()
   if not self.AllBuffInfos then
     return
@@ -878,4 +924,5 @@ function WBP_BossBarInfo_C:RefreshVirusInfo()
   UpdateVisibility(self.CanvasPanel_skill, bVirus and not bBossRush)
   UpdateVisibility(self.CanvasPanel_Virus, bVirus and not bBossRush)
 end
+
 return WBP_BossBarInfo_C

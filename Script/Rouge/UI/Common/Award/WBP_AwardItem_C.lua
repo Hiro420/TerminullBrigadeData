@@ -1,4 +1,5 @@
 local WBP_AwardItem_C = UnLua.Class()
+
 function WBP_AwardItem_C:Show(ResourceId)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, ResourceId)
   if not Result then
@@ -20,7 +21,9 @@ function WBP_AwardItem_C:Show(ResourceId)
   end
   self.Txt_Name:SetText(RowInfo.Name)
 end
+
 function WBP_AwardItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return WBP_AwardItem_C

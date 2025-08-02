@@ -4,17 +4,22 @@ local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local WBP_UpgradeSuccessView = Class(ViewBase)
 local PuzzleData = require("Modules.Puzzle.PuzzleData")
+
 function WBP_UpgradeSuccessView:BindClickHandler()
 end
+
 function WBP_UpgradeSuccessView:UnBindClickHandler()
 end
+
 function WBP_UpgradeSuccessView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function WBP_UpgradeSuccessView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_UpgradeSuccessView:OnShow(PuzzleId, OldLevel, OldDetailInfo)
   self:PlayAnimation(self.Ani_in)
   self.WBP_InteractTipWidget:BindInteractAndClickEvent(self, self.ListenForEscKeyPressed)
@@ -122,19 +127,24 @@ function WBP_UpgradeSuccessView:OnShow(PuzzleId, OldLevel, OldDetailInfo)
     HideOtherItem(self.Vertical_SubAttribute, Index, true)
   end
 end
+
 function WBP_UpgradeSuccessView:ListenForEscKeyPressed(...)
   UIMgr:Hide(ViewID.UI_PuzzleUpgradeSuccess)
 end
+
 function WBP_UpgradeSuccessView:OnPreHide(...)
   local PuzzleDevelopView = UIMgr:GetLuaFromActiveView(ViewID.UI_PuzzleDevelop)
   if PuzzleDevelopView then
     PuzzleDevelopView:PlayUpgradeSuccessAnim()
   end
 end
+
 function WBP_UpgradeSuccessView:OnHide()
   self.WBP_InteractTipWidget:UnBindInteractAndClickEvent(self, self.ListenForEscKeyPressed)
 end
+
 function WBP_UpgradeSuccessView:Destruct(...)
   self:OnHide()
 end
+
 return WBP_UpgradeSuccessView

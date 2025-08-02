@@ -26,18 +26,23 @@ local TipsData = {
   }
 }
 local GetPorpsView = Class(ViewBase)
+
 function GetPorpsView:BindClickHandler()
 end
+
 function GetPorpsView:UnBindClickHandler()
 end
+
 function GetPorpsView:OnInit()
   self.DataBindTable = {}
   self.ViewModel = UIModelMgr:Get("GetPorpsViewModel")
   self:BindClickHandler()
 end
+
 function GetPorpsView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function GetPorpsView:OnShow(...)
   self.Conseing = false
   if self.ViewModel then
@@ -61,6 +66,7 @@ function GetPorpsView:OnShow(...)
     self.WBP_CommonTipBg:PlayAnimation(self.WBP_CommonTipBg.Ani_in, 0)
   end
 end
+
 function GetPorpsView:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -73,10 +79,26 @@ function GetPorpsView:OnHide()
   end
   self.Button_Buy.OnClicked:Remove(self, GetPorpsView.CloseSelf)
 end
+
 function GetPorpsView:SetCloseCallback(CloseCallback)
   self.CloseCallback = CloseCallback
 end
+
 function GetPorpsView:HoveredFunc(TargetItem, PropsData)
+  local PropId = PropsData.PropId
+  local bShowExpireAt = true
+  if PropsData.TimeLimitedGiftId ~= nil and 0 ~= PropsData.TimeLimitedGiftId then
+    PropId = PropsData.TimeLimitedGiftId
+    local result, row = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBTimeLimitGift, PropId)
+    if result then
+      for index, value in ipairs(row.giftPackage) do
+        if value.resourceID == PropsData.PropId then
+          bShowExpireAt = value.bShowExpireAt
+          break
+        end
+      end
+    end
+  end
   local result, row = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, PropsData.PropId)
   if not result then
     return
@@ -107,7 +129,8 @@ function GetPorpsView:HoveredFunc(TargetItem, PropsData)
   end
   local params = {}
   if paramNames then
-    for i = 1, #paramNames do
+    table.insert(params, PropId)
+    for i = 2, #paramNames do
       table.insert(params, PropsData[paramNames[i]])
     end
   elseif getParamsFunc then
@@ -115,10 +138,15 @@ function GetPorpsView:HoveredFunc(TargetItem, PropsData)
   end
   self.HoveredTipWidget[initFuncName](self.HoveredTipWidget, table.unpack(params))
   if self.HoveredTipWidget.ShowExpireAt then
-    self.HoveredTipWidget:ShowExpireAt(PropsData.expireAt)
+    if bShowExpireAt then
+      self.HoveredTipWidget:ShowExpireAt(PropsData.expireAt)
+    else
+      self.HoveredTipWidget:ShowExpireAt(nil)
+    end
   end
   ShowCommonTips(nil, TargetItem, self.HoveredTipWidget)
 end
+
 function GetPorpsView:UnHoveredFunc()
   if self.HoveredTipWidget ~= nil then
     UpdateVisibility(self.HoveredTipWidget, false)
@@ -126,6 +154,7 @@ function GetPorpsView:UnHoveredFunc()
   end
   self.HoveredTipWidgetRef = nil
 end
+
 function GetPorpsView:CloseSelf()
   if self.Conseing then
     return
@@ -137,6 +166,7 @@ function GetPorpsView:CloseSelf()
   UIMgr:Hide(ViewID.UI_Common_GetProps)
   EventSystem.Invoke(EventDef.BeginnerGuide.OnGetPropsViewHide)
 end
+
 function GetPorpsView:Destruct()
   if not self.HoveredTipWidgetMap then
     return
@@ -146,4 +176,5 @@ function GetPorpsView:Destruct()
   end
   self.HoveredTipWidgetMap = {}
 end
+
 return GetPorpsView

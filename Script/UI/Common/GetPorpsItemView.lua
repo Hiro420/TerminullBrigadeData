@@ -3,27 +3,34 @@ local ViewBase = require("Framework.UIMgr.ViewBase")
 local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local GetPorpsItemView = Class(ViewBase)
+
 function GetPorpsItemView:BindClickHandler()
 end
+
 function GetPorpsItemView:UnBindClickHandler()
 end
+
 function GetPorpsItemView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function GetPorpsItemView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function GetPorpsItemView:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
   end
 end
+
 function GetPorpsItemView:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
   end
 end
+
 function GetPorpsItemView:OnListItemObjectSet(ListItemObj)
   if ListItemObj then
     self.ListItemData = ListItemObj
@@ -31,10 +38,11 @@ function GetPorpsItemView:OnListItemObjectSet(ListItemObj)
     self.PropNum = ListItemObj.PropNum
     self.IsInscription = ListItemObj.IsInscription
     self.ExchangedAmount = ListItemObj.ExchangedAmount
+    self.TimeLimitedGiftId = ListItemObj.TimeLimitedGiftId
     self.extra = ListItemObj.extra
     self.WBP_Item:InitItem(self.PropId, self.PropNum, self.IsInscription)
     self.WBP_Item.WBP_CommonCountdown.bUpdateCountdownText = false
-    self.WBP_Item:SetTargetExpirationTime(ListItemObj.expireAt)
+    self.WBP_Item:SetTargetTimestampById(self.TimeLimitedGiftId, self.PropId)
     self.WBP_Item:ShowSpecialTag(self.PropId, ListItemObj.expireAt)
     UpdateVisibility(self.Canvas_Decompose, false)
     self.ExchangedResources = ListItemObj.ExchangedResources
@@ -51,6 +59,7 @@ function GetPorpsItemView:OnListItemObjectSet(ListItemObj)
     end)
   end
 end
+
 function GetPorpsItemView:BP_OnEntryReleased()
   self.ListItemData = nil
   self.PropId = 0
@@ -58,16 +67,19 @@ function GetPorpsItemView:BP_OnEntryReleased()
   self.IsInscription = false
   self.extra = {}
 end
+
 function GetPorpsItemView:HoveredFunc()
   if self.ListItemData and UE.RGUtil.IsUObjectValid(self.ListItemData.ParentView) then
     self.ListItemData.ParentView:HoveredFunc(self, self.ListItemData)
   end
 end
+
 function GetPorpsItemView:UnHoveredFunc()
   if self.ListItemData and UE.RGUtil.IsUObjectValid(self.ListItemData.ParentView) then
     self.ListItemData.ParentView:UnHoveredFunc()
   end
 end
+
 function GetPorpsItemView:GetTipsClsByResID(ResID)
   local result, row = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, ResID)
   if not result then
@@ -82,4 +94,5 @@ function GetPorpsItemView:GetTipsClsByResID(ResID)
   local WidgetClass = UE.UClass.Load(WidgetClassPath)
   return WidgetClass
 end
+
 return GetPorpsItemView

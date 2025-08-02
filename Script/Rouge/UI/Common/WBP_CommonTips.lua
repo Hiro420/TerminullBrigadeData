@@ -1,6 +1,8 @@
 local WBP_CommonTips = UnLua.Class()
+
 function WBP_CommonTips:Construct()
 end
+
 function WBP_CommonTips:ShowTips(TxtTitle, TxtContent, Rare, SecondTitle, MediaObj, AwardList, ProEffType)
   UpdateVisibility(self, true)
   self:InitProEffByType(ProEffType)
@@ -33,6 +35,7 @@ function WBP_CommonTips:ShowTips(TxtTitle, TxtContent, Rare, SecondTitle, MediaO
   self:UpdateMedia(MediaObj)
   self:ShowAwardList(AwardList)
 end
+
 function WBP_CommonTips:ShowAwardList(AwardList)
   if table.IsEmpty(AwardList) then
     UpdateVisibility(self.WrapBox_AwardList, false)
@@ -53,6 +56,7 @@ function WBP_CommonTips:ShowAwardList(AwardList)
     end
   end
 end
+
 function WBP_CommonTips:ShowTipsByItemID(ItemID)
   local result, row = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, ItemID)
   if result then
@@ -85,6 +89,7 @@ function WBP_CommonTips:ShowTipsByItemID(ItemID)
     self:ShowTips(Name, Desc, Rare, nil, nil, AwardList)
   end
 end
+
 function WBP_CommonTips:InitProEff(ItemID)
   local ItemId = tonumber(ItemID)
   if not ItemId then
@@ -103,6 +108,7 @@ function WBP_CommonTips:InitProEff(ItemID)
   UpdateVisibility(self.AutoLoad_ComTipProEff, true)
   self.AutoLoad_ComTipProEff.ChildWidget:InitComProEff(ItemId)
 end
+
 function WBP_CommonTips:InitProEffByType(ProEffType)
   if not ProEffType or ProEffType == TableEnums.ENUMResourceEffProType.NONE then
     UpdateVisibility(self.AutoLoad_ComTipProEff, false)
@@ -111,6 +117,7 @@ function WBP_CommonTips:InitProEffByType(ProEffType)
   UpdateVisibility(self.AutoLoad_ComTipProEff, true)
   self.AutoLoad_ComTipProEff.ChildWidget:InitComProEffByProEffType(ProEffType)
 end
+
 function WBP_CommonTips:UpdateMedia(ObjRef)
   self.MediaPlayer:SetLooping(true)
   if ObjRef and UE.UKismetSystemLibrary.IsValidSoftObjectReference(ObjRef) then
@@ -124,11 +131,14 @@ function WBP_CommonTips:UpdateMedia(ObjRef)
     UpdateVisibility(self.Img_Movie, false)
   end
 end
+
 function WBP_CommonTips:HideTips()
   UpdateVisibility(self, false)
 end
+
 function WBP_CommonTips:Destruct(...)
 end
+
 function WBP_CommonTips:ShowCurrencyExpireAt(CurrencyTable)
   UpdateVisibility(self.ExpireAtList, #CurrencyTable > 0)
   UpdateVisibility(self.URGImage_68, false)
@@ -142,9 +152,11 @@ function WBP_CommonTips:ShowCurrencyExpireAt(CurrencyTable)
   end
   HideOtherItem(self.ExpireAtList, Index, true)
 end
+
 function WBP_CommonTips:ShowExpireAt(ExpireAt)
   UpdateVisibility(self.WBP_CommonExpireAt, nil ~= ExpireAt and "0" ~= ExpireAt and "" ~= ExpireAt)
   UpdateVisibility(self.URGImage_68, nil ~= ExpireAt and "0" ~= ExpireAt and "" ~= ExpireAt)
   self.WBP_CommonExpireAt:InitCommonExpireAt(ExpireAt)
 end
+
 return WBP_CommonTips

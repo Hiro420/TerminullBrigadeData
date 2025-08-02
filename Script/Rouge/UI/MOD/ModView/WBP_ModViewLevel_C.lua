@@ -5,6 +5,7 @@ local CostTextColor = {
   Black = UE.FLinearColor(0, 0, 0, 1.0),
   Yellow = UE.FLinearColor(1, 0.300544, 0.029557, 1.0)
 }
+
 function WBP_ModViewLevel_C:InitInfo(bIsLegend)
   local backColor = UE.FLinearColor()
   local activeColor = UE.FLinearColor()
@@ -18,6 +19,7 @@ function WBP_ModViewLevel_C:InitInfo(bIsLegend)
   self.Image_Back:SetColorAndOpacity(backColor)
   self.Image_Activate:SetColorAndOpacity(activeColor)
 end
+
 function WBP_ModViewLevel_C:UpdateActiveInfo(Show)
   if Show then
     self.Image_Activate:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -25,4 +27,5 @@ function WBP_ModViewLevel_C:UpdateActiveInfo(Show)
     self.Image_Activate:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 return WBP_ModViewLevel_C

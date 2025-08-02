@@ -4,21 +4,25 @@ local UKismetTextLibrary = UE.UKismetTextLibrary
 local rapidjson = require("rapidjson")
 local BattlePassData = require("Modules.BattlePass.BattlePassData")
 local BattlePassEntry = Class(ViewBase)
+
 function BattlePassEntry:BindClickHandler()
   self.Btn_Entry.OnClicked:Add(self, self.Btn_Entry_Onclicked)
   self.Button_Open.OnClicked:Add(self, self.Btn_Entry_Onclicked)
   self.Btn_Entry.OnHovered:Add(self, self.Btn_Entry_OnHovered)
   self.Btn_Entry.OnUnhovered:Add(self, self.Btn_Entry_OnUnhovered)
 end
+
 function BattlePassEntry:UnBindClickHandler()
   self.Btn_Entry.OnClicked:Remove(self, self.Btn_Entry_Onclicked)
   self.Button_Open.OnClicked:Remove(self, self.Btn_Entry_Onclicked)
   self.Btn_Entry.OnHovered:Remove(self, self.Btn_Entry_OnHovered)
   self.Btn_Entry.OnUnhovered:Remove(self, self.Btn_Entry_OnUnhovered)
 end
+
 function BattlePassEntry:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function BattlePassEntry:Construct()
   self:BindClickHandler()
   local BattlePassMainViewModel = UIModelMgr:Get("BattlePassMainViewModel")
@@ -26,15 +30,19 @@ function BattlePassEntry:Construct()
     BattlePassMainViewModel:PullBattlePassTaskInfo()
   end
 end
+
 function BattlePassEntry:Destruct()
   self:UnBindClickHandler()
 end
+
 function BattlePassEntry:OnPreHide()
   self:UnBindClickHandler()
 end
+
 function BattlePassEntry:OnHide()
   self:StopAllAnimations()
 end
+
 function BattlePassEntry:InitInfo(Level, Exp, ActivateState, BattlePassID)
   self.BattlePassID = BattlePassID
   self.ActivateState = ActivateState
@@ -55,7 +63,7 @@ function BattlePassEntry:InitInfo(Level, Exp, ActivateState, BattlePassID)
   end
   local curExp = tonumber(Exp) - curLevelInfo.Exp
   local MaxLevel = BattlePassData:GetBattlePassMaxLevel(BattlePassID)
-  if tonumber(Exp) >= MaxLevel * (BPAwardList[2].Exp - BPAwardList[1].Exp) then
+  if MaxLevel <= tonumber(Level) then
     curExp = BPAwardList[2].Exp - BPAwardList[1].Exp
   end
   self.TXT_CurExp:SetText(curExp)
@@ -85,6 +93,7 @@ function BattlePassEntry:InitInfo(Level, Exp, ActivateState, BattlePassID)
     self.IsMaxLevel = true
   end
 end
+
 function BattlePassEntry:Btn_Entry_Onclicked()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.PASS) then
@@ -99,18 +108,21 @@ function BattlePassEntry:Btn_Entry_Onclicked()
     BPMainView:InitSubView(self.BattlePassID)
   end
 end
+
 function BattlePassEntry:Btn_Entry_OnHovered()
   if self.IsMaxLevel then
     return
   end
   UpdateVisibility(self.Panel_HoverTips, true)
 end
+
 function BattlePassEntry:Btn_Entry_OnUnhovered()
   if self.IsMaxLevel then
     return
   end
   UpdateVisibility(self.Panel_HoverTips, false)
 end
+
 function BattlePassEntry:CheckNeedOpenBuyView()
   local LocalBattlePassFilePath = UE.UKismetSystemLibrary.GetProjectSavedDirectory() .. "/BattlePass/BattlePassData_" .. DataMgr.GetUserId() .. ".json"
   local Result, fileStr = UE.URGBlueprintLibrary.LoadFileToString(LocalBattlePassFilePath)
@@ -133,4 +145,5 @@ function BattlePassEntry:CheckNeedOpenBuyView()
     return true
   end
 end
+
 return BattlePassEntry

@@ -1,4 +1,5 @@
 local RewardInscreaseItem = UnLua.Class()
+
 function RewardInscreaseItem:Construct()
   self.Overridden.Construct(self)
   self.StateCtrl_State:ChangeStatus("DisActive")
@@ -6,6 +7,7 @@ function RewardInscreaseItem:Construct()
   EventSystem.AddListenerNew(EventDef.RewardIncrease.RewardIncreaseSucc, self, self.OnRewardIncrease)
   self:OnRewardIncrease()
 end
+
 function RewardInscreaseItem:Destruct()
   EventSystem.RemoveListenerNew(EventDef.RewardIncrease.RewardIncreaseSucc, self, self.OnRewardIncrease)
   if self.TipsWidget then
@@ -14,6 +16,7 @@ function RewardInscreaseItem:Destruct()
   self.TipsWidget = nil
   self.Overridden.Destruct(self)
 end
+
 function RewardInscreaseItem:OnRewardIncrease()
   local rewardIncreaseCount = DataMgr.GetRewardIncreaseCount()
   self.Txt_LeftNum:SetText(rewardIncreaseCount)
@@ -26,13 +29,16 @@ function RewardInscreaseItem:OnRewardIncrease()
     self.StateCtrl_State:ChangeStatus("DisActive")
   end
 end
+
 function RewardInscreaseItem:BP_RefreshTime(UnixTimestampNowParam)
   local RewardIncreaseModule = ModuleManager:Get("RewardIncreaseModule")
   RewardIncreaseModule:RequestGetRewardIncreaseCount(UnixTimestampNowParam)
 end
+
 function RewardInscreaseItem:BP_ServerTimeZone()
   return DataMgr.GetServerTimeZone()
 end
+
 function RewardInscreaseItem:OnMouseEnter()
   local classPath = "/Game/Rouge/UI/RewardIncrease/WBP_RewardInscreaseTips.WBP_RewardInscreaseTips"
   self.TipsWidget = ShowCommonTips(nil, self.Btn_Hover, self.TipsWidget, classPath, false, false, UE.FVector2D(-10, 0))
@@ -41,7 +47,9 @@ function RewardInscreaseItem:OnMouseEnter()
     self.TipsWidget.Text_SecTitleNum:SetText(DataMgr.GetRewardIncreaseCount())
   end
 end
+
 function RewardInscreaseItem:OnMouseLeave()
   UpdateVisibility(self.TipsWidget, false)
 end
+
 return RewardInscreaseItem

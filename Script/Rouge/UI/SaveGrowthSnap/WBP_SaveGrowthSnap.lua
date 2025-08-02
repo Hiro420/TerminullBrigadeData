@@ -3,6 +3,7 @@ local SaveGrowthSnapData = require("Modules.SaveGrowthSnap.SaveGrowthSnapData")
 local SaveGrowthSnapHandler = require("Protocol.SaveGrowthSnap.SaveGrowthSnapHandler")
 local SaveMaxNum = 3
 local EscActionName = "PauseGame"
+
 function WBP_SaveGrowthSnap:Construct()
   self.WBP_CommonButton_Overwrite.OnMainButtonClicked:Add(self, self.OnSave)
   self.WBP_CommonButton_Save.OnMainButtonClicked:Add(self, self.OnSave)
@@ -12,6 +13,7 @@ function WBP_SaveGrowthSnap:Construct()
   EventSystem.AddListenerNew(EventDef.SaveGrowthSnap.OnRefreshSnap, self, self.OnRefreshSnap)
   EventSystem.AddListenerNew(EventDef.SaveGrowthSnap.OnRefreshSelect, self, self.OnUpdateSelect)
 end
+
 function WBP_SaveGrowthSnap:ShowSnap(SaveGrowthSnapFrom)
   SaveGrowthSnapHandler.RequestGetGrowthSnapShot()
   local saveGrowthSnapFrom = SaveGrowthSnapFrom or ESaveGrowthSnapFrom.Settle
@@ -31,9 +33,11 @@ function WBP_SaveGrowthSnap:ShowSnap(SaveGrowthSnapFrom)
   end
   self:PushInputAction()
 end
+
 function WBP_SaveGrowthSnap:ListenForEscInputAction()
   self:HideSnap()
 end
+
 function WBP_SaveGrowthSnap:HideSnap()
   self.WBP_InteractTipWidget_Esc.Btn_Main.OnClicked:Remove(self, self.ListenForEscInputAction)
   if IsListeningForInputAction(self, EscActionName) then
@@ -41,6 +45,7 @@ function WBP_SaveGrowthSnap:HideSnap()
   end
   UpdateVisibility(self, false)
 end
+
 function WBP_SaveGrowthSnap:OnRefreshSnap(bFromSave)
   if bFromSave then
     self.bHadSave = true
@@ -57,6 +62,7 @@ function WBP_SaveGrowthSnap:OnRefreshSnap(bFromSave)
   local str = UE.FTextFormat(self.InvalidCountDownFmt, day, hour)
   self.RGTxt_InvalidCountDown:SetText(str)
 end
+
 function WBP_SaveGrowthSnap:UpdateExpire()
   local settlementView = RGUIMgr:GetUI(UIConfig.WBP_SettlementView_C.UIName)
   if UE.RGUtil.IsUObjectValid(settlementView) and settlementView.bSaveGrowthSnapexpire then
@@ -67,6 +73,7 @@ function WBP_SaveGrowthSnap:UpdateExpire()
     self.RGCanvas_Overwrite:SetIsEnabled(true)
   end
 end
+
 function WBP_SaveGrowthSnap:InitToggle()
   print("WBP_SaveGrowthSnap:InitToggle", #SaveGrowthSnapData.SaveGrowthSnapMap)
   SaveMaxNum = #SaveGrowthSnapData.SaveGrowthSnapMap + 1
@@ -84,6 +91,7 @@ function WBP_SaveGrowthSnap:InitToggle()
   self.RGToggleComGroup_Save:SelectId(SaveGrowthSnapData.CurSelectTogglePos)
   HideOtherItem(self.RGScrollBox_Toggle, SaveMaxNum + 1, true)
 end
+
 function WBP_SaveGrowthSnap:OnToggleStateChanged(ToggleId)
   print("WBP_SaveGrowthSnap:OnToggleStateChanged", ToggleId)
   local pos = tonumber(ToggleId)
@@ -91,6 +99,7 @@ function WBP_SaveGrowthSnap:OnToggleStateChanged(ToggleId)
   self:InitSaveGrowSnapByPos(SaveGrowthSnapData.CurSelectTogglePos)
   self:OnUpdateSelect()
 end
+
 function WBP_SaveGrowthSnap:OnUpdateSelect()
   if SaveGrowthSnapData.CurSelectPos ~= SaveGrowthSnapData.CurSelectTogglePos then
     UpdateVisibility(self.RGCanvas_Select, true)
@@ -100,9 +109,11 @@ function WBP_SaveGrowthSnap:OnUpdateSelect()
     UpdateVisibility(self.RGCanvas_HadSelected, true)
   end
 end
+
 function WBP_SaveGrowthSnap:InitSaveGrowSnapByStaging()
   self:InitSaveGrowSnapByStaging(SaveGrowthSnapData.SnapshotStaging)
 end
+
 function WBP_SaveGrowthSnap:InitSaveGrowSnapByCurSelectPos()
   if self.bHadSave then
     UpdateVisibility(self.RGCanvas_Overwrite, false)
@@ -119,6 +130,7 @@ function WBP_SaveGrowthSnap:InitSaveGrowSnapByCurSelectPos()
     self.StateCtrl_Empty:ChangeStatus(EEmpty.Empty)
   end
 end
+
 function WBP_SaveGrowthSnap:InitSaveGrowSnapByPos(Pos)
   if self.bHadSave then
     UpdateVisibility(self.RGCanvas_Overwrite, false)
@@ -135,6 +147,7 @@ function WBP_SaveGrowthSnap:InitSaveGrowSnapByPos(Pos)
     self.StateCtrl_Empty:ChangeStatus(EEmpty.Empty)
   end
 end
+
 function WBP_SaveGrowthSnap:InitSaveGrowthSnapByData(SnapData)
   if SnapData and SnapData.gold_coin then
     self.RGTxt_Coin:SetText(SnapData.gold_coin)
@@ -244,8 +257,10 @@ function WBP_SaveGrowthSnap:InitSaveGrowthSnapByData(SnapData)
   end
   HideOtherItem(self.WrapBoxScrollSetList, idxSet)
 end
+
 function WBP_SaveGrowthSnap:OnAnimationFinished(Animation)
 end
+
 function WBP_SaveGrowthSnap:OnSave()
   local WaveWindParam = UE.FWaveWindowParam()
   WaveWindParam.IntParam0 = UE.EComMsgPopupStateType.EditTextWithoutCost
@@ -264,9 +279,11 @@ function WBP_SaveGrowthSnap:OnSave()
     end, nil, WaveWindParam)
   end
 end
+
 function WBP_SaveGrowthSnap:OnSelect()
   SaveGrowthSnapHandler.RequestSetGrowthSnapShot(SaveGrowthSnapData.CurSelectTogglePos)
 end
+
 function WBP_SaveGrowthSnap:UpdateShowPickupTipsView(bIsShowTipsView, ScrollId, TargetItem, ScrollTipsOpenType, bIsNeedInit)
   print("WBP_SettlementPlayerInfoView_C:UpdateShowPickupTipsView", bIsShowTipsView, ScrollId, TargetItem, ScrollTipsOpenType, bIsNeedInit)
   if ScrollId and ScrollId > 0 then
@@ -277,6 +294,7 @@ function WBP_SaveGrowthSnap:UpdateShowPickupTipsView(bIsShowTipsView, ScrollId, 
     UpdateVisibility(self.WBP_ScrollPickUpTipsView, false)
   end
 end
+
 function WBP_SaveGrowthSnap:UpdateGenericModifyTipsFunc(bIsShow, Data, ModifyChooseTypeParam, Slot)
   if bIsShow then
     if ModifyChooseTypeParam == ModifyChooseType.GenericModify then
@@ -289,6 +307,7 @@ function WBP_SaveGrowthSnap:UpdateGenericModifyTipsFunc(bIsShow, Data, ModifyCho
     self.WBP_GenericModifyBagTips:Hide()
   end
 end
+
 function WBP_SaveGrowthSnap:UpdateScrollSetTips(bIsShow, ActivatedSetData, ScrollSetItem)
   if bIsShow then
     self.WBP_ScrollSetTips:InitScrollSetTips(ActivatedSetData)
@@ -304,6 +323,7 @@ function WBP_SaveGrowthSnap:UpdateScrollSetTips(bIsShow, ActivatedSetData, Scrol
     UpdateVisibility(self.WBP_ScrollSetTips, false)
   end
 end
+
 function WBP_SaveGrowthSnap:Destruct()
   print("WBP_SaveGrowthSnap:Destruct()")
   self.bHadSave = false
@@ -314,4 +334,5 @@ function WBP_SaveGrowthSnap:Destruct()
   EventSystem.RemoveListenerNew(EventDef.SaveGrowthSnap.OnRefreshSnap, self, self.OnRefreshSnap)
   EventSystem.RemoveListenerNew(EventDef.SaveGrowthSnap.OnRefreshSelect, self, self.OnUpdateSelect)
 end
+
 return WBP_SaveGrowthSnap

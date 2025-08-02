@@ -1,9 +1,11 @@
 local WBP_SingleDifficultLevelItem_C = UnLua.Class()
+
 function WBP_SingleDifficultLevelItem_C:Construct()
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
   self.Btn_Main.OnHovered:Add(self, self.BindOnMainButtOnHovered)
   self.Btn_Main.OnUnhovered:Add(self, self.BindOnMainButtOnUnhovered)
 end
+
 function WBP_SingleDifficultLevelItem_C:Show(Floor, GameLevelId, Parent)
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.Floor = Floor
@@ -42,19 +44,23 @@ function WBP_SingleDifficultLevelItem_C:Show(Floor, GameLevelId, Parent)
     self.TeamUnLock = result
   end
 end
+
 function WBP_SingleDifficultLevelItem_C:BindOnMainButtonClicked()
   EventSystem.Invoke(EventDef.ModeSelection.OnChangeModeDifficultLevelItem, self.GameModeIndex, self.Floor, self.GameModeId)
 end
+
 function WBP_SingleDifficultLevelItem_C:BindOnMainButtOnHovered()
   if not self.TeamUnLock then
     self.Parent:DifficultLevel_OnHover(true, self.Floor)
   end
 end
+
 function WBP_SingleDifficultLevelItem_C:BindOnMainButtOnUnhovered()
   if not self.TeamUnLock then
     self.Parent:DifficultLevel_OnHover(false)
   end
 end
+
 function WBP_SingleDifficultLevelItem_C:BindOnChangeModeDifficultLevelItem(GameModeIndex, Floor)
   if Floor == self.Floor then
     self.Txt_Level:SetColorAndOpacity(self.SelectTextColor)
@@ -76,6 +82,7 @@ function WBP_SingleDifficultLevelItem_C:BindOnChangeModeDifficultLevelItem(GameM
     self.Img_Selected:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_SingleDifficultLevelItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.Floor = -1
@@ -83,7 +90,9 @@ function WBP_SingleDifficultLevelItem_C:Hide()
   self.GameModeIndex = -1
   EventSystem.RemoveListener(EventDef.ModeSelection.OnChangeModeDifficultLevelItem, self.BindOnChangeModeDifficultLevelItem, self)
 end
+
 function WBP_SingleDifficultLevelItem_C:Destruct()
   self:Hide()
 end
+
 return WBP_SingleDifficultLevelItem_C

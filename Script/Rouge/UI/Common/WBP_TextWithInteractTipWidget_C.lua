@@ -1,9 +1,11 @@
 local WBP_TextWithInteractTipWidget_C = UnLua.Class()
+
 function WBP_TextWithInteractTipWidget_C:Construct()
   self.LeisureCustomKeyNameList:Add(self.CustomKeyNameTemplate)
   self.LeisureTextBlockWidgetList:Add(self.TextTemplate)
   self:SetTextStyle(self.TextTemplate)
 end
+
 function WBP_TextWithInteractTipWidget_C:InitStyle(InTextColorAndOpacity, InFont, InJustification, InMinDesiredWidth, InShadowColor, InShadowOffset, InStrikeBrush, InTransformPolicy)
   self.TextColorAndOpacity = InTextColorAndOpacity
   self.Font = InFont
@@ -14,6 +16,7 @@ function WBP_TextWithInteractTipWidget_C:InitStyle(InTextColorAndOpacity, InFont
   self.StrikeBrush = InStrikeBrush
   self.TransformPolicy = InTransformPolicy
 end
+
 function WBP_TextWithInteractTipWidget_C:RefreshInfo(SourceString, CustomKeyNameList)
   self.SourceString = SourceString
   self.CustomKeyNameList = CustomKeyNameList
@@ -29,6 +32,7 @@ function WBP_TextWithInteractTipWidget_C:RefreshInfo(SourceString, CustomKeyName
   end
   self:RefreshListWidgets(self.SourceString)
 end
+
 function WBP_TextWithInteractTipWidget_C:RefreshListWidgets(SourceString)
   local Result, LeftS, RightS = UE.UKismetStringLibrary.Split(SourceString, "{0}", nil, nil, UE.ESearchCase.IgnoreCase, UE.ESearchDir.FromStart)
   if not (Result and self.CustomKeyNameList) or not self.CustomKeyNameList:IsValidIndex(1) then
@@ -50,6 +54,7 @@ function WBP_TextWithInteractTipWidget_C:RefreshListWidgets(SourceString)
     end
   end
 end
+
 function WBP_TextWithInteractTipWidget_C:GetTextWidget()
   local TargetTextWidget
   if self.LeisureTextBlockWidgetList:IsValidIndex(1) then
@@ -64,6 +69,7 @@ function WBP_TextWithInteractTipWidget_C:GetTextWidget()
   Slot:SetVerticalAlignment(UE.EVerticalAlignment.VAlign_Center)
   return TargetTextWidget
 end
+
 function WBP_TextWithInteractTipWidget_C:SetTextStyle(InTextBlock)
   InTextBlock:SetColorAndOpacity(self.TextColorAndOpacity)
   InTextBlock:SetFont(self.Font)
@@ -74,6 +80,7 @@ function WBP_TextWithInteractTipWidget_C:SetTextStyle(InTextBlock)
   InTextBlock:SetStrikeBrush(self.StrikeBrush)
   InTextBlock:SetTextTransformPolicy(self.TransformPolicy)
 end
+
 function WBP_TextWithInteractTipWidget_C:GetCustomKeyNameWidget()
   local TargetCustomKeyNameWidget
   if self.LeisureCustomKeyNameList:IsValidIndex(self.LeisureCustomKeyNameList:LastIndex()) then
@@ -87,4 +94,5 @@ function WBP_TextWithInteractTipWidget_C:GetCustomKeyNameWidget()
   Slot:SetVerticalAlignment(UE.EVerticalAlignment.VAlign_Center)
   return TargetCustomKeyNameWidget
 end
+
 return WBP_TextWithInteractTipWidget_C

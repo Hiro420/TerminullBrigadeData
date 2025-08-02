@@ -11,6 +11,7 @@ PuzzleViewModel.propertyBindings = {
   BasicInfo = {}
 }
 PuzzleViewModel.subViewModels = {}
+
 function PuzzleViewModel:OnInit()
   self.Super.OnInit(self)
   self.IsShowPuzzleDetailList = false
@@ -29,6 +30,7 @@ function PuzzleViewModel:OnInit()
   PuzzleData:DealWithTable()
   EventSystem.AddListenerNew(EventDef.WSMessage.HeroesExpired, self, self.BindOnHeroesExpired)
 end
+
 function PuzzleViewModel:GetPuzzleDragOperation(DragCoordinate, PuzzleId)
   if not self.DragOperation or not self.DragOperation:IsValid() then
     local DragOperationClass = GetAssetByPath("/Game/Rouge/UI/Lobby/Puzzle/DragOperation.DragOperation_C", true)
@@ -43,6 +45,7 @@ function PuzzleViewModel:GetPuzzleDragOperation(DragCoordinate, PuzzleId)
   self.DragOperation.DefaultDragVisual = self:GetPuzzleDragVisualWidget(DragCoordinate, PuzzleId)
   return self.DragOperation
 end
+
 function PuzzleViewModel:GetGemDragOperation(GemId)
   if not self.DragOperation or not self.DragOperation:IsValid() then
     local DragOperationClass = GetAssetByPath("/Game/Rouge/UI/Lobby/Puzzle/DragOperation.DragOperation_C", true)
@@ -56,6 +59,7 @@ function PuzzleViewModel:GetGemDragOperation(GemId)
   self.DragOperation.DefaultDragVisual = self:GetGemDragVisualWidget(GemId)
   return self.DragOperation
 end
+
 function PuzzleViewModel:UpdatePuzzleDragCoordinate(DragCoordinate)
   if not self.DragOperation or not self.DragOperation:IsValid() then
     return
@@ -63,6 +67,7 @@ function PuzzleViewModel:UpdatePuzzleDragCoordinate(DragCoordinate)
   self.DragOperation.DragCoordinate = DragCoordinate
   self.DragVisualWidget:RefreshItemPos(DragCoordinate)
 end
+
 function PuzzleViewModel:GetPuzzleDragVisualWidget(DragCoordinate, PuzzleId)
   if not self.DragVisualWidget or not self.DragVisualWidget:IsValid() then
     local WidgetClass = GetAssetByPath("/Game/Rouge/UI/Lobby/Puzzle/WBP_PuzzleDragWidget.WBP_PuzzleDragWidget_C", true)
@@ -72,6 +77,7 @@ function PuzzleViewModel:GetPuzzleDragVisualWidget(DragCoordinate, PuzzleId)
   self.DragVisualWidget:Show(DragCoordinate, PuzzleId)
   return self.DragVisualWidget
 end
+
 function PuzzleViewModel:GetGemDragVisualWidget(GemId)
   if not self.GemDragVisualWidget or not self.GemDragVisualWidget:IsValid() then
     local WidgetClass = GetAssetByPath("/Game/Rouge/UI/Lobby/Gem/WBP_GemDragWidget.WBP_GemDragWidget_C", true)
@@ -81,6 +87,7 @@ function PuzzleViewModel:GetGemDragVisualWidget(GemId)
   self.GemDragVisualWidget:Show(GemId)
   return self.GemDragVisualWidget
 end
+
 function PuzzleViewModel:GetPuzzleHoverWidget(PuzzleId, HoverItem)
   if HoverItem then
     self.PuzzleItemTipWidget = ShowCommonTips(nil, HoverItem, nil, "/Game/Rouge/UI/Lobby/Puzzle/WBP_PuzzleItemTip.WBP_PuzzleItemTip_C")
@@ -94,6 +101,7 @@ function PuzzleViewModel:GetPuzzleHoverWidget(PuzzleId, HoverItem)
   end
   return self.PuzzleItemTipWidget
 end
+
 function PuzzleViewModel:GetGemHoverWidget(GemId, HoverItem)
   if HoverItem then
     self.GemItemTipWidget = ShowCommonTips(nil, HoverItem, nil, "/Game/Rouge/UI/Lobby/Gem/WBP_GemItemTip.WBP_GemItemTip_C")
@@ -107,11 +115,13 @@ function PuzzleViewModel:GetGemHoverWidget(GemId, HoverItem)
   end
   return self.GemItemTipWidget
 end
+
 function PuzzleViewModel:HidePuzzleHoverWidget(...)
   if self.PuzzleItemTipWidget and self.PuzzleItemTipWidget:IsValid() then
     self.PuzzleItemTipWidget:Hide()
   end
 end
+
 function PuzzleViewModel:GetPuzzleLockBoardHoverWidget(SlotId)
   if not self.PuzzleLockBoardTipWidget or not self.PuzzleLockBoardTipWidget:IsValid() then
     local WidgetClass = GetAssetByPath("/Game/Rouge/UI/Lobby/Puzzle/WBP_PuzzleLockBoardTip.WBP_PuzzleLockBoardTip_C", true)
@@ -121,30 +131,39 @@ function PuzzleViewModel:GetPuzzleLockBoardHoverWidget(SlotId)
   self.PuzzleLockBoardTipWidget:Show(SlotId)
   return self.PuzzleLockBoardTipWidget
 end
+
 function PuzzleViewModel:SetCurHeroId(InHeroId)
   self.CurHeroId = InHeroId
 end
+
 function PuzzleViewModel:GetCurHeroId(...)
   return self.CurHeroId
 end
+
 function PuzzleViewModel:GetIsShowPuzzleDetailList(...)
   return self.IsShowDetailPuzzleList
 end
+
 function PuzzleViewModel:SetIsShowPuzzleDetailList(InIsShowPuzzleDetailList)
   self.IsShowDetailPuzzleList = InIsShowPuzzleDetailList
 end
+
 function PuzzleViewModel:SetCurSelectPuzzleId(PuzzleId)
   self.CurSelectPuzzleId = PuzzleId
 end
+
 function PuzzleViewModel:GetCurSelectPuzzleId(...)
   return self.CurSelectPuzzleId
 end
+
 function PuzzleViewModel:SetCurSelectGemId(GemId)
   self.CurSelectGemId = GemId
 end
+
 function PuzzleViewModel:GetCurSelectGemId(...)
   return self.CurSelectGemId
 end
+
 function PuzzleViewModel:SetPuzzleSortRule(InSortRule, IsGem)
   if IsGem then
     self.GemSortRule = InSortRule
@@ -152,9 +171,11 @@ function PuzzleViewModel:SetPuzzleSortRule(InSortRule, IsGem)
     self.PuzzleSortRule = InSortRule
   end
 end
+
 function PuzzleViewModel:GetPuzzleSortRule(IsGem)
   return IsGem and self.GemSortRule or self.PuzzleSortRule
 end
+
 function PuzzleViewModel:GetSortRuleFunction(SortRule, IsGem)
   local TargetSortRule = SortRule
   TargetSortRule = TargetSortRule or self.PuzzleSortRule
@@ -280,21 +301,27 @@ function PuzzleViewModel:GetSortRuleFunction(SortRule, IsGem)
     end
   end
 end
+
 function PuzzleViewModel:GetPuzzleFilterSelectStatus(...)
   return self.FilterSelectStatus
 end
+
 function PuzzleViewModel:GetPuzzleFilterDiscardSelected(...)
   return self.FilterDiscardSelected
 end
+
 function PuzzleViewModel:SetPuzzleFilterDiscardSelected(IsSelect)
   self.FilterDiscardSelected = IsSelect
 end
+
 function PuzzleViewModel:GetPuzzleFilterLockSelected()
   return self.FilterLockSelected
 end
+
 function PuzzleViewModel:SetPuzzleFilterLockSelected(IsSelect)
   self.FilterLockSelected = IsSelect
 end
+
 function PuzzleViewModel:SetPuzzleFilterSelectStatus(InFilter)
   self.FilterSelectStatus = DeepCopy(InFilter)
   if self:GetFirstView() then
@@ -302,9 +329,11 @@ function PuzzleViewModel:SetPuzzleFilterSelectStatus(InFilter)
     self:GetFirstView():RefreshFilterIconStatus()
   end
 end
+
 function PuzzleViewModel:GetGemFilterSelectStatus(...)
   return self.GemFilterSelectStatus
 end
+
 function PuzzleViewModel:SetGemFilterSelectStatus(InFilter)
   self.GemFilterSelectStatus = DeepCopy(InFilter)
   if self:GetFirstView() then
@@ -312,9 +341,11 @@ function PuzzleViewModel:SetGemFilterSelectStatus(InFilter)
     self:GetFirstView():RefreshFilterIconStatus()
   end
 end
+
 function PuzzleViewModel:GetGemFilterSelectStatus(...)
   return self.GemFilterSelectStatus
 end
+
 function PuzzleViewModel:SetGemFilterSelectStatus(InFilter)
   self.GemFilterSelectStatus = DeepCopy(InFilter)
   if self:GetFirstView() then
@@ -322,6 +353,7 @@ function PuzzleViewModel:SetGemFilterSelectStatus(InFilter)
     self:GetFirstView():RefreshFilterIconStatus()
   end
 end
+
 function PuzzleViewModel:OnViewClose(...)
   if self.DragOperation then
     if self.DragOperation:IsValid() then
@@ -380,13 +412,15 @@ function PuzzleViewModel:OnViewClose(...)
   self.FilterDiscardSelected = false
   self.FilterLockSelected = false
 end
+
 function PuzzleViewModel:BindOnHeroesExpired(Message)
   print("PuzzleViewModel:BindOnHeroesExpired", Message)
   local JsonTable = rapidjson.decode(Message)
   table.Print(JsonTable.heroIDs)
-  for i, SingleHeroId in ipairs(JsonTable.heroIDs) do
-    local EquipPuzzleIdList = PuzzleData:GetEquipPuzzleIdListByHeroId(SingleHeroId)
-    for i, SinglePuzzleId in ipairs(EquipPuzzleIdList) do
+  local AllPackageInfo = PuzzleData:GetAllPuzzlePackageInfo()
+  for SinglePuzzleId, SinglePackageInfo in pairs(AllPackageInfo) do
+    local CurEquipHeroId = SinglePackageInfo.equipHeroID
+    if table.Contain(JsonTable.heroIDs, CurEquipHeroId) then
       local OldSlotIdList = PuzzleData:GetSlotListByPuzzleId(SinglePuzzleId)
       if OldSlotIdList then
         for i, SingleSlotId in ipairs(OldSlotIdList) do
@@ -395,14 +429,16 @@ function PuzzleViewModel:BindOnHeroesExpired(Message)
       end
       PuzzleData:SetSlotEquipId(SinglePuzzleId, nil)
       PuzzleData:SetPuzzleEquipHeroId(SinglePuzzleId, 0)
+      PuzzleData:RemoveEquipPuzzleIdListByHeroId(CurEquipHeroId)
     end
-    PuzzleData:RemoveEquipPuzzleIdListByHeroId(SingleHeroId)
   end
   EventSystem.Invoke(EventDef.Puzzle.RefreshPuzzleboardItemStatus)
   EventSystem.Invoke(EventDef.Puzzle.OnUpdatePuzzlePackageInfo)
 end
+
 function PuzzleViewModel:OnShutdown()
   self.Super.OnShutdown(self)
   EventSystem.RemoveListenerNew(EventDef.WSMessage.HeroesExpired, self, self.BindOnHeroesExpired)
 end
+
 return PuzzleViewModel

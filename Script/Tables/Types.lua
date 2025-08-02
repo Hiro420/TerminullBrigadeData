@@ -5,12 +5,14 @@ local tinsert = table.insert
 local SimpleClass = function()
   local class = {}
   class.__index = class
+  
   function class.New(...)
     local ctor = class.ctor
     local o = ctor and ctor(...) or {}
     setmetatable(o, class)
     return o
   end
+  
   return class
 end
 local get_map_size = function(m)

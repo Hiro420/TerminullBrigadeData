@@ -1,0 +1,72 @@
+[
+  {
+    "ID": 1,
+    "name": "环都Ⅰ",
+    "Type": 0,
+    "UnlockWorld": 0,
+    "WorldID": 23,
+    "desc": "探索环都会掉落不同品质的环都Ⅰ模组。\\n模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Cyber.Icon_Cyber",
+    "DropFloor": 0
+  },
+  {
+    "ID": 2,
+    "name": "炽热焦土Ⅰ",
+    "Type": 0,
+    "UnlockWorld": 24,
+    "WorldID": 24,
+    "desc": "探索炽热焦土会掉落不同品质的炽热焦土Ⅰ模组。\\n模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Wasteland.Icon_Wasteland",
+    "DropFloor": 0
+  },
+  {
+    "ID": 3,
+    "name": "环都Ⅱ",
+    "Type": 0,
+    "UnlockWorld": 0,
+    "WorldID": 23,
+    "desc": "探索环都会掉落不同品质的环都Ⅱ模组。\\n模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Interstellar.Icon_Interstellar",
+    "DropFloor": 0
+  },
+  {
+    "ID": 4,
+    "name": "炽热焦土Ⅱ",
+    "Type": 0,
+    "UnlockWorld": 24,
+    "WorldID": 24,
+    "desc": "探索炽热焦土会掉落不同品质的炽热焦土Ⅱ模组。\\n模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_FairyTales.Icon_FairyTales",
+    "DropFloor": 0
+  },
+  {
+    "ID": 5,
+    "name": "特殊α",
+    "Type": 1,
+    "UnlockWorld": 0,
+    "WorldID": 0,
+    "desc": "只有在七日登录活动与击败5难度及以上的首领的情况下，才会掉落特殊α模组。\\n模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。\\n特殊α模组的词条与普通模组互相独立。",
+    "Icon": "",
+    "DropFloor": 5
+  },
+  {
+    "ID": 6,
+    "name": "特殊β",
+    "Type": 1,
+    "UnlockWorld": 0,
+    "WorldID": 0,
+    "desc": "只有在七日登录活动与击败5难度及以上的首领的情况下，才会掉落特殊β模组。\\n模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。\\n特殊β模组的词条与普通模组互相独立。",
+    "Icon": "",
+    "DropFloor": 5
+  },
+  {
+    "ID": 7,
+    "name": "特殊Ω",
+    "Type": 1,
+    "UnlockWorld": 0,
+    "WorldID": 0,
+    "desc": "只有在七日登录活动与击败5难度及以上的首领的情况下，才会掉落特殊Ω模组。\\n模组拥有一条随机主属性，以及任意随机副属性，最多存在五条副属性。\\n特殊Ω模组的词条与普通模组互相独立。",
+    "Icon": "",
+    "DropFloor": 5
+  }
+]

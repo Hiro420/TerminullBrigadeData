@@ -1,5 +1,6 @@
 ﻿{
   "50010": {
+    "BarrelID": 200502,
     "ArrSlot": {
       "1": {
         "key": 2,
@@ -22,11 +23,11 @@
         "value": 200509
       }
     },
-    "BarrelID": 200502,
     "WeaponID": 5006,
     "ID": 50010
   },
   "50001": {
+    "BarrelID": 100702,
     "ArrSlot": {
       "1": {
         "key": 2,
@@ -49,11 +50,11 @@
         "value": 100709
       }
     },
-    "BarrelID": 100702,
     "WeaponID": 5005,
     "ID": 50001
   },
   "50002": {
+    "BarrelID": 100902,
     "ArrSlot": {
       "1": {
         "key": 2,
@@ -76,11 +77,11 @@
         "value": 100909
       }
     },
-    "BarrelID": 100902,
     "WeaponID": 5005,
     "ID": 50002
   },
   "50003": {
+    "BarrelID": 200302,
     "ArrSlot": {
       "1": {
         "key": 2,
@@ -103,11 +104,11 @@
         "value": 200309
       }
     },
-    "BarrelID": 200302,
     "WeaponID": 5006,
     "ID": 50003
   },
   "50004": {
+    "BarrelID": 200602,
     "ArrSlot": {
       "1": {
         "key": 2,
@@ -130,11 +131,11 @@
         "value": 200609
       }
     },
-    "BarrelID": 200602,
     "WeaponID": 5006,
     "ID": 50004
   },
   "50005": {
+    "BarrelID": 100802,
     "ArrSlot": {
       "1": {
         "key": 2,
@@ -157,11 +158,11 @@
         "value": 100809
       }
     },
-    "BarrelID": 100802,
     "WeaponID": 5005,
     "ID": 50005
   },
   "50006": {
+    "BarrelID": 101002,
     "ArrSlot": {
       "1": {
         "key": 2,
@@ -184,11 +185,11 @@
         "value": 101009
       }
     },
-    "BarrelID": 101002,
     "WeaponID": 5005,
     "ID": 50006
   },
   "50007": {
+    "BarrelID": 200102,
     "ArrSlot": {
       "1": {
         "key": 2,
@@ -211,11 +212,11 @@
         "value": 200109
       }
     },
-    "BarrelID": 200102,
     "WeaponID": 5006,
     "ID": 50007
   },
   "50008": {
+    "BarrelID": 200202,
     "ArrSlot": {
       "1": {
         "key": 2,
@@ -238,11 +239,11 @@
         "value": 200209
       }
     },
-    "BarrelID": 200202,
     "WeaponID": 5006,
     "ID": 50008
   },
   "50009": {
+    "BarrelID": 200402,
     "ArrSlot": {
       "1": {
         "key": 2,
@@ -265,7 +266,6 @@
         "value": 200409
       }
     },
-    "BarrelID": 200402,
     "WeaponID": 5006,
     "ID": 50009
   }

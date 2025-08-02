@@ -1,5 +1,6 @@
 local TeamVoiceModule = require("Modules.TeamVoice.TeamVoiceModule")
 local WBP_LobbyRoleName_C = UnLua.Class()
+
 function WBP_LobbyRoleName_C:Construct()
   EventSystem.AddListener(self, EventDef.Lobby.QuickChangeHeroPanelHide, WBP_LobbyRoleName_C.OnQuickChangeHeroPanelHide)
   self.Button_Exit.OnClicked:Add(self, WBP_LobbyRoleName_C.OnClicked_Exit)
@@ -10,6 +11,7 @@ function WBP_LobbyRoleName_C:Construct()
   UE.UGameUserSettings.GetGameUserSettings().OnGameUserSettingsChanged:Add(self, WBP_LobbyRoleName_C.UpdateTeamVoiceUI)
   self.ClickedChange = false
 end
+
 function WBP_LobbyRoleName_C:Show(PlayerInfo, Index)
   self.Index = Index
   self.PlayerInfo = PlayerInfo
@@ -44,6 +46,7 @@ function WBP_LobbyRoleName_C:Show(PlayerInfo, Index)
     self.PlatformIconPanel:UpdateChannelInfo(self.PlayerInfo.roleid, true, self.PlayerInfo.channelUID)
   end
 end
+
 function WBP_LobbyRoleName_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.WBP_MonthCardIcon:Hide()
@@ -59,6 +62,7 @@ function WBP_LobbyRoleName_C:Hide()
     end
   end
 end
+
 function WBP_LobbyRoleName_C:Destruct()
   self.Button_Exit.OnClicked:Remove(self, WBP_LobbyRoleName_C.OnClicked_Exit)
   self.Button_Exit.OnHovered:Remove(self, WBP_LobbyRoleName_C.OnClicked_ExitHovered)
@@ -69,6 +73,7 @@ function WBP_LobbyRoleName_C:Destruct()
   UE.UGameUserSettings.GetGameUserSettings().OnGameUserSettingsChanged:Remove(self, WBP_LobbyRoleName_C.UpdateTeamVoiceUI)
   EventSystem.RemoveListener(EventDef.Lobby.QuickChangeHeroPanelHide, WBP_LobbyRoleName_C.OnQuickChangeHeroPanelHide)
 end
+
 function WBP_LobbyRoleName_C:UpdateTeamVoiceUI()
   local GameUserSettings = UE.UGameUserSettings.GetGameUserSettings()
   local TeamVoiceSubSys = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTeamVoiceSubsystem:StaticClass())
@@ -79,6 +84,7 @@ function WBP_LobbyRoleName_C:UpdateTeamVoiceUI()
     UpdateVisibility(self.Image_Mic_Close, 1 == CurValue)
   end
 end
+
 function WBP_LobbyRoleName_C:UpdateRoomOwnerTag()
   local IsOwner = false
   local TeamInfo = DataMgr.GetTeamInfo()
@@ -117,6 +123,7 @@ function WBP_LobbyRoleName_C:UpdateRoomOwnerTag()
     UpdateVisibility(self.Overlay_Exit, false)
   end
 end
+
 function WBP_LobbyRoleName_C:UpdateMuteTag(Result, RoomName, MemberId)
   if not LogicTeam.CheckIsOwnerVoiceRoom(RoomName) then
     return
@@ -130,6 +137,7 @@ function WBP_LobbyRoleName_C:UpdateMuteTag(Result, RoomName, MemberId)
     end
   end
 end
+
 function WBP_LobbyRoleName_C:UpdateSpeakingTag(RoomName, OpenId, MemberId, Status)
   if not LogicTeam.CheckIsOwnerVoiceRoom(RoomName) then
     return
@@ -152,6 +160,7 @@ function WBP_LobbyRoleName_C:UpdateSpeakingTag(RoomName, OpenId, MemberId, Statu
     end
   end
 end
+
 function WBP_LobbyRoleName_C:UpdateSpeakingStatus(bIsShow)
   UpdateVisibility(self.URGImageSpeaking, bIsShow)
   if bIsShow then
@@ -164,11 +173,14 @@ function WBP_LobbyRoleName_C:UpdateSpeakingStatus(bIsShow)
     end
   end
 end
+
 function WBP_LobbyRoleName_C:UpdateMicStatus(Code, RoomName, MemberId)
 end
+
 function WBP_LobbyRoleName_C:OnClicked_Exit()
   LogicTeam.RequestQuitTeamToServer()
 end
+
 function WBP_LobbyRoleName_C:OnClicked_Mic()
   local GameUserSettings = UE.UGameUserSettings.GetGameUserSettings()
   local TeamVoiceSubSys = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTeamVoiceSubsystem:StaticClass())
@@ -178,13 +190,16 @@ function WBP_LobbyRoleName_C:OnClicked_Mic()
     TeamVoiceModule:SetMicMode(1 - CurValue, true)
   end
 end
+
 function WBP_LobbyRoleName_C:OnClicked_Expand()
   EventSystem.Invoke(EventDef.Lobby.OnModelAreaClickedChanged, true, self.Index)
 end
+
 function WBP_LobbyRoleName_C:OnClicked_Change()
   self.ClickedChange = not self.ClickedChange
   EventSystem.Invoke(EventDef.Lobby.LobbyHeroClicked, self.ClickedChange)
 end
+
 function WBP_LobbyRoleName_C:OnClicked_ExitHovered()
   SetImageBrushBySoftObject(self.Image_Back_ExitBack, self.ChangeHovered, {
     X = math.ceil(self.IconSize.X),
@@ -193,6 +208,7 @@ function WBP_LobbyRoleName_C:OnClicked_ExitHovered()
   self.Image_Back_ExitBack:SetColorAndOpacity(self.HoveredColor)
   self.Image_Back_Exit:SetColorAndOpacity(self.HoveredColor)
 end
+
 function WBP_LobbyRoleName_C:OnClicked_ExitUnhovered()
   SetImageBrushBySoftObject(self.Image_Back_ExitBack, self.ChangeUnHovered, {
     X = math.ceil(self.IconSize.X),
@@ -201,7 +217,9 @@ function WBP_LobbyRoleName_C:OnClicked_ExitUnhovered()
   self.Image_Back_ExitBack:SetColorAndOpacity(self.UnHoveredColor)
   self.Image_Back_Exit:SetColorAndOpacity(self.UnHoveredColor)
 end
+
 function WBP_LobbyRoleName_C:OnQuickChangeHeroPanelHide()
   self.ClickedChange = false
 end
+
 return WBP_LobbyRoleName_C

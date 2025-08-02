@@ -1,5 +1,6 @@
 local ClimbTowerData = require("UI.View.ClimbTower.ClimbTowerData")
 local DailyRewards = UnLua.Class()
+
 function DailyRewards:Construct()
   self.MainBtn.OnClicked:Add(self, function()
     if ClimbTowerData.DailyRewardInfo ~= nil and nil ~= ClimbTowerData.DailyRewardInfo.rewardCount and ClimbTowerData.DailyRewardInfo.rewardCount > 0 then
@@ -16,12 +17,14 @@ function DailyRewards:Construct()
   end)
   EventSystem.AddListener(self, EventDef.ClimbTowerView.OnDailyRewardChange, self.OnRequestSuccess)
 end
+
 function DailyRewards:InitDailyRewards()
   ClimbTowerData:GetDailyRewardInfo(function(JsonTable)
     self:OnRequestSuccess(JsonTable)
   end)
   self:PlayAnimation(self.Ani_in)
 end
+
 function DailyRewards:OnRequestSuccess(JsonTable)
   if JsonTable then
     self.PointsAvailable:SetText(JsonTable.rewardCount)
@@ -47,4 +50,5 @@ function DailyRewards:OnRequestSuccess(JsonTable)
     end
   end
 end
+
 return DailyRewards

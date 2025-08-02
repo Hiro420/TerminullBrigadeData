@@ -1,4 +1,5 @@
 local BP_LevelPortal_C = UnLua.Class()
+
 function BP_LevelPortal_C:EventOnBeginInteract(InPlayer)
   self.Overridden.EventOnBeginInteract(self, InPlayer)
   if UE.UKismetSystemLibrary.IsDedicatedServer(self) then
@@ -24,4 +25,5 @@ function BP_LevelPortal_C:EventOnBeginInteract(InPlayer)
     WaveWindowManager:ShowWaveWindow(1120, Param)
   end
 end
+
 return BP_LevelPortal_C

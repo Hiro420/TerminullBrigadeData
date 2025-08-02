@@ -1,27 +1,27 @@
 ﻿{
   "1": {
     "ShowPriority": 10,
-    "ShowEndTime": "2035-06-01 00:00:00",
-    "ResourceID": 100009,
-    "ShowStartTime": "2023-03-01 00:00:00",
     "ParamList": {},
-    "GoodsJump": "1023",
-    "ID": 1,
-    "LinkDescLocMeta": {
-      "InKey": "LinkDesc_1",
-      "InNamespace": "mall_TBMallRecommendPage",
-      "InTextLiteral": "超载通行证获取"
-    },
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-06-01 00:00:00",
     "NameLocMeta": {
       "InKey": "Name_1",
-      "InNamespace": "mall_TBMallRecommendPage",
-      "InTextLiteral": "海因克斯"
+      "InTextLiteral": "海因克斯",
+      "InNamespace": "mall_TBMallRecommendPage"
     },
     "DescLocMeta": {
       "InKey": "Desc_1",
-      "InNamespace": "mall_TBMallRecommendPage",
-      "InTextLiteral": "救世主，闪亮登场！"
+      "InTextLiteral": "救世主，闪亮登场！",
+      "InNamespace": "mall_TBMallRecommendPage"
     },
-    "PostResource": "/Game/Rouge/UI/Atlas_Alpha/A_DT/Bgimage/bg06.bg06"
+    "PostResource": "/Game/Rouge/UI/Atlas_Alpha/A_DT/Bgimage/bg06.bg06",
+    "ID": 1,
+    "LinkDescLocMeta": {
+      "InKey": "LinkDesc_1",
+      "InTextLiteral": "超载通行证获取",
+      "InNamespace": "mall_TBMallRecommendPage"
+    },
+    "GoodsJump": "1023",
+    "ResourceID": 100009
   }
 }

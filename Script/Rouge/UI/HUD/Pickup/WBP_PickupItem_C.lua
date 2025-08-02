@@ -1,4 +1,5 @@
 local WBP_PickupItem_C = UnLua.Class()
+
 function WBP_PickupItem_C:Construct()
   if not IsListeningForInputAction(self, self.ActionName) then
     ListenForInputAction(self.ActionName, UE.EInputEvent.IE_Pressed, false, {
@@ -8,11 +9,13 @@ function WBP_PickupItem_C:Construct()
   end
   self.Btn_Item.OnClicked:Add(self, WBP_PickupItem_C.BindOnItemBtnClicked)
 end
+
 function WBP_PickupItem_C:BindOnItemBtnClicked()
   if not self.PickupActor then
     return
   end
 end
+
 function WBP_PickupItem_C:SetIsSelected(IsSelected)
   self.IsSelected = self.PickupActor == LogicPickup.CurSelectPickupActor
   if self.IsSelected then
@@ -21,6 +24,7 @@ function WBP_PickupItem_C:SetIsSelected(IsSelected)
     self.Img_Selected:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_PickupItem_C:Show(PickupActor)
   self.PickupActor = PickupActor
   self:SetIsSelected(false)
@@ -55,10 +59,12 @@ function WBP_PickupItem_C:Show(PickupActor)
   end
   self:SetVisibility(UE.ESlateVisibility.Visible)
 end
+
 function WBP_PickupItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.PickupActor = nil
 end
+
 function WBP_PickupItem_C:ListenForInteractInputAction()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -72,7 +78,9 @@ function WBP_PickupItem_C:ListenForInteractInputAction()
     InteractHandle:InteractWith(self.PickupActor)
   end
 end
+
 function WBP_PickupItem_C:Destruct()
   StopListeningForInputAction(self, self.ActionName, UE.EInputEvent.IE_Pressed)
 end
+
 return WBP_PickupItem_C

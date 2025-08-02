@@ -5772,6 +5772,170 @@ local task_tbtaskdata = {
     diffculty = 0,
     finishcount = 0
   },
+  [113601] = {
+    id = 113601,
+    nameLocMeta = NSLOCTEXT("task_TBTaskData", "name_113601", "\232\135\179\233\171\152\232\141\163\232\170\137"),
+    tasktitleLocMeta = NSLOCTEXT("task_TBTaskData", "tasktitle_113601", ""),
+    icon = "/Game/Rouge/UI/Atlas_DT/IconAchievement/Frames/Icon_Achieve01_30.Icon_Achieve01_30",
+    image = "",
+    titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_113601", ""),
+    conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_113601", ""),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_113601", "S0\232\181\155\229\173\163\233\128\154\229\133\179\228\191\174\230\173\163\232\161\140\229\138\16820\229\177\130"),
+    rewardlist = {
+      {key = 99994, value = 100},
+      {key = 62001, value = 10},
+      {key = 70781, value = 1}
+    },
+    pretask = 0,
+    canCountWhenLocked = true,
+    canCountWhenPreTaskUnfinished = true,
+    inheritglobal = false,
+    autoreward = false,
+    eventtrigger = true,
+    unlockEventsList = {},
+    targetEventsList = {
+      {
+        id = 1026,
+        params = {
+          {id = 1, param = "1003"},
+          {id = 2, param = "20"},
+          {id = 3, param = "38"}
+        },
+        value = 1
+      }
+    },
+    unlockdialog = 0,
+    finishunlockdialog = 0,
+    guidelevel = "",
+    taskPanelRowId = 0,
+    taskModeId = "",
+    tasksort = 0,
+    diffculty = 0,
+    finishcount = 0
+  },
+  [113602] = {
+    id = 113602,
+    nameLocMeta = NSLOCTEXT("task_TBTaskData", "name_113602", "\232\135\179\233\171\152\232\141\163\232\170\137"),
+    tasktitleLocMeta = NSLOCTEXT("task_TBTaskData", "tasktitle_113602", ""),
+    icon = "/Game/Rouge/UI/Atlas_DT/IconAchievement/Frames/Icon_Achieve02_30.Icon_Achieve02_30",
+    image = "",
+    titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_113602", ""),
+    conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_113602", ""),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_113602", "S0\232\181\155\229\173\163\233\128\154\229\133\179\228\191\174\230\173\163\232\161\140\229\138\16830\229\177\130"),
+    rewardlist = {
+      {key = 99994, value = 100},
+      {key = 62001, value = 10},
+      {key = 70782, value = 1}
+    },
+    pretask = 113601,
+    canCountWhenLocked = true,
+    canCountWhenPreTaskUnfinished = true,
+    inheritglobal = false,
+    autoreward = false,
+    eventtrigger = true,
+    unlockEventsList = {},
+    targetEventsList = {
+      {
+        id = 1026,
+        params = {
+          {id = 1, param = "1003"},
+          {id = 2, param = "30"},
+          {id = 3, param = "38"}
+        },
+        value = 1
+      }
+    },
+    unlockdialog = 0,
+    finishunlockdialog = 0,
+    guidelevel = "",
+    taskPanelRowId = 0,
+    taskModeId = "",
+    tasksort = 0,
+    diffculty = 0,
+    finishcount = 0
+  },
+  [113603] = {
+    id = 113603,
+    nameLocMeta = NSLOCTEXT("task_TBTaskData", "name_113603", "\232\135\179\233\171\152\232\141\163\232\170\137"),
+    tasktitleLocMeta = NSLOCTEXT("task_TBTaskData", "tasktitle_113603", ""),
+    icon = "/Game/Rouge/UI/Atlas_DT/IconAchievement/Frames/Icon_Achieve03_30.Icon_Achieve03_30",
+    image = "",
+    titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_113603", ""),
+    conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_113603", ""),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_113603", "S0\232\181\155\229\173\163\233\128\154\229\133\179\228\191\174\230\173\163\232\161\140\229\138\16840\229\177\130"),
+    rewardlist = {
+      {key = 99016, value = 1},
+      {key = 62001, value = 10},
+      {key = 70783, value = 1}
+    },
+    pretask = 113602,
+    canCountWhenLocked = true,
+    canCountWhenPreTaskUnfinished = true,
+    inheritglobal = false,
+    autoreward = false,
+    eventtrigger = true,
+    unlockEventsList = {},
+    targetEventsList = {
+      {
+        id = 1026,
+        params = {
+          {id = 1, param = "1003"},
+          {id = 2, param = "40"},
+          {id = 3, param = "38"}
+        },
+        value = 1
+      }
+    },
+    unlockdialog = 0,
+    finishunlockdialog = 0,
+    guidelevel = "",
+    taskPanelRowId = 0,
+    taskModeId = "",
+    tasksort = 0,
+    diffculty = 0,
+    finishcount = 0
+  },
+  [113604] = {
+    id = 113604,
+    nameLocMeta = NSLOCTEXT("task_TBTaskData", "name_113604", "\232\135\179\233\171\152\232\141\163\232\170\137"),
+    tasktitleLocMeta = NSLOCTEXT("task_TBTaskData", "tasktitle_113604", ""),
+    icon = "/Game/Rouge/UI/Atlas_DT/IconAchievement/Frames/Icon_Achieve04_30.Icon_Achieve04_30",
+    image = "",
+    titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_113604", ""),
+    conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_113604", ""),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_113604", "S0\232\181\155\229\173\163\233\128\154\229\133\179\228\191\174\230\173\163\232\161\140\229\138\16850\229\177\130"),
+    rewardlist = {
+      {key = 300001, value = 20},
+      {key = 62001, value = 20},
+      {key = 70784, value = 1}
+    },
+    pretask = 113603,
+    canCountWhenLocked = true,
+    canCountWhenPreTaskUnfinished = true,
+    inheritglobal = false,
+    autoreward = false,
+    eventtrigger = true,
+    unlockEventsList = {},
+    targetEventsList = {
+      {
+        id = 1026,
+        params = {
+          {id = 1, param = "1003"},
+          {id = 2, param = "50"},
+          {id = 3, param = "38"}
+        },
+        value = 1
+      }
+    },
+    unlockdialog = 0,
+    finishunlockdialog = 0,
+    guidelevel = "",
+    taskPanelRowId = 0,
+    taskModeId = "",
+    tasksort = 0,
+    diffculty = 0,
+    finishcount = 0
+  },
   [910101] = {
     id = 910101,
     nameLocMeta = NSLOCTEXT("task_TBTaskData", "name_910101", "\227\128\144\231\173\150\229\136\146\229\164\135\230\179\168\227\128\145\232\181\155\229\141\154\231\172\172\228\184\128\229\177\130\228\187\187\229\138\1611"),
@@ -10862,7 +11026,7 @@ local task_tbtaskdata = {
     image = "",
     titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_2001011", ""),
     conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_2001011", ""),
-    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_2001011", "<img id=\"ActivityRule\" width=\"99\" height=\"24\"></>\229\156\168\233\154\190\229\186\1661\229\143\138\228\187\165\228\184\138\233\154\190\229\186\166\228\189\191\231\148\168\230\155\153\229\133\137\229\135\187\232\180\165200\229\144\141\230\149\140\228\186\186\227\128\130"),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_2001011", "<img id=\"ActivityRule\" width=\"99\" height=\"24\"></>\229\135\187\232\180\165200\228\184\170\230\149\140\228\186\186\227\128\130"),
     rewardlist = {
       {key = 1100011, value = 10}
     },
@@ -10875,14 +11039,8 @@ local task_tbtaskdata = {
     unlockEventsList = {},
     targetEventsList = {
       {
-        id = 77,
-        params = {
-          {id = 1, param = "1001"},
-          {id = 2, param = "any"},
-          {id = 3, param = "1"},
-          {id = 4, param = "1000"},
-          {id = 5, param = "any"}
-        },
+        id = 46,
+        params = {},
         value = 200
       }
     },
@@ -14226,9 +14384,9 @@ local task_tbtaskdata = {
     image = "",
     titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_10020014", ""),
     conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_10020014", ""),
-    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020014", "\229\174\140\231\190\142\233\128\154\229\133\179\233\154\190\229\186\1666\229\143\138\228\187\165\228\184\138\231\130\189\231\131\173\231\132\166\229\156\159"),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020014", "\229\174\140\231\190\142\233\128\154\229\133\179\233\154\190\229\186\1668\229\143\138\228\187\165\228\184\138\231\130\189\231\131\173\231\132\166\229\156\159"),
     rewardlist = {
-      {key = 99008, value = 1500}
+      {key = 99008, value = 3000}
     },
     pretask = 0,
     canCountWhenLocked = true,
@@ -14242,7 +14400,7 @@ local task_tbtaskdata = {
         id = 62,
         params = {
           {id = 1, param = "24"},
-          {id = 2, param = "6"}
+          {id = 2, param = "8"}
         },
         value = 1
       }
@@ -14264,9 +14422,9 @@ local task_tbtaskdata = {
     image = "",
     titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_10020015", ""),
     conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_10020015", ""),
-    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020015", "\229\174\140\231\190\142\233\128\154\229\133\179\233\154\190\229\186\1666\229\143\138\228\187\165\228\184\138\231\142\175\233\131\189"),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020015", "\229\174\140\231\190\142\233\128\154\229\133\179\233\154\190\229\186\1668\229\143\138\228\187\165\228\184\138\231\142\175\233\131\189"),
     rewardlist = {
-      {key = 99008, value = 1500}
+      {key = 99008, value = 3000}
     },
     pretask = 0,
     canCountWhenLocked = true,
@@ -14280,7 +14438,7 @@ local task_tbtaskdata = {
         id = 62,
         params = {
           {id = 1, param = "23"},
-          {id = 2, param = "6"}
+          {id = 2, param = "8"}
         },
         value = 1
       }
@@ -14302,9 +14460,9 @@ local task_tbtaskdata = {
     image = "",
     titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_10020016", ""),
     conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_10020016", ""),
-    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020016", "\229\135\187\232\180\165\230\181\183\229\167\134\232\190\190\229\176\1482\230\172\161"),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020016", "\229\135\187\232\180\165\230\181\183\229\167\134\232\190\190\229\176\1484\230\172\161"),
     rewardlist = {
-      {key = 99008, value = 500}
+      {key = 99008, value = 1000}
     },
     pretask = 0,
     canCountWhenLocked = true,
@@ -14319,7 +14477,7 @@ local task_tbtaskdata = {
         params = {
           {id = 1, param = "2020000"}
         },
-        value = 2
+        value = 4
       }
     },
     unlockdialog = 0,
@@ -14339,9 +14497,9 @@ local task_tbtaskdata = {
     image = "",
     titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_10020017", ""),
     conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_10020017", ""),
-    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020017", "\229\135\187\232\180\165\229\189\177\229\136\1315\230\172\161"),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020017", "\229\135\187\232\180\165\229\189\177\229\136\13110\230\172\161"),
     rewardlist = {
-      {key = 99008, value = 1000}
+      {key = 99008, value = 2000}
     },
     pretask = 0,
     canCountWhenLocked = true,
@@ -14356,7 +14514,7 @@ local task_tbtaskdata = {
         params = {
           {id = 1, param = "2500010"}
         },
-        value = 5
+        value = 10
       }
     },
     unlockdialog = 0,
@@ -14376,9 +14534,9 @@ local task_tbtaskdata = {
     image = "",
     titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_10020018", ""),
     conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_10020018", ""),
-    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020018", "\229\135\187\232\180\165\233\148\129\233\173\130\229\184\13610\230\172\161"),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020018", "\229\135\187\232\180\165\233\148\129\233\173\130\229\184\13620\230\172\161"),
     rewardlist = {
-      {key = 99008, value = 1500}
+      {key = 99008, value = 3000}
     },
     pretask = 0,
     canCountWhenLocked = true,
@@ -14393,7 +14551,7 @@ local task_tbtaskdata = {
         params = {
           {id = 1, param = "2020030"}
         },
-        value = 10
+        value = 20
       }
     },
     unlockdialog = 0,
@@ -14413,9 +14571,9 @@ local task_tbtaskdata = {
     image = "",
     titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_10020019", ""),
     conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_10020019", ""),
-    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020019", "\229\135\187\232\180\165GT6300 2\230\172\161"),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020019", "\229\135\187\232\180\165GT6300 4\230\172\161"),
     rewardlist = {
-      {key = 99008, value = 500}
+      {key = 99008, value = 1000}
     },
     pretask = 0,
     canCountWhenLocked = true,
@@ -14430,7 +14588,7 @@ local task_tbtaskdata = {
         params = {
           {id = 1, param = "2030020"}
         },
-        value = 2
+        value = 4
       }
     },
     unlockdialog = 0,
@@ -14450,9 +14608,9 @@ local task_tbtaskdata = {
     image = "",
     titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_10020020", ""),
     conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_10020020", ""),
-    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020020", "\229\135\187\232\180\165\233\186\166\229\133\139\230\150\1755\230\172\161"),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020020", "\229\135\187\232\180\165\233\186\166\229\133\139\230\150\17510\230\172\161"),
     rewardlist = {
-      {key = 99008, value = 1000}
+      {key = 99008, value = 2000}
     },
     pretask = 0,
     canCountWhenLocked = true,
@@ -14467,7 +14625,7 @@ local task_tbtaskdata = {
         params = {
           {id = 1, param = "2010002"}
         },
-        value = 5
+        value = 10
       }
     },
     unlockdialog = 0,
@@ -14487,9 +14645,9 @@ local task_tbtaskdata = {
     image = "",
     titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_10020021", ""),
     conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_10020021", ""),
-    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020021", "\229\135\187\232\180\165\233\172\163\231\139\151\229\164\167\229\150\135\229\143\17310\230\172\161"),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020021", "\229\135\187\232\180\165\233\172\163\231\139\151\229\164\167\229\150\135\229\143\17320\230\172\161"),
     rewardlist = {
-      {key = 99008, value = 1500}
+      {key = 99008, value = 3000}
     },
     pretask = 0,
     canCountWhenLocked = true,
@@ -14504,7 +14662,7 @@ local task_tbtaskdata = {
         params = {
           {id = 1, param = "1030020"}
         },
-        value = 10
+        value = 20
       }
     },
     unlockdialog = 0,
@@ -14524,9 +14682,9 @@ local task_tbtaskdata = {
     image = "",
     titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_10020022", ""),
     conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_10020022", ""),
-    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020022", "\230\149\145\230\143\180\233\152\159\229\143\13920\230\172\161"),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020022", "\230\149\145\230\143\180\233\152\159\229\143\13930\230\172\161"),
     rewardlist = {
-      {key = 99008, value = 1000}
+      {key = 99008, value = 2000}
     },
     pretask = 0,
     canCountWhenLocked = true,
@@ -14539,7 +14697,7 @@ local task_tbtaskdata = {
       {
         id = 50,
         params = {},
-        value = 20
+        value = 30
       }
     },
     unlockdialog = 0,
@@ -14559,9 +14717,9 @@ local task_tbtaskdata = {
     image = "",
     titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_10020023", ""),
     conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_10020023", ""),
-    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020023", "\230\137\147\231\136\13430\228\184\170\231\130\184\232\141\175\230\161\182"),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020023", "\230\137\147\231\136\13460\228\184\170\231\130\184\232\141\175\230\161\182"),
     rewardlist = {
-      {key = 99008, value = 1000}
+      {key = 99008, value = 2000}
     },
     pretask = 0,
     canCountWhenLocked = true,
@@ -14574,7 +14732,7 @@ local task_tbtaskdata = {
       {
         id = 52,
         params = {},
-        value = 30
+        value = 60
       }
     },
     unlockdialog = 0,
@@ -14594,9 +14752,9 @@ local task_tbtaskdata = {
     image = "",
     titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_10020024", ""),
     conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_10020024", ""),
-    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020024", "\231\180\175\232\174\161\232\142\183\229\190\15110\230\172\161\229\143\140\233\135\141\230\157\131\233\153\144"),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020024", "\231\180\175\232\174\161\232\142\183\229\190\15120\230\172\161\229\143\140\233\135\141\230\157\131\233\153\144"),
     rewardlist = {
-      {key = 99008, value = 1000}
+      {key = 99008, value = 2000}
     },
     pretask = 0,
     canCountWhenLocked = true,
@@ -14609,7 +14767,7 @@ local task_tbtaskdata = {
       {
         id = 68,
         params = {},
-        value = 10
+        value = 20
       }
     },
     unlockdialog = 0,
@@ -14629,9 +14787,9 @@ local task_tbtaskdata = {
     image = "",
     titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_10020025", ""),
     conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_10020025", ""),
-    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020025", "\231\180\175\231\167\175\229\145\189\228\184\173\230\128\170\231\137\169\229\188\177\231\130\1853000\230\172\161"),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020025", "\231\180\175\231\167\175\229\145\189\228\184\173\230\128\170\231\137\169\229\188\177\231\130\1856000\230\172\161"),
     rewardlist = {
-      {key = 99008, value = 1000}
+      {key = 99008, value = 2000}
     },
     pretask = 0,
     canCountWhenLocked = true,
@@ -14644,7 +14802,7 @@ local task_tbtaskdata = {
       {
         id = 48,
         params = {},
-        value = 3000
+        value = 6000
       }
     },
     unlockdialog = 0,
@@ -14664,9 +14822,9 @@ local task_tbtaskdata = {
     image = "",
     titleLocMeta = NSLOCTEXT("task_TBTaskData", "title_10020026", ""),
     conditionnoteLocMeta = NSLOCTEXT("task_TBTaskData", "conditionnote_10020026", ""),
-    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020026", "\230\136\152\230\150\151\229\134\133\231\180\175\232\174\161\230\182\136\232\180\18550000\233\135\145\229\184\129"),
+    contentLocMeta = NSLOCTEXT("task_TBTaskData", "content_10020026", "\230\136\152\230\150\151\229\134\133\231\180\175\231\167\175\230\182\136\232\180\185100000\233\135\145\229\184\129"),
     rewardlist = {
-      {key = 99008, value = 1000}
+      {key = 99008, value = 2000}
     },
     pretask = 0,
     canCountWhenLocked = true,
@@ -14681,7 +14839,7 @@ local task_tbtaskdata = {
         params = {
           {id = 1, param = "99999"}
         },
-        value = 50000
+        value = 100000
       }
     },
     unlockdialog = 0,

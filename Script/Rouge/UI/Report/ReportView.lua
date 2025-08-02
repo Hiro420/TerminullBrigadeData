@@ -5,6 +5,7 @@ local UIUtil = require("Framework.UIMgr.UIUtil")
 local LocalizationConfig = require("GameConfig.Localization.LocalizationConfig")
 local ReportItemCountPerLine = 3
 local ReportView = Class(ViewBase)
+
 function ReportView:BindClickHandler()
   self.TitleList.BP_OnItemSelectionChanged:Add(self, ReportView.BP_OnItemSelectionChanged_TitleList)
   self.ContentList.BP_OnItemSelectionChanged:Add(self, ReportView.BP_OnItemSelectionChanged_ContentList)
@@ -21,6 +22,7 @@ function ReportView:BindClickHandler()
     CommonInputSubsystem.OnInputMethodChanged:Add(self, self.BindOnInputMethodChanged)
   end
 end
+
 function ReportView:UnBindClickHandler()
   self.ContentList.BP_OnItemSelectionChanged:Remove(self, ReportView.BP_OnItemSelectionChanged_ContentList)
   self.ContentList.BP_OnItemSelectionChanged:Remove(self, ReportView.BP_OnItemSelectionChanged_ContentList)
@@ -34,11 +36,14 @@ function ReportView:UnBindClickHandler()
     CommonInputSubsystem.OnInputMethodChanged:Remove(self, self.BindOnInputMethodChanged)
   end
 end
+
 function ReportView:OnInit()
 end
+
 function ReportView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function ReportView:OnShow(ReportScene, ReportedRoleID, PlayerName, ReportedContent)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -58,6 +63,7 @@ function ReportView:OnShow(ReportScene, ReportedRoleID, PlayerName, ReportedCont
     self:SetEnhancedInputActionPriority(1)
   end
 end
+
 function ReportView:OnHide()
   self:UnBindClickHandler()
   if self.ViewModel then
@@ -72,12 +78,14 @@ function ReportView:OnHide()
     self:SetEnhancedInputActionPriority(0)
   end
 end
+
 function ReportView:GetConfigByReportScene(ReportScene)
   local Result, Row = GetRowData(DT.DT_ReportTable, ReportScene)
   if Result then
     return Row.ReportConfig
   end
 end
+
 function ReportView:InitReportContent(CategoryId)
   local RowData = self:GetConfigByReportScene(self.SceneId)
   if RowData then
@@ -96,6 +104,7 @@ function ReportView:InitReportContent(CategoryId)
     end
   end
 end
+
 function ReportView:InitTitleList(ReportScene)
   self.TitleList:ClearListItems()
   local RowData = self:GetConfigByReportScene(ReportScene)
@@ -114,15 +123,18 @@ function ReportView:InitTitleList(ReportScene)
   end
   self.TitleList:SetSelectedIndex(0)
 end
+
 function ReportView:BP_OnItemSelectionChanged_TitleList(Item, bSelection)
   if Item and bSelection then
     self:InitReportContent(Item.ID)
   end
 end
+
 function ReportView:BP_OnItemSelectionChanged_ContentList(Item, bSelection)
   if not Item or bSelection then
   end
 end
+
 function ReportView:ReportToServer()
   local Category = self.TitleList:BP_GetSelectedItem().ID
   local Desc = self.Ed_Desc:GetText()
@@ -171,26 +183,32 @@ function ReportView:ReportToServer()
     end
   })
 end
+
 function ReportView:Confirm()
   self:ReportToServer()
 end
+
 function ReportView:Cancel()
   UIMgr:Hide(ViewID.UI_ReportView)
 end
+
 function ReportView:OnTitleItemCreated()
   self:FocusDefaultWidget()
 end
+
 function ReportView:BindOnInputMethodChanged(InputType)
   if InputType == UE.ECommonInputType.Gamepad then
     self:FocusDefaultWidget()
   end
 end
+
 function ReportView:FocusDefaultWidget()
   local Widget = self:DoCustomNavigation_TitleFirst()
   if Widget then
     Widget:SetFocus()
   end
 end
+
 function ReportView:DoCustomNavigation_ContentFirst()
   local ItemCount = self.ContentList:GetNumItems()
   local ItemFirst = self.ContentList:GetItemAt(0)
@@ -200,6 +218,7 @@ function ReportView:DoCustomNavigation_ContentFirst()
   end
   return nil
 end
+
 function ReportView:DoCustomNavigation_ContentLast()
   local ItemCount = self.ContentList:GetNumItems()
   local ItemLast = self.ContentList:GetItemAt(ItemCount - 1)
@@ -209,6 +228,7 @@ function ReportView:DoCustomNavigation_ContentLast()
   end
   return nil
 end
+
 function ReportView:GetReprotItemLeft(ItemObject)
   local ItemCount = self.ContentList:GetNumItems()
   local ItemIndex = self.ContentList:GetIndexForItem(ItemObject)
@@ -228,6 +248,7 @@ function ReportView:GetReprotItemLeft(ItemObject)
   end
   return nil
 end
+
 function ReportView:GetReprotItemRight(ItemObject)
   local ItemCount = self.ContentList:GetNumItems()
   local ItemIndex = self.ContentList:GetIndexForItem(ItemObject)
@@ -248,6 +269,7 @@ function ReportView:GetReprotItemRight(ItemObject)
   end
   return nil
 end
+
 function ReportView:GetReprotItemUp(ItemObject)
   local ItemCount = self.ContentList:GetNumItems()
   local ItemIndex = self.ContentList:GetIndexForItem(ItemObject)
@@ -265,6 +287,7 @@ function ReportView:GetReprotItemUp(ItemObject)
   end
   return nil
 end
+
 function ReportView:GetReprotItemDown(ItemObject)
   local ItemCount = self.ContentList:GetNumItems()
   local ItemIndex = self.ContentList:GetIndexForItem(ItemObject)
@@ -286,6 +309,7 @@ function ReportView:GetReprotItemDown(ItemObject)
   end
   return nil
 end
+
 function ReportView:DoCustomNavigation_TitleFirst()
   local ItemFirst = self.TitleList:GetItemAt(0)
   local Widget = UE.URGBlueprintLibrary.K2_GetEntryWidgetFromItem(self.TitleList, ItemFirst)
@@ -294,6 +318,7 @@ function ReportView:DoCustomNavigation_TitleFirst()
   end
   return nil
 end
+
 function ReportView:DoCustomNavigation_TitleLast()
   local ItemCount = self.TitleList:GetNumItems()
   local ItemLast = self.TitleList:GetItemAt(ItemCount - 1)
@@ -303,6 +328,7 @@ function ReportView:DoCustomNavigation_TitleLast()
   end
   return nil
 end
+
 function ReportView:GetReprotTitleLeft(ItemObject)
   local ItemCount = self.TitleList:GetNumItems()
   local ItemIndex = self.TitleList:GetIndexForItem(ItemObject)
@@ -319,6 +345,7 @@ function ReportView:GetReprotTitleLeft(ItemObject)
   end
   return nil
 end
+
 function ReportView:GetReprotTitleRight(ItemObject)
   local ItemCount = self.TitleList:GetNumItems()
   local ItemIndex = self.TitleList:GetIndexForItem(ItemObject)
@@ -335,4 +362,5 @@ function ReportView:GetReprotTitleRight(ItemObject)
   end
   return nil
 end
+
 return ReportView

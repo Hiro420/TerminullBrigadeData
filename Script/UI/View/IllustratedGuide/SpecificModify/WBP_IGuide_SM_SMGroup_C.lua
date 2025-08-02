@@ -1,4 +1,5 @@
 local WBP_IGuide_SM_SMGroup_C = UnLua.Class()
+
 function WBP_IGuide_SM_SMGroup_C:Construct()
   self.Btn_Previous.OnClicked:Add(self, self.BindOnPreviousButtonClicked)
   self.Btn_Next.OnClicked:Add(self, self.BindOnNextButtonClicked)
@@ -6,15 +7,18 @@ function WBP_IGuide_SM_SMGroup_C:Construct()
   self.SpecificModifyList = {}
   EventSystem.AddListener(self, EventDef.IllustratedGuide.OnSpecificModifyItemClicked, self.BindOnSpecificModifyItemClicked)
 end
+
 function WBP_IGuide_SM_SMGroup_C:Destruct()
   self.Btn_Previous.OnClicked:Remove(self, self.BindOnPreviousButtonClicked)
   self.Btn_Next.OnClicked:Remove(self, self.BindOnNextButtonClicked)
   EventSystem.RemoveListener(EventDef.IllustratedGuide.OnSpecificModifyItemClicked, self.BindOnSpecificModifyItemClicked, self)
 end
+
 function WBP_IGuide_SM_SMGroup_C:BindOnPreviousButtonClicked()
   self.NowStartIndex = math.max(1, self.NowStartIndex - self.SpecificModifyListMaxLength)
   self:UpdateSpecificModifyList(self.NowStartIndex)
 end
+
 function WBP_IGuide_SM_SMGroup_C:BindOnNextButtonClicked()
   local TempNowStartIndex = self.NowStartIndex + self.SpecificModifyListMaxLength
   if TempNowStartIndex > #self.SpecificModifyList then
@@ -23,6 +27,7 @@ function WBP_IGuide_SM_SMGroup_C:BindOnNextButtonClicked()
   self.NowStartIndex = TempNowStartIndex
   self:UpdateSpecificModifyList(self.NowStartIndex)
 end
+
 function WBP_IGuide_SM_SMGroup_C:RefreshInfo(ParentView, HeroId, SpecificModifyGroupInfo)
   self.ParentView = ParentView
   local SkillList = LogicRole.GetCharacterTableRow(HeroId).SkillList
@@ -72,6 +77,7 @@ function WBP_IGuide_SM_SMGroup_C:RefreshInfo(ParentView, HeroId, SpecificModifyG
   self.WBP_CustomKeyName:SetCustomKeyDisplayInfoByRowNameAry(SpecificModifyGroupInfo.CustomKeyRowNameList.KMKeyRowNameList:ToTable(), SpecificModifyGroupInfo.CustomKeyRowNameList.PadKeyRowNameList:ToTable())
   UpdateVisibility(self.WBP_CustomKeyName, SpecificModifyGroupInfo.CustomKeyRowNameList.KMKeyRowNameList:Length() > 0)
 end
+
 function WBP_IGuide_SM_SMGroup_C:UpdateSpecificModifyList(StartIndex)
   local NeedShowSpecificModifyList = {}
   for k, v in pairs(self.SpecificModifyList) do
@@ -104,6 +110,7 @@ function WBP_IGuide_SM_SMGroup_C:UpdateSpecificModifyList(StartIndex)
     UpdateVisibility(self.Btn_Previous, false)
   end
 end
+
 function WBP_IGuide_SM_SMGroup_C:BindOnSpecificModifyItemClicked(SpecificModifyId)
   if table.Contain(self.SpecificModifyList, SpecificModifyId) then
     UpdateVisibility(self.Canvas_Checked, true)
@@ -113,7 +120,9 @@ function WBP_IGuide_SM_SMGroup_C:BindOnSpecificModifyItemClicked(SpecificModifyI
     UpdateVisibility(self.Canvas_Unchecked, true)
   end
 end
+
 function WBP_IGuide_SM_SMGroup_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return WBP_IGuide_SM_SMGroup_C

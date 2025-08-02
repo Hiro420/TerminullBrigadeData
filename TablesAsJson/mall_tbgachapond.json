@@ -1,150 +1,150 @@
 ﻿{
   "1": {
-    "DynamicSafeguradID": 7,
-    "EndTime": "2025-09-30 00:00:00",
-    "CharacterTitle1LocMeta": {
-      "InKey": "CharacterTitle1_1",
-      "InNamespace": "mall_TBGachaPond",
-      "InTextLiteral": "影刃"
-    },
-    "NameLocMeta": {
-      "InKey": "Name_1",
-      "InNamespace": "mall_TBGachaPond",
-      "InTextLiteral": "浮世骇客"
-    },
-    "CharacterName2LocMeta": {
-      "InKey": "CharacterName2_1",
-      "InNamespace": "mall_TBGachaPond",
-      "InTextLiteral": "甜心护士"
-    },
     "RandomGiftId": 400001,
-    "GoodsId": 60000,
-    "TagBgPath": "",
-    "BgPath": "/Game/Rouge/UI/Atlas_DT/Activity/Gacha/Banner_Gacha/Frames/Img_CardPools_02.Img_CardPools_02",
     "CharacterTitle2LocMeta": {
-      "InKey": "CharacterTitle2_1",
       "InNamespace": "mall_TBGachaPond",
-      "InTextLiteral": "曙光"
+      "InTextLiteral": "曙光",
+      "InKey": "CharacterTitle2_1"
     },
-    "CharacterName1LocMeta": {
-      "InKey": "CharacterName1_1",
+    "GoodsId": 60000,
+    "NameLocMeta": {
       "InNamespace": "mall_TBGachaPond",
-      "InTextLiteral": "浮世霓光·暮夜傀姬"
+      "InTextLiteral": "浮世骇客",
+      "InKey": "Name_1"
     },
+    "CharacterTitle1LocMeta": {
+      "InNamespace": "mall_TBGachaPond",
+      "InTextLiteral": "影刃",
+      "InKey": "CharacterTitle1_1"
+    },
+    "SystemMsgID": 4,
     "ActorPath": "/Game/Rouge/NPC/Lobby/DrawCardChest/Chest01.Chest01_C",
     "ID": 1,
-    "SystemMsgID": 4,
-    "StartTime": "2025-06-01 00:00:00",
     "Rare": 5,
+    "EndTime": "2025-09-24 00:00:00",
+    "CharacterName2LocMeta": {
+      "InNamespace": "mall_TBGachaPond",
+      "InTextLiteral": "甜心护士",
+      "InKey": "CharacterName2_1"
+    },
+    "SeasonID": 0,
+    "CharacterName1LocMeta": {
+      "InNamespace": "mall_TBGachaPond",
+      "InTextLiteral": "浮世霓光·暮夜傀姬",
+      "InKey": "CharacterName1_1"
+    },
+    "Desc": "影刃传家宝曙光护士",
     "GachaRewardID": 1,
+    "StartTime": "2025-06-01 00:00:00",
+    "TagNameLocMeta": {
+      "InNamespace": "mall_TBGachaPond",
+      "InTextLiteral": "热卖",
+      "InKey": "TagName_1"
+    },
+    "SafeguardIDList": {
+      "1": {
+        "key": 1,
+        "value": 10
+      },
+      "2": {
+        "key": 2,
+        "value": 20
+      },
+      "3": {
+        "key": 3,
+        "value": 30
+      },
+      "4": {
+        "key": 7,
+        "value": 40
+      }
+    },
+    "ExpendResource": {
+      "1": {
+        "key": 210001,
+        "value": 1
+      }
+    },
+    "BgPath": "/Game/Rouge/UI/Atlas_DT/Activity/Gacha/Banner_Gacha/Frames/Img_CardPools_02.Img_CardPools_02",
+    "DynamicSafeguradID": 3,
     "CharacterList": {
       "1": 1010,
       "2": 1040
     },
-    "SafeguardIDList": {
-      "1": {
-        "value": 10,
-        "key": 1
-      },
-      "2": {
-        "value": 20,
-        "key": 2
-      },
-      "3": {
-        "value": 30,
-        "key": 3
-      },
-      "4": {
-        "value": 40,
-        "key": 7
-      }
-    },
-    "SeasonID": 0,
-    "Desc": "影刃传家宝曙光护士",
-    "ExpendResource": {
-      "1": {
-        "value": 1,
-        "key": 210001
-      }
-    },
-    "TagNameLocMeta": {
-      "InKey": "TagName_1",
-      "InNamespace": "mall_TBGachaPond",
-      "InTextLiteral": "热卖"
-    }
+    "TagBgPath": ""
   },
   "2": {
-    "DynamicSafeguradID": 7,
-    "EndTime": "2025-09-30 00:00:00",
-    "CharacterTitle1LocMeta": {
-      "InKey": "CharacterTitle1_2",
-      "InNamespace": "mall_TBGachaPond",
-      "InTextLiteral": "影刃"
-    },
-    "NameLocMeta": {
-      "InKey": "Name_2",
-      "InNamespace": "mall_TBGachaPond",
-      "InTextLiteral": "浮世绘卷"
-    },
-    "CharacterName2LocMeta": {
-      "InKey": "CharacterName2_2",
-      "InNamespace": "mall_TBGachaPond",
-      "InTextLiteral": "兔兔警官"
-    },
     "RandomGiftId": 400005,
-    "GoodsId": 60000,
-    "TagBgPath": "",
-    "BgPath": "/Game/Rouge/UI/Atlas_DT/Activity/Gacha/Banner_Gacha/Frames/Img_CardPools_01.Img_CardPools_01",
     "CharacterTitle2LocMeta": {
-      "InKey": "CharacterTitle2_2",
       "InNamespace": "mall_TBGachaPond",
-      "InTextLiteral": "格罗莉亚"
+      "InTextLiteral": "格罗莉亚",
+      "InKey": "CharacterTitle2_2"
     },
-    "CharacterName1LocMeta": {
-      "InKey": "CharacterName1_2",
+    "GoodsId": 60000,
+    "NameLocMeta": {
       "InNamespace": "mall_TBGachaPond",
-      "InTextLiteral": "浮世霓光·暮夜傀姬"
+      "InTextLiteral": "浮世绘卷",
+      "InKey": "Name_2"
     },
+    "CharacterTitle1LocMeta": {
+      "InNamespace": "mall_TBGachaPond",
+      "InTextLiteral": "影刃",
+      "InKey": "CharacterTitle1_2"
+    },
+    "SystemMsgID": 4,
     "ActorPath": "/Game/Rouge/NPC/Lobby/DrawCardChest/Chest01.Chest01_C",
     "ID": 2,
-    "SystemMsgID": 4,
-    "StartTime": "2025-06-01 00:00:00",
     "Rare": 5,
+    "EndTime": "2025-09-24 00:00:00",
+    "CharacterName2LocMeta": {
+      "InNamespace": "mall_TBGachaPond",
+      "InTextLiteral": "兔兔警官",
+      "InKey": "CharacterName2_2"
+    },
+    "SeasonID": 0,
+    "CharacterName1LocMeta": {
+      "InNamespace": "mall_TBGachaPond",
+      "InTextLiteral": "浮世霓光·暮夜傀姬",
+      "InKey": "CharacterName1_2"
+    },
+    "Desc": "影刃传家宝格罗莉亚兔兔警官",
     "GachaRewardID": 2,
+    "StartTime": "2025-06-01 00:00:00",
+    "TagNameLocMeta": {
+      "InNamespace": "mall_TBGachaPond",
+      "InTextLiteral": "热卖",
+      "InKey": "TagName_2"
+    },
+    "SafeguardIDList": {
+      "1": {
+        "key": 4,
+        "value": 10
+      },
+      "2": {
+        "key": 5,
+        "value": 20
+      },
+      "3": {
+        "key": 6,
+        "value": 30
+      },
+      "4": {
+        "key": 7,
+        "value": 40
+      }
+    },
+    "ExpendResource": {
+      "1": {
+        "key": 210001,
+        "value": 1
+      }
+    },
+    "BgPath": "/Game/Rouge/UI/Atlas_DT/Activity/Gacha/Banner_Gacha/Frames/Img_CardPools_01.Img_CardPools_01",
+    "DynamicSafeguradID": 6,
     "CharacterList": {
       "1": 1010,
       "2": 1000
     },
-    "SafeguardIDList": {
-      "1": {
-        "value": 10,
-        "key": 4
-      },
-      "2": {
-        "value": 20,
-        "key": 5
-      },
-      "3": {
-        "value": 30,
-        "key": 6
-      },
-      "4": {
-        "value": 40,
-        "key": 7
-      }
-    },
-    "SeasonID": 0,
-    "Desc": "影刃传家宝格罗莉亚兔兔警官",
-    "ExpendResource": {
-      "1": {
-        "value": 1,
-        "key": 210001
-      }
-    },
-    "TagNameLocMeta": {
-      "InKey": "TagName_2",
-      "InNamespace": "mall_TBGachaPond",
-      "InTextLiteral": "热卖"
-    }
+    "TagBgPath": ""
   }
 }

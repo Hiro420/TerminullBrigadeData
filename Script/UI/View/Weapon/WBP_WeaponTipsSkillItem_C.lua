@@ -3,10 +3,12 @@ local WeaponSkillTypeName = {
   NSLOCTEXT("WeaponMainView", "WeaponSkillTypeName", "\227\128\144\232\162\171\229\138\168\227\128\145{0}")
 }
 local WBP_WeaponTipsSkillItem_C = UnLua.Class()
+
 function WBP_WeaponTipsSkillItem_C:Construct()
   self.WeaponSkillId = -1
   self.SkillGroupId = -1
 end
+
 function WBP_WeaponTipsSkillItem_C:RefreshWeaponTipsSkillItemInfo(WeaponSkillData, index, IsNewType)
   self.WeaponSkillData = WeaponSkillData
   self.IsNewType = IsNewType
@@ -35,6 +37,7 @@ function WBP_WeaponTipsSkillItem_C:RefreshWeaponTipsSkillItemInfo(WeaponSkillDat
     self.RGTextDesc:SetText(WeaponSkillData.Desc)
   end
 end
+
 function WBP_WeaponTipsSkillItem_C:SetNameColorAndOpacity(InColorAndOpacity)
   if self.IsNewType then
     self.RGTextName_1:SetColorAndOpacity(InColorAndOpacity)
@@ -42,6 +45,7 @@ function WBP_WeaponTipsSkillItem_C:SetNameColorAndOpacity(InColorAndOpacity)
     self.RGTextName:SetColorAndOpacity(InColorAndOpacity)
   end
 end
+
 function WBP_WeaponTipsSkillItem_C:SetDescColorAndOpacity(InColorAndOpacity)
   if self.IsNewType then
     self.RGTextDesc_1:SetDefaultColorAndOpacity(InColorAndOpacity)
@@ -49,6 +53,7 @@ function WBP_WeaponTipsSkillItem_C:SetDescColorAndOpacity(InColorAndOpacity)
     self.RGTextDesc:SetDefaultColorAndOpacity(InColorAndOpacity)
   end
 end
+
 function WBP_WeaponTipsSkillItem_C:SetBottomColorAndOpacity(InColorAndOpacity)
   if self.IsNewType then
     self.WBP_WeaponSkillItem_1:SetBottomColorAndOpacity(InColorAndOpacity)
@@ -56,6 +61,7 @@ function WBP_WeaponTipsSkillItem_C:SetBottomColorAndOpacity(InColorAndOpacity)
     self.WBP_WeaponSkillItem:SetBottomColorAndOpacity(InColorAndOpacity)
   end
 end
+
 function WBP_WeaponTipsSkillItem_C:SetIsInHeirloomLevel(IsInHeirloomLevel)
   if self.IsNewType then
     self.WBP_WeaponSkillItem_1:SetIsInHeirloomLevel(IsInHeirloomLevel)
@@ -63,7 +69,9 @@ function WBP_WeaponTipsSkillItem_C:SetIsInHeirloomLevel(IsInHeirloomLevel)
     self.WBP_WeaponSkillItem:SetIsInHeirloomLevel(IsInHeirloomLevel)
   end
 end
+
 function WBP_WeaponTipsSkillItem_C:Hide()
   UpdateVisibility(self, false)
 end
+
 return WBP_WeaponTipsSkillItem_C

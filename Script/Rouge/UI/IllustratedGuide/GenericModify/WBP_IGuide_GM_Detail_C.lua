@@ -1,4 +1,5 @@
 local WBP_IGuide_GM_Detail_C = UnLua.Class()
+
 function WBP_IGuide_GM_Detail_C:RefreshDetailPanel(GenericModifyInfo, bCamShowTip, bIsFromIGuideSpecificModify)
   if nil == GenericModifyInfo then
     return
@@ -106,13 +107,16 @@ function WBP_IGuide_GM_Detail_C:RefreshDetailPanel(GenericModifyInfo, bCamShowTi
     UpdateVisibility(self.Canvas_UnlockMethodDesc, false)
   end
 end
+
 function WBP_IGuide_GM_Detail_C:OnMouseEnter(MyGeometry, MouseEvent)
   if self.bCamShowTip and self.Info ~= nil then
     EventSystem.Invoke(EventDef.IllustratedGuide.OnShowSkillTips, true, self.Info)
   end
   PlaySound2DByName(self.OnMouseEnterSoundName, "WBP_IGuide_GM_Detail_C")
 end
+
 function WBP_IGuide_GM_Detail_C:OnMouseLeave(MyGeometry, MouseEvent)
   EventSystem.Invoke(EventDef.IllustratedGuide.OnShowSkillTips, false, self.Info)
 end
+
 return WBP_IGuide_GM_Detail_C

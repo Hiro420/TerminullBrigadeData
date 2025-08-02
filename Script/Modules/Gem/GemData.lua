@@ -8,6 +8,7 @@ local PuzzleInfoConfig = require("GameConfig.Puzzle.PuzzleInfoConfig")
 local GemData = {
   AllPackageInfo = {}
 }
+
 function GemData:SetGemState(InGemId, State)
   local GemPackageInfo = GemData:GetGemPackageInfoByUId(InGemId)
   if not GemPackageInfo then
@@ -15,9 +16,11 @@ function GemData:SetGemState(InGemId, State)
   end
   GemPackageInfo.state = State
 end
+
 function GemData:SetGemPackageInfo(GemId, PackageInfo)
   GemData.AllPackageInfo[GemId] = PackageInfo
 end
+
 function GemData:SetGemEquipPuzzleId(InGemId, InPuzzleId)
   local GemPackageInfo = GemData:GetGemPackageInfoByUId(InGemId)
   if not GemPackageInfo then
@@ -25,15 +28,19 @@ function GemData:SetGemEquipPuzzleId(InGemId, InPuzzleId)
   end
   GemPackageInfo.pzUniqueID = InPuzzleId
 end
+
 function GemData:GetAllGemPackageInfo(...)
   return GemData.AllPackageInfo
 end
+
 function GemData:GetGemPackageInfoByUId(GemId)
   return GemData.AllPackageInfo[GemId]
 end
+
 function GemData:RemoveGemPackageInfo(GemId)
   GemData.AllPackageInfo[GemId] = nil
 end
+
 function GemData:GetGemResourceIdByUId(GemId, InPackageInfo)
   local PackageInfo = InPackageInfo
   PackageInfo = PackageInfo or GemData:GetGemPackageInfoByUId(GemId)
@@ -42,6 +49,7 @@ function GemData:GetGemResourceIdByUId(GemId, InPackageInfo)
   end
   return tonumber(PackageInfo.resourceID)
 end
+
 function GemData:IsEquippedInPuzzle(GemId)
   local PackageInfo = GemData:GetGemPackageInfoByUId(GemId)
   if not PackageInfo then
@@ -49,6 +57,7 @@ function GemData:IsEquippedInPuzzle(GemId)
   end
   return PackageInfo.pzUniqueID and PackageInfo.pzUniqueID ~= "0" and 0 ~= PackageInfo.pzUniqueID
 end
+
 function GemData:GetGemEquippedPuzzleId(GemId)
   local PackageInfo = GemData:GetGemPackageInfoByUId(GemId)
   if not PackageInfo then
@@ -56,6 +65,7 @@ function GemData:GetGemEquippedPuzzleId(GemId)
   end
   return PackageInfo.pzUniqueID
 end
+
 function GemData:GetMainAttrValueList(GemId)
   local TargetMainAttrList = {}
   local GemResourceId = GemData:GetGemResourceIdByUId(GemId)
@@ -80,6 +90,7 @@ function GemData:GetMainAttrValueList(GemId)
   end
   return TargetMainAttrList
 end
+
 function GemData:GetGemName(InGemId, InPackageInfo)
   local PackageInfo = InPackageInfo or GemData:GetGemPackageInfoByUId(InGemId)
   if not PackageInfo then
@@ -93,11 +104,13 @@ function GemData:GetGemName(InGemId, InPackageInfo)
   local Text = RowInfo.Name
   if PackageInfo.mutation then
     local NameFmt = "{0}{1}"
-    Text = UE.FTextFormat(NameFmt, PuzzleInfoConfig.MutationName, RowInfo.Name)
+    Text = UE.FTextFormat(NameFmt, PuzzleInfoConfig.MutationName(), RowInfo.Name)
   end
   return Text
 end
+
 function GemData:ClearData(...)
   GemData.AllPackageInfo = {}
 end
+
 return GemData

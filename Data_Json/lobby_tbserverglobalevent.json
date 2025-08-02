@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "seconds": "0",
+    "minutes": "*/1",
+    "hours": "*",
+    "day_of_month": "*",
+    "month": "*",
+    "day_of_week": "*",
+    "eventName": "TLog",
+    "args": "[\"players_online\"]",
+    "remark": "在线人数埋点"
+  }
+]

@@ -1,0 +1,3172 @@
+[
+  {
+    "ID": 100501,
+    "Name": "病毒选手",
+    "Desc": "曙光传奇级外观。",
+    "Quality": 4,
+    "Shelfs": [
+      2
+    ],
+    "TapList": [
+      1
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10100501,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 980,
+        "z": 980
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 980,
+    "DiscountPrice": 980,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 100501,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 101502,
+    "Name": "灼痕过载",
+    "Desc": "影刃传奇级外观。",
+    "Quality": 4,
+    "Shelfs": [
+      2
+    ],
+    "TapList": [
+      1
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10101502,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 980,
+        "z": 980
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 980,
+    "DiscountPrice": 980,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 101502,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 100003,
+    "Name": "电幻·暮光",
+    "Desc": "曙光稀有级外观。",
+    "Quality": 2,
+    "Shelfs": [
+      2
+    ],
+    "TapList": [
+      1
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10100003,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 100003,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 101002,
+    "Name": "猎手·苇草",
+    "Desc": "影刃稀有级外观。",
+    "Quality": 2,
+    "Shelfs": [
+      2
+    ],
+    "TapList": [
+      1
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10101002,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 101002,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 102101,
+    "Name": "秩序信念",
+    "Desc": "上校稀有级外观。",
+    "Quality": 2,
+    "Shelfs": [
+      2
+    ],
+    "TapList": [
+      1
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10102101,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 102101,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 103101,
+    "Name": "金属喷漆",
+    "Desc": "麦克斯稀有级外观。",
+    "Quality": 2,
+    "Shelfs": [
+      2
+    ],
+    "TapList": [
+      1
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10103101,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 103101,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 904101,
+    "Name": "甜心芭比",
+    "Desc": "格罗莉亚稀有级外观。",
+    "Quality": 2,
+    "Shelfs": [
+      2
+    ],
+    "TapList": [
+      1
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10904101,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 904101,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 106101,
+    "Name": "掠夺者",
+    "Desc": "海因克斯稀有级外观。",
+    "Quality": 2,
+    "Shelfs": [
+      2
+    ],
+    "TapList": [
+      1
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10106101,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 106101,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 106201,
+    "Name": "誓仇者",
+    "Desc": "海因克斯史诗级外观。",
+    "Quality": 3,
+    "Shelfs": [
+      2
+    ],
+    "TapList": [
+      1
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10106201,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 680,
+        "z": 680
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 680,
+    "DiscountPrice": 680,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 106201,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 500921,
+    "Name": "时空守护者",
+    "Desc": "影刃武器【倾心】稀有级外观。",
+    "Quality": 2,
+    "Shelfs": [
+      2
+    ],
+    "TapList": [
+      2
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10500921,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 500921,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 501021,
+    "Name": "暴雨危途",
+    "Desc": "上校武器【捍卫者】稀有级外观。",
+    "Quality": 2,
+    "Shelfs": [
+      2
+    ],
+    "TapList": [
+      2
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10501021,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 501021,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 501221,
+    "Name": "方解石",
+    "Desc": "曙光武器【星云】稀有级外观。",
+    "Quality": 2,
+    "Shelfs": [
+      2
+    ],
+    "TapList": [
+      2
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10501221,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 501221,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 502141,
+    "Name": "盛夏浪潮",
+    "Desc": "麦克斯【来切点什么】史诗级外观。",
+    "Quality": 3,
+    "Shelfs": [
+      2
+    ],
+    "TapList": [
+      2
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10502141,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 680,
+        "z": 680
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 680,
+    "DiscountPrice": 680,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 502141,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 501422,
+    "Name": "复古印花",
+    "Desc": "格罗莉亚【元气甜心】稀有级外观。",
+    "Quality": 2,
+    "Shelfs": [
+      2
+    ],
+    "TapList": [
+      2
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10501422,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 501422,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 501502,
+    "Name": "病毒暗星·荒原",
+    "Desc": "海因克斯【病毒暗星】稀有级外观。",
+    "Quality": 2,
+    "Shelfs": [
+      2
+    ],
+    "TapList": [
+      2
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10501502,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 501502,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10300001,
+    "Name": "着色器·华彩",
+    "Desc": "用于解锁可定制皮肤换色方案的材料。",
+    "Quality": 4,
+    "Shelfs": [
+      3
+    ],
+    "TapList": [],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99017,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 50,
+        "z": 50
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 50,
+    "DiscountPrice": 50,
+    "BuyLimit": 0,
+    "BuyLimitType": 0,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 1,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10300002,
+    "Name": "着色器",
+    "Desc": "用于解锁可定制皮肤换色方案的材料。",
+    "Quality": 4,
+    "Shelfs": [
+      3
+    ],
+    "TapList": [],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99025,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 30,
+        "z": 30
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 30,
+    "DiscountPrice": 30,
+    "BuyLimit": 0,
+    "BuyLimitType": 0,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 2,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10300101,
+    "Name": "抑制代码",
+    "Desc": "包含净化数据的代码，可以使用户在病毒侵蚀严重的区域自由活动。用途：赛季特殊模式“病毒狂潮”的入场门票",
+    "Quality": 3,
+    "Shelfs": [
+      3
+    ],
+    "TapList": [],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99019,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 4,
+        "z": 4
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 4,
+    "DiscountPrice": 4,
+    "BuyLimit": 20,
+    "BuyLimitType": 4,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 101,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10300102,
+    "Name": "高级定位器",
+    "Desc": "艾安制作的高级数据定位器，能够在矩阵庞大的数据网络中定位失序链区的位置。用途：赛季特殊模式“失序链区”的入场门票",
+    "Quality": 4,
+    "Shelfs": [
+      3
+    ],
+    "TapList": [],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99034,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 100,
+        "z": 100
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 100,
+    "DiscountPrice": 100,
+    "BuyLimit": 2,
+    "BuyLimitType": 4,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 102,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10300103,
+    "Name": "初级定位器",
+    "Desc": "艾安制作的初级数据定位器，能够在矩阵庞大的数据网络中定位失序链区的位置。用途：赛季特殊模式“失序链区”的入场门票",
+    "Quality": 4,
+    "Shelfs": [
+      3
+    ],
+    "TapList": [],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99018,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 50,
+        "z": 50
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 50,
+    "DiscountPrice": 50,
+    "BuyLimit": 2,
+    "BuyLimitType": 4,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 103,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10300201,
+    "Name": "改名卡",
+    "Desc": "用于修改您的昵称。",
+    "Quality": 4,
+    "Shelfs": [
+      3
+    ],
+    "TapList": [],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 300002,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 100,
+        "z": 100
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 100,
+    "DiscountPrice": 100,
+    "BuyLimit": 0,
+    "BuyLimitType": 0,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 201,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10300202,
+    "Name": "复活币",
+    "Desc": "当角色在局内倒地后，使用复活币可以立刻复苏，并回复所有体力值。",
+    "Quality": 4,
+    "Shelfs": [
+      3
+    ],
+    "TapList": [],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99016,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 20,
+        "z": 20
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 20,
+    "DiscountPrice": 20,
+    "BuyLimit": 0,
+    "BuyLimitType": 0,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 202,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10703001,
+    "Name": "麦克斯",
+    "Desc": "可解锁新角色-麦克斯。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      3
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 100010,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300001,
+        "y": 980,
+        "z": 980
+      },
+      {
+        "x": 300005,
+        "y": 980,
+        "z": 980
+      }
+    ],
+    "ConsumeResourcesID": 300001,
+    "ConsumeNum": 980,
+    "DiscountPrice": 980,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 1,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10703002,
+    "Name": "格罗莉亚",
+    "Desc": "可解锁新角色-格罗莉亚。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      3
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 100008,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300001,
+        "y": 980,
+        "z": 980
+      },
+      {
+        "x": 300005,
+        "y": 980,
+        "z": 980
+      }
+    ],
+    "ConsumeResourcesID": 300001,
+    "ConsumeNum": 980,
+    "DiscountPrice": 980,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 1,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10703003,
+    "Name": "凛冬",
+    "Desc": "可解锁曙光武器【凛冬】。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      3
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 5024,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300001,
+        "y": 700,
+        "z": 700
+      }
+    ],
+    "ConsumeResourcesID": 300001,
+    "ConsumeNum": 700,
+    "DiscountPrice": 700,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 3,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10703101,
+    "Name": "解码器",
+    "Desc": "用于解码数据宝库的信息数据。每解码一次，需要消耗一个解码器。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      3
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 210001,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300001,
+        "y": 60,
+        "z": 60
+      }
+    ],
+    "ConsumeResourcesID": 300001,
+    "ConsumeNum": 60,
+    "DiscountPrice": 60,
+    "BuyLimit": 5,
+    "BuyLimitType": 3,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 101,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10703201,
+    "Name": "齿轮",
+    "Desc": "个人头像-齿轮。",
+    "Quality": 2,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      3
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 81215,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300001,
+        "y": 60,
+        "z": 60
+      }
+    ],
+    "ConsumeResourcesID": 300001,
+    "ConsumeNum": 60,
+    "DiscountPrice": 60,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 201,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10703202,
+    "Name": "林中密语",
+    "Desc": "名片背景-林中密语。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      3
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 82427,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300001,
+        "y": 180,
+        "z": 180
+      }
+    ],
+    "ConsumeResourcesID": 300001,
+    "ConsumeNum": 180,
+    "DiscountPrice": 180,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 202,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10703203,
+    "Name": "蓝盾之心",
+    "Desc": "上校史诗级外观。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      3
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10102201,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300001,
+        "y": 680,
+        "z": 680
+      }
+    ],
+    "ConsumeResourcesID": 300001,
+    "ConsumeNum": 680,
+    "DiscountPrice": 680,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 203,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10707001,
+    "Name": "海因克斯",
+    "Desc": "第1赛季开启后，可在通行证兑换商城中兑换新角色-海因克斯。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      7
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 100009,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300007,
+        "y": 980,
+        "z": 980
+      }
+    ],
+    "ConsumeResourcesID": 300007,
+    "ConsumeNum": 980,
+    "DiscountPrice": 980,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 1,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2025-09-24 05:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10707002,
+    "Name": "浮世霓光·寂灭",
+    "Desc": "可解锁影刃武器【浮世霓光·寂灭】。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      7
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 5018,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300007,
+        "y": 700,
+        "z": 700
+      }
+    ],
+    "ConsumeResourcesID": 300007,
+    "ConsumeNum": 700,
+    "DiscountPrice": 700,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 2,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10707004,
+    "Name": "碧波猎手",
+    "Desc": "海因克斯【零度新星】稀有级外观。",
+    "Quality": 2,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      7
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10502721,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300007,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 300007,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 4,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10707005,
+    "Name": "沙滩车",
+    "Desc": "沟通喷漆-通用。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      7
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 20703018,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300007,
+        "y": 180,
+        "z": 180
+      }
+    ],
+    "ConsumeResourcesID": 300007,
+    "ConsumeNum": 180,
+    "DiscountPrice": 180,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 5,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10707006,
+    "Name": "威胁",
+    "Desc": "沟通喷漆-通用。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      7
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 20703030,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300007,
+        "y": 180,
+        "z": 180
+      }
+    ],
+    "ConsumeResourcesID": 300007,
+    "ConsumeNum": 180,
+    "DiscountPrice": 180,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 6,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10707007,
+    "Name": "害怕就躲远点",
+    "Desc": "沟通语音-上校专属。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      7
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 20720201,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300007,
+        "y": 80,
+        "z": 80
+      }
+    ],
+    "ConsumeResourcesID": 300007,
+    "ConsumeNum": 80,
+    "DiscountPrice": 80,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 7,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10707008,
+    "Name": "干得漂亮",
+    "Desc": "沟通语音-曙光专属。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      7
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 20720002,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300007,
+        "y": 80,
+        "z": 80
+      }
+    ],
+    "ConsumeResourcesID": 300007,
+    "ConsumeNum": 80,
+    "DiscountPrice": 80,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 8,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10707009,
+    "Name": "解码器",
+    "Desc": "用于解码数据宝库的信息数据。每解码一次，需要消耗一个解码器。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      7
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 210001,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300007,
+        "y": 60,
+        "z": 60
+      }
+    ],
+    "ConsumeResourcesID": 300007,
+    "ConsumeNum": 60,
+    "DiscountPrice": 60,
+    "BuyLimit": 2,
+    "BuyLimitType": 2,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 9,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10707010,
+    "Name": "源码",
+    "Desc": "内含100个源码。",
+    "Quality": 1,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      7
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99994,
+    "GainNum": 100,
+    "ConsumeResources": [
+      {
+        "x": 300007,
+        "y": 10,
+        "z": 10
+      }
+    ],
+    "ConsumeResourcesID": 300007,
+    "ConsumeNum": 10,
+    "DiscountPrice": 10,
+    "BuyLimit": 10,
+    "BuyLimitType": 2,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 10,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10704001,
+    "Name": "柑橘折射",
+    "Desc": "格罗莉亚史诗级外观。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      4
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10904202,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 20000,
+        "z": 20000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 20000,
+    "DiscountPrice": 20000,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 1,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10704002,
+    "Name": "传奇[穹锋][裂变]模组随机包-强度I",
+    "Desc": "随机获取一个强度为I的传奇品质[穹锋][裂变]模组，可前往【角色-战斗矩阵】中查看详情。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      4
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 62030,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 2000,
+        "z": 2000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 2000,
+    "DiscountPrice": 2000,
+    "BuyLimit": 3,
+    "BuyLimitType": 2,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 2,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10704003,
+    "Name": "传奇[锋卫][星垒]模组随机包-强度I",
+    "Desc": "随机获取一个强度为I的传奇品质[锋卫][星垒]模组，可前往【角色-战斗矩阵】中查看详情。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      4
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 62031,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 2000,
+        "z": 2000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 2000,
+    "DiscountPrice": 2000,
+    "BuyLimit": 3,
+    "BuyLimitType": 2,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 3,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10704004,
+    "Name": "基础模组随机包-强度I",
+    "Desc": "随机获取一个强度为I，且品质在稀有及以上的模组，可前往【角色-战斗矩阵】中查看详情。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      4
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 62032,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 500,
+        "z": 500
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 500,
+    "DiscountPrice": 500,
+    "BuyLimit": 5,
+    "BuyLimitType": 2,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 4,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10704005,
+    "Name": "重构数据",
+    "Desc": "可重构模组或核芯的底层数据，从而解锁全新词条。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      4
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99033,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 1000,
+        "z": 1000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 1000,
+    "DiscountPrice": 1000,
+    "BuyLimit": 5,
+    "BuyLimitType": 2,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 5,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10705001,
+    "Name": "病毒终结者",
+    "Desc": "个人头像-病毒终结者",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      5
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 81709,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 10000,
+        "z": 10000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 10000,
+    "DiscountPrice": 10000,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 1,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10705002,
+    "Name": "传奇[穹锋][裂变]模组随机包-强度II",
+    "Desc": "随机获取一个强度为II的传奇品质[穹锋][裂变]模组，可前往【角色-战斗矩阵】中查看详情。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      5
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 62033,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 2000,
+        "z": 2000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 2000,
+    "DiscountPrice": 2000,
+    "BuyLimit": 3,
+    "BuyLimitType": 2,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 2,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10705003,
+    "Name": "传奇[锋卫][星垒]模组随机包-强度II",
+    "Desc": "随机获取一个强度为II的传奇品质[锋卫][星垒]模组，可前往【角色-战斗矩阵】中查看详情。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      5
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 62034,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 2000,
+        "z": 2000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 2000,
+    "DiscountPrice": 2000,
+    "BuyLimit": 3,
+    "BuyLimitType": 2,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 3,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10705004,
+    "Name": "基础模组随机包-强度II",
+    "Desc": "随机获取一个强度为II，且品质在稀有及以上的模组，可前往【角色-战斗矩阵】中查看详情。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      5
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 62035,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 500,
+        "z": 500
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 500,
+    "DiscountPrice": 500,
+    "BuyLimit": 5,
+    "BuyLimitType": 2,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 4,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10705005,
+    "Name": "塑形晶核",
+    "Desc": "用于重新生成模组的形状。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      5
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99026,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 2000,
+        "z": 2000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 2000,
+    "DiscountPrice": 2000,
+    "BuyLimit": 3,
+    "BuyLimitType": 2,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 5,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10705006,
+    "Name": "转换晶核",
+    "Desc": "用于重置模组的随机一条副属性。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      5
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99030,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 2000,
+        "z": 2000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 2000,
+    "DiscountPrice": 2000,
+    "BuyLimit": 5,
+    "BuyLimitType": 2,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 6,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10705007,
+    "Name": "重置晶核",
+    "Desc": "用于重置模组的副属性的数值区间。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      5
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99028,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 2000,
+        "z": 2000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 2000,
+    "DiscountPrice": 2000,
+    "BuyLimit": 3,
+    "BuyLimitType": 2,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 7,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10705009,
+    "Name": "抑制代码",
+    "Desc": "包含净化数据的代码，可以使用户在病毒侵蚀严重的区域自由活动。用途：赛季特殊模式“病毒狂潮”的入场门票",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      5
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99019,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 400,
+        "z": 400
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 400,
+    "DiscountPrice": 400,
+    "BuyLimit": 6,
+    "BuyLimitType": 2,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 9,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10706001,
+    "Name": "传奇[穹锋][裂变]模组随机包-强度III",
+    "Desc": "随机获取一个强度为III的传奇品质[穹锋][裂变]模组，可前往【角色-战斗矩阵】中查看详情。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      6
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 62036,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 2000,
+        "z": 2000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 2000,
+    "DiscountPrice": 2000,
+    "BuyLimit": 10,
+    "BuyLimitType": 3,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 1,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10706002,
+    "Name": "传奇[锋卫][星垒]模组随机包-强度III",
+    "Desc": "随机获取一个强度为III的传奇品质[锋卫][星垒]模组，可前往【角色-战斗矩阵】中查看详情。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      6
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 62037,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 2000,
+        "z": 2000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 2000,
+    "DiscountPrice": 2000,
+    "BuyLimit": 10,
+    "BuyLimitType": 3,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 2,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10706004,
+    "Name": "塑形晶核",
+    "Desc": "用于重新生成模组的形状。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      6
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99026,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 2000,
+        "z": 2000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 2000,
+    "DiscountPrice": 2000,
+    "BuyLimit": 8,
+    "BuyLimitType": 3,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 4,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10706005,
+    "Name": "转换晶核",
+    "Desc": "用于重置模组的随机一条副属性。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      6
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99030,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 2000,
+        "z": 2000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 2000,
+    "DiscountPrice": 2000,
+    "BuyLimit": 12,
+    "BuyLimitType": 3,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 5,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10706006,
+    "Name": "重置晶核",
+    "Desc": "用于重置模组的副属性的数值区间。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      6
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99028,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 2000,
+        "z": 2000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 2000,
+    "DiscountPrice": 2000,
+    "BuyLimit": 12,
+    "BuyLimitType": 3,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 6,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10706007,
+    "Name": "高级定位器",
+    "Desc": "艾安制作的高级数据定位器，能够在矩阵庞大的数据网络中定位失序链区的位置。用途：赛季特殊模式“失序链区”的入场门票",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      6
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99034,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 10000,
+        "z": 10000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 10000,
+    "DiscountPrice": 10000,
+    "BuyLimit": 8,
+    "BuyLimitType": 3,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 7,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10706008,
+    "Name": "初级定位器",
+    "Desc": "艾安制作的初级数据定位器，能够在矩阵庞大的数据网络中定位失序链区的位置。用途：赛季特殊模式“失序链区”的入场门票",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      6
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99018,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 5000,
+        "z": 5000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 5000,
+    "DiscountPrice": 5000,
+    "BuyLimit": 8,
+    "BuyLimitType": 3,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 8,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10706009,
+    "Name": "抑制代码",
+    "Desc": "包含净化数据的代码，可以使用户在病毒侵蚀严重的区域自由活动。用途：赛季特殊模式“病毒狂潮”的入场门票",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      6
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99019,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 400,
+        "z": 400
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 400,
+    "DiscountPrice": 400,
+    "BuyLimit": 80,
+    "BuyLimitType": 3,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 9,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10706010,
+    "Name": "矩阵币",
+    "Desc": "内含1000个矩阵币。",
+    "Quality": 2,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      6
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99989,
+    "GainNum": 1000,
+    "ConsumeResources": [
+      {
+        "x": 300006,
+        "y": 2000,
+        "z": 2000
+      }
+    ],
+    "ConsumeResourcesID": 300006,
+    "ConsumeNum": 2000,
+    "DiscountPrice": 2000,
+    "BuyLimit": 0,
+    "BuyLimitType": 0,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 10,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10709001,
+    "Name": "浮世霓光·暮夜傀姬",
+    "Desc": "一抹幻光现世，徒留人间浮屠。\\n这是属于影刃的夜晚，百鬼之夜，众生喧嚣。她如魅影般在城市里穿梭，留下一个又一个瑰丽离奇的故事。",
+    "Quality": 5,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      9
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10101010,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 99035,
+        "y": 8888,
+        "z": 8888
+      }
+    ],
+    "ConsumeResourcesID": 99035,
+    "ConsumeNum": 8888,
+    "DiscountPrice": 8888,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 1,
+    "IsCountDown": true,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10709002,
+    "Name": "着色器·华彩",
+    "Desc": "内含10个着色器·华彩。可用于解锁辉耀传奇皮肤换色方案。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      9
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99017,
+    "GainNum": 10,
+    "ConsumeResources": [
+      {
+        "x": 99035,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 99035,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 2,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 2,
+    "IsCountDown": true,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10709003,
+    "Name": "弱点",
+    "Desc": "沟通语音-影刃专属。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      9
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 20720171,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 99035,
+        "y": 90,
+        "z": 90
+      }
+    ],
+    "ConsumeResourcesID": 99035,
+    "ConsumeNum": 90,
+    "DiscountPrice": 90,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 3,
+    "IsCountDown": true,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10709004,
+    "Name": "我是天才！",
+    "Desc": "沟通语音-格罗莉亚专属。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      9
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 20720471,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 99035,
+        "y": 90,
+        "z": 90
+      }
+    ],
+    "ConsumeResourcesID": 99035,
+    "ConsumeNum": 90,
+    "DiscountPrice": 90,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 4,
+    "IsCountDown": true,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10709005,
+    "Name": "末路狂花",
+    "Desc": "格罗莉亚史诗级外观。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      9
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10904201,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 99035,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 99035,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 5,
+    "IsCountDown": true,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10709006,
+    "Name": "幻彩狂热",
+    "Desc": "麦克斯史诗级外观。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      9
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10103202,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 99035,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 99035,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 6,
+    "IsCountDown": true,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10709007,
+    "Name": "小恶魔",
+    "Desc": "曙光【凛冬】史诗级外观。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      9
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10502441,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 99035,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 99035,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 9,
+    "IsCountDown": true,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10709008,
+    "Name": "浮世霓光·超音速",
+    "Desc": "影刃【浮世霓光·寂灭】史诗级外观。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      9
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10501802,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 99035,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 99035,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 10,
+    "IsCountDown": true,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10709009,
+    "Name": "幻彩星踪",
+    "Desc": "曙光史诗级外观。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      9
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10100202,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 99035,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 99035,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 7,
+    "IsCountDown": true,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10709010,
+    "Name": "暗网游侠",
+    "Desc": "海因克斯史诗级外观。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      9
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10106202,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 99035,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 99035,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 8,
+    "IsCountDown": true,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10709011,
+    "Name": "完全过载",
+    "Desc": "麦克斯【来炸点什么】史诗级外观。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      9
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10501641,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 99035,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 99035,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 11,
+    "IsCountDown": true,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10709012,
+    "Name": "浮世霓光·百鬼夜行",
+    "Desc": "影刃【浮世霓光·寂灭】史诗级外观。",
+    "Quality": 3,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      9
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 10501803,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 99035,
+        "y": 300,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 99035,
+    "ConsumeNum": 300,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 1,
+    "Tab": 1,
+    "Sort": 12,
+    "IsCountDown": true,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10710001,
+    "Name": "基础模组随机包-强度I",
+    "Desc": "随机获取一个强度为I，且品质在稀有及以上的模组，可前往【角色-战斗矩阵】中查看详情。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      10
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 62039,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 99012,
+        "y": 240,
+        "z": 240
+      }
+    ],
+    "ConsumeResourcesID": 99012,
+    "ConsumeNum": 240,
+    "DiscountPrice": 240,
+    "BuyLimit": 0,
+    "BuyLimitType": 0,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 1,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10710002,
+    "Name": "基础模组随机包-强度II",
+    "Desc": "随机获取一个强度为II，且品质在稀有及以上的模组，可前往【角色-战斗矩阵】中查看详情。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      10
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 62040,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 99013,
+        "y": 240,
+        "z": 240
+      }
+    ],
+    "ConsumeResourcesID": 99013,
+    "ConsumeNum": 240,
+    "DiscountPrice": 240,
+    "BuyLimit": 0,
+    "BuyLimitType": 0,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 2,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 10710003,
+    "Name": "基础模组随机包-强度III",
+    "Desc": "随机获取一个强度为III，且品质在稀有及以上的模组，可前往【角色-战斗矩阵】中查看详情。",
+    "Quality": 4,
+    "Shelfs": [
+      7
+    ],
+    "TapList": [
+      10
+    ],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 62041,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 99014,
+        "y": 240,
+        "z": 240
+      }
+    ],
+    "ConsumeResourcesID": 99014,
+    "ConsumeNum": 240,
+    "DiscountPrice": 240,
+    "BuyLimit": 0,
+    "BuyLimitType": 0,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 3,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 101,
+    "Name": "充值档位1",
+    "Desc": "100",
+    "Quality": 4,
+    "Shelfs": [
+      4
+    ],
+    "TapList": [],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 300001,
+    "GainNum": 100,
+    "ConsumeResources": [],
+    "ConsumeResourcesID": 0,
+    "ConsumeNum": 0,
+    "DiscountPrice": 0,
+    "BuyLimit": 0,
+    "BuyLimitType": 0,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 6,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 102,
+    "Name": "充值档位2",
+    "Desc": "300",
+    "Quality": 4,
+    "Shelfs": [
+      4
+    ],
+    "TapList": [],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 300001,
+    "GainNum": 300,
+    "ConsumeResources": [],
+    "ConsumeResourcesID": 0,
+    "ConsumeNum": 0,
+    "DiscountPrice": 0,
+    "BuyLimit": 0,
+    "BuyLimitType": 0,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 5,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 103,
+    "Name": "充值档位3",
+    "Desc": "980",
+    "Quality": 4,
+    "Shelfs": [
+      4
+    ],
+    "TapList": [],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 300001,
+    "GainNum": 980,
+    "ConsumeResources": [],
+    "ConsumeResourcesID": 0,
+    "ConsumeNum": 0,
+    "DiscountPrice": 0,
+    "BuyLimit": 0,
+    "BuyLimitType": 0,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 4,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 104,
+    "Name": "充值档位4",
+    "Desc": "1980",
+    "Quality": 4,
+    "Shelfs": [
+      4
+    ],
+    "TapList": [],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 300001,
+    "GainNum": 1980,
+    "ConsumeResources": [],
+    "ConsumeResourcesID": 0,
+    "ConsumeNum": 0,
+    "DiscountPrice": 0,
+    "BuyLimit": 0,
+    "BuyLimitType": 0,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 3,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 105,
+    "Name": "充值档位5",
+    "Desc": "3280",
+    "Quality": 4,
+    "Shelfs": [
+      4
+    ],
+    "TapList": [],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 300001,
+    "GainNum": 3280,
+    "ConsumeResources": [],
+    "ConsumeResourcesID": 0,
+    "ConsumeNum": 0,
+    "DiscountPrice": 0,
+    "BuyLimit": 0,
+    "BuyLimitType": 0,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 2,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 106,
+    "Name": "充值档位6",
+    "Desc": "6480",
+    "Quality": 4,
+    "Shelfs": [
+      4
+    ],
+    "TapList": [],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 300001,
+    "GainNum": 6480,
+    "ConsumeResources": [],
+    "ConsumeResourcesID": 0,
+    "ConsumeNum": 0,
+    "DiscountPrice": 0,
+    "BuyLimit": 0,
+    "BuyLimitType": 0,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 1,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 1001,
+    "Name": "麦克斯大礼包",
+    "Desc": "内含：角色-麦克斯，麦克斯熟练度满级补给，武器外观-狂野伪装，专属语音-炸弹先锋。",
+    "Quality": 4,
+    "Shelfs": [
+      1
+    ],
+    "TapList": [],
+    "ShelfsShowType": 1,
+    "GainResourcesID": 61035,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 2640,
+        "z": 1680
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 2640,
+    "DiscountPrice": 1680,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 1001,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 1002,
+    "Name": "病毒选手捆绑包",
+    "Desc": "1980",
+    "Quality": 4,
+    "Shelfs": [
+      1
+    ],
+    "TapList": [],
+    "ShelfsShowType": 1,
+    "GainResourcesID": 61036,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 1120,
+        "z": 580
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 1120,
+    "DiscountPrice": 580,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 501,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 1003,
+    "Name": "病毒猎手捆绑包",
+    "Desc": "1980",
+    "Quality": 4,
+    "Shelfs": [
+      1
+    ],
+    "TapList": [],
+    "ShelfsShowType": 1,
+    "GainResourcesID": 61037,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 1120,
+        "z": 580
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 1120,
+    "DiscountPrice": 580,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 3,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2024-09-24 05:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2024-09-24 05:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 1004,
+    "Name": "荧蚀崩解捆绑包",
+    "Desc": "",
+    "Quality": 4,
+    "Shelfs": [
+      1
+    ],
+    "TapList": [],
+    "ShelfsShowType": 1,
+    "GainResourcesID": 61047,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 1840,
+        "z": 980
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 1840,
+    "DiscountPrice": 980,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 4,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2024-09-24 05:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2024-09-24 05:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 1005,
+    "Name": "灼痕过载捆绑包",
+    "Desc": "",
+    "Quality": 4,
+    "Shelfs": [
+      1
+    ],
+    "TapList": [],
+    "ShelfsShowType": 1,
+    "GainResourcesID": 61048,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 1840,
+        "z": 980
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 1840,
+    "DiscountPrice": 980,
+    "BuyLimit": 1,
+    "BuyLimitType": 1,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 502,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2025-09-24 05:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2025-09-24 05:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 5001,
+    "Name": "解码器补给包",
+    "Desc": "内含10个解码器。可用于解码数据宝库的信息数据。每解码一次，需要消耗一个解码器。",
+    "Quality": 4,
+    "Shelfs": [
+      1
+    ],
+    "TapList": [],
+    "ShelfsShowType": 2,
+    "GainResourcesID": 61012,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 600,
+        "z": 300
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 600,
+    "DiscountPrice": 300,
+    "BuyLimit": 1,
+    "BuyLimitType": 2,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 499,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 990080,
+    "Name": "原爆点通行证等级道具",
+    "Desc": "原爆点通行证等级道具",
+    "Quality": 1,
+    "Shelfs": [
+      5
+    ],
+    "TapList": [],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99008,
+    "GainNum": 1000,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 60,
+        "z": 60
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 60,
+    "DiscountPrice": 60,
+    "BuyLimit": 0,
+    "BuyLimitType": 0,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 1,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 990090,
+    "Name": "超载通行证等级道具",
+    "Desc": "超载通行证等级道具",
+    "Quality": 1,
+    "Shelfs": [
+      5
+    ],
+    "TapList": [],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 99009,
+    "GainNum": 1000,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 60,
+        "z": 60
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 60,
+    "DiscountPrice": 60,
+    "BuyLimit": 0,
+    "BuyLimitType": 0,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 2,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-12-31 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-12-31 00:00:00",
+    "IsNew": false
+  },
+  {
+    "ID": 60000,
+    "Name": "【测试】抽卡道具",
+    "Desc": "【测试】消耗一个抽卡道具，进行一次抽卡。",
+    "Quality": 4,
+    "Shelfs": [
+      6
+    ],
+    "TapList": [],
+    "ShelfsShowType": 0,
+    "GainResourcesID": 61050,
+    "GainNum": 1,
+    "ConsumeResources": [
+      {
+        "x": 300005,
+        "y": 60,
+        "z": 60
+      }
+    ],
+    "ConsumeResourcesID": 300005,
+    "ConsumeNum": 60,
+    "DiscountPrice": 60,
+    "BuyLimit": 0,
+    "BuyLimitType": 0,
+    "AleardyOwnedLimit": 0,
+    "Tab": 1,
+    "Sort": 1,
+    "IsCountDown": false,
+    "ShowStartTime": "2023-03-01 00:00:00",
+    "ShowEndTime": "2035-06-01 00:00:00",
+    "SaleStartTime": "2023-03-01 00:00:00",
+    "SaleEndTime": "2035-06-01 00:00:00",
+    "IsNew": false
+  }
+]

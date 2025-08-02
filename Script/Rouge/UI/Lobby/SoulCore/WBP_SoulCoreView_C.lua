@@ -3,6 +3,7 @@ local SoulCoreItemDataPath = "/Game/Rouge/UI/Lobby/SoulCore/SoulCoreItemData.Sou
 local SoulCoreSkillLevelDescItemPath = "/Game/Rouge/UI/Lobby/SoulCore/WBP_SoulCoreSkillLevelDescItem.WBP_SoulCoreSkillLevelDescItem_C"
 local SoulCoreSkillTagPath = "/Game/Rouge/UI/Lobby/SoulCore/WBP_SoulCoreSkillTag.WBP_SoulCoreSkillTag_C"
 local ESoulCoreViewType = {SoulCoreView = 1, EquipView = 2}
+
 function WBP_SoulCoreView_C:Construct()
   EventSystem.AddListener(self, EventDef.Lobby.LobbyPanelChanged, WBP_SoulCoreView_C.BindOnLobbyActivePanelChanged)
   EventSystem.AddListener(self, EventDef.Lobby.RoleItemClicked, WBP_SoulCoreView_C.BindOnChangeRoleItemClicked)
@@ -17,6 +18,7 @@ function WBP_SoulCoreView_C:Construct()
   self.ButtonTipCancel.OnClicked:Add(self, WBP_SoulCoreView_C.BindOnTipsCancel)
   self.NextTabList = {}
 end
+
 function WBP_SoulCoreView_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.LobbyPanelChanged, WBP_SoulCoreView_C.BindOnLobbyActivePanelChanged)
   EventSystem.RemoveListener(EventDef.Lobby.RoleItemClicked, WBP_SoulCoreView_C.BindOnChangeRoleItemClicked)
@@ -30,6 +32,7 @@ function WBP_SoulCoreView_C:Destruct()
   self.ButtonTipCancel.OnClicked:Remove(self, WBP_SoulCoreView_C.BindOnTipsCancel)
   LogicSoulCore.CurSelectSoulCoreId = -1
 end
+
 function WBP_SoulCoreView_C:BindOnLobbyActivePanelChanged(LastActiveWidget, CurActiveWidget)
   if LastActiveWidget == CurActiveWidget then
     if CurActiveWidget == self then
@@ -64,6 +67,7 @@ function WBP_SoulCoreView_C:BindOnLobbyActivePanelChanged(LastActiveWidget, CurA
     end
   end
 end
+
 function WBP_SoulCoreView_C:CanDirectSwitch(NextTabWidget)
   if NextTabWidget and not table.Contain(self.NextTabList, NextTabWidget) then
     table.insert(self.NextTabList, NextTabWidget)
@@ -73,6 +77,7 @@ function WBP_SoulCoreView_C:CanDirectSwitch(NextTabWidget)
   end
   return not self.bNeedPlayFadeOutAni
 end
+
 function WBP_SoulCoreView_C:ChangeNextTab()
   self.bNeedPlayFadeOutAni = false
   for i, NextTabWidget in ipairs(self.NextTabList) do
@@ -80,19 +85,23 @@ function WBP_SoulCoreView_C:ChangeNextTab()
   end
   self.NextTabList = {}
 end
+
 function WBP_SoulCoreView_C:OnAnimationFinished(Animation)
   if Animation == self.FadeOut then
     self:ChangeNextTab()
   end
 end
+
 function WBP_SoulCoreView_C:BindOnChangeRoleItemClicked(CharacterId)
   self.CurMainHeroId = CharacterId
   self.CanvasPanelEquip:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.WBP_SoulCoreEquipPanel:InitInfo(CharacterId, self)
   self.WBP_RoleChangeList:RefreshRoleList()
 end
+
 function WBP_SoulCoreView_C:InitInfo()
 end
+
 function WBP_SoulCoreView_C:BindOnUpgradeButtonClicked()
   local WidgetClass = UE.UClass.Load("/Game/Rouge/UI/Lobby/Role/WBP_RoleUpgradePanel.WBP_RoleUpgradePanel_C")
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGUIManager:StaticClass())
@@ -105,6 +114,7 @@ function WBP_SoulCoreView_C:BindOnUpgradeButtonClicked()
     Widget:InitInfo(LogicSoulCore.CurSelectSoulCoreId)
   end
 end
+
 function WBP_SoulCoreView_C:BindOnEquipButtonClicked()
   local bIsUnLock = LogicRole.CheckCharacterUnlock(LogicSoulCore.CurSelectSoulCoreId)
   if bIsUnLock then
@@ -113,13 +123,16 @@ function WBP_SoulCoreView_C:BindOnEquipButtonClicked()
     self.CanvasPanelNotEnoughTips:SetVisibility(UE.ESlateVisibility.Visible)
   end
 end
+
 function WBP_SoulCoreView_C:BindOnTipsCancel()
   self.CanvasPanelNotEnoughTips:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_SoulCoreView_C:BindOnTipsConfirm()
   self.CanvasPanelNotEnoughTips:SetVisibility(UE.ESlateVisibility.Collapsed)
   UIMgr:Show(ViewID.UI_DrawCard)
 end
+
 function WBP_SoulCoreView_C:UpdateEquipPanel(bIsShowEquipPanel, bNotIsSelectChangeList)
   if bIsShowEquipPanel then
     self.ViewType = ESoulCoreViewType.EquipView
@@ -142,15 +155,18 @@ function WBP_SoulCoreView_C:UpdateEquipPanel(bIsShowEquipPanel, bNotIsSelectChan
     self.WBP_RoleChangeList:PlayAnimation(self.WBP_RoleChangeList.ani_rolechangelist_out)
   end
 end
+
 function WBP_SoulCoreView_C:RequestAllHeroFetterInfo()
   local AllCharacterList = LogicRole.GetAllCanSelectCharacterList()
   for i, v in ipairs(AllCharacterList) do
     LogicRole.RequestGetHeroFetterInfoToServer(v)
   end
 end
+
 function WBP_SoulCoreView_C.EliminateFunc(CharacterId)
   return not DataMgr.IsOwnHero(CharacterId)
 end
+
 function WBP_SoulCoreView_C.RoleListSort(A, B)
   if LogicSoulCore:CheckCantEquipSoulCore(A) then
     return false
@@ -160,16 +176,19 @@ function WBP_SoulCoreView_C.RoleListSort(A, B)
   end
   return A < B
 end
+
 function WBP_SoulCoreView_C:EquipSoulCoreSucc()
   LogicRole.RequestGetHeroFetterInfoToServer(self.CurMainHeroId, {
     self,
     self.OnGetHeroFetterInfoSuccess
   })
 end
+
 function WBP_SoulCoreView_C:OnFetterHeroInfoUpdate()
   self.WBP_SoulCoreEquipPanel:UpdateSoulCoreEquipItemList()
   self.WBP_RoleChangeList:RefreshRoleList(-1)
 end
+
 function WBP_SoulCoreView_C:EscEquip()
   if self.ViewType == ESoulCoreViewType.EquipView then
     self:UpdateEquipPanel(false)
@@ -177,11 +196,13 @@ function WBP_SoulCoreView_C:EscEquip()
     LogicLobby.JumpToLobbyDefaultPanel()
   end
 end
+
 function WBP_SoulCoreView_C:OnGetHeroFetterInfoSuccess(JsonResponse)
   print("OnGetHeroFetterInfoSuccess", JsonResponse.Content)
   self:UpdateSoulCoreList()
   LogicRole.InitFetterHeroesMesh(self.CurMainHeroId)
 end
+
 function WBP_SoulCoreView_C:UpdateSoulCoreList()
   if self.ViewType == ESoulCoreViewType.SoulCoreView then
     self.CanvasPanelSoulCoreList:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -233,6 +254,7 @@ function WBP_SoulCoreView_C:UpdateSoulCoreList()
     self:UpdateEquipPanel(true, true)
   end
 end
+
 function WBP_SoulCoreView_C:Select(IndexParam, CharacterId, ResourceId)
   self:UpdateView(CharacterId, ResourceId)
   self.CurSelect = IndexParam
@@ -243,6 +265,7 @@ function WBP_SoulCoreView_C:Select(IndexParam, CharacterId, ResourceId)
   local bIsDisable = Lv < MaxStar and MaxStar > 0 and bIsUnLock
   self.BP_ButtonWithSoundLevelUp:SetIsEnabled(bIsDisable)
 end
+
 function WBP_SoulCoreView_C:UpdateView(CharacterId, ResourceId)
   self.CanvasPanelDetails:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   local CharacterTb = LogicSoulCore:GetCharacterTableRow(CharacterId)
@@ -270,6 +293,7 @@ function WBP_SoulCoreView_C:UpdateView(CharacterId, ResourceId)
     self:UpdateSkillDesc(SkillList, Lv)
   end
 end
+
 function WBP_SoulCoreView_C:UpdateSkillTag(SkillTags)
   local SoulCoreSkillTagCls = UE.UClass.Load(SoulCoreSkillTagPath)
   for i, v in ipairs(SkillTags) do
@@ -281,6 +305,7 @@ function WBP_SoulCoreView_C:UpdateSkillTag(SkillTags)
   end
   HideOtherItem(self.HorizontalBoxSkillTag, #SkillTags + 1)
 end
+
 function WBP_SoulCoreView_C:UpdateSkillDesc(SkillList, CharacterStar)
   local LevelDescItemCls = UE.UClass.Load(SoulCoreSkillLevelDescItemPath)
   for index, value in ipairs(SkillList) do
@@ -293,8 +318,10 @@ function WBP_SoulCoreView_C:UpdateSkillDesc(SkillList, CharacterStar)
   end
   HideOtherItem(self.VerticalBoxSkillDesc, #SkillList + 1)
 end
+
 function WBP_SoulCoreView_C:OnLobbyActivePanelChanged(LastActiveWidget, CurActiveWidget)
   if CurActiveWidget == self then
   end
 end
+
 return WBP_SoulCoreView_C

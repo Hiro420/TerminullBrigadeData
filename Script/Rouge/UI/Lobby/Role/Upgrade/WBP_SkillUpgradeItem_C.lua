@@ -1,4 +1,5 @@
 local WBP_SkillUpgradeItem_C = UnLua.Class()
+
 function WBP_SkillUpgradeItem_C:RefreshInfo(CurHeroStar, TargetHeroStar, SkillGroupId)
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   local SkillGroupInfo = LogicRole.GetSkillTableRow(SkillGroupId)
@@ -38,4 +39,5 @@ function WBP_SkillUpgradeItem_C:RefreshInfo(CurHeroStar, TargetHeroStar, SkillGr
   TargetDescText = WaveWindowManager:FormatTextByOrder(TargetDescText, DescParams)
   self.Txt_Desc:SetText(TargetDescText)
 end
+
 return WBP_SkillUpgradeItem_C

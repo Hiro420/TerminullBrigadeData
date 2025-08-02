@@ -1,4 +1,5 @@
 local BP_EditorTestRoleMain_C = UnLua.Class()
+
 function BP_EditorTestRoleMain_C:ReceiveBeginPlay()
   if UE.UKismetSystemLibrary.IsDedicatedServer(self) then
     return
@@ -57,4 +58,5 @@ function BP_EditorTestRoleMain_C:ReceiveBeginPlay()
     end
   }, 0.2, false)
 end
+
 return BP_EditorTestRoleMain_C

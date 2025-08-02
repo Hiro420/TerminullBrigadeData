@@ -1,4 +1,5 @@
 local WBP_DifficultyPanel_C = UnLua.Class()
+
 function WBP_DifficultyPanel_C:InitScrollBox()
   self.UniformGridPanel_Difficulty:ClearChildren()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -40,6 +41,7 @@ function WBP_DifficultyPanel_C:InitScrollBox()
     end
   end
 end
+
 function WBP_DifficultyPanel_C:InitChooseDifficultySlot()
   local arrayWidgets = self.UniformGridPanel_Difficulty:GetAllChildren()
   local index
@@ -55,6 +57,7 @@ function WBP_DifficultyPanel_C:InitChooseDifficultySlot()
     widget:OnClicked_Difficulty()
   end
 end
+
 function WBP_DifficultyPanel_C:OnClicked_Difficulty(widget)
   self.ChooseDifficultySlot = widget
   for key, value in iterator(self.UniformGridPanel_Difficulty:GetAllChildren()) do
@@ -63,4 +66,5 @@ function WBP_DifficultyPanel_C:OnClicked_Difficulty(widget)
     end
   end
 end
+
 return WBP_DifficultyPanel_C

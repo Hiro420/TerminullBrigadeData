@@ -1,10 +1,12 @@
 local WBP_RGNormalWaveWindow_C = UnLua.Class()
+
 function WBP_RGNormalWaveWindow_C:Construct()
   self:BindToAnimationFinished(self.EndAnim, {
     self,
     WBP_RGNormalWaveWindow_C.BindOnEndAnimAnimFinished
   })
 end
+
 function WBP_RGNormalWaveWindow_C:BindOnEndAnimAnimFinished()
   local RGWaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGWaveWindowManager:StaticClass())
   if RGWaveWindowManager then
@@ -12,6 +14,7 @@ function WBP_RGNormalWaveWindow_C:BindOnEndAnimAnimFinished()
     RGWaveWindowManager:CloseWaveWindow(self)
   end
 end
+
 function WBP_RGNormalWaveWindow_C:K2_CloseWaveWindow()
   if self.DoOnce then
     return
@@ -54,6 +57,7 @@ function WBP_RGNormalWaveWindow_C:K2_CloseWaveWindow()
     end
   end
 end
+
 function WBP_RGNormalWaveWindow_C:AddPadding(ItemHight, Speed)
   if self.Slot then
     self.InterpSpeed = Speed
@@ -61,4 +65,5 @@ function WBP_RGNormalWaveWindow_C:AddPadding(ItemHight, Speed)
     self.TargetPadding.Top = self.TargetPadding.Top + ItemHight
   end
 end
+
 return WBP_RGNormalWaveWindow_C

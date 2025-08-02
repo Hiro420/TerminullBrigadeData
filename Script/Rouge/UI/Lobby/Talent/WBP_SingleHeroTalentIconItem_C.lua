@@ -19,20 +19,25 @@ local BottomStyle = {
     SmallFrameImg = "/Game/Rouge/UI/Texture/Role_new/Frames/RolePower_DNA_04_png.RolePower_DNA_04_png"
   }
 }
+
 function WBP_SingleHeroTalentIconItem_C:Construct()
   self.Btn_Main.OnClicked:Add(self, WBP_SingleHeroTalentIconItem_C.BindOnMainButtonClicked)
   self.Btn_Main.OnHovered:Add(self, WBP_SingleHeroTalentIconItem_C.BindOnMainButtonHovered)
   self.Btn_Main.OnUnhovered:Add(self, WBP_SingleHeroTalentIconItem_C.BindOnMainButtonUnHovered)
 end
+
 function WBP_SingleHeroTalentIconItem_C:BindOnMainButtonClicked()
   EventSystem.Invoke(EventDef.Lobby.HeroTalentIconItemClicked, self.TalentId)
 end
+
 function WBP_SingleHeroTalentIconItem_C:BindOnMainButtonHovered()
   self.Img_Hover:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
 end
+
 function WBP_SingleHeroTalentIconItem_C:BindOnMainButtonUnHovered()
   self.Img_Hover:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_SingleHeroTalentIconItem_C:Show(TalentId, CurHeroId)
   if not TalentId or 0 == TalentId then
     self:Hide()
@@ -47,6 +52,7 @@ function WBP_SingleHeroTalentIconItem_C:Show(TalentId, CurHeroId)
   self:RefreshStatus()
   self:RefreshBottomStyle()
 end
+
 function WBP_SingleHeroTalentIconItem_C:RefreshBottomStyle()
   local CurLevel = DataMgr.GetHeroTalentLevelById(self.CurHeroId, self.TalentId)
   local MaxCanUpgradeLevel = LogicTalent.GetHeroTalentMaxCanUpgradeLevel(self.CurHeroId, self.TalentId)
@@ -71,6 +77,7 @@ function WBP_SingleHeroTalentIconItem_C:RefreshBottomStyle()
     SetImageBrushByPath(self.Img_RightIcon, Style.SmallIconImg)
   end
 end
+
 function WBP_SingleHeroTalentIconItem_C:RefreshStatus()
   local CurLevel = DataMgr.GetHeroTalentLevelById(self.CurHeroId, self.TalentId)
   local MaxCanUpgradeLevel = LogicTalent.GetHeroTalentMaxCanUpgradeLevel(self.CurHeroId, self.TalentId)
@@ -83,6 +90,7 @@ function WBP_SingleHeroTalentIconItem_C:RefreshStatus()
   self.Txt_Progress:SetText("LV." .. CurLevel)
   self:RefreshCanUpgradePanelStatus()
 end
+
 function WBP_SingleHeroTalentIconItem_C:RefreshCanUpgradePanelStatus()
   self.UpgradePanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   local CurLevel = DataMgr.GetHeroTalentLevelById(self.CurHeroId, self.TalentId)
@@ -93,6 +101,7 @@ function WBP_SingleHeroTalentIconItem_C:RefreshCanUpgradePanelStatus()
     self.UpgradePanel:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
   end
 end
+
 function WBP_SingleHeroTalentIconItem_C:BindOnHeroTalentIconItemClicked(TalentId)
   if TalentId == self.TalentId then
     self.IsSelected = true
@@ -103,12 +112,14 @@ function WBP_SingleHeroTalentIconItem_C:BindOnHeroTalentIconItemClicked(TalentId
   end
   self:RefreshBottomStyle()
 end
+
 function WBP_SingleHeroTalentIconItem_C:BindOnUpdateHeroTalentInfo(HeroId)
   if HeroId ~= self.CurHeroId then
     return
   end
   self:RefreshStatus()
 end
+
 function WBP_SingleHeroTalentIconItem_C:Hide()
   self.IsBound = false
   self.TalentId = 0
@@ -116,7 +127,9 @@ function WBP_SingleHeroTalentIconItem_C:Hide()
   EventSystem.RemoveListener(EventDef.Lobby.HeroTalentIconItemClicked, WBP_SingleHeroTalentIconItem_C.BindOnHeroTalentIconItemClicked, self)
   EventSystem.RemoveListener(EventDef.Lobby.UpdateHeroTalentInfo, WBP_SingleHeroTalentIconItem_C.BindOnUpdateHeroTalentInfo, self)
 end
+
 function WBP_SingleHeroTalentIconItem_C:Destruct()
   self:Hide()
 end
+
 return WBP_SingleHeroTalentIconItem_C

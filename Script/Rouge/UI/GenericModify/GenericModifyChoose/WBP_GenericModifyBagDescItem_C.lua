@@ -1,4 +1,5 @@
 local WBP_GenericModifyBagDescItem_C = UnLua.Class()
+
 function WBP_GenericModifyBagDescItem_C:InitGenericModifyDescItem(GenericModifyLevelId, GenericModifyId, bIsUpgrade, ModifyLevelDescShowType, bIsShowHelpInUI)
   UpdateVisibility(self, true)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -100,7 +101,9 @@ function WBP_GenericModifyBagDescItem_C:InitGenericModifyDescItem(GenericModifyL
   end
   UpdateVisibility(self.Btn_Help, bIsShowHelpInUI)
 end
+
 function WBP_GenericModifyBagDescItem_C:Hide()
   UpdateVisibility(self, false)
 end
+
 return WBP_GenericModifyBagDescItem_C

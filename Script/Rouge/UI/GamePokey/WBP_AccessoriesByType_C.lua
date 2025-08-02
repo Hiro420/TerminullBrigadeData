@@ -1,4 +1,5 @@
 local WBP_AccessoriesByType_C = UnLua.Class()
+
 function WBP_AccessoriesByType_C:CreateSingleAccessory(Array)
   self.VerticalBox_Accessories:ClearChildren()
   local widget
@@ -14,6 +15,7 @@ function WBP_AccessoriesByType_C:CreateSingleAccessory(Array)
     end
   end
 end
+
 function WBP_AccessoriesByType_C:InitInfo(GamePokey, AccessoryType, AccessoryTypeName, Array, ShowBack)
   if GamePokey then
     self.GamePokey = GamePokey
@@ -28,6 +30,7 @@ function WBP_AccessoriesByType_C:InitInfo(GamePokey, AccessoryType, AccessoryTyp
     end
   end
 end
+
 function WBP_AccessoriesByType_C:RefreshState()
   local widget
   for key, value in iterator(self.VerticalBox_Accessories:GetAllChildren()) do
@@ -37,6 +40,7 @@ function WBP_AccessoriesByType_C:RefreshState()
     end
   end
 end
+
 function WBP_AccessoriesByType_C:CheckItemExist()
   local widget
   for key, value in iterator(self.VerticalBox_Accessories:GetAllChildren()) do
@@ -51,9 +55,11 @@ function WBP_AccessoriesByType_C:CheckItemExist()
   end
   return self.AccessoryType, false
 end
+
 function WBP_AccessoriesByType_C:OnButtonClicked(Accessory)
   if self.GamePokey then
     self.GamePokey:OnAccessoryClicked(Accessory)
   end
 end
+
 return WBP_AccessoriesByType_C

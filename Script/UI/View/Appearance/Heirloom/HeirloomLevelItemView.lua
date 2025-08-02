@@ -1,20 +1,25 @@
 local HeirloomLevelItemView = UnLua.Class()
 local HeirloomData = require("Modules.Appearance.Heirloom.HeirloomData")
+
 function HeirloomLevelItemView:Construct()
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
   self.Btn_Main.OnHovered:Add(self, self.BindOnMainButtonHovered)
   self.Btn_Main.OnUnhovered:Add(self, self.BindOnMainButtonUnhovered)
 end
+
 function HeirloomLevelItemView:BindOnMainButtonClicked()
   EventSystem.Invoke(EventDef.Heirloom.OnChangeHeirloomLevelSelected, self.HeirloomId, self.Level)
 end
+
 function HeirloomLevelItemView:BindOnMainButtonHovered()
   self.HoveredPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self:PlayAnimationForward(self.Ani_hover_in)
 end
+
 function HeirloomLevelItemView:BindOnMainButtonUnhovered()
   self:PlayAnimationForward(self.Ani_hover_out)
 end
+
 function HeirloomLevelItemView:OnAnimationFinished(Animation)
   if Animation == self.Ani_hover_out then
     self.HoveredPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -22,6 +27,7 @@ function HeirloomLevelItemView:OnAnimationFinished(Animation)
     self.UnLockEffectPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function HeirloomLevelItemView:Show(HeirloomId, Level)
   self.HeirloomId = HeirloomId
   self.Level = Level
@@ -39,6 +45,7 @@ function HeirloomLevelItemView:Show(HeirloomId, Level)
   self:RefreshLockStatus()
   self:RefreshSelectedStatus()
 end
+
 function HeirloomLevelItemView:RefreshLockStatus()
   if HeirloomData:IsUnLockHeirloom(self.HeirloomId, self.Level) then
     self.Img_Lock:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -54,6 +61,7 @@ function HeirloomLevelItemView:RefreshLockStatus()
   end
   self:UpdateItemColor()
 end
+
 function HeirloomLevelItemView:UpdateItemColor()
   if HeirloomData:IsUnLockHeirloom(self.HeirloomId, self.Level) then
     if self.IsSelected then
@@ -71,6 +79,7 @@ function HeirloomLevelItemView:UpdateItemColor()
     self.Img_Icon:SetColorAndOpacity(self.LockIconColor)
   end
 end
+
 function HeirloomLevelItemView:RefreshSelectedStatus()
   local CurSelectHeirloomId = HeirloomData:GetCurSelectHeirloomId()
   local CurSelectLevel = HeirloomData:GetCurSelectLevel()
@@ -92,6 +101,7 @@ function HeirloomLevelItemView:RefreshSelectedStatus()
     self.Img_Dec:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function HeirloomLevelItemView:Hide()
   self:StopAllAnimations()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -99,4 +109,5 @@ function HeirloomLevelItemView:Hide()
   self.Level = -1
   self.IsUnLockStatus = nil
 end
+
 return HeirloomLevelItemView

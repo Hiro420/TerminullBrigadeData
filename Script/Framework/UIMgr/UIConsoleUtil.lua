@@ -1,4 +1,5 @@
 local UIConsoleUtil = {}
+
 function UIConsoleUtil.UpdateConsoleStoreUIVisible(bIsVisible)
   local PlatformName = UE.URGBlueprintLibrary.GetPlatformName()
   if "PS5" ~= PlatformName then
@@ -14,4 +15,5 @@ function UIConsoleUtil.UpdateConsoleStoreUIVisible(bIsVisible)
     end
   end
 end
+
 return UIConsoleUtil

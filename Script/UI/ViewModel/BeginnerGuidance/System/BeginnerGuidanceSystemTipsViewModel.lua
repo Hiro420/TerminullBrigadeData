@@ -7,12 +7,15 @@ local BeginnerGuideData = require("Modules.Beginner.BeginnerGuideData")
 local BeginnerGuidanceSystemTipsViewModel = CreateDefaultViewModel()
 BeginnerGuidanceSystemTipsViewModel.propertyBindings = {}
 local NowNextTriggerEvent = ""
+
 function BeginnerGuidanceSystemTipsViewModel:OnInit()
   self.Super.OnInit(self)
 end
+
 function BeginnerGuidanceSystemTipsViewModel:OnShutdown()
   self.Super.OnShutdown(self)
 end
+
 function BeginnerGuidanceSystemTipsViewModel:SetTargetWidget(Widget)
   local NowGuideStep = BeginnerGuideData:GetNowGuideStep()
   if nil == NowGuideStep then
@@ -21,6 +24,7 @@ function BeginnerGuidanceSystemTipsViewModel:SetTargetWidget(Widget)
   end
   UIMgr:Show(ViewID.UI_BeginnerGuidanceSystemTips, nil, NowGuideStep, nil)
 end
+
 function BeginnerGuidanceSystemTipsViewModel:ChangeNextTriggerEvent(NextTriggerEvent)
   if "" ~= NowNextTriggerEvent then
     EventSystem.RemoveListenerNew(NowNextTriggerEvent, self, self.NextGuideStep)
@@ -31,6 +35,7 @@ function BeginnerGuidanceSystemTipsViewModel:ChangeNextTriggerEvent(NextTriggerE
     EventSystem.AddListenerNew(NowNextTriggerEvent, self, self.NextGuideStep)
   end
 end
+
 function BeginnerGuidanceSystemTipsViewModel:NextGuideStep()
   BeginnerGuideData.NowGuideStepId = BeginnerGuideData:GetNextGuideStepId()
   self:ShowNowGuide()
@@ -41,6 +46,7 @@ function BeginnerGuidanceSystemTipsViewModel:NextGuideStep()
     return true
   end
 end
+
 function BeginnerGuidanceSystemTipsViewModel:ShowNowGuide()
   if self:GetFirstView() then
     self:GetFirstView():ResetTargetUI()
@@ -64,12 +70,14 @@ function BeginnerGuidanceSystemTipsViewModel:ShowNowGuide()
   self:ChangeNextTriggerEvent(NowGuideStep.nexttriggerevent)
   self:SetTargetWidget()
 end
+
 function BeginnerGuidanceSystemTipsViewModel:ClearNowGuideInfo()
   self:ChangeNextTriggerEvent("")
   BeginnerGuideData.NowGuideId = nil
   BeginnerGuideData.NowGuideStepId = nil
   BeginnerGuideData.NowTargetWidgetName = nil
 end
+
 function BeginnerGuidanceSystemTipsViewModel:FinishNowGuide(bIsSkip)
   if not BeginnerGuideData.NowGuideId then
     return
@@ -78,4 +86,5 @@ function BeginnerGuidanceSystemTipsViewModel:FinishNowGuide(bIsSkip)
   ModuleManager:Get("BeginnerGuideModule"):FinishGuide(BeginnerGuideData.NowGuideId, bIsSkip)
   self:ClearNowGuideInfo()
 end
+
 return BeginnerGuidanceSystemTipsViewModel

@@ -1,5 +1,6 @@
 local ClimbTowerData = require("UI.View.ClimbTower.ClimbTowerData")
 local Heteromorphism = UnLua.Class()
+
 function Heteromorphism:InitHeteromorphism(Floor)
   ClimbTowerData:GameFloorPassData()
   local HeteromorphismTable = ClimbTowerData:GetHeteromorphism(Floor)
@@ -12,4 +13,5 @@ function Heteromorphism:InitHeteromorphism(Floor)
   end
   HideOtherItem(self.ScrollList, Index, true)
 end
+
 return Heteromorphism

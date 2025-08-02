@@ -1,10 +1,13 @@
 local ReportItemView = UnLua.Class()
+
 function ReportItemView:Construct()
   self.Button_Main.OnClicked:Add(self, ReportItemView.OnItemClicked)
 end
+
 function ReportItemView:Destruct()
   self.Button_Main.OnClicked:Remove(self, ReportItemView.OnItemClicked)
 end
+
 function ReportItemView:OnItemClicked()
   if self.bSel then
     self.List:BP_SetItemSelection(self.Item, false)
@@ -15,6 +18,7 @@ function ReportItemView:OnItemClicked()
   end
   self.List:BP_SetItemSelection(self.Item, true)
 end
+
 function ReportItemView:OnListItemObjectSet(ListItemObj)
   if ListItemObj then
     self.Item = ListItemObj
@@ -26,11 +30,13 @@ function ReportItemView:OnListItemObjectSet(ListItemObj)
   UpdateVisibility(self.Overlay_Sel, self.bSel)
   UpdateVisibility(self.Overlay_Nor, not self.bSel)
 end
+
 function ReportItemView:BP_OnItemSelectionChanged(IsSelected)
   self.bSel = IsSelected
   UpdateVisibility(self.Overlay_Sel, self.bSel)
   UpdateVisibility(self.Overlay_Nor, not self.bSel)
 end
+
 function ReportItemView:OnMouseEnter(MyGeometry, MouseEvent)
   if self.bSel then
     return
@@ -39,16 +45,20 @@ function ReportItemView:OnMouseEnter(MyGeometry, MouseEvent)
   UpdateVisibility(self.Overlay_Sel, false)
   UpdateVisibility(self.Overlay_Nor, false)
 end
+
 function ReportItemView:OnMouseLeave(MyGeometry, MouseEvent)
   UpdateVisibility(self.Overlay_Hov, false)
   UpdateVisibility(self.Overlay_Sel, self.bSel)
   UpdateVisibility(self.Overlay_Nor, not self.bSel)
 end
+
 function ReportItemView:OnMouseButtonDown(MyGeometry, MouseEvent)
 end
+
 function ReportItemView:OnMouseButtonUp(MyGeometry, MouseEvent)
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function ReportItemView:DoCustomNavigation_Left()
   local UI_ReportView = UIMgr:GetLuaFromActiveView(ViewID.UI_ReportView)
   if UI_ReportView then
@@ -56,6 +66,7 @@ function ReportItemView:DoCustomNavigation_Left()
   end
   return nil
 end
+
 function ReportItemView:DoCustomNavigation_Right()
   local UI_ReportView = UIMgr:GetLuaFromActiveView(ViewID.UI_ReportView)
   if UI_ReportView then
@@ -63,6 +74,7 @@ function ReportItemView:DoCustomNavigation_Right()
   end
   return nil
 end
+
 function ReportItemView:DoCustomNavigation_Up()
   local UI_ReportView = UIMgr:GetLuaFromActiveView(ViewID.UI_ReportView)
   if UI_ReportView then
@@ -70,6 +82,7 @@ function ReportItemView:DoCustomNavigation_Up()
   end
   return nil
 end
+
 function ReportItemView:DoCustomNavigation_Down()
   local UI_ReportView = UIMgr:GetLuaFromActiveView(ViewID.UI_ReportView)
   if UI_ReportView then
@@ -77,4 +90,5 @@ function ReportItemView:DoCustomNavigation_Down()
   end
   return nil
 end
+
 return ReportItemView

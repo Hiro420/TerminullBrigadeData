@@ -1,6 +1,7 @@
 local WBP_SingleSeasonAbilityLine = UnLua.Class()
 local SeasonAbilityData = require("Modules.SeasonAbility.SeasonAbilityData")
 local SeasonAbilityModule = require("Modules.SeasonAbility.SeasonAbilityModule")
+
 function WBP_SingleSeasonAbilityLine:Show(AbilityId, Type, CurHeroId)
   if 0 == AbilityId then
     self:Hide()
@@ -19,6 +20,7 @@ function WBP_SingleSeasonAbilityLine:Show(AbilityId, Type, CurHeroId)
     self.IsBind = true
   end
 end
+
 function WBP_SingleSeasonAbilityLine:BindOnSeasonAbilityInfoUpdated(...)
   local PreLevel = SeasonAbilityData:GetPreAbilityLevel(self.AbilityId, self.CurHeroId)
   local MaxLevel = SeasonAbilityData:GetAbilityMaxLevel(self.AbilityId)
@@ -39,13 +41,16 @@ function WBP_SingleSeasonAbilityLine:BindOnSeasonAbilityInfoUpdated(...)
   self.Img_LeftAnimLine:SetColorAndOpacity(TargetAnimLineColor)
   self.Img_MiddleAnimLine:SetColorAndOpacity(TargetAnimLineColor)
 end
+
 function WBP_SingleSeasonAbilityLine:Hide(...)
   UpdateVisibility(self, false)
   self:StopAllAnimations()
   EventSystem.RemoveListener(EventDef.SeasonAbility.OnSeasonAbilityInfoUpdated, self.BindOnSeasonAbilityInfoUpdated, self)
   self.IsBind = false
 end
+
 function WBP_SingleSeasonAbilityLine:Destruct(...)
   self:Hide()
 end
+
 return WBP_SingleSeasonAbilityLine

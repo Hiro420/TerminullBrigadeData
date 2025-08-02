@@ -7,15 +7,18 @@ local GetPorpsViewModel = CreateDefaultViewModel()
 local FilterItemTypeTb = {
   [TableEnums.ENUMResourceType.BattlePassToken] = true
 }
+
 function GetPorpsViewModel:OnInit()
   self.Super.OnInit(self)
   EventSystem.AddListenerNew(EventDef.Lobby.OnGetPropTip, self, self.ShowTip)
   EventSystem.AddListenerNew(EventDef.WSMessage.ResourceUpdate, self, self.OnResourceUpdate)
 end
+
 function GetPorpsViewModel:OnShutdown()
   self.Super.OnShutdown(self)
   EventSystem.RemoveListenerNew(EventDef.WSMessage.ResourceUpdate, self, self.OnResourceUpdate)
 end
+
 function GetPorpsViewModel:OnResourceUpdate(JsonStr)
   local JsonTable = rapidjson.decode(JsonStr)
   if JsonTable.resources then
@@ -36,6 +39,7 @@ function GetPorpsViewModel:OnResourceUpdate(JsonStr)
           SinglePropInfo.ExchangedAmount = value.ExchangedAmount
           SinglePropInfo.expireAt = value.expireAt
           SinglePropInfo.ExchangedResources = value.exchangedResources
+          SinglePropInfo.TimeLimitedGiftId = value.timeLimitedGiftID
           table.insert(PropInfoList, SinglePropInfo)
         end
       end
@@ -45,12 +49,14 @@ function GetPorpsViewModel:OnResourceUpdate(JsonStr)
     end
   end
 end
+
 function GetPorpsViewModel:IsInscription(Id)
   local ResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   if ResourceTable and ResourceTable[tonumber(Id)] then
     return 18 == ResourceTable[tonumber(Id)].Type
   end
 end
+
 function GetPorpsViewModel:CheckReason(Reason)
   local ReasonTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGetPropsReason)
   if ReasonTable and ReasonTable[Reason] and 1 == ReasonTable[Reason].IsShow then
@@ -58,6 +64,7 @@ function GetPorpsViewModel:CheckReason(Reason)
   end
   return false
 end
+
 function GetPorpsViewModel:CheckType(ResourceId)
   local result, row = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, ResourceId)
   if result and FilterItemTypeTb[row.Type] then
@@ -65,6 +72,7 @@ function GetPorpsViewModel:CheckType(ResourceId)
   end
   return true
 end
+
 function GetPorpsViewModel:InvokeResourceUpdate(PropInfoList)
   local ResourceTypeTable = {}
   local ResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
@@ -76,6 +84,7 @@ function GetPorpsViewModel:InvokeResourceUpdate(PropInfoList)
     end
   end
 end
+
 function GetPorpsViewModel:ShowTip(PropInfoList, CloseCallback)
   local Widget = UIMgr:Show(ViewID.UI_Common_GetProps)
   local ObjCls = UE.UClass.Load("/Game/Rouge/UI/Common/BP_GetPropData.BP_GetPropData_C")
@@ -92,8 +101,10 @@ function GetPorpsViewModel:ShowTip(PropInfoList, CloseCallback)
       DataObj.ParentView = Widget
       DataObj.expireAt = SinglePropInfo.expireAt
       DataObj.ExchangedResources = SinglePropInfo.ExchangedResources
+      DataObj.TimeLimitedGiftId = SinglePropInfo.TimeLimitedGiftId
       Widget.PropList:AddItem(DataObj)
     end
   end
 end
+
 return GetPorpsViewModel

@@ -1,4 +1,5 @@
 local BP_Pickup_AttributeModityBase_C = UnLua.Class()
+
 function BP_Pickup_AttributeModityBase_C:ReceiveBeginPlay()
   self.Overridden.ReceiveBeginPlay(self)
   if not UE.UKismetSystemLibrary.IsDedicatedServer(self) then
@@ -13,12 +14,14 @@ function BP_Pickup_AttributeModityBase_C:ReceiveBeginPlay()
     end
   end
 end
+
 function BP_Pickup_AttributeModityBase_C:PendingDestroy()
   self.Overridden.PendingDestroy(self)
   if UE.RGUtil.IsEditor() or not UE.UKismetSystemLibrary.IsDedicatedServer(self) then
     self:PlayPickUpEff()
   end
 end
+
 function BP_Pickup_AttributeModityBase_C:PlayPickUpEff()
   if UE.RGUtil.IsEditor() or not UE.UKismetSystemLibrary.IsDedicatedServer(self) then
     local AttributeModifyItem = self.RGWidgetScrollIcon:GetWidget()
@@ -27,6 +30,7 @@ function BP_Pickup_AttributeModityBase_C:PlayPickUpEff()
     end
   end
 end
+
 function BP_Pickup_AttributeModityBase_C:ModifyRefresh()
   self.Overridden.ModifyRefresh(self)
   if not UE.UKismetSystemLibrary.IsDedicatedServer(self) then
@@ -41,6 +45,7 @@ function BP_Pickup_AttributeModityBase_C:ModifyRefresh()
     end
   end
 end
+
 function BP_Pickup_AttributeModityBase_C:ShowScrollItem(bIsShow)
   local AttributeModifyItem = self.RGWidget:GetWidget()
   if bIsShow and AttributeModifyItem then
@@ -61,7 +66,9 @@ function BP_Pickup_AttributeModityBase_C:ShowScrollItem(bIsShow)
     AttributeModifyItem:PlayAnimation(AttributeModifyItem.ani_ScrollPickUpIcon_out, 0, 1, UE.EUMGSequencePlayMode.Forward, 1.0, true)
   end
 end
+
 function BP_Pickup_AttributeModityBase_C:ReceiveEndPlay(EndPlayReason)
   self.Overridden.ReceiveEndPlay(self, EndPlayReason)
 end
+
 return BP_Pickup_AttributeModityBase_C

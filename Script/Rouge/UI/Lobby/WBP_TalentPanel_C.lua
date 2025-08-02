@@ -1,6 +1,8 @@
 local WBP_TalentPanel_C = UnLua.Class()
+
 function WBP_TalentPanel_C:Construct()
 end
+
 function WBP_TalentPanel_C:OnShow()
   self:BindOnCommonTalentButtonClicked()
   LogicLobby.ChangeLobbyMainModelVis(false)
@@ -18,6 +20,7 @@ function WBP_TalentPanel_C:OnShow()
     })
   end
 end
+
 function WBP_TalentPanel_C:OnHide()
   self:HideTalentPanel()
   LogicLobby.ChangeLobbyMainModelVis(true)
@@ -27,19 +30,25 @@ function WBP_TalentPanel_C:OnHide()
     CommonInputSubsystem.OnInputMethodChanged:Remove(self, self.BindOnInputMethodChanged)
   end
 end
+
 function WBP_TalentPanel_C:BindOnInputMethodChanged(InputType)
   EventSystem.Invoke(EventDef.LobbyPanel.SpecialFuncPanelVisCahange, InputType ~= UE.ECommonInputType.Gamepad)
 end
+
 function WBP_TalentPanel_C:BindOnCommonTalentButtonClicked()
   self.CommonTalent:Show()
   LogicTalent.RequestGetCommonTalentsToServer()
 end
+
 function WBP_TalentPanel_C:CanDirectSwitch(NextTabWidget)
   return self.CommonTalent:CanDirectSwitch(NextTabWidget)
 end
+
 function WBP_TalentPanel_C:HideTalentPanel()
   self.CommonTalent:Hide()
 end
+
 function WBP_TalentPanel_C:Destruct()
 end
+
 return WBP_TalentPanel_C

@@ -5,29 +5,25 @@ local rapidjson = require("rapidjson")
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local SkinData = require("Modules.Appearance.Skin.SkinData")
 local CommunicationData = require("Modules.Appearance.Communication.CommunicationData")
-local LimitPurchaseForever = NSLOCTEXT("PropsItemView", "LimitPurchaseForever", "\230\176\184\228\185\133\233\153\144\232\180\173")
-local LimitPurchaseSeason = NSLOCTEXT("PropsItemView", "LimitPurchaseSeason", "\232\181\155\229\173\163\233\153\144\232\180\173")
-local LimitPurchaseMonth = NSLOCTEXT("PropsItemView", "LimitPurchaseMonth", "\230\156\172\230\156\136\233\153\144\232\180\173")
-local LimitPurchaseDay = NSLOCTEXT("PropsItemView", "LimitPurchaseDay", "\230\175\143\230\151\165\233\153\144\232\180\173")
-local LimitPurchaseWeekly = NSLOCTEXT("PropsItemView", "LimitPurchaseWeekly", "\230\175\143\229\145\168\233\153\144\232\180\173")
+local LimitPurchaseForever = NSLOCTEXT("MallExteriorView", "LimitPurchaseForever", "\230\176\184\228\185\133\233\153\144\232\180\173")
+local LimitPurchaseSeason = NSLOCTEXT("MallExteriorView", "LimitPurchaseSeason", "\232\181\155\229\173\163\233\153\144\232\180\173")
+local LimitPurchaseMonth = NSLOCTEXT("MallExteriorView", "LimitPurchaseMonth", "\230\156\172\230\156\136\233\153\144\232\180\173")
+local LimitPurchaseDay = NSLOCTEXT("MallExteriorView", "LimitPurchaseDay", "\230\175\143\230\151\165\233\153\144\232\180\173")
+local LimitPurchaseWeekly = NSLOCTEXT("MallExteriorView", "LimitPurchaseWeekly", "\230\175\143\229\145\168\233\153\144\232\180\173")
 local MallExteriorView = Class(ViewBase)
 local GetCameraActor = function(self)
   self.AppearanceActor = LogicLobby.GetAppearanceActor(self)
   return self.AppearanceActor
 end
+
 function MallExteriorView:OnBindUIInput()
-  self.WBP_InteractTipWidgetSetting.OnMainButtonClicked:Add(self, self.OpenSetting)
   self.WBP_InteractTipWidgetEsc_1.OnMainButtonClicked:Add(self, self.ReturnLobby)
-  ListenForInputAction("OpenSettings", UE.EInputEvent.IE_Pressed, true, {
-    self,
-    self.OpenSetting
-  })
 end
+
 function MallExteriorView:OnUnBindUIInput()
-  self.WBP_InteractTipWidgetSetting.OnMainButtonClicked:Remove(self, self.OpenSetting)
   self.WBP_InteractTipWidgetEsc_1.OnMainButtonClicked:Remove(self, self.ReturnLobby)
-  StopListeningForInputAction(self, "OpenSettings", UE.EInputEvent.IE_Pressed)
 end
+
 function MallExteriorView:BindClickHandler()
   self.List.BP_OnItemIsHoveredChanged:Add(self, MallExteriorView.BP_OnItemIsHoveredChanged)
   self.List.BP_OnItemSelectionChanged:Add(self, MallExteriorView.BP_OnItemSelectionChanged_List)
@@ -38,20 +34,24 @@ function MallExteriorView:BindClickHandler()
   self.RareBox.OnSelectionChanged:Add(self, MallExteriorView.OnSelectionChanged)
   EventSystem.AddListener(self, EventDef.WSMessage.ResourceUpdate, MallExteriorView.BindOnResourceUpdate)
 end
+
 function MallExteriorView:OnCheckStateChanged(bIsChecked)
   self.bHave = bIsChecked
   self:UpDateList(Logic_Mall.GetExteriorInfo())
 end
+
 function MallExteriorView:OnTextChanged(Text)
   self.SearchText = tostring(Text)
   self:UpDateList(Logic_Mall.GetExteriorInfo())
   UpdateVisibility(self.CancelSearchBtn, "" ~= Text, true)
   UpdateVisibility(self.URGImage_Sousuo, "" == Text, true)
 end
+
 function MallExteriorView:OnSelectionChanged(SelectedItem, Type)
   self.Rare = self.RareBox:GetSelectedIndex()
   self:UpDateList(Logic_Mall.GetExteriorInfo())
 end
+
 function MallExteriorView:ChangeShowType(SelectId)
   if self.SelectId ~= SelectId then
     self.SelectId = SelectId
@@ -74,11 +74,10 @@ function MallExteriorView:ChangeShowType(SelectId)
     end
   end
 end
+
 function MallExteriorView:UnBindClickHandler()
 end
-function MallExteriorView:OpenSetting()
-  LogicGameSetting.ShowGameSettingPanel()
-end
+
 function MallExteriorView:ReturnLobby()
   local LobbyDefaultLabelName = LogicLobby.GetDefaultSelectedLabelName()
   local CurShowLabelName = LogicLobby.GetCurSelectedLabelName()
@@ -88,24 +87,30 @@ function MallExteriorView:ReturnLobby()
     LogicLobby.ChangeLobbyPanelLabelSelected(LobbyDefaultLabelName)
   end
 end
+
 function MallExteriorView:SequenceEscView()
   self:ReturnLobby()
 end
+
 function MallExteriorView:SequenceCallBack()
   self:PlayAnimation(self.Ani_in)
 end
+
 function MallExteriorView:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     self:BindOnOutAnimationFinished()
   end
 end
+
 function MallExteriorView:BindOnOutAnimationFinished()
   EventSystem.Invoke(EventDef.Lobby.OnLobbyLabelSelected, LogicLobby.GetPendingSelectedLabelTagName())
 end
+
 function MallExteriorView:CanDirectSwitch(NextTabWidget)
   self:PlayAnimation(self.Ani_out)
   return false
 end
+
 function MallExteriorView:OnInit()
   self.DataBindTable = {}
   self.ViewModel = UIModelMgr:Get("MallExteriorViewModel")
@@ -118,10 +123,12 @@ function MallExteriorView:OnInit()
     [19] = self.InitPortrait
   }
 end
+
 function MallExteriorView:OnDestroy()
   self:UnBindClickHandler()
   self:StopVoice()
 end
+
 function MallExteriorView:OnShowLink(LinkParams, ...)
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.MALL) then
@@ -143,12 +150,14 @@ function MallExteriorView:OnShowLink(LinkParams, ...)
     self:UpDateList(Logic_Mall.GetExteriorInfo())
   end
 end
+
 function MallExteriorView:OnHideByOther()
   self.CameraActor = GetCameraActor(self)
   self.CameraActor:UpdateActived(false, true, false)
   self:StopVoice()
   self.SelGoodsId = nil
 end
+
 function MallExteriorView:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -194,6 +203,7 @@ function MallExteriorView:OnShow(...)
   LogicLobby.ChangeLobbyMainModelVis(false)
   UpdateVisibility(self.WBP_ComShowGoodsItem, false)
 end
+
 function MallExteriorView:OnRollback()
   if self.ShowType ~= TableEnums.ENUMResourceType.HERO and self.ShowType ~= TableEnums.ENUMResourceType.Weapon and self.ShowType ~= TableEnums.ENUMResourceType.WeaponSkin and self.ShowType ~= TableEnums.ENUMResourceType.HeroSkin then
     self:ChangeCameraMode(false)
@@ -214,6 +224,7 @@ function MallExteriorView:OnRollback()
     end
   end
 end
+
 function MallExteriorView:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -227,8 +238,10 @@ function MallExteriorView:OnHide()
   LogicRole.ShowOrLoadLevel(-1)
   LogicRole.ShowLevelForSequence(true)
 end
+
 function MallExteriorView:Construct()
 end
+
 function MallExteriorView:UpDateList(goodsInfos)
   if not self.Init then
     self.Init = true
@@ -297,6 +310,7 @@ function MallExteriorView:UpDateList(goodsInfos)
     self.List:SetSelectedIndex(0)
   end
 end
+
 function MallExteriorView:HasSecondShelfIndex(Goods)
   if not Goods then
     return false
@@ -311,6 +325,7 @@ function MallExteriorView:HasSecondShelfIndex(Goods)
   end
   return false
 end
+
 function MallExteriorView:SelectSkin(ItemResId)
   local tbMall = LuaTableMgr.GetLuaTableByName(TableNames.TBMall)
   for index, TbMallItem in ipairs(tbMall) do
@@ -336,6 +351,7 @@ function MallExteriorView:SelectSkin(ItemResId)
     end
   end
 end
+
 function MallExteriorView:Sort(DataTable, SortType)
   if 0 == SortType then
     table.sort(DataTable, function(a, b)
@@ -371,13 +387,16 @@ function MallExteriorView:Sort(DataTable, SortType)
   end
   return DataTable
 end
+
 function MallExteriorView:BP_OnItemIsHoveredChanged(Item, bIsHovered)
 end
+
 function MallExteriorView:BP_OnItemSelectionChanged_SecondShelfListView(Item, bSelection)
   if bSelection then
     self:ChangeShowType(Item.SecondShelfId)
   end
 end
+
 function MallExteriorView:BP_OnItemSelectionChanged_List(Item, bSelection)
   if bSelection then
     local TBMall = LuaTableMgr.GetLuaTableByName(TableNames.TBMall)
@@ -417,6 +436,7 @@ function MallExteriorView:BP_OnItemSelectionChanged_List(Item, bSelection)
     end
   end
 end
+
 function MallExteriorView:InitCharacterSkin(GainResourcesID)
   if self.CameraActor then
     local CharacterSkin = Logic_Mall.GetDetailRowDataByResourceId(GainResourcesID)
@@ -424,11 +444,13 @@ function MallExteriorView:InitCharacterSkin(GainResourcesID)
       local SkinId = CharacterSkin.SkinID
       local HeroId = CharacterSkin.CharacterID
       local WeaponId = DataMgr.GetShowWeaponId(HeroId)
-      self.CameraActor:InitAppearanceActor(HeroId, SkinId, WeaponId)
+      local WeaponSkinId = SkinData.GetEquipedWeaponSkinIdByWeaponResId(WeaponId)
+      self.CameraActor:InitAppearanceActor(HeroId, SkinId, WeaponSkinId)
       LogicRole.ShowOrLoadLevel(SkinId)
     end
   end
 end
+
 function MallExteriorView:InitWeaponSkin(GainResourcesID)
   if self.CameraActor then
     local WeaponSkin = Logic_Mall.GetDetailRowDataByResourceId(GainResourcesID)
@@ -440,6 +462,7 @@ function MallExteriorView:InitWeaponSkin(GainResourcesID)
     end
   end
 end
+
 function MallExteriorView:InitCommuniRoulette(GainResourcesID)
   local CommuniRoulette = Logic_Mall.GetDetailRowDataByResourceId(GainResourcesID)
   if self.CameraActor and CommuniRoulette and 3 == CommuniRoulette.Type then
@@ -448,7 +471,8 @@ function MallExteriorView:InitCommuniRoulette(GainResourcesID)
       local SkinId = defaultSkin
       local HeroId = CommuniRoulette.HeroID
       local WeaponId = DataMgr.GetShowWeaponId(CommuniRoulette.HeroID)
-      self.CameraActor:InitAppearanceActor(HeroId, SkinId, WeaponId)
+      local WeaponSkinId = SkinData.GetEquipedWeaponSkinIdByWeaponResId(WeaponId)
+      self.CameraActor:InitAppearanceActor(HeroId, SkinId, WeaponSkinId)
       LogicRole.ShowOrLoadLevel(SkinId)
       self:PlaySound(GainResourcesID)
     end
@@ -457,6 +481,7 @@ function MallExteriorView:InitCommuniRoulette(GainResourcesID)
     self.WBP_SprayPreviewItem:InitSprayPreviewItemById(GainResourcesID)
   end
 end
+
 function MallExteriorView:PlaySound(CommId)
   local RouletteId = CommunicationData.GetRoulleteIdByCommId(CommId)
   local Result, CommunicationRowInfo = GetRowData(DT.DT_CommunicationWheel, RouletteId)
@@ -470,28 +495,33 @@ function MallExteriorView:PlaySound(CommId)
     self.PlayingVoiceId = PlaySound2DByName(SoundEventName, "BattlePassSubView:PlaySound")
   end
 end
+
 function MallExteriorView:InitBanner(GainResourcesID)
   local Banner = Logic_Mall.GetDetailRowDataByResourceId(GainResourcesID)
   if Banner then
     self.ComBannerItem:InitComBannerItem(Banner.bannerIconPathInInfo, Banner.EffectPath)
   end
 end
+
 function MallExteriorView:InitPortrait(GainResourcesID)
   local Portrait = Logic_Mall.GetDetailRowDataByResourceId(GainResourcesID)
   if Portrait then
     self.ComPortraitItem:InitComPortraitItem(Portrait.portraitIconPath, Portrait.EffectPath)
   end
 end
+
 function MallExteriorView:StopVoice()
   if self.PlayingVoiceId then
     UE.URGBlueprintLibrary.StopVoice(self.PlayingVoiceId)
     self.PlayingVoiceId = nil
   end
 end
+
 function MallExteriorView:CancelSearch()
   self:OnTextChanged("")
   self.Search:SetText("")
 end
+
 function MallExteriorView:BindOnResourceUpdate(json)
   local JsonTable = rapidjson.decode(json)
   if JsonTable.proppack == nil then
@@ -499,10 +529,12 @@ function MallExteriorView:BindOnResourceUpdate(json)
   end
   self:UpDateList(Logic_Mall.GetExteriorInfo())
 end
+
 function MallExteriorView:ChangeCameraMode(bMallExterior)
   self.CameraActor = GetCameraActor(self)
   self.CameraActor:UpdateActived(bMallExterior, true, false)
 end
+
 function MallExteriorView:CheckGoodsType()
   local ConsumeNum = 0
   local GoddsId = tonumber(self.SelectGoodsId)
@@ -524,13 +556,16 @@ function MallExteriorView:CheckGoodsType()
   end
   return ConsumeNum <= CurNum, ConsumeNum - CurNum
 end
+
 function MallExteriorView:SetSelectGoodsId(GoodsId)
   self.SelGoodsId = GoodsId
 end
+
 function MallExteriorView:OnShowTime(ShowStartTime, ShowEndTime)
   local CurTimeTemp = os.time()
   return tonumber(ShowStartTime) <= tonumber(CurTimeTemp) and tonumber(CurTimeTemp) <= tonumber(ShowEndTime)
 end
+
 function MallExteriorView:ShowItemByType(ItemType, ResourcesID)
   LogicRole.ShowOrLoadLevel(-1)
   UpdateVisibility(self.CommonImageShow, false, false)
@@ -555,4 +590,5 @@ function MallExteriorView:ShowItemByType(ItemType, ResourcesID)
     end
   end
 end
+
 return MallExteriorView

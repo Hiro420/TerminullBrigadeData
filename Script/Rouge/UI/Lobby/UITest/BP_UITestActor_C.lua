@@ -1,11 +1,14 @@
 local BP_UITestActor_C = UnLua.Class()
+
 function BP_UITestActor_C:ReceiveBeginPlay()
   self.Overridden.ReceiveBeginPlay(self)
   self:UpdateActived(false)
 end
+
 function BP_UITestActor_C:FocusInput()
   self:UpdateActived(true)
 end
+
 function BP_UITestActor_C:OnDisplay()
   local UITest = self.RGWidget:GetWidget()
   if UITest then
@@ -17,15 +20,19 @@ function BP_UITestActor_C:OnDisplay()
     PC:SetViewTargetwithBlend(self.ChildActor.ChildActor, 0.4)
   end
 end
+
 function BP_UITestActor_C:UnfocusInput()
   self:UpdateActived(false)
 end
+
 function BP_UITestActor_C:OnUnDisplay()
   self:UpdateActived(false)
 end
+
 function BP_UITestActor_C:OnClose()
   self:Destroy()
 end
+
 function BP_UITestActor_C:ReceiveEndPlay(EndPlayReason)
   self.Overridden.ReceiveEndPlay(self, EndPlayReason)
   if self.GenericModifyActor then
@@ -33,6 +40,7 @@ function BP_UITestActor_C:ReceiveEndPlay(EndPlayReason)
     self.GenericModifyActor = nil
   end
 end
+
 function BP_UITestActor_C:UpdateActived(bIsActived)
   self:SetActorHiddenInGame(not bIsActived)
   if bIsActived then
@@ -47,4 +55,5 @@ function BP_UITestActor_C:UpdateActived(bIsActived)
     end
   end
 end
+
 return BP_UITestActor_C

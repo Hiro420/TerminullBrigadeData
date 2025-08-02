@@ -1,16 +1,19 @@
 local WBP_GPInscriptionPanel_C = UnLua.Class()
+
 function WBP_GPInscriptionPanel_C:Construct()
   EventSystem.AddListener(self, EventDef.GamePokey.OnAccessorySlotHovered, WBP_GPInscriptionPanel_C.OnAccessorySlotHovered)
   EventSystem.AddListener(self, EventDef.GamePokey.OnAccessorySlotUnHovered, WBP_GPInscriptionPanel_C.OnAccessorySlotUnHovered)
   EventSystem.AddListener(self, EventDef.GamePokey.OnAccessorySlotHovered, WBP_GPInscriptionPanel_C.OnAccessorySlotHovered)
   EventSystem.AddListener(self, EventDef.GamePokey.OnAccessorySlotUnHovered, WBP_GPInscriptionPanel_C.OnAccessorySlotUnHovered)
 end
+
 function WBP_GPInscriptionPanel_C:Destruct()
   EventSystem.RemoveListener(EventDef.GamePokey.OnAccessorySlotHovered, WBP_GPInscriptionPanel_C.OnAccessorySlotHovered)
   EventSystem.RemoveListener(EventDef.GamePokey.OnAccessorySlotUnHovered, WBP_GPInscriptionPanel_C.OnAccessorySlotUnHovered)
   EventSystem.RemoveListener(EventDef.GamePokey.OnAccessorySlotHovered, WBP_GPInscriptionPanel_C.OnAccessorySlotHovered)
   EventSystem.RemoveListener(EventDef.GamePokey.OnAccessorySlotUnHovered, WBP_GPInscriptionPanel_C.OnAccessorySlotUnHovered)
 end
+
 function WBP_GPInscriptionPanel_C:UpdateInscriptionsDes(Weapon)
   if Weapon then
     local accessoryComponent = Weapon:GetComponentByClass(UE.URGAccessoryComponent:StaticClass())
@@ -54,6 +57,7 @@ function WBP_GPInscriptionPanel_C:UpdateInscriptionsDes(Weapon)
     end
   end
 end
+
 function WBP_GPInscriptionPanel_C:OnAccessorySlotHovered(AccessoryId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -83,9 +87,11 @@ function WBP_GPInscriptionPanel_C:OnAccessorySlotHovered(AccessoryId)
     end
   end
 end
+
 function WBP_GPInscriptionPanel_C:OnAccessorySlotUnHovered()
   for key, value in pairs(self.ScrollBox_Inscriptions:GetAllChildren()) do
     value:UpdateInscriptionDesOpacity(true)
   end
 end
+
 return WBP_GPInscriptionPanel_C

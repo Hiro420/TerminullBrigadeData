@@ -1,10 +1,12 @@
 local WBP_ProgressSystem_C = UnLua.Class()
+
 function WBP_ProgressSystem_C:LuaTick(InDeltaTime)
   if self.bFinish or self.bPause then
   else
     self.StateTime = self.StateTime + InDeltaTime
   end
 end
+
 function WBP_ProgressSystem_C:Init(id)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if DTSubsystem then
@@ -25,6 +27,7 @@ function WBP_ProgressSystem_C:Init(id)
     end
   end
 end
+
 function WBP_ProgressSystem_C:SetPercent(NewPercent)
   self.Percent = NewPercent
   local MatInst = self.URGImageProgress:GetDynamicMaterial()
@@ -35,6 +38,7 @@ function WBP_ProgressSystem_C:SetPercent(NewPercent)
     self:DoFinish()
   end
 end
+
 function WBP_ProgressSystem_C:DoPause()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if nil == UIManager then
@@ -56,6 +60,7 @@ function WBP_ProgressSystem_C:DoPause()
     WBP_ProgressSystem_C.TimerPause
   }, 0.02, true)
 end
+
 function WBP_ProgressSystem_C:DoFinish()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if nil == UIManager then
@@ -76,6 +81,7 @@ function WBP_ProgressSystem_C:DoFinish()
     WBP_ProgressSystem_C.TimerFinish
   }, 0.02, true)
 end
+
 function WBP_ProgressSystem_C:TimerFinish()
   self.FinishTime = self.FinishTime + 0.02
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
@@ -88,6 +94,7 @@ function WBP_ProgressSystem_C:TimerFinish()
     UIManager:K2_CloseUIByName("WBP_ProgressSystem_C")
   end
 end
+
 function WBP_ProgressSystem_C:TimerPause()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if nil == UIManager or self.Pause == false then
@@ -111,4 +118,5 @@ function WBP_ProgressSystem_C:TimerPause()
     UE.UKismetSystemLibrary.K2_ClearTimerHandle(self, self.PauseTimerHandle)
   end
 end
+
 return WBP_ProgressSystem_C

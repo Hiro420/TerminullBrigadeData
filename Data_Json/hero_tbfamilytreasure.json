@@ -1,0 +1,20 @@
+[
+  {
+    "ID": 101,
+    "HeroID": 1010,
+    "GiftID": 6201011,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv1.Icon_FamilyHeirloom_Lv1",
+    "LinkId": "1012",
+    "LinkDesc": "商城捆绑包获取",
+    "ParamList": []
+  },
+  {
+    "ID": 1031,
+    "HeroID": 1030,
+    "GiftID": 6203011,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv1.Icon_FamilyHeirloom_Lv1",
+    "LinkId": "1005",
+    "LinkDesc": "抽卡系统获取",
+    "ParamList": []
+  }
+]

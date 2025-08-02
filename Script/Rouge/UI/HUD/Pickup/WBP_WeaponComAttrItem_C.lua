@@ -1,9 +1,11 @@
 local WBP_WeaponComAttrItem_C = UnLua.Class()
+
 function WBP_WeaponComAttrItem_C:InitAttributeInfo(Name, Value)
   self.RGTextAttrName:SetText(Name)
   self.RGTextAttrValue:SetText(Value)
   self:UpdateCompareStatus(0)
 end
+
 function WBP_WeaponComAttrItem_C:UpdateCompareStatus(Result)
   if 0 == Result then
     self.Img_CompareStatus:SetVisibility(UE.ESlateVisibility.Hidden)
@@ -26,7 +28,9 @@ function WBP_WeaponComAttrItem_C:UpdateCompareStatus(Result)
     end
   end
 end
+
 function WBP_WeaponComAttrItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return WBP_WeaponComAttrItem_C

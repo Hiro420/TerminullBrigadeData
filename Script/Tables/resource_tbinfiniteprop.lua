@@ -1889,15 +1889,6 @@ local resource_tbinfiniteprop = {
     unlockMethodDescLocMeta = NSLOCTEXT("resource_TBInfiniteProp", "unlockMethodDesc_2061009", "\230\143\144\229\141\135\232\167\146\232\137\178\231\134\159\231\187\131\229\186\166\232\142\183\229\143\150"),
     unlockTaskId = 0
   },
-  [2061010] = {
-    ID = 2061010,
-    infinitePropType = 1,
-    initunlock = true,
-    backgroundEffect = "",
-    unlockMethodJump = "",
-    unlockMethodDescLocMeta = NSLOCTEXT("resource_TBInfiniteProp", "unlockMethodDesc_2061010", ""),
-    unlockTaskId = 0
-  },
   [9040110] = {
     ID = 9040110,
     infinitePropType = 1,

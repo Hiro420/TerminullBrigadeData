@@ -1,21 +1,26 @@
 local WBP_QTEProgressWindow_C = UnLua.Class()
+
 function WBP_QTEProgressWindow_C:Construct()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   ListenObjectMessage(Character, GMP.MSG_Skill_QTE_OnQTEFailed, self, self.BindOnSkillQTEFailed)
   ListenObjectMessage(Character, GMP.MSG_Skill_QTE_OnQTESuccessful, self, self.BindOnSkillQTESuccessful)
   ListenObjectMessage(Character, GMP.MSG_Skill_QTE_OnQTEEnd, self, self.BindOnSkillQTEEnd)
 end
+
 function WBP_QTEProgressWindow_C:BindOnSkillQTEFailed(Index)
   print("WBP_QTEProgressWindow_C:BindOnSkillQTEFailed", Index)
   self:UpdateQTEProgressStatus(Index, false)
 end
+
 function WBP_QTEProgressWindow_C:BindOnSkillQTESuccessful(Index)
   print("WBP_QTEProgressWindow_C:BindOnSkillQTESuccessful", Index)
   self:UpdateQTEProgressStatus(Index, true)
 end
+
 function WBP_QTEProgressWindow_C:BindOnSkillQTEEnd()
   self:Hide()
 end
+
 function WBP_QTEProgressWindow_C:Show(ConfigData)
   UpdateVisibility(self, true)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.DelayHideTimer) then
@@ -63,15 +68,18 @@ function WBP_QTEProgressWindow_C:Show(ConfigData)
   end
   HideOtherItem(self.QTESectionPanel, Index)
 end
+
 function WBP_QTEProgressWindow_C:UpdateQTEProgressStatus(Index, IsSuccess)
   local Item = self.QTESectionPanel:GetChildAt(Index)
   if Item then
     Item:UpdateStatus(IsSuccess)
   end
 end
+
 function WBP_QTEProgressWindow_C:HidePanel()
   UpdateVisibility(self, false)
 end
+
 function WBP_QTEProgressWindow_C:Hide()
   if 0.0 == self.DelayHideDuration then
     self:HidePanel()
@@ -82,6 +90,7 @@ function WBP_QTEProgressWindow_C:Hide()
     }, self.DelayHideDuration, false)
   end
 end
+
 function WBP_QTEProgressWindow_C:Destruct()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.DelayHideTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.DelayHideTimer)
@@ -90,4 +99,5 @@ function WBP_QTEProgressWindow_C:Destruct()
   UnListenObjectMessage(GMP.MSG_Skill_QTE_OnQTEFailed, self)
   UnListenObjectMessage(GMP.MSG_Skill_QTE_OnQTEEnd, self)
 end
+
 return WBP_QTEProgressWindow_C

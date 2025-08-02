@@ -1,0 +1,42 @@
+[
+  {
+    "Channel": 0,
+    "ChannelName": "大厅",
+    "IconPath": "",
+    "OpenLevel": 8,
+    "TextLimit": 100,
+    "Period": 10
+  },
+  {
+    "Channel": 1,
+    "ChannelName": "队伍",
+    "IconPath": "",
+    "OpenLevel": 1,
+    "TextLimit": 100,
+    "Period": 5
+  },
+  {
+    "Channel": 2,
+    "ChannelName": "好友",
+    "IconPath": "",
+    "OpenLevel": 1,
+    "TextLimit": 100,
+    "Period": 1
+  },
+  {
+    "Channel": 3,
+    "ChannelName": "招募",
+    "IconPath": "",
+    "OpenLevel": 0,
+    "TextLimit": 0,
+    "Period": 0
+  },
+  {
+    "Channel": 4,
+    "ChannelName": "系统",
+    "IconPath": "",
+    "OpenLevel": 0,
+    "TextLimit": 0,
+    "Period": 0
+  }
+]

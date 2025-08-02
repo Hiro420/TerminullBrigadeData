@@ -1,9 +1,11 @@
 local WBP_LikeAttributeModifyWindowItem_C = UnLua.Class()
 local RefuseKeyName = "OKeyEvent"
 local AgreeKeyName = "PKeyEvent"
+
 function WBP_LikeAttributeModifyWindowItem_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_LikeAttributeModifyWindowItem_C:InitInfo(RequestData, ParentView)
   self.RequestData = RequestData
   self.ParentView = ParentView
@@ -40,6 +42,7 @@ function WBP_LikeAttributeModifyWindowItem_C:InitInfo(RequestData, ParentView)
   self.WBP_TeamDamageActivatedModifyItem_Mini:UpdateScrollData(RequestData.Id, nil, nil, nil, nil)
   self:SetPercent(0)
 end
+
 function WBP_LikeAttributeModifyWindowItem_C:SetPercent(Percent)
   self.ProgressBar_Time:SetPercent(Percent)
   self.ProgressBar_Time_Mini:SetPercent(Percent)
@@ -50,6 +53,7 @@ function WBP_LikeAttributeModifyWindowItem_C:SetPercent(Percent)
   local CountDownTxt = UE.FTextFormat(CountDownTxtFmt(), tostring(math.floor(Percent * self.RequestData.CountDownTime)))
   self.Txt_CountDown:SetText(string.format(CountDownTxt))
 end
+
 function WBP_LikeAttributeModifyWindowItem_C:SetState(State)
   if self.State == State then
     return
@@ -68,6 +72,7 @@ function WBP_LikeAttributeModifyWindowItem_C:SetState(State)
     end
   end
 end
+
 function WBP_LikeAttributeModifyWindowItem_C:GetAttributeModifySetLevelBySetId(UserId, SetId)
   local SetData = self:GetAttributeModifySetDataBySetId(UserId, SetId)
   if SetData then
@@ -75,6 +80,7 @@ function WBP_LikeAttributeModifyWindowItem_C:GetAttributeModifySetLevelBySetId(U
   end
   return 0
 end
+
 function WBP_LikeAttributeModifyWindowItem_C:GetAttributeModifySetDataBySetId(UserId, SetId)
   local PC = self:GetPlayerControllerByUserId(UserId)
   if PC and PC.AttributeModifyComponent then
@@ -86,6 +92,7 @@ function WBP_LikeAttributeModifyWindowItem_C:GetAttributeModifySetDataBySetId(Us
   end
   return nil
 end
+
 function WBP_LikeAttributeModifyWindowItem_C:GetPlayerStateByUserId(UserId)
   local GS = UE.UGameplayStatics.GetGameState(self)
   if not GS then
@@ -98,6 +105,7 @@ function WBP_LikeAttributeModifyWindowItem_C:GetPlayerStateByUserId(UserId)
   end
   return nil
 end
+
 function WBP_LikeAttributeModifyWindowItem_C:GetPlayerControllerByUserId(UserId)
   local PC
   local PS = self:GetPlayerStateByUserId(UserId)
@@ -110,26 +118,32 @@ function WBP_LikeAttributeModifyWindowItem_C:GetPlayerControllerByUserId(UserId)
   end
   return PC
 end
+
 function WBP_LikeAttributeModifyWindowItem_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_LikeAttributeModifyWindowItem_C:PlayInAnimation(ParentView, FinishCallBack)
   local CurInAni = self["Ani_" .. self.State .. "_in"]
   self:PlayAnimation(CurInAni)
 end
+
 function WBP_LikeAttributeModifyWindowItem_C:PlayOutAnimation(ParentView, FinishCallBack)
   local CurOutAni = self["Ani_" .. self.State .. "_out"]
   self:PlayAnimation(CurOutAni)
   self:UnbindAllFromAnimationFinished(CurOutAni)
   self:BindToAnimationFinished(CurOutAni, {ParentView, FinishCallBack})
 end
+
 function WBP_LikeAttributeModifyWindowItem_C:PlayExpandAnimation(ParentView, FinishCallBack)
   self:PlayAnimation(self.Ani_Main_up)
   self.State = "Main"
 end
+
 function WBP_LikeAttributeModifyWindowItem_C:OnAnimationFinished(Animation)
   if Animation == self.Ani_change_in and self.ParentView.ShowModel == "Main" then
     self:SetState("Main")
   end
 end
+
 return WBP_LikeAttributeModifyWindowItem_C

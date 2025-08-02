@@ -1,4 +1,5 @@
 local WBP_BattleModePendingInteractPanel_C = UnLua.Class()
+
 function WBP_BattleModePendingInteractPanel_C:UpdateInteractInfo(InteractTipRow, TargetActor)
   self.Owner = TargetActor
   local Result, RowInfo = GetRowData(DT.DT_BattleMode, self.Owner.BattleModeId)
@@ -8,6 +9,7 @@ function WBP_BattleModePendingInteractPanel_C:UpdateInteractInfo(InteractTipRow,
   end
   self:RefreshRewardList()
 end
+
 function WBP_BattleModePendingInteractPanel_C:RefreshRewardList()
   local AllChildren = self.RewardList:GetAllChildren()
   for key, SingleItem in pairs(AllChildren) do
@@ -52,6 +54,7 @@ function WBP_BattleModePendingInteractPanel_C:RefreshRewardList()
     SpecialWidget:Show(GroupItem)
   end
 end
+
 function WBP_BattleModePendingInteractPanel_C:BindOnGameplayTeachingPressed()
   print("\231\142\169\230\179\149\230\149\153\229\173\166")
   RGUIMgr:OpenUI(UIConfig.WBP_BattleModeTeaching_C.UIName)
@@ -60,9 +63,12 @@ function WBP_BattleModePendingInteractPanel_C:BindOnGameplayTeachingPressed()
     TargetUI:InitInfo(self.Owner)
   end
 end
+
 function WBP_BattleModePendingInteractPanel_C:HideWidget()
 end
+
 function WBP_BattleModePendingInteractPanel_C:Destruct()
   self:HideWidget()
 end
+
 return WBP_BattleModePendingInteractPanel_C

@@ -1,13 +1,16 @@
 local UITestActorPath = "/Game/Rouge/UI/NewUITest/BP_UITestActor.BP_UITestActor_C"
 local WBP_UITestView_C = UnLua.Class()
+
 function WBP_UITestView_C:Construct()
   print("ccc222333444")
   self.EscActionName = "PauseGame"
   self.Overridden.Construct(self)
 end
+
 function WBP_UITestView_C:Destruct()
   self.Overridden.Destruct(self)
 end
+
 function WBP_UITestView_C:FocusInput()
   self.Overridden.FocusInput(self)
   SetInputIgnore(self:GetOwningPlayerPawn(), true)
@@ -18,6 +21,7 @@ function WBP_UITestView_C:FocusInput()
     })
   end
 end
+
 function WBP_UITestView_C:UnFocusInput()
   self.Overridden.UnFocusInput(self)
   SetInputIgnore(self:GetOwningPlayerPawn(), false)
@@ -29,9 +33,11 @@ function WBP_UITestView_C:UnFocusInput()
     })
   end
 end
+
 function WBP_UITestView_C:ListenForEscInputAction()
   RGUIMgr:HideUI(UIConfig.WBP_UITestView_C.UIName)
 end
+
 function WBP_UITestView_C:OnDisplay()
   print("ccc222333444")
   self.Overridden.OnDisplay(self)
@@ -71,16 +77,19 @@ function WBP_UITestView_C:OnDisplay()
   print("ccc222333")
   self.UITestActor:OnDisplay()
 end
+
 function WBP_UITestView_C:OnUnDisplay()
   if self.UITestActor then
     self.UITestActor:OnUnDisplay()
   end
   self.Overridden.OnUnDisplay(self, true)
 end
+
 function WBP_UITestView_C:OnClose()
   if self.UITestActor then
     self.UITestActor:OnClose()
   end
   self.Overridden.OnClose(self)
 end
+
 return WBP_UITestView_C

@@ -10,6 +10,7 @@ local tbGeneral = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
 local tbChipLevelUp = LuaTableMgr.GetLuaTableByName(TableNames.TBChipLevelUp)
 local tbMainAttrLvUp = LuaTableMgr.GetLuaTableByName(TableNames.TBMainAttrLvUp)
 local SeasonName = NSLOCTEXT("ChipViewModel", "SeasonName", "\231\137\185\230\174\138")
+
 function ChipViewModel:OnInit()
   self.Super.OnInit(self)
   EventSystem.AddListenerNew(EventDef.Chip.GetHeroChipBag, self, self.OnGetHeroChipBag)
@@ -26,6 +27,7 @@ function ChipViewModel:OnInit()
   EventSystem.AddListenerNew(EventDef.WSMessage.pushNewChip, self, self.OnResourceUpdate)
   self.bCanRefreshChipAttrTips = true
 end
+
 function ChipViewModel:OnShutdown()
   EventSystem.RemoveListenerNew(EventDef.Chip.GetHeroChipBag, self, self.OnGetHeroChipBag)
   EventSystem.RemoveListenerNew(EventDef.Chip.AddChip, self, self.OnGetHeroChipBag)
@@ -41,9 +43,11 @@ function ChipViewModel:OnShutdown()
   EventSystem.RemoveListenerNew(EventDef.WSMessage.pushNewChip, self, self.OnResourceUpdate)
   self.Super.OnShutdown(self)
 end
+
 function ChipViewModel:UpdateCurHeroId(HeroId)
   self.CurHeroId = HeroId
 end
+
 function ChipViewModel:SelectSlot(Slot)
   if self.CurSelectModeIdx == Slot then
     return
@@ -66,15 +70,19 @@ function ChipViewModel:SelectSlot(Slot)
   self:OnGetHeroChipBag()
   self:OnUpdateLeftAndRightRedDot()
 end
+
 function ChipViewModel:RequestGetHeroChipBag()
   ChipHandler.RequestGetHeroChipBag()
 end
+
 function ChipViewModel:RequestGetChipDetail(ChipIDList, Callback, bIsShowLoading)
   ChipHandler.RequestGetChipDetail(ChipIDList, Callback, bIsShowLoading)
 end
+
 function ChipViewModel:RequestGetChipListByAttrIDs(MainAttrIDs, SubAttrIDs, Callback)
   return ChipHandler.RequestGetChipListByAttrIDs(MainAttrIDs, SubAttrIDs, Callback)
 end
+
 function ChipViewModel:RequestEquipChip(ChipBagsItemData, equipChipData, bRightMouseBtnClick)
   local tbHeroMonster = LuaTableMgr.GetLuaTableByName(TableNames.TBHeroMonster)
   local heroName = ""
@@ -245,9 +253,11 @@ function ChipViewModel:RequestEquipChip(ChipBagsItemData, equipChipData, bRightM
     end
   end
 end
+
 function ChipViewModel:RequestUpgradeChip(EatList, UUID, EatChipUpgradeMatList)
   ChipHandler.RequestUpgradeChip(EatList, UUID, EatChipUpgradeMatList)
 end
+
 function ChipViewModel:RequestLockChip(ChipBagItemData)
   if ChipBagItemData.Chip.state == EChipState.Normal then
     self.bCanRefreshChipAttrTips = false
@@ -265,6 +275,7 @@ function ChipViewModel:RequestLockChip(ChipBagItemData)
     end)
   end
 end
+
 function ChipViewModel:RequestDiscardChip(ChipBagItemData)
   if ChipBagItemData.Chip.state == EChipState.Normal then
     if ChipBagItemData.Chip.equipHeroID > 0 then
@@ -286,6 +297,7 @@ function ChipViewModel:RequestDiscardChip(ChipBagItemData)
     end)
   end
 end
+
 function ChipViewModel:ConfirmNormalFilter(CurFilterData)
   ChipData.NormalFilterData = DeepCopy(CurFilterData)
   if self:GetFirstView() then
@@ -293,6 +305,7 @@ function ChipViewModel:ConfirmNormalFilter(CurFilterData)
   end
   self:OnGetHeroChipBag()
 end
+
 function ChipViewModel:ResetNormalFilter(bNotRefreshBag)
   ChipData.NormalFilterData = DeepCopy(ChipData.DefaultNormalFilterData)
   if self:GetFirstView() then
@@ -302,6 +315,7 @@ function ChipViewModel:ResetNormalFilter(bNotRefreshBag)
     self:OnGetHeroChipBag()
   end
 end
+
 function ChipViewModel:ConfirmStrengthFilter(CurFilterData)
   ChipData.StrengthFilterData = DeepCopy(CurFilterData)
   if self:GetFirstView() then
@@ -309,6 +323,7 @@ function ChipViewModel:ConfirmStrengthFilter(CurFilterData)
   end
   self:OnGetHeroChipBag()
 end
+
 function ChipViewModel:ResetStrengthFilter(bNotRefreshBag)
   ChipData.StrengthFilterData = DeepCopy(ChipData.DefaultStrengthFilterData)
   if self:GetFirstView() then
@@ -318,12 +333,14 @@ function ChipViewModel:ResetStrengthFilter(bNotRefreshBag)
     self:OnGetHeroChipBag()
   end
 end
+
 function ChipViewModel:OnlyCheckDiscard(bIsCheck, bDontRefreshBagList)
   ChipData.StrengthOnlyCheckDiscard = bIsCheck
   if self:GetFirstView() and not bDontRefreshBagList then
     self:GetFirstView():UpdateStrengthBagList()
   end
 end
+
 function ChipViewModel:OnGetHeroChipBag()
   if self:GetFirstView() then
     self:GetFirstView():UpdateChipBagList(self.CurSelectModeIdx)
@@ -331,16 +348,19 @@ function ChipViewModel:OnGetHeroChipBag()
     self:UpdateChipAttrTips()
   end
 end
+
 function ChipViewModel:OnCancelOrDiscard()
   if self:GetFirstView() then
     self:GetFirstView():UpdateChipListKeepSort(self.CurSelectModeIdx)
   end
 end
+
 function ChipViewModel:OnDiscardChip(Id)
   if self:GetFirstView() then
     self:GetFirstView():UpdateChipListKeepSort(self.CurSelectModeIdx, true)
   end
 end
+
 function ChipViewModel:OnEquipChip(ChipId, HeroId, Slot, UnEquipedChipId)
   if self:GetFirstView() then
     self:GetFirstView():UpdateChipBagList(self.CurSelectModeIdx)
@@ -348,12 +368,14 @@ function ChipViewModel:OnEquipChip(ChipId, HeroId, Slot, UnEquipedChipId)
   end
   ShowWaveWindow(1180)
 end
+
 function ChipViewModel:OnLockChip(Id)
   if self:GetFirstView() then
     self:GetFirstView():UpdateStrength(Id)
     self:GetFirstView():UpdateChipListKeepSort(self.CurSelectModeIdx)
   end
 end
+
 function ChipViewModel:OnMigrateChip(HeroId, Slot, TargetHeroId, TargetSlot, UnEquipedChipId)
   if self:GetFirstView() then
     self:GetFirstView():UpdateChipBagList(self.CurSelectModeIdx)
@@ -361,12 +383,14 @@ function ChipViewModel:OnMigrateChip(HeroId, Slot, TargetHeroId, TargetSlot, UnE
   end
   ShowWaveWindow(1180)
 end
+
 function ChipViewModel:OnUnEquipChip()
   if self:GetFirstView() then
     self:GetFirstView():UpdateChipBagList(self.CurSelectModeIdx)
     self:UpdateChipAttrTips()
   end
 end
+
 function ChipViewModel:OnUpgradeChip(ChipId, oldMainAttrGrowth, oldSubAttr, OldLv)
   if self:GetFirstView() then
     local chipBagData = self:GetChipBagDataByUUIDRef(ChipId)
@@ -398,6 +422,7 @@ function ChipViewModel:OnUpgradeChip(ChipId, oldMainAttrGrowth, oldSubAttr, OldL
     self:UpdateChipAttrTips()
   end
 end
+
 function ChipViewModel:OnUpdateChipEquipSlot(HeroId, EquipSlot)
   if HeroId and self.CurHeroId ~= HeroId then
     return
@@ -406,9 +431,11 @@ function ChipViewModel:OnUpdateChipEquipSlot(HeroId, EquipSlot)
     self:GetFirstView():UpdateEquipChipList(ChipData:GetEquipedChipListByHeroId(self.CurHeroId), EquipSlot)
   end
 end
+
 function ChipViewModel:OnUpdateEquipedChipDetail(equipedChipIDs)
   ChipHandler.RequestGetChipDetail(equipedChipIDs, nil, true)
 end
+
 function ChipViewModel:OnResourceUpdate(JsonStr)
   local bNeedRequest = false
   local JsonTable = rapidjson.decode(JsonStr)
@@ -426,6 +453,7 @@ function ChipViewModel:OnResourceUpdate(JsonStr)
   EventSystem.Invoke(EventDef.Chip.AddChip)
   EventSystem.Invoke(EventDef.Chip.UpdateChipEquipSlot)
 end
+
 function ChipViewModel:UpdateChipAttrTips(EquipChipBagsItemData, UnEquipCompareChipBagsItemData, HeroId, Slot, UnEquipedChipId)
   if not self.bCanRefreshChipAttrTips then
     return
@@ -577,24 +605,31 @@ function ChipViewModel:UpdateChipAttrTips(EquipChipBagsItemData, UnEquipCompareC
   end)
   self:GetFirstView():UpdateAttrTips(chipOrderedMap)
 end
+
 function ChipViewModel:GetNormalFilterDataRef()
   return ChipData.NormalFilterData
 end
+
 function ChipViewModel:GetStrengthFilterDataRef()
   return ChipData.StrengthFilterData
 end
+
 function ChipViewModel:CheckSlotIsUnLock(Slot)
   return ChipData:CheckSlotIsUnLock(Slot)
 end
+
 function ChipViewModel:GetEquipedChipListByHeroId(HeroId)
   return ChipData:GetEquipedChipListByHeroId(HeroId)
 end
+
 function ChipViewModel:GetEquipedSlotToChipByHeroId(HeroId)
   return ChipData:GetEquipedSlotToChipByHeroId(HeroId)
 end
+
 function ChipViewModel:GetMaxMainAttrFilterNum()
   return ChipData.MaxMainAttrFilterNum
 end
+
 function ChipViewModel:FilterNormalChipBagList(bGetFromCache, Callback)
   if self.CacheChipList and bGetFromCache then
     return self.CacheChipList
@@ -776,6 +811,7 @@ function ChipViewModel:FilterNormalChipBagList(bGetFromCache, Callback)
     return chipList
   end
 end
+
 function ChipViewModel:FilterStrengthChipBagOrderedMap(ChipBagItemData, Callback)
   local chipOrderedMap = OrderedMap.New()
   if not ChipBagItemData then
@@ -992,6 +1028,7 @@ function ChipViewModel:FilterStrengthChipBagOrderedMap(ChipBagItemData, Callback
     return chipList
   end
 end
+
 function ChipViewModel:CheckCanEatByChipBagData(beEatedChipBagData, ChipBagData)
   if not beEatedChipBagData then
     print("CheckCanEatByChipBagData beEatedChipBagData is nil")
@@ -1021,6 +1058,7 @@ function ChipViewModel:CheckCanEatByChipBagData(beEatedChipBagData, ChipBagData)
   end
   return false
 end
+
 function ChipViewModel:GetTypeByChipBagItem(ChipBagItemData)
   if not ChipBagItemData then
     return -1
@@ -1033,9 +1071,11 @@ function ChipViewModel:GetTypeByChipBagItem(ChipBagItemData)
   end
   return -1
 end
+
 function ChipViewModel:GetChipBagDataByUUIDRef(UUID)
   return ChipData.ChipBags[UUID]
 end
+
 function ChipViewModel:GetEatExpByChipBagData(ChipBagData, LevelOffset, UseMatNum)
   if not ChipBagData then
     return 0
@@ -1069,6 +1109,7 @@ function ChipViewModel:GetEatExpByChipBagData(ChipBagData, LevelOffset, UseMatNu
   print("ChipViewModel:GetEatExpByChipBagData", resID, eatExp)
   return eatExp
 end
+
 function ChipViewModel:GetCurLvUpExpByChipBagData(ChipBagData, LevelOffset)
   if not ChipBagData then
     return 0
@@ -1090,6 +1131,7 @@ function ChipViewModel:GetCurLvUpExpByChipBagData(ChipBagData, LevelOffset)
   end
   return upgradeExp
 end
+
 function ChipViewModel:GetNewLvByChipBagData(ChipBagData, NewExp)
   local oldLevel = ChipBagData.Chip.level
   local newLevel = oldLevel
@@ -1107,6 +1149,7 @@ function ChipViewModel:GetNewLvByChipBagData(ChipBagData, NewExp)
   local newLevel = math.clamp(newLevel, 0, ChipData:GetChipMaxLvByRarity(rare))
   return newLevel
 end
+
 function ChipViewModel:GetLevelUPMainAttrGrowthByChipBagData(ChipBagData)
   if not ChipBagData then
     return {
@@ -1134,10 +1177,12 @@ function ChipViewModel:GetLevelUPMainAttrGrowthByChipBagData(ChipBagData)
   end
   return levelUPMainAttrGrowth
 end
+
 function ChipViewModel:GetShowAttrValue(Value, RowOp)
   local valueTxt = UE.URGBlueprintLibrary.GetAttributeDisplayText(Value, RowOp.AttributeDisplayType, RowOp.Unit)
   return valueTxt
 end
+
 function ChipViewModel:CheckOutEatListToTargetLv(ChipOrderedMap, ChipBagData, LevelDiff)
   if not self:GetFirstView() then
     return {}
@@ -1200,9 +1245,11 @@ function ChipViewModel:CheckOutEatListToTargetLv(ChipOrderedMap, ChipBagData, Le
   end
   return eatChipList, eatChipUpgradeMatList
 end
+
 function ChipViewModel:GetRandSubAttrLvGap()
   return ChipData.RandSubAttrLvGap
 end
+
 function ChipViewModel:GetChipRare(ChipBagsItemData)
   if not ChipBagsItemData then
     return UE.ERGItemRarity.EIR_Excellent
@@ -1219,6 +1266,7 @@ function ChipViewModel:GetChipRare(ChipBagsItemData)
   end
   return UE.ERGItemRarity.EIR_Excellent
 end
+
 function ChipViewModel:GetChipName(ChipBagItemData)
   if not ChipBagItemData then
     return ""
@@ -1229,6 +1277,7 @@ function ChipViewModel:GetChipName(ChipBagItemData)
   end
   return ""
 end
+
 function ChipViewModel:GetModIdBySlot(Slot)
   local modIdx = -1
   local tbChipSlot = LuaTableMgr.GetLuaTableByName(TableNames.TBChipSlots)
@@ -1237,9 +1286,11 @@ function ChipViewModel:GetModIdBySlot(Slot)
   end
   return modIdx
 end
+
 function ChipViewModel:GetMainAttrInitValue(ChipBagItemData)
   return ChipBagItemData.TbChipData.AttrValue
 end
+
 function ChipViewModel:CheckSlotIsEmpty()
   local chipList = {}
   local chipBags = ChipData.ChipBags
@@ -1250,12 +1301,15 @@ function ChipViewModel:CheckSlotIsEmpty()
   end
   return table.IsEmpty(chipList)
 end
+
 function ChipViewModel:GetMainAttrValueByChipBagItemData(ChipBagItemData)
   return ChipData:GetMainAttrValueByChipBagItemData(ChipBagItemData)
 end
+
 function ChipViewModel:GetMaxLv(Rare)
   return ChipData:GetChipMaxLvByRarity(Rare)
 end
+
 function ChipViewModel:GetMaxLvByChipBagItem(ChipBagItemData)
   if not ChipBagItemData then
     return 0
@@ -1263,12 +1317,15 @@ function ChipViewModel:GetMaxLvByChipBagItem(ChipBagItemData)
   local rare = self:GetChipRare(ChipBagItemData)
   return ChipData:GetChipMaxLvByRarity(rare)
 end
+
 function ChipViewModel:GetIsOnlyCheckDiscard()
   return ChipData.StrengthOnlyCheckDiscard
 end
+
 function ChipViewModel:GetMaxChipNum()
   return ChipData.MaxChipNum
 end
+
 function ChipViewModel:GetChipsTotalNum()
   local num = 0
   for k, v in pairs(ChipData.ChipBags) do
@@ -1276,9 +1333,11 @@ function ChipViewModel:GetChipsTotalNum()
   end
   return num
 end
+
 function ChipViewModel:ResetDataWhenHideView()
   self.CurSelectModeIdx = -1
 end
+
 function ChipViewModel:OnUpdateLeftAndRightRedDot()
   local LeftRedDotCount = 0
   local RightRedDotCount = 0
@@ -1297,9 +1356,11 @@ function ChipViewModel:OnUpdateLeftAndRightRedDot()
     self:GetFirstView():UpdateLeftAndRightRedDot(LeftRedDotCount, RightRedDotCount)
   end
 end
+
 function ChipViewModel:GetCurHeroId()
   return self.CurHeroId
 end
+
 function ChipViewModel:GetIsNewByUUID(UUID)
   local chipRedDotId = "Chip_Item_" .. UUID
   local redDotState = RedDotData:GetRedDotState(chipRedDotId)
@@ -1309,6 +1370,7 @@ function ChipViewModel:GetIsNewByUUID(UUID)
   end
   return bIsNew
 end
+
 function ChipViewModel:CheckInscriptionMutex(ChipBagItemData, EquipedChipItemData)
   if not ChipBagItemData then
     return false, -1, -1
@@ -1341,6 +1403,7 @@ function ChipViewModel:CheckInscriptionMutex(ChipBagItemData, EquipedChipItemDat
   end
   return false, -1, -1
 end
+
 function ChipViewModel:CheckConfirmOnlyInscription(ChipBagItemData, EquipedChipItemData)
   if not ChipBagItemData then
     return false
@@ -1364,6 +1427,7 @@ function ChipViewModel:CheckConfirmOnlyInscription(ChipBagItemData, EquipedChipI
   end
   return false
 end
+
 function ChipViewModel:GetInscriptionDesc(Inscription)
   local RGLogicCommandDataSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.ULogicCommandDataSubSystem:StaticClass())
   if RGLogicCommandDataSubsystem and Inscription > 0 then
@@ -1372,6 +1436,7 @@ function ChipViewModel:GetInscriptionDesc(Inscription)
   end
   return ""
 end
+
 function ChipViewModel:GetSlotName(Slot)
   local tbChipSlot = LuaTableMgr.GetLuaTableByName(TableNames.TBChipSlots)
   if tbChipSlot and tbChipSlot[Slot] then
@@ -1379,6 +1444,7 @@ function ChipViewModel:GetSlotName(Slot)
   end
   return ""
 end
+
 function ChipViewModel:GetSubValueByAttrId(ChipBagItemData, AttrId)
   if not ChipBagItemData then
     return 0
@@ -1390,6 +1456,7 @@ function ChipViewModel:GetSubValueByAttrId(ChipBagItemData, AttrId)
   end
   return 0
 end
+
 function ChipViewModel:CheckMainAttrIdx(ChipBagItemData)
   if table.IsEmpty(ChipData.NormalFilterData.MainAttrFilter) then
     return -1
@@ -1399,6 +1466,7 @@ function ChipViewModel:CheckMainAttrIdx(ChipBagItemData)
   end
   return ChipData.NormalFilterData.MainAttrFilter[ChipBagItemData.TbChipData.AttrID] or -1
 end
+
 function ChipViewModel:CheckStrengthMainAttrIdx(ChipBagItemData)
   if table.IsEmpty(ChipData.StrengthFilterData.MainAttrFilter) then
     return -1
@@ -1408,6 +1476,7 @@ function ChipViewModel:CheckStrengthMainAttrIdx(ChipBagItemData)
   end
   return ChipData.StrengthFilterData[ChipBagItemData.TbChipData.AttrID] or -1
 end
+
 function ChipViewModel:CheckContainMainAttr(ChipBagItemData)
   if table.IsEmpty(ChipData.NormalFilterData.MainAttrFilter) then
     return true
@@ -1417,6 +1486,7 @@ function ChipViewModel:CheckContainMainAttr(ChipBagItemData)
   end
   return ChipData.NormalFilterData.MainAttrFilter[ChipBagItemData.TbChipData.AttrID]
 end
+
 function ChipViewModel:CheckContainSubAttr(ChipBagItemData)
   if table.IsEmpty(ChipData.NormalFilterData.SubAttrFilter) then
     return true
@@ -1433,6 +1503,7 @@ function ChipViewModel:CheckContainSubAttr(ChipBagItemData)
   end
   return false
 end
+
 function ChipViewModel:CheckStrengthContainMainAttr(ChipBagItemData)
   if table.IsEmpty(ChipData.StrengthFilterData.MainAttrFilter) then
     return true
@@ -1442,6 +1513,7 @@ function ChipViewModel:CheckStrengthContainMainAttr(ChipBagItemData)
   end
   return ChipData.StrengthFilterData.MainAttrFilter[ChipBagItemData.TbChipData.AttrID]
 end
+
 function ChipViewModel:CheckStrengthContainSubAttr(ChipBagItemData)
   if table.IsEmpty(ChipData.StrengthFilterData.SubAttrFilter) then
     return true
@@ -1458,12 +1530,15 @@ function ChipViewModel:CheckStrengthContainSubAttr(ChipBagItemData)
   end
   return false
 end
+
 function ChipViewModel:GetCurRareLimit()
   return ChipData.CurRareLimit
 end
+
 function ChipViewModel:SetCurRareLimit(Rare)
   ChipData.CurRareLimit = Rare
 end
+
 function ChipViewModel:CheckNormalIsDefaultFilter()
   if not table.IsEmpty(ChipData.NormalFilterData.MainAttrFilter) then
     return false
@@ -1479,6 +1554,7 @@ function ChipViewModel:CheckNormalIsDefaultFilter()
   end
   return true
 end
+
 function ChipViewModel:CheckStrengthIsDefaultFilter()
   if not table.IsEmpty(ChipData.StrengthFilterData.MainAttrFilter) then
     return false
@@ -1494,13 +1570,16 @@ function ChipViewModel:CheckStrengthIsDefaultFilter()
   end
   return true
 end
+
 function ChipViewModel:CreateChipBagItemDataByUpgradeMat(id, amount)
   return ChipData:CreateChipBagItemDataByUpgradeMat(id, amount)
 end
+
 function ChipViewModel:CheckIsChipUpgradeMat(ChipBagItemData)
   if not ChipBagItemData then
     return false
   end
   return ChipBagItemData.ChipUpgradeMat
 end
+
 return ChipViewModel

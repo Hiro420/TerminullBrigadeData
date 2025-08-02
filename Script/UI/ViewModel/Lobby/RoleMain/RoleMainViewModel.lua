@@ -8,6 +8,7 @@ RoleMainViewModel.propertyBindings = {
   BasicInfo = {}
 }
 RoleMainViewModel.subViewModels = {}
+
 function RoleMainViewModel:OnInit()
   self.Super.OnInit(self)
   EventSystem.AddListener(self, EventDef.Lobby.UpdateHeroTalentInfo, self.BindOnHeroTalentInfoUpdate)
@@ -17,42 +18,51 @@ function RoleMainViewModel:OnInit()
   EventSystem.AddListener(self, EventDef.Lobby.WeaponListChanged, self.BindOnWeaponListChanged)
   EventSystem.AddListener(self, EventDef.Lobby.LobbyWeaponSlotHoverStatusChanged, self.BindOnLobbyWeaponSlotHoverStatusChanged)
 end
+
 function RoleMainViewModel:RegisterPropertyChanged(BindingTable, View)
   self.Super.RegisterPropertyChanged(self, BindingTable, View)
 end
+
 function RoleMainViewModel:UnRegisterPropertyChanged(BindingTable, View)
   self.Super.UnRegisterPropertyChanged(self, BindingTable, View)
 end
+
 function RoleMainViewModel:BindOnHeroTalentInfoUpdate(HeroId)
   if self:GetFirstView() then
     self:GetFirstView():BindOnHeroTalentInfoUpdate(HeroId)
   end
 end
+
 function RoleMainViewModel:BindOnUpdateCommonTalentInfo()
   if self:GetFirstView() then
   end
 end
+
 function RoleMainViewModel:BindOnEquippedWeaponInfoChanged(HeroId)
   if self:GetFirstView() then
     self:GetFirstView():BindOnEquippedWeaponInfoChanged(HeroId)
   end
 end
+
 function RoleMainViewModel:BindOnWeaponSlotSelected(IsSelect, SlotId)
   if self:GetFirstView() then
     self:GetFirstView():BindOnWeaponSlotSelected(IsSelect, SlotId)
   end
 end
+
 function RoleMainViewModel:BindOnWeaponListChanged()
   local IsShow = UIMgr:IsShow(ViewID.UI_RoleMain)
   if self:GetFirstView() and IsShow then
     self:GetFirstView():BindOnWeaponListChanged()
   end
 end
+
 function RoleMainViewModel:BindOnLobbyWeaponSlotHoverStatusChanged(IsHover, WeaponInfo)
   if self:GetFirstView() then
     self:GetFirstView():BindOnLobbyWeaponSlotHoverStatusChanged(IsHover, WeaponInfo)
   end
 end
+
 function RoleMainViewModel:OnShutdown()
   self.Super.OnShutdown(self)
   EventSystem.RemoveListener(EventDef.Lobby.UpdateHeroTalentInfo, self.BindOnHeroTalentInfoUpdate, self)
@@ -62,4 +72,5 @@ function RoleMainViewModel:OnShutdown()
   EventSystem.RemoveListener(EventDef.Lobby.WeaponListChanged, self.BindOnWeaponListChanged, self)
   EventSystem.RemoveListener(EventDef.Lobby.LobbyWeaponSlotHoverStatusChanged, self.BindOnLobbyWeaponSlotHoverStatusChanged, self)
 end
+
 return RoleMainViewModel

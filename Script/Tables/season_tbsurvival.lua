@@ -56,7 +56,7 @@ local season_tbsurvival = {
     SmallIcon = "",
     DifficultyIcon = "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_02.Icon_Mode_02",
     BigIcon = "",
-    PanelIcon = "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_04.Icon_Mode_Transparency_04",
+    PanelIcon = "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_02.Icon_Mode_Transparency_02",
     TicketID = 8
   },
   [3] = {
@@ -86,7 +86,7 @@ local season_tbsurvival = {
     SmallIcon = "",
     DifficultyIcon = "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_03.Icon_Mode_03",
     BigIcon = "",
-    PanelIcon = "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_02.Icon_Mode_Transparency_02",
+    PanelIcon = "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_03.Icon_Mode_Transparency_03",
     TicketID = 9
   },
   [4] = {
@@ -116,7 +116,7 @@ local season_tbsurvival = {
     SmallIcon = "",
     DifficultyIcon = "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_04.Icon_Mode_04",
     BigIcon = "",
-    PanelIcon = "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_03.Icon_Mode_Transparency_03",
+    PanelIcon = "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_04.Icon_Mode_Transparency_04",
     TicketID = 10
   },
   [5] = {

@@ -1,7 +1,7 @@
 ﻿{
   "60001": {
-    "initunlock": true,
     "BattleItemID": 5005,
+    "initunlock": true,
     "ID": 60001
   }
 }

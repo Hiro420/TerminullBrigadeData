@@ -1,7 +1,9 @@
 local WBP_TarosQTime_C = UnLua.Class()
+
 function WBP_TarosQTime_C:Construct()
   self.CurrentTime = self.FullTime
 end
+
 function WBP_TarosQTime_C:GetProgressPercent()
   local CurWorldSeconds = UE.UGameplayStatics.GetWorldDeltaSeconds(self)
   self.CurrentTime = math.clamp(self.CurrentTime - CurWorldSeconds, 0.0, 100.0)
@@ -11,7 +13,9 @@ function WBP_TarosQTime_C:GetProgressPercent()
   end
   return TargetPercent
 end
+
 function WBP_TarosQTime_C:GetRemainTimeText()
   return UE.UKismetTextLibrary.Conv_FloatToText(self.CurrentTime, UE.ERoundingMode.HalfToEven, false, true, 1, 324, 1, 1)
 end
+
 return WBP_TarosQTime_C

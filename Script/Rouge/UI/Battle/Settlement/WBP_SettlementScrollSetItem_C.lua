@@ -1,8 +1,10 @@
 local WBP_SettlementScrollSetItem_C = UnLua.Class()
 local ScrollSetLvListItemClsPath = "/Game/Rouge/UI/Battle/Bag/Scroll/WBP_ScrollSetLvListItem.WBP_ScrollSetLvListItem_C"
+
 function WBP_SettlementScrollSetItem_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_SettlementScrollSetItem_C:InitScrollSetItem(ActivatedSetData, UpdateScrollSetTipsFunc, ParentView)
   UpdateVisibility(self, true, true)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -50,29 +52,35 @@ function WBP_SettlementScrollSetItem_C:InitScrollSetItem(ActivatedSetData, Updat
     end
   end
 end
+
 function WBP_SettlementScrollSetItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   if self.UpdateScrollSetTipsFunc and self.ActivatedSetData then
     self:UpdateHighlight(true)
     self.UpdateScrollSetTipsFunc(self.ParentView, true, self.ActivatedSetData, self)
   end
 end
+
 function WBP_SettlementScrollSetItem_C:OnMouseLeave(MouseEvent)
   if self.UpdateScrollSetTipsFunc and self.ActivatedSetData then
     self:UpdateHighlight(false)
     self.UpdateScrollSetTipsFunc(self.ParentView, false, self.ActivatedSetData, self)
   end
 end
+
 function WBP_SettlementScrollSetItem_C:UpdateHighlight(bIsHighlight)
   UpdateVisibility(self.Image_Select, bIsHighlight)
 end
+
 function WBP_SettlementScrollSetItem_C:Hide()
   UpdateVisibility(self, false)
   self:UpdateHighlight(false)
 end
+
 function WBP_SettlementScrollSetItem_C:Destruct()
   self.Overridden.Destruct(self)
   self.UpdateScrollSetTipsFunc = nil
   self.ParentView = nil
   self.ActivatedSetData = nil
 end
+
 return WBP_SettlementScrollSetItem_C

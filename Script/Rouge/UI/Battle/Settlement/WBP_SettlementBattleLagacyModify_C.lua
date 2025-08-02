@@ -1,6 +1,8 @@
 local WBP_SettlementBattleLagacyModify_C = UnLua.Class()
+
 function WBP_SettlementBattleLagacyModify_C:Construct()
 end
+
 function WBP_SettlementBattleLagacyModify_C:InitSettlementBattleLagacyModify(CurBattleLagacyData, ParentView)
   self.ParentView = ParentView
   self.CurBattleLagacyData = CurBattleLagacyData
@@ -22,16 +24,20 @@ function WBP_SettlementBattleLagacyModify_C:InitSettlementBattleLagacyModify(Cur
     end
   end
 end
+
 function WBP_SettlementBattleLagacyModify_C:OnMouseEnter()
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
     self.ParentView:ShowGenericModifyBagTips(true, self.CurBattleLagacyData.BattleLagacyId)
   end
 end
+
 function WBP_SettlementBattleLagacyModify_C:OnMouseLeave()
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
     self.ParentView:ShowGenericModifyBagTips(false, self.CurBattleLagacyData.BattleLagacyId)
   end
 end
+
 function WBP_SettlementBattleLagacyModify_C:Destruct()
 end
+
 return WBP_SettlementBattleLagacyModify_C

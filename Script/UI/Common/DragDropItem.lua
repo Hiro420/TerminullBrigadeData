@@ -1,5 +1,6 @@
 local UnLua = _G.UnLua
 local DragDropItem = UnLua.Class()
+
 function DragDropItem:Construct()
   self.Overridden.Construct(self)
   self.DropAvailable = nil
@@ -13,6 +14,7 @@ function DragDropItem:Construct()
   self.selfDropObj = nil
   self.DragDropDataObj = nil
 end
+
 function DragDropItem:Destruct()
   self.DropAvailable = nil
   self.DragOverAvailable = nil
@@ -26,6 +28,7 @@ function DragDropItem:Destruct()
   self.DragDropDataObj = nil
   self.Overridden.Destruct(self)
 end
+
 function DragDropItem:BindDragDropData(dragDropDataObj)
   self.DragDropDataObj = dragDropDataObj
   local canvasSlotSelf = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self)
@@ -42,12 +45,14 @@ function DragDropItem:BindDragDropData(dragDropDataObj)
     canvasSlotSelf:SetSize(UE.FVector2D(100, 100))
   end
 end
+
 local DragEnable = function(dragDropDataObj)
   if not dragDropDataObj then
     return false
   end
   return dragDropDataObj.bDragEnable
 end
+
 function DragDropItem:OnDragCancelled(PointerEvent, Operation)
   if not DragEnable(self.DragDropDataObj) then
     return
@@ -56,6 +61,7 @@ function DragDropItem:OnDragCancelled(PointerEvent, Operation)
     self.endDrag(self.selfDragObj, PointerEvent, Operation)
   end
 end
+
 function DragDropItem:OnDragDetected(MyGeometry, PointerEvent, Operation)
   if not DragEnable(self.DragDropDataObj) then
     return
@@ -78,6 +84,7 @@ function DragDropItem:OnDragDetected(MyGeometry, PointerEvent, Operation)
   self.dragDropOperation.Pivot = pivot
   return self.dragDropOperation
 end
+
 function DragDropItem:OnMouseButtonDown(myMouseButtonDown, mouseEvent)
   local reply = UE.FEventReply(false)
   if not DragEnable(self.DragDropDataObj) then
@@ -89,6 +96,7 @@ function DragDropItem:OnMouseButtonDown(myMouseButtonDown, mouseEvent)
   end
   return reply
 end
+
 function DragDropItem:SetDragAvailableCallback(selfDragObj, selfDragDropDataObj, beDragObj, dragAvailable, endDrag)
   if not DragEnable(self.DragDropDataObj) and not DragEnable(selfDragDropDataObj) then
     return
@@ -99,12 +107,14 @@ function DragDropItem:SetDragAvailableCallback(selfDragObj, selfDragDropDataObj,
   self.endDrag = endDrag
   self:BindDragDropData(selfDragDropDataObj)
 end
+
 local DropEnable = function(dragDropDataObj)
   if not dragDropDataObj then
     return false
   end
   return dragDropDataObj.bDropEnable
 end
+
 function DragDropItem:OnDrop(MyGeometry, PointerEvent, Operation)
   if not DropEnable(self.DragDropDataObj) then
     return
@@ -116,6 +126,7 @@ function DragDropItem:OnDrop(MyGeometry, PointerEvent, Operation)
     self.DropAvailable(self.selfDropObj, self, Operation.Payload, PointerEvent)
   end
 end
+
 function DragDropItem:SetDropAvailableCallback(selfDropObj, selfDragDropDataObj, DropAvailable, DragOverAvailable, DragLeaveAvailable)
   if not DropEnable(self.DragDropDataObj) and not DropEnable(selfDragDropDataObj) then
     return
@@ -126,6 +137,7 @@ function DragDropItem:SetDropAvailableCallback(selfDropObj, selfDragDropDataObj,
   self.selfDropObj = selfDropObj
   self:BindDragDropData(selfDragDropDataObj)
 end
+
 function DragDropItem:OnDragEnter(PointerEvent, Operation)
   if not DropEnable(self.DragDropDataObj) then
     return
@@ -134,6 +146,7 @@ function DragDropItem:OnDragEnter(PointerEvent, Operation)
     self.DragDropDataObj.containerImg:SetColorAndOpacity(self.DragDropDataObj.HighLightColor)
   end
 end
+
 function DragDropItem:OnDragLeave(PointerEvent, Operation)
   if not DropEnable(self.DragDropDataObj) then
     return
@@ -145,9 +158,11 @@ function DragDropItem:OnDragLeave(PointerEvent, Operation)
     self.DragLeaveAvailable(self.selfDropObj, self, Operation, PointerEvent)
   end
 end
+
 function DragDropItem:OnDragOver(PointerEvent, Operation)
   if self.DragOverAvailable then
     self.DragOverAvailable(self.selfDropObj, self, Operation, PointerEvent)
   end
 end
+
 return DragDropItem

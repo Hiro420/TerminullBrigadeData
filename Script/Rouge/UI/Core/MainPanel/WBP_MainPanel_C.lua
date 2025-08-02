@@ -1,4 +1,5 @@
 local WBP_MainPanel_C = UnLua.Class()
+
 function WBP_MainPanel_C:Construct()
   self:BindTitleEvent(true)
   self.SwitchBagName = "SwitchBag"
@@ -11,10 +12,12 @@ function WBP_MainPanel_C:Construct()
   self.MainPanelDiscardWeaponName = "MainPanelDiscardWeapon"
   self.PageNameLuaAry = self.PageNameAry:ToTable()
 end
+
 function WBP_MainPanel_C:Destruct()
   self:ReleaseView()
   self:BindTitleEvent(false)
 end
+
 function WBP_MainPanel_C:OnDisplay()
   self.Overridden.OnDisplay(self)
   self:SetEnhancedInputActionBlocking(true)
@@ -27,10 +30,12 @@ function WBP_MainPanel_C:OnDisplay()
     self:ShowScrollInfoPanel()
   end
 end
+
 function WBP_MainPanel_C:OnUnDisplay()
   self.Overridden.OnUnDisplay(self, true)
   self:ReleaseView()
 end
+
 function WBP_MainPanel_C:FocusInput()
   self.Overridden.FocusInput(self)
   SetInputIgnore(self:GetOwningPlayerPawn(), true)
@@ -78,16 +83,19 @@ function WBP_MainPanel_C:FocusInput()
     })
   end
 end
+
 function WBP_MainPanel_C:UnfocusInput()
   self.Overridden.UnfocusInput(self)
   self:ReleaseView()
 end
+
 function WBP_MainPanel_C:Bp_InputTypeToGamePadUpdateFocus()
   local currentActiveWidget = self:GetCurActiveWidget()
   if currentActiveWidget and currentActiveWidget.GamePadFocus then
     currentActiveWidget:GamePadFocus()
   end
 end
+
 function WBP_MainPanel_C:ReleaseView()
   self:SetEnhancedInputActionBlocking(false)
   self.WBP_BattleRoleInfo:OnClose()
@@ -97,6 +105,7 @@ function WBP_MainPanel_C:ReleaseView()
   SetInputIgnore(self:GetOwningPlayerPawn(), false)
   self:PopInputAction()
 end
+
 function WBP_MainPanel_C:OnAnimationFinished(Animation)
   if Animation == self.fx_ani_gamepanel_out then
     local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGUIManager:StaticClass())
@@ -109,6 +118,7 @@ function WBP_MainPanel_C:OnAnimationFinished(Animation)
     end
   end
 end
+
 function WBP_MainPanel_C:ActivatePageTitle(InActivateNum)
   local titleArray = self.WBP_NavigationBar.HorizontalBox_Title:GetAllChildren()
   for key, value in pairs(titleArray) do
@@ -119,6 +129,7 @@ function WBP_MainPanel_C:ActivatePageTitle(InActivateNum)
     self.ActivateNum = InActivateNum
   end
 end
+
 function WBP_MainPanel_C:ActivatePagePanel(Index)
   print("WBP_MainPanel_C:ActivatePagePanel", Index)
   local lastActiveWidget = self:GetCurActiveWidget()
@@ -129,18 +140,22 @@ function WBP_MainPanel_C:ActivatePagePanel(Index)
   self:NotifyActiveWidgetChange(lastActiveWidget, currentActiveWidget)
   print("WBP_MainPanel_C:ActivatePagePanel1", lastActiveWidget, currentActiveWidget)
 end
+
 function WBP_MainPanel_C:ActivateItemPanel()
   self:ShowScrollInfoPanel()
 end
+
 function WBP_MainPanel_C:ActivateModPanel()
   self:ActivatePagePanel(1)
 end
+
 function WBP_MainPanel_C:ActivateLeft()
   local tempNumber = self.ActivateNum - 1
   if tempNumber >= 0 then
     self:ActivatePagePanel(tempNumber)
   end
 end
+
 function WBP_MainPanel_C:ActivateRight()
   local tempNumber = self.ActivateNum + 1
   local tempMaxNumber = self.WBP_NavigationBar.HorizontalBox_Title:GetChildrenCount() - 1
@@ -148,6 +163,7 @@ function WBP_MainPanel_C:ActivateRight()
     self:ActivatePagePanel(tempNumber)
   end
 end
+
 function WBP_MainPanel_C:ExitMainPanel()
   if not self:IsAnimationPlaying(self.fx_ani_gamepanel_in) and not self:IsAnimationPlaying(self.fx_ani_gamepanel_out) then
     self.WBP_BattleRoleInfo:OnExitPanel()
@@ -158,9 +174,11 @@ function WBP_MainPanel_C:ExitMainPanel()
     EventSystem.Invoke(EventDef.MainPanel.OnExit, self:GetCurActiveWidget())
   end
 end
+
 function WBP_MainPanel_C:NotifyActiveWidgetChange(LastActiveWidget, CurActiveWidget)
   EventSystem.Invoke(EventDef.MainPanel.MainPanelChanged, LastActiveWidget, CurActiveWidget, self)
 end
+
 function WBP_MainPanel_C:SetInputIgnore(Ignored)
   if UE.RGUtil.IsUObjectValid(self:GetOwningPlayerPawn()) then
     local InputComp = self:GetOwningPlayerPawn():GetComponentByClass(UE.URGCharacterInputHandle:StaticClass())
@@ -170,9 +188,11 @@ function WBP_MainPanel_C:SetInputIgnore(Ignored)
     end
   end
 end
+
 function WBP_MainPanel_C:GetCurIdx()
   return self.ActivateNum
 end
+
 function WBP_MainPanel_C:GetCurActiveWidget()
   local Idx = self:GetCurIdx()
   if self.PageNameLuaAry[Idx + 1] then
@@ -180,6 +200,7 @@ function WBP_MainPanel_C:GetCurActiveWidget()
   end
   return nil
 end
+
 function WBP_MainPanel_C:SetActiveWidgetIndex(Index)
   for i, v in ipairs(self.PageNameLuaAry) do
     if i == Index + 1 then
@@ -189,6 +210,7 @@ function WBP_MainPanel_C:SetActiveWidgetIndex(Index)
     end
   end
 end
+
 function WBP_MainPanel_C:GetChildIndexByWidget(Widget)
   for i = 1, self.WidgetSwitcher_Page:GetChildrenCount() do
     local Item = self.WidgetSwitcher_Page:GetChildAt(i - 1)
@@ -198,57 +220,71 @@ function WBP_MainPanel_C:GetChildIndexByWidget(Widget)
   end
   return -1
 end
+
 function WBP_MainPanel_C:OnVKeyEvent()
   self.WBP_ModScrollView:KeyDown()
 end
+
 function WBP_MainPanel_C:ListenForSwitchBattleRoleNameInputAction()
   print("WBP_MainPanel_C:ListenForSwitchBattleRoleNameInputAction", self:GetCurIdx())
   if 0 == self:GetCurIdx() then
     self:ExitMainPanel()
   end
 end
+
 function WBP_MainPanel_C:ListenForSwitchBagNameInputAction()
   print("WBP_MainPanel_C:ListenForSwitchBagNameInputAction", self:GetCurIdx())
   if 1 == self:GetCurIdx() then
     self:ExitMainPanel()
   end
 end
+
 function WBP_MainPanel_C:ListenForIllustratedNameInputAction()
   if 2 == self:GetCurIdx() then
     self:ExitMainPanel()
   end
 end
+
 function WBP_MainPanel_C:ListenForEscInputAction()
   self:ExitMainPanel()
 end
+
 function WBP_MainPanel_C:ListenForLeftInputAction()
   self:ActivateLeft()
 end
+
 function WBP_MainPanel_C:ListenForRightInputAction()
   self:ActivateRight()
 end
+
 function WBP_MainPanel_C:ListenForGMWindowInputAction()
 end
+
 function WBP_MainPanel_C:ListenForDiscardAccessoryInputAction()
 end
+
 function WBP_MainPanel_C:ShowRoleInfoPanel()
   local ActiveIndex = self:GetChildIndexByWidget(self.WBP_BattleRoleInfo)
   self:ActivatePagePanel(ActiveIndex)
   self.WBP_BattleRoleInfo:OnOpen(self)
 end
+
 function WBP_MainPanel_C:ShowScrollInfoPanel()
   local ActiveIndex = self:GetChildIndexByWidget(self.WBP_ModScrollView)
   self:ActivatePagePanel(ActiveIndex)
   self.WBP_ModScrollView:OnOpen(self)
 end
+
 function WBP_MainPanel_C:ShowIllustratedGuidePanel()
   local ActiveIndex = self:GetChildIndexByWidget(self.WBP_IllustratedGuide)
   self:ActivatePagePanel(ActiveIndex)
   self.WBP_IllustratedGuide.WBP_IGuide_GenericModify:InitGenericModify()
 end
+
 function WBP_MainPanel_C:TitleClicked(TitleNum)
   self:ActivatePagePanel(TitleNum)
 end
+
 function WBP_MainPanel_C:BindTitleEvent(Bind)
   local titleArray = self.WBP_NavigationBar.HorizontalBox_Title:GetAllChildren()
   for key, value in pairs(titleArray) do
@@ -259,4 +295,5 @@ function WBP_MainPanel_C:BindTitleEvent(Bind)
     end
   end
 end
+
 return WBP_MainPanel_C

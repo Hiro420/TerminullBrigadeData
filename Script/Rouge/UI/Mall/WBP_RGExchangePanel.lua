@@ -4,26 +4,32 @@ local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local rapidJson = require("rapidjson")
 local WBP_RGExchangePanel = Class(ViewBase)
+
 function WBP_RGExchangePanel:BindClickHandler()
   self.WBP_CommonButton_Confirm.OnMainButtonClicked:Add(self, self.BindOnConfirmButtonClicked)
   self.WBP_CommonButton_Cancel.OnMainButtonClicked:Add(self, self.BindOnCancelButtonClicked)
 end
+
 function WBP_RGExchangePanel:UnBindClickHandler()
   self.WBP_CommonButton_Confirm.OnMainButtonClicked:Remove(self, self.BindOnConfirmButtonClicked)
   self.WBP_CommonButton_Cancel.OnMainButtonClicked:Remove(self, self.BindOnCancelButtonClicked)
 end
+
 function WBP_RGExchangePanel:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function WBP_RGExchangePanel:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_RGExchangePanel:OnShow(TargetResourceId, ExchangeResourceId, ExchangeNum, ExchangeRatio, MaxExchangeNum)
   self.RealNeedExchangeResourceId = nil
   self:RefreshExchangeInfo(TargetResourceId, ExchangeResourceId, ExchangeNum, ExchangeRatio, MaxExchangeNum)
   self.WBP_InteractTipWidgetEsc:BindInteractAndClickEvent(self, self.BindOnCancelButtonClicked)
 end
+
 function WBP_RGExchangePanel:RefreshExchangeInfo(TargetResourceId, ExchangeResourceId, ExchangeNum, ExchangeRatio, MaxExchangeNum)
   self.TargetResourceId = TargetResourceId
   self.ExchangeResourceId = ExchangeResourceId
@@ -62,9 +68,11 @@ function WBP_RGExchangePanel:RefreshExchangeInfo(TargetResourceId, ExchangeResou
   self.WBP_Item:InitItem(self.ExchangeResourceId, self.ExchangeNum * self.ExchangeRatio.key, nil, true)
   self.WBP_Item_1:InitItem(self.TargetResourceId, self.ExchangeNum * self.ExchangeRatio.value, nil, true)
 end
+
 function WBP_RGExchangePanel:SetRealNeedExchangeResourceId(InResourceId)
   self.RealNeedExchangeResourceId = InResourceId
 end
+
 function WBP_RGExchangePanel:BindOnConfirmButtonClicked(...)
   if not self.CanConfirm then
     print("WBP_RGExchangePanel:BindOnConfirmButtonClicked \229\183\178\231\130\185\229\135\187\232\191\135\231\161\174\232\174\164")
@@ -110,11 +118,14 @@ function WBP_RGExchangePanel:BindOnConfirmButtonClicked(...)
     end
   })
 end
+
 function WBP_RGExchangePanel:BindOnCancelButtonClicked(...)
   UIMgr:Hide(ViewID.UI_ExchangePanel)
 end
+
 function WBP_RGExchangePanel:OnHide()
   self.WBP_InteractTipWidgetEsc:UnBindInteractAndClickEvent(self, self.BindOnCancelButtonClicked)
   self.RealNeedExchangeResourceId = nil
 end
+
 return WBP_RGExchangePanel

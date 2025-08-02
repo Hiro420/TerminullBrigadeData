@@ -1,5 +1,6 @@
 local LoginData = require("Modules.Login.LoginData")
 local WBP_RegionServerItem_Num_C = UnLua.Class()
+
 function WBP_RegionServerItem_Num_C:Construct()
   if not self.bComboBox then
     self:InitRegionServerItem(LogicTeam.GetRegion())
@@ -7,12 +8,15 @@ function WBP_RegionServerItem_Num_C:Construct()
   end
   EventSystem.AddListener(self, EventDef.Lobby.UpdateRegionPing, self.UpdateRegionPing)
 end
+
 function WBP_RegionServerItem_Num_C:UpdateRegionPing()
   self:SetPingValue(LogicTeam.GetRegionPingValue(LogicTeam.Region))
 end
+
 function WBP_RegionServerItem_Num_C:BindOnUpdateMyTeamInfo()
   self:InitRegionServerItem(LogicTeam.GetRegion())
 end
+
 function WBP_RegionServerItem_Num_C:InitRegionServerItem(Region)
   if nil == Region then
     UpdateVisibility(self, false)
@@ -34,6 +38,7 @@ function WBP_RegionServerItem_Num_C:InitRegionServerItem(Region)
   end
   UpdateVisibility(self, false)
 end
+
 function WBP_RegionServerItem_Num_C:SetPingValue(Value)
   if Value then
     self.Txt_ServerPing:SetText(Value .. "ms")
@@ -51,4 +56,5 @@ function WBP_RegionServerItem_Num_C:SetPingValue(Value)
     self.RGStateController_Ping:ChangeStatus("Normal")
   end
 end
+
 return WBP_RegionServerItem_Num_C

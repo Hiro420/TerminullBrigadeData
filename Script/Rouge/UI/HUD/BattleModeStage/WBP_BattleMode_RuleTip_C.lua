@@ -1,4 +1,5 @@
 local WBP_BattleMode_RuleTip_C = UnLua.Class()
+
 function WBP_BattleMode_RuleTip_C:DoOpen(BattleModeId)
   LogicHUD:BindOnOptimalTargetChanged(nil)
   self.Countdown = self.CloseTime
@@ -39,6 +40,7 @@ function WBP_BattleMode_RuleTip_C:DoOpen(BattleModeId)
     self.MediaPlayer:Rewind()
   end
 end
+
 function WBP_BattleMode_RuleTip_C:DoClose(BattleModeId)
   if self.CloseTimer ~= nil and UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.CloseTimer) then
     UE.UKismetSystemLibrary.K2_ClearTimerHandle(self, self.CloseTimer)
@@ -50,6 +52,7 @@ function WBP_BattleMode_RuleTip_C:DoClose(BattleModeId)
   end
   StopListeningForInputAction(self, "Space", UE.EInputEvent.IE_Pressed)
 end
+
 function WBP_BattleMode_RuleTip_C:DisablePlayerInput()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -61,6 +64,7 @@ function WBP_BattleMode_RuleTip_C:DisablePlayerInput()
   end
   InputComp:SetAllInputIgnored(true)
 end
+
 function WBP_BattleMode_RuleTip_C:EnablePlayerInput()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -72,6 +76,7 @@ function WBP_BattleMode_RuleTip_C:EnablePlayerInput()
   end
   InputComp:SetAllInputIgnored(false)
 end
+
 function WBP_BattleMode_RuleTip_C:RefreshCountdown()
   self.Countdown = self.Countdown - 1
   if self.Countdown < 0 then
@@ -81,4 +86,5 @@ function WBP_BattleMode_RuleTip_C:RefreshCountdown()
   local Countdown = NSLOCTEXT("WBP_BattleMode_RuleTip_C", "LimitPurchCountdownaseForever", "{0}\231\167\146\229\144\142\229\188\128\229\167\139")
   self.Countdowntext:SetText(UE.FTextFormat(Countdown(), math.floor(self.Countdown)))
 end
+
 return WBP_BattleMode_RuleTip_C

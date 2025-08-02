@@ -2,6 +2,7 @@ local rapidjson = require("rapidjson")
 LogicTalent = LogicTalent or {
   TalentList = {}
 }
+
 function LogicTalent.Init()
   LogicTalent.TalentList = {}
   LogicTalent.PreCommonTalentLevelList = {}
@@ -13,12 +14,15 @@ function LogicTalent.Init()
   LogicTalent.DealWithHeroTalentTable()
   LogicTalent.ResetPreRemainCostList()
 end
+
 function LogicTalent.InitTalentItemStyle(InItemStyleList)
   LogicTalent.ItemStyleList = InItemStyleList
 end
+
 function LogicTalent.GetTalentStyleItemByType(Type)
   return LogicTalent.ItemStyleList[Type]
 end
+
 function LogicTalent.DealWithTalentTable()
   local TalentTable = LuaTableMgr.GetLuaTableByName(TableNames.TBTalent)
   if not TalentTable then
@@ -35,6 +39,7 @@ function LogicTalent.DealWithTalentTable()
     end
   end
 end
+
 function LogicTalent.DealWithHeroTalentTable()
   local HeroTalentTable = LuaTableMgr.GetLuaTableByName(TableNames.TBHeroTalent)
   if not HeroTalentTable then
@@ -55,6 +60,7 @@ function LogicTalent.DealWithHeroTalentTable()
     LogicTalent.HeroTalentList[HeroId] = HeroTalentList
   end
 end
+
 function LogicTalent.GetHeroTalentPre(TalentId, HeroTalentList)
   local TalentInfo = LogicTalent.GetTalentTableRow(TalentId)
   if TalentInfo and TalentInfo[1] then
@@ -67,9 +73,11 @@ function LogicTalent.GetHeroTalentPre(TalentId, HeroTalentList)
   end
   return
 end
+
 function LogicTalent.GetTalentTableRow(GroupId)
   return LogicTalent.TalentList[GroupId]
 end
+
 function LogicTalent.GetMaxLevelByTalentId(TalentId)
   local TalentRow = LogicTalent.GetTalentTableRow(TalentId)
   local MaxLevel = 0
@@ -82,9 +90,11 @@ function LogicTalent.GetMaxLevelByTalentId(TalentId)
   end
   return MaxLevel
 end
+
 function LogicTalent.GetHeroTalentList(HeroId)
   return LogicTalent.HeroTalentList[HeroId]
 end
+
 function LogicTalent.RequestUpgradeCommonTalentToServer(Params)
   HttpCommunication.Request("hero/upgradecommontalent", Params, {
     GameInstance,
@@ -109,6 +119,7 @@ function LogicTalent.RequestUpgradeCommonTalentToServer(Params)
     end
   })
 end
+
 function LogicTalent.RequestGetCommonTalentsToServer()
   HttpCommunication.Request("hero/getcommontalents", {}, {
     GameInstance,
@@ -131,10 +142,13 @@ function LogicTalent.RequestGetCommonTalentsToServer()
     end
   })
 end
+
 function LogicTalent.RequestGetHeroTalentsToServer(HeroId)
 end
+
 function LogicTalent.RequestUpgradeHeroTalentToServer(HeroId, TalentGroupId)
 end
+
 function LogicTalent.ResetPreCommonTalentLevelList()
   LogicTalent.PreCommonTalentLevelList = {}
   local CommonTalentInfos = DataMgr.GetCommonTalentInfos()
@@ -143,12 +157,15 @@ function LogicTalent.ResetPreCommonTalentLevelList()
   end
   EventSystem.Invoke(EventDef.Lobby.UpdateCommonTalentInfo)
 end
+
 function LogicTalent.GetPreCommonTalentLevelList()
   return LogicTalent.PreCommonTalentLevelList
 end
+
 function LogicTalent.SetPreCommonTalentLevel(TalentId, Level)
   LogicTalent.PreCommonTalentLevelList[TalentId] = Level
 end
+
 function LogicTalent.GetPreCommonTalentLevel(TalentId)
   if LogicTalent.PreCommonTalentLevelList[TalentId] then
     return LogicTalent.PreCommonTalentLevelList[TalentId]
@@ -160,10 +177,12 @@ function LogicTalent.GetPreCommonTalentLevel(TalentId)
   end
   return 0
 end
+
 function LogicTalent.ResetPreRemainCostList()
   LogicTalent.ResetPreCurrencyList()
   LogicTalent.ResetPrePackbackList()
 end
+
 function LogicTalent.ResetPreCurrencyList()
   LogicTalent.PreCurrencyList = {}
   local CurrencyList = DataMgr.GetOutsideCurrencyList()
@@ -171,9 +190,11 @@ function LogicTalent.ResetPreCurrencyList()
     LogicTalent.PreCurrencyList[CurrencyId] = CurrencyNum
   end
 end
+
 function LogicTalent.GetPreCurrencyNum(CurrencyId)
   return LogicTalent.PreCurrencyList[CurrencyId] and LogicTalent.PreCurrencyList[CurrencyId] or 0
 end
+
 function LogicTalent.SetPreCurrencyNum(CurrencyId, CostNum)
   if LogicTalent.PreCurrencyList[CurrencyId] then
     LogicTalent.PreCurrencyList[CurrencyId] = LogicTalent.PreCurrencyList[CurrencyId] + CostNum
@@ -181,6 +202,7 @@ function LogicTalent.SetPreCurrencyNum(CurrencyId, CostNum)
     LogicTalent.PreCurrencyList[CurrencyId] = CostNum
   end
 end
+
 function LogicTalent.GetPreRemainCostNum(CostId)
   local ResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   local ResourceRow = ResourceTable[CostId]
@@ -193,6 +215,7 @@ function LogicTalent.GetPreRemainCostNum(CostId)
   end
   return 0
 end
+
 function LogicTalent.GetPreCostNum(CostId)
   local CurHaveNum = 0
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, CostId)
@@ -206,6 +229,7 @@ function LogicTalent.GetPreCostNum(CostId)
   local PreCostNum = LogicTalent.GetPreRemainCostNum(CostId)
   return CurHaveNum - PreCostNum
 end
+
 function LogicTalent.SetPreRemainCostNum(CostId, CostNum)
   local ResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   local ResourceRow = ResourceTable[CostId]
@@ -218,6 +242,7 @@ function LogicTalent.SetPreRemainCostNum(CostId, CostNum)
   end
   EventSystem.Invoke(EventDef.Lobby.UpdateCommonTalentPresetCost)
 end
+
 function LogicTalent.ResetPrePackbackList()
   LogicTalent.PrePackbackList = {}
   local PackbackList = DataMgr.GetPackbackList()
@@ -226,9 +251,11 @@ function LogicTalent.ResetPrePackbackList()
     LogicTalent.PrePackbackList[ResourceId] = Num
   end
 end
+
 function LogicTalent.GetPrePackbackNum(ResourceId)
   return LogicTalent.PrePackbackList[ResourceId] and LogicTalent.PrePackbackList[ResourceId] or 0
 end
+
 function LogicTalent.SetPrePackbackNum(ResourceId, CostNum)
   if LogicTalent.PrePackbackList[ResourceId] then
     LogicTalent.PrePackbackList[ResourceId] = LogicTalent.PrePackbackList[ResourceId] + CostNum
@@ -236,6 +263,7 @@ function LogicTalent.SetPrePackbackNum(ResourceId, CostNum)
     LogicTalent.PrePackbackList[ResourceId] = CostNum
   end
 end
+
 function LogicTalent.IsMeetPreTalentGroupCondition(TalentId)
   local TalentInfo = LogicTalent.GetTalentTableRow(TalentId)
   if not TalentInfo then
@@ -253,6 +281,7 @@ function LogicTalent.IsMeetPreTalentGroupCondition(TalentId)
   end
   return PreTalentLevelSum >= TargetLevelTalentInfo.FrontGroupsLevel
 end
+
 function LogicTalent.IsMeetTalentUpgradeCostCondition(TalentId)
   local TalentInfo = LogicTalent.GetTalentTableRow(TalentId)
   if not TalentInfo then
@@ -282,6 +311,7 @@ function LogicTalent.IsMeetTalentUpgradeCostCondition(TalentId)
   end
   return CostResult
 end
+
 function LogicTalent.IsMeetRoleLevelCondition(TalentId)
   local TalentInfo = LogicTalent.GetTalentTableRow(TalentId)
   if not TalentInfo then
@@ -294,6 +324,7 @@ function LogicTalent.IsMeetRoleLevelCondition(TalentId)
   end
   return tonumber(DataMgr.GetRoleLevel()) >= TargetLevelTalentInfo.RoleLevel
 end
+
 function LogicTalent.GetMaxCanUpgradeLevel(TalentId)
   local TalentInfo = LogicTalent.GetTalentTableRow(TalentId)
   if not TalentInfo then
@@ -326,6 +357,7 @@ function LogicTalent.GetMaxCanUpgradeLevel(TalentId)
   end
   return MaxCanUpgradeLevel
 end
+
 function LogicTalent.IsMeetPreHeroTalentGroupCondition(HeroId, TalentId, Level)
   local TalentInfo = LogicTalent.GetTalentTableRow(TalentId)
   if not TalentInfo then
@@ -343,6 +375,7 @@ function LogicTalent.IsMeetPreHeroTalentGroupCondition(HeroId, TalentId, Level)
   end
   return PreTalentLevelSum >= TargetLevelTalentInfo.FrontGroupsLevel
 end
+
 function LogicTalent.IsMeetHeroTalentUpgradeCostCondition(HeroId, TalentId, Level)
   local TalentInfo = LogicTalent.GetTalentTableRow(TalentId)
   if not TalentInfo then
@@ -371,6 +404,7 @@ function LogicTalent.IsMeetHeroTalentUpgradeCostCondition(HeroId, TalentId, Leve
   end
   return CostResult
 end
+
 function LogicTalent.IsMeetHeroTalentRoleLevelCondition(HeroId, TalentId, Level)
   local TalentInfo = LogicTalent.GetTalentTableRow(TalentId)
   if not TalentInfo then
@@ -383,6 +417,7 @@ function LogicTalent.IsMeetHeroTalentRoleLevelCondition(HeroId, TalentId, Level)
   end
   return tonumber(DataMgr.GetRoleLevel()) >= TargetLevelTalentInfo.RoleLevel
 end
+
 function LogicTalent.GetHeroTalentMaxCanUpgradeLevel(HeroId, TalentId)
   local TalentInfo = LogicTalent.GetTalentTableRow(TalentId)
   if not TalentInfo then
@@ -402,6 +437,7 @@ function LogicTalent.GetHeroTalentMaxCanUpgradeLevel(HeroId, TalentId)
   end
   return MaxCanUpgradeLevel
 end
+
 function LogicTalent.Clear()
   LogicTalent.TalentList = {}
   LogicTalent.PreCommonTalentLevelList = {}

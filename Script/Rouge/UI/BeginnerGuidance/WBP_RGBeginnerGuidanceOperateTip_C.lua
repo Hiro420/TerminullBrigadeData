@@ -1,10 +1,12 @@
 local WBP_RGBeginnerGuidanceOperateTip_C = UnLua.Class()
+
 function WBP_RGBeginnerGuidanceOperateTip_C:Construct()
   self.AppendText = ""
   self.OriginText = ""
   self.IsLeft = true
   self.IsWaitInit = false
 end
+
 function WBP_RGBeginnerGuidanceOperateTip_C:RefreshInfo(BeginnerGuidanceTipRowId, MissionId)
   self.BeginnerGuidanceTipRowId = BeginnerGuidanceTipRowId
   self.MissionId = MissionId
@@ -59,6 +61,7 @@ function WBP_RGBeginnerGuidanceOperateTip_C:RefreshInfo(BeginnerGuidanceTipRowId
     end
   end
 end
+
 function WBP_RGBeginnerGuidanceOperateTip_C:Hide()
   self.IsWaitInit = false
   if self:IsAnimationPlaying(self.Ani_out) then
@@ -68,6 +71,7 @@ function WBP_RGBeginnerGuidanceOperateTip_C:Hide()
   self.IsInitiativeStop = false
   self:PlayAnimationForward(self.Ani_out)
 end
+
 function WBP_RGBeginnerGuidanceOperateTip_C:OnAnimationFinished(Animation)
   if Animation == self.Ani_in then
     if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TimeoutAutoHideTimer) then
@@ -99,4 +103,5 @@ function WBP_RGBeginnerGuidanceOperateTip_C:OnAnimationFinished(Animation)
     EventSystem.Invoke(EventDef.BeginnerGuide.OnBeginnerMissionFinished, self.MissionId)
   end
 end
+
 return WBP_RGBeginnerGuidanceOperateTip_C

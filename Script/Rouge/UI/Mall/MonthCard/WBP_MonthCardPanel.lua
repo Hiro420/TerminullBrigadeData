@@ -7,23 +7,28 @@ local TopupData = require("Modules.Topup.TopupData")
 local MonthCardData = require("Modules.MonthCard.MonthCardData")
 local TopupHandler = require("Protocol.Topup.TopupHandler")
 local WBP_MonthCardPanel = Class(ViewBase)
+
 function WBP_MonthCardPanel:BindClickHandler()
   self.Btn_MonthCardPack.OnClicked:Add(self, self.BindOnMonthCardPackButtonClicked)
   self.Btn_MonthCardPack.OnHovered:Add(self, self.BindOnMonthCardPackButtonHovered)
   self.Btn_MonthCardPack.OnUnhovered:Add(self, self.BindOnMonthCardPackButtonUnhovered)
 end
+
 function WBP_MonthCardPanel:UnBindClickHandler()
   self.Btn_MonthCardPack.OnClicked:Remove(self, self.BindOnMonthCardPackButtonClicked)
   self.Btn_MonthCardPack.OnHovered:Remove(self, self.BindOnMonthCardPackButtonHovered)
   self.Btn_MonthCardPack.OnUnhovered:Remove(self, self.BindOnMonthCardPackButtonUnhovered)
 end
+
 function WBP_MonthCardPanel:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function WBP_MonthCardPanel:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_MonthCardPanel:OnShow(...)
   self:PlayAnimationForward(self.Ani_in)
   self:RefreshMonthCardItem()
@@ -37,6 +42,7 @@ function WBP_MonthCardPanel:OnShow(...)
     self.RGStateController_Region:ChangeStatus("default")
   end
 end
+
 function WBP_MonthCardPanel:RefreshMonthCardItem(...)
   local AllProductIdList = MonthCardData:GetMonthCardProductIdList()
   table.sort(AllProductIdList, function(a, b)
@@ -61,6 +67,7 @@ function WBP_MonthCardPanel:RefreshMonthCardItem(...)
   local MonthCardPackPriceStr = TopupData:GetProductDisplayPrice(MonthCardPackId)
   self.Txt_MonthPackCurrentPrice:SetText(MonthCardPackPriceStr)
 end
+
 function WBP_MonthCardPanel:RefreshMonthCardDescList(...)
   local AllProductIdList = MonthCardData:GetMonthCardProductIdList()
   local MonthCardInfo = MonthCardData:GetMonthCardInfoByRoleId(DataMgr.GetUserId())
@@ -81,6 +88,7 @@ function WBP_MonthCardPanel:RefreshMonthCardDescList(...)
   end
   HideOtherItem(self.Scroll_MonthCardList, Index)
 end
+
 function WBP_MonthCardPanel:BindOnMonthCardPackButtonClicked(...)
   local MonthCardPackId = MonthCardData:GetMonthCardPackId()
   print("WBP_MonthCardPanel:BindOnMonthCardPackButtonClicked MonthCardPackId:", MonthCardPackId)
@@ -89,10 +97,13 @@ function WBP_MonthCardPanel:BindOnMonthCardPackButtonClicked(...)
   end
   TopupHandler:RequestBuyMisdasProduct(MonthCardPackId, 1)
 end
+
 function WBP_MonthCardPanel:BindOnMonthCardPackButtonHovered(...)
 end
+
 function WBP_MonthCardPanel:BindOnMonthCardPackButtonUnhovered(...)
 end
+
 function WBP_MonthCardPanel:BindOnUpdateRolesMonthCardInfo(RoleIdList)
   if not table.Contain(RoleIdList, DataMgr.GetUserId()) then
     return
@@ -100,8 +111,10 @@ function WBP_MonthCardPanel:BindOnUpdateRolesMonthCardInfo(RoleIdList)
   self:RefreshMonthCardItem()
   self:RefreshMonthCardDescList()
 end
+
 function WBP_MonthCardPanel:OnHide()
   EventSystem.RemoveListenerNew(EventDef.MonthCard.OnUpdateRolesMonthCardInfo, self, self.BindOnUpdateRolesMonthCardInfo)
   UIConsoleUtil.UpdateConsoleStoreUIVisible(false)
 end
+
 return WBP_MonthCardPanel

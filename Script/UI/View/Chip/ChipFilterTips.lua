@@ -1,8 +1,11 @@
 local ChipFilterTips = UnLua.Class()
+
 function ChipFilterTips:Construct()
 end
+
 function ChipFilterTips:Destruct()
 end
+
 function ChipFilterTips:InitChipFilterTips(ChipFilterTipsFrom)
   self.RGToggleGroupFilterRule.OnCheckStateChanged:Add(self, self.OnFilterRuleChanged)
   self.RGToggleGroupFilterType.OnCheckStateChanged:Add(self, self.OnFilterTypeChanged)
@@ -27,6 +30,7 @@ function ChipFilterTips:InitChipFilterTips(ChipFilterTipsFrom)
   self.RGToggleGroupFilterRule:SelectId(self.CurFilterData.RuleFilter)
   self.RGToggleGroupFilterType:SelectId(self.CurFilterData.TypeFilter)
 end
+
 function ChipFilterTips:UpdateAttrFilterList()
   local names = GetAllRowNames(DT.DT_AttributeModifyOp)
   local idxMain = 1
@@ -57,12 +61,14 @@ function ChipFilterTips:UpdateAttrFilterList()
   HideOtherItem(self.VerticalBoxMainAttr, idxMain)
   HideOtherItem(self.VerticalBoxSubAttr, idxSub)
 end
+
 function ChipFilterTips:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     UpdateVisibility(self, false)
     UpdateVisibility(self.AutoLoadPanel, false)
   end
 end
+
 function ChipFilterTips:Hide(bNotFadeOut)
   if bNotFadeOut then
     UpdateVisibility(self, false)
@@ -79,12 +85,15 @@ function ChipFilterTips:Hide(bNotFadeOut)
   self.BP_ButtonWithSoundClose.OnClicked:Remove(self, self.CloseClick)
   self.viewModel = nil
 end
+
 function ChipFilterTips:OnFilterRuleChanged(SelectId)
   self.CurFilterData.RuleFilter = SelectId
 end
+
 function ChipFilterTips:OnFilterTypeChanged(SelectId)
   self.CurFilterData.TypeFilter = SelectId
 end
+
 function ChipFilterTips:ConfirmClick()
   if self.viewModel then
     if self.ChipFilterTipsFrom == EChipViewState.Normal then
@@ -95,6 +104,7 @@ function ChipFilterTips:ConfirmClick()
     self:Hide()
   end
 end
+
 function ChipFilterTips:ResetClick()
   if self.viewModel then
     if self.ChipFilterTipsFrom == EChipViewState.Normal then
@@ -105,9 +115,11 @@ function ChipFilterTips:ResetClick()
     self:Hide()
   end
 end
+
 function ChipFilterTips:CloseClick()
   self:Hide()
 end
+
 function ChipFilterTips:SelectMainAttrFilter(bSelect, AttrId)
   if bSelect then
     local filterNum = 0
@@ -133,6 +145,7 @@ function ChipFilterTips:SelectMainAttrFilter(bSelect, AttrId)
   end
   return true
 end
+
 function ChipFilterTips:SelectSubAttrFilter(bSelect, AttrId)
   if bSelect then
     local filterNum = 0
@@ -158,16 +171,19 @@ function ChipFilterTips:SelectSubAttrFilter(bSelect, AttrId)
   end
   return true
 end
+
 function ChipFilterTips:GetMainAttrFilterSelectIdx(AttrId)
   if self.CurFilterData.MainAttrFilter and self.CurFilterData.MainAttrFilter[AttrId] then
     return self.CurFilterData.MainAttrFilter[AttrId]
   end
   return nil
 end
+
 function ChipFilterTips:GetSubAttrFilterSelectIdx(AttrId)
   if self.CurFilterData.SubAttrFilter and self.CurFilterData.SubAttrFilter[AttrId] then
     return self.CurFilterData.SubAttrFilter[AttrId]
   end
   return nil
 end
+
 return ChipFilterTips

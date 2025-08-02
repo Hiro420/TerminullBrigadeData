@@ -1,11 +1,14 @@
 local RoleSkinItem = UnLua.Class()
 local RedDotData = require("Modules.RedDot.RedDotData")
+
 function RoleSkinItem:Construct()
   self.WBP_Item.OnClicked:Add(self, self.OnSelectClick)
 end
+
 function RoleSkinItem:Destruct()
   self.WBP_Item.OnClicked:Remove(self, self.OnSelectClick)
 end
+
 function RoleSkinItem:OnListItemObjectSet(ListItemObj)
   UpdateVisibility(self.URGImageHover, false)
   UpdateVisibility(self.URGImageHover_1, false)
@@ -70,15 +73,19 @@ function RoleSkinItem:OnListItemObjectSet(ListItemObj)
   HideOtherItem(self.HorizontalBoxHeirloomLv, index)
   self.WBP_Item:SetSel(self.DataObj.bIsSelected)
 end
+
 function RoleSkinItem:BP_OnEntryReleased()
   self.WBP_RedDotView:ChangeRedDotId("")
   self.DataObj = nil
   self.WBP_Item:SetSel(false)
 end
+
 function RoleSkinItem:OnMouseEnter()
 end
+
 function RoleSkinItem:OnMouseLeave()
 end
+
 function RoleSkinItem:OnSelectClick()
   if not UE.RGUtil.IsUObjectValid(self.DataObj) then
     return
@@ -114,4 +121,5 @@ function RoleSkinItem:OnSelectClick()
   self.DataObj.bIsSelected = true
   self.WBP_Item:SetSel(true)
 end
+
 return RoleSkinItem

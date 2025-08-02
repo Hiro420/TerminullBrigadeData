@@ -1,4 +1,5 @@
 local WeaponSkinListItem = UnLua.Class()
+
 function WeaponSkinListItem:InitWeaponSkinListItem(WeaponSkinListData, WeaponResId, RGToggleGroupWeaponSkin, HeroId, ParentPanel)
   UpdateVisibility(self, true, true)
   self.WeaponResId = WeaponResId
@@ -25,19 +26,24 @@ function WeaponSkinListItem:InitWeaponSkinListItem(WeaponSkinListData, WeaponRes
   end
   HideOtherItem(self.WrapBoxWeaponSkin, showWeaponNum + 1)
 end
+
 function WeaponSkinListItem:CheckIsShow(SkinTb, IsUnlocked)
   if SkinTb.IsUnlockShow and not IsUnlocked then
     return false
   end
   return SkinTb.IsShow
 end
+
 function WeaponSkinListItem:Hide()
   UpdateVisibility(self, false)
 end
+
 function WeaponSkinListItem:OnMouseEnter(MyGeometry, MouseEvent)
   self.ParentPanel.EnterList = true
 end
+
 function WeaponSkinListItem:OnMouseLeave(MyGeometry, MouseEvent)
   self.ParentPanel.EnterList = false
 end
+
 return WeaponSkinListItem

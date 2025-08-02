@@ -5,6 +5,7 @@ local PuzzleData = require("Modules.Puzzle.PuzzleData")
 local PuzzleUpgrade = "ChipUpgrade"
 local PuzzleLock = "ChipLock"
 local PuzzleDiscard = "ChipDiscard"
+
 function WBP_GemItemTip:Show(GemId, InPackageInfo)
   self.GemId = GemId
   local PackageInfo = InPackageInfo
@@ -67,10 +68,12 @@ function WBP_GemItemTip:Show(GemId, InPackageInfo)
   end
   self:RefreshOperateVis()
 end
+
 function WBP_GemItemTip:ShowWithoutOperator(PuzzleId, InPackageInfo)
   self:Show(PuzzleId, InPackageInfo)
   self:HideOperateTip()
 end
+
 function WBP_GemItemTip:ListenInputEvent(IsInMainView)
   self.IsInMainView = IsInMainView
   if not IsListeningForInputAction(self, PuzzleDiscard, UE.EInputEvent.IE_Pressed) then
@@ -97,6 +100,7 @@ function WBP_GemItemTip:ListenInputEvent(IsInMainView)
   UpdateVisibility(self.Overlay_Upgrade, self.IsInMainView)
   UpdateVisibility(self.Overlay_EquipTip, self.IsInMainView)
 end
+
 function WBP_GemItemTip:BindOnDiscardKeyPressed(...)
   if not self.GemId then
     return
@@ -108,6 +112,7 @@ function WBP_GemItemTip:BindOnDiscardKeyPressed(...)
     GemHandler:RequestCancelLockOrDiscardGemToServer(self.GemId)
   end
 end
+
 function WBP_GemItemTip:BindOnLockKeyPressed(...)
   if not self.GemId then
     return
@@ -119,9 +124,11 @@ function WBP_GemItemTip:BindOnLockKeyPressed(...)
     GemHandler:RequestCancelLockOrDiscardGemToServer(self.GemId)
   end
 end
+
 function WBP_GemItemTip:BindOnUpgradeKeyPressed(...)
   UIMgr:Show(ViewID.UI_PuzzleDevelopMain, true, self.GemId, EPuzzleGemDevelopId.GemUpgrade)
 end
+
 function WBP_GemItemTip:BindOnUnEquipKeyPressed(...)
   if GemData:IsEquippedInPuzzle(self.GemId) then
     local EquipPuzzleId = GemData:GetGemEquippedPuzzleId(self.GemId)
@@ -138,6 +145,7 @@ function WBP_GemItemTip:BindOnUnEquipKeyPressed(...)
     end
   end
 end
+
 function WBP_GemItemTip:RefreshOperateVis()
   UpdateVisibility(self.Overlay_OperateTip, true)
   local PackageInfo = self.PackageInfo
@@ -150,9 +158,11 @@ function WBP_GemItemTip:RefreshOperateVis()
   UpdateVisibility(self.WBP_InteractTipWidgetDiscard, PackageInfo.state == EGemStatus.Normal)
   UpdateVisibility(self.WBP_InteractTipWidgetCancelDiscard, PackageInfo.state == EGemStatus.Discard)
 end
+
 function WBP_GemItemTip:HideOperateTip(...)
   UpdateVisibility(self.Overlay_OperateTip, false)
 end
+
 function WBP_GemItemTip:Hide()
   UpdateVisibility(self, false)
   if IsListeningForInputAction(self, PuzzleDiscard, UE.EInputEvent.IE_Pressed) then
@@ -166,7 +176,9 @@ function WBP_GemItemTip:Hide()
   end
   self.WBP_InteractTipWidgetUnEquip:UnBindInteractAndClickEvent(self, self.BindOnUnEquipKeyPressed)
 end
+
 function WBP_GemItemTip:Destruct(...)
   self:Hide()
 end
+
 return WBP_GemItemTip

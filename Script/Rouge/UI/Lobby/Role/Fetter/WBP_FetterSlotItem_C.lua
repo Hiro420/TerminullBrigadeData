@@ -1,9 +1,11 @@
 local WBP_FetterSlotItem_C = UnLua.Class()
+
 function WBP_FetterSlotItem_C:Construct()
   self.Btn_UnLock.OnClicked:Add(self, WBP_FetterSlotItem_C.BindOnUnLockButtonClicked)
   EventSystem.AddListener(self, EventDef.Lobby.FetterSlotItemClicked, WBP_FetterSlotItem_C.BindOnFetterSlotItemClicked)
   EventSystem.AddListener(self, EventDef.Lobby.FetterSlotStatusUpdate, WBP_FetterSlotItem_C.BindOnFetterSlotStatusUpdate)
 end
+
 function WBP_FetterSlotItem_C:BindOnUnLockButtonClicked()
   if self.CanNotClick then
     return
@@ -17,6 +19,7 @@ function WBP_FetterSlotItem_C:BindOnUnLockButtonClicked()
     EventSystem.Invoke(EventDef.Lobby.FetterSlotItemClicked, self.SlotId, true)
   end
 end
+
 function WBP_FetterSlotItem_C:Show(SlotId, MainHeroId, CanNotClick)
   self.SlotId = SlotId
   self.MainHeroId = MainHeroId
@@ -28,6 +31,7 @@ function WBP_FetterSlotItem_C:Show(SlotId, MainHeroId, CanNotClick)
   EventSystem.AddListener(self, EventDef.Lobby.FetterHeroInfoUpdate, WBP_FetterSlotItem_C.BindOnFetterHeroInfoUpdate)
   EventSystem.AddListener(self, EventDef.Lobby.FetterHeroBeginOrEndDrag, WBP_FetterSlotItem_C.BindOnFetterHeroBeginOrEndDrag)
 end
+
 function WBP_FetterSlotItem_C:RefreshStatus()
   local SpriteImg = self.UnlockImg
   self.Img_HeroIcon:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -89,6 +93,7 @@ function WBP_FetterSlotItem_C:RefreshStatus()
   self.Img_LineQuality:SetColorAndOpacity(LineColor)
   self.Img_BottomQuality:SetColorAndOpacity(BottomColor)
 end
+
 function WBP_FetterSlotItem_C:GetCurSlotHeroId()
   local FetterHeroInfo = DataMgr.GetFetterHeroInfoById(self.MainHeroId)
   local SlotHeroId = 0
@@ -101,14 +106,17 @@ function WBP_FetterSlotItem_C:GetCurSlotHeroId()
   end
   return SlotHeroId
 end
+
 function WBP_FetterSlotItem_C:IsSlotUnlock()
   local HeroInfo = DataMgr.GetMyHeroInfo()
   local SlotStatus = HeroInfo.slots[self.SlotId]
   return SlotStatus and SlotStatus == TableEnums.ENUMSlotStatus.Open or false
 end
+
 function WBP_FetterSlotItem_C:BindOnFetterHeroInfoUpdate()
   self:RefreshStatus()
 end
+
 function WBP_FetterSlotItem_C:BindOnFetterHeroBeginOrEndDrag(IsBegin)
   if not self:IsSlotUnlock() or 0 == self:GetCurSlotHeroId() then
     return
@@ -124,11 +132,13 @@ function WBP_FetterSlotItem_C:BindOnFetterHeroBeginOrEndDrag(IsBegin)
     self.Img_Status:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_FetterSlotItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   EventSystem.RemoveListener(EventDef.Lobby.FetterHeroInfoUpdate, WBP_FetterSlotItem_C.BindOnFetterHeroInfoUpdate, self)
   EventSystem.RemoveListener(EventDef.Lobby.FetterHeroBeginOrEndDrag, WBP_FetterSlotItem_C.BindOnFetterHeroBeginOrEndDrag, self)
 end
+
 function WBP_FetterSlotItem_C:OnDragEnter(MyGeometry, PointerEvent, Operation)
   if not self:IsSlotUnlock() then
     return
@@ -136,6 +146,7 @@ function WBP_FetterSlotItem_C:OnDragEnter(MyGeometry, PointerEvent, Operation)
   self:ChangeHoverImgVisibility(true)
   EventSystem.Invoke(EventDef.Lobby.FetterHeroDragCompare, true, self:GetCurSlotHeroId())
 end
+
 function WBP_FetterSlotItem_C:OnDragLeave(PointerEvent, Operation)
   if not self:IsSlotUnlock() then
     return
@@ -144,6 +155,7 @@ function WBP_FetterSlotItem_C:OnDragLeave(PointerEvent, Operation)
   local CurDragId = Operation.Payload.HeroId
   EventSystem.Invoke(EventDef.Lobby.FetterHeroDragCompare, false, 0)
 end
+
 function WBP_FetterSlotItem_C:OnDrop(MyGeometry, PointerEvent, Operation)
   Operation.Payload:UpdateDragStatusVis(false)
   if not self:IsSlotUnlock() then
@@ -156,6 +168,7 @@ function WBP_FetterSlotItem_C:OnDrop(MyGeometry, PointerEvent, Operation)
   Operation.Payload:EquipFetterHeroByPos(self.SlotId)
   return true
 end
+
 function WBP_FetterSlotItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   self.IsHover = true
   self:ChangeHoverImgVisibility(true)
@@ -166,6 +179,7 @@ function WBP_FetterSlotItem_C:OnMouseEnter(MyGeometry, MouseEvent)
     end
   end
 end
+
 function WBP_FetterSlotItem_C:OnMouseLeave(MouseEvent)
   self.IsHover = false
   self:ChangeHoverImgVisibility(false)
@@ -176,6 +190,7 @@ function WBP_FetterSlotItem_C:OnMouseLeave(MouseEvent)
     end
   end
 end
+
 function WBP_FetterSlotItem_C:ChangeHoverImgVisibility(IsVis)
   if IsVis then
     self.Img_Hover:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
@@ -183,6 +198,7 @@ function WBP_FetterSlotItem_C:ChangeHoverImgVisibility(IsVis)
     self.Img_Hover:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 function WBP_FetterSlotItem_C:BindOnFetterSlotItemClicked(SlotId)
   if self.SlotId == SlotId then
     self.Img_Selected:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
@@ -190,12 +206,15 @@ function WBP_FetterSlotItem_C:BindOnFetterSlotItemClicked(SlotId)
     self.Img_Selected:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_FetterSlotItem_C:BindOnFetterSlotStatusUpdate()
   self:RefreshStatus()
 end
+
 function WBP_FetterSlotItem_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.FetterSlotItemClicked, WBP_FetterSlotItem_C.BindOnFetterSlotItemClicked, self)
   EventSystem.RemoveListener(EventDef.Lobby.FetterSlotStatusUpdate, WBP_FetterSlotItem_C.BindOnFetterSlotStatusUpdate, self)
   self:Hide()
 end
+
 return WBP_FetterSlotItem_C

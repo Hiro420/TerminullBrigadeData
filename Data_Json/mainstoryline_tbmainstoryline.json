@@ -1,0 +1,37 @@
+[
+  {
+    "id": 3,
+    "name": "上线第一版主线",
+    "desc": "上线第一版主线",
+    "icon": "",
+    "taskgrouplist": [
+      3001,
+      3002
+    ],
+    "centralgroup": 3003
+  },
+  {
+    "id": 2,
+    "name": "2周年庆主线",
+    "desc": "2周年庆主线",
+    "icon": "",
+    "taskgrouplist": [
+      4001,
+      4002,
+      4003,
+      3004
+    ],
+    "centralgroup": 4005
+  },
+  {
+    "id": 1,
+    "name": "LO配置版主线",
+    "desc": "L0测试版主线",
+    "icon": "",
+    "taskgrouplist": [
+      4001,
+      5001
+    ],
+    "centralgroup": 0
+  }
+]

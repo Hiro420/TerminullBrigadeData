@@ -3,6 +3,7 @@ local RapidJson = require("rapidjson")
 local ContactPersonHandler = require("Protocol.ContactPerson.ContactPersonHandler")
 local ContactPersonData = require("Modules.ContactPerson.ContactPersonData")
 local MsgIntervalTime = 3600
+
 function ContactPersonManager:Ctor()
   self.ContactPersonListSaveGameName = "ContactPersonListSaveGame"
   self.SaveGame = nil
@@ -10,6 +11,7 @@ function ContactPersonManager:Ctor()
   self.SessionUpdateRegistered = false
   self.PendingTeamNeedJoin = false
 end
+
 function ContactPersonManager:OnInit()
   self:InitContactPersonListSaveGame()
   EventSystem.AddListener(self, EventDef.WSMessage.SocialAskAgree, ContactPersonManager.BindOnSocialAskAgreeFriend)
@@ -18,6 +20,7 @@ function ContactPersonManager:OnInit()
   EventSystem.AddListener(self, EventDef.WSMessage.SocialRemove, ContactPersonManager.BindOnSocialRemoveFriend)
   EventSystem.AddListener(self, EventDef.WSMessage.PersonalMsg, ContactPersonManager.BindOnPersonalChatMsg)
 end
+
 function ContactPersonManager:BindOnSocialAskAgreeFriend(Json)
   print("BindOnSocialAskAgreeFriend", Json)
   local JsonTable = RapidJson.decode(Json)
@@ -25,20 +28,24 @@ function ContactPersonManager:BindOnSocialAskAgreeFriend(Json)
   ContactPersonHandler:RequestGetApplyListToServer()
   ContactPersonHandler:RequestGetBlackListToServer()
 end
+
 function ContactPersonManager:BindOnSocialAskRejectFriend(Json)
   print("BindOnSocialAskRejectFriend", Json)
   local JsonTable = RapidJson.decode(Json)
 end
+
 function ContactPersonManager:BindOnSocialAskAddFriend(Json)
   print("BindOnSocialAskAddFriend", Json)
   local JsonTable = RapidJson.decode(Json)
   ContactPersonHandler:RequestGetApplyListToServer()
 end
+
 function ContactPersonManager:BindOnSocialRemoveFriend(Json)
   print("BindOnSocialRemoveFriend", Json)
   local JsonTable = RapidJson.decode(Json)
   ContactPersonHandler:RequestGetFriendListToServer()
 end
+
 function ContactPersonManager:BindOnPersonalChatMsg(MsgJson)
   print("ContactPersonManager:BindOnPersonalChatMsg", MsgJson)
   local Response = RapidJson.decode(MsgJson)
@@ -56,6 +63,7 @@ function ContactPersonManager:BindOnPersonalChatMsg(MsgJson)
   ContactPersonData:AddPersonalChatInfo(tostring(ReceiverId), Response.msg, tostring(Response.sender) ~= DataMgr.GetUserId())
   EventSystem.Invoke(EventDef.ContactPerson.OnPersonalChatInfoUpdate, tostring(ReceiverId), tostring(Response.sender) == DataMgr.GetUserId())
 end
+
 function ContactPersonManager:OnShutdown()
   self:Clear()
   EventSystem.RemoveListener(EventDef.WSMessage.SocialAskAgree, ContactPersonManager.BindOnSocialAskAgreeFriend, self)
@@ -70,6 +78,7 @@ function ContactPersonManager:OnShutdown()
     end
   end
 end
+
 function ContactPersonManager:OnSessionRoleUpdated(FromUserId, RoleId, TeamId)
   print("ContactPersonManager:OnSessionRoleUpdated", FromUserId, RoleId, TeamId)
   if LogicTeam.IsFullTeam() then
@@ -101,6 +110,7 @@ function ContactPersonManager:OnSessionRoleUpdated(FromUserId, RoleId, TeamId)
     })
   end
 end
+
 function ContactPersonManager:CheckSessionUpdateDelegate()
   if not UE.URGPlayerSessionSubsystem then
     return
@@ -114,6 +124,7 @@ function ContactPersonManager:CheckSessionUpdateDelegate()
     end
   end
 end
+
 function ContactPersonManager:SendInviteOrApplyTeamRequestPlatformConsole(TargetPlayerInfo, InviteTeamWay)
   print("SendInviteOrApplyTeamRequestPlatformConsole: ", TargetPlayerInfo)
   local BasicInfo = DataMgr.GetBasicInfo()
@@ -148,6 +159,7 @@ function ContactPersonManager:SendInviteOrApplyTeamRequestPlatformConsole(Target
     end
   end
 end
+
 function ContactPersonManager:SendInviteOrApplyTeamRequest(TargetPlayerInfo, InviteTeamWay)
   local BasicInfo = DataMgr.GetBasicInfo()
   if BasicInfo.onlineStatus == OnlineStatus.OnlineStatusMatch then
@@ -214,6 +226,7 @@ function ContactPersonManager:SendInviteOrApplyTeamRequest(TargetPlayerInfo, Inv
     end
   end
 end
+
 function ContactPersonManager:InitContactPersonListSaveGame()
   if not UE.UGameplayStatics.DoesSaveGameExist(self.ContactPersonListSaveGameName, 0) then
     local SaveGameObject = UE.UGameplayStatics.CreateSaveGameObject(UE.UContactPersonListSaveGame:StaticClass())
@@ -224,15 +237,18 @@ function ContactPersonManager:InitContactPersonListSaveGame()
   self.SaveGame = UE.UGameplayStatics.LoadGameFromSlot(self.ContactPersonListSaveGameName, 0)
   self.SaveGameRef = UnLua.Ref(self.SaveGame)
 end
+
 function ContactPersonManager:GetContactPersonSaveGame()
   local SaveGame = UE.UGameplayStatics.LoadGameFromSlot(self.ContactPersonListSaveGameName, 0)
   return SaveGame
 end
+
 function ContactPersonManager:GetRecentPlayerList(RoleId)
   local SaveGame = self:GetContactPersonSaveGame()
   local TargetRecentListStruct = SaveGame.AllPlayerRecentPlayerList:Find(RoleId)
   return TargetRecentListStruct and TargetRecentListStruct.RecentPlayerList:ToTable() or {}
 end
+
 function ContactPersonManager:SaveRecentPlayerList(RoleId, TeamIdList)
   local SaveGame = self:GetContactPersonSaveGame()
   if not SaveGame then
@@ -261,6 +277,7 @@ function ContactPersonManager:SaveRecentPlayerList(RoleId, TeamIdList)
   end
   UE.UGameplayStatics.SaveGameToSlot(SaveGame, self.ContactPersonListSaveGameName, 0)
 end
+
 function ContactPersonManager:InitPersonalHistoryChatInfo(RoleId)
   local SaveGame = self:GetContactPersonSaveGame()
   if not SaveGame then
@@ -300,6 +317,7 @@ function ContactPersonManager:InitPersonalHistoryChatInfo(RoleId)
     end
   end
 end
+
 function ContactPersonManager:AddPlayerHistoryChatInfo(RoleId, InChatInfo)
   local SaveGame = self:GetContactPersonSaveGame()
   if not SaveGame then
@@ -309,6 +327,7 @@ function ContactPersonManager:AddPlayerHistoryChatInfo(RoleId, InChatInfo)
   SaveGame:AddPlayerChatInfo(DataMgr.GetUserId(), RoleId, InChatInfo)
   UE.UGameplayStatics.SaveGameToSlot(SaveGame, self.ContactPersonListSaveGameName, 0)
 end
+
 function ContactPersonManager:RemovePlayerHistoryChatInfo(RoleId)
   local SaveGame = self:GetContactPersonSaveGame()
   if not SaveGame then
@@ -318,6 +337,7 @@ function ContactPersonManager:RemovePlayerHistoryChatInfo(RoleId)
   SaveGame:RemovePlayerChatInfo(DataMgr.GetUserId(), RoleId)
   UE.UGameplayStatics.SaveGameToSlot(SaveGame, self.ContactPersonListSaveGameName, 0)
 end
+
 function ContactPersonManager:Clear()
   if self.SaveGame and self.SaveGame:IsValid() then
     UnLua.Unref(self.SaveGame)
@@ -325,4 +345,5 @@ function ContactPersonManager:Clear()
     self.SaveGameRef = nil
   end
 end
+
 return ContactPersonManager

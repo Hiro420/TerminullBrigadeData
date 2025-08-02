@@ -1,4 +1,5 @@
 local BP_Pickup_StoryPiece_C = UnLua.Class()
+
 function BP_Pickup_StoryPiece_C:ReceiveBeginPlay()
   self.Overridden.ReceiveBeginPlay(self)
   if UE.UKismetSystemLibrary.IsServer(self) then
@@ -6,6 +7,7 @@ function BP_Pickup_StoryPiece_C:ReceiveBeginPlay()
   end
   self.MarkId = UE.URGBlueprintLibrary.TriggerMark(self, self, "StoryPiece")
 end
+
 function BP_Pickup_StoryPiece_C:ReceiveEndPlay(EndPlayReason)
   self.Overridden.ReceiveEndPlay(self, EndPlayReason)
   if UE.UKismetSystemLibrary.IsServer(self) then
@@ -13,6 +15,7 @@ function BP_Pickup_StoryPiece_C:ReceiveEndPlay(EndPlayReason)
   end
   UE.URGBlueprintLibrary.RemoveMarkById(self, self.MarkId)
 end
+
 function BP_Pickup_StoryPiece_C:NotifyPickup(Picker)
   self.Overridden.NotifyPickup(self, Picker)
   if UE.RGUtil.IsEditor() or not UE.UKismetSystemLibrary.IsDedicatedServer(self) then
@@ -22,4 +25,5 @@ function BP_Pickup_StoryPiece_C:NotifyPickup(Picker)
     end
   end
 end
+
 return BP_Pickup_StoryPiece_C

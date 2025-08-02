@@ -1,6 +1,8 @@
 local WBP_SettlementBattleLagacyInscription_C = UnLua.Class()
+
 function WBP_SettlementBattleLagacyInscription_C:Construct()
 end
+
 function WBP_SettlementBattleLagacyInscription_C:InitSettlementBattleLagacyInscription(CurBattleLagacyData)
   local inscriptionId = tonumber(CurBattleLagacyData.BattleLagacyId)
   if inscriptionId > 0 then
@@ -13,6 +15,8 @@ function WBP_SettlementBattleLagacyInscription_C:InitSettlementBattleLagacyInscr
     end
   end
 end
+
 function WBP_SettlementBattleLagacyInscription_C:Destruct()
 end
+
 return WBP_SettlementBattleLagacyInscription_C

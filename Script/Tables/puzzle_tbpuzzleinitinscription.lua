@@ -764,6 +764,150 @@ local puzzle_tbpuzzleinitinscription = {
     InscriptionWeight = {
       {key = 5021204, value = 10}
     }
+  },
+  [11010] = {
+    ID = 11010,
+    InscriptionWeight = {
+      {key = 5321010, value = 10}
+    }
+  },
+  [11011] = {
+    ID = 11011,
+    InscriptionWeight = {
+      {key = 5321011, value = 10}
+    }
+  },
+  [11000] = {
+    ID = 11000,
+    InscriptionWeight = {
+      {key = 5321000, value = 10}
+    }
+  },
+  [11001] = {
+    ID = 11001,
+    InscriptionWeight = {
+      {key = 5321001, value = 10}
+    }
+  },
+  [10011] = {
+    ID = 10011,
+    InscriptionWeight = {
+      {key = 5320011, value = 10}
+    }
+  },
+  [11020] = {
+    ID = 11020,
+    InscriptionWeight = {
+      {key = 5321020, value = 10}
+    }
+  },
+  [10007] = {
+    ID = 10007,
+    InscriptionWeight = {
+      {key = 5320007, value = 10}
+    }
+  },
+  [11021] = {
+    ID = 11021,
+    InscriptionWeight = {
+      {key = 5321021, value = 10}
+    }
+  },
+  [10004] = {
+    ID = 10004,
+    InscriptionWeight = {
+      {key = 5320004, value = 10}
+    }
+  },
+  [10009] = {
+    ID = 10009,
+    InscriptionWeight = {
+      {key = 5320009, value = 10}
+    }
+  },
+  [11030] = {
+    ID = 11030,
+    InscriptionWeight = {
+      {key = 5321030, value = 10}
+    }
+  },
+  [10006] = {
+    ID = 10006,
+    InscriptionWeight = {
+      {key = 5320006, value = 10}
+    }
+  },
+  [11031] = {
+    ID = 11031,
+    InscriptionWeight = {
+      {key = 5321031, value = 10}
+    }
+  },
+  [11060] = {
+    ID = 11060,
+    InscriptionWeight = {
+      {key = 5321060, value = 10}
+    }
+  },
+  [10010] = {
+    ID = 10010,
+    InscriptionWeight = {
+      {key = 5320010, value = 10}
+    }
+  },
+  [11061] = {
+    ID = 11061,
+    InscriptionWeight = {
+      {key = 5321061, value = 10}
+    }
+  },
+  [10012] = {
+    ID = 10012,
+    InscriptionWeight = {
+      {key = 5320012, value = 10}
+    }
+  },
+  [11040] = {
+    ID = 11040,
+    InscriptionWeight = {
+      {key = 5321040, value = 10}
+    }
+  },
+  [10001] = {
+    ID = 10001,
+    InscriptionWeight = {
+      {key = 5320001, value = 10}
+    }
+  },
+  [10008] = {
+    ID = 10008,
+    InscriptionWeight = {
+      {key = 5320008, value = 10}
+    }
+  },
+  [11041] = {
+    ID = 11041,
+    InscriptionWeight = {
+      {key = 5321041, value = 10}
+    }
+  },
+  [10003] = {
+    ID = 10003,
+    InscriptionWeight = {
+      {key = 5320003, value = 10}
+    }
+  },
+  [10014] = {
+    ID = 10014,
+    InscriptionWeight = {
+      {key = 5320014, value = 10}
+    }
+  },
+  [10005] = {
+    ID = 10005,
+    InscriptionWeight = {
+      {key = 5320005, value = 10}
+    }
   }
 }
 return puzzle_tbpuzzleinitinscription

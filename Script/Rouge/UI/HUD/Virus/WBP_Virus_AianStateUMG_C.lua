@@ -1,4 +1,5 @@
 local WBP_Virus_AianStateUMG_C = UnLua.Class()
+
 function WBP_Virus_AianStateUMG_C:InitInfo(OwnerActor)
   self.OwningActor = OwnerActor
   if not self.OwningActor then
@@ -12,6 +13,7 @@ function WBP_Virus_AianStateUMG_C:InitInfo(OwnerActor)
   self.EndColor = UE.FLinearColor(0.184, 0.224, 1.0, 1.0)
   self:OnVirusColorChange(self.CurrentColor)
 end
+
 function WBP_Virus_AianStateUMG_C:OnVirusColorChange(ColorProgress)
   local bIncrease = ColorProgress - self.CurrentColor > 0
   self.CurrentColor = ColorProgress
@@ -42,10 +44,13 @@ function WBP_Virus_AianStateUMG_C:OnVirusColorChange(ColorProgress)
     UpdateVisibility(self.CanvasPanel_Blue_turns_red, true)
   end
 end
+
 function WBP_Virus_AianStateUMG_C:ShowPanel()
   UpdateVisibility(self.CanvasPanel_Root, true)
 end
+
 function WBP_Virus_AianStateUMG_C:HidePanel()
   UpdateVisibility(self.CanvasPanel_Root, false)
 end
+
 return WBP_Virus_AianStateUMG_C

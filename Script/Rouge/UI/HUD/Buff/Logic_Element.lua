@@ -1,4 +1,5 @@
 LogicElement = LogicElement or {IsInit = false}
+
 function LogicElement.Init()
   if LogicElement.IsInit then
     print("LogicElement \229\183\178\229\136\157\229\167\139\229\140\150")
@@ -9,6 +10,7 @@ function LogicElement.Init()
   LogicElement.AllActorElementList = {}
   LogicElement:BindDelegate()
 end
+
 function LogicElement:BindDelegate()
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   if not PC then
@@ -25,6 +27,7 @@ function LogicElement:BindDelegate()
   ElementComp.OnTriggerElement:Add(GameInstance, LogicElement.BindOnTriggerElement)
   ElementComp.OnStopElement:Add(GameInstance, LogicElement.BindOnStopElement)
 end
+
 function LogicElement:BindOnTriggerElement(BuffId, Params)
   print("BindOnTriggerElement", BuffId, Params.Target, BuffId.TypeA, BuffId.TypeB, Params.RemainTime)
   if LogicElement.AllActorElementList[Params.Target] then
@@ -59,6 +62,7 @@ function LogicElement:BindOnTriggerElement(BuffId, Params)
   end
   EventSystem.Invoke(EventDef.Battle.ElementChanged, BuffId, Params, true)
 end
+
 function LogicElement:BindOnStopElement(BuffId, Params)
   print("BindOnStopElement", BuffId.TypeA, BuffId.TypeB, Params.Target)
   if not Params.Target then
@@ -85,6 +89,7 @@ function LogicElement:BindOnStopElement(BuffId, Params)
   end
   EventSystem.Invoke(EventDef.Battle.ElementChanged, BuffId, Params, false)
 end
+
 function LogicElement.Clear()
   LogicElement.AllActorElementList = {}
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)

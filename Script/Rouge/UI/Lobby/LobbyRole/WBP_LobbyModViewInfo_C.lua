@@ -1,14 +1,18 @@
 local WBP_LobbyModViewInfo_C = UnLua.Class()
+
 function WBP_LobbyModViewInfo_C:OnMouseEnter(MyGeometry, MouseEvent)
   self.Image_ModHover:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_LobbyModViewInfo_C:OnMouseLeave(MouseEvent)
   self.Image_ModHover:SetVisibility(UE.ESlateVisibility.Hidden)
 end
+
 local CostTextColor = {
   White = UE.FLinearColor(1.0, 1.0, 1.0, 1.0),
   Yellow = UE.FLinearColor(1, 0.300544, 0.029557, 1.0)
 }
+
 function WBP_LobbyModViewInfo_C:InitModInfo(bIsLegend, ModIDList, ChooseType, ModType)
   self.ModIDList = ModIDList
   local modLength = #ModIDList
@@ -51,6 +55,7 @@ function WBP_LobbyModViewInfo_C:InitModInfo(bIsLegend, ModIDList, ChooseType, Mo
   end
   self:UpdateModInfo()
 end
+
 function WBP_LobbyModViewInfo_C:UpdateModInfo()
   if self.modComponent then
     self.modLevel = self.modComponent:GetMODLevel(self.ModID, self.ChooseType, self.ModType) + 1
@@ -74,6 +79,7 @@ function WBP_LobbyModViewInfo_C:UpdateModInfo()
     end
   end
 end
+
 function WBP_LobbyModViewInfo_C:GetToolTipWidget()
   if self.ModID > 0 then
     local widgetClass = UE.UClass.Load("/Game/Rouge/UI/Lobby/LobbyRole/Mod/WBP_LobbyModViewTip.WBP_LobbyModViewTip_C")
@@ -92,4 +98,5 @@ function WBP_LobbyModViewInfo_C:GetToolTipWidget()
     return nil
   end
 end
+
 return WBP_LobbyModViewInfo_C

@@ -4,6 +4,7 @@ LogicTaskPanel = LogicTaskPanel or {
   TaskInfo = OrderedMap.New(),
   TaskStatus = {}
 }
+
 function LogicTaskPanel.UpdateDifferenceData(TaskInfo, bHall)
   for index, Value in ipairs(TaskInfo) do
     local TaskValue = Value
@@ -42,6 +43,7 @@ function LogicTaskPanel.UpdateDifferenceData(TaskInfo, bHall)
     end
   end
 end
+
 function LogicTaskPanel.ShowMainTaskInfo(TaskValue)
   local LevelSubSystem = UE.URGGameLevelSystem.GetInstance(GameInstance)
   local LevelId = 0
@@ -70,10 +72,12 @@ function LogicTaskPanel.ShowMainTaskInfo(TaskValue)
     end
   end
 end
+
 function LogicTaskPanel.ClearUp()
   LogicTaskPanel.TaskInfo = OrderedMap.New()
   LogicTaskPanel.TaskStatus = {}
 end
+
 function LogicTaskPanel.UpdateCustomTaskData(CustomTaskInfoList, TriggerUpdatePanel)
   for index, value in ipairs(CustomTaskInfoList) do
     local TaskValue = value
@@ -87,6 +91,7 @@ function LogicTaskPanel.UpdateCustomTaskData(CustomTaskInfoList, TriggerUpdatePa
     EventSystem.Invoke(EventDef.Task.UpdateCustomTask)
   end
 end
+
 function LogicTaskPanel.RemoveCustomTaskData(CustomTaskDataList)
   for index, CustomTaskData in ipairs(CustomTaskDataList) do
     if LogicTaskPanel.TaskInfo[CustomTaskData.EventId] then
@@ -95,6 +100,7 @@ function LogicTaskPanel.RemoveCustomTaskData(CustomTaskDataList)
   end
   EventSystem.Invoke(EventDef.Task.UpdateCustomTask)
 end
+
 function LogicTaskPanel.ClearRiftTask()
   local taskInfoKeyList = {}
   for k, v in pairs(LogicTaskPanel.TaskInfo) do
@@ -107,6 +113,7 @@ function LogicTaskPanel.ClearRiftTask()
   end
   EventSystem.Invoke(EventDef.Task.UpdateCustomTask)
 end
+
 function LogicTaskPanel.CreatCustomTaskData(EventId, GamePlayTaskRowName, TimeOffUTCStamp, ...)
   return {
     EventId = EventId,

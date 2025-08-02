@@ -6,28 +6,25 @@ local BeginnerGuideData = require("Modules.Beginner.BeginnerGuideData")
 local WBP_MainModeSelectPanel = Class(ViewBase)
 local OpenSettingsKeyName = "OpenSettings"
 local EscKeyName = "PauseGame"
+
 function WBP_MainModeSelectPanel:BindClickHandler()
   self.EscFunctionalBtn.OnMainButtonClicked:Add(self, self.BindOnEscKeyPressed)
-  self.SettingsFunctionalBtn.OnMainButtonClicked:Add(self, self.BindOnOpenSettingsKeyPressed)
 end
+
 function WBP_MainModeSelectPanel:UnBindClickHandler()
   self.EscFunctionalBtn.OnMainButtonClicked:Remove(self, self.BindOnEscKeyPressed)
-  self.SettingsFunctionalBtn.OnMainButtonClicked:Remove(self, self.BindOnOpenSettingsKeyPressed)
 end
+
 function WBP_MainModeSelectPanel:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function WBP_MainModeSelectPanel:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_MainModeSelectPanel:OnShow(...)
-  if not IsListeningForInputAction(self, OpenSettingsKeyName) then
-    ListenForInputAction(OpenSettingsKeyName, UE.EInputEvent.IE_Pressed, true, {
-      self,
-      self.BindOnOpenSettingsKeyPressed
-    })
-  end
   if not IsListeningForInputAction(self, EscKeyName) then
     ListenForInputAction(EscKeyName, UE.EInputEvent.IE_Pressed, true, {
       self,
@@ -41,18 +38,21 @@ function WBP_MainModeSelectPanel:OnShow(...)
   self:PlayAnimation(self.Ani_in, 0, 1, UE.EUMGSequencePlayMode.Forward, 1, true)
   self:PlayAnimation(self.Ani_loop, 0, 0)
 end
+
 function WBP_MainModeSelectPanel:OnHideByOther(...)
   local CurSelectItem = self:GetModeSelectItemPanel(self.CurSelectMode)
   if CurSelectItem and CurSelectItem.OnHideByOther then
     CurSelectItem:OnHideByOther()
   end
 end
+
 function WBP_MainModeSelectPanel:OnRollback(...)
   local CurSelectItem = self:GetModeSelectItemPanel(self.CurSelectMode)
   if CurSelectItem and CurSelectItem.OnRollback then
     CurSelectItem:OnRollback()
   end
 end
+
 function WBP_MainModeSelectPanel:InitPanel()
   self:RefreshModeSelectList()
   local AllChildren = self.CanvasPanel_ChildItemPanel:GetAllChildren()
@@ -64,6 +64,7 @@ function WBP_MainModeSelectPanel:InitPanel()
   UpdateVisibility(self.CanvasPanel_ChildMainPanel, false)
   self.CurSelectMode = -1
 end
+
 function WBP_MainModeSelectPanel:RefreshModeSelectList(...)
   self.ModeSelectNavigationBarVisConfig = {}
   local AllChildren = self.ScrollList_ModeSelect:GetAllChildren()
@@ -93,6 +94,7 @@ function WBP_MainModeSelectPanel:RefreshModeSelectList(...)
     UpdateVisibility(self.WBP_ThumbnailModeItem_Normal, true)
   end
 end
+
 function WBP_MainModeSelectPanel:OnShowLink(LinkParams, WorldIndex, Floor, ModeID)
   ChangeToLobbyAnimCamera()
   if not WorldIndex and LinkParams:IsValidIndex(1) then
@@ -120,9 +122,7 @@ function WBP_MainModeSelectPanel:OnShowLink(LinkParams, WorldIndex, Floor, ModeI
     EventSystem.Invoke(EventDef.ModeSelection.OnChangeModeDifficultLevelItem, WorldIndex, floor, modeID)
   end
 end
-function WBP_MainModeSelectPanel:BindOnOpenSettingsKeyPressed()
-  LogicGameSetting.ShowGameSettingPanel()
-end
+
 function WBP_MainModeSelectPanel:BindOnEscKeyPressed()
   local CurSelectItem = self:GetModeSelectItemPanel(self.CurSelectMode)
   if CurSelectItem and CurSelectItem.OnHide then
@@ -140,6 +140,7 @@ function WBP_MainModeSelectPanel:BindOnEscKeyPressed()
     EventSystem.Invoke(EventDef.BeginnerGuide.OnLobbyShow)
   end
 end
+
 function WBP_MainModeSelectPanel:GetModeSelectItemPanel(ModeIndex)
   local ModeSelectPanel = {
     [TableEnums.ENUMGameMode.NORMAL] = self.WBP_NormalWorldSelectionPanel,
@@ -147,6 +148,7 @@ function WBP_MainModeSelectPanel:GetModeSelectItemPanel(ModeIndex)
   }
   return ModeSelectPanel[ModeIndex]
 end
+
 function WBP_MainModeSelectPanel:BindOnChangeThumbnailModeItem(ModeIndex, DefaultWorldId)
   self.CurSelectMode = ModeIndex
   if ModeIndex == TableEnums.ENUMGameMode.BOSSRUSH then
@@ -179,6 +181,7 @@ function WBP_MainModeSelectPanel:BindOnChangeThumbnailModeItem(ModeIndex, Defaul
     self:BindOnEscKeyPressed()
   end
 end
+
 function WBP_MainModeSelectPanel:OnHide()
   self.WBP_StartOrMatch:ChangeGameMode(0, true)
   self.WBP_StartOrMatch:Hide()
@@ -186,24 +189,25 @@ function WBP_MainModeSelectPanel:OnHide()
   if CurSelectItem and CurSelectItem.OnHide then
     CurSelectItem:OnHide()
   end
-  if IsListeningForInputAction(self, OpenSettingsKeyName) then
-    StopListeningForInputAction(self, OpenSettingsKeyName, UE.EInputEvent.IE_Pressed)
-  end
   if IsListeningForInputAction(self, EscKeyName) then
     StopListeningForInputAction(self, EscKeyName, UE.EInputEvent.IE_Pressed)
   end
   EventSystem.RemoveListener(EventDef.ModeSelection.OnChangeThumbnailModeItem, self.BindOnChangeThumbnailModeItem, self)
 end
+
 function WBP_MainModeSelectPanel:OnOutAnimationFinished()
   UIMgr:Hide(ViewID.UI_MainModeSelection, true)
 end
+
 function WBP_MainModeSelectPanel:OnAnimationFinished(Animation)
   if self.Ani_out == Animation then
     self:OnOutAnimationFinished()
   end
 end
+
 function WBP_MainModeSelectPanel:Destruct(...)
   self:OnHide()
   self:UnBindClickHandler()
 end
+
 return WBP_MainModeSelectPanel

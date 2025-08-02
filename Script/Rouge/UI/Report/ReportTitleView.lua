@@ -1,21 +1,27 @@
 local ReportTitleView = UnLua.Class()
+
 function ReportTitleView:Construct()
   self.Button_Main.OnClicked:Add(self, ReportTitleView.OnItemClicked)
   self.Overlay_Nor:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
 end
+
 function ReportTitleView:Destruct()
   self.Button_Main.OnClicked:Remove(self, ReportTitleView.OnItemClicked)
 end
+
 function ReportTitleView:OnItemClicked()
   local CurIndex = self.List:GetIndexForItem(self.Item)
   self.List:SetSelectedIndex(CurIndex)
 end
+
 function ReportTitleView:OnMouseEnter(MyGeometry, MouseEvent)
   self.Overlay_Horver:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
 end
+
 function ReportTitleView:OnMouseLeave(MyGeometry, MouseEvent)
   self.Overlay_Horver:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function ReportTitleView:OnListItemObjectSet(ListItemObj)
   if ListItemObj then
     self.Item = ListItemObj
@@ -29,6 +35,7 @@ function ReportTitleView:OnListItemObjectSet(ListItemObj)
     UI_ReportView:OnTitleItemCreated()
   end
 end
+
 function ReportTitleView:BP_OnItemSelectionChanged(IsSelected)
   self.bSel = IsSelected
   if self.bSel then
@@ -39,6 +46,7 @@ function ReportTitleView:BP_OnItemSelectionChanged(IsSelected)
     self.Overlay_Nor:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
   end
 end
+
 function ReportTitleView:DoCustomNavigation_Left()
   local UI_ReportView = UIMgr:GetLuaFromActiveView(ViewID.UI_ReportView)
   if UI_ReportView then
@@ -46,6 +54,7 @@ function ReportTitleView:DoCustomNavigation_Left()
   end
   return nil
 end
+
 function ReportTitleView:DoCustomNavigation_Right()
   local UI_ReportView = UIMgr:GetLuaFromActiveView(ViewID.UI_ReportView)
   if UI_ReportView then
@@ -53,6 +62,7 @@ function ReportTitleView:DoCustomNavigation_Right()
   end
   return nil
 end
+
 function ReportTitleView:DoCustomNavigation_Up()
   local UI_ReportView = UIMgr:GetLuaFromActiveView(ViewID.UI_ReportView)
   if UI_ReportView then
@@ -60,6 +70,7 @@ function ReportTitleView:DoCustomNavigation_Up()
   end
   return nil
 end
+
 function ReportTitleView:DoCustomNavigation_Down()
   local UI_ReportView = UIMgr:GetLuaFromActiveView(ViewID.UI_ReportView)
   if UI_ReportView then
@@ -67,4 +78,5 @@ function ReportTitleView:DoCustomNavigation_Down()
   end
   return nil
 end
+
 return ReportTitleView

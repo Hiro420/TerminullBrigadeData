@@ -1,0 +1,56 @@
+[
+  {
+    "region": "europe",
+    "costType": "欧服",
+    "address": "battle-15001-eu.playprojectr.com",
+    "port": 50001,
+    "serverlist": [
+      "15001"
+    ]
+  },
+  {
+    "region": "jp",
+    "costType": "亚服",
+    "address": "battle-15001-jp.playprojectr.com",
+    "port": 50001,
+    "serverlist": [
+      "15001"
+    ]
+  },
+  {
+    "region": "sa",
+    "costType": "南美服",
+    "address": "battle-15001-sa.playprojectr.com",
+    "port": 50001,
+    "serverlist": [
+      "15001"
+    ]
+  },
+  {
+    "region": "sea",
+    "costType": "东南亚服",
+    "address": "battle-15001-sg.playprojectr.com",
+    "port": 50001,
+    "serverlist": [
+      "15001"
+    ]
+  },
+  {
+    "region": "sv",
+    "costType": "北美服（西部）",
+    "address": "battle-15001-sv.playprojectr.com",
+    "port": 50001,
+    "serverlist": [
+      "15001"
+    ]
+  },
+  {
+    "region": "va",
+    "costType": "北美服（东部）",
+    "address": "battle-15001-ue.playprojectr.com",
+    "port": 50001,
+    "serverlist": [
+      "15001"
+    ]
+  }
+]

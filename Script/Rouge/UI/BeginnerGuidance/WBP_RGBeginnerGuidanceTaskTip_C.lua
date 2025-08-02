@@ -1,4 +1,5 @@
 local WBP_RGBeginnerGuidanceTaskTip_C = UnLua.Class()
+
 function WBP_RGBeginnerGuidanceTaskTip_C:RefreshInfo(BeginnerGuidanceTipRowId, MissionId)
   self.BeginnerGuidanceTipRowId = BeginnerGuidanceTipRowId
   self.MissionId = MissionId
@@ -21,6 +22,7 @@ function WBP_RGBeginnerGuidanceTaskTip_C:RefreshInfo(BeginnerGuidanceTipRowId, M
     self.Txt_Desc:SetText(Text)
   end
 end
+
 function WBP_RGBeginnerGuidanceTaskTip_C:OnAnimationFinished(Animation)
   if Animation == self.Ani_out and not self.IsInitiativeStop then
     if self.IsWaitInit then
@@ -30,6 +32,7 @@ function WBP_RGBeginnerGuidanceTaskTip_C:OnAnimationFinished(Animation)
     end
   end
 end
+
 function WBP_RGBeginnerGuidanceTaskTip_C:Hide()
   self.IsWaitInit = false
   if self.Ani_out and self:IsAnimationPlaying(self.Ani_out) then
@@ -43,4 +46,5 @@ function WBP_RGBeginnerGuidanceTaskTip_C:Hide()
     UpdateVisibility(self, false)
   end
 end
+
 return WBP_RGBeginnerGuidanceTaskTip_C

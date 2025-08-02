@@ -1,10 +1,12 @@
 local WBP_MatchingPanel_C = UnLua.Class()
+
 function WBP_MatchingPanel_C:Construct()
   self.Btn_JoinTeam.OnClicked:Add(self, WBP_MatchingPanel_C.BindOnJoinTeamButtonClicked)
   self.Btn_Copy.OnClicked:Add(self, WBP_MatchingPanel_C.BindOnCopyTeamNumButtonClicked)
   self.Btn_Edit.OnHovered:Add(self, WBP_MatchingPanel_C.BindOnEditButtonHovered)
   self.Btn_Edit.OnUnhovered:Add(self, WBP_MatchingPanel_C.BindOnEditButtonUnhovered)
 end
+
 function WBP_MatchingPanel_C:OnAnimationFinished(Animation)
   if Animation == self.ani_MatchingPanel_Out then
     self:BindOnMatchingPanelOutAnimFinished()
@@ -12,15 +14,18 @@ function WBP_MatchingPanel_C:OnAnimationFinished(Animation)
     self:BindOnClickAnimFinished()
   end
 end
+
 function WBP_MatchingPanel_C:BindOnClickAnimFinished()
   self:PlayAnimation(self.ani_Click_loop, 0.0, 0, UE.EUMGSequencePlayMode.Forward)
 end
+
 function WBP_MatchingPanel_C:StopClickLoopAnim()
   if self:IsAnimationPlaying(self.ani_Click_loop) then
     self:StopAnimation(self.ani_Click_loop)
     self:PlayAnimationTimeRange(self.ani_Click_loop, self.ani_Click_loop:GetEndTime(), self.ani_Click_loop:GetEndTime())
   end
 end
+
 function WBP_MatchingPanel_C:BindOnJoinTeamButtonClicked()
   LuaAddClickStatistics("LobbyJoinTeam")
   local TeamIdStr = tostring(self.Edit_TeamMember:GetText())
@@ -42,16 +47,20 @@ function WBP_MatchingPanel_C:BindOnJoinTeamButtonClicked()
     LogicTeam.RequestJoinTeamToServer(TeamIdStr, LogicTeam.JoinTeamWay.TeamCode)
   end
 end
+
 function WBP_MatchingPanel_C:BindOnCopyTeamNumButtonClicked()
   LuaAddClickStatistics("LobbyCopyTeamcode")
   self:BindOnCopyTeamCodePressed()
 end
+
 function WBP_MatchingPanel_C:BindOnEditButtonHovered()
   self.Img_EditHover:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_MatchingPanel_C:BindOnEditButtonUnhovered()
   self.Img_EditHover:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_MatchingPanel_C:OnShow()
   self:InitTeamList()
   self:BindOnUpdateMyTeamInfo()
@@ -68,6 +77,7 @@ function WBP_MatchingPanel_C:OnShow()
   EventSystem.AddListener(self, EventDef.Lobby.UpdateRoomMembersInfo, WBP_MatchingPanel_C.BindOnUpdateRoomMembersInfo)
   EventSystem.AddListener(self, EventDef.Lobby.OnMultiTeamMemberOmissionButtonClicked, self.BindOnMultiTeamMemberOmissionButtonClicked)
 end
+
 function WBP_MatchingPanel_C:InitTeamList()
   local AllItem = self.TeamMemberList:GetAllChildren()
   for i, SingleItem in pairs(AllItem) do
@@ -80,10 +90,12 @@ function WBP_MatchingPanel_C:InitTeamList()
     Item:Show(BasicInfo, MyHeroInfo.equipHero, BasicInfo.roleid, false)
   end
 end
+
 function WBP_MatchingPanel_C:BindOnEscKeyPressed()
   self:PlayAnimation(self.ani_MatchingPanel_out, 0.0, 1, UE.EUMGSequencePlayMode.Forward)
   LogicAudio.OnPageOpen()
 end
+
 function WBP_MatchingPanel_C:BindOnCopyTeamCodePressed()
   if DataMgr.IsInTeam() then
     local TeamInfo = DataMgr.GetTeamInfo()
@@ -102,6 +114,7 @@ function WBP_MatchingPanel_C:BindOnCopyTeamCodePressed()
     WaveWindowManager:ShowWaveWindow(1097)
   end
 end
+
 function WBP_MatchingPanel_C:BindOnUpdateMyTeamInfo()
   if DataMgr.IsInTeam() then
     local TeamInfo = DataMgr.GetTeamInfo()
@@ -111,6 +124,7 @@ function WBP_MatchingPanel_C:BindOnUpdateMyTeamInfo()
     self.Txt_TeamNum:SetText("")
   end
 end
+
 function WBP_MatchingPanel_C:BindOnUpdateRoomMembersInfo()
   local PlayerInfoList = DataMgr.GetTeamMembersInfo()
   local TeamInfo = DataMgr.GetTeamInfo()
@@ -143,6 +157,7 @@ function WBP_MatchingPanel_C:BindOnUpdateRoomMembersInfo()
     SingleItem:PlayTeamMemberAnim()
   end
 end
+
 function WBP_MatchingPanel_C:BindOnMultiTeamMemberOmissionButtonClicked(SingleRoleInfo, ViewportPos)
   local TeamInfo = DataMgr.GetTeamInfo()
   local TargetPlayerInfo
@@ -158,12 +173,15 @@ function WBP_MatchingPanel_C:BindOnMultiTeamMemberOmissionButtonClicked(SingleRo
   self.TeamOperateButtonPanel:Show(TargetPlayerInfo)
   self.TeamOperateButtonPanel:UpdatePosition(UE.FVector2D(BottomViewportPosition.X + LocalSize.X + self.TeamOperatePanelXInterval, ViewportPos.Y))
 end
+
 function WBP_MatchingPanel_C:BindOnMatchingPanelOutAnimFinished()
   UIMgr:Hide(ViewID.UI_MatchingPanel)
 end
+
 function WBP_MatchingPanel_C:OnBGLeftMouseButtonDown()
   self:BindOnEscKeyPressed()
 end
+
 function WBP_MatchingPanel_C:OnHide()
   if IsListeningForInputAction(self, self.CopyTeamCodeName) then
     StopListeningForInputAction(self, self.CopyTeamCodeName, UE.EInputEvent.IE_Pressed)
@@ -172,8 +190,10 @@ function WBP_MatchingPanel_C:OnHide()
   EventSystem.RemoveListener(EventDef.Lobby.UpdateRoomMembersInfo, WBP_MatchingPanel_C.BindOnUpdateRoomMembersInfo, self)
   EventSystem.RemoveListener(EventDef.Lobby.OnMultiTeamMemberOmissionButtonClicked, self.BindOnMultiTeamMemberOmissionButtonClicked, self)
 end
+
 function WBP_MatchingPanel_C:Destruct()
   self:OnHide()
   self:StopClickLoopAnim()
 end
+
 return WBP_MatchingPanel_C

@@ -3,27 +3,34 @@ local ViewBase = require("Framework.UIMgr.ViewBase")
 local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local PropsItemView = Class(ViewBase)
+
 function PropsItemView:BindClickHandler()
 end
+
 function PropsItemView:UnBindClickHandler()
 end
+
 function PropsItemView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function PropsItemView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function PropsItemView:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
   end
 end
+
 function PropsItemView:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
   end
 end
+
 function PropsItemView:OnListItemObjectSet(ListItemObj)
   self.ItemObj = ListItemObj
   local LimitPurchaseForever = NSLOCTEXT("PropsItemView", "LimitPurchaseForever", "\230\176\184\228\185\133\233\153\144\232\180\173{0}/{1}")
@@ -98,6 +105,7 @@ function PropsItemView:OnListItemObjectSet(ListItemObj)
     end
   end
 end
+
 function PropsItemView:OnMouseEnter(MyGeometry, MouseEvent)
   UpdateVisibility(self.Overlay_Hovered, true)
   local Offset = UE.FVector2D(-100, 0)
@@ -110,13 +118,16 @@ function PropsItemView:OnMouseEnter(MyGeometry, MouseEvent)
     end
   end
 end
+
 function PropsItemView:OnMouseLeave(MyGeometry, MouseEvent)
   UpdateVisibility(self.Overlay_Hovered, false)
   UpdateVisibility(self.HoverTips, false)
 end
+
 function PropsItemView:BP_OnItemSelectionChanged(bSelected)
   if bSelected then
     self.WBP_RedDotView:SetNum(0)
   end
 end
+
 return PropsItemView

@@ -1,16 +1,20 @@
 local RewardIncreaseModule = LuaClass()
 local RewardIncreaseHandler = require("Protocol.RewardIncrease.RewardIncreaseHandler")
 local RequestGap = 0.5
+
 function RewardIncreaseModule:Ctor()
 end
+
 function RewardIncreaseModule:OnInit()
   print("RewardIncreaseModule:OnInit...........")
   EventSystem.AddListenerNew(EventDef.MonthCard.OnUpdateRolesMonthCardInfo, self, self.OnUpdateRolesMonthCardInfo)
 end
+
 function RewardIncreaseModule:OnShutdown()
   print("RewardIncreaseModule:OnShutdown...........")
   EventSystem.RemoveListenerNew(EventDef.MonthCard.OnUpdateRolesMonthCardInfo, self, self.OnUpdateRolesMonthCardInfo)
 end
+
 function RewardIncreaseModule:OnUpdateRolesMonthCardInfo(RoleIdList)
   for i, v in ipairs(RoleIdList) do
     if v == DataMgr.GetUserId() then
@@ -20,6 +24,7 @@ function RewardIncreaseModule:OnUpdateRolesMonthCardInfo(RoleIdList)
     end
   end
 end
+
 function RewardIncreaseModule:RequestGetRewardIncreaseCount(TimeStamp, bForceRequest)
   if bForceRequest then
     RewardIncreaseHandler.RequestGetRewardIncreaseCount()
@@ -33,7 +38,9 @@ function RewardIncreaseModule:RequestGetRewardIncreaseCount(TimeStamp, bForceReq
     self.PreTimeStamp = TimeStamp
   end
 end
+
 function RewardIncreaseModule:RequestReceiverewardIncrease()
   RewardIncreaseHandler.RequestReceiverewardIncrease()
 end
+
 return RewardIncreaseModule

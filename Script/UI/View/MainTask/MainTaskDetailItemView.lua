@@ -3,27 +3,34 @@ local ViewBase = require("Framework.UIMgr.ViewBase")
 local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local MainTaskDetailItemView = Class(ViewBase)
+
 function MainTaskDetailItemView:BindClickHandler()
 end
+
 function MainTaskDetailItemView:UnBindClickHandler()
 end
+
 function MainTaskDetailItemView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function MainTaskDetailItemView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function MainTaskDetailItemView:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
   end
 end
+
 function MainTaskDetailItemView:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
   end
 end
+
 function MainTaskDetailItemView:OnListItemObjectSet(ListItemObj)
   if ListItemObj then
     UpdateVisibility(self.Overlay_Finish, ListItemObj.Finish)
@@ -43,13 +50,16 @@ function MainTaskDetailItemView:OnListItemObjectSet(ListItemObj)
     self.TextTitle_Finish:SetText(TaskData[tonumber(ListItemObj.TaskId)].name)
   end
 end
+
 function MainTaskDetailItemView:OnMouseEnter(MyGeometry, MouseEvent)
   UpdateVisibility(self.Overlay_Hov, true)
   PlaySound2DEffect(2, "MainTaskDetailItemView_Hov")
 end
+
 function MainTaskDetailItemView:OnMouseLeave(MyGeometry, MouseEvent)
   UpdateVisibility(self.Overlay_Hov, false)
 end
+
 function MainTaskDetailItemView:BP_OnItemSelectionChanged(bSelect)
   UpdateVisibility(self.Overlay_Sel, bSelect)
   UpdateVisibility(self.ActiveOverlay, not bSelect)
@@ -57,7 +67,9 @@ function MainTaskDetailItemView:BP_OnItemSelectionChanged(bSelect)
     PlaySound2DEffect(1, "MainTaskDetailItemView_Selection")
   end
 end
+
 function MainTaskDetailItemView:BP_OnEntryReleased()
   UpdateVisibility(self.Overlay_Sel, false)
 end
+
 return MainTaskDetailItemView

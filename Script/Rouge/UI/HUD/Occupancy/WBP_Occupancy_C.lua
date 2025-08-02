@@ -4,9 +4,11 @@ local PlayerNum = 0
 local ArrowNameFormat = "ImageRoleListBg_"
 local Opening = NSLOCTEXT("WBP_Occupancy_C", "HackingChest", "\230\173\163\229\156\168\233\170\135\229\133\165\229\174\157\231\174\177")
 local Stoping = NSLOCTEXT("WBP_Occupancy_C", "UnHackingChest", "\233\170\135\229\133\165\230\154\130\229\129\156")
+
 function WBP_Occupancy_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_Occupancy_C:OnInit()
   self.RoleItemList = {}
   self:EnterOccupancyLevelImp()
@@ -27,13 +29,16 @@ function WBP_Occupancy_C:OnInit()
     EventSystem.AddListenerNew(EventDef.HUD.InitHUDActor, self, self.InitTaskWidget)
   end
 end
+
 function WBP_Occupancy_C:InitTaskWidget()
 end
+
 function WBP_Occupancy_C:OnDeInit()
   self.Overridden.Construct(self)
   EventSystem.RemoveListenerNew(EventDef.HUD.InitHUDActor, self, self.InitTaskWidget)
   self.RoleItemList = nil
 end
+
 function WBP_Occupancy_C:OnAnimationFinished(Animation)
   if Animation == self.FailedAni then
     self:ChangeBindFailedAniFinishedNextTab()
@@ -43,10 +48,13 @@ function WBP_Occupancy_C:OnAnimationFinished(Animation)
     self:BindExitCircleProgressAniFinished()
   end
 end
+
 function WBP_Occupancy_C:BindFailedAniFinished()
 end
+
 function WBP_Occupancy_C:BindDefendSuccessFinished()
 end
+
 function WBP_Occupancy_C:BindExitCircleProgressAniFinished()
   if self.bIsExcuteFinished then
     local MarkItem = UE.URGBlueprintLibrary.GetMarkItem(self, self.LevelGamePlay)
@@ -56,8 +64,10 @@ function WBP_Occupancy_C:BindExitCircleProgressAniFinished()
     UpdateVisibility(self.CanvasPanelProgress, false)
   end
 end
+
 function WBP_Occupancy_C:BindDefendStartAniFinished()
 end
+
 function WBP_Occupancy_C:UpdateDefendPlayer()
   if not self.LevelGamePlay then
     return
@@ -83,6 +93,7 @@ function WBP_Occupancy_C:UpdateDefendPlayer()
     end
   end
 end
+
 function WBP_Occupancy_C:EnterAreaImp(LevelGamePlayParam, OtherActor)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if Character == OtherActor and OtherActor.LifeState ~= UE.ERGLifeState.Alive then
@@ -114,6 +125,7 @@ function WBP_Occupancy_C:EnterAreaImp(LevelGamePlayParam, OtherActor)
     self.CanvasPanelInteract:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function WBP_Occupancy_C:ExitAreaImp(LevelGamePlayParam, OtherActor)
   self:UpdateDefendPlayer()
   if self.bIsStarted and not self.bIsEnded then
@@ -145,14 +157,17 @@ function WBP_Occupancy_C:ExitAreaImp(LevelGamePlayParam, OtherActor)
     self.CanvasPanelInteract:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_Occupancy_C:FailedImp(LevelGamePlayParam)
   self.WBP_BattleModeContent:ShowFailed()
   PlaySound2DEffect(80003, "WBP_Occupancy_C:FailedImp")
 end
+
 function WBP_Occupancy_C:FinishedImp(LevelGamePlayParam)
   self.WBP_BattleModeContent:ShowSuccess()
   PlaySound2DEffect(80002, "WBP_Occupancy_C:FinishedImp")
 end
+
 function WBP_Occupancy_C:ShutdownImp(LevelGamePlayParam)
   self.bIsEnded = true
   self.ProgressState = UE.EProgressState.NotStarted
@@ -160,19 +175,23 @@ function WBP_Occupancy_C:ShutdownImp(LevelGamePlayParam)
   self.CanvasPanelProgress:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.CanvasPanelInteract:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_Occupancy_C:StartupImp(LevelGamePlayParam)
   self.CanvasPanelInteract:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.WBP_BattleModeContent:BeginAssembly()
   PlaySound2DEffect(80001, "WBP_Occupancy_C:ShutdownImp")
 end
+
 function WBP_Occupancy_C:EnterOccupancyLevelImp()
   local GS = UE.UGameplayStatics.GetGameState(self)
   if GS then
     PlayerNum = GS.PlayerArray:Num()
   end
 end
+
 function WBP_Occupancy_C:BP_ProgressStart()
 end
+
 function WBP_Occupancy_C:BP_ProgressPause()
   NotifyObjectMessage(nil, GMP.MSG_OccupationPause)
   local MatInst = self.URGImageProgress:GetDynamicMaterial()
@@ -184,9 +203,11 @@ function WBP_Occupancy_C:BP_ProgressPause()
   self.bIsExcuteFinished = true
   self:PlayAnimation(self.ExitCircleProgressAni)
 end
+
 function WBP_Occupancy_C:BP_ProgressResume()
   PlaySound2DEffect(80006, "WBP_Occupancy_C:BP_ProgressResume")
 end
+
 function WBP_Occupancy_C:OccupancyShutdown()
   self.bIsEnded = true
   self.CanvasPanelProgress:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -194,12 +215,15 @@ function WBP_Occupancy_C:OccupancyShutdown()
   self:StopAnimation(self.FailedAni)
   self:StopAnimation(self.ExitCircleProgressAni)
 end
+
 function WBP_Occupancy_C:Destruct()
   self.Overridden.Destruct(self)
 end
+
 function WBP_Occupancy_C:LuaTick(InDeltaTime)
   if self.TaskWidget then
     self.TaskWidget:OccupancyRefreshCountDown(self.CountDown)
   end
 end
+
 return WBP_Occupancy_C

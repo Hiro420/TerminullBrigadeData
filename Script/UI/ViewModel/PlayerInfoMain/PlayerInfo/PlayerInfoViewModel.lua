@@ -22,6 +22,7 @@ local SystemPromptIdList = {
 }
 PlayerInfoViewModel.propertyBindings = {}
 PlayerInfoViewModel.subViewModels = {}
+
 function PlayerInfoViewModel:OnInit()
   self.Super.OnInit(self)
   EventSystem.AddListenerNew(EventDef.Login.DataResetWhenLogin, self, self.OnDataResetWhenLogin)
@@ -36,6 +37,7 @@ function PlayerInfoViewModel:OnInit()
   EventSystem.AddListenerNew(EventDef.Lobby.OnSetNickSuccess, self, self.OnSetNickSuccess)
   EventSystem.AddListenerNew(EventDef.PlayerInfo.GetDisplayHeroInfo, self, self.OnGetDisplayHeroInfo)
 end
+
 function PlayerInfoViewModel:OnShutdown()
   EventSystem.AddListenerNew(EventDef.Login.DataResetWhenLogin, self, self.OnDataResetWhenLogin)
   EventSystem.RemoveListenerNew(EventDef.Lobby.OnBasicInfoUpdated, self, self.OnBasicInfoUpdated)
@@ -50,17 +52,21 @@ function PlayerInfoViewModel:OnShutdown()
   EventSystem.RemoveListenerNew(EventDef.PlayerInfo.GetDisplayHeroInfo, self, self.OnGetDisplayHeroInfo)
   self.Super.OnShutdown(self)
 end
+
 function PlayerInfoViewModel:RegisterPropertyChanged(BindingTable, View)
   self.Super.RegisterPropertyChanged(self, BindingTable, View)
 end
+
 function PlayerInfoViewModel:OnDataResetWhenLogin()
   PlayerInfoData:ResetWhenLogin()
 end
+
 function PlayerInfoViewModel:OnBasicInfoUpdated()
   if self:GetFirstView() then
     self:GetFirstView():UpdateBaseInfo()
   end
 end
+
 function PlayerInfoViewModel:OnMainTaskRefres()
   if self:GetFirstView() then
     local playerInfoMainVM = UIModelMgr:Get("PlayerInfoMainViewModel")
@@ -71,6 +77,7 @@ function PlayerInfoViewModel:OnMainTaskRefres()
     end
   end
 end
+
 function PlayerInfoViewModel:OnGetAchievementInfo()
   if self:GetFirstView() then
     local playerInfoMainVM = UIModelMgr:Get("PlayerInfoMainViewModel")
@@ -90,6 +97,7 @@ function PlayerInfoViewModel:OnGetAchievementInfo()
     end
   end
 end
+
 function PlayerInfoViewModel:OnSetDisplayBadges()
   if self:GetFirstView() then
     local achievementViewModel = UIModelMgr:Get("AchievementViewModel")
@@ -106,6 +114,7 @@ function PlayerInfoViewModel:OnSetDisplayBadges()
     self:GetFirstView():UpdateAchievePlayerInfoBadgesTips()
   end
 end
+
 function PlayerInfoViewModel:OnGetBattleStatisticSucc(BattleStatistic)
   if self:GetFirstView() then
     self:GetFirstView():UpdateGameplayInfo(BattleStatistic)
@@ -114,16 +123,19 @@ function PlayerInfoViewModel:OnGetBattleStatisticSucc(BattleStatistic)
   local battleHistoryViewModel = UIModelMgr:Get("BattleHistoryViewModel")
   battleHistoryViewModel:OnGetBattleStatisticSucc(BattleStatistic)
 end
+
 function PlayerInfoViewModel:OnGetPortraitIds(PortraitIDs)
   if self:GetFirstView() then
     self:GetFirstView():OnGetPortraitIds(PortraitIDs)
   end
 end
+
 function PlayerInfoViewModel:OnGetBannerIds(BannerIDs)
   if self:GetFirstView() then
     self:GetFirstView():OnGetBannerIds(BannerIDs)
   end
 end
+
 function PlayerInfoViewModel:RequestInfoPlayerInfo()
   local playerInfoMainVM = UIModelMgr:Get("PlayerInfoMainViewModel")
   local roleID = playerInfoMainVM:GetCurRoleID()
@@ -134,21 +146,27 @@ function PlayerInfoViewModel:RequestInfoPlayerInfo()
     achievementViewModel:RequestGetAchievementInfo()
   end
 end
+
 function PlayerInfoViewModel:RequestGetBanners()
   PlayerInfoHandler.RequestGetBanners()
 end
+
 function PlayerInfoViewModel:RequestGetPortraits()
   PlayerInfoHandler.RequestGetPortraits()
 end
+
 function PlayerInfoViewModel:GetCurShowHeroId()
   return PlayerInfoData.CurShowHeroId
 end
+
 function PlayerInfoViewModel:GetCostItemList()
   return PlayerInfoData.CostItemList
 end
+
 function PlayerInfoViewModel:GetPortraitList()
   return PlayerInfoData:GetPortraitList()
 end
+
 function PlayerInfoViewModel:GetHeadIconState(portraitId)
   local tbPortraitData = LogicLobby.GetPlayerPortraitTableRowInfo(portraitId)
   if DataMgr.GetBasicInfo().portrait == portraitId then
@@ -159,6 +177,7 @@ function PlayerInfoViewModel:GetHeadIconState(portraitId)
     return EPlayerInfoEquipedState.Lock
   end
 end
+
 function PlayerInfoViewModel:GetPortraitIdByResourceId(ResourceId)
   local tbPortrait = LuaTableMgr.GetLuaTableByName(TableNames.TBPortrait)
   if not tbPortrait or not tbPortrait[ResourceId] then
@@ -166,9 +185,11 @@ function PlayerInfoViewModel:GetPortraitIdByResourceId(ResourceId)
   end
   return tbPortrait[ResourceId].portraitID
 end
+
 function PlayerInfoViewModel:GetOwnerPortraitList()
   return PlayerInfoData.PortraitIDs
 end
+
 function PlayerInfoViewModel:GetBannerState(bannerId)
   if DataMgr.GetBasicInfo().banner == bannerId then
     return EPlayerInfoEquipedState.Equiped
@@ -178,6 +199,7 @@ function PlayerInfoViewModel:GetBannerState(bannerId)
     return EPlayerInfoEquipedState.Lock
   end
 end
+
 function PlayerInfoViewModel:GetBannerIdByResourceId(ResourceId)
   local tbBanner = LuaTableMgr.GetLuaTableByName(TableNames.TBBanner)
   if not tbBanner or not tbBanner[ResourceId] then
@@ -185,18 +207,22 @@ function PlayerInfoViewModel:GetBannerIdByResourceId(ResourceId)
   end
   return tbBanner[ResourceId].bannerID
 end
+
 function PlayerInfoViewModel:GetTBBannerDataByBannerId(BannerId)
   if BannerId == PlayerInfoConfig.DefaultBannerInfo.bannerID then
     return PlayerInfoConfig.DefaultBannerInfo
   end
   return PlayerInfoData:GetTBBannerDataByBannerId(BannerId)
 end
+
 function PlayerInfoViewModel:GetBannerList()
   return PlayerInfoData:GetBannerList()
 end
+
 function PlayerInfoViewModel:GetOwnerBannerList()
   return PlayerInfoData.BannerIDs
 end
+
 function PlayerInfoViewModel:ChangePlayerInfoRoleDisplay(SelectId)
   if PlayerInfoData.CurShowHeroId == SelectId then
     if self:GetFirstView() then
@@ -217,9 +243,11 @@ function PlayerInfoViewModel:ChangePlayerInfoRoleDisplay(SelectId)
     end
   end)
 end
+
 function PlayerInfoViewModel:RequestGetDisplayHeroInfo(RoleID)
   PlayerInfoHandler.RequestGetDisplayHeroInfo(RoleID)
 end
+
 function PlayerInfoViewModel:CheckIsSameName(NickName)
   local MyNickName = DataMgr.GetBasicInfo().nickname
   if MyNickName == NickName then
@@ -227,6 +255,7 @@ function PlayerInfoViewModel:CheckIsSameName(NickName)
   end
   return false
 end
+
 function PlayerInfoViewModel:ConfirmChangeNickName()
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
   if not WaveWindowManager then
@@ -266,8 +295,10 @@ function PlayerInfoViewModel:ConfirmChangeNickName()
     end
   })
 end
+
 function PlayerInfoViewModel:OnSetNickFailed()
 end
+
 function PlayerInfoViewModel:OnSetNickSuccess()
   if self.waveWindow then
     local RGWaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
@@ -276,23 +307,27 @@ function PlayerInfoViewModel:OnSetNickSuccess()
     end
   end
 end
+
 function PlayerInfoViewModel:OnGetDisplayHeroInfo(HeroInfo, WeaponInfo, RoleID)
   if self:GetFirstView() then
     self:GetFirstView():UpdateRoleByHeroInfo(HeroInfo, WeaponInfo)
   end
 end
+
 function PlayerInfoViewModel:OperatorHeadIcon(PortraitId)
   if self:GetHeadIconState(PortraitId) == EPlayerInfoEquipedState.UnEquiped then
     PlayerInfoHandler.RequestSetPortrait(PortraitId)
   elseif self:GetHeadIconState(PortraitId) == EPlayerInfoEquipedState.Lock then
   end
 end
+
 function PlayerInfoViewModel:OperatorBanner(BannerId)
   if self:GetBannerState(BannerId) == EPlayerInfoEquipedState.UnEquiped then
     PlayerInfoHandler.RequestSetBanner(BannerId)
   elseif self:GetBannerState(BannerId) == EPlayerInfoEquipedState.Lock then
   end
 end
+
 function PlayerInfoViewModel:ResetData()
   local playerInfoMainVM = UIModelMgr:Get("PlayerInfoMainViewModel")
   local roleID = playerInfoMainVM:GetCurRoleID()
@@ -300,10 +335,13 @@ function PlayerInfoViewModel:ResetData()
     PlayerInfoData.BattleStatistic[roleID] = nil
   end
 end
+
 function PlayerInfoViewModel:GetDefaultBannerPath()
   return PlayerInfoConfig.DefaultBannerInfo.bannerIconPathInInfo
 end
+
 function PlayerInfoViewModel:GetDefaultBannerInfo()
   return PlayerInfoConfig.DefaultBannerInfo
 end
+
 return PlayerInfoViewModel

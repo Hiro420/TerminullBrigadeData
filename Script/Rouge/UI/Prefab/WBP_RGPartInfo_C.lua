@@ -1,5 +1,6 @@
 local WBP_RGPartInfo_C = UnLua.Class()
 local ListContainer = require("Rouge.UI.Common.ListContainer")
+
 function WBP_RGPartInfo_C:Construct()
   if not self.ListContainer then
     self.ListContainer = ListContainer.New(self.GridBarItemTemplate:StaticClass())
@@ -21,6 +22,7 @@ function WBP_RGPartInfo_C:Construct()
     ListenObjectMessage(self.OwningCharacter, GMP.MSG_Pawn_OnDeath, self, self.BindOnPawnDeath)
   end
 end
+
 function WBP_RGPartInfo_C:BindOnShowWeaknessInfo()
   print("BindOnShowWeaknessInfo")
   local CanShow = self:CanShowPanel()
@@ -29,19 +31,23 @@ function WBP_RGPartInfo_C:BindOnShowWeaknessInfo()
     self:ShowPanel()
   end
 end
+
 function WBP_RGPartInfo_C:BindOnListenPartRestore(PartIndex)
   print("BindOnListenPartRestore", PartIndex, self.PartIndex)
   if self.PartIndex == PartIndex then
     self.IsBroken = false
   end
 end
+
 function WBP_RGPartInfo_C:BindOnPawnDeath()
   self:HidePanel()
 end
+
 function WBP_RGPartInfo_C:InitInfo(ElementId)
   print("WBP_RGPartInfo_C:InitInfo")
   self:InitBarStyle()
 end
+
 function WBP_RGPartInfo_C:InitBarStyle()
   local Result, CharacterRow = GetRowDataForCharacter(self.OwningCharacter:GetTypeID())
   if not Result then
@@ -70,6 +76,7 @@ function WBP_RGPartInfo_C:InitBarStyle()
     FillBrush.Margin = Margin
   end
 end
+
 function WBP_RGPartInfo_C:UpdateGridBarList()
   local Result, CharacterRow = GetRowDataForCharacter(self.OwningCharacter:GetTypeID())
   if not Result then
@@ -112,6 +119,7 @@ function WBP_RGPartInfo_C:UpdateGridBarList()
     self:InitBarItemInfo(PosX, TargetSizeX * RemainPercent, MinNum, MaxNum)
   end
 end
+
 function WBP_RGPartInfo_C:InitBarItemInfo(PosX, SizeX, MinValue, MaxValue)
   local Item = self.ListContainer:GetOrCreateItem()
   if not self.GridBarList:HasChild(Item) then
@@ -139,6 +147,7 @@ function WBP_RGPartInfo_C:InitBarItemInfo(PosX, SizeX, MinValue, MaxValue)
   Item:UpdateFillImg(self:GetPartValue(), -1)
   Item:UpdateVirtualImg(self:GetPartValue())
 end
+
 function WBP_RGPartInfo_C:GetPartValue()
   if not self.OwningCharacter.TryGetPartAbilitySystemComponent then
     print("WBP_RGPartInfo_C:GetPartValue Owner not has Part Ability System Component!")
@@ -150,9 +159,11 @@ function WBP_RGPartInfo_C:GetPartValue()
   end
   return PartASC:GetPartValue()
 end
+
 function WBP_RGPartInfo_C:BindOnBodyPartComponentReady()
   print("OnBodyPartComponentReady")
 end
+
 function WBP_RGPartInfo_C:SetPartBroken()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.HideTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.HideTimer)
@@ -160,6 +171,7 @@ function WBP_RGPartInfo_C:SetPartBroken()
   LogicBodyPart.HideWidget(self)
   self.IsBroken = true
 end
+
 function WBP_RGPartInfo_C:SetHealthPercentage()
   if self.MaxHealth <= 0 then
     print("\233\131\168\228\189\141\232\161\128\230\157\161\230\156\128\229\164\167\231\148\159\229\145\189\229\128\188\228\184\1860")
@@ -176,6 +188,7 @@ function WBP_RGPartInfo_C:SetHealthPercentage()
   end
   self.OldHealthValue = self:GetPartValue()
 end
+
 function WBP_RGPartInfo_C:UpdateVirtualWhiteValue(OldValue, NewValue)
   local DifferenceValue = NewValue - OldValue
   if DifferenceValue < 0 then
@@ -199,10 +212,12 @@ function WBP_RGPartInfo_C:UpdateVirtualWhiteValue(OldValue, NewValue)
     self:EndVirtualWhiteAnim()
   end
 end
+
 function WBP_RGPartInfo_C:StartPlayVirtualWhiteAnim()
   self.VirtualWhiteAnimTime = 0
   self.IsPlayVirtualWhiteAnim = true
 end
+
 function WBP_RGPartInfo_C:EndVirtualWhiteAnim()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.VirtualWhiteTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.VirtualWhiteTimer)
@@ -213,6 +228,7 @@ function WBP_RGPartInfo_C:EndVirtualWhiteAnim()
     SingleWidget:ShowOrHideVirtualWhiteBar(false)
   end
 end
+
 function WBP_RGPartInfo_C:ShowPanel()
   if not self.ListContainer then
     self.ListContainer = ListContainer.New(self.GridBarItemTemplate:StaticClass())
@@ -239,6 +255,7 @@ function WBP_RGPartInfo_C:ShowPanel()
     end
   }, self.HideTime, false)
 end
+
 function WBP_RGPartInfo_C:HidePanel()
   self.OldHealthValue = -1
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -246,6 +263,7 @@ function WBP_RGPartInfo_C:HidePanel()
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.HideTimer)
   end
 end
+
 function WBP_RGPartInfo_C:CanShowPanel()
   if not self.OwningCharacter or not self.OwningCharacter:IsValid() then
     return false
@@ -260,6 +278,7 @@ function WBP_RGPartInfo_C:CanShowPanel()
   end
   return IsPartEnabled and not self.IsBroken
 end
+
 function WBP_RGPartInfo_C:Destruct()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.HideTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.HideTimer)
@@ -271,6 +290,7 @@ function WBP_RGPartInfo_C:Destruct()
     self.OwningCharacter.OnBodyPartComponentReady:Remove(self, WBP_RGPartInfo_C.BindOnBodyPartComponentReady)
   end
 end
+
 function WBP_RGPartInfo_C:LuaTick(InDeltaTime)
   if self.IsBroken then
     return
@@ -296,6 +316,7 @@ function WBP_RGPartInfo_C:LuaTick(InDeltaTime)
     self:UpdateVirtualWhiteAnim(InDeltaTime)
   end
 end
+
 function WBP_RGPartInfo_C:UpdateVirtualWhiteAnim(InDeltaTime)
   self.VirtualWhiteAnimTime = self.VirtualWhiteAnimTime + InDeltaTime
   local MinTime, MaxTime = self.VirtualWhiteAnimCurve:GetTimeRange()
@@ -310,6 +331,7 @@ function WBP_RGPartInfo_C:UpdateVirtualWhiteAnim(InDeltaTime)
     SingleWidget:UpdateVirtualWhiteBarValue(TargetOldVirtualWhiteValue)
   end
 end
+
 function WBP_RGPartInfo_C:GetBodyPartDetailByIndex(PartIndex)
   local Result, CharacterRow = GetRowDataForCharacter(self.OwningCharacter:GetTypeID())
   if not Result then
@@ -334,4 +356,5 @@ function WBP_RGPartInfo_C:GetBodyPartDetailByIndex(PartIndex)
   end
   return BodyPartDetail
 end
+
 return WBP_RGPartInfo_C

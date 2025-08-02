@@ -1,11 +1,14 @@
 local WBP_UpgradeButton_C = UnLua.Class()
+
 function WBP_UpgradeButton_C:Construct()
   self.Btn_Main.OnClicked:Add(self, WBP_UpgradeButton_C.BindOnMainButtonClicked)
   EventSystem.AddListener(self, EventDef.Lobby.HeroStarUpgradeItemClicked, WBP_UpgradeButton_C.BindOnHeroStarUpgradeItemClicked)
 end
+
 function WBP_UpgradeButton_C:BindOnMainButtonClicked()
   EventSystem.Invoke(EventDef.Lobby.HeroStarUpgradeItemClicked, self.StarLevel)
 end
+
 function WBP_UpgradeButton_C:RefreshButtonStatus(CurHeroStar)
   self.CurHeroStar = CurHeroStar
   if CurHeroStar < self.StarLevel then
@@ -14,6 +17,7 @@ function WBP_UpgradeButton_C:RefreshButtonStatus(CurHeroStar)
     self.Btn_Main:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
   end
 end
+
 function WBP_UpgradeButton_C:BindOnHeroStarUpgradeItemClicked(CurStarLevel)
   local Color = UE.FSlateColor()
   Color.ColorUseRule = UE.ESlateColorStylingMode.UseColor_Specified
@@ -31,7 +35,9 @@ function WBP_UpgradeButton_C:BindOnHeroStarUpgradeItemClicked(CurStarLevel)
     self.Txt_StarLevel:SetColorAndOpacity(Color)
   end
 end
+
 function WBP_UpgradeButton_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.HeroStarUpgradeItemClicked, WBP_UpgradeButton_C.BindOnHeroStarUpgradeItemClicked, self)
 end
+
 return WBP_UpgradeButton_C

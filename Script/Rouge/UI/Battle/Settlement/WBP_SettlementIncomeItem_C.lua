@@ -1,6 +1,8 @@
 local WBP_SettlementIncomeItem_C = UnLua.Class()
+
 function WBP_SettlementIncomeItem_C:Construct()
 end
+
 function WBP_SettlementIncomeItem_C:InitByItemId(IncrementValue, ItemId, Name, bIsHideWhenIncrementZero, PrivilegeDetailsParam)
   if bIsHideWhenIncrementZero and 0 == IncrementValue then
     self:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -46,6 +48,7 @@ function WBP_SettlementIncomeItem_C:InitByItemId(IncrementValue, ItemId, Name, b
     end
   end
 end
+
 function WBP_SettlementIncomeItem_C:Init(IncrementValue, Name, Icon, bIsHideWhenIncrementZero)
   if bIsHideWhenIncrementZero and 0 == IncrementValue then
     self:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -57,6 +60,7 @@ function WBP_SettlementIncomeItem_C:Init(IncrementValue, Name, Icon, bIsHideWhen
   self.Txt_Num:SetText(IncrementValue)
   SetImageBrushBySoftObject(self.Img_Icon, Icon)
 end
+
 function WBP_SettlementIncomeItem_C:ShowBeginnerClearFlag()
   UpdateVisibility(self.Overlay_ExtraFlag, true)
   if SettlementBeginnerClearConfig.Name then
@@ -68,8 +72,11 @@ function WBP_SettlementIncomeItem_C:ShowBeginnerClearFlag()
     UpdateVisibility(self.Icon_Privilege, false)
   end
 end
+
 function WBP_SettlementIncomeItem_C:UnInit()
 end
+
 function WBP_SettlementIncomeItem_C:Destruct()
 end
+
 return WBP_SettlementIncomeItem_C

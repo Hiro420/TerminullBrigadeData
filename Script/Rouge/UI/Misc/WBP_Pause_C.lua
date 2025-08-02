@@ -4,6 +4,7 @@ local rapidjson = require("rapidjson")
 local WBP_Pause_C = UnLua.Class()
 local ExitGameTipId = 303018
 local EscKeyName = "PauseGame"
+
 function WBP_Pause_C:Construct()
   self.Btn_Continue.OnClicked:Add(self, self.BindOnContinueButtonClicked)
   self.Btn_BackToLobby.OnClicked:Add(self, WBP_Pause_C.BindOnBackToLobbyClicked)
@@ -12,6 +13,7 @@ function WBP_Pause_C:Construct()
   self.Btn_PreventFreeze.OnClicked:Add(self, WBP_Pause_C.BindOnPreventFreezeButtonClicked)
   self.Btn_CustomerService.OnClicked:Add(self, self.BindOnCustomerServiceClicked)
 end
+
 function WBP_Pause_C:FocusInput()
   self.Overridden.FocusInput(self)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
@@ -32,10 +34,28 @@ function WBP_Pause_C:FocusInput()
     })
   end
   self:PushInputAction()
+  local BtnList = {
+    self.Btn_Continue,
+    self.Btn_PreventFreeze_1,
+    self.Btn_GameSetting,
+    self.Btn_PreventFreeze,
+    self.Btn_CustomerService,
+    self.Btn_BackToLobby,
+    self.Btn_Exit
+  }
+  self.VisibleBtnList = {}
+  for Index, Btn in ipairs(BtnList) do
+    if Btn:IsVisible() and Btn:GetParent():GetParent():IsVisible() then
+      table.insert(self.VisibleBtnList, Btn)
+    end
+  end
+  self.CurrentNavigationIndex = 1
 end
+
 function WBP_Pause_C:ListenForEscKeyPressed(...)
   RGUIMgr:HideUI(UIConfig.WBP_Pause_C.UIName)
 end
+
 function WBP_Pause_C:UnfocusInput(...)
   self.Overridden.UnfocusInput(self)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
@@ -44,9 +64,11 @@ function WBP_Pause_C:UnfocusInput(...)
     StopListeningForInputAction(self, EscKeyName, UE.EInputEvent.IE_Pressed)
   end
 end
+
 function WBP_Pause_C:BindOnContinueButtonClicked()
   RGUIMgr:HideUI(UIConfig.WBP_Pause_C.UIName)
 end
+
 function WBP_Pause_C:BindOnBackToLobbyClicked()
   if LogicSettlement.IsShown() then
     return
@@ -108,6 +130,7 @@ function WBP_Pause_C:BindOnBackToLobbyClicked()
   end
   Function()
 end
+
 function WBP_Pause_C:BindOnExitClicked()
   ShowWaveWindowWithDelegate(ExitGameTipId, {}, {
     self,
@@ -124,6 +147,7 @@ function WBP_Pause_C:BindOnExitClicked()
     end
   })
 end
+
 function WBP_Pause_C:BindOnGameSettingButtonClicked()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGUIManager)
   if UIManager then
@@ -131,6 +155,7 @@ function WBP_Pause_C:BindOnGameSettingButtonClicked()
   end
   LogicGameSetting.ShowGameSettingPanel()
 end
+
 function WBP_Pause_C:BindOnPreventFreezeButtonClicked()
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
   if UE.RGUtil.IsUObjectValid(PC) then
@@ -148,20 +173,24 @@ function WBP_Pause_C:BindOnPreventFreezeButtonClicked()
     RGUIMgr:HideUI(UIConfig.WBP_Pause_C.UIName)
   end
 end
+
 function WBP_Pause_C:BindOnCustomerServiceClicked()
-  local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGUIManager)
-  if UIManager then
-    UIManager:Switch(UE.UGameplayStatics.GetObjectClass(self))
-  end
-  if LogicLobby.IsInLobbyLevel() then
-    UIMgr:Show(ViewID.UI_CustomerServiceView, true)
-  else
-    local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
-    if not UIManager then
-      return
-    end
-    local WidgetClass = UE.UClass.Load("/Game/Rouge/UI/CustomerService/WBP_CustomerServiceView.WBP_CustomerServiceView_C")
-    UIManager:Switch(WidgetClass, true)
-  end
 end
+
+function WBP_Pause_C:DoCustomNavigation_Up()
+  self.CurrentNavigationIndex = self.CurrentNavigationIndex - 1
+  if self.CurrentNavigationIndex <= 0 then
+    self.CurrentNavigationIndex = #self.VisibleBtnList
+  end
+  return self.VisibleBtnList[self.CurrentNavigationIndex]
+end
+
+function WBP_Pause_C:DoCustomNavigation_Down()
+  self.CurrentNavigationIndex = self.CurrentNavigationIndex + 1
+  if self.CurrentNavigationIndex > #self.VisibleBtnList then
+    self.CurrentNavigationIndex = 1
+  end
+  return self.VisibleBtnList[self.CurrentNavigationIndex]
+end
+
 return WBP_Pause_C

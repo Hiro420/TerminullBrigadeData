@@ -4,25 +4,32 @@ local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local PandoraData = require("Modules.Pandora.PandoraData")
 local WBP_PandoraRootPanel = Class(ViewBase)
+
 function WBP_PandoraRootPanel:BindClickHandler()
 end
+
 function WBP_PandoraRootPanel:UnBindClickHandler()
 end
+
 function WBP_PandoraRootPanel:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function WBP_PandoraRootPanel:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_PandoraRootPanel:OnRollback()
   self:SetEnhancedInputActionBlocking(true)
   self:SetEnhancedInputActionPriority(2)
 end
+
 function WBP_PandoraRootPanel:OnHideByOther()
   self:SetEnhancedInputActionBlocking(false)
   self:SetEnhancedInputActionPriority(0)
 end
+
 function WBP_PandoraRootPanel:OnShow(PandoraWidget, AppId)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -47,9 +54,11 @@ function WBP_PandoraRootPanel:OnShow(PandoraWidget, AppId)
   self:SetEnhancedInputActionBlocking(true)
   self:SetEnhancedInputActionPriority(0)
 end
+
 function WBP_PandoraRootPanel:RemovePandoraWidget()
   self.PandoraWidgetPanel:ClearChildren()
 end
+
 function WBP_PandoraRootPanel:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -64,6 +73,7 @@ function WBP_PandoraRootPanel:OnHide()
   EventSystem.Invoke(EventDef.Pandora.pandoraOnCloseRootPanel, self.AppId)
   self:SetEnhancedInputActionBlocking(false)
 end
+
 function WBP_PandoraRootPanel:OnBackShow()
   self.timer_set_focus = GlobalTimer.DelayCallback(0.3, function()
     self.timer_set_focus = nil
@@ -72,6 +82,7 @@ function WBP_PandoraRootPanel:OnBackShow()
     end
   end)
 end
+
 function WBP_PandoraRootPanel:InvalidDisruptiveUI()
   if self.AppId and self.OpenTimestamp then
     if not PandoraData:IsDisruptiveUI(self.AppId) then
@@ -82,4 +93,5 @@ function WBP_PandoraRootPanel:InvalidDisruptiveUI()
     end
   end
 end
+
 return WBP_PandoraRootPanel

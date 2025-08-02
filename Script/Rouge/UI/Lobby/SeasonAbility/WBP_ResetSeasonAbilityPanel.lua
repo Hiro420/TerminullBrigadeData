@@ -5,21 +5,26 @@ local UIUtil = require("Framework.UIMgr.UIUtil")
 local SeasonAbilityData = require("Modules.SeasonAbility.SeasonAbilityData")
 local SeasonAbilityHandler = require("Protocol.SeasonAbility.SeasonAbilityHandler")
 local WBP_ResetSeasonAbilityPanel = Class(ViewBase)
+
 function WBP_ResetSeasonAbilityPanel:BindClickHandler()
   self.Btn_Confirm.OnMainButtonClicked:Add(self, self.BindOnConfirmButtonClicked)
   self.Btn_Cancel.OnMainButtonClicked:Add(self, self.BindOnCancelButtonClicked)
 end
+
 function WBP_ResetSeasonAbilityPanel:UnBindClickHandler()
   self.Btn_Confirm.OnMainButtonClicked:Remove(self, self.BindOnConfirmButtonClicked)
   self.Btn_Cancel.OnMainButtonClicked:Remove(self, self.BindOnCancelButtonClicked)
 end
+
 function WBP_ResetSeasonAbilityPanel:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function WBP_ResetSeasonAbilityPanel:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_ResetSeasonAbilityPanel:OnShow(HeroId)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -48,13 +53,16 @@ function WBP_ResetSeasonAbilityPanel:OnShow(HeroId)
   self.WBP_InteractTipWidget:BindInteractAndClickEvent(self, self.BindOnCancelButtonClicked)
   self:SetEnhancedInputActionBlocking(true)
 end
+
 function WBP_ResetSeasonAbilityPanel:BindOnConfirmButtonClicked(...)
   SeasonAbilityHandler:RequestResetSeasonAbilityToServer(self.CurHeroId)
   UIMgr:Hide(ViewID.UI_ResetSeasonAbilityPanel)
 end
+
 function WBP_ResetSeasonAbilityPanel:BindOnCancelButtonClicked(...)
   UIMgr:Hide(ViewID.UI_ResetSeasonAbilityPanel)
 end
+
 function WBP_ResetSeasonAbilityPanel:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -62,4 +70,5 @@ function WBP_ResetSeasonAbilityPanel:OnHide()
   self.WBP_InteractTipWidget:UnBindInteractAndClickEvent(self, self.BindOnCancelButtonClicked)
   self:SetEnhancedInputActionBlocking(false)
 end
+
 return WBP_ResetSeasonAbilityPanel

@@ -1,6 +1,8 @@
 local WBP_IGuide_GenericModify_C = UnLua.Class()
+
 function WBP_IGuide_GenericModify_C:Construct()
 end
+
 function WBP_IGuide_GenericModify_C:Destruct()
   EventSystem.RemoveEventAllListener(EventDef.IllustratedGuide.OnFocusModify)
   EventSystem.RemoveEventAllListener(EventDef.IllustratedGuide.OnGenericModifyGodItemClicked)
@@ -8,6 +10,7 @@ function WBP_IGuide_GenericModify_C:Destruct()
   EventSystem.RemoveEventAllListener(EventDef.IllustratedGuide.OnShowSkillTips)
   EventSystem.RemoveEventAllListener(EventDef.MainPanel.MainPanelChanged)
 end
+
 function WBP_IGuide_GenericModify_C:AddBtnEvent()
   self.TileView_GenericModify_1.BP_OnItemClicked:Add(self, function(self, itemObj)
     if nil == itemObj then
@@ -50,12 +53,15 @@ function WBP_IGuide_GenericModify_C:AddBtnEvent()
     self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Add(self, WBP_IGuide_GenericModify_C.GameClose)
   end
 end
+
 function WBP_IGuide_GenericModify_C:LobbySettings()
   LogicGameSetting.ShowGameSettingPanel()
 end
+
 function WBP_IGuide_GenericModify_C:LobbyClose()
   UIMgr:Hide(ViewID.UI_IllustratedGuide, true)
 end
+
 function WBP_IGuide_GenericModify_C:GameClose()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGUIManager:StaticClass())
   if UIManager and UIManager:IsValid() then
@@ -69,26 +75,31 @@ function WBP_IGuide_GenericModify_C:GameClose()
     end
   end
 end
+
 function WBP_IGuide_GenericModify_C:OnGenericModifyGodItemHover(GodId, bHover)
   UpdateVisibility(self.WBP_GenericModifyGodTips, bHover)
   if bHover then
     self.WBP_GenericModifyGodTips:OnHover(GodId)
   end
 end
+
 function WBP_IGuide_GenericModify_C:OnExitPanel()
   self:PlayAnimation(self.Ani_out)
   self.WBP_InteractTipWidget:UnBindInteractAndClickEvent(self, WBP_IGuide_GenericModify_C.FocusGenericModify, self.WBP_InteractTipWidget.KeyRowName)
 end
+
 function WBP_IGuide_GenericModify_C:OnEnter(Index)
   if 2 == Index then
     self:PlayAnimation(self.Ani_in)
     self.WBP_InteractTipWidget:BindInteractAndClickEvent(self, WBP_IGuide_GenericModify_C.FocusGenericModify, self.WBP_InteractTipWidget.KeyRowName)
   end
 end
+
 function WBP_IGuide_GenericModify_C:OnMainPanelExit(Widget)
   if Widget == self then
   end
 end
+
 function WBP_IGuide_GenericModify_C:OnMainPanelChanged(a, b, MainPanel)
   print("ListenForIllustratedGuide", "OnMainPanelChanged")
   self.MainPanel = MainPanel
@@ -96,6 +107,7 @@ function WBP_IGuide_GenericModify_C:OnMainPanelChanged(a, b, MainPanel)
   if b == self then
   end
 end
+
 function WBP_IGuide_GenericModify_C:OnShowSkillTips(bShow, Info)
   UpdateVisibility(self.SizeBox_Tips, bShow)
   local bShowMovie = false
@@ -149,6 +161,7 @@ function WBP_IGuide_GenericModify_C:OnShowSkillTips(bShow, Info)
     end
   end
 end
+
 function WBP_IGuide_GenericModify_C:InitGenericModify()
   self:AddBtnEvent()
   local Player = self:GetOwningPlayerPawn()
@@ -164,6 +177,7 @@ function WBP_IGuide_GenericModify_C:InitGenericModify()
   self:InitGodList()
   UpdateVisibility(self.WBP_InteractTipWidgetSetting, Logic_IllustratedGuide.IsLobbyRoom())
 end
+
 function WBP_IGuide_GenericModify_C:OnAddModify(Modify)
   self:InitGodList()
   local Result, RowInfo = GetRowData(DT.DT_GenericModify, Modify.ModifyId)
@@ -171,6 +185,7 @@ function WBP_IGuide_GenericModify_C:OnAddModify(Modify)
     Logic_IllustratedGuide.FocusModify(RowInfo)
   end
 end
+
 function WBP_IGuide_GenericModify_C:OnFocusModifySubGroupListChanged(SubGroupList)
   Logic_IllustratedGuide.CurFocusGenericModifySubGroup = {}
   for key, SubGroupId in pairs(SubGroupList) do
@@ -178,6 +193,7 @@ function WBP_IGuide_GenericModify_C:OnFocusModifySubGroupListChanged(SubGroupLis
   end
   EventSystem.Invoke(EventDef.IllustratedGuide.OnFocusModify)
 end
+
 function WBP_IGuide_GenericModify_C:InitGodList()
   if Logic_IllustratedGuide.IsLobbyRoom() then
     self:OnGodListItemClicked(7)
@@ -199,6 +215,7 @@ function WBP_IGuide_GenericModify_C:InitGodList()
     end
   end
 end
+
 function WBP_IGuide_GenericModify_C:OnGodListItemClicked(GodId)
   self.WBP_GenericModifyGodTips:OnHover(GodId)
   if Logic_IllustratedGuide.CurGodId == GodId then
@@ -213,6 +230,7 @@ function WBP_IGuide_GenericModify_C:OnGodListItemClicked(GodId)
   end
   self:RefreshGenericModifyListByGodId(GodId)
 end
+
 function WBP_IGuide_GenericModify_C:OnGenericModifyListItemClicked(itemObj)
   if itemObj.Data then
     if Logic_IllustratedGuide.CurGenericModifyInfo == itemObj.Data then
@@ -224,6 +242,7 @@ function WBP_IGuide_GenericModify_C:OnGenericModifyListItemClicked(itemObj)
     EventSystem.Invoke(EventDef.IllustratedGuide.OnGenericModifyItemSelectionChanged, itemObj.Data.RowName)
   end
 end
+
 function WBP_IGuide_GenericModify_C:RefreshGenericModifyListByGodId(GodId)
   self.TileView_GenericModify_Dual:ClearListItems()
   self.TileView_GenericModify_1:ClearListItems()
@@ -281,10 +300,12 @@ function WBP_IGuide_GenericModify_C:RefreshGenericModifyListByGodId(GodId)
   self.Text_GenericModify_7:SetText(tostring(CurPassiveNum) .. "/" .. tostring(PassiveSum))
   self.Text_GenericModify_3:SetText(tostring(CurInitiativeSum) .. "/" .. tostring(InitiativeSum))
 end
+
 function WBP_IGuide_GenericModify_C:RefreshDetailPanelAndPreconditions(ModifyInfo)
   self.WBP_IGuide_GM_Detail:RefreshDetailPanel(ModifyInfo, true)
   self.WBP_IGuide_GM_Detail_Preconditions:RefreshPreconditions(ModifyInfo)
 end
+
 function WBP_IGuide_GenericModify_C:FocusGenericModify()
   if 0 == #self.Data.ModifieConfig.FrontConditions:ToTable() then
     return
@@ -296,6 +317,7 @@ function WBP_IGuide_GenericModify_C:FocusGenericModify()
     LuaAddClickStatistics("IguideFocus")
   end
 end
+
 function WBP_IGuide_GenericModify_C:RefreshFocusBtn(Data)
   if Logic_IllustratedGuide.IsLobbyRoom() then
     UpdateVisibility(self.Btn_Focus, false)
@@ -315,11 +337,14 @@ function WBP_IGuide_GenericModify_C:RefreshFocusBtn(Data)
     UpdateVisibility(self.Overlay_Existed, true)
   end
 end
+
 function WBP_IGuide_GenericModify_C:BP_OnItemIsHoveredChanged(Item, bHovered)
 end
+
 function WBP_IGuide_GenericModify_C:OnMouseButtonDown(MyGeometry, MouseEvent)
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function WBP_IGuide_GenericModify_C:DoCustomNavigation_God(Type)
   if self.NavigationGodId == nil then
     self.NavigationGodId = Logic_IllustratedGuide.CurGodId
@@ -338,4 +363,5 @@ function WBP_IGuide_GenericModify_C:DoCustomNavigation_God(Type)
   print("WBP_IGuide_GenericModify_C", self.NavigationGodId, self.NavigationGodId, Index)
   EventSystem.Invoke(EventDef.IllustratedGuide.OnCustomNavigation_God, self.NavigationGodId)
 end
+
 return WBP_IGuide_GenericModify_C

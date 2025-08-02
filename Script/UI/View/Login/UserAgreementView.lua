@@ -5,6 +5,7 @@ local UIUtil = require("Framework.UIMgr.UIUtil")
 local LoginData = require("Modules.Login.LoginData")
 local EscKeyName = "PauseGame"
 local UserAgreementView = Class(ViewBase)
+
 function UserAgreementView:BindClickHandler()
   self.ScrollList.OnUserScrolled:Add(self, self.BindOnUserScrolled)
   self.Btn_Confirm.OnClicked:Add(self, self.BindOnConfirmButtonClicked)
@@ -16,6 +17,7 @@ function UserAgreementView:BindClickHandler()
     })
   end
 end
+
 function UserAgreementView:UnBindClickHandler()
   self.ScrollList.OnUserScrolled:Remove(self, self.BindOnUserScrolled)
   self.Btn_Confirm.OnClicked:Remove(self, self.BindOnConfirmButtonClicked)
@@ -24,10 +26,12 @@ function UserAgreementView:UnBindClickHandler()
     StopListeningForInputAction(self, EscKeyName, UE.EInputEvent.IE_Pressed)
   end
 end
+
 function UserAgreementView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function UserAgreementView:BindOnUserScrolled(CurrentOffset)
   local EndOffset = self.ScrollList:GetScrollOffsetOfEnd()
   local ViewOffsetFraction = self.ScrollList:GetViewOffsetFraction()
@@ -37,9 +41,11 @@ function UserAgreementView:BindOnUserScrolled(CurrentOffset)
     self.Btn_Confirm:SetIsEnabled(false)
   end
 end
+
 function UserAgreementView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function UserAgreementView:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -54,6 +60,7 @@ function UserAgreementView:OnShow(...)
     end
   }, 0.05, false)
 end
+
 function UserAgreementView:BindOnConfirmButtonClicked()
   local LoginSaveGameName = LoginData:GetLoginSavedGameName()
   local SaveGameObject
@@ -67,12 +74,15 @@ function UserAgreementView:BindOnConfirmButtonClicked()
   UIMgr:Hide(ViewID.UI_UserAgreement)
   UIMgr:Show(ViewID.UI_PrivacyPolicy)
 end
+
 function UserAgreementView:BindOnEscKeyPressed()
   UIMgr:Hide(ViewID.UI_UserAgreement)
 end
+
 function UserAgreementView:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
   end
 end
+
 return UserAgreementView

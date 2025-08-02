@@ -3,17 +3,22 @@ local ViewBase = require("Framework.UIMgr.ViewBase")
 local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local WBP_ModeSelectionUnlockPanel = Class(ViewBase)
+
 function WBP_ModeSelectionUnlockPanel:BindClickHandler()
 end
+
 function WBP_ModeSelectionUnlockPanel:UnBindClickHandler()
 end
+
 function WBP_ModeSelectionUnlockPanel:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function WBP_ModeSelectionUnlockPanel:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_ModeSelectionUnlockPanel:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -30,6 +35,7 @@ function WBP_ModeSelectionUnlockPanel:OnShow(...)
   self:RefreshPanel()
   self:SetFocus()
 end
+
 function WBP_ModeSelectionUnlockPanel:RefreshPanel(...)
   local TargetWorldId = self.ShowFloorWorldIdList[1]
   if not TargetWorldId then
@@ -78,6 +84,7 @@ function WBP_ModeSelectionUnlockPanel:RefreshPanel(...)
     self.Txt_FloorInfo:SetText(UE.FTextFormat(FloorInfoText, WorldRowInfo.Name, TargetWorldFloor))
   end
 end
+
 function WBP_ModeSelectionUnlockPanel:OnAnimationFinished(InAnimation)
   if InAnimation == self.WorldFloorUnlockAnim_IN then
     self:RefreshPanel()
@@ -85,21 +92,25 @@ function WBP_ModeSelectionUnlockPanel:OnAnimationFinished(InAnimation)
     self:RefreshPanel()
   end
 end
+
 function WBP_ModeSelectionUnlockPanel:OnMouseButtonDown(MyGeometry, MouseEvent)
   if self.IsWorldUnlock then
     self:PlayAnimationForward(self.WorldUnlockAnim_OUT)
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function WBP_ModeSelectionUnlockPanel:OnKeyDown(MyGeometry, InKeyEvent)
   if self.IsWorldUnlock then
     self:PlayAnimationForward(self.WorldUnlockAnim_OUT)
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function WBP_ModeSelectionUnlockPanel:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
   end
 end
+
 return WBP_ModeSelectionUnlockPanel

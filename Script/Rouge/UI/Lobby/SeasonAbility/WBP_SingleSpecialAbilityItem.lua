@@ -1,6 +1,7 @@
 local WBP_SingleSpecialAbilityItem = UnLua.Class()
 local SeasonAbilityData = require("Modules.SeasonAbility.SeasonAbilityData")
 local SeasonAbilityHandler = require("Protocol.SeasonAbility.SeasonAbilityHandler")
+
 function WBP_SingleSpecialAbilityItem:Show(RowInfo, Index)
   UpdateVisibility(self, true)
   self.RowInfo = RowInfo
@@ -27,6 +28,7 @@ function WBP_SingleSpecialAbilityItem:Show(RowInfo, Index)
     self:PlayAnimationForward(self.Ani_in)
   end
 end
+
 function WBP_SingleSpecialAbilityItem:RefreshStatus(...)
   if not self.RowInfo then
     return
@@ -37,6 +39,7 @@ function WBP_SingleSpecialAbilityItem:RefreshStatus(...)
   UpdateVisibility(self.Img_ReceivedBottom, Status == SpecialAbilityStatus.Activated)
   UpdateVisibility(self.Img_Bottom, Status ~= SpecialAbilityStatus.Activated)
 end
+
 function WBP_SingleSpecialAbilityItem:GetToolTipWidget(...)
   if not self.ToolTipWidget then
     local WidgetClass = GetAssetByPath("/Game/Rouge/UI/Lobby/SeasonAbility/WBP_SpecialAbilityTip.WBP_SpecialAbilityTip_C", true)
@@ -45,20 +48,24 @@ function WBP_SingleSpecialAbilityItem:GetToolTipWidget(...)
   self.ToolTipWidget:RefreshInfo(self.RowInfo.SpecialAbilityID)
   return self.ToolTipWidget
 end
+
 function WBP_SingleSpecialAbilityItem:OnMouseEnter(...)
   UpdateVisibility(self.HoverPanel, true)
   self:PlayAnimationForward(self.Ani_hover_in)
 end
+
 function WBP_SingleSpecialAbilityItem:OnMouseLeave(...)
   UpdateVisibility(self.HoverPanel, false)
   self:PlayAnimationForward(self.Ani_hover_out)
 end
+
 function WBP_SingleSpecialAbilityItem:OnMouseButtonDown(...)
   local Status = SeasonAbilityData:GetSpecialAbilityStatus(self.RowInfo.SpecialAbilityID)
   if Status == SpecialAbilityStatus.UnLock then
     SeasonAbilityHandler:RequestActivateSpecialAbilityToServer(self.RowInfo.SpecialAbilityID)
   end
 end
+
 function WBP_SingleSpecialAbilityItem:Hide(...)
   UpdateVisibility(self, false)
   self.RowInfo = nil
@@ -66,7 +73,9 @@ function WBP_SingleSpecialAbilityItem:Hide(...)
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.AnimInTimer)
   end
 end
+
 function WBP_SingleSpecialAbilityItem:Destruct(...)
   self:Hide()
 end
+
 return WBP_SingleSpecialAbilityItem

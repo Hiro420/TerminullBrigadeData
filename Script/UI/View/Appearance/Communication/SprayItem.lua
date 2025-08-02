@@ -10,12 +10,15 @@ end
 local EndDrag = function(self)
   EventSystem.Invoke(EventDef.Communication.OnRouletteEndDrag, self)
 end
+
 function SprayItem:Construct()
   EventSystem.AddListenerNew(EventDef.Communication.OnCommSelectChanged, self, self.BindOnCommSelectChanged)
 end
+
 function SprayItem:Destruct()
   EventSystem.RemoveListenerNew(EventDef.Communication.OnCommSelectChanged, self, self.BindOnCommSelectChanged)
 end
+
 function SprayItem:OnListItemObjectSet(ListItemObj)
   self.DataObj = ListItemObj
   local DataObjTemp = ListItemObj
@@ -33,17 +36,21 @@ function SprayItem:OnListItemObjectSet(ListItemObj)
   self.WBP_DragDropItem:SetDragAvailableCallback(self, self, self.Img_DragIcon, SlotDragAvailable, EndDrag)
   self.WBP_RedDotView:ChangeRedDotIdByTag(DataObjTemp.CommId)
 end
+
 function SprayItem:BP_OnEntryReleased()
   self.WBP_RedDotView:ChangeRedDotId("")
   self.DataObj = nil
   self.WBP_Item:SetSel(false)
 end
+
 function SprayItem:OnMouseEnter()
   self.WBP_Item.MainBtn:OnSlateHandleHovered()
 end
+
 function SprayItem:OnMouseLeave()
   self.WBP_Item.MainBtn:OnSlateHandleUnHovered()
 end
+
 function SprayItem:OnMouseButtonDown(MyGeometry, MouseEvent)
   if not UE.RGUtil.IsUObjectValid(self.DataObj) then
     return
@@ -59,6 +66,7 @@ function SprayItem:OnMouseButtonDown(MyGeometry, MouseEvent)
   self.DataObj.ParentView:SelectSpray(self.DataObj.CommId)
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function SprayItem:BindOnCommSelectChanged(CommId)
   if not self.DataObj then
     return
@@ -67,4 +75,5 @@ function SprayItem:BindOnCommSelectChanged(CommId)
   self.WBP_Item:SetSel(self.DataObj.bIsSelected)
   UpdateVisibility(self.Img_Selected, self.DataObj.bIsSelected)
 end
+
 return SprayItem

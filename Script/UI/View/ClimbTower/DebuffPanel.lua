@@ -1,14 +1,18 @@
 local rapidjson = require("rapidjson")
 local DebuffPanel = UnLua.Class()
+
 function DebuffPanel:Destruct()
   self.WBP_InteractTipWidgetEsc:UnBindInteractAndClickEvent(self, self.CloseWidget, "PauseGame")
 end
+
 function DebuffPanel:Construct()
 end
+
 function DebuffPanel:CloseWidget()
   UpdateVisibility(self, false)
   self.WBP_InteractTipWidgetEsc:UnBindInteractAndClickEvent(self, self.CloseWidget, "PauseGame")
 end
+
 function DebuffPanel:Init(ShowPlayerList, DebuffListShowType)
   local Index = 1
   for i, UserId in pairs(ShowPlayerList) do
@@ -40,6 +44,7 @@ function DebuffPanel:Init(ShowPlayerList, DebuffListShowType)
   end
   self.WBP_InteractTipWidgetEsc:BindInteractAndClickEvent(self, self.CloseWidget, "PauseGame")
 end
+
 function DebuffPanel:SetPlayerInfo(UserId, Item)
   DataMgr.GetOrQueryPlayerInfo({UserId}, false, function(PlayerCacheInfoList)
     local PlayerInfoList = DataMgr.CacheInfosToPlayerInfoList(PlayerCacheInfoList)
@@ -67,4 +72,5 @@ function DebuffPanel:SetPlayerInfo(UserId, Item)
     end
   end)
 end
+
 return DebuffPanel

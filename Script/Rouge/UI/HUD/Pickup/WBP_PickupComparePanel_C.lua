@@ -1,4 +1,5 @@
 local WBP_PickupComparePanel_C = UnLua.Class()
+
 function WBP_PickupComparePanel_C:Construct()
   self.Overridden.Construct(self)
   self.OnHidden:Add(self, WBP_PickupComparePanel_C.BindOnHidden)
@@ -6,9 +7,11 @@ function WBP_PickupComparePanel_C:Construct()
   end
   EventSystem.AddListener(self, EventDef.GameSettings.OnKeyChanged, WBP_PickupComparePanel_C.BindOnKeyChanged)
 end
+
 function WBP_PickupComparePanel_C:BindOnKeyChanged()
   self:RefreshOperateKeyText()
 end
+
 function WBP_PickupComparePanel_C:InitInfo(PickupActor)
   self.PickupActor = PickupActor
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -45,15 +48,18 @@ function WBP_PickupComparePanel_C:InitInfo(PickupActor)
   end
   self:RefreshOperateKeyText()
 end
+
 function WBP_PickupComparePanel_C:RefreshOperateKeyText()
   self.PickUp:SetKeyText(LogicGameSetting.GetCurSelectedKeyNameByKeyRowName(self.PickUp.CustomKeyRowName))
   self.Decompose:SetKeyText(LogicGameSetting.GetCurSelectedKeyNameByKeyRowName(self.Decompose.CustomKeyRowName))
   self.Replace:SetKeyText(LogicGameSetting.GetCurSelectedKeyNameByKeyRowName(self.Replace.CustomKeyRowName))
 end
+
 function WBP_PickupComparePanel_C:BindOnAccessoryChanged()
   self:RefreshCurCompareWeaponInfo()
   self:RefreshInscriptionList()
 end
+
 function WBP_PickupComparePanel_C:InitAccessoryInfo(AccessoryId)
   self.AccessoryId = AccessoryId
   self.SwitchWeaponAccessory:SetActiveWidgetIndex(1)
@@ -65,6 +71,7 @@ function WBP_PickupComparePanel_C:InitAccessoryInfo(AccessoryId)
   self:RefreshInscriptionList()
   self:ClearDecomposeTimer()
 end
+
 function WBP_PickupComparePanel_C:RefreshCurCompareWeaponInfo()
   local CurCompareWeapon = self:GetCurCompareWeapon()
   if not CurCompareWeapon then
@@ -87,6 +94,7 @@ function WBP_PickupComparePanel_C:RefreshCurCompareWeaponInfo()
     self.CompareWeaponInfo:CompareAccessoryAttributeInfo(self.AccessoryId)
   end
 end
+
 function WBP_PickupComparePanel_C:GetCurCompareWeapon()
   local EquipmentComp = self:GetOwningPlayerPawn():GetComponentByClass(UE.URGEquipmentComponent.StaticClass())
   if not EquipmentComp then
@@ -112,6 +120,7 @@ function WBP_PickupComparePanel_C:GetCurCompareWeapon()
   end
   return TargetWeapon
 end
+
 function WBP_PickupComparePanel_C:RefreshInscriptionList()
   if self.IsWeapon then
     self.CompareInscriptionList:InitInfo(self:GetCurCompareWeapon(), self.IsWeapon, self.PickupActor:GetWeapon())
@@ -121,6 +130,7 @@ function WBP_PickupComparePanel_C:RefreshInscriptionList()
     self.InscriptionNounExplainList:InitInfo(self:GetCurCompareWeapon(), self.IsWeapon, self.AccessoryId)
   end
 end
+
 function WBP_PickupComparePanel_C:ChangeCanPickupPanel()
   self.DisablePanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   local CurCompareWeapon = self:GetCurCompareWeapon()
@@ -136,6 +146,7 @@ function WBP_PickupComparePanel_C:ChangeCanPickupPanel()
     end
   end
 end
+
 function WBP_PickupComparePanel_C:ChangeQualityVisibility()
   local EquipmentComp = self:GetOwningPlayerPawn():GetComponentByClass(UE.URGEquipmentComponent.StaticClass())
   if not EquipmentComp then
@@ -177,11 +188,13 @@ function WBP_PickupComparePanel_C:ChangeQualityVisibility()
     self.Img_CompareQuality:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function WBP_PickupComparePanel_C:ListenForChangeSimpleUI()
   LogicPickup.IsShowComparePanel = not LogicPickup.IsShowComparePanel
   LogicPickup.ShowOptimalWidget()
   self:Hide(true, true)
 end
+
 function WBP_PickupComparePanel_C:BindOnHidden()
   if IsListeningForInputAction(self, self.ActionName) then
     StopListeningForInputAction(self, self.ActionName, UE.EInputEvent.IE_Pressed)
@@ -193,6 +206,7 @@ function WBP_PickupComparePanel_C:BindOnHidden()
   end
   EventSystem.RemoveListener(EventDef.GameSettings.OnKeyChanged, WBP_PickupComparePanel_C.BindOnKeyChanged, self)
 end
+
 function WBP_PickupComparePanel_C:Destruct()
   self.Overridden.Destruct(self)
   self.OnHidden:Remove(self, WBP_PickupComparePanel_C.BindOnHidden)
@@ -207,4 +221,5 @@ function WBP_PickupComparePanel_C:Destruct()
   end
   EventSystem.RemoveListener(EventDef.GameSettings.OnKeyChanged, WBP_PickupComparePanel_C.BindOnKeyChanged, self)
 end
+
 return WBP_PickupComparePanel_C

@@ -4,6 +4,7 @@ local rapidjson = require("rapidjson")
 local DrawCardData = require("Modules.DrawCard.DrawCardData")
 local DrawCardHandler = {}
 local RequestingList = {}
+
 function DrawCardHandler.RequestGetCardPoolListFromServer(CallBack)
   if RequestingList["mallservice/gachainfo"] then
     print("mallservice/gachainfo is requesting")
@@ -33,6 +34,7 @@ function DrawCardHandler.RequestGetCardPoolListFromServer(CallBack)
     end
   })
 end
+
 function DrawCardHandler.RequestDrawCardToServer(PondId, DrawTimes)
   if RequestingList["mallservice/dogacha"] then
     print("mallservice/dogacha is requesting")
@@ -56,4 +58,5 @@ function DrawCardHandler.RequestDrawCardToServer(PondId, DrawTimes)
     end
   })
 end
+
 return DrawCardHandler

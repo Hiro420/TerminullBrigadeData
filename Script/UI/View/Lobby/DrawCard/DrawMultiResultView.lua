@@ -10,6 +10,7 @@ local RarityMap = {
   [4] = UE.ERGItemRarity.EIR_Legend,
   [5] = UE.ERGItemRarity.EIR_Immortal
 }
+
 function DrawMultiResultView:Construct()
   self.ButtonMultiContinue.OnClicked:Add(self, self.DrawMulti)
   self.PondId = nil
@@ -19,6 +20,7 @@ function DrawMultiResultView:Construct()
   self.DrawTimes = 0
   self.bShowRewardFinished = true
 end
+
 function DrawMultiResultView:Destruct()
   self.ButtonMultiContinue.OnClicked:Remove(self, self.DrawMulti)
   self.PondId = nil
@@ -28,6 +30,7 @@ function DrawMultiResultView:Destruct()
   self.DrawTimes = 0
   self.bShowRewardFinished = true
 end
+
 function DrawMultiResultView:DrawMulti()
   if self.IsPlayingAnimation then
     return
@@ -36,9 +39,11 @@ function DrawMultiResultView:DrawMulti()
     self.ParentView:Draw(MultiDrawTimes)
   end
 end
+
 function DrawMultiResultView:Draw(DrawTimes)
   UIModelMgr:Get("DrawCardViewModel"):DrawCard(DrawTimes, self.PondId)
 end
+
 function DrawMultiResultView:InitInfo(ResourceList, PondId, SkipAni, ParentView)
   UpdateVisibility(self, true)
   self.CanvasPanelContinue:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -59,9 +64,11 @@ function DrawMultiResultView:InitInfo(ResourceList, PondId, SkipAni, ParentView)
   self:PlayDrawCardSequence()
   UpdateVisibility(self.Canvas_Converted, false)
 end
+
 function DrawMultiResultView:ContinueInitInfo()
   self:ShowNextCard()
 end
+
 function DrawMultiResultView:ShowNextCard()
   local TotalResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   if self.DrawTimes >= math.min(MultiDrawTimes, #self.ResourceList_Sorted) then
@@ -108,6 +115,7 @@ function DrawMultiResultView:ShowNextCard()
     UpdateVisibility(self.Canvas_Converted, true)
   end
 end
+
 function DrawMultiResultView:UpdateCost()
   local CostResId, CostNum, bIsEnough = UIModelMgr:Get("DrawCardViewModel"):GetCost(MultiDrawTimes, self.PondId)
   local ResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
@@ -123,6 +131,7 @@ function DrawMultiResultView:UpdateCost()
   self.WBP_Price_MultiDraw:SetPrice(CostNum, CostNum, CostResId)
   self.WBP_Price_AllCount:SetPrice(CurHaveNum, CurHaveNum, CostResId)
 end
+
 function DrawMultiResultView:HideSelf()
   if not self.bShowRewardFinished then
     print("ywtao, \230\156\170\229\174\140\230\136\144\230\137\128\230\156\137\229\165\150\229\138\177\231\154\132\229\177\149\231\164\186\239\188\140\228\184\141\232\131\189\229\133\179\233\151\173")
@@ -131,6 +140,7 @@ function DrawMultiResultView:HideSelf()
   self:OnHide()
   EventSystem.Invoke(EventDef.DrawCard.OnChangeDrawCardPoolSelected, self.PondId)
 end
+
 function DrawMultiResultView:OnHide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.CanvasPanelContinue:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -139,6 +149,7 @@ function DrawMultiResultView:OnHide()
   EventSystem.RemoveListener(EventDef.DrawCard.OnDrawCardSequencePlay, self.BindOnDrawCardSequencePlay, self)
   self:StopAllAnimations()
 end
+
 function DrawMultiResultView:AniFinishedFunc()
   self.bShowRewardFinished = true
   UpdateVisibility(self.CanvasPanelContinue, true)
@@ -146,10 +157,13 @@ function DrawMultiResultView:AniFinishedFunc()
   self.ParentView:ChangeInteractTipWidgetStatus("ShareAndEsc")
   self:PlayAnimationIn()
 end
+
 function DrawMultiResultView:BindFadeInFinished()
 end
+
 function DrawMultiResultView:BindFadeOutFinished()
 end
+
 function DrawMultiResultView:UpdateCardGuarantList(GuarantStrList)
   for _, GuarantStr in pairs(GuarantStrList) do
     local DrawCardGuarantListItem = GetOrCreateItem(self.ScrollBox_GuarantList, _, self.WBP_DrawCardGuarantListItem:GetClass())
@@ -157,20 +171,24 @@ function DrawMultiResultView:UpdateCardGuarantList(GuarantStrList)
   end
   HideOtherItem(self.ScrollBox_GuarantList, #GuarantStrList + 1)
 end
+
 function DrawMultiResultView:OnAnimationFinished(Animation)
   if Animation == self.Ani_in then
     self.IsPlayingAnimation = false
   end
 end
+
 function DrawMultiResultView:PlayAnimationIn()
   self.IsPlayingAnimation = true
   self:PlayAnimation(self.Ani_in)
 end
+
 function DrawMultiResultView:BindOnDrawCardSequenceFinished()
   UpdateVisibility(self, true)
   self.ParentView:ChangeInteractTipWidgetStatus("ShareAndContinue")
   self:ShowNextCard()
 end
+
 function DrawMultiResultView:BindOnDrawCardSequencePlay()
   local AllActors = UE.UGameplayStatics.GetAllActorsWithTag(self, "DrawCardCamera", nil)
   local TargetCamera
@@ -205,12 +223,15 @@ function DrawMultiResultView:BindOnDrawCardSequencePlay()
     SingleActor:ChangeRarity(RarityEnum)
   end
 end
+
 function DrawMultiResultView:PlayDrawCardSequence()
   UpdateVisibility(self, false)
   self.ParentView:PlaySeq(self.LevelSequencePath)
 end
+
 function DrawMultiResultView:GetNumberFromActorName(ActorName)
   local Number = string.match(ActorName, "%d+")
   return tonumber(Number)
 end
+
 return DrawMultiResultView

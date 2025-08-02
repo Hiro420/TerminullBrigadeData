@@ -1,4 +1,5 @@
 local WBP_NaxHealthBar_C = UnLua.Class()
+
 function WBP_NaxHealthBar_C:Show()
   local Character = self:GetOwningPlayerPawn()
   if not Character then
@@ -15,9 +16,11 @@ function WBP_NaxHealthBar_C:Show()
   self:InitHealthSignPos()
   self:UpdateLowHealthVis()
 end
+
 function WBP_NaxHealthBar_C:BindOnHealthAttributeChanged(NewValue, OldValue)
   self:UpdateLowHealthVis()
 end
+
 function WBP_NaxHealthBar_C:InitHealthSignPos()
   local Character = self:GetOwningPlayerPawn()
   if not Character then
@@ -38,6 +41,7 @@ function WBP_NaxHealthBar_C:InitHealthSignPos()
   SecondSignPos.X = SizeX * self.SecondHealthSignPercent
   SecondSignSlot:SetPosition(SecondSignPos)
 end
+
 function WBP_NaxHealthBar_C:UpdateLowHealthVis()
   local Character = self:GetOwningPlayerPawn()
   if not Character then
@@ -51,6 +55,7 @@ function WBP_NaxHealthBar_C:UpdateLowHealthVis()
   UpdateVisibility(self.Img_OneHealthBottom, CurHealth <= self.LowHealthSign)
   UpdateVisibility(self.Img_OneHealthSign, CurHealth <= self.LowHealthSign)
 end
+
 function WBP_NaxHealthBar_C:Destruct()
   local Character = self:GetOwningPlayerPawn()
   if not Character then
@@ -65,4 +70,5 @@ function WBP_NaxHealthBar_C:Destruct()
     self.BindOnHealthAttributeChanged
   })
 end
+
 return WBP_NaxHealthBar_C

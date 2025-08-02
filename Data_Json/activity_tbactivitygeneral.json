@@ -1,0 +1,54 @@
+[
+  {
+    "activityID": 10000,
+    "name": "七日签到",
+    "desc": "签到七天，获取全新角色与外观。",
+    "rankScore": 10,
+    "openTime": "",
+    "isShow": true,
+    "uiStartTime": "2023-03-01 00:00:00",
+    "uiEndTime": "2045-12-31 05:00:00",
+    "taskGroupList": [
+      200001
+    ],
+    "mallShelfList": [],
+    "uiTemplate": "UI_LoginRewardActivity",
+    "UITitleAnim": "Ani_LoginRewardActivity_in",
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/Activity/ActivityCommon/Frames/Icon_Activity_LoginReward_01.Icon_Activity_LoginReward_01",
+    "ruleDesc": "基础规则：\\n\\n玩家每日可上线进行签到。\\n累计签到2天可领取心仪角色自选包。\\n累计签到6天可领取上校史诗外观-赤途骑士。\\n累计签到7天共获取10个解码器。"
+  },
+  {
+    "activityID": 10001,
+    "name": "法则轶闻",
+    "desc": "完成法则的委托，获取丰厚奖赏。",
+    "rankScore": 9,
+    "openTime": "",
+    "isShow": true,
+    "uiStartTime": "2023-03-01 00:00:00",
+    "uiEndTime": "2045-12-31 05:00:00",
+    "taskGroupList": [
+      200101,
+      200102,
+      200103,
+      200104,
+      200105,
+      200106,
+      200107,
+      200108,
+      200109,
+      200110,
+      200111,
+      200112,
+      200113,
+      200114,
+      200115,
+      200116,
+      200120
+    ],
+    "mallShelfList": [],
+    "uiTemplate": "UI_RuleTask",
+    "UITitleAnim": "Ani_RuleTaskPanel_in",
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/Activity/RuleTask/Frames/Icon_Activity_RuleTask_02.Icon_Activity_RuleTask_02",
+    "ruleDesc": "基础规则：\\n\\n每日登录游戏接取法则委托。\\n完成各法则的主要委托，即可领取对应奖励，并解锁下一法则委托。\\n完成法则附加委托可以获得额外数据凭证。\\n累计数据凭证可以兑换丰厚大奖。"
+  }
+]

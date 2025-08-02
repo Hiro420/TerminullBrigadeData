@@ -1,5 +1,6 @@
 require("UnLua")
 local WBP_WeaponList_C = Class()
+
 function WBP_WeaponList_C:Construct()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   self:BindCharacterDelegate(Character)
@@ -7,9 +8,11 @@ function WBP_WeaponList_C:Construct()
   ListenObjectMessage(nil, GMP.MSG_Hero_Dying, self, self.OnHeroDying)
   ListenObjectMessage(nil, GMP.MSG_Hero_NotifyRescue, self, self.OnHeroRescue)
 end
+
 function WBP_WeaponList_C:BindOnControlledPawnChanged(ControlledPawn)
   self:BindCharacterDelegate(ControlledPawn)
 end
+
 function WBP_WeaponList_C:BindCharacterDelegate(ControlledPawn)
   self.ControlledPawn = ControlledPawn
   if not ControlledPawn then
@@ -25,10 +28,12 @@ function WBP_WeaponList_C:BindCharacterDelegate(ControlledPawn)
     EquipmentComp.OnCurrentWeaponChanged:Add(self, WBP_WeaponList_C.BindOnCurrentWeaponChanaged)
   end
 end
+
 function WBP_WeaponList_C:BindOnEquipmentChanged()
   print("WBP_WeaponList_C:BindOnEquipmentChanged")
   self:BindOnCurrentWeaponChanaged()
 end
+
 function WBP_WeaponList_C:BindOnCurrentWeaponChanaged(OldWeapon, NewWeapon)
   print("WBP_WeaponList_C:BindOnCurrentWeaponChanaged")
   local EquipmentComp = self:GetOwningPlayerPawn():GetComponentByClass(UE.URGEquipmentComponent.StaticClass())
@@ -63,18 +68,22 @@ function WBP_WeaponList_C:BindOnCurrentWeaponChanaged(OldWeapon, NewWeapon)
   end
   EventSystem.Invoke(EventDef.HUD.UpdateSkillPanelPosXByWeaponVSkill, UE.UKismetSystemLibrary.IsValidClass(VAbilityClass))
 end
+
 function WBP_WeaponList_C:OnHeroDying(Target)
   if Target == UE.UGameplayStatics.GetPlayerCharacter(self, 0) then
     UpdateVisibility(self, false)
   end
 end
+
 function WBP_WeaponList_C:OnHeroRescue(Target)
   if Target == UE.UGameplayStatics.GetPlayerCharacter(self, 0) then
     UpdateVisibility(self, true)
   end
 end
+
 function WBP_WeaponList_C:FocusInput()
 end
+
 function WBP_WeaponList_C:Destruct()
   EventSystem.RemoveListener(EventDef.Battle.OnControlledPawnChanged, WBP_WeaponList_C.BindOnControlledPawnChanged, self)
   if self.ControlledPawn:IsValid() then
@@ -90,4 +99,5 @@ function WBP_WeaponList_C:Destruct()
   UnListenObjectMessage(GMP.MSG_Hero_Dying, self)
   UnListenObjectMessage(GMP.MSG_Hero_NotifyRescue, self)
 end
+
 return WBP_WeaponList_C

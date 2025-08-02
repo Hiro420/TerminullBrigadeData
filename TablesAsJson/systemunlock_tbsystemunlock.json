@@ -1,12 +1,12 @@
 ﻿{
   "1": {
-    "UnlockEventsList": {},
+    "SystemID": 1,
     "SystemName": "商城",
-    "SystemID": 1
+    "UnlockEventsList": {}
   },
   "2": {
-    "UnlockEventsList": {},
+    "SystemID": 2,
     "SystemName": "通行证",
-    "SystemID": 2
+    "UnlockEventsList": {}
   }
 }

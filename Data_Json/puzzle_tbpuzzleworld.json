@@ -1,0 +1,54 @@
+[
+  {
+    "WorldId": 23,
+    "Name": "[穹锋]",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Puzzle_01.Icon_Puzzle_01",
+    "GridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Cyber.Icon_Cyber",
+    "HollowGridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Cyber_02.Icon_Cyber_02",
+    "ItemFXColor": "B772FFFF",
+    "ItemLoopFXColor": "B772FFFF",
+    "ItemFrameColor": "8A00FFFF",
+    "IsOpen": true,
+    "Desc": "穹锋战斗矩阵可装配模块数为{1},当前已装配{2}个模块。",
+    "notes": ""
+  },
+  {
+    "WorldId": 24,
+    "Name": "[锋卫]",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Puzzle_04.Icon_Puzzle_04",
+    "GridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Wasteland.Icon_Wasteland",
+    "HollowGridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Wasteland_02.Icon_Wasteland_02",
+    "ItemFXColor": "9F6335FF",
+    "ItemLoopFXColor": "9C7E4FFF",
+    "ItemFrameColor": "C26500FF",
+    "IsOpen": true,
+    "Desc": "锋卫战斗矩阵可装配模块数为{1},当前已装配{2}个模块。",
+    "notes": ""
+  },
+  {
+    "WorldId": 123,
+    "Name": "[裂变]",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Puzzle_03.Icon_Puzzle_03",
+    "GridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Interstellar.Icon_Interstellar",
+    "HollowGridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Interstellar_02.Icon_Interstellar_02",
+    "ItemFXColor": "448791FF",
+    "ItemLoopFXColor": "94EEFFFF",
+    "ItemFrameColor": "007EC2FF",
+    "IsOpen": true,
+    "Desc": "裂变战斗矩阵可装配模块数为{1},当前已装配{2}个模块。",
+    "notes": ""
+  },
+  {
+    "WorldId": 124,
+    "Name": "[星垒]",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Puzzle_02.Icon_Puzzle_02",
+    "GridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_FairyTales.Icon_FairyTales",
+    "HollowGridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_FairyTales_02.Icon_FairyTales_02",
+    "ItemFXColor": "914158FF",
+    "ItemLoopFXColor": "FFA7A3FF",
+    "ItemFrameColor": "FF4079FF",
+    "IsOpen": true,
+    "Desc": "星垒战斗矩阵可装配模块数为{1},当前已装配{2}个模块。",
+    "notes": ""
+  }
+]

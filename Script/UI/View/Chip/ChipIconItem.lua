@@ -1,8 +1,11 @@
 local ChipIconItem = UnLua.Class()
+
 function ChipIconItem:Construct()
 end
+
 function ChipIconItem:Destruct()
 end
+
 function ChipIconItem:InitChipIconItem(EquipChipData)
   local resId = tonumber(EquipChipData.Chip.resourceID)
   local tbResChip = LuaTableMgr.GetLuaTableByName(TableNames.TBResChip)
@@ -22,9 +25,11 @@ function ChipIconItem:InitChipIconItem(EquipChipData)
     self.StateCtrl_Eff:ChangeStatus(EquipChipData.TbChipData.EffStateName)
   end
 end
+
 function ChipIconItem:Hide()
   self.EquipChipData = nil
   self.ParentView = nil
   UpdateVisibility(self, false)
 end
+
 return ChipIconItem

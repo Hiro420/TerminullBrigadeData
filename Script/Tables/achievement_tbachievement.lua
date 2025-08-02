@@ -47,7 +47,8 @@ local achievement_tbachievement = {
       1132,
       1133,
       1134,
-      1135
+      1135,
+      1136
     },
     Icon = "/Game/Rouge/UI/Atlas/Achievement/Frames/Icon_tab02_01.Icon_tab02_01"
   }

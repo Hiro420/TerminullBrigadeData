@@ -1,5 +1,6 @@
 local rapidjson = require("rapidjson")
 local WBP_SingleFetterHeroItem_C = UnLua.Class()
+
 function WBP_SingleFetterHeroItem_C:Show(HeroId, MainHeroId)
   self.HeroId = HeroId
   self.MainHeroId = MainHeroId
@@ -12,11 +13,13 @@ function WBP_SingleFetterHeroItem_C:Show(HeroId, MainHeroId)
   self:RefreshItemStatus()
   EventSystem.AddListener(self, EventDef.Lobby.FetterHeroInfoUpdate, WBP_SingleFetterHeroItem_C.BindOnFetterHeroInfoUpdate)
 end
+
 function WBP_SingleFetterHeroItem_C:InitStatusImgVis()
   self.Img_Hover:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.Img_Dragging:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.Img_Equipped:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_SingleFetterHeroItem_C:RefreshItemStatus()
   self:UpdateDragStatusVis(false)
   self.Txt_Status:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -29,6 +32,7 @@ function WBP_SingleFetterHeroItem_C:RefreshItemStatus()
     end
   end
 end
+
 function WBP_SingleFetterHeroItem_C:Hide()
   self.HeroId = 0
   self.MainHeroId = 0
@@ -36,9 +40,11 @@ function WBP_SingleFetterHeroItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   EventSystem.RemoveListener(EventDef.Lobby.FetterHeroInfoUpdate, WBP_SingleFetterHeroItem_C.BindOnFetterHeroInfoUpdate, self)
 end
+
 function WBP_SingleFetterHeroItem_C:OnLeftMouseDown()
   EventSystem.Invoke(EventDef.Lobby.FetterHeroItemLeftClicked, self.HeroId)
 end
+
 function WBP_SingleFetterHeroItem_C:OnRightMouseDown()
   local FetterHeroInfo = DataMgr.GetFetterHeroInfoById(self.MainHeroId)
   local Slot = 0
@@ -75,6 +81,7 @@ function WBP_SingleFetterHeroItem_C:OnRightMouseDown()
   end
   self:EquipFetterHeroByPos(Slot)
 end
+
 function WBP_SingleFetterHeroItem_C:EquipFetterHeroByPos(Slot)
   local Param = {
     heroId = self.MainHeroId,
@@ -90,23 +97,28 @@ function WBP_SingleFetterHeroItem_C:EquipFetterHeroByPos(Slot)
     end
   })
 end
+
 function WBP_SingleFetterHeroItem_C:OnFetterHeroChangeSuccess(JsonResponse)
   LogicRole.RequestGetHeroFetterInfoToServer(self.MainHeroId, {
     self,
     self.OnGetHeroFetterInfoSuccess
   })
 end
+
 function WBP_SingleFetterHeroItem_C:BindOnFetterHeroInfoUpdate()
   self:RefreshItemStatus()
 end
+
 function WBP_SingleFetterHeroItem_C:OnGetHeroFetterInfoSuccess(JsonResponse)
   print("OnGetHeroFetterInfoSuccess", JsonResponse.Content)
   LogicRole.InitFetterHeroesMesh(self.MainHeroId)
 end
+
 function WBP_SingleFetterHeroItem_C:OnBeginDragNotify()
   EventSystem.Invoke(EventDef.Lobby.FetterHeroBeginOrEndDrag, true)
   self:UpdateDragStatusVis(true)
 end
+
 function WBP_SingleFetterHeroItem_C:UpdateDragStatusVis(IsDrag)
   self:UpdateHoverStatusVis(IsDrag)
   self.IsDrag = IsDrag
@@ -116,6 +128,7 @@ function WBP_SingleFetterHeroItem_C:UpdateDragStatusVis(IsDrag)
     self.Img_Dragging:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_SingleFetterHeroItem_C:UpdateHoverStatusVis(IsHover)
   if IsHover then
     self.Img_Hover:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
@@ -123,16 +136,20 @@ function WBP_SingleFetterHeroItem_C:UpdateHoverStatusVis(IsHover)
     self.Img_Hover:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_SingleFetterHeroItem_C:OnDragCancelled(PointerEvent, Operation)
   EventSystem.Invoke(EventDef.Lobby.FetterHeroBeginOrEndDrag, false)
   self:UpdateDragStatusVis(false)
 end
+
 function WBP_SingleFetterHeroItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   self:UpdateHoverStatusVis(true)
 end
+
 function WBP_SingleFetterHeroItem_C:OnMouseLeave(MouseEvent)
   if not self.IsDrag then
     self:UpdateHoverStatusVis(false)
   end
 end
+
 return WBP_SingleFetterHeroItem_C

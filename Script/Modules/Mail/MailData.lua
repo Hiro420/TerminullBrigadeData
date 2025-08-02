@@ -14,6 +14,7 @@ local MailData = {
   AllMailInfoList = {},
   MailContentInfoList = {}
 }
+
 function MailData:SetAllMailInfoList(InMailInfoList)
   MailData.AllMailInfoList = {}
   local Result, RowInfo = false
@@ -53,19 +54,24 @@ function MailData:SetAllMailInfoList(InMailInfoList)
     MailData.AllMailInfoList[SingleMailInfo.id] = SingleMailInfo
   end
 end
+
 function MailData:GetAllMailInfoList()
   return MailData.AllMailInfoList
 end
+
 function MailData:ClearAllMailInfoList()
   MailData.AllMailInfoList = {}
 end
+
 function MailData:GetMailInfoById(MailId)
   return MailData.AllMailInfoList[MailId]
 end
+
 function MailData:RemoveMailInfoByMailId(MailId)
   MailData.AllMailInfoList[MailId] = nil
   MailData.MailContentInfoList[MailId] = nil
 end
+
 function MailData:MarkMailReaded(MailIdList)
   local MailInfo
   for key, SingleMailId in ipairs(MailIdList) do
@@ -76,6 +82,7 @@ function MailData:MarkMailReaded(MailIdList)
   end
   EventSystem.Invoke(EventDef.Mail.OnUpdateMailReadStatus)
 end
+
 function MailData:MarkMailReceived(MailIdList)
   local MailInfo
   for key, SingleMailId in ipairs(MailIdList) do
@@ -86,10 +93,13 @@ function MailData:MarkMailReceived(MailIdList)
   end
   EventSystem.Invoke(EventDef.Mail.OnUpdateMailReceiveAttachmentStatus)
 end
+
 function MailData:SetMailContentInfoList(InMailContentInfo)
   MailData.MailContentInfoList[InMailContentInfo.id] = InMailContentInfo
 end
+
 function MailData:GetMailContentInfoById(MailId)
   return MailData.MailContentInfoList[MailId]
 end
+
 return MailData

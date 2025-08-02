@@ -8,6 +8,13 @@ local SkinHandler = require("Protocol.Appearance.Skin.SkinHandler")
 local SkinData = require("Modules.Appearance.Skin.SkinData")
 local WeaponSubView = require("UI.View.Weapon.WeaponSubView.WeaponSubView")
 local WeaponSubViewModel = CreateDefaultViewModel()
+local GetWeaponPriorityById = function(WeaponId)
+  local result, rowinfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBWeapon, tonumber(WeaponId))
+  if result then
+    return rowinfo.Priority
+  end
+  return 0
+end
 local WeaponSkinItemListSort = function(A, B)
   if A.bUnlocked and not B.bUnlocked then
     return true
@@ -29,7 +36,7 @@ local WeaponListSort = function(A, B)
   local aWeaponResId = tonumber(A.resourceId)
   local bWeaponResId = tonumber(B.resourceId)
   if aWeaponResId ~= bWeaponResId then
-    return aWeaponResId > bWeaponResId
+    return GetWeaponPriorityById(aWeaponResId) < GetWeaponPriorityById(bWeaponResId)
   end
   local aWeaponUUId = tonumber(A.uuid)
   local bWeaponUUId = tonumber(B.uuid)
@@ -49,6 +56,7 @@ WeaponSubViewModel.propertyBindings = {
   WeaponList = {},
   EquipedWeapon = {}
 }
+
 function WeaponSubViewModel:OnInit()
   self.Super:OnInit()
   EventSystem.AddListenerNew(EventDef.Skin.OnWeaponSkinUpdate, self, self.OnWeaponListChanged)
@@ -56,6 +64,7 @@ function WeaponSubViewModel:OnInit()
   EventSystem.AddListenerNew(EventDef.Skin.OnWeaponSkinUpdate, self, self.OnWeaponSkinUpdate)
   EventSystem.AddListenerNew(EventDef.Skin.OnGetWeaponSkinList, self, self.OnGetWeaponSkinList)
 end
+
 function WeaponSubViewModel:OnShutdown()
   EventSystem.RemoveListenerNew(EventDef.Skin.OnWeaponSkinUpdate, self, self.OnWeaponListChanged)
   EventSystem.RemoveListenerNew(EventDef.Lobby.EquippedWeaponInfoChanged, self, self.OnEquippedWeaponInfoChanged)
@@ -63,9 +72,11 @@ function WeaponSubViewModel:OnShutdown()
   EventSystem.RemoveListenerNew(EventDef.Skin.OnGetWeaponSkinList, self, self.OnGetWeaponSkinList)
   self.Super:OnShutdown()
 end
+
 function WeaponSubViewModel:OnWeaponSkinUpdate()
   self:UpdateWeaponSkinList(self.CurSelectWeaponSkinResId)
 end
+
 function WeaponSubViewModel:SelectCurEquipedSkin(weaponResId)
   if weaponResId > 0 and SkinData.WeaponSkinMap[weaponResId] then
     local equipedSkinId = SkinData.WeaponSkinMap[weaponResId].EquipedSkinId
@@ -80,6 +91,7 @@ function WeaponSubViewModel:SelectCurEquipedSkin(weaponResId)
     self:UpdateCurSelectWeaponSkin(-1)
   end
 end
+
 function WeaponSubViewModel:UpdateCurSelectWeaponSkin(SelectSkinResId)
   if self.CurSelectWeaponSkinResId == SelectSkinResId then
     return
@@ -89,6 +101,7 @@ function WeaponSubViewModel:UpdateCurSelectWeaponSkin(SelectSkinResId)
   self.SelectSkinIsUnlock = SkinData.GetWeaponSkinDataBySkinResId(SelectSkinResId).bUnlocked
   self:UpdateWeaponSkinList(SelectSkinResId)
 end
+
 function WeaponSubViewModel:SendEquipWeaponSkinReq(SelectSkinResId)
   if SkinData.CheckWeaponSkinCanEquip(SelectSkinResId) then
     local weaponSkinData = SkinData.GetWeaponSkinDataBySkinResId(self.CurSelectWeaponSkinResId)
@@ -105,6 +118,7 @@ function WeaponSubViewModel:SendEquipWeaponSkinReq(SelectSkinResId)
     end
   end
 end
+
 function WeaponSubViewModel:SelectWeapon(WeaponInfo)
   if not WeaponInfo then
     return
@@ -114,6 +128,7 @@ function WeaponSubViewModel:SelectWeapon(WeaponInfo)
   self:RefreshWeaponDetailsTip()
   self:RefreshWeaponDetails()
 end
+
 function WeaponSubViewModel:RequestEquipWeapon(WeaponInfo, bShowGlitchMatEffect)
   local CurSelectWeaponSlotId = 0
   local AllCanEquipWeaponList = LogicOutsideWeapon.GetAllCanEquipWeaponList(self.CurHeroId)
@@ -140,12 +155,15 @@ function WeaponSubViewModel:RequestEquipWeapon(WeaponInfo, bShowGlitchMatEffect)
     self:RefreshWeaponDetails()
   end
 end
+
 function WeaponSubViewModel:SendRequestEquipWeapon()
   LogicOutsideWeapon.RequestEquipWeapon(self.CurHeroId, self.SelectWeaponId, 0, self.SelectWeaponResId)
 end
+
 function WeaponSubViewModel:OnGetWeaponSkinList()
   self:UpdateWeaponSkinList(self.CurSelectWeaponSkinResId)
 end
+
 function WeaponSubViewModel:OnWeaponListChanged(SkinId, WeaponId, bShowGlitchMatEffect)
   local AllCanEquipWeaponList = LogicOutsideWeapon.GetAllCanEquipWeaponDataList(self.CurHeroId)
   local EquipedWeaponList = DataMgr.GetEquippedWeaponList(self.CurHeroId)
@@ -212,6 +230,7 @@ function WeaponSubViewModel:OnWeaponListChanged(SkinId, WeaponId, bShowGlitchMat
     self:UpdateWeaponSkinList(self.CurSelectWeaponSkinResId)
   end
 end
+
 function WeaponSubViewModel:UpdateWeaponSkinList(CurSelectWeaponSkinResId)
   local EquipedWeaponList = DataMgr.GetEquippedWeaponList(self.CurHeroId)
   if not EquipedWeaponList then
@@ -249,6 +268,7 @@ function WeaponSubViewModel:UpdateWeaponSkinList(CurSelectWeaponSkinResId)
     end
   end
 end
+
 function WeaponSubViewModel:GetCurEquipedWeaponResId()
   local EquipedWeaponList = DataMgr.GetEquippedWeaponList(self.CurHeroId)
   if EquipedWeaponList and EquipedWeaponList[1] then
@@ -256,9 +276,11 @@ function WeaponSubViewModel:GetCurEquipedWeaponResId()
   end
   return -1
 end
+
 function WeaponSubViewModel:GetCurEquipedHeroSkinId()
   return SkinData.GetEquipedSkinIdByHeroId(self.CurHeroId)
 end
+
 function WeaponSubViewModel:OnEquippedWeaponInfoChanged(HeroId)
   if self.CurHeroId ~= HeroId then
     return
@@ -266,19 +288,23 @@ function WeaponSubViewModel:OnEquippedWeaponInfoChanged(HeroId)
   self:RefreshWeaponDetailsTip(true)
   EventSystem.Invoke(EventDef.Lobby.WeaponListChanged)
 end
+
 function WeaponSubViewModel:UpdateCurHeroId(CurHeroId)
   self.CurHeroId = CurHeroId
 end
+
 function WeaponSubViewModel:SetCloseCallback(CloseCallback)
   if self:GetFirstView() then
     self:GetFirstView():SetCloseCallback(CloseCallback)
   end
 end
+
 function WeaponSubViewModel:SwitchWeaponInfo(bReset, weaponResId, playAni)
   if self:GetFirstView() then
     self:GetFirstView():ShowWeaponInfo(bReset, weaponResId, playAni)
   end
 end
+
 function WeaponSubViewModel:GetCurWeaponId()
   local EquipedWeaponList = DataMgr.GetEquippedWeaponList(self.CurHeroId)
   if EquipedWeaponList and EquipedWeaponList[1] then
@@ -286,6 +312,7 @@ function WeaponSubViewModel:GetCurWeaponId()
   end
   return nil
 end
+
 function WeaponSubViewModel:RefreshWeaponDetailsTip(bMaintainVisble)
   local curSelectWeaponData = self:GetCurSelectWeaponData()
   if curSelectWeaponData then
@@ -299,6 +326,7 @@ function WeaponSubViewModel:RefreshWeaponDetailsTip(bMaintainVisble)
     end
   end
 end
+
 function WeaponSubViewModel:CheckSkinUnLock()
   local EquipedWeaponList = DataMgr.GetEquippedWeaponList(self.CurHeroId)
   if not EquipedWeaponList then
@@ -323,6 +351,7 @@ function WeaponSubViewModel:CheckSkinUnLock()
   end
   return false
 end
+
 function WeaponSubViewModel:CheckEquipedSeason(WeaponInfo)
   if not WeaponInfo then
     return false
@@ -335,6 +364,7 @@ function WeaponSubViewModel:CheckEquipedSeason(WeaponInfo)
   end
   return false
 end
+
 function WeaponSubViewModel:CheckEquipedSeasonExceptSlot(WeaponInfo, SlotMap)
   if not WeaponInfo then
     return false
@@ -347,6 +377,7 @@ function WeaponSubViewModel:CheckEquipedSeasonExceptSlot(WeaponInfo, SlotMap)
   end
   return false
 end
+
 function WeaponSubViewModel:GetCurSelectWeaponData()
   local curHaveWeaponList = LogicOutsideWeapon.GetCurCanEquipWeaponList(self.CurHeroId)
   if not curHaveWeaponList then
@@ -382,6 +413,7 @@ function WeaponSubViewModel:GetCurSelectWeaponData()
   end
   return nil
 end
+
 function WeaponSubViewModel:GetWeaponDataByResId(WeaponResId)
   local EquipedWeaponList = DataMgr.GetEquippedWeaponList(self.CurHeroId)
   if not EquipedWeaponList then
@@ -398,6 +430,7 @@ function WeaponSubViewModel:GetWeaponDataByResId(WeaponResId)
   end
   return {resourceId = WeaponResId, uuid = -1}
 end
+
 function WeaponSubViewModel:GetAllWeaponSkinIdsByHeroId()
   local weaponInfos = self:GetAllWeaponSkinInfosByHeroId()
   local allWeaponIds = {}
@@ -419,6 +452,7 @@ function WeaponSubViewModel:GetAllWeaponSkinIdsByHeroId()
   table.sort(allWeaponIds, WeaponSort)
   return allWeaponIds
 end
+
 function WeaponSubViewModel:GetAllWeaponSkinInfosByHeroId()
   local allWeaponSkinInfos = {}
   local AllCanEquipWeaponList = LogicOutsideWeapon.GetAllCanEquipWeaponList(self.CurHeroId)
@@ -429,15 +463,19 @@ function WeaponSubViewModel:GetAllWeaponSkinInfosByHeroId()
   end
   return allWeaponSkinInfos
 end
+
 function WeaponSubViewModel:EmptySelectWeaponId()
   self.SelectWeaponId = nil
 end
+
 function WeaponSubViewModel:RefreshWeaponDetails()
   if self:GetFirstView() then
     self:GetFirstView():UpdateDetailsView()
   end
 end
+
 function WeaponSubViewModel:GetWeaponSkinDataBySkinResId(CurSelectWeaponSkinResId)
   return SkinData.GetWeaponSkinDataBySkinResId(CurSelectWeaponSkinResId)
 end
+
 return WeaponSubViewModel

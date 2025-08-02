@@ -1,7 +1,9 @@
 local WBP_GRRoleInfoBox_C = UnLua.Class()
+
 function WBP_GRRoleInfoBox_C:Construct()
   self.wbp_GRRoleInfoItemClass = UE.UClass.Load("/Game/Rouge/UI/Lobby/GameRecord/WBP_GRRoleInfoItem.WBP_GRRoleInfoItem_C")
 end
+
 function WBP_GRRoleInfoBox_C:UpdateRoleInfoBox(UserIdList)
   local Number = #UserIdList
   local padding = UE.FMargin()
@@ -17,6 +19,7 @@ function WBP_GRRoleInfoBox_C:UpdateRoleInfoBox(UserIdList)
     end
   end
 end
+
 function WBP_GRRoleInfoBox_C:ClearRoleInfoItemChoose()
   local padding = UE.FMargin()
   padding.Top = 5
@@ -28,4 +31,5 @@ function WBP_GRRoleInfoBox_C:ClearRoleInfoItemChoose()
     end
   end
 end
+
 return WBP_GRRoleInfoBox_C

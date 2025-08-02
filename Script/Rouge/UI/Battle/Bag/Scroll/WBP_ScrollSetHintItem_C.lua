@@ -1,4 +1,5 @@
 local WBP_ScrollSetHintItem_C = UnLua.Class()
+
 function WBP_ScrollSetHintItem_C:InitScrollSetHintItem(AttributeModifySetData, AttributeModifyId, Duration)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -65,13 +66,16 @@ function WBP_ScrollSetHintItem_C:InitScrollSetHintItem(AttributeModifySetData, A
     }, StartTime, false)
   end
 end
+
 function WBP_ScrollSetHintItem_C:FadeOut()
   self:PlayAnimation(self.ani_HUD_ScrollSetItem_out)
 end
+
 function WBP_ScrollSetHintItem_C:Hide()
   self.AttributeModifySetData = nil
   UpdateVisibility(self, false)
 end
+
 function WBP_ScrollSetHintItem_C:Destruct()
   self.Overridden.Destruct(self)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.Timer) then
@@ -79,4 +83,5 @@ function WBP_ScrollSetHintItem_C:Destruct()
     self.Timer = nil
   end
 end
+
 return WBP_ScrollSetHintItem_C

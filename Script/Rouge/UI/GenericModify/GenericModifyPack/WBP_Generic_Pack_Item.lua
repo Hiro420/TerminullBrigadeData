@@ -1,8 +1,11 @@
 local WBP_Generic_Pack_Item = UnLua.Class()
+
 function WBP_Generic_Pack_Item:Construct()
 end
+
 function WBP_Generic_Pack_Item:OnUnDisplay()
 end
+
 function WBP_Generic_Pack_Item:InitGenericModifyPackItem(GenericPackData, ParentView)
   self.ParentView = ParentView
   self.GenericPackItemData = GenericPackData
@@ -30,22 +33,26 @@ function WBP_Generic_Pack_Item:InitGenericModifyPackItem(GenericPackData, Parent
   end
   self.WBP_GenericModifyItem:InitGenericModifyItem(ModifyId)
 end
+
 function WBP_Generic_Pack_Item:Hover()
   if not UE.RGUtil.IsUObjectValid(self.ParentView) then
     return
   end
   self.ParentView:UpdateChooseItemByModifyId(self.GenericPackItemData.ModifyId)
 end
+
 function WBP_Generic_Pack_Item:UnHover()
   if not UE.RGUtil.IsUObjectValid(self.ParentView) then
     return
   end
   self.ParentView:UpdateChooseItem()
 end
+
 function WBP_Generic_Pack_Item:Select()
   if not UE.RGUtil.IsUObjectValid(self.ParentView) then
     return
   end
   self.ParentView:OnBtnSelectClicked(self.GenericPackItemData.ModifyId)
 end
+
 return WBP_Generic_Pack_Item

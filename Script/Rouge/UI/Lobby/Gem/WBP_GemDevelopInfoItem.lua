@@ -1,5 +1,6 @@
 local WBP_GemDevelopInfoItem = UnLua.Class()
 local GemData = require("Modules.Gem.GemData")
+
 function WBP_GemDevelopInfoItem:Show(GemId, TargetLevel)
   UpdateVisibility(self, true)
   local LastGemId = self.GemId
@@ -88,6 +89,7 @@ function WBP_GemDevelopInfoItem:Show(GemId, TargetLevel)
     self.MutationAttrItem:Show(MutationInfo.AttrID, MutationInfo.MutationValue, nil, false, MutationInfo.MutationType)
   end
 end
+
 function WBP_GemDevelopInfoItem:PlayUpgradeSuccessAnim(...)
   self:PlayAnimation(self.Ani_upgrade_succeed)
   local AllChildren = self.VerticalBoxCoreAttr:GetAllChildren()
@@ -95,6 +97,7 @@ function WBP_GemDevelopInfoItem:PlayUpgradeSuccessAnim(...)
     SingleItem:PlayUpgradeSuccessAnim()
   end
 end
+
 function WBP_GemDevelopInfoItem:Destruct()
   self:StopAllAnimations()
   local AllChildren = self.VerticalBoxCoreAttr:GetAllChildren()
@@ -102,4 +105,5 @@ function WBP_GemDevelopInfoItem:Destruct()
     SingleItem:Hide()
   end
 end
+
 return WBP_GemDevelopInfoItem

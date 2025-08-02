@@ -1,0 +1,32 @@
+[
+  {
+    "SeasonID": 1,
+    "Title": "原爆点",
+    "AwardLinkID1": 1005,
+    "AwardLinkParam1": [],
+    "AwardLinkID2": 1023,
+    "AwardLinkParam2": [],
+    "SeasonModeList": [
+      1003,
+      3001,
+      3002
+    ],
+    "SeasonContentPath": "/Game/Rouge/UI/Atlas_Alpha/A_DT/Bgimage/bg06.bg06",
+    "SeasonBgPath": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments_B/Plot_Bg13.Plot_Bg13"
+  },
+  {
+    "SeasonID": 2,
+    "Title": "原爆点",
+    "AwardLinkID1": 1005,
+    "AwardLinkParam1": [],
+    "AwardLinkID2": 1023,
+    "AwardLinkParam2": [],
+    "SeasonModeList": [
+      1003,
+      3001,
+      3002
+    ],
+    "SeasonContentPath": "/Game/Rouge/UI/Atlas_Alpha/A_DT/Bgimage/bg06.bg06",
+    "SeasonBgPath": "/Game/Rouge/UI/Atlas_Alpha/A_DT/PlotFragments_B/Plot_Bg13.Plot_Bg13"
+  }
+]

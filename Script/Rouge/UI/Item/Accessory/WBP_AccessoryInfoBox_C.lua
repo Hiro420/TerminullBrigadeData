@@ -1,4 +1,5 @@
 local WBP_AccessoryInfoBox_C = UnLua.Class()
+
 function WBP_AccessoryInfoBox_C:LoadAccessoryInfo(AccessoryId)
   local gamestate = UE.UGameplayStatics.GetGameState(self)
   if gamestate then
@@ -13,6 +14,7 @@ function WBP_AccessoryInfoBox_C:LoadAccessoryInfo(AccessoryId)
     end
   end
 end
+
 function WBP_AccessoryInfoBox_C:LoadAccessoryInscription(AccessoryId)
   self.AccessoryAttributeBox:ClearChildren()
   local results_stringArray = UE.URGAccessoryStatics.GetAccessoryInfo(self, AccessoryId)
@@ -27,4 +29,5 @@ function WBP_AccessoryInfoBox_C:LoadAccessoryInscription(AccessoryId)
     end
   end
 end
+
 return WBP_AccessoryInfoBox_C

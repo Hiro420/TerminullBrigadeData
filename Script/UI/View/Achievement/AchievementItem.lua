@@ -1,10 +1,13 @@
 local AchievementItem = UnLua.Class()
+
 function AchievementItem:Construct()
   self.ButtonSelect.OnClicked:Add(self, self.OnSelectClick)
 end
+
 function AchievementItem:Destruct()
   self.ButtonSelect.OnClicked:Remove(self, self.OnSelectClick)
 end
+
 function AchievementItem:OnListItemObjectSet(ListItemObj)
   self.DataObj = ListItemObj
   local DataObjTemp = ListItemObj
@@ -50,16 +53,20 @@ function AchievementItem:OnListItemObjectSet(ListItemObj)
   self.RGStateControllerSelect:ChangeStatus(tostring(DataObjTemp.SelectStatus))
   self.WBP_RedDotView:ChangeRedDotIdByTag(taskGroupId)
 end
+
 function AchievementItem:BP_OnEntryReleased()
   self.DataObj = nil
   self.taskTbData = nil
 end
+
 function AchievementItem:OnMouseEnter()
   self.RGStateControllerHover:ChangeStatus(tostring(2))
 end
+
 function AchievementItem:OnMouseLeave()
   self.RGStateControllerHover:ChangeStatus(tostring(1))
 end
+
 function AchievementItem:OnSelectClick()
   if not UE.RGUtil.IsUObjectValid(self.DataObj) then
     return
@@ -80,4 +87,5 @@ function AchievementItem:OnSelectClick()
     self.RGStateControllerSelect:ChangeStatus(tostring(EAchievementItemSelectState.Select))
   end
 end
+
 return AchievementItem

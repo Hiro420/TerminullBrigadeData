@@ -1,5 +1,6 @@
 local ProficiencyHandler = {}
 local ProficiencyData = require("Modules.Proficiency.ProficiencyData")
+
 function ProficiencyHandler:RequestGetHeroProfyLevelRewardToServer(HeroId, ProfyLevel)
   local Params = {heroID = HeroId, profy = ProfyLevel}
   HttpCommunication.Request("hero/getheroprofylvreward", Params, {
@@ -16,6 +17,7 @@ function ProficiencyHandler:RequestGetHeroProfyLevelRewardToServer(HeroId, Profy
     end
   })
 end
+
 function ProficiencyHandler:RequestGetHeroProfyStoryRewardToServer(HeroId, ProfyLevel)
   local Params = {heroID = HeroId, profy = ProfyLevel}
   HttpCommunication.Request("hero/getheroprofystoryreward", Params, {
@@ -32,4 +34,5 @@ function ProficiencyHandler:RequestGetHeroProfyStoryRewardToServer(HeroId, Profy
     end
   })
 end
+
 return ProficiencyHandler

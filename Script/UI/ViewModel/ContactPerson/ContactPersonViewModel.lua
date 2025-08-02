@@ -11,6 +11,7 @@ ContactPersonViewModel.propertyBindings = {
   BasicInfo = {}
 }
 ContactPersonViewModel.subViewModels = {}
+
 function ContactPersonViewModel:OnInit()
   self.Super.OnInit(self)
   EventSystem.AddListener(self, EventDef.ContactPerson.OnContactPersonItemClicked, self.OnContactPersonItemClicked)
@@ -28,6 +29,7 @@ function ContactPersonViewModel:OnInit()
     end
   end
 end
+
 function ContactPersonViewModel:RefreshPlayerInfoList()
   local IdList = {}
   local ContactPersonViewModel = UIModelMgr:Get("ContactPersonViewModel")
@@ -43,6 +45,7 @@ function ContactPersonViewModel:RefreshPlayerInfoList()
   end
   ContactPersonViewModel:PullPlayerInfoList(IdList, CurSelectTabId)
 end
+
 function ContactPersonViewModel:PullPlayerInfoList(IdList, ContactListType)
   local FirstView = self:GetFirstView()
   if not FirstView or FirstView:GetCurSelectTabId() ~= ContactListType then
@@ -97,6 +100,7 @@ function ContactPersonViewModel:PullPlayerInfoList(IdList, ContactListType)
     end
   end
 end
+
 function ContactPersonViewModel:StartOrEndRefreshPlayerInfoList(IsStart)
   if not IsStart then
     if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.PlayerInfoPullTimer) then
@@ -109,15 +113,18 @@ function ContactPersonViewModel:StartOrEndRefreshPlayerInfoList(IsStart)
     }, 5.0, true)
   end
 end
+
 function ContactPersonViewModel:OnContactPersonItemClicked(MousePosition, PlayerInfo, SourceFrom, ...)
   UIMgr:Show(ViewID.UI_ContactPersonOperateButtonPanel, nil, MousePosition, PlayerInfo, SourceFrom, ...)
 end
+
 function ContactPersonViewModel:OnRecentListPlayerInfoChanged(PlayerInfoList, ContactListType)
   local FirstView = self:GetFirstView()
   if FirstView and FirstView.OnPlayerListChanged then
     FirstView:OnPlayerListChanged(PlayerInfoList, ContactListType)
   end
 end
+
 function ContactPersonViewModel:OnUpdateBasicInfo()
   local BasicInfo = DataMgr.GetBasicInfo()
   local FirstView = self:GetFirstView()
@@ -125,14 +132,17 @@ function ContactPersonViewModel:OnUpdateBasicInfo()
     FirstView:InitInfo(BasicInfo)
   end
 end
+
 function ContactPersonViewModel:OnFriendListUpdate()
   local IdList = ContactPersonData:GetFriendIdList()
   self:PullPlayerInfoList(IdList, EContactListType.Friend)
 end
+
 function ContactPersonViewModel:OnFriendApplyListUpdate()
   local IdList = ContactPersonData:GetFriendApplyIdList()
   self:PullPlayerInfoList(IdList, EContactListType.FriendRequest)
 end
+
 function ContactPersonViewModel:OnBlackListUpdate()
   local IdList = ContactPersonData:GetBlackListIdList()
   if next(IdList) == nil then
@@ -144,6 +154,7 @@ function ContactPersonViewModel:OnBlackListUpdate()
     DataMgr.GetOrQueryPlayerInfo(IdList, true, nil, nil, nil, nil, EContactListType.BlackList)
   end
 end
+
 function ContactPersonViewModel:BindOnQueryPlayerInfoSuccess(Params)
   if not Params[1] or Params[1] ~= EContactListType.BlackList then
     return
@@ -157,10 +168,12 @@ function ContactPersonViewModel:BindOnQueryPlayerInfoSuccess(Params)
     end
   end
 end
+
 function ContactPersonViewModel:BindOnPlatformFriendInfoListUpdate()
   local RoleIdList = ContactPersonData:GetPlatformFriendsRoleIdList()
   self:PullPlayerInfoList(RoleIdList, EContactListType.PlatformFriend)
 end
+
 function ContactPersonViewModel:BindOnReadFriendsInfoListComplete(Result)
   if not Result then
     print("ContactPersonViewModel:BindOnReadFriendsInfoListComplete Result is false")
@@ -209,10 +222,12 @@ function ContactPersonViewModel:BindOnReadFriendsInfoListComplete(Result)
     })
   end
 end
+
 function ContactPersonViewModel:OnViewTabChanged(CurSelectIndex)
   self.CurViewSelectTabIndex = CurSelectIndex
   self:RefreshPlayerInfoList()
 end
+
 function ContactPersonViewModel:OnShutdown()
   EventSystem.RemoveListener(EventDef.ContactPerson.OnContactPersonItemClicked, self.OnContactPersonItemClicked, self)
   EventSystem.RemoveListener(EventDef.ContactPerson.OnRecentListPlayerInfoUpdate, self.OnRecentListPlayerInfoChanged, self)
@@ -231,4 +246,5 @@ function ContactPersonViewModel:OnShutdown()
   end
   self.Super.OnShutdown(self)
 end
+
 return ContactPersonViewModel

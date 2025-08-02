@@ -1,14 +1,17 @@
 local WBP_GRTypeButton_C = UnLua.Class()
+
 function WBP_GRTypeButton_C:Construct()
   self.Button_GRType.OnClicked:Add(self, WBP_GRTypeButton_C.OnClicked_Button)
   self.Button_GRType.OnHovered:Add(self, WBP_GRTypeButton_C.OnClicked_Hovered)
   self.Button_GRType.OnUnHovered:Add(self, WBP_GRTypeButton_C.OnClicked_UnHovered)
 end
+
 function WBP_GRTypeButton_C:Destruct()
   self.Button_GRType.OnClicked:Remove(self, WBP_GRTypeButton_C.OnClicked_Button)
   self.Button_GRType.OnHovered:Remove(self, WBP_GRTypeButton_C.OnClicked_Hovered)
   self.Button_GRType.OnUnHovered:Remove(self, WBP_GRTypeButton_C.OnClicked_UnHovered)
 end
+
 function WBP_GRTypeButton_C:SetActivateState(Activate)
   if self.TabConfig and self.TabConfig:IsValid() then
     local IconObj
@@ -25,13 +28,17 @@ function WBP_GRTypeButton_C:SetActivateState(Activate)
     self.Image_GRType:SetBrush(Brush)
   end
 end
+
 function WBP_GRTypeButton_C:OnClicked_Button()
   self:ActivateTabWidget()
 end
+
 function WBP_GRTypeButton_C:OnClicked_Hovered()
   self.Image_GRTypeHover:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_GRTypeButton_C:OnClicked_UnHovered()
   self.Image_GRTypeHover:SetVisibility(UE.ESlateVisibility.Hidden)
 end
+
 return WBP_GRTypeButton_C

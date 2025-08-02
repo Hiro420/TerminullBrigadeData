@@ -23,17 +23,22 @@ local TipsData = {
     end
   }
 }
+
 function WBP_SpecificLobbyUnlockShow:BindClickHandler()
 end
+
 function WBP_SpecificLobbyUnlockShow:UnBindClickHandler()
 end
+
 function WBP_SpecificLobbyUnlockShow:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function WBP_SpecificLobbyUnlockShow:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_SpecificLobbyUnlockShow:OnShow(...)
   self.Conseing = false
   if table.IsEmpty(IllustratedGuideData.NewUnlockSpecificModifyList) then
@@ -59,6 +64,7 @@ function WBP_SpecificLobbyUnlockShow:OnShow(...)
   end
   self:ShowItem()
 end
+
 function WBP_SpecificLobbyUnlockShow:ShowItem()
   local ObjCls = UE.UClass.Load("/Game/Rouge/UI/Common/BP_GetPropData.BP_GetPropData_C")
   self.PropList:ClearListItems()
@@ -73,6 +79,7 @@ function WBP_SpecificLobbyUnlockShow:ShowItem()
   end
   IllustratedGuideData.NewUnlockSpecificModifyList = {}
 end
+
 function WBP_SpecificLobbyUnlockShow:CloseSelf()
   if self.Conseing then
     return
@@ -83,6 +90,7 @@ function WBP_SpecificLobbyUnlockShow:CloseSelf()
   end
   UIMgr:Hide(ViewID.UI_SpecificLobbyUnlockShow)
 end
+
 function WBP_SpecificLobbyUnlockShow:UnHoveredFunc()
   if self.HoveredTipWidget ~= nil then
     UpdateVisibility(self.HoveredTipWidget, false)
@@ -90,6 +98,7 @@ function WBP_SpecificLobbyUnlockShow:UnHoveredFunc()
   end
   self.HoveredTipWidgetRef = nil
 end
+
 function WBP_SpecificLobbyUnlockShow:HoveredFunc(TargetItem, PropsData)
   local result, row = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, PropsData.PropId)
   if not result then
@@ -140,6 +149,7 @@ function WBP_SpecificLobbyUnlockShow:HoveredFunc(TargetItem, PropsData)
     self.HoveredTipWidget.Slot:SetPosition(MousePosition)
   end
 end
+
 function WBP_SpecificLobbyUnlockShow:OnHide()
   if IsListeningForInputAction(self, "Space") then
     StopListeningForInputAction(self, "Space", UE.EInputEvent.IE_Pressed)
@@ -149,6 +159,7 @@ function WBP_SpecificLobbyUnlockShow:OnHide()
   end
   self.Button_Buy.OnClicked:Remove(self, WBP_SpecificLobbyUnlockShow.CloseSelf)
 end
+
 function WBP_SpecificLobbyUnlockShow:Destruct()
   if not self.HoveredTipWidgetMap then
     return
@@ -158,4 +169,5 @@ function WBP_SpecificLobbyUnlockShow:Destruct()
   end
   self.HoveredTipWidgetMap = {}
 end
+
 return WBP_SpecificLobbyUnlockShow

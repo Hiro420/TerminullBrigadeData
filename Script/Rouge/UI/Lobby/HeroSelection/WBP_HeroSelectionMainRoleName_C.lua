@@ -1,4 +1,5 @@
 local WBP_HeroSelectionMainRoleName_C = UnLua.Class()
+
 function WBP_HeroSelectionMainRoleName_C:Show(PlayerInfo)
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.PlayerInfo = PlayerInfo
@@ -9,9 +10,11 @@ function WBP_HeroSelectionMainRoleName_C:Show(PlayerInfo)
     self.IsBind = true
   end
 end
+
 function WBP_HeroSelectionMainRoleName_C:BindOnUpdateMyTeamInfo()
   self:ChangePickStateVis()
 end
+
 function WBP_HeroSelectionMainRoleName_C:ChangePickStateVis()
   local TeamInfo = DataMgr.GetTeamInfo()
   if not TeamInfo.players then
@@ -38,14 +41,17 @@ function WBP_HeroSelectionMainRoleName_C:ChangePickStateVis()
     end
   end
 end
+
 function WBP_HeroSelectionMainRoleName_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.PlayerInfo = nil
   EventSystem.RemoveListener(EventDef.Lobby.UpdateMyTeamInfo, self.BindOnUpdateMyTeamInfo, self)
   self.IsBind = false
 end
+
 function WBP_HeroSelectionMainRoleName_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.UpdateMyTeamInfo, self.BindOnUpdateMyTeamInfo, self)
   self.IsBind = false
 end
+
 return WBP_HeroSelectionMainRoleName_C

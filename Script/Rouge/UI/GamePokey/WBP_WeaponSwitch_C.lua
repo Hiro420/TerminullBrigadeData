@@ -1,4 +1,5 @@
 local WBP_WeaponSwitch_C = UnLua.Class()
+
 function WBP_WeaponSwitch_C:InitPlayerPrimaryWeapon()
   self.TextBlock_Num:SetText("1")
   local pawn = self:GetOwningPlayerPawn()
@@ -13,6 +14,7 @@ function WBP_WeaponSwitch_C:InitPlayerPrimaryWeapon()
     end
   end
 end
+
 function WBP_WeaponSwitch_C:InitPlayerSecondWeapon()
   self.TextBlock_Num:SetText("2")
   local pawn = self:GetOwningPlayerPawn()
@@ -27,6 +29,7 @@ function WBP_WeaponSwitch_C:InitPlayerSecondWeapon()
     end
   end
 end
+
 function WBP_WeaponSwitch_C:InitCompanionPrimaryWeapon()
   self.TextBlock_Num:SetText("2")
   local pawn = self:GetOwningPlayerPawn()
@@ -59,6 +62,7 @@ function WBP_WeaponSwitch_C:InitCompanionPrimaryWeapon()
     end
   end
 end
+
 function WBP_WeaponSwitch_C:InitChoose(Gun)
   local pawn = self:GetOwningPlayerPawn()
   if pawn then
@@ -73,6 +77,7 @@ function WBP_WeaponSwitch_C:InitChoose(Gun)
     end
   end
 end
+
 function WBP_WeaponSwitch_C:InitInfo()
   if 1 == self.Index then
     self:InitPlayerPrimaryWeapon()
@@ -85,6 +90,7 @@ function WBP_WeaponSwitch_C:InitInfo()
   end
   self:SetImageByWeaponType()
 end
+
 function WBP_WeaponSwitch_C:SetWeaponInfo(Gun)
   if Gun then
     self.Gun = Gun
@@ -96,6 +102,7 @@ function WBP_WeaponSwitch_C:SetWeaponInfo(Gun)
     self:InitChoose(Gun)
   end
 end
+
 function WBP_WeaponSwitch_C:SetAmmo(Gun)
   if Gun then
     self.TextBlock_CurrentBulletNum:SetText(tostring(self.Gun:GetClipAmmo()))
@@ -106,14 +113,17 @@ function WBP_WeaponSwitch_C:SetAmmo(Gun)
     end
   end
 end
+
 function WBP_WeaponSwitch_C:SetIndex(Index)
   self.Index = Index
 end
+
 function WBP_WeaponSwitch_C:SetEmpty()
   self.HorizontalBox_Weapon:SetVisibility(UE.ESlateVisibility.Hidden)
   self.Image_LockOne:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.Image_LockTwo:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_WeaponSwitch_C:SetImageByWeaponType()
   if self.Gun then
     local accessoryComponent = self.Gun.AccessoryComponent
@@ -139,9 +149,11 @@ function WBP_WeaponSwitch_C:SetImageByWeaponType()
     end
   end
 end
+
 function WBP_WeaponSwitch_C:SetInUse()
   self:PlayAnimationReverse(self.SelectedAnimation)
 end
+
 function WBP_WeaponSwitch_C:UnsetInUse()
   if self.ToRight then
     self.Overlay_Info:SetRenderTransformPivot(UE.FVector2D(1, 0.5))
@@ -150,4 +162,5 @@ function WBP_WeaponSwitch_C:UnsetInUse()
   end
   self:PlayAnimation(self.SelectedAnimation)
 end
+
 return WBP_WeaponSwitch_C

@@ -1,9 +1,11 @@
 local Portal_C = UnLua.Class()
 local bListened = false
+
 function Portal_C:ReceiveBeginPlay()
   bListened = false
   ListenObjectMessage(nil, "Level.OnLevelEntry", self, self.GetPortalTexture, 1)
 end
+
 function Portal_C:GetPortalTexture()
   if bListened then
     return
@@ -30,6 +32,7 @@ function Portal_C:GetPortalTexture()
     self.UpdatePortalTexture
   }, "PortalTexture")
 end
+
 function Portal_C:UpdatePortalTexture(GroupName, TextureCube)
   if not TextureCube then
     print("Warning: Failed to load portal texture")
@@ -51,4 +54,5 @@ function Portal_C:UpdatePortalTexture(GroupName, TextureCube)
   BoxMeshComponent:SetMaterial(0, MID)
   print("Display: Succed to set portal texture")
 end
+
 return Portal_C

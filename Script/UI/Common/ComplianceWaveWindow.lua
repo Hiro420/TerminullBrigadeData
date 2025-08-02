@@ -2,10 +2,12 @@ local SelectType = {UnderSixteen = 13, UnderEighteen = 17}
 local ViewBase = require("Framework.UIMgr.ViewBase")
 local TopupData = require("Modules.Topup.TopupData")
 local ComplianceWaveWindow = Class(ViewBase)
+
 function ComplianceWaveWindow:BindClickHandler()
   self.CheckBox_IsUnderSixteen.OnCheckStateChanged:Add(self, self.BindOnUnderSixteenCheckStateChanged)
   self.CheckBox_IsUnderEighteen.OnCheckStateChanged:Add(self, self.BindOnUnderEighteenCheckStateChanged)
 end
+
 function ComplianceWaveWindow:BindOnUnderSixteenCheckStateChanged(IsChecked)
   if IsChecked then
     self.SelectIndex = SelectType.UnderSixteen
@@ -16,6 +18,7 @@ function ComplianceWaveWindow:BindOnUnderSixteenCheckStateChanged(IsChecked)
     self.SelectIndex = nil
   end
 end
+
 function ComplianceWaveWindow:BindOnUnderEighteenCheckStateChanged(IsChecked)
   if IsChecked then
     self.SelectIndex = SelectType.UnderEighteen
@@ -26,17 +29,21 @@ function ComplianceWaveWindow:BindOnUnderEighteenCheckStateChanged(IsChecked)
     self.SelectIndex = nil
   end
 end
+
 function ComplianceWaveWindow:UnBindClickHandler()
   self.CheckBox_IsUnderSixteen.OnCheckStateChanged:Remove(self, self.BindOnUnderSixteenCheckStateChanged)
   self.CheckBox_IsUnderEighteen.OnCheckStateChanged:Remove(self, self.BindOnUnderEighteenCheckStateChanged)
 end
+
 function ComplianceWaveWindow:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function ComplianceWaveWindow:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function ComplianceWaveWindow:OnShow(...)
   self.IsClosing = false
   if self.ViewModel then
@@ -58,6 +65,7 @@ function ComplianceWaveWindow:OnShow(...)
   self.CheckBox_IsUnderEighteen:SetIsChecked(false)
   self.SelectIndex = nil
 end
+
 function ComplianceWaveWindow:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -69,6 +77,7 @@ function ComplianceWaveWindow:OnHide()
   self.Btn_Cancel.OnMainButtonClicked:Remove(self, self.CloseSelf)
   self.Btn_Confirm.OnMainButtonClicked:Remove(self, self.SelectAge)
 end
+
 function ComplianceWaveWindow:CloseSelf()
   if self.IsClosing then
     return
@@ -76,6 +85,7 @@ function ComplianceWaveWindow:CloseSelf()
   self.IsClosing = true
   UIMgr:Hide(ViewID.UI_ComplianceWaveWindow)
 end
+
 function ComplianceWaveWindow:SelectAge()
   if not self.SelectIndex then
     ShowWaveWindow(220001)
@@ -84,6 +94,8 @@ function ComplianceWaveWindow:SelectAge()
   TopupData:SetTopupAge(self.SelectIndex, true, true)
   self:CloseSelf()
 end
+
 function ComplianceWaveWindow:Destruct()
 end
+
 return ComplianceWaveWindow

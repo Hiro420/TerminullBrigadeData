@@ -1,4 +1,5 @@
 local WBP_ModChoosePanel_C = UnLua.Class()
+
 function WBP_ModChoosePanel_C:Construct()
   self.bModChoose = false
   self.modComponent = self:GetOwningPlayerPawn():GetComponentByClass(UE.UMODComponent.StaticClass())
@@ -8,10 +9,12 @@ function WBP_ModChoosePanel_C:Construct()
   self.EscapeKeyEvent = "EscapeKeyEvent"
   self.LocalUserId = self:GetOwningPlayer().PlayerState:GetUserId()
 end
+
 function WBP_ModChoosePanel_C:Destruct()
   self:BindOnMODResultDelegate(false)
   self.modComponent = nil
 end
+
 function WBP_ModChoosePanel_C:FocusInput()
   self.Overridden.FocusInput(self)
   SetInputIgnore(self:GetOwningPlayerPawn(), true)
@@ -34,6 +37,7 @@ function WBP_ModChoosePanel_C:FocusInput()
     })
   end
 end
+
 function WBP_ModChoosePanel_C:UnfocusInput()
   self.Overridden.UnfocusInput(self)
   SetInputIgnore(self:GetOwningPlayerPawn(), false)
@@ -47,11 +51,13 @@ function WBP_ModChoosePanel_C:UnfocusInput()
     StopListeningForInputAction(self, self.EscapeKeyEvent, UE.EInputEvent.IE_Pressed)
   end
 end
+
 function WBP_ModChoosePanel_C:OnAnimationFinished(Animation)
   if Animation == self.ani_33_modchoosepanel_out then
     self:Exit()
   end
 end
+
 function WBP_ModChoosePanel_C:OnOpenModUI(InNPCCharacterMOD)
   self.Image_ExitAnimation:SetVisibility(UE.ESlateVisibility.Hidden)
   self.NPCCharacterMOD = InNPCCharacterMOD
@@ -71,6 +77,7 @@ function WBP_ModChoosePanel_C:OnOpenModUI(InNPCCharacterMOD)
   end
   self.bInitInfo = true
 end
+
 function WBP_ModChoosePanel_C:InitModWidgets()
   local widgets = self.CanvasPanel_Mods:GetAllChildren()
   local arrayLength = widgets:Length()
@@ -113,6 +120,7 @@ function WBP_ModChoosePanel_C:InitModWidgets()
     value:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 function WBP_ModChoosePanel_C:BindOnMODResultDelegate(Bind)
   if self.modComponent then
     if Bind then
@@ -122,6 +130,7 @@ function WBP_ModChoosePanel_C:BindOnMODResultDelegate(Bind)
     end
   end
 end
+
 function WBP_ModChoosePanel_C:OnMODResultDelegate(NPC, Result)
   if Result then
     print("\230\168\161\231\187\132\233\128\137\230\139\169\230\136\144\229\138\159!!!!!!!")
@@ -132,10 +141,12 @@ function WBP_ModChoosePanel_C:OnMODResultDelegate(NPC, Result)
     self.bModChoose = false
   end
 end
+
 function WBP_ModChoosePanel_C:OnModChoose()
   self.bModChoose = true
   self:DisableAllMod(true)
 end
+
 function WBP_ModChoosePanel_C:OnTabKeyEvent()
   if not self:IsAnimationPlaying(self.ani_33_modchoosepanel_in) and not self:IsAnimationPlaying(self.ani_33_modchoosepanel_out) and not self.ModChoose and SwitchUI(self.MainPanelClass, true) then
     local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGUIManager:StaticClass())
@@ -147,6 +158,7 @@ function WBP_ModChoosePanel_C:OnTabKeyEvent()
     end
   end
 end
+
 function WBP_ModChoosePanel_C:OnCKeyEvent()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if UIManager then
@@ -162,11 +174,13 @@ function WBP_ModChoosePanel_C:OnCKeyEvent()
     end
   end
 end
+
 function WBP_ModChoosePanel_C:OnEscapeKeyEvent()
   if not self:IsAnimationPlaying(self.ani_33_modchoosepanel_in) and not self:IsAnimationPlaying(self.ani_33_modchoosepanel_out) and not self.ModChoose then
     self:PlayExitAnimation()
   end
 end
+
 function WBP_ModChoosePanel_C:UpdateModWidgetByType()
   local selectedMODId = self.NPCCharacterMOD.SelectedMODId
   if selectedMODId:IsValidIndex(1) then
@@ -186,6 +200,7 @@ function WBP_ModChoosePanel_C:UpdateModWidgetByType()
     end
   end
 end
+
 function WBP_ModChoosePanel_C:UpdateModWidgets(StartIndex)
   local modWidgets = self.CanvasPanel_Mods:GetAllChildren()
   local modList = self.NPCCharacterMOD.MODList
@@ -196,6 +211,7 @@ function WBP_ModChoosePanel_C:UpdateModWidgets(StartIndex)
     StartIndex = StartIndex + 1
   end
 end
+
 function WBP_ModChoosePanel_C:InitModTypeCounts()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if DTSubsystem then
@@ -238,12 +254,14 @@ function WBP_ModChoosePanel_C:InitModTypeCounts()
     end
   end
 end
+
 function WBP_ModChoosePanel_C:UpdateModTypeCounts()
   self.WBP_ModTypeCount_Legend:UpdateModTypeInfo()
   for key, value in iterator(self.HorizontalBox_ESQ:GetAllChildren()) do
     value:UpdateModTypeInfo()
   end
 end
+
 function WBP_ModChoosePanel_C:ActivatePagePanel(Index)
   self:ActivatePageTitle(Index)
   if 0 == Index then
@@ -255,13 +273,16 @@ function WBP_ModChoosePanel_C:ActivatePagePanel(Index)
     self:UpdateModWidgets(1 + self.ModNumber)
   end
 end
+
 function WBP_ModChoosePanel_C:ActivatePageTitle(Index)
 end
+
 function WBP_ModChoosePanel_C:DisableAllMod(Disable)
   for key, value in iterator(self.CanvasPanel_Mods:GetAllChildren()) do
     value:DisableMod(Disable)
   end
 end
+
 function WBP_ModChoosePanel_C:HasCompanionAI()
   if not self.CompanionComp then
     self.CompanionComp = self:GetOwningPlayerPawn():GetComponentByClass(UE.UCompanionComponent:StaticClass())
@@ -272,6 +293,7 @@ function WBP_ModChoosePanel_C:HasCompanionAI()
     return false
   end
 end
+
 function WBP_ModChoosePanel_C:PlayModAnimation()
   local widgets = self.CanvasPanel_Mods:GetAllChildren()
   local arrayLength = widgets:Length()
@@ -290,6 +312,7 @@ function WBP_ModChoosePanel_C:PlayModAnimation()
     end
   end
 end
+
 function WBP_ModChoosePanel_C:PlayExitAnimation()
   self.Image_ExitAnimation:SetVisibility(UE.ESlateVisibility.Visible)
   self:PlayAnimation(self.ani_33_modchoosepanel_out)
@@ -298,4 +321,5 @@ function WBP_ModChoosePanel_C:PlayExitAnimation()
     value:PlayAnimation(value.ani_modchoosebox_out)
   end
 end
+
 return WBP_ModChoosePanel_C

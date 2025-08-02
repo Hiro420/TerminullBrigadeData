@@ -1,9 +1,11 @@
 local WBP_SingleSeasonAbilityItem = UnLua.Class()
 local SeasonAbilityData = require("Modules.SeasonAbility.SeasonAbilityData")
 local SeasonAbilityModule = require("Modules.SeasonAbility.SeasonAbilityModule")
+
 function WBP_SingleSeasonAbilityItem:Construct()
   self.CurCostInfo = {}
 end
+
 function WBP_SingleSeasonAbilityItem:Show(AbilityId, Type, CurHeroId)
   if 0 == AbilityId then
     self:Hide()
@@ -37,6 +39,7 @@ function WBP_SingleSeasonAbilityItem:Show(AbilityId, Type, CurHeroId)
     self.IsBind = true
   end
 end
+
 function WBP_SingleSeasonAbilityItem:ChangeAnimationWidgetVis(...)
   UpdateVisibility(self.CanvasPanel_Brighten_Big, self.IsBigItem)
   UpdateVisibility(self.CanvasPanel_Brighten_Small, not self.IsBigItem)
@@ -58,6 +61,7 @@ function WBP_SingleSeasonAbilityItem:ChangeAnimationWidgetVis(...)
     UpdateVisibility(self.CanvasPanel_Write_Small_Green, self.Type == TableEnums.ENUMAbilityType.Survival)
   end
 end
+
 function WBP_SingleSeasonAbilityItem:BindOnSeasonAbilityInfoUpdated(...)
   local CurLevel = SeasonAbilityData:GetSeasonAbilityLevel(self.AbilityId, self.CurHeroId)
   if self.IsUpgrade and CurLevel > self.CurRealLevel then
@@ -65,6 +69,7 @@ function WBP_SingleSeasonAbilityItem:BindOnSeasonAbilityInfoUpdated(...)
   end
   self:RefreshStatus()
 end
+
 function WBP_SingleSeasonAbilityItem:RefreshStatus()
   if not self.AbilityId then
     return
@@ -154,6 +159,7 @@ function WBP_SingleSeasonAbilityItem:RefreshStatus()
     UpdateVisibility(self.Txt_Progress, true)
   end
 end
+
 function WBP_SingleSeasonAbilityItem:ResetLevelCost()
   local PreLevel = SeasonAbilityData:GetPreAbilityLevel(self.AbilityId, self.CurHeroId)
   local MaxCanUpgradeLevel = SeasonAbilityData:GetAbilityMaxCanUpgradeLevel(self.AbilityId, self.CurHeroId)
@@ -167,6 +173,7 @@ function WBP_SingleSeasonAbilityItem:ResetLevelCost()
     end
   end
 end
+
 function WBP_SingleSeasonAbilityItem:OnLeftMouseDown(...)
   local AbilityGroupInfo = SeasonAbilityData:GetAbilityTableRow(self.AbilityId)
   if not AbilityGroupInfo then
@@ -203,6 +210,7 @@ function WBP_SingleSeasonAbilityItem:OnLeftMouseDown(...)
   self.IsUpgrade = true
   EventSystem.Invoke(EventDef.SeasonAbility.OnSeasonAbilityInfoUpdated)
 end
+
 function WBP_SingleSeasonAbilityItem:OnRightMouseDown(...)
   self.IsUpgrade = false
   local AbilityInfo = SeasonAbilityData:GetAbilityTableRow(self.AbilityId)
@@ -226,6 +234,7 @@ function WBP_SingleSeasonAbilityItem:OnRightMouseDown(...)
   SeasonAbilityData:SetPreAbilityLevel(self.AbilityId, PreLevel - 1, self.CurHeroId)
   EventSystem.Invoke(EventDef.SeasonAbility.OnSeasonAbilityInfoUpdated)
 end
+
 function WBP_SingleSeasonAbilityItem:OnMouseEnter(MyGeometry, MouseEvent)
   if self.IsBigItem then
     UpdateVisibility(self.HoverPanel_Big, true)
@@ -236,6 +245,7 @@ function WBP_SingleSeasonAbilityItem:OnMouseEnter(MyGeometry, MouseEvent)
   self:SetRenderScale(UE.FVector2D(1.1, 1.1))
   EventSystem.Invoke(EventDef.SeasonAbility.OnUpdateSeasonAbilityTipVis, true, self.AbilityId, self.Type)
 end
+
 function WBP_SingleSeasonAbilityItem:OnMouseLeave(MyGeometry, MouseEvent)
   if self.IsBigItem then
     UpdateVisibility(self.HoverPanel_Big, false)
@@ -246,13 +256,16 @@ function WBP_SingleSeasonAbilityItem:OnMouseLeave(MyGeometry, MouseEvent)
   self:SetRenderScale(UE.FVector2D(1.0, 1.0))
   EventSystem.Invoke(EventDef.SeasonAbility.OnUpdateSeasonAbilityTipVis, false)
 end
+
 function WBP_SingleSeasonAbilityItem:Hide(...)
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   self:StopAllAnimations()
   self.IsBind = false
   EventSystem.RemoveListener(EventDef.SeasonAbility.OnSeasonAbilityInfoUpdated, self.BindOnSeasonAbilityInfoUpdated, self)
 end
+
 function WBP_SingleSeasonAbilityItem:Destruct(...)
   self:Hide()
 end
+
 return WBP_SingleSeasonAbilityItem

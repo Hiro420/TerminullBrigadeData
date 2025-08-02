@@ -1,8 +1,10 @@
 local SkinData = require("Modules.Appearance.Skin.SkinData")
 local BP_LobbyDisplayRoleActor_C = UnLua.Class()
+
 function BP_LobbyDisplayRoleActor_C:ReceiveTick(DeltaSeconds)
   self.Overridden.ReceiveTick(self, DeltaSeconds)
 end
+
 function BP_LobbyDisplayRoleActor_C:ReceiveBeginPlay()
   self.ChildActor:SetChildActorClass(nil)
   self.ShowRelaxAnimation = false
@@ -27,12 +29,15 @@ function BP_LobbyDisplayRoleActor_C:ReceiveBeginPlay()
     skinSys.OnDynamicSkinChange:Add(self, self.SkinChanged)
   end
 end
+
 function BP_LobbyDisplayRoleActor_C:OnRelaxShow_Finish()
   self.ShowRelaxAnimation = true
 end
+
 function BP_LobbyDisplayRoleActor_C:OnLobbyEffToWhiteFinish()
   self:SetHiddenInGame(false)
 end
+
 function BP_LobbyDisplayRoleActor_C:ShowActor(HeroId, WeaponResourceId, SkinId, WeaponSkinId)
   self:SetActorHiddenInGame(false)
   self:ChangeBodyMesh(HeroId, SkinId)
@@ -40,9 +45,11 @@ function BP_LobbyDisplayRoleActor_C:ShowActor(HeroId, WeaponResourceId, SkinId, 
   if self.heroId == HeroId or not self.ShowDissoveEffector then
   end
 end
+
 function BP_LobbyDisplayRoleActor_C:HideActor()
   self:SetHiddenInGame(true)
 end
+
 function BP_LobbyDisplayRoleActor_C:RestoreLobbyCharacterMesh()
   local HeroInfo = DataMgr.GetMyHeroInfo()
   if nil ~= HeroInfo then
@@ -58,6 +65,7 @@ function BP_LobbyDisplayRoleActor_C:RestoreLobbyCharacterMesh()
     self:ChangeEquipWeaponMesh(TargetWeaponInfo.resourceId)
   end
 end
+
 function BP_LobbyDisplayRoleActor_C:BindOnEquippedWeaponInfoChanged(HeroId)
   local HeroInfo = DataMgr.GetMyHeroInfo()
   if not HeroInfo then
@@ -76,6 +84,7 @@ function BP_LobbyDisplayRoleActor_C:BindOnEquippedWeaponInfoChanged(HeroId)
   end
   self:ChangeEquipWeaponMesh(tonumber(TargetWeaponInfo.resourceId))
 end
+
 function BP_LobbyDisplayRoleActor_C:OnWeaponInfoChanged()
   local HeroInfo = DataMgr.GetMyHeroInfo()
   if not HeroInfo then
@@ -91,6 +100,7 @@ function BP_LobbyDisplayRoleActor_C:OnWeaponInfoChanged()
   end
   self:ChangeEquipWeaponMesh(tonumber(TargetWeaponInfo.resourceId))
 end
+
 function BP_LobbyDisplayRoleActor_C:ChangeEquipWeaponMesh(WeaponResourceId, WeaponSkinId, bShowGlitchMatEffect)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -105,12 +115,14 @@ function BP_LobbyDisplayRoleActor_C:ChangeEquipWeaponMesh(WeaponResourceId, Weap
     end
   end
 end
+
 function BP_LobbyDisplayRoleActor_C:ForceChangeEquipWeaponMesh(WeaponSkinId, bShowGlitchMatEffect)
   if self.ChildActor.ChildActor and self.ChildActor.ChildActor.ChangeWeaponSkin then
     self.ChildActor.ChildActor:ChangeWeaponSkin(WeaponSkinId, bShowGlitchMatEffect)
     self.CurWeaponSkinId = WeaponSkinId
   end
 end
+
 function BP_LobbyDisplayRoleActor_C:BindOnUpdateMyHeroInfo()
   print("BP_LobbyDisplayRoleActor_C:BindOnUpdateMyHeroInfo")
   local HeroInfo = DataMgr.GetMyHeroInfo()
@@ -128,14 +140,17 @@ function BP_LobbyDisplayRoleActor_C:BindOnUpdateMyHeroInfo()
     self:ChangeEquipWeaponMesh(TargetWeaponInfo.resourceId)
   end
 end
+
 function BP_LobbyDisplayRoleActor_C:PlayDissoveEffect(bReverse)
   if self.ChildActor.ChildActor ~= nil then
     self.ChildActor.ChildActor:PlayDissoveEffect(bReverse, 0)
   end
 end
+
 function BP_LobbyDisplayRoleActor_C:OnCharacterDissolveEffectFinishCB()
   self.ShowDissoveEffector = true
 end
+
 function BP_LobbyDisplayRoleActor_C:ChangeBodyMesh(HeroId, SkinId, IsShowHeroEffect)
   local skinId = SkinId or SkinData.GetEquipedSkinIdByHeroId(HeroId)
   if skinId < 0 then
@@ -188,6 +203,7 @@ function BP_LobbyDisplayRoleActor_C:ChangeBodyMesh(HeroId, SkinId, IsShowHeroEff
     LogicRole.SetEffectState(self.ChildActor.ChildActor, skinId, HeroId, IsShowHeroEffect)
   end
 end
+
 function BP_LobbyDisplayRoleActor_C:ChangeBodyMesh11(HeroId, SkinId)
   if self.heroId ~= HeroId then
     local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -225,6 +241,7 @@ function BP_LobbyDisplayRoleActor_C:ChangeBodyMesh11(HeroId, SkinId)
     self.CurSkinId = skinId
   end
 end
+
 function BP_LobbyDisplayRoleActor_C:ResetChildActorAnimation()
   if not self.ChildActor.ChildActor then
     return
@@ -232,13 +249,16 @@ function BP_LobbyDisplayRoleActor_C:ResetChildActorAnimation()
   self.ChildActor.ChildActor:SetRoleStatus(UE.ERGLobbyRoleStatus.RelaxIdle)
   self.ChildActor.ChildActor:ResetAnimation()
 end
+
 function BP_LobbyDisplayRoleActor_C:SkinChanged(TargetActor, Success, SkinId)
   if TargetActor == self.ChildActor.ChildActor then
   end
 end
+
 function BP_LobbyDisplayRoleActor_C:GlitchAniEnd()
   self.ChildActor.ChildActor:UpdateSkin()
 end
+
 function BP_LobbyDisplayRoleActor_C:ReceiveEndPlay()
   self.OnAnimNotify_RelaxShow_Finish:Remove(self, BP_LobbyDisplayRoleActor_C.OnRelaxShow_Finish)
   if 1 == self.Index then
@@ -256,4 +276,5 @@ function BP_LobbyDisplayRoleActor_C:ReceiveEndPlay()
     skinSys.OnDynamicSkinChange:Remove(self, self.SkinChanged)
   end
 end
+
 return BP_LobbyDisplayRoleActor_C

@@ -1,6 +1,7 @@
 local OrderedMap = require("Framework.DataStruct.OrderedMap")
 local IllustratedGuideData = require("Modules.IllustratedGuide.IllustratedGuideData")
 local WBP_IGuide_PlotFragmentsItem_C = UnLua.Class()
+
 function WBP_IGuide_PlotFragmentsItem_C:Construct()
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
   self.Btn_Main.OnHovered:Add(self, self.BindOnMainButtonHovered)
@@ -8,12 +9,14 @@ function WBP_IGuide_PlotFragmentsItem_C:Construct()
   self.FragmentId = -1
   EventSystem.AddListener(self, EventDef.IllustratedGuide.OnPlotFragmentsItemChanged, self.BindOnPlotFragmentsItemChanged)
 end
+
 function WBP_IGuide_PlotFragmentsItem_C:Destruct()
   self.Btn_Main.OnClicked:Remove(self, self.BindOnMainButtonClicked)
   self.Btn_Main.OnHovered:Remove(self, self.BindOnMainButtonHovered)
   self.Btn_Main.OnUnhovered:Remove(self, self.BindOnMainButtonUnhovered)
   EventSystem.RemoveListener(EventDef.IllustratedGuide.OnPlotFragmentsItemChanged, self.BindOnPlotFragmentsItemChanged, self)
 end
+
 function WBP_IGuide_PlotFragmentsItem_C:InitInfo(ClueId, FragmentId)
   self.ClueId = ClueId
   self.FragmentId = FragmentId
@@ -46,12 +49,14 @@ function WBP_IGuide_PlotFragmentsItem_C:InitInfo(ClueId, FragmentId)
   end
   self:BindOnMainButtonUnhovered()
 end
+
 function WBP_IGuide_PlotFragmentsItem_C:Hide()
   UpdateVisibility(self.Canvas_Hover, false)
   UpdateVisibility(self.Canvas_Checked, false)
   UpdateVisibility(self.Canvas_Locked, false)
   UpdateVisibility(self, false)
 end
+
 function WBP_IGuide_PlotFragmentsItem_C:BindOnMainButtonClicked()
   local PlotFragmentsView = UIMgr:GetLuaFromActiveView(ViewID.UI_IllustratedGuidePlotFragments)
   if PlotFragmentsView and PlotFragmentsView:IsAnyAnimationPlaying() then
@@ -59,6 +64,7 @@ function WBP_IGuide_PlotFragmentsItem_C:BindOnMainButtonClicked()
   end
   EventSystem.Invoke(EventDef.IllustratedGuide.OnPlotFragmentsItemChanged, self.ClueId, self.FragmentId)
 end
+
 function WBP_IGuide_PlotFragmentsItem_C:BindOnMainButtonHovered()
   UpdateVisibility(self.Canvas_Hover, true)
   self.SclBox_Main:SetRenderScale(UE.FVector2D(1.1))
@@ -67,11 +73,13 @@ function WBP_IGuide_PlotFragmentsItem_C:BindOnMainButtonHovered()
   self.HoverTips = ShowCommonTips(nil, self, nil, WidgetClassPath, nil, false, Offset)
   self.HoverTips:InitInfo(self.ClueId, self.FragmentId)
 end
+
 function WBP_IGuide_PlotFragmentsItem_C:BindOnMainButtonUnhovered()
   UpdateVisibility(self.Canvas_Hover, false)
   UpdateVisibility(self.HoverTips, false)
   self.SclBox_Main:SetRenderScale(UE.FVector2D(1))
 end
+
 function WBP_IGuide_PlotFragmentsItem_C:BindOnPlotFragmentsItemChanged(ClueId, FragmentId)
   if FragmentId == self.FragmentId then
     UpdateVisibility(self.Canvas_Checked, true)
@@ -79,8 +87,10 @@ function WBP_IGuide_PlotFragmentsItem_C:BindOnPlotFragmentsItemChanged(ClueId, F
     UpdateVisibility(self.Canvas_Checked, false)
   end
 end
+
 function WBP_IGuide_PlotFragmentsItem_C:SetIndex(Index)
   self.Txt_Num_1:SetText(tostring(Index))
   self.Txt_Num_2:SetText(tostring(Index))
 end
+
 return WBP_IGuide_PlotFragmentsItem_C

@@ -1,2009 +1,2009 @@
 ﻿{
   "54100035": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "跃迁",
+      "InKey": "Name_54100035",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100035"
+      "InTextLiteral": "跃迁"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100035
   },
   "54100036": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "跃迁",
+      "InKey": "Name_54100036",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100036"
+      "InTextLiteral": "跃迁"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100036
   },
   "54100037": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "跃迁",
+      "InKey": "Name_54100037",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100037"
+      "InTextLiteral": "跃迁"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100037
   },
   "54100038": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "跃迁",
+      "InKey": "Name_54100038",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100038"
+      "InTextLiteral": "跃迁"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100038
   },
   "54100294": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "电玩",
+      "InKey": "Name_54100294",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100294"
+      "InTextLiteral": "电玩"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100294
   },
   "54100041": {
-    "DevelopDesc": "受到伤害时的概率技能使用次数",
     "NameLocMeta": {
-      "InTextLiteral": "逆流",
+      "InKey": "Name_54100041",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100041"
+      "InTextLiteral": "逆流"
     },
+    "DevelopDesc": "受到伤害时的概率技能使用次数",
     "InscriptionId": 54100041
   },
   "54100042": {
-    "DevelopDesc": "受到伤害时的概率技能使用次数",
     "NameLocMeta": {
-      "InTextLiteral": "逆流",
+      "InKey": "Name_54100042",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100042"
+      "InTextLiteral": "逆流"
     },
+    "DevelopDesc": "受到伤害时的概率技能使用次数",
     "InscriptionId": 54100042
   },
   "54100043": {
-    "DevelopDesc": "受到伤害时的概率技能使用次数",
     "NameLocMeta": {
-      "InTextLiteral": "逆流",
+      "InKey": "Name_54100043",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100043"
+      "InTextLiteral": "逆流"
     },
+    "DevelopDesc": "受到伤害时的概率技能使用次数",
     "InscriptionId": 54100043
   },
   "54100044": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "逆流",
+      "InKey": "Name_54100044",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100044"
+      "InTextLiteral": "逆流"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100044
   },
   "54100045": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "逆流",
+      "InKey": "Name_54100045",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100045"
+      "InTextLiteral": "逆流"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100045
   },
   "54100046": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "逆流",
+      "InKey": "Name_54100046",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100046"
+      "InTextLiteral": "逆流"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100046
   },
   "54100047": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "逆流",
+      "InKey": "Name_54100047",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100047"
+      "InTextLiteral": "逆流"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100047
   },
   "54100048": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "逆流",
+      "InKey": "Name_54100048",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100048"
+      "InTextLiteral": "逆流"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100048
   },
   "54100061": {
-    "DevelopDesc": "每秒首次释放技能伤害提高",
     "NameLocMeta": {
-      "InTextLiteral": "脉冲",
+      "InKey": "Name_54100061",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100061"
+      "InTextLiteral": "脉冲"
     },
+    "DevelopDesc": "每秒首次释放技能伤害提高",
     "InscriptionId": 54100061
   },
   "54100062": {
-    "DevelopDesc": "每秒首次释放技能伤害提高",
     "NameLocMeta": {
-      "InTextLiteral": "脉冲",
+      "InKey": "Name_54100062",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100062"
+      "InTextLiteral": "脉冲"
     },
+    "DevelopDesc": "每秒首次释放技能伤害提高",
     "InscriptionId": 54100062
   },
   "54100063": {
-    "DevelopDesc": "每秒首次释放技能伤害提高",
     "NameLocMeta": {
-      "InTextLiteral": "脉冲",
+      "InKey": "Name_54100063",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100063"
+      "InTextLiteral": "脉冲"
     },
+    "DevelopDesc": "每秒首次释放技能伤害提高",
     "InscriptionId": 54100063
   },
   "54100064": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "脉冲",
+      "InKey": "Name_54100064",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100064"
+      "InTextLiteral": "脉冲"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100064
   },
   "54100065": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "脉冲",
+      "InKey": "Name_54100065",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100065"
+      "InTextLiteral": "脉冲"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100065
   },
   "54100066": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "脉冲",
+      "InKey": "Name_54100066",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100066"
+      "InTextLiteral": "脉冲"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100066
   },
   "54100067": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "脉冲",
+      "InKey": "Name_54100067",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100067"
+      "InTextLiteral": "脉冲"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100067
   },
   "54100068": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "脉冲",
+      "InKey": "Name_54100068",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100068"
+      "InTextLiteral": "脉冲"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100068
   },
   "54100324": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "毁灭",
+      "InKey": "Name_54100324",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100324"
+      "InTextLiteral": "毁灭"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100324
   },
   "54100325": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "毁灭",
+      "InKey": "Name_54100325",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100325"
+      "InTextLiteral": "毁灭"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100325
   },
   "54100071": {
-    "DevelopDesc": "武器命中目标次下一次技能伤害提升",
     "NameLocMeta": {
-      "InTextLiteral": "叠锋",
+      "InKey": "Name_54100071",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100071"
+      "InTextLiteral": "叠锋"
     },
+    "DevelopDesc": "武器命中目标次下一次技能伤害提升",
     "InscriptionId": 54100071
   },
   "54100072": {
-    "DevelopDesc": "武器命中目标次下一次技能伤害提升",
     "NameLocMeta": {
-      "InTextLiteral": "叠锋",
+      "InKey": "Name_54100072",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100072"
+      "InTextLiteral": "叠锋"
     },
+    "DevelopDesc": "武器命中目标次下一次技能伤害提升",
     "InscriptionId": 54100072
   },
   "54100073": {
-    "DevelopDesc": "武器命中目标次下一次技能伤害提升",
     "NameLocMeta": {
-      "InTextLiteral": "叠锋",
+      "InKey": "Name_54100073",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100073"
+      "InTextLiteral": "叠锋"
     },
+    "DevelopDesc": "武器命中目标次下一次技能伤害提升",
     "InscriptionId": 54100073
   },
   "54100074": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "叠锋",
+      "InKey": "Name_54100074",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100074"
+      "InTextLiteral": "叠锋"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100074
   },
   "54100075": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "叠锋",
+      "InKey": "Name_54100075",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100075"
+      "InTextLiteral": "叠锋"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100075
   },
   "54100076": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "叠锋",
+      "InKey": "Name_54100076",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100076"
+      "InTextLiteral": "叠锋"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100076
   },
   "54100077": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "叠锋",
+      "InKey": "Name_54100077",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100077"
+      "InTextLiteral": "叠锋"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100077
   },
   "54100078": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "叠锋",
+      "InKey": "Name_54100078",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100078"
+      "InTextLiteral": "叠锋"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100078
   },
   "54100081": {
-    "DevelopDesc": "释放技能对伤害提升",
     "NameLocMeta": {
-      "InTextLiteral": "爆能",
+      "InKey": "Name_54100081",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100081"
+      "InTextLiteral": "爆能"
     },
+    "DevelopDesc": "释放技能对伤害提升",
     "InscriptionId": 54100081
   },
   "54100082": {
-    "DevelopDesc": "释放技能对伤害提升",
     "NameLocMeta": {
-      "InTextLiteral": "爆能",
+      "InKey": "Name_54100082",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100082"
+      "InTextLiteral": "爆能"
     },
+    "DevelopDesc": "释放技能对伤害提升",
     "InscriptionId": 54100082
   },
   "54100083": {
-    "DevelopDesc": "释放技能对伤害提升",
     "NameLocMeta": {
-      "InTextLiteral": "爆能",
+      "InKey": "Name_54100083",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100083"
+      "InTextLiteral": "爆能"
     },
+    "DevelopDesc": "释放技能对伤害提升",
     "InscriptionId": 54100083
   },
   "54100084": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "爆能",
+      "InKey": "Name_54100084",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100084"
+      "InTextLiteral": "爆能"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100084
   },
   "54100085": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "爆能",
+      "InKey": "Name_54100085",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100085"
+      "InTextLiteral": "爆能"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100085
   },
   "54100086": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "爆能",
+      "InKey": "Name_54100086",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100086"
+      "InTextLiteral": "爆能"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100086
   },
   "54100087": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "爆能",
+      "InKey": "Name_54100087",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100087"
+      "InTextLiteral": "爆能"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100087
   },
   "54100088": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "爆能",
+      "InKey": "Name_54100088",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100088"
+      "InTextLiteral": "爆能"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100088
   },
   "3050110": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "终极音乐",
+      "InKey": "Name_3050110",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_3050110"
+      "InTextLiteral": "终极音乐"
     },
+    "DevelopDesc": "",
     "InscriptionId": 3050110
   },
   "54100091": {
-    "DevelopDesc": "释放技能命中目标有的概率完全恢复弹夹",
     "NameLocMeta": {
-      "InTextLiteral": "回涌",
+      "InKey": "Name_54100091",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100091"
+      "InTextLiteral": "回涌"
     },
+    "DevelopDesc": "释放技能命中目标有的概率完全恢复弹夹",
     "InscriptionId": 54100091
   },
   "54100092": {
-    "DevelopDesc": "释放技能命中目标有的概率完全恢复弹夹",
     "NameLocMeta": {
-      "InTextLiteral": "回涌",
+      "InKey": "Name_54100092",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100092"
+      "InTextLiteral": "回涌"
     },
+    "DevelopDesc": "释放技能命中目标有的概率完全恢复弹夹",
     "InscriptionId": 54100092
   },
   "54100093": {
-    "DevelopDesc": "释放技能命中目标有的概率完全恢复弹夹",
     "NameLocMeta": {
-      "InTextLiteral": "回涌",
+      "InKey": "Name_54100093",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100093"
+      "InTextLiteral": "回涌"
     },
+    "DevelopDesc": "释放技能命中目标有的概率完全恢复弹夹",
     "InscriptionId": 54100093
   },
   "54100094": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "回涌",
+      "InKey": "Name_54100094",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100094"
+      "InTextLiteral": "回涌"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100094
   },
   "54100095": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "回涌",
+      "InKey": "Name_54100095",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100095"
+      "InTextLiteral": "回涌"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100095
   },
   "54100096": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "回涌",
+      "InKey": "Name_54100096",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100096"
+      "InTextLiteral": "回涌"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100096
   },
   "54100097": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "回涌",
+      "InKey": "Name_54100097",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100097"
+      "InTextLiteral": "回涌"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100097
   },
   "54100098": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "回涌",
+      "InKey": "Name_54100098",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100098"
+      "InTextLiteral": "回涌"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100098
   },
   "54100101": {
-    "DevelopDesc": "释放技能命中目标恢复弹夹",
     "NameLocMeta": {
-      "InTextLiteral": "涓流",
+      "InKey": "Name_54100101",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100101"
+      "InTextLiteral": "涓流"
     },
+    "DevelopDesc": "释放技能命中目标恢复弹夹",
     "InscriptionId": 54100101
   },
   "54100102": {
-    "DevelopDesc": "释放技能命中目标恢复弹夹",
     "NameLocMeta": {
-      "InTextLiteral": "涓流",
+      "InKey": "Name_54100102",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100102"
+      "InTextLiteral": "涓流"
     },
+    "DevelopDesc": "释放技能命中目标恢复弹夹",
     "InscriptionId": 54100102
   },
   "54100103": {
-    "DevelopDesc": "释放技能命中目标恢复弹夹",
     "NameLocMeta": {
-      "InTextLiteral": "涓流",
+      "InKey": "Name_54100103",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100103"
+      "InTextLiteral": "涓流"
     },
+    "DevelopDesc": "释放技能命中目标恢复弹夹",
     "InscriptionId": 54100103
   },
   "54100104": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "涓流",
+      "InKey": "Name_54100104",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100104"
+      "InTextLiteral": "涓流"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100104
   },
   "54100105": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "涓流",
+      "InKey": "Name_54100105",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100105"
+      "InTextLiteral": "涓流"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100105
   },
   "54100106": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "涓流",
+      "InKey": "Name_54100106",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100106"
+      "InTextLiteral": "涓流"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100106
   },
   "54100107": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "涓流",
+      "InKey": "Name_54100107",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100107"
+      "InTextLiteral": "涓流"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100107
   },
   "54100108": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "涓流",
+      "InKey": "Name_54100108",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100108"
+      "InTextLiteral": "涓流"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100108
   },
   "54100621": {
-    "DevelopDesc": "当弹药消耗完时自动换弹，换弹速度加快并且换弹后第一枪武器射击必定暴击",
     "NameLocMeta": {
-      "InTextLiteral": "瞬爆",
+      "InKey": "Name_54100621",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100621"
+      "InTextLiteral": "瞬爆"
     },
+    "DevelopDesc": "当弹药消耗完时自动换弹，换弹速度加快并且换弹后第一枪武器射击必定暴击",
     "InscriptionId": 54100621
   },
   "54100622": {
-    "DevelopDesc": "当弹药消耗完时自动换弹，换弹速度加快并且换弹后第一枪武器射击必定暴击",
     "NameLocMeta": {
-      "InTextLiteral": "瞬爆",
+      "InKey": "Name_54100622",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100622"
+      "InTextLiteral": "瞬爆"
     },
+    "DevelopDesc": "当弹药消耗完时自动换弹，换弹速度加快并且换弹后第一枪武器射击必定暴击",
     "InscriptionId": 54100622
   },
   "54100623": {
-    "DevelopDesc": "当弹药消耗完时自动换弹，换弹速度加快并且换弹后第一枪武器射击必定暴击",
     "NameLocMeta": {
-      "InTextLiteral": "瞬爆",
+      "InKey": "Name_54100623",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100623"
+      "InTextLiteral": "瞬爆"
     },
+    "DevelopDesc": "当弹药消耗完时自动换弹，换弹速度加快并且换弹后第一枪武器射击必定暴击",
     "InscriptionId": 54100623
   },
   "54100624": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "瞬爆",
+      "InKey": "Name_54100624",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100624"
+      "InTextLiteral": "瞬爆"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100624
   },
   "54100121": {
-    "DevelopDesc": "释放技能后秒内射速提高",
     "NameLocMeta": {
-      "InTextLiteral": "迅流",
+      "InKey": "Name_54100121",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100121"
+      "InTextLiteral": "迅流"
     },
+    "DevelopDesc": "释放技能后秒内射速提高",
     "InscriptionId": 54100121
   },
   "54100122": {
-    "DevelopDesc": "释放技能后秒内射速提高",
     "NameLocMeta": {
-      "InTextLiteral": "迅流",
+      "InKey": "Name_54100122",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100122"
+      "InTextLiteral": "迅流"
     },
+    "DevelopDesc": "释放技能后秒内射速提高",
     "InscriptionId": 54100122
   },
   "54100123": {
-    "DevelopDesc": "释放技能后秒内射速提高",
     "NameLocMeta": {
-      "InTextLiteral": "迅流",
+      "InKey": "Name_54100123",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100123"
+      "InTextLiteral": "迅流"
     },
+    "DevelopDesc": "释放技能后秒内射速提高",
     "InscriptionId": 54100123
   },
   "54100124": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "迅流",
+      "InKey": "Name_54100124",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100124"
+      "InTextLiteral": "迅流"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100124
   },
   "54100125": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "迅流",
+      "InKey": "Name_54100125",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100125"
+      "InTextLiteral": "迅流"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100125
   },
   "54100126": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "迅流",
+      "InKey": "Name_54100126",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100126"
+      "InTextLiteral": "迅流"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100126
   },
   "54100127": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "迅流",
+      "InKey": "Name_54100127",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100127"
+      "InTextLiteral": "迅流"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100127
   },
   "54100128": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "迅流",
+      "InKey": "Name_54100128",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100128"
+      "InTextLiteral": "迅流"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100128
   },
   "54100384": {
-    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "NameLocMeta": {
-      "InTextLiteral": "回汲",
+      "InKey": "Name_54100384",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100384"
+      "InTextLiteral": "回汲"
     },
+    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "InscriptionId": 54100384
   },
   "541000771": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "多重",
+      "InKey": "Name_541000771",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_541000771"
+      "InTextLiteral": "多重"
     },
+    "DevelopDesc": "",
     "InscriptionId": 541000771
   },
   "3040110": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "终极电玩",
+      "InKey": "Name_3040110",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_3040110"
+      "InTextLiteral": "终极电玩"
     },
+    "DevelopDesc": "",
     "InscriptionId": 3040110
   },
   "3010110": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "终极爱欲",
+      "InKey": "Name_3010110",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_3010110"
+      "InTextLiteral": "终极爱欲"
     },
+    "DevelopDesc": "",
     "InscriptionId": 3010110
   },
   "3030110": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "终极能量",
+      "InKey": "Name_3030110",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_3030110"
+      "InTextLiteral": "终极能量"
     },
+    "DevelopDesc": "",
     "InscriptionId": 3030110
   },
   "54100141": {
-    "DevelopDesc": "受到伤害时技能冷却时间减少",
     "NameLocMeta": {
-      "InTextLiteral": "共鸣",
+      "InKey": "Name_54100141",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100141"
+      "InTextLiteral": "共鸣"
     },
+    "DevelopDesc": "受到伤害时技能冷却时间减少",
     "InscriptionId": 54100141
   },
   "54100142": {
-    "DevelopDesc": "受到伤害时技能冷却时间减少",
     "NameLocMeta": {
-      "InTextLiteral": "共鸣",
+      "InKey": "Name_54100142",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100142"
+      "InTextLiteral": "共鸣"
     },
+    "DevelopDesc": "受到伤害时技能冷却时间减少",
     "InscriptionId": 54100142
   },
   "54100143": {
-    "DevelopDesc": "受到伤害时技能冷却时间减少",
     "NameLocMeta": {
-      "InTextLiteral": "共鸣",
+      "InKey": "Name_54100143",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100143"
+      "InTextLiteral": "共鸣"
     },
+    "DevelopDesc": "受到伤害时技能冷却时间减少",
     "InscriptionId": 54100143
   },
   "54100144": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "共鸣",
+      "InKey": "Name_54100144",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100144"
+      "InTextLiteral": "共鸣"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100144
   },
   "3060110": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "终极财富",
+      "InKey": "Name_3060110",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_3060110"
+      "InTextLiteral": "终极财富"
     },
+    "DevelopDesc": "",
     "InscriptionId": 3060110
   },
   "5320007": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "藏​​​​锋",
+      "InKey": "Name_5320007",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5320007"
+      "InTextLiteral": "藏​​​​锋"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5320007
   },
   "3000110": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "终极安全",
+      "InKey": "Name_3000110",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_3000110"
+      "InTextLiteral": "终极安全"
     },
+    "DevelopDesc": "",
     "InscriptionId": 3000110
   },
   "3070110": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "终极雷霆",
+      "InKey": "Name_3070110",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_3070110"
+      "InTextLiteral": "终极雷霆"
     },
+    "DevelopDesc": "",
     "InscriptionId": 3070110
   },
   "54100451": {
-    "DevelopDesc": "释放技能提高技能弱点伤害加成持续秒",
     "NameLocMeta": {
-      "InTextLiteral": "洞察",
+      "InKey": "Name_54100451",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100451"
+      "InTextLiteral": "洞察"
     },
+    "DevelopDesc": "释放技能提高技能弱点伤害加成持续秒",
     "InscriptionId": 54100451
   },
   "54100452": {
-    "DevelopDesc": "释放技能提高技能弱点伤害加成持续秒",
     "NameLocMeta": {
-      "InTextLiteral": "洞察",
+      "InKey": "Name_54100452",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100452"
+      "InTextLiteral": "洞察"
     },
+    "DevelopDesc": "释放技能提高技能弱点伤害加成持续秒",
     "InscriptionId": 54100452
   },
   "54100151": {
-    "DevelopDesc": "释放技能命中目标减少技能冷却时间秒",
     "NameLocMeta": {
-      "InTextLiteral": "连携",
+      "InKey": "Name_54100151",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100151"
+      "InTextLiteral": "连携"
     },
+    "DevelopDesc": "释放技能命中目标减少技能冷却时间秒",
     "InscriptionId": 54100151
   },
   "54100152": {
-    "DevelopDesc": "释放技能命中目标减少技能冷却时间秒",
     "NameLocMeta": {
-      "InTextLiteral": "连携",
+      "InKey": "Name_54100152",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100152"
+      "InTextLiteral": "连携"
     },
+    "DevelopDesc": "释放技能命中目标减少技能冷却时间秒",
     "InscriptionId": 54100152
   },
   "54100153": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "连携",
+      "InKey": "Name_54100153",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100153"
+      "InTextLiteral": "连携"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100153
   },
   "54100154": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "连携",
+      "InKey": "Name_54100154",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100154"
+      "InTextLiteral": "连携"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100154
   },
   "5321031": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "爆炸",
+      "InKey": "Name_5321031",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5321031"
+      "InTextLiteral": "爆炸"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5321031
   },
   "5321030": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "火力",
+      "InKey": "Name_5321030",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5321030"
+      "InTextLiteral": "火力"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5321030
   },
   "5321041": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "精巧",
+      "InKey": "Name_5321041",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5321041"
+      "InTextLiteral": "精巧"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5321041
   },
   "54100507": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "充能",
+      "InKey": "Name_54100507",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100507"
+      "InTextLiteral": "充能"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100507
   },
   "59910172": {
-    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "NameLocMeta": {
-      "InTextLiteral": "神佑",
+      "InKey": "Name_59910172",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_59910172"
+      "InTextLiteral": "神佑"
     },
+    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "InscriptionId": 59910172
   },
   "59910173": {
-    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "NameLocMeta": {
-      "InTextLiteral": "神佑",
+      "InKey": "Name_59910173",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_59910173"
+      "InTextLiteral": "神佑"
     },
+    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "InscriptionId": 59910173
   },
   "5321021": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "洞察",
+      "InKey": "Name_5321021",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5321021"
+      "InTextLiteral": "洞察"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5321021
   },
   "54100553": {
-    "DevelopDesc": "每距离目标超过米，武器伤害提升",
     "NameLocMeta": {
-      "InTextLiteral": "远射",
+      "InKey": "Name_54100553",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100553"
+      "InTextLiteral": "远射"
     },
+    "DevelopDesc": "每距离目标超过米，武器伤害提升",
     "InscriptionId": 54100553
   },
   "54100754": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "过载",
+      "InKey": "Name_54100754",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100754"
+      "InTextLiteral": "过载"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100754
   },
   "54100761": {
-    "DevelopDesc": "当前弹药满时，使用技能命中目标伤害提高",
     "NameLocMeta": {
-      "InTextLiteral": "永恒",
+      "InKey": "Name_54100761",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100761"
+      "InTextLiteral": "永恒"
     },
+    "DevelopDesc": "当前弹药满时，使用技能命中目标伤害提高",
     "InscriptionId": 54100761
   },
   "5320014": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "逆刃",
+      "InKey": "Name_5320014",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5320014"
+      "InTextLiteral": "逆刃"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5320014
   },
   "54100421": {
-    "DevelopDesc": "获得双神祝福，武器伤害提高",
     "NameLocMeta": {
-      "InTextLiteral": "庇护",
+      "InKey": "Name_54100421",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100421"
+      "InTextLiteral": "庇护"
     },
+    "DevelopDesc": "获得双神祝福，武器伤害提高",
     "InscriptionId": 54100421
   },
   "54100422": {
-    "DevelopDesc": "获得双神祝福，武器伤害提高",
     "NameLocMeta": {
-      "InTextLiteral": "庇护",
+      "InKey": "Name_54100422",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100422"
+      "InTextLiteral": "庇护"
     },
+    "DevelopDesc": "获得双神祝福，武器伤害提高",
     "InscriptionId": 54100422
   },
   "54100423": {
-    "DevelopDesc": "获得双神祝福，武器伤害提高",
     "NameLocMeta": {
-      "InTextLiteral": "庇护",
+      "InKey": "Name_54100423",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100423"
+      "InTextLiteral": "庇护"
     },
+    "DevelopDesc": "获得双神祝福，武器伤害提高",
     "InscriptionId": 54100423
   },
   "54100424": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "庇护",
+      "InKey": "Name_54100424",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100424"
+      "InTextLiteral": "庇护"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100424
   },
   "54100425": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "庇护",
+      "InKey": "Name_54100425",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100425"
+      "InTextLiteral": "庇护"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100425
   },
   "54100426": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "庇护",
+      "InKey": "Name_54100426",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100426"
+      "InTextLiteral": "庇护"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100426
   },
   "54100427": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "庇护",
+      "InKey": "Name_54100427",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100427"
+      "InTextLiteral": "庇护"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100427
   },
   "54100428": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "庇护",
+      "InKey": "Name_54100428",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100428"
+      "InTextLiteral": "庇护"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100428
   },
   "5320013": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "​​汲源​​",
+      "InKey": "Name_5320013",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5320013"
+      "InTextLiteral": "​​汲源​​"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5320013
   },
   "5320012": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "回能",
+      "InKey": "Name_5320012",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5320012"
+      "InTextLiteral": "回能"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5320012
   },
   "5320011": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "​​流星​​",
+      "InKey": "Name_5320011",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5320011"
+      "InTextLiteral": "​​流星​​"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5320011
   },
   "54100551": {
-    "DevelopDesc": "每距离目标超过米，武器伤害提升",
     "NameLocMeta": {
-      "InTextLiteral": "远射",
+      "InKey": "Name_54100551",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100551"
+      "InTextLiteral": "远射"
     },
+    "DevelopDesc": "每距离目标超过米，武器伤害提升",
     "InscriptionId": 54100551
   },
   "5320009": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "辅域",
+      "InKey": "Name_5320009",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5320009"
+      "InTextLiteral": "辅域"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5320009
   },
   "5320008": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "蓄劲",
+      "InKey": "Name_5320008",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5320008"
+      "InTextLiteral": "蓄劲"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5320008
   },
   "3020110": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "终极幸运",
+      "InKey": "Name_3020110",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_3020110"
+      "InTextLiteral": "终极幸运"
     },
+    "DevelopDesc": "",
     "InscriptionId": 3020110
   },
   "5320006": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "弹药",
+      "InKey": "Name_5320006",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5320006"
+      "InTextLiteral": "弹药"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5320006
   },
   "54100552": {
-    "DevelopDesc": "每距离目标超过米，武器伤害提升",
     "NameLocMeta": {
-      "InTextLiteral": "远射",
+      "InKey": "Name_54100552",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100552"
+      "InTextLiteral": "远射"
     },
+    "DevelopDesc": "每距离目标超过米，武器伤害提升",
     "InscriptionId": 54100552
   },
   "5320004": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "毁灭",
+      "InKey": "Name_5320004",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5320004"
+      "InTextLiteral": "毁灭"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5320004
   },
   "5320003": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "狂力",
+      "InKey": "Name_5320003",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5320003"
+      "InTextLiteral": "狂力"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5320003
   },
   "5320002": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "破坏",
+      "InKey": "Name_5320002",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5320002"
+      "InTextLiteral": "破坏"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5320002
   },
   "5320001": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "湮能",
+      "InKey": "Name_5320001",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5320001"
+      "InTextLiteral": "湮能"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5320001
   },
   "59910184": {
-    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "NameLocMeta": {
-      "InTextLiteral": "神赐",
+      "InKey": "Name_59910184",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_59910184"
+      "InTextLiteral": "神赐"
     },
+    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "InscriptionId": 59910184
   },
   "59910183": {
-    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "NameLocMeta": {
-      "InTextLiteral": "神赐",
+      "InKey": "Name_59910183",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_59910183"
+      "InTextLiteral": "神赐"
     },
+    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "InscriptionId": 59910183
   },
   "59910182": {
-    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "NameLocMeta": {
-      "InTextLiteral": "神赐",
+      "InKey": "Name_59910182",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_59910182"
+      "InTextLiteral": "神赐"
     },
+    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "InscriptionId": 59910182
   },
   "59910181": {
-    "DevelopDesc": "法则刷新次数",
     "NameLocMeta": {
-      "InTextLiteral": "神赐",
+      "InKey": "Name_59910181",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_59910181"
+      "InTextLiteral": "神赐"
     },
+    "DevelopDesc": "法则刷新次数",
     "InscriptionId": 59910181
   },
   "54100191": {
-    "DevelopDesc": "释放技能后秒内射速提高",
     "NameLocMeta": {
-      "InTextLiteral": "迅疾",
+      "InKey": "Name_54100191",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100191"
+      "InTextLiteral": "迅疾"
     },
+    "DevelopDesc": "释放技能后秒内射速提高",
     "InscriptionId": 54100191
   },
   "54100192": {
-    "DevelopDesc": "释放技能后秒内射速提高",
     "NameLocMeta": {
-      "InTextLiteral": "迅疾",
+      "InKey": "Name_54100192",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100192"
+      "InTextLiteral": "迅疾"
     },
+    "DevelopDesc": "释放技能后秒内射速提高",
     "InscriptionId": 54100192
   },
   "54100193": {
-    "DevelopDesc": "释放技能后秒内射速提高",
     "NameLocMeta": {
-      "InTextLiteral": "迅疾",
+      "InKey": "Name_54100193",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100193"
+      "InTextLiteral": "迅疾"
     },
+    "DevelopDesc": "释放技能后秒内射速提高",
     "InscriptionId": 54100193
   },
   "54100194": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "迅疾",
+      "InKey": "Name_54100194",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100194"
+      "InTextLiteral": "迅疾"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100194
   },
   "54100195": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "迅疾",
+      "InKey": "Name_54100195",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100195"
+      "InTextLiteral": "迅疾"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100195
   },
   "54100196": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "迅疾",
+      "InKey": "Name_54100196",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100196"
+      "InTextLiteral": "迅疾"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100196
   },
   "54100197": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "迅疾",
+      "InKey": "Name_54100197",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100197"
+      "InTextLiteral": "迅疾"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100197
   },
   "54100198": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "迅疾",
+      "InKey": "Name_54100198",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100198"
+      "InTextLiteral": "迅疾"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100198
   },
   "54100454": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "洞察",
+      "InKey": "Name_54100454",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100454"
+      "InTextLiteral": "洞察"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100454
   },
   "54100455": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "洞察",
+      "InKey": "Name_54100455",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100455"
+      "InTextLiteral": "洞察"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100455
   },
   "54100456": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "洞察",
+      "InKey": "Name_54100456",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100456"
+      "InTextLiteral": "洞察"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100456
   },
   "54100457": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "洞察",
+      "InKey": "Name_54100457",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100457"
+      "InTextLiteral": "洞察"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100457
   },
   "54100458": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "洞察",
+      "InKey": "Name_54100458",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100458"
+      "InTextLiteral": "洞察"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100458
   },
   "59910174": {
-    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "NameLocMeta": {
-      "InTextLiteral": "神佑",
+      "InKey": "Name_59910174",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_59910174"
+      "InTextLiteral": "神佑"
     },
+    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "InscriptionId": 59910174
   },
   "5321000": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "冠军",
+      "InKey": "Name_5321000",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5321000"
+      "InTextLiteral": "冠军"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5321000
   },
   "5321001": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "卓越",
+      "InKey": "Name_5321001",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5321001"
+      "InTextLiteral": "卓越"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5321001
   },
   "59910171": {
-    "DevelopDesc": "权限刷新次数",
     "NameLocMeta": {
-      "InTextLiteral": "神佑",
+      "InKey": "Name_59910171",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_59910171"
+      "InTextLiteral": "神佑"
     },
+    "DevelopDesc": "权限刷新次数",
     "InscriptionId": 59910171
   },
   "54100768": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "永恒",
+      "InKey": "Name_54100768",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100768"
+      "InTextLiteral": "永恒"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100768
   },
   "54100767": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "永恒",
+      "InKey": "Name_54100767",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100767"
+      "InTextLiteral": "永恒"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100767
   },
   "54100766": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "永恒",
+      "InKey": "Name_54100766",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100766"
+      "InTextLiteral": "永恒"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100766
   },
   "54100508": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "充能",
+      "InKey": "Name_54100508",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100508"
+      "InTextLiteral": "充能"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100508
   },
   "54100764": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "永恒",
+      "InKey": "Name_54100764",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100764"
+      "InTextLiteral": "永恒"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100764
   },
   "54100763": {
-    "DevelopDesc": "当前弹药满时，使用技能命中目标伤害提高",
     "NameLocMeta": {
-      "InTextLiteral": "永恒",
+      "InKey": "Name_54100763",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100763"
+      "InTextLiteral": "永恒"
     },
+    "DevelopDesc": "当前弹药满时，使用技能命中目标伤害提高",
     "InscriptionId": 54100763
   },
   "54100762": {
-    "DevelopDesc": "当前弹药满时，使用技能命中目标伤害提高",
     "NameLocMeta": {
-      "InTextLiteral": "永恒",
+      "InKey": "Name_54100762",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100762"
+      "InTextLiteral": "永恒"
     },
+    "DevelopDesc": "当前弹药满时，使用技能命中目标伤害提高",
     "InscriptionId": 54100762
   },
   "5321010": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "孤影",
+      "InKey": "Name_5321010",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5321010"
+      "InTextLiteral": "孤影"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5321010
   },
   "5321011": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "幻影",
+      "InKey": "Name_5321011",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5321011"
+      "InTextLiteral": "幻影"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5321011
   },
   "54100753": {
-    "DevelopDesc": "命中目标概率接下来秒内射击不消耗子弹（内置秒）",
     "NameLocMeta": {
-      "InTextLiteral": "过载",
+      "InKey": "Name_54100753",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100753"
+      "InTextLiteral": "过载"
     },
+    "DevelopDesc": "命中目标概率接下来秒内射击不消耗子弹（内置秒）",
     "InscriptionId": 54100753
   },
   "54100752": {
-    "DevelopDesc": "命中目标概率接下来秒内射击不消耗子弹（内置秒）",
     "NameLocMeta": {
-      "InTextLiteral": "过载",
+      "InKey": "Name_54100752",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100752"
+      "InTextLiteral": "过载"
     },
+    "DevelopDesc": "命中目标概率接下来秒内射击不消耗子弹（内置秒）",
     "InscriptionId": 54100752
   },
   "54100751": {
-    "DevelopDesc": "命中目标概率接下来秒内射击不消耗子弹（内置秒）",
     "NameLocMeta": {
-      "InTextLiteral": "过载",
+      "InKey": "Name_54100751",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100751"
+      "InTextLiteral": "过载"
     },
+    "DevelopDesc": "命中目标概率接下来秒内射击不消耗子弹（内置秒）",
     "InscriptionId": 54100751
   },
   "54100554": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "远射",
+      "InKey": "Name_54100554",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100554"
+      "InTextLiteral": "远射"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100554
   },
   "54100221": {
-    "DevelopDesc": "遇到的第一个祝福必为雷霆法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "雷霆",
+      "InKey": "Name_54100221",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100221"
+      "InTextLiteral": "雷霆"
     },
+    "DevelopDesc": "遇到的第一个祝福必为雷霆法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100221
   },
   "54100222": {
-    "DevelopDesc": "遇到的第一个祝福必为雷霆法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "雷霆",
+      "InKey": "Name_54100222",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100222"
+      "InTextLiteral": "雷霆"
     },
+    "DevelopDesc": "遇到的第一个祝福必为雷霆法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100222
   },
   "54100223": {
-    "DevelopDesc": "遇到的第一个祝福必为雷霆法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "雷霆",
+      "InKey": "Name_54100223",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100223"
+      "InTextLiteral": "雷霆"
     },
+    "DevelopDesc": "遇到的第一个祝福必为雷霆法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100223
   },
   "54100224": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "雷霆",
+      "InKey": "Name_54100224",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100224"
+      "InTextLiteral": "雷霆"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100224
   },
   "5321020": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "指引",
+      "InKey": "Name_5321020",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5321020"
+      "InTextLiteral": "指引"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5321020
   },
   "54100481": {
-    "DevelopDesc": "命中弱点可以叠加射速，每层增加，最多叠加层，持续秒，时间结束失去所有层数。",
     "NameLocMeta": {
-      "InTextLiteral": "疾锋",
+      "InKey": "Name_54100481",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100481"
+      "InTextLiteral": "疾锋"
     },
+    "DevelopDesc": "命中弱点可以叠加射速，每层增加，最多叠加层，持续秒，时间结束失去所有层数。",
     "InscriptionId": 54100481
   },
   "54100482": {
-    "DevelopDesc": "命中弱点可以叠加射速，每层增加，最多叠加层，持续秒，时间结束失去所有层数。",
     "NameLocMeta": {
-      "InTextLiteral": "疾锋",
+      "InKey": "Name_54100482",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100482"
+      "InTextLiteral": "疾锋"
     },
+    "DevelopDesc": "命中弱点可以叠加射速，每层增加，最多叠加层，持续秒，时间结束失去所有层数。",
     "InscriptionId": 54100482
   },
   "54100483": {
-    "DevelopDesc": "命中弱点可以叠加射速，每层增加，最多叠加层，持续秒，时间结束失去所有层数。",
     "NameLocMeta": {
-      "InTextLiteral": "疾锋",
+      "InKey": "Name_54100483",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100483"
+      "InTextLiteral": "疾锋"
     },
+    "DevelopDesc": "命中弱点可以叠加射速，每层增加，最多叠加层，持续秒，时间结束失去所有层数。",
     "InscriptionId": 54100483
   },
   "54100484": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "疾锋",
+      "InKey": "Name_54100484",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100484"
+      "InTextLiteral": "疾锋"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100484
   },
   "5320005": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "凝神",
+      "InKey": "Name_5320005",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5320005"
+      "InTextLiteral": "凝神"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5320005
   },
   "54100231": {
-    "DevelopDesc": "遇到的第一个祝福必为爱欲法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "爱欲",
+      "InKey": "Name_54100231",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100231"
+      "InTextLiteral": "爱欲"
     },
+    "DevelopDesc": "遇到的第一个祝福必为爱欲法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100231
   },
   "54100232": {
-    "DevelopDesc": "遇到的第一个祝福必为爱欲法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "爱欲",
+      "InKey": "Name_54100232",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100232"
+      "InTextLiteral": "爱欲"
     },
+    "DevelopDesc": "遇到的第一个祝福必为爱欲法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100232
   },
   "54100233": {
-    "DevelopDesc": "遇到的第一个祝福必为爱欲法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "爱欲",
+      "InKey": "Name_54100233",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100233"
+      "InTextLiteral": "爱欲"
     },
+    "DevelopDesc": "遇到的第一个祝福必为爱欲法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100233
   },
   "54100234": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "爱欲",
+      "InKey": "Name_54100234",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100234"
+      "InTextLiteral": "爱欲"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100234
   },
   "5320010": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "断点",
+      "InKey": "Name_5320010",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5320010"
+      "InTextLiteral": "断点"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5320010
   },
   "54100491": {
-    "DevelopDesc": "命中弱点可以叠加伤害，每层增加，最多叠加层，持续秒，时间结束失去所有层数。",
     "NameLocMeta": {
-      "InTextLiteral": "精准",
+      "InKey": "Name_54100491",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100491"
+      "InTextLiteral": "精准"
     },
+    "DevelopDesc": "命中弱点可以叠加伤害，每层增加，最多叠加层，持续秒，时间结束失去所有层数。",
     "InscriptionId": 54100491
   },
   "54100492": {
-    "DevelopDesc": "命中弱点可以叠加伤害，每层增加，最多叠加层，持续秒，时间结束失去所有层数。",
     "NameLocMeta": {
-      "InTextLiteral": "精准",
+      "InKey": "Name_54100492",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100492"
+      "InTextLiteral": "精准"
     },
+    "DevelopDesc": "命中弱点可以叠加伤害，每层增加，最多叠加层，持续秒，时间结束失去所有层数。",
     "InscriptionId": 54100492
   },
   "54100493": {
-    "DevelopDesc": "命中弱点可以叠加伤害，每层增加，最多叠加层，持续秒，时间结束失去所有层数。",
     "NameLocMeta": {
-      "InTextLiteral": "精准",
+      "InKey": "Name_54100493",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100493"
+      "InTextLiteral": "精准"
     },
+    "DevelopDesc": "命中弱点可以叠加伤害，每层增加，最多叠加层，持续秒，时间结束失去所有层数。",
     "InscriptionId": 54100493
   },
   "54100494": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "精准",
+      "InKey": "Name_54100494",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100494"
+      "InTextLiteral": "精准"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100494
   },
   "54100506": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "充能",
+      "InKey": "Name_54100506",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100506"
+      "InTextLiteral": "充能"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100506
   },
   "54100241": {
-    "DevelopDesc": "遇到的第一个祝福必为音乐法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "音乐",
+      "InKey": "Name_54100241",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100241"
+      "InTextLiteral": "音乐"
     },
+    "DevelopDesc": "遇到的第一个祝福必为音乐法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100241
   },
   "54100242": {
-    "DevelopDesc": "遇到的第一个祝福必为音乐法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "音乐",
+      "InKey": "Name_54100242",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100242"
+      "InTextLiteral": "音乐"
     },
+    "DevelopDesc": "遇到的第一个祝福必为音乐法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100242
   },
   "54100243": {
-    "DevelopDesc": "遇到的第一个祝福必为音乐法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "音乐",
+      "InKey": "Name_54100243",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100243"
+      "InTextLiteral": "音乐"
     },
+    "DevelopDesc": "遇到的第一个祝福必为音乐法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100243
   },
   "54100244": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "音乐",
+      "InKey": "Name_54100244",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100244"
+      "InTextLiteral": "音乐"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100244
   },
   "5321040": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "灵动",
+      "InKey": "Name_5321040",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5321040"
+      "InTextLiteral": "灵动"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5321040
   },
   "54100501": {
-    "DevelopDesc": "命中怪物弱点次，提高技能充能",
     "NameLocMeta": {
-      "InTextLiteral": "充能",
+      "InKey": "Name_54100501",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100501"
+      "InTextLiteral": "充能"
     },
+    "DevelopDesc": "命中怪物弱点次，提高技能充能",
     "InscriptionId": 54100501
   },
   "54100502": {
-    "DevelopDesc": "命中怪物弱点次，提高技能充能",
     "NameLocMeta": {
-      "InTextLiteral": "充能",
+      "InKey": "Name_54100502",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100502"
+      "InTextLiteral": "充能"
     },
+    "DevelopDesc": "命中怪物弱点次，提高技能充能",
     "InscriptionId": 54100502
   },
   "54100503": {
-    "DevelopDesc": "命中怪物弱点次，提高技能充能",
     "NameLocMeta": {
-      "InTextLiteral": "充能",
+      "InKey": "Name_54100503",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100503"
+      "InTextLiteral": "充能"
     },
+    "DevelopDesc": "命中怪物弱点次，提高技能充能",
     "InscriptionId": 54100503
   },
   "54100504": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "充能",
+      "InKey": "Name_54100504",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100504"
+      "InTextLiteral": "充能"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100504
   },
   "54100505": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "充能",
+      "InKey": "Name_54100505",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100505"
+      "InTextLiteral": "充能"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100505
   },
   "54100251": {
-    "DevelopDesc": "遇到的第一个祝福必为安全法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "安全",
+      "InKey": "Name_54100251",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100251"
+      "InTextLiteral": "安全"
     },
+    "DevelopDesc": "遇到的第一个祝福必为安全法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100251
   },
   "54100252": {
-    "DevelopDesc": "遇到的第一个祝福必为安全法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "安全",
+      "InKey": "Name_54100252",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100252"
+      "InTextLiteral": "安全"
     },
+    "DevelopDesc": "遇到的第一个祝福必为安全法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100252
   },
   "54100253": {
-    "DevelopDesc": "遇到的第一个祝福必为安全法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "安全",
+      "InKey": "Name_54100253",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100253"
+      "InTextLiteral": "安全"
     },
+    "DevelopDesc": "遇到的第一个祝福必为安全法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100253
   },
   "54100254": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "安全",
+      "InKey": "Name_54100254",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100254"
+      "InTextLiteral": "安全"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100254
   },
   "54100765": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "永恒",
+      "InKey": "Name_54100765",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100765"
+      "InTextLiteral": "永恒"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100765
   },
   "54100511": {
-    "DevelopDesc": "命中怪物弱点次，技能使用次数",
     "NameLocMeta": {
-      "InTextLiteral": "聚能",
+      "InKey": "Name_54100511",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100511"
+      "InTextLiteral": "聚能"
     },
+    "DevelopDesc": "命中怪物弱点次，技能使用次数",
     "InscriptionId": 54100511
   },
   "54100512": {
-    "DevelopDesc": "命中怪物弱点次，技能使用次数",
     "NameLocMeta": {
-      "InTextLiteral": "聚能",
+      "InKey": "Name_54100512",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100512"
+      "InTextLiteral": "聚能"
     },
+    "DevelopDesc": "命中怪物弱点次，技能使用次数",
     "InscriptionId": 54100512
   },
   "54100513": {
-    "DevelopDesc": "命中怪物弱点次，技能使用次数",
     "NameLocMeta": {
-      "InTextLiteral": "聚能",
+      "InKey": "Name_54100513",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100513"
+      "InTextLiteral": "聚能"
     },
+    "DevelopDesc": "命中怪物弱点次，技能使用次数",
     "InscriptionId": 54100513
   },
   "54100514": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "聚能",
+      "InKey": "Name_54100514",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100514"
+      "InTextLiteral": "聚能"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100514
   },
   "54100453": {
-    "DevelopDesc": "释放技能提高技能弱点伤害加成持续秒",
     "NameLocMeta": {
-      "InTextLiteral": "洞察",
+      "InKey": "Name_54100453",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100453"
+      "InTextLiteral": "洞察"
     },
+    "DevelopDesc": "释放技能提高技能弱点伤害加成持续秒",
     "InscriptionId": 54100453
   },
   "54100261": {
-    "DevelopDesc": "遇到的第一个祝福必为幸运法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "幸运",
+      "InKey": "Name_54100261",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100261"
+      "InTextLiteral": "幸运"
     },
+    "DevelopDesc": "遇到的第一个祝福必为幸运法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100261
   },
   "54100262": {
-    "DevelopDesc": "遇到的第一个祝福必为幸运法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "幸运",
+      "InKey": "Name_54100262",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100262"
+      "InTextLiteral": "幸运"
     },
+    "DevelopDesc": "遇到的第一个祝福必为幸运法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100262
   },
   "54100263": {
-    "DevelopDesc": "遇到的第一个祝福必为幸运法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "幸运",
+      "InKey": "Name_54100263",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100263"
+      "InTextLiteral": "幸运"
     },
+    "DevelopDesc": "遇到的第一个祝福必为幸运法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100263
   },
   "54100264": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "幸运",
+      "InKey": "Name_54100264",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100264"
+      "InTextLiteral": "幸运"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100264
   },
   "5321060": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "乱射",
+      "InKey": "Name_5321060",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5321060"
+      "InTextLiteral": "乱射"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5321060
   },
   "5321061": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "解放",
+      "InKey": "Name_5321061",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_5321061"
+      "InTextLiteral": "解放"
     },
+    "DevelopDesc": "",
     "InscriptionId": 5321061
   },
   "54100383": {
-    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "NameLocMeta": {
-      "InTextLiteral": "回汲",
+      "InKey": "Name_54100383",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100383"
+      "InTextLiteral": "回汲"
     },
+    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "InscriptionId": 54100383
   },
   "54100382": {
-    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "NameLocMeta": {
-      "InTextLiteral": "回汲",
+      "InKey": "Name_54100382",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100382"
+      "InTextLiteral": "回汲"
     },
+    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "InscriptionId": 54100382
   },
   "54100381": {
-    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "NameLocMeta": {
-      "InTextLiteral": "回汲",
+      "InKey": "Name_54100381",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100381"
+      "InTextLiteral": "回汲"
     },
+    "DevelopDesc": "命中瘫痪状态目标，不消耗弹药",
     "InscriptionId": 54100381
   },
   "54100328": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "毁灭",
+      "InKey": "Name_54100328",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100328"
+      "InTextLiteral": "毁灭"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100328
   },
   "54100271": {
-    "DevelopDesc": "遇到的第一个祝福必为能量法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "能量",
+      "InKey": "Name_54100271",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100271"
+      "InTextLiteral": "能量"
     },
+    "DevelopDesc": "遇到的第一个祝福必为能量法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100271
   },
   "54100272": {
-    "DevelopDesc": "遇到的第一个祝福必为能量法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "能量",
+      "InKey": "Name_54100272",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100272"
+      "InTextLiteral": "能量"
     },
+    "DevelopDesc": "遇到的第一个祝福必为能量法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100272
   },
   "54100273": {
-    "DevelopDesc": "遇到的第一个祝福必为能量法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "能量",
+      "InKey": "Name_54100273",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100273"
+      "InTextLiteral": "能量"
     },
+    "DevelopDesc": "遇到的第一个祝福必为能量法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100273
   },
   "54100274": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "能量",
+      "InKey": "Name_54100274",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100274"
+      "InTextLiteral": "能量"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100274
   },
   "54100327": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "毁灭",
+      "InKey": "Name_54100327",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100327"
+      "InTextLiteral": "毁灭"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100327
   },
   "54100326": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "毁灭",
+      "InKey": "Name_54100326",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100326"
+      "InTextLiteral": "毁灭"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100326
   },
   "54100323": {
-    "DevelopDesc": "释放技能命中目标接下来秒内武器暴击伤害提升",
     "NameLocMeta": {
-      "InTextLiteral": "毁灭",
+      "InKey": "Name_54100323",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100323"
+      "InTextLiteral": "毁灭"
     },
+    "DevelopDesc": "释放技能命中目标接下来秒内武器暴击伤害提升",
     "InscriptionId": 54100323
   },
   "54100322": {
-    "DevelopDesc": "释放技能命中目标接下来秒内武器暴击伤害提升",
     "NameLocMeta": {
-      "InTextLiteral": "毁灭",
+      "InKey": "Name_54100322",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100322"
+      "InTextLiteral": "毁灭"
     },
+    "DevelopDesc": "释放技能命中目标接下来秒内武器暴击伤害提升",
     "InscriptionId": 54100322
   },
   "54100321": {
-    "DevelopDesc": "释放技能命中目标接下来秒内武器暴击伤害提升",
     "NameLocMeta": {
-      "InTextLiteral": "毁灭",
+      "InKey": "Name_54100321",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100321"
+      "InTextLiteral": "毁灭"
     },
+    "DevelopDesc": "释放技能命中目标接下来秒内武器暴击伤害提升",
     "InscriptionId": 54100321
   },
   "54100293": {
-    "DevelopDesc": "遇到的第一个祝福必为电玩法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "电玩",
+      "InKey": "Name_54100293",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100293"
+      "InTextLiteral": "电玩"
     },
+    "DevelopDesc": "遇到的第一个祝福必为电玩法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100293
   },
   "54100281": {
-    "DevelopDesc": "遇到的第一个祝福必为财富法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "财富",
+      "InKey": "Name_54100281",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100281"
+      "InTextLiteral": "财富"
     },
+    "DevelopDesc": "遇到的第一个祝福必为财富法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100281
   },
   "54100282": {
-    "DevelopDesc": "遇到的第一个祝福必为财富法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "财富",
+      "InKey": "Name_54100282",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100282"
+      "InTextLiteral": "财富"
     },
+    "DevelopDesc": "遇到的第一个祝福必为财富法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100282
   },
   "54100283": {
-    "DevelopDesc": "遇到的第一个祝福必为财富法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "财富",
+      "InKey": "Name_54100283",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100283"
+      "InTextLiteral": "财富"
     },
+    "DevelopDesc": "遇到的第一个祝福必为财富法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100283
   },
   "54100284": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "财富",
+      "InKey": "Name_54100284",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100284"
+      "InTextLiteral": "财富"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100284
   },
   "54100292": {
-    "DevelopDesc": "遇到的第一个祝福必为电玩法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "电玩",
+      "InKey": "Name_54100292",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100292"
+      "InTextLiteral": "电玩"
     },
+    "DevelopDesc": "遇到的第一个祝福必为电玩法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100292
   },
   "54100031": {
-    "DevelopDesc": "释放技能命中目标技能充能提高",
     "NameLocMeta": {
-      "InTextLiteral": "跃迁",
+      "InKey": "Name_54100031",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100031"
+      "InTextLiteral": "跃迁"
     },
+    "DevelopDesc": "释放技能命中目标技能充能提高",
     "InscriptionId": 54100031
   },
   "54100032": {
-    "DevelopDesc": "释放技能命中目标技能充能提高",
     "NameLocMeta": {
-      "InTextLiteral": "跃迁",
+      "InKey": "Name_54100032",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100032"
+      "InTextLiteral": "跃迁"
     },
+    "DevelopDesc": "释放技能命中目标技能充能提高",
     "InscriptionId": 54100032
   },
   "54100033": {
-    "DevelopDesc": "释放技能命中目标技能充能提高",
     "NameLocMeta": {
-      "InTextLiteral": "跃迁",
+      "InKey": "Name_54100033",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100033"
+      "InTextLiteral": "跃迁"
     },
+    "DevelopDesc": "释放技能命中目标技能充能提高",
     "InscriptionId": 54100033
   },
   "54100034": {
-    "DevelopDesc": "",
     "NameLocMeta": {
-      "InTextLiteral": "跃迁",
+      "InKey": "Name_54100034",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100034"
+      "InTextLiteral": "跃迁"
     },
+    "DevelopDesc": "",
     "InscriptionId": 54100034
   },
   "54100291": {
-    "DevelopDesc": "遇到的第一个祝福必为电玩法则且获取该类型法则稀有品质以上概率提升",
     "NameLocMeta": {
-      "InTextLiteral": "电玩",
+      "InKey": "Name_54100291",
       "InNamespace": "puzzle_TBPuzzleInscriptionName",
-      "InKey": "Name_54100291"
+      "InTextLiteral": "电玩"
     },
+    "DevelopDesc": "遇到的第一个祝福必为电玩法则且获取该类型法则稀有品质以上概率提升",
     "InscriptionId": 54100291
   }
 }

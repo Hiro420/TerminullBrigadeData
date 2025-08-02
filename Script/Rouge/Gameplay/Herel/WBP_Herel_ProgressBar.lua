@@ -4,10 +4,12 @@ local SkillStatus = {
   CoolDown = 1,
   NoCount = 2
 }
+
 function WBP_Herel_ProgressBar:Construct()
   ListenObjectMessage(nil, GMP.MSG_World_Character_OnEnterState, self, self.BindOnCharacterEnterState)
   ListenObjectMessage(nil, GMP.MSG_World_Character_OnExitState, self, self.BindOnCharacterExitState)
 end
+
 function WBP_Herel_ProgressBar:OnDisplay()
   print("WBP_Herel_ProgressBar:OnDisplay")
   self.Overridden.OnDisplay(self)
@@ -15,15 +17,18 @@ function WBP_Herel_ProgressBar:OnDisplay()
   ListenObjectMessage(nil, GMP.MSG_World_Character_OnExitState, self, self.BindOnCharacterExitState)
   self:InitState()
 end
+
 function WBP_Herel_ProgressBar:OnUnDisplay()
   self.Overridden.OnUnDisplay(self, true)
   UnListenObjectMessage(GMP.MSG_World_Character_OnEnterState, self)
   UnListenObjectMessage(GMP.MSG_World_Character_OnExitState, self)
 end
+
 function WBP_Herel_ProgressBar:Destruct()
   UnListenObjectMessage(GMP.MSG_World_Character_OnEnterState, self)
   UnListenObjectMessage(GMP.MSG_World_Character_OnExitState, self)
 end
+
 function WBP_Herel_ProgressBar:BindOnCharacterEnterState(TargetActor, Tag)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   print("WBP_Herel_ProgressBar:BindOnCharacterEnterState", TargetActor, Character, Tag)
@@ -35,6 +40,7 @@ function WBP_Herel_ProgressBar:BindOnCharacterEnterState(TargetActor, Tag)
   end
   self:InitState()
 end
+
 function WBP_Herel_ProgressBar:InitState()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -57,6 +63,7 @@ function WBP_Herel_ProgressBar:InitState()
     self.RGStateController_Disable:ChangeStatus("Able")
   end
 end
+
 function WBP_Herel_ProgressBar:BindOnCharacterExitState(TargetActor, Tag, IsBlocked)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   print("WBP_Herel_ProgressBar:BindOnCharacterExitState", TargetActor, Character, Tag)
@@ -68,4 +75,5 @@ function WBP_Herel_ProgressBar:BindOnCharacterExitState(TargetActor, Tag, IsBloc
   end
   self:InitState()
 end
+
 return WBP_Herel_ProgressBar

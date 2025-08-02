@@ -1,8 +1,10 @@
 local WBP_TeamDamageGenericModifyItem_C = UnLua.Class()
+
 function WBP_TeamDamageGenericModifyItem_C:Construct()
   self.Overridden.Construct(self)
   EventSystem.AddListenerNew(EventDef.TeamDamage.OnUpdateHoverStatus, self, self.BindOnUpdateHoverStatus)
 end
+
 function WBP_TeamDamageGenericModifyItem_C:OnListItemObjectSet(ListItemObj)
   self.Index = ListItemObj.Index
   self.UserId = ListItemObj.UserId
@@ -24,18 +26,23 @@ function WBP_TeamDamageGenericModifyItem_C:OnListItemObjectSet(ListItemObj)
     ListItemObj.ParentView.BindOnNavigation
   })
 end
+
 function WBP_TeamDamageGenericModifyItem_C:Destruct()
   EventSystem.RemoveListenerNew(EventDef.TeamDamage.OnUpdateHoverStatus, self, self.BindOnUpdateHoverStatus)
 end
+
 function WBP_TeamDamageGenericModifyItem_C:OnAddedToFocusPath(...)
   self.WBP_BagRoleGenericItem:OnMouseEnter()
 end
+
 function WBP_TeamDamageGenericModifyItem_C:OnRemovedFromFocusPath(...)
   self.WBP_BagRoleGenericItem:OnMouseLeave()
 end
+
 function WBP_TeamDamageGenericModifyItem_C:BindOnUpdateHoverStatus(UserId, AttributeModifyIndex, GenericModifyIndex)
   if tonumber(self.UserId) == tonumber(UserId) and self.Index == GenericModifyIndex then
     self:SetKeyboardFocus()
   end
 end
+
 return WBP_TeamDamageGenericModifyItem_C

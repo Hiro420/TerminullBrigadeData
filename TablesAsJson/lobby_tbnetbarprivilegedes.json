@@ -1,23 +1,23 @@
 ﻿{
   "3": {
     "Icon": "/Game/Rouge/UI/Atlas_DT/IconNetBar/Frames/Icon_Proficiency_01.Icon_Proficiency_01",
+    "ID": 3,
     "Des": "网吧权益生效中，通关结算时获得额外的英雄熟练度",
     "RewardDes": "+20%",
-    "Name": "英雄熟练度加成",
-    "ID": 3
+    "Name": "英雄熟练度加成"
   },
   "1": {
     "Icon": "/Game/Rouge/UI/Atlas_DT/IconNetBar/Frames/Icon_Clothing.Icon_Clothing",
+    "ID": 1,
     "Des": "部分皮肤限时体验",
     "RewardDes": "已发放",
-    "Name": "网吧特权皮肤",
-    "ID": 1
+    "Name": "网吧特权皮肤"
   },
   "2": {
     "Icon": "/Game/Rouge/UI/Atlas_DT/IconNetBar/Frames/Icon_Pickup_Exp.Icon_Pickup_Exp",
+    "ID": 2,
     "Des": "网吧权益生效中，通关结算时获得额外的源码",
     "RewardDes": "+20%",
-    "Name": "源码加成",
-    "ID": 2
+    "Name": "源码加成"
   }
 }

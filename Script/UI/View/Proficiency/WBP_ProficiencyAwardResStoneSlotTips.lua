@@ -1,8 +1,11 @@
 local WBP_ProficiencyAwardResStoneSlotTips = UnLua.Class()
+
 function WBP_ProficiencyAwardResStoneSlotTips:Construct()
 end
+
 function WBP_ProficiencyAwardResStoneSlotTips:Destruct()
 end
+
 function WBP_ProficiencyAwardResStoneSlotTips:InitProficiencyAwardResStoneSlotTips(ItemId, GearLv, bIsUnlock, SlotNum, bShowTips)
   UpdateVisibility(self, true)
   self:SetRenderOpacity(1)
@@ -24,4 +27,5 @@ function WBP_ProficiencyAwardResStoneSlotTips:InitProficiencyAwardResStoneSlotTi
   self.RGTextLeftNum:SetText(SlotNum - 1)
   self.RGTextRightNum:SetText(SlotNum)
 end
+
 return WBP_ProficiencyAwardResStoneSlotTips

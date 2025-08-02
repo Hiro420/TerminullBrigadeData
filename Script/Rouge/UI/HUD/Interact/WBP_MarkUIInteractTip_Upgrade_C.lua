@@ -1,7 +1,9 @@
 local WBP_MarkUIInteractTip_Upgrade_C = UnLua.Class()
+
 function WBP_MarkUIInteractTip_Upgrade_C:Construct()
   self:RefreshWidget()
 end
+
 function WBP_MarkUIInteractTip_Upgrade_C:SetWidgetConfig(IsNeedProgress, KeyRowName, KeyDesc, IsNeedShowDescBottom)
   self.IsNeedProgress = IsNeedProgress
   self.KeyRowName = KeyRowName
@@ -10,10 +12,12 @@ function WBP_MarkUIInteractTip_Upgrade_C:SetWidgetConfig(IsNeedProgress, KeyRowN
   self.IsShowDescBottom = IsNeedShowDescBottom
   self:RefreshWidget()
 end
+
 function WBP_MarkUIInteractTip_Upgrade_C:SetInteractActor(TargetActor)
   self.TargetActor = TargetActor
   self:RefreshWidget()
 end
+
 function WBP_MarkUIInteractTip_Upgrade_C:RefreshWidget()
   local Pawn = self:GetOwningPlayerPawn()
   local GenericModifyComponent = Pawn:GetComponentByClass(UE.URGGenericModifyComponent:StaticClass())
@@ -54,6 +58,7 @@ function WBP_MarkUIInteractTip_Upgrade_C:RefreshWidget()
     end
   end
 end
+
 function WBP_MarkUIInteractTip_Upgrade_C:InitInfo()
   if self.IsNeedProgress then
     self:UpdateProgress(0.0)
@@ -80,6 +85,7 @@ function WBP_MarkUIInteractTip_Upgrade_C:InitInfo()
     end
   end
 end
+
 function WBP_MarkUIInteractTip_Upgrade_C:PlayInAnimation()
   if self:IsAnimationPlaying(self.Ani_out) then
     self.IsInitiativeStop = true
@@ -87,11 +93,13 @@ function WBP_MarkUIInteractTip_Upgrade_C:PlayInAnimation()
   end
   self:PlayAnimationForward(self.Ani_in)
 end
+
 function WBP_MarkUIInteractTip_Upgrade_C:PlayOutAnimation(AnimationFinishedEvent)
   self:PlayAnimationForward(self.Ani_out)
   self.OutAnimationFinishedEvent = AnimationFinishedEvent
   StopListeningForInputAction(self, "RefreshNPC", UE.EInputEvent.IE_Pressed)
 end
+
 function WBP_MarkUIInteractTip_Upgrade_C:OnAnimationFinished(Animation)
   if Animation == self.Ani_Out then
     if self.IsInitiativeStop then
@@ -101,4 +109,5 @@ function WBP_MarkUIInteractTip_Upgrade_C:OnAnimationFinished(Animation)
     end
   end
 end
+
 return WBP_MarkUIInteractTip_Upgrade_C

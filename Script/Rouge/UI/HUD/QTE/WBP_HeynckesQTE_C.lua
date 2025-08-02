@@ -1,4 +1,5 @@
 local WBP_HeynckesQTE_C = UnLua.Class()
+
 function WBP_HeynckesQTE_C:InitQTEWindow(QTEAsset)
   local QTEConfigList = QTEAsset.QTEConfig:ToTable()
   self.TimeLineLength = 0
@@ -17,10 +18,12 @@ function WBP_HeynckesQTE_C:InitQTEWindow(QTEAsset)
   HideOtherItem(self.Canvas_Target, #QTEConfigList + 1)
   self:PlayAnimation(self.Ani_in)
 end
+
 function WBP_HeynckesQTE_C:LuaTick(InDeltaTime)
   self.CurrentTime = self.CurrentTime + InDeltaTime
   self.Canvas_Pointer:SetRenderTransformAngle(self.CurrentTime / self.TimeLineLength * 360)
 end
+
 function WBP_HeynckesQTE_C:EndQTEWindow(index)
   self.Canvas_Target:GetChildAt(index):QuitQTE()
   if index + 2 == self.Canvas_Target:GetChildrenCount() then
@@ -33,6 +36,7 @@ function WBP_HeynckesQTE_C:EndQTEWindow(index)
   end
   UpdateVisibility(self.Canvas_Clickable, false)
 end
+
 function WBP_HeynckesQTE_C:QTETrigger(IsSuccessful, index)
   self.Canvas_Target:GetChildAt(index):ChangeState(IsSuccessful and true or false)
   if IsSuccessful then
@@ -41,10 +45,12 @@ function WBP_HeynckesQTE_C:QTETrigger(IsSuccessful, index)
     self:PlayAnimation(self.Ani_fail)
   end
 end
+
 function WBP_HeynckesQTE_C:OnQTEWindowActive(index)
   self.Canvas_Target:GetChildAt(index):EnterQTE()
   if index + 1 ~= self.Canvas_Target:GetChildrenCount() then
     UpdateVisibility(self.Canvas_Clickable, true)
   end
 end
+
 return WBP_HeynckesQTE_C

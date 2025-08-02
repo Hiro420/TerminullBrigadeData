@@ -1,5 +1,6 @@
 local ChipData = require("Modules.Chip.ChipData")
 local WBP_CurrencyChipItem_C = UnLua.Class()
+
 function WBP_CurrencyChipItem_C:Construct()
   local BagComp = self:GetOwningPlayer():GetComponentByClass(UE.URGBagComponent:StaticClass())
   if BagComp then
@@ -7,6 +8,7 @@ function WBP_CurrencyChipItem_C:Construct()
   end
   self:UpdateCurrencyNum()
 end
+
 function WBP_CurrencyChipItem_C:Destruct()
   if not self:GetOwningPlayer() then
     return
@@ -16,6 +18,7 @@ function WBP_CurrencyChipItem_C:Destruct()
     BagComp.PostItemChanged:Remove(self, WBP_CurrencyChipItem_C.UpdateCurrencyChipItem)
   end
 end
+
 function WBP_CurrencyChipItem_C:UpdateCurrencyChipItem(ArticleId, OldStack, NewStack)
   local itemId = UE.URGArticleStatics.GetConfigId(ArticleId)
   local resultItem, rowItem = GetRowData(DT.DT_Item, tostring(itemId))
@@ -28,6 +31,7 @@ function WBP_CurrencyChipItem_C:UpdateCurrencyChipItem(ArticleId, OldStack, NewS
   end
   self:UpdateCurrencyNum()
 end
+
 function WBP_CurrencyChipItem_C:UpdateCurrencyNum()
   local BagComp = self:GetOwningPlayer():GetComponentByClass(UE.URGBagComponent:StaticClass())
   if not BagComp then
@@ -45,10 +49,13 @@ function WBP_CurrencyChipItem_C:UpdateCurrencyNum()
   UpdateVisibility(self, num > 0)
   self.Txt_Price:SetText(num)
 end
+
 function WBP_CurrencyChipItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   self.WBP_CurrencyChipTips:InitCurrencyChipTips()
 end
+
 function WBP_CurrencyChipItem_C:OnMouseLeave(MyGeometry, MouseEvent)
   self.WBP_CurrencyChipTips:Hide()
 end
+
 return WBP_CurrencyChipItem_C

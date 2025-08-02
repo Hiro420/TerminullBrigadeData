@@ -13,13 +13,16 @@ local GetAppearanceActor = function(self)
   self.AppearanceActor = LogicLobby.GetAppearanceActor(self)
   return self.AppearanceActor
 end
+
 function DrawOnceResultView:Construct()
   self.ButtonOnce.OnClicked:Add(self, self.DrawContinue)
 end
+
 function DrawOnceResultView:Destruct()
   self.ButtonOnce.OnClicked:Remove(self, self.DrawContinue)
   self.ParentView = nil
 end
+
 function DrawOnceResultView:UpdateAppearanceActorInfo(ResourceId)
   self.WBP_SkinDetailsItem:ShowOrHideButtonPanel(false)
   local TotalResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
@@ -46,6 +49,7 @@ function DrawOnceResultView:UpdateAppearanceActorInfo(ResourceId)
   end
   UpdateVisibility(self.Canvas_Decompose, self.Resource.decompose)
 end
+
 function DrawOnceResultView:InitInfo(Resource, PondId, ParentView)
   UpdateVisibility(self, true)
   self.PondId = PondId
@@ -68,6 +72,7 @@ function DrawOnceResultView:InitInfo(Resource, PondId, ParentView)
     UpdateVisibility(self.WBP_LobbyCurrencyList, true)
   end
 end
+
 function DrawOnceResultView:UpdateCost()
   local CostResId, CostNum, bIsEnough = UIModelMgr:Get("DrawCardViewModel"):GetCost(1, self.PondId)
   local ResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
@@ -83,12 +88,14 @@ function DrawOnceResultView:UpdateCost()
   self.WBP_Price_OnceDraw:SetPrice(CostNum, CostNum, CostResId)
   self.WBP_Price_AllCount:SetPrice(CurHaveNum, CurHaveNum, CostResId)
 end
+
 function DrawOnceResultView:HideSelf()
   if self.ParentView and self.ParentView:GetName() ~= "WBP_DrawMultiResultView" then
     EventSystem.Invoke(EventDef.DrawCard.OnChangeDrawCardPoolSelected, self.PondId)
   end
   self:OnHide()
 end
+
 function DrawOnceResultView:OnHide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.Canvas_BtnOnceDraw:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -102,6 +109,7 @@ function DrawOnceResultView:OnHide()
   self.WBP_ComShowGoodsItem:Hide()
   EventSystem.Invoke(EventDef.DrawCard.OnDrawCardShowFinished)
 end
+
 function DrawOnceResultView:DrawContinue()
   self.ParentView:Draw(1, function()
     local AppearanceActorTemp = GetAppearanceActor(self)
@@ -112,9 +120,11 @@ function DrawOnceResultView:DrawContinue()
     EventSystem.Invoke(EventDef.DrawCard.OnDrawCardShowFinished)
   end)
 end
+
 function DrawOnceResultView:PlayAnimationIn()
   self:PlayAnimation(self.Ani_in)
 end
+
 function DrawOnceResultView:BindOnDrawCardSequenceFinished()
   UpdateVisibility(self, true)
   if self.ParentView:GetName() ~= "WBP_DrawMultiResultView" then
@@ -123,6 +133,7 @@ function DrawOnceResultView:BindOnDrawCardSequenceFinished()
   self:PlayAnimationIn()
   self:UpdateAppearanceActorInfo(self.Resource.resourceId)
 end
+
 function DrawOnceResultView:BindOnDrawCardSequencePlay()
   local AllActors = UE.UGameplayStatics.GetAllActorsWithTag(self, "DrawCardCamera", nil)
   local TargetCamera
@@ -153,17 +164,21 @@ function DrawOnceResultView:BindOnDrawCardSequencePlay()
     SingleActor:ChangeRarity(RarityEnum)
   end
 end
+
 function DrawOnceResultView:PlayDrawCardSequence()
   UpdateVisibility(self, false)
   self.ParentView:PlaySeq(self.LevelSequencePath)
 end
+
 function DrawOnceResultView:SelectHeroSkin(HeroSkinResId, bUpdateMovie)
   local ResID = GetTbSkinRowNameBySkinID(HeroSkinResId)
   self.WBP_ComShowGoodsItem:SetIsDrawCardShow(false)
   self.WBP_ComShowGoodsItem:InitCharacterSkin(ResID, true)
 end
+
 function DrawOnceResultView:SequenceCallBack()
 end
+
 function DrawOnceResultView:InitDrawCardShowInfoByResourceId(ResourceId)
   local ResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   local ResourceRow = ResourceTable[ResourceId]
@@ -187,4 +202,5 @@ function DrawOnceResultView:InitDrawCardShowInfoByResourceId(ResourceId)
   end
   self.WBP_ComShowGoodsItem:SetIsDrawCardShow(bShouldDrawCardShow)
 end
+
 return DrawOnceResultView

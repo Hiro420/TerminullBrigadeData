@@ -1,0 +1,50 @@
+[
+  {
+    "PresentSchemeID": 1,
+    "SeasonIDX": 1,
+    "UnlockConsumerResource": [
+      {
+        "key": 300001,
+        "value": 10
+      }
+    ],
+    "Remark": "",
+    "Name": "预设方案一"
+  },
+  {
+    "PresentSchemeID": 2,
+    "SeasonIDX": 1,
+    "UnlockConsumerResource": [
+      {
+        "key": 300001,
+        "value": 10
+      }
+    ],
+    "Remark": "",
+    "Name": "预设方案二"
+  },
+  {
+    "PresentSchemeID": 3,
+    "SeasonIDX": 1,
+    "UnlockConsumerResource": [
+      {
+        "key": 300001,
+        "value": 10
+      }
+    ],
+    "Remark": "",
+    "Name": "预设方案三"
+  },
+  {
+    "PresentSchemeID": 4,
+    "SeasonIDX": 1,
+    "UnlockConsumerResource": [
+      {
+        "key": 300001,
+        "value": 10
+      }
+    ],
+    "Remark": "",
+    "Name": "预设方案四"
+  }
+]

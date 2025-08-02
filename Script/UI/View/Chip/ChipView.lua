@@ -8,6 +8,7 @@ local ChipUpgrade = "ChipUpgrade"
 local ChipLock = "ChipLock"
 local ChipDiscard = "ChipDiscard"
 local ChipView = Class(ViewBase)
+
 function ChipView:BindClickHandler()
   self.BP_ButtonWithSoundLeft.OnClicked:Add(self, self.OnLeftSlotClick)
   self.BP_ButtonWithSoundRight.OnClicked:Add(self, self.OnRightSlotClick)
@@ -23,6 +24,7 @@ function ChipView:BindClickHandler()
   self.BP_ButtonWithSoundHelpLock.OnHovered:Add(self, self.OnHelpHover)
   self.BP_ButtonWithSoundHelpLock.OnUnHovered:Add(self, self.OnHelpUnHover)
 end
+
 function ChipView:UnBindClickHandler()
   self.BP_ButtonWithSoundLeft.OnClicked:Remove(self, self.OnLeftSlotClick)
   self.BP_ButtonWithSoundRight.OnClicked:Remove(self, self.OnRightSlotClick)
@@ -38,14 +40,17 @@ function ChipView:UnBindClickHandler()
   self.BP_ButtonWithSoundHelpLock.OnHovered:Remove(self, self.OnHelpHover)
   self.BP_ButtonWithSoundHelpLock.OnUnHovered:Remove(self, self.OnHelpUnHover)
 end
+
 function ChipView:OnInit()
   self.DataBindTable = {}
   self.viewModel = UIModelMgr:Get("ChipViewModel")
   self:BindClickHandler()
 end
+
 function ChipView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function ChipView:OnShow(...)
   self.Super:AttachViewModel(self.viewModel, self.DataBindTable, self)
   LogicRole.ShowOrHideRoleMainHero(false)
@@ -84,6 +89,7 @@ function ChipView:OnShow(...)
   effActor:SetActorHiddenInGame(false)
   EventSystem.Invoke(EventDef.BeginnerGuide.OnChipViewShow)
 end
+
 function ChipView:OnRollback()
   LogicRole.ShowOrHideRoleMainHero(false)
   if self.ChipViewState == EChipViewState.Normal then
@@ -95,6 +101,7 @@ function ChipView:OnRollback()
   local effActor = self:GetChipEffActor()
   effActor:SetActorHiddenInGame(false)
 end
+
 function ChipView:UpdateViewByHeroId(HeroId, SelectSlot)
   local curHeroId = HeroId
   local selectSlot = SelectSlot or 1
@@ -111,6 +118,7 @@ function ChipView:UpdateViewByHeroId(HeroId, SelectSlot)
   end
   self:UpdateChipBagList()
 end
+
 function ChipView:OnHide()
   LogicRole.ShowOrHideRoleMainHero(false)
   if UE.RGUtil.IsUObjectValid(self.SequencePlayer) then
@@ -131,6 +139,7 @@ function ChipView:OnHide()
   print("ChipView:OnHide()")
   self.Super:DetachViewModel(self.viewModel, self.DataBindTable, self)
 end
+
 function ChipView:HideViewByViewSet(ForceHide)
   self.viewModel:ResetStrengthFilter(true)
   if self.ChipViewState == EChipViewState.Normal or ForceHide then
@@ -148,6 +157,7 @@ function ChipView:HideViewByViewSet(ForceHide)
   end
   return false
 end
+
 function ChipView:ListenForChipUpgradeInputAction()
   if not self.CurHoverChipBagsItemData then
     return
@@ -172,18 +182,21 @@ function ChipView:ListenForChipUpgradeInputAction()
     self:PlayChpEffSeq()
   end
 end
+
 function ChipView:ListenForChipLockInputAction()
   if not self.CurHoverChipBagsItemData then
     return
   end
   self.viewModel:RequestLockChip(self.CurHoverChipBagsItemData)
 end
+
 function ChipView:ListenForChipDiscardInputAction()
   if not self.CurHoverChipBagsItemData then
     return
   end
   self.viewModel:RequestDiscardChip(self.CurHoverChipBagsItemData)
 end
+
 function ChipView:UpdateSlotInfo(SelectModeIdx)
   local tbChipSlot = LuaTableMgr.GetLuaTableByName(TableNames.TBChipSlots)
   if not tbChipSlot then
@@ -232,6 +245,7 @@ function ChipView:UpdateSlotInfo(SelectModeIdx)
     self.RGStateControllerChipListState:ChangeStatus(EChipListState.Lock)
   end
 end
+
 function ChipView:UpdateEquipChipList(EquipChipList, EquipSlot)
   local tbChipSlot = LuaTableMgr.GetLuaTableByName(TableNames.TBChipSlots)
   if not tbChipSlot then
@@ -255,6 +269,7 @@ function ChipView:UpdateEquipChipList(EquipChipList, EquipSlot)
     end
   end
 end
+
 function ChipView:UpdateChipBagList(SelectSlot)
   local callback = function(chipList)
     self.RGTileViewChipList:RecyleAllData()
@@ -286,6 +301,7 @@ function ChipView:UpdateChipBagList(SelectSlot)
   end
   self.viewModel:FilterNormalChipBagList(false, callback)
 end
+
 function ChipView:UpdateChipListKeepSort(Idx)
   local chipItemList = self.RGTileViewChipList:GetListItems():ToTable()
   local ChatDataObjList = UE.TArray(UE.UObject)
@@ -303,6 +319,7 @@ function ChipView:UpdateChipListKeepSort(Idx)
   self:UpdateStrengthBagListKeepSort()
   self:UpdateFullStatus()
 end
+
 function ChipView:UpdateFullStatus()
   local num = self.viewModel:GetChipsTotalNum()
   local maxNum = self.viewModel:GetMaxChipNum()
@@ -314,11 +331,13 @@ function ChipView:UpdateFullStatus()
     self.StateCtrl_Full:ChangeStatus("NotFull")
   end
 end
+
 function ChipView:UpdateStrengthBagList()
   if UE.RGUtil.IsUObjectValid(self.RGAutoLoadPanelStrengthView.ChildWidget) and CheckIsVisility(self.RGAutoLoadPanelStrengthView.ChildWidget) and CheckIsVisility(self.RGAutoLoadPanelStrengthView) then
     self.RGAutoLoadPanelStrengthView.ChildWidget:UpdateChipItemList()
   end
 end
+
 function ChipView:UpdateFilterStatus()
   local bIsDefaultFilter = self.viewModel:CheckNormalIsDefaultFilter()
   if bIsDefaultFilter then
@@ -327,26 +346,31 @@ function ChipView:UpdateFilterStatus()
     self.StateCtrl_Filter:ChangeStatus(EChipFilter.Filter)
   end
 end
+
 function ChipView:UpdateStrengthFilterStatus()
   if UE.RGUtil.IsUObjectValid(self.RGAutoLoadPanelStrengthView.ChildWidget) and CheckIsVisility(self.RGAutoLoadPanelStrengthView.ChildWidget) and CheckIsVisility(self.RGAutoLoadPanelStrengthView) then
     self.RGAutoLoadPanelStrengthView.ChildWidget:UpdateStrengthFilterStatus()
   end
 end
+
 function ChipView:UpdateStrengthBagListKeepSort()
   if UE.RGUtil.IsUObjectValid(self.RGAutoLoadPanelStrengthView.ChildWidget) and CheckIsVisility(self.RGAutoLoadPanelStrengthView.ChildWidget) and CheckIsVisility(self.RGAutoLoadPanelStrengthView) then
     self.RGAutoLoadPanelStrengthView.ChildWidget:UpdateChipItemListKeepSort()
   end
 end
+
 function ChipView:UpdateStrength(Id, OldSubAttr)
   if UE.RGUtil.IsUObjectValid(self.RGAutoLoadPanelStrengthView.ChildWidget) and CheckIsVisility(self.RGAutoLoadPanelStrengthView.ChildWidget) then
     self.RGAutoLoadPanelStrengthView.ChildWidget:UpdateStrength(Id, OldSubAttr)
   end
 end
+
 function ChipView:OnUpgradeChip(OldLv, NewLv)
   if UE.RGUtil.IsUObjectValid(self.RGAutoLoadPanelStrengthView.ChildWidget) and CheckIsVisility(self.RGAutoLoadPanelStrengthView.ChildWidget) then
     self.RGAutoLoadPanelStrengthView.ChildWidget:OnUpgradeChip(OldLv, NewLv)
   end
 end
+
 function ChipView:ShowChipAttrListTip(bShow, ChipBagsItemData, Slot)
   if bShow then
     if Slot and Slot > 0 then
@@ -400,12 +424,15 @@ function ChipView:ShowChipAttrListTip(bShow, ChipBagsItemData, Slot)
     self:UpdateCurHoverChipBagsItemData(nil)
   end
 end
+
 function ChipView:UpdateCurHoverChipBagsItemData(ChipBagsItemData)
   self.CurHoverChipBagsItemData = ChipBagsItemData
 end
+
 function ChipView:UpdateAttrTips(ChipOrderedMap)
   self.WBP_ChipAttrTips:InitChipAttrTips(ChipOrderedMap)
 end
+
 function ChipView:EquipChipItem(ChipBagsItemData, bRightMouseBtnClick)
   if not ChipBagsItemData then
     return
@@ -417,6 +444,7 @@ function ChipView:EquipChipItem(ChipBagsItemData, bRightMouseBtnClick)
   end
   self.viewModel:RequestEquipChip(ChipBagsItemData, equipChipData, bRightMouseBtnClick)
 end
+
 function ChipView:OnLeftSlotClick(SelectModeIdx)
   local selectModeIdx = SelectModeIdx or self.viewModel.CurSelectModeIdx
   selectModeIdx = selectModeIdx - 1
@@ -426,6 +454,7 @@ function ChipView:OnLeftSlotClick(SelectModeIdx)
   end
   self.RGToggleGroupSlot:SelectId(selectModeIdx)
 end
+
 function ChipView:OnRightSlotClick(SelectModeIdx)
   local selectModeIdx = SelectModeIdx or self.viewModel.CurSelectModeIdx
   selectModeIdx = selectModeIdx + 1
@@ -435,6 +464,7 @@ function ChipView:OnRightSlotClick(SelectModeIdx)
   end
   self.RGToggleGroupSlot:SelectId(selectModeIdx)
 end
+
 function ChipView:OnFilterClick(ChipViewState)
   local chipViewState = ChipViewState or EChipViewState.Normal
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
@@ -444,17 +474,21 @@ function ChipView:OnFilterClick(ChipViewState)
     end
   end
 end
+
 function ChipView:HideFilterTips()
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
     self.ParentView:HideFilterTips()
   end
 end
+
 function ChipView:OnCheckCanSelect(SelectId)
   return true
 end
+
 function ChipView:OnSlotSelect(SelectId)
   self.viewModel:SelectSlot(SelectId)
 end
+
 function ChipView:OnEmptyLinkClick()
   local idx = self.viewModel.CurSelectModeIdx
   UIMgr:Hide(ViewID.UI_DevelopMain, true)
@@ -463,11 +497,13 @@ function ChipView:OnEmptyLinkClick()
     ComLink(1008, nil, self.viewModel:GetModIdBySlot(1), tbSlot[idx].DropFloor)
   end
 end
+
 function ChipView:OnLockLinkClick()
   local idx = self.viewModel.CurSelectModeIdx
   UIMgr:Hide(ViewID.UI_DevelopMain, true)
   ComLink(1008, nil, self.viewModel:GetModIdBySlot(idx))
 end
+
 function ChipView:OnHelpHover()
   UpdateVisibility(self.WBP_ChipSlotTips, true)
   local tbChipSlot = LuaTableMgr.GetLuaTableByName(TableNames.TBChipSlots)
@@ -483,9 +519,11 @@ function ChipView:OnHelpHover()
     self.WBP_ChipSlotTips.Text_doc:SetText(slotData.desc)
   end
 end
+
 function ChipView:OnHelpUnHover()
   UpdateVisibility(self.WBP_ChipSlotTips, false)
 end
+
 function ChipView:GetChipEffActor()
   if UE.RGUtil.IsUObjectValid(self.ChipEffActor) then
     return self.ChipEffActor
@@ -496,6 +534,7 @@ function ChipView:GetChipEffActor()
   end
   return self.ChipEffActor
 end
+
 function ChipView:PlayChpEffSeq(bIsReverse)
   local setting = UE.FMovieSceneSequencePlaybackSettings()
   setting.bPauseAtEnd = true
@@ -533,6 +572,7 @@ function ChipView:PlayChpEffSeq(bIsReverse)
     self.SequencePlayer:Play()
   end
 end
+
 function ChipView:JumpChpEffSeq(bIsReverse)
   if not UE.RGUtil.IsUObjectValid(self.SequencePlayer) then
     return
@@ -543,10 +583,12 @@ function ChipView:JumpChpEffSeq(bIsReverse)
     UE.URGBlueprintLibrary.JumpToStart(self.SequencePlayer)
   end
 end
+
 function ChipView:UpdateLeftAndRightRedDot(LeftRedDotCount, RightRedDotCount)
   UpdateVisibility(self.Canvas_LeftRedDot, LeftRedDotCount > 0)
   UpdateVisibility(self.Canvas_RightRedDot, RightRedDotCount > 0)
   UpdateVisibility(self.Canvas_LeftRedDotLock, LeftRedDotCount > 0)
   UpdateVisibility(self.Canvas_RightRedDotLock, RightRedDotCount > 0)
 end
+
 return ChipView

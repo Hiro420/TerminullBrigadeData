@@ -3,6 +3,7 @@ local WeaponWorldItemClsPath = "/Game/Rouge/UI/Lobby/WeaponHandBook/WBP_WeaponWo
 local WeaponHandBookItemDataPath = "/Game/Rouge/UI/Lobby/WeaponHandBook/WeaponHandBookItemData.WeaponHandBookItemData_C"
 local AccessaryItemNameFormat = "WBP_WeaponHandBookParts"
 local MaxAccessoryNum = 8
+
 function WBP_WeaponHandBook_C:Construct()
   EventSystem.AddListener(self, EventDef.Lobby.LobbyPanelChanged, WBP_WeaponHandBook_C.BindOnLobbyActivePanelChanged)
   self.BP_ButtonWithSoundTipsMask.OnClicked:Add(self, WBP_WeaponHandBook_C.BindOnTipsMaskButtonClicked)
@@ -12,6 +13,7 @@ function WBP_WeaponHandBook_C:Construct()
   self.DataPool:Clear()
   LogicWeaponHandBook:InitWeaponData()
 end
+
 function WBP_WeaponHandBook_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.LobbyPanelChanged, WBP_WeaponHandBook_C.BindOnLobbyActivePanelChanged)
   self.BP_ButtonWithSoundTipsMask.OnClicked:Remove(self, WBP_WeaponHandBook_C.BindOnTipsMaskButtonClicked)
@@ -20,6 +22,7 @@ function WBP_WeaponHandBook_C:Destruct()
   self.UsedDataList:Clear()
   self.DataPool:Clear()
 end
+
 function WBP_WeaponHandBook_C:BindOnLobbyActivePanelChanged(LastActiveWidget, CurActiveWidget)
   if LastActiveWidget == CurActiveWidget then
     if CurActiveWidget == self then
@@ -35,18 +38,24 @@ function WBP_WeaponHandBook_C:BindOnLobbyActivePanelChanged(LastActiveWidget, Cu
     self:ShowTips(false)
   end
 end
+
 function WBP_WeaponHandBook_C:BindOnLobbyExpChanged()
   self:BindOnWorldCheckChanged(self.RGToggleGroupWorld.CurSelectId)
 end
+
 function WBP_WeaponHandBook_C:BindOnChangeRoleItemClicked(CharacterId)
 end
+
 function WBP_WeaponHandBook_C:InitInfo()
 end
+
 function WBP_WeaponHandBook_C:BindOnUpgradeButtonClicked()
 end
+
 function WBP_WeaponHandBook_C:BindOnTipsMaskButtonClicked()
   self:ShowTips(false)
 end
+
 function WBP_WeaponHandBook_C:BindOnWorldCheckChanged(SelectIdex)
   self.ListViewWeaponList:ClearListItems()
   self:RecyleDataObj()
@@ -73,6 +82,7 @@ function WBP_WeaponHandBook_C:BindOnWorldCheckChanged(SelectIdex)
   self.ListViewWeaponList:RegenerateAllEntries()
   self.ListViewWeaponList:SetSelectedIndex(SelectIndex)
 end
+
 function WBP_WeaponHandBook_C:GetOrCreateData()
   local DataObjCls = UE.UClass.Load(WeaponHandBookItemDataPath)
   local DataObj
@@ -86,12 +96,14 @@ function WBP_WeaponHandBook_C:GetOrCreateData()
   self.UsedDataList:Add(DataObj)
   return DataObj
 end
+
 function WBP_WeaponHandBook_C:RecyleDataObj()
   for i, v in iterator(self.UsedDataList) do
     self.DataPool:Add(v)
   end
   self.UsedDataList:Clear()
 end
+
 function WBP_WeaponHandBook_C:BindOnAccessoryCheckChanged(SelectIdex)
   if -1 == SelectIdex then
     self:ShowTips(false, true)
@@ -113,6 +125,7 @@ function WBP_WeaponHandBook_C:BindOnAccessoryCheckChanged(SelectIdex)
     TipsCanvasSlot:SetPosition(Pos)
   end
 end
+
 function WBP_WeaponHandBook_C:ShowTips(bIsShow, bIsNotReSelectToggleGroup)
   UpdateVisibility(self.BP_ButtonWithSoundTipsMask, bIsShow, true)
   UpdateVisibility(self.WBP_WeaponHandBookAccessoryTips, bIsShow)
@@ -123,6 +136,7 @@ function WBP_WeaponHandBook_C:ShowTips(bIsShow, bIsNotReSelectToggleGroup)
     self.RGToggleGroupAccessory:SelectId(-1)
   end
 end
+
 function WBP_WeaponHandBook_C:UpdateWorldList()
   local WeaponWorldItemCls = UE.UClass.Load(WeaponWorldItemClsPath)
   local Index = 1
@@ -143,6 +157,7 @@ function WBP_WeaponHandBook_C:UpdateWorldList()
     self.RGToggleGroupWorld:SelectId(FirstId)
   end
 end
+
 function WBP_WeaponHandBook_C:Select(WeaponBarrelIdParam)
   self.CurSelectWeaponBarrelid = WeaponBarrelIdParam
   self.CanvasPanelWeapon:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -201,6 +216,7 @@ function WBP_WeaponHandBook_C:Select(WeaponBarrelIdParam)
     end
   end
 end
+
 function WBP_WeaponHandBook_C:HoverAccessoryItemFunc(HoverItem, AccessoryId, bIsEnter)
   local Toggle = self.RGToggleGroupAccessory:GetToggleById(self.RGToggleGroupAccessory.CurSelectId)
   if Toggle and Toggle.AccessoryId == AccessoryId then
@@ -218,4 +234,5 @@ function WBP_WeaponHandBook_C:HoverAccessoryItemFunc(HoverItem, AccessoryId, bIs
     end
   end
 end
+
 return WBP_WeaponHandBook_C

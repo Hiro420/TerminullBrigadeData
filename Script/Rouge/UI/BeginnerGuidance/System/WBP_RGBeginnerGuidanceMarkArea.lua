@@ -3,9 +3,11 @@ local BeginnerGuideData = require("Modules.Beginner.BeginnerGuideData")
 local markCustomZOrder = GetCustomZOrderByLayer(UE.ECustomLayer.ELayer_GuidMarkArea)
 local CustomZOrder = GetCustomZOrderByLayer(UE.ECustomLayer.ELayer_Guid)
 local InvalidCustomZOrder = GetCustomZOrderByLayer(UE.ECustomLayer.ELayer_None)
+
 function WBP_RGBeginnerGuidanceMarkArea:Construct()
   self:UpdateWidget()
 end
+
 function WBP_RGBeginnerGuidanceMarkArea:UpdateWidget()
   if UE.UKismetStringLibrary.IsEmpty(self.Name) then
     return
@@ -15,6 +17,7 @@ function WBP_RGBeginnerGuidanceMarkArea:UpdateWidget()
   end
   BeginnerGuideData:UpdateWidget(self.Name, self)
 end
+
 function WBP_RGBeginnerGuidanceMarkArea:UpdateBeginnerGuidArea(NotCanClickSelectArea)
   UpdateVisibility(self.AutoLoad_Frame, true)
   if self.AutoLoad_Frame.CustomZOrder ~= markCustomZOrder then
@@ -29,6 +32,7 @@ function WBP_RGBeginnerGuidanceMarkArea:UpdateBeginnerGuidArea(NotCanClickSelect
     self:RaiseTargetWidget(v, NotCanClickSelectArea)
   end
 end
+
 function WBP_RGBeginnerGuidanceMarkArea:ResetGuidArea()
   UpdateVisibility(self.AutoLoad_Frame, false)
   if self.AutoLoad_Frame.SetCustomZOrder then
@@ -40,6 +44,7 @@ function WBP_RGBeginnerGuidanceMarkArea:ResetGuidArea()
     self:ResetTargetWidget(v)
   end
 end
+
 function WBP_RGBeginnerGuidanceMarkArea:RaiseTargetWidget(TargetWidget, NotCanClickSelectArea)
   if TargetWidget and TargetWidget:IsValid() then
     if TargetWidget.SetCustomZOrder then
@@ -56,6 +61,7 @@ function WBP_RGBeginnerGuidanceMarkArea:RaiseTargetWidget(TargetWidget, NotCanCl
     print("WBP_RGBeginnerGuidanceMarkArea:Construct TargetRaiseWidget is nil")
   end
 end
+
 function WBP_RGBeginnerGuidanceMarkArea:ResetTargetWidget(TargetWidget)
   if TargetWidget and TargetWidget:IsValid() then
     if TargetWidget.SetCustomZOrder then
@@ -67,7 +73,9 @@ function WBP_RGBeginnerGuidanceMarkArea:ResetTargetWidget(TargetWidget)
     print("WBP_RGBeginnerGuidanceMarkArea:Construct TargetWidget is nil")
   end
 end
+
 function WBP_RGBeginnerGuidanceMarkArea:UpdateFrameVis(bIsShow)
   UpdateVisibility(self.AutoLoad_Frame, bIsShow)
 end
+
 return WBP_RGBeginnerGuidanceMarkArea

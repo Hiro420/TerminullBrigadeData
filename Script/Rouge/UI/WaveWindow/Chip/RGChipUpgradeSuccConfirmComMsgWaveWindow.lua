@@ -1,4 +1,5 @@
 local RGChipUpgradeSuccConfirmComMsgWaveWindow = UnLua.Class()
+
 function RGChipUpgradeSuccConfirmComMsgWaveWindow:InitUpgradeSuccConfirm(OldMainAttrGrowth, OldSubAttr, ChipId)
   local chipViewModel = UIModelMgr:Get("ChipViewModel")
   local chipBagItemData = chipViewModel:GetChipBagDataByUUIDRef(ChipId)
@@ -55,4 +56,5 @@ function RGChipUpgradeSuccConfirmComMsgWaveWindow:InitUpgradeSuccConfirm(OldMain
   end
   HideOtherItem(self.ScrollBoxAttrChange, idx)
 end
+
 return RGChipUpgradeSuccConfirmComMsgWaveWindow

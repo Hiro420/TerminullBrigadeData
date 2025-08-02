@@ -1,14 +1,18 @@
 local MarqueeModule = LuaClass()
 local rapidjson = require("rapidjson")
+
 function MarqueeModule:Ctor()
 end
+
 function MarqueeModule:OnInit()
   print("MarqueeModule:OnInit...........")
   EventSystem.AddListenerNew(EventDef.WSMessage.GlobalMarquee, self, self.BindOnGlobalMarquee)
 end
+
 function MarqueeModule:OnShutdown()
   EventSystem.RemoveListenerNew(EventDef.WSMessage.GlobalMarquee, self, self.BindOnGlobalMarquee)
 end
+
 function MarqueeModule:BindOnGlobalMarquee(Json)
   print("BindOnSocialAskAgreeFriend", Json)
   local JsonTable = rapidjson.decode(Json)
@@ -31,4 +35,5 @@ function MarqueeModule:BindOnGlobalMarquee(Json)
     return
   end
 end
+
 return MarqueeModule

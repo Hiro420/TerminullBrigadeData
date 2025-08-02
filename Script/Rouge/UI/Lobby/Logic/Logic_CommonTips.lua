@@ -20,6 +20,7 @@ local ENUMTipsPosType = {
   LEFTUP = 5,
   LEFTMIDDLE = 6
 }
+
 function LogicCommonTips.Init()
   if LogicCommonTips.IsInit then
     print("LogicDamageNumber \229\183\178\229\136\157\229\167\139\229\140\150")
@@ -27,8 +28,10 @@ function LogicCommonTips.Init()
   end
   LogicCommonTips.IsInit = true
 end
+
 function LogicCommonTips.Clear()
 end
+
 function LogicCommonTips.GetSceneStatusIsLobby()
   local world = GameInstance:GetWorld()
   local PC = UE.UGameplayStatics.GetPlayerController(world, 0)
@@ -37,6 +40,7 @@ function LogicCommonTips.GetSceneStatusIsLobby()
   end
   return UE.ESceneStatus.None
 end
+
 function LogicCommonTips.CreateTipsWidget(TipsParent, TipsClassPath, TipsClass)
   local TipsWidget
   local WidgetClassPath = ""
@@ -64,6 +68,7 @@ function LogicCommonTips.CreateTipsWidget(TipsParent, TipsClassPath, TipsClass)
   end
   return TipsWidget
 end
+
 function LogicCommonTips.SetCommonTipsAbsolutePosition(HoverItemPos, HoverItemSize, HoverTips, PosType, TipsSize, Offset, bDontAutoSize)
   if HoverTips then
     local TipsPos = UE.FVector2D(0)
@@ -94,6 +99,7 @@ function LogicCommonTips.SetCommonTipsAbsolutePosition(HoverItemPos, HoverItemSi
     slotCanvas:SetPosition(TipsPos)
   end
 end
+
 function LogicCommonTips.SetCommonTipsRelativePosition(HoverItem, HoverTips, PosType, TipsSize, Offset)
   local TipsWidget = HoverTips
   if TipsWidget then
@@ -126,6 +132,7 @@ function LogicCommonTips.SetCommonTipsRelativePosition(HoverItem, HoverTips, Pos
     return TipsWidget
   end
 end
+
 function LogicCommonTips.GetCommonTipsType(TipsParent, GeometryItem, TipsWidget, TipsSize)
   if TipsWidget then
     local GeometryTipsParent = TipsParent:GetCachedGeometry()
@@ -162,6 +169,7 @@ function LogicCommonTips.GetCommonTipsType(TipsParent, GeometryItem, TipsWidget,
     return nil
   end
 end
+
 function LogicCommonTips.GetCommonTipsTypeForPos(TipsParent, HoverItemPos, TipsWidget, TipsSize)
   if TipsWidget then
     local scale = UE.UWidgetLayoutLibrary.GetViewportScale(TipsParent)

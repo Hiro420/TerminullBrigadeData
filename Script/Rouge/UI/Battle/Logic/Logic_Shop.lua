@@ -4,6 +4,7 @@ local M = {
   LastSelectWidget = nil
 }
 _G.LogicShop = _G.LogicShop or M
+
 function LogicShop.Init()
   LogicShop.RecoveryProps = UE.URGBlueprintLibrary.RequestNameToGameplayTag("Item.Category.RecoveryProps", nil)
   LogicShop.PowerUp = UE.URGBlueprintLibrary.RequestNameToGameplayTag("Item.Category.PowerUp", nil)
@@ -21,6 +22,7 @@ function LogicShop.Init()
   end
   InteractHandle.OnFinishInteract:Add(GameInstance, LogicShop.BindOnBeginInteract)
 end
+
 function LogicShop:BindOnBeginInteract(Target)
   if not Target then
     return
@@ -44,6 +46,7 @@ function LogicShop:BindOnBeginInteract(Target)
   RGUIMgr:OpenUI("WBP_Shop_C", true, UE.EUILayer.EUILayer_High)
   LogicShop:BindOnItemArrayUpdated(nil)
 end
+
 function LogicShop.InitNPC(Target)
   if LogicShop.ShopNPC == Target then
     return
@@ -57,12 +60,14 @@ function LogicShop.InitNPC(Target)
   ShopInteractComp.OnItemArrayUpdated:Add(GameInstance, LogicShop.BindOnItemArrayUpdated)
   ShopInteractComp.OnPreviewModifyListChanged:Add(GameInstance, LogicShop.BindOnPreviewModifyListChanged)
 end
+
 function LogicShop:BindOnRefreshCountChanged(RefreshCount)
   local TargetWidget = RGUIMgr:GetUI("WBP_Shop_C")
   if TargetWidget then
     TargetWidget:RefreshRefreshCountInfo()
   end
 end
+
 function LogicShop:BindOnNotifyItemPurchaseResult(InstanceId, Result)
   local RGWaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
   if not RGWaveWindowManager then
@@ -113,6 +118,7 @@ function LogicShop:BindOnNotifyItemPurchaseResult(InstanceId, Result)
     })
   end
 end
+
 function LogicShop.GetShopPreviewModifyList()
   if not IsValidObj(LogicShop.ShopNPC) then
     return nil
@@ -123,6 +129,7 @@ function LogicShop.GetShopPreviewModifyList()
   end
   return ShopInteractComp.PreviewModifyList
 end
+
 function LogicShop.GetShopUpgradeModifyUpgradeLevel()
   if LogicShop.ShopNPC == nil then
     return 1
@@ -133,6 +140,7 @@ function LogicShop.GetShopUpgradeModifyUpgradeLevel()
   end
   return ShopInteractComp.PreviewModifyList.UpgradeModify_UpgradeLevel
 end
+
 function LogicShop.GetItemInfoByInstanceId(InstanceId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -158,6 +166,7 @@ function LogicShop.GetItemInfoByInstanceId(InstanceId)
   end
   return nil
 end
+
 function LogicShop.GetCategoryByInstanceId(InstanceId)
   local ItemRowInfo = LogicShop.GetItemInfoByInstanceId(InstanceId)
   if ItemRowInfo then
@@ -188,6 +197,7 @@ function LogicShop.GetCategoryByInstanceId(InstanceId)
   print("[LJS]", InstanceId, "\228\184\141\231\159\165\233\129\147\230\152\175\228\187\128\228\185\136\229\136\134\231\177\187")
   return 0
 end
+
 function LogicShop:BindOnNotifyRefreshResult(Result)
   local RGWaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
   if not RGWaveWindowManager then
@@ -206,6 +216,7 @@ function LogicShop:BindOnNotifyRefreshResult(Result)
   end
   RGWaveWindowManager:ShowWaveWindow(TargetWaveId, {ExtraTip})
 end
+
 function LogicShop:BindOnItemArrayUpdated(OldArray)
   if not LogicShop.ShopNPC then
     return
@@ -223,6 +234,7 @@ function LogicShop:BindOnItemArrayUpdated(OldArray)
     ShopView:OnOpen(bPlayAnim)
   end
 end
+
 function LogicShop:BindOnPreviewModifyListChanged(PreviewModifyList)
   LogicShop:BindOnItemArrayUpdated(LogicShop.GetAllItemInfo())
   if PreviewModifyList.bSelected then
@@ -238,11 +250,13 @@ function LogicShop:BindOnPreviewModifyListChanged(PreviewModifyList)
   end
   LogicShop:OpenGenericModifyChoosePanel(PreviewModifyList)
 end
+
 function LogicShop:RefreshModifyList(PC)
   if PC and PC.MiscHelper then
     PC.MiscHelper:RefreshSelectPreviewModifyList(LogicShop.ShopNPC.RGInteractComponent_Shop)
   end
 end
+
 function LogicShop:OpenGenericModifyChoosePanel(PreviewModifyList)
   local WidgetClass = UE.UClass.Load(LogicShop.GenericModifyChoosePath)
   if not WidgetClass then
@@ -262,6 +276,7 @@ function LogicShop:OpenGenericModifyChoosePanel(PreviewModifyList)
     TargetWidget.IsInShop = true
   end
 end
+
 function LogicShop:ShopAbandonPreviewModifyList(ShopNPCParam)
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   if not PC then
@@ -292,6 +307,7 @@ function LogicShop:ShopAbandonPreviewModifyList(ShopNPCParam)
     print("LogicShop:ShopAbandonPreviewModifyList LogicGenericModify.bCanOperator is false", LogicShop.ModifyInstanceId)
   end
 end
+
 function LogicShop:ShopSelectPreviewModifyList(ModifyId, bIsUpgrade)
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   if not PC then
@@ -316,6 +332,7 @@ function LogicShop:ShopSelectPreviewModifyList(ModifyId, bIsUpgrade)
     print("LogicShop:ShopSelectPreviewModifyList LogicGenericModify.bCanOperator is false", LogicShop.ModifyInstanceId, ModifyId, bIsUpgrade)
   end
 end
+
 function LogicShop:ShopSelectPreviewModifyListEx(ModifyId, ModifyChooseType, ShopNPCParam)
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   if not PC then
@@ -347,6 +364,7 @@ function LogicShop:ShopSelectPreviewModifyListEx(ModifyId, ModifyChooseType, Sho
     print("LogicShop:ShopSelectPreviewModifyListEx LogicGenericModify.bCanOperator is false", LogicShop.ModifyInstanceId, ModifyId, RGNpcType, ModifyChooseType)
   end
 end
+
 function LogicShop:ChangeModifyChooseTypeToNpcType(ModifyChooseTypeParam)
   if ModifyChooseTypeParam == ModifyChooseType.UpgradeModify then
     return UE.ERGNpcType.NT_UpgradeModify
@@ -365,6 +383,7 @@ function LogicShop:ChangeModifyChooseTypeToNpcType(ModifyChooseTypeParam)
   end
   return UE.ERGNpcType.NT_GenericModify
 end
+
 function LogicShop.ClearNPC()
   if not LogicShop.ShopNPC or not LogicShop.ShopNPC:IsValid() then
     LogicShop.ShopNPC = nil
@@ -380,6 +399,7 @@ function LogicShop.ClearNPC()
   ShopInteractComp.OnPreviewModifyListChanged:Remove(GameInstance, LogicShop.BindOnPreviewModifyListChanged)
   LogicShop.ShopNPC = nil
 end
+
 function LogicShop.BuyShopItem(InstanceId)
   if not LogicShop.ShopNPC or not LogicShop.ShopNPC:IsValid() then
     print("\229\149\134\229\186\151NPC\230\151\160\230\149\136")
@@ -396,6 +416,7 @@ function LogicShop.BuyShopItem(InstanceId)
   local ShopInteractComp = LogicShop.ShopNPC:GetComponentByClass(UE.URGInteractComponent_Shop:StaticClass())
   PlayerMiscComp:BuyShopItem(ShopInteractComp, InstanceId)
 end
+
 function LogicShop.RefreshShopItem()
   if not LogicShop.ShopNPC or not LogicShop.ShopNPC:IsValid() then
     print("\229\149\134\229\186\151NPC\230\151\160\230\149\136")
@@ -412,6 +433,7 @@ function LogicShop.RefreshShopItem()
   local ShopInteractComp = LogicShop.ShopNPC:GetComponentByClass(UE.URGInteractComponent_Shop:StaticClass())
   PlayerMiscComp:RefreshShopItem(ShopInteractComp)
 end
+
 function LogicShop.GetCurRefreshCount()
   if LogicShop.ShopNPC == nil or UE.RGUtil.IsUObjectValid(LogicShop.ShopNPC) == false then
     return 0
@@ -422,6 +444,7 @@ function LogicShop.GetCurRefreshCount()
   end
   return ShopInteractComp.RefreshCount
 end
+
 function LogicShop.GetCurRefreshCountForPriceCalc()
   if LogicShop.ShopNPC == nil then
     return 0
@@ -433,6 +456,7 @@ function LogicShop.GetCurRefreshCountForPriceCalc()
   local FreeRefreshCount = LogicShop.GetFreeRefreshCount()
   return ShopInteractComp.RefreshCount - FreeRefreshCount
 end
+
 function LogicShop.GetFreeRefreshCount()
   if LogicShop.ShopNPC == nil then
     return 0
@@ -443,6 +467,7 @@ function LogicShop.GetFreeRefreshCount()
   end
   return ShopInteractComp.FreeRefreshCount
 end
+
 function LogicShop.GetMaxRefreshCount()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -456,11 +481,13 @@ function LogicShop.GetMaxRefreshCount()
   local FreeCount = LogicShop.GetFreeRefreshCount()
   return string.format("%d", CoreComp:GetShopRefreshCount() + FreeCount)
 end
+
 function LogicShop.CanRefreshForFree()
   local RefreshCount = LogicShop.GetCurRefreshCount()
   local FreeRefreshCount = LogicShop.GetFreeRefreshCount()
   return RefreshCount < FreeRefreshCount
 end
+
 function LogicShop.GetAllItemInfo()
   local ShopInteractComp = LogicShop.ShopNPC:GetComponentByClass(UE.URGInteractComponent_Shop:StaticClass())
   if not ShopInteractComp then
@@ -468,6 +495,7 @@ function LogicShop.GetAllItemInfo()
   end
   return ShopInteractComp.ItemArray
 end
+
 function LogicShop.Clear()
   LogicShop.ClearNPC()
   LogicShop.ItemList = {}
@@ -483,6 +511,7 @@ function LogicShop.Clear()
   end
   InteractHandle.OnBeginInteract:Remove(GameInstance, LogicShop.BindOnBeginInteract)
 end
+
 function LogicShop.OnPreselectionItem(ItemInfo, Widget)
   RGUIMgr:GetUI("WBP_Shop_C"):RefreshItemDetails(ItemInfo)
   RGUIMgr:GetUI("WBP_Shop_C"):RefreshItemPreview(ItemInfo)

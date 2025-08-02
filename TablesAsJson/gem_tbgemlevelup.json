@@ -1,6 +1,5 @@
 ﻿{
   "0": {
-    "ID": 0,
     "upgradeCostResources": {
       "1": {
         "resources": {},
@@ -11,12 +10,13 @@
         "quality": 5
       }
     },
+    "ID": 0,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 10
+            "value": 10,
+            "key": 99020
           }
         },
         "quality": 4
@@ -24,8 +24,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 10
+            "value": 10,
+            "key": 99020
           }
         },
         "quality": 5
@@ -33,17 +33,16 @@
     }
   },
   "1": {
-    "ID": 1,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 2
+            "value": 2,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 40
+            "value": 40,
+            "key": 99989
           }
         },
         "quality": 4
@@ -51,23 +50,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 2
+            "value": 2,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 40
+            "value": 40,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 1,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 2
+            "value": 2,
+            "key": 99020
           }
         },
         "quality": 4
@@ -75,8 +75,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -84,17 +84,16 @@
     }
   },
   "2": {
-    "ID": 2,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 4
+            "value": 4,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 60
+            "value": 60,
+            "key": 99989
           }
         },
         "quality": 4
@@ -102,23 +101,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 4
+            "value": 4,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 60
+            "value": 60,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 2,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 4
+            "value": 4,
+            "key": 99020
           }
         },
         "quality": 4
@@ -126,8 +126,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -135,17 +135,16 @@
     }
   },
   "3": {
-    "ID": 3,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 6
+            "value": 6,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 85
+            "value": 85,
+            "key": 99989
           }
         },
         "quality": 4
@@ -153,23 +152,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 6
+            "value": 6,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 85
+            "value": 85,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 3,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 6
+            "value": 6,
+            "key": 99020
           }
         },
         "quality": 4
@@ -177,8 +177,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -186,17 +186,16 @@
     }
   },
   "4": {
-    "ID": 4,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 8
+            "value": 8,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 105
+            "value": 105,
+            "key": 99989
           }
         },
         "quality": 4
@@ -204,23 +203,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 8
+            "value": 8,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 105
+            "value": 105,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 4,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 8
+            "value": 8,
+            "key": 99020
           }
         },
         "quality": 4
@@ -228,8 +228,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -237,17 +237,16 @@
     }
   },
   "5": {
-    "ID": 5,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 10
+            "value": 10,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 125
+            "value": 125,
+            "key": 99989
           }
         },
         "quality": 4
@@ -255,23 +254,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 10
+            "value": 10,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 125
+            "value": 125,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 5,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 10
+            "value": 10,
+            "key": 99020
           }
         },
         "quality": 4
@@ -279,8 +279,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -288,17 +288,16 @@
     }
   },
   "6": {
-    "ID": 6,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 12
+            "value": 12,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 165
+            "value": 165,
+            "key": 99989
           }
         },
         "quality": 4
@@ -306,23 +305,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 12
+            "value": 12,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 165
+            "value": 165,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 6,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 12
+            "value": 12,
+            "key": 99020
           }
         },
         "quality": 4
@@ -330,8 +330,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -339,17 +339,16 @@
     }
   },
   "7": {
-    "ID": 7,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 14
+            "value": 14,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 205
+            "value": 205,
+            "key": 99989
           }
         },
         "quality": 4
@@ -357,23 +356,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 14
+            "value": 14,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 205
+            "value": 205,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 7,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 14
+            "value": 14,
+            "key": 99020
           }
         },
         "quality": 4
@@ -381,8 +381,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -390,17 +390,16 @@
     }
   },
   "8": {
-    "ID": 8,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 16
+            "value": 16,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 250
+            "value": 250,
+            "key": 99989
           }
         },
         "quality": 4
@@ -408,23 +407,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 16
+            "value": 16,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 250
+            "value": 250,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 8,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 16
+            "value": 16,
+            "key": 99020
           }
         },
         "quality": 4
@@ -432,8 +432,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -441,17 +441,16 @@
     }
   },
   "9": {
-    "ID": 9,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 20
+            "value": 20,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 290
+            "value": 290,
+            "key": 99989
           }
         },
         "quality": 4
@@ -459,23 +458,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 20
+            "value": 20,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 290
+            "value": 290,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 9,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 20
+            "value": 20,
+            "key": 99020
           }
         },
         "quality": 4
@@ -483,8 +483,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -492,17 +492,16 @@
     }
   },
   "10": {
-    "ID": 10,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 22
+            "value": 22,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 330
+            "value": 330,
+            "key": 99989
           }
         },
         "quality": 4
@@ -510,23 +509,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 22
+            "value": 22,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 330
+            "value": 330,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 10,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 22
+            "value": 22,
+            "key": 99020
           }
         },
         "quality": 4
@@ -534,8 +534,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -543,17 +543,16 @@
     }
   },
   "11": {
-    "ID": 11,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 25
+            "value": 25,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 395
+            "value": 395,
+            "key": 99989
           }
         },
         "quality": 4
@@ -561,23 +560,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 25
+            "value": 25,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 395
+            "value": 395,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 11,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 25
+            "value": 25,
+            "key": 99020
           }
         },
         "quality": 4
@@ -585,8 +585,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -594,17 +594,16 @@
     }
   },
   "12": {
-    "ID": 12,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 30
+            "value": 30,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 455
+            "value": 455,
+            "key": 99989
           }
         },
         "quality": 4
@@ -612,23 +611,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 30
+            "value": 30,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 455
+            "value": 455,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 12,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 30
+            "value": 30,
+            "key": 99020
           }
         },
         "quality": 4
@@ -636,8 +636,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -645,17 +645,16 @@
     }
   },
   "13": {
-    "ID": 13,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 35
+            "value": 35,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 515
+            "value": 515,
+            "key": 99989
           }
         },
         "quality": 4
@@ -663,23 +662,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 35
+            "value": 35,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 515
+            "value": 515,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 13,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 35
+            "value": 35,
+            "key": 99020
           }
         },
         "quality": 4
@@ -687,8 +687,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -696,17 +696,16 @@
     }
   },
   "14": {
-    "ID": 14,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 40
+            "value": 40,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 580
+            "value": 580,
+            "key": 99989
           }
         },
         "quality": 4
@@ -714,23 +713,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 40
+            "value": 40,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 580
+            "value": 580,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 14,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 40
+            "value": 40,
+            "key": 99020
           }
         },
         "quality": 4
@@ -738,8 +738,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -747,17 +747,16 @@
     }
   },
   "15": {
-    "ID": 15,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 45
+            "value": 45,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 640
+            "value": 640,
+            "key": 99989
           }
         },
         "quality": 4
@@ -765,23 +764,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 45
+            "value": 45,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 640
+            "value": 640,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 15,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 45
+            "value": 45,
+            "key": 99020
           }
         },
         "quality": 4
@@ -789,8 +789,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -798,17 +798,16 @@
     }
   },
   "16": {
-    "ID": 16,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 50
+            "value": 50,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 740
+            "value": 740,
+            "key": 99989
           }
         },
         "quality": 4
@@ -816,23 +815,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 50
+            "value": 50,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 740
+            "value": 740,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 16,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 50
+            "value": 50,
+            "key": 99020
           }
         },
         "quality": 4
@@ -840,8 +840,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -849,17 +849,16 @@
     }
   },
   "17": {
-    "ID": 17,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 55
+            "value": 55,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 850
+            "value": 850,
+            "key": 99989
           }
         },
         "quality": 4
@@ -867,23 +866,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 55
+            "value": 55,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 850
+            "value": 850,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 17,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 55
+            "value": 55,
+            "key": 99020
           }
         },
         "quality": 4
@@ -891,8 +891,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -900,17 +900,16 @@
     }
   },
   "18": {
-    "ID": 18,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 65
+            "value": 65,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 950
+            "value": 950,
+            "key": 99989
           }
         },
         "quality": 4
@@ -918,23 +917,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 65
+            "value": 65,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 950
+            "value": 950,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 18,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 65
+            "value": 65,
+            "key": 99020
           }
         },
         "quality": 4
@@ -942,8 +942,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -951,17 +951,16 @@
     }
   },
   "19": {
-    "ID": 19,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 70
+            "value": 70,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 1060
+            "value": 1060,
+            "key": 99989
           }
         },
         "quality": 4
@@ -969,23 +968,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 70
+            "value": 70,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 1060
+            "value": 1060,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 19,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 70
+            "value": 70,
+            "key": 99020
           }
         },
         "quality": 4
@@ -993,8 +993,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5
@@ -1002,17 +1002,16 @@
     }
   },
   "20": {
-    "ID": 20,
     "upgradeCostResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 75
+            "value": 75,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 1160
+            "value": 1160,
+            "key": 99989
           }
         },
         "quality": 4
@@ -1020,23 +1019,24 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 75
+            "value": 75,
+            "key": 99020
           },
           "2": {
-            "key": 99989,
-            "value": 1160
+            "value": 1160,
+            "key": 99989
           }
         },
         "quality": 5
       }
     },
+    "ID": 20,
     "decomposeGetResources": {
       "1": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 75
+            "value": 75,
+            "key": 99020
           }
         },
         "quality": 4
@@ -1044,8 +1044,8 @@
       "2": {
         "resources": {
           "1": {
-            "key": 99020,
-            "value": 0
+            "value": 0,
+            "key": 99020
           }
         },
         "quality": 5

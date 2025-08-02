@@ -1,9 +1,11 @@
 local RecruitHandler = require("Protocol.Recruit.RecruitHandler")
 local RapidJson = require("rapidjson")
-local DifficultyText = NSLOCTEXT("WBP_RecruitWindow_C", "DifficultyText", "\233\154\190\229\186\166")
+local DifficultyText = NSLOCTEXT("WBP_RecruitingTipPanel_C", "DifficultyText", "\233\154\190\229\186\166")
 local WBP_RecruitingTipPanel_C = UnLua.Class()
+
 function WBP_RecruitingTipPanel_C:Construct()
 end
+
 function WBP_RecruitingTipPanel_C:OnShow()
   self.StartRecruitingTime = GetTimeWithServerDelta()
   self.IsOpenApplyList = false
@@ -40,6 +42,7 @@ function WBP_RecruitingTipPanel_C:OnShow()
   end
   self:PlayAnimation(self.Ani_list_in, 0)
 end
+
 function WBP_RecruitingTipPanel_C:OnClicked_BtnOpenApplyList()
   if 0 == #self.ApplyItems then
     ShowWaveWindow(305001)
@@ -54,6 +57,7 @@ function WBP_RecruitingTipPanel_C:OnClicked_BtnOpenApplyList()
     self.ScrollBox_ApplyList:ClearChildren()
   end
 end
+
 function WBP_RecruitingTipPanel_C:PlayListAnimation()
   if self.IsOpenApplyList then
     self:StopAnimation(self.Ani_text_out)
@@ -64,11 +68,13 @@ function WBP_RecruitingTipPanel_C:PlayListAnimation()
     self:PlayAnimation(self.Ani_text_out, 0)
   end
 end
+
 function WBP_RecruitingTipPanel_C:CancelRecruit()
   if DataMgr.IsInTeam() then
     RecruitHandler:SendStopRecruit(DataMgr.MyTeamInfo.teamid)
   end
 end
+
 function WBP_RecruitingTipPanel_C:RemoveEvent()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.RecruitingTimeTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.RecruitingTimeTimer)
@@ -83,6 +89,7 @@ function WBP_RecruitingTipPanel_C:RemoveEvent()
   EventSystem.RemoveListener(EventDef.Lobby.UpdateRoomMembersInfo, self.BindOnUpdateRoomMembersInfo)
   EventSystem.RemoveListener(EventDef.WSMessage.ApplyJoinRecruitTeam, self.BindOnApplyJoinRecruitTeam)
 end
+
 function WBP_RecruitingTipPanel_C:BindOnStopRecruit()
   self:RemoveEvent()
   self:StopAnimation(self.Ani_list_in)
@@ -95,6 +102,7 @@ function WBP_RecruitingTipPanel_C:BindOnStopRecruit()
     self:PlayAnimation(self.Ani_text_out, 0)
   end
 end
+
 function WBP_RecruitingTipPanel_C:OnAnimationFinished(Animation)
   if self.Ani_list_out == Animation and self.IsClose then
     UpdateVisibility(self, false)
@@ -103,9 +111,11 @@ function WBP_RecruitingTipPanel_C:OnAnimationFinished(Animation)
     UpdateVisibility(self.ApplyList, self.IsOpenApplyList)
   end
 end
+
 function WBP_RecruitingTipPanel_C:BindOnUpdateRoomMembersInfo(TeamMambersInfo)
   self:SetTeamInfo(TeamMambersInfo)
 end
+
 function WBP_RecruitingTipPanel_C:BindOnApplyJoinRecruitTeam(Json)
   local JsonTable = RapidJson.decode(Json)
   local roleID = JsonTable.id
@@ -120,6 +130,7 @@ function WBP_RecruitingTipPanel_C:BindOnApplyJoinRecruitTeam(Json)
     self.WBP_RedDotView:SetNum(#self.ApplyItems)
   end)
 end
+
 function WBP_RecruitingTipPanel_C:BindOnGetRecruitApplyList(ResultList)
   local ApplyIDList = {}
   for i, ID in ipairs(ResultList.recruitList) do
@@ -140,12 +151,15 @@ function WBP_RecruitingTipPanel_C:BindOnGetRecruitApplyList(ResultList)
     HideOtherItem(self.ScrollBox_ApplyList, #self.ApplyItems + 1)
   end)
 end
+
 function WBP_RecruitingTipPanel_C:BindOnRefuseRecruitApply()
   self.WBP_RedDotView:SetNum(#self.ApplyItems)
 end
+
 function WBP_RecruitingTipPanel_C:BindOnAgreeRecruitApply()
   self.WBP_RedDotView:SetNum(#self.ApplyItems)
 end
+
 function WBP_RecruitingTipPanel_C:UpdateMatchingTimeText()
   local fmt = "mm:ss"
   if self:GetCurMatchingTime() >= 60 then
@@ -154,9 +168,11 @@ function WBP_RecruitingTipPanel_C:UpdateMatchingTimeText()
   local TimeText = Format(self:GetCurMatchingTime(), fmt, false)
   self.TXT_RecruitingTime_Num:SetText(TimeText)
 end
+
 function WBP_RecruitingTipPanel_C:GetCurMatchingTime()
   return math.floor(GetTimeWithServerDelta() - self.StartRecruitingTime)
 end
+
 function WBP_RecruitingTipPanel_C:SetTeamInfo(TeamMambersInfo)
   local isCaptain = LogicTeam.IsCaptain()
   if #TeamMambersInfo >= 3 and isCaptain then
@@ -179,14 +195,16 @@ function WBP_RecruitingTipPanel_C:SetTeamInfo(TeamMambersInfo)
     end
   end
 end
+
 function WBP_RecruitingTipPanel_C:SetGameInfo(ModeID, WorldID, Floor)
   local Result, RowInfo = GetRowData(DT.DT_GameMode, tostring(WorldID))
   if Result then
     local modeTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGameMode)
-    local InfoText = UE.FTextFormat(self.RecruitInfoText, modeTable[ModeID].Name, RowInfo.Name, DifficultyText, Floor)
+    local InfoText = UE.FTextFormat(self.RecruitInfoText, modeTable[ModeID].Name, RowInfo.Name, DifficultyText(), Floor)
     self.TXT_Difficulty:SetText(InfoText)
   end
 end
+
 function WBP_RecruitingTipPanel_C:RemoveApplyItem(RoleID)
   for i, ApplyItem in ipairs(self.ApplyItems) do
     if ApplyItem.RoleID == RoleID then
@@ -203,6 +221,7 @@ function WBP_RecruitingTipPanel_C:RemoveApplyItem(RoleID)
     end
   end
 end
+
 function WBP_RecruitingTipPanel_C:OnHovered_HeadIcon(bIsShow, PlayerInfo, TargetItem, RoleId)
   if bIsShow then
     local playerInfo = PlayerInfo
@@ -217,12 +236,14 @@ function WBP_RecruitingTipPanel_C:OnHovered_HeadIcon(bIsShow, PlayerInfo, Target
     self.WBP_SocialPlayerInfoTips:Hide()
   end
 end
+
 function WBP_RecruitingTipPanel_C:OnClicked_HeadIcon(MousePosition, SourceFrom, RoleId)
   local PlayerInfo = self:GetPlayerInfoById(RoleId)
   if PlayerInfo then
     UIMgr:Show(ViewID.UI_ContactPersonOperateButtonPanel, nil, MousePosition, PlayerInfo, SourceFrom)
   end
 end
+
 function WBP_RecruitingTipPanel_C:GetPlayerInfoById(RoleId)
   for i, v in ipairs(DataMgr:GetTeamMembersInfo()) do
     if v.roleid == RoleId then
@@ -231,4 +252,5 @@ function WBP_RecruitingTipPanel_C:GetPlayerInfoById(RoleId)
   end
   return nil
 end
+
 return WBP_RecruitingTipPanel_C

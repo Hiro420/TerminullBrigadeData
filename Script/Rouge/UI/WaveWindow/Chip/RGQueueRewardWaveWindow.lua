@@ -1,4 +1,5 @@
 local WBP_RGQueueRewardWaveWindow = UnLua.Class()
+
 function WBP_RGQueueRewardWaveWindow:SetWaveWindowParam(WaveWindowParamParam)
   self.Overridden.SetWaveWindowParam(self, WaveWindowParamParam)
   local idx = 1
@@ -23,6 +24,7 @@ function WBP_RGQueueRewardWaveWindow:SetWaveWindowParam(WaveWindowParamParam)
     self:PlayAnimation(self.Ani_out)
   end
 end
+
 function WBP_RGQueueRewardWaveWindow:LuaTick(InDeltaTime)
   self.Overridden.LuaTick(self, InDeltaTime)
   if self.DelayPlayFadeOut and self.DelayPlayFadeOut > 0 then
@@ -45,4 +47,5 @@ function WBP_RGQueueRewardWaveWindow:LuaTick(InDeltaTime)
     self.Timer = self.Timer + InDeltaTime
   end
 end
+
 return WBP_RGQueueRewardWaveWindow

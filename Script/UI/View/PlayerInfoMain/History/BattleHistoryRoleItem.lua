@@ -1,8 +1,10 @@
 local BattleHistoryRoleItem = Class()
 local ESelectAll = {All = "All", Normal = "Normal"}
+
 function BattleHistoryRoleItem:Construct()
   self.Overridden.Construct(self)
 end
+
 function BattleHistoryRoleItem:InitBattleHistoryRoleItem(HeroId, bSelect, bIsAll)
   UpdateVisibility(self, true)
   if bIsAll then
@@ -33,13 +35,17 @@ function BattleHistoryRoleItem:InitBattleHistoryRoleItem(HeroId, bSelect, bIsAll
     UpdateVisibility(self.LimitedTime, true)
   end
 end
+
 function BattleHistoryRoleItem:Hide()
   UpdateVisibility(self, false)
 end
+
 function BattleHistoryRoleItem:OnMouseEnter(MyGeometry, MouseEvent)
   self.RGStateControllerHover:ChangeStatus(EHover.Hover)
 end
+
 function BattleHistoryRoleItem:OnMouseLeave(MyGeometry, MouseEvent)
   self.RGStateControllerHover:ChangeStatus(EHover.UnHover)
 end
+
 return BattleHistoryRoleItem

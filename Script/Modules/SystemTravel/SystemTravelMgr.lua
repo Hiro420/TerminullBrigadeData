@@ -87,6 +87,7 @@ local NewState = function(Cls)
   end
   return nil
 end
+
 function SystemTravelMgr.GotoState(stateClass, ...)
   if SystemTravelMgr.fade then
     print("SystemTravelMgr.GotoState - \229\189\147\229\137\141\229\164\132\228\186\142\229\187\182\232\191\159\232\183\179\232\189\172\228\184\173\239\188\140\231\155\180\230\142\165return")
@@ -106,6 +107,7 @@ function SystemTravelMgr.GotoState(stateClass, ...)
   print("SystemTravelMgr.Goto:", stateClass.name)
   ReplaceState(stateNew, stateClass, ...)
 end
+
 function SystemTravelMgr.ExitState(stateClass)
   if stateClass and not CheckIsCurrentState(stateClass) then
     if SystemTravelMgr.active then
@@ -158,9 +160,11 @@ function SystemTravelMgr.ExitState(stateClass)
     ReplaceState(MainPanelState)
   end
 end
+
 function SystemTravelMgr.FastExitState()
   SystemTravelMgr.ExitState()
 end
+
 function SystemTravelMgr.RemoveStateRecord(stateClass)
   for index, class in ipairs(SystemTravelMgr.records) do
     if class == stateClass then
@@ -171,6 +175,7 @@ function SystemTravelMgr.RemoveStateRecord(stateClass)
     end
   end
 end
+
 function SystemTravelMgr.FadeGoto(stateClass, fadeTime, ...)
   if SystemTravelMgr.fade then
     return
@@ -187,6 +192,7 @@ function SystemTravelMgr.FadeGoto(stateClass, fadeTime, ...)
     GlobalTimer.DelayCallback(fadeTime, OnStateFadeEndCall)
   end
 end
+
 function SystemTravelMgr.FadeExitState()
   if SystemTravelMgr.fade then
     return
@@ -199,6 +205,7 @@ function SystemTravelMgr.FadeExitState()
     state:OnPreExit()
   end
 end
+
 function SystemTravelMgr.FadeRollBackState(stateClass)
   if SystemTravelMgr.fade then
     return
@@ -211,6 +218,7 @@ function SystemTravelMgr.FadeRollBackState(stateClass)
     state:OnPreExit()
   end
 end
+
 function SystemTravelMgr.RollBackState(stateClass)
   if SystemTravelMgr.active then
     SystemTravelMgr.active:OnExit()
@@ -234,6 +242,7 @@ function SystemTravelMgr.RollBackState(stateClass)
     ReplaceState(MainPanelState)
   end
 end
+
 function SystemTravelMgr.CheckIsStateExist(stateClass)
   for i = 1, SystemTravelMgr.recIdx do
     if SystemTravelMgr.records[i] == stateClass then
@@ -242,9 +251,11 @@ function SystemTravelMgr.CheckIsStateExist(stateClass)
   end
   return false
 end
+
 function SystemTravelMgr.GetCurrentStateClass()
   return SystemTravelMgr.records[SystemTravelMgr.recIdx]
 end
+
 function SystemTravelMgr.ClearAllState()
   if SystemTravelMgr.active ~= nil then
     print("SystemTravelMgr.ClearAllState:", SystemTravelMgr.active.name)
@@ -262,4 +273,5 @@ function SystemTravelMgr.ClearAllState()
   SystemTravelMgr.fadeParam = nil
   SystemTravelMgr.rollBackStateClass = nil
 end
+
 return SystemTravelMgr

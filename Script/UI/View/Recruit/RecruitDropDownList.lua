@@ -3,17 +3,21 @@ local ViewBase = require("Framework.UIMgr.ViewBase")
 local UKismetTextLibrary = UE.UKismetTextLibrary
 local RecruitHandler = require("Protocol.Recruit.RecruitHandler")
 local RecruitDropDownList = UnLua.Class()
+
 function RecruitDropDownList:Construct()
   self.InfoID = 0
   self:SetIsOpen(false)
   self.DropDownListTitle.OnClicked:Add(self, self.OnBtnItemTitleClicked)
 end
+
 function RecruitDropDownList:Destruct()
   self.DropDownListTitle.OnClicked:Remove(self, self.OnBtnItemTitleClicked)
 end
+
 function RecruitDropDownList:OnBtnItemTitleClicked()
   self:SetIsOpen(not self.IsOpen)
 end
+
 function RecruitDropDownList:InitList(Infos)
   if Infos and #Infos > 0 then
     self.DropDownListTitle:InitItem(Infos[1].Option, 0, Infos[1].InfoID, self)
@@ -29,6 +33,7 @@ function RecruitDropDownList:InitList(Infos)
     HideOtherItem(self.ScrollBox_Item, #Infos + 1)
   end
 end
+
 function RecruitDropDownList:ClickItemByInfoID(InfoID)
   local IsClicked = true
   for i, v in ipairs(self.Items) do
@@ -41,15 +46,18 @@ function RecruitDropDownList:ClickItemByInfoID(InfoID)
     self.Items[1]:BtnMain_OnClicked()
   end
 end
+
 function RecruitDropDownList:OnUnLockItemClicked(Option, Index, InfoID)
   self.InfoID = InfoID
   self.DropDownListTitle:InitItem(Option, 0, InfoID)
   self:SetIsOpen(false)
   self.OnItemClicked:Broadcast(InfoID)
 end
+
 function RecruitDropDownList:OnLockItemClicked()
   self.OnItemClicked:Broadcast(-1)
 end
+
 function RecruitDropDownList:SetIsOpen(IsOpen)
   self.IsOpen = IsOpen
   self.DropDownListTitle:SetIsOpen(IsOpen)
@@ -65,7 +73,9 @@ function RecruitDropDownList:SetIsOpen(IsOpen)
   end
   self.OnListOpen:Broadcast(IsOpen)
 end
+
 function RecruitDropDownList:GetInfoID()
   return self.InfoID
 end
+
 return RecruitDropDownList

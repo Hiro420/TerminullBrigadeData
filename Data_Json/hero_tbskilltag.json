@@ -1,0 +1,62 @@
+[
+  {
+    "ID": 1,
+    "Name": "防御",
+    "IconPath": ""
+  },
+  {
+    "ID": 2,
+    "Name": "免死",
+    "IconPath": ""
+  },
+  {
+    "ID": 3,
+    "Name": "弱点",
+    "IconPath": ""
+  },
+  {
+    "ID": 4,
+    "Name": "追踪",
+    "IconPath": ""
+  },
+  {
+    "ID": 5,
+    "Name": "单体",
+    "IconPath": ""
+  },
+  {
+    "ID": 6,
+    "Name": "爆发",
+    "IconPath": ""
+  },
+  {
+    "ID": 7,
+    "Name": "位移",
+    "IconPath": ""
+  },
+  {
+    "ID": 8,
+    "Name": "范围",
+    "IconPath": ""
+  },
+  {
+    "ID": 9,
+    "Name": "回复",
+    "IconPath": ""
+  },
+  {
+    "ID": 10,
+    "Name": "伤害",
+    "IconPath": ""
+  },
+  {
+    "ID": 11,
+    "Name": "属性",
+    "IconPath": ""
+  },
+  {
+    "ID": 12,
+    "Name": "召唤",
+    "IconPath": ""
+  }
+]

@@ -2,6 +2,7 @@ local TeamVoiceModule = require("Modules.TeamVoice.TeamVoiceModule")
 local ContactPersonData = require("Modules.ContactPerson.ContactPersonData")
 local ContactPersonHandler = require("Protocol.ContactPerson.ContactPersonHandler")
 local WBP_TeamOperateButtonPanel_C = UnLua.Class()
+
 function WBP_TeamOperateButtonPanel_C:Construct()
   self.NotFreeChatPanel.OnMainButtonClickedFuncList = {
     self,
@@ -50,6 +51,7 @@ function WBP_TeamOperateButtonPanel_C:Construct()
   self.Btn_Recruit_01.OnClicked:Add(self, self.BindOnRecruitClicked)
   self.Btn_InviteFriend_01.OnClicked:Add(self, self.BindOnInviteFriendClicked)
 end
+
 function WBP_TeamOperateButtonPanel_C:BindOnNotFreeChatButtonClicked()
   local TeamVoiceSubSys = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTeamVoiceSubsystem:StaticClass())
   if TeamVoiceSubSys then
@@ -58,6 +60,7 @@ function WBP_TeamOperateButtonPanel_C:BindOnNotFreeChatButtonClicked()
   self:ChangeChatPanelVisByChatMode()
   self:Hide()
 end
+
 function WBP_TeamOperateButtonPanel_C:BindOnFreeChatButtonClicked()
   local TeamVoiceSubSys = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTeamVoiceSubsystem:StaticClass())
   if TeamVoiceSubSys then
@@ -66,22 +69,27 @@ function WBP_TeamOperateButtonPanel_C:BindOnFreeChatButtonClicked()
   self:ChangeChatPanelVisByChatMode()
   self:Hide()
 end
+
 function WBP_TeamOperateButtonPanel_C:BindOnLeaveTeamButtonClicked()
   LogicTeam.RequestQuitTeamToServer()
   self:Hide()
 end
+
 function WBP_TeamOperateButtonPanel_C:BindOnChangeCaptainButtonClikced()
   LogicTeam.RequestChangeCaptainToServer(self.PlayerInfo.id)
   self:Hide()
 end
+
 function WBP_TeamOperateButtonPanel_C:BindOnAddFriendButtonClicked()
   ContactPersonHandler:RequestAddFriendToServer(self.PlayerInfo.id, EOperateButtonPanelSourceFromType.RecentList)
   self:Hide()
 end
+
 function WBP_TeamOperateButtonPanel_C:BindOnDeleteFriendButtonClicked(...)
   ContactPersonHandler:RequestDeleteFriendToServer(self.PlayerInfo.id)
   self:Hide()
 end
+
 function WBP_TeamOperateButtonPanel_C:BindOnBlockVoiceButtonClicked()
   local TeamVoiceSubSys = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTeamVoiceSubsystem:StaticClass())
   if TeamVoiceSubSys and self.PlayerInfo then
@@ -91,9 +99,11 @@ function WBP_TeamOperateButtonPanel_C:BindOnBlockVoiceButtonClicked()
   end
   self:Hide()
 end
+
 function WBP_TeamOperateButtonPanel_C:BindOnReportButtonClicked()
   self:Hide()
 end
+
 function WBP_TeamOperateButtonPanel_C:BindOnKickTeamButtonClicked()
   DataMgr.GetOrQueryPlayerInfo({
     self.PlayerInfo.id
@@ -103,6 +113,7 @@ function WBP_TeamOperateButtonPanel_C:BindOnKickTeamButtonClicked()
   end)
   self:Hide()
 end
+
 function WBP_TeamOperateButtonPanel_C:BindOnCheckInfoButtonClicked()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.CAREER) then
@@ -112,6 +123,7 @@ function WBP_TeamOperateButtonPanel_C:BindOnCheckInfoButtonClicked()
   self:Hide()
   UIMgr:Show(ViewID.UI_PlayerInfoMain, true, roleID)
 end
+
 function WBP_TeamOperateButtonPanel_C:BindOnRecruitClicked()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.RECRUIT) then
@@ -120,6 +132,7 @@ function WBP_TeamOperateButtonPanel_C:BindOnRecruitClicked()
   self:Hide()
   UIMgr:Show(ViewID.UI_RecruitMainView, true)
 end
+
 function WBP_TeamOperateButtonPanel_C:BindOnInviteFriendClicked()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.FRIENDS) then
@@ -128,10 +141,12 @@ function WBP_TeamOperateButtonPanel_C:BindOnInviteFriendClicked()
   self:Hide()
   UIMgr:Show(ViewID.UI_ContactPerson)
 end
+
 function WBP_TeamOperateButtonPanel_C:BindOnPlatformClicked()
   DataMgr.ShowPlatformProfile(self.PlayerInfo.id, self.PlayerInfo.channelUID)
   self:Hide()
 end
+
 function WBP_TeamOperateButtonPanel_C:Show(PlayerInfo)
   self.PlayerInfo = PlayerInfo
   self:RefreshOperateButtonVis()
@@ -139,6 +154,7 @@ function WBP_TeamOperateButtonPanel_C:Show(PlayerInfo)
   self:PlayAnimation(self.Ani_in)
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_TeamOperateButtonPanel_C:RefreshOperateButtonVis()
   for key, SinglePanel in pairs(self.AllOperatePanel:GetAllChildren()) do
     SinglePanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -191,6 +207,7 @@ function WBP_TeamOperateButtonPanel_C:RefreshOperateButtonVis()
   end
   self:UpdatePlatformInfo()
 end
+
 function WBP_TeamOperateButtonPanel_C:UpdatePlatformInfo()
   if not self.PlatformPanel then
     return
@@ -211,6 +228,7 @@ function WBP_TeamOperateButtonPanel_C:UpdatePlatformInfo()
     end)
   end
 end
+
 function WBP_TeamOperateButtonPanel_C:ChangeChatPanelVisByChatMode()
   local GameUserSettings = UE.UGameUserSettings.GetGameUserSettings()
   if not UE.URGBlueprintLibrary.IsPlatformConsole() then
@@ -231,17 +249,20 @@ function WBP_TeamOperateButtonPanel_C:ChangeChatPanelVisByChatMode()
     UpdateVisibility(self.NotFreeChatPanel, false)
   end
 end
+
 function WBP_TeamOperateButtonPanel_C:UpdatePosition(InPosition)
   local MainSlot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.MainPanel)
   if MainSlot then
     MainSlot:SetPosition(InPosition)
   end
 end
+
 function WBP_TeamOperateButtonPanel_C:Hide()
   self.PlayerInfo = nil
   self:StopAllAnimations()
   self:PlayAnimation(self.Ani_out)
 end
+
 function WBP_TeamOperateButtonPanel_C:OnBGMouseButtonDown(MyGeometry, MouseEvent)
   if not UE.UKismetInputLibrary.PointerEvent_IsMouseButtonDown(MouseEvent, self.LeftMouseKey) then
     return UE.UWidgetBlueprintLibrary.Handled()
@@ -250,9 +271,11 @@ function WBP_TeamOperateButtonPanel_C:OnBGMouseButtonDown(MyGeometry, MouseEvent
   self:Hide()
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function WBP_TeamOperateButtonPanel_C:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     UpdateVisibility(self, false)
   end
 end
+
 return WBP_TeamOperateButtonPanel_C

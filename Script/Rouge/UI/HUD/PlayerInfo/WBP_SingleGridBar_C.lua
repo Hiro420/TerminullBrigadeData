@@ -1,5 +1,6 @@
 local WBP_SingleGridBar_C = UnLua.Class()
 local PositionParam = "position"
+
 function WBP_SingleGridBar_C:InitInfo(MinNum, MaxNum, ReduceAnimName, SizeX, Parent)
   self.MinNum = MinNum
   self.MaxNum = MaxNum
@@ -22,6 +23,7 @@ function WBP_SingleGridBar_C:InitInfo(MinNum, MaxNum, ReduceAnimName, SizeX, Par
   end
   self.UIQuality = BattleUIScalability:GetGridBarScalability()
 end
+
 function WBP_SingleGridBar_C:PlayVirtualWhiteFXAnim(IsRecover, LeftValue, RightValue, AnimColor)
   self.Img_VirtualWhite_Anim:SetColorAndOpacity(AnimColor)
   if self.UIQuality ~= UIQuality.LOW then
@@ -39,14 +41,17 @@ function WBP_SingleGridBar_C:PlayVirtualWhiteFXAnim(IsRecover, LeftValue, RightV
     end
   end
 end
+
 function WBP_SingleGridBar_C:BindOnUpdateVirtualImg(CurValue)
   self:UpdateVirtualImg(CurValue)
 end
+
 function WBP_SingleGridBar_C:InitInfoImp()
   self.TargetHp = -1
   self.OldValue = -1
   UpdateVisibility(self.URGImageBloodEffect, false)
 end
+
 function WBP_SingleGridBar_C:JudgeCanPlayReduceAnim(OldFXPercent, TargetFXPercent)
   if self.CanPlayReduceAnim then
     return self.CanPlayReduceAnim(OldFXPercent, TargetFXPercent)
@@ -59,9 +64,11 @@ function WBP_SingleGridBar_C:JudgeCanPlayReduceAnim(OldFXPercent, TargetFXPercen
   end
   return TargetFXPercent < OldFXPercent
 end
+
 function WBP_SingleGridBar_C:SetReduceAnimName(InAnimName)
   self.ReduceAnimName = InAnimName
 end
+
 function WBP_SingleGridBar_C:PlayReduceAnim(OldPercent, TargetPercent)
   if UE.UKismetStringLibrary.IsEmpty(self.ReduceAnimName) then
     self.ReduceFXWidget:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -77,6 +84,7 @@ function WBP_SingleGridBar_C:PlayReduceAnim(OldPercent, TargetPercent)
   self.ReduceFXWidget:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.ReduceFXWidget:PlayReduceAnim(self.ReduceAnimName)
 end
+
 function WBP_SingleGridBar_C:ShowOrHideVirtualWhiteBar(IsShow)
   if not self.IsShowVirtualWhite then
     UpdateVisibility(self.Img_VirtualWhite, false)
@@ -84,21 +92,26 @@ function WBP_SingleGridBar_C:ShowOrHideVirtualWhiteBar(IsShow)
   end
   UpdateVisibility(self.Img_VirtualWhite, IsShow)
 end
+
 function WBP_SingleGridBar_C:UpdateVirtualWhiteBarValue(VirtualWhiteBarValue)
   if not self.IsShowVirtualWhite then
     return
   end
   self:UpdatePanelSize(self.Img_VirtualWhite, VirtualWhiteBarValue)
 end
+
 function WBP_SingleGridBar_C:SetIsShowVirtualWhite(InIsShowVirtualWhite)
   self.IsShowVirtualWhite = InIsShowVirtualWhite
 end
+
 function WBP_SingleGridBar_C:SetGetSpecialMaxAttributeValue(Func)
   self.OnGetSpecialMaxAttributeValue = Func
 end
+
 function WBP_SingleGridBar_C:UpdateVirtualImg(CurValue)
   self:UpdatePanelSize(self.VirtualBar, CurValue)
 end
+
 function WBP_SingleGridBar_C:UpdateBarStyle(FillObj, BottomObj, VirtualObj, SpecialObj)
   local Brush = UE.FSlateBrush()
   local Margin = UE.FMargin()
@@ -118,22 +131,28 @@ function WBP_SingleGridBar_C:UpdateBarStyle(FillObj, BottomObj, VirtualObj, Spec
   Brush.ResourceObject = SpecialObj
   self.Img_SpecialFill:SetBrush(Brush)
 end
+
 function WBP_SingleGridBar_C:UpdateBarColor(FillColor, VirtualColor, BottomColor, SpecialFillColor)
   self.FillImg:SetColorAndOpacity(FillColor)
   self.VirtualBar:SetColorAndOpacity(VirtualColor)
   self.BackGroundImg:SetColorAndOpacity(BottomColor)
   self.Img_SpecialFill:SetColorAndOpacity(SpecialFillColor)
 end
+
 function WBP_SingleGridBar_C:UpdateReduceFXWidgetColor(InColor)
   self.ReduceFXWidget:UpdateFXImgColor(InColor)
 end
+
 function WBP_SingleGridBar_C:UpdateVirtualWhiteColor(VirtualWhiteColor)
   self.Img_VirtualWhite:SetColorAndOpacity(VirtualWhiteColor)
 end
+
 function WBP_SingleGridBar_C:Show()
   self:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
 end
+
 function WBP_SingleGridBar_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return WBP_SingleGridBar_C

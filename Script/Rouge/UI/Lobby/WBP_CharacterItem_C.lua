@@ -1,10 +1,13 @@
 local rapidjson = require("rapidjson")
 local WBP_CharacterItem_C = UnLua.Class()
+
 function WBP_CharacterItem_C:Construct()
 end
+
 function WBP_CharacterItem_C:Destruct()
   self:UnInit()
 end
+
 function WBP_CharacterItem_C:Init(ResourceId, CharacterId)
   self.ResourceId = ResourceId
   self.CharacterId = CharacterId
@@ -14,14 +17,17 @@ function WBP_CharacterItem_C:Init(ResourceId, CharacterId)
   self:UpdateLock()
   self:UpdateSelect(false)
 end
+
 function WBP_CharacterItem_C:UnInit()
   self.ResourceId = -1
   self.CharacterId = -1
 end
+
 function WBP_CharacterItem_C:UpdateStar()
   local Level = DataMgr.GetHeroLevelByHeroId(self.CharacterId)
   self.WBP_SoulCoreStarWidget:UpdateStar(Level)
 end
+
 function WBP_CharacterItem_C:UpdateItem()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -47,10 +53,12 @@ function WBP_CharacterItem_C:UpdateItem()
   end
   SetImageBrushByPath(self.URGImageIcon, IconPath)
 end
+
 function WBP_CharacterItem_C:UpdateUnLockOpacity(Opacity)
   self.CanvasPanelRoot:SetRenderOpacity(Opacity)
   self.CanvasPanelLock:SetRenderOpacity(Opacity)
 end
+
 function WBP_CharacterItem_C:UpdateLock()
   local bIsUnLock = LogicRole.CheckCharacterUnlock(self.CharacterId)
   if bIsUnLock then
@@ -61,6 +69,7 @@ function WBP_CharacterItem_C:UpdateLock()
     self.CanvasPanelLock:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function WBP_CharacterItem_C:UpdateSelect(bIsSelected)
   if bIsSelected then
     self.URGImageSelect:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -68,4 +77,5 @@ function WBP_CharacterItem_C:UpdateSelect(bIsSelected)
     self.URGImageSelect:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 return WBP_CharacterItem_C

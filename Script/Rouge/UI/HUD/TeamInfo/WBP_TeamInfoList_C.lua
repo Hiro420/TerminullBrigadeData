@@ -1,4 +1,5 @@
 local WBP_TeamInfoList_C = UnLua.Class()
+
 function WBP_TeamInfoList_C:Construct()
   self.Overridden.Construct(self)
   self:SetRevivalInfo()
@@ -8,6 +9,7 @@ function WBP_TeamInfoList_C:Construct()
   }, 1.0, true)
   ListenObjectMessage(nil, GMP.MSG_Game_PlayerRevivalSuccess, self, self.Bind_MSG_Game_PlayerRevivalSuccess)
 end
+
 function WBP_TeamInfoList_C:InitTeamInfoList()
   local TutorialLevelSubSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGTutorialLevelSystem:StaticClass())
   if TutorialLevelSubSystem and TutorialLevelSubSystem:IsFreshPlayer() then
@@ -46,12 +48,14 @@ function WBP_TeamInfoList_C:InitTeamInfoList()
     UpdateVisibility(ItemInvalid, false)
   end
 end
+
 function WBP_TeamInfoList_C:UpdateReadyState()
   print("WBP_TeamInfoList_C:UpdateReadyState()")
   for i, SingleWidget in iterator(self.TeamInfoList:GetAllChildren()) do
     SingleWidget:UpdateReadyState()
   end
 end
+
 function WBP_TeamInfoList_C:SetRevivalInfo()
   self.IsTeamRevivalMode = UE.URGLevelLibrary.IsTeamRevivalMode(self)
   if self.IsTeamRevivalMode then
@@ -70,6 +74,7 @@ function WBP_TeamInfoList_C:SetRevivalInfo()
     UpdateVisibility(self.Overlay_TeamRevivalCount, false)
   end
 end
+
 function WBP_TeamInfoList_C:Bind_MSG_Game_PlayerRevivalSuccess(UserId, RevivalCount, RevivalCoinNum)
   if self.IsTeamRevivalMode then
     self.Txt_RevivalTime:SetText(RevivalCount)
@@ -77,8 +82,10 @@ function WBP_TeamInfoList_C:Bind_MSG_Game_PlayerRevivalSuccess(UserId, RevivalCo
     self.RGStateController_EqualToZero:ChangeStatus(StatusStr)
   end
 end
+
 function WBP_TeamInfoList_C:FocusInput()
 end
+
 function WBP_TeamInfoList_C:Destruct()
   self.Overridden.Destruct(self)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TeamTimer) then
@@ -86,4 +93,5 @@ function WBP_TeamInfoList_C:Destruct()
   end
   UnListenObjectMessage(GMP.MSG_Game_PlayerRevivalSuccess, self)
 end
+
 return WBP_TeamInfoList_C

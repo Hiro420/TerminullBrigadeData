@@ -1,14 +1,14 @@
 local battlepass_tbbattlepass = {
   [1] = {
     BattlePassID = 1,
-    Name = "\229\142\159\231\136\134\231\130\185",
+    NameLocMeta = NSLOCTEXT("battlepass_TBBattlePass", "Name_1", "\229\142\159\231\136\134\231\130\185"),
     PremiumUnlockResourceID = 300304,
     UltraUnlockResourceID = 300305,
     PremiumToUltraResourceID = 300306,
     BattlePassExpID = 99008,
     BattlePassGoodsID = 990080,
     StartTime = "2025-06-02 00:00:00",
-    EndTime = "2029-06-01 00:00:00",
+    EndTime = "2025-09-24 05:00:00",
     IconPath = "",
     NormalDescLocMeta = NSLOCTEXT("battlepass_TBBattlePass", "NormalDesc_1", "\233\171\152\231\186\167\231\137\136\233\128\154\232\161\140\232\175\129\229\165\150\229\138\177"),
     UltraDescLocMeta = NSLOCTEXT("battlepass_TBBattlePass", "UltraDesc_1", "\229\133\184\232\151\143\231\137\136\233\128\154\232\161\140\232\175\129\229\165\150\229\138\177"),
@@ -22,7 +22,7 @@ local battlepass_tbbattlepass = {
   },
   [2] = {
     BattlePassID = 2,
-    Name = "\232\182\133\232\189\189\233\128\154\232\161\140\232\175\129",
+    NameLocMeta = NSLOCTEXT("battlepass_TBBattlePass", "Name_2", "\232\182\133\232\189\189\233\128\154\232\161\140\232\175\129"),
     PremiumUnlockResourceID = 300301,
     UltraUnlockResourceID = 300302,
     PremiumToUltraResourceID = 300303,
@@ -41,6 +41,7 @@ local battlepass_tbbattlepass = {
   }
 }
 local LinkTb = {
+  Name = "NameLocMeta",
   NormalDesc = "NormalDescLocMeta",
   UltraDesc = "UltraDescLocMeta"
 }

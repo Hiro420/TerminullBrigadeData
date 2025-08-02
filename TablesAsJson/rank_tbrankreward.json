@@ -1,5 +1,8 @@
 ﻿{
   "1": {
+    "boardMeta": "{\"gameMode\":1001,\"gameWorld\":23}",
+    "boardType": 1,
+    "rewardID": 1,
     "boardReward": {
       "1": {
         "rankPhase": {
@@ -81,9 +84,6 @@
           }
         }
       }
-    },
-    "boardMeta": "{\"gameMode\":1001,\"gameWorld\":23}",
-    "rewardID": 1,
-    "boardType": 1
+    }
   }
 }

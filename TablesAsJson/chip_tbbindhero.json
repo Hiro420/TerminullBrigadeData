@@ -1,6 +1,5 @@
 ﻿{
   "1": {
-    "gabage3": {},
     "HeroWeight": {
       "1": {
         "value": 10,
@@ -35,80 +34,81 @@
         "key": 1090
       }
     },
-    "gabage2": {},
+    "gabage3": {},
     "notes": "全英雄池",
-    "ID": 1
+    "ID": 1,
+    "gabage2": {}
   },
   "1010": {
-    "gabage3": {},
     "HeroWeight": {
       "1": {
         "value": 10,
         "key": 1010
       }
     },
-    "gabage2": {},
+    "gabage3": {},
     "notes": "影刃池",
-    "ID": 1010
+    "ID": 1010,
+    "gabage2": {}
   },
   "1060": {
-    "gabage3": {},
     "HeroWeight": {
       "1": {
         "value": 10,
         "key": 1060
       }
     },
-    "gabage2": {},
+    "gabage3": {},
     "notes": "海因克斯",
-    "ID": 1060
+    "ID": 1060,
+    "gabage2": {}
   },
   "1040": {
-    "gabage3": {},
     "HeroWeight": {
       "1": {
         "value": 10,
         "key": 1040
       }
     },
-    "gabage2": {},
+    "gabage3": {},
     "notes": "妮娜",
-    "ID": 1040
+    "ID": 1040,
+    "gabage2": {}
   },
   "1020": {
-    "gabage3": {},
     "HeroWeight": {
       "1": {
         "value": 10,
         "key": 1020
       }
     },
-    "gabage2": {},
+    "gabage3": {},
     "notes": "上校池",
-    "ID": 1020
+    "ID": 1020,
+    "gabage2": {}
   },
   "1000": {
-    "gabage3": {},
     "HeroWeight": {
       "1": {
         "value": 10,
         "key": 1000
       }
     },
-    "gabage2": {},
+    "gabage3": {},
     "notes": "日暮池",
-    "ID": 1000
+    "ID": 1000,
+    "gabage2": {}
   },
   "1030": {
-    "gabage3": {},
     "HeroWeight": {
       "1": {
         "value": 10,
         "key": 1030
       }
     },
-    "gabage2": {},
+    "gabage3": {},
     "notes": "麦克斯",
-    "ID": 1030
+    "ID": 1030,
+    "gabage2": {}
   }
 }

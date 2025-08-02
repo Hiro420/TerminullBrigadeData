@@ -12,6 +12,7 @@ local MakeBinding = function(BindingClass, Args)
   Ret.bOverrideParentBinding = GetBooleanArg(Args, "OverrideParentBinding", true)
   return Ret
 end
+
 local function MakeLuaFunction(Module, Prefix, Handler, No)
   local Name = string.format("%s_%d", Prefix, No)
   if not Module[Name] then
@@ -20,6 +21,7 @@ local function MakeLuaFunction(Module, Prefix, Handler, No)
   end
   return MakeLuaFunction(Module, Prefix, Handler, No + 1)
 end
+
 local Modifiers = {
   "Ctrl",
   "Alt",
@@ -35,6 +37,7 @@ local GetModifierSuffix = function(Args)
   end
   return table.concat(Array, "_")
 end
+
 function M.BindKey(Module, KeyName, KeyEvent, Handler, Args)
   Args = Args or {}
   Module.__UnLuaInputBindings = Module.__UnLuaInputBindings or {}
@@ -63,6 +66,7 @@ function M.BindKey(Module, KeyName, KeyEvent, Handler, Args)
     Manager:Override(Class, "InputAction", FunctionName)
   end)
 end
+
 function M.BindAction(Module, ActionName, KeyEvent, Handler, Args)
   Args = Args or {}
   Module.__UnLuaInputBindings = Module.__UnLuaInputBindings or {}
@@ -84,6 +88,7 @@ function M.BindAction(Module, ActionName, KeyEvent, Handler, Args)
     Manager:Override(Class, "InputAction", FunctionName)
   end)
 end
+
 function M.BindAxis(Module, AxisName, Handler, Args)
   Args = Args or {}
   Module.__UnLuaInputBindings = Module.__UnLuaInputBindings or {}
@@ -104,6 +109,7 @@ function M.BindAxis(Module, AxisName, Handler, Args)
     Manager:Override(Class, "InputAxis", FunctionName)
   end)
 end
+
 function M.PerformBindings(Module, Manager, Class)
   local Bindings = Module.__UnLuaInputBindings
   if not Bindings then
@@ -115,4 +121,5 @@ function M.PerformBindings(Module, Manager, Class)
     end, Manager, Class)
   end
 end
+
 return M

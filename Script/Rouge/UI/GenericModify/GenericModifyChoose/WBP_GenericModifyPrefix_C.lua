@@ -1,4 +1,5 @@
 local WBP_GenericModifyPrefix_C = UnLua.Class()
+
 function WBP_GenericModifyPrefix_C:InitGenericModifyPrefix(ModifyId)
   local index = 0
   self.VerticalBox_34:ClearChildren()
@@ -51,4 +52,5 @@ function WBP_GenericModifyPrefix_C:InitGenericModifyPrefix(ModifyId)
   end
   HideOtherItem(self.VerticalBox_34, 2)
 end
+
 return WBP_GenericModifyPrefix_C

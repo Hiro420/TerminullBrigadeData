@@ -1,25 +1,31 @@
 local ViewSetRoleItem = UnLua.Class()
 local ProficiencyData = require("Modules.Proficiency.ProficiencyData")
+
 function ViewSetRoleItem:Construct()
   self.OnRGToggleStateChanged:Bind(self, self.BindOnChangeRoleItemClicked)
   self.MainButton.OnHovered:Add(self, self.BindOnMainButtonHovered)
   self.MainButton.OnUnhovered:Add(self, self.BindOnMainButtonUnhovered)
 end
+
 function ViewSetRoleItem:BindOnMainButtonClicked()
   EventSystem.Invoke(EventDef.Lobby.RoleItemClicked, self.CharacterId)
 end
+
 function ViewSetRoleItem:BindOnMainButtonHovered()
   UpdateVisibility(self.HoveredPanel, true)
 end
+
 function ViewSetRoleItem:BindOnMainButtonUnhovered()
   UpdateVisibility(self.HoveredPanel, false)
 end
+
 function ViewSetRoleItem:BindOnChangeRoleItemClicked(bIsChecked, CharacterId)
   if bIsChecked then
     self:SetSelectStatus(self.CharacterId == CharacterId)
     self.LastSelectCharacterId = CharacterId
   end
 end
+
 function ViewSetRoleItem:RefreshProfyData()
   if not self.CharacterId then
     return
@@ -42,6 +48,7 @@ function ViewSetRoleItem:RefreshProfyData()
     UpdateVisibility(self.URGImage_BigAward_Recieved, false)
   end
 end
+
 function ViewSetRoleItem:SetSelectStatus(IsSelect)
   self:StopAllAnimations()
   local EndTime = self.Ani_click_out:GetEndTime()
@@ -60,6 +67,7 @@ function ViewSetRoleItem:SetSelectStatus(IsSelect)
     end
   end
 end
+
 function ViewSetRoleItem:InitViewSetRoleItem(HeroId, bIsShowEquiped, bIsSelect, RedDotClass)
   self:OnSelect(false)
   self:SetVisibility(UE.ESlateVisibility.Visible)
@@ -76,8 +84,10 @@ function ViewSetRoleItem:InitViewSetRoleItem(HeroId, bIsShowEquiped, bIsSelect, 
     self.WBP_RedDotView:ChangeRedDotIdByTag(self.CharacterId)
   end
 end
+
 function ViewSetRoleItem:InitRedDotInfo()
 end
+
 function ViewSetRoleItem:UpdatePlayerImage(HeroId)
   local CharacterInfo = LogicRole.GetCharacterTableRow(HeroId)
   if not CharacterInfo then
@@ -93,6 +103,7 @@ function ViewSetRoleItem:UpdatePlayerImage(HeroId)
     self.Img_HeadIcon:SetBrush(Brush)
   end
 end
+
 function ViewSetRoleItem:UpdateLockStatus()
   if DataMgr.IsOwnHero(self.CharacterId) then
     self.LockPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -110,6 +121,7 @@ function ViewSetRoleItem:UpdateLockStatus()
     self.Img_HeadIcon:SetRenderOpacity(self.HeadIconLockOpacity)
   end
 end
+
 function ViewSetRoleItem:UpdateEquipStatus(bIsShowEquiped)
   if not bIsShowEquiped then
     local HeroInfo = DataMgr.GetMyHeroInfo()
@@ -120,9 +132,11 @@ function ViewSetRoleItem:UpdateEquipStatus(bIsShowEquiped)
     end
   end
 end
+
 function ViewSetRoleItem:Hide()
   self.CharacterId = 0
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   EventSystem.RemoveListenerNew(EventDef.Lobby.UpdateMyHeroInfo, self, self.RefreshProfyData)
 end
+
 return ViewSetRoleItem

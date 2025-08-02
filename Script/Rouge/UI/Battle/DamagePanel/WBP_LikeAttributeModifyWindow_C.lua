@@ -1,9 +1,11 @@
 local WBP_LikeAttributeModifyWindow_C = UnLua.Class()
 local RefuseKeyName = "OKeyEvent"
 local AgreeKeyName = "PKeyEvent"
+
 function WBP_LikeAttributeModifyWindow_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_LikeAttributeModifyWindow_C:OnDisplay()
   self.Overridden.OnDisplay(self)
   self.IsHover = false
@@ -17,15 +19,18 @@ function WBP_LikeAttributeModifyWindow_C:OnDisplay()
     WBP_LikeAttributeModifyWindow_C.BindOnRefuseRequest
   })
 end
+
 function WBP_LikeAttributeModifyWindow_C:OnUnDisplay()
   self.Overridden.OnUnDisplay(self, true)
   StopListeningForInputAction(self, AgreeKeyName, UE.EInputEvent.IE_Pressed)
   StopListeningForInputAction(self, RefuseKeyName, UE.EInputEvent.IE_Pressed)
   self.RequestDataList = {}
 end
+
 function WBP_LikeAttributeModifyWindow_C:InitByRequestData(RequestData)
   self:AddRequestData(RequestData)
 end
+
 function WBP_LikeAttributeModifyWindow_C:AddRequestData(RequestData)
   table.insert(self.RequestDataList, RequestData)
   self:UpdateByRequestDataList()
@@ -34,6 +39,7 @@ function WBP_LikeAttributeModifyWindow_C:AddRequestData(RequestData)
     LastWindowItem:PlayInAnimation()
   end
 end
+
 function WBP_LikeAttributeModifyWindow_C:RemoveFirstRequestData()
   local FirstWindowItem = self.VerticalBox_LikeInfoList:GetChildAt(0)
   local StartAniTime = GetCurrentUTCTimestamp()
@@ -52,6 +58,7 @@ function WBP_LikeAttributeModifyWindow_C:RemoveFirstRequestData()
     end)
   end
 end
+
 function WBP_LikeAttributeModifyWindow_C:UpdateByRequestDataList(bIsRemoveFirst)
   for i, v in ipairs(self.RequestDataList) do
     local LikeWindowItem = GetOrCreateItem(self.VerticalBox_LikeInfoList, i, self.WBP_LikeAttributeModifyWindowItem:GetClass())
@@ -66,10 +73,12 @@ function WBP_LikeAttributeModifyWindow_C:UpdateByRequestDataList(bIsRemoveFirst)
   self.CountDownTime = self.RequestData.CountDownTime
   self:UpdateShowModelByMouse(true)
 end
+
 function WBP_LikeAttributeModifyWindow_C:OnMouseEnter(MyGeometry, MouseEvent)
   self.IsHover = true
   self:ChangeShowModel("Main")
 end
+
 function WBP_LikeAttributeModifyWindow_C:OnMouseLeave(MyGeometry, MouseEvent)
   self.IsHover = false
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
@@ -77,6 +86,7 @@ function WBP_LikeAttributeModifyWindow_C:OnMouseLeave(MyGeometry, MouseEvent)
     self:ChangeShowModel("Mini")
   end
 end
+
 function WBP_LikeAttributeModifyWindow_C:LuaTick(DeltaTime)
   if not self.RequestData then
     return
@@ -91,12 +101,14 @@ function WBP_LikeAttributeModifyWindow_C:LuaTick(DeltaTime)
   end
   self:UpdateShowModelByMouse()
 end
+
 function WBP_LikeAttributeModifyWindow_C:UpdateShowModelByMouse(bForce)
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
   if PC and not self.IsHover then
     self:ChangeShowModel(PC.bShowMouseCursor and "Mini" or "Main", bForce)
   end
 end
+
 function WBP_LikeAttributeModifyWindow_C:BindOnAgreeRequest()
   if self.RequestData == nil then
     print("ywtao, WBP_LikeAttributeModifyWindow_C:BindOnAgreeRequest, RequestData is nil")
@@ -105,6 +117,7 @@ function WBP_LikeAttributeModifyWindow_C:BindOnAgreeRequest()
   UE.URGGameplayLibrary.ConfirmRequestItem(self, self.RequestData.TargetUserId)
   self:RemoveFirstRequestData()
 end
+
 function WBP_LikeAttributeModifyWindow_C:BindOnRefuseRequest()
   if self.RequestData == nil then
     print("ywtao, WBP_LikeAttributeModifyWindow_C:BindOnRefuseRequest, RequestData is nil")
@@ -114,6 +127,7 @@ function WBP_LikeAttributeModifyWindow_C:BindOnRefuseRequest()
   PlayVoice("Voice.Attributemodify.Refuse", UE.UGameplayStatics.GetPlayerCharacter(self, 0), self:GetPlayerControllerByUserId(self.RequestData.FromUserId))
   self:RemoveFirstRequestData()
 end
+
 function WBP_LikeAttributeModifyWindow_C:ChangeShowModel(ShowModel, bForce)
   if not bForce and self.ShowModel == ShowModel then
     return
@@ -129,6 +143,7 @@ function WBP_LikeAttributeModifyWindow_C:ChangeShowModel(ShowModel, bForce)
     end
   end
 end
+
 function WBP_LikeAttributeModifyWindow_C:GetPlayerStateByUserId(UserId)
   local GS = UE.UGameplayStatics.GetGameState(self)
   if not GS then
@@ -141,6 +156,7 @@ function WBP_LikeAttributeModifyWindow_C:GetPlayerStateByUserId(UserId)
   end
   return nil
 end
+
 function WBP_LikeAttributeModifyWindow_C:GetPlayerControllerByUserId(UserId)
   local PC
   local PS = self:GetPlayerStateByUserId(UserId)
@@ -153,4 +169,5 @@ function WBP_LikeAttributeModifyWindow_C:GetPlayerControllerByUserId(UserId)
   end
   return PC
 end
+
 return WBP_LikeAttributeModifyWindow_C

@@ -1,12 +1,7 @@
 ﻿{
   "1": {
     "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv2.Icon_FamilyHeirloom_Lv2",
-    "CostResources": {
-      "1": {
-        "value": 1,
-        "key": 6201015
-      }
-    },
+    "ID": 101,
     "ParamList": {},
     "GiftID": 6201012,
     "LinkDescLocMeta": {
@@ -16,16 +11,16 @@
     },
     "Level": 2,
     "LinkId": "1012",
-    "ID": 101
+    "CostResources": {
+      "1": {
+        "key": 6201015,
+        "value": 1
+      }
+    }
   },
   "2": {
     "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv3.Icon_FamilyHeirloom_Lv3",
-    "CostResources": {
-      "1": {
-        "value": 1,
-        "key": 6201015
-      }
-    },
+    "ID": 101,
     "ParamList": {},
     "GiftID": 6201013,
     "LinkDescLocMeta": {
@@ -35,16 +30,16 @@
     },
     "Level": 3,
     "LinkId": "1012",
-    "ID": 101
+    "CostResources": {
+      "1": {
+        "key": 6201015,
+        "value": 1
+      }
+    }
   },
   "3": {
     "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv4.Icon_FamilyHeirloom_Lv4",
-    "CostResources": {
-      "1": {
-        "value": 1,
-        "key": 6201015
-      }
-    },
+    "ID": 101,
     "ParamList": {},
     "GiftID": 6201014,
     "LinkDescLocMeta": {
@@ -54,16 +49,16 @@
     },
     "Level": 4,
     "LinkId": "1012",
-    "ID": 101
+    "CostResources": {
+      "1": {
+        "key": 6201015,
+        "value": 1
+      }
+    }
   },
   "4": {
     "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv2.Icon_FamilyHeirloom_Lv2",
-    "CostResources": {
-      "1": {
-        "value": 1,
-        "key": 6203015
-      }
-    },
+    "ID": 1031,
     "ParamList": {},
     "GiftID": 6203012,
     "LinkDescLocMeta": {
@@ -73,16 +68,16 @@
     },
     "Level": 2,
     "LinkId": "1005",
-    "ID": 1031
+    "CostResources": {
+      "1": {
+        "key": 6203015,
+        "value": 1
+      }
+    }
   },
   "5": {
     "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv3.Icon_FamilyHeirloom_Lv3",
-    "CostResources": {
-      "1": {
-        "value": 1,
-        "key": 6203015
-      }
-    },
+    "ID": 1031,
     "ParamList": {},
     "GiftID": 6203013,
     "LinkDescLocMeta": {
@@ -92,16 +87,16 @@
     },
     "Level": 3,
     "LinkId": "1005",
-    "ID": 1031
+    "CostResources": {
+      "1": {
+        "key": 6203015,
+        "value": 1
+      }
+    }
   },
   "6": {
     "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv4.Icon_FamilyHeirloom_Lv4",
-    "CostResources": {
-      "1": {
-        "value": 1,
-        "key": 6203015
-      }
-    },
+    "ID": 1031,
     "ParamList": {},
     "GiftID": 6203014,
     "LinkDescLocMeta": {
@@ -111,6 +106,11 @@
     },
     "Level": 4,
     "LinkId": "1005",
-    "ID": 1031
+    "CostResources": {
+      "1": {
+        "key": 6203015,
+        "value": 1
+      }
+    }
   }
 }

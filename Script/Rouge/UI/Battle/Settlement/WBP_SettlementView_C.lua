@@ -1,3 +1,4 @@
+local ProficiencyData = require("Modules.Proficiency.ProficiencyData")
 local ESettlementViewStatus = {
   FirstView = 1,
   RewardView = 2,
@@ -13,6 +14,8 @@ local ProficiencyData = require("Modules.Proficiency.ProficiencyData")
 local BeginnerGuideData = require("Modules.Beginner.BeginnerGuideData")
 local Settlementconfig = require("GameConfig.Settlement.SettlementConfig")
 local SaveGrowthSnapHandler = require("Protocol.SaveGrowthSnap.SaveGrowthSnapHandler")
+local PrivilegeData = require("Modules.Privilege.PrivilegeData")
+
 function WBP_SettlementView_C:Construct()
   self.Overridden.Construct(self)
   self.MediaPlayer:SetLooping(false)
@@ -49,13 +52,20 @@ function WBP_SettlementView_C:Construct()
   self.StepFadeOutAniPlayed = {}
   self.AsyncLoadingEnd = false
   self.SkinId = -1
+  self.OnToastShowTimer = UE.UKismetSystemLibrary.K2_SetTimerDelegate({
+    self,
+    self.ShowPrivilegeTeamToast
+  }, self.ToastDelayTime, false)
 end
+
 function WBP_SettlementView_C:FocusInput()
   self.Overridden.FocusInput(self)
 end
+
 function WBP_SettlementView_C:CanShowSequence()
   return self.AsyncLoadingEnd
 end
+
 function WBP_SettlementView_C:SpaceKeyDown()
   if self.CurSettleViewStep == ESettleViewStatus.ResultView then
     return
@@ -65,6 +75,7 @@ function WBP_SettlementView_C:SpaceKeyDown()
   end
   self:NextStep()
 end
+
 function WBP_SettlementView_C:EscPressed()
   if self.CurSettleViewStep == ESettleViewStatus.ResultView then
     return
@@ -79,6 +90,7 @@ function WBP_SettlementView_C:EscPressed()
     self:UpdateProgress(-1)
   end
 end
+
 function WBP_SettlementView_C:EscReleased()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.Timer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.Timer)
@@ -87,6 +99,7 @@ function WBP_SettlementView_C:EscReleased()
   self:UpdateProgress(-1)
   self.StartTime = 0
 end
+
 function WBP_SettlementView_C:RefreshProgress()
   if self.StartTime >= SkipInteract then
     if self.CurSettleViewStep == ESettleViewStatus.MvpView and self:CanShowSequence() or self.CurSettleViewStep == ESettleViewStatus.TeamView then
@@ -99,27 +112,33 @@ function WBP_SettlementView_C:RefreshProgress()
     self:UpdateProgress(self.StartTime / SkipInteract)
   end
 end
+
 function WBP_SettlementView_C:UpdateProgress(Percent)
   local Mat = self.URGImageCircle:GetDynamicMaterial()
   if Mat then
     Mat:SetScalarParameterValue("percent", Percent)
   end
 end
+
 function WBP_SettlementView_C:UnfocusInput()
   self.Overridden.UnfocusInput(self)
 end
+
 function WBP_SettlementView_C:OnOpenTalentClick()
   UpdateVisibility(self.WBP_SettlementTalentView, true)
   self.WBP_SettlementTalentView:InitSettlementTalentView()
 end
+
 function WBP_SettlementView_C:OpenSaveGrowthSnap()
   self.WBP_SaveGrowthSnap:ShowSnap()
   EventSystem.Invoke(EventDef.BeginnerGuide.OnClickOpenSnap)
 end
+
 function WBP_SettlementView_C:ShowSettlementPlayerInfoView(PlayerId)
   UpdateVisibility(self.CanvasPanelSkipToEnd, false)
   self.WBP_SettlementPlayerInfoView:InitSettlemntPlayerInfo(PlayerId)
 end
+
 function WBP_SettlementView_C:NextStep()
   if not self.CurSettleViewStep then
     return
@@ -145,10 +164,12 @@ function WBP_SettlementView_C:NextStep()
     end
   end
 end
+
 function WBP_SettlementView_C:ShowInit()
   self.CurSettleViewStep = 0
   self:NextStep()
 end
+
 function WBP_SettlementView_C:ShowMvp()
   local middleRole = LogicSettlement.GetMiddleRole()
   local leftRole = LogicSettlement.GetLeftRole()
@@ -247,15 +268,18 @@ function WBP_SettlementView_C:ShowMvp()
     self:NextStep()
   end
 end
+
 function WBP_SettlementView_C:ExitMvp()
   self.MediaPlayer.OnMediaReachedEnd:Remove(self, self.MediaPlayerFinish)
   self.MediaPlayer:Pause()
   self:FinishSequence()
   UpdateVisibility(self.CanvasPanelMvp, false)
 end
+
 function WBP_SettlementView_C:ExitTeamView()
   UpdateVisibility(self.WBP_SettlementTeamView, false)
 end
+
 function WBP_SettlementView_C:MediaPlayerFinish()
   print("WBP_SettlementView_C:MediaPlayerFinish")
   if self.AkEventName ~= nil or self.AkEventName ~= "" then
@@ -264,6 +288,7 @@ function WBP_SettlementView_C:MediaPlayerFinish()
   end
   self:NextStep()
 end
+
 function WBP_SettlementView_C:ShowResultView()
   self.CurSettleViewStep = ESettleViewStatus.ResultView
   self.SkipWidget:Reset()
@@ -280,9 +305,11 @@ function WBP_SettlementView_C:ShowResultView()
   end
   SaveGrowthSnapHandler.RequestGetGrowthSnapShot()
 end
+
 function WBP_SettlementView_C:ExitResultView()
   UpdateVisibility(self.CanvasPanelText, false)
 end
+
 function WBP_SettlementView_C:ShowTeamView()
   print("WBP_SettlementView_C:ShowTeamView", LogicSettlement:CheckIsTeamClearance())
   self.MediaPlayer.OnMediaReachedEnd:Remove(self, self.MediaPlayerFinish)
@@ -301,6 +328,7 @@ function WBP_SettlementView_C:ShowTeamView()
     self:NextStep()
   end
 end
+
 function WBP_SettlementView_C:PlaySeq(SoftObjPath)
   local LevelSequenceAsset = UE.URGBlueprintLibrary.TryLoadSoftPath(SoftObjPath)
   if not LevelSequenceAsset then
@@ -315,6 +343,7 @@ function WBP_SettlementView_C:PlaySeq(SoftObjPath)
   end
   self.SequencePlayerBG:Play()
 end
+
 function WBP_SettlementView_C:PlayMovieSequence(skinId, heirloogMediaData)
   local seq = LogicRole.GetSkinSequence(skinId)
   if not seq then
@@ -348,6 +377,7 @@ function WBP_SettlementView_C:PlayMovieSequence(skinId, heirloogMediaData)
   self:ShowOrHideLevel(skinId)
   UpdateVisibility(self.Mask, true)
 end
+
 function WBP_SettlementView_C:StartShowSequence()
   if not self:CanShowSequence() then
     return
@@ -393,6 +423,7 @@ function WBP_SettlementView_C:StartShowSequence()
   end
   self:PlayAnimation(self.FadeOut)
 end
+
 function WBP_SettlementView_C:ShowOrHideLevel(SkinId)
   if self.SequenceLevel then
     self.SequenceLevel:SetShouldBeLoaded(false)
@@ -407,10 +438,12 @@ function WBP_SettlementView_C:ShowOrHideLevel(SkinId)
     end
   end
 end
+
 function WBP_SettlementView_C:LevelSequenceFinish()
   self:FinishSequence()
   self:NextStep()
 end
+
 function WBP_SettlementView_C:FinishSequence()
   if self.AsyncLoadSequenceHandleID and self.AsyncLoadSequenceHandleID > 0 then
     UE.URGAssetManager.CancelAsyncLoad(self.AsyncLoadSequenceHandleID)
@@ -430,6 +463,7 @@ function WBP_SettlementView_C:FinishSequence()
     self:ShowOrHideLevel()
   end
 end
+
 function WBP_SettlementView_C:ShowOrHideCurrentLevel(Visible)
   if not Visible then
     self:SetLevelStreamVis("World'/Game/Rouge/Map/MetaverseCenter/La_MetaverseCenter_Finish_1.La_MetaverseCenter_Finish_1'", false)
@@ -442,6 +476,7 @@ function WBP_SettlementView_C:ShowOrHideCurrentLevel(Visible)
     self:SetLevelStreamVis("World'/Game/Rouge/Map/MetaverseCenter/La_MetaverseCenter_Finish_2.La_MetaverseCenter_Finish_2'", true)
   end
 end
+
 function WBP_SettlementView_C:SetLevelStreamVis(LevelName, bVisible)
   local softPtr = MakeStringToSoftObjectReference(LevelName)
   local TargetStreamLevel = UE.ULevelToolBPLibrary.ExLoadStreamLevelByObj(GameInstance, softPtr, UE.FTransform())
@@ -449,6 +484,7 @@ function WBP_SettlementView_C:SetLevelStreamVis(LevelName, bVisible)
     TargetStreamLevel:SetShouldBeVisible(bVisible)
   end
 end
+
 function WBP_SettlementView_C:UpdateRoleVisibility()
   local SelfPlayerId = LogicSettlement:GetOrInitSelfPlayerId()
   local playerInfo = LogicSettlement:GetPlayerInfoByPlayerId(SelfPlayerId)
@@ -480,6 +516,7 @@ function WBP_SettlementView_C:UpdateRoleVisibility()
     rightRole:SetHiddenInGame(true)
   end
 end
+
 function WBP_SettlementView_C:ShowIncomeView()
   self.SaveGrowthSnapTimer = 0
   self:FinishSequence()
@@ -507,6 +544,7 @@ function WBP_SettlementView_C:ShowIncomeView()
   self.WBP_SettleInComeView:ShowInComeView(self)
   self.bAlreadyPlaySeq = true
 end
+
 function WBP_SettlementView_C:ShowWeaponInfo(bIsShow, PresetWeaponId, PresetWeaponItem)
   UpdateVisibility(self.WBP_LobbyWeaponDisplayInfo, bIsShow)
   if bIsShow then
@@ -530,10 +568,12 @@ function WBP_SettlementView_C:ShowWeaponInfo(bIsShow, PresetWeaponId, PresetWeap
     end
   end
 end
+
 function WBP_SettlementView_C:OnTeamViewFinish()
   self:ExitTeamView()
   self:ShowIncomeView()
 end
+
 function WBP_SettlementView_C:ShowSettleTxt()
   local tagName = ""
   if LogicSettlement:GetClearanceStatus() == SettlementStatus.Finish then
@@ -546,6 +586,7 @@ function WBP_SettlementView_C:ShowSettleTxt()
     actorItem:SetActorHiddenInGame(false)
   end
 end
+
 function WBP_SettlementView_C:HideSettleTxt()
   local tagName = ""
   if LogicSettlement:GetClearanceStatus() == SettlementStatus.Finish then
@@ -558,6 +599,7 @@ function WBP_SettlementView_C:HideSettleTxt()
     actorItem:SetActorHiddenInGame(true)
   end
 end
+
 function WBP_SettlementView_C:Destruct()
   EventSystem.RemoveListenerNew(EventDef.Settlement.ShowSettleTxt, self, self.ShowSettleTxt)
   EventSystem.RemoveListenerNew(EventDef.Settlement.HideSettleTxt, self, self.HideSettleTxt)
@@ -567,6 +609,7 @@ function WBP_SettlementView_C:Destruct()
   self.BP_ButtonWithSoundTalent.OnClicked:Remove(self, self.OnOpenTalentClick)
   self.MediaPlayer.OnMediaReachedEnd:Remove(self, self.MediaPlayerFinish)
 end
+
 function WBP_SettlementView_C:LuaTick(InDeltaTime)
   if self.CurSettleViewStep and SettlementViewStepInfo[self.CurSettleViewStep] then
     self.StepTimer = self.StepTimer + InDeltaTime
@@ -620,6 +663,7 @@ function WBP_SettlementView_C:LuaTick(InDeltaTime)
     end
   end
 end
+
 function WBP_SettlementView_C:ShowOrHideRoleLight(bIsShow)
   local middleRole = LogicSettlement.GetMiddleRole()
   local leftRole = LogicSettlement.GetLeftRole()
@@ -652,4 +696,51 @@ function WBP_SettlementView_C:ShowOrHideRoleLight(bIsShow)
     end
   end
 end
+
+function WBP_SettlementView_C:ShowPrivilegeTeamToast()
+  local GameLevelSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGGameLevelSystem:StaticClass())
+  local SelfBenefitRepList = {}
+  local TeamBenefitRepList = {}
+  if GameLevelSystem and GameLevelSystem.WorldInfo.BenefitRepDatas then
+    for i, BenefitRepData in iterator(GameLevelSystem.WorldInfo.BenefitRepDatas) do
+      if tostring(BenefitRepData.MyUser) == DataMgr.GetUserId() then
+        for PrivilegeIndex, PriviligeInfo in iterator(BenefitRepData.Rows) do
+          if tostring(PriviligeInfo.FromUser) == DataMgr.GetUserId() then
+            table.insert(SelfBenefitRepList, PriviligeInfo.RowId)
+          elseif TeamBenefitRepList[PriviligeInfo.RowId] then
+            table.insert(TeamBenefitRepList[PriviligeInfo.RowId], DataMgr.TeamMemberNameList[tostring(PriviligeInfo.FromUser)])
+          else
+            local TeamMembers = {
+              DataMgr.TeamMemberNameList[tostring(PriviligeInfo.FromUser)]
+            }
+            TeamBenefitRepList[PriviligeInfo.RowId] = TeamMembers
+          end
+        end
+        break
+      end
+    end
+    for TeamBenefitRepId, TeamMembersList in pairs(TeamBenefitRepList) do
+      if table.Contain(SelfBenefitRepList, TeamBenefitRepId) then
+      else
+        local result, rowinfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, PrivilegeData:GetResIdByPrivilegeId(TeamBenefitRepId))
+        if result then
+          if 1 == #TeamMembersList then
+            ShowWaveWindow(306101, {
+              TeamMembersList[1],
+              "",
+              rowinfo.Name
+            })
+          elseif 2 == #TeamMembersList then
+            ShowWaveWindow(306101, {
+              TeamMembersList[1],
+              "," .. TeamMembersList[2],
+              rowinfo.Name
+            })
+          end
+        end
+      end
+    end
+  end
+end
+
 return WBP_SettlementView_C

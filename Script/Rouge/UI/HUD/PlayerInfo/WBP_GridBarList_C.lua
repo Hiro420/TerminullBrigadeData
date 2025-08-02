@@ -1,8 +1,10 @@
 local WBP_GridBarList_C = UnLua.Class()
 local ListContainer = require("Rouge.UI.Common.ListContainer")
+
 function WBP_GridBarList_C:Construct()
   self.OldValue = 0
 end
+
 function WBP_GridBarList_C:InitInfo(Character)
   local Quality = BattleUIScalability:GetGridBarScalability()
   self.UIQuality = Quality
@@ -41,6 +43,7 @@ function WBP_GridBarList_C:InitInfo(Character)
   ListenObjectMessage(nil, GMP.MSG_World_OnAttributeModifyCacheAdded, self, self.OnAttributeModifyCacheAdded)
   ListenObjectMessage(nil, GMP.MSG_World_OnAttributeModifyCacheRemove, self, self.OnAttributeModifyCacheRemove)
 end
+
 function WBP_GridBarList_C:RefreshWidgetInfo(Character)
   if self.OwningCharacter ~= Character and Character and Character.CoreComponent then
     Character.CoreComponent:BindAttributeChanged(self.Attribute, {
@@ -59,6 +62,7 @@ function WBP_GridBarList_C:RefreshWidgetInfo(Character)
   self.OwningCharacter = Character
   self.IsMoveVirtualBar = false
 end
+
 function WBP_GridBarList_C:OnAttributeModifyCacheAdded(AttributeCacheModifyData)
   if UE.UAbilitySystemBlueprintLibrary.EqualEqual_GameplayAttributeGameplayAttribute(AttributeCacheModifyData.ConfigData.Attribute, self.Attribute) or UE.UAbilitySystemBlueprintLibrary.EqualEqual_GameplayAttributeGameplayAttribute(AttributeCacheModifyData.ConfigData.Attribute, self.MaxAttribute) then
     self.AttributeModifyCacheList:Add(AttributeCacheModifyData.ModifyID, AttributeCacheModifyData)
@@ -66,6 +70,7 @@ function WBP_GridBarList_C:OnAttributeModifyCacheAdded(AttributeCacheModifyData)
     self.IsUpdateAttributeCache = true
   end
 end
+
 function WBP_GridBarList_C:OnAttributeModifyCacheRemove(AttributeCacheModifyData)
   if UE.UAbilitySystemBlueprintLibrary.EqualEqual_GameplayAttributeGameplayAttribute(AttributeCacheModifyData.ConfigData.Attribute, self.Attribute) or UE.UAbilitySystemBlueprintLibrary.EqualEqual_GameplayAttributeGameplayAttribute(AttributeCacheModifyData.ConfigData.Attribute, self.MaxAttribute) then
     self.AttributeModifyCacheList:Remove(AttributeCacheModifyData.ModifyID)
@@ -83,6 +88,7 @@ function WBP_GridBarList_C:OnAttributeModifyCacheRemove(AttributeCacheModifyData
     end
   end
 end
+
 function WBP_GridBarList_C:BindOnAttributeChanged(NewValue, OldValue)
   if NewValue == OldValue and NewValue == self.CurrentAttributeValue then
     return
@@ -108,13 +114,16 @@ function WBP_GridBarList_C:BindOnAttributeChanged(NewValue, OldValue)
     self:UpdateVirtualWhiteValue(OldValue, NewValue)
   end
 end
+
 function WBP_GridBarList_C:BindOnMaxAttributeChanged(NewValue, OldValue)
   self:UpdateBarGrid(self.BarLength, self.BarHeight)
 end
+
 function WBP_GridBarList_C:BindOnSpecialAttributeChanged(NewValue, OldValue)
   self:UpdateBarGrid(self.BarLength, self.BarHeight)
   self:BindOnAttributeChanged(self:GetAttributeValue(), self:GetAttributeValue() - (NewValue - OldValue))
 end
+
 function WBP_GridBarList_C:SetBarValue(NewValue, OldValue)
   local AllChildren = self.GridList:GetAllChildren()
   for i, SingleItem in pairs(AllChildren) do
@@ -122,6 +131,7 @@ function WBP_GridBarList_C:SetBarValue(NewValue, OldValue)
   end
   self.UpdateVirtualImg:Broadcast(NewValue)
 end
+
 function WBP_GridBarList_C:UpdateVirtualWhiteValue(OldValue, NewValue)
   local DifferenceValue = NewValue - OldValue
   if DifferenceValue < 0 or self.IsNeedRecoverVirtualWhite then
@@ -185,6 +195,7 @@ function WBP_GridBarList_C:UpdateVirtualWhiteValue(OldValue, NewValue)
     self:EndVirtualWhiteAnim()
   end
 end
+
 function WBP_GridBarList_C:DelayStartPlayVirtualWhiteAnim()
   if self.VirtualWhiteDuration <= 0.0 then
     self:StartPlayVirtualWhiteAnim()
@@ -197,6 +208,7 @@ function WBP_GridBarList_C:DelayStartPlayVirtualWhiteAnim()
     }, self.VirtualWhiteDuration, false)
   end
 end
+
 function WBP_GridBarList_C:StartPlayVirtualWhiteAnim()
   if self.UIQuality == UIQuality.LOW then
     self:EndVirtualWhiteAnim()
@@ -205,6 +217,7 @@ function WBP_GridBarList_C:StartPlayVirtualWhiteAnim()
   self.VirtualWhiteAnimTime = 0
   self.IsPlayVirtualWhiteAnim = true
 end
+
 function WBP_GridBarList_C:UpdateVirtualWhiteAnim(InDeltaTime)
   self.VirtualWhiteAnimTime = self.VirtualWhiteAnimTime + InDeltaTime
   local MinTime, MaxTime = self.VirtualWhiteAnimCurve:GetTimeRange()
@@ -224,6 +237,7 @@ function WBP_GridBarList_C:UpdateVirtualWhiteAnim(InDeltaTime)
     end
   end
 end
+
 function WBP_GridBarList_C:EndVirtualWhiteAnim()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.VirtualWhiteTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.VirtualWhiteTimer)
@@ -238,6 +252,7 @@ function WBP_GridBarList_C:EndVirtualWhiteAnim()
   end
   self.TargetVirtualWhiteValue = nil
 end
+
 function WBP_GridBarList_C:StartPlayVirtualBarAnim(Difference)
   if not self.IsExecuteVirtualLogic then
     return
@@ -253,6 +268,7 @@ function WBP_GridBarList_C:StartPlayVirtualBarAnim(Difference)
     self.Speed = math.abs(Difference) / (self.VirtualChangeTotalTime / self.VirtualChangeInterval)
   end
 end
+
 function WBP_GridBarList_C:UpdateVirtualBarAnimValue(AppointValue)
   local TargetValue = self.OldValue - self.Speed
   if AppointValue then
@@ -267,12 +283,15 @@ function WBP_GridBarList_C:UpdateVirtualBarAnimValue(AppointValue)
   end
   self.UpdateVirtualImg:Broadcast(TargetValue)
 end
+
 function WBP_GridBarList_C:GetAttributeValue()
   return self:GetTargetAttributeValue(self.Attribute) + self:GetTargetAttributeValue(self.SpecialAttribute)
 end
+
 function WBP_GridBarList_C:GetMaxAttributeValue()
   return self:GetTargetAttributeValue(self.MaxAttribute) + self:GetTargetAttributeValue(self.SpecialAttribute)
 end
+
 function WBP_GridBarList_C:SetGetSpecialMaxAttributeValue(Func)
   self.GetSpecialMaxAttributeValue = Func
   local AllChildren = self.GridList:GetAllChildren()
@@ -283,6 +302,7 @@ function WBP_GridBarList_C:SetGetSpecialMaxAttributeValue(Func)
     SingleItem:SetGetSpecialMaxAttributeValue(GetFunc)
   end
 end
+
 function WBP_GridBarList_C:UpdateBarGrid(BarLength, BarHeight)
   self.BarLength = BarLength
   self.BarHeight = BarHeight
@@ -323,6 +343,7 @@ function WBP_GridBarList_C:UpdateBarGrid(BarLength, BarHeight)
     end
   end
 end
+
 function WBP_GridBarList_C:InitBarItemInfo(PosX, SizeX, MinValue, MaxValue)
   local Item = self.ListContainer:GetOrCreateItem()
   if not self.GridList:HasChild(Item) then
@@ -347,6 +368,7 @@ function WBP_GridBarList_C:InitBarItemInfo(PosX, SizeX, MinValue, MaxValue)
     Item.CanPlayReduceAnim = self.CanPlayReduceAnim
   end
 end
+
 function WBP_GridBarList_C:Destruct()
   self.IsInit = false
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.ChangeVirtualTimer) then
@@ -380,4 +402,5 @@ function WBP_GridBarList_C:Destruct()
   UnListenObjectMessage(GMP.MSG_World_OnAttributeModifyCacheAdded, self)
   UnListenObjectMessage(GMP.MSG_World_OnAttributeModifyCacheRemove, self)
 end
+
 return WBP_GridBarList_C

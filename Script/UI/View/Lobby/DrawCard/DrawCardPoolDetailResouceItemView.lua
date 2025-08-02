@@ -1,4 +1,5 @@
 local DrawCardPoolDetailResouceItemView = UnLua.Class()
+
 function DrawCardPoolDetailResouceItemView:Construct()
   self.WBP_Item.OnClicked:Add(self, self.BindOnResouceItemClicked)
   EventSystem.AddListener(self, EventDef.DrawCard.OnChangeDrawCardAppearanceActor, self.BindOnChangeDrawCardAppearanceActor)
@@ -6,6 +7,7 @@ function DrawCardPoolDetailResouceItemView:Construct()
   self.ParentView = nil
   self.ResourceId = nil
 end
+
 function DrawCardPoolDetailResouceItemView:Destruct()
   self.WBP_Item.OnClicked:Remove(self, self.BindOnResouceItemClicked)
   EventSystem.RemoveListener(EventDef.DrawCard.OnChangeDrawCardAppearanceActor, self.BindOnChangeDrawCardAppearanceActor, self)
@@ -13,9 +15,11 @@ function DrawCardPoolDetailResouceItemView:Destruct()
   self.ParentView = nil
   self.ResourceId = nil
 end
+
 function DrawCardPoolDetailResouceItemView:OnListItemObjectSet(ListItemObj)
   self:InitInfo(ListItemObj.ResourceId, ListItemObj.ParentView)
 end
+
 function DrawCardPoolDetailResouceItemView:InitInfo(ResourceId, ParentView)
   self.ParentView = ParentView
   self.ResourceId = ResourceId
@@ -29,12 +33,15 @@ function DrawCardPoolDetailResouceItemView:InitInfo(ResourceId, ParentView)
   self.WBP_Item:SetSel(ParentView.ResourceId == ResourceId)
   self.WBP_Item:SetOwn(ResourceStatus)
 end
+
 function DrawCardPoolDetailResouceItemView:BindOnResouceItemClicked()
   EventSystem.Invoke(EventDef.DrawCard.OnChangeDrawCardAppearanceActor, self.ResourceId)
 end
+
 function DrawCardPoolDetailResouceItemView:BindOnChangeDrawCardAppearanceActor(ResourceId)
   self.WBP_Item:SetSel(self.ResourceId == ResourceId)
 end
+
 function DrawCardPoolDetailResouceItemView:BindOnHeirloomInfoChanged()
   if not self.ResourceId then
     print("DrawCardPoolDetailResouceItemView:BindOnHeirloomInfoChanged self.ResourceId IsNil")
@@ -44,7 +51,9 @@ function DrawCardPoolDetailResouceItemView:BindOnHeirloomInfoChanged()
   local ResourceStatus = DrawCardViewModel:CheckResIsUnLock(self.ResourceId)
   self.WBP_Item:SetOwn(ResourceStatus)
 end
+
 function DrawCardPoolDetailResouceItemView:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return DrawCardPoolDetailResouceItemView

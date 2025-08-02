@@ -1,26 +1,32 @@
 local WBP_SingleRoleItem_C = UnLua.Class()
 local ProficiencyData = require("Modules.Proficiency.ProficiencyData")
+
 function WBP_SingleRoleItem_C:Construct()
   self.MainButton.OnClicked:Add(self, self.BindOnMainButtonClicked)
   self.MainButton.OnHovered:Add(self, self.BindOnMainButtonHovered)
   self.MainButton.OnUnhovered:Add(self, self.BindOnMainButtonUnhovered)
 end
+
 function WBP_SingleRoleItem_C:BindOnMainButtonClicked()
   EventSystem.Invoke(EventDef.Lobby.RoleItemClicked, self.CharacterId)
   NotifyObjectMessage(nil, "Hero.LobbySelect", self.CharacterId)
   self.WBP_RedDotView:BindOnClick()
   self.WBP_RedDotView_Lock:SetNum(0)
 end
+
 function WBP_SingleRoleItem_C:BindOnMainButtonHovered()
   self.HoveredPanel:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
 end
+
 function WBP_SingleRoleItem_C:BindOnMainButtonUnhovered()
   self.HoveredPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_SingleRoleItem_C:BindOnChangeRoleItemClicked(CharacterId)
   self:SetSelectStatus(self.CharacterId == CharacterId)
   self.LastSelectCharacterId = CharacterId
 end
+
 function WBP_SingleRoleItem_C:RefreshProfyData()
   if not self.CharacterId then
     return
@@ -43,6 +49,7 @@ function WBP_SingleRoleItem_C:RefreshProfyData()
     UpdateVisibility(self.URGImage_BigAward_Recieved, false)
   end
 end
+
 function WBP_SingleRoleItem_C:SetSelectStatus(IsSelect)
   if self.Select == IsSelect then
     return
@@ -67,6 +74,7 @@ function WBP_SingleRoleItem_C:SetSelectStatus(IsSelect)
     end
   end
 end
+
 function WBP_SingleRoleItem_C:Show(HeroId, bIsShowEquiped)
   self:SetVisibility(UE.ESlateVisibility.Visible)
   self.CharacterId = HeroId
@@ -84,6 +92,7 @@ function WBP_SingleRoleItem_C:Show(HeroId, bIsShowEquiped)
   end
   self:RefreshProfyData()
 end
+
 function WBP_SingleRoleItem_C:UpdateExpireAt()
   local HeroInfo = DataMgr.GetMyHeroInfo()
   for index, value in ipairs(HeroInfo.heros) do
@@ -94,10 +103,12 @@ function WBP_SingleRoleItem_C:UpdateExpireAt()
     end
   end
 end
+
 function WBP_SingleRoleItem_C:InitRedDotInfo()
   self.WBP_RedDotView:ChangeRedDotIdByTag(self.CharacterId)
   self.WBP_RedDotView_Lock:ChangeRedDotIdByTag(self.CharacterId)
 end
+
 function WBP_SingleRoleItem_C:UpdatePlayerImage(HeroId)
   local CharacterInfo = LogicRole.GetCharacterTableRow(HeroId)
   if not CharacterInfo then
@@ -113,6 +124,7 @@ function WBP_SingleRoleItem_C:UpdatePlayerImage(HeroId)
     self.Img_HeadIcon:SetBrush(Brush)
   end
 end
+
 function WBP_SingleRoleItem_C:UpdateLockStatus()
   if DataMgr.IsOwnHero(self.CharacterId) then
     self.LockPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -126,6 +138,7 @@ function WBP_SingleRoleItem_C:UpdateLockStatus()
     self.RGStateControllerLock:ChangeStatus(ELock.Lock)
   end
 end
+
 function WBP_SingleRoleItem_C:UpdateSelectStatus(bIsShowEquiped)
   if not bIsShowEquiped then
     local HeroInfo = DataMgr.GetMyHeroInfo()
@@ -136,6 +149,7 @@ function WBP_SingleRoleItem_C:UpdateSelectStatus(bIsShowEquiped)
     end
   end
 end
+
 function WBP_SingleRoleItem_C:UpdateSelectStatusToTargetHero(HeroId)
   if self.CharacterId == HeroId then
     self.SelectPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -143,6 +157,7 @@ function WBP_SingleRoleItem_C:UpdateSelectStatusToTargetHero(HeroId)
     self.SelectPanel:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 function WBP_SingleRoleItem_C:UpdateEquipedStatus(bIsShowEquiped)
   if bIsShowEquiped then
     self.SelectPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -165,6 +180,7 @@ function WBP_SingleRoleItem_C:UpdateEquipedStatus(bIsShowEquiped)
     end
   end
 end
+
 function WBP_SingleRoleItem_C:Hide()
   self.WBP_RedDotView:ChangeRedDotIdByTag(-1)
   self.WBP_RedDotView_Lock:ChangeRedDotIdByTag(-1)
@@ -173,4 +189,5 @@ function WBP_SingleRoleItem_C:Hide()
   EventSystem.RemoveListener(EventDef.Lobby.RoleItemClicked, WBP_SingleRoleItem_C.BindOnChangeRoleItemClicked, self)
   EventSystem.RemoveListenerNew(EventDef.Lobby.UpdateMyHeroInfo, self, self.RefreshProfyData)
 end
+
 return WBP_SingleRoleItem_C

@@ -5,34 +5,44 @@ local StringExt = require("Utils.StringExt")
 local RecruitHandler = require("Protocol.Recruit.RecruitHandler")
 local RecruitMainViewModel = CreateDefaultViewModel()
 RecruitMainViewModel.propertyBindings = {}
+
 function RecruitMainViewModel:OnInit()
   self.Super:OnInit()
   EventSystem.AddListenerNew(EventDef.Recruit.GetRecruitTeamList, self, self.GetRecruitTeamList)
 end
+
 function RecruitMainViewModel:OnShutdown()
   self.Super:OnShutdown()
 end
+
 function RecruitMainViewModel:SendApplyRecruitTeam(Branch, TeamID, Version)
   RecruitHandler:SendApplyRecruitTeam(Branch, TeamID, Version)
 end
+
 function RecruitMainViewModel:SendGetRecruitApplyList(TeamID)
   RecruitHandler:SendGetRecruitApplyList(TeamID)
 end
+
 function RecruitMainViewModel:SendGetRecruitTeamList(AutoJoin, Floor, GameMode, WorldID)
   RecruitHandler:SendGetRecruitTeamList(AutoJoin, Floor, GameMode, WorldID)
 end
+
 function RecruitMainViewModel:SendStartRecruit(AutoJoin, Content, TeamID)
   RecruitHandler:SendStartRecruit(AutoJoin, Content, TeamID)
 end
+
 function RecruitMainViewModel:SendStopRecruit(TeamID)
   RecruitHandler:SendStopRecruit(TeamID)
 end
+
 function RecruitMainViewModel:SendAgreeRecruitApply(RoleID, TeamID)
   RecruitHandler:SendAgreeRecruitApply(RoleID, TeamID)
 end
+
 function RecruitMainViewModel:SendRolesGameFloorData(RoleIDs)
   LogicTeam.SendRolesGameFloorData(RoleIDs)
 end
+
 function RecruitMainViewModel:GetRecruitTeamList(TeamList)
   local view = self:GetFirstView()
   if view then
@@ -57,6 +67,7 @@ function RecruitMainViewModel:GetRecruitTeamList(TeamList)
     end)
   end
 end
+
 function RecruitMainViewModel:InitRecruitTeamList()
   self.FilterFloor = LogicTeam.GetFloor()
   self.FilterGameMode = LogicTeam.GetModeId()
@@ -64,8 +75,10 @@ function RecruitMainViewModel:InitRecruitTeamList()
   self.FilterAutoJoin = false
   self:RefreshItemList()
 end
+
 function RecruitMainViewModel:RefreshItemList()
   self:SendGetRecruitTeamList(self.FilterAutoJoin, self.FilterFloor, self.FilterGameMode, self.FilterWorld)
   self:GetFirstView():UpdateFilterInfo(self.FilterGameMode, self.FilterWorld, self.FilterFloor)
 end
+
 return RecruitMainViewModel

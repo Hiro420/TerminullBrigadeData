@@ -4,21 +4,26 @@ local rapidjson = require("rapidjson")
 local StringExt = require("Utils.StringExt")
 local ViewID = {BattlePassSubView = 0, BattlePassTaskView = 1}
 local BattlePassMainViewModel = CreateDefaultViewModel()
+
 function BattlePassMainViewModel:OnInit()
   self.Super.OnInit(self)
   self.SubView = nil
   self:PullBattlePassTaskInfo()
 end
+
 function BattlePassMainViewModel:OnShutdown()
   self.Super.OnShutdown(self)
 end
+
 function BattlePassMainViewModel:Switch(SelectID)
   if SelectID == ViewID.BattlePassSubView then
     self:GetFirstView().WBP_BattlePassSubView:ReOpenSubView()
   end
 end
+
 function BattlePassMainViewModel:InitSubView(BattlePassID)
 end
+
 function BattlePassMainViewModel:PullBattlePassTaskInfo()
   local JsonTable = {}
   local TBBattlePassTask = LuaTableMgr.GetLuaTableByName(TableNames.TBBattlePassTask)
@@ -30,4 +35,5 @@ function BattlePassMainViewModel:PullBattlePassTaskInfo()
   end
   Logic_MainTask.PullTask(JsonTable, false)
 end
+
 return BattlePassMainViewModel

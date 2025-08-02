@@ -7,6 +7,7 @@ local OrderedMap = require("Framework.DataStruct.OrderedMap")
 local SeasonAbilityHandler = require("Protocol.SeasonAbility.SeasonAbilityHandler")
 local SeasonAbilityModule = require("Modules.SeasonAbility.SeasonAbilityModule")
 local WBP_SeasonAbilityPanel = Class(ViewBase)
+
 function WBP_SeasonAbilityPanel:BindClickHandler()
   self.Btn_ChangeHero.OnMainButtonClicked:Add(self, self.BindOnChangeHeroButtonClicked)
   self.Btn_SchemeList.OnClicked:Add(self, self.BindOnSchemeListButtonClicked)
@@ -16,6 +17,7 @@ function WBP_SeasonAbilityPanel:BindClickHandler()
   self.Btn_ExchangeAbilityPoint.OnClicked:Add(self, self.BindOnExchangeAbilityPointButtonClicked)
   self.Btn_Reset.OnClicked:Add(self, self.BindOnResetButtonClicked)
 end
+
 function WBP_SeasonAbilityPanel:UnBindClickHandler()
   self.Btn_ChangeHero.OnMainButtonClicked:Remove(self, self.BindOnChangeHeroButtonClicked)
   self.Btn_SchemeList.OnClicked:Remove(self, self.BindOnSchemeListButtonClicked)
@@ -25,14 +27,17 @@ function WBP_SeasonAbilityPanel:UnBindClickHandler()
   self.Btn_ExchangeAbilityPoint.OnClicked:Remove(self, self.BindOnExchangeAbilityPointButtonClicked)
   self.Btn_Reset.OnClicked:Remove(self, self.BindOnResetButtonClicked)
 end
+
 function WBP_SeasonAbilityPanel:OnInit()
   self.DataBindTable = {}
   self.ViewModel = UIModelMgr:Get("SeasonAbilityViewModel")
   self:BindClickHandler()
 end
+
 function WBP_SeasonAbilityPanel:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_SeasonAbilityPanel:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -60,10 +65,12 @@ function WBP_SeasonAbilityPanel:OnShow(...)
   self:PlayAnimation(self.Ani_in, 0.0, 1, UE.EUMGSequencePlayMode.Forward, 1.0, false)
   self:PlayAnimation(self.Ani_loop, 0.0, 0, UE.EUMGSequencePlayMode.Forward, 1.0, false)
 end
+
 function WBP_SeasonAbilityPanel:InitAbilityPointNumInfo(...)
   local MaxAbilityPointNum = SeasonAbilityData:GetMaxExchangeAbilityPointNum()
   self.Txt_MaxAbilityPointTip:SetText(UE.FTextFormat(self.MaxAbilityPointTipText, MaxAbilityPointNum))
 end
+
 function WBP_SeasonAbilityPanel:RefreshAbilityPointNumInfo(...)
   local CurRemainAbilityPointNum = SeasonAbilityData:GetCurRemainAbilityPointNum(self:GetCurShowHeroId())
   self.Txt_UseableAbilityPointNum:SetText(CurRemainAbilityPointNum)
@@ -79,12 +86,14 @@ function WBP_SeasonAbilityPanel:RefreshAbilityPointNumInfo(...)
   self.Txt_UseableAbilityPointNumInterval:SetColorAndOpacity(Color)
   self.Txt_TotalExchangeAbilityPointNum:SetColorAndOpacity(Color)
 end
+
 function WBP_SeasonAbilityPanel:RefreshSpecialAbilityInfo(...)
   self.Txt_CurSpecialAbilityPoint:SetText(SeasonAbilityData:GetSpecialAbilityCurrentMaxPointNum())
   local SpecialAbilityTable = LuaTableMgr.GetLuaTableByName(TableNames.TBSpecialAbility)
   local LastRowInfo = SpecialAbilityTable[#SpecialAbilityTable]
   self.Txt_MaxSpecialAbilityPoint:SetText(LastRowInfo.SpecialAbilityPointNum)
 end
+
 function WBP_SeasonAbilityPanel:SelectHeroId(HeroId)
   self.CurSelectHeroId = HeroId
   self.ViewModel:SetCurHeroId(HeroId)
@@ -95,6 +104,7 @@ function WBP_SeasonAbilityPanel:SelectHeroId(HeroId)
   end
   self:RefreshHeroInfo()
 end
+
 function WBP_SeasonAbilityPanel:RefreshHeroInfo()
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBHeroMonster, self:GetCurShowHeroId())
   if Result then
@@ -106,6 +116,7 @@ function WBP_SeasonAbilityPanel:RefreshHeroInfo()
   self:RefreshSchemeInfo()
   self:UpdateSaveButtonStatus()
 end
+
 function WBP_SeasonAbilityPanel:RefreshSchemeInfo(...)
   local SeasonAbilityInfo = SeasonAbilityData:GetSeasonAbilityInfo(self:GetCurShowHeroId())
   if SeasonAbilityInfo and SeasonAbilityInfo.seasonAbilities then
@@ -124,6 +135,7 @@ function WBP_SeasonAbilityPanel:RefreshSchemeInfo(...)
   end
   self:InitSchemeList()
 end
+
 function WBP_SeasonAbilityPanel:InitSchemeList(...)
   local SchemeTable = LuaTableMgr.GetLuaTableByName(TableNames.TBSeasonAbilityPresentScheme)
   local Index = 1
@@ -134,6 +146,7 @@ function WBP_SeasonAbilityPanel:InitSchemeList(...)
   end
   HideOtherItem(self.ScrollBox_Scheme, Index)
 end
+
 function WBP_SeasonAbilityPanel:InitItemPanel()
   local CurHeroId = self.ViewModel:GetCurHeroId()
   local TargetRowInfo = self.ViewModel:GetHeroSeasonAbilityRowInfo(CurHeroId)
@@ -159,6 +172,7 @@ function WBP_SeasonAbilityPanel:InitItemPanel()
   self:InitAbilityItemId(self.CanvasPanel_SkillItemPanel, self.CanvasPanel_SkillLinePanel, TableEnums.ENUMAbilityType.Skill, AbilityIdList)
   self:InitAbilityItemId(self.CanvasPanel_SurvivalItemPanel, self.CanvasPanel_SurvivalLinePanel, TableEnums.ENUMAbilityType.Survival, AbilityIdList)
 end
+
 function WBP_SeasonAbilityPanel:InitAbilityItemId(ItemPanel, LinePanel, Type, AbilityIdList)
   local AllChildren = ItemPanel:GetAllChildren()
   local TargetTypeAbilityIdList = AbilityIdList[Type] and AbilityIdList[Type] or {}
@@ -176,6 +190,7 @@ function WBP_SeasonAbilityPanel:InitAbilityItemId(ItemPanel, LinePanel, Type, Ab
     end
   end
 end
+
 function WBP_SeasonAbilityPanel:InitHeroList()
   local AllCharacterList = LogicRole.GetAllCanSelectCharacterList()
   table.sort(AllCharacterList, function(A, B)
@@ -186,6 +201,7 @@ function WBP_SeasonAbilityPanel:InitHeroList()
     self.HeroToIdxOrderMap:Add(v, i)
   end
 end
+
 function WBP_SeasonAbilityPanel:UpdateSaveButtonStatus(...)
   local PreAbilityList = SeasonAbilityData:GetPreAbilityLevelList()
   if table.count(PreAbilityList) > 0 then
@@ -196,12 +212,15 @@ function WBP_SeasonAbilityPanel:UpdateSaveButtonStatus(...)
   end
   UpdateVisibility(self.NS_FX_UI_Btn_loop, table.count(PreAbilityList) > 0)
 end
+
 function WBP_SeasonAbilityPanel:BindOnChangeHeroButtonClicked(...)
   UIMgr:Show(ViewID.UI_ViewSetChangeHeroTip, false, self, self.HeroToIdxOrderMap, nil, true)
 end
+
 function WBP_SeasonAbilityPanel:BindOnSchemeListButtonClicked(...)
   self:SetExpandSchemeListStatus(not self.IsExpand)
 end
+
 function WBP_SeasonAbilityPanel:SetExpandSchemeListStatus(IsExpand)
   self.IsExpand = IsExpand
   UpdateVisibility(self.Overlay_SchemeListPanel, self.IsExpand)
@@ -215,6 +234,7 @@ function WBP_SeasonAbilityPanel:SetExpandSchemeListStatus(IsExpand)
     self.Img_Arrow:SetColorAndOpacity(self.NotExpandSchemeArrowColor)
   end
 end
+
 function WBP_SeasonAbilityPanel:BindOnChangeSchemeNameButtonClicked(...)
   local CurEquipSchemeId = SeasonAbilityData:GetCurEquipSchemeId(self:GetCurShowHeroId())
   if 0 == CurEquipSchemeId then
@@ -222,6 +242,7 @@ function WBP_SeasonAbilityPanel:BindOnChangeSchemeNameButtonClicked(...)
   end
   UIMgr:Show(ViewID.UI_ChangeSchemeNamePanel, false, self:GetCurShowHeroId(), CurEquipSchemeId)
 end
+
 function WBP_SeasonAbilityPanel:BindOnSaveButtonClicked(...)
   local PreAbilityList = SeasonAbilityData:GetPreAbilityLevelList()
   if 0 == table.count(PreAbilityList) then
@@ -243,6 +264,7 @@ function WBP_SeasonAbilityPanel:BindOnSaveButtonClicked(...)
   end
   self:PlayAnimation(self.Ani_Btn_click, 0.0, 1, UE.EUMGSequencePlayMode.Forward, 1.0, false)
 end
+
 function WBP_SeasonAbilityPanel:BindOnSpecialAbilityButtonClicked()
   if self.IsShowSpecialAbilityPanel == nil then
     self.IsShowSpecialAbilityPanel = false
@@ -257,18 +279,22 @@ function WBP_SeasonAbilityPanel:BindOnSpecialAbilityButtonClicked()
     end
   end
 end
+
 function WBP_SeasonAbilityPanel:BindOnExchangeAbilityPointButtonClicked(...)
   UIMgr:Show(ViewID.UI_ExchangeAbilityPointPanel, false, self:GetCurShowHeroId())
 end
+
 function WBP_SeasonAbilityPanel:BindOnResetButtonClicked(...)
   local MaxExchangePointNum = SeasonAbilityData:GetTotalExchangeAbilityPointNumByHeroId(self:GetCurShowHeroId())
   if MaxExchangePointNum > 0 then
     UIMgr:Show(ViewID.UI_ResetSeasonAbilityPanel, false, self:GetCurShowHeroId())
   end
 end
+
 function WBP_SeasonAbilityPanel:BindOnHeroedSeasonAbilityPointNumUpdated(...)
   self:RefreshAbilityPointNumInfo()
 end
+
 function WBP_SeasonAbilityPanel:BindOnSeasonAbilityInfoUpdated(...)
   self:RefreshAbilityPointNumInfo()
   self:RefreshSchemeInfo()
@@ -277,9 +303,11 @@ function WBP_SeasonAbilityPanel:BindOnSeasonAbilityInfoUpdated(...)
     self.WBP_SeasonAbilityTip:Show(self:GetCurShowHeroId(), self.CurShowTipAbilityId)
   end
 end
+
 function WBP_SeasonAbilityPanel:BindOnSpecialAbilityInfoUpdated(...)
   self:RefreshSpecialAbilityInfo()
 end
+
 function WBP_SeasonAbilityPanel:BindOnUpdateSeasonAbilityTipVis(IsShow, AbilityId, Type)
   self.CurShowTipAbilityId = AbilityId
   if IsShow then
@@ -303,30 +331,36 @@ function WBP_SeasonAbilityPanel:BindOnUpdateSeasonAbilityTipVis(IsShow, AbilityI
     self.WBP_SeasonAbilityTip:Hide()
   end
 end
+
 function WBP_SeasonAbilityPanel:BindOnUpdateSpecialAbilityPanelVis(IsShow)
   if not IsShow then
     self:BindOnSpecialAbilityButtonClicked()
   end
 end
+
 function WBP_SeasonAbilityPanel:BindOnChangeEquipScheme()
   self:PlayAnimation(self.Ani_panel_switch, 0.0, 1, UE.EUMGSequencePlayMode.Forward, 1.0, false)
 end
+
 function WBP_SeasonAbilityPanel:BindOnAddSpecialAbilityPoint(PointNum)
   if PointNum > 0 then
     self.Txt_AddSpecialAbilityPoint_Anim:SetText(string.format("+%d", PointNum))
     self:PlayAnimation(self.Ani_add_SpecialAbility, 0.0, 1, UE.EUMGSequencePlayMode.Forward, 1.0, false)
   end
 end
+
 function WBP_SeasonAbilityPanel:BindOnAddAbilityPoint(PointNum)
   self.Txt_ExchangeAbilityPoint_Anim:SetText(string.format("+%d", PointNum))
   self:PlayAnimation(self.Ani_invert_points, 0.0, 1, UE.EUMGSequencePlayMode.Forward, 1.0, false)
 end
+
 function WBP_SeasonAbilityPanel:BindOnResetSeasonAbilitySuccess(...)
   local TargetCurrencyItem = self.WBP_LobbyCurrencyList:GetCurrencyItemByCurrencyId(self.WBP_LobbyCurrencyList.CurrencyIDList[1])
   if TargetCurrencyItem then
     TargetCurrencyItem:PlayAddMoneyAnim()
   end
 end
+
 function WBP_SeasonAbilityPanel:PreChangeHero(Step)
   local step = Step or 1
   local curSelectId = self.ViewModel:GetCurHeroId()
@@ -340,6 +374,7 @@ function WBP_SeasonAbilityPanel:PreChangeHero(Step)
     self:SelectHeroId(heroId)
   end
 end
+
 function WBP_SeasonAbilityPanel:NextChangeHero(Step)
   local step = Step or 1
   local curSelectId = self.ViewModel:GetCurHeroId()
@@ -353,9 +388,11 @@ function WBP_SeasonAbilityPanel:NextChangeHero(Step)
     self:SelectHeroId(heroId)
   end
 end
+
 function WBP_SeasonAbilityPanel:GetCurShowHeroId(...)
   return self.CurSelectHeroId
 end
+
 function WBP_SeasonAbilityPanel:HideItemPanel(ItemPanel, LinePanel)
   local AllChildren = ItemPanel:GetAllChildren()
   for k, SingleItem in pairs(AllChildren) do
@@ -368,6 +405,7 @@ function WBP_SeasonAbilityPanel:HideItemPanel(ItemPanel, LinePanel)
     end
   end
 end
+
 function WBP_SeasonAbilityPanel:OnPreHide(...)
   SeasonAbilityData:ResetPreAbilityInfo()
   if UIMgr:IsShow(ViewID.UI_ViewSetChangeHeroTip) then
@@ -388,13 +426,16 @@ function WBP_SeasonAbilityPanel:OnPreHide(...)
   EventSystem.RemoveListener(EventDef.SeasonAbility.OnAddAbilityPoint, self.BindOnAddAbilityPoint, self)
   EventSystem.RemoveListener(EventDef.SeasonAbility.OnResetSeasonAbilitySuccess, self.BindOnResetSeasonAbilitySuccess, self)
 end
+
 function WBP_SeasonAbilityPanel:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
   end
   SetLobbyPanelCurrencyList(false)
 end
+
 function WBP_SeasonAbilityPanel:Destruct(...)
   self:OnPreHide()
 end
+
 return WBP_SeasonAbilityPanel

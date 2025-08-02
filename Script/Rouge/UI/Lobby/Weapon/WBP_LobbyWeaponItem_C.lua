@@ -1,22 +1,27 @@
 local WBP_LobbyWeaponItem_C = UnLua.Class()
+
 function WBP_LobbyWeaponItem_C:Construct()
   self.Btn_Main.OnHovered:Add(self, WBP_LobbyWeaponItem_C.BindOnMainButtonHovered)
   self.Btn_Main.OnUnhovered:Add(self, WBP_LobbyWeaponItem_C.BindOnMainButtonUnHovered)
   self.Btn_Main.OnClicked:Add(self, WBP_LobbyWeaponItem_C.BindOnMainButtonClicked)
 end
+
 function WBP_LobbyWeaponItem_C:BindOnMainButtonHovered()
   self.Img_Hovered:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.Txt_Name:SetColorAndOpacity(self.HoveredTextColor)
   EventSystem.Invoke(EventDef.Lobby.LobbyWeaponItemHoverStatusChanged, true, self.WeaponInfo, self.IsEquipped)
 end
+
 function WBP_LobbyWeaponItem_C:BindOnMainButtonUnHovered()
   self.Img_Hovered:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.Txt_Name:SetColorAndOpacity(self.UnHoveredTextColor)
   EventSystem.Invoke(EventDef.Lobby.LobbyWeaponItemHoverStatusChanged, false)
 end
+
 function WBP_LobbyWeaponItem_C:BindOnMainButtonClicked()
   EventSystem.Invoke(EventDef.Lobby.WeaponItemSelected, self.WeaponInfo)
 end
+
 function WBP_LobbyWeaponItem_C:Show(WeaponInfo, IsEquipped)
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.WeaponInfo = WeaponInfo
@@ -50,9 +55,11 @@ function WBP_LobbyWeaponItem_C:Show(WeaponInfo, IsEquipped)
   self.Txt_Name:SetText(ItemData.Name)
   self:SetElementInfo()
 end
+
 function WBP_LobbyWeaponItem_C:GetWeaponBodyId()
   return tonumber(self.WeaponInfo.resourceId)
 end
+
 function WBP_LobbyWeaponItem_C:SetElementInfo()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -89,6 +96,7 @@ function WBP_LobbyWeaponItem_C:SetElementInfo()
     end
   end
 end
+
 function WBP_LobbyWeaponItem_C:GetInfoToolTipWidget()
   local WidgetClass = UE.UClass.Load("/Game/Rouge/UI/Lobby/Weapon/WBP_LobbyWeaponDisplayInfo.WBP_LobbyWeaponDisplayInfo_C")
   if WidgetClass and (not self.WeaponToolTipWidget or not self.WeaponToolTipWidget:IsValid()) then
@@ -119,8 +127,10 @@ function WBP_LobbyWeaponItem_C:GetInfoToolTipWidget()
   end
   return self.WeaponToolTipWidget
 end
+
 function WBP_LobbyWeaponItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.WeaponInfo = nil
 end
+
 return WBP_LobbyWeaponItem_C

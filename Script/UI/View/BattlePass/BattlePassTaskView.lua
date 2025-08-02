@@ -1,20 +1,24 @@
 local BattlePassTaskView = UnLua.Class()
-local DHFormat = NSLOCTEXT("WBP_ItemCountdown_C", "DHFormat", "{0}\229\164\169{1}\229\176\143\230\151\182")
-local HMFormat = NSLOCTEXT("WBP_ItemCountdown_C", "HMFormat", "{0}\229\176\143\230\151\182{1}\229\136\134\233\146\159")
-local MSFormat = NSLOCTEXT("WBP_ItemCountdown_C", "MSFormat", "{0}\229\136\134\233\146\159{1}\231\167\146")
+local DHFormat = NSLOCTEXT("BattlePassTaskView", "DHFormat", "{0}\229\164\169{1}\229\176\143\230\151\182")
+local HMFormat = NSLOCTEXT("BattlePassTaskView", "HMFormat", "{0}\229\176\143\230\151\182{1}\229\136\134\233\146\159")
+local MSFormat = NSLOCTEXT("BattlePassTaskView", "MSFormat", "{0}\229\136\134\233\146\159{1}\231\167\146")
+
 function BattlePassTaskView:OnActivated()
   self:PlayAnimation(self.Ani_in)
   self:PlayAnimation(self.Ani_loop, 0, 0)
   self:InitGroupList()
 end
+
 function BattlePassTaskView:BindFunction()
   self.ToggleGroup.OnCheckStateChanged:Add(self, self.OnGroupChanged)
   self.Btn_ReceiveAward_New.OnMainButtonClicked:Add(self, self.OnReceiveAward)
 end
+
 function BattlePassTaskView:UnBindFunction()
   self.ToggleGroup.OnCheckStateChanged:Remove(self, self.OnGroupChanged)
   self.Btn_ReceiveAward_New.OnMainButtonClicked:Remove(self, self.OnReceiveAward)
 end
+
 function BattlePassTaskView:OnShow(BattlePassID)
   self:BindFunction()
   self.BattlePassID = BattlePassID
@@ -63,6 +67,7 @@ function BattlePassTaskView:OnShow(BattlePassID)
     BattlePassMainViewModel:PullBattlePassTaskInfo()
   end
 end
+
 function BattlePassTaskView:OnMainTaskChange(GroupId, TaskId, bReceiveAward, bActiveCall)
   if not bReceiveAward then
     return
@@ -88,11 +93,13 @@ function BattlePassTaskView:OnMainTaskChange(GroupId, TaskId, bReceiveAward, bAc
     end
   end
 end
+
 function BattlePassTaskView:OnHide()
   self:StopAllAnimations()
   self:UnBindFunction()
   EventSystem.RemoveListener(EventDef.MainTask.OnMainTaskChange, self.OnMainTaskChange, self)
 end
+
 function BattlePassTaskView:InitGroupList()
   local TBBattlePassTask = LuaTableMgr.GetLuaTableByName(TableNames.TBBattlePassTask)
   if not TBBattlePassTask then
@@ -114,6 +121,7 @@ function BattlePassTaskView:InitGroupList()
   self:OnGroupChanged(0)
   HideOtherItem(self.GroupList, Index, true)
 end
+
 function BattlePassTaskView:OnGroupChanged(Index)
   local Item = self.ToggleGroup:GetToggleById(Index)
   if not Item or not Item.TaskGroupID then
@@ -160,7 +168,9 @@ function BattlePassTaskView:OnGroupChanged(Index)
     table.insert(self.TimerTable, Timer)
   end
 end
+
 function BattlePassTaskView:OnReceiveAward()
   Logic_MainTask.ReceiveAward(self.SelTaskGroupID)
 end
+
 return BattlePassTaskView

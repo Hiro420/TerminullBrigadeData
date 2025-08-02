@@ -1,5 +1,6 @@
 local WBP_ProfySettlementView = UnLua.Class()
 local ProficiencyData = require("Modules.Proficiency.ProficiencyData")
+
 function WBP_ProfySettlementView:Show()
   local PlayerInfo = LogicSettlement:GetPlayerInfoByPlayerId(tonumber(DataMgr.GetUserId()))
   if not PlayerInfo then
@@ -31,4 +32,5 @@ function WBP_ProfySettlementView:Show()
     self.Overlay_Exp:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 return WBP_ProfySettlementView

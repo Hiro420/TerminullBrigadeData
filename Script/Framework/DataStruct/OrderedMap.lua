@@ -35,12 +35,14 @@ local OrderedMap = {
   end,
   __ContainerName = "OrderedMap"
 }
+
 function OrderedMap.__index(tb, k)
   if tb.map and tb.map[k] then
     return tb.map[k]
   end
   return OrderedMap[k]
 end
+
 function OrderedMap.New(tb)
   local obj = {
     keys = {},
@@ -55,6 +57,7 @@ function OrderedMap.New(tb)
   setmetatable(obj, OrderedMap)
   return obj
 end
+
 function OrderedMap:Add(key, value, pos)
   if self.map[key] == nil then
     if pos then
@@ -65,9 +68,11 @@ function OrderedMap:Add(key, value, pos)
   end
   self.map[key] = value
 end
+
 function OrderedMap:Get(key)
   return self.map[key]
 end
+
 function OrderedMap:GetByIdx(Idx)
   local key = self.keys[Idx]
   if key then
@@ -75,21 +80,27 @@ function OrderedMap:GetByIdx(Idx)
   end
   return nil
 end
+
 function OrderedMap:GetKeyByIdx(Idx)
   return self.keys[Idx]
 end
+
 function OrderedMap:Keys()
   return self.keys
 end
+
 function OrderedMap:Count()
   return #self.keys
 end
+
 function OrderedMap:IsEmpty()
   return table.IsEmpty(self.keys)
 end
+
 function OrderedMap:ContainsKey(Key)
   return self.map[Key] ~= nil
 end
+
 function OrderedMap:Values()
   local result = {}
   for _, key in ipairs(self.keys) do
@@ -97,6 +108,7 @@ function OrderedMap:Values()
   end
   return result
 end
+
 function OrderedMap:Sort(SortFunc)
   local partition = function(arr, low, high)
     local pivot = arr[high]
@@ -110,6 +122,7 @@ function OrderedMap:Sort(SortFunc)
     arr[i + 1], arr[high] = arr[high], arr[i + 1]
     return i + 1
   end
+  
   local function quicksort_recursive(arr, low, high)
     if low < high then
       local pivot_index = partition(arr, low, high)
@@ -117,10 +130,13 @@ function OrderedMap:Sort(SortFunc)
       quicksort_recursive(arr, pivot_index + 1, high)
     end
   end
+  
   quicksort_recursive(self.keys, 1, #self.keys)
 end
+
 function OrderedMap:Clear()
   self.map = {}
   self.keys = {}
 end
+
 return OrderedMap

@@ -3,24 +3,29 @@ local RuleTaskData = {
 }
 local EMainRewardState = {UnReceive = 0, Received = 1}
 _G.EMainRewardState = EMainRewardState
+
 function RuleTaskData:SetMainRewardState(ActivityId, InState)
   RuleTaskData.MainRewardState[ActivityId] = InState
 end
+
 function RuleTaskData:GetMainRewardState(ActivityId)
   return RuleTaskData.MainRewardState[ActivityId] and RuleTaskData.MainRewardState[ActivityId] or EMainRewardState.UnReceive
 end
+
 function RuleTaskData:GetTaskGroupState(TaskGroupId)
   if Logic_MainTask.GroupInfo[TaskGroupId] then
     return Logic_MainTask.GroupInfo[TaskGroupId].state
   end
   return ETaskGroupState.None
 end
+
 function RuleTaskData:GetTaskState(TaskId)
   if Logic_MainTask.TaskInfo[TaskId] then
     return Logic_MainTask.TaskInfo[TaskId].state
   end
   return ETaskState.None
 end
+
 function RuleTaskData:GetTaskCountValue(TaskId, CounterId)
   local TaskValue = Logic_MainTask.TaskInfo[TaskId]
   if not TaskValue then
@@ -37,6 +42,7 @@ function RuleTaskData:GetTaskCountValue(TaskId, CounterId)
   end
   return 0
 end
+
 function RuleTaskData:GetTaskGroupProgress(TaskGroupId)
   local Result, TaskGroupRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBTaskGroupData, TaskGroupId)
   if not Result then
@@ -54,4 +60,5 @@ function RuleTaskData:GetTaskGroupProgress(TaskGroupId)
   end
   return FinishTaskNum, AllTaskNum
 end
+
 return RuleTaskData

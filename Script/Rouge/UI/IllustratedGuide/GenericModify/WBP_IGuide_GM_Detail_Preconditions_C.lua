@@ -1,4 +1,5 @@
 local WBP_IGuide_GM_Detail_Preconditions_C = UnLua.Class()
+
 function WBP_IGuide_GM_Detail_Preconditions_C:RefreshPreconditions(ModifyInfo)
   self.Data = ModifyInfo.ModifieConfig
   self:UpdataListPreconditions(self.Data.FrontConditions)
@@ -11,6 +12,7 @@ function WBP_IGuide_GM_Detail_Preconditions_C:RefreshPreconditions(ModifyInfo)
   UpdateVisibility(self.ShareWin, self.Data.GenericModifyType == UE.ERGGenericModifyType.ShareWin)
   UpdateVisibility(self.Image_Di_Highlight, not Logic_IllustratedGuide.IsLobbyRoom())
 end
+
 function WBP_IGuide_GM_Detail_Preconditions_C:UpdataListPreconditions(FrontConditions)
   local Sum = FrontConditions:Num()
   local UnLock1 = 0
@@ -142,6 +144,7 @@ function WBP_IGuide_GM_Detail_Preconditions_C:UpdataListPreconditions(FrontCondi
     UpdateVisibility(self.Img_NotMeet_1, false)
   end
 end
+
 function WBP_IGuide_GM_Detail_Preconditions_C:BP_OnItemIsHoveredChanged(Item, bHovered)
   UpdateVisibility(self.WBP_IGuide_GenericModifyTips, bHovered)
   local GenericModifyInfo = {}
@@ -150,4 +153,5 @@ function WBP_IGuide_GM_Detail_Preconditions_C:BP_OnItemIsHoveredChanged(Item, bH
     self.WBP_IGuide_GenericModifyTips:RefreshDetailPanel(GenericModifyInfo, false)
   end
 end
+
 return WBP_IGuide_GM_Detail_Preconditions_C

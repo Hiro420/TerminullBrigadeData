@@ -1,4 +1,5 @@
 local WBP_OptionalGiftMsgWaveWindow_Confirm_C = UnLua.Class()
+
 function WBP_OptionalGiftMsgWaveWindow_Confirm_C:InitOptionalGift(GiftId, OptionalGiftIndexs)
   local TBOptionalGift = LuaTableMgr.GetLuaTableByName(TableNames.TBOptionalGift)
   if not TBOptionalGift then
@@ -22,4 +23,5 @@ function WBP_OptionalGiftMsgWaveWindow_Confirm_C:InitOptionalGift(GiftId, Option
     end
   end
 end
+
 return WBP_OptionalGiftMsgWaveWindow_Confirm_C

@@ -1,9 +1,12 @@
 local WBP_Price_C = UnLua.Class()
+
 function WBP_Price_C:Construct()
 end
+
 function WBP_Price_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.UpdateResourceInfo, self.BindOnResourceUpdate, self)
 end
+
 function WBP_Price_C:SetPrice(CurPrice, OldPrice, CurrencyId)
   EventSystem.AddListener(self, EventDef.Lobby.UpdateResourceInfo, WBP_Price_C.BindOnResourceUpdate)
   self.Text_CurrentPrice:SetText(CurPrice)
@@ -29,6 +32,7 @@ function WBP_Price_C:SetPrice(CurPrice, OldPrice, CurrencyId)
   end
   self:BindOnResourceUpdate()
 end
+
 function WBP_Price_C:BindOnResourceUpdate()
   local CurrencyInfo = LogicOutsidePackback.GetResourceInfoById(self.CurrencyId)
   if not CurrencyInfo then
@@ -57,4 +61,5 @@ function WBP_Price_C:BindOnResourceUpdate()
     UpdateVisibility(self.Text_OriginalPrice_1, self.CurPrice ~= self.OldPrice and self.CurPrice ~= nil)
   end
 end
+
 return WBP_Price_C

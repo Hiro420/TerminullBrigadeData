@@ -17,8 +17,10 @@ local CommunicationData = require("Modules.Appearance.Communication.Communicatio
 local climbtowerdata = require("UI.View.ClimbTower.ClimbTowerData")
 local RuleTaskData = require("Modules.RuleTask.RuleTaskData")
 local LocalRedDotDataFilePath
+
 function RedDotModule:Ctor()
 end
+
 function RedDotModule:OnInit()
   if UE.RGUtil.IsDedicatedServer() then
     return
@@ -57,6 +59,7 @@ function RedDotModule:OnInit()
   EventSystem.AddListenerNew(EventDef.ClimbTowerView.OnDailyRewardChange, self, self.BindOnDailyRewardChange)
   EventSystem.AddListenerNew(EventDef.ClimbTowerView.OnPassRewardStatusChange, self, self.BindOnPassRewardStatusChange)
 end
+
 function RedDotModule:OnShutdown()
   if UE.RGUtil.IsDedicatedServer() then
     return
@@ -94,6 +97,7 @@ function RedDotModule:OnShutdown()
   EventSystem.RemoveListenerNew(EventDef.ClimbTowerView.OnPassRewardStatusChange, self, self.BindOnPassRewardStatusChange)
   self:SaveRedDotDataToLocal()
 end
+
 function RedDotModule:SaveRedDotDataToLocal()
   local RedDotNumList = {}
   for k, v in pairs(RedDotData.RedDotList) do
@@ -110,6 +114,7 @@ function RedDotModule:SaveRedDotDataToLocal()
     UE.URGBlueprintLibrary.SaveStringToFile(LocalRedDotDataFilePath, RedDotNumListJson)
   end
 end
+
 function RedDotModule:GlobalStartAnimation()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.RedDotAnimationLoopTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(GameInstance, self.RedDotAnimationLoopTimer)
@@ -119,11 +124,13 @@ function RedDotModule:GlobalStartAnimation()
     self.InvokeEventOnPlayOnceAnimation
   }, 3.1, true)
 end
+
 function RedDotModule:GlobalStopAnimation()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.RedDotAnimationLoopTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(GameInstance, self.RedDotAnimationLoopTimer)
   end
 end
+
 function RedDotModule:StartCheckNeedSaveToFileTimer()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.RedDotSaveToFileTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(GameInstance, self.RedDotSaveToFileTimer)
@@ -133,11 +140,13 @@ function RedDotModule:StartCheckNeedSaveToFileTimer()
     self.CheckNeedSaveToFile
   }, 5, true)
 end
+
 function RedDotModule:StopCheckNeedSaveToFileTimer()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.RedDotSaveToFileTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(GameInstance, self.RedDotSaveToFileTimer)
   end
 end
+
 function RedDotModule:CheckNeedSaveToFile()
   if RedDotData.bIsNeedSaveToFile then
     RedDotModule:SaveRedDotDataToLocal()
@@ -147,11 +156,14 @@ function RedDotModule:CheckNeedSaveToFile()
     print("ywtao, RedDotModule:CheckNeedSaveToFile false")
   end
 end
+
 function RedDotModule:InvokeEventOnPlayOnceAnimation()
   EventSystem.Invoke(EventDef.RedDot.OnPlayOnceAnimation)
 end
+
 function RedDotModule:BindOnLobbyShow()
 end
+
 function RedDotModule:BindOnUpdateAllMailListInfo()
   local AllMailInfoList = MailData:GetAllMailInfoList()
   for MailId, value in pairs(AllMailInfoList) do
@@ -178,6 +190,7 @@ function RedDotModule:BindOnUpdateAllMailListInfo()
     end
   end
 end
+
 function RedDotModule:BindOnLoginProtocolSuccess()
   LocalRedDotDataFilePath = UE.UKismetSystemLibrary.GetProjectSavedDirectory() .. "/RedDot/RedDotData_" .. DataMgr.GetUserId() .. ".json"
   local Result, FileStr = UE.URGBlueprintLibrary.LoadFileToString(LocalRedDotDataFilePath)
@@ -202,6 +215,7 @@ function RedDotModule:BindOnLoginProtocolSuccess()
   end
   self:GlobalStartAnimation()
 end
+
 function RedDotModule:LoadParentRedDotActive()
   LocalRedDotDataFilePath = UE.UKismetSystemLibrary.GetProjectSavedDirectory() .. "/RedDot/RedDotData_" .. DataMgr.GetUserId() .. ".json"
   local Result, FileStr = UE.URGBlueprintLibrary.LoadFileToString(LocalRedDotDataFilePath)
@@ -224,6 +238,7 @@ function RedDotModule:LoadParentRedDotActive()
   end
   RedDotModule:StartCheckNeedSaveToFileTimer()
 end
+
 function RedDotModule:BindOnFinishedGuideListChange()
   local GuideBookActiveItemList = BeginnerGuideData:GetGuideBookActiveItemList()
   for k, GuideInfo in pairs(GuideBookActiveItemList) do
@@ -240,11 +255,13 @@ function RedDotModule:BindOnFinishedGuideListChange()
     RedDotData:UpdateRedDotState(RedDotId, RedDotState)
   end
 end
+
 function RedDotModule:BindOnFriendApplyListUpdate()
   local RedDotId = "Friend_Request"
   RedDotData:CreateRedDotState(RedDotId, "Friend_Request")
   RedDotData:SetRedDotNum(RedDotId, table.count(ContactPersonData:GetFriendApplyIdList()))
 end
+
 function RedDotModule:BindOnPersonalChatInfoUpdate(SenderId)
   local ChatInfo = ContactPersonData:GetPersonalChatInfoById(SenderId)
   local LastChatInfo
@@ -258,6 +275,7 @@ function RedDotModule:BindOnPersonalChatInfoUpdate(SenderId)
   RedDotData:CreateRedDotState(RedDotId, "Friend_Chat_Item")
   RedDotData:ChangeRedDotNum(RedDotId, 1)
 end
+
 function RedDotModule:BindOnUpdateGameFloorInfo()
   local GameModeId = LogicTeam and GetCurNormalMode() or 1001
   local GameFloors = DataMgr.GameFloorInfo[GameModeId]
@@ -282,6 +300,7 @@ function RedDotModule:BindOnUpdateGameFloorInfo()
     end
   end
 end
+
 function RedDotModule:BindOnHeirloomInfoChanged()
   if not LogicRole then
     return
@@ -331,6 +350,7 @@ function RedDotModule:BindOnHeirloomInfoChanged()
     end
   end
 end
+
 function RedDotModule:BindOnUpdateResourceInfo()
   if LogicTalent then
     LogicTalent.ResetPreRemainCostList()
@@ -340,6 +360,7 @@ function RedDotModule:BindOnUpdateResourceInfo()
   self:BindOnHeirloomInfoChanged()
   self:BindOnUpdateCommonTalentInfo()
 end
+
 function RedDotModule:OnResourceUpdate(JsonStr)
   local bNeedRequest = false
   local JsonTable = rapidjson.decode(JsonStr)
@@ -356,6 +377,7 @@ function RedDotModule:OnResourceUpdate(JsonStr)
     IllustratedGuideHandler.RequestGetOwnedSpecificModifyListFromServer()
   end
 end
+
 function RedDotModule:BindOnGetHeroSkinList(HeroSkinList)
   local tbHeroMonster = LuaTableMgr.GetLuaTableByName(TableNames.TBHeroMonster)
   for heroId, vSkinData in pairs(SkinData.HeroSkinMap) do
@@ -419,6 +441,7 @@ function RedDotModule:BindOnGetHeroSkinList(HeroSkinList)
     end
   end
 end
+
 function RedDotModule:BindOnGetWeaponSkinList(WeaponSkinList)
   local tbWeapon = LuaTableMgr.GetLuaTableByName(TableNames.TBWeapon)
   for weaponResId, vSkinData in pairs(SkinData.WeaponSkinMap) do
@@ -493,6 +516,7 @@ function RedDotModule:BindOnGetWeaponSkinList(WeaponSkinList)
     end
   end
 end
+
 function RedDotModule:BindOnMainTaskRefres()
   local allCharacterList = LogicRole.GetAllCanSelectCharacterList()
   for iHeroId, heroId in pairs(allCharacterList) do
@@ -578,6 +602,7 @@ function RedDotModule:BindOnMainTaskRefres()
     end
   end
 end
+
 function RedDotModule:BindOnRefreshBattlePassTask()
   local LobbyMainViewModel = UIModelMgr:Get("LobbyMainViewModel")
   local OpenBattlePass = LobbyMainViewModel:CheckOpeningBattlePass()
@@ -611,6 +636,7 @@ function RedDotModule:BindOnRefreshBattlePassTask()
     end
   end
 end
+
 function RedDotModule:BindOnRefreshPlotFragment()
   local AllPlotFragmentWorldIdList = IllustratedGuideData:GetPlotFragmentWorldIdList()
   for i, WorldId in ipairs(AllPlotFragmentWorldIdList) do
@@ -652,13 +678,16 @@ function RedDotModule:BindOnRefreshPlotFragment()
     end
   end
 end
+
 function RedDotModule:BindPandoraActCenterRedpoint(MegObj)
   print("RedDotModule:BindPandoraActCenterRedpoint", MegObj)
   table.Print(MegObj)
 end
+
 function RedDotModule:BindOnMainTaskRefresh(TaskGroupIdList)
   self:RefreshRuleTaskRedDot(TaskGroupIdList)
 end
+
 function RedDotModule:RefreshRuleTaskRedDot(TaskGroupIdList)
   TaskGroupIdList = TaskGroupIdList or {}
   local RuleTaskTable = LuaTableMgr.GetLuaTableByName(TableNames.TBRuleTask)
@@ -748,6 +777,7 @@ function RedDotModule:RefreshRuleTaskRedDot(TaskGroupIdList)
     end
   end
 end
+
 function RedDotModule:BindOnMainRewardStateChanged(...)
   local RuleTaskTable = LuaTableMgr.GetLuaTableByName(TableNames.TBRuleTask)
   for ActivityId, RuleTaskRowInfo in pairs(RuleTaskTable) do
@@ -784,6 +814,7 @@ function RedDotModule:BindOnMainRewardStateChanged(...)
     end
   end
 end
+
 function RedDotModule:BindOnWeaponListChanged()
   local allCharacterList = LogicRole.GetAllCanSelectCharacterList()
   for iHeroId, heroId in pairs(allCharacterList) do
@@ -833,6 +864,7 @@ function RedDotModule:BindOnWeaponListChanged()
     end
   end
 end
+
 function RedDotModule:BindOnUpdateCommonTalentInfo()
   if not LogicTalent then
     return
@@ -856,6 +888,7 @@ function RedDotModule:BindOnUpdateCommonTalentInfo()
     end
   end
 end
+
 function RedDotModule:BindOnUpdateAllSpecificModifyInfo(OwnedSpecificModifyList)
   for k, v in pairs(OwnedSpecificModifyList) do
     local HeroIdList = IllustratedGuideData:GetHeroIdListBySpecificModifyId(v)
@@ -886,6 +919,7 @@ function RedDotModule:BindOnUpdateAllSpecificModifyInfo(OwnedSpecificModifyList)
     end
   end
 end
+
 function RedDotModule:BindOnGetHeroChipBag()
   for k, v in pairs(ChipData.ChipBags) do
     local ChipId = v.Chip.id
@@ -896,6 +930,7 @@ function RedDotModule:BindOnGetHeroChipBag()
     end
   end
 end
+
 function RedDotModule:BindOnRefreshAchievement()
   local AchievementGroupList = AchievementData:GetAchievementTypeList()
   for i, AchievementGroupInfo in ipairs(AchievementGroupList) do
@@ -930,6 +965,7 @@ function RedDotModule:BindOnRefreshAchievement()
   end
   RedDotData:SetRedDotNum("Achievement_PhaseAward", CanReceivePhaseAward and 1 or 0)
 end
+
 function RedDotModule:BindOnUpdateMyHeroInfo(...)
   if not LogicRole then
     return
@@ -991,6 +1027,7 @@ function RedDotModule:BindOnUpdateMyHeroInfo(...)
     end
   end
 end
+
 function RedDotModule:BindOnGetCommList()
   if not LogicRole then
     return
@@ -1061,6 +1098,7 @@ function RedDotModule:BindOnGetCommList()
     end
   end
 end
+
 function RedDotModule:BindOnGetBattlePassData(BattlePassInfo, BattlePassID)
   local BPAwardList = LuaTableMgr.GetLuaTableByName(TableNames.TBBattlePassReward)
   local BattlePassState = {
@@ -1101,6 +1139,7 @@ function RedDotModule:BindOnGetBattlePassData(BattlePassInfo, BattlePassID)
     end
   end
 end
+
 function RedDotModule:BindOnDailyRewardChange()
   local ChipRedDotId = "ClimbTower_DailyRewards"
   if climbtowerdata.DailyRewardInfo and climbtowerdata.DailyRewardInfo.rewardCount ~= nil and climbtowerdata.DailyRewardInfo.rewardCount > 0 then
@@ -1112,6 +1151,7 @@ function RedDotModule:BindOnDailyRewardChange()
     RedDotData:SetRedDotNum(ChipRedDotId, 0)
   end
 end
+
 function RedDotModule:BindOnPassRewardStatusChange()
   local ItemRedDotId = "ClimbTower_PassReward_Item"
   local LayerRedDotId = "ClimbTower_PassReward_Layer"
@@ -1140,4 +1180,5 @@ function RedDotModule:BindOnPassRewardStatusChange()
     end
   end
 end
+
 return RedDotModule

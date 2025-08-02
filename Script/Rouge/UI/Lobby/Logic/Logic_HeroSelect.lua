@@ -1,10 +1,12 @@
 local rapidJson = require("rapidjson")
 LogicHeroSelect = LogicHeroSelect or {}
+
 function LogicHeroSelect.Init()
   LogicHeroSelect.CloseShotHeroModel = nil
   LogicHeroSelect.IsInHeroSelection = false
   EventSystem.AddListener(nil, EventDef.WSMessage.PickHeroDone, LogicHeroSelect.BindOnPickHeroDone)
 end
+
 function LogicHeroSelect.RequestPickHeroToServer(InHeroId, SuccFunc)
   local TeamInfo = DataMgr.GetTeamInfo()
   local Param = {
@@ -27,6 +29,7 @@ function LogicHeroSelect.RequestPickHeroToServer(InHeroId, SuccFunc)
     end
   })
 end
+
 function LogicHeroSelect.RequestPickHeroDoneToServer()
   local TeamInfo = DataMgr.GetTeamInfo()
   HttpCommunication.Request("team/pickherodone", {
@@ -44,6 +47,7 @@ function LogicHeroSelect.RequestPickHeroDoneToServer()
     end
   })
 end
+
 function LogicHeroSelect.RequestCancelPickHeroToServer()
   local TeamInfo = DataMgr.GetTeamInfo()
   HttpCommunication.Request("team/cancelpickhero", {
@@ -61,6 +65,7 @@ function LogicHeroSelect.RequestCancelPickHeroToServer()
     end
   })
 end
+
 function LogicHeroSelect.GetCloseShotHeroModel()
   if not LogicHeroSelect.CloseShotHeroModel or not LogicHeroSelect.CloseShotHeroModel:IsValid() then
     local RoleActorList = UE.UGameplayStatics.GetAllActorsWithTag(GameInstance, "CloseShotHeroSelectRole", nil)
@@ -71,18 +76,23 @@ function LogicHeroSelect.GetCloseShotHeroModel()
   end
   return LogicHeroSelect.CloseShotHeroModel
 end
+
 function LogicHeroSelect.GetStartTime()
   return LogicHeroSelect.StartTime
 end
+
 function LogicHeroSelect.SetStartTime(InStartTime)
   LogicHeroSelect.StartTime = InStartTime
 end
+
 function LogicHeroSelect.GetEndTime()
   return LogicHeroSelect.EndTime
 end
+
 function LogicHeroSelect.SetEndTime(InEndTime)
   LogicHeroSelect.EndTime = InEndTime
 end
+
 function LogicHeroSelect.BindOnPickHeroDone(Json)
   print("BindOnPickHeroDone")
   local JsonTable = rapidJson.decode(Json)
@@ -90,6 +100,7 @@ function LogicHeroSelect.BindOnPickHeroDone(Json)
   LogicHeroSelect.SetStartTime(JsonTable.startTime)
   LogicHeroSelect.SetEndTime(JsonTable.endTime)
 end
+
 function LogicHeroSelect.GetCurSelectHero()
   local TeamInfo = DataMgr.GetTeamInfo()
   for index, SinglePlayerInfo in ipairs(TeamInfo.players) do
@@ -99,6 +110,7 @@ function LogicHeroSelect.GetCurSelectHero()
   end
   return 0
 end
+
 function LogicHeroSelect.Clear()
   LogicHeroSelect.CloseShotHeroModel = nil
 end

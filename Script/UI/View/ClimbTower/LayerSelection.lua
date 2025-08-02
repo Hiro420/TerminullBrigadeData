@@ -1,5 +1,6 @@
 local ClimbTowerData = require("UI.View.ClimbTower.ClimbTowerData")
 local LayerSelection = UnLua.Class()
+
 function LayerSelection:InitLayerSelection()
   local ClimbTowerTable = LuaTableMgr.GetLuaTableByName(TableNames.TBClimbTowerFloor)
   local LayerNum = table.count(ClimbTowerTable)
@@ -36,6 +37,7 @@ function LayerSelection:InitLayerSelection()
     self:OnTabSel(self.CurSelIndex - 1)
   end)
 end
+
 function LayerSelection:OnTabSel(index)
   if nil == index or "" == index then
     return
@@ -83,4 +85,5 @@ function LayerSelection:OnTabSel(index)
   end
   HideOtherItem(self.LayerList, Index, true)
 end
+
 return LayerSelection

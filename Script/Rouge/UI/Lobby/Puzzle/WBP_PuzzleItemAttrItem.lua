@@ -1,4 +1,5 @@
 local WBP_PuzzleItemAttrItem = UnLua.Class()
+
 function WBP_PuzzleItemAttrItem:Show(AttrId, AttrValue, IsRecommend)
   local Result, AttrModifyOp = GetRowData(DT.DT_AttributeModifyOp, tostring(AttrId))
   if not Result then
@@ -14,7 +15,9 @@ function WBP_PuzzleItemAttrItem:Show(AttrId, AttrValue, IsRecommend)
     self.RGStateController:ChangeStatus("NotRecommend")
   end
 end
+
 function WBP_PuzzleItemAttrItem:Hide(...)
   UpdateVisibility(self, false)
 end
+
 return WBP_PuzzleItemAttrItem

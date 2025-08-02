@@ -1,15 +1,18 @@
 require("UnLua")
 require("Rouge.UI.UIBase.UIConfig")
 UILayerGroup = UnLua.Class()
+
 function UILayerGroup:Ctor(...)
   self.UIInstAry = {}
   self.UILayerId = EUILayer.None
   self.LayerFrameOrderOffset = 1
   self.ContainFullScreenWindow = false
 end
+
 function UILayerGroup:GetHighestUIInst()
   return self.UIInstAry[#self.UIInstAry]
 end
+
 function UILayerGroup:GetHighestNeedFocusUIInst()
   for i = #self.UIInstAry, 1, -1 do
     if self.UIInstAry[i] and self.UIInstAry[i]:GetIsFocusInput() and self.UIInstAry[i]:IsShown() then
@@ -18,6 +21,7 @@ function UILayerGroup:GetHighestNeedFocusUIInst()
   end
   return nil
 end
+
 function UILayerGroup:SetGroupActive(UpperLayerContainsFullScreenWindow)
   if self.UIInstAry == nil then
     return
@@ -57,9 +61,11 @@ function UILayerGroup:SetGroupActive(UpperLayerContainsFullScreenWindow)
   end
   self.ContainFullScreenWindow = FindFullScreenWindow
 end
+
 function UILayerGroup:SetLayerId(LayerIdParam)
   self.UILayerId = LayerIdParam
 end
+
 function UILayerGroup:AddToGroup(UIInstParam)
   if not UIInstParam then
     print("UILayerGroup:AddToGroup UIInstParam Is Null", UIInstParam)
@@ -79,6 +85,7 @@ function UILayerGroup:AddToGroup(UIInstParam)
     table.insert(self.UIInstAry, UIInstParam)
   end
 end
+
 function UILayerGroup:RemoveFromGroup(UIInstParam)
   if not UIInstParam then
     print("UILayerGroup:RemoveFromGroup UIInstParam Is Null", UIInstParam)
@@ -90,15 +97,18 @@ function UILayerGroup:RemoveFromGroup(UIInstParam)
     UIInstParam:RemoveFromViewport()
   end
 end
+
 function UILayerGroup:Clear()
   for Index, Value in ipairs(self.UIInstAry) do
     Value:RemoveFromViewport()
   end
   self.UIInstAry = {}
 end
+
 function UILayerGroup:GetContainFullScreenWindow()
   return self.ContainFullScreenWindow
 end
+
 function UILayerGroup:GetHighestFullScreenWnd()
   if not self.ContainFullScreenWindow then
     return nil

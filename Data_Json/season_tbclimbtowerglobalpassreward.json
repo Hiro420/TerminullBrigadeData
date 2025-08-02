@@ -1,0 +1,32 @@
+[
+  {
+    "RewardID": 1,
+    "Reward": [
+      {
+        "key": 300001,
+        "value": 10
+      }
+    ],
+    "note": "白金晶体3-00"
+  },
+  {
+    "RewardID": 2,
+    "Reward": [
+      {
+        "key": 62022,
+        "value": 1
+      }
+    ],
+    "note": "T2橙色矩阵"
+  },
+  {
+    "RewardID": 3,
+    "Reward": [
+      {
+        "key": 62025,
+        "value": 1
+      }
+    ],
+    "note": "T3橙色矩阵"
+  }
+]

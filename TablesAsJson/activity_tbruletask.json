@@ -1,7 +1,14 @@
 ﻿{
   "10001": {
+    "fullActivationReward": {
+      "1": {
+        "value": 1,
+        "key": 10100201
+      }
+    },
     "creditExchangeTaskGroupId": 200120,
     "activityID": 10001,
+    "fullActivationRewardIcon": "/Game/Rouge/UI/Atlas_Alpha/A/Activity/RuleTask/Img_Activity_RuleTask_Award_01.Img_Activity_RuleTask_Award_01",
     "ruleInfoList": {
       "1": 1000101,
       "2": 1000102,
@@ -11,13 +18,6 @@
       "6": 1000106,
       "7": 1000107,
       "8": 1000108
-    },
-    "fullActivationRewardIcon": "/Game/Rouge/UI/Atlas_Alpha/A/Activity/RuleTask/Img_Activity_RuleTask_Award_01.Img_Activity_RuleTask_Award_01",
-    "fullActivationReward": {
-      "1": {
-        "value": 1,
-        "key": 10100201
-      }
     }
   }
 }

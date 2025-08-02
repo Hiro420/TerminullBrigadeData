@@ -6,12 +6,15 @@ local LoginRewardActivityViewModel = CreateDefaultViewModel()
 LoginRewardActivityViewModel.propertyBindings = {
   LoginTaskIdList = {}
 }
+
 function LoginRewardActivityViewModel:OnInit()
   self.Super.OnInit(self)
 end
+
 function LoginRewardActivityViewModel:OnShutdown()
   self.Super.OnShutdown(self)
 end
+
 function LoginRewardActivityViewModel:UpdateActivityId(ActivityId)
   local tbActivity = LuaTableMgr.GetLuaTableByName(TableNames.TBActivityGeneral)
   if not ActivityId or not tbActivity[ActivityId] then
@@ -27,4 +30,5 @@ function LoginRewardActivityViewModel:UpdateActivityId(ActivityId)
   local taskGroupData = tbTaskGroupData[taskgroupId]
   self.LoginTaskIdList = taskGroupData.tasklist
 end
+
 return LoginRewardActivityViewModel

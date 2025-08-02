@@ -1,10 +1,12 @@
 local WBP_BagRoleGenericItem_C = UnLua.Class()
 local GenericModifyConfig = require("GameConfig.GenericModify.GenericModifyConfig")
+
 function WBP_BagRoleGenericItem_C:Construct()
   self.RemainTime = -1
   self.TotalTime = -1
   EventSystem.AddListener(self, EventDef.Inscription.OnTriggerCD, self.BindOnClientUpdateInscriptionCD)
 end
+
 function WBP_BagRoleGenericItem_C:BindOnClientUpdateInscriptionCD(InscriptionId, RemainTime)
   local LogicCommandSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.ULogicCommandDataSubSystem:StaticClass())
   if not LogicCommandSubsystem then
@@ -23,6 +25,7 @@ function WBP_BagRoleGenericItem_C:BindOnClientUpdateInscriptionCD(InscriptionId,
     self:StartCD(RemainTime, RemainTime)
   end
 end
+
 function WBP_BagRoleGenericItem_C:UpdateCD(InDeltaTime)
   if self.RemainTime > 0 then
     if not self.bIsVolatile then
@@ -57,16 +60,19 @@ function WBP_BagRoleGenericItem_C:UpdateCD(InDeltaTime)
     end
   end
 end
+
 function WBP_BagRoleGenericItem_C:StartCD(RemainTime, TotalTime)
   self.URGImageCD:SetClippingValue(RemainTime / TotalTime)
   self.RemainTime = RemainTime
   self.TotalTime = TotalTime
 end
+
 function WBP_BagRoleGenericItem_C:StopCD()
   self.URGImageCD:SetClippingValue(0)
   self.RemainTime = -1
   self.TotalTime = -1
 end
+
 function WBP_BagRoleGenericItem_C:InitBagRoleGenericItem(ModifyData, GenericModifySlot, UpdateGenericModifyTipsFunc, ParentView, bIsLagacy, TargetItem)
   UpdateVisibility(self, true, true)
   UpdateVisibility(self.CanvasPanelLagacy, bIsLagacy)
@@ -132,6 +138,7 @@ function WBP_BagRoleGenericItem_C:InitBagRoleGenericItem(ModifyData, GenericModi
     UpdateVisibility(self.RGTextNumHaveModify, false)
   end
 end
+
 function WBP_BagRoleGenericItem_C:GetInscriptionId(ModifyData)
   if not ModifyData then
     return -1
@@ -146,6 +153,7 @@ function WBP_BagRoleGenericItem_C:GetInscriptionId(ModifyData)
   end
   return -1
 end
+
 function WBP_BagRoleGenericItem_C:InitSpecificModifyItem(SpecificModifyData, GenericModifySlot, UpdateGenericModifyTipsFunc, ParentView)
   UpdateVisibility(self, true, true)
   self.UpdateGenericModifyTipsFunc = UpdateGenericModifyTipsFunc
@@ -179,6 +187,7 @@ function WBP_BagRoleGenericItem_C:InitSpecificModifyItem(SpecificModifyData, Gen
     UpdateVisibility(self.RGTextNumHaveModify, false)
   end
 end
+
 function WBP_BagRoleGenericItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   self:HightLight(true)
   if self.UpdateGenericModifyTipsFunc then
@@ -190,15 +199,18 @@ function WBP_BagRoleGenericItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   end
   PlaySound2DEffect(50006, "")
 end
+
 function WBP_BagRoleGenericItem_C:OnMouseLeave(MouseEvent)
   self:HightLight(false)
   if self.UpdateGenericModifyTipsFunc then
     self.UpdateGenericModifyTipsFunc(self.ParentView, false, self.ModifyData)
   end
 end
+
 function WBP_BagRoleGenericItem_C:HightLight(bIsHighlight)
   UpdateVisibility(self.URGImageHighlight, bIsHighlight)
 end
+
 function WBP_BagRoleGenericItem_C:Hide()
   UpdateVisibility(self, false)
   self.UpdateGenericModifyTipsFunc = nil
@@ -206,6 +218,7 @@ function WBP_BagRoleGenericItem_C:Hide()
   self.ModifyData = nil
   self.GenericModifySlot = nil
 end
+
 function WBP_BagRoleGenericItem_C:Destruct()
   EventSystem.RemoveListener(EventDef.Inscription.OnTriggerCD, self.BindOnClientUpdateInscriptionCD, self)
   self.UpdateGenericModifyTipsFunc = nil
@@ -213,4 +226,5 @@ function WBP_BagRoleGenericItem_C:Destruct()
   self.ModifyData = nil
   self.GenericModifySlot = nil
 end
+
 return WBP_BagRoleGenericItem_C

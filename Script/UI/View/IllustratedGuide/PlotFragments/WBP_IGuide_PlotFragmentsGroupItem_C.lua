@@ -1,18 +1,21 @@
 local OrderedMap = require("Framework.DataStruct.OrderedMap")
 local IllustratedGuideData = require("Modules.IllustratedGuide.IllustratedGuideData")
 local WBP_IGuide_PlotFragmentsGroupItem_C = UnLua.Class()
+
 function WBP_IGuide_PlotFragmentsGroupItem_C:Construct()
   self.Btn_ShowStory.OnClicked:Add(self, self.BindOnShowStoryButtonClicked)
   self.Btn_Left.OnClicked:Add(self, self.BindOnLeftButtonClicked)
   self.Btn_Right.OnClicked:Add(self, self.BindOnRightButtonClicked)
   EventSystem.AddListener(self, EventDef.IllustratedGuide.OnPlotFragmentsItemChanged, self.BindOnPlotFragmentsItemChanged)
 end
+
 function WBP_IGuide_PlotFragmentsGroupItem_C:Destruct()
   self.Btn_ShowStory.OnClicked:Remove(self, self.BindOnShowStoryButtonClicked)
   self.Btn_Left.OnClicked:Remove(self, self.BindOnLeftButtonClicked)
   self.Btn_Right.OnClicked:Remove(self, self.BindOnRightButtonClicked)
   EventSystem.RemoveListener(EventDef.IllustratedGuide.OnPlotFragmentsItemChanged, self.BindOnPlotFragmentsItemChanged, self)
 end
+
 function WBP_IGuide_PlotFragmentsGroupItem_C:InitInfo(ClueId, Level, bResetPageIndex)
   self.ClueId = ClueId
   if nil ~= Level then
@@ -45,9 +48,11 @@ function WBP_IGuide_PlotFragmentsGroupItem_C:InitInfo(ClueId, Level, bResetPageI
     UpdateVisibility(self.Canvas_BtnLock, true)
   end
 end
+
 function WBP_IGuide_PlotFragmentsGroupItem_C:Hide()
   SetHitTestInvisible(self)
 end
+
 function WBP_IGuide_PlotFragmentsGroupItem_C:BindOnShowStoryButtonClicked()
   local PlotFragmentsView = UIMgr:GetLuaFromActiveView(ViewID.UI_IllustratedGuidePlotFragments)
   if PlotFragmentsView and PlotFragmentsView:IsAnyAnimationPlaying() then
@@ -60,6 +65,7 @@ function WBP_IGuide_PlotFragmentsGroupItem_C:BindOnShowStoryButtonClicked()
     ShowWaveWindow(1174)
   end
 end
+
 function WBP_IGuide_PlotFragmentsGroupItem_C:UpdateTargetFragmentList()
   local TargetFragmentList = self["WrapBox_FragmentList_" .. tostring(self.Level)]
   local NeedShowFragmentList = {}
@@ -94,14 +100,17 @@ function WBP_IGuide_PlotFragmentsGroupItem_C:UpdateTargetFragmentList()
     UpdateVisibility(self.Canvas_ChangePage, false)
   end
 end
+
 function WBP_IGuide_PlotFragmentsGroupItem_C:BindOnLeftButtonClicked()
   self.PageIndex = (self.PageIndex - 2 + self.MaxPage) % self.MaxPage + 1
   self:UpdateTargetFragmentList()
 end
+
 function WBP_IGuide_PlotFragmentsGroupItem_C:BindOnRightButtonClicked()
   self.PageIndex = self.PageIndex % self.MaxPage + 1
   self:UpdateTargetFragmentList()
 end
+
 function WBP_IGuide_PlotFragmentsGroupItem_C:BindOnPlotFragmentsItemChanged(ClueId, FragmentId)
   if ClueId == self.ClueId then
     UpdateVisibility(self.HrzBox_Progress, true)
@@ -110,4 +119,5 @@ function WBP_IGuide_PlotFragmentsGroupItem_C:BindOnPlotFragmentsItemChanged(Clue
     self.Txt_Progress_Total:SetText(ClueProgress.TotalCount)
   end
 end
+
 return WBP_IGuide_PlotFragmentsGroupItem_C

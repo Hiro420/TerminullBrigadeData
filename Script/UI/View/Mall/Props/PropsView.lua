@@ -4,23 +4,22 @@ local rapidjson = require("rapidjson")
 local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local PropsView = Class(ViewBase)
+
 function PropsView:Construct()
   self:OnInit()
 end
+
 function PropsView:BindClickHandler()
   self.PropsList.BP_OnItemClicked:Add(self, PropsView.BP_OnItemClicked)
   EventSystem.AddListener(self, EventDef.WSMessage.ResourceUpdate, PropsView.BindOnResourceUpdate)
   EventSystem.AddListener(self, EventDef.Mall.OnGetPropsInfo, PropsView.UpDateList)
-  self.WBP_InteractTipWidgetSetting.OnMainButtonClicked:Add(self, self.OpenSetting)
   self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Add(self, self.ReturnLobby)
 end
+
 function PropsView:UnBindClickHandler()
-  self.WBP_InteractTipWidgetSetting.OnMainButtonClicked:Remove(self, self.OpenSetting)
   self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Remove(self, self.ReturnLobby)
 end
-function PropsView:OpenSetting()
-  LogicGameSetting.ShowGameSettingPanel()
-end
+
 function PropsView:ReturnLobby()
   local LobbyDefaultLabelName = LogicLobby.GetDefaultSelectedLabelName()
   local CurShowLabelName = LogicLobby.GetCurSelectedLabelName()
@@ -30,6 +29,7 @@ function PropsView:ReturnLobby()
     LogicLobby.ChangeLobbyPanelLabelSelected(LobbyDefaultLabelName)
   end
 end
+
 function PropsView:OnInit()
   self.DataBindTable = {
     {
@@ -40,9 +40,11 @@ function PropsView:OnInit()
   self.ViewModel = UIModelMgr:Get("PropsViewModel")
   self:BindClickHandler()
 end
+
 function PropsView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function PropsView:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -52,38 +54,39 @@ function PropsView:OnShow(...)
   self:PlayAnimation(self.Ani_in)
   LogicLobby.ChangeLobbyMainModelVis(false)
   self.ShowLink = false
-  ListenForInputAction("OpenSettings", UE.EInputEvent.IE_Pressed, true, {
-    self,
-    self.OpenSetting
-  })
   ListenForInputAction("PauseGame", UE.EInputEvent.IE_Pressed, true, {
     self,
     self.ReturnLobby
   })
 end
+
 function PropsView:OnShowLink()
   self.ShowLink = true
 end
+
 function PropsView:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     self:BindOnOutAnimationFinished()
   end
 end
+
 function PropsView:BindOnOutAnimationFinished()
   EventSystem.Invoke(EventDef.Lobby.OnLobbyLabelSelected, LogicLobby.GetPendingSelectedLabelTagName())
 end
+
 function PropsView:CanDirectSwitch(NextTabWidget)
   self:PlayAnimation(self.Ani_out)
   return false
 end
+
 function PropsView:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
   end
   LogicLobby.ChangeLobbyMainModelVis(true)
-  StopListeningForInputAction(self, "OpenSettings", UE.EInputEvent.IE_Pressed)
   StopListeningForInputAction(self, "PauseGame", UE.EInputEvent.IE_Pressed)
 end
+
 function PropsView:UpDateList(goodsInfos)
   self.PropsList:ClearListItems()
   if not goodsInfos or not goodsInfos[self.ShelfIndex] then
@@ -108,6 +111,7 @@ function PropsView:UpDateList(goodsInfos)
     end
   end
 end
+
 function PropsView:CheckGoodsType(GoodsId, Amount)
   local ConsumeNum = 0
   local MailInfo = LuaTableMgr.GetLuaTableByName(TableNames.TBMall)
@@ -128,12 +132,14 @@ function PropsView:CheckGoodsType(GoodsId, Amount)
   end
   return ConsumeNum <= CurNum, ConsumeNum - CurNum
 end
+
 function PropsView:BP_OnItemClicked(Item)
   local SaleStatus = Logic_Mall.GetGoodsSalesStatus(Item)
   if SaleStatus == EnumSalesStatus.OnSale or SaleStatus == EnumSalesStatus.LimitedTimeOnSale then
-    UIMgr:Show(ViewID.UI_Mall_PurchaseConfirm, true, Item.GoodsId, 3, 1)
+    UIMgr:Show(ViewID.UI_Mall_PurchaseConfirm, true, Item.GoodsId, 3, Item.Amount)
   end
 end
+
 function PropsView:BindOnResourceUpdate(json)
   local JsonTable = rapidjson.decode(json)
   if JsonTable.proppack == nil then
@@ -141,9 +147,11 @@ function PropsView:BindOnResourceUpdate(json)
   end
   Logic_Mall.PushPropsInfo(false)
 end
+
 function PropsView:OnShowTime(ShowStartTime, ShowEndTime)
   local CurTimeTemp = os.time()
   print(tonumber(ShowStartTime), tonumber(CurTimeTemp), tonumber(ShowEndTime))
   return tonumber(ShowStartTime) <= tonumber(CurTimeTemp) and tonumber(CurTimeTemp) <= tonumber(ShowEndTime)
 end
+
 return PropsView

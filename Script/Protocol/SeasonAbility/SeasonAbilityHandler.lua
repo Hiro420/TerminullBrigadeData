@@ -5,6 +5,7 @@ local SeasonId = 1
 local GetCurSeasonId = function(...)
   return SeasonId
 end
+
 function SeasonAbilityHandler:RequestGetSeasonAbilityInfoToServer(HeroId)
   local Path = string.format("playergrowth/seasonability/seasonability?seasonID=%d&heroID=%d", GetCurSeasonId(), HeroId)
   HttpCommunication.RequestByGet(Path, {
@@ -18,6 +19,7 @@ function SeasonAbilityHandler:RequestGetSeasonAbilityInfoToServer(HeroId)
     end
   })
 end
+
 function SeasonAbilityHandler:RequestUpgradeSeasonAbilityToServer(HeroId, SchemeId, AbilitiesList)
   local ExchangeAbilitiesList = SeasonAbilityData:SortUpgradeAbilityList(AbilitiesList)
   local Params = {
@@ -35,6 +37,7 @@ function SeasonAbilityHandler:RequestUpgradeSeasonAbilityToServer(HeroId, Scheme
     end
   })
 end
+
 function SeasonAbilityHandler:RequestResetSeasonAbilityToServer(HeroId)
   local Params = {
     heroID = HeroId,
@@ -50,6 +53,7 @@ function SeasonAbilityHandler:RequestResetSeasonAbilityToServer(HeroId)
     end
   })
 end
+
 function SeasonAbilityHandler:RequestGetHeroesSeasonAbilityPointNumToServer(HeroIdList)
   if not HeroIdList[1] then
     return
@@ -69,6 +73,7 @@ function SeasonAbilityHandler:RequestGetHeroesSeasonAbilityPointNumToServer(Hero
     end
   })
 end
+
 function SeasonAbilityHandler:RequestExchangeAbilityPointToServer(HeroId, ExchangeNum, SuccCallback)
   local Params = {
     exchangeNum = ExchangeNum,
@@ -87,6 +92,7 @@ function SeasonAbilityHandler:RequestExchangeAbilityPointToServer(HeroId, Exchan
     end
   })
 end
+
 function SeasonAbilityHandler:RequestGetSpecialAbilityInfoToServer(...)
   local LastSpecialAbilityPoint = SeasonAbilityData:GetSpecialAbilityCurrentMaxPointNum()
   HttpCommunication.RequestByGet("playergrowth/seasonability/specialability", {
@@ -101,6 +107,7 @@ function SeasonAbilityHandler:RequestGetSpecialAbilityInfoToServer(...)
     end
   })
 end
+
 function SeasonAbilityHandler:RequestActivateSpecialAbilityToServer(SpecialAbilityId)
   local Params = {specialAbilityID = SpecialAbilityId}
   HttpCommunication.Request("playergrowth/seasonability/activatespecialability", Params, {
@@ -112,6 +119,7 @@ function SeasonAbilityHandler:RequestActivateSpecialAbilityToServer(SpecialAbili
     end
   })
 end
+
 function SeasonAbilityHandler:RequestUnlockSchemeToServer(HeroId)
   local Params = {
     roleID = DataMgr.GetUserId(),
@@ -125,6 +133,7 @@ function SeasonAbilityHandler:RequestUnlockSchemeToServer(HeroId)
     end
   })
 end
+
 function SeasonAbilityHandler:RequestRenameSchemeToServer(HeroId, SchemeId, SchemeName)
   local Params = {
     heroID = HeroId,
@@ -140,6 +149,7 @@ function SeasonAbilityHandler:RequestRenameSchemeToServer(HeroId, SchemeId, Sche
     end
   })
 end
+
 function SeasonAbilityHandler:RequestEquipSchemeToServer(HeroId, SchemeId)
   local Params = {
     heroID = HeroId,
@@ -155,4 +165,5 @@ function SeasonAbilityHandler:RequestEquipSchemeToServer(HeroId, SchemeId)
     end
   })
 end
+
 return SeasonAbilityHandler

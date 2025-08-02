@@ -1,9 +1,11 @@
 local WBP_RoleUpgradePanel_C = UnLua.Class()
 local ListContainer = require("Rouge.UI.Common.ListContainer")
+
 function WBP_RoleUpgradePanel_C:Construct()
   self.Btn_Esc.OnClicked:Add(self, WBP_RoleUpgradePanel_C.BindOnEscButtonClicked)
   self.Btn_Upgrade.OnClicked:Add(self, WBP_RoleUpgradePanel_C.BindOnUpgradeButtonClicked)
 end
+
 function WBP_RoleUpgradePanel_C:InitInfo(HeroId)
   self.CurHeroId = HeroId
   local HeroRowInfo = LogicRole.GetCharacterTableRow(self.CurHeroId)
@@ -15,6 +17,7 @@ function WBP_RoleUpgradePanel_C:InitInfo(HeroId)
   local HeroStar = DataMgr.GetHeroLevelByHeroId(self.CurHeroId)
   EventSystem.Invoke(EventDef.Lobby.HeroStarUpgradeItemClicked, HeroStar + 1)
 end
+
 function WBP_RoleUpgradePanel_C:RefreshStarButtonStatus()
   local HeroStar = DataMgr.GetHeroLevelByHeroId(self.CurHeroId)
   local MaxHeroStar = LogicRole.GetMaxHeroStar(self.CurHeroId)
@@ -28,18 +31,21 @@ function WBP_RoleUpgradePanel_C:RefreshStarButtonStatus()
     end
   end
 end
+
 function WBP_RoleUpgradePanel_C:Show(SelfHitTestInvisible, Activate)
   self.Overridden.Show(self, SelfHitTestInvisible, Activate)
   EventSystem.AddListener(self, EventDef.Lobby.HeroStarUpgradeItemClicked, WBP_RoleUpgradePanel_C.BindOnHeroStarUpgradeItemClicked)
   EventSystem.AddListener(self, EventDef.Lobby.UpdateMyHeroInfo, WBP_RoleUpgradePanel_C.BindOnUpdateMyHeroInfo)
   EventSystem.AddListener(self, EventDef.Lobby.UpdateResourceInfo, WBP_RoleUpgradePanel_C.BindOnUpdateResourceInfo)
 end
+
 function WBP_RoleUpgradePanel_C:Hide(Collapsed, Activate)
   self.Overridden.Hide(self, Collapsed, Activate)
   EventSystem.RemoveListener(EventDef.Lobby.HeroStarUpgradeItemClicked, WBP_RoleUpgradePanel_C.BindOnHeroStarUpgradeItemClicked, self)
   EventSystem.RemoveListener(EventDef.Lobby.UpdateMyHeroInfo, WBP_RoleUpgradePanel_C.BindOnUpdateMyHeroInfo, self)
   EventSystem.RemoveListener(EventDef.Lobby.UpdateResourceInfo, WBP_RoleUpgradePanel_C.BindOnUpdateResourceInfo, self)
 end
+
 function WBP_RoleUpgradePanel_C:BindOnEscButtonClicked()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGUIManager:StaticClass())
   if not UIManager then
@@ -47,6 +53,7 @@ function WBP_RoleUpgradePanel_C:BindOnEscButtonClicked()
   end
   UIManager:Switch(UE.UGameplayStatics.GetObjectClass(self), true)
 end
+
 function WBP_RoleUpgradePanel_C:BindOnUpgradeButtonClicked()
   if not self.IsCanUpgrade then
     print("\229\141\135\231\186\167\230\157\144\230\150\153\228\184\141\232\182\179")
@@ -76,6 +83,7 @@ function WBP_RoleUpgradePanel_C:BindOnUpgradeButtonClicked()
     end
   })
 end
+
 function WBP_RoleUpgradePanel_C:BindOnHeroStarUpgradeItemClicked(TargetStarLevel)
   self.TargetStarLevel = TargetStarLevel
   local CurHeroStar = DataMgr.GetHeroLevelByHeroId(self.CurHeroId)
@@ -108,6 +116,7 @@ function WBP_RoleUpgradePanel_C:BindOnHeroStarUpgradeItemClicked(TargetStarLevel
     self:RefreshUpgradeResourceInfo()
   end
 end
+
 function WBP_RoleUpgradePanel_C:RefreshUpgradeResourceInfo()
   local ResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   local ResourceRow = ResourceTable[self.CurCostInfo.key]
@@ -131,6 +140,7 @@ function WBP_RoleUpgradePanel_C:RefreshUpgradeResourceInfo()
   end
   self.Txt_HaveNum:SetColorAndOpacity(SlateColor)
 end
+
 function WBP_RoleUpgradePanel_C:BindOnUpdateMyHeroInfo()
   local HeroStar = DataMgr.GetHeroLevelByHeroId(self.CurHeroId)
   local MaxHeroStar = LogicRole.GetMaxHeroStar(self.CurHeroId)
@@ -141,9 +151,11 @@ function WBP_RoleUpgradePanel_C:BindOnUpdateMyHeroInfo()
     EventSystem.Invoke(EventDef.Lobby.HeroStarUpgradeItemClicked, HeroStar + 1)
   end
 end
+
 function WBP_RoleUpgradePanel_C:BindOnUpdateResourceInfo()
   self:RefreshUpgradeResourceInfo()
 end
+
 function WBP_RoleUpgradePanel_C:RefreshAttributeList(TargetStarLevel)
   local AllChildren = self.AttributeList:GetAllChildren()
   for i, SingleChildItem in pairs(AllChildren) do
@@ -188,6 +200,7 @@ function WBP_RoleUpgradePanel_C:RefreshAttributeList(TargetStarLevel)
     Item:Show(AttrKey, CurValue, AttrValueList.TargetValue)
   end
 end
+
 function WBP_RoleUpgradePanel_C:RefreshSkillList(TargetStarLevel)
   local HeroRowInfo = LogicRole.GetCharacterTableRow(self.CurHeroId)
   if not HeroRowInfo then
@@ -205,11 +218,14 @@ function WBP_RoleUpgradePanel_C:RefreshSkillList(TargetStarLevel)
     end
   end
 end
+
 function WBP_RoleUpgradePanel_C:FocusInput()
   self.Overridden.FocusInput(self)
 end
+
 function WBP_RoleUpgradePanel_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.HeroStarUpgradeItemClicked, WBP_RoleUpgradePanel_C.BindOnHeroStarUpgradeItemClicked, self)
   EventSystem.RemoveListener(EventDef.Lobby.UpdateMyHeroInfo, WBP_RoleUpgradePanel_C.BindOnUpdateMyHeroInfo, self)
 end
+
 return WBP_RoleUpgradePanel_C

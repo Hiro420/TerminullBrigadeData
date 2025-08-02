@@ -1,7 +1,9 @@
 local WBP_SettlementRewardItem_C = UnLua.Class()
+
 function WBP_SettlementRewardItem_C:Construct()
   self.ResourceId = 0
 end
+
 function WBP_SettlementRewardItem_C:Init(PresetWeaponId, ParentView, ShowWeaponFunc)
   UpdateVisibility(self.Img_Selected, false)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -47,6 +49,7 @@ function WBP_SettlementRewardItem_C:Init(PresetWeaponId, ParentView, ShowWeaponF
   self.PresetWeaponId = PresetWeaponId
   self:SetElementInfo()
 end
+
 function WBP_SettlementRewardItem_C:SetElementInfo()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -85,19 +88,24 @@ function WBP_SettlementRewardItem_C:SetElementInfo()
     end
   end
 end
+
 function WBP_SettlementRewardItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   UpdateVisibility(self.Img_Selected, true)
   self.ShowWeaponFunc(self.ParentView, true, self.PresetWeaponId, self)
 end
+
 function WBP_SettlementRewardItem_C:OnMouseLeave(MouseEvent)
   UpdateVisibility(self.Img_Selected, false)
   self.ShowWeaponFunc(self.ParentView, false, self.PresetWeaponId, self)
 end
+
 function WBP_SettlementRewardItem_C:UnInit()
 end
+
 function WBP_SettlementRewardItem_C:Destruct()
   self.ParentView = nil
   self.ShowWeaponFunc = nil
   self.PresetWeaponId = 0
 end
+
 return WBP_SettlementRewardItem_C

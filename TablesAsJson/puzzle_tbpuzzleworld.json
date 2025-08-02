@@ -1,86 +1,86 @@
 ﻿{
   "24": {
-    "GridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Wasteland.Icon_Wasteland",
+    "ItemFXColor": "9F6335FF",
     "HollowGridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Wasteland_02.Icon_Wasteland_02",
-    "IsOpen": true,
-    "DescLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleWorld",
-      "InTextLiteral": "锋卫战斗矩阵可装配模块数为当前已装配个模块。",
-      "InKey": "Desc_24"
-    },
+    "WorldId": 24,
+    "notes": "",
     "NameLocMeta": {
       "InNamespace": "puzzle_TBPuzzleWorld",
-      "InTextLiteral": "锋卫",
-      "InKey": "Name_24"
+      "InKey": "Name_24",
+      "InTextLiteral": "锋卫"
     },
-    "notes": "",
     "ItemLoopFXColor": "9C7E4FFF",
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Puzzle_04.Icon_Puzzle_04",
-    "WorldId": 24,
+    "IsOpen": true,
     "ItemFrameColor": "C26500FF",
-    "ItemFXColor": "9F6335FF"
+    "GridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Wasteland.Icon_Wasteland",
+    "DescLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleWorld",
+      "InKey": "Desc_24",
+      "InTextLiteral": "锋卫战斗矩阵可装配模块数为当前已装配个模块。"
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Puzzle_04.Icon_Puzzle_04"
   },
   "124": {
-    "GridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_FairyTales.Icon_FairyTales",
+    "ItemFXColor": "914158FF",
     "HollowGridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_FairyTales_02.Icon_FairyTales_02",
-    "IsOpen": true,
-    "DescLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleWorld",
-      "InTextLiteral": "星垒战斗矩阵可装配模块数为当前已装配个模块。",
-      "InKey": "Desc_124"
-    },
+    "WorldId": 124,
+    "notes": "",
     "NameLocMeta": {
       "InNamespace": "puzzle_TBPuzzleWorld",
-      "InTextLiteral": "星垒",
-      "InKey": "Name_124"
+      "InKey": "Name_124",
+      "InTextLiteral": "星垒"
     },
-    "notes": "",
     "ItemLoopFXColor": "FFA7A3FF",
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Puzzle_02.Icon_Puzzle_02",
-    "WorldId": 124,
+    "IsOpen": true,
     "ItemFrameColor": "FF4079FF",
-    "ItemFXColor": "914158FF"
+    "GridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_FairyTales.Icon_FairyTales",
+    "DescLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleWorld",
+      "InKey": "Desc_124",
+      "InTextLiteral": "星垒战斗矩阵可装配模块数为当前已装配个模块。"
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Puzzle_02.Icon_Puzzle_02"
   },
   "23": {
-    "GridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Cyber.Icon_Cyber",
+    "ItemFXColor": "B772FFFF",
     "HollowGridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Cyber_02.Icon_Cyber_02",
-    "IsOpen": true,
-    "DescLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleWorld",
-      "InTextLiteral": "穹锋战斗矩阵可装配模块数为当前已装配个模块。",
-      "InKey": "Desc_23"
-    },
+    "WorldId": 23,
+    "notes": "",
     "NameLocMeta": {
       "InNamespace": "puzzle_TBPuzzleWorld",
-      "InTextLiteral": "穹锋",
-      "InKey": "Name_23"
+      "InKey": "Name_23",
+      "InTextLiteral": "穹锋"
     },
-    "notes": "",
     "ItemLoopFXColor": "B772FFFF",
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Puzzle_01.Icon_Puzzle_01",
-    "WorldId": 23,
+    "IsOpen": true,
     "ItemFrameColor": "8A00FFFF",
-    "ItemFXColor": "B772FFFF"
+    "GridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Cyber.Icon_Cyber",
+    "DescLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleWorld",
+      "InKey": "Desc_23",
+      "InTextLiteral": "穹锋战斗矩阵可装配模块数为当前已装配个模块。"
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Puzzle_01.Icon_Puzzle_01"
   },
   "123": {
-    "GridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Interstellar.Icon_Interstellar",
+    "ItemFXColor": "448791FF",
     "HollowGridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Interstellar_02.Icon_Interstellar_02",
-    "IsOpen": true,
-    "DescLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleWorld",
-      "InTextLiteral": "裂变战斗矩阵可装配模块数为当前已装配个模块。",
-      "InKey": "Desc_123"
-    },
+    "WorldId": 123,
+    "notes": "",
     "NameLocMeta": {
       "InNamespace": "puzzle_TBPuzzleWorld",
-      "InTextLiteral": "裂变",
-      "InKey": "Name_123"
+      "InKey": "Name_123",
+      "InTextLiteral": "裂变"
     },
-    "notes": "",
     "ItemLoopFXColor": "94EEFFFF",
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Puzzle_03.Icon_Puzzle_03",
-    "WorldId": 123,
+    "IsOpen": true,
     "ItemFrameColor": "007EC2FF",
-    "ItemFXColor": "448791FF"
+    "GridBottomIcon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Interstellar.Icon_Interstellar",
+    "DescLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleWorld",
+      "InKey": "Desc_123",
+      "InTextLiteral": "裂变战斗矩阵可装配模块数为当前已装配个模块。"
+    },
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_Puzzle_03.Icon_Puzzle_03"
   }
 }

@@ -1,0 +1,92 @@
+[
+  {
+    "ID": 101,
+    "Level": 2,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv2.Icon_FamilyHeirloom_Lv2",
+    "GiftID": 6201012,
+    "CostResources": [
+      {
+        "key": 6201015,
+        "value": 1
+      }
+    ],
+    "LinkId": "1012",
+    "LinkDesc": "商城捆绑包获取",
+    "ParamList": []
+  },
+  {
+    "ID": 101,
+    "Level": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv3.Icon_FamilyHeirloom_Lv3",
+    "GiftID": 6201013,
+    "CostResources": [
+      {
+        "key": 6201015,
+        "value": 1
+      }
+    ],
+    "LinkId": "1012",
+    "LinkDesc": "商城捆绑包获取",
+    "ParamList": []
+  },
+  {
+    "ID": 101,
+    "Level": 4,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv4.Icon_FamilyHeirloom_Lv4",
+    "GiftID": 6201014,
+    "CostResources": [
+      {
+        "key": 6201015,
+        "value": 1
+      }
+    ],
+    "LinkId": "1012",
+    "LinkDesc": "商城捆绑包获取",
+    "ParamList": []
+  },
+  {
+    "ID": 1031,
+    "Level": 2,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv2.Icon_FamilyHeirloom_Lv2",
+    "GiftID": 6203012,
+    "CostResources": [
+      {
+        "key": 6203015,
+        "value": 1
+      }
+    ],
+    "LinkId": "1005",
+    "LinkDesc": "抽卡系统获取",
+    "ParamList": []
+  },
+  {
+    "ID": 1031,
+    "Level": 3,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv3.Icon_FamilyHeirloom_Lv3",
+    "GiftID": 6203013,
+    "CostResources": [
+      {
+        "key": 6203015,
+        "value": 1
+      }
+    ],
+    "LinkId": "1005",
+    "LinkDesc": "抽卡系统获取",
+    "ParamList": []
+  },
+  {
+    "ID": 1031,
+    "Level": 4,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv4.Icon_FamilyHeirloom_Lv4",
+    "GiftID": 6203014,
+    "CostResources": [
+      {
+        "key": 6203015,
+        "value": 1
+      }
+    ],
+    "LinkId": "1005",
+    "LinkDesc": "抽卡系统获取",
+    "ParamList": []
+  }
+]

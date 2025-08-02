@@ -4,6 +4,7 @@ local FullScreenModeTagName = "Settings.Screen.Common.FullscreenMode"
 local MonitorTagName = "Settings.Screen.Common.Monitor"
 local FPSTagName = "Settings.Screen.Common.MaxFPS"
 local CustomSettingValue = 4
+
 function WBP_GameSettingsItem_C:Construct()
   self.MainComboBox.OnSelectionChanged:Add(self, WBP_GameSettingsItem_C.BindOnSelectionChanged)
   self.MainComboBox.OnOpening:Add(self, self.BindOnComboBoxOpening)
@@ -17,6 +18,7 @@ function WBP_GameSettingsItem_C:Construct()
   self.Btn_LeftSwitch.OnClicked:Add(self, self.BindOnLeftSwitchButtonClicked)
   self.Btn_RightSwitch.OnClicked:Add(self, self.BindOnRightSwitchButtonClicked)
 end
+
 function WBP_GameSettingsItem_C:BindOnInputMethodChanged(InputType)
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   local CommonInputSubsystem = UE.USubsystemBlueprintLibrary.GetLocalPlayerSubsystem(PC, UE.UCommonInputSubsystem:StaticClass())
@@ -27,6 +29,7 @@ function WBP_GameSettingsItem_C:BindOnInputMethodChanged(InputType)
   end
   UpdateVisibility(self.Canvas_GamePadOperateTip, NeedShow)
 end
+
 function WBP_GameSettingsItem_C:BindOnPreviousKeyPressed(TagName)
   if self.TagName ~= TagName then
     return
@@ -37,6 +40,7 @@ function WBP_GameSettingsItem_C:BindOnPreviousKeyPressed(TagName)
     self:BindOnLeftButtonClicked()
   end
 end
+
 function WBP_GameSettingsItem_C:BindOnNextKeyPressed(TagName)
   if self.TagName ~= TagName then
     return
@@ -47,6 +51,7 @@ function WBP_GameSettingsItem_C:BindOnNextKeyPressed(TagName)
     self:BindOnRightButtonClicked()
   end
 end
+
 function WBP_GameSettingsItem_C:BindOnSelectionChanged(SelectedItem, SelectionType)
   if UE.UKismetStringLibrary.IsEmpty(SelectedItem) then
     return
@@ -89,6 +94,7 @@ function WBP_GameSettingsItem_C:BindOnSelectionChanged(SelectedItem, SelectionTy
     LogicGameSetting.SetTempGameSettingsValue(self.TagName, CurSelectedValue)
   end
 end
+
 function WBP_GameSettingsItem_C:BindOnComboBoxOpening()
   self.URGImage_di:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self:RefreshComboItemWidgetSelectedStatus(self.MainComboBox:GetSelectedOption())
@@ -102,6 +108,7 @@ function WBP_GameSettingsItem_C:BindOnComboBoxOpening()
     GameSettingsMain:ChangeScrollListConsumeMouseWheelStatus(UE.EConsumeMouseWheel.Never)
   end
 end
+
 function WBP_GameSettingsItem_C:BindOnComboBoxClosing()
   self.URGImage_di:SetVisibility(UE.ESlateVisibility.Collapsed)
   local GameSettingsMain
@@ -114,6 +121,7 @@ function WBP_GameSettingsItem_C:BindOnComboBoxClosing()
     GameSettingsMain:ChangeScrollListConsumeMouseWheelStatus(UE.EConsumeMouseWheel.WhenScrollingPossible)
   end
 end
+
 function WBP_GameSettingsItem_C:BindOnSliderValueChanged(Value)
   local TargetValue = math.floor(Value)
   self.Txt_Num:SetText(tostring(TargetValue))
@@ -135,20 +143,24 @@ function WBP_GameSettingsItem_C:BindOnSliderValueChanged(Value)
     self.Img_SlideFull:SetClippingValue(0)
   end
 end
+
 function WBP_GameSettingsItem_C:BindOnLeftButtonClicked()
   if self.Btn_Left:GetIsEnabled() then
     self:SetSliderValue(self.Slider_Item:GetValue() - 1)
   end
 end
+
 function WBP_GameSettingsItem_C:SetSliderValue(Value)
   self.Slider_Item:SetValue(Value)
   self:BindOnSliderValueChanged(Value)
 end
+
 function WBP_GameSettingsItem_C:BindOnRightButtonClicked()
   if self.Btn_Right:GetIsEnabled() then
     self:SetSliderValue(self.Slider_Item:GetValue() + 1)
   end
 end
+
 function WBP_GameSettingsItem_C:BindOnMainButtonClicked()
   local SettingRowInfo = LogicGameSetting.GetSettingsRowInfo(self.TagName)
   if SettingRowInfo.Type == UE.ESettingWidgetType.Edit then
@@ -157,38 +169,45 @@ function WBP_GameSettingsItem_C:BindOnMainButtonClicked()
     EventSystem.Invoke(EventDef.GameSettings.OnUrlItemClicked, self.TagName)
   end
 end
+
 function WBP_GameSettingsItem_C:BindOnMainButtonHovered()
   self.IsItemHovered = true
   self.HoveredPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   EventSystem.Invoke(EventDef.GameSettings.OnItemHovered, true, self.TagName)
   self:BindOnInputMethodChanged()
 end
+
 function WBP_GameSettingsItem_C:OnAddedToFocusPath(...)
   self.RGStateController_126:ChangeStatus("Hover")
   self:BindOnMainButtonHovered()
 end
+
 function WBP_GameSettingsItem_C:OnRemovedFromFocusPath(...)
   self.RGStateController_126:ChangeStatus("UnHover")
   self:BindOnMainButtonUnHovered()
 end
+
 function WBP_GameSettingsItem_C:BindOnMainButtonUnHovered()
   self.IsItemHovered = false
   self.HoveredPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   EventSystem.Invoke(EventDef.GameSettings.OnItemHovered, false)
   self:BindOnInputMethodChanged()
 end
+
 function WBP_GameSettingsItem_C:BindOnLeftSwitchButtonClicked()
   if not self.Btn_LeftSwitch:GetIsEnabled() then
     return
   end
   self:SetLeftRightSwitchOptionIndex(self.CurLeftRightSwitchIndex - 1)
 end
+
 function WBP_GameSettingsItem_C:BindOnRightSwitchButtonClicked()
   if not self.Btn_RightSwitch:GetIsEnabled() then
     return
   end
   self:SetLeftRightSwitchOptionIndex(self.CurLeftRightSwitchIndex + 1)
 end
+
 function WBP_GameSettingsItem_C:Show(TagName)
   self.TagName = TagName
   local SettingRowInfo = LogicGameSetting.GetSettingsRowInfo(self.TagName)
@@ -226,6 +245,7 @@ function WBP_GameSettingsItem_C:Show(TagName)
   CommonInputSubsystem.OnInputMethodChanged:Add(self, self.BindOnInputMethodChanged)
   self:BindOnInputMethodChanged()
 end
+
 function WBP_GameSettingsItem_C:RefreshEffectByParentTagOptionStatus(...)
   local SettingRowInfo = LogicGameSetting.GetSettingsRowInfo(self.TagName)
   local ParentOptionTag = SettingRowInfo.EffectByParentTagOption.ParentOptionTag
@@ -248,6 +268,7 @@ function WBP_GameSettingsItem_C:RefreshEffectByParentTagOptionStatus(...)
     LogicGameSetting.SetVisEffectByParentOptionTag(self.TagName, IsContainValue)
   end
 end
+
 function WBP_GameSettingsItem_C:SetMainComboBoxEnableStatus(IsEnable)
   UpdateVisibility(self.URGImage_Disable, not IsEnable, true)
   for key, SingleWidget in pairs(self.ComboItemWidgets) do
@@ -256,6 +277,7 @@ function WBP_GameSettingsItem_C:SetMainComboBoxEnableStatus(IsEnable)
     end
   end
 end
+
 function WBP_GameSettingsItem_C:SetLeftRightSwitchEnableStatus(IsEnable)
   self.Btn_LeftSwitch:SetIsEnabled(IsEnable)
   self.Btn_RightSwitch:SetIsEnabled(IsEnable)
@@ -265,6 +287,7 @@ function WBP_GameSettingsItem_C:SetLeftRightSwitchEnableStatus(IsEnable)
     self.RGStateController_Resolution:ChangeStatus("Unable")
   end
 end
+
 function WBP_GameSettingsItem_C:BindOnGameSettingItemValueBeChanged(ChangedOptionList)
   if not table.Contain(ChangedOptionList, self.TagName) then
     return
@@ -283,6 +306,7 @@ function WBP_GameSettingsItem_C:BindOnGameSettingItemValueBeChanged(ChangedOptio
     self:SetLeftRightSwitchOptionIndex(CurValue)
   end
 end
+
 function WBP_GameSettingsItem_C:BindOnTempGameSettingListChanged(HasChange, ChangeTagName)
   if ChangeTagName then
     if ChangeTagName == FullScreenModeTagName then
@@ -296,13 +320,16 @@ function WBP_GameSettingsItem_C:BindOnTempGameSettingListChanged(HasChange, Chan
     self:JudgeNeedSetComboBoxToCustom()
   end
 end
+
 function WBP_GameSettingsItem_C:BindOnMonitorValueChanged()
   print("WBP_GameSettingsItem_C:BindOnMonitorValueChanged")
   self:InitInfo()
 end
+
 function WBP_GameSettingsItem_C:BindOnUpdateCulture(CultureName)
   self:InitInfo()
 end
+
 function WBP_GameSettingsItem_C:JudgeCanChangeResolution()
   if self.TagName == ResolutionTagName then
     local Value = LogicGameSetting.GetTempGameSettingValue(FullScreenModeTagName)
@@ -334,6 +361,7 @@ function WBP_GameSettingsItem_C:JudgeCanChangeResolution()
     end
   end
 end
+
 function WBP_GameSettingsItem_C:JudgeNeedSetComboBoxToCustom()
   local CurValue = LogicGameSetting.GetTempGameSettingValue(self.TagName)
   CurValue = CurValue or LogicGameSetting.GetGameSettingValue(self.TagName)
@@ -364,11 +392,13 @@ function WBP_GameSettingsItem_C:JudgeNeedSetComboBoxToCustom()
     end
   end
 end
+
 function WBP_GameSettingsItem_C:BindOnItemSelected(TagName)
   if self.TagName == TagName then
     self:SetKeyboardFocus()
   end
 end
+
 function WBP_GameSettingsItem_C:InitInfo()
   if self.Type == UE.ESettingWidgetType.PullDownList then
     self:InitPullDownListInfo()
@@ -378,6 +408,7 @@ function WBP_GameSettingsItem_C:InitInfo()
     self:InitLeftRightSwitchInfo()
   end
 end
+
 function WBP_GameSettingsItem_C:GetPullDownOptions()
   self.SettingOptionToRealValueList = {}
   local SettingRowInfo = LogicGameSetting.GetSettingsRowInfo(self.TagName)
@@ -409,6 +440,7 @@ function WBP_GameSettingsItem_C:GetPullDownOptions()
   end
   return SettingOptions
 end
+
 function WBP_GameSettingsItem_C:InitPullDownListInfo()
   self.MainComboBox:ClearOptions()
   local SettingOptions = self:GetPullDownOptions()
@@ -439,6 +471,7 @@ function WBP_GameSettingsItem_C:InitPullDownListInfo()
     self.MainComboBox:SetSelectedOption(CurSelectedOption)
   end
 end
+
 function WBP_GameSettingsItem_C:GetCurSelectedOptionByRealValue(RealValue)
   for OptionText, OptionValue in pairs(self.SettingOptionToRealValueList) do
     if OptionValue == RealValue then
@@ -447,12 +480,14 @@ function WBP_GameSettingsItem_C:GetCurSelectedOptionByRealValue(RealValue)
   end
   return ""
 end
+
 function WBP_GameSettingsItem_C:AddComboBoxWidget(InUserWidget)
   if not self.ComboItemWidgets then
     self.ComboItemWidgets = {}
   end
   table.insert(self.ComboItemWidgets, InUserWidget)
 end
+
 function WBP_GameSettingsItem_C:RefreshComboItemWidgetSelectedStatus()
   for key, SingleWidget in pairs(self.ComboItemWidgets) do
     if SingleWidget and SingleWidget:IsValid() then
@@ -460,6 +495,7 @@ function WBP_GameSettingsItem_C:RefreshComboItemWidgetSelectedStatus()
     end
   end
 end
+
 function WBP_GameSettingsItem_C:InitSliderBarInfo()
   local SettingRowInfo = LogicGameSetting.GetSettingsRowInfo(self.TagName)
   self.Slider_Item:SetMinValue(SettingRowInfo.MinValue)
@@ -472,6 +508,7 @@ function WBP_GameSettingsItem_C:InitSliderBarInfo()
   CurValue = CurValue or LogicGameSetting.GetGameSettingValue(self.TagName)
   self:SetSliderValue(CurValue)
 end
+
 function WBP_GameSettingsItem_C:InitLeftRightSwitchInfo()
   self.CurLeftRightSwitchIndex = -1
   local SettingOptions = self:GetPullDownOptions()
@@ -525,6 +562,7 @@ function WBP_GameSettingsItem_C:InitLeftRightSwitchInfo()
   HideOtherItem(self.Horizontal_ItemIndexList, Index, true)
   self:SetLeftRightSwitchOptionIndex(CurValue)
 end
+
 function WBP_GameSettingsItem_C:SetLeftRightSwitchOptionIndex(OptionIndex, bSkipCheckVoiceControl, bSkipCheckBan)
   local MaxIndex = table.count(self.LeftRightSwitchOptions)
   if type(OptionIndex) ~= "number" then
@@ -585,6 +623,7 @@ function WBP_GameSettingsItem_C:SetLeftRightSwitchOptionIndex(OptionIndex, bSkip
     LogicGameSetting.SetTempGameSettingsValue(self.TagName, CurRealValue)
   end
 end
+
 function WBP_GameSettingsItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.TagName = nil
@@ -600,7 +639,9 @@ function WBP_GameSettingsItem_C:Hide()
   EventSystem.RemoveListenerNew(EventDef.GameSettings.OnPreviousKeyPressed, self, self.BindOnPreviousKeyPressed)
   EventSystem.RemoveListenerNew(EventDef.GameSettings.OnNextKeyPressed, self, self.BindOnNextKeyPressed)
 end
+
 function WBP_GameSettingsItem_C:Destruct()
   self:Hide()
 end
+
 return WBP_GameSettingsItem_C

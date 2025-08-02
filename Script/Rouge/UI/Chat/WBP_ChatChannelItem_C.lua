@@ -1,8 +1,10 @@
 local WBP_ChatChannelItem_C = UnLua.Class()
 local CompositeRowName = 255
+
 function WBP_ChatChannelItem_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_ChatChannelItem_C:Init(ChannelId)
   local rowName = ChannelId
   if ChannelId == UE.EChatChannel.Composite then
@@ -23,13 +25,17 @@ function WBP_ChatChannelItem_C:Init(ChannelId)
   UpdateVisibility(self.CanvasPanelNameTips, false)
   self.RGTextName:SetText(Name)
 end
+
 function WBP_ChatChannelItem_C:Destruct()
   self.Overridden.Destruct(self)
 end
+
 function WBP_ChatChannelItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   UpdateVisibility(self.CanvasPanelNameTips, true)
 end
+
 function WBP_ChatChannelItem_C:OnMouseLeave(MouseEvent)
   UpdateVisibility(self.CanvasPanelNameTips, false)
 end
+
 return WBP_ChatChannelItem_C

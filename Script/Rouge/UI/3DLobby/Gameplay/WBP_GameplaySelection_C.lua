@@ -1,4 +1,5 @@
 local WBP_GameplaySelection_C = UnLua.Class()
+
 function WBP_GameplaySelection_C:Construct()
   local AllItem = self.ModeSelectionList:GetAllChildren()
   for i, SingleItem in pairs(AllItem) do
@@ -11,10 +12,12 @@ function WBP_GameplaySelection_C:Construct()
     end
   }, 0.33, false)
   self.Btn_SaveSettings.OnClicked:Add(self, WBP_GameplaySelection_C.BindOnSaveSettingsButtonClicked)
+  
   function self.EscFunctionalPanel.MainButtonClicked()
     self:BindOnEscKeyPressed()
   end
 end
+
 function WBP_GameplaySelection_C:BindOnSaveSettingsButtonClicked()
   local MaxUnLockFloor = DataMgr.GetGameFloorByGameMode(self.CurSelectMode)
   if (self.CurSelectMode ~= LogicTeam.GetWorldId() or self.CurSelectFloor ~= LogicTeam.GetFloor()) and MaxUnLockFloor >= self.CurSelectFloor then
@@ -34,6 +37,7 @@ function WBP_GameplaySelection_C:BindOnSaveSettingsButtonClicked()
   end
   self:BindOnEscKeyPressed()
 end
+
 function WBP_GameplaySelection_C:FocusInput()
   self.Overridden.FocusInput(self)
   self:PlayAnimation(self.ani_GameplaySelection_loop, 0.0, 0, UE.EUMGSequencePlayMode.Forward)
@@ -45,17 +49,20 @@ function WBP_GameplaySelection_C:FocusInput()
   })
   EventSystem.AddListener(self, EventDef.Lobby.OnModeInfoItemClicked, WBP_GameplaySelection_C.BindOnModeInfoItemClicked)
 end
+
 function WBP_GameplaySelection_C:BindOnEscKeyPressed()
   if self:IsAnimationPlaying(self.ani_GameplaySelection_in) then
     self:StopAnimation(self.ani_GameplaySelection_in)
   end
   self:PlayAnimation(self.ani_GameplaySelection_out, 0.0, 1, UE.EUMGSequencePlayMode.Forward)
 end
+
 function WBP_GameplaySelection_C:OnAnimationFinished(Animation)
   if Animation == self.ani_GameplaySelection_out then
     self:BindOnGameplaySelectionOutFinished()
   end
 end
+
 function WBP_GameplaySelection_C:BindOnGameplaySelectionOutFinished()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGUIManager:StaticClass())
   if not UIManager then
@@ -64,13 +71,16 @@ function WBP_GameplaySelection_C:BindOnGameplaySelectionOutFinished()
   local WidgetClass = UE.UGameplayStatics.GetObjectClass(self)
   UIManager:Switch(WidgetClass, true)
 end
+
 function WBP_GameplaySelection_C:BindOnModeInfoItemClicked(ModeId, Floor)
   self.CurSelectMode = ModeId
   self.CurSelectFloor = Floor
 end
+
 function WBP_GameplaySelection_C:OnLeftMouseButtonDown()
   EventSystem.Invoke(EventDef.Lobby.OnGameplaySelectionBGClicked)
 end
+
 function WBP_GameplaySelection_C:RefreshModeList()
   local AllItem = self.ModeSelectionList:GetAllChildren()
   for i, SingleItem in pairs(AllItem) do
@@ -103,6 +113,7 @@ function WBP_GameplaySelection_C:RefreshModeList()
   end
   EventSystem.Invoke(EventDef.Lobby.OnModeInfoItemClicked, LogicTeam.GetWorldId(), LogicTeam.GetFloor())
 end
+
 function WBP_GameplaySelection_C:UnfocusInput()
   self.Overridden.UnfocusInput(self)
   self:RemoveListener()
@@ -111,13 +122,16 @@ function WBP_GameplaySelection_C:UnfocusInput()
   end
   LogicLobby.SetCanMove3DLobby(true)
 end
+
 function WBP_GameplaySelection_C:RemoveListener()
   if IsListeningForInputAction(self, self.EscName) then
     StopListeningForInputAction(self, self.EscName, UE.EInputEvent.IE_Pressed)
   end
   EventSystem.RemoveListener(EventDef.Lobby.OnModeInfoItemClicked, WBP_GameplaySelection_C.BindOnModeInfoItemClicked, self)
 end
+
 function WBP_GameplaySelection_C:Destruct()
   self:RemoveListener()
 end
+
 return WBP_GameplaySelection_C

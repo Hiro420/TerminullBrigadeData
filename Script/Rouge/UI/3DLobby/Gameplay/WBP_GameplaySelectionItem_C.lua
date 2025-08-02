@@ -1,4 +1,5 @@
 local WBP_GameplaySelectionItem_C = UnLua.Class()
+
 function WBP_GameplaySelectionItem_C:Construct()
   self.Btn_Main.OnClicked:Add(self, WBP_GameplaySelectionItem_C.BindOnMainButtonClicked)
   self.Btn_Left.OnClicked:Add(self, WBP_GameplaySelectionItem_C.BindOnLeftButtonClicked)
@@ -11,11 +12,13 @@ function WBP_GameplaySelectionItem_C:Construct()
   EventSystem.AddListener(self, EventDef.Lobby.OnModeInfoItemClicked, WBP_GameplaySelectionItem_C.BindOnModeInfoItemClicked)
   EventSystem.AddListener(self, EventDef.Lobby.OnGameplaySelectionBGClicked, WBP_GameplaySelectionItem_C.BindOnGameplaySelectionBGClicked)
 end
+
 function WBP_GameplaySelectionItem_C:BindOnMainButtonClicked()
   if not self.IsSelected then
     EventSystem.Invoke(EventDef.Lobby.OnModeInfoItemClicked, self.ModeId, self.CurSelectFloor)
   end
 end
+
 function WBP_GameplaySelectionItem_C:BindOnLeftButtonClicked()
   local LeftLevelInfo = self.ModeLevels[self.CurSelectFloor - 1]
   if not LeftLevelInfo then
@@ -24,12 +27,15 @@ function WBP_GameplaySelectionItem_C:BindOnLeftButtonClicked()
   end
   EventSystem.Invoke(EventDef.Lobby.OnModeInfoItemClicked, self.ModeId, self.CurSelectFloor - 1)
 end
+
 function WBP_GameplaySelectionItem_C:BindOnLeftButtonHovered()
   self.Img_LeftHover:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_GameplaySelectionItem_C:BindOnLeftButtonUnhovered()
   self.Img_LeftHover:SetVisibility(UE.ESlateVisibility.Hidden)
 end
+
 function WBP_GameplaySelectionItem_C:BindOnRightButtonClicked()
   local LeftLevelInfo = self.ModeLevels[self.CurSelectFloor + 1]
   if not LeftLevelInfo then
@@ -38,12 +44,15 @@ function WBP_GameplaySelectionItem_C:BindOnRightButtonClicked()
   end
   EventSystem.Invoke(EventDef.Lobby.OnModeInfoItemClicked, self.ModeId, self.CurSelectFloor + 1)
 end
+
 function WBP_GameplaySelectionItem_C:BindOnRightButtonHovered()
   self.Img_RightHover:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_GameplaySelectionItem_C:BindOnRightButtonUnhovered()
   self.Img_RightHover:SetVisibility(UE.ESlateVisibility.Hidden)
 end
+
 function WBP_GameplaySelectionItem_C:BindOnDifficultButtonClicked()
   if self.IsOpenDifficultPanel then
     self:ChangeDifficultPanelVis(false)
@@ -52,6 +61,7 @@ function WBP_GameplaySelectionItem_C:BindOnDifficultButtonClicked()
     self:RefreshDifficultList()
   end
 end
+
 function WBP_GameplaySelectionItem_C:BindOnModeInfoItemClicked(ModeId, Floor)
   if self.ModeId == ModeId then
     self.Img_Selected:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -110,11 +120,13 @@ function WBP_GameplaySelectionItem_C:BindOnModeInfoItemClicked(ModeId, Floor)
     self:ChangeDifficultPanelVis(false)
   end
 end
+
 function WBP_GameplaySelectionItem_C:BindOnGameplaySelectionBGClicked()
   if self.IsOpenDifficultPanel then
     self:ChangeDifficultPanelVis(false)
   end
 end
+
 function WBP_GameplaySelectionItem_C:ChangeDifficultPanelVis(IsShow)
   self.IsOpenDifficultPanel = IsShow
   if self.IsOpenDifficultPanel then
@@ -132,6 +144,7 @@ function WBP_GameplaySelectionItem_C:ChangeDifficultPanelVis(IsShow)
     end
   end
 end
+
 function WBP_GameplaySelectionItem_C:RefreshDifficultList()
   local AllItem = self.DifficultList:GetAllChildren()
   for i, SingleItem in pairs(AllItem) do
@@ -146,6 +159,7 @@ function WBP_GameplaySelectionItem_C:RefreshDifficultList()
     Item:Show(i, SingleModeLevelInfo, self.ModeId)
   end
 end
+
 function WBP_GameplaySelectionItem_C:Show(ModeId)
   self:SetVisibility(UE.ESlateVisibility.Visible)
   self.ModeId = ModeId
@@ -170,11 +184,14 @@ function WBP_GameplaySelectionItem_C:Show(ModeId)
   self.Img_LeftHover:SetVisibility(UE.ESlateVisibility.Hidden)
   self.Img_RightHover:SetVisibility(UE.ESlateVisibility.Hidden)
 end
+
 function WBP_GameplaySelectionItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_GameplaySelectionItem_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.OnModeInfoItemClicked, WBP_GameplaySelectionItem_C.BindOnModeInfoItemClicked, self)
   EventSystem.RemoveListener(EventDef.Lobby.OnGameplaySelectionBGClicked, WBP_GameplaySelectionItem_C.BindOnGameplaySelectionBGClicked, self)
 end
+
 return WBP_GameplaySelectionItem_C

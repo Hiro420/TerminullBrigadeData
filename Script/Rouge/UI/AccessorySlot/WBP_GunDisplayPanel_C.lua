@@ -1,4 +1,5 @@
 local WBP_GunDisplayPanel_C = UnLua.Class()
+
 function WBP_GunDisplayPanel_C:UpdateGunDisplayPanel(GunId, GunLevel, AccessoryList, AttributeList, InscriptionIdList, LeftOrRight)
   self.WBP_GunDisplayInfo:UpdateGunDisplayInfo(GunId, GunLevel, AccessoryList, AttributeList)
   local Number = #InscriptionIdList
@@ -10,4 +11,5 @@ function WBP_GunDisplayPanel_C:UpdateGunDisplayPanel(GunId, GunLevel, AccessoryL
     return
   end
 end
+
 return WBP_GunDisplayPanel_C

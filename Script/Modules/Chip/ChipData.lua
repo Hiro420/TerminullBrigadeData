@@ -83,6 +83,7 @@ local ChipData = {
   MaxChipNum = 999,
   CurRareLimit = UE.ERGItemRarity.EIR_Excellent
 }
+
 function ChipData:DealWithTable()
   local allRowNames = GetAllRowNames(DT.DT_Item)
   for indexRowName, vRowName in ipairs(allRowNames) do
@@ -99,6 +100,7 @@ function ChipData:DealWithTable()
     end
   end
 end
+
 function ChipData:UpdateChipBagsSlot()
   if not self.ChipBags then
     return
@@ -131,6 +133,7 @@ function ChipData:UpdateChipBagsSlot()
     EventSystem.Invoke(EventDef.Chip.UpdateChipEquipSlot)
   end
 end
+
 function ChipData:GetEquipedChipListByHeroId(HeroId)
   local chipList = {}
   for k, v in pairs(self.ChipBags) do
@@ -140,6 +143,7 @@ function ChipData:GetEquipedChipListByHeroId(HeroId)
   end
   return chipList
 end
+
 function ChipData:GetEquipedSlotToChipByHeroId(HeroId)
   local chipList = {}
   for k, v in pairs(self.ChipBags) do
@@ -149,6 +153,7 @@ function ChipData:GetEquipedSlotToChipByHeroId(HeroId)
   end
   return chipList
 end
+
 function ChipData:CheckSlotIsUnLock(Slot)
   local tbChipSlot = LuaTableMgr.GetLuaTableByName(TableNames.TBChipSlots)
   if tbChipSlot and tbChipSlot[Slot] then
@@ -160,6 +165,7 @@ function ChipData:CheckSlotIsUnLock(Slot)
   end
   return false
 end
+
 function ChipData:GetEquipedChipsByHeroId(HeroId)
   local slotToChipData = {}
   for k, v in pairs(self.ChipBags) do
@@ -169,6 +175,7 @@ function ChipData:GetEquipedChipsByHeroId(HeroId)
   end
   return slotToChipData
 end
+
 function ChipData:GetMainAttrValueByChipBagItemData(ChipBagItemData)
   if not ChipBagItemData then
     return -1, 0
@@ -179,12 +186,14 @@ function ChipData:GetMainAttrValueByChipBagItemData(ChipBagItemData)
   end
   return ChipBagItemData.TbChipData.AttrID, value
 end
+
 function ChipData:GetChipItemIdListByRarity(ItemRarity)
   if table.IsEmpty(ChipData.RarityToChipItemIdList) then
     ChipData:DealWithTable()
   end
   return ChipData.RarityToChipItemIdList[ItemRarity] or {}
 end
+
 function ChipData:GetChipMaxLvByRarity(Rarity)
   local tbChipLevelUp = LuaTableMgr.GetLuaTableByName(TableNames.TBChipLevelUp)
   if not tbChipLevelUp then
@@ -199,6 +208,7 @@ function ChipData:GetChipMaxLvByRarity(Rarity)
   end
   return 0
 end
+
 function ChipData:IsChip(ConfigId)
   local tbGeneral = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   if tbGeneral and tbGeneral[ConfigId] and 21 == tbGeneral[ConfigId].Type then
@@ -206,6 +216,7 @@ function ChipData:IsChip(ConfigId)
   end
   return false
 end
+
 function ChipData:CreateChipBagItemData(ChipResId, SubAttr, MainAttrGrowth, bindheroID, equipHeroID, Inscription, Slot, level, exp, state, UniqueID)
   local chipBagItemData = {
     Chip = {}
@@ -228,6 +239,7 @@ function ChipData:CreateChipBagItemData(ChipResId, SubAttr, MainAttrGrowth, bind
   chipBagItemData.ChipUpgradeMat = nil
   return chipBagItemData
 end
+
 function ChipData:CreateChipBagItemDataByUpgradeMat(ChipUpgradeMatResIdD, Num)
   local chipBagItemData = {Chip = nil}
   chipBagItemData.TbChipData = nil
@@ -239,6 +251,7 @@ function ChipData:CreateChipBagItemDataByUpgradeMat(ChipUpgradeMatResIdD, Num)
   }
   return chipBagItemData
 end
+
 function ChipData:CheckChipEqual(FirstChipBagItem, SecondChipBagItem)
   if not FirstChipBagItem or not SecondChipBagItem then
     print("CheckChipEqual: FirstChipBagItem or SecondChipBagItem is nil")
@@ -271,6 +284,7 @@ function ChipData:CheckChipEqual(FirstChipBagItem, SecondChipBagItem)
   end
   return true
 end
+
 function ChipData:UpdateChipBagDataByChipDetail(ChipBagData, ChipDetail)
   if ChipDetail then
     ChipBagData.Chip.id = ChipDetail.id
@@ -279,6 +293,7 @@ function ChipData:UpdateChipBagDataByChipDetail(ChipBagData, ChipDetail)
   end
   ChipBagData.bRequestedDetail = true
 end
+
 function ChipData:GetEquipedChipIDs()
   local equipedChipIDs = {}
   for iHero, vHero in ipairs(DataMgr.GetMyHeroInfo().heros) do
@@ -290,9 +305,11 @@ function ChipData:GetEquipedChipIDs()
   end
   return equipedChipIDs
 end
+
 function ChipData:CheckBagIsEmpty()
   return table.IsEmpty(ChipData.ChipBags)
 end
+
 function ChipData:CreateChipAttrGrowth(AttrGrowth)
   if not AttrGrowth then
     return {}
@@ -303,4 +320,5 @@ function ChipData:CreateChipAttrGrowth(AttrGrowth)
   end
   return AttrGrowthData
 end
+
 return ChipData

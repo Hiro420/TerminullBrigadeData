@@ -1,5 +1,6 @@
 local WBP_FetterPanel_C = UnLua.Class()
 local ListContainer = require("Rouge.UI.Common.ListContainer")
+
 function WBP_FetterPanel_C:Construct()
   self.ListContainer = ListContainer.New(self.ItemTemplate:StaticClass())
   table.insert(self.ListContainer.AllWidgets, self.ItemTemplate)
@@ -7,11 +8,13 @@ function WBP_FetterPanel_C:Construct()
   EventSystem.AddListener(self, EventDef.Lobby.FetterHeroItemLeftClicked, WBP_FetterPanel_C.BindOnFetterHeroItemClicked)
   EventSystem.AddListener(self, EventDef.Lobby.FetterHeroInfoUpdate, WBP_FetterPanel_C.BindOnFetterHeroInfoUpdate)
 end
+
 function WBP_FetterPanel_C:BindOnEscButtonClicked()
   if self.OnEscButtonClicked then
     self:OnEscButtonClicked()
   end
 end
+
 function WBP_FetterPanel_C:BindOnFetterHeroItemClicked(HeroId)
   if 0 == HeroId then
     self.FetterTips:HidePanel()
@@ -21,15 +24,18 @@ function WBP_FetterPanel_C:BindOnFetterHeroItemClicked(HeroId)
   local SkillGroupId = LogicRole.GetFetterSkillGroupIdByHeroId(HeroId)
   self.FetterTips:RefreshInfo(SkillGroupId, HeroId, self.CurHeroId)
 end
+
 function WBP_FetterPanel_C:RefreshInfo(CurHeroId)
   self.CurHeroId = CurHeroId
   self:RefreshHeroList()
   EventSystem.Invoke(EventDef.Lobby.FetterHeroItemLeftClicked, 0)
 end
+
 function WBP_FetterPanel_C:OnMouseButtonDown(MyGeometry, MouseEvent)
   EventSystem.Invoke(EventDef.Lobby.FetterHeroItemLeftClicked, 0)
   return UE.FEventReply()
 end
+
 function WBP_FetterPanel_C:RefreshHeroList()
   local HeroList = DataMgr.GetMyHeroInfo()
   self.ListContainer:ClearAllUseWidgets()
@@ -96,22 +102,27 @@ function WBP_FetterPanel_C:RefreshHeroList()
     end
   end
 end
+
 function WBP_FetterPanel_C:BindOnFetterHeroInfoUpdate()
   self:UpdateHeroListPos()
 end
+
 function WBP_FetterPanel_C:UpdateHeroListPos()
   if self.CurHeroId then
     self:RefreshHeroList()
   end
   EventSystem.Invoke(EventDef.Lobby.FetterHeroItemLeftClicked, self.CurFetterItemId)
 end
+
 function WBP_FetterPanel_C:HidePanel()
   self.ListContainer:ClearAllUseWidgets()
 end
+
 function WBP_FetterPanel_C:Destruct()
   self.ListContainer:ClearAllWidgets()
   self.ListContainer = nil
   EventSystem.RemoveListener(EventDef.Lobby.FetterHeroItemLeftClicked, WBP_FetterPanel_C.BindOnFetterHeroItemClicked, self)
   EventSystem.RemoveListener(EventDef.Lobby.FetterHeroInfoUpdate, WBP_FetterPanel_C.BindOnFetterHeroInfoUpdate, self)
 end
+
 return WBP_FetterPanel_C

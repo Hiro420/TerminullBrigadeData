@@ -1,8 +1,11 @@
 local WBP_ProficiencyAwardNormalTips = UnLua.Class()
+
 function WBP_ProficiencyAwardNormalTips:Construct()
 end
+
 function WBP_ProficiencyAwardNormalTips:Destruct()
 end
+
 function WBP_ProficiencyAwardNormalTips:Show(RewardId, IsInscription, Level, IsUnlock)
   UpdateVisibility(self, true)
   local CanOperate = false
@@ -38,9 +41,12 @@ function WBP_ProficiencyAwardNormalTips:Show(RewardId, IsInscription, Level, IsU
   end
   UpdateVisibility(self.WBP_CustomKeyName, CanOperate)
 end
+
 function WBP_ProficiencyAwardNormalTips:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_ProficiencyAwardNormalTips:ShowPreview()
 end
+
 return WBP_ProficiencyAwardNormalTips

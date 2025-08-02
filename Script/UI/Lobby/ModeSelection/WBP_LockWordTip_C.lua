@@ -1,8 +1,10 @@
 local WBP_LockWordTip_C = UnLua.Class()
 local LockFloorText = NSLOCTEXT("WBP_LockTip", "LockFloorText", "\228\187\165\228\184\139\233\152\159\229\145\152\230\156\170\232\167\163\233\148\129\232\175\165\233\154\190\229\186\166")
 local LockModeText = NSLOCTEXT("WBP_LockTip", "LockFloorText", "\228\187\165\228\184\139\233\152\159\229\145\152\230\156\170\232\167\163\233\148\129\232\175\165\230\168\161\229\188\143")
+
 function WBP_LockWordTip_C:Construct()
 end
+
 function WBP_LockWordTip_C:Show(TeamMember, IsMode)
   local TeammateInfos = {
     [1] = self.Teammate_Info,
@@ -33,6 +35,8 @@ function WBP_LockWordTip_C:Show(TeamMember, IsMode)
     end
   end
 end
+
 function WBP_LockWordTip_C:Destruct()
 end
+
 return WBP_LockWordTip_C

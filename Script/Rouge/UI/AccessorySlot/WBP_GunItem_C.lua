@@ -1,12 +1,15 @@
 local WBP_GunItem_C = UnLua.Class()
+
 function WBP_GunItem_C:Construct()
   self.Button_Selected.OnClicked:Add(self, WBP_GunItem_C.OnClicked_Button)
   EventSystem.AddListener(self, EventDef.GunDisplayPanel.OnGunSlotClicked, WBP_GunItem_C.OnGunSlotClicked)
 end
+
 function WBP_GunItem_C:Destruct()
   self.Button_Selected.OnClicked:Remove(self, WBP_GunItem_C.OnClicked_Button)
   EventSystem.RemoveListener(EventDef.GunDisplayPanel.OnGunSlotClicked, WBP_GunItem_C.OnGunSlotClicked, self)
 end
+
 function WBP_GunItem_C:UpdateGunItem(GunInfo)
   self.GunId = GunInfo.GunId
   self.TextBlock_GunName:SetText(tostring(GunInfo.Number))
@@ -56,6 +59,7 @@ function WBP_GunItem_C:UpdateGunItem(GunInfo)
   self.Image_Gun:SetBrush(Brush)
   self.WBP_GunAccessorySlotItemBox:UpdateGunAccessorySlotItemBox(GunInfo.AccessoryNumber, ItemData.WorldTypeId)
 end
+
 function WBP_GunItem_C:OnGunSlotClicked(GunId)
   if GunId ~= self.GunId then
     self.Overlay_GunItem:SetRenderScale(UE.FVector2D(0.8, 0.8))
@@ -63,7 +67,9 @@ function WBP_GunItem_C:OnGunSlotClicked(GunId)
     self.Overlay_GunItem:SetRenderScale(UE.FVector2D(1, 1))
   end
 end
+
 function WBP_GunItem_C:OnClicked_Button()
   EventSystem.Invoke(EventDef.GunDisplayPanel.OnGunSlotClicked, self.GunId)
 end
+
 return WBP_GunItem_C

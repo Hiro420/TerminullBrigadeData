@@ -1,15 +1,14 @@
 ﻿{
   "1": {
-    "detailtext": "",
     "clues": {
       "1": 101,
       "2": 102
     },
-    "id": 1,
-    "baseimage": "",
-    "brieftext": "",
-    "icon": "",
     "name": "中心塔",
+    "id": 1,
+    "brieftext": "",
+    "detailtext": "",
+    "icon": "",
     "phasereward": {
       "1": {
         "key": 50,
@@ -19,19 +18,19 @@
         "key": 100,
         "value": 102
       }
-    }
+    },
+    "baseimage": ""
   },
   "2": {
-    "detailtext": "",
     "clues": {
       "1": 201,
       "2": 202
     },
-    "id": 2,
-    "baseimage": "",
-    "brieftext": "",
-    "icon": "",
     "name": "地心塔",
+    "id": 2,
+    "brieftext": "",
+    "detailtext": "",
+    "icon": "",
     "phasereward": {
       "1": {
         "key": 50,
@@ -41,6 +40,7 @@
         "key": 100,
         "value": 202
       }
-    }
+    },
+    "baseimage": ""
   }
 }

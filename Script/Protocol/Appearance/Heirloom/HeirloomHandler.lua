@@ -1,6 +1,7 @@
 local rapidjson = require("rapidjson")
 local HeirloomData = require("Modules.Appearance.Heirloom.HeirloomData")
 local HeirloomHandler = {}
+
 function HeirloomHandler:RequestGetFamilytreasureToServer(SuccFunc)
   print("HeirloomHandler:RequestGetFamilytreasureToServer")
   HttpCommunication.RequestByGet("hero/getfamilytreasure", {
@@ -21,6 +22,7 @@ function HeirloomHandler:RequestGetFamilytreasureToServer(SuccFunc)
     end
   })
 end
+
 function HeirloomHandler:RequestUpgradeFamilyTreasure(Id)
   if HeirloomHandler.LastRequestTime and GetCurrentUTCTimestamp() - HeirloomHandler.LastRequestTime < 1.0 then
     print("HeirloomHandler:RequestUpgradeFamilyTreasure \229\143\145\233\128\129\229\164\170\233\162\145\231\185\129")
@@ -44,4 +46,5 @@ function HeirloomHandler:RequestUpgradeFamilyTreasure(Id)
     end
   })
 end
+
 return HeirloomHandler

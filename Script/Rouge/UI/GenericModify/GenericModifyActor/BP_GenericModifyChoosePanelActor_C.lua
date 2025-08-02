@@ -1,15 +1,18 @@
 local BP_GenericModifyChoosePanelActor_C = UnLua.Class()
+
 function BP_GenericModifyChoosePanelActor_C:ReceiveBeginPlay()
   self.Overridden.ReceiveBeginPlay(self)
   self:UpdateActived(false)
   self:UpdateUICaptureBgActor(false)
 end
+
 function BP_GenericModifyChoosePanelActor_C:InitGenericModifyChoosePanelActor(InteractComp, Target)
   local ChoosePanel = self.RGWidget:GetWidget()
   if ChoosePanel then
     ChoosePanel:InitGenericModifyChoosePanel(InteractComp, Target)
   end
 end
+
 function BP_GenericModifyChoosePanelActor_C:FocusInput()
   self:UpdateActived(true)
   self:UpdateUICaptureBgActor(true)
@@ -23,12 +26,14 @@ function BP_GenericModifyChoosePanelActor_C:FocusInput()
   end
   self.WidgetInteraction.OnHoveredWidgetChanged:Add(self, self.OnHoveredWidgetChanged)
 end
+
 function BP_GenericModifyChoosePanelActor_C:OnDisplay()
   local ChoosePanelBg = self.RGWidget1:GetWidget()
   if ChoosePanelBg then
     ChoosePanelBg:OnDisplay()
   end
 end
+
 function BP_GenericModifyChoosePanelActor_C:UnfocusInput()
   self:UpdateActived(false)
   self:UpdateUICaptureBgActor(false)
@@ -45,6 +50,7 @@ function BP_GenericModifyChoosePanelActor_C:UnfocusInput()
   end
   self.WidgetInteraction.OnHoveredWidgetChanged:Remove(self, self.OnHoveredWidgetChanged)
 end
+
 function BP_GenericModifyChoosePanelActor_C:OnUnDisplay()
   self:UpdateActived(false)
   self:UpdateUICaptureBgActor(false)
@@ -61,6 +67,7 @@ function BP_GenericModifyChoosePanelActor_C:OnUnDisplay()
     ChoosePanelBg:OnUnDisplay()
   end
 end
+
 function BP_GenericModifyChoosePanelActor_C:OnClose()
   local ChoosePanel = self.RGWidget:GetWidget()
   if ChoosePanel then
@@ -75,6 +82,7 @@ function BP_GenericModifyChoosePanelActor_C:OnClose()
   end
   self:Destroy()
 end
+
 function BP_GenericModifyChoosePanelActor_C:FadeOut(RGGenericModifyParam, GroupId)
   local ChoosePanel = self.RGWidget:GetWidget()
   if ChoosePanel then
@@ -85,6 +93,7 @@ function BP_GenericModifyChoosePanelActor_C:FadeOut(RGGenericModifyParam, GroupI
     ChoosePanelBg:FadeOut()
   end
 end
+
 function BP_GenericModifyChoosePanelActor_C:UpdatePanel(PreviewModifyListParam, InteractComp, HoverFunc, ParentView)
   local ChooseItemList = self.RGWidget:GetWidget()
   if ChooseItemList then
@@ -104,6 +113,7 @@ function BP_GenericModifyChoosePanelActor_C:UpdatePanel(PreviewModifyListParam, 
     end
   end
 end
+
 function BP_GenericModifyChoosePanelActor_C:UpdateModifyListByShop(PreviewModifyListParam, HoverFunc, ParentView)
   local ChooseItemList = self.RGWidget:GetWidget()
   if ChooseItemList then
@@ -126,6 +136,7 @@ function BP_GenericModifyChoosePanelActor_C:UpdateModifyListByShop(PreviewModify
     end
   end
 end
+
 function BP_GenericModifyChoosePanelActor_C:ReceiveEndPlay(EndPlayReason)
   self.Overridden.ReceiveEndPlay(self, EndPlayReason)
   if self.GenericModifyActor then
@@ -133,6 +144,7 @@ function BP_GenericModifyChoosePanelActor_C:ReceiveEndPlay(EndPlayReason)
     self.GenericModifyActor = nil
   end
 end
+
 function BP_GenericModifyChoosePanelActor_C:UpdateActived(bIsActived)
   self:SetActorHiddenInGame(not bIsActived)
   self.WidgetInteraction.bEnableHitTesting = bIsActived
@@ -152,6 +164,7 @@ function BP_GenericModifyChoosePanelActor_C:UpdateActived(bIsActived)
     self:K2_SetActorLocation(UE.FVector(0, 0, -10000000), true, Result, true)
   end
 end
+
 function BP_GenericModifyChoosePanelActor_C:UpdateInput(bEnableInput)
   if bEnableInput then
     self:EnableInput(UE.UGameplayStatics.GetPlayerController(self.RGWidget:GetWidget(), 0))
@@ -163,9 +176,11 @@ function BP_GenericModifyChoosePanelActor_C:UpdateInput(bEnableInput)
     ChooseItemList:UpdateInput(bEnableInput)
   end
 end
+
 function BP_GenericModifyChoosePanelActor_C:UpdateUICaptureBgActor(bIsShow)
   UpdateUICaptureBgActor(bIsShow)
 end
+
 function BP_GenericModifyChoosePanelActor_C:GetTypeId(Widget)
   local Character = Widget:GetOwningPlayerPawn()
   if not Character then
@@ -173,6 +188,7 @@ function BP_GenericModifyChoosePanelActor_C:GetTypeId(Widget)
   end
   return Character:GetTypeID()
 end
+
 function BP_GenericModifyChoosePanelActor_C:GetRoleDrawing(Widget)
   local Character = Widget:GetOwningPlayerPawn()
   if not Character then
@@ -192,6 +208,7 @@ function BP_GenericModifyChoosePanelActor_C:GetRoleDrawing(Widget)
   end
   return SoftObjRef
 end
+
 function BP_GenericModifyChoosePanelActor_C:OnHoveredWidgetChanged(WidgetCom, PreviousWidgetCom)
   if LogicGenericModify.bIsDebug then
     if not UE.RGUtil.IsUObjectValid(WidgetCom) then
@@ -202,6 +219,7 @@ function BP_GenericModifyChoosePanelActor_C:OnHoveredWidgetChanged(WidgetCom, Pr
     end
   end
 end
+
 function BP_GenericModifyChoosePanelActor_C:SetCanInput(bCanInput)
   if bCanInput then
     self.WidgetInteraction.InteractionSource = UE.EWidgetInteractionSource.Mouse
@@ -209,4 +227,5 @@ function BP_GenericModifyChoosePanelActor_C:SetCanInput(bCanInput)
     self.WidgetInteraction.InteractionSource = UE.EWidgetInteractionSource.Custom
   end
 end
+
 return BP_GenericModifyChoosePanelActor_C

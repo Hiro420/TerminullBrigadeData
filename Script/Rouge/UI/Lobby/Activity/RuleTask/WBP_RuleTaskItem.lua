@@ -1,10 +1,12 @@
 local WBP_RuleTaskItem = UnLua.Class()
 local RuleTaskData = require("Modules.RuleTask.RuleTaskData")
+
 function WBP_RuleTaskItem:Construct()
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
   self.Btn_Main.OnHovered:Add(self, self.BindOnMainButtonHovered)
   self.Btn_Main.OnUnhovered:Add(self, self.BindOnMainButtonUnhovered)
 end
+
 function WBP_RuleTaskItem:Show(RuleInfoId)
   self.RuleInfoId = RuleInfoId
   self.WBP_RedDotView:ChangeRedDotIdByTag(self.RuleInfoId)
@@ -21,6 +23,7 @@ function WBP_RuleTaskItem:Show(RuleInfoId)
   SetImageBrushByPath(self.Img_FinishedIcon, RowInfo.FinishedIconPath)
   self:RefreshStatus()
 end
+
 function WBP_RuleTaskItem:RefreshStatus(...)
   if not self.IsShow then
     return
@@ -73,9 +76,11 @@ function WBP_RuleTaskItem:RefreshStatus(...)
     self.Txt_AllNum:SetText(MainTaskAllNum + MinorTaskAllNum)
   end
 end
+
 function WBP_RuleTaskItem:GetMainTaskGroupStatus()
   return RuleTaskData:GetTaskGroupState(self.MainTaskGroupId)
 end
+
 function WBP_RuleTaskItem:BindOnMainButtonClicked(...)
   if self.IsLockByTime then
     ShowWaveWindow(self.LockWaveId)
@@ -87,6 +92,7 @@ function WBP_RuleTaskItem:BindOnMainButtonClicked(...)
   end
   EventSystem.Invoke(EventDef.RuleTask.OnShowRuleTaskDetailPanel, self.RuleInfoId)
 end
+
 function WBP_RuleTaskItem:BindOnMainButtonHovered(...)
   local WidgetClassPath = "/Game/Rouge/UI/Lobby/Activity/RuleTask/WBP_RuleTaskItemTip.WBP_RuleTaskItemTip_C"
   local TipsOffset = UE.FVector2D(90, 0)
@@ -96,11 +102,14 @@ function WBP_RuleTaskItem:BindOnMainButtonHovered(...)
   self.WBP_RuleTaskItemTip = ShowCommonTips(nil, self, nil, WidgetClassPath, nil, nil, TipsOffset)
   self.WBP_RuleTaskItemTip:Show(self.RuleInfoId)
 end
+
 function WBP_RuleTaskItem:BindOnMainButtonUnhovered(...)
   UpdateVisibility(self.WBP_RuleTaskItemTip, false)
 end
+
 function WBP_RuleTaskItem:GetToolTipWidget(...)
 end
+
 function WBP_RuleTaskItem:Hide(...)
   UpdateVisibility(self, false)
   self.IsShow = false
@@ -110,4 +119,5 @@ function WBP_RuleTaskItem:Hide(...)
     UpdateVisibility(self.WBP_RuleTaskItemTip, false)
   end
 end
+
 return WBP_RuleTaskItem

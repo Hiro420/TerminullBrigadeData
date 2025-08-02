@@ -7,6 +7,7 @@ local PuzzleInfoConfig = require("GameConfig.Puzzle.PuzzleInfoConfig")
 local PuzzleUpgrade = "ChipUpgrade"
 local PuzzleLock = "ChipLock"
 local PuzzleDiscard = "ChipDiscard"
+
 function WBP_PuzzleItemTip:Show(PuzzleId, InPackageInfo, InDetailInfo, InGemPackageInfoList)
   self.PuzzleId = PuzzleId
   local PackageInfo = InPackageInfo
@@ -184,13 +185,15 @@ function WBP_PuzzleItemTip:Show(PuzzleId, InPackageInfo, InDetailInfo, InGemPack
   UpdateVisibility(self.CanvasPanel_SpecialAttr, Inscription > 0)
   if Inscription > 0 then
     self.RGRichTextBlockSpecialDesc:SetText(GetLuaInscriptionDesc(Inscription))
-    self.Txt_InscriptionName:SetText(GetInscriptionName(Inscription))
+    self.Txt_InscriptionName:SetText(PuzzleData:GetPuzzleInscriptionName(Inscription))
   end
 end
+
 function WBP_PuzzleItemTip:ShowWithoutOperator(PuzzleId, InPackageInfo, InDetailInfo)
   self:Show(PuzzleId, InPackageInfo, InDetailInfo)
   self:HideOperateTip()
 end
+
 function WBP_PuzzleItemTip:ListenInputEvent(IsInMainView)
   self.IsInMainView = IsInMainView
   if not IsListeningForInputAction(self, PuzzleDiscard, UE.EInputEvent.IE_Pressed) then
@@ -217,6 +220,7 @@ function WBP_PuzzleItemTip:ListenInputEvent(IsInMainView)
   UpdateVisibility(self.Overlay_Upgrade, self.IsInMainView)
   UpdateVisibility(self.Overlay_EquipTip, self.IsInMainView)
 end
+
 function WBP_PuzzleItemTip:BindOnDiscardKeyPressed(...)
   if not self.PuzzleId then
     return
@@ -228,6 +232,7 @@ function WBP_PuzzleItemTip:BindOnDiscardKeyPressed(...)
     PuzzleHandler:RequestCancelLockOrDiscardPuzzle(self.PuzzleId)
   end
 end
+
 function WBP_PuzzleItemTip:BindOnLockKeyPressed(...)
   if not self.PuzzleId then
     return
@@ -239,15 +244,18 @@ function WBP_PuzzleItemTip:BindOnLockKeyPressed(...)
     PuzzleHandler:RequestCancelLockOrDiscardPuzzle(self.PuzzleId)
   end
 end
+
 function WBP_PuzzleItemTip:BindOnUpgradeKeyPressed(...)
   UIMgr:Show(ViewID.UI_PuzzleDevelopMain, true, self.PuzzleId)
 end
+
 function WBP_PuzzleItemTip:BindOnUnEquipKeyPressed(...)
   local PuzzleView = UIMgr:GetLuaFromActiveView(ViewID.UI_Puzzle)
   if PuzzleView then
     PuzzleView:OnRightMouseButtonDown()
   end
 end
+
 function WBP_PuzzleItemTip:RefreshOperateVis()
   UpdateVisibility(self.Overlay_OperateTip, true)
   local PackageInfo = self.PackageInfo
@@ -260,9 +268,11 @@ function WBP_PuzzleItemTip:RefreshOperateVis()
   UpdateVisibility(self.WBP_InteractTipWidgetDiscard, PackageInfo.state == EPuzzleStatus.Normal)
   UpdateVisibility(self.WBP_InteractTipWidgetCancelDiscard, PackageInfo.state == EPuzzleStatus.Discard)
 end
+
 function WBP_PuzzleItemTip:HideOperateTip(...)
   UpdateVisibility(self.Overlay_OperateTip, false)
 end
+
 function WBP_PuzzleItemTip:Hide()
   UpdateVisibility(self, false)
   if IsListeningForInputAction(self, PuzzleDiscard, UE.EInputEvent.IE_Pressed) then
@@ -276,7 +286,9 @@ function WBP_PuzzleItemTip:Hide()
   end
   self.WBP_InteractTipWidgetUnEquip:UnBindInteractAndClickEvent(self, self.BindOnUnEquipKeyPressed)
 end
+
 function WBP_PuzzleItemTip:Destruct(...)
   self:Hide()
 end
+
 return WBP_PuzzleItemTip

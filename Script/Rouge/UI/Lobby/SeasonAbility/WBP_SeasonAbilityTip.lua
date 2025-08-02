@@ -1,5 +1,6 @@
 local WBP_SeasonAbilityTip = UnLua.Class()
 local SeasonAbilityData = require("Modules.SeasonAbility.SeasonAbilityData")
+
 function WBP_SeasonAbilityTip:Show(HeroId, AbilityId)
   self.CurHeroId = HeroId
   self.AbilityId = AbilityId
@@ -119,13 +120,16 @@ function WBP_SeasonAbilityTip:Show(HeroId, AbilityId)
     end
   end
 end
+
 function WBP_SeasonAbilityTip:Hide(...)
   UpdateVisibility(self, false)
   if self.MediaPlayer:IsPlaying() then
     self.MediaPlayer:Close()
   end
 end
+
 function WBP_SeasonAbilityTip:Destruct(...)
   self:Hide()
 end
+
 return WBP_SeasonAbilityTip

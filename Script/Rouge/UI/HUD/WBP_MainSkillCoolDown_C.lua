@@ -1,4 +1,5 @@
 local WBP_MainSkillCoolDown_C = UnLua.Class()
+
 function WBP_MainSkillCoolDown_C:Construct()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -34,6 +35,7 @@ function WBP_MainSkillCoolDown_C:Construct()
   ListenObjectMessage(nil, GMP.MSG_World_Character_OnEnterState, self, self.BindOnCharacterEnterState)
   ListenObjectMessage(nil, GMP.MSG_World_Character_OnExitState, self, self.BindOnCharacterExitState)
 end
+
 function WBP_MainSkillCoolDown_C:InitSkillUnNormalState(...)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -53,6 +55,7 @@ function WBP_MainSkillCoolDown_C:InitSkillUnNormalState(...)
   end
   self:RefreshUnNomalState()
 end
+
 function WBP_MainSkillCoolDown_C:BindOnBeginWaitSkillRetrigger(SkillType, MaxWaitTime)
   if self.SkillType ~= SkillType then
     return
@@ -65,6 +68,7 @@ function WBP_MainSkillCoolDown_C:BindOnBeginWaitSkillRetrigger(SkillType, MaxWai
   UpdateVisibility(self.CanvasPanel_SkillRetrigger, true)
   self:PlayAnimation(self.Ani_SkillRetrigger_loop, 0.0, 0, UE.EUMGSequencePlayMode.Forward, 1.0, false)
 end
+
 function WBP_MainSkillCoolDown_C:EndSkillRetrigger()
   self.IsInSkillRetrigger = false
   UpdateVisibility(self.Img_SkillRetrigger, false)
@@ -73,6 +77,7 @@ function WBP_MainSkillCoolDown_C:EndSkillRetrigger()
     self:StopAnimation(self.Ani_SkillRetrigger_loop)
   end
 end
+
 function WBP_MainSkillCoolDown_C:BindOnEndWaitSkillRetrigger(SkillType)
   if self.SkillType ~= SkillType then
     return
@@ -80,16 +85,19 @@ function WBP_MainSkillCoolDown_C:BindOnEndWaitSkillRetrigger(SkillType)
   print("WBP_SkillCoolDown_C:BindOnEndWaitSkillRetrigger")
   self:EndSkillRetrigger()
 end
+
 function WBP_MainSkillCoolDown_C:OnHeroDying(Target)
   if Target == UE.UGameplayStatics.GetPlayerCharacter(self, 0) then
     UpdateVisibility(self, false)
   end
 end
+
 function WBP_MainSkillCoolDown_C:OnHeroRescue(Target)
   if Target == UE.UGameplayStatics.GetPlayerCharacter(self, 0) then
     UpdateVisibility(self, true)
   end
 end
+
 function WBP_MainSkillCoolDown_C:BindOnInputForbiddenUpdated(Owner, InputId, IsForbidden)
   if InputId == self.SkillType then
     self.IsForbidden = IsForbidden
@@ -101,6 +109,7 @@ function WBP_MainSkillCoolDown_C:BindOnInputForbiddenUpdated(Owner, InputId, IsF
     end
   end
 end
+
 function WBP_MainSkillCoolDown_C:RefreshLockPanelVis()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   local InputComp = Character:GetComponentByClass(UE.URGActorInputHandle:StaticClass())
@@ -114,6 +123,7 @@ function WBP_MainSkillCoolDown_C:RefreshLockPanelVis()
     self.LockPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_MainSkillCoolDown_C:BindOnEnergyAttributeChanged(NewValue, OldValue)
   self:UpdateSkillCoolDownPercent()
   if not self.IsCoolDown and LogicHUD.OldMainSkillEnergyValue and LogicHUD.OldMainSkillMaxEnergyValue and LogicHUD.OldMainSkillEnergyValue < LogicHUD.OldMainSkillMaxEnergyValue then
@@ -126,6 +136,7 @@ function WBP_MainSkillCoolDown_C:BindOnEnergyAttributeChanged(NewValue, OldValue
   LogicHUD.OldMainSkillEnergyValue = self:GetAttributeValue(self.EnergyAttribute)
   LogicHUD.OldMainSkillMaxEnergyValue = self:GetAttributeValue(self.MaxEnergyAttribute)
 end
+
 function WBP_MainSkillCoolDown_C:BindOnAbilityTagUpdate(Tag, bTagExist, TargetActor)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if TargetActor ~= Character then
@@ -140,10 +151,12 @@ function WBP_MainSkillCoolDown_C:BindOnAbilityTagUpdate(Tag, bTagExist, TargetAc
     self:RefreshUnNomalState()
   end
 end
+
 function WBP_MainSkillCoolDown_C:RefreshUnNomalState(...)
   self.IsInUnNormalState = self.IsInFreezeSkill or self.ForbiddenSkillTagList and table.count(self.ForbiddenSkillTagList) > 0
   self:ChangeProhibitVis(self.IsInUnNormalState)
 end
+
 function WBP_MainSkillCoolDown_C:BindOnCharacterEnterState(TargetActor, Tag)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if TargetActor ~= Character then
@@ -158,6 +171,7 @@ function WBP_MainSkillCoolDown_C:BindOnCharacterEnterState(TargetActor, Tag)
   self.ForbiddenSkillTagList[UE.UBlueprintGameplayTagLibrary.GetTagName(Tag)] = true
   self:RefreshUnNomalState()
 end
+
 function WBP_MainSkillCoolDown_C:BindOnCharacterExitState(TargetActor, Tag, IsBlocked)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if TargetActor ~= Character then
@@ -169,6 +183,7 @@ function WBP_MainSkillCoolDown_C:BindOnCharacterExitState(TargetActor, Tag, IsBl
   self.ForbiddenSkillTagList[UE.UBlueprintGameplayTagLibrary.GetTagName(Tag)] = nil
   self:RefreshUnNomalState()
 end
+
 function WBP_MainSkillCoolDown_C:ChangeProhibitVis(IsInProhibitState)
   if IsInProhibitState then
     self.Img_Disable:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -176,6 +191,7 @@ function WBP_MainSkillCoolDown_C:ChangeProhibitVis(IsInProhibitState)
     self.Img_Disable:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_MainSkillCoolDown_C:GetAttributeValue(Attribute)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -188,6 +204,7 @@ function WBP_MainSkillCoolDown_C:GetAttributeValue(Attribute)
   local AttributeValue = UE.UAbilitySystemBlueprintLibrary.GetFloatAttributeFromAbilitySystemComponent(ASC, Attribute, nil)
   return AttributeValue
 end
+
 function WBP_MainSkillCoolDown_C:UpdateSkillCoolDownPercent()
   local EnergyValue = self:GetAttributeValue(self.EnergyAttribute)
   local MaxEnergyValue = self:GetAttributeValue(self.MaxEnergyAttribute)
@@ -202,6 +219,7 @@ function WBP_MainSkillCoolDown_C:UpdateSkillCoolDownPercent()
     DynamicMaterial:SetScalarParameterValue("CirclePrecent", TargetValue)
   end
 end
+
 function WBP_MainSkillCoolDown_C:UpdateSkillPercentPanelVis()
   if not self.IsCoolDown or self.IsForbidden then
     self.SkillPercentPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -209,6 +227,7 @@ function WBP_MainSkillCoolDown_C:UpdateSkillPercentPanelVis()
     self.SkillPercentPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function WBP_MainSkillCoolDown_C:ChangeSkillStatus(IsCoolDown)
   if self:IsSkillForbidden() then
     self.RealCoolDownState = IsCoolDown
@@ -256,6 +275,7 @@ function WBP_MainSkillCoolDown_C:ChangeSkillStatus(IsCoolDown)
     self:PlayAniOutAnimation()
   end
 end
+
 function WBP_MainSkillCoolDown_C:PlayAniInAnimation()
   self:PlayAnimationForward(self.Ani_Press)
   self.IsInPressState = true
@@ -264,6 +284,7 @@ function WBP_MainSkillCoolDown_C:PlayAniInAnimation()
     HUD:ChangeMainSkillReadyWindowVis(false)
   end
 end
+
 function WBP_MainSkillCoolDown_C:PlayAniOutAnimation()
   if not self.IsInPressState then
     return
@@ -274,6 +295,7 @@ function WBP_MainSkillCoolDown_C:PlayAniOutAnimation()
   self:PlayAnimationForward(self.Ani_loosen)
   self.IsInPressState = false
 end
+
 function WBP_MainSkillCoolDown_C:SetSkillBasicInfo()
   self.SkillId = self:GetSkillId()
   self.CanShowHollowOutIcon = false
@@ -287,6 +309,7 @@ function WBP_MainSkillCoolDown_C:SetSkillBasicInfo()
     end
   end
 end
+
 function WBP_MainSkillCoolDown_C:InitAbilityClass()
   local Character = self:GetOwningPlayerPawn()
   if not Character then
@@ -298,6 +321,7 @@ function WBP_MainSkillCoolDown_C:InitAbilityClass()
   end
   self.AbilityClass = ASC:GetAbilityClassByInputId(self.SkillType)
 end
+
 function WBP_MainSkillCoolDown_C:Destruct()
   UnListenObjectMessage(GMP.MSG_OnAbilityTagUpdate, self)
   UnListenObjectMessage(GMP.MSG_World_Input_OnForbiddenUpdated, self)
@@ -322,4 +346,5 @@ function WBP_MainSkillCoolDown_C:Destruct()
     })
   end
 end
+
 return WBP_MainSkillCoolDown_C

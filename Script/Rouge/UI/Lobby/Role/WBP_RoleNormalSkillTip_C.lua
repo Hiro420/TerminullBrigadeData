@@ -1,4 +1,6 @@
 local WBP_RoleNormalSkillTip_C = UnLua.Class()
+local StrTxtFmt = NSLOCTEXT("WBP_RoleNormalSkillTip_C", "StrFmt", "\229\183\178\232\142\183\229\190\151[%s]%s\230\149\136\230\158\156")
+
 function WBP_RoleNormalSkillTip_C:RefreshInfo(SkillGroupId, KeyName, GenericList, KeyInputNameAry, KeyInputNameAryPad)
   local SkillGroupInfo = LogicRole.GetSkillTableRow(SkillGroupId)
   if not SkillGroupInfo then
@@ -52,7 +54,7 @@ function WBP_RoleNormalSkillTip_C:RefreshInfo(SkillGroupId, KeyName, GenericList
     UpdateVisibility(self.SizeBoxGenericModify, true)
     UpdateVisibility(self.ImageLine, true)
     UpdateVisibility(self.SpacerGeneric, true)
-    local str = "\229\183\178\232\142\183\229\190\151[%s]%s\230\149\136\230\158\156"
+    local str = tostring(StrTxtFmt())
     for i, v in ipairs(GenericList) do
       if i == #GenericList then
         str = string.format(str, v.Name, "")
@@ -67,6 +69,7 @@ function WBP_RoleNormalSkillTip_C:RefreshInfo(SkillGroupId, KeyName, GenericList
     UpdateVisibility(self.SpacerGeneric, false)
   end
 end
+
 function WBP_RoleNormalSkillTip_C:RefreshInscriptionExplainList(ExplainInfoList)
   local TargetList
   self.IsShowRightlist = false
@@ -89,6 +92,7 @@ function WBP_RoleNormalSkillTip_C:RefreshInscriptionExplainList(ExplainInfoList)
   end
   HideOtherItem(TargetList, Index)
 end
+
 function WBP_RoleNormalSkillTip_C:RefreshInfoByWeaponSkillData(WeaponSkillData, KeyName, GenericList)
   self.Txt_Name:SetText(WeaponSkillData.SkillName)
   self.Txt_Desc:SetText(WeaponSkillData.Desc)
@@ -102,7 +106,7 @@ function WBP_RoleNormalSkillTip_C:RefreshInfoByWeaponSkillData(WeaponSkillData, 
     UpdateVisibility(self.SizeBoxGenericModify, true)
     UpdateVisibility(self.ImageLine, true)
     UpdateVisibility(self.SpacerGeneric, true)
-    local str = "\229\183\178\232\142\183\229\190\151[%s]%s\230\149\136\230\158\156"
+    local str = tostring(StrTxtFmt())
     for i, v in ipairs(GenericList) do
       if i == #GenericList then
         str = string.format(str, v.Name, "")
@@ -117,10 +121,12 @@ function WBP_RoleNormalSkillTip_C:RefreshInfoByWeaponSkillData(WeaponSkillData, 
     UpdateVisibility(self.SpacerGeneric, false)
   end
 end
+
 function WBP_RoleNormalSkillTip_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   if self.MediaPlayer:IsPlaying() then
     self.MediaPlayer:Close()
   end
 end
+
 return WBP_RoleNormalSkillTip_C

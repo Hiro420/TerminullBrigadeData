@@ -6,12 +6,14 @@ local EModifyTypeStatus = {
   LvUp = 2,
   Specific = 3
 }
+
 function WBP_GenericModifyChooseItem_C:Construct()
   self.BP_ButtonWithSoundSelect.OnClicked:Add(self, self.Select)
   self.BP_ButtonWithSoundSelect.OnHovered:Add(self, self.OnHovered)
   self.BP_ButtonWithSoundSelect.OnUnhovered:Add(self, self.OnUnhovered)
   EventSystem.AddListener(self, EventDef.GenericModify.OnRefreshGenericModify, self.Refresh)
 end
+
 function WBP_GenericModifyChooseItem_C:OnUnDisplay()
   self.ParentView = nil
   self.ModifyId = -1
@@ -21,6 +23,7 @@ function WBP_GenericModifyChooseItem_C:OnUnDisplay()
   self.RarityUpModifyData = nil
   self:StopAnimation(self.Ani_flushed)
 end
+
 function WBP_GenericModifyChooseItem_C:OnAnimationFinished(Animation)
   if Animation == self.Ani_GenericModifyTips_close then
     local PC = self:GetOwningPlayer()
@@ -36,6 +39,7 @@ function WBP_GenericModifyChooseItem_C:OnAnimationFinished(Animation)
     UpdateVisibility(self.BP_ButtonWithSoundSelect, true, true)
   end
 end
+
 function WBP_GenericModifyChooseItem_C:InitGenericModifyChooseItem(ModifyData, ModifyChooseTypeParam, HoverFunc, ParentView, bIsInShop)
   self:StopAnimation(self.Ani_flushed)
   local ModifyId = ModifyData
@@ -45,6 +49,7 @@ function WBP_GenericModifyChooseItem_C:InitGenericModifyChooseItem(ModifyData, M
   else
     ModifyId = ModifyData
   end
+  self.ReplaceModifyId = nil
   UpdateVisibility(self.Img_Movie, false)
   UpdateVisibility(self.Movie, false)
   UpdateVisibility(self.WBP_GenericModifyTips.WBP_FocusOnMarkWidget, true)
@@ -92,6 +97,7 @@ function WBP_GenericModifyChooseItem_C:InitGenericModifyChooseItem(ModifyData, M
   end
   self.StateCtrl_ModifyType:ChangeStatus(EModifyTypeStatus.Normal)
 end
+
 function WBP_GenericModifyChooseItem_C:InitGenericModifyChooseItemByBattleLagacy(ModifyId, ParentView, Idx)
   self.bCanSelect = false
   UpdateVisibility(self.Img_Movie, false)
@@ -108,6 +114,7 @@ function WBP_GenericModifyChooseItem_C:InitGenericModifyChooseItemByBattleLagacy
     self:UpdateHoverColor(color)
   end
 end
+
 function WBP_GenericModifyChooseItem_C:InitGenericModifyChooseItemByBattleLagacyReminder(ModifyId)
   self.bCanSelect = false
   UpdateVisibility(self.Img_Movie, false)
@@ -124,6 +131,7 @@ function WBP_GenericModifyChooseItem_C:InitGenericModifyChooseItemByBattleLagacy
   end
   self:FadeIn()
 end
+
 function WBP_GenericModifyChooseItem_C:UpdateHoverColor(Color, GlowColor, Glow1Color)
   local glowColor = GlowColor or Color
   local glow1Color = Glow1Color or Color
@@ -143,6 +151,7 @@ function WBP_GenericModifyChooseItem_C:UpdateHoverColor(Color, GlowColor, Glow1C
     mat:SetScalarParameterValue("alpha", glow1Color.A)
   end
 end
+
 function WBP_GenericModifyChooseItem_C:InitSpecificModifyChooseItem(ModifyId, ModifyChooseTypeParam, HoverFunc, ParentView, bRefresh)
   UpdateVisibility(self.Img_Movie, false)
   UpdateVisibility(self.Image_Movie_di, false)
@@ -153,6 +162,7 @@ function WBP_GenericModifyChooseItem_C:InitSpecificModifyChooseItem(ModifyId, Mo
   self.HoverFunc = HoverFunc
   self.ParentView = ParentView
   self.ModifyId = ModifyId
+  self.ReplaceModifyId = nil
   self.WBP_GenericModifyTips:InitSpecificModifyTips(ModifyId)
   if not bRefresh then
     self.bCanSelect = false
@@ -170,6 +180,7 @@ function WBP_GenericModifyChooseItem_C:InitSpecificModifyChooseItem(ModifyId, Mo
     self:UpdateHoverColor(self.SpecificColor, nil, self.SpecificGlow1Color)
   end
 end
+
 function WBP_GenericModifyChooseItem_C:Select()
   if not LogicGenericModify.bCanOperator then
     print("WBP_GenericModifyChooseItem_C:Select LogicGenericModify.bCanOperator false")
@@ -339,13 +350,22 @@ function WBP_GenericModifyChooseItem_C:Select()
     self.bCanSelect = false
   end
 end
+
 function WBP_GenericModifyChooseItem_C:OnHovered()
-  self:HoveredItem(self.ModifyId)
+  if self.ReplaceModifyId then
+    self:HoveredItem(self.ReplaceModifyId)
+  else
+    self:HoveredItem(self.ModifyId)
+  end
 end
+
 function WBP_GenericModifyChooseItem_C:OnUnhovered()
   self:UnhoveredItem(self.ModifyId)
 end
+
 function WBP_GenericModifyChooseItem_C:OnShowModifyChange(ModifyId)
+  self:HoveredItem(ModifyId)
+  self.ReplaceModifyId = ModifyId
   self:PlayAnimation(self.Ani_flushed)
   if self.ModifyChooseType == ModifyChooseType.UpgradeModify or self.ModifyChooseType == ModifyChooseType.SpecificModify then
     self.RGStateControllerChangeHover:ChangeStatus("common")
@@ -366,7 +386,10 @@ function WBP_GenericModifyChooseItem_C:OnShowModifyChange(ModifyId)
     self:UpdateHoverColor(self.ComHoverColor)
   end
 end
+
 function WBP_GenericModifyChooseItem_C:OnHideModifyChange(ModifyId)
+  self:HoveredItem(ModifyId)
+  self.ReplaceModifyId = nil
   self:PlayAnimation(self.Ani_flushed)
   UpdateVisibility(self.select_glow_1, false)
   self.RGStateControllerChangeHover:ChangeStatus(EHover.UnHover)
@@ -378,6 +401,7 @@ function WBP_GenericModifyChooseItem_C:OnHideModifyChange(ModifyId)
     self:UpdateHoverColor(self.ComHoverColor)
   end
 end
+
 function WBP_GenericModifyChooseItem_C:HoveredItem(ModifyId)
   local screenX = UE.UWidgetLayoutLibrary.GetViewportSize(self).X
   local screenY = UE.UWidgetLayoutLibrary.GetViewportSize(self).Y
@@ -465,6 +489,7 @@ function WBP_GenericModifyChooseItem_C:HoveredItem(ModifyId)
   self:RefresVideohInfo(ModifyId, slot)
   UpdateVisibility(self.CanvasPanelAdditionNote, bIsShowTips)
 end
+
 function WBP_GenericModifyChooseItem_C:UnhoveredItem(ModifyId)
   self:SetRenderScale(UE.FVector2D(1, 1) * self.ScaleOffset)
   UpdateVisibility(self.URGImageSelect, false)
@@ -509,8 +534,10 @@ function WBP_GenericModifyChooseItem_C:UnhoveredItem(ModifyId)
     UpdateVisibility(self.WBP_GenericModifyTips.URGImageChangeBg_2, true)
   end
 end
+
 function WBP_GenericModifyChooseItem_C:OnMouseEnter(MyGeometry, MouseEvent)
 end
+
 function WBP_GenericModifyChooseItem_C:RefresVideohInfo(ModifyId, Slot, bIsSpecify)
   if self.ModifyChooseType == ModifyChooseType.GenericModify or self.ModifyChooseType == ModifyChooseType.UpgradeModify or self.ModifyChooseType == ModifyChooseType.BattleLagacy or self.ModifyChooseType == ModifyChooseType.BattleLagacyReminder or self.ModifyChooseType == ModifyChooseType.RarityUpModify then
     local Result, RowData = GetRowData(DT.DT_GenericModify, tostring(ModifyId))
@@ -524,6 +551,7 @@ function WBP_GenericModifyChooseItem_C:RefresVideohInfo(ModifyId, Slot, bIsSpeci
     end
   end
 end
+
 function WBP_GenericModifyChooseItem_C:RefreshMedia(ObjRef)
   self.MediaPlayer:SetLooping(true)
   if ObjRef and UE.UKismetSystemLibrary.IsValidSoftObjectReference(ObjRef) then
@@ -541,6 +569,7 @@ function WBP_GenericModifyChooseItem_C:RefreshMedia(ObjRef)
     UpdateVisibility(self.Movie, false)
   end
 end
+
 function WBP_GenericModifyChooseItem_C:UpdateAdditionNotes(Inscription, ModifyId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -579,6 +608,7 @@ function WBP_GenericModifyChooseItem_C:UpdateAdditionNotes(Inscription, ModifyId
   end
   return bIsShowTips
 end
+
 function WBP_GenericModifyChooseItem_C:FadeIn()
   print("WBP_GenericModifyChooseItem_C:FadeIn()")
   self.CanvasPanelAdditionNote:SetRenderOpacity(0)
@@ -589,16 +619,20 @@ function WBP_GenericModifyChooseItem_C:FadeIn()
   self.CanvasPanel_0:SetRenderOpacity(1)
   self:PlayAnimation(self.AniFadeIn)
 end
+
 function WBP_GenericModifyChooseItem_C:FadeInFinished()
   print("WBP_GenericModifyChooseItem_C:FadeInFinished()")
   self.bCanSelect = true
   self.CanvasPanel_0:SetRenderOpacity(1)
 end
+
 function WBP_GenericModifyChooseItem_C:OnMouseLeave(MouseEvent)
 end
+
 function WBP_GenericModifyChooseItem_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_GenericModifyChooseItem_C:FadeOut(GroupId, bIsShowEffect)
   if UE.RGUtil.IsUObjectValid(self.ParentView) and self.ParentView.ModifyChooseType == ModifyChooseType.RarityUpModify then
     if bIsShowEffect then
@@ -629,10 +663,12 @@ function WBP_GenericModifyChooseItem_C:FadeOut(GroupId, bIsShowEffect)
     end
   end
 end
+
 function WBP_GenericModifyChooseItem_C:Destruct()
   self.HoverFunc = nil
   self.ParentView = nil
 end
+
 function WBP_GenericModifyChooseItem_C:FocusSelf()
   local Result = false
   local RowInfo = UE.FRGGenericModifyTableRow
@@ -658,10 +694,12 @@ function WBP_GenericModifyChooseItem_C:FocusSelf()
   end
   return false
 end
+
 function WBP_GenericModifyChooseItem_C:Refresh()
   UpdateVisibility(self.BP_ButtonWithSoundSelect, true, false)
   self:PlayAnimation(self.Ani_Sell_flushed, 0.0, 1, UE.EUMGSequencePlayMode.Forward, 1, true)
 end
+
 function WBP_GenericModifyChooseItem_C:SellFunc()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.SellTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(GameInstance, self.SellTimer)
@@ -678,6 +716,7 @@ function WBP_GenericModifyChooseItem_C:SellFunc()
     end
   }, 0.9, false)
 end
+
 function WBP_GenericModifyChooseItem_C:ShowGold(ParentView)
   self.ParentView = ParentView
   UpdateVisibility(self.WBP_GenericModifyTips, false)
@@ -685,4 +724,5 @@ function WBP_GenericModifyChooseItem_C:ShowGold(ParentView)
   self.ModifyChooseType = ModifyChooseType.GenericModify
   LogicGenericModify.bCanOperator = true
 end
+
 return WBP_GenericModifyChooseItem_C

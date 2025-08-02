@@ -1,6 +1,7 @@
 local M = {IsInit = false, CanShowDamageNumber = true}
 _G.LogicDamageNumber = _G.LogicDamageNumber or M
 local ListContainer = require("Rouge.UI.Common.ListContainer")
+
 function LogicDamageNumber.Init()
   if LogicDamageNumber.IsInit then
     print("LogicDamageNumber \229\183\178\229\136\157\229\167\139\229\140\150")
@@ -26,11 +27,26 @@ function LogicDamageNumber.Init()
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   if PC and PC.DamageComponent then
     PC.DamageComponent.OnMakeDamage:Add(GameInstance, LogicDamageNumber.BindOnMakeDamage)
+  else
+    print("LogicDamageNumber.Init PC", PC, "DamageComponent", PC.DamageComponent)
+    LogicDamageNumber.BindMakeDamageTimer = UE.UKismetSystemLibrary.K2_SetTimerDelegate({
+      GameInstance,
+      function()
+        local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
+        if PC and PC.DamageComponent then
+          PC.DamageComponent.OnMakeDamage:Add(GameInstance, LogicDamageNumber.BindOnMakeDamage)
+          if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(LogicDamageNumber.BindMakeDamageTimer) then
+            UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(GameInstance, LogicDamageNumber.BindMakeDamageTimer)
+          end
+        end
+      end
+    }, 0.1, true)
   end
   ListenObjectMessage(nil, GMP.MSG_Global_RequestHitReactionSucceed, GameInstance, LogicDamageNumber.BindOnGlobalRequestHitReactionSucceed)
   ListenObjectMessage(nil, GMP.MSG_GM_ChangeAllUIVis, GameInstance, LogicDamageNumber.BindOnChangeAllUIVis)
   EventSystem.AddListener(nil, EventDef.Battle.OnHealthChanged, LogicDamageNumber.BindOnHealthChanged)
 end
+
 function LogicDamageNumber:BindOnMakeDamage(SourceActor, TargetActor, Params)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   local ParamsInstigator = UE.URGDamageStatics.GetDamageParams_Instigator(Params)
@@ -38,13 +54,16 @@ function LogicDamageNumber:BindOnMakeDamage(SourceActor, TargetActor, Params)
     return
   end
   if not SourceActor then
+    print("LogicDamageNumber:BindOnMakeDamage SourceActor is nil!")
     return
   end
   local IsNotCauseBySourceInstigator = Character ~= ParamsInstigator and not UE.URGDamageStatics.IsLocalPlayerAttack(SourceActor)
   if not (Character and SourceActor) or Character ~= SourceActor and IsNotCauseBySourceInstigator then
+    print("LogicDamageNumber:BindOnMakeDamage \228\184\141\230\152\175\232\135\170\229\183\177\233\128\160\230\136\144\231\154\132\228\188\164\229\174\179")
     return
   end
   if UE.URGDamageStatics.IsVisibleNumber(Params) == false then
+    print("LogicDamageNumber:BindOnMakeDamage \228\184\141\230\152\190\231\164\186\228\188\164\229\174\179\232\183\179\229\173\151")
     return
   end
   LogicAudio.OnSkillHit(Params, TargetActor, SourceActor)
@@ -62,6 +81,7 @@ function LogicDamageNumber:BindOnMakeDamage(SourceActor, TargetActor, Params)
   LogicDamageNumber:UpdateLuckyShotNum(TargetActor, Params)
   LogicDamageNumber:CreateDamageNumberWidget(TargetActor, Params, nil)
 end
+
 function LogicDamageNumber.BindOnGlobalRequestHitReactionSucceed(SourceActor, TargetActor, HitReactionTag)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if TargetActor == Character then
@@ -88,6 +108,7 @@ function LogicDamageNumber.BindOnGlobalRequestHitReactionSucceed(SourceActor, Ta
   end
   LogicDamageNumber:CreateDamageNumberWidget(TargetActor, nil, HitReactionTag)
 end
+
 function LogicDamageNumber.BindOnChangeAllUIVis(IsHide, IsShowDamageNumber)
   print("LogicDamageNumber:BindOnChangeAllUIVis IsHide:", IsHide, "IsShowDamageNumber:", IsShowDamageNumber)
   local IsNeedShowDamageNumber = true
@@ -96,6 +117,7 @@ function LogicDamageNumber.BindOnChangeAllUIVis(IsHide, IsShowDamageNumber)
   end
   LogicDamageNumber.CanShowDamageNumber = IsNeedShowDamageNumber
 end
+
 function LogicDamageNumber.BindOnHealthChanged(NewValue, OldValue)
   if not (NewValue and OldValue) or -1 == OldValue or NewValue <= OldValue then
     return
@@ -108,6 +130,7 @@ function LogicDamageNumber.BindOnHealthChanged(NewValue, OldValue)
   end
   LogicDamageNumber:CreateDamageNumberWidget(Character, nil, nil, NewValue - OldValue)
 end
+
 function LogicDamageNumber:CreateDamageNumberWidget(TargetActor, Params, HitReactionTag, HealthChangedText)
   if not LogicDamageNumber.CanShowDamageNumber then
     print("LogicDamageNumber:CreateDamageNumberWidget CanShowDamageNumber is false")
@@ -134,6 +157,7 @@ function LogicDamageNumber:CreateDamageNumberWidget(TargetActor, Params, HitReac
     end
   end
 end
+
 function LogicDamageNumber.IsBigDamage(Params)
   if not Params then
     return false
@@ -150,6 +174,7 @@ function LogicDamageNumber.IsBigDamage(Params)
   end
   return MoreCount / LogicDamageNumber.MaxLastDamageValueNum >= LogicDamageNumber.BigDamagePercent
 end
+
 function LogicDamageNumber:CreateMultiElementWidget(TargetActor, Params)
   if UE.URGDamageStatics.IsMixedElementTriggered(Params) then
     local FirstElementId = 0
@@ -186,6 +211,7 @@ function LogicDamageNumber:CreateMultiElementWidget(TargetActor, Params)
     LogicDamageNumber:CreateDamageNumberWidget(TargetActor, Params, TargetElementId)
   end
 end
+
 function LogicDamageNumber:GetTriggerElementType(Params)
   if not Params then
     return 0
@@ -204,6 +230,7 @@ function LogicDamageNumber:GetTriggerElementType(Params)
   end
   return 0
 end
+
 function LogicDamageNumber:UpdateLuckyShotNum(TargetActor, Params)
   if not UE.URGDamageStatics.IsLuckyShot(Params) then
     LogicDamageNumber.LuckyShotNum = 0
@@ -217,12 +244,16 @@ function LogicDamageNumber:UpdateLuckyShotNum(TargetActor, Params)
     LogicDamageNumber.LastHitActor = TargetActor
   end
 end
+
 function LogicDamageNumber:Clear()
   print("Clear LogicDamageNumber")
   LogicDamageNumber.LastDamageValueList = {}
   if LogicDamageNumber.ListContainer then
     LogicDamageNumber.ListContainer:ClearAllWidgets()
     LogicDamageNumber.ListContainer = nil
+  end
+  if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(LogicDamageNumber.BindMakeDamageTimer) then
+    UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(GameInstance, LogicDamageNumber.BindMakeDamageTimer)
   end
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   if PC and PC.DamageComponent then

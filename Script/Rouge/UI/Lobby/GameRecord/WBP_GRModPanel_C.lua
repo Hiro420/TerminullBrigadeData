@@ -1,10 +1,13 @@
 local WBP_GRModPanel_C = UnLua.Class()
+
 function WBP_GRModPanel_C:Construct()
   EventSystem.AddListener(self, EventDef.GameRecordPanel.TypeButtonChanged, WBP_GRModPanel_C.OnTypeButtonChanged)
 end
+
 function WBP_GRModPanel_C:Destruct()
   EventSystem.RemoveListener(EventDef.GameRecordPanel.TypeButtonChanged, WBP_GRModPanel_C.OnTypeButtonChanged, self)
 end
+
 function WBP_GRModPanel_C:OnTypeButtonChanged(LastActiveWidget, CurActiveWidget, CurrentRoleInfoData)
   if CurActiveWidget == self then
     self.CurrentRoleInfoData = CurrentRoleInfoData
@@ -12,6 +15,7 @@ function WBP_GRModPanel_C:OnTypeButtonChanged(LastActiveWidget, CurActiveWidget,
     self:UpdateModLevel()
   end
 end
+
 function WBP_GRModPanel_C:UpdateGRModPanel()
   local finalLegendModTable = {}
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -61,6 +65,7 @@ function WBP_GRModPanel_C:UpdateGRModPanel()
     end
   end
 end
+
 function WBP_GRModPanel_C:UpdateModLevel()
   for key, value in pairs(self.LegendMod.WBP_ModInfoBox.HorizontalBox_ModInfoBox:GetAllChildren()) do
     value:UpdateModInfoItem(1)
@@ -85,4 +90,5 @@ function WBP_GRModPanel_C:UpdateModLevel()
     end
   end
 end
+
 return WBP_GRModPanel_C

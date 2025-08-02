@@ -1,5 +1,6 @@
 local WBP_BuffList_C = UnLua.Class()
 local ListContainer = require("Rouge.UI.Common.ListContainer")
+
 function WBP_BuffList_C:Construct()
   if not self:GetOwningPlayerPawn() then
     return
@@ -28,6 +29,7 @@ function WBP_BuffList_C:Construct()
   end
   EventSystem.AddListener(self, EventDef.Battle.RemoveInscriptionItem, WBP_BuffList_C.BindOnRemoveInscriptionItem)
 end
+
 function WBP_BuffList_C:InitBuffInfo()
   local BuffComp = self:GetOwningPlayerPawn():GetComponentByClass(UE.UBuffComponent)
   if not BuffComp then
@@ -55,8 +57,10 @@ function WBP_BuffList_C:InitBuffInfo()
     end
   end
 end
+
 function WBP_BuffList_C:InitInfo(OwingCharacter, IconSize)
 end
+
 function WBP_BuffList_C:BindOnBuffAdded(AddedBuff)
   local BuffDataSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.UBuffDataGISubsystem:StaticClass())
   if not BuffDataSubsystem then
@@ -93,6 +97,7 @@ function WBP_BuffList_C:BindOnBuffAdded(AddedBuff)
     end
   end
 end
+
 function WBP_BuffList_C:BindOnBuffChanged(ChangedBuff)
   local BuffDataSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.UBuffDataGISubsystem:StaticClass())
   if not BuffDataSubsystem then
@@ -127,6 +132,7 @@ function WBP_BuffList_C:BindOnBuffChanged(ChangedBuff)
     end
   end
 end
+
 function WBP_BuffList_C:BindOnBuffRemoved(RemovedBuff)
   local TargetBuffInfo = self.AllBuffInfos[RemovedBuff.ID]
   if not TargetBuffInfo then
@@ -149,6 +155,7 @@ function WBP_BuffList_C:BindOnBuffRemoved(RemovedBuff)
     self:RefreshBuffList()
   end
 end
+
 function WBP_BuffList_C:BindOnClientUpdateInscriptionCD(InscriptionId, RemainTime)
   local LogicCommandSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.ULogicCommandDataSubSystem:StaticClass())
   if not LogicCommandSubsystem then
@@ -189,11 +196,13 @@ function WBP_BuffList_C:BindOnClientUpdateInscriptionCD(InscriptionId, RemainTim
   end
   self:RefreshBuffList()
 end
+
 function WBP_BuffList_C:BindOnRemoveInscriptionItem(InscriptionId)
   self.AllBuffInfos[InscriptionId] = nil
   table.RemoveItem(self.AllNormalBuffIds, InscriptionId)
   self:RefreshBuffList()
 end
+
 function WBP_BuffList_C:RefreshBuffList()
   local BuffIndex = 0
   for i, SingleWidget in iterator(self.BuffList:GetAllChildren()) do
@@ -236,6 +245,7 @@ function WBP_BuffList_C:RefreshBuffList()
     end
   end
 end
+
 function WBP_BuffList_C:RefreshImportantBuffList(...)
   if not self.AllImportantBuffWidgets then
     self.AllImportantBuffWidgets = {}
@@ -252,6 +262,7 @@ function WBP_BuffList_C:RefreshImportantBuffList(...)
     end
   end
 end
+
 function WBP_BuffList_C:ShowSimpleDesc(BuffId, Desc)
   self.Txt_SimpleDesc:SetText(Desc)
   self:HideSimpleDesc()
@@ -262,6 +273,7 @@ function WBP_BuffList_C:ShowSimpleDesc(BuffId, Desc)
     self.HideSimpleDesc
   }, self.SimpleDescDuration, false)
 end
+
 function WBP_BuffList_C:HideSimpleDesc(...)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.ShowSimpleDescTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.ShowSimpleDescTimer)
@@ -269,8 +281,10 @@ function WBP_BuffList_C:HideSimpleDesc(...)
   UpdateVisibility(self.Txt_SimpleDesc, false, true, true)
   self.CurShowImportantBuffId = 0
 end
+
 function WBP_BuffList_C:FocusInput()
 end
+
 function WBP_BuffList_C:Destruct()
   if not self:GetOwningPlayerPawn() then
     return
@@ -301,4 +315,5 @@ function WBP_BuffList_C:Destruct()
   EventSystem.RemoveListener(EventDef.Battle.RemoveInscriptionItem, WBP_BuffList_C.BindOnRemoveInscriptionItem, self)
   self:HideSimpleDesc()
 end
+
 return WBP_BuffList_C

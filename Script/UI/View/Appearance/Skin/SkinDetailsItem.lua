@@ -78,6 +78,7 @@ local CheckWeaponIsUnLock = function(self, WeaponId)
   return false
 end
 local SkinDetailsItem = UnLua.Class()
+
 function SkinDetailsItem:OnBindUIInput()
   if self.WBP_CommonButton_Main.KeyRowName ~= nil and self.WBP_CommonButton_Main.KeyRowName ~= "" then
     if IsListeningForInputAction(self, self.WBP_CommonButton_Main.KeyRowName) then
@@ -89,11 +90,13 @@ function SkinDetailsItem:OnBindUIInput()
     })
   end
 end
+
 function SkinDetailsItem:OnUnBindUIInput()
   if self.WBP_CommonButton_Main.KeyRowName ~= nil and self.WBP_CommonButton_Main.KeyRowName ~= "" then
     StopListeningForInputAction(self, self.WBP_CommonButton_Main.KeyRowName, UE.EInputEvent.IE_Pressed)
   end
 end
+
 function SkinDetailsItem:GetHeroSkinDataBySkinResId(SkinResId)
   for k, v in pairs(SkinData.HeroSkinMap) do
     for i, vSkinData in ipairs(v.SkinDataList) do
@@ -104,6 +107,7 @@ function SkinDetailsItem:GetHeroSkinDataBySkinResId(SkinResId)
   end
   return nil
 end
+
 function SkinDetailsItem:GetWeaponSkinDataBySkinResId(SkinResId)
   for k, v in pairs(SkinData.WeaponSkinMap) do
     for i, vSkinData in ipairs(v.SkinDataList) do
@@ -114,6 +118,7 @@ function SkinDetailsItem:GetWeaponSkinDataBySkinResId(SkinResId)
   end
   return nil
 end
+
 function SkinDetailsItem:Construct()
   self.Overridden.Construct(self)
   self.WBP_CommonButton_Equip.OnMainButtonClicked:Add(self, self.OnEquipClick)
@@ -139,6 +144,7 @@ function SkinDetailsItem:Construct()
   EventSystem.AddListenerNew(EventDef.Lobby.RoleSkillTip, self, self.BindOnShowHeroSkillTips)
   EventSystem.AddListenerNew(EventDef.Weapon.WeaponSkillTip, self, self.BindOnShowWeaponSkillTips)
 end
+
 function SkinDetailsItem:Destruct()
   self.Overridden.Destruct(self)
   self.WBP_CommonButton_Equip.OnMainButtonClicked:Remove(self, self.OnEquipClick)
@@ -164,15 +170,19 @@ function SkinDetailsItem:Destruct()
   EventSystem.RemoveListenerNew(EventDef.Lobby.RoleSkillTip, self, self.BindOnShowHeroSkillTips)
   EventSystem.RemoveListenerNew(EventDef.Weapon.WeaponSkillTip, self, self.BindOnShowWeaponSkillTips)
 end
+
 function SkinDetailsItem:OnHeirloomInfoChanged()
   self:UpdateEquipButton()
 end
+
 function SkinDetailsItem:OnGetHeroSkinList(HeroSkinList)
   self:UpdateEquipButton()
 end
+
 function SkinDetailsItem:OnEffectStateChange(EffectState, SkinId)
   self:SetEffectState(EffectState, SkinId)
 end
+
 function SkinDetailsItem:SetEffectState(EffectState, SkinId)
   local result, rowInfo = GetRowData(DT.DT_DisplaySkin, SkinId)
   if result then
@@ -192,24 +202,31 @@ function SkinDetailsItem:SetEffectState(EffectState, SkinId)
     end
   end
 end
+
 function SkinDetailsItem:OnGetWeaponSkinList(WeaponSkinList)
   self:UpdateWeaponEquipButton()
 end
+
 function SkinDetailsItem:OnWeaponInfoChanged(SkinId, WeaponId)
   self:UpdateWeaponEquipButton()
 end
+
 function SkinDetailsItem:OnUpdateMyHeroInfo()
   self:UpdateEquipButton()
 end
+
 function SkinDetailsItem:SendEquipHeroSkinReq(HeroId, skinId)
   SkinHandler.SendEquipHeroSkinReq(HeroId, skinId)
 end
+
 function SkinDetailsItem:SendGetHeroSkinList()
   SkinHandler.SendGetHeroSkinList()
 end
+
 function SkinDetailsItem:SendEquipWeaponSkinReq(SkinId, WeaponId)
   SkinHandler.SendEquipWeaponSkinReq(SkinId, WeaponId)
 end
+
 function SkinDetailsItem:EquipWeaponSkin(SelectSkinResId)
   if self.ItemType ~= TableEnums.ENUMResourceType.WeaponSkin then
     return
@@ -229,6 +246,7 @@ function SkinDetailsItem:EquipWeaponSkin(SelectSkinResId)
     end
   end
 end
+
 function SkinDetailsItem:CheckUnLockOriSkin(SkinResID)
   local result, rowinfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBCharacterSkin, SkinResID)
   if result then
@@ -238,6 +256,7 @@ function SkinDetailsItem:CheckUnLockOriSkin(SkinResID)
   end
   return false
 end
+
 function SkinDetailsItem:CheckSkinCost(PackageID, SkinId)
   local OwnPackageNum = DataMgr.GetPackbackNumById(PackageID)
   local result, rowinfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBHeroSkinExchange, SkinId)
@@ -247,6 +266,7 @@ function SkinDetailsItem:CheckSkinCost(PackageID, SkinId)
   end
   return false
 end
+
 function SkinDetailsItem:LinkPurchaseConfirm(LinkId, ParamList)
   if tonumber(LinkId) ~= 1007 then
     return false
@@ -254,6 +274,7 @@ function SkinDetailsItem:LinkPurchaseConfirm(LinkId, ParamList)
   ComLink(LinkId, nil, ParamList[2], ParamList[1], 1)
   return true
 end
+
 function SkinDetailsItem:OnAccessClick()
   if self.ItemType == TableEnums.ENUMResourceType.HeroSkin and not self.GoodsId then
     local heroSkinData = self:GetHeroSkinDataBySkinResId(self.CurSelectResId)
@@ -350,14 +371,17 @@ function SkinDetailsItem:OnAccessClick()
     ComLink(1007, nil, self.GoodsId, rowinfo.Shelfs[1], self.ItemAmount)
   end
 end
+
 function SkinDetailsItem:OnAccessHovered()
   self:StopAnimation(self.Ani_hover_out)
   self:PlayAnimation(self.Ani_hover_in, 0)
 end
+
 function SkinDetailsItem:OnAccessUnhovered()
   self:StopAnimation(self.Ani_hover_in)
   self:PlayAnimation(self.Ani_hover_out, 0)
 end
+
 function SkinDetailsItem:SelectHeroSkin(HeroSkinResId, bUpdateMovie)
   if self.ParentView and self.ParentView.SelectHeroSkin then
     self.ParentView:SelectHeroSkin(HeroSkinResId, bUpdateMovie)
@@ -366,11 +390,13 @@ function SkinDetailsItem:SelectHeroSkin(HeroSkinResId, bUpdateMovie)
     self.ParentView.WBP_ComShowGoodsItem:InitCharacterSkin(ResID)
   end
 end
+
 function SkinDetailsItem:UpdateCustomSkinItemSelct(SkinID)
   for i, v in ipairs(self.SBox_CustomSkin:GetAllChildren():ToTable()) do
     v:SetSel(v.SkinID == SkinID)
   end
 end
+
 function SkinDetailsItem:OnEffectHover()
   if self.ItemType ~= TableEnums.ENUMResourceType.HeroSkin then
     return
@@ -393,33 +419,41 @@ function SkinDetailsItem:OnEffectHover()
   self.TipsWidget = ShowCommonTips(nil, self.Btn_Effect, nil, WidgetClassPath, nil, nil, UE.FVector2D(-40, 0))
   self.TipsWidget:ShowTips(EffectText, self.EffectContent, nil, nil, nil, nil, ProEffType)
 end
+
 function SkinDetailsItem:OnEffectUnhover()
   UpdateVisibility(self.TipsWidget, false)
 end
+
 function SkinDetailsItem:BindOnBtnDisplayClicked()
   if self.LocalEffectState then
     return
   end
   self:SwitchEffectState(true)
 end
+
 function SkinDetailsItem:BindOnBtnDisplayHovered()
   self.RGStateController_Display_Hover:ChangeStatus("Hover")
 end
+
 function SkinDetailsItem:BindOnBtnDisplayUnhovered()
   self.RGStateController_Display_Hover:ChangeStatus("UnHover")
 end
+
 function SkinDetailsItem:BindOnBtnHideClicked()
   if not self.LocalEffectState then
     return
   end
   self:SwitchEffectState(false)
 end
+
 function SkinDetailsItem:BindOnBtnHideHovered()
   self.RGStateController_Hide_Hover:ChangeStatus("Hover")
 end
+
 function SkinDetailsItem:BindOnBtnHideUnhovered()
   self.RGStateController_Hide_Hover:ChangeStatus("Hover")
 end
+
 function SkinDetailsItem:SwitchEffectState(IsShow)
   if self.ItemType ~= TableEnums.ENUMResourceType.HeroSkin then
     return
@@ -442,9 +476,11 @@ function SkinDetailsItem:SwitchEffectState(IsShow)
   local ShowActor = GetAppearanceActor(self).ChildActor.ChildActor.ChildActor.ChildActor
   LogicRole.SetEffectState(ShowActor, CurSkinData.HeroSkinTb.SkinID, nil, IsShow)
 end
+
 function SkinDetailsItem:SendSetSkinEffectState(EffectState, SkinID)
   SkinHandler.SendSetHeroSkinEffectState(EffectState, SkinID)
 end
+
 function SkinDetailsItem:OnEquipClick()
   if self.ItemType == TableEnums.ENUMResourceType.HeroSkin then
     self:SendEquipHeroSkinReq(self.CurHeroId, self.CurSelectResId)
@@ -452,6 +488,7 @@ function SkinDetailsItem:OnEquipClick()
     self:EquipWeaponSkin(self.CurSelectResId)
   end
 end
+
 function SkinDetailsItem:UpdateEquipButton()
   if self.bDisableButtonPanel then
     self:ShowOrHideButtonPanel(false)
@@ -471,9 +508,11 @@ function SkinDetailsItem:UpdateEquipButton()
   local isEquiping = SkinData.HeroSkinMap[self.CurHeroId] and SkinData.HeroSkinMap[self.CurHeroId].EquipedSkinId == self.CurSelectResId
   UpdateVisibility(self.CanvasPanelEquiping, isEquiping)
 end
+
 function SkinDetailsItem:GetHeroIDEquipID(curHeroId)
   return SkinData.HeroSkinMap[curHeroId].EquipedSkinId
 end
+
 function SkinDetailsItem:InitAttachBuyPanel(SkinId)
   local result, rowinfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBHeroSkinExchange, SkinId)
   if result then
@@ -483,6 +522,7 @@ function SkinDetailsItem:InitAttachBuyPanel(SkinId)
     self.WBP_Price_2:SetPrice(rowinfo.CostResources[1].value, nil, rowinfo.CostResources[1].key)
   end
 end
+
 function SkinDetailsItem:UpdateUIColor(SkinId)
   local result, row = GetRowData(DT.DT_DisplaySkinUIColor, SkinId)
   if not result then
@@ -490,9 +530,9 @@ function SkinDetailsItem:UpdateUIColor(SkinId)
   end
   if result then
     self.RGTextDetailsSkinName:SetColorAndOpacity(row.UIColor)
-    self.RGTextDetailsSkinDesc:SetColorAndOpacity(row.UIColor)
   end
 end
+
 function SkinDetailsItem:CheckAllChildSkinUnlocked(ResID)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBCharacterSkin, ResID)
   if Result then
@@ -505,6 +545,7 @@ function SkinDetailsItem:CheckAllChildSkinUnlocked(ResID)
     return true
   end
 end
+
 function SkinDetailsItem:UpdateHeroSkinDetailsView(HeroSkinData, AppearanceMovieList)
   if not HeroSkinData then
     return
@@ -597,6 +638,7 @@ function SkinDetailsItem:UpdateHeroSkinDetailsView(HeroSkinData, AppearanceMovie
     end
   end
 end
+
 function SkinDetailsItem:GetSpecialEffectStateByHeroID(HeroID)
   local HeroInfo = DataMgr.GetMyHeroInfo()
   for i, HeroInfo in ipairs(HeroInfo.heros) do
@@ -606,6 +648,7 @@ function SkinDetailsItem:GetSpecialEffectStateByHeroID(HeroID)
   end
   return {}
 end
+
 function SkinDetailsItem:GetOldSpecialEffectStateByHeroID(HeroID)
   local HeroInfo = DataMgr.GetMyOldHeroInfo()
   for i, HeroInfo in ipairs(HeroInfo.heros) do
@@ -615,6 +658,7 @@ function SkinDetailsItem:GetOldSpecialEffectStateByHeroID(HeroID)
   end
   return {}
 end
+
 function SkinDetailsItem:ShowOrHideButtonPanel(bShow)
   self.bDisableButtonPanel = not bShow
   if not bShow then
@@ -624,6 +668,7 @@ function SkinDetailsItem:ShowOrHideButtonPanel(bShow)
     UpdateVisibility(self.CanvasPanelButtonMain, false)
   end
 end
+
 function SkinDetailsItem:InitBuyPanel(LinkId, GoodsId, bUnlocked, AccessDesc)
   if self.bDisableButtonPanel then
     self:ShowOrHideButtonPanel(false)
@@ -662,6 +707,7 @@ function SkinDetailsItem:InitBuyPanel(LinkId, GoodsId, bUnlocked, AccessDesc)
     self.WBP_CommonButton_Main:SetContentText(AccessDesc)
   end
 end
+
 function SkinDetailsItem:UpdateWeaponSkinDetailsView(WeaponSkinData, AppearanceMovieList)
   if UE.RGUtil.IsUObjectValid(AppearanceMovieList) then
     self.WBP_AppearanceMoviePreview:UpdateMoviePreview(WeaponSkinData.WeaponSkinTb.SkinID, AppearanceMovieList)
@@ -689,9 +735,11 @@ function SkinDetailsItem:UpdateWeaponSkinDetailsView(WeaponSkinData, AppearanceM
   end
   self:UpdateUIColor(tostring(WeaponSkinData.WeaponSkinTb.SkinID))
 end
+
 function SkinDetailsItem:GetWeaponResIdBySkinId(SkinId)
   return SkinData.GetWeaponResIdBySkinId(SkinId)
 end
+
 function SkinDetailsItem:UpdateWeaponEquipButton(WeaponSkinData)
   if self.bDisableButtonPanel then
     self:ShowOrHideButtonPanel(false)
@@ -715,6 +763,7 @@ function SkinDetailsItem:UpdateWeaponEquipButton(WeaponSkinData)
     UpdateVisibility(self.CanvasPanelEquiping, isEquiping)
   end
 end
+
 function SkinDetailsItem:UpdateCommonDetailsView(ResourcesID)
   local TBGeneral = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   local resourceData = TBGeneral[ResourcesID]
@@ -731,6 +780,7 @@ function SkinDetailsItem:UpdateCommonDetailsView(ResourcesID)
   end
   self:UpdateBuyButton()
 end
+
 function SkinDetailsItem:UpdateDetailsSkinDescByGoodsId()
   if self.GoodsId then
     local result, rowinfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBMall, self.GoodsId)
@@ -740,6 +790,7 @@ function SkinDetailsItem:UpdateDetailsSkinDescByGoodsId()
     end
   end
 end
+
 function SkinDetailsItem:UpdateBuyButton()
   if self.GoodsId then
     self:InitBuyPanel(1007, self.GoodsId, self.bUnlocked, "")
@@ -747,6 +798,7 @@ function SkinDetailsItem:UpdateBuyButton()
     UpdateVisibility(self.CanvasPanelButtonMain, false)
   end
 end
+
 function SkinDetailsItem:ResetAllPanel()
   self.WBP_AppearanceMoviePreview:UpdateMoviePreview(-1)
   UpdateVisibility(self.CanvasPanelButtonMain, false)
@@ -761,6 +813,7 @@ function SkinDetailsItem:ResetAllPanel()
   UpdateVisibility(self.CanvasHeroSkin, false)
   UpdateVisibility(self.ScaleBox_8, false)
 end
+
 function SkinDetailsItem:UpdateBuyButtonByGoodsId(GoodsId, bUnlocked)
   self.GoodsId = GoodsId
   self.bUnlocked = bUnlocked
@@ -773,6 +826,7 @@ function SkinDetailsItem:UpdateBuyButtonByGoodsId(GoodsId, bUnlocked)
   self.RGTextDetailsSkinName:SetText(resourceData.Name)
   self.RGTextDetailsSkinDesc:SetText(resourceData.Desc)
 end
+
 function SkinDetailsItem:UpdateDetailsView(ResourcesID, AppearanceMovieList, ParentView, bUnlocked, GoodsId, OnlyShowBuyButton, ItemAmount)
   UpdateVisibility(self.CanvasPanel_Limit, false)
   if not ResourcesID then
@@ -839,6 +893,7 @@ function SkinDetailsItem:UpdateDetailsView(ResourcesID, AppearanceMovieList, Par
     self:UpdateCommonDetailsView(ResourcesID)
   end
 end
+
 function SkinDetailsItem:InitProEff(ItemID)
   local ItemId = tonumber(ItemID)
   if not ItemId then
@@ -857,8 +912,10 @@ function SkinDetailsItem:InitProEff(ItemID)
   UpdateVisibility(self.AutoLoad_ComNameProEff, true)
   self.AutoLoad_ComNameProEff.ChildWidget:InitComProEff(ItemId)
 end
+
 function SkinDetailsItem:Hide()
 end
+
 function SkinDetailsItem:RefreshWeaponSkill(WeaponId)
   local Result, RowData = GetRowData(DT.DT_Weapon, tostring(WeaponId))
   local index = 1
@@ -873,6 +930,7 @@ function SkinDetailsItem:RefreshWeaponSkill(WeaponId)
   UpdateVisibility(self.VerticalBoxWeaponSkill, true)
   HideOtherItem(self.VerticalBoxWeaponSkill, index)
 end
+
 function SkinDetailsItem:RefreshHeroSkill(ResourcesID)
   local TBHero = LuaTableMgr.GetLuaTableByName(TableNames.TBHero)
   if not TBHero[ResourcesID] then
@@ -908,6 +966,7 @@ function SkinDetailsItem:RefreshHeroSkill(ResourcesID)
   end
   UpdateVisibility(self.CanvasHeroSkin, true)
 end
+
 function SkinDetailsItem:BindOnShowHeroSkillTips(IsShow, SkillGroupId, KeyName, SkillInputNameAry, inputNameAryPad, SkillItem)
   if IsShow then
     if not self:CheckSelfVisible() then
@@ -921,6 +980,7 @@ function SkinDetailsItem:BindOnShowHeroSkillTips(IsShow, SkillGroupId, KeyName, 
     self.NormalSkillTip:Hide()
   end
 end
+
 function SkinDetailsItem:BindOnShowWeaponSkillTips(IsShow, WeaponSkillData, KeyName, SkillItem)
   if IsShow then
     if not self:CheckSelfVisible() then
@@ -934,6 +994,7 @@ function SkinDetailsItem:BindOnShowWeaponSkillTips(IsShow, WeaponSkillData, KeyN
     self.NormalSkillTip:Hide()
   end
 end
+
 function SkinDetailsItem:CheckSelfVisible()
   if not self.ParentView or not self.ParentView:IsVisible() then
     return false
@@ -943,12 +1004,15 @@ function SkinDetailsItem:CheckSelfVisible()
   end
   return self:IsVisible()
 end
+
 function SkinDetailsItem:ShowLimit(LimitType, LimitProgress)
   UpdateVisibility(self.CanvasPanel_Limit, true)
   self.LimitTypeText:SetText(LimitType)
   self.LimitProgressText:SetText(LimitProgress)
 end
+
 function SkinDetailsItem:ChangeStatus(Status)
   self.RGStateController_Style:ChangeStatus(Status)
 end
+
 return SkinDetailsItem

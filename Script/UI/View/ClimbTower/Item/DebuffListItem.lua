@@ -1,19 +1,23 @@
 local ClimbTowerData = require("UI.View.ClimbTower.ClimbTowerData")
 local DebuffListItem = UnLua.Class()
+
 function DebuffListItem:Construct()
   self.WBP_DebuffAdjust.OnLevelChange:Add(self, self.OnLevelChange)
   EventSystem.AddListener(self, EventDef.ClimbTowerView.OnDebuffChange, self.OnDebuffChange)
 end
+
 function DebuffListItem:OnLevelChange(Lv)
   local Floor = ClimbTowerData:GetFloor()
   ClimbTowerData:SetLocalDebuff(Floor, tostring(self.DebuffId), Lv)
   self:SetItemStyle(Lv)
 end
+
 function DebuffListItem:OnDebuffChange()
   if self.bListenChange then
     self:InitDebuffItem(self.DebuffId, self.bCanSetBuffItem, self.bListenChange)
   end
 end
+
 function DebuffListItem:InitDebuffItem(DebuffId, bCanSetBuffItem, bListenChange)
   self.bListenChange = bListenChange
   self.DebuffId = DebuffId
@@ -34,6 +38,7 @@ function DebuffListItem:InitDebuffItem(DebuffId, bCanSetBuffItem, bListenChange)
   UpdateVisibility(self.Check, 2 == self.DebuffInfo.Type)
   self:SetItemStyle(ClimbTowerData:GetLocalDebuffValue(ClimbTowerData:GetFloor(), tostring(DebuffId)))
 end
+
 function DebuffListItem:SetItemStyle(Lv)
   if not self.DebuffInfo then
     return
@@ -61,6 +66,7 @@ function DebuffListItem:SetItemStyle(Lv)
     self.Value:SetColorAndOpacity(self.Color2)
   end
 end
+
 function DebuffListItem:SetItemValue(DebuffId, Value, bCanSetBuffItem)
   self.DebuffId = DebuffId
   UpdateVisibility(self.WBP_DebuffAdjust, bCanSetBuffItem)
@@ -79,4 +85,5 @@ function DebuffListItem:SetItemValue(DebuffId, Value, bCanSetBuffItem)
   end
   self:SetItemStyle(Value)
 end
+
 return DebuffListItem

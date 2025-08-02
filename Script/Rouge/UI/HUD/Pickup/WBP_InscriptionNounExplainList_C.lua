@@ -1,4 +1,5 @@
 local WBP_InscriptionNounExplainList_C = UnLua.Class()
+
 function WBP_InscriptionNounExplainList_C:InitInfo(CurCompareWeapon, IsWeapon, WeaponOrAccessoryId)
   self.CurCompareWeapon = CurCompareWeapon
   self.IsWeapon = IsWeapon
@@ -9,6 +10,7 @@ function WBP_InscriptionNounExplainList_C:InitInfo(CurCompareWeapon, IsWeapon, W
   end
   self:RefreshInscriptionNounExplainList()
 end
+
 function WBP_InscriptionNounExplainList_C:RefreshInscriptionNounExplainList()
   local AllChildren = self.InscriptionNounExplainList:GetAllChildren()
   for i, SingleItem in pairs(AllChildren) do
@@ -131,4 +133,5 @@ function WBP_InscriptionNounExplainList_C:RefreshInscriptionNounExplainList()
     end
   end
 end
+
 return WBP_InscriptionNounExplainList_C

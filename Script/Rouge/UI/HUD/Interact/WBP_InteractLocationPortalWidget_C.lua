@@ -1,15 +1,19 @@
 local WBP_InteractLocationPortalWidget_C = UnLua.Class()
+
 function WBP_InteractLocationPortalWidget_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_InteractLocationPortalWidget_C:Destruct()
 end
+
 function WBP_InteractLocationPortalWidget_C:UpdateInteractInfo(InteractTipRow, TargetActor)
   if not UE.RGUtil.IsUObjectValid(TargetActor) then
     return
   end
   self:InitInteractItem(TargetActor, InteractTipRow.Info)
 end
+
 function WBP_InteractLocationPortalWidget_C:InitInteractItem(TargetActor, Info)
   if not UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TickStatusTimer) then
     self.TickStatusTimer = UE.UKismetSystemLibrary.K2_SetTimerDelegate({
@@ -27,6 +31,7 @@ function WBP_InteractLocationPortalWidget_C:InitInteractItem(TargetActor, Info)
     self:PlayAnimation(self.Ani_loop, 0, 0)
   end
 end
+
 function WBP_InteractLocationPortalWidget_C:UpdateStatus()
   if UE.RGUtil.IsUObjectValid(self.TargetActor) then
     local validPortal = UE.AVotePortal.GetVotePortal(self)
@@ -43,6 +48,7 @@ function WBP_InteractLocationPortalWidget_C:UpdateStatus()
     end
   end
 end
+
 function WBP_InteractLocationPortalWidget_C:UpdateItemNative(MarkInfoParam, bIsInScreenParam)
   self.Overridden.UpdateItemNative(self, MarkInfoParam, bIsInScreenParam)
   if not UE.RGUtil.IsUObjectValid(self.TargetActor) then
@@ -50,6 +56,7 @@ function WBP_InteractLocationPortalWidget_C:UpdateItemNative(MarkInfoParam, bIsI
   end
   self:UpdateStatus()
 end
+
 function WBP_InteractLocationPortalWidget_C:HideWidget()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TickStatusTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.TickStatusTimer)
@@ -57,4 +64,5 @@ function WBP_InteractLocationPortalWidget_C:HideWidget()
   UpdateVisibility(self.CanvasPanelRoot, false)
   self.TargetActor = nil
 end
+
 return WBP_InteractLocationPortalWidget_C

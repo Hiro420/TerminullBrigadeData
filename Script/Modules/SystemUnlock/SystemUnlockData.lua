@@ -4,6 +4,7 @@ local SystemUnlockData = {
   SystemUnlockInfo = {},
   ViewNameToSysId = {}
 }
+
 function SystemUnlockData:DealWithTable()
   local tbSystemUnlock = LuaTableMgr.GetLuaTableByName(TableNames.TBSystemUnlock)
   if tbSystemUnlock then
@@ -17,9 +18,11 @@ function SystemUnlockData:DealWithTable()
     end
   end
 end
+
 function SystemUnlockData:ResetWhenLogin()
   self.SystemUnlockInfo = {}
 end
+
 function SystemUnlockData:GetViewNameListBySysId(SysId)
   local tbSystemUnlock = LuaTableMgr.GetLuaTableByName(TableNames.TBSystemUnlock)
   if tbSystemUnlock then
@@ -31,6 +34,7 @@ function SystemUnlockData:GetViewNameListBySysId(SysId)
   end
   return {}
 end
+
 function SystemUnlockData:GetSysIdByViewName(ViewName)
   if table.IsEmpty(self.ViewNameToSysId) then
     self:DealWithTable()
@@ -40,4 +44,5 @@ function SystemUnlockData:GetSysIdByViewName(ViewName)
   end
   return -1
 end
+
 return SystemUnlockData

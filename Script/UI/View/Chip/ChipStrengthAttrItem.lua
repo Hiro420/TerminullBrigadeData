@@ -1,9 +1,12 @@
 local EStateControllerLvUp = {LvUp = 1, Normal = 2}
 local ChipStrengthAttrItem = UnLua.Class()
+
 function ChipStrengthAttrItem:Construct()
 end
+
 function ChipStrengthAttrItem:Destruct()
 end
+
 function ChipStrengthAttrItem:InitChipStrengthAttrItem(levelUPMainAttrGrowth, ChipBagItemData, oldLevel, newLv, bIsUpgrade)
   UpdateVisibility(self, true)
   if bIsUpgrade then
@@ -32,7 +35,9 @@ function ChipStrengthAttrItem:InitChipStrengthAttrItem(levelUPMainAttrGrowth, Ch
     self.RGTextAttrNewValue:SetText(showNewValue)
   end
 end
+
 function ChipStrengthAttrItem:Hide()
   UpdateVisibility(self, false)
 end
+
 return ChipStrengthAttrItem

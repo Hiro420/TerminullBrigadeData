@@ -16,10 +16,12 @@ for i = 1, keys:Length() do
   local value = CmdParams:Find(key)
   print(i, key .. ":" .. tostring(value))
 end
+
 function CmdLineMgr.FindParam(paramName)
   local ParamFound = CmdParams:Find(paramName)
   return ParamFound
 end
+
 function CmdLineMgr.FindSwitch(switchName)
   local index = CmdSwitches:Find(switchName)
   return index > 0

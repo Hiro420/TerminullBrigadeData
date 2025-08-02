@@ -5,6 +5,7 @@ local MsgSensitiveWaveId = 302000
 local OfflinePlayerTipId = 302002
 local OfflinePlayerTipInterval = 1800
 local ContactPersonHandler = {}
+
 function ContactPersonHandler:RequestGetRolesByNameToServer(NameList, SuccessFuncCallback)
   HttpCommunication.Request("playerservice/rolesbyname", {nameList = NameList}, {
     GameInstance,
@@ -21,6 +22,7 @@ function ContactPersonHandler:RequestGetRolesByNameToServer(NameList, SuccessFun
     end
   })
 end
+
 function ContactPersonHandler:RequestAddFriendToServer(RoleId, AddSource, Callback)
   local Params = {addSource = AddSource, roleID = RoleId}
   HttpCommunication.Request("social/askaddplayer", Params, {
@@ -37,6 +39,7 @@ function ContactPersonHandler:RequestAddFriendToServer(RoleId, AddSource, Callba
     end
   })
 end
+
 function ContactPersonHandler:RequestAgreeAddFriendToServer(RoleId)
   HttpCommunication.Request("social/askaddplayer/agree", {roleID = RoleId}, {
     GameInstance,
@@ -54,6 +57,7 @@ function ContactPersonHandler:RequestAgreeAddFriendToServer(RoleId)
     end
   })
 end
+
 function ContactPersonHandler:RequestRejectAddFriendToServer(RoleId)
   HttpCommunication.Request("social/askaddplayer/reject", {roleID = RoleId}, {
     GameInstance,
@@ -67,6 +71,7 @@ function ContactPersonHandler:RequestRejectAddFriendToServer(RoleId)
     end
   })
 end
+
 function ContactPersonHandler:RequestDeleteFriendToServer(RoleId)
   HttpCommunication.Request("social/delplayer", {roleID = RoleId}, {
     GameInstance,
@@ -80,6 +85,7 @@ function ContactPersonHandler:RequestDeleteFriendToServer(RoleId)
     end
   })
 end
+
 function ContactPersonHandler:RequestGetApplyListToServer()
   HttpCommunication.RequestByGet("social/pull/applylist", {
     GameInstance,
@@ -96,6 +102,7 @@ function ContactPersonHandler:RequestGetApplyListToServer()
     end
   })
 end
+
 function ContactPersonHandler:RequestGetFriendListToServer()
   HttpCommunication.RequestByGet("social/pull/friendlist", {
     GameInstance,
@@ -112,6 +119,7 @@ function ContactPersonHandler:RequestGetFriendListToServer()
     end
   })
 end
+
 function ContactPersonHandler:RequestSendPersonalMessageToServer(Msg, PlayerInfo)
   local ReceiverId = PlayerInfo.roleid
   local Params = {
@@ -138,6 +146,7 @@ function ContactPersonHandler:RequestSendPersonalMessageToServer(Msg, PlayerInfo
     end
   })
 end
+
 function ContactPersonHandler:RequestGetBlackListToServer()
   HttpCommunication.RequestByGet("social/pull/blacklist", {
     GameInstance,
@@ -154,6 +163,7 @@ function ContactPersonHandler:RequestGetBlackListToServer()
     end
   })
 end
+
 function ContactPersonHandler:RequestBlackListPlayerToServer(RoleId)
   HttpCommunication.Request("social/blacklistplayer", {roleID = RoleId}, {
     GameInstance,
@@ -169,6 +179,7 @@ function ContactPersonHandler:RequestBlackListPlayerToServer(RoleId)
     end
   })
 end
+
 function ContactPersonHandler:RequestCancelBlackListPlayerToServer(RoleId)
   HttpCommunication.Request("social/blacklistplayer/cancel", {roleID = RoleId}, {
     GameInstance,
@@ -183,6 +194,7 @@ function ContactPersonHandler:RequestCancelBlackListPlayerToServer(RoleId)
     end
   })
 end
+
 function ContactPersonHandler:RequestRemarkNameToServer(RoleId, RemarkName)
   local Param = {remarkName = RemarkName, roleID = RoleId}
   HttpCommunication.Request("social/remarkname", Param, {
@@ -199,6 +211,7 @@ function ContactPersonHandler:RequestRemarkNameToServer(RoleId, RemarkName)
     end
   })
 end
+
 function ContactPersonHandler:RequestChangeInvisibleToServer(IsInvisible)
   HttpCommunication.Request("playerservice/invisible", {invisible = IsInvisible, type = 0}, {
     GameInstance,
@@ -212,6 +225,7 @@ function ContactPersonHandler:RequestChangeInvisibleToServer(IsInvisible)
     end
   })
 end
+
 function ContactPersonHandler:RequestOfflineMessagesToServer()
   HttpCommunication.RequestByGet("chatservice/offlinemessages", {
     GameInstance,
@@ -231,4 +245,5 @@ function ContactPersonHandler:RequestOfflineMessagesToServer()
     end
   })
 end
+
 return ContactPersonHandler

@@ -4,6 +4,7 @@ local LineColor = {
   [UE.ETalentItemType.Attack] = UE.FLinearColor(0.545725, 0.017642, 0.061246, 1.0),
   [UE.ETalentItemType.Resource] = UE.FLinearColor(0.005605, 0.366253, 1.0, 1.0)
 }
+
 function WBP_SingleTalentLine:Show(TalentId)
   if not TalentId then
     UpdateVisibility(self, false)
@@ -28,6 +29,7 @@ function WBP_SingleTalentLine:Show(TalentId)
   self:RefreshStatus()
   EventSystem.AddListenerNew(EventDef.Lobby.UpdateCommonTalentInfo, self, self.BindOnUpdateCommonTalentInfo)
 end
+
 function WBP_SingleTalentLine:RefreshStatus(...)
   local CurLevel = LogicTalent.GetPreCommonTalentLevel(self.TalentId)
   local MaxLevel = LogicTalent.GetMaxLevelByTalentId(self.TalentId)
@@ -40,13 +42,17 @@ function WBP_SingleTalentLine:RefreshStatus(...)
   UpdateVisibility(self.Progress_Line, CurLevel == RealLevel and CurLevel >= MaxLevel, false, true)
   UpdateVisibility(self.Img_PreLine, CurLevel ~= RealLevel and CurLevel >= MaxLevel)
 end
+
 function WBP_SingleTalentLine:BindOnUpdateCommonTalentInfo(...)
   self:RefreshStatus()
 end
+
 function WBP_SingleTalentLine:Hide(...)
   EventSystem.RemoveListenerNew(EventDef.Lobby.UpdateCommonTalentInfo, self, self.BindOnUpdateCommonTalentInfo)
 end
+
 function WBP_SingleTalentLine:Destruct(...)
   self:Hide()
 end
+
 return WBP_SingleTalentLine

@@ -26,19 +26,23 @@ local EndDrag = function(self)
     end
   end
 end
+
 function WBP_ScrollPickupItem_C:Construct()
   self.Overridden.Construct(self)
   self.ScrollId = -1
   self.bIsHovered = false
   self.BP_ButtonMakePublic.OnClicked:Add(self, self.OnMakePublicClick)
 end
+
 function WBP_ScrollPickupItem_C:InitScrollPickupItem()
   if not self.bIsInited then
     self.WBP_DragDropItem:SetDragAvailableCallback(self, self, self.SizeBoxIcon, SlotDragAvailable, EndDrag)
     self.bIsInited = true
   end
 end
+
 function WBP_ScrollPickupItem_C:UpdateScrollData(Target, UpdateScrollTips, ParentView, Index)
+  print("WBP_ScrollPickupItem_C:UpdateScrollData", Target, Target.ModifyId, Target.IsShared, Target.IsShine, ParentView, Index)
   if not Target then
     return
   end
@@ -96,9 +100,11 @@ function WBP_ScrollPickupItem_C:UpdateScrollData(Target, UpdateScrollTips, Paren
     self:Hovered(false)
   end
 end
+
 function WBP_ScrollPickupItem_C:RefreshShine(IsShine)
   UpdateVisibility(self.Effect_Panel, IsShine)
 end
+
 function WBP_ScrollPickupItem_C:Hovered(bIsNeedInit)
   if self.ParentView then
     self.UpdateScrollTips(self.ParentView, true, self.ScrollId, self, EScrollTipsOpenType.EFromBagPickupList, bIsNeedInit)
@@ -106,6 +112,7 @@ function WBP_ScrollPickupItem_C:Hovered(bIsNeedInit)
   UpdateVisibility(self.URGImageHover, true)
   self.bIsHovered = true
 end
+
 function WBP_ScrollPickupItem_C:UnHovered()
   if self.ParentView then
     self.UpdateScrollTips(self.ParentView, false, -1, nil, EScrollTipsOpenType.EFromBagPickupList)
@@ -113,6 +120,7 @@ function WBP_ScrollPickupItem_C:UnHovered()
   UpdateVisibility(self.URGImageHover, false)
   self.bIsHovered = false
 end
+
 function WBP_ScrollPickupItem_C:OnMouseButtonDown(MyGeometry, MouseEvent)
   local CommonInputSubsystem = UE.USubsystemBlueprintLibrary.GetLocalPlayerSubsystem(self, UE.UCommonInputSubsystem:StaticClass())
   if CommonInputSubsystem then
@@ -135,6 +143,7 @@ function WBP_ScrollPickupItem_C:OnMouseButtonDown(MyGeometry, MouseEvent)
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function WBP_ScrollPickupItem_C:OnMouseButtonUp(MyGeometry, MouseEvent)
   if UE.UKismetInputLibrary.PointerEvent_GetEffectingButton(MouseEvent) == self.MiddleMouseButton then
     print("WBP_ScrollPickupItem_C:OnMouseButtonUp")
@@ -143,12 +152,15 @@ function WBP_ScrollPickupItem_C:OnMouseButtonUp(MyGeometry, MouseEvent)
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function WBP_ScrollPickupItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   self:Hovered(true)
 end
+
 function WBP_ScrollPickupItem_C:OnMouseLeave(MyGeometry)
   self:UnHovered()
 end
+
 function WBP_ScrollPickupItem_C:OnMakePublicClick()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character or not Character.AttributeModifyComponent then
@@ -170,6 +182,7 @@ function WBP_ScrollPickupItem_C:OnMakePublicClick()
     PlayerMiscComp:SharePickupAttributeModify(TargetActor, Character)
   end
 end
+
 function WBP_ScrollPickupItem_C:Hide()
   UpdateVisibility(self, false)
   if self.bIsHovered then
@@ -186,6 +199,7 @@ function WBP_ScrollPickupItem_C:Hide()
     self.LongPressTimer = nil
   end
 end
+
 function WBP_ScrollPickupItem_C:Destruct()
   self.ParentView = nil
   self.UpdateScrollTips = nil
@@ -198,4 +212,5 @@ function WBP_ScrollPickupItem_C:Destruct()
     self.LongPressTimer = nil
   end
 end
+
 return WBP_ScrollPickupItem_C

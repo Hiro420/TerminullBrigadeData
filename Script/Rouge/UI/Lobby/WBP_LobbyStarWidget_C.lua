@@ -1,9 +1,12 @@
 local rapidjson = require("rapidjson")
 local WBP_LobbyStarWidget_C = UnLua.Class()
+
 function WBP_LobbyStarWidget_C:Construct()
 end
+
 function WBP_LobbyStarWidget_C:Destruct()
 end
+
 function WBP_LobbyStarWidget_C:UpdateStar(StarLv)
   local AllChildren = self.HorizontalBoxStar:GetAllChildren()
   for i, SingleItem in pairs(AllChildren) do
@@ -19,4 +22,5 @@ function WBP_LobbyStarWidget_C:UpdateStar(StarLv)
     end
   end
 end
+
 return WBP_LobbyStarWidget_C

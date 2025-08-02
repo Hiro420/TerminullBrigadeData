@@ -1,7 +1,9 @@
 local PlayerInfoRoleItem = Class()
+
 function PlayerInfoRoleItem:Construct()
   self.Overridden.Construct(self)
 end
+
 function PlayerInfoRoleItem:InitPlayerInfoRoleItem(tbHeroData, bSelect)
   UpdateVisibility(self, true)
   SetImageBrushByPath(self.URGImageRoleHeadIcon, tbHeroData.ActorIcon)
@@ -16,13 +18,17 @@ function PlayerInfoRoleItem:InitPlayerInfoRoleItem(tbHeroData, bSelect)
     self.RGStateControllerLock:ChangeStatus(ELock.Lock)
   end
 end
+
 function PlayerInfoRoleItem:Hide()
   UpdateVisibility(self, false)
 end
+
 function PlayerInfoRoleItem:OnMouseEnter(MyGeometry, MouseEvent)
   self.RGStateControllerHover:ChangeStatus(EHover.Hover)
 end
+
 function PlayerInfoRoleItem:OnMouseLeave(MyGeometry, MouseEvent)
   self.RGStateControllerHover:ChangeStatus(EHover.UnHover)
 end
+
 return PlayerInfoRoleItem

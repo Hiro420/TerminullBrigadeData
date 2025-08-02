@@ -17,17 +17,21 @@ local SeasonAbilityData = {
   PreNeedCostResourceInfo = {},
   UnLockedSchemeNum = 0
 }
+
 function SeasonAbilityData:SetSeasonAbilityInfo(HeroId, InSeasonTalentInfo)
   SeasonAbilityData.SeasonAbilityInfo[HeroId] = InSeasonTalentInfo
   SeasonAbilityData.HeroAbilityPointNumList[HeroId] = InSeasonTalentInfo.totalAcquiredPointNum
   SeasonAbilityData.UnLockedSchemeNum = InSeasonTalentInfo.unlockedSchemeNum
 end
+
 function SeasonAbilityData:GetSeasonAbilityInfo(HeroId)
   return SeasonAbilityData.SeasonAbilityInfo[HeroId]
 end
+
 function SeasonAbilityData:GetUnlockedSchemeNum(...)
   return SeasonAbilityData.UnLockedSchemeNum
 end
+
 function SeasonAbilityData:GetCurEquipSchemeId(HeroId)
   local SeasonAbilityInfo = SeasonAbilityData:GetSeasonAbilityInfo(HeroId)
   if not SeasonAbilityInfo then
@@ -35,6 +39,7 @@ function SeasonAbilityData:GetCurEquipSchemeId(HeroId)
   end
   return SeasonAbilityInfo.equipedSchemeID
 end
+
 function SeasonAbilityData:GetSeasonAbilityInfoBySchemeId(HeroId, SchemeId)
   local CurEquipSchemeInfo
   local SeasonAbilityInfo = SeasonAbilityData:GetSeasonAbilityInfo(HeroId)
@@ -43,6 +48,7 @@ function SeasonAbilityData:GetSeasonAbilityInfoBySchemeId(HeroId, SchemeId)
   end
   return CurEquipSchemeInfo
 end
+
 function SeasonAbilityData:GetCurRemainAbilityPointNum(InHeroId)
   local SeasonAbilityInfo = SeasonAbilityData:GetSeasonAbilityInfo(InHeroId)
   if not SeasonAbilityInfo then
@@ -54,6 +60,7 @@ function SeasonAbilityData:GetCurRemainAbilityPointNum(InHeroId)
   end
   return TargetSchemeAbilityInfo.currentPointNum
 end
+
 function SeasonAbilityData:GetSeasonAbilityLevel(AbilityId, HeroId)
   local Level = 0
   local SeasonAbilityInfo = SeasonAbilityData:GetSeasonAbilityInfo(HeroId)
@@ -67,32 +74,40 @@ function SeasonAbilityData:GetSeasonAbilityLevel(AbilityId, HeroId)
   Level = TargetSeasonAbilityInfo.abilities[tostring(AbilityId)] and TargetSeasonAbilityInfo.abilities[tostring(AbilityId)] or 0
   return Level
 end
+
 function SeasonAbilityData:SetHeroAbilityPointNumList(InHeroAbilityPointNumList)
   for HeroId, Num in pairs(InHeroAbilityPointNumList) do
     SeasonAbilityData.HeroAbilityPointNumList[HeroId] = Num
   end
 end
+
 function SeasonAbilityData:GetTotalExchangeAbilityPointNumByHeroId(HeroId)
   return SeasonAbilityData.HeroAbilityPointNumList[HeroId] and SeasonAbilityData.HeroAbilityPointNumList[HeroId] or 0
 end
+
 function SeasonAbilityData:SetSpecialAbilityInfo(InSpecialAbilityInfo)
   SeasonAbilityData.SpecialAbilityInfo = InSpecialAbilityInfo
 end
+
 function SeasonAbilityData:GetSpecialAbilityInfo(...)
   return SeasonAbilityData.SpecialAbilityInfo
 end
+
 function SeasonAbilityData:GetSpecialAbilityCurrentMaxPointNum(...)
   local SpecialAbilityInfo = SeasonAbilityData:GetSpecialAbilityInfo()
   return SpecialAbilityInfo.currentMaxPointNum and SpecialAbilityInfo.currentMaxPointNum or 0
 end
+
 function SeasonAbilityData:GetSpecialAbilityHistoryMaxPointNum(...)
   local SpecialAbilityInfo = SeasonAbilityData:GetSpecialAbilityInfo()
   return SpecialAbilityInfo.historyMaxPointNum and SpecialAbilityInfo.historyMaxPointNum or 0
 end
+
 function SeasonAbilityData:GetSpecialAbilityStatus(AbilityId)
   local SpecialAbilityInfo = SeasonAbilityData:GetSpecialAbilityInfo()
   return SpecialAbilityInfo.specialAbilities and SpecialAbilityInfo.specialAbilities[tostring(AbilityId)] or SpecialAbilityStatus.Lock
 end
+
 function SeasonAbilityData:DealWithTable(...)
   local SeasonAbilityTable = LuaTableMgr.GetLuaTableByName(TableNames.TBSeasonTalent)
   if SeasonAbilityTable then
@@ -119,12 +134,15 @@ function SeasonAbilityData:DealWithTable(...)
     SeasonAbilityData.MaxExchangeAbilityPointNum = MaxExchangeAbilityPointNum
   end
 end
+
 function SeasonAbilityData:GetMaxExchangeAbilityPointNum(...)
   return SeasonAbilityData.MaxExchangeAbilityPointNum
 end
+
 function SeasonAbilityData:GetAbilityTableRow(GroupId)
   return SeasonAbilityData.AllSeasonAbilityRowInfo[GroupId]
 end
+
 function SeasonAbilityData:IsMeetPreAbilityGroupCondition(AbilityId, HeroId)
   local AbilityInfo = SeasonAbilityData:GetAbilityTableRow(AbilityId)
   if not AbilityInfo then
@@ -142,12 +160,14 @@ function SeasonAbilityData:IsMeetPreAbilityGroupCondition(AbilityId, HeroId)
   end
   return PreAbilityLevelSum >= TargetLevelAbilityInfo.FrontGroupsLevel
 end
+
 function SeasonAbilityData:GetPreAbilityLevel(AbilityId, HeroId)
   if SeasonAbilityData.PreAbilityLevelList[AbilityId] then
     return SeasonAbilityData.PreAbilityLevelList[AbilityId]
   end
   return SeasonAbilityData:GetSeasonAbilityLevel(AbilityId, HeroId)
 end
+
 function SeasonAbilityData:SetPreAbilityLevel(AbilityId, Level, HeroId)
   local CurLevel = SeasonAbilityData:GetSeasonAbilityLevel(AbilityId, HeroId)
   if Level == CurLevel then
@@ -156,12 +176,15 @@ function SeasonAbilityData:SetPreAbilityLevel(AbilityId, Level, HeroId)
     SeasonAbilityData.PreAbilityLevelList[AbilityId] = Level
   end
 end
+
 function SeasonAbilityData:GetPreAbilityLevelList(...)
   return SeasonAbilityData.PreAbilityLevelList
 end
+
 function SeasonAbilityData:GetPreCostSeasonAbilityPointNum(...)
   return SeasonAbilityData.PreCostSeasonAbilityPointNum
 end
+
 function SeasonAbilityData:SetPreCostSeasonAbilityPointNum(CostNum, ExchangeNum, HeroId)
   SeasonAbilityData.PreCostSeasonAbilityPointNum = math.max(SeasonAbilityData.PreCostSeasonAbilityPointNum + CostNum, 0)
   SeasonAbilityData.PreNeedExchangeAbilityPointNum = SeasonAbilityData.PreNeedExchangeAbilityPointNum + ExchangeNum
@@ -177,23 +200,28 @@ function SeasonAbilityData:SetPreCostSeasonAbilityPointNum(CostNum, ExchangeNum,
   end
   SeasonAbilityData.PreNeedCostResourceInfo = NeedCostResourceInfo
 end
+
 function SeasonAbilityData:GetExchangeAbilityPointTableRow(PointNum)
   return SeasonAbilityData.ExchangeAbilityPointTable[PointNum]
 end
+
 function SeasonAbilityData:GetPreNeedExchangeAbilityPointNum(...)
   return SeasonAbilityData.PreNeedExchangeAbilityPointNum
 end
+
 function SeasonAbilityData:GetPreRemainCostResourceNum(ResourceId)
   local PreCostResourceNum = SeasonAbilityData.PreNeedCostResourceInfo[ResourceId]
   PreCostResourceNum = PreCostResourceNum or 0
   local CurHaveResourceNum = LogicOutsidePackback.GetResourceNumById(ResourceId)
   return CurHaveResourceNum - PreCostResourceNum
 end
+
 function SeasonAbilityData:GetPreRemainSeasonAbilityPointNum(HeroId)
   local CurRemainAbilityPointNum = SeasonAbilityData:GetCurRemainAbilityPointNum(HeroId)
   local PreCostSeasonAbilityPointNum = SeasonAbilityData:GetPreCostSeasonAbilityPointNum()
   return math.max(CurRemainAbilityPointNum - PreCostSeasonAbilityPointNum, 0)
 end
+
 function SeasonAbilityData:GetAbilityMaxCanUpgradeLevel(AbilityId, HeroId)
   local AbilityGroupInfo = SeasonAbilityData:GetAbilityTableRow(AbilityId)
   if not AbilityGroupInfo then
@@ -213,6 +241,7 @@ function SeasonAbilityData:GetAbilityMaxCanUpgradeLevel(AbilityId, HeroId)
   end
   return MaxCanUpgradeLevel
 end
+
 function SeasonAbilityData:GetAbilityMaxLevel(AbilityId)
   local AbilityGroupInfo = SeasonAbilityData:GetAbilityTableRow(AbilityId)
   local MaxLevel = 0
@@ -225,6 +254,7 @@ function SeasonAbilityData:GetAbilityMaxLevel(AbilityId)
   end
   return MaxLevel
 end
+
 function SeasonAbilityData:IsMeetAbilityUpgradeCostCondition(AbilityId, HeroId)
   local Result, NeedExchangePointNum = false, 0
   local AbilityInfo = SeasonAbilityData:GetAbilityTableRow(AbilityId)
@@ -266,6 +296,7 @@ function SeasonAbilityData:IsMeetAbilityUpgradeCostCondition(AbilityId, HeroId)
   end
   return Result, NeedExchangePointNum
 end
+
 function SeasonAbilityData:GetAbilityUpgradeExchangeCostConditionResult(AbilityId, HeroId)
   local AbilityInfo = SeasonAbilityData:GetAbilityTableRow(AbilityId)
   if not AbilityInfo then
@@ -277,6 +308,7 @@ function SeasonAbilityData:GetAbilityUpgradeExchangeCostConditionResult(AbilityI
     return false, 0
   end
 end
+
 local function GetPreAbilityIdList(AbilityId, PreAbilityIdList)
   local AbilityGroupInfo = SeasonAbilityData:GetAbilityTableRow(AbilityId)
   if AbilityGroupInfo and AbilityGroupInfo[1] then
@@ -288,6 +320,7 @@ local function GetPreAbilityIdList(AbilityId, PreAbilityIdList)
   end
   return
 end
+
 function SeasonAbilityData:SortUpgradeAbilityList(InAbilityList)
   local AbilityIdList = {}
   for GroupId, Level in pairs(InAbilityList) do
@@ -308,10 +341,12 @@ function SeasonAbilityData:SortUpgradeAbilityList(InAbilityList)
   end
   return TempConfirmParams
 end
+
 function SeasonAbilityData:ResetPreAbilityInfo(...)
   SeasonAbilityData.PreAbilityLevelList = {}
   SeasonAbilityData.PreCostSeasonAbilityPointNum = 0
   SeasonAbilityData.PreNeedExchangeAbilityPointNum = 0
   SeasonAbilityData.PreNeedCostResourceInfo = {}
 end
+
 return SeasonAbilityData

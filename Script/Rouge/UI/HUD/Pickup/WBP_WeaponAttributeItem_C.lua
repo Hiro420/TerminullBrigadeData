@@ -1,4 +1,5 @@
 local WBP_WeaponAttributeItem_C = UnLua.Class()
+
 function WBP_WeaponAttributeItem_C:InitAttributeInfo(Name, Value, IsRight)
   self.IsRight = IsRight
   self.LeftPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -13,6 +14,7 @@ function WBP_WeaponAttributeItem_C:InitAttributeInfo(Name, Value, IsRight)
   self.Txt_Name:SetText(Name)
   self:UpdateCompareStatus(0)
 end
+
 function WBP_WeaponAttributeItem_C:UpdateCompareStatus(Result)
   local TargetNum, TargetCompareStatus
   if self.IsRight then
@@ -43,4 +45,5 @@ function WBP_WeaponAttributeItem_C:UpdateCompareStatus(Result)
     end
   end
 end
+
 return WBP_WeaponAttributeItem_C

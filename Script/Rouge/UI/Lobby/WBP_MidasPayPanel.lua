@@ -4,17 +4,22 @@ local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local TopupHandler = require("Protocol.Topup.TopupHandler")
 local WBP_MidasPayPanel = Class(ViewBase)
+
 function WBP_MidasPayPanel:BindClickHandler()
 end
+
 function WBP_MidasPayPanel:UnBindClickHandler()
 end
+
 function WBP_MidasPayPanel:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function WBP_MidasPayPanel:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_MidasPayPanel:OnShow(URL)
   self.IsNeedRequestPaymentCurrency = true
   self.RGWebBrowser:LoadURL(URL)
@@ -22,9 +27,11 @@ function WBP_MidasPayPanel:OnShow(URL)
   self.WBP_InteractTipWidgetEsc:BindInteractAndClickEvent(self, self.ListenForEscInputAction)
   self:SetEnhancedInputActionBlocking(true)
 end
+
 function WBP_MidasPayPanel:ListenForEscInputAction()
   UIMgr:Hide(ViewID.UI_MidasPayPanel)
 end
+
 function WBP_MidasPayPanel:OnHide()
   self.WBP_InteractTipWidgetEsc:UnBindInteractAndClickEvent(self, self.ListenForEscInputAction)
   self:SetEnhancedInputActionBlocking(false)
@@ -33,7 +40,9 @@ function WBP_MidasPayPanel:OnHide()
     TopupHandler:RequestPaymentCurrencyAfterPay()
   end
 end
+
 function WBP_MidasPayPanel:Destruct()
   self:OnHide()
 end
+
 return WBP_MidasPayPanel

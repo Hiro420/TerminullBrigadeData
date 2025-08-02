@@ -2,6 +2,7 @@ local SinglePersonItemView = UnLua.Class()
 local ContactPersonManager = ModuleManager:Get("ContactPersonModule")
 local ContactPersonHandler = require("Protocol.ContactPerson.ContactPersonHandler")
 local ContactPersonData = require("Modules.ContactPerson.ContactPersonData")
+
 function SinglePersonItemView:Construct()
   self.Btn_MainButton.OnClicked:Add(self, self.BindOnMainButtonClicked)
   self.Btn_MainButton.OnHovered:Add(self, self.BindOnMainButtonHovered)
@@ -19,6 +20,7 @@ function SinglePersonItemView:Construct()
   self.BP_ButtonWithSoundHeadHover.OnUnhovered:Add(self, self.BindOnHeadUnhovered)
   self.Btn_AddFriend.OnClicked:Add(self, self.BindOnAddFriendButtonClicked)
 end
+
 function SinglePersonItemView:Show(PlayerInfo, StatusText, ContactListType, StatusTextColor, ParentView)
   self.ParentView = ParentView
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -87,12 +89,15 @@ function SinglePersonItemView:Show(PlayerInfo, StatusText, ContactListType, Stat
     end
   end
 end
+
 function SinglePersonItemView:SetIsNotHasRoleIdItem()
   self.IsNotHasRoleIdItem = true
 end
+
 function SinglePersonItemView:HideApplyFriendLine()
   self.Img_Line:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function SinglePersonItemView:ChangeFriendRequestStatus()
   local FriendApplyInfo = ContactPersonData:GetFriendApplyInfoById(self.PlayerInfo.roleid)
   local Text = ""
@@ -104,6 +109,7 @@ function SinglePersonItemView:ChangeFriendRequestStatus()
   end
   self.Txt_Status:SetText(Text)
 end
+
 function SinglePersonItemView:RefreshInviteTeamButtonVis()
   self.Btn_InviteTeam:SetVisibility(UE.ESlateVisibility.Hidden)
   if self.CurContactListType == EContactListType.FriendRequest then
@@ -132,6 +138,7 @@ function SinglePersonItemView:RefreshInviteTeamButtonVis()
     self.Btn_InviteTeam:SetVisibility(UE.ESlateVisibility.Visible)
   end
 end
+
 function SinglePersonItemView:RefreshAddFriendButtonVis(...)
   UpdateVisibility(self.Btn_AddFriend, false)
   if self.CurContactListType == EContactListType.FriendRequest then
@@ -145,10 +152,12 @@ function SinglePersonItemView:RefreshAddFriendButtonVis(...)
     UpdateVisibility(self.Btn_AddFriend, true, true)
   end
 end
+
 function SinglePersonItemView:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.PlayerInfo = nil
 end
+
 function SinglePersonItemView:BindOnMainButtonClicked()
   if self.IsNotHasRoleIdItem then
     local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
@@ -171,6 +180,7 @@ function SinglePersonItemView:BindOnMainButtonClicked()
   end
   EventSystem.Invoke(EventDef.ContactPerson.OnContactPersonItemClicked, CurMousePosition, self.PlayerInfo, Type)
 end
+
 function SinglePersonItemView:BindOnMainButtonHovered()
   self.MainHoveredPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   if self:IsAnimationPlaying(self.Ani_Hover_Out) then
@@ -180,6 +190,7 @@ function SinglePersonItemView:BindOnMainButtonHovered()
     self:PlayAnimationForward(self.Ani_Hover_In)
   end
 end
+
 function SinglePersonItemView:BindOnMainButtonUnhovered()
   self.MainHoveredPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   if self:IsAnimationPlaying(self.Ani_Hover_In) then
@@ -189,6 +200,7 @@ function SinglePersonItemView:BindOnMainButtonUnhovered()
     self:PlayAnimationForward(self.Ani_Hover_Out)
   end
 end
+
 function SinglePersonItemView:BindOnInviteTeamButtonClicked()
   if UE.URGBlueprintLibrary.IsPlatformConsole() and (self.PlayerInfo.roleid == nil or DataMgr:IsPlayerCurrentPlatform(self.PlayerInfo.roleid)) then
     ContactPersonManager:SendInviteOrApplyTeamRequestPlatformConsole(self.PlayerInfo, LogicTeam.JoinTeamWay.FriendInvite)
@@ -196,41 +208,53 @@ function SinglePersonItemView:BindOnInviteTeamButtonClicked()
     ContactPersonManager:SendInviteOrApplyTeamRequest(self.PlayerInfo, LogicTeam.JoinTeamWay.FriendInvite)
   end
 end
+
 function SinglePersonItemView:BindOnInviteTeamButtonHovered()
   self.InviteTeamHoveredPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function SinglePersonItemView:BindOnInviteTeamButtonUnhovered()
   self.InviteTeamHoveredPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function SinglePersonItemView:BindOnAgreeButtonClicked()
   ContactPersonHandler:RequestAgreeAddFriendToServer(self.PlayerInfo.roleid)
 end
+
 function SinglePersonItemView:BindOnAgreeButtonHovered()
   self.AgreeHoveredPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function SinglePersonItemView:BindOnAgreeButtonUnhovered()
   self.AgreeHoveredPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function SinglePersonItemView:BindOnRefuseButtonClicked()
   ContactPersonHandler:RequestRejectAddFriendToServer(self.PlayerInfo.roleid)
 end
+
 function SinglePersonItemView:BindOnRefuseButtonHovered()
   self.RefuseHoveredPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function SinglePersonItemView:BindOnRefuseButtonUnhovered()
   self.RefuseHoveredPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function SinglePersonItemView:BindOnHeadHovered()
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
     self.ParentView:ShowPlayerInfoTips(true, self.PlayerInfo, self.BP_ButtonWithSoundHeadHover)
   end
 end
+
 function SinglePersonItemView:BindOnHeadUnhovered()
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
     self.ParentView:ShowPlayerInfoTips(false)
   end
 end
+
 function SinglePersonItemView:BindOnAddFriendButtonClicked(...)
   ContactPersonHandler:RequestAddFriendToServer(self.PlayerInfo.roleid, EOperateButtonPanelSourceFromType.Search)
 end
+
 return SinglePersonItemView

@@ -1,8 +1,11 @@
 local WBP_CommonTipsNetBar = UnLua.Class()
+
 function WBP_CommonTipsNetBar:Initialize(Initializer)
 end
+
 function WBP_CommonTipsNetBar:Construct()
 end
+
 function WBP_CommonTipsNetBar:ShowTips()
   UpdateVisibility(self, true)
   local NetBarDesItemList = {
@@ -20,4 +23,5 @@ function WBP_CommonTipsNetBar:ShowTips()
     end
   end
 end
+
 return WBP_CommonTipsNetBar

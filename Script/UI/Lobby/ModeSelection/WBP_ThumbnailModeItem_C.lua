@@ -9,9 +9,11 @@ WBP_ThumbnailModeItem_C.GameModes = {
   [3002] = "game_mode_3002"
 }
 local ClimbTowerData = require("UI.View.ClimbTower.ClimbTowerData")
+
 function WBP_ThumbnailModeItem_C:Construct()
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
 end
+
 function WBP_ThumbnailModeItem_C:RefreshInfo()
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGameMode, self.GameModeId)
   if not Result then
@@ -25,7 +27,6 @@ function WBP_ThumbnailModeItem_C:RefreshInfo()
   UpdateVisibility(self.Horizontal_Progress, self.GameModeId == TableEnums.ENUMGameMode.TOWERClIMBING)
   UpdateVisibility(self.TowerClimbingPanel, self.GameModeId == TableEnums.ENUMGameMode.TOWERClIMBING)
   UpdateVisibility(self.ScaleBox_0, not CheckIsInNormal(self.GameModeId))
-  self:RefreshLockStatus()
   if self.GameModeId == TableEnums.ENUMGameMode.TOWERClIMBING then
     local Floor = DataMgr.GetFloorByGameModeIndex(ClimbTowerData.WorldId, self.GameModeId)
     if self:IsUnlock() then
@@ -33,20 +34,22 @@ function WBP_ThumbnailModeItem_C:RefreshInfo()
     end
   end
   self.WBP_RedDotView:ChangeRedDotIdByTag(tostring(self.GameModeId))
+  self:RefreshLockStatus()
 end
+
 function WBP_ThumbnailModeItem_C:RefreshLockStatus(...)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGameMode, self.GameModeId)
   if Result and RowInfo.Season and not ModuleManager:Get("SeasonModule"):CheckIsInSeasonMode() then
-    self.RGStateController_Lock:ChangeStatus("Season_Lock")
+    self.RGStateController_Lock:ChangeStatus("Season_Lock", true)
     return
   end
   local IsUnlock = self:IsUnlock()
   if IsUnlock then
-    self.RGStateController_Lock:ChangeStatus("UnLock")
+    self.RGStateController_Lock:ChangeStatus("UnLock", true)
   else
     local bSelf, TeamMember = LogicTeam.GetTeamUnLockModeAndMember(self.GameModeId, self.DefaultWorldId)
     if bSelf then
-      self.RGStateController_Lock:ChangeStatus("Lock")
+      self.RGStateController_Lock:ChangeStatus("Lock", true)
       if self.GameModeId == TableEnums.ENUMGameMode.BOSSRUSH then
         local TBBossRush = LuaTableMgr.GetLuaTableByName(TableNames.TBBossRush)
         for index, value in ipairs(TBBossRush) do
@@ -60,11 +63,12 @@ function WBP_ThumbnailModeItem_C:RefreshLockStatus(...)
         end
       end
     else
-      self.RGStateController_Lock:ChangeStatus("Team_Lock")
+      self.RGStateController_Lock:ChangeStatus("Team_Lock", true)
       self.WBP_LockWordTip:Show(TeamMember, true)
     end
   end
 end
+
 function WBP_ThumbnailModeItem_C:IsUnlock()
   local TBGameFloor = LuaTableMgr.GetLuaTableByName(TableNames.TBGameFloorUnlock)
   if TBGameFloor then
@@ -83,6 +87,7 @@ function WBP_ThumbnailModeItem_C:IsUnlock()
   end
   return true
 end
+
 function WBP_ThumbnailModeItem_C:BindOnMainButtonClicked()
   local SystemID = WBP_ThumbnailModeItem_C.GameModes[self.GameModeId]
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
@@ -103,4 +108,5 @@ function WBP_ThumbnailModeItem_C:BindOnMainButtonClicked()
     ShowWaveWindow(self.LockTipId)
   end
 end
+
 return WBP_ThumbnailModeItem_C

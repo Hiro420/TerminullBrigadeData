@@ -1,0 +1,1157 @@
+[
+  {
+    "ID": 9022,
+    "Group": 101,
+    "Type": 3,
+    "Star": 1,
+    "Name": "明星级表演！",
+    "Desc": "选择区域展开1个持续<CZ_HighLight>8</>秒的力场，力场中的敌人将被附加<CZ_HighLight>停滞</>效果。\\n在终极技能持续期间，射击命中敌人时，有<CZ_HighLight>50%</>概率涌现数据流造成<CZ_HighLight>额外伤害</>。",
+    "DescParams": [],
+    "SimpleDesc": "展开力场并造成停滞效果。",
+    "Quality": 3,
+    "SkillTags": [
+      3
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillLinglan_QH.Bat_SkillLinglan_QH",
+    "VideoUrl": "/Game/Rouge/Video/Skill/LLan/LLan_QSkill.LLan_QSkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 9023,
+    "Group": 102,
+    "Type": 4,
+    "Star": 1,
+    "Name": "抓到你咯！",
+    "Desc": "朝前方投掷<img id=\\\"LLanE\\\"/>耀变体，爆炸后，将处于爆炸范围内的敌人牵引到中心，并为敌人添加持续<CZ_HighLight>5</>秒的<CZ_HighLight>停滞效果</>。",
+    "DescParams": [],
+    "SimpleDesc": "投掷耀变体爆炸造成范围伤害，并进行牵引。",
+    "Quality": 3,
+    "SkillTags": [
+      4
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillLinglan_E.Bat_SkillLinglan_E",
+    "VideoUrl": "/Game/Rouge/Video/Skill/LLan/LLan_ESkill.LLan_ESkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 9025,
+    "Group": 103,
+    "Type": 5,
+    "Star": 1,
+    "Name": "飞起来了！",
+    "Desc": "曙光向上闪身并停留在空中，可以在空中飞行<CZ_HighLight>10</>秒。再次释放时释放下落攻击并结束飞行状态。\\n（飞行时通过<keyname id=\\\"9\\\"></>和<keyname id=\\\"10\\\"></>控制起落。）",
+    "DescParams": [],
+    "SimpleDesc": "向上方闪身，并获得短暂飞行能力。",
+    "Quality": 3,
+    "SkillTags": [
+      1
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillLinglan_C.Bat_SkillLinglan_C",
+    "VideoUrl": "/Game/Rouge/Video/Skill/LLan/LLan_CSkill.LLan_CSkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 1401,
+    "Group": 104,
+    "Type": 2,
+    "Star": 1,
+    "Name": "黑洞",
+    "Desc": "敬请期待",
+    "DescParams": [],
+    "SimpleDesc": "",
+    "Quality": 3,
+    "SkillTags": [
+      3
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Texture/lobby/Frames/Skill_linglan_04_png.Skill_linglan_04_png",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 1501,
+    "Group": 105,
+    "Type": 1,
+    "Star": 1,
+    "Name": "生命守护",
+    "Desc": "受到致命伤害时，免疫伤害并获得无敌{0}秒钟，冷却{1}秒",
+    "DescParams": [
+      5,
+      300
+    ],
+    "SimpleDesc": "受到致命伤害时，免疫伤害并获得无敌<CZ_HighLight>5</>秒。冷却<CZ_HighLight>300</>秒",
+    "Quality": 3,
+    "SkillTags": [
+      1,
+      2
+    ],
+    "InscriptionId": 8020101,
+    "IconPath": "/Game/Rouge/UI/Texture/lobby/Frames/Skill_linglan_04_png.Skill_linglan_04_png",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 1601,
+    "Group": 106,
+    "Type": 6,
+    "Star": 1,
+    "Name": "连控带打！",
+    "Desc": "击中被控制的敌人，<CZ_HighLight>20%</>几率触发数据流。",
+    "DescParams": [],
+    "SimpleDesc": "击中被控制的敌人，有概率触发数据流。",
+    "Quality": 0,
+    "SkillTags": [],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillLinglan_B.Bat_SkillLinglan_B",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 30003,
+    "Group": 207,
+    "Type": 7,
+    "Star": 1,
+    "Name": "数据弹",
+    "Desc": "【右键】：\\n· 发射一枚威力巨大的数据弹",
+    "DescParams": [],
+    "SimpleDesc": "发射一枚威力巨大的数据弹",
+    "Quality": 3,
+    "SkillTags": [],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillLinglan_Q2.Bat_SkillLinglan_Q2",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 10042,
+    "Group": 201,
+    "Type": 3,
+    "Star": 1,
+    "Name": "巡猎之拥",
+    "Desc": "对范围内随机<CZ_HighLight>5</>个敌人发动斩击，再对范围内所有敌人造成一次<CZ_HighLight>收刀范围伤害</>，技能释放期间每次命中敌人都会减少次要技能<keyname id=\\\"4\\\"></>疾掠之影<CZ_HighLight>1</>秒冷却时间。\\n技能释放期间，影刃处于无法选中状态，并免疫伤害。",
+    "DescParams": [],
+    "SimpleDesc": "范围【斩击】并【收刀】造成伤害，命中敌人大幅缩减<CZ_HighLight>疾掠之影</>的冷却时间。",
+    "Quality": 3,
+    "SkillTags": [
+      6
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillqing_QH.Bat_Skillqing_QH",
+    "VideoUrl": "/Game/Rouge/Video/Skill/XQing/XQing_QSkill.XQing_QSkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 10041,
+    "Group": 202,
+    "Type": 4,
+    "Star": 1,
+    "Name": "破命之锋",
+    "Desc": "向前击出刀光，每次命中敌人减少次要技能<keyname id=\\\"4\\\"></>疾掠之影的冷却时间。\\n可以快速连击<CZ_HighLight>3</>次。",
+    "DescParams": [],
+    "SimpleDesc": "消耗紫怨利刃击出刀光，命中敌人小幅缩减<CZ_HighLight>疾掠之影</>冷却时间。\\n可快速连击<CZ_HighLight>3</>次。",
+    "Quality": 3,
+    "SkillTags": [
+      5
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillqing_E.Bat_Skillqing_E",
+    "VideoUrl": "/Game/Rouge/Video/Skill/XQing/XQing_ESkill.XQing_ESkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 10043,
+    "Group": 203,
+    "Type": 5,
+    "Star": 1,
+    "Name": "疾掠之影",
+    "Desc": "向前冲刺，对路径上的敌人造成<CZ_HighLight>范围伤害</>。\\n期间影刃<CZ_HighLight>无法被选中，并免疫伤害</>。",
+    "DescParams": [],
+    "SimpleDesc": "向前冲刺并造成范围伤害。",
+    "Quality": 3,
+    "SkillTags": [
+      7
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillqing_C.Bat_Skillqing_C",
+    "VideoUrl": "/Game/Rouge/Video/Skill/XQing/XQing_CSkill.XQing_CSkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 2401,
+    "Group": 204,
+    "Type": 2,
+    "Star": 1,
+    "Name": "闪",
+    "Desc": "敬请期待",
+    "DescParams": [],
+    "SimpleDesc": "",
+    "Quality": 3,
+    "SkillTags": [
+      7
+    ],
+    "InscriptionId": 0,
+    "IconPath": "",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 4010101,
+    "Group": 205,
+    "Type": 1,
+    "Star": 1,
+    "Name": "致命游戏",
+    "Desc": "护盾破碎时，影刃从半空出现砸地，造成<CZ_HighLight>高额范围伤害</>。\\n在地面处留下范围场【持续{0}秒】，角色在其中每秒减少Q和E技能{1}秒的冷却时间",
+    "DescParams": [
+      8,
+      0.5
+    ],
+    "SimpleDesc": "角色护盾破碎时，影刃从半空出现砸地，造成<CZ_HighLight>高额范围伤害</>。\\n在地面处留下范围场【持续8秒】，角色在其中每秒减少Q和E技能0.5秒的冷却时间。",
+    "Quality": 3,
+    "SkillTags": [
+      9,
+      10
+    ],
+    "InscriptionId": 8010101,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_01_png.Skill_linglan_01_png",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 2601,
+    "Group": 206,
+    "Type": 6,
+    "Star": 1,
+    "Name": "致死本能",
+    "Desc": "主要技能<keyname id=\\\"3\\\"></>破命之锋与终极技能<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>巡猎之拥造成伤害时，缩减次要技能<keyname id=\\\"4\\\"></>疾掠之影冷却时间。",
+    "DescParams": [],
+    "SimpleDesc": "<CZ_HighLight>破命之锋</>与<CZ_HighLight>巡猎之拥</>造成伤害时，缩减<CZ_HighLight>疾掠之影</>冷却时间。",
+    "Quality": 0,
+    "SkillTags": [],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillqing_B.Bat_Skillqing_B",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 30001,
+    "Group": 207,
+    "Type": 7,
+    "Star": 1,
+    "Name": "突袭",
+    "Desc": "【突袭】\\n· <keyname id=\\\"7\\\"></>释放一次近战突袭\\n· 一定时间内再次<keyname id=\\\"7\\\"></>将发动强力一击，并恢复体力与护盾，<keyname id=\\\"7\\\"></>武器技能将进入5秒冷却\\n【加速】： \\n· <keyname id=\"6\"></>命中或释放其他技能可以缩减<keyname id=\"7\"></>冷却",
+    "DescParams": [],
+    "SimpleDesc": "连续近战攻击",
+    "Quality": 3,
+    "SkillTags": [],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillqing_Q2.Bat_Skillqing_Q2",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 10051,
+    "Group": 301,
+    "Type": 3,
+    "Star": 1,
+    "Name": "弱化场域",
+    "Desc": "选定区域并发射无人机持续轰炸目标区域<CZ_HighLight>5</>秒。\\n被轰炸的敌人会被赋予<CZ_HighLight>弱化</>效果。",
+    "DescParams": [],
+    "SimpleDesc": "发射无人机进行轰炸，被击中的敌人将被赋予弱化效果。",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillTaros_ShieldH.Bat_SkillTaros_ShieldH",
+    "VideoUrl": "/Game/Rouge/Video/Skill/Taros/Taros_QSkill.Taros_QSkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": [
+      "<BigTitle>弱化</>\\n敌人受到的伤害增加25%。"
+    ]
+  },
+  {
+    "ID": 10052,
+    "Group": 302,
+    "Type": 4,
+    "Star": 1,
+    "Name": "正义轰击",
+    "Desc": "发射1枚<img id=\\\"TarosE\\\"/>导弹，锁定前方敌人并造成<CZ_HighLight>弱化</>效果。",
+    "DescParams": [],
+    "SimpleDesc": "锁定单体发射导弹并赋予弱化效果。",
+    "Quality": 3,
+    "SkillTags": [
+      4
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillTaros_bombard.Bat_SkillTaros_bombard",
+    "VideoUrl": "/Game/Rouge/Video/Skill/Taros/Taros_ESkill.Taros_ESkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": [
+      "<BigTitle>弱化</>\\n敌人受到的伤害增加25%。"
+    ]
+  },
+  {
+    "ID": 10053,
+    "Group": 303,
+    "Type": 5,
+    "Star": 1,
+    "Name": "战术护盾",
+    "Desc": "在5秒内为所有友方提供上校体力值50%的临时护盾上限和等量的临时护盾值。",
+    "DescParams": [],
+    "SimpleDesc": "在5秒内为所有友方提供上校体力值50%的临时护盾上限和等量的临时护盾值。",
+    "Quality": 3,
+    "SkillTags": [
+      1
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillTaros_MF.Bat_SkillTaros_MF",
+    "VideoUrl": "/Game/Rouge/Video/Skill/Taros/Taros_CSkill.Taros_CSkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 3401,
+    "Group": 304,
+    "Type": 2,
+    "Star": 1,
+    "Name": "上校光环",
+    "Desc": "敬请期待",
+    "DescParams": [],
+    "SimpleDesc": "",
+    "Quality": 3,
+    "SkillTags": [],
+    "InscriptionId": 0,
+    "IconPath": "",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 4020101,
+    "Group": 305,
+    "Type": 1,
+    "Star": 1,
+    "Name": "电磁屏障",
+    "Desc": "受到致命伤害时，免疫伤害并获得无敌{0}秒，冷却{1}秒",
+    "DescParams": [
+      5,
+      300
+    ],
+    "SimpleDesc": "受到致命伤害时，免疫伤害并获得无敌<CZ_HighLight>5</>秒，冷却<CZ_HighLight>300</>秒。",
+    "Quality": 3,
+    "SkillTags": [
+      1,
+      2
+    ],
+    "InscriptionId": 8020101,
+    "IconPath": "/Game/Rouge/UI/Texture/lobby/Frames/Skill_linglan_04_png.Skill_linglan_04_png",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 3601,
+    "Group": 306,
+    "Type": 6,
+    "Star": 1,
+    "Name": "战术推演",
+    "Desc": "每命中敌人<CZ_HighLight>20</>次弱点，回复1次<keyname id=\\\"3\\\"></>主要技能使用次数。\n上校攻击处于弱化状态的敌人时，将其全身视为弱点。",
+    "DescParams": [],
+    "SimpleDesc": "每命中敌人<CZ_HighLight>20</>次弱点，回复1次<keyname id=\"3\"></>主要技能使用次数。\n上校攻击处于弱化状态的敌人时，将其全身视为弱点。",
+    "Quality": 0,
+    "SkillTags": [],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillTaros_passive.Bat_SkillTaros_passive",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 30002,
+    "Group": 307,
+    "Type": 7,
+    "Star": 1,
+    "Name": "护盾",
+    "Desc": "【V键】：\\n· 给自己或队友添加护盾。",
+    "DescParams": [],
+    "SimpleDesc": "给自己或队友添加护盾。",
+    "Quality": 3,
+    "SkillTags": [],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillTaros_spear02.Bat_SkillTaros_spear02",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 19080001,
+    "Group": 1081,
+    "Type": 4,
+    "Star": 1,
+    "Name": "和弦挥击",
+    "Desc": "挥动吉他攻击面前的敌人。",
+    "DescParams": [],
+    "SimpleDesc": "挥动吉他攻击面前的敌人。",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillKdy_E.Bat_SkillKdy_E",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 19080002,
+    "Group": 1082,
+    "Type": 3,
+    "Star": 1,
+    "Name": "音乐狂潮",
+    "Desc": "进入狂欢状态，状态持续期间子弹无限，且逐渐提升射速。",
+    "DescParams": [],
+    "SimpleDesc": "进入狂欢状态，状态持续期间子弹无限，且逐渐提升射速。",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillKdy_Q.Bat_SkillKdy_Q",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 19080003,
+    "Group": 1083,
+    "Type": 5,
+    "Star": 1,
+    "Name": "音袭",
+    "Desc": "冲锋并裹挟周围的敌人一起到目的地，冲锋结束后使用吉他砸向面前的敌人，在冲锋过程中，叛音获得减伤和免控效果。",
+    "DescParams": [],
+    "SimpleDesc": "冲锋并攻击敌人，冲锋过程中获得减伤和免控效果。",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillKdy_C.Bat_SkillKdy_C",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 19080004,
+    "Group": 1084,
+    "Type": 6,
+    "Star": 1,
+    "Name": "旋律狂欢",
+    "Desc": "叛音会在战斗中进入狂欢状态！每次武器和技能命中时将叠加【狂欢】点数。\\n<keyname id=\\\"6\\\"></>射击命中时增加1点。\\n<keyname id=\\\"3\\\"></>主要技能命中时增加15点。\\n<keyname id=\\\"4\\\"></>次要技能增加20点。\\n<keyname id=\"1\"></><keyname id=\"2\"></>终极技能释放时立刻充满【狂欢】点。",
+    "DescParams": [],
+    "SimpleDesc": "武器和技能命中时，叠加增益状态。",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillKdy_passive.Bat_SkillKdy_passive",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": [
+      "<BigTitle>旋律激荡</>\\n【狂欢】20点时提升射速。",
+      "<BigTitle>音符共鸣</>\\n【狂欢】50点时每次射击将发射3枚音符造成额外伤害。",
+      "<BigTitle>音浪潮流</>\\n【狂欢】80点时每次射击将发射音浪造成额外范围伤害。",
+      "<BigTitle>灵感爆发</>\\n【狂欢】100点时，以叛音为中心扩散出一道音波造成巨额伤害。"
+    ]
+  },
+  {
+    "ID": 11111001,
+    "Group": 1111,
+    "Type": 4,
+    "Star": 1,
+    "Name": "DVA技能E",
+    "Desc": "DVA技能E",
+    "DescParams": [],
+    "SimpleDesc": "DVA技能E",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillKdy_E.Bat_SkillKdy_E",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 11111002,
+    "Group": 1112,
+    "Type": 3,
+    "Star": 1,
+    "Name": "DVA技能Q",
+    "Desc": "DVA技能Q",
+    "DescParams": [],
+    "SimpleDesc": "DVA技能Q",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillKdy_Q.Bat_SkillKdy_Q",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 11111003,
+    "Group": 1113,
+    "Type": 5,
+    "Star": 1,
+    "Name": "DVA技能C",
+    "Desc": "DVA技能C",
+    "DescParams": [],
+    "SimpleDesc": "DVA技能C",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillKdy_C.Bat_SkillKdy_C",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 11111004,
+    "Group": 1114,
+    "Type": 6,
+    "Star": 1,
+    "Name": "DVA被动",
+    "Desc": "DVA被动",
+    "DescParams": [],
+    "SimpleDesc": "DVA被动",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillKdy_passive.Bat_SkillKdy_passive",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 10032,
+    "Group": 1031,
+    "Type": 3,
+    "Star": 1,
+    "Name": "火箭骑士",
+    "Desc": "麦克斯驾驶火箭，成为火箭骑士！途中生成恢复雾气，可恢复友方体力值。旋转镜头控制火箭方向，<keyname id=\\\"6\\\"></><CZ_HighLight>引爆</>火箭，<keyname id=\\\"7\\\"></>控制<CZ_HighLight>分离</>；导弹引爆前飞行越久，伤害越高！\\n导弹爆炸时，对范围内的可破坏部位额外造成<CZ_HighLight>25%</>伤害，若麦克斯也在爆炸范围内，体力值降至1点，并在3秒内回复大量体力值、护盾值与临时护盾值。",
+    "DescParams": [],
+    "SimpleDesc": "骑乘火箭，并引爆火箭造成范围伤害。",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillnax_QH.Bat_Skillnax_QH",
+    "VideoUrl": "/Game/Rouge/Video/Skill/Nax/Nax_QSkill.Nax_QSkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 10033,
+    "Group": 1032,
+    "Type": 5,
+    "Star": 1,
+    "Name": "命不该绝",
+    "Desc": "回复<CZ_HighLight>30%</>已损失体力，同时随机获得以下<CZ_HighLight>3</>种强化效果中的<CZ_HighLight>1</>种：\\n伤害强化：<CZ_HighLight>17.5%</>概率造成<CZ_HighLight>2</>次枪械伤害（不对技能生效）。\\n移速强化：移速提升<CZ_HighLight>8.4%</>。\\n操控强化：发射间隔缩短<CZ_HighLight>17.5%</>，换弹速度提升<CZ_HighLight>17.5%</>。",
+    "DescParams": [],
+    "SimpleDesc": "回复损失体力，并提升自身能力。",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillnax_E.Bat_Skillnax_E",
+    "VideoUrl": "/Game/Rouge/Video/Skill/Nax/Nax_CSkill.Nax_CSkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 10031,
+    "Group": 1033,
+    "Type": 4,
+    "Star": 1,
+    "Name": "危险翻滚",
+    "Desc": "向前翻滚并快速落地，在落地位置造成范围伤害。\\n每次释放扣除<CZ_HighLight>16%</>最大体力值。",
+    "DescParams": [],
+    "SimpleDesc": "向指定方向跳起并重重下砸，造成范围伤害。",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillnax_C.Bat_Skillnax_C",
+    "VideoUrl": "/Game/Rouge/Video/Skill/Nax/Nax_ESkill.Nax_ESkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 10035,
+    "Group": 1034,
+    "Type": 6,
+    "Star": 1,
+    "Name": "绝境派对",
+    "Desc": "麦克斯拥有【免死】状态，并根据当前体力获得强化：\\n   1.体力小于<CZ_HighLight>70%</>时，获得【狂躁】。\\n   2.体力小于<CZ_HighLight>40%</>时，将【狂躁】替换为【狂热】。\\n   3.当体力等于<CZ_HighLight>1</>时，将【狂热】替换为【狂欢】。\\n   当麦克斯的体力变为1点，并获得【狂欢】后的10秒内，即使提升体力值，也不会移除【狂欢】效果。",
+    "DescParams": [],
+    "SimpleDesc": "体力越低，攻击越强。",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillnax_BD.Bat_Skillnax_BD",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": [
+      "<BigTitle>免死</>\\n受到致命伤害时，立即回复<CZ_HighLight>30%</>最大体力，并获得无敌效果，持续<CZ_HighLight>2</>秒。此效果有<CZ_HighLight>180</>秒冷却时间。",
+      "<BigTitle>狂躁</>\\n攻击力提升<CZ_HighLight>10%</>。",
+      "<BigTitle>狂热</>\\n攻击力提升<CZ_HighLight>15%</>，移速提升<CZ_HighLight>10%</>。",
+      "<BigTitle>狂欢</>\\n攻击力提升<CZ_HighLight>25%</>，移速提升<CZ_HighLight>15%</>，角色暴击率<CZ_HighLight>+35%</>，角色暴伤倍率<CZ_HighLight>+30%</>。"
+    ]
+  },
+  {
+    "ID": 10064,
+    "Group": 1101,
+    "Type": 5,
+    "Star": 1,
+    "Name": "哨箭：C",
+    "Desc": "获得200临时护盾，造成任意伤害均附加1次C技能伤害。护盾存在期间，受伤会反击敌人。",
+    "DescParams": [],
+    "SimpleDesc": "加盾+C伤害+反击",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "Game/Rouge/UI/Sprite/IconRoleSkills/Frames/Bat_Skillnax_QH.Bat_Skillnax_QH",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 10065,
+    "Group": 1102,
+    "Type": 3,
+    "Star": 1,
+    "Name": "哨箭：大招",
+    "Desc": "射击移速UP，弹道UP，持续10秒；召唤小剑自动攻击",
+    "DescParams": [],
+    "SimpleDesc": "BUFF射击移速+弹道，召唤小剑自动攻击",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillnax_E.Bat_Skillnax_E",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 10066,
+    "Group": 1103,
+    "Type": 4,
+    "Star": 1,
+    "Name": "哨箭：E",
+    "Desc": "召唤剑阵，持续牵引敌人。一段时间后造成高额E技能伤害\n造成其他类型伤害，均可以让剑阵的范围与伤害提升。",
+    "DescParams": [],
+    "SimpleDesc": "持续牵引，造成除E以外的伤害可以让E的范围与伤害提升",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_Skillnax_C.Bat_Skillnax_C",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 10067,
+    "Group": 1104,
+    "Type": 6,
+    "Star": 1,
+    "Name": "哨箭：被动",
+    "Desc": "哨箭造成伤害后，10秒内提高哨箭3%伤害。",
+    "DescParams": [],
+    "SimpleDesc": "造成伤害提供叠层伤害BUFF",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Sprite/IconOneoutothree/Frames/Bat_SkilNAX_B.Bat_SkilNAX_B",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 10091,
+    "Group": 1091,
+    "Type": 3,
+    "Star": 1,
+    "Name": "全息视界",
+    "Desc": "<keyname id=\"1\"></><keyname id=\"2\"></>终极技能激活【全息视界】，持续时间内攻击力提升30%。同时强化下次射击，使其造成巨额伤害并自动锁定敌人身上的部位或弱点。",
+    "DescParams": [],
+    "SimpleDesc": "尤莉看到所有敌人的位置，并强化下一次攻击的威力。",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillYuri_Q.Bat_SkillYuri_Q",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": [
+      "<BigTitle>全息视界</>\\n尤莉开启感知目镜，解析身边一切事物，开启期间，可以看到视野外的敌人与隐藏在掩体后的敌人。"
+    ]
+  },
+  {
+    "ID": 10092,
+    "Group": 1092,
+    "Type": 4,
+    "Star": 1,
+    "Name": "迅疾射击",
+    "Desc": "尤莉疾速移动，并在过程中射出一发自动追踪敌人弱点部位的强化子弹。",
+    "DescParams": [],
+    "SimpleDesc": "疾速移动，并射出一发自动追踪敌人的强化子弹。",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillYuri_E.Bat_SkillYuri_E",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 10093,
+    "Group": 1093,
+    "Type": 5,
+    "Star": 1,
+    "Name": "残影匿踪",
+    "Desc": "尤莉隐匿身形，脱离敌人的视野，并在原地留下全息幻影吸引敌人注意。下次武器或技能伤害将获得200%伤害增幅。",
+    "DescParams": [],
+    "SimpleDesc": "隐身并留下全息幻影吸引敌人注意",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillYuri_C.Bat_SkillYuri_C",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 10094,
+    "Group": 1094,
+    "Type": 6,
+    "Star": 1,
+    "Name": "弱点追击",
+    "Desc": "对弱点或独立部位，造成的伤害提升25%",
+    "DescParams": [],
+    "SimpleDesc": "提升攻击弱点或部位的伤害",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillYuri_Passive_Role.Bat_SkillYuri_Passive_Role",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 6101,
+    "Group": 601,
+    "Type": 3,
+    "Star": 1,
+    "Name": "奥义！病毒爆发乱射！",
+    "Desc": "<CZ_HighLight>3</>秒内，向前方一定范围内的敌人进行<CZ_HighLight>24</>次锁定攻击；释放期间可以按击<CZ_HighLight>方向键</>进行位移，位移结束后海因克斯生成<CZ_HighLight>4</>只病毒手臂进行一次强力锁定攻击。",
+    "DescParams": [],
+    "SimpleDesc": "短时间内向前方一定范围进行24次锁定攻击",
+    "Quality": 3,
+    "SkillTags": [
+      8
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillHyks_Q1.Bat_SkillHyks_Q1",
+    "VideoUrl": "/Game/Rouge/Video/Skill/Hyks/hyks_QSkill.hyks_QSkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 6201,
+    "Group": 602,
+    "Type": 4,
+    "Star": 1,
+    "Name": "病毒能量",
+    "Desc": "向前发出2个沿固定轨迹飞行的<CZ_HighLight>病毒能量体</>，可<CZ_HighLight>吸引</>敌人并持续造成伤害。",
+    "DescParams": [],
+    "SimpleDesc": "发射病毒能量体吸引敌人\\n并造成持续伤害",
+    "Quality": 3,
+    "SkillTags": [
+      4
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillHyks_E1.Bat_SkillHyks_E1",
+    "VideoUrl": "/Game/Rouge/Video/Skill/Hyks/hyks_ESkill.hyks_ESkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 6301,
+    "Group": 603,
+    "Type": 5,
+    "Star": 1,
+    "Name": "双生乱舞",
+    "Desc": "海因克斯<CZ_HighLight>旋转射击</>，对周围所有敌人造成伤害。",
+    "DescParams": [],
+    "SimpleDesc": "海因克斯旋转射击，对周围所有敌人造成伤害。",
+    "Quality": 3,
+    "SkillTags": [
+      1
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillHyks_C1.Bat_SkillHyks_C1",
+    "VideoUrl": "/Game/Rouge/Video/Skill/Hyks/hyks_CSkill.hyks_CSkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 6401,
+    "Group": 604,
+    "Type": 2,
+    "Star": 1,
+    "Name": "海因克斯光环",
+    "Desc": "敬请期待",
+    "DescParams": [],
+    "SimpleDesc": "",
+    "Quality": 3,
+    "SkillTags": [],
+    "InscriptionId": 0,
+    "IconPath": "",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 4060101,
+    "Group": 605,
+    "Type": 1,
+    "Star": 1,
+    "Name": "电磁屏障",
+    "Desc": "敬请期待",
+    "DescParams": [
+      5,
+      300
+    ],
+    "SimpleDesc": "",
+    "Quality": 3,
+    "SkillTags": [
+      1,
+      2
+    ],
+    "InscriptionId": 8020101,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillGloria_B.Bat_SkillGloria_B",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 6601,
+    "Group": 606,
+    "Type": 6,
+    "Star": 1,
+    "Name": "病毒之力",
+    "Desc": "释放技能获得<CZ_HighLight>病毒活性</>，拥有<CZ_HighLight>病毒活性</>时射击会自动锁定敌人，<CZ_HighLight>病毒活性</>在射击时减少。\\n击败被病毒感染的敌人会有概率掉落<CZ_HighLight>病毒因子</>，海因克斯每吸收<CZ_HighLight>1</>个<CZ_HighLight>病毒因子</>提升自身所有伤害<CZ_HighLight>5%</>，同时提升队友所有伤害<CZ_HighLight>1%</>，最高<CZ_HighLight>9</>次。",
+    "DescParams": [],
+    "SimpleDesc": "释放技能获得自锁攻击",
+    "Quality": 0,
+    "SkillTags": [],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillHyks_BD1.Bat_SkillHyks_BD1",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 19040000,
+    "Group": 401,
+    "Type": 4,
+    "Star": 1,
+    "Name": "攻击炮塔",
+    "Desc": "放置召唤物·攻击炮塔，炮塔优先攻击格罗莉亚肩射状态下命中的敌人。\\n炮塔最多存在<CZ_HighLight>20</>秒，最多同时存在<CZ_HighLight>2</>个。\\n<keyname id=\\\"3\\\"></>主要技能可强化炮塔使其攻速翻倍。",
+    "DescParams": [],
+    "SimpleDesc": "放置攻击炮塔，炮塔会自动攻击附近的敌人。",
+    "Quality": 3,
+    "SkillTags": [
+      12
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillGloria_E.Bat_SkillGloria_E",
+    "VideoUrl": "/Game/Rouge/Video/Skill/Gloria/Gloria_ESkill.Gloria_ESkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 19040001,
+    "Group": 402,
+    "Type": 3,
+    "Star": 1,
+    "Name": "轰炸小队",
+    "Desc": "格罗莉亚发射<CZ_HighLight>5</>枚导弹攻击敌人，若场上有<keyname id=\\\"3\\\"></>、<keyname id=\\\"4\\\"></>技能放置的面包机与炮塔，则格罗莉亚将其分解并重组为<CZ_HighLight>3</>枚导弹。\\n每个被分解的召唤物会留下不同零件：被分解的面包机提供1个【防御零件】、被分解的炮塔提供1个【攻击零件】。",
+    "DescParams": [],
+    "SimpleDesc": "回收所有召唤物并发射导弹攻击目标。",
+    "Quality": 3,
+    "SkillTags": [
+      11
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillGloria_QH.Bat_SkillGloria_QH",
+    "VideoUrl": "/Game/Rouge/Video/Skill/Gloria/Gloria_QSkill.Gloria_QSkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": [
+      "<BigTitle>防御零件</>\\n拾取后的<CZ_HighLight>10</>秒内获得<CZ_HighLight>100</>+<CZ_HighLight>20%</>体力值上限的临时护盾值。",
+      "<BigTitle>攻击零件</>\\n拾取后的<CZ_HighLight>8</>秒内提升<CZ_HighLight>25%</>最终伤害。"
+    ]
+  },
+  {
+    "ID": 19040002,
+    "Group": 403,
+    "Type": 5,
+    "Star": 1,
+    "Name": "面包机",
+    "Desc": "放置召唤物·面包机持续产出使友方单位恢复护盾的面包。\\n面包机最多存在<CZ_HighLight>32</>秒。最多同时存在<CZ_HighLight>1</>个。\\n面包机会自动强化，并提升恢复速度、范围以及护盾上限。\\n放置面包机时会为格罗莉亚施加当前最大护盾值<CZ_HighLight>100%</>的临时护盾。",
+    "DescParams": [],
+    "SimpleDesc": "放置面包机并获得护盾，为周围的友方单位持续恢复护盾。",
+    "Quality": 3,
+    "SkillTags": [
+      1,
+      9
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillGloria_C.Bat_SkillGloria_C",
+    "VideoUrl": "/Game/Rouge/Video/Skill/Gloria/Gloria_CSkill.Gloria_CSkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 19040003,
+    "Group": 404,
+    "Type": 6,
+    "Star": 1,
+    "Name": "万能发明家",
+    "Desc": "格罗莉亚可以远程释放无人机救援队友。",
+    "DescParams": [],
+    "SimpleDesc": "格罗莉亚可以远程释放无人机救援队友。",
+    "Quality": 3,
+    "SkillTags": [
+      12
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Atlas_DT/IconRoleSkills/Frames/Bat_SkillGloria_B.Bat_SkillGloria_B",
+    "VideoUrl": "/Game/Rouge/Video/Skill/Gloria/Gloria_PassiveSkill.Gloria_PassiveSkill",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 3030101,
+    "Group": 1001,
+    "Type": 1,
+    "Star": 1,
+    "Name": "重火力",
+    "Desc": "武器伤害增加{0}点",
+    "DescParams": [
+      50
+    ],
+    "SimpleDesc": "武器伤害增加50点",
+    "Quality": 2,
+    "SkillTags": [
+      11
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_03_png.Skill_linglan_03_png",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 3030201,
+    "Group": 1002,
+    "Type": 1,
+    "Star": 1,
+    "Name": "淬毒弹头",
+    "Desc": "毒元素伤害+{0}",
+    "DescParams": [
+      100
+    ],
+    "SimpleDesc": "毒元素伤害+100",
+    "Quality": 2,
+    "SkillTags": [
+      11
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_03_png.Skill_linglan_03_png",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 3030301,
+    "Group": 1003,
+    "Type": 1,
+    "Star": 1,
+    "Name": "感知",
+    "Desc": "弱点伤害提升+{0}",
+    "DescParams": [
+      200
+    ],
+    "SimpleDesc": "弱点伤害提升+200",
+    "Quality": 2,
+    "SkillTags": [
+      11
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_03_png.Skill_linglan_03_png",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 3030401,
+    "Group": 1004,
+    "Type": 1,
+    "Star": 1,
+    "Name": "幸运儿",
+    "Desc": "幸运一击伤害提升{0}点",
+    "DescParams": [
+      100
+    ],
+    "SimpleDesc": "幸运一击伤害提升100点",
+    "Quality": 2,
+    "SkillTags": [
+      11
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_03_png.Skill_linglan_03_png",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 3030501,
+    "Group": 1005,
+    "Type": 1,
+    "Star": 1,
+    "Name": "动能扩散",
+    "Desc": "E技能伤害提升{0}点",
+    "DescParams": [
+      100
+    ],
+    "SimpleDesc": "E技能伤害提升100点",
+    "Quality": 2,
+    "SkillTags": [
+      11
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_03_png.Skill_linglan_03_png",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 3030601,
+    "Group": 1006,
+    "Type": 1,
+    "Star": 1,
+    "Name": "效能超载",
+    "Desc": "Q技能提升{0}点",
+    "DescParams": [
+      100
+    ],
+    "SimpleDesc": "Q技能提升100点",
+    "Quality": 2,
+    "SkillTags": [
+      11
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_03_png.Skill_linglan_03_png",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 3030701,
+    "Group": 1007,
+    "Type": 1,
+    "Star": 1,
+    "Name": "燃烧弹头",
+    "Desc": "火元素伤害+{0}",
+    "DescParams": [
+      100
+    ],
+    "SimpleDesc": "火元素伤害+100",
+    "Quality": 2,
+    "SkillTags": [
+      11
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_03_png.Skill_linglan_03_png",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  },
+  {
+    "ID": 3030801,
+    "Group": 1008,
+    "Type": 1,
+    "Star": 1,
+    "Name": "感电弹头",
+    "Desc": "电元素伤害+{0}",
+    "DescParams": [
+      100
+    ],
+    "SimpleDesc": "电元素伤害+100",
+    "Quality": 2,
+    "SkillTags": [
+      11
+    ],
+    "InscriptionId": 0,
+    "IconPath": "/Game/Rouge/UI/Texture/battleui_new/Frames/Skill_linglan_03_png.Skill_linglan_03_png",
+    "VideoUrl": "",
+    "SkillDetailDesc": [],
+    "InscriptionExplainInfoList": []
+  }
+]

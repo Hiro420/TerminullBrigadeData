@@ -3,6 +3,7 @@ local UnLua = _G.UnLua
 local rapidjson = require("rapidjson")
 local BattlePassData = require("Modules.BattlePass.BattlePassData")
 local BattlePasshandler = {}
+
 function BattlePasshandler:SendBattlePassData(BattlePassID)
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.PASS, false) then
@@ -24,6 +25,7 @@ function BattlePasshandler:SendBattlePassData(BattlePassID)
     end
   })
 end
+
 function BattlePasshandler:SendUnLockUltra(BattlePassID, UnLockType, SuccFun)
   if BattlePassData[BattlePassID] and UnLockType <= BattlePassData[BattlePassID].battlePassActivateState then
     return
@@ -43,6 +45,7 @@ function BattlePasshandler:SendUnLockUltra(BattlePassID, UnLockType, SuccFun)
     end
   })
 end
+
 function BattlePasshandler:SendReceiveAllReward(BattlePassID)
   local OnConfirmClick = function(optionalGiftInfos)
     if optionalGiftInfos then
@@ -72,6 +75,7 @@ function BattlePasshandler:SendReceiveAllReward(BattlePassID)
       end
     })
   end
+  
   local function ShowOptionalGiftQueueWindow(optionalGiftInfos)
     if optionalGiftInfos then
       if self.OptionalGiftInfos == nil then
@@ -93,6 +97,7 @@ function BattlePasshandler:SendReceiveAllReward(BattlePassID)
       break
     end
   end
+  
   local AwardTable = self:GetAvailableRewards(BattlePassID)
   self.OptionalGiftIdTable = {}
   for ItemId, Num in pairs(AwardTable) do
@@ -106,6 +111,7 @@ function BattlePasshandler:SendReceiveAllReward(BattlePassID)
     OnConfirmClick()
   end
 end
+
 function BattlePasshandler:SendReceiveAward(BattlePassID, Level)
   if Level > tonumber(BattlePassData[BattlePassID].level) then
     return
@@ -140,6 +146,7 @@ function BattlePasshandler:SendReceiveAward(BattlePassID, Level)
       end
     })
   end
+  
   local function ShowOptionalGiftQueueWindow(optionalGiftInfos)
     if optionalGiftInfos then
       if self.OptionalGiftInfos == nil then
@@ -161,6 +168,7 @@ function BattlePasshandler:SendReceiveAward(BattlePassID, Level)
       break
     end
   end
+  
   local AwardTable = self:GetAvailableRewards(BattlePassID, Level)
   self.OptionalGiftIdTable = {}
   for ItemId, Num in pairs(AwardTable) do
@@ -174,6 +182,7 @@ function BattlePasshandler:SendReceiveAward(BattlePassID, Level)
     OnConfirmClick()
   end
 end
+
 function BattlePasshandler:IsOptional(ItemId)
   local TBGeneral = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   if TBGeneral[ItemId] then
@@ -181,8 +190,10 @@ function BattlePasshandler:IsOptional(ItemId)
   end
   return false
 end
+
 function BattlePasshandler:ReceiveOptionalAward()
 end
+
 function BattlePasshandler:GetAvailableRewards(BattlePassID, Level)
   local BPAwardList = LuaTableMgr.GetLuaTableByName(TableNames.TBBattlePassReward)
   local RewardTable = {}
@@ -225,6 +236,7 @@ function BattlePasshandler:GetAvailableRewards(BattlePassID, Level)
   end
   return AvailableRewards
 end
+
 function BattlePasshandler:AddRewardsInTable(Table, ItemId, Num)
   if Table[ItemId] then
     Table[ItemId] = Table[ItemId] + Num
@@ -232,4 +244,5 @@ function BattlePasshandler:AddRewardsInTable(Table, ItemId, Num)
     Table[ItemId] = Num
   end
 end
+
 return BattlePasshandler

@@ -1,9 +1,12 @@
 local rapidjson = require("rapidjson")
 local WBP_CardTitle_C = UnLua.Class()
+
 function WBP_CardTitle_C:Construct()
 end
+
 function WBP_CardTitle_C:Destruct()
 end
+
 function WBP_CardTitle_C:UpdateCardTitle(CharacterId, ResourceId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -34,4 +37,5 @@ function WBP_CardTitle_C:UpdateCardTitle(CharacterId, ResourceId)
     end
   end
 end
+
 return WBP_CardTitle_C

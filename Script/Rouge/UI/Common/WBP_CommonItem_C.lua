@@ -1,4 +1,5 @@
 local WBP_CommonItem_C = UnLua.Class()
+
 function WBP_CommonItem_C:InitCommonItem(Id, Num, bShowName, HoveredFunc, UnHoveredFunc, ClickFunc, IsInscription)
   local TotalResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   if not TotalResourceTable then
@@ -32,16 +33,20 @@ function WBP_CommonItem_C:InitCommonItem(Id, Num, bShowName, HoveredFunc, UnHove
   end
   self.ClickFunc = ClickFunc
 end
+
 function WBP_CommonItem_C:UpdateNumPanelVis(IsShow)
   UpdateVisibility(self.NumPanel, IsShow)
   UpdateVisibility(self.Text_Num, IsShow)
 end
+
 function WBP_CommonItem_C:UpdateNum(InNum)
   self.Text_Num:SetText(InNum)
 end
+
 function WBP_CommonItem_C:UpdateReceivedPanelVis(IsShow)
   UpdateVisibility(self.CanvasPanel_Received, IsShow)
 end
+
 function WBP_CommonItem_C:SetQuality(Quality)
   local Re, Info = GetRowData(DT.DT_ItemRarity, Quality)
   if Re then
@@ -49,9 +54,11 @@ function WBP_CommonItem_C:SetQuality(Quality)
     self.Img_Quality_4:SetColorAndOpacity(Info.DisplayNameColor.SpecifiedColor)
   end
 end
+
 function WBP_CommonItem_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_CommonItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   if self.RGStateController_Hover then
     self.RGStateController_Hover:ChangeStatus("Hover")
@@ -60,6 +67,7 @@ function WBP_CommonItem_C:OnMouseEnter(MyGeometry, MouseEvent)
     self.HoveredFunc()
   end
 end
+
 function WBP_CommonItem_C:OnMouseLeave(MyGeometry, MouseEvent)
   if self.RGStateController_Hover then
     self.RGStateController_Hover:ChangeStatus("UnHover")
@@ -68,11 +76,13 @@ function WBP_CommonItem_C:OnMouseLeave(MyGeometry, MouseEvent)
     self.UnHoveredFunc()
   end
 end
+
 function WBP_CommonItem_C:OnMouseButtonDown(MyGeometry, MouseEvent)
   if self.ClickFunc then
     self.ClickFunc()
   end
 end
+
 function WBP_CommonItem_C:GetToolTipWidget()
   if self.HoveredFunc then
     return nil
@@ -83,4 +93,5 @@ function WBP_CommonItem_C:GetToolTipWidget()
   self.HoveredTipWidget:InitCommonItemDetail(self.Id, self.IsInscription)
   return self.HoveredTipWidget
 end
+
 return WBP_CommonItem_C

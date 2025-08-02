@@ -43,6 +43,7 @@ local ContactPersonData = {
   PersonalChatListSendInfo = {}
 }
 local MsgIntervalTime = 3600
+
 function ContactPersonData:SetFriendApplyList(InFriendApplyList)
   ContactPersonData.FriendApplyList = {}
   ContactPersonData.FriendApplyIdList = {}
@@ -51,12 +52,15 @@ function ContactPersonData:SetFriendApplyList(InFriendApplyList)
     table.insert(ContactPersonData.FriendApplyIdList, SingleFriendApplyInfo.roleID)
   end
 end
+
 function ContactPersonData:GetFriendApplyList()
   return ContactPersonData.FriendApplyList
 end
+
 function ContactPersonData:GetFriendApplyInfoById(InId)
   return ContactPersonData.FriendApplyList[InId]
 end
+
 function ContactPersonData:SetFriendInfoList(InFriendInfoList)
   ContactPersonData.FriendInfoList = {}
   ContactPersonData.FriendIdList = {}
@@ -65,24 +69,31 @@ function ContactPersonData:SetFriendInfoList(InFriendInfoList)
     table.insert(ContactPersonData.FriendIdList, SingleFriendInfo.roleID)
   end
 end
+
 function ContactPersonData:GetFriendInfoList()
   return ContactPersonData.FriendInfoList
 end
+
 function ContactPersonData:GetFriendInfoById(InId)
   return ContactPersonData.FriendInfoList[InId]
 end
+
 function ContactPersonData:GetFriendApplyIdList()
   return ContactPersonData.FriendApplyIdList
 end
+
 function ContactPersonData:GetFriendIdList()
   return ContactPersonData.FriendIdList
 end
+
 function ContactPersonData:IsFriend(RoleId)
   return ContactPersonData.FriendInfoList[RoleId] ~= nil
 end
+
 function ContactPersonData:IsInFriendRequestList(RoleId)
   return ContactPersonData.FriendApplyList[RoleId] ~= nil
 end
+
 function ContactPersonData:AddPersonalChatInfo(RoleId, InMsg, InIsReceive)
   local TargetChatInfo = ContactPersonData.PersonalChatInfo[RoleId]
   local LastChatInfo
@@ -127,33 +138,41 @@ function ContactPersonData:AddPersonalChatInfo(RoleId, InMsg, InIsReceive)
     ContactPersonManager:AddPlayerHistoryChatInfo(RoleId, ChatInfo)
   end
 end
+
 function ContactPersonData:RemovePersonalChatInfo(RoleId)
   ContactPersonData.PersonalChatInfo[RoleId] = nil
 end
+
 function ContactPersonData:GetPersonalChatInfo()
   return ContactPersonData.PersonalChatInfo
 end
+
 function ContactPersonData:GetPersonalChatInfoById(RoleId)
   return ContactPersonData.PersonalChatInfo[RoleId]
 end
+
 function ContactPersonData:SetContactListPlayerInfo(PlayerInfo)
   if not PlayerInfo then
     return
   end
   ContactPersonData.ContactListPlayerInfo[PlayerInfo.roleid] = PlayerInfo
 end
+
 function ContactPersonData:GetPlayerInfoByRoleId(RoleId)
   return ContactPersonData.ContactListPlayerInfo[RoleId]
 end
+
 function ContactPersonData:SetBlackList(InBlackList)
   ContactPersonData.BlackList = {}
   for index, SingleBlackInfo in ipairs(InBlackList) do
     ContactPersonData.BlackList[SingleBlackInfo.roleID] = SingleBlackInfo
   end
 end
+
 function ContactPersonData:GetBlackList()
   return ContactPersonData.BlackList
 end
+
 function ContactPersonData:GetBlackListIdList()
   local IdList = {}
   for RoleId, SingleBlackInfo in pairs(ContactPersonData.BlackList) do
@@ -161,21 +180,27 @@ function ContactPersonData:GetBlackListIdList()
   end
   return IdList
 end
+
 function ContactPersonData:IsInBlackList(RoleId)
   return ContactPersonData.BlackList[RoleId] ~= nil
 end
+
 function ContactPersonData:SetPlatformFriendsHasRoleIdInfo(InFriendsInfoList)
   ContactPersonData.PlatformFriendsHasRoleIdInfoList = InFriendsInfoList
 end
+
 function ContactPersonData:SetPlatformFriendsHasNotRoleIdInfo(InFriendInfoList)
   ContactPersonData.PlatformFriendsHasNotRoleIdInfoList = InFriendInfoList
 end
+
 function ContactPersonData:ClearPlatformFriendsHasRoleIdInfo()
   ContactPersonData.PlatformFriendsHasRoleIdInfoList = {}
 end
+
 function ContactPersonData:ClearPlatformFriendsHasNotRoleIdInfo()
   ContactPersonData.PlatformFriendsHasNotRoleIdInfoList = {}
 end
+
 function ContactPersonData:GetPlatformFriendsRoleIdList()
   local RoleIdList = {}
   for RoleId, value in pairs(ContactPersonData:GetPlatformFriendsHasRoleIdInfo()) do
@@ -183,20 +208,25 @@ function ContactPersonData:GetPlatformFriendsRoleIdList()
   end
   return RoleIdList
 end
+
 function ContactPersonData:GetPlatformFriendsHasRoleIdInfo()
   return ContactPersonData.PlatformFriendsHasRoleIdInfoList
 end
+
 function ContactPersonData:GetPlatformFriendsHasNotRoleIdInfo()
   return ContactPersonData.PlatformFriendsHasNotRoleIdInfoList
 end
+
 function ContactPersonData:GetPlatformFriendInfoByRoleId(RoleId)
   local PlatformFriendsHasRoleIdInfoList = ContactPersonData:GetPlatformFriendsHasRoleIdInfo()
   return PlatformFriendsHasRoleIdInfoList[RoleId]
 end
+
 function ContactPersonData:IsPlatformFriend(RoleId)
   local PlatformFriendsHasRoleIdInfoList = ContactPersonData:GetPlatformFriendsHasRoleIdInfo()
   return nil ~= PlatformFriendsHasRoleIdInfoList[RoleId]
 end
+
 function ContactPersonData:SetPersonalChatListSendInfo(ReceiveId, OnlineStatus)
   local TempTable = {
     SendTime = GetCurrentUTCTimestamp(),
@@ -204,9 +234,11 @@ function ContactPersonData:SetPersonalChatListSendInfo(ReceiveId, OnlineStatus)
   }
   ContactPersonData.PersonalChatListSendInfo[ReceiveId] = TempTable
 end
+
 function ContactPersonData:GetPersonalChatListSendInfo(RoleId)
   return ContactPersonData.PersonalChatListSendInfo[RoleId]
 end
+
 function ContactPersonData:ClearData()
   ContactPersonData.FriendApplyList = {}
   ContactPersonData.FriendInfoList = {}
@@ -218,4 +250,5 @@ function ContactPersonData:ClearData()
   ContactPersonData.PlatformFriendsHasNotRoleIdInfoList = {}
   ContactPersonData.PersonalChatListSendInfo = {}
 end
+
 return ContactPersonData

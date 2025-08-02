@@ -11,6 +11,7 @@ local M = {config = config, hook = hook}
 local dump = function(tbl, max_indent)
   local rep = string.rep
   local handled = {}
+  
   local function traverse(tbl, indent)
     indent = indent or 0
     if type(tbl) ~= "table" then
@@ -47,6 +48,7 @@ local dump = function(tbl, max_indent)
     ret = ret .. rep(" ", indent - 2) .. "}"
     return ret
   end
+  
   if nil == max_indent then
     max_indent = 64
   end
@@ -157,6 +159,7 @@ local make_sandbox = function()
   local is_loaded = function(obj)
     return nil ~= loaded[obj]
   end
+  
   function proxy.require(module_name, ...)
     if reloading and nil ~= loaded[module_name] then
       return loaded[module_name]
@@ -168,6 +171,7 @@ local make_sandbox = function()
     end
     return ret
   end
+  
   return {
     enter = enter,
     exit = exit,
@@ -214,6 +218,7 @@ end
 local collect_module_upvalues = function(moudule)
   local function collect_function_upvalues(func, upvalues)
     assert(type(func) == "function")
+    
     local i = 1
     while true do
       local name, value = debug.getupvalue(func, i)
@@ -232,6 +237,7 @@ local collect_module_upvalues = function(moudule)
       i = i + 1
     end
   end
+  
   local ret = {}
   for _, v in pairs(moudule) do
     if type(v) == "function" then
@@ -319,6 +325,7 @@ local update_global = function(value_map)
   exclude[package.loaded] = true
   exclude[loaded_modules] = true
   local update_table
+  
   local function update_running_stack(co, level)
     local info = debug.getinfo(co, level + 1, "f")
     if nil == info then
@@ -352,6 +359,7 @@ local update_global = function(value_map)
     end
     return update_running_stack(co, level + 1)
   end
+  
   function update_table(root)
     if nil == root or exclude[root] then
       return
@@ -415,6 +423,7 @@ local update_global = function(value_map)
       end
     end
   end
+  
   update_running_stack(running_state, 2)
   update_table(_G)
   update_table(debug.getregistry())
@@ -528,6 +537,7 @@ local reload_modules = function(module_names)
   update_modules(old_modules, new_modules, module_envs)
   sandbox.exit()
 end
+
 function M.reload(module_names)
   if module_names then
     reload_modules(module_names)
@@ -548,5 +558,6 @@ function M.reload(module_names)
     reload_modules(modified_modules)
   end
 end
+
 M.require = sandbox.require
 return M

@@ -14,6 +14,7 @@ LogicCondition = LogicCondition or {
     BossHealthChanged = 11
   }
 }
+
 function LogicCondition.Init()
   if LogicCondition.IsInit then
     print("LogicCondition \229\183\178\229\136\157\229\167\139\229\140\150")
@@ -23,6 +24,7 @@ function LogicCondition.Init()
   LogicCondition.AllConditionInfos = {}
   LogicCondition.InitConditionTable()
 end
+
 function LogicCondition.InitConditionTable()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -35,6 +37,7 @@ function LogicCondition.InitConditionTable()
     LogicCondition.AllConditionInfos[SingleCondition.ID] = TempTable
   end
 end
+
 function LogicCondition.ExecuteConditionFunction(Id, Params, Count)
   local TempParam = {}
   for index, SingleParam in ipairs(Params) do
@@ -55,33 +58,40 @@ function LogicCondition.ExecuteConditionFunction(Id, Params, Count)
   end
   return false
 end
+
 function LogicCondition.KillAI(AIId, AINum, Count)
   if BattleData.KillAIInfo[tonumber(AIId)] and BattleData.KillAIInfo[tonumber(AIId)] >= tonumber(AINum) + tonumber(AINum) * Count then
     return true
   end
   return false
 end
+
 function LogicCondition.LevelClean(LevelId)
   if tonumber(LevelId) == BattleData.CurLevelCleanId then
     return true
   end
   return false
 end
+
 function LogicCondition.TriggerSkill(SkillId)
   if SkillId == BattleData.CurTriggerSkillId then
     return true
   end
   return false
 end
+
 function LogicCondition.SpawnTaskStart(TaskId)
   return TaskId == BattleData.CurStartTaskId
 end
+
 function LogicCondition.SpawnTaskEnd(TaskId)
   return TaskId == BattleData.CurEndTaskId
 end
+
 function LogicCondition.MonsterAppear(AIId)
   return tonumber(AIId) == BattleData.CurSpawnAIId
 end
+
 function LogicCondition.TriggerSpecialDialog(LevelId, AHeroId, BHeroId, CHeroId, DHeroId)
   local HeroIdList = {}
   table.insert(HeroIdList, tonumber(AHeroId))
@@ -123,12 +133,15 @@ function LogicCondition.TriggerSpecialDialog(LevelId, AHeroId, BHeroId, CHeroId,
   end
   return true
 end
+
 function LogicCondition.PlayLevelSequenceFinish(AnimId)
   return true
 end
+
 function LogicCondition.PlayMovieFinish(MovieName)
   return MovieName == BattleData.CurMovieName
 end
+
 function LogicCondition.BossHealthChanged(Id, HealthPercent)
   local CurBossHealthPercent = BattleData.BossHealthInfo[tonumber(Id)]
   if not CurBossHealthPercent then

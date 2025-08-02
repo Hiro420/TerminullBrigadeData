@@ -1,7 +1,9 @@
 local WBP_ScrollDamageInfoItem_C = UnLua.Class()
+
 function WBP_ScrollDamageInfoItem_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_ScrollDamageInfoItem_C:InitScrollItem(UserId, DamageInfo)
   local DamageValue = UE.URGBlueprintLibrary.GetStatisticDataInt64StrUserId(UserId, DamageInfo.DataId)
   local DamageUnit = DamageInfo.UnitName
@@ -25,9 +27,12 @@ function WBP_ScrollDamageInfoItem_C:InitScrollItem(UserId, DamageInfo)
   self.TextBlock_DamageValue:SetColorAndOpacity(DamageInfo.DataColor)
   self.TextBlock_DamageUnit:SetColorAndOpacity(DamageInfo.DataColor)
 end
+
 function WBP_ScrollDamageInfoItem_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_ScrollDamageInfoItem_C:Destruct()
 end
+
 return WBP_ScrollDamageInfoItem_C

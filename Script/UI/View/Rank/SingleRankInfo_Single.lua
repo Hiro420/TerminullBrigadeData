@@ -1,9 +1,11 @@
 local RankData = require("UI.View.Rank.RankData")
 local rapidjson = require("rapidjson")
 local SingleRankInfo_Single = UnLua.Class()
+
 function SingleRankInfo_Single:Construct()
   EventSystem.AddListener(self, EventDef.Rank.OnRequestServerElementDataSuccess, SingleRankInfo_Single.OnRequestServerElementDataSuccess)
 end
+
 function SingleRankInfo_Single:OnRequestServerElementDataSuccess(Data)
   if self.RankInfo == nil then
     return
@@ -13,6 +15,7 @@ function SingleRankInfo_Single:OnRequestServerElementDataSuccess(Data)
     self:SetProficiency(RankData.ElementData[self.RankInfo.uniqueID].totalPractice)
   end
 end
+
 function SingleRankInfo_Single:SetProficiency(Exp)
   local ProficiencyTable = LuaTableMgr.GetLuaTableByName(TableNames.TBProfyLevel)
   for i = 1, 9 do
@@ -23,6 +26,7 @@ function SingleRankInfo_Single:SetProficiency(Exp)
   end
   self.Txt_Proficiency:SetText(10)
 end
+
 function SingleRankInfo_Single:InitSingleRankInfo(ListItemObj, bSelf, RankChange)
   self.bSelf = bSelf
   self.RankNumber = math.floor(ListItemObj.RankNumber)
@@ -83,6 +87,7 @@ function SingleRankInfo_Single:InitSingleRankInfo(ListItemObj, bSelf, RankChange
     end
   end
 end
+
 function SingleRankInfo_Single:RequestRoleInfo(RoleIds)
   if nil == RoleIds or 0 == #RoleIds then
     return
@@ -97,12 +102,15 @@ function SingleRankInfo_Single:RequestRoleInfo(RoleIds)
     end
   end
 end
+
 function SingleRankInfo_Single:EnterGameRecordPanel_lua()
   UIMgr:Show(ViewID.UI_GRInfoView, nil, self.RankInfo.uniqueID, self.ListItemObj.WorldMode, self.ListItemObj.GameMode, self.RankInfo.score, false, self.ListItemObj.HeroId, self.ListItemObj.SeasonId)
 end
+
 function SingleRankInfo_Single:OnGetRoleSuccess(PlayerCacheInfoList)
   local PlayerInfoList = DataMgr.CacheInfosToPlayerInfoList(PlayerCacheInfoList)
 end
+
 function SingleRankInfo_Single:GetPlayerNamme(Response, roleId)
   for i, SingleInfo in ipairs(Response.players) do
     if SingleInfo.roleid == roleId then
@@ -115,9 +123,11 @@ function SingleRankInfo_Single:GetPlayerNamme(Response, roleId)
     end
   end
 end
+
 function SingleRankInfo_Single:OnGetRoleFail(ErrorMessage)
   print("OnGetRoleFail", ErrorMessage.ErrorMessage)
 end
+
 function SingleRankInfo_Single:OnMouseButtonDown(MyGeometry, MouseEvent)
   if UE.UKismetInputLibrary.PointerEvent_GetEffectingButton(MouseEvent) == self.RightMouseButton then
     self:EnterGameRecordPanel_lua()
@@ -125,9 +135,11 @@ function SingleRankInfo_Single:OnMouseButtonDown(MyGeometry, MouseEvent)
   end
   return UE.UWidgetBlueprintLibrary.UnHandled()
 end
+
 function SingleRankInfo_Single:RequestServerElementData()
   RankData.RequestServerElementData(self.ListItemObj.SeasonId, self.ListItemObj.GameMode, self.ListItemObj.WorldMode, self.ListItemObj.HeroId, self.RankInfo.uniqueID)
 end
+
 function SingleRankInfo_Single:OnConsoleXButtonDown(MyGeometry, MouseEvent)
   if self.HoverIconWidget then
     self.HoverIconWidget:OnButtonPlayerClicked()
@@ -136,6 +148,7 @@ function SingleRankInfo_Single:OnConsoleXButtonDown(MyGeometry, MouseEvent)
   end
   self:StopListeningInput()
 end
+
 function SingleRankInfo_Single:OnMouseEnter(MyGeometry, MouseEvent)
   if self.bSelf then
     return
@@ -153,6 +166,7 @@ function SingleRankInfo_Single:OnMouseEnter(MyGeometry, MouseEvent)
     })
   end
 end
+
 function SingleRankInfo_Single:OnMouseLeave(MouseEvent)
   self:StopListeningInput()
   if self.bSelf then
@@ -165,22 +179,27 @@ function SingleRankInfo_Single:OnMouseLeave(MouseEvent)
     self:PlayAnimation(self.Ani_hover_out)
   end
 end
+
 function SingleRankInfo_Single:BP_OnItemSelectionChanged(bIsSelected)
   if bIsSelected then
     self:StopAnimation(self.Ani_hover_in)
     self:PlayAnimation(self.Ani_hover_out)
   end
 end
+
 function SingleRankInfo_Single:StopListeningInput()
   if IsListeningForInputAction(self, "CommonFaceButtonLeft") then
     StopListeningForInputAction(self, "CommonFaceButtonLeft", UE.EInputEvent.IE_Pressed)
   end
   self.HoverIconWidget = nil
 end
+
 function SingleRankInfo_Single:OnHoveredPlayerIcon(HoverIconWidget)
   self.HoverIconWidget = HoverIconWidget
 end
+
 function SingleRankInfo_Single:Destruct()
   self:StopListeningInput()
 end
+
 return SingleRankInfo_Single

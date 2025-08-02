@@ -1,6 +1,7 @@
 local DrawCardData = require("Modules.DrawCard.DrawCardData")
 local DrawCardItemView = UnLua.Class()
 local MultiDrawTimes = 10
+
 function DrawCardItemView:OnListItemObjectSet(ListItemObj)
   local ResourceTemp = {}
   ResourceTemp.resourceId = ListItemObj.ResourceId
@@ -12,18 +13,21 @@ function DrawCardItemView:OnListItemObjectSet(ListItemObj)
   self.ParentView = ListItemObj.ParentView
   self:InitInfo(ResourceTemp)
 end
+
 function DrawCardItemView:Construct()
   self.ParentView = nil
   self.Resource = nil
   self.AniFinishedFunc = nil
   self.AniOnceFinishedFunc = nil
 end
+
 function DrawCardItemView:Destruct()
   self.ParentView = nil
   self.Resource = nil
   self.AniFinishedFunc = nil
   self.AniOnceFinishedFunc = nil
 end
+
 function DrawCardItemView:AniFinished()
   if self.AniFinishedFunc then
     self.AniFinishedFunc:Broadcast(self.Index)
@@ -32,11 +36,13 @@ function DrawCardItemView:AniFinished()
     self.AniOnceFinishedFunc(self.ParentView)
   end
 end
+
 function DrawCardItemView:InitInfoOnceDraw(Resource, AniFinished, ParentView)
   self.ParentView = ParentView
   self.AniOnceFinishedFunc = AniFinished
   self:InitInfo(Resource)
 end
+
 function DrawCardItemView:InitInfo(Resource)
   self.Resource = Resource
   if not Resource then
@@ -70,7 +76,9 @@ function DrawCardItemView:InitInfo(Resource)
     end
   }, self.Index * 0.1, false)
 end
+
 function DrawCardItemView:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return DrawCardItemView

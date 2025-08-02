@@ -1,7 +1,9 @@
 local WBP_RGEliteAISpawnWaveWindow_C = UnLua.Class()
+
 function WBP_RGEliteAISpawnWaveWindow_C:Construct()
   self.EliteAIList = {}
 end
+
 function WBP_RGEliteAISpawnWaveWindow_C:GetTipInfo(AI)
   local CanAdd = true
   for index, EliteAI in ipairs(self.EliteAIList) do
@@ -28,7 +30,9 @@ function WBP_RGEliteAISpawnWaveWindow_C:GetTipInfo(AI)
   local TargetText = UE.FTextFormat(TargetInfo, table.unpack(DescList))
   return TargetText
 end
+
 function WBP_RGEliteAISpawnWaveWindow_C:Destruct()
   self.EliteAIList = {}
 end
+
 return WBP_RGEliteAISpawnWaveWindow_C

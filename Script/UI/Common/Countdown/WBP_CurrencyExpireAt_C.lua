@@ -1,4 +1,5 @@
 local WBP_CurrencyExpireAt_C = UnLua.Class()
+
 function WBP_CurrencyExpireAt_C:InitCurrencyExpireAt(CurrencyInfo)
   self.CurrencyId = CurrencyInfo.currencyId or CurrencyInfo.id
   self.ExpireAt = CurrencyInfo.expireAt
@@ -23,4 +24,5 @@ function WBP_CurrencyExpireAt_C:InitCurrencyExpireAt(CurrencyInfo)
   end
   self.WBP_CommonExpireAt:InitCommonExpireAt(self.ExpireAt)
 end
+
 return WBP_CurrencyExpireAt_C

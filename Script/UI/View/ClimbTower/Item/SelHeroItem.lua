@@ -2,6 +2,7 @@ local SelHeroItem = UnLua.Class()
 local SeasonAbilityData = require("Modules.SeasonAbility.SeasonAbilityData")
 local ClimbTowerData = require("UI.View.ClimbTower.ClimbTowerData")
 local ProficiencyData = require("Modules.Proficiency.ProficiencyData")
+
 function SelHeroItem:ResetItem()
   UpdateVisibility(self.Hero, false)
   UpdateVisibility(self.AddHero, false)
@@ -13,6 +14,7 @@ function SelHeroItem:ResetItem()
   self.MainButton.OnHovered:Add(self, self.OnHovered)
   self.MainButton.OnUnhovered:Add(self, self.OnUnhovered)
 end
+
 function SelHeroItem:OnHovered()
   if 0 ~= self.HeroId then
     self:PlayAnimation(self.Ani_hover_hero_in)
@@ -20,6 +22,7 @@ function SelHeroItem:OnHovered()
     self:PlayAnimation(self.Ani_hover_in)
   end
 end
+
 function SelHeroItem:OnUnhovered()
   if 0 ~= self.HeroId then
     self:PlayAnimation(self.Ani_hover_hero_out)
@@ -27,6 +30,7 @@ function SelHeroItem:OnUnhovered()
     self:PlayAnimation(self.Ani_hover_out)
   end
 end
+
 function SelHeroItem:BindClicked(Func)
   self.MainButton.OnClicked:Add(self, function()
     if Func then
@@ -39,6 +43,7 @@ function SelHeroItem:BindClicked(Func)
     end
   end)
 end
+
 function SelHeroItem:InitHero(HeroId, Speed, UnLock, SlotId)
   self.HeroId = HeroId
   self.SlotId = SlotId
@@ -77,13 +82,16 @@ function SelHeroItem:InitHero(HeroId, Speed, UnLock, SlotId)
   self.Txt_Lv:SetText(DataMgr.GetHeroProfyByHeroId(HeroId))
   self:HeroSeasonAbilityPointNum()
 end
+
 function SelHeroItem:OnSelChanged(SlotId)
   print(SlotId == self.SlotId)
   UpdateVisibility(self.PanelSel, SlotId == self.SlotId)
 end
+
 function SelHeroItem:SetEquipStyle(bEquip)
   UpdateVisibility(self.Overlay_Equip, bEquip)
 end
+
 function SelHeroItem:HeroSeasonAbilityPointNum()
   local maxReceiveLv = ProficiencyData:GetMaxUnlockProfyLevel(self.HeroId)
   local Layer = DataMgr.GetFloorByGameModeIndex(ClimbTowerData.WorldId, ClimbTowerData.GameMode) - 1
@@ -98,4 +106,5 @@ function SelHeroItem:HeroSeasonAbilityPointNum()
   UpdateVisibility(self.Di_Addition, (BasePoints + maxReceiveLv * BonusRate) * Pont > 0)
   self.Txt_Speed:SetText(math.ceil((BasePoints + maxReceiveLv * BonusRate) * Pont))
 end
+
 return SelHeroItem

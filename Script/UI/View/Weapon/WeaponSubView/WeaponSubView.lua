@@ -9,6 +9,7 @@ local PreCameraData = "PrevWeapon"
 local NextCameraData = "NextWeapon"
 local TabKeyEvent = "TabKeyEvent"
 local HideAppearanceView = "HideAppearanceView"
+
 function WeaponSubView:OnBindUIInput()
   if not IsListeningForInputAction(self, PreCameraData) then
     ListenForInputAction(PreCameraData, UE.EInputEvent.IE_Pressed, true, {
@@ -36,6 +37,7 @@ function WeaponSubView:OnBindUIInput()
   end
   self.WBP_InteractTipWidgetBuy:BindInteractAndClickEvent(self, self.OnAccessClick)
 end
+
 function WeaponSubView:OnUnBindUIInput()
   StopListeningForInputAction(self, PreCameraData, UE.EInputEvent.IE_Pressed)
   StopListeningForInputAction(self, NextCameraData, UE.EInputEvent.IE_Pressed)
@@ -43,6 +45,7 @@ function WeaponSubView:OnUnBindUIInput()
   StopListeningForInputAction(self, HideAppearanceView, UE.EInputEvent.IE_Pressed)
   self.WBP_InteractTipWidgetBuy:UnBindInteractAndClickEvent(self, self.OnAccessClick)
 end
+
 local GetWeaponSkinDisplayActor = function(self)
   if not UE.RGUtil.IsUObjectValid(self.WeaponSkinDisplayActor) and self.WeaponSkinDisplayActorCls then
     local cls = GetAssetBySoftObjectPtr(self.WeaponSkinDisplayActorCls, true)
@@ -62,16 +65,19 @@ local CheckWeaponIsUnLock = function(self, WeaponId)
   end
   return false
 end
+
 function WeaponSubView:BindClickHandler()
   self.RGToggleGroupWeaponSkin.OnCheckStateChanged:Add(self, self.OnWeaponSkinGroupCheckStateChanged)
   self.WBP_CommonButton_SkinTips.OnMainButtonClicked:Add(self, self.OnAccessClick)
   self.WBP_CommonButton_Equip.OnMainButtonClicked:Add(self, self.OnEquipWeaponSkinClick)
 end
+
 function WeaponSubView:UnBindClickHandler()
   self.RGToggleGroupWeaponSkin.OnCheckStateChanged:Remove(self, self.OnWeaponSkinGroupCheckStateChanged)
   self.WBP_CommonButton_SkinTips.OnMainButtonClicked:Remove(self, self.OnAccessClick)
   self.WBP_CommonButton_Equiped.OnMainButtonClicked:Remove(self, self.OnEquipWeaponSkinClick)
 end
+
 function WeaponSubView:OnInit()
   self.DataBindTable = {
     {
@@ -82,9 +88,11 @@ function WeaponSubView:OnInit()
   self.viewModel = UIModelMgr:Get("WeaponSubViewModel")
   self:BindClickHandler()
 end
+
 function WeaponSubView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WeaponSubView:OnShow(...)
   self.Super:AttachViewModel(self.viewModel, self.DataBindTable, self)
   SkinHandler.SendGetWeaponSkinList()
@@ -100,6 +108,7 @@ function WeaponSubView:OnShow(...)
   self.WBP_RedDotViewWeaponSkinMenu:ChangeRedDotIdByTag(self.viewModel.CurHeroId)
   self.bCanShowGlitchMatEff = false
 end
+
 function WeaponSubView:OnRollback()
   local weaponSkinDisplayActorTemp = GetWeaponSkinDisplayActor(self)
   if UE.RGUtil.IsUObjectValid(weaponSkinDisplayActorTemp) then
@@ -117,6 +126,7 @@ function WeaponSubView:OnRollback()
     end
   end
 end
+
 function WeaponSubView:Refresh()
   HideOtherItem(self.HorizontalBoxWeaponList, 1)
   local weaponSkinDisplayTemp = GetWeaponSkinDisplayActor(self)
@@ -135,6 +145,7 @@ function WeaponSubView:Refresh()
   EventSystem.Invoke(EventDef.BeginnerGuide.OnWeaponSubViewShow)
   self:HideUI(true)
 end
+
 function WeaponSubView:InitBuyPanel(LinkId, GoodsId, bUnlocked, AccessDesc, ParamList)
   self.LinkId = LinkId
   self.GoodsId = GoodsId
@@ -166,12 +177,14 @@ function WeaponSubView:InitBuyPanel(LinkId, GoodsId, bUnlocked, AccessDesc, Para
     self.WBP_CommonButton_SkinTips:SetContentText(AccessDesc)
   end
 end
+
 function WeaponSubView:OnHideByOther()
   local weaponSkinDisplayTemp = GetWeaponSkinDisplayActor(self)
   if UE.RGUtil.IsUObjectValid(weaponSkinDisplayTemp) then
     weaponSkinDisplayTemp:UpdateActived(false, true)
   end
 end
+
 function WeaponSubView:OnPreHide()
   local weaponSkinDisplayTemp = GetWeaponSkinDisplayActor(self)
   if UE.RGUtil.IsUObjectValid(weaponSkinDisplayTemp) then
@@ -192,13 +205,16 @@ function WeaponSubView:OnPreHide()
   end
   self.Super:DetachViewModel(self.viewModel, self.DataBindTable, self)
 end
+
 function WeaponSubView:OnHide()
   print("")
 end
+
 function WeaponSubView:OnWeaponSkinGroupCheckStateChanged(SelectId)
   print("OnWeaponSkinGroupCheckStateChanged", SelectId)
   self.viewModel:UpdateCurSelectWeaponSkin(SelectId)
 end
+
 function WeaponSubView:OnAccessClick()
   if self.LinkId ~= "" then
     if self:LinkPurchaseConfirm(self.LinkId, self.ParamList) then
@@ -228,6 +244,7 @@ function WeaponSubView:OnAccessClick()
     end
   end
 end
+
 function WeaponSubView:LinkPurchaseConfirm(LinkId, ParamList)
   if tonumber(LinkId) ~= 1007 then
     return false
@@ -235,18 +252,21 @@ function WeaponSubView:LinkPurchaseConfirm(LinkId, ParamList)
   ComLink(LinkId, nil, ParamList[2], ParamList[1], 1)
   return true
 end
+
 function WeaponSubView:ListenForPreCameraData()
   local weaponSkinDisplayActorTemp = GetWeaponSkinDisplayActor(self)
   if UE.RGUtil.IsUObjectValid(weaponSkinDisplayActorTemp) then
     weaponSkinDisplayActorTemp:MovePreCameraTrans()
   end
 end
+
 function WeaponSubView:ListenForNextCameraData()
   local weaponSkinDisplayActorTemp = GetWeaponSkinDisplayActor(self)
   if UE.RGUtil.IsUObjectValid(weaponSkinDisplayActorTemp) then
     weaponSkinDisplayActorTemp:MoveNextCameraTrans()
   end
 end
+
 function WeaponSubView:ListenForChangeDisplayModel()
   if self.CurSelectModel == EWeaponSelectModel.SkinModel then
     if self.CurDisplayModel == EWeaponSkinDisplayModel.HeroModel then
@@ -258,6 +278,7 @@ function WeaponSubView:ListenForChangeDisplayModel()
     end
   end
 end
+
 function WeaponSubView:OnShowRole()
   local weaponSkinDisplayActorTemp = GetWeaponSkinDisplayActor(self)
   if UE.RGUtil.IsUObjectValid(weaponSkinDisplayActorTemp) then
@@ -266,6 +287,7 @@ function WeaponSubView:OnShowRole()
   UpdateVisibility(self.WBP_InteractTipWidgetChangeWeaponDisplay, true)
   UpdateVisibility(self.WBP_InteractTipWidgetChangeDisplay, false)
 end
+
 function WeaponSubView:OnShowWeapon()
   local weaponSkinDisplayActorTemp = GetWeaponSkinDisplayActor(self)
   if UE.RGUtil.IsUObjectValid(weaponSkinDisplayActorTemp) then
@@ -278,6 +300,7 @@ function WeaponSubView:OnShowWeapon()
   UpdateVisibility(self.WBP_InteractTipWidgetChangeWeaponDisplay, false)
   UpdateVisibility(self.WBP_InteractTipWidgetChangeDisplay, true)
 end
+
 function WeaponSubView:HideUIInteract()
   if self.CurSelectModel ~= EWeaponSelectModel.SkinModel then
     return
@@ -285,11 +308,13 @@ function WeaponSubView:HideUIInteract()
   self.bShowUI = not self.bShowUI
   self:HideUI(self.bShowUI)
 end
+
 function WeaponSubView:HideUI(bIsShowUIParam)
   self.bShowUI = bIsShowUIParam
   EventSystem.Invoke(EventDef.Develop.UpdateViewSetVisible, self.bShowUI, true)
   UpdateVisibility(self.WeaponSelectPanel, self.bShowUI)
 end
+
 function WeaponSubView:OnSwitchSkinClick()
   self.CurSelectModel = EWeaponSelectModel.SkinModel
   self.viewModel:RefreshWeaponDetails()
@@ -312,6 +337,7 @@ function WeaponSubView:OnSwitchSkinClick()
   UpdateVisibility(self.WBP_InteractTipWidgetChangeWeaponDisplay, false)
   UpdateVisibility(self.WBP_InteractTipWidgetChangeDisplay, true)
 end
+
 function WeaponSubView:OnSwitchWeaponClick()
   self.CurSelectModel = EWeaponSelectModel.WeaponModel
   self.viewModel:RefreshWeaponDetails()
@@ -339,6 +365,7 @@ function WeaponSubView:OnSwitchWeaponClick()
     UpdateVisibility(self.CanvasPanelInfoDetails, false)
   end
 end
+
 function WeaponSubView:OnEquipWeaponSkinClick()
   if self.CurSelectModel == EWeaponSelectModel.WeaponModel then
     self.viewModel:SendRequestEquipWeapon()
@@ -346,6 +373,7 @@ function WeaponSubView:OnEquipWeaponSkinClick()
     self.viewModel:SendEquipWeaponSkinReq(self.viewModel.CurSelectWeaponSkinResId)
   end
 end
+
 function WeaponSubView:OnWeaponSkinListUpdate(ShowWeaponSkinDataMap, showWeaponIdList, WeaponResId, CurSelectWeaponSkinResId)
   if not CheckIsVisility(self.CanvasPanelWeaponSkin) then
     self:PlayAnimation(self.Ani_CanvasPanelWeaponSkin_in)
@@ -420,6 +448,7 @@ function WeaponSubView:OnWeaponSkinListUpdate(ShowWeaponSkinDataMap, showWeaponI
     end
   end
 end
+
 function WeaponSubView:UpdateDetailsView(bIsUnLock)
   if self.CurSelectModel == EWeaponSelectModel.WeaponModel then
     UpdateVisibility(self.HorizontalBoxInteract, false)
@@ -463,9 +492,11 @@ function WeaponSubView:UpdateDetailsView(bIsUnLock)
     UpdateVisibility(self.WeaponTips, false)
   end
 end
+
 function WeaponSubView:OnWeaponSkinListScrolled(CurrentOffset)
   self:UpdateWeaponSkinTitle(CurrentOffset)
 end
+
 function WeaponSubView:UpdateWeaponSkinTitle(CurrentOffset)
   local GeometryScrollBoxWeaponSkinList = self.ScrollBoxWeaponSkinList:GetCachedGeometry()
   print(CurrentOffset)
@@ -492,6 +523,7 @@ function WeaponSubView:UpdateWeaponSkinTitle(CurrentOffset)
     end
   end
 end
+
 function WeaponSubView:OnSkinTitleSelect(WeaponResId)
   if self.WeaponIdToWeaponSkinListItem and self.WeaponIdToWeaponSkinListItem[WeaponResId] then
     local idx = self.WeaponIdToSkinTitleItemTop[WeaponResId].Idx
@@ -499,6 +531,7 @@ function WeaponSubView:OnSkinTitleSelect(WeaponResId)
     self.ScrollBoxWeaponSkinList:ScrollWidgetIntoView(self.WeaponIdToWeaponSkinListItem[WeaponResId].Item, true, UE.EDescendantScrollDestination.TopOrLeft, offset)
   end
 end
+
 function WeaponSubView:OnWeaponListUpdate(WeaponList, equipedIdx, CurSelectIdx, SelectWeaponIdx)
   local WeaponListTemp = WeaponList or {}
   for i, v in ipairs(WeaponListTemp) do
@@ -527,9 +560,11 @@ function WeaponSubView:OnWeaponListUpdate(WeaponList, equipedIdx, CurSelectIdx, 
     BeginnerGuideData:UpdateWidget("WeaponSubViewSecondWeapon", self.HorizontalBoxWeaponList:GetChildAt(MinUnSelectedIdx))
   end
 end
+
 function WeaponSubView:SetCloseCallback(CloseCallback)
   self.CloseCallback = CloseCallback
 end
+
 function WeaponSubView:ShowWeaponInfo(bReset, weaponResId, playAni)
   if self.CurShowModel == EWeaponShowModel.WeaponModel and false == bReset then
     return
@@ -547,9 +582,11 @@ function WeaponSubView:ShowWeaponInfo(bReset, weaponResId, playAni)
     self.viewModel:SelectWeapon(weaponInfo)
   end
 end
+
 function WeaponSubView:OnEquipedWeaponUpdate(EquipedWeapon)
   self.WBP_RoleWeaponItem:InitWeaponItem(EquipedWeapon, true, self)
 end
+
 function WeaponSubView:OnWeaponDetailsTipUpdate(EquipedWeapon, bMaintainVisble)
   if not EquipedWeapon then
     if not bMaintainVisble then
@@ -563,16 +600,19 @@ function WeaponSubView:OnWeaponDetailsTipUpdate(EquipedWeapon, bMaintainVisble)
     self.WBP_WeaponAttrDetailsTip:InitWeaponAttrDetailsTip(EquipedWeapon.resourceId, {}, self)
   end
 end
+
 function WeaponSubView:CheckIsShow(SkinTb, IsUnlocked)
   if SkinTb.IsUnlockShow and not IsUnlocked then
     return false
   end
   return SkinTb.IsShow and (0 == SkinTb.ParentSkinId or SkinTb.ParentSkinId == nil)
 end
+
 function WeaponSubView:WeaponSelectClick(WeaponInfo)
   self.bCanShowGlitchMatEff = true
   self.viewModel:RequestEquipWeapon(WeaponInfo, true)
 end
+
 function WeaponSubView:BindOnShowSkillTips(IsShow, WeaponSkillData, KeyName)
   if IsShow then
     self.NormalSkillTip:RefreshInfoByWeaponSkillData(WeaponSkillData, KeyName)
@@ -581,9 +621,12 @@ function WeaponSubView:BindOnShowSkillTips(IsShow, WeaponSkillData, KeyName)
     self.NormalSkillTip:Hide()
   end
 end
+
 function WeaponSubView:OnAnimationFinished(Animation)
 end
+
 function WeaponSubView:AttrExpandOrRetract(bIsExpand)
   self.bIsExpand = bIsExpand
 end
+
 return WeaponSubView

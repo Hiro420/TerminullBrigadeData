@@ -1,7 +1,9 @@
 local WBP_AccessoryDisplayInfo_C = UnLua.Class()
+
 function WBP_AccessoryDisplayInfo_C:Construct()
   self:InitRarityInfo()
 end
+
 function WBP_AccessoryDisplayInfo_C:InitRarityInfo()
   self.RarityInfo = {
     [UE.ERGItemRarity.EIR_Normal] = {
@@ -26,6 +28,7 @@ function WBP_AccessoryDisplayInfo_C:InitRarityInfo()
     }
   }
 end
+
 function WBP_AccessoryDisplayInfo_C:InitEquipped(IsEquip)
   if IsEquip then
     self.Txt_Status:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -33,6 +36,7 @@ function WBP_AccessoryDisplayInfo_C:InitEquipped(IsEquip)
     self.Txt_Status:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_AccessoryDisplayInfo_C:InitItemRarity(ItemRarity)
   if not self.RarityInfo then
     self:InitRarityInfo()
@@ -45,6 +49,7 @@ function WBP_AccessoryDisplayInfo_C:InitItemRarity(ItemRarity)
   self.Txt_Quality:SetColorAndOpacity(SlateColor)
   self.Img_Title:SetColorAndOpacity(SingleRarityInfo.TitleColor)
 end
+
 function WBP_AccessoryDisplayInfo_C:InitInfo(ArticleId, IsCompare, Equipped, CompareId, EquipInfoType)
   self.ArticleId = ArticleId
   self:InitEquipped(Equipped)
@@ -54,6 +59,7 @@ function WBP_AccessoryDisplayInfo_C:InitInfo(ArticleId, IsCompare, Equipped, Com
   self:InitDes()
   self:InitAttributeInfo(IsCompare, CompareId)
 end
+
 function WBP_AccessoryDisplayInfo_C:InitAccessoryInfo()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if DTSubsystem then
@@ -70,6 +76,7 @@ function WBP_AccessoryDisplayInfo_C:InitAccessoryInfo()
     self:InitItemRarity(outData.InnerData.ItemRarity)
   end
 end
+
 function WBP_AccessoryDisplayInfo_C:InitInscriptionInfo()
   self.VerticalBox_Inscription:ClearChildren()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -99,6 +106,7 @@ function WBP_AccessoryDisplayInfo_C:InitInscriptionInfo()
     end
   end
 end
+
 function WBP_AccessoryDisplayInfo_C:InitDes()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if DTSubsystem then
@@ -112,6 +120,7 @@ function WBP_AccessoryDisplayInfo_C:InitDes()
     end
   end
 end
+
 function WBP_AccessoryDisplayInfo_C:InitAttributeInfo(IsCompare, CompareId)
   local count = 0
   self.VerticalBox_Attribute:ClearChildren()
@@ -134,6 +143,7 @@ function WBP_AccessoryDisplayInfo_C:InitAttributeInfo(IsCompare, CompareId)
     self.Image_lineDown:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function WBP_AccessoryDisplayInfo_C:InitEquipInfo(EquipInfoType)
   local inputNum = 0
   if -1 == EquipInfoType then
@@ -161,6 +171,7 @@ function WBP_AccessoryDisplayInfo_C:InitEquipInfo(EquipInfoType)
     self.NoEquip:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_AccessoryDisplayInfo_C:GetAccessoryInfo(ArticleId)
   local accessoryManager = UE.URGAccessoryStatics.GetAccessoryManager(self)
   if accessoryManager then
@@ -169,6 +180,7 @@ function WBP_AccessoryDisplayInfo_C:GetAccessoryInfo(ArticleId)
   end
   return nil
 end
+
 function WBP_AccessoryDisplayInfo_C:CanShowAttributeInUI(AttributeConfig)
   local attributeName = UE.URGBlueprintLibrary.GetAttributeName(AttributeConfig)
   local appendValue = "EquipAttributeSet." .. attributeName
@@ -181,4 +193,5 @@ function WBP_AccessoryDisplayInfo_C:CanShowAttributeInUI(AttributeConfig)
   end
   return false, nil, nil, nil, nil
 end
+
 return WBP_AccessoryDisplayInfo_C

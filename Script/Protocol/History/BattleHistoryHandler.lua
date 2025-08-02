@@ -2,6 +2,7 @@ local UnLua = _G.UnLua
 local rapidjson = require("rapidjson")
 local BattleHistoryData = require("Modules.PlayerInfoMain.History.BattleHistoryData")
 local BattleHistoryHandler = {}
+
 function BattleHistoryHandler.RequestGetBattleHistory(RoleID)
   local roleID = RoleID or DataMgr.GetUserId()
   local path = string.format("record/pull/battlehistory?roleID=%s", roleID)
@@ -28,4 +29,5 @@ function BattleHistoryHandler.RequestGetBattleHistory(RoleID)
     end
   })
 end
+
 return BattleHistoryHandler

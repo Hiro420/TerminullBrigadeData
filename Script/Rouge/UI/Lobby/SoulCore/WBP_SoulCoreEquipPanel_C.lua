@@ -3,15 +3,19 @@ local WBP_SoulCoreEquipPanel_C = UnLua.Class()
 local SoulCoreEquipItemClsPath = "/Game/Rouge/UI/Lobby/SoulCore/WBP_SoulCoreEquipItem.WBP_SoulCoreEquipItem_C"
 local SoulCoreSkillLevelDescItemPath = "/Game/Rouge/UI/Lobby/SoulCore/WBP_SoulCoreSkillLevelDescItem.WBP_SoulCoreSkillLevelDescItem_C"
 local SoulCoreSkillTagPath = "/Game/Rouge/UI/Lobby/SoulCore/WBP_SoulCoreSkillTag.WBP_SoulCoreSkillTag_C"
+
 function WBP_SoulCoreEquipPanel_C:Construct()
 end
+
 function WBP_SoulCoreEquipPanel_C:Destruct()
   self.ParentView = nil
 end
+
 function WBP_SoulCoreEquipPanel_C:InitInfo(MainHeroId, ParentView)
   self.ParentView = ParentView
   self.MainHeroId = MainHeroId
 end
+
 function WBP_SoulCoreEquipPanel_C:UpdateSoulCoreEquipItemList()
   local AllFetterSlotIds = LogicRole.GetAllFetterSlotIds()
   local SoulCoreEquipItemCls = UE.UClass.Load(SoulCoreEquipItemClsPath)
@@ -21,6 +25,7 @@ function WBP_SoulCoreEquipPanel_C:UpdateSoulCoreEquipItemList()
   end
   HideOtherItem(self.ScrollBoxSoulCore, #AllFetterSlotIds + 1)
 end
+
 function WBP_SoulCoreEquipPanel_C:SelectItem(CharacterId)
   self.CurSelectCharacterId = CharacterId
   self.CanvasPanelTips:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -36,11 +41,13 @@ function WBP_SoulCoreEquipPanel_C:SelectItem(CharacterId)
     self.CanvasPanelDetails:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_SoulCoreEquipPanel_C:UnSelectItem()
   self.CanvasPanelTips:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.CanvasPanelEmpty:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.CanvasPanelDetails:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_SoulCoreEquipPanel_C:UpdateView(CharacterId)
   local SkillGroupId = LogicRole.GetFetterSkillGroupIdByHeroId(CharacterId)
   local SkillList = LogicRole.HeroSkillTable[SkillGroupId]
@@ -63,6 +70,7 @@ function WBP_SoulCoreEquipPanel_C:UpdateView(CharacterId)
     self:UpdateSkillDesc(SkillList, Lv)
   end
 end
+
 function WBP_SoulCoreEquipPanel_C:UpdateSkillTag(SkillTags)
   local SoulCoreSkillTagCls = UE.UClass.Load(SoulCoreSkillTagPath)
   for i, v in ipairs(SkillTags) do
@@ -74,6 +82,7 @@ function WBP_SoulCoreEquipPanel_C:UpdateSkillTag(SkillTags)
   end
   HideOtherItem(self.HorizontalBoxSkillTag, #SkillTags + 1)
 end
+
 function WBP_SoulCoreEquipPanel_C:UpdateSkillDesc(SkillList, CharacterStar)
   local LevelDescItemCls = UE.UClass.Load(SoulCoreSkillLevelDescItemPath)
   for index, value in ipairs(SkillList) do
@@ -86,4 +95,5 @@ function WBP_SoulCoreEquipPanel_C:UpdateSkillDesc(SkillList, CharacterStar)
   end
   HideOtherItem(self.VerticalBoxSkillDesc, #SkillList + 1)
 end
+
 return WBP_SoulCoreEquipPanel_C

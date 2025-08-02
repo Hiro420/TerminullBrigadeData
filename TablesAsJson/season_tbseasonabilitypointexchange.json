@@ -1,98 +1,98 @@
 ﻿{
   "1": {
+    "AbilityPointID": 1,
     "ExchangeResource": {
       "value": 50,
       "key": 99003
     },
-    "AbilityPointID": 1,
     "SeasonIDX": 1
   },
   "2": {
+    "AbilityPointID": 2,
     "ExchangeResource": {
       "value": 50,
       "key": 99003
     },
-    "AbilityPointID": 2,
     "SeasonIDX": 1
   },
   "3": {
+    "AbilityPointID": 3,
     "ExchangeResource": {
       "value": 50,
       "key": 99003
     },
-    "AbilityPointID": 3,
     "SeasonIDX": 1
   },
   "4": {
+    "AbilityPointID": 4,
     "ExchangeResource": {
       "value": 50,
       "key": 99003
     },
-    "AbilityPointID": 4,
     "SeasonIDX": 1
   },
   "5": {
+    "AbilityPointID": 5,
     "ExchangeResource": {
       "value": 50,
       "key": 99003
     },
-    "AbilityPointID": 5,
     "SeasonIDX": 1
   },
   "6": {
+    "AbilityPointID": 6,
     "ExchangeResource": {
       "value": 50,
       "key": 99003
     },
-    "AbilityPointID": 6,
     "SeasonIDX": 1
   },
   "7": {
+    "AbilityPointID": 7,
     "ExchangeResource": {
       "value": 50,
       "key": 99003
     },
-    "AbilityPointID": 7,
     "SeasonIDX": 1
   },
   "8": {
+    "AbilityPointID": 8,
     "ExchangeResource": {
       "value": 50,
       "key": 99003
     },
-    "AbilityPointID": 8,
     "SeasonIDX": 1
   },
   "9": {
+    "AbilityPointID": 9,
     "ExchangeResource": {
       "value": 50,
       "key": 99003
     },
-    "AbilityPointID": 9,
     "SeasonIDX": 1
   },
   "10": {
+    "AbilityPointID": 10,
     "ExchangeResource": {
       "value": 50,
       "key": 99003
     },
-    "AbilityPointID": 10,
     "SeasonIDX": 1
   },
   "11": {
+    "AbilityPointID": 11,
     "ExchangeResource": {
       "value": 50,
       "key": 99003
     },
-    "AbilityPointID": 11,
     "SeasonIDX": 1
   },
   "12": {
+    "AbilityPointID": 12,
     "ExchangeResource": {
       "value": 50,
       "key": 99003
     },
-    "AbilityPointID": 12,
     "SeasonIDX": 1
   }
 }

@@ -1,5 +1,6 @@
 local ListContainer = require("Rouge.UI.Common.ListContainer")
 local WBP_FetterMain_C = UnLua.Class()
+
 function WBP_FetterMain_C:Construct()
   self.ListContainer = ListContainer.New(UE.UGameplayStatics.GetObjectClass(self.FetterHeroItemTemplate))
   table.insert(self.ListContainer.AllWidgets, self.FetterHeroItemTemplate)
@@ -8,6 +9,7 @@ function WBP_FetterMain_C:Construct()
   EventSystem.AddListener(self, EventDef.Lobby.FetterHeroItemLeftClicked, WBP_FetterMain_C.BindOnFetterHeroItemLeftMouseDown)
   EventSystem.AddListener(self, EventDef.Lobby.FetterHeroDragCompare, WBP_FetterMain_C.BindOnFetterHeroDragCompare)
 end
+
 function WBP_FetterMain_C:InitInfo(HeroId)
   self.CurHeroId = HeroId
   self:InitFetterHeroList()
@@ -18,6 +20,7 @@ function WBP_FetterMain_C:InitInfo(HeroId)
   LogicRole.InitMainFetterHeroMesh(self.CurHeroId)
   LogicRole.InitFetterHeroesMesh(self.CurHeroId)
 end
+
 function WBP_FetterMain_C:InitFetterHeroList()
   local HeroList = DataMgr.GetMyHeroInfo()
   self.ListContainer:ClearAllUseWidgets()
@@ -50,6 +53,7 @@ function WBP_FetterMain_C:InitFetterHeroList()
     end
   end
 end
+
 function WBP_FetterMain_C:InitFetterSlotList()
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
   local TargetActor
@@ -73,10 +77,13 @@ function WBP_FetterMain_C:InitFetterSlotList()
     self.FetterSlotListContainer:ShowItem(Item, SingleSlotId, self.CurHeroId)
   end
 end
+
 function WBP_FetterMain_C:BindOnFetterHeroItemLeftMouseDown(HeroId)
 end
+
 function WBP_FetterMain_C:BindOnFetterHeroDragCompare(IsDrag, CompareHeroId)
 end
+
 function WBP_FetterMain_C:Destruct()
   self.ListContainer:ClearAllWidgets()
   self.ListContainer = nil
@@ -85,4 +92,5 @@ function WBP_FetterMain_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.FetterHeroItemLeftClicked, WBP_FetterMain_C.BindOnFetterHeroItemLeftMouseDown)
   EventSystem.RemoveListener(EventDef.Lobby.FetterHeroDragCompare, WBP_FetterMain_C.BindOnFetterHeroDragCompare)
 end
+
 return WBP_FetterMain_C

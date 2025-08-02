@@ -1,11 +1,14 @@
 local BeginnerGuideData = require("Modules.Beginner.BeginnerGuideData")
 local WBP_CommonTalent_C = UnLua.Class()
+
 function WBP_CommonTalent_C:OnBindUIInput()
   self.WBP_InteractTipWidgetWrite:BindInteractAndClickEvent(self, self.BindOnConfirmButtonClicked)
 end
+
 function WBP_CommonTalent_C:OnUnBindUIInput()
   self.WBP_InteractTipWidgetWrite:UnBindInteractAndClickEvent(self, self.BindOnConfirmButtonClicked)
 end
+
 function WBP_CommonTalent_C:Construct()
   self.Overridden.Construct(self)
   self.AllTalentItems = {}
@@ -25,6 +28,7 @@ function WBP_CommonTalent_C:Construct()
   local SizeY = ViewportSize.Y - MovePanelOffset.Bottom - MovePanelOffset.Top
   self.MovePanelSize = UE.FVector2D(SizeX, SizeY)
 end
+
 function WBP_CommonTalent_C:InitInfo()
   self:InitTalentItemInfo(self.ResourceItemPanel, UE.ETalentItemType.Resource)
   self:InitTalentItemInfo(self.LiveItemPanel, UE.ETalentItemType.Live)
@@ -33,6 +37,7 @@ function WBP_CommonTalent_C:InitInfo()
   self:InitTalentItemInfo(self.AccumulativeTalentList, UE.ETalentItemType.AccumulativeCost)
   self:InitTalentLine()
 end
+
 function WBP_CommonTalent_C:InitTalentLine()
   local LobbySettings = UE.URGLobbySettings.GetLobbySettings()
   local AllChildren = self.CanvasPanel_TalentLine:GetAllChildren()
@@ -47,6 +52,7 @@ function WBP_CommonTalent_C:InitTalentLine()
     SingleItem:Show(TalentId)
   end
 end
+
 function WBP_CommonTalent_C:InitTalentItemInfo(ItemPanel, Type)
   local ItemInfoList
   local LobbySettings = UE.URGLobbySettings.GetLobbySettings()
@@ -79,6 +85,7 @@ function WBP_CommonTalent_C:InitTalentItemInfo(ItemPanel, Type)
     end
   end
 end
+
 function WBP_CommonTalent_C:CollectLinePosition()
   local LineInfos = {}
   for TalentId, TalentItem in pairs(self.AllTalentItems) do
@@ -111,6 +118,7 @@ function WBP_CommonTalent_C:CollectLinePosition()
   end
   self.TalentLine:SetLineInfos(LineInfos)
 end
+
 function WBP_CommonTalent_C:Show()
   self.IsInitiativeStop = false
   self:StopAllAnimations()
@@ -120,14 +128,17 @@ function WBP_CommonTalent_C:Show()
   self:RefreshPreAccumulativeCostNum()
   self:RefreshAccumulativeCostNum()
   self:RefreshAccumulativeCostIcon()
+  self:InitTalentLine()
   self:ChangePreventMisContactImgDuringMovingPanelVis(false)
   BeginnerGuideData:UpdateWBP("WBP_CommonTalent", self)
   EventSystem.Invoke(EventDef.BeginnerGuide.OnTalentPanelShow)
   self:PlayAnimation(self.Ani_in, 0, 1, UE.EUMGSequencePlayMode.Forward, 1, true)
 end
+
 function WBP_CommonTalent_C:GetRealViewportSize(...)
   return UE.UWidgetLayoutLibrary.GetViewportSize(self) / UE.UWidgetLayoutLibrary.GetViewportScale(self)
 end
+
 function WBP_CommonTalent_C:ChangePreventMisContactImgDuringMovingPanelVis(IsShow)
   if IsShow then
     self.PreventMisContactImgDuringMovePanel:SetVisibility(UE.ESlateVisibility.Visible)
@@ -135,6 +146,7 @@ function WBP_CommonTalent_C:ChangePreventMisContactImgDuringMovingPanelVis(IsSho
     self.PreventMisContactImgDuringMovePanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_CommonTalent_C:RefreshAccumulativeCostIcon()
   local FirstAccumulativeCostTalentId
   local LobbySettings = UE.URGLobbySettings.GetLobbySettings()
@@ -161,6 +173,7 @@ function WBP_CommonTalent_C:RefreshAccumulativeCostIcon()
     SetImageBrushByPath(self.Img_AccumulativeCostIcon, ResourceRow.Icon)
   end
 end
+
 function WBP_CommonTalent_C:RefreshItemStatus()
   self.SaveTipPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.IsShowTip = false
@@ -170,6 +183,7 @@ function WBP_CommonTalent_C:RefreshItemStatus()
     TalentItem:RefreshStatus()
   end
 end
+
 function WBP_CommonTalent_C:RefreshPreAccumulativeCostNum()
   local PreCostNum = LogicTalent.GetPreCostNum(self.AccumulativeCostId)
   if 0 == PreCostNum then
@@ -183,6 +197,7 @@ function WBP_CommonTalent_C:RefreshPreAccumulativeCostNum()
   end
   self:PlayCanClickUpgradeAnim(0 ~= PreCostNum)
 end
+
 function WBP_CommonTalent_C:PlayCanClickUpgradeAnim(IsCan)
   if self.IsInCanClickUpgradeAnim == IsCan then
     return
@@ -204,15 +219,19 @@ function WBP_CommonTalent_C:PlayCanClickUpgradeAnim(IsCan)
     end
   end
 end
+
 function WBP_CommonTalent_C:RefreshAccumulativeCostNum()
   self.Txt_AccumulativeCostNum:SetText(DataMgr.GetCommonTalentsAccumulativeCostById(self.AccumulativeCostId))
 end
+
 function WBP_CommonTalent_C:BindOnUpdateCommonTalentPresetCost()
   self:RefreshPreAccumulativeCostNum()
 end
+
 function WBP_CommonTalent_C:BindOnUpdateCommonTalentInfo()
   self:RefreshAccumulativeCostNum()
 end
+
 function WBP_CommonTalent_C:BindOnConfirmButtonClicked()
   local UserClickStatisticsMgr = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUserClickStatistics:StaticClass())
   if UserClickStatisticsMgr then
@@ -258,6 +277,7 @@ function WBP_CommonTalent_C:BindOnConfirmButtonClicked()
     LogicSettlement:HideSettlement()
   end
 end
+
 function WBP_CommonTalent_C:GetHeroTalentPre(TalentId, HeroTalentList)
   local TalentInfo = LogicTalent.GetTalentTableRow(TalentId)
   if TalentInfo and TalentInfo[1] then
@@ -269,11 +289,13 @@ function WBP_CommonTalent_C:GetHeroTalentPre(TalentId, HeroTalentList)
   end
   return
 end
+
 function WBP_CommonTalent_C:BindOnTipConfirmButtonClicked()
   self:BindOnConfirmButtonClicked()
   self:PlayAnimOutAnimation()
   self.SaveTipPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_CommonTalent_C:BindOnTipCancelButtonClicked()
   self.SaveTipPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   LogicTalent.ResetPreCommonTalentLevelList()
@@ -283,10 +305,12 @@ function WBP_CommonTalent_C:BindOnTipCancelButtonClicked()
     LogicSettlement:HideSettlement()
   end
 end
+
 function WBP_CommonTalent_C:PlayAnimOutAnimation()
   self.IsInitiativeStop = true
   self:PlayAnimation(self.Ani_out, 0, 1, UE.EUMGSequencePlayMode.Forward, 1, true)
 end
+
 function WBP_CommonTalent_C:OnAnimationFinished(InAnimation)
   if not self.IsInitiativeStop then
     return
@@ -300,6 +324,7 @@ function WBP_CommonTalent_C:OnAnimationFinished(InAnimation)
     end
   end
 end
+
 function WBP_CommonTalent_C:CanDirectSwitch()
   local PreCommonTalentList = LogicTalent.GetPreCommonTalentLevelList()
   local Params = {}
@@ -337,6 +362,7 @@ function WBP_CommonTalent_C:CanDirectSwitch()
     return true
   end
 end
+
 function WBP_CommonTalent_C:CanDirectExit()
   local PreCommonTalentList = LogicTalent.GetPreCommonTalentLevelList()
   local Params = {}
@@ -370,6 +396,7 @@ function WBP_CommonTalent_C:CanDirectExit()
     return true
   end
 end
+
 function WBP_CommonTalent_C:Hide()
   EventSystem.RemoveListener(EventDef.Lobby.UpdateCommonTalentPresetCost, self.BindOnUpdateCommonTalentPresetCost, self)
   EventSystem.RemoveListener(EventDef.Lobby.UpdateCommonTalentInfo, self.BindOnUpdateCommonTalentInfo, self)
@@ -396,6 +423,8 @@ function WBP_CommonTalent_C:Hide()
     end
   end
 end
+
 function WBP_CommonTalent_C:Destruct()
 end
+
 return WBP_CommonTalent_C

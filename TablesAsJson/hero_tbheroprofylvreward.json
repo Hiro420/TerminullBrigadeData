@@ -1,20 +1,20 @@
 ﻿{
   "1": {
-    "Level": 1,
+    "LvRewardList": {
+      "1": {
+        "value": 1,
+        "key": 210002
+      }
+    },
     "inscriptions": {
       "1": 111
     },
     "StoryRewardList": {
       "1": {
-        "key": 210002,
-        "value": 1
+        "value": 1,
+        "key": 210002
       }
     },
-    "LvRewardList": {
-      "1": {
-        "key": 210002,
-        "value": 1
-      }
-    }
+    "Level": 1
   }
 }

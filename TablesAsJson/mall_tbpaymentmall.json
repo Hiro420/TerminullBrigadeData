@@ -1,597 +1,667 @@
 ﻿{
   "1": {
-    "MidasGoodsID": "300101_60",
-    "Shelfs": {
-      "1": 102
-    },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "Region": 0,
     "ID": 1,
+    "Price": 6,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "MidasGoodsID": "300101_60",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_1",
       "InTextLiteral": "纯净数据"
     },
-    "Price": 6,
+    "SteamGainAmount": 60,
+    "SteamGainResourceID": 300101,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": true
-  },
-  "2": {
-    "MidasGoodsID": "300101_300",
     "Shelfs": {
       "1": 102
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "IsShow": true
+  },
+  "2": {
+    "Region": 0,
     "ID": 2,
+    "Price": 30,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "MidasGoodsID": "300101_300",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_2",
       "InTextLiteral": "纯净数据"
     },
-    "Price": 30,
+    "SteamGainAmount": 300,
+    "SteamGainResourceID": 300101,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": true
-  },
-  "3": {
-    "MidasGoodsID": "300101_700",
     "Shelfs": {
       "1": 102
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "IsShow": true
+  },
+  "3": {
+    "Region": 0,
     "ID": 3,
+    "Price": 68,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "MidasGoodsID": "300101_700",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_3",
       "InTextLiteral": "纯净数据"
     },
-    "Price": 68,
+    "SteamGainAmount": 680,
+    "SteamGainResourceID": 300101,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": true
-  },
-  "4": {
-    "MidasGoodsID": "300101_1280",
     "Shelfs": {
       "1": 102
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "IsShow": true
+  },
+  "4": {
+    "Region": 0,
     "ID": 4,
+    "Price": 118,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "MidasGoodsID": "300101_1280",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_4",
       "InTextLiteral": "纯净数据"
     },
-    "Price": 118,
+    "SteamGainAmount": 1180,
+    "SteamGainResourceID": 300101,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": true
-  },
-  "5": {
-    "MidasGoodsID": "300101_3650",
     "Shelfs": {
       "1": 102
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "IsShow": true
+  },
+  "5": {
+    "Region": 0,
     "ID": 5,
+    "Price": 328,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "MidasGoodsID": "300101_3650",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_5",
       "InTextLiteral": "纯净数据"
     },
-    "Price": 328,
+    "SteamGainAmount": 3280,
+    "SteamGainResourceID": 300101,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": true
-  },
-  "6": {
-    "MidasGoodsID": "300101_6850",
     "Shelfs": {
       "1": 102
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "IsShow": true
+  },
+  "6": {
+    "Region": 0,
     "ID": 6,
+    "Price": 598,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "MidasGoodsID": "300101_6850",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_6",
       "InTextLiteral": "纯净数据"
     },
-    "Price": 598,
+    "SteamGainAmount": 5980,
+    "SteamGainResourceID": 300101,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": true
-  },
-  "7": {
-    "MidasGoodsID": "300101_60",
     "Shelfs": {
       "1": 102
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "IsShow": true
+  },
+  "7": {
+    "Region": 1,
     "ID": 7,
+    "Price": 0.99,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "MidasGoodsID": "300101_60",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_7",
       "InTextLiteral": "纯净数据"
     },
-    "Price": 0.99,
+    "SteamGainAmount": 0,
+    "SteamGainResourceID": 0,
     "CurrencyType": 1,
-    "Region": 1,
-    "IsShow": true
-  },
-  "8": {
-    "MidasGoodsID": "300101_300",
     "Shelfs": {
       "1": 102
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "IsShow": true
+  },
+  "8": {
+    "Region": 1,
     "ID": 8,
+    "Price": 4.99,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "MidasGoodsID": "300101_300",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_8",
       "InTextLiteral": "纯净数据"
     },
-    "Price": 4.99,
+    "SteamGainAmount": 0,
+    "SteamGainResourceID": 0,
     "CurrencyType": 1,
-    "Region": 1,
-    "IsShow": true
-  },
-  "9": {
-    "MidasGoodsID": "300101_615",
     "Shelfs": {
       "1": 102
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "IsShow": true
+  },
+  "9": {
+    "Region": 1,
     "ID": 9,
+    "Price": 9.99,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "MidasGoodsID": "300101_615",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_9",
       "InTextLiteral": "纯净数据"
     },
-    "Price": 9.99,
+    "SteamGainAmount": 0,
+    "SteamGainResourceID": 0,
     "CurrencyType": 1,
-    "Region": 1,
-    "IsShow": true
-  },
-  "10": {
-    "MidasGoodsID": "300101_1620",
     "Shelfs": {
       "1": 102
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "IsShow": true
+  },
+  "10": {
+    "Region": 1,
     "ID": 10,
+    "Price": 24.99,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "MidasGoodsID": "300101_1620",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_10",
       "InTextLiteral": "纯净数据"
     },
-    "Price": 24.99,
+    "SteamGainAmount": 0,
+    "SteamGainResourceID": 0,
     "CurrencyType": 1,
-    "Region": 1,
-    "IsShow": true
-  },
-  "11": {
-    "MidasGoodsID": "300101_3350",
     "Shelfs": {
       "1": 102
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "IsShow": true
+  },
+  "11": {
+    "Region": 1,
     "ID": 11,
+    "Price": 49.99,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "MidasGoodsID": "300101_3350",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_11",
       "InTextLiteral": "纯净数据"
     },
-    "Price": 49.99,
+    "SteamGainAmount": 0,
+    "SteamGainResourceID": 0,
     "CurrencyType": 1,
-    "Region": 1,
-    "IsShow": true
-  },
-  "12": {
-    "MidasGoodsID": "300101_6850",
     "Shelfs": {
       "1": 102
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "IsShow": true
+  },
+  "12": {
+    "Region": 1,
     "ID": 12,
+    "Price": 99.99,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "MidasGoodsID": "300101_6850",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_12",
       "InTextLiteral": "纯净数据"
     },
-    "Price": 99.99,
+    "SteamGainAmount": 0,
+    "SteamGainResourceID": 0,
     "CurrencyType": 1,
-    "Region": 1,
+    "Shelfs": {
+      "1": 102
+    },
     "IsShow": true
   },
   "13": {
-    "MidasGoodsID": "300201",
-    "Shelfs": {
-      "1": 101
-    },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_01.Icon_MonthCard_Benefits_01",
+    "Region": 0,
     "ID": 13,
+    "Price": 10,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_01.Icon_MonthCard_Benefits_01",
+    "MidasGoodsID": "300201",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_13",
       "InTextLiteral": "高能权益"
     },
-    "Price": 10,
+    "SteamGainAmount": 1,
+    "SteamGainResourceID": 300201,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": true
-  },
-  "14": {
-    "MidasGoodsID": "300204",
     "Shelfs": {
       "1": 101
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_05.Icon_MonthCard_Benefits_05",
+    "IsShow": true
+  },
+  "14": {
+    "Region": 0,
     "ID": 14,
+    "Price": 10,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_05.Icon_MonthCard_Benefits_05",
+    "MidasGoodsID": "300204",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_14",
       "InTextLiteral": "权限刷新权益"
     },
-    "Price": 10,
+    "SteamGainAmount": 1,
+    "SteamGainResourceID": 300204,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": true
-  },
-  "15": {
-    "MidasGoodsID": "300205",
     "Shelfs": {
       "1": 101
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_06.Icon_MonthCard_Benefits_06",
+    "IsShow": true
+  },
+  "15": {
+    "Region": 0,
     "ID": 15,
+    "Price": 10,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_06.Icon_MonthCard_Benefits_06",
+    "MidasGoodsID": "300205",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_15",
       "InTextLiteral": "复活权益"
     },
-    "Price": 10,
+    "SteamGainAmount": 1,
+    "SteamGainResourceID": 300205,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": true
-  },
-  "16": {
-    "MidasGoodsID": "300203",
     "Shelfs": {
       "1": 101
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_04.Icon_MonthCard_Benefits_04",
+    "IsShow": true
+  },
+  "16": {
+    "Region": 0,
     "ID": 16,
+    "Price": 20,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_04.Icon_MonthCard_Benefits_04",
+    "MidasGoodsID": "300203",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_16",
       "InTextLiteral": "源码权益"
     },
-    "Price": 20,
+    "SteamGainAmount": 1,
+    "SteamGainResourceID": 300203,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": true
-  },
-  "17": {
-    "MidasGoodsID": "300206",
     "Shelfs": {
       "1": 101
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_04.Icon_MonthCard_Benefits_04",
+    "IsShow": true
+  },
+  "17": {
+    "Region": 0,
     "ID": 17,
+    "Price": 20,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_04.Icon_MonthCard_Benefits_04",
+    "MidasGoodsID": "300206",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_17",
       "InTextLiteral": "熟练度权益"
     },
-    "Price": 20,
+    "SteamGainAmount": 1,
+    "SteamGainResourceID": 300206,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": true
-  },
-  "18": {
-    "MidasGoodsID": "300207",
     "Shelfs": {
       "1": 101
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_02.Icon_MonthCard_Benefits_02",
+    "IsShow": true
+  },
+  "18": {
+    "Region": 0,
     "ID": 18,
+    "Price": 20,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_02.Icon_MonthCard_Benefits_02",
+    "MidasGoodsID": "300207",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_18",
       "InTextLiteral": "赛季道具权益"
     },
-    "Price": 20,
+    "SteamGainAmount": 1,
+    "SteamGainResourceID": 300207,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": true
-  },
-  "19": {
-    "MidasGoodsID": "300208",
     "Shelfs": {
       "1": 101
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_07.Icon_MonthCard_Benefits_07",
+    "IsShow": true
+  },
+  "19": {
+    "Region": 0,
     "ID": 19,
+    "Price": 38,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_07.Icon_MonthCard_Benefits_07",
+    "MidasGoodsID": "300208",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_19",
       "InTextLiteral": "权益组合包"
     },
-    "Price": 38,
+    "SteamGainAmount": 1,
+    "SteamGainResourceID": 300208,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": true
-  },
-  "20": {
-    "MidasGoodsID": "300201",
     "Shelfs": {
       "1": 101
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_01.Icon_MonthCard_Benefits_01",
+    "IsShow": true
+  },
+  "20": {
+    "Region": 1,
     "ID": 20,
+    "Price": 1.49,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_01.Icon_MonthCard_Benefits_01",
+    "MidasGoodsID": "300201",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_20",
       "InTextLiteral": "高能权益"
     },
-    "Price": 1.49,
+    "SteamGainAmount": 0,
+    "SteamGainResourceID": 0,
     "CurrencyType": 1,
-    "Region": 1,
-    "IsShow": true
-  },
-  "21": {
-    "MidasGoodsID": "300204",
     "Shelfs": {
       "1": 101
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_05.Icon_MonthCard_Benefits_05",
+    "IsShow": true
+  },
+  "21": {
+    "Region": 1,
     "ID": 21,
+    "Price": 1.49,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_05.Icon_MonthCard_Benefits_05",
+    "MidasGoodsID": "300204",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_21",
       "InTextLiteral": "权限刷新权益"
     },
-    "Price": 1.49,
+    "SteamGainAmount": 0,
+    "SteamGainResourceID": 0,
     "CurrencyType": 1,
-    "Region": 1,
-    "IsShow": true
-  },
-  "22": {
-    "MidasGoodsID": "300205",
     "Shelfs": {
       "1": 101
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_06.Icon_MonthCard_Benefits_06",
+    "IsShow": true
+  },
+  "22": {
+    "Region": 1,
     "ID": 22,
+    "Price": 1.49,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_06.Icon_MonthCard_Benefits_06",
+    "MidasGoodsID": "300205",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_22",
       "InTextLiteral": "复活权益"
     },
-    "Price": 1.49,
+    "SteamGainAmount": 0,
+    "SteamGainResourceID": 0,
     "CurrencyType": 1,
-    "Region": 1,
-    "IsShow": true
-  },
-  "23": {
-    "MidasGoodsID": "300203",
     "Shelfs": {
       "1": 101
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_04.Icon_MonthCard_Benefits_04",
+    "IsShow": true
+  },
+  "23": {
+    "Region": 1,
     "ID": 23,
+    "Price": 2.99,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_04.Icon_MonthCard_Benefits_04",
+    "MidasGoodsID": "300203",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_23",
       "InTextLiteral": "源码权益"
     },
-    "Price": 2.99,
+    "SteamGainAmount": 0,
+    "SteamGainResourceID": 0,
     "CurrencyType": 1,
-    "Region": 1,
-    "IsShow": true
-  },
-  "24": {
-    "MidasGoodsID": "300206",
     "Shelfs": {
       "1": 101
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_04.Icon_MonthCard_Benefits_04",
+    "IsShow": true
+  },
+  "24": {
+    "Region": 1,
     "ID": 24,
+    "Price": 2.99,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_04.Icon_MonthCard_Benefits_04",
+    "MidasGoodsID": "300206",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_24",
       "InTextLiteral": "熟练度权益"
     },
-    "Price": 2.99,
+    "SteamGainAmount": 0,
+    "SteamGainResourceID": 0,
     "CurrencyType": 1,
-    "Region": 1,
-    "IsShow": true
-  },
-  "25": {
-    "MidasGoodsID": "300207",
     "Shelfs": {
       "1": 101
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_02.Icon_MonthCard_Benefits_02",
+    "IsShow": true
+  },
+  "25": {
+    "Region": 1,
     "ID": 25,
+    "Price": 2.99,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_02.Icon_MonthCard_Benefits_02",
+    "MidasGoodsID": "300207",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_25",
       "InTextLiteral": "赛季道具权益"
     },
-    "Price": 2.99,
+    "SteamGainAmount": 0,
+    "SteamGainResourceID": 0,
     "CurrencyType": 1,
-    "Region": 1,
-    "IsShow": true
-  },
-  "26": {
-    "MidasGoodsID": "300208",
     "Shelfs": {
       "1": 101
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_07.Icon_MonthCard_Benefits_07",
+    "IsShow": true
+  },
+  "26": {
+    "Region": 1,
     "ID": 26,
+    "Price": 5.69,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_07.Icon_MonthCard_Benefits_07",
+    "MidasGoodsID": "300208",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_26",
       "InTextLiteral": "权益组合包"
     },
-    "Price": 5.69,
+    "SteamGainAmount": 0,
+    "SteamGainResourceID": 0,
     "CurrencyType": 1,
-    "Region": 1,
+    "Shelfs": {
+      "1": 101
+    },
     "IsShow": true
   },
   "27": {
-    "MidasGoodsID": "300301",
-    "Shelfs": {
-      "1": 104
-    },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "Region": 0,
     "ID": 27,
+    "Price": 68,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "MidasGoodsID": "300301",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_27",
       "InTextLiteral": "超载通行证高级解锁道具"
     },
-    "Price": 68,
+    "SteamGainAmount": 1,
+    "SteamGainResourceID": 300301,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": false
-  },
-  "28": {
-    "MidasGoodsID": "300302",
     "Shelfs": {
       "1": 104
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "IsShow": false
+  },
+  "28": {
+    "Region": 0,
     "ID": 28,
+    "Price": 128,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "MidasGoodsID": "300302",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_28",
       "InTextLiteral": "超载通行证典藏解锁道具"
     },
-    "Price": 128,
+    "SteamGainAmount": 1,
+    "SteamGainResourceID": 300302,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": false
-  },
-  "29": {
-    "MidasGoodsID": "300303",
     "Shelfs": {
       "1": 104
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "IsShow": false
+  },
+  "29": {
+    "Region": 0,
     "ID": 29,
+    "Price": 60,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "MidasGoodsID": "300303",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_29",
       "InTextLiteral": "超载通行证升级解锁道具"
     },
-    "Price": 60,
+    "SteamGainAmount": 1,
+    "SteamGainResourceID": 300303,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": false
-  },
-  "30": {
-    "MidasGoodsID": "300304",
     "Shelfs": {
       "1": 104
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "IsShow": false
+  },
+  "30": {
+    "Region": 0,
     "ID": 30,
+    "Price": 68,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "MidasGoodsID": "300304",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_30",
       "InTextLiteral": "原爆点通行证高级解锁道具"
     },
-    "Price": 68,
+    "SteamGainAmount": 1,
+    "SteamGainResourceID": 300304,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": true
-  },
-  "31": {
-    "MidasGoodsID": "300305",
     "Shelfs": {
       "1": 104
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "IsShow": true
+  },
+  "31": {
+    "Region": 0,
     "ID": 31,
+    "Price": 168,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "MidasGoodsID": "300305",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_31",
       "InTextLiteral": "原爆点通行证典藏解锁道具"
     },
-    "Price": 168,
+    "SteamGainAmount": 1,
+    "SteamGainResourceID": 300305,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": true
-  },
-  "32": {
-    "MidasGoodsID": "300306",
     "Shelfs": {
       "1": 104
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "IsShow": true
+  },
+  "32": {
+    "Region": 0,
     "ID": 32,
+    "Price": 100,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "MidasGoodsID": "300306",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_32",
       "InTextLiteral": "原爆点通行证升级道具"
     },
-    "Price": 100,
+    "SteamGainAmount": 1,
+    "SteamGainResourceID": 300306,
     "CurrencyType": 0,
-    "Region": 0,
-    "IsShow": true
-  },
-  "33": {
-    "MidasGoodsID": "300304",
     "Shelfs": {
       "1": 104
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "IsShow": true
+  },
+  "33": {
+    "Region": 1,
     "ID": 33,
+    "Price": 9.99,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "MidasGoodsID": "300304",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_33",
       "InTextLiteral": "原爆点通行证高级解锁道具"
     },
-    "Price": 9.99,
+    "SteamGainAmount": 0,
+    "SteamGainResourceID": 0,
     "CurrencyType": 1,
-    "Region": 1,
-    "IsShow": true
-  },
-  "34": {
-    "MidasGoodsID": "300305",
     "Shelfs": {
       "1": 104
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "IsShow": true
+  },
+  "34": {
+    "Region": 1,
     "ID": 34,
+    "Price": 24.99,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "MidasGoodsID": "300305",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_34",
       "InTextLiteral": "原爆点通行证典藏解锁道具"
     },
-    "Price": 24.99,
+    "SteamGainAmount": 0,
+    "SteamGainResourceID": 0,
     "CurrencyType": 1,
-    "Region": 1,
-    "IsShow": true
-  },
-  "35": {
-    "MidasGoodsID": "300306",
     "Shelfs": {
       "1": 104
     },
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "IsShow": true
+  },
+  "35": {
+    "Region": 1,
     "ID": 35,
+    "Price": 15,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "MidasGoodsID": "300306",
     "NameLocMeta": {
       "InNamespace": "mall_TBPaymentMall",
       "InKey": "Name_35",
       "InTextLiteral": "原爆点通行证升级道具"
     },
-    "Price": 15,
+    "SteamGainAmount": 0,
+    "SteamGainResourceID": 0,
     "CurrencyType": 1,
-    "Region": 1,
+    "Shelfs": {
+      "1": 104
+    },
     "IsShow": true
   }
 }

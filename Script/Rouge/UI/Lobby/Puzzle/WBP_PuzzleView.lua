@@ -12,6 +12,7 @@ local OverWorldGridMaxNumTip = 300001
 local PuzzleEquippedTip = 300002
 local EInfoToggle = {Attr = 1, Inscription = 2}
 local EListType = {Puzzle = 1, Gem = 2}
+
 function WBP_PuzzleView:BindClickHandler()
   self.CheckBox_DetailInfo.OnCheckStateChanged:Add(self, self.BindOnDetailListCheckStateChanged)
   self.RGTileViewPuzzleList.BP_OnItemSelectionChanged:Add(self, self.BindOnItemSelectionChanged)
@@ -24,6 +25,7 @@ function WBP_PuzzleView:BindClickHandler()
   self.WBP_CommonButton_Decompose.OnMainButtonClicked:Add(self, self.BindOnDecomposeButtonClicked)
   self.RGViewListToggle.OnCheckStateChanged:Add(self, self.BindOnRGViewListToggleStateChanged)
 end
+
 function WBP_PuzzleView:UnBindClickHandler()
   self.CheckBox_DetailInfo.OnCheckStateChanged:Remove(self, self.BindOnDetailListCheckStateChanged)
   self.RGTileViewPuzzleList.BP_OnItemSelectionChanged:Remove(self, self.BindOnItemSelectionChanged)
@@ -36,14 +38,17 @@ function WBP_PuzzleView:UnBindClickHandler()
   self.WBP_CommonButton_Decompose.OnMainButtonClicked:Remove(self, self.BindOnDecomposeButtonClicked)
   self.RGViewListToggle.OnCheckStateChanged:Remove(self, self.BindOnRGViewListToggleStateChanged)
 end
+
 function WBP_PuzzleView:OnInit()
   self.DataBindTable = {}
   self.ViewModel = UIModelMgr:Get("PuzzleViewModel")
   self:BindClickHandler()
 end
+
 function WBP_PuzzleView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_PuzzleView:OnShow(CurHeroId)
   self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
   LogicRole.ShowOrHideRoleMainHero(false)
@@ -89,6 +94,7 @@ function WBP_PuzzleView:OnShow(CurHeroId)
   EventSystem.AddListenerNew(EventDef.Gem.OnGemUnEquipSuccess, self, self.BindOnGemUnEquipSuccess)
   EventSystem.AddListenerNew(EventDef.Gem.OnGemDecomposeSuccess, self, self.BindOnGemDecomposeSuccess)
 end
+
 function WBP_PuzzleView:OnRollback()
   LogicRole.ShowOrHideRoleMainHero(false)
   ChangeLobbyCamera(GameInstance, "Role")
@@ -104,6 +110,7 @@ function WBP_PuzzleView:OnRollback()
   EventSystem.AddListenerNew(EventDef.Gem.OnUpdateGemPackageInfo, self, self.BindOnUpdateGemPackageInfo)
   EventSystem.AddListenerNew(EventDef.Gem.OnUpdateGemItemHoverStatus, self, self.BindOnUpdateGemItemHoverStatus)
 end
+
 function WBP_PuzzleView:OnHideByOther(...)
   self.WBP_PuzzleFilterView:Hide()
   self:BindOnUpdatePuzzleItemHoverStatus(false)
@@ -115,6 +122,7 @@ function WBP_PuzzleView:OnHideByOther(...)
   self.RGTileViewPuzzleList:SetRGListItems({}, false, true)
   self.RGTileViewGemList:SetRGListItems({}, false, true)
 end
+
 function WBP_PuzzleView:UpdateViewByHeroId(HeroId)
   self:UpdateCurHeroInfo(HeroId)
   if self.HoveredPuzzleId then
@@ -123,15 +131,18 @@ function WBP_PuzzleView:UpdateViewByHeroId(HeroId)
   end
   self:PlayAnimation(self.Ani_switch)
 end
+
 function WBP_PuzzleView:GetCurHeroId(...)
   return self.CurHeroId
 end
+
 function WBP_PuzzleView:RefreshButtonNumInfo(...)
   local AllPackageInfo = PuzzleData:GetAllPuzzlePackageInfo()
   self.ViewListToggle_Puzzle:SetCurHaveNum(table.count(AllPackageInfo))
   local AllGemPackageInfo = GemData:GetAllGemPackageInfo()
   self.ViewListToggle_Gem:SetCurHaveNum(table.count(AllGemPackageInfo))
 end
+
 function WBP_PuzzleView:UpdateCurHeroInfo(InHeroId)
   self.CurHeroId = InHeroId
   self.ViewModel:SetCurHeroId(self:GetCurHeroId())
@@ -164,6 +175,7 @@ function WBP_PuzzleView:UpdateCurHeroInfo(InHeroId)
   end
   print("ywtao,PuzzleInfo:" .. PuzzleData:GetHeroPuzzleInfoByHeroId(InHeroId))
 end
+
 function WBP_PuzzleView:InitPuzzleboard(...)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBPuzzleHero, self:GetCurHeroId())
   if Result then
@@ -197,6 +209,7 @@ function WBP_PuzzleView:InitPuzzleboard(...)
   HideOtherItem(self.Canvaspanel_Puzzleboard, Index, true)
   self:UpdatePuzzleBoardEquipStatus()
 end
+
 function WBP_PuzzleView:UpdatePuzzleBoardEquipStatus()
   local EquipNum = 0
   for i, SingleSlotId in ipairs(self.CurBoardSlotList) do
@@ -210,10 +223,12 @@ function WBP_PuzzleView:UpdatePuzzleBoardEquipStatus()
   UpdateVisibility(self.Overlay_NotFull, not self.IsFullEquip)
   UpdateVisibility(self.Overlay_Full, self.IsFullEquip)
 end
+
 function WBP_PuzzleView:InitSortRuleComboBox(...)
   self.WBP_PuzzleSortRuleComboBox:Show(self)
   self.GemSortRuleComboBox:Show(self, true)
 end
+
 function WBP_PuzzleView:RefreshPuzzleItemList()
   self.RGTileViewPuzzleList:RecyleAllData()
   local DataObjList = {}
@@ -281,6 +296,7 @@ function WBP_PuzzleView:RefreshPuzzleItemList()
     }, 0.5, false)
   end
 end
+
 function WBP_PuzzleView:RefreshGemItemList(...)
   self.RGTileViewGemList:RecyleAllData()
   local DataObjList = {}
@@ -328,6 +344,7 @@ function WBP_PuzzleView:RefreshGemItemList(...)
   end
   self.RGTileViewGemList:SetRGListItems(DataObjList, false, true)
 end
+
 function WBP_PuzzleView:RefreshFilterIconStatus(...)
   local FilterSelectList
   if self.ViewListToggleState == EListType.Puzzle then
@@ -353,6 +370,7 @@ function WBP_PuzzleView:RefreshFilterIconStatus(...)
     self.RGStateController_Filter:ChangeStatus("NoFilter")
   end
 end
+
 function WBP_PuzzleView:RefreshEquipAttrAndInscriptionInfo(...)
   local EquipPuzzleIdList = PuzzleData:GetEquipPuzzleIdListByHeroId(self:GetCurHeroId())
   self.WorldUseNumList = {}
@@ -511,6 +529,7 @@ function WBP_PuzzleView:RefreshEquipAttrAndInscriptionInfo(...)
     SingleItem:RefreshUseNum(self.WorldUseNumList)
   end
 end
+
 function WBP_PuzzleView:InitWorldList(...)
   local WorldTable = LuaTableMgr.GetLuaTableByName(TableNames.TBPuzzleWorld)
   local WorldList = {}
@@ -530,6 +549,7 @@ function WBP_PuzzleView:InitWorldList(...)
   end
   HideOtherItem(self.WrapBox_World, Index, true)
 end
+
 function WBP_PuzzleView:BindOnPuzzleboardDrop(ChessboardCoordinate, ItemCoordinate, PuzzleId)
   self.IsDragEnter = false
   local CurHeroId = self:GetCurHeroId()
@@ -657,6 +677,7 @@ function WBP_PuzzleView:BindOnPuzzleboardDrop(ChessboardCoordinate, ItemCoordina
     end
   end
 end
+
 function WBP_PuzzleView:BindOnPuzzleboardDragEnter(IsEnter, ChessboardCoordinate, ItemCoordinate)
   self.IsDragEnter = IsEnter
   self.DragCenterChessboardCoordinate = ChessboardCoordinate
@@ -701,6 +722,7 @@ function WBP_PuzzleView:BindOnPuzzleboardDragEnter(IsEnter, ChessboardCoordinate
     EventSystem.Invoke(EventDef.Puzzle.RefreshPuzzleboardItemStatus)
   end
 end
+
 function WBP_PuzzleView:BindOnPuzzleboardDragCancelled(PuzzleId, IsNeedUnEquip)
   print("WBP_PuzzleView:BindOnPuzzleboardDragCancelled")
   self.IsDragEnter = false
@@ -720,13 +742,16 @@ function WBP_PuzzleView:BindOnPuzzleboardDragCancelled(PuzzleId, IsNeedUnEquip)
     PuzzleHandler:RequestUnEquipPuzzleToServer(PuzzleId, self:GetCurHeroId())
   end
 end
+
 function WBP_PuzzleView:BindOnRotatePuzzleDragCoordinate(RotateCoordinate)
   if self.IsDragEnter then
     EventSystem.Invoke(EventDef.Puzzle.OnPuzzleboardDragEnter, true, self.DragCenterChessboardCoordinate, RotateCoordinate)
   end
 end
+
 function WBP_PuzzleView:BindOnItemSelectionChanged(Item, IsSelected)
 end
+
 function WBP_PuzzleView:BindOnFilterButtonClicked()
   if self.WBP_PuzzleFilterView:IsVisible() then
     self.WBP_PuzzleFilterView:Hide()
@@ -736,21 +761,26 @@ function WBP_PuzzleView:BindOnFilterButtonClicked()
     self.WBP_PuzzleFilterView:Show(self.ViewModel, IsGem)
   end
 end
+
 function WBP_PuzzleView:BindOnInfoToggleGroupCheckStateChanged(SelectIndex)
   UpdateVisibility(self.Overlay_AttrInfo, SelectIndex == EInfoToggle.Attr)
   UpdateVisibility(self.Overlay_InscriptionInfo, SelectIndex == EInfoToggle.Inscription)
 end
+
 function WBP_PuzzleView:BindOnExpandInfoButtonClicked(...)
   self:SetIsExpandInfo(not self.IsExpandInfo)
 end
+
 function WBP_PuzzleView:BindOnObtainButtonClicked(...)
   UIMgr:Hide(ViewID.UI_DevelopMain, true)
   UIMgr:Show(ViewID.UI_MainModeSelection, true)
 end
+
 function WBP_PuzzleView:SetIsExpandInfo(IsExpand)
   self.IsExpandInfo = IsExpand
   UpdateVisibility(self.CanvasPanel_Info, self.IsExpandInfo)
 end
+
 function WBP_PuzzleView:BindOnUpdatePuzzleItemHoverStatus(IsHover, PuzzleId, IsPuzzleBoard, Position, HoverItem)
   if IsHover then
     self.HoveredPuzzleId = PuzzleId
@@ -767,6 +797,7 @@ function WBP_PuzzleView:BindOnUpdatePuzzleItemHoverStatus(IsHover, PuzzleId, IsP
     end
   end
 end
+
 function WBP_PuzzleView:BindOnUpdateGemItemHoverStatus(IsHover, GemId, IsPuzzleBoard, HoveredItem)
   if IsHover then
     self.HoverGemId = GemId
@@ -783,6 +814,7 @@ function WBP_PuzzleView:BindOnUpdateGemItemHoverStatus(IsHover, GemId, IsPuzzleB
     end
   end
 end
+
 function WBP_PuzzleView:BindOnUpdatePuzzlePackageInfo(PuzzleIdList)
   if self.HoveredPuzzleId and (not PuzzleIdList or table.Contain(PuzzleIdList, self.HoveredPuzzleId)) then
     local HoverWidget = self.ViewModel:GetPuzzleHoverWidget(self.HoveredPuzzleId)
@@ -795,6 +827,7 @@ function WBP_PuzzleView:BindOnUpdatePuzzlePackageInfo(PuzzleIdList)
     self:UpdatePuzzleBoardEquipStatus()
   end
 end
+
 function WBP_PuzzleView:BindOnUpdateGemPackageInfo(GemId)
   if self.HoverGemId and (not GemId or self.HoverGemId == GemId) then
     local HoverWidget = self.ViewModel:GetGemHoverWidget(self.HoverGemId)
@@ -807,9 +840,11 @@ function WBP_PuzzleView:BindOnUpdateGemPackageInfo(GemId)
     self:UpdatePuzzleBoardEquipStatus()
   end
 end
+
 function WBP_PuzzleView:BindOnGemDecomposeSuccess(...)
   self:RefreshGemItemList()
 end
+
 function WBP_PuzzleView:BindOnEquipPuzzleSuccess(PuzzleId)
   self:RefreshEquipAttrAndInscriptionInfo()
   local LastIsFullEquipBoard = self.IsFullEquip
@@ -818,12 +853,15 @@ function WBP_PuzzleView:BindOnEquipPuzzleSuccess(PuzzleId)
     self:PlayAnimation(self.Ani_full)
   end
 end
+
 function WBP_PuzzleView:BindOnGemEquipSuccess(...)
   self:RefreshEquipAttrAndInscriptionInfo()
 end
+
 function WBP_PuzzleView:BindOnGemUnEquipSuccess(...)
   self:RefreshEquipAttrAndInscriptionInfo()
 end
+
 function WBP_PuzzleView:BindOnUnEquipPuzzleSuccess(PuzzleId)
   self:RefreshEquipAttrAndInscriptionInfo()
   local LastIsFullEquipBoard = self.IsFullEquip
@@ -832,6 +870,7 @@ function WBP_PuzzleView:BindOnUnEquipPuzzleSuccess(PuzzleId)
     self:PlayAnimation(self.Ani_NotFull)
   end
 end
+
 function WBP_PuzzleView:OnRightMouseButtonDown(...)
   if not self.HoverGemId and self.HoveredPuzzleId then
     local PackageInfo = PuzzleData:GetPuzzlePackageInfo(self.HoveredPuzzleId)
@@ -858,6 +897,7 @@ function WBP_PuzzleView:OnRightMouseButtonDown(...)
     end
   end
 end
+
 function WBP_PuzzleView:BindOnDetailListCheckStateChanged(IsChecked)
   self.ViewModel:SetIsShowPuzzleDetailList(IsChecked)
   local TargetEntrySize
@@ -871,6 +911,7 @@ function WBP_PuzzleView:BindOnDetailListCheckStateChanged(IsChecked)
   self.RGTileViewPuzzleList:RequestRefresh()
   EventSystem.Invoke(EventDef.Puzzle.UpdatePuzzleListStyle)
 end
+
 function WBP_PuzzleView:BindOnSortRuleSelectionChanged(Id, IsGem)
   self.ViewModel:SetPuzzleSortRule(Id, IsGem)
   if self.ViewListToggleState == EListType.Puzzle then
@@ -881,6 +922,7 @@ function WBP_PuzzleView:BindOnSortRuleSelectionChanged(Id, IsGem)
     self:RefreshGemItemList()
   end
 end
+
 function WBP_PuzzleView:BindOnUpgradeButtonClicked(...)
   if self.ViewListToggleState == EListType.Puzzle then
     UIMgr:Show(ViewID.UI_PuzzleDevelopMain, true, nil)
@@ -888,6 +930,7 @@ function WBP_PuzzleView:BindOnUpgradeButtonClicked(...)
     UIMgr:Show(ViewID.UI_PuzzleDevelopMain, true, nil, EPuzzleGemDevelopId.GemUpgrade)
   end
 end
+
 function WBP_PuzzleView:BindOnDecomposeButtonClicked(...)
   if self.ViewListToggleState == EListType.Puzzle then
     UIMgr:Show(ViewID.UI_PuzzleDevelopMain, true, nil, EPuzzleGemDevelopId.PuzzleDecompose)
@@ -895,6 +938,7 @@ function WBP_PuzzleView:BindOnDecomposeButtonClicked(...)
     UIMgr:Show(ViewID.UI_PuzzleDevelopMain, true, nil, EPuzzleGemDevelopId.GemDecompose)
   end
 end
+
 function WBP_PuzzleView:BindOnRGViewListToggleStateChanged(State)
   self.ViewListToggleState = State
   UpdateVisibility(self.Overlay_PuzzleList, State == EListType.Puzzle)
@@ -920,6 +964,7 @@ function WBP_PuzzleView:BindOnRGViewListToggleStateChanged(State)
   end
   self:RefreshFilterIconStatus()
 end
+
 function WBP_PuzzleView:OnMouseButtonDown(MyGeometry, MouseEvent)
   if self.WBP_PuzzleFilterView:IsVisible() then
     self.WBP_PuzzleFilterView:Hide()
@@ -932,6 +977,7 @@ function WBP_PuzzleView:OnMouseButtonDown(MyGeometry, MouseEvent)
   end
   return UE.UWidgetBlueprintLibrary.Unhandled()
 end
+
 function WBP_PuzzleView:OnMouseButtonUp(MyGeometry, MouseEvent)
   if not UE.UWidgetBlueprintLibrary.IsDragDropping() then
     return UE.UWidgetBlueprintLibrary.Unhandled()
@@ -950,6 +996,7 @@ function WBP_PuzzleView:OnMouseButtonUp(MyGeometry, MouseEvent)
   end
   return UE.UWidgetBlueprintLibrary.Unhandled()
 end
+
 function WBP_PuzzleView:OnKeyDown(MyGeometry, InKeyEvent)
   if not UE.UWidgetBlueprintLibrary.IsDragDropping() then
     return UE.UWidgetBlueprintLibrary.Unhandled()
@@ -964,6 +1011,7 @@ function WBP_PuzzleView:OnKeyDown(MyGeometry, InKeyEvent)
   UE.UWidgetBlueprintLibrary.CancelDragDrop()
   return UE.UWidgetBlueprintLibrary.Unhandled()
 end
+
 function WBP_PuzzleView:OnPreHide(...)
   LogicRole.ShowOrHideRoleMainHero(false)
   UE.UWidgetBlueprintLibrary.CancelDragDrop()
@@ -1000,11 +1048,14 @@ function WBP_PuzzleView:OnPreHide(...)
   self.RGTileViewPuzzleList:SetRGListItems({}, false, true)
   self.RGTileViewGemList:SetRGListItems({}, false, true)
 end
+
 function WBP_PuzzleView:OnHide()
   self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
   self:StopAllAnimations()
 end
+
 function WBP_PuzzleView:Destruct()
   self:OnPreHide()
 end
+
 return WBP_PuzzleView

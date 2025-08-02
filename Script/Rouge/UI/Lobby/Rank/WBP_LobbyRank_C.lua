@@ -1,6 +1,7 @@
 local rapidjson = require("rapidjson")
 local RankData = require("Modules.Rank.RankData")
 local WBP_LobbyRank_C = UnLua.Class()
+
 function WBP_LobbyRank_C:Construct()
   self.Button_Test.OnClicked:Add(self, WBP_LobbyRank_C.OnClicked_Test)
   self.Button_Debug.OnClicked:Add(self, WBP_LobbyRank_C.OnClicked_Debug)
@@ -12,6 +13,7 @@ function WBP_LobbyRank_C:Construct()
   self:BindOnLobbyDebugUI(true)
   EventSystem.AddListener(self, EventDef.LobbyRankPanel.OnModeChange, WBP_LobbyRank_C.OnModeChange)
 end
+
 function WBP_LobbyRank_C:Destruct()
   self.Button_Test.OnClicked:Remove(self, WBP_LobbyRank_C.OnClicked_Test)
   self.Button_Debug.OnClicked:Remove(self, WBP_LobbyRank_C.OnClicked_Debug)
@@ -22,6 +24,7 @@ function WBP_LobbyRank_C:Destruct()
   EventSystem.RemoveListener(EventDef.LobbyRankPanel.OnModeChange, WBP_LobbyRank_C.OnModeChange, self)
   self.WBP_PlayerRankInfo.ButtonClicked:Remove(self, self.OnButtonClicked)
 end
+
 function WBP_LobbyRank_C:UpdateRankPagesInfo(RankList)
   self.ScrollBox_RankList:ClearChildren()
   if table.count(RankList) <= 0 then
@@ -48,6 +51,7 @@ function WBP_LobbyRank_C:UpdateRankPagesInfo(RankList)
   self:UpdateRankList(self.CurrentPageNumber)
   self:SetLocalPlayerRankInfo()
 end
+
 function WBP_LobbyRank_C:UpdateRankList(PageNumber)
   if PageNumber > self.FinalPageNumber or PageNumber < 1 then
     return
@@ -71,6 +75,7 @@ function WBP_LobbyRank_C:UpdateRankList(PageNumber)
     end
   end
 end
+
 function WBP_LobbyRank_C:RequestSetScoreAndData()
   local RoleList = {}
   local SingleRole = {
@@ -94,6 +99,7 @@ function WBP_LobbyRank_C:RequestSetScoreAndData()
     self.OnSetScoreAndDataFail
   })
 end
+
 function WBP_LobbyRank_C:RequestRankList(BoardName, Start, Stop)
   local boardName = "?boardName=" .. BoardName
   local start = "&&start=" .. Start
@@ -108,6 +114,7 @@ function WBP_LobbyRank_C:RequestRankList(BoardName, Start, Stop)
   })
   print("WBP_LobbyRank_C", path)
 end
+
 function WBP_LobbyRank_C:RequestTeamInfo(uniqueID)
   if nil == uniqueID then
     return
@@ -130,11 +137,13 @@ function WBP_LobbyRank_C:RequestTeamInfo(uniqueID)
     self.OnRequestTeamInfoFail
   })
 end
+
 function WBP_LobbyRank_C:RequestRankListBySettings(BoardName)
   local settings = UE.URGLobbySettings.GetSettings()
   local RankMaxNumber = tostring(settings.RankMaxNumber - 1)
   self:RequestRankList(BoardName, "0", RankMaxNumber)
 end
+
 function WBP_LobbyRank_C:BindOnLobbyDebugUI(Bind)
   local setting = UE.URGLobbySettings.GetSettings()
   if setting then
@@ -145,6 +154,7 @@ function WBP_LobbyRank_C:BindOnLobbyDebugUI(Bind)
     end
   end
 end
+
 function WBP_LobbyRank_C:OnRequestRankListSuccess(JsonResponse)
   print("OnRequestRankListSuccess", JsonResponse.Content)
   self.RankListInfo = rapidjson.decode(JsonResponse.Content)
@@ -152,9 +162,11 @@ function WBP_LobbyRank_C:OnRequestRankListSuccess(JsonResponse)
   self:UpdateRankPagesInfo(self.ModeOneRankList)
   self.WBP_RankModeItemBox:UpdateRankModeItemBox()
 end
+
 function WBP_LobbyRank_C:OnRequestRankListFail(JsonResponse)
   print("OnRequestRankListFail", JsonResponse.ErrorMessage)
 end
+
 function WBP_LobbyRank_C:OnRequestTeamInfoSuccess(JsonResponse)
   local Response
   if type(JsonResponse) == "string" then
@@ -174,16 +186,20 @@ function WBP_LobbyRank_C:OnRequestTeamInfoSuccess(JsonResponse)
     self.CacheTeamInfo[self.RequestUniqueID] = JsonResponse.Content
   end
 end
+
 function WBP_LobbyRank_C:OnRequestTeamInfoFail(JsonResponse)
   print("OnRequestTeamInfoFail", JsonResponse.ErrorMessage)
 end
+
 function WBP_LobbyRank_C:OnSetScoreAndDataSuccess(JsonResponse)
   print("OnSetScoreAndDataSuccess", JsonResponse.Content)
   self:RequestRankListBySettings(EnumRankMode.season.cyber)
 end
+
 function WBP_LobbyRank_C:OnSetScoreAndDataFail(JsonResponse)
   print("OnSetScoreAndDataFail", JsonResponse.ErrorMessage)
 end
+
 function WBP_LobbyRank_C:OnClicked_Test()
   if self.Overlay_Debug:IsVisible() then
     self.Overlay_Debug:SetVisibility(UE.ESlateVisibility.Hidden)
@@ -191,16 +207,20 @@ function WBP_LobbyRank_C:OnClicked_Test()
     self.Overlay_Debug:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function WBP_LobbyRank_C:OnClicked_Debug()
   self.Overlay_Debug:SetVisibility(UE.ESlateVisibility.Hidden)
   self:RequestSetScoreAndData()
 end
+
 function WBP_LobbyRank_C:OnClicked_Left()
   self:UpdateRankList(self.CurrentPageNumber - 1)
 end
+
 function WBP_LobbyRank_C:OnClicked_Right()
   self:UpdateRankList(self.CurrentPageNumber + 1)
 end
+
 function WBP_LobbyRank_C:OnButtonClicked(nickname, level, uniqueID)
   self.WBP_PlayerRankInfo:SetClickedBack(false)
   for key, value in ipairs(self.widgetTable) do
@@ -213,6 +233,7 @@ function WBP_LobbyRank_C:OnButtonClicked(nickname, level, uniqueID)
   self.TextBlock_PlayerName:SetText(nickname)
   self.TextBlock_Level:SetText(level)
 end
+
 function WBP_LobbyRank_C:OnLobbyDebugUI()
   local setting = UE.URGLobbySettings.GetSettings()
   if setting then
@@ -223,6 +244,7 @@ function WBP_LobbyRank_C:OnLobbyDebugUI()
     end
   end
 end
+
 function WBP_LobbyRank_C:OnModeChange(Index)
   self.CurrentPageNumber = 1
   self.ModeIndex = Index
@@ -243,6 +265,7 @@ function WBP_LobbyRank_C:OnModeChange(Index)
     self.CurMode = EnumRankMode.season.star
   end
 end
+
 function WBP_LobbyRank_C:SetLocalPlayerRankInfo()
   local PlayerRankInfo = {}
   PlayerRankInfo.roleId = DataMgr.GetUserId()
@@ -266,6 +289,7 @@ function WBP_LobbyRank_C:SetLocalPlayerRankInfo()
     end
   end
 end
+
 function WBP_LobbyRank_C:FilterMode()
   self.ModeOneRankList = {}
   self.ModeTwoRankList = {}
@@ -279,4 +303,5 @@ function WBP_LobbyRank_C:FilterMode()
     end
   end
 end
+
 return WBP_LobbyRank_C

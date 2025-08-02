@@ -319,7 +319,7 @@ local hero_tbheromonster = {
     TagIcon = "/Game/Rouge/UI/Atlas_DT/RoleMain/Frames/Icon_zhiye06_01.Icon_zhiye06_01",
     InitialRoleMediaId = 0,
     LinkId = "9999",
-    ParamList = {9999}
+    ParamList = {1}
   },
   [1080] = {
     ID = 1080,

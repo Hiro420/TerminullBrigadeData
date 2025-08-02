@@ -1,8 +1,10 @@
 local WBP_Shop_ItemList_C = UnLua.Class()
 WBP_Shop_ItemList_C.RowTable = {}
+
 function WBP_Shop_ItemList_C:Construct()
   self.ItemWidgets = {}
 end
+
 function WBP_Shop_ItemList_C:RefreshItemList(ItemArray)
   self.SelRow = nil
   self.SelLine = nil
@@ -57,6 +59,7 @@ function WBP_Shop_ItemList_C:RefreshItemList(ItemArray)
     end
   end
 end
+
 function WBP_Shop_ItemList_C:LoadChildWidget(ItemInfo)
   local WidgetPath = "/Game/Rouge/UI/Shop/Item/WBP_Shop_Item.WBP_Shop_Item_C"
   local Widget = UE.UWidgetBlueprintLibrary.Create(self, UE.UClass.Load(WidgetPath))
@@ -112,6 +115,7 @@ function WBP_Shop_ItemList_C:LoadChildWidget(ItemInfo)
   Widget.Slot:SetColumn(Colume)
   return Widget
 end
+
 function WBP_Shop_ItemList_C:DoCustomNavigation(Navigation)
   local SelLine, SelRow = 1, 1
   if not self.SelLine then
@@ -162,6 +166,7 @@ function WBP_Shop_ItemList_C:DoCustomNavigation(Navigation)
     return self.RowTable[self.SelRow][self.SelLine].Btn_Main
   end
 end
+
 function WBP_Shop_ItemList_C:SetListColumns()
   self.RecoveryPropsNum = 0
   self.PowerUpNum = 0
@@ -182,6 +187,7 @@ function WBP_Shop_ItemList_C:SetListColumns()
     self.Columns = 3
   end
 end
+
 function WBP_Shop_ItemList_C:GamePadUpdateFocus()
   if not self.SelRow or not self.SelLine then
     return
@@ -190,4 +196,5 @@ function WBP_Shop_ItemList_C:GamePadUpdateFocus()
     self.RowTable[self.SelRow][self.SelLine].Btn_Main:SetKeyboardFocus()
   end
 end
+
 return WBP_Shop_ItemList_C

@@ -24,6 +24,7 @@ local ShowAwardSort = function(A, B)
     return resourceDataA.ID > resourceDataB.ID
   end
 end
+
 function BattlePassUnLockView:BindClickHandler()
   self.WBP_InteractTipWidgetEsc:BindInteractAndClickEvent(self, self.EscView)
   self.Btn_UnlockPremium.OnMainButtonClicked:Add(self, self.Btn_UnlockPremium_OnClicked)
@@ -31,6 +32,7 @@ function BattlePassUnLockView:BindClickHandler()
   EventSystem.AddListenerNew(EventDef.BattlePass.UnlockUltra, self, self.UnlockBattlePass)
   EventSystem.AddListenerNew(EventDef.BattlePass.GetBattlePassData, self, self.BindOnUpdateBattlePass)
 end
+
 function BattlePassUnLockView:UnBindClickHandler()
   self.WBP_InteractTipWidgetEsc:UnBindInteractAndClickEvent(self, self.EscView)
   self.Btn_UnlockPremium.OnMainButtonClicked:Remove(self, self.Btn_UnlockPremium_OnClicked)
@@ -38,19 +40,24 @@ function BattlePassUnLockView:UnBindClickHandler()
   EventSystem.RemoveListenerNew(EventDef.BattlePass.UnlockUltra, self, self.UnlockBattlePass)
   EventSystem.RemoveListenerNew(EventDef.BattlePass.GetBattlePassData, self, self.BindOnUpdateBattlePass)
 end
+
 function BattlePassUnLockView:Construct()
   self:BindClickHandler()
 end
+
 function BattlePassUnLockView:Destruct()
   self:UnBindClickHandler()
 end
+
 function BattlePassUnLockView:OnHide()
   UpdateVisibility(self, false)
   UIConsoleUtil.UpdateConsoleStoreUIVisible(false)
 end
+
 function BattlePassUnLockView:OnPreHide()
   UpdateVisibility(self, false)
 end
+
 function BattlePassUnLockView:OnShow()
   self:PlayAnimation(self.Ani_in)
   if not IsListeningForInputAction(self, EscName) then
@@ -61,6 +68,7 @@ function BattlePassUnLockView:OnShow()
   end
   UIConsoleUtil.UpdateConsoleStoreUIVisible(true)
 end
+
 function BattlePassUnLockView:InitInfo(BattlePassID, State)
   self.BattlePassID = BattlePassID
   self.ActivateState = State
@@ -79,6 +87,7 @@ function BattlePassUnLockView:InitInfo(BattlePassID, State)
   end
   self:UpdateBtnInfo(self.ActivateState)
 end
+
 function BattlePassUnLockView:InitAwardShow(BattlePassID)
   local rowInfos = LuaTableMgr.GetLuaTableByName(TableNames.TBBattlePassReward)
   if rowInfos then
@@ -117,6 +126,7 @@ function BattlePassUnLockView:InitAwardShow(BattlePassID)
     HideOtherItem(self.SclBox_PremiumAwards_2, #grandPrize + 1)
   end
 end
+
 function BattlePassUnLockView:InitUltraAward(UltraAwards)
   local awardList = {}
   table.sort(UltraAwards, ShowAwardSort)
@@ -128,6 +138,7 @@ function BattlePassUnLockView:InitUltraAward(UltraAwards)
   end
   HideOtherItem(self.SclBox_UltraAwards, #awardList + 1)
 end
+
 function BattlePassUnLockView:UpdateBtnInfo(ActivateState)
   if ActivateState == UnlockType.Normal then
     self:ChangeBtnState(self.Btn_UnlockPremium, 0)
@@ -154,33 +165,39 @@ function BattlePassUnLockView:UpdateBtnInfo(ActivateState)
   self.Txt_OriginalPrice_Ultra:SetText(OriginalBattlePassUltraPrice)
   UpdateVisibility(self.Txt_OriginalPrice_Ultra, CurBattlePassUltraPrice ~= OriginalBattlePassUltraPrice)
 end
+
 function BattlePassUnLockView:EscView()
   UIMgr:Hide(ViewID.UI_BattlePassUnLockView)
   local BPMainView = UIMgr:Show(ViewID.UI_BattlePassMainView, true)
   BPMainView:InitSubView(self.BattlePassID)
   StopListeningForInputAction(self, EscName, UE.EInputEvent.IE_Pressed)
 end
+
 function BattlePassUnLockView:Btn_UnlockPremium_OnClicked()
   local BattlePassProductId = BattlePassData:GetBattlePassProductIdById(self.BattlePassID, UnlockType.Premium)
   print("BattlePassUnLockView:BuyMisdasProduct", BattlePassProductId, 1)
   TopupHandler:RequestBuyMisdasProduct(BattlePassProductId, 1)
 end
+
 function BattlePassUnLockView:Btn_UnlockUltra_OnClicked()
   local BattlePassProductId = BattlePassData:GetBattlePassProductIdById(self.BattlePassID, UnlockType.Ultra)
   print("BattlePassUnLockView:BuyMisdasProduct", BattlePassProductId, 1)
   TopupHandler:RequestBuyMisdasProduct(BattlePassProductId, 1)
 end
+
 function BattlePassUnLockView:UnlockBattlePass(BattlePassID, UnLockType)
   UIMgr:Hide(ViewID.UI_BattlePassUnLockView)
   local BPMainView = UIMgr:Show(ViewID.UI_BattlePassMainView, true)
   BPMainView:InitSubView(BattlePassID)
 end
+
 function BattlePassUnLockView:BindOnUpdateBattlePass(BattlePassInfo, BattlePassID)
   local CurbattlePassState = BattlePassInfo.battlePassActivateState
   if self.BattlePassID == BattlePassID and CurbattlePassState ~= self.ActivateState then
     self:InitInfo(self.BattlePassID, CurbattlePassState)
   end
 end
+
 function BattlePassUnLockView:ChangeBtnState(Btn, State)
   if 0 == State then
     Btn:SetIsEnabled(true)
@@ -188,4 +205,5 @@ function BattlePassUnLockView:ChangeBtnState(Btn, State)
     Btn:SetIsEnabled(false)
   end
 end
+
 return BattlePassUnLockView

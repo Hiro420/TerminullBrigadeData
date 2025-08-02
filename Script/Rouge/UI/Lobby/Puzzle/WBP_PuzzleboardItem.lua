@@ -2,6 +2,7 @@ local PuzzleData = require("Modules.Puzzle.PuzzleData")
 local GemHandler = require("Protocol.Gem.GemHandler")
 local GemData = require("Modules.Gem.GemData")
 local WBP_PuzzleboardItem = UnLua.Class()
+
 function WBP_PuzzleboardItem:ShowBySpecifiedData(CoordinateQ, CoordinateR, SlotId, Status, PuzzlePackageInfo, PuzzleDetailInfo, AllSlotEquipList, GemPackageInfoList)
   UpdateVisibility(self, true)
   self.CoordinateQ = CoordinateQ
@@ -18,6 +19,7 @@ function WBP_PuzzleboardItem:ShowBySpecifiedData(CoordinateQ, CoordinateR, SlotI
   EventSystem.AddListenerNew(EventDef.Gem.OnUpdateGemItemHoverStatus, self, self.BindOnUpdateGemItemHoverStatus)
   self:BindOnRefreshPuzzleboardItemStatus()
 end
+
 function WBP_PuzzleboardItem:Show(CoordinateQ, CoordinateR, SlotId)
   UpdateVisibility(self, true)
   self.CoordinateQ = CoordinateQ
@@ -46,6 +48,7 @@ function WBP_PuzzleboardItem:Show(CoordinateQ, CoordinateR, SlotId)
   self:BindOnRefreshPuzzleboardItemStatus()
   self.WBP_SingleHexItem:ChangeGemItemCanDragStatus(true)
 end
+
 function WBP_PuzzleboardItem:Hide(...)
   UpdateVisibility(self, false)
   self.WBP_SingleHexItem:StopAllAnimations()
@@ -61,6 +64,7 @@ function WBP_PuzzleboardItem:Hide(...)
   EventSystem.RemoveListenerNew(EventDef.Gem.OnGemDragCancel, self, self.BindOnGemDragCancel)
   EventSystem.RemoveListenerNew(EventDef.Puzzle.OnWashPuzzleSlotAmountSuccess, self, self.BindOnWashPuzzleSlotAmountSuccess)
 end
+
 function WBP_PuzzleboardItem:BindOnRefreshPuzzleboardItemStatus()
   UpdateVisibility(self.WBP_SingleHexItem, false)
   local Status = self.SlotStatus
@@ -125,9 +129,11 @@ function WBP_PuzzleboardItem:BindOnRefreshPuzzleboardItemStatus()
     self:RefreshGemStatus()
   end
 end
+
 function WBP_PuzzleboardItem:BindOnRefreshGemStatus()
   self:RefreshGemStatus()
 end
+
 function WBP_PuzzleboardItem:BindOnUpdateGemItemHoverStatus(IsHover, GemId)
   self.IsHoverGem = IsHover
   if not self.IsHoverGem and self.IsHover then
@@ -141,14 +147,17 @@ function WBP_PuzzleboardItem:BindOnUpdateGemItemHoverStatus(IsHover, GemId)
     self:ShowOrHideHoverTip(false)
   end
 end
+
 function WBP_PuzzleboardItem:BindOnGemDrag(GemId)
   if self.CurEquipGemId and self.CurEquipGemId == "0" then
     self.WBP_SingleHexItem:ShowOrHideGemHoverAnim(true)
   end
 end
+
 function WBP_PuzzleboardItem:BindOnGemDragCancel(...)
   self.WBP_SingleHexItem:ShowOrHideGemHoverAnim(false)
 end
+
 function WBP_PuzzleboardItem:RefreshGemStatus()
   self.WBP_SingleHexItem:RefreshGemItemStatus(self.CurSlotIndex)
   local RealStatus = self.SlotStatus
@@ -169,6 +178,7 @@ function WBP_PuzzleboardItem:RefreshGemStatus()
   local TargetGemId = GemSlotInfo[tostring(self.CurSlotIndex)] or nil
   self.CurEquipGemId = TargetGemId
 end
+
 function WBP_PuzzleboardItem:GetPuzzleEquipSlotList(PuzzleId)
   if self.AllSlotEquipList then
     return self.AllSlotEquipList[PuzzleId]
@@ -176,6 +186,7 @@ function WBP_PuzzleboardItem:GetPuzzleEquipSlotList(PuzzleId)
     return PuzzleData:GetSlotListByPuzzleId(PuzzleId)
   end
 end
+
 function WBP_PuzzleboardItem:BindOnUpdatePuzzleItemHoverStatus(IsHover, PuzzleId, IsPuzzleBoard)
   if not IsPuzzleBoard then
     return
@@ -195,15 +206,18 @@ function WBP_PuzzleboardItem:BindOnUpdatePuzzleItemHoverStatus(IsHover, PuzzleId
   end
   self.WBP_SingleHexItem:UpdateSelectedVis(IsHover)
 end
+
 function WBP_PuzzleboardItem:BindOnEquipPuzzleSuccess(PuzzleId)
   local CurEquipPuzzleId = PuzzleData:GetSlotEquipPuzzleId(self.SlotId)
   if CurEquipPuzzleId == PuzzleId then
     self.WBP_SingleHexItem:PlayEquipAnim()
   end
 end
+
 function WBP_PuzzleboardItem:BindOnUpdatePuzzleSlotUnlockInfo(...)
   self:BindOnRefreshPuzzleboardItemStatus()
 end
+
 function WBP_PuzzleboardItem:BindOnWashPuzzleSlotAmountSuccess(PuzzleIdList)
   local EquipPuzzleId = self.SlotStatus
   EquipPuzzleId = EquipPuzzleId or PuzzleData:GetSlotEquipPuzzleId(self.SlotId)
@@ -212,6 +226,7 @@ function WBP_PuzzleboardItem:BindOnWashPuzzleSlotAmountSuccess(PuzzleIdList)
   end
   self:RefreshGemStatus()
 end
+
 function WBP_PuzzleboardItem:OnDragEnter(MyGeometry, PointerEvent, Operation)
   if Operation.IsGem then
     if not self.CurEquipGemId then
@@ -226,6 +241,7 @@ function WBP_PuzzleboardItem:OnDragEnter(MyGeometry, PointerEvent, Operation)
     }, Operation.DragCoordinate)
   end
 end
+
 function WBP_PuzzleboardItem:OnDragLeave(PointerEvent, Operation)
   if Operation.IsGem then
   else
@@ -235,6 +251,7 @@ function WBP_PuzzleboardItem:OnDragLeave(PointerEvent, Operation)
     }, Operation.DragCoordinate)
   end
 end
+
 function WBP_PuzzleboardItem:OnDrop(MyGeometry, PointerEvent, Operation)
   if Operation.IsGem then
     if self.CurEquipGemId then
@@ -310,6 +327,7 @@ function WBP_PuzzleboardItem:OnDrop(MyGeometry, PointerEvent, Operation)
   end
   return true
 end
+
 function WBP_PuzzleboardItem:OnDragDetected(MyGeometry, PointerEvent)
   if not self.CanDrag then
     return
@@ -344,6 +362,7 @@ function WBP_PuzzleboardItem:OnDragDetected(MyGeometry, PointerEvent)
   EventSystem.Invoke(EventDef.Puzzle.OnUpdatePuzzleItemHoverStatus, false, nil, true)
   return DragOperation
 end
+
 function WBP_PuzzleboardItem:OnDragCancelled(MyGeometry, PointerEvent)
   print("WBP_PuzzleboardItem:OnDragCancelled")
   local RealStatus = self.SlotStatus
@@ -354,6 +373,7 @@ function WBP_PuzzleboardItem:OnDragCancelled(MyGeometry, PointerEvent)
   end
   EventSystem.Invoke(EventDef.Puzzle.OnPuzzleboardDragCancelled, RealStatus, IsNeedUnEquip)
 end
+
 function WBP_PuzzleboardItem:OnMouseEnter(...)
   self.IsHover = true
   local Status = self.SlotStatus
@@ -368,6 +388,7 @@ function WBP_PuzzleboardItem:OnMouseEnter(...)
   PlaySound2DByName(self.HoverSoundName, "WBP_PuzzleboardItem:OnMouseEnter")
   EventSystem.Invoke(EventDef.Puzzle.OnUpdatePuzzleItemHoverStatus, true, Status, true)
 end
+
 function WBP_PuzzleboardItem:ShowOrHideHoverTip(IsShow)
   if IsShow then
     local PuzzleViewModel = UIModelMgr:Get("PuzzleViewModel")
@@ -384,6 +405,7 @@ function WBP_PuzzleboardItem:ShowOrHideHoverTip(IsShow)
     self.HoverWidget:Hide()
   end
 end
+
 function WBP_PuzzleboardItem:OnMouseLeave()
   self.IsHover = false
   local Status = self.SlotStatus
@@ -394,6 +416,7 @@ function WBP_PuzzleboardItem:OnMouseLeave()
   self:ShowOrHideHoverTip(false)
   EventSystem.Invoke(EventDef.Puzzle.OnUpdatePuzzleItemHoverStatus, false, Status, true)
 end
+
 function WBP_PuzzleboardItem:GetToolTipWidget(...)
   local PuzzleViewModel = UIModelMgr:Get("PuzzleViewModel")
   local Status = self.SlotStatus
@@ -406,6 +429,7 @@ function WBP_PuzzleboardItem:GetToolTipWidget(...)
   end
   return nil
 end
+
 function WBP_PuzzleboardItem:BindOnGemEquipSuccess(PuzzleId, SlotId)
   local RealStatus = self.SlotStatus
   RealStatus = RealStatus or PuzzleData:GetSlotEquipPuzzleId(self.SlotId)
@@ -413,11 +437,14 @@ function WBP_PuzzleboardItem:BindOnGemEquipSuccess(PuzzleId, SlotId)
     self.WBP_SingleHexItem:PlayEquipGemAnim()
   end
 end
+
 function WBP_PuzzleboardItem:BindOnGemUnEquipSuccess(PuzzleId, SlotId)
 end
+
 function WBP_PuzzleboardItem:Destruct(...)
   self:Hide()
   EventSystem.RemoveListenerNew(EventDef.Puzzle.RefreshPuzzleboardItemStatus, self, self.BindOnRefreshPuzzleboardItemStatus)
   EventSystem.RemoveListenerNew(EventDef.Puzzle.OnUpdatePuzzleItemHoverStatus, self, self.BindOnUpdatePuzzleItemHoverStatus)
 end
+
 return WBP_PuzzleboardItem

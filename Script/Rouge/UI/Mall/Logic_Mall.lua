@@ -21,6 +21,7 @@ local EnumSalesStatus = {
   LimitedTimeOnSale = 6
 }
 _G.EnumSalesStatus = _G.EnumSalesStatus or EnumSalesStatus
+
 function Logic_Mall.JumpToMall(GoodId, Callback)
   local GoodInfo = LuaTableMgr.GetLuaTableByName(TableNames.TBMall)[GoodId]
   if nil == GoodInfo then
@@ -39,6 +40,7 @@ function Logic_Mall.JumpToMall(GoodId, Callback)
     end
   end
 end
+
 function Logic_Mall.PushRechargeInfo(bForce)
   local SystemUnlockModule = ModuleManager:Get("SystemUnlockModule")
   if SystemUnlockModule and not SystemUnlockModule:CheckIsSystemUnlock(1) then
@@ -61,12 +63,14 @@ function Logic_Mall.PushRechargeInfo(bForce)
     end
   })
 end
+
 function Logic_Mall.GetRechargeInfo()
   if Logic_Mall.RechargeInfo ~= nil then
     return Logic_Mall.RechargeInfo
   end
   return nil
 end
+
 function Logic_Mall.PushExteriorInfo(bForce, ShelfIndex)
   if (Logic_Mall.ExteriorInfo[ShelfIndex] == nil or bForce) and nil ~= ShelfIndex then
     Logic_Mall.PushSingleExteriorInfo(bForce, ShelfIndex)
@@ -95,6 +99,7 @@ function Logic_Mall.PushExteriorInfo(bForce, ShelfIndex)
     end
   end
 end
+
 function Logic_Mall.PushSingleExteriorInfo(bForce, ShelfIndex)
   local SystemUnlockModule = ModuleManager:Get("SystemUnlockModule")
   if SystemUnlockModule and not SystemUnlockModule:CheckIsSystemUnlock(1) then
@@ -144,12 +149,14 @@ function Logic_Mall.PushSingleExteriorInfo(bForce, ShelfIndex)
     end
   })
 end
+
 function Logic_Mall.GetExteriorInfo()
   if Logic_Mall.ExteriorInfo ~= nil then
     return Logic_Mall.ExteriorInfo
   end
   return nil
 end
+
 function Logic_Mall.PushBundleInfo(bForce, ShelfIndex)
   if (Logic_Mall.BundleInfo[ShelfIndex] == nil or bForce) and nil ~= ShelfIndex then
     Logic_Mall.PushSingleBundleInfo(bForce, ShelfIndex)
@@ -178,6 +185,7 @@ function Logic_Mall.PushBundleInfo(bForce, ShelfIndex)
     end
   end
 end
+
 function Logic_Mall.PushSingleBundleInfo(bForce, ShelfIndex)
   local SystemUnlockModule = ModuleManager:Get("SystemUnlockModule")
   if SystemUnlockModule and not SystemUnlockModule:CheckIsSystemUnlock(1) then
@@ -210,12 +218,14 @@ function Logic_Mall.PushSingleBundleInfo(bForce, ShelfIndex)
     end
   })
 end
+
 function Logic_Mall.GetBundleInfo()
   if Logic_Mall.BundleInfo ~= nil then
     return Logic_Mall.BundleInfo
   end
   return nil
 end
+
 function Logic_Mall.PushPropsInfo(bForce, ShelfIndex)
   if (Logic_Mall.PropsInfo[ShelfIndex] == nil or bForce) and nil ~= ShelfIndex then
     Logic_Mall.PushSinglePropsInfo(bForce, ShelfIndex)
@@ -244,6 +254,7 @@ function Logic_Mall.PushPropsInfo(bForce, ShelfIndex)
     end
   end
 end
+
 function Logic_Mall.PushSinglePropsInfo(bForce, ShelfIndex)
   local SystemUnlockModule = ModuleManager:Get("SystemUnlockModule")
   if SystemUnlockModule and not SystemUnlockModule:CheckIsSystemUnlock(1) then
@@ -279,12 +290,14 @@ function Logic_Mall.PushSinglePropsInfo(bForce, ShelfIndex)
     end
   })
 end
+
 function Logic_Mall.GetPropsInfo()
   if Logic_Mall.PropsInfo ~= nil then
     return Logic_Mall.PropsInfo
   end
   return nil
 end
+
 function Logic_Mall.IsSoldOut(GoodsId)
   local GoodInfo = LuaTableMgr.GetLuaTableByName(TableNames.TBMall)[GoodsId]
   if nil == GoodInfo then
@@ -292,6 +305,7 @@ function Logic_Mall.IsSoldOut(GoodsId)
     return
   end
 end
+
 function Logic_Mall.RecordData(SelectNum, GoodsId, shelfID)
   if nil == shelfID then
     return
@@ -337,11 +351,13 @@ function Logic_Mall.RecordData(SelectNum, GoodsId, shelfID)
     Logic_Mall.RechargeInfo = TargetTable
   end
 end
+
 function Logic_Mall.OnShowTime(ShowStartTime, ShowEndTime)
   local CurTimeTemp = os.time()
   print(tonumber(ShowStartTime), tonumber(CurTimeTemp), tonumber(ShowEndTime))
   return tonumber(ShowStartTime) <= tonumber(CurTimeTemp) and tonumber(CurTimeTemp) <= tonumber(ShowEndTime)
 end
+
 function Logic_Mall.GetDetailRowDataByResourceId(ResourcesID)
   local TBGeneral = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   if not TBGeneral[ResourcesID] then
@@ -369,6 +385,7 @@ function Logic_Mall.GetDetailRowDataByResourceId(ResourcesID)
   end
   return nil
 end
+
 function Logic_Mall.GetGoodsSalesStatus(GoodsInfo)
   if nil == GoodsInfo then
     return EnumSalesStatus.Error

@@ -8,6 +8,7 @@ local next = next
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local UnLua = _G.UnLua
 local SubViewHelper = LuaClass()
+
 function SubViewHelper:Ctor()
   self._subViewList = {}
   self._onInitList = {}
@@ -18,31 +19,37 @@ function SubViewHelper:Ctor()
   self._onDestroyList = {}
   self.parentView = nil
 end
+
 function SubViewHelper:OnInit()
   for k, subView in pairs(self._onInitList) do
     subView:OnInit()
   end
 end
+
 function SubViewHelper:OnShow(...)
   for k, subView in pairs(self._onShowList) do
     subView:OnShow(...)
   end
 end
+
 function SubViewHelper:OnPreHide()
   for k, subView in pairs(self._onPreHideList) do
     subView:OnPreHide()
   end
 end
+
 function SubViewHelper:OnHide()
   for k, subView in pairs(self._onHideList) do
     subView:OnHide()
   end
 end
+
 function SubViewHelper:OnTick(deltaSeconds)
   for k, subView in pairs(self._luaTickList) do
     subView:OnTick(deltaSeconds)
   end
 end
+
 function SubViewHelper:OnDestroy()
   local ClearWhenDestroy = UIUtil.ClearWhenDestroy
   for k, subView in pairs(self._onDestroyList) do
@@ -50,6 +57,7 @@ function SubViewHelper:OnDestroy()
     ClearWhenDestroy(subView)
   end
 end
+
 function SubViewHelper:SetSubViewTickEnabled(InSubView, bEnable)
   if nil == InSubView then
     return
@@ -77,9 +85,11 @@ function SubViewHelper:SetSubViewTickEnabled(InSubView, bEnable)
     self.SetTickEnabled(bNeedTick)
   end
 end
+
 function SubViewHelper:IsNeedTick()
   return next(self._luaTickList)
 end
+
 function SubViewHelper:AddSubView(subView)
   if nil == subView then
     return
@@ -109,6 +119,7 @@ function SubViewHelper:AddSubView(subView)
     end)
   end
 end
+
 function SubViewHelper:RemoveSubView(value)
   if nil == value then
     return
@@ -159,6 +170,7 @@ function SubViewHelper:RemoveSubView(value)
     rawset(value, "SetTickEnabled", nil)
   end
 end
+
 function SubViewHelper:AddAsyncSubView(targetName, parentView)
   if nil == parentView or nil == parentView.Object then
     return
@@ -173,6 +185,7 @@ function SubViewHelper:AddAsyncSubView(targetName, parentView)
     self:AddSubView(subView)
   end
 end
+
 function SubViewHelper:RemoveAsyncSubView(targetName, parentView)
   local subView = parentView[targetName]
   if subView then
@@ -180,6 +193,7 @@ function SubViewHelper:RemoveAsyncSubView(targetName, parentView)
     self:RemoveSubView(subView)
   end
 end
+
 function SubViewHelper:ClearSubView()
   for k, subView in pairs(self._subViewList) do
     table_remove(self._subViewList, k)
@@ -187,6 +201,7 @@ function SubViewHelper:ClearSubView()
   end
   self._subViewList = {}
 end
+
 function SubViewHelper:CallCustomFunc(funcName, ...)
   for k, subView in pairs(self._subViewList) do
     if subView[funcName] then
@@ -194,4 +209,5 @@ function SubViewHelper:CallCustomFunc(funcName, ...)
     end
   end
 end
+
 return SubViewHelper

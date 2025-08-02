@@ -6,11 +6,13 @@ local HttpService = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(RGUti
 local SeasonAbilityViewModel = CreateDefaultViewModel()
 SeasonAbilityViewModel.propertyBindings = {}
 SeasonAbilityViewModel.subViewModels = {}
+
 function SeasonAbilityViewModel:OnInit()
   self.Super.OnInit(self)
   SeasonAbilityData:DealWithTable()
   self:DealWithTable()
 end
+
 function SeasonAbilityViewModel:DealWithTable()
   self.HeroSeasonAbilityTableInfo = {}
   local HeroSeasonAbilityTable = LuaTableMgr.GetLuaTableByName(TableNames.TBHeroSeasonAbility)
@@ -18,16 +20,21 @@ function SeasonAbilityViewModel:DealWithTable()
     self.HeroSeasonAbilityTableInfo[SingleRowInfo.HeroID] = SingleRowInfo
   end
 end
+
 function SeasonAbilityViewModel:GetHeroSeasonAbilityRowInfo(HeroId)
   return self.HeroSeasonAbilityTableInfo[HeroId]
 end
+
 function SeasonAbilityViewModel:GetCurHeroId()
   return self.CurHeroId
 end
+
 function SeasonAbilityViewModel:SetCurHeroId(InHeroId)
   self.CurHeroId = InHeroId
 end
+
 function SeasonAbilityViewModel:OnShutdown()
   self.Super.OnShutdown(self)
 end
+
 return SeasonAbilityViewModel

@@ -1,4 +1,5 @@
 local WBP_ModChooseBox_C = UnLua.Class()
+
 function WBP_ModChooseBox_C:Construct()
   self.Disable = false
   self.Button_ModChoose.OnClicked:Add(self, WBP_ModChooseBox_C.OnClicked)
@@ -6,12 +7,14 @@ function WBP_ModChooseBox_C:Construct()
   self.Button_ModChoose.OnUnhovered:Add(self, WBP_ModChooseBox_C.OnUnHovered)
   self.modComponent = self:GetOwningPlayerPawn():GetComponentByClass(UE.UMODComponent.StaticClass())
 end
+
 function WBP_ModChooseBox_C:Destruct()
   self.Button_ModChoose.OnClicked:Remove(self, WBP_ModChooseBox_C.OnClicked)
   self.Button_ModChoose.OnHovered:Remove(self, WBP_ModChooseBox_C.OnHovered)
   self.Button_ModChoose.OnUnhovered:Remove(self, WBP_ModChooseBox_C.OnUnHovered)
   self.modComponent = nil
 end
+
 function WBP_ModChooseBox_C:OnClicked()
   if not self.Disable then
     self.Disable = true
@@ -21,6 +24,7 @@ function WBP_ModChooseBox_C:OnClicked()
     self.ModChooseDelegate:Broadcast()
   end
 end
+
 function WBP_ModChooseBox_C:OnHovered()
   if not self.Disable then
     self.WBP_ModChooseTip:InitModInfo(self.ModID, self.ChooseType, self.ModType, true)
@@ -29,15 +33,18 @@ function WBP_ModChooseBox_C:OnHovered()
     self:UpdateModAddition()
   end
 end
+
 function WBP_ModChooseBox_C:OnUnHovered()
   self.WBP_ModChooseTip:SetVisibility(UE.ESlateVisibility.Hidden)
   self.VerticalBox_ModAdd:SetVisibility(UE.ESlateVisibility.Hidden)
   UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self):SetZOrder(0)
 end
+
 local CostTextColor = {
   Black = UE.FLinearColor(0, 0, 0, 1.0),
   Yellow = UE.FLinearColor(0.904661, 0.116971, 0.008568, 1.0)
 }
+
 function WBP_ModChooseBox_C:UpdateModInfo(ModID, ChooseType)
   if ModID <= 0 then
     self.Overlay_Full:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -58,6 +65,7 @@ function WBP_ModChooseBox_C:UpdateModInfo(ModID, ChooseType)
   self:UpdateModEffect()
   self:UpdateModGenreRoutine()
 end
+
 function WBP_ModChooseBox_C:UpdateModInfoByModType()
   local tempModIconBack, tempButtonStyle
   local SlateColor = UE.FSlateColor()
@@ -79,6 +87,7 @@ function WBP_ModChooseBox_C:UpdateModInfoByModType()
   self.TextBlock_ModName:SetColorAndOpacity(SlateColor)
   self.Button_ModChoose:SetStyle(tempButtonStyle)
 end
+
 function WBP_ModChooseBox_C:UpdateModInfoByID()
   if self.modComponent then
     self.ModType = self.modComponent:GetModTypeById(self.ModID)
@@ -92,6 +101,7 @@ function WBP_ModChooseBox_C:UpdateModInfoByID()
     print("ModInfo Is Null.")
   end
 end
+
 function WBP_ModChooseBox_C:UpdateModLevelInfo()
   if self.modComponent then
     local modMaxLevel = self.modComponent:GetMaxMODLevel(self.ModID, self.ChooseType, self.ModType)
@@ -137,6 +147,7 @@ function WBP_ModChooseBox_C:UpdateModLevelInfo()
     end
   end
 end
+
 function WBP_ModChooseBox_C:UpdateModInfoByChooseType()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if DTSubsystem then
@@ -171,6 +182,7 @@ function WBP_ModChooseBox_C:UpdateModInfoByChooseType()
     end
   end
 end
+
 function WBP_ModChooseBox_C:UpdateModAddition()
   local logicCommandDataSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.ULogicCommandDataSubSystem:StaticClass())
   if logicCommandDataSubsystem then
@@ -209,6 +221,7 @@ function WBP_ModChooseBox_C:UpdateModAddition()
     end
   end
 end
+
 function WBP_ModChooseBox_C:UpdateModEffect()
   self.RichTextBlock_Des_:SetText("")
   local gameState = UE.UGameplayStatics.GetGameState(self)
@@ -253,6 +266,7 @@ function WBP_ModChooseBox_C:UpdateModEffect()
     end
   end
 end
+
 function WBP_ModChooseBox_C:UpdateModGenreRoutine()
   self.SizeBox_ModGenreRoutine:SetVisibility(UE.ESlateVisibility.Collapsed)
   local DataTableSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem.StaticClass())
@@ -281,7 +295,9 @@ function WBP_ModChooseBox_C:UpdateModGenreRoutine()
     end
   end
 end
+
 function WBP_ModChooseBox_C:DisableMod(Disable)
   self.Disable = Disable
 end
+
 return WBP_ModChooseBox_C

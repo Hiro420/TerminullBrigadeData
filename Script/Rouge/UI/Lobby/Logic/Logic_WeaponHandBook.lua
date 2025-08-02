@@ -1,18 +1,24 @@
 local rapidjson = require("rapidjson")
 LogicWeaponHandBook = LogicWeaponHandBook or {}
+
 function LogicWeaponHandBook.Init()
 end
+
 function LogicWeaponHandBook:ShowSoulCore()
 end
+
 function LogicWeaponHandBook:HideSelf()
 end
+
 function LogicWeaponHandBook:Clear()
   LogicWeaponHandBook:HideSelf()
   self.WeaponMap = nil
 end
+
 function LogicWeaponHandBook:CheckWeaponUnLock(WeaponHandBook)
   return tonumber(DataMgr.GetRoleLevel()) >= WeaponHandBook.UnLockLv
 end
+
 function LogicWeaponHandBook:CheckWeaponUnLockById(WeaponId)
   local Result, WeaponHandBook = self:GetWeaponHandBookDataByRowName(WeaponId)
   if WeaponHandBook then
@@ -20,6 +26,7 @@ function LogicWeaponHandBook:CheckWeaponUnLockById(WeaponId)
   end
   return false
 end
+
 function LogicWeaponHandBook:GetItemRarityByRare(Rare)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -29,6 +36,7 @@ function LogicWeaponHandBook:GetItemRarityByRare(Rare)
   local ItemRarityResult, ItemRarityData = DTSubsystem:GetItemRarityTableRow(Rare)
   return ItemRarityResult, ItemRarityData
 end
+
 function LogicWeaponHandBook:GetWorldInfoByWorldId(Id)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -38,6 +46,7 @@ function LogicWeaponHandBook:GetWorldInfoByWorldId(Id)
   local ResultWorld, World = DTSubsystem:GetWorldTypeTableRow(Id)
   return ResultWorld, World
 end
+
 function LogicWeaponHandBook:GetItemDataByRowName(ItemRowName)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -46,6 +55,7 @@ function LogicWeaponHandBook:GetItemDataByRowName(ItemRowName)
   end
   return DTSubsystem:K2_GetItemTableRow(ItemRowName, nil)
 end
+
 function LogicWeaponHandBook:GetWeaponHandBookDataByRowName(WeaponId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -54,6 +64,7 @@ function LogicWeaponHandBook:GetWeaponHandBookDataByRowName(WeaponId)
   end
   return DTSubsystem:GetWeaponHandBookById(WeaponId, nil)
 end
+
 function LogicWeaponHandBook:GetAccessoryById(AccessoryId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -62,6 +73,7 @@ function LogicWeaponHandBook:GetAccessoryById(AccessoryId)
   end
   return DTSubsystem:GetAccessoryTableRow(AccessoryId, nil)
 end
+
 function LogicWeaponHandBook:GetWeaponListByWorldId(WorldId)
   local WeaponList = {}
   for i, v in ipairs(self.WeaponMap[WorldId]) do
@@ -70,6 +82,7 @@ function LogicWeaponHandBook:GetWeaponListByWorldId(WorldId)
   table.sort(WeaponList, LogicWeaponHandBook.WeaponListSort)
   return WeaponList
 end
+
 function LogicWeaponHandBook.WeaponListSort(A, B)
   local AUnLock = LogicWeaponHandBook:CheckWeaponUnLockById(A)
   local BUnLock = LogicWeaponHandBook:CheckWeaponUnLockById(B)
@@ -81,6 +94,7 @@ function LogicWeaponHandBook.WeaponListSort(A, B)
   end
   return A < B
 end
+
 function LogicWeaponHandBook:InitWeaponData()
   if self.WeaponMap then
     return

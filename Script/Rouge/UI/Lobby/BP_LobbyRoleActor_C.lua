@@ -1,5 +1,6 @@
 local SkinData = require("Modules.Appearance.Skin.SkinData")
 local BP_LobbyRoleActor_C = UnLua.Class()
+
 function BP_LobbyRoleActor_C:ReceiveBeginPlay()
   self.Overridden.ReceiveBeginPlay(self)
   local skinSys = UE.USubsystemBlueprintLibrary.GetWorldSubsystem(self, UE.URGSkinSystem:StaticClass())
@@ -8,6 +9,7 @@ function BP_LobbyRoleActor_C:ReceiveBeginPlay()
   end
   self:ForceRefreshBodyMesh()
 end
+
 function BP_LobbyRoleActor_C:ReceiveEndPlay(EndPlayReason)
   self.Overridden.ReceiveEndPlay(self, EndPlayReason)
   local skinSys = UE.USubsystemBlueprintLibrary.GetWorldSubsystem(self, UE.URGSkinSystem:StaticClass())
@@ -15,6 +17,7 @@ function BP_LobbyRoleActor_C:ReceiveEndPlay(EndPlayReason)
     skinSys.OnDynamicSkinChange:Remove(self, self.SkinChanged)
   end
 end
+
 function BP_LobbyRoleActor_C:SkinChanged(TargetActor, Success, SkinId)
   if TargetActor == self.ChildActor.ChildActor then
     if self.bShowGlitchMatEffect then
@@ -34,12 +37,14 @@ function BP_LobbyRoleActor_C:SkinChanged(TargetActor, Success, SkinId)
     end
   end
 end
+
 function BP_LobbyRoleActor_C:GlitchAniEnd()
   if self.ChildActor.ChildActor then
     self.ChildActor.ChildActor:UpdateSkin()
     self.ChildActor.ChildActor:SetVirtualLightON()
   end
 end
+
 function BP_LobbyRoleActor_C:ForceRefreshBodyMesh()
   local RowInfo = LogicRole.GetCharacterTableRow(self.CurEquipHeroId)
   if not RowInfo then
@@ -66,6 +71,7 @@ function BP_LobbyRoleActor_C:ForceRefreshBodyMesh()
   end
   self:ChangeWeaponMesh(self.CurEquipHeroId)
 end
+
 function BP_LobbyRoleActor_C:ChangeBodyMesh(HeroId, SkinId, SkinChangedCallback, IsNotShowEquipSkinMap, bShowGlitchMatEffect, IsShowHeroEffect, bShowDrawCardShowMatEffect, bForceInit)
   if nil == bShowGlitchMatEffect then
     bShowGlitchMatEffect = false
@@ -147,23 +153,28 @@ function BP_LobbyRoleActor_C:ChangeBodyMesh(HeroId, SkinId, SkinChangedCallback,
     LogicRole.SetEffectState(self.ChildActor.ChildActor, skinId, HeroId, IsShowHeroEffect)
   end
 end
+
 function BP_LobbyRoleActor_C:LobbyRoleActorToggleSkipEnter(bSkipEnterParam)
   if self.ChildActor.ChildActor then
     self.ChildActor.ChildActor:ToggleSkipEnter(bSkipEnterParam)
   end
 end
+
 function BP_LobbyRoleActor_C:LobbyRoleActorResetAnimation()
   if self.ChildActor.ChildActor then
     self.ChildActor.ChildActor:ResetAnimation()
   end
 end
+
 function BP_LobbyRoleActor_C:GetDefaultRoleSkinId(...)
   return self.ChildActor.ChildActor:GetDefaultRoleSkin()
 end
+
 function BP_LobbyRoleActor_C:ClearChildActor()
   if not self.ChildActor.ChildActor or self.ChildActor.ChildActor:IsValid() then
   end
 end
+
 function BP_LobbyRoleActor_C:ResetChildActorAnimation()
   if not self.ChildActor.ChildActor then
     return
@@ -171,6 +182,7 @@ function BP_LobbyRoleActor_C:ResetChildActorAnimation()
   self.ChildActor.ChildActor:SetRoleStatus(UE.ERGLobbyRoleStatus.RelaxIdle)
   self.ChildActor.ChildActor:ResetAnimation()
 end
+
 function BP_LobbyRoleActor_C:ChangeWeaponMesh(HeroId, bShowGlitchMatEffect, bShowDrawCardShowMatEffect)
   local WeaponId, WeaponSkinId
   if not DataMgr.IsOwnHero(HeroId) then
@@ -206,12 +218,14 @@ function BP_LobbyRoleActor_C:ChangeWeaponMesh(HeroId, bShowGlitchMatEffect, bSho
     self.CurWeaponSkinId = WeaponSkinId
   end
 end
+
 function BP_LobbyRoleActor_C:ChangeWeaponMeshBySkinId(WeaponSkinId, bShowGlitchMatEffect, bShowDrawCardShowMatEffect)
   if self.ChildActor.ChildActor then
     self.ChildActor.ChildActor:ChangeWeaponSkin(WeaponSkinId, bShowGlitchMatEffect, bShowDrawCardShowMatEffect)
   end
   self.CurWeaponSkinId = WeaponSkinId
 end
+
 function BP_LobbyRoleActor_C:ChangeWeaponMeshById(WeaponId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -224,6 +238,7 @@ function BP_LobbyRoleActor_C:ChangeWeaponMeshById(WeaponId)
     end
   end
 end
+
 function BP_LobbyRoleActor_C:ChangeChildActorDefaultRotation(HeroId)
   local CharacterRow = LogicRole.GetCharacterTableRow(HeroId)
   if not CharacterRow then
@@ -236,25 +251,30 @@ function BP_LobbyRoleActor_C:ChangeChildActorDefaultRotation(HeroId)
   self.ChildActor:K2_SetRelativeRotation(TargetRotator, false, nil, false)
   self.InitRelativeRotation = self.ChildActor.RelativeRotation
 end
+
 function BP_LobbyRoleActor_C:UpdateAniInstBySkinId(SkinId, bIsSucc)
   if self.ChildActor.ChildActor then
     self.ChildActor.ChildActor:UpdateAniInstBySkinId(SkinId, bIsSucc)
   end
 end
+
 function BP_LobbyRoleActor_C:ShowLightBySettlementResult(SettleStatus)
   if self.ChildActor.ChildActor then
     print("BP_LobbyRoleActor_C:ShowLightBySettlementResult", SettleStatus)
     self.ChildActor.ChildActor:ShowLightBySettlementResult(SettleStatus)
   end
 end
+
 function BP_LobbyRoleActor_C:ShowDrawCardShowMatEffect()
   if self.ChildActor.ChildActor then
     self.ChildActor.ChildActor:ShowDrawCardShowMatEffect_LUA()
   end
 end
+
 function BP_LobbyRoleActor_C:HideDrawCardShowMatEffect()
   if self.ChildActor.ChildActor then
     self.ChildActor.ChildActor:HideDrawCardShowMatEffect()
   end
 end
+
 return BP_LobbyRoleActor_C

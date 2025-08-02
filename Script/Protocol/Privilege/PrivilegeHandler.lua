@@ -1,6 +1,7 @@
 local PrivilegeHandler = {}
 local rapidjson = require("rapidjson")
 local PrivilegeData = require("Modules.Privilege.PrivilegeData")
+
 function PrivilegeHandler:RequestRolesPrivilegeInfoToServer(IdList)
   local Params = {roleIDs = IdList}
   HttpCommunication.Request("playergrowth/privilege/rolesprivilegeinfo", Params, {
@@ -13,4 +14,5 @@ function PrivilegeHandler:RequestRolesPrivilegeInfoToServer(IdList)
     end
   })
 end
+
 return PrivilegeHandler

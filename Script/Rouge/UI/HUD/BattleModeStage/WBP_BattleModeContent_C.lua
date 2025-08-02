@@ -1,4 +1,5 @@
 local WBP_BattleModeContent_C = UnLua.Class()
+
 function WBP_BattleModeContent_C:Construct()
   self:BindToAnimationFinished(self.Ani_CanvasPanelFailed, function()
     self:ChangeGameStage(UE.EBattleModeStage.Node)
@@ -17,6 +18,7 @@ function WBP_BattleModeContent_C:Construct()
   end)
   UpdateVisibility(self.CanvasPanel_Progress, false)
 end
+
 function WBP_BattleModeContent_C:ChangeGameStage(NewStage)
   print("LJS ChangeGameStage", NewStage)
   if NewStage == self.CurGameStage then
@@ -47,6 +49,7 @@ function WBP_BattleModeContent_C:ChangeGameStage(NewStage)
     self.ShowPanel = nil
   end
 end
+
 function WBP_BattleModeContent_C:BeginAssembly()
   if self.RGText:GetText() == "" then
     return
@@ -60,9 +63,11 @@ function WBP_BattleModeContent_C:BeginAssembly()
   self:PlayAnimation(self.Ani_CanvasPanelTitle_1)
   print("LJS : BeginAssembly")
 end
+
 function WBP_BattleModeContent_C:EndAssembly()
   self.CurGameStage = UE.EBattleModeStage.EndAssemblyStage
 end
+
 function WBP_BattleModeContent_C:BeginChanllenge()
   if self.RGTextGameStart:GetText() == "" then
     return
@@ -76,8 +81,10 @@ function WBP_BattleModeContent_C:BeginChanllenge()
   self:PlayAnimation(self.Ani_CanvasPanelGameStart_start)
   print("LJS : BeginChanllenge")
 end
+
 function WBP_BattleModeContent_C:EndChallenge()
 end
+
 function WBP_BattleModeContent_C:ShowSuccess()
   if self.TextSuccess:GetText() == "" then
     return
@@ -90,6 +97,7 @@ function WBP_BattleModeContent_C:ShowSuccess()
   self.CurGameStage = UE.EBattleModeStage.SuccessStage
   self:PlayAnimation(self.Ani_CanvasPanelSuccess)
 end
+
 function WBP_BattleModeContent_C:ShowFailed()
   if self.RGTextFailed:GetText() == "" then
     return
@@ -102,6 +110,7 @@ function WBP_BattleModeContent_C:ShowFailed()
   self.CurGameStage = UE.EBattleModeStage.FailedStage
   self:PlayAnimation(self.Ani_CanvasPanelFailed)
 end
+
 function WBP_BattleModeContent_C:CustStage1()
   if self.ShowPanel then
     UpdateVisibility(self.ShowPanel, false)
@@ -111,10 +120,13 @@ function WBP_BattleModeContent_C:CustStage1()
   self.CurGameStage = UE.EBattleModeStage.CustStage1
   self:PlayAnimation(self.Ani_CanvasPanelMoneyStart)
 end
+
 function WBP_BattleModeContent_C:CustStage2()
 end
+
 function WBP_BattleModeContent_C:CustStage3()
 end
+
 function WBP_BattleModeContent_C:RefreshCountdown()
   if self.CurGameStage == UE.EBattleModeStage.BeginChallengeStage then
     self.Progress:SetPercent(1 - LogicBattleMode:GetDurationProgress(LogicBattleMode.BattleModeStage.Challenge))
@@ -125,9 +137,11 @@ function WBP_BattleModeContent_C:RefreshCountdown()
     self.LastDuration = LogicBattleMode:GetDuration(LogicBattleMode.BattleModeStage.Challenge)
   end
 end
+
 function WBP_BattleModeContent_C:LuaTick(InDeltaTime)
   if self.bNeedProgressBar then
     self:RefreshCountdown()
   end
 end
+
 return WBP_BattleModeContent_C

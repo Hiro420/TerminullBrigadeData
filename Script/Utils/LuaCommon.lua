@@ -26,6 +26,7 @@ local NumToRomanTb = {
 }
 local DateTxtFmt = NSLOCTEXT("LuaCommon", "DateTxtFmt", "%Y\229\185\180%m\230\156\136%d\230\151\165")
 local DateTxtFmtWithTime = NSLOCTEXT("LuaCommon", "DateTxtFmtWithTime", "%Y\229\185\180%m\230\156\136%d\230\151\165%H\230\151\182%M\229\136\134%S\231\167\146")
+
 function iterator(Array)
   local i = 0
   local Length = Array:Length()
@@ -37,6 +38,7 @@ function iterator(Array)
     return i, Array:Get(i)
   end
 end
+
 local OrderMapipairs = function(tb)
   local k, v
   return function()
@@ -47,6 +49,7 @@ local OrderMapipairs = function(tb)
   end
 end
 local Custom_ipairs = ipairs
+
 function ipairs(tb)
   if tb and tb.__ContainerName == "OrderedMap" then
     return OrderMapipairs(tb)
@@ -56,6 +59,7 @@ function ipairs(tb)
     return Custom_ipairs(tb)
   end
 end
+
 function table.count(t)
   local Count = 0
   for key, value in pairs(t) do
@@ -63,6 +67,7 @@ function table.count(t)
   end
   return Count
 end
+
 function table.RemoveItem(t, Item)
   local RemoveIndex = 0
   for index, value in ipairs(t) do
@@ -74,6 +79,7 @@ function table.RemoveItem(t, Item)
     table.remove(t, RemoveIndex)
   end
 end
+
 function table.Contain(t, value)
   if not t then
     return false
@@ -85,12 +91,14 @@ function table.Contain(t, value)
   end
   return false
 end
+
 function table.IsEmpty(t)
   if not t then
     return true
   end
   return not next(t)
 end
+
 function table.IndexOf(t, value)
   for i, v in ipairs(t) do
     if v == value then
@@ -99,8 +107,10 @@ function table.IndexOf(t, value)
   end
   return nil
 end
+
 function table.Print(t)
   local print_r_cache = {}
+  
   local function sub_print_r(t, indent)
     if print_r_cache[tostring(t)] then
       print(indent .. "*" .. tostring(t))
@@ -123,6 +133,7 @@ function table.Print(t)
       end
     end
   end
+  
   if type(t) == "table" then
     print(tostring(t) .. " {")
     sub_print_r(t, "  ")
@@ -132,6 +143,7 @@ function table.Print(t)
   end
   print()
 end
+
 function math.clamp(v, minValue, maxValue)
   if v < minValue then
     return minValue
@@ -141,6 +153,7 @@ function math.clamp(v, minValue, maxValue)
   end
   return v
 end
+
 function GetTips(ItemId, TipsClass)
   local Result, ResourceRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, ItemId)
   if not Result then
@@ -168,8 +181,10 @@ function GetTips(ItemId, TipsClass)
   end
   return nil
 end
+
 function ShowOptionalGiftQueueWindow(OptionalGiftIdTable, SourceId, Type, OnConfirmClick, ...)
 end
+
 function ShowOptionalGiftWindow(OptionalGiftIdTable, SourceId, Type, OnConfirmClick, ...)
   local TBGeneral = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   for OptionalGiftId, Num in pairs(OptionalGiftIdTable) do
@@ -180,12 +195,14 @@ function ShowOptionalGiftWindow(OptionalGiftIdTable, SourceId, Type, OnConfirmCl
     end
   end
 end
+
 function ShowWaveWindowWithConsoleCheck(WaveId, Params, ErrorCode)
   if 30009 == ErrorCode or 11000 == ErrorCode or 500 == ErrorCode then
     return
   end
   ShowWaveWindow(WaveId, Params)
 end
+
 function ShowWaveWindow(WaveId, Params)
   local WaveManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
   local WaveWindow
@@ -194,6 +211,7 @@ function ShowWaveWindow(WaveId, Params)
   end
   return WaveWindow
 end
+
 function ShowWaveWindowWithDelegate(WaveId, Params, SuccCallback, FailedCallback, WaveWindowParam)
   local WaveManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
   if not WaveManager then
@@ -201,12 +219,14 @@ function ShowWaveWindowWithDelegate(WaveId, Params, SuccCallback, FailedCallback
   end
   return WaveManager:ShowWaveWindowWithWaveParam(WaveId, Params, nil, SuccCallback, FailedCallback, WaveWindowParam)
 end
+
 function CloseWaveWindow(Wnd)
   local WaveManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
   if WaveManager then
     WaveManager:CloseWaveWindow(Wnd)
   end
 end
+
 function GetItemWidget(ItemId, Num, bShowName, HoveredFun, UnHoveredFun)
   local WidgetClassPath = "/Game/Rouge/UI/Common/WBP_CommonItem.WBP_CommonItem_C"
   local WidgetClass = UE.UClass.Load(WidgetClassPath)
@@ -217,6 +237,7 @@ function GetItemWidget(ItemId, Num, bShowName, HoveredFun, UnHoveredFun)
   end
   return nil
 end
+
 function GetItemDetailWidget(ItemId)
   local WidgetClassPath = "/Game/Rouge/UI/Common/WBP_CommonItemDetail.WBP_CommonItemDetail_C"
   local WidgetClass = UE.UClass.Load(WidgetClassPath)
@@ -227,6 +248,7 @@ function GetItemDetailWidget(ItemId)
   end
   return nil
 end
+
 function GetCommonTipsWidget()
   local WidgetClassPath = "/Game/Rouge/UI/Common/WBP_CommonTips.WBP_CommonTips_C"
   local WidgetClass = UE.UClass.Load(WidgetClassPath)
@@ -236,6 +258,7 @@ function GetCommonTipsWidget()
   end
   return nil
 end
+
 function ShowTipsAndInitPos(HoveredTipWidget, TipsParent, HoverItem, TipsOffset)
   UpdateVisibility(HoveredTipWidget, true)
   local tipsOffset = TipsOffset or UE.FVector2D(0)
@@ -255,6 +278,7 @@ function ShowTipsAndInitPos(HoveredTipWidget, TipsParent, HoverItem, TipsOffset)
   end
   slotCanvas:SetPosition(Pos)
 end
+
 function ShowCommonTips(TipsParent, HoverItem, HoverTips, ClassPath, TipsClass, UseRelativePosition, Offset, CusPosType, Scale)
   local RootCanvas
   local SceneStatus = GetCurSceneStatus()
@@ -311,6 +335,7 @@ function ShowCommonTips(TipsParent, HoverItem, HoverTips, ClassPath, TipsClass, 
     return TipsWidget
   end
 end
+
 function ShowCommonTipsForPos(TipsParent, HoverTips, ClassPath, TipsClass, Pos, Offset)
   local RootCanvas
   local SceneStatus = GetCurSceneStatus()
@@ -342,42 +367,50 @@ function ShowCommonTipsForPos(TipsParent, HoverTips, ClassPath, TipsClass, Pos, 
     return TipsWidget
   end
 end
+
 function SwitchUI(UIClass, HideOther)
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if UIManager then
     return UIManager:Switch(UIClass, HideOther)
   end
 end
+
 function PlaySound2DByName(Name, SourceDesc)
   return UE.UAudioManager.PlaySound2DByName(Name, SourceDesc)
 end
+
 function BreakSoundByName(EventName, Emitter, PlayingID)
   return UE.UAudioManager.BreakSoundByName(EventName, Emitter, PlayingID)
 end
+
 function PlaySound2DEffect(Id, SourceDesc)
   local RGSoundSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGSoundSubsystem:StaticClass())
   if RGSoundSubsystem then
     RGSoundSubsystem:PlaySound2D(Id, SourceDesc)
   end
 end
+
 function PlaySound3DEffect(Id, TargetActor)
   local RGSoundSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGSoundSubsystem:StaticClass())
   if RGSoundSubsystem then
     RGSoundSubsystem:PlaySound3D(Id, TargetActor)
   end
 end
+
 function PlayHeroSkillHitSound3D(Skill, DamageType, SourceActor, TargetActor, bKill)
   local RGSoundSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGSoundSubsystem:StaticClass())
   if RGSoundSubsystem then
     RGSoundSubsystem:PlayHeroSkillHitSound3D(Skill, DamageType, SourceActor, TargetActor, bKill)
   end
 end
+
 function PlayHeroNormalHitSound3D(SourceActor, TargetActor, bKill)
   local RGSoundSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGSoundSubsystem:StaticClass())
   if RGSoundSubsystem then
     RGSoundSubsystem:PlayHeroNormalHitSound3D(SourceActor, TargetActor, bKill)
   end
 end
+
 function PlayVoiceByRowName(RowName, SpeakerActor, SkinId)
   local RGVoiceSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGVoiceSubsystem:StaticClass())
   if RGVoiceSubsystem then
@@ -385,6 +418,7 @@ function PlayVoiceByRowName(RowName, SpeakerActor, SkinId)
   end
   return 0
 end
+
 function PlayVoice(MessageTag, SpeakerActor, TargetActor)
   local RGVoiceSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGVoiceSubsystem:StaticClass())
   if RGVoiceSubsystem then
@@ -392,12 +426,14 @@ function PlayVoice(MessageTag, SpeakerActor, TargetActor)
   end
   return 0
 end
+
 function StopSound2DEffect(Id)
   local RGSoundSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGSoundSubsystem:StaticClass())
   if RGSoundSubsystem then
     RGSoundSubsystem:StopSound2D(Id)
   end
 end
+
 function MakeStringToSoftObjectReference(Path)
   local Result = UE.URGBlueprintLibrary.IsShortPackageName(Path)
   if Result then
@@ -407,11 +443,13 @@ function MakeStringToSoftObjectReference(Path)
   local SoftObjectReference = UE.UKismetSystemLibrary.Conv_SoftObjPathToSoftObjRef(SoftObjectPath)
   return SoftObjectReference
 end
+
 function MakeStringToSoftClassReference(Path)
   local SoftClassPath = UE.UKismetSystemLibrary.MakeSoftClassPath(Path)
   local SoftClassReference = UE.UKismetSystemLibrary.Conv_SoftClassPathToSoftClassRef(SoftClassPath)
   return SoftClassReference
 end
+
 function MakeBrushBySoftObj(SoftObj, Size)
   if not SoftObj then
     return UE.FSlateBrush()
@@ -438,6 +476,7 @@ function MakeBrushBySoftObj(SoftObj, Size)
   end
   return UE.FSlateBrush()
 end
+
 function SetImageBrushByPath(Img, Path, IconSize)
   if not Path then
     return
@@ -466,6 +505,7 @@ function SetImageBrushByPath(Img, Path, IconSize)
     end
   end
 end
+
 function SetImageBrushBySoftObjectPath(Img, SoftObjectPath, Size, bReserveBrush)
   local IconObj = GetAssetByPath(SoftObjectPath, true)
   if IconObj then
@@ -500,6 +540,7 @@ function SetImageBrushBySoftObjectPath(Img, SoftObjectPath, Size, bReserveBrush)
     end
   end
 end
+
 function SetImageBrushBySoftObject(Img, SoftObj, Size, bReserveBrush)
   if not SoftObj then
     return
@@ -534,6 +575,7 @@ function SetImageBrushBySoftObject(Img, SoftObj, Size, bReserveBrush)
     end
   end
 end
+
 function SetImageBrushByTexture2DSoftObject(Img, SoftObj, Size)
   if not SoftObj then
     return
@@ -552,6 +594,7 @@ function SetImageBrushByTexture2DSoftObject(Img, SoftObj, Size)
     end
   end
 end
+
 function GetAssetByPath(InPath, IsForced)
   local TargetSoftObjPath
   if type(InPath) == "string" then
@@ -561,15 +604,18 @@ function GetAssetByPath(InPath, IsForced)
   end
   return UE.URGAssetManager.GetAssetByPath(TargetSoftObjPath, IsForced)
 end
+
 function GetAssetBySoftObjectPtr(InObjectPtr, IsForced)
   local Path = UE.UKismetSystemLibrary.Conv_SoftObjectReferenceToString(InObjectPtr)
   return GetAssetByPath(Path, IsForced)
 end
+
 function GetDataLibraryObj()
   local DataLibraryPath = "/Game/Rouge/UI/BP_RGDataLibrary.BP_RGDataLibrary_C"
   local Obj = UE.UObject.Load(DataLibraryPath)
   return Obj
 end
+
 function Format(sec, fmt, useShort)
   fmt = string.lower(fmt)
   local fmtSecInfo = {}
@@ -611,19 +657,23 @@ function Format(sec, fmt, useShort)
   end
   return retFmt
 end
+
 function TimestampToDateTimeText(Timestamp)
   local DateTxtFmtStr = tostring(DateTxtFmtWithTime)
   return os.date(DateTxtFmtStr, Timestamp)
 end
+
 function TimestampToDateText(Timestamp)
   local DateTxtFmtStr = tostring(DateTxtFmt)
   return os.date(DateTxtFmtStr, Timestamp)
 end
+
 function Timezone()
   local now = os.time()
   local difftime = os.difftime(now, os.time(os.date("!*t", now)))
   return tonumber(difftime) / 3600
 end
+
 function GetOrCreateItem(Parent, Index, Cls, bCopyNav)
   local Item = Parent:GetChildAt(Index - 1)
   if not Item then
@@ -641,6 +691,7 @@ function GetOrCreateItem(Parent, Index, Cls, bCopyNav)
   end
   return Item
 end
+
 function GetOrCreateItemByClass(Parent, Index, Cls, FilterChildClsToList, bCopyNav)
   local clsName = Cls:GetName()
   print("GetOrCreateItemByClass", clsName)
@@ -671,6 +722,7 @@ function GetOrCreateItemByClass(Parent, Index, Cls, FilterChildClsToList, bCopyN
     return Item
   end
 end
+
 function HideOtherItem(Parent, startIndex, IsForced)
   for i = startIndex, Parent:GetChildrenCount() do
     local Item = Parent:GetChildAt(i - 1)
@@ -681,6 +733,7 @@ function HideOtherItem(Parent, startIndex, IsForced)
     end
   end
 end
+
 function HideOtherItemByClass(Parent, startIndex, Cls, FilterChildClsToList)
   local clsName = Cls:GetName()
   print("GetOrCreateItemByClass", clsName)
@@ -712,6 +765,7 @@ function HideOtherItemByClass(Parent, startIndex, Cls, FilterChildClsToList)
     end
   end
 end
+
 function DeepCopy(tmp)
   if nil == tmp then
     return nil
@@ -726,10 +780,12 @@ function DeepCopy(tmp)
   end
   return res
 end
+
 function UpdateWidgetContainer(WidgetContainer, WidgetNumber, WidgetPath, Padding, Self, PlayerController)
   local widgetClass = UE.UClass.Load(WidgetPath)
   return UpdateWidgetContainerByClass(WidgetContainer, WidgetNumber, widgetClass, Padding, Self, PlayerController)
 end
+
 function UpdateWidgetContainerByClass(WidgetContainer, WidgetNumber, WidgetClass, Padding, Self, PlayerController)
   local tempTable = {}
   local More
@@ -760,6 +816,7 @@ function UpdateWidgetContainerByClass(WidgetContainer, WidgetNumber, WidgetClass
   end
   return More, tempTable
 end
+
 function UpdateVisibility(Widget, bIsShow, bIsVisible, bIsHidden)
   if not Widget then
     return
@@ -780,6 +837,7 @@ function UpdateVisibility(Widget, bIsShow, bIsVisible, bIsHidden)
     Widget:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function IsValidObj(Obj)
   if not Obj then
     return false
@@ -792,12 +850,14 @@ function IsValidObj(Obj)
   end
   return true
 end
+
 function SetHitTestInvisible(Widget)
   if nil == Widget or IsValidObj(Widget) == false then
     return
   end
   Widget:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
 end
+
 function CheckIsVisility(Widget, bIsVisible)
   if not Widget then
     return false
@@ -808,6 +868,7 @@ function CheckIsVisility(Widget, bIsVisible)
     return Widget:GetVisibility() ~= UE.ESlateVisibility.Hidden and Widget:GetVisibility() ~= UE.ESlateVisibility.Collapsed
   end
 end
+
 function CheckCost(CostItemMap, Success, Failed, bIsShowTips, ...)
   local CostItemMapTemp = {}
   for i, v in pairs(CostItemMap) do
@@ -839,6 +900,7 @@ function CheckCost(CostItemMap, Success, Failed, bIsShowTips, ...)
   end
   return true
 end
+
 function CheckHasBarrel(AccessoryIdList)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -851,6 +913,7 @@ function CheckHasBarrel(AccessoryIdList)
     end
   end
 end
+
 function GetAccessoryNumber(AccessoryIdList, ExceptBarrel)
   local Number = #AccessoryIdList
   if ExceptBarrel then
@@ -861,6 +924,7 @@ function GetAccessoryNumber(AccessoryIdList, ExceptBarrel)
   end
   return Number
 end
+
 function GetAccessoryRarity(AccessoryId, AccessoryList)
   for key, value in pairs(AccessoryList) do
     if AccessoryId == key then
@@ -868,6 +932,7 @@ function GetAccessoryRarity(AccessoryId, AccessoryList)
     end
   end
 end
+
 function GetAccessoryIdTable(AccessoryList)
   local AccessoryIdTable = {}
   for key, value in pairs(AccessoryList) do
@@ -875,6 +940,7 @@ function GetAccessoryIdTable(AccessoryList)
   end
   return AccessoryIdTable
 end
+
 function GetInscriptionIdTable(AccessoryId, ItemRarity)
   local inscriptionIdList = {}
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
@@ -892,6 +958,7 @@ function GetInscriptionIdTable(AccessoryId, ItemRarity)
   end
   return inscriptionIdList
 end
+
 function ChSize(Char)
   if not Char then
     return 0
@@ -905,6 +972,7 @@ function ChSize(Char)
     return 1
   end
 end
+
 function HaveChineseChar(Str)
   if type(Str) == "userdata" then
     Str = tostring(Str)
@@ -914,6 +982,7 @@ function HaveChineseChar(Str)
   end
   return false
 end
+
 function UTF8Len(Str)
   local Len = 0
   local CurrentIndex = 1
@@ -924,6 +993,7 @@ function UTF8Len(Str)
   end
   return Len
 end
+
 function ipairsUTF8(Str)
   local StartIndex = 1
   local Key = 0
@@ -944,6 +1014,7 @@ function ipairsUTF8(Str)
     return Key, Value
   end
 end
+
 function Split(input, delimiter)
   if type(delimiter) == "userdata" then
     delimiter = tostring(delimiter)
@@ -967,6 +1038,7 @@ function Split(input, delimiter)
   table.insert(arr, string.sub(input, start))
   return arr
 end
+
 function SetInputIgnore(Pawn, Ignored)
   if not Pawn then
     print("Pawn Is Null")
@@ -978,20 +1050,24 @@ function SetInputIgnore(Pawn, Ignored)
     InputComp:SetAllInputIgnored(Ignored)
   end
 end
+
 function UpdateUICaptureBgActor(bIsShow)
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if UIManager then
     return UIManager:UpdateUICaptureBgActor(bIsShow)
   end
 end
+
 function IsInterger(n)
   return type(n) == "number" and math.floor(n) == n
 end
+
 function NearlyEquals(a, b, ThresholdParam)
   local Threshold = ThresholdParam or 1.0E-8
   local RelativeError = math.abs(a - b)
   return Threshold >= RelativeError
 end
+
 function GetVersionID()
   local VersionSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.URGVersionSubsystem:StaticClass())
   if not VersionSubsystem then
@@ -1008,6 +1084,7 @@ function GetVersionID()
   end
   return VersionId
 end
+
 function GetRowData(TableName, RowName)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -1027,6 +1104,7 @@ function GetRowData(TableName, RowName)
   end
   return false, nil
 end
+
 function GetAllRowNames(TableName)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -1039,6 +1117,7 @@ function GetAllRowNames(TableName)
   local AllRowNames = UE.UDataTableFunctionLibrary.GetDataTableRowNames(DataTableTemp, nil)
   return AllRowNames:ToTable()
 end
+
 function GetRowDataForCharacter(RowName)
   if tonumber(RowName) > 100000 then
     return GetRowData(DT.DT_Monster, RowName)
@@ -1046,6 +1125,7 @@ function GetRowDataForCharacter(RowName)
     return GetRowData(DT.DT_Hero, RowName)
   end
 end
+
 function GetLuaInscription(InscriptionID)
   local Path = "GameConfig.Inscription.Ins_" .. InscriptionID
   if Path then
@@ -1059,18 +1139,22 @@ function GetLuaInscription(InscriptionID)
   end
   return nil
 end
+
 function GetLuaInscriptionDesc(InscriptionID)
   local name = InscriptionID .. "_Desc"
   return UE.URGBlueprintLibrary.TextFromInsStringTable(name)
 end
+
 function GetLuaInsModifyLevelDescFmt(InscriptionID)
   local name = InscriptionID .. "_ModifyLevelDescFmt"
   return UE.URGBlueprintLibrary.TextFromInsStringTable(name)
 end
+
 function GetInscriptionName(InscriptionId)
   local name = InscriptionId .. "_Name"
   return UE.URGBlueprintLibrary.TextFromInsStringTable(name)
 end
+
 function ExtractStringsBetweenBraces(inputString)
   local result = {}
   local insideBraces = false
@@ -1089,27 +1173,32 @@ function ExtractStringsBetweenBraces(inputString)
   end
   return result
 end
+
 function StrReplace(inputString, target, replacement)
   local inputString = tostring(inputString)
   local target = tostring(target)
   local replacement = tostring(replacement)
   return inputString:gsub(target, replacement)
 end
+
 function LerpVector(Current, Target, rate)
   local x = (Target.X - Current.X) * rate + Current.X
   local y = (Target.Y - Current.Y) * rate + Current.Y
   local z = (Target.Z - Current.Z) * rate + Current.Z
   return UE.FVector(x, y, z)
 end
+
 function LerpRotation(Current, Target, rate)
   return Current + (Target - Current) * rate
 end
+
 function LerpTransform(Current, Target, rate)
   local translation = LerpVector(Current.Translation, Target.Translation, rate)
   local scale3D = LerpVector(Current.Scale3D, Target.Scale3D, rate)
   local rotation = LerpRotation(Current.Rotation, Target.Rotation, rate)
   return UE.FTransform(rotation, translation, scale3D)
 end
+
 function GetStringById(Id, TextWidget)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -1124,6 +1213,7 @@ function GetStringById(Id, TextWidget)
   end
   return Id
 end
+
 function ChangeToLobbyAnimCamera()
   local AllMainAnimCamera = UE.UGameplayStatics.GetAllActorsWithTag(GameInstance, "MainAnimCamera", nil)
   local TargetAnimCamera
@@ -1141,6 +1231,7 @@ function ChangeToLobbyAnimCamera()
     end
   end
 end
+
 function GetResourceConfig(ResourceId)
   local TableName = TableNames.TBGeneral
   local ResourceInfo = LuaTableMgr.GetLuaTableByName(TableName)
@@ -1150,15 +1241,19 @@ function GetResourceConfig(ResourceId)
   print("GetResourceConfig ", ResourceId, ResourceInfo[ResourceId])
   return nil
 end
+
 function NumToTxt(num)
   return NumToTxtTb[num]() or ""
 end
+
 function NumToRoman(num)
   return NumToRomanTb[num] or ""
 end
+
 function CompareStringsIgnoreCase(str1, str2)
   return string.lower(str1) == string.lower(str2)
 end
+
 function CheckAndShowTipsSysUnlock(ViewName, bNotShowTips)
   local bShowTips = not bNotShowTips
   local SystemUnlockModule = ModuleManager:Get("SystemUnlockModule")
@@ -1170,6 +1265,7 @@ function CheckAndShowTipsSysUnlock(ViewName, bNotShowTips)
   end
   return true
 end
+
 function CheckAndShowTipsSysUnlockBySysId(SystemId, bNotShowTips)
   local bShowTips = not bNotShowTips
   if SystemId < 0 then
@@ -1191,6 +1287,7 @@ function CheckAndShowTipsSysUnlockBySysId(SystemId, bNotShowTips)
   end
   return true
 end
+
 function ComLinkForParam(ComLinkRowName, Callback, ParamList, ExtraData)
   if "1015" == ComLinkRowName then
     ComLink(ComLinkRowName, Callback, ExtraData.HeroId, ParamList)
@@ -1207,6 +1304,7 @@ function ComLinkForParam(ComLinkRowName, Callback, ParamList, ExtraData)
     ComLink(ComLinkRowName, Callback, ParamList)
   end
 end
+
 function ComLink(ComLinkRowName, Callback, ...)
   local result, row = GetRowData(DT.DT_CommonLink, ComLinkRowName)
   if not result then
@@ -1252,6 +1350,7 @@ function ComLink(ComLinkRowName, Callback, ...)
     end
   end
 end
+
 function CommonLinkEx(ViewId, ComLinkRowName, Callback, ...)
   local result, row = GetRowData(DT.DT_CommonLink, ComLinkRowName)
   if not result then
@@ -1271,6 +1370,7 @@ function CommonLinkEx(ViewId, ComLinkRowName, Callback, ...)
   end
   return ComLink(ComLinkRowName, Callback, ...)
 end
+
 function SetLobbyPanelCurrencyList(IsShow, CurrencyIds)
   local LobbyPanelObj = UIMgr:GetLuaFromActiveView(ViewID.UI_LobbyPanel)
   if not LobbyPanelObj then
@@ -1282,9 +1382,11 @@ function SetLobbyPanelCurrencyList(IsShow, CurrencyIds)
     LobbyPanelObj.WBP_LobbyCurrencyList:SetCurrencyList(CurrencyIds)
   end
 end
+
 function GetCurrentUTCTimestamp()
   return UE.URGStatisticsLibrary.GetUTCTimestamp()
 end
+
 function GetCurrentTimestamp(IsUTC)
   if IsUTC then
     return UE.URGStatisticsLibrary.GetUTCTimestamp()
@@ -1292,6 +1394,7 @@ function GetCurrentTimestamp(IsUTC)
     return UE.URGStatisticsLibrary.GetTimestamp()
   end
 end
+
 function ListenForInputAction(ActionName, EventType, bConsume, Callback, ...)
   local Suffix = "Press"
   if EventType == UE.EInputEvent.IE_Released then
@@ -1310,6 +1413,7 @@ function ListenForInputAction(ActionName, EventType, bConsume, Callback, ...)
   end
   Widget:ListenForEnhancedInputActionTag(GameplayTag, UE.ETriggerEvent.Triggered, bConsume, Callback)
 end
+
 function IsListeningForInputAction(Widget, ActionName, EventType)
   if not ActionName then
     return false
@@ -1326,6 +1430,7 @@ function IsListeningForInputAction(Widget, ActionName, EventType)
   end
   return Widget:IsListeningForEnhancedInputActionTag(GameplayTag)
 end
+
 function StopListeningForInputAction(Widget, ActionName, EventType)
   if not ActionName then
     return false
@@ -1342,7 +1447,9 @@ function StopListeningForInputAction(Widget, ActionName, EventType)
   end
   Widget:StopListeningForEnhancedInputActionTag(GameplayTag, UE.ETriggerEvent.Triggered)
 end
+
 local str_format = string.format
+
 function string.format(s, ...)
   local params = {}
   for i, v in ipairs({
@@ -1365,7 +1472,9 @@ function string.format(s, ...)
     return ""
   end
 end
+
 local print_custom = print
+
 function print(...)
   local params = {}
   for i, v in ipairs({
@@ -1379,6 +1488,7 @@ function print(...)
   end
   return print_custom(table.unpack(params))
 end
+
 function IteratorCorrectJsonParams(JsonParams)
   if type(JsonParams) ~= "table" then
     return JsonParams
@@ -1395,18 +1505,22 @@ function IteratorCorrectJsonParams(JsonParams)
   end
   return tb
 end
+
 function RapidJsonEncode(JsonParams)
   local JsonParamsCorrect = IteratorCorrectJsonParams(JsonParams)
   local rapidjson = require("rapidjson")
   return rapidjson.encode(JsonParamsCorrect)
 end
+
 local tonumber_custom = tonumber
+
 function tonumber(target, Base)
   if type(target) == "userdata" then
     target = tostring(target)
   end
   return tonumber_custom(target, Base)
 end
+
 function LinkPurchaseConfirm(LinkId, ParamList)
   if tonumber(LinkId) ~= 1007 then
     return false
@@ -1414,12 +1528,14 @@ function LinkPurchaseConfirm(LinkId, ParamList)
   ComLink(LinkId, ParamList[2], ParamList[1], 1)
   return true
 end
+
 function ChangeLobbyCamera(Outer, RowName, BlendTimeParam, BlendExpParam)
   local BlendTime = BlendTimeParam or 0
   local BlendExp = BlendExpParam or 0
   UE.URGBlueprintLibrary.ChangeLobbyCamera(Outer, RowName, BlendTime, BlendExp)
   LogicRole.ChangeRoleMainTransform(RowName)
 end
+
 function GetCurSceneStatus()
   local world = GameInstance:GetWorld()
   local PC = UE.UGameplayStatics.GetPlayerController(world, 0)
@@ -1428,6 +1544,7 @@ function GetCurSceneStatus()
   end
   return UE.ESceneStatus.None
 end
+
 function GetViewNameByViewId(_ViewId)
   for k, v in pairs(ViewID) do
     if v == _ViewId then
@@ -1436,6 +1553,7 @@ function GetViewNameByViewId(_ViewId)
   end
   return nil
 end
+
 function GetLuaInscriptionByID(InscriptionID)
   local Path = "Ins_" .. InscriptionID
   if Path then
@@ -1443,6 +1561,7 @@ function GetLuaInscriptionByID(InscriptionID)
   end
   return nil
 end
+
 function CalcTartUnixTimeStamp(Hour)
   local current_time = os.time()
   local current_date = os.date("*t", current_time)
@@ -1471,6 +1590,7 @@ function CalcTartUnixTimeStamp(Hour)
   end
   return result_timestamp
 end
+
 function GetNextWeeklyRefreshTimeStamp(Hour, WeekDay)
   local current_time = os.time()
   local current_date = os.date("*t", current_time)
@@ -1492,6 +1612,7 @@ function GetNextWeeklyRefreshTimeStamp(Hour, WeekDay)
   end
   return result_timestamp
 end
+
 function GetNextMonthRefreshTimeStamp(Hour, MonthDay)
   if nil == Hour then
     Hour = 5
@@ -1519,6 +1640,7 @@ function GetNextMonthRefreshTimeStamp(Hour, MonthDay)
   local result_timestamp = os.time(nextMonthFirstDay) - current_time
   return result_timestamp
 end
+
 local gammaToLinear = function(color)
   if color <= 0.04045 then
     return color / 12.92
@@ -1526,6 +1648,7 @@ local gammaToLinear = function(color)
     return ((color + 0.055) / 1.055) ^ 2.4
   end
 end
+
 function HexToFLinearColor(hex)
   if type(hex) ~= "string" then
     error("Invalid hex color, must be a string.")
@@ -1545,6 +1668,7 @@ function HexToFLinearColor(hex)
   end
   return UE.FLinearColor(r, g, b, a)
 end
+
 function DelayPlayAnimation(Target, AniName, DelayTime)
   if not Target then
     return nil
@@ -1564,6 +1688,7 @@ function DelayPlayAnimation(Target, AniName, DelayTime)
   }, DelayTime, false)
   return delayTimerHandle
 end
+
 function UrlEncode(str)
   if str then
     str = string.gsub(str, "\n", "\r\n")
@@ -1574,9 +1699,11 @@ function UrlEncode(str)
   end
   return str
 end
+
 function GetTbSkinRowNameBySkinID(SkinID)
   return tonumber("10" .. tostring(SkinID))
 end
+
 function SetInputMode_GameAndUIEx(PC, InWidgetToFocus, InMouseLockMode, bHideCursorDuringCapture)
   local widgetName = ""
   if InWidgetToFocus then
@@ -1585,6 +1712,7 @@ function SetInputMode_GameAndUIEx(PC, InWidgetToFocus, InMouseLockMode, bHideCur
   print("LuaCommon SetInputMode_GameAndUIEx", widgetName, InMouseLockMode, bHideCursorDuringCapture)
   UE.UWidgetBlueprintLibrary.SetInputMode_GameAndUIEx(PC, InWidgetToFocus, InMouseLockMode, bHideCursorDuringCapture)
 end
+
 function GetCurInputType()
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   local CommonInputSubsystem = UE.USubsystemBlueprintLibrary.GetLocalPlayerSubsystem(PC, UE.UCommonInputSubsystem:StaticClass())
@@ -1593,6 +1721,7 @@ function GetCurInputType()
   end
   return nil
 end
+
 function RandomListByWeight(Values, Weights)
   assert(#Values == #Weights)
   local tinsert = table.insert
@@ -1671,12 +1800,14 @@ function RandomListByWeight(Values, Weights)
   end
   return Values[idx], Weights[idx]
 end
+
 function GetCustomZOrderByLayer(CustomLayerParam)
   if CustomLayerParam == UE.ECustomLayer.ELayer_None then
     return -1
   end
   return CustomLayerParam * 100000
 end
+
 function SetGroundLevelByViewID(ViewId)
   if 1 == LogicLobby.FliterShowGroundViewList[ViewId] then
     return
@@ -1688,6 +1819,7 @@ function SetGroundLevelByViewID(ViewId)
     LogicLobby.ShowOrHideGround(false)
   end
 end
+
 function LuaAddClickStatistics(EventName)
   local UserClickStatisticsMgr = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUserClickStatistics:StaticClass())
   if UserClickStatisticsMgr then
@@ -1695,6 +1827,7 @@ function LuaAddClickStatistics(EventName)
     UserClickStatisticsMgr:AddClickStatistics(EventName)
   end
 end
+
 function GetTimeUntilTarget(Day, Hour)
   local nowTimeZone = GetLocalTimestampByServerTimeZone()
   local current = os.date("*t", nowTimeZone)
@@ -1719,6 +1852,7 @@ function GetTimeUntilTarget(Day, Hour)
   local hours = math.floor(diff % 86400 / 3600)
   return days, hours
 end
+
 function CheckIsChannelCommunicateAllowed(ChannelUserID)
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   local PrivacySubSystem = UE.USubsystemBlueprintLibrary.GetLocalPlayerSubsystem(PC, UE.UUserPrivacySubsystem:StaticClass())
@@ -1733,6 +1867,7 @@ function CheckIsChannelCommunicateAllowed(ChannelUserID)
   end
   return true
 end
+
 function CheckIsInNormal(ModeId)
   local SeasonModule = ModuleManager:Get("SeasonModule")
   if SeasonModule then
@@ -1740,6 +1875,7 @@ function CheckIsInNormal(ModeId)
   end
   return false
 end
+
 function GetCurNormalMode()
   local SeasonModule = ModuleManager:Get("SeasonModule")
   if SeasonModule then
@@ -1747,6 +1883,7 @@ function GetCurNormalMode()
   end
   return TableEnums.ENUMGameMode.NORMAL
 end
+
 function GetLuaConstValueByKey(Key)
   local constsTb = LuaTableMgr.GetLuaTableByName(TableNames.TBConsts)
   if constsTb then
@@ -1754,6 +1891,7 @@ function GetLuaConstValueByKey(Key)
   end
   return nil
 end
+
 function CheckNSLocTbIsValid(NSLocTb)
   if not NSLocTb then
     return false
@@ -1763,6 +1901,7 @@ function CheckNSLocTbIsValid(NSLocTb)
   end
   return true
 end
+
 function MakeGameplayAttributeByName(InAttributeName)
   local Result, LeftName, RightName = UE.UKismetStringLibrary.Split(InAttributeName, ".", nil, nil)
   if Result then
@@ -1774,6 +1913,7 @@ function MakeGameplayAttributeByName(InAttributeName)
   end
   return nil
 end
+
 function LerpColor(startColor, endColor, alpha)
   local Result = UE.FLinearColor()
   Result.R = startColor.R + (endColor.R - startColor.R) * alpha
@@ -1782,16 +1922,19 @@ function LerpColor(startColor, endColor, alpha)
   Result.A = startColor.A + (endColor.A - startColor.A) * alpha
   return Result
 end
+
 function OpenPandorApp(AppId, Souce)
   local PandorSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGPandoraSubsystem:StaticClass())
   PandorSubsystem:OpenApp(AppId, Souce)
 end
+
 function ClosePandorApp(AppId)
   local PandorSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGPandoraSubsystem:StaticClass())
   if PandorSubsystem then
     PandorSubsystem:CloseApp(AppId)
   end
 end
+
 function FindAndShowActorList(TagName)
   local AllActors = UE.UGameplayStatics.GetAllActorsWithTag(GameInstance, TagName, nil)
   if not AllActors then
@@ -1809,6 +1952,7 @@ function FindAndShowActorList(TagName)
     end
   end
 end
+
 function FindAndHideActorList(TagName)
   local AllActors = UE.UGameplayStatics.GetAllActorsWithTag(GameInstance, TagName, nil)
   if not AllActors then
@@ -1826,6 +1970,7 @@ function FindAndHideActorList(TagName)
     end
   end
 end
+
 function IsNewMonth(InputTimestamp, CurTimestamp)
   local CurrentTimestamp = CurTimestamp or os.time()
   local InputData = os.date("*t", InputTimestamp)
@@ -1836,6 +1981,7 @@ function IsNewMonth(InputTimestamp, CurTimestamp)
     return false
   end
 end
+
 function GetRegionId()
   local RGAccountSubsystem = UE.URGAccountSubsystem.Get()
   if RGAccountSubsystem then
@@ -1844,6 +1990,7 @@ function GetRegionId()
     return nil
   end
 end
+
 function GetAdultCheckStatus()
   local RGAccountSubsystem = UE.URGAccountSubsystem.Get()
   if RGAccountSubsystem then
@@ -1852,6 +1999,7 @@ function GetAdultCheckStatus()
     return nil
   end
 end
+
 function IsPlayerAdult()
   local RGAccountSubsystem = UE.URGAccountSubsystem.Get()
   if not RGAccountSubsystem then
@@ -1864,6 +2012,7 @@ function IsPlayerAdult()
     return 1 == AdultCheckStatus
   end
 end
+
 function SetExpireAtColor(Image, ExpireAt)
   if nil ~= ExpireAt and "" ~= ExpireAt and "0" ~= ExpireAt then
     local ErrorColor = UE.FLinearColor(0.772549, 0.239216, 0.290196, 1.0)
@@ -1878,6 +2027,7 @@ function SetExpireAtColor(Image, ExpireAt)
   end
   UpdateVisibility(Image, nil ~= ExpireAt and "" ~= ExpireAt and "0" ~= ExpireAt)
 end
+
 function ComInitProEff(ItemID, TargetWidget)
   if not IsValidObj(TargetWidget) then
     return
@@ -1903,6 +2053,7 @@ function ComInitProEff(ItemID, TargetWidget)
     TargetWidget:InitComProEff(ItemId)
   end
 end
+
 function ConvertISOCountryCodeToAlpha2Code(CountryCode)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBISOCountryCode, tonumber(CountryCode))
   return Result and RowInfo.Alpha_2 or ""

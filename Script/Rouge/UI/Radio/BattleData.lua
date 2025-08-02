@@ -1,4 +1,5 @@
 BattleData = BattleData or {IsInit = false}
+
 function BattleData.Init()
   if BattleData.IsInit then
     print("BattleData \229\183\178\229\136\157\229\167\139\229\140\150")
@@ -27,6 +28,7 @@ function BattleData.Init()
   ListenObjectMessage(nil, "AI.OnAISpawned", GameInstance, BattleData.BindOnAISpawned)
   ListenObjectMessage(nil, "FinishPlayMovie", GameInstance, BattleData.BindOnFinishPlayMovie)
 end
+
 function BattleData:BindOnMakeDamage(SourceActor, TargetActor, Params)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not SourceActor then
@@ -59,34 +61,42 @@ function BattleData:BindOnMakeDamage(SourceActor, TargetActor, Params)
     LogicRadio.ExecuteRadioConditionByConditionId(LogicCondition.Condition.KillAI, RadioParams)
   end
 end
+
 function BattleData:BindOnSpawnTaskStart(TaskId)
   BattleData.CurStartTaskId = TaskId
   LogicRadio.ExecuteRadioConditionByConditionId(LogicCondition.Condition.SpawnTaskStart, {})
 end
+
 function BattleData:BindOnSpawnTaskFinish(TaskId)
   BattleData.CurEndTaskId = TaskId
   LogicRadio.ExecuteRadioConditionByConditionId(LogicCondition.Condition.SpawnTaskEnd, {})
 end
+
 function BattleData.BindOnAISpawned(AI)
   BattleData.CurSpawnAIId = AI:GetTypeID()
   LogicRadio.ExecuteRadioConditionByConditionId(LogicCondition.Condition.MonsterAppear, {})
 end
+
 function BattleData.BindOnFinishPlayMovie(MovieName)
   print("Current finish movie name:", MovieName)
   BattleData.CurMovieName = MovieName
   LogicRadio.ExecuteRadioConditionByConditionId(LogicCondition.Condition.MovieFinish, {})
 end
+
 function BattleData.BindOnSequenceFinished(SequenceId)
   LogicRadio.ExecuteRadioConditionByConditionId(LogicCondition.Condition.LevelSequenceFinish, {})
 end
+
 function BattleData.SetCurLevelCleanId(Id)
   BattleData.CurLevelCleanId = Id
   LogicRadio.ExecuteRadioConditionByConditionId(LogicCondition.Condition.CleanLevel, {})
 end
+
 function BattleData.SetCurTriggerSkillId(SkillId)
   BattleData.CurTriggerSkillId = SkillId
   LogicRadio.ExecuteRadioConditionByConditionId(LogicCondition.Condition.TriggerBossSkill, {})
 end
+
 function BattleData.SetBossHealthInfo(Id, HealthPercent)
   if not BattleData.BossHealthInfo then
     BattleData.BossHealthInfo = {}
@@ -94,6 +104,7 @@ function BattleData.SetBossHealthInfo(Id, HealthPercent)
   BattleData.BossHealthInfo[Id] = HealthPercent
   LogicRadio.ExecuteRadioConditionByConditionId(LogicCondition.Condition.BossHealthChanged, {})
 end
+
 function BattleData.Clear()
   BattleData.KillAIInfo = {}
   BattleData.CurLevelCleanId = 0

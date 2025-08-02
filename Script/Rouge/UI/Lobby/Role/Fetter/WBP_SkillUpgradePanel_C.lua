@@ -1,9 +1,11 @@
 local rapidjson = require("rapidjson")
 local WBP_SkillUpgradePanel_C = UnLua.Class()
+
 function WBP_SkillUpgradePanel_C:Construct()
   self:Hide()
   self.Btn_Upgrade.OnClicked:Add(self, WBP_SkillUpgradePanel_C.BindOnUpgradeButtonClicked)
 end
+
 function WBP_SkillUpgradePanel_C:BindOnUpgradeButtonClicked()
   local Param = {
     heroId = self.FetterHeroId,
@@ -33,6 +35,7 @@ function WBP_SkillUpgradePanel_C:BindOnUpgradeButtonClicked()
     end
   })
 end
+
 function WBP_SkillUpgradePanel_C:Show(FetterHeroId)
   self.FetterHeroId = FetterHeroId
   self:SetVisibility(UE.ESlateVisibility.Visible)
@@ -93,6 +96,7 @@ function WBP_SkillUpgradePanel_C:Show(FetterHeroId)
     end
   end
 end
+
 function WBP_SkillUpgradePanel_C:UpdateUpgradeButtonStatus(SkillLevelInfo)
   local CurSkillLevel = DataMgr.GetSkillLevelByType(self.FetterHeroId, UE.ERoleSkillType.RST_FetterSkill)
   local MaxLevel = 1
@@ -107,7 +111,9 @@ function WBP_SkillUpgradePanel_C:UpdateUpgradeButtonStatus(SkillLevelInfo)
     self.Btn_Upgrade:SetIsEnabled(true)
   end
 end
+
 function WBP_SkillUpgradePanel_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return WBP_SkillUpgradePanel_C

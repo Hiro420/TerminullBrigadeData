@@ -6,14 +6,17 @@ local MailData = require("Modules.Mail.MailData")
 local MailViewModel = CreateDefaultViewModel()
 MailViewModel.propertyBindings = {}
 MailViewModel.subViewModels = {}
+
 function MailViewModel:OnInit()
   self.Super.OnInit(self)
   EventSystem.AddListener(self, EventDef.Mail.OnUpdateAllMailListInfo, self.BindOnUpdateAllMailListInfo)
   EventSystem.AddListener(self, EventDef.Mail.OnChangeMailItemSelected, self.BindOnChangeMailItemSelected)
 end
+
 function MailViewModel:BindOnUpdateAllMailListInfo()
   self:RefreshMailItemList()
 end
+
 function MailViewModel:BindOnChangeMailItemSelected(DataObj)
   local View = self:GetFirstView()
   if not View then
@@ -21,6 +24,7 @@ function MailViewModel:BindOnChangeMailItemSelected(DataObj)
   end
   View.MailItemListView:BP_SetSelectedItem(DataObj)
 end
+
 function MailViewModel:RefreshMailItemList()
   local View = self:GetFirstView()
   if not View then
@@ -79,10 +83,12 @@ function MailViewModel:RefreshMailItemList()
   end
   View.Txt_Num:SetText(string.format("%d/%d", table.count(MailData:GetAllMailInfoList()), View.MaxMailNum))
 end
+
 function MailViewModel:OnShutdown()
   self.Super.OnShutdown(self)
   MailData:ClearAllMailInfoList()
   EventSystem.RemoveListener(EventDef.Mail.OnUpdateAllMailListInfo, self.BindOnUpdateAllMailListInfo, self)
   EventSystem.RemoveListener(EventDef.Mail.OnChangeMailItemSelected, self.BindOnChangeMailItemSelected, self)
 end
+
 return MailViewModel

@@ -1,6 +1,7 @@
 local GMConfig = require("GameConfig.GM.GMConfig")
 local WBP_AddLobbyResourceCurrency_C = UnLua.Class()
 local CurSelectItemIndex = 0
+
 function WBP_AddLobbyResourceCurrency_C:InitWidget()
   for TypeName, TypeAlias in pairs(TableEnumsAlias.ENUMResourceType) do
     if not GMConfig.FilterResType[TypeName] then
@@ -10,11 +11,13 @@ function WBP_AddLobbyResourceCurrency_C:InitWidget()
   end
   self.Overridden.InitWidget(self)
 end
+
 function WBP_AddLobbyResourceCurrency_C:OnTypeButtonClick(Button, ItemData)
   local index = ItemData.Index + 1
   self:GetResourceItemName(self.TypeIdList:Get(index))
   self.Overridden.OnTypeButtonClick(self, Button, ItemData)
 end
+
 function WBP_AddLobbyResourceCurrency_C:GetResourceItemName(TypeId)
   local ResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   if not ResourceTable then
@@ -29,6 +32,7 @@ function WBP_AddLobbyResourceCurrency_C:GetResourceItemName(TypeId)
     end
   end
 end
+
 function WBP_AddLobbyResourceCurrency_C:OnItemButtonClick(Button, ItemData)
   CurSelectItemIndex = ItemData.Index + 1
   local ResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
@@ -36,6 +40,7 @@ function WBP_AddLobbyResourceCurrency_C:OnItemButtonClick(Button, ItemData)
   self.ItemId = self.IdList:Get(CurSelectItemIndex)
   self.Overridden.ShowCustomPanel(self, Info.ID, Info.Name, Info.Desc)
 end
+
 function WBP_AddLobbyResourceCurrency_C:OnSubmitClick(Num)
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
   local cheatManager = PC.CheatManager
@@ -44,4 +49,5 @@ function WBP_AddLobbyResourceCurrency_C:OnSubmitClick(Num)
   print(self.IdList:Get(CurSelectItemIndex))
   cheatManager:AddLobbyResourceCurrency(self.IdList:Get(CurSelectItemIndex), Num)
 end
+
 return WBP_AddLobbyResourceCurrency_C

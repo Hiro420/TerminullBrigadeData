@@ -1,5 +1,6 @@
 local PuzzleData = require("Modules.Puzzle.PuzzleData")
 local WBP_PuzzleCoreAttrListItem = UnLua.Class()
+
 function WBP_PuzzleCoreAttrListItem:Show(AttrId, AttrValue, CompareValue, MutationType)
   self.AttrId = AttrId
   self.AttrValue = AttrValue
@@ -41,15 +42,19 @@ function WBP_PuzzleCoreAttrListItem:Show(AttrId, AttrValue, CompareValue, Mutati
     self.RGStateController_Mutation:ChangeStatus("NegativeMutation")
   end
 end
+
 function WBP_PuzzleCoreAttrListItem:ChangeArrowColor(InColor)
   self.Img_Arrow:SetColorAndOpacity(InColor)
 end
+
 function WBP_PuzzleCoreAttrListItem:PlaySwitchAnim(...)
   self:PlayAnimation(self.Ani_switch)
 end
+
 function WBP_PuzzleCoreAttrListItem:PlayUpgradeSuccessAnim(...)
   self:PlayAnimation(self.Anim_Numerical_Add)
 end
+
 function WBP_PuzzleCoreAttrListItem:PlayMutationAnim(MutationType)
   if self.MutationType == EMutationType.Normal then
     if MutationType == EMutationType.NegaMutation then
@@ -59,9 +64,11 @@ function WBP_PuzzleCoreAttrListItem:PlayMutationAnim(MutationType)
     self:PlayAnimation(self.Anim_Attribute_IN)
   end
 end
+
 function WBP_PuzzleCoreAttrListItem:Hide(...)
   UpdateVisibility(self, false)
   self:StopAllAnimations()
   self.MutationType = EMutationType.Normal
 end
+
 return WBP_PuzzleCoreAttrListItem

@@ -1,15 +1,19 @@
 local UnLua = _G.UnLua
 local ComPortraitItem = UnLua.Class()
+
 function ComPortraitItem:Construct()
   self.Overridden.Construct(self)
 end
+
 function ComPortraitItem:Destruct()
   self.Overridden.Destruct(self)
 end
+
 function ComPortraitItem:InitComPortraitItem(IconPath, EffectPath)
   SetImageBrushByPath(self.URGImageHeadIcon, IconPath)
   self:InitEffect(EffectPath)
 end
+
 function ComPortraitItem:InitComPortraitItemByPortraitID(PortraitID)
   local result, portraitRow = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBPortrait, PortraitID)
   if result then
@@ -17,16 +21,19 @@ function ComPortraitItem:InitComPortraitItemByPortraitID(PortraitID)
     self:InitEffect(portraitRow.EffectPath)
   end
 end
+
 function ComPortraitItem:InitComPortraitItemByBrush(Brush, EffectPath)
   self.URGImageHeadIcon:SetBrush(Brush)
   self:InitEffect(EffectPath)
 end
+
 function ComPortraitItem:InitEffect(EffectPath)
   local EffObj = self:GetOrCreateEffObj(EffectPath)
   if not EffObj then
     UpdateVisibility(self.CanvasPanelEffect, false)
   end
 end
+
 function ComPortraitItem:GetOrCreateEffObj(EffectPath)
   if table.IsEmpty(self.EffMap) then
     self.EffMap = {}
@@ -61,4 +68,5 @@ function ComPortraitItem:GetOrCreateEffObj(EffectPath)
     return nil
   end
 end
+
 return ComPortraitItem

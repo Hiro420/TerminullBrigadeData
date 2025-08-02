@@ -1,5 +1,6 @@
 local SkinData = require("Modules.Appearance.Skin.SkinData")
 local BP_DisplayWeapon_C = UnLua.Class()
+
 function BP_DisplayWeapon_C:OnSkinChanged(NewSkinId)
   self.Overridden.OnSkinChanged(self, NewSkinId)
   self:RemoveHeroDithering(NewSkinId)
@@ -35,9 +36,11 @@ function BP_DisplayWeapon_C:OnSkinChanged(NewSkinId)
     self.bShowDrawCardShowMatEffect = false
   end
 end
+
 function BP_DisplayWeapon_C:GlitchAniEnd()
   self:UpdateSkin()
 end
+
 function BP_DisplayWeapon_C:BP_GetCurWeaponResID()
   local weaponResID = SkinData.GetWeaponResIdBySkinId(self.CurrentSkinId)
   if weaponResID then
@@ -45,6 +48,7 @@ function BP_DisplayWeapon_C:BP_GetCurWeaponResID()
   end
   return -1
 end
+
 function BP_DisplayWeapon_C:RemoveHeroDithering(SkinId)
   self:UpdateMat(self.Mesh)
   local result, row = GetRowData(DT.DT_DisplaySkin, tostring(SkinId))
@@ -57,6 +61,7 @@ function BP_DisplayWeapon_C:RemoveHeroDithering(SkinId)
     end
   end
 end
+
 function BP_DisplayWeapon_C:UpdateMat(Mesh)
   if UE.RGUtil.IsUObjectValid(Mesh) then
     for i, v in iterator(Mesh.OverrideMaterials) do
@@ -73,12 +78,15 @@ function BP_DisplayWeapon_C:UpdateMat(Mesh)
     end
   end
 end
+
 function BP_DisplayWeapon_C:InitPreChanged(OldSkinId, bShowGlitchMatEffect, bShowDrawCardShowMatEffect)
   self.bShowGlitchMatEffect = bShowGlitchMatEffect
   self.bShowDrawCardShowMatEffect = bShowDrawCardShowMatEffect
   self.OldSkinId = OldSkinId
 end
+
 function BP_DisplayWeapon_C:HideDrawCardShowMatEffect()
   self:UpdateSkin()
 end
+
 return BP_DisplayWeapon_C

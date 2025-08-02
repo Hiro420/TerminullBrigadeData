@@ -1,4 +1,5 @@
 local PlayerInfoChangeHeroTips = Class()
+
 function PlayerInfoChangeHeroTips:InitPlayerInfoChangeHeroTips()
   self:StopAnimation(self.Ani_out)
   if not CheckIsVisility(self) then
@@ -35,6 +36,7 @@ function PlayerInfoChangeHeroTips:InitPlayerInfoChangeHeroTips()
   HideOtherItem(self.WrapBoxRoleList, idx)
   self.RGToggleGroupRoleItem:SelectId(selectId)
 end
+
 function PlayerInfoChangeHeroTips:OnHeroSelect(SelectId)
   if DataMgr.IsOwnHero(SelectId) then
     if self.viewModel:GetCurShowHeroId() ~= SelectId then
@@ -44,18 +46,22 @@ function PlayerInfoChangeHeroTips:OnHeroSelect(SelectId)
     self.RGToggleGroupRoleItem:SelectId(self.viewModel:GetCurShowHeroId())
   end
 end
+
 function PlayerInfoChangeHeroTips:OnCheckCanSelectEvent(SelectId)
   return DataMgr.IsOwnHero(SelectId)
 end
+
 function PlayerInfoChangeHeroTips:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     UpdateVisibility(self, false)
   end
 end
+
 function PlayerInfoChangeHeroTips:Hide()
   self.RGToggleGroupRoleItem.OnCheckStateChanged:Remove(self, self.OnHeroSelect)
   self.RGToggleGroupRoleItem.OnCheckCanSelectEvent:Unbind()
   SetHitTestInvisible(self)
   self:PlayAnimation(self.Ani_out)
 end
+
 return PlayerInfoChangeHeroTips

@@ -1,4 +1,5 @@
 local PersonalChatInfoItemView = UnLua.Class()
+
 function PersonalChatInfoItemView:OnListItemObjectSet(DataObj)
   self.DataObj = DataObj
   if self.DataObj.Info.IsTime then
@@ -21,12 +22,15 @@ function PersonalChatInfoItemView:OnListItemObjectSet(DataObj)
     end
   end
 end
+
 function PersonalChatInfoItemView:BP_OnEntryReleased()
   self.DataObj = nil
 end
+
 function PersonalChatInfoItemView:OnMouseButtonDown(MyGeometry, MouseEvent)
   local MousePosition = UE.UWidgetLayoutLibrary.GetMousePositionOnViewport(self)
   UIMgr:Show(ViewID.UI_ContactPersonOperateButtonPanel, nil, MousePosition, self.DataObj.PlayerInfo, EOperateButtonPanelSourceFromType.PrivateChat, self.DataObj.Info.Msg)
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 return PersonalChatInfoItemView

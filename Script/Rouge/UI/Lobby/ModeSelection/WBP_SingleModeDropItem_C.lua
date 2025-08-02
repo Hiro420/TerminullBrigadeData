@@ -1,4 +1,5 @@
 local WBP_SingleModeDropItem_C = UnLua.Class()
+
 function WBP_SingleModeDropItem_C:Show(ResourceId, DropRatio, Num)
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.ResourceId = ResourceId
@@ -10,6 +11,7 @@ function WBP_SingleModeDropItem_C:Show(ResourceId, DropRatio, Num)
     self.Txt_RatioNum:SetText(DropRatio)
   end
 end
+
 function WBP_SingleModeDropItem_C:GetToolTipWidget()
   if not self.ItemToolTipWidget or not self.ItemToolTipWidget:IsValid() then
     self.ItemToolTipWidget = GetItemDetailWidget(self.ResourceId)
@@ -17,7 +19,9 @@ function WBP_SingleModeDropItem_C:GetToolTipWidget()
   self.ItemToolTipWidget:InitCommonItemDetail(self.ResourceId)
   return self.ItemToolTipWidget
 end
+
 function WBP_SingleModeDropItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return WBP_SingleModeDropItem_C

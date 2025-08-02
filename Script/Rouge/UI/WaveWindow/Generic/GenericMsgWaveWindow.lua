@@ -1,14 +1,17 @@
 local GenericMsgWaveWindow = UnLua.Class()
+
 function GenericMsgWaveWindow:InitGenericMsgWaveWindow(OldModifyData, NewModifyData)
   self.WBP_GenericModifyMsgItemLeft:InitGenericModifyMsgItem(OldModifyData, self, true)
   self.WBP_GenericModifyMsgItemRight:InitGenericModifyMsgItem(NewModifyData, self, false)
   self.WBP_InteractTipWidget:BindInteractAndClickEvent(self, self.OnCancelClick)
 end
+
 function GenericMsgWaveWindow:InitSpecificReplaceMsgWaveWindow(OldInscription, NewInscription)
   self.WBP_GenericModifyMsgItemLeft:InitSpecificModifyMsgItem(OldInscription, self, true)
   self.WBP_GenericModifyMsgItemRight:InitSpecificModifyMsgItem(NewInscription, self, false)
   self.WBP_InteractTipWidget:BindInteractAndClickEvent(self, self.OnCancelClick)
 end
+
 function GenericMsgWaveWindow:ShowModifyTips(bIsShow, ModifyData, bLeft)
   local logicCommandDataSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.ULogicCommandDataSubSystem:StaticClass())
   if not logicCommandDataSubsystem then
@@ -32,6 +35,7 @@ function GenericMsgWaveWindow:ShowModifyTips(bIsShow, ModifyData, bLeft)
     end
   end
 end
+
 function GenericMsgWaveWindow:ShowSpecificTips(bIsShow, InscriptionID, bLeft)
   if bLeft then
     UpdateVisibility(self.WBP_GenericModifyBagTipsLeft, bIsShow)
@@ -45,4 +49,5 @@ function GenericMsgWaveWindow:ShowSpecificTips(bIsShow, InscriptionID, bLeft)
     end
   end
 end
+
 return GenericMsgWaveWindow

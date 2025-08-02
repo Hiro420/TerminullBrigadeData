@@ -4,10 +4,13 @@ local EChipSlotType = {
   Equiped = "Equiped"
 }
 local ChipSeasonSlotItem = UnLua.Class()
+
 function ChipSeasonSlotItem:Construct()
 end
+
 function ChipSeasonSlotItem:Destruct()
 end
+
 function ChipSeasonSlotItem:InitChipSlotItem(EquipChipData, bUnLock, ParentView, Slot, EquipSlot)
   UpdateVisibility(self, true, true)
   self.ParentView = ParentView
@@ -49,11 +52,13 @@ function ChipSeasonSlotItem:InitChipSlotItem(EquipChipData, bUnLock, ParentView,
     end
   end
 end
+
 function ChipSeasonSlotItem:Hide()
   self.EquipChipData = nil
   self.ParentView = nil
   UpdateVisibility(self, false)
 end
+
 function ChipSeasonSlotItem:OnMouseEnter(MyGeometry, MouseEvent)
   self.RGStateControllerHover:ChangeStatus(EHover.Hover)
   if not UE.RGUtil.IsUObjectValid(self.ParentView) then
@@ -64,6 +69,7 @@ function ChipSeasonSlotItem:OnMouseEnter(MyGeometry, MouseEvent)
   end
   self.ParentView:ShowChipAttrListTip(true, self.EquipChipData, self.EquipChipData.TbChipData.Slot)
 end
+
 function ChipSeasonSlotItem:OnMouseLeave(MyGeometry, MouseEvent)
   self.RGStateControllerHover:ChangeStatus(EHover.UnHover)
   if not UE.RGUtil.IsUObjectValid(self.ParentView) then
@@ -71,6 +77,7 @@ function ChipSeasonSlotItem:OnMouseLeave(MyGeometry, MouseEvent)
   end
   self.ParentView:ShowChipAttrListTip(false)
 end
+
 function ChipSeasonSlotItem:OnMouseButtonDown(MyGeometry, MouseEvent)
   if not UE.RGUtil.IsUObjectValid(self.ParentView) then
     return
@@ -80,4 +87,5 @@ function ChipSeasonSlotItem:OnMouseButtonDown(MyGeometry, MouseEvent)
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 return ChipSeasonSlotItem

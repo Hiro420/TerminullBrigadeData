@@ -1,0 +1,2783 @@
+[
+  {
+    "ID": 2011001,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011002,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011005,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011006,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011009,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011012,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011013,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011014,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011015,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011016,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011017,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011018,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010011,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010012,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010013,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010021,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010022,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010023,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010031,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010032,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010033,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010041,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010042,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010043,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010051,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010052,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010053,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010061,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010062,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010063,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010071,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010072,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010073,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010081,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010082,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010083,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010091,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010092,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010093,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010101,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010102,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010103,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010111,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010112,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010113,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010121,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010122,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010123,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010131,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010132,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010133,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010141,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010142,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010143,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010151,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010152,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010153,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010161,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010162,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010163,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010171,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010172,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010173,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010181,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010182,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2010183,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021001,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021002,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021003,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021004,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021005,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021006,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021007,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021008,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021009,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020001,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020002,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020003,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020011,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020012,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020013,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020021,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020022,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020023,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020031,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020032,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020033,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020041,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020042,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020043,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020051,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020052,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020053,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020061,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020062,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020063,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020071,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020072,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020073,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020081,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020082,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020083,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020091,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020092,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020093,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020101,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020102,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020103,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020111,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020112,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020113,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020121,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020122,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020123,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020131,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020132,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020133,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020141,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020142,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020143,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020151,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020152,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020153,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020161,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020162,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020163,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020171,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020172,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2020173,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2000001,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2000002,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2000003,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2000004,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2000005,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2000006,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2000007,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2000008,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2000009,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2000010,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2000011,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2000012,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021011,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021012,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021013,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021014,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021015,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021016,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021017,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021018,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2021019,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011101,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011102,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011103,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011104,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011105,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011106,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011107,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011108,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011109,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011110,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2011111,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2990001,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2990002,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2990003,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2990004,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2990005,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2990006,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2990007,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "完成({0}/{1})场对局解锁",
+    "unlockTaskId": 300105
+  },
+  {
+    "ID": 2990008,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "完成({0}/{1})场对局解锁",
+    "unlockTaskId": 300104
+  },
+  {
+    "ID": 2990009,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "完成({0}/{1})场对局解锁",
+    "unlockTaskId": 300105
+  },
+  {
+    "ID": 2990010,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2990011,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "完成({0}/{1})场对局解锁",
+    "unlockTaskId": 300106
+  },
+  {
+    "ID": 2990012,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "完成({0}/{1})场对局解锁",
+    "unlockTaskId": 300101
+  },
+  {
+    "ID": 2990013,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "完成({0}/{1})场对局解锁",
+    "unlockTaskId": 300101
+  },
+  {
+    "ID": 2990014,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2990015,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2990016,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "完成({0}/{1})场对局解锁",
+    "unlockTaskId": 300102
+  },
+  {
+    "ID": 2990017,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "完成({0}/{1})场对局解锁",
+    "unlockTaskId": 300102
+  },
+  {
+    "ID": 2990018,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "完成({0}/{1})场对局解锁",
+    "unlockTaskId": 300105
+  },
+  {
+    "ID": 2990019,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "完成({0}/{1})场对局解锁",
+    "unlockTaskId": 300104
+  },
+  {
+    "ID": 2990020,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "完成({0}/{1})场对局解锁",
+    "unlockTaskId": 300103
+  },
+  {
+    "ID": 2990021,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "完成({0}/{1})场对局解锁",
+    "unlockTaskId": 300103
+  },
+  {
+    "ID": 2990022,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2990023,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2990024,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2990025,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2990026,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2001013,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2001014,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2001015,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2001016,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2001017,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2001018,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2001019,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2001020,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2001021,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2001022,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2001023,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2001024,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2001025,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2061000,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2061001,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2061002,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2061003,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2061004,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2061005,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2061006,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2061007,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2061008,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2061009,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 9040110,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 9040111,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 9040112,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 9040113,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 9040114,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 9040115,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 9040116,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 9040117,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 9040118,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 9040119,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 9040120,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 9040121,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 9040122,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 9040123,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 9040124,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 9040125,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 9040200,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031001,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031002,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031003,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031004,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031005,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031006,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031007,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031008,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031009,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031010,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031011,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031012,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031013,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031014,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031015,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031016,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031017,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2031018,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2091101,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2091102,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2091103,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2091104,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2091105,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2091106,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2091107,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2091108,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2091109,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2091110,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2091111,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2091112,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2091113,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2091116,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2081000,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2081001,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2081002,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2081003,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2081004,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2081005,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2081006,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2081007,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2081008,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2081009,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2001026,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2081010,
+    "infinitePropType": 1,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "提升角色熟练度获取",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 2081011,
+    "infinitePropType": 1,
+    "initunlock": true,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8000102,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8000103,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8000104,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8000106,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8000105,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8010102,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8010103,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8010104,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8010106,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8010105,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8020102,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8020103,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8020104,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8020106,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8020105,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8040102,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8040103,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8040104,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8030106,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8040105,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8080102,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8080103,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8080104,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8080105,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8990101,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8990103,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8990105,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8060102,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8060103,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8060104,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8060106,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8060105,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8030102,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8030103,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8030104,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8040106,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  },
+  {
+    "ID": 8030105,
+    "infinitePropType": 2,
+    "initunlock": false,
+    "backgroundEffect": "",
+    "unlockMethodJump": "",
+    "unlockMethodDesc": "",
+    "unlockTaskId": 0
+  }
+]

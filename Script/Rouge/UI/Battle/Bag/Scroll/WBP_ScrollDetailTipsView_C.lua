@@ -2,9 +2,11 @@ local WBP_ScrollDetailTipsView_C = UnLua.Class()
 local ScrollSetTipsItemPath = "/Game/Rouge/UI/Battle/Bag/Scroll/WBP_ScrollSetTipsItem.WBP_ScrollSetTipsItem_C"
 local InteractDuration = 1
 local InteractTimerRate = 0.02
+
 function WBP_ScrollDetailTipsView_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_ScrollDetailTipsView_C:UpdateScrollSetList(ActivatedSets)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -20,8 +22,11 @@ function WBP_ScrollDetailTipsView_C:UpdateScrollSetList(ActivatedSets)
     end
   end
   HideOtherItem(self.VerticalBoxSetList, Index)
+  self.bSetEmpty = Index <= 1
+  UpdateVisibility(self.CanvasPanelAllNull, self.bSetEmpty and self.bDescListEmpty)
   UpdateVisibility(self.CanvasPanelSetNull, 1 == Index)
 end
+
 function WBP_ScrollDetailTipsView_C:UpdateScrollDescList(ActivatedModifies)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -35,7 +40,7 @@ function WBP_ScrollDetailTipsView_C:UpdateScrollDescList(ActivatedModifies)
   local SortDataAry = {}
   for i, v in ipairs(ActivatedModifyesLuaTb) do
     local ResultModify, AttributeModifyRow = DTSubsystem:GetAttributeModifyDataById(v, nil)
-    if ResultModify then
+    if ResultModify and AttributeModifyRow.Rarity ~= UE.ERGItemRarity.EIR_Legend then
       if AttributeModifyRow.bActivateOnceIfOwned then
         local bIsAlreadyInsert = false
         local Desc = GetLuaInscriptionDesc(AttributeModifyRow.Inscription, 1)
@@ -68,6 +73,10 @@ function WBP_ScrollDetailTipsView_C:UpdateScrollDescList(ActivatedModifies)
                     AttrBonusMap[Cls][iDesc][iResult] = {NumValue = 0, DescTag = vResult}
                   end
                   local numValue = vInscriptionData.Action[vResult]
+                  if not numValue then
+                    UnLua.LogError("WBP_ModScrollView_C:UpdateScrollDescList Error111:", vResult, InscriptionDA.ID, vInscriptionData.Action:GetName())
+                    numValue = 0
+                  end
                   AttrBonusMap[Cls][iDesc][iResult].NumValue = AttrBonusMap[Cls][iDesc][iResult].NumValue + numValue
                 end
               end
@@ -103,14 +112,16 @@ function WBP_ScrollDetailTipsView_C:UpdateScrollDescList(ActivatedModifies)
     end
   end
   HideOtherItem(self.VerticalBoxDesc, Index)
+  self.bDescListEmpty = Index <= 1
   UpdateVisibility(self.URGImageDivider, Index > 1)
-  UpdateVisibility(self.CanvasPanelAllNull, 1 == Index)
+  UpdateVisibility(self.CanvasPanelAllNull, self.bSetEmpty and self.bDescListEmpty)
   if 1 == Index then
     self.CanvasPanelSetNull:SetRenderOpacity(0)
   else
     self.CanvasPanelSetNull:SetRenderOpacity(1)
   end
 end
+
 function WBP_ScrollDetailTipsView_C.ActivatedSort(First, Second)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -134,10 +145,13 @@ function WBP_ScrollDetailTipsView_C.ActivatedSort(First, Second)
   end
   return First < Second
 end
+
 function WBP_ScrollDetailTipsView_C:Reset()
 end
+
 function WBP_ScrollDetailTipsView_C:Destruct()
   self.Overridden.Destruct(self)
   self:Reset()
 end
+
 return WBP_ScrollDetailTipsView_C

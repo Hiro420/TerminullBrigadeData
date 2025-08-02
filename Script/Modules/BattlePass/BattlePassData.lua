@@ -16,6 +16,7 @@ local BattlePassData = {
   OldBattlePasData = {},
   CurBattlePassID = 1
 }
+
 function BattlePassData:UpdateInfo(BattlePassInfo, BattlePassID)
   if nil == BattlePassData[BattlePassID] then
     BattlePassData[BattlePassID] = BattlePassInfo
@@ -31,6 +32,7 @@ function BattlePassData:UpdateInfo(BattlePassInfo, BattlePassID)
   end
   BattlePassData.CurBattlePassID = BattlePassID
 end
+
 function BattlePassData:MergeAwardList(AwardList)
   local newAwardList = {}
   for i, v in ipairs(AwardList) do
@@ -42,6 +44,7 @@ function BattlePassData:MergeAwardList(AwardList)
   end
   return newAwardList
 end
+
 function BattlePassData:GetBattlePassPriceById(BattlePassID, BattlePassState)
   if nil == BattlePassData[BattlePassID] then
     print("\233\128\154\232\161\140\232\175\129id\233\148\153\232\175\175\239\188\129 id\228\184\186", BattlePassID)
@@ -65,6 +68,7 @@ function BattlePassData:GetBattlePassPriceById(BattlePassID, BattlePassState)
   local OriginalPrice = TopupData:GetProductDisplayPrice(OriginalMallProductId)
   return CurPrice, OriginalPrice
 end
+
 function BattlePassData:GetBattlePassProductIdById(BattlePassID, BattlePassState)
   if nil == BattlePassData[BattlePassID] then
     print("\233\128\154\232\161\140\232\175\129id\233\148\153\232\175\175\239\188\129 id\228\184\186", BattlePassID)
@@ -86,6 +90,7 @@ function BattlePassData:GetBattlePassProductIdById(BattlePassID, BattlePassState
     end
   end
 end
+
 function BattlePassData:GetBattlePassRowInfoById(BattlePassID)
   local TBBattlePass = LuaTableMgr.GetLuaTableByName(TableNames.TBBattlePass)
   if TBBattlePass then
@@ -97,6 +102,7 @@ function BattlePassData:GetBattlePassRowInfoById(BattlePassID)
   end
   return nil
 end
+
 function BattlePassData:GetBattlePassMaxLevel(BattlePassID)
   local BPAwardList = LuaTableMgr.GetLuaTableByName(TableNames.TBBattlePassReward)
   local count = 0
@@ -107,4 +113,5 @@ function BattlePassData:GetBattlePassMaxLevel(BattlePassID)
   end
   return count
 end
+
 return BattlePassData

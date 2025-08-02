@@ -1,10 +1,12 @@
 local WBP_SR01_C = UnLua.Class()
+
 function WBP_SR01_C:Construct()
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
   if PC then
     PC.NotifyWeaponEnergy:Add(self, WBP_SR01_C.BindOnNotifyWeaponEnergy)
   end
 end
+
 function WBP_SR01_C:BindOnNotifyWeaponEnergy(Value)
   local GrayColor = UE.FLinearColor(0.088656, 0.088656, 0.088656, 1.0)
   local FillColor = UE.FLinearColor(1.0, 1.0, 1.0, 1.0)
@@ -21,4 +23,5 @@ function WBP_SR01_C:BindOnNotifyWeaponEnergy(Value)
     self.Img_ChargeThirdStep:SetColorAndOpacity(FillColor)
   end
 end
+
 return WBP_SR01_C

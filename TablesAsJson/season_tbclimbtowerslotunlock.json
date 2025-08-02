@@ -1,102 +1,102 @@
 ﻿{
   "1": {
-    "UnlockFloor": 0,
     "UnLockDesLocMeta": {
+      "InNamespace": "season_TBClimbTowerSlotUnlock",
       "InTextLiteral": "",
-      "InKey": "UnLockDes_1",
-      "InNamespace": "season_TBClimbTowerSlotUnlock"
+      "InKey": "UnLockDes_1"
     },
+    "WaveWindowId": 1502,
     "SlotId": 1,
-    "WaveWindowId": 1502
+    "UnlockFloor": 0
   },
   "2": {
-    "UnlockFloor": 0,
     "UnLockDesLocMeta": {
+      "InNamespace": "season_TBClimbTowerSlotUnlock",
       "InTextLiteral": "",
-      "InKey": "UnLockDes_2",
-      "InNamespace": "season_TBClimbTowerSlotUnlock"
+      "InKey": "UnLockDes_2"
     },
+    "WaveWindowId": 1502,
     "SlotId": 2,
-    "WaveWindowId": 1502
+    "UnlockFloor": 0
   },
   "3": {
-    "UnlockFloor": 2,
     "UnLockDesLocMeta": {
+      "InNamespace": "season_TBClimbTowerSlotUnlock",
       "InTextLiteral": "通关修正行动层",
-      "InKey": "UnLockDes_3",
-      "InNamespace": "season_TBClimbTowerSlotUnlock"
+      "InKey": "UnLockDes_3"
     },
+    "WaveWindowId": 1502,
     "SlotId": 3,
-    "WaveWindowId": 1502
+    "UnlockFloor": 2
   },
   "4": {
-    "UnlockFloor": 4,
     "UnLockDesLocMeta": {
+      "InNamespace": "season_TBClimbTowerSlotUnlock",
       "InTextLiteral": "通关修正行动层",
-      "InKey": "UnLockDes_4",
-      "InNamespace": "season_TBClimbTowerSlotUnlock"
+      "InKey": "UnLockDes_4"
     },
+    "WaveWindowId": 1502,
     "SlotId": 4,
-    "WaveWindowId": 1502
+    "UnlockFloor": 4
   },
   "5": {
-    "UnlockFloor": 6,
     "UnLockDesLocMeta": {
+      "InNamespace": "season_TBClimbTowerSlotUnlock",
       "InTextLiteral": "通关修正行动层",
-      "InKey": "UnLockDes_5",
-      "InNamespace": "season_TBClimbTowerSlotUnlock"
+      "InKey": "UnLockDes_5"
     },
+    "WaveWindowId": 1502,
     "SlotId": 5,
-    "WaveWindowId": 1502
+    "UnlockFloor": 6
   },
   "6": {
-    "UnlockFloor": 8,
     "UnLockDesLocMeta": {
+      "InNamespace": "season_TBClimbTowerSlotUnlock",
       "InTextLiteral": "通关修正行动层",
-      "InKey": "UnLockDes_6",
-      "InNamespace": "season_TBClimbTowerSlotUnlock"
+      "InKey": "UnLockDes_6"
     },
+    "WaveWindowId": 1502,
     "SlotId": 6,
-    "WaveWindowId": 1502
+    "UnlockFloor": 8
   },
   "7": {
-    "UnlockFloor": 51,
     "UnLockDesLocMeta": {
+      "InNamespace": "season_TBClimbTowerSlotUnlock",
       "InTextLiteral": "暂不开放",
-      "InKey": "UnLockDes_7",
-      "InNamespace": "season_TBClimbTowerSlotUnlock"
+      "InKey": "UnLockDes_7"
     },
+    "WaveWindowId": 1502,
     "SlotId": 7,
-    "WaveWindowId": 1502
+    "UnlockFloor": 51
   },
   "8": {
-    "UnlockFloor": 51,
     "UnLockDesLocMeta": {
+      "InNamespace": "season_TBClimbTowerSlotUnlock",
       "InTextLiteral": "暂不开放",
-      "InKey": "UnLockDes_8",
-      "InNamespace": "season_TBClimbTowerSlotUnlock"
+      "InKey": "UnLockDes_8"
     },
+    "WaveWindowId": 1502,
     "SlotId": 8,
-    "WaveWindowId": 1502
+    "UnlockFloor": 51
   },
   "9": {
-    "UnlockFloor": 51,
     "UnLockDesLocMeta": {
+      "InNamespace": "season_TBClimbTowerSlotUnlock",
       "InTextLiteral": "暂不开放",
-      "InKey": "UnLockDes_9",
-      "InNamespace": "season_TBClimbTowerSlotUnlock"
+      "InKey": "UnLockDes_9"
     },
+    "WaveWindowId": 1502,
     "SlotId": 9,
-    "WaveWindowId": 1502
+    "UnlockFloor": 51
   },
   "10": {
-    "UnlockFloor": 51,
     "UnLockDesLocMeta": {
+      "InNamespace": "season_TBClimbTowerSlotUnlock",
       "InTextLiteral": "暂不开放",
-      "InKey": "UnLockDes_10",
-      "InNamespace": "season_TBClimbTowerSlotUnlock"
+      "InKey": "UnLockDes_10"
     },
+    "WaveWindowId": 1502,
     "SlotId": 10,
-    "WaveWindowId": 1502
+    "UnlockFloor": 51
   }
 }

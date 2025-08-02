@@ -1,5 +1,6 @@
 local WBP_RuleTaskItemTip = UnLua.Class()
 local RuleTaskData = require("Modules.RuleTask.RuleTaskData")
+
 function WBP_RuleTaskItemTip:Show(RuleInfoId)
   local Result, RuleInfoRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBRuleInfo, RuleInfoId)
   if not Result then
@@ -62,4 +63,5 @@ function WBP_RuleTaskItemTip:Show(RuleInfoId)
     end
   end
 end
+
 return WBP_RuleTaskItemTip

@@ -4,17 +4,22 @@ local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local ClimbTowerData = require("UI.View.ClimbTower.ClimbTowerData")
 local ClimbTowerRankView = Class(ViewBase)
+
 function ClimbTowerRankView:BindClickHandler()
 end
+
 function ClimbTowerRankView:UnBindClickHandler()
 end
+
 function ClimbTowerRankView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function ClimbTowerRankView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function ClimbTowerRankView:OnShow(...)
   self:SetEnhancedInputActionBlocking(true)
   self:RefreshDifficultLevelList()
@@ -29,6 +34,7 @@ function ClimbTowerRankView:OnShow(...)
   self:PlayAnimation(self.Ani_in)
   UpdateVisibility(self.DifficultLevelBottomPanel, false)
 end
+
 function ClimbTowerRankView:OnHide()
   EventSystem.RemoveListener(EventDef.ClimbTowerView.OnPassTeamDataChange, self.BindOnPassTeamDataChange, self)
   EventSystem.RemoveListener(EventDef.ClimbTowerView.OnPassRewardStatusChange, self.BindOnPassRewardStatusChange, self)
@@ -36,17 +42,20 @@ function ClimbTowerRankView:OnHide()
   self:SetEnhancedInputActionBlocking(false)
   self.WBP_InteractTipWidget:UnBindInteractAndClickEvent(self, self.BindOnEscKeyPressed)
 end
+
 function ClimbTowerRankView:BindOnEscKeyPressed()
   if self:IsPlayingAnimation() then
     return
   end
   self:PlayAnimation(self.Ani_out)
 end
+
 function ClimbTowerRankView:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     UIMgr:Hide(ViewID.UI_ClimbTowerRank)
   end
 end
+
 function ClimbTowerRankView:BindOnPassTeamDataChange()
   if ClimbTowerData.PassTeamDataMap and ClimbTowerData.PassTeamDataMap[tostring(self.CurFloor)] and ClimbTowerData.PassTeamDataMap[tostring(self.CurFloor)].passTeamDatas then
     local TeamData = ClimbTowerData.PassTeamDataMap[tostring(self.CurFloor)].passTeamDatas
@@ -61,9 +70,11 @@ function ClimbTowerRankView:BindOnPassTeamDataChange()
     self.ProgressBar_49:SetPercent(ClimbTowerData.PassTeamDataMap[tostring(self.CurFloor)].passTeamNum / value.key)
   end
 end
+
 function ClimbTowerRankView:BindOnPassRewardStatusChange()
   self:BindOnPassRewardFloorChange(self.CurFloor)
 end
+
 function ClimbTowerRankView:BindOnPassRewardFloorChange(Floor)
   ClimbTowerData:GetFirstPassTeam(Floor, Floor)
   self.Txt_CurSelectDifficultLevel:SetText(Floor)
@@ -120,15 +131,18 @@ function ClimbTowerRankView:BindOnPassRewardFloorChange(Floor)
   HideOtherItem(self.DifficultLevelList, Index)
   self.WBP_RedDotView:ChangeRedDotId("ClimbTower_PassReward_Layer_" .. Floor)
 end
+
 function ClimbTowerRankView:ChangeMode()
   UpdateVisibility(self.DifficultLevelBottomPanel, true)
 end
+
 function ClimbTowerRankView:LeftChangeMode()
   if self.CurFloor - 1 <= 0 then
     return
   end
   EventSystem.Invoke(EventDef.ClimbTowerView.OnPassRewardFloorChange, self.CurFloor - 1)
 end
+
 function ClimbTowerRankView:RightChangeMode()
   local ClimbTowerTable = LuaTableMgr.GetLuaTableByName(TableNames.TBClimbTowerFloor)
   if self.CurFloor + 1 > #ClimbTowerTable then
@@ -140,6 +154,7 @@ function ClimbTowerRankView:RightChangeMode()
   end
   EventSystem.Invoke(EventDef.ClimbTowerView.OnPassRewardFloorChange, self.CurFloor + 1)
 end
+
 function ClimbTowerRankView:RefreshDifficultLevelList()
   local ClimbTowerTable = LuaTableMgr.GetLuaTableByName(TableNames.TBClimbTowerFloor)
   local Index = 1
@@ -162,6 +177,7 @@ function ClimbTowerRankView:RefreshDifficultLevelList()
   end
   HideOtherItem(self.DifficultLevelList, Index)
 end
+
 function ClimbTowerRankView:UpdateRankList(TeamData)
   if nil == TeamData or 0 == #TeamData then
     UpdateVisibility(self.RankList, false)
@@ -181,4 +197,5 @@ function ClimbTowerRankView:UpdateRankList(TeamData)
   end
   HideOtherItem(self.RankList, Index, true)
 end
+
 return ClimbTowerRankView

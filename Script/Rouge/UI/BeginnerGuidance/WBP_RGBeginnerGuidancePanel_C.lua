@@ -1,4 +1,5 @@
 local WBP_RGBeginnerGuidancePanel_C = UnLua.Class()
+
 function WBP_RGBeginnerGuidancePanel_C:Construct()
   self.TypeWidgetReflication = {
     [UE.EBeginnerGuidanceTipType.Normal] = self.WBP_RGBeginnerGuidanceOperateTip,
@@ -6,6 +7,7 @@ function WBP_RGBeginnerGuidancePanel_C:Construct()
     [UE.EBeginnerGuidanceTipType.Movie] = self.WBP_RGBeginnerGuidanceMovieTip
   }
 end
+
 function WBP_RGBeginnerGuidancePanel_C:InitChildWidgetVis()
   self.MissionId = -1
   local AllChildren = self.MainPanel:GetAllChildren()
@@ -19,9 +21,11 @@ function WBP_RGBeginnerGuidancePanel_C:InitChildWidgetVis()
     end
   end
 end
+
 function WBP_RGBeginnerGuidancePanel_C:OnDisplay()
   self:InitChildWidgetVis()
 end
+
 function WBP_RGBeginnerGuidancePanel_C:RefreshInfoByTipIdList(TipIdList, MissionId)
   self.MissionId = MissionId
   local BResult, BeginnerGuidanceRowData = false
@@ -38,6 +42,7 @@ function WBP_RGBeginnerGuidancePanel_C:RefreshInfoByTipIdList(TipIdList, Mission
     end
   end
 end
+
 function WBP_RGBeginnerGuidancePanel_C:RefreshInfo(MissionId)
   self.MissionId = MissionId
   local Result, MissionRowData = GetRowData(DT.DT_Mission, tostring(self.MissionId))
@@ -65,6 +70,7 @@ function WBP_RGBeginnerGuidancePanel_C:RefreshInfo(MissionId)
     end
   end
 end
+
 function WBP_RGBeginnerGuidancePanel_C:OpenUIByType(Type, BeginnerRowId)
   local TargetWidget = self.TypeWidgetReflication[Type]
   if TargetWidget then
@@ -75,6 +81,7 @@ function WBP_RGBeginnerGuidancePanel_C:OpenUIByType(Type, BeginnerRowId)
   end
   return TargetWidget
 end
+
 function WBP_RGBeginnerGuidancePanel_C:OnUnDisplay()
   local AllChildren = self.MainPanel:GetAllChildren()
   for key, SingleWidget in pairs(AllChildren) do
@@ -83,6 +90,7 @@ function WBP_RGBeginnerGuidancePanel_C:OnUnDisplay()
     end
   end
 end
+
 function WBP_RGBeginnerGuidancePanel_C:OnMissionFinished(MissionId)
   local AllChildren = self.MainPanel:GetAllChildren()
   for key, SingleWidget in pairs(AllChildren) do
@@ -95,7 +103,9 @@ function WBP_RGBeginnerGuidancePanel_C:OnMissionFinished(MissionId)
     end
   end
 end
+
 function WBP_RGBeginnerGuidancePanel_C:CheckShouldBlockOpenOtherUI()
   return self.WBP_RGBeginnerGuidanceMovieTip:IsVisible()
 end
+
 return WBP_RGBeginnerGuidancePanel_C

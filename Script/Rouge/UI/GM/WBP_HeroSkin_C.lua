@@ -1,12 +1,15 @@
 local WBP_HeroSkin_C = UnLua.Class()
 local TypeTitleList = UE.TArray(UE.FString)
 local IdList = UE.TArray(0)
+
 function WBP_HeroSkin_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_HeroSkin_C:InitWidget()
   self.Overridden.InitWidget(self)
 end
+
 function WBP_HeroSkin_C:OnOpen()
   self.Overridden.OnOpen(self)
   TypeTitleList:Clear()
@@ -27,6 +30,7 @@ function WBP_HeroSkin_C:OnOpen()
   end
   self:CreateTypeButtonList(TypeTitleList)
 end
+
 function WBP_HeroSkin_C:OnTypeButtonClick(Button, ItemData)
   self.Overridden.OnTypeButtonClick(self, Button)
   local index = ItemData.Index + 1
@@ -38,4 +42,5 @@ function WBP_HeroSkin_C:OnTypeButtonClick(Button, ItemData)
   local Info = SkinTable[IdList:Get(index)]
   self.Overridden.ShowCustomPanel(self, Info.SkinID, Info.CharacterID, Info.SkinRarity, Info.SkinName, Info.Desc)
 end
+
 return WBP_HeroSkin_C

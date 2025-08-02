@@ -1,4 +1,5 @@
 local WBP_AccessoryCompare_C = UnLua.Class()
+
 function WBP_AccessoryCompare_C:InitInfoForGamePokey(BagArticleId, ChooseWeapon, Equipped)
   if ChooseWeapon then
     if Equipped then
@@ -17,4 +18,5 @@ function WBP_AccessoryCompare_C:InitInfoForGamePokey(BagArticleId, ChooseWeapon,
     end
   end
 end
+
 return WBP_AccessoryCompare_C

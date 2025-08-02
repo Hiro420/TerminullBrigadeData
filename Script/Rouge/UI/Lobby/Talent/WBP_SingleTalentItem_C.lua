@@ -1,5 +1,6 @@
 local WBP_SingleTalentItem_C = UnLua.Class()
 local CancelTalentName = "CancelTalent"
+
 function WBP_SingleTalentItem_C:Construct()
   self.CurCostInfo = {}
   self.HoverPanel:SetVisibility(UE.ESlateVisibility.Hidden)
@@ -8,6 +9,7 @@ function WBP_SingleTalentItem_C:Construct()
   self.CurRealLevel = -1
   self.IsUpgrade = false
 end
+
 function WBP_SingleTalentItem_C:OnLeftMouseDown()
   if self.Type == UE.ETalentItemType.AccumulativeCost then
     print("\230\182\136\232\128\151\231\180\175\232\174\161\231\177\187\229\164\169\232\181\139\239\188\140\230\151\160\230\179\149\231\130\185\229\135\187")
@@ -73,6 +75,7 @@ function WBP_SingleTalentItem_C:OnLeftMouseDown()
   self:PlayAnimation(self.Ani_text)
   PlaySound2DEffect(16, "")
 end
+
 function WBP_SingleTalentItem_C:ShowWaveWindow(Id)
   local RGWaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGWaveWindowManager:StaticClass())
   if not RGWaveWindowManager then
@@ -80,6 +83,7 @@ function WBP_SingleTalentItem_C:ShowWaveWindow(Id)
   end
   RGWaveWindowManager:ShowWaveWindow(Id, {})
 end
+
 function WBP_SingleTalentItem_C:OnRightMouseDown()
   self.IsUpgrade = false
   if self.Type == UE.ETalentItemType.AccumulativeCost then
@@ -113,6 +117,7 @@ function WBP_SingleTalentItem_C:OnRightMouseDown()
   EventSystem.Invoke(EventDef.Lobby.UpdateCommonTalentInfo)
   PlaySound2DEffect(17, "")
 end
+
 function WBP_SingleTalentItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   if self.IsBigItem then
     UpdateVisibility(self.HoverPanel_Big, true)
@@ -133,6 +138,7 @@ function WBP_SingleTalentItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   self.HoverTips = ShowCommonTips(nil, self, nil, ClassPath, nil)
   self.HoverTips:RefreshInfo(self.TalentId, self.Type)
 end
+
 function WBP_SingleTalentItem_C:OnMouseLeave(MouseEvent)
   if self.IsBigItem then
     UpdateVisibility(self.HoverPanel_Big, false)
@@ -147,6 +153,7 @@ function WBP_SingleTalentItem_C:OnMouseLeave(MouseEvent)
   self.IsMouseEnter = false
   UpdateVisibility(self.HoverTips, false)
 end
+
 function WBP_SingleTalentItem_C:InitInfo(TalentId, Type)
   if 0 == TalentId then
     self:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -191,6 +198,7 @@ function WBP_SingleTalentItem_C:InitInfo(TalentId, Type)
   end
   EventSystem.AddListener(self, EventDef.Lobby.UpdateCommonTalentInfo, WBP_SingleTalentItem_C.BindOnUpdateCommonTalentsInfo)
 end
+
 function WBP_SingleTalentItem_C:RefreshStatus()
   if not self.TalentId then
     return
@@ -278,6 +286,7 @@ function WBP_SingleTalentItem_C:RefreshStatus()
   end
   self:RefreshCanUpgradePanelStatus()
 end
+
 function WBP_SingleTalentItem_C:ResetLevelCost()
   local PreLevel = LogicTalent.GetPreCommonTalentLevel(self.TalentId)
   local MaxCanUpgradeLevel = LogicTalent.GetMaxCanUpgradeLevel(self.TalentId)
@@ -291,6 +300,7 @@ function WBP_SingleTalentItem_C:ResetLevelCost()
     end
   end
 end
+
 function WBP_SingleTalentItem_C:RefreshCanUpgradePanelStatus()
   local CanUpgrade = self.Type ~= UE.ETalentItemType.AccumulativeCost and LogicTalent.IsMeetPreTalentGroupCondition(self.TalentId) and LogicTalent.IsMeetRoleLevelCondition(self.TalentId) and LogicTalent.IsMeetTalentUpgradeCostCondition(self.TalentId)
   UpdateVisibility(self.UpgradePanel, CanUpgrade)
@@ -309,6 +319,7 @@ function WBP_SingleTalentItem_C:RefreshCanUpgradePanelStatus()
     self.IsPlayUpgradeLoopAnim = false
   end
 end
+
 function WBP_SingleTalentItem_C:BindOnUpdateCommonTalentsInfo()
   local CurLevel = DataMgr.GetCommonTalentLevelById(self.TalentId)
   if self.IsUpgrade and CurLevel > self.CurRealLevel then
@@ -324,6 +335,7 @@ function WBP_SingleTalentItem_C:BindOnUpdateCommonTalentsInfo()
     self.HoverTips:RefreshInfo(self.TalentId)
   end
 end
+
 function WBP_SingleTalentItem_C:Destruct()
   self:StopAllAnimations()
   self.IsPlayUpgradeLoopAnim = false
@@ -332,10 +344,12 @@ function WBP_SingleTalentItem_C:Destruct()
     StopListeningForInputAction(self, CancelTalentName, UE.EInputEvent.IE_Pressed)
   end
 end
+
 function WBP_SingleTalentItem_C:HideTalentView()
   if IsListeningForInputAction(self, CancelTalentName) then
     StopListeningForInputAction(self, CancelTalentName, UE.EInputEvent.IE_Pressed)
   end
   UpdateVisibility(self.HoverTips, false)
 end
+
 return WBP_SingleTalentItem_C

@@ -1,16 +1,19 @@
 local PlayerInfoData = require("Modules.PlayerInfoMain.PlayerInfo.PlayerInfoData")
 local RGChangeNickNameWaveWindow = UnLua.Class()
 local ECostState = {Enough = "Enough", NotEnough = "NotEnough"}
+
 function RGChangeNickNameWaveWindow:OnBindUIInput()
   self.WBP_InteractTipWidgetBuy:BindInteractAndClickEvent(self, self.OnConfirmClick)
   self.WBP_InteractTipWidgetCancel:BindInteractAndClickEvent(self, self.OnCancelClick)
   self.WBP_InteractTipWidget:BindInteractAndClickEvent(self, self.OnCancelClick)
 end
+
 function RGChangeNickNameWaveWindow:OnUnBindUIInput()
   self.WBP_InteractTipWidgetBuy:UnBindInteractAndClickEvent(self, self.OnConfirmClick)
   self.WBP_InteractTipWidgetCancel:UnBindInteractAndClickEvent(self, self.OnCancelClick)
   self.WBP_InteractTipWidget:UnBindInteractAndClickEvent(self, self.OnCancelClick)
 end
+
 function RGChangeNickNameWaveWindow:SetWaveWindowParam(WaveWindowParamParam)
   self:PlayAnimation(self.StartAnim)
   self.Overridden.SetWaveWindowParam(self, WaveWindowParamParam)
@@ -38,7 +41,9 @@ function RGChangeNickNameWaveWindow:SetWaveWindowParam(WaveWindowParamParam)
     self.RGStateControllerCost:ChangeStatus(ECostState.NotEnough)
   end
 end
+
 function RGChangeNickNameWaveWindow:GetNickName()
   return tostring(self.RGEditableTextNickName:GetText())
 end
+
 return RGChangeNickNameWaveWindow

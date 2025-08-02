@@ -1,4 +1,5 @@
 local WBP_AccessoryDisplayInfo_C = UnLua.Class()
+
 function WBP_AccessoryDisplayInfo_C:UpdateDisplayInfo(AccessoryId, AccessoryRarity, InscriptionIdList, Width)
   self.BottomIcon = {
     [UE.ERGItemRarity.EIR_Normal] = self.NormalBottom,
@@ -30,4 +31,5 @@ function WBP_AccessoryDisplayInfo_C:UpdateDisplayInfo(AccessoryId, AccessoryRari
   SetImageBrushBySoftObject(self.Img_QualityBottom, self.BottomIcon[AccessoryRarity])
   self.WBP_GunInscriptionPanel:UpdateInscriptionPanel(InscriptionIdList, Width)
 end
+
 return WBP_AccessoryDisplayInfo_C

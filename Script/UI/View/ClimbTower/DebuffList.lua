@@ -6,6 +6,7 @@ local EDebuffListShowType = {
 local ClimbTowerData = require("UI.View.ClimbTower.ClimbTowerData")
 local rapidjson = require("rapidjson")
 local DebuffList = UnLua.Class()
+
 function DebuffList:Construct()
   if self.Btn_Save then
     self.Btn_Save.OnClicked:Add(self, DebuffList.Save)
@@ -20,12 +21,15 @@ function DebuffList:Construct()
   EventSystem.AddListener(self, EventDef.ClimbTowerView.OnDebuffChange, self.OnDebuffChange)
   EventSystem.AddListener(self, EventDef.ClimbTowerView.OnApplication, self.OnApplication)
 end
+
 function DebuffList:Save()
   ClimbTowerData:SetDebuff(ClimbTowerData:GetFloor())
 end
+
 function DebuffList:Resetting()
   ClimbTowerData:ResettingDebuff()
 end
+
 function DebuffList:Application()
   HttpCommunication.Request("team/settowerdebuff", {
     debuffChoices = self.debuffChoices,
@@ -46,11 +50,13 @@ function DebuffList:Application()
     end
   })
 end
+
 function DebuffList:OnApplication(DebuffChoices)
   if not self.bOtherPlayer then
     self:UpdateList(DebuffChoices)
   end
 end
+
 function DebuffList:OnDebuffChange()
   if self.WBP_ClimbTower_DebuffList and not self.WBP_ClimbTower_DebuffList.bOtherPlayer then
     if self.Txt_Num then
@@ -60,6 +66,7 @@ function DebuffList:OnDebuffChange()
     UpdateVisibility(self.Tips_Group, ClimbTowerData:GetFaultScore() < ClimbTowerData:GetTargetFaultScore())
   end
 end
+
 function DebuffList:InitDebuffList(Floor, bCanSetBuffItem)
   if Floor - 1 > 0 then
     ClimbTowerData:GetLocalDebuff(Floor - 1)
@@ -98,6 +105,7 @@ function DebuffList:InitDebuffList(Floor, bCanSetBuffItem)
   end
   UpdateVisibility(self.DebuffList_1, self.bTwoColumns)
 end
+
 function DebuffList:SetPlayerDebuffInfo(RoldId, DebuffListShowType, CallBack)
   if DebuffListShowType == EDebuffListShowType.HeroSelection then
     self.bCanSetBuffItem = RoldId == DataMgr.GetUserId()
@@ -112,6 +120,7 @@ function DebuffList:SetPlayerDebuffInfo(RoldId, DebuffListShowType, CallBack)
   end
   self:GetRolesDebuffChoices(RoldId, ClimbTowerData:GetFloor(), CallBack)
 end
+
 function DebuffList:GetRolesDebuffChoices(RoldId, Floor, CallBack)
   local Path = string.format("activity/climbtower/rolesdebuffchoices?roleIDs=%d&floor=%d", RoldId, Floor)
   HttpCommunication.RequestByGet(Path, {
@@ -131,6 +140,7 @@ function DebuffList:GetRolesDebuffChoices(RoldId, Floor, CallBack)
     end
   })
 end
+
 function DebuffList:UpdateList(DebuffChoices)
   if nil == DebuffChoices then
     return
@@ -161,4 +171,5 @@ function DebuffList:UpdateList(DebuffChoices)
   end
   HideOtherItem(self.DebuffList, Index + 1, true)
 end
+
 return DebuffList

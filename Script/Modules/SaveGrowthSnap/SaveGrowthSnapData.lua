@@ -7,8 +7,10 @@ local SaveGrowthSnapData = {
   SaveGrowthSnapTipNoUseTimes = {},
   bAutoSave = true
 }
+
 function SaveGrowthSnapData:DealWithTable()
 end
+
 function SaveGrowthSnapData:GetGenericModifyDataBySlot(Slot, Pos)
   if not self.SaveGrowthSnapMap[Pos] then
     return nil
@@ -29,6 +31,7 @@ function SaveGrowthSnapData:GetGenericModifyDataBySlot(Slot, Pos)
   end
   return nil
 end
+
 function SaveGrowthSnapData:CheckIsEmpty(Pos)
   if not self.SaveGrowthSnapMap[Pos] then
     return true
@@ -38,6 +41,7 @@ function SaveGrowthSnapData:CheckIsEmpty(Pos)
   end
   return false
 end
+
 function SaveGrowthSnapData:CheckSnapMapIsEmpty()
   if not self.SaveGrowthSnapMap then
     return true
@@ -49,6 +53,7 @@ function SaveGrowthSnapData:CheckSnapMapIsEmpty()
   end
   return true
 end
+
 function SaveGrowthSnapData:FindEmptyPos()
   if not self.SaveGrowthSnapMap or not self.SaveGrowthSnapMap[0] then
     return 0
@@ -60,6 +65,7 @@ function SaveGrowthSnapData:FindEmptyPos()
   end
   return -1
 end
+
 function SaveGrowthSnapData:FindEarliestSave()
   local EarliestTimeStamp = math.huge
   local EarliestPos = -1
@@ -74,9 +80,11 @@ function SaveGrowthSnapData:FindEarliestSave()
   end
   return EarliestPos, EarliestTimeStamp
 end
+
 function SaveGrowthSnapData:GetGrowthSnapUseLimitNum()
   return GetLuaConstValueByKey("GrowthSnapshotUseLimitNum") or 0
 end
+
 function SaveGrowthSnapData:GetGrowthSnapUseLeftNum(UseTimesParam)
   local UseTimes = UseTimesParam or 0
   local limitNum = self:GetGrowthSnapUseLimitNum()
@@ -92,10 +100,12 @@ function SaveGrowthSnapData:GetGrowthSnapUseLeftNum(UseTimesParam)
   end
   return leftNum
 end
+
 function SaveGrowthSnapData:ResetSnapData(SnapData)
   if not SnapData then
     return
   end
   SnapData.SnapshotStagingTime = "0"
 end
+
 return SaveGrowthSnapData

@@ -2,6 +2,7 @@ local WBP_LobbyEscMenuPanel_C = UnLua.Class()
 local LoginHandler = require("Protocol.LoginHandler")
 local PandoraData = require("Modules.Pandora.PandoraData")
 local ExitGameTipId = 303018
+
 function WBP_LobbyEscMenuPanel_C:Construct()
   self.Btn_Exit.OnClicked:Add(self, self.BindOnExitClicked)
   self.Btn_Continue.OnClicked:Add(self, self.BindOnContinueButtonClicked)
@@ -19,9 +20,11 @@ function WBP_LobbyEscMenuPanel_C:Construct()
   EventSystem.AddListenerNew(EventDef.Season.SeasonModeChanged, self, self.OnSeasonModeChanged)
   self:OnSeasonModeChanged()
 end
+
 function WBP_LobbyEscMenuPanel_C:Destruct()
   EventSystem.RemoveListenerNew(EventDef.Season.SeasonModeChanged, self, self.OnSeasonModeChanged)
 end
+
 function WBP_LobbyEscMenuPanel_C:OnSeasonModeChanged(SeasonMode)
   local seasonModule = ModuleManager:Get("SeasonModule")
   local curSeasonID = seasonModule:GetCurSeasonID()
@@ -31,6 +34,7 @@ function WBP_LobbyEscMenuPanel_C:OnSeasonModeChanged(SeasonMode)
     UpdateVisibility(self.SizeBox_ChangeToNormal, false)
   end
 end
+
 function WBP_LobbyEscMenuPanel_C:BindOnExitClicked()
   ShowWaveWindowWithDelegate(ExitGameTipId, {}, {
     self,
@@ -41,9 +45,11 @@ function WBP_LobbyEscMenuPanel_C:BindOnExitClicked()
     end
   })
 end
+
 function WBP_LobbyEscMenuPanel_C:BindOnContinueButtonClicked()
   EventSystem.Invoke(EventDef.Lobby.ChangeLobbyMenuPanelVis, false)
 end
+
 function WBP_LobbyEscMenuPanel_C:BindOnLogoutButtonClicked()
   LoginHandler.RequestLogoutToServer()
   local GateService = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self:GetWorld(), UE.UWSGateService:StaticClass())
@@ -51,16 +57,14 @@ function WBP_LobbyEscMenuPanel_C:BindOnLogoutButtonClicked()
     GateService:Disconnect()
   end
 end
+
 function WBP_LobbyEscMenuPanel_C:BindOnSettingButtonClicked()
   LogicGameSetting.ShowGameSettingPanel()
 end
+
 function WBP_LobbyEscMenuPanel_C:BindOnCustomerServiceButtonClicked()
-  local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
-  if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.GM) then
-    return
-  end
-  UIMgr:Show(ViewID.UI_CustomerServiceView, true)
 end
+
 function WBP_LobbyEscMenuPanel_C:BindOnAnnoceClicked()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.ANNOUNCEMENT) then
@@ -73,6 +77,7 @@ function WBP_LobbyEscMenuPanel_C:BindOnAnnoceClicked()
   local PandorSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGPandoraSubsystem:StaticClass())
   PandorSubsystem:OpenApp(PandoraData:GetAnnounceAppId(), "")
 end
+
 function WBP_LobbyEscMenuPanel_C:BindOnTeachButtonClicked()
   LuaAddClickStatistics("Tutorial")
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
@@ -81,6 +86,7 @@ function WBP_LobbyEscMenuPanel_C:BindOnTeachButtonClicked()
   end
   UIMgr:Show(ViewID.UI_BeginnerGuideBookView, true)
 end
+
 function WBP_LobbyEscMenuPanel_C:BindOnChangeToNormalClicked()
   ShowWaveWindowWithDelegate(1453, {}, {
     GameInstance,
@@ -91,4 +97,5 @@ function WBP_LobbyEscMenuPanel_C:BindOnChangeToNormalClicked()
     end
   })
 end
+
 return WBP_LobbyEscMenuPanel_C

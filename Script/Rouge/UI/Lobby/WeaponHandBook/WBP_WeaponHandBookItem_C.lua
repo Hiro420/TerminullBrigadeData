@@ -1,10 +1,13 @@
 local rapidjson = require("rapidjson")
 local WBP_WeaponHandBookItem_C = UnLua.Class()
+
 function WBP_WeaponHandBookItem_C:Construct()
 end
+
 function WBP_WeaponHandBookItem_C:Destruct()
   self.SelectCallback = nil
 end
+
 function WBP_WeaponHandBookItem_C:OnListItemObjectSet(ListItemObj)
   self.DataObj = ListItemObj
   self.WeaponBarrelId = ListItemObj.WeaponBarrelId
@@ -27,9 +30,11 @@ function WBP_WeaponHandBookItem_C:OnListItemObjectSet(ListItemObj)
     end
   end
 end
+
 function WBP_WeaponHandBookItem_C:BP_OnEntryReleased()
   self.DataObj = nil
 end
+
 function WBP_WeaponHandBookItem_C:BP_OnItemSelectionChanged(bIsSelected)
   print("WBP_WeaponHandBookItem_C:BP_OnItemSelectionChanged", bIsSelected)
   if bIsSelected then
@@ -45,4 +50,5 @@ function WBP_WeaponHandBookItem_C:BP_OnItemSelectionChanged(bIsSelected)
     self.RGTextSelectName:SetColorAndOpacity(self.UnSelectColor)
   end
 end
+
 return WBP_WeaponHandBookItem_C

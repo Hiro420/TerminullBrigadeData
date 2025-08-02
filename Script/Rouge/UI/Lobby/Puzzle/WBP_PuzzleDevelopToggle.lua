@@ -1,4 +1,5 @@
 local WBP_PuzzleDevelopToggle = UnLua.Class()
+
 function WBP_PuzzleDevelopToggle:Construct()
   SetImageBrushBySoftObject(self.Img_SelectBottom, self.SelectBottomImage)
   SetImageBrushBySoftObject(self.Img_UnSelectBottom, self.UnSelectBottomImage)
@@ -13,4 +14,5 @@ function WBP_PuzzleDevelopToggle:Construct()
   Brush.Margin = Margin
   self.Img_Hovered:SetBrush(Brush)
 end
+
 return WBP_PuzzleDevelopToggle

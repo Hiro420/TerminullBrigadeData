@@ -1,6 +1,7 @@
 local WBP_LoadingPanel = UnLua.Class()
 local MAXSCREENSIZE = 2.388888888888889
 local MINSCREENSIZE = 1.3333333333333333
+
 function WBP_LoadingPanel:Construct()
   self:ResizeCanvasPanel()
   local CurLoadingScreenType = self:GetLoadingScreenType()
@@ -46,6 +47,7 @@ function WBP_LoadingPanel:Construct()
     self:InitReadyLevelToNextLevel()
   end
 end
+
 function WBP_LoadingPanel:ResizeCanvasPanel()
   local scale = UE.URGBlueprintLibrary.GetCurrentViewportScale(self)
   local screenSize = UE.URGBlueprintLibrary.GetCurrentViewportSize(self) / scale
@@ -80,6 +82,7 @@ function WBP_LoadingPanel:ResizeCanvasPanel()
     Slot:SetPosition(UE.FVector2D(0, 0))
   end
 end
+
 function WBP_LoadingPanel:InitReadyLevelToNextLevel()
   local WorldModeId = UE.URGLevelLibrary.GetWorldModeId()
   print("WBP_LoadingPanel:InitReadyLevelToNextLevel", WorldModeId)
@@ -94,14 +97,17 @@ function WBP_LoadingPanel:InitReadyLevelToNextLevel()
     self.Txt_WorldDesc:SetText(WorldModeRowInfo.ReadyLevelToNextLevelDesc)
   end
 end
+
 function WBP_LoadingPanel:IsBattleLoading(...)
   local CurLoadingScreenType = self:GetLoadingScreenType()
   return "InBattle" == CurLoadingScreenType
 end
+
 function WBP_LoadingPanel:IsLobbyToBattleLoading()
   local CurLoadingScreenType = self:GetLoadingScreenType()
   return "LobbyToBattle" == CurLoadingScreenType
 end
+
 function WBP_LoadingPanel:GetLoadingScreenType(...)
   local CurLoadingScreenType = UE.UAsyncLoadingScreenLibrary.GetLoadingScreenType()
   if "None" == CurLoadingScreenType then
@@ -110,6 +116,7 @@ function WBP_LoadingPanel:GetLoadingScreenType(...)
     return CurLoadingScreenType
   end
 end
+
 function WBP_LoadingPanel:InitBG(...)
   local CurLoadingScreenType = self:GetLoadingScreenType()
   local LoadingScreenSettings = UE.UAsyncLoadingScreenLibrary.GetLoadingScreenSettingsByScreenType(CurLoadingScreenType)
@@ -153,6 +160,7 @@ function WBP_LoadingPanel:InitBG(...)
     end
   end
 end
+
 function WBP_LoadingPanel:InitTipText()
   local AllLoadingText = GetAllRowNames(DT.DT_LoadingText)
   local CommonTextList = {}
@@ -233,11 +241,13 @@ function WBP_LoadingPanel:InitTipText()
     end
   end
 end
+
 local EProgressStatus = {
   NoPass = 1,
   Current = 2,
   Pass = 3
 }
+
 function WBP_LoadingPanel:InitLevelProgress(...)
   local CurrentLevelIndex = UE.UAsyncLoadingScreenLibrary.GetDisplayProgressMarkIndex()
   local CurrentLevelId = self.LevelList[CurrentLevelIndex]
@@ -284,7 +294,9 @@ function WBP_LoadingPanel:InitLevelProgress(...)
   end
   HideOtherItem(self.HorizontalBox_Main, Index, true)
 end
+
 function WBP_LoadingPanel:Destruct(...)
   self:StopAllAnimations()
 end
+
 return WBP_LoadingPanel

@@ -10,7 +10,8 @@ local resource_tbtimelimitgift = {
         timeLimitParam = "1",
         timeLimitedDecomposeResources = {
           {key = 99994, value = 10}
-        }
+        },
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -27,7 +28,8 @@ local resource_tbtimelimitgift = {
         timeLimitParam = "2",
         timeLimitedDecomposeResources = {
           {key = 99994, value = 10}
-        }
+        },
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -44,7 +46,8 @@ local resource_tbtimelimitgift = {
         timeLimitParam = "1",
         timeLimitedDecomposeResources = {
           {key = 99994, value = 10}
-        }
+        },
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -61,7 +64,8 @@ local resource_tbtimelimitgift = {
         timeLimitParam = "2",
         timeLimitedDecomposeResources = {
           {key = 99994, value = 10}
-        }
+        },
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -78,7 +82,8 @@ local resource_tbtimelimitgift = {
         timeLimitParam = "2",
         timeLimitedDecomposeResources = {
           {key = 99994, value = 10}
-        }
+        },
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -95,7 +100,8 @@ local resource_tbtimelimitgift = {
         timeLimitParam = "3",
         timeLimitedDecomposeResources = {
           {key = 99994, value = 10}
-        }
+        },
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -112,7 +118,8 @@ local resource_tbtimelimitgift = {
         timeLimitParam = "4",
         timeLimitedDecomposeResources = {
           {key = 99994, value = 10}
-        }
+        },
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -129,7 +136,8 @@ local resource_tbtimelimitgift = {
         timeLimitParam = "1",
         timeLimitedDecomposeResources = {
           {key = 99994, value = 10}
-        }
+        },
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -146,7 +154,8 @@ local resource_tbtimelimitgift = {
         timeLimitParam = "2",
         timeLimitedDecomposeResources = {
           {key = 99994, value = 10}
-        }
+        },
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -163,7 +172,8 @@ local resource_tbtimelimitgift = {
         timeLimitParam = "2025-07-06 00:00:00",
         timeLimitedDecomposeResources = {
           {key = 99994, value = 10}
-        }
+        },
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -180,7 +190,8 @@ local resource_tbtimelimitgift = {
         timeLimitParam = "2025-07-06 00:00:00",
         timeLimitedDecomposeResources = {
           {key = 99994, value = 10}
-        }
+        },
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -197,7 +208,8 @@ local resource_tbtimelimitgift = {
         timeLimitParam = "3",
         timeLimitedDecomposeResources = {
           {key = 99994, value = 10}
-        }
+        },
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -214,7 +226,8 @@ local resource_tbtimelimitgift = {
         timeLimitParam = "2",
         timeLimitedDecomposeResources = {
           {key = 99994, value = 10}
-        }
+        },
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -231,7 +244,8 @@ local resource_tbtimelimitgift = {
         timeLimitParam = "2025-07-06 00:00:00",
         timeLimitedDecomposeResources = {
           {key = 99994, value = 10}
-        }
+        },
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -248,7 +262,8 @@ local resource_tbtimelimitgift = {
         timeLimitParam = "14",
         timeLimitedDecomposeResources = {
           {key = 99994, value = 100}
-        }
+        },
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -263,14 +278,8 @@ local resource_tbtimelimitgift = {
         amount = 1,
         timeLimitType = 2,
         timeLimitParam = "2025-09-24 05:00:00",
-        timeLimitedDecomposeResources = {}
-      },
-      {
-        resourceID = 300402,
-        amount = 1,
-        timeLimitType = 2,
-        timeLimitParam = "2025-09-24 05:00:00",
-        timeLimitedDecomposeResources = {}
+        timeLimitedDecomposeResources = {},
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -285,14 +294,8 @@ local resource_tbtimelimitgift = {
         amount = 1,
         timeLimitType = 2,
         timeLimitParam = "2025-09-24 05:00:00",
-        timeLimitedDecomposeResources = {}
-      },
-      {
-        resourceID = 300404,
-        amount = 1,
-        timeLimitType = 2,
-        timeLimitParam = "2025-09-24 05:00:00",
-        timeLimitedDecomposeResources = {}
+        timeLimitedDecomposeResources = {},
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -307,7 +310,8 @@ local resource_tbtimelimitgift = {
         amount = 1,
         timeLimitType = 2,
         timeLimitParam = "2025-09-24 05:00:00",
-        timeLimitedDecomposeResources = {}
+        timeLimitedDecomposeResources = {},
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -322,7 +326,8 @@ local resource_tbtimelimitgift = {
         amount = 1,
         timeLimitType = 2,
         timeLimitParam = "2025-09-24 05:00:00",
-        timeLimitedDecomposeResources = {}
+        timeLimitedDecomposeResources = {},
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -336,15 +341,9 @@ local resource_tbtimelimitgift = {
         resourceID = 300407,
         amount = 1,
         timeLimitType = 2,
-        timeLimitParam = "2025-07-02 10:15:00",
-        timeLimitedDecomposeResources = {}
-      },
-      {
-        resourceID = 300408,
-        amount = 1,
-        timeLimitType = 2,
-        timeLimitParam = "2025-07-02 10:15:00",
-        timeLimitedDecomposeResources = {}
+        timeLimitParam = "2025-07-09 11:00:00",
+        timeLimitedDecomposeResources = {},
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -358,15 +357,9 @@ local resource_tbtimelimitgift = {
         resourceID = 300409,
         amount = 1,
         timeLimitType = 2,
-        timeLimitParam = "2025-07-02 10:15:00",
-        timeLimitedDecomposeResources = {}
-      },
-      {
-        resourceID = 300410,
-        amount = 1,
-        timeLimitType = 2,
-        timeLimitParam = "2025-07-02 10:15:00",
-        timeLimitedDecomposeResources = {}
+        timeLimitParam = "2025-07-09 11:00:00",
+        timeLimitedDecomposeResources = {},
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -380,8 +373,9 @@ local resource_tbtimelimitgift = {
         resourceID = 300411,
         amount = 1,
         timeLimitType = 2,
-        timeLimitParam = "2025-07-02 10:15:00",
-        timeLimitedDecomposeResources = {}
+        timeLimitParam = "2025-07-09 11:00:00",
+        timeLimitedDecomposeResources = {},
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -395,8 +389,9 @@ local resource_tbtimelimitgift = {
         resourceID = 300412,
         amount = 1,
         timeLimitType = 2,
-        timeLimitParam = "2025-07-02 10:15:00",
-        timeLimitedDecomposeResources = {}
+        timeLimitParam = "2025-07-09 11:00:00",
+        timeLimitedDecomposeResources = {},
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -410,15 +405,9 @@ local resource_tbtimelimitgift = {
         resourceID = 300413,
         amount = 1,
         timeLimitType = 2,
-        timeLimitParam = "2025-07-02 15:00:00",
-        timeLimitedDecomposeResources = {}
-      },
-      {
-        resourceID = 300414,
-        amount = 1,
-        timeLimitType = 2,
-        timeLimitParam = "2025-07-02 15:00:00",
-        timeLimitedDecomposeResources = {}
+        timeLimitParam = "2025-07-09 15:00:00",
+        timeLimitedDecomposeResources = {},
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -432,15 +421,9 @@ local resource_tbtimelimitgift = {
         resourceID = 300415,
         amount = 1,
         timeLimitType = 2,
-        timeLimitParam = "2025-07-02 15:00:00",
-        timeLimitedDecomposeResources = {}
-      },
-      {
-        resourceID = 300416,
-        amount = 1,
-        timeLimitType = 2,
-        timeLimitParam = "2025-07-02 15:00:00",
-        timeLimitedDecomposeResources = {}
+        timeLimitParam = "2025-07-09 15:00:00",
+        timeLimitedDecomposeResources = {},
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -454,8 +437,9 @@ local resource_tbtimelimitgift = {
         resourceID = 300417,
         amount = 1,
         timeLimitType = 2,
-        timeLimitParam = "2025-07-02 15:00:00",
-        timeLimitedDecomposeResources = {}
+        timeLimitParam = "2025-07-09 15:00:00",
+        timeLimitedDecomposeResources = {},
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -469,8 +453,9 @@ local resource_tbtimelimitgift = {
         resourceID = 300418,
         amount = 1,
         timeLimitType = 2,
-        timeLimitParam = "2025-07-02 15:00:00",
-        timeLimitedDecomposeResources = {}
+        timeLimitParam = "2025-07-09 15:00:00",
+        timeLimitedDecomposeResources = {},
+        bShowExpireAt = true
       }
     },
     Icon = "",
@@ -478,7 +463,7 @@ local resource_tbtimelimitgift = {
   },
   [30703029] = {
     ID = 30703029,
-    Desc = "\230\160\188\231\189\151\232\142\137\228\186\154\231\154\132\231\153\190\229\174\157\231\174\177\239\188\1361\229\164\169\239\188\137",
+    Desc = "\231\153\190\229\174\157\231\174\177\239\188\1361\229\164\169\239\188\137",
     giftPackage = {
       {
         resourceID = 20703029,
@@ -487,7 +472,8 @@ local resource_tbtimelimitgift = {
         timeLimitParam = "1",
         timeLimitedDecomposeResources = {
           {key = 99989, value = 10}
-        }
+        },
+        bShowExpireAt = false
       }
     },
     Icon = "",

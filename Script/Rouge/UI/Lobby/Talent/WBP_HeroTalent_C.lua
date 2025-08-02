@@ -1,9 +1,11 @@
 local WBP_HeroTalent_C = UnLua.Class()
+
 function WBP_HeroTalent_C:Construct()
   self.Btn_Cost.OnClicked:Add(self, WBP_HeroTalent_C.BindOnCostButtonClicked)
   EventSystem.AddListener(self, EventDef.Lobby.LobbyPanelChanged, WBP_HeroTalent_C.BindOnLobbyActivePanelChanged)
   EventSystem.AddListener(self, EventDef.Lobby.RoleItemClicked, WBP_HeroTalent_C.BindOnRoleItemClicked)
 end
+
 function WBP_HeroTalent_C:BindOnLobbyActivePanelChanged(LastActiveWidget, CurActiveWidget)
   if LastActiveWidget == CurActiveWidget then
     if CurActiveWidget == self then
@@ -17,6 +19,7 @@ function WBP_HeroTalent_C:BindOnLobbyActivePanelChanged(LastActiveWidget, CurAct
     self:Hide()
   end
 end
+
 function WBP_HeroTalent_C:BindOnCostButtonClicked()
   local CurLevel = DataMgr.GetHeroTalentLevelById(self.CurHeroId, self.CurTalentId)
   local MaxLevel = LogicTalent.GetMaxLevelByTalentId(self.CurTalentId)
@@ -38,6 +41,7 @@ function WBP_HeroTalent_C:BindOnCostButtonClicked()
   end
   LogicTalent.RequestUpgradeHeroTalentToServer(self.CurHeroId, self.CurTalentId)
 end
+
 function WBP_HeroTalent_C:ShowWaveWindow(Id)
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGWaveWindowManager:StaticClass())
   if not WaveWindowManager then
@@ -45,6 +49,7 @@ function WBP_HeroTalent_C:ShowWaveWindow(Id)
   end
   WaveWindowManager:ShowWaveWindow(Id, {})
 end
+
 function WBP_HeroTalent_C:Show(HeroId)
   self.IsInitChoose = false
   EventSystem.AddListener(self, EventDef.Lobby.HeroTalentIconItemClicked, WBP_HeroTalent_C.BindOnHeroTalentIconItemClicked)
@@ -53,6 +58,7 @@ function WBP_HeroTalent_C:Show(HeroId)
   LogicRole.ShowOrHideRoleChangeList(true, self.CurHeroId, self.RoleChangeList)
   self:SetRoleActorOffset(self.RoleActorOffset)
 end
+
 function WBP_HeroTalent_C:SetRoleActorOffset(WorldOffset)
   local RoleActorList = UE.UGameplayStatics.GetAllActorsWithTag(self, "RoleMainHero", nil)
   local RoleActor
@@ -64,6 +70,7 @@ function WBP_HeroTalent_C:SetRoleActorOffset(WorldOffset)
     RoleActor:K2_AddActorWorldOffset(WorldOffset, false, nil, false)
   end
 end
+
 function WBP_HeroTalent_C:BindOnRoleItemClicked(HeroId)
   if self.CurHeroId ~= HeroId then
     self.IsInitChoose = false
@@ -98,6 +105,7 @@ function WBP_HeroTalent_C:BindOnRoleItemClicked(HeroId)
     end
   end
 end
+
 function WBP_HeroTalent_C:BindOnHeroTalentIconItemClicked(TalentId)
   if 0 == TalentId then
     if self.HeroTalentMediaPlayer:IsPlaying() then
@@ -188,6 +196,7 @@ function WBP_HeroTalent_C:BindOnHeroTalentIconItemClicked(TalentId)
     end
   end
 end
+
 function WBP_HeroTalent_C:BindOnHeroTalentInfoUpdate(HeroId)
   if self.CurHeroId ~= HeroId then
     return
@@ -238,13 +247,16 @@ function WBP_HeroTalent_C:BindOnHeroTalentInfoUpdate(HeroId)
     self:BindOnHeroTalentIconItemClicked(self.CurTalentId)
   end
 end
+
 function WBP_HeroTalent_C:ResetHeroTalentTips()
   EventSystem.Invoke(EventDef.Lobby.HeroTalentIconItemClicked, 0)
 end
+
 function WBP_HeroTalent_C:OnMouseButtonUp(MyGeometry, MouseEvent)
   self.CanScroll = false
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function WBP_HeroTalent_C:OnMouseButtonDown(MyGeometry, MouseEvent)
   self.CanScroll = self:IsMouseInScrollPanelRange(MouseEvent)
   if not self.CanScroll then
@@ -252,6 +264,7 @@ function WBP_HeroTalent_C:OnMouseButtonDown(MyGeometry, MouseEvent)
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function WBP_HeroTalent_C:OnMouseMove(MyGeometry, MouseEvent)
   if not self.CanScroll then
     return UE.FEventReply()
@@ -270,6 +283,7 @@ function WBP_HeroTalent_C:OnMouseMove(MyGeometry, MouseEvent)
   self.LastY = ViewportPos.Y
   return UE.FEventReply()
 end
+
 function WBP_HeroTalent_C:IsMouseInScrollPanelRange(MouseEvent)
   local ScreenPos = UE.UKismetInputLibrary.PointerEvent_GetScreenSpacePosition(MouseEvent)
   local PixelPos, ViewportPos = UE.USlateBlueprintLibrary.AbsoluteToViewport(self, ScreenPos, nil, nil)
@@ -278,6 +292,7 @@ function WBP_HeroTalent_C:IsMouseInScrollPanelRange(MouseEvent)
   local Result = ViewportPos.X < ScrollPanelViewportPos.X or ViewportPos.X > ScrollPanelViewportPos.X + ScrollPanelSize.X or ViewportPos.Y < ScrollPanelViewportPos.Y or ViewportPos.Y > ScrollPanelViewportPos.Y + ScrollPanelSize.Y
   return not Result
 end
+
 function WBP_HeroTalent_C:Hide()
   self:SetRoleActorOffset(self.RoleActorOffset * -1)
   local SingleItemClass = UE.UClass.Load("/Game/Rouge/UI/Lobby/Talent/WBP_SingleHeroTalentIconItem.WBP_SingleHeroTalentIconItem_C")
@@ -292,9 +307,11 @@ function WBP_HeroTalent_C:Hide()
   EventSystem.RemoveListener(EventDef.Lobby.HeroTalentIconItemClicked, WBP_HeroTalent_C.BindOnHeroTalentIconItemClicked, self)
   EventSystem.RemoveListener(EventDef.Lobby.UpdateHeroTalentInfo, WBP_HeroTalent_C.BindOnHeroTalentInfoUpdate, self)
 end
+
 function WBP_HeroTalent_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.LobbyPanelChanged, WBP_HeroTalent_C.BindOnLobbyActivePanelChanged, self)
   EventSystem.RemoveListener(EventDef.Lobby.RoleItemClicked, WBP_HeroTalent_C.BindOnRoleItemClicked, self)
   self:Hide()
 end
+
 return WBP_HeroTalent_C

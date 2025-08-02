@@ -1,4 +1,5 @@
 local WBP_HUD_ScrollSetLevelItem_C = UnLua.Class()
+
 function WBP_HUD_ScrollSetLevelItem_C:UpdateScrollSetLevelItem(bIsReached, bIsPlayAni, bIsDelay)
   if bIsPlayAni then
     if bIsDelay then
@@ -18,9 +19,11 @@ function WBP_HUD_ScrollSetLevelItem_C:UpdateScrollSetLevelItem(bIsReached, bIsPl
   end
   UpdateVisibility(self.URGImageActivated, bIsReached)
 end
+
 function WBP_HUD_ScrollSetLevelItem_C:PlayAni()
   self:PlayAnimation(self.ani_HUD_ScrollSetLevelItem_in)
 end
+
 function WBP_HUD_ScrollSetLevelItem_C:Destruct()
   self.Overridden.Destruct(self)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.Timer) then
@@ -28,4 +31,5 @@ function WBP_HUD_ScrollSetLevelItem_C:Destruct()
     self.Timer = nil
   end
 end
+
 return WBP_HUD_ScrollSetLevelItem_C

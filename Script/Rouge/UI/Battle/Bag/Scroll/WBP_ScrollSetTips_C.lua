@@ -1,8 +1,10 @@
 local WBP_ScrollSetTips_C = UnLua.Class()
 local ScrollSetDescItemPath = "/Game/Rouge/UI/Battle/Bag/Scroll/WBP_ScrollSetDescItem.WBP_ScrollSetDescItem_C"
+
 function WBP_ScrollSetTips_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_ScrollSetTips_C:InitScrollSetTips(ActivatedSetData)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -46,7 +48,9 @@ function WBP_ScrollSetTips_C:InitScrollSetTips(ActivatedSetData)
     HideOtherItem(self.VerticalBoxDesc, Index)
   end
 end
+
 function WBP_ScrollSetTips_C:Destruct()
   self.Overridden.Destruct(self)
 end
+
 return WBP_ScrollSetTips_C

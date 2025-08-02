@@ -3,11 +3,13 @@ local TopupHandler = require("Protocol.Topup.TopupHandler")
 local WBP_LobbyCurrencyItem_C = UnLua.Class()
 local JumpToTopupCurrencyPanelWaveId = 306004
 local TipPath = "/Game/Rouge/UI/Lobby/Currency/WBP_LobbyCurrencyItemTip.WBP_LobbyCurrencyItemTip_C"
+
 function WBP_LobbyCurrencyItem_C:Construct()
   self.Btn_Add.OnClicked:Add(self, WBP_LobbyCurrencyItem_C.BindOnAddButtonClicked)
   self.Btn_Subtract.OnClicked:Add(self, WBP_LobbyCurrencyItem_C.BindOnSubtractButtonClicked)
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
 end
+
 function WBP_LobbyCurrencyItem_C:BindOnAddButtonClicked()
   local Param = {
     roleId = DataMgr.GetUserId(),
@@ -30,6 +32,7 @@ function WBP_LobbyCurrencyItem_C:BindOnAddButtonClicked()
     end
   }, false, true)
 end
+
 function WBP_LobbyCurrencyItem_C:BindOnSubtractButtonClicked()
   local Param = {
     roleId = DataMgr.GetUserId(),
@@ -52,6 +55,7 @@ function WBP_LobbyCurrencyItem_C:BindOnSubtractButtonClicked()
     end
   })
 end
+
 function WBP_LobbyCurrencyItem_C:BindOnMainButtonClicked(...)
   local CurSceneStatus = GetCurSceneStatus()
   if CurSceneStatus ~= UE.ESceneStatus.ELobby then
@@ -92,6 +96,7 @@ function WBP_LobbyCurrencyItem_C:BindOnMainButtonClicked(...)
     return
   end
 end
+
 function WBP_LobbyCurrencyItem_C:GetTargetExchangeResourceId(TargetExchangeId)
   local Result, ExchangeRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBResourceExchange, TargetExchangeId)
   if not Result then
@@ -111,6 +116,7 @@ function WBP_LobbyCurrencyItem_C:GetTargetExchangeResourceId(TargetExchangeId)
     return TargetExchangeId
   end
 end
+
 function WBP_LobbyCurrencyItem_C:OnUseResource()
   local Param = {
     uniqueId = "32895548603662336",
@@ -128,9 +134,11 @@ function WBP_LobbyCurrencyItem_C:OnUseResource()
     end
   })
 end
+
 function WBP_LobbyCurrencyItem_C:BindOnResourceUpdate()
   self:SetCurrencyNum()
 end
+
 function WBP_LobbyCurrencyItem_C:SetCurrencyNum()
   local CurrencyInfo = LogicOutsidePackback.GetResourceInfoById(self.CurrencyId)
   if not CurrencyInfo then
@@ -148,6 +156,7 @@ function WBP_LobbyCurrencyItem_C:SetCurrencyNum()
     end
   end
 end
+
 function WBP_LobbyCurrencyItem_C:PlayAddMoneyAnim()
   if self.Add_money:IsVisible() then
     self:PlayAnimationForward(self.Ani_add_money)
@@ -156,11 +165,13 @@ function WBP_LobbyCurrencyItem_C:PlayAddMoneyAnim()
     self.IsNeedPlayAddMoneyAnim = true
   end
 end
+
 function WBP_LobbyCurrencyItem_C:OnAnimationFinished(InAnimation)
   if InAnimation == self.Ani_add_money then
     UpdateVisibility(self.Add_money, false)
   end
 end
+
 function WBP_LobbyCurrencyItem_C:Show(CurrencyId)
   self.CurrencyId = CurrencyId
   local RowInfo = LogicOutsidePackback.GetResourceInfoById(self.CurrencyId)
@@ -189,6 +200,7 @@ function WBP_LobbyCurrencyItem_C:Show(CurrencyId)
   EventSystem.AddListener(self, EventDef.Lobby.UpdateResourceInfo, WBP_LobbyCurrencyItem_C.BindOnResourceUpdate)
   self:SetVisibility(UE.ESlateVisibility.Visible)
 end
+
 function WBP_LobbyCurrencyItem_C:GetToolTipWidget()
   local CurrencyTable = DataMgr.GetOutsideCurrencyTableById(self.CurrencyId)
   if 0 == #CurrencyTable then
@@ -200,12 +212,15 @@ function WBP_LobbyCurrencyItem_C:GetToolTipWidget()
   end
   return Widget
 end
+
 function WBP_LobbyCurrencyItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.CurrencyId = 0
   EventSystem.RemoveListener(EventDef.Lobby.UpdateResourceInfo, WBP_LobbyCurrencyItem_C.BindOnResourceUpdate, self)
 end
+
 function WBP_LobbyCurrencyItem_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.UpdateResourceInfo, WBP_LobbyCurrencyItem_C.BindOnResourceUpdate, self)
 end
+
 return WBP_LobbyCurrencyItem_C

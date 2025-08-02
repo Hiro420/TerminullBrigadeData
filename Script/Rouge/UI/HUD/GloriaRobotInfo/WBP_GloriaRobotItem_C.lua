@@ -1,7 +1,9 @@
 local WBP_GloriaRobotItem_C = UnLua.Class()
+
 function WBP_GloriaRobotItem_C:Destruct()
   self.Overridden.Destruct(self)
 end
+
 function WBP_GloriaRobotItem_C:Init(IconSoftObjPtr, CurNum, MaxNum)
   if CurNum <= 0 then
     UpdateVisibility(self, false)
@@ -17,4 +19,5 @@ function WBP_GloriaRobotItem_C:Init(IconSoftObjPtr, CurNum, MaxNum)
   end
   self.RGRichTextBlockNum:SetText(Str)
 end
+
 return WBP_GloriaRobotItem_C

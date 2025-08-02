@@ -19,8 +19,10 @@ local RuleTaskData = require("Modules.RuleTask.RuleTaskData")
 local LocalRedDotDataFilePath
 local TickInterval = 60
 local HourInterval = 3600
+
 function KoreaComplianceModule:Ctor()
 end
+
 function KoreaComplianceModule:OnInit()
   if UE.RGUtil.IsDedicatedServer() then
     return
@@ -28,6 +30,7 @@ function KoreaComplianceModule:OnInit()
   print("KoreaComplianceModule:OnInit...........")
   EventSystem.AddListenerNew(EventDef.Login.OnLoginProtocolSuccess, self, self.BindOnLoginProtocolSuccess)
 end
+
 function KoreaComplianceModule:OnShutdown()
   if UE.RGUtil.IsDedicatedServer() then
     return
@@ -37,6 +40,7 @@ function KoreaComplianceModule:OnShutdown()
   EventSystem.RemoveListenerNew(EventDef.Login.OnLoginProtocolSuccess, self, self.BindOnLoginProtocolSuccess)
   self:SaveKoreaComplianceDataToLocal()
 end
+
 function KoreaComplianceModule:SaveKoreaComplianceDataToLocal()
   if IsPlayerAdult() then
     return
@@ -46,6 +50,7 @@ function KoreaComplianceModule:SaveKoreaComplianceDataToLocal()
     UE.URGBlueprintLibrary.SaveStringToFile(LocalRedDotDataFilePath, RedDotNumListJson)
   end
 end
+
 function KoreaComplianceModule:StartCheckNeedSaveToFileTimer()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.KoreaComplianceSaveToFileTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(GameInstance, self.KoreaComplianceSaveToFileTimer)
@@ -55,11 +60,13 @@ function KoreaComplianceModule:StartCheckNeedSaveToFileTimer()
     KoreaComplianceModule.CheckNeedSaveToFile
   }, TickInterval, true)
 end
+
 function KoreaComplianceModule:StopCheckNeedSaveToFileTimer()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.KoreaComplianceSaveToFileTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(GameInstance, self.KoreaComplianceSaveToFileTimer)
   end
 end
+
 function KoreaComplianceModule:CheckNeedSaveToFile()
   if not KoreaComplianceModule.LastShowPic then
     return
@@ -84,6 +91,7 @@ function KoreaComplianceModule:CheckNeedSaveToFile()
   end
   KoreaComplianceModule:SaveKoreaComplianceDataToLocal()
 end
+
 function KoreaComplianceModule:SendMsg()
   local msg = {
     SystemMsgID = tonumber(5),
@@ -97,6 +105,7 @@ function KoreaComplianceModule:SendMsg()
   local msgJson = RapidJsonEncode(msg)
   ChatDataMgr.OnChatMsg(msgJson)
 end
+
 function KoreaComplianceModule:BindOnLoginProtocolSuccess()
   if not KoreaComplianceModule:IsKorea() then
     self:StopCheckNeedSaveToFileTimer()
@@ -124,6 +133,7 @@ function KoreaComplianceModule:BindOnLoginProtocolSuccess()
   KoreaComplianceModule.LastShowPic = GetTimeWithServerDelta()
   KoreaComplianceModule:StartCheckNeedSaveToFileTimer()
 end
+
 function KoreaComplianceModule:IsCrossDay()
   if not KoreaComplianceModule.LoginData then
     return false
@@ -137,6 +147,7 @@ function KoreaComplianceModule:IsCrossDay()
   end
   return false
 end
+
 function KoreaComplianceModule:IsKorea()
   local AccountCom = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGAccountSubsystem:StaticClass())
   if AccountCom then
@@ -147,4 +158,5 @@ function KoreaComplianceModule:IsKorea()
   end
   return false
 end
+
 return KoreaComplianceModule

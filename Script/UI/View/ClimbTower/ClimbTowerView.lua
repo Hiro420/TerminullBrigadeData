@@ -5,20 +5,26 @@ local UIUtil = require("Framework.UIMgr.UIUtil")
 local climbtowerdata = require("UI.View.ClimbTower.ClimbTowerData")
 local seasonabilityhandler = require("Protocol.SeasonAbility.SeasonAbilityHandler")
 local ClimbTowerView = Class(ViewBase)
+
 function ClimbTowerView:BindClickHandler()
 end
+
 function ClimbTowerView:UnBindClickHandler()
 end
+
 function ClimbTowerView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function ClimbTowerView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function ClimbTowerView:OnShowLink(...)
   print("ClimbTowerView:OnShowLink", ...)
 end
+
 function ClimbTowerView:OnShow(...)
   local ClimbTowerTable = LuaTableMgr.GetLuaTableByName(TableNames.TBClimbTowerFloor)
   climbtowerdata:PassRewardStatus(#ClimbTowerTable)
@@ -57,6 +63,7 @@ function ClimbTowerView:OnShow(...)
   self:PlayAnimation(self.Ani_loop, 0, 0)
   self:SetEnhancedInputActionBlocking(true)
 end
+
 function ClimbTowerView:OnHide()
   if climbtowerdata:FaultScoreIsChange() then
     climbtowerdata:SetDebuff(climbtowerdata:GetFloor())
@@ -70,6 +77,7 @@ function ClimbTowerView:OnHide()
   self.Button_StartMatch.OnClicked:Remove(self, self.OnStartMatch)
   self:SetEnhancedInputActionBlocking(false)
 end
+
 function ClimbTowerView:OnStartMatch()
   if not climbtowerdata:MeetFaultScore() then
     return
@@ -86,9 +94,11 @@ function ClimbTowerView:OnStartMatch()
   local LobbyPanelTagName = LogicLobby.GetLabelTagNameByUIName("UI_LobbyMain")
   LogicLobby.ChangeLobbyPanelLabelSelected(LobbyPanelTagName)
 end
+
 function ClimbTowerView:BindOnEscKeyPressed()
   UIMgr:Hide(ViewID.UI_ClimbTower, true)
 end
+
 function ClimbTowerView:UpdateMyTeamInfo()
   local SingleFloor = climbtowerdata:GetFloor()
   self.WBP_ClimbTower_Heteromorphism:InitHeteromorphism(SingleFloor)
@@ -97,6 +107,7 @@ function ClimbTowerView:UpdateMyTeamInfo()
   self.WBP_ClimbTower_Award:InitClimbTowerAward(SingleFloor)
   self:SetFloorDesc(SingleFloor)
 end
+
 function ClimbTowerView:OnDebuffChange()
   UpdateVisibility(self.CanvasPanel_UnderPoints, climbtowerdata:GetFaultScore() < climbtowerdata:GetTargetFaultScore())
   if climbtowerdata:FaultScoreIsChange() then
@@ -114,6 +125,7 @@ function ClimbTowerView:OnDebuffChange()
     self.RGStateController_Lock:ChangeStatus("Lock", true)
   end
 end
+
 function ClimbTowerView:OnBtn_Save()
   if climbtowerdata:FaultScoreIsChange() then
     climbtowerdata:SetDebuff(climbtowerdata:GetFloor())
@@ -121,9 +133,11 @@ function ClimbTowerView:OnBtn_Save()
     ShowWaveWindow(304006)
   end
 end
+
 function ClimbTowerView:OnBtn_LinkRank()
   UIMgr:Show(ViewID.UI_RankView_Nor, true)
 end
+
 function ClimbTowerView:OnBtn_FirstClearance()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr:IsSystemOpen(SystemOpenID.CLIMB_TOWER_RANK) == false then
@@ -131,6 +145,7 @@ function ClimbTowerView:OnBtn_FirstClearance()
   end
   UIMgr:Show(ViewID.UI_ClimbTowerRank, false)
 end
+
 function ClimbTowerView:SetFloorDesc(Floor)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBClimbTowerFloor, Floor)
   if Result then
@@ -178,4 +193,5 @@ function ClimbTowerView:SetFloorDesc(Floor)
     end
   end
 end
+
 return ClimbTowerView

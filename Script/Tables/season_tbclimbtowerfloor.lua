@@ -447,7 +447,8 @@ local season_tbclimbtowerfloor = {
     FloorDescription = {},
     ExtraEffectsDesc = {},
     FirstWinRewards = {
-      {key = 99019, value = 12}
+      {key = 99018, value = 1},
+      {key = 20703052, value = 1}
     },
     DailyRewardBaseValue = 110,
     GlobalPassReward = {
@@ -481,6 +482,7 @@ local season_tbclimbtowerfloor = {
     BattleAnomalyID = {6900111},
     DropResources = {
       240044,
+      99018,
       99026,
       99030,
       99028,
@@ -488,10 +490,15 @@ local season_tbclimbtowerfloor = {
       99019,
       99989
     },
-    DropResourcesRatioKey = {"240044", "99019"},
+    DropResourcesRatioKey = {
+      "240044",
+      "99018",
+      "99019"
+    },
     DropResourcesRatioValue = {
       NSLOCTEXT("season_TBClimbTowerFloor", "OBJClimbTowerFloor_DropResourcesRatioValue_11_1", "\230\150\176"),
-      NSLOCTEXT("season_TBClimbTowerFloor", "OBJClimbTowerFloor_DropResourcesRatioValue_11_2", "\230\150\176")
+      NSLOCTEXT("season_TBClimbTowerFloor", "OBJClimbTowerFloor_DropResourcesRatioValue_11_2", "\230\150\176"),
+      NSLOCTEXT("season_TBClimbTowerFloor", "OBJClimbTowerFloor_DropResourcesRatioValue_11_3", "\230\150\176")
     },
     FloorDescription = {},
     ExtraEffectsDesc = {},
@@ -528,6 +535,7 @@ local season_tbclimbtowerfloor = {
     BattleAnomalyID = {6900112},
     DropResources = {
       240044,
+      99018,
       99026,
       99030,
       99028,
@@ -572,6 +580,7 @@ local season_tbclimbtowerfloor = {
     BattleAnomalyID = {6900113},
     DropResources = {
       240044,
+      99018,
       99026,
       99030,
       99028,
@@ -616,6 +625,7 @@ local season_tbclimbtowerfloor = {
     BattleAnomalyID = {6900114},
     DropResources = {
       240044,
+      99018,
       99026,
       99030,
       99028,
@@ -664,6 +674,7 @@ local season_tbclimbtowerfloor = {
     BattleAnomalyID = {6900115},
     DropResources = {
       240044,
+      99018,
       99026,
       99030,
       99028,
@@ -714,6 +725,7 @@ local season_tbclimbtowerfloor = {
     BattleAnomalyID = {6900116},
     DropResources = {
       240044,
+      99018,
       99026,
       99030,
       99028,
@@ -762,6 +774,7 @@ local season_tbclimbtowerfloor = {
     BattleAnomalyID = {6900117},
     DropResources = {
       240044,
+      99018,
       99026,
       99030,
       99028,
@@ -810,6 +823,7 @@ local season_tbclimbtowerfloor = {
     BattleAnomalyID = {6900118},
     DropResources = {
       240044,
+      99018,
       99026,
       99030,
       99028,
@@ -854,6 +868,7 @@ local season_tbclimbtowerfloor = {
     BattleAnomalyID = {6900119},
     DropResources = {
       240044,
+      99018,
       99026,
       99030,
       99028,
@@ -902,6 +917,7 @@ local season_tbclimbtowerfloor = {
     BattleAnomalyID = {6900120},
     DropResources = {
       240044,
+      99018,
       99026,
       99030,
       99028,
@@ -914,7 +930,7 @@ local season_tbclimbtowerfloor = {
     FloorDescription = {},
     ExtraEffectsDesc = {},
     FirstWinRewards = {
-      {key = 70781, value = 1}
+      {key = 99018, value = 1}
     },
     DailyRewardBaseValue = 210,
     GlobalPassReward = {
@@ -956,10 +972,9 @@ local season_tbclimbtowerfloor = {
       99018,
       99989
     },
-    DropResourcesRatioKey = {"240048", "99018"},
+    DropResourcesRatioKey = {"240048"},
     DropResourcesRatioValue = {
-      NSLOCTEXT("season_TBClimbTowerFloor", "OBJClimbTowerFloor_DropResourcesRatioValue_21_1", "\230\150\176"),
-      NSLOCTEXT("season_TBClimbTowerFloor", "OBJClimbTowerFloor_DropResourcesRatioValue_21_2", "\230\150\176")
+      NSLOCTEXT("season_TBClimbTowerFloor", "OBJClimbTowerFloor_DropResourcesRatioValue_21_1", "\230\150\176")
     },
     FloorDescription = {},
     ExtraEffectsDesc = {},
@@ -1391,7 +1406,7 @@ local season_tbclimbtowerfloor = {
     FloorDescription = {},
     ExtraEffectsDesc = {},
     FirstWinRewards = {
-      {key = 70782, value = 1}
+      {key = 99034, value = 1}
     },
     DailyRewardBaseValue = 310,
     GlobalPassReward = {
@@ -1441,7 +1456,7 @@ local season_tbclimbtowerfloor = {
     FloorDescription = {},
     ExtraEffectsDesc = {},
     FirstWinRewards = {
-      {key = 62026, value = 1}
+      {key = 62027, value = 1}
     },
     DailyRewardBaseValue = 320,
     GlobalPassReward = {},
@@ -1531,7 +1546,7 @@ local season_tbclimbtowerfloor = {
     FloorDescription = {},
     ExtraEffectsDesc = {},
     FirstWinRewards = {
-      {key = 62026, value = 1}
+      {key = 62027, value = 1}
     },
     DailyRewardBaseValue = 340,
     GlobalPassReward = {},
@@ -1625,7 +1640,7 @@ local season_tbclimbtowerfloor = {
     FloorDescription = {},
     ExtraEffectsDesc = {},
     FirstWinRewards = {
-      {key = 62026, value = 1}
+      {key = 62027, value = 1}
     },
     DailyRewardBaseValue = 360,
     GlobalPassReward = {
@@ -1868,7 +1883,7 @@ local season_tbclimbtowerfloor = {
     FloorDescription = {},
     ExtraEffectsDesc = {},
     FirstWinRewards = {
-      {key = 70783, value = 1}
+      {key = 99034, value = 1}
     },
     DailyRewardBaseValue = 410,
     GlobalPassReward = {
@@ -2342,7 +2357,7 @@ local season_tbclimbtowerfloor = {
     FloorDescription = {},
     ExtraEffectsDesc = {},
     FirstWinRewards = {
-      {key = 70784, value = 1}
+      {key = 99034, value = 1}
     },
     DailyRewardBaseValue = 510,
     GlobalPassReward = {

@@ -1,19 +1,13 @@
 ﻿{
-  "MartrixPuzzleResetCost": {
-    "1": {
-      "key": 99015,
-      "value": 1
-    }
-  },
-  "ClimbTowerDailyRewardResourceID": 300006,
+  "ClimbTowerPassTeamDataNumber": 10,
+  "SeasonAbilityTicketResourceID": 300003,
+  "MatrixPuzzleMaxGridNum": 24,
   "UnlockPremiumBattlePassCost": {
     "1": {
       "key": 300001,
       "value": 100
     }
   },
-  "PlayerNameLengthMax": 14,
-  "ClimbTowerDailyRewardHeroSlotNum": 10,
   "GemMutationRate": {
     "1": {
       "key": 1,
@@ -28,21 +22,56 @@
       "weight": 15
     }
   },
-  "ClimbTowerDailyRewardHeroSlotInitUnlockNum": 2,
+  "PlayerNameLengthMin": 1,
   "HeroBattleHistoryMaxNum": 30,
-  "MatrixPuzzleMaxDecomposeNum": 100,
-  "ClimbTowerDailyRewardHours": 24,
+  "SeasonChipExpResourceID": 99007,
+  "GemSeniorMutationRate": {
+    "1": {
+      "key": 1,
+      "weight": 10
+    },
+    "2": {
+      "key": 3,
+      "weight": 10
+    }
+  },
+  "SeasonChipExpRate": 20,
+  "RecentBattleHistoryMaxNum": 100,
+  "UnlockUltraBattlePassDiscountCost": {
+    "1": {
+      "key": 300001,
+      "value": 400
+    }
+  },
+  "ClimbTowerDailyRewardHeroSlotNum": 10,
+  "ChangeNameCost": {
+    "1": {
+      "key": 300002,
+      "value": 1
+    }
+  },
   "UnlockUltraBattlePassCost": {
     "1": {
       "key": 300001,
       "value": 500
     }
   },
-  "BeginerDanceDefaultHero": 1020,
-  "RevivalCoinResourceID": 99016,
-  "SeasonAbilityTicketTotalAcquireLimit": 400,
-  "BestSinglePassByWorldVisibleMinHard": 6,
-  "MatrixPuzzleMaxGridNum": 24,
+  "MartrixPuzzleMaxPackageNum": 999,
+  "InitHero": {
+    "1": 1000,
+    "2": 1020
+  },
+  "PuzzleSeniorMutationRate": {
+    "1": {
+      "key": 1,
+      "weight": 10
+    },
+    "2": {
+      "key": 3,
+      "weight": 10
+    }
+  },
+  "SeasonAbilityPointTotalAcquireLimit": 12,
   "PuzzleMutationRate": {
     "1": {
       "key": 1,
@@ -57,54 +86,25 @@
       "weight": 30
     }
   },
-  "SeasonAbilityPointTotalAcquireLimit": 12,
-  "RecentBattleHistoryMaxNum": 100,
+  "MatrixPuzzleWroldGridLimitNum": 9,
+  "GrowthSnapshotUseLimitNum": 3,
+  "SeasonAbilityTicketTotalAcquireLimit": 400,
+  "PlayerNameLengthMax": 14,
   "SeasonResetResourceIDs": {
     "1": 99016
   },
+  "ClimbTowerDailyRewardHeroSlotInitUnlockNum": 2,
+  "RevivalCoinResourceID": 99016,
   "RewardIncreaseDailyAcquireNum": 2,
-  "UnlockUltraBattlePassDiscountCost": {
+  "ClimbTowerDailyRewardHours": 24,
+  "MatrixPuzzleMaxDecomposeNum": 100,
+  "ClimbTowerDailyRewardResourceID": 300006,
+  "BeginerDanceDefaultHero": 1020,
+  "BestSinglePassByWorldVisibleMinHard": 6,
+  "MartrixPuzzleResetCost": {
     "1": {
-      "key": 300001,
-      "value": 400
-    }
-  },
-  "ClimbTowerPassTeamDataNumber": 10,
-  "PlayerNameLengthMin": 1,
-  "InitHero": {
-    "1": 1000,
-    "2": 1020
-  },
-  "MartrixPuzzleMaxPackageNum": 999,
-  "ChangeNameCost": {
-    "1": {
-      "key": 300002,
+      "key": 99015,
       "value": 1
     }
-  },
-  "SeasonChipExpResourceID": 99007,
-  "SeasonAbilityTicketResourceID": 300003,
-  "GemSeniorMutationRate": {
-    "1": {
-      "key": 1,
-      "weight": 10
-    },
-    "2": {
-      "key": 3,
-      "weight": 10
-    }
-  },
-  "GrowthSnapshotUseLimitNum": 3,
-  "MatrixPuzzleWroldGridLimitNum": 9,
-  "PuzzleSeniorMutationRate": {
-    "1": {
-      "key": 1,
-      "weight": 10
-    },
-    "2": {
-      "key": 3,
-      "weight": 10
-    }
-  },
-  "SeasonChipExpRate": 20
+  }
 }

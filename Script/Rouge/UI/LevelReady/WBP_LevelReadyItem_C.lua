@@ -1,6 +1,8 @@
 local WBP_LevelReadyItem_C = UnLua.Class()
+
 function WBP_LevelReadyItem_C:Construct()
 end
+
 function WBP_LevelReadyItem_C:Show(InPlayerInfo, InIndex)
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.PlayerInfo = InPlayerInfo
@@ -12,9 +14,11 @@ function WBP_LevelReadyItem_C:Show(InPlayerInfo, InIndex)
   self.TextBlock_Name:SetText(self.PlayerInfo.name)
   ListenObjectMessage(nil, "Level.OnTeamChange", self, self.BindOnTeamChange)
 end
+
 function WBP_LevelReadyItem_C:GetUserId()
   return self.PlayerInfo.roleid
 end
+
 function WBP_LevelReadyItem_C:UpdateTeamCaptainVis()
   local TeamSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGTeamSubsystem:StaticClass())
   if not TeamSubsystem then
@@ -26,6 +30,7 @@ function WBP_LevelReadyItem_C:UpdateTeamCaptainVis()
     self.Img_Captain:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_LevelReadyItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   self:InitReadyState()
@@ -33,11 +38,13 @@ function WBP_LevelReadyItem_C:Hide()
   UnListenObjectMessage("Level.OnTeamChange")
   self.PlayerInfo = nil
 end
+
 function WBP_LevelReadyItem_C:UpdateReadyState()
   self.Ready = true
   self.Image_Ready:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.Overlay_Ready:SetRenderOpacity(0.6)
 end
+
 function WBP_LevelReadyItem_C:InitReadyState()
   local IsReady = false
   local GS = UE.UGameplayStatics.GetGameState(GameInstance)
@@ -60,6 +67,7 @@ function WBP_LevelReadyItem_C:InitReadyState()
     self.Overlay_Ready:SetRenderOpacity(1.0)
   end
 end
+
 function WBP_LevelReadyItem_C:UpdatePlayerImage()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -71,15 +79,18 @@ function WBP_LevelReadyItem_C:UpdatePlayerImage()
   end
   SetImageBrushBySoftObject(self.Img_HeadIcon, RowInfo.LevelReadyRoleIcon, self.IconSize)
 end
+
 function WBP_LevelReadyItem_C:OnPortalStateChange(PortalState)
   if PortalState == UE.EPortalState.Ready or PortalState == UE.EPortalState.Confirm then
     self:UpdateReadyState()
   end
 end
+
 function WBP_LevelReadyItem_C:BindOnTeamChange()
   self:UpdateTeamCaptainVis()
   self:RefreshOnlineStatus()
 end
+
 function WBP_LevelReadyItem_C:RefreshOnlineStatus()
   if not self.PlayerInfo then
     print("WBP_LevelReadyItem_C:RefreshOnlineStatus \230\178\161\230\137\190\229\136\176PlayerInfo")
@@ -102,7 +113,9 @@ function WBP_LevelReadyItem_C:RefreshOnlineStatus()
     UpdateVisibility(self.Img_LeaveBattle, false)
   end
 end
+
 function WBP_LevelReadyItem_C:Destruct()
   UnListenObjectMessage("Level.OnTeamChange")
 end
+
 return WBP_LevelReadyItem_C

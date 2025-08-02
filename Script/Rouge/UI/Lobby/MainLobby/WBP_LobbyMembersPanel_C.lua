@@ -1,10 +1,12 @@
 local WBP_LobbyMembersPanel_C = UnLua.Class()
+
 function WBP_LobbyMembersPanel_C:Construct()
   local AllChildren = self.HorizontalBox_MemberSlot:GetAllChildren()
   for key, SingleWidget in pairs(AllChildren) do
     SingleWidget:Hide()
   end
 end
+
 function WBP_LobbyMembersPanel_C:Show()
   if self.IsShow then
     return
@@ -13,6 +15,7 @@ function WBP_LobbyMembersPanel_C:Show()
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   EventSystem.AddListener(self, EventDef.Lobby.UpdateRoomMembersInfo, self.BindOnUpdateRoomMembersInfo)
 end
+
 function WBP_LobbyMembersPanel_C:Hide()
   if self.IsShow ~= nil and not self.IsShow then
     return
@@ -21,10 +24,13 @@ function WBP_LobbyMembersPanel_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   EventSystem.RemoveListener(EventDef.Lobby.UpdateRoomMembersInfo, self.BindOnUpdateRoomMembersInfo)
 end
+
 function WBP_LobbyMembersPanel_C:UpdateSingleMemberState()
 end
+
 function WBP_LobbyMembersPanel_C:UpdateRoomMemberState()
 end
+
 function WBP_LobbyMembersPanel_C:BindOnUpdateRoomMembersInfo(PlayerInfoList)
   local Widget
   local WidgetClass = self.MemberSlotTemplate:StaticClass()
@@ -54,6 +60,7 @@ function WBP_LobbyMembersPanel_C:BindOnUpdateRoomMembersInfo(PlayerInfoList)
     end
   end
 end
+
 function WBP_LobbyMembersPanel_C:ClearAllMemberIcon(ClearIcon)
   for key, value in iterator(self.HorizontalBox_MemberSlot:GetAllChildren()) do
     value:ShowMemberIcon(false)
@@ -62,4 +69,5 @@ function WBP_LobbyMembersPanel_C:ClearAllMemberIcon(ClearIcon)
     end
   end
 end
+
 return WBP_LobbyMembersPanel_C

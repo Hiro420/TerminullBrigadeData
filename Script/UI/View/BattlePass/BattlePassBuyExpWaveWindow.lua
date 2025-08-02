@@ -5,18 +5,21 @@ local rapidjson = require("rapidjson")
 local BattlePassData = require("Modules.BattlePass.BattlePassData")
 local BattlePassBuyExpWaveWindow = Class(ViewBase)
 local LevelDesc = NSLOCTEXT("BattlePassBuyExpWaveWindow", "LevelDesc", "\232\180\173\228\185\176\229\144\142\229\141\135\231\186\167\232\135\179{0}\231\186\167\239\188\140\229\143\175\233\162\134\229\143\150\228\187\165\228\184\139\229\165\150\229\138\177")
+
 function BattlePassBuyExpWaveWindow:BindClickHandler()
   self.Btn_Reduce.OnClicked:Add(self, self.Btn_Reduce_OnClicked)
   self.Btn_Add.OnClicked:Add(self, self.Btn_Add_OnClicked)
   self.Btn_Max.OnClicked:Add(self, self.Btn_Max_OnClicked)
   self.WBP_InteractTipWidget:BindInteractAndClickEvent(self, self.OnEsc)
 end
+
 function BattlePassBuyExpWaveWindow:UnBindClickHandler()
   self.Btn_Reduce.OnClicked:Remove(self, self.Btn_Reduce_OnClicked)
   self.Btn_Add.OnClicked:Remove(self, self.Btn_Add_OnClicked)
   self.Btn_Max.OnClicked:Remove(self, self.Btn_Max_OnClicked)
   self.WBP_InteractTipWidget:UnBindInteractAndClickEvent(self, self.OnEsc)
 end
+
 function BattlePassBuyExpWaveWindow:InitWindow(BattlePassInfo, BattlePassID)
   self.BuyLevel = 1
   self.BattlePassInfo = BattlePassInfo
@@ -35,24 +38,31 @@ function BattlePassBuyExpWaveWindow:InitWindow(BattlePassInfo, BattlePassID)
   self:InitCurrencyIcon()
   self:UpdateWindowInfo()
 end
+
 function BattlePassBuyExpWaveWindow:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function BattlePassBuyExpWaveWindow:Construct()
   self:BindClickHandler()
 end
+
 function BattlePassBuyExpWaveWindow:Destruct()
   self:UnBindClickHandler()
 end
+
 function BattlePassBuyExpWaveWindow:OnPreHide()
   self:UnBindClickHandler()
 end
+
 function BattlePassBuyExpWaveWindow:OnHide()
   self:StopAllAnimations()
 end
+
 function BattlePassBuyExpWaveWindow:OnEsc()
   self:OnCancelClick()
 end
+
 function BattlePassBuyExpWaveWindow:Btn_Reduce_OnClicked()
   if 1 == self.BuyLevel then
     return
@@ -60,6 +70,7 @@ function BattlePassBuyExpWaveWindow:Btn_Reduce_OnClicked()
   self.BuyLevel = self.BuyLevel - 1
   self:UpdateWindowInfo()
 end
+
 function BattlePassBuyExpWaveWindow:Btn_Add_OnClicked()
   if self.BuyLevel + tonumber(self.BattlePassInfo.level) == self.MaxLevel then
     return
@@ -67,10 +78,12 @@ function BattlePassBuyExpWaveWindow:Btn_Add_OnClicked()
   self.BuyLevel = self.BuyLevel + 1
   self:UpdateWindowInfo()
 end
+
 function BattlePassBuyExpWaveWindow:Btn_Max_OnClicked()
   self.BuyLevel = self.MaxLevel - tonumber(self.BattlePassInfo.level)
   self:UpdateWindowInfo()
 end
+
 function BattlePassBuyExpWaveWindow:UpdateWindowInfo()
   self.Txt_ChooseLevel:SetText(self.BuyLevel)
   self.Txt_Desc:SetText(tonumber(self.BattlePassInfo.level) + self.BuyLevel)
@@ -102,12 +115,14 @@ function BattlePassBuyExpWaveWindow:UpdateWindowInfo()
   end
   self:UpdateCurrencyNum()
 end
+
 function BattlePassBuyExpWaveWindow:UpdateCurrencyNum()
   self.Txt_CurrencyNum:SetText(self.ConsumeNum * self.BuyLevel)
   self.IsNotEnoughMoney = self.ConsumeNum * self.BuyLevel > self.CurrencyNum
   self.WBP_Price:SetPrice(self.ConsumeNum * self.BuyLevel, nil, self.ConsumeResourcesID)
   UpdateVisibility(self.Overlay_Enable, self.IsNotEnoughMoney)
 end
+
 function BattlePassBuyExpWaveWindow:InitCurrencyIcon()
   local result, expGoodsInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBBattlePass, self.BattlePassID)
   if result then
@@ -126,4 +141,5 @@ function BattlePassBuyExpWaveWindow:InitCurrencyIcon()
     end
   end
 end
+
 return BattlePassBuyExpWaveWindow

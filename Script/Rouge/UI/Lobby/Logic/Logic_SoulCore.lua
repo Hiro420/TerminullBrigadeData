@@ -2,12 +2,16 @@ local rapidjson = require("rapidjson")
 local M = {CurSelectSoulCoreId = -1}
 _G.LogicSoulCore = _G.LogicSoulCore or M
 local SoulCoreViewClsPath = "/Game/Rouge/UI/Lobby/SoulCore/WBP_SoulCoreView.WBP_SoulCoreView_C"
+
 function LogicSoulCore.Init()
 end
+
 function LogicSoulCore:ShowSoulCore()
 end
+
 function LogicSoulCore:HideSelf()
 end
+
 function LogicSoulCore:GetSoulCoreList()
   local CharacterTable = LuaTableMgr.GetLuaTableByName(TableNames.TBHeroMonster)
   if not CharacterTable then
@@ -22,12 +26,14 @@ function LogicSoulCore:GetSoulCoreList()
   table.sort(CharacterTb, self.SoulCoreListSort)
   return CharacterTb
 end
+
 function LogicSoulCore:CheckCantEquipSoulCore(CharacterId)
   if self.CurSelectSoulCoreId == CharacterId then
     return true
   end
   return false
 end
+
 function LogicSoulCore.SoulCoreListSort(First, Second)
   if LogicRole.CheckCharacterUnlock(First.ID) and LogicRole.CheckCharacterUnlock(Second.ID) == false then
     return true
@@ -53,12 +59,14 @@ function LogicSoulCore.SoulCoreListSort(First, Second)
   end
   return First.ID < Second.ID
 end
+
 function LogicSoulCore:GetCharacterTableRow(CharacterId)
   local RowInfo
   local CharacterTable = LuaTableMgr.GetLuaTableByName(TableNames.TBHeroMonster)
   RowInfo = CharacterTable[CharacterId]
   return RowInfo
 end
+
 function LogicSoulCore:GetHeroTableRow(ResourceId)
   local HeroTb = LuaTableMgr.GetLuaTableByName(TableNames.TBHero)
   if not HeroTb then
@@ -66,6 +74,7 @@ function LogicSoulCore:GetHeroTableRow(ResourceId)
   end
   return HeroTb[ResourceId]
 end
+
 function LogicSoulCore:GetHeroArtResTableRow(IdParam)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -79,8 +88,10 @@ function LogicSoulCore:GetHeroArtResTableRow(IdParam)
   print("\233\133\141\231\189\174\229\188\130\229\184\184\239\188\140\232\175\165\231\173\137\231\186\167\229\156\168\232\161\168\228\184\173\228\184\141\229\173\152\229\156\168", IdParam)
   return nil
 end
+
 function LogicSoulCore:DrawFailed()
 end
+
 function LogicSoulCore:GetCost(Times, PondId)
   local GachaPondTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGachaPond)
   for i, v in ipairs(GachaPondTable[PondId].ExpendResource) do
@@ -88,6 +99,7 @@ function LogicSoulCore:GetCost(Times, PondId)
   end
   return 0, 0, false
 end
+
 function LogicSoulCore:CheckCost(Times, PondId)
   local NeedCostNumTb = {}
   local GachaPondTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGachaPond)
@@ -110,6 +122,7 @@ function LogicSoulCore:CheckCost(Times, PondId)
   end
   return true
 end
+
 function LogicSoulCore:Clear()
   LogicSoulCore:HideSelf()
 end

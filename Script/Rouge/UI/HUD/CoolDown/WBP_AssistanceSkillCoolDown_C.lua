@@ -1,8 +1,10 @@
 local WBP_AssistanceSkillCoolDown_C = UnLua.Class()
+
 function WBP_AssistanceSkillCoolDown_C:Construct()
   ListenObjectMessage(nil, GMP.MSG_OnAbilityTagUpdate, self, self.BindOnAbilityTagUpdate)
   self:ListenInputEvent(true)
 end
+
 function WBP_AssistanceSkillCoolDown_C:InitInfo(GenericModifyId)
   self.ModifyId = GenericModifyId
   self.Img_SkillIcon:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -45,6 +47,7 @@ function WBP_AssistanceSkillCoolDown_C:InitInfo(GenericModifyId)
   self.Img_CoolDown:SetColorAndOpacity(self.TargetBottomColor)
   self.Img_CoolDownFrame:SetColorAndOpacity(self.TargetBottomColor)
 end
+
 function WBP_AssistanceSkillCoolDown_C:BindOnAbilityTagUpdate(Tag, bTagExist, TargetActor)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if TargetActor ~= Character then
@@ -60,6 +63,7 @@ function WBP_AssistanceSkillCoolDown_C:BindOnAbilityTagUpdate(Tag, bTagExist, Ta
     self:UpdateOperateOpacity()
   end
 end
+
 function WBP_AssistanceSkillCoolDown_C:ChangeProhibitVis(bTagExist)
   if bTagExist then
     self.Img_DisableSkillIcon:SetVisibility(UE.ESlateVisibility.Visible)
@@ -73,6 +77,7 @@ function WBP_AssistanceSkillCoolDown_C:ChangeProhibitVis(bTagExist)
     self.Img_Bottom:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function WBP_AssistanceSkillCoolDown_C:UpdateOperateOpacity()
   if self.IsInUnNormalState or self.IsCooling then
     self.Img_OperateBottom:SetOpacity(self.NotCountOperateBottomOpacity)
@@ -82,6 +87,7 @@ function WBP_AssistanceSkillCoolDown_C:UpdateOperateOpacity()
     self.Txt_KeyName:SetOpacity(self.NormalOperateTextOpacity)
   end
 end
+
 function WBP_AssistanceSkillCoolDown_C:SetCoolingStatus(State)
   if self.CurState and self.CurState == State then
     return
@@ -118,6 +124,7 @@ function WBP_AssistanceSkillCoolDown_C:SetCoolingStatus(State)
   self:PlayAniOutAnimation()
   self:UpdateOperateOpacity()
 end
+
 function WBP_AssistanceSkillCoolDown_C:PlayAniInAnimation()
   if self.IsInPressState then
     return
@@ -125,6 +132,7 @@ function WBP_AssistanceSkillCoolDown_C:PlayAniInAnimation()
   self:PlayAnimationForward(self.Ani_In)
   self.IsInPressState = true
 end
+
 function WBP_AssistanceSkillCoolDown_C:PlayAniOutAnimation()
   if not self.IsInPressState then
     return
@@ -135,8 +143,10 @@ function WBP_AssistanceSkillCoolDown_C:PlayAniOutAnimation()
   self:PlayAnimationForward(self.Ani_Out)
   self.IsInPressState = false
 end
+
 function WBP_AssistanceSkillCoolDown_C:Destruct()
   UnListenObjectMessage(GMP.MSG_OnAbilityTagUpdate, self)
   self:ListenInputEvent(false)
 end
+
 return WBP_AssistanceSkillCoolDown_C

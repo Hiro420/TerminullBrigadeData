@@ -1,6 +1,7 @@
 local WBP_GemEquipItem = UnLua.Class()
 local GemData = require("Modules.Gem.GemData")
 local PuzzleData = require("Modules.Puzzle.PuzzleData")
+
 function WBP_GemEquipItem:Show(GemId, GemPackageInfo)
   self.GemId = GemId
   self.GemPackageInfo = GemPackageInfo
@@ -26,9 +27,11 @@ function WBP_GemEquipItem:Show(GemId, GemPackageInfo)
     end
   end
 end
+
 function WBP_GemEquipItem:ChangeGemItemCanDragStatus(CanDrag)
   self.CanDrag = CanDrag
 end
+
 function WBP_GemEquipItem:OnDragDetected(MyGeometry, PointerEvent)
   if not self:CanDragItem() then
     return nil
@@ -38,10 +41,12 @@ function WBP_GemEquipItem:OnDragDetected(MyGeometry, PointerEvent)
   EventSystem.Invoke(EventDef.Gem.OnGemDrag, self.GemId)
   return DragOperation
 end
+
 function WBP_GemEquipItem:OnDragCancelled(MyGeometry, PointerEvent)
   print("GemDragCancelled")
   EventSystem.Invoke(EventDef.Gem.OnGemDragCancel)
 end
+
 function WBP_GemEquipItem:CanDragItem(...)
   if not self.CanDrag then
     return false
@@ -51,12 +56,14 @@ function WBP_GemEquipItem:CanDragItem(...)
   end
   return true
 end
+
 function WBP_GemEquipItem:OnMouseButtonDown(MyGeometry, MouseEvent)
   if not self:CanDragItem() then
     return UE.UWidgetBlueprintLibrary.Unhandled()
   end
   return UE.UWidgetBlueprintLibrary.DetectDragIfPressed(MouseEvent, self, self.LeftMouseKey)
 end
+
 function WBP_GemEquipItem:OnMouseEnter(...)
   print("WBP_GemEquipItem:OnMouseEnter")
   self.IsHoverItem = true
@@ -73,6 +80,7 @@ function WBP_GemEquipItem:OnMouseEnter(...)
   end
   EventSystem.Invoke(EventDef.Gem.OnUpdateGemItemHoverStatus, true, self.GemId, true)
 end
+
 function WBP_GemEquipItem:OnMouseLeave(...)
   print("WBP_GemEquipItem:OnMouseLeave")
   self.IsHoverItem = false
@@ -81,7 +89,9 @@ function WBP_GemEquipItem:OnMouseLeave(...)
   end
   EventSystem.Invoke(EventDef.Gem.OnUpdateGemItemHoverStatus, false, self.GemId, true)
 end
+
 function WBP_GemEquipItem:PlayEquipGemAnim()
   self:PlayAnimation(self.Ani_xinpian_in)
 end
+
 return WBP_GemEquipItem

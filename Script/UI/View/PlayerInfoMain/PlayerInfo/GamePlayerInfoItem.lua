@@ -1,4 +1,5 @@
 local GamePlayerInfoItem = Class()
+
 function GamePlayerInfoItem:InitGamePlayerInfoItem(BattleStatistic)
   UpdateVisibility(self, true)
   local dataPropertyName = tostring(self.DataPropertyName)
@@ -11,7 +12,9 @@ function GamePlayerInfoItem:InitGamePlayerInfoItem(BattleStatistic)
     self.RGTextValue:SetText(BattleStatistic[tostring(dataPropertyName)])
   end
 end
+
 function GamePlayerInfoItem:Hide()
   UpdateVisibility(self, false)
 end
+
 return GamePlayerInfoItem

@@ -8,6 +8,7 @@ local PuzzleData = require("Modules.Puzzle.PuzzleData")
 local PuzzleDevelopViewModel = CreateDefaultViewModel()
 PuzzleDevelopViewModel.propertyBindings = {}
 PuzzleDevelopViewModel.subViewModels = {}
+
 function PuzzleDevelopViewModel:OnInit()
   self.Super.OnInit(self)
   self.IsShowPuzzleDetailList = false
@@ -20,6 +21,7 @@ function PuzzleDevelopViewModel:OnInit()
   self.PuzzleLevelInfo = {}
   self:DealWithTable()
 end
+
 function PuzzleDevelopViewModel:DealWithTable(...)
   local PuzzleLevelUpTable = LuaTableMgr.GetLuaTableByName(TableNames.TBPuzzleLevelUp)
   for Level, LevelInfo in pairs(PuzzleLevelUpTable) do
@@ -49,6 +51,7 @@ function PuzzleDevelopViewModel:DealWithTable(...)
     end
   end
 end
+
 function PuzzleDevelopViewModel:GetMaxLevelByQuality(InQuality)
   local QualityLevelInfo = self.PuzzleLevelInfo[InQuality]
   if not QualityLevelInfo then
@@ -62,9 +65,11 @@ function PuzzleDevelopViewModel:GetMaxLevelByQuality(InQuality)
   end
   return MaxLevel
 end
+
 function PuzzleDevelopViewModel:GetLevelInfoByQuality(InQuality)
   return self.PuzzleLevelInfo[InQuality]
 end
+
 function PuzzleDevelopViewModel:GetPuzzleHoverWidget(PuzzleId)
   if not self.PuzzleItemTipWidget or not self.PuzzleItemTipWidget:IsValid() then
     local WidgetClass = GetAssetByPath("/Game/Rouge/UI/Lobby/Puzzle/WBP_PuzzleItemTip.WBP_PuzzleItemTip_C", true)
@@ -74,31 +79,40 @@ function PuzzleDevelopViewModel:GetPuzzleHoverWidget(PuzzleId)
   self.PuzzleItemTipWidget:Show(PuzzleId)
   return self.PuzzleItemTipWidget
 end
+
 function PuzzleDevelopViewModel:GetIsShowPuzzleDetailList(...)
   return self.IsShowDetailPuzzleList
 end
+
 function PuzzleDevelopViewModel:SetIsShowPuzzleDetailList(InIsShowPuzzleDetailList)
   self.IsShowDetailPuzzleList = InIsShowPuzzleDetailList
 end
+
 function PuzzleDevelopViewModel:SetCurSelectPuzzleId(PuzzleId)
   self.CurSelectPuzzleId = PuzzleId
 end
+
 function PuzzleDevelopViewModel:GetCurSelectPuzzleId(...)
   return self.CurSelectPuzzleId
 end
+
 function PuzzleDevelopViewModel:SetPuzzleSortRule(InSortRule)
   self.PuzzleSortRule = InSortRule
 end
+
 function PuzzleDevelopViewModel:GetPuzzleSortRule(...)
   return self.PuzzleSortRule
 end
+
 function PuzzleDevelopViewModel:GetSortRuleFunction()
   local PuzzleViewModel = UIModelMgr:Get("PuzzleViewModel")
   return PuzzleViewModel:GetSortRuleFunction(self.PuzzleSortRule)
 end
+
 function PuzzleDevelopViewModel:GetPuzzleFilterSelectStatus(...)
   return self.FilterSelectStatus
 end
+
 function PuzzleDevelopViewModel:SetPuzzleFilterSelectStatus(InFilter)
   self.FilterSelectStatus = DeepCopy(InFilter)
   if self:GetFirstView() then
@@ -106,6 +120,7 @@ function PuzzleDevelopViewModel:SetPuzzleFilterSelectStatus(InFilter)
     self:GetFirstView():RefreshFilterIconStatus()
   end
 end
+
 function PuzzleDevelopViewModel:OnViewClose(...)
   if self.PuzzleItemTipWidget then
     if self.PuzzleItemTipWidget:IsValid() then
@@ -123,7 +138,9 @@ function PuzzleDevelopViewModel:OnViewClose(...)
   self.PuzzleSortRule = EPuzzleSortRule.QualityDesc
   self.CurSelectPuzzleId = nil
 end
+
 function PuzzleDevelopViewModel:OnShutdown()
   self.Super.OnShutdown(self)
 end
+
 return PuzzleDevelopViewModel

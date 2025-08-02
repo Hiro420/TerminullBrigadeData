@@ -1,4 +1,5 @@
 local WBP_GPAccessoryDisplayInfo_C = UnLua.Class()
+
 function WBP_GPAccessoryDisplayInfo_C:InitInfo(AccessoryId, Angle)
   self.BottomIcon = {
     [UE.ERGItemRarity.EIR_Normal] = self.NormalBottom,
@@ -33,6 +34,7 @@ function WBP_GPAccessoryDisplayInfo_C:InitInfo(AccessoryId, Angle)
   SetImageBrushBySoftObject(self.Img_QualityBottom, self.BottomIcon[ItemRarity])
   self:InitInscriptionList(AccessoryRowInfo, ItemRarity)
 end
+
 function WBP_GPAccessoryDisplayInfo_C:InitInscriptionList(AccessoryRowInfo, ItemRarity)
   local AllChildren = self.InscriptionList:GetAllChildren()
   for i, SingleItem in pairs(AllChildren) do
@@ -54,6 +56,7 @@ function WBP_GPAccessoryDisplayInfo_C:InitInscriptionList(AccessoryRowInfo, Item
     end
   end
 end
+
 function WBP_GPAccessoryDisplayInfo_C:UpdateAnchors(Angle)
   local Slot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.VerticalBox_Info)
   local Anchors = UE.FAnchors()
@@ -75,4 +78,5 @@ function WBP_GPAccessoryDisplayInfo_C:UpdateAnchors(Angle)
   Slot:SetAlignment(Alignment)
   Slot:SetAutoSize(true)
 end
+
 return WBP_GPAccessoryDisplayInfo_C

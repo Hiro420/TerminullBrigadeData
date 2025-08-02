@@ -1,7 +1,9 @@
 local WBP_PuzzleFilterItem = UnLua.Class()
+
 function WBP_PuzzleFilterItem:Construct()
   self.CheckBox.OnCheckStateChanged:Add(self, self.BindOnCheckStateChanged)
 end
+
 function WBP_PuzzleFilterItem:Show(Id, Type)
   UpdateVisibility(self, true)
   self.Id = Id
@@ -33,6 +35,7 @@ function WBP_PuzzleFilterItem:Show(Id, Type)
   end
   self:RefreshSelectStatus()
 end
+
 function WBP_PuzzleFilterItem:RefreshSelectStatus(SelectStatusList)
   local IsChecked = false
   if self.Type == EPuzzleFilterType.Lock then
@@ -50,12 +53,15 @@ function WBP_PuzzleFilterItem:RefreshSelectStatus(SelectStatusList)
   UpdateVisibility(self.Img_Selected, IsChecked)
   self.CheckBox:SetIsChecked(IsChecked)
 end
+
 function WBP_PuzzleFilterItem:BindOnCheckStateChanged(IsChecked)
   UpdateVisibility(self.Img_NotSelected, not IsChecked)
   UpdateVisibility(self.Img_Selected, IsChecked)
   EventSystem.Invoke(EventDef.Puzzle.UpdatePuzzleFilterSelectStatus, self.Id, self.Type, IsChecked)
 end
+
 function WBP_PuzzleFilterItem:Hide(...)
   UpdateVisibility(self, false)
 end
+
 return WBP_PuzzleFilterItem

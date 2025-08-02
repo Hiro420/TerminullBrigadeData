@@ -1,4 +1,5 @@
 local WBP_Shop_Item_C = UnLua.Class()
+
 function WBP_Shop_Item_C:Construct()
   self:AddBtnEvent()
   local BagComp = self:GetOwningPlayer():GetComponentByClass(UE.URGBagComponent:StaticClass())
@@ -6,17 +7,20 @@ function WBP_Shop_Item_C:Construct()
     BagComp.OnBagChanged:Add(self, WBP_Shop_Item_C.OnBagChanged)
   end
 end
+
 function WBP_Shop_Item_C:OnBagChanged()
   if self.ItemInfo ~= nil then
     self:RefreshRefreshCountInfo()
   end
 end
+
 function WBP_Shop_Item_C:OnClose()
   local BagComp = self:GetOwningPlayer():GetComponentByClass(UE.URGBagComponent:StaticClass())
   if BagComp then
     BagComp.OnBagChanged:Remove(self, WBP_Shop_Item_C.OnBagChanged)
   end
 end
+
 function WBP_Shop_Item_C:RefreshRefreshCountInfo()
   local CostItemId, CostNum = UE.URGBlueprintLibrary.GetRefreshCost(self, LogicShop.GetCurRefreshCount() + 1, nil, nil)
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
@@ -37,6 +41,7 @@ function WBP_Shop_Item_C:RefreshRefreshCountInfo()
   end
   self.Txt_Price:SetColorAndOpacity(Color)
 end
+
 function WBP_Shop_Item_C:InitItemInfo(ItemInfo)
   if self.ItemInfo == ItemInfo then
     return
@@ -120,6 +125,7 @@ function WBP_Shop_Item_C:InitItemInfo(ItemInfo)
     RGUIMgr:GetUI("WBP_Shop_C").WBP_Shop_Item_Details.Price:SetColorAndOpacity(self.PriceColor)
   end
 end
+
 function WBP_Shop_Item_C:AddBtnEvent()
   self.Btn_Main.OnHovered:Clear()
   self.Btn_Main.OnHovered:Add(self, function()
@@ -138,6 +144,7 @@ function WBP_Shop_Item_C:AddBtnEvent()
     end
   end)
 end
+
 function WBP_Shop_Item_C:SetHovered(bHovered)
   UpdateVisibility(self.Img_Hover, bHovered)
   if bHovered then
@@ -160,6 +167,7 @@ function WBP_Shop_Item_C:SetHovered(bHovered)
     end
   end
 end
+
 function WBP_Shop_Item_C:OnMouseButtonDown(MyGeometry, MouseEvent)
   print("LJS", UE.UKismetInputLibrary.PointerEvent_GetEffectingButton(MouseEvent), self.LeftMouseButton)
   if UE.UKismetInputLibrary.PointerEvent_GetEffectingButton(MouseEvent) == self.LeftMouseButton then
@@ -167,6 +175,7 @@ function WBP_Shop_Item_C:OnMouseButtonDown(MyGeometry, MouseEvent)
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function WBP_Shop_Item_C:HaveGenericModify(InstanceId)
   local Pawn = self:GetOwningPlayerPawn()
   local GenericModifyComponent = Pawn:GetComponentByClass(UE.URGGenericModifyComponent:StaticClass())
@@ -182,6 +191,7 @@ function WBP_Shop_Item_C:HaveGenericModify(InstanceId)
   end
   return false
 end
+
 function WBP_Shop_Item_C:HaveRarityUpGenericModify(InstanceId)
   local Pawn = self:GetOwningPlayerPawn()
   local GenericModifyComponent = Pawn:GetComponentByClass(UE.URGGenericModifyComponent:StaticClass())
@@ -197,4 +207,5 @@ function WBP_Shop_Item_C:HaveRarityUpGenericModify(InstanceId)
   end
   return false
 end
+
 return WBP_Shop_Item_C

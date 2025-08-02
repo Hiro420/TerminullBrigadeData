@@ -1,5 +1,6 @@
 local PuzzleData = require("Modules.Puzzle.PuzzleData")
 local WBP_CombatPowerTip = UnLua.Class()
+
 function WBP_CombatPowerTip:Construct()
   local AllLevels = LuaTableMgr.GetLuaTableByName(TableNames.TBGameFloorUnlock)
   self.AllLevelConfigList = {}
@@ -14,6 +15,7 @@ function WBP_CombatPowerTip:Construct()
     end
   end
 end
+
 function WBP_CombatPowerTip:Show(...)
   self:RefreshTipText()
   EventSystem.AddListenerNew(EventDef.Lobby.UpdateMyTeamInfo, self, self.BindOnUpdateMyTeamInfo)
@@ -21,18 +23,23 @@ function WBP_CombatPowerTip:Show(...)
   EventSystem.AddListenerNew(EventDef.Lobby.UpdateMyHeroInfo, self, self.BindOnUpdateMyHeroInfo)
   EventSystem.AddListenerNew(EventDef.Puzzle.OnUpdatePuzzlePackageInfo, self, self.BindOnUpdatePuzzlePackageInfo)
 end
+
 function WBP_CombatPowerTip:BindOnUpdateMyTeamInfo(...)
   self:RefreshTipText()
 end
+
 function WBP_CombatPowerTip:BindOnUpdateCommonTalentInfo(...)
   self:RefreshTipText()
 end
+
 function WBP_CombatPowerTip:BindOnUpdateMyHeroInfo(...)
   self:RefreshTipText()
 end
+
 function WBP_CombatPowerTip:BindOnUpdatePuzzlePackageInfo(...)
   self:RefreshTipText()
 end
+
 function WBP_CombatPowerTip:RefreshTipText(WorldId, Floor)
   local Coefficient = LogicLobby.GetCombatPowerCoefficcent(WorldId, Floor)
   local TargetText
@@ -49,10 +56,12 @@ function WBP_CombatPowerTip:RefreshTipText(WorldId, Floor)
   end
   self.Txt_TipText:SetText(TargetText)
 end
+
 function WBP_CombatPowerTip:Hide(...)
   EventSystem.RemoveListenerNew(EventDef.Lobby.UpdateMyTeamInfo, self, self.BindOnUpdateMyTeamInfo)
   EventSystem.RemoveListenerNew(EventDef.Lobby.UpdateCommonTalentInfo, self, self.BindOnUpdateCommonTalentInfo)
   EventSystem.RemoveListenerNew(EventDef.Lobby.UpdateMyHeroInfo, self, self.BindOnUpdateMyHeroInfo)
   EventSystem.RemoveListenerNew(EventDef.Puzzle.OnUpdatePuzzlePackageInfo, self, self.BindOnUpdatePuzzlePackageInfo)
 end
+
 return WBP_CombatPowerTip

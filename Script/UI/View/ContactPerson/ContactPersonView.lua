@@ -7,14 +7,17 @@ local EscName = "PauseGame"
 local ContactPersonView = Class(ViewBase)
 local ContactPersonData = require("Modules.ContactPerson.ContactPersonData")
 local CurrentTabList = {}
+
 function ContactPersonView:OnBindUIInput()
   self.WBP_InteractTipWidgetMenuPrev:BindInteractAndClickEvent(self, self.BindOnSelectPrevMenu)
   self.WBP_InteractTipWidgetMenuNext:BindInteractAndClickEvent(self, self.BindOnSelectNextMenu)
 end
+
 function ContactPersonView:OnUnBindUIInput()
   self.WBP_InteractTipWidgetMenuPrev:UnBindInteractAndClickEvent(self, self.BindOnSelectPrevMenu)
   self.WBP_InteractTipWidgetMenuNext:UnBindInteractAndClickEvent(self, self.BindOnSelectNextMenu)
 end
+
 function ContactPersonView:BindClickHandler()
   self.MenuButtonToggleGroup.OnCheckStateChanged:Add(self, self.BindOnCheckStateChanged)
   self.Btn_CopyId.OnClicked:Add(self, self.BindOnCopyIdButtonClicked)
@@ -30,6 +33,7 @@ function ContactPersonView:BindClickHandler()
   self.Edit_SearchPlayer.OnTextCommitted:Add(self, self.BindOnSearchPlayerTextCommitted)
   ListenObjectMessage(nil, GMP.MSG_Localization_UpdateCulture, self, self.BindOnUpdateCulture)
 end
+
 function ContactPersonView:UnBindClickHandler()
   self.MenuButtonToggleGroup.OnCheckStateChanged:Remove(self, self.BindOnCheckStateChanged)
   self.Btn_CopyId.OnClicked:Remove(self, self.BindOnCopyIdButtonClicked)
@@ -44,27 +48,32 @@ function ContactPersonView:UnBindClickHandler()
   self.Edit_SearchPlayer.OnTextCommitted:Remove(self, self.BindOnSearchPlayerTextCommitted)
   UnListenObjectMessage(GMP.MSG_Localization_UpdateCulture, self)
 end
+
 function ContactPersonView:OnInit()
   self.DataBindTable = {}
   self.ViewModel = UIModelMgr:Get("ContactPersonViewModel")
   self:BindClickHandler()
   self:RefreshSelfOnlineStatusOptions()
 end
+
 function ContactPersonView:RefreshSelfOnlineStatusOptions()
   self.ComboBox_Status:ClearOptions()
   for key, SingleItem in pairs(self.SelfOnlineStatusOptions) do
     self.ComboBox_Status:AddOption(SingleItem)
   end
 end
+
 function ContactPersonView:BindOnUpdateCulture()
   self:RefreshSelfOnlineStatusOptions()
 end
+
 function ContactPersonView:OnDestroy()
   self:UnBindClickHandler()
   if self.ViewModel then
     self.ViewModel:StartOrEndRefreshPlayerInfoList(false)
   end
 end
+
 function ContactPersonView:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -106,9 +115,11 @@ function ContactPersonView:OnShow(...)
   self:SetEnhancedInputActionBlocking(true)
   self:SetEnhancedInputActionPriority(1)
 end
+
 function ContactPersonView:GetCurSelectTabId()
   return self.MenuButtonToggleGroup.CurSelectId
 end
+
 function ContactPersonView:InitInfo(BasicInfo)
   self.Txt_Name:SetText(BasicInfo.nickname)
   self.Txt_UserId:SetText(BasicInfo.roleid)
@@ -123,6 +134,7 @@ function ContactPersonView:InitInfo(BasicInfo)
     self.PlatformIconPanel:UpdateChannelInfo(BasicInfo.roleid, true)
   end
 end
+
 function ContactPersonView:BindOnUpdatePersonalChatPanelVis(IsShow, PlayerInfo)
   if IsShow then
     self.WBP_PersonalChat:Show(PlayerInfo)
@@ -130,15 +142,18 @@ function ContactPersonView:BindOnUpdatePersonalChatPanelVis(IsShow, PlayerInfo)
     self.WBP_PersonalChat:Hide()
   end
 end
+
 function ContactPersonView:OnHideByOther()
   self:SetEnhancedInputActionPriority(0)
   self:SetEnhancedInputActionBlocking(false)
 end
+
 function ContactPersonView:OnRollback()
   self:SetEnhancedInputActionPriority(1)
   self:SetEnhancedInputActionBlocking(true)
   self:PushInputAction()
 end
+
 function ContactPersonView:OnPreHide(...)
   self.WBP_InteractTipWidgetEsc:UnBindInteractAndClickEvent(self, self.ListenForEscInputAction)
   EventSystem.RemoveListener(EventDef.ContactPerson.UpdatePersonalChatPanelVis, self.BindOnUpdatePersonalChatPanelVis, self)
@@ -149,14 +164,17 @@ function ContactPersonView:OnPreHide(...)
   self:SetEnhancedInputActionBlocking(false)
   self:SetEnhancedInputActionPriority(0)
 end
+
 function ContactPersonView:OnHide()
 end
+
 function ContactPersonView:ListenForEscInputAction()
   UIMgr:Hide(ViewID.UI_ContactPerson)
   if UIMgr:IsShow(ViewID.UI_ContactPersonOperateButtonPanel) then
     UIMgr:Hide(ViewID.UI_ContactPersonOperateButtonPanel)
   end
 end
+
 function ContactPersonView:OnBGMouseButtonDown(MyGeometry, MouseEvent)
   if not UE.UKismetInputLibrary.PointerEvent_IsMouseButtonDown(MouseEvent, self.LeftMouseKey) then
     return UE.UWidgetBlueprintLibrary.Handled()
@@ -164,6 +182,7 @@ function ContactPersonView:OnBGMouseButtonDown(MyGeometry, MouseEvent)
   self:ListenForEscInputAction()
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function ContactPersonView:BindOnCheckStateChanged(SelectIndex)
   self:HideAllPlayerInfoItem()
   if self.IsDefaultSelectMenu then
@@ -193,10 +212,12 @@ function ContactPersonView:BindOnCheckStateChanged(SelectIndex)
     self.BlackListPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function ContactPersonView:BindOnCopyIdButtonClicked()
   UE.URGBlueprintLibrary.CopyMessageToClipboard(tostring(self.Txt_UserId:GetText()))
   ShowWaveWindow(1097)
 end
+
 function ContactPersonView:BindOnSearchPlayerTextChanged(Text)
   local CharacterTable = UE.UKismetStringLibrary.GetCharacterArrayFromString(Text):ToTable()
   if table.count(CharacterTable) > 0 then
@@ -228,6 +249,7 @@ function ContactPersonView:BindOnSearchPlayerTextChanged(Text)
     self:PlayAnimationForward(self.Ani_Search_Out)
   end
 end
+
 function ContactPersonView:OnAnimationFinished(InAnimation)
   if InAnimation == self.Ani_Search_Out then
     self.SearchFriendPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -235,6 +257,7 @@ function ContactPersonView:OnAnimationFinished(InAnimation)
     self.SearchFriendResultPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function ContactPersonView:BindOnSearchButtonClicked()
   local NameList = {
     tostring(self.Edit_SearchPlayer:GetText())
@@ -254,13 +277,16 @@ function ContactPersonView:BindOnSearchButtonClicked()
   })
   self.SearchFriendResultPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function ContactPersonView:BindOnClearSearchInfoButtonClicked()
   self.Edit_SearchPlayer:SetText("")
   self:BindOnSearchPlayerTextChanged("")
 end
+
 function ContactPersonView:BindOnPersonalChatButtonClicked()
   EventSystem.Invoke(EventDef.ContactPerson.UpdatePersonalChatPanelVis, true, nil)
 end
+
 function ContactPersonView:BindOnExpandFriendListButtonClicked()
   if self.IsExpandFriendList then
     self.PlayerInfoList:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -271,6 +297,7 @@ function ContactPersonView:BindOnExpandFriendListButtonClicked()
   end
   self.IsExpandFriendList = not self.IsExpandFriendList
 end
+
 function ContactPersonView:BindOnExpandBlackListButtonClicked()
   if self.IsExpandBlackList then
     self.BlackListInfoPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -281,6 +308,7 @@ function ContactPersonView:BindOnExpandBlackListButtonClicked()
   end
   self.IsExpandBlackList = not self.IsExpandBlackList
 end
+
 function ContactPersonView:BindOnStatusSelectionChanged(SelectedItem, SelectionType)
   local Index = self.ComboBox_Status:FindOptionIndex(SelectedItem)
   if -1 == Index then
@@ -288,12 +316,15 @@ function ContactPersonView:BindOnStatusSelectionChanged(SelectedItem, SelectionT
   end
   ContactPersonHandler:RequestChangeInvisibleToServer(Index)
 end
+
 function ContactPersonView:BindOnStatusComboBoxOpening()
   self.StatusArrowPanel:SetRenderTransformAngle(180)
 end
+
 function ContactPersonView:BindOnStatusComboBoxClosing()
   self.StatusArrowPanel:SetRenderTransformAngle(0)
 end
+
 function ContactPersonView:OnSearchResultPlayerListChanged(Result)
   local AllRecentItem = self.SearchResultPanel:GetAllChildren()
   for key, SingleRecentItem in pairs(AllRecentItem) do
@@ -315,6 +346,7 @@ function ContactPersonView:OnSearchResultPlayerListChanged(Result)
     Index = Index + 1
   end
 end
+
 function ContactPersonView:RefreshSearchFriendResultList()
   local CurSearchText = tostring(self.Edit_SearchPlayer:GetText())
   local AllFriendInfoList = ContactPersonData:GetFriendInfoList()
@@ -342,6 +374,7 @@ function ContactPersonView:RefreshSearchFriendResultList()
   end
   HideOtherItem(self.SearchFriendResultList, Index + 1)
 end
+
 function ContactPersonView:OnPlayerListChanged(PlayerInfo, ContactListType)
   local Index = 0
   local EndItem, TargetTextColor
@@ -411,6 +444,7 @@ function ContactPersonView:OnPlayerListChanged(PlayerInfo, ContactListType)
     EndItem:HideApplyFriendLine()
   end
 end
+
 function ContactPersonView:RefreshBlackList(PlayerInfoList)
   local Index = 0
   local EndItem, TargetTextColor
@@ -437,6 +471,7 @@ function ContactPersonView:RefreshBlackList(PlayerInfoList)
   self.Txt_OnlineBlackListCount:SetText(tostring(OnlineBlackCount))
   self.Txt_AllBlackListCount:SetText(tostring(table.count(ContactPersonData:GetBlackList())))
 end
+
 function ContactPersonView:HideAllPlayerInfoItem()
   local AllRecentItem = self.PlayerInfoList:GetAllChildren()
   for key, SingleRecentItem in pairs(AllRecentItem) do
@@ -452,6 +487,7 @@ function ContactPersonView:HideAllPlayerInfoItem()
     self.RecentPlayerEmptyPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function ContactPersonView:HideAllBlackListItem()
   local AllItem = self.BlackListInfoPanel:GetAllChildren()
   for key, SingleItem in pairs(AllItem) do
@@ -460,6 +496,7 @@ function ContactPersonView:HideAllBlackListItem()
   self.Txt_OnlineBlackListCount:SetText(tostring(0))
   self.Txt_AllBlackListCount:SetText(tostring(0))
 end
+
 function ContactPersonView:ShowPlayerInfoTips(bIsShow, PlayerInfo, TargetItem)
   if self:GetCurSelectTabId() == EContactListType.PlatformFriend and UE.URGBlueprintLibrary.IsPlatformConsole() then
     self.WBP_SocialPlayerInfoTips:Hide()
@@ -476,12 +513,14 @@ function ContactPersonView:ShowPlayerInfoTips(bIsShow, PlayerInfo, TargetItem)
     self.WBP_SocialPlayerInfoTips:Hide()
   end
 end
+
 function ContactPersonView:BindOnSearchPlayerTextCommitted(Text, CommitMethod)
   if CommitMethod ~= UE.ETextCommit.OnEnter then
     return
   end
   self:BindOnSearchButtonClicked()
 end
+
 function ContactPersonView:BindOnSelectPrevMenu()
   local CurrentSelectID = self:GetCurSelectTabId()
   local CurrentIndex = self:GetTabIndex(CurrentSelectID)
@@ -493,6 +532,7 @@ function ContactPersonView:BindOnSelectPrevMenu()
     self.MenuButtonToggleGroup:SelectId(CurrentTabList[CurrentIndex])
   end
 end
+
 function ContactPersonView:BindOnSelectNextMenu()
   local CurrentSelectID = self:GetCurSelectTabId()
   local CurrentIndex = self:GetTabIndex(CurrentSelectID)
@@ -504,6 +544,7 @@ function ContactPersonView:BindOnSelectNextMenu()
     self.MenuButtonToggleGroup:SelectId(CurrentTabList[CurrentIndex])
   end
 end
+
 function ContactPersonView:GetTabIndex(CurrentSelectID)
   for Index, ID in ipairs(CurrentTabList) do
     if CurrentSelectID == ID then
@@ -512,4 +553,5 @@ function ContactPersonView:GetTabIndex(CurrentSelectID)
   end
   return 0
 end
+
 return ContactPersonView

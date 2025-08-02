@@ -18,17 +18,22 @@ local ToggleIdToView = {
     SystemId = 3
   }
 }
+
 function DevelopMainView:BindClickHandler()
 end
+
 function DevelopMainView:UnBindClickHandler()
 end
+
 function DevelopMainView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function DevelopMainView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function DevelopMainView:OnShow(...)
   local param = {
     ...
@@ -40,6 +45,7 @@ function DevelopMainView:OnShow(...)
   self.bCanChangeHero = self.WBP_ViewSet.bCanChangeHero
   LogicRole.ShowOrLoadLevel(-1)
 end
+
 function DevelopMainView:OnShowLink(LinkParams, ...)
   local viewIdx = 1
   if LinkParams:IsValidIndex(1) then
@@ -47,11 +53,13 @@ function DevelopMainView:OnShowLink(LinkParams, ...)
   end
   self.WBP_ViewSet:OnShowLink(viewIdx, ...)
 end
+
 function DevelopMainView:OnHide()
   self.WBP_ViewSet:OnHideViewSet()
   EventSystem.RemoveListenerNew(EventDef.Develop.UpdateViewSetVisible, self, self.OnUpdateViewSetVisible)
   self:HideFilterTips()
 end
+
 function DevelopMainView:HideFilterTips()
   if self.RGAutoLoadPanelFilterTips.ChildWidget then
     self.RGAutoLoadPanelFilterTips.ChildWidget:Hide(true)
@@ -59,6 +67,7 @@ function DevelopMainView:HideFilterTips()
     UpdateVisibility(self.RGAutoLoadPanelFilterTips, false)
   end
 end
+
 function DevelopMainView:OnUpdateViewSetVisible(bIsShow, bShowOperator)
   if bShowOperator then
     UpdateVisibility(self.WBP_ViewSet.CanvasPanelRoot, bIsShow)
@@ -68,6 +77,7 @@ function DevelopMainView:OnUpdateViewSetVisible(bIsShow, bShowOperator)
     self.bCanChangeHero = bIsShow
   end
 end
+
 function DevelopMainView:GetShowParamsByViewId(ViewId)
   if ViewId == ViewID.UI_WeaponMain then
     return {
@@ -90,6 +100,7 @@ function DevelopMainView:GetShowParamsByViewId(ViewId)
     }
   end
 end
+
 function DevelopMainView:PreShowSubView(ViewId)
   if ViewId == ViewID.UI_WeaponMain then
     local curHeroId = self.WBP_ViewSet:GetCurShowHeroId()
@@ -104,13 +115,17 @@ function DevelopMainView:PreShowSubView(ViewId)
   elseif ViewId == ViewID.UI_ProficiencyView then
   end
 end
+
 function DevelopMainView:HideUI(bIsShow)
   UpdateVisibility(self.CanvasPanelRoot, bIsShow)
 end
+
 function DevelopMainView:GetCanChangeHero()
   return self.bCanChangeHero
 end
+
 function DevelopMainView:GetToggleIdToView()
   return DeepCopy(ToggleIdToView)
 end
+
 return DevelopMainView

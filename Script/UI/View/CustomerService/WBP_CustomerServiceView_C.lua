@@ -7,22 +7,27 @@ local LanguageType = {
   [0] = "zh",
   [1] = "en"
 }
+
 function WBP_CustomerServiceView_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_CustomerServiceView_C:OnDestroy()
   self.Overridden.Destruct(self)
 end
+
 function WBP_CustomerServiceView_C:OnShow(...)
   print("WBP_CustomerServiceView_C:OnShow CursorVirtualFocus 1")
   UE.URGBlueprintLibrary.CursorVirtualFocus(1)
   self:OnDisplay()
 end
+
 function WBP_CustomerServiceView_C:OnHide(...)
   print("WBP_CustomerServiceView_C:OnHide CursorVirtualFocus 0")
   UE.URGBlueprintLibrary.CursorVirtualFocus(0)
   self:OnUnDisplay()
 end
+
 function WBP_CustomerServiceView_C:OnDisplay()
   self.WBP_InteractTipWidgetEsc:BindInteractAndClickEvent(self, self.ListenForEscInputAction)
   SetInputMode_GameAndUIEx(self:GetOwningPlayer(), self, UE.EMouseLockMode.LockAlways)
@@ -62,9 +67,11 @@ function WBP_CustomerServiceView_C:OnDisplay()
     })
   end
 end
+
 function WBP_CustomerServiceView_C:OnUnDisplay()
   self.WBP_InteractTipWidgetEsc:UnBindInteractAndClickEvent(self, self.ListenForEscInputAction)
 end
+
 function WBP_CustomerServiceView_C:ListenForEscInputAction()
   if LogicLobby.IsInLobbyLevel() then
     UIMgr:Hide(ViewID.UI_CustomerServiceView, true)
@@ -78,6 +85,7 @@ function WBP_CustomerServiceView_C:ListenForEscInputAction()
     UIManager:Switch(WidgetClass, true)
   end
 end
+
 function WBP_CustomerServiceView_C:GetUrlByToken(Token)
   local BaseUrl = "https://xyapi.game.qq.com/xiaoyue/service/redirect"
   local Param = {
@@ -105,6 +113,7 @@ function WBP_CustomerServiceView_C:GetUrlByToken(Token)
   end
   return BaseUrl .. "?" .. UrlParamStr
 end
+
 function WBP_CustomerServiceView_C:GetUrlByTokenAndSign(Token, Sign, Language)
   local BaseUrl = "https://test-h5.vlinkapi.com/pc/index.html"
   local Param = {
@@ -135,6 +144,7 @@ function WBP_CustomerServiceView_C:GetUrlByTokenAndSign(Token, Sign, Language)
   end
   return BaseUrl .. "?" .. UrlParamStr
 end
+
 function WBP_CustomerServiceView_C:FocusInput()
   self.Overridden.FocusInput(self)
   local Pawn = self:GetOwningPlayerPawn()
@@ -146,6 +156,7 @@ function WBP_CustomerServiceView_C:FocusInput()
   InputComp:SetMoveInputIgnored(false)
   self:SetEnhancedInputActionBlocking(true)
 end
+
 function WBP_CustomerServiceView_C:UnfocusInput()
   self.Overridden.UnfocusInput(self)
   local PC = self:GetOwningPlayer()
@@ -156,4 +167,5 @@ function WBP_CustomerServiceView_C:UnfocusInput()
   SetInputIgnore(Pawn, false)
   self:SetEnhancedInputActionBlocking(false)
 end
+
 return WBP_CustomerServiceView_C

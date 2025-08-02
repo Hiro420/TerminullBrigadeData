@@ -70,6 +70,7 @@ LogicTeam = LogicTeam or {
   RolesGameFloorInfo = {},
   Region = ""
 }
+
 function LogicTeam.Init()
   LogicTeam.TeamStateChangeFailRecord = {}
   LogicTeam.StartMatchingTime = 0
@@ -111,9 +112,11 @@ function LogicTeam.Init()
   EventSystem.AddListener(nil, EventDef.WSMessage.PickHeroDone, LogicTeam.BindOnPickHeroDone)
   EventSystem.AddListener(nil, EventDef.BeginnerGuide.OnGetFinishedGuideList, LogicTeam.BindOnGetFinishedGuideList)
 end
+
 function LogicTeam.SetLastClickStartButtonTime(InClickTime)
   LogicTeam.LastClickStartButtonTime = InClickTime
 end
+
 function LogicTeam.SetIsDefaultNeedMatchTeammate(IsNeed)
   if LogicTeam.IsDefaultNeedMatchTeammate == IsNeed then
     return
@@ -126,20 +129,25 @@ function LogicTeam.SetIsDefaultNeedMatchTeammate(IsNeed)
   end
   EventSystem.Invoke(EventDef.Lobby.OnChangeDefaultNeedMatchTeammate)
 end
+
 function LogicTeam.GetIsDefaultNeedMatchTeammate()
   return LogicTeam.IsDefaultNeedMatchTeammate
 end
+
 function LogicTeam.SetIsMatching(IsMatching)
   if LogicTeam.IsMatching ~= IsMatching then
     LogicTeam.IsMatching = IsMatching
   end
 end
+
 function LogicTeam.GetIsMatching()
   return LogicTeam.IsMatching
 end
+
 function LogicTeam.GetCurMatchingTime()
   return math.floor(GetTimeWithServerDelta() - LogicTeam.StartMatchingTime)
 end
+
 function LogicTeam.RequestCreateTeamToServer(SuccessFuncList)
   local Params = {
     worldID = LogicTeam.GetWorldId(),
@@ -172,6 +180,7 @@ function LogicTeam.RequestCreateTeamToServer(SuccessFuncList)
     end
   })
 end
+
 function LogicTeam.DealWithTeamInfo(InTeamInfo)
   local TeamInfo = DataMgr.GetTeamInfo()
   local IsInTeam = InTeamInfo.teamid and InTeamInfo.teamid ~= "0" or false
@@ -250,6 +259,7 @@ function LogicTeam.DealWithTeamInfo(InTeamInfo)
     })
   end
 end
+
 function LogicTeam.RequestGetMyTeamDataToServer()
   HttpCommunication.RequestByGet("team/getmyteamdata", {
     GameInstance,
@@ -260,8 +270,10 @@ function LogicTeam.RequestGetMyTeamDataToServer()
     end
   })
 end
+
 function LogicTeam.ResetTeamData()
 end
+
 function LogicTeam.SetTeamState(InState)
   if LogicTeam.CurTeamState ~= InState then
     EventSystem.Invoke(EventDef.Lobby.OnTeamStateChanged, LogicTeam.CurTeamState, InState)
@@ -269,6 +281,7 @@ function LogicTeam.SetTeamState(InState)
   LogicTeam.OldTeamState = LogicTeam.CurTeamState
   LogicTeam.CurTeamState = InState
 end
+
 function LogicTeam.CollectMembershipChangeList(JsonTable)
   local LastTeamInfo = DataMgr.GetTeamInfo()
   if LastTeamInfo.teamid == JsonTable.teamid then
@@ -299,6 +312,7 @@ function LogicTeam.CollectMembershipChangeList(JsonTable)
     end
   end
 end
+
 function LogicTeam.RequestJoinTeamToServer(TeamId, JoinWay, SuccessDelegate)
   local Param = {
     teamid = TeamId,
@@ -313,6 +327,7 @@ function LogicTeam.RequestJoinTeamToServer(TeamId, JoinWay, SuccessDelegate)
     end
   })
 end
+
 function LogicTeam.RequestKickTeamMemberToServer(RoleId, IsBlock)
   local TeamInfo = DataMgr.GetTeamInfo()
   if LogicTeam.CurTeamState == LogicTeam.TeamState.Matching or LogicTeam.CurTeamState == LogicTeam.TeamState.HeroPicking or LogicTeam.CurTeamState == LogicTeam.TeamState.Battle then
@@ -340,6 +355,7 @@ function LogicTeam.RequestKickTeamMemberToServer(RoleId, IsBlock)
     end
   })
 end
+
 function LogicTeam.RequestQuitTeamToServer(SuccessFuncList)
   local TeamInfo = DataMgr.GetTeamInfo()
   local Param = {
@@ -366,6 +382,7 @@ function LogicTeam.RequestQuitTeamToServer(SuccessFuncList)
     end
   })
 end
+
 function LogicTeam.RequestSetTeamDataToServer(WorldId, ModeIdParam, Floor)
   if not LogicTeam.IsCaptain() then
     return
@@ -413,6 +430,7 @@ function LogicTeam.RequestSetTeamDataToServer(WorldId, ModeIdParam, Floor)
     EventSystem.Invoke(EventDef.Lobby.UpdateMyTeamInfo)
   end
 end
+
 function LogicTeam.RequestStartGameToServer(SuccessCallback)
   local TeamInfo = DataMgr.GetTeamInfo()
   local DebugDSName = CmdLineMgr.FindParam("DebugDSName")
@@ -455,6 +473,7 @@ function LogicTeam.RequestStartGameToServer(SuccessCallback)
     })
   end
 end
+
 function LogicTeam.RequestStartMatchToServer()
   local TeamInfo = DataMgr.GetTeamInfo()
   if not LogicTeam.IsCaptain() then
@@ -479,7 +498,8 @@ function LogicTeam.RequestStartMatchToServer()
   })
   UE.URGGameplayLibrary.TriggerOnClientStartMatching(GameInstance)
 end
-function LogicTeam.RequestStopMatchToServer()
+
+function LogicTeam.RequestStopMatchToServer(SuccessCallback)
   local TeamInfo = DataMgr.GetTeamInfo()
   HttpCommunication.Request("team/stopmatch", {
     teamid = TeamInfo.teamid
@@ -487,6 +507,9 @@ function LogicTeam.RequestStopMatchToServer()
     GameInstance,
     function()
       print("StopMatchSuccess")
+      if SuccessCallback then
+        SuccessCallback[2](SuccessCallback[1])
+      end
     end
   }, {
     GameInstance,
@@ -495,6 +518,7 @@ function LogicTeam.RequestStopMatchToServer()
   })
   UE.URGGameplayLibrary.TriggerOnClientStopMatching(GameInstance)
 end
+
 function LogicTeam.RequestJoinGameToServer()
   if not DataMgr.IsInTeam() then
     return
@@ -527,12 +551,14 @@ function LogicTeam.RequestJoinGameToServer()
     end
   })
 end
+
 function LogicTeam.StartJoinGameResultTimer()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(LogicTeam.RecoverTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(GameInstance, LogicTeam.RecoverTimer)
   end
   EventSystem.Invoke(EventDef.Lobby.OnJoinGameFail)
 end
+
 function LogicTeam.RequestCancelPrepareToServer()
   local TeamInfo = DataMgr.GetTeamInfo()
   HttpCommunication.Request("team/cancelprepare", {
@@ -550,6 +576,7 @@ function LogicTeam.RequestCancelPrepareToServer()
     end
   })
 end
+
 function LogicTeam.RequestApplyJoinTeamToServer(RoleId, InviteTeamWay)
   if LogicTeam.InvitedList[RoleId] and GetTimeWithServerDelta() - LogicTeam.InvitedList[RoleId] < LogicTeam.InviteInterval then
     ShowWaveWindow(15023, {})
@@ -569,6 +596,7 @@ function LogicTeam.RequestApplyJoinTeamToServer(RoleId, InviteTeamWay)
     end
   })
 end
+
 function LogicTeam.RequestInviteJoinTeamToServer(RoleId, InviteTeamWay)
   if LogicTeam.GetModeId() == TableEnums.ENUMGameMode.BEGINERGUIDANCE then
     ShowWaveWindow(LogicTeam.BGCanNotInviteTeamTipId, {})
@@ -597,6 +625,7 @@ function LogicTeam.RequestInviteJoinTeamToServer(RoleId, InviteTeamWay)
     end
   })
 end
+
 function LogicTeam.RequestAgreeJoinTeamToServer(RoleId, TeamId, TeamJoinWay)
   local JsonParam = {
     roleID = RoleId,
@@ -615,6 +644,7 @@ function LogicTeam.RequestAgreeJoinTeamToServer(RoleId, TeamId, TeamJoinWay)
     end
   })
 end
+
 function LogicTeam.RequestRefuseFriendJoinTeam(RoleId, TeamId)
   local JsonParam = {roleID = RoleId, teamID = TeamId}
   HttpCommunication.Request("team/refusefriendjointeam", JsonParam, {
@@ -629,6 +659,7 @@ function LogicTeam.RequestRefuseFriendJoinTeam(RoleId, TeamId)
     end
   })
 end
+
 function LogicTeam.RequestRefuseJoinFriendTeam(RoleId, TeamId)
   local JsonParam = {roleID = RoleId, teamID = TeamId}
   HttpCommunication.Request("team/refusejoinfriendteam", JsonParam, {
@@ -643,6 +674,7 @@ function LogicTeam.RequestRefuseJoinFriendTeam(RoleId, TeamId)
     end
   })
 end
+
 function LogicTeam.RequestChangeCaptainToServer(RoleId)
   if not DataMgr.IsInTeam() or not LogicTeam.IsCaptain() then
     print("ChangeCaptain Error")
@@ -670,6 +702,7 @@ function LogicTeam.RequestChangeCaptainToServer(RoleId)
     end
   })
 end
+
 function LogicTeam.RequestGetTeamMemberCountToServer(RoleId, SuccessFuncList)
   HttpCommunication.Request("team/getteammembercount", {roleID = RoleId}, {
     GameInstance,
@@ -682,6 +715,7 @@ function LogicTeam.RequestGetTeamMemberCountToServer(RoleId, SuccessFuncList)
     end
   })
 end
+
 function LogicTeam.RequestPreDeductTicket(Ticket)
   local MyTeamInfo = DataMgr.GetTeamInfo()
   local JsonParam = {
@@ -698,6 +732,7 @@ function LogicTeam.RequestPreDeductTicket(Ticket)
     end
   })
 end
+
 function LogicTeam.RequestCancelStartGameToServer()
   local MyTeamInfo = DataMgr.GetTeamInfo()
   local JsonParam = {
@@ -711,6 +746,7 @@ function LogicTeam.RequestCancelStartGameToServer()
     end
   })
 end
+
 function LogicTeam.SendRolesGameFloorData(RoleIDs)
   local url = "playergrowth/gamefloor/rolesgamefloordata"
   HttpCommunication.Request(url, {roleIDs = RoleIDs}, {
@@ -758,6 +794,7 @@ function LogicTeam.SendRolesGameFloorData(RoleIDs)
     end
   })
 end
+
 function LogicTeam.GetTeamUnLockMode(ModeID, WorldId)
   for RoleId, ModeInfo in pairs(LogicTeam.RolesGameFloorInfo) do
     if RoleId == DataMgr.GetUserId() then
@@ -767,6 +804,7 @@ function LogicTeam.GetTeamUnLockMode(ModeID, WorldId)
   end
   return true
 end
+
 function LogicTeam.GetTeamUnLockModeAndMember(ModeID, WorldId)
   local LockModeTeamMember = {}
   for RoleId, ModeInfo in pairs(LogicTeam.RolesGameFloorInfo) do
@@ -779,6 +817,7 @@ function LogicTeam.GetTeamUnLockModeAndMember(ModeID, WorldId)
   end
   return 0 == #LockModeTeamMember, LockModeTeamMember
 end
+
 function LogicTeam.GetTeamUnLockModeFloor(ModeID, WorldId, floor)
   for RoleId, ModeInfo in pairs(LogicTeam.RolesGameFloorInfo) do
     if RoleId == DataMgr.GetUserId() then
@@ -792,6 +831,7 @@ function LogicTeam.GetTeamUnLockModeFloor(ModeID, WorldId, floor)
   end
   return true
 end
+
 function LogicTeam.GetTeamUnLockModeFloorAndMember(ModeID, WorldId, floor)
   local LockFloorTeamMember = {}
   for RoleId, ModeInfo in pairs(LogicTeam.RolesGameFloorInfo) do
@@ -802,6 +842,7 @@ function LogicTeam.GetTeamUnLockModeFloorAndMember(ModeID, WorldId, floor)
   end
   return 0 == #LockFloorTeamMember, LockFloorTeamMember
 end
+
 function LogicTeam.CheckIsDefaultUnLock(WorldId, Floor)
   local floor
   floor = Floor or 1
@@ -814,9 +855,11 @@ function LogicTeam.CheckIsDefaultUnLock(WorldId, Floor)
     end
   end
 end
+
 function LogicTeam.BindOnTeamUpdate()
   LogicTeam.RequestGetMyTeamDataToServer()
 end
+
 function LogicTeam.BindOnTeamKickOut(Json)
   print("LogicTeam.BindOnTeamKickOut")
   local JsonTable = RapidJson.decode(Json)
@@ -837,6 +880,7 @@ function LogicTeam.BindOnTeamKickOut(Json)
   end)
   LogicTeam.RequestGetMyTeamDataToServer()
 end
+
 function LogicTeam.BindOnPlayStartGameAnimation()
   print("BindOnWSStartGame")
   if DataMgr.IsInTeam() then
@@ -844,6 +888,7 @@ function LogicTeam.BindOnPlayStartGameAnimation()
   end
   LogicTeam.RequestGetMyTeamDataToServer()
 end
+
 function LogicTeam.BindOnUpdateVoiceTeam()
   print("LogicTeam.BindOnUpdateVoiceTeam")
   if DataMgr.IsInTeam() then
@@ -884,6 +929,7 @@ function LogicTeam.BindOnUpdateVoiceTeam()
     LogicTeam.SaveGameModeInfo()
   end
 end
+
 function LogicTeam.SaveGameModeInfo()
   local LobbySaveGame = LogicLobby.GetLobbySaveGame()
   if LobbySaveGame then
@@ -892,6 +938,7 @@ function LogicTeam.SaveGameModeInfo()
     LobbySaveGame:SetGameModeInfo(DataMgr.GetUserId(), LogicTeam.GetModeId(), LogicTeam.GetWorldId(), LogicTeam.GetFloor(), IsNormalMode)
   end
 end
+
 LogicTeam.OldStateSwitch = {
   [LogicTeam.TeamState.None] = function()
   end,
@@ -996,6 +1043,7 @@ LogicTeam.NewStateSwitch = {
     end
   end
 }
+
 function LogicTeam.BindOnTeamStateChanged(OldState, NewState)
   print(string.format("OnTeamStateChanged, OldState:%d, NewState:%d", OldState, NewState))
   if not LogicLobby.IsInLobbyLevel() then
@@ -1008,6 +1056,7 @@ function LogicTeam.BindOnTeamStateChanged(OldState, NewState)
     LogicTeam.NewStateSwitch[NewState](OldState)
   end
 end
+
 function LogicTeam.BindOnCancelPrepare(Json)
   local JsonTable = RapidJson.decode(Json)
   print("LogicTeam.BindOnCancelPrepare\230\156\137\231\142\169\229\174\182\230\139\146\231\187\157\228\186\134\232\175\183\230\177\130,\229\143\150\230\182\136\229\140\185\233\133\141\230\136\144\229\138\159\229\144\142\231\154\132\229\135\134\229\164\135", JsonTable.id)
@@ -1022,6 +1071,7 @@ function LogicTeam.BindOnCancelPrepare(Json)
   end)
   LogicTeam.RequestGetMyTeamDataToServer()
 end
+
 function LogicTeam.BindOnStopMatch(Json)
   local JsonTable = RapidJson.decode(Json)
   print("LogicTeam.BindOnStopMatch\230\156\137\231\142\169\229\174\182\229\143\150\230\182\136\228\186\134\229\140\185\233\133\141", JsonTable.id)
@@ -1036,11 +1086,13 @@ function LogicTeam.BindOnStopMatch(Json)
   end)
   LogicTeam.RequestGetMyTeamDataToServer()
 end
+
 function LogicTeam.BindOnSomeOneLeaveTeam(Json)
   local JsonTable = RapidJson.decode(Json)
   print("LogicTeam.BindOnSomeOneLeaveTeam\230\156\137\231\142\169\229\174\182\231\166\187\229\188\128\228\186\134\233\152\159\228\188\141", JsonTable.id)
   LogicTeam.RequestGetMyTeamDataToServer()
 end
+
 function LogicTeam.BindOnAllocateBattleServerFail(Json)
   local JsonTable = RapidJson.decode(Json)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBErrorCode, JsonTable.errcode)
@@ -1051,6 +1103,7 @@ function LogicTeam.BindOnAllocateBattleServerFail(Json)
   end
   LogicTeam.RequestGetMyTeamDataToServer()
 end
+
 function LogicTeam.BindOnInviteJoinTeam(Json)
   print("BindOnInviteJoinTeam", Json)
   local JsonTable = RapidJson.decode(Json)
@@ -1086,6 +1139,7 @@ function LogicTeam.BindOnInviteJoinTeam(Json)
     end
   end
 end
+
 function LogicTeam.ShowTeamInviteTipWindow()
   local CurShowInfo = LogicTeam.TeamInviteList[1]
   if not CurShowInfo then
@@ -1122,6 +1176,7 @@ function LogicTeam.ShowTeamInviteTipWindow()
     end
   })
 end
+
 function LogicTeam.ShowNextTeamInviteTipWindow()
   table.remove(LogicTeam.TeamInviteList, 1)
   local NextTeamInviteInfo = LogicTeam.TeamInviteList[1]
@@ -1134,6 +1189,7 @@ function LogicTeam.ShowNextTeamInviteTipWindow()
   end
   LogicTeam.ShowTeamInviteTipWindow()
 end
+
 function LogicTeam.BindOnApplyJoinTeam(Json)
   print("BindOnApplyJoinTeam", Json)
   local JsonTable = RapidJson.decode(Json)
@@ -1154,6 +1210,7 @@ function LogicTeam.BindOnApplyJoinTeam(Json)
     end
   end
 end
+
 function LogicTeam.ClearSession()
   if not UE.URGBlueprintLibrary.IsPlatformConsole() then
     return
@@ -1163,6 +1220,7 @@ function LogicTeam.ClearSession()
     RGPlayerSessionSubsystem:Clear()
   end
 end
+
 function LogicTeam.DoJoinSession()
   if not UE.URGBlueprintLibrary.IsPlatformConsole() then
     return
@@ -1172,19 +1230,23 @@ function LogicTeam.DoJoinSession()
     RGPlayerSessionSubsystem:DoJoinSession()
   end
 end
+
 function LogicTeam.BindOnRefuseJoinFriendTeam(Json)
   print("BindOnRefuseJoinFriendTeam", Json)
   ShowWaveWindow(15025, {})
 end
+
 function LogicTeam.BindOnRefuseFriendJoinTeam(Json)
   print("BindOnRefuseFriendJoinTeam", Json)
   ShowWaveWindow(15025, {})
 end
+
 function LogicTeam.BindOnAgreeJoinTeam(Json)
   print("BindOnAgreeJoinTeam", Json)
   local JsonTable = RapidJson.decode(Json)
   LogicTeam.RequestJoinTeamToServer(JsonTable.teamId, JsonTable.joinway)
 end
+
 function LogicTeam.BindOnChangeTeamCaptain(Json)
   print("BindOnChangeTeamCaptain", Json)
   local JsonTable = RapidJson.decode(Json)
@@ -1200,15 +1262,18 @@ function LogicTeam.BindOnChangeTeamCaptain(Json)
   end)
   LogicTeam.RequestGetMyTeamDataToServer()
 end
+
 function LogicTeam.BindOnPickHeroDone()
   print("LogicTeam.BindOnPickHeroDone")
   LogicTeam.RequestGetMyTeamDataToServer()
 end
+
 function LogicTeam.InitDefaultId()
   local LobbySettings = UE.URGLobbySettings.GetSettings()
   LogicTeam.DefaultWorldId = LobbySettings.InitWorldId
   LogicTeam.DefaultSeasonWorldId = LobbySettings.InitSeasonWorldId
 end
+
 function LogicTeam.InitGameModeInfo(...)
   local Result, GameModeInfo = false
   local LobbySaveGame = LogicLobby.GetLobbySaveGame()
@@ -1224,6 +1289,7 @@ function LogicTeam.InitGameModeInfo(...)
   LogicTeam.SingleFloor = Result and GameModeInfo.Floor or 1
   LogicTeam.RequestSetTeamDataToServer(LogicTeam.SingleWorldId, LogicTeam.SingleModeId, LogicTeam.SingleFloor)
 end
+
 function LogicTeam.GetCurSeasonModeDefaultWorldId()
   local seasonModule = ModuleManager:Get("SeasonModule")
   if seasonModule then
@@ -1236,9 +1302,11 @@ function LogicTeam.GetCurSeasonModeDefaultWorldId()
     return LogicTeam.DefaultWorldId
   end
 end
+
 function LogicTeam.BindOnGetFinishedGuideList()
   LogicTeam.RefreshTeamWorldId()
 end
+
 function LogicTeam.RefreshTeamWorldId()
   local ModeId = LogicTeam.GetModeId()
   if BeginnerGuideData:CheckFreshmanBDIsFinished() then
@@ -1261,30 +1329,39 @@ function LogicTeam.RefreshTeamWorldId()
     LogicLobby.NeedRefreshModeToBD = false
   end
 end
+
 function LogicTeam.AddIngoreTeamInviteList(RoleId)
   LogicTeam.IngoreTeamInviteList[RoleId] = UE.URGStatisticsLibrary.GetTimestamp(true)
 end
+
 function LogicTeam.GetEndPrepareTime()
   return LogicTeam.EndPrepareTime
 end
+
 function LogicTeam.SetSingleFloor(InFloor)
   LogicTeam.SingleFloor = InFloor
 end
+
 function LogicTeam.GetFloor()
   return DataMgr.IsInTeam() and DataMgr.GetTeamInfo().floor or LogicTeam.SingleFloor
 end
+
 function LogicTeam.SetSingleWorldId(InWorldId)
   LogicTeam.SingleWorldId = InWorldId
 end
+
 function LogicTeam.GetWorldId()
   return DataMgr.IsInTeam() and DataMgr.GetTeamInfo().worldID or LogicTeam.SingleWorldId
 end
+
 function LogicTeam.SetSingleModeId(InModeId)
   LogicTeam.SingleModeId = InModeId
 end
+
 function LogicTeam.GetModeId()
   return DataMgr.IsInTeam() and DataMgr.GetTeamInfo().gameMode or LogicTeam.SingleModeId
 end
+
 function LogicTeam.IsCaptain()
   local TeamInfo = DataMgr.GetTeamInfo()
   local UserId = DataMgr.GetUserId()
@@ -1294,10 +1371,12 @@ function LogicTeam.IsCaptain()
     return true
   end
 end
+
 function LogicTeam.IsFullTeam()
   local TeamInfo = DataMgr.GetTeamInfo()
   return TeamInfo.players and 3 == table.count(TeamInfo.players) or false
 end
+
 function LogicTeam.GetVoiceMemberIdByRoleId(RoleIdParam)
   local RoleId = tostring(RoleIdParam)
   if UE.UGVoiceSubsystem ~= nil then
@@ -1314,6 +1393,7 @@ function LogicTeam.GetVoiceMemberIdByRoleId(RoleIdParam)
   end
   return -1
 end
+
 function LogicTeam.CheckIsOwnerVoiceRoom(RoomName)
   if UE.UGVoiceSubsystem ~= nil then
     local GVoice = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.UGVoiceSubsystem:StaticClass())
@@ -1323,6 +1403,7 @@ function LogicTeam.CheckIsOwnerVoiceRoom(RoomName)
   end
   return false
 end
+
 function LogicTeam.IsMuteVoice(RoleId)
   local MemberId = LogicTeam.GetVoiceMemberIdByRoleId(RoleId)
   local TeamVoiceSubSys = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTeamVoiceSubsystem:StaticClass())
@@ -1331,6 +1412,7 @@ function LogicTeam.IsMuteVoice(RoleId)
   end
   return false
 end
+
 function LogicTeam.IsTeammate(RoleId)
   if not DataMgr.IsInTeam() then
     return false
@@ -1346,6 +1428,7 @@ function LogicTeam.IsTeammate(RoleId)
   end
   return false
 end
+
 function LogicTeam.GetModeDifficultDisplayText(ModeId, Floor, WorldId)
   ModeId = ModeId or LogicTeam.GetModeId()
   Floor = Floor or LogicTeam.GetFloor()
@@ -1369,6 +1452,7 @@ function LogicTeam.GetModeDifficultDisplayText(ModeId, Floor, WorldId)
   end
   return TargetFloorDisplayText
 end
+
 function LogicTeam.AddTeamStateChangeFailRecord()
   local CurTimestamp = GetCurrentUTCTimestamp()
   table.insert(LogicTeam.TeamStateChangeFailRecord, CurTimestamp)
@@ -1384,13 +1468,18 @@ function LogicTeam.AddTeamStateChangeFailRecord()
     end)
   end
 end
-function LogicTeam.GetTeamTicketNum()
+
+function LogicTeam.GetTeamTicketNum(FilterSelf)
   local TicketNum = 0
   for i, v in ipairs(DataMgr.MyTeamInfo.players) do
-    TicketNum = TicketNum + v.ticket
+    if FilterSelf and v.id == DataMgr.GetUserId() then
+    else
+      TicketNum = TicketNum + v.ticket
+    end
   end
   return TicketNum
 end
+
 function LogicTeam.GetMemberTicketNum(RoleId)
   for i, v in ipairs(DataMgr.MyTeamInfo.players) do
     if v.id == RoleId then
@@ -1399,10 +1488,12 @@ function LogicTeam.GetMemberTicketNum(RoleId)
   end
   return 0
 end
+
 function LogicTeam.GetRegion()
   print("LogicTeam", LogicTeam.Region)
   return LogicTeam.Region
 end
+
 function LogicTeam.GetLevelIsInitUnLock(LevelId, WorldId, Difficulty)
   if LevelId then
     local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGameFloorUnlock, LevelId)
@@ -1422,6 +1513,7 @@ function LogicTeam.GetLevelIsInitUnLock(LevelId, WorldId, Difficulty)
     end
   end
 end
+
 function LogicTeam.GetMemberHeroEffectState(roleid, SkinId)
   local TeamMember = DataMgr.GetTeamInfo()
   for i, v in ipairs(TeamMember.players) do
@@ -1435,7 +1527,12 @@ function LogicTeam.GetMemberHeroEffectState(roleid, SkinId)
     end
   end
 end
+
 function LogicTeam.SetRegion(Region, bFormServer)
+  local RGAccountSubsystem = UE.URGAccountSubsystem.Get()
+  if RGAccountSubsystem then
+    RGAccountSubsystem:SetBattleRegion(Region)
+  end
   if LogicTeam.Region == Region then
     return
   end
@@ -1451,6 +1548,7 @@ function LogicTeam.SetRegion(Region, bFormServer)
     LogicTeam.RequestSetTeamDataToServer(LogicTeam.GetWorldId(), LogicTeam.GetModeId(), LogicTeam.GetFloor())
   end
 end
+
 function LogicTeam.SetRegionPingValue(Region, Ping)
   if LogicTeam.RegionPing == nil then
     LogicTeam.RegionPing = {}
@@ -1458,6 +1556,7 @@ function LogicTeam.SetRegionPingValue(Region, Ping)
   LogicTeam.RegionPing[Region] = Ping
   EventSystem.Invoke(EventDef.Lobby.UpdateRegionPing)
 end
+
 function LogicTeam.GetRegionPingValue(Region)
   if LogicTeam.RegionPing == nil then
     LogicTeam.RegionPing = {}
@@ -1469,6 +1568,7 @@ function LogicTeam.GetRegionPingValue(Region)
     return -1
   end
 end
+
 function LogicTeam.UpdateRegionPing()
   local ServerId = LoginData:GetLobbyServerId()
   UE.UKismetSystemLibrary.K2_SetTimerDelegate({
@@ -1511,6 +1611,7 @@ function LogicTeam.UpdateRegionPing()
     end
   end
 end
+
 function LogicTeam.RegionPingRefresh()
   local ServerId = LoginData:GetLobbyServerId()
   local RowInfo = LuaTableMgr.GetLuaTableByName(TableNames.TBBattleServerList)
@@ -1527,6 +1628,22 @@ function LogicTeam.RegionPingRefresh()
     end
   end
 end
+
+function LogicTeam.GetTeamMemberIdList()
+  local IdList = {}
+  if DataMgr.IsInTeam() then
+    local TeamInfo = DataMgr.GetTeamInfo()
+    for i, Player in ipairs(TeamInfo.players) do
+      table.insert(IdList, Player.id)
+    end
+  else
+    IdList = {
+      DataMgr.GetUserId()
+    }
+  end
+  return IdList
+end
+
 function LogicTeam.Clear()
   LogicTeam.IsInit = false
   LogicTeam.TeamInviteList = {}

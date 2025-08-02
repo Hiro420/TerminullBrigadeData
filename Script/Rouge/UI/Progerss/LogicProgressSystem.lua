@@ -1,5 +1,6 @@
 local rapidjson = require("rapidjson")
 LogicProgressSystem = LogicProgressSystem or {ProgressWidget = nil}
+
 function LogicProgressSystem.ShowProgress(Id)
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if UIManager then
@@ -13,6 +14,7 @@ function LogicProgressSystem.ShowProgress(Id)
     return ProgressWidget
   end
 end
+
 function LogicProgressSystem.PauseProgress(Id)
   if LogicProgressSystem.ProgressWidget == nil then
     return
@@ -20,6 +22,7 @@ function LogicProgressSystem.PauseProgress(Id)
   LogicProgressSystem.ProgressWidget:DoPause()
   return LogicProgressSystem.ProgressWidget
 end
+
 function LogicProgressSystem.FinishProgress()
   if LogicProgressSystem.ProgressWidget then
     LogicProgressSystem.ProgressWidget:DoFinish()

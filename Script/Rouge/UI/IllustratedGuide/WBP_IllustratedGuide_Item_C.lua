@@ -1,7 +1,9 @@
 local WBP_IllustratedGuide_Item_C = UnLua.Class()
+
 function WBP_IllustratedGuide_Item_C:Construct()
   EventSystem.AddListener(self, EventDef.IllustratedGuide.OnFocusModify, WBP_IllustratedGuide_Item_C.SetMark)
 end
+
 function WBP_IllustratedGuide_Item_C:OnListItemObjectSet(ListItemObj)
   EventSystem.AddListener(self, EventDef.IllustratedGuide.OnGenericModifyItemSelectionChanged, WBP_IllustratedGuide_Item_C.OnSelectionChanged)
   self.Data = ListItemObj.Data
@@ -40,6 +42,7 @@ function WBP_IllustratedGuide_Item_C:OnListItemObjectSet(ListItemObj)
     end
   end
 end
+
 function WBP_IllustratedGuide_Item_C:IsLock()
   if Logic_IllustratedGuide.IsLobbyRoom() then
     UpdateVisibility(self.Lock, false)
@@ -58,6 +61,7 @@ function WBP_IllustratedGuide_Item_C:IsLock()
   Num = self.Data.ModifieConfig.FrontConditions:Num()
   self.LockNum:SetText(string.format(self.LockText, UnLockNum, Num))
 end
+
 function WBP_IllustratedGuide_Item_C:HaveYouObtained()
   if Logic_IllustratedGuide.IsLobbyRoom() then
     return
@@ -77,6 +81,7 @@ function WBP_IllustratedGuide_Item_C:HaveYouObtained()
     end
   end
 end
+
 function WBP_IllustratedGuide_Item_C:SetQuality()
   if not self.Data then
     return
@@ -92,6 +97,7 @@ function WBP_IllustratedGuide_Item_C:SetQuality()
     UpdateVisibility(self.Img_Quality_Dual, true)
   end
 end
+
 function WBP_IllustratedGuide_Item_C:SetMark()
   local Result = false
   local RowInfo = UE.FRGGenericModifyTableRow
@@ -100,21 +106,27 @@ function WBP_IllustratedGuide_Item_C:SetMark()
     UpdateVisibility(self.Mark, 1 == Logic_IllustratedGuide.FocusStatus(RowInfo))
   end
 end
+
 function WBP_IllustratedGuide_Item_C:OnSelectionChanged(Id)
   UpdateVisibility(self.Img_Select, Id == self.Data.RowName)
 end
+
 function WBP_IllustratedGuide_Item_C:BP_OnEntryReleased()
   UpdateVisibility(self.Img_Select, false)
   EventSystem.RemoveListener(EventDef.IllustratedGuide.OnGenericModifyItemSelectionChanged, WBP_IllustratedGuide_Item_C.OnSelectionChanged, self)
 end
+
 function WBP_IllustratedGuide_Item_C:SetSelect(bSelect)
 end
+
 function WBP_IllustratedGuide_Item_C:OnMouseEnter(MyGeometry, MouseEvent)
   UpdateVisibility(self.Hover, true)
   PlaySound2DEffect(50006, "")
 end
+
 function WBP_IllustratedGuide_Item_C:OnMouseLeave(MyGeometry, MouseEvent)
   UpdateVisibility(self.Hover, false)
   UpdateVisibility(self.HoverTips, false)
 end
+
 return WBP_IllustratedGuide_Item_C

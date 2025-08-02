@@ -1,4 +1,5 @@
 local WBP_LobbySingleModTypePanel_C = UnLua.Class()
+
 function WBP_LobbySingleModTypePanel_C:InitModInfo(ModInfo)
   local bIsLegend = false
   if ModInfo.ModType == UE.ERGModType.LegendMod then
@@ -47,10 +48,12 @@ function WBP_LobbySingleModTypePanel_C:InitModInfo(ModInfo)
   end
   self.WBP_LobbyModTitleInfo:InitModTitles(bIsLegend, ModInfo, table.count(ModIDTable))
 end
+
 function WBP_LobbySingleModTypePanel_C:UpdateModInfo()
   local widget
   for key, value in iterator(self.UniformGridPanel_Mod:GetAllChildren()) do
     value:UpdateModInfo()
   end
 end
+
 return WBP_LobbySingleModTypePanel_C

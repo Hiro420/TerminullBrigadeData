@@ -1,0 +1,6766 @@
+[
+  {
+    "ID": 1001,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 50,
+    "AttrValue": 100,
+    "SubAttrPoolID": 0,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 1002,
+    "ChipType": 2,
+    "Slot": 2,
+    "AttrID": 50,
+    "AttrValue": 100,
+    "SubAttrPoolID": 0,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36111,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 1,
+    "AttrValue": 24,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36112,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 1,
+    "AttrValue": 32,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36113,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 1,
+    "AttrValue": 40,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36114,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36121,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 2,
+    "AttrValue": 12,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36122,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 2,
+    "AttrValue": 16,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36123,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 2,
+    "AttrValue": 20,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36124,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36131,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 3,
+    "AttrValue": 12,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 100,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36132,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 3,
+    "AttrValue": 16,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 101,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36133,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 3,
+    "AttrValue": 20,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 102,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36134,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 103,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36141,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 4,
+    "AttrValue": 8,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 104,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36142,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 4,
+    "AttrValue": 10,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 105,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36143,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 4,
+    "AttrValue": 13,
+    "SubAttrPoolID": 6,
+    "InscriptionPoolID": 106,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "测试用"
+  },
+  {
+    "ID": 36144,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 4,
+    "AttrValue": 16,
+    "SubAttrPoolID": 7,
+    "InscriptionPoolID": 107,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "测试用"
+  },
+  {
+    "ID": 36151,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 5,
+    "AttrValue": 10,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36152,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 5,
+    "AttrValue": 11,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36153,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 5,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36154,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 5,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": ""
+  },
+  {
+    "ID": 36161,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 6,
+    "AttrValue": 10,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 108,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36162,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 6,
+    "AttrValue": 11,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 109,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36163,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 6,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 110,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36164,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 6,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 111,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36171,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 7,
+    "AttrValue": 6,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 112,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36172,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 7,
+    "AttrValue": 8,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 113,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36173,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 7,
+    "AttrValue": 10,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 114,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36174,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 7,
+    "AttrValue": 12,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 115,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36181,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 116,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36182,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 117,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36183,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 118,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36184,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 119,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36211,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 1,
+    "AttrValue": 24,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": ""
+  },
+  {
+    "ID": 36212,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 1,
+    "AttrValue": 32,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": ""
+  },
+  {
+    "ID": 36213,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 1,
+    "AttrValue": 40,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": ""
+  },
+  {
+    "ID": 36214,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": ""
+  },
+  {
+    "ID": 36221,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 2,
+    "AttrValue": 12,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": ""
+  },
+  {
+    "ID": 36222,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 2,
+    "AttrValue": 16,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": ""
+  },
+  {
+    "ID": 36223,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 2,
+    "AttrValue": 20,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": ""
+  },
+  {
+    "ID": 36224,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": ""
+  },
+  {
+    "ID": 36231,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 3,
+    "AttrValue": 12,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": ""
+  },
+  {
+    "ID": 36232,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 3,
+    "AttrValue": 16,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": ""
+  },
+  {
+    "ID": 36233,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 3,
+    "AttrValue": 20,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": ""
+  },
+  {
+    "ID": 36234,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": ""
+  },
+  {
+    "ID": 36241,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 4,
+    "AttrValue": 8,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36242,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 4,
+    "AttrValue": 10,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36243,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 4,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36244,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 4,
+    "AttrValue": 16,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36251,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 5,
+    "AttrValue": 10,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36252,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 5,
+    "AttrValue": 11,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36253,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 5,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36254,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 5,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36261,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 6,
+    "AttrValue": 10,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": ""
+  },
+  {
+    "ID": 36262,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 6,
+    "AttrValue": 11,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": ""
+  },
+  {
+    "ID": 36263,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 6,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": ""
+  },
+  {
+    "ID": 36264,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 6,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": ""
+  },
+  {
+    "ID": 36271,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 7,
+    "AttrValue": 6,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36272,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 7,
+    "AttrValue": 8,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36273,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 7,
+    "AttrValue": 10,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36274,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 7,
+    "AttrValue": 12,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36281,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36282,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36283,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36284,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36311,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 1,
+    "AttrValue": 24,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": ""
+  },
+  {
+    "ID": 36312,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 1,
+    "AttrValue": 32,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": ""
+  },
+  {
+    "ID": 36313,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 1,
+    "AttrValue": 40,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": ""
+  },
+  {
+    "ID": 36314,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": ""
+  },
+  {
+    "ID": 36321,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 2,
+    "AttrValue": 12,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 120,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36322,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 2,
+    "AttrValue": 16,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 121,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36323,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 2,
+    "AttrValue": 20,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 122,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36324,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 123,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36331,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 3,
+    "AttrValue": 12,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": ""
+  },
+  {
+    "ID": 36332,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 3,
+    "AttrValue": 16,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": ""
+  },
+  {
+    "ID": 36333,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 3,
+    "AttrValue": 20,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": ""
+  },
+  {
+    "ID": 36334,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": ""
+  },
+  {
+    "ID": 36341,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 4,
+    "AttrValue": 8,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 124,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36342,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 4,
+    "AttrValue": 10,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 125,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36343,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 4,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 126,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36344,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 4,
+    "AttrValue": 16,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 127,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36351,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 5,
+    "AttrValue": 10,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 128,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36352,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 5,
+    "AttrValue": 11,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 129,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36353,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 5,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 130,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36354,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 5,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 131,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36361,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 6,
+    "AttrValue": 10,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 132,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36362,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 6,
+    "AttrValue": 11,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 133,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36363,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 6,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 134,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36364,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 6,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 135,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36371,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 7,
+    "AttrValue": 6,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": ""
+  },
+  {
+    "ID": 36372,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 7,
+    "AttrValue": 8,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": ""
+  },
+  {
+    "ID": 36373,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 7,
+    "AttrValue": 10,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": ""
+  },
+  {
+    "ID": 36374,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 7,
+    "AttrValue": 12,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": ""
+  },
+  {
+    "ID": 36381,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36382,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36383,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36384,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36411,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 1,
+    "AttrValue": 24,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36412,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 1,
+    "AttrValue": 32,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36413,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 1,
+    "AttrValue": 40,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36414,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36421,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 2,
+    "AttrValue": 12,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": ""
+  },
+  {
+    "ID": 36422,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 2,
+    "AttrValue": 16,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": ""
+  },
+  {
+    "ID": 36423,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 2,
+    "AttrValue": 20,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": ""
+  },
+  {
+    "ID": 36424,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": ""
+  },
+  {
+    "ID": 36431,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 3,
+    "AttrValue": 12,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": ""
+  },
+  {
+    "ID": 36432,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 3,
+    "AttrValue": 16,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": ""
+  },
+  {
+    "ID": 36433,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 3,
+    "AttrValue": 20,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": ""
+  },
+  {
+    "ID": 36434,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": ""
+  },
+  {
+    "ID": 36441,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 4,
+    "AttrValue": 8,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": ""
+  },
+  {
+    "ID": 36442,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 4,
+    "AttrValue": 10,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": ""
+  },
+  {
+    "ID": 36443,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 4,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": ""
+  },
+  {
+    "ID": 36444,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 4,
+    "AttrValue": 16,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": ""
+  },
+  {
+    "ID": 36451,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 5,
+    "AttrValue": 10,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36452,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 5,
+    "AttrValue": 11,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36453,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 5,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36454,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 5,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36461,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 6,
+    "AttrValue": 10,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36462,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 6,
+    "AttrValue": 11,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36463,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 6,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36464,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 6,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36471,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 7,
+    "AttrValue": 6,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36472,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 7,
+    "AttrValue": 8,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36473,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 7,
+    "AttrValue": 10,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36474,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 7,
+    "AttrValue": 12,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36481,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36482,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36483,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36484,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36511,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 1,
+    "AttrValue": 24,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36512,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 1,
+    "AttrValue": 32,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36513,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 1,
+    "AttrValue": 40,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36514,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36521,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 2,
+    "AttrValue": 12,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36522,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 2,
+    "AttrValue": 16,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36523,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 2,
+    "AttrValue": 20,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36524,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36531,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 3,
+    "AttrValue": 12,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36532,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 3,
+    "AttrValue": 16,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36533,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 3,
+    "AttrValue": 20,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36534,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36541,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 4,
+    "AttrValue": 8,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 136,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36542,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 4,
+    "AttrValue": 10,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 137,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36543,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 4,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 138,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36544,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 4,
+    "AttrValue": 16,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 139,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36551,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 5,
+    "AttrValue": 10,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 140,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36552,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 5,
+    "AttrValue": 11,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 141,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36553,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 5,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 142,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36554,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 5,
+    "AttrValue": 15,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 143,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36561,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 6,
+    "AttrValue": 10,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36562,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 6,
+    "AttrValue": 11,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36563,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 6,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36564,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 6,
+    "AttrValue": 15,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36571,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 7,
+    "AttrValue": 6,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 144,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36572,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 7,
+    "AttrValue": 8,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 145,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36573,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 7,
+    "AttrValue": 10,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 146,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36574,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 7,
+    "AttrValue": 12,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 147,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36581,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 148,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36582,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36583,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36584,
+    "ChipType": 2,
+    "Slot": 5,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36611,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 1,
+    "AttrValue": 24,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36612,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 1,
+    "AttrValue": 32,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36613,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 1,
+    "AttrValue": 40,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36614,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36621,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 2,
+    "AttrValue": 12,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36622,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 2,
+    "AttrValue": 16,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36623,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 2,
+    "AttrValue": 20,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36624,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36631,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 3,
+    "AttrValue": 12,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36632,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 3,
+    "AttrValue": 16,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36633,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 3,
+    "AttrValue": 20,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36634,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36641,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 4,
+    "AttrValue": 8,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36642,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 4,
+    "AttrValue": 10,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36643,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 4,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36644,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 4,
+    "AttrValue": 16,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36651,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 5,
+    "AttrValue": 10,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36652,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 5,
+    "AttrValue": 11,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36653,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 5,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36654,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 5,
+    "AttrValue": 15,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36661,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 6,
+    "AttrValue": 10,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36662,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 6,
+    "AttrValue": 11,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36663,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 6,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36664,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 6,
+    "AttrValue": 15,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36671,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 7,
+    "AttrValue": 6,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36672,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 7,
+    "AttrValue": 8,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36673,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 7,
+    "AttrValue": 10,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36674,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 7,
+    "AttrValue": 12,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36681,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36682,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36683,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36684,
+    "ChipType": 2,
+    "Slot": 6,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36711,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 1,
+    "AttrValue": 24,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36712,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 1,
+    "AttrValue": 32,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36713,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 1,
+    "AttrValue": 40,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36714,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36721,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 2,
+    "AttrValue": 12,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36722,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 2,
+    "AttrValue": 16,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36723,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 2,
+    "AttrValue": 20,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36724,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36731,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 3,
+    "AttrValue": 12,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36732,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 3,
+    "AttrValue": 16,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36733,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 3,
+    "AttrValue": 20,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36734,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36741,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 4,
+    "AttrValue": 8,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36742,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 4,
+    "AttrValue": 10,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36743,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 4,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36744,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 4,
+    "AttrValue": 16,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 1,
+    "MainAttrIconPos": {
+      "x": -22,
+      "y": 22
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs2",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_03.Icon_Chip_Big_03",
+    "notes": ""
+  },
+  {
+    "ID": 36751,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 5,
+    "AttrValue": 10,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36752,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 5,
+    "AttrValue": 11,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36753,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 5,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36754,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 5,
+    "AttrValue": 15,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36761,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 6,
+    "AttrValue": 10,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36762,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 6,
+    "AttrValue": 11,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36763,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 6,
+    "AttrValue": 13,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36764,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 6,
+    "AttrValue": 15,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36771,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 7,
+    "AttrValue": 6,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36772,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 7,
+    "AttrValue": 8,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36773,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 7,
+    "AttrValue": 10,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36774,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 7,
+    "AttrValue": 12,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36781,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 1,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36782,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 2,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36783,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 3,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 36784,
+    "ChipType": 2,
+    "Slot": 7,
+    "AttrID": 8,
+    "AttrValue": 1,
+    "SubAttrPoolID": 5,
+    "InscriptionPoolID": 2,
+    "HeroPoolID": 0,
+    "MainAttrIconPos": {
+      "x": 0,
+      "y": 0
+    },
+    "MainAttrIconColor": "c0fbff",
+    "MainAttrIconShadowColor": "4e9dff",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "",
+    "notes": ""
+  },
+  {
+    "ID": 37114,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 37124,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 37154,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 5,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 37214,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 37224,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 37234,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 37264,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 6,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 37314,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 37334,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 37374,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 7,
+    "AttrValue": 12,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 37424,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 37434,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 37444,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 4,
+    "AttrValue": 16,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 38114,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 38124,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 38154,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 5,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 38214,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 38224,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 38234,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 38264,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 6,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 38314,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 38334,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 38374,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 7,
+    "AttrValue": 12,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 38424,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 38434,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 38444,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 4,
+    "AttrValue": 16,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39114,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39124,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39154,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 5,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39214,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39224,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39234,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39264,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 6,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39314,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39334,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39374,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 7,
+    "AttrValue": 12,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39424,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39434,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39444,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 4,
+    "AttrValue": 16,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39500,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39501,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39502,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 5,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39503,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39504,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39505,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39506,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 6,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39507,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39508,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39509,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 7,
+    "AttrValue": 12,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39510,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39511,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 39512,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 4,
+    "AttrValue": 16,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 0,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "七日芯片"
+  },
+  {
+    "ID": 40000,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-影刃"
+  },
+  {
+    "ID": 40001,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-影刃"
+  },
+  {
+    "ID": 40002,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 5,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-影刃"
+  },
+  {
+    "ID": 40003,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-影刃"
+  },
+  {
+    "ID": 40004,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-影刃"
+  },
+  {
+    "ID": 40005,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 7,
+    "AttrValue": 12,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-影刃"
+  },
+  {
+    "ID": 40006,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-影刃"
+  },
+  {
+    "ID": 40007,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-影刃"
+  },
+  {
+    "ID": 40008,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-影刃"
+  },
+  {
+    "ID": 40009,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 6,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-影刃"
+  },
+  {
+    "ID": 40010,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-影刃"
+  },
+  {
+    "ID": 40011,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-影刃"
+  },
+  {
+    "ID": 40012,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 4,
+    "AttrValue": 16,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1010,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-影刃"
+  },
+  {
+    "ID": 40013,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-曙光"
+  },
+  {
+    "ID": 40014,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-曙光"
+  },
+  {
+    "ID": 40015,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 5,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-曙光"
+  },
+  {
+    "ID": 40016,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-曙光"
+  },
+  {
+    "ID": 40017,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-曙光"
+  },
+  {
+    "ID": 40018,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 7,
+    "AttrValue": 12,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-曙光"
+  },
+  {
+    "ID": 40019,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-曙光"
+  },
+  {
+    "ID": 40020,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-曙光"
+  },
+  {
+    "ID": 40021,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-曙光"
+  },
+  {
+    "ID": 40022,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 6,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-曙光"
+  },
+  {
+    "ID": 40023,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-曙光"
+  },
+  {
+    "ID": 40024,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-曙光"
+  },
+  {
+    "ID": 40025,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 4,
+    "AttrValue": 16,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1000,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-曙光"
+  },
+  {
+    "ID": 40026,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-上校"
+  },
+  {
+    "ID": 40027,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-上校"
+  },
+  {
+    "ID": 40028,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 5,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-上校"
+  },
+  {
+    "ID": 40029,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-上校"
+  },
+  {
+    "ID": 40030,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-上校"
+  },
+  {
+    "ID": 40031,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 7,
+    "AttrValue": 12,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-上校"
+  },
+  {
+    "ID": 40032,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-上校"
+  },
+  {
+    "ID": 40033,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-上校"
+  },
+  {
+    "ID": 40034,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-上校"
+  },
+  {
+    "ID": 40035,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 6,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-上校"
+  },
+  {
+    "ID": 40036,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-上校"
+  },
+  {
+    "ID": 40037,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-上校"
+  },
+  {
+    "ID": 40038,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 4,
+    "AttrValue": 16,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1020,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-上校"
+  },
+  {
+    "ID": 40039,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1040,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-妮娜"
+  },
+  {
+    "ID": 40040,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1040,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-妮娜"
+  },
+  {
+    "ID": 40041,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 5,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1040,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-妮娜"
+  },
+  {
+    "ID": 40042,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1040,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-妮娜"
+  },
+  {
+    "ID": 40043,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1040,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-妮娜"
+  },
+  {
+    "ID": 40044,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 7,
+    "AttrValue": 12,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1040,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-妮娜"
+  },
+  {
+    "ID": 40045,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1040,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-妮娜"
+  },
+  {
+    "ID": 40046,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1040,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-妮娜"
+  },
+  {
+    "ID": 40047,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1040,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-妮娜"
+  },
+  {
+    "ID": 40048,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 6,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1040,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-妮娜"
+  },
+  {
+    "ID": 40049,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1040,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-妮娜"
+  },
+  {
+    "ID": 40050,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1040,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-妮娜"
+  },
+  {
+    "ID": 40051,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 4,
+    "AttrValue": 16,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1040,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-妮娜"
+  },
+  {
+    "ID": 40052,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1030,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-麦克斯"
+  },
+  {
+    "ID": 40053,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1030,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-麦克斯"
+  },
+  {
+    "ID": 40054,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 5,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1030,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-麦克斯"
+  },
+  {
+    "ID": 40055,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1030,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-麦克斯"
+  },
+  {
+    "ID": 40056,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1030,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-麦克斯"
+  },
+  {
+    "ID": 40057,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 7,
+    "AttrValue": 12,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1030,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-麦克斯"
+  },
+  {
+    "ID": 40058,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1030,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-麦克斯"
+  },
+  {
+    "ID": 40059,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1030,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-麦克斯"
+  },
+  {
+    "ID": 40060,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1030,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-麦克斯"
+  },
+  {
+    "ID": 40061,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 6,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1030,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-麦克斯"
+  },
+  {
+    "ID": 40062,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1030,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-麦克斯"
+  },
+  {
+    "ID": 40063,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1030,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-麦克斯"
+  },
+  {
+    "ID": 40064,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 4,
+    "AttrValue": 16,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1030,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-麦克斯"
+  },
+  {
+    "ID": 40065,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-海因克斯"
+  },
+  {
+    "ID": 40066,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-海因克斯"
+  },
+  {
+    "ID": 40067,
+    "ChipType": 1,
+    "Slot": 1,
+    "AttrID": 5,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -12,
+      "y": -2
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_02.Icon_Chip_Big_02",
+    "notes": "环都芯片组-海因克斯"
+  },
+  {
+    "ID": 40068,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-海因克斯"
+  },
+  {
+    "ID": 40069,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-海因克斯"
+  },
+  {
+    "ID": 40070,
+    "ChipType": 1,
+    "Slot": 3,
+    "AttrID": 7,
+    "AttrValue": 12,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": -6
+    },
+    "MainAttrIconColor": "fce9ff",
+    "MainAttrIconShadowColor": "f04eff",
+    "EffStateName": "chip_icon_zs3",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_04.Icon_Chip_Big_04",
+    "notes": "环都芯片组-海因克斯"
+  },
+  {
+    "ID": 40071,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 1,
+    "AttrValue": 48,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-海因克斯"
+  },
+  {
+    "ID": 40072,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-海因克斯"
+  },
+  {
+    "ID": 40073,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-海因克斯"
+  },
+  {
+    "ID": 40074,
+    "ChipType": 1,
+    "Slot": 2,
+    "AttrID": 6,
+    "AttrValue": 15,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -16,
+      "y": 12
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_01.Icon_Chip_Big_01",
+    "notes": "焦土芯片组-海因克斯"
+  },
+  {
+    "ID": 40075,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 2,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-海因克斯"
+  },
+  {
+    "ID": 40076,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 3,
+    "AttrValue": 24,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-海因克斯"
+  },
+  {
+    "ID": 40077,
+    "ChipType": 1,
+    "Slot": 4,
+    "AttrID": 4,
+    "AttrValue": 16,
+    "SubAttrPoolID": 4,
+    "InscriptionPoolID": 1,
+    "HeroPoolID": 1060,
+    "MainAttrIconPos": {
+      "x": -20,
+      "y": 8
+    },
+    "MainAttrIconColor": "fff9df",
+    "MainAttrIconShadowColor": "ffc34e",
+    "EffStateName": "chip_icon_zs1",
+    "SlotIcon": "/Game/Rouge/UI/Atlas_DT/Chip/Frames/Icon_Chip_Big_05.Icon_Chip_Big_05",
+    "notes": "焦土芯片组-海因克斯"
+  }
+]

@@ -1,5 +1,6 @@
 local WBP_GenericModifyDescItem_C = UnLua.Class()
 require("Rouge.UI.Battle.Logic.Logic_GenericModify")
+
 function WBP_GenericModifyDescItem_C:InitGenericModifyDescItem(GenericModifyLevelId, GenericModifyId, bIsUpgrade, ModifyLevelDescShowType, bIsShowHelpInUI)
   UpdateVisibility(self, true)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -104,7 +105,9 @@ function WBP_GenericModifyDescItem_C:InitGenericModifyDescItem(GenericModifyLeve
   end
   UpdateVisibility(self.Btn_Help, bIsShowHelpInUI)
 end
+
 function WBP_GenericModifyDescItem_C:Hide()
   UpdateVisibility(self, false)
 end
+
 return WBP_GenericModifyDescItem_C

@@ -1,5 +1,6 @@
 local WBP_Shop_C = UnLua.Class()
 local BeginnerGuideData = require("Modules.Beginner.BeginnerGuideData")
+
 function WBP_Shop_C:Construct()
   self.bPlayingAnim = false
   self.Btn_Refresh.OnClicked:Clear()
@@ -17,6 +18,7 @@ function WBP_Shop_C:Construct()
   BeginnerGuideData:UpdateWidget("CanvasPanel_Shop_step3", self.CanvasPanel_Shop_step3)
   BeginnerGuideData:UpdateWidget("CanvasPanel_Shop_step4", self.CanvasPanel_Shop_step4)
 end
+
 function WBP_Shop_C:OnAnimationFinished(Animation)
   self.bPlayingAnim = false
   if self.Ani_out == Animation then
@@ -25,9 +27,11 @@ function WBP_Shop_C:OnAnimationFinished(Animation)
   if self.Ani_in == Animation then
   end
 end
+
 function WBP_Shop_C:Destruct()
   print("WBP_Shop_C:Destruct()")
 end
+
 function WBP_Shop_C:HiddenInGame(bHidden)
   do return end
   local Pawns = UE.UGameplayStatics.GetAllActorsOfClass(self, UE.ARGCharacterBase:StaticClass(), nil)
@@ -39,6 +43,7 @@ function WBP_Shop_C:HiddenInGame(bHidden)
     end
   end
 end
+
 function WBP_Shop_C:DoClose()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if not UIManager then
@@ -62,8 +67,10 @@ function WBP_Shop_C:DoClose()
   self:HiddenInGame(false)
   self:StopListeningForAllEnhancedInputActions()
 end
+
 function WBP_Shop_C:OnDisplay()
 end
+
 function WBP_Shop_C:OnOpen(...)
   local ShopInteractComp = LogicShop.ShopNPC:GetComponentByClass(UE.URGInteractComponent_Shop:StaticClass())
   if ShopInteractComp and ShopInteractComp.ShopType == UE.ERGShopType.Super then
@@ -92,6 +99,7 @@ function WBP_Shop_C:OnOpen(...)
   self.SelRow = 1
   self.SelLine = 1
 end
+
 function WBP_Shop_C:UnfocusInput()
   self.Overridden.UnfocusInput(self)
   self.WBP_InteractTipWidget:UnBindInteractAndClickEvent(self, WBP_Shop_C.BindOnEscKeyPress)
@@ -99,6 +107,7 @@ function WBP_Shop_C:UnfocusInput()
   self:SetEnhancedInputActionBlocking(false)
   print("WBP_Shop_C:UnfocusInput")
 end
+
 function WBP_Shop_C:FocusInput()
   self.Overridden.FocusInput(self)
   SetInputIgnore(self:GetOwningPlayerPawn(), true)
@@ -112,12 +121,15 @@ function WBP_Shop_C:FocusInput()
   self:SetEnhancedInputActionBlocking(true)
   print("WBP_Shop_C:FocusInput")
 end
+
 function WBP_Shop_C:RefreshItemDetails(ItemInfo)
   self.WBP_Shop_Item_Details:RefreshItemDetails(ItemInfo)
 end
+
 function WBP_Shop_C:RefreshItemPreview(ItemInfo)
   self.WBP_Shop_Preview:RefreshItemPreview(ItemInfo)
 end
+
 function WBP_Shop_C:RefreshRefreshCountInfo()
   local CostItemId, CostNum = UE.URGBlueprintLibrary.GetRefreshCost(self, LogicShop.GetCurRefreshCountForPriceCalc() + 1, nil, nil)
   if LogicShop.CanRefreshForFree() then
@@ -145,6 +157,7 @@ function WBP_Shop_C:RefreshRefreshCountInfo()
   end
   self.Txt_CurrencyCost:SetColorAndOpacity(Color)
 end
+
 function WBP_Shop_C:IsRefreshCostEnough()
   if LogicShop.CanRefreshForFree() then
     return true
@@ -161,6 +174,7 @@ function WBP_Shop_C:IsRefreshCostEnough()
   local BagItemStack = BagComp:GetItemByConfigId(CostItemId)
   return CostNum <= BagItemStack.Stack
 end
+
 function WBP_Shop_C:BindOnEscKeyPress()
   if not self.bPlayingAnim then
     self.bPlayingAnim = true
@@ -168,6 +182,7 @@ function WBP_Shop_C:BindOnEscKeyPress()
     self:PlayAnimation(self.Ani_out)
   end
 end
+
 function WBP_Shop_C:OnSwitchBag()
   if self:IsPlayingAnimation() then
     return
@@ -182,6 +197,7 @@ function WBP_Shop_C:OnSwitchBag()
     end
   end
 end
+
 function WBP_Shop_C:DoCustomNavigation(Navigation)
   if Navigation == UE.EUINavigation.Left then
     self.SelLine = self.SelLine - 1
@@ -194,7 +210,9 @@ function WBP_Shop_C:DoCustomNavigation(Navigation)
   end
   return nil
 end
+
 function WBP_Shop_C:Bp_InputTypeToGamePadUpdateFocus()
   self.WBP_Shop_ItemList:GamePadUpdateFocus()
 end
+
 return WBP_Shop_C

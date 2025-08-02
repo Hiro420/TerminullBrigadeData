@@ -6,6 +6,7 @@ local MailHandler = require("Protocol.Mail.MailHandler")
 local MailData = require("Modules.Mail.MailData")
 local EscKeyName = "PauseGame"
 local MailView = Class(ViewBase)
+
 function MailView:OnBindUIInput()
   if not IsListeningForInputAction(self, EscKeyName) then
     ListenForInputAction(EscKeyName, UE.EInputEvent.IE_Pressed, true, {
@@ -18,6 +19,7 @@ function MailView:OnBindUIInput()
   self.WBP_InteractTipWidgetReceiveAll:BindInteractAndClickEvent(self, self.BindOnAllReceiveButtonClicked)
   self.WBP_InteractTipWidgetDone:BindInteractAndClickEvent(self, self.BindOnReceiveOrDeleteButtonClicked)
 end
+
 function MailView:OnUnBindUIInput()
   if IsListeningForInputAction(self, EscKeyName) then
     StopListeningForInputAction(self, EscKeyName, UE.EInputEvent.IE_Pressed)
@@ -27,6 +29,7 @@ function MailView:OnUnBindUIInput()
   self.WBP_InteractTipWidgetReceiveAll:UnBindInteractAndClickEvent(self, self.BindOnAllReceiveButtonClicked)
   self.WBP_InteractTipWidgetDone:UnBindInteractAndClickEvent(self, self.BindOnReceiveOrDeleteButtonClicked)
 end
+
 function MailView:BindClickHandler()
   self.MailItemListView.BP_OnItemSelectionChanged:Add(self, self.BindOnMailItemListItemSelectionChanged)
   if self.Btn_SendMail then
@@ -46,6 +49,7 @@ function MailView:BindClickHandler()
   self.Btn_ReceiveOrDelete.OnUnhovered:Add(self, self.BindOnReceiveOrDeleteButtonUnhovered)
   self.WBP_InteractTipWidget.OnMainButtonClicked:Add(self, self.BindOnEscKeyPressed)
 end
+
 function MailView:BindOnSendMailButtonClicked()
   local Params = {
     request = {
@@ -74,18 +78,22 @@ function MailView:BindOnSendMailButtonClicked()
     end
   })
 end
+
 function MailView:UnBindClickHandler()
   self.MailItemListView.BP_OnItemSelectionChanged:Remove(self, self.BindOnMailItemListItemSelectionChanged)
   self.WBP_InteractTipWidget.OnMainButtonClicked:Remove(self, self.BindOnEscKeyPressed)
 end
+
 function MailView:OnInit()
   self.DataBindTable = {}
   self.ViewModel = UIModelMgr:Get("MailViewModel")
   self:BindClickHandler()
 end
+
 function MailView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function MailView:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -110,6 +118,7 @@ function MailView:OnShow(...)
   self:PlayAnimation(self.Ani_in)
   LogicRole.ShowOrHideRoleMainHero(false)
 end
+
 function MailView:BindOnInputMethodChanged(InputType)
   if InputType == UE.ECommonInputType.Gamepad then
     self.Icon_Receive:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -123,6 +132,7 @@ function MailView:BindOnInputMethodChanged(InputType)
     self.Image_ReceiveAll:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function MailView:ShowEmptyPanel()
   self.MailItemListView:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.NotEmptyListPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -131,6 +141,7 @@ function MailView:ShowEmptyPanel()
   self.DetailInfoPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.EmptyDetailInfoPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function MailView:ShowNotEmptyPanel()
   self.NotEmptyListPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.EmptyListPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -139,9 +150,11 @@ function MailView:ShowNotEmptyPanel()
   self.DetailInfoPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.EmptyDetailInfoPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function MailView:BindOnEscKeyPressed()
   UIMgr:Hide(ViewID.UI_Mail, true)
 end
+
 function MailView:BindOnMailItemListItemSelectionChanged(DataObj, IsSelected)
   if not IsSelected then
     return
@@ -160,6 +173,7 @@ function MailView:BindOnMailItemListItemSelectionChanged(DataObj, IsSelected)
     self:UpdateMailDetailInfoPanel(DataObj.Id)
   end
 end
+
 function MailView:UpdateMailDetailInfoPanel(MailId)
   local MailInfo = MailData:GetMailInfoById(MailId)
   local MailContentInfo = MailData:GetMailContentInfoById(MailId)
@@ -173,6 +187,7 @@ function MailView:UpdateMailDetailInfoPanel(MailId)
   local DayText = NSLOCTEXT("MailView", "DayText", "{0}\229\164\169")
   self.Txt_RemainTime:SetText(UE.FTextFormat(DayText, RemainTimeDay))
 end
+
 function MailView:UpdateMailAttachmentList()
   local CurSelectedItem = self.MailItemListView:BP_GetSelectedItem()
   local MailInfo = MailData:GetMailInfoById(CurSelectedItem.Id)
@@ -193,6 +208,7 @@ function MailView:UpdateMailAttachmentList()
     self:UpdateAttacmentReceiveStatus()
   end
 end
+
 function MailView:UpdateAttacmentReceiveStatus()
   local CurSelectedItem = self.MailItemListView:BP_GetSelectedItem()
   local MailInfo = MailData:GetMailInfoById(CurSelectedItem.Id)
@@ -203,12 +219,14 @@ function MailView:UpdateAttacmentReceiveStatus()
     end
   end
 end
+
 function MailView:UpdateReceiveOrDeleteButtonText()
   local CurSelectedItem = self.MailItemListView:BP_GetSelectedItem()
   local MailInfo = MailData:GetMailInfoById(CurSelectedItem.Id)
   UpdateVisibility(self.CanvasPanel_Receive, MailInfo.IsHaveAttachment and not MailInfo.IsReceiveAttachment)
   UpdateVisibility(self.CanvasPanel_Delete, not MailInfo.IsHaveAttachment or not not MailInfo.IsReceiveAttachment)
 end
+
 function MailView:BindOnMailContentInfoChanged(MailId)
   local CurSelectedItem = self.MailItemListView:BP_GetSelectedItem()
   if not CurSelectedItem or CurSelectedItem.Id ~= MailId then
@@ -216,12 +234,14 @@ function MailView:BindOnMailContentInfoChanged(MailId)
   end
   self:UpdateMailDetailInfoPanel(MailId)
 end
+
 function MailView:BindOnUpdateMailReadStatus()
   local AllDisplayedEntryWidgets = self.MailItemListView:GetDisplayedEntryWidgets()
   for key, SingleItem in pairs(AllDisplayedEntryWidgets) do
     SingleItem:UpdateReadStatus()
   end
 end
+
 function MailView:BindOnUpdateMailReceiveAttachmentStatus()
   local AllDisplayedEntryWidgets = self.MailItemListView:GetDisplayedEntryWidgets()
   for key, SingleItem in pairs(AllDisplayedEntryWidgets) do
@@ -231,6 +251,7 @@ function MailView:BindOnUpdateMailReceiveAttachmentStatus()
   self:UpdateAttacmentReceiveStatus()
   self:RefreshAllReceiveButtonStatus()
 end
+
 function MailView:RefreshAllReceiveButtonStatus(...)
   local AllMailInfoList = MailData:GetAllMailInfoList()
   local TargetNotReceiveList = {}
@@ -245,6 +266,7 @@ function MailView:RefreshAllReceiveButtonStatus(...)
     self.RGStateController_AllReceiveBtn:ChangeStatus("CanReceive")
   end
 end
+
 function MailView:BindOnAllReadButtonClicked()
   local AllMailInfoList = MailData:GetAllMailInfoList()
   local TargetNotReadList = {}
@@ -260,12 +282,15 @@ function MailView:BindOnAllReadButtonClicked()
     MailHandler:RequestMarkReadToServer(TargetNotReadList)
   end
 end
+
 function MailView:BindOnAllReadButtonHovered()
   self.AllReadHoverPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function MailView:BindOnAllReadButtonUnhovered()
   self.AllReadHoverPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function MailView:BindOnAllReceiveButtonClicked()
   local AllMailInfoList = MailData:GetAllMailInfoList()
   local TargetNotReceiveList = {}
@@ -288,12 +313,15 @@ function MailView:BindOnAllReceiveButtonClicked()
     MailHandler:RequestMarkReadToServer(TargetNotReadList)
   end
 end
+
 function MailView:BintOnAllReceiveButtonHovered()
   self.AllReceiveHoverPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function MailView:BindOnAllReceiveButtonUnhovered()
   self.AllReceiveHoverPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function MailView:BindOnDeleteReadButtonClicked()
   local AllMailInfoList = MailData:GetAllMailInfoList()
   local TargetDeleteList = {}
@@ -318,12 +346,15 @@ function MailView:BindOnDeleteReadButtonClicked()
     end
   end
 end
+
 function MailView:BindOnDeleteReadButtonHovered()
   self.DeleteReadHoverPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function MailView:BindOnDeleteReadButtonUnhovered()
   self.DeleteReadHoverPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function MailView:BindOnReceiveOrDeleteButtonClicked()
   local CurSelectedItem = self.MailItemListView:BP_GetSelectedItem()
   local MailInfo = MailData:GetMailInfoById(CurSelectedItem.Id)
@@ -341,12 +372,15 @@ function MailView:BindOnReceiveOrDeleteButtonClicked()
     })
   end
 end
+
 function MailView:BindOnReceiveOrDeleteButtonHovered()
   self.ReceiveOrDeleteHoverPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function MailView:BindOnReceiveOrDeleteButtonUnhovered()
   self.ReceiveOrDeleteHoverPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function MailView:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -362,4 +396,5 @@ function MailView:OnHide()
   EventSystem.RemoveListener(EventDef.Mail.OnUpdateMailReadStatus, self.BindOnUpdateMailReadStatus, self)
   EventSystem.RemoveListener(EventDef.Mail.OnUpdateMailReceiveAttachmentStatus, self.BindOnUpdateMailReceiveAttachmentStatus, self)
 end
+
 return MailView

@@ -1,4 +1,5 @@
 local WBP_GPExtraDescItemsPanel_C = UnLua.Class()
+
 function WBP_GPExtraDescItemsPanel_C:UpdateInscriptionAdditions(InscriptionIdArray)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -37,4 +38,5 @@ function WBP_GPExtraDescItemsPanel_C:UpdateInscriptionAdditions(InscriptionIdArr
     self:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 return WBP_GPExtraDescItemsPanel_C

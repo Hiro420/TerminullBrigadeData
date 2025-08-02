@@ -1,12 +1,15 @@
 local WBP_ProficiencyAwardItem = UnLua.Class()
 local ProficiencyData = require("Modules.Proficiency.ProficiencyData")
 local ProficiencyHandler = require("Protocol.Proficiency.ProficiencyHandler")
+
 function WBP_ProficiencyAwardItem:Construct()
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
 end
+
 function WBP_ProficiencyAwardItem:Destruct()
   self:Hide()
 end
+
 function WBP_ProficiencyAwardItem:Show(Level, ProficiencyGeneralRowId, CurHeroId)
   self:SetVisibility(UE.ESlateVisibility.Visible)
   self.Level = Level
@@ -26,6 +29,7 @@ function WBP_ProficiencyAwardItem:Show(Level, ProficiencyGeneralRowId, CurHeroId
   self:RefreshRewardItem()
   EventSystem.AddListener(self, EventDef.Lobby.UpdateMyHeroInfo, self.BindOnUpdateMyHeroInfo)
 end
+
 function WBP_ProficiencyAwardItem:RefreshStatus()
   local CurUnLockLevel = ProficiencyData:GetMaxUnlockProfyLevel(self.CurHeroId)
   UpdateVisibility(self.CanvasPanel_Lock, false)
@@ -61,6 +65,7 @@ function WBP_ProficiencyAwardItem:RefreshStatus()
     self.Img_ProficiencyExpProgressFill:SetClippingValue(0.0)
   end
 end
+
 function WBP_ProficiencyAwardItem:RefreshRewardItem()
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBProfyGeneral, self.ProficiencyGeneralRowId)
   if not Result then
@@ -88,6 +93,7 @@ function WBP_ProficiencyAwardItem:RefreshRewardItem()
   end
   self:RefreshItemTag(RowInfo.ItemTagName)
 end
+
 function WBP_ProficiencyAwardItem:RefreshItemTag(ItemTagName)
   if not ItemTagName or UE.UKismetStringLibrary.IsEmpty(ItemTagName) then
     UpdateVisibility(self.CanvasPanel_Tag, false)
@@ -96,6 +102,7 @@ function WBP_ProficiencyAwardItem:RefreshItemTag(ItemTagName)
   UpdateVisibility(self.CanvasPanel_Tag, true)
   self.Txt_TagName:SetText(ItemTagName)
 end
+
 function WBP_ProficiencyAwardItem:BindOnMainButtonClicked()
   if not self.LevelRewardId then
     return
@@ -115,13 +122,16 @@ function WBP_ProficiencyAwardItem:BindOnMainButtonClicked()
   end
   ProficiencyHandler:RequestGetHeroProfyLevelRewardToServer(self.CurHeroId, self.Level)
 end
+
 function WBP_ProficiencyAwardItem:BindOnUpdateMyHeroInfo()
   self:RefreshStatus()
 end
+
 function WBP_ProficiencyAwardItem:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   EventSystem.RemoveListener(EventDef.Lobby.UpdateMyHeroInfo, self.BindOnUpdateMyHeroInfo, self)
 end
+
 function WBP_ProficiencyAwardItem:OnMouseEnter()
   if not self.LevelRewardId then
     return
@@ -134,6 +144,7 @@ function WBP_ProficiencyAwardItem:OnMouseEnter()
   local CurUnLockLevel = ProficiencyData:GetMaxUnlockProfyLevel(self.CurHeroId)
   EventSystem.Invoke(EventDef.Proficiency.OnProficiencyAwardItemHoverStatusChanged, true, self.LevelRewardId, self.IsInscriptionReward, self.Level, CurUnLockLevel >= self.Level)
 end
+
 function WBP_ProficiencyAwardItem:OnMouseLeave()
   if not self.LevelRewardId then
     return
@@ -145,4 +156,5 @@ function WBP_ProficiencyAwardItem:OnMouseLeave()
   end
   EventSystem.Invoke(EventDef.Proficiency.OnProficiencyAwardItemHoverStatusChanged, false)
 end
+
 return WBP_ProficiencyAwardItem

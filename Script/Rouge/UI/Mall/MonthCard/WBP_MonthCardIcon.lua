@@ -3,6 +3,7 @@ local MonthCardData = require("Modules.MonthCard.MonthCardData")
 local MonthCardHandler = require("Protocol.MonthCard.MonthCardHandler")
 local PrivilegeData = require("Modules.Privilege.PrivilegeData")
 local PrivilegeHandler = require("Protocol.Privilege.PrivilegeHandler")
+
 function WBP_MonthCardIcon:Construct()
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
   self.Btn_Main.OnHovered:Add(self, self.BindOnMainButtonHovered)
@@ -11,10 +12,12 @@ function WBP_MonthCardIcon:Construct()
   EventSystem.AddListener(self, EventDef.MonthCard.OnUpdateRolesRivilegeInfo, self.OnUpdateRolesRivilegeInfo)
   EventSystem.AddListener(self, EventDef.Lobby.CloseMonthCardTip, self.CloseCardTips)
 end
+
 function WBP_MonthCardIcon:Show(RoleId, IsNeedButtonLogic, IsNeedButtonHoverLogic)
   self.RoleId = RoleId or DataMgr.GetUserId()
   self.IsNeedButtonLogic = IsNeedButtonLogic
   self.IsNeedButtonHoverLogic = IsNeedButtonHoverLogic
+  UpdateVisibility(self, true)
   local MonthCardInfo = MonthCardData:GetMonthCardInfoByRoleId(RoleId)
   local HasValidMonthCard = false
   if MonthCardInfo then
@@ -47,15 +50,17 @@ function WBP_MonthCardIcon:Show(RoleId, IsNeedButtonLogic, IsNeedButtonHoverLogi
     self.IsListen = true
   end
   if PrivilegeData.PrivilegeRoleInfo[RoleId] then
-    self:SetPrivilegeAni()
+    self:SetPrivilegeAni(RoleId)
   end
 end
+
 function WBP_MonthCardIcon:BindOnUpdateRolesMonthCardInfo(RoleIdList)
   if not self.RoleId or not table.Contain(RoleIdList, self.RoleId) then
     return
   end
   self:Show(self.RoleId, self.IsNeedButtonLogic, self.IsNeedButtonHoverLogic)
 end
+
 function WBP_MonthCardIcon:BindOnMainButtonClicked(...)
   if not self.IsNeedButtonLogic then
     return
@@ -74,37 +79,44 @@ function WBP_MonthCardIcon:BindOnMainButtonClicked(...)
   end
   self.IsShowTips = not self.IsShowTips
 end
+
 function WBP_MonthCardIcon:OnUpdateRolesRivilegeInfo()
-  self:Show(DataMgr.GetUserId(), self.IsNeedButtonLogic, self.IsNeedButtonHoverLogic)
+  self:Show(self.RoleId, self.IsNeedButtonLogic, self.IsNeedButtonHoverLogic)
 end
+
 function WBP_MonthCardIcon:CloseCardTips()
   UpdateVisibility(self.MonthCardIconTip, false)
   self.IsShowTips = false
 end
+
 function WBP_MonthCardIcon:BindOnMainButtonHovered(...)
   if not self.IsNeedButtonLogic and not self.IsNeedButtonHoverLogic then
     return
   end
   self.RGStateController_Hover:ChangeStatus("Hover")
 end
+
 function WBP_MonthCardIcon:BindOnMainButtonUnhovered(...)
   if not self.IsNeedButtonLogic and not self.IsNeedButtonHoverLogic then
     return
   end
   self.RGStateController_Hover:ChangeStatus("Unhover")
 end
-function WBP_MonthCardIcon:SetPrivilegeAni()
-  local PrivilegeMaxQuality = PrivilegeData.GetMaxPrivilegeQuality()
+
+function WBP_MonthCardIcon:SetPrivilegeAni(UserId)
+  local PrivilegeMaxQuality = PrivilegeData:GetMaxPrivilegeQuality(UserId)
   local AniName = "Anim_Quality_"
   print("WBP_MonthCardIcon  " .. AniName .. PrivilegeMaxQuality)
   self:PlayAnimation(self[AniName .. PrivilegeMaxQuality])
 end
+
 function WBP_MonthCardIcon:Hide(...)
   self.RoleId = nil
   UpdateVisibility(self, false)
   EventSystem.RemoveListenerNew(EventDef.MonthCard.OnUpdateRolesMonthCardInfo, self, self.BindOnUpdateRolesMonthCardInfo)
   self.IsListen = false
 end
+
 function WBP_MonthCardIcon:Destruct(...)
   self.Btn_Main.OnClicked:Remove(self, self.BindOnMainButtonClicked)
   self.Btn_Main.OnHovered:Remove(self, self.BindOnMainButtonHovered)
@@ -113,4 +125,5 @@ function WBP_MonthCardIcon:Destruct(...)
   EventSystem.RemoveListener(self, EventDef.Lobby.CloseMonthCardTip, self.CloseCardTips)
   self:Hide()
 end
+
 return WBP_MonthCardIcon

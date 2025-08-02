@@ -9,6 +9,7 @@ local NextCameraData = "NextWeapon"
 local HeirloomHandler = require("Protocol.Appearance.Heirloom.HeirloomHandler")
 local TabKeyEvent = "TabKeyEvent"
 local HeirloomView = Class(ViewBase)
+
 function HeirloomView:OnBindUIInput()
   if not IsListeningForInputAction(self, PreCameraData) then
     ListenForInputAction(PreCameraData, UE.EInputEvent.IE_Pressed, true, {
@@ -31,6 +32,7 @@ function HeirloomView:OnBindUIInput()
   self.WBP_InteractTipWidgetUnlock:BindInteractAndClickEvent(self, self.BindOnUnLockButtonClicked)
   self.WBP_InteractTipWidgetDetail:BindInteractAndClickEvent(self, self.BindOnMovieButtonClicked)
 end
+
 function HeirloomView:OnUnBindUIInput()
   StopListeningForInputAction(self, PreCameraData, UE.EInputEvent.IE_Pressed)
   StopListeningForInputAction(self, NextCameraData, UE.EInputEvent.IE_Pressed)
@@ -38,6 +40,7 @@ function HeirloomView:OnUnBindUIInput()
   self.WBP_InteractTipWidgetUnlock:UnBindInteractAndClickEvent(self, self.BindOnUnLockButtonClicked)
   self.WBP_InteractTipWidgetDetail:UnBindInteractAndClickEvent(self, self.BindOnMovieButtonClicked)
 end
+
 function HeirloomView:BindClickHandler()
   self.Btn_UnLock.OnClicked:Add(self, self.BindOnUnLockButtonClicked)
   self.Btn_UnLock.OnHovered:Add(self, self.BindOnUnLockButtonHovered)
@@ -52,6 +55,7 @@ function HeirloomView:BindClickHandler()
   self.WBP_InteractTipWidgetChangeWeaponDisplay.OnMainButtonClicked:Add(self, self.ListenForChangeDisplayModel)
   self.WBP_InteractTipWidgetChangeDisplay.OnMainButtonClicked:Add(self, self.ListenForChangeDisplayModel)
 end
+
 function HeirloomView:UnBindClickHandler()
   self.Btn_UnLock.OnClicked:Remove(self, self.BindOnUnLockButtonClicked)
   self.Btn_UnLock.OnHovered:Remove(self, self.BindOnUnLockButtonHovered)
@@ -65,6 +69,7 @@ function HeirloomView:UnBindClickHandler()
   self.WBP_InteractTipWidgetChangeWeaponDisplay.OnMainButtonClicked:Add(self, self.ListenForChangeDisplayModel)
   self.WBP_InteractTipWidgetChangeDisplay.OnMainButtonClicked:Add(self, self.ListenForChangeDisplayModel)
 end
+
 local GetAppearanceActor = function(self)
   if not UE.RGUtil.IsUObjectValid(self.AppearanceActor) then
     local CameraActorList = UE.UGameplayStatics.GetAllActorsOfClass(self, self.AppearanceActorClass, nil)
@@ -72,15 +77,18 @@ local GetAppearanceActor = function(self)
   end
   return self.AppearanceActor
 end
+
 function HeirloomView:OnInit()
   self.DataBindTable = {}
   self.ViewModel = UIModelMgr:Get("HeirloomViewModel")
   self:BindClickHandler()
 end
+
 function HeirloomView:OnDestroy()
   self:UnBindClickHandler()
   self:OnHide()
 end
+
 function HeirloomView:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -124,12 +132,14 @@ function HeirloomView:OnShow(...)
   EventSystem.AddListenerNew(EventDef.Heirloom.OnHeirloomHeroSkinActionItemSelected, self, self.BindOnHeirloomHeroSkinActionItemSelected)
   self.HeirloomInfoPanel:Show(self.TargetHeirloomId)
 end
+
 function HeirloomView:BindOnEscTipWidgetClicked()
   local AppearanceView = UIMgr:GetLuaFromActiveView(ViewID.UI_Apearance)
   if AppearanceView then
     AppearanceView:ListenForEscInputAction()
   end
 end
+
 function HeirloomView:OnRollback()
   HeirloomData:SetCurSelectHeirloomIdAndLevel(self.CurSelectHeirloomId, self.CurSelectHeirloomLevel)
   HeirloomHandler:RequestGetFamilytreasureToServer()
@@ -137,6 +147,7 @@ function HeirloomView:OnRollback()
   self:RefreshCostPanel()
   self:RefreshButtonStatus()
 end
+
 function HeirloomView:BindOnUnLockButtonClicked()
   if not self.CanUnLock then
     return
@@ -152,13 +163,16 @@ function HeirloomView:BindOnUnLockButtonClicked()
   end
   self.ViewModel:RequestUpgradeFamilyTreasureToServer(self.TargetHeirloomId)
 end
+
 function HeirloomView:BindOnUnLockButtonHovered()
   self.UnLockBtnHoveredPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self:PlayAnimationForward(self.Ani_UnLockBtn_hover_in)
 end
+
 function HeirloomView:BindOnUnLockButtonUnhovered()
   self:PlayAnimationForward(self.Ani_UnLockBtn_hover_out)
 end
+
 function HeirloomView:OnAnimationFinished(Animation)
   if Animation == self.Ani_UnLockBtn_hover_out then
     self.UnLockBtnHoveredPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -166,6 +180,7 @@ function HeirloomView:OnAnimationFinished(Animation)
     self.GoToSkinBtnHoveredPanel:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 function HeirloomView:BindOnGoToSkinButtonClicked()
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, self.CurSelectItemResourceId)
   if Result and RowInfo.Type == TableEnums.ENUMResourceType.Weapon then
@@ -187,26 +202,32 @@ function HeirloomView:BindOnGoToSkinButtonClicked()
     EventSystem.Invoke(EventDef.Heirloom.ChangeAppearanceViewToggleGroupSelect, EAppearanceToggleStatus.Skin)
   end
 end
+
 function HeirloomView:BindOnGoToSkinButtonHovered()
   self.GoToSkinBtnHoveredPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self:PlayAnimationForward(self.Ani_GoToSkinBtn_hover_in)
 end
+
 function HeirloomView:BindOnGoToSkinButtonUnhovered()
   self:PlayAnimationForward(self.Ani_GoToSkinBtn_hover_out)
 end
+
 function HeirloomView:BindOnMovieButtonClicked(...)
   local apearanceView = UIMgr:GetLuaFromActiveView(ViewID.UI_Apearance)
   if UE.RGUtil.IsUObjectValid(apearanceView) then
     apearanceView.WBP_AppearanceMovieList:InitMovieList(self.CurSkinId)
   end
 end
+
 function HeirloomView:BindOnActionButtonClicked(...)
   local TargetVis = not self.IsExpandActionList
   self:UpdateExpandActionListVis(TargetVis)
 end
+
 function HeirloomView:BindOnAutoPlayActionButtonClicked(...)
   self:SetIsAutoPlayCharacterAction(not self.IsAutoPlayCharacterAction)
 end
+
 function HeirloomView:UpdateExpandActionListVis(IsShow)
   UpdateVisibility(self.SizeBox_ExpandActionList, IsShow)
   self.IsExpandActionList = IsShow
@@ -222,12 +243,14 @@ function HeirloomView:UpdateExpandActionListVis(IsShow)
     self.Txt_Action:SetColorAndOpacity(self.NormalActionTextColor)
   end
 end
+
 function HeirloomView:BindOnHeirloomInfoChanged()
   self:RefreshHeirloomLevelItemLockStatus()
   self:RefreshCostPanel()
   self:RefreshButtonStatus()
   self:RefreshGoToSkinButtonVis()
 end
+
 function HeirloomView:BindOnChangeHeirloomLevelSelected(HeirloomId, Level)
   self.CurSelectHeirloomId = HeirloomId
   self.CurSelectHeirloomLevel = Level
@@ -237,21 +260,26 @@ function HeirloomView:BindOnChangeHeirloomLevelSelected(HeirloomId, Level)
   self:RefreshGoToSkinButtonVis()
   self:PlayVoice()
 end
+
 function HeirloomView:BindOnHeirloomSelectedItemChanged(ResourceId)
   self.CurSelectItemResourceId = ResourceId
   self:RefreshSkinDetailInfo(ResourceId)
   self:RefreshModelAndMovieInfo()
   self:RefreshGoToSkinButtonVis()
 end
+
 function HeirloomView:BindOnHeroSkinUpdate()
   self:RefreshGoToSkinButtonVis()
 end
+
 function HeirloomView:BindOnWeaponSkinUpdate()
   self:RefreshGoToSkinButtonVis()
 end
+
 function HeirloomView:BindOnEquippedWeaponInfoChanged()
   self:RefreshGoToSkinButtonVis()
 end
+
 function HeirloomView:BindOnHeirloomHeroSkinActionItemSelected(Index)
   self.ActionIndex = Index
   local TargetActionRowName = self.HeroSkinActionList[Index]
@@ -260,6 +288,7 @@ function HeirloomView:BindOnHeirloomHeroSkinActionItemSelected(Index)
   end
   LogicRole.PlayCharacterActionByHeroSkinId(self.AppearanceActor.ChildActor.ChildActor.ChildActor.ChildActor, TargetActionRowName)
 end
+
 function HeirloomView:RefreshSkinDetailInfo(ResourceId)
   self.CanvasPanelDetails:SetVisibility(UE.ESlateVisibility.Collapsed)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, ResourceId)
@@ -289,6 +318,7 @@ function HeirloomView:RefreshSkinDetailInfo(ResourceId)
   local appearanceViewModel = UIModelMgr:Get("AppearanceViewModel")
   appearanceViewModel:UpdateHeroSkinDetailsView("DefaultHeirloom")
 end
+
 function HeirloomView:RefreshModelAndMovieInfo()
   if not UE.RGUtil.IsUObjectValid(self.AppearanceActor) then
     return
@@ -322,6 +352,7 @@ function HeirloomView:RefreshModelAndMovieInfo()
     end
   end
 end
+
 function HeirloomView:RefreshWeaponSkill(WeaponId)
   local Result, RowData = GetRowData(DT.DT_Weapon, tostring(WeaponId))
   local index = 1
@@ -335,6 +366,7 @@ function HeirloomView:RefreshWeaponSkill(WeaponId)
   end
   HideOtherItem(self.VerticalBoxSkill, index)
 end
+
 function HeirloomView:RefreshSkinActionList(...)
   local Result, SkinRowInfo = GetRowData(DT.DT_Skin, self.CurSkinId)
   UpdateVisibility(self.Overlay_ActionPanel, false)
@@ -358,6 +390,7 @@ function HeirloomView:RefreshSkinActionList(...)
   HideOtherItem(self.ScrollBox_ActionList, Index)
   EventSystem.Invoke(EventDef.Heirloom.OnHeirloomHeroSkinActionItemSelected, 0)
 end
+
 function HeirloomView:SetIsAutoPlayCharacterAction(IsAutoPlay)
   self.IsAutoPlayCharacterAction = IsAutoPlay
   UpdateVisibility(self.Img_AutoPlayAction, self.IsAutoPlayCharacterAction)
@@ -370,6 +403,7 @@ function HeirloomView:SetIsAutoPlayCharacterAction(IsAutoPlay)
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.AutoPlayCharacterActionTimer)
   end
 end
+
 function HeirloomView:OnAutoPlayCharacterAction(...)
   local TargetIndex = self.ActionIndex + 1
   if TargetIndex > table.count(self.HeroSkinActionList) then
@@ -377,6 +411,7 @@ function HeirloomView:OnAutoPlayCharacterAction(...)
   end
   self:BindOnHeirloomHeroSkinActionItemSelected(TargetIndex)
 end
+
 function HeirloomView:RefreshCostPanel()
   self.CostList:SetVisibility(UE.ESlateVisibility.Collapsed)
   local CurSelectHeirloomId = HeirloomData:GetCurSelectHeirloomId()
@@ -397,6 +432,7 @@ function HeirloomView:RefreshCostPanel()
   end
   HideOtherItem(self.CostList, table.count(RowInfo.CostResources) + 1)
 end
+
 function HeirloomView:RefreshButtonStatus()
   self.IsUnLockButtonNeedComLink = false
   local CurSelectHeirloomId = HeirloomData:GetCurSelectHeirloomId()
@@ -446,6 +482,7 @@ function HeirloomView:RefreshButtonStatus()
     end
   end
 end
+
 function HeirloomView:RefreshUnLockButtonStyle(CanUnLock)
   self.CanUnLock = CanUnLock
   self.UnLockNormalPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -462,6 +499,7 @@ function HeirloomView:RefreshUnLockButtonStyle(CanUnLock)
     self.Img_LineAnim:SetColorAndOpacity(self.CanNotUnLockLineColor)
   end
 end
+
 function HeirloomView:RefreshGoToSkinButtonVis()
   local CurSelectHeirloomId = HeirloomData:GetCurSelectHeirloomId()
   local Level = HeirloomData:GetCurSelectLevel()
@@ -497,9 +535,11 @@ function HeirloomView:RefreshGoToSkinButtonVis()
     UpdateVisibility(self.Overlay_Equipped, false)
   end
 end
+
 function HeirloomView:RefreshHeirloomLevelItemLockStatus()
   self.HeirloomInfoPanel:RefreshHeirloomLevelItemLockStatus()
 end
+
 function HeirloomView:PlayVoice()
   local CurSelectHeirloomId = HeirloomData:GetCurSelectHeirloomId()
   local CurSelectLevel = HeirloomData:GetCurSelectLevel()
@@ -516,24 +556,28 @@ function HeirloomView:PlayVoice()
     self.VoiceID = RGVoiceSubsystem:PlayVoiceByRowName("Voice.HeirloomSkin", GetAppearanceActor(self), skinID)
   end
 end
+
 function HeirloomView:StopVoice()
   if self.VoiceID and self.VoiceID > 0 then
     UE.URGBlueprintLibrary.StopVoice(self.VoiceID)
     self.VoiceID = 0
   end
 end
+
 function HeirloomView:ListenForPreCameraData()
   local AppearanceActorTemp = GetAppearanceActor(self)
   if UE.RGUtil.IsUObjectValid(AppearanceActorTemp) then
     AppearanceActorTemp:MovePreCameraTrans()
   end
 end
+
 function HeirloomView:ListenForNextCameraData()
   local AppearanceActorTemp = GetAppearanceActor(self)
   if UE.RGUtil.IsUObjectValid(AppearanceActorTemp) then
     AppearanceActorTemp:MoveNextCameraTrans()
   end
 end
+
 function HeirloomView:ListenForChangeDisplayModel()
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, self.CurSelectItemResourceId)
   if not Result then
@@ -548,6 +592,7 @@ function HeirloomView:ListenForChangeDisplayModel()
     self:OnShowModel(EWeaponSkinDisplayModel.HeroModel)
   end
 end
+
 function HeirloomView:OnLeftMouseButtonDown()
   if self.IsExpandActionList then
     self:BindOnActionButtonClicked()
@@ -555,6 +600,7 @@ function HeirloomView:OnLeftMouseButtonDown()
   end
   return UE.UWidgetBlueprintLibrary.Unhandled()
 end
+
 function HeirloomView:OnShowModel(CurDisplayModel)
   self.CurDisplayModel = CurDisplayModel
   local AppearanceActorTemp = GetAppearanceActor(self)
@@ -596,6 +642,7 @@ function HeirloomView:OnShowModel(CurDisplayModel)
   UpdateVisibility(self.WBP_InteractTipWidgetChangeDisplay, RowInfo.Type ~= TableEnums.ENUMResourceType.HeroSkin and self.CurDisplayModel == EWeaponSkinDisplayModel.WeaponModel)
   UpdateVisibility(self.WBP_InteractTipWidgetChangeWeaponDisplay, RowInfo.Type ~= TableEnums.ENUMResourceType.HeroSkin and self.CurDisplayModel == EWeaponSkinDisplayModel.HeroModel)
 end
+
 function HeirloomView:UpdateUITextColor(...)
   local Result, RowInfo = false
   local IsInHeirloomLevel = false
@@ -629,6 +676,7 @@ function HeirloomView:UpdateUITextColor(...)
     SingleItem:SetIsInHeirloomLevel(IsInHeirloomLevel)
   end
 end
+
 function HeirloomView:OnPreHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -647,8 +695,10 @@ function HeirloomView:OnPreHide()
   EventSystem.RemoveListener(EventDef.Lobby.EquippedWeaponInfoChanged, self.BindOnEquippedWeaponInfoChanged, self)
   EventSystem.RemoveListenerNew(EventDef.Heirloom.OnHeirloomHeroSkinActionItemSelected, self, self.BindOnHeirloomHeroSkinActionItemSelected)
 end
+
 function HeirloomView:OnHide()
   UpdateVisibility(self.CanvasPanelRoot, true)
   self:StopVoice()
 end
+
 return HeirloomView

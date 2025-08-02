@@ -1,5 +1,6 @@
 local WBP_PuzzleWorldItem = UnLua.Class()
 local PuzzleData = require("Modules.Puzzle.PuzzleData")
+
 function WBP_PuzzleWorldItem:Show(WorldId)
   self.WorldId = WorldId
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBPuzzleWorld, self.WorldId)
@@ -13,6 +14,7 @@ function WBP_PuzzleWorldItem:Show(WorldId)
   EventSystem.AddListenerNew(EventDef.Puzzle.OnPuzzleDrag, self, self.BindOnPuzzleDrag)
   EventSystem.AddListenerNew(EventDef.Puzzle.OnPuzzleboardDragCancelled, self, self.BindOnPuzzleboardDragCancelled)
 end
+
 function WBP_PuzzleWorldItem:BindOnPuzzleDrag(PuzzleId)
   local ResourceId = PuzzleData:GetPuzzleResourceIdByUid(PuzzleId)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBResPuzzle, ResourceId)
@@ -24,9 +26,11 @@ function WBP_PuzzleWorldItem:BindOnPuzzleDrag(PuzzleId)
   end
   self:SetPreWorldUseNum(self.CurUseNum + RowInfo.gridNum)
 end
+
 function WBP_PuzzleWorldItem:BindOnPuzzleboardDragCancelled(...)
   self:SetPreWorldUseNum(self.CurUseNum)
 end
+
 function WBP_PuzzleWorldItem:RefreshUseNum(WorldUseNumList)
   local UseNum = 0
   if WorldUseNumList[self.WorldId] then
@@ -35,6 +39,7 @@ function WBP_PuzzleWorldItem:RefreshUseNum(WorldUseNumList)
   self.CurUseNum = UseNum
   self:SetPreWorldUseNum(UseNum)
 end
+
 function WBP_PuzzleWorldItem:SetPreWorldUseNum(UseNum)
   self.Txt_CurUseNum:SetText(UseNum)
   local ConstTable = LuaTableMgr.GetLuaTableByName(TableNames.TBConsts)
@@ -47,8 +52,10 @@ function WBP_PuzzleWorldItem:SetPreWorldUseNum(UseNum)
     self:StopAnimation(self.Ani_loop)
   end
 end
+
 function WBP_PuzzleWorldItem:GetToolTipWidget(...)
 end
+
 function WBP_PuzzleWorldItem:OnMouseEnter()
   EventSystem.Invoke(EventDef.Puzzle.OnUpdatePuzzleWorldHoverStatus, true, self.WorldId)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBPuzzleWorld, self.WorldId)
@@ -63,10 +70,12 @@ function WBP_PuzzleWorldItem:OnMouseEnter()
     self.TipWidget:Show(UE.FTextFormat(RowInfo.Desc, WorldRowInfo.Name, ConstTable.MatrixPuzzleWroldGridLimitNum, self.CurUseNum))
   end
 end
+
 function WBP_PuzzleWorldItem:OnMouseLeave()
   EventSystem.Invoke(EventDef.Puzzle.OnUpdatePuzzleWorldHoverStatus, false, self.WorldId)
   UpdateVisibility(self.TipWidget, false)
 end
+
 function WBP_PuzzleWorldItem:Hide()
   UpdateVisibility(self, false)
   self.CurUseNum = 0
@@ -74,7 +83,9 @@ function WBP_PuzzleWorldItem:Hide()
   EventSystem.RemoveListenerNew(EventDef.Puzzle.OnPuzzleDrag, self, self.BindOnPuzzleDrag)
   EventSystem.RemoveListenerNew(EventDef.Puzzle.OnPuzzleboardDragCancelled, self, self.BindOnPuzzleboardDragCancelled)
 end
+
 function WBP_PuzzleWorldItem:Destruct()
   self:Hide()
 end
+
 return WBP_PuzzleWorldItem

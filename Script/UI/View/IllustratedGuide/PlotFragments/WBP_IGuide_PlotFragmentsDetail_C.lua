@@ -2,12 +2,15 @@ local OrderedMap = require("Framework.DataStruct.OrderedMap")
 local IllustratedGuideData = require("Modules.IllustratedGuide.IllustratedGuideData")
 local RedDotData = require("Modules.RedDot.RedDotData")
 local WBP_IGuide_PlotFragmentsDetail_C = UnLua.Class()
+
 function WBP_IGuide_PlotFragmentsDetail_C:Construct()
   self.Btn_ReceiveAward.OnClicked:Add(self, self.BindOnReceiveAward)
 end
+
 function WBP_IGuide_PlotFragmentsDetail_C:Destruct()
   self.Btn_ReceiveAward.OnClicked:Remove(self, self.BindOnReceiveAward)
 end
+
 function WBP_IGuide_PlotFragmentsDetail_C:InitInfo(FragmentId, Level)
   self.FragmentId = FragmentId
   self.ClueId = -1
@@ -31,6 +34,7 @@ function WBP_IGuide_PlotFragmentsDetail_C:InitInfo(FragmentId, Level)
     self.Level = Level
   end
 end
+
 function WBP_IGuide_PlotFragmentsDetail_C:InitInfoByClueId(ClueId, Level)
   self.FragmentId = -1
   self.ClueId = ClueId
@@ -41,6 +45,7 @@ function WBP_IGuide_PlotFragmentsDetail_C:InitInfoByClueId(ClueId, Level)
     self.Level = Level
   end
 end
+
 function WBP_IGuide_PlotFragmentsDetail_C:RefreshUnFinishedUIByInfo(Desc, Level, TaskId, RewardList, TaskState)
   UpdateVisibility(self.SclBox_Unlock, false)
   UpdateVisibility(self.SclBox_Lock, true)
@@ -52,6 +57,7 @@ function WBP_IGuide_PlotFragmentsDetail_C:RefreshUnFinishedUIByInfo(Desc, Level,
   self.Progress_Task:SetPercent(FirstCount / TargetCount)
   self:RefreshRewardList(RewardList, TaskState)
 end
+
 function WBP_IGuide_PlotFragmentsDetail_C:RefreshFinishedUIByInfo(ImagePath, Name, Desc, Level, RewardList, TaskState)
   UpdateVisibility(self.SclBox_Unlock, true)
   UpdateVisibility(self.SclBox_Lock, false)
@@ -80,6 +86,7 @@ function WBP_IGuide_PlotFragmentsDetail_C:RefreshFinishedUIByInfo(ImagePath, Nam
   end
   self:RefreshRewardList(RewardList, TaskState)
 end
+
 function WBP_IGuide_PlotFragmentsDetail_C:RefreshRewardList(RewardList, TaskState)
   if RewardList and #RewardList > 0 then
     UpdateVisibility(self.Canvas_Reward, true)
@@ -106,12 +113,14 @@ function WBP_IGuide_PlotFragmentsDetail_C:RefreshRewardList(RewardList, TaskStat
     UpdateVisibility(self.Canvas_Reward, false)
   end
 end
+
 function WBP_IGuide_PlotFragmentsDetail_C:Hide()
   if self:IsVisible() then
     self.Level = nil
     self:PlayAnimationForward(self.Ani_out)
   end
 end
+
 function WBP_IGuide_PlotFragmentsDetail_C:BindOnReceiveAward()
   local FragmentInfo = IllustratedGuideData:GetPlotFragmentInfoByFragmentId(self.FragmentId)
   local TaskId = FragmentInfo.taskID
@@ -123,9 +132,11 @@ function WBP_IGuide_PlotFragmentsDetail_C:BindOnReceiveAward()
     end, self)
   end
 end
+
 function WBP_IGuide_PlotFragmentsDetail_C:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     UpdateVisibility(self, false)
   end
 end
+
 return WBP_IGuide_PlotFragmentsDetail_C

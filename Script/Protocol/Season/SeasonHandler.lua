@@ -3,6 +3,7 @@ local rapidjson = require("rapidjson")
 local ChipData = require("Modules.Chip.ChipData")
 local tbChip = LuaTableMgr.GetLuaTableByName(TableNames.TBResChip)
 local SeasonHandler = {}
+
 function SeasonHandler.RequestSelectedPastGrowthSeasonID(SeasonID)
   local param = {seasonID = SeasonID}
   local path = "playerservice/selectedpastgrowthseasonid"
@@ -18,6 +19,7 @@ function SeasonHandler.RequestSelectedPastGrowthSeasonID(SeasonID)
     end
   }, false, true)
 end
+
 function SeasonHandler.RequestGetHeroInfoBySeasonID(SeasonID)
   local path = string.format("hero/getheroinfobyseasonid?seasonID=%d", SeasonID)
   HttpCommunication.RequestByGet(path, {
@@ -32,6 +34,7 @@ function SeasonHandler.RequestGetHeroInfoBySeasonID(SeasonID)
     end
   }, false, true)
 end
+
 function SeasonHandler.GetPuzzlePackageBySeasonID(SeasonID)
   local path = string.format("hero/getpuzzlepackagebyseasonid?seasonID=%d", SeasonID)
   HttpCommunication.RequestByGet(path, {
@@ -46,6 +49,7 @@ function SeasonHandler.GetPuzzlePackageBySeasonID(SeasonID)
     end
   }, false, true)
 end
+
 function SeasonHandler:GetGemPackageBySeasonID(SeasonID)
   local path = string.format("hero/getgempackagebyseasonid?seasonID=%d", SeasonID)
   HttpCommunication.RequestByGet(path, {
@@ -60,4 +64,5 @@ function SeasonHandler:GetGemPackageBySeasonID(SeasonID)
     end
   }, false, true)
 end
+
 return SeasonHandler

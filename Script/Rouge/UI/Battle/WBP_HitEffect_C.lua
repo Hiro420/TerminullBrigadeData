@@ -1,4 +1,5 @@
 local WBP_HitEffect_C = UnLua.Class()
+
 function WBP_HitEffect_C:Show(SourceActor, Ratio, IsHealthDamage)
   self:Hide()
   self:ShowDamageAnim()
@@ -23,6 +24,7 @@ function WBP_HitEffect_C:Show(SourceActor, Ratio, IsHealthDamage)
   end
   self:UpdateCircularColor(IsHealthDamage)
 end
+
 function WBP_HitEffect_C:UpdateCircularValue()
   local DynamicMaterial = self.Img_CircularArc:GetDynamicMaterial()
   if not DynamicMaterial then
@@ -30,6 +32,7 @@ function WBP_HitEffect_C:UpdateCircularValue()
   end
   DynamicMaterial:SetScalarParameterValue("Degree", 360 * self.Ratio)
 end
+
 function WBP_HitEffect_C:UpdateCircularColor(IsHealthDamage)
   local DynamicMaterial = self.Img_CircularArc:GetDynamicMaterial()
   if not DynamicMaterial then
@@ -41,12 +44,15 @@ function WBP_HitEffect_C:UpdateCircularColor(IsHealthDamage)
     DynamicMaterial:SetVectorParameterValue("CircleColor", self.ShieldColor)
   end
 end
+
 function WBP_HitEffect_C:IsSameSourceActor(SourceActor)
   return self.SourceActor == SourceActor
 end
+
 function WBP_HitEffect_C:BindAnimFinish()
   self.ListContainer:HideItem(self)
 end
+
 function WBP_HitEffect_C:Hide()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.CircularTimeHandle) then
     UE.UKismetSystemLibrary.K2_PauseTimerHandle(self, self.CircularTimeHandle)
@@ -61,4 +67,5 @@ function WBP_HitEffect_C:Hide()
   self.SourceActor = nil
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return WBP_HitEffect_C

@@ -8,7 +8,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_100702", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 0
   },
   [100902] = {
     BarrelID = 100902,
@@ -19,7 +20,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_100902", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 0
   },
   [200302] = {
     BarrelID = 200302,
@@ -30,7 +32,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_200302", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 0
   },
   [200602] = {
     BarrelID = 200602,
@@ -41,7 +44,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_200602", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 0
   },
   [100802] = {
     BarrelID = 100802,
@@ -52,7 +56,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_100802", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 0
   },
   [101002] = {
     BarrelID = 101002,
@@ -63,7 +68,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_101002", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 0
   },
   [200102] = {
     BarrelID = 200102,
@@ -74,7 +80,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_200102", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 0
   },
   [200202] = {
     BarrelID = 200202,
@@ -85,7 +92,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_200202", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 0
   },
   [200402] = {
     BarrelID = 200402,
@@ -96,7 +104,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_200402", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 0
   },
   [200502] = {
     BarrelID = 200502,
@@ -107,7 +116,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_200502", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 0
   },
   [5007] = {
     BarrelID = 5007,
@@ -118,7 +128,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5007", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 1
   },
   [5009] = {
     BarrelID = 5009,
@@ -129,7 +140,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "1006",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5009", "\232\167\146\232\137\178\231\134\159\231\187\131\229\186\166\232\167\163\233\148\129"),
-    ParamList = {}
+    ParamList = {},
+    Priority = 2
   },
   [5008] = {
     BarrelID = 5008,
@@ -140,7 +152,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "1006",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5008", "\232\167\146\232\137\178\231\134\159\231\187\131\229\186\166\232\167\163\233\148\129"),
-    ParamList = {}
+    ParamList = {},
+    Priority = 2
   },
   [5010] = {
     BarrelID = 5010,
@@ -151,7 +164,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5010", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 1
   },
   [5011] = {
     BarrelID = 5011,
@@ -162,7 +176,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "1006",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5011", "\232\167\146\232\137\178\231\134\159\231\187\131\229\186\166\232\167\163\233\148\129"),
-    ParamList = {}
+    ParamList = {},
+    Priority = 2
   },
   [5012] = {
     BarrelID = 5012,
@@ -173,7 +188,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5012", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 1
   },
   [5005] = {
     BarrelID = 5005,
@@ -184,7 +200,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5005", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 0
   },
   [5006] = {
     BarrelID = 5006,
@@ -195,7 +212,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5006", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 0
   },
   [5014] = {
     BarrelID = 5014,
@@ -206,7 +224,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5014", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 1
   },
   [5017] = {
     BarrelID = 5017,
@@ -217,7 +236,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "1006",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5017", "\232\167\146\232\137\178\231\134\159\231\187\131\229\186\166\232\167\163\233\148\129"),
-    ParamList = {}
+    ParamList = {},
+    Priority = 2
   },
   [5015] = {
     BarrelID = 5015,
@@ -228,7 +248,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5015", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 1
   },
   [5016] = {
     BarrelID = 5016,
@@ -239,7 +260,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "1006",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5016", "\232\167\146\232\137\178\231\134\159\231\187\131\229\186\166\232\167\163\233\148\129"),
-    ParamList = {}
+    ParamList = {},
+    Priority = 2
   },
   [5018] = {
     BarrelID = 5018,
@@ -250,7 +272,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_qiang02_01.Icon_qiang02_01",
     LinkId = "1039",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5018", "\229\133\145\230\141\162\229\149\134\229\159\142\232\180\173\228\185\176"),
-    ParamList = {10707002}
+    ParamList = {10707002},
+    Priority = 3
   },
   [5019] = {
     BarrelID = 5019,
@@ -261,7 +284,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5019", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 1
   },
   [5021] = {
     BarrelID = 5021,
@@ -272,7 +296,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5021", "\230\158\170\230\162\176\230\156\170\232\167\163\233\148\129"),
-    ParamList = {}
+    ParamList = {},
+    Priority = 1
   },
   [5023] = {
     BarrelID = 5023,
@@ -283,7 +308,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5023", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 1
   },
   [5024] = {
     BarrelID = 5024,
@@ -294,7 +320,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "1038",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5024", "\229\133\145\230\141\162\229\149\134\229\159\142\232\180\173\228\185\176"),
-    ParamList = {10703003}
+    ParamList = {10703003},
+    Priority = 3
   },
   [5028] = {
     BarrelID = 5028,
@@ -305,7 +332,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5028", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 2
   },
   [5027] = {
     BarrelID = 5027,
@@ -316,7 +344,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "1006",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5027", "\232\167\146\232\137\178\231\134\159\231\187\131\229\186\166\232\167\163\233\148\129"),
-    ParamList = {}
+    ParamList = {},
+    Priority = 2
   },
   [5033] = {
     BarrelID = 5033,
@@ -327,7 +356,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_5033", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 1
   },
   [50331] = {
     BarrelID = 50331,
@@ -338,7 +368,8 @@ local weapon_tbweapon = {
     HeirloomIconPath = "",
     LinkId = "",
     LinkDescLocMeta = NSLOCTEXT("weapon_TBWeapon", "LinkDesc_50331", ""),
-    ParamList = {}
+    ParamList = {},
+    Priority = 0
   }
 }
 local LinkTb = {

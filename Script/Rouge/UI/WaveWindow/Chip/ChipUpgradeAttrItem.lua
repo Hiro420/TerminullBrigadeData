@@ -1,5 +1,6 @@
 local EChipUpgradeAttrNew = {New = "1", Normal = "2"}
 local ChipUpgradeAttrItem = UnLua.Class()
+
 function ChipUpgradeAttrItem:InitUpgradeSuccConfirm(CurAttr, OldAttr, bIsMainAttr)
   UpdateVisibility(self, true)
   local resultCur, rowCur = GetRowData(DT.DT_AttributeModifyOp, tostring(CurAttr.attrID))
@@ -28,7 +29,9 @@ function ChipUpgradeAttrItem:InitUpgradeSuccConfirm(CurAttr, OldAttr, bIsMainAtt
     self.StateCtrl_IsMainAttr:ChangeStatus("SubAttr")
   end
 end
+
 function ChipUpgradeAttrItem:Hide()
   UpdateVisibility(self, false)
 end
+
 return ChipUpgradeAttrItem

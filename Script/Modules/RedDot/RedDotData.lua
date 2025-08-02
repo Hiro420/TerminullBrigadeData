@@ -3,6 +3,7 @@ local RedDotData = {
   RedDotList = {},
   bIsNeedSaveToFile = false
 }
+
 function RedDotData:Init()
   self.RedDotList = {}
   self.RedDotRawList = LuaTableMgr.GetLuaTableByName("reddot_tbreddot")
@@ -11,6 +12,7 @@ function RedDotData:Init()
   end
   self.bIsNeedSaveToFile = false
 end
+
 function RedDotData:CreateRedDotState(RedDotId, RedDotClass)
   if self.RedDotList[RedDotId] then
     return false
@@ -20,6 +22,7 @@ function RedDotData:CreateRedDotState(RedDotId, RedDotClass)
     return true
   end
 end
+
 function RedDotData:InitRedDotState(RedDotId, RedDotClass)
   if not self.RedDotRawList[RedDotClass] then
     UnLua.LogError("RedDotData:InitRedDotState, RedDotClass not exist, RedDotClass:" .. tostring(RedDotClass))
@@ -39,6 +42,7 @@ function RedDotData:InitRedDotState(RedDotId, RedDotClass)
     self.RedDotList[RedDotId].RedDotTypePriorityList[RedDotType] = _
   end
 end
+
 function RedDotData:GetRedDotState(RedDotId)
   if not self.RedDotList[RedDotId] then
     print("RedDotData:GetRedDotState, RedDotId not exist, RedDotId:" .. RedDotId)
@@ -46,6 +50,7 @@ function RedDotData:GetRedDotState(RedDotId)
   end
   return self.RedDotList[RedDotId]
 end
+
 function RedDotData:UpdateRedDotState(RedDotId, NewState, ChildRedDotId, IsChildRedDotShowToHide)
   local OldState = {
     ParentIdList = self.RedDotList[RedDotId].ParentIdList,
@@ -129,6 +134,7 @@ function RedDotData:UpdateRedDotState(RedDotId, NewState, ChildRedDotId, IsChild
     end
   end
 end
+
 function RedDotData:ChangeRedDotNum(RedDotId, delta)
   if not self.RedDotList[RedDotId] then
     UnLua.LogWarn("RedDotData:ChangeRedDotNum, RedDotId not exist, RedDotId:" .. RedDotId)
@@ -136,6 +142,7 @@ function RedDotData:ChangeRedDotNum(RedDotId, delta)
   end
   self:SetRedDotNum(RedDotId, math.max(0, self.RedDotList[RedDotId].Num + delta))
 end
+
 function RedDotData:SetRedDotNum(RedDotId, Num)
   if not self.RedDotList[RedDotId] then
     UnLua.LogWarn("RedDotData:SetRedDotNum, RedDotId not exist, RedDotId:" .. RedDotId)
@@ -146,6 +153,7 @@ function RedDotData:SetRedDotNum(RedDotId, Num)
   end
   self:UpdateRedDotState(RedDotId, {Num = Num})
 end
+
 function RedDotData:GetRedDotIdListByClass(RedDotClass)
   local RedDotIdList = {}
   for k, v in pairs(self.RedDotList) do
@@ -155,6 +163,7 @@ function RedDotData:GetRedDotIdListByClass(RedDotClass)
   end
   return RedDotIdList
 end
+
 function RedDotData:GetRedDotIdListByParentId(ParentId)
   local RedDotIdList = {}
   for k, v in pairs(self.RedDotList) do
@@ -164,6 +173,7 @@ function RedDotData:GetRedDotIdListByParentId(ParentId)
   end
   return RedDotIdList
 end
+
 function RedDotData:GetRedDotRawDef(Class)
   if not self.RedDotRawList[Class] then
     print("RedDotData:GetRedDotRawDef, RedDotId not exist, RedDotId:" .. Class)
@@ -171,6 +181,7 @@ function RedDotData:GetRedDotRawDef(Class)
   end
   return self.RedDotRawList[Class]
 end
+
 function RedDotData:SetRedDotActive(RedDotId, IsActive)
   if not self.RedDotList[RedDotId] then
     UnLua.LogWarn("RedDotData:SetRedDotNum, RedDotId not exist, RedDotId:" .. RedDotId)
@@ -181,6 +192,7 @@ function RedDotData:SetRedDotActive(RedDotId, IsActive)
   end
   self:UpdateRedDotState(RedDotId, {IsActive = IsActive})
 end
+
 function RedDotData:DeleteRedDotState(RedDotId)
   if not self.RedDotList[RedDotId] then
     print("RedDotData:DeleteRedDotState fail! RedDotId not exist, RedDotId:" .. RedDotId)
@@ -200,4 +212,5 @@ function RedDotData:DeleteRedDotState(RedDotId)
   end
   table.RemoveItem(self.RedDotList, RedDotId)
 end
+
 return RedDotData

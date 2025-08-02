@@ -12,7 +12,9 @@ local AppearanceData = {
   StoneList = {},
   CurHeroId = -1
 }
+
 function AppearanceData:SetCurHeroId(InHeroId)
   AppearanceData.CurHeroId = InHeroId
 end
+
 return AppearanceData

@@ -3,6 +3,7 @@ local ViewBase = require("Framework.UIMgr.ViewBase")
 local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local MainTaskDetailView = Class(ViewBase)
+
 function MainTaskDetailView:OnBindUIInput()
   if IsListeningForInputAction(self, "PauseGame") then
     StopListeningForInputAction(self, "PauseGame", UE.EInputEvent.IE_Pressed)
@@ -18,24 +19,30 @@ function MainTaskDetailView:OnBindUIInput()
   })
   self.WBP_InteractTipWidgetReceiveReward:BindInteractAndClickEvent(self, self.ReceiveAward)
 end
+
 function MainTaskDetailView:OnUnBindUIInput()
   if IsListeningForInputAction(self, "PauseGame") then
     StopListeningForInputAction(self, "PauseGame", UE.EInputEvent.IE_Pressed)
   end
   self.WBP_InteractTipWidgetReceiveReward:UnBindInteractAndClickEvent(self, self.ReceiveAward)
 end
+
 function MainTaskDetailView:BindClickHandler()
   self.TaskList.BP_OnItemSelectionChanged:Add(self, MainTaskDetailView.OnItemSelectionChanged)
 end
+
 function MainTaskDetailView:UnBindClickHandler()
 end
+
 function MainTaskDetailView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function MainTaskDetailView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function MainTaskDetailView:OnShow(LastMainTaskId)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -54,6 +61,7 @@ function MainTaskDetailView:OnShow(LastMainTaskId)
   EventSystem.Invoke(EventDef.BeginnerGuide.OnMainTaskDetailViewShow)
   EventSystem.AddListener(self, EventDef.MainTask.OnMainTaskRefres, MainTaskDetailView.InitTab)
 end
+
 function MainTaskDetailView:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -63,11 +71,13 @@ function MainTaskDetailView:OnHide()
   EventSystem.RemoveListener(EventDef.MainTask.OnMainTaskRefres, MainTaskDetailView.InitTab, self)
   self:SetEnhancedInputActionBlocking(false)
 end
+
 function MainTaskDetailView:OnAnimationFinished(Animation)
   if Animation == self.Anim_OUT then
     UIMgr:Hide(ViewID.UI_MainTaskDetail, true)
   end
 end
+
 function MainTaskDetailView:InitTab()
   self.TabCache = {}
   for index, value in ipairs(self.VerticalBox_World:GetAllChildren():ToTable()) do
@@ -79,6 +89,7 @@ function MainTaskDetailView:InitTab()
   end
   self:SelectedTab(self.LastMainTaskId)
 end
+
 function MainTaskDetailView:SelectedTab(MainTaskId)
   if self.TabCache[self.LastMainTaskId] then
     self.TabCache[self.LastMainTaskId]:OnSelected(false)
@@ -89,6 +100,7 @@ function MainTaskDetailView:SelectedTab(MainTaskId)
   self.LastMainTaskId = MainTaskId
   self:RefreshTaskList(MainTaskId)
 end
+
 function MainTaskDetailView:RefreshTaskList(MainTaskId)
   local ActiveTasks = Logic_MainTask.GetGroupShowTask(MainTaskId)
   UpdateVisibility(self.TaskList, nil ~= ActiveTasks and 0 ~= table.count(ActiveTasks))
@@ -131,6 +143,7 @@ function MainTaskDetailView:RefreshTaskList(MainTaskId)
   end
   self.TaskList:SetSelectedIndex(0)
 end
+
 function MainTaskDetailView:OnItemSelectionChanged(Item, bSelected)
   if bSelected and Item then
     self.SelItem = Item
@@ -138,6 +151,7 @@ function MainTaskDetailView:OnItemSelectionChanged(Item, bSelected)
     self:RefreshTaskProgress(Item)
   end
 end
+
 function MainTaskDetailView:RefreshTaskDescAndAward(Item)
   local TaskData = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskData)
   self.TextTaskTitle:SetText(TaskData[Item.TaskId].name)
@@ -158,6 +172,7 @@ function MainTaskDetailView:RefreshTaskDescAndAward(Item)
     UpdateVisibility(self.Btn_ReceiveReward, false)
   end
 end
+
 function MainTaskDetailView:HoveredFunc()
   UpdateVisibility(self.WBP_CommonItemDetail, true)
   local MousePosition = UE.UWidgetLayoutLibrary.GetMousePositionOnViewport(self)
@@ -168,15 +183,18 @@ function MainTaskDetailView:HoveredFunc()
     self.WBP_CommonItemDetail.Slot:SetPosition(MousePosition)
   end
 end
+
 function MainTaskDetailView:UnHoveredFunc()
   UpdateVisibility(self.WBP_CommonItemDetail, false)
 end
+
 function MainTaskDetailView:ReceiveAward()
   if not self.Btn_ReceiveReward:IsVisible() then
     return
   end
   Logic_MainTask.ReceiveAward(self.SelItem.GroupId, self.SelItem.TaskId)
 end
+
 function MainTaskDetailView:RefreshTaskProgress(Item)
   local TaskData = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskData)
   UpdateVisibility(self.Overlay_Finish, Logic_MainTask.GetStateByTaskId(Item.TaskId) >= 2)
@@ -198,4 +216,5 @@ function MainTaskDetailView:RefreshTaskProgress(Item)
   self.TextProgress:SetText(FinishNum .. "/" .. Total)
   UpdateVisibility(self.TextProgress, 0 ~= Total)
 end
+
 return MainTaskDetailView

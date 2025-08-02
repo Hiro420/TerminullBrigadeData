@@ -3,10 +3,12 @@ local SkinHandler = require("Protocol.Appearance.Skin.SkinHandler")
 local BeginnerGuideData = require("Modules.Beginner.BeginnerGuideData")
 local HeirloomHandler = require("Protocol.Appearance.Heirloom.HeirloomHandler")
 local TeamVoiceModule = require("Modules.TeamVoice.TeamVoiceModule")
+local TopupHandler = require("Protocol.Topup.TopupHandler")
 local WBP_LobbyPanel_C = UnLua.Class()
 local ShowCurrencyListLabel = {
   "LobbyLabel.LobbyMain"
 }
+
 function WBP_LobbyPanel_C:OnBindUIInput()
   if not IsListeningForInputAction(self, self.SpeakActionName) then
     ListenForInputAction(self.SpeakActionName, UE.EInputEvent.IE_Pressed, false, {
@@ -25,10 +27,10 @@ function WBP_LobbyPanel_C:OnBindUIInput()
       self.ExitGameKey:BindInteractAndClickEvent(self, self.BindOnEscKeyPressed)
     end
   }, 0.1, false)
-  self.GameSettingsKey:BindInteractAndClickEvent(self, self.BindOnOpenSettingsKeyPressed)
   self.WBP_InteractTipWidgetMenuPrev:BindInteractAndClickEvent(self, self.BindOnSelectPrevMenu)
   self.WBP_InteractTipWidgetMenuNext:BindInteractAndClickEvent(self, self.BindOnSelectNextMenu)
 end
+
 function WBP_LobbyPanel_C:OnUnBindUIInput()
   StopListeningForInputAction(self, self.SpeakActionName, UE.EInputEvent.IE_Pressed)
   StopListeningForInputAction(self, self.SpeakActionName, UE.EInputEvent.IE_Released)
@@ -37,10 +39,10 @@ function WBP_LobbyPanel_C:OnUnBindUIInput()
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.BindExitGameKeyTimer)
   end
   self.ExitGameKey:UnBindInteractAndClickEvent(self, self.BindOnEscKeyPressed)
-  self.GameSettingsKey:UnBindInteractAndClickEvent(self, self.BindOnOpenSettingsKeyPressed)
   self.WBP_InteractTipWidgetMenuPrev:UnBindInteractAndClickEvent(self, self.BindOnSelectPrevMenu)
   self.WBP_InteractTipWidgetMenuNext:UnBindInteractAndClickEvent(self, self.BindOnSelectNextMenu)
 end
+
 function WBP_LobbyPanel_C:Construct()
   ListenObjectMessage(nil, "LobbyLevelUp", self, self.OnLevelUp)
   EventSystem.AddListener(self, EventDef.Lobby.PlayInAnimation, self.OnPlayInAnimation)
@@ -69,6 +71,7 @@ function WBP_LobbyPanel_C:Construct()
   UpdateVisibility(self.WBP_LobbyFunctionSet.WBP_LobbyFunctionPanel, true)
   self.WBP_LobbyFunctionSet.WBP_MonthCardIcon.ParentView = self
 end
+
 function WBP_LobbyPanel_C:OnShow()
   self:BindOnPanelShown()
   SetLobbyPanelCurrencyList(true, {
@@ -77,15 +80,20 @@ function WBP_LobbyPanel_C:OnShow()
     300101
   })
 end
+
 function WBP_LobbyPanel_C:OnRollback()
   self:PlayInLobbyPanelAnimation(false)
+  TopupHandler:RequestPaymentCurrencyAfterPay()
 end
+
 function WBP_LobbyPanel_C:OnHide()
   self:BindOnPanelHidden()
 end
+
 function WBP_LobbyPanel_C:OnLevelUp(Exp)
   Logic_Level.OnLevelUp(Exp)
 end
+
 function WBP_LobbyPanel_C:BindOnTotalAttributeTipsVisChanged(IsVis, CurHeroId)
   if IsVis then
     self.WBP_TotalAttrTips:LobbyShow(CurHeroId)
@@ -93,6 +101,7 @@ function WBP_LobbyPanel_C:BindOnTotalAttributeTipsVisChanged(IsVis, CurHeroId)
     self.WBP_TotalAttrTips:Hide()
   end
 end
+
 function WBP_LobbyPanel_C:BindOnChangeLobbyMenuPanelVis(IsShow)
   self.IsShowLobbyMenuPanel = IsShow
   if IsShow then
@@ -101,6 +110,7 @@ function WBP_LobbyPanel_C:BindOnChangeLobbyMenuPanelVis(IsShow)
     UIMgr:Hide(ViewID.UI_LobbyEscMenuPanel)
   end
 end
+
 function WBP_LobbyPanel_C:BindOnLobbyLabelSelected(LabelTagName, CommonLinkRow)
   local CurShowLabelName = LogicLobby.GetCurSelectedLabelName()
   if CurShowLabelName and CurShowLabelName == LabelTagName then
@@ -156,6 +166,7 @@ function WBP_LobbyPanel_C:BindOnLobbyLabelSelected(LabelTagName, CommonLinkRow)
     self:RefreshBottomFunctionalButtonPanel(View)
   end
 end
+
 function WBP_LobbyPanel_C:RefreshBottomFunctionalButtonPanel(CurActiveWidget)
   if not CurActiveWidget.FunctionalBtnList then
     self.SpecialFunctionalBtnPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -185,13 +196,11 @@ function WBP_LobbyPanel_C:RefreshBottomFunctionalButtonPanel(CurActiveWidget)
     Index = Index + 1
   end
 end
+
 function WBP_LobbyPanel_C:UpdateSpecialFunctionalBtnPanel(bIsShow)
   UpdateVisibility(self.SpecialFunctionalBtnPanel, bIsShow)
 end
-function WBP_LobbyPanel_C:BindOnOpenSettingsKeyPressed()
-  LogicGameSetting.ShowGameSettingPanel()
-  self:OnClickBGMouseButtonDown()
-end
+
 function WBP_LobbyPanel_C:BindOnEscKeyPressed()
   local LobbyDefaultLabelName = LogicLobby.GetDefaultSelectedLabelName()
   local CurShowLabelName = LogicLobby.GetCurSelectedLabelName()
@@ -206,6 +215,7 @@ function WBP_LobbyPanel_C:BindOnEscKeyPressed()
   end
   self:OnClickBGMouseButtonDown()
 end
+
 function WBP_LobbyPanel_C:BindOnSelectPrevMenu()
   if #self.FirstLabelList <= 0 then
     return
@@ -221,6 +231,7 @@ function WBP_LobbyPanel_C:BindOnSelectPrevMenu()
     end
   end
 end
+
 function WBP_LobbyPanel_C:BindOnSelectNextMenu()
   if #self.FirstLabelList <= 0 then
     return
@@ -236,15 +247,18 @@ function WBP_LobbyPanel_C:BindOnSelectNextMenu()
     end
   end
 end
+
 function WBP_LobbyPanel_C:OnShow()
   SetInputMode_GameAndUIEx(self:GetOwningPlayer(), self, UE.EMouseLockMode.LockAlways, true)
   self:BindOnPanelShown()
 end
+
 function WBP_LobbyPanel_C:OnHide()
   SetLobbyPanelCurrencyList(false)
   self:BindOnPanelHidden()
   self:OnClickBGMouseButtonDown()
 end
+
 function WBP_LobbyPanel_C:Destruct()
   UnListenObjectMessage("LobbyLevelUp", self)
   self.CanvasPanel_Menu:ClearChildren()
@@ -257,9 +271,11 @@ function WBP_LobbyPanel_C:Destruct()
   EventSystem.RemoveListenerNew(EventDef.Season.SeasonModeChanged, self, self.InitPages)
   EventSystem.RemoveListenerNew(EventDef.Lobby.OpenMonthCardTip, self, self.BindMonthCardTipOpen)
 end
+
 function WBP_LobbyPanel_C:InitInfo()
   self:InitPages()
 end
+
 function WBP_LobbyPanel_C:InitPages()
   local LabelTreeStruct = LogicLobby.GetLabelParentChildTreeStruct()
   self.FirstLabelList = {}
@@ -313,9 +329,11 @@ function WBP_LobbyPanel_C:InitPages()
     LogicLobby.ChangeLobbyPanelLabelSelected(DefaultLabelName)
   end
 end
+
 function WBP_LobbyPanel_C:BindMonthCardTipOpen()
   UpdateVisibility(self.ClickBG, true, true)
 end
+
 function WBP_LobbyPanel_C:BindOnPanelShown()
   print("LobbyPanelShown")
   EventSystem.Invoke(EventDef.Lobby.ChangeLobbyMenuPanelVis, false)
@@ -334,6 +352,7 @@ function WBP_LobbyPanel_C:BindOnPanelShown()
     end
   end
 end
+
 function WBP_LobbyPanel_C:BindOnPanelHidden()
   print("LobbyPanelHidden")
   self.WBP_TotalAttrTips:Hide()
@@ -345,18 +364,22 @@ function WBP_LobbyPanel_C:BindOnPanelHidden()
     end
   end
 end
+
 function WBP_LobbyPanel_C:OnClickBGMouseButtonDown(MyGeometry, MouseEvent)
   self.WBP_LobbyFunctionSet.WBP_MonthCardIcon:CloseCardTips()
   UpdateVisibility(self.ClickBG, false)
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function WBP_LobbyPanel_C:OnPlayInAnimation()
   self:PlayInLobbyPanelAnimation()
 end
+
 function WBP_LobbyPanel_C:OnPlayOutAnimation()
   self:PlayOutAnimation()
   self.MatchingPanel:Hide()
 end
+
 function WBP_LobbyPanel_C:ListenForSpeakInputAction()
   local GameUserSettings = UE.UGameUserSettings.GetGameUserSettings()
   local TeamVoiceSubSys = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTeamVoiceSubsystem:StaticClass())
@@ -368,6 +391,7 @@ function WBP_LobbyPanel_C:ListenForSpeakInputAction()
     end
   end
 end
+
 function WBP_LobbyPanel_C:ListenForSpeakInputReleasedAction()
   local GameUserSettings = UE.UGameUserSettings.GetGameUserSettings()
   local TeamVoiceSubSys = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTeamVoiceSubsystem:StaticClass())
@@ -379,6 +403,7 @@ function WBP_LobbyPanel_C:ListenForSpeakInputReleasedAction()
     end
   end
 end
+
 function WBP_LobbyPanel_C:PlayInLobbyPanelAnimation(bDelayPlay)
   local playFunc = function()
     if self then
@@ -411,8 +436,10 @@ function WBP_LobbyPanel_C:PlayInLobbyPanelAnimation(bDelayPlay)
     playFunc()
   end
 end
+
 function WBP_LobbyPanel_C:PlayOutAnimation()
   self:PlayAnimation(self.ani_lobbypanel_out, 0, 1, UE.EUMGSequencePlayMode.Forward, 1, true)
   self.WBP_LobbyFunctionSet:PlayOutAnimation()
 end
+
 return WBP_LobbyPanel_C

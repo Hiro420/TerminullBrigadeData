@@ -3,6 +3,7 @@ local CostTextColor = {
   White = UE.FLinearColor(1.0, 1.0, 1.0, 1.0),
   Yellow = UE.FLinearColor(1, 0.300544, 0.029557, 1.0)
 }
+
 function WBP_ModLearnedItem_C:UpdateModInfo(FMODContent, bIsLegend)
   local modId = FMODContent.MODID
   local modChooseType = UE.ERGMODChooseType.Character
@@ -71,4 +72,5 @@ function WBP_ModLearnedItem_C:UpdateModInfo(FMODContent, bIsLegend)
     print("Pawn is null.")
   end
 end
+
 return WBP_ModLearnedItem_C

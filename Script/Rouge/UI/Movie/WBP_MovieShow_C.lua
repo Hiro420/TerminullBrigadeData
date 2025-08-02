@@ -4,12 +4,14 @@ local ShowType = {
   MaxForLarger = 2
 }
 local WBP_MovieShow_C = UnLua.Class()
+
 function WBP_MovieShow_C:OnDisplay()
   self.Overridden.OnDisplay(self)
   ListenObjectMessage(nil, GMP.MSG_AI_OnAISpawned, self, self.OnAISpawned)
   EventSystem.AddListenerNew(EventDef.BossTips.BossTipsMovie, self, self.BindOnBossTipsMovie)
   self:InitBossInfo()
 end
+
 function WBP_MovieShow_C:OnUnDisplay(bIsPlaySound)
   self.Overridden.OnUnDisplay(self, bIsPlaySound)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TimerDel) then
@@ -22,8 +24,10 @@ function WBP_MovieShow_C:OnUnDisplay(bIsPlaySound)
   UnListenObjectMessage(GMP.MSG_AI_OnAISpawned, self)
   EventSystem.RemoveListenerNew(EventDef.BossTips.BossTipsMovie, self, self.BindOnBossTipsMovie)
 end
+
 function WBP_MovieShow_C:BindOnBossTipsMovie()
 end
+
 function WBP_MovieShow_C:OnShowMovie()
   if not self.MoviePlayer then
     print("WBP_MovieShow_C:OnShowMovie MoviePlayer Is Nil")
@@ -33,20 +37,28 @@ function WBP_MovieShow_C:OnShowMovie()
   local IsSequenceCG = self.MoviePlayer:IsPlaySequenceCG()
   local IsSequenceCGPlaying = self.MoviePlayer:IsPlaying()
   if IsSequenceCG and IsSequenceCGPlaying then
+    UpdateVisibility(self.CanvasPanelMovie, false)
     UpdateVisibility(self.MoviePanel, false)
     UpdateVisibility(self.MoviePanelSpecial, false)
   else
     local CurrMediaId = self.MoviePlayer.CurrMediaId
     local resultCur, rowCur = GetRowData(DT.DT_MediaSource, CurrMediaId)
-    UpdateVisibility(self.MoviePanel, true)
+    UpdateVisibility(self.CanvasPanelMovie, true)
+    UpdateVisibility(self.MoviePanel, false)
     UpdateVisibility(self.MoviePanelSpecial, false)
     if resultCur then
       if rowCur.AdaptationType == ShowType.MaxForSmaller then
+        UpdateVisibility(self.CanvasPanelMovie, false)
         UpdateVisibility(self.MoviePanel, true)
         UpdateVisibility(self.MoviePanelSpecial, false)
       elseif rowCur.AdaptationType == ShowType.MaxForLarger then
+        UpdateVisibility(self.CanvasPanelMovie, false)
         UpdateVisibility(self.MoviePanel, false)
         UpdateVisibility(self.MoviePanelSpecial, true)
+      else
+        UpdateVisibility(self.CanvasPanelMovie, true)
+        UpdateVisibility(self.MoviePanel, false)
+        UpdateVisibility(self.MoviePanelSpecial, false)
       end
     end
   end
@@ -76,6 +88,7 @@ function WBP_MovieShow_C:OnShowMovie()
     }, row.MonsterInfoHideDelay, false)
   end
 end
+
 function WBP_MovieShow_C:OnAISpawned(AIActor)
   print("WBP_MovieShow_C:OnAISpawned()", UE.RGUtil.IsUObjectValid(AIActor))
   if UE.RGUtil.IsUObjectValid(AIActor) and AIActor:IsBossAI() then
@@ -83,6 +96,7 @@ function WBP_MovieShow_C:OnAISpawned(AIActor)
     self:InitBossInfo()
   end
 end
+
 function WBP_MovieShow_C:InitBossInfo()
   local BossActor = self:GetBossActor()
   print("WBP_MovieShow_C:InitBossInfo", BossActor)
@@ -104,6 +118,7 @@ function WBP_MovieShow_C:InitBossInfo()
     self.TagText:SetText(RowInfo.TagText)
   end
 end
+
 function WBP_MovieShow_C:GetBossActor()
   local aiCharacterActorAry = UE.UGameplayStatics.GetAllActorsOfClass(self, UE.AAICharacterBase.StaticClass(), nil)
   for i, v in iterator(aiCharacterActorAry) do
@@ -119,6 +134,7 @@ function WBP_MovieShow_C:GetBossActor()
   end
   return nil
 end
+
 function WBP_MovieShow_C:ShowMonsterInfo()
   print("WBP_MovieShow_C:ShowMonsterInfo", self.BossTypeId)
   if not self.BossTypeId then
@@ -144,9 +160,11 @@ function WBP_MovieShow_C:ShowMonsterInfo()
     print("WBP_MovieShow_C:ShowMonsterInfo BossTypeId Is InValid", self.BossTypeId)
   end
 end
+
 function WBP_MovieShow_C:HideMonsterInfo()
   self:PlayAni_Out()
 end
+
 function WBP_MovieShow_C:PlayAni_In()
   local LevelSubSystem = UE.URGGameLevelSystem.GetInstance(GameInstance)
   if LevelSubSystem and LevelSubSystem:GetMatchGameMode() == TableEnums.ENUMGameMode.BOSSRUSH then
@@ -155,6 +173,7 @@ function WBP_MovieShow_C:PlayAni_In()
   end
   self:PlayAnimation(self.AniFadeIn)
 end
+
 function WBP_MovieShow_C:PlayAni_Out()
   local LevelSubSystem = UE.URGGameLevelSystem.GetInstance(GameInstance)
   if LevelSubSystem and LevelSubSystem:GetMatchGameMode() == TableEnums.ENUMGameMode.BOSSRUSH then
@@ -163,4 +182,5 @@ function WBP_MovieShow_C:PlayAni_Out()
   end
   self:PlayAnimation(self.AniFadeOut)
 end
+
 return WBP_MovieShow_C

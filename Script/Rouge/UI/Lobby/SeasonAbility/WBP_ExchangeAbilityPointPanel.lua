@@ -5,6 +5,7 @@ local UIUtil = require("Framework.UIMgr.UIUtil")
 local SeasonAbilityData = require("Modules.SeasonAbility.SeasonAbilityData")
 local SeasonAbilityHandler = require("Protocol.SeasonAbility.SeasonAbilityHandler")
 local WBP_ExchangeAbilityPointPanel = Class(ViewBase)
+
 function WBP_ExchangeAbilityPointPanel:BindClickHandler()
   self.Btn_Confirm.OnMainButtonClicked:Add(self, self.BindOnConfirmButtonClicked)
   self.Btn_Cancel.OnMainButtonClicked:Add(self, self.BindOnCancelButtonClicked)
@@ -12,6 +13,7 @@ function WBP_ExchangeAbilityPointPanel:BindClickHandler()
   self.Btn_Add.OnClicked:Add(self, self.BindOnAddButtonClicked)
   self.Btn_Max.OnClicked:Add(self, self.BindOnMaxButtonClicked)
 end
+
 function WBP_ExchangeAbilityPointPanel:UnBindClickHandler()
   self.Btn_Confirm.OnMainButtonClicked:Remove(self, self.BindOnConfirmButtonClicked)
   self.Btn_Cancel.OnMainButtonClicked:Remove(self, self.BindOnCancelButtonClicked)
@@ -19,13 +21,16 @@ function WBP_ExchangeAbilityPointPanel:UnBindClickHandler()
   self.Btn_Add.OnClicked:Remove(self, self.BindOnAddButtonClicked)
   self.Btn_Max.OnClicked:Remove(self, self.BindOnMaxButtonClicked)
 end
+
 function WBP_ExchangeAbilityPointPanel:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function WBP_ExchangeAbilityPointPanel:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_ExchangeAbilityPointPanel:OnShow(HeroId)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -57,6 +62,7 @@ function WBP_ExchangeAbilityPointPanel:OnShow(HeroId)
   self.WBP_InteractTipWidget:BindInteractAndClickEvent(self, self.BindOnCancelButtonClicked)
   self:SetEnhancedInputActionBlocking(true)
 end
+
 function WBP_ExchangeAbilityPointPanel:BindOnConfirmButtonClicked(...)
   if self.CurExchangeNum > 0 then
     SeasonAbilityHandler:RequestExchangeAbilityPointToServer(self.CurHeroId, self.CurExchangeNum)
@@ -64,9 +70,11 @@ function WBP_ExchangeAbilityPointPanel:BindOnConfirmButtonClicked(...)
   end
   UIMgr:Hide(ViewID.UI_ExchangeAbilityPointPanel)
 end
+
 function WBP_ExchangeAbilityPointPanel:BindOnCancelButtonClicked(...)
   UIMgr:Hide(ViewID.UI_ExchangeAbilityPointPanel)
 end
+
 function WBP_ExchangeAbilityPointPanel:SetExchangeNumInfo(InExchangeNum)
   local MaxExchangeNum = table.count(self.ExchangePointCostList)
   self.CurExchangeNum = math.clamp(InExchangeNum, 0, MaxExchangeNum)
@@ -78,16 +86,20 @@ function WBP_ExchangeAbilityPointPanel:SetExchangeNumInfo(InExchangeNum)
   end
   self.WBP_Item:InitItem(0, CurCostResourceNum)
 end
+
 function WBP_ExchangeAbilityPointPanel:BindOnSubtractButtonClicked(...)
   self:SetExchangeNumInfo(self.CurExchangeNum - 1)
 end
+
 function WBP_ExchangeAbilityPointPanel:BindOnAddButtonClicked(...)
   self:SetExchangeNumInfo(self.CurExchangeNum + 1)
 end
+
 function WBP_ExchangeAbilityPointPanel:BindOnMaxButtonClicked(...)
   local MaxExchangeNum = table.count(self.ExchangePointCostList)
   self:SetExchangeNumInfo(MaxExchangeNum)
 end
+
 function WBP_ExchangeAbilityPointPanel:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -95,4 +107,5 @@ function WBP_ExchangeAbilityPointPanel:OnHide()
   self.WBP_InteractTipWidget:UnBindInteractAndClickEvent(self, self.BindOnCancelButtonClicked)
   self:SetEnhancedInputActionBlocking(false)
 end
+
 return WBP_ExchangeAbilityPointPanel

@@ -1,9 +1,11 @@
 local WBP_MODPanel_C = UnLua.Class()
+
 function WBP_MODPanel_C:Construct()
   self.PlayerBox.OnClicked:Add(self, WBP_MODPanel_C.OnClicked_PlayerBox)
   self.CompanionBox.OnClicked:Add(self, WBP_MODPanel_C.OnClicked_CompanionBox)
   self.CloseButton.OnClicked:Add(self, WBP_MODPanel_C.OnClicked_CloseButton)
 end
+
 function WBP_MODPanel_C:OnOpenUI(InMODList_ArrayName)
   self.MODList = InMODList_ArrayName
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -24,6 +26,7 @@ function WBP_MODPanel_C:OnOpenUI(InMODList_ArrayName)
     end
   end
 end
+
 function WBP_MODPanel_C:RefreshPanel(InType_Int)
   local index = InType_Int * 3
   local switch = {
@@ -41,6 +44,7 @@ function WBP_MODPanel_C:RefreshPanel(InType_Int)
   local fSwitch = switch[InType_Int]
   local Result = fSwitch()
 end
+
 function WBP_MODPanel_C:RefreshPanelFun(InType_Int, InIndex_Int)
   if self.MODList:Length() >= 3 then
     local table = {
@@ -70,6 +74,7 @@ function WBP_MODPanel_C:RefreshPanelFun(InType_Int, InIndex_Int)
     print("\230\149\176\233\135\143\229\176\143\228\186\1423")
   end
 end
+
 function WBP_MODPanel_C:HandleUpgrade(InUpgradeType_Int)
   print(self.MODList:Length())
   if self.MODList:Length() <= 3 then
@@ -97,16 +102,21 @@ function WBP_MODPanel_C:HandleUpgrade(InUpgradeType_Int)
     local result = fSwitchFun()
   end
 end
+
 function WBP_MODPanel_C:OnClose()
   UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self:GetWorld(), UE.URGUIManager:StaticClass()):Switch(self:StaticClass())
 end
+
 function WBP_MODPanel_C:OnClicked_PlayerBox(InButton)
   self:RefreshPanel(0)
 end
+
 function WBP_MODPanel_C:OnClicked_CompanionBox(InButton)
   self:RefreshPanel(1)
 end
+
 function WBP_MODPanel_C:OnClicked_CloseButton()
   self:OnClose()
 end
+
 return WBP_MODPanel_C

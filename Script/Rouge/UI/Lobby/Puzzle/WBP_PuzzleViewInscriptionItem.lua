@@ -1,4 +1,5 @@
 local WBP_PuzzleViewInscriptionItem = UnLua.Class()
+
 function WBP_PuzzleViewInscriptionItem:Show(InscriptionId, IsActive)
   UpdateVisibility(self, true)
   self.Txt_Name:SetText(GetInscriptionName(InscriptionId))
@@ -9,4 +10,5 @@ function WBP_PuzzleViewInscriptionItem:Show(InscriptionId, IsActive)
     self.RGStateController_Status:ChangeStatus("Inactive")
   end
 end
+
 return WBP_PuzzleViewInscriptionItem

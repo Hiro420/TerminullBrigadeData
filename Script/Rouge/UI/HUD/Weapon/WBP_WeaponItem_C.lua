@@ -1,4 +1,5 @@
 local WBP_WeaponItem_C = UnLua.Class()
+
 function WBP_WeaponItem_C:Construct()
   EventSystem.AddListener(self, EventDef.Battle.OnPickupWeaponSelected, WBP_WeaponItem_C.BindOnPickupWeaponSelected)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
@@ -15,13 +16,16 @@ function WBP_WeaponItem_C:Construct()
   ListenObjectMessage(nil, GMP.MSG_OnAbilityTagUpdate, self, self.BindOnAbilityTagUpdate)
   ListenObjectMessage(nil, GMP.MSG_World_Weapon_OnChargeTimeUpdate, self, self.BindOnChargeTimeUpdate)
 end
+
 function WBP_WeaponItem_C:BindOnMagazineAttributeChanged(NewValue, OldValue)
   self:ChangeReverseAmmo()
 end
+
 function WBP_WeaponItem_C:BindOnWeaponPolicyChanged()
   self:SetAmmoInfo()
   self:ChangeReverseAmmo()
 end
+
 function WBP_WeaponItem_C:ChangeReverseAmmo()
   local LocalPlayer = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not LocalPlayer then
@@ -32,13 +36,14 @@ function WBP_WeaponItem_C:ChangeReverseAmmo()
     return
   end
   local MagazineTemp = CurrentWeapon:GetDisplayMaxClipAmmo()
-  local MagazineTempStr = tostring(UE.UKismetMathLibrary.FFloor(tonumber(string.format("%.2f", MagazineTemp))))
+  local MagazineTempStr = tostring(UE.UKismetMathLibrary.FCeil(tonumber(string.format("%.2f", MagazineTemp))))
   self.Txt_ReverseAmmo:SetText(MagazineTempStr)
   self.Txt_ReverseAmmo_touying:SetText(MagazineTempStr)
   self.Txt_ReverseAmmo_touming_1:SetText(MagazineTempStr)
   self.Txt_ReverseAmmo_touming_2:SetText(MagazineTempStr)
   self.Txt_UnReverseAmmo:SetText(MagazineTempStr)
 end
+
 function WBP_WeaponItem_C:BindOnPickupWeaponSelected(IsShow, CurWeapon)
   self.IsShowCompareWeapon = IsShow
   self.CurShowCompareWeapon = CurWeapon
@@ -53,6 +58,7 @@ function WBP_WeaponItem_C:BindOnPickupWeaponSelected(IsShow, CurWeapon)
     self:StopAnimation(self.Loop)
   end
 end
+
 function WBP_WeaponItem_C:BindOnAbilityTagUpdate(Tag, bTagExist, TargetActor)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if TargetActor ~= Character then
@@ -66,8 +72,10 @@ function WBP_WeaponItem_C:BindOnAbilityTagUpdate(Tag, bTagExist, TargetActor)
     self:ChangeProhibitVis(bTagExist)
   end
 end
+
 function WBP_WeaponItem_C:BindOnChargeTimeUpdate(MaxTime, CurrentTime)
   self.CurrentTime = CurrentTime
+  
   function self:GetOtherAmmoCost()
     local EquipmentComp = self:GetOwningPlayerPawn():GetComponentByClass(UE.URGEquipmentComponent.StaticClass())
     if not EquipmentComp then
@@ -99,8 +107,10 @@ function WBP_WeaponItem_C:BindOnChargeTimeUpdate(MaxTime, CurrentTime)
     end
     return Policy.ChargeAmmoCost * self.CurrentTime
   end
+  
   self:SetAmmoInfo()
 end
+
 function WBP_WeaponItem_C:ChangeProhibitVis(IsShow)
   self.Img_Prohibit:SetVisibility(UE.ESlateVisibility.Hidden)
   self.AmmoNumPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -110,6 +120,7 @@ function WBP_WeaponItem_C:ChangeProhibitVis(IsShow)
     self:SetRenderOpacity(self.CanUseOpacity)
   end
 end
+
 function WBP_WeaponItem_C:RefreshInfo(CurWeapon)
   if not CurWeapon then
     self:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -147,9 +158,11 @@ function WBP_WeaponItem_C:RefreshInfo(CurWeapon)
     self:BindOnPickupWeaponSelected(self.IsShowCompareWeapon, self.CurShowCompareWeapon)
   end
 end
+
 function WBP_WeaponItem_C:BindOnAccessoryChanged()
   self:RefreshWeaponIcon()
 end
+
 function WBP_WeaponItem_C:RefreshWeaponIcon()
   local AccessoryComp = self.CurSlotWeapon.AccessoryComponent
   if not AccessoryComp then
@@ -173,6 +186,7 @@ function WBP_WeaponItem_C:RefreshWeaponIcon()
     SetImageBrushBySoftObject(self.Img_Weapon_yinying, ItemData.ProjectionCompleteGunIcon)
   end
 end
+
 function WBP_WeaponItem_C:SetSelectedStatus(IsSelect)
   if IsSelect then
     self:SetColorAndOpacity(UE.FLinearColor(1, 1, 1, 1))
@@ -192,16 +206,18 @@ function WBP_WeaponItem_C:SetSelectedStatus(IsSelect)
     self.UnSelectAmmoPanel:SetVisibility(UE.ESlateVisibility.Visible)
   end
 end
+
 function WBP_WeaponItem_C:BindOnClipAmmoChangedNotice()
   self:SetAmmoInfo()
 end
+
 function WBP_WeaponItem_C:SetAmmoInfo()
   if self.CurSlotWeapon then
     local Ammo = self.CurSlotWeapon:GetDisplayClipAmmo()
     if self.GetOtherAmmoCost then
       Ammo = Ammo - self:GetOtherAmmoCost()
     end
-    local AmmoStr = tostring(UE.UKismetMathLibrary.Round(tonumber(string.format("%.2f", Ammo))))
+    local AmmoStr = tostring(UE.UKismetMathLibrary.FCeil(tonumber(string.format("%.2f", Ammo))))
     self.Txt_ClipAmmo:SetText(AmmoStr)
     self.Txt_ClipAmmo_touying:SetText(AmmoStr)
     self.Txt_ClipAmmo_touming_1:SetText(AmmoStr)
@@ -209,6 +225,7 @@ function WBP_WeaponItem_C:SetAmmoInfo()
     self.Txt_UnClipAmmo:SetText(AmmoStr)
   end
 end
+
 function WBP_WeaponItem_C:SetSlotGunStatus(IsHaveGun)
   if IsHaveGun then
     self.Img_Weapon:SetVisibility(UE.ESlateVisibility.Visible)
@@ -218,6 +235,7 @@ function WBP_WeaponItem_C:SetSlotGunStatus(IsHaveGun)
     self.Txt_ReverseAmmo:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_WeaponItem_C:Destruct()
   if self.CurSlotWeapon then
     self.CurSlotWeapon.OnNotifyAmmoChanged:Remove(self, WBP_WeaponItem_C.BindOnClipAmmoChangedNotice)
@@ -236,4 +254,5 @@ function WBP_WeaponItem_C:Destruct()
   UnListenObjectMessage(GMP.MSG_OnAbilityTagUpdate, self)
   UnListenObjectMessage(GMP.MSG_World_Weapon_OnChargeTimeUpdate, self)
 end
+
 return WBP_WeaponItem_C

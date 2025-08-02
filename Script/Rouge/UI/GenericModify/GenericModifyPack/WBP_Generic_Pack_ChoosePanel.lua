@@ -1,8 +1,10 @@
 local WBP_Generic_Pack_ChoosePanel = UnLua.Class()
+
 function WBP_Generic_Pack_ChoosePanel:OnCreate()
   self.Overridden.OnCreate(self)
   self.EscActionName = "PauseGame"
 end
+
 function WBP_Generic_Pack_ChoosePanel:FocusInput()
   self.Overridden.FocusInput(self)
   SetInputIgnore(self:GetOwningPlayerPawn(), true)
@@ -16,6 +18,7 @@ function WBP_Generic_Pack_ChoosePanel:FocusInput()
   self.WBP_InteractTipWidgetEsc.Btn_Main.OnClicked:Add(self, self.ListenForEscInputAction)
   self:UpdateHudListNav()
 end
+
 function WBP_Generic_Pack_ChoosePanel:OnDisplay()
   self.Overridden.OnDisplay(self)
   LogicGenericModify.bCanOperator = true
@@ -37,12 +40,15 @@ function WBP_Generic_Pack_ChoosePanel:OnDisplay()
   end
   self:InitGenericModifyPackChoosePanel()
 end
+
 function WBP_Generic_Pack_ChoosePanel:ComInitGeneric()
   self:SetFromDialog(false)
 end
+
 function WBP_Generic_Pack_ChoosePanel:CloseChoosePanel()
   LogicGenericModify:GiveUpGenericPack()
 end
+
 function WBP_Generic_Pack_ChoosePanel:OnRefreshClick()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -58,6 +64,7 @@ function WBP_Generic_Pack_ChoosePanel:OnRefreshClick()
   end
   LogicGenericModify:RefreshGenericPack()
 end
+
 function WBP_Generic_Pack_ChoosePanel:ListenForEscInputAction()
   if self:IsAnimationPlaying(self.ani_GenericModifyChoosePanel_out) then
     print("WBP_Generic_Pack_ChoosePanel:ListenForEscInputAction ani_GenericModifyChoosePanel_out is playing")
@@ -72,9 +79,11 @@ function WBP_Generic_Pack_ChoosePanel:ListenForEscInputAction()
     end
   })
 end
+
 function WBP_Generic_Pack_ChoosePanel:SetFromDialog(bIsFromDialog)
   self.bIsFromDialog = bIsFromDialog
 end
+
 function WBP_Generic_Pack_ChoosePanel:InitGenericModifyPackChoosePanel()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -106,6 +115,7 @@ function WBP_Generic_Pack_ChoosePanel:InitGenericModifyPackChoosePanel()
   self.WBP_HUD_GenericModifyList:SelectClick()
   self:PlayAnimation(self.ani_GenericModifyChoosePanel_in)
 end
+
 function WBP_Generic_Pack_ChoosePanel:InitTitle(Title, Color, ShadowColor, Sprite)
   local Font = self.RGTextGenericModifyGroupNameShadow.Font
   Font.OutlineSettings.OutlineColor = ShadowColor
@@ -117,9 +127,11 @@ function WBP_Generic_Pack_ChoosePanel:InitTitle(Title, Color, ShadowColor, Sprit
   SetImageBrushBySoftObject(self.URGImageIcon_1, Sprite)
   UpdateVisibility(self.CanvasPanelGroupName, true)
 end
+
 function WBP_Generic_Pack_ChoosePanel:FinishInteractGenericModify()
   LogicGenericModify:FinishInteractGenericModify(self.Target)
 end
+
 function WBP_Generic_Pack_ChoosePanel:OnAbandonedClick()
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
   if WaveWindowManager then
@@ -159,12 +171,14 @@ function WBP_Generic_Pack_ChoosePanel:OnAbandonedClick()
     end
   end
 end
+
 function WBP_Generic_Pack_ChoosePanel:SelectModifyIdx(Idx)
   print("WBP_Generic_Pack_ChoosePanel:SelectModifyIdx", Idx, self.Idx)
   if not self.Idx then
     self.Idx = Idx
   end
 end
+
 function WBP_Generic_Pack_ChoosePanel:HoverItem(ModifyId, bIsHover)
   local result, row = GetRowData(DT.DT_GenericModify, tostring(ModifyId))
   if result then
@@ -174,6 +188,7 @@ function WBP_Generic_Pack_ChoosePanel:HoverItem(ModifyId, bIsHover)
     self.WBP_HUD_GenericModifyList:HighLightModifyItem(-1, false)
   end
 end
+
 function WBP_Generic_Pack_ChoosePanel:FinishInteractGenericModify()
   print("WBP_Generic_Pack_ChoosePanel:FinishInteractGenericModify", self.IsInShop)
   if self.Idx and self.Idx > 0 then
@@ -189,12 +204,15 @@ function WBP_Generic_Pack_ChoosePanel:FinishInteractGenericModify()
     LogicGenericModify:CloseGenericPackChoosePanel()
   end
 end
+
 function WBP_Generic_Pack_ChoosePanel:HoverFunc(Slot, bIsHover)
   self.WBP_HUD_GenericModifyList:HighLightModifyItem(Slot, bIsHover)
 end
+
 function WBP_Generic_Pack_ChoosePanel:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_Generic_Pack_ChoosePanel:UnfocusInput()
   self.Overridden.UnfocusInput(self)
   LogicGenericModify.bCanOperator = true
@@ -203,6 +221,7 @@ function WBP_Generic_Pack_ChoosePanel:UnfocusInput()
   self.BP_ButtonWithSoundRefresh.OnClicked:Remove(self, self.OnRefreshClick)
   self.WBP_InteractTipWidgetEsc.Btn_Main.OnClicked:Remove(self, self.ListenForEscInputAction)
 end
+
 function WBP_Generic_Pack_ChoosePanel:OnUnDisplay()
   self.Overridden.OnUnDisplay(self, true)
   self:SetFromDialog(false)
@@ -221,13 +240,16 @@ function WBP_Generic_Pack_ChoosePanel:OnUnDisplay()
   self:StopAllAnimations()
   self.ModifyChooseType = ModifyChooseType.None
 end
+
 function WBP_Generic_Pack_ChoosePanel:OnClose()
   self.Overridden.OnClose(self)
   self:Reset()
 end
+
 function WBP_Generic_Pack_ChoosePanel:Reset()
   self.Idx = -1
 end
+
 function WBP_Generic_Pack_ChoosePanel:ShowTitle()
   UpdateVisibility(self.AutoLoad_TitleGroup_0, true)
   self.AutoLoad_TitleGroup_0:PlayAnimation("ani_GenericModifyChoosePanel_in")
@@ -238,18 +260,23 @@ function WBP_Generic_Pack_ChoosePanel:ShowTitle()
     dialogInst:PlayAnimation(dialogInst.Ani_GenericModifyChoose_in)
   end
 end
+
 function WBP_Generic_Pack_ChoosePanel:OnAnimationFinished(Animation)
   if Animation == self.ani_GenericModifyChoosePanel_out then
     print("LogicGenericModify:CloseGenericPackChoosePanel")
     LogicGenericModify:CloseGenericPackChoosePanel()
   end
 end
+
 function WBP_Generic_Pack_ChoosePanel:UpdateHudListNav()
 end
+
 function WBP_Generic_Pack_ChoosePanel:ChooseItem_Nav_Down()
   return self.WBP_InteractTipWidgetEsc
 end
+
 function WBP_Generic_Pack_ChoosePanel:Destruct()
   self:Reset()
 end
+
 return WBP_Generic_Pack_ChoosePanel

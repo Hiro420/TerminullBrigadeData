@@ -49,26 +49,26 @@ local mall_tbpaymentmallcurrency = {
   },
   [9] = {
     ID = 9,
-    Quantity = 680,
-    PresentedContentLocMeta = NSLOCTEXT("mall_TBPaymentMallCurrency", "PresentedContent_9", "<Topup_Word>\233\162\157\229\164\150\232\181\160\233\128\129</>  <img id=\"PureData\" width=\"30\" height=\"30\"></><Topup_Num>20</>"),
+    Quantity = 600,
+    PresentedContentLocMeta = NSLOCTEXT("mall_TBPaymentMallCurrency", "PresentedContent_9", "<Topup_Word>\233\162\157\229\164\150\232\181\160\233\128\129</>  <img id=\"PureData\" width=\"30\" height=\"30\"></><Topup_Num>15</>"),
     Comment = ""
   },
   [10] = {
     ID = 10,
-    Quantity = 1180,
-    PresentedContentLocMeta = NSLOCTEXT("mall_TBPaymentMallCurrency", "PresentedContent_10", "<Topup_Word>\233\162\157\229\164\150\232\181\160\233\128\129</>  <img id=\"PureData\" width=\"30\" height=\"30\"></><Topup_Num>100</>"),
+    Quantity = 1500,
+    PresentedContentLocMeta = NSLOCTEXT("mall_TBPaymentMallCurrency", "PresentedContent_10", "<Topup_Word>\233\162\157\229\164\150\232\181\160\233\128\129</>  <img id=\"PureData\" width=\"30\" height=\"30\"></><Topup_Num>120</>"),
     Comment = ""
   },
   [11] = {
     ID = 11,
-    Quantity = 3280,
-    PresentedContentLocMeta = NSLOCTEXT("mall_TBPaymentMallCurrency", "PresentedContent_11", "<Topup_Word>\233\162\157\229\164\150\232\181\160\233\128\129</>  <img id=\"PureData\" width=\"30\" height=\"30\"></><Topup_Num>370</>"),
+    Quantity = 3000,
+    PresentedContentLocMeta = NSLOCTEXT("mall_TBPaymentMallCurrency", "PresentedContent_11", "<Topup_Word>\233\162\157\229\164\150\232\181\160\233\128\129</>  <img id=\"PureData\" width=\"30\" height=\"30\"></><Topup_Num>350</>"),
     Comment = ""
   },
   [12] = {
     ID = 12,
-    Quantity = 5980,
-    PresentedContentLocMeta = NSLOCTEXT("mall_TBPaymentMallCurrency", "PresentedContent_12", "<Topup_Word>\233\162\157\229\164\150\232\181\160\233\128\129</>  <img id=\"PureData\" width=\"30\" height=\"30\"></><Topup_Num>870</>"),
+    Quantity = 6000,
+    PresentedContentLocMeta = NSLOCTEXT("mall_TBPaymentMallCurrency", "PresentedContent_12", "<Topup_Word>\233\162\157\229\164\150\232\181\160\233\128\129</>  <img id=\"PureData\" width=\"30\" height=\"30\"></><Topup_Num>850</>"),
     Comment = ""
   }
 }

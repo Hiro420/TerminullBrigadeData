@@ -6,6 +6,7 @@ local WBP_PuzzleDevelopView = Class(ViewBase)
 local PuzzleData = require("Modules.Puzzle.PuzzleData")
 local PuzzleHandler = require("Protocol.Puzzle.PuzzleHandler")
 local EToggleView = {Upgrade = 1, Reset = 2}
+
 function WBP_PuzzleDevelopView:BindClickHandler()
   self.CheckBox_DetailInfo.OnCheckStateChanged:Add(self, self.BindOnDetailListCheckStateChanged)
   self.Btn_Filter.OnClicked:Add(self, self.BindOnFilterButtonClicked)
@@ -14,6 +15,7 @@ function WBP_PuzzleDevelopView:BindClickHandler()
   self.Btn_Reset.OnMainButtonClicked:Add(self, self.BindOnResetButtonClicked)
   self.Btn_Level.OnClicked:Add(self, self.BindOnExpandLevelButtonClicked)
 end
+
 function WBP_PuzzleDevelopView:UnBindClickHandler()
   self.CheckBox_DetailInfo.OnCheckStateChanged:Remove(self, self.BindOnDetailListCheckStateChanged)
   self.Btn_Filter.OnClicked:Remove(self, self.BindOnFilterButtonClicked)
@@ -22,14 +24,17 @@ function WBP_PuzzleDevelopView:UnBindClickHandler()
   self.Btn_Reset.OnMainButtonClicked:Remove(self, self.BindOnResetButtonClicked)
   self.Btn_Level.OnClicked:Remove(self, self.BindOnExpandLevelButtonClicked)
 end
+
 function WBP_PuzzleDevelopView:OnInit()
   self.DataBindTable = {}
   self.ViewModel = UIModelMgr:Get("PuzzleDevelopViewModel")
   self:BindClickHandler()
 end
+
 function WBP_PuzzleDevelopView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_PuzzleDevelopView:OnShow(CurSelectedPuzzleId)
   self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
   self.ViewModel:SetCurSelectPuzzleId(CurSelectedPuzzleId)
@@ -55,13 +60,16 @@ function WBP_PuzzleDevelopView:OnShow(CurSelectedPuzzleId)
   end
   UpdateVisibility(self.WBP_PuzzleFilterView, false)
 end
+
 function WBP_PuzzleDevelopView:InitNum(...)
   local AllPackageInfo = PuzzleData:GetAllPuzzlePackageInfo()
   self.Txt_CurHaveNum:SetText(table.count(AllPackageInfo))
 end
+
 function WBP_PuzzleDevelopView:InitSortRuleComboBox(...)
   self.WBP_PuzzleSortRuleComboBox:Show(self)
 end
+
 function WBP_PuzzleDevelopView:RefreshPuzzleItemList()
   self.RGTileViewPuzzleList:RecyleAllData()
   local DataObjList = {}
@@ -126,6 +134,7 @@ function WBP_PuzzleDevelopView:RefreshPuzzleItemList()
   end
   self:InitNum()
 end
+
 function WBP_PuzzleDevelopView:RefreshFilterIconStatus(...)
   local FilterSelectList = self.ViewModel:GetPuzzleFilterSelectStatus()
   local IsSelect = false
@@ -141,6 +150,7 @@ function WBP_PuzzleDevelopView:RefreshFilterIconStatus(...)
     self.RGStateController_Filter:ChangeStatus("NoFilter")
   end
 end
+
 function WBP_PuzzleDevelopView:BindOnDetailListCheckStateChanged(IsChecked)
   self.ViewModel:SetIsShowPuzzleDetailList(IsChecked)
   local TargetEntrySize
@@ -154,6 +164,7 @@ function WBP_PuzzleDevelopView:BindOnDetailListCheckStateChanged(IsChecked)
   self.RGTileViewPuzzleList:RequestRefresh()
   EventSystem.Invoke(EventDef.Puzzle.UpdatePuzzleListStyle)
 end
+
 function WBP_PuzzleDevelopView:BindOnFilterButtonClicked()
   if self.WBP_PuzzleFilterView:IsVisible() then
     self.WBP_PuzzleFilterView:Hide()
@@ -162,6 +173,7 @@ function WBP_PuzzleDevelopView:BindOnFilterButtonClicked()
     self.WBP_PuzzleFilterView:Show(self.ViewModel)
   end
 end
+
 function WBP_PuzzleDevelopView:BindOnMenuCheckStateChanged(ToggleId)
   local LastToggleId = self.CurToggleId
   self.CurToggleId = ToggleId
@@ -177,6 +189,7 @@ function WBP_PuzzleDevelopView:BindOnMenuCheckStateChanged(ToggleId)
     self.WBP_PuzzleDevelopInfoItem:PlaySwitchAnim()
   end
 end
+
 function WBP_PuzzleDevelopView:RefreshOperateInfo(...)
   local AllPackageInfo = PuzzleData:GetAllPuzzlePackageInfo()
   if next(AllPackageInfo) == nil then
@@ -188,6 +201,7 @@ function WBP_PuzzleDevelopView:RefreshOperateInfo(...)
     self:RefreshResetInfo()
   end
 end
+
 function WBP_PuzzleDevelopView:RefreshUpgradeInfo(...)
   local CurSelectedPuzzleId = self.ViewModel:GetCurSelectPuzzleId()
   local PackageInfo = PuzzleData:GetPuzzlePackageInfo(self.ViewModel:GetCurSelectPuzzleId())
@@ -223,11 +237,13 @@ function WBP_PuzzleDevelopView:RefreshUpgradeInfo(...)
   local Level = PackageInfo.level
   EventSystem.Invoke(EventDef.Puzzle.OnChangePuzzleUpgradeLevelSelected, math.min(Level + 1, self.CurSelectedMaxLevel))
 end
+
 function WBP_PuzzleDevelopView:RefreshResetInfo(...)
   local PuzzleId = self.ViewModel:GetCurSelectPuzzleId()
   self.WBP_PuzzleDevelopInfoItem:Show(PuzzleId, 0)
   self:UpdateResetButtonStatus()
 end
+
 function WBP_PuzzleDevelopView:UpdateResetButtonStatus(...)
   local PuzzleId = self.ViewModel:GetCurSelectPuzzleId()
   local PackageInfo = PuzzleData:GetPuzzlePackageInfo(PuzzleId)
@@ -263,6 +279,7 @@ function WBP_PuzzleDevelopView:UpdateResetButtonStatus(...)
     end
   end
 end
+
 function WBP_PuzzleDevelopView:BindOnUpgradeButtonClicked(...)
   local PackageInfo = PuzzleData:GetPuzzlePackageInfo(self.ViewModel:GetCurSelectPuzzleId())
   if PackageInfo.level >= self.CurSelectedMaxLevel then
@@ -276,6 +293,7 @@ function WBP_PuzzleDevelopView:BindOnUpgradeButtonClicked(...)
   end
   PuzzleHandler:RequestUpgradePuzzleToServer(self.ViewModel:GetCurSelectPuzzleId(), self.CurSelectedLevel)
 end
+
 function WBP_PuzzleDevelopView:BindOnResetButtonClicked(...)
   local PuzzleId = self.ViewModel:GetCurSelectPuzzleId()
   local PackageInfo = PuzzleData:GetPuzzlePackageInfo(PuzzleId)
@@ -309,13 +327,16 @@ function WBP_PuzzleDevelopView:BindOnResetButtonClicked(...)
     end
   end
 end
+
 function WBP_PuzzleDevelopView:BindOnExpandLevelButtonClicked(...)
   UpdateVisibility(self.SizeBox_ExpandList, not self.SizeBox_ExpandList:IsVisible())
 end
+
 function WBP_PuzzleDevelopView:BindOnSortRuleSelectionChanged(CurSelectedIndex)
   self.ViewModel:SetPuzzleSortRule(CurSelectedIndex)
   self:RefreshPuzzleItemList()
 end
+
 function WBP_PuzzleDevelopView:BindOnUpdatePuzzleItemHoverStatus(IsHover, PuzzleId, IsPuzzleBoard)
   if IsHover then
     self.HoveredPuzzleId = PuzzleId
@@ -336,6 +357,7 @@ function WBP_PuzzleDevelopView:BindOnUpdatePuzzleItemHoverStatus(IsHover, Puzzle
     end
   end
 end
+
 function WBP_PuzzleDevelopView:BindOnPuzzleItemSelected(PuzzleId)
   local ResourceId = PuzzleData:GetPuzzleResourceIdByUid(PuzzleId)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, ResourceId)
@@ -376,6 +398,7 @@ function WBP_PuzzleDevelopView:BindOnPuzzleItemSelected(PuzzleId)
   self.CurSelectedMaxLevel = self.ViewModel:GetMaxLevelByQuality(RowInfo.Rare)
   self:RefreshOperateInfo()
 end
+
 function WBP_PuzzleDevelopView:BindOnChangePuzzleUpgradeLevelSelected(TargetLevel)
   UpdateVisibility(self.SizeBox_ExpandList, false)
   self.WBP_PuzzleDevelopInfoItem:Show(self.ViewModel:GetCurSelectPuzzleId(), TargetLevel)
@@ -391,6 +414,7 @@ function WBP_PuzzleDevelopView:BindOnChangePuzzleUpgradeLevelSelected(TargetLeve
   self.Txt_CurSelectLevel:SetText(LevelTxt)
   self:RefreshUpgradeButtonStatus()
 end
+
 function WBP_PuzzleDevelopView:RefreshUpgradeResouceStatus(...)
   local CurPuzzleId = self.ViewModel:GetCurSelectPuzzleId()
   local LevelInfo = self.ViewModel:GetLevelInfoByQuality(self.CurSelectedPuzzleRare)
@@ -428,6 +452,7 @@ function WBP_PuzzleDevelopView:RefreshUpgradeResouceStatus(...)
   end
   HideOtherItem(self.Horizontal_ResourceList, Index, true)
 end
+
 function WBP_PuzzleDevelopView:RefreshUpgradeButtonStatus(...)
   local PackageInfo = PuzzleData:GetPuzzlePackageInfo(self.ViewModel:GetCurSelectPuzzleId())
   if PackageInfo.level >= self.CurSelectedMaxLevel then
@@ -442,6 +467,7 @@ function WBP_PuzzleDevelopView:RefreshUpgradeButtonStatus(...)
     end
   end
 end
+
 function WBP_PuzzleDevelopView:BindOnUpdatePuzzlePackageInfo(PuzzleIdList)
   if not PuzzleIdList or table.Contain(PuzzleIdList, self.HoveredPuzzleId) then
     local HoverWidget = self.ViewModel:GetPuzzleHoverWidget(self.HoveredPuzzleId)
@@ -459,15 +485,18 @@ function WBP_PuzzleDevelopView:BindOnUpdatePuzzlePackageInfo(PuzzleIdList)
     end
   end
 end
+
 function WBP_PuzzleDevelopView:BindOnUpdateResourceInfo(...)
   if self.CurToggleId == EToggleView.Upgrade then
     self:RefreshUpgradeResouceStatus()
     self:RefreshUpgradeButtonStatus()
   end
 end
+
 function WBP_PuzzleDevelopView:PlayUpgradeSuccessAnim(...)
   self.WBP_PuzzleDevelopInfoItem:PlayUpgradeSuccessAnim()
 end
+
 function WBP_PuzzleDevelopView:OnMouseButtonDown(MyGeometry, MouseEvent)
   if self.WBP_PuzzleFilterView:IsVisible() then
     self.WBP_PuzzleFilterView:Hide()
@@ -476,6 +505,7 @@ function WBP_PuzzleDevelopView:OnMouseButtonDown(MyGeometry, MouseEvent)
   self.WBP_PuzzleSortRuleComboBox:HideExpandList()
   return UE.UWidgetBlueprintLibrary.Unhandled()
 end
+
 function WBP_PuzzleDevelopView:OnHide()
   self.ViewModel:OnViewClose()
   self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -490,4 +520,5 @@ function WBP_PuzzleDevelopView:OnHide()
   EventSystem.RemoveListenerNew(EventDef.Puzzle.OnChangePuzzleUpgradeLevelSelected, self, self.BindOnChangePuzzleUpgradeLevelSelected)
   EventSystem.RemoveListenerNew(EventDef.Lobby.UpdateResourceInfo, self, self.BindOnUpdateResourceInfo)
 end
+
 return WBP_PuzzleDevelopView

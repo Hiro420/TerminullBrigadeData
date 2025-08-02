@@ -1,4 +1,5 @@
 local WBP_CustomKeyItem_C = UnLua.Class()
+
 function WBP_CustomKeyItem_C:Construct()
   self.InputKeySelector:SetTextBlockVisibility(UE.ESlateVisibility.Collapsed)
   self.InputKeySelector.OnKeySelected:Add(self, WBP_CustomKeyItem_C.BindOnKeySelected)
@@ -8,15 +9,19 @@ function WBP_CustomKeyItem_C:Construct()
   self.Btn_Main.OnHovered:Add(self, self.BindOnMainButtonHovered)
   self.Btn_Main.OnUnhovered:Add(self, self.BindOnMainButtonUnhovered)
 end
+
 function WBP_CustomKeyItem_C:BindOnMainButtonClicked()
   EventSystem.Invoke(EventDef.GameSettings.OnCustomKeyItemSelected, self.KeyRowName)
 end
+
 function WBP_CustomKeyItem_C:BindOnMainButtonHovered()
   self.HoveredPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_CustomKeyItem_C:BindOnMainButtonUnhovered()
   self.HoveredPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_CustomKeyItem_C:OnAddedToFocusPath(...)
   local IsFocus = self.IsFocus
   self.IsFocus = true
@@ -24,9 +29,11 @@ function WBP_CustomKeyItem_C:OnAddedToFocusPath(...)
     self.InputKeySelector:SetKeyboardFocus()
   end
 end
+
 function WBP_CustomKeyItem_C:OnRemovedFromFocusPath(...)
   self.IsFocus = false
 end
+
 function WBP_CustomKeyItem_C:InitInfo(RowName, InputType)
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.Img_KeySelectorBottom:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -68,6 +75,7 @@ function WBP_CustomKeyItem_C:InitInfo(RowName, InputType)
     EventSystem.AddListener(self, EventDef.GameSettings.OnKeyChanged, self.BindOnKeyChanged)
   end
 end
+
 function WBP_CustomKeyItem_C:UpdateOriginSelectedKey()
   if self.CanChange then
     self.OriginSelectedKey = LogicGameSetting.GetCurPlayerMappableKey(self.KeyRowName, self.InputType)
@@ -82,10 +90,12 @@ function WBP_CustomKeyItem_C:UpdateOriginSelectedKey()
     self:SetKeyInfo()
   end
 end
+
 function WBP_CustomKeyItem_C:SetKeyInfo(...)
   self:SetKeyNameDisplayInfo()
   self:ChangeEmptyFlagVis()
 end
+
 function WBP_CustomKeyItem_C:BindOnKeySelected(SelectedKey)
   if self.InputType == UE.ECommonInputType.Gamepad then
     local CanNotChangeList = LogicGameSetting.GetGamepadCanNotChangeKeyNameList()
@@ -108,12 +118,14 @@ function WBP_CustomKeyItem_C:BindOnKeySelected(SelectedKey)
   end
   EventSystem.Invoke(EventDef.GameSettings.OnCustomKeySelected, self.KeyRowName, SelectedKey.Key.KeyName, self.InputType)
 end
+
 function WBP_CustomKeyItem_C:BindOnKeyChanged(ChangedKeyRowNameList)
   if table.Contain(ChangedKeyRowNameList, self.KeyRowName) then
     self:UpdateOriginSelectedKey()
     UpdateVisibility(self.Img_KeyChangedFlag, false)
   end
 end
+
 function WBP_CustomKeyItem_C:ChangeEmptyFlagVis()
   local CurSelectedKey = self.InputKeySelector.SelectedKey.Key
   if not UE.UKismetInputLibrary.Key_IsValid(CurSelectedKey) then
@@ -122,6 +134,7 @@ function WBP_CustomKeyItem_C:ChangeEmptyFlagVis()
     self.Img_EmptyFlag:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_CustomKeyItem_C:BindOnIsSelectingKeyChanged()
   self:SetKeyNameDisplayInfo()
   if self.InputKeySelector:GetIsSelectingKey() then
@@ -136,6 +149,7 @@ function WBP_CustomKeyItem_C:BindOnIsSelectingKeyChanged()
     UpdateVisibility(self.Img_KeyBG, true)
   end
 end
+
 function WBP_CustomKeyItem_C:SetKeyNameDisplayInfo()
   UpdateVisibility(self.Overlay_SecondKey, false)
   if self.CanChange then
@@ -179,6 +193,7 @@ function WBP_CustomKeyItem_C:SetKeyNameDisplayInfo()
     end
   end
 end
+
 function WBP_CustomKeyItem_C:SetKeyDisplay(KeyRowName, KeyTextPanel, KeyIconPanel, KeyIconImg, KeyTextBlock)
   local KeyDisplayInfo, IsIcon = LogicGameSetting.GetCurSelectedKeyNameByKeyRowName(KeyRowName, nil, self.InputType)
   if IsIcon then
@@ -191,6 +206,7 @@ function WBP_CustomKeyItem_C:SetKeyDisplay(KeyRowName, KeyTextPanel, KeyIconPane
     KeyTextBlock:SetText(KeyDisplayInfo)
   end
 end
+
 function WBP_CustomKeyItem_C:BindOnEscapeKeySelected()
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGWaveWindowManager:StaticClass())
   if not WaveWindowManager then
@@ -198,6 +214,7 @@ function WBP_CustomKeyItem_C:BindOnEscapeKeySelected()
   end
   WaveWindowManager:ShowWaveWindow(1093)
 end
+
 function WBP_CustomKeyItem_C:BindOnCustomKeySelected(KeyRowName, KeyName, InputType)
   if InputType ~= self.InputType then
     return
@@ -213,19 +230,23 @@ function WBP_CustomKeyItem_C:BindOnCustomKeySelected(KeyRowName, KeyName, InputT
     ShowWaveWindow(self.KeyConflictTipId)
   end
 end
+
 function WBP_CustomKeyItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   self:RemoveBindEventListener()
   self.IsFocus = false
 end
+
 function WBP_CustomKeyItem_C:RemoveBindEventListener()
   EventSystem.RemoveListener(EventDef.GameSettings.OnCustomKeySelected, self.BindOnCustomKeySelected, self)
   EventSystem.RemoveListener(EventDef.GameSettings.OnKeyChanged, self.BindOnKeyChanged, self)
 end
+
 function WBP_CustomKeyItem_C:Destruct()
   self.InputKeySelector.OnKeySelected:Remove(self, WBP_CustomKeyItem_C.BindOnKeySelected)
   self.InputKeySelector.OnIsSelectingKeyChanged:Remove(self, WBP_CustomKeyItem_C.BindOnIsSelectingKeyChanged)
   self.InputKeySelector.OnEscapeKeySelected:Remove(self, WBP_CustomKeyItem_C.BindOnEscapeKeySelected)
   self:RemoveBindEventListener()
 end
+
 return WBP_CustomKeyItem_C

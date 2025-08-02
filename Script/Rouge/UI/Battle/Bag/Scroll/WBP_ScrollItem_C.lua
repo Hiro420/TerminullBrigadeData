@@ -1,8 +1,10 @@
 local WBP_ScrollItem_C = UnLua.Class()
 local ScrollSetTagPath = "/Game/Rouge/UI/Battle/Bag/Scroll/WBP_ScrollSetTag.WBP_ScrollSetTag_C"
+
 function WBP_ScrollItem_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_ScrollItem_C:InitScrollItem(AttributeModifyId, UpdateScrollTips, ParentView, Index, bIsFromMarkTips, bIsNotShowName)
   self.UpdateScrollTips = UpdateScrollTips
   self.ParentView = ParentView
@@ -49,27 +51,33 @@ function WBP_ScrollItem_C:InitScrollItem(AttributeModifyId, UpdateScrollTips, Pa
     HideOtherItem(self.ScrollBoxScrollSetTag, Index)
   end
 end
+
 function WBP_ScrollItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   if self.UpdateScrollTips then
     self:UpdateHighlight(true)
     self.UpdateScrollTips(self.ParentView, true, self.AttributeModifyId, self.Index, self)
   end
 end
+
 function WBP_ScrollItem_C:OnMouseLeave(MouseEvent)
   if self.UpdateScrollTips then
     self:UpdateHighlight(false)
     self.UpdateScrollTips(self.ParentView, false, self.AttributeModifyId, self.Index, self)
   end
 end
+
 function WBP_ScrollItem_C:UpdateHighlight(bIsHighlight)
   UpdateVisibility(self.URGImageHighlight, bIsHighlight)
 end
+
 function WBP_ScrollItem_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_ScrollItem_C:Destruct()
   self.Overridden.Destruct(self)
   self.UpdateScrollTips = nil
   self.ParentView = nil
 end
+
 return WBP_ScrollItem_C

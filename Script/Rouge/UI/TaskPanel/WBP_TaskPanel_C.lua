@@ -1,4 +1,5 @@
 local WBP_TaskPanel_C = UnLua.Class()
+
 function WBP_TaskPanel_C:Construct()
   self.HaveTask = false
   ListenObjectMessage(nil, GMP.MSG_TaskSystem_UpdateTask_FromHall, self, self.UpdateTaskInfoByHall)
@@ -20,10 +21,12 @@ function WBP_TaskPanel_C:Construct()
     }, 3.1, false)
   end
 end
+
 function WBP_TaskPanel_C:Destruct()
   LogicTaskPanel.ClearUp()
   EventSystem.RemoveListenerNew(EventDef.Task.UpdateCustomTask, self, self.OnUpdateCustomTask)
 end
+
 function WBP_TaskPanel_C:FoldList()
   if not self.HaveTask then
     return
@@ -35,12 +38,15 @@ function WBP_TaskPanel_C:FoldList()
   end
   self.bFold = not self.bFold
 end
+
 function WBP_TaskPanel_C:UpdateTaskInfoByHall(SyncData)
   self:UpdateTaskInfo(SyncData.Tasks, true)
 end
+
 function WBP_TaskPanel_C:UpdateTaskInfoByGameplay(SyncData)
   self:UpdateTaskInfo(SyncData.Tasks, false)
 end
+
 function WBP_TaskPanel_C:UpdateTaskInfo(TaskInfo, bHall)
   LogicTaskPanel.UpdateDifferenceData(TaskInfo:ToTable(), bHall)
   if not UE.RGUtil.IsUObjectValid(self) then
@@ -49,10 +55,12 @@ function WBP_TaskPanel_C:UpdateTaskInfo(TaskInfo, bHall)
   self:UpdateTaskPanel()
   self.WBP_TaskPanel_Fold.Text_TitleCount:SetText(self:GetTaskNum())
 end
+
 function WBP_TaskPanel_C:OnUpdateCustomTask()
   self:UpdateTaskPanel()
   self.WBP_TaskPanel_Fold.Text_TitleCount:SetText(self:GetTaskNum())
 end
+
 function WBP_TaskPanel_C:UpdateTaskPanel()
   for index, TaskValue in ipairs(LogicTaskPanel.TaskInfo) do
     local ItemPanel = self.CurTaskPanel[TaskValue.EventId]
@@ -82,6 +90,7 @@ function WBP_TaskPanel_C:UpdateTaskPanel()
   self.HaveTask = self:GetTaskNum() > 1
   UpdateVisibility(self.WBP_InteractTipWidget, self.HaveTask)
 end
+
 function WBP_TaskPanel_C:GetTaskNum()
   local Index = 0
   for TaskId, TaskValue in pairs(LogicTaskPanel.TaskInfo) do
@@ -91,4 +100,5 @@ function WBP_TaskPanel_C:GetTaskNum()
   end
   return Index
 end
+
 return WBP_TaskPanel_C

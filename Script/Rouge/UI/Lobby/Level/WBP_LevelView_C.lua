@@ -3,8 +3,10 @@ local WBP_LevelView_C = UnLua.Class(ViewBase)
 local TotalLevelAniDuration = 2
 local LevelNumFormat = "<Img id=\"%s\" width=\"70\" height=\"90\" stretch=\"ScaleToFitY\"/>"
 local ProgressHuangOffset = 0.05
+
 function WBP_LevelView_C:Construct()
 end
+
 function WBP_LevelView_C:OnShow(...)
   local params = {
     ...
@@ -17,6 +19,7 @@ function WBP_LevelView_C:OnShow(...)
     self:InitInfo(oldLv, newLv, oldExp, newExp)
   end
 end
+
 function WBP_LevelView_C:InitInfo(OldLevel, TargetLevel, OldExp, NewExp)
   self.bNeedHideSelf = false
   self:StopAllAnimations()
@@ -35,11 +38,13 @@ function WBP_LevelView_C:InitInfo(OldLevel, TargetLevel, OldExp, NewExp)
   self:PlayAnimation(self.ani_grage_in)
   LogicAudio.OnLevelUpAppear()
 end
+
 function WBP_LevelView_C:BindFadeOutFinished()
   if self.bNeedHideSelf then
     Logic_Level.HideSelf()
   end
 end
+
 function WBP_LevelView_C:GetLevelStr(Level)
   local LevelStr = tostring(Level)
   local LevelText = ""
@@ -48,4 +53,5 @@ function WBP_LevelView_C:GetLevelStr(Level)
   end
   return LevelText
 end
+
 return WBP_LevelView_C

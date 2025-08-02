@@ -1,10 +1,12 @@
 local BeginnerGuideData = require("Modules.Beginner.BeginnerGuideData")
 local WBP_MainTask_RequestConversation_C = UnLua.Class()
+
 function WBP_MainTask_RequestConversation_C:Construct()
   self.NPCDynamicMaterial = self.Image_NPC:GetDynamicMaterial()
   self.BtnOpenDialogue.OnClicked:Add(self, self.BindOpenDialogue)
   BeginnerGuideData:UpdateWBP("WBP_MainTask_RequestConversation", self)
 end
+
 function WBP_MainTask_RequestConversation_C:OnAnimationFinished(Animation)
   if Animation == self.ani_out then
     EventSystem.Invoke(EventDef.Lobby.OnInviteDialogue, false, self.RequestConversationId)
@@ -12,6 +14,7 @@ function WBP_MainTask_RequestConversation_C:OnAnimationFinished(Animation)
     EventSystem.Invoke(EventDef.BeginnerGuide.OnMainTaskDialogueShow)
   end
 end
+
 function WBP_MainTask_RequestConversation_C:InitRequestConversation(Id)
   self.RequestConversationId = Id
   local Result, RowInfo = GetRowData("MainTaskDialogue", self.RequestConversationId)
@@ -26,9 +29,11 @@ function WBP_MainTask_RequestConversation_C:InitRequestConversation(Id)
   end
   self:PlayAnimation(self.ani_in, 0)
 end
+
 function WBP_MainTask_RequestConversation_C:BindOpenDialogue()
   self:PlayAnimation(self.ani_out)
 end
+
 function WBP_MainTask_RequestConversation_C:RefreshList()
   self.List:ClearChildren()
   local ChildWidgetClass = UE.UClass.Load("/Game/Rouge/UI/MainTask/WBP_MainTask_RequestConversation_Item.WBP_MainTask_RequestConversation_Item_C")
@@ -51,4 +56,5 @@ function WBP_MainTask_RequestConversation_C:RefreshList()
     end
   end
 end
+
 return WBP_MainTask_RequestConversation_C

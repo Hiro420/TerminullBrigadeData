@@ -1,7 +1,9 @@
 local WBP_WeaponDisplayInfo_C = UnLua.Class()
+
 function WBP_WeaponDisplayInfo_C:Destruct()
   self:BindAccessoryChange(false)
 end
+
 function WBP_WeaponDisplayInfo_C:InitInfo(Weapon, IsBag)
   self.IsBag = IsBag
   if Weapon then
@@ -14,6 +16,7 @@ function WBP_WeaponDisplayInfo_C:InitInfo(Weapon, IsBag)
   end
   self.CoreComp = self:GetOwningPlayerPawn():GetComponentByClass(UE.URGCoreComponent:StaticClass())
 end
+
 function WBP_WeaponDisplayInfo_C:InitBackGround(IsBag)
   if IsBag then
     self.Image_BackGround:SetVisibility(UE.ESlateVisibility.Hidden)
@@ -29,6 +32,7 @@ function WBP_WeaponDisplayInfo_C:InitBackGround(IsBag)
     self.Image_BackGround:SetBrush(brush)
   end
 end
+
 function WBP_WeaponDisplayInfo_C:InitWeaponInfo()
   self:SetInfoFromTable()
   self:InitRarity()
@@ -38,6 +42,7 @@ function WBP_WeaponDisplayInfo_C:InitWeaponInfo()
   self:InitNormalAttributeInfo()
   self:InitInscriptionInfo()
 end
+
 function WBP_WeaponDisplayInfo_C:InitNormalAttributeInfo()
   self.VerticalBox_Attribute:ClearChildren()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -62,6 +67,7 @@ function WBP_WeaponDisplayInfo_C:InitNormalAttributeInfo()
     end
   end
 end
+
 function WBP_WeaponDisplayInfo_C:InitElement()
   if self.Weapon then
     self.TextBlock_ElementValue:SetText(math.floor(self.Weapon:GetMainElementChance() * 100))
@@ -74,6 +80,7 @@ function WBP_WeaponDisplayInfo_C:InitElement()
     end
   end
 end
+
 function WBP_WeaponDisplayInfo_C:InitCoreAttributeInfo()
   self.VerticalBox_MainAttribute:ClearChildren()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -97,6 +104,7 @@ function WBP_WeaponDisplayInfo_C:InitCoreAttributeInfo()
     end
   end
 end
+
 function WBP_WeaponDisplayInfo_C:InitInscriptionInfo()
   self.ScrollBox_Inscription:ClearChildren()
   if self.Weapon then
@@ -131,6 +139,7 @@ function WBP_WeaponDisplayInfo_C:InitInscriptionInfo()
     end
   end
 end
+
 function WBP_WeaponDisplayInfo_C:InitAccessoryIcon()
   local accessoryComponent = self:GetAccessoryComp()
   if accessoryComponent then
@@ -146,6 +155,7 @@ function WBP_WeaponDisplayInfo_C:InitAccessoryIcon()
     end
   end
 end
+
 function WBP_WeaponDisplayInfo_C:InitRarity()
   if self.Weapon then
     local weaponLevel = self.Weapon:GetWeaponLevel()
@@ -154,6 +164,7 @@ function WBP_WeaponDisplayInfo_C:InitRarity()
     end
   end
 end
+
 function WBP_WeaponDisplayInfo_C:InitTitleTextSize(IsBag)
   local textSize
   if IsBag then
@@ -176,6 +187,7 @@ function WBP_WeaponDisplayInfo_C:InitTitleTextSize(IsBag)
     end
   end
 end
+
 function WBP_WeaponDisplayInfo_C:SetInfoFromTable()
   if self.Weapon then
     local hasBarrel, articleId = self:HasBarrel()
@@ -211,29 +223,34 @@ function WBP_WeaponDisplayInfo_C:SetInfoFromTable()
     end
   end
 end
+
 function WBP_WeaponDisplayInfo_C:SetDamageText()
   if self.Weapon then
     local damageString = tostring(self.Weapon:GetWeaponLevel() * 15 + 100)
     self.TextBlock_Damage:SetText("\228\188\164\229\174\179\231\179\187\230\149\176+" .. damageString .. "%")
   end
 end
+
 function WBP_WeaponDisplayInfo_C:GetAccessoryInfo(ArticleId)
   local accessoryManager = UE.URGAccessoryStatics.GetAccessoryManager(self)
   if accessoryManager then
     return accessoryManager:GetAccessory(ArticleId).InnerData
   end
 end
+
 function WBP_WeaponDisplayInfo_C:GetAccessoryComp()
   if self.Weapon then
     return self.Weapon.AccessoryComponent
   end
 end
+
 function WBP_WeaponDisplayInfo_C:HasBarrel()
   local accessoryComponent = self:GetAccessoryComp()
   if accessoryComponent then
     return accessoryComponent:HasAccessoryOfType(UE.ERGAccessoryType.EAT_Barrel), accessoryComponent:GetAccessoryByType(UE.ERGAccessoryType.EAT_Barrel)
   end
 end
+
 function WBP_WeaponDisplayInfo_C:GetWeaponAttributeValue(InAttributeName)
   local stringArray = UE.TArray(UE.FString)
   stringArray = UE.UKismetStringLibrary.ParseIntoArray(InAttributeName, ".", false)
@@ -253,6 +270,7 @@ function WBP_WeaponDisplayInfo_C:GetWeaponAttributeValue(InAttributeName)
     end
   end
 end
+
 function WBP_WeaponDisplayInfo_C:BindAccessoryChange(Bind)
   local accessoryComponent = self:GetAccessoryComp()
   if accessoryComponent then
@@ -263,9 +281,11 @@ function WBP_WeaponDisplayInfo_C:BindAccessoryChange(Bind)
     end
   end
 end
+
 function WBP_WeaponDisplayInfo_C:OnAccessoryChanged()
   self:RefreshWeaponInfo()
 end
+
 function WBP_WeaponDisplayInfo_C:RefreshWeaponInfo()
   self:InitTitleTextSize(self.IsBag)
   self:InitBackGround(self.IsBag)
@@ -276,4 +296,5 @@ function WBP_WeaponDisplayInfo_C:RefreshWeaponInfo()
     self:InitAccessoryIcon()
   end
 end
+
 return WBP_WeaponDisplayInfo_C

@@ -4,10 +4,13 @@ local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local RedDotData = require("Modules.RedDot.RedDotData")
 local RecruitPlayerInfoItem = UnLua.Class()
+
 function RecruitPlayerInfoItem:Construct()
 end
+
 function RecruitPlayerInfoItem:Destruct()
 end
+
 function RecruitPlayerInfoItem:InitTeamItemInfo(Portrait, name, level, roleid, parent)
   self.RoleId = roleid
   self.Parent = parent
@@ -18,6 +21,7 @@ function RecruitPlayerInfoItem:InitTeamItemInfo(Portrait, name, level, roleid, p
     self.PlatformIconPanel:UpdateChannelInfo(roleid)
   end
 end
+
 function RecruitPlayerInfoItem:SetIsEmpty(IsEmpty)
   self.IsEmpty = IsEmpty
   self.WBP_PlayerHeadIcon:SetIsShow(not IsEmpty)
@@ -26,13 +30,17 @@ function RecruitPlayerInfoItem:SetIsEmpty(IsEmpty)
     UpdateVisibility(self.PlatformIconPanel, false)
   end
 end
+
 function RecruitPlayerInfoItem:OnHovered_HeadIcon(IsHover)
   self.Parent:OnHovered_PlayerHead(IsHover, self.RoleId, self)
 end
+
 function RecruitPlayerInfoItem:Hide()
   UpdateVisibility(self, false)
 end
+
 function RecruitPlayerInfoItem:OnClicked_HeadIcon(MousePosition, SourceFrom)
   self.Parent:OnClicked_PlayerHead(MousePosition, SourceFrom, self.RoleId)
 end
+
 return RecruitPlayerInfoItem

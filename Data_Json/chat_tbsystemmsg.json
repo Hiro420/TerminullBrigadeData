@@ -1,0 +1,86 @@
+[
+  {
+    "ID": 1,
+    "Msg": "玩家{0}标记了一处藏品{1}",
+    "params": [
+      {
+        "id": 1,
+        "paramType": 4,
+        "desc": ""
+      },
+      {
+        "id": 2,
+        "paramType": 3,
+        "desc": ""
+      }
+    ],
+    "SystemChatShow": 2,
+    "Desc": "玩家A新增了一个标记，根据标记类型，区分不同的消息内容"
+  },
+  {
+    "ID": 2,
+    "Msg": "玩家{0}对玩家{1}说，想要藏品{2}",
+    "params": [
+      {
+        "id": 1,
+        "paramType": 4,
+        "desc": ""
+      },
+      {
+        "id": 2,
+        "paramType": 4,
+        "desc": ""
+      },
+      {
+        "id": 3,
+        "paramType": 3,
+        "desc": ""
+      }
+    ],
+    "SystemChatShow": 2,
+    "Desc": "玩家A标记了其他队友的一个藏品"
+  },
+  {
+    "ID": 3,
+    "Msg": "请注意，即将开始服务器维护",
+    "params": [],
+    "SystemChatShow": 3,
+    "Desc": ""
+  },
+  {
+    "ID": 4,
+    "Msg": "恭喜玩家{0}开启{1}获得传家宝{2}!",
+    "params": [
+      {
+        "id": 1,
+        "paramType": 4,
+        "desc": ""
+      },
+      {
+        "id": 2,
+        "paramType": 5,
+        "desc": ""
+      },
+      {
+        "id": 3,
+        "paramType": 3,
+        "desc": ""
+      }
+    ],
+    "SystemChatShow": 1,
+    "Desc": ""
+  },
+  {
+    "ID": 5,
+    "Msg": "您已游玩{0}小时。长时间玩游戏会影响您的日常生活。",
+    "params": [
+      {
+        "id": 1,
+        "paramType": 6,
+        "desc": ""
+      }
+    ],
+    "SystemChatShow": 3,
+    "Desc": ""
+  }
+]

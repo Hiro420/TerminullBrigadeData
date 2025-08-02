@@ -1,5 +1,6 @@
 local WBP_RGPuzzleResetWaveWindow = UnLua.Class()
 local PuzzleData = require("Modules.Puzzle.PuzzleData")
+
 function WBP_RGPuzzleResetWaveWindow:Show(PuzzleIdList, IsNeedDecompose)
   local ResourceList = {}
   for index, PuzzleId in ipairs(PuzzleIdList) do
@@ -35,4 +36,5 @@ function WBP_RGPuzzleResetWaveWindow:Show(PuzzleIdList, IsNeedDecompose)
   end
   HideOtherItem(self.Horizontal_ItemList, Index, true)
 end
+
 return WBP_RGPuzzleResetWaveWindow

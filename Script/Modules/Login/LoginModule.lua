@@ -2,14 +2,18 @@ local LoginModule = LuaClass()
 local rapidjson = require("rapidjson")
 local LoginData = require("Modules.Login.LoginData")
 local RGUtil = UE.RGUtil
+
 function LoginModule:Ctor()
 end
+
 function LoginModule:OnInit()
   self:InitLoginSaveGame()
 end
+
 function LoginModule:OnStart()
   self:InitLastSelectServerName()
 end
+
 function LoginModule:InitLoginSaveGame()
   local SaveGameName = LoginData:GetLoginSavedGameName()
   if not UE.UGameplayStatics.DoesSaveGameExist(SaveGameName, 0) then
@@ -19,6 +23,7 @@ function LoginModule:InitLoginSaveGame()
     end
   end
 end
+
 function LoginModule:InitLastSelectServerName(...)
   local SaveGameName = LoginData:GetLoginSavedGameName()
   if not UE.UGameplayStatics.DoesSaveGameExist(SaveGameName, 0) then
@@ -35,6 +40,8 @@ function LoginModule:InitLastSelectServerName(...)
   print("LoginModule:InitLastSelectServerName", LoginSaveGame:GetLastSelectedServerName())
   HttpService:SetLastSelectedServerName(LoginSaveGame:GetLastSelectedServerName())
 end
+
 function LoginModule:OnShutdown()
 end
+
 return LoginModule

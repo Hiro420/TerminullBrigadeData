@@ -1,10 +1,13 @@
 local ChipFilterMainAttrItem = UnLua.Class()
+
 function ChipFilterMainAttrItem:Construct()
   self.BP_ButtonWithSoundSelect.OnClicked:Add(self, self.OnSelectClick)
 end
+
 function ChipFilterMainAttrItem:Destruct()
   self.BP_ButtonWithSoundSelect.OnClicked:Remove(self, self.OnSelectClick)
 end
+
 function ChipFilterMainAttrItem:InitChipFilterMainAttrItem(AttrId, Desc, bSelect, ParentView, idx)
   self.ParentView = ParentView
   self.bSelect = bSelect
@@ -19,12 +22,14 @@ function ChipFilterMainAttrItem:InitChipFilterMainAttrItem(AttrId, Desc, bSelect
     self.RGStateControllerSelect:ChangeStatus(ESelect.UnSelect)
   end
 end
+
 function ChipFilterMainAttrItem:Hide()
   UpdateVisibility(self, false)
   self.ParentView = nil
   self.bSelect = false
   self.AttrId = nil
 end
+
 function ChipFilterMainAttrItem:OnSelectClick()
   if self.ParentView then
     local operatorSucc = self.ParentView:SelectMainAttrFilter(not self.bSelect, self.AttrId)
@@ -40,10 +45,13 @@ function ChipFilterMainAttrItem:OnSelectClick()
     end
   end
 end
+
 function ChipFilterMainAttrItem:OnMouseEnter()
   self.RGStateControllerHover:ChangeStatus(EHover.Hover)
 end
+
 function ChipFilterMainAttrItem:OnMouseLeave()
   self.RGStateControllerHover:ChangeStatus(EHover.UnHover)
 end
+
 return ChipFilterMainAttrItem

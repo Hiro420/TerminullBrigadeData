@@ -16,6 +16,7 @@ local RefactorResourceVarList = {
   [EPuzzleRefactorType.Mutation] = "MutationCost",
   [EPuzzleRefactorType.SeniorMutation] = "SeniorMutationCost"
 }
+
 function WBP_PuzzleRefactorView:BindClickHandler()
   self.CheckBox_DetailInfo.OnCheckStateChanged:Add(self, self.BindOnDetailListCheckStateChanged)
   self.Btn_Filter.OnClicked:Add(self, self.BindOnFilterButtonClicked)
@@ -23,6 +24,7 @@ function WBP_PuzzleRefactorView:BindClickHandler()
   self.Btn_Refactor.OnMainButtonClicked:Add(self, self.BindOnRefactorButtonClicked)
   self.Btn_JumpToModeSelection.OnMainButtonClicked:Add(self, self.BindOnJumpToModeSelectionButtonClicked)
 end
+
 function WBP_PuzzleRefactorView:UnBindClickHandler()
   self.CheckBox_DetailInfo.OnCheckStateChanged:Remove(self, self.BindOnDetailListCheckStateChanged)
   self.Btn_Filter.OnClicked:Remove(self, self.BindOnFilterButtonClicked)
@@ -30,14 +32,17 @@ function WBP_PuzzleRefactorView:UnBindClickHandler()
   self.Btn_Refactor.OnMainButtonClicked:Remove(self, self.BindOnRefactorButtonClicked)
   self.Btn_JumpToModeSelection.OnMainButtonClicked:Remove(self, self.BindOnJumpToModeSelectionButtonClicked)
 end
+
 function WBP_PuzzleRefactorView:OnInit()
   self.DataBindTable = {}
   self.ViewModel = UIModelMgr:Get("PuzzleRefactorViewModel")
   self:BindClickHandler()
 end
+
 function WBP_PuzzleRefactorView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_PuzzleRefactorView:OnShow(CurSelectedPuzzleId)
   self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
   self.ViewModel:SetCurSelectPuzzleId(CurSelectedPuzzleId)
@@ -63,6 +68,7 @@ function WBP_PuzzleRefactorView:OnShow(CurSelectedPuzzleId)
   UpdateVisibility(self.WBP_PuzzleFilterView, false)
   UpdateVisibility(self.CanvasPanel_MatSelectPanel, false)
 end
+
 function WBP_PuzzleRefactorView:InitRefactorMatList()
   local Index = 1
   for k, ResourceId in pairs(self.RefactorResourceList) do
@@ -79,13 +85,16 @@ function WBP_PuzzleRefactorView:InitRefactorMatList()
   UpdateVisibility(self.Overlay_HasMat, 1 ~= Index)
   UpdateVisibility(self.Overlay_EmptyMat, 1 == Index)
 end
+
 function WBP_PuzzleRefactorView:InitNum(...)
   local AllPackageInfo = PuzzleData:GetAllPuzzlePackageInfo()
   self.Txt_CurHaveNum:SetText(table.count(AllPackageInfo))
 end
+
 function WBP_PuzzleRefactorView:InitSortRuleComboBox(...)
   self.WBP_PuzzleSortRuleComboBox:Show(self)
 end
+
 function WBP_PuzzleRefactorView:RefreshPuzzleItemList()
   self.RGTileViewPuzzleList:RecyleAllData()
   local DataObjList = {}
@@ -154,6 +163,7 @@ function WBP_PuzzleRefactorView:RefreshPuzzleItemList()
   end
   self:InitNum()
 end
+
 function WBP_PuzzleRefactorView:RefreshFilterIconStatus(...)
   local FilterSelectList = self.ViewModel:GetPuzzleFilterSelectStatus()
   local IsSelect = false
@@ -174,6 +184,7 @@ function WBP_PuzzleRefactorView:RefreshFilterIconStatus(...)
     self.RGStateController_Filter:ChangeStatus("NoFilter")
   end
 end
+
 function WBP_PuzzleRefactorView:BindOnDetailListCheckStateChanged(IsChecked)
   self.ViewModel:SetIsShowPuzzleDetailList(IsChecked)
   local TargetEntrySize
@@ -187,6 +198,7 @@ function WBP_PuzzleRefactorView:BindOnDetailListCheckStateChanged(IsChecked)
   self.RGTileViewPuzzleList:RequestRefresh()
   EventSystem.Invoke(EventDef.Puzzle.UpdatePuzzleListStyle)
 end
+
 function WBP_PuzzleRefactorView:BindOnFilterButtonClicked()
   if self.WBP_PuzzleFilterView:IsVisible() then
     self.WBP_PuzzleFilterView:Hide()
@@ -195,9 +207,11 @@ function WBP_PuzzleRefactorView:BindOnFilterButtonClicked()
     self.WBP_PuzzleFilterView:Show(self.ViewModel)
   end
 end
+
 function WBP_PuzzleRefactorView:BindOnSelectMatButtonClicked()
   UpdateVisibility(self.CanvasPanel_MatSelectPanel, not self.CanvasPanel_MatSelectPanel:IsVisible())
 end
+
 function WBP_PuzzleRefactorView:BindOnRefactorButtonClicked()
   if not self.CanClickRefactorButton then
     if 0 ~= self.RefactorButtonClickTipId then
@@ -290,6 +304,7 @@ function WBP_PuzzleRefactorView:BindOnRefactorButtonClicked()
     PuzzleHandler:RequestWashPuzzleShapeToServer(TargetPuzzleIdList)
   end
 end
+
 function WBP_PuzzleRefactorView:BindOnJumpToModeSelectionButtonClicked()
   local PuzzleDevelopMain = UIMgr:GetLuaFromActiveView(ViewID.UI_PuzzleDevelopMain)
   if PuzzleDevelopMain then
@@ -298,6 +313,7 @@ function WBP_PuzzleRefactorView:BindOnJumpToModeSelectionButtonClicked()
   UIMgr:Hide(ViewID.UI_DevelopMain, true)
   UIMgr:Show(ViewID.UI_MainModeSelection, true)
 end
+
 function WBP_PuzzleRefactorView:RefreshOperateInfo(...)
   local AllPackageInfo = PuzzleData:GetAllPuzzlePackageInfo()
   if next(AllPackageInfo) == nil then
@@ -306,10 +322,12 @@ function WBP_PuzzleRefactorView:RefreshOperateInfo(...)
   self.WBP_PuzzleDevelopInfoItem:Show(self.ViewModel:GetCurSelectPuzzleId())
   self:RefreshSelectRefactorResourceInfo()
 end
+
 function WBP_PuzzleRefactorView:BindOnSortRuleSelectionChanged(CurSelectedIndex)
   self.ViewModel:SetPuzzleSortRule(CurSelectedIndex)
   self:RefreshPuzzleItemList()
 end
+
 function WBP_PuzzleRefactorView:BindOnUpdatePuzzleItemHoverStatus(IsHover, PuzzleId, IsPuzzleBoard)
   if IsHover then
     self.HoveredPuzzleId = PuzzleId
@@ -330,6 +348,7 @@ function WBP_PuzzleRefactorView:BindOnUpdatePuzzleItemHoverStatus(IsHover, Puzzl
     end
   end
 end
+
 function WBP_PuzzleRefactorView:BindOnPuzzleItemSelected(PuzzleId)
   local ResourceId = PuzzleData:GetPuzzleResourceIdByUid(PuzzleId)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, ResourceId)
@@ -340,6 +359,7 @@ function WBP_PuzzleRefactorView:BindOnPuzzleItemSelected(PuzzleId)
   self:RefreshOperateInfo()
   self:UpdateMarkAreaVis()
 end
+
 function WBP_PuzzleRefactorView:RefreshPuzzleShape()
   self:PlayAnimation(self.Anim_Refactoring_Shape)
   local Size = self.BoardItemSize
@@ -374,6 +394,7 @@ function WBP_PuzzleRefactorView:RefreshPuzzleShape()
   end
   HideOtherItem(self.CanvasPanel_Puzzle, Index, true)
 end
+
 function WBP_PuzzleRefactorView:BindOnUpdatePuzzlePackageInfo(PuzzleIdList)
   if not PuzzleIdList or table.Contain(PuzzleIdList, self.HoveredPuzzleId) then
     local HoverWidget = self.ViewModel:GetPuzzleHoverWidget(self.HoveredPuzzleId)
@@ -385,17 +406,20 @@ function WBP_PuzzleRefactorView:BindOnUpdatePuzzlePackageInfo(PuzzleIdList)
     self:RefreshRefactorButtonStatus()
   end
 end
+
 function WBP_PuzzleRefactorView:BindOnUpdatePuzzleDetailInfo(PuzzleIdList)
   if table.Contain(PuzzleIdList, self.ViewModel:GetCurSelectPuzzleId()) then
     self.WBP_PuzzleDevelopInfoItem:Show(self.ViewModel:GetCurSelectPuzzleId())
   end
 end
+
 function WBP_PuzzleRefactorView:BindOnWashPuzzleSlotAmountSuccess(PuzzleIdList)
   if not table.Contain(PuzzleIdList, self.ViewModel:GetCurSelectPuzzleId()) then
     return
   end
   self:RefreshPuzzleShape()
 end
+
 function WBP_PuzzleRefactorView:BindOnUpdateResourceInfo(...)
   self:InitRefactorMatList()
   self:RefreshSelectRefactorResourceInfo()
@@ -404,12 +428,14 @@ function WBP_PuzzleRefactorView:BindOnUpdateResourceInfo(...)
     SingleItem:RefreshNum()
   end
 end
+
 function WBP_PuzzleRefactorView:BindOnPuzzleRefactorMaterialSelected(ResourceId)
   self.ViewModel:SetCurSelectResourceId(ResourceId)
   self:RefreshSelectRefactorResourceInfo()
   self:BindOnSelectMatButtonClicked()
   self:UpdateMarkAreaVis()
 end
+
 function WBP_PuzzleRefactorView:UpdateMarkAreaVis()
   local MarkAreaList = self.ViewModel:GetMarkAreaList()
   for SingleResourceId, ItemList in pairs(MarkAreaList) do
@@ -425,6 +451,7 @@ function WBP_PuzzleRefactorView:UpdateMarkAreaVis()
     end
   end
 end
+
 function WBP_PuzzleRefactorView:RefreshSelectRefactorResourceInfo()
   local CurSelectResourceId = self.ViewModel:GetCurSelectResourceId()
   UpdateVisibility(self.Txt_SelectResourceTip, nil ~= CurSelectResourceId)
@@ -455,6 +482,7 @@ function WBP_PuzzleRefactorView:RefreshSelectRefactorResourceInfo()
   self:RefreshCostResourceStatus()
   self:RefreshRefactorButtonStatus()
 end
+
 function WBP_PuzzleRefactorView:RefreshRefactorButtonStatus(...)
   local CurSelectResourceId = self.ViewModel:GetCurSelectResourceId()
   local CurSelectedPuzzleId = self.ViewModel:GetCurSelectPuzzleId()
@@ -524,6 +552,7 @@ function WBP_PuzzleRefactorView:RefreshRefactorButtonStatus(...)
     self.Btn_Refactor:SetContentText(self.NormalText)
   end
 end
+
 function WBP_PuzzleRefactorView:RefreshCostResourceStatus()
   self.HasEnoughResource = true
   if self.MainResourceCostInfo then
@@ -541,6 +570,7 @@ function WBP_PuzzleRefactorView:RefreshCostResourceStatus()
     end
   end
 end
+
 function WBP_PuzzleRefactorView:OnMouseButtonDown(MyGeometry, MouseEvent)
   if self.WBP_PuzzleFilterView:IsVisible() then
     self.WBP_PuzzleFilterView:Hide()
@@ -550,6 +580,7 @@ function WBP_PuzzleRefactorView:OnMouseButtonDown(MyGeometry, MouseEvent)
   self.WBP_PuzzleSortRuleComboBox:HideExpandList()
   return UE.UWidgetBlueprintLibrary.Unhandled()
 end
+
 function WBP_PuzzleRefactorView:OnHide()
   self.ViewModel:OnViewClose()
   self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -567,4 +598,5 @@ function WBP_PuzzleRefactorView:OnHide()
   EventSystem.RemoveListenerNew(EventDef.Puzzle.OnUpdatePuzzleDetailInfo, self, self.BindOnUpdatePuzzleDetailInfo)
   EventSystem.RemoveListenerNew(EventDef.Puzzle.OnWashPuzzleSlotAmountSuccess, self, self.BindOnWashPuzzleSlotAmountSuccess)
 end
+
 return WBP_PuzzleRefactorView

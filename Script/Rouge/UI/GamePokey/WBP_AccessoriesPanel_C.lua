@@ -1,11 +1,14 @@
 local WBP_AccessoriesPanel_C = UnLua.Class()
+
 function WBP_AccessoriesPanel_C:Construct()
   self.wbp_AccessoriesByTypeClass = UE.UClass.Load("/Game/Rouge/UI/GamePokey/WBP_AccessoriesByType.WBP_AccessoriesByType_C")
   self.Button_Selection.OnClicked:Add(self, WBP_AccessoriesPanel_C.OnClicked_Selection)
 end
+
 function WBP_AccessoriesPanel_C:LuaTick(InDeltaTime)
   self:SetBottomVisibility()
 end
+
 function WBP_AccessoriesPanel_C:GetPrimaryEquippedAccessory(Target, Type)
   if Target and self.GamePokey then
     local currentWeapon = self.GamePokey:GetCurrentWeapon(Target)
@@ -15,12 +18,14 @@ function WBP_AccessoriesPanel_C:GetPrimaryEquippedAccessory(Target, Type)
   end
   return false, nil
 end
+
 function WBP_AccessoriesPanel_C:GetChooseEquippedAccessory(Type)
   if self.GamePokey and self.GamePokey.ChooseGun then
     return self:GetAccessoryByWeapon(self.GamePokey.ChooseGun, Type)
   end
   return false, nil
 end
+
 function WBP_AccessoriesPanel_C:GetSecondEquippedAccessory(Target, Type)
   if Target and self.GamePokey and self.GamePokey.ChooseGun then
     local equipmentComponent = Target:GetComponentByClass(UE.URGEquipmentComponent:StaticClass())
@@ -36,6 +41,7 @@ function WBP_AccessoriesPanel_C:GetSecondEquippedAccessory(Target, Type)
   end
   return false, nil
 end
+
 function WBP_AccessoriesPanel_C:GetAccessoryByWeapon(Target, Type)
   if Target then
     local accessoryComponent = Target:GetComponentByClass(UE.URGAccessoryComponent:StaticClass())
@@ -45,11 +51,13 @@ function WBP_AccessoriesPanel_C:GetAccessoryByWeapon(Target, Type)
   end
   return false, nil
 end
+
 function WBP_AccessoriesPanel_C:GetChooseWeaponAccessoryComp()
   if self.GamePokey and self.GamePokey.ChooseGun then
     return self.GamePokey.ChooseGun.AccessoryComponent
   end
 end
+
 function WBP_AccessoriesPanel_C:CanEquipSecondWeapon(Type)
   local accessoryComponent = self:GetChooseWeaponAccessoryComp()
   if accessoryComponent then
@@ -59,6 +67,7 @@ function WBP_AccessoriesPanel_C:CanEquipSecondWeapon(Type)
   end
   return false, false, nil
 end
+
 function WBP_AccessoriesPanel_C:CanEquipCompAIPrimaryWeapon(Type)
   if self.GamePokey then
     local companionAI = self.GamePokey:GetCompanionAI()
@@ -72,6 +81,7 @@ function WBP_AccessoriesPanel_C:CanEquipCompAIPrimaryWeapon(Type)
     end
   end
 end
+
 function WBP_AccessoriesPanel_C:LoadEquippedAccessory(Type)
   local accessories = UE.TArray(UE.FRGArticleId)
   accessories:Clear()
@@ -92,6 +102,7 @@ function WBP_AccessoriesPanel_C:LoadEquippedAccessory(Type)
     return accessories
   end
 end
+
 function WBP_AccessoriesPanel_C:LoadEquippedButCantAccessory(Type)
   local accessories = UE.TArray(UE.FRGArticleId)
   accessories:Clear()
@@ -108,6 +119,7 @@ function WBP_AccessoriesPanel_C:LoadEquippedButCantAccessory(Type)
     return accessories
   end
 end
+
 function WBP_AccessoriesPanel_C:LoadBagAccessory(Type)
   local canEquipArticleId = UE.TArray(UE.FRGArticleId)
   local cantEquipArticleId = UE.TArray(UE.FRGArticleId)
@@ -147,6 +159,7 @@ function WBP_AccessoriesPanel_C:LoadBagAccessory(Type)
     end
   end
 end
+
 function WBP_AccessoriesPanel_C:CreateAccessoriesByType(InByte, InGamePokey, ShowBack)
   self:ClearSelection()
   self.HasAccessoryType:RemoveItem(InByte)
@@ -173,6 +186,7 @@ function WBP_AccessoriesPanel_C:CreateAccessoriesByType(InByte, InGamePokey, Sho
     end
   end
 end
+
 function WBP_AccessoriesPanel_C:CreateAccessories(InGamePokey)
   if InGamePokey then
     self.ScrollBox_Accessories:ClearChildren()
@@ -181,6 +195,7 @@ function WBP_AccessoriesPanel_C:CreateAccessories(InGamePokey)
     end
   end
 end
+
 function WBP_AccessoriesPanel_C:RefreshState()
   local widget
   for key, value in iterator(self.ScrollBox_Accessories:GetAllChildren()) do
@@ -190,6 +205,7 @@ function WBP_AccessoriesPanel_C:RefreshState()
     end
   end
 end
+
 function WBP_AccessoriesPanel_C:CheckItemExist()
   local widget
   for key, value in iterator(self.ScrollBox_Accessories:GetAllChildren()) do
@@ -202,6 +218,7 @@ function WBP_AccessoriesPanel_C:CheckItemExist()
     end
   end
 end
+
 function WBP_AccessoriesPanel_C:SetBottomVisibility()
   local show = self.ScrollBox_Accessories:GetDesiredSize().Y > 750
   if show then
@@ -210,6 +227,7 @@ function WBP_AccessoriesPanel_C:SetBottomVisibility()
     self.CanvasPanel_Bottom:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 function WBP_AccessoriesPanel_C:ClearSelection()
   if self.Selection then
     self.Selection:RemoveFromParent()
@@ -218,6 +236,7 @@ function WBP_AccessoriesPanel_C:ClearSelection()
     PlaySound2DEffect(30008, "")
   end
 end
+
 function WBP_AccessoriesPanel_C:OnSelectionOption(Option)
   if "\229\133\168\233\131\168" == Option then
     self:CreateAccessories(self.GamePokey)
@@ -242,6 +261,7 @@ function WBP_AccessoriesPanel_C:OnSelectionOption(Option)
     end
   end
 end
+
 function WBP_AccessoriesPanel_C:UpdateSelectionIcon(Open)
   local sprite
   if Open then
@@ -251,6 +271,7 @@ function WBP_AccessoriesPanel_C:UpdateSelectionIcon(Open)
   end
   self.Image_SelectionState:SetBrush(UE.UPaperSpriteBlueprintLibrary.MakeBrushFromSprite(sprite, 0, 0))
 end
+
 function WBP_AccessoriesPanel_C:HasAccessory(Type)
   for key, value in iterator(self.HasAccessoryType) do
     if value == Type then
@@ -259,6 +280,7 @@ function WBP_AccessoriesPanel_C:HasAccessory(Type)
   end
   return false
 end
+
 function WBP_AccessoriesPanel_C:OnClicked_Selection()
   if self.Selection then
     self:ClearSelection()
@@ -273,4 +295,5 @@ function WBP_AccessoriesPanel_C:OnClicked_Selection()
     end
   end
 end
+
 return WBP_AccessoriesPanel_C

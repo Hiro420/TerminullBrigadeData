@@ -2,11 +2,13 @@ local WBP_HeroTalent_C = UnLua.Class()
 local TypeTitleList = UE.TArray(UE.FString)
 local TypeIdList = UE.TArray(0)
 local SecondIdList = UE.TArray(0)
+
 function WBP_HeroTalent_C:Construct()
   self.Overridden.Construct(self)
   self:InitWidget()
   self:CreateTypeButtonList(TypeTitleList)
 end
+
 function WBP_HeroTalent_C:InitWidget()
   self.Overridden.InitWidget(self)
   local HeroTalentTable = LuaTableMgr.GetLuaTableByName(TableNames.TBHeroTalent)
@@ -27,6 +29,7 @@ function WBP_HeroTalent_C:InitWidget()
     TypeIdList:Add(HeroId)
   end
 end
+
 function WBP_HeroTalent_C:OnTypeButtonClick(Button)
   self.Overridden.OnTypeButtonClick(self, Button)
   local index = Button.ButtonIndex + 1
@@ -60,6 +63,7 @@ function WBP_HeroTalent_C:OnTypeButtonClick(Button)
   self.HeroId = TypeIdList:Get(index)
   self:CreateSecondTypeButtonList(SecondTypeTitleList)
 end
+
 function WBP_HeroTalent_C:OnSecondTypeButtonClick(Button)
   self.Overridden.OnSecondTypeButtonClick(self, Button)
   local index = Button.ButtonIndex + 1
@@ -70,4 +74,5 @@ function WBP_HeroTalent_C:OnSecondTypeButtonClick(Button)
   local Info = TalentTable[SecondIdList:Get(index)]
   self.Overridden.ShowCustomPanel(self, Info.ID, Info.GroupID, Info.Name, Info.Desc, Info.Level)
 end
+
 return WBP_HeroTalent_C

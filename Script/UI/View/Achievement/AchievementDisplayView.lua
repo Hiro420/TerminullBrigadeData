@@ -9,16 +9,19 @@ local BadgesSort = function(A, B)
   end
   return B < A
 end
+
 function AchievementDisplayView:Construct()
   self.RGToggleGroup.OnCheckStateChanged:Add(self, self.OnToggleFirstGroupChanged)
   self.RGToggleGroupAchievementType.OnCheckStateChanged:Add(self, self.OnToggleGroupAchievementTypeChanged)
   self.WBP_InteractTipWidget.Btn_Main.OnClicked:Add(self, self.Hide)
 end
+
 function AchievementDisplayView:Destruct()
   self.RGToggleGroup.OnCheckStateChanged:Remove(self, self.OnToggleFirstGroupChanged)
   self.RGToggleGroupAchievementType.OnCheckStateChanged:Remove(self, self.OnToggleGroupAchievementTypeChanged)
   self.WBP_InteractTipWidget.Btn_Main.OnClicked:Remove(self, self.Hide)
 end
+
 function AchievementDisplayView:InitAchievementDisplayView()
   UpdateVisibility(self, true)
   self.viewModel = UIModelMgr:Get("AchievementViewModel")
@@ -31,11 +34,13 @@ function AchievementDisplayView:InitAchievementDisplayView()
   end
   self:PushInputAction()
 end
+
 function AchievementDisplayView:Hide()
   UpdateVisibility(self, false)
   StopListeningForInputAction(self, EscName, UE.EInputEvent.IE_Pressed)
   self.viewModel = nil
 end
+
 function AchievementDisplayView:UpdateAchievementTypeToggleList()
   self.RGToggleGroupAchievementType:ClearGroup()
   local achievementTypeList = self.viewModel:GetAchievementToggleList()
@@ -46,6 +51,7 @@ function AchievementDisplayView:UpdateAchievementTypeToggleList()
   end
   self.RGToggleGroupAchievementType:SelectId(1)
 end
+
 function AchievementDisplayView:UpdateAchievementFirstToggleList()
   self.RGToggleGroup:ClearGroup()
   local achievementToggleList = self.viewModel:GetAchievementDisplayToggleList()
@@ -62,6 +68,7 @@ function AchievementDisplayView:UpdateAchievementFirstToggleList()
   HideOtherItem(self.ScrollBoxToggle, #achievementToggleList + 1)
   self.RGToggleGroup:SelectId(2)
 end
+
 function AchievementDisplayView:CalToggleNum(toggleIdx)
   if 2 == toggleIdx then
     local typeToTbAchievement = self.viewModel:GetTypeToTbAchievement()
@@ -83,16 +90,19 @@ function AchievementDisplayView:CalToggleNum(toggleIdx)
   end
   return -1, -1
 end
+
 function AchievementDisplayView:OnToggleFirstGroupChanged(SelectId)
   UpdateVisibility(self.CanvasPanelBadges, 2 == SelectId)
   if 2 == SelectId then
     self:UpdateAchievementTypeToggleList()
   end
 end
+
 function AchievementDisplayView:OnToggleGroupAchievementTypeChanged(SelectId)
   self.CurSelectAchievementType = SelectId
   self:UpdateBadgesTileView()
 end
+
 function AchievementDisplayView:UpdateBadgesTileView()
   local achievementItemDataList = self.viewModel:GetAchievementItemDataListByType(self.CurSelectAchievementType)
   self.RGTileViewAchievement:RecyleAllData()
@@ -147,6 +157,7 @@ function AchievementDisplayView:UpdateBadgesTileView()
   local str = string.format("\230\156\128\229\164\154\229\143\175\232\174\190\231\189\174\229\177\149\231\164\186%d/%d\228\184\170\230\136\144\229\176\177\229\190\189\231\171\160", count, self.viewModel:GetMaxDisplayBadgesNum())
   self.RGTextDisplayBadgesNum:SetText(str)
 end
+
 function AchievementDisplayView:EquipAchievementBadges(BadgeId)
   local displayBadges = self.viewModel:GetDisplayBadges()
   if not table.Contain(displayBadges, BadgeId) then
@@ -154,6 +165,7 @@ function AchievementDisplayView:EquipAchievementBadges(BadgeId)
     self.viewModel:RequestSetDisplayBadges(displayBadges)
   end
 end
+
 function AchievementDisplayView:UnEquipAchievementBadges(BadgeId)
   local displayBadges = self.viewModel:GetDisplayBadges()
   if table.Contain(displayBadges, BadgeId) then
@@ -164,12 +176,15 @@ function AchievementDisplayView:UnEquipAchievementBadges(BadgeId)
     self.viewModel:RequestSetDisplayBadges(displayBadges)
   end
 end
+
 function AchievementDisplayView:HoverBadge(BadgeId)
   if tbGeneral and tbGeneral[BadgeId] then
     self.WBP_AchievementBadgeTip:InitAchievementBadgeTip(tbGeneral[BadgeId])
   end
 end
+
 function AchievementDisplayView:UnHoverBadge(BadgeId)
   self.WBP_AchievementBadgeTip:Hide()
 end
+
 return AchievementDisplayView

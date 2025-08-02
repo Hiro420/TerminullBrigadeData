@@ -1,4 +1,5 @@
 local WBP_AttributeModify_Item_C = UnLua.Class()
+
 function WBP_AttributeModify_Item_C:OnListItemObjectSet(ListItemObj)
   self.Data = ListItemObj.Data
   local Result = false
@@ -14,9 +15,11 @@ function WBP_AttributeModify_Item_C:OnListItemObjectSet(ListItemObj)
   self:HaveYouObtained()
   self:SearchKeyword()
 end
+
 function WBP_AttributeModify_Item_C:HaveYouObtained()
   UpdateVisibility(self.Lock, not Logic_IllustratedGuide.UnLockAttributeModify[self.Data.Id])
 end
+
 function WBP_AttributeModify_Item_C:SearchKeyword()
   local RGLogicCommandDataSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.ULogicCommandDataSubSystem:StaticClass())
   if not RGLogicCommandDataSubsystem then
@@ -30,6 +33,7 @@ function WBP_AttributeModify_Item_C:SearchKeyword()
     self.Overlay_1:SetRenderOpacity(0.5)
   end
 end
+
 function WBP_AttributeModify_Item_C:SetQuality(Rarity)
   if not self.Data then
     return
@@ -51,20 +55,27 @@ function WBP_AttributeModify_Item_C:SetQuality(Rarity)
     UpdateVisibility(self.Img_Quality_Legend, true)
   end
 end
+
 function WBP_AttributeModify_Item_C:BP_OnItemSelectionChanged(IsSelected)
   UpdateVisibility(self.Img_Select, IsSelected)
 end
+
 function WBP_AttributeModify_Item_C:BP_OnEntryReleased()
   UpdateVisibility(self.Img_Select, false)
 end
+
 function WBP_AttributeModify_Item_C:SetSelect(bSelect)
 end
+
 function WBP_AttributeModify_Item_C:SetCover(bCover)
 end
+
 function WBP_AttributeModify_Item_C:OnMouseEnter(MyGeometry, MouseEvent)
   UpdateVisibility(self.Img_Hovered, true)
 end
+
 function WBP_AttributeModify_Item_C:OnMouseLeave(MyGeometry, MouseEvent)
   UpdateVisibility(self.Img_Hovered, false)
 end
+
 return WBP_AttributeModify_Item_C

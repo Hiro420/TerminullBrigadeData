@@ -1,4 +1,5 @@
 local WBP_TalentTipItemText_C = UnLua.Class()
+
 function WBP_TalentTipItemText_C:Show(PreLevel, Level, Desc)
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.Txt_Text:SetText(Desc)
@@ -20,4 +21,5 @@ function WBP_TalentTipItemText_C:Show(PreLevel, Level, Desc)
   self.Txt_Text:SetRenderOpacity(TextOpacity)
   self.Img_Flag:SetColorAndOpacity(IconColor)
 end
+
 return WBP_TalentTipItemText_C

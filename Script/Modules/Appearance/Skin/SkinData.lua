@@ -27,16 +27,19 @@ local SkinData = {
   HeroSkinMap = {},
   WeaponSkinMap = {}
 }
+
 function SkinData.ClearData()
   SkinData.HeroSkinMap = {}
   SkinData.WeaponSkinMap = {}
 end
+
 function SkinData.GetEquipedSkinIdByHeroId(HeroId)
   if not SkinData.HeroSkinMap[HeroId] then
     return -1
   end
   return SkinData.HeroSkinMap[HeroId].EquipedSkinId
 end
+
 function SkinData.GetDefaultSkinIdByHeroId(HeroId)
   local result, row = GetRowData(DT.DT_Hero, tostring(HeroId))
   if result then
@@ -44,12 +47,14 @@ function SkinData.GetDefaultSkinIdByHeroId(HeroId)
   end
   return -1
 end
+
 function SkinData.GetEquipedWeaponSkinIdByWeaponResId(WeaponResId)
   if not SkinData.WeaponSkinMap[WeaponResId] then
     return -1
   end
   return SkinData.WeaponSkinMap[WeaponResId].EquipedSkinId
 end
+
 function SkinData.GetWeaponResIdBySkinId(SkinId)
   local skinResID = GetTbSkinRowNameBySkinID(SkinId)
   local result, row = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBWeaponSkin, skinResID)
@@ -58,6 +63,7 @@ function SkinData.GetWeaponResIdBySkinId(SkinId)
   end
   return nil
 end
+
 function SkinData.GetWeaponResIdBySkinResId(SkinResId)
   local result, row = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBWeaponSkin, SkinResId)
   if result then
@@ -65,6 +71,7 @@ function SkinData.GetWeaponResIdBySkinResId(SkinResId)
   end
   return nil
 end
+
 function SkinData.CheckWeaponSkinCanEquip(SkinResId)
   local skinData
   local bEquiped = false
@@ -85,6 +92,7 @@ function SkinData.CheckWeaponSkinCanEquip(SkinResId)
   end
   return true
 end
+
 function SkinData.GetWeaponSkinDataBySkinResId(SkinResId)
   for k, v in pairs(SkinData.WeaponSkinMap) do
     for i, vSkinData in ipairs(v.SkinDataList) do
@@ -95,6 +103,7 @@ function SkinData.GetWeaponSkinDataBySkinResId(SkinResId)
   end
   return nil
 end
+
 function SkinData.FindHeroSkin(SkinId)
   for HeroId, SkinDatas in pairs(SkinData.HeroSkinMap) do
     local SkinDataList = SkinDatas.SkinDataList
@@ -106,6 +115,7 @@ function SkinData.FindHeroSkin(SkinId)
   end
   return false
 end
+
 function SkinData.FindWeaponSkin(SkinId)
   for HeroId, SkinDatas in pairs(SkinData.WeaponSkinMap) do
     local SkinDataList = SkinDatas.SkinDataList
@@ -117,6 +127,7 @@ function SkinData.FindWeaponSkin(SkinId)
   end
   return false
 end
+
 function SkinData.GetSkinParentId(SkinID)
   local ResID = GetTbSkinRowNameBySkinID(SkinID)
   local result, rowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBCharacterSkin, ResID)
@@ -125,4 +136,5 @@ function SkinData.GetSkinParentId(SkinID)
   end
   return SkinID
 end
+
 return SkinData

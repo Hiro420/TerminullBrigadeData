@@ -4,6 +4,7 @@ local ClimbTowerData = {
   GameMode = 1003,
   WorldId = 38
 }
+
 function ClimbTowerData:GetFloor()
   if not ClimbTowerData.Floor then
     ClimbTowerData.Floor = 1
@@ -13,6 +14,7 @@ function ClimbTowerData:GetFloor()
   end
   return ClimbTowerData.Floor
 end
+
 function ClimbTowerData:PassRewardStatus(FloorEnd)
   local FloorsTable = ""
   for i = 1, FloorEnd do
@@ -36,6 +38,7 @@ function ClimbTowerData:PassRewardStatus(FloorEnd)
     end
   })
 end
+
 function ClimbTowerData:ReceiveGlobalPassReward(Floor, Index)
   local ItemStatus = ClimbTowerData.PassRewardStatusTable[tostring(Floor)].rewardStatusMap[tostring(Index)]
   if 1 ~= ItemStatus then
@@ -62,6 +65,7 @@ function ClimbTowerData:ReceiveGlobalPassReward(Floor, Index)
     end
   })
 end
+
 function ClimbTowerData:GetFirstPassTeam(FloorStart, FloorEnd)
   local FloorsTable = ""
   for i = FloorStart, FloorEnd do
@@ -85,6 +89,7 @@ function ClimbTowerData:GetFirstPassTeam(FloorStart, FloorEnd)
     end
   })
 end
+
 function ClimbTowerData:GetDailyRewardInfo(SuccessDelegate)
   local Path = "activity/climbtower/dailyrewardinfo"
   HttpCommunication.RequestByGet(Path, {
@@ -103,6 +108,7 @@ function ClimbTowerData:GetDailyRewardInfo(SuccessDelegate)
     end
   })
 end
+
 function ClimbTowerData:ReceiveDailyReward()
   local Path = "activity/climbtower/receivedailyreward"
   HttpCommunication.Request(Path, {}, {
@@ -116,6 +122,7 @@ function ClimbTowerData:ReceiveDailyReward()
     end
   })
 end
+
 function ClimbTowerData:EquipDailyRewardHero(HeroId, SlotId)
   local Path = "activity/climbtower/equipdailyrewardhero"
   HttpCommunication.Request(Path, {heroID = HeroId, slotID = SlotId}, {
@@ -129,6 +136,7 @@ function ClimbTowerData:EquipDailyRewardHero(HeroId, SlotId)
     end
   })
 end
+
 function ClimbTowerData:UnEquipDailyRewardHero(SlotId)
   local Path = "activity/climbtower/unequipdailyrewardhero"
   HttpCommunication.Request(Path, {slotID = SlotId}, {
@@ -142,6 +150,7 @@ function ClimbTowerData:UnEquipDailyRewardHero(SlotId)
     end
   })
 end
+
 function ClimbTowerData:SetLocalDebuff(Floor, DebuffId, Lv)
   if ClimbTowerData.LocalDebuff == nil then
     ClimbTowerData.LocalDebuff = {}
@@ -156,12 +165,14 @@ function ClimbTowerData:SetLocalDebuff(Floor, DebuffId, Lv)
     EventSystem.Invoke(EventDef.ClimbTowerView.OnDebuffChange)
   end
 end
+
 function ClimbTowerData:GetLocalDebuffValue(Floor, DebuffId)
   if ClimbTowerData.LocalDebuff and ClimbTowerData.LocalDebuff[Floor] then
     return ClimbTowerData.LocalDebuff[Floor][DebuffId] or 0
   end
   return 0
 end
+
 function ClimbTowerData:GetLocalDebuff(Floor)
   local Path = "activity/climbtower/mydebuffchoices?floor=" .. tostring(Floor)
   HttpCommunication.RequestByGet(Path, {
@@ -202,6 +213,7 @@ function ClimbTowerData:GetLocalDebuff(Floor)
   end
   return {}
 end
+
 function ClimbTowerData:SetDebuff(Floor)
   if ClimbTowerData:GetFaultScore() < ClimbTowerData:GetTargetFaultScore() then
     ShowWaveWindow(304003)
@@ -243,9 +255,11 @@ function ClimbTowerData:SetDebuff(Floor)
     })
   end
 end
+
 function ClimbTowerData:ResettingDebuff()
   ClimbTowerData:GetLocalDebuff(ClimbTowerData:GetFloor())
 end
+
 function ClimbTowerData:GetHeteromorphism(Floor)
   local HeteromorphismTable = {}
   local ClimbTowerTable = LuaTableMgr.GetLuaTableByName(TableNames.TBClimbTowerFloor)
@@ -268,6 +282,7 @@ function ClimbTowerData:GetHeteromorphism(Floor)
   end
   return HeteromorphismTable
 end
+
 function ClimbTowerData:GameFloorPassData()
   local Path = "playergrowth/gamefloor/gamefloorpassdata?gameMode=" .. tostring(ClimbTowerData.GameMode)
   HttpCommunication.RequestByGet(Path, {
@@ -284,6 +299,7 @@ function ClimbTowerData:GameFloorPassData()
     end
   })
 end
+
 function ClimbTowerData:GetFaultScore()
   if ClimbTowerData.LocalDebuff == nil then
     return nil
@@ -304,6 +320,7 @@ function ClimbTowerData:GetFaultScore()
   end
   return FaultScore
 end
+
 function ClimbTowerData:GetFaultScoreByFloor(Floor)
   local DebuffTable = ClimbTowerData.LocalDebuff[Floor]
   local ClimbTowerDebuff = LuaTableMgr.GetLuaTableByName(TableNames.TBClimbTowerDebuff)
@@ -321,6 +338,7 @@ function ClimbTowerData:GetFaultScoreByFloor(Floor)
   end
   return FaultScore
 end
+
 function ClimbTowerData:GetTargetFaultScore()
   local ClimbTowerTable = LuaTableMgr.GetLuaTableByName(TableNames.TBClimbTowerFloor)
   if ClimbTowerTable then
@@ -328,6 +346,7 @@ function ClimbTowerData:GetTargetFaultScore()
   end
   return 0
 end
+
 function ClimbTowerData:FaultScoreIsChange()
   local STable = ClimbTowerData.ServerDebuff[ClimbTowerData:GetFloor()]
   local CTable = ClimbTowerData.LocalDebuff[ClimbTowerData:GetFloor()]
@@ -344,10 +363,12 @@ function ClimbTowerData:FaultScoreIsChange()
   end
   return false
 end
+
 function ClimbTowerData:MeetFaultScore()
   if ClimbTowerData:GetFaultScore() == nil then
     return false
   end
   return ClimbTowerData:GetFaultScore() >= ClimbTowerData:GetTargetFaultScore()
 end
+
 return ClimbTowerData

@@ -5,16 +5,19 @@ local TxtWeaponAttrTitle = NSLOCTEXT("WBP_TotalAttrTips_C", "TxtWeaponAttrTitle"
 local TxtBasicAttrTitle = NSLOCTEXT("WBP_TotalAttrTips_C", "TxtBasicAttrTitle", "\229\159\186\231\161\128\229\177\158\230\128\167")
 local TxtDetailAttrTitle = NSLOCTEXT("WBP_TotalAttrTips_C", "TxtDetailAttrTitle", "\232\191\155\233\152\182\229\177\158\230\128\167")
 local TxtModifyAttrTitle = NSLOCTEXT("WBP_TotalAttrTips_C", "TxtModifyAttrTitle", "\230\157\131\233\153\144\229\177\158\230\128\167")
+
 function WBP_TotalAttrTips_C:Construct()
   self.BP_ButtonHideTotalAttrTips.OnClicked:Add(self, self.Hide)
   self.BP_ButtonCloseAttrTips.OnClicked:Add(self, self.Hide)
   EventSystem.AddListener(self, EventDef.Lobby.RoleItemClicked, self.BindOnChangeRoleItemClicked)
 end
+
 function WBP_TotalAttrTips_C:BindOnChangeRoleItemClicked(HeroId)
   if self:IsVisible() then
     UpdateVisibility(self, false)
   end
 end
+
 function WBP_TotalAttrTips_C:Show(AttrNameList, WeaponResId, ModifyAttrList, ParentView)
   UpdateVisibility(self, true)
   self.ParentView = ParentView
@@ -195,6 +198,7 @@ function WBP_TotalAttrTips_C:Show(AttrNameList, WeaponResId, ModifyAttrList, Par
     })
   end
 end
+
 function WBP_TotalAttrTips_C:LobbyShow(HeroId)
   self.HeroId = HeroId
   self:RefreshLobbyHeroAttribtueInfo()
@@ -216,12 +220,15 @@ function WBP_TotalAttrTips_C:LobbyShow(HeroId)
   end
   self:SetEnhancedInputActionBlocking(true)
 end
+
 function WBP_TotalAttrTips_C:BindOnEscKeyPressed()
   self:Hide()
 end
+
 function WBP_TotalAttrTips_C:BindOnOpenSettingsKeyName()
   print("WBP_TotalAttrTips_C:BindOnOpenSettingsKeyName not OpenSettings")
 end
+
 function WBP_TotalAttrTips_C:RefreshLobbyHeroAttribtueInfo()
   local TargetModifyAttributeList, SpecialAttrTb = LogicRole.GetAttributeListNew(self.HeroId, UE.EAttributeDisplayPos.Detail)
   local realIdx = 1
@@ -273,6 +280,7 @@ function WBP_TotalAttrTips_C:RefreshLobbyHeroAttribtueInfo()
   end
   HideOtherItemByClass(self.VerticalBoxAttrRoot, Index, self.WBP_AttrItem:GetClass())
 end
+
 function WBP_TotalAttrTips_C:SetTitlePadding(TitleIndex, TitleItem)
   if 1 == TitleIndex then
     return
@@ -281,6 +289,7 @@ function WBP_TotalAttrTips_C:SetTitlePadding(TitleIndex, TitleItem)
   Padding.Top = 31
   TitleItem.Slot:SetPadding(Padding)
 end
+
 function WBP_TotalAttrTips_C:Hide()
   if UE.RGUtil.IsUObjectValid(self.ParentView) and self.ParentView.BackToParentView then
     self.ParentView:BackToParentView()
@@ -299,10 +308,12 @@ function WBP_TotalAttrTips_C:Hide()
     self:SetEnhancedInputActionBlocking(false)
   end
 end
+
 function WBP_TotalAttrTips_C:Destruct()
   self:Hide()
   self.BP_ButtonHideTotalAttrTips.OnClicked:Remove(self, self.Hide)
   self.BP_ButtonCloseAttrTips.OnClicked:Remove(self, self.Hide)
   EventSystem.RemoveListener(EventDef.Lobby.RoleItemClicked, self.BindOnChangeRoleItemClicked, self)
 end
+
 return WBP_TotalAttrTips_C

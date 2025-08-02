@@ -1,9 +1,12 @@
 local SeasonData = require("Modules.Season.SeasonData")
 local WBP_NormalDropDownItem = UnLua.Class()
+
 function WBP_NormalDropDownItem:Construct()
 end
+
 function WBP_NormalDropDownItem:Destruct()
 end
+
 function WBP_NormalDropDownItem:InitNormalDropDownItem(SeasonID)
   UpdateVisibility(self, true, true)
   if 0 == SeasonID then
@@ -18,7 +21,9 @@ function WBP_NormalDropDownItem:InitNormalDropDownItem(SeasonID)
     self.Txt_Name_Select:SetText(row.Title)
   end
 end
+
 function WBP_NormalDropDownItem:Hide()
   UpdateVisibility(self, false)
 end
+
 return WBP_NormalDropDownItem

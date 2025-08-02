@@ -1,19 +1,23 @@
 local WBP_GunMainPanel_C = UnLua.Class()
+
 function WBP_GunMainPanel_C:Construct()
   EventSystem.AddListener(self, EventDef.GunDisplayPanel.OnAccessorySlotHovered, WBP_GunMainPanel_C.OnAccessorySlotHovered)
   EventSystem.AddListener(self, EventDef.GunDisplayPanel.OnAccessorySlotUnHovered, WBP_GunMainPanel_C.OnAccessorySlotUnHovered)
   EventSystem.AddListener(self, EventDef.GunDisplayPanel.OnInscriptionHovered, WBP_GunMainPanel_C.OnInscriptionHovered)
   EventSystem.AddListener(self, EventDef.GunDisplayPanel.OnInscriptionUnHovered, WBP_GunMainPanel_C.OnInscriptionUnHovered)
 end
+
 function WBP_GunMainPanel_C:Destruct()
   EventSystem.RemoveListener(EventDef.GunDisplayPanel.OnAccessorySlotHovered, WBP_GunMainPanel_C.OnAccessorySlotHovered, self)
   EventSystem.RemoveListener(EventDef.GunDisplayPanel.OnAccessorySlotUnHovered, WBP_GunMainPanel_C.OnAccessorySlotUnHovered, self)
   EventSystem.RemoveListener(EventDef.GunDisplayPanel.OnInscriptionHovered, WBP_GunMainPanel_C.OnInscriptionHovered, self)
   EventSystem.RemoveListener(EventDef.GunDisplayPanel.OnInscriptionUnHovered, WBP_GunMainPanel_C.OnInscriptionUnHovered, self)
 end
+
 function WBP_GunMainPanel_C:OnAccessorySlotHovered(AccessoryId, AccessoryRarity, InscriptionIdTable, Angle, Position)
   self:UpdateAccessoryInfoTip(true, AccessoryId, AccessoryRarity, InscriptionIdTable, Angle, Position)
 end
+
 function WBP_GunMainPanel_C:OnAccessorySlotUnHovered()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TipTimer) then
     UE.UKismetSystemLibrary.K2_ClearTimerHandle(self, self.TipTimer)
@@ -21,20 +25,25 @@ function WBP_GunMainPanel_C:OnAccessorySlotUnHovered()
   self:UpdateAccessoryInfoTip(false)
   self:UpdateAccessoryNoteTip(false)
 end
+
 function WBP_GunMainPanel_C:OnInscriptionHovered(InscriptionId)
   local InscriptionIdTable = {}
   table.insert(InscriptionIdTable, InscriptionId)
   self:UpdateAccessoryNoteTipForPanel(true, InscriptionIdTable)
 end
+
 function WBP_GunMainPanel_C:OnInscriptionUnHovered()
   self:UpdateAccessoryNoteTipForPanel(false)
 end
+
 function WBP_GunMainPanel_C:UpdateAccessorySlots(AccessoryDataTable)
   self.WBP_AccessorySlotPanel:UpdateAccessorySlots(AccessoryDataTable)
 end
+
 function WBP_GunMainPanel_C:UpdateGunDisplayPanel(GunId, GunLevel, AccessoryList, AttributeList, InscriptionIdList)
   self.WBP_GunDisplayPanel:UpdateGunDisplayPanel(GunId, GunLevel, AccessoryList, AttributeList, InscriptionIdList, self.LeftOrRight)
 end
+
 function WBP_GunMainPanel_C:UpdateAccessoryInfoTip(Show, AccessoryId, AccessoryRarity, InscriptionIdTable, Angle, Position)
   self.AccessorySlotItemAngle = Angle
   if Show then
@@ -67,9 +76,11 @@ function WBP_GunMainPanel_C:UpdateAccessoryInfoTip(Show, AccessoryId, AccessoryR
     self.WBP_AccessoryDisplayInfo:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 function WBP_GunMainPanel_C:UpdateAccessoryNoteTipFunc()
   self:UpdateAccessoryNoteTip(true)
 end
+
 function WBP_GunMainPanel_C:UpdateAccessoryNoteTip(Show)
   if Show then
     self.WBP_ExtraDescItemsPanel:UpdateInscriptionAdditions(self.CurrentInscriptionIdTable)
@@ -99,9 +110,11 @@ function WBP_GunMainPanel_C:UpdateAccessoryNoteTip(Show)
     self.WBP_ExtraDescItemsPanel:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 function WBP_GunMainPanel_C:UpdateAccessorySlotsPosition(RowName, CenterTransform)
   self.WBP_AccessorySlotPanel:UpdateAccessorySlotsPosition(RowName, CenterTransform)
 end
+
 function WBP_GunMainPanel_C:UpdateAccessoryNoteTipForPanel(Show, InscriptionIdTable)
   if Show then
     self.WBP_ExtraDescItemsPanel:UpdateInscriptionAdditions(InscriptionIdTable)
@@ -126,4 +139,5 @@ function WBP_GunMainPanel_C:UpdateAccessoryNoteTipForPanel(Show, InscriptionIdTa
     self.WBP_ExtraDescItemsPanel:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 return WBP_GunMainPanel_C

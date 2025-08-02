@@ -1,7 +1,9 @@
 local WBP_ScrollPickUpAttributeIcon_C = UnLua.Class()
+
 function WBP_ScrollPickUpAttributeIcon_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_ScrollPickUpAttributeIcon_C:InitPickUpAttributeIcon(AttributeModifyId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -16,7 +18,9 @@ function WBP_ScrollPickUpAttributeIcon_C:InitPickUpAttributeIcon(AttributeModify
   end
   self.URGImageIcon:SetRenderOpacity(1.0)
 end
+
 function WBP_ScrollPickUpAttributeIcon_C:Destruct()
   self.Overridden.Destruct(self)
 end
+
 return WBP_ScrollPickUpAttributeIcon_C

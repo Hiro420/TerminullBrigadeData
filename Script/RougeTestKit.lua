@@ -1,7 +1,9 @@
 local RougeTestKit = {}
+
 function RougeTestKit.Hello(Args)
   print("Hello from RougeTestKit" .. Args.Msg)
 end
+
 local TestSendEvent = function(Event, Data)
   local TestSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.URougeTestKit:StaticClass())
   if TestSubsystem then
@@ -10,12 +12,14 @@ local TestSendEvent = function(Event, Data)
     TestSubsystem:SendEvent(Event, EventData)
   end
 end
+
 function RougeTestKit.ChangeLobbyPanelLabelSelected(Args)
   local Label = LogicLobby.GetLabelTagNameByUIName(Args.UIName)
   if Label then
     LogicLobby.ChangeLobbyPanelLabelSelected(Label)
   end
 end
+
 local GetViewIDByName = function(InName)
   for id, name in ipairs(ViewNameList) do
     if name == InName then
@@ -24,18 +28,21 @@ local GetViewIDByName = function(InName)
   end
   return nil
 end
+
 function RougeTestKit.ShowUI(Args)
   local ID = GetViewIDByName(Args.ViewID)
   if ID then
     UIMgr:Show(ID, true)
   end
 end
+
 function RougeTestKit.HideUI(Args)
   local ID = GetViewIDByName(Args.ViewID)
   if ID then
     UIMgr:Hide(ID, true)
   end
 end
+
 function RougeTestKit.ChangeQuality(Args)
   local Quality = Args.Quality
   local SettingsView = UIMgr:GetLuaFromActiveView(ViewID.UI_GameSettingsMain)
@@ -46,6 +53,7 @@ function RougeTestKit.ChangeQuality(Args)
     SettingsView:BindOnSaveButtonClicked()
   end
 end
+
 function RougeTestKit.Login(Args)
   local Account = Args.Account
   print("===Rgtk Login", Account)
@@ -56,6 +64,7 @@ function RougeTestKit.Login(Args)
     LoginView.ViewModel:ChangeLoggedInWaitClickStepToNextStep()
   end
 end
+
 function RougeTestKit.StartBattle(Args)
   if DataMgr.IsInTeam() then
     LogicTeam.RequestStartGameToServer()
@@ -68,11 +77,14 @@ function RougeTestKit.StartBattle(Args)
     })
   end
 end
+
 function RougeTestKit.PickHero(Args)
   LogicHeroSelect.RequestPickHeroDoneToServer()
 end
+
 function RougeTestKit.PrepareBattle(Args)
 end
+
 function RougeTestKit.Settlement(Args)
   local SettlementView = RGUIMgr:GetUI(UIConfig.WBP_SettlementView_C.UIName)
   print(SettlementView)
@@ -80,6 +92,7 @@ function RougeTestKit.Settlement(Args)
     SettlementView.WBP_SettleInComeView:FinishClick()
   end
 end
+
 function RougeTestKit.TeleportToLevelTrigger(Args)
   local TriggerIndex = Args.Index
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
@@ -99,6 +112,7 @@ function RougeTestKit.TeleportToLevelTrigger(Args)
     PC.CheatManager:TeleportMe(FoundLevelTriggerLocation.X, FoundLevelTriggerLocation.Y, FoundLevelTriggerLocation.Z)
   end
 end
+
 function RougeTestKit.ResetLevelTriggers(Args)
   local TestSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.URougeTestKit:StaticClass())
   if TestSubsystem then
@@ -108,6 +122,7 @@ function RougeTestKit.ResetLevelTriggers(Args)
     TestSubsystem:ResetLevelTrigger(AllLevelTriggers:Num())
   end
 end
+
 function RougeTestKit.TeleportToNextLevelTrigger(Args)
   local ResetIfLast = Args.ResetIfLast
   local TestSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.URougeTestKit:StaticClass())
@@ -120,6 +135,7 @@ function RougeTestKit.TeleportToNextLevelTrigger(Args)
     end
   end
 end
+
 local FindNearestActorOfClass = function(Class, PlayerCamp)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   local ActorSubsystem = UE.URGActorSubsystem.GetSubsystem(GameInstance)
@@ -139,6 +155,7 @@ local FindNearestActorOfClass = function(Class, PlayerCamp)
   end
   return ClosestActor
 end
+
 function RougeTestKit.FaceToNearestAI(Args)
   local Teleport = Args.Teleport
   local Enemy = FindNearestActorOfClass(UE.AAICharacterBase, true)
@@ -153,9 +170,11 @@ function RougeTestKit.FaceToNearestAI(Args)
     UE.UAutoPlayerBPLibrary.AutoPlayer_LookAtTarget(GameInstance, Enemy, true, true)
   end
 end
+
 local GetActorByName = function(Name)
   return UE.URougeTestKit.GetActorByName(Name)
 end
+
 function RougeTestKit.GetActorsOfClass(Args)
   local ClassNameList = Args.ClassNameList
   local CallbackID = Args.CallbackID
@@ -176,6 +195,7 @@ function RougeTestKit.GetActorsOfClass(Args)
   end
   TestSendEvent("OnGetActorsOfClass", {ActorList = ActorList, CallbackID = CallbackID})
 end
+
 function RougeTestKit.TeleportToActor(Args)
   local ActorName = Args.ActorName
   local Actor = GetActorByName(ActorName)
@@ -188,6 +208,7 @@ function RougeTestKit.TeleportToActor(Args)
     UE.UAutoPlayerBPLibrary.AutoPlayer_LookAtTarget(GameInstance, Actor, true, false)
   end
 end
+
 function RougeTestKit.LookAtTarget(Args)
   local ActorName = Args.ActorName
   local Actor = GetActorByName(ActorName)
@@ -195,6 +216,7 @@ function RougeTestKit.LookAtTarget(Args)
     UE.UAutoPlayerBPLibrary.AutoPlayer_LookAtTarget(GameInstance, Actor, true, false)
   end
 end
+
 function RougeTestKit.ShopBuyItem(Args)
   local item_id = Args.ItemID
   local all_item_info = LogicShop.GetAllItemInfo()
@@ -205,6 +227,7 @@ function RougeTestKit.ShopBuyItem(Args)
     LogicShop.BuyShopItem(item_instance_id)
   end
 end
+
 function RougeTestKit.RandomSelectModify(Args)
   local Panel = RGUIMgr:GetUI(UIConfig.WBP_GenericModifyChoosePanel_C.UIName)
   if Panel then
@@ -218,6 +241,7 @@ function RougeTestKit.RandomSelectModify(Args)
     end
   end
 end
+
 function RougeTestKit.RandomSelectModifyPack(Args)
   local Panel = RGUIMgr:GetUI(UIConfig.WBP_GenericModify_Pack_Choose_C.UIName)
   if Panel then
@@ -231,12 +255,14 @@ function RougeTestKit.RandomSelectModifyPack(Args)
     end
   end
 end
+
 function RougeTestKit.OpenLobbyAppearanceView(Args)
   local RoleMain = UIMgr:GetLuaFromActiveView(ViewID.UI_RoleMain)
   if RoleMain then
     RoleMain:BindOnOpenAppearance()
   end
 end
+
 function RougeTestKit.LobbySelectHero(Args)
   local HeroID = Args.HeroID
   local Random = Args.Random
@@ -252,10 +278,12 @@ function RougeTestKit.LobbySelectHero(Args)
     end
   end
 end
+
 function RougeTestKit.LobbyRandomSelectSkin(Args)
   local SkinView = UIMgr:GetLuaFromActiveView(ViewID.UI_Skin)
   local AllSkinEntryWidgets = SkinView.WBP_RoleSkinList.TileViewRoleSkin:GetDisplayedEntryWidgets():ToTable()
   local RandomIndex = math.random(1, #AllSkinEntryWidgets)
   AllSkinEntryWidgets[RandomIndex]:OnSelectClick()
 end
+
 return RougeTestKit

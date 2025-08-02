@@ -1,4 +1,5 @@
 local WBP_TaskPanel_ChargeCountdown_C = UnLua.Class()
+
 function WBP_TaskPanel_ChargeCountdown_C:InitEventPanel(TaskEventConfig, EventId)
   self.TaskEventConfig = TaskEventConfig
   self.EventId = EventId
@@ -8,6 +9,7 @@ function WBP_TaskPanel_ChargeCountdown_C:InitEventPanel(TaskEventConfig, EventId
     print("WBP_TaskPanel_ChargeCountdown_C", ChallengeStage)
   end
 end
+
 function WBP_TaskPanel_ChargeCountdown_C:UpdateEventPanel(TaskInfo)
   for Index, EventData in ipairs(TaskInfo.Current:ToTable()) do
     if EventData.EventId == self.EventId then
@@ -19,6 +21,7 @@ function WBP_TaskPanel_ChargeCountdown_C:UpdateEventPanel(TaskInfo)
     end
   end
 end
+
 function WBP_TaskPanel_ChargeCountdown_C:UpdateCountDown(InDeltaTime)
   if not self.ChallengeStage then
     return
@@ -33,9 +36,11 @@ function WBP_TaskPanel_ChargeCountdown_C:UpdateCountDown(InDeltaTime)
   local str = UE.FTextFormat(self.TxtFmt, secInt)
   self.Txt_Countdown:SetText(str)
 end
+
 function WBP_TaskPanel_ChargeCountdown_C:LuaTick(InDeltaTime)
   self:UpdateCountDown(InDeltaTime)
 end
+
 function WBP_TaskPanel_ChargeCountdown_C:SetWidgetStyle(Status)
   UpdateVisibility(self.Img_TaskCompleted, Status == UE.ERGActionEvent_TaskConditionStatus.Meet)
   if Status == UE.ERGActionEvent_TaskConditionStatus.Meet then
@@ -47,4 +52,5 @@ function WBP_TaskPanel_ChargeCountdown_C:SetWidgetStyle(Status)
     SetImageBrushBySoftObjectPath(self.Img_TaskState, self.TaskEventConfig.EventErrorIcon)
   end
 end
+
 return WBP_TaskPanel_ChargeCountdown_C

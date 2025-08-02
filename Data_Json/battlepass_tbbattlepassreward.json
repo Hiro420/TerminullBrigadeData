@@ -1,0 +1,1622 @@
+[
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 1,
+    "Exp": 0,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 50
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 100009,
+        "value": 1
+      }
+    ],
+    "IsGrandPrize": 1
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 2,
+    "Exp": 1000,
+    "NormalReward": [
+      {
+        "key": 99016,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99016,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 3,
+    "Exp": 2000,
+    "NormalReward": [
+      {
+        "key": 99994,
+        "value": 100
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 4,
+    "Exp": 3000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 20
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 60
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 5,
+    "Exp": 4000,
+    "NormalReward": [
+      {
+        "key": 210001,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 210001,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 1
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 6,
+    "Exp": 5000,
+    "NormalReward": [
+      {
+        "key": 99994,
+        "value": 100
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 7,
+    "Exp": 6000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 50
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 150
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 8,
+    "Exp": 7000,
+    "NormalReward": [
+      {
+        "key": 99994,
+        "value": 100
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 9,
+    "Exp": 8000,
+    "NormalReward": [
+      {
+        "key": 99016,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99016,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 10,
+    "Exp": 9000,
+    "NormalReward": [
+      {
+        "key": 81204,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 81415,
+        "value": 1
+      }
+    ],
+    "IsGrandPrize": 1
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 11,
+    "Exp": 10000,
+    "NormalReward": [
+      {
+        "key": 99994,
+        "value": 100
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 12,
+    "Exp": 11000,
+    "NormalReward": [
+      {
+        "key": 99016,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99016,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 13,
+    "Exp": 12000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 20
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 60
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 14,
+    "Exp": 13000,
+    "NormalReward": [
+      {
+        "key": 99026,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99026,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 15,
+    "Exp": 14000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 100
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 210001,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 1
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 16,
+    "Exp": 15000,
+    "NormalReward": [
+      {
+        "key": 99994,
+        "value": 100
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 17,
+    "Exp": 16000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 50
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 150
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 18,
+    "Exp": 17000,
+    "NormalReward": [
+      {
+        "key": 99026,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99026,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 19,
+    "Exp": 18000,
+    "NormalReward": [
+      {
+        "key": 99016,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99016,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 20,
+    "Exp": 19000,
+    "NormalReward": [
+      {
+        "key": 20700002,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 20703027,
+        "value": 1
+      }
+    ],
+    "IsGrandPrize": 1
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 21,
+    "Exp": 20000,
+    "NormalReward": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99994,
+        "value": 400
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 22,
+    "Exp": 21000,
+    "NormalReward": [
+      {
+        "key": 99016,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99016,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 23,
+    "Exp": 22000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 20
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 60
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 24,
+    "Exp": 23000,
+    "NormalReward": [
+      {
+        "key": 99018,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99018,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 25,
+    "Exp": 24000,
+    "NormalReward": [
+      {
+        "key": 210001,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 210001,
+        "value": 3
+      }
+    ],
+    "IsGrandPrize": 1
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 26,
+    "Exp": 25000,
+    "NormalReward": [
+      {
+        "key": 99026,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99031,
+        "value": 1
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 27,
+    "Exp": 26000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 50
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 150
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 28,
+    "Exp": 27000,
+    "NormalReward": [
+      {
+        "key": 99989,
+        "value": 2000
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99989,
+        "value": 5000
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 29,
+    "Exp": 28000,
+    "NormalReward": [
+      {
+        "key": 99016,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99016,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 30,
+    "Exp": 29000,
+    "NormalReward": [
+      {
+        "key": 10101101,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 10501521,
+        "value": 1
+      }
+    ],
+    "IsGrandPrize": 1
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 31,
+    "Exp": 30000,
+    "NormalReward": [
+      {
+        "key": 99027,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99027,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 32,
+    "Exp": 31000,
+    "NormalReward": [
+      {
+        "key": 99989,
+        "value": 2000
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99989,
+        "value": 5000
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 33,
+    "Exp": 32000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 20
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 60
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 34,
+    "Exp": 33000,
+    "NormalReward": [
+      {
+        "key": 99018,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99018,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 35,
+    "Exp": 34000,
+    "NormalReward": [
+      {
+        "key": 210001,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 210001,
+        "value": 3
+      }
+    ],
+    "IsGrandPrize": 1
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 36,
+    "Exp": 35000,
+    "NormalReward": [
+      {
+        "key": 99033,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99032,
+        "value": 1
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 37,
+    "Exp": 36000,
+    "NormalReward": [
+      {
+        "key": 99989,
+        "value": 2000
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99989,
+        "value": 5000
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 38,
+    "Exp": 37000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 50
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 150
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 39,
+    "Exp": 38000,
+    "NormalReward": [
+      {
+        "key": 99034,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99034,
+        "value": 1
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 40,
+    "Exp": 39000,
+    "NormalReward": [
+      {
+        "key": 82202,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 82402,
+        "value": 1
+      }
+    ],
+    "IsGrandPrize": 1
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 41,
+    "Exp": 40000,
+    "NormalReward": [
+      {
+        "key": 99033,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99033,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 42,
+    "Exp": 41000,
+    "NormalReward": [
+      {
+        "key": 99989,
+        "value": 2000
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99989,
+        "value": 5000
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 43,
+    "Exp": 42000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 50
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 150
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 44,
+    "Exp": 43000,
+    "NormalReward": [
+      {
+        "key": 99034,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99034,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 45,
+    "Exp": 44000,
+    "NormalReward": [
+      {
+        "key": 20720101,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 20720602,
+        "value": 1
+      }
+    ],
+    "IsGrandPrize": 1
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 46,
+    "Exp": 45000,
+    "NormalReward": [
+      {
+        "key": 99028,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99028,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 47,
+    "Exp": 46000,
+    "NormalReward": [
+      {
+        "key": 99989,
+        "value": 2000
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99989,
+        "value": 5000
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 48,
+    "Exp": 47000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 50
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 150
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 49,
+    "Exp": 48000,
+    "NormalReward": [
+      {
+        "key": 99034,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99034,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 50,
+    "Exp": 49000,
+    "NormalReward": [
+      {
+        "key": 10501042,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 10106501,
+        "value": 1
+      }
+    ],
+    "IsGrandPrize": 1
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 51,
+    "Exp": 50000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 52,
+    "Exp": 51000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 53,
+    "Exp": 52000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 54,
+    "Exp": 53000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 55,
+    "Exp": 54000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 56,
+    "Exp": 55000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 57,
+    "Exp": 56000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 58,
+    "Exp": 57000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 59,
+    "Exp": 58000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 60,
+    "Exp": 59000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 61,
+    "Exp": 60000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 62,
+    "Exp": 61000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 63,
+    "Exp": 62000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 64,
+    "Exp": 63000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 65,
+    "Exp": 64000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 66,
+    "Exp": 65000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 67,
+    "Exp": 66000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 68,
+    "Exp": 67000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 69,
+    "Exp": 68000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 1,
+    "BattlePassLevel": 70,
+    "Exp": 69000,
+    "NormalReward": [
+      {
+        "key": 300007,
+        "value": 10
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 300007,
+        "value": 30
+      }
+    ],
+    "IsGrandPrize": 1
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 1,
+    "Exp": 0,
+    "NormalReward": [
+      {
+        "key": 99016,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 100009,
+        "value": 1
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 2,
+    "Exp": 1000,
+    "NormalReward": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99994,
+        "value": 400
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 3,
+    "Exp": 2000,
+    "NormalReward": [
+      {
+        "key": 99016,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99016,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 4,
+    "Exp": 3000,
+    "NormalReward": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99994,
+        "value": 400
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 5,
+    "Exp": 4000,
+    "NormalReward": [
+      {
+        "key": 81204,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 81415,
+        "value": 1
+      }
+    ],
+    "IsGrandPrize": 1
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 6,
+    "Exp": 5000,
+    "NormalReward": [
+      {
+        "key": 99016,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99016,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 7,
+    "Exp": 6000,
+    "NormalReward": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99994,
+        "value": 400
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 8,
+    "Exp": 7000,
+    "NormalReward": [
+      {
+        "key": 20700002,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 20703027,
+        "value": 1
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 9,
+    "Exp": 8000,
+    "NormalReward": [
+      {
+        "key": 99016,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99016,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 10,
+    "Exp": 9000,
+    "NormalReward": [
+      {
+        "key": 10101101,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 10501521,
+        "value": 1
+      }
+    ],
+    "IsGrandPrize": 1
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 11,
+    "Exp": 10000,
+    "NormalReward": [
+      {
+        "key": 99016,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99016,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 12,
+    "Exp": 11000,
+    "NormalReward": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99994,
+        "value": 400
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 13,
+    "Exp": 12000,
+    "NormalReward": [
+      {
+        "key": 99016,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99016,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 14,
+    "Exp": 13000,
+    "NormalReward": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99994,
+        "value": 400
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 15,
+    "Exp": 14000,
+    "NormalReward": [
+      {
+        "key": 20720003,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 10502721,
+        "value": 1
+      }
+    ],
+    "IsGrandPrize": 1
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 16,
+    "Exp": 15000,
+    "NormalReward": [
+      {
+        "key": 99016,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99016,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 17,
+    "Exp": 16000,
+    "NormalReward": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99994,
+        "value": 400
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 18,
+    "Exp": 17000,
+    "NormalReward": [
+      {
+        "key": 82202,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 82402,
+        "value": 1
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 19,
+    "Exp": 18000,
+    "NormalReward": [
+      {
+        "key": 99016,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 99016,
+        "value": 2
+      }
+    ],
+    "IsGrandPrize": 0
+  },
+  {
+    "BattlePassID": 2,
+    "BattlePassLevel": 20,
+    "Exp": 19000,
+    "NormalReward": [
+      {
+        "key": 10102202,
+        "value": 1
+      }
+    ],
+    "PremiumReward": [
+      {
+        "key": 10106501,
+        "value": 1
+      }
+    ],
+    "IsGrandPrize": 1
+  }
+]

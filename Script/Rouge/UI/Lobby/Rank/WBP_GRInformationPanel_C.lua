@@ -1,6 +1,7 @@
 require("Rouge.UI.Battle.Logic.Logic_Scroll")
 local rapidjson = require("rapidjson")
 local WBP_GRInformationPanel_C = UnLua.Class()
+
 function WBP_GRInformationPanel_C:InitSettlemntPlayerInfo(BoardName, RankInfo)
   local boardName = "?boardName=" .. BoardName
   local uniqueIDs = "&&uniqueIDs=" .. RankInfo.uniqueID
@@ -12,6 +13,7 @@ function WBP_GRInformationPanel_C:InitSettlemntPlayerInfo(BoardName, RankInfo)
     self.OnFail
   })
 end
+
 function WBP_GRInformationPanel_C:OnSuccess(JsonResponse)
   local Response = rapidjson.decode(JsonResponse.Content)
   if Response.datas and Response.datas[1] then
@@ -25,8 +27,10 @@ function WBP_GRInformationPanel_C:OnSuccess(JsonResponse)
   self:UpdateScrollList()
   self:UpdateView()
 end
+
 function WBP_GRInformationPanel_C:OnFail(JsonResponse)
 end
+
 function WBP_GRInformationPanel_C:InitTitle()
   self.RGToggleGroupPlayerInfoTitle:ClearGroup()
   for i, PlayerInfo in ipairs(self.PlayerInfoList) do
@@ -41,6 +45,7 @@ function WBP_GRInformationPanel_C:InitTitle()
   UpdateVisibility(self.CanvasPanelLeft, #self.PlayerInfoList > 1)
   UpdateVisibility(self.CanvasPanelRight, #self.PlayerInfoList > 1)
 end
+
 function WBP_GRInformationPanel_C:UpdateGenericList()
   local passiveModifyAry = self.PlayerInfoList[1].genericModifyList
   local index = 1
@@ -54,6 +59,7 @@ function WBP_GRInformationPanel_C:UpdateGenericList()
   end
   HideOtherItem(self.WrapBoxGenericModify, index)
 end
+
 function WBP_GRInformationPanel_C:UpdateScrollList()
   for i = 1, Logic_Scroll.MaxScrollNum do
     local v
@@ -66,6 +72,7 @@ function WBP_GRInformationPanel_C:UpdateScrollList()
   end
   HideOtherItem(self.WrapBoxScrollList, Logic_Scroll.MaxScrollNum + 1)
 end
+
 function WBP_GRInformationPanel_C:UpdateGenericModifyTipsFunc(bIsShow, Data, ModifyChooseTypeParam, Slot)
   if bIsShow then
     if ModifyChooseTypeParam == ModifyChooseType.GenericModify then
@@ -78,6 +85,7 @@ function WBP_GRInformationPanel_C:UpdateGenericModifyTipsFunc(bIsShow, Data, Mod
     self.WBP_GenericModifyBagTips:Hide()
   end
 end
+
 function WBP_GRInformationPanel_C:UpdateShowPickupTipsView(bIsShowTipsView, ScrollId, TargetItem, ScrollTipsOpenType, bIsNeedInit)
   if ScrollId and ScrollId > 0 then
     self.WBP_ScrollPickUpTipsView:InitScrollTipsView(ScrollId, ScrollTipsOpenType, TargetItem, bIsNeedInit)
@@ -87,6 +95,7 @@ function WBP_GRInformationPanel_C:UpdateShowPickupTipsView(bIsShowTipsView, Scro
     UpdateVisibility(self.WBP_ScrollPickUpTipsView, false)
   end
 end
+
 function WBP_GRInformationPanel_C:UpdateScrollSetTips(bIsShow, ActivatedSetData, ScrollSetItem)
   UpdateVisibility(self.WBP_ScrollSetTips, bIsShow)
   if bIsShow then
@@ -100,6 +109,7 @@ function WBP_GRInformationPanel_C:UpdateScrollSetTips(bIsShow, ActivatedSetData,
     end
   end
 end
+
 function WBP_GRInformationPanel_C:UpdateView()
   local Diff = 0
   self.RGTextDiffculty:SetText(Diff)
@@ -110,4 +120,5 @@ function WBP_GRInformationPanel_C:UpdateView()
   local TimeStr = string.format("%02d:%02d:%02d", Hour, Min, Sec)
   self.RGTextTime:SetText(TimeStr)
 end
+
 return WBP_GRInformationPanel_C

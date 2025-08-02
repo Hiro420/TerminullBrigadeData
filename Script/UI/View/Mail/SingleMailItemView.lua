@@ -1,19 +1,24 @@
 local SingleMailItemView = UnLua.Class()
 local MailData = require("Modules.Mail.MailData")
+
 function SingleMailItemView:Construct()
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
   self.Btn_Main.OnHovered:Add(self, self.BindOnMainButtonHovered)
   self.Btn_Main.OnUnhovered:Add(self, self.BindOnMainButtonUnhovered)
 end
+
 function SingleMailItemView:BindOnMainButtonClicked()
   EventSystem.Invoke(EventDef.Mail.OnChangeMailItemSelected, self.DataObj)
 end
+
 function SingleMailItemView:BindOnMainButtonHovered()
   self.HoverPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function SingleMailItemView:BindOnMainButtonUnhovered()
   self.HoverPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function SingleMailItemView:OnListItemObjectSet(DataObj)
   self.MailId = DataObj.Id
   self.DataObj = DataObj
@@ -31,6 +36,7 @@ function SingleMailItemView:OnListItemObjectSet(DataObj)
   local DateTimeStr = os.date("%Y-%m-%d", MailInfo.sendTime)
   self.Txt_SendTime:SetText(DateTimeStr)
 end
+
 function SingleMailItemView:UpdateReadStatus()
   local MailInfo = MailData:GetMailInfoById(self.MailId)
   local IconSoftObj
@@ -49,6 +55,7 @@ function SingleMailItemView:UpdateReadStatus()
   self:RefreshTitleAndSendTimeColorAndOpacity()
   self:RefreshFrameImgVis()
 end
+
 function SingleMailItemView:UpdateReceiveAttachmentStatus()
   local MailInfo = MailData:GetMailInfoById(self.MailId)
   if MailInfo.IsHaveAttachment and MailInfo.IsReceiveAttachment then
@@ -60,6 +67,7 @@ function SingleMailItemView:UpdateReceiveAttachmentStatus()
   self:RefreshTitleAndSendTimeColorAndOpacity()
   self:RefreshFrameImgVis()
 end
+
 function SingleMailItemView:RefreshGitColorAndOpacity(...)
   local MailInfo = MailData:GetMailInfoById(self.MailId)
   if MailInfo.IsHaveAttachment then
@@ -72,6 +80,7 @@ function SingleMailItemView:RefreshGitColorAndOpacity(...)
     end
   end
 end
+
 function SingleMailItemView:RefreshReadStatusColorAndOpacity(...)
   self.Img_ReadStatus:SetColorAndOpacity(self.NormalReadStatusColor)
   local MailInfo = MailData:GetMailInfoById(self.MailId)
@@ -79,6 +88,7 @@ function SingleMailItemView:RefreshReadStatusColorAndOpacity(...)
     self.Img_ReadStatus:SetColorAndOpacity(self.ReceivedReadStatusColor)
   end
 end
+
 function SingleMailItemView:RefreshTitleAndSendTimeColorAndOpacity(...)
   local MailInfo = MailData:GetMailInfoById(self.MailId)
   if self.IsSelected then
@@ -100,6 +110,7 @@ function SingleMailItemView:RefreshTitleAndSendTimeColorAndOpacity(...)
     self.Txt_SendTime:SetColorAndOpacity(self.UnSelectedTimeColor)
   end
 end
+
 function SingleMailItemView:RefreshBottomColorAndOpacity(...)
   local MailInfo = MailData:GetMailInfoById(self.MailId)
   if MailInfo.IsHaveAttachment then
@@ -114,6 +125,7 @@ function SingleMailItemView:RefreshBottomColorAndOpacity(...)
     self.Img_Bottom:SetColorAndOpacity(self.UnReceivedBottomColor)
   end
 end
+
 function SingleMailItemView:RefreshFrameImgVis(...)
   local MailInfo = MailData:GetMailInfoById(self.MailId)
   if self.IsSelected then
@@ -124,10 +136,12 @@ function SingleMailItemView:RefreshFrameImgVis(...)
     UpdateVisibility(self.Img_kuang, true)
   end
 end
+
 function SingleMailItemView:BP_OnEntryReleased()
   self.MailId = ""
   self.DataObj = nil
 end
+
 function SingleMailItemView:BP_OnItemSelectionChanged(IsSelected)
   self.IsSelected = IsSelected
   self:RefreshGitColorAndOpacity()
@@ -140,4 +154,5 @@ function SingleMailItemView:BP_OnItemSelectionChanged(IsSelected)
     self.Img_Select:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 return SingleMailItemView

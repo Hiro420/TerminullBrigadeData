@@ -1,8 +1,11 @@
 local WBP_SettlementWorldItem_C = UnLua.Class()
+
 function WBP_SettlementWorldItem_C:Construct()
 end
+
 function WBP_SettlementWorldItem_C:Destruct()
 end
+
 function WBP_SettlementWorldItem_C:Init(WorldInfo)
   UpdateVisibility(self, true)
   self:PlayAnimation(self.Ani_in)
@@ -43,7 +46,9 @@ function WBP_SettlementWorldItem_C:Init(WorldInfo)
   SetImageBrushBySoftObject(self.URGImageUnFinish, WorldInfo.WorldBg)
   self.RGTextWorldName:SetText(WorldInfo.Name)
 end
+
 function WBP_SettlementWorldItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return WBP_SettlementWorldItem_C

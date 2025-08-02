@@ -1,9 +1,12 @@
 local ChipData = require("Modules.Chip.ChipData")
 local WBP_CurrencyGemTips = UnLua.Class()
+
 function WBP_CurrencyGemTips:Construct()
 end
+
 function WBP_CurrencyGemTips:Destruct()
 end
+
 function WBP_CurrencyGemTips:InitCurrencyGemTips()
   self:StopAnimation(self.Ani_out)
   self:PlayAnimation(self.Ani_in)
@@ -44,13 +47,16 @@ function WBP_CurrencyGemTips:InitCurrencyGemTips()
   end
   HideOtherItem(self.VerticalBox_GemTipsItem, Idx, true)
 end
+
 function WBP_CurrencyGemTips:OnAnimationFinished(Ani)
   if self.Ani_out == Ani then
     UpdateVisibility(self, false)
   end
 end
+
 function WBP_CurrencyGemTips:Hide()
   self:StopAnimation(self.Ani_in)
   self:PlayAnimation(self.Ani_out)
 end
+
 return WBP_CurrencyGemTips

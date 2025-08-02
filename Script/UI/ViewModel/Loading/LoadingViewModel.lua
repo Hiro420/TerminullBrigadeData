@@ -7,6 +7,7 @@ local HttpService = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(RGUti
 local LoadingViewModel = CreateDefaultViewModel()
 LoadingViewModel.propertyBindings = {}
 LoadingViewModel.subViewModels = {}
+
 function LoadingViewModel:OnInit()
   self.Super.OnInit(self)
   local RGHttpClientMgr = UE.URGHttpClientMgr.Get()
@@ -15,6 +16,7 @@ function LoadingViewModel:OnInit()
     RGHttpClientMgr.OnHttpHideLoadingDelegate:Bind(GameInstance, self.OnHideLoading)
   end
 end
+
 function LoadingViewModel:OnShutdown()
   local RGHttpClientMgr = UE.URGHttpClientMgr.Get()
   if RGHttpClientMgr then
@@ -23,9 +25,11 @@ function LoadingViewModel:OnShutdown()
   end
   self.Super.OnShutdown(self)
 end
+
 function LoadingViewModel:RegisterPropertyChanged(BindingTable, View)
   self.Super.RegisterPropertyChanged(self, BindingTable, View)
 end
+
 function LoadingViewModel:OnShowLoading(HttpRequestId)
   local loadingVM = UIModelMgr:Get("LoadingViewModel")
   if not loadingVM then
@@ -41,6 +45,7 @@ function LoadingViewModel:OnShowLoading(HttpRequestId)
     UIMgr:Show(ViewID.UI_HttpRequestLoadingView)
   end
 end
+
 function LoadingViewModel:OnHideLoading(HttpRequestId)
   local loadingVM = UIModelMgr:Get("LoadingViewModel")
   if not loadingVM then
@@ -54,6 +59,7 @@ function LoadingViewModel:OnHideLoading(HttpRequestId)
     UIMgr:Hide(ViewID.UI_HttpRequestLoadingView)
   end
 end
+
 function LoadingViewModel:CheckNeedHideLoading()
   for i, v in pairs(self.RequestIdDic) do
     if v then
@@ -62,7 +68,9 @@ function LoadingViewModel:CheckNeedHideLoading()
   end
   return true
 end
+
 function LoadingViewModel:ClearRequestIdDic()
   self.RequestIdDic = {}
 end
+
 return LoadingViewModel

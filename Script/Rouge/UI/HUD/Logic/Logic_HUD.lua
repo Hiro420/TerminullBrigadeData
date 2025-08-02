@@ -23,6 +23,7 @@ LogicHUD = LogicHUD or {
   HUDWidgetList = {},
   bHadShowBattleLagacy = false
 }
+
 function LogicHUD:Init()
   LogicHUD.UIWidget = nil
   LogicHUD.IsLogInteract = false
@@ -39,6 +40,7 @@ function LogicHUD:Init()
   LogicBattleMode:Init()
   LogicHUD.RiftMap = {}
 end
+
 function LogicHUD:RegistWidgetToManager(WidgetObj)
   if not WidgetObj or not WidgetObj:IsValid() then
     return
@@ -46,6 +48,7 @@ function LogicHUD:RegistWidgetToManager(WidgetObj)
   local WidgetName = UE.UKismetSystemLibrary.GetDisplayName(WidgetObj)
   LogicHUD.HUDWidgetList[WidgetName] = WidgetObj
 end
+
 function LogicHUD:UnRegistWidgetToManager(WidgetObj)
   if not WidgetObj or not WidgetObj:IsValid() then
     return
@@ -53,6 +56,7 @@ function LogicHUD:UnRegistWidgetToManager(WidgetObj)
   local WidgetName = UE.UKismetSystemLibrary.GetDisplayName(WidgetObj)
   LogicHUD.HUDWidgetList[WidgetName] = nil
 end
+
 function LogicHUD.BindOnShowOrHideHUDWidget(IsShow, WidgetName)
   local TargetWidget = LogicHUD.HUDWidgetList[WidgetName]
   if not TargetWidget then
@@ -61,6 +65,7 @@ function LogicHUD.BindOnShowOrHideHUDWidget(IsShow, WidgetName)
   end
   UpdateVisibility(TargetWidget, IsShow)
 end
+
 function LogicHUD.BindOnPlayerLeaveBattle(InUserId)
   print("LogicHUD.BindOnPlayerLeaveBattle", InUserId)
   local TeamSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTeamSubsystem:StaticClass())
@@ -72,9 +77,11 @@ function LogicHUD.BindOnPlayerLeaveBattle(InUserId)
     PlayerInfo.name
   })
 end
+
 function LogicHUD.BindOnShowDisplayLevelsWidget()
   RGUIMgr:OpenUI(UIConfig.WBP_DisplayLevels_C.UIName)
 end
+
 function LogicHUD.BindOnWorldTimeStatusChange(status)
   if status then
     return
@@ -87,6 +94,7 @@ function LogicHUD.BindOnWorldTimeStatusChange(status)
     SurvivalTips:InitTitle(1623)
   end
 end
+
 local GetOptimalTargetInteractTipId = function(OptimalTarget)
   local InteractComp = OptimalTarget:GetComponentByClass(UE.URGInteractComponent:StaticClass())
   if not InteractComp then
@@ -98,6 +106,7 @@ local GetOptimalTargetInteractTipId = function(OptimalTarget)
   end
   return TipId
 end
+
 function LogicHUD:BindPCEvent()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if Character then
@@ -120,6 +129,7 @@ function LogicHUD:BindPCEvent()
     end
   end
 end
+
 function LogicHUD.Clear()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if Character then
@@ -169,16 +179,22 @@ function LogicHUD.Clear()
   EventSystem.RemoveListenerNew(EventDef.Puzzle.OnPuzzlePickup, nil, LogicHUD.OnChipListPickUp)
   LogicAudio.OnTreasureBoxStopCharge()
 end
+
 function LogicHUD:BindOnCharacterDying(Character, CountDown)
 end
+
 function LogicHUD:BindOnCharacterDeath(Character)
 end
+
 function LogicHUD:BindOnCharacterRescue(Character)
 end
+
 function LogicHUD:BindOnCharacterPauseDying(Character)
 end
+
 function LogicHUD:BindOnCharacterUnPauseDying(Character)
 end
+
 function LogicHUD:BindOnCharacterWillBeingAttackStateChange(State)
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if not UIManager then
@@ -199,6 +215,7 @@ function LogicHUD:BindOnCharacterWillBeingAttackStateChange(State)
     LogicHUD.RemoveBeingAttackList()
   end
 end
+
 function LogicHUD.RemoveBeingAttackList()
   if LogicHUD.BeingAttackList[1] then
     table.remove(LogicHUD.BeingAttackList, 1)
@@ -212,11 +229,13 @@ function LogicHUD.RemoveBeingAttackList()
     HUD.RedWarningTip:ShowRedWarning()
   end
 end
+
 function LogicHUD:BindOnCharacterEnterStateFailed(Character, StateTag)
   local WaveManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
   if WaveManager then
   end
 end
+
 function LogicHUD:BindOnOptimalTargetChanged(OptimalTargetParam)
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if not UIManager then
@@ -261,12 +280,14 @@ function LogicHUD:BindOnOptimalTargetChanged(OptimalTargetParam)
   LogicHUD.PreOptimalTarget = nil
   EventSystem.Invoke(EventDef.Interact.OnOptimalTargetChanged, nil)
 end
+
 function LogicHUD:CheckCanScrollInteract()
   if not LogicHUD:GetCanInteractTargetList() then
     return false
   end
   return LogicHUD:GetCanInteractTargetList():Num() > 1
 end
+
 function LogicHUD:GetCanInteractTargetList()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -300,6 +321,7 @@ function LogicHUD:GetCanInteractTargetList()
   end
   return TargetList
 end
+
 function LogicHUD.UpdateScrollInteract()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if not UIManager then
@@ -358,6 +380,7 @@ function LogicHUD.UpdateScrollInteract()
     end
   end
 end
+
 function LogicHUD:ScrollInteract(bIsNext)
   local CurIdx = LogicHUD.CurInteractIdx
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
@@ -412,6 +435,7 @@ function LogicHUD:ScrollInteract(bIsNext)
     EventSystem.Invoke(EventDef.Interact.OnOptimalTargetChanged, Target)
   end
 end
+
 function LogicHUD:BindOnBeginInteractChanged(Target)
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if not UIManager then
@@ -439,6 +463,7 @@ function LogicHUD:BindOnBeginInteractChanged(Target)
     end
   end
 end
+
 function LogicHUD:BindOnCancelInteractChanged(Target, Instigator, bTryInteractFailed)
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if not UIManager then
@@ -466,6 +491,7 @@ function LogicHUD:BindOnCancelInteractChanged(Target, Instigator, bTryInteractFa
     end
   end
 end
+
 function LogicHUD:BindOnFinishInteractChanged(Target, Instigator)
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if not UIManager then
@@ -494,6 +520,7 @@ function LogicHUD:BindOnFinishInteractChanged(Target, Instigator)
     end
   end
 end
+
 function LogicHUD:BindOnAbilityActivatedFailed(AbilityID, TipId)
   LogicAudio.OnSkillLack(AbilityID)
   if -1 ~= TipId then
@@ -505,6 +532,7 @@ function LogicHUD:BindOnAbilityActivatedFailed(AbilityID, TipId)
     print("LogicHUD:BindOnAbilityActivatedFailed not found Skill Failed Tip Id, Fail Type is", FailType)
   end
 end
+
 function LogicHUD:UpdateGenericModifyListShow(bIsShow)
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if not UIManager then
@@ -517,6 +545,7 @@ function LogicHUD:UpdateGenericModifyListShow(bIsShow)
   end
   HUD:UpdateGenericModifyListShow(bIsShow)
 end
+
 function LogicHUD:CreateHUD()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if UIManager then
@@ -532,6 +561,7 @@ function LogicHUD:CreateHUD()
     LogicRadio.TriggerStartRadio()
   end
 end
+
 function LogicHUD.RefreshHUDEvent()
   if not LogicHUD.UIWidget then
     return
@@ -541,12 +571,14 @@ function LogicHUD.RefreshHUDEvent()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   EventSystem.Invoke(EventDef.Battle.OnControlledPawnChanged, Character)
 end
+
 function LogicHUD:InitAffiliatedWidget()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if UIManager then
     RGUIMgr:OpenUI(UIConfig.WBP_NormalPickTipList_C.UIName)
   end
 end
+
 function LogicHUD:InitWidgetBindEvent()
   if not LogicHUD.UIWidget then
     return
@@ -577,6 +609,7 @@ function LogicHUD:InitWidgetBindEvent()
     UIManager.ReadyDelegate:Broadcast(LogicHUD.UIWidget)
   end
 end
+
 function LogicHUD:BindOnGMButtonClicked()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if UIManager then
@@ -585,12 +618,15 @@ function LogicHUD:BindOnGMButtonClicked()
     LogicHUD.UIWidget:ChangeGMButtonVisibility(false)
   end
 end
+
 function LogicHUD:BindOnDSNameButtonClicked()
   UE.URGBlueprintLibrary.CopyMessageToClipboard(tostring(LogicHUD.UIWidget.Txt_DSName:GetText()))
 end
+
 function LogicHUD.OnEnterOccupancyLevel()
   LogicOccupancy:CreateWidget()
 end
+
 function LogicHUD.OnChestActivate(ChestActor)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -620,6 +656,7 @@ function LogicHUD.OnChestActivate(ChestActor)
     end
   end
 end
+
 function LogicHUD.OnTeamBoxUpdatePlayerNum(TargetActor, MaxPlayerNum, CurPlayerNum)
   if LogicHUD.TeamBoxTriggeredTb and table.Contain(LogicHUD.TeamBoxTriggeredTb, TargetActor) then
     return
@@ -632,14 +669,17 @@ function LogicHUD.OnTeamBoxUpdatePlayerNum(TargetActor, MaxPlayerNum, CurPlayerN
     WaveManager:ShowWaveWindow(1080, Param)
   end
 end
+
 function LogicHUD.OnTeamBoxTrigger(TargetActor)
   if not LogicHUD.TeamBoxTriggeredTb then
     LogicHUD.TeamBoxTriggeredTb = {}
   end
   table.insert(LogicHUD.TeamBoxTriggeredTb, TargetActor)
 end
+
 function LogicHUD.OnPickupFailed(TargetActor)
 end
+
 function LogicHUD.OnPickupReasonChanged(Instigator, PickupFailedReason)
   if UE.RGUtil.IsDedicatedServer() then
     return
@@ -671,6 +711,7 @@ function LogicHUD.OnPickupReasonChanged(Instigator, PickupFailedReason)
     end
   end
 end
+
 function LogicHUD.OnLightingWarning(Character)
   print("LogicHUD.OnLightingWarning1", Character)
   local ownerCharacter = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
@@ -683,6 +724,7 @@ function LogicHUD.OnLightingWarning(Character)
     WaveManager:ShowWaveWindow(1132)
   end
 end
+
 function LogicHUD.OnVirusWarning(Character)
   print("LogicHUD.OnVirusWarning1", Character)
   local ownerCharacter = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
@@ -695,6 +737,7 @@ function LogicHUD.OnVirusWarning(Character)
     WaveManager:ShowWaveWindow(1177)
   end
 end
+
 function LogicHUD.OnTornadoWarning(Character)
   print("LogicHUD.OnTornadoWarning1", Character)
   local ownerCharacter = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
@@ -712,6 +755,7 @@ function LogicHUD.OnTornadoWarning(Character)
     WaveManager:ShowWaveWindow(1131)
   end
 end
+
 function LogicHUD.OnVirusFirstTrace(Character)
   local ownerCharacter = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if ownerCharacter ~= Character then
@@ -722,6 +766,7 @@ function LogicHUD.OnVirusFirstTrace(Character)
     WaveManager:ShowWaveWindow(1233)
   end
 end
+
 function LogicHUD.OnVirusInit(Character)
   local ownerCharacter = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if ownerCharacter ~= Character then
@@ -732,6 +777,7 @@ function LogicHUD.OnVirusInit(Character)
     WaveManager:ShowWaveWindow(1234)
   end
 end
+
 function LogicHUD.OnLevelAffix(Name, WeatherType, Id)
   print("LogicHUD:OnLevelAffix1", Name, Id)
   LogicHUD.ShowLevelRadioWidow(Id)
@@ -756,6 +802,7 @@ function LogicHUD.OnLevelAffix(Name, WeatherType, Id)
     end
   end
 end
+
 function LogicHUD.ShowLevelRadioWidow(LevelAffixesID)
   local result, row = GetRowData(DT.DT_LevelAffixes, tostring(LevelAffixesID))
   if result then
@@ -765,6 +812,7 @@ function LogicHUD.ShowLevelRadioWidow(LevelAffixesID)
     end
   end
 end
+
 function LogicHUD.OnLevelRiftSpawn(SpawnID, TimeOffStamp, SpawnTimeStamp, TimeOffUTCStamp)
   LogicHUD.RiftMap[SpawnID] = TimeOffStamp
   local customTask = LogicTaskPanel.CreatCustomTaskData("Rift" .. SpawnID, "Rift", TimeOffUTCStamp, SpawnTimeStamp)
@@ -776,6 +824,7 @@ function LogicHUD.OnLevelRiftSpawn(SpawnID, TimeOffStamp, SpawnTimeStamp, TimeOf
     hudWidget:ShowRift(TimeOffUTCStamp, SpawnTimeStamp, TimeOffStamp)
   end
 end
+
 function LogicHUD.OnLevelRiftTimeOff(SpawnID, bNotCleanedLevel)
   local customTask = LogicTaskPanel.CreatCustomTaskData("Rift" .. SpawnID, "Rift")
   customTask.Status = UE.ERGActionEventTaskStatus.Fail
@@ -789,6 +838,7 @@ function LogicHUD.OnLevelRiftTimeOff(SpawnID, bNotCleanedLevel)
     end
   end
 end
+
 function LogicHUD.OnChipListPickUp(Picker, ChipList)
   local PC = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if PC ~= Picker then
@@ -798,6 +848,7 @@ function LogicHUD.OnChipListPickUp(Picker, ChipList)
   Param.IntArray0 = ChipList
   ShowWaveWindowWithDelegate(1205, {}, nil, nil, Param)
 end
+
 function LogicHUD.OnLevelRiftDestroyed(SpawnID, bNotCleanedLevel)
   local customTask = LogicTaskPanel.CreatCustomTaskData("Rift" .. SpawnID, "Rift")
   customTask.Status = UE.ERGActionEventTaskStatus.Complete
@@ -811,18 +862,22 @@ function LogicHUD.OnLevelRiftDestroyed(SpawnID, bNotCleanedLevel)
     end
   end
 end
+
 function LogicHUD:UpdateActiveAwardNpcNum(ChangeNum)
   LogicHUD.ActiveAwardNpcNum = LogicHUD.ActiveAwardNpcNum + ChangeNum
   if ChangeNum > 0 then
     EventSystem.Invoke(EventDef.NPCAward.NPCAwardNumAdd)
   end
 end
+
 function LogicHUD:GetActiveAwardNpcNum()
   return LogicHUD.ActiveAwardNpcNum
 end
+
 function LogicHUD.GetUIWidget()
   return LogicHUD.UIWidget
 end
+
 function LogicHUD.GetHUDActor()
   local UIWidget = LogicHUD.UIWidget
   if not UIWidget then

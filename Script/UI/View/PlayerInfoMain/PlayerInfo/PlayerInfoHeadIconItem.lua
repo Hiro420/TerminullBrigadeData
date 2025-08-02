@@ -1,8 +1,10 @@
 local PlayerInfoData = require("Modules.PlayerInfoMain.PlayerInfo.PlayerInfoData")
 local PlayerInfoHeadIconItem = Class()
+
 function PlayerInfoHeadIconItem:Construct()
   self.Overridden.Construct(self)
 end
+
 function PlayerInfoHeadIconItem:InitPlayerInfoHeadIconItem(PortraitId, HeadIconState)
   local tbPortraitData = LogicLobby.GetPlayerPortraitTableRowInfo(PortraitId)
   if not tbPortraitData then
@@ -33,13 +35,17 @@ function PlayerInfoHeadIconItem:InitPlayerInfoHeadIconItem(PortraitId, HeadIconS
     end
   end
 end
+
 function PlayerInfoHeadIconItem:Hide()
   UpdateVisibility(self, false)
 end
+
 function PlayerInfoHeadIconItem:OnMouseEnter(MyGeometry, MouseEvent)
   self.RGStateControllerHover:ChangeStatus(EHover.Hover)
 end
+
 function PlayerInfoHeadIconItem:OnMouseLeave(MyGeometry, MouseEvent)
   self.RGStateControllerHover:ChangeStatus(EHover.UnHover)
 end
+
 return PlayerInfoHeadIconItem

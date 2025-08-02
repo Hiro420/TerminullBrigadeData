@@ -5,6 +5,7 @@ local EPlayerInfoChangeTipsItemType = {
   ChangeBanner = 3,
   ChangeBadges = 4
 }
+
 function PlayerInfoChangeTips:InitPlayerInfoChangeTips(ParentView)
   self:StopAnimation(self.Ani_out)
   UpdateVisibility(self, true)
@@ -14,6 +15,7 @@ function PlayerInfoChangeTips:InitPlayerInfoChangeTips(ParentView)
   self.viewModel = UIModelMgr:Get("PlayerInfoViewModel")
   self:PlayAnimation(self.Ani_in)
 end
+
 function PlayerInfoChangeTips:OnToggleGroupChanged(SelectId)
   local bNeedShowMask = true
   if SelectId == EPlayerInfoChangeTipsItemType.ChangeNickName then
@@ -45,14 +47,17 @@ function PlayerInfoChangeTips:OnToggleGroupChanged(SelectId)
     end
   end
 end
+
 function PlayerInfoChangeTips:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     UpdateVisibility(self, false)
   end
 end
+
 function PlayerInfoChangeTips:Hide()
   self.RGToggleGroupChangeTipsItem.OnCheckStateChanged:Remove(self, self.OnToggleGroupChanged)
   SetHitTestInvisible(self)
   self:PlayAnimation(self.Ani_out)
 end
+
 return PlayerInfoChangeTips

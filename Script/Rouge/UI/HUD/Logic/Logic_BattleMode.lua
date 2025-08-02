@@ -2,6 +2,7 @@ LogicBattleMode = LogicBattleMode or {
   BattleModeStage = {Assembly = 1, Challenge = 2}
 }
 local HappyJumpBattleModeId = 1002
+
 function LogicBattleMode:Init()
   LogicBattleMode.UIWidget = nil
   if UE.URGGameplayStatics.GetStartedUpBattleMode(UE.RGUtil.GetWorld()) then
@@ -10,11 +11,13 @@ function LogicBattleMode:Init()
   ListenObjectMessage(nil, GMP.MSG_World_BattleMode_Startup, GameInstance, LogicBattleMode.BindOnBattleStartUp)
   ListenObjectMessage(nil, GMP.MSG_World_BattleMode_Shutdown, GameInstance, LogicBattleMode.BindOnBattleShutdown)
 end
+
 function LogicBattleMode:InitWidgetBindEvent()
   if not self.UIWidget then
     return
   end
 end
+
 function LogicBattleMode.Clear()
   if LogicBattleMode.BattleMode then
     LogicBattleMode.BattleMode.OnFinished:Remove(GameInstance, LogicBattleMode.BindOnFinished)
@@ -44,6 +47,7 @@ function LogicBattleMode.Clear()
   end
   UnListenObjectMessage("World.BattleMode.Startup")
 end
+
 function LogicBattleMode.CreateWidget()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if UIManager then
@@ -59,9 +63,11 @@ function LogicBattleMode.CreateWidget()
     end
   end
 end
+
 function LogicBattleMode.GetUIWidget()
   return LogicBattleMode.UIWidget
 end
+
 function LogicBattleMode.BindOnBattleStartUp(BattleMode)
   if not BattleMode then
     return
@@ -92,6 +98,7 @@ function LogicBattleMode.BindOnBattleStartUp(BattleMode)
     end
   end
 end
+
 function LogicBattleMode.BindOnBattleShutdown(BattleMode)
   if not BattleMode or LogicBattleMode.BattleMode == nil then
     return
@@ -108,6 +115,7 @@ function LogicBattleMode.BindOnBattleShutdown(BattleMode)
   UpdateVisibility(WidgetLeftCom.WBP_HUDInfo, true)
   UpdateVisibility(WidgetLeftCom.WBP_BattleMode_EnergyBar, false)
 end
+
 function LogicBattleMode:BindOnAssemblyStageBegin()
   if LogicBattleMode.UIWidget then
     LogicBattleMode.UIWidget:BeginAssembly()
@@ -128,12 +136,14 @@ function LogicBattleMode:BindOnAssemblyStageBegin()
     end
   end
 end
+
 function LogicBattleMode:BindOnAssemblyStageEnd()
   print(LogicBattleMode.UIWidget)
   if LogicBattleMode.UIWidget then
     LogicBattleMode.UIWidget:EndAssembly()
   end
 end
+
 function LogicBattleMode:BindOnChallengeStageBegin()
   if LogicBattleMode.UIWidget then
     LogicBattleMode.UIWidget:BeginChanllenge()
@@ -160,11 +170,13 @@ function LogicBattleMode:BindOnChallengeStageBegin()
     end
   end
 end
+
 function LogicBattleMode:BindOnChallengeStageEnd()
   if LogicBattleMode.UIWidget then
     LogicBattleMode.UIWidget:EndChallenge()
   end
 end
+
 function LogicBattleMode:BindOnFinished()
   if LogicBattleMode.UIWidget then
     LogicBattleMode.UIWidget:ShowSuccess()
@@ -174,6 +186,7 @@ function LogicBattleMode:BindOnFinished()
     UpdateVisibility(LogicHUD.GetHUDActor().RGWidgetRight.WBP_WeaponList, true)
   end
 end
+
 function LogicBattleMode:BindOnFailed(LevelGameplay)
   if LogicBattleMode.UIWidget then
     LogicBattleMode.UIWidget:ShowFailed()
@@ -183,11 +196,13 @@ function LogicBattleMode:BindOnFailed(LevelGameplay)
     UpdateVisibility(LogicHUD.GetHUDActor().RGWidgetRight.WBP_WeaponList, true)
   end
 end
+
 function LogicBattleMode:BindOnShutdown(LevelGameplay)
   if LogicBattleMode.UIWidget then
     LogicBattleMode.UIWidget:OccupancyShutdown()
   end
 end
+
 function LogicBattleMode:GetDuration(BattleModeStageParam)
   if LogicBattleMode.BattleMode and LogicBattleMode.BattleMode.StageArray:IsValidIndex(BattleModeStageParam) then
     local Stage = LogicBattleMode.BattleMode.StageArray:Get(BattleModeStageParam)
@@ -198,6 +213,7 @@ function LogicBattleMode:GetDuration(BattleModeStageParam)
   end
   return 0
 end
+
 function LogicBattleMode:GetDurationProgress(BattleModeStageParam)
   if LogicBattleMode.BattleMode and LogicBattleMode.BattleMode.StageArray:IsValidIndex(BattleModeStageParam) then
     local Stage = LogicBattleMode.BattleMode.StageArray:Get(BattleModeStageParam)

@@ -1,5 +1,6 @@
 local WBP_MainCross_C = UnLua.Class()
 local CostAmmoPolicyPath = "/Game/Rouge/Gameplay/Weapon/Policy/BP_LaunchPolicy_CostAmmoCharge.BP_LaunchPolicy_CostAmmoCharge_C"
+
 function WBP_MainCross_C:Construct()
   self.OwningCharacter = self:GetOwningPlayerPawn()
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
@@ -33,6 +34,7 @@ function WBP_MainCross_C:Construct()
   ListenObjectMessage(nil, GMP.MSG_World_Character_OnEnterState, self, self.BindOnCharacterEnterState)
   ListenObjectMessage(nil, GMP.MSG_World_Character_OnExitState, self, self.BindOnCharacterExitState)
 end
+
 function WBP_MainCross_C:BindOnInitReloadQTE(TargetActor, OldPercent, NewPercent)
   if TargetActor ~= self.OwningCharacter then
     return
@@ -51,6 +53,7 @@ function WBP_MainCross_C:BindOnInitReloadQTE(TargetActor, OldPercent, NewPercent
   self.Img_QTEReloadingProgress:SetRenderTransformAngle(Angle)
   self.Img_QTEReloadingProgress:SetColorAndOpacity(self.QTEReloadSuccessColor)
 end
+
 function WBP_MainCross_C:BindOnReloadQTESucceed(TargetActor)
   if TargetActor ~= self.OwningCharacter then
     return
@@ -59,6 +62,7 @@ function WBP_MainCross_C:BindOnReloadQTESucceed(TargetActor)
   self.Img_QTEReloadingProgress:SetColorAndOpacity(self.QTEReloadSuccessColor)
   self:PlayAnimationForward(self.Ani_QTE_succeed)
 end
+
 function WBP_MainCross_C:BindOnReloadQTEFailed(TargetActor)
   if TargetActor ~= self.OwningCharacter then
     return
@@ -67,11 +71,13 @@ function WBP_MainCross_C:BindOnReloadQTEFailed(TargetActor)
   self.Img_QTEReloadingProgress:SetColorAndOpacity(self.QTEReloadFailColor)
   self:PlayAnimationForward(self.Ani_QTE_defeat)
 end
+
 function WBP_MainCross_C:BindOnCharacterEnterState(TargetActor, Tag)
   if TargetActor ~= self.OwningCharacter then
     return
   end
 end
+
 function WBP_MainCross_C:BindOnCharacterExitState(TargetActor, Tag, bBlocked)
   if TargetActor ~= self.OwningCharacter then
     return
@@ -86,6 +92,7 @@ function WBP_MainCross_C:BindOnCharacterExitState(TargetActor, Tag, bBlocked)
     end
   end
 end
+
 function WBP_MainCross_C:BindOnPostAddCondition(InCondition)
   local WantReloadTag = UE.URGBlueprintLibrary.RequestNameToGameplayTag("State.Condition.WantReload")
   if UE.UBlueprintGameplayTagLibrary.MatchesTag(InCondition, WantReloadTag, true) then
@@ -94,11 +101,13 @@ function WBP_MainCross_C:BindOnPostAddCondition(InCondition)
     self.bWantReload = false
   end
 end
+
 function WBP_MainCross_C:BindOnNormalFirePressed()
   if self.bWantReload then
     LogicAudio.OnGunShotDry()
   end
 end
+
 function WBP_MainCross_C:OnAnimationFinished(InAnimation)
   if InAnimation == self.ShowNormalHitAnim then
     self:BindOnNormalHitAnimFinished()
@@ -106,12 +115,15 @@ function WBP_MainCross_C:OnAnimationFinished(InAnimation)
     self:BindOnLuckyShotAnimFinished()
   end
 end
+
 function WBP_MainCross_C:BindOnNormalHitAnimFinished()
   self.HitAnimPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_MainCross_C:BindOnLuckyShotAnimFinished()
   self.LuckyShotAnimPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_MainCross_C:BindOnMakeDamage(SourceActor, TargetActor, Params)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if Character ~= SourceActor then
@@ -128,6 +140,7 @@ function WBP_MainCross_C:BindOnMakeDamage(SourceActor, TargetActor, Params)
     end
   end
 end
+
 function WBP_MainCross_C:BindOnPawnAcknowledged(InPawn)
   self.OwningCharacter = InPawn
   local EquipmentComp = self.OwningCharacter:GetComponentByClass(UE.URGEquipmentComponent:StaticClass())
@@ -135,6 +148,7 @@ function WBP_MainCross_C:BindOnPawnAcknowledged(InPawn)
     EquipmentComp.OnCurrentWeaponChanged:Add(self, WBP_MainCross_C.BindOnCurrentWeaponChanged)
   end
 end
+
 function WBP_MainCross_C:BindOnCurrentWeaponChanged(OldWeapon, NewWeapon)
   print("CurrentWeaponChanged")
   local EquipmentComp = self.OwningCharacter:GetComponentByClass(UE.URGEquipmentComponent.StaticClass())
@@ -149,6 +163,7 @@ function WBP_MainCross_C:BindOnCurrentWeaponChanged(OldWeapon, NewWeapon)
   self:InitAmmoCountBar(CurWeapon:GetItemId())
   self:SetCanShowReloadingPanel(true)
 end
+
 function WBP_MainCross_C:InitChargePolicyUI()
   local EquipmentComp = self.OwningCharacter:GetComponentByClass(UE.URGEquipmentComponent.StaticClass())
   if not EquipmentComp then
@@ -174,6 +189,7 @@ function WBP_MainCross_C:InitChargePolicyUI()
   if self.IsShowCostAmmoPolicy then
   end
 end
+
 function WBP_MainCross_C:InitAmmoCountBar(Id)
   self.AmmoCountBarPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -222,6 +238,7 @@ function WBP_MainCross_C:InitAmmoCountBar(Id)
     self.AmmoCountBar:InitInfo()
   end
 end
+
 function WBP_MainCross_C:ShowKillFeedbackAnim()
   self:HideNormalHit()
   self:HideBloodHit()
@@ -229,6 +246,7 @@ function WBP_MainCross_C:ShowKillFeedbackAnim()
   self.WBP_KillFeedbackCross:SetVisibility(UE.ESlateVisibility.Visible)
   self.WBP_KillFeedbackCross:PlayHitAnim(self.AnimSpeed)
 end
+
 function WBP_MainCross_C:SetAnimImageColor(Brush)
   local AllChildren = self.HitAnimPanel:GetAllChildren()
   local SlateBrush = UE.FSlateBrush()
@@ -238,17 +256,21 @@ function WBP_MainCross_C:SetAnimImageColor(Brush)
     SingleItem:SetBrush(SlateBrush)
   end
 end
+
 function WBP_MainCross_C:HideNormalHit()
   self.HitAnimPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.LuckyShotAnimPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_MainCross_C:HideBloodHit()
   self.WBP_BloodHitCross:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_MainCross_C:HideKillHit()
   self.WBP_KillFeedbackCross:StopHitAnim()
   self.WBP_KillFeedbackCross:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_MainCross_C:PlayHitAnimation(IsWeakHit, IsLuckyShot)
   if IsWeakHit then
     self:HideNormalHit()
@@ -272,6 +294,7 @@ function WBP_MainCross_C:PlayHitAnimation(IsWeakHit, IsLuckyShot)
     end
   end
 end
+
 function WBP_MainCross_C:Destruct()
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
   if PC then
@@ -291,4 +314,5 @@ function WBP_MainCross_C:Destruct()
   UnListenObjectMessage(GMP.MSG_World_Character_OnEnterState, self)
   UnListenObjectMessage(GMP.MSG_World_Character_OnExitState, self)
 end
+
 return WBP_MainCross_C

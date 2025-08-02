@@ -1,6 +1,7 @@
 local ListContainer = require("Rouge.UI.Common.ListContainer")
 local rapidjson = require("rapidjson")
 local WBP_QuickChangeHero_C = UnLua.Class()
+
 function WBP_QuickChangeHero_C:Construct()
   self.ListContainer = ListContainer.New(self.RoleItemTemplate:StaticClass())
   table.insert(self.ListContainer.AllWidgets, self.RoleItemTemplate)
@@ -13,20 +14,25 @@ function WBP_QuickChangeHero_C:Construct()
     WBP_QuickChangeHero_C.BindOnOutAnimationFinished
   })
   local HeroInfo = DataMgr.GetMyHeroInfo()
+  
   function self.EscFunctionalBtn.MainButtonClicked()
     self:Hide()
   end
+  
   EventSystem.AddListener(self, EventDef.LobbyPanel.OnShow, WBP_QuickChangeHero_C.BindOnLobbyPanelShow)
   EventSystem.AddListener(self, EventDef.LobbyPanel.OnHide, WBP_QuickChangeHero_C.BindOnLobbyPanelHide)
 end
+
 function WBP_QuickChangeHero_C:BindOnConfirmButtonClicked()
   LogicRole.RequestEquipHeroToServer(self.CurHeroId)
   self:Hide()
 end
+
 function WBP_QuickChangeHero_C:BindOnOutAnimationFinished()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   EventSystem.Invoke(EventDef.Lobby.QuickChangeHeroPanelHide)
 end
+
 function WBP_QuickChangeHero_C:Show()
   EventSystem.AddListener(self, EventDef.Lobby.RoleItemClicked, WBP_QuickChangeHero_C.BindOnChangeRoleItemClicked)
   self:RefreshHeroList()
@@ -54,21 +60,25 @@ function WBP_QuickChangeHero_C:Show()
     WBP_QuickChangeHero_C.BindOnEscKeyPressed
   })
 end
+
 function WBP_QuickChangeHero_C:OnBGMouseButtonDown(MyGeometry, MouseEvent)
   if UE.UKismetInputLibrary.PointerEvent_IsMouseButtonDown(MouseEvent, self.LeftMouseKey) then
     self:BindOnEscKeyPressed()
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function WBP_QuickChangeHero_C:BindOnEscKeyPressed()
   self:Hide()
 end
+
 function WBP_QuickChangeHero_C:Hide()
   self:PlayAnimation(self.ani_quickchangehero_out, 0.0, 1, UE.EUMGSequencePlayMode.Forward, 1.0, false)
   LogicAudio.OnPageClose()
   EventSystem.Invoke(EventDef.Lobby.WeaponSlotSelected, false)
   self:RemoveListener()
 end
+
 function WBP_QuickChangeHero_C:RemoveListener()
   EventSystem.RemoveListener(EventDef.Lobby.RoleItemClicked, WBP_QuickChangeHero_C.BindOnChangeRoleItemClicked, self)
   EventSystem.RemoveListener(EventDef.Lobby.RoleSkillTip, WBP_QuickChangeHero_C.BindOnShowNormalSkillTip, self)
@@ -86,6 +96,7 @@ function WBP_QuickChangeHero_C:RemoveListener()
     StopListeningForInputAction(self, self.EscKeyName, UE.EInputEvent.IE_Pressed)
   end
 end
+
 function WBP_QuickChangeHero_C:BindOnChangeRoleItemClicked(HeroId)
   if self.CurHeroId == HeroId then
     return
@@ -109,6 +120,7 @@ function WBP_QuickChangeHero_C:BindOnChangeRoleItemClicked(HeroId)
   self:RefreshBasicInfo()
   EventSystem.Invoke(EventDef.Lobby.WeaponSlotSelected, false)
 end
+
 function WBP_QuickChangeHero_C:BindOnShowNormalSkillTip(IsShow, SkillGroupId, KeyName)
   if IsShow then
     self.NormalSkillTip:RefreshInfo(SkillGroupId, KeyName)
@@ -117,6 +129,7 @@ function WBP_QuickChangeHero_C:BindOnShowNormalSkillTip(IsShow, SkillGroupId, Ke
     self.NormalSkillTip:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 function WBP_QuickChangeHero_C:BindOnShowFetterSkillTip(IsShow, SkillGroupId, HeroId)
   if IsShow then
     self.FetterSkillTip:RefreshInfo(SkillGroupId, HeroId)
@@ -126,6 +139,7 @@ function WBP_QuickChangeHero_C:BindOnShowFetterSkillTip(IsShow, SkillGroupId, He
     self.FetterSkillTip:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 function WBP_QuickChangeHero_C:BindOnWeaponSlotSelected(IsSelect, SlotId)
   self.IsSelectWeapon = IsSelect
   if IsSelect then
@@ -135,6 +149,7 @@ function WBP_QuickChangeHero_C:BindOnWeaponSlotSelected(IsSelect, SlotId)
     self.LobbyWeaponList:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_QuickChangeHero_C:BindOnWeaponItemSelected(WeaponInfo)
   local EquippedWeaponList = DataMgr.GetEquippedWeaponList(self.CurHeroId)
   local TargetWeaponInfo = EquippedWeaponList[self.CurSelectWeaponSlotId + 1]
@@ -144,9 +159,11 @@ function WBP_QuickChangeHero_C:BindOnWeaponItemSelected(WeaponInfo)
   end
   LogicOutsideWeapon.RequestEquipWeapon(self.CurHeroId, WeaponInfo.uuid, self.CurSelectWeaponSlotId, WeaponInfo.resourceId)
 end
+
 function WBP_QuickChangeHero_C:BindOnWeaponListChanged()
   self:RefreshWeaponList()
 end
+
 function WBP_QuickChangeHero_C:BindOnUpdateMyHeroInfo()
   local AllHeroItems = self.ListContainer:GetAllUseWidgetsList()
   for i, SingleHeroItem in pairs(AllHeroItems) do
@@ -154,9 +171,11 @@ function WBP_QuickChangeHero_C:BindOnUpdateMyHeroInfo()
   end
   self:RefreshWeaponSlotPanel()
 end
+
 function WBP_QuickChangeHero_C:BindOnFetterHeroInfoUpdate()
   self:RefreshFetterSlotInfo()
 end
+
 function WBP_QuickChangeHero_C:BindOnLobbyWeaponItemHoverStatusChanged(IsHover, WeaponInfo, IsEquipped)
   if IsHover then
     self.WeaponItemDisplayInfo:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -170,6 +189,7 @@ function WBP_QuickChangeHero_C:BindOnLobbyWeaponItemHoverStatusChanged(IsHover, 
     self.CurWeaponItemDisplayInfo:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_QuickChangeHero_C:BindOnLobbyWeaponSlotHoverStatusChanged(IsHover, WeaponInfo)
   if IsHover then
     self.CurWeaponItemDisplayInfo:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -178,10 +198,12 @@ function WBP_QuickChangeHero_C:BindOnLobbyWeaponSlotHoverStatusChanged(IsHover, 
     self.CurWeaponItemDisplayInfo:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_QuickChangeHero_C:BindOnFetterSlotItemClicked(SlotId, IsUnLock)
   self:JumpToRoleMain()
   EventSystem.Invoke(EventDef.Lobby.FetterSlotItemClicked, SlotId, IsUnLock)
 end
+
 function WBP_QuickChangeHero_C:JumpToRoleMain()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGUIManager:StaticClass())
   if not UIManager then
@@ -202,6 +224,7 @@ function WBP_QuickChangeHero_C:JumpToRoleMain()
     TargetButton:ActivateTabWidget()
   end
 end
+
 function WBP_QuickChangeHero_C:RefreshWeaponDisplayInfoTip(TargetTipWidget, WeaponInfo, IsEquipped, IsShowCurEquip)
   local AccessoryList = {}
   local TipText
@@ -225,6 +248,7 @@ function WBP_QuickChangeHero_C:RefreshWeaponDisplayInfoTip(TargetTipWidget, Weap
     TargetTipWidget:ShowTipPanel(TipText, IsShowOperateIcon)
   end
 end
+
 function WBP_QuickChangeHero_C:RefreshWeaponList()
   self.WeaponListContainer:ClearAllUseWidgets()
   local AllCanEquipWeaponList = LogicOutsideWeapon.GetCurCanEquipWeaponList(self.CurHeroId)
@@ -255,6 +279,7 @@ function WBP_QuickChangeHero_C:RefreshWeaponList()
     self.WeaponListContainer:ShowItem(Item, SingleWeaponInfo, CurWeaponInfo.uuid == SingleWeaponInfo.uuid)
   end
 end
+
 function WBP_QuickChangeHero_C:RefreshHeroList()
   self.ListContainer:ClearAllUseWidgets()
   local HeroInfo = DataMgr.GetMyHeroInfo()
@@ -275,12 +300,14 @@ function WBP_QuickChangeHero_C:RefreshHeroList()
   end
   EventSystem.Invoke(EventDef.Lobby.RoleItemClicked, HeroInfo.equipHero)
 end
+
 function WBP_QuickChangeHero_C:RefreshFetterSlotInfo()
   local AllChildren = self.FetterSlotPanel:GetAllChildren()
   for i, SingleItem in pairs(AllChildren) do
     SingleItem:Show(i, self.CurHeroId, true)
   end
 end
+
 function WBP_QuickChangeHero_C:RefreshSkillInfo(RowInfo)
   local AllSkillItems = self.SkillList:GetAllChildren()
   local SkillItemList = {}
@@ -308,6 +335,7 @@ function WBP_QuickChangeHero_C:RefreshSkillInfo(RowInfo)
     end
   end
 end
+
 function WBP_QuickChangeHero_C:RefreshWeaponSlotPanel()
   local AllItem = self.WeaponSlotPanel:GetAllChildren()
   local HeroInfo = DataMgr.GetMyHeroInfo()
@@ -316,6 +344,7 @@ function WBP_QuickChangeHero_C:RefreshWeaponSlotPanel()
     SingleItem:RefreshInfo(EquippedWeaponInfo[i])
   end
 end
+
 function WBP_QuickChangeHero_C:RefreshBasicInfo()
   local RowInfo = LogicRole.GetCharacterTableRow(self.CurHeroId)
   if not RowInfo then
@@ -325,6 +354,7 @@ function WBP_QuickChangeHero_C:RefreshBasicInfo()
   self.Txt_NickName:SetText(RowInfo.NickName)
   self:RefreshAttributeInfo(RowInfo)
 end
+
 function WBP_QuickChangeHero_C:RefreshAttributeInfo(RowInfo)
   if RowInfo.ArrSkill[1] then
     self.HealthItem:RefreshInfo(RowInfo.ArrSkill[1])
@@ -339,9 +369,11 @@ function WBP_QuickChangeHero_C:RefreshAttributeInfo(RowInfo)
     self.OperateItem:RefreshInfo(RowInfo.ArrSkill[4])
   end
 end
+
 function WBP_QuickChangeHero_C:BindOnEquippedWeaponInfoChanged()
   self:RefreshWeaponSlotPanel()
 end
+
 function WBP_QuickChangeHero_C:Destruct()
   self:RemoveListener()
   self:UnbindFromAnimationFinished(self.ani_quickchangehero_out, {
@@ -349,4 +381,5 @@ function WBP_QuickChangeHero_C:Destruct()
     WBP_QuickChangeHero_C.BindOnOutAnimationFinished
   })
 end
+
 return WBP_QuickChangeHero_C

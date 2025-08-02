@@ -1,14 +1,18 @@
 local PlayerInfoData = require("Modules.PlayerInfoMain.PlayerInfo.PlayerInfoData")
 local PlayerInfoChangeHeadIconTips = Class()
+
 function PlayerInfoChangeHeadIconTips:BindUIInput()
   self.WBP_InteractTipWidgetBuy:BindInteractAndClickEvent(self, self.OperatorHeadIcon)
 end
+
 function PlayerInfoChangeHeadIconTips:UnBindUIInput()
   self.WBP_InteractTipWidgetBuy:UnBindInteractAndClickEvent(self, self.OperatorHeadIcon)
 end
+
 function PlayerInfoChangeHeadIconTips:Construct()
   self.Overridden.Construct(self)
 end
+
 function PlayerInfoChangeHeadIconTips:InitPlayerInfoChangeHeadIconTips()
   self:StopAnimation(self.Ani_out)
   if not CheckIsVisility(self) then
@@ -40,6 +44,7 @@ function PlayerInfoChangeHeadIconTips:InitPlayerInfoChangeHeadIconTips()
   HideOtherItem(self.WrapBoxHeadIconList, #poritraitSortList + 1)
   self.RGToggleGroupHeadIcon:SelectId(DataMgr.GetBasicInfo().portrait)
 end
+
 function PlayerInfoChangeHeadIconTips:UpdateLinkInfo()
   UpdateVisibility(self.BP_ButtonWithSoundLink, false)
   local tbPortrait = LuaTableMgr.GetLuaTableByName(TableNames.TBPortrait)
@@ -74,6 +79,7 @@ function PlayerInfoChangeHeadIconTips:UpdateLinkInfo()
     end
   end
 end
+
 function PlayerInfoChangeHeadIconTips:InitBuyPanel(LinkId, GoodsId, bUnlocked, tbPortraitData)
   if bUnlocked then
     UpdateVisibility(self.CanvasPanelBuy, false)
@@ -94,6 +100,7 @@ function PlayerInfoChangeHeadIconTips:InitBuyPanel(LinkId, GoodsId, bUnlocked, t
     self.RGTextLink:SetText(tbPortraitData.LinkDesc)
   end
 end
+
 function PlayerInfoChangeHeadIconTips:GetTotalHeadIconNum()
   local sum = 0
   local tbPortrait = LuaTableMgr.GetLuaTableByName(TableNames.TBPortrait)
@@ -104,10 +111,12 @@ function PlayerInfoChangeHeadIconTips:GetTotalHeadIconNum()
   end
   return sum
 end
+
 function PlayerInfoChangeHeadIconTips:OnToggleGroupStateChanged(SelectId)
   self.SelectId = SelectId
   self:UpdateDetails(SelectId)
 end
+
 function PlayerInfoChangeHeadIconTips:UpdateDetails(SelectId)
   local tbPortraitData = LogicLobby.GetPlayerPortraitTableRowInfo(SelectId)
   if not tbPortraitData then
@@ -126,9 +135,11 @@ function PlayerInfoChangeHeadIconTips:UpdateDetails(SelectId)
     end
   end
 end
+
 function PlayerInfoChangeHeadIconTips:OperatorHeadIcon()
   self.viewModel:OperatorHeadIcon(self.SelectId)
 end
+
 function PlayerInfoChangeHeadIconTips:OnLinkClicked()
   local tbPortrait = LuaTableMgr.GetLuaTableByName(TableNames.TBPortrait)
   if tbPortrait then
@@ -151,22 +162,26 @@ function PlayerInfoChangeHeadIconTips:OnLinkClicked()
         CommonLinkEx(nil, tostring(tbPortraitDataTemp.acquirePathID), callback, roleID)
       else
         local callback
+        
         function callback()
           local playerInfoMainVMTemp = UIModelMgr:Get("PlayerInfoMainViewModel")
           playerInfoMainVMTemp:HidePlayerMainView(true)
           local LobbyDefaultLabelName = LogicLobby.GetDefaultSelectedLabelName()
           EventSystem.Invoke(EventDef.Lobby.OnLobbyLabelSelected, LobbyDefaultLabelName)
         end
+        
         CommonLinkEx(nil, tostring(tbPortraitDataTemp.acquirePathID), callback)
       end
     end
   end
 end
+
 function PlayerInfoChangeHeadIconTips:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     UpdateVisibility(self, false)
   end
 end
+
 function PlayerInfoChangeHeadIconTips:Hide()
   self:UnBindUIInput()
   self.BP_ButtonWithSoundEquip.Onclicked:Remove(self, self.OperatorHeadIcon)
@@ -175,4 +190,5 @@ function PlayerInfoChangeHeadIconTips:Hide()
   SetHitTestInvisible(self)
   self:PlayAnimation(self.Ani_out)
 end
+
 return PlayerInfoChangeHeadIconTips

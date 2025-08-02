@@ -1,4 +1,5 @@
 local BP_BattleModeNpc_C = UnLua.Class()
+
 function BP_BattleModeNpc_C:ShowOrHideWidget(IsShow)
   local TargetWidget = self.TipWidget:GetUserWidgetObject()
   if TargetWidget then
@@ -11,8 +12,10 @@ function BP_BattleModeNpc_C:ShowOrHideWidget(IsShow)
     self.Plane:SetHiddenInGame(true)
   end
 end
+
 function BP_BattleModeNpc_C:ShowBlurPlane()
 end
+
 function BP_BattleModeNpc_C:EventOnBattleModeShowType(ShowType)
   self.Overridden.EventOnBattleModeShowType(self, ShowType)
   if UE.UKismetSystemLibrary.IsDedicatedServer(self) then
@@ -43,6 +46,7 @@ function BP_BattleModeNpc_C:EventOnBattleModeShowType(ShowType)
     self.Plane:SetHiddenInGame(true)
   end
 end
+
 function BP_BattleModeNpc_C:ShowInteractTip()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -72,6 +76,7 @@ function BP_BattleModeNpc_C:ShowInteractTip()
     HUD:UpdateInteractWidget(nil, self, false)
   end
 end
+
 function BP_BattleModeNpc_C:GetInteractTipId()
   local TipId = 0
   if self.BattleModeShowType == UE.ERGBattleModeShowType.Pending then
@@ -81,9 +86,11 @@ function BP_BattleModeNpc_C:GetInteractTipId()
   end
   return TipId
 end
+
 function BP_BattleModeNpc_C:ReceiveEndPlay()
   if -1 ~= self.MarkId then
     UE.URGBlueprintLibrary.RemoveMarkById(self, self.MarkId)
   end
 end
+
 return BP_BattleModeNpc_C

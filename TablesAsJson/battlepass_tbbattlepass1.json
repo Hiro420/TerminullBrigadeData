@@ -1,33 +1,33 @@
 ﻿{
   "1": {
     "BattlePassID": 1,
+    "Name": "天选",
     "UltraReward": {
       "1": {
-        "value": 10000,
-        "key": 99008
+        "key": 99008,
+        "value": 10000
       },
       "2": {
-        "value": 100,
-        "key": 300001
+        "key": 300001,
+        "value": 100
       },
       "3": {
-        "value": 5,
-        "key": 36143
+        "key": 36143,
+        "value": 5
       }
     },
-    "Name": "天选",
+    "BattlePassGoodsID": 0,
     "EndTime": "2025-06-01 00:00:00",
     "StartTime": "2023-03-01 00:00:00",
-    "BattlePassGoodsID": 0,
     "BattlePassExpID": 0
   },
   "2": {
     "BattlePassID": 2,
-    "UltraReward": {},
     "Name": "地煞",
+    "UltraReward": {},
+    "BattlePassGoodsID": 0,
     "EndTime": "2025-06-01 00:00:00",
     "StartTime": "2023-03-01 00:00:00",
-    "BattlePassGoodsID": 0,
     "BattlePassExpID": 0
   }
 }

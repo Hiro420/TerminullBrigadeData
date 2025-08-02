@@ -1,7 +1,9 @@
 local WBP_AttributeModifyRequestMsg_C = UnLua.Class()
+
 function WBP_AttributeModifyRequestMsg_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_AttributeModifyRequestMsg_C:InitInfo(FromUserId, TargetUserId, AttributeModifyId)
   UpdateVisibility(self, true)
   local RGTeamSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGTeamSubsystem:StaticClass())
@@ -20,7 +22,9 @@ function WBP_AttributeModifyRequestMsg_C:InitInfo(FromUserId, TargetUserId, Attr
     self.RGRichText:SetText(MyRequestText)
   end
 end
+
 function WBP_AttributeModifyRequestMsg_C:Hide()
   UpdateVisibility(self, false)
 end
+
 return WBP_AttributeModifyRequestMsg_C

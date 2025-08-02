@@ -1,4 +1,5 @@
 local WBP_MarkUIInteractTip_Refresh_C = UnLua.Class()
+
 function WBP_MarkUIInteractTip_Refresh_C:Construct()
   self:InitInfo()
   if self.CanInteract then
@@ -8,6 +9,7 @@ function WBP_MarkUIInteractTip_Refresh_C:Construct()
   end
   EventSystem.AddListener(self, EventDef.Interact.OnOptimalTargetChanged, WBP_MarkUIInteractTip_Refresh_C.OnOptimalTargetChanged)
 end
+
 function WBP_MarkUIInteractTip_Refresh_C:OnOptimalTargetChanged(Target)
   if self.TargetActor then
     if Target ~= self.TargetActor then
@@ -23,15 +25,19 @@ function WBP_MarkUIInteractTip_Refresh_C:OnOptimalTargetChanged(Target)
     end
   end
 end
+
 function WBP_MarkUIInteractTip_Refresh_C:BindOnMainButtonClicked()
   self.OnMainButtonClicked:Broadcast()
 end
+
 function WBP_MarkUIInteractTip_Refresh_C:BindOnMainButtonHovered()
   self.WBP_CustomKeyName:PlayHoverOrUnhoverAnim(true)
 end
+
 function WBP_MarkUIInteractTip_Refresh_C:BindOnMainButtonUnhovered()
   self.WBP_CustomKeyName:PlayHoverOrUnhoverAnim(false)
 end
+
 function WBP_MarkUIInteractTip_Refresh_C:SetWidgetConfig(IsNeedProgress, KeyRowName, KeyDesc, IsNeedShowDescBottom)
   self.IsNeedProgress = IsNeedProgress
   self.KeyRowName = KeyRowName
@@ -41,6 +47,7 @@ function WBP_MarkUIInteractTip_Refresh_C:SetWidgetConfig(IsNeedProgress, KeyRowN
   self:InitInfo()
   self:SetWidgetStyle()
 end
+
 function WBP_MarkUIInteractTip_Refresh_C:BindRefreshNPC()
   if self.TargetActor then
     local PC = self:GetOwningPlayer()
@@ -74,6 +81,7 @@ function WBP_MarkUIInteractTip_Refresh_C:BindRefreshNPC()
     print("RefreshNPC TargetActor Is Null")
   end
 end
+
 function WBP_MarkUIInteractTip_Refresh_C:SetInteractActor(TargetActor)
   print("WBP_MarkUIInteractTip_Refresh_C:SetInteractActor")
   self.TargetActor = TargetActor
@@ -83,6 +91,7 @@ function WBP_MarkUIInteractTip_Refresh_C:SetInteractActor(TargetActor)
   end
   self:RefreshNum(true)
 end
+
 function WBP_MarkUIInteractTip_Refresh_C:RefreshNum(...)
   if not (...) then
     PlaySound3DEffect(10032, self.TargetActor)
@@ -111,6 +120,7 @@ function WBP_MarkUIInteractTip_Refresh_C:RefreshNum(...)
     UpdateVisibility(self.DescPanel_1, false, false)
   end
 end
+
 function WBP_MarkUIInteractTip_Refresh_C:InitInfo()
   if self.IsNeedProgress then
     self:UpdateProgress(0.0)
@@ -131,16 +141,19 @@ function WBP_MarkUIInteractTip_Refresh_C:InitInfo()
     end
   end
 end
+
 function WBP_MarkUIInteractTip_Refresh_C:UpdateProgress(ProgressParam)
   local Mat = self.Img_Progress:GetDynamicMaterial()
   if Mat then
     Mat:SetScalarParameterValue("Percent", ProgressParam)
   end
 end
+
 function WBP_MarkUIInteractTip_Refresh_C:UpdateKeyDesc(Desc)
   self.KeyDesc = Desc
   self.Txt_Desc:SetText(self.KeyDesc)
 end
+
 function WBP_MarkUIInteractTip_Refresh_C:PlayInAnimation()
   if self:IsAnimationPlaying(self.Ani_out) then
     self.IsInitiativeStop = true
@@ -148,6 +161,7 @@ function WBP_MarkUIInteractTip_Refresh_C:PlayInAnimation()
   end
   self:PlayAnimationForward(self.Ani_in)
 end
+
 function WBP_MarkUIInteractTip_Refresh_C:PlayOutAnimation(AnimationFinishedEvent)
   self:PlayAnimationForward(self.Ani_out)
   self.OutAnimationFinishedEvent = AnimationFinishedEvent
@@ -157,6 +171,7 @@ function WBP_MarkUIInteractTip_Refresh_C:PlayOutAnimation(AnimationFinishedEvent
     PlayerPawn.GenericModifyComponent.OnGenericModifyGroupIdRefreshCountChange:Remove(self, WBP_MarkUIInteractTip_Refresh_C.RefreshNum)
   end
 end
+
 function WBP_MarkUIInteractTip_Refresh_C:OnAnimationFinished(Animation)
   if Animation == self.Ani_Out then
     if self.IsInitiativeStop then
@@ -166,4 +181,5 @@ function WBP_MarkUIInteractTip_Refresh_C:OnAnimationFinished(Animation)
     end
   end
 end
+
 return WBP_MarkUIInteractTip_Refresh_C

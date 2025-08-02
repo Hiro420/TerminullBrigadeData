@@ -1,8 +1,10 @@
 local WBP_ScrollItemSlotLikeTipsView = UnLua.Class()
+
 function WBP_ScrollItemSlotLikeTipsView:Construct()
   self.Overridden.Construct(self)
   self.LikeUserIdList = {}
 end
+
 function WBP_ScrollItemSlotLikeTipsView:LikeByUserId(UserId)
   self.Overridden.Construct(self)
   if table.Contain(self.LikeUserIdList, UserId) then
@@ -12,6 +14,7 @@ function WBP_ScrollItemSlotLikeTipsView:LikeByUserId(UserId)
   table.insert(self.LikeUserIdList, UserId)
   self:UpdateUIByLike()
 end
+
 function WBP_ScrollItemSlotLikeTipsView:UnLikeByUserId(UserId)
   self.Overridden.Construct(self)
   if not table.Contain(self.LikeUserIdList, UserId) then
@@ -26,6 +29,7 @@ function WBP_ScrollItemSlotLikeTipsView:UnLikeByUserId(UserId)
   end
   self:UpdateUIByLike()
 end
+
 function WBP_ScrollItemSlotLikeTipsView:CheckLikeByUserId(UserId)
   self.Overridden.Construct(self)
   if table.Contain(self.LikeUserIdList, UserId) then
@@ -33,6 +37,7 @@ function WBP_ScrollItemSlotLikeTipsView:CheckLikeByUserId(UserId)
   end
   return false
 end
+
 function WBP_ScrollItemSlotLikeTipsView:UpdateUIByLike()
   if not self.LikeUserIdList or 0 == #self.LikeUserIdList then
     self.CanvasPanel_Like:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -50,7 +55,9 @@ function WBP_ScrollItemSlotLikeTipsView:UpdateUIByLike()
     end
   end
 end
+
 function WBP_ScrollItemSlotLikeTipsView:Destruct()
   self.LikeUserIdList = nil
 end
+
 return WBP_ScrollItemSlotLikeTipsView

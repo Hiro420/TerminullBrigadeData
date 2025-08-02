@@ -26,6 +26,7 @@ EScrollTipsOpenType = {
   EFromScrollSlotSettlement = 8,
   EFromSaveGrowthSnap = 9
 }
+
 function Logic_Scroll.Init()
   if Logic_Scroll.IsInit then
     print("Logic_Scroll \229\183\178\229\136\157\229\167\139\229\140\150")
@@ -38,21 +39,26 @@ function Logic_Scroll.Init()
   Logic_Scroll:BindDelegate(Character)
   EventSystem.AddListener(nil, EventDef.Battle.OnControlledPawnChanged, Logic_Scroll.BindOnControlledPawnChanged)
 end
+
 function Logic_Scroll.BindOnControlledPawnChanged(Character)
   Logic_Scroll:BindDelegate(Character)
 end
+
 function Logic_Scroll:BindDelegate(Character)
   if not Character then
     return
   end
   EventSystem.AddListenerNew(EventDef.Interact.OnOptimalTargetChanged, nil, Logic_Scroll.BindOnOptimalTargetChanged)
 end
+
 function Logic_Scroll.BindOnOptimalTargetChanged(OptimalTarget)
   Logic_Scroll.SetPreOptimalTarget(OptimalTarget)
 end
+
 function Logic_Scroll.SetPreOptimalTarget(OptimalTarget)
   Logic_Scroll.PreOptimalTarget = OptimalTarget
 end
+
 function Logic_Scroll.ShareAndMarkModify()
   if Logic_Scroll.CheckPickUpCanShare() then
     local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
@@ -79,6 +85,7 @@ function Logic_Scroll.ShareAndMarkModify()
     MarkHandle:ServerAddMark(MarkInfo)
   end
 end
+
 function Logic_Scroll.CheckPickUpCanShare()
   if not Logic_Scroll.PreOptimalTarget then
     print(" WBP_ScrollTipsView_C:CheckCanShare PreOptimalTarget IsNull")
@@ -90,6 +97,7 @@ function Logic_Scroll.CheckPickUpCanShare()
   end
   return not Logic_Scroll.PreOptimalTarget:IsShared()
 end
+
 function Logic_Scroll.ShareModify(ScrollId)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if Character and Character.AttributeModifyComponent then
@@ -97,6 +105,7 @@ function Logic_Scroll.ShareModify(ScrollId)
     Character.AttributeModifyComponent:ShareModify(ScrollId, false)
   end
 end
+
 function Logic_Scroll.DiscardModify(ScrollId)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if Character and Character.AttributeModifyComponent then
@@ -104,6 +113,7 @@ function Logic_Scroll.DiscardModify(ScrollId)
     Character.AttributeModifyComponent:DiscardModify(ScrollId, false)
   end
 end
+
 function Logic_Scroll.PickupScroll(Target, bIsShowTips)
   if not Target then
     return
@@ -147,6 +157,7 @@ function Logic_Scroll.PickupScroll(Target, bIsShowTips)
   local attrCom = Character:GetComponentByClass(UE.URGAttributeModifyComponent:StaticClass())
   attrCom:StoreEquipModify(Target.ScrollId, Target.IsShared)
 end
+
 function Logic_Scroll:CheckScrollIsFull()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if Character and Character.AttributeModifyComponent then
@@ -154,6 +165,7 @@ function Logic_Scroll:CheckScrollIsFull()
   end
   return false
 end
+
 function Logic_Scroll:CheckScrollIsDuplicated(ScrollId)
   if not ScrollId then
     return false
@@ -168,6 +180,7 @@ function Logic_Scroll:CheckScrollIsDuplicated(ScrollId)
   end
   return false
 end
+
 function Logic_Scroll:CheckSetIsActived(SetData)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -187,6 +200,7 @@ function Logic_Scroll:CheckSetIsActived(SetData)
   end
   return false
 end
+
 function Logic_Scroll:GetModifySetMaxLevel(SetData)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -208,6 +222,7 @@ function Logic_Scroll:GetModifySetMaxLevel(SetData)
   end
   return 0
 end
+
 function Logic_Scroll:GetInscriptionBySetLv(Lv, SetId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -223,6 +238,7 @@ function Logic_Scroll:GetInscriptionBySetLv(Lv, SetId)
     end
   end
 end
+
 function Logic_Scroll.Clear()
   EventSystem.RemoveListener(EventDef.Battle.OnControlledPawnChanged, Logic_Scroll.BindOnControlledPawnChanged, nil)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)

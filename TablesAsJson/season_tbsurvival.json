@@ -1,291 +1,291 @@
 ﻿{
   "1": {
-    "DropResourcesRatioValue": {
+    "FloorDescription": {
       "1": {
-        "InKey": "OBJSurvival_DropResourcesRatioValue_1_1",
-        "InTextLiteral": "新",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "\u00A0敌人词条等级：初级",
+        "InKey": "OBJSurvival_FloorDescription_1_1"
       },
       "2": {
-        "InKey": "OBJSurvival_DropResourcesRatioValue_1_2",
-        "InTextLiteral": "新",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "\u00A0精英敌人等级：普通",
+        "InKey": "OBJSurvival_FloorDescription_1_2"
       },
       "3": {
-        "InKey": "OBJSurvival_DropResourcesRatioValue_1_3",
-        "InTextLiteral": "概率",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "\u00A0有几率遭遇特殊事件：数据屏障、战斗协助",
+        "InKey": "OBJSurvival_FloorDescription_1_3"
       }
     },
-    "LevelId": 30021,
-    "BigIcon": "",
-    "DifficultyIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_01.Icon_Mode_01",
-    "Id": 1,
-    "DifficultyNameLocMeta": {
-      "InKey": "DifficultyName_1",
-      "InTextLiteral": "普通",
-      "InNamespace": "season_TBSurvival"
-    },
-    "DropResources": {
-      "1": 99027,
-      "2": 99029,
-      "3": 240021
-    },
-    "TicketID": 7,
     "PanelIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_01.Icon_Mode_Transparency_01",
+    "LevelId": 30021,
     "DropResourcesRatioKey": {
       "1": "99027",
       "2": "99029",
       "3": "240021"
     },
+    "DifficultyIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_01.Icon_Mode_01",
+    "BigIcon": "",
+    "TicketID": 7,
+    "DropResources": {
+      "1": 99027,
+      "2": 99029,
+      "3": 240021
+    },
+    "DifficultyNameLocMeta": {
+      "InNamespace": "season_TBSurvival",
+      "InTextLiteral": "普通",
+      "InKey": "DifficultyName_1"
+    },
+    "Id": 1,
     "SmallIcon": "",
-    "FloorDescription": {
+    "DropResourcesRatioValue": {
       "1": {
-        "InKey": "OBJSurvival_FloorDescription_1_1",
-        "InTextLiteral": "\u00A0敌人词条等级：初级",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "新",
+        "InKey": "OBJSurvival_DropResourcesRatioValue_1_1"
       },
       "2": {
-        "InKey": "OBJSurvival_FloorDescription_1_2",
-        "InTextLiteral": "\u00A0精英敌人等级：普通",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "新",
+        "InKey": "OBJSurvival_DropResourcesRatioValue_1_2"
       },
       "3": {
-        "InKey": "OBJSurvival_FloorDescription_1_3",
-        "InTextLiteral": "\u00A0有几率遭遇特殊事件：数据屏障、战斗协助",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "概率",
+        "InKey": "OBJSurvival_DropResourcesRatioValue_1_3"
       }
     }
   },
   "2": {
-    "DropResourcesRatioValue": {
+    "FloorDescription": {
       "1": {
-        "InKey": "OBJSurvival_DropResourcesRatioValue_2_1",
-        "InTextLiteral": "概率",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "\u00A0敌人词条等级：中级",
+        "InKey": "OBJSurvival_FloorDescription_2_1"
       },
       "2": {
-        "InKey": "OBJSurvival_DropResourcesRatioValue_2_2",
-        "InTextLiteral": "概率",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "\u00A0精英敌人等级：困难",
+        "InKey": "OBJSurvival_FloorDescription_2_2"
       },
       "3": {
-        "InKey": "OBJSurvival_DropResourcesRatioValue_2_3",
-        "InTextLiteral": "概率",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "\u00A0有几率遭遇特殊事件：数据屏障、战斗协助",
+        "InKey": "OBJSurvival_FloorDescription_2_3"
       }
     },
+    "PanelIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_02.Icon_Mode_Transparency_02",
     "LevelId": 30022,
-    "BigIcon": "",
-    "DifficultyIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_02.Icon_Mode_02",
-    "Id": 2,
-    "DifficultyNameLocMeta": {
-      "InKey": "DifficultyName_2",
-      "InTextLiteral": "困难",
-      "InNamespace": "season_TBSurvival"
-    },
-    "DropResources": {
-      "1": 99027,
-      "2": 99029,
-      "3": 240021
-    },
-    "TicketID": 8,
-    "PanelIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_04.Icon_Mode_Transparency_04",
     "DropResourcesRatioKey": {
       "1": "99027",
       "2": "99029",
       "3": "240021"
     },
+    "DifficultyIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_02.Icon_Mode_02",
+    "BigIcon": "",
+    "TicketID": 8,
+    "DropResources": {
+      "1": 99027,
+      "2": 99029,
+      "3": 240021
+    },
+    "DifficultyNameLocMeta": {
+      "InNamespace": "season_TBSurvival",
+      "InTextLiteral": "困难",
+      "InKey": "DifficultyName_2"
+    },
+    "Id": 2,
     "SmallIcon": "",
-    "FloorDescription": {
+    "DropResourcesRatioValue": {
       "1": {
-        "InKey": "OBJSurvival_FloorDescription_2_1",
-        "InTextLiteral": "\u00A0敌人词条等级：中级",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "概率",
+        "InKey": "OBJSurvival_DropResourcesRatioValue_2_1"
       },
       "2": {
-        "InKey": "OBJSurvival_FloorDescription_2_2",
-        "InTextLiteral": "\u00A0精英敌人等级：困难",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "概率",
+        "InKey": "OBJSurvival_DropResourcesRatioValue_2_2"
       },
       "3": {
-        "InKey": "OBJSurvival_FloorDescription_2_3",
-        "InTextLiteral": "\u00A0有几率遭遇特殊事件：数据屏障、战斗协助",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "概率",
+        "InKey": "OBJSurvival_DropResourcesRatioValue_2_3"
       }
     }
   },
   "3": {
-    "DropResourcesRatioValue": {
+    "FloorDescription": {
       "1": {
-        "InKey": "OBJSurvival_DropResourcesRatioValue_3_1",
-        "InTextLiteral": "概率",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "\u00A0敌人词条等级：中级",
+        "InKey": "OBJSurvival_FloorDescription_3_1"
       },
       "2": {
-        "InKey": "OBJSurvival_DropResourcesRatioValue_3_2",
-        "InTextLiteral": "概率",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "\u00A0精英敌人等级：噩梦",
+        "InKey": "OBJSurvival_FloorDescription_3_2"
       },
       "3": {
-        "InKey": "OBJSurvival_DropResourcesRatioValue_3_3",
-        "InTextLiteral": "概率",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "\u00A0有几率遭遇特殊事件：数据屏障、战斗协助",
+        "InKey": "OBJSurvival_FloorDescription_3_3"
       }
     },
+    "PanelIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_03.Icon_Mode_Transparency_03",
     "LevelId": 30023,
-    "BigIcon": "",
-    "DifficultyIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_03.Icon_Mode_03",
-    "Id": 3,
-    "DifficultyNameLocMeta": {
-      "InKey": "DifficultyName_3",
-      "InTextLiteral": "噩梦",
-      "InNamespace": "season_TBSurvival"
-    },
-    "DropResources": {
-      "1": 99027,
-      "2": 99029,
-      "3": 240021
-    },
-    "TicketID": 9,
-    "PanelIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_02.Icon_Mode_Transparency_02",
     "DropResourcesRatioKey": {
       "1": "99027",
       "2": "99029",
       "3": "240021"
     },
+    "DifficultyIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_03.Icon_Mode_03",
+    "BigIcon": "",
+    "TicketID": 9,
+    "DropResources": {
+      "1": 99027,
+      "2": 99029,
+      "3": 240021
+    },
+    "DifficultyNameLocMeta": {
+      "InNamespace": "season_TBSurvival",
+      "InTextLiteral": "噩梦",
+      "InKey": "DifficultyName_3"
+    },
+    "Id": 3,
     "SmallIcon": "",
-    "FloorDescription": {
+    "DropResourcesRatioValue": {
       "1": {
-        "InKey": "OBJSurvival_FloorDescription_3_1",
-        "InTextLiteral": "\u00A0敌人词条等级：中级",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "概率",
+        "InKey": "OBJSurvival_DropResourcesRatioValue_3_1"
       },
       "2": {
-        "InKey": "OBJSurvival_FloorDescription_3_2",
-        "InTextLiteral": "\u00A0精英敌人等级：噩梦",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "概率",
+        "InKey": "OBJSurvival_DropResourcesRatioValue_3_2"
       },
       "3": {
-        "InKey": "OBJSurvival_FloorDescription_3_3",
-        "InTextLiteral": "\u00A0有几率遭遇特殊事件：数据屏障、战斗协助",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "概率",
+        "InKey": "OBJSurvival_DropResourcesRatioValue_3_3"
       }
     }
   },
   "4": {
-    "DropResourcesRatioValue": {
+    "FloorDescription": {
       "1": {
-        "InKey": "OBJSurvival_DropResourcesRatioValue_4_1",
-        "InTextLiteral": "概率",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "\u00A0敌人词条等级：高级",
+        "InKey": "OBJSurvival_FloorDescription_4_1"
       },
       "2": {
-        "InKey": "OBJSurvival_DropResourcesRatioValue_4_2",
-        "InTextLiteral": "概率",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "\u00A0精英敌人等级：地狱",
+        "InKey": "OBJSurvival_FloorDescription_4_2"
       },
       "3": {
-        "InKey": "OBJSurvival_DropResourcesRatioValue_4_3",
-        "InTextLiteral": "概率",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "\u00A0有几率遭遇特殊事件：数据屏障、战斗协助",
+        "InKey": "OBJSurvival_FloorDescription_4_3"
       }
     },
+    "PanelIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_04.Icon_Mode_Transparency_04",
     "LevelId": 30024,
-    "BigIcon": "",
-    "DifficultyIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_04.Icon_Mode_04",
-    "Id": 4,
-    "DifficultyNameLocMeta": {
-      "InKey": "DifficultyName_4",
-      "InTextLiteral": "地狱",
-      "InNamespace": "season_TBSurvival"
-    },
-    "DropResources": {
-      "1": 99027,
-      "2": 99029,
-      "3": 240021
-    },
-    "TicketID": 10,
-    "PanelIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_03.Icon_Mode_Transparency_03",
     "DropResourcesRatioKey": {
       "1": "99027",
       "2": "99029",
       "3": "240021"
     },
+    "DifficultyIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_04.Icon_Mode_04",
+    "BigIcon": "",
+    "TicketID": 10,
+    "DropResources": {
+      "1": 99027,
+      "2": 99029,
+      "3": 240021
+    },
+    "DifficultyNameLocMeta": {
+      "InNamespace": "season_TBSurvival",
+      "InTextLiteral": "地狱",
+      "InKey": "DifficultyName_4"
+    },
+    "Id": 4,
     "SmallIcon": "",
-    "FloorDescription": {
+    "DropResourcesRatioValue": {
       "1": {
-        "InKey": "OBJSurvival_FloorDescription_4_1",
-        "InTextLiteral": "\u00A0敌人词条等级：高级",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "概率",
+        "InKey": "OBJSurvival_DropResourcesRatioValue_4_1"
       },
       "2": {
-        "InKey": "OBJSurvival_FloorDescription_4_2",
-        "InTextLiteral": "\u00A0精英敌人等级：地狱",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "概率",
+        "InKey": "OBJSurvival_DropResourcesRatioValue_4_2"
       },
       "3": {
-        "InKey": "OBJSurvival_FloorDescription_4_3",
-        "InTextLiteral": "\u00A0有几率遭遇特殊事件：数据屏障、战斗协助",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "概率",
+        "InKey": "OBJSurvival_DropResourcesRatioValue_4_3"
       }
     }
   },
   "5": {
-    "DropResourcesRatioValue": {
+    "FloorDescription": {
       "1": {
-        "InKey": "OBJSurvival_DropResourcesRatioValue_5_1",
-        "InTextLiteral": "概率",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "\u00A0敌人词条等级：高级",
+        "InKey": "OBJSurvival_FloorDescription_5_1"
       },
       "2": {
-        "InKey": "OBJSurvival_DropResourcesRatioValue_5_2",
-        "InTextLiteral": "概率",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "\u00A0精英敌人等级：狂潮",
+        "InKey": "OBJSurvival_FloorDescription_5_2"
       },
       "3": {
-        "InKey": "OBJSurvival_DropResourcesRatioValue_5_3",
-        "InTextLiteral": "概率",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "\u00A0有几率遭遇特殊事件：数据屏障、战斗协助",
+        "InKey": "OBJSurvival_FloorDescription_5_3"
       }
     },
-    "LevelId": 30025,
-    "BigIcon": "",
-    "DifficultyIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_05.Icon_Mode_05",
-    "Id": 5,
-    "DifficultyNameLocMeta": {
-      "InKey": "DifficultyName_5",
-      "InTextLiteral": "狂潮",
-      "InNamespace": "season_TBSurvival"
-    },
-    "DropResources": {
-      "1": 99027,
-      "2": 99029,
-      "3": 240021
-    },
-    "TicketID": 11,
     "PanelIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_Transparency_05.Icon_Mode_Transparency_05",
+    "LevelId": 30025,
     "DropResourcesRatioKey": {
       "1": "99027",
       "2": "99029",
       "3": "240021"
     },
+    "DifficultyIcon": "/Game/Rouge/UI/Atlas_DT/FrenzyVirus/Frames/Icon_Mode_05.Icon_Mode_05",
+    "BigIcon": "",
+    "TicketID": 11,
+    "DropResources": {
+      "1": 99027,
+      "2": 99029,
+      "3": 240021
+    },
+    "DifficultyNameLocMeta": {
+      "InNamespace": "season_TBSurvival",
+      "InTextLiteral": "狂潮",
+      "InKey": "DifficultyName_5"
+    },
+    "Id": 5,
     "SmallIcon": "",
-    "FloorDescription": {
+    "DropResourcesRatioValue": {
       "1": {
-        "InKey": "OBJSurvival_FloorDescription_5_1",
-        "InTextLiteral": "\u00A0敌人词条等级：高级",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "概率",
+        "InKey": "OBJSurvival_DropResourcesRatioValue_5_1"
       },
       "2": {
-        "InKey": "OBJSurvival_FloorDescription_5_2",
-        "InTextLiteral": "\u00A0精英敌人等级：狂潮",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "概率",
+        "InKey": "OBJSurvival_DropResourcesRatioValue_5_2"
       },
       "3": {
-        "InKey": "OBJSurvival_FloorDescription_5_3",
-        "InTextLiteral": "\u00A0有几率遭遇特殊事件：数据屏障、战斗协助",
-        "InNamespace": "season_TBSurvival"
+        "InNamespace": "season_TBSurvival",
+        "InTextLiteral": "概率",
+        "InKey": "OBJSurvival_DropResourcesRatioValue_5_3"
       }
     }
   }

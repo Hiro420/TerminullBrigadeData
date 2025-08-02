@@ -12,6 +12,7 @@ local ReplaceTextKeywordList = {
     return PS:GetUserNickName()
   end
 }
+
 function WBP_Radio_C:Construct()
   self.AudioPriority = 0
   local EmitterManager = UE.USubsystemBlueprintLibrary.GetWorldSubsystem(self, UE.UEmitterManager:StaticClass())
@@ -19,6 +20,7 @@ function WBP_Radio_C:Construct()
     EmitterManager.OnVoiceDuration:Add(self, WBP_Radio_C.BindOnVoiceDuration)
   end
 end
+
 function WBP_Radio_C:BindOnVoiceDuration(EventName, ExternalFileName, Duration, Speaker)
   print("BindOnVoiceDuration", EventName, ExternalFileName, Duration)
   if EventName ~= self.CurPlayingEventName then
@@ -42,6 +44,7 @@ function WBP_Radio_C:BindOnVoiceDuration(EventName, ExternalFileName, Duration, 
     }, RealTimerTime, false)
   end
 end
+
 function WBP_Radio_C:ShowRadio(Id, Params)
   self.Id = Id
   self.Params = Params
@@ -84,6 +87,7 @@ function WBP_Radio_C:ShowRadio(Id, Params)
   end
   self:UpdatePropertyInfo()
 end
+
 function WBP_Radio_C:SwitchNextRadio()
   self.MainRadioPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.CurShowIndex = 1
@@ -95,6 +99,7 @@ function WBP_Radio_C:SwitchNextRadio()
     self:HideRadio()
   end
 end
+
 function WBP_Radio_C:ReplaceTextByKeyword(InText)
   local Text = InText
   for Keyword, Func in pairs(ReplaceTextKeywordList) do
@@ -103,6 +108,7 @@ function WBP_Radio_C:ReplaceTextByKeyword(InText)
   end
   return Text
 end
+
 function WBP_Radio_C:UpdatePropertyInfo()
   if not self.RadioProperties[self.CurShowIndex] then
     self.CurShowIndex = 1
@@ -165,6 +171,7 @@ function WBP_Radio_C:UpdatePropertyInfo()
     end
   }, Duration, false)
 end
+
 function WBP_Radio_C:SwitchToNextStepLevel()
   self.MainRadioPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   local CurShowProperty = self.RadioProperties[self.CurShowIndex]
@@ -184,6 +191,7 @@ function WBP_Radio_C:SwitchToNextStepLevel()
     }, CurShowProperty.PropertyInfo.NextDelayTime, false)
   end
 end
+
 function WBP_Radio_C:HideRadio()
   self:StopAllAnimations()
   self:PlayAnimation(self.ani_radio_out, 0.0, 1, UE.EUMGSequencePlayMode.Forward, 1.0)
@@ -192,6 +200,7 @@ function WBP_Radio_C:HideRadio()
   self.AudioPriority = 0
   PlaySound2DEffect(20002, "WBP_Radio_C:HideRadio")
 end
+
 function WBP_Radio_C:OnAnimationFinished(Animation)
   print("WBP_Radio_C:OnAnimationFinished, ", UE.UKismetSystemLibrary.GetDisplayName(self.ani_radio_out))
   if Animation == self.ani_radio_out and not self.IsShow then
@@ -199,6 +208,7 @@ function WBP_Radio_C:OnAnimationFinished(Animation)
     self:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_Radio_C:Destruct()
   self.IsShow = false
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.PropertyTimer) then
@@ -216,4 +226,5 @@ function WBP_Radio_C:Destruct()
   end
   LogicRadio.RadioPlayList = {}
 end
+
 return WBP_Radio_C

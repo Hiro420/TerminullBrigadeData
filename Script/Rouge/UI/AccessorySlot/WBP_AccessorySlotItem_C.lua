@@ -1,13 +1,16 @@
 local WBP_AccessorySlotItem_C = UnLua.Class()
+
 function WBP_AccessorySlotItem_C:Construct()
   self.Image_EquipChoose:SetVisibility(UE.ESlateVisibility.Collapsed)
   EventSystem.AddListener(self, EventDef.GunDisplayPanel.OnInscriptionHovered, WBP_AccessorySlotItem_C.OnInscriptionHovered)
   EventSystem.AddListener(self, EventDef.GunDisplayPanel.OnInscriptionUnHovered, WBP_AccessorySlotItem_C.OnInscriptionUnHovered)
 end
+
 function WBP_AccessorySlotItem_C:Destruct()
   EventSystem.RemoveListener(EventDef.GunDisplayPanel.OnInscriptionHovered, WBP_AccessorySlotItem_C.OnInscriptionHovered, self)
   EventSystem.RemoveListener(EventDef.GunDisplayPanel.OnInscriptionUnHovered, WBP_AccessorySlotItem_C.OnInscriptionUnHovered, self)
 end
+
 function WBP_AccessorySlotItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   if self.bHasAccessory then
     local accessorySlotBoxSlot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.AccessorySlotBox)
@@ -15,14 +18,17 @@ function WBP_AccessorySlotItem_C:OnMouseEnter(MyGeometry, MouseEvent)
     EventSystem.Invoke(EventDef.GunDisplayPanel.OnAccessorySlotHovered, self.AccessoryId, self.AccessoryRarity, GetInscriptionIdTable(self.AccessoryId, self.AccessoryRarity), self.Angle, position)
   end
 end
+
 function WBP_AccessorySlotItem_C:OnMouseLeave(MouseEvent)
   EventSystem.Invoke(EventDef.GunDisplayPanel.OnAccessorySlotUnHovered)
 end
+
 function WBP_AccessorySlotItem_C:UpdateAngle()
   self.Angle = true
   self.Overlay_AccessorySlot:SetRenderTransformAngle(180)
   self.Text_AccessoryName:SetRenderTransformAngle(180)
 end
+
 function WBP_AccessorySlotItem_C:UpdateAccessorySlotItem(HasAccessory, AccessoryId, AccessoryRarity, AccessoryType, AccessorySlotBox)
   self.AccessorySlotBox = AccessorySlotBox
   self.AccessoryId = AccessoryId
@@ -77,6 +83,7 @@ function WBP_AccessorySlotItem_C:UpdateAccessorySlotItem(HasAccessory, Accessory
     end
   end
 end
+
 function WBP_AccessorySlotItem_C:UpdateAccessoryNameVisibility(Show)
   local visibility
   if Show then
@@ -86,6 +93,7 @@ function WBP_AccessorySlotItem_C:UpdateAccessoryNameVisibility(Show)
   end
   self.Text_AccessoryName:SetVisibility(visibility)
 end
+
 function WBP_AccessorySlotItem_C:OnInscriptionHovered(InscriptionId)
   for key, value in pairs(GetInscriptionIdTable(self.AccessoryId, self.AccessoryRarity)) do
     if value == InscriptionId then
@@ -93,7 +101,9 @@ function WBP_AccessorySlotItem_C:OnInscriptionHovered(InscriptionId)
     end
   end
 end
+
 function WBP_AccessorySlotItem_C:OnInscriptionUnHovered()
   self:UpdateAccessoryNameVisibility(false)
 end
+
 return WBP_AccessorySlotItem_C

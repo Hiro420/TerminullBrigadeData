@@ -7,19 +7,24 @@ local LanguageType = {
   [0] = "zh",
   [1] = "en"
 }
+
 function CustomerServiceView:BindClickHandler()
   self.WBP_InteractTipWidgetEsc:BindInteractAndClickEvent(self, self.ListenForEscInputAction)
 end
+
 function CustomerServiceView:UnBindClickHandler()
   self.WBP_InteractTipWidgetEsc:UnBindInteractAndClickEvent(self, self.ListenForEscInputAction)
 end
+
 function CustomerServiceView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function CustomerServiceView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function CustomerServiceView:OnShow(...)
   if not LogicLobby.IsInit then
     local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
@@ -67,6 +72,7 @@ function CustomerServiceView:OnShow(...)
     })
   end
 end
+
 function CustomerServiceView:OnHide()
   if not LogicLobby.IsInit then
     local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
@@ -79,10 +85,12 @@ function CustomerServiceView:OnHide()
     self:SetEnhancedInputActionBlocking(false)
   end
 end
+
 function CustomerServiceView:ListenForEscInputAction()
   UIMgr:Hide(ViewID.UI_CustomerServiceView, true)
   UIMgr:DestroyView(self, ViewID.UI_CustomerServiceView)
 end
+
 function CustomerServiceView:GetUrlByToken(Token)
   local BaseUrl = "https://xyapi.game.qq.com/xiaoyue/service/redirect"
   local Param = {
@@ -110,6 +118,7 @@ function CustomerServiceView:GetUrlByToken(Token)
   end
   return BaseUrl .. "?" .. UrlParamStr
 end
+
 function CustomerServiceView:GetUrlByTokenAndSign(Token, Sign, Language)
   local BaseUrl = "https://test-h5.vlinkapi.com/pc/index.html"
   local Param = {
@@ -140,4 +149,5 @@ function CustomerServiceView:GetUrlByTokenAndSign(Token, Sign, Language)
   end
   return BaseUrl .. "?" .. UrlParamStr
 end
+
 return CustomerServiceView

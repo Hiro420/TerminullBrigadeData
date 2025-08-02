@@ -1,8 +1,10 @@
 local rapidjson = require("rapidjson")
 local WBP_AvatarMain_C = UnLua.Class()
+
 function WBP_AvatarMain_C:Construct()
   self.Btn_Save.OnClicked:Add(self, WBP_AvatarMain_C.BindOnSaveButtonClicked)
 end
+
 function WBP_AvatarMain_C:FocusInput()
   self.Overridden.FocusInput(self)
   self.SaveButtonFunction = nil
@@ -12,16 +14,20 @@ function WBP_AvatarMain_C:FocusInput()
   self.AvatarChooseList:SetVisibility(UE.ESlateVisibility.Collapsed)
   EventSystem.AddListener(self, EventDef.Avatar.OnAvatarItemClicked, WBP_AvatarMain_C.BindOnAvatarItemClicked)
 end
+
 function WBP_AvatarMain_C:UnfocusInput()
   self.Overridden.UnfocusInput(self)
   EventSystem.RemoveListener(EventDef.Avatar.OnAvatarItemClicked, WBP_AvatarMain_C.BindOnAvatarItemClicked, self)
 end
+
 function WBP_AvatarMain_C:BindOnSaveButtonClicked()
   LogicAvatar.RequestSetAvatarInfoToServer(self.SaveButtonFunction)
 end
+
 function WBP_AvatarMain_C:SetSaveButtonFunction(SaveButtonFunction)
   self.SaveButtonFunction = SaveButtonFunction
 end
+
 function WBP_AvatarMain_C:RefreshItemInfo()
   local AllChildren = self.ItemList:GetAllChildren()
   local PreAvatarInfo = LogicAvatar.GetPreAvatarInfo()
@@ -29,6 +35,7 @@ function WBP_AvatarMain_C:RefreshItemInfo()
     SingleItem:Show(PreAvatarInfo[SingleItem.Type])
   end
 end
+
 function WBP_AvatarMain_C:BindOnAvatarItemClicked(IsShow, Type)
   if IsShow then
     self.AvatarChooseList:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -37,6 +44,7 @@ function WBP_AvatarMain_C:BindOnAvatarItemClicked(IsShow, Type)
     self.AvatarChooseList:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_AvatarMain_C:RefreshChooseItemList(Type)
   local AllChildren = self.AvatarChooseList:GetAllChildren()
   for key, SingleItem in pairs(AllChildren) do
@@ -61,4 +69,5 @@ function WBP_AvatarMain_C:RefreshChooseItemList(Type)
     end
   end
 end
+
 return WBP_AvatarMain_C

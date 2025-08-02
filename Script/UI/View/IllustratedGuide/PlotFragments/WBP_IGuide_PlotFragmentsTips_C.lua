@@ -1,11 +1,14 @@
 local OrderedMap = require("Framework.DataStruct.OrderedMap")
 local IllustratedGuideData = require("Modules.IllustratedGuide.IllustratedGuideData")
 local WBP_IGuide_PlotFragmentsTips_C = UnLua.Class()
+
 function WBP_IGuide_PlotFragmentsTips_C:Construct()
   self.FragmentId = -1
 end
+
 function WBP_IGuide_PlotFragmentsTips_C:Destruct()
 end
+
 function WBP_IGuide_PlotFragmentsTips_C:InitInfo(ClueId, FragmentId)
   self.ClueId = ClueId
   self.FragmentId = FragmentId
@@ -19,7 +22,9 @@ function WBP_IGuide_PlotFragmentsTips_C:InitInfo(ClueId, FragmentId)
   end
   UpdateVisibility(self, true)
 end
+
 function WBP_IGuide_PlotFragmentsTips_C:Hide()
   UpdateVisibility(self, false)
 end
+
 return WBP_IGuide_PlotFragmentsTips_C

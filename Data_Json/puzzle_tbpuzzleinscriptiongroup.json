@@ -1,0 +1,1340 @@
+[
+  {
+    "ID": 54100031,
+    "group": 3,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100041,
+    "group": 3,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100061,
+    "group": 3,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100071,
+    "group": 3,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100081,
+    "group": 3,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100091,
+    "group": 3,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100101,
+    "group": 3,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100121,
+    "group": 3,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100191,
+    "group": 3,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100321,
+    "group": 3,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100421,
+    "group": 3,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100451,
+    "group": 3,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100501,
+    "group": 3,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100761,
+    "group": 3,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100141,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100151,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100221,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100231,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100241,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100251,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100261,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100271,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100281,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100291,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100481,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100491,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100511,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100551,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100621,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100751,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100381,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 59910171,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 59910181,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100032,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100033,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100042,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100043,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100062,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100063,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100072,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100073,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100082,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100083,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100092,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100093,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 2
+  },
+  {
+    "ID": 54100102,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100103,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 2
+  },
+  {
+    "ID": 54100122,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100123,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100192,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100193,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100322,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100323,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100422,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100423,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100452,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100453,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100502,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100503,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100762,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100763,
+    "group": 4,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100142,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100152,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100222,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100232,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100242,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100252,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100262,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100272,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100282,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100292,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100482,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100492,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100512,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100552,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100622,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100752,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100382,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 59910172,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 59910182,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100034,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100035,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100044,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100045,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100064,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100065,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100074,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100075,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100084,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100085,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100094,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100095,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100104,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100105,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100124,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100125,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100194,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100195,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100324,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100325,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100424,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100425,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100454,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100455,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100504,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100505,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100764,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100765,
+    "group": 5,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100143,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100153,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100223,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100233,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100243,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100253,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100263,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100273,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100283,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100293,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100483,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100493,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100513,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100553,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100623,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100753,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100383,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 59910173,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 59910183,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100036,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100037,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100046,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100047,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100066,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100067,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100076,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100077,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100086,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100087,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100096,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100097,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100106,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100107,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100126,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100127,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100196,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100197,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100326,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100327,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100426,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100427,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100456,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100457,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100506,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100507,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100766,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100767,
+    "group": 6,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 5320001,
+    "group": 7,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5320002,
+    "group": 7,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5320003,
+    "group": 7,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5320004,
+    "group": 7,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5321010,
+    "group": 7,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5321011,
+    "group": 7,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5321060,
+    "group": 7,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5321061,
+    "group": 7,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 3070110,
+    "group": 7,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 3000110,
+    "group": 7,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 3020110,
+    "group": 7,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5320005,
+    "group": 8,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5320006,
+    "group": 8,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5320007,
+    "group": 8,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5320008,
+    "group": 8,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5320009,
+    "group": 8,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5321020,
+    "group": 8,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5321021,
+    "group": 8,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5321030,
+    "group": 8,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5321031,
+    "group": 8,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 3040110,
+    "group": 8,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 3050110,
+    "group": 8,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 3030110,
+    "group": 8,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5320010,
+    "group": 9,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5320011,
+    "group": 9,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5320012,
+    "group": 9,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5320013,
+    "group": 9,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5320014,
+    "group": 9,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5321000,
+    "group": 9,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5321001,
+    "group": 9,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5321040,
+    "group": 9,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 5321041,
+    "group": 9,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 3010110,
+    "group": 9,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 3060110,
+    "group": 9,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 541000771,
+    "group": 9,
+    "SourceType": 3,
+    "EffectType": 2
+  },
+  {
+    "ID": 54100144,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100154,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100224,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100234,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100244,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100254,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100264,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100274,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100284,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100294,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100484,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100494,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100514,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100554,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100624,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100754,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100384,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 59910174,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 59910184,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100038,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100048,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100068,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100078,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100088,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100098,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100108,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100128,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100198,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100328,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100428,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100458,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100508,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  },
+  {
+    "ID": 54100768,
+    "group": 10,
+    "SourceType": 0,
+    "EffectType": 1
+  }
+]

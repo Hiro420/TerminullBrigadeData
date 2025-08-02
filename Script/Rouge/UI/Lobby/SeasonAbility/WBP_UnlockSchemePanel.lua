@@ -5,21 +5,26 @@ local UIUtil = require("Framework.UIMgr.UIUtil")
 local SeasonAbilityData = require("Modules.SeasonAbility.SeasonAbilityData")
 local SeasonAbilityHandler = require("Protocol.SeasonAbility.SeasonAbilityHandler")
 local WBP_UnlockSchemePanel = Class(ViewBase)
+
 function WBP_UnlockSchemePanel:BindClickHandler()
   self.Btn_Confirm.OnMainButtonClicked:Add(self, self.BindOnConfirmButtonClicked)
   self.Btn_Cancel.OnMainButtonClicked:Add(self, self.BindOnCancelButtonClicked)
 end
+
 function WBP_UnlockSchemePanel:UnBindClickHandler()
   self.Btn_Confirm.OnMainButtonClicked:Remove(self, self.BindOnConfirmButtonClicked)
   self.Btn_Cancel.OnMainButtonClicked:Remove(self, self.BindOnCancelButtonClicked)
 end
+
 function WBP_UnlockSchemePanel:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function WBP_UnlockSchemePanel:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_UnlockSchemePanel:OnShow(HeroId)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -52,6 +57,7 @@ function WBP_UnlockSchemePanel:OnShow(HeroId)
     UpdateVisibility(self.Txt_CostNum, false)
   end
 end
+
 function WBP_UnlockSchemePanel:BindOnConfirmButtonClicked(...)
   local UnlockResourceInfo = self.SchemeRowInfo.UnlockConsumerResource[1]
   local CurHaveResourceNum = LogicOutsidePackback.GetResourceNumById(UnlockResourceInfo.key)
@@ -63,9 +69,11 @@ function WBP_UnlockSchemePanel:BindOnConfirmButtonClicked(...)
   SeasonAbilityHandler:RequestUnlockSchemeToServer(self.CurHeroId)
   UIMgr:Hide(ViewID.UI_UnlockSchemePanel)
 end
+
 function WBP_UnlockSchemePanel:BindOnCancelButtonClicked(...)
   UIMgr:Hide(ViewID.UI_UnlockSchemePanel)
 end
+
 function WBP_UnlockSchemePanel:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -74,4 +82,5 @@ function WBP_UnlockSchemePanel:OnHide()
   self:SetEnhancedInputActionBlocking(false)
   self.SchemeRowInfo = nil
 end
+
 return WBP_UnlockSchemePanel

@@ -1,4 +1,5 @@
 local ClimbTowerAwardItem = UnLua.Class()
+
 function ClimbTowerAwardItem:InitAwardItem(Item)
   self.WBP_Item:InitItem(Item.Id)
   UpdateVisibility(self.FirstPassPanel, Item.bFirstWinReward)
@@ -12,4 +13,5 @@ function ClimbTowerAwardItem:InitAwardItem(Item)
   UpdateVisibility(self.Txt_Num, Item.Num > 0)
   self.Txt_Num:SetText(Item.Num)
 end
+
 return ClimbTowerAwardItem

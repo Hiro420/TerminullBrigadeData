@@ -1,6 +1,7 @@
 local WBP_PuzzleDragWidget = UnLua.Class()
 local PuzzleRotateName = "PuzzleRotate"
 local PuzzleData = require("Modules.Puzzle.PuzzleData")
+
 function WBP_PuzzleDragWidget:Show(Coordinate, PuzzleId)
   if not IsListeningForInputAction(self, PuzzleRotateName, UE.EInputEvent.IE_Pressed) then
     ListenForInputAction(PuzzleRotateName, UE.EInputEvent.IE_Pressed, true, {
@@ -12,6 +13,7 @@ function WBP_PuzzleDragWidget:Show(Coordinate, PuzzleId)
   self.RotateIndex = 1
   self:RefreshItemPos(Coordinate)
 end
+
 function WBP_PuzzleDragWidget:RefreshItemPos(Coordinate)
   local PuzzleView = UIMgr:GetLuaFromActiveView(ViewID.UI_Puzzle)
   local Size = PuzzleView.BoardItemSize
@@ -68,6 +70,7 @@ function WBP_PuzzleDragWidget:RefreshItemPos(Coordinate)
     end
   end
 end
+
 function WBP_PuzzleDragWidget:BindOnPuzzleRotateKeyPressed(IsRightMouse)
   if not IsRightMouse then
     local CommonInputSubsystem = UE.USubsystemBlueprintLibrary.GetLocalPlayerSubsystem(self:GetOwningPlayer(), UE.UCommonInputSubsystem:StaticClass())
@@ -101,9 +104,11 @@ function WBP_PuzzleDragWidget:BindOnPuzzleRotateKeyPressed(IsRightMouse)
   PuzzleViewModel:UpdatePuzzleDragCoordinate(RotateCoordinate.pos)
   EventSystem.Invoke(EventDef.Puzzle.OnRotatePuzzleDragCoordinate, RotateCoordinate.pos)
 end
+
 function WBP_PuzzleDragWidget:Destruct(...)
   if IsListeningForInputAction(self, PuzzleRotateName, UE.EInputEvent.IE_Pressed) then
     StopListeningForInputAction(self, PuzzleRotateName, UE.EInputEvent.IE_Pressed)
   end
 end
+
 return WBP_PuzzleDragWidget

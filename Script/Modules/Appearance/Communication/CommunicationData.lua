@@ -10,11 +10,13 @@ local CommunicationData = {
   HeroCommEquip = {},
   RouletteIdToTBCommonicationData = {}
 }
+
 function CommunicationData.ClearData()
   CommunicationData.HeroCommMap = {}
   CommunicationData.HeroCommBag = {}
   CommunicationData.HeroCommEquip = {}
 end
+
 function CommunicationData.InitData()
   CommunicationData.ClearData()
   local CommunicationList = LuaTableMgr.GetLuaTableByName(TableNames.TBResHeroCommuniRoulette)
@@ -33,18 +35,21 @@ function CommunicationData.InitData()
     end
   end
 end
+
 function CommunicationData.CheckCommIsUnlock(CommId)
   if table.Contain(CommunicationData.HeroCommBag, CommunicationData.GetRoulleteIdByCommId(CommId)) then
     return true
   end
   return false
 end
+
 function CommunicationData.CheckCommIsEquiped(CommId)
   if table.Contain(CommunicationData.HeroCommEquip, CommunicationData.GetRoulleteIdByCommId(CommId)) then
     return true
   end
   return false
 end
+
 function CommunicationData.GetSprayListByHeroId(HeroId)
   local SprayList = {}
   if CommunicationData.HeroCommMap[HeroId] and CommunicationData.HeroCommMap[HeroId].SprayList then
@@ -59,6 +64,7 @@ function CommunicationData.GetSprayListByHeroId(HeroId)
   end
   return SprayList
 end
+
 function CommunicationData.GetVoiceListByHeroId(HeroId)
   local VoiceList = {}
   if CommunicationData.HeroCommMap[HeroId] and CommunicationData.HeroCommMap[HeroId].VoiceList then
@@ -73,6 +79,7 @@ function CommunicationData.GetVoiceListByHeroId(HeroId)
   end
   return VoiceList
 end
+
 function CommunicationData.GetRoulleteIdByCommId(CommId)
   local CommunicationList = LuaTableMgr.GetLuaTableByName(TableNames.TBResHeroCommuniRoulette)
   if CommunicationList and CommunicationList[CommId] then
@@ -80,6 +87,7 @@ function CommunicationData.GetRoulleteIdByCommId(CommId)
   end
   return nil
 end
+
 function CommunicationData.GetCommIdByRoulleteId(RoulleteId)
   local CommunicationList = LuaTableMgr.GetLuaTableByName(TableNames.TBResHeroCommuniRoulette)
   for k, v in pairs(CommunicationList) do
@@ -89,6 +97,7 @@ function CommunicationData.GetCommIdByRoulleteId(RoulleteId)
   end
   return nil
 end
+
 function CommunicationData.GetTypeByCommId(CommId)
   local CommunicationList = LuaTableMgr.GetLuaTableByName(TableNames.TBResHeroCommuniRoulette)
   if CommunicationList and CommunicationList[CommId] then
@@ -96,6 +105,7 @@ function CommunicationData.GetTypeByCommId(CommId)
   end
   return nil
 end
+
 function CommunicationData.GetHeroNameByCommId(CommId)
   local CommunicationList = LuaTableMgr.GetLuaTableByName(TableNames.TBResHeroCommuniRoulette)
   if CommunicationList and CommunicationList[CommId] then
@@ -107,6 +117,7 @@ function CommunicationData.GetHeroNameByCommId(CommId)
   end
   return nil
 end
+
 function CommunicationData.GetTBCommonicationDataByRouletteId(RouletteID)
   if table.IsEmpty(CommunicationData.RouletteIdToTBCommonicationData) then
     local tbCommonication = LuaTableMgr.GetLuaTableByName(TableNames.TBResHeroCommuniRoulette)
@@ -118,4 +129,5 @@ function CommunicationData.GetTBCommonicationDataByRouletteId(RouletteID)
   end
   return CommunicationData.RouletteIdToTBCommonicationData[RouletteID]
 end
+
 return CommunicationData

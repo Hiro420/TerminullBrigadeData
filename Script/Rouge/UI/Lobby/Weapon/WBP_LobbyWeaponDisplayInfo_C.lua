@@ -1,7 +1,9 @@
 local WBP_LobbyWeaponDisplayInfo_C = UnLua.Class()
+
 function WBP_LobbyWeaponDisplayInfo_C:Construct()
   self:SetIsSelected(false)
 end
+
 function WBP_LobbyWeaponDisplayInfo_C:BindOnViewFullAttributeListNamePressed()
   if not self:IsVisible() then
     return
@@ -9,6 +11,7 @@ function WBP_LobbyWeaponDisplayInfo_C:BindOnViewFullAttributeListNamePressed()
   self.bIsExpand = true
   self:SetAttributeInfo()
 end
+
 function WBP_LobbyWeaponDisplayInfo_C:BindOnViewFullAttributeListNameReleased()
   if not self:IsVisible() then
     return
@@ -16,6 +19,7 @@ function WBP_LobbyWeaponDisplayInfo_C:BindOnViewFullAttributeListNameReleased()
   self.bIsExpand = false
   self:SetAttributeInfo()
 end
+
 function WBP_LobbyWeaponDisplayInfo_C:InitInfo(BarrelId, AccessoryIdList, IsBattle, WeaponInfo)
   print("WBP_LobbyWeaponDisplayInfo_C:InitInfo", BarrelId)
   self.MainBodyId = tonumber(BarrelId)
@@ -37,9 +41,11 @@ function WBP_LobbyWeaponDisplayInfo_C:InitInfo(BarrelId, AccessoryIdList, IsBatt
     end
   end
 end
+
 function WBP_LobbyWeaponDisplayInfo_C:ShowCurrentEquipTipPanel()
   self.CurrentEquipTipPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_LobbyWeaponDisplayInfo_C:ShowTipPanel(TipText, IsShowOperateIcon)
   if TipText then
     self.TipPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -51,9 +57,11 @@ function WBP_LobbyWeaponDisplayInfo_C:ShowTipPanel(TipText, IsShowOperateIcon)
     end
   end
 end
+
 function WBP_LobbyWeaponDisplayInfo_C:SetIsSelected(IsSelected)
   UpdateVisibility(self.SelectedPanel, IsSelected)
 end
+
 function WBP_LobbyWeaponDisplayInfo_C:SetAttributeInfo()
   self.MainAttributeInfoTable = {}
   local AccessoryTable = LuaTableMgr.GetLuaTableByName(TableNames.TBAccessory)
@@ -140,6 +148,7 @@ function WBP_LobbyWeaponDisplayInfo_C:SetAttributeInfo()
     end
   end
 end
+
 function WBP_LobbyWeaponDisplayInfo_C:RefreshWeaponSkill()
   local Result, RowData = GetRowData(DT.DT_Weapon, tostring(self.MainBodyId))
   local index = 1
@@ -154,6 +163,7 @@ function WBP_LobbyWeaponDisplayInfo_C:RefreshWeaponSkill()
   HideOtherItem(self.VerticalBoxSkill, index)
   UpdateVisibility(self.Image_Line_2, index > 1)
 end
+
 function WBP_LobbyWeaponDisplayInfo_C:GetRarity(Id, IsBarrel)
   if IsBarrel then
     local WeaponTable = LuaTableMgr.GetLuaTableByName(TableNames.TBWeapon)
@@ -165,6 +175,7 @@ function WBP_LobbyWeaponDisplayInfo_C:GetRarity(Id, IsBarrel)
     return TargetAccessoryInfo and TargetAccessoryInfo.AccessoryRarity or UE.ERGItemRarity.EIR_Legend
   end
 end
+
 function WBP_LobbyWeaponDisplayInfo_C:SetBasicInfo()
   local LogicCommandDataSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.ULogicCommandDataSubSystem:StaticClass())
   if not LogicCommandDataSubsystem then
@@ -193,10 +204,13 @@ function WBP_LobbyWeaponDisplayInfo_C:SetBasicInfo()
     self.RGTextWeaponType:SetText("")
   end
 end
+
 function WBP_LobbyWeaponDisplayInfo_C:GetWeaponAttributeValue(TempString, AttributeConfig, AllMainAttributeListTable)
   return LogicOutsideWeapon.GetWeaponAttributeValue(TempString, AttributeConfig, AllMainAttributeListTable, self.IsBattle)
 end
+
 function WBP_LobbyWeaponDisplayInfo_C:PopSelfInputAction()
   self:PopInputAction()
 end
+
 return WBP_LobbyWeaponDisplayInfo_C

@@ -1,4 +1,5 @@
 local WBP_SingleRewardItem_C = UnLua.Class()
+
 function WBP_SingleRewardItem_C:Show(Info)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -7,6 +8,7 @@ function WBP_SingleRewardItem_C:Show(Info)
   local RowInfo = DTSubsystem:K2_GetItemTableRow(Info.ItemId)
   self:UpdateInfo(Info.Count, RowInfo.SpriteIcon, RowInfo.Name)
 end
+
 function WBP_SingleRewardItem_C:UpdateInfo(Num, SpriteIcon, Name)
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   if Name and not UE.UKismetStringLibrary.IsEmpty(Name) then
@@ -25,7 +27,9 @@ function WBP_SingleRewardItem_C:UpdateInfo(Num, SpriteIcon, Name)
     end
   end
 end
+
 function WBP_SingleRewardItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return WBP_SingleRewardItem_C

@@ -1,5 +1,6 @@
 local funcutil = require("Framework.Utils.FuncUtil")
 local WBP_TaskPanel_Countl_C = UnLua.Class()
+
 function WBP_TaskPanel_Countl_C:InitEventPanel(TaskEventConfig, EventId, TaskId)
   self.EventId = EventId
   self.TaskId = TaskId
@@ -9,6 +10,7 @@ function WBP_TaskPanel_Countl_C:InitEventPanel(TaskEventConfig, EventId, TaskId)
   self.Txt_TaskName:SetText(TaskEventConfig.EventName)
   UpdateVisibility(self, true)
 end
+
 function WBP_TaskPanel_Countl_C:UpdateEventPanel(TaskInfo)
   if TaskInfo.bIsCustomTask then
   else
@@ -31,6 +33,7 @@ function WBP_TaskPanel_Countl_C:UpdateEventPanel(TaskInfo)
     end
   end
 end
+
 function WBP_TaskPanel_Countl_C:GetEventTargetValue()
   local Result, Row = GetRowData(DT.DT_ActionEventGameplayTask, self.TaskId)
   if not Result then
@@ -43,6 +46,7 @@ function WBP_TaskPanel_Countl_C:GetEventTargetValue()
   end
   return -1
 end
+
 function WBP_TaskPanel_Countl_C:SetWidgetStyle(Status)
   UpdateVisibility(self.Img_TaskCompleted, Status == UE.ERGActionEvent_TaskConditionStatus.Meet)
   if Status == UE.ERGActionEvent_TaskConditionStatus.Meet then
@@ -54,4 +58,5 @@ function WBP_TaskPanel_Countl_C:SetWidgetStyle(Status)
     SetImageBrushBySoftObjectPath(self.Img_TaskState, self.TaskEventConfig.EventErrorIcon)
   end
 end
+
 return WBP_TaskPanel_Countl_C

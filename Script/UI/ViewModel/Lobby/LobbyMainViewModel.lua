@@ -12,6 +12,7 @@ LobbyMainViewModel.propertyBindings = {
 }
 LobbyMainViewModel.subViewModels = {}
 local WidgetToModelZOffset = 190
+
 function LobbyMainViewModel:OnInit()
   self.Super.OnInit(self)
   self.UseMemberList = {}
@@ -29,12 +30,15 @@ function LobbyMainViewModel:OnInit()
   EventSystem.AddListener(self, EventDef.BattlePass.GetBattlePassData, self.BindOnGetBattlePassData)
   EventSystem.AddListenerNew(EventDef.Lobby.UpdateTicketStatus, self, self.RefreshRessourcenInfo)
 end
+
 function LobbyMainViewModel:RegisterPropertyChanged(BindingTable, View)
   self.Super.RegisterPropertyChanged(self, BindingTable, View)
 end
+
 function LobbyMainViewModel:UnRegisterPropertyChanged(BindingTable, View)
   self.Super.UnRegisterPropertyChanged(self, BindingTable, View)
 end
+
 function LobbyMainViewModel:RefreshRessourcenInfo(NotResource)
   local LobbyMainView = self:GetFirstView()
   if not LobbyMainView then
@@ -46,6 +50,7 @@ function LobbyMainViewModel:RefreshRessourcenInfo(NotResource)
     TargetUnlockFloorTip:RefreshRessourcenInfo(NotResource)
   end
 end
+
 function LobbyMainViewModel:BindOnUpdateMyTeamInfo()
   self:OnUpdateMyTeamInfo()
   local LobbyMainView = self:GetFirstView()
@@ -56,6 +61,7 @@ function LobbyMainViewModel:BindOnUpdateMyTeamInfo()
   self:UpdateGameModeInfo()
   self:UpdateTeamMemberModels()
 end
+
 function LobbyMainViewModel:UpdateTeamMemberModels()
   local LobbyMainView = self:GetFirstView()
   if not LobbyMainView then
@@ -147,9 +153,11 @@ function LobbyMainViewModel:UpdateTeamMemberModels()
   end
   self:InitOwnModelInfo()
 end
+
 function LobbyMainViewModel:ClearUseTeamMemberModels()
   self.UseMemberList = {}
 end
+
 function LobbyMainViewModel:GetTargetMemberModelAndWidgetIndex(RoleId)
   if RoleId == DataMgr.GetUserId() then
     return 1
@@ -176,6 +184,7 @@ function LobbyMainViewModel:GetTargetMemberModelAndWidgetIndex(RoleId)
   print("\230\178\161\230\156\137\229\143\175\231\148\168\231\154\132\232\139\177\233\155\132\230\168\161\229\158\139\239\188\140\232\175\183\230\163\128\230\159\165\229\164\167\229\142\133\229\156\186\230\153\175\233\133\141\231\189\174\239\188\129")
   return 0
 end
+
 function LobbyMainViewModel:InitPanelStatus()
   local LobbyMainView = self:GetFirstView()
   if not LobbyMainView then
@@ -191,6 +200,7 @@ function LobbyMainViewModel:InitPanelStatus()
     SingleItem:Hide()
   end
 end
+
 function LobbyMainViewModel:InitOwnModelInfo()
   local LobbyMainView = self:GetFirstView()
   if not LobbyMainView then
@@ -219,6 +229,7 @@ function LobbyMainViewModel:InitOwnModelInfo()
     end
   end
 end
+
 function LobbyMainViewModel:BindOnUpdateTeamMembersInfo()
   local LobbyMainView = self:GetFirstView()
   if not LobbyMainView then
@@ -246,6 +257,7 @@ function LobbyMainViewModel:BindOnUpdateTeamMembersInfo()
     end
   end
 end
+
 function LobbyMainViewModel:BindOnTeamStateChanged(OldState, NewState)
   local LobbyMainView = self:GetFirstView()
   if not LobbyMainView then
@@ -262,6 +274,7 @@ function LobbyMainViewModel:BindOnTeamStateChanged(OldState, NewState)
     self:ShowRecruitingPanel()
   end
 end
+
 function LobbyMainViewModel:ShowIdleStatePanel()
   local LobbyMainView = self:GetFirstView()
   if not LobbyMainView then
@@ -273,6 +286,7 @@ function LobbyMainViewModel:ShowIdleStatePanel()
   end
   LobbyMainView.ChangeModeBtnPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function LobbyMainViewModel:ShowMatchingStatePanel()
   local LobbyMainView = self:GetFirstView()
   if not LobbyMainView then
@@ -281,6 +295,7 @@ function LobbyMainViewModel:ShowMatchingStatePanel()
   end
   LobbyMainView.ChangeModeBtnPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function LobbyMainViewModel:ShowRecruitingPanel()
   if UIMgr:IsShow(ViewID.UI_RecruitingTipPanel) then
     return
@@ -291,6 +306,7 @@ function LobbyMainViewModel:ShowRecruitingPanel()
   local Floor = LogicTeam:GetFloor()
   recruitingPanel:SetGameInfo(ModeID, WorldID, Floor)
 end
+
 function LobbyMainViewModel:OnPlayInAnimation()
   local LobbyMainView = self:GetFirstView()
   if not LobbyMainView then
@@ -299,6 +315,7 @@ function LobbyMainViewModel:OnPlayInAnimation()
   end
   LobbyMainView.CanvasPanel_RoleName:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function LobbyMainViewModel:OnPlayOutAnimation()
   local LobbyMainView = self:GetFirstView()
   if not LobbyMainView then
@@ -307,6 +324,7 @@ function LobbyMainViewModel:OnPlayOutAnimation()
   end
   LobbyMainView.CanvasPanel_RoleName:SetVisibility(UE.ESlateVisibility.Hidden)
 end
+
 function LobbyMainViewModel:BindOnJoinGameFail()
   local LobbyMainView = self:GetFirstView()
   if not LobbyMainView then
@@ -318,6 +336,7 @@ function LobbyMainViewModel:BindOnJoinGameFail()
   LobbyMainView.ChangeModeBtnPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   EventSystem.Invoke(EventDef.Lobby.PlayInAnimation)
 end
+
 function LobbyMainViewModel:BindOnModelAreaClickedChanged(IsClicked, ModelIndex)
   local LobbyMainView = self:GetFirstView()
   if not LobbyMainView then
@@ -377,6 +396,7 @@ function LobbyMainViewModel:BindOnModelAreaClickedChanged(IsClicked, ModelIndex)
     LobbyMainView.TeamOperateButtonPanel:Hide()
   end
 end
+
 function LobbyMainViewModel:BindInviteDialogue(bShow, Id)
   local LobbyMainView = self:GetFirstView()
   if not LobbyMainView then
@@ -385,8 +405,10 @@ function LobbyMainViewModel:BindInviteDialogue(bShow, Id)
   end
   Logic_MainTask.BindInviteDialogue(bShow, Id, LobbyMainView.WBP_MainTask_RequestConversation)
 end
+
 function LobbyMainViewModel:BindOnCameraTargetChangedToLobbyAnimCamera(...)
 end
+
 function LobbyMainViewModel:SetModelClickAreaOpacity(Opacity)
   local LobbyMainViewModelTemp = UIModelMgr:Get("LobbyMainViewModel")
   local LobbyMainView = LobbyMainViewModelTemp:GetFirstView()
@@ -396,12 +418,14 @@ function LobbyMainViewModel:SetModelClickAreaOpacity(Opacity)
   end
   LobbyMainView.CanvasPanel_ModelClickArea:SetRenderOpacity(Opacity)
 end
+
 function LobbyMainViewModel:BindOnGetBattlePassData(BattlePassInfo, BattlePassID)
   local LobbyMainView = self:GetFirstView()
   if LobbyMainView then
     LobbyMainView:UpdateBattlePassInfo(BattlePassInfo, BattlePassID)
   end
 end
+
 function LobbyMainViewModel:OnUpdateMyTeamInfo()
   if BattleLagacyData.CurBattleLagacyData == nil then
     return
@@ -415,12 +439,15 @@ function LobbyMainViewModel:OnUpdateMyTeamInfo()
   end
   self.bBattleLagacyActive = BattleLagacyModule:CheckBattleLagacyIsActive()
 end
+
 function LobbyMainViewModel:OpenChangeModePanel()
   UIMgr:Show(ViewID.UI_MainModeSelection, true)
 end
+
 function LobbyMainViewModel:BindOnDrawCardButtonClicked()
   UIMgr:Show(ViewID.UI_DrawCard, true)
 end
+
 function LobbyMainViewModel:InitLobbyTeamRoleActors()
   self.TeamMemberActors = {}
   local MaxTeamNum = 3
@@ -435,16 +462,19 @@ function LobbyMainViewModel:InitLobbyTeamRoleActors()
     end
   end
 end
+
 function LobbyMainViewModel:HideAllModel()
   for _, SingleActor in pairs(self.TeamMemberActors) do
     SingleActor:SetHiddenInGame(true)
   end
 end
+
 function LobbyMainViewModel:ShowAfterSequence()
   for _, SingleActor in pairs(self.TeamMemberActors) do
     SingleActor:SetHiddenInGame(SingleActor.bIsActived)
   end
 end
+
 function LobbyMainViewModel:UpdateGameModeInfo()
   local LobbyMainView = self:GetFirstView()
   if not LobbyMainView then
@@ -479,6 +509,7 @@ function LobbyMainViewModel:UpdateGameModeInfo()
   end
   LobbyMainView.Txt_DifficultyLevel:SetText(LogicTeam.GetModeDifficultDisplayText())
 end
+
 function LobbyMainViewModel:ChangeOwnNameWidgetVisibility()
   local LobbyMainView = self:GetFirstView()
   if not LobbyMainView then
@@ -499,6 +530,7 @@ function LobbyMainViewModel:ChangeOwnNameWidgetVisibility()
     end
   end
 end
+
 function LobbyMainViewModel:InitPanelPosition()
   local LobbyMainViewModel = UIModelMgr:Get("LobbyMainViewModel")
   local LobbyMainView = LobbyMainViewModel:GetFirstView()
@@ -520,6 +552,7 @@ function LobbyMainViewModel:InitPanelPosition()
     LobbyMainViewModel:UpdateRoleNamePosition(key)
   end
 end
+
 function LobbyMainViewModel:UpdateRoleNamePosition(Index)
   local LobbyMainView = self:GetFirstView()
   if not LobbyMainView then
@@ -541,6 +574,7 @@ function LobbyMainViewModel:UpdateRoleNamePosition(Index)
     UnlockFloorTipSlot:SetPosition(Position + UE.FVector2D(0, 20))
   end
 end
+
 function LobbyMainViewModel:CheckOpeningBattlePass()
   local battlePassTable = LuaTableMgr.GetLuaTableByName(TableNames.TBBattlePass)
   local UTCTimestamp = GetCurrentTimestamp(true)
@@ -555,6 +589,7 @@ function LobbyMainViewModel:CheckOpeningBattlePass()
   end
   return battlePassTable[1]
 end
+
 function LobbyMainViewModel:OnShutdown()
   self.Super.OnShutdown(self)
   EventSystem.RemoveListener(EventDef.Lobby.RoleItemClicked, self.BindOnChangeRoleItemClicked, self)
@@ -569,4 +604,5 @@ function LobbyMainViewModel:OnShutdown()
   EventSystem.RemoveListener(EventDef.Lobby.OnCameraTargetChangedToLobbyAnimCamera, self.BindOnCameraTargetChangedToLobbyAnimCamera, self)
   EventSystem.RemoveListenerNew(EventDef.Lobby.UpdateTicketStatus, self, self.RefreshRessourcenInfo)
 end
+
 return LobbyMainViewModel

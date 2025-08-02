@@ -1,5 +1,6 @@
 local WBP_SingleHexItem = UnLua.Class()
 local PuzzleData = require("Modules.Puzzle.PuzzleData")
+
 function WBP_SingleHexItem:Show(PuzzleId, Coordinate, CoordinateGroup, PuzzlePackageInfo, SlotIndex, PuzzleDetailInfo, GemPackageInfoList)
   self.PuzzleId = PuzzleId
   self.Coordinate = Coordinate
@@ -40,9 +41,11 @@ function WBP_SingleHexItem:Show(PuzzleId, Coordinate, CoordinateGroup, PuzzlePac
     SetImageBrushByPath(self.Img_Main, WorldRowInfo.GridBottomIcon)
   end
 end
+
 function WBP_SingleHexItem:ChangeGemItemCanDragStatus(CanDrag)
   self.WBP_GemEquipItem:ChangeGemItemCanDragStatus(CanDrag)
 end
+
 function WBP_SingleHexItem:RefreshGemItemStatus(SlotIndex)
   local DetailInfo = self.PuzzleDetailInfo or PuzzleData:GetPuzzleDetailInfo(self.PuzzleId)
   local GemSlotInfo = {}
@@ -66,6 +69,7 @@ function WBP_SingleHexItem:RefreshGemItemStatus(SlotIndex)
     SetImageBrushByPath(self.Img_Main, WorldRowInfo.GridBottomIcon)
   end
 end
+
 function WBP_SingleHexItem:RefreshSideSelectedVis(CoordinateGroup)
   local EquipSlotCoordinate = {
     [0] = {
@@ -122,15 +126,19 @@ function WBP_SingleHexItem:RefreshSideSelectedVis(CoordinateGroup)
   UpdateVisibility(self.glow_BottomLeft, IsShowBottomLeft)
   UpdateVisibility(self.glow_BottomRight, IsShowTopRight)
 end
+
 function WBP_SingleHexItem:UpdateSelectedVis(IsShow)
   UpdateVisibility(self.Overlay_Selected, IsShow)
 end
+
 function WBP_SingleHexItem:UpdateEquipPanelVis(IsShow)
   UpdateVisibility(self.Overlay_equip, IsShow)
 end
+
 function WBP_SingleHexItem:UpdateBoardEquipVis(IsShow)
   UpdateVisibility(self.Overlay_Board, IsShow)
 end
+
 function WBP_SingleHexItem:UpdateIsOverWorldNumStatus(IsOver)
   if IsOver then
     self.RGStateController_WorldNum:ChangeStatus("Over")
@@ -138,12 +146,15 @@ function WBP_SingleHexItem:UpdateIsOverWorldNumStatus(IsOver)
     self.RGStateController_WorldNum:ChangeStatus("Normal")
   end
 end
+
 function WBP_SingleHexItem:PlayEquipAnim(...)
   self:PlayAnimation(self.Ani_equip)
 end
+
 function WBP_SingleHexItem:PlayEquipGemAnim(...)
   self.WBP_GemEquipItem:PlayEquipGemAnim()
 end
+
 function WBP_SingleHexItem:ShowOrHideGemHoverAnim(IsShow)
   if IsShow then
     self:PlayAnimation(self.Ani_xinpian_hover, 0.0, 0, UE.EUMGSequencePlayMode.Forward, 1.0, true)
@@ -151,6 +162,7 @@ function WBP_SingleHexItem:ShowOrHideGemHoverAnim(IsShow)
     self:StopAnimation(self.Ani_xinpian_hover)
   end
 end
+
 function WBP_SingleHexItem:ShowOrHideEquipAnimImage(IsShow)
   if IsShow then
     self.Img_Loop:SetRenderOpacity(1.0)
@@ -160,4 +172,5 @@ function WBP_SingleHexItem:ShowOrHideEquipAnimImage(IsShow)
     self.glow:SetRenderOpacity(0.0)
   end
 end
+
 return WBP_SingleHexItem

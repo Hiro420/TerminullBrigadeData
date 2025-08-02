@@ -1,8 +1,11 @@
 local WBP_CurrencyChipSlotItemList = UnLua.Class()
+
 function WBP_CurrencyChipSlotItemList:Construct()
 end
+
 function WBP_CurrencyChipSlotItemList:Destruct()
 end
+
 function WBP_CurrencyChipSlotItemList:InitCurrencyChipSlotItemList(PuzzleWorld, RarityToChipCurrencyData)
   local tbPuzzleWorld = LuaTableMgr.GetLuaTableByName(TableNames.TBPuzzleWorld)
   if not tbPuzzleWorld then
@@ -21,4 +24,5 @@ function WBP_CurrencyChipSlotItemList:InitCurrencyChipSlotItemList(PuzzleWorld, 
   end
   HideOtherItem(self.VerticalBox_ChipList, index)
 end
+
 return WBP_CurrencyChipSlotItemList

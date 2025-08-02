@@ -1,6 +1,8 @@
 local WBP_CommonAccessoryDisplayInfo_C = UnLua.Class()
+
 function WBP_CommonAccessoryDisplayInfo_C:Construct()
 end
+
 function WBP_CommonAccessoryDisplayInfo_C:InitInfo(AccessoryId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -37,6 +39,7 @@ function WBP_CommonAccessoryDisplayInfo_C:InitInfo(AccessoryId)
   SetImageBrushBySoftObject(self.Img_QualityBottom, self.BottomIcon[ItemRarity])
   self:InitInscriptionList(AccessoryRowInfo, ItemRarity)
 end
+
 function WBP_CommonAccessoryDisplayInfo_C:InitInscriptionList(AccessoryRowInfo, ItemRarity)
   local AllChildren = self.InscriptionList:GetAllChildren()
   for i, SingleItem in pairs(AllChildren) do
@@ -57,4 +60,5 @@ function WBP_CommonAccessoryDisplayInfo_C:InitInscriptionList(AccessoryRowInfo, 
     end
   end
 end
+
 return WBP_CommonAccessoryDisplayInfo_C

@@ -1,6 +1,7 @@
 local WBP_LobbyMenuButton_C = UnLua.Class()
 local CurrentSelectedLabelName = ""
 local bBindInput = false
+
 function WBP_LobbyMenuButton_C:OnBindUIInput()
   bBindInput = true
   if self.IsActivate then
@@ -8,6 +9,7 @@ function WBP_LobbyMenuButton_C:OnBindUIInput()
     self.WBP_InteractTipWidgetMenuNext:BindInteractAndClickEvent(self, self.OnSelectNext)
   end
 end
+
 function WBP_LobbyMenuButton_C:OnUnBindUIInput()
   bBindInput = false
   if self.IsActivate then
@@ -15,11 +17,13 @@ function WBP_LobbyMenuButton_C:OnUnBindUIInput()
     self.WBP_InteractTipWidgetMenuNext:UnBindInteractAndClickEvent(self, self.OnSelectNext)
   end
 end
+
 function WBP_LobbyMenuButton_C:Construct()
   self.Button_Menu.OnClicked:Add(self, WBP_LobbyMenuButton_C.OnClicked_Menu)
   self.Button_Menu.OnHovered:Add(self, self.BindOnMenuButtonHovered)
   self.Button_Menu.OnUnhovered:Add(self, self.BindOnMenuButtonUnhovered)
 end
+
 function WBP_LobbyMenuButton_C:Show(LabelTagName, ChildLabelList)
   self.LabelTagName = LabelTagName
   self.ChildLabelList = ChildLabelList
@@ -40,6 +44,7 @@ function WBP_LobbyMenuButton_C:Show(LabelTagName, ChildLabelList)
   self:BindOnLobbyLabelSelected(LogicLobby.GetCurSelectedLabelName())
   EventSystem.AddListener(self, EventDef.Lobby.OnLobbyLabelSelected, self.BindOnLobbyLabelSelected)
 end
+
 function WBP_LobbyMenuButton_C:RefreshUnSelectedTips()
   local BResult, BRowInfo = GetRowData(DT.DT_LobbyPanelLabel, self.LabelTagName)
   if BResult and BRowInfo.UnSelectedTipsCls and not BRowInfo.UnSelectedTipsCls:IsNull() then
@@ -62,6 +67,7 @@ function WBP_LobbyMenuButton_C:RefreshUnSelectedTips()
     end
   end
 end
+
 function WBP_LobbyMenuButton_C:RefreshChildLabelList()
   if not self.ChildLabelList or next(self.ChildLabelList) == nil then
     self.ChildLabelPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -83,6 +89,7 @@ function WBP_LobbyMenuButton_C:RefreshChildLabelList()
     end
   end
 end
+
 function WBP_LobbyMenuButton_C:BindOnLobbyLabelSelected(LabelName)
   if self.LabelTagName == LabelName then
     if not self.ChildLabelList or next(self.ChildLabelList) == nil then
@@ -114,6 +121,7 @@ function WBP_LobbyMenuButton_C:BindOnLobbyLabelSelected(LabelName)
     end
   end
 end
+
 function WBP_LobbyMenuButton_C:OnSelectPrev()
   if not self.ChildLabelList or next(self.ChildLabelList) == nil or #self.ChildLabelList < 1 then
     return
@@ -133,6 +141,7 @@ function WBP_LobbyMenuButton_C:OnSelectPrev()
     return
   end
 end
+
 function WBP_LobbyMenuButton_C:OnSelectNext()
   if not self.ChildLabelList or next(self.ChildLabelList) == nil or #self.ChildLabelList < 1 then
     return
@@ -152,6 +161,7 @@ function WBP_LobbyMenuButton_C:OnSelectNext()
     return
   end
 end
+
 function WBP_LobbyMenuButton_C:GetChildLabelIndex(LabelName)
   for Index, Value in ipairs(self.ChildLabelList) do
     if Value == LabelName then
@@ -160,6 +170,7 @@ function WBP_LobbyMenuButton_C:GetChildLabelIndex(LabelName)
   end
   return -1
 end
+
 function WBP_LobbyMenuButton_C:Destruct()
   self.Button_Menu.OnClicked:Remove(self, WBP_LobbyMenuButton_C.OnClicked_Menu)
   self.Button_Menu.OnHovered:Remove(self, self.BindOnMenuButtonHovered)
@@ -167,12 +178,15 @@ function WBP_LobbyMenuButton_C:Destruct()
   self.HorizontalBox_ChildTab:ClearChildren()
   EventSystem.RemoveListener(EventDef.Lobby.OnLobbyLabelSelected, self.BindOnLobbyLabelSelected, self)
 end
+
 function WBP_LobbyMenuButton_C:BindOnMenuButtonHovered()
   self:UpdateMenumNameStyleByStatus()
 end
+
 function WBP_LobbyMenuButton_C:BindOnMenuButtonUnhovered()
   self:UpdateMenumNameStyleByStatus()
 end
+
 function WBP_LobbyMenuButton_C:K2_SwitchChildTabWidgets(Show)
   if Show then
     self.Overlay_SecondTab:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -180,6 +194,7 @@ function WBP_LobbyMenuButton_C:K2_SwitchChildTabWidgets(Show)
     self.Overlay_SecondTab:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 function WBP_LobbyMenuButton_C:SetActivateState(Activate, PlayAnim)
   local LastIsActivate = self.IsActivate
   self.IsActivate = Activate
@@ -202,6 +217,7 @@ function WBP_LobbyMenuButton_C:SetActivateState(Activate, PlayAnim)
   self:K2_SwitchChildTabWidgets(Activate)
   self:UpdateMenumNameStyleByStatus()
 end
+
 function WBP_LobbyMenuButton_C:UpdateMenumNameStyleByStatus()
   local Font
   local SlateColor = UE.FSlateColor()
@@ -228,7 +244,9 @@ function WBP_LobbyMenuButton_C:UpdateMenumNameStyleByStatus()
     self.Txt_MenuName:SetColorAndOpacity(SlateColor)
   end
 end
+
 function WBP_LobbyMenuButton_C:OnClicked_Menu()
   LogicLobby.ChangeLobbyPanelLabelSelected(self.LabelTagName)
 end
+
 return WBP_LobbyMenuButton_C

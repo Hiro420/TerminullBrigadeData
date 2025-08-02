@@ -1,357 +1,357 @@
 ﻿{
   "3": {
-    "LevelUPMainAttrGrowth": {
+    "MainAttrInit": {
       "1": {
-        "key": 50,
-        "value": 10
+        "z": 10,
+        "y": 10,
+        "x": 50
       },
       "2": {
-        "key": 51,
-        "value": 10
+        "z": 10,
+        "y": 10,
+        "x": 51
       }
     },
-    "subAttrNum": {
+    "ID": 3,
+    "subAttr": {
       "1": {
-        "key": 2,
-        "value": 10
+        "z": 20,
+        "y": 10,
+        "x": 50
       },
       "2": {
-        "key": 3,
-        "value": 10
+        "z": 20,
+        "y": 10,
+        "x": 51
+      }
+    },
+    "LevelUPMainAttrGrowth": {
+      "1": {
+        "value": 10,
+        "key": 50
+      },
+      "2": {
+        "value": 10,
+        "key": 51
       }
     },
     "LevelUPSubAttrGrowth": {
       "1": {
-        "x": 50,
+        "z": 20,
         "y": 10,
-        "z": 20
+        "x": 50
       },
       "2": {
-        "x": 51,
+        "z": 20,
         "y": 10,
-        "z": 20
+        "x": 51
       }
     },
-    "MainAttrInit": {
+    "subAttrNum": {
       "1": {
-        "x": 50,
-        "y": 10,
-        "z": 10
+        "value": 10,
+        "key": 2
       },
       "2": {
-        "x": 51,
-        "y": 10,
-        "z": 10
-      }
-    },
-    "MainAttrGrowth": {
-      "1": {
-        "key": 50,
-        "value": 10
-      },
-      "2": {
-        "key": 51,
-        "value": 10
-      }
-    },
-    "ID": 3,
-    "SeasonMainAttrInit": {
-      "1": {
-        "x": 50,
-        "y": 10,
-        "z": 10
-      },
-      "2": {
-        "x": 51,
-        "y": 10,
-        "z": 10
-      }
-    },
-    "subAttr": {
-      "1": {
-        "x": 50,
-        "y": 10,
-        "z": 20
-      },
-      "2": {
-        "x": 51,
-        "y": 10,
-        "z": 20
+        "value": 10,
+        "key": 3
       }
     },
     "SeasonMainAttrGrowth": {
       "1": {
-        "key": 50,
-        "value": 10
+        "value": 10,
+        "key": 50
       },
       "2": {
-        "key": 51,
-        "value": 10
+        "value": 10,
+        "key": 51
+      }
+    },
+    "MainAttrGrowth": {
+      "1": {
+        "value": 10,
+        "key": 50
+      },
+      "2": {
+        "value": 10,
+        "key": 51
+      }
+    },
+    "SeasonMainAttrInit": {
+      "1": {
+        "z": 10,
+        "y": 10,
+        "x": 50
+      },
+      "2": {
+        "z": 10,
+        "y": 10,
+        "x": 51
       }
     }
   },
   "1": {
-    "LevelUPMainAttrGrowth": {
+    "MainAttrInit": {
       "1": {
-        "key": 50,
-        "value": 10
+        "z": 10,
+        "y": 10,
+        "x": 50
       },
       "2": {
-        "key": 51,
-        "value": 10
+        "z": 10,
+        "y": 10,
+        "x": 51
       }
     },
-    "subAttrNum": {
+    "ID": 1,
+    "subAttr": {
       "1": {
-        "key": 1,
-        "value": 10
+        "z": 20,
+        "y": 10,
+        "x": 50
+      },
+      "2": {
+        "z": 20,
+        "y": 10,
+        "x": 51
+      }
+    },
+    "LevelUPMainAttrGrowth": {
+      "1": {
+        "value": 10,
+        "key": 50
+      },
+      "2": {
+        "value": 10,
+        "key": 51
       }
     },
     "LevelUPSubAttrGrowth": {
       "1": {
-        "x": 50,
+        "z": 20,
         "y": 10,
-        "z": 20
+        "x": 50
       },
       "2": {
-        "x": 51,
+        "z": 20,
         "y": 10,
-        "z": 20
+        "x": 51
       }
     },
-    "MainAttrInit": {
+    "subAttrNum": {
       "1": {
-        "x": 50,
-        "y": 10,
-        "z": 10
-      },
-      "2": {
-        "x": 51,
-        "y": 10,
-        "z": 10
-      }
-    },
-    "MainAttrGrowth": {
-      "1": {
-        "key": 50,
-        "value": 10
-      },
-      "2": {
-        "key": 51,
-        "value": 10
-      }
-    },
-    "ID": 1,
-    "SeasonMainAttrInit": {
-      "1": {
-        "x": 50,
-        "y": 10,
-        "z": 10
-      },
-      "2": {
-        "x": 51,
-        "y": 10,
-        "z": 10
-      }
-    },
-    "subAttr": {
-      "1": {
-        "x": 50,
-        "y": 10,
-        "z": 20
-      },
-      "2": {
-        "x": 51,
-        "y": 10,
-        "z": 20
+        "value": 10,
+        "key": 1
       }
     },
     "SeasonMainAttrGrowth": {
       "1": {
-        "key": 50,
-        "value": 10
+        "value": 10,
+        "key": 50
       },
       "2": {
-        "key": 51,
-        "value": 10
+        "value": 10,
+        "key": 51
+      }
+    },
+    "MainAttrGrowth": {
+      "1": {
+        "value": 10,
+        "key": 50
+      },
+      "2": {
+        "value": 10,
+        "key": 51
+      }
+    },
+    "SeasonMainAttrInit": {
+      "1": {
+        "z": 10,
+        "y": 10,
+        "x": 50
+      },
+      "2": {
+        "z": 10,
+        "y": 10,
+        "x": 51
       }
     }
   },
   "2": {
-    "LevelUPMainAttrGrowth": {
+    "MainAttrInit": {
       "1": {
-        "key": 50,
-        "value": 10
+        "z": 10,
+        "y": 10,
+        "x": 50
       },
       "2": {
-        "key": 51,
-        "value": 10
+        "z": 10,
+        "y": 10,
+        "x": 51
       }
     },
-    "subAttrNum": {
+    "ID": 2,
+    "subAttr": {
       "1": {
-        "key": 1,
-        "value": 10
+        "z": 20,
+        "y": 10,
+        "x": 50
+      },
+      "2": {
+        "z": 20,
+        "y": 10,
+        "x": 51
+      }
+    },
+    "LevelUPMainAttrGrowth": {
+      "1": {
+        "value": 10,
+        "key": 50
+      },
+      "2": {
+        "value": 10,
+        "key": 51
       }
     },
     "LevelUPSubAttrGrowth": {
       "1": {
-        "x": 50,
+        "z": 20,
         "y": 10,
-        "z": 20
+        "x": 50
       },
       "2": {
-        "x": 51,
+        "z": 20,
         "y": 10,
-        "z": 20
+        "x": 51
       }
     },
-    "MainAttrInit": {
+    "subAttrNum": {
       "1": {
-        "x": 50,
-        "y": 10,
-        "z": 10
-      },
-      "2": {
-        "x": 51,
-        "y": 10,
-        "z": 10
-      }
-    },
-    "MainAttrGrowth": {
-      "1": {
-        "key": 50,
-        "value": 10
-      },
-      "2": {
-        "key": 51,
-        "value": 10
-      }
-    },
-    "ID": 2,
-    "SeasonMainAttrInit": {
-      "1": {
-        "x": 50,
-        "y": 10,
-        "z": 10
-      },
-      "2": {
-        "x": 51,
-        "y": 10,
-        "z": 10
-      }
-    },
-    "subAttr": {
-      "1": {
-        "x": 50,
-        "y": 10,
-        "z": 20
-      },
-      "2": {
-        "x": 51,
-        "y": 10,
-        "z": 20
+        "value": 10,
+        "key": 1
       }
     },
     "SeasonMainAttrGrowth": {
       "1": {
-        "key": 50,
-        "value": 10
+        "value": 10,
+        "key": 50
       },
       "2": {
-        "key": 51,
-        "value": 10
+        "value": 10,
+        "key": 51
+      }
+    },
+    "MainAttrGrowth": {
+      "1": {
+        "value": 10,
+        "key": 50
+      },
+      "2": {
+        "value": 10,
+        "key": 51
+      }
+    },
+    "SeasonMainAttrInit": {
+      "1": {
+        "z": 10,
+        "y": 10,
+        "x": 50
+      },
+      "2": {
+        "z": 10,
+        "y": 10,
+        "x": 51
       }
     }
   },
   "4": {
-    "LevelUPMainAttrGrowth": {
+    "MainAttrInit": {
       "1": {
-        "key": 50,
-        "value": 10
+        "z": 10,
+        "y": 10,
+        "x": 50
       },
       "2": {
-        "key": 51,
-        "value": 10
+        "z": 10,
+        "y": 10,
+        "x": 51
       }
     },
-    "subAttrNum": {
+    "ID": 4,
+    "subAttr": {
       "1": {
-        "key": 2,
-        "value": 10
+        "z": 20,
+        "y": 10,
+        "x": 50
       },
       "2": {
-        "key": 3,
-        "value": 10
+        "z": 20,
+        "y": 10,
+        "x": 51
+      }
+    },
+    "LevelUPMainAttrGrowth": {
+      "1": {
+        "value": 10,
+        "key": 50
+      },
+      "2": {
+        "value": 10,
+        "key": 51
       }
     },
     "LevelUPSubAttrGrowth": {
       "1": {
-        "x": 50,
+        "z": 20,
         "y": 10,
-        "z": 20
+        "x": 50
       },
       "2": {
-        "x": 51,
+        "z": 20,
         "y": 10,
-        "z": 20
+        "x": 51
       }
     },
-    "MainAttrInit": {
+    "subAttrNum": {
       "1": {
-        "x": 50,
-        "y": 10,
-        "z": 10
+        "value": 10,
+        "key": 2
       },
       "2": {
-        "x": 51,
-        "y": 10,
-        "z": 10
-      }
-    },
-    "MainAttrGrowth": {
-      "1": {
-        "key": 50,
-        "value": 10
-      },
-      "2": {
-        "key": 51,
-        "value": 10
-      }
-    },
-    "ID": 4,
-    "SeasonMainAttrInit": {
-      "1": {
-        "x": 50,
-        "y": 10,
-        "z": 10
-      },
-      "2": {
-        "x": 51,
-        "y": 10,
-        "z": 10
-      }
-    },
-    "subAttr": {
-      "1": {
-        "x": 50,
-        "y": 10,
-        "z": 20
-      },
-      "2": {
-        "x": 51,
-        "y": 10,
-        "z": 20
+        "value": 10,
+        "key": 3
       }
     },
     "SeasonMainAttrGrowth": {
       "1": {
-        "key": 50,
-        "value": 10
+        "value": 10,
+        "key": 50
       },
       "2": {
-        "key": 51,
-        "value": 10
+        "value": 10,
+        "key": 51
+      }
+    },
+    "MainAttrGrowth": {
+      "1": {
+        "value": 10,
+        "key": 50
+      },
+      "2": {
+        "value": 10,
+        "key": 51
+      }
+    },
+    "SeasonMainAttrInit": {
+      "1": {
+        "z": 10,
+        "y": 10,
+        "x": 50
+      },
+      "2": {
+        "z": 10,
+        "y": 10,
+        "x": 51
       }
     }
   }

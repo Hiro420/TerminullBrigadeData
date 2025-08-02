@@ -10,6 +10,7 @@ local RefactorResourceVarList = {
   [EPuzzleRefactorType.Mutation] = "MutationCost",
   [EPuzzleRefactorType.SeniorMutation] = "SeniorMutationCost"
 }
+
 function WBP_GemUpgradeView:BindClickHandler()
   self.Btn_Filter.OnClicked:Add(self, self.BindOnFilterButtonClicked)
   self.Btn_Upgrade.OnMainButtonClicked:Add(self, self.BindOnUpgradeButtonClicked)
@@ -19,6 +20,7 @@ function WBP_GemUpgradeView:BindClickHandler()
   self.Btn_JumpToModeSelection.OnMainButtonClicked:Add(self, self.BindOnJumpToModeSelectionButtonClicked)
   self.Btn_SelectMat.OnClicked:Add(self, self.BindOnSelectMatButtonClicked)
 end
+
 function WBP_GemUpgradeView:UnBindClickHandler()
   self.Btn_Filter.OnClicked:Remove(self, self.BindOnFilterButtonClicked)
   self.Btn_Upgrade.OnMainButtonClicked:Remove(self, self.BindOnUpgradeButtonClicked)
@@ -28,14 +30,17 @@ function WBP_GemUpgradeView:UnBindClickHandler()
   self.Btn_JumpToModeSelection.OnMainButtonClicked:Remove(self, self.BindOnJumpToModeSelectionButtonClicked)
   self.Btn_SelectMat.OnClicked:Remove(self, self.BindOnSelectMatButtonClicked)
 end
+
 function WBP_GemUpgradeView:OnInit()
   self.DataBindTable = {}
   self.ViewModel = UIModelMgr:Get("GemUpgradeViewModel")
   self:BindClickHandler()
 end
+
 function WBP_GemUpgradeView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_GemUpgradeView:OnShow(CurSelectedGemId)
   self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
   self.ViewModel:SetCurSelectGemId(CurSelectedGemId)
@@ -59,6 +64,7 @@ function WBP_GemUpgradeView:OnShow(CurSelectedGemId)
   UpdateVisibility(self.CanvasPanel_HasGem, nil ~= next(GemPackageInfo))
   UpdateVisibility(self.WBP_PuzzleFilterView, false)
 end
+
 function WBP_GemUpgradeView:InitMutationMatList()
   local Index = 1
   for k, ResourceId in pairs(self.MutationMatList) do
@@ -76,13 +82,16 @@ function WBP_GemUpgradeView:InitMutationMatList()
   UpdateVisibility(self.Overlay_EmptyMat, 1 == Index)
   EventSystem.Invoke(EventDef.Puzzle.OnPuzzleRefactorMaterialSelected, self.CurSelectMutationResourceId)
 end
+
 function WBP_GemUpgradeView:InitNum(...)
   local AllPackageInfo = GemData:GetAllGemPackageInfo()
   self.Txt_CurHaveNum:SetText(table.count(AllPackageInfo))
 end
+
 function WBP_GemUpgradeView:InitSortRuleComboBox(...)
   self.WBP_PuzzleSortRuleComboBox:Show(self, true)
 end
+
 function WBP_GemUpgradeView:RefreshGemItemList()
   self.RGTileViewGemList:RecyleAllData()
   local DataObjList = {}
@@ -143,6 +152,7 @@ function WBP_GemUpgradeView:RefreshGemItemList()
   end
   self:InitNum()
 end
+
 function WBP_GemUpgradeView:RefreshFilterIconStatus(...)
   local FilterSelectList = self.ViewModel:GetGemFilterSelectStatus()
   local IsSelect = false
@@ -163,6 +173,7 @@ function WBP_GemUpgradeView:RefreshFilterIconStatus(...)
     self.RGStateController_Filter:ChangeStatus("NoFilter")
   end
 end
+
 function WBP_GemUpgradeView:BindOnFilterButtonClicked()
   if self.WBP_PuzzleFilterView:IsVisible() then
     self.WBP_PuzzleFilterView:Hide()
@@ -171,6 +182,7 @@ function WBP_GemUpgradeView:BindOnFilterButtonClicked()
     self.WBP_PuzzleFilterView:Show(self.ViewModel, true)
   end
 end
+
 function WBP_GemUpgradeView:RefreshOperateInfo(...)
   local AllPackageInfo = GemData:GetAllGemPackageInfo()
   if next(AllPackageInfo) == nil then
@@ -186,6 +198,7 @@ function WBP_GemUpgradeView:RefreshOperateInfo(...)
     self:RefreshMutationInfo()
   end
 end
+
 function WBP_GemUpgradeView:RefreshUpgradeInfo(...)
   local CurSelectedGemId = self.ViewModel:GetCurSelectGemId()
   if not CurSelectedGemId then
@@ -222,11 +235,13 @@ function WBP_GemUpgradeView:RefreshUpgradeInfo(...)
   local Level = PackageInfo.level
   EventSystem.Invoke(EventDef.Puzzle.OnChangePuzzleUpgradeLevelSelected, math.min(Level + 1, self.CurSelectedMaxLevel))
 end
+
 function WBP_GemUpgradeView:RefreshMutationInfo()
   local CurSelectedGemId = self.ViewModel:GetCurSelectGemId()
   self.WBP_GemDevelopInfoItem:Show(CurSelectedGemId)
   self:RefreshRefactorButtonStatus()
 end
+
 function WBP_GemUpgradeView:BindOnUpgradeButtonClicked(...)
   local PackageInfo = GemData:GetGemPackageInfoByUId(self.ViewModel:GetCurSelectGemId())
   if PackageInfo.level >= self.CurSelectedMaxLevel then
@@ -240,6 +255,7 @@ function WBP_GemUpgradeView:BindOnUpgradeButtonClicked(...)
   end
   GemHandler:RequestUpgradeGemToServer(self.ViewModel:GetCurSelectGemId(), self.CurSelectedLevel)
 end
+
 function WBP_GemUpgradeView:BindOnMutationButtonClicked()
   if not self.CanClickRefactorButton then
     if 0 ~= self.RefactorButtonClickTipId then
@@ -252,6 +268,7 @@ function WBP_GemUpgradeView:BindOnMutationButtonClicked()
     self.ViewModel:GetCurSelectGemId()
   }, IsSeniorMutation)
 end
+
 function WBP_GemUpgradeView:BindOnJumpToModeSelectionButtonClicked()
   local PuzzleDevelopMain = UIMgr:GetLuaFromActiveView(ViewID.UI_PuzzleDevelopMain)
   if PuzzleDevelopMain then
@@ -260,15 +277,19 @@ function WBP_GemUpgradeView:BindOnJumpToModeSelectionButtonClicked()
   UIMgr:Hide(ViewID.UI_DevelopMain, true)
   UIMgr:Show(ViewID.UI_MainModeSelection, true)
 end
+
 function WBP_GemUpgradeView:BindOnSelectMatButtonClicked()
   UpdateVisibility(self.CanvasPanel_MatSelectPanel, not self.CanvasPanel_MatSelectPanel:IsVisible())
 end
+
 function WBP_GemUpgradeView:BindOnExpandLevelButtonClicked(...)
   UpdateVisibility(self.SizeBox_ExpandList, not self.SizeBox_ExpandList:IsVisible())
 end
+
 function WBP_GemUpgradeView:BindOnSelectMatButtonClicked()
   UpdateVisibility(self.CanvasPanel_MatSelectPanel, not self.CanvasPanel_MatSelectPanel:IsVisible())
 end
+
 function WBP_GemUpgradeView:BindOnMenuCheckStateChanged(SelectId)
   self.SelectUpgradeType = SelectId
   UpdateVisibility(self.Txt_EmptyUpgrade, self.SelectUpgradeType == EGemDevelopType.Upgrade)
@@ -277,10 +298,12 @@ function WBP_GemUpgradeView:BindOnMenuCheckStateChanged(SelectId)
   UpdateVisibility(self.CanvasPanel_Mutation, self.SelectUpgradeType == EGemDevelopType.Mutation)
   self:RefreshOperateInfo()
 end
+
 function WBP_GemUpgradeView:BindOnSortRuleSelectionChanged(CurSelectedIndex)
   self.ViewModel:SetPuzzleSortRule(CurSelectedIndex)
   self:RefreshGemItemList()
 end
+
 function WBP_GemUpgradeView:BindOnUpdateGemItemHoverStatus(IsHover, GemId, IsPuzzleBoard)
   if IsHover then
     self.HoverGemId = GemId
@@ -301,6 +324,7 @@ function WBP_GemUpgradeView:BindOnUpdateGemItemHoverStatus(IsHover, GemId, IsPuz
     end
   end
 end
+
 function WBP_GemUpgradeView:BindOnGemItemSelected(PuzzleId)
   local ResourceId = GemData:GetGemResourceIdByUId(PuzzleId)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, ResourceId)
@@ -313,6 +337,7 @@ function WBP_GemUpgradeView:BindOnGemItemSelected(PuzzleId)
   self.CurSelectedMaxLevel = self.ViewModel:GetMaxLevelByQuality(RowInfo.Rare)
   self:RefreshOperateInfo()
 end
+
 function WBP_GemUpgradeView:BindOnChangePuzzleUpgradeLevelSelected(TargetLevel)
   UpdateVisibility(self.SizeBox_ExpandList, false)
   self.WBP_GemDevelopInfoItem:Show(self.ViewModel:GetCurSelectGemId(), TargetLevel)
@@ -328,6 +353,7 @@ function WBP_GemUpgradeView:BindOnChangePuzzleUpgradeLevelSelected(TargetLevel)
   self.Txt_CurSelectLevel:SetText(LevelTxt)
   self:RefreshUpgradeButtonStatus()
 end
+
 function WBP_GemUpgradeView:RefreshUpgradeResourceInfo(...)
   local CurGemId = self.ViewModel:GetCurSelectGemId()
   local LevelInfo = self.ViewModel:GetLevelInfoByQuality(self.CurSelectedGemRare)
@@ -365,12 +391,14 @@ function WBP_GemUpgradeView:RefreshUpgradeResourceInfo(...)
   end
   HideOtherItem(self.Horizontal_ResourceList, Index, true)
 end
+
 function WBP_GemUpgradeView:BindOnUpdateResourceInfo(...)
   self:RefreshUpgradeResourceInfo()
   self:RefreshUpgradeButtonStatus()
   self:InitMutationMatList()
   self:RefreshSelectRefactorResourceInfo()
 end
+
 function WBP_GemUpgradeView:RefreshUpgradeButtonStatus(...)
   local PackageInfo = GemData:GetGemPackageInfoByUId(self.ViewModel:GetCurSelectGemId())
   if PackageInfo.level >= self.CurSelectedMaxLevel then
@@ -385,6 +413,7 @@ function WBP_GemUpgradeView:RefreshUpgradeButtonStatus(...)
     end
   end
 end
+
 function WBP_GemUpgradeView:BindOnUpdateGemPackageInfo(GemId)
   if not GemId or self.HoverGemId == GemId then
     local HoverWidget = self.ViewModel:GetGemHoverWidget(self.HoverGemId)
@@ -403,16 +432,19 @@ function WBP_GemUpgradeView:BindOnUpdateGemPackageInfo(GemId)
     end
   end
 end
+
 function WBP_GemUpgradeView:BindOnGemUpgradeSuccess(GemId)
   if GemId == self.ViewModel:GetCurSelectGemId() then
     self:PlayUpgradeSuccessAnim()
   end
 end
+
 function WBP_GemUpgradeView:BindOnPuzzleRefactorMaterialSelected(ResourceId)
   self.CurSelectMutationResourceId = ResourceId
   self:RefreshSelectRefactorResourceInfo()
   UpdateVisibility(self.CanvasPanel_MatSelectPanel, false)
 end
+
 function WBP_GemUpgradeView:RefreshSelectRefactorResourceInfo()
   local CurSelectResourceId = self.CurSelectMutationResourceId
   UpdateVisibility(self.Txt_SelectResourceTip, nil ~= CurSelectResourceId)
@@ -443,6 +475,7 @@ function WBP_GemUpgradeView:RefreshSelectRefactorResourceInfo()
   self:RefreshCostResourceStatus()
   self:RefreshRefactorButtonStatus()
 end
+
 function WBP_GemUpgradeView:RefreshRefactorButtonStatus(...)
   local CurSelectResourceId = self.CurSelectMutationResourceId
   local CurSelectedGemId = self.ViewModel:GetCurSelectGemId()
@@ -473,6 +506,7 @@ function WBP_GemUpgradeView:RefreshRefactorButtonStatus(...)
     self.Btn_Refactor:SetContentText(self.NormalMutationText)
   end
 end
+
 function WBP_GemUpgradeView:RefreshCostResourceStatus()
   self.HasEnoughMutationResource = true
   if self.MainResourceCostInfo then
@@ -490,9 +524,11 @@ function WBP_GemUpgradeView:RefreshCostResourceStatus()
     end
   end
 end
+
 function WBP_GemUpgradeView:PlayUpgradeSuccessAnim(...)
   self.WBP_GemDevelopInfoItem:PlayUpgradeSuccessAnim()
 end
+
 function WBP_GemUpgradeView:OnMouseButtonDown(MyGeometry, MouseEvent)
   if self.WBP_PuzzleFilterView:IsVisible() then
     self.WBP_PuzzleFilterView:Hide()
@@ -502,6 +538,7 @@ function WBP_GemUpgradeView:OnMouseButtonDown(MyGeometry, MouseEvent)
   self.WBP_PuzzleSortRuleComboBox:HideExpandList()
   return UE.UWidgetBlueprintLibrary.Unhandled()
 end
+
 function WBP_GemUpgradeView:OnHide()
   self.ViewModel:OnViewClose()
   self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -523,4 +560,5 @@ function WBP_GemUpgradeView:OnHide()
   EventSystem.RemoveListenerNew(EventDef.Gem.OnGemUpgradeSuccess, self, self.BindOnGemUpgradeSuccess)
   EventSystem.RemoveListenerNew(EventDef.Puzzle.OnPuzzleRefactorMaterialSelected, self, self.BindOnPuzzleRefactorMaterialSelected)
 end
+
 return WBP_GemUpgradeView

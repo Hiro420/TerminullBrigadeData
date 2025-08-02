@@ -1,7 +1,9 @@
 local WBP_PickUpIcon_C = UnLua.Class()
+
 function WBP_PickUpIcon_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_PickUpIcon_C:InitPickUpIcon(AttributeModifyId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -18,7 +20,9 @@ function WBP_PickUpIcon_C:InitPickUpIcon(AttributeModifyId)
     end
   end
 end
+
 function WBP_PickUpIcon_C:Destruct()
   self.Overridden.Destruct(self)
 end
+
 return WBP_PickUpIcon_C

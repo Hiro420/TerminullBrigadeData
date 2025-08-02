@@ -1,8 +1,10 @@
 local WBP_WeaponAccessorySlotPanel_C = UnLua.Class()
+
 function WBP_WeaponAccessorySlotPanel_C:Destruct()
   self:BindOnOnAccessoryChanged(false)
   self.AccessoryComponent = nil
 end
+
 function WBP_WeaponAccessorySlotPanel_C:InitAccessorySlot(Weapon)
   if not Weapon:IsValid() then
     print("Weapon is nil.")
@@ -12,6 +14,7 @@ function WBP_WeaponAccessorySlotPanel_C:InitAccessorySlot(Weapon)
   self:BindOnOnAccessoryChanged(true)
   self:UpdateAccessorySlotNum()
 end
+
 function WBP_WeaponAccessorySlotPanel_C:UpdateAccessorySlotNum()
   local widgetPath = "/Game/Rouge/UI/HUD/Weapon/WBP_WeaponAccessorySlotItem.WBP_WeaponAccessorySlotItem_C"
   local padding = UE.FMargin()
@@ -19,6 +22,7 @@ function WBP_WeaponAccessorySlotPanel_C:UpdateAccessorySlotNum()
   UpdateWidgetContainer(self.HorizontalBox_AccessorySlot, 8, widgetPath, padding, self, self:GetOwningPlayer())
   self:UpdateAccessorySlot()
 end
+
 function WBP_WeaponAccessorySlotPanel_C:UpdateAccessorySlot()
   if self.AccessoryComponent:IsValid() then
     if self.AccessoryComponent:HasAccessoryOfType(UE.ERGAccessoryType.EAT_Barrel) then
@@ -46,6 +50,7 @@ function WBP_WeaponAccessorySlotPanel_C:UpdateAccessorySlot()
     print("self.AccessoryComponent is nil.")
   end
 end
+
 function WBP_WeaponAccessorySlotPanel_C:BindOnOnAccessoryChanged(Bind)
   if self.AccessoryComponent and self.AccessoryComponent:IsValid() then
     if Bind then
@@ -55,6 +60,7 @@ function WBP_WeaponAccessorySlotPanel_C:BindOnOnAccessoryChanged(Bind)
     end
   end
 end
+
 function WBP_WeaponAccessorySlotPanel_C:BindOnAccessoryEquip(Bind)
   if self.AccessoryComponent:IsValid() then
     if Bind then
@@ -64,6 +70,7 @@ function WBP_WeaponAccessorySlotPanel_C:BindOnAccessoryEquip(Bind)
     end
   end
 end
+
 function WBP_WeaponAccessorySlotPanel_C:BindOnAccessoryUnEquip(Bind)
   if self.AccessoryComponent:IsValid() then
     if Bind then
@@ -73,15 +80,19 @@ function WBP_WeaponAccessorySlotPanel_C:BindOnAccessoryUnEquip(Bind)
     end
   end
 end
+
 function WBP_WeaponAccessorySlotPanel_C:BindOnAccessoryChanged()
   self:UpdateAccessorySlotNum()
 end
+
 function WBP_WeaponAccessorySlotPanel_C:OnAccessoryEquip(AccessoryId, AccessoryType)
   self:UpdateAccessorySlotNum()
 end
+
 function WBP_WeaponAccessorySlotPanel_C:OnAccessoryUnEquip(AccessoryId, AccessoryType)
   self:UpdateAccessorySlotNum()
 end
+
 function WBP_WeaponAccessorySlotPanel_C:GetAccessoryNum()
   local num = 0
   if self.AccessoryComponent:IsValid() then
@@ -112,4 +123,5 @@ function WBP_WeaponAccessorySlotPanel_C:GetAccessoryNum()
   end
   return num
 end
+
 return WBP_WeaponAccessorySlotPanel_C

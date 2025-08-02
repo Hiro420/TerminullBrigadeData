@@ -4,27 +4,33 @@ local GetAppearanceActor = function(self)
   self.AppearanceActor = LogicLobby.GetAppearanceActor(self)
   return self.AppearanceActor
 end
+
 function WBP_InitialRoleSelectionPanel:Construct()
 end
+
 function WBP_InitialRoleSelectionPanel:OnInit()
   self.DataBindTable = {}
   self.viewModel = UIModelMgr:Get("InitialRoleSelectionViewModel")
 end
+
 function WBP_InitialRoleSelectionPanel:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_InitialRoleSelectionPanel:BindClickHandler()
   self.ToggleCompGroup_Role.OnCheckStateChanged:Add(self, self.OnSelectHeroId)
   self.WBP_CommonButton_Select.OnMainButtonClicked:Add(self, self.OnSelectInitialHero)
   self.Btn_Movie.OnClicked:Add(self, self.OnShowMovieClicked)
   EventSystem.AddListener(self, EventDef.Lobby.RoleSkillTip, self.BindOnShowSkillTips)
 end
+
 function WBP_InitialRoleSelectionPanel:UnBindClickHandler()
   self.ToggleCompGroup_Role.OnCheckStateChanged:Remove(self, self.OnSelectHeroId)
   self.WBP_CommonButton_Select.OnMainButtonClicked:Remove(self, self.OnSelectInitialHero)
   self.Btn_Movie.OnClicked:Remove(self, self.OnShowMovieClicked)
   EventSystem.RemoveListenerNew(self, EventDef.Lobby.RoleSkillTip, self.BindOnShowSkillTips)
 end
+
 function WBP_InitialRoleSelectionPanel:OnShow()
   self.Super:AttachViewModel(self.viewModel, self.DataBindTable, self)
   local myHeroInfo = DataMgr.GetMyHeroInfo()
@@ -39,6 +45,7 @@ function WBP_InitialRoleSelectionPanel:OnShow()
   self:PlaySeq(self.SeqCameraSoftObjPath)
   self:SetEnhancedInputActionBlocking(true)
 end
+
 function WBP_InitialRoleSelectionPanel:PlaySeq(SoftObjPath)
   if self.SequencePlayerBG and self.SequenceActorBG then
     self.SequenceActorBG:K2_DestroyActor()
@@ -59,6 +66,7 @@ function WBP_InitialRoleSelectionPanel:PlaySeq(SoftObjPath)
   end
   self.SequencePlayerBG:Play()
 end
+
 function WBP_InitialRoleSelectionPanel:InitToggleGroup()
   self.ToggleCompGroup_Role:ClearGroup()
   local ConstTable = LuaTableMgr.GetLuaTableByName(TableNames.TBConsts)
@@ -79,6 +87,7 @@ function WBP_InitialRoleSelectionPanel:InitToggleGroup()
     self.ToggleCompGroup_Role:SelectId(DefaultSelectId)
   end
 end
+
 function WBP_InitialRoleSelectionPanel:OnSelectHeroId(SelectId)
   self.CurSelectHeroId = tonumber(SelectId)
   local Result, Row = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBHeroMonster, self.CurSelectHeroId)
@@ -101,6 +110,7 @@ function WBP_InitialRoleSelectionPanel:OnSelectHeroId(SelectId)
   end
   self:PlayAnimation(self.Anim_IN)
 end
+
 function WBP_InitialRoleSelectionPanel:OnSelectInitialHero()
   if not self.CurSelectHeroId then
     return
@@ -114,6 +124,7 @@ function WBP_InitialRoleSelectionPanel:OnSelectInitialHero()
     end
   })
 end
+
 function WBP_InitialRoleSelectionPanel:OnShowMovieClicked()
   UpdateVisibility(self.Canvas_Movie, true)
   self.WBP_InteractTipWidget_Esc:BindInteractAndClickEvent(self, self.HideMovie)
@@ -128,10 +139,12 @@ function WBP_InitialRoleSelectionPanel:OnShowMovieClicked()
     end
   end
 end
+
 function WBP_InitialRoleSelectionPanel:HideMovie()
   UpdateVisibility(self.Canvas_Movie, false)
   self.WBP_InteractTipWidget_Esc:UnBindInteractAndClickEvent(self, self.HideMovie)
 end
+
 function WBP_InitialRoleSelectionPanel:RefreshSkillInfo(RowInfo)
   local AllSkillItems = self.HorizontalBox_Skill:GetAllChildren()
   local SkillItemList = {}
@@ -159,6 +172,7 @@ function WBP_InitialRoleSelectionPanel:RefreshSkillInfo(RowInfo)
     end
   end
 end
+
 function WBP_InitialRoleSelectionPanel:BindOnShowSkillTips(IsShow, SkillGroupId, KeyName, SkillInputNameAry, inputNameAryPad, SkillItem)
   if IsShow then
     self.NormalSkillTip:RefreshInfo(SkillGroupId, KeyName, nil, SkillInputNameAry, inputNameAryPad)
@@ -169,6 +183,7 @@ function WBP_InitialRoleSelectionPanel:BindOnShowSkillTips(IsShow, SkillGroupId,
     self.NormalSkillTip:Hide()
   end
 end
+
 function WBP_InitialRoleSelectionPanel:UpdateLevelBgVisble(bVisible)
   local AllActors = UE.UGameplayStatics.GetAllActorsWithTag(self, "InitialRoleSelection", nil)
   for i, v in pairs(AllActors) do
@@ -183,6 +198,7 @@ function WBP_InitialRoleSelectionPanel:UpdateLevelBgVisble(bVisible)
     end
   end
 end
+
 function WBP_InitialRoleSelectionPanel:UpdateLevelBlendColor(LinearColor)
   local AllMatActors = UE.UGameplayStatics.GetAllActorsWithTag(self, "InitialRoleSelectionMat", nil)
   local world = GameInstance:GetWorld()
@@ -202,6 +218,7 @@ function WBP_InitialRoleSelectionPanel:UpdateLevelBlendColor(LinearColor)
     end
   end
 end
+
 function WBP_InitialRoleSelectionPanel:OnHide()
   local AppearanceActorTemp = GetAppearanceActor(self)
   AppearanceActorTemp:UpdateActived(false)
@@ -218,7 +235,9 @@ function WBP_InitialRoleSelectionPanel:OnHide()
   end
   EventSystem.Invoke(EventDef.Lobby.PlayInAnimation)
 end
+
 function WBP_InitialRoleSelectionPanel:OnHideByOther()
   self:UnBindClickHandler()
 end
+
 return WBP_InitialRoleSelectionPanel

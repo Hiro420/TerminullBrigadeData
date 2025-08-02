@@ -12,6 +12,7 @@ end
 local SlotDropLeaveAvailable = function(self, DragDropItem, PickupItem, PointerEvent)
   self:ChangeHoveredArea(0)
 end
+
 function WBP_Roulette_C:Construct()
   self.Overridden.Construct(self)
   self.CurHoveredArea = 0
@@ -20,16 +21,19 @@ function WBP_Roulette_C:Construct()
   EventSystem.AddListenerNew(EventDef.Communication.OnRouletteStartDrag, self, self.OnRouletteStartDrag)
   EventSystem.AddListenerNew(EventDef.Communication.OnRouletteEndDrag, self, self.OnRouletteEndDrag)
 end
+
 function WBP_Roulette_C:Destruct()
   self.Overridden.Destruct(self)
   EventSystem.RemoveListenerNew(EventDef.Communication.OnRouletteStartDrag, self, self.OnRouletteStartDrag)
   EventSystem.RemoveListenerNew(EventDef.Communication.OnRouletteEndDrag, self, self.OnRouletteEndDrag)
 end
+
 function WBP_Roulette_C:InitByHeroId(HeroId)
   self.HeroId = HeroId
   local rouletteSlots = DataMgr.GetRouletteSlotsByHeroId(HeroId)
   self:InitBySlots(rouletteSlots)
 end
+
 function WBP_Roulette_C:InitBySlots(RouletteSlots, bIsInitSelect)
   if bIsInitSelect then
     self.LastMousePosition = nil
@@ -46,9 +50,11 @@ function WBP_Roulette_C:InitBySlots(RouletteSlots, bIsInitSelect)
   UpdateVisibility(self.Canvas_CenterBattle, not Logic_IllustratedGuide.IsLobbyRoom())
   self.WBP_DragDropItem:SetDropAvailableCallback(self, self.WBP_DragDropBase, SlotDropAvailable, SlotDropOverAvailable, SlotDropLeaveAvailable)
 end
+
 function WBP_Roulette_C:OnMouseLeave()
   self:ChangeHoveredArea(0)
 end
+
 function WBP_Roulette_C:GetHoverAreaByMouseEvent(MouseEvent)
   local RouletteCenterX, RouletteCenterY = self:GetRouletteCenter()
   local ScreenPos = UE.UKismetInputLibrary.PointerEvent_GetScreenSpacePosition(MouseEvent)
@@ -63,6 +69,7 @@ function WBP_Roulette_C:GetHoverAreaByMouseEvent(MouseEvent)
   HoveredArea = (HoveredArea + 2) % 8 + 1
   return HoveredArea
 end
+
 function WBP_Roulette_C:OnMouseMove(MyGeometry, MouseEvent)
   local CurrentMousePosition = UE.UKismetInputLibrary.PointerEvent_GetScreenSpacePosition(MouseEvent)
   if self.LastMousePosition then
@@ -81,21 +88,25 @@ function WBP_Roulette_C:OnMouseMove(MyGeometry, MouseEvent)
   local HoveredArea = self:GetHoverAreaByMouseEvent(MouseEvent)
   self:ChangeHoveredArea(HoveredArea)
 end
+
 function WBP_Roulette_C:GetRouletteCenter()
   local CachedGeometry = self.Img_CenterFlag:GetCachedGeometry()
   local AbsolutePos = UE.URGBlueprintLibrary.GetAbsolutePosition(CachedGeometry)
   local PixelPosition, ViewportPosition = UE.USlateBlueprintLibrary.LocalToViewport(self, CachedGeometry, UE.FVector2D(), nil, nil)
   return ViewportPosition.X, ViewportPosition.Y
 end
+
 function WBP_Roulette_C:OnMouseButtonDown(MyGeometry, MouseEvent)
   if Logic_IllustratedGuide.IsLobbyRoom() then
     EventSystem.Invoke(EventDef.Communication.OnRouletteAreaSelectChanged, self.CurHoveredArea)
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function WBP_Roulette_C:UseSelectedAreaComm()
   EventSystem.Invoke(EventDef.Communication.OnRouletteAreaUsed, self.CurHoveredArea)
 end
+
 function WBP_Roulette_C:ChangeHoveredArea(HoveredArea)
   if self.CurHoveredArea == HoveredArea then
     return
@@ -121,6 +132,7 @@ function WBP_Roulette_C:ChangeHoveredArea(HoveredArea)
   self.Txt_CommName:SetText(CommData.Name)
   self.CurCoolDownTime = rouletteAreaItem.CurCoolDownTime
 end
+
 function WBP_Roulette_C:UpdateAreaCoolDown(InDeltaTime)
   local RouletteAreaItemList = self.Canvas_Root:GetAllChildren()
   for i, RouletteAreaItem in pairs(RouletteAreaItemList) do
@@ -133,16 +145,21 @@ function WBP_Roulette_C:UpdateAreaCoolDown(InDeltaTime)
     self.Txt_CommCD:SetText("")
   end
 end
+
 function WBP_Roulette_C:OnRouletteStartDrag()
   self.RGStateController_BG:ChangeStatus("Highlight")
 end
+
 function WBP_Roulette_C:OnRouletteEndDrag()
   self.RGStateController_BG:ChangeStatus("Normal")
 end
+
 function WBP_Roulette_C:PlayAnimationIn()
   self:PlayAnimation(self.Ani_in)
 end
+
 function WBP_Roulette_C:PlayAnimationOut()
   self:PlayAnimation(self.An_out)
 end
+
 return WBP_Roulette_C

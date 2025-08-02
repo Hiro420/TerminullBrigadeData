@@ -1,1408 +1,1408 @@
 ﻿{
   "82423": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P23.Icon_Card_P23",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82423",
-      "InTextLiteral": "烟花三月"
-    },
-    "ID": 82423,
     "EffectPath": "",
-    "bannerID": 423,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82423",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 423,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82423,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82423",
+      "InTextLiteral": "烟花三月",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P23.Icon_Card_P23",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P23.Icon_Card_P23"
   },
   "82424": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P24.Icon_Card_P24",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82424",
-      "InTextLiteral": "海渊潮池"
-    },
-    "ID": 82424,
     "EffectPath": "",
-    "bannerID": 424,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82424",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 424,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82424,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82424",
+      "InTextLiteral": "海渊潮池",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P24.Icon_Card_P24",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P24.Icon_Card_P24"
   },
   "82425": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P25.Icon_Card_P25",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82425",
-      "InTextLiteral": "星际漫游"
-    },
-    "ID": 82425,
     "EffectPath": "",
-    "bannerID": 425,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82425",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 425,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82425,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82425",
+      "InTextLiteral": "星际漫游",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P25.Icon_Card_P25",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P25.Icon_Card_P25"
   },
   "82426": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P26.Icon_Card_P26",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82426",
-      "InTextLiteral": "秘密实验"
-    },
-    "ID": 82426,
     "EffectPath": "",
-    "bannerID": 426,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82426",
-      "InTextLiteral": ""
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 426,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82426,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82426",
+      "InTextLiteral": "秘密实验",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P26.Icon_Card_P26",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P26.Icon_Card_P26"
   },
   "82427": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P27.Icon_Card_P27",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82427",
-      "InTextLiteral": "林中密语"
-    },
-    "ID": 82427,
     "EffectPath": "",
-    "bannerID": 427,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82427",
-      "InTextLiteral": "商城帝谷币兑换"
+      "InTextLiteral": "商城帝谷币兑换",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 427,
+    "acquirePathID": 0,
+    "IsUnlockShow": false,
+    "ID": 82427,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82427",
+      "InTextLiteral": "林中密语",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P27.Icon_Card_P27",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P27.Icon_Card_P27"
   },
   "82428": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P28.Icon_Card_P28",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82428",
-      "InTextLiteral": ""
-    },
-    "ID": 82428,
     "EffectPath": "",
-    "bannerID": 428,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82428",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 428,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82428,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82428",
+      "InTextLiteral": "",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P28.Icon_Card_P28",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P28.Icon_Card_P28"
   },
   "82429": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P29.Icon_Card_P29",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82429",
-      "InTextLiteral": ""
-    },
-    "ID": 82429,
     "EffectPath": "",
-    "bannerID": 429,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82429",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 429,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82429,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82429",
+      "InTextLiteral": "",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P29.Icon_Card_P29",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P29.Icon_Card_P29"
   },
   "82430": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P30.Icon_Card_P30",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82430",
-      "InTextLiteral": "沙与影"
-    },
-    "ID": 82430,
     "EffectPath": "",
-    "bannerID": 430,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82430",
-      "InTextLiteral": "内测获得"
+      "InTextLiteral": "内测获得",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 430,
+    "acquirePathID": 0,
+    "IsUnlockShow": false,
+    "ID": 82430,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82430",
+      "InTextLiteral": "沙与影",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P30.Icon_Card_P30",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P30.Icon_Card_P30"
   },
   "82431": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P31.Icon_Card_P31",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82431",
-      "InTextLiteral": ""
-    },
-    "ID": 82431,
     "EffectPath": "",
-    "bannerID": 431,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82431",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 431,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82431,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82431",
+      "InTextLiteral": "",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P31.Icon_Card_P31",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P31.Icon_Card_P31"
   },
   "82432": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P32.Icon_Card_P32",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82432",
-      "InTextLiteral": ""
-    },
-    "ID": 82432,
     "EffectPath": "",
-    "bannerID": 432,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82432",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 432,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82432,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82432",
+      "InTextLiteral": "",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P32.Icon_Card_P32",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P32.Icon_Card_P32"
   },
   "82433": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P33.Icon_Card_P33",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82433",
-      "InTextLiteral": ""
-    },
-    "ID": 82433,
     "EffectPath": "",
-    "bannerID": 433,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82433",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 433,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82433,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82433",
+      "InTextLiteral": "",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P33.Icon_Card_P33",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P33.Icon_Card_P33"
   },
   "82434": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P34.Icon_Card_P34",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82434",
-      "InTextLiteral": ""
-    },
-    "ID": 82434,
     "EffectPath": "",
-    "bannerID": 434,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82434",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 434,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82434,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82434",
+      "InTextLiteral": "",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P34.Icon_Card_P34",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P34.Icon_Card_P34"
   },
   "82435": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P35.Icon_Card_P35",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82435",
-      "InTextLiteral": ""
-    },
-    "ID": 82435,
     "EffectPath": "",
-    "bannerID": 435,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82435",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 435,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82435,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82435",
+      "InTextLiteral": "",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P35.Icon_Card_P35",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P35.Icon_Card_P35"
   },
   "82436": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P36.Icon_Card_P36",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82436",
-      "InTextLiteral": ""
-    },
-    "ID": 82436,
     "EffectPath": "",
-    "bannerID": 436,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82436",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 436,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82436,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82436",
+      "InTextLiteral": "",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P36.Icon_Card_P36",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P36.Icon_Card_P36"
   },
   "82437": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P37.Icon_Card_P37",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82437",
-      "InTextLiteral": "共创者"
-    },
-    "ID": 82437,
     "EffectPath": "",
-    "bannerID": 437,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82437",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 437,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82437,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82437",
+      "InTextLiteral": "共创者",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P37.Icon_Card_P37",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P37.Icon_Card_P37"
   },
   "82438": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P38.Icon_Card_P38",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82438",
-      "InTextLiteral": "先驱者"
-    },
-    "ID": 82438,
     "EffectPath": "",
-    "bannerID": 438,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82438",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 438,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82438,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82438",
+      "InTextLiteral": "先驱者",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P38.Icon_Card_P38",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P38.Icon_Card_P38"
   },
   "82439": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P39.Icon_Card_P39",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82439",
-      "InTextLiteral": "英雄出场"
-    },
-    "ID": 82439,
     "EffectPath": "",
-    "bannerID": 439,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82439",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 439,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82439,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82439",
+      "InTextLiteral": "英雄出场",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P39.Icon_Card_P39",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P39.Icon_Card_P39"
   },
   "82440": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P40.Icon_Card_P40",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82440",
-      "InTextLiteral": "末日"
-    },
-    "ID": 82440,
     "EffectPath": "",
-    "bannerID": 440,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82440",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 440,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82440,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82440",
+      "InTextLiteral": "末日",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P40.Icon_Card_P40",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P40.Icon_Card_P40"
   },
   "82441": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P41.Icon_Card_P41",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82441",
-      "InTextLiteral": "WEGAME"
-    },
-    "ID": 82441,
     "EffectPath": "",
-    "bannerID": 441,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82441",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 441,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82441,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82441",
+      "InTextLiteral": "辉枢登临",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P41.Icon_Card_P41",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P41.Icon_Card_P41"
   },
   "82442": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P42.Icon_Card_P42",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82442",
-      "InTextLiteral": "STEAM"
-    },
-    "ID": 82442,
     "EffectPath": "",
-    "bannerID": 442,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82442",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 442,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82442,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82442",
+      "InTextLiteral": "阀界潜袭",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P42.Icon_Card_P42",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P42.Icon_Card_P42"
   },
   "82443": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P43.Icon_Card_P43",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82443",
-      "InTextLiteral": "网吧"
-    },
-    "ID": 82443,
     "EffectPath": "",
-    "bannerID": 443,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82443",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 443,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82443,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82443",
+      "InTextLiteral": "橙焰驿战",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P43.Icon_Card_P43",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P43.Icon_Card_P43"
   },
   "82444": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P44.Icon_Card_P44",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82444",
-      "InTextLiteral": "网鱼网咖"
-    },
-    "ID": 82444,
     "EffectPath": "",
-    "bannerID": 444,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82444",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 444,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82444,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82444",
+      "InTextLiteral": "蓝潮",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P44.Icon_Card_P44",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P44.Icon_Card_P44"
   },
   "82445": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P45.Icon_Card_P45",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82445",
-      "InTextLiteral": "微信"
-    },
-    "ID": 82445,
     "EffectPath": "",
-    "bannerID": 445,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82445",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 445,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82445,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82445",
+      "InTextLiteral": "信芒",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P45.Icon_Card_P45",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P45.Icon_Card_P45"
   },
   "82446": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P46.Icon_Card_P46",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82446",
-      "InTextLiteral": "QQ"
-    },
-    "ID": 82446,
     "EffectPath": "",
-    "bannerID": 446,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82446",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 446,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82446,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82446",
+      "InTextLiteral": "红围讯潮",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P46.Icon_Card_P46",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P46.Icon_Card_P46"
   },
   "82447": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P47.Icon_Card_P47",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82447",
-      "InTextLiteral": "超核玩家"
-    },
-    "ID": 82447,
     "EffectPath": "",
-    "bannerID": 447,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82447",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 447,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82447,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82447",
+      "InTextLiteral": "核芒锐启",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P47.Icon_Card_P47",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P47.Icon_Card_P47"
   },
   "82448": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P48.Icon_Card_P48",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82448",
-      "InTextLiteral": "心悦俱乐部"
-    },
-    "ID": 82448,
     "EffectPath": "",
-    "bannerID": 448,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82448",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 448,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82448,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82448",
+      "InTextLiteral": "悦冕盟",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P48.Icon_Card_P48",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P48.Icon_Card_P48"
   },
   "82449": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P49.Icon_Card_P49",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82449",
-      "InTextLiteral": "加速器"
-    },
-    "ID": 82449,
     "EffectPath": "",
-    "bannerID": 449,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82449",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 449,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82449,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82449",
+      "InTextLiteral": "速芒破域",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P49.Icon_Card_P49",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P49.Icon_Card_P49"
   },
   "82450": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P50.Icon_Card_P50",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82450",
-      "InTextLiteral": "小黑盒"
-    },
-    "ID": 82450,
     "EffectPath": "",
-    "bannerID": 450,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82450",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 450,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82450,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82450",
+      "InTextLiteral": "盒观潮",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P50.Icon_Card_P50",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P50.Icon_Card_P50"
   },
   "82451": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P51.Icon_Card_P51",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82451",
-      "InTextLiteral": "零日危机"
-    },
-    "ID": 82451,
     "EffectPath": "",
-    "bannerID": 451,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82451",
-      "InTextLiteral": "原爆点通行证获得"
+      "InTextLiteral": "原爆点通行证获得",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 451,
+    "acquirePathID": 1023,
+    "IsUnlockShow": false,
+    "ID": 82451,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82451",
+      "InTextLiteral": "零日危机",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P51.Icon_Card_P51",
-    "acquirePathID": 1023
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P51.Icon_Card_P51"
   },
   "82706": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82706",
-      "InTextLiteral": "生化感染"
-    },
-    "ID": 82706,
     "EffectPath": "/Game/Rouge/UI/VX/UI_Effect/Card/WBP_Eff_Card_Triangle.WBP_Eff_Card_Triangle",
-    "bannerID": 706,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82706",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "【夏日倾情】活动获得",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 706,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82706,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82706",
+      "InTextLiteral": "生化感染",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon"
   },
   "82201": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B01.Icon_Card_B01",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82201",
-      "InTextLiteral": "数据流"
-    },
-    "ID": 82201,
     "EffectPath": "",
-    "bannerID": 201,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82201",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 201,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82201,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82201",
+      "InTextLiteral": "数据流",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B01.Icon_Card_B01",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B01.Icon_Card_B01"
   },
   "82202": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B02.Icon_Card_B02",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82202",
-      "InTextLiteral": "蓝影"
-    },
-    "ID": 82202,
     "EffectPath": "",
-    "bannerID": 202,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82202",
-      "InTextLiteral": "原爆点通行证获得"
+      "InTextLiteral": "原爆点通行证获得",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 202,
+    "acquirePathID": 1023,
+    "IsUnlockShow": false,
+    "ID": 82202,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82202",
+      "InTextLiteral": "蓝影",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B02.Icon_Card_B02",
-    "acquirePathID": 1023
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B02.Icon_Card_B02"
   },
   "82203": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B03.Icon_Card_B03",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82203",
-      "InTextLiteral": "行星"
-    },
-    "ID": 82203,
     "EffectPath": "",
-    "bannerID": 203,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82203",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 203,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82203,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82203",
+      "InTextLiteral": "行星",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B03.Icon_Card_B03",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B03.Icon_Card_B03"
   },
   "82204": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B04.Icon_Card_B04",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82204",
-      "InTextLiteral": "炫紫"
-    },
-    "ID": 82204,
     "EffectPath": "",
-    "bannerID": 204,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82204",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 204,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82204,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82204",
+      "InTextLiteral": "炫紫",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B04.Icon_Card_B04",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B04.Icon_Card_B04"
   },
   "82205": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B05.Icon_Card_B05",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82205",
-      "InTextLiteral": "抽象主义"
-    },
-    "ID": 82205,
     "EffectPath": "",
-    "bannerID": 205,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82205",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 205,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82205,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82205",
+      "InTextLiteral": "抽象主义",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B05.Icon_Card_B05",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B05.Icon_Card_B05"
   },
   "82206": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B06.Icon_Card_B06",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82206",
-      "InTextLiteral": "不规则拼贴"
-    },
-    "ID": 82206,
     "EffectPath": "",
-    "bannerID": 206,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82206",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 206,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82206,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82206",
+      "InTextLiteral": "不规则拼贴",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B06.Icon_Card_B06",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B06.Icon_Card_B06"
   },
   "82207": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B07.Icon_Card_B07",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82207",
-      "InTextLiteral": "蓝帆矩阵"
-    },
-    "ID": 82207,
     "EffectPath": "",
-    "bannerID": 207,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82207",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 207,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82207,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82207",
+      "InTextLiteral": "蓝帆矩阵",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B07.Icon_Card_B07",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B07.Icon_Card_B07"
   },
   "82001": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_19.Icon_Card_19",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82001",
-      "InTextLiteral": "霓虹"
-    },
-    "ID": 82001,
     "EffectPath": "",
-    "bannerID": 1,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82001",
-      "InTextLiteral": "积累成就点数获取"
+      "InTextLiteral": "积累成就点数获取",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 1,
+    "acquirePathID": 1011,
+    "IsUnlockShow": false,
+    "ID": 82001,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82001",
+      "InTextLiteral": "霓虹",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_19.Icon_Card_19",
-    "acquirePathID": 1011
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_19.Icon_Card_19"
   },
   "82002": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B01.Icon_Card_B01",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82002",
-      "InTextLiteral": "黯绿"
-    },
-    "ID": 82002,
     "EffectPath": "",
-    "bannerID": 2,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82002",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 2,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82002,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82002",
+      "InTextLiteral": "黯绿",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B01.Icon_Card_B01",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B01.Icon_Card_B01"
   },
   "82003": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B02.Icon_Card_B02",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82003",
-      "InTextLiteral": "深蓝"
-    },
-    "ID": 82003,
     "EffectPath": "",
-    "bannerID": 3,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82003",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 3,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82003,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82003",
+      "InTextLiteral": "深蓝",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B02.Icon_Card_B02",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B02.Icon_Card_B02"
   },
   "82004": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B03.Icon_Card_B03",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82004",
-      "InTextLiteral": "X"
-    },
-    "ID": 82004,
     "EffectPath": "",
-    "bannerID": 4,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82004",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 4,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82004,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82004",
+      "InTextLiteral": "X",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B03.Icon_Card_B03",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B03.Icon_Card_B03"
   },
   "82005": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B04.Icon_Card_B04",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82005",
-      "InTextLiteral": "锐角"
-    },
-    "ID": 82005,
     "EffectPath": "",
-    "bannerID": 5,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82005",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 5,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82005,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82005",
+      "InTextLiteral": "锐角",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B04.Icon_Card_B04",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B04.Icon_Card_B04"
   },
   "82006": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B05.Icon_Card_B05",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82006",
-      "InTextLiteral": "休止"
-    },
-    "ID": 82006,
     "EffectPath": "",
-    "bannerID": 6,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82006",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 6,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82006,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82006",
+      "InTextLiteral": "休止",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B05.Icon_Card_B05",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B05.Icon_Card_B05"
   },
   "82007": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B06.Icon_Card_B06",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82007",
-      "InTextLiteral": "光辉"
-    },
-    "ID": 82007,
     "EffectPath": "",
-    "bannerID": 7,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82007",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 7,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82007,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82007",
+      "InTextLiteral": "光辉",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B06.Icon_Card_B06",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B06.Icon_Card_B06"
   },
   "82008": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B07.Icon_Card_B07",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82008",
-      "InTextLiteral": "涟漪"
-    },
-    "ID": 82008,
     "EffectPath": "",
-    "bannerID": 8,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82008",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 8,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82008,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82008",
+      "InTextLiteral": "涟漪",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B07.Icon_Card_B07",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_B07.Icon_Card_B07"
   },
   "82009": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_G09.Icon_Card_G09",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82009",
-      "InTextLiteral": "弧光"
-    },
-    "ID": 82009,
     "EffectPath": "",
-    "bannerID": 9,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82009",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 9,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82009,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82009",
+      "InTextLiteral": "弧光",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_G09.Icon_Card_G09",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_G09.Icon_Card_G09"
   },
   "82010": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_G10.Icon_Card_G10",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82010",
-      "InTextLiteral": "无尽面"
-    },
-    "ID": 82010,
     "EffectPath": "",
-    "bannerID": 10,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82010",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 10,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82010,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82010",
+      "InTextLiteral": "无尽面",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_G10.Icon_Card_G10",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_G10.Icon_Card_G10"
   },
   "82705": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82705",
-      "InTextLiteral": "窗外的世界"
-    },
-    "ID": 82705,
     "EffectPath": "/Game/Rouge/UI/VX/UI_Effect/Card/WBP_Eff_Card_Flipbook_2.WBP_Eff_Card_Flipbook_2",
-    "bannerID": 705,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82705",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 705,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82705,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82705",
+      "InTextLiteral": "窗外的世界",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon"
   },
   "82704": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82704",
-      "InTextLiteral": "落英缤纷"
-    },
-    "ID": 82704,
     "EffectPath": "/Game/Rouge/UI/VX/UI_Effect/Card/WBP_Eff_Card_SunSky.WBP_Eff_Card_SunSky",
-    "bannerID": 704,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82704",
-      "InTextLiteral": ""
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 704,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82704,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82704",
+      "InTextLiteral": "落英缤纷",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon"
   },
   "82703": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82703",
-      "InTextLiteral": "酷潮大圣"
-    },
-    "ID": 82703,
     "EffectPath": "/Game/Rouge/UI/VX/UI_Effect/Card/WBP_Eff_Card_Nax_1.WBP_Eff_Card_Nax_1",
-    "bannerID": 703,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82703",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 703,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82703,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82703",
+      "InTextLiteral": "酷潮大圣",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon"
   },
   "82702": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82702",
-      "InTextLiteral": "像素曙光"
-    },
-    "ID": 82702,
     "EffectPath": "/Game/Rouge/UI/VX/UI_Effect/Card/WBP_Eff_Card_RiMu_1.WBP_Eff_Card_RiMu_1",
-    "bannerID": 702,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82702",
-      "InTextLiteral": "不翻译不投放"
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 702,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82702,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82702",
+      "InTextLiteral": "像素曙光",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon"
   },
   "82401": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P01.Icon_Card_P01",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82401",
-      "InTextLiteral": "赛博落日"
-    },
-    "ID": 82401,
     "EffectPath": "",
-    "bannerID": 401,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82401",
-      "InTextLiteral": ""
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 401,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82401,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82401",
+      "InTextLiteral": "赛博落日",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P01.Icon_Card_P01",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P01.Icon_Card_P01"
   },
   "82402": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P02.Icon_Card_P02",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82402",
-      "InTextLiteral": "荒野余晖"
-    },
-    "ID": 82402,
     "EffectPath": "",
-    "bannerID": 402,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82402",
-      "InTextLiteral": "原爆点通行证获得"
+      "InTextLiteral": "原爆点通行证获得",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 402,
+    "acquirePathID": 1023,
+    "IsUnlockShow": false,
+    "ID": 82402,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82402",
+      "InTextLiteral": "荒野余晖",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P02.Icon_Card_P02",
-    "acquirePathID": 1023
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P02.Icon_Card_P02"
   },
   "82403": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P03.Icon_Card_P03",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82403",
-      "InTextLiteral": "落日余晖"
-    },
-    "ID": 82403,
     "EffectPath": "",
-    "bannerID": 403,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82403",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 403,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82403,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82403",
+      "InTextLiteral": "落日余晖",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P03.Icon_Card_P03",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P03.Icon_Card_P03"
   },
   "82404": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P04.Icon_Card_P04",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82404",
-      "InTextLiteral": "沙漠风格"
-    },
-    "ID": 82404,
     "EffectPath": "",
-    "bannerID": 404,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82404",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 404,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82404,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82404",
+      "InTextLiteral": "沙漠风格",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P04.Icon_Card_P04",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P04.Icon_Card_P04"
   },
   "82405": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P05.Icon_Card_P05",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82405",
-      "InTextLiteral": "宁静田野"
-    },
-    "ID": 82405,
     "EffectPath": "",
-    "bannerID": 405,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82405",
-      "InTextLiteral": ""
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 405,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82405,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82405",
+      "InTextLiteral": "宁静田野",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P05.Icon_Card_P05",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P05.Icon_Card_P05"
   },
   "82406": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P06.Icon_Card_P06",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82406",
-      "InTextLiteral": "彩绘山脉"
-    },
-    "ID": 82406,
     "EffectPath": "",
-    "bannerID": 406,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82406",
-      "InTextLiteral": ""
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 406,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82406,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82406",
+      "InTextLiteral": "彩绘山脉",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P06.Icon_Card_P06",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P06.Icon_Card_P06"
   },
   "82407": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P07.Icon_Card_P07",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82407",
-      "InTextLiteral": "能量工厂"
-    },
-    "ID": 82407,
     "EffectPath": "",
-    "bannerID": 407,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82407",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 407,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82407,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82407",
+      "InTextLiteral": "能量工厂",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P07.Icon_Card_P07",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P07.Icon_Card_P07"
   },
   "82408": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P08.Icon_Card_P08",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82408",
-      "InTextLiteral": "秘密入侵"
-    },
-    "ID": 82408,
     "EffectPath": "",
-    "bannerID": 408,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82408",
-      "InTextLiteral": "预约奖励"
+      "InTextLiteral": "预约奖励",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 408,
+    "acquirePathID": 0,
+    "IsUnlockShow": false,
+    "ID": 82408,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82408",
+      "InTextLiteral": "秘密入侵",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P08.Icon_Card_P08",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P08.Icon_Card_P08"
   },
   "82409": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P09.Icon_Card_P09",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82409",
-      "InTextLiteral": "错误"
-    },
-    "ID": 82409,
     "EffectPath": "",
-    "bannerID": 409,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82409",
-      "InTextLiteral": "数据宝库·浮世骇客"
+      "InTextLiteral": "数据宝库·浮世骇客",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 409,
+    "acquirePathID": 1005,
+    "IsUnlockShow": false,
+    "ID": 82409,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82409",
+      "InTextLiteral": "错误",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P09.Icon_Card_P09",
-    "acquirePathID": 1005
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P09.Icon_Card_P09"
   },
   "82410": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P10.Icon_Card_P10",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82410",
-      "InTextLiteral": "糖果时光"
-    },
-    "ID": 82410,
     "EffectPath": "",
-    "bannerID": 410,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82410",
-      "InTextLiteral": "数据宝库·浮世骇客"
+      "InTextLiteral": "数据宝库·浮世骇客",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 410,
+    "acquirePathID": 1005,
+    "IsUnlockShow": false,
+    "ID": 82410,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82410",
+      "InTextLiteral": "糖果时光",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P10.Icon_Card_P10",
-    "acquirePathID": 1005
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P10.Icon_Card_P10"
   },
   "82411": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P11.Icon_Card_P11",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82411",
-      "InTextLiteral": "爆炸艺术"
-    },
-    "ID": 82411,
     "EffectPath": "",
-    "bannerID": 411,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82411",
-      "InTextLiteral": "数据宝库·浮世骇客"
+      "InTextLiteral": "数据宝库·浮世骇客",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 411,
+    "acquirePathID": 1005,
+    "IsUnlockShow": false,
+    "ID": 82411,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82411",
+      "InTextLiteral": "爆炸艺术",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P11.Icon_Card_P11",
-    "acquirePathID": 1005
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P11.Icon_Card_P11"
   },
   "82412": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P12.Icon_Card_P12",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82412",
-      "InTextLiteral": "落日峡谷"
-    },
-    "ID": 82412,
     "EffectPath": "",
-    "bannerID": 412,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82412",
-      "InTextLiteral": "数据宝库·浮世绘卷"
+      "InTextLiteral": "数据宝库·浮世绘卷",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 412,
+    "acquirePathID": 1005,
+    "IsUnlockShow": false,
+    "ID": 82412,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82412",
+      "InTextLiteral": "落日峡谷",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P12.Icon_Card_P12",
-    "acquirePathID": 1005
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P12.Icon_Card_P12"
   },
   "82413": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P13.Icon_Card_P13",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82413",
-      "InTextLiteral": "焦土"
-    },
-    "ID": 82413,
     "EffectPath": "",
-    "bannerID": 413,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82413",
-      "InTextLiteral": ""
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 413,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82413,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82413",
+      "InTextLiteral": "焦土",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P13.Icon_Card_P13",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P13.Icon_Card_P13"
   },
   "82414": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P14.Icon_Card_P14",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82414",
-      "InTextLiteral": "咖啡时光"
-    },
-    "ID": 82414,
     "EffectPath": "",
-    "bannerID": 414,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82414",
-      "InTextLiteral": "数据宝库·浮世绘卷"
+      "InTextLiteral": "数据宝库·浮世绘卷",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 414,
+    "acquirePathID": 1005,
+    "IsUnlockShow": false,
+    "ID": 82414,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82414",
+      "InTextLiteral": "咖啡时光",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P14.Icon_Card_P14",
-    "acquirePathID": 1005
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P14.Icon_Card_P14"
   },
   "82415": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P15.Icon_Card_P15",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82415",
-      "InTextLiteral": "算法空间"
-    },
-    "ID": 82415,
     "EffectPath": "",
-    "bannerID": 415,
-    "IsUnlockShow": true,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82415",
-      "InTextLiteral": "数据宝库·浮世绘卷"
+      "InTextLiteral": "数据宝库·浮世绘卷",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 415,
+    "acquirePathID": 1005,
+    "IsUnlockShow": false,
+    "ID": 82415,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82415",
+      "InTextLiteral": "算法空间",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P15.Icon_Card_P15",
-    "acquirePathID": 1005
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P15.Icon_Card_P15"
   },
   "82416": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P16.Icon_Card_P16",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82416",
-      "InTextLiteral": "落花时节"
-    },
-    "ID": 82416,
     "EffectPath": "",
-    "bannerID": 416,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82416",
-      "InTextLiteral": ""
+      "InTextLiteral": "【海岸魅影】活动获得",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 416,
+    "acquirePathID": 0,
+    "IsUnlockShow": false,
+    "ID": 82416,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82416",
+      "InTextLiteral": "落花时节",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P16.Icon_Card_P16",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P16.Icon_Card_P16"
   },
   "82417": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P17.Icon_Card_P17",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82417",
-      "InTextLiteral": "荒原"
-    },
-    "ID": 82417,
     "EffectPath": "",
-    "bannerID": 417,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82417",
-      "InTextLiteral": ""
+      "InTextLiteral": "活动获得",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 417,
+    "acquirePathID": 0,
+    "IsUnlockShow": false,
+    "ID": 82417,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82417",
+      "InTextLiteral": "荒原",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P17.Icon_Card_P17",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P17.Icon_Card_P17"
   },
   "82418": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P18.Icon_Card_P18",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82418",
-      "InTextLiteral": "鸟居"
-    },
-    "ID": 82418,
     "EffectPath": "",
-    "bannerID": 418,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82418",
-      "InTextLiteral": ""
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 418,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82418,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82418",
+      "InTextLiteral": "鸟居",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P18.Icon_Card_P18",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P18.Icon_Card_P18"
   },
   "82419": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P19.Icon_Card_P19",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82419",
-      "InTextLiteral": "小镇"
-    },
-    "ID": 82419,
     "EffectPath": "",
-    "bannerID": 419,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82419",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 419,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82419,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82419",
+      "InTextLiteral": "小镇",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P19.Icon_Card_P19",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P19.Icon_Card_P19"
   },
   "82420": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P20.Icon_Card_P20",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82420",
-      "InTextLiteral": "静谧"
-    },
-    "ID": 82420,
     "EffectPath": "",
-    "bannerID": 420,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82420",
-      "InTextLiteral": ""
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 420,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82420,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82420",
+      "InTextLiteral": "静谧",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P20.Icon_Card_P20",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P20.Icon_Card_P20"
   },
   "82421": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P21.Icon_Card_P21",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82421",
-      "InTextLiteral": "绿洲"
-    },
-    "ID": 82421,
     "EffectPath": "",
-    "bannerID": 421,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82421",
-      "InTextLiteral": ""
+      "InTextLiteral": "无需翻译",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 421,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82421,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82421",
+      "InTextLiteral": "绿洲",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P21.Icon_Card_P21",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P21.Icon_Card_P21"
   },
   "82422": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P22.Icon_Card_P22",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82422",
-      "InTextLiteral": "大漠云间"
-    },
-    "ID": 82422,
     "EffectPath": "",
-    "bannerID": 422,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82422",
-      "InTextLiteral": ""
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 422,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82422,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82422",
+      "InTextLiteral": "大漠云间",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P22.Icon_Card_P22",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Atlas_DT/BusinessCard/Frames/Icon_Card_P22.Icon_Card_P22"
   },
   "82701": {
-    "bannerIconPathInInfo": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
-    "bannerNameLocMeta": {
-      "InNamespace": "resource_TBBanner",
-      "InKey": "bannerName_82701",
-      "InTextLiteral": "浮世霓光"
-    },
-    "ID": 82701,
     "EffectPath": "/Game/Rouge/UI/VX/UI_Effect/Card/WBP_Eff_Card_YLN_1.WBP_Eff_Card_YLN_1",
-    "bannerID": 701,
-    "IsUnlockShow": false,
     "LinkDescLocMeta": {
-      "InNamespace": "resource_TBBanner",
       "InKey": "LinkDesc_82701",
-      "InTextLiteral": ""
+      "InTextLiteral": "不翻译不投放",
+      "InNamespace": "resource_TBBanner"
+    },
+    "bannerID": 701,
+    "acquirePathID": 0,
+    "IsUnlockShow": true,
+    "ID": 82701,
+    "bannerNameLocMeta": {
+      "InKey": "bannerName_82701",
+      "InTextLiteral": "浮世霓光",
+      "InNamespace": "resource_TBBanner"
     },
     "bannerIconPathInCard": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon",
-    "acquirePathID": 0
+    "bannerIconPathInInfo": "/Game/Rouge/UI/Sprite/IconMonster/Frames/Bat_touming_icon.Bat_touming_icon"
   }
 }

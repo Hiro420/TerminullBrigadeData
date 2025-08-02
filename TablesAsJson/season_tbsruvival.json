@@ -1,39 +1,44 @@
 ﻿{
   "1": {
+    "DropResourcesRatioKey": {
+      "1": "99994",
+      "2": "240021"
+    },
+    "Id": 1,
     "LevelId": 1,
     "DifficultyNameLocMeta": {
       "InKey": "DifficultyName_1",
-      "InTextLiteral": "普通",
-      "InNamespace": "season_TBSruvival"
+      "InNamespace": "season_TBSruvival",
+      "InTextLiteral": "普通"
+    },
+    "BigIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossSilhouette/Img_Blade_BossSilhouette.Img_Blade_BossSilhouette",
+    "FloorDescription": {
+      "1": {
+        "InKey": "OBJSruvival_FloorDescription_1_1",
+        "InNamespace": "season_TBSruvival",
+        "InTextLiteral": "\u00A0敌人词条等级：挑战"
+      },
+      "2": {
+        "InKey": "OBJSruvival_FloorDescription_1_2",
+        "InNamespace": "season_TBSruvival",
+        "InTextLiteral": "\u00A0精英敌人等级：低"
+      },
+      "3": {
+        "InKey": "OBJSruvival_FloorDescription_1_3",
+        "InNamespace": "season_TBSruvival",
+        "InTextLiteral": "\u00A0有几率遭遇特殊事件：落雷"
+      }
     },
     "DropResourcesRatioValue": {
       "1": {
         "InKey": "OBJSruvival_DropResourcesRatioValue_1_1",
-        "InTextLiteral": "+40%",
-        "InNamespace": "season_TBSruvival"
+        "InNamespace": "season_TBSruvival",
+        "InTextLiteral": "+40%"
       },
       "2": {
         "InKey": "OBJSruvival_DropResourcesRatioValue_1_2",
-        "InTextLiteral": "新",
-        "InNamespace": "season_TBSruvival"
-      }
-    },
-    "Id": 1,
-    "FloorDescription": {
-      "1": {
-        "InKey": "OBJSruvival_FloorDescription_1_1",
-        "InTextLiteral": "\u00A0敌人词条等级：挑战",
-        "InNamespace": "season_TBSruvival"
-      },
-      "2": {
-        "InKey": "OBJSruvival_FloorDescription_1_2",
-        "InTextLiteral": "\u00A0精英敌人等级：低",
-        "InNamespace": "season_TBSruvival"
-      },
-      "3": {
-        "InKey": "OBJSruvival_FloorDescription_1_3",
-        "InTextLiteral": "\u00A0有几率遭遇特殊事件：落雷",
-        "InNamespace": "season_TBSruvival"
+        "InNamespace": "season_TBSruvival",
+        "InTextLiteral": "新"
       }
     },
     "SmallIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_01.Img_BossRush01_01",
@@ -42,11 +47,6 @@
       "2": 240036,
       "3": 240023,
       "4": 240024
-    },
-    "DropResourcesRatioKey": {
-      "1": "99994",
-      "2": "240021"
-    },
-    "BigIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossSilhouette/Img_Blade_BossSilhouette.Img_Blade_BossSilhouette"
+    }
   }
 }

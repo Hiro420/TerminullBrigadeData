@@ -8,12 +8,15 @@ local BeginnerGuideData = require("Modules.Beginner.BeginnerGuideData")
 local EscName = "PauseGame"
 local ProficiencyView = Class(ViewBase)
 local MinLevel = 2
+
 function ProficiencyView:OnBindUIInput()
   self.WBP_InteractTipWidgetSynopsis:BindInteractAndClickEvent(self, self.BindOnSynopsisButtonClicked)
 end
+
 function ProficiencyView:OnUnBindUIInput()
   self.WBP_InteractTipWidgetSynopsis:UnBindInteractAndClickEvent(self, self.BindOnSynopsisButtonClicked)
 end
+
 function ProficiencyView:BindClickHandler()
   self.Btn_Synopsis.OnClicked:Add(self, self.BindOnSynopsisButtonClicked)
   self.Btn_Synopsis.OnHovered:Add(self, self.BindOnSynopsisButtonHovered)
@@ -23,6 +26,7 @@ function ProficiencyView:BindClickHandler()
   EventSystem.AddListener(self, EventDef.Proficiency.OnProficiencyAwardItemHoverStatusChanged, self.BindOnProficiencyAwardItemHoverStatusChanged)
   EventSystem.AddListener(self, EventDef.Proficiency.OnProficiencySynopsisDetailPanelVisChanged, self.BindOnProficiencySynopsisDetailPanelVisChanged)
 end
+
 function ProficiencyView:UnBindClickHandler()
   self.Btn_Synopsis.OnClicked:Remove(self, self.BindOnSynopsisButtonClicked)
   self.Btn_Synopsis.OnHovered:Remove(self, self.BindOnSynopsisButtonHovered)
@@ -32,14 +36,17 @@ function ProficiencyView:UnBindClickHandler()
   EventSystem.RemoveListener(EventDef.Proficiency.OnProficiencyAwardItemHoverStatusChanged, self.BindOnProficiencyAwardItemHoverStatusChanged, self)
   EventSystem.RemoveListener(EventDef.Proficiency.OnProficiencySynopsisDetailPanelVisChanged, self.BindOnProficiencySynopsisDetailPanelVisChanged)
 end
+
 function ProficiencyView:OnInit()
   self.DataBindTable = {}
   self.ViewModel = UIModelMgr:Get("ProficiencyViewModel")
   self:BindClickHandler()
 end
+
 function ProficiencyView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function ProficiencyView:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -78,6 +85,7 @@ function ProficiencyView:OnShow(...)
   UpdateVisibility(self.WBP_ProficiencyTip, false)
   EventSystem.Invoke(EventDef.BeginnerGuide.OnProficiencyViewShow)
 end
+
 function ProficiencyView:UpdateViewByHeroId(HeroId)
   self.ViewModel:UpdateCurHeroId(HeroId)
   self.WBP_RedDotView:ChangeRedDotIdByTag(self.ViewModel.CurHeroId)
@@ -119,6 +127,7 @@ function ProficiencyView:UpdateViewByHeroId(HeroId)
   UpdateVisibility(self.CanvasPanelRoot, true)
   self:RefreshInfo()
 end
+
 function ProficiencyView:BindOnEquippedWeaponInfoChanged(HeroId)
   print("ProficiencyView:BindOnEquippedWeaponInfoChanged", HeroId, self.ViewModel:GetCurHeroId())
   if self.ViewModel:GetCurHeroId() ~= HeroId then
@@ -129,6 +138,7 @@ function ProficiencyView:BindOnEquippedWeaponInfoChanged(HeroId)
     targetRoleActor:ChangeWeaponMesh(self.ViewModel:GetCurHeroId())
   end
 end
+
 function ProficiencyView:OnRollback()
   local skinId = self.ViewModel:GetEquippedSkinIdByHeroId(self.ViewModel.CurHeroId)
   LogicRole.ShowSkinLightMap(skinId)
@@ -136,13 +146,16 @@ function ProficiencyView:OnRollback()
   ChangeLobbyCamera(self, "Proficiency")
   self:RefreshCurSynopsisInfo()
 end
+
 function ProficiencyView:OnHideByOther(...)
   LogicRole.ShowOrHideRoleMainHero(false)
 end
+
 function ProficiencyView:RefreshInfo()
   self:RefreshLevelAwardList()
   self:RefreshLevelAndExpInfo()
 end
+
 function ProficiencyView:RefreshLevelAwardList()
   local AllProficiencyInfo = ProficiencyData:GetAllProficiencyInfoByHeroId(self.ViewModel:GetCurHeroId())
   local Item
@@ -187,6 +200,7 @@ function ProficiencyView:RefreshLevelAwardList()
   Slot:SetPadding(Padding)
   HideOtherItem(self.LevelAwardList, Index)
 end
+
 function ProficiencyView:RefreshLevelAndExpInfo()
   local CurHeroId = self.ViewModel:GetCurHeroId()
   local CurUnlockLevel = ProficiencyData:GetMaxUnlockProfyLevel(CurHeroId)
@@ -207,6 +221,7 @@ function ProficiencyView:RefreshLevelAndExpInfo()
   end
   self.Txt_LevelName:SetText(LevelRowInfo.Name)
 end
+
 function ProficiencyView:RefreshCurSynopsisInfo()
   local CurHeroId = self.ViewModel:GetCurHeroId()
   local CurUnlockLevel = ProficiencyData:GetMaxUnlockProfyLevel(CurHeroId)
@@ -239,6 +254,7 @@ function ProficiencyView:RefreshCurSynopsisInfo()
   end
   self.Txt_SynopsisLevel:SetText(UE.FTextFormat(self.SynopsisLevelText, NumToTxt(self.MinUnReadSynopsisLevel)))
 end
+
 function ProficiencyView:BindOnProficiencyAwardItemHoverStatusChanged(IsShow, RewardId, IsInscriptionReward, Level, IsUnlock)
   if IsShow then
     local Item = self.LevelAwardList:GetChildAt(Level - MinLevel)
@@ -258,6 +274,7 @@ function ProficiencyView:BindOnProficiencyAwardItemHoverStatusChanged(IsShow, Re
     UpdateVisibility(self.WBP_LobbyWeaponDisplayInfo, false)
   end
 end
+
 function ProficiencyView:BindOnProficiencySynopsisDetailPanelVisChanged(IsShow, HeroId, Level)
   if IsShow then
     UIMgr:Show(ViewID.UI_ProficiencySynopsisDetailPanel, true, HeroId, Level)
@@ -265,25 +282,32 @@ function ProficiencyView:BindOnProficiencySynopsisDetailPanelVisChanged(IsShow, 
     UIMgr:Hide(ViewID.UI_ProficiencySynopsisDetailPanel, true)
   end
 end
+
 function ProficiencyView:BindOnSynopsisButtonClicked()
   UIMgr:Show(ViewID.UI_ProficiencyLegendSynopsis, true, self.ViewModel:GetCurHeroId(), self.MinUnReadSynopsisLevel)
 end
+
 function ProficiencyView:BindOnSynopsisButtonHovered()
   UpdateVisibility(self.Img_Synopsis_Hovered, true)
 end
+
 function ProficiencyView:BindOnSynopsisButtonUnhovered(...)
   UpdateVisibility(self.Img_Synopsis_Hovered, false)
 end
+
 function ProficiencyView:BindOnTipButtonHovered()
   UpdateVisibility(self.WBP_ProficiencyTip, true)
   ShowCommonTips(nil, self.Btn_Tips, self.WBP_ProficiencyTip)
 end
+
 function ProficiencyView:BindOnTipButtonUnhovered(...)
   UpdateVisibility(self.WBP_ProficiencyTip, false)
 end
+
 function ProficiencyView:OnShowLink()
   self.bShowLink = true
 end
+
 function ProficiencyView:OnPreHide()
   ChangeLobbyCamera(self, "Role")
   local targetActor = self:GetMainRoleActor()
@@ -307,6 +331,7 @@ function ProficiencyView:OnPreHide()
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
   end
 end
+
 function ProficiencyView:OnHide()
   print("ProficiencyView:OnHide()")
   if UIMgr:IsShow(ViewID.UI_ProficiencyLegendSynopsis) then
@@ -314,6 +339,7 @@ function ProficiencyView:OnHide()
   end
   self.ViewModel:ResetData()
 end
+
 function ProficiencyView:GetMainRoleActor()
   local RoleActorList = UE.UGameplayStatics.GetAllActorsWithTag(self, "RoleMainHero", nil)
   for i, SingleRoleActor in pairs(RoleActorList) do
@@ -322,11 +348,14 @@ function ProficiencyView:GetMainRoleActor()
   end
   return self.TargetRoleActor
 end
+
 function ProficiencyView:HideViewByViewSet(...)
   self.CanvasPanelRoot:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
   UIMgr:Hide(ViewID.UI_ProficiencyView, false)
 end
+
 function ProficiencyView:GetCurHeroId()
   return self.ViewModel.CurHeroId
 end
+
 return ProficiencyView

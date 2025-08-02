@@ -4,6 +4,7 @@ local SkillStatus = {
   CoolDown = 1,
   NoCount = 2
 }
+
 function WBP_SkillCoolDown_C:Construct()
   self.WBP_CustomKeyName:SetCustomKeyDisplayInfo(self.CustomKeyDisplayInfo)
   self:ListenPressedInputEvent(true)
@@ -43,6 +44,7 @@ function WBP_SkillCoolDown_C:Construct()
   UpdateVisibility(self.FX_SkillComplete.down, self.IsDown)
   self.RGStateController_Location:ChangeStatus(Status)
 end
+
 function WBP_SkillCoolDown_C:InitSkillUnNormalState(...)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -62,6 +64,7 @@ function WBP_SkillCoolDown_C:InitSkillUnNormalState(...)
   end
   self:RefreshUnNomalState()
 end
+
 function WBP_SkillCoolDown_C:BindOnBeginWaitSkillRetrigger(SkillType, MaxWaitTime)
   if self.SkillType ~= SkillType then
     return
@@ -73,6 +76,7 @@ function WBP_SkillCoolDown_C:BindOnBeginWaitSkillRetrigger(SkillType, MaxWaitTim
   UpdateVisibility(self.Img_SkillRetrigger, true)
   self:PlayAnimation(self.Ani_SkillRetrigger_loop, 0.0, 0, UE.EUMGSequencePlayMode.Forward, 1.0, false)
 end
+
 function WBP_SkillCoolDown_C:BindOnSkillRetrigger(SkillType)
   if self.SkillType ~= SkillType then
     return
@@ -80,6 +84,7 @@ function WBP_SkillCoolDown_C:BindOnSkillRetrigger(SkillType)
   print("WBP_SkillCoolDown_C:BindOnSkillRetrigger")
   self:EndSkillRetrigger()
 end
+
 function WBP_SkillCoolDown_C:EndSkillRetrigger()
   self.IsInSkillRetrigger = false
   UpdateVisibility(self.Img_SkillRetrigger, false)
@@ -87,6 +92,7 @@ function WBP_SkillCoolDown_C:EndSkillRetrigger()
     self:StopAnimation(self.Ani_SkillRetrigger_loop)
   end
 end
+
 function WBP_SkillCoolDown_C:BindOnEndWaitSkillRetrigger(SkillType)
   if self.SkillType ~= SkillType then
     return
@@ -94,6 +100,7 @@ function WBP_SkillCoolDown_C:BindOnEndWaitSkillRetrigger(SkillType)
   print("WBP_SkillCoolDown_C:BindOnEndWaitSkillRetrigger")
   self:EndSkillRetrigger()
 end
+
 function WBP_SkillCoolDown_C:BindOnSkillCoolDownRemaining(Tag, DeltaDuration)
   if self.SkillCostType == UE.ESkillCostType.CostSkillEnergy then
   elseif self.SkillCostType == UE.ESkillCostType.CostSkillCount then
@@ -111,16 +118,19 @@ function WBP_SkillCoolDown_C:BindOnSkillCoolDownRemaining(Tag, DeltaDuration)
     self:PlayAnimationForward(self.Ani_SkillCooldown_Reduce)
   end
 end
+
 function WBP_SkillCoolDown_C:OnHeroDying(Target)
   if Target == UE.UGameplayStatics.GetPlayerCharacter(self, 0) then
     UpdateVisibility(self, false)
   end
 end
+
 function WBP_SkillCoolDown_C:OnHeroRescue(Target)
   if Target == UE.UGameplayStatics.GetPlayerCharacter(self, 0) then
     UpdateVisibility(self, true)
   end
 end
+
 function WBP_SkillCoolDown_C:OnAttributeModifyCacheAdded(AttributeCacheModifyData)
   if UE.UAbilitySystemBlueprintLibrary.EqualEqual_GameplayAttributeGameplayAttribute(AttributeCacheModifyData.ConfigData.Attribute, self.SkillCountAttribute) or UE.UAbilitySystemBlueprintLibrary.EqualEqual_GameplayAttributeGameplayAttribute(AttributeCacheModifyData.ConfigData.Attribute, self.MaxSkillCountAttribute) then
     local TempTable = {
@@ -132,6 +142,7 @@ function WBP_SkillCoolDown_C:OnAttributeModifyCacheAdded(AttributeCacheModifyDat
     self.IsUpdateAttributeCache = true
   end
 end
+
 function WBP_SkillCoolDown_C:OnAttributeModifyCacheRemove(AttributeCacheModifyData)
   if UE.UAbilitySystemBlueprintLibrary.EqualEqual_GameplayAttributeGameplayAttribute(AttributeCacheModifyData.ConfigData.Attribute, self.SkillCountAttribute) or UE.UAbilitySystemBlueprintLibrary.EqualEqual_GameplayAttributeGameplayAttribute(AttributeCacheModifyData.ConfigData.Attribute, self.MaxSkillCountAttribute) then
     if not self.AttributeModifyCacheList then
@@ -146,6 +157,7 @@ function WBP_SkillCoolDown_C:OnAttributeModifyCacheRemove(AttributeCacheModifyDa
     end
   end
 end
+
 function WBP_SkillCoolDown_C:BindOnInputForbiddenUpdated(Owner, InputId, IsForbidden)
   if InputId == self.SkillType then
     self.IsForbidden = IsForbidden
@@ -155,6 +167,7 @@ function WBP_SkillCoolDown_C:BindOnInputForbiddenUpdated(Owner, InputId, IsForbi
     end
   end
 end
+
 function WBP_SkillCoolDown_C:RefreshLockPanelVis()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   local InputComp = Character:GetComponentByClass(UE.URGActorInputHandle:StaticClass())
@@ -171,6 +184,7 @@ function WBP_SkillCoolDown_C:RefreshLockPanelVis()
     self:UpdateSkillPanelVisByMaxCount()
   end
 end
+
 function WBP_SkillCoolDown_C:RefreshInfo(AbilityClass)
   self.AbilityClass = AbilityClass
   if UE.UKismetSystemLibrary.IsValidClass(AbilityClass) then
@@ -182,10 +196,12 @@ function WBP_SkillCoolDown_C:RefreshInfo(AbilityClass)
   self:InitSkillStyle()
   self:SetCoolingStatus(UE.ERGAbilityStateType.None)
 end
+
 function WBP_SkillCoolDown_C:SetSkillIcon(SpecialSkillIcon)
   SetImageBrushBySoftObject(self.Img_SkillIcon, SpecialSkillIcon)
   SetImageBrushBySoftObject(self.Img_DisableSkillIcon, SpecialSkillIcon)
 end
+
 function WBP_SkillCoolDown_C:BindOnAbilityTagUpdate(Tag, bTagExist, TargetActor)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if TargetActor ~= Character then
@@ -200,6 +216,7 @@ function WBP_SkillCoolDown_C:BindOnAbilityTagUpdate(Tag, bTagExist, TargetActor)
     self:RefreshUnNomalState()
   end
 end
+
 function WBP_SkillCoolDown_C:RefreshUnNomalState()
   self.IsInUnNormalState = self.IsInFreezeSkill or self.ForbiddenSkillTagList and table.count(self.ForbiddenSkillTagList) > 0
   if self.IsInUnNormalState then
@@ -217,6 +234,7 @@ function WBP_SkillCoolDown_C:RefreshUnNomalState()
   end
   self:UpdateOperateOpacity()
 end
+
 function WBP_SkillCoolDown_C:BindOnCharacterEnterState(TargetActor, Tag)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if TargetActor ~= Character then
@@ -231,6 +249,7 @@ function WBP_SkillCoolDown_C:BindOnCharacterEnterState(TargetActor, Tag)
   self.ForbiddenSkillTagList[UE.UBlueprintGameplayTagLibrary.GetTagName(Tag)] = true
   self:RefreshUnNomalState()
 end
+
 function WBP_SkillCoolDown_C:BindOnCharacterExitState(TargetActor, Tag, IsBlocked)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if TargetActor ~= Character then
@@ -242,8 +261,10 @@ function WBP_SkillCoolDown_C:BindOnCharacterExitState(TargetActor, Tag, IsBlocke
   self.ForbiddenSkillTagList[UE.UBlueprintGameplayTagLibrary.GetTagName(Tag)] = nil
   self:RefreshUnNomalState()
 end
+
 function WBP_SkillCoolDown_C:BindOnClientPickupNotice(Pickup)
 end
+
 function WBP_SkillCoolDown_C:SetSkillBasicInfo()
   self.SkillId = self:GetSkillId()
   self:InitSkillCostValue()
@@ -259,6 +280,7 @@ function WBP_SkillCoolDown_C:SetSkillBasicInfo()
     self.Img_DisableSkillIcon:SetBrush(Brush)
   end
 end
+
 function WBP_SkillCoolDown_C:InitAbilityClass()
   local Character = self:GetOwningPlayerPawn()
   if not Character then
@@ -270,6 +292,7 @@ function WBP_SkillCoolDown_C:InitAbilityClass()
   end
   self.AbilityClass = ASC:GetAbilityClassByInputId(self.SkillType)
 end
+
 function WBP_SkillCoolDown_C:InitSkillStyle()
   self.SkillCostType = self:GetSkillCostType()
   if self.SkillCostType == UE.ESkillCostType.CostSkillEnergy then
@@ -289,6 +312,7 @@ function WBP_SkillCoolDown_C:InitSkillStyle()
     self.EnergyBar:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_SkillCoolDown_C:InitEnergyCostSkill()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -303,6 +327,7 @@ function WBP_SkillCoolDown_C:InitEnergyCostSkill()
     end
   }, 0.1, false)
 end
+
 function WBP_SkillCoolDown_C:InitCountCostSkill()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -336,6 +361,7 @@ function WBP_SkillCoolDown_C:InitCountCostSkill()
     self.IsBoundAttribute = true
   end
 end
+
 function WBP_SkillCoolDown_C:SetSkillCountValue()
   local SkillCountValue = self:GetSkillCountAttributeValue()
   local RealSkillCount = SkillCountValue
@@ -346,6 +372,7 @@ function WBP_SkillCoolDown_C:SetSkillCountValue()
   end
   self.Txt_SkillCount:SetText(tostring(RealSkillCount))
 end
+
 function WBP_SkillCoolDown_C:BindOnAbilityDataRecovery(TargetAttribute, ServerStartTime)
   if not UE.UAbilitySystemBlueprintLibrary.EqualEqual_GameplayAttributeGameplayAttribute(TargetAttribute, self.SkillCountAttribute) then
     return
@@ -358,6 +385,7 @@ function WBP_SkillCoolDown_C:BindOnAbilityDataRecovery(TargetAttribute, ServerSt
   self.RecoveryTime = math.clamp(CurWorldTime - ServerStartTime, 0.0, self.RecoveryCountTime)
   self:UpdateRecoverySkillCount()
 end
+
 function WBP_SkillCoolDown_C:UpdateSkillPanelVisByMaxCount()
   local MaxSkillCountValue = self:GetMaxSkillCountAttributeValue()
   if 0.0 ~= self.SkillCostValue then
@@ -372,6 +400,7 @@ function WBP_SkillCoolDown_C:UpdateSkillPanelVisByMaxCount()
   end
   UpdateVisibility(self.SkillCountPanel, MaxSkillCountValue > 1)
 end
+
 function WBP_SkillCoolDown_C:BindOnSkillCountAttributeChanged(NewValue, OldValue)
   self.CurrentSkillCountAttributeValue = self:GetSkillCountAttributeValue()
   self:SetSkillCountValue()
@@ -393,6 +422,7 @@ function WBP_SkillCoolDown_C:BindOnSkillCountAttributeChanged(NewValue, OldValue
     self:UpdateCoolDownVis(true)
   end
 end
+
 function WBP_SkillCoolDown_C:BindOnEnergyAttributeChanged(NewValue, OldValue)
   local EnergyValue = self:GetAttributeValue(self.EnergyAttribute)
   local MaxEnergyValue = self:GetAttributeValue(self.MaxEnergyAttribute)
@@ -402,6 +432,7 @@ function WBP_SkillCoolDown_C:BindOnEnergyAttributeChanged(NewValue, OldValue)
   end
   self:UpdateCoolDownMaterial(math.clamp(TargetValue, 0.0, 1.0))
 end
+
 function WBP_SkillCoolDown_C:GetRecoveryCountTimeAttributeValue()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -414,6 +445,7 @@ function WBP_SkillCoolDown_C:GetRecoveryCountTimeAttributeValue()
   local AttributeValue = UE.UAbilitySystemBlueprintLibrary.GetFloatAttributeFromAbilitySystemComponent(ASC, self.RecoveryCountTimeAttribute, nil)
   return AttributeValue
 end
+
 function WBP_SkillCoolDown_C:UpdateRecoverySkillCount()
   self.IsRecovery = true
   self:UpdateCoolDownMaterial(1.0)
@@ -423,6 +455,7 @@ function WBP_SkillCoolDown_C:UpdateRecoverySkillCount()
     WBP_SkillCoolDown_C.OnUpdateRecoveryCountTime
   }, 0.1, true)
 end
+
 function WBP_SkillCoolDown_C:EndUpdateRecoveryCountTime()
   self.IsRecovery = false
   self.RecoveryTime = 0
@@ -430,6 +463,7 @@ function WBP_SkillCoolDown_C:EndUpdateRecoveryCountTime()
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.RecoveryCountTimer)
   end
 end
+
 function WBP_SkillCoolDown_C:OnUpdateRecoveryCountTime()
   self.RecoveryTime = self.RecoveryTime + 0.1
   if self.RecoveryTime >= self.RecoveryCountTime then
@@ -438,8 +472,10 @@ function WBP_SkillCoolDown_C:OnUpdateRecoveryCountTime()
     self:UpdateCoolDownMaterial(self.RecoveryTime / self.RecoveryCountTime)
   end
 end
+
 function WBP_SkillCoolDown_C:BindOnGameplayEffectDurationChangedDelegate(TagContainer)
 end
+
 function WBP_SkillCoolDown_C:SetCoolingStatus(State)
   if self:IsSkillForbidden() then
     State = UE.ERGAbilityStateType.InCoolDown
@@ -473,10 +509,12 @@ function WBP_SkillCoolDown_C:SetCoolingStatus(State)
   self:PlayAniOutAnimation()
   self:UpdateOperateOpacity()
 end
+
 function WBP_SkillCoolDown_C:PlayAniInAnimation()
   self:PlayAnimationForward(self.Ani_In)
   self.IsInPressState = true
 end
+
 function WBP_SkillCoolDown_C:PlayAniOutAnimation()
   if not self.IsInPressState then
     return
@@ -487,6 +525,7 @@ function WBP_SkillCoolDown_C:PlayAniOutAnimation()
   self:PlayAnimationForward(self.Ani_Out)
   self.IsInPressState = false
 end
+
 function WBP_SkillCoolDown_C:UpdateOperateOpacity()
   if self.IsInUnNormalState or self.CurState == UE.ERGAbilityStateType.InCoolDown then
     self.WBP_CustomKeyName:SetBottomOpacity(self.NotCountOperateBottomOpacity)
@@ -496,6 +535,7 @@ function WBP_SkillCoolDown_C:UpdateOperateOpacity()
     self.WBP_CustomKeyName:SetTextOpacity(self.NormalOperateTextOpacity)
   end
 end
+
 function WBP_SkillCoolDown_C:UpdateCoolDownVis(IsShow)
   if self.CurCoolDownVisState ~= nil and self.CurCoolDownVisState == IsShow then
     return
@@ -512,6 +552,7 @@ function WBP_SkillCoolDown_C:UpdateCoolDownVis(IsShow)
     self.RGTextCountDown:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_SkillCoolDown_C:Destruct()
   self:ListenPressedInputEvent(false)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.RecoveryCountTimer) then
@@ -564,4 +605,5 @@ function WBP_SkillCoolDown_C:Destruct()
   UnListenObjectMessage(GMP.MSG_World_Character_OnEnterState, self)
   UnListenObjectMessage(GMP.MSG_World_Character_OnExitState, self)
 end
+
 return WBP_SkillCoolDown_C

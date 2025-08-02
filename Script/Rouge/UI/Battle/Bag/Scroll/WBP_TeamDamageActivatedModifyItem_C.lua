@@ -1,5 +1,6 @@
 local AttributeModityData = require("Modules.AttributeModity.AttributeModityData")
 local WBP_TeamDamageActivatedModifyItem_C = UnLua.Class()
+
 function WBP_TeamDamageActivatedModifyItem_C:Construct()
   self.Overridden.Construct(self)
   self.ScrollId = -1
@@ -7,6 +8,7 @@ function WBP_TeamDamageActivatedModifyItem_C:Construct()
   self.bIsHovered = false
   EventSystem.AddListenerNew(EventDef.TeamDamage.OnUpdateHoverStatus, self, self.BindOnUpdateHoverStatus)
 end
+
 function WBP_TeamDamageActivatedModifyItem_C:UpdateScrollData(ScollId, UpdateScrollTips, ParentView, ParentItemPanel, Index, PS)
   self.ParentView = ParentView
   self.ParentItemPanel = ParentItemPanel
@@ -44,9 +46,11 @@ function WBP_TeamDamageActivatedModifyItem_C:UpdateScrollData(ScollId, UpdateScr
     self.RGStateController_Like:ChangeStatus("LikeByNone")
   end
 end
+
 function WBP_TeamDamageActivatedModifyItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   self:Hovered(true)
 end
+
 function WBP_TeamDamageActivatedModifyItem_C:Hovered(bIsNeedInit)
   if self.ParentView and self.ScrollId and self.ScrollId > 0 then
     self.UpdateScrollTips(self.ParentView, true, self.ScrollId, self, EScrollTipsOpenType.EFromScrollSlot, bIsNeedInit, self.PS:GetUserId())
@@ -60,6 +64,7 @@ function WBP_TeamDamageActivatedModifyItem_C:Hovered(bIsNeedInit)
     })
   end
 end
+
 function WBP_TeamDamageActivatedModifyItem_C:UnHovered()
   if self.ParentView then
     self.UpdateScrollTips(self.ParentView, false, -1, nil, EScrollTipsOpenType.EFromScrollSlot, false, nil)
@@ -70,15 +75,19 @@ function WBP_TeamDamageActivatedModifyItem_C:UnHovered()
     StopListeningForInputAction(self, "Interact", UE.EInputEvent.IE_Pressed)
   end
 end
+
 function WBP_TeamDamageActivatedModifyItem_C:OnMouseLeave(MyGeometry, MouseEvent)
   self:UnHovered()
 end
+
 function WBP_TeamDamageActivatedModifyItem_C:UpdateHighlight(bIsShow)
   UpdateVisibility(self.URGImageHover, bIsShow)
 end
+
 function WBP_TeamDamageActivatedModifyItem_C:IsEmptySlot()
   return -1 == self.ScrollId or self.ScrollId == nil
 end
+
 function WBP_TeamDamageActivatedModifyItem_C:Hide()
   UpdateVisibility(self, false)
   if self.bIsHovered then
@@ -90,6 +99,7 @@ function WBP_TeamDamageActivatedModifyItem_C:Hide()
   self.Index = -1
   self.ScrollId = -1
 end
+
 function WBP_TeamDamageActivatedModifyItem_C:ListenForInteractInputAction()
   if self.bIsTeamDamage and not self.bIsOwner then
     local CurrentUserId = self.PS and self.PS:GetUserId() or nil
@@ -127,6 +137,7 @@ function WBP_TeamDamageActivatedModifyItem_C:ListenForInteractInputAction()
     end
   end
 end
+
 function WBP_TeamDamageActivatedModifyItem_C:Destruct()
   self.ParentView = nil
   self.ParentItemPanel = nil
@@ -135,35 +146,43 @@ function WBP_TeamDamageActivatedModifyItem_C:Destruct()
   self.bIsHovered = false
   EventSystem.RemoveListenerNew(EventDef.TeamDamage.OnUpdateHoverStatus, self, self.BindOnUpdateHoverStatus)
 end
+
 function WBP_TeamDamageActivatedModifyItem_C:BindOnUpdateHoverStatus(UserId, AttributeModifyIndex, GenericModifyIndex)
   if self.PS and tonumber(self.PS:GetUserId()) == tonumber(UserId) and self.Index == AttributeModifyIndex then
     self:SetKeyboardFocus()
   end
 end
+
 function WBP_TeamDamageActivatedModifyItem_C:OnAddedToFocusPath(...)
   self:Hovered()
 end
+
 function WBP_TeamDamageActivatedModifyItem_C:OnRemovedFromFocusPath(...)
   self:UnHovered()
 end
+
 function WBP_TeamDamageActivatedModifyItem_C:DoCustomNavigation_Left()
   if self.ParentItemPanel then
     return self.ParentItemPanel:GetModifyItemLeft(self.Index, false)
   end
 end
+
 function WBP_TeamDamageActivatedModifyItem_C:DoCustomNavigation_Right()
   if self.ParentItemPanel then
     return self.ParentItemPanel:GetModifyItemRight(self.Index, false)
   end
 end
+
 function WBP_TeamDamageActivatedModifyItem_C:DoCustomNavigation_Up()
   if self.ParentItemPanel then
     return self.ParentItemPanel:GetModifyItemUp(self.Index)
   end
 end
+
 function WBP_TeamDamageActivatedModifyItem_C:DoCustomNavigation_Down()
   if self.ParentItemPanel then
     return self.ParentItemPanel:GetModifyItemDown(self.Index)
   end
 end
+
 return WBP_TeamDamageActivatedModifyItem_C

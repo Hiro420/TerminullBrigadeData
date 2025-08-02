@@ -1,0 +1,530 @@
+[
+  {
+    "ID": 500001,
+    "Desc": "限时资源测试道具",
+    "giftPackage": [
+      {
+        "resourceID": 99018,
+        "amount": 1,
+        "timeLimitType": 1,
+        "timeLimitParam": "1",
+        "timeLimitedDecomposeResources": [
+          {
+            "key": 99994,
+            "value": 10
+          }
+        ],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 500002,
+    "Desc": "限时资源测试货币",
+    "giftPackage": [
+      {
+        "resourceID": 300002,
+        "amount": 1,
+        "timeLimitType": 1,
+        "timeLimitParam": "2",
+        "timeLimitedDecomposeResources": [
+          {
+            "key": 99994,
+            "value": 10
+          }
+        ],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 500003,
+    "Desc": "限时资源测试横幅",
+    "giftPackage": [
+      {
+        "resourceID": 82002,
+        "amount": 1,
+        "timeLimitType": 1,
+        "timeLimitParam": "1",
+        "timeLimitedDecomposeResources": [
+          {
+            "key": 99994,
+            "value": 10
+          }
+        ],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 500004,
+    "Desc": "限时资源测试角色皮肤",
+    "giftPackage": [
+      {
+        "resourceID": 10100801,
+        "amount": 1,
+        "timeLimitType": 1,
+        "timeLimitParam": "2",
+        "timeLimitedDecomposeResources": [
+          {
+            "key": 99994,
+            "value": 10
+          }
+        ],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 500005,
+    "Desc": "限时资源测试头像",
+    "giftPackage": [
+      {
+        "resourceID": 81204,
+        "amount": 1,
+        "timeLimitType": 1,
+        "timeLimitParam": "2",
+        "timeLimitedDecomposeResources": [
+          {
+            "key": 99994,
+            "value": 10
+          }
+        ],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 500006,
+    "Desc": "限时资源测试武器",
+    "giftPackage": [
+      {
+        "resourceID": 5014,
+        "amount": 1,
+        "timeLimitType": 1,
+        "timeLimitParam": "3",
+        "timeLimitedDecomposeResources": [
+          {
+            "key": 99994,
+            "value": 10
+          }
+        ],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 500007,
+    "Desc": "限时资源测试武器皮肤",
+    "giftPackage": [
+      {
+        "resourceID": 10501441,
+        "amount": 1,
+        "timeLimitType": 1,
+        "timeLimitParam": "4",
+        "timeLimitedDecomposeResources": [
+          {
+            "key": 99994,
+            "value": 10
+          }
+        ],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 500008,
+    "Desc": "限时资源测试轮盘",
+    "giftPackage": [
+      {
+        "resourceID": 20720103,
+        "amount": 1,
+        "timeLimitType": 1,
+        "timeLimitParam": "1",
+        "timeLimitedDecomposeResources": [
+          {
+            "key": 99994,
+            "value": 10
+          }
+        ],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 500009,
+    "Desc": "限时资源测试英雄",
+    "giftPackage": [
+      {
+        "resourceID": 100009,
+        "amount": 1,
+        "timeLimitType": 1,
+        "timeLimitParam": "2",
+        "timeLimitedDecomposeResources": [
+          {
+            "key": 99994,
+            "value": 10
+          }
+        ],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 500010,
+    "Desc": "限时资源测试道具（定时",
+    "giftPackage": [
+      {
+        "resourceID": 99018,
+        "amount": 10,
+        "timeLimitType": 2,
+        "timeLimitParam": "2025-07-06 00:00:00",
+        "timeLimitedDecomposeResources": [
+          {
+            "key": 99994,
+            "value": 10
+          }
+        ],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 500011,
+    "Desc": "限时资源测试货币（定时",
+    "giftPackage": [
+      {
+        "resourceID": 300005,
+        "amount": 1000,
+        "timeLimitType": 2,
+        "timeLimitParam": "2025-07-06 00:00:00",
+        "timeLimitedDecomposeResources": [
+          {
+            "key": 99994,
+            "value": 10
+          }
+        ],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 500012,
+    "Desc": "限时资源格洛丽亚枪2",
+    "giftPackage": [
+      {
+        "resourceID": 5017,
+        "amount": 1,
+        "timeLimitType": 1,
+        "timeLimitParam": "3",
+        "timeLimitedDecomposeResources": [
+          {
+            "key": 99994,
+            "value": 10
+          }
+        ],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 500013,
+    "Desc": "限时资源测试英雄-上校",
+    "giftPackage": [
+      {
+        "resourceID": 100007,
+        "amount": 1,
+        "timeLimitType": 1,
+        "timeLimitParam": "2",
+        "timeLimitedDecomposeResources": [
+          {
+            "key": 99994,
+            "value": 10
+          }
+        ],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 500014,
+    "Desc": "限时资源测试货币（定时",
+    "giftPackage": [
+      {
+        "resourceID": 300001,
+        "amount": 1000,
+        "timeLimitType": 2,
+        "timeLimitParam": "2025-07-06 00:00:00",
+        "timeLimitedDecomposeResources": [
+          {
+            "key": 99994,
+            "value": 10
+          }
+        ],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 500015,
+    "Desc": "电幻·舞者（14天）",
+    "giftPackage": [
+      {
+        "resourceID": 10100007,
+        "amount": 1,
+        "timeLimitType": 1,
+        "timeLimitParam": "14",
+        "timeLimitedDecomposeResources": [
+          {
+            "key": 99994,
+            "value": 100
+          }
+        ],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 510001,
+    "Desc": "【橙pro】DS权益-模组掉落+",
+    "giftPackage": [
+      {
+        "resourceID": 300401,
+        "amount": 1,
+        "timeLimitType": 2,
+        "timeLimitParam": "2025-09-24 05:00:00",
+        "timeLimitedDecomposeResources": [],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 510002,
+    "Desc": "【红】DS权益-通货掉落+",
+    "giftPackage": [
+      {
+        "resourceID": 300403,
+        "amount": 1,
+        "timeLimitType": 2,
+        "timeLimitParam": "2025-09-24 05:00:00",
+        "timeLimitedDecomposeResources": [],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 510003,
+    "Desc": "【橙】DS权益-金币++",
+    "giftPackage": [
+      {
+        "resourceID": 300405,
+        "amount": 1,
+        "timeLimitType": 2,
+        "timeLimitParam": "2025-09-24 05:00:00",
+        "timeLimitedDecomposeResources": [],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 510004,
+    "Desc": "【BP】DS权益-模组掉落概率增加",
+    "giftPackage": [
+      {
+        "resourceID": 300406,
+        "amount": 1,
+        "timeLimitType": 2,
+        "timeLimitParam": "2025-09-24 05:00:00",
+        "timeLimitedDecomposeResources": [],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 510005,
+    "Desc": "【测试】【橙】DS权益-模组掉落+",
+    "giftPackage": [
+      {
+        "resourceID": 300407,
+        "amount": 1,
+        "timeLimitType": 2,
+        "timeLimitParam": "2025-07-09 11:00:00",
+        "timeLimitedDecomposeResources": [],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 510006,
+    "Desc": "【测试】【红】DS权益-通货掉落+",
+    "giftPackage": [
+      {
+        "resourceID": 300409,
+        "amount": 1,
+        "timeLimitType": 2,
+        "timeLimitParam": "2025-07-09 11:00:00",
+        "timeLimitedDecomposeResources": [],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 510007,
+    "Desc": "【测试】【橙】DS权益-金币++",
+    "giftPackage": [
+      {
+        "resourceID": 300411,
+        "amount": 1,
+        "timeLimitType": 2,
+        "timeLimitParam": "2025-07-09 11:00:00",
+        "timeLimitedDecomposeResources": [],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 510008,
+    "Desc": "【测试】【BP】DS权益-模组掉落概率增加",
+    "giftPackage": [
+      {
+        "resourceID": 300412,
+        "amount": 1,
+        "timeLimitType": 2,
+        "timeLimitParam": "2025-07-09 11:00:00",
+        "timeLimitedDecomposeResources": [],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 510009,
+    "Desc": "【测试】【橙】DS权益-模组掉落+",
+    "giftPackage": [
+      {
+        "resourceID": 300413,
+        "amount": 1,
+        "timeLimitType": 2,
+        "timeLimitParam": "2025-07-09 15:00:00",
+        "timeLimitedDecomposeResources": [],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 510010,
+    "Desc": "【测试】【红】DS权益-通货掉落+",
+    "giftPackage": [
+      {
+        "resourceID": 300415,
+        "amount": 1,
+        "timeLimitType": 2,
+        "timeLimitParam": "2025-07-09 15:00:00",
+        "timeLimitedDecomposeResources": [],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 510011,
+    "Desc": "【测试】【橙】DS权益-金币++",
+    "giftPackage": [
+      {
+        "resourceID": 300417,
+        "amount": 1,
+        "timeLimitType": 2,
+        "timeLimitParam": "2025-07-09 15:00:00",
+        "timeLimitedDecomposeResources": [],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 510012,
+    "Desc": "【测试】【BP】DS权益-模组掉落概率增加",
+    "giftPackage": [
+      {
+        "resourceID": 300418,
+        "amount": 1,
+        "timeLimitType": 2,
+        "timeLimitParam": "2025-07-09 15:00:00",
+        "timeLimitedDecomposeResources": [],
+        "bShowExpireAt": true
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  },
+  {
+    "ID": 30703029,
+    "Desc": "百宝箱（1天）",
+    "giftPackage": [
+      {
+        "resourceID": 20703029,
+        "amount": 1,
+        "timeLimitType": 1,
+        "timeLimitParam": "1",
+        "timeLimitedDecomposeResources": [
+          {
+            "key": 99989,
+            "value": 10
+          }
+        ],
+        "bShowExpireAt": false
+      }
+    ],
+    "Icon": "",
+    "isShow": false
+  }
+]

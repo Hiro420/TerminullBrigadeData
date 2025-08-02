@@ -1,6 +1,7 @@
 local WBP_OccupancyRoleItem_C = UnLua.Class()
 local ListContainerMaxNum = 4
 local ArrowNameFormat = "ImageRoleListBg_"
+
 function WBP_OccupancyRoleItem_C:Update(bHavePlayer)
   if bHavePlayer then
     self.URGImagePlayer:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
@@ -8,6 +9,7 @@ function WBP_OccupancyRoleItem_C:Update(bHavePlayer)
     self.URGImagePlayer:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_OccupancyRoleItem_C:OnInit()
   self.Overridden.Construct(self)
   self.RoleItemList = {}
@@ -25,4 +27,5 @@ function WBP_OccupancyRoleItem_C:OnInit()
     WBP_OccupancyRoleItem_C.BindDefendStartAniFinished
   })
 end
+
 return WBP_OccupancyRoleItem_C

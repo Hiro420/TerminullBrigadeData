@@ -1,4 +1,5 @@
 local ClimbTowerRankViewItem = UnLua.Class()
+
 function ClimbTowerRankViewItem:InitRankItem(RoleIds, PassTime, Index)
   UpdateVisibility(self.Player1, false)
   UpdateVisibility(self.Player2, false)
@@ -44,10 +45,13 @@ function ClimbTowerRankViewItem:InitRankItem(RoleIds, PassTime, Index)
   local rankBrush = UE.UPaperSpriteBlueprintLibrary.MakeBrushFromSprite(rankIconObj, 0, 0)
   self.Image_NumberBack:SetBrush(rankBrush)
 end
+
 function ClimbTowerRankViewItem:OnMouseEnter(MyGeometry, MouseEvent)
   self:PlayAnimation(self.Ani_hover_in)
 end
+
 function ClimbTowerRankViewItem:OnMouseLeave(MyGeometry, MouseEvent)
   self:PlayAnimation(self.Ani_hover_out)
 end
+
 return ClimbTowerRankViewItem

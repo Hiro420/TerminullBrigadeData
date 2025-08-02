@@ -1,0 +1,527 @@
+[
+  {
+    "ID": 1,
+    "Name": "60纯净数据",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "CurrencyType": 0,
+    "Price": 6,
+    "Region": 0,
+    "Shelfs": [
+      102
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300101_60",
+    "SteamGainResourceID": 300101,
+    "SteamGainAmount": 60
+  },
+  {
+    "ID": 2,
+    "Name": "300纯净数据",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "CurrencyType": 0,
+    "Price": 30,
+    "Region": 0,
+    "Shelfs": [
+      102
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300101_300",
+    "SteamGainResourceID": 300101,
+    "SteamGainAmount": 300
+  },
+  {
+    "ID": 3,
+    "Name": "700纯净数据",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "CurrencyType": 0,
+    "Price": 68,
+    "Region": 0,
+    "Shelfs": [
+      102
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300101_700",
+    "SteamGainResourceID": 300101,
+    "SteamGainAmount": 680
+  },
+  {
+    "ID": 4,
+    "Name": "1280纯净数据",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "CurrencyType": 0,
+    "Price": 118,
+    "Region": 0,
+    "Shelfs": [
+      102
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300101_1280",
+    "SteamGainResourceID": 300101,
+    "SteamGainAmount": 1180
+  },
+  {
+    "ID": 5,
+    "Name": "3650纯净数据",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "CurrencyType": 0,
+    "Price": 328,
+    "Region": 0,
+    "Shelfs": [
+      102
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300101_3650",
+    "SteamGainResourceID": 300101,
+    "SteamGainAmount": 3280
+  },
+  {
+    "ID": 6,
+    "Name": "6850纯净数据",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "CurrencyType": 0,
+    "Price": 598,
+    "Region": 0,
+    "Shelfs": [
+      102
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300101_6850",
+    "SteamGainResourceID": 300101,
+    "SteamGainAmount": 5980
+  },
+  {
+    "ID": 7,
+    "Name": "60纯净数据",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "CurrencyType": 1,
+    "Price": 0.99,
+    "Region": 1,
+    "Shelfs": [
+      102
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300101_60",
+    "SteamGainResourceID": 0,
+    "SteamGainAmount": 0
+  },
+  {
+    "ID": 8,
+    "Name": "300纯净数据",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "CurrencyType": 1,
+    "Price": 4.99,
+    "Region": 1,
+    "Shelfs": [
+      102
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300101_300",
+    "SteamGainResourceID": 0,
+    "SteamGainAmount": 0
+  },
+  {
+    "ID": 9,
+    "Name": "700纯净数据",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "CurrencyType": 1,
+    "Price": 9.99,
+    "Region": 1,
+    "Shelfs": [
+      102
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300101_615",
+    "SteamGainResourceID": 0,
+    "SteamGainAmount": 0
+  },
+  {
+    "ID": 10,
+    "Name": "1280纯净数据",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "CurrencyType": 1,
+    "Price": 24.99,
+    "Region": 1,
+    "Shelfs": [
+      102
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300101_1620",
+    "SteamGainResourceID": 0,
+    "SteamGainAmount": 0
+  },
+  {
+    "ID": 11,
+    "Name": "3650纯净数据",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "CurrencyType": 1,
+    "Price": 49.99,
+    "Region": 1,
+    "Shelfs": [
+      102
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300101_3350",
+    "SteamGainResourceID": 0,
+    "SteamGainAmount": 0
+  },
+  {
+    "ID": 12,
+    "Name": "6850纯净数据",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconCoin/Frames/Icon_PureEnergy.Icon_PureEnergy",
+    "CurrencyType": 1,
+    "Price": 99.99,
+    "Region": 1,
+    "Shelfs": [
+      102
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300101_6850",
+    "SteamGainResourceID": 0,
+    "SteamGainAmount": 0
+  },
+  {
+    "ID": 13,
+    "Name": "高能权益",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_01.Icon_MonthCard_Benefits_01",
+    "CurrencyType": 0,
+    "Price": 10,
+    "Region": 0,
+    "Shelfs": [
+      101
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300201",
+    "SteamGainResourceID": 300201,
+    "SteamGainAmount": 1
+  },
+  {
+    "ID": 14,
+    "Name": "权限刷新权益",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_05.Icon_MonthCard_Benefits_05",
+    "CurrencyType": 0,
+    "Price": 10,
+    "Region": 0,
+    "Shelfs": [
+      101
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300204",
+    "SteamGainResourceID": 300204,
+    "SteamGainAmount": 1
+  },
+  {
+    "ID": 15,
+    "Name": "复活权益",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_06.Icon_MonthCard_Benefits_06",
+    "CurrencyType": 0,
+    "Price": 10,
+    "Region": 0,
+    "Shelfs": [
+      101
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300205",
+    "SteamGainResourceID": 300205,
+    "SteamGainAmount": 1
+  },
+  {
+    "ID": 16,
+    "Name": "源码权益",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_04.Icon_MonthCard_Benefits_04",
+    "CurrencyType": 0,
+    "Price": 20,
+    "Region": 0,
+    "Shelfs": [
+      101
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300203",
+    "SteamGainResourceID": 300203,
+    "SteamGainAmount": 1
+  },
+  {
+    "ID": 17,
+    "Name": "熟练度权益",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_04.Icon_MonthCard_Benefits_04",
+    "CurrencyType": 0,
+    "Price": 20,
+    "Region": 0,
+    "Shelfs": [
+      101
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300206",
+    "SteamGainResourceID": 300206,
+    "SteamGainAmount": 1
+  },
+  {
+    "ID": 18,
+    "Name": "赛季道具权益",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_02.Icon_MonthCard_Benefits_02",
+    "CurrencyType": 0,
+    "Price": 20,
+    "Region": 0,
+    "Shelfs": [
+      101
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300207",
+    "SteamGainResourceID": 300207,
+    "SteamGainAmount": 1
+  },
+  {
+    "ID": 19,
+    "Name": "权益组合包 ",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_07.Icon_MonthCard_Benefits_07",
+    "CurrencyType": 0,
+    "Price": 38,
+    "Region": 0,
+    "Shelfs": [
+      101
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300208",
+    "SteamGainResourceID": 300208,
+    "SteamGainAmount": 1
+  },
+  {
+    "ID": 20,
+    "Name": "高能权益",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_01.Icon_MonthCard_Benefits_01",
+    "CurrencyType": 1,
+    "Price": 1.49,
+    "Region": 1,
+    "Shelfs": [
+      101
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300201",
+    "SteamGainResourceID": 0,
+    "SteamGainAmount": 0
+  },
+  {
+    "ID": 21,
+    "Name": "权限刷新权益",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_05.Icon_MonthCard_Benefits_05",
+    "CurrencyType": 1,
+    "Price": 1.49,
+    "Region": 1,
+    "Shelfs": [
+      101
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300204",
+    "SteamGainResourceID": 0,
+    "SteamGainAmount": 0
+  },
+  {
+    "ID": 22,
+    "Name": "复活权益",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_06.Icon_MonthCard_Benefits_06",
+    "CurrencyType": 1,
+    "Price": 1.49,
+    "Region": 1,
+    "Shelfs": [
+      101
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300205",
+    "SteamGainResourceID": 0,
+    "SteamGainAmount": 0
+  },
+  {
+    "ID": 23,
+    "Name": "源码权益",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_04.Icon_MonthCard_Benefits_04",
+    "CurrencyType": 1,
+    "Price": 2.99,
+    "Region": 1,
+    "Shelfs": [
+      101
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300203",
+    "SteamGainResourceID": 0,
+    "SteamGainAmount": 0
+  },
+  {
+    "ID": 24,
+    "Name": "熟练度权益",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_04.Icon_MonthCard_Benefits_04",
+    "CurrencyType": 1,
+    "Price": 2.99,
+    "Region": 1,
+    "Shelfs": [
+      101
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300206",
+    "SteamGainResourceID": 0,
+    "SteamGainAmount": 0
+  },
+  {
+    "ID": 25,
+    "Name": "赛季道具权益",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_02.Icon_MonthCard_Benefits_02",
+    "CurrencyType": 1,
+    "Price": 2.99,
+    "Region": 1,
+    "Shelfs": [
+      101
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300207",
+    "SteamGainResourceID": 0,
+    "SteamGainAmount": 0
+  },
+  {
+    "ID": 26,
+    "Name": "权益组合包 ",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/MonthCard/Frames/Icon_MonthCard_Benefits_07.Icon_MonthCard_Benefits_07",
+    "CurrencyType": 1,
+    "Price": 5.69,
+    "Region": 1,
+    "Shelfs": [
+      101
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300208",
+    "SteamGainResourceID": 0,
+    "SteamGainAmount": 0
+  },
+  {
+    "ID": 27,
+    "Name": "超载通行证高级解锁道具",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "CurrencyType": 0,
+    "Price": 68,
+    "Region": 0,
+    "Shelfs": [
+      104
+    ],
+    "IsShow": false,
+    "MidasGoodsID": "300301",
+    "SteamGainResourceID": 300301,
+    "SteamGainAmount": 1
+  },
+  {
+    "ID": 28,
+    "Name": "超载通行证典藏解锁道具",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "CurrencyType": 0,
+    "Price": 128,
+    "Region": 0,
+    "Shelfs": [
+      104
+    ],
+    "IsShow": false,
+    "MidasGoodsID": "300302",
+    "SteamGainResourceID": 300302,
+    "SteamGainAmount": 1
+  },
+  {
+    "ID": 29,
+    "Name": "超载通行证升级解锁道具",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "CurrencyType": 0,
+    "Price": 60,
+    "Region": 0,
+    "Shelfs": [
+      104
+    ],
+    "IsShow": false,
+    "MidasGoodsID": "300303",
+    "SteamGainResourceID": 300303,
+    "SteamGainAmount": 1
+  },
+  {
+    "ID": 30,
+    "Name": "原爆点通行证高级解锁道具",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "CurrencyType": 0,
+    "Price": 68,
+    "Region": 0,
+    "Shelfs": [
+      104
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300304",
+    "SteamGainResourceID": 300304,
+    "SteamGainAmount": 1
+  },
+  {
+    "ID": 31,
+    "Name": "原爆点通行证典藏解锁道具",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "CurrencyType": 0,
+    "Price": 168,
+    "Region": 0,
+    "Shelfs": [
+      104
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300305",
+    "SteamGainResourceID": 300305,
+    "SteamGainAmount": 1
+  },
+  {
+    "ID": 32,
+    "Name": "原爆点通行证升级道具",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "CurrencyType": 0,
+    "Price": 100,
+    "Region": 0,
+    "Shelfs": [
+      104
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300306",
+    "SteamGainResourceID": 300306,
+    "SteamGainAmount": 1
+  },
+  {
+    "ID": 33,
+    "Name": "原爆点通行证高级解锁道具",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "CurrencyType": 1,
+    "Price": 9.99,
+    "Region": 1,
+    "Shelfs": [
+      104
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300304",
+    "SteamGainResourceID": 0,
+    "SteamGainAmount": 0
+  },
+  {
+    "ID": 34,
+    "Name": "原爆点通行证典藏解锁道具",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "CurrencyType": 1,
+    "Price": 24.99,
+    "Region": 1,
+    "Shelfs": [
+      104
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300305",
+    "SteamGainResourceID": 0,
+    "SteamGainAmount": 0
+  },
+  {
+    "ID": 35,
+    "Name": "原爆点通行证升级道具",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Puzzle/Frames/Icon_PuzzleMaterial_06.Icon_PuzzleMaterial_06",
+    "CurrencyType": 1,
+    "Price": 15,
+    "Region": 1,
+    "Shelfs": [
+      104
+    ],
+    "IsShow": true,
+    "MidasGoodsID": "300306",
+    "SteamGainResourceID": 0,
+    "SteamGainAmount": 0
+  }
+]

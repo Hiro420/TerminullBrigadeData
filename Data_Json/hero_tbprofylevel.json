@@ -1,0 +1,92 @@
+[
+  {
+    "Level": 1,
+    "Name": "初入矩阵",
+    "IconPath": "",
+    "HeadFrameID": 0,
+    "HeadFrameName": "",
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "Exp": 0
+  },
+  {
+    "Level": 2,
+    "Name": "小试身手",
+    "IconPath": "",
+    "HeadFrameID": 0,
+    "HeadFrameName": "",
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "Exp": 700
+  },
+  {
+    "Level": 3,
+    "Name": "渐入佳境",
+    "IconPath": "",
+    "HeadFrameID": 0,
+    "HeadFrameName": "",
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "Exp": 2100
+  },
+  {
+    "Level": 4,
+    "Name": "熟练高玩",
+    "IconPath": "",
+    "HeadFrameID": 0,
+    "HeadFrameName": "",
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "Exp": 3900
+  },
+  {
+    "Level": 5,
+    "Name": "小有成就",
+    "IconPath": "",
+    "HeadFrameID": 0,
+    "HeadFrameName": "",
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "Exp": 6200
+  },
+  {
+    "Level": 6,
+    "Name": "精湛专家",
+    "IconPath": "",
+    "HeadFrameID": 0,
+    "HeadFrameName": "",
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "Exp": 8400
+  },
+  {
+    "Level": 7,
+    "Name": "矩阵漫客",
+    "IconPath": "",
+    "HeadFrameID": 0,
+    "HeadFrameName": "",
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "Exp": 11200
+  },
+  {
+    "Level": 8,
+    "Name": "矩阵达人",
+    "IconPath": "",
+    "HeadFrameID": 0,
+    "HeadFrameName": "",
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "Exp": 14700
+  },
+  {
+    "Level": 9,
+    "Name": "奇迹骇客",
+    "IconPath": "",
+    "HeadFrameID": 0,
+    "HeadFrameName": "",
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "Exp": 18200
+  },
+  {
+    "Level": 10,
+    "Name": "传奇玩家",
+    "IconPath": "",
+    "HeadFrameID": 0,
+    "HeadFrameName": "",
+    "HeadFrameIconPath": "/Game/Rouge/UI/Atlas/Proficiency/Frames/Icon_Proficiency01_01.Icon_Proficiency01_01",
+    "Exp": 21700
+  }
+]

@@ -4,12 +4,15 @@ local EChoosePanelTitleStatus = {
   BattleLagacy = "BattleLagacy",
   Other = "Other"
 }
+
 function WBP_GenericModifyChooseSell_C:OnPreload()
   self.Overridden.OnPreload(self)
 end
+
 function WBP_GenericModifyChooseSell_C:OnPreloadReset()
   self.Overridden.OnPreloadReset(self)
 end
+
 function WBP_GenericModifyChooseSell_C:OnCreate()
   self.Overridden.OnCreate(self)
   self.EscActionName = "PauseGame"
@@ -17,6 +20,7 @@ function WBP_GenericModifyChooseSell_C:OnCreate()
   self.CKeyEvent = "BattleRoleInfoShortcut"
   self.SwitchBag = "SwitchBag"
 end
+
 function WBP_GenericModifyChooseSell_C:FocusInput()
   self.Overridden.FocusInput(self)
   SetInputIgnore(self:GetOwningPlayerPawn(), true)
@@ -48,6 +52,7 @@ function WBP_GenericModifyChooseSell_C:FocusInput()
   end
   self.Dimond:RemoveEvent()
 end
+
 function WBP_GenericModifyChooseSell_C:UpdateCurrencyNum()
   self:PlayAnimation(self.Ani_Currency_add)
   local BagComp = self:GetOwningPlayer():GetComponentByClass(UE.URGBagComponent:StaticClass())
@@ -58,6 +63,7 @@ function WBP_GenericModifyChooseSell_C:UpdateCurrencyNum()
   self.AddCurrency:SetText("+" .. tostring(AddNumber))
   self.CurrencyNum = tonumber(BagComp:GetItemByConfigId(self.Dimond.ItemId).Stack)
 end
+
 function WBP_GenericModifyChooseSell_C:OnDisplay()
   self.Overridden.OnDisplay(self)
   self.bCanShowBattleRoleInfo = true
@@ -73,11 +79,13 @@ function WBP_GenericModifyChooseSell_C:OnDisplay()
   EventSystem.AddListener(self, EventDef.GenericModify.OnFinishInteract, WBP_GenericModifyChooseSell_C.OnFinishChoosePanel)
   EventSystem.AddListener(self, EventDef.GenericModify.OnCancelInteract, WBP_GenericModifyChooseSell_C.OnCancelChoosePanel)
 end
+
 function WBP_GenericModifyChooseSell_C:CloseChoosePanel()
   LogicGenericModify:CloseGenericModifyChoosePanel(self.Target)
   self.WBP_InteractTipWidget_109.OnMainButtonClicked:Remove(self, self.ListenForEscInputAction)
   self.WBP_InteractTipWidget.OnMainButtonClicked:Remove(self, self.OnSwitchBag)
 end
+
 function WBP_GenericModifyChooseSell_C:ListenForEscInputAction()
   if self:CanExitPanel() then
     self:CloseChoosePanel()
@@ -88,6 +96,7 @@ function WBP_GenericModifyChooseSell_C:ListenForEscInputAction()
     end
   end
 end
+
 function WBP_GenericModifyChooseSell_C:OnTabKeyEvent()
   if not self:IsAnimationPlaying(self.ani_33_modchoosepanel_in) and not self:IsAnimationPlaying(self.ani_33_modchoosepanel_out) and not self.ModChoose and SwitchUI(self.MainPanelClass, true) then
     local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGUIManager:StaticClass())
@@ -99,6 +108,7 @@ function WBP_GenericModifyChooseSell_C:OnTabKeyEvent()
     end
   end
 end
+
 function WBP_GenericModifyChooseSell_C:OnCKeyEvent()
   local TutorialLevelSubSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGTutorialLevelSystem:StaticClass())
   if TutorialLevelSubSystem and TutorialLevelSubSystem:IsFreshPlayer() then
@@ -119,6 +129,7 @@ function WBP_GenericModifyChooseSell_C:OnCKeyEvent()
     end
   end
 end
+
 function WBP_GenericModifyChooseSell_C:OnSwitchBag()
   if RGUIMgr:IsShown(UIConfig.WBP_MainPanel_C.UIName) then
     RGUIMgr:HideUI(UIConfig.WBP_MainPanel_C.UIName)
@@ -130,6 +141,7 @@ function WBP_GenericModifyChooseSell_C:OnSwitchBag()
     end
   end
 end
+
 function WBP_GenericModifyChooseSell_C:InitGenericModifyChoosePanel(InteractComp, Target)
   self.Target = Target
   self.IsInShop = false
@@ -152,6 +164,7 @@ function WBP_GenericModifyChooseSell_C:InitGenericModifyChoosePanel(InteractComp
   self:PlayAnimation(self.ani_GenericModifyChoosePanel_in)
   self.WBP_GenericModifyChoosePanel_sell:PlayAnimation(self.WBP_GenericModifyChoosePanel_sell.ani_GenericModifyChoosePanel_in)
 end
+
 function WBP_GenericModifyChooseSell_C:InitTitle(Title, Color, ShadowColor, Sprite)
   local Font = self.RGTextGenericModifyGroupNameShadow.Font
   Font.OutlineSettings.OutlineColor = ShadowColor
@@ -163,9 +176,11 @@ function WBP_GenericModifyChooseSell_C:InitTitle(Title, Color, ShadowColor, Spri
   SetImageBrushBySoftObject(self.URGImageIcon_1, Sprite)
   UpdateVisibility(self.CanvasPanelGroupName, true)
 end
+
 function WBP_GenericModifyChooseSell_C:FinishInteractGenericModify()
   LogicGenericModify:FinishInteractGenericModify(self.Target)
 end
+
 function WBP_GenericModifyChooseSell_C:UpdatePanel(PreviewModifyListParam)
   if PreviewModifyListParam then
     self.WBP_GenericModifyChooseItemList:UpdatePanel(PreviewModifyListParam, self.InteractComp, self.HoverFunc, self)
@@ -176,6 +191,7 @@ function WBP_GenericModifyChooseSell_C:UpdatePanel(PreviewModifyListParam)
     UpdateVisibility(self.RGCoolDownTextBlock_91, self.InteractComp.PreviewGenericModifyAry == nil or 0 == self.InteractComp.PreviewGenericModifyAry:Length())
   end
 end
+
 function WBP_GenericModifyChooseSell_C:CanExitPanel()
   if self.IsInShop then
     return false
@@ -185,6 +201,7 @@ function WBP_GenericModifyChooseSell_C:CanExitPanel()
     return true
   end
 end
+
 function WBP_GenericModifyChooseSell_C:UpdateChoosePanel(RGGenericModifyParam)
   if self.IsInShop then
     self:PlayAnimation(self.ani_GenericModifyChoosePanel_out, 0, 1, UE.EUMGSequencePlayMode.Forward, 2)
@@ -198,12 +215,14 @@ function WBP_GenericModifyChooseSell_C:UpdateChoosePanel(RGGenericModifyParam)
     self.WBP_GenericModifyChooseItemList:FadeOut(RGGenericModifyParam.ModifyId, GroupId)
   end
 end
+
 function WBP_GenericModifyChooseSell_C:SelectModifyId(ModifyId)
   print("WBP_GenericModifyChooseSell_C:SelectModifyId", ModifyId, self.ModifyId)
   if not self.ModifyId then
     self.ModifyId = ModifyId
   end
 end
+
 function WBP_GenericModifyChooseSell_C:OnCancelChoosePanel(Target, Instigator)
   print("WBP_GenericModifyChooseSell_C:OnCancelChoosePanel")
   if Target ~= self.Target then
@@ -212,6 +231,7 @@ function WBP_GenericModifyChooseSell_C:OnCancelChoosePanel(Target, Instigator)
   print("WBP_GenericModifyChooseSell_C:OnCancelChoosePanel CloseChoosePanel")
   self:CloseChoosePanel()
 end
+
 function WBP_GenericModifyChooseSell_C:OnFinishChoosePanel(Target, Instigator)
   print("WBP_GenericModifyChooseSell_C:OnFinishChoosePanel", self.IsInShop)
   if self.IsInShop then
@@ -234,6 +254,7 @@ function WBP_GenericModifyChooseSell_C:OnFinishChoosePanel(Target, Instigator)
     self:CloseChoosePanel()
   end
 end
+
 function WBP_GenericModifyChooseSell_C:OnAnimationFinished(Animation)
   if Animation == self.ani_GenericModifyChoosePanel_out then
     if self.ModifyChooseType == ModifyChooseType.BattleLagacy then
@@ -246,11 +267,14 @@ function WBP_GenericModifyChooseSell_C:OnAnimationFinished(Animation)
     self.Dimond:UpdateCurrencyNum()
   end
 end
+
 function WBP_GenericModifyChooseSell_C:HoverFunc(Slot, bIsHover)
 end
+
 function WBP_GenericModifyChooseSell_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_GenericModifyChooseSell_C:UnfocusInput()
   self.Overridden.UnfocusInput(self)
   SetInputIgnore(self:GetOwningPlayerPawn(), false)
@@ -267,6 +291,7 @@ function WBP_GenericModifyChooseSell_C:UnfocusInput()
     StopListeningForInputAction(self, self.SwitchBag, UE.EInputEvent.IE_Pressed)
   end
 end
+
 function WBP_GenericModifyChooseSell_C:OnUnDisplay()
   self.Overridden.OnUnDisplay(self, true)
   self.WBP_GenericModifyChooseItemList:OnUnDisplay()
@@ -282,10 +307,12 @@ function WBP_GenericModifyChooseSell_C:OnUnDisplay()
   self:Reset()
   self:StopAllAnimations()
 end
+
 function WBP_GenericModifyChooseSell_C:OnClose()
   self.Overridden.OnClose(self)
   self:Reset()
 end
+
 function WBP_GenericModifyChooseSell_C:Reset()
   if self.InteractComp then
     if self.InteractComp.OnPreviewGenericModifyRep then
@@ -299,7 +326,9 @@ function WBP_GenericModifyChooseSell_C:Reset()
   self.InteractComp = nil
   self.Target = nil
 end
+
 function WBP_GenericModifyChooseSell_C:Destruct()
   self:Reset()
 end
+
 return WBP_GenericModifyChooseSell_C

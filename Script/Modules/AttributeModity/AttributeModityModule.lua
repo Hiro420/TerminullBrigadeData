@@ -1,7 +1,9 @@
 local AttributeModityModule = ModuleManager:Get("AttributeModityModule") or LuaClass()
 local AttributeModityData = require("Modules.AttributeModity.AttributeModityData")
+
 function AttributeModityModule:Ctor()
 end
+
 function AttributeModityModule:OnInit()
   if UE.RGUtil and not UE.RGUtil.IsEditor() and UE.RGUtil.IsDedicatedServer() then
     return
@@ -17,6 +19,7 @@ function AttributeModityModule:OnInit()
   ListenObjectMessage(nil, GMP.MSG_Level_ItemShare_BagFull, GameInstance, AttributeModityModule.BindOnBagFull)
   ListenObjectMessage(nil, GMP.MSG_Level_LevelEnd, GameInstance, AttributeModityModule.BindOnLevelEnd)
 end
+
 function AttributeModityModule:OnShutdown()
   if UE.RGUtil and not UE.RGUtil.IsEditor() and UE.RGUtil.IsDedicatedServer() then
     return
@@ -32,6 +35,7 @@ function AttributeModityModule:OnShutdown()
   UnListenObjectMessage(GMP.MSG_Level_ItemShare_BagFull)
   UnListenObjectMessage(GMP.MSG_Level_LevelEnd)
 end
+
 function AttributeModityModule.BindOnBagFull(RequestData)
   print("AttributeModityModule.BindOnBagFull")
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
@@ -43,6 +47,7 @@ function AttributeModityModule.BindOnBagFull(RequestData)
     AttributeModityData:RemoveRequesting(RequestData.TargetUserId, RequestData.Id)
   end
 end
+
 function AttributeModityModule.BindOnHasInProgressRequest(RequestData)
   print("AttributeModityModule.BindOnHasInProgressRequest")
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
@@ -51,6 +56,7 @@ function AttributeModityModule.BindOnHasInProgressRequest(RequestData)
   end
   WaveWindowManager:ShowWaveWindow(1212)
 end
+
 function AttributeModityModule.BindOnHadRequest(RequestData)
   print("AttributeModityModule.BindOnHadRequest")
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
@@ -62,6 +68,7 @@ function AttributeModityModule.BindOnHadRequest(RequestData)
     AttributeModityData:RemoveRequesting(RequestData.TargetUserId, RequestData.Id)
   end
 end
+
 function AttributeModityModule.BindOnRequest(RequestData)
   print("AttributeModityModule.BindOnRequest")
   if RequestData.TargetUserId == tonumber(DataMgr.GetUserId()) then
@@ -91,6 +98,7 @@ function AttributeModityModule.BindOnRequest(RequestData)
   }
   ShowWaveWindow(1216, Param)
 end
+
 function AttributeModityModule.BindOnRefuseRequest(RequestData)
   print("AttributeModityModule.BindOnRefuseRequest")
   local RGTeamSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTeamSubsystem:StaticClass())
@@ -121,6 +129,7 @@ function AttributeModityModule.BindOnRefuseRequest(RequestData)
     AttributeModityData:AddRefused(RequestData.TargetUserId, RequestData.Id)
   end
 end
+
 function AttributeModityModule.BindOnBroadcastConfirmRequest(RequestData)
   print("AttributeModityModule.BindOnBroadcastConfirmRequest")
   local RGTeamSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTeamSubsystem:StaticClass())
@@ -158,6 +167,7 @@ function AttributeModityModule.BindOnBroadcastConfirmRequest(RequestData)
     PlayVoice("Voice.Attributemodify.Agree", UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0))
   end
 end
+
 function AttributeModityModule.BindOnNotifyNoItem(RequestData)
   print("AttributeModityModule.BindOnNotifyNoItem")
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
@@ -166,6 +176,7 @@ function AttributeModityModule.BindOnNotifyNoItem(RequestData)
   end
   WaveWindowManager:ShowWaveWindow(1214)
 end
+
 function AttributeModityModule.BindOnAlreadyHasItem(RequestData)
   print("AttributeModityModule.BindOnAlreadyHasItem")
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
@@ -177,10 +188,12 @@ function AttributeModityModule.BindOnAlreadyHasItem(RequestData)
     AttributeModityData:RemoveRequesting(RequestData.FromUserId, RequestData.Id)
   end
 end
+
 function AttributeModityModule.BindOnLevelEnd()
   print("AttributeModityModule.BindOnLevelEnd")
   AttributeModityData:Reset()
 end
+
 function AttributeModityModule.GetPlayerStateByUserId(UserId)
   local GS = UE.UGameplayStatics.GetGameState(self)
   if not GS then
@@ -193,6 +206,7 @@ function AttributeModityModule.GetPlayerStateByUserId(UserId)
   end
   return nil
 end
+
 function AttributeModityModule.GetPlayerControllerByUserId(UserId)
   local PC
   local PS = AttributeModityModule.GetPlayerStateByUserId(UserId)
@@ -205,4 +219,5 @@ function AttributeModityModule.GetPlayerControllerByUserId(UserId)
   end
   return PC
 end
+
 return AttributeModityModule

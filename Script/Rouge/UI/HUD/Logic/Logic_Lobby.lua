@@ -23,6 +23,7 @@ local BeginnerGuideHandler = require("Protocol.BeginnerGuide.BeginnerGuideHandle
 local BeginnerGuideData = require("Modules.Beginner.BeginnerGuideData")
 local PuzzleData = require("Modules.Puzzle.PuzzleData")
 local LoginHandler = require("Protocol.LoginHandler")
+local LoginData = require("Modules.Login.LoginData")
 local DealWithPlayerPortraitTable = function()
   if not TableNames.TBPortrait then
     return
@@ -70,6 +71,7 @@ local DealWithLobbyPanelLabelTable = function()
     end
   end
 end
+
 function LogicLobby.Init()
   if LogicLobby.IsInit then
     return
@@ -105,6 +107,7 @@ function LogicLobby.Init()
   DealWithLobbyPanelLabelTable()
   LogicLobby.InitLobbySaveGame()
 end
+
 function LogicLobby.InitLobbySaveGame(...)
   if not UE.UGameplayStatics.DoesSaveGameExist(LobbySaveGameName, 0) then
     local SaveGameObject = UE.UGameplayStatics.CreateSaveGameObject(UE.ULobbySaveGame:StaticClass())
@@ -113,52 +116,68 @@ function LogicLobby.InitLobbySaveGame(...)
     end
   end
 end
+
 function LogicLobby.SetIsNeedPlayAfterBeginnerGuidanceMovie(InIsNeed)
   LogicLobby.IsNeedPlayAfterBeginnerGuidanceMovie = InIsNeed
 end
+
 function LogicLobby.GetLobbySaveGame(...)
   local SaveGame = UE.UGameplayStatics.LoadGameFromSlot(LobbySaveGameName, 0)
   return SaveGame
 end
+
 function LogicLobby.SaveLobbySaveGame(LobbySaveGame)
   UE.UGameplayStatics.SaveGameToSlot(LobbySaveGame, LobbySaveGameName, 0)
 end
+
 function LogicLobby.GetPlayerPortraitTableRowInfo(PlayerPortraitId)
   return LogicLobby.PlayerPortraitInfoList[tonumber(PlayerPortraitId)]
 end
+
 function LogicLobby.GetLabelParentChildTreeStruct()
   return LogicLobby.LabelParentChildTreeStruct
 end
+
 function LogicLobby.GetDefaultSelectedLabelName()
   return LogicLobby.DefaultSelectedLabelName
 end
+
 function LogicLobby.SetCurSelectedLabelName(InLabelName)
   LogicLobby.CurSelectedLabelName = InLabelName
 end
+
 function LogicLobby.GetCurSelectedLabelName()
   return LogicLobby.CurSelectedLabelName
 end
+
 function LogicLobby.SetPendingSelectedLabelTagName(InLabelTagName)
   LogicLobby.PendingSelectedLabelName = InLabelTagName
 end
+
 function LogicLobby.GetPendingSelectedLabelTagName()
   return LogicLobby.PendingSelectedLabelName
 end
+
 function LogicLobby.SetPendingSelectedRowName(RowName)
   LogicLobby.PendingSelectedRowName = RowName
 end
+
 function LogicLobby.GetPendingSelectedRowName()
   return LogicLobby.PendingSelectedRowName
 end
+
 function LogicLobby.SetPendingParamList(ParamList)
   LogicLobby.PendingParamList = ParamList
 end
+
 function LogicLobby.GetPendingParamList()
   return LogicLobby.PendingParamList
 end
+
 function LogicLobby.GetLabelTagNameByUIName(UIName)
   return LogicLobby.UINameToLabelTagNameList[UIName]
 end
+
 function LogicLobby.GetLobbyLabelIsOpen(LobbyPanelTagName, showCloseTips)
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr then
@@ -214,6 +233,7 @@ function LogicLobby.GetLobbyLabelIsOpen(LobbyPanelTagName, showCloseTips)
   end
   return true
 end
+
 function LogicLobby.ChangeLobbyPanelLabelSelected(LobbyPanelTagName, CommonLinkRow, ParamList)
   if LogicLobby.GetLobbyLabelIsOpen(LobbyPanelTagName, true) then
     local CurShowLabelName = LogicLobby.GetCurSelectedLabelName()
@@ -236,6 +256,7 @@ function LogicLobby.ChangeLobbyPanelLabelSelected(LobbyPanelTagName, CommonLinkR
     EventSystem.Invoke(EventDef.Lobby.OnLobbyLabelSelected, LobbyPanelTagName, CommonLinkRow)
   end
 end
+
 function LogicLobby.InitCameraStateMachine()
   local Class = UE.UClass.Load("/Game/Rouge/Gameplay/Lobby/BP_LobbyCameraState.BP_LobbyCameraState_C")
   LogicLobby.CameraStateMachineInstance = UE.USMBlueprintUtils.CreateStateMachineInstance(Class, GameInstance, true)
@@ -245,12 +266,15 @@ function LogicLobby.InitCameraStateMachine()
   end
   return LogicLobby.CameraStateMachineInstance
 end
+
 function LogicLobby.GetCanMove3DLobby()
   return LogicLobby.CanMove3DLobby
 end
+
 function LogicLobby.SetCanMove3DLobby(CanMove)
   LogicLobby.CanMove3DLobby = CanMove
 end
+
 function LogicLobby.BindOnConnectBattleServer(Json)
   if LogicAutoRobot and LogicAutoRobot.GetIsAutoBot() then
     return
@@ -309,12 +333,14 @@ function LogicLobby.BindOnConnectBattleServer(Json)
     end
   end
 end
+
 function LogicLobby.BindGlobalAnnouncement(Json)
   local JsonTable = rapidjson.decode(Json)
   ShowWaveWindow(15029, {
     JsonTable.announcement
   })
 end
+
 function LogicLobby.CheckReConBattle()
   HttpCommunication.RequestByGet("team/getmyteamdata", {
     GameInstance,
@@ -343,6 +369,7 @@ function LogicLobby.CheckReConBattle()
     end
   })
 end
+
 function LogicLobby.GoBackBattle(Target, JsonResponse)
   if LogicTeam.CurTeamState ~= LogicTeam.TeamState.Battle then
     return
@@ -373,6 +400,7 @@ function LogicLobby.GoBackBattle(Target, JsonResponse)
     end
   })
 end
+
 function LogicLobby.GiveUpBattle(Target, JsonResponse)
   if LogicTeam.CurTeamState ~= LogicTeam.TeamState.Battle then
     return
@@ -391,9 +419,11 @@ function LogicLobby.GiveUpBattle(Target, JsonResponse)
     end
   })
 end
+
 function LogicLobby.RequestAllGameModeFloorDataToServer()
   LogicLobby.RequestGetGameFloorDataToServer()
 end
+
 function LogicLobby.RequestGetGameFloorDataToServer(Callback)
   local url = "playergrowth/gamefloor/rolesgamefloordata"
   HttpCommunication.Request(url, {
@@ -429,6 +459,7 @@ function LogicLobby.RequestGetGameFloorDataToServer(Callback)
     end
   })
 end
+
 function LogicLobby.SaveGameFloorData(ModeId, ModeData)
   local LobbySaveGame = LogicLobby.GetLobbySaveGame()
   if LobbySaveGame then
@@ -436,6 +467,7 @@ function LogicLobby.SaveGameFloorData(ModeId, ModeData)
     UE.UGameplayStatics.SaveGameToSlot(LobbySaveGame, LobbySaveGameName, 0)
   end
 end
+
 function LogicLobby.BindOnUpdateMyTeamInfo()
   print("LogicLobby.BindOnUpdateMyTeamInfo")
   if LogicLobby.IsRequestJoinGameFromLogin then
@@ -461,12 +493,14 @@ function LogicLobby.BindOnUpdateMyTeamInfo()
     LogicTeam.RequestJoinGameToServer()
   end
 end
+
 function LogicLobby.BindOnUpdateResourceInfoByType(Type)
   if Type == TableEnums.ENUMResourceType.HERO then
     print("LogicLobby.BindOnUpdateResourceInfoByType")
     LogicRole.RequestMyHeroInfoToServer()
   end
 end
+
 function LogicLobby.GetCombatPowerCoefficcent(WorldId, Floor)
   local CurCombatPower = 0
   local CommonTalentInfo = DataMgr.GetCommonTalentInfos()
@@ -518,10 +552,12 @@ function LogicLobby.GetCombatPowerCoefficcent(WorldId, Floor)
     return Coefficient
   end
 end
+
 function LogicLobby.GetHeroIndex()
   local HeroInfo = DataMgr.GetMyHeroInfo()
   return HeroInfo.equipHero and HeroInfo.equipHero or 0
 end
+
 function LogicLobby.SetVersionCosCheckTimer()
   local TimerHandle = UE.UKismetSystemLibrary.K2_SetTimerDelegate({
     GameInstance,
@@ -529,6 +565,7 @@ function LogicLobby.SetVersionCosCheckTimer()
   }, 30.0, true)
   return TimerHandle
 end
+
 function LogicLobby.CheckCosVersion()
   local Hash = 0
   local FilePath = UE.UKismetSystemLibrary.GetProjectSavedDirectory() .. "PersistentDownloadDir/Script/Tables/VersionMd5.txt"
@@ -562,10 +599,11 @@ function LogicLobby.CheckCosVersion()
     })
   end
 end
+
 function LogicLobby.HandleOnLIWebViewResult(INTLWebViewResult)
   print("LogicLobby.HandleOnLIWebViewResult", INTLWebViewResult.MsgType, INTLWebViewResult.MsgJsonData)
   local JsonData = rapidjson.decode(INTLWebViewResult.MsgJsonData)
-  if JsonData.type == "request_delete_account_success" then
+  if JsonData and JsonData.type == "request_delete_account_success" then
     print("LogicLobby.HandleOnLIWebViewResult \229\136\160\233\153\164\232\180\166\229\143\183\231\148\179\232\175\183\230\136\144\229\138\159, 5\231\167\146\229\144\142\233\128\128\229\135\186\230\184\184\230\136\143")
     UE.UKismetSystemLibrary.K2_SetTimerDelegate({
       GameInstance,
@@ -575,19 +613,28 @@ function LogicLobby.HandleOnLIWebViewResult(INTLWebViewResult)
           PC:LeaveFromMatch()
         end
         LoginHandler.RequestLogoutToServer()
+        if UE.URGPlatformFunctionLibrary.IsLIPassEnabled() and UE.URGBlueprintLibrary.IsOfficialPackage() then
+          local SailSDKSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGSailSDKSubsystem:StaticClass())
+          if SailSDKSubsystem then
+            print("LogicLobby.HandleOnLIWebViewResult Notify SailSDKSubsystem to quit game")
+            SailSDKSubsystem:NotifyPlatformExit()
+          end
+        end
         UE.UKismetSystemLibrary.QuitGame(GameInstance, UE.UGameplayStatics.GetPlayerController(GameInstance, 0), UE.EQuitPreference.Quit, false)
       end
     }, 5.0, false)
   end
 end
+
 function LogicLobby.DeleteAccount()
   if UE.URGPlatformFunctionLibrary.IsLIPassEnabled() then
     local LIPassSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.ULIPassSubsystem:StaticClass())
     if LIPassSystem then
-      LIPassSystem:DeleteAccount(DataMgr.GetPlayerNickNameById(DataMgr.GetUserId()))
+      LIPassSystem:DeleteAccount(DataMgr.GetPlayerNickNameById(DataMgr.GetUserId()), tonumber(LoginData:GetLobbyServerId()))
     end
   end
 end
+
 function LogicLobby.Clear()
   LogicLobby.UIWidget = nil
   LogicLobby.AllActorList = {}
@@ -611,9 +658,11 @@ function LogicLobby.Clear()
   EventSystem.RemoveListener(EventDef.WSMessage.GlobalAnnouncement, LogicLobby.BindGlobalAnnouncement)
   EventSystem.RemoveListener(EventDef.Lobby.UpdateResourceInfoByType, LogicLobby.BindOnUpdateResourceInfoByType)
 end
+
 function LogicLobby.GetVersionID()
   return GetVersionID()
 end
+
 function LogicLobby.GetBrunchType()
   local VersionSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.URGVersionSubsystem:StaticClass())
   if not VersionSubsystem then
@@ -621,8 +670,10 @@ function LogicLobby.GetBrunchType()
   end
   return VersionSubsystem.Branch ~= "" and VersionSubsystem.Branch or "trunk"
 end
+
 function LogicLobby:InitWidgetBindEvent()
 end
+
 function LogicLobby:ChangeLobbyBGVis(IsHide)
   local RoleBGList = UE.UGameplayStatics.GetAllActorsWithTag(GameInstance, "RoleBG", nil)
   local RoleBG
@@ -643,6 +694,7 @@ function LogicLobby:ChangeLobbyBGVis(IsHide)
     LobbyBG:SetActorHiddenInGame(IsHide)
   end
 end
+
 function LogicLobby.PlayInStandalone(Options)
   HttpCommunication.RequestByGet("team/getplayerbattledata", {
     GameInstance,
@@ -660,6 +712,7 @@ function LogicLobby.PlayInStandalone(Options)
     end
   })
 end
+
 function LogicLobby.OpenLobbyLevel()
   if not LogicAutoRobot or not LogicAutoRobot.GetIsAutoBot() then
     LogicLobby.OpenLevelByName("Lobby")
@@ -667,6 +720,7 @@ function LogicLobby.OpenLobbyLevel()
     LogicLobby.OpenLevelByName("Login")
   end
 end
+
 function LogicLobby.OpenLevelByName(LevelName, Options)
   Options = Options or ""
   DataMgr.SetPreSceneStatus(GetCurSceneStatus())
@@ -684,6 +738,7 @@ function LogicLobby.OpenLevelByName(LevelName, Options)
     RGGameUserSettings:SetForceDisableFSR2(false)
   end
 end
+
 function LogicLobby.CheckNeedOpenBeginGuidanceLevel()
   print("LogicLobby.CheckNeedOpenBeginGuidanceLevel")
   BeginnerGuideHandler.RequestGetFinishedGuideListFromServer({
@@ -727,6 +782,7 @@ function LogicLobby.CheckNeedOpenBeginGuidanceLevel()
     end
   })
 end
+
 function LogicLobby.OpenBeginnerGuidanceLevel()
   print("LogicLobby.OpenBeginnerGuidanceLevel")
   local RGTutorialLevelSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTutorialLevelSystem:StaticClass())
@@ -742,6 +798,7 @@ function LogicLobby.OpenBeginnerGuidanceLevel()
   RGTutorialLevelSystem:StartLevel()
   UE.URGGameplayLibrary.TriggerOnClientStartBattle(GameInstance, "Local")
 end
+
 function LogicLobby.RequestGetRoleListInfoToServer(RoleList, SuccessFuncCallback)
   DataMgr.GetOrQueryPlayerInfo(RoleList, true, function(PlayerCacheInfoList)
     local PlayerInfoList = DataMgr.CacheInfosToPlayerInfoList(PlayerCacheInfoList)
@@ -751,10 +808,12 @@ function LogicLobby.RequestGetRoleListInfoToServer(RoleList, SuccessFuncCallback
   end, function()
   end)
 end
+
 function LogicLobby.IsInLobbyLevel()
   local LevelName = UE.UGameplayStatics.GetCurrentLevelName(GameInstance, true)
   return "Lobby" == LevelName
 end
+
 function LogicLobby.ChangeLobbyMainModelVis(IsVis)
   local MaxTeamNum = 3
   local LobbySettings = UE.URGLobbySettings.GetSettings()
@@ -771,6 +830,7 @@ function LogicLobby.ChangeLobbyMainModelVis(IsVis)
     end
   end
 end
+
 function LogicLobby.ShowOrHideGround(IsShow)
   if UE.RGUtil.IsUObjectValid(LogicLobby.GroundLevel) then
     if LogicLobby.ShowGroundLevel ~= IsShow then
@@ -786,6 +846,7 @@ function LogicLobby.ShowOrHideGround(IsShow)
     end
   end
 end
+
 function LogicLobby.ShowOrHideDrawCardLevel(IsShow)
   if UE.RGUtil.IsUObjectValid(LogicLobby.DrawCardLevel) then
     if LogicLobby.DrawCardLevel.bShouldBeVisible ~= IsShow then
@@ -799,6 +860,7 @@ function LogicLobby.ShowOrHideDrawCardLevel(IsShow)
     end
   end
 end
+
 function LogicLobby.ChangeHeroSelectionModelVis(IsVis)
   local MaxTeamNum = 3
   local LobbySettings = UE.URGLobbySettings.GetSettings()
@@ -816,9 +878,11 @@ function LogicLobby.ChangeHeroSelectionModelVis(IsVis)
     OutActors[1].ChildActor:SetHiddenInGame(not IsVis)
   end
 end
+
 function LogicLobby.ChangeModeSelectionVideoState(IsPlay)
   LogicLobby.IsShowModeSelection = IsPlay
 end
+
 function LogicLobby.InitModeSelectionMaterialParamValue()
   local OutActors = UE.UGameplayStatics.GetAllActorsWithTag(GameInstance, "ModeSelectionScreenVideo"):ToTable()
   local TargetActor = OutActors[1]
@@ -838,6 +902,7 @@ function LogicLobby.InitModeSelectionMaterialParamValue()
     end
   end
 end
+
 function LogicLobby.ShowLobbyStreamLevelByName(Name)
   LogicLobby.HideAllLobbyStreamLevel(Name)
   local Result, RowInfo = GetRowData(DT.DT_LobbyStreamLevel, Name)
@@ -852,6 +917,7 @@ function LogicLobby.ShowLobbyStreamLevelByName(Name)
     TargetStreamLevel:SetShouldBeVisible(true)
   end
 end
+
 function LogicLobby.HideLobbyStreamLevelByName(Name)
   local Result, RowInfo = GetRowData(DT.DT_LobbyStreamLevel, Name)
   if not Result then
@@ -865,6 +931,7 @@ function LogicLobby.HideLobbyStreamLevelByName(Name)
     TargetStreamLevel:SetShouldBeVisible(false)
   end
 end
+
 function LogicLobby.HideAllLobbyStreamLevel(ExculdeName)
   local AllRowNames = GetAllRowNames(DT.DT_LobbyStreamLevel)
   local PathPart, FileNamePart, ExtensionPart = "", "", ""
@@ -881,6 +948,7 @@ function LogicLobby.HideAllLobbyStreamLevel(ExculdeName)
     end
   end
 end
+
 function LogicLobby.GetAppearanceActor(WorldContextObject)
   if not UE.RGUtil.IsUObjectValid(LogicLobby.AppearanceActor) then
     local AppearanceActorCls = UE.UClass.Load("/Game/Rouge/UI/Appearance/AppearanceActor/BP_Appearance.BP_Appearance_C")
@@ -891,6 +959,7 @@ function LogicLobby.GetAppearanceActor(WorldContextObject)
   end
   return LogicLobby.AppearanceActor
 end
+
 function LogicLobby.IsLIPassLogin()
   local DistChannel = DataMgr.GetDistributionChannel()
   return DistChannel == LogicLobby.DistributionChannelList.LIPass

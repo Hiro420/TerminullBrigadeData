@@ -21,6 +21,7 @@ local FindCharacterByUserId = function(InUserId)
   end
   return nil
 end
+
 function WBP_TeamInfoItem_C:Construct()
   ListenObjectMessage(nil, GMP.MSG_Level_OnTeamChange, self, self.OnTeamChange)
   local TeamVoiceSubSys = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTeamVoiceSubsystem:StaticClass())
@@ -35,11 +36,14 @@ function WBP_TeamInfoItem_C:Construct()
   end
   self.AllBuffInfos = {}
   self.AllBuffIds = {}
+  self.NeedInitMonthCard = true
 end
+
 function WBP_TeamInfoItem_C:OnTeamChange()
   self:UpdateTeamCaptainVis()
   self:RefreshOnlineStatus()
 end
+
 function WBP_TeamInfoItem_C:UpdateTeamCaptainVis()
   if not self:IsVisible() then
     return
@@ -53,6 +57,7 @@ function WBP_TeamInfoItem_C:UpdateTeamCaptainVis()
     self.Image_Leader:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function WBP_TeamInfoItem_C:InitInfo(PlayerInfo, TeamIndex, IsTeamRevivalMode)
   if IsValidObj(self.Character) then
     local BuffComp = self.Character:GetComponentByClass(UE.UBuffComponent:StaticClass())
@@ -108,7 +113,12 @@ function WBP_TeamInfoItem_C:InitInfo(PlayerInfo, TeamIndex, IsTeamRevivalMode)
       BuffComp.OnBuffChanged:Add(self, self.BindOnBuffChanged)
     end
   end
+  if self.NeedInitMonthCard then
+    self.WBP_MonthCardIcon:Show(tostring(self.PlayerInfo.roleid))
+    self.NeedInitMonthCard = false
+  end
 end
+
 function WBP_TeamInfoItem_C:RefreshOnlineStatus()
   if not self.PlayerInfo then
     self.OnlineInfo = nil
@@ -143,6 +153,7 @@ function WBP_TeamInfoItem_C:RefreshOnlineStatus()
     self:UpdateSpeakingStatus(false)
   end
 end
+
 function WBP_TeamInfoItem_C:BindOnCharacterDying(Character, CountDownTime)
   if Character == self.Character then
     UpdateVisibility(self.RGTextDyingNum, true)
@@ -153,6 +164,7 @@ function WBP_TeamInfoItem_C:BindOnCharacterDying(Character, CountDownTime)
     self.Txt_Name:SetColorAndOpacity(self.DyingNameColor)
   end
 end
+
 function WBP_TeamInfoItem_C:BindOnCharacterRescue(Character)
   if Character == self.Character then
     UpdateVisibility(self.RGTextDyingNum, false)
@@ -160,6 +172,7 @@ function WBP_TeamInfoItem_C:BindOnCharacterRescue(Character)
     self.Txt_Name:SetColorAndOpacity(self.NormalNameColor)
   end
 end
+
 function WBP_TeamInfoItem_C:BindOnBuffChanged(AddedBuff)
   local BuffDataSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.UBuffDataGISubsystem:StaticClass())
   if not BuffDataSubsystem then
@@ -181,11 +194,13 @@ function WBP_TeamInfoItem_C:BindOnBuffChanged(AddedBuff)
     self:RefreshBuffList()
   end
 end
+
 function WBP_TeamInfoItem_C:BindOnBuffRemoved(RemovedBuff)
   table.RemoveItem(self.AllBuffIds, RemovedBuff.ID)
   self.AllBuffInfos[RemovedBuff.ID] = nil
   self:RefreshBuffList()
 end
+
 function WBP_TeamInfoItem_C:RefreshBuffList()
   local BuffIconSize = self.BuffIconSize
   local BuffIndex = 0
@@ -226,6 +241,7 @@ function WBP_TeamInfoItem_C:RefreshBuffList()
     end
   end
 end
+
 function WBP_TeamInfoItem_C:InitTeamIndexInfo()
   self.Txt_TeamIndex:SetText(self.CurIndex)
   if LogicHUD.TeamIndexColor[self.CurIndex] then
@@ -234,6 +250,7 @@ function WBP_TeamInfoItem_C:InitTeamIndexInfo()
     self.Img_TeamIndex:SetColorAndOpacity(LogicHUD.TeamIndexColor[1])
   end
 end
+
 function WBP_TeamInfoItem_C:InitListInfo()
   local ShieldSize = UE.USlateBlueprintLibrary.GetLocalSize(self.ShieldList:GetCachedGeometry())
   local HealthSize = UE.USlateBlueprintLibrary.GetLocalSize(self.HealthList:GetCachedGeometry())
@@ -255,6 +272,7 @@ function WBP_TeamInfoItem_C:InitListInfo()
   self.HealthList:UpdateBarGrid(HealthSize.X, HealthSize.Y)
   self.ArmorBar:InitInfo(Character)
 end
+
 function WBP_TeamInfoItem_C:UpdateReadyState()
   local Character = self.Character
   if not Character then
@@ -269,6 +287,7 @@ function WBP_TeamInfoItem_C:UpdateReadyState()
     ReadyIcon:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_TeamInfoItem_C:UpdateMuteTag(Result, RoomName, MemberId)
   if not LogicTeam.CheckIsOwnerVoiceRoom(RoomName) then
     return
@@ -282,6 +301,7 @@ function WBP_TeamInfoItem_C:UpdateMuteTag(Result, RoomName, MemberId)
     end
   end
 end
+
 function WBP_TeamInfoItem_C:UpdateSpeakingTag(RoomName, OpenId, MemberId, Status)
   if not LogicTeam.CheckIsOwnerVoiceRoom(RoomName) then
     return
@@ -304,6 +324,7 @@ function WBP_TeamInfoItem_C:UpdateSpeakingTag(RoomName, OpenId, MemberId, Status
     end
   end
 end
+
 function WBP_TeamInfoItem_C:UpdateSpeakingStatus(bIsShow)
   UpdateVisibility(self.ImageVoice, bIsShow)
   if bIsShow then
@@ -315,6 +336,7 @@ function WBP_TeamInfoItem_C:UpdateSpeakingStatus(bIsShow)
     end
   end
 end
+
 function WBP_TeamInfoItem_C:UpdatePlayerImage()
   if not self.OwningCharacter then
     return
@@ -329,6 +351,7 @@ function WBP_TeamInfoItem_C:UpdatePlayerImage()
   end
   SetImageBrushBySoftObject(self.Img_HeadIcon, RowInfo.RoleIcon, self.IconSize)
 end
+
 function WBP_TeamInfoItem_C:UpdateRevivalInfo(IsTeamRevivalMode)
   self.IsTeamRevivalMode = IsTeamRevivalMode
   if IsTeamRevivalMode then
@@ -347,6 +370,7 @@ function WBP_TeamInfoItem_C:UpdateRevivalInfo(IsTeamRevivalMode)
     self.RGStateController_EqualToZero:ChangeStatus(StatusStr)
   end
 end
+
 function WBP_TeamInfoItem_C:Bind_MSG_Game_PlayerRevivalSuccess(UserId, RevivalCount, RevivalCoinNum)
   if self.IsTeamRevivalMode or self.PlayerInfo.roleid ~= UserId then
     return
@@ -355,6 +379,7 @@ function WBP_TeamInfoItem_C:Bind_MSG_Game_PlayerRevivalSuccess(UserId, RevivalCo
   local StatusStr = 0 == RevivalCount and "Zero" or "NoZero"
   self.RGStateController_EqualToZero:ChangeStatus(StatusStr)
 end
+
 function WBP_TeamInfoItem_C:Destruct()
   if IsValidObj(self.Character) then
     local BuffComp = self.Character:GetComponentByClass(UE.UBuffComponent:StaticClass())
@@ -377,4 +402,5 @@ function WBP_TeamInfoItem_C:Destruct()
     end
   end
 end
+
 return WBP_TeamInfoItem_C

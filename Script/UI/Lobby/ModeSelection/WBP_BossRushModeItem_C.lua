@@ -1,10 +1,12 @@
 local WBP_BossRushModeItem_C = UnLua.Class()
+
 function WBP_BossRushModeItem_C:Construct()
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
   self.Btn_Main.OnHovered:Add(self, self.BindOnMainButtonHovered)
   self.Btn_Main.OnUnhovered:Add(self, self.BindOnMainButtonUnhovered)
   EventSystem.AddListener(self, EventDef.ModeSelection.OnChangeModeSelectionItem_BossRush, self.BindOnChangeModeSelectionItem)
 end
+
 function WBP_BossRushModeItem_C:BindOnChangeModeSelectionItem(BossId, WorldModeId, GameModeId)
   if self.Id == nil then
     return
@@ -24,6 +26,7 @@ function WBP_BossRushModeItem_C:BindOnChangeModeSelectionItem(BossId, WorldModeI
     self.RGStateController_Select:ChangeStatus("Normal")
   end
 end
+
 function WBP_BossRushModeItem_C:BindOnMainButtonClicked()
   EventSystem.Invoke(EventDef.ModeSelection.OnChangeModeSelectionItem_BossRush, self.Id, self.WorldModeId, self.GameModeId)
   EventSystem.Invoke(EventDef.BeginnerGuide.OnSingleModeItemClicked)
@@ -31,6 +34,7 @@ function WBP_BossRushModeItem_C:BindOnMainButtonClicked()
     ShowWaveWindow(304010)
   end
 end
+
 function WBP_BossRushModeItem_C:BindOnMainButtonHovered()
   if not self.bSel then
     UpdateVisibility(self.Img_Hovered, true)
@@ -39,12 +43,14 @@ function WBP_BossRushModeItem_C:BindOnMainButtonHovered()
     self.ParentView:OnHoverItem(true, self, self.GameModeId, self.WorldModeId)
   end
 end
+
 function WBP_BossRushModeItem_C:BindOnMainButtonUnhovered()
   UpdateVisibility(self.Img_Hovered, false)
   if self.ParentView and self.ParentView.OnHoverItem then
     self.ParentView:OnHoverItem(false, self, self.GameModeId, self.WorldModeId)
   end
 end
+
 function WBP_BossRushModeItem_C:Show(Id, ParentView)
   self.bSel = false
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBBossRush, Id)
@@ -64,6 +70,7 @@ function WBP_BossRushModeItem_C:Show(Id, ParentView)
   local IsUnlock = self:IsUnlock()
   UpdateVisibility(self.Overlay_LockPanel, not IsUnlock)
 end
+
 function WBP_BossRushModeItem_C:IsUnlock(...)
   local TBGameFloor = LuaTableMgr.GetLuaTableByName(TableNames.TBGameFloorUnlock)
   if TBGameFloor then
@@ -82,4 +89,5 @@ function WBP_BossRushModeItem_C:IsUnlock(...)
   end
   return true
 end
+
 return WBP_BossRushModeItem_C

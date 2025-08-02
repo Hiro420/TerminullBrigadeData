@@ -8,6 +8,7 @@ local BattleLagacyData = require("Modules.BattleLagacy.BattleLagacyData")
 local BattlePassHandler = require("Protocol.BattlePass.BattlePassHandler")
 local PandoraData = require("Modules.Pandora.PandoraData")
 local LobbyMainView = Class(ViewBase)
+
 function LobbyMainView:BindClickHandler()
   self.Btn_ChangeMode.OnClicked:Add(self, self.BindOnChangeModeButtonClicked)
   self.Btn_ChangeMode.OnHovered:Add(self, self.BindOnChangeModeButtonHovered)
@@ -28,6 +29,7 @@ function LobbyMainView:BindClickHandler()
   self:RequesRewards()
   self:OnUpdateMyTeamInfo()
 end
+
 function LobbyMainView:UnBindClickHandler()
   self.Btn_ChangeMode.OnClicked:Remove(self, self.BindOnChangeModeButtonClicked)
   self.Btn_ChangeMode.OnHovered:Remove(self, self.BindOnChangeModeButtonHovered)
@@ -46,18 +48,23 @@ function LobbyMainView:UnBindClickHandler()
   self.Btn_Recruit.OnClicked:Remove(self, self.BindOnRecruitClicked)
   self.Btn_ChangeToSeason.OnClicked:Remove(self, self.BindOnChangeToSeasonClicked)
 end
+
 function LobbyMainView:RequesRewards()
   UpdateVisibility(self.Btn_LoginRewards, true, true)
 end
+
 function LobbyMainView:BindOnChangeModeButtonClicked()
   self:PlayAnimation(self.ani_ChangeModeBtnPanel_click)
 end
+
 function LobbyMainView:BindOnChangeModeButtonHovered()
   self:ChangeModeButtonHoverVis(true)
 end
+
 function LobbyMainView:BindOnChangeModeButtonUnhovered()
   self:ChangeModeButtonHoverVis(false)
 end
+
 function LobbyMainView:BindOnDrawCardButtonClicked()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.CHOU_KA) then
@@ -65,6 +72,7 @@ function LobbyMainView:BindOnDrawCardButtonClicked()
   end
   self.ViewModel:BindOnDrawCardButtonClicked()
 end
+
 function LobbyMainView:BindOnLoginRewardsButtonClicked()
   local LobbyModule = ModuleManager:Get("LobbyModule")
   local viewData = {
@@ -73,33 +81,43 @@ function LobbyMainView:BindOnLoginRewardsButtonClicked()
   }
   LobbyModule:PushView(viewData)
 end
+
 function LobbyMainView:BindOnMiddleModelAreaHovered()
   EventSystem.Invoke(EventDef.Lobby.OnModelAreaHoveredChanged, true, 1)
 end
+
 function LobbyMainView:BindOnMiddleModelAreaUnhovered()
   EventSystem.Invoke(EventDef.Lobby.OnModelAreaHoveredChanged, false)
 end
+
 function LobbyMainView:BindOnMiddleModelAreaClicked()
   EventSystem.Invoke(EventDef.Lobby.OnModelAreaClickedChanged, true, 1)
 end
+
 function LobbyMainView:BindOnLeftModelAreaHovered()
   EventSystem.Invoke(EventDef.Lobby.OnModelAreaHoveredChanged, true, 2)
 end
+
 function LobbyMainView:BindOnLeftModelAreaUnhovered()
   EventSystem.Invoke(EventDef.Lobby.OnModelAreaHoveredChanged, false)
 end
+
 function LobbyMainView:BindOnLeftModelAreaClicked()
   EventSystem.Invoke(EventDef.Lobby.OnModelAreaClickedChanged, true, 2)
 end
+
 function LobbyMainView:BindOnRightModelAreaHovered()
   EventSystem.Invoke(EventDef.Lobby.OnModelAreaHoveredChanged, true, 3)
 end
+
 function LobbyMainView:BindOnRightModelAreaUnhovered()
   EventSystem.Invoke(EventDef.Lobby.OnModelAreaHoveredChanged, false)
 end
+
 function LobbyMainView:BindOnRightModelAreaClicked()
   EventSystem.Invoke(EventDef.Lobby.OnModelAreaClickedChanged, true, 3)
 end
+
 function LobbyMainView:BindOnChangeToSeasonClicked()
   ShowWaveWindowWithDelegate(1452, {}, {
     GameInstance,
@@ -109,9 +127,11 @@ function LobbyMainView:BindOnChangeToSeasonClicked()
     end
   })
 end
+
 function LobbyMainView:BindOnRecruitClicked()
   UIMgr:Show(ViewID.UI_RecruitMainView, true)
 end
+
 function LobbyMainView:BindOnAddTeamButtonClicked()
   local UserClickStatisticsMgr = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUserClickStatistics:StaticClass())
   if UserClickStatisticsMgr then
@@ -122,21 +142,26 @@ function LobbyMainView:BindOnAddTeamButtonClicked()
   end
   UIMgr:Show(ViewID.UI_MatchingPanel)
 end
+
 function LobbyMainView:PlayInAnimation()
   self:PlayAnimation(self.ani_lobbymain_in, 0, 1, UE.EUMGSequencePlayMode.Forward, 1, false)
   self.WBP_LobbyTaskPanel:PlayInAnimation()
 end
+
 function LobbyMainView:StopLobbyMainAni()
   self:StopAnimation(self.ani_lobbymain_in)
 end
+
 function LobbyMainView:PlayOutAnimation()
   self:PlayAnimation(self.ani_lobbymain_out, 0, 1, UE.EUMGSequencePlayMode.Forward, 1, false)
 end
+
 function LobbyMainView:OnAnimationFinished(Animation)
   if Animation == self.ani_ChangeModeBtnPanel_click then
     self.ViewModel:OpenChangeModePanel()
   end
 end
+
 function LobbyMainView:ChangeModeButtonHoverVis(IsHover)
   if IsHover then
     self.Image_loop_2:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -146,6 +171,7 @@ function LobbyMainView:ChangeModeButtonHoverVis(IsHover)
     self.Image_loop_3:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function LobbyMainView:OnInit()
   self.DataBindTable = {}
   self.ViewModel = UIModelMgr:Get("LobbyMainViewModel")
@@ -154,16 +180,23 @@ function LobbyMainView:OnInit()
   LogicTeam.RequestGetMyTeamDataToServer()
   BeginnerGuideData:UpdateWidget("Button_StartMatch", self.WBP_StartOrMatch.Button_StartMatch)
 end
+
 function LobbyMainView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function LobbyMainView:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
   end
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
-  if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.CHOU_KA, false) then
-    UIUtil.SetVisibility(self.Btn_DrawCard, false)
+  if SystemOpenMgr then
+    if not SystemOpenMgr:IsSystemOpen(SystemOpenID.CHOU_KA, false) then
+      UIUtil.SetVisibility(self.Btn_DrawCard, false)
+    end
+    if not SystemOpenMgr:IsSystemOpen(SystemOpenID.PASS, false) then
+      UIUtil.SetVisibility(self.WBP_BattlePassEntry, false)
+    end
   end
   self:ChangeModeButtonHoverVis(false)
   self.TeamOperateButtonPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -215,13 +248,11 @@ function LobbyMainView:OnShow(...)
   EventSystem.AddListener(self, EventDef.Pandora.NotifyPandoraADPositionReady, self.BindNotifyPandoraADPositionReady)
   self:BindNotifyPandoraADPositionReady()
   self.WBP_StartOrMatch.CanvasPanel_start:UpdateWidget()
-  local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
-  if SystemOpenMgr then
-    UpdateVisibility(self.WBP_BattlePassEntry, SystemOpenMgr:IsSystemOpen(SystemOpenID.PASS, false))
-  end
 end
+
 function LobbyMainView:LuaTick(InDeltaTime)
 end
+
 function LobbyMainView:OnUpdateLoginRewards()
   local VM = UIModelMgr:Get("LoginRewardsViewModel")
   if VM then
@@ -232,6 +263,7 @@ function LobbyMainView:OnUpdateLoginRewards()
     end
   end
 end
+
 function LobbyMainView:OnHide()
   self.WBP_StartOrMatch:Hide()
   self.WBP_CombatPowerTip:Hide()
@@ -240,12 +272,19 @@ function LobbyMainView:OnHide()
   EventSystem.RemoveListener(EventDef.Pandora.pandoraWidgetCreated, self.BindPandoraWidgetCreated, self)
   EventSystem.RemoveListener(EventDef.Pandora.pandoraWidgetCreated, self.BindPandoraWidgetDestroy, self)
   EventSystem.RemoveListener(EventDef.Pandora.NotifyPandoraADPositionReady, self.BindNotifyPandoraADPositionReady, self)
-  ClosePandorApp(7479)
-  ClosePandorApp(7485)
+  local CarouselImageAppId = PandoraData:GetCarouselImageAppId()
+  if CarouselImageAppId then
+    ClosePandorApp(CarouselImageAppId)
+  end
+  local TreasureAppId = PandoraData:GetTreasureAppId()
+  if TreasureAppId then
+    ClosePandorApp(TreasureAppId)
+  end
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
   end
 end
+
 function LobbyMainView:OnRollback()
   print("LobbyMainView:OnRollback")
   ChangeToLobbyAnimCamera()
@@ -265,12 +304,15 @@ function LobbyMainView:OnRollback()
   EventSystem.Invoke(EventDef.BeginnerGuide.OnLobbyShow)
   self.WBP_StartOrMatch.CanvasPanel_start:UpdateWidget()
 end
+
 function LobbyMainView:OnBindUIInput()
   self.WBP_InteractTipWidgetChangeMode:BindInteractAndClickEvent(self, self.BindOnChangeModeButtonClicked)
 end
+
 function LobbyMainView:OnUnBindUIInput()
   self.WBP_InteractTipWidgetChangeMode:UnBindInteractAndClickEvent(self, self.BindOnChangeModeButtonClicked)
 end
+
 function LobbyMainView:OnUpdateMyTeamInfo()
   if BattleLagacyData.CurBattleLagacyData == nil then
     return
@@ -287,6 +329,7 @@ function LobbyMainView:OnUpdateMyTeamInfo()
   end
   self.ViewModel.bBattleLagacyActive = bIsActive
 end
+
 function LobbyMainView:ShowBattleLagacyTips(bIsShow, CurBattleLagacyData, bActive)
   UpdateVisibility(self.WBP_GenericModifyBagTips, false)
   UpdateVisibility(self.WBP_BattleLagacyLobbyTips, false)
@@ -295,12 +338,14 @@ function LobbyMainView:ShowBattleLagacyTips(bIsShow, CurBattleLagacyData, bActiv
     self.WBP_BattleLagacyLobbyTips:InitBattleLagacyLobbyTips(CurBattleLagacyData, self)
   end
 end
+
 function LobbyMainView:ShowLagacyModifyDetailsTips(bIsShow, CurBattleLagacyData)
   UpdateVisibility(self.WBP_GenericModifyBagTips, bIsShow)
   if bIsShow then
     self.WBP_GenericModifyBagTips:InitGenericModifyTips(tonumber(CurBattleLagacyData.BattleLagacyId), false, -1)
   end
 end
+
 function LobbyMainView:GetBattlePassData()
   local SystemUnlockModule = ModuleManager:Get("SystemUnlockModule")
   if SystemUnlockModule and not SystemUnlockModule:CheckIsSystemUnlock(2) then
@@ -310,12 +355,14 @@ function LobbyMainView:GetBattlePassData()
   local BattlePassSubViewModel = UIModelMgr:Get("BattlePassSubViewModel")
   BattlePassSubViewModel:SendGetBattlePassData(openBattlePass.BattlePassID)
 end
+
 function LobbyMainView:UpdateBattlePassInfo(BattlePassInfo, BattlePassID)
   local level = BattlePassInfo.level
   local exp = BattlePassInfo.exp
   local state = BattlePassInfo.battlePassActivateState
   self.WBP_BattlePassEntry:InitInfo(level, exp, state, BattlePassID)
 end
+
 function LobbyMainView:BindPandoraWidgetCreated(Widget, AppId)
   local PandoraWidgetSlot
   if AppId == PandoraData:GetCarouselImageAppId() then
@@ -332,6 +379,7 @@ function LobbyMainView:BindPandoraWidgetCreated(Widget, AppId)
     PandoraWidgetSlot:SetOffsets(Offsets)
   end
 end
+
 function LobbyMainView:BindPandoraWidgetDestroy(Widget, AppId)
   if AppId == PandoraData:GetCarouselImageAppId() then
     self.CanvasPanel_CarouselImage:ClearChildren()
@@ -339,6 +387,7 @@ function LobbyMainView:BindPandoraWidgetDestroy(Widget, AppId)
     self.CanvasPanel_Treasure:ClearChildren()
   end
 end
+
 function LobbyMainView:BindNotifyPandoraADPositionReady()
   local CarouselImageAppId = PandoraData:GetCarouselImageAppId()
   if CarouselImageAppId then
@@ -349,4 +398,5 @@ function LobbyMainView:BindNotifyPandoraADPositionReady()
     OpenPandorApp(TreasureAppId)
   end
 end
+
 return LobbyMainView

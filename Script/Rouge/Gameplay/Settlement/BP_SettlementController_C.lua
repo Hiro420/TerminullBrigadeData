@@ -1,5 +1,6 @@
 require("Rouge.UI.Lobby.Logic.Logic_Talent")
 local BP_SettlementController_C = UnLua.Class()
+
 function BP_SettlementController_C:ReceiveBeginPlay()
   self.Overridden.ReceiveBeginPlay(self)
   print("BP_SettlementController_C:ReceiveBeginPlay")
@@ -30,6 +31,7 @@ function BP_SettlementController_C:ReceiveBeginPlay()
   RGUIMgr:OpenUI(UIConfig.WBP_Marquee.UIName)
   print("BP_SettlementController_C:ReceiveBeginPlay1")
 end
+
 function BP_SettlementController_C:BindOnHttpBusinessErrorTip(ErrorCode, ErrorMsg)
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGWaveWindowManager:StaticClass())
   if not WaveWindowManager or "" == ErrorMsg then
@@ -47,6 +49,7 @@ function BP_SettlementController_C:BindOnHttpBusinessErrorTip(ErrorCode, ErrorMs
   end
   ShowWaveWindowWithConsoleCheck(TargetId, Params, ErrorCode)
 end
+
 function BP_SettlementController_C:ReceiveEndPlay(EndPlayReason)
   self.Overridden.ReceiveEndPlay(self, EndPlayReason)
   if UE.UKismetSystemLibrary.IsDedicatedServer(self) then
@@ -67,7 +70,9 @@ function BP_SettlementController_C:ReceiveEndPlay(EndPlayReason)
   end
   UE.URGUIEffectMgr.Get(GameInstance):Reset()
 end
+
 function BP_SettlementController_C:GetCurSceneStatus()
   return UE.ESceneStatus.ESettlement
 end
+
 return BP_SettlementController_C

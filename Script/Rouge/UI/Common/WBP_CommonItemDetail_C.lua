@@ -1,4 +1,5 @@
 local WBP_CommonItemDetail_C = UnLua.Class()
+
 function WBP_CommonItemDetail_C:InitCommonItemDetail(Id, IsInscription)
   local TotalResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   if not TotalResourceTable then
@@ -30,6 +31,7 @@ function WBP_CommonItemDetail_C:InitCommonItemDetail(Id, IsInscription)
   end
   self.WBP_CommonItem:InitCommonItem(Id, 0, false, nil, nil, nil, IsInscription)
 end
+
 function WBP_CommonItemDetail_C:InitProEff(ItemID)
   local ItemId = tonumber(ItemID)
   if not ItemId then
@@ -48,9 +50,11 @@ function WBP_CommonItemDetail_C:InitProEff(ItemID)
   UpdateVisibility(self.AutoLoad_ComTipProEff, true)
   self.AutoLoad_ComTipProEff.ChildWidget:InitComProEff(ItemId)
 end
+
 function WBP_CommonItemDetail_C:ShowExpireAt(ExpireAt)
   UpdateVisibility(self.URGImage_90, nil ~= ExpireAt and "0" ~= ExpireAt and "" ~= ExpireAt)
   UpdateVisibility(self.LimitedTime, nil ~= ExpireAt and "0" ~= ExpireAt and "" ~= ExpireAt)
   self.WBP_CommonExpireAt:InitCommonExpireAt(ExpireAt)
 end
+
 return WBP_CommonItemDetail_C

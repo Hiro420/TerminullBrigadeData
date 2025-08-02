@@ -1,4 +1,5 @@
 local WBP_DyingHUD_C = UnLua.Class()
+
 function WBP_DyingHUD_C:Construct()
   self.WBP_DyingMaterial.OnRescueRatioChangeEvent:Add(self, WBP_DyingHUD_C.OnRescueStateChange)
   self.WBP_DyingMaterial.Target = self:GetOwningPlayerPawn()
@@ -10,6 +11,7 @@ function WBP_DyingHUD_C:Construct()
     end
   end
 end
+
 function WBP_DyingHUD_C:Destruct()
   self.WBP_DyingMaterial.OnRescueRatioChangeEvent:Remove(self, WBP_DyingHUD_C.OnRescueStateChange)
   local Character = self:GetOwningPlayerPawn()
@@ -20,19 +22,23 @@ function WBP_DyingHUD_C:Destruct()
     end
   end
 end
+
 function WBP_DyingHUD_C:OnRescueStateChange(Rescue, Ratio)
   self:ShowDyingInfo(not Rescue)
   self.Ratio = Ratio
   self:SetRescueTime()
 end
+
 function WBP_DyingHUD_C:OnRescueCancel()
   ShowWaveWindow(1098)
 end
+
 function WBP_DyingHUD_C:SetRescueTime()
   local time = UE.UKismetMathLibrary.FCeil(self.RescueTotalTime - self.Ratio * self.RescueTotalTime)
   local DyingCountDownFmt = NSLOCTEXT("DyingHUD", "DyingCountDown", "{0}\231\167\146")
   self.TextBlock_Time:SetText(UE.FTextFormat(DyingCountDownFmt, time))
 end
+
 function WBP_DyingHUD_C:OnCharacterDying(Character)
   self:ShowDyingInfo(true)
   if Character and Character:IsValid() then
@@ -45,6 +51,7 @@ function WBP_DyingHUD_C:OnCharacterDying(Character)
     end
   end
 end
+
 function WBP_DyingHUD_C:ShowDyingInfo(Dying)
   if self.Dying ~= Dying then
     if Dying then
@@ -63,19 +70,23 @@ function WBP_DyingHUD_C:ShowDyingInfo(Dying)
   end
   self.Dying = Dying
 end
+
 function WBP_DyingHUD_C:ShowDying()
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self:OnCharacterDying(self:GetOwningPlayerPawn())
   self:ShowRevivalInfo()
 end
+
 function WBP_DyingHUD_C:HideDying()
   UpdateVisibility(self.Overlay_Dying, false)
   UpdateVisibility(self.Overlay_Rescue, false)
   UpdateVisibility(self, false)
   self.WBP_DyingRevival:UnBindKey()
 end
+
 function WBP_DyingHUD_C:ShowRevivalInfo()
   UpdateVisibility(self.WBP_DyingRevival, true)
   self.WBP_DyingRevival:ShowRevivalInfo()
 end
+
 return WBP_DyingHUD_C

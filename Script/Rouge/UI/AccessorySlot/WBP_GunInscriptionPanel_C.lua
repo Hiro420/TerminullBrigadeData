@@ -1,13 +1,16 @@
 local WBP_GunInscriptionPanel_C = UnLua.Class()
+
 function WBP_GunInscriptionPanel_C:Construct()
   self.wbp_GunInscriptionItemClass = UE.UClass.Load("/Game/Rouge/UI/AccessorySlot/WBP_GunInscriptionItem.WBP_GunInscriptionItem_C")
   EventSystem.AddListener(self, EventDef.GunDisplayPanel.OnAccessorySlotHovered, WBP_GunInscriptionPanel_C.OnAccessorySlotHovered)
   EventSystem.AddListener(self, EventDef.GunDisplayPanel.OnAccessorySlotUnHovered, WBP_GunInscriptionPanel_C.OnAccessorySlotUnHovered)
 end
+
 function WBP_GunInscriptionPanel_C:Destruct()
   EventSystem.RemoveListener(EventDef.GunDisplayPanel.OnAccessorySlotHovered, WBP_GunInscriptionPanel_C.OnAccessorySlotHovered, self)
   EventSystem.RemoveListener(EventDef.GunDisplayPanel.OnAccessorySlotUnHovered, WBP_GunInscriptionPanel_C.OnAccessorySlotUnHovered, self)
 end
+
 function WBP_GunInscriptionPanel_C:UpdateInscriptionPanel(InscriptionIdList, Width)
   self.SizeBox_GunInscriptionPanel:SetWidthOverride(Width)
   local Number = #InscriptionIdList
@@ -28,6 +31,7 @@ function WBP_GunInscriptionPanel_C:UpdateInscriptionPanel(InscriptionIdList, Wid
     end
   end
 end
+
 function WBP_GunInscriptionPanel_C:OnAccessorySlotHovered(AccessoryId, AccessoryRarity, InscriptionIdTable, Angle, Position)
   for key, value in pairs(self.ScrollBox_Inscriptions:GetAllChildren()) do
     if table.Contain(InscriptionIdTable, value.InscriptionId) then
@@ -37,9 +41,11 @@ function WBP_GunInscriptionPanel_C:OnAccessorySlotHovered(AccessoryId, Accessory
     end
   end
 end
+
 function WBP_GunInscriptionPanel_C:OnAccessorySlotUnHovered()
   for key, value in pairs(self.ScrollBox_Inscriptions:GetAllChildren()) do
     value:UpdateInscriptionDesOpacity(true)
   end
 end
+
 return WBP_GunInscriptionPanel_C

@@ -1,4 +1,5 @@
 local WBP_WaveWindowList_C = UnLua.Class()
+
 function WBP_WaveWindowList_C:ShowWaveWindow(TargetWidget)
   if nil ~= TargetWidget then
     self.List:AddChild(TargetWidget)
@@ -16,6 +17,7 @@ function WBP_WaveWindowList_C:ShowWaveWindow(TargetWidget)
     TargetWidget.bOnlist = true
   end
 end
+
 function WBP_WaveWindowList_C:AddWaveWindow(TargetWidget)
   if TargetWidget then
     if self.WaitingShowList == nil then
@@ -24,6 +26,7 @@ function WBP_WaveWindowList_C:AddWaveWindow(TargetWidget)
     table.insert(self.WaitingShowList, TargetWidget)
   end
 end
+
 function WBP_WaveWindowList_C:LuaTick(InDeltaTime)
   if table.count(self.WaitingShowList) >= 1 then
     if 5 == self.CountIndex then
@@ -37,6 +40,7 @@ function WBP_WaveWindowList_C:LuaTick(InDeltaTime)
     end
   end
 end
+
 function WBP_WaveWindowList_C:PushUp()
   for index = self.ItemLast, self.ItemIndex - 1 do
     local OldTargetWidget = self.Items:Find(index)
@@ -45,14 +49,17 @@ function WBP_WaveWindowList_C:PushUp()
     end
   end
 end
+
 function WBP_WaveWindowList_C:Construct()
   self.ItemIndex = 0
   self.ItemLast = 1
   self.WaitingShowList = {}
   self.CountIndex = 1
 end
+
 function WBP_WaveWindowList_C:OnReset()
   self.List:ClearChildren()
   print("WBP_WaveWindowList_C:OnReset(")
 end
+
 return WBP_WaveWindowList_C

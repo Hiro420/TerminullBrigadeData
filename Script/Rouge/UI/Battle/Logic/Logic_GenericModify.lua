@@ -37,6 +37,7 @@ ELastPassiveSlotStatus = {
   bIsChangeLevel = 3,
   bIsFromSpecific = 4
 }
+
 function LogicGenericModify.Init()
   if LogicGenericModify.IsInit then
     print("LogicGenericModify \229\183\178\229\136\157\229\167\139\229\140\150")
@@ -60,9 +61,11 @@ function LogicGenericModify.Init()
   LogicGenericModify:BindDelegate(Character)
   EventSystem.AddListener(nil, EventDef.Battle.OnControlledPawnChanged, LogicGenericModify.BindOnControlledPawnChanged)
 end
+
 function LogicGenericModify.BindOnControlledPawnChanged(Character)
   LogicGenericModify:BindDelegate(Character)
 end
+
 function LogicGenericModify:BindDelegate(Character)
   if not Character then
     return
@@ -106,6 +109,7 @@ function LogicGenericModify:BindDelegate(Character)
   SurvivalModeComp.SpecificModifyRefreshCountDelegate:Remove(GameInstance, self.OnSpecificModifyRefreshCount)
   SurvivalModeComp.SpecificModifyRefreshCountDelegate:Add(GameInstance, self.OnSpecificModifyRefreshCount)
 end
+
 function LogicGenericModify:TryUpgradeMOD(Pawn, ModId, ChooseType, MODLevel, ModType)
   local ModComponent = Pawn:GetComponentByClass(UE.UMODComponent.StaticClass())
   if ModComponent and LogicGenericModify.bCanOperator then
@@ -114,6 +118,7 @@ function LogicGenericModify:TryUpgradeMOD(Pawn, ModId, ChooseType, MODLevel, Mod
     LogicGenericModify.bCanOperator = false
   end
 end
+
 function LogicGenericModify:BindOnBeginInteract(Target, Instigator)
   print("LogicGenericModify:BindOnBeginInteract", Target)
   LogicGenericModify.IsFinishChooseModify = false
@@ -235,22 +240,28 @@ function LogicGenericModify:BindOnBeginInteract(Target, Instigator)
     end
   end
 end
+
 function LogicGenericModify:BindOnCancelInteract(Target, Instigator)
   EventSystem.Invoke(EventDef.GenericModify.OnCancelInteract, Target, Instigator)
 end
+
 function LogicGenericModify:BindOnFinishInteract(Target, Instigator)
   EventSystem.Invoke(EventDef.GenericModify.OnFinishInteract, Target, Instigator)
 end
+
 function LogicGenericModify:OnAddModify(RGGenericModifyParam)
   EventSystem.Invoke(EventDef.GenericModify.OnAddModify, RGGenericModifyParam)
   LogicAudio.OnAddModify(RGGenericModifyParam)
 end
+
 function LogicGenericModify:OnRemoveModify(RGGenericModifyParam)
   EventSystem.Invoke(EventDef.GenericModify.OnRemoveModify, RGGenericModifyParam)
 end
+
 function LogicGenericModify:OnUpgradeModify(RGGenericModifyParam)
   EventSystem.Invoke(EventDef.GenericModify.OnUpgradeModify, RGGenericModifyParam)
 end
+
 function LogicGenericModify:OnGenericModifyPushPreview(PreviewModifyList)
   local PreviewModifyListTb = PreviewModifyList:ToTable()
   if not RGUIMgr:IsShown(UIConfig.WBP_GenericModifyChoosePanel_C.UIName) then
@@ -261,15 +272,19 @@ function LogicGenericModify:OnGenericModifyPushPreview(PreviewModifyList)
     LogicGenericModify.PushPreviewModifyList = PreviewModifyListTb
   end
 end
+
 function LogicGenericModify:OnSpecificAddModify(RGSpecificModifyParam)
   EventSystem.Invoke(EventDef.SpecificModify.OnAddModify, RGSpecificModifyParam)
 end
+
 function LogicGenericModify:OnSpecificRemoveModify(RGSpecificModifyParam)
   EventSystem.Invoke(EventDef.SpecificModify.OnRemoveModify, RGSpecificModifyParam)
 end
+
 function LogicGenericModify:OnSpecificRefreshCountChange()
   EventSystem.Invoke(EventDef.SpecificModify.OnRefreshCountChange)
 end
+
 function LogicGenericModify:BindOnClientUpdateInscriptionCD(InscriptionId, RemainTime)
   local LogicCommandSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.ULogicCommandDataSubSystem:StaticClass())
   if not LogicCommandSubsystem then
@@ -293,6 +308,7 @@ function LogicGenericModify:BindOnClientUpdateInscriptionCD(InscriptionId, Remai
   LogicGenericModify.InscriptionCDDatas[InscriptionId] = InscriptionData
   EventSystem.Invoke(EventDef.Inscription.OnTriggerCD, InscriptionId, RemainTime)
 end
+
 function LogicGenericModify:CheckIsPassiveModify(InModifyIdParam)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -304,6 +320,7 @@ function LogicGenericModify:CheckIsPassiveModify(InModifyIdParam)
   end
   return false
 end
+
 function LogicGenericModify:GetGroupIDByFirstModify(PreviewModifyList)
   local Modifyid = -1
   if PreviewModifyList.ModifyList:IsValidIndex(1) then
@@ -318,6 +335,7 @@ function LogicGenericModify:GetGroupIDByFirstModify(PreviewModifyList)
   end
   return -1
 end
+
 function LogicGenericModify:GetSurvivalGroupIDByFirstModify(PreviewModifyList)
   local Modifyid = -1
   if PreviewModifyList:IsValidIndex(1) then
@@ -332,6 +350,7 @@ function LogicGenericModify:GetSurvivalGroupIDByFirstModify(PreviewModifyList)
   end
   return -1
 end
+
 function LogicGenericModify:GetGenericModifyData(InModifyIdParam)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -347,6 +366,7 @@ function LogicGenericModify:GetGenericModifyData(InModifyIdParam)
   end
   return nil
 end
+
 function LogicGenericModify:GetModifyBySlot(SlotParam)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -362,6 +382,7 @@ function LogicGenericModify:GetModifyBySlot(SlotParam)
   end
   return nil
 end
+
 function LogicGenericModify:CloseGenericModifyChoosePanel(Target)
   if RGUIMgr:IsShown(UIConfig.WBP_GenericModifyChoosePanel_C.UIName) then
     local GenericModifyChoosePanel = RGUIMgr:GetUI(UIConfig.WBP_GenericModifyChoosePanel_C.UIName)
@@ -383,6 +404,7 @@ function LogicGenericModify:CloseGenericModifyChoosePanel(Target)
     LogicGenericModify:CancelInteractGenericModify(Target)
   end
 end
+
 function LogicGenericModify:CancelInteractGenericModify(Target)
   if not Target then
     return
@@ -412,6 +434,7 @@ function LogicGenericModify:CancelInteractGenericModify(Target)
     RGInteractComponent_UpgradeRarityModify:CancelInteract(Target, RGInteractHandle)
   end
 end
+
 function LogicGenericModify:FinishInteractGenericModify(Target)
   if LogicGenericModify.bCanFinish == false then
     return
@@ -448,6 +471,7 @@ function LogicGenericModify:FinishInteractGenericModify(Target)
     LogicGenericModify.bCanFinish = false
   end
 end
+
 function LogicGenericModify:AddGenericModify(PC, InModifyIdParam)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -465,6 +489,7 @@ function LogicGenericModify:AddGenericModify(PC, InModifyIdParam)
     print("LogicGenericModify:AddGenericModify LogicGenericModify.bCanOperator is false", InModifyIdParam)
   end
 end
+
 function LogicGenericModify:UpgradeModify(PC, InModifyIdParam)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -482,6 +507,7 @@ function LogicGenericModify:UpgradeModify(PC, InModifyIdParam)
     print("LogicGenericModify:UpgradeModify LogicGenericModify.bCanOperator is false", InModifyIdParam)
   end
 end
+
 function LogicGenericModify:AddSpecificModify(PC, InModifyIdParam)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -499,6 +525,7 @@ function LogicGenericModify:AddSpecificModify(PC, InModifyIdParam)
     print("LogicGenericModify:AddSpecificModify LogicGenericModify.bCanOperator is false", InModifyIdParam)
   end
 end
+
 function LogicGenericModify:ReplaceSpecificModify(PC, InModifyIdParam)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -516,6 +543,7 @@ function LogicGenericModify:ReplaceSpecificModify(PC, InModifyIdParam)
     print("LogicGenericModify:ReplaceSpecificModify LogicGenericModify.bCanOperator is false", InModifyIdParam)
   end
 end
+
 function LogicGenericModify:AbandonSpecificModify(PC, Interact_SpecificCom, Target)
   if LogicGenericModify.bCanOperator then
     if PC and PC.MiscHelper and UE.RGUtil.IsUObjectValid(Interact_SpecificCom) then
@@ -529,9 +557,11 @@ function LogicGenericModify:AbandonSpecificModify(PC, Interact_SpecificCom, Targ
     print("LogicGenericModify:AbandonSpecificModify LogicGenericModify.bCanOperator is false")
   end
 end
+
 function LogicGenericModify:AddBattleLagacyModify(Idx, InModifyIdParam)
   BattleLagacyModule:AddGenericModifyByBattleLagacy(Idx, InModifyIdParam)
 end
+
 function LogicGenericModify:RemoveGenericModify(InModifyIdParam)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -543,6 +573,7 @@ function LogicGenericModify:RemoveGenericModify(InModifyIdParam)
   end
   RGGenericModifyComponent:RemoveModify(InModifyIdParam)
 end
+
 function LogicGenericModify:DoubleGenericModifyUpgrade(InModifyIdParam)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -554,6 +585,7 @@ function LogicGenericModify:DoubleGenericModifyUpgrade(InModifyIdParam)
   end
   RGGenericModifyComponent:ServerInscriptionUpgradeModify_UpgradeModify(InModifyIdParam)
 end
+
 function LogicGenericModify:UpgradeGenericModifyRarity(PC, ModifyID)
   if LogicGenericModify.bCanOperator then
     if PC and PC.MiscHelper then
@@ -565,6 +597,7 @@ function LogicGenericModify:UpgradeGenericModifyRarity(PC, ModifyID)
     print("LogicGenericModify:UpgradeGenericModifyRarity LogicGenericModify.bCanOperator is false")
   end
 end
+
 function LogicGenericModify:SurvivalAddModify(ModifyID)
   if LogicGenericModify.bCanOperator then
     local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
@@ -582,6 +615,7 @@ function LogicGenericModify:SurvivalAddModify(ModifyID)
     print("LogicGenericModify:UpgradeGenericModifyRarity LogicGenericModify.bCanOperator is false")
   end
 end
+
 function LogicGenericModify:OnSurvivalPreviewModifyData(PreviewModifyData)
   EventSystem.Invoke(EventDef.SurvivalModify.OnAddModify, PreviewModifyData)
   if 0 == #PreviewModifyData.PreviewModifyList:ToTable() then
@@ -595,6 +629,7 @@ function LogicGenericModify:OnSurvivalPreviewModifyData(PreviewModifyData)
     ChoosePanel:InitSurvivalModifyList(PreviewModifyData)
   end
 end
+
 function LogicGenericModify:OnSurvivalUpgradeModifyData(PreviewUpgradeModifyData)
   EventSystem.Invoke(EventDef.SurvivalModify.OnUpgradeModify, PreviewUpgradeModifyData)
   if 0 == #PreviewUpgradeModifyData.PreviewModifyList:ToTable() then
@@ -608,6 +643,7 @@ function LogicGenericModify:OnSurvivalUpgradeModifyData(PreviewUpgradeModifyData
     ChoosePanel:InitSurvivalUpgradeModifyData(PreviewUpgradeModifyData)
   end
 end
+
 function LogicGenericModify:OnSurvivalSpecificModifyData(PreviewSpecificModifyData)
   EventSystem.Invoke(EventDef.SurvivalModify.OnSpecificModify, PreviewSpecificModifyData)
   if 0 == #PreviewSpecificModifyData.PreviewModifyList:ToTable() then
@@ -621,12 +657,15 @@ function LogicGenericModify:OnSurvivalSpecificModifyData(PreviewSpecificModifyDa
     ChoosePanel:InitSurvivalSpecificModifyData(PreviewSpecificModifyData)
   end
 end
+
 function LogicGenericModify:OnSurvivalPreviewModifyCount(Count)
   EventSystem.Invoke(EventDef.SurvivalModify.OnModifyCountChange, Count)
 end
+
 function LogicGenericModify:OnSpecificModifyRefreshCount(SpecificModifyRefreshCount)
   EventSystem.Invoke(EventDef.SurvivalModify.OnSpecificModifyRefreshCount, SpecificModifyRefreshCount)
 end
+
 function LogicGenericModify:AddGenericModifyPack(PC, IdxParam)
   local Idx = IdxParam - 1
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
@@ -642,6 +681,7 @@ function LogicGenericModify:AddGenericModifyPack(PC, IdxParam)
     print("LogicGenericModify:AddGenericModifyPack LogicGenericModify.bCanOperator is false", Idx)
   end
 end
+
 function LogicGenericModify:GiveUpGenericPack()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -655,6 +695,7 @@ function LogicGenericModify:GiveUpGenericPack()
     print("LogicGenericModify:GiveUpGenericPack LogicGenericModify.bCanOperator is false")
   end
 end
+
 function LogicGenericModify:RefreshGenericPack()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -668,9 +709,11 @@ function LogicGenericModify:RefreshGenericPack()
     print("LogicGenericModify:GiveUpGenericPack LogicGenericModify.bCanOperator is false")
   end
 end
+
 function LogicGenericModify:UpdateLastPassiveSlotStatus(LastPassiveSlotStatusParam)
   LogicGenericModify.LastPassiveSlotStatus = LastPassiveSlotStatusParam
 end
+
 function LogicGenericModify.Clear()
   LogicGenericModify.InscriptionCDDatas = {}
   LogicGenericModify.ChoosPanelOpenTimes = {
@@ -714,9 +757,11 @@ function LogicGenericModify.Clear()
   LogicGenericModify.IsInit = false
   LogicGenericModify.PushPreviewModifyList = nil
 end
+
 function LogicGenericModify:CheckIsSkillType(Slot, SkillType)
   return ModifyToSkillType[Slot] == SkillType
 end
+
 function LogicGenericModify:CheckIsChangeModify(ModifyId, ModifyChooseTypeParam)
   if ModifyChooseTypeParam and ModifyChooseTypeParam == ModifyChooseType.RarityUpModify then
     return false
@@ -734,6 +779,7 @@ function LogicGenericModify:CheckIsChangeModify(ModifyId, ModifyChooseTypeParam)
   end
   return false
 end
+
 function LogicGenericModify:GetChangeModifyList(ModifyId)
   local result, row = GetRowData(DT.DT_GenericModify, tostring(ModifyId))
   if not result then
@@ -752,6 +798,7 @@ function LogicGenericModify:GetChangeModifyList(ModifyId)
   end
   return nil, nil
 end
+
 function LogicGenericModify:GetLevelValue(GenericModifyLevelId, GenericModifyId, Level, ModifyLevelDescShowType)
   if ModifyLevelDescShowType == UE.EModifyLevelDesc.Addition then
     local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
@@ -817,6 +864,7 @@ function LogicGenericModify:GetLevelValue(GenericModifyLevelId, GenericModifyId,
     end
   end
 end
+
 function LogicGenericModify:GetAllPassiveModifies()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -858,6 +906,7 @@ function LogicGenericModify:GetAllPassiveModifies()
   end
   return AllPassiveModifies
 end
+
 function LogicGenericModify:GetModifyTypeByComp(InteractComp)
   if not UE.RGUtil.IsUObjectValid(InteractComp) then
     return ModifyChooseType.None
@@ -881,6 +930,7 @@ function LogicGenericModify:GetModifyTypeByComp(InteractComp)
   end
   return ModifyChooseTypeTemp
 end
+
 function LogicGenericModify:GetFirstSpecificModify()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -893,6 +943,7 @@ function LogicGenericModify:GetFirstSpecificModify()
   end
   return nil
 end
+
 function LogicGenericModify:GetModifyUpgradeLevelByModifyId(ModifyId)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -906,12 +957,15 @@ function LogicGenericModify:GetModifyUpgradeLevelByModifyId(ModifyId)
   end
   return 0
 end
+
 function LogicGenericModify:GetShopUpgradeModifyUpgradeLevel()
   return LogicShop.GetShopUpgradeModifyUpgradeLevel()
 end
+
 function LogicGenericModify:CheckMultiLvUpgrade()
   return LogicGenericModify:GetShopUpgradeModifyUpgradeLevel() > 1
 end
+
 function LogicGenericModify:GetRecommendGenericId(BuildId, WorldIdx, LevelIdx)
   local recommendedGenericModifyId = -1
   if table.IsEmpty(LogicGenericModify.RecommendGenericIdMap) then
@@ -947,6 +1001,7 @@ function LogicGenericModify:GetRecommendGenericId(BuildId, WorldIdx, LevelIdx)
   end
   return recommendedGenericModifyId
 end
+
 function LogicGenericModify:GetGenericPackData()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -958,6 +1013,7 @@ function LogicGenericModify:GetGenericPackData()
   end
   return GenericPackComp.PreviewModifyData
 end
+
 function LogicGenericModify:CloseGenericPackChoosePanel()
   if RGUIMgr:IsShown(UIConfig.WBP_GenericModify_Pack_Choose_C.UIName) then
     RGUIMgr:CloseUI(UIConfig.WBP_GenericModify_Pack_Choose_C.UIName)
@@ -965,6 +1021,7 @@ function LogicGenericModify:CloseGenericPackChoosePanel()
     LogicHUD:UpdateGenericModifyListShow(true)
   end
 end
+
 function LogicGenericModify:GetSurvivalPreviewModifyData()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -976,6 +1033,7 @@ function LogicGenericModify:GetSurvivalPreviewModifyData()
   end
   return SurvivalModeComp.PreviewModifyData
 end
+
 function LogicGenericModify:GetSurvivalPreviewUpgradeModifyData()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -987,6 +1045,7 @@ function LogicGenericModify:GetSurvivalPreviewUpgradeModifyData()
   end
   return SurvivalModeComp.PreviewUpgradeModifyData
 end
+
 function LogicGenericModify:GetSurvivalPreviewSpecificModifyData()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -998,6 +1057,7 @@ function LogicGenericModify:GetSurvivalPreviewSpecificModifyData()
   end
   return SurvivalModeComp.PreviewSpecificModifyData
 end
+
 function LogicGenericModify:SurvivalUpgradeModify(ModifyId)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -1013,6 +1073,7 @@ function LogicGenericModify:SurvivalUpgradeModify(ModifyId)
   end
   SurvivalModeComp:SurvivalUpgradeModify(ModifyId)
 end
+
 function LogicGenericModify:SurvivalAddSpecificModify(ModifyId)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -1024,6 +1085,7 @@ function LogicGenericModify:SurvivalAddSpecificModify(ModifyId)
   end
   SurvivalModeComp:SurvivalAddSpecificModify(ModifyId)
 end
+
 function LogicGenericModify:GetSurvivalModifyCount()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   local SurvivalModeComp = Character:GetComponentByClass(UE.URGSurvivalModeComponent:StaticClass())
@@ -1033,6 +1095,7 @@ function LogicGenericModify:GetSurvivalModifyCount()
   local Count = SurvivalModeComp.Count
   return Count
 end
+
 function LogicGenericModify:GetSurvivalSpecificModifyRefreshCount()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   local SurvivalModeComp = Character:GetComponentByClass(UE.URGSurvivalModeComponent:StaticClass())
@@ -1042,6 +1105,7 @@ function LogicGenericModify:GetSurvivalSpecificModifyRefreshCount()
   local SpecificModifyRefreshCount = SurvivalModeComp.SpecificModifyRefreshCount
   return SpecificModifyRefreshCount
 end
+
 function LogicGenericModify:GetSurvivalUpgradeModifyCount()
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   local BagComp = PC:GetComponentByClass(UE.URGBagComponent.StaticClass())
@@ -1056,6 +1120,7 @@ function LogicGenericModify:GetSurvivalUpgradeModifyCount()
   end
   return Count
 end
+
 function LogicGenericModify:GetSurvivalSpecificModifyCount()
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   local BagComp = PC:GetComponentByClass(UE.URGBagComponent:StaticClass())
@@ -1070,6 +1135,7 @@ function LogicGenericModify:GetSurvivalSpecificModifyCount()
   end
   return Count
 end
+
 function LogicGenericModify:SurvivalRequestGenericModify()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   local SurvivalModeComp = Character:GetComponentByClass(UE.URGSurvivalModeComponent:StaticClass())
@@ -1078,6 +1144,7 @@ function LogicGenericModify:SurvivalRequestGenericModify()
   end
   SurvivalModeComp:SurvivalRequestGenericModify()
 end
+
 function LogicGenericModify:SurvivalModify()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   local SurvivalModeComp = Character:GetComponentByClass(UE.URGSurvivalModeComponent:StaticClass())
@@ -1101,6 +1168,7 @@ function LogicGenericModify:SurvivalModify()
     self:SurvivalRequestGenericModify()
   end
 end
+
 function LogicGenericModify:SurvivalRequestUpgradeModify()
   local PreviewUpgradeModifyData = self:GetSurvivalPreviewUpgradeModifyData()
   if 0 ~= PreviewUpgradeModifyData.Status then
@@ -1119,6 +1187,7 @@ function LogicGenericModify:SurvivalRequestUpgradeModify()
     end
   end
 end
+
 function LogicGenericModify:SurvivalRequestSpecificModify()
   local PreviewSpecificModifyData = self:GetSurvivalPreviewSpecificModifyData()
   if 0 ~= PreviewSpecificModifyData.Status then
@@ -1137,6 +1206,7 @@ function LogicGenericModify:SurvivalRequestSpecificModify()
     end
   end
 end
+
 function LogicGenericModify:SurvivalRequestSpecificModifyEx(Refresh)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   local SurvivalModeComp = Character:GetComponentByClass(UE.URGSurvivalModeComponent:StaticClass())

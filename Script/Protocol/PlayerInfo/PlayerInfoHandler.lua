@@ -2,6 +2,7 @@ local UnLua = _G.UnLua
 local rapidjson = require("rapidjson")
 local PlayerInfoData = require("Modules.PlayerInfoMain.PlayerInfo.PlayerInfoData")
 local PlayerInfoHandler = {}
+
 function PlayerInfoHandler.RequestBattleStatistic(GameModeList, roleId)
   local roleID = roleId or DataMgr.GetUserId()
   local param = {
@@ -32,6 +33,7 @@ function PlayerInfoHandler.RequestBattleStatistic(GameModeList, roleId)
     end
   })
 end
+
 function PlayerInfoHandler.RequestGetPortraits()
   HttpCommunication.RequestByGet("playerservice/portraits", {
     GameInstance,
@@ -48,6 +50,7 @@ function PlayerInfoHandler.RequestGetPortraits()
     end
   })
 end
+
 function PlayerInfoHandler.RequestGetBanners()
   HttpCommunication.RequestByGet("playerservice/banners", {
     GameInstance,
@@ -64,6 +67,7 @@ function PlayerInfoHandler.RequestGetBanners()
     end
   })
 end
+
 function PlayerInfoHandler.RequestSetPortrait(PortraitID)
   HttpCommunication.Request("playerservice/portrait", {portraitID = PortraitID}, {
     GameInstance,
@@ -77,6 +81,7 @@ function PlayerInfoHandler.RequestSetPortrait(PortraitID)
     end
   }, false, true)
 end
+
 function PlayerInfoHandler.RequestSetNick(NickName)
   HttpCommunication.Request("playerservice/changenickname", {val = NickName}, {
     GameInstance,
@@ -91,6 +96,7 @@ function PlayerInfoHandler.RequestSetNick(NickName)
     end
   }, false, true)
 end
+
 function PlayerInfoHandler.RequestSetBanner(BannerId)
   HttpCommunication.Request("playerservice/banner", {bannerID = BannerId}, {
     GameInstance,
@@ -104,6 +110,7 @@ function PlayerInfoHandler.RequestSetBanner(BannerId)
     end
   }, false, true)
 end
+
 function PlayerInfoHandler.RequestSetDisplayHero(HeroId, Callback)
   HttpCommunication.Request("hero/setdisplayhero", {heroID = HeroId}, {
     GameInstance,
@@ -119,6 +126,7 @@ function PlayerInfoHandler.RequestSetDisplayHero(HeroId, Callback)
     end
   }, false, true)
 end
+
 function PlayerInfoHandler.RequestGetDisplayHeroInfo(RoleID)
   local Path = "hero/getdisplayheroinfo?roleID="
   if RoleID then
@@ -142,4 +150,5 @@ function PlayerInfoHandler.RequestGetDisplayHeroInfo(RoleID)
     end
   })
 end
+
 return PlayerInfoHandler

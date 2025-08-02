@@ -16,6 +16,7 @@ local LoginData = require("Modules.Login.LoginData")
 local PandoraModule = require("Modules.Pandora.PandoraModule")
 local RechargeData = require("Modules.Recharge.RechargeData")
 local MaxResourceNum = 10000
+
 function BP_RGCheatManager_C:AddLobbyResourceCurrency(CurrencyId, CurrencyNum)
   local Param = {
     roleId = DataMgr.GetUserId(),
@@ -37,13 +38,16 @@ function BP_RGCheatManager_C:AddLobbyResourceCurrency(CurrencyId, CurrencyNum)
     end
   }, false, true)
 end
+
 function BP_RGCheatManager_C:FinishConsoleAchievement(TaskId, Percent)
   UE.UOnlineGameUtilsLibrary.MakeAchievement(GameInstance, TaskId, Percent)
 end
+
 function BP_RGCheatManager_C:NetBarClientPrivilegeType(PrivilegeType)
   DataMgr.SetNetBarPrivilegeType(PrivilegeType)
   EventSystem.Invoke(EventDef.Lobby.OnIigwRequestPrivilege)
 end
+
 function BP_RGCheatManager_C:AddChip(CurrencyId, CurrencyNum, BindHeroID, Inscription)
   Inscription = Inscription or 0
   local tbGeneral = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
@@ -79,6 +83,7 @@ function BP_RGCheatManager_C:AddChip(CurrencyId, CurrencyNum, BindHeroID, Inscri
     end
   }, false, true)
 end
+
 function BP_RGCheatManager_C:AddLobbyExp(ExpNum)
   local Param = {value = ExpNum}
   HttpCommunication.Request("dbg/playerservice/addexp", Param, {
@@ -90,9 +95,11 @@ function BP_RGCheatManager_C:AddLobbyExp(ExpNum)
     end
   }, false, true)
 end
+
 function BP_RGCheatManager_C:DbgAddExpSuccess(JsonResponse)
   EventSystem.Invoke(EventDef.Lobby.DBGAddExp)
 end
+
 function BP_RGCheatManager_C:UpgradeAllCommonTalent()
   HttpCommunication.Request("dbg/hero/onekeyupgcommontalent", {}, {
     self,
@@ -105,6 +112,7 @@ function BP_RGCheatManager_C:UpgradeAllCommonTalent()
     end
   })
 end
+
 function BP_RGCheatManager_C:SetCommonTalentLevel(TalentId, Level)
   local Params = {groupId = TalentId, level = Level}
   local MaxLevel = LogicTalent.GetMaxLevelByTalentId(TalentId)
@@ -122,6 +130,7 @@ function BP_RGCheatManager_C:SetCommonTalentLevel(TalentId, Level)
     end
   })
 end
+
 function BP_RGCheatManager_C:SetHeroTalentLevel(HeroId, TalentId, Level)
   local Params = {
     heroId = HeroId,
@@ -146,6 +155,7 @@ function BP_RGCheatManager_C:SetHeroTalentLevel(HeroId, TalentId, Level)
     end
   })
 end
+
 function BP_RGCheatManager_C:OneKeyAddLobbyResource()
   local GMDeveloperSettings = UE.UGMDeveloperSettings.GetGMDeveloperSettings()
   if not GMDeveloperSettings then
@@ -157,24 +167,30 @@ function BP_RGCheatManager_C:OneKeyAddLobbyResource()
     end
   end
 end
+
 function BP_RGCheatManager_C:LobbyDebugUI()
   local settings = UE.URGLobbySettings.GetLobbySettings()
   if settings then
     settings:BroadcastLobbyDebugUIDelegate()
   end
 end
+
 function BP_RGCheatManager_C:SetSoundEnabled(Enabled)
   UE.UAudioManager.SetSoundEnabled(Enabled)
 end
+
 function BP_RGCheatManager_C:SetMusicEnabled(Enabled)
   UE.UAudioManager.SetMusicEnabled(Enabled)
 end
+
 function BP_RGCheatManager_C:SetVoiceEnabled(Enabled)
   UE.UAudioManager.SetVoiceEnabled(Enabled)
 end
+
 function BP_RGCheatManager_C:SetSoundVolume(Volume)
   UE.UAudioManager.SetSoundVolume(Volume)
 end
+
 function BP_RGCheatManager_C:SetMusicVolume(Type, Volume)
   if Type then
     UE.UAudioManager.SetBattleMusicVolume(Volume)
@@ -182,12 +198,15 @@ function BP_RGCheatManager_C:SetMusicVolume(Type, Volume)
     UE.UAudioManager.SetHallMusicVolume(Volume)
   end
 end
+
 function BP_RGCheatManager_C:SetVoiceVolume(Volume)
   UE.UAudioManager.SetVoiceVolume(Volume)
 end
+
 function BP_RGCheatManager_C:OpenGameMode(Index, ModeId, InFloor)
   LogicTeam.RequestSetTeamDataToServer(Index, ModeId, InFloor)
 end
+
 function BP_RGCheatManager_C:PreDeductTicket(SelectNum)
   if not DataMgr.IsInTeam() then
     LogicTeam.RequestCreateTeamToServer({
@@ -200,6 +219,7 @@ function BP_RGCheatManager_C:PreDeductTicket(SelectNum)
     LogicTeam.RequestPreDeductTicket(SelectNum)
   end
 end
+
 function BP_RGCheatManager_C:HideUI(IsHide)
   local VersionSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.URGVersionSubsystem:StaticClass())
   if VersionSubsystem and CompareStringsIgnoreCase(VersionSubsystem.Branch, "shipping") then
@@ -210,18 +230,21 @@ function BP_RGCheatManager_C:HideUI(IsHide)
     UIManager:HideAllWidget(IsHide)
   end
 end
+
 function BP_RGCheatManager_C:PandoraOpenApp(AppID, AppArgs)
   local Pandora = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGPandoraSubsystem:StaticClass())
   if Pandora then
     Pandora:OpenApp(AppID, AppArgs)
   end
 end
+
 function BP_RGCheatManager_C:PandoraCloseApp(AppID)
   local Pandora = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGPandoraSubsystem:StaticClass())
   if Pandora then
     Pandora:CloseApp(AppID)
   end
 end
+
 function BP_RGCheatManager_C:PandoraRefreshADData(AdId)
   if 0 == AdId then
     PandoraModule:OnSDKMessage("{\"type\":\"pandoraActTabReady\",\"redPoint\":\"0\",\"appId\":\"6978\",\"appName\":\"actcenter\",\"sortPriority\":\"1\",\"tabName\":\"\231\178\190\233\128\137\"}")
@@ -229,6 +252,7 @@ function BP_RGCheatManager_C:PandoraRefreshADData(AdId)
     PandoraModule:OnSDKMessage("{\"type\":\"pandoraActTabReady\",\"redPoint\":\"1\",\"appId\":\"6978\",\"appName\":\"actcenter\",\"sortPriority\":\"1\",\"tabName\":\"\231\178\190\233\128\137\"}")
   end
 end
+
 function BP_RGCheatManager_C:PandoraActTabReady(redPoint)
   if 0 == redPoint then
     PandoraModule:OnSDKMessage("{\"type\":\"pandoraActTabReady\",\"redPoint\":\"0\",\"appId\":\"6978\",\"appName\":\"actcenter\",\"sortPriority\":\"1\",\"tabName\":\"\231\178\190\233\128\137\"}")
@@ -236,6 +260,7 @@ function BP_RGCheatManager_C:PandoraActTabReady(redPoint)
     PandoraModule:OnSDKMessage("{\"type\":\"pandoraActTabReady\",\"redPoint\":\"1\",\"appId\":\"6978\",\"appName\":\"actcenter\",\"sortPriority\":\"1\",\"tabName\":\"\231\178\190\233\128\137\"}")
   end
 end
+
 function BP_RGCheatManager_C:Revert3DLobbyPawnTransform()
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
   if not PC then
@@ -264,6 +289,7 @@ function BP_RGCheatManager_C:Revert3DLobbyPawnTransform()
     Pawn:K2_SetActorTransform(Transform, false, nil, false)
   end
 end
+
 function BP_RGCheatManager_C:ChangeNickName(InNickName)
   HttpCommunication.Request("playerservice/nickname", {val = InNickName}, {
     self,
@@ -295,6 +321,7 @@ function BP_RGCheatManager_C:ChangeNickName(InNickName)
     end
   })
 end
+
 function BP_RGCheatManager_C:CompleteSpecifiedModeFloor(ModeId, WorldId, Floor)
   HttpCommunication.Request("dbg/playergrowth/gamefloor/unlockgamefloor", {
     gamemode = ModeId,
@@ -313,6 +340,7 @@ function BP_RGCheatManager_C:CompleteSpecifiedModeFloor(ModeId, WorldId, Floor)
     end
   })
 end
+
 function BP_RGCheatManager_C:SetHeroProy(heroId, Profy)
   HttpCommunication.Request("dbg/hero/setheroprofy", {heroId = heroId, profy = Profy}, {
     self,
@@ -327,12 +355,15 @@ function BP_RGCheatManager_C:SetHeroProy(heroId, Profy)
     end
   })
 end
+
 function BP_RGCheatManager_C:OpenBeginnerGuidanceLogic(IsExecute)
   LogicLobby.IsExecuteBeginnerGuidance = IsExecute
 end
+
 function BP_RGCheatManager_C:ForceOpenBeginnerGuidanceLevel(...)
   LogicLobby.IsForceOpenBeginnerGuidanceLevel = true
 end
+
 function BP_RGCheatManager_C:SetFakeTime(Date, TargetTime)
   print("\232\174\190\231\189\174\230\151\182\233\151\180", Date .. " " .. TargetTime)
   HttpCommunication.Request("dbg/hotfix/setfaketime", {
@@ -349,6 +380,7 @@ function BP_RGCheatManager_C:SetFakeTime(Date, TargetTime)
     end
   })
 end
+
 function BP_RGCheatManager_C:ResetFakeTime()
   HttpCommunication.RequestByGet("dbg/hotfix/resetfaketime", {
     self,
@@ -362,6 +394,7 @@ function BP_RGCheatManager_C:ResetFakeTime()
     end
   })
 end
+
 function BP_RGCheatManager_C:SendMail(Title, Content, ItemId, ItemNum)
   local Params = {
     request = {
@@ -393,6 +426,7 @@ function BP_RGCheatManager_C:SendMail(Title, Content, ItemId, ItemNum)
     end
   })
 end
+
 function BP_RGCheatManager_C:SendMailByTemplate(TemplateId)
   local Params = {
     request = {
@@ -415,6 +449,7 @@ function BP_RGCheatManager_C:SendMailByTemplate(TemplateId)
     end
   })
 end
+
 function BP_RGCheatManager_C:DeleteMail(Id)
   HttpCommunication.Request("dbg/mail/gmdelete", {
     ids = {Id}
@@ -430,6 +465,7 @@ function BP_RGCheatManager_C:DeleteMail(Id)
     end
   })
 end
+
 function BP_RGCheatManager_C:DeleteMail(Id)
   HttpCommunication.Request("dbg/mail/gmdelete", {
     ids = {Id}
@@ -445,6 +481,7 @@ function BP_RGCheatManager_C:DeleteMail(Id)
     end
   })
 end
+
 function BP_RGCheatManager_C:DoFinishAndGetAllProfyTaskByHeroId(HeroId)
   local tbProfyTask = LuaTableMgr.GetLuaTableByName(TableNames.TBProfyTask)
   local tbTaskGroup = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskGroupData)
@@ -547,6 +584,7 @@ function BP_RGCheatManager_C:DoFinishAndGetAllProfyTaskByHeroId(HeroId)
     end
   end
 end
+
 function BP_RGCheatManager_C:DoFinishMainTask(GroupId, TaskId)
   if nil == TaskId or "" == TaskId then
     local TBTaskGroupTable = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskGroupData)
@@ -580,6 +618,7 @@ function BP_RGCheatManager_C:DoFinishMainTask(GroupId, TaskId)
     end
   })
 end
+
 function BP_RGCheatManager_C:DoFinishAllMainTasks()
   local TBMainStoryLineTable = LuaTableMgr.GetLuaTableByName(TableNames.TBMainStoryLine)
   local MainStoryGroupId = 1
@@ -596,12 +635,14 @@ function BP_RGCheatManager_C:DoFinishAllMainTasks()
     end
   end
 end
+
 function BP_RGCheatManager_C:SwitchFakeTeamDataWithMe()
   LogicLobby.IsFakeTeamData = LogicLobby.IsFakeTeamData == nil and true or not LogicLobby.IsFakeTeamData
   if LogicLobby.IsFakeTeamData then
     LogicTeam.RequestGetMyTeamDataToServer()
   end
 end
+
 function BP_RGCheatManager_C:CheckSensitiveWords(Path)
   if not Path or "" == Path then
     Path = "E:\\SensitiveWords.txt"
@@ -641,28 +682,36 @@ function BP_RGCheatManager_C:CheckSensitiveWords(Path)
     end
   end
 end
+
 function BP_RGCheatManager_C:CheatComLink(ComLinkRowName)
   ComLink(ComLinkRowName)
 end
+
 function BP_RGCheatManager_C:CheatOpenThreedUI()
   UIMgr:Show(ViewID.UI_ThreeDUITest)
 end
+
 function BP_RGCheatManager_C:CheatSetBattleLagacyList(Id1, Id2, Id3)
   BattleLagacyHandler:Setbattlelagacylist(Id1, Id2, Id3)
 end
+
 function BP_RGCheatManager_C:CheatSetBattleLagacy(Id)
   BattleLagacyHandler:Setbattlelagacy(Id)
 end
+
 function BP_RGCheatManager_C:SetVoiceLanguage(NewCulture)
   UE.UAudioManager.SetVoiceLanguage(NewCulture)
 end
+
 function BP_RGCheatManager_C:ChangeCulture(NewCulture)
   local LocalizationModule = ModuleManager:Get("LocalizationModule")
   LocalizationModule:LuaCustomSetCurrentCulture(NewCulture, false)
 end
+
 function BP_RGCheatManager_C:ToggleUIHideThenDestroy()
   UIMgr:ToggleViewHideThenDestroy()
 end
+
 function BP_RGCheatManager_C:AddHeroProfyExp(Exp)
   local Params = {
     exp = Exp,
@@ -681,11 +730,13 @@ function BP_RGCheatManager_C:AddHeroProfyExp(Exp)
     end
   })
 end
+
 function BP_RGCheatManager_C:FinishBeginnerBD()
   EventSystem.Invoke(EventDef.WSMessage.HeroesExpired, {
     DataMgr.GetMyHeroInfo().equipHero
   })
 end
+
 function BP_RGCheatManager_C:UnlockChipSlot(Slot)
   local LobbyModule = ModuleManager:Get("LobbyModule")
   local tbChipSlot = LuaTableMgr.GetLuaTableByName(TableNames.TBChipSlots)
@@ -705,6 +756,7 @@ function BP_RGCheatManager_C:UnlockChipSlot(Slot)
     end
   end
 end
+
 function BP_RGCheatManager_C:PrintServerTime()
   local url = "dbg/hotfix/getservertime"
   HttpCommunication.Request(url, {}, {
@@ -725,6 +777,7 @@ function BP_RGCheatManager_C:PrintServerTime()
     end
   })
 end
+
 function BP_RGCheatManager_C:CompleteSpecifiedModeFloorWithCallback(WorldId, Floor, Callback)
   HttpCommunication.Request("dbg/playergrowth/gamefloor/unlockgamefloor", {
     gamemode = 1001,
@@ -749,6 +802,7 @@ function BP_RGCheatManager_C:CompleteSpecifiedModeFloorWithCallback(WorldId, Flo
     end
   })
 end
+
 function BP_RGCheatManager_C:SetHeroProyWithCallback(heroId, Profy, Callback)
   HttpCommunication.Request("dbg/hero/setheroprofy", {heroId = heroId, profy = Profy}, {
     self,
@@ -769,6 +823,7 @@ function BP_RGCheatManager_C:SetHeroProyWithCallback(heroId, Profy, Callback)
     end
   })
 end
+
 function BP_RGCheatManager_C:DoFinishMainTaskWithCallback(GroupId, TaskId, Callback)
   HttpCommunication.Request("dbg/task/finish", {groupID = GroupId, taskID = TaskId}, {
     GameInstance,
@@ -785,6 +840,7 @@ function BP_RGCheatManager_C:DoFinishMainTaskWithCallback(GroupId, TaskId, Callb
     end
   })
 end
+
 function BP_RGCheatManager_C:CheatAddLobbyResource(CurrencyId, CurrencyNum, Callback)
   local Param = {
     roleId = DataMgr.GetUserId(),
@@ -813,6 +869,7 @@ function BP_RGCheatManager_C:CheatAddLobbyResource(CurrencyId, CurrencyNum, Call
     end
   }, false, true)
 end
+
 function BP_RGCheatManager_C:CheatAddChip(CurrencyId, CurrencyNum, BindHeroID, Inscription, SubAttr, Callback)
   Inscription = Inscription or 0
   local tbGeneral = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
@@ -861,6 +918,7 @@ function BP_RGCheatManager_C:CheatAddChip(CurrencyId, CurrencyNum, BindHeroID, I
     end
   }, false, true)
 end
+
 function BP_RGCheatManager_C:BatchCheatCB(CfgId)
   print("Start BatchCheatCB...........", CfgId)
   if BatchCheatCfg.ChipCfgListMap[CfgId] then
@@ -942,6 +1000,7 @@ function BP_RGCheatManager_C:BatchCheatCB(CfgId)
     self:CheatAddLobbyResource(99996, BatchCheatCfg.EXPCfg[CfgId])
   end
 end
+
 function BP_RGCheatManager_C:BatchCheat(CfgId)
   local result, batchCheatInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBLobbyBatchCheat, CfgId)
   if not result then
@@ -1061,6 +1120,7 @@ function BP_RGCheatManager_C:BatchCheat(CfgId)
     end
   }, false, true)
 end
+
 function BP_RGCheatManager_C:CheatChatSystem(SystemMsgID, MsgType)
   local result, row = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBSystemMsg, tonumber(SystemMsgID))
   if not result then
@@ -1082,12 +1142,15 @@ function BP_RGCheatManager_C:CheatChatSystem(SystemMsgID, MsgType)
     end
   })
 end
+
 function BP_RGCheatManager_C:ForceActivateGuide(GuideId)
   BeginnerGuideModule:ForceInitByGuideId(GuideId)
 end
+
 function BP_RGCheatManager_C:RequestUnlockSystem(SysId)
   SystemUnlockHandler:RequestUnlockSystem(SysId)
 end
+
 function BP_RGCheatManager_C:FinishAllFragmentTask()
   local ClueTable = LuaTableMgr.GetLuaTableByName(TableNames.TBClue)
   local TaskGroupTable = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskGroupData)
@@ -1102,12 +1165,14 @@ function BP_RGCheatManager_C:FinishAllFragmentTask()
     end
   end
 end
+
 function BP_RGCheatManager_C:FinishAllBeginnerGuide()
   local TotalGuideTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGuide)
   for GuideId, GuideInfo in pairs(TotalGuideTable) do
     BeginnerGuideModule:FinishGuide(GuideId)
   end
 end
+
 function BP_RGCheatManager_C:BuyMidasProduct(ProductId, Quantity)
   if not UE.URGPlatformFunctionLibrary.IsLIPassEnabled() then
     local OnlinePurchaseSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.UOnlinePurchaseSystem:StaticClass())
@@ -1148,6 +1213,7 @@ function BP_RGCheatManager_C:BuyMidasProduct(ProductId, Quantity)
     })
   end
 end
+
 function BP_RGCheatManager_C:GetMidasProductInfo(ProductId)
   if not ProductId then
     return
@@ -1157,42 +1223,53 @@ function BP_RGCheatManager_C:GetMidasProductInfo(ProductId)
     UE.URGPlatformFunctionLibrary.CTIGetProductInfo({ProductId})
   end
 end
+
 function BP_RGCheatManager_C:RequestEquipHeroToServer(HeroId, Callback)
   LogicRole.RequestEquipHeroToServer(HeroId, Callback)
 end
+
 function BP_RGCheatManager_C:EnableChannelInfoLog(bEnable)
   DataMgr.EnableChannelInfoLog = bEnable
 end
+
 function BP_RGCheatManager_C:ShowUI(UIName, bHideOther)
   local SeasonModule = ModuleManager:Get("SeasonModule")
   SeasonModule.bShowSeasonModeSelectPop = true
   UIMgr:Show(ViewID[UIName], bHideOther)
 end
+
 function BP_RGCheatManager_C:CheatShowCustomerServiceUrl(bShow)
   EventSystem.Invoke(EventDef.CustomerService.CheatShow, bShow > 0)
 end
+
 function BP_RGCheatManager_C:CheatSwitchTestINTLUrl(bTest)
   EventSystem.Invoke(EventDef.CustomerService.CheatSwitchTest, bTest > 0)
 end
+
 function BP_RGCheatManager_C:SetPlayerInvisible(Type, Invisible)
   DataMgr.SetPlayerInvisible(Type, Invisible)
 end
+
 function BP_RGCheatManager_C:GetPlayerInvisible(Type)
   return DataMgr.GetPlayerInvisible(Type)
 end
+
 function BP_RGCheatManager_C:SetCurRechargeTimestamp(Timestamp)
   RechargeData.SetCurRechargeTimestamp(Timestamp)
 end
+
 function BP_RGCheatManager_C:GetCurRechargeTimestamp()
   local DateStr1 = os.date("%Y\229\185\180%m\230\156\136%d\230\151\165", RechargeData.GetMonthRechargeTimestamp())
   local DateStr2 = os.date("%Y\229\185\180%m\230\156\136%d\230\151\165", RechargeData.GetCurRechargeTimestamp())
   print("MonthRechargeTimestamp:", DateStr1)
   print("CurRechargeTimestamp:", DateStr2)
 end
+
 function BP_RGCheatManager_C:CheatMarquee(Content, Interval, RepeatCount, PriorityLevel)
   local MarqueeData = UE.FMarqueeData()
   MarqueeData = UE.URGBlueprintLibrary.InitMarqueeData(nil, Content, Interval, RepeatCount, PriorityLevel)
   UE.URGMarqueeSubsystem.Get(GameInstance):AddMarqueeData(MarqueeData)
   UIMgr.ActiveViews:Get(ViewID.UI_Marquee):InitMarquee()
 end
+
 return BP_RGCheatManager_C

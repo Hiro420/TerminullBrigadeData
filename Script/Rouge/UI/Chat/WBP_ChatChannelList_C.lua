@@ -1,8 +1,10 @@
 local WBP_ChatChannelList_C = UnLua.Class()
+
 function WBP_ChatChannelList_C:Construct()
   self.Overridden.Construct(self)
   self.RGToggleGroupChannel.OnCheckStateChanged:Add(self, self.OnToggleCheckStateChanged)
 end
+
 function WBP_ChatChannelList_C:ShowChannelList(ParentView)
   self.ParentView = ParentView
   local Index = 1
@@ -22,14 +24,17 @@ function WBP_ChatChannelList_C:ShowChannelList(ParentView)
   HideOtherItem(self.HorizontalBoxChannelList, Index)
   self.RGToggleGroupChannel:SelectId(LogicChat.CurSelectChannel)
 end
+
 function WBP_ChatChannelList_C:OnToggleCheckStateChanged(SelectIndex)
   if self.ParentView then
     self.ParentView:SetCurSelectChannel(SelectIndex)
   end
 end
+
 function WBP_ChatChannelList_C:Destruct()
   self.Overridden.Destruct(self)
   self.ParentView = nil
   self.RGToggleGroupChannel.OnCheckStateChanged:Remove(self, self.OnToggleCheckStateChanged)
 end
+
 return WBP_ChatChannelList_C

@@ -1,12 +1,15 @@
 local rapidjson = require("rapidjson")
 LogicOutsideWeapon = LogicOutsideWeapon or {IsInit = false, WeaponDetailsAttrPreviewNum = 3}
+
 function LogicOutsideWeapon.Init()
   LogicOutsideWeapon.HeroWeaponList = {}
   LogicOutsideWeapon.DealWithTable()
 end
+
 function LogicOutsideWeapon.Clear()
   LogicOutsideWeapon.HeroWeaponList = {}
 end
+
 function LogicOutsideWeapon.DealWithTable()
   local WeaponTable = LuaTableMgr.GetLuaTableByName(TableNames.TBWeapon)
   if not WeaponTable then
@@ -23,6 +26,7 @@ function LogicOutsideWeapon.DealWithTable()
     end
   end
 end
+
 function LogicOutsideWeapon.GetCurCanEquipWeaponList(HeroId)
   local AllHeroCanEquipWeaponList = LogicOutsideWeapon.GetAllCanEquipWeaponList(HeroId)
   if not AllHeroCanEquipWeaponList then
@@ -37,6 +41,7 @@ function LogicOutsideWeapon.GetCurCanEquipWeaponList(HeroId)
   end
   return TargetList
 end
+
 function LogicOutsideWeapon.GetAllCanEquipWeaponDataList(HeroId)
   local AllHeroCanEquipWeaponList = LogicOutsideWeapon.GetAllCanEquipWeaponList(HeroId)
   if not AllHeroCanEquipWeaponList then
@@ -68,6 +73,7 @@ function LogicOutsideWeapon.GetAllCanEquipWeaponDataList(HeroId)
   end
   return TargetList
 end
+
 function LogicOutsideWeapon.GetHeroIdByWeaponId(WeaponId)
   for heroId, v in pairs(LogicOutsideWeapon.HeroWeaponList) do
     for iWeapon, vWeapon in pairs(v) do
@@ -78,6 +84,7 @@ function LogicOutsideWeapon.GetHeroIdByWeaponId(WeaponId)
   end
   return -1
 end
+
 function LogicOutsideWeapon.GetResStoneEquipDataByWeaponId(WeaponId)
   local AllWeaponList = DataMgr.GetWeaponList()
   local weaponInfo
@@ -96,6 +103,7 @@ function LogicOutsideWeapon.GetResStoneEquipDataByWeaponId(WeaponId)
   end
   return nil, nil
 end
+
 function LogicOutsideWeapon.GetWeaponInfoByWeaponResId(WeaponResId)
   local AllWeaponList = DataMgr.GetWeaponList()
   for index, SingleWeaponInfo in ipairs(AllWeaponList) do
@@ -105,12 +113,14 @@ function LogicOutsideWeapon.GetWeaponInfoByWeaponResId(WeaponResId)
   end
   return nil
 end
+
 function LogicOutsideWeapon.GetAllCanEquipWeaponList(HeroId)
   if not LogicOutsideWeapon.HeroWeaponList then
     return nil
   end
   return LogicOutsideWeapon.HeroWeaponList[HeroId]
 end
+
 function LogicOutsideWeapon.RequestEquippedWeaponInfo(HeroId, callback)
   print("LogicOutsideWeapon.RequestEquippedWeaponInfo", HeroId)
   local Path = "hero/getheroequipweapon?heroId=" .. HeroId
@@ -133,6 +143,7 @@ function LogicOutsideWeapon.RequestEquippedWeaponInfo(HeroId, callback)
     end
   })
 end
+
 function LogicOutsideWeapon.RequestGetWeaponList(SuccFunc, SkinId, WeaponId)
   HttpCommunication.RequestByGet("hero/weaponlist", {
     GameInstance,
@@ -151,6 +162,7 @@ function LogicOutsideWeapon.RequestGetWeaponList(SuccFunc, SkinId, WeaponId)
     end
   })
 end
+
 function LogicOutsideWeapon.RequestEquipWeapon(HeroId, WeaponId, SlotId, WeaponResId)
   local Param = {
     heroId = HeroId,
@@ -179,6 +191,7 @@ function LogicOutsideWeapon.RequestEquipWeapon(HeroId, WeaponId, SlotId, WeaponR
     end
   })
 end
+
 function LogicOutsideWeapon.RequestUnEquipWeapon(HeroId, SlotId)
   local Param = {heroId = HeroId, slot = SlotId}
   HttpCommunication.Request("hero/unequipheroweapon", Param, {
@@ -191,6 +204,7 @@ function LogicOutsideWeapon.RequestUnEquipWeapon(HeroId, SlotId)
     end
   })
 end
+
 function LogicOutsideWeapon.RequestAccessoryListToServer()
   HttpCommunication.RequestByGet("hero/accessorylist", {
     GameInstance,
@@ -202,6 +216,7 @@ function LogicOutsideWeapon.RequestAccessoryListToServer()
     end
   })
 end
+
 function LogicOutsideWeapon.GetWeaponDamage(MainBodyId, bIsBattle)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -219,6 +234,7 @@ function LogicOutsideWeapon.GetWeaponDamage(MainBodyId, bIsBattle)
     end
   end
 end
+
 function LogicOutsideWeapon.GetWeaponAttributeValue(TempString, AttributeConfig, AllMainAttributeListTable, bIsBattle)
   if bIsBattle then
     return LogicOutsideWeapon.SpecialBattleDealValue(TempString, AttributeConfig, AllMainAttributeListTable)
@@ -226,6 +242,7 @@ function LogicOutsideWeapon.GetWeaponAttributeValue(TempString, AttributeConfig,
     return LogicOutsideWeapon.SpecialDealValue(TempString, AttributeConfig, AllMainAttributeListTable)
   end
 end
+
 function LogicOutsideWeapon.SpecialBattleDealValue(TempString, AttributeConfig)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -243,6 +260,7 @@ function LogicOutsideWeapon.SpecialBattleDealValue(TempString, AttributeConfig)
   end
   return TargetValue
 end
+
 function LogicOutsideWeapon.SpecialDealValue(TempString, AttributeConfig, AllMainAttributeListTable)
   if "ReloadInterval" == TempString then
     for key, reloadValue in pairs(AllMainAttributeListTable) do

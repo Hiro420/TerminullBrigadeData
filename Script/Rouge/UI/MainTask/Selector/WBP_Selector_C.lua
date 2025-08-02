@@ -1,4 +1,5 @@
 local WBP_Selector_C = UnLua.Class()
+
 function WBP_Selector_C:InitSelector(Length, SelIndex, OnChangeFunC)
   self.MaxLeng = Length
   self.Index = SelIndex
@@ -17,6 +18,7 @@ function WBP_Selector_C:InitSelector(Length, SelIndex, OnChangeFunC)
   end
   HideOtherItem(self.HorizontalBox, Length)
 end
+
 function WBP_Selector_C:SelectedItemWidget(ItemWidget, bSel)
   if self.LastWidget and false ~= bSel then
     UpdateVisibility(self.LastWidget.Image_Sel, false)
@@ -28,6 +30,7 @@ function WBP_Selector_C:SelectedItemWidget(ItemWidget, bSel)
     end
   end
 end
+
 function WBP_Selector_C:CheckIndex()
   if self.Index <= 0 then
     self.Index = self.MaxLeng
@@ -36,6 +39,7 @@ function WBP_Selector_C:CheckIndex()
     self.Index = 1
   end
 end
+
 function WBP_Selector_C:SetSelectByIndex(Index)
   self.Index = Index
   self:CheckIndex()
@@ -47,4 +51,5 @@ function WBP_Selector_C:SetSelectByIndex(Index)
     end
   end
 end
+
 return WBP_Selector_C

@@ -3,6 +3,7 @@ local UnLua = _G.UnLua
 local rapidjson = require("rapidjson")
 local SkinData = require("Modules.Appearance.Skin.SkinData")
 local SkinHandler = {}
+
 function SkinHandler.SendEquipHeroSkinReq(HeroId, skinId)
   local url = "hero/equipheroskin"
   HttpCommunication.Request(url, {heroID = HeroId, skinID = skinId}, {
@@ -17,6 +18,7 @@ function SkinHandler.SendEquipHeroSkinReq(HeroId, skinId)
     end
   })
 end
+
 function SkinHandler.SendGetHeroSkinList()
   local url = "hero/getheroskinlist"
   HttpCommunication.RequestByGet(url, {
@@ -44,6 +46,7 @@ function SkinHandler.SendGetHeroSkinList()
     end
   })
 end
+
 function SkinHandler.SendEquipWeaponSkinReq(SkinId, WeaponId)
   local url = "hero/equipweaponskin"
   HttpCommunication.Request(url, {skinID = SkinId, weaponID = WeaponId}, {
@@ -58,16 +61,19 @@ function SkinHandler.SendEquipWeaponSkinReq(SkinId, WeaponId)
     end
   })
 end
+
 function SkinHandler.SendGetWeaponSkinList()
   local url = "hero/getweaponskinlist"
   HttpCommunication.RequestByGet(url, {
     GameInstance,
     function(Target, JsonResponse)
       local JsonTable = rapidjson.decode(JsonResponse.Content)
-      if JsonTable.weaponSkinList then
-        for i, v in ipairs(JsonTable.weaponSkinInfos) do
-          for k, vSkinData in pairs(SkinData.WeaponSkinMap) do
-            for iWeaponSkinData, vWeaponSkinData in ipairs(vSkinData.SkinDataList) do
+      if JsonTable.weaponSkinInfos then
+        for k, vSkinData in pairs(SkinData.WeaponSkinMap) do
+          for iWeaponSkinData, vWeaponSkinData in ipairs(vSkinData.SkinDataList) do
+            vWeaponSkinData.bUnlocked = false
+            vWeaponSkinData.expireAt = nil
+            for i, v in ipairs(JsonTable.weaponSkinInfos) do
               if vWeaponSkinData.WeaponSkinTb.SkinID == v.skinID then
                 vWeaponSkinData.bUnlocked = true
                 vWeaponSkinData.expireAt = v.expireAt
@@ -84,6 +90,7 @@ function SkinHandler.SendGetWeaponSkinList()
     end
   })
 end
+
 function SkinHandler.SendBuyHeroSkin(SkinId)
   local url = "hero/buyheroskin"
   HttpCommunication.Request(url, {skinID = SkinId}, {
@@ -99,6 +106,7 @@ function SkinHandler.SendBuyHeroSkin(SkinId)
     end
   })
 end
+
 function SkinHandler.SendSetHeroSkinEffectState(EffectState, SkinId)
   local url = "hero/setheroskineffectstate"
   HttpCommunication.Request(url, {effectState = EffectState, skinID = SkinId}, {
@@ -113,4 +121,5 @@ function SkinHandler.SendSetHeroSkinEffectState(EffectState, SkinId)
     end
   })
 end
+
 return SkinHandler

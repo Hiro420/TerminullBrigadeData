@@ -1,19 +1,23 @@
 local WBP_InteractLevelPortalWidget_C = UnLua.Class()
+
 function WBP_InteractLevelPortalWidget_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_InteractLevelPortalWidget_C:Destruct()
   if self.AsyncLoadTipsImgHandleID and self.AsyncLoadTipsImgHandleID > 0 then
     UE.URGAssetManager.CancelAsyncLoad(self.AsyncLoadTipsImgHandleID)
     self.AsyncLoadTipsImgHandleID = nil
   end
 end
+
 function WBP_InteractLevelPortalWidget_C:UpdateInteractInfo(InteractTipRow, TargetActor)
   if not UE.RGUtil.IsUObjectValid(TargetActor) then
     return
   end
   self:InitInteractItem(TargetActor, InteractTipRow.Info)
 end
+
 function WBP_InteractLevelPortalWidget_C:InitInteractItem(TargetActor, Info)
   UpdateVisibility(self.CanvasPanelRoot, true)
   local Result, Row = GetRowData(DT.DT_WorldLevelPool, tostring(TargetActor:GetLevelId()))
@@ -64,7 +68,9 @@ function WBP_InteractLevelPortalWidget_C:InitInteractItem(TargetActor, Info)
     end
   end
 end
+
 function WBP_InteractLevelPortalWidget_C:HideWidget()
   UpdateVisibility(self.CanvasPanelRoot, false)
 end
+
 return WBP_InteractLevelPortalWidget_C

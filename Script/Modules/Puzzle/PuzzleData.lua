@@ -70,6 +70,7 @@ local EMutationType = {
 _G.EMutationType = EMutationType
 local PuzzleInfoConfig = require("GameConfig.Puzzle.PuzzleInfoConfig")
 local GemData = require("Modules.Gem.GemData")
+
 function PuzzleData:DealWithTable(...)
   local PuzzleSlotTable = LuaTableMgr.GetLuaTableByName(TableNames.TBPuzzleSlots)
   if not PuzzleSlotTable then
@@ -93,26 +94,32 @@ function PuzzleData:DealWithTable(...)
     end
   end
 end
+
 function PuzzleData:AddEquipPuzzleId(InHeroId, InPuzzleId)
   if not PuzzleData.AllEquipPuzzleIdList[InHeroId] then
     PuzzleData.AllEquipPuzzleIdList[InHeroId] = {}
   end
   table.insert(PuzzleData.AllEquipPuzzleIdList[InHeroId], InPuzzleId)
 end
+
 function PuzzleData:RemoveEquipPuzzleId(InHeroId, InPuzzleId)
   if PuzzleData.AllEquipPuzzleIdList[InHeroId] then
     table.RemoveItem(PuzzleData.AllEquipPuzzleIdList[InHeroId], InPuzzleId)
   end
 end
+
 function PuzzleData:ClearEquipPuzzleIdList()
   PuzzleData.AllEquipPuzzleIdList = {}
 end
+
 function PuzzleData:GetEquipPuzzleIdListByHeroId(InHeroId)
   return PuzzleData.AllEquipPuzzleIdList[InHeroId] or {}
 end
+
 function PuzzleData:RemoveEquipPuzzleIdListByHeroId(InHeroId)
   PuzzleData.AllEquipPuzzleIdList[InHeroId] = nil
 end
+
 function PuzzleData:SetPuzzleUnlockSlotList(InPuzzleUnlockSlotInfo)
   PuzzleData.PuzzleUnlockSlotList = InPuzzleUnlockSlotInfo
   for i, SingleSlotId in ipairs(PuzzleData.PuzzleUnlockSlotList) do
@@ -121,15 +128,18 @@ function PuzzleData:SetPuzzleUnlockSlotList(InPuzzleUnlockSlotInfo)
     end
   end
 end
+
 function PuzzleData:GetPuzzleSlotIdByCoordinate(HeroId, Coordinate)
   if PuzzleData.AllHeroPuzzleboardList[HeroId] and PuzzleData.AllHeroPuzzleboardList[HeroId][Coordinate.key] then
     return PuzzleData.AllHeroPuzzleboardList[HeroId][Coordinate.key][Coordinate.value]
   end
   return nil
 end
+
 function PuzzleData:GetPuzzleboardCoordinateByHeroId(HeroId)
   return PuzzleData.AllHeroPuzzleboardList[HeroId]
 end
+
 function PuzzleData:GetSlotIdListByHeroId(HeroId)
   local SlotIdList = {}
   if not PuzzleData.AllHeroPuzzleboardList[HeroId] then
@@ -142,11 +152,13 @@ function PuzzleData:GetSlotIdListByHeroId(HeroId)
   end
   return SlotIdList
 end
+
 function PuzzleData:RefreshSlotStatus(SlotId, Status)
   if PuzzleData.AllSlotStatus[SlotId] then
     PuzzleData.AllSlotStatus[SlotId] = Status
   end
 end
+
 function PuzzleData:GetSlotStatus(SlotId)
   if table.Contain(PuzzleData.PendingCanNotEquipSlotList, SlotId) then
     return EPuzzleSlotStatus.PendingCanNotEquip
@@ -159,50 +171,65 @@ function PuzzleData:GetSlotStatus(SlotId)
   end
   return PuzzleData.AllSlotStatus[SlotId]
 end
+
 function PuzzleData:GetSlotEquipPuzzleId(SlotId)
   return PuzzleData.AllSlotStatus[SlotId]
 end
+
 function PuzzleData:IsSlotEquipped(SlotId)
   local Status = PuzzleData.AllSlotStatus[SlotId]
   return type(Status) ~= "number"
 end
+
 function PuzzleData:IsPendingDrag(SlotId)
   return table.Contain(PuzzleData.PendingDragSlotList, SlotId)
 end
+
 function PuzzleData:SetSlotEquipId(PuzzleId, SlotIdList)
   PuzzleData.AllHeroPuzzleEquipList[PuzzleId] = SlotIdList
 end
+
 function PuzzleData:GetSlotListByPuzzleId(PuzzleId)
   return PuzzleData.AllHeroPuzzleEquipList[PuzzleId]
 end
+
 function PuzzleData:SetPendingEquipSlot(InPendingEquipSlot)
   PuzzleData.PendingEquipSlotList = InPendingEquipSlot
 end
+
 function PuzzleData:SetPendingCanNotEquipSlot(InPendingCanNotEquipSlot)
   PuzzleData.PendingCanNotEquipSlotList = InPendingCanNotEquipSlot
 end
+
 function PuzzleData:SetPendingDragSlotList(InPendingDragSlotList)
   PuzzleData.PendingDragSlotList = InPendingDragSlotList
 end
+
 function PuzzleData:GetPendingDragSlotList()
   return PuzzleData.PendingDragSlotList
 end
+
 function PuzzleData:GetPuzzleResourceIdByUid(InUid)
   local PackageInfo = PuzzleData:GetPuzzlePackageInfo(InUid)
   return tonumber(PackageInfo.resourceID)
 end
+
 function PuzzleData:SetPuzzleDetailInfo(PuzzleId, InDetailInfo)
   PuzzleData.AllPuzzleDetailInfo[PuzzleId] = InDetailInfo
 end
+
 function PuzzleData:GetPuzzleDetailInfo(InPuzzleId)
   return PuzzleData.AllPuzzleDetailInfo[InPuzzleId]
 end
+
 function PuzzleData:SetPuzzlePackageInfo(InPuzzlePackageInfo)
   PuzzleData.AllPuzzlePackageInfo[InPuzzlePackageInfo.uniqueID] = InPuzzlePackageInfo
 end
+
 function PuzzleData:RemovePuzzlePackageInfo(PuzzleId)
   PuzzleData.AllPuzzlePackageInfo[PuzzleId] = nil
 end
+
 function PuzzleData:SetPuzzleState(InPuzzleId, State)
   local PuzzlePackageInfo = PuzzleData:GetPuzzlePackageInfo(InPuzzleId)
   if not PuzzlePackageInfo then
@@ -210,6 +237,7 @@ function PuzzleData:SetPuzzleState(InPuzzleId, State)
   end
   PuzzlePackageInfo.state = State
 end
+
 function PuzzleData:SetPuzzleEquipHeroId(InPuzzleId, HeroId)
   local PuzzlePackageInfo = PuzzleData:GetPuzzlePackageInfo(InPuzzleId)
   if not PuzzlePackageInfo then
@@ -217,6 +245,7 @@ function PuzzleData:SetPuzzleEquipHeroId(InPuzzleId, HeroId)
   end
   PuzzlePackageInfo.equipHeroID = HeroId
 end
+
 function PuzzleData:SetPuzzleLevel(InPuzzleId, InLevel)
   local PuzzlePackageInfo = PuzzleData:GetPuzzlePackageInfo(InPuzzleId)
   if not PuzzlePackageInfo then
@@ -224,15 +253,18 @@ function PuzzleData:SetPuzzleLevel(InPuzzleId, InLevel)
   end
   PuzzlePackageInfo.level = InLevel
 end
+
 function PuzzleData:GetPuzzlePackageInfo(InPuzzleId)
   if not InPuzzleId then
     return nil
   end
   return PuzzleData.AllPuzzlePackageInfo[InPuzzleId]
 end
+
 function PuzzleData:GetAllPuzzlePackageInfo(...)
   return PuzzleData.AllPuzzlePackageInfo
 end
+
 function PuzzleData:GetAllPuzzlePackageIdList()
   local IdList = {}
   for PuzzleId, PuzzlePackageInfo in pairs(PuzzleData.AllPuzzlePackageInfo) do
@@ -240,6 +272,7 @@ function PuzzleData:GetAllPuzzlePackageIdList()
   end
   return IdList
 end
+
 function PuzzleData:CreatePuzzlePackageInfo(ResId, bindheroID, equipHeroID, Inscription)
   local PuzzlePackageInfo = {}
   PuzzlePackageInfo.bindHeroID = bindheroID
@@ -254,6 +287,7 @@ function PuzzleData:CreatePuzzlePackageInfo(ResId, bindheroID, equipHeroID, Insc
   PuzzlePackageInfo.Mutation = false
   return PuzzlePackageInfo
 end
+
 function PuzzleData:CreatePuzzleDetailInfo(SubAttr)
   local PuzzleDetailInfo = {}
   PuzzleDetailInfo.MainAttrGrowth = {}
@@ -261,6 +295,7 @@ function PuzzleData:CreatePuzzleDetailInfo(SubAttr)
   PuzzleDetailInfo.SubAttrInitV2 = SubAttr
   return PuzzleDetailInfo
 end
+
 function PuzzleData:GetAttrDisplayValue(AttrId, AttrValue)
   local result, row = GetRowData(DT.DT_AttributeModifyOp, tonumber(AttrId))
   if result then
@@ -268,6 +303,7 @@ function PuzzleData:GetAttrDisplayValue(AttrId, AttrValue)
   end
   return AttrValue
 end
+
 function PuzzleData:GetHeroPuzzleInfoByHeroId(HeroId)
   local PuzzleInfo = {}
   local AllPackageInfo = PuzzleData:GetAllPuzzlePackageInfo()
@@ -292,6 +328,7 @@ function PuzzleData:GetHeroPuzzleInfoByHeroId(HeroId)
   end
   return PuzzleInfoStr
 end
+
 function PuzzleData:GetUnEquipPuzzleUidByResIdAndLevel(ResId, Level)
   local AllPackageInfo = PuzzleData:GetAllPuzzlePackageInfo()
   for PuzzleId, PuzzlePackageInfo in pairs(AllPackageInfo) do
@@ -301,6 +338,7 @@ function PuzzleData:GetUnEquipPuzzleUidByResIdAndLevel(ResId, Level)
   end
   return nil
 end
+
 function PuzzleData:GetAllEquipAttrAndInscription(HeroId)
   local HeroSlotIdList = PuzzleData:GetSlotIdListByHeroId(HeroId)
   local EquipPuzzleIdList = {}
@@ -385,6 +423,7 @@ function PuzzleData:GetAllEquipAttrAndInscription(HeroId)
     return AttrList, InscriptionIdList
   end
 end
+
 function PuzzleData:GetPuzzleGemSlotInfo(PuzzleId)
   local PuzzleDetailInfo = PuzzleData:GetPuzzleDetailInfo(PuzzleId)
   if not PuzzleDetailInfo then
@@ -392,6 +431,7 @@ function PuzzleData:GetPuzzleGemSlotInfo(PuzzleId)
   end
   return PuzzleDetailInfo.GemSlotInfo
 end
+
 function PuzzleData:IsGodSubAttr(PuzzleId, PuzzleDetailInfo, AttrId)
   PuzzleDetailInfo = PuzzleDetailInfo or PuzzleData:GetPuzzleDetailInfo(PuzzleId)
   if not PuzzleDetailInfo then
@@ -404,6 +444,7 @@ function PuzzleData:IsGodSubAttr(PuzzleId, PuzzleDetailInfo, AttrId)
   end
   return false
 end
+
 function PuzzleData:IsPuzzleMutation(PuzzleId, PuzzlePackageInfo)
   PuzzlePackageInfo = PuzzlePackageInfo or PuzzleData:GetPuzzlePackageInfo(PuzzleId)
   if not PuzzlePackageInfo then
@@ -411,6 +452,7 @@ function PuzzleData:IsPuzzleMutation(PuzzleId, PuzzlePackageInfo)
   end
   return PuzzlePackageInfo.Mutation
 end
+
 function PuzzleData:GetPuzzleShapeRowInfo(PuzzleId, PuzzlePackageInfo)
   local PackageInfo = PuzzlePackageInfo or PuzzleData:GetPuzzlePackageInfo(PuzzleId)
   if not PackageInfo then
@@ -425,6 +467,7 @@ function PuzzleData:GetPuzzleShapeRowInfo(PuzzleId, PuzzlePackageInfo)
   local Result, ShapeRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBPuzzleShape, ShapeId)
   return Result, ShapeRowInfo
 end
+
 function PuzzleData:GetPuzzleName(PuzzleId, PuzzlePackageInfo, PuzzleDetailInfo)
   local PackageInfo = PuzzlePackageInfo or PuzzleData:GetPuzzlePackageInfo(PuzzleId)
   local DetailInfo = PuzzleDetailInfo or PuzzleData:GetPuzzleDetailInfo(PuzzleId)
@@ -486,12 +529,23 @@ function PuzzleData:GetPuzzleName(PuzzleId, PuzzlePackageInfo, PuzzleDetailInfo)
   end
   local MutationText = ""
   if PackageInfo.Mutation or PackageInfo.mutation then
-    MutationText = PuzzleInfoConfig.MutationName
+    MutationText = PuzzleInfoConfig.MutationName()
   end
   local NameFmt = PuzzleInfoConfig.NameFmt
   local Name = UE.FTextFormat(NameFmt, MutationText, MainAttrText, InscriptionText, ShapeText, GodAttrText, PowerfulInscriptionText)
   return Name
 end
+
+function PuzzleData:GetPuzzleInscriptionName(InscriptionId)
+  local PowerfulInscriptionText = ""
+  local Result, InscriptionGroupRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBPuzzleInscriptionGroup, InscriptionId)
+  if Result and InscriptionGroupRowInfo.EffectType == TableEnums.ENUMInscriptionType.Powerful then
+    PowerfulInscriptionText = PuzzleInfoConfig.PowerfulInscriptionText
+  end
+  local Name = UE.FTextFormat(PuzzleInfoConfig.InscriptionNameFmt, PowerfulInscriptionText, GetInscriptionName(InscriptionId))
+  return Name
+end
+
 function PuzzleData:ClearData(...)
   PuzzleData.AllSlotStatus = {}
   PuzzleData.PuzzleUnlockSlotList = {}
@@ -505,6 +559,7 @@ function PuzzleData:ClearData(...)
   PuzzleData.IsShowDetailPuzzleList = false
   PuzzleData.AllEquipPuzzleIdList = {}
 end
+
 function PuzzleData:ConvertV2Struct(SubattrV2)
   local SubAttrInitV2 = {}
   for i, SingleAttrInfo in ipairs(SubattrV2) do
@@ -522,4 +577,5 @@ function PuzzleData:ConvertV2Struct(SubattrV2)
   end
   return SubAttrInitV2
 end
+
 return PuzzleData

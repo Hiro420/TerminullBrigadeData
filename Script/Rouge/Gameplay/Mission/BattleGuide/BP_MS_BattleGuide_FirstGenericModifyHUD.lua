@@ -1,5 +1,6 @@
 local BP_MS_BattleGuide_FirstGenericModifyHUD = UnLua.Class()
 local BeginnerGuideModule = require("Modules.Beginner.BeginnerGuideModule")
+
 function BP_MS_BattleGuide_FirstGenericModifyHUD:MissionStarted(...)
   self:TriggerUIGuide()
   self.HideTimer = UE.UKismetSystemLibrary.K2_SetTimerDelegate({
@@ -14,6 +15,7 @@ function BP_MS_BattleGuide_FirstGenericModifyHUD:MissionStarted(...)
     end
   }, self.Duration, false)
 end
+
 function BP_MS_BattleGuide_FirstGenericModifyHUD:TriggerUIGuide(...)
   if UE.RGUtil.IsDedicatedServer() then
     return
@@ -23,4 +25,5 @@ function BP_MS_BattleGuide_FirstGenericModifyHUD:TriggerUIGuide(...)
   end
   BeginnerGuideModule:InitByGuideId(self.UIGuideId)
 end
+
 return BP_MS_BattleGuide_FirstGenericModifyHUD

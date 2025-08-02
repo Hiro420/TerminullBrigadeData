@@ -1,12 +1,14 @@
 local WBP_RoleChangeList_C = UnLua.Class()
 local ListContainer = require("Rouge.UI.Common.ListContainer")
 local rapidjson = require("rapidjson")
+
 function WBP_RoleChangeList_C:Construct()
   self.ListContainer = ListContainer.New(self.ItemTemplate:StaticClass())
   table.insert(self.ListContainer.AllWidgets, self.ItemTemplate)
   EventSystem.AddListener(self, EventDef.Lobby.UpdateMyHeroInfo, WBP_RoleChangeList_C.BindOnUpdateMyHeroInfo)
   self:RefreshRoleList(-1)
 end
+
 function WBP_RoleChangeList_C:RefreshRoleList(SelectIndex)
   self.RoleList:ClearChildren()
   self.ListContainer:ClearAllUseWidgets()
@@ -39,23 +41,28 @@ function WBP_RoleChangeList_C:RefreshRoleList(SelectIndex)
     EventSystem.Invoke(EventDef.Lobby.RoleItemClicked, SelectHeroId)
   end
 end
+
 function WBP_RoleChangeList_C:UnfocusInput()
 end
+
 function WBP_RoleChangeList_C:ShowPanel(HeroId)
   self:PlayInAnimation()
   if HeroId > 0 then
     EventSystem.Invoke(EventDef.Lobby.RoleItemClicked, HeroId, nil, true)
   end
 end
+
 function WBP_RoleChangeList_C:ShowPanelByIndex(Index, EliminateFunc, SortHeroListFunc, bIsShowItemEquiped)
   self.EliminateFunc = EliminateFunc
   self.CustomSortHeroList = SortHeroListFunc
   self.bIsShowItemEquiped = bIsShowItemEquiped
   self:RefreshRoleList(Index)
 end
+
 function WBP_RoleChangeList_C:BindOnUpdateMyHeroInfo()
   self:UpdateRoleItemStatus()
 end
+
 function WBP_RoleChangeList_C:BindOnUpgradeButtonClicked()
   local WidgetClass = UE.UClass.Load("/Game/Rouge/UI/Lobby/Role/WBP_RoleUpgradePanel.WBP_RoleUpgradePanel_C")
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGUIManager:StaticClass())
@@ -68,6 +75,7 @@ function WBP_RoleChangeList_C:BindOnUpgradeButtonClicked()
     Widget:InitInfo(self.CurSelectHeroId)
   end
 end
+
 function WBP_RoleChangeList_C:UpdateRoleItemStatus()
   local ItemList = self.ListContainer:GetAllUseWidgetsList()
   for i, SingleItem in ipairs(ItemList) do
@@ -76,12 +84,14 @@ function WBP_RoleChangeList_C:UpdateRoleItemStatus()
     SingleItem:UpdateExpireAt()
   end
 end
+
 function WBP_RoleChangeList_C:UpdateSelectStatusToTargetHero(HeroId)
   local ItemList = self.ListContainer:GetAllUseWidgetsList()
   for i, SingleItem in ipairs(ItemList) do
     SingleItem:UpdateSelectStatusToTargetHero(HeroId)
   end
 end
+
 function WBP_RoleChangeList_C:Destruct()
   print("RoleChangeListDestruct")
   self.ListContainer:ClearAllWidgets()
@@ -89,4 +99,5 @@ function WBP_RoleChangeList_C:Destruct()
   self.EliminateFunc = nil
   EventSystem.RemoveListener(EventDef.Lobby.UpdateMyHeroInfo, WBP_RoleChangeList_C.BindOnUpdateMyHeroInfo, self)
 end
+
 return WBP_RoleChangeList_C

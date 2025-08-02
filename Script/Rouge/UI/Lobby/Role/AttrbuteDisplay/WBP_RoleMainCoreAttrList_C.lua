@@ -1,18 +1,22 @@
 local WBP_RoleMainCoreAttrList_C = UnLua.Class()
+
 function WBP_RoleMainCoreAttrList_C:Construct()
   self.BP_ButtonExpand.OnClicked:Add(self, self.OnExpandClicked)
 end
+
 function WBP_RoleMainCoreAttrList_C:InitLobbyAbridgeAttrTips(ParentView, HeroId)
   self.ParentView = ParentView
   self.HeroId = HeroId
   self.IsInLobby = true
   self:RefreshLobbyHeroAttribtueInfo()
 end
+
 local SortAttrRow = function(A, B)
   local ResultA, AAttrDisplay = GetRowData(DT.DT_HeroBasicAttribute, tostring(A))
   local ResultB, BAttrDisplay = GetRowData(DT.DT_HeroBasicAttribute, tostring(B))
   return AAttrDisplay.PriorityLevel > BAttrDisplay.PriorityLevel
 end
+
 function WBP_RoleMainCoreAttrList_C:GetAttrDisplayNameList()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -32,6 +36,7 @@ function WBP_RoleMainCoreAttrList_C:GetAttrDisplayNameList()
   table.sort(RowNameTb, SortAttrRow)
   return RowNameTb
 end
+
 function WBP_RoleMainCoreAttrList_C:RefreshLobbyHeroAttribtueInfo()
   local Result, RowData = GetRowData(DT.DT_BasicAttributeSetInitTable, self.HeroId)
   if not Result then
@@ -98,16 +103,20 @@ function WBP_RoleMainCoreAttrList_C:RefreshLobbyHeroAttribtueInfo()
   end
   HideOtherItem(self.AttributeList, Index)
 end
+
 function WBP_RoleMainCoreAttrList_C:OnExpandClicked()
   if self.ParentView and self.ParentView.ExpandAttr then
     self.ParentView:ExpandAttr()
   end
 end
+
 function WBP_RoleMainCoreAttrList_C:Hide()
   UpdateVisibility(self, false)
   self.ParentView = nil
 end
+
 function WBP_RoleMainCoreAttrList_C:Destruct()
   self.ParentView = nil
 end
+
 return WBP_RoleMainCoreAttrList_C

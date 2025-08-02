@@ -8,6 +8,7 @@ local PuzzleData = require("Modules.Puzzle.PuzzleData")
 local GemDecomposeViewModel = CreateDefaultViewModel()
 GemDecomposeViewModel.propertyBindings = {}
 GemDecomposeViewModel.subViewModels = {}
+
 function GemDecomposeViewModel:OnInit()
   self.Super.OnInit(self)
   self.PuzzleSortRule = EPuzzleSortRule.QualityDesc
@@ -21,6 +22,7 @@ function GemDecomposeViewModel:OnInit()
   local ConstTable = LuaTableMgr.GetLuaTableByName(TableNames.TBConsts)
   self.MaxSelectNum = ConstTable.MatrixPuzzleMaxDecomposeNum
 end
+
 function GemDecomposeViewModel:GetGemHoverWidget(GemId)
   if not self.GemItemTipWidget or not self.GemItemTipWidget:IsValid() then
     local WidgetClass = GetAssetByPath("/Game/Rouge/UI/Lobby/Gem/WBP_GemItemTip.WBP_GemItemTip_C", true)
@@ -30,6 +32,7 @@ function GemDecomposeViewModel:GetGemHoverWidget(GemId)
   self.GemItemTipWidget:Show(GemId)
   return self.GemItemTipWidget
 end
+
 function GemDecomposeViewModel:CanSelectGem(GemId)
   if not table.Contain(self.CurSelectPuzzleIdList, GemId) and table.count(self.CurSelectPuzzleIdList) + 1 > self.MaxSelectNum then
     print("\229\183\178\232\182\133\229\135\186\230\156\128\229\164\167\233\128\137\230\139\169\230\149\176\233\135\143")
@@ -38,9 +41,11 @@ function GemDecomposeViewModel:CanSelectGem(GemId)
   end
   return true
 end
+
 function GemDecomposeViewModel:GetMaxCanSelectNum(...)
   return self.MaxSelectNum
 end
+
 function GemDecomposeViewModel:SetCurSelectGemId(GemId)
   if not table.Contain(self.CurSelectPuzzleIdList, GemId) then
     table.insert(self.CurSelectPuzzleIdList, GemId)
@@ -48,26 +53,33 @@ function GemDecomposeViewModel:SetCurSelectGemId(GemId)
     table.RemoveItem(self.CurSelectPuzzleIdList, GemId)
   end
 end
+
 function GemDecomposeViewModel:RemoveAllCurSelectGemIdList(...)
   self.CurSelectPuzzleIdList = {}
   EventSystem.Invoke(EventDef.Gem.OnGemItemSelected)
 end
+
 function GemDecomposeViewModel:GetCurSelectGemIdList(...)
   return self.CurSelectPuzzleIdList
 end
+
 function GemDecomposeViewModel:SetPuzzleSortRule(InSortRule)
   self.PuzzleSortRule = InSortRule
 end
+
 function GemDecomposeViewModel:GetPuzzleSortRule(...)
   return self.PuzzleSortRule
 end
+
 function GemDecomposeViewModel:GetSortRuleFunction()
   local PuzzleViewModel = UIModelMgr:Get("PuzzleViewModel")
   return PuzzleViewModel:GetSortRuleFunction(self.PuzzleSortRule, true)
 end
+
 function GemDecomposeViewModel:GetGemFilterSelectStatus(...)
   return self.FilterSelectStatus
 end
+
 function GemDecomposeViewModel:SetGemFilterSelectStatus(InFilter)
   self.FilterSelectStatus = DeepCopy(InFilter)
   if self:GetFirstView() then
@@ -75,18 +87,23 @@ function GemDecomposeViewModel:SetGemFilterSelectStatus(InFilter)
     self:GetFirstView():RefreshFilterIconStatus()
   end
 end
+
 function GemDecomposeViewModel:GetPuzzleFilterDiscardSelected(...)
   return self.FilterDiscardSelected
 end
+
 function GemDecomposeViewModel:SetPuzzleFilterDiscardSelected(IsSelect)
   self.FilterDiscardSelected = IsSelect
 end
+
 function GemDecomposeViewModel:GetPuzzleFilterLockSelected()
   return self.FilterLockSelected
 end
+
 function GemDecomposeViewModel:SetPuzzleFilterLockSelected(IsSelect)
   self.FilterLockSelected = IsSelect
 end
+
 function GemDecomposeViewModel:OnViewClose(...)
   if self.GemItemTipWidget then
     if self.GemItemTipWidget:IsValid() then
@@ -105,7 +122,9 @@ function GemDecomposeViewModel:OnViewClose(...)
   self.FilterDiscardSelected = false
   self.FilterLockSelected = false
 end
+
 function GemDecomposeViewModel:OnShutdown()
   self.Super.OnShutdown(self)
 end
+
 return GemDecomposeViewModel

@@ -1,4 +1,5 @@
 local WBP_MonsterMapGuide_C = UnLua.Class()
+
 function WBP_MonsterMapGuide_C:Construct()
   EventSystem.AddListener(self, EventDef.Lobby.LobbyPanelChanged, WBP_MonsterMapGuide_C.OnLobbyActivePanelChanged)
   self:GetMonsterList()
@@ -6,22 +7,27 @@ function WBP_MonsterMapGuide_C:Construct()
   self.SizeBox_Info:SetVisibility(UE.ESlateVisibility.Hidden)
   self.Image_Full:SetVisibility(UE.ESlateVisibility.Hidden)
 end
+
 function WBP_MonsterMapGuide_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.LobbyPanelChanged, WBP_MonsterMapGuide_C.OnLobbyActivePanelChanged)
   self.MonsterTable = {}
 end
+
 function WBP_MonsterMapGuide_C:OnLobbyActivePanelChanged(LastActiveWidget, CurActiveWidget)
   if CurActiveWidget == self then
     self:UpdateMonsterMapInfo()
   end
 end
+
 function WBP_MonsterMapGuide_C:Select(IndexParam, Id, ResourceId)
   self:UpdateMonsterInfo(Id, ResourceId)
   self.CurSelect = IndexParam
 end
+
 function WBP_MonsterMapGuide_C:UpdateMonsterMapInfo()
   self:UpdateMonsterList()
 end
+
 function WBP_MonsterMapGuide_C:UpdateMonsterList()
   local Index = 0
   local tempTable = {}
@@ -59,6 +65,7 @@ function WBP_MonsterMapGuide_C:UpdateMonsterList()
     self.TileViewMonsterMap:SetSelectedIndex(0)
   end
 end
+
 function WBP_MonsterMapGuide_C:UpdateMonsterInfo(ID, ResourceId)
   local singleInfo = self.MonsterTable[ID]
   if singleInfo then
@@ -71,6 +78,7 @@ function WBP_MonsterMapGuide_C:UpdateMonsterInfo(ID, ResourceId)
     SetImageBrushByPath(self.Image_Full, singleInfo.FullPaintingPath)
   end
 end
+
 function WBP_MonsterMapGuide_C:GetMonsterList()
   local table_HeroMonster = LuaTableMgr.GetLuaTableByName(TableNames.TBHeroMonster)
   if table_HeroMonster then
@@ -82,4 +90,5 @@ function WBP_MonsterMapGuide_C:GetMonsterList()
     end
   end
 end
+
 return WBP_MonsterMapGuide_C

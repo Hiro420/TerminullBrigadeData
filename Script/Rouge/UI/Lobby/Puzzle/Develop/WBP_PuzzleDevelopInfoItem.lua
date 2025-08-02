@@ -2,6 +2,7 @@ local WBP_PuzzleDevelopInfoItem = UnLua.Class()
 local PuzzleData = require("Modules.Puzzle.PuzzleData")
 local GemData = require("Modules.Gem.GemData")
 local PuzzleInfoConfig = require("GameConfig.Puzzle.PuzzleInfoConfig")
+
 function WBP_PuzzleDevelopInfoItem:Show(PuzzleId, TargetLevel)
   UpdateVisibility(self, true)
   local LastPuzzleId = self.PuzzleId
@@ -266,18 +267,20 @@ function WBP_PuzzleDevelopInfoItem:Show(PuzzleId, TargetLevel)
       self:PlayAnimation(self.Anim_Refactoring_Entry)
     end
     self.RGRichTextBlockSpecialDesc:SetText(Desc)
-    self.Txt_InscriptionName:SetText(GetInscriptionName(PackageInfo.inscription))
+    self.Txt_InscriptionName:SetText(PuzzleData:GetPuzzleInscriptionName(PackageInfo.inscription))
   end
   self.LastInscription = PackageInfo.inscription
   UpdateVisibility(self.CanvasPanel_Lock, PackageInfo.state == EPuzzleStatus.Lock)
   UpdateVisibility(self.CanvasPanel_Discard, PackageInfo.state == EPuzzleStatus.Discard)
 end
+
 function WBP_PuzzleDevelopInfoItem:RegisitPuzzleRefactorMarkArea()
   self.IsNeedRegisitMarkArea = true
   self.WBP_PuzzleRefactorMarkArea_AllSubAttr:RegisitMarkArea()
   self.WBP_PuzzleRefactorMarkArea_AllSubAttr_Gem:RegisitMarkArea()
   self.WBP_PuzzleRefactorMarkArea_Inscription:RegisitMarkArea()
 end
+
 function WBP_PuzzleDevelopInfoItem:PlaySwitchAnim(...)
   local AllChildren = self.VerticalBoxCoreAttr:GetAllChildren()
   for k, SingleItem in pairs(AllChildren) do
@@ -288,6 +291,7 @@ function WBP_PuzzleDevelopInfoItem:PlaySwitchAnim(...)
     SingleItem:PlaySwitchAnim()
   end
 end
+
 function WBP_PuzzleDevelopInfoItem:PlayUpgradeSuccessAnim(...)
   self:PlayAnimation(self.Ani_upgrade_succeed)
   self.IsPlayUpgradeSuccessAnim = true
@@ -297,11 +301,14 @@ function WBP_PuzzleDevelopInfoItem:PlayUpgradeSuccessAnim(...)
   self.CurPlaySubAttrIndex = 0
   self.DeltaSeconds = 0
 end
+
 function WBP_PuzzleDevelopInfoItem:Hide()
   self.LastGemSlotInfoCount = 0
   self.PuzzleId = nil
 end
+
 function WBP_PuzzleDevelopInfoItem:Destruct()
   self:Hide()
 end
+
 return WBP_PuzzleDevelopInfoItem

@@ -1,9 +1,12 @@
 local WBP_AttributeModify_HoveredTip_C = UnLua.Class()
+
 function WBP_AttributeModify_HoveredTip_C:Construct()
   EventSystem.AddListener(self, EventDef.IllustratedGuide.AttributeModifyHoveredTip, WBP_AttributeModify_HoveredTip_C.InitInfo)
 end
+
 function WBP_AttributeModify_HoveredTip_C:Destruct()
 end
+
 function WBP_AttributeModify_HoveredTip_C:InitInfo(ItemWidget, Id, bShow)
   self.HoveredId = Id
   self.Name:SetHighlightText(Logic_IllustratedGuide.SearchKeyword)
@@ -49,7 +52,9 @@ function WBP_AttributeModify_HoveredTip_C:InitInfo(ItemWidget, Id, bShow)
     end
   end
 end
+
 function WBP_AttributeModify_HoveredTip_C:SetSelected(bSelected)
   UpdateVisibility(self.Image_Selected, bSelected)
 end
+
 return WBP_AttributeModify_HoveredTip_C

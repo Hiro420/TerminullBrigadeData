@@ -1,10 +1,13 @@
 local WBP_ModTypeCount_C = UnLua.Class()
+
 function WBP_ModTypeCount_C:Construct()
   self.Button_Type.OnClicked:Add(self, WBP_ModTypeCount_C.OnClicked_Button_Type)
 end
+
 function WBP_ModTypeCount_C:Destruct()
   self.Button_Type.OnClicked:Remove(self, WBP_ModTypeCount_C.OnClicked_Button_Type)
 end
+
 function WBP_ModTypeCount_C:InitModTypeInfo(ModInfo)
   if not ModInfo then
     print("ModInfo is null.")
@@ -19,6 +22,7 @@ function WBP_ModTypeCount_C:InitModTypeInfo(ModInfo)
     self.Image_Title:SetBrush(ModBrush)
   end
 end
+
 function WBP_ModTypeCount_C:UpdateModTypeInfo()
   if not self.ModInfo then
     print("ModInfo is null.")
@@ -33,6 +37,7 @@ function WBP_ModTypeCount_C:UpdateModTypeInfo()
     self.TextBlock_Number:SetText(tostring(nowNumber))
   end
 end
+
 function WBP_ModTypeCount_C:OnClicked_Button_Type()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGUIManager:StaticClass())
   if UIManager:IsValid() then
@@ -46,4 +51,5 @@ function WBP_ModTypeCount_C:OnClicked_Button_Type()
     end
   end
 end
+
 return WBP_ModTypeCount_C

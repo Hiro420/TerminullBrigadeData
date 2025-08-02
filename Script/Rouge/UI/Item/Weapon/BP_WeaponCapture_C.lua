@@ -1,4 +1,5 @@
 local BP_WeaponCapture_C = UnLua.Class()
+
 function BP_WeaponCapture_C:LeftMouseButtonPressed()
   if not self.RotateByAccessory then
     self.InConfigTransform = false
@@ -7,6 +8,7 @@ function BP_WeaponCapture_C:LeftMouseButtonPressed()
     PlaySound2DEffect(30010, "")
   end
 end
+
 function BP_WeaponCapture_C:LeftMouseButtonReleased()
   if not self.RotateByAccessory then
     self.InConfigTransform = true
@@ -17,10 +19,12 @@ function BP_WeaponCapture_C:LeftMouseButtonReleased()
     self.RecordY = 0
   end
 end
+
 function BP_WeaponCapture_C:CheckWeaponMeshRotation(RecordX, RecordY)
   if not self.ManualRotate and (RecordX ~= self.RecordX or RecordY ~= self.RecordY) then
     self.ManualRotate = true
     EventSystem.Invoke(EventDef.GamePokey.OnWeaponMeshPressed)
   end
 end
+
 return BP_WeaponCapture_C

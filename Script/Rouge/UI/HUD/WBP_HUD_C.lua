@@ -26,6 +26,7 @@ local GetOptimalTargetInteractTipId = function(OptimalTarget)
   end
   return TipId
 end
+
 function WBP_HUD_C:Construct()
   self.DyingMarkTable = {}
   self:ListenLevelOnLevelClean(true)
@@ -124,6 +125,7 @@ function WBP_HUD_C:Construct()
   end
   self:InactiveSurvivorInput()
 end
+
 function WBP_HUD_C:BindOnTriggerHeroSkill(SkillType)
   print("WBP_HUD_C:BindOnTriggerHeroSkill")
   if SkillType ~= UE.ESkillType.PrimarySkill then
@@ -136,6 +138,7 @@ function WBP_HUD_C:BindOnTriggerHeroSkill(SkillType)
   end
   self.HeynckesSkillQCountWidget:Show()
 end
+
 function WBP_HUD_C:BindOnHeroSkillEnd(SkillType)
   print("WBP_HUD_C:BindOnHeroSkillEnd")
   if SkillType ~= UE.ESkillType.PrimarySkill then
@@ -143,6 +146,7 @@ function WBP_HUD_C:BindOnHeroSkillEnd(SkillType)
   end
   self.HeynckesSkillQCountWidget:Hide()
 end
+
 function WBP_HUD_C:InitMainTask()
   local PC = self:GetOwningPlayer()
   if PC then
@@ -168,6 +172,7 @@ function WBP_HUD_C:InitMainTask()
     end
   end
 end
+
 function WBP_HUD_C:PlayStartMapRadioBySwitchLevel()
   local StartMapRadioInfo = LogicRadio.GetStartMapRadioInfoTable()
   if -1 ~= StartMapRadioInfo.RadioId then
@@ -175,12 +180,14 @@ function WBP_HUD_C:PlayStartMapRadioBySwitchLevel()
     LogicRadio.ShowRadioPanel(StartMapRadioInfo.RadioConditionId, {})
   end
 end
+
 function WBP_HUD_C:OnDisplay()
   self.Overridden.OnDisplay(self)
   self:ShowHUDActor()
   self:ShowBattleLagacyReminder()
   self:ShowSpecificHeroHUD()
 end
+
 function WBP_HUD_C:InitGenericPack()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -197,6 +204,7 @@ function WBP_HUD_C:InitGenericPack()
     GenericPackComp.PreviewModifyDataChangeDelegate:Add(self, self.UpdateGenericPack)
   end
 end
+
 function WBP_HUD_C:UpdateGenericPack()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character then
@@ -233,6 +241,7 @@ function WBP_HUD_C:UpdateGenericPack()
     end
   end
 end
+
 function WBP_HUD_C:ShowSpecificHeroHUD()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if Character then
@@ -242,10 +251,12 @@ function WBP_HUD_C:ShowSpecificHeroHUD()
     end
   end
 end
+
 function WBP_HUD_C:OnShowByHideOther()
   self.Overridden.OnShowByHideOther(self)
   self:ShowHUDActor()
 end
+
 function WBP_HUD_C:ChangeMainSkillReadyWindowVis(IsShow)
   UpdateVisibility(self.WBP_MainSkillReadyWaveWindow, IsShow)
   if IsShow then
@@ -263,14 +274,17 @@ function WBP_HUD_C:ChangeMainSkillReadyWindowVis(IsShow)
     end
   end
 end
+
 function WBP_HUD_C:OnHideByOther()
   self.Overridden.OnHideByOther(self)
   self:HideHUDActor()
 end
+
 function WBP_HUD_C:Hide(bCollapsed, Activate)
   self.Overridden.Hide(self, bCollapsed, Activate)
   self:HideHUDActor()
 end
+
 function WBP_HUD_C:ShowBattleLagacyReminder()
   if not LogicHUD.bHadShowBattleLagacy and BattleLagacyModule:CheckBattleLagacyIsActive() then
     if BattleLagacyData.CurBattleLagacyData ~= nil and BattleLagacyData.CurBattleLagacyData.BattleLagacyId ~= "0" then
@@ -291,37 +305,45 @@ function WBP_HUD_C:ShowBattleLagacyReminder()
     LogicHUD.bHadShowBattleLagacy = true
   end
 end
+
 function WBP_HUD_C:ShowQTEProgressPanel(ConfigData)
   print("LogicHUD.BindOnSkillQTEStart WBP_HUD_C:ShowQTEProgressPanel")
   self.WBP_QTEProgressWindow:Show(ConfigData)
 end
+
 function WBP_HUD_C:HideQTEProgressPanel()
   self.WBP_QTEProgressWindow:Hide()
 end
+
 function WBP_HUD_C:UpdateQTEProgressStatus(Index, IsSuccess)
   self.WBP_QTEProgressWindow:UpdateQTEProgressStatus(Index, IsSuccess)
 end
+
 function WBP_HUD_C:InitHUDActor()
   self.WBP_HUD_Normal:Init()
   self.WBP_HUD_MiddleTop:Init()
   EventSystem.Invoke(EventDef.HUD.InitHUDActor)
 end
+
 function WBP_HUD_C:ShowHUDActor()
   UpdateVisibility(self.WBP_HUD_Right, true)
   UpdateVisibility(self.WBP_HUD_Normal, true)
   UpdateVisibility(self.WBP_HUD_Left, true)
   UpdateVisibility(self.WBP_HUD_MiddleTop, true)
 end
+
 function WBP_HUD_C:HideHUDActor()
   UpdateVisibility(self.WBP_HUD_Right, false)
   UpdateVisibility(self.WBP_HUD_Normal, false)
   UpdateVisibility(self.WBP_HUD_Left, false)
   UpdateVisibility(self.WBP_HUD_MiddleTop, false)
 end
+
 function WBP_HUD_C:UnInitHUDActor()
   self.WBP_HUD_Normal:UnInit()
   self.WBP_HUD_MiddleTop:UnInit()
 end
+
 function WBP_HUD_C:BindOnControlledPawnChanged()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if Character and Character.AttributeModifyComponent then
@@ -348,29 +370,35 @@ function WBP_HUD_C:BindOnControlledPawnChanged()
   end
   self:UpdateGenericModifyList()
 end
+
 function WBP_HUD_C:BindOnKeyChanged()
   self:RefreshInteractTipKeyName()
 end
+
 function WBP_HUD_C:BindOnUpdateCulture()
   self:UpdateScrollSetList()
 end
+
 function WBP_HUD_C:BindOnPostEnterState(InState)
   if not UE.UBlueprintGameplayTagLibrary.EqualEqual_GameplayTag(self.SlidingTag, InState, true) then
     return
   end
   self:ShowUIEffect("Stengthen")
 end
+
 function WBP_HUD_C:BindOnPostExitState(InState, Blocked)
   if not UE.UBlueprintGameplayTagLibrary.EqualEqual_GameplayTag(self.SlidingTag, InState, true) then
     return
   end
   self:ShowUIEffect("Stengthen", UE.EUMGSequencePlayMode.Reverse)
 end
+
 function WBP_HUD_C:RefreshInteractTipKeyName()
   if self.CurInteractWidget and self.CurInteractWidget.SetKeyName then
     self.CurInteractWidget:SetKeyName(LogicGameSetting.GetCurSelectedKeyNameByKeyRowName("Interact"))
   end
 end
+
 function WBP_HUD_C:BindOnAbilityTagUpdate(Tag, bTagExists, TargetActor)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if TargetActor ~= Character then
@@ -384,6 +412,7 @@ function WBP_HUD_C:BindOnAbilityTagUpdate(Tag, bTagExists, TargetActor)
     end
   end
 end
+
 function WBP_HUD_C:BindOnBuffAdded(AddedBuff)
   local BuffCurrentCount = LogicBuffList.BuffIdList[AddedBuff.ID]
   if BuffCurrentCount then
@@ -403,6 +432,7 @@ function WBP_HUD_C:BindOnBuffAdded(AddedBuff)
     end
   end
 end
+
 function WBP_HUD_C:BindOnBuffChanged(AddedBuff)
   local BuffCurrentCount = LogicBuffList.BuffIdList[AddedBuff.ID]
   print("WBP_HUD_C:BindOnBuffChanged", BuffCurrentCount, AddedBuff.CurrentCount)
@@ -423,9 +453,11 @@ function WBP_HUD_C:BindOnBuffChanged(AddedBuff)
     end
   end
 end
+
 function WBP_HUD_C:BindOnSettlement()
   LogicSettlement.ShowSettlement()
 end
+
 function WBP_HUD_C:BindOnGameDebugUI(Bind)
   local setting = UE.URGGlobalSettings.GetSettings()
   if setting then
@@ -436,6 +468,7 @@ function WBP_HUD_C:BindOnGameDebugUI(Bind)
     end
   end
 end
+
 function WBP_HUD_C:OnGameDebugUI()
   local setting = UE.URGGlobalSettings.GetSettings()
   if setting then
@@ -446,6 +479,7 @@ function WBP_HUD_C:OnGameDebugUI()
     end
   end
 end
+
 function WBP_HUD_C:InitTabData()
   local GameLevelSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGGameLevelSystem:StaticClass())
   if GameLevelSystem and GameLevelSystem:CanEnableScanWeaknessTabPanel() then
@@ -460,6 +494,7 @@ function WBP_HUD_C:InitTabData()
     UpdateVisibility(self.URGImage_33, false)
   end
 end
+
 function WBP_HUD_C:InitTeamIndexInfo()
   print("InitTeamIndexInfo")
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
@@ -477,17 +512,20 @@ function WBP_HUD_C:InitTeamIndexInfo()
     self.Img_TeamIndex:SetColorAndOpacity(LogicHUD.TeamIndexColor[1])
   end
 end
+
 function WBP_HUD_C:BindOnNotifyPlayerStateRep()
   print("OnNotifyPlayerStateRep")
   self:InitSurvivalExp()
   self:InitSurvivalModify()
 end
+
 function WBP_HUD_C:BindOnMakeDamage(SourceActor, TargetActor, Params)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if not Character or Character == SourceActor then
     return
   end
 end
+
 function WBP_HUD_C:BindOnBeginInteract(Target)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -515,6 +553,7 @@ function WBP_HUD_C:BindOnBeginInteract(Target)
     self:ShowPickWeaponAccessoryWaveWindow(ItemData, PickWeapon:GetWeaponLevel())
   end
 end
+
 function WBP_HUD_C:BindOnOptimalTargetChanged(OptimalTargetParam)
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if not UIManager then
@@ -559,6 +598,7 @@ function WBP_HUD_C:BindOnOptimalTargetChanged(OptimalTargetParam)
   LogicHUD.PreOptimalTarget = nil
   EventSystem.Invoke(EventDef.Interact.OnOptimalTargetChanged, nil)
 end
+
 function WBP_HUD_C:BindOnFinishInteract(Target, Instigator)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -591,13 +631,16 @@ function WBP_HUD_C:BindOnFinishInteract(Target, Instigator)
     PlaySound2DEffect(10010, "WBP_HUD_C:BindOnFinishInteract")
   end
 end
+
 function WBP_HUD_C:SetCurLevelCleanId(LevelId)
   print("WBP_HUD_C:SetCurLevelCleanId", LevelId)
   BattleData.SetCurLevelCleanId(LevelId)
 end
+
 function WBP_HUD_C:SetCurTriggerSkillId(SkillId)
   BattleData.SetCurTriggerSkillId(SkillId)
 end
+
 function WBP_HUD_C:ShowPickupScrollWaveWindow(ScrollId)
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGWaveWindowManager:StaticClass())
   if not WaveWindowManager then
@@ -623,12 +666,14 @@ function WBP_HUD_C:ShowPickupScrollWaveWindow(ScrollId)
     end
   end
 end
+
 function WBP_HUD_C:ShowPickWeaponAccessoryWaveWindow(ItemData, WeaponLevel)
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGWaveWindowManager:StaticClass())
   if not WaveWindowManager then
     return
   end
 end
+
 function WBP_HUD_C:InitCharacterInfo()
   self:PlayStartMapRadioBySwitchLevel()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
@@ -643,6 +688,7 @@ function WBP_HUD_C:InitCharacterInfo()
   end
   self.WBP_HUD_Right:InitGloriaRobotInfo()
 end
+
 function WBP_HUD_C:PlayDamageTakenAnim(IsHealthDamage)
   if IsHealthDamage then
     self:ShowUIEffect("BloodHit")
@@ -650,6 +696,7 @@ function WBP_HUD_C:PlayDamageTakenAnim(IsHealthDamage)
     self:ShowUIEffect("ShieldHit")
   end
 end
+
 function WBP_HUD_C:UpdateReadyState()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if Character and self.Image_Ready then
@@ -662,6 +709,7 @@ function WBP_HUD_C:UpdateReadyState()
     end
   end
 end
+
 function WBP_HUD_C:ChangeGMButtonVisibility(IsShow)
   if IsShow then
     self.Button_GM:SetVisibility(UE.ESlateVisibility.Visible)
@@ -669,6 +717,7 @@ function WBP_HUD_C:ChangeGMButtonVisibility(IsShow)
     self.Button_GM:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_HUD_C:UpdateInteractWidget(InteractTipRow, TargetActor, bIsShow)
   local bIsValidSoftCls = InteractTipRow and UE.UKismetSystemLibrary.IsValidSoftClassReference(InteractTipRow.InteractSoftCls)
   if bIsShow and bIsValidSoftCls then
@@ -781,11 +830,13 @@ function WBP_HUD_C:UpdateInteractWidget(InteractTipRow, TargetActor, bIsShow)
     self.bNeedTickUpdateScrollList = false
   end
 end
+
 function WBP_HUD_C:UpdateInteractProgress(ProgressParam)
   if self.CurInteractWidget and self.CurInteractWidget.UpdateProgress then
     self.CurInteractWidget:UpdateProgress(ProgressParam)
   end
 end
+
 function WBP_HUD_C:UpdateInteractStatues(bIsUpdateInteractProgressParam, InteractComp)
   if bIsUpdateInteractProgressParam and InteractComp then
     local InitialPercent = 0
@@ -817,6 +868,7 @@ function WBP_HUD_C:UpdateInteractStatues(bIsUpdateInteractProgressParam, Interac
     self.InteractCompCache = nil
   end
 end
+
 function WBP_HUD_C:ModifyTips(ModifyId)
   local character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if UE.RGUtil.IsUObjectValid(character) and character.AttributeModifyComponent and character.AttributeModifyComponent:ShouldDiscardNotify() then
@@ -826,6 +878,7 @@ function WBP_HUD_C:ModifyTips(ModifyId)
   UpdateVisibility(self.URGImage_4, true)
   self:PlayAnimation(self.tab_loop_bag, 0, 2)
 end
+
 function WBP_HUD_C:OnSetChanged(SetData, OldSetData)
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGWaveWindowManager:StaticClass())
   if not WaveWindowManager then
@@ -849,6 +902,7 @@ function WBP_HUD_C:OnSetChanged(SetData, OldSetData)
   end
   self:UpdateScrollSetList()
 end
+
 function WBP_HUD_C:OnSetAdd(SetData)
   for i = 1, SetData.Level do
     local setData = {
@@ -860,6 +914,7 @@ function WBP_HUD_C:OnSetAdd(SetData)
   end
   self:UpdateScrollSetList()
 end
+
 function WBP_HUD_C:SetChangeTips(SetData)
   local character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if UE.RGUtil.IsUObjectValid(character) and character.AttributeModifyComponent and character.AttributeModifyComponent:ShouldDiscardNotify() then
@@ -892,14 +947,19 @@ function WBP_HUD_C:SetChangeTips(SetData)
     WaveWindowManager:ShowWaveWindowWithWaveParam(Id, Param, nil, {}, {}, WaveWindowParam)
   end
 end
+
 function WBP_HUD_C:UpdateScrollSetList()
 end
+
 function WBP_HUD_C:AddGenericModifyList(RGGenericModifyParam)
 end
+
 function WBP_HUD_C:AddSpecificModifyList(RGSpecificModifyParam)
 end
+
 function WBP_HUD_C:UpdateGenericModifyList(RGGenericModify)
 end
+
 function WBP_HUD_C:OnAwardFinishInteract(LevelId)
   local bIsLevelClean = false
   local GameLevelSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGGameLevelSystem:StaticClass())
@@ -911,29 +971,35 @@ function WBP_HUD_C:OnAwardFinishInteract(LevelId)
     UE.URGBlueprintLibrary.TriggerAllAwardGot()
   end
 end
+
 function WBP_HUD_C:OnNPCAwardNumAdd()
   if LogicHUD:GetActiveAwardNpcNum() > 0 then
     UE.URGBlueprintLibrary.TriggerHaveAward()
   end
 end
+
 function WBP_HUD_C:UpdateGenericModifyListShow(bIsShow)
   UpdateVisibility(self.WBP_HUD_GenericModifyList, bIsShow)
   self.WBP_HUD_GenericModifyList:SelectClick(false)
 end
+
 function WBP_HUD_C:OnPlayScreenEdgeEffect(Ani, PlayMode)
   self:ShowUIEffect(Ani, PlayMode)
 end
+
 function WBP_HUD_C:OnPlayScreenEdgeShieldEffect(AniName)
   if self[AniName] then
     self:PlayAnimationForward(self[AniName])
   end
 end
+
 function WBP_HUD_C:OnUpdateScreenEdgeShieldMat(floatValue)
   local DynamicMaterial = self.HUD:GetDynamicMaterial()
   if DynamicMaterial then
     DynamicMaterial:SetScalarParameterValue("alpha2", floatValue)
   end
 end
+
 function WBP_HUD_C:FocusInput()
   self.Overridden.FocusInput(self)
   self:PushInputAction()
@@ -1043,6 +1109,7 @@ function WBP_HUD_C:FocusInput()
   end
   self:RegisterScrollRecipient(self)
 end
+
 function WBP_HUD_C:ListenForMenuKeyPressed(...)
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
   if not PC then
@@ -1056,6 +1123,7 @@ function WBP_HUD_C:ListenForMenuKeyPressed(...)
     RGUIMgr:OpenUI(UIConfig.WBP_Pause_C.UIName)
   end
 end
+
 function WBP_HUD_C:ListenForTabInputAction()
   if self.bIsCanShowTabAni then
     self:StopAnimation(self.tab_loop)
@@ -1063,15 +1131,19 @@ function WBP_HUD_C:ListenForTabInputAction()
     self.bIsCanShowTabAni = false
   end
 end
+
 function WBP_HUD_C:ListenForPreInteract()
   LogicHUD:ScrollInteract(false)
 end
+
 function WBP_HUD_C:ListenForNextInteract()
   LogicHUD:ScrollInteract(true)
 end
+
 function WBP_HUD_C:ListenForUITestInputAction()
   RGUIMgr:OpenUI(UIConfig.WBP_UITestView_C.UIName, true)
 end
+
 function WBP_HUD_C:ListenForShowTeamDamagePanelKeyPressed(...)
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
   if not PC then
@@ -1092,6 +1164,7 @@ function WBP_HUD_C:ListenForShowTeamDamagePanelKeyPressed(...)
     RGUIMgr:OpenUI(UIConfig.WBP_TeamDamagePanel_C.UIName, false)
   end
 end
+
 function WBP_HUD_C:ListenForSwitchBag()
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
   if not PC then
@@ -1123,6 +1196,7 @@ function WBP_HUD_C:ListenForSwitchBag()
     end
   end
 end
+
 function WBP_HUD_C:ListenForIllustratedGuide()
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
   if not PC then
@@ -1149,6 +1223,7 @@ function WBP_HUD_C:ListenForIllustratedGuide()
     end
   end
 end
+
 function WBP_HUD_C:BindOnAISpawned(AI)
   if not AI.IsEliteAI or not AI:IsEliteAI() then
     return
@@ -1162,6 +1237,7 @@ function WBP_HUD_C:BindOnAISpawned(AI)
     self.TipWindow:SetInfoText(self.TipWindow:GetTipInfo(AI))
   end
 end
+
 function WBP_HUD_C:BindOnPlayHeirloomSkillUIFX()
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
   if not PC then
@@ -1196,9 +1272,11 @@ function WBP_HUD_C:BindOnPlayHeirloomSkillUIFX()
     TargetWidget:StartPlayAnimation()
   end
 end
+
 function WBP_HUD_C:OnPawnAcknowledgeFinished(Character)
   self:InitTabData()
 end
+
 function WBP_HUD_C:BindOnBattleExpChange(UserId, RowExp, DataExp, NextExp, Level)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if UserId ~= Character:GetUserId() then
@@ -1225,6 +1303,7 @@ function WBP_HUD_C:BindOnBattleExpChange(UserId, RowExp, DataExp, NextExp, Level
     self.TXT_LevelUpExp:SetText(LevelUpExp)
   end
 end
+
 function WBP_HUD_C:BindOnBattleLevelUp(UserId, ExpLevel, CurrentExp)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if UserId ~= Character:GetUserId() then
@@ -1255,6 +1334,7 @@ function WBP_HUD_C:BindOnBattleLevelUp(UserId, ExpLevel, CurrentExp)
   LogicAudio.BattleLevelUp()
   self:PlayAnimation(self.Anim_SurvivalExp_Add)
 end
+
 function WBP_HUD_C:BindOnPlayOrHideFullScreenFX(IsPlay, WidgetSoftClass, AnimationName)
   local TargetFXWidget
   if not UE.UKismetSystemLibrary.IsValidSoftClassReference(WidgetSoftClass) then
@@ -1278,6 +1358,7 @@ function WBP_HUD_C:BindOnPlayOrHideFullScreenFX(IsPlay, WidgetSoftClass, Animati
     TargetFXWidget:PlayAnimationReverse(TargetAnimation)
   end
 end
+
 function WBP_HUD_C:GetOrCreateFXWidget(WidgetSoftClassPath)
   local WidgetClassStr = UE.UKismetSystemLibrary.BreakSoftClassPath(WidgetSoftClassPath, nil)
   local FinalWidget = self.FXWidgetList[WidgetClassStr]
@@ -1293,6 +1374,7 @@ function WBP_HUD_C:GetOrCreateFXWidget(WidgetSoftClassPath)
   end
   return FinalWidget
 end
+
 function WBP_HUD_C:BindOnListenForBattleRoleInfoShortKeyPressed()
   local TutorialLevelSubSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGTutorialLevelSystem:StaticClass())
   if TutorialLevelSubSystem and TutorialLevelSubSystem:IsFreshPlayer() then
@@ -1309,6 +1391,7 @@ function WBP_HUD_C:BindOnListenForBattleRoleInfoShortKeyPressed()
     MainPanelObj:ShowRoleInfoPanel()
   end
 end
+
 function WBP_HUD_C:BindOnListenForFreeSpeakKeyPressed()
   print("ccccccccccccc")
   ChatDataMgr.GetVoiceBanStatus(function()
@@ -1321,6 +1404,7 @@ function WBP_HUD_C:BindOnListenForFreeSpeakKeyPressed()
     end
   end)
 end
+
 function WBP_HUD_C:BindOnListenForSpeakKeyPressed()
   local GameUserSettings = UE.UGameUserSettings.GetGameUserSettings()
   local TeamVoiceSubSys = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTeamVoiceSubsystem:StaticClass())
@@ -1332,6 +1416,7 @@ function WBP_HUD_C:BindOnListenForSpeakKeyPressed()
     end
   end
 end
+
 function WBP_HUD_C:BindOnListenForSpeakKeyReleased()
   local GameUserSettings = UE.UGameUserSettings.GetGameUserSettings()
   local TeamVoiceSubSys = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTeamVoiceSubsystem:StaticClass())
@@ -1343,6 +1428,7 @@ function WBP_HUD_C:BindOnListenForSpeakKeyReleased()
     end
   end
 end
+
 function WBP_HUD_C:ShowScrollView()
   local TutorialLevelSubSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGTutorialLevelSystem:StaticClass())
   if TutorialLevelSubSystem and TutorialLevelSubSystem:IsFreshPlayer() then
@@ -1355,6 +1441,7 @@ function WBP_HUD_C:ShowScrollView()
     MainPanelObj:ShowScrollInfoPanel()
   end
 end
+
 function WBP_HUD_C:ShowIllustratedGuidePanel()
   local TutorialLevelSubSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGTutorialLevelSystem:StaticClass())
   if TutorialLevelSubSystem and TutorialLevelSubSystem:IsFreshPlayer() then
@@ -1367,6 +1454,7 @@ function WBP_HUD_C:ShowIllustratedGuidePanel()
     MainPanelObj:ShowIllustratedGuidePanel()
   end
 end
+
 function WBP_HUD_C:ShowCountDownUI(DelayTime)
   self.CountDownTime = math.floor(DelayTime)
   self:UpdateCountCount()
@@ -1379,6 +1467,7 @@ function WBP_HUD_C:ShowCountDownUI(DelayTime)
     self.UpdateCountCount
   }, 1, true)
 end
+
 function WBP_HUD_C:UpdateCountCount()
   self.TxT_CountDown:SetText(self.CountDownTime)
   if 0 == self.CountDownTime then
@@ -1386,10 +1475,12 @@ function WBP_HUD_C:UpdateCountCount()
   end
   self.CountDownTime = self.CountDownTime - 1
 end
+
 function WBP_HUD_C:HideCountDownUI()
   UpdateVisibility(self.CanvasPanel_CountDown, false)
   UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.CountDownTimer)
 end
+
 function WBP_HUD_C:AddChildToMainPanel(Widget)
   local Slot = self.MainPanel:AddChild(Widget)
   local Anchors = UE.FAnchors()
@@ -1399,6 +1490,7 @@ function WBP_HUD_C:AddChildToMainPanel(Widget)
   local Offsets = UE.FMargin()
   Slot:SetOffsets(Offsets)
 end
+
 function WBP_HUD_C:AddMarkItemToPanel(Item)
   if self.MarkPanel:HasChild(Item) then
     return UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(Item)
@@ -1408,6 +1500,7 @@ function WBP_HUD_C:AddMarkItemToPanel(Item)
     return Slot
   end
 end
+
 function WBP_HUD_C:UnfocusInput()
   self.Overridden.UnfocusInput(self)
   self:HideHUDActor()
@@ -1415,6 +1508,7 @@ function WBP_HUD_C:UnfocusInput()
   self:PopInputAction()
   self:UnregisterScrollRecipient(self)
 end
+
 function WBP_HUD_C:Destruct()
   self.FXWidgetList = {}
   self:ListenLevelOnLevelClean(false)
@@ -1423,6 +1517,7 @@ function WBP_HUD_C:Destruct()
   self:ListenHeroRescue(false)
   self:ListenHeroRespawn(false)
   self:UnInitHUDActor()
+  self:BindOnListenForSpeakKeyReleased()
   self:PopInputAction()
   self:UnInitLevelTips()
   LogicHUD:UnRegistWidgetToManager(self.InteractKeyPanel)
@@ -1517,9 +1612,11 @@ function WBP_HUD_C:Destruct()
   self.Button_PotentialKey.OnClicked:Remove(self, self.OnPotentialKeyClick)
   self.UIEffectInst = -1
 end
+
 function WBP_HUD_C:SetGenericModify(bIsShow)
   self:UpdateGenericModifyListShow(bIsShow)
 end
+
 function WBP_HUD_C:UpdatePing()
   local OwningPlayer = self:GetOwningPlayer()
   if OwningPlayer then
@@ -1538,26 +1635,32 @@ function WBP_HUD_C:UpdatePing()
     end
   end
 end
+
 function WBP_HUD_C:ShowRift(TimeOffUTCStamp, SpawnTimeStamp, TimeOffStamp)
   UpdateVisibility(self.WBP_RiftCountDown, true)
   UpdateVisibility(self.WBP_RiftCountDown.WBP_BattleModeContent.CanvasPanel_Progress, false)
   self.WBP_HUD_MiddleTop:ShowRift(TimeOffUTCStamp, SpawnTimeStamp, TimeOffStamp)
 end
+
 function WBP_HUD_C:ShowRiftTimeOff()
   self.WBP_RiftCountDown.WBP_BattleModeContent:ChangeGameStage(UE.EBattleModeStage.FailedStage)
   self.WBP_HUD_MiddleTop:HideRift()
 end
+
 function WBP_HUD_C:ShowRiftDestroyed()
   self.WBP_RiftCountDown.WBP_BattleModeContent:ChangeGameStage(UE.EBattleModeStage.SuccessStage)
   self.WBP_HUD_MiddleTop:HideRift()
 end
+
 function WBP_HUD_C:ClearRift()
   UpdateVisibility(self.WBP_RiftCountDown, false)
   self.WBP_HUD_MiddleTop:HideRift()
 end
+
 function WBP_HUD_C:UpdateFps(deltatime)
   self.TextBlock_Fps:SetText(tostring(UE.UKismetMathLibrary.FTrunc(1 / deltatime)))
 end
+
 function WBP_HUD_C:LuaTick(InDeltaTime)
   self:UpdatePing()
   self:UpdateFps(InDeltaTime)
@@ -1572,16 +1675,19 @@ function WBP_HUD_C:LuaTick(InDeltaTime)
   end
   self.WBP_HUD_MiddleTop:RiftTick()
 end
+
 function WBP_HUD_C:BindOnCharacterRescue(Bind)
   local pawn = self:GetOwningPlayerPawn()
   if pawn and pawn:IsValid() and Bind then
     pawn.OnCharacterRescue:Add(self, WBP_HUD_C.OnCharacterRescue)
   end
 end
+
 function WBP_HUD_C:OnCharacterRescue(Character)
   self.ScreenEdgeFXUI:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.WBP_DyingHUD:HideDying()
 end
+
 function WBP_HUD_C:OnHeroDying(HeroCharacter)
   local NickName = ""
   if HeroCharacter then
@@ -1605,6 +1711,7 @@ function WBP_HUD_C:OnHeroDying(HeroCharacter)
     end
   end
 end
+
 function WBP_HUD_C:OnHeroRescue(HeroCharacter)
   local NickName = ""
   if HeroCharacter then
@@ -1620,6 +1727,7 @@ function WBP_HUD_C:OnHeroRescue(HeroCharacter)
     UE.URGBlueprintLibrary.RemoveMarkById(self, self.DyingMarkTable[HeroCharacter])
   end
 end
+
 function WBP_HUD_C:OnHeroRespawn(HeroCharacter)
   local NickName = ""
   if HeroCharacter then
@@ -1635,6 +1743,7 @@ function WBP_HUD_C:OnHeroRespawn(HeroCharacter)
     UE.URGBlueprintLibrary.RemoveMarkById(self, self.DyingMarkTable[HeroCharacter])
   end
 end
+
 function WBP_HUD_C:UpdateTeamVoiceUI()
   local GameUserSettings = UE.UGameUserSettings.GetGameUserSettings()
   local TeamVoiceSubSys = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTeamVoiceSubsystem:StaticClass())
@@ -1646,14 +1755,17 @@ function WBP_HUD_C:UpdateTeamVoiceUI()
     UpdateVisibility(self.CanvasPanelCloseFreeSpeak, 0 == CurValue)
   end
 end
+
 function WBP_HUD_C:InitLevelTips()
   self.WBP_EnterLevelTips:Init()
   self.WBP_LevelCleanTips:Init()
 end
+
 function WBP_HUD_C:UnInitLevelTips()
   self.WBP_EnterLevelTips:UnInit()
   self.WBP_LevelCleanTips:UnInit()
 end
+
 function WBP_HUD_C:ListenLevelOnLevelClean(IsListen)
   if IsListen then
     ListenObjectMessage(nil, GMP.MSG_Level_LevelPass, self, self.SetCurLevelCleanId)
@@ -1661,6 +1773,7 @@ function WBP_HUD_C:ListenLevelOnLevelClean(IsListen)
     UnListenObjectMessage(GMP.MSG_Level_LevelPass, self)
   end
 end
+
 function WBP_HUD_C:ListenGlobalAbilityRadio(IsListen)
   if IsListen then
     ListenObjectMessage(nil, GMP.MSG_Global_AbilityRadio, self, self.SetCurTriggerSkillId)
@@ -1668,6 +1781,7 @@ function WBP_HUD_C:ListenGlobalAbilityRadio(IsListen)
     UnListenObjectMessage(GMP.MSG_Global_AbilityRadio, self)
   end
 end
+
 function WBP_HUD_C:ListenHeroDying(IsListen)
   if IsListen then
     ListenObjectMessage(nil, GMP.MSG_Hero_NotifyDying, self, self.OnHeroDying)
@@ -1682,6 +1796,7 @@ function WBP_HUD_C:ListenHeroDying(IsListen)
     UnListenObjectMessage(GMP.MSG_Hero_NotifyDying, self)
   end
 end
+
 function WBP_HUD_C:ListenHeroRescue(IsListen)
   if IsListen then
     ListenObjectMessage(nil, GMP.MSG_Hero_NotifyRescue, self, self.OnHeroRescue)
@@ -1689,6 +1804,7 @@ function WBP_HUD_C:ListenHeroRescue(IsListen)
     UnListenObjectMessage(GMP.MSG_Hero_NotifyRescue, self)
   end
 end
+
 function WBP_HUD_C:ListenHeroRespawn(IsListen)
   if IsListen then
     ListenObjectMessage(nil, GMP.MSG_Hero_NotifyRespawn, self, self.OnHeroRespawn)
@@ -1696,6 +1812,7 @@ function WBP_HUD_C:ListenHeroRespawn(IsListen)
     UnListenObjectMessage(GMP.MSG_Hero_NotifyRespawn, self)
   end
 end
+
 function WBP_HUD_C:TidyAttributeChangeTips(AttributeChangeTipsDataAry)
   local TidyArr = {}
   for key, value in iterator(AttributeChangeTipsDataAry) do
@@ -1720,6 +1837,7 @@ function WBP_HUD_C:TidyAttributeChangeTips(AttributeChangeTipsDataAry)
     self.AttributeChangeTipsDataAryTemp:Add(AttributeData)
   end
 end
+
 function WBP_HUD_C:OnAttributeChangeTips(AttributeChangeTipsDataAry)
   self:TidyAttributeChangeTips(AttributeChangeTipsDataAry)
   UE.URGBlueprintLibrary.SetTimerForNextTick(self, {
@@ -1727,6 +1845,7 @@ function WBP_HUD_C:OnAttributeChangeTips(AttributeChangeTipsDataAry)
     self.OnDelayAttributeChangeTips
   })
 end
+
 function WBP_HUD_C:OnDelayAttributeChangeTips()
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGWaveWindowManager:StaticClass())
   if not WaveWindowManager then
@@ -1750,6 +1869,7 @@ function WBP_HUD_C:OnDelayAttributeChangeTips()
   end
   self.AttributeChangeTipsDataAryTemp:Clear()
 end
+
 function WBP_HUD_C:UpdateConiVis()
   self.Coin:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.CoinVisTimer) then
@@ -1762,6 +1882,7 @@ function WBP_HUD_C:UpdateConiVis()
     end
   }, self.CoinDuration, false)
 end
+
 function WBP_HUD_C:BindOnPostItemChanged(ArticleId, OldStack, NewStack)
   local ItemId = UE.URGArticleStatics.GetConfigId(ArticleId)
   if ItemId == self.Coin.ItemId then
@@ -1772,6 +1893,7 @@ function WBP_HUD_C:BindOnPostItemChanged(ArticleId, OldStack, NewStack)
     self:UpdateSurvivalItemCount()
   end
 end
+
 function WBP_HUD_C:ShowUIEffect(AniName, PlayMode)
   if nil == PlayMode then
     PlayMode = UE.EUMGSequencePlayMode.Forward
@@ -1790,9 +1912,11 @@ function WBP_HUD_C:ShowUIEffect(AniName, PlayMode)
     end
   end
 end
+
 function WBP_HUD_C:IsSurvivalMode()
   return LogicSurvivor.IsSurvivalMode()
 end
+
 function WBP_HUD_C:InitSurvivalExp()
   local IsSurvival = self:IsSurvivalMode()
   UpdateVisibility(self.CanvasPanel_SurvivalExp, IsSurvival)
@@ -1825,6 +1949,7 @@ function WBP_HUD_C:InitSurvivalExp()
     self.ProgressBar_Exp:SetPercent(CurExp / MaxExp)
   end
 end
+
 function WBP_HUD_C:InitSurvivalModify()
   local IsSurvival = self:IsSurvivalMode()
   local Visibility = IsSurvival and UE.ESlateVisibility.Visible or UE.ESlateVisibility.Hidden
@@ -1843,15 +1968,19 @@ function WBP_HUD_C:InitSurvivalModify()
   self:UpdateSurvivalItemCount()
   UpdateVisibility(self.CanvasPanel_SurvivalTips, false)
 end
+
 function WBP_HUD_C:ListenForPermissionSelect()
   self:OnPermissionSelectClick()
 end
+
 function WBP_HUD_C:ListenForPermissionLevelUp()
   self:OnPermissionLevelUpClick()
 end
+
 function WBP_HUD_C:ListenForPotentialKey()
   self:OnPotentialKeyClick()
 end
+
 function WBP_HUD_C:OnPermissionSelectClick()
   if RGUIMgr:IsShown(UIConfig.WBP_GenericModifyChoosePanel_C.UIName) then
     return
@@ -1867,6 +1996,7 @@ function WBP_HUD_C:OnPermissionSelectClick()
   end
   LogicGenericModify:SurvivalModify()
 end
+
 function WBP_HUD_C:OnPermissionLevelUpClick()
   if RGUIMgr:IsShown(UIConfig.WBP_GenericModifyChoosePanel_C.UIName) then
     return
@@ -1882,6 +2012,7 @@ function WBP_HUD_C:OnPermissionLevelUpClick()
   end
   LogicGenericModify:SurvivalRequestUpgradeModify()
 end
+
 function WBP_HUD_C:OnPotentialKeyClick()
   if RGUIMgr:IsShown(UIConfig.WBP_GenericModifyChoosePanel_C.UIName) then
     return
@@ -1894,6 +2025,7 @@ function WBP_HUD_C:OnPotentialKeyClick()
   end
   LogicGenericModify:SurvivalRequestSpecificModify()
 end
+
 function WBP_HUD_C:UpdateSurvivalItemCount()
   if not self:IsSurvivalMode() then
     return
@@ -1935,6 +2067,7 @@ function WBP_HUD_C:UpdateSurvivalItemCount()
     SurvivorData.SetGuide(true)
   end
 end
+
 function WBP_HUD_C:OnAddSurvivalModify(PreviewModifyData)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   local SurvivalModeComp = Character:GetComponentByClass(UE.URGSurvivalModeComponent:StaticClass())
@@ -1943,33 +2076,42 @@ function WBP_HUD_C:OnAddSurvivalModify(PreviewModifyData)
     self.TxT_PermissionSelect:SetText(self.PermissionSelectCount)
   end
 end
+
 function WBP_HUD_C:OnUpgradeSurvivalModify(PreviewUpgradeModifyData)
   self:UpdateSurvivalItemCount()
 end
+
 function WBP_HUD_C:OnSurvivalSpecificModify(PreviewSpecificModifyData)
   self:UpdateSurvivalItemCount()
 end
+
 function WBP_HUD_C:OnModifyCountChange()
   self:UpdateSurvivalItemCount()
 end
+
 function WBP_HUD_C:BindOnNotifyWorldInfo()
   self:InitSurvivalExp()
   self:InitSurvivalModify()
 end
+
 function WBP_HUD_C:BindOnPlayerRevivalSuccess()
   self:InitSurvivalExp()
   self:InitSurvivalModify()
 end
+
 function WBP_HUD_C:ListenForSurvivalCtrl()
 end
+
 function WBP_HUD_C:GetSurvivorTips(Index)
   local Tips = self["Image_tips" .. Index]
   return Tips
 end
+
 function WBP_HUD_C:GetSurvivorDuration(Index)
   local Duration = self["SurvivorTipsTime" .. Index]
   return Duration
 end
+
 function WBP_HUD_C:ShowSurvivorGuide()
   do return end
   if self.SurvivorGuideTimer and UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.SurvivorGuideTimer) then
@@ -1983,6 +2125,7 @@ function WBP_HUD_C:ShowSurvivorGuide()
   local Index = 1
   self:DoShowSurvivorGuide(Index)
 end
+
 function WBP_HUD_C:DoShowSurvivorGuide(Index)
   UpdateVisibility(self:GetSurvivorTips(Index), true)
   self.SurvivorGuideTimer = UE.UKismetSystemLibrary.K2_SetTimerDelegate({
@@ -1998,6 +2141,7 @@ function WBP_HUD_C:DoShowSurvivorGuide(Index)
     end
   }, self:GetSurvivorDuration(Index), false)
 end
+
 function WBP_HUD_C:ListenForSurvivorPermission()
   if self.PermissionIndex ~= nil and self.PermissionIndex >= 3 then
     self:InactiveSurvivorInput()
@@ -2024,6 +2168,7 @@ function WBP_HUD_C:ListenForSurvivorPermission()
     self:ActiveSurvivorInput()
   end
 end
+
 function WBP_HUD_C:ActiveSurvivorInput()
   if not self:IsSurvivalMode() then
     return
@@ -2035,11 +2180,13 @@ function WBP_HUD_C:ActiveSurvivorInput()
     })
   end
 end
+
 function WBP_HUD_C:InactiveSurvivorInput()
   self.PermissionIndex = nil
   UpdateVisibility(self.WBP_RGBeginnerGuidanceClickArea, false)
   StopListeningForInputAction(self, self.SurvivorSelectRight, UE.EInputEvent.IE_Pressed)
 end
+
 function WBP_HUD_C:SetSurvivorGuideArea()
   if self.PermissionIndex == nil then
     return
@@ -2061,12 +2208,14 @@ function WBP_HUD_C:SetSurvivorGuideArea()
   local LocalPosition = UE.USlateBlueprintLibrary.AbsoluteToLocal(TargetParent:GetCachedGeometry(), SourceScreenPosition)
   self.WBP_RGBeginnerGuidanceClickArea.Slot:SetPosition(LocalPosition)
 end
+
 function WBP_HUD_C:BindOnFinishInteract()
   if not self:IsSurvivalMode() then
     return
   end
   self:InactiveSurvivorInput()
 end
+
 function WBP_HUD_C:ListenForSurvivorSelectRight()
   if not self:IsSurvivalMode() then
     return
@@ -2081,6 +2230,7 @@ function WBP_HUD_C:ListenForSurvivorSelectRight()
     self:InactiveSurvivorInput()
   end
 end
+
 function WBP_HUD_C:ListenForSurvivorSelectLeft()
   if not self:IsSurvivalMode() then
     return
@@ -2095,6 +2245,7 @@ function WBP_HUD_C:ListenForSurvivorSelectLeft()
     self:InactiveSurvivorInput()
   end
 end
+
 function WBP_HUD_C:CheckPermissionIndex()
   local SurvivalModifyCount = LogicGenericModify:GetSurvivalModifyCount()
   local SurvivalUpgradeModifyCount = LogicGenericModify:GetSurvivalUpgradeModifyCount()
@@ -2109,6 +2260,7 @@ function WBP_HUD_C:CheckPermissionIndex()
     return false
   end
 end
+
 function WBP_HUD_C:UpdatePermissionIndex(IsAdd)
   local SurvivalModifyCount = LogicGenericModify:GetSurvivalModifyCount()
   local SurvivalUpgradeModifyCount = LogicGenericModify:GetSurvivalUpgradeModifyCount()
@@ -2153,6 +2305,7 @@ function WBP_HUD_C:UpdatePermissionIndex(IsAdd)
   end
   return OldIndex ~= self.PermissionIndex
 end
+
 function WBP_HUD_C:ListenForSurvivorConfirm()
   if self.PermissionIndex == nil then
     return
@@ -2168,4 +2321,5 @@ function WBP_HUD_C:ListenForSurvivorConfirm()
     self:OnPotentialKeyClick()
   end
 end
+
 return WBP_HUD_C

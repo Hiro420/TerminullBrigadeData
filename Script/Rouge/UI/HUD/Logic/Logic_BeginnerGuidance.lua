@@ -1,5 +1,6 @@
 LogicBeginnerGuidance = LogicBeginnerGuidance or {IsInit = false, IsExecuteBeginGuideDecide = true}
 local BeginnerGuideData = require("Modules.Beginner.BeginnerGuideData")
+
 function LogicBeginnerGuidance.Init()
   if LogicBeginnerGuidance.IsInit then
     LogicBeginnerGuidance.HUDTipList = {}
@@ -13,6 +14,7 @@ function LogicBeginnerGuidance.Init()
   ListenObjectMessage(nil, GMP.MSG_Level_Guide_ReturnToLobby, GameInstance, LogicBeginnerGuidance.BindOnGuideLevelReturnToLobby)
   ListenObjectMessage(nil, GMP.MSG_Level_Guide_ChangeWhetherExecuteBeginGuideDecide, GameInstance, LogicBeginnerGuidance.BindOnChangeWhetherExecuteBeginGuideDecide)
 end
+
 function LogicBeginnerGuidance.BindCharacterDelegate()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character or not Character.PlayerState then
@@ -31,27 +33,33 @@ function LogicBeginnerGuidance.BindCharacterDelegate()
   MissionComp.OnMissionFinished:Add(GameInstance, LogicBeginnerGuidance.BindOnMissionFinished)
   MissionComp.OnMissionFailed:Add(GameInstance, LogicBeginnerGuidance.BindOnMissionFailed)
 end
+
 function LogicBeginnerGuidance.BindOnGuideLevelFinished()
   print("LogicBeginnerGuidance.BindOnGuideLevelFinished")
   if not BeginnerGuideData.freshmanFightFinished then
     HttpCommunication.Request("playergrowth/freshmanguide/finishfreshmanfight", {})
   end
 end
+
 function LogicBeginnerGuidance.BindOnGuideLevelReturnToLobby()
   print("LogicBeginnerGuidance.BindOnGuideLevelReturnToLobby")
   UE.UAsyncLoadingScreenLibrary.ResetLoadingScreenType("BattleToLobby")
   LogicLobby.SetIsNeedPlayAfterBeginnerGuidanceMovie(true)
   LogicLobby.OpenLobbyLevel()
 end
+
 function LogicBeginnerGuidance.BindOnChangeWhetherExecuteBeginGuideDecide(IsExecute)
   LogicBeginnerGuidance.IsExecuteBeginGuideDecide = IsExecute
 end
+
 function LogicBeginnerGuidance.RegisterHUDTip(BeginnerRowId, Widget)
   LogicBeginnerGuidance.HUDTipList[BeginnerRowId] = Widget
 end
+
 function LogicBeginnerGuidance.UnRegisterHUDTip(BeginnerRowId, Widget)
   LogicBeginnerGuidance.HUDTipList[BeginnerRowId] = nil
 end
+
 function LogicBeginnerGuidance:BindOnMissionStarted(Handle)
   if not LogicBeginnerGuidance.IsExecuteBeginGuideDecide then
     print("LogicBeginnerGuidance:BindOnMissionStarted not Execute Begin Guide Decide")
@@ -88,12 +96,14 @@ function LogicBeginnerGuidance:BindOnMissionStarted(Handle)
     end
   end
 end
+
 function LogicBeginnerGuidance.HideBeginnerGuidanceMainPanel(MissionId)
   local BeginnerGuidanceMainPanel = RGUIMgr:GetUI(UIConfig.WBP_RGBeginnerGuidancePanel_C.UIName)
   if BeginnerGuidanceMainPanel and RGUIMgr:IsShown(UIConfig.WBP_RGBeginnerGuidancePanel_C.UIName) then
     BeginnerGuidanceMainPanel:OnMissionFinished(MissionId)
   end
 end
+
 function LogicBeginnerGuidance:BindOnMissionFinished(Handle)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character or not Character.PlayerState then
@@ -119,6 +129,7 @@ function LogicBeginnerGuidance:BindOnMissionFinished(Handle)
     end
   end
 end
+
 function LogicBeginnerGuidance:BindOnMissionFailed(Handle)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character or not Character.PlayerState then
@@ -134,6 +145,7 @@ function LogicBeginnerGuidance:BindOnMissionFailed(Handle)
   print("LogicBeginnerGuidance.BindOnMissionFailed", Instance:GetMissionId())
   LogicBeginnerGuidance.HideBeginnerGuidanceMainPanel(Instance:GetMissionId())
 end
+
 function LogicBeginnerGuidance.Clear()
   LogicBeginnerGuidance.IsInit = false
   UnListenObjectMessage(GMP.MSG_Level_Guide_LevelFinished, self)

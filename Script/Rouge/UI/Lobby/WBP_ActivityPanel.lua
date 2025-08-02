@@ -5,17 +5,22 @@ local UIUtil = require("Framework.UIMgr.UIUtil")
 local PandoraModule = require("Modules.Pandora.PandoraModule")
 local RedDotData = require("Modules.RedDot.RedDotData")
 local WBP_ActivityPanel = Class(ViewBase)
+
 function WBP_ActivityPanel:BindClickHandler()
 end
+
 function WBP_ActivityPanel:UnBindClickHandler()
 end
+
 function WBP_ActivityPanel:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function WBP_ActivityPanel:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_ActivityPanel:OnShowLink(LinkParams, HeroId, ActivityIds, bByPandora, SecondTab, jumpParams)
   if ActivityIds and type(ActivityIds) == "table" and ActivityIds[1] then
     EventSystem.Invoke(EventDef.Activity.OnChangeActivityItemSelected, ActivityIds[1])
@@ -35,6 +40,7 @@ function WBP_ActivityPanel:OnShowLink(LinkParams, HeroId, ActivityIds, bByPandor
     return
   end
 end
+
 function WBP_ActivityPanel:OnShow(TargetActivityId)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -52,6 +58,7 @@ function WBP_ActivityPanel:OnShow(TargetActivityId)
   end
   self:SetEnhancedInputActionBlocking(true)
 end
+
 function WBP_ActivityPanel:BindRefreshActivitiesTab(bRefreshData)
   self.ActivityTabInfo = {}
   local Item = GetOrCreateItem(self.SecondaryTab, 1, self.SecondaryTabTem:StaticClass())
@@ -85,10 +92,6 @@ function WBP_ActivityPanel:BindRefreshActivitiesTab(bRefreshData)
     Item:BindOnClicked(self, function()
       EventSystem.Invoke(EventDef.Activity.OnPandoraActivityTabSelected, Obj.appId)
     end)
-    local IsNewCreate = RedDotData:CreateRedDotState(tonumber(Obj.appId), "Activity_Tab")
-    local RedDotState = {}
-    RedDotState.Num = tonumber(Obj.redPoint)
-    RedDotData:UpdateRedDotState(tonumber(Obj.appId), RedDotState)
     Index = Index + 1
     Item.WBP_RedDotView:ChangeRedDotId(tonumber(Obj.appId), "Activity_Tab")
   end
@@ -104,6 +107,7 @@ function WBP_ActivityPanel:BindRefreshActivitiesTab(bRefreshData)
     UpdateVisibility(self.WBP_ActivityTitle, false)
   end
 end
+
 function WBP_ActivityPanel:RefreshActivitiesItemList(TargetActivityId)
   local ActivityGeneralTable = LuaTableMgr.GetLuaTableByName(TableNames.TBActivityGeneral)
   local CanShowActivityIdList = {}
@@ -138,6 +142,7 @@ function WBP_ActivityPanel:RefreshActivitiesItemList(TargetActivityId)
   TargetActivityId = TargetActivityId or CanShowActivityIdList[1]
   return TargetActivityId
 end
+
 function WBP_ActivityPanel:RefreshPandoraActivitiesItem()
   if PandoraModule.ActivityInfo == nil then
     return
@@ -149,11 +154,13 @@ function WBP_ActivityPanel:RefreshPandoraActivitiesItem()
   end
   HideOtherItem(self.ActivitiesItemList, self.Index)
 end
+
 function WBP_ActivityPanel:ActivitiesTab(AppName)
   for Name, Item in pairs(self.ActivityTabInfo) do
     Item:SetSelect(Name == tostring(AppName))
   end
 end
+
 function WBP_ActivityPanel:BindOnPandoraActivityTabSelected(AppId, JumpParams)
   if self.SelTabAppId then
     ClosePandorApp(self.SelTabAppId)
@@ -175,6 +182,7 @@ function WBP_ActivityPanel:BindOnPandoraActivityTabSelected(AppId, JumpParams)
   end
   self:ActivitiesTab(AppId)
 end
+
 function WBP_ActivityPanel:BindOnChangeActivityItemSelected(ActivityId, bByPandora)
   local LastShowActivityId = self.CurShowActivityId
   self.CurShowActivityId = ActivityId
@@ -211,12 +219,15 @@ function WBP_ActivityPanel:BindOnChangeActivityItemSelected(ActivityId, bByPando
     self:BindOnChangeActivityItemSelectedByPandora(ActivityId, LastShowActivityId)
   end
 end
+
 function WBP_ActivityPanel:BindOnChangeActivityItemSelectedByPandora(AppId, LastAppId)
   OpenPandorApp(AppId, "WBP_ActivityPanel")
 end
+
 function WBP_ActivityPanel:BindOnEscKeyPressed(...)
   UIMgr:Hide(ViewID.UI_ActivityPanel, true)
 end
+
 function WBP_ActivityPanel:OnPreHide(...)
   self:BindOnChangeActivityItemSelected(nil)
   EventSystem.RemoveListenerNew(EventDef.Activity.OnChangeActivityItemSelected, self, self.BindOnChangeActivityItemSelected)
@@ -225,6 +236,7 @@ function WBP_ActivityPanel:OnPreHide(...)
   self.WBP_InteractTipWidget:UnBindInteractAndClickEvent(self, self.BindOnEscKeyPressed)
   self:SetEnhancedInputActionBlocking(false)
 end
+
 function WBP_ActivityPanel:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -236,7 +248,9 @@ function WBP_ActivityPanel:OnHide()
   self.LastOpenPandorAppId = nil
   self:SetEnhancedInputActionBlocking(false)
 end
+
 function WBP_ActivityPanel:Destruct(...)
   self:OnPreHide()
 end
+
 return WBP_ActivityPanel

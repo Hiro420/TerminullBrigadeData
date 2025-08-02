@@ -1,9 +1,11 @@
 local ClimbTowerData = require("UI.View.ClimbTower.ClimbTowerData")
 local FaultScore = UnLua.Class()
+
 function FaultScore:Construct()
   EventSystem.AddListener(self, EventDef.ClimbTowerView.OnDebuffChange, self.OnDebuffChange)
   self.Mat = self.URGImage_94:GetDynamicMaterial()
 end
+
 function FaultScore:OnDebuffChange(bServerNotify)
   if ClimbTowerData:GetFaultScore() >= ClimbTowerData:GetTargetFaultScore() then
     self.RGStateController_Score:ChangeStatus("Meet", true)
@@ -28,6 +30,7 @@ function FaultScore:OnDebuffChange(bServerNotify)
     self.DeltaScore = ClimbTowerData:GetFaultScore()
   end
 end
+
 function FaultScore:LuaTick(InDeltaTime)
   if ClimbTowerData:GetFaultScore() == nil then
     return
@@ -59,4 +62,5 @@ function FaultScore:LuaTick(InDeltaTime)
     end
   end
 end
+
 return FaultScore

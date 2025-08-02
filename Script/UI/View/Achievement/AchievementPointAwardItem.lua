@@ -1,9 +1,12 @@
 local AchievementPointAwardItem = UnLua.Class()
+
 function AchievementPointAwardItem:Construct()
   self.BP_ButtonWithSoundGetAward.OnClicked:Add(self, self.OnGetAwardClick)
 end
+
 function AchievementPointAwardItem:Destruct()
 end
+
 function AchievementPointAwardItem:InitAchievementPointAwardItem(tbTask, bSelect, ParentView, AwardListView)
   if not tbTask then
     return
@@ -27,18 +30,21 @@ function AchievementPointAwardItem:InitAchievementPointAwardItem(tbTask, bSelect
   self.AwardListView = AwardListView
   self.TaskId = taskId
 end
+
 function AchievementPointAwardItem:OnMouseEnter()
   self.RGStateControllerHover:ChangeStatus(EHover.Hover)
   if self.AwardListView then
     self.AwardListView:ShowAwardTips(self.GeneralId, true, self)
   end
 end
+
 function AchievementPointAwardItem:OnMouseLeave()
   self.RGStateControllerHover:ChangeStatus(EHover.UnHover)
   if self.AwardListView then
     self.AwardListView:ShowAwardTips(self.GeneralId, false, self)
   end
 end
+
 function AchievementPointAwardItem:OnGetAwardClick()
   if not self.ParentView then
     return
@@ -47,7 +53,9 @@ function AchievementPointAwardItem:OnGetAwardClick()
     self.TaskId
   })
 end
+
 function AchievementPointAwardItem:Hide()
   UpdateVisibility(self, false)
 end
+
 return AchievementPointAwardItem

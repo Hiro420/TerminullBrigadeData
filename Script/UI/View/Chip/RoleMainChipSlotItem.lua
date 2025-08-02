@@ -1,4 +1,5 @@
 local RoleMainChipSlotItem = UnLua.Class()
+
 function RoleMainChipSlotItem:InitRoleMainChipSlotItem(chipInfo)
   UpdateVisibility(self, true)
   if chipInfo and "0" ~= chipInfo then
@@ -14,7 +15,9 @@ function RoleMainChipSlotItem:InitRoleMainChipSlotItem(chipInfo)
     self.RGStateControllerEquiped:ChangeStatus(EEquiped.UnEquiped)
   end
 end
+
 function RoleMainChipSlotItem:Hide()
   UpdateVisibility(self, false)
 end
+
 return RoleMainChipSlotItem

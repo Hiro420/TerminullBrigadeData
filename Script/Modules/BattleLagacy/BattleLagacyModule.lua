@@ -6,8 +6,10 @@ local BattleLagacyHandler = require("Protocol.BattleLagacy.BattleLagacyHandler")
 local Max_Request_Num = 5
 local CurLagacyRequestNum = 0
 local CurLagacyListRequestNum = 0
+
 function BattleLagacyModule:Ctor()
 end
+
 function BattleLagacyModule:OnInit()
   if UE.RGUtil.IsDedicatedServer() then
     return
@@ -19,6 +21,7 @@ function BattleLagacyModule:OnInit()
   EventSystem.AddListenerNew(EventDef.BattleLagacy.OnGetCurrBattleLagacyFailed, self, self.OnGetCurrBattleLagacyFailed)
   EventSystem.AddListenerNew(EventDef.BattleLagacy.OnSelectBattleLagacy, self, self.OnSelectBattleLagacy)
 end
+
 function BattleLagacyModule:OnShutdown()
   if UE.RGUtil.IsDedicatedServer() then
     return
@@ -30,6 +33,7 @@ function BattleLagacyModule:OnShutdown()
   EventSystem.RemoveListenerNew(EventDef.BattleLagacy.OnGetCurrBattleLagacyFailed, self, self.OnGetCurrBattleLagacyFailed)
   EventSystem.RemoveListenerNew(EventDef.BattleLagacy.OnSelectBattleLagacy, self, self.OnSelectBattleLagacy)
 end
+
 function BattleLagacyModule:Reset()
   CurLagacyRequestNum = 0
   CurLagacyListRequestNum = 0
@@ -40,15 +44,18 @@ function BattleLagacyModule:Reset()
     BattleLagacyId = "0"
   }
 end
+
 function BattleLagacyModule:UpdateBattleLagacyList(BattleLagacyList)
   self.BattleLagacyList = BattleLagacyList
   EventSystem.Invoke(EventDef.BattleLagacy.OnTriggerBattleLagacyList, BattleLagacyList)
 end
+
 function BattleLagacyModule:UpdateCurBattleLagacyData(BattleLagacyID, BattleLagacyType)
   BattleLagacyData.CurBattleLagacyData.BattleLagacyId = BattleLagacyID
   BattleLagacyData.CurBattleLagacyData.BattleLagacyType = BattleLagacyType
   EventSystem.Invoke(EventDef.BattleLagacy.OnTriggerCurrBattleLagacy, BattleLagacyData.CurBattleLagacyData)
 end
+
 function BattleLagacyModule:OnGetBattleLagacyList(BattleLagacyList)
   if #BattleLagacyList <= 0 then
     if BattleLagacyData.CurBattleLagacyData.BattleLagacyId == nil or BattleLagacyData.CurBattleLagacyData.BattleLagacyId == "0" then
@@ -69,6 +76,7 @@ function BattleLagacyModule:OnGetBattleLagacyList(BattleLagacyList)
     EventSystem.Invoke(EventDef.BattleLagacy.OnTriggerBattleLagacyList, BattleLagacyList)
   end
 end
+
 function BattleLagacyModule:OnGetBattleLagacyListFailed()
   if (BattleLagacyData.CurBattleLagacyData.BattleLagacyId == nil or BattleLagacyData.CurBattleLagacyData.BattleLagacyId == "0") and table.IsEmpty(self.BattleLagacyList) then
     if CurLagacyListRequestNum < Max_Request_Num then
@@ -83,28 +91,37 @@ function BattleLagacyModule:OnGetBattleLagacyListFailed()
     print("BattleLagacyModule:OnGetBattleLagacyListFailed CurBattleLagacyData Had Not nil")
   end
 end
+
 function BattleLagacyModule:OnGetCurrBattleLagacy(BattleLagacyID, BattleLagacyType)
 end
+
 function BattleLagacyModule:OnGetCurrBattleLagacyFailed()
 end
+
 function BattleLagacyModule:OnSelectBattleLagacy(Idx, SelectId)
   self:UpdateCurBattleLagacyData(SelectId, EBattleLagacyType.GeneircModify)
 end
+
 function BattleLagacyModule:AddGenericModifyByBattleLagacy(Idx, SelectId)
   BattleLagacyHandler:AddGenericModifyByBattleLagacy(Idx, SelectId)
 end
+
 function BattleLagacyModule:GetBattleLagacyList()
   BattleLagacyHandler:GetBattleLagacyList()
 end
+
 function BattleLagacyModule:GetCurrBattleLagacy()
   BattleLagacyHandler:GetCurrBattleLagacy()
 end
+
 function BattleLagacyModule:GetCurrBattleLagacyLogin()
   BattleLagacyHandler:GetCurrBattleLagacyLogin()
 end
+
 function BattleLagacyModule:Setbattlelagacylist()
   BattleLagacyHandler:Setbattlelagacylist()
 end
+
 function BattleLagacyModule:CheckBattleLagacyIsActive()
   if BattleLagacyData.CurBattleLagacyData == nil then
     return false
@@ -118,4 +135,5 @@ function BattleLagacyModule:CheckBattleLagacyIsActive()
   end
   return true
 end
+
 return BattleLagacyModule

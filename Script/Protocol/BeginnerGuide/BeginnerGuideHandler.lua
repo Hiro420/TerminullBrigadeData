@@ -3,6 +3,7 @@ local UnLua = _G.UnLua
 local rapidjson = require("rapidjson")
 local BeginnerGuideData = require("Modules.Beginner.BeginnerGuideData")
 local BeginnerGuideHandler = {}
+
 function BeginnerGuideHandler.RequestGetFinishedGuideListFromServer(SuccCallback, FailCallback)
   HttpCommunication.Request("playergrowth/freshmanguide/pulldata", {}, {
     GameInstance,
@@ -26,6 +27,7 @@ function BeginnerGuideHandler.RequestGetFinishedGuideListFromServer(SuccCallback
     end
   })
 end
+
 function BeginnerGuideHandler.RequestFinishGuideToServer(GuideId, SuccCallback)
   HttpCommunication.Request("playergrowth/freshmanguide/finishfreshmanguide", {guideID = GuideId}, {
     GameInstance,
@@ -42,4 +44,5 @@ function BeginnerGuideHandler.RequestFinishGuideToServer(GuideId, SuccCallback)
     end
   })
 end
+
 return BeginnerGuideHandler

@@ -91,9 +91,11 @@ DataMgr.RoomStatus = {
   Match = "MATCH"
 }
 local MaxLevel = 80
+
 function DataMgr.InitData(...)
   MonthCardData:DealWithTable()
 end
+
 function DataMgr.ClearData()
   DataMgr.CommonTalents = {}
   DataMgr.HeroTalents = {}
@@ -110,38 +112,46 @@ function DataMgr.ClearData()
   DataMgr.TimeVelocityDifference = 0
   DataMgr.TalentsAccumulativeCost = {}
   DataMgr.GameFloorInfo = {}
-  LoginData:ClearData()
-  DataMgr.RewardIncreaseCount = 0
+  DataMgr.RewardIncreaseCount = 0, LoginData:ClearData()
   PuzzleData:ClearData()
   GemData:ClearData()
 end
+
 function DataMgr.SetServerTimeZone(InServerTimeZone)
   DataMgr.ServerTimeZoneId = InServerTimeZone
 end
+
 function DataMgr.GetServerTimeZone(...)
   return DataMgr.ServerTimeZoneId
 end
+
 function DataMgr.SetServerTimeDelta(InServerTime)
   DataMgr.ServerTimeDelta = InServerTime - UE.URGStatisticsLibrary.GetTimestamp(true)
   DataMgr.InitClientTime = UE.URGStatisticsLibrary.GetTimestamp(true)
   DataMgr.InitServerTime = InServerTime
 end
+
 function GetTimeWithServerDelta()
   return UE.URGStatisticsLibrary.GetTimestamp(true) + DataMgr.ServerTimeDelta + DataMgr.TimeVelocityDifference
 end
+
 function DataMgr.SetTimeVelocityDifferenceByServer(CurServerTime)
   local CurClientTime = UE.URGStatisticsLibrary.GetTimestamp(true)
   DataMgr.TimeVelocityDifference = CurServerTime - DataMgr.InitServerTime - (CurClientTime - DataMgr.InitClientTime)
 end
+
 function DataMgr.SetTeamMemberNameList(InNameList)
   DataMgr.TeamMemberNameList = InNameList
 end
+
 function DataMgr.SetAccountName(AccountName)
   DataMgr.AccountName = AccountName
 end
+
 function DataMgr.GetAccountName()
   return DataMgr.AccountName
 end
+
 function DataMgr.SetUserId(UserId)
   if not UserId then
     UnLua.LogError("DataMgr.SetUserId - UserId is nil.")
@@ -149,9 +159,11 @@ function DataMgr.SetUserId(UserId)
   end
   DataMgr.UserId = UserId
 end
+
 function DataMgr.SetNetBarPrivilegeType(PrivilegeType)
   DataMgr.NetBarPrivilegeType = PrivilegeType
 end
+
 function DataMgr.SetServerOpenTime(ServerOpenTime)
   if not ServerOpenTime then
     UnLua.LogError("DataMgr.ServerOpenTime - ServerOpenTime is nil.")
@@ -159,23 +171,29 @@ function DataMgr.SetServerOpenTime(ServerOpenTime)
   end
   DataMgr.ServerOpenTime = ServerOpenTime
 end
+
 function DataMgr.GetServerOpenTime()
   return DataMgr.ServerOpenTime
 end
+
 function DataMgr.GetUserId()
   return DataMgr.UserId
 end
+
 function DataMgr.GetNetBarPrivilegeType()
   return DataMgr.NetBarPrivilegeType
 end
+
 function DataMgr.SetPortraitId(PortraitId)
   DataMgr.GetBasicInfo().portrait = PortraitId
   DataMgr.SetBasicInfo(DataMgr.GetBasicInfo())
 end
+
 function DataMgr.SetNickName(NickName)
   DataMgr.GetBasicInfo().nickname = NickName
   DataMgr.SetBasicInfo(DataMgr.GetBasicInfo())
 end
+
 function DataMgr.SetUserIDChannelUserId(UserID, ChannelUserId)
   DataMgr.PrintChannelInfoLog(string.format("ChannelInfo SetUserIDChannelUserId: UserID: %s", tostring(UserID)))
   if nil == UserID or nil == ChannelUserId then
@@ -184,37 +202,46 @@ function DataMgr.SetUserIDChannelUserId(UserID, ChannelUserId)
   DataMgr.PrintChannelInfoLog(string.format("ChannelInfo SetUserIDChannelUserId: Success"))
   DataMgr.UserIDToChannelUserIdMap[UserID] = ChannelUserId
 end
+
 function DataMgr.PrintChannelInfoLog(LogString)
   if DataMgr.EnableChannelInfoLog then
     print(LogString)
   end
 end
+
 function DataMgr.SetChannelUserId(ChannelUserId)
   DataMgr.PrintChannelInfoLog(string.format("ChannelInfo SetChannelUserId ChannelUserId: %s", tostring(ChannelUserId)))
   DataMgr.ChannelUserId = ChannelUserId
   EventSystem.Invoke(EventDef.Login.OnGetUserID)
 end
+
 function DataMgr.GetChannelUserId()
   return DataMgr.ChannelUserId
 end
+
 function DataMgr.SetChannelUserIdWithPrefix(ChannelUserIdWithPrefix)
   DataMgr.ChannelUserIdWithPrefix = ChannelUserIdWithPrefix
 end
+
 function DataMgr.GetChannelUserIdWithPrefix()
   return DataMgr.ChannelUserIdWithPrefix
 end
+
 function DataMgr.SetBannerId(BannerId)
   DataMgr.GetBasicInfo().banner = BannerId
   DataMgr.SetBasicInfo(DataMgr.GetBasicInfo())
 end
+
 function DataMgr.SetInvisible(IsInvisible)
   DataMgr.GetBasicInfo().invisible = IsInvisible
   DataMgr.SetBasicInfo(DataMgr.GetBasicInfo())
 end
+
 function DataMgr.SetCurSelectPastSeasonID(PastSeasonID)
   DataMgr.GetBasicInfo().selectedPastGrowthSeasonID = PastSeasonID
   DataMgr.SetBasicInfo(DataMgr.GetBasicInfo())
 end
+
 function DataMgr.SetBasicInfo(Info)
   local bIsTriggerExpChange = false
   if -1 ~= DataMgr.OldLevel and tonumber(Info.level) > DataMgr.OldLevel then
@@ -251,18 +278,23 @@ function DataMgr.SetBasicInfo(Info)
   end
   EventSystem.Invoke(EventDef.Lobby.OnBasicInfoUpdated)
 end
+
 function DataMgr.SetRewardIncreaseCount(Count)
   DataMgr.RewardIncreaseCount = Count
 end
+
 function DataMgr.GetBasicInfo()
   return DataMgr.BasicInfo
 end
+
 function DataMgr.SetGameFloorInfo(GameMode, GameFloorData)
   DataMgr.GameFloorInfo[GameMode] = GameFloorData
 end
+
 function DataMgr.GetGameFloorInfoByGameMode(GameModeId)
   return DataMgr.GameFloorInfo[GameModeId]
 end
+
 function DataMgr.GetFloorByGameModeIndex(WorldId, GameModeId)
   if not GameModeId then
     local Result, RowInfo = GetRowData(DT.DT_GameMode, tostring(WorldId))
@@ -295,34 +327,43 @@ function DataMgr.GetFloorByGameModeIndex(WorldId, GameModeId)
   end
   return unlock_floor
 end
+
 function DataMgr.GetExp()
   local BasicInfo = DataMgr.GetBasicInfo()
   return BasicInfo and BasicInfo.exp or 0
 end
+
 function DataMgr.GetRoleLevel()
   local BasicInfo = DataMgr.GetBasicInfo()
   return BasicInfo and tonumber(BasicInfo.level) or 0
 end
+
 function DataMgr.SetRoomInfo(RoomInfo)
   DataMgr.RoomInfo = RoomInfo
   DataMgr.SetInRoom(true)
 end
+
 function DataMgr.GetRoomInfo()
   return DataMgr.RoomInfo
 end
+
 function DataMgr.GetRoomPlayers()
   return DataMgr.RoomInfo.players
 end
+
 function DataMgr.ClearRoomData()
   DataMgr.RoomInfo = {}
   DataMgr.SetInRoom(false)
 end
+
 function DataMgr.SetInRoom(InRoom)
   DataMgr.InRoom = InRoom
 end
+
 function DataMgr.IsInRoom()
   return DataMgr.InRoom
 end
+
 function DataMgr.SetTeamInfo(InTeamInfo)
   if UE.URGBlueprintLibrary.CheckWithEditor() and LogicLobby.IsFakeTeamData and InTeamInfo.players and next(InTeamInfo.players) ~= nil then
     local IdDiffValue = 1
@@ -353,27 +394,35 @@ function DataMgr.SetTeamInfo(InTeamInfo)
   DataMgr.SetTeamHeroIdList(TeamHeroIdList)
   DataMgr.SetTeamHeroSkinIdList(TeamHeroSkinIdList)
 end
+
 function DataMgr.SetTeamHeroIdList(InTeamHeroIdList)
   DataMgr.TeamHeroIdList = InTeamHeroIdList
 end
+
 function DataMgr.GetTeamHeroIdList()
   return DataMgr.TeamHeroIdList
 end
+
 function DataMgr.SetTeamHeroSkinIdList(InTeamHeroSkinIdList)
   DataMgr.TeamHeroSkinIdList = InTeamHeroSkinIdList
 end
+
 function DataMgr.GetTeamHeroSkinIdList()
   return DataMgr.TeamHeroSkinIdList
 end
+
 function DataMgr.GetDefaultSkin()
   return DataMgr.DefalutSkin
 end
+
 function DataMgr.SetTeamMembersInfo(InPlayerList)
   DataMgr.TeamMembersInfo = InPlayerList
 end
+
 function DataMgr.GetTeamMembersInfo()
   return DataMgr.TeamMembersInfo
 end
+
 function DataMgr.GetTeamMemberCount()
   if DataMgr.IsInTeam() then
     return #DataMgr.GetTeamMembersInfo()
@@ -381,6 +430,7 @@ function DataMgr.GetTeamMemberCount()
     return 1
   end
 end
+
 local GetUnlockFloorByModeAndWorld = function(InGameFloorInfo, GameModeId, WorldId)
   local unlock_floor = 0
   local GameFloorInfo = InGameFloorInfo[tostring(GameModeId)]
@@ -397,6 +447,7 @@ local GetUnlockFloorByModeAndWorld = function(InGameFloorInfo, GameModeId, World
   end
   return unlock_floor
 end
+
 function DataMgr.GetTeamMemberGameFloorByModeAndWorld(RoleId, GameModeId, WorldId)
   local TargetTeamMembersGameFloorInfo = LogicTeam.RolesGameFloorInfo[RoleId]
   if not TargetTeamMembersGameFloorInfo then
@@ -404,12 +455,15 @@ function DataMgr.GetTeamMemberGameFloorByModeAndWorld(RoleId, GameModeId, WorldI
   end
   return GetUnlockFloorByModeAndWorld(TargetTeamMembersGameFloorInfo, GameModeId, WorldId)
 end
+
 function DataMgr.GetTeamInfo()
   return DataMgr.MyTeamInfo
 end
+
 function DataMgr.GetOldTeamInfo()
   return DataMgr.OldMyTeamInfo
 end
+
 function DataMgr.ClearTeamInfo()
   DataMgr.OldMyTeamInfo = {}
   DataMgr.OldMyTeamInfo.players = {}
@@ -417,34 +471,43 @@ function DataMgr.ClearTeamInfo()
   DataMgr.MyTeamInfo.players = {}
   DataMgr.TeamMembersInfo = {}
 end
+
 function DataMgr.IsInTeam()
   return DataMgr.MyTeamInfo.teamid and DataMgr.MyTeamInfo.teamid ~= "0" or false
 end
+
 function DataMgr.GetTeamState()
   return DataMgr.MyTeamInfo.state
 end
+
 function DataMgr.GetRewardIncreaseCount()
   return DataMgr.RewardIncreaseCount
 end
+
 function DataMgr.SetDSInfo(DSInfo)
   DataMgr.DSInfo = DSInfo
   print("DS\230\156\141\229\144\141\229\173\151:" .. DSInfo.name)
 end
+
 function DataMgr.GetDSInfo()
   return DataMgr.DSInfo
 end
+
 function DataMgr.SetLobbyDSInfo(LobbyDSInfo)
   DataMgr.LobbyDSInfo = LobbyDSInfo
   print("LobbyDS\230\156\141\229\144\141\229\173\151:" .. LobbyDSInfo.name)
 end
+
 function DataMgr.GetLobbyDSInfo()
   return DataMgr.LobbyDSInfo
 end
+
 function DataMgr.UpdateEquipHero(EquipHeroId)
   local HeroInfo = DeepCopy(DataMgr.GetMyHeroInfo())
   HeroInfo.equipHero = EquipHeroId
   DataMgr.SetMyHeroInfo(HeroInfo)
 end
+
 function DataMgr.UpdateHeroInfoSkin(HeroId, SkinId)
   local HeroInfo = DeepCopy(DataMgr.GetMyHeroInfo())
   for i, SingleHeroInfo in ipairs(HeroInfo.heros) do
@@ -455,12 +518,15 @@ function DataMgr.UpdateHeroInfoSkin(HeroId, SkinId)
   end
   DataMgr.SetMyHeroInfo(HeroInfo)
 end
+
 function DataMgr.SetMyHeroInfo(HeroInfo)
   DataMgr.HeroInfo = HeroInfo
 end
+
 function DataMgr.GetMyHeroInfo()
   return DataMgr.HeroInfo
 end
+
 function DataMgr.GetSkillLevelByType(HeroId, Type)
   local Skills
   for i, SingleHeroInfo in ipairs(DataMgr.HeroInfo.heros) do
@@ -477,6 +543,7 @@ function DataMgr.GetSkillLevelByType(HeroId, Type)
   end
   return 1
 end
+
 function DataMgr.GetHeroProfyByHeroId(HeroId)
   if not DataMgr.HeroInfo then
     print("DataMgr.GetHeroProfyByHeroId HeroInfo Is Nil")
@@ -493,6 +560,7 @@ function DataMgr.GetHeroProfyByHeroId(HeroId)
   end
   return 1
 end
+
 function DataMgr.GetHeroLevelByHeroId(HeroId)
   if not DataMgr.HeroInfo then
     print("DataMgr.GetHeroLevelByHeroId HeroInfo Is Nil")
@@ -509,6 +577,7 @@ function DataMgr.GetHeroLevelByHeroId(HeroId)
   end
   return 1
 end
+
 function DataMgr.IsOwnHero(HeroId)
   if not DataMgr.HeroInfo then
     print("DataMgr.IsOwnHero HeroInfo Is Nil")
@@ -528,6 +597,7 @@ function DataMgr.IsOwnHero(HeroId)
   end
   return false
 end
+
 function DataMgr.IsExpiredHero(HeroId)
   for i, SingleHeroInfo in ipairs(DataMgr.HeroInfo.heros) do
     if HeroId == SingleHeroInfo.id and SingleHeroInfo.expireAt ~= nil and nil ~= tonumber(SingleHeroInfo.expireAt) and tonumber(SingleHeroInfo.expireAt) > 0 then
@@ -539,6 +609,7 @@ function DataMgr.IsExpiredHero(HeroId)
   end
   return false
 end
+
 function DataMgr.IsLimitedHeroe(HeroId)
   for i, SingleHeroInfo in ipairs(DataMgr.HeroInfo.heros) do
     if HeroId == SingleHeroInfo.id and SingleHeroInfo.expireAt ~= nil and nil ~= tonumber(SingleHeroInfo.expireAt) and tonumber(SingleHeroInfo.expireAt) > 0 then
@@ -547,6 +618,7 @@ function DataMgr.IsLimitedHeroe(HeroId)
   end
   return nil
 end
+
 function DataMgr.SetOutsideCurrencyList(InCurrencyList)
   for index, value in ipairs(InCurrencyList) do
     local bIsExist = false
@@ -562,6 +634,7 @@ function DataMgr.SetOutsideCurrencyList(InCurrencyList)
     end
   end
 end
+
 function DataMgr.GetOutsideCurrencyList()
   local List = {}
   for index, value in ipairs(DataMgr.OutsideCurrencyList) do
@@ -572,6 +645,7 @@ function DataMgr.GetOutsideCurrencyList()
   end
   return List
 end
+
 function DataMgr.GetOutsideCurrencyNumById(CurrencyId)
   local Sum = 0
   for index, value in ipairs(DataMgr.OutsideCurrencyList) do
@@ -581,6 +655,7 @@ function DataMgr.GetOutsideCurrencyNumById(CurrencyId)
   end
   return Sum
 end
+
 function DataMgr.GetOutsideCurrencyTableById(CurrencyId)
   local Table = {}
   for index, value in ipairs(DataMgr.OutsideCurrencyList) do
@@ -593,9 +668,11 @@ function DataMgr.GetOutsideCurrencyTableById(CurrencyId)
   end)
   return Table
 end
+
 function DataMgr.SetOutsidePackbackList(InPackbackList)
   DataMgr.OutsidePackbackList = InPackbackList
 end
+
 function DataMgr.GetPackbackNumById(ResourceId)
   local TargetResourceList = DataMgr.OutsidePackbackList[ResourceId]
   local Sum = 0
@@ -606,10 +683,12 @@ function DataMgr.GetPackbackNumById(ResourceId)
   end
   return Sum
 end
+
 function DataMgr.GetPackbackTableById(ResourceId)
   local TargetResourceList = DataMgr.OutsidePackbackList[ResourceId]
   return TargetResourceList
 end
+
 function DataMgr.GetPackbackNumByType(ItemType)
   local sum = 0
   for k, v in pairs(DataMgr.OutsidePackbackList) do
@@ -619,20 +698,25 @@ function DataMgr.GetPackbackNumByType(ItemType)
   end
   return sum
 end
+
 function DataMgr.GetPackbackList()
   return DataMgr.OutsidePackbackList
 end
+
 function DataMgr.SetFetterHeroInfoById(HeroId, FetterHeroInfo)
   DataMgr.FetterHeroInfo[HeroId] = FetterHeroInfo
 end
+
 function DataMgr.GetFetterHeroInfoById(HeroId)
   return DataMgr.FetterHeroInfo[HeroId]
 end
+
 function DataMgr.SetCommonTalents(InTalents)
   for i, SingleTalentInfo in ipairs(InTalents) do
     DataMgr.CommonTalents[SingleTalentInfo.groupId] = SingleTalentInfo
   end
 end
+
 function DataMgr.SetCommonTalentsAccumulativeCost(InCost)
   if not InCost then
     return
@@ -641,16 +725,20 @@ function DataMgr.SetCommonTalentsAccumulativeCost(InCost)
     DataMgr.TalentsAccumulativeCost[CostInfo.rid] = CostInfo
   end
 end
+
 function DataMgr.GetCommonTalentsAccumulativeCostById(CostId)
   return DataMgr.TalentsAccumulativeCost[CostId] and DataMgr.TalentsAccumulativeCost[CostId].amount or 0
 end
+
 function DataMgr.GetCommonTalentInfos()
   return DataMgr.CommonTalents
 end
+
 function DataMgr.GetCommonTalentLevelById(TalentGroupId)
   local CommonTalentInfo = DataMgr.CommonTalents[TalentGroupId]
   return CommonTalentInfo and CommonTalentInfo.level or 0
 end
+
 function DataMgr.SetHeroTalents(InHeroId, InTalents)
   local HeroTalents = {}
   for i, SingleTalentInfo in ipairs(InTalents) do
@@ -658,6 +746,7 @@ function DataMgr.SetHeroTalents(InHeroId, InTalents)
   end
   DataMgr.HeroTalents[InHeroId] = HeroTalents
 end
+
 function DataMgr.GetHeroTalentLevelById(HeroId, TalentGroupId)
   local TalentList = DataMgr.HeroTalents[HeroId]
   if TalentList then
@@ -665,9 +754,11 @@ function DataMgr.GetHeroTalentLevelById(HeroId, TalentGroupId)
   end
   return 0
 end
+
 function DataMgr.GetHeroTalentByHeroId(HeroId)
   return DataMgr.HeroTalents[HeroId]
 end
+
 function DataMgr.GetLevelTableRow(Level)
   local LevelTable = LuaTableMgr.GetLuaTableByName(TableNames.TBPlayerLevel)
   if not LevelTable then
@@ -686,6 +777,7 @@ function DataMgr.GetLevelTableRow(Level)
   end
   return LevelTable[NextLv].Exp - LevelTable[LevelNumber].Exp
 end
+
 function DataMgr.GetTotalExpToLevel(Level)
   local LevelTable = LuaTableMgr.GetLuaTableByName(TableNames.TBPlayerLevel)
   if not LevelTable then
@@ -697,6 +789,7 @@ function DataMgr.GetTotalExpToLevel(Level)
   end
   return LevelTable[LevelNumber].Exp
 end
+
 function DataMgr.GetNextLv(Lv)
   local NextLv = Lv + 1
   if NextLv > MaxLevel then
@@ -704,6 +797,7 @@ function DataMgr.GetNextLv(Lv)
   end
   return NextLv
 end
+
 function DataMgr.CalcLevelExp(TotalExp)
   local LevelTable = LuaTableMgr.GetLuaTableByName(TableNames.TBPlayerLevel)
   if not LevelTable then
@@ -716,6 +810,7 @@ function DataMgr.CalcLevelExp(TotalExp)
   end
   return TotalExp - LevelTable[MaxLevel].Exp
 end
+
 function DataMgr.CalcUpLevel(Exp)
   local LevelTemp = tonumber(DataMgr.GetRoleLevel())
   if LevelTemp >= MaxLevel then
@@ -730,6 +825,7 @@ function DataMgr.CalcUpLevel(Exp)
   end
   return tonumber(LevelTemp), Exp
 end
+
 function DataMgr.GetLocalAccountIcon()
   if DataMgr.AccountIcon then
     return DataMgr.AccountIcon
@@ -740,6 +836,7 @@ function DataMgr.GetLocalAccountIcon()
   end
   return nil
 end
+
 function DataMgr.GetRandomAccountIcon()
   local settings = UE.URGLobbySettings.GetSettings()
   if settings then
@@ -747,6 +844,7 @@ function DataMgr.GetRandomAccountIcon()
   end
   return nil
 end
+
 function DataMgr.UpdateEquippedWeaponList(HeroId, WeaponUUId, WeaponResId)
   local EquippedWeaponList = DataMgr.EquippedWeaponList[HeroId]
   EquippedWeaponList = EquippedWeaponList or {}
@@ -764,6 +862,7 @@ function DataMgr.UpdateEquippedWeaponList(HeroId, WeaponUUId, WeaponResId)
   end
   DataMgr.SetEquippedWeaponList(HeroId, EquippedWeaponList)
 end
+
 function DataMgr.SetEquippedWeaponList(HeroId, InWeaponList)
   DataMgr.EquippedWeaponList[HeroId] = InWeaponList
   if InWeaponList and DataMgr.AllWeaponList then
@@ -781,9 +880,11 @@ function DataMgr.SetEquippedWeaponList(HeroId, InWeaponList)
     end
   end
 end
+
 function DataMgr.GetEquippedWeaponList(HeroId)
   return DataMgr.EquippedWeaponList[HeroId]
 end
+
 function DataMgr.UpdateWeaponListBySkinId(SkinId, UUId)
   local weaponList = DataMgr.GetWeaponList()
   if weaponList then
@@ -796,6 +897,7 @@ function DataMgr.UpdateWeaponListBySkinId(SkinId, UUId)
   end
   DataMgr.SetWeaponList(weaponList)
 end
+
 function DataMgr.SetWeaponList(InWeaponList)
   DataMgr.AllWeaponList = InWeaponList
   if InWeaponList and DataMgr.EquippedWeaponList then
@@ -819,6 +921,7 @@ function DataMgr.SetWeaponList(InWeaponList)
     end
   end
 end
+
 function DataMgr.GetWeaponList()
   local AllWeaponList = {
     {
@@ -870,34 +973,44 @@ function DataMgr.GetWeaponList()
   }
   return DataMgr.AllWeaponList
 end
+
 function DataMgr.SetAccessoryList(InAccessoryList)
   DataMgr.AllAccessoryList = InAccessoryList
 end
+
 function DataMgr.GetAccessoryList()
   return DataMgr.AllAccessoryList
 end
+
 function DataMgr.GetAvatarInfo()
   return DataMgr.AvatarInfo
 end
+
 function DataMgr.SetAvatarInfo(InAvatarInfo)
   DataMgr.AvatarInfo = InAvatarInfo
 end
+
 function DataMgr.SetDistributionChannel(InDistributionChannel)
   DataMgr.DistributionChannel = InDistributionChannel
 end
+
 function DataMgr.GetDistributionChannel()
   return DataMgr.DistributionChannel
 end
+
 function DataMgr.Reset()
   DataMgr.OldExp = -1
   DataMgr.OldLevel = -1
 end
+
 function DataMgr.SetPreventFreezeTimestamp(Timestamp)
   DataMgr.PreventFreezeTimestamp = Timestamp
 end
+
 function DataMgr.ResetFreezeTimestamp()
   DataMgr.PreventFreezeTimestamp = -10000
 end
+
 function DataMgr.GetPlayerNickNameById(UserId)
   if DataMgr.UserIdToPlayerInfo[UserId] then
     return DataMgr.UserIdToPlayerInfo[UserId].nickname
@@ -906,6 +1019,7 @@ function DataMgr.GetPlayerNickNameById(UserId)
     return DataMgr.GetBasicInfo().nickname
   end
 end
+
 function DataMgr.GetPlayerInvisibleById(UserIdParam, Type)
   local UserId = tonumber(UserIdParam)
   if DataMgr.UserIdToPlayerInfo[UserId] then
@@ -925,6 +1039,7 @@ function DataMgr.GetPlayerInvisibleById(UserIdParam, Type)
   end
   return 0
 end
+
 function DataMgr.IsPlayerCurrentPlatform(UserId)
   local ChannelUserIDWithPrefix = DataMgr.GetPlayerChannelUserIdById(UserId, true)
   local PlatformName = UE.URGBlueprintLibrary.GetPlatformName()
@@ -943,6 +1058,7 @@ function DataMgr.IsPlayerCurrentPlatform(UserId)
   end
   return false
 end
+
 function DataMgr.GetPlayerChannelUserIdById(UserId, bWithPrefix)
   DataMgr.PrintChannelInfoLog(string.format("ChannelInfo GetPlayerChannelUserIdById: UserId: %s", tostring(UserId)))
   local UserIDNum = tonumber(UserId)
@@ -973,6 +1089,7 @@ function DataMgr.GetPlayerChannelUserIdById(UserId, bWithPrefix)
     end
   end
 end
+
 function DataMgr.GetChannelUserInfo(UserID, ChannelUID)
   DataMgr.PrintChannelInfoLog(string.format("ChannelInfo DataMgr.GetChannelUserInfo UserID: %s", tostring(UserID)))
   DataMgr.PrintChannelInfoLog(string.format("ChannelInfo DataMgr.GetChannelUserInfo ChannelUID: %s", tostring(ChannelUID)))
@@ -1000,6 +1117,7 @@ function DataMgr.GetChannelUserInfo(UserID, ChannelUID)
   ChannelInfo.IsSamePlatform = platformName == ChannelInfo.PlatformName
   return ChannelInfo
 end
+
 function DataMgr.CanChannelIDShow(ChannelInfo)
   local PlatformName = UE.URGBlueprintLibrary.GetPlatformName()
   if "PS5" ~= PlatformName and "XSX" ~= PlatformName then
@@ -1010,6 +1128,7 @@ function DataMgr.CanChannelIDShow(ChannelInfo)
   end
   return true
 end
+
 function DataMgr.CanChannelIconShow(ChannelInfo)
   local PlatformName = UE.URGBlueprintLibrary.GetPlatformName()
   if "PS5" ~= PlatformName and "XSX" ~= PlatformName then
@@ -1017,6 +1136,7 @@ function DataMgr.CanChannelIconShow(ChannelInfo)
   end
   return true
 end
+
 function DataMgr.ShowPlatformProfile(UserID, ChannelUID)
   local ChannelInfo = DataMgr.GetChannelUserInfo(UserID, ChannelUID)
   local CurChannelID = ChannelInfo.ChannelUserId
@@ -1037,6 +1157,7 @@ function DataMgr.ShowPlatformProfile(UserID, ChannelUID)
     end
   end
 end
+
 function DataMgr.GetOrQueryPlayerInfo(UserIdList, bForceQuery, Callback, FailedCallback, CacheDuration, bFromUpdateConsoleIcon, ...)
   local queryUserIdList = {}
   local playerInfoList = {}
@@ -1127,6 +1248,7 @@ function DataMgr.GetOrQueryPlayerInfo(UserIdList, bForceQuery, Callback, FailedC
     return true, playerInfoList
   end
 end
+
 function DataMgr.CheckOutEarliestInfo(userIdTb, k)
   local partition = function(left, right)
     local pivot = DataMgr.UserIdToPlayerInfo[userIdTb[right]].timeStamp
@@ -1140,6 +1262,7 @@ function DataMgr.CheckOutEarliestInfo(userIdTb, k)
     userIdTb[i + 1], userIdTb[right] = userIdTb[right], userIdTb[i + 1]
     return i + 1
   end
+  
   local function quickSelect(left, right, k)
     if left == right then
       return
@@ -1154,6 +1277,7 @@ function DataMgr.CheckOutEarliestInfo(userIdTb, k)
       quickSelect(pivotIndex + 1, right, k - count)
     end
   end
+  
   quickSelect(1, #userIdTb, k)
   local result = {}
   for i = 1, k do
@@ -1161,9 +1285,11 @@ function DataMgr.CheckOutEarliestInfo(userIdTb, k)
   end
   return result
 end
+
 function DataMgr.ClearPlayerInfoData()
   DataMgr.UserIdToPlayerInfo = {}
 end
+
 function DataMgr.GetShowWeaponId(HeroId)
   local WeaponId = -1
   if DataMgr.GetEquippedWeaponList(HeroId) ~= nil and DataMgr.GetEquippedWeaponList(HeroId)[1] then
@@ -1178,6 +1304,7 @@ function DataMgr.GetShowWeaponId(HeroId)
     return TBWeapon[WeaponId].SkinID
   end
 end
+
 function DataMgr.GetRouletteSlotsByHeroId(HeroId)
   if not DataMgr.HeroInfo then
     print("DataMgr.GetRouletteSlotsByHeroId HeroInfo Is Nil")
@@ -1221,12 +1348,15 @@ function DataMgr.GetRouletteSlotsByHeroId(HeroId)
     0
   }
 end
+
 function DataMgr.GetPreSceneStatus()
   return DataMgr.PreSceneStatus
 end
+
 function DataMgr.SetPreSceneStatus(PreSceneStatusParam)
   DataMgr.PreSceneStatus = PreSceneStatusParam
 end
+
 function DataMgr.CacheInfosToPlayerInfoList(PlayerCacheInfoLst)
   local PlayerInfoList = {}
   for i, SinglePlayerCacheInfo in ipairs(PlayerCacheInfoLst) do
@@ -1234,6 +1364,7 @@ function DataMgr.CacheInfosToPlayerInfoList(PlayerCacheInfoLst)
   end
   return PlayerInfoList
 end
+
 function DataMgr.SetPlayerInvisible(Type, Invisible)
   HttpCommunication.Request("playerservice/invisible", {invisible = Invisible, type = Type}, {
     GameInstance,
@@ -1249,6 +1380,7 @@ function DataMgr.SetPlayerInvisible(Type, Invisible)
     end
   })
 end
+
 function DataMgr.GetPlayerInvisible(Type)
   print("DataMgr.GetPlayerInvisible Type:", Type)
   if 0 == Type then

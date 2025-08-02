@@ -2,6 +2,7 @@ local UnLua = _G.UnLua
 local rapidjson = require("rapidjson")
 local AchievementData, AchievementItemData = require("Modules.Achievement.AchievementData")
 local AchievementHandler = {}
+
 function AchievementHandler.RequestGetAchievementInfo(RoleID, callback, bIsShowLoadingParam)
   local bIsShowLoading = bIsShowLoadingParam
   if nil == bIsShowLoadingParam then
@@ -34,6 +35,7 @@ function AchievementHandler.RequestGetAchievementInfo(RoleID, callback, bIsShowL
     end
   }, false, bIsShowLoading)
 end
+
 function AchievementHandler.RequestSetDisplayBadges(displayBadgesList)
   if table.IsEmpty(displayBadgesList) then
     displayBadgesList = {
@@ -60,4 +62,5 @@ function AchievementHandler.RequestSetDisplayBadges(displayBadgesList)
     end
   })
 end
+
 return AchievementHandler

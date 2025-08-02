@@ -1,12 +1,15 @@
 local WBP_TaskPanel_Item_C = UnLua.Class()
+
 function WBP_TaskPanel_Item_C:Construct()
 end
+
 function WBP_TaskPanel_Item_C:OnAnimationFinished(Animation)
   if Animation == self.Ani_win_out or Animation == self.Ani_fail_out then
     self.GoneForever = true
     self:RemoveFromParent()
   end
 end
+
 function WBP_TaskPanel_Item_C:UpdateInfo(TaskInfo)
   self:InitWidgetConfig(TaskInfo)
   if not self.EventList or not self.EventList.GetAllChildren then
@@ -27,6 +30,7 @@ function WBP_TaskPanel_Item_C:UpdateInfo(TaskInfo)
     self.TaskStatu = TaskInfo.Status
   end
 end
+
 function WBP_TaskPanel_Item_C:InitWidgetConfig(TaskInfo)
   if self.TaskId ~= TaskInfo.EventId then
     self.TaskId = TaskInfo.EventId
@@ -79,6 +83,7 @@ function WBP_TaskPanel_Item_C:InitWidgetConfig(TaskInfo)
   SetImageBrushBySoftObjectPath(self.Img_TitleIcon_Bg1, self.WidgetConfig.TitleBg1)
   SetImageBrushBySoftObjectPath(self.Img_TitleIcon_Bg2, self.WidgetConfig.TitleBg2)
 end
+
 function WBP_TaskPanel_Item_C:UpdateWidgetConfig(TaskStatus)
   if self.WidgetConfig then
     self.Text_TitleName:SetText(self.WidgetConfig.TitleName)
@@ -102,6 +107,8 @@ function WBP_TaskPanel_Item_C:UpdateWidgetConfig(TaskStatus)
     end
   end
 end
+
 function WBP_TaskPanel_Item_C:Hide()
 end
+
 return WBP_TaskPanel_Item_C

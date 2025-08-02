@@ -1,4 +1,5 @@
 local WBP_GRWeaponPanel_C = UnLua.Class()
+
 function WBP_GRWeaponPanel_C:Construct()
   EventSystem.AddListener(self, EventDef.GameRecordPanel.TypeButtonChanged, WBP_GRWeaponPanel_C.OnTypeButtonChanged)
   EventSystem.AddListener(self, EventDef.Lobby.LobbyPanelChanged, WBP_GRWeaponPanel_C.OnLobbyActivePanelChanged)
@@ -6,16 +7,19 @@ function WBP_GRWeaponPanel_C:Construct()
   self:SaveCameraWeapon()
   self.bUpdateAccessorySlot = false
 end
+
 function WBP_GRWeaponPanel_C:Destruct()
   EventSystem.RemoveListener(EventDef.GameRecordPanel.TypeButtonChanged, WBP_GRWeaponPanel_C.OnTypeButtonChanged, self)
   EventSystem.RemoveListener(EventDef.Lobby.LobbyPanelChanged, WBP_GRWeaponPanel_C.OnLobbyActivePanelChanged, self)
   EventSystem.RemoveListener(EventDef.GunDisplayPanel.OnGunSlotClicked, WBP_GRWeaponPanel_C.OnGunSlotClicked, self)
 end
+
 function WBP_GRWeaponPanel_C:LuaTick(InDeltaTime)
   if self.bUpdateAccessorySlot and self.TargetCamera and self.TargetCamera:IsValid() then
     self.WBP_GunMainPanel:UpdateAccessorySlotsPosition(tostring(100802), self.TargetCamera.SKM_Basics:K2_GetComponentToWorld())
   end
 end
+
 function WBP_GRWeaponPanel_C:OnTypeButtonChanged(LastActiveWidget, CurActiveWidget, CurrentRoleInfoData)
   if CurActiveWidget == self then
     self.CurrentRoleInfoData = CurrentRoleInfoData
@@ -26,12 +30,15 @@ function WBP_GRWeaponPanel_C:OnTypeButtonChanged(LastActiveWidget, CurActiveWidg
     self:UpdateViewTarget(false)
   end
 end
+
 function WBP_GRWeaponPanel_C:OnLobbyActivePanelChanged(LastActiveWidget, CurActiveWidget)
   self:UpdateViewTarget(false)
 end
+
 function WBP_GRWeaponPanel_C:OnGunSlotClicked(GunId)
   self:UpdateGRWeaponPanel(GunId)
 end
+
 function WBP_GRWeaponPanel_C:UpdateGRWeaponPanel(GunId)
   local accessoryIdArray = UE.TArray(0)
   local accessoryIdList = {}
@@ -72,6 +79,7 @@ function WBP_GRWeaponPanel_C:UpdateGRWeaponPanel(GunId)
   end
   self.bUpdateAccessorySlot = true
 end
+
 function WBP_GRWeaponPanel_C:UpdateViewTarget(Weapon)
   if self.bUpdateViewTarget == Weapon then
     return
@@ -83,6 +91,7 @@ function WBP_GRWeaponPanel_C:UpdateViewTarget(Weapon)
   else
   end
 end
+
 function WBP_GRWeaponPanel_C:UpdateGunItemBox()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -114,6 +123,7 @@ function WBP_GRWeaponPanel_C:UpdateGunItemBox()
     self.Overlay_Empty:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function WBP_GRWeaponPanel_C:SaveCameraWeapon()
   local AllActors = UE.UGameplayStatics.GetAllActorsWithTag(self, "GameRecordWeapon", nil)
   for i, SingleActor in iterator(AllActors) do
@@ -121,4 +131,5 @@ function WBP_GRWeaponPanel_C:SaveCameraWeapon()
     break
   end
 end
+
 return WBP_GRWeaponPanel_C

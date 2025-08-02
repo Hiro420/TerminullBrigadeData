@@ -1,15 +1,18 @@
 local SkinData = require("Modules.Appearance.Skin.SkinData")
 local WBP_OptionalGiftItem_C = UnLua.Class()
+
 function WBP_OptionalGiftItem_C:Construct()
   EventSystem.AddListener(self, EventDef.Gift.OnOptionalGiftItemSelect, WBP_OptionalGiftItem_C.OnItemSelectionChanged)
   self.Btn_Add.OnClicked:Add(self, self.BindOnAddClicked)
   self.Btn_Cut.OnClicked:Add(self, self.BindOnCutClicked)
 end
+
 function WBP_OptionalGiftItem_C:Destruct()
   EventSystem.RemoveListener(EventDef.Gift.OnOptionalGiftItemSelect, WBP_OptionalGiftItem_C.OnItemSelectionChanged, self)
   self.Btn_Add.OnClicked:Clear()
   self.Btn_Cut.OnClicked:Clear()
 end
+
 function WBP_OptionalGiftItem_C:BindOnAddClicked()
   if self.bHave then
     ShowWaveWindow(self.WaveWindow_Have)
@@ -35,6 +38,7 @@ function WBP_OptionalGiftItem_C:BindOnAddClicked()
   self.SelNum:SetText(self.SelectNum)
   EventSystem.Invoke(EventDef.Gift.OnOptionalGiftItemSelect, self.Data.ResourcesIndex, self.SelectNum)
 end
+
 function WBP_OptionalGiftItem_C:BindOnCutClicked()
   self.SelectNum = self.SelectNum - 1
   if self.SelectNum < 0 then
@@ -43,6 +47,7 @@ function WBP_OptionalGiftItem_C:BindOnCutClicked()
   self.SelNum:SetText(self.SelectNum)
   EventSystem.Invoke(EventDef.Gift.OnOptionalGiftItemSelect, self.Data.ResourcesIndex, self.SelectNum)
 end
+
 function WBP_OptionalGiftItem_C:OnListItemObjectSet(ItemObj)
   self.Data = ItemObj
   self.WBP_Item:InitItem(ItemObj.ResourcesId)
@@ -82,12 +87,14 @@ function WBP_OptionalGiftItem_C:OnListItemObjectSet(ItemObj)
   UpdateVisibility(self.Overlay_AlreadyHad, self.bHave)
   UpdateVisibility(self.MultipleOpt, 1 ~= ItemObj.MaxNum)
 end
+
 function WBP_OptionalGiftItem_C:BindOnMainBtnClicked()
   if self.bHave then
     return
   end
   self:BindOnAddClicked()
 end
+
 function WBP_OptionalGiftItem_C:OnItemSelectionChanged(Index, SelectNum)
   if self.SelItems == nil or 1 == self.Data.MaxNum then
     self.SelItems = {}
@@ -95,7 +102,9 @@ function WBP_OptionalGiftItem_C:OnItemSelectionChanged(Index, SelectNum)
   self.SelItems[Index] = SelectNum
   self:SetSelect(self.SelItems[self.Data.ResourcesIndex] and self.SelItems[self.Data.ResourcesIndex] > 0)
 end
+
 function WBP_OptionalGiftItem_C:SetSelect(bSel)
   UpdateVisibility(self.Overlay_Sel_Choose, bSel)
 end
+
 return WBP_OptionalGiftItem_C

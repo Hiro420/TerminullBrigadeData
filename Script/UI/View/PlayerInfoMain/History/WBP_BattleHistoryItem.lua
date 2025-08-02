@@ -5,9 +5,11 @@ local MatchName = {
   [0] = NSLOCTEXT("WBP_BattleHistoryItem", "0", "\229\141\149\228\186\186"),
   [1] = NSLOCTEXT("WBP_BattleHistoryItem", "1", "\231\187\132\233\152\159")
 }
+
 function WBP_BattleHistoryItem:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_BattleHistoryItem:InitBattleHistoryItem(HistoryData, HeroIdParam, ParentView)
   self:SetRootOpacity(0)
   local playerInfoMainVM = UIModelMgr:Get("PlayerInfoMainViewModel")
@@ -95,26 +97,32 @@ function WBP_BattleHistoryItem:InitBattleHistoryItem(HistoryData, HeroIdParam, P
   local TimeStr = string.format("%02d:%02d:%02d", Hour, Min, Sec)
   self.RGTextDuration:SetText(TimeStr)
 end
+
 function WBP_BattleHistoryItem:SetRootOpacity(Opacity)
   self.CanvasPanelRoot:SetRenderOpacity(Opacity)
 end
+
 function WBP_BattleHistoryItem:UpdateGenericModifyTipsFunc(bIsShow, Data, ModifyChooseTypeParam, Slot, HoverItem)
   if not UE.RGUtil.IsUObjectValid(self.ParentView) then
     return
   end
   self.ParentView:UpdateGenericModifyTipsFunc(bIsShow, Data, ModifyChooseTypeParam, Slot, HoverItem)
 end
+
 function WBP_BattleHistoryItem:InitWBP_BattleHistoryItemByAll()
   UpdateVisibility(self.RGTextAll, true)
   UpdateVisibility(self.URGImageHeroIcon, false)
 end
+
 function WBP_BattleHistoryItem:Hide()
   UpdateVisibility(self, false)
   self.BP_ButtonWithSoundDetails.OnClicked:Remove(self, self.ShowBattleHistoryPlayerInfo)
 end
+
 function WBP_BattleHistoryItem:ShowBattleHistoryPlayerInfo()
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
     self.ParentView:ShowBattleHistoryPlayerInfo(self.HistoryData)
   end
 end
+
 return WBP_BattleHistoryItem

@@ -1,4 +1,5 @@
 local DrawCardPoolListItemView = UnLua.Class()
+
 function DrawCardPoolListItemView:Construct()
   self.Btn_Main.OnClicked:Add(self, self.OnCardPoolClicked)
   self.Btn_Main.OnHovered:Add(self, self.OnCardPoolHovered)
@@ -6,6 +7,7 @@ function DrawCardPoolListItemView:Construct()
   EventSystem.AddListener(self, EventDef.DrawCard.OnChangeDrawCardPoolSelected, self.BindOnChangeDrawCardPoolSelected)
   EventSystem.AddListener(self, EventDef.Lobby.UpdateResourceInfo, self.BindOnResourceUpdate)
 end
+
 function DrawCardPoolListItemView:Destruct()
   self.ParentView = nil
   self.PoolInfo = nil
@@ -16,6 +18,7 @@ function DrawCardPoolListItemView:Destruct()
   EventSystem.RemoveListener(EventDef.DrawCard.OnChangeDrawCardPoolSelected, self.BindOnChangeDrawCardPoolSelected, self)
   EventSystem.RemoveListener(EventDef.Lobby.UpdateResourceInfo, self.BindOnResourceUpdate, self)
 end
+
 function DrawCardPoolListItemView:InitInfo(ParentView, PoolId, PoolInfo)
   self.ParentView = ParentView
   self.PoolInfo = PoolInfo
@@ -27,15 +30,19 @@ function DrawCardPoolListItemView:InitInfo(ParentView, PoolId, PoolInfo)
   SetImageBrushByPath(self.Img_Bg, self.PoolInfo.BgPath)
   self:BindOnResourceUpdate()
 end
+
 function DrawCardPoolListItemView:OnCardPoolClicked()
   EventSystem.Invoke(EventDef.DrawCard.OnChangeDrawCardPoolSelected, self.PoolId)
 end
+
 function DrawCardPoolListItemView:OnCardPoolHovered()
   self.RGStateController_Hover:ChangeStatus("Hover")
 end
+
 function DrawCardPoolListItemView:OnCardPoolUnhovered()
   self.RGStateController_Hover:ChangeStatus("UnHover")
 end
+
 function DrawCardPoolListItemView:BindOnChangeDrawCardPoolSelected(PoolId)
   if self.PoolId == PoolId then
     self.RGStateController_Select:ChangeStatus("Select")
@@ -43,6 +50,7 @@ function DrawCardPoolListItemView:BindOnChangeDrawCardPoolSelected(PoolId)
     self.RGStateController_Select:ChangeStatus("UnSelect")
   end
 end
+
 function DrawCardPoolListItemView:BindOnResourceUpdate()
   local CostResId, CostNum, bIsEnough = UIModelMgr:Get("DrawCardViewModel"):GetCost(1, self.PoolId)
   local TotalResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
@@ -58,7 +66,9 @@ function DrawCardPoolListItemView:BindOnResourceUpdate()
     self.Text_Count:SetText("x" .. Num)
   end
 end
+
 function DrawCardPoolListItemView:Hide()
   self:Setvisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return DrawCardPoolListItemView

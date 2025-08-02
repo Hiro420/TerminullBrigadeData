@@ -1,8 +1,11 @@
 local WBP_CurrencyGemTipsItem = UnLua.Class()
+
 function WBP_CurrencyGemTipsItem:Construct()
 end
+
 function WBP_CurrencyGemTipsItem:Destruct()
 end
+
 function WBP_CurrencyGemTipsItem:InitGemTipsItem(Rare, Num)
   UpdateVisibility(self, true)
   self.Txt_Num:SetText(Num)
@@ -13,7 +16,9 @@ function WBP_CurrencyGemTipsItem:InitGemTipsItem(Rare, Num)
     self.Txt_GemRareName:SetColorAndOpacity(row.DisplayNameColor)
   end
 end
+
 function WBP_CurrencyGemTipsItem:Hide()
   UpdateVisibility(self, false)
 end
+
 return WBP_CurrencyGemTipsItem

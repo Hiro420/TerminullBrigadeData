@@ -1,26 +1,26 @@
 ﻿{
   "99016": {
+    "ExchangedResourceID": 300005,
     "ExchangeRatio": {
       "value": 1,
       "key": 20
     },
-    "TargetResourceID": 99016,
-    "ExchangedResourceID": 300005
+    "TargetResourceID": 99016
   },
   "300005": {
+    "ExchangedResourceID": 300101,
     "ExchangeRatio": {
       "value": 1,
       "key": 1
     },
-    "TargetResourceID": 300005,
-    "ExchangedResourceID": 300101
+    "TargetResourceID": 300005
   },
   "300001": {
+    "ExchangedResourceID": 300005,
     "ExchangeRatio": {
       "value": 1,
       "key": 1
     },
-    "TargetResourceID": 300001,
-    "ExchangedResourceID": 300005
+    "TargetResourceID": 300001
   }
 }

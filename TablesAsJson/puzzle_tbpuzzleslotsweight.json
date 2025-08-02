@@ -1,104 +1,104 @@
 ﻿{
   "0": {
+    "SlotNum": 0,
     "SlotNumWeight": {
       "1": {
-        "key": 1,
-        "weight": 90
+        "weight": 90,
+        "key": 1
       },
       "2": {
-        "key": 2,
-        "weight": 0
+        "weight": 0,
+        "key": 2
       },
       "3": {
-        "key": 3,
-        "weight": 10
+        "weight": 10,
+        "key": 3
       }
-    },
-    "SlotNum": 0
+    }
   },
   "1": {
+    "SlotNum": 1,
     "SlotNumWeight": {
       "1": {
-        "key": 1,
-        "weight": 70
+        "weight": 70,
+        "key": 1
       },
       "2": {
-        "key": 2,
-        "weight": 10
+        "weight": 10,
+        "key": 2
       },
       "3": {
-        "key": 3,
-        "weight": 20
+        "weight": 20,
+        "key": 3
       }
-    },
-    "SlotNum": 1
+    }
   },
   "2": {
+    "SlotNum": 2,
     "SlotNumWeight": {
       "1": {
-        "key": 1,
-        "weight": 50
+        "weight": 50,
+        "key": 1
       },
       "2": {
-        "key": 2,
-        "weight": 20
+        "weight": 20,
+        "key": 2
       },
       "3": {
-        "key": 3,
-        "weight": 30
+        "weight": 30,
+        "key": 3
       }
-    },
-    "SlotNum": 2
+    }
   },
   "3": {
+    "SlotNum": 3,
     "SlotNumWeight": {
       "1": {
-        "key": 1,
-        "weight": 40
+        "weight": 40,
+        "key": 1
       },
       "2": {
-        "key": 2,
-        "weight": 15
+        "weight": 15,
+        "key": 2
       },
       "3": {
-        "key": 3,
-        "weight": 45
+        "weight": 45,
+        "key": 3
       }
-    },
-    "SlotNum": 3
+    }
   },
   "4": {
+    "SlotNum": 4,
     "SlotNumWeight": {
       "1": {
-        "key": 1,
-        "weight": 20
+        "weight": 20,
+        "key": 1
       },
       "2": {
-        "key": 2,
-        "weight": 20
+        "weight": 20,
+        "key": 2
       },
       "3": {
-        "key": 3,
-        "weight": 60
+        "weight": 60,
+        "key": 3
       }
-    },
-    "SlotNum": 4
+    }
   },
   "5": {
+    "SlotNum": 5,
     "SlotNumWeight": {
       "1": {
-        "key": 1,
-        "weight": 0
+        "weight": 0,
+        "key": 1
       },
       "2": {
-        "key": 2,
-        "weight": 0
+        "weight": 0,
+        "key": 2
       },
       "3": {
-        "key": 3,
-        "weight": 10
+        "weight": 10,
+        "key": 3
       }
-    },
-    "SlotNum": 5
+    }
   }
 }

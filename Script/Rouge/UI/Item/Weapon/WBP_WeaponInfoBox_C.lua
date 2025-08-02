@@ -1,4 +1,5 @@
 local WBP_WeaponInfoBox_C = UnLua.Class()
+
 function WBP_WeaponInfoBox_C:LoadWeaponInfo(Weapon)
   local RGDataTableSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self:GetWorld(), UE.URGDataTableSubsystem:StaticClass())
   if RGDataTableSubsystem then
@@ -7,6 +8,7 @@ function WBP_WeaponInfoBox_C:LoadWeaponInfo(Weapon)
     self:LoadWeaponAttribute(Weapon)
   end
 end
+
 function WBP_WeaponInfoBox_C:LoadWeaponAttribute(Weapon)
   self.WeaponAttributeBox:ClearChildren()
   local results_stringArray = Weapon:GetWeaponInfo()
@@ -21,4 +23,5 @@ function WBP_WeaponInfoBox_C:LoadWeaponAttribute(Weapon)
     end
   end
 end
+
 return WBP_WeaponInfoBox_C

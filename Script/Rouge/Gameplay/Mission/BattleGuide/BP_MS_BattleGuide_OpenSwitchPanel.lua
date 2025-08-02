@@ -1,6 +1,7 @@
 local BeginnerGuideHandler = require("Protocol.BeginnerGuide.BeginnerGuideHandler")
 local BP_MS_BattleGuide_OpenSwitchPanel = UnLua.Class()
 local StartGuideId = 301
+
 function BP_MS_BattleGuide_OpenSwitchPanel:ExecuteClientLogic(...)
   local TutorialLevelSubSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTutorialLevelSystem:StaticClass())
   TutorialLevelSubSystem:SetIsExecuteBeginGuideLogic(true)
@@ -12,4 +13,5 @@ function BP_MS_BattleGuide_OpenSwitchPanel:ExecuteClientLogic(...)
     print("BP_MS_BattleGuide_OpenSwitchPanel:ExecuteClientLogic not MiscComp")
   end
 end
+
 return BP_MS_BattleGuide_OpenSwitchPanel

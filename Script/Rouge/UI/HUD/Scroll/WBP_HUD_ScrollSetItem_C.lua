@@ -1,4 +1,5 @@
 local WBP_HUD_ScrollSetItem_C = UnLua.Class()
+
 function WBP_HUD_ScrollSetItem_C:InitHudScrollSetItem(AttributeModifySetData)
   self:PlayAni(AttributeModifySetData)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -31,6 +32,7 @@ function WBP_HUD_ScrollSetItem_C:InitHudScrollSetItem(AttributeModifySetData)
   end
   self.AttributeModifySetData = AttributeModifySetData
 end
+
 function WBP_HUD_ScrollSetItem_C:PlayAni(AttributeModifySetData)
   if not self.AttributeModifySetData or self.AttributeModifySetData.Level < AttributeModifySetData.Level then
     local nameAni = "ani_HUD_ScrollSetItem_in_" .. AttributeModifySetData.Level
@@ -40,8 +42,10 @@ function WBP_HUD_ScrollSetItem_C:PlayAni(AttributeModifySetData)
     return
   end
 end
+
 function WBP_HUD_ScrollSetItem_C:Hide()
   self.AttributeModifySetData = nil
   UpdateVisibility(self, false)
 end
+
 return WBP_HUD_ScrollSetItem_C

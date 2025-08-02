@@ -1,10 +1,12 @@
 local WBP_WeaponPanel_C = UnLua.Class()
+
 function WBP_WeaponPanel_C:Construct()
   self.WidgetClass = UE.UClass.Load("/Game/Rouge/UI/Item/Weapon/WBP_WeaponCard.WBP_WeaponCard_C")
   self.EquipButton.OnClicked:Add(self, WBP_WeaponPanel_C.OnClicked_EquipButton)
   self.DiscardButton.OnClicked:Add(self, WBP_WeaponPanel_C.OnClicked_DiscardButton)
   self.CompanionEquipButton.OnClicked:Add(self, WBP_WeaponPanel_C.OnClicked_CompanionEquipButton)
 end
+
 function WBP_WeaponPanel_C:OnOpenPanel()
   local equipmentComponent = self:GetOwningPlayerPawn():GetComponentByClass(UE.URGEquipmentComponent.StaticClass())
   if equipmentComponent then
@@ -23,9 +25,11 @@ function WBP_WeaponPanel_C:OnOpenPanel()
     end
   end
 end
+
 function WBP_WeaponPanel_C:OnLoadPanel()
   self:UpdateAll()
 end
+
 function WBP_WeaponPanel_C:OnCardSelect(WBP_BaseCard)
   print("OnCardSelect")
   if WBP_BaseCard:GetClass() == self.WidgetClass then
@@ -44,14 +48,18 @@ function WBP_WeaponPanel_C:OnCardSelect(WBP_BaseCard)
     end
   end
 end
+
 function WBP_WeaponPanel_C:OnCardUnselect(WBP_BaseCard)
 end
+
 function WBP_WeaponPanel_C:OnEquipmentChanged()
   self:UpdateAll()
 end
+
 function WBP_WeaponPanel_C:OnCurrentWeaponChanged(OldWeapon, NewWeapon)
   self:UpdateAll()
 end
+
 function WBP_WeaponPanel_C:OnClicked_EquipButton()
   local weaponActor = self.CurrentSelected.WeaponActor
   if weaponActor then
@@ -61,6 +69,7 @@ function WBP_WeaponPanel_C:OnClicked_EquipButton()
     end
   end
 end
+
 function WBP_WeaponPanel_C:OnClicked_DiscardButton()
   local weaponActor = self.CurrentSelected.WeaponActor
   if weaponActor then
@@ -70,6 +79,7 @@ function WBP_WeaponPanel_C:OnClicked_DiscardButton()
     end
   end
 end
+
 function WBP_WeaponPanel_C:OnClicked_CompanionEquipButton()
   local weaponActor = self.CurrentSelected.WeaponActor
   if weaponActor then
@@ -88,6 +98,7 @@ function WBP_WeaponPanel_C:OnClicked_CompanionEquipButton()
     end
   end
 end
+
 function WBP_WeaponPanel_C:UpdateAll()
   coroutine.resume(coroutine.create(function(duration)
     self.ItemGridPanel:ClearChildren()
@@ -96,10 +107,12 @@ function WBP_WeaponPanel_C:UpdateAll()
     self:LoadAmmoInfo()
   end), 0.1)
 end
+
 function WBP_WeaponPanel_C:LoadWeaponInfo(Weapon)
   self.WBP_WeaponViewer:LoadWeaponView(Weapon)
   self.WBP_WeaponInfoBox:LoadWeaponInfo(Weapon)
 end
+
 function WBP_WeaponPanel_C:LoadWeaponsFromPlayer()
   local equipmentComponent = self:GetOwningPlayerPawn():GetComponentByClass(UE.URGEquipmentComponent.StaticClass())
   if equipmentComponent then
@@ -127,6 +140,7 @@ function WBP_WeaponPanel_C:LoadWeaponsFromPlayer()
     end
   end
 end
+
 function WBP_WeaponPanel_C:LoadWeaponsFromCompanion()
   local index = self.ItemGridPanel:GetChildrenCount()
   local companionComponent = self:GetOwningPlayerPawn():GetComponentByClass(UE.UCompanionComponent.StaticClass())
@@ -150,24 +164,29 @@ function WBP_WeaponPanel_C:LoadWeaponsFromCompanion()
     end
   end
 end
+
 function WBP_WeaponPanel_C:LoadAmmoInfo()
   self:LoadSmallAmmoInfo()
   self:LoadMiddleAmmoInfo()
   self:LoadLargeAmmoInfo()
 end
+
 function WBP_WeaponPanel_C:LoadSmallAmmoInfo()
   local bagComponent = self:GetOwningPlayer():GetComponentByClass(UE.URGBagComponent.StaticClass())
   if bagComponent then
   end
 end
+
 function WBP_WeaponPanel_C:LoadMiddleAmmoInfo()
   local bagComponent = self:GetOwningPlayer():GetComponentByClass(UE.URGBagComponent.StaticClass())
   if bagComponent then
   end
 end
+
 function WBP_WeaponPanel_C:LoadLargeAmmoInfo()
   local bagComponent = self:GetOwningPlayer():GetComponentByClass(UE.URGBagComponent.StaticClass())
   if bagComponent then
   end
 end
+
 return WBP_WeaponPanel_C

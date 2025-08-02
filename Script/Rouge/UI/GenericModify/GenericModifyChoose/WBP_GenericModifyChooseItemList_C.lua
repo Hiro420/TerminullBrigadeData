@@ -1,4 +1,5 @@
 local WBP_GenericModifyChooseItemList = UnLua.Class()
+
 function WBP_GenericModifyChooseItemList:UpdatePanel(PreviewModifyListParam, InteractComp, HoverFuncParam, ParentView, bRefresh)
   UpdateVisibility(self, true)
   local PreviewModifyList = {}
@@ -67,6 +68,7 @@ function WBP_GenericModifyChooseItemList:UpdatePanel(PreviewModifyListParam, Int
     end
   end
 end
+
 function WBP_GenericModifyChooseItemList:UpdatePanelNew(ModifyIdList, ModifyChooseTypeTemp, HoverFuncParam, ParentView, bRefresh)
   UpdateVisibility(self, true)
   local ModifyNum = #ModifyIdList
@@ -104,6 +106,7 @@ function WBP_GenericModifyChooseItemList:UpdatePanelNew(ModifyIdList, ModifyChoo
     self:UpdataLocation(ModifyNum)
   end
 end
+
 function WBP_GenericModifyChooseItemList:UpdataLocation(ModifyNum)
   local V2D = UE.FVector2D()
   V2D.X = self.Spacing * -1
@@ -125,6 +128,7 @@ function WBP_GenericModifyChooseItemList:UpdataLocation(ModifyNum)
     UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.WBP_GenericModifyChooseItem3):SetPosition(V2D)
   end
 end
+
 function WBP_GenericModifyChooseItemList:UpdateModifyListByShop(PreviewModifyList, HoverFuncParam, ParentView)
   UpdateVisibility(self, true)
   self:InitData(ParentView, PreviewModifyList.ModifyList:Num())
@@ -161,6 +165,7 @@ function WBP_GenericModifyChooseItemList:UpdateModifyListByShop(PreviewModifyLis
   end
   self:UpdataLocation(PreviewModifyList.ModifyList:Num())
 end
+
 function WBP_GenericModifyChooseItemList:UpdateSurvivalModifyList(ChooseType, PreviewModifyList, HoverFuncParam, ParentView)
   for i = 1, 3 do
     local Name = string.format("WBP_GenericModifyChooseItem%d", i)
@@ -179,6 +184,7 @@ function WBP_GenericModifyChooseItemList:UpdateSurvivalModifyList(ChooseType, Pr
   end
   self:UpdataLocation(Num)
 end
+
 function WBP_GenericModifyChooseItemList:UpdateModifyListByPushPreview(PreviewModifyList, HoverFuncParam, ParentView)
   UpdateVisibility(self, true)
   for i = 1, 3 do
@@ -197,6 +203,7 @@ function WBP_GenericModifyChooseItemList:UpdateModifyListByPushPreview(PreviewMo
   end
   self:UpdataLocation(#PreviewModifyList)
 end
+
 function WBP_GenericModifyChooseItemList:UpdatePanelByBattleLagacy(BattleLagacyIDs, ParentView)
   UpdateVisibility(self, true)
   self:InitData(ParentView, #BattleLagacyIDs)
@@ -216,6 +223,7 @@ function WBP_GenericModifyChooseItemList:UpdatePanelByBattleLagacy(BattleLagacyI
   end
   self:UpdataLocation(#BattleLagacyIDs)
 end
+
 function WBP_GenericModifyChooseItemList:OnUnDisplay()
   UpdateVisibility(self, true)
   self.ParentView = nil
@@ -231,6 +239,7 @@ function WBP_GenericModifyChooseItemList:OnUnDisplay()
   end
   self:StopAllAnimations()
 end
+
 function WBP_GenericModifyChooseItemList:SetItemCantSelect()
   for i = 1, 3 do
     local Name = string.format("WBP_GenericModifyChooseItem%d", i)
@@ -239,6 +248,7 @@ function WBP_GenericModifyChooseItemList:SetItemCantSelect()
     end
   end
 end
+
 function WBP_GenericModifyChooseItemList:FadeOut(RGGenericModifyParam, GroupId)
   local selectIdx = 1
   for i = 1, 3 do
@@ -257,16 +267,19 @@ function WBP_GenericModifyChooseItemList:FadeOut(RGGenericModifyParam, GroupId)
     self.StateCtrl_ClickAni:ChangeStatus(keyName)
   end
 end
+
 function WBP_GenericModifyChooseItemList:InitData(ParentView, TotalModifyNum)
   self.ParentView = ParentView
   self.TotalModifyNum = TotalModifyNum
 end
+
 function WBP_GenericModifyChooseItemList:Destruct()
   UpdateVisibility(self, true)
   self.ParentView = nil
   self.TotalModifyNum = 0
   self.Overridden.Destruct(self)
 end
+
 function WBP_GenericModifyChooseItemList:ChooseItemUpNav()
   if self.ParentView then
     local Passive_ItemName = string.format("WBP_HUD_GenericModifyItem_First_%d", UE.ERGGenericModifySlot.Count)
@@ -280,6 +293,7 @@ function WBP_GenericModifyChooseItemList:ChooseItemUpNav()
   end
   return nil
 end
+
 function WBP_GenericModifyChooseItemList:ChooseItem_1_DownNav()
   if CheckIsVisility(self.WBP_GenericModifyChooseItem1.WBP_GenericModifyTips.HorizontalBoxChange) then
     return self.WBP_GenericModifyChooseItem1.WBP_GenericModifyTips.BP_ButtonWithSoundChangeShowModify
@@ -294,6 +308,7 @@ function WBP_GenericModifyChooseItemList:ChooseItem_1_DownNav()
   end
   return nil
 end
+
 function WBP_GenericModifyChooseItemList:ChooseItem_2_DownNav()
   if CheckIsVisility(self.WBP_GenericModifyChooseItem2.WBP_GenericModifyTips.HorizontalBoxChange) then
     return self.WBP_GenericModifyChooseItem2.WBP_GenericModifyTips.BP_ButtonWithSoundChangeShowModify
@@ -308,6 +323,7 @@ function WBP_GenericModifyChooseItemList:ChooseItem_2_DownNav()
   end
   return nil
 end
+
 function WBP_GenericModifyChooseItemList:ChooseItem_3_DownNav()
   if CheckIsVisility(self.WBP_GenericModifyChooseItem3.WBP_GenericModifyTips.HorizontalBoxChange) then
     return self.WBP_GenericModifyChooseItem3.WBP_GenericModifyTips.BP_ButtonWithSoundChangeShowModify
@@ -322,6 +338,7 @@ function WBP_GenericModifyChooseItemList:ChooseItem_3_DownNav()
   end
   return nil
 end
+
 function WBP_GenericModifyChooseItemList:ChooseItem_1_LeftNav()
   if self.ParentView and CheckIsVisility(self.ParentView.WBP_GenericModifySpecificExchangeOld) then
     return self.ParentView.WBP_GenericModifySpecificExchangeOld
@@ -331,10 +348,12 @@ function WBP_GenericModifyChooseItemList:ChooseItem_1_LeftNav()
   end
   return self.WBP_GenericModifyChooseItem2
 end
+
 function WBP_GenericModifyChooseItemList:ChooseItem_3_RightNav()
   if self.ParentView and CheckIsVisility(self.ParentView.WBP_GenericModifySpecificExchangeOld) then
     return self.ParentView.WBP_GenericModifySpecificExchangeOld
   end
   return self.WBP_GenericModifyChooseItem1
 end
+
 return WBP_GenericModifyChooseItemList

@@ -2,6 +2,7 @@ local UnLua = _G.UnLua
 local rapidjson = require("rapidjson")
 local SaveGrowthSnapData = require("Modules.SaveGrowthSnap.SaveGrowthSnapData")
 local SaveGrowthSnapHandler = {}
+
 function SaveGrowthSnapHandler.RequestGetGrowthSnapShot()
   print("SaveGrowthSnapHandler", "SaveGrowthSnapHandler.RequestGetGrowthSnapShot - \230\139\137\229\143\150\229\191\171\231\133\167\228\191\161\230\129\175")
   HttpCommunication.RequestByGet("playergrowth/growthsnapshot/getgrowthsnapshot", {
@@ -55,6 +56,7 @@ function SaveGrowthSnapHandler.RequestGetGrowthSnapShot()
     end
   }, false, true)
 end
+
 function SaveGrowthSnapHandler.RequestSaveGrowthSnapShot(Pos, Remark)
   local param = {
     pos = tonumber(Pos),
@@ -90,6 +92,7 @@ function SaveGrowthSnapHandler.RequestSaveGrowthSnapShot(Pos, Remark)
     end
   }, false, true)
 end
+
 function SaveGrowthSnapHandler.RequestSetGrowthSnapShot(Pos)
   local param = {
     pos = tonumber(Pos)
@@ -108,4 +111,5 @@ function SaveGrowthSnapHandler.RequestSetGrowthSnapShot(Pos)
     end
   }, false, true)
 end
+
 return SaveGrowthSnapHandler

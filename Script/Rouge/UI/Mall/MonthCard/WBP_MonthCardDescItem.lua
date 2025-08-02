@@ -1,5 +1,6 @@
 local WBP_MonthCardDescItem = UnLua.Class()
 local MonthCardData = require("Modules.MonthCard.MonthCardData")
+
 function WBP_MonthCardDescItem:Show(ProductId)
   self.ProductId = ProductId
   UpdateVisibility(self, true)
@@ -29,7 +30,9 @@ function WBP_MonthCardDescItem:Show(ProductId)
     self.RGStateController_Status:ChangeStatus("InActive")
   end
 end
+
 function WBP_MonthCardDescItem:Hide(...)
   UpdateVisibility(self, false)
 end
+
 return WBP_MonthCardDescItem

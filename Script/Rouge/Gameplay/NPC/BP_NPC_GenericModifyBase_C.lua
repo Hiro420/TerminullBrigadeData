@@ -1,4 +1,5 @@
 local BP_NPC_GenericModifyBase_C = UnLua.Class()
+
 function BP_NPC_GenericModifyBase_C:ReceiveBeginPlay()
   self.Overridden.ReceiveBeginPlay(self)
   if UE.UKismetSystemLibrary.IsServer(self) then
@@ -29,6 +30,7 @@ function BP_NPC_GenericModifyBase_C:ReceiveBeginPlay()
     self.RGInteractComponent_GenericModify.StatusChangeDelegate:Add(self, self.StatusChanged)
   end
 end
+
 function BP_NPC_GenericModifyBase_C:StatusChanged(RGInteractStatus)
   if self.RGInteractComponent_GenericModify and self.RGInteractComponent_GenericModify.InteractStatus == UE.ERGInteractStatus.Ready then
     self:NPCAppear(true)
@@ -36,11 +38,13 @@ function BP_NPC_GenericModifyBase_C:StatusChanged(RGInteractStatus)
     self:NPCAppear(false)
   end
 end
+
 function BP_NPC_GenericModifyBase_C:OnUIReady(Widget)
   if Widget:Cast(UE.URGHUDWidget:StaticClass()) and self.bNeedShowMark then
     self:StatusChanged()
   end
 end
+
 function BP_NPC_GenericModifyBase_C:NPCAppear(bIsAppear)
   if not UE.UKismetSystemLibrary.IsServer(self) then
     if bIsAppear then
@@ -62,9 +66,11 @@ function BP_NPC_GenericModifyBase_C:NPCAppear(bIsAppear)
     end
   end
 end
+
 function BP_NPC_GenericModifyBase_C:FinishInteract(Target, Instigator)
   self:NPCAppear(false)
 end
+
 function BP_NPC_GenericModifyBase_C:ReceiveEndPlay(EndPlayReason)
   self.Overridden.ReceiveEndPlay(self, EndPlayReason)
   if UE.UKismetSystemLibrary.IsServer(self) then
@@ -84,4 +90,5 @@ function BP_NPC_GenericModifyBase_C:ReceiveEndPlay(EndPlayReason)
     self.RGInteractComponent_GenericModify.StatusChangeDelegate:Remove(self, self.StatusChanged)
   end
 end
+
 return BP_NPC_GenericModifyBase_C

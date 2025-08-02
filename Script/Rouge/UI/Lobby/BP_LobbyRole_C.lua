@@ -1,8 +1,10 @@
 local SkinData = require("Modules.Appearance.Skin.SkinData")
 local BP_LobbyRole_C = UnLua.Class()
+
 function BP_LobbyRole_C:ReceiveBeginPlay()
   self:SetWeaponAnimBpInst()
 end
+
 function BP_LobbyRole_C:ActorBeginCursorOver()
   local ParentActor = self:GetParentActor()
   if not ParentActor then
@@ -10,6 +12,7 @@ function BP_LobbyRole_C:ActorBeginCursorOver()
   end
   EventSystem.Invoke(EventDef.Lobby.LobbyHeroCursor, ParentActor.Index, true)
 end
+
 function BP_LobbyRole_C:ActorEndCursorOver()
   local ParentActor = self:GetParentActor()
   if not ParentActor then
@@ -17,6 +20,7 @@ function BP_LobbyRole_C:ActorEndCursorOver()
   end
   EventSystem.Invoke(EventDef.Lobby.LobbyHeroCursor, ParentActor.Index, false)
 end
+
 function BP_LobbyRole_C:ActorOnClicked(ButtonPressed)
   local ParentActor = self:GetParentActor()
   if not ParentActor then
@@ -24,11 +28,13 @@ function BP_LobbyRole_C:ActorOnClicked(ButtonPressed)
   end
   EventSystem.Invoke(EventDef.Lobby.LobbyHeroClicked, ParentActor.Index)
 end
+
 function BP_LobbyRole_C:ChangeWeaponSkin(WeaponSkinId, bShowGlitchMatEffect, bShowDrawCardShowMatEffect)
   local weaponSkinId = WeaponSkinId or "-1"
   self.ChildActor.ChildActor:InitPreChanged(self.ChildActor.ChildActor.CurrentSkinId, bShowGlitchMatEffect, bShowDrawCardShowMatEffect)
   self.ChildActor.ChildActor:LocalSetSkinId(weaponSkinId)
 end
+
 function BP_LobbyRole_C:ChangeRoleSkin(SkinId, SkinChangedCallback)
   if not (SkinId and tonumber(SkinId)) or tonumber(SkinId) < 0 then
     self:LocalSetSkinId(self.DefalutSkinId)
@@ -37,9 +43,11 @@ function BP_LobbyRole_C:ChangeRoleSkin(SkinId, SkinChangedCallback)
   end
   self.SkinChangedCallback = SkinChangedCallback
 end
+
 function BP_LobbyRole_C:GetDefaultRoleSkin()
   return self.DefalutSkinId and self.DefalutSkinId or -1
 end
+
 function BP_LobbyRole_C:OnSkinChanged(NewSkinId)
   self.Overridden.OnSkinChanged(self, NewSkinId)
   if self.bIsSucc ~= nil then
@@ -71,15 +79,18 @@ function BP_LobbyRole_C:OnSkinChanged(NewSkinId)
   self:SetVirtualLightON()
   EventSystem.Invoke(EventDef.Heirloom.MultiLayerCameraSkinChanged)
 end
+
 function BP_LobbyRole_C:SetVirtualLightON()
   self.Mesh:SetScalarParameterValueOnMaterials("VirtualLightON", 1)
 end
+
 function BP_LobbyRole_C:UpdateStandPos()
   local aniInst = self.Mesh:GetAnimInstance()
   if aniInst and aniInst:Cast(UE.URGLobbyRoleAnimInstance) then
     aniInst:SetStandPos(self.StandPos)
   end
 end
+
 function BP_LobbyRole_C:UpdateAniInstBySkinId(SkinId, bIsSucc)
   self.bIsSucc = bIsSucc
   local result, row = GetRowData(DT.DT_DisplaySkin, tostring(SkinId))
@@ -109,6 +120,7 @@ function BP_LobbyRole_C:UpdateAniInstBySkinId(SkinId, bIsSucc)
     self:ResetRoleStatus()
   end
 end
+
 function BP_LobbyRole_C:RemoveHeroDithering(SkinId)
   self:UpdateMat(self.Mesh)
   local result, row = GetRowData(DT.DT_DisplaySkin, tostring(SkinId))
@@ -121,6 +133,7 @@ function BP_LobbyRole_C:RemoveHeroDithering(SkinId)
     end
   end
 end
+
 function BP_LobbyRole_C:UpdateMat(Mesh)
   if UE.RGUtil.IsUObjectValid(Mesh) then
     for i, v in iterator(Mesh.OverrideMaterials) do
@@ -137,6 +150,7 @@ function BP_LobbyRole_C:UpdateMat(Mesh)
     end
   end
 end
+
 function BP_LobbyRole_C:ShowOrHideTargetChildren(bIsShow, Target)
   if not UE.RGUtil.IsUObjectValid(Target) then
     return
@@ -152,6 +166,7 @@ function BP_LobbyRole_C:ShowOrHideTargetChildren(bIsShow, Target)
     end
   end
 end
+
 function BP_LobbyRole_C:ShowOrHideLightInActor(IsShow)
   self:HideSettlementLight()
   print("BP_LobbyRole_C:ShowOrHideLightInActor", IsShow)
@@ -160,6 +175,7 @@ function BP_LobbyRole_C:ShowOrHideLightInActor(IsShow)
     self:ShowOrHideTargetChildren(IsShow, self.Light_Default)
   end
 end
+
 function BP_LobbyRole_C:ShowLightBySettlementResult(SettleStatus)
   print("BP_LobbyRole_C:ShowLightBySettlementResult", SettleStatus)
   if UE.RGUtil.IsUObjectValid(self.Light_Default) then
@@ -182,6 +198,7 @@ function BP_LobbyRole_C:ShowLightBySettlementResult(SettleStatus)
     self:ShowOrHideTargetChildren(true, self.Light_Settlement_Defeat)
   end
 end
+
 function BP_LobbyRole_C:HideSettlementLight()
   self:ShowOrHideTargetChildren(false, self.Light_Settlement_Victory)
   self:ShowOrHideTargetChildren(false, self.Light_Settlement_Defeat)
@@ -192,6 +209,7 @@ function BP_LobbyRole_C:HideSettlementLight()
     self.Light_Settlement_Defeat:SetHiddenInGame(true)
   end
 end
+
 function BP_LobbyRole_C:HideDrawCardShowMatEffect()
   self:UpdateSkin()
   self:SetVirtualLightON()
@@ -199,10 +217,12 @@ function BP_LobbyRole_C:HideDrawCardShowMatEffect()
     self.ChildActor.ChildActor:UpdateSkin()
   end
 end
+
 function BP_LobbyRole_C:ShowDrawCardShowMatEffect_LUA()
   self:ShowDrawCardShowMatEffect()
   if self.ChildActor.ChildActor then
     self.ChildActor.ChildActor:ShowDrawCardShowMatEffect()
   end
 end
+
 return BP_LobbyRole_C

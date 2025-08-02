@@ -1,51 +1,51 @@
 ﻿{
   "1": {
-    "UltraReward": {
-      "1": {
-        "key": 99008,
-        "value": 10000
-      },
-      "2": {
-        "key": 300001,
-        "value": 100
-      },
-      "3": {
-        "key": 36143,
-        "value": 5
-      }
-    },
-    "IconPath": "",
     "NormalTextLocMeta": {
       "InTextLiteral": "文本测试七八个字，文本测试七八个字文本测试七八个字文本测试七八个字文本测试七八个字文本测试七八个字文本测试七八个字文本测试七八个字文本测试七八个字",
       "InKey": "NormalText_1",
       "InNamespace": "season_TBBattlePass"
     },
-    "Name": "天选",
+    "EndTime": "2025-06-01 00:00:00",
+    "UltraReward": {
+      "1": {
+        "value": 10000,
+        "key": 99008
+      },
+      "2": {
+        "value": 100,
+        "key": 300001
+      },
+      "3": {
+        "value": 5,
+        "key": 36143
+      }
+    },
+    "BattlePassID": 1,
     "UltraTextLocMeta": {
       "InTextLiteral": "高级文本测试高级文本测试高级文本测试高级文本测试高级文本测试高级文本测试高级文本测试高级文本测试",
       "InKey": "UltraText_1",
       "InNamespace": "season_TBBattlePass"
     },
-    "EndTime": "2025-06-01 00:00:00",
-    "BattlePassID": 1,
+    "IconPath": "",
+    "Name": "天选",
     "StartTime": "2023-03-01 00:00:00"
   },
   "2": {
-    "UltraReward": {},
-    "IconPath": "",
     "NormalTextLocMeta": {
       "InTextLiteral": "",
       "InKey": "NormalText_2",
       "InNamespace": "season_TBBattlePass"
     },
-    "Name": "地煞",
+    "EndTime": "2025-06-01 00:00:00",
+    "UltraReward": {},
+    "BattlePassID": 2,
     "UltraTextLocMeta": {
       "InTextLiteral": "",
       "InKey": "UltraText_2",
       "InNamespace": "season_TBBattlePass"
     },
-    "EndTime": "2025-06-01 00:00:00",
-    "BattlePassID": 2,
+    "IconPath": "",
+    "Name": "地煞",
     "StartTime": "2023-03-01 00:00:00"
   }
 }

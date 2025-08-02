@@ -2,6 +2,7 @@ local URGHttpHelper = UE.URGHttpHelper
 local UnLua = _G.UnLua
 local rapidjson = require("rapidjson")
 local IllustratedGuideHandler = {}
+
 function IllustratedGuideHandler.RequestGetOwnedSpecificModifyListFromServer()
   HttpCommunication.Request("resource/pullinfiniteproppack", {infinitePropType = 1}, {
     GameInstance,
@@ -22,4 +23,5 @@ function IllustratedGuideHandler.RequestGetOwnedSpecificModifyListFromServer()
     end
   })
 end
+
 return IllustratedGuideHandler

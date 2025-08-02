@@ -1,11 +1,14 @@
 local SkinData = require("Modules.Appearance.Skin.SkinData")
 LogicAudio = LogicAudio or {}
+
 function LogicAudio.OnSkillLack(SkillID)
   PlaySound2DEffect(10028, SkillID)
 end
+
 function LogicAudio.OnSkillActivation(SkillID)
   PlaySound2DEffect(10029, SkillID)
 end
+
 function LogicAudio.OnSkillHit(DamageParams, TargetActor, SourceActor)
   local SkillID = UE.URGDamageStatics.GetSkillID(DamageParams)
   local DamageType = UE.URGDamageStatics.GetDamageType(DamageParams)
@@ -21,107 +24,142 @@ function LogicAudio.OnSkillHit(DamageParams, TargetActor, SourceActor)
     PlayHeroSkillHitSound3D(SkillID, DamageType, SourceActor, TargetActor, UE.URGDamageStatics.IsKill(DamageParams))
   end
 end
+
 function LogicAudio.OnSkillNorHit(TargetActor, SourceActor)
 end
+
 function LogicAudio.OnPortalDisappear()
   PlaySound2DEffect(10036, "OnPortalDisappear")
 end
+
 function LogicAudio.OnPortalAppear()
   PlaySound2DEffect(10037, "OnPortalAppear")
 end
+
 function LogicAudio.OnPortalTransfer()
   PlaySound2DEffect(10038, "OnPortalTransfer")
 end
+
 function LogicAudio.OnFunJumpGather()
   PlaySound2DEffect(10104, "OnFunJumpGather")
 end
+
 function LogicAudio.OnFunJumpStart()
   PlaySound2DEffect(10105, "OnFunJumpStart")
 end
+
 function LogicAudio.OnFunJumpHammerDown()
   PlaySound2DEffect(10038, "OnFunJumpHammerDown")
 end
+
 function LogicAudio.OnFunJumpHammerBroken()
   PlaySound2DEffect(10038, "OnFunJumpHammerBroken")
 end
+
 function LogicAudio.OnFunJumpWaveStart()
   PlaySound2DEffect(10038, "OnFunJumpWaveStart")
 end
+
 function LogicAudio.OnFunJumpSuccess()
   PlaySound2DEffect(10106, "OnFunJumpSuccess")
 end
+
 function LogicAudio.OnFunJumpFail()
   PlaySound2DEffect(10107, "OnFunJumpFail")
 end
+
 function LogicAudio.OnTreasureBoxOpenCharge()
   PlaySound2DEffect(10030, "OnTreasureBoxOpenCharge")
 end
+
 function LogicAudio.OnTreasureBoxStopCharge()
   StopSound2DEffect(10030)
 end
+
 function LogicAudio.OnTreasureBoxOpen()
   PlaySound2DEffect(10031, "OnTreasureBoxOpenCharge")
 end
+
 function LogicAudio.OnPickupCentaur()
   PlaySound2DEffect(10035, "OnPickupCentaur")
 end
+
 function LogicAudio.OnGunShotDry()
   PlaySound2DEffect(10032, "OnGunShotDry")
 end
+
 function LogicAudio.OnPickupReel()
   PlaySound2DEffect(10033, "OnPickupReel")
 end
+
 function LogicAudio.OnDropReel()
   PlaySound2DEffect(10034, "OnDropReel")
 end
+
 function LogicAudio.OnNegative()
   PlaySound2DEffect(5, "OnNegative")
 end
+
 function LogicAudio.OnThreeToOneOpen()
   PlaySound2DEffect(10201, "OnThreeToOneOpen")
 end
+
 function LogicAudio.OnThreeToOneChoose()
   PlaySound2DEffect(10203, "OnThreeToOneChoose")
 end
+
 function LogicAudio.OnThreeToOneClose()
   PlaySound2DEffect(10204, "OnThreeToOneClose")
 end
+
 function LogicAudio.OnThreeToOnePick()
   PlaySound2DEffect(10202, "OnThreeToOnePick")
 end
+
 function LogicAudio.OnTalentPick()
   PlaySound2DEffect(2, "OnTalentPick")
 end
+
 function LogicAudio.OnTalentClick()
   PlaySound2DEffect(8, "OnTalentClick")
 end
+
 function LogicAudio.OnTalentUnClick()
   PlaySound2DEffect(5, "OnTalentUnClick")
 end
+
 function LogicAudio.OnLevelUpAppear()
   PlaySound2DEffect(94004, "OnLevelUp")
 end
+
 function LogicAudio.OnLevelUpDisappear()
   PlaySound2DEffect(94006, "OnLevelUp")
 end
+
 function LogicAudio.OnLevelUp()
   PlaySound2DEffect(94005, "OnLevelUp")
 end
+
 function LogicAudio.OnPageOpen()
   PlaySound2DEffect(6, "OnPageOpen")
 end
+
 function LogicAudio.OnPageClose()
   PlaySound2DEffect(7, "OnPageClose")
 end
+
 function LogicAudio.OnMovieTipAppear()
   PlaySound2DEffect(9, "OnMovieTipAppear")
 end
+
 function LogicAudio.OnMovieTipDisappear()
   PlaySound2DEffect(10, "OnMovieTipDisappear")
 end
+
 function LogicAudio.OnOperateTipAppear()
   PlaySound2DEffect(9, "OnOperateTipAppear")
 end
+
 function LogicAudio.OnLobbyPlayHeroSound(SkinId, TargetActor, From, Force)
   UE.UAudioManager.StopWwiseEventByName(LogicAudio.LastAkEventName)
   if SkinId <= 0 then
@@ -155,6 +193,7 @@ function LogicAudio.OnLobbyPlayHeroSound(SkinId, TargetActor, From, Force)
     end
   end
 end
+
 function LogicAudio.PickHero(HeroId)
   local SkinId = SkinData.GetEquipedSkinIdByHeroId(HeroId)
   print("LogicAudio.PickHero", HeroId, SkinId)
@@ -173,6 +212,7 @@ function LogicAudio.PickHero(HeroId)
     LogicAudio.LastAkEventName = AkEventName
   end
 end
+
 function LogicAudio.OnActiveSet_Voice(Pawn, Level)
   if not Pawn then
     return
@@ -184,6 +224,7 @@ function LogicAudio.OnActiveSet_Voice(Pawn, Level)
   end
   PlayVoice(RowName, Pawn)
 end
+
 function LogicAudio.OnAddModify(Modify)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -208,18 +249,23 @@ function LogicAudio.OnAddModify(Modify)
     PlayVoice("Voice.OnAddModify.Legend", UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0))
   end
 end
+
 function LogicAudio.StartAddExp()
   PlaySound2DEffect(19, "\231\187\147\231\174\151 - \231\134\159\231\187\131\229\186\166\231\187\143\233\170\140\229\188\128\229\167\139")
 end
+
 function LogicAudio.EndAddExp()
   StopSound2DEffect(19)
 end
+
 function LogicAudio.StartPowerUpReward()
   PlaySound2DEffect(18, "\231\187\147\231\174\151 - \232\147\132\229\138\155\229\165\150\229\138\177\229\188\128\229\167\139")
 end
+
 function LogicAudio.EndPowerUpReward()
   StopSound2DEffect(18)
 end
+
 function LogicAudio.BattleLevelUp()
   PlaySound2DByName("UI_Battle_Survivor_LevelUp", "BattleLevelUp")
 end

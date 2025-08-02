@@ -7,6 +7,7 @@ local UILayer = require("Framework.UIMgr.UILayer")
 local UnLua = _G.UnLua
 local FuncUtil = require("Framework.Utils.FuncUtil")
 local UIRootCtrl = Class(ViewBase)
+
 function UIRootCtrl:OnInit()
   self._layer2ObjectMap = {}
   for _, layer in pairs(UILayer) do
@@ -28,12 +29,14 @@ function UIRootCtrl:OnInit()
   end
   self._lastUIEnableValue = true
 end
+
 function UIRootCtrl:GetLayerObject(layer)
   if self._layer2ObjectMap == nil then
     return nil
   end
   return self._layer2ObjectMap[layer]
 end
+
 function UIRootCtrl:SetUIActive(value)
   if self.contain == nil then
     UnLua.UnLua.LogError("UIRootCtrl:SetUIActive contain is nil")
@@ -41,6 +44,7 @@ function UIRootCtrl:SetUIActive(value)
   end
   UIUtil.SetVisibility(self.contain, value)
 end
+
 function UIRootCtrl:SetUIEnable(value)
   if self._lastUIEnableValue == value then
     return
@@ -49,12 +53,14 @@ function UIRootCtrl:SetUIEnable(value)
   local visible = not value
   UIUtil.SetVisibilityNoHidden(self.enableMask, visible, false)
 end
+
 function UIRootCtrl:ShowAll()
   print("UIRootCtrl:ShowAll()")
   for _, layerObject in pairs(self._layer2ObjectMap) do
     UIUtil.SetVisibility(layerObject, true)
   end
 end
+
 function UIRootCtrl:HideAll()
   print("UIRootCtrl:HideAll()")
   for _, layerObject in pairs(self._layer2ObjectMap) do
@@ -65,6 +71,7 @@ function UIRootCtrl:HideAll()
     UIUtil.SetVisibility(topestLayerObjectReconnect, true)
   end
 end
+
 function UIRootCtrl:ShowLayerOnly(layer)
   self:HideAll()
   print("UIRootCtrl:ShowLayerOnly() - layer:", layer)
@@ -81,20 +88,25 @@ function UIRootCtrl:ShowLayerOnly(layer)
     UIUtil.SetVisibility(topestLayerObjectReconnect, true)
   end
 end
+
 function UIRootCtrl:UIModelOnShow()
   self:HideLayer(UILayer.Low)
   self:HideLayer(UILayer.Dock)
 end
+
 function UIRootCtrl:UIModelOnHide()
   UIMgr.UIRoot:ShowLayer(UILayer.Low)
   UIMgr.UIRoot:ShowLayer(UILayer.Dock)
 end
+
 function UIRootCtrl:DieStateOnShow()
   self:HideLayer(UILayer.Low)
 end
+
 function UIRootCtrl:DieStateOnHide()
   UIMgr.UIRoot:ShowLayer(UILayer.Low)
 end
+
 function UIRootCtrl:HideLayer(layer)
   print("UIRootCtrl:HideLayer() - layer:", layer)
   local layerObject = self:GetLayerObject(layer)
@@ -102,6 +114,7 @@ function UIRootCtrl:HideLayer(layer)
     UIUtil.SetVisibility(layerObject, false)
   end
 end
+
 function UIRootCtrl:ShowLayer(layer)
   print("UIRootCtrl:ShowLayer() - layer:", layer)
   local layerObject = self:GetLayerObject(layer)
@@ -109,6 +122,7 @@ function UIRootCtrl:ShowLayer(layer)
     UIUtil.SetVisibility(layerObject, true)
   end
 end
+
 function UIRootCtrl:ShowLayerOnlyWithTips(layer)
   self:HideAll()
   print("UIRootCtrl:ShowLayerOnlyWithTips() - layer:", layer)
@@ -133,6 +147,7 @@ function UIRootCtrl:ShowLayerOnlyWithTips(layer)
     UIUtil.SetVisibility(topestLayerObjectReconnect, true)
   end
 end
+
 function UIRootCtrl:ShowLayerCustom(layerList, bHideOther)
   if nil == bHideOther or true == bHideOther then
     self:HideAll()
@@ -145,6 +160,7 @@ function UIRootCtrl:ShowLayerCustom(layerList, bHideOther)
     end
   end
 end
+
 function UIRootCtrl:RootAddChild(object, layer)
   if nil == object then
     UnLua.LogError(" UIRootCtrl:RootAddChild object is nil")
@@ -158,6 +174,7 @@ function UIRootCtrl:RootAddChild(object, layer)
   layerObject:AddChild(object)
   self:SetUIRectOffset(object)
 end
+
 function UIRootCtrl:SetUIRectOffset(object)
   local slotCanvas = UWidgetLayoutLibrary.SlotAsCanvasSlot(object)
   if nil ~= slotCanvas then
@@ -173,6 +190,7 @@ function UIRootCtrl:SetUIRectOffset(object)
     slotCanvas:SetOffsets(offset)
   end
 end
+
 function UIRootCtrl:RootRemoveChild(object, layer)
   if nil == object then
     UnLua.LogError("object is nil")
@@ -195,10 +213,13 @@ function UIRootCtrl:RootRemoveChild(object, layer)
     end
   end
 end
+
 function UIRootCtrl:Construct()
   print("=====UIRootCtrl:Construct=====")
   EventSystem.AddListenerNew(EventDef.KoreaCompliance.ShowAgePic, self, self.BindOnShowAgePic)
+  EventSystem.AddListenerNew(EventDef.RootView.ShowOrHideMouseInputBlocking, self, self.BindOnShowOrHideMouseInputBlocking)
 end
+
 function UIRootCtrl:BindOnShowAgePic()
   UpdateVisibility(self.KoreaAge, true, false)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TimerHandle) then
@@ -211,6 +232,7 @@ function UIRootCtrl:BindOnShowAgePic()
     end
   }, 3, false)
 end
+
 function UIRootCtrl:Destruct()
   if self.GetName then
     print("=====UIRootCtrl:Destruct ", self:GetName())
@@ -223,6 +245,34 @@ function UIRootCtrl:Destruct()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TimerHandle) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.TimerHandle)
   end
+  if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.MouseInputBlockingTimerHandle) then
+    UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.MouseInputBlockingTimerHandle)
+  end
   EventSystem.RemoveListenerNew(EventDef.KoreaCompliance.ShowAgePic, self, self.BindOnShowAgePic)
+  EventSystem.RemoveListenerNew(EventDef.RootView.ShowOrHideMouseInputBlocking, self, self.BindOnShowOrHideMouseInputBlocking)
 end
+
+function UIRootCtrl:BindOnShowOrHideMouseInputBlocking(bIsShow)
+  if bIsShow then
+    print("ywtao,UIRootCtrl:BindOnShowOrHideMouseInputBlocking:Show")
+    self.MouseInputBlocking:SetVisibility(UE.ESlateVisibility.Visible)
+    if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.MouseInputBlockingTimerHandle) then
+      UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.MouseInputBlockingTimerHandle)
+    end
+    self.MouseInputBlockingTimerHandle = UE.UKismetSystemLibrary.K2_SetTimerDelegate({
+      self,
+      function()
+        UnLua.LogError("ywtao, UIRootCtrl:BindOnShowOrHideMouseInputBlocking: Timeout, hide MouseInputBlocking")
+        self.MouseInputBlocking:SetVisibility(UE.ESlateVisibility.Collapsed)
+      end
+    }, 2, false)
+  else
+    print("ywtao,UIRootCtrl:BindOnShowOrHideMouseInputBlocking:Hide")
+    if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.MouseInputBlockingTimerHandle) then
+      UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.MouseInputBlockingTimerHandle)
+    end
+    self.MouseInputBlocking:SetVisibility(UE.ESlateVisibility.Collapsed)
+  end
+end
+
 return UIRootCtrl

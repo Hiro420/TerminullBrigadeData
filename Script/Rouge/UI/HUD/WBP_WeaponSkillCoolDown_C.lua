@@ -1,8 +1,10 @@
 local WBP_WeaponSkillCoolDown_C = UnLua.Class()
+
 function WBP_WeaponSkillCoolDown_C:Construct()
   ListenObjectMessage(nil, GMP.MSG_OnAbilityTagUpdate, self, self.BindOnAbilityTagUpdate)
   self:ChangeProhibitVis(false)
 end
+
 function WBP_WeaponSkillCoolDown_C:InitInfo(WeaponId)
   local Result, RowInfo = GetRowData(DT.DT_Weapon, tostring(WeaponId))
   if not Result then
@@ -24,6 +26,7 @@ function WBP_WeaponSkillCoolDown_C:InitInfo(WeaponId)
     SetImageBrushBySoftObject(self.Img_UnSkillDefaultIcon, RowInfo.UnSkillDefaultIcon)
   end
 end
+
 function WBP_WeaponSkillCoolDown_C:BindOnAbilityTagUpdate(Tag, bTagExist, TargetActor)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if TargetActor ~= Character then
@@ -39,6 +42,7 @@ function WBP_WeaponSkillCoolDown_C:BindOnAbilityTagUpdate(Tag, bTagExist, Target
     self:UpdateOperateOpacity()
   end
 end
+
 function WBP_WeaponSkillCoolDown_C:ChangeProhibitVis(bTagExist)
   if bTagExist then
     self.Img_DisableSkillIcon:SetVisibility(UE.ESlateVisibility.Visible)
@@ -56,6 +60,7 @@ function WBP_WeaponSkillCoolDown_C:ChangeProhibitVis(bTagExist)
     self.Img_InvalidBottom:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function WBP_WeaponSkillCoolDown_C:UpdateOperateOpacity()
   if self.IsInUnNormalState or self.CurState == UE.ERGAbilityStateType.InCoolDown then
     self.Img_OperateIcon:SetOpacity(self.NotCountOperateIconOpacity)
@@ -65,7 +70,9 @@ function WBP_WeaponSkillCoolDown_C:UpdateOperateOpacity()
     self.Img_InValidOperateIcon:SetOpacity(self.NormalOperateIconOpacity)
   end
 end
+
 function WBP_WeaponSkillCoolDown_C:Destruct()
   UnListenObjectMessage(GMP.MSG_OnAbilityTagUpdate, self)
 end
+
 return WBP_WeaponSkillCoolDown_C

@@ -4,20 +4,25 @@ local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local RankData = require("UI.View.Rank.RankData")
 local RankNor = Class(ViewBase)
+
 function RankNor:OnBindUIInput()
   self.WBP_InteractTipWidgetGameMode:BindInteractAndClickEvent(self, self.OnGameModeClicked)
   self.WBP_InteractTipWidgetWorld:BindInteractAndClickEvent(self, self.OnWorldClicked)
 end
+
 function RankNor:OnUnBindUIInput()
   self.WBP_InteractTipWidgetGameMode:UnBindInteractAndClickEvent(self, self.OnGameModeClicked)
   self.WBP_InteractTipWidgetWorld:UnBindInteractAndClickEvent(self, self.OnWorldClicked)
 end
+
 function RankNor:OnGameModeClicked()
   self.ComboBoxGameMode:OpenOption()
 end
+
 function RankNor:OnWorldClicked()
   self.ComboBoxWorld:OpenOption()
 end
+
 function RankNor:BindClickHandler()
   EventSystem.AddListener(self, EventDef.Rank.OnRequestServerDataSuccess, RankNor.OnRequestServerDataSuccess)
   self.Btn_Team_new.OnClicked:Add(self, RankNor.SwitchTeam)
@@ -27,6 +32,7 @@ function RankNor:BindClickHandler()
   self.ComboBoxGameMode.OnSelectionChanged:Add(self, self.OnModeChange)
   self.ComboBoxSeason.OnSelectionChanged:Add(self, self.OnSeasonChange)
 end
+
 function RankNor:UnBindClickHandler()
   EventSystem.RemoveListener(EventDef.Rank.OnRequestServerDataSuccess, RankNor.OnRequestServerDataSuccess, self)
   self.Btn_Team_new.OnClicked:Remove(self, RankNor.SwitchTeam)
@@ -35,11 +41,14 @@ function RankNor:UnBindClickHandler()
   self.ComboBoxWorld.OnSelectionChanged:Remove(self, self.OnWorldChange)
   self.ComboBoxSeason.OnSelectionChanged:Remove(self, self.OnSeasonChange)
 end
+
 function RankNor:OnInit()
   self.DataBindTable = {}
 end
+
 function RankNor:OnDestroy()
 end
+
 function RankNor:OnShow(...)
   self.bFinishInit = false
   self:BindClickHandler()
@@ -55,6 +64,7 @@ function RankNor:OnShow(...)
   LogicRole.ShowOrHideRoleMainHero(true)
   self.WBP_RankView:PlayAnimation(self.WBP_RankView.Ani_in)
 end
+
 function RankNor:OnRollback()
   LogicRole.ShowOrLoadLevel(-1)
   ChangeLobbyCamera(self, "Rank")
@@ -62,6 +72,7 @@ function RankNor:OnRollback()
   LogicRole.ShowOrHideRoleMainHero(true)
   self.WBP_RankView:PlayAnimation(self.WBP_RankView.Ani_in)
 end
+
 function RankNor:BindOnESCClicked()
   if self:IsAnimationPlaying(self.Anim_OUT) then
     return
@@ -69,11 +80,13 @@ function RankNor:BindOnESCClicked()
   self:PlayAnimation(self.Anim_OUT)
   self.WBP_RankView:PlayAnimation(self.WBP_RankView.Ani_out)
 end
+
 function RankNor:OnAnimationFinished(Animation)
   if Animation == self.Anim_OUT then
     UIMgr:Hide(ViewID.UI_RankView_Nor, true)
   end
 end
+
 function RankNor:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -85,6 +98,7 @@ function RankNor:OnHide()
   LogicRole.ShowOrHideRoleMainHero(false)
   self:UnBindClickHandler()
 end
+
 function RankNor:InitWidget()
   local TBRankModeTable = LuaTableMgr.GetLuaTableByName(TableNames.TBRankMode)
   self.ComboBoxWorld:ClearOptions()
@@ -120,6 +134,7 @@ function RankNor:InitWidget()
   self.ComboBoxHero:SetSelectedIndex(0)
   self.bFinishInit = true
 end
+
 function RankNor:OnComboBoxWorldGenerateWidget(Item)
   local Widget = UE.UWidgetBlueprintLibrary.Create(self, self.ComboBoxItemClass)
   if Widget then
@@ -136,6 +151,7 @@ function RankNor:OnComboBoxWorldGenerateWidget(Item)
   end
   return Widget
 end
+
 function RankNor:OnComboBoxHeroGenerateWidget(Item)
   local Widget = UE.UWidgetBlueprintLibrary.Create(self, self.ComboBoxItemClass)
   if Widget then
@@ -152,6 +168,7 @@ function RankNor:OnComboBoxHeroGenerateWidget(Item)
   end
   return Widget
 end
+
 function RankNor:OnComboBoxGameModeGenerateWidget(Item)
   local Widget = UE.UWidgetBlueprintLibrary.Create(self, self.ComboBoxItemClass)
   if Widget then
@@ -169,6 +186,7 @@ function RankNor:OnComboBoxGameModeGenerateWidget(Item)
   end
   return Widget
 end
+
 function RankNor:On_ComboBoxSeason_GenerateWidget(Item)
   local Widget = UE.UWidgetBlueprintLibrary.Create(self, self.ComboBoxItemClass)
   if Widget then
@@ -186,11 +204,13 @@ function RankNor:On_ComboBoxSeason_GenerateWidget(Item)
   end
   return Widget
 end
+
 function RankNor:OnRequestServerDataSuccess(JsonTable)
   print("OnRequestServerDataSuccess")
   self.WBP_RankView.ParentClass = self
   self.WBP_RankView:UpdateRankList(JsonTable)
 end
+
 function RankNor:OnSeasonChange(Id, Type)
   if "" == Id then
     return
@@ -215,6 +235,7 @@ function RankNor:OnSeasonChange(Id, Type)
   end
   self.ComboBoxGameMode:SetSelectedIndex(0)
 end
+
 function RankNor:OnWorldChange(Id, Type)
   if "" == Id then
     return
@@ -230,6 +251,7 @@ function RankNor:OnWorldChange(Id, Type)
     RankData.RequestServerData(self.SelSeasonId, self.SelModeId, self.SelWorldId, nil, 200)
   end
 end
+
 function RankNor:OnModeChange(Id, Type)
   if "" == Id then
     return
@@ -241,6 +263,7 @@ function RankNor:OnModeChange(Id, Type)
   end
   self.ComboBoxWorld:SetSelectedIndex(0)
 end
+
 function RankNor:OnComboBoxChange(Item, Type)
   if "" == Item then
     return
@@ -259,6 +282,7 @@ function RankNor:OnComboBoxChange(Item, Type)
     RankData.RequestServerData(self.SelSeasonId, self.SelModeId, self.SelWorldId, self.SelHeroId, 200)
   end
 end
+
 function RankNor:SwitchTeam()
   self.TeamMode = true
   self:OnSeasonChange(self.SelSeasonId)
@@ -269,6 +293,7 @@ function RankNor:SwitchTeam()
   UpdateVisibility(self.Btn_Team_Normal, false)
   UpdateVisibility(self.Btn_Single_Normal, true)
 end
+
 function RankNor:SwitchSingle()
   self.TeamMode = false
   self:OnSeasonChange(self.SelSeasonId)
@@ -283,4 +308,5 @@ function RankNor:SwitchSingle()
     return
   end
 end
+
 return RankNor

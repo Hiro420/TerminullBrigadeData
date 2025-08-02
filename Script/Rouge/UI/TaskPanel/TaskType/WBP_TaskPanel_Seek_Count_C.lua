@@ -1,4 +1,5 @@
 local WBP_TaskPanel_Seek_Count_C = UnLua.Class()
+
 function WBP_TaskPanel_Seek_Count_C:InitEventPanel(TaskEventConfig, EventId, TaskId)
   self.EventId = EventId
   self.TaskId = TaskId
@@ -10,6 +11,7 @@ function WBP_TaskPanel_Seek_Count_C:InitEventPanel(TaskEventConfig, EventId, Tas
   self:InitSeekProgress()
   ListenObjectMessage(nil, GMP.MSG_UI_HUD_BattleMode_OnSeekCaveDestoryCountChange, self, self.BindOnUpdateTaskProgress)
 end
+
 function WBP_TaskPanel_Seek_Count_C:InitSeekProgress()
   local BattleActorClass = UE.ARGSweepBattleActor:StaticClass()
   local BattleActorList = UE.UGameplayStatics.GetAllActorsOfClass(self, BattleActorClass, nil)
@@ -22,6 +24,7 @@ function WBP_TaskPanel_Seek_Count_C:InitSeekProgress()
     end
   end
 end
+
 function WBP_TaskPanel_Seek_Count_C:UpdateEventPanel(TaskInfo)
   if TaskInfo.bIsCustomTask then
   else
@@ -40,11 +43,13 @@ function WBP_TaskPanel_Seek_Count_C:UpdateEventPanel(TaskInfo)
     end
   end
 end
+
 function WBP_TaskPanel_Seek_Count_C:BindOnUpdateTaskProgress(Instigator, CurrentValue, TargetValue)
   local CurValue = CurrentValue
   local TargetValue = TargetValue
   self.Txt_Count:SetText(CurValue .. "/" .. TargetValue)
 end
+
 function WBP_TaskPanel_Seek_Count_C:SetWidgetStyle(Status)
   UpdateVisibility(self.Img_TaskCompleted, Status == UE.ERGActionEvent_TaskConditionStatus.Meet)
   if Status == UE.ERGActionEvent_TaskConditionStatus.Meet then
@@ -56,4 +61,5 @@ function WBP_TaskPanel_Seek_Count_C:SetWidgetStyle(Status)
     SetImageBrushBySoftObjectPath(self.Img_TaskState, self.TaskEventConfig.EventErrorIcon)
   end
 end
+
 return WBP_TaskPanel_Seek_Count_C

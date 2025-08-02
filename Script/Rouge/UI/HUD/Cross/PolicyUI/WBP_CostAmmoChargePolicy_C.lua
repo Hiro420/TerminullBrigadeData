@@ -1,4 +1,5 @@
 local WBP_CostAmmoChargePolicy_C = UnLua.Class()
+
 function WBP_CostAmmoChargePolicy_C:Construct()
   ListenObjectMessage(nil, GMP.MSG_World_Weapon_OnChargeTimeDelta, self, self.BindOnChargeTimeUpdate)
   local DynamicMaterial = self.URGImage_Charge:GetDynamicMaterial()
@@ -6,6 +7,7 @@ function WBP_CostAmmoChargePolicy_C:Construct()
     DynamicMaterial:SetScalarParameterValue("ProgressPercent", 0)
   end
 end
+
 function WBP_CostAmmoChargePolicy_C:BindOnChargeTimeUpdate(MaxPercent, Progress, RatioAdd)
   local DynamicMaterial = self.URGImage_Charge:GetDynamicMaterial()
   if DynamicMaterial then
@@ -26,7 +28,9 @@ function WBP_CostAmmoChargePolicy_C:BindOnChargeTimeUpdate(MaxPercent, Progress,
   end
   self.TextDamage:SetText("+" .. tostring(RatioAdd) .. "%")
 end
+
 function WBP_CostAmmoChargePolicy_C:Destruct()
   UnListenObjectMessage(GMP.MSG_World_Weapon_OnChargeTimeUpdate, self)
 end
+
 return WBP_CostAmmoChargePolicy_C

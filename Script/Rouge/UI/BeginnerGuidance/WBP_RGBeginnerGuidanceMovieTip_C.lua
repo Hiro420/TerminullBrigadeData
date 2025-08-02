@@ -1,8 +1,10 @@
 local WBP_RGBeginnerGuidanceMovieTip_C = UnLua.Class()
+
 function WBP_RGBeginnerGuidanceMovieTip_C:Construct()
   self.BeginnerRowIdList = {}
   self.CurBeginnerRowIdIndex = -1
 end
+
 function WBP_RGBeginnerGuidanceMovieTip_C:RefreshInfo(BeginnerRowId, MissionId)
   self.MissionId = MissionId
   table.insert(self.BeginnerRowIdList, BeginnerRowId)
@@ -28,6 +30,7 @@ function WBP_RGBeginnerGuidanceMovieTip_C:RefreshInfo(BeginnerRowId, MissionId)
   end
   self:RefreshOperateTipVis()
 end
+
 function WBP_RGBeginnerGuidanceMovieTip_C:RefreshPanelInfo()
   local TargetBeginnerRowId = self.BeginnerRowIdList[self.CurBeginnerRowIdIndex]
   if not TargetBeginnerRowId then
@@ -75,6 +78,7 @@ function WBP_RGBeginnerGuidanceMovieTip_C:RefreshPanelInfo()
     Index = Index + 1
   end
 end
+
 function WBP_RGBeginnerGuidanceMovieTip_C:BindOnNextKeyRowName()
   if self.CurBeginnerRowIdIndex == table.count(self.BeginnerRowIdList) then
     print("WBP_RGBeginnerGuidanceMovieTip_C:BindOnNextKeyRowName\229\183\178\231\187\143\230\156\128\229\164\167")
@@ -89,6 +93,7 @@ function WBP_RGBeginnerGuidanceMovieTip_C:BindOnNextKeyRowName()
   self:RefreshOperateTipVis()
   self:RefreshPanelInfo()
 end
+
 function WBP_RGBeginnerGuidanceMovieTip_C:BindOnLastKeyRowName()
   if 1 == self.CurBeginnerRowIdIndex then
     print("WBP_RGBeginnerGuidanceMovieTip_C:BindOnLastKeyRowName\229\183\178\231\187\143\230\156\128\229\176\143")
@@ -98,6 +103,7 @@ function WBP_RGBeginnerGuidanceMovieTip_C:BindOnLastKeyRowName()
   self:RefreshOperateTipVis()
   self:RefreshPanelInfo()
 end
+
 function WBP_RGBeginnerGuidanceMovieTip_C:RefreshOperateTipVis()
   if table.count(self.BeginnerRowIdList) > 1 then
     if 1 == self.CurBeginnerRowIdIndex then
@@ -109,6 +115,7 @@ function WBP_RGBeginnerGuidanceMovieTip_C:RefreshOperateTipVis()
     self.LastStepInteractTip:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_RGBeginnerGuidanceMovieTip_C:Hide()
   self.BeginnerRowIdList = {}
   self.CurBeginnerRowIdIndex = -1
@@ -127,9 +134,11 @@ function WBP_RGBeginnerGuidanceMovieTip_C:Hide()
     end
   })
 end
+
 function WBP_RGBeginnerGuidanceMovieTip_C:SetInvincible(IsInvincible)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   local CoreComp = Character:GetComponentByClass(UE.URGCoreComponent:StaticClass())
   CoreComp:SetInvincible(IsInvincible)
 end
+
 return WBP_RGBeginnerGuidanceMovieTip_C

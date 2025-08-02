@@ -1,4 +1,5 @@
 local BP_NPC_MODNPC_C = UnLua.Class()
+
 function BP_NPC_MODNPC_C:ReceiveBeginPlay()
   self.Overridden.ReceiveBeginPlay(self)
   if UE.UKismetSystemLibrary.IsServer(self) then
@@ -18,6 +19,7 @@ function BP_NPC_MODNPC_C:ReceiveBeginPlay()
     modComponent.OnMODResultDelegate:Add(self, self.OnMODResultDelegate)
   end
 end
+
 function BP_NPC_MODNPC_C:OnUIReady(Widget)
   if Widget:Cast(UE.URGHUDWidget:StaticClass()) then
     self:NPCAppear(true)
@@ -28,6 +30,7 @@ function BP_NPC_MODNPC_C:OnUIReady(Widget)
     end
   end
 end
+
 function BP_NPC_MODNPC_C:NPCAppear(bIsAppear)
   if not UE.UKismetSystemLibrary.IsServer(self) then
     if bIsAppear then
@@ -48,6 +51,7 @@ function BP_NPC_MODNPC_C:NPCAppear(bIsAppear)
     end
   end
 end
+
 function BP_NPC_MODNPC_C:OnMODResultDelegate(NPC, Result)
   if Result then
     print("BP_NPC_MODNPC_C:\230\168\161\231\187\132\233\128\137\230\139\169\230\136\144\229\138\159!!!!!!!", NPC, self)
@@ -59,6 +63,7 @@ function BP_NPC_MODNPC_C:OnMODResultDelegate(NPC, Result)
     print("BP_NPC_MODNPC_C:\230\168\161\231\187\132\233\128\137\230\139\169\229\164\177\232\180\165!!!!!!!")
   end
 end
+
 function BP_NPC_MODNPC_C:ReceiveEndPlay(EndPlayReason)
   self.Overridden.ReceiveEndPlay(self, EndPlayReason)
   if UE.UKismetSystemLibrary.IsServer(self) then
@@ -78,4 +83,5 @@ function BP_NPC_MODNPC_C:ReceiveEndPlay(EndPlayReason)
     modComponent.OnMODResultDelegate:Remove(self, self.OnMODResultDelegate)
   end
 end
+
 return BP_NPC_MODNPC_C

@@ -1,4 +1,5 @@
 local WBP_BossBerserkTip_C = UnLua.Class()
+
 function WBP_BossBerserkTip_C:InitBossBerserkTip(Boss, BerserkState, StartTimestamp)
   self.BossIns = Boss
   self.BerserkState = BerserkState
@@ -32,6 +33,7 @@ function WBP_BossBerserkTip_C:InitBossBerserkTip(Boss, BerserkState, StartTimest
     ListenObjectMessage(self.BossIns, GMP.MSG_Pawn_OnDeath, self, self.BindBossDeath)
   end
 end
+
 function WBP_BossBerserkTip_C:Countdown()
   self.Duration = self.Duration - 1
   if self.Duration < 0 then
@@ -42,6 +44,7 @@ function WBP_BossBerserkTip_C:Countdown()
   end
   self.Text_Countdown:SetText(string.format(self.CountdownString, self.Duration, "%"))
 end
+
 function WBP_BossBerserkTip_C:BindBossDeath()
   self.BossIns = nil
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TimerHandle) then
@@ -52,9 +55,11 @@ function WBP_BossBerserkTip_C:BindBossDeath()
     UIManager:HideUIByName("WBP_BossBerserkTip_C")
   end
 end
+
 function WBP_BossBerserkTip_C:OnUnDisplay(bIsPlaySound)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TimerHandle) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.TimerHandle)
   end
 end
+
 return WBP_BossBerserkTip_C

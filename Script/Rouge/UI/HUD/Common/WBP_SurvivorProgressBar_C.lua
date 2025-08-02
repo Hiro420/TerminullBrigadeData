@@ -1,4 +1,5 @@
 local WBP_SurvivorProgressBar_C = UnLua.Class()
+
 function WBP_SurvivorProgressBar_C:Construct()
   self.RuleID = nil
   UpdateVisibility(self.SmallWave, false)
@@ -26,6 +27,7 @@ function WBP_SurvivorProgressBar_C:Construct()
   end
   self.ImageItemDict = {}
 end
+
 function WBP_SurvivorProgressBar_C:ClearImageDict()
   for _, ImageItem in pairs(self.ImageItemDict) do
     ImageItem:RemoveFromParent()
@@ -37,6 +39,7 @@ function WBP_SurvivorProgressBar_C:ClearImageDict()
   end
   self.ImageItemDict = {}
 end
+
 function WBP_SurvivorProgressBar_C:UpdateImageDict()
   for index, ImageItem in pairs(self.ImageItemDict) do
     if index < self.WaveIndex then
@@ -46,6 +49,7 @@ function WBP_SurvivorProgressBar_C:UpdateImageDict()
     end
   end
 end
+
 function WBP_SurvivorProgressBar_C:ShowBar(WaveIndex, RuleID)
   if self.RuleID ~= RuleID then
     self.RuleID = RuleID
@@ -61,11 +65,13 @@ function WBP_SurvivorProgressBar_C:ShowBar(WaveIndex, RuleID)
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self:PlayAnimation(self.Anim_IN)
 end
+
 function WBP_SurvivorProgressBar_C:UpdateBar()
   local TotalWave = LogicSurvivor.GetTotalWave(self.RuleID)
   self.WaveProgressBar:SetPercent(self.WaveIndex / TotalWave)
   self:UpdateImageDict()
 end
+
 function WBP_SurvivorProgressBar_C:InitProgressBar()
   self:ClearImageDict()
   local WaveIds = LogicSurvivor.GetWaveIds(self.RuleID)
@@ -102,6 +108,7 @@ function WBP_SurvivorProgressBar_C:InitProgressBar()
     end
   end
 end
+
 function WBP_SurvivorProgressBar_C:HideBar()
   self:StopAnimation(self.Anim_IN)
   if not self.IsClose then
@@ -109,13 +116,16 @@ function WBP_SurvivorProgressBar_C:HideBar()
     self:PlayAnimation(self.Anim_OUT)
   end
 end
+
 function WBP_SurvivorProgressBar_C:OnAnimationFinished(InAnimation)
   if InAnimation == self.Anim_OUT and self.IsClose then
     self.IsShow = false
     self:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_SurvivorProgressBar_C:Destruct()
   self:ClearImageDict()
 end
+
 return WBP_SurvivorProgressBar_C

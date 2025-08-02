@@ -1,10 +1,13 @@
 local ProficiencyLegandTaskItem = UnLua.Class()
+
 function ProficiencyLegandTaskItem:Construct()
   self.ButtonSelect.OnClicked:Add(self, self.OnSelectClick)
 end
+
 function ProficiencyLegandTaskItem:Destruct()
   self.ButtonSelect.OnClicked:Remove(self, self.OnSelectClick)
 end
+
 function ProficiencyLegandTaskItem:InitProfyLegandTaskItem(TaskId, GearLv, ParentView)
   print("ProficiencyLegandTaskItem:InitProfyLegandTaskItem", TaskId, GearLv)
   self.TaskId = TaskId
@@ -107,14 +110,17 @@ function ProficiencyLegandTaskItem:InitProfyLegandTaskItem(TaskId, GearLv, Paren
     HideOtherItem(self.HorizontalBoxAwardGotAward, #tbProfyTaskData[TaskId].rewardlist + 1)
   end
 end
+
 function ProficiencyLegandTaskItem:OnSelectClick()
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
     self.ParentView:SelectLegandTask(self.TaskId, true)
   end
 end
+
 function ProficiencyLegandTaskItem:OnSelectAwardClick()
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
     self.ParentView:SelectLegandTask(self.TaskId)
   end
 end
+
 return ProficiencyLegandTaskItem

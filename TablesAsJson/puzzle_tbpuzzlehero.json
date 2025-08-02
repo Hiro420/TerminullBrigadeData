@@ -1,82 +1,82 @@
 ﻿{
   "1080": {
     "BottomIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Icon_Cordia.Icon_Cordia",
+    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Cordia.Img_Cordia",
     "HeroId": 1080,
     "HeroIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Icon_Kdy_Puzzle.Icon_Kdy_Puzzle",
     "notes": "科迪亚",
-    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Cordia.Img_Cordia",
     "FXBottomIcon": "/Game/Rouge/UI/VX/Texture/T_UI_Puzzle_Cordia_glow.T_UI_Puzzle_Cordia_glow"
   },
   "1040": {
     "BottomIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Icon_Gloria.Icon_Gloria",
+    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Gloria.Img_Gloria",
     "HeroId": 1040,
     "HeroIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Icon_Gloria_Puzzle.Icon_Gloria_Puzzle",
     "notes": "妮娜",
-    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Gloria.Img_Gloria",
     "FXBottomIcon": "/Game/Rouge/UI/VX/Texture/T_UI_Puzzle_Gloria_glow.T_UI_Puzzle_Gloria_glow"
   },
   "1110": {
     "BottomIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Icon_Heynckes.Icon_Heynckes",
+    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Heynckes.Img_Heynckes",
     "HeroId": 1110,
     "HeroIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Icon_Hyks_Puzzle.Icon_Hyks_Puzzle",
     "notes": "海因克斯",
-    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Heynckes.Img_Heynckes",
     "FXBottomIcon": "/Game/Rouge/UI/VX/Texture/T_UI_puzzle_Heynckes_glow.T_UI_puzzle_Heynckes_glow"
   },
   "1100": {
     "BottomIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Icon_Heynckes.Icon_Heynckes",
+    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Heynckes.Img_Heynckes",
     "HeroId": 1100,
     "HeroIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Icon_Hyks_Puzzle.Icon_Hyks_Puzzle",
     "notes": "海因克斯",
-    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Heynckes.Img_Heynckes",
     "FXBottomIcon": "/Game/Rouge/UI/VX/Texture/T_UI_puzzle_Heynckes_glow.T_UI_puzzle_Heynckes_glow"
   },
   "1000": {
     "BottomIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Icon_Aurora.Icon_Aurora",
+    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Aurora.Img_Aurora",
     "HeroId": 1000,
     "HeroIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Icon_Rlmu_Puzzle.Icon_Rlmu_Puzzle",
     "notes": "曙光",
-    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Aurora.Img_Aurora",
     "FXBottomIcon": "/Game/Rouge/UI/VX/Texture/T_UI_Puzzle_Aurora_glow.T_UI_Puzzle_Aurora_glow"
   },
   "1060": {
     "BottomIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Icon_Heynckes.Icon_Heynckes",
+    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Heynckes.Img_Heynckes",
     "HeroId": 1060,
     "HeroIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Icon_Hyks_Puzzle.Icon_Hyks_Puzzle",
     "notes": "海因克斯",
-    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Heynckes.Img_Heynckes",
     "FXBottomIcon": "/Game/Rouge/UI/VX/Texture/T_UI_puzzle_Heynckes_glow.T_UI_puzzle_Heynckes_glow"
   },
   "1010": {
     "BottomIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Icon_Blade.Icon_Blade",
+    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Blade.Img_Blade",
     "HeroId": 1010,
     "HeroIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Icon_Qing_Puzzle.Icon_Qing_Puzzle",
     "notes": "影刃",
-    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Blade.Img_Blade",
     "FXBottomIcon": "/Game/Rouge/UI/VX/Texture/T_UI_Puzzle_Blade_glow.T_UI_Puzzle_Blade_glow"
   },
   "1020": {
     "BottomIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Icon_Talos.Icon_Talos",
+    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Talos.Img_Talos",
     "HeroId": 1020,
     "HeroIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Icon_Taros_Puzzle.Icon_Taros_Puzzle",
     "notes": "上校",
-    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Talos.Img_Talos",
     "FXBottomIcon": "/Game/Rouge/UI/VX/Texture/T_UI_Puzzle_Talos_glow.T_UI_Puzzle_Talos_glow"
   },
   "1090": {
     "BottomIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Icon_Yuli.Icon_Yuli",
+    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Icon_Yuli.Icon_Yuli",
     "HeroId": 1090,
     "HeroIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Icon_Yuri_Puzzle.Icon_Yuri_Puzzle",
     "notes": "尤莉",
-    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Icon_Yuli.Icon_Yuli",
     "FXBottomIcon": "/Game/Rouge/UI/VX/Texture/T_UI_Puzzle_Yuli_glow.T_UI_Puzzle_Yuli_glow"
   },
   "1030": {
     "BottomIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Icon_Rocket.Icon_Rocket",
+    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Rocket.Img_Rocket",
     "HeroId": 1030,
     "HeroIcon": "/Game/Rouge/UI/Atlas_DT/IconRolemain/Frames/Icon_Nakesi_Puzzle.Icon_Nakesi_Puzzle",
     "notes": "麦克斯",
-    "NameIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ImgPuzzle/Img_Rocket.Img_Rocket",
     "FXBottomIcon": "/Game/Rouge/UI/VX/Texture/T_UI_Puzzle_Rocket_glow.T_UI_Puzzle_Rocket_glow"
   }
 }

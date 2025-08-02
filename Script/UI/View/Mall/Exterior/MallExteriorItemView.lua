@@ -1,4 +1,7 @@
 local MallExteriorItemView = UnLua.Class()
+local LimitPurchaseDay = NSLOCTEXT("MallExteriorItemView", "LimitPurchaseDay", "\230\156\172\230\151\165\233\153\144\232\180\173")
+local OnSaleText = NSLOCTEXT("MallExteriorItemView", "OnSaleText", "\229\188\128\229\148\174")
+
 function MallExteriorItemView:OnListItemObjectSet(ListItemObj)
   if ListItemObj then
     self.ListItemObj = ListItemObj
@@ -18,7 +21,7 @@ function MallExteriorItemView:OnListItemObjectSet(ListItemObj)
       self.Text_Discount:SetText(math.floor((GoodsInfo.DiscountPrice - GoodsInfo.ConsumeNum) / GoodsInfo.ConsumeNum * 100) .. "%")
       if 5 == GoodsInfo.BuyLimitType then
         UpdateVisibility(self.Text_LimitPurchase, true)
-        self.Text_LimitPurchase:SetText("\230\156\172\230\151\165\233\153\144\232\180\173" .. ListItemObj.Amount .. "/" .. GoodsInfo.BuyLimit)
+        self.Text_LimitPurchase:SetText(LimitPurchaseDay() .. ListItemObj.Amount .. "/" .. GoodsInfo.BuyLimit)
       else
         UpdateVisibility(self.Text_LimitPurchase, false)
       end
@@ -37,7 +40,7 @@ function MallExteriorItemView:OnListItemObjectSet(ListItemObj)
       UpdateVisibility(self.Overlay_NotOnSale, SaleStatus == EnumSalesStatus.NotOnSale)
       if SaleStatus == EnumSalesStatus.NotOnSale then
         local current_date = os.date("*t", ListItemObj.StartTime)
-        self.WBP_LimitedTime.TextBlock:SetText(string.format("%02d-%02d", current_date.month, current_date.day) .. "\229\188\128\229\148\174")
+        self.WBP_LimitedTime.TextBlock:SetText(string.format("%02d-%02d", current_date.month, current_date.day) .. OnSaleText())
       end
       UpdateVisibility(self.Overlay_OffShelf, SaleStatus == EnumSalesStatus.OffShelf)
       local TBGeneral = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
@@ -49,12 +52,14 @@ function MallExteriorItemView:OnListItemObjectSet(ListItemObj)
   end
   UpdateVisibility(self.Overlay_Sel, UE.UUserListEntryLibrary.IsListItemSelected(self))
 end
+
 function MallExteriorItemView:BP_OnItemSelectionChanged(bSelected)
   UpdateVisibility(self.Overlay_Sel, bSelected)
   if bSelected then
     self.WBP_RedDotView:SetNum(0)
   end
 end
+
 function MallExteriorItemView:SetQuality(Quality)
   local Re, Info = GetRowData(DT.DT_ItemRarity, Quality)
   if Re then
@@ -62,4 +67,5 @@ function MallExteriorItemView:SetQuality(Quality)
     self.Image_Quality01:SetColorAndOpacity(Info.SkinRareBgColor)
   end
 end
+
 return MallExteriorItemView

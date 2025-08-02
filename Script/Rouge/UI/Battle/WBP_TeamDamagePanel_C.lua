@@ -1,9 +1,11 @@
 local climbtowerdata = require("UI.View.ClimbTower.ClimbTowerData")
 local WBP_TeamDamagePanel_C = UnLua.Class()
 local ShowTeamDamagePanelName = "ShowTeamDamagePanel"
+
 function WBP_TeamDamagePanel_C:Construct()
   self.DamageItemClass = UE.UClass.Load("/Game/Rouge/UI/Battle/WBP_SingleDamageItem.WBP_SingleDamageItem_C")
 end
+
 function WBP_TeamDamagePanel_C:FocusInput()
   self.Overridden.FocusInput(self)
   if not IsListeningForInputAction(self, self.EscActionName) then
@@ -25,6 +27,7 @@ function WBP_TeamDamagePanel_C:FocusInput()
   self.NavigateAttributeModifyIndex = -1
   self.NavigateGenericModifyIndex = -1
 end
+
 function WBP_TeamDamagePanel_C:UnfocusInput()
   self.Overridden.UnfocusInput(self)
   self:PopInputAction()
@@ -39,6 +42,7 @@ function WBP_TeamDamagePanel_C:UnfocusInput()
   SetInputIgnore(self:GetOwningPlayerPawn(), false)
   self:SetEnhancedInputActionBlocking(false)
 end
+
 function WBP_TeamDamagePanel_C:OnDisplay()
   print("WBP_TeamDamagePanel_C:OnDisplay")
   self.Overridden.OnDisplay(self)
@@ -90,6 +94,7 @@ function WBP_TeamDamagePanel_C:OnDisplay()
     })
   end
 end
+
 function WBP_TeamDamagePanel_C:ListenForLeftInputAction()
   local LevelSubSystem = UE.URGGameLevelSystem.GetInstance(GameInstance)
   local ModeId = 0
@@ -104,6 +109,7 @@ function WBP_TeamDamagePanel_C:ListenForLeftInputAction()
   UpdateVisibility(self.Btn_Select_01, false)
   UpdateVisibility(self.WBP_ClimbTower_DebuffPanle, false)
 end
+
 function WBP_TeamDamagePanel_C:ListenForRightInputAction()
   local LevelSubSystem = UE.URGGameLevelSystem.GetInstance(GameInstance)
   local ModeId = 0
@@ -118,6 +124,7 @@ function WBP_TeamDamagePanel_C:ListenForRightInputAction()
   UpdateVisibility(self.Btn_Select_01, true)
   UpdateVisibility(self.WBP_ClimbTower_DebuffPanle, true)
 end
+
 function WBP_TeamDamagePanel_C:ListenForEscInputAction()
   if UIMgr:IsShow(ViewID.UI_ReportView) then
     UIMgr:Hide(ViewID.UI_ReportView)
@@ -134,6 +141,7 @@ function WBP_TeamDamagePanel_C:ListenForEscInputAction()
   end
   UIManager:Switch(UE.UClass.Load("/Game/Rouge/UI/Battle/WBP_TeamDamagePanel.WBP_TeamDamagePanel_C"), false)
 end
+
 function WBP_TeamDamagePanel_C:OnUnDisplay()
   self.Overridden.OnUnDisplay(self, true)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TeamTimer) then
@@ -144,6 +152,7 @@ function WBP_TeamDamagePanel_C:OnUnDisplay()
     SingleItem:UnBindInputHandler()
   end
 end
+
 function WBP_TeamDamagePanel_C:RefreshDamageList()
   local RGTeamSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGTeamSubsystem:StaticClass())
   local PlayerUserIds = RGTeamSubsystem:GetPlayers()
@@ -215,6 +224,7 @@ function WBP_TeamDamagePanel_C:RefreshDamageList()
     self.WBP_ClimbTower_DebuffPanle:Init(ShowPlayerList, 3)
   end
 end
+
 function WBP_TeamDamagePanel_C:UpdateScrollSetTips(bIsShowTipsView, ScrollId, TargetItem, ScrollTipsOpenType, bIsNeedInit, UserId)
   print("WBP_TeamDamagePanel_C:UpdateScrollSetTips", bIsShowTipsView, ScrollId, TargetItem, ScrollTipsOpenType, bIsNeedInit)
   if ScrollId and ScrollId > 0 then
@@ -235,6 +245,7 @@ function WBP_TeamDamagePanel_C:UpdateScrollSetTips(bIsShowTipsView, ScrollId, Ta
     self.WBP_ScrollPickUpTipsView:Hide()
   end
 end
+
 function WBP_TeamDamagePanel_C:UpdateGenericModifyTips(bIsShow, Data, ModifyChooseTypeParam, Slot, TargetItem)
   if bIsShow then
     if ModifyChooseTypeParam == ModifyChooseType.GenericModify then
@@ -248,6 +259,7 @@ function WBP_TeamDamagePanel_C:UpdateGenericModifyTips(bIsShow, Data, ModifyChoo
     self.WBP_GenericModifyBagTips:Hide()
   end
 end
+
 function WBP_TeamDamagePanel_C:GetPlayerStateByUserId(UserId)
   local GS = UE.UGameplayStatics.GetGameState(self)
   if not GS then
@@ -260,6 +272,7 @@ function WBP_TeamDamagePanel_C:GetPlayerStateByUserId(UserId)
   end
   return nil
 end
+
 function WBP_TeamDamagePanel_C:GetUserIdByIndex(Index)
   local SingleDamageItemList = self.ItemList:GetAllChildren()
   for i, SingleDamageItem in iterator(SingleDamageItemList) do
@@ -269,6 +282,7 @@ function WBP_TeamDamagePanel_C:GetUserIdByIndex(Index)
   end
   return nil
 end
+
 function WBP_TeamDamagePanel_C:GetGenericModifyCountByIndex(Index)
   local SingleDamageItemList = self.ItemList:GetAllChildren()
   for i, SingleDamageItem in iterator(SingleDamageItemList) do
@@ -278,6 +292,7 @@ function WBP_TeamDamagePanel_C:GetGenericModifyCountByIndex(Index)
   end
   return nil
 end
+
 function WBP_TeamDamagePanel_C:GetNextUserIndexByIndex(UserIndex, Direction)
   local UserCount = self.ItemList:GetChildrenCount()
   local NextUserIndex
@@ -292,6 +307,7 @@ function WBP_TeamDamagePanel_C:GetNextUserIndexByIndex(UserIndex, Direction)
     return NextUserIndex
   end
 end
+
 function WBP_TeamDamagePanel_C:GetNextGenericModifyByIndex(UserIndex, GenericModifyIndex, Direction)
   local SingleDamageItemList = self.ItemList:GetAllChildren()
   local GenericModifyCount = #SingleDamageItemList:GetRef(UserIndex).GenericModifies
@@ -320,6 +336,7 @@ function WBP_TeamDamagePanel_C:GetNextGenericModifyByIndex(UserIndex, GenericMod
   end
   return nil
 end
+
 function WBP_TeamDamagePanel_C:BindOnNavigation(Type)
   if Type == UE.EUINavigation.Left then
     if -1 ~= self.NavigateAttributeModifyIndex then
@@ -380,6 +397,7 @@ function WBP_TeamDamagePanel_C:BindOnNavigation(Type)
   EventSystem.Invoke(EventDef.TeamDamage.OnUpdateHoverStatus, self:GetUserIdByIndex(self.NavigateUserIndex), self.NavigateAttributeModifyIndex, self.NavigateGenericModifyIndex)
   print("WBP_TeamDamagePanel_C:BindOnNavigation", self.NavigateUserIndex, self.NavigateAttributeModifyIndex, self.NavigateGenericModifyIndex)
 end
+
 function WBP_TeamDamagePanel_C:InitFocusOnPos()
   local TargetFocusItem = self.ItemList:GetChildAt(1).WrapBoxScroll:GetChildAt(0)
   if TargetFocusItem then
@@ -390,15 +408,18 @@ function WBP_TeamDamagePanel_C:InitFocusOnPos()
   self.NavigateGenericModifyIndex = -1
   self.bIsFocusEsc = false
 end
+
 function WBP_TeamDamagePanel_C:Destruct()
   self:UnfocusInput()
 end
+
 function WBP_TeamDamagePanel_C:OnRepeorViewClosed()
   local DefaultFocusWidget = self:GetDefaultFocusWidget()
   if DefaultFocusWidget then
     DefaultFocusWidget:SetFocus()
   end
 end
+
 function WBP_TeamDamagePanel_C:GetDefaultFocusWidget()
   if UIMgr:IsShow(ViewID.UI_ReportView) then
     return nil
@@ -410,6 +431,7 @@ function WBP_TeamDamagePanel_C:GetDefaultFocusWidget()
   end
   return nil
 end
+
 function WBP_TeamDamagePanel_C:GetLeftDamagePanel(CurrentPanelIndex)
   local ItemCount = #self.VisibleItemWigetList
   local NextPanelIndex = CurrentPanelIndex
@@ -421,6 +443,7 @@ function WBP_TeamDamagePanel_C:GetLeftDamagePanel(CurrentPanelIndex)
   local NextWidget = self.VisibleItemWigetList[NextPanelIndex]
   return NextWidget
 end
+
 function WBP_TeamDamagePanel_C:GetRightDamagePanel(CurrentPanelIndex)
   local ItemCount = #self.VisibleItemWigetList
   local NextPanelIndex = CurrentPanelIndex
@@ -432,20 +455,25 @@ function WBP_TeamDamagePanel_C:GetRightDamagePanel(CurrentPanelIndex)
   local NextWidget = self.VisibleItemWigetList[NextPanelIndex]
   return NextWidget
 end
+
 function WBP_TeamDamagePanel_C:GetFunctionBtnLeft(PanelIndex, ItemIndex)
   local NextWidget = self:GetLeftDamagePanel(PanelIndex)
   return NextWidget:GetFunctionBtnLeft(ItemIndex, true)
 end
+
 function WBP_TeamDamagePanel_C:GetFunctionBtnRight(PanelIndex, ItemIndex)
   local NextWidget = self:GetRightDamagePanel(PanelIndex)
   return NextWidget:GetFunctionBtnRight(ItemIndex, true)
 end
+
 function WBP_TeamDamagePanel_C:GetModifyItemLeft(PanelIndex, ItemIndex)
   local NextWidget = self:GetLeftDamagePanel(PanelIndex)
   return NextWidget:GetModifyItemLeft(ItemIndex, true)
 end
+
 function WBP_TeamDamagePanel_C:GetModifyItemRight(PanelIndex, ItemIndex)
   local NextWidget = self:GetRightDamagePanel(PanelIndex)
   return NextWidget:GetModifyItemRight(ItemIndex, true)
 end
+
 return WBP_TeamDamagePanel_C

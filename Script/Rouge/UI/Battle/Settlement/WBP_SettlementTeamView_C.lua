@@ -1,9 +1,11 @@
 local SettlementConfig = require("GameConfig.Settlement.SettlementConfig")
 local WBP_SettlementTeamView_C = UnLua.Class()
 local FinisCountDown = 9
+
 function WBP_SettlementTeamView_C:Construct()
   self.DamageItemClass = UE.UClass.Load("/Game/Rouge/UI/Battle/WBP_SingleDamageItem.WBP_SingleDamageItem_C")
 end
+
 function WBP_SettlementTeamView_C:InitSettlementTeamView(ParentView)
   print("WBP_SettlementTeamView_C:InitSettlementTeamView")
   UpdateVisibility(self, true)
@@ -25,6 +27,7 @@ function WBP_SettlementTeamView_C:InitSettlementTeamView(ParentView)
     self.StateCtrl_Result:ChangeStatus(ESettleStatus.Failed)
   end
 end
+
 function WBP_SettlementTeamView_C:PlaySeq(SoftObjPath)
   local LevelSequenceAsset = UE.URGBlueprintLibrary.TryLoadSoftPath(SoftObjPath)
   if not LevelSequenceAsset then
@@ -39,6 +42,7 @@ function WBP_SettlementTeamView_C:PlaySeq(SoftObjPath)
   end
   self.SequencePlayer:Play()
 end
+
 function WBP_SettlementTeamView_C:UpdateView()
   local Diff = LogicSettlement:GetClearanceDifficulty()
   self.RGTextDiffculty:SetText(Diff)
@@ -149,16 +153,20 @@ function WBP_SettlementTeamView_C:UpdateView()
   end
   self.ParentView:ShowOrHideRoleLight(false)
 end
+
 function WBP_SettlementTeamView_C:ShowSettlementPlayerInfoView(PlayerId)
   self.ParentView:ShowSettlementPlayerInfoView(PlayerId)
 end
+
 function WBP_SettlementTeamView_C:ListenForEscInputAction()
   self.SkipWidget:Reset()
 end
+
 function WBP_SettlementTeamView_C:FadeOut()
   self:StopAnimation(self.Ani_in2)
   self:PlayAnimation(self.Ani_out)
 end
+
 function WBP_SettlementTeamView_C:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     if UE.RGUtil.IsUObjectValid(self.SequencePlayer) and not self.SequencePlayer:IsPaused() then
@@ -167,14 +175,17 @@ function WBP_SettlementTeamView_C:OnAnimationFinished(Animation)
     UpdateVisibility(self, false)
   end
 end
+
 function WBP_SettlementTeamView_C:UnInit()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TeamTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.TeamTimer)
   end
 end
+
 function WBP_SettlementTeamView_C:Destruct()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.delayTimerHandle) then
     UE.UKismetSystemLibrary.K2_ClearTimerHandle(self, self.delayTimerHandle)
   end
 end
+
 return WBP_SettlementTeamView_C

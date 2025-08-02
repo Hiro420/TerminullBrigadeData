@@ -4,3839 +4,3839 @@
       "key": -1,
       "value": 2
     },
-    "ID": 510,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_510",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_510"
+    },
+    "ID": 510
   },
   "1": {
     "position": {
       "key": -3,
       "value": 0
     },
-    "ID": 1,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_1",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_1"
+    },
+    "ID": 1
   },
   "2": {
     "position": {
       "key": -3,
       "value": 1
     },
-    "ID": 2,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_2",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_2"
+    },
+    "ID": 2
   },
   "3": {
     "position": {
       "key": -3,
       "value": 2
     },
-    "ID": 3,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_3",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_3"
+    },
+    "ID": 3
   },
   "4": {
     "position": {
       "key": -3,
       "value": 3
     },
-    "ID": 4,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_4",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_4"
+    },
+    "ID": 4
   },
   "5": {
     "position": {
       "key": -2,
       "value": -1
     },
-    "ID": 5,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_5",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_5"
+    },
+    "ID": 5
   },
   "6": {
     "position": {
       "key": -2,
       "value": 0
     },
-    "ID": 6,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_6",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_6"
+    },
+    "ID": 6
   },
   "7": {
     "position": {
       "key": -2,
       "value": 1
     },
-    "ID": 7,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_7",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_7"
+    },
+    "ID": 7
   },
   "8": {
     "position": {
       "key": -2,
       "value": 2
     },
-    "ID": 8,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_8",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_8"
+    },
+    "ID": 8
   },
   "9": {
     "position": {
       "key": -1,
       "value": -2
     },
-    "ID": 9,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_9",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_9"
+    },
+    "ID": 9
   },
   "10": {
     "position": {
       "key": -1,
       "value": -1
     },
-    "ID": 10,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_10",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_10"
+    },
+    "ID": 10
   },
   "11": {
     "position": {
       "key": -1,
       "value": 0
     },
-    "ID": 11,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_11",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_11"
+    },
+    "ID": 11
   },
   "12": {
     "position": {
       "key": 0,
       "value": -2
     },
-    "ID": 12,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_12",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_12"
+    },
+    "ID": 12
   },
   "13": {
     "position": {
       "key": 0,
       "value": -1
     },
-    "ID": 13,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_13",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_13"
+    },
+    "ID": 13
   },
   "14": {
     "position": {
       "key": 1,
       "value": -3
     },
-    "ID": 14,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_14",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_14"
+    },
+    "ID": 14
   },
   "15": {
     "position": {
       "key": 1,
       "value": -2
     },
-    "ID": 15,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_15",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_15"
+    },
+    "ID": 15
   },
   "16": {
     "position": {
       "key": 1,
       "value": -1
     },
-    "ID": 16,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_16",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_16"
+    },
+    "ID": 16
   },
   "17": {
     "position": {
       "key": 2,
       "value": -3
     },
-    "ID": 17,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_17",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_17"
+    },
+    "ID": 17
   },
   "18": {
     "position": {
       "key": 2,
       "value": -2
     },
-    "ID": 18,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_18",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_18"
+    },
+    "ID": 18
   },
   "19": {
     "position": {
       "key": 2,
       "value": -1
     },
-    "ID": 19,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_19",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_19"
+    },
+    "ID": 19
   },
   "20": {
     "position": {
       "key": 2,
       "value": 0
     },
-    "ID": 20,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_20",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_20"
+    },
+    "ID": 20
   },
   "21": {
     "position": {
       "key": 3,
       "value": -3
     },
-    "ID": 21,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_21",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_21"
+    },
+    "ID": 21
   },
   "22": {
     "position": {
       "key": 3,
       "value": -2
     },
-    "ID": 22,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_22",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_22"
+    },
+    "ID": 22
   },
   "23": {
     "position": {
       "key": 3,
       "value": -1
     },
-    "ID": 23,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_23",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_23"
+    },
+    "ID": 23
   },
   "24": {
     "position": {
       "key": 3,
       "value": 0
     },
-    "ID": 24,
-    "Icon": "",
     "heroID": 1000,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_24",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_24"
+    },
+    "ID": 24
   },
   "801": {
     "position": {
       "key": -3,
       "value": 0
     },
-    "ID": 801,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_801",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_801"
+    },
+    "ID": 801
   },
   "802": {
     "position": {
       "key": -3,
       "value": 1
     },
-    "ID": 802,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_802",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_802"
+    },
+    "ID": 802
   },
   "803": {
     "position": {
       "key": -3,
       "value": 2
     },
-    "ID": 803,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_803",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_803"
+    },
+    "ID": 803
   },
   "804": {
     "position": {
       "key": -3,
       "value": 3
     },
-    "ID": 804,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_804",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_804"
+    },
+    "ID": 804
   },
   "805": {
     "position": {
       "key": -2,
       "value": -1
     },
-    "ID": 805,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_805",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_805"
+    },
+    "ID": 805
   },
   "806": {
     "position": {
       "key": -2,
       "value": 0
     },
-    "ID": 806,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_806",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_806"
+    },
+    "ID": 806
   },
   "807": {
     "position": {
       "key": -2,
       "value": 1
     },
-    "ID": 807,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_807",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_807"
+    },
+    "ID": 807
   },
   "808": {
     "position": {
       "key": -2,
       "value": 2
     },
-    "ID": 808,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_808",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_808"
+    },
+    "ID": 808
   },
   "809": {
     "position": {
       "key": -1,
       "value": -2
     },
-    "ID": 809,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_809",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_809"
+    },
+    "ID": 809
   },
   "810": {
     "position": {
       "key": -1,
       "value": -1
     },
-    "ID": 810,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_810",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_810"
+    },
+    "ID": 810
   },
   "301": {
     "position": {
       "key": -4,
       "value": 0
     },
-    "ID": 301,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_301",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_301"
+    },
+    "ID": 301
   },
   "302": {
     "position": {
       "key": -4,
       "value": 1
     },
-    "ID": 302,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_302",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_302"
+    },
+    "ID": 302
   },
   "303": {
     "position": {
       "key": -3,
       "value": 0
     },
-    "ID": 303,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_303",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_303"
+    },
+    "ID": 303
   },
   "304": {
     "position": {
       "key": -3,
       "value": 1
     },
-    "ID": 304,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_304",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_304"
+    },
+    "ID": 304
   },
   "305": {
     "position": {
       "key": -2,
       "value": 0
     },
-    "ID": 305,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_305",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_305"
+    },
+    "ID": 305
   },
   "306": {
     "position": {
       "key": -2,
       "value": 1
     },
-    "ID": 306,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_306",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_306"
+    },
+    "ID": 306
   },
   "307": {
     "position": {
       "key": -1,
       "value": 0
     },
-    "ID": 307,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_307",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_307"
+    },
+    "ID": 307
   },
   "308": {
     "position": {
       "key": -1,
       "value": 1
     },
-    "ID": 308,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_308",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_308"
+    },
+    "ID": 308
   },
   "309": {
     "position": {
       "key": -1,
       "value": 2
     },
-    "ID": 309,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_309",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_309"
+    },
+    "ID": 309
   },
   "310": {
     "position": {
       "key": -1,
       "value": 3
     },
-    "ID": 310,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_310",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_310"
+    },
+    "ID": 310
   },
   "311": {
     "position": {
       "key": 0,
       "value": 0
     },
-    "ID": 311,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_311",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_311"
+    },
+    "ID": 311
   },
   "312": {
     "position": {
       "key": 0,
       "value": 1
     },
-    "ID": 312,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_312",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_312"
+    },
+    "ID": 312
   },
   "313": {
     "position": {
       "key": 0,
       "value": 2
     },
-    "ID": 313,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_313",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_313"
+    },
+    "ID": 313
   },
   "314": {
     "position": {
       "key": 0,
       "value": 3
     },
-    "ID": 314,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_314",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_314"
+    },
+    "ID": 314
   },
   "315": {
     "position": {
       "key": 1,
       "value": -1
     },
-    "ID": 315,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_315",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_315"
+    },
+    "ID": 315
   },
   "316": {
     "position": {
       "key": 1,
       "value": 0
     },
-    "ID": 316,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_316",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_316"
+    },
+    "ID": 316
   },
   "317": {
     "position": {
       "key": 1,
       "value": 1
     },
-    "ID": 317,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_317",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_317"
+    },
+    "ID": 317
   },
   "318": {
     "position": {
       "key": 1,
       "value": 2
     },
-    "ID": 318,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_318",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_318"
+    },
+    "ID": 318
   },
   "319": {
     "position": {
       "key": 2,
       "value": -2
     },
-    "ID": 319,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_319",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_319"
+    },
+    "ID": 319
   },
   "320": {
     "position": {
       "key": 2,
       "value": -1
     },
-    "ID": 320,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_320",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_320"
+    },
+    "ID": 320
   },
   "321": {
     "position": {
       "key": 3,
       "value": -3
     },
-    "ID": 321,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_321",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_321"
+    },
+    "ID": 321
   },
   "322": {
     "position": {
       "key": 3,
       "value": -2
     },
-    "ID": 322,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_322",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_322"
+    },
+    "ID": 322
   },
   "323": {
     "position": {
       "key": 4,
       "value": -4
     },
-    "ID": 323,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_323",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_323"
+    },
+    "ID": 323
   },
   "324": {
     "position": {
       "key": 4,
       "value": -3
     },
-    "ID": 324,
-    "Icon": "",
     "heroID": 1090,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_324",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_324"
+    },
+    "ID": 324
   },
   "924": {
     "position": {
       "key": 3,
       "value": 0
     },
-    "ID": 924,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_924",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_924"
+    },
+    "ID": 924
   },
   "923": {
     "position": {
       "key": 3,
       "value": -1
     },
-    "ID": 923,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_923",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_923"
+    },
+    "ID": 923
   },
   "922": {
     "position": {
       "key": 3,
       "value": -2
     },
-    "ID": 922,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_922",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_922"
+    },
+    "ID": 922
   },
   "921": {
     "position": {
       "key": 3,
       "value": -3
     },
-    "ID": 921,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_921",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_921"
+    },
+    "ID": 921
   },
   "920": {
     "position": {
       "key": 2,
       "value": 0
     },
-    "ID": 920,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_920",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_920"
+    },
+    "ID": 920
   },
   "919": {
     "position": {
       "key": 2,
       "value": -1
     },
-    "ID": 919,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_919",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_919"
+    },
+    "ID": 919
   },
   "918": {
     "position": {
       "key": 2,
       "value": -2
     },
-    "ID": 918,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_918",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_918"
+    },
+    "ID": 918
   },
   "917": {
     "position": {
       "key": 2,
       "value": -3
     },
-    "ID": 917,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_917",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_917"
+    },
+    "ID": 917
   },
   "916": {
     "position": {
       "key": 1,
       "value": -1
     },
-    "ID": 916,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_916",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_916"
+    },
+    "ID": 916
   },
   "915": {
     "position": {
       "key": 1,
       "value": -2
     },
-    "ID": 915,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_915",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_915"
+    },
+    "ID": 915
   },
   "914": {
     "position": {
       "key": 1,
       "value": -3
     },
-    "ID": 914,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_914",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_914"
+    },
+    "ID": 914
   },
   "913": {
     "position": {
       "key": 0,
       "value": -1
     },
-    "ID": 913,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_913",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_913"
+    },
+    "ID": 913
   },
   "912": {
     "position": {
       "key": 0,
       "value": -2
     },
-    "ID": 912,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_912",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_912"
+    },
+    "ID": 912
   },
   "911": {
     "position": {
       "key": -1,
       "value": 0
     },
-    "ID": 911,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_911",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_911"
+    },
+    "ID": 911
   },
   "812": {
     "position": {
       "key": 0,
       "value": -2
     },
-    "ID": 812,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_812",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_812"
+    },
+    "ID": 812
   },
   "813": {
     "position": {
       "key": 0,
       "value": -1
     },
-    "ID": 813,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_813",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_813"
+    },
+    "ID": 813
   },
   "601": {
     "position": {
       "key": -4,
       "value": 0
     },
-    "ID": 601,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_601",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_601"
+    },
+    "ID": 601
   },
   "602": {
     "position": {
       "key": -3,
       "value": 0
     },
-    "ID": 602,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_602",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_602"
+    },
+    "ID": 602
   },
   "603": {
     "position": {
       "key": -2,
       "value": 0
     },
-    "ID": 603,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_603",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_603"
+    },
+    "ID": 603
   },
   "604": {
     "position": {
       "key": -2,
       "value": 1
     },
-    "ID": 604,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_604",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_604"
+    },
+    "ID": 604
   },
   "605": {
     "position": {
       "key": -2,
       "value": 2
     },
-    "ID": 605,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_605",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_605"
+    },
+    "ID": 605
   },
   "606": {
     "position": {
       "key": -1,
       "value": -1
     },
-    "ID": 606,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_606",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_606"
+    },
+    "ID": 606
   },
   "607": {
     "position": {
       "key": -1,
       "value": 0
     },
-    "ID": 607,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_607",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_607"
+    },
+    "ID": 607
   },
   "608": {
     "position": {
       "key": -1,
       "value": 1
     },
-    "ID": 608,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_608",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_608"
+    },
+    "ID": 608
   },
   "609": {
     "position": {
       "key": 0,
       "value": -2
     },
-    "ID": 609,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_609",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_609"
+    },
+    "ID": 609
   },
   "610": {
     "position": {
       "key": 0,
       "value": -1
     },
-    "ID": 610,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_610",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_610"
+    },
+    "ID": 610
   },
   "101": {
     "position": {
       "key": -2,
       "value": 1
     },
-    "ID": 101,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_101",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_101"
+    },
+    "ID": 101
   },
   "102": {
     "position": {
       "key": -2,
       "value": 2
     },
-    "ID": 102,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_102",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_102"
+    },
+    "ID": 102
   },
   "103": {
     "position": {
       "key": -2,
       "value": 3
     },
-    "ID": 103,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_103",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_103"
+    },
+    "ID": 103
   },
   "104": {
     "position": {
       "key": -1,
       "value": 0
     },
-    "ID": 104,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_104",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_104"
+    },
+    "ID": 104
   },
   "105": {
     "position": {
       "key": -1,
       "value": 1
     },
-    "ID": 105,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_105",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_105"
+    },
+    "ID": 105
   },
   "106": {
     "position": {
       "key": -1,
       "value": 2
     },
-    "ID": 106,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_106",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_106"
+    },
+    "ID": 106
   },
   "107": {
     "position": {
       "key": -1,
       "value": 3
     },
-    "ID": 107,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_107",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_107"
+    },
+    "ID": 107
   },
   "108": {
     "position": {
       "key": 0,
       "value": -1
     },
-    "ID": 108,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_108",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_108"
+    },
+    "ID": 108
   },
   "109": {
     "position": {
       "key": 0,
       "value": 0
     },
-    "ID": 109,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_109",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_109"
+    },
+    "ID": 109
   },
   "110": {
     "position": {
       "key": 0,
       "value": 1
     },
-    "ID": 110,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_110",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_110"
+    },
+    "ID": 110
   },
   "111": {
     "position": {
       "key": 0,
       "value": 2
     },
-    "ID": 111,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_111",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_111"
+    },
+    "ID": 111
   },
   "112": {
     "position": {
       "key": 0,
       "value": 3
     },
-    "ID": 112,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_112",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_112"
+    },
+    "ID": 112
   },
   "113": {
     "position": {
       "key": 1,
       "value": -3
     },
-    "ID": 113,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_113",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_113"
+    },
+    "ID": 113
   },
   "114": {
     "position": {
       "key": 1,
       "value": -2
     },
-    "ID": 114,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_114",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_114"
+    },
+    "ID": 114
   },
   "115": {
     "position": {
       "key": 1,
       "value": -1
     },
-    "ID": 115,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_115",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_115"
+    },
+    "ID": 115
   },
   "116": {
     "position": {
       "key": 1,
       "value": 0
     },
-    "ID": 116,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_116",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_116"
+    },
+    "ID": 116
   },
   "117": {
     "position": {
       "key": 1,
       "value": 1
     },
-    "ID": 117,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_117",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_117"
+    },
+    "ID": 117
   },
   "118": {
     "position": {
       "key": 1,
       "value": 2
     },
-    "ID": 118,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_118",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_118"
+    },
+    "ID": 118
   },
   "119": {
     "position": {
       "key": 2,
       "value": -4
     },
-    "ID": 119,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_119",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_119"
+    },
+    "ID": 119
   },
   "120": {
     "position": {
       "key": 2,
       "value": -3
     },
-    "ID": 120,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_120",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_120"
+    },
+    "ID": 120
   },
   "121": {
     "position": {
       "key": 2,
       "value": -1
     },
-    "ID": 121,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_121",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_121"
+    },
+    "ID": 121
   },
   "122": {
     "position": {
       "key": 2,
       "value": 0
     },
-    "ID": 122,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_122",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_122"
+    },
+    "ID": 122
   },
   "123": {
     "position": {
       "key": 2,
       "value": 1
     },
-    "ID": 123,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_123",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_123"
+    },
+    "ID": 123
   },
   "124": {
     "position": {
       "key": 3,
       "value": -4
     },
-    "ID": 124,
-    "Icon": "",
     "heroID": 1030,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_124",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_124"
+    },
+    "ID": 124
   },
   "814": {
     "position": {
       "key": 1,
       "value": -3
     },
-    "ID": 814,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_814",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_814"
+    },
+    "ID": 814
   },
   "815": {
     "position": {
       "key": 1,
       "value": -2
     },
-    "ID": 815,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_815",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_815"
+    },
+    "ID": 815
   },
   "816": {
     "position": {
       "key": 1,
       "value": -1
     },
-    "ID": 816,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_816",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_816"
+    },
+    "ID": 816
   },
   "817": {
     "position": {
       "key": 2,
       "value": -3
     },
-    "ID": 817,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_817",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_817"
+    },
+    "ID": 817
   },
   "818": {
     "position": {
       "key": 2,
       "value": -2
     },
-    "ID": 818,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_818",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_818"
+    },
+    "ID": 818
   },
   "819": {
     "position": {
       "key": 2,
       "value": -1
     },
-    "ID": 819,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_819",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_819"
+    },
+    "ID": 819
   },
   "820": {
     "position": {
       "key": 2,
       "value": 0
     },
-    "ID": 820,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_820",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_820"
+    },
+    "ID": 820
   },
   "821": {
     "position": {
       "key": 3,
       "value": -3
     },
-    "ID": 821,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_821",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_821"
+    },
+    "ID": 821
   },
   "824": {
     "position": {
       "key": 3,
       "value": 0
     },
-    "ID": 824,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_824",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_824"
+    },
+    "ID": 824
   },
   "823": {
     "position": {
       "key": 3,
       "value": -1
     },
-    "ID": 823,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_823",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_823"
+    },
+    "ID": 823
   },
   "822": {
     "position": {
       "key": 3,
       "value": -2
     },
-    "ID": 822,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_822",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_822"
+    },
+    "ID": 822
   },
   "901": {
     "position": {
       "key": -3,
       "value": 0
     },
-    "ID": 901,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_901",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_901"
+    },
+    "ID": 901
   },
   "902": {
     "position": {
       "key": -3,
       "value": 1
     },
-    "ID": 902,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_902",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_902"
+    },
+    "ID": 902
   },
   "903": {
     "position": {
       "key": -3,
       "value": 2
     },
-    "ID": 903,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_903",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_903"
+    },
+    "ID": 903
   },
   "904": {
     "position": {
       "key": -3,
       "value": 3
     },
-    "ID": 904,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_904",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_904"
+    },
+    "ID": 904
   },
   "905": {
     "position": {
       "key": -2,
       "value": -1
     },
-    "ID": 905,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_905",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_905"
+    },
+    "ID": 905
   },
   "906": {
     "position": {
       "key": -2,
       "value": 0
     },
-    "ID": 906,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_906",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_906"
+    },
+    "ID": 906
   },
   "907": {
     "position": {
       "key": -2,
       "value": 1
     },
-    "ID": 907,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_907",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_907"
+    },
+    "ID": 907
   },
   "908": {
     "position": {
       "key": -2,
       "value": 2
     },
-    "ID": 908,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_908",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_908"
+    },
+    "ID": 908
   },
   "909": {
     "position": {
       "key": -1,
       "value": -2
     },
-    "ID": 909,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_909",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_909"
+    },
+    "ID": 909
   },
   "910": {
     "position": {
       "key": -1,
       "value": -1
     },
-    "ID": 910,
-    "Icon": "",
     "heroID": 1110,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_910",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_910"
+    },
+    "ID": 910
   },
   "401": {
     "position": {
       "key": -2,
       "value": -1
     },
-    "ID": 401,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_401",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_401"
+    },
+    "ID": 401
   },
   "402": {
     "position": {
       "key": -2,
       "value": 0
     },
-    "ID": 402,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_402",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_402"
+    },
+    "ID": 402
   },
   "403": {
     "position": {
       "key": -2,
       "value": 1
     },
-    "ID": 403,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_403",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_403"
+    },
+    "ID": 403
   },
   "404": {
     "position": {
       "key": -2,
       "value": 2
     },
-    "ID": 404,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_404",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_404"
+    },
+    "ID": 404
   },
   "405": {
     "position": {
       "key": -2,
       "value": 3
     },
-    "ID": 405,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_405",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_405"
+    },
+    "ID": 405
   },
   "406": {
     "position": {
       "key": -1,
       "value": -1
     },
-    "ID": 406,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_406",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_406"
+    },
+    "ID": 406
   },
   "407": {
     "position": {
       "key": -1,
       "value": 0
     },
-    "ID": 407,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_407",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_407"
+    },
+    "ID": 407
   },
   "408": {
     "position": {
       "key": -1,
       "value": 1
     },
-    "ID": 408,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_408",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_408"
+    },
+    "ID": 408
   },
   "409": {
     "position": {
       "key": -1,
       "value": 2
     },
-    "ID": 409,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_409",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_409"
+    },
+    "ID": 409
   },
   "410": {
     "position": {
       "key": -1,
       "value": 3
     },
-    "ID": 410,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_410",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_410"
+    },
+    "ID": 410
   },
   "411": {
     "position": {
       "key": 0,
       "value": -2
     },
-    "ID": 411,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_411",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_411"
+    },
+    "ID": 411
   },
   "412": {
     "position": {
       "key": 0,
       "value": -1
     },
-    "ID": 412,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_412",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_412"
+    },
+    "ID": 412
   },
   "413": {
     "position": {
       "key": 0,
       "value": 1
     },
-    "ID": 413,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_413",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_413"
+    },
+    "ID": 413
   },
   "414": {
     "position": {
       "key": 0,
       "value": 2
     },
-    "ID": 414,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_414",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_414"
+    },
+    "ID": 414
   },
   "415": {
     "position": {
       "key": 1,
       "value": -2
     },
-    "ID": 415,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_415",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_415"
+    },
+    "ID": 415
   },
   "416": {
     "position": {
       "key": 1,
       "value": -1
     },
-    "ID": 416,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_416",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_416"
+    },
+    "ID": 416
   },
   "417": {
     "position": {
       "key": 1,
       "value": 0
     },
-    "ID": 417,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_417",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_417"
+    },
+    "ID": 417
   },
   "418": {
     "position": {
       "key": 1,
       "value": 1
     },
-    "ID": 418,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_418",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_418"
+    },
+    "ID": 418
   },
   "419": {
     "position": {
       "key": 1,
       "value": 2
     },
-    "ID": 419,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_419",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_419"
+    },
+    "ID": 419
   },
   "420": {
     "position": {
       "key": 2,
       "value": -3
     },
-    "ID": 420,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_420",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_420"
+    },
+    "ID": 420
   },
   "421": {
     "position": {
       "key": 2,
       "value": -2
     },
-    "ID": 421,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_421",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_421"
+    },
+    "ID": 421
   },
   "422": {
     "position": {
       "key": 2,
       "value": -1
     },
-    "ID": 422,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_422",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_422"
+    },
+    "ID": 422
   },
   "423": {
     "position": {
       "key": 2,
       "value": 0
     },
-    "ID": 423,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_423",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_423"
+    },
+    "ID": 423
   },
   "424": {
     "position": {
       "key": 2,
       "value": 1
     },
-    "ID": 424,
-    "Icon": "",
     "heroID": 1020,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_424",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_424"
+    },
+    "ID": 424
   },
   "811": {
     "position": {
       "key": -1,
       "value": 0
     },
-    "ID": 811,
-    "Icon": "",
     "heroID": 1100,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_811",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_811"
+    },
+    "ID": 811
   },
   "724": {
     "position": {
       "key": 4,
       "value": -2
     },
-    "ID": 724,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_724",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_724"
+    },
+    "ID": 724
   },
   "723": {
     "position": {
       "key": 4,
       "value": -3
     },
-    "ID": 723,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_723",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_723"
+    },
+    "ID": 723
   },
   "722": {
     "position": {
       "key": 4,
       "value": -4
     },
-    "ID": 722,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_722",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_722"
+    },
+    "ID": 722
   },
   "721": {
     "position": {
       "key": 3,
       "value": -2
     },
-    "ID": 721,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_721",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_721"
+    },
+    "ID": 721
   },
   "720": {
     "position": {
       "key": 3,
       "value": -3
     },
-    "ID": 720,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_720",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_720"
+    },
+    "ID": 720
   },
   "719": {
     "position": {
       "key": 2,
       "value": -1
     },
-    "ID": 719,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_719",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_719"
+    },
+    "ID": 719
   },
   "718": {
     "position": {
       "key": 2,
       "value": -2
     },
-    "ID": 718,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_718",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_718"
+    },
+    "ID": 718
   },
   "717": {
     "position": {
       "key": 2,
       "value": -3
     },
-    "ID": 717,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_717",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_717"
+    },
+    "ID": 717
   },
   "716": {
     "position": {
       "key": 1,
       "value": -1
     },
-    "ID": 716,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_716",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_716"
+    },
+    "ID": 716
   },
   "715": {
     "position": {
       "key": 1,
       "value": -2
     },
-    "ID": 715,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_715",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_715"
+    },
+    "ID": 715
   },
   "714": {
     "position": {
       "key": 0,
       "value": 0
     },
-    "ID": 714,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_714",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_714"
+    },
+    "ID": 714
   },
   "713": {
     "position": {
       "key": 0,
       "value": -1
     },
-    "ID": 713,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_713",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_713"
+    },
+    "ID": 713
   },
   "712": {
     "position": {
       "key": 0,
       "value": -2
     },
-    "ID": 712,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_712",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_712"
+    },
+    "ID": 712
   },
   "711": {
     "position": {
       "key": -1,
       "value": 1
     },
-    "ID": 711,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_711",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_711"
+    },
+    "ID": 711
   },
   "619": {
     "position": {
       "key": 3,
       "value": -1
     },
-    "ID": 619,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_619",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_619"
+    },
+    "ID": 619
   },
   "620": {
     "position": {
       "key": 3,
       "value": 0
     },
-    "ID": 620,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_620",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_620"
+    },
+    "ID": 620
   },
   "621": {
     "position": {
       "key": 3,
       "value": 1
     },
-    "ID": 621,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_621",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_621"
+    },
+    "ID": 621
   },
   "622": {
     "position": {
       "key": 4,
       "value": -1
     },
-    "ID": 622,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_622",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_622"
+    },
+    "ID": 622
   },
   "623": {
     "position": {
       "key": 4,
       "value": 0
     },
-    "ID": 623,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_623",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_623"
+    },
+    "ID": 623
   },
   "624": {
     "position": {
       "key": 5,
       "value": -1
     },
-    "ID": 624,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_624",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_624"
+    },
+    "ID": 624
   },
   "701": {
     "position": {
       "key": -3,
       "value": 0
     },
-    "ID": 701,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_701",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_701"
+    },
+    "ID": 701
   },
   "702": {
     "position": {
       "key": -3,
       "value": 2
     },
-    "ID": 702,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_702",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_702"
+    },
+    "ID": 702
   },
   "703": {
     "position": {
       "key": -3,
       "value": 3
     },
-    "ID": 703,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_703",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_703"
+    },
+    "ID": 703
   },
   "704": {
     "position": {
       "key": -2,
       "value": -1
     },
-    "ID": 704,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_704",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_704"
+    },
+    "ID": 704
   },
   "705": {
     "position": {
       "key": -2,
       "value": 0
     },
-    "ID": 705,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_705",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_705"
+    },
+    "ID": 705
   },
   "706": {
     "position": {
       "key": -2,
       "value": 1
     },
-    "ID": 706,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_706",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_706"
+    },
+    "ID": 706
   },
   "707": {
     "position": {
       "key": -2,
       "value": 2
     },
-    "ID": 707,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_707",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_707"
+    },
+    "ID": 707
   },
   "708": {
     "position": {
       "key": -2,
       "value": 3
     },
-    "ID": 708,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_708",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_708"
+    },
+    "ID": 708
   },
   "709": {
     "position": {
       "key": -1,
       "value": -1
     },
-    "ID": 709,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_709",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_709"
+    },
+    "ID": 709
   },
   "710": {
     "position": {
       "key": -1,
       "value": 0
     },
-    "ID": 710,
-    "Icon": "",
     "heroID": 1060,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_710",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_710"
+    },
+    "ID": 710
   },
   "201": {
     "position": {
       "key": -3,
       "value": 3
     },
-    "ID": 201,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_201",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_201"
+    },
+    "ID": 201
   },
   "202": {
     "position": {
       "key": -3,
       "value": 4
     },
-    "ID": 202,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_202",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_202"
+    },
+    "ID": 202
   },
   "203": {
     "position": {
       "key": -2,
       "value": -2
     },
-    "ID": 203,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_203",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_203"
+    },
+    "ID": 203
   },
   "204": {
     "position": {
       "key": -2,
       "value": -1
     },
-    "ID": 204,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_204",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_204"
+    },
+    "ID": 204
   },
   "205": {
     "position": {
       "key": -2,
       "value": 0
     },
-    "ID": 205,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_205",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_205"
+    },
+    "ID": 205
   },
   "206": {
     "position": {
       "key": -2,
       "value": 1
     },
-    "ID": 206,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_206",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_206"
+    },
+    "ID": 206
   },
   "207": {
     "position": {
       "key": -2,
       "value": 2
     },
-    "ID": 207,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_207",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_207"
+    },
+    "ID": 207
   },
   "208": {
     "position": {
       "key": -2,
       "value": 3
     },
-    "ID": 208,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_208",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_208"
+    },
+    "ID": 208
   },
   "209": {
     "position": {
       "key": -1,
       "value": -2
     },
-    "ID": 209,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_209",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_209"
+    },
+    "ID": 209
   },
   "210": {
     "position": {
       "key": -1,
       "value": -1
     },
-    "ID": 210,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_210",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_210"
+    },
+    "ID": 210
   },
   "211": {
     "position": {
       "key": -1,
       "value": 0
     },
-    "ID": 211,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_211",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_211"
+    },
+    "ID": 211
   },
   "212": {
     "position": {
       "key": 0,
       "value": -3
     },
-    "ID": 212,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_212",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_212"
+    },
+    "ID": 212
   },
   "213": {
     "position": {
       "key": 0,
       "value": -2
     },
-    "ID": 213,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_213",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_213"
+    },
+    "ID": 213
   },
   "214": {
     "position": {
       "key": 1,
       "value": -3
     },
-    "ID": 214,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_214",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_214"
+    },
+    "ID": 214
   },
   "215": {
     "position": {
       "key": 1,
       "value": -2
     },
-    "ID": 215,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_215",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_215"
+    },
+    "ID": 215
   },
   "216": {
     "position": {
       "key": 1,
       "value": -1
     },
-    "ID": 216,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_216",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_216"
+    },
+    "ID": 216
   },
   "217": {
     "position": {
       "key": 1,
       "value": 1
     },
-    "ID": 217,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_217",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_217"
+    },
+    "ID": 217
   },
   "218": {
     "position": {
       "key": 1,
       "value": 2
     },
-    "ID": 218,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_218",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_218"
+    },
+    "ID": 218
   },
   "219": {
     "position": {
       "key": 2,
       "value": -4
     },
-    "ID": 219,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_219",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_219"
+    },
+    "ID": 219
   },
   "220": {
     "position": {
       "key": 2,
       "value": -3
     },
-    "ID": 220,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_220",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_220"
+    },
+    "ID": 220
   },
   "221": {
     "position": {
       "key": 2,
       "value": -2
     },
-    "ID": 221,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_221",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_221"
+    },
+    "ID": 221
   },
   "222": {
     "position": {
       "key": 2,
       "value": -1
     },
-    "ID": 222,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_222",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_222"
+    },
+    "ID": 222
   },
   "223": {
     "position": {
       "key": 2,
       "value": 0
     },
-    "ID": 223,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_223",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_223"
+    },
+    "ID": 223
   },
   "224": {
     "position": {
       "key": 2,
       "value": 1
     },
-    "ID": 224,
-    "Icon": "",
     "heroID": 1080,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_224",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_224"
+    },
+    "ID": 224
   },
   "618": {
     "position": {
       "key": 2,
       "value": 1
     },
-    "ID": 618,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_618",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_618"
+    },
+    "ID": 618
   },
   "617": {
     "position": {
       "key": 2,
       "value": 0
     },
-    "ID": 617,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_617",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_617"
+    },
+    "ID": 617
   },
   "616": {
     "position": {
       "key": 2,
       "value": -1
     },
-    "ID": 616,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_616",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_616"
+    },
+    "ID": 616
   },
   "615": {
     "position": {
       "key": 1,
       "value": 1
     },
-    "ID": 615,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_615",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_615"
+    },
+    "ID": 615
   },
   "614": {
     "position": {
       "key": 1,
       "value": 0
     },
-    "ID": 614,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_614",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_614"
+    },
+    "ID": 614
   },
   "613": {
     "position": {
       "key": 1,
       "value": -1
     },
-    "ID": 613,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_613",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_613"
+    },
+    "ID": 613
   },
   "612": {
     "position": {
       "key": 0,
       "value": 1
     },
-    "ID": 612,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_612",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_612"
+    },
+    "ID": 612
   },
   "611": {
     "position": {
       "key": 0,
       "value": 0
     },
-    "ID": 611,
-    "Icon": "",
     "heroID": 1010,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_611",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_611"
+    },
+    "ID": 611
   },
   "524": {
     "position": {
       "key": 3,
       "value": -2
     },
-    "ID": 524,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_524",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_524"
+    },
+    "ID": 524
   },
   "523": {
     "position": {
       "key": 3,
       "value": -3
     },
-    "ID": 523,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_523",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_523"
+    },
+    "ID": 523
   },
   "522": {
     "position": {
       "key": 2,
       "value": 0
     },
-    "ID": 522,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_522",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_522"
+    },
+    "ID": 522
   },
   "521": {
     "position": {
       "key": 2,
       "value": -1
     },
-    "ID": 521,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_521",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_521"
+    },
+    "ID": 521
   },
   "520": {
     "position": {
       "key": 2,
       "value": -2
     },
-    "ID": 520,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_520",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_520"
+    },
+    "ID": 520
   },
   "519": {
     "position": {
       "key": 2,
       "value": -3
     },
-    "ID": 519,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_519",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_519"
+    },
+    "ID": 519
   },
   "518": {
     "position": {
       "key": 1,
       "value": 1
     },
-    "ID": 518,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_518",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_518"
+    },
+    "ID": 518
   },
   "517": {
     "position": {
       "key": 1,
       "value": 0
     },
-    "ID": 517,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_517",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_517"
+    },
+    "ID": 517
   },
   "516": {
     "position": {
       "key": 1,
       "value": -1
     },
-    "ID": 516,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_516",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_516"
+    },
+    "ID": 516
   },
   "515": {
     "position": {
       "key": 1,
       "value": -2
     },
-    "ID": 515,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_515",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_515"
+    },
+    "ID": 515
   },
   "514": {
     "position": {
       "key": 0,
       "value": 2
     },
-    "ID": 514,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_514",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_514"
+    },
+    "ID": 514
   },
   "513": {
     "position": {
       "key": 0,
       "value": 1
     },
-    "ID": 513,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "通关环都难度后解锁该矩阵槽位",
-      "InKey": "desc_513",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_513"
+    },
+    "ID": 513
   },
   "512": {
     "position": {
       "key": 0,
       "value": 0
     },
-    "ID": 512,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_512",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_512"
+    },
+    "ID": 512
   },
   "501": {
     "position": {
       "key": -3,
       "value": 0
     },
-    "ID": 501,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_501",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_501"
+    },
+    "ID": 501
   },
   "502": {
     "position": {
       "key": -3,
       "value": 1
     },
-    "ID": 502,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_502",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_502"
+    },
+    "ID": 502
   },
   "503": {
     "position": {
       "key": -2,
       "value": -1
     },
-    "ID": 503,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_503",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_503"
+    },
+    "ID": 503
   },
   "504": {
     "position": {
       "key": -2,
       "value": 0
     },
-    "ID": 504,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_504",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_504"
+    },
+    "ID": 504
   },
   "505": {
     "position": {
       "key": -2,
       "value": 1
     },
-    "ID": 505,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_505",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_505"
+    },
+    "ID": 505
   },
   "506": {
     "position": {
       "key": -2,
       "value": 2
     },
-    "ID": 506,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_506",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_506"
+    },
+    "ID": 506
   },
   "507": {
     "position": {
       "key": -1,
       "value": -1
     },
-    "ID": 507,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_507",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_507"
+    },
+    "ID": 507
   },
   "508": {
     "position": {
       "key": -1,
       "value": 0
     },
-    "ID": 508,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_508",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_508"
+    },
+    "ID": 508
   },
   "509": {
     "position": {
       "key": -1,
       "value": 1
     },
-    "ID": 509,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_509",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_509"
+    },
+    "ID": 509
   },
   "511": {
     "position": {
       "key": 0,
       "value": -1
     },
-    "ID": 511,
-    "Icon": "",
     "heroID": 1040,
     "DropFloor": 0,
     "unlock": 0,
+    "Icon": "",
     "descLocMeta": {
+      "InNamespace": "puzzle_TBPuzzleSlots",
       "InTextLiteral": "",
-      "InKey": "desc_511",
-      "InNamespace": "puzzle_TBPuzzleSlots"
-    }
+      "InKey": "desc_511"
+    },
+    "ID": 511
   }
 }

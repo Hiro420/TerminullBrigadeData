@@ -6,6 +6,7 @@ local InteractTimerRate = 0.02
 local NormalSizeY = 212
 local ExpandName = "ViewFullAttributeList"
 local bIsSetExpand = false
+
 function WBP_ScrollPickUpTipsView_C:Construct()
   self.Overridden.Construct(self)
   self.BenchMark = "BenchMark"
@@ -14,6 +15,7 @@ function WBP_ScrollPickUpTipsView_C:Construct()
   UpdateVisibility(self.WBP_InteractTipWidgetDiscard, false)
   UpdateVisibility(self.WBP_InteractTipWidgetShareAndMark, false)
 end
+
 function WBP_ScrollPickUpTipsView_C:ListenForBenchInputAction()
   if self.ScrollTipsOpenType == EScrollTipsOpenType.EFromBag or self.ScrollTipsOpenType == EScrollTipsOpenType.EFromPickup or self.ScrollTipsOpenType == EScrollTipsOpenType.EFromBagPickupList then
     self:ListenForBenchInputActionReleased()
@@ -25,6 +27,7 @@ function WBP_ScrollPickUpTipsView_C:ListenForBenchInputAction()
     self:UpdateProgress(-1)
   end
 end
+
 function WBP_ScrollPickUpTipsView_C:ListenForExpandInputAction()
   self.bIsShowComplete = true
   local slotCanvas = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.VerticalBoxScrollSet)
@@ -34,6 +37,7 @@ function WBP_ScrollPickUpTipsView_C:ListenForExpandInputAction()
   slotCanvas:SetAutoSize(true)
   self:UpdateTipsItemList(true)
 end
+
 function WBP_ScrollPickUpTipsView_C:ListenForRetractInputAction()
   self.bIsShowComplete = false
   local slotCanvas = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.VerticalBoxScrollSet)
@@ -43,6 +47,7 @@ function WBP_ScrollPickUpTipsView_C:ListenForRetractInputAction()
   slotCanvas:SetAutoSize(true)
   self:UpdateTipsItemList(false)
 end
+
 function WBP_ScrollPickUpTipsView_C:ShareAndMarkModify()
   if self:CheckPickUpCanShare() then
     local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
@@ -70,6 +75,7 @@ function WBP_ScrollPickUpTipsView_C:ShareAndMarkModify()
     MarkHandle:ServerAddMark(MarkInfo)
   end
 end
+
 function WBP_ScrollPickUpTipsView_C:RefreshProgress()
   if self.StartTime >= InteractDuration then
     if self.ScrollTipsOpenType == EScrollTipsOpenType.EFromBag or self.ScrollTipsOpenType == EScrollTipsOpenType.EFromShop then
@@ -112,12 +118,14 @@ function WBP_ScrollPickUpTipsView_C:RefreshProgress()
     self:UpdateProgress(self.StartTime / InteractDuration)
   end
 end
+
 function WBP_ScrollPickUpTipsView_C:ShowBuyTipPanel()
   local AllChildren = self.TipsPanel:GetAllChildren()
   for index, SingleItem in pairs(AllChildren) do
     SingleItem:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_ScrollPickUpTipsView_C:CheckPickUpCanShare()
   if self.ScrollTipsOpenType == EScrollTipsOpenType.EFromBagPickupList then
     if self.TargetScrollPickupItem and self.TargetScrollPickupItem.Target then
@@ -136,8 +144,10 @@ function WBP_ScrollPickUpTipsView_C:CheckPickUpCanShare()
     return not Logic_Scroll.PreOptimalTarget:IsShared()
   end
 end
+
 function WBP_ScrollPickUpTipsView_C:UpdateProgress(Percent)
 end
+
 function WBP_ScrollPickUpTipsView_C:ListenForBenchInputActionReleased()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.Timer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.Timer)
@@ -146,6 +156,7 @@ function WBP_ScrollPickUpTipsView_C:ListenForBenchInputActionReleased()
   self:UpdateProgress(-1)
   self.StartTime = 0
 end
+
 function WBP_ScrollPickUpTipsView_C:InitScrollTipsView(ScrollId, ScrollTipsOpenTypeParam, TargetScrollPickupItem, bIsNeedInitParam, UserId)
   self.UserId = UserId
   print("WBP_ScrollPickUpTipsView_C:InitScrollTipsView", ScrollId, ScrollTipsOpenTypeParam, TargetScrollPickupItem, bIsNeedInitParam)
@@ -249,6 +260,7 @@ function WBP_ScrollPickUpTipsView_C:InitScrollTipsView(ScrollId, ScrollTipsOpenT
   self.ScrollTipsOpenType = ScrollTipsOpenTypeParam
   self:UpdateScrollTipsView(ScrollTipsOpenTypeParam, ScrollId)
 end
+
 function WBP_ScrollPickUpTipsView_C:UpdateScrollTipsView(ScrollTipsOpenTypeParam, ScrollId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -340,6 +352,7 @@ function WBP_ScrollPickUpTipsView_C:UpdateScrollTipsView(ScrollTipsOpenTypeParam
     end
   end
 end
+
 function WBP_ScrollPickUpTipsView_C:TickRefreshPickupTips()
   UpdateVisibility(self.PublicTag, not self:CheckPickUpCanShare())
   UpdateVisibility(self.PrivateTag, self:CheckPickUpCanShare())
@@ -355,6 +368,7 @@ function WBP_ScrollPickUpTipsView_C:TickRefreshPickupTips()
   UpdateVisibility(self.CanvasPanelFull, bIsShowFull)
   UpdateVisibility(self.CanvasPanelScrollDuplicated, bIsDuplicated)
 end
+
 function WBP_ScrollPickUpTipsView_C:UpdateTipsItemList(bIsComplete)
   bIsComplete = true
   local ResultModify, AttributeModifyRow = GetRowData(DT.DT_AttributeModify, tostring(self.AttributeModifyId))
@@ -366,6 +380,7 @@ function WBP_ScrollPickUpTipsView_C:UpdateTipsItemList(bIsComplete)
     end
   end
 end
+
 function WBP_ScrollPickUpTipsView_C:Show(bIsFlip)
   local TipsSlot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.VerticalBoxTips)
   local SetRootSlot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.OverlayRoot)
@@ -378,10 +393,12 @@ function WBP_ScrollPickUpTipsView_C:Show(bIsFlip)
   end
   UpdateVisibility(self, true)
 end
+
 function WBP_ScrollPickUpTipsView_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Hidden)
   self:Reset()
 end
+
 function WBP_ScrollPickUpTipsView_C:Reset()
   self:ListenForRetractInputAction()
   self:ListenForBenchInputActionReleased()
@@ -396,10 +413,12 @@ function WBP_ScrollPickUpTipsView_C:Reset()
   end
   self.TargetScrollPickupItem = nil
 end
+
 function WBP_ScrollPickUpTipsView_C:Destruct()
   self.Overridden.Destruct(self)
   self:Reset()
 end
+
 function WBP_ScrollPickUpTipsView_C:UpdateLikePlayer(AttributeModifyId)
   local IsOwner = tonumber(self.UserId) == tonumber(DataMgr.GetUserId())
   local LikeUserIdList = UE.URGGameplayLibrary.GetItemRequestUsers(self, tonumber(self.UserId), AttributeModifyId)
@@ -423,4 +442,5 @@ function WBP_ScrollPickUpTipsView_C:UpdateLikePlayer(AttributeModifyId)
     UpdateVisibility(self.CanvasPanelLikePlayer, false)
   end
 end
+
 return WBP_ScrollPickUpTipsView_C

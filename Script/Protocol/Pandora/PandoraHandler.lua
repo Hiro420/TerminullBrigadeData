@@ -6,6 +6,7 @@ local PandoraGameEventType = {
   PandoraActivityPanel_OnMouseEnter = "PandoraActivityPanel_OnMouseEnter"
 }
 _G.PandoraGameEventType = PandoraGameEventType
+
 function PandoraHandler.ProcessProtocal(MsgType, MsgObj)
   if not MsgType then
     return
@@ -17,6 +18,7 @@ function PandoraHandler.ProcessProtocal(MsgType, MsgObj)
     print("Error: No handler found for protocol " .. MsgType)
   end
 end
+
 function PandoraHandler.SendRefreshADData(adId)
   if not UE.URGPandoraSubsystem then
     return
@@ -30,6 +32,7 @@ function PandoraHandler.SendRefreshADData(adId)
   local ParamStr = RapidJsonEncode(Params)
   PandoraSubsystem:SendMessageToApp("5179", ParamStr)
 end
+
 function PandoraHandler.GetUserInfoResult(content, source, roleId, appId)
   if not UE.URGPandoraSubsystem then
     return
@@ -44,6 +47,7 @@ function PandoraHandler.GetUserInfoResult(content, source, roleId, appId)
   local ParamStr = RapidJsonEncode(Params)
   PandoraSubsystem:SendMessageToApp(appId, ParamStr)
 end
+
 function PandoraHandler.SendGameEventToPandora(content, extend)
   if not UE.URGPandoraSubsystem then
     return
@@ -58,6 +62,7 @@ function PandoraHandler.SendGameEventToPandora(content, extend)
   local AppId = PandoraData:GetEventAppId()
   PandoraSubsystem:SendMessageToApp("*", ParamStr)
 end
+
 function PandoraHandler.SendMidasPayCallBack()
   if not UE.URGPandoraSubsystem then
     return
@@ -73,6 +78,7 @@ function PandoraHandler.SendMidasPayCallBack()
   local AppId = PandoraData:GetPayAppId()
   PandoraSubsystem:SendMessageToApp(AppId, ParamStr)
 end
+
 function PandoraHandler.SendGetProductInfoResult(RespInfo)
   if not UE.URGPandoraSubsystem then
     return
@@ -88,6 +94,7 @@ function PandoraHandler.SendGetProductInfoResult(RespInfo)
   local AppId = PandoraData:GetProductInfoAppId()
   PandoraSubsystem:SendMessageToApp(AppId, ParamStr)
 end
+
 function PandoraHandler.SendMidasPayCallBack_WeGame(EventData)
   if not UE.URGPandoraSubsystem then
     return
@@ -102,6 +109,7 @@ function PandoraHandler.SendMidasPayCallBack_WeGame(EventData)
   local ParamStr = RapidJsonEncode(Params)
   PandoraSubsystem:SendMessageToApp("*", ParamStr)
 end
+
 function PandoraHandler.SendPandoraPayWindowClose()
   if not UE.URGPandoraSubsystem then
     return
@@ -115,6 +123,7 @@ function PandoraHandler.SendPandoraPayWindowClose()
   local ParamStr = RapidJsonEncode(Params)
   PandoraSubsystem:SendMessageToApp("*", ParamStr)
 end
+
 function PandoraHandler.GoPandoraActivity(Index, LinkSource)
   local Result, TBPandoraInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBPandoraInfo, Index)
   if not Result then
@@ -150,6 +159,7 @@ function PandoraHandler.GoPandoraActivity(Index, LinkSource)
   PandoraModule:BindOnGoSystem(MsgObj)
   return true
 end
+
 function PandoraHandler.SetLoginChannel(ChannelId)
   if 1 == ChannelId or 2 == ChannelId or 3 == ChannelId then
     ChannelId = 52
@@ -160,4 +170,5 @@ function PandoraHandler.SetLoginChannel(ChannelId)
   local PandoraModule = ModuleManager:Get("PandoraModule")
   PandoraModule:AddUserData("sLoginChannel", ChannelId)
 end
+
 return PandoraHandler

@@ -1,4 +1,5 @@
 local M = {}
+
 function M.Split(str, reps)
   local resultStrList = {}
   string.gsub(str, "[^" .. reps .. "]+", function(w)
@@ -6,4 +7,5 @@ function M.Split(str, reps)
   end)
   return resultStrList
 end
+
 return M

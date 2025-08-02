@@ -983,7 +983,8 @@ local UIDef = {
     ID = ViewID.UI_Marquee,
     Layer = UILayer.Modal,
     UIBP = "/Game/Rouge/UI/Marquee/WBP_Marquee",
-    UIScript = "UI/View/Marquee/WBP_Marquee"
+    UIScript = "UI/View/Marquee/WBP_Marquee",
+    DontHideOther = true
   }
 }
 _G.UIDef = UIDef

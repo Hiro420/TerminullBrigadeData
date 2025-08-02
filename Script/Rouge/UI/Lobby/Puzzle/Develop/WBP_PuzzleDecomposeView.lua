@@ -11,24 +11,29 @@ local EDecomposeButtonStatus = {
   Lock = 1,
   Normal = 2
 }
+
 function WBP_PuzzleDecomposeView:BindClickHandler()
   self.Btn_Filter.OnClicked:Add(self, self.BindOnFilterButtonClicked)
   self.Btn_Decompose.OnMainButtonClicked:Add(self, self.BindOnDecomposeButtonClicked)
   self.CheckBox_PickAll.OnCheckStateChanged:Add(self, self.BindOnPickAllCheckStateChanged)
 end
+
 function WBP_PuzzleDecomposeView:UnBindClickHandler()
   self.Btn_Filter.OnClicked:Remove(self, self.BindOnFilterButtonClicked)
   self.Btn_Decompose.OnMainButtonClicked:Remove(self, self.BindOnDecomposeButtonClicked)
   self.CheckBox_PickAll.OnCheckStateChanged:Remove(self, self.BindOnPickAllCheckStateChanged)
 end
+
 function WBP_PuzzleDecomposeView:OnInit()
   self.DataBindTable = {}
   self.ViewModel = UIModelMgr:Get("PuzzleDecomposeViewModel")
   self:BindClickHandler()
 end
+
 function WBP_PuzzleDecomposeView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_PuzzleDecomposeView:OnShow(...)
   self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
   EventSystem.AddListenerNew(EventDef.Puzzle.OnUpdatePuzzlePackageInfo, self, self.BindOnUpdatePuzzlePackageInfo)
@@ -58,9 +63,11 @@ function WBP_PuzzleDecomposeView:OnShow(...)
     end
   }, 0.02, false)
 end
+
 function WBP_PuzzleDecomposeView:InitSortRuleComboBox(...)
   self.WBP_PuzzleSortRuleComboBox:Show(self)
 end
+
 function WBP_PuzzleDecomposeView:RefreshPuzzleItemList(...)
   self.RGTileViewPuzzleList:RecyleAllData()
   local DataObjList = {}
@@ -137,6 +144,7 @@ function WBP_PuzzleDecomposeView:RefreshPuzzleItemList(...)
     self.RGTileViewPuzzleList:SetRGListItems(DataObjList, false, true)
   end
 end
+
 function WBP_PuzzleDecomposeView:RefreshFilterIconStatus(...)
   local FilterSelectList = self.ViewModel:GetPuzzleFilterSelectStatus()
   local IsSelect = false
@@ -157,10 +165,12 @@ function WBP_PuzzleDecomposeView:RefreshFilterIconStatus(...)
     self.RGStateController_Filter:ChangeStatus("NoFilter")
   end
 end
+
 function WBP_PuzzleDecomposeView:BindOnSortRuleSelectionChanged(CurSelectedIndex)
   self.ViewModel:SetPuzzleSortRule(CurSelectedIndex)
   self:RefreshPuzzleItemList()
 end
+
 function WBP_PuzzleDecomposeView:BindOnFilterButtonClicked()
   if self.WBP_PuzzleFilterView:IsVisible() then
     self.WBP_PuzzleFilterView:Hide()
@@ -169,6 +179,7 @@ function WBP_PuzzleDecomposeView:BindOnFilterButtonClicked()
     self.WBP_PuzzleFilterView:Show(self.ViewModel)
   end
 end
+
 function WBP_PuzzleDecomposeView:BindOnDecomposeButtonClicked(...)
   if self.ButtonStatus == EDecomposeButtonStatus.Empty then
     return
@@ -189,6 +200,7 @@ function WBP_PuzzleDecomposeView:BindOnDecomposeButtonClicked(...)
     WaveWindow:Show(PuzzleIdList, true)
   end
 end
+
 function WBP_PuzzleDecomposeView:BindOnPickAllCheckStateChanged(IsChecked)
   if IsChecked then
     local CurSelectIdList = self.ViewModel:GetCurSelectPuzzleIdList()
@@ -214,6 +226,7 @@ function WBP_PuzzleDecomposeView:BindOnPickAllCheckStateChanged(IsChecked)
     self.ViewModel:RemoveAllCurSelectPuzzleIdList()
   end
 end
+
 function WBP_PuzzleDecomposeView:BindOnUpdatePuzzlePackageInfo(PuzzleIdList)
   self:RefreshDecomposeButtonStatus()
   if not PuzzleIdList or table.Contain(PuzzleIdList, self.HoveredPuzzleId) then
@@ -228,6 +241,7 @@ function WBP_PuzzleDecomposeView:BindOnUpdatePuzzlePackageInfo(PuzzleIdList)
     end
   end
 end
+
 function WBP_PuzzleDecomposeView:BindOnUpdatePuzzleItemHoverStatus(IsHover, PuzzleId, IsPuzzleBoard)
   if IsHover then
     self.HoveredPuzzleId = PuzzleId
@@ -248,12 +262,14 @@ function WBP_PuzzleDecomposeView:BindOnUpdatePuzzleItemHoverStatus(IsHover, Puzz
     end
   end
 end
+
 function WBP_PuzzleDecomposeView:BindOnDecomposePuzzleSuccess(PuzzleIdList)
   self:RefreshPuzzleItemList()
   self:RefreshPuzzleDevelopInfoItem()
   self:RefreshDecomposeButtonStatus()
   self:RefreshDecomposeResourceInfo()
 end
+
 function WBP_PuzzleDecomposeView:BindOnPuzzleItemSelected(PuzzleId)
   local CurSelectedNum = table.count(self.ViewModel:GetCurSelectPuzzleIdList())
   if self.CurSelectedNum and CurSelectedNum < self.CurSelectedNum then
@@ -264,6 +280,7 @@ function WBP_PuzzleDecomposeView:BindOnPuzzleItemSelected(PuzzleId)
   self:RefreshDecomposeButtonStatus()
   self:RefreshDecomposeResourceInfo()
 end
+
 function WBP_PuzzleDecomposeView:RefreshPuzzleDevelopInfoItem()
   local CurSelectIdList = self.ViewModel:GetCurSelectPuzzleIdList()
   UpdateVisibility(self.WBP_PuzzleDevelopInfoItem, next(CurSelectIdList) ~= nil)
@@ -273,6 +290,7 @@ function WBP_PuzzleDecomposeView:RefreshPuzzleDevelopInfoItem()
     self.WBP_PuzzleDevelopInfoItem:Show(TargetPuzzleId)
   end
 end
+
 function WBP_PuzzleDecomposeView:RefreshDecomposeButtonStatus(...)
   local CurSelectIdList = self.ViewModel:GetCurSelectPuzzleIdList()
   local IsEmpty = next(CurSelectIdList) == nil
@@ -292,6 +310,7 @@ function WBP_PuzzleDecomposeView:RefreshDecomposeButtonStatus(...)
   self.ButtonStatus = EDecomposeButtonStatus.Normal
   self.Btn_Decompose:SetStyleByBottomStyleRowName("Upgrade")
 end
+
 function WBP_PuzzleDecomposeView:RefreshDecomposeResourceInfo(...)
   local ResourceList = {}
   local PuzzleIdList = self.ViewModel:GetCurSelectPuzzleIdList()
@@ -337,6 +356,7 @@ function WBP_PuzzleDecomposeView:RefreshDecomposeResourceInfo(...)
   HideOtherItem(self.Horizontal_ResourceList, Index, true)
   UpdateVisibility(self.Horizontal_DecomposeResourceList, next(ResourceList) ~= nil)
 end
+
 function WBP_PuzzleDecomposeView:OnMouseButtonDown(MyGeometry, MouseEvent)
   if self.WBP_PuzzleFilterView:IsVisible() then
     self.WBP_PuzzleFilterView:Hide()
@@ -344,6 +364,7 @@ function WBP_PuzzleDecomposeView:OnMouseButtonDown(MyGeometry, MouseEvent)
   self.WBP_PuzzleSortRuleComboBox:HideExpandList()
   return UE.UWidgetBlueprintLibrary.Unhandled()
 end
+
 function WBP_PuzzleDecomposeView:OnHide()
   self.ViewModel:OnViewClose()
   self.WBP_PuzzleFilterView:Hide()
@@ -357,7 +378,9 @@ function WBP_PuzzleDecomposeView:OnHide()
   EventSystem.RemoveListenerNew(EventDef.Puzzle.OnUpdatePuzzleItemHoverStatus, self, self.BindOnUpdatePuzzleItemHoverStatus)
   EventSystem.RemoveListenerNew(EventDef.Puzzle.OnDecomposePuzzleSuccess, self, self.BindOnDecomposePuzzleSuccess)
 end
+
 function WBP_PuzzleDecomposeView:Destruct(...)
   self:OnHide()
 end
+
 return WBP_PuzzleDecomposeView

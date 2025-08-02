@@ -2,21 +2,25 @@ local UnLua = _G.UnLua
 local GlobalModuleDef = require("Modules.GlobalModuleDef")
 local GlobalTimer = _G.GlobalTimer
 local ModuleManager = LuaClass()
+
 function ModuleManager:Ctor()
   self._bInited = false
   self._ModulesMap = {}
   self._TimerKey = nil
   self._TickModulesMap = {}
 end
+
 local ErrorFunc = function(err)
   UnLua.LogError("ModuleManager Error:", err)
 end
+
 function ModuleManager:Get(modulename)
   if not self._bInited then
     return nil
   end
   return self._ModulesMap[modulename]
 end
+
 function ModuleManager:Init()
   if self._bInited == true then
     UnLua.LogWarn("ModuleManager is already inited.")
@@ -52,6 +56,7 @@ function ModuleManager:Init()
   end
   self._bInited = true
 end
+
 function ModuleManager:Start()
   print("ModuleManager:Start() begin...")
   if GlobalModuleDef then
@@ -63,6 +68,7 @@ function ModuleManager:Start()
     end
   end
 end
+
 function ModuleManager:Shutdown()
   print("ModuleManager:Shutdown() begin...")
   if self._TimerKey then
@@ -80,6 +86,7 @@ function ModuleManager:Shutdown()
   self._TickModulesMap = {}
   self._bInited = false
 end
+
 function ModuleManager:Tick(deltaSeconds)
   if self._TickModulesMap and next(self._TickModulesMap) ~= nil then
     for k, v in pairs(self._TickModulesMap) do
@@ -89,6 +96,7 @@ function ModuleManager:Tick(deltaSeconds)
     end
   end
 end
+
 function ModuleManager.OnApplicationCrash()
   print("ModuleManager:OnApplicationCrash()")
   local M = _G.ModuleManager
@@ -96,4 +104,5 @@ function ModuleManager.OnApplicationCrash()
     M:Shutdown()
   end
 end
+
 _G.ModuleManager = _G.ModuleManager or ModuleManager.New()

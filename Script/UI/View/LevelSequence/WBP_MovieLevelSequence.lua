@@ -1,24 +1,30 @@
 local SpaceActionName = "Space"
 local ViewBase = require("Framework.UIMgr.ViewBase")
+local SkinData = require("Modules.Appearance.Skin.SkinData")
 local WBP_MovieLevelSequence = Class(ViewBase)
 local EscName = "PauseGame"
 local GetAppearanceActor = function(self)
   self.AppearanceActor = LogicLobby.GetAppearanceActor(self)
   return self.AppearanceActor
 end
+
 function WBP_MovieLevelSequence:BindClickHandler()
   EventSystem.AddListener(self, EventDef.DrawCard.OnDrawCardShowFinished, self.BindOnDrawCardShowFinished)
 end
+
 function WBP_MovieLevelSequence:UnBindClickHandler()
   EventSystem.RemoveListener(EventDef.DrawCard.OnDrawCardShowFinished, self.BindOnDrawCardShowFinished, self)
 end
+
 function WBP_MovieLevelSequence:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function WBP_MovieLevelSequence:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_MovieLevelSequence:OnPreHide()
   if self.SequencePlayer then
     self:LevelSequenceFinish(true)
@@ -26,6 +32,7 @@ function WBP_MovieLevelSequence:OnPreHide()
   self:SetEnhancedInputActionBlocking(false)
   self.WBP_InteractTipWidgetEsc:UnBindInteractAndClickEvent(self, self.EscPress)
 end
+
 function WBP_MovieLevelSequence:OnShow(SkinId, ShowNext, CallBack, escFunc, Seq, bIsDrawCardShow)
   self.Seq = Seq
   self.bIsDrawCardShow = bIsDrawCardShow
@@ -51,6 +58,7 @@ function WBP_MovieLevelSequence:OnShow(SkinId, ShowNext, CallBack, escFunc, Seq,
     self:LevelSequenceFinish()
   end
 end
+
 function WBP_MovieLevelSequence:ShowNextCharacter()
   self.bIsWaitingShowNextCharacter = false
   if self.ShowNext then
@@ -59,7 +67,8 @@ function WBP_MovieLevelSequence:ShowNextCharacter()
     local SkinId = CharacterSkin.SkinID
     local HeroId = CharacterSkin.CharacterID
     local WeaponId = DataMgr.GetShowWeaponId(HeroId)
-    GetAppearanceActor(self):InitAppearanceActor(HeroId, SkinId, WeaponId, nil, self.bIsDrawCardShow, self.bIsDrawCardShow, function()
+    local WeaponSkinId = SkinData.GetEquipedWeaponSkinIdByWeaponResId(WeaponId)
+    GetAppearanceActor(self):InitAppearanceActor(HeroId, SkinId, WeaponSkinId, nil, self.bIsDrawCardShow, self.bIsDrawCardShow, function()
       GetAppearanceActor(self):UpdateActived(true)
       if self.bIsDrawCardShow then
         UE.URGBlueprintLibrary.SetTimerForNextTick(GameInstance, {
@@ -73,6 +82,7 @@ function WBP_MovieLevelSequence:ShowNextCharacter()
     end)
   end
 end
+
 function WBP_MovieLevelSequence:PlaySkinSound()
   local result, row = GetRowData(DT.DT_HeirloomSkin, tostring(self.SkinId))
   local heirloogMediaData
@@ -91,12 +101,14 @@ function WBP_MovieLevelSequence:PlaySkinSound()
     end
   end
 end
+
 function WBP_MovieLevelSequence:OnHide()
   self:LevelSequenceFinish(true)
   StopListeningForInputAction(self, SpaceActionName, UE.EInputEvent.IE_Pressed)
   StopListeningForInputAction(self, EscName, UE.EInputEvent.IE_Pressed)
   self.WBP_InteractTipWidgetEsc:UnBindInteractAndClickEvent(self, self.EscPress)
 end
+
 function WBP_MovieLevelSequence:SequenceFinished()
   if self.SequencePlayer then
     if self.LastAkEventName then
@@ -111,6 +123,7 @@ function WBP_MovieLevelSequence:SequenceFinished()
     end
   end
 end
+
 function WBP_MovieLevelSequence:PlaySeq(SoftObjPath)
   if self.SequencePlayer then
     self.SequencePlayer:K2_DestroyActor()
@@ -146,6 +159,7 @@ function WBP_MovieLevelSequence:PlaySeq(SoftObjPath)
     end
   }, 0.02, false)
 end
+
 function WBP_MovieLevelSequence:LevelHide()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.Timer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(GameInstance, self.Timer)
@@ -171,10 +185,12 @@ function WBP_MovieLevelSequence:LevelHide()
     end
   }, 0.1, false)
 end
+
 function WBP_MovieLevelSequence:LevelHideAfter()
   self.HideLobbyLevel = true
   self:StartShowSequence()
 end
+
 function WBP_MovieLevelSequence:CanShowSequence()
   if not self.AsyncLoadingEnd then
     return false
@@ -184,6 +200,7 @@ function WBP_MovieLevelSequence:CanShowSequence()
   end
   return true
 end
+
 function WBP_MovieLevelSequence:StartShowSequence()
   if not self:CanShowSequence() then
     return
@@ -218,6 +235,7 @@ function WBP_MovieLevelSequence:StartShowSequence()
   end
   self:PlayAnimation(self.FadeOut)
 end
+
 function WBP_MovieLevelSequence:LevelSequenceFinish(ByHideForce)
   if self.AsyncLoadSequenceHandleID and self.AsyncLoadSequenceHandleID > 0 then
     UE.URGAssetManager.CancelAsyncLoad(self.AsyncLoadSequenceHandleID)
@@ -269,18 +287,21 @@ function WBP_MovieLevelSequence:LevelSequenceFinish(ByHideForce)
     LogicRole.ShowLevelForSequence(true)
   end
 end
+
 function WBP_MovieLevelSequence:SpacePress()
   if not self:CanShowSequence() then
     return
   end
   self:LevelSequenceFinish()
 end
+
 function WBP_MovieLevelSequence:EscPress()
   if not self:CanShowSequence() then
     return
   end
   self:LevelSequenceFinish()
 end
+
 function WBP_MovieLevelSequence:BindOnDrawCardShowFinished()
   if self.SequencePlayer and self.bIsDrawCardShow then
     self.SequencePlayer:K2_DestroyActor()
@@ -289,4 +310,5 @@ function WBP_MovieLevelSequence:BindOnDrawCardShowFinished()
     self.SequenceActor = nil
   end
 end
+
 return WBP_MovieLevelSequence

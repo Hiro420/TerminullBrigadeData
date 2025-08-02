@@ -1,218 +1,218 @@
 ﻿{
   "1": {
-    "UnLockDesLocMeta": {
-      "InNamespace": "season_TBBossRush",
-      "InKey": "UnLockDes_1",
-      "InTextLiteral": "解锁条件：通关修正行动层"
-    },
+    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem.WBP_BossRushModeItem",
+    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_GhastHook_BossRush.Img_GhastHook_BossRush",
+    "Id": 1,
+    "LevelId": 300101,
     "DifficultyNameLocMeta": {
-      "InNamespace": "season_TBBossRush",
       "InKey": "DifficultyName_1",
+      "InNamespace": "season_TBBossRush",
       "InTextLiteral": "普通"
     },
-    "LevelId": 300101,
-    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_GhastHook.Img_BossRush_GhastHook",
-    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_GhastHook_BossRush.Img_GhastHook_BossRush",
-    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_01.Img_BossRush01_01",
+    "BossNameLocMeta": {
+      "InKey": "BossName_1",
+      "InNamespace": "season_TBBossRush",
+      "InTextLiteral": "锁魂师"
+    },
+    "UnLockDesLocMeta": {
+      "InKey": "UnLockDes_1",
+      "InNamespace": "season_TBBossRush",
+      "InTextLiteral": "解锁条件：通关修正行动层"
+    },
+    "DifficultyType": 0,
     "Tickets": {
       "1": {
-        "key": 99018,
-        "value": 1
+        "value": 1,
+        "key": 99018
       }
     },
+    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_01.Img_BossRush01_01",
     "BossIconSel": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush02_01.Img_BossRush02_01",
-    "BossNameLocMeta": {
-      "InNamespace": "season_TBBossRush",
-      "InKey": "BossName_1",
-      "InTextLiteral": "锁魂师"
-    },
-    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem.WBP_BossRushModeItem",
-    "DifficultyType": 0,
+    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_GhastHook.Img_BossRush_GhastHook",
     "BossDesLocMeta": {
-      "InNamespace": "season_TBBossRush",
       "InKey": "BossDes_1",
+      "InNamespace": "season_TBBossRush",
       "InTextLiteral": "锁魂师"
-    },
-    "Id": 1
+    }
   },
   "2": {
-    "UnLockDesLocMeta": {
-      "InNamespace": "season_TBBossRush",
-      "InKey": "UnLockDes_2",
-      "InTextLiteral": "解锁条件：通关修正行动层"
-    },
+    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem_Qing.WBP_BossRushModeItem_Qing",
+    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_Qing_BossRush.Img_Qing_BossRush",
+    "Id": 2,
+    "LevelId": 300102,
     "DifficultyNameLocMeta": {
-      "InNamespace": "season_TBBossRush",
       "InKey": "DifficultyName_2",
+      "InNamespace": "season_TBBossRush",
       "InTextLiteral": "普通"
     },
-    "LevelId": 300102,
-    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_Qing.Img_BossRush_Qing",
-    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_Qing_BossRush.Img_Qing_BossRush",
-    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_06.Img_BossRush01_06",
+    "BossNameLocMeta": {
+      "InKey": "BossName_2",
+      "InNamespace": "season_TBBossRush",
+      "InTextLiteral": "影刃"
+    },
+    "UnLockDesLocMeta": {
+      "InKey": "UnLockDes_2",
+      "InNamespace": "season_TBBossRush",
+      "InTextLiteral": "解锁条件：通关修正行动层"
+    },
+    "DifficultyType": 0,
     "Tickets": {
       "1": {
-        "key": 99018,
-        "value": 1
+        "value": 1,
+        "key": 99018
       }
     },
+    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_06.Img_BossRush01_06",
     "BossIconSel": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush02_06.Img_BossRush02_06",
-    "BossNameLocMeta": {
-      "InNamespace": "season_TBBossRush",
-      "InKey": "BossName_2",
-      "InTextLiteral": "影刃"
-    },
-    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem_Qing.WBP_BossRushModeItem_Qing",
-    "DifficultyType": 0,
+    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_Qing.Img_BossRush_Qing",
     "BossDesLocMeta": {
-      "InNamespace": "season_TBBossRush",
       "InKey": "BossDes_2",
+      "InNamespace": "season_TBBossRush",
       "InTextLiteral": "影刃"
-    },
-    "Id": 2
+    }
   },
   "3": {
-    "UnLockDesLocMeta": {
-      "InNamespace": "season_TBBossRush",
-      "InKey": "UnLockDes_3",
-      "InTextLiteral": "解锁条件：通关修正行动层"
-    },
+    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem_ZombieSlayer.WBP_BossRushModeItem_ZombieSlayer",
+    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_ZombieSlayer_BossRush.Img_ZombieSlayer_BossRush",
+    "Id": 3,
+    "LevelId": 300103,
     "DifficultyNameLocMeta": {
-      "InNamespace": "season_TBBossRush",
       "InKey": "DifficultyName_3",
+      "InNamespace": "season_TBBossRush",
       "InTextLiteral": "普通"
     },
-    "LevelId": 300103,
-    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_ZombieSlayer.Img_BossRush_ZombieSlayer",
-    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_ZombieSlayer_BossRush.Img_ZombieSlayer_BossRush",
-    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_05.Img_BossRush01_05",
+    "BossNameLocMeta": {
+      "InKey": "BossName_3",
+      "InNamespace": "season_TBBossRush",
+      "InTextLiteral": "鬣狗大喇叭"
+    },
+    "UnLockDesLocMeta": {
+      "InKey": "UnLockDes_3",
+      "InNamespace": "season_TBBossRush",
+      "InTextLiteral": "解锁条件：通关修正行动层"
+    },
+    "DifficultyType": 0,
     "Tickets": {
       "1": {
-        "key": 99018,
-        "value": 1
+        "value": 1,
+        "key": 99018
       }
     },
+    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_05.Img_BossRush01_05",
     "BossIconSel": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush02_05.Img_BossRush02_05",
-    "BossNameLocMeta": {
-      "InNamespace": "season_TBBossRush",
-      "InKey": "BossName_3",
-      "InTextLiteral": "鬣狗大喇叭"
-    },
-    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem_ZombieSlayer.WBP_BossRushModeItem_ZombieSlayer",
-    "DifficultyType": 0,
+    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_ZombieSlayer.Img_BossRush_ZombieSlayer",
     "BossDesLocMeta": {
-      "InNamespace": "season_TBBossRush",
       "InKey": "BossDes_3",
+      "InNamespace": "season_TBBossRush",
       "InTextLiteral": "鬣狗大喇叭"
-    },
-    "Id": 3
+    }
   },
   "4": {
-    "UnLockDesLocMeta": {
-      "InNamespace": "season_TBBossRush",
-      "InKey": "UnLockDes_4",
-      "InTextLiteral": "解锁条件：通关修正行动层"
-    },
+    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem_Wuxiang.WBP_BossRushModeItem_Wuxiang",
+    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_Wuxiang_BossRush.Img_Wuxiang_BossRush",
+    "Id": 4,
+    "LevelId": 300104,
     "DifficultyNameLocMeta": {
-      "InNamespace": "season_TBBossRush",
       "InKey": "DifficultyName_4",
+      "InNamespace": "season_TBBossRush",
       "InTextLiteral": "困难"
     },
-    "LevelId": 300104,
-    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_Wuxiang.Img_BossRush_Wuxiang",
-    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_Wuxiang_BossRush.Img_Wuxiang_BossRush",
-    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_02.Img_BossRush01_02",
+    "BossNameLocMeta": {
+      "InKey": "BossName_4",
+      "InNamespace": "season_TBBossRush",
+      "InTextLiteral": "无相"
+    },
+    "UnLockDesLocMeta": {
+      "InKey": "UnLockDes_4",
+      "InNamespace": "season_TBBossRush",
+      "InTextLiteral": "解锁条件：通关修正行动层"
+    },
+    "DifficultyType": 1,
     "Tickets": {
       "1": {
-        "key": 99034,
-        "value": 1
+        "value": 1,
+        "key": 99034
       }
     },
+    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_02.Img_BossRush01_02",
     "BossIconSel": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush02_02.Img_BossRush02_02",
-    "BossNameLocMeta": {
-      "InNamespace": "season_TBBossRush",
-      "InKey": "BossName_4",
-      "InTextLiteral": "无相"
-    },
-    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem_Wuxiang.WBP_BossRushModeItem_Wuxiang",
-    "DifficultyType": 1,
+    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_Wuxiang.Img_BossRush_Wuxiang",
     "BossDesLocMeta": {
-      "InNamespace": "season_TBBossRush",
       "InKey": "BossDes_4",
+      "InNamespace": "season_TBBossRush",
       "InTextLiteral": "无相"
-    },
-    "Id": 4
+    }
   },
   "5": {
-    "UnLockDesLocMeta": {
-      "InNamespace": "season_TBBossRush",
-      "InKey": "UnLockDes_5",
-      "InTextLiteral": "解锁条件：通关修正行动层"
-    },
+    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem_Captain.WBP_BossRushModeItem_Captain",
+    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_Captain_BossRush.Img_Captain_BossRush",
+    "Id": 5,
+    "LevelId": 300105,
     "DifficultyNameLocMeta": {
-      "InNamespace": "season_TBBossRush",
       "InKey": "DifficultyName_5",
+      "InNamespace": "season_TBBossRush",
       "InTextLiteral": "困难"
     },
-    "LevelId": 300105,
-    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_Captain.Img_BossRush_Captain",
-    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_Captain_BossRush.Img_Captain_BossRush",
-    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_03.Img_BossRush01_03",
+    "BossNameLocMeta": {
+      "InKey": "BossName_5",
+      "InNamespace": "season_TBBossRush",
+      "InTextLiteral": "马尔科姆"
+    },
+    "UnLockDesLocMeta": {
+      "InKey": "UnLockDes_5",
+      "InNamespace": "season_TBBossRush",
+      "InTextLiteral": "解锁条件：通关修正行动层"
+    },
+    "DifficultyType": 1,
     "Tickets": {
       "1": {
-        "key": 99034,
-        "value": 1
+        "value": 1,
+        "key": 99034
       }
     },
+    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_03.Img_BossRush01_03",
     "BossIconSel": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush02_03.Img_BossRush02_03",
-    "BossNameLocMeta": {
-      "InNamespace": "season_TBBossRush",
-      "InKey": "BossName_5",
-      "InTextLiteral": "马尔科姆"
-    },
-    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem_Captain.WBP_BossRushModeItem_Captain",
-    "DifficultyType": 1,
+    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_Captain.Img_BossRush_Captain",
     "BossDesLocMeta": {
-      "InNamespace": "season_TBBossRush",
       "InKey": "BossDes_5",
+      "InNamespace": "season_TBBossRush",
       "InTextLiteral": "马尔科姆"
-    },
-    "Id": 5
+    }
   },
   "6": {
-    "UnLockDesLocMeta": {
-      "InNamespace": "season_TBBossRush",
-      "InKey": "UnLockDes_6",
-      "InTextLiteral": "解锁条件：通关修正行动层"
-    },
+    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem_Chariot.WBP_BossRushModeItem_Chariot",
+    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_Chariot_BossRush.Img_Chariot_BossRush",
+    "Id": 6,
+    "LevelId": 300106,
     "DifficultyNameLocMeta": {
-      "InNamespace": "season_TBBossRush",
       "InKey": "DifficultyName_6",
+      "InNamespace": "season_TBBossRush",
       "InTextLiteral": "困难"
     },
-    "LevelId": 300106,
-    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_Chariot.Img_BossRush_Chariot",
-    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_Chariot_BossRush.Img_Chariot_BossRush",
-    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_04.Img_BossRush01_04",
+    "BossNameLocMeta": {
+      "InKey": "BossName_6",
+      "InNamespace": "season_TBBossRush",
+      "InTextLiteral": "乔里"
+    },
+    "UnLockDesLocMeta": {
+      "InKey": "UnLockDes_6",
+      "InNamespace": "season_TBBossRush",
+      "InTextLiteral": "解锁条件：通关修正行动层"
+    },
+    "DifficultyType": 1,
     "Tickets": {
       "1": {
-        "key": 99034,
-        "value": 1
+        "value": 1,
+        "key": 99034
       }
     },
+    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_04.Img_BossRush01_04",
     "BossIconSel": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush02_04.Img_BossRush02_04",
-    "BossNameLocMeta": {
-      "InNamespace": "season_TBBossRush",
-      "InKey": "BossName_6",
-      "InTextLiteral": "乔里"
-    },
-    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem_Chariot.WBP_BossRushModeItem_Chariot",
-    "DifficultyType": 1,
+    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_Chariot.Img_BossRush_Chariot",
     "BossDesLocMeta": {
-      "InNamespace": "season_TBBossRush",
       "InKey": "BossDes_6",
+      "InNamespace": "season_TBBossRush",
       "InTextLiteral": "乔里"
-    },
-    "Id": 6
+    }
   }
 }

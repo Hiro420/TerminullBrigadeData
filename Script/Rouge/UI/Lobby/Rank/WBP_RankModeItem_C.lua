@@ -1,10 +1,13 @@
 local WBP_RankModeItem_C = UnLua.Class()
+
 function WBP_RankModeItem_C:Construct()
   self.Button_Mode.OnClicked:Add(self, WBP_RankModeItem_C.OnClicked_Button)
 end
+
 function WBP_RankModeItem_C:Destruct()
   self.Button_Mode.OnClicked:Remove(self, WBP_RankModeItem_C.OnClicked_Button)
 end
+
 function WBP_RankModeItem_C:UpdateRankModeItem(Index)
   print("WBP_RankModeItem_C", Index)
   self.Index = Index
@@ -17,6 +20,7 @@ function WBP_RankModeItem_C:UpdateRankModeItem(Index)
   else
   end
 end
+
 function WBP_RankModeItem_C:UpdateButtonStatus(Selected)
   local SlateColor = UE.FSlateColor()
   SlateColor.SpecifiedColor = UE.FLinearColor(0.701102, 0.165132, 0.015209, 1)
@@ -33,8 +37,10 @@ function WBP_RankModeItem_C:UpdateButtonStatus(Selected)
     self.Image_Mode:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 function WBP_RankModeItem_C:OnClicked_Button()
   EventSystem.Invoke(EventDef.Rank.OnModeChange, self.Index)
   self:UpdateButtonStatus(true)
 end
+
 return WBP_RankModeItem_C

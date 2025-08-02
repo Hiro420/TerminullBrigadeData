@@ -1,102 +1,102 @@
 ﻿{
   "99014": {
+    "StackLimit": 9999999,
     "ID": 99014,
-    "ResetType": 1,
-    "StackLimit": 9999999
+    "ResetType": 1
   },
   "99016": {
+    "StackLimit": 9999999,
     "ID": 99016,
-    "ResetType": 0,
-    "StackLimit": 9999999
+    "ResetType": 0
   },
   "99020": {
+    "StackLimit": 9999999,
     "ID": 99020,
-    "ResetType": 1,
-    "StackLimit": 9999999
+    "ResetType": 1
   },
   "99021": {
+    "StackLimit": 9999999,
     "ID": 99021,
-    "ResetType": 1,
-    "StackLimit": 9999999
+    "ResetType": 1
   },
   "99022": {
+    "StackLimit": 9999999,
     "ID": 99022,
-    "ResetType": 1,
-    "StackLimit": 9999999
+    "ResetType": 1
   },
   "99023": {
+    "StackLimit": 9999999,
     "ID": 99023,
-    "ResetType": 1,
-    "StackLimit": 9999999
+    "ResetType": 1
   },
   "99024": {
+    "StackLimit": 9999999,
     "ID": 99024,
-    "ResetType": 1,
-    "StackLimit": 9999999
+    "ResetType": 1
   },
   "99025": {
+    "StackLimit": 9999999,
     "ID": 99025,
-    "ResetType": 1,
-    "StackLimit": 9999999
+    "ResetType": 1
   },
   "300001": {
+    "StackLimit": 9999999,
     "ID": 300001,
-    "ResetType": 0,
-    "StackLimit": 9999999
+    "ResetType": 0
   },
   "300002": {
+    "StackLimit": 9999999,
     "ID": 300002,
-    "ResetType": 0,
-    "StackLimit": 9999999
+    "ResetType": 0
   },
   "300003": {
+    "StackLimit": 9999999,
     "ID": 300003,
-    "ResetType": 1,
-    "StackLimit": 9999999
+    "ResetType": 1
   },
   "300004": {
+    "StackLimit": 9999999,
     "ID": 300004,
-    "ResetType": 1,
-    "StackLimit": 9999999
+    "ResetType": 1
   },
   "300005": {
+    "StackLimit": 9999999,
     "ID": 300005,
-    "ResetType": 0,
-    "StackLimit": 9999999
+    "ResetType": 0
   },
   "300006": {
+    "StackLimit": 9999999,
     "ID": 300006,
-    "ResetType": 0,
-    "StackLimit": 9999999
+    "ResetType": 0
   },
   "300007": {
+    "StackLimit": 9999999,
     "ID": 300007,
-    "ResetType": 0,
-    "StackLimit": 9999999
+    "ResetType": 0
   },
   "99010": {
+    "StackLimit": 9999999,
     "ID": 99010,
-    "ResetType": 1,
-    "StackLimit": 9999999
+    "ResetType": 1
   },
   "99011": {
+    "StackLimit": 9999999,
     "ID": 99011,
-    "ResetType": 1,
-    "StackLimit": 9999999
+    "ResetType": 1
   },
   "99012": {
+    "StackLimit": 9999999,
     "ID": 99012,
-    "ResetType": 1,
-    "StackLimit": 9999999
+    "ResetType": 1
   },
   "99013": {
+    "StackLimit": 9999999,
     "ID": 99013,
-    "ResetType": 1,
-    "StackLimit": 9999999
+    "ResetType": 1
   },
   "99989": {
+    "StackLimit": 9999999,
     "ID": 99989,
-    "ResetType": 1,
-    "StackLimit": 9999999
+    "ResetType": 1
   }
 }

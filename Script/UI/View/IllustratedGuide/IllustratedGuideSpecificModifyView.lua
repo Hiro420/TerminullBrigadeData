@@ -6,6 +6,7 @@ local OrderedMap = require("Framework.DataStruct.OrderedMap")
 local IllustratedGuideData = require("Modules.IllustratedGuide.IllustratedGuideData")
 local IllustratedGuideHandler = require("Protocol.IllustratedGuide.IllustratedGuideHandler")
 local IllustratedGuideSpecificModifyView = Class(ViewBase)
+
 function IllustratedGuideSpecificModifyView:OnBindUIInput()
   if not IsListeningForInputAction(self, "PauseGame") then
     ListenForInputAction("PauseGame", UE.EInputEvent.IE_Pressed, true, {
@@ -26,6 +27,7 @@ function IllustratedGuideSpecificModifyView:OnBindUIInput()
   self.WBP_InteractTipWidgetPrevious:BindInteractAndClickEvent(self, self.PreChangeHero)
   self.WBP_InteractTipWidgetNext:BindInteractAndClickEvent(self, self.NextChangeHero)
 end
+
 function IllustratedGuideSpecificModifyView:OnUnBindUIInput()
   if IsListeningForInputAction(self, "PauseGame") then
     StopListeningForInputAction(self, "PauseGame", UE.EInputEvent.IE_Pressed)
@@ -37,27 +39,32 @@ function IllustratedGuideSpecificModifyView:OnUnBindUIInput()
   self.WBP_InteractTipWidgetPrevious:UnBindInteractAndClickEvent(self, self.PreChangeHero)
   self.WBP_InteractTipWidgetNext:UnBindInteractAndClickEvent(self, self.NextChangeHero)
 end
+
 function IllustratedGuideSpecificModifyView:BindClickHandler()
   self.WBP_InteractTipWidgetEsc.Btn_Main.OnClicked:Add(self, self.BindCloseSelf)
   self.BP_ButtonWithSound_ChangeHero.OnClicked:Add(self, self.BindOnShowChangeTip)
   self.WBP_InteractTipWidgetVideo.Btn_Main.OnPressed:Add(self, self.BindOnShowVideoTipsPressed)
   self.WBP_InteractTipWidgetVideo.Btn_Main.OnReleased:Add(self, self.BindOnShowVideoTipsReleased)
 end
+
 function IllustratedGuideSpecificModifyView:UnBindClickHandler()
   self.WBP_InteractTipWidgetEsc.Btn_Main.OnClicked:Remove(self, self.BindCloseSelf)
   self.BP_ButtonWithSound_ChangeHero.OnClicked:Remove(self, self.BindOnShowChangeTip)
   self.WBP_InteractTipWidgetVideo.Btn_Main.OnPressed:Remove(self, self.BindOnShowVideoTipsPressed)
   self.WBP_InteractTipWidgetVideo.Btn_Main.OnReleased:Remove(self, self.BindOnShowVideoTipsReleased)
 end
+
 function IllustratedGuideSpecificModifyView:OnInit()
   self.DataBindTable = {}
   self.ViewModel = UIModelMgr:Get("IllustratedGuideSpecificModifyViewModel")
   self:BindClickHandler()
   UpdateVisibility(self.WBP_IGuide_GM_Detail.Txt_Desc, false)
 end
+
 function IllustratedGuideSpecificModifyView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function IllustratedGuideSpecificModifyView:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -70,9 +77,11 @@ function IllustratedGuideSpecificModifyView:OnShow(...)
   self:InitHeroList()
   self:PlayAnimation(self.Ani_in)
 end
+
 function IllustratedGuideSpecificModifyView:BindCloseSelf()
   self:PlayAnimation(self.Ani_out)
 end
+
 function IllustratedGuideSpecificModifyView:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -81,6 +90,7 @@ function IllustratedGuideSpecificModifyView:OnHide()
   EventSystem.RemoveListener(EventDef.IllustratedGuide.OnSpecificModifyItemClicked, self.BindOnSpecificModifyItemClicked, self)
   EventSystem.RemoveListener(EventDef.IllustratedGuide.OnUpdateAllSpecificModifyInfo, self.BindOnUpdateAllSpecificModifyInfo, self)
 end
+
 function IllustratedGuideSpecificModifyView:InitHeroList()
   local allCharacterList = LogicRole.GetAllCanSelectCharacterList()
   table.sort(allCharacterList, function(A, B)
@@ -94,18 +104,22 @@ function IllustratedGuideSpecificModifyView:InitHeroList()
     self.HeroToIdxOrderMap:Add(v, i)
   end
 end
+
 function IllustratedGuideSpecificModifyView:BindOnShowChangeTip()
   UpdateVisibility(self.RGAutoLoadPanelChangeHero, true)
   self.RGAutoLoadPanelChangeHero.ChildWidget:InitViewSetChangeHeroTip(self, self.HeroToIdxOrderMap, "Specific_HeroList_Item", false)
 end
+
 function IllustratedGuideSpecificModifyView:GetCurShowHeroId()
   return self.CurSelectHeroId
 end
+
 function IllustratedGuideSpecificModifyView:SelectHeroId(SelectId)
   self.SelectedSpecificModifyId = nil
   self.CurSelectHeroId = SelectId
   self:UpdateViewByHeroId(SelectId)
 end
+
 function IllustratedGuideSpecificModifyView:UpdateViewByHeroId(HeroId)
   local tbHeroMonster = LuaTableMgr.GetLuaTableByName(TableNames.TBHeroMonster)
   if tbHeroMonster and tbHeroMonster[HeroId] then
@@ -128,6 +142,7 @@ function IllustratedGuideSpecificModifyView:UpdateViewByHeroId(HeroId)
     self.RGStateController_HeroLock:ChangeStatus(ELock.Lock)
   end
 end
+
 function IllustratedGuideSpecificModifyView:PreChangeHero(Step)
   local step = Step or 1
   local curSelectId = self:GetCurShowHeroId()
@@ -145,6 +160,7 @@ function IllustratedGuideSpecificModifyView:PreChangeHero(Step)
     end
   end
 end
+
 function IllustratedGuideSpecificModifyView:NextChangeHero(Step)
   local step = Step or 1
   local curSelectId = self:GetCurShowHeroId()
@@ -162,6 +178,7 @@ function IllustratedGuideSpecificModifyView:NextChangeHero(Step)
     end
   end
 end
+
 function IllustratedGuideSpecificModifyView:UpdateSpecificModifyInfo(SpecificModifyId)
   local logicCommandDataSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.ULogicCommandDataSubSystem:StaticClass())
   if nil == logicCommandDataSubsystem then
@@ -190,6 +207,7 @@ function IllustratedGuideSpecificModifyView:UpdateSpecificModifyInfo(SpecificMod
   self.WBP_IGuide_GM_Detail:RefreshDetailPanel(ModifyData, true, true)
   self:BindOnShowVideoTipsReleased()
 end
+
 function IllustratedGuideSpecificModifyView:BindOnShowSkillTips(bShow, Info)
   if self.ShowVideoTipsPressed and false == bShow then
     return
@@ -215,13 +233,16 @@ function IllustratedGuideSpecificModifyView:BindOnShowSkillTips(bShow, Info)
     end
   end
 end
+
 function IllustratedGuideSpecificModifyView:BindOnSpecificModifyItemClicked(SpecificModifyId)
   self.SelectedSpecificModifyId = SpecificModifyId
   self:UpdateSpecificModifyInfo(SpecificModifyId)
 end
+
 function IllustratedGuideSpecificModifyView:BindOnUpdateAllSpecificModifyInfo()
   self:SelectHeroId(self:GetCurShowHeroId())
 end
+
 function IllustratedGuideSpecificModifyView:BindOnShowVideoTipsPressed()
   self.ShowVideoTipsPressed = true
   local info = {}
@@ -231,6 +252,7 @@ function IllustratedGuideSpecificModifyView:BindOnShowVideoTipsPressed()
   end
   self:BindOnShowSkillTips(true, info)
 end
+
 function IllustratedGuideSpecificModifyView:BindOnShowVideoTipsReleased()
   self.ShowVideoTipsPressed = false
   local info = {}
@@ -240,10 +262,12 @@ function IllustratedGuideSpecificModifyView:BindOnShowVideoTipsReleased()
   end
   self:BindOnShowSkillTips(false, info)
 end
+
 function IllustratedGuideSpecificModifyView:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     UIMgr:Hide(ViewID.UI_IllustratedGuideSpecificModify, true)
     UpdateVisibility(self.RGAutoLoadPanelChangeHero, false)
   end
 end
+
 return IllustratedGuideSpecificModifyView

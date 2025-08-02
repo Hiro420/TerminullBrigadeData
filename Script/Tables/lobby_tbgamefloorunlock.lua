@@ -826,13 +826,27 @@ local lobby_tbgamefloorunlock = {
     DropResources = {
       99994,
       240009,
+      99026,
+      99030,
+      99028,
+      99033,
       99989
     },
-    DropResourcesRatioKey = {"99994", "240009"},
+    DropResourcesRatioKey = {
+      "99994",
+      "240009",
+      "99026",
+      "99030",
+      "99028",
+      "99033"
+    },
     DropResourcesRatioValue = {
       NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2307_1", "+260%"),
       NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2307_2", "\230\150\176"),
-      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2307_3", "\230\150\176")
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2307_3", "\230\150\176"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2307_4", "\230\150\176"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2307_5", "\230\150\176"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2307_6", "\230\150\176")
     },
     ExtraEffectsDesc = {},
     FirstPassReward = {},
@@ -840,7 +854,7 @@ local lobby_tbgamefloorunlock = {
     ModifyPackTitleLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "ModifyPackTitle_2307", "\232\137\190\229\174\137\231\154\132\231\165\157\231\166\143"),
     ModifyPackDescLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "ModifyPackDesc_2307", "\229\188\128\229\177\128\229\135\186\231\142\1763\229\165\151\233\154\143\230\156\186\231\154\132\230\157\131\233\153\144\229\165\151\232\163\133\227\128\130\n\228\187\187\233\128\137\229\133\182\228\184\128\232\142\183\229\190\151\232\175\165\229\165\151\232\163\133\228\184\173\231\154\132<CZ_HighLight>\230\137\128\230\156\137</>\230\157\131\233\153\144\227\128\130"),
     CombatPowerCondition = 0,
-    UnlockTipLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "UnlockTip_2307", "\233\128\154\229\133\179<CZ_HighLight>\228\191\174\230\173\163\232\161\140\229\138\168\231\172\1721\229\177\130</>"),
+    UnlockTipLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "UnlockTip_2307", "<CZ_HighLight>\233\128\154\229\133\179\228\191\174\230\173\163\232\161\140\229\138\168\231\172\1721\229\177\130</>"),
     IsUseUnlockTip = true
   },
   [2308] = {
@@ -850,7 +864,7 @@ local lobby_tbgamefloorunlock = {
     gameMode = 1001,
     gameWorldID = 23,
     floor = 8,
-    dependIDs = {10035},
+    dependIDs = {10040},
     initUnlock = false,
     isOpen = true,
     ticketID = 0,
@@ -865,12 +879,28 @@ local lobby_tbgamefloorunlock = {
     },
     DropResources = {
       99994,
-      240009,
+      240008,
+      99018,
+      99019,
+      99026,
+      99030,
+      99028,
+      99033,
       99989
     },
-    DropResourcesRatioKey = {"99994"},
+    DropResourcesRatioKey = {
+      "99994",
+      "240008",
+      "99018",
+      "99019"
+    },
     DropResourcesRatioValue = {
-      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2308_1", "+260%")
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2308_1", "+260%"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2308_2", "\230\150\176"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2308_3", "\230\150\176"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2308_4", "\230\150\176"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2308_5", "\230\150\176"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2308_6", "\230\150\176")
     },
     ExtraEffectsDesc = {},
     FirstPassReward = {},
@@ -878,7 +908,7 @@ local lobby_tbgamefloorunlock = {
     ModifyPackTitleLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "ModifyPackTitle_2308", "\232\137\190\229\174\137\231\154\132\231\165\157\231\166\143"),
     ModifyPackDescLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "ModifyPackDesc_2308", "\229\188\128\229\177\128\229\135\186\231\142\1763\229\165\151\233\154\143\230\156\186\231\154\132\230\157\131\233\153\144\229\165\151\232\163\133\227\128\130\n\228\187\187\233\128\137\229\133\182\228\184\128\232\142\183\229\190\151\232\175\165\229\165\151\232\163\133\228\184\173\231\154\132<CZ_HighLight>\230\137\128\230\156\137</>\230\157\131\233\153\144\227\128\130"),
     CombatPowerCondition = 0,
-    UnlockTipLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "UnlockTip_2308", "\233\128\154\229\133\179<CZ_HighLight>\228\191\174\230\173\163\232\161\140\229\138\168\231\172\1725\229\177\130</>"),
+    UnlockTipLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "UnlockTip_2308", "<CZ_HighLight>\233\128\154\229\133\179\228\191\174\230\173\163\232\161\140\229\138\168\231\172\17210\229\177\130</>"),
     IsUseUnlockTip = true
   },
   [2309] = {
@@ -888,7 +918,7 @@ local lobby_tbgamefloorunlock = {
     gameMode = 1001,
     gameWorldID = 23,
     floor = 9,
-    dependIDs = {10040},
+    dependIDs = {10050},
     initUnlock = false,
     isOpen = true,
     ticketID = 0,
@@ -903,13 +933,20 @@ local lobby_tbgamefloorunlock = {
     },
     DropResources = {
       99994,
-      240008,
+      99018,
+      240026,
+      99026,
+      99030,
+      99028,
+      99033,
+      99019,
       99989
     },
-    DropResourcesRatioKey = {"99994", "240008"},
+    DropResourcesRatioKey = {"99994", "240026"},
     DropResourcesRatioValue = {
       NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2309_1", "+260%"),
-      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2309_2", "\230\150\176")
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2309_2", "\230\150\176"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2309_3", "\230\150\176")
     },
     ExtraEffectsDesc = {},
     FirstPassReward = {},
@@ -917,7 +954,7 @@ local lobby_tbgamefloorunlock = {
     ModifyPackTitleLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "ModifyPackTitle_2309", "\232\137\190\229\174\137\231\154\132\231\165\157\231\166\143"),
     ModifyPackDescLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "ModifyPackDesc_2309", "\229\188\128\229\177\128\229\135\186\231\142\1763\229\165\151\233\154\143\230\156\186\231\154\132\230\157\131\233\153\144\229\165\151\232\163\133\227\128\130\n\228\187\187\233\128\137\229\133\182\228\184\128\232\142\183\229\190\151\232\175\165\229\165\151\232\163\133\228\184\173\231\154\132<CZ_HighLight>\230\137\128\230\156\137</>\230\157\131\233\153\144\227\128\130"),
     CombatPowerCondition = 0,
-    UnlockTipLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "UnlockTip_2309", "\233\128\154\229\133\179<CZ_HighLight>\228\191\174\230\173\163\232\161\140\229\138\168\231\172\17210\229\177\130</>"),
+    UnlockTipLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "UnlockTip_2309", "<CZ_HighLight>\233\128\154\229\133\179\228\191\174\230\173\163\232\161\140\229\138\168\231\172\17220\229\177\130</>"),
     IsUseUnlockTip = true
   },
   [2310] = {
@@ -927,7 +964,7 @@ local lobby_tbgamefloorunlock = {
     gameMode = 1001,
     gameWorldID = 23,
     floor = 10,
-    dependIDs = {10045},
+    dependIDs = {10060},
     initUnlock = false,
     isOpen = true,
     ticketID = 0,
@@ -942,12 +979,25 @@ local lobby_tbgamefloorunlock = {
     },
     DropResources = {
       99994,
-      240008,
+      99034,
+      240027,
+      240026,
+      99026,
+      99030,
+      99028,
+      99033,
+      99019,
       99989
     },
-    DropResourcesRatioKey = {"99994"},
+    DropResourcesRatioKey = {
+      "99994",
+      "240027",
+      "99034"
+    },
     DropResourcesRatioValue = {
-      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2310_1", "+260%")
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2310_1", "+260%"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2310_2", "\230\150\176"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2310_3", "\230\150\176")
     },
     ExtraEffectsDesc = {},
     FirstPassReward = {},
@@ -955,7 +1005,7 @@ local lobby_tbgamefloorunlock = {
     ModifyPackTitleLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "ModifyPackTitle_2310", "\232\137\190\229\174\137\231\154\132\231\165\157\231\166\143"),
     ModifyPackDescLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "ModifyPackDesc_2310", "\229\188\128\229\177\128\229\135\186\231\142\1763\229\165\151\233\154\143\230\156\186\231\154\132\230\157\131\233\153\144\229\165\151\232\163\133\227\128\130\n\228\187\187\233\128\137\229\133\182\228\184\128\232\142\183\229\190\151\232\175\165\229\165\151\232\163\133\228\184\173\231\154\132<CZ_HighLight>\230\137\128\230\156\137</>\230\157\131\233\153\144\227\128\130"),
     CombatPowerCondition = 0,
-    UnlockTipLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "UnlockTip_2310", "\233\128\154\229\133\179<CZ_HighLight>\228\191\174\230\173\163\232\161\140\229\138\168\231\172\17215\229\177\130</>"),
+    UnlockTipLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "UnlockTip_2310", "<CZ_HighLight>\233\128\154\229\133\179\228\191\174\230\173\163\232\161\140\229\138\168\231\172\17230\229\177\130</>"),
     IsUseUnlockTip = true
   },
   [2401] = {
@@ -1183,13 +1233,27 @@ local lobby_tbgamefloorunlock = {
     DropResources = {
       99994,
       240017,
+      99026,
+      99030,
+      99028,
+      99033,
       99989
     },
-    DropResourcesRatioKey = {"99994", "240017"},
+    DropResourcesRatioKey = {
+      "99994",
+      "240017",
+      "99026",
+      "99030",
+      "99028",
+      "99033"
+    },
     DropResourcesRatioValue = {
       NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2407_1", "+260%"),
       NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2407_2", "\230\150\176"),
-      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2407_3", "\230\150\176")
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2407_3", "\230\150\176"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2407_4", "\230\150\176"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2407_5", "\230\150\176"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2407_6", "\230\150\176")
     },
     ExtraEffectsDesc = {},
     FirstPassReward = {},
@@ -1197,7 +1261,7 @@ local lobby_tbgamefloorunlock = {
     ModifyPackTitleLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "ModifyPackTitle_2407", "\232\137\190\229\174\137\231\154\132\231\165\157\231\166\143"),
     ModifyPackDescLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "ModifyPackDesc_2407", "\229\188\128\229\177\128\229\135\186\231\142\1763\229\165\151\233\154\143\230\156\186\231\154\132\230\157\131\233\153\144\229\165\151\232\163\133\227\128\130\n\228\187\187\233\128\137\229\133\182\228\184\128\232\142\183\229\190\151\232\175\165\229\165\151\232\163\133\228\184\173\231\154\132<CZ_HighLight>\230\137\128\230\156\137</>\230\157\131\233\153\144\227\128\130"),
     CombatPowerCondition = 0,
-    UnlockTipLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "UnlockTip_2407", "\233\128\154\229\133\179<CZ_HighLight>\228\191\174\230\173\163\232\161\140\229\138\168\231\172\1721\229\177\130</>"),
+    UnlockTipLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "UnlockTip_2407", "<CZ_HighLight>\233\128\154\229\133\179\228\191\174\230\173\163\232\161\140\229\138\168\231\172\1721\229\177\130</>"),
     IsUseUnlockTip = true
   },
   [2408] = {
@@ -1207,7 +1271,7 @@ local lobby_tbgamefloorunlock = {
     gameMode = 1001,
     gameWorldID = 24,
     floor = 8,
-    dependIDs = {10035},
+    dependIDs = {10040},
     initUnlock = false,
     isOpen = true,
     ticketID = 0,
@@ -1222,12 +1286,26 @@ local lobby_tbgamefloorunlock = {
     },
     DropResources = {
       99994,
-      240017,
+      240016,
+      99018,
+      99019,
+      99026,
+      99030,
+      99028,
+      99033,
       99989
     },
-    DropResourcesRatioKey = {"9999"},
+    DropResourcesRatioKey = {
+      "99994",
+      "240016",
+      "99018",
+      "99019"
+    },
     DropResourcesRatioValue = {
-      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2408_1", "+260%")
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2408_1", "+260%"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2408_2", "\230\150\176"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2408_3", "\230\150\176"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2408_4", "\230\150\176")
     },
     ExtraEffectsDesc = {},
     FirstPassReward = {},
@@ -1235,7 +1313,7 @@ local lobby_tbgamefloorunlock = {
     ModifyPackTitleLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "ModifyPackTitle_2408", "\232\137\190\229\174\137\231\154\132\231\165\157\231\166\143"),
     ModifyPackDescLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "ModifyPackDesc_2408", "\229\188\128\229\177\128\229\135\186\231\142\1763\229\165\151\233\154\143\230\156\186\231\154\132\230\157\131\233\153\144\229\165\151\232\163\133\227\128\130\n\228\187\187\233\128\137\229\133\182\228\184\128\232\142\183\229\190\151\232\175\165\229\165\151\232\163\133\228\184\173\231\154\132<CZ_HighLight>\230\137\128\230\156\137</>\230\157\131\233\153\144\227\128\130"),
     CombatPowerCondition = 0,
-    UnlockTipLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "UnlockTip_2408", "\233\128\154\229\133\179<CZ_HighLight>\228\191\174\230\173\163\232\161\140\229\138\168\231\172\1725\229\177\130</>"),
+    UnlockTipLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "UnlockTip_2408", "<CZ_HighLight>\233\128\154\229\133\179\228\191\174\230\173\163\232\161\140\229\138\168\231\172\17210\229\177\130</>"),
     IsUseUnlockTip = true
   },
   [2409] = {
@@ -1245,7 +1323,7 @@ local lobby_tbgamefloorunlock = {
     gameMode = 1001,
     gameWorldID = 24,
     floor = 9,
-    dependIDs = {10040},
+    dependIDs = {10050},
     initUnlock = false,
     isOpen = true,
     ticketID = 0,
@@ -1260,13 +1338,20 @@ local lobby_tbgamefloorunlock = {
     },
     DropResources = {
       99994,
-      240016,
+      99018,
+      240028,
+      99026,
+      99030,
+      99028,
+      99033,
+      99019,
       99989
     },
-    DropResourcesRatioKey = {"99994", "240016"},
+    DropResourcesRatioKey = {"99994", "240028"},
     DropResourcesRatioValue = {
       NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2409_1", "+260%"),
-      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2409_2", "\230\150\176")
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2409_2", "\230\150\176"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2409_3", "\230\150\176")
     },
     ExtraEffectsDesc = {},
     FirstPassReward = {},
@@ -1274,7 +1359,7 @@ local lobby_tbgamefloorunlock = {
     ModifyPackTitleLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "ModifyPackTitle_2409", "\232\137\190\229\174\137\231\154\132\231\165\157\231\166\143"),
     ModifyPackDescLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "ModifyPackDesc_2409", "\229\188\128\229\177\128\229\135\186\231\142\1763\229\165\151\233\154\143\230\156\186\231\154\132\230\157\131\233\153\144\229\165\151\232\163\133\227\128\130\n\228\187\187\233\128\137\229\133\182\228\184\128\232\142\183\229\190\151\232\175\165\229\165\151\232\163\133\228\184\173\231\154\132<CZ_HighLight>\230\137\128\230\156\137</>\230\157\131\233\153\144\227\128\130"),
     CombatPowerCondition = 0,
-    UnlockTipLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "UnlockTip_2409", "\233\128\154\229\133\179<CZ_HighLight>\228\191\174\230\173\163\232\161\140\229\138\168\231\172\17210\229\177\130</>"),
+    UnlockTipLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "UnlockTip_2409", "<CZ_HighLight>\233\128\154\229\133\179\228\191\174\230\173\163\232\161\140\229\138\168\231\172\17220\229\177\130</>"),
     IsUseUnlockTip = true
   },
   [2410] = {
@@ -1284,7 +1369,7 @@ local lobby_tbgamefloorunlock = {
     gameMode = 1001,
     gameWorldID = 24,
     floor = 10,
-    dependIDs = {10045},
+    dependIDs = {10060},
     initUnlock = false,
     isOpen = true,
     ticketID = 0,
@@ -1299,12 +1384,25 @@ local lobby_tbgamefloorunlock = {
     },
     DropResources = {
       99994,
-      240016,
+      99034,
+      240029,
+      240028,
+      99026,
+      99030,
+      99028,
+      99033,
+      99019,
       99989
     },
-    DropResourcesRatioKey = {"99994"},
+    DropResourcesRatioKey = {
+      "99994",
+      "240029",
+      "99034"
+    },
     DropResourcesRatioValue = {
-      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2410_1", "+260%")
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2410_1", "+260%"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2410_2", "\230\150\176"),
+      NSLOCTEXT("lobby_TBGameFloorUnlock", "OBJGameFloorUnlock_DropResourcesRatioValue_2410_3", "\230\150\176")
     },
     ExtraEffectsDesc = {},
     FirstPassReward = {},
@@ -1312,7 +1410,7 @@ local lobby_tbgamefloorunlock = {
     ModifyPackTitleLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "ModifyPackTitle_2410", "\232\137\190\229\174\137\231\154\132\231\165\157\231\166\143"),
     ModifyPackDescLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "ModifyPackDesc_2410", "\229\188\128\229\177\128\229\135\186\231\142\1763\229\165\151\233\154\143\230\156\186\231\154\132\230\157\131\233\153\144\229\165\151\232\163\133\227\128\130\n\228\187\187\233\128\137\229\133\182\228\184\128\232\142\183\229\190\151\232\175\165\229\165\151\232\163\133\228\184\173\231\154\132<CZ_HighLight>\230\137\128\230\156\137</>\230\157\131\233\153\144\227\128\130"),
     CombatPowerCondition = 0,
-    UnlockTipLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "UnlockTip_2410", "\233\128\154\229\133\179<CZ_HighLight>\228\191\174\230\173\163\232\161\140\229\138\168\231\172\17215\229\177\130</>"),
+    UnlockTipLocMeta = NSLOCTEXT("lobby_TBGameFloorUnlock", "UnlockTip_2410", "<CZ_HighLight>\233\128\154\229\133\179\228\191\174\230\173\163\232\161\140\229\138\168\231\172\17230\229\177\130</>"),
     IsUseUnlockTip = true
   },
   [2501] = {

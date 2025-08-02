@@ -1,4 +1,5 @@
 local WBP_BannerList = UnLua.Class()
+
 function WBP_BannerList:Construct()
   self.CurSelectIndex = 1
   local Count = 0
@@ -15,6 +16,7 @@ function WBP_BannerList:Construct()
   self.WBP_BannerItem_Activity.OnClicked:Add(self, self.BindOnActivityItemClicked)
   self.WBP_BannerItem_MonthCard.OnClicked:Add(self, self.BindOnMonthCardItemClicked)
 end
+
 function WBP_BannerList:BindOnActivityItemClicked(...)
   FuncUtil.AddClickStatistics("ActivityMenu")
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
@@ -23,15 +25,18 @@ function WBP_BannerList:BindOnActivityItemClicked(...)
   end
   UIMgr:Show(ViewID.UI_ActivityPanel, true)
 end
+
 function WBP_BannerList:BindOnMonthCardItemClicked(...)
   local LobbyPanelTagName = LogicLobby.GetLabelTagNameByUIName("UI_MonthCardPanel")
   LogicLobby.ChangeLobbyPanelLabelSelected(LobbyPanelTagName)
 end
+
 function WBP_BannerList:OnMouseWheel(MyGeometry, MouseEvent)
   local Offset = UE.UKismetInputLibrary.PointerEvent_GetWheelDelta(MouseEvent)
   local CurSelectIndex = Offset < 0 and self.CurSelectIndex + 1 or self.CurSelectIndex - 1
   self.WBP_Selector:SetSelectByIndex(CurSelectIndex)
 end
+
 function WBP_BannerList:UpdateBanner()
   local TargetChild
   local AllChildren = self.ScrollBox_Main:GetAllChildren()
@@ -49,4 +54,5 @@ function WBP_BannerList:UpdateBanner()
     self.ScrollBox_Main:ScrollWidgetIntoView(TargetChild, true, UE.EDescendantScrollDestination.Center)
   end
 end
+
 return WBP_BannerList

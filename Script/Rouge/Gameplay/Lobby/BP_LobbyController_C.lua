@@ -24,6 +24,7 @@ local BP_LobbyController_C = UnLua.Class()
 local BanTipId = 303005
 local TeamStateChangeFailErrorCode = 15004
 local TopupFailTipId = 306005
+
 function BP_LobbyController_C:ReceiveBeginPlay()
   LogicAvatar.Init()
   if UE.UKismetSystemLibrary.IsDedicatedServer(self) then
@@ -104,9 +105,11 @@ function BP_LobbyController_C:ReceiveBeginPlay()
   end
   LogicLobby.RequestAllGameModeFloorDataToServer()
 end
+
 function BP_LobbyController_C:Get2DLobbyWidgetClass()
   return UE.UClass.Load("/Game/Rouge/UI/Lobby/MainLobby/WBP_LobbyPanel.WBP_LobbyPanel_C")
 end
+
 function BP_LobbyController_C:BindOnHttpBusinessErrorTip(ErrorCode, ErrorMsg)
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGWaveWindowManager:StaticClass())
   if not WaveWindowManager or "" == ErrorMsg then
@@ -127,6 +130,7 @@ function BP_LobbyController_C:BindOnHttpBusinessErrorTip(ErrorCode, ErrorMsg)
     LogicTeam.AddTeamStateChangeFailRecord()
   end
 end
+
 function BP_LobbyController_C:BindOnHttpBanDelegate(BanInfo)
   ChatDataMgr.UpdateVoiceBanInfo(BanInfo)
   print("BP_LobbyController_C:BindOnHttpBanDelegate", BanInfo.BanReasonId, BanInfo.BanEndTime, BanInfo.ErrorCode)
@@ -148,6 +152,7 @@ function BP_LobbyController_C:BindOnHttpBanDelegate(BanInfo)
   }
   ShowWaveWindowWithConsoleCheck(BanTipId, Params, BanInfo.ErrorCode)
 end
+
 function BP_LobbyController_C:ShowLobbyPanel()
   self:ChangeTo2DLobbyView()
   LogicLobby.HideAllLobbyStreamLevel()
@@ -158,9 +163,11 @@ function BP_LobbyController_C:ShowLobbyPanel()
     LogicTeam.RequestGetMyTeamDataToServer()
   end
 end
+
 function BP_LobbyController_C:ChangeTo2DLobbyView()
   ChangeToLobbyAnimCamera()
 end
+
 function BP_LobbyController_C:JudgeWhetherPlayAfterBeginnerGuidanceMovie(...)
   if not LogicLobby.IsNeedPlayAfterBeginnerGuidanceMovie then
     return false
@@ -187,6 +194,7 @@ function BP_LobbyController_C:JudgeWhetherPlayAfterBeginnerGuidanceMovie(...)
     return true
   end
 end
+
 function BP_LobbyController_C:BindOnCGMovieStop(MovieId)
   print("BP_LobbyController_C:BindOnCGMovieStop", MovieId)
   local Settings = UE.URGLobbySettings.GetLobbySettings()
@@ -196,6 +204,7 @@ function BP_LobbyController_C:BindOnCGMovieStop(MovieId)
     self.bShowMouseCursor = true
   end
 end
+
 function BP_LobbyController_C:PlayLobbyDefaultVideo()
   local LobbySettings = UE.URGLobbySettings.GetLobbySettings()
   local MovieSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGMovieSubSystem:StaticClass())
@@ -214,9 +223,11 @@ function BP_LobbyController_C:PlayLobbyDefaultVideo()
     print("BP_LobbyController_C:PlayLobbyDefaultVideo MediaId is 0!")
   end
 end
+
 function BP_LobbyController_C:K2_OnBecomeViewTarget(PC)
   print("BP_LobbyController_C:OnBecomeViewTarget", PC)
 end
+
 function BP_LobbyController_C:BindOnPurchaseProductsResponseDelegate(Result, InnerCode)
   print("BP_LobbyController_C:BindOnPurchaseProductsResponseDelegate, Result:", Result)
   if 0 == Result then
@@ -227,6 +238,7 @@ function BP_LobbyController_C:BindOnPurchaseProductsResponseDelegate(Result, Inn
     ShowWaveWindow(TopupFailTipId)
   end
 end
+
 function BP_LobbyController_C:BindOnGetProductInfoCallback(RetCode, ProductInfo)
   print("BP_LobbyController_C:BindOnGetProductInfoCallback", RetCode, ProductInfo)
   if 0 ~= RetCode then
@@ -238,13 +250,16 @@ function BP_LobbyController_C:BindOnGetProductInfoCallback(RetCode, ProductInfo)
   end
   EventSystem.Invoke(EventDef.Lobby.UpdateTopupProductInfo)
 end
+
 function BP_LobbyController_C:BindOnCtiShowPayPanel(URL)
   print("BP_LobbyController_C:BindOnCtiShowPayPanel", URL)
   UIMgr:Show(ViewID.UI_MidasPayPanel, false, URL)
 end
+
 function BP_LobbyController_C:BindOnLIWebViewResult(INTLWebViewResult)
   LogicLobby.HandleOnLIWebViewResult(INTLWebViewResult)
 end
+
 function BP_LobbyController_C:ReceiveEndPlay()
   if UE.UKismetSystemLibrary.IsDedicatedServer(self) then
     return
@@ -304,6 +319,7 @@ function BP_LobbyController_C:ReceiveEndPlay()
   local LobbyModule = ModuleManager:Get("LobbyModule")
   LobbyModule:ExitLobby()
 end
+
 function BP_LobbyController_C:OnWindowCloseRequested()
   print("BP_LobbyController_C:OnWindowCloseRequested")
   if DataMgr.GetDistributionChannel() == LogicLobby.DistributionChannelList.WeGame then
@@ -316,6 +332,7 @@ function BP_LobbyController_C:OnWindowCloseRequested()
   end
   return true
 end
+
 function BP_LobbyController_C:OpenLobbyGM()
   if UIMgr:IsShow(ViewID.UI_LobbyGM) then
     UIMgr:Hide(ViewID.UI_LobbyGM)
@@ -323,7 +340,9 @@ function BP_LobbyController_C:OpenLobbyGM()
     UIMgr:Show(ViewID.UI_LobbyGM)
   end
 end
+
 function BP_LobbyController_C:GetCurSceneStatus()
   return UE.ESceneStatus.ELobby
 end
+
 return BP_LobbyController_C

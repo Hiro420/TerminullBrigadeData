@@ -1,4 +1,5 @@
 local WBP_LobbyModViewPanel_C = UnLua.Class()
+
 function WBP_LobbyModViewPanel_C:Construct()
   if self.InitInfo then
     self:UpdateAllModInfo()
@@ -13,6 +14,7 @@ function WBP_LobbyModViewPanel_C:Construct()
     end
   end
 end
+
 function WBP_LobbyModViewPanel_C:InitAllModInfo(TypeID)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if DTSubsystem then
@@ -48,10 +50,12 @@ function WBP_LobbyModViewPanel_C:InitAllModInfo(TypeID)
     end
   end
 end
+
 function WBP_LobbyModViewPanel_C:UpdateAllModInfo()
   self.WBP_SingleModTypePanel_Legend:UpdateModInfo()
   for key, value in iterator(self.CanvasPanel_ESQ:GetAllChildren()) do
     value:UpdateModInfo()
   end
 end
+
 return WBP_LobbyModViewPanel_C

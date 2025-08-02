@@ -1,7 +1,9 @@
 local WBP_LevelCleanTips_C = UnLua.Class()
+
 function WBP_LevelCleanTips_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_LevelCleanTips_C:Init()
   ListenObjectMessage(nil, GMP.MSG_Level_BattleChange, self, self.Show)
   ListenObjectMessage(nil, GMP.MSG_FinishPlayMovie, self, self.OnFinisPlayMovie)
@@ -15,6 +17,7 @@ function WBP_LevelCleanTips_C:Init()
     self:OnLevelEntry(GameLevelSystem:GetLevelId())
   end
 end
+
 function WBP_LevelCleanTips_C:OnLevelEntry(LevelId)
   print("WBP_LevelCleanTips_C:OnLevelEntry", LevelId)
   print("WBP_LevelCleanTips_C:Init()")
@@ -34,6 +37,7 @@ function WBP_LevelCleanTips_C:OnLevelEntry(LevelId)
     end
   end
 end
+
 function WBP_LevelCleanTips_C:UnInit()
   UnListenObjectMessage(GMP.MSG_Level_BattleChange, self)
   UnListenObjectMessage(GMP.MSG_FinishPlayMovie, self)
@@ -41,6 +45,7 @@ function WBP_LevelCleanTips_C:UnInit()
   UnListenObjectMessage(GMP.MSG_Level_OnLevelEntry, self)
   UnListenObjectMessage(GMP.MSG_Level_LevelPass, self)
 end
+
 function WBP_LevelCleanTips_C:OnFinisPlayMovie(CurrMovieId)
   local Result, MovieData = GetRowData(DT.DT_MoviePlaySetting, tostring(CurrMovieId))
   if Result and MovieData.MovieType == UE.EMovieType.EBossDeath then
@@ -48,6 +53,7 @@ function WBP_LevelCleanTips_C:OnFinisPlayMovie(CurrMovieId)
     self:ShowBossInfo()
   end
 end
+
 function WBP_LevelCleanTips_C:OnAISpawned(AIActor)
   print("WBP_LevelCleanTips_C:OnAISpawned()", UE.RGUtil.IsUObjectValid(AIActor))
   if UE.RGUtil.IsUObjectValid(AIActor) and AIActor:IsBossAI() then
@@ -55,6 +61,7 @@ function WBP_LevelCleanTips_C:OnAISpawned(AIActor)
     self:InitBossInfo()
   end
 end
+
 function WBP_LevelCleanTips_C:InitBossInfo()
   local BossActor = self:GetBossActor()
   print("WBP_LevelCleanTips_C:InitBossInfo", BossActor)
@@ -63,6 +70,7 @@ function WBP_LevelCleanTips_C:InitBossInfo()
     print("WBP_LevelCleanTips_C:InitBossInfo BossTypeId", BossActor, self.BossTypeId)
   end
 end
+
 function WBP_LevelCleanTips_C:GetBossActor()
   local aiCharacterActorAry = UE.UGameplayStatics.GetAllActorsOfClass(self, UE.AAICharacterBase.StaticClass(), nil)
   for i, v in iterator(aiCharacterActorAry) do
@@ -78,6 +86,7 @@ function WBP_LevelCleanTips_C:GetBossActor()
   end
   return nil
 end
+
 function WBP_LevelCleanTips_C:OnLevelPass(LevelId)
   print("WBP_LevelCleanTips_C:OnLevelPass", LevelId)
   if self.LevelType == UE.ERGLevelType.BossRoom then
@@ -85,6 +94,7 @@ function WBP_LevelCleanTips_C:OnLevelPass(LevelId)
     self:ShowCleanTips()
   end
 end
+
 function WBP_LevelCleanTips_C:OnAnimationFinished(Ani)
   if Ani == self.TaskAni then
     UpdateVisibility(self.CanvasPanelNormal, false)
@@ -92,6 +102,7 @@ function WBP_LevelCleanTips_C:OnAnimationFinished(Ani)
     UpdateVisibility(self.CanvasPanelBoss, false)
   end
 end
+
 function WBP_LevelCleanTips_C:ShowCleanTips()
   print("WBP_LevelCleanTips_C:Show BossRoom ShowCleanTips")
   local GameLevelSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGGameLevelSystem:StaticClass())
@@ -122,6 +133,7 @@ function WBP_LevelCleanTips_C:ShowCleanTips()
     self:ShowBossInfo()
   end
 end
+
 function WBP_LevelCleanTips_C:Show(LevelBattleActor, RGBattleState)
   print("WBP_LevelCleanTips_C:Show", RGBattleState)
   if RGBattleState ~= UE.ERGBattleState.Finished then
@@ -137,6 +149,7 @@ function WBP_LevelCleanTips_C:Show(LevelBattleActor, RGBattleState)
     self:ShowCleanTips()
   end
 end
+
 function WBP_LevelCleanTips_C:ShowBossInfo()
   local Result, RowData = GetRowData(DT.DT_WorldLevelPool, self.LevelId)
   if not Result then
@@ -156,10 +169,13 @@ function WBP_LevelCleanTips_C:ShowBossInfo()
     self.RGTextBossDesc:SetText(Desc)
   end
 end
+
 function WBP_LevelCleanTips_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_LevelCleanTips_C:Destruct()
   self.Overridden.Destruct(self)
 end
+
 return WBP_LevelCleanTips_C

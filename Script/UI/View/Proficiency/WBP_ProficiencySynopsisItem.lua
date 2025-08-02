@@ -1,16 +1,20 @@
 local RedDotData = require("Modules.RedDot.RedDotData")
 local ProficiencyData = require("Modules.Proficiency.ProficiencyData")
 local WBP_ProficiencySynopsisItem = UnLua.Class()
+
 function WBP_ProficiencySynopsisItem:Construct()
   self.OnRGToggleStateChanged:Bind(self, self.OnSelectToggle)
 end
+
 function WBP_ProficiencySynopsisItem:Destruct()
   self.OnRGToggleStateChanged:Unbind()
 end
+
 function WBP_ProficiencySynopsisItem:OnSelectToggle(bIsChecked, ToggleIdx)
   self.IsSelected = bIsChecked
   self:UpdatePanelVis()
 end
+
 function WBP_ProficiencySynopsisItem:InitProficiencySynopsisItem(HeroId, Level)
   self.CurHeroId = HeroId
   self.CurLevel = Level
@@ -28,6 +32,7 @@ function WBP_ProficiencySynopsisItem:InitProficiencySynopsisItem(HeroId, Level)
   self.Txt_Num_Unlock:SetText(UE.FTextFormat(PageText, NumToTxt(self.CurLevel - 1)))
   self:RefreshAwardInfo(RowInfo.StoryRewardList)
 end
+
 function WBP_ProficiencySynopsisItem:UpdatePanelVis(...)
   UpdateVisibility(self.CanvasPanel_UnSelect, false)
   UpdateVisibility(self.CanvasPanel_Lock, false)
@@ -50,6 +55,7 @@ function WBP_ProficiencySynopsisItem:UpdatePanelVis(...)
     self.Txt_Name_UnSelect:SetText(RowInfo.Name)
   end
 end
+
 function WBP_ProficiencySynopsisItem:RefreshAwardInfo(AwardList)
   local Index = 1
   for index, SingleAwardInfo in ipairs(AwardList) do
@@ -61,10 +67,13 @@ function WBP_ProficiencySynopsisItem:RefreshAwardInfo(AwardList)
   end
   HideOtherItem(self.AwardListPanel, Index, true)
 end
+
 function WBP_ProficiencySynopsisItem:OnMouseEnter()
   UpdateVisibility(self.CanvasPanelHover, true)
 end
+
 function WBP_ProficiencySynopsisItem:OnMouseLeave()
   UpdateVisibility(self.CanvasPanelHover, false)
 end
+
 return WBP_ProficiencySynopsisItem

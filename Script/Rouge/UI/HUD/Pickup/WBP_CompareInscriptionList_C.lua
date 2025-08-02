@@ -1,4 +1,5 @@
 local WBP_CompareInscriptionList_C = UnLua.Class()
+
 function WBP_CompareInscriptionList_C:InitInfo(CurCompareWeapon, IsWeapon, WeaponOrAccessoryId)
   self.CurCompareWeapon = CurCompareWeapon
   self.IsWeapon = IsWeapon
@@ -9,6 +10,7 @@ function WBP_CompareInscriptionList_C:InitInfo(CurCompareWeapon, IsWeapon, Weapo
   end
   self:RefreshInscriptionList()
 end
+
 function WBP_CompareInscriptionList_C:RefreshInscriptionList()
   local AllChildren = self.InscriptionList:GetAllChildren()
   for i, SingleItem in pairs(AllChildren) do
@@ -160,4 +162,5 @@ function WBP_CompareInscriptionList_C:RefreshInscriptionList()
     end
   end
 end
+
 return WBP_CompareInscriptionList_C

@@ -1,4 +1,5 @@
 local WBP_SingleHeroTalentItem_C = UnLua.Class()
+
 function WBP_SingleHeroTalentItem_C:Show(TalentId, Level, CurLevel, CanUpgrade)
   self:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
   self.Txt_Level:SetText(Level)
@@ -47,7 +48,9 @@ function WBP_SingleHeroTalentItem_C:Show(TalentId, Level, CurLevel, CanUpgrade)
     end
   end
 end
+
 function WBP_SingleHeroTalentItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return WBP_SingleHeroTalentItem_C

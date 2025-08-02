@@ -1,7 +1,9 @@
 local WBP_InteractRescueWidget_C = UnLua.Class()
+
 function WBP_InteractRescueWidget_C:UpdateInteractInfo(InteractTipRow, Character)
   self.Txt_InteractTip:SetText(InteractTipRow.Info)
 end
+
 function WBP_InteractRescueWidget_C:OnRescueRatioChange(Character, Ratio)
   local Pawn = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   local InteractHandle = Pawn:GetComponentByClass(UE.URGInteractHandle:StaticClass())
@@ -16,7 +18,9 @@ function WBP_InteractRescueWidget_C:OnRescueRatioChange(Character, Ratio)
   end
   self:SetRenderOpacity(1)
 end
+
 function WBP_InteractRescueWidget_C:HideWidget()
   UpdateVisibility(self, false)
 end
+
 return WBP_InteractRescueWidget_C

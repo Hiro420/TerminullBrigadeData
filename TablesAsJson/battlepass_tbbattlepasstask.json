@@ -1,30 +1,46 @@
 ﻿{
   "3": {
-    "Name": "周常任务",
-    "BattlePassID": 1,
     "ID": 3,
     "TaskGroupID": 10003,
+    "BattlePassID": 1,
+    "NameLocMeta": {
+      "InKey": "Name_3",
+      "InNamespace": "battlepass_TBBattlePassTask",
+      "InTextLiteral": "周常任务"
+    },
     "TaskType": 0
   },
   "1": {
-    "Name": "超载测试周常任务",
-    "BattlePassID": 2,
     "ID": 1,
     "TaskGroupID": 10001,
+    "BattlePassID": 2,
+    "NameLocMeta": {
+      "InKey": "Name_1",
+      "InNamespace": "battlepass_TBBattlePassTask",
+      "InTextLiteral": "超载测试周常任务"
+    },
     "TaskType": 0
   },
   "2": {
-    "Name": "超载测试活动任务",
-    "BattlePassID": 2,
     "ID": 2,
     "TaskGroupID": 10002,
+    "BattlePassID": 2,
+    "NameLocMeta": {
+      "InKey": "Name_2",
+      "InNamespace": "battlepass_TBBattlePassTask",
+      "InTextLiteral": "超载测试活动任务"
+    },
     "TaskType": 1
   },
   "4": {
-    "Name": "活动任务",
-    "BattlePassID": 1,
     "ID": 4,
     "TaskGroupID": 10004,
+    "BattlePassID": 1,
+    "NameLocMeta": {
+      "InKey": "Name_4",
+      "InNamespace": "battlepass_TBBattlePassTask",
+      "InTextLiteral": "活动任务"
+    },
     "TaskType": 1
   }
 }

@@ -1,4 +1,5 @@
 local BP_AvatarRole_C = UnLua.Class()
+
 function BP_AvatarRole_C:ReceiveBeginPlay()
   self.OtherSkeletalMesh = {
     [UE.EAvatarPartType.MainBody] = self.Mesh,
@@ -6,6 +7,7 @@ function BP_AvatarRole_C:ReceiveBeginPlay()
     [UE.EAvatarPartType.Hair] = self.Hair
   }
 end
+
 function BP_AvatarRole_C:RefreshSkeletalMesh(Type, Id)
   local Result, AvatarItemRowInfo = GetDataLibraryObj().GetAvatarItemRowInfo(Id)
   local TargetSkeletalMeshComp = self.OtherSkeletalMesh[Type]
@@ -116,4 +118,5 @@ function BP_AvatarRole_C:RefreshSkeletalMesh(Type, Id)
     end
   end
 end
+
 return BP_AvatarRole_C

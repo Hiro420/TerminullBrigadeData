@@ -1,4 +1,5 @@
 local WBP_PuzzleSubAttrListItem = UnLua.Class()
+
 function WBP_PuzzleSubAttrListItem:Show(AttrId, AttrValue, CompareValue, IsGodAttr, MutationType, InRangeValue)
   self.AttrId = AttrId
   self.AttrValue = AttrValue
@@ -69,6 +70,7 @@ function WBP_PuzzleSubAttrListItem:Show(AttrId, AttrValue, CompareValue, IsGodAt
     end
   end
 end
+
 function WBP_PuzzleSubAttrListItem:PlayRefactorAnim(AttrId, NewValue, MutationType)
   if AttrId ~= self.AttrId then
     self:PlayAnimation(self.Anim_Attribute_IN)
@@ -87,6 +89,7 @@ function WBP_PuzzleSubAttrListItem:PlayRefactorAnim(AttrId, NewValue, MutationTy
     end
   end
 end
+
 function WBP_PuzzleSubAttrListItem:PlayMutationAnim(MutationType)
   if self.MutationType == EMutationType.Normal then
     if MutationType == EMutationType.NegaMutation then
@@ -98,27 +101,35 @@ function WBP_PuzzleSubAttrListItem:PlayMutationAnim(MutationType)
     end
   end
 end
+
 function WBP_PuzzleSubAttrListItem:RegisitMarkArea(ResourceIdList)
   self.WBP_PuzzleRefactorMarkArea:RegisitMarkArea(ResourceIdList)
 end
+
 function WBP_PuzzleSubAttrListItem:ShowPuzzleRefactorMarkArea()
   UpdateVisibility(self.WBP_PuzzleRefactorMarkArea, true)
 end
+
 function WBP_PuzzleSubAttrListItem:ChangeArrowColor(InColor)
   self.Img_Arrow:SetColorAndOpacity(InColor)
 end
+
 function WBP_PuzzleSubAttrListItem:PlaySwitchAnim(...)
   self:PlayAnimation(self.Ani_switch)
 end
+
 function WBP_PuzzleSubAttrListItem:PlayUpgradeSuccessAnim(...)
   self:PlayAnimation(self.Ani_upgrade_succeed)
 end
+
 function WBP_PuzzleSubAttrListItem:Hide(...)
   UpdateVisibility(self, false)
   self:StopAllAnimations()
   self.MutationType = EMutationType.Normal
 end
+
 function WBP_PuzzleSubAttrListItem:Destruct()
   self:Hide()
 end
+
 return WBP_PuzzleSubAttrListItem

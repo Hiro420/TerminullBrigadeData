@@ -1,22 +1,27 @@
 local EquipedWeaponItem = UnLua.Class()
+
 function EquipedWeaponItem:Construct()
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
 end
+
 function EquipedWeaponItem:BindOnMainButtonHovered()
   self.Img_Hovered:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.Txt_Name:SetColorAndOpacity(self.HoveredTextColor)
   EventSystem.Invoke(EventDef.Lobby.LobbyWeaponItemHoverStatusChanged, true, self.WeaponInfo, self.IsEquipped)
 end
+
 function EquipedWeaponItem:BindOnMainButtonUnHovered()
   self.Img_Hovered:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.Txt_Name:SetColorAndOpacity(self.UnHoveredTextColor)
   EventSystem.Invoke(EventDef.Lobby.LobbyWeaponItemHoverStatusChanged, false)
 end
+
 function EquipedWeaponItem:BindOnMainButtonClicked()
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
     self.ParentView.viewModel:SwitchWeaponInfo(false, nil, true)
   end
 end
+
 function EquipedWeaponItem:InitWeaponItem(WeaponInfo, IsEquipped, ParentView)
   self.ParentView = ParentView
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -42,9 +47,11 @@ function EquipedWeaponItem:InitWeaponItem(WeaponInfo, IsEquipped, ParentView)
   self.Txt_Name:SetText(ItemData.Name)
   self:SetElementInfo()
 end
+
 function EquipedWeaponItem:GetWeaponBodyId()
   return tonumber(self.WeaponInfo.resourceId)
 end
+
 function EquipedWeaponItem:SetElementInfo()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -81,18 +88,23 @@ function EquipedWeaponItem:SetElementInfo()
     end
   end
 end
+
 function EquipedWeaponItem:OnMouseEnter(MyGeometry, MouseEvent)
   UpdateVisibility(self.Img_Hovered, true)
 end
+
 function EquipedWeaponItem:OnMouseLeave(MouseEvent)
   UpdateVisibility(self.Img_Hovered, false)
 end
+
 function EquipedWeaponItem:Select()
   UpdateVisibility(self.Img_Selected, true)
 end
+
 function EquipedWeaponItem:UnSelect()
   UpdateVisibility(self.Img_Selected, false)
 end
+
 function EquipedWeaponItem:GetInfoToolTipWidget()
   local WidgetClass = UE.UClass.Load("/Game/Rouge/UI/Lobby/Weapon/WBP_LobbyWeaponDisplayInfo.WBP_LobbyWeaponDisplayInfo_C")
   if WidgetClass and (not self.WeaponToolTipWidget or not self.WeaponToolTipWidget:IsValid()) then
@@ -123,9 +135,11 @@ function EquipedWeaponItem:GetInfoToolTipWidget()
   end
   return self.WeaponToolTipWidget
 end
+
 function EquipedWeaponItem:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.WeaponInfo = nil
   self.ParentView = nil
 end
+
 return EquipedWeaponItem

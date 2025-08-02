@@ -1,4 +1,5 @@
 local WBP_ModLearnedPanel_C = UnLua.Class()
+
 function WBP_ModLearnedPanel_C:Construct()
   local gameState = UE.UGameplayStatics.GetGameState(self)
   if not gameState then
@@ -16,10 +17,12 @@ function WBP_ModLearnedPanel_C:Construct()
   self.modManager = modManager
   self:BindOnModRefreshDelegate(true)
 end
+
 function WBP_ModLearnedPanel_C:Destruct()
   self:BindOnModRefreshDelegate(false)
   self.modManager = nil
 end
+
 function WBP_ModLearnedPanel_C:BindOnModRefreshDelegate(Bind)
   if self.modManager then
     if Bind then
@@ -29,9 +32,11 @@ function WBP_ModLearnedPanel_C:BindOnModRefreshDelegate(Bind)
     end
   end
 end
+
 function WBP_ModLearnedPanel_C:OnModRefreshDelegate()
   self:UpdateModList()
 end
+
 function WBP_ModLearnedPanel_C:UpdateModList()
   if self.modComponent then
     local CharacterMOD
@@ -65,4 +70,5 @@ function WBP_ModLearnedPanel_C:UpdateModList()
     end
   end
 end
+
 return WBP_ModLearnedPanel_C

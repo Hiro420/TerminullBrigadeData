@@ -1,10 +1,13 @@
 local ProficiencyNormalTaskItem = UnLua.Class()
+
 function ProficiencyNormalTaskItem:Construct()
   self.BP_ButtonWithSoundGetAward.OnClicked:Add(self, self.OnSelectClick)
 end
+
 function ProficiencyNormalTaskItem:Destruct()
   self.BP_ButtonWithSoundGetAward.OnClicked:Remove(self, self.OnSelectClick)
 end
+
 function ProficiencyNormalTaskItem:InitProfyNormalTaskItem(TaskId, ParentView)
   self.ParentView = ParentView
   self.TaskId = TaskId
@@ -60,6 +63,7 @@ function ProficiencyNormalTaskItem:InitProfyNormalTaskItem(TaskId, ParentView)
     end
   end
 end
+
 function ProficiencyNormalTaskItem:OnSelectClick()
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
     local state = Logic_MainTask.GetStateByTaskId(self.TaskId)
@@ -68,4 +72,5 @@ function ProficiencyNormalTaskItem:OnSelectClick()
     end
   end
 end
+
 return ProficiencyNormalTaskItem

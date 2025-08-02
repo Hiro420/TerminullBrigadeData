@@ -33,11 +33,13 @@ end
 local LoginHandler = require("Protocol.LoginHandler")
 local BanTipId = 303005
 local BP_RGPlayerController_C = UnLua.Class()
+
 function BP_RGPlayerController_C:Initialize(Initializer)
   print("BP_RGPlayerController_C:Initialize")
   self.GCTimer = nil
   self.GCTickInterval = 0.033
 end
+
 function BP_RGPlayerController_C:ReceiveBeginPlay()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGUIManager:StaticClass())
   if UIManager then
@@ -65,6 +67,7 @@ function BP_RGPlayerController_C:ReceiveBeginPlay()
     UE.URGBlueprintLibrary.CursorVirtualFocus(1)
   end
 end
+
 function BP_RGPlayerController_C:BindOnHttpBanDelegate(BanInfo)
   ChatDataMgr.UpdateVoiceBanInfo(BanInfo)
   print("BP_RGPlayerController_C:BindOnHttpBanDelegate", BanInfo.BanReasonId, BanInfo.BanEndTime, BanInfo.ErrorCode)
@@ -86,9 +89,11 @@ function BP_RGPlayerController_C:BindOnHttpBanDelegate(BanInfo)
   }
   ShowWaveWindowWithConsoleCheck(BanTipId, Params, BanInfo.ErrorCode)
 end
+
 function BP_RGPlayerController_C:BindOnLIWebViewResult(INTLWebViewResult)
   LogicLobby.HandleOnLIWebViewResult(INTLWebViewResult)
 end
+
 function BP_RGPlayerController_C:ReceiveEndPlay()
   if not UE.UKismetSystemLibrary.IsDedicatedServer(self) then
     LogicDamageNumber:Clear()
@@ -131,6 +136,7 @@ function BP_RGPlayerController_C:ReceiveEndPlay()
     end
   end
 end
+
 function BP_RGPlayerController_C:RequestConnectLobbyToServer()
   if WSCommunication and WSCommunication.IsReconnectFail then
     LoginHandler.RequestLogoutToServer()
@@ -144,6 +150,7 @@ function BP_RGPlayerController_C:RequestConnectLobbyToServer()
     end
   end
 end
+
 function BP_RGPlayerController_C:OnWindowCloseRequested()
   print("BP_RGPlayerController_C:OnWindowCloseRequested")
   if DataMgr.GetDistributionChannel() == LogicLobby.DistributionChannelList.WeGame then
@@ -156,6 +163,7 @@ function BP_RGPlayerController_C:OnWindowCloseRequested()
   end
   return true
 end
+
 function BP_RGPlayerController_C:BindHUDEvent()
   LogicRadio.Init()
   BattleData.Init()
@@ -186,26 +194,32 @@ function BP_RGPlayerController_C:BindHUDEvent()
   LogicBeginnerGuidance.Init()
   RGUIMgr:OpenUI(UIConfig.WBP_Marquee.UIName)
 end
+
 function BP_RGPlayerController_C:CreateHUDEvent()
   LogicHUD:CreateHUD()
   NotifyObjectMessage(nil, GMP.MSG_UI_HUD_OnCreate)
 end
+
 function BP_RGPlayerController_C:RefreshHUDEvent()
   LogicPickup.Init()
   Logic_Scroll.Init()
   LogicHUD.RefreshHUDEvent()
 end
+
 function BP_RGPlayerController_C:BP_InitSettlementBattleLegacy(BattleLegacyData)
   print("BP_RGPlayerController_C:BP_InitSettlementBattleLegacy", BattleLegacyData)
   self.Overridden.BP_InitSettlementBattleLegacy(self, BattleLegacyData)
   LogicSettlement:InitBattleLegacyData(BattleLegacyData)
 end
+
 function BP_RGPlayerController_C:BP_OpenMODChoosePanel(NPCCharacterMOD)
 end
+
 function BP_RGPlayerController_C:BP_OnAllPlayerDead()
   LogicSettlement.SetClearanceStatus(SettlementStatus.AllDie)
   NotifyObjectMessage(nil, "OnSettlement")
 end
+
 function BP_RGPlayerController_C:BP_OnGameSuccess(Result)
   if Result == UE.EGameResult.WIN then
     LogicSettlement.SetClearanceStatus(SettlementStatus.Finish)
@@ -214,6 +228,7 @@ function BP_RGPlayerController_C:BP_OnGameSuccess(Result)
   end
   NotifyObjectMessage(nil, "OnSettlement")
 end
+
 function BP_RGPlayerController_C:BP_OnGameSuccessCountDown(DelayTime, ServerUTCTimeStampParam)
   print("BP_RGPlayerController_C:BP_OnGameSuccessCountDown", DelayTime, ServerUTCTimeStampParam)
   RGUIMgr:OpenUI(UIConfig.WBP_SettleCountDown_C.UIName, false)
@@ -222,16 +237,22 @@ function BP_RGPlayerController_C:BP_OnGameSuccessCountDown(DelayTime, ServerUTCT
     CountDownWidget:InitCountDwon(DelayTime)
   end
 end
+
 function BP_RGPlayerController_C:BP_OnSettlementSummaryData(SummaryDataAryParam)
 end
+
 function BP_RGPlayerController_C:BP_OnSettlementModifyData()
 end
+
 function BP_RGPlayerController_C:BP_OnSettlementItemData()
 end
+
 function BP_RGPlayerController_C:OnAttributeModifyUpdate()
 end
+
 function BP_RGPlayerController_C:BP_NotifySkillIsCooldowning()
 end
+
 function BP_RGPlayerController_C:ChooseAIAttributeTarget()
   local ScreenX = UE.UWidgetLayoutLibrary.GetViewportSize(self).X / 2.0
   local ScreenY = UE.UWidgetLayoutLibrary.GetViewportSize(self).Y / 2.0
@@ -251,16 +272,20 @@ function BP_RGPlayerController_C:ChooseAIAttributeTarget()
     end
   end
 end
+
 function BP_RGPlayerController_C:ShowPickupList()
 end
+
 function BP_RGPlayerController_C:BP_CheckIsMvp(PlayerId)
   local MvpPlayer, _ = LogicSettlement:CalMvp(true)
   print("BP_RGPlayerController_C:BP_CheckIsMvp CHJ", PlayerId, MvpPlayer.PlayerId, MvpPlayer.PlayerId == PlayerId)
   return MvpPlayer.PlayerId == PlayerId
 end
+
 function BP_RGPlayerController_C:GetCurSceneStatus()
   return UE.ESceneStatus.EBattle
 end
+
 local ImportantUMG = {
   "WBP_BattleModeTeaching_C",
   "WBP_BattleMode_RuleTip_C",
@@ -268,6 +293,7 @@ local ImportantUMG = {
   "WBP_GenericModifyChooseSell_C",
   "WBP_RGBeginnerGuidancePanel_C"
 }
+
 function BP_RGPlayerController_C:CheckCanOpenUI()
   for i, WidgetName in ipairs(ImportantUMG) do
     if RGUIMgr:GetUI(WidgetName) and RGUIMgr:GetUI(WidgetName).CheckShouldBlockOpenOtherUI then
@@ -280,6 +306,7 @@ function BP_RGPlayerController_C:CheckCanOpenUI()
   end
   return true
 end
+
 function BP_RGPlayerController_C:ShowOrHideRoulette(IsShow)
   if not self:CheckCanOpenUI() then
     return
@@ -296,7 +323,9 @@ function BP_RGPlayerController_C:ShowOrHideRoulette(IsShow)
     RGUIMgr:OpenUI(UIConfig.WBP_HUDRoulette_C.UIName, false)
   end
 end
+
 function BP_RGPlayerController_C:TriggerBossTipsUI(BossType)
   EventSystem.Invoke(EventDef.BossTips.BossTipsUI, BossType)
 end
+
 return BP_RGPlayerController_C

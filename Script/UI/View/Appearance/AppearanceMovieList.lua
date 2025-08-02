@@ -4,18 +4,21 @@ local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local AppearanceMovieList = Class()
 local EscName = "PauseGame"
+
 function AppearanceMovieList:Construct()
   self.Overridden.Construct(self)
   self.BP_ButtonWithSoundMask.OnClicked:Add(self, self.Hide)
   self.RGToggleGroupMovie.OnCheckStateChanged:Add(self, self.OnToggleGroupMovieChanged)
   self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Add(self, self.Hide)
 end
+
 function AppearanceMovieList:Destruct()
   self.BP_ButtonWithSoundMask.OnClicked:Remove(self, self.Hide)
   self.RGToggleGroupMovie.OnCheckStateChanged:Remove(self, self.OnToggleGroupMovieChanged)
   self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Remove(self, self.Hide)
   self.Overridden.Destruct(self)
 end
+
 function AppearanceMovieList:InitMovieList(SkinId)
   UpdateVisibility(self, true)
   self.CurSkinId = SkinId
@@ -44,6 +47,7 @@ function AppearanceMovieList:InitMovieList(SkinId)
   end
   self.RGToggleGroupMovie:SelectId(1)
 end
+
 function AppearanceMovieList:OnToggleGroupMovieChanged(SelectIdParam)
   if not self.CurSkinId then
     return
@@ -76,6 +80,7 @@ function AppearanceMovieList:OnToggleGroupMovieChanged(SelectIdParam)
     end
   end
 end
+
 function AppearanceMovieList:Hide()
   UpdateVisibility(self, false)
   if self.AkEventName then
@@ -83,4 +88,5 @@ function AppearanceMovieList:Hide()
   end
   StopListeningForInputAction(self, EscName, UE.EInputEvent.IE_Pressed)
 end
+
 return AppearanceMovieList

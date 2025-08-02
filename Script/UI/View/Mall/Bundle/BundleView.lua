@@ -4,32 +4,27 @@ local rapidjson = require("rapidjson")
 local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local BundleView = Class(ViewBase)
+
 function BundleView:BindClickHandler()
   self.List.BP_OnItemClicked:Add(self, BundleView.BP_OnItemClicked)
   EventSystem.AddListener(self, EventDef.Mall.OnGetBundleInfo, BundleView.UpDateList)
-  self.WBP_InteractTipWidgetSetting.OnMainButtonClicked:Add(self, self.OpenSetting)
-  ListenForInputAction("OpenSettings", UE.EInputEvent.IE_Pressed, true, {
-    self,
-    self.OpenSetting
-  })
 end
+
 function BundleView:UnBindClickHandler()
-  self.WBP_InteractTipWidgetSetting.OnMainButtonClicked:Remove(self, self.OpenSetting)
-  StopListeningForInputAction(self, "OpenSettings", UE.EInputEvent.IE_Pressed)
 end
-function BundleView:OpenSetting()
-  LogicGameSetting.ShowGameSettingPanel()
-end
+
 function BundleView:OnShowLink(LinkParams)
   self.IsShowLink = true
   SetLobbyPanelCurrencyList(true, {300005})
   UpdateVisibility(self.WBP_InteractTipWidgetSetting, true)
   UpdateVisibility(self.WBP_InteractTipWidgetEsc, true)
 end
+
 function BundleView:ReturnLobby()
   local LobbyDefaultLabelName = LogicLobby.GetDefaultSelectedLabelName()
   LogicLobby.ChangeLobbyPanelLabelSelected(LobbyDefaultLabelName)
 end
+
 function BundleView:OnInit()
   self.DataBindTable = {
     {
@@ -40,9 +35,11 @@ function BundleView:OnInit()
   self.ViewModel = UIModelMgr:Get("BundleViewModel")
   self:BindClickHandler()
 end
+
 function BundleView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function BundleView:OnShow(...)
   UpdateVisibility(self.WBP_InteractTipWidgetSetting, false)
   UpdateVisibility(self.WBP_InteractTipWidgetEsc, false)
@@ -56,6 +53,7 @@ function BundleView:OnShow(...)
   LogicLobby.ChangeLobbyMainModelVis(false)
   self.WBP_InteractTipWidgetEsc:BindInteractAndClickEvent(self, self.ReturnLobby)
 end
+
 function BundleView:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -65,18 +63,22 @@ function BundleView:OnHide()
   self.WBP_InteractTipWidgetEsc:UnBindInteractAndClickEvent(self, self.ReturnLobby)
   SetLobbyPanelCurrencyList(false)
 end
+
 function BundleView:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     self:BindOnOutAnimationFinished()
   end
 end
+
 function BundleView:BindOnOutAnimationFinished()
   EventSystem.Invoke(EventDef.Lobby.OnLobbyLabelSelected, LogicLobby.GetPendingSelectedLabelTagName())
 end
+
 function BundleView:CanDirectSwitch(NextTabWidget)
   self:PlayAnimation(self.Ani_out)
   return false
 end
+
 function BundleView:UpDateList(goodsInfos)
   self.List:ClearListItems()
   if nil == goodsInfos or nil == goodsInfos[self.ShelfIndex] then
@@ -117,6 +119,7 @@ function BundleView:UpDateList(goodsInfos)
     end
   end
 end
+
 function BundleView:BP_OnItemClicked(Item)
   local BundleViewContentModel = UIModelMgr:Get("BundleViewContentModel")
   if BundleViewContentModel then
@@ -133,6 +136,7 @@ function BundleView:BP_OnItemClicked(Item)
     BundleViewContentModel:ShowBundleContent(GainResourcesID, Item.GoodsId, Item)
   end
 end
+
 function BundleView:BindOnResourceUpdate(json)
   local JsonTable = rapidjson.decode(json)
   if JsonTable.proppack == nil then
@@ -142,8 +146,10 @@ function BundleView:BindOnResourceUpdate(json)
     self.ViewModel:GetMallInfo()
   end
 end
+
 function BundleView:OnShowTime(ShowStartTime, ShowEndTime)
   local CurTimeTemp = os.time()
   return tonumber(ShowStartTime) <= tonumber(CurTimeTemp) and tonumber(CurTimeTemp) <= tonumber(ShowEndTime)
 end
+
 return BundleView

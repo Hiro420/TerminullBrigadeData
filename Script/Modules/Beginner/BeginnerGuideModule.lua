@@ -12,8 +12,10 @@ local DisableGuideViews = {
   ViewID.UI_PandoraRootPanel,
   ViewID.UI_Common_GetProps
 }
+
 function BeginnerGuideModule:Ctor()
 end
+
 function BeginnerGuideModule:OnInit()
   if UE.RGUtil.IsDedicatedServer() then
     return
@@ -52,6 +54,7 @@ function BeginnerGuideModule:OnInit()
   self.bCanRequestMyHeroInfo = false
   self.bCanRequestTeamGameFloorData = false
 end
+
 function BeginnerGuideModule:OnShutdown()
   if UE.RGUtil.IsDedicatedServer() then
     return
@@ -69,6 +72,7 @@ function BeginnerGuideModule:OnShutdown()
     end
   end
 end
+
 function BeginnerGuideModule:InitByGuideId(GuideId)
   if self:CheckDisableGuideView() then
     print("ywtao, \229\189\147\229\137\141\230\156\137\231\166\129\230\173\162\229\188\149\229\175\188\231\154\132\231\149\140\233\157\162\230\152\190\231\164\186\239\188\140\228\184\141\232\167\166\229\143\145\229\188\149\229\175\188")
@@ -116,6 +120,7 @@ function BeginnerGuideModule:InitByGuideId(GuideId)
   end
   self:ForceInitByGuideId(GuideId)
 end
+
 function BeginnerGuideModule:ForceInitByGuideId(GuideId)
   BeginnerGuideData.NowGuideId = GuideId
   local NowGuide = BeginnerGuideData:GetNowGuide()
@@ -131,6 +136,7 @@ function BeginnerGuideModule:ForceInitByGuideId(GuideId)
     self:ShowInsideTip(NowGuide.guidelist, GuideId)
   end
 end
+
 function BeginnerGuideModule:BindOnGetFinishedGuideList(JsonTable)
   local NowGuide = BeginnerGuideData:GetNowGuide()
   if nil ~= NowGuide and BeginnerGuideData:CheckGuideIsFinished(NowGuide.id) then
@@ -139,11 +145,13 @@ function BeginnerGuideModule:BindOnGetFinishedGuideList(JsonTable)
     UIModelMgr:Get("BeginnerGuidanceSystemTipsViewModel"):ClearNowGuideInfo()
   end
 end
+
 function BeginnerGuideModule:BindOnDataResetWhenLogin()
   if UIModelMgr:Get("BeginnerGuidanceSystemTipsViewModel") then
     UIModelMgr:Get("BeginnerGuidanceSystemTipsViewModel"):ClearNowGuideInfo()
   end
 end
+
 function BeginnerGuideModule:FinishGuide(GuideId, bIsSkip)
   EventSystem.Invoke(EventDef.BeginnerGuide.OnBeginnerGuideFinished, GuideId)
   local GuideInfo = BeginnerGuideData.GuideList[GuideId]
@@ -161,15 +169,17 @@ function BeginnerGuideModule:FinishGuide(GuideId, bIsSkip)
       GameInstance,
       function()
         if UIMgr:IsShow(ViewID.UI_LobbyMain) then
-          EventSystem.Invoke(EventDef.BeginnerGuide.OnLobbyShow)
+          EventSystem.Invoke(EventDef.BeginnerGuide.OnLobbyShow, true)
         end
       end
     })
   end
 end
+
 function BeginnerGuideModule:UpdateFinishedGuideList()
   BeginnerGuideHandler.RequestGetFinishedGuideListFromServer()
 end
+
 function BeginnerGuideModule:ShowInsideTip(TipIdList, _NowGuideId)
   local BeginnerGuidanceMainPanel = RGUIMgr:GetUI(UIConfig.WBP_RGBeginnerGuidancePanel_C.UIName)
   if not BeginnerGuidanceMainPanel or not RGUIMgr:IsShown(UIConfig.WBP_RGBeginnerGuidancePanel_C.UIName) then
@@ -180,6 +190,7 @@ function BeginnerGuideModule:ShowInsideTip(TipIdList, _NowGuideId)
     BeginnerGuidanceMainPanel:RefreshInfoByTipIdList(TipIdList, _NowGuideId)
   end
 end
+
 function BeginnerGuideModule:BindOnBeginnerMissionFinished(MissionId)
   if nil ~= MissionId and MissionId == BeginnerGuideData.NowGuideId then
     print("ywtao,NowGuideId" .. BeginnerGuideData.NowGuideId .. " is over")
@@ -187,20 +198,36 @@ function BeginnerGuideModule:BindOnBeginnerMissionFinished(MissionId)
     self:FinishGuide(BeginnerGuideData.NowGuideId)
   end
 end
-function BeginnerGuideModule:BindOnLobbyShow()
+
+function BeginnerGuideModule:BindOnLobbyShow(bIsNotDelay)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.OnLobbyShowTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(GameInstance, self.OnLobbyShowTimer)
   end
-  self.OnLobbyShowTimer = UE.UKismetSystemLibrary.K2_SetTimerDelegate({
-    GameInstance,
-    function()
-      BeginnerGuideModule:BindOnLobbyShowDelayFun()
-    end
-  }, 0.5, false)
+  EventSystem.Invoke(EventDef.RootView.ShowOrHideMouseInputBlocking, true)
+  if bIsNotDelay then
+    BeginnerGuideModule:BindOnLobbyShowDelayFun()
+  else
+    self.OnLobbyShowTimer = UE.UKismetSystemLibrary.K2_SetTimerDelegate({
+      GameInstance,
+      function()
+        BeginnerGuideModule:BindOnLobbyShowDelayFun()
+      end
+    }, 0.5, false)
+  end
 end
+
+function BeginnerGuideModule:TryHideMouseInputBlocking()
+  if self.bCanRequestTeamGameFloorData or self.bCanRequestMyHeroInfo then
+    print("ywtao,BeginnerGuideModule:TryHideMouseInputBlocking: bCanRequestTeamGameFloorData or bCanRequestMyHeroInfo is true")
+    return
+  end
+  EventSystem.Invoke(EventDef.RootView.ShowOrHideMouseInputBlocking, false)
+end
+
 function BeginnerGuideModule:BindOnLobbyShowDelayFun()
   if not UIMgr:IsShow(ViewID.UI_LobbyMain) then
     print("ywtao,BeginnerGuideModule:BindOnLobbyShow: UI_LobbyMain is not shown")
+    self:TryHideMouseInputBlocking()
     return
   end
   if #Logic_MainTask.CacheInviteDialogue > 0 then
@@ -225,44 +252,50 @@ function BeginnerGuideModule:BindOnLobbyShowDelayFun()
           break
         end
       end
-      local cb = function()
-        self.bCanRequestTeamGameFloorData = false
-        if not UIMgr:IsShow(ViewID.UI_LobbyMain) then
-          print("ywtao,BeginnerGuideModule:BindOnLobbyShow: UI_LobbyMain is not shown")
-          return
-        end
-        if LogicTeam.CurTeamState ~= LogicTeam.TeamState.Matching then
-          if DataMgr.IsInTeam() and not LogicTeam.IsCaptain() then
-            return
-          end
-          if DataMgr.GetFloorByGameModeIndex(23) > 1 and not BeginnerGuideData:CheckGuideIsFinished(110) then
-            EventSystem.Invoke(EventDef.BeginnerGuide.OnRingedCityUnLockDifficulty2)
-          end
-          if DataMgr.GetFloorByGameModeIndex(24) > 0 and not BeginnerGuideData:CheckGuideIsFinished(103) then
-            EventSystem.Invoke(EventDef.BeginnerGuide.OnBanditUnLock)
-          end
-          local SystemUnlockModule = ModuleManager:Get("SystemUnlockModule")
-          if DataMgr.GetFloorByGameModeIndex(ClimbTowerData.WorldId, ClimbTowerData.GameMode) > 0 and not BeginnerGuideData:CheckGuideIsFinished(111) and SystemUnlockModule and SystemUnlockModule:CheckIsSystemUnlock(7) then
-            EventSystem.Invoke(EventDef.BeginnerGuide.OnClimbTowerUnLock)
-          end
-          if DataMgr.GetFloorByGameModeIndex(33, 3002) > 0 and not BeginnerGuideData:CheckGuideIsFinished(312) and SystemUnlockModule and SystemUnlockModule:CheckIsSystemUnlock(8) then
-            EventSystem.Invoke(EventDef.BeginnerGuide.OnSurvivalUnLock)
-          end
-          if DataMgr.GetFloorByGameModeIndex(100, 3001) > 0 and not BeginnerGuideData:CheckGuideIsFinished(313) and SystemUnlockModule and SystemUnlockModule:CheckIsSystemUnlock(9) then
-            EventSystem.Invoke(EventDef.BeginnerGuide.OnBossRushUnLock)
-          end
-        end
-      end
-      if self.bCanRequestTeamGameFloorData and self:BatchCheckGuideState({
+      if self:BatchCheckGuideState({
         103,
         110,
         111,
         312,
         313
       }, "anynot") then
-        LogicLobby.RequestGetGameFloorDataToServer(cb)
+        local cb = function()
+          self.bCanRequestTeamGameFloorData = false
+          self:TryHideMouseInputBlocking()
+          if not UIMgr:IsShow(ViewID.UI_LobbyMain) then
+            print("ywtao,BeginnerGuideModule:BindOnLobbyShow: UI_LobbyMain is not shown")
+            return
+          end
+          if LogicTeam.CurTeamState ~= LogicTeam.TeamState.Matching then
+            if DataMgr.IsInTeam() and not LogicTeam.IsCaptain() then
+              return
+            end
+            if DataMgr.GetFloorByGameModeIndex(23) > 1 and not BeginnerGuideData:CheckGuideIsFinished(110) then
+              EventSystem.Invoke(EventDef.BeginnerGuide.OnRingedCityUnLockDifficulty2)
+            end
+            if DataMgr.GetFloorByGameModeIndex(24) > 0 and not BeginnerGuideData:CheckGuideIsFinished(103) then
+              EventSystem.Invoke(EventDef.BeginnerGuide.OnBanditUnLock)
+            end
+            local SystemUnlockModule = ModuleManager:Get("SystemUnlockModule")
+            if DataMgr.GetFloorByGameModeIndex(ClimbTowerData.WorldId, ClimbTowerData.GameMode) > 0 and not BeginnerGuideData:CheckGuideIsFinished(111) and SystemUnlockModule and SystemUnlockModule:CheckIsSystemUnlock(7) then
+              EventSystem.Invoke(EventDef.BeginnerGuide.OnClimbTowerUnLock)
+            end
+            if DataMgr.GetFloorByGameModeIndex(33, 3002) > 0 and not BeginnerGuideData:CheckGuideIsFinished(312) and SystemUnlockModule and SystemUnlockModule:CheckIsSystemUnlock(8) then
+              EventSystem.Invoke(EventDef.BeginnerGuide.OnSurvivalUnLock)
+            end
+            if DataMgr.GetFloorByGameModeIndex(100, 3001) > 0 and not BeginnerGuideData:CheckGuideIsFinished(313) and SystemUnlockModule and SystemUnlockModule:CheckIsSystemUnlock(9) then
+              EventSystem.Invoke(EventDef.BeginnerGuide.OnBossRushUnLock)
+            end
+          end
+        end
+        if self.bCanRequestTeamGameFloorData then
+          LogicLobby.RequestGetGameFloorDataToServer(cb)
+        else
+          cb()
+        end
       else
-        cb()
+        self.bCanRequestTeamGameFloorData = false
+        self:TryHideMouseInputBlocking()
       end
       if self:BatchCheckGuideState({
         101,
@@ -271,6 +304,7 @@ function BeginnerGuideModule:BindOnLobbyShowDelayFun()
       }, "anynot") then
         local callback = function()
           self.bCanRequestMyHeroInfo = false
+          self:TryHideMouseInputBlocking()
           if not UIMgr:IsShow(ViewID.UI_LobbyMain) then
             print("ywtao,BeginnerGuideModule:BindOnLobbyShow: UI_LobbyMain is not shown")
             return
@@ -302,9 +336,16 @@ function BeginnerGuideModule:BindOnLobbyShowDelayFun()
         else
           callback()
         end
+      else
+        self.bCanRequestMyHeroInfo = false
+        self:TryHideMouseInputBlocking()
       end
     end, function()
     end)
+  else
+    self.bCanRequestTeamGameFloorData = false
+    self.bCanRequestMyHeroInfo = false
+    self:TryHideMouseInputBlocking()
   end
   for _, GroupId in pairs(Logic_MainTask.GetActiveGroups()) do
     if 2 == Logic_MainTask.GetGroupActiveTask(GroupId).state then
@@ -330,14 +371,17 @@ function BeginnerGuideModule:BindOnLobbyShowDelayFun()
     end
   end
 end
+
 function BeginnerGuideModule:BindOnViewProrityQueueEmpty()
   EventSystem.Invoke(EventDef.BeginnerGuide.OnLobbyShow)
 end
+
 function BeginnerGuideModule:BindPandoraOnCloseRootPanel(AppId)
   if PandoraData:IsDisruptiveUI(AppId) then
     EventSystem.Invoke(EventDef.BeginnerGuide.OnLobbyShow)
   end
 end
+
 function BeginnerGuideModule:CheckDisableGuideView()
   local LobbyModule = ModuleManager:Get("LobbyModule")
   if LobbyModule.CurShowViewData ~= nil then
@@ -361,6 +405,7 @@ function BeginnerGuideModule:CheckDisableGuideView()
   end
   return false
 end
+
 function BeginnerGuideModule:BatchCheckGuideState(GuideIdList, CheckType)
   if type(GuideIdList) == "number" then
     GuideIdList = {GuideIdList}
@@ -382,4 +427,5 @@ function BeginnerGuideModule:BatchCheckGuideState(GuideIdList, CheckType)
   end
   return true
 end
+
 return BeginnerGuideModule

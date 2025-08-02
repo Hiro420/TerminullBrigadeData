@@ -1,6 +1,7 @@
 local WBP_AwardPanel_C = UnLua.Class()
 local SkinHandler = require("Protocol.Appearance.Skin.SkinHandler")
 local EscKeyName = "PauseGame"
+
 function WBP_AwardPanel_C:Construct()
   self.Btn_Confirm.OnClicked:Add(self, self.BindOnConfirmButtonClicked)
   self.Btn_Confirm.OnHovered:Add(self, self.BindOnConfirmButtonHovered)
@@ -9,6 +10,7 @@ function WBP_AwardPanel_C:Construct()
   self.Btn_Equip.OnHovered:Add(self, self.BindOnEquipButtonHovered)
   self.Btn_Equip.OnUnhovered:Add(self, self.BindOnEquipButtonUnhovered)
 end
+
 function WBP_AwardPanel_C:OnShow(ResourceIdList, HeroId)
   self.ResourceIdList = ResourceIdList
   self.HeroId = HeroId
@@ -41,18 +43,23 @@ function WBP_AwardPanel_C:OnShow(ResourceIdList, HeroId)
   self:BindOnConfirmButtonUnhovered()
   self:BindOnEquipButtonUnhovered()
 end
+
 function WBP_AwardPanel_C:ListenForEscKeyNamePressed()
   UIMgr:Hide(ViewID.UI_AwardPanel)
 end
+
 function WBP_AwardPanel_C:BindOnConfirmButtonClicked()
   UIMgr:Hide(ViewID.UI_AwardPanel)
 end
+
 function WBP_AwardPanel_C:BindOnConfirmButtonHovered()
   self.ConfirmHoveredPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_AwardPanel_C:BindOnConfirmButtonUnhovered()
   self.ConfirmHoveredPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_AwardPanel_C:BindOnEquipButtonClicked()
   local AResult, ResourceRowInfo = false
   local BResult, SkinRowInfo = false
@@ -111,16 +118,20 @@ function WBP_AwardPanel_C:BindOnEquipButtonClicked()
   end
   UIMgr:Hide(ViewID.UI_AwardPanel)
 end
+
 function WBP_AwardPanel_C:BindOnEquipButtonHovered()
   self.EquipHoveredPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_AwardPanel_C:BindOnEquipButtonUnhovered()
   self.EquipHoveredPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_AwardPanel_C:OnHide()
   self.ResourceIdList = {}
   if IsListeningForInputAction(self, EscKeyName) then
     StopListeningForInputAction(self, EscKeyName, UE.EInputEvent.IE_Pressed)
   end
 end
+
 return WBP_AwardPanel_C

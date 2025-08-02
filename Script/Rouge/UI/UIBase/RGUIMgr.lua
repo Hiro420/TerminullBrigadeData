@@ -14,14 +14,18 @@ local RGUIMgr = {
   AsyncHandleIDTable = {}
 }
 _G.RGUIMgr = _G.RGUIMgr or RGUIMgr
+
 function RGUIMgr:Init()
   self:InitLayerGroupMap()
 end
+
 function RGUIMgr:UnInit()
   self:Reset()
 end
+
 function RGUIMgr:Tick(DeltaTime)
 end
+
 function RGUIMgr:AsyncOpen(UIName, HideOther, LayerParam)
   if RGUtil.IsDedicatedServer() then
     return
@@ -47,6 +51,7 @@ function RGUIMgr:AsyncOpen(UIName, HideOther, LayerParam)
     self:OpenUI1(UIName, HideOther, LayerParam)
   end
 end
+
 function RGUIMgr:OpenUI(UIName, HideOther, LayerParam)
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return false
@@ -57,6 +62,7 @@ function RGUIMgr:OpenUI(UIName, HideOther, LayerParam)
   end
   return false
 end
+
 function RGUIMgr:OpenUILink(UIName, HideOther, LayerParam, LinkParams, ...)
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return
@@ -70,6 +76,7 @@ function RGUIMgr:OpenUILink(UIName, HideOther, LayerParam, LinkParams, ...)
     end
   end
 end
+
 function RGUIMgr:OpenUI1(UIName, HideOther, LayerParam)
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return false
@@ -84,6 +91,7 @@ function RGUIMgr:OpenUI1(UIName, HideOther, LayerParam)
   end
   return self:CreateUI(UIName, HideOther, LayerParam)
 end
+
 function RGUIMgr:HideUI(UIName)
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return false
@@ -97,6 +105,7 @@ function RGUIMgr:HideUI(UIName)
   end
   return false
 end
+
 function RGUIMgr:HideUI1(UIName)
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return false
@@ -107,6 +116,7 @@ function RGUIMgr:HideUI1(UIName)
   end
   return false
 end
+
 function RGUIMgr:IsShown(UIName)
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return false
@@ -116,6 +126,7 @@ function RGUIMgr:IsShown(UIName)
     return UIManager:IsShownByName(UIName)
   end
 end
+
 function RGUIMgr:IsShown1(UIName)
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return false
@@ -126,6 +137,7 @@ function RGUIMgr:IsShown1(UIName)
   end
   return false
 end
+
 function RGUIMgr:GetUI(UIName)
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return nil
@@ -136,12 +148,14 @@ function RGUIMgr:GetUI(UIName)
   end
   return nil
 end
+
 function RGUIMgr:GetUI1(UIName)
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return nil
   end
   return self.AliveWidgets[UIName]
 end
+
 function RGUIMgr:CloseUI(UIName)
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return false
@@ -151,6 +165,7 @@ function RGUIMgr:CloseUI(UIName)
     return UIManager:K2_CloseUIByName(UIName)
   end
 end
+
 function RGUIMgr:CloseUI1(UIName, bNeedRefreshGroupParam)
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return
@@ -173,6 +188,7 @@ function RGUIMgr:CloseUI1(UIName, bNeedRefreshGroupParam)
     self.AliveWidgets[UIName] = nil
   end
 end
+
 function RGUIMgr:HideAllWidget(IsHide)
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return
@@ -193,9 +209,11 @@ function RGUIMgr:HideAllWidget(IsHide)
   end
   self:SetCanShowWidget(not IsHide)
 end
+
 function RGUIMgr:SetCanShowWidget(CanShowWidget)
   self.bCanShowWidget = CanShowWidget
 end
+
 function RGUIMgr:Display(UIInstance, HideOther, Activate, LayerParam)
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return false
@@ -241,6 +259,7 @@ function RGUIMgr:Display(UIInstance, HideOther, Activate, LayerParam)
   end
   return true
 end
+
 function RGUIMgr:UnDisplay(UIInstance)
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return false
@@ -262,6 +281,7 @@ function RGUIMgr:UnDisplay(UIInstance)
   end
   return true
 end
+
 function RGUIMgr:FocusHighestUIInst()
   local HighestUIInstTemp = self:GetHighestUIInst()
   if HighestUIInstTemp then
@@ -273,6 +293,7 @@ function RGUIMgr:FocusHighestUIInst()
     self.CurrentFocusUI = nil
   end
 end
+
 function RGUIMgr:GetHighestUIInst()
   for i = EUILayer.Count - 1, EUILayer.None + 1, -1 do
     local LayerGroupTemp = self.UILayerGroupMap[i]
@@ -285,6 +306,7 @@ function RGUIMgr:GetHighestUIInst()
   end
   return nil
 end
+
 function RGUIMgr:GetHighestFullScreenUIInst()
   for i = EUILayer.Count - 1, EUILayer.None + 1, -1 do
     local LayerGroupTemp = self.UILayerGroupMap[i]
@@ -297,6 +319,7 @@ function RGUIMgr:GetHighestFullScreenUIInst()
   end
   return nil
 end
+
 function RGUIMgr:InitLayerGroupMap()
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return
@@ -309,6 +332,7 @@ function RGUIMgr:InitLayerGroupMap()
     end
   end
 end
+
 function RGUIMgr:AddToLRUWidgetAry(UIName)
   local Index = table.IndexOf(self.LRUWidgetAry, UIName)
   if Index then
@@ -319,9 +343,11 @@ function RGUIMgr:AddToLRUWidgetAry(UIName)
     table.insert(self.LRUWidgetAry, UIName)
   end
 end
+
 function RGUIMgr:RemoveFromLRUWidgetAry(UIName)
   table.RemoveItem(self.LRUWidgetAry, UIName)
 end
+
 function RGUIMgr:CreateRootWidget(ZOrder)
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return false
@@ -338,6 +364,7 @@ function RGUIMgr:CreateRootWidget(ZOrder)
   end
   return false
 end
+
 function RGUIMgr:CreateUI(UIName, HideOther, LayerParam)
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return false
@@ -368,6 +395,7 @@ function RGUIMgr:CreateUI(UIName, HideOther, LayerParam)
   end
   return false
 end
+
 function RGUIMgr:Reset()
   if UE.UKismetSystemLibrary.IsDedicatedServer(GameInstance) then
     return
@@ -390,6 +418,7 @@ function RGUIMgr:Reset()
   self.UIInstSetRef = {}
   self:SetCanShowWidget(true)
 end
+
 function RGUIMgr:SetNotFullScreenWindowInactive()
   local ContainFullScreenWindow = false
   for i = #self.UILayerGroupMap, EUILayer.None + 1, -1 do
@@ -400,6 +429,7 @@ function RGUIMgr:SetNotFullScreenWindowInactive()
     end
   end
 end
+
 function RGUIMgr:CmpLayerHigherThanSecond(UIInstFirst, UIInstSecond)
   if UIInstFirst:GetUILayer() > UIInstSecond:GetUILayer() then
     return true
@@ -409,4 +439,5 @@ function RGUIMgr:CmpLayerHigherThanSecond(UIInstFirst, UIInstSecond)
   end
   return UIInstFirst:GetZOrder() > UIInstSecond:GetZOrder()
 end
+
 return RGUIMgr

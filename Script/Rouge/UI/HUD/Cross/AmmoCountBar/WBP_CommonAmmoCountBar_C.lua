@@ -1,4 +1,5 @@
 local WBP_CommonAmmoCountBar_C = UnLua.Class()
+
 function WBP_CommonAmmoCountBar_C:InitInfo()
   self:ChangeWidgetVis()
   local OwningCharacter = self:GetOwningPlayerPawn()
@@ -20,6 +21,7 @@ function WBP_CommonAmmoCountBar_C:InitInfo()
   LogicStateComp.PostEnterState:Add(self, WBP_CommonAmmoCountBar_C.BindOnPostEnterState)
   LogicStateComp.PostExitState:Add(self, WBP_CommonAmmoCountBar_C.BindOnPostExitState)
 end
+
 function WBP_CommonAmmoCountBar_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   local OwningCharacter = self:GetOwningPlayerPawn()
@@ -44,10 +46,12 @@ function WBP_CommonAmmoCountBar_C:Hide()
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.ReloadAnimTimer)
   end
 end
+
 function WBP_CommonAmmoCountBar_C:BindOnNotifyAmmoChanged(ClipAmmo)
   self:UpdateAmmoProgress(ClipAmmo)
   self:ClearReloadAnimTimer()
 end
+
 function WBP_CommonAmmoCountBar_C:UpdateAmmoProgress(ClipAmmo)
   local OwningCharacter = self:GetOwningPlayerPawn()
   if not OwningCharacter then
@@ -67,6 +71,7 @@ function WBP_CommonAmmoCountBar_C:UpdateAmmoProgress(ClipAmmo)
     DynamicMaterial:SetScalarParameterValue("percent", Percent)
   end
 end
+
 function WBP_CommonAmmoCountBar_C:BindOnPostEnterState(State)
   if not UE.UBlueprintGameplayTagLibrary.HasTag(self.AffectVisStateList, State, true) then
     return
@@ -76,6 +81,7 @@ function WBP_CommonAmmoCountBar_C:BindOnPostEnterState(State)
     self:PlayReloadAmmoAnimation()
   end
 end
+
 function WBP_CommonAmmoCountBar_C:PlayReloadAmmoAnimation()
   local OwningCharacter = self:GetOwningPlayerPawn()
   if not OwningCharacter then
@@ -107,11 +113,13 @@ function WBP_CommonAmmoCountBar_C:PlayReloadAmmoAnimation()
     end
   }, self.ReloadAmmoAnimFrequency, true)
 end
+
 function WBP_CommonAmmoCountBar_C:ClearReloadAnimTimer()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.ReloadAnimTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.ReloadAnimTimer)
   end
 end
+
 function WBP_CommonAmmoCountBar_C:ChangeWidgetVis()
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   if self:IsAnimationPlaying(self.Ani_out) then
@@ -128,14 +136,18 @@ function WBP_CommonAmmoCountBar_C:ChangeWidgetVis()
     end
   }, self.Duration, false)
 end
+
 function WBP_CommonAmmoCountBar_C:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     self:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_CommonAmmoCountBar_C:BindOnPostExitState(State, bBlocked)
 end
+
 function WBP_CommonAmmoCountBar_C:Destruct()
   self:Hide()
 end
+
 return WBP_CommonAmmoCountBar_C

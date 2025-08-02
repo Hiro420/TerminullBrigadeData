@@ -1,12 +1,15 @@
 local WBP_SurvivalInfoItem_C = require("UI.View.Survival.WBP_SurvivalInfoItem_C")
 local WBP_SurvivalTeamMember = UnLua.Class()
+
 function WBP_SurvivalTeamMember:Construct()
   EventSystem.AddListener(self, EventDef.Lobby.UpdateMyTeamInfo, self.BindOnUpdateMyTeamInfo)
   self.Btn_Fill.OnClicked:Add(self, self.BindOnFillButtonClicked)
 end
+
 function WBP_SurvivalInfoItem_C:Destruct()
   EventSystem.RemoveListener(self, EventDef.Lobby.UpdateMyTeamInfo, self.BindOnUpdateMyTeamInfo)
 end
+
 function WBP_SurvivalTeamMember:InitInfo(PlayerInfo, Index, IsSelf, ParentView)
   self.PlayerInfo = PlayerInfo
   self.IsSelf = IsSelf
@@ -21,14 +24,17 @@ function WBP_SurvivalTeamMember:InitInfo(PlayerInfo, Index, IsSelf, ParentView)
   self:SetInputBoxShow(IsSelf)
   self:BindHandle()
 end
+
 function WBP_SurvivalTeamMember:BindHandle()
   self.WBP_CommonInputBox.OnAddButtonClicked:Add(self, self.UpdateTicket)
   self.WBP_CommonInputBox.OnReduceButtonClicked:Add(self, self.UpdateTicket)
 end
+
 function WBP_SurvivalTeamMember:UnBindHandle()
   self.WBP_CommonInputBox.OnAddButtonClicked:Remove(self, self.UpdateTicket)
   self.WBP_CommonInputBox.OnReduceButtonClicked:Remove(self, self.UpdateTicket)
 end
+
 function WBP_SurvivalTeamMember:UpdateTicket(SelectNum)
   if not DataMgr.IsInTeam() then
     LogicTeam.RequestCreateTeamToServer({
@@ -41,6 +47,7 @@ function WBP_SurvivalTeamMember:UpdateTicket(SelectNum)
     LogicTeam.RequestPreDeductTicket(SelectNum)
   end
 end
+
 function WBP_SurvivalTeamMember:SetInputBoxMaxNum()
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGameMode, TableEnums.ENUMGameMode.SURVIVAL)
   if Result then
@@ -52,11 +59,13 @@ function WBP_SurvivalTeamMember:SetInputBoxMaxNum()
     end
   end
 end
+
 function WBP_SurvivalTeamMember:SetInputBoxShow(IsShow)
   UpdateVisibility(self.CanvasPanel_Ticket, not IsShow)
   UpdateVisibility(self.CanvasPanel_InputBox, IsShow)
   self.TXT_TicketNum:SetText(LogicTeam.GetMemberTicketNum(self.PlayerInfo.roleid))
 end
+
 function WBP_SurvivalTeamMember:CheckCanAdd(CurNum)
   if LogicTeam.GetModeId() ~= TableEnums.ENUMGameMode.SURVIVAL then
     ShowWaveWindow(1465)
@@ -73,12 +82,14 @@ function WBP_SurvivalTeamMember:CheckCanAdd(CurNum)
   end
   return CurNum < OwnNum and LogicTeam.GetTeamTicketNum() < self.ParentView.MaxNum
 end
+
 function WBP_SurvivalTeamMember:CheckCanChange(Num)
   local OwnNum = DataMgr.GetPackbackNumById(99019)
   local TeamMemberCount = math.clamp(#DataMgr.GetTeamMembersInfo(), 1, 3)
   local SingleNeed = self.ParentView.MaxNum / TeamMemberCount
   return Num <= OwnNum and Num <= SingleNeed
 end
+
 function WBP_SurvivalTeamMember:BindOnUpdateMyTeamInfo()
   if not self.PlayerInfo then
     return
@@ -93,6 +104,7 @@ function WBP_SurvivalTeamMember:BindOnUpdateMyTeamInfo()
     self.TXT_TicketNum:SetText(LogicTeam.GetMemberTicketNum(self.PlayerInfo.roleid))
   end
 end
+
 function WBP_SurvivalTeamMember:BindOnFillButtonClicked()
   if LogicTeam.GetModeId() ~= TableEnums.ENUMGameMode.SURVIVAL then
     ShowWaveWindow(1465)
@@ -105,6 +117,7 @@ function WBP_SurvivalTeamMember:BindOnFillButtonClicked()
   end
   local TeamMemberCount = math.clamp(#DataMgr.GetTeamMembersInfo(), 1, 3)
   local SingleNeed = self.ParentView.MaxNum / TeamMemberCount
+  local TeamTickNum = LogicTeam.GetTeamTicketNum(true)
   local SingleTick = LogicTeam:GetMemberTicketNum(DataMgr:GetUserId())
   if SingleNeed < SingleTick then
     if not DataMgr.IsInTeam() then
@@ -123,11 +136,11 @@ function WBP_SurvivalTeamMember:BindOnFillButtonClicked()
       LogicTeam.RequestCreateTeamToServer({
         self,
         function()
-          LogicTeam.RequestPreDeductTicket(math.min(SingleNeed, OwnNum))
+          LogicTeam.RequestPreDeductTicket(math.min(SingleNeed, OwnNum, self.ParentView.MaxNum - TeamTickNum))
         end
       })
     else
-      LogicTeam.RequestPreDeductTicket(math.min(SingleNeed, OwnNum))
+      LogicTeam.RequestPreDeductTicket(math.min(SingleNeed, OwnNum, self.ParentView.MaxNum - TeamTickNum))
     end
     if OwnNum >= SingleNeed then
       ShowWaveWindow(1464)
@@ -136,4 +149,5 @@ function WBP_SurvivalTeamMember:BindOnFillButtonClicked()
     end
   end
 end
+
 return WBP_SurvivalTeamMember

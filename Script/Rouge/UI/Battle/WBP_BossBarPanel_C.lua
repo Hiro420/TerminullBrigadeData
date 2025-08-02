@@ -1,12 +1,15 @@
 local WBP_BossBarPanel_C = UnLua.Class()
+
 function WBP_BossBarPanel_C:Construct()
   self.DisplayBossTable = {}
   self:ListenBossBar(true)
 end
+
 function WBP_BossBarPanel_C:Destruct()
   self:ListenBossBar(false)
   self.DisplayBossTable = {}
 end
+
 function WBP_BossBarPanel_C:GetWidget(Boss)
   for key, value in pairs(self.DisplayBossTable) do
     if value.Boss == Boss then
@@ -25,6 +28,7 @@ function WBP_BossBarPanel_C:GetWidget(Boss)
   HideOtherItem(self.BossBarPanel, Idx + 1, true)
   return Cachetable.Widget
 end
+
 function WBP_BossBarPanel_C:RemoveWidget(Boss)
   local bFindConfig = false
   for key, value in pairs(self.DisplayBossTable) do
@@ -41,6 +45,7 @@ function WBP_BossBarPanel_C:RemoveWidget(Boss)
     end
   end
 end
+
 function WBP_BossBarPanel_C:ListenBossBar(IsListen)
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGUIManager:StaticClass())
   if not UIManager then
@@ -63,6 +68,7 @@ function WBP_BossBarPanel_C:ListenBossBar(IsListen)
     UIManager.ShowSubBossBarDelegate:Remove(self, WBP_BossBarPanel_C.ShowSubBossBar)
   end
 end
+
 function WBP_BossBarPanel_C:BindShowBossBarInfo(Boss, AnimType, RemoveOnDestroy)
   print("WBP_BossBarPanel_C:BindShowBossBarInfo", Boss, table.count(self.DisplayBossTable))
   local BossBarWidget
@@ -94,12 +100,14 @@ function WBP_BossBarPanel_C:BindShowBossBarInfo(Boss, AnimType, RemoveOnDestroy)
     end
   end
 end
+
 function WBP_BossBarPanel_C:ShowSubBossBar(ParentActor, BossSubActor, AnimType)
   local ItemWidget = self:GetWidget(ParentActor)
   if ItemWidget then
     ItemWidget:ShowSubBossBar(BossSubActor)
   end
 end
+
 function WBP_BossBarPanel_C:BindBossBarVisibilityDelegate(Boss, InVisibility, bRemoveWidget)
   if not Boss then
     return
@@ -113,4 +121,5 @@ function WBP_BossBarPanel_C:BindBossBarVisibilityDelegate(Boss, InVisibility, bR
     ItemWidget:SetVisibility(InVisibility)
   end
 end
+
 return WBP_BossBarPanel_C

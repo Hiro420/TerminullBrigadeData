@@ -4,10 +4,12 @@ local ShowType = {
   MaxForSmaller = 1,
   MaxForLarger = 2
 }
+
 function WBP_RGMovieBg:Construct(...)
   EventSystem.AddListenerNew(EventDef.Global.OnViewportResized, self, self.OnViewportResized)
   self:ShowImageOrMovieByPath(self.MediaSource, self.Asset, self.ShowType, self.loop)
 end
+
 function WBP_RGMovieBg:ShowImageOrMovieByPath(MediaSource, Asset, ShowType, loop, callback)
   UpdateVisibility(self.URGImageMovie, true)
   self.callback = callback
@@ -29,10 +31,12 @@ function WBP_RGMovieBg:ShowImageOrMovieByPath(MediaSource, Asset, ShowType, loop
   end
   self:OnViewportResized()
 end
+
 function WBP_RGMovieBg:RestartMedia()
   self.MediaPlayer:Rewind()
   self.MediaPlayer:Play()
 end
+
 function WBP_RGMovieBg:MediaPlayerFinish()
   print("WBP_RGMovieBg:MediaPlayerFinish")
   if not self.loop then
@@ -42,6 +46,7 @@ function WBP_RGMovieBg:MediaPlayerFinish()
     end
   end
 end
+
 function WBP_RGMovieBg:OnViewportResized()
   local scale = UE.URGBlueprintLibrary.GetCurrentViewportScale(UE.RGUtil.GetWorld())
   local ViewportSize = UE.URGBlueprintLibrary.GetCurrentViewportSize(UE.RGUtil.GetWorld())
@@ -65,8 +70,10 @@ function WBP_RGMovieBg:OnViewportResized()
   end
   self.ScaleBoxForShow:SetRenderScale(UE.FVector2D(ScaleBoxSize, ScaleBoxSize))
 end
+
 function WBP_RGMovieBg:Destruct(...)
   EventSystem.RemoveListenerNew(EventDef.Global.OnViewportResized, self, self.OnViewportResized)
   self.MediaPlayer.OnMediaReachedEnd:Remove(self, self.MediaPlayerFinish)
 end
+
 return WBP_RGMovieBg

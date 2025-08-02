@@ -1,4 +1,5 @@
 local WBP_SingleModTypePanel_C = UnLua.Class()
+
 function WBP_SingleModTypePanel_C:InitModInfo(ModInfo)
   local bIsLegend = false
   if ModInfo.ModType == UE.ERGModType.LegendMod then
@@ -42,6 +43,7 @@ function WBP_SingleModTypePanel_C:InitModInfo(ModInfo)
     end
   end
 end
+
 function WBP_SingleModTypePanel_C:UpdateModInfo()
   self.WBP_ModTitleInfo:UpdateModTitles()
   local widget
@@ -49,4 +51,5 @@ function WBP_SingleModTypePanel_C:UpdateModInfo()
     value:UpdateModInfo()
   end
 end
+
 return WBP_SingleModTypePanel_C

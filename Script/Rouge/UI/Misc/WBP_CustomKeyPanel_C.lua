@@ -1,11 +1,14 @@
 local WBP_CustomKeyPanel_C = UnLua.Class()
+
 function WBP_CustomKeyPanel_C:Construct()
 end
+
 function WBP_CustomKeyPanel_C:SaveSettings()
   self:SaveKeyMappings()
   local GameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
   GameUserSettings:SaveSettings()
 end
+
 function WBP_CustomKeyPanel_C:SaveKeyMappings()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -40,9 +43,11 @@ function WBP_CustomKeyPanel_C:SaveKeyMappings()
   LogicGameSetting.ClearPreCustomKeyList()
   EventSystem.Invoke(EventDef.GameSettings.OnKeyChanged, ChangedKeyRowNameList)
 end
+
 function WBP_CustomKeyPanel_C:CancelSaveSettings()
   LogicGameSetting.ClearPreCustomKeyList()
 end
+
 function WBP_CustomKeyPanel_C:ChangeFocusToFirstItem()
   local TargetItem = self.CustomKeyList:GetChildAt(0)
   if TargetItem then
@@ -55,9 +60,11 @@ function WBP_CustomKeyPanel_C:ChangeFocusToFirstItem()
     })
   end
 end
+
 function WBP_CustomKeyPanel_C:DoCustomNavigation(Type)
   EventSystem.Invoke(EventDef.GameSettings.OnItemNavigation, Type)
 end
+
 function WBP_CustomKeyPanel_C:Show()
   LogicGameSetting.ClearPreCustomKeyList()
   local Index = 0
@@ -91,6 +98,7 @@ function WBP_CustomKeyPanel_C:Show()
     end
   end
 end
+
 function WBP_CustomKeyPanel_C:BindOnRestoreButtonClicked()
   local GameUserSetting = UE.URGGameUserSettings.GetRGGameUserSettings()
   local UserId = DataMgr.GetUserId()
@@ -117,11 +125,14 @@ function WBP_CustomKeyPanel_C:BindOnRestoreButtonClicked()
   EnhancedInputLocalPlayerSystem:RemoveAllPlayerMappedKeys(Options)
   EventSystem.Invoke(EventDef.GameSettings.OnKeyChanged, ChangedKeyRowNameList)
 end
+
 function WBP_CustomKeyPanel_C:IsNeedShowSaveTip()
   local List = LogicGameSetting.GetPreCustomKeyList()
   return table.count(List) > 0
 end
+
 function WBP_CustomKeyPanel_C:HidePanel(...)
   LogicGameSetting.ClearPreCustomKeyList()
 end
+
 return WBP_CustomKeyPanel_C

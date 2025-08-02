@@ -1,4 +1,5 @@
 local WBP_SurComingWaveWindow_C = UnLua.Class()
+
 function WBP_SurComingWaveWindow_C:InitSurComingWaveWindow(TextShow, Duration)
   self.Duration = Duration + 1
   self.RGTextBlock:SetText(TextShow)
@@ -12,6 +13,7 @@ function WBP_SurComingWaveWindow_C:InitSurComingWaveWindow(TextShow, Duration)
   }, 1, true)
   self:PlayAnimation(self.Ani_in)
 end
+
 function WBP_SurComingWaveWindow_C:Countdown()
   self.Duration = self.Duration - 1
   if self.Duration <= 0 then
@@ -22,9 +24,11 @@ function WBP_SurComingWaveWindow_C:Countdown()
   end
   self.Text_Countdown:SetText(self.Duration)
 end
+
 function WBP_SurComingWaveWindow_C:OnUnDisplay()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TimerHandle) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.TimerHandle)
   end
 end
+
 return WBP_SurComingWaveWindow_C

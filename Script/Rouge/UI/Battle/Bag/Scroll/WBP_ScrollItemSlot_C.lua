@@ -34,16 +34,19 @@ local SlotDropAvailable = function(self, DragDropItem, PickupItem, PointerEvent)
   end
   Logic_Scroll.PickupScroll(PickupItem, true)
 end
+
 function WBP_ScrollItemSlot_C:Construct()
   self.Overridden.Construct(self)
   self.ScrollId = -1
   self.Index = -1
   self.bIsHovered = false
 end
+
 function WBP_ScrollItemSlot_C:InitScrollItemSlot()
   self.WBP_DragDropItem:SetDragAvailableCallback(self, self, self.WBP_ScrollItem, SlotDragAvailable, EndDrag)
   self.WBP_DragDropItem:SetDropAvailableCallback(self, self, SlotDropAvailable)
 end
+
 function WBP_ScrollItemSlot_C:UpdateScrollData(ScollId, UpdateScrollTips, ParentView, Index, ScrollTipsOpenType)
   self.ParentView = ParentView
   self.ScrollId = ScollId
@@ -75,6 +78,7 @@ function WBP_ScrollItemSlot_C:UpdateScrollData(ScollId, UpdateScrollTips, Parent
     end
   end
 end
+
 function WBP_ScrollItemSlot_C:OnMouseButtonDown(MyGeometry, MouseEvent)
   local CommonInputSubsystem = UE.USubsystemBlueprintLibrary.GetLocalPlayerSubsystem(self, UE.UCommonInputSubsystem:StaticClass())
   if CommonInputSubsystem then
@@ -88,9 +92,11 @@ function WBP_ScrollItemSlot_C:OnMouseButtonDown(MyGeometry, MouseEvent)
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function WBP_ScrollItemSlot_C:OnMouseEnter(MyGeometry, MouseEvent)
   self:Hovered(true)
 end
+
 function WBP_ScrollItemSlot_C:Hovered(bIsNeedInit)
   if self.ParentView and self.ScrollId and self.ScrollId > 0 then
     self.UpdateScrollTips(self.ParentView, true, self.ScrollId, self, self.ScrollTipsOpenType, bIsNeedInit)
@@ -99,6 +105,7 @@ function WBP_ScrollItemSlot_C:Hovered(bIsNeedInit)
   PlaySound2DEffect(50006, " WBP_ScrollItemSlot_C:Hovered")
   self.bIsHovered = true
 end
+
 function WBP_ScrollItemSlot_C:UnHovered()
   if self.ParentView then
     self.UpdateScrollTips(self.ParentView, false, -1, nil, self.ScrollTipsOpenType)
@@ -106,15 +113,19 @@ function WBP_ScrollItemSlot_C:UnHovered()
   UpdateVisibility(self.URGImageHover, false)
   self.bIsHovered = false
 end
+
 function WBP_ScrollItemSlot_C:OnMouseLeave(MyGeometry, MouseEvent)
   self:UnHovered()
 end
+
 function WBP_ScrollItemSlot_C:UpdateHighlight(bIsShow)
   UpdateVisibility(self.URGImageHover, bIsShow)
 end
+
 function WBP_ScrollItemSlot_C:IsEmptySlot()
   return -1 == self.ScrollId or self.ScrollId == nil
 end
+
 function WBP_ScrollItemSlot_C:Hide()
   UpdateVisibility(self, false)
   if self.bIsHovered then
@@ -122,9 +133,11 @@ function WBP_ScrollItemSlot_C:Hide()
   end
   self:Reset()
 end
+
 function WBP_ScrollItemSlot_C:Destruct()
   self:PopInputAction()
 end
+
 function WBP_ScrollItemSlot_C:Reset()
   self.ParentView = nil
   self.ScrollTipsOpenType = nil
@@ -133,6 +146,7 @@ function WBP_ScrollItemSlot_C:Reset()
   self.ScrollId = -1
   self.bIsHovered = false
 end
+
 function WBP_ScrollItemSlot_C:OnBtnDown()
   local CommonInputSubsystem = UE.USubsystemBlueprintLibrary.GetLocalPlayerSubsystem(self, UE.UCommonInputSubsystem:StaticClass())
   if CommonInputSubsystem then
@@ -143,4 +157,5 @@ function WBP_ScrollItemSlot_C:OnBtnDown()
     end
   end
 end
+
 return WBP_ScrollItemSlot_C

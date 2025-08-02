@@ -1,13 +1,16 @@
 local WBP_WeaponAttrDetailsTip = UnLua.Class()
+
 function WBP_WeaponAttrDetailsTip:Construct()
   self.Overridden.Construct(self)
   self.ButtonAttrExpandOrRetract.OnClicked:Add(self, self.OnAttrExpandOrRetract)
   self.ButtonAttrExpandOrRetract_1.OnClicked:Add(self, self.OnAttrExpandOrRetract)
 end
+
 function WBP_WeaponAttrDetailsTip:Destruct()
   self.ButtonAttrExpandOrRetract.OnClicked:Remove(self, self.OnAttrExpandOrRetract)
   self.ButtonAttrExpandOrRetract_1.OnClicked:Remove(self, self.OnAttrExpandOrRetract)
 end
+
 function WBP_WeaponAttrDetailsTip:InitWeaponAttrDetailsTip(BarrelId, AccessoryIdList, ParentView, IsNewType, TipsItemIsNewType)
   self.AccessoryIdList = AccessoryIdList
   self.MainBodyId = tonumber(BarrelId)
@@ -22,6 +25,7 @@ function WBP_WeaponAttrDetailsTip:InitWeaponAttrDetailsTip(BarrelId, AccessoryId
   UpdateVisibility(self.VerticalBox_Old, not IsNewType)
   UpdateVisibility(self.VerticalBox_New, IsNewType)
 end
+
 function WBP_WeaponAttrDetailsTip:SetAttributeInfo()
   self.MainAttributeInfoTable = {}
   local ScrollBoxAttr = self.IsNewType and self.ScrollBoxAttr_1 or self.ScrollBoxAttr
@@ -152,6 +156,7 @@ function WBP_WeaponAttrDetailsTip:SetAttributeInfo()
     Item:InitInfo(SingleInscriptionId, 0)
   end
 end
+
 function WBP_WeaponAttrDetailsTip:GetRarity(Id, IsBarrel)
   if IsBarrel then
     local WeaponTable = LuaTableMgr.GetLuaTableByName(TableNames.TBWeapon)
@@ -163,6 +168,7 @@ function WBP_WeaponAttrDetailsTip:GetRarity(Id, IsBarrel)
     return TargetAccessoryInfo and TargetAccessoryInfo.AccessoryRarity or UE.ERGItemRarity.EIR_Legend
   end
 end
+
 function WBP_WeaponAttrDetailsTip:SetBasicInfo()
   local TextType = self.IsNewType and self.TextType_1 or self.TextType
   local Txt_Desc = self.IsNewType and self.Txt_Desc_1 or self.Txt_Desc
@@ -213,6 +219,7 @@ function WBP_WeaponAttrDetailsTip:SetBasicInfo()
     end
   end
 end
+
 function WBP_WeaponAttrDetailsTip:SetElementInfo()
   local Txt_Desc = self.IsNewType and self.Txt_Desc_1 or self.Txt_Desc
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -248,11 +255,14 @@ function WBP_WeaponAttrDetailsTip:SetElementInfo()
     Txt_Desc:SetDefaultColorAndOpacity(ElementTextColor)
   end
 end
+
 function WBP_WeaponAttrDetailsTip:GetWeaponAttributeValue(TempString, AttributeConfig, AllMainAttributeListTable)
   return LogicOutsideWeapon.GetWeaponAttributeValue(TempString, AttributeConfig, AllMainAttributeListTable, false)
 end
+
 function WBP_WeaponAttrDetailsTip:OnAnimationFinished(Animation)
 end
+
 function WBP_WeaponAttrDetailsTip:OnAttrExpandOrRetract()
   local RGTextAttr = self.IsNewType and self.RGTextAttr_1 or self.RGTextAttr
   if self.bIsExpand then
@@ -267,14 +277,17 @@ function WBP_WeaponAttrDetailsTip:OnAttrExpandOrRetract()
   end
   self:SetAttributeInfo()
 end
+
 function WBP_WeaponAttrDetailsTip:AttrRetract()
   self.bIsExpand = true
   self:OnAttrExpandOrRetract()
 end
+
 function WBP_WeaponAttrDetailsTip:AttrExpand()
   self.bIsExpand = false
   self:OnAttrExpandOrRetract()
 end
+
 function WBP_WeaponAttrDetailsTip:RefreshWeaponSkill()
   local WBP_WeaponTipsSkillItem = self.IsNewType and self.WBP_WeaponTipsSkillItem_1 or self.WBP_WeaponTipsSkillItem
   local VerticalBoxSkill = self.IsNewType and self.VerticalBoxSkill_1 or self.VerticalBoxSkill
@@ -290,7 +303,9 @@ function WBP_WeaponAttrDetailsTip:RefreshWeaponSkill()
   end
   HideOtherItem(VerticalBoxSkill, index)
 end
+
 function WBP_WeaponAttrDetailsTip:SwitchToWeapon()
   self.CurShowModel = EWeaponShowModel.WeaponModel
 end
+
 return WBP_WeaponAttrDetailsTip

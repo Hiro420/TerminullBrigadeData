@@ -1,4 +1,5 @@
 local BP_NPC_UpgradeModifyBase_C = UnLua.Class()
+
 function BP_NPC_UpgradeModifyBase_C:ReceiveBeginPlay()
   self.Overridden.ReceiveBeginPlay(self)
   if UE.UKismetSystemLibrary.IsServer(self) then
@@ -40,6 +41,7 @@ function BP_NPC_UpgradeModifyBase_C:ReceiveBeginPlay()
     self.RGInteractComponent_UpgradeModify.StatusChangeDelegate:Add(self, self.StatusChanged)
   end
 end
+
 function BP_NPC_UpgradeModifyBase_C:StatusChanged(RGInteractStatus)
   if self.RGInteractComponent_UpgradeModify and self.RGInteractComponent_UpgradeModify.InteractStatus == UE.ERGInteractStatus.Ready then
     self:NPCAppear(true)
@@ -47,6 +49,7 @@ function BP_NPC_UpgradeModifyBase_C:StatusChanged(RGInteractStatus)
     self:NPCAppear(false)
   end
 end
+
 function BP_NPC_UpgradeModifyBase_C:OnUpdateCanUpgrade()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if Character then
@@ -58,11 +61,13 @@ function BP_NPC_UpgradeModifyBase_C:OnUpdateCanUpgrade()
     end
   end
 end
+
 function BP_NPC_UpgradeModifyBase_C:OnUIReady(Widget)
   if Widget:Cast(UE.URGHUDWidget:StaticClass()) then
     self:StatusChanged()
   end
 end
+
 function BP_NPC_UpgradeModifyBase_C:NPCAppear(bIsAppear)
   if not UE.UKismetSystemLibrary.IsServer(self) then
     if bIsAppear then
@@ -81,10 +86,12 @@ function BP_NPC_UpgradeModifyBase_C:NPCAppear(bIsAppear)
     end
   end
 end
+
 function BP_NPC_UpgradeModifyBase_C:FinishInteract(Target, Instigator)
   print("BP_NPC_UpgradeModifyBase_C:FinishInteract", self, Target, Instigator)
   self:NPCAppear(false)
 end
+
 function BP_NPC_UpgradeModifyBase_C:ReceiveEndPlay(EndPlayReason)
   self.Overridden.ReceiveEndPlay(self, EndPlayReason)
   if UE.UKismetSystemLibrary.IsServer(self) then
@@ -113,4 +120,5 @@ function BP_NPC_UpgradeModifyBase_C:ReceiveEndPlay(EndPlayReason)
     end
   end
 end
+
 return BP_NPC_UpgradeModifyBase_C

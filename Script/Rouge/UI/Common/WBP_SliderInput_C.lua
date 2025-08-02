@@ -1,10 +1,14 @@
 local WBP_SliderInput_C = UnLua.Class()
+
 function WBP_SliderInput_C:OnBindUIInput()
 end
+
 function WBP_SliderInput_C:OnUnBindUIInput()
 end
+
 function WBP_SliderInput_C:Construct()
 end
+
 function WBP_SliderInput_C:InitSliderInput(CurValue, MinValue, MaxValue, ChangeFunc)
   self:BindFunction()
   self.CurValue = CurValue
@@ -19,6 +23,7 @@ function WBP_SliderInput_C:InitSliderInput(CurValue, MinValue, MaxValue, ChangeF
   self:RefreshButtonState()
   UpdateVisibility(self, MinValue ~= MaxValue)
 end
+
 function WBP_SliderInput_C:BindFunction()
   self.Editable.OnTextChanged:Remove(self, self.OnTextChanged)
   self.Editable.OnTextChanged:Add(self, self.OnTextChanged)
@@ -31,6 +36,7 @@ function WBP_SliderInput_C:BindFunction()
   self.Max.OnClicked:Remove(self, self.MaxFunc)
   self.Max.OnClicked:Add(self, self.MaxFunc)
 end
+
 function WBP_SliderInput_C:OnTextChanged(Text)
   if tonumber(Text) == nil then
     if nil == self.InputNum then
@@ -62,22 +68,27 @@ function WBP_SliderInput_C:OnTextChanged(Text)
     self:RefreshButtonState()
   end
 end
+
 function WBP_SliderInput_C:OnValueChanged(Value)
   self.CurValue = math.floor(Value)
   self:RefreshButtonState()
 end
+
 function WBP_SliderInput_C:CutFunc()
   self.CurValue = self.CurValue - 1
   self:RefreshButtonState()
 end
+
 function WBP_SliderInput_C:AddFunc()
   self.CurValue = self.CurValue + 1
   self:RefreshButtonState()
 end
+
 function WBP_SliderInput_C:MaxFunc()
   self.CurValue = self.MaxValue
   self:RefreshButtonState()
 end
+
 function WBP_SliderInput_C:RefreshButtonState()
   if tostring(self.Editable:GetText()) ~= tostring(self.CurValue) then
     self.Editable:SetText(tostring(self.CurValue))
@@ -90,6 +101,7 @@ function WBP_SliderInput_C:RefreshButtonState()
     self.ChangeFunc(self.CurValue)
   end
 end
+
 function WBP_SliderInput_C:SetInitAmount(InitAmount)
   if not InitAmount then
     return
@@ -97,4 +109,5 @@ function WBP_SliderInput_C:SetInitAmount(InitAmount)
   self.CurValue = InitAmount
   self:RefreshButtonState()
 end
+
 return WBP_SliderInput_C

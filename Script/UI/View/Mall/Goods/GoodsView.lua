@@ -6,16 +6,19 @@ local MallGoodsViewModel = require("UI.ViewModel.Mall.Goods.MallGoodsViewModel")
 local GoodsView = Class(ViewBase)
 local CurrentPosterWidget
 local PosterWidgetToTableName = {}
+
 function GoodsView:OnRollback()
   if CurrentPosterWidget then
     CurrentPosterWidget.WBP_InteractTipWidgetBuy:BindInteractAndClickEvent(self, self.OnBuyBtnConsoleClicked)
   end
 end
+
 function GoodsView:OnHideByOther()
   if CurrentPosterWidget then
     CurrentPosterWidget.WBP_InteractTipWidgetBuy:UnBindInteractAndClickEvent(self, self.OnBuyBtnConsoleClicked)
   end
 end
+
 function GoodsView:BindNewPosterWidget(PosterWidget)
   if PosterWidget and PosterWidget == CurrentPosterWidget then
     return
@@ -29,22 +32,28 @@ function GoodsView:BindNewPosterWidget(PosterWidget)
     CurrentPosterWidget = PosterWidget
   end
 end
+
 function GoodsView:OnBuyBtnConsoleClicked()
   if PosterWidgetToTableName[CurrentPosterWidget] then
     self:BuyGoods(PosterWidgetToTableName[CurrentPosterWidget])
   end
 end
+
 function GoodsView:BindClickHandler()
 end
+
 function GoodsView:UnBindClickHandler()
 end
+
 function GoodsView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function GoodsView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function GoodsView:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -73,9 +82,11 @@ function GoodsView:OnShow(...)
   self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Add(self, self.ReturnLobby)
   EventSystem.AddListener(self, EventDef.Lobby.RoleSkillTip, GoodsView.BindOnShowSkillTips)
 end
+
 function GoodsView:OpenSetting()
   LogicGameSetting.ShowGameSettingPanel()
 end
+
 function GoodsView:ReturnLobby()
   local LobbyDefaultLabelName = LogicLobby.GetDefaultSelectedLabelName()
   local CurShowLabelName = LogicLobby.GetCurSelectedLabelName()
@@ -85,6 +96,7 @@ function GoodsView:ReturnLobby()
     LogicLobby.ChangeLobbyPanelLabelSelected(LobbyDefaultLabelName)
   end
 end
+
 function GoodsView:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -95,20 +107,25 @@ function GoodsView:OnHide()
   self:BindNewPosterWidget(nil)
   EventSystem.RemoveListener(EventDef.Lobby.RoleSkillTip, GoodsView.BindOnShowSkillTips)
 end
+
 function GoodsView:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     self:BindOnOutAnimationFinished()
   end
 end
+
 function GoodsView:BindOnOutAnimationFinished()
   EventSystem.Invoke(EventDef.Lobby.OnLobbyLabelSelected, LogicLobby.GetPendingSelectedLabelTagName())
 end
+
 function GoodsView:CanDirectSwitch(NextTabWidget)
   self:PlayAnimation(self.Ani_out)
   return false
 end
+
 function GoodsView:Construct()
 end
+
 function GoodsView:AddChildPoster(TableName)
   local Widget = UE.UWidgetBlueprintLibrary.Create(self, self.ChildWidgetClass)
   local NavigationTabWidget = UE.UWidgetBlueprintLibrary.Create(self, self.NavigationTabWidgetClass)
@@ -181,6 +198,7 @@ function GoodsView:AddChildPoster(TableName)
   local ViewportSize = UE.UWidgetLayoutLibrary.GetViewportSize(self)
   Widget.URGImage_41:SetBrushSize(ViewportSize / Scale)
 end
+
 function GoodsView:RefreshSkillInfo(RowInfo, Widget)
   local AllSkillItems = Widget.SkillList:GetAllChildren()
   local SkillItemList = {}
@@ -208,6 +226,7 @@ function GoodsView:RefreshSkillInfo(RowInfo, Widget)
     end
   end
 end
+
 function GoodsView:BindOnShowSkillTips(IsShow, SkillGroupId, KeyName, SkillInputNameAry, inputNameAryPad, SkillItem)
   if IsShow then
     self.NormalSkillTip:RefreshInfo(SkillGroupId, KeyName, nil, SkillInputNameAry, inputNameAryPad)
@@ -217,6 +236,7 @@ function GoodsView:BindOnShowSkillTips(IsShow, SkillGroupId, KeyName, SkillInput
     self.NormalSkillTip:Hide()
   end
 end
+
 function GoodsView:OnTick(InDeltaTime)
   if self.CumulativeInterval == nil then
     self.CumulativeInterval = 0
@@ -245,6 +265,7 @@ function GoodsView:OnTick(InDeltaTime)
     end
   end
 end
+
 function GoodsView:OnUserScrolled(offset)
   self.CumulativeInterval = 0
   local EndOffset = self.ScrollBox_Poster:GetScrollOffsetOfEnd()
@@ -260,13 +281,16 @@ function GoodsView:OnUserScrolled(offset)
     self:BindNewPosterWidget(Widget)
   end
 end
+
 function GoodsView:BuyGoods(Id)
   if self.RecommendPageDatas[Id] then
     ComLink(self.RecommendPageDatas[Id].GoodsJump, nil, "UI_Mall")
   end
 end
+
 function GoodsView:OnMouseButtonUp(MyGeometry, MouseEvent)
 end
+
 function GoodsView:InShowTime(TableName)
   local RecommendPageDatas = LuaTableMgr.GetLuaTableByName(TableNames.TBMallRecommendPage)
   if RecommendPageDatas[TableName] then
@@ -293,4 +317,5 @@ function GoodsView:InShowTime(TableName)
   end
   return false
 end
+
 return GoodsView

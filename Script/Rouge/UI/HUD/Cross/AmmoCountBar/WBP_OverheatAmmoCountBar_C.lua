@@ -1,5 +1,6 @@
 local CommonAmmoCountBar = require("Rouge.UI.HUD.Cross.AmmoCountBar.WBP_CommonAmmoCountBar_C")
 local WBP_OverheatAmmoCountBar_C = UnLua.Class(CommonAmmoCountBar)
+
 function WBP_OverheatAmmoCountBar_C:InitInfo()
   self.Super.InitInfo(self)
   self.LastWeaponsState = {}
@@ -19,6 +20,7 @@ function WBP_OverheatAmmoCountBar_C:InitInfo()
     CurReloadPolicy.OnStateChanged:Add(self, WBP_OverheatAmmoCountBar_C.BindOnOverHeatReloadStateChanged)
   end
 end
+
 function WBP_OverheatAmmoCountBar_C:UpdateAmmoProgress(ClipAmmo)
   local OwningCharacter = self:GetOwningPlayerPawn()
   if not OwningCharacter then
@@ -34,6 +36,7 @@ function WBP_OverheatAmmoCountBar_C:UpdateAmmoProgress(ClipAmmo)
   end
   self.Progress_Ammo:SetPercent(ClipAmmo / CurWeapon:GetMaxClipAmmo())
 end
+
 function WBP_OverheatAmmoCountBar_C:BindOnOverHeatReloadStateChanged()
   local EquipmentComp = self.OwningCharacter:GetComponentByClass(UE.URGEquipmentComponent.StaticClass())
   if not EquipmentComp then
@@ -70,6 +73,7 @@ function WBP_OverheatAmmoCountBar_C:BindOnOverHeatReloadStateChanged()
     self:PlayOrStopOverheatAnim(false)
   end
 end
+
 function WBP_OverheatAmmoCountBar_C:PlayOrStopOverheatAnim(IsPlay)
   if not self.ChargeWarning then
     return
@@ -90,12 +94,14 @@ function WBP_OverheatAmmoCountBar_C:PlayOrStopOverheatAnim(IsPlay)
     end
   end
 end
+
 function WBP_OverheatAmmoCountBar_C:OnAnimationFinished(InAnimation)
   if InAnimation == self.RecoverAmmoAnim then
     UpdateVisibility(self.Progress_Ammo, true)
     UpdateVisibility(self.Progress_Ammo_Anim, false)
   end
 end
+
 function WBP_OverheatAmmoCountBar_C:Destruct()
   self.Super.Destruct(self)
   self:PlayOrStopOverheatAnim(false)
@@ -108,4 +114,5 @@ function WBP_OverheatAmmoCountBar_C:Destruct()
     end
   end
 end
+
 return WBP_OverheatAmmoCountBar_C

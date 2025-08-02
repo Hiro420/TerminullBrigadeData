@@ -627,8 +627,14 @@ local EventDef = {
   InitialRoleSelection = {
     OnSelectRoleSucc = "OnSelectRoleSucc"
   },
-  CustomerService = {CheatShow = "CheatShow"},
-  KoreaCompliance = {ShowAgePic = "ShowAgePic"}
+  CustomerService = {
+    CheatShow = "CheatShow",
+    CheatSwitchTest = "CheatSwitchTest"
+  },
+  KoreaCompliance = {ShowAgePic = "ShowAgePic"},
+  RootView = {
+    ShowOrHideMouseInputBlocking = "ShowOrHideMouseInputBlocking"
+  }
 }
 _G.EventDef = _G.EventDef or EventDef
 return EventDef

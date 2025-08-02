@@ -4,8 +4,10 @@ local ViewSet = UnLua.Class()
 local PuzzleViewId = 4
 local CurrentSelectIndex = 1
 local ToggleItemList = {}
+
 function ViewSet:Construct()
 end
+
 function ViewSet:OnBindUIInput()
   if self.bCanChangeHero then
     self.WBP_InteractTipWidgetHeroLeft:BindInteractAndClickEvent(self, self.PreChangeHero)
@@ -15,6 +17,7 @@ function ViewSet:OnBindUIInput()
   self.WBP_InteractTipWidgetMenuPrev:BindInteractAndClickEvent(self, self.OnSelectPrevMenu)
   self.WBP_InteractTipWidgetMenuNext:BindInteractAndClickEvent(self, self.OnSelectNextMenu)
 end
+
 function ViewSet:OnUnBindUIInput()
   if self.bCanChangeHero then
     self.WBP_InteractTipWidgetHeroLeft:UnBindInteractAndClickEvent(self, self.PreChangeHero)
@@ -24,6 +27,7 @@ function ViewSet:OnUnBindUIInput()
   self.WBP_InteractTipWidgetMenuPrev:UnBindInteractAndClickEvent(self, self.OnSelectPrevMenu)
   self.WBP_InteractTipWidgetMenuNext:UnBindInteractAndClickEvent(self, self.OnSelectNextMenu)
 end
+
 function ViewSet:OnShowViewSet(ParentView, DefaultToggleId, DefaultHeroId, ...)
   self.ParentView = ParentView
   self.TbToggleIdToView = self.ParentView:GetToggleIdToView()
@@ -68,9 +72,11 @@ function ViewSet:OnShowViewSet(ParentView, DefaultToggleId, DefaultHeroId, ...)
   end
   self:PushInputAction()
 end
+
 function ViewSet:SelectToggle(SelectIdx)
   self.RGToggleGroupViewSet:SelectId(SelectIdx)
 end
+
 function ViewSet:OnShowLink(SelectId, ...)
   self.RGToggleGroupViewSet:SelectId(SelectId, true)
   self.SelectViewId = SelectId
@@ -106,6 +112,7 @@ function ViewSet:OnShowLink(SelectId, ...)
     UIMgr:Show(ViewID[selectInfo.ViewID], false, table.unpack(showParams))
   end
 end
+
 function ViewSet:InitHeroList()
   local allCharacterList = LogicRole.GetAllCanSelectCharacterList()
   table.sort(allCharacterList, function(A, B)
@@ -119,10 +126,12 @@ function ViewSet:InitHeroList()
     self.HeroToIdxOrderMap:Add(v, i)
   end
 end
+
 function ViewSet:OnShowChangeTip()
   UpdateVisibility(self.RGAutoLoadPanelChangeHero, true)
   self.RGAutoLoadPanelChangeHero.ChildWidget:InitViewSetChangeHeroTip(self, self.HeroToIdxOrderMap, nil, true)
 end
+
 function ViewSet:OnFirstGroupCheckStateChanged(SelectId)
   self.SelectViewId = SelectId
   local selectInfo
@@ -156,6 +165,7 @@ function ViewSet:OnFirstGroupCheckStateChanged(SelectId)
     self.RGTextHeroName:SetColorAndOpacity(self.HeroNameTextColor)
   end
 end
+
 function ViewSet:UpdateViewByHeroId(HeroId)
   if self.TbToggleIdToView[self.SelectViewId] then
     local viewData = self.TbToggleIdToView[self.SelectViewId]
@@ -189,6 +199,7 @@ function ViewSet:UpdateViewByHeroId(HeroId)
     self.RGTextHeroName:SetText(tbHeroMonster[HeroId].Name)
   end
 end
+
 function ViewSet:IsStstemUnlockByIndex(index)
   if not ToggleItemList[index] then
     return true
@@ -202,6 +213,7 @@ function ViewSet:IsStstemUnlockByIndex(index)
   end
   return false
 end
+
 function ViewSet:OnSelectPrevMenu()
   local StartSelectIndex = CurrentSelectIndex
   while true do
@@ -218,6 +230,7 @@ function ViewSet:OnSelectPrevMenu()
     end
   end
 end
+
 function ViewSet:OnSelectNextMenu()
   local StartSelectIndex = CurrentSelectIndex
   while true do
@@ -235,6 +248,7 @@ function ViewSet:OnSelectNextMenu()
     end
   end
 end
+
 function ViewSet:OnHideViewSet()
   for i, v in pairs(self.TbToggleIdToView) do
     if UIMgr:IsShow(ViewID[v.ViewID]) then
@@ -250,6 +264,7 @@ function ViewSet:OnHideViewSet()
   self.BP_ButtonWithSoundChangeHero.OnClicked:Remove(self, self.OnShowChangeTip)
   self.RGToggleGroupViewSet.OnCheckStateChanged:Remove(self, self.OnFirstGroupCheckStateChanged)
 end
+
 function ViewSet:PreChangeHero(Step)
   if CheckIsVisility(self.RGAutoLoadPanelChangeHero) then
     return
@@ -271,6 +286,7 @@ function ViewSet:PreChangeHero(Step)
     end
   end
 end
+
 function ViewSet:NextChangeHero(Step)
   if CheckIsVisility(self.RGAutoLoadPanelChangeHero) then
     return
@@ -292,6 +308,7 @@ function ViewSet:NextChangeHero(Step)
     end
   end
 end
+
 function ViewSet:HideView(bWithoutAni)
   if self.RGAutoLoadPanelChangeHero.ChildWidget then
     self.RGAutoLoadPanelChangeHero.ChildWidget:Hide(true)
@@ -324,9 +341,11 @@ function ViewSet:HideView(bWithoutAni)
     UIMgr:Hide(self.ParentView.ViewID, true, nil, bWithoutAni)
   end
 end
+
 function ViewSet:GetCurShowHeroId()
   return self.CurSelectHeroId
 end
+
 function ViewSet:SelectHeroId(SelectId)
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
     if self.ParentView.GetCanChangeHero and not self.ParentView:GetCanChangeHero() then
@@ -339,4 +358,5 @@ function ViewSet:SelectHeroId(SelectId)
   self.CurSelectHeroId = SelectId
   self:UpdateViewByHeroId(SelectId)
 end
+
 return ViewSet

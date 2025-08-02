@@ -1,7 +1,9 @@
 local WBP_WeaponCard_C = UnLua.Class()
+
 function WBP_WeaponCard_C:Construct()
   self.Button.OnClicked:Add(self, WBP_WeaponCard_C.OnClicked_Button)
 end
+
 function WBP_WeaponCard_C:UpdateCard()
   if self.WeaponActor then
     local RGDataTableSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self:GetWorld(), UE.URGDataTableSubsystem:StaticClass())
@@ -23,11 +25,13 @@ function WBP_WeaponCard_C:UpdateCard()
     end
   end
 end
+
 function WBP_WeaponCard_C:InitializeUpdate(WeaponActor, Compaion)
   self.WeaponActor = WeaponActor
   self.bCompaion = Compaion
   self:UpdateCard()
 end
+
 function WBP_WeaponCard_C:OnClicked_Button()
   if self.bSelected then
     self:UnselectCard()
@@ -35,4 +39,5 @@ function WBP_WeaponCard_C:OnClicked_Button()
     self:SelectCard()
   end
 end
+
 return WBP_WeaponCard_C

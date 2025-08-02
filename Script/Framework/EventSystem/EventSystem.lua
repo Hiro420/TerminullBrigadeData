@@ -1,10 +1,13 @@
 local EventSystem = {}
+
 function EventSystem.AddListenerNew(EventName, Target, func)
   EventSystem.AddListener(Target, EventName, func)
 end
+
 function EventSystem.RemoveListenerNew(EventName, Target, func)
   EventSystem.RemoveListener(EventName, func, Target)
 end
+
 function EventSystem.AddListener(Target, EventName, func)
   if nil == EventName or nil == func then
     print("\229\156\168EventSystem.AddListener\228\184\173EventName\230\136\150func\228\184\186\231\169\186", EventName, func)
@@ -28,6 +31,7 @@ function EventSystem.AddListener(Target, EventName, func)
     end
   end
 end
+
 function EventSystem.IsListeningForEvent(EventName, func, Target)
   if nil == EventName or nil == func then
     print("\229\156\168EventSystem.CheckIsListener\228\184\173EventName\230\136\150func\228\184\186\231\169\186", EventName, func)
@@ -47,6 +51,7 @@ function EventSystem.IsListeningForEvent(EventName, func, Target)
   end
   return false
 end
+
 function EventSystem.RemoveListener(EventName, func, Target)
   if nil == EventName or nil == func then
     print("\229\156\168EventSystem.RemoveListener\228\184\173EventName\230\136\150func\228\184\186\231\169\186", EventName, func)
@@ -67,6 +72,7 @@ function EventSystem.RemoveListener(EventName, func, Target)
     end
   end
 end
+
 function EventSystem.RemoveEventAllListener(EventName)
   if nil == EventName then
     print("\229\156\168EventSystem.RemoveEventAllListener\228\184\173EventName\228\184\186\231\169\186")
@@ -76,6 +82,7 @@ function EventSystem.RemoveEventAllListener(EventName)
     EventSystem[EventName] = nil
   end
 end
+
 function EventSystem.Invoke(EventName, ...)
   if nil ~= EventName then
     local a = EventSystem[EventName]
@@ -99,5 +106,6 @@ function EventSystem.Invoke(EventName, ...)
     end
   end
 end
+
 _G.EventSystem = _G.EventSystem or EventSystem
 return EventSystem

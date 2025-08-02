@@ -1,5 +1,6 @@
 local WBP_HUD_GenericModifyItem_C = UnLua.Class()
 local GenericModifyConfig = require("GameConfig.GenericModify.GenericModifyConfig")
+
 function WBP_HUD_GenericModifyItem_C:Construct()
   if self.BP_ButtonWithSoundSelect then
     self.BP_ButtonWithSoundSelect.OnClicked:Add(self, self.SelectClick)
@@ -9,6 +10,7 @@ function WBP_HUD_GenericModifyItem_C:Construct()
   self.GenericModifyFXWidgetList = {}
   EventSystem.AddListener(self, EventDef.Inscription.OnTriggerCD, self.BindOnClientUpdateInscriptionCD)
 end
+
 function WBP_HUD_GenericModifyItem_C:BindOnClientUpdateInscriptionCD(InscriptionId, RemainTime)
   local DataAssest = GetLuaInscription(InscriptionId)
   if not DataAssest then
@@ -30,6 +32,7 @@ function WBP_HUD_GenericModifyItem_C:BindOnClientUpdateInscriptionCD(Inscription
     self:StartCD(RemainTime, RemainTime)
   end
 end
+
 function WBP_HUD_GenericModifyItem_C:UpdateCD(InDeltaTime)
   local bGetRemainTimeImmediately = false
   if self.CoolDownTag then
@@ -78,16 +81,19 @@ function WBP_HUD_GenericModifyItem_C:UpdateCD(InDeltaTime)
     end
   end
 end
+
 function WBP_HUD_GenericModifyItem_C:StartCD(RemainTime, TotalTime)
   self.URGImageCD:SetClippingValue(RemainTime / TotalTime)
   self.RemainTime = RemainTime
   self.TotalTime = TotalTime
 end
+
 function WBP_HUD_GenericModifyItem_C:StopCD()
   self.URGImageCD:SetClippingValue(0)
   self.RemainTime = -1
   self.TotalTime = -1
 end
+
 function WBP_HUD_GenericModifyItem_C:InitHudGenericModifyItem(ModifyData, GenericModifySlot, UpdateGenericModifyTipsFunc, ParentView, bIsFromHud, PassiveModifyNum, SelectClick, IsShowAll)
   UpdateVisibility(self, true, true)
   if self.ModifyData ~= nil and nil ~= ModifyData and self.ModifyData.Inscription ~= ModifyData.Inscription then
@@ -165,6 +171,7 @@ function WBP_HUD_GenericModifyItem_C:InitHudGenericModifyItem(ModifyData, Generi
     UpdateVisibility(self.RGTextNumHaveModify, false)
   end
 end
+
 function WBP_HUD_GenericModifyItem_C:PlayAcquireAnim(IsFirst)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -205,6 +212,7 @@ function WBP_HUD_GenericModifyItem_C:PlayAcquireAnim(IsFirst)
     TargetItem:PlayAnimationForward(TargetItem.ani_HUD_GenericModifyItem)
   end
 end
+
 function WBP_HUD_GenericModifyItem_C:GetAcquireFXItemByPath(Path)
   if self.GenericModifyFXWidgetList == nil then
     self.GenericModifyFXWidgetList = {}
@@ -222,6 +230,7 @@ function WBP_HUD_GenericModifyItem_C:GetAcquireFXItemByPath(Path)
   end
   return TargetItem
 end
+
 function WBP_HUD_GenericModifyItem_C:GetInscriptionId(ModifyData)
   if not ModifyData then
     return -1
@@ -236,6 +245,7 @@ function WBP_HUD_GenericModifyItem_C:GetInscriptionId(ModifyData)
   end
   return -1
 end
+
 function WBP_HUD_GenericModifyItem_C:InitHudSpecificModifyItem(SpecificModifyData, GenericModifySlot, UpdateGenericModifyTipsFunc, ParentView, bIsFromHud, PassiveModifyNum, SelectClick, IsShowAll)
   UpdateVisibility(self, true, true)
   self.UpdateGenericModifyTipsFunc = UpdateGenericModifyTipsFunc
@@ -280,6 +290,7 @@ function WBP_HUD_GenericModifyItem_C:InitHudSpecificModifyItem(SpecificModifyDat
     UpdateVisibility(self.RGTextNumHaveModify, false)
   end
 end
+
 function WBP_HUD_GenericModifyItem_C:InitHudModItem(ModData, GenericModifySlot, UpdateGenericModifyTipsFunc, ParentView, bIsFromHud, PassiveModifyNum, SelectClick, IsShowAll)
   UpdateVisibility(self, true, true)
   self.UpdateGenericModifyTipsFunc = UpdateGenericModifyTipsFunc
@@ -333,11 +344,13 @@ function WBP_HUD_GenericModifyItem_C:InitHudModItem(ModData, GenericModifySlot, 
     UpdateVisibility(self.RGTextNumHaveModify, false)
   end
 end
+
 function WBP_HUD_GenericModifyItem_C:SelectClick()
   if self.SelectClickFunc then
     self.SelectClickFunc(self.ParentView, true)
   end
 end
+
 function WBP_HUD_GenericModifyItem_C:OnMouseEnter(MyGeometry, MouseEvent)
   self:HightLight(true)
   if self.UpdateGenericModifyTipsFunc then
@@ -350,15 +363,18 @@ function WBP_HUD_GenericModifyItem_C:OnMouseEnter(MyGeometry, MouseEvent)
     end
   end
 end
+
 function WBP_HUD_GenericModifyItem_C:OnMouseLeave(MouseEvent)
   self:HightLight(false)
   if self.UpdateGenericModifyTipsFunc then
     self.UpdateGenericModifyTipsFunc(self.ParentView, false, self.ModifyData)
   end
 end
+
 function WBP_HUD_GenericModifyItem_C:HightLight(bIsHighlight)
   UpdateVisibility(self.URGImageHighlight, bIsHighlight)
 end
+
 function WBP_HUD_GenericModifyItem_C:Hide()
   UpdateVisibility(self, false)
   self.UpdateGenericModifyTipsFunc = nil
@@ -366,6 +382,7 @@ function WBP_HUD_GenericModifyItem_C:Hide()
   self.ModifyData = nil
   self.SelectClickFunc = nil
 end
+
 function WBP_HUD_GenericModifyItem_C:Destruct()
   EventSystem.RemoveListener(EventDef.Inscription.OnTriggerCD, self.BindOnClientUpdateInscriptionCD, self)
   self.UpdateGenericModifyTipsFunc = nil
@@ -374,4 +391,5 @@ function WBP_HUD_GenericModifyItem_C:Destruct()
   self.SelectClickFunc = nil
   self.GenericModifyFXWidgetList = {}
 end
+
 return WBP_HUD_GenericModifyItem_C

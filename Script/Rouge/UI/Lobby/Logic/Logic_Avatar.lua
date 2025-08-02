@@ -1,6 +1,7 @@
 local rapidjson = require("rapidjson")
 local M = {IsInit = false}
 _G.LogicAvatar = _G.LogicAvatar or M
+
 function LogicAvatar.Init()
   LogicAvatar.AllItemList = {}
   LogicAvatar.DefaultAvatar = {}
@@ -20,6 +21,7 @@ function LogicAvatar.Init()
   end
   EventSystem.AddListener(self, EventDef.Avatar.OnAvatarChooseItemClicked, LogicAvatar.BindOnAvatarChooseItemClicked)
 end
+
 function LogicAvatar.BindOnAvatarChooseItemClicked(Id, Type)
   LogicAvatar.SetPreAvatarInfoByType(Type, Id)
   if Type == UE.EAvatarPartType.MainBody then
@@ -28,6 +30,7 @@ function LogicAvatar.BindOnAvatarChooseItemClicked(Id, Type)
     LogicAvatar.RefreshAvatarRoleById(Type, Id)
   end
 end
+
 function LogicAvatar.DealWithTable()
   local AllAvatarItemRowNames = GetDataLibraryObj().GetAllAvatarRowNames():ToTable()
   for index, SingleItemRowName in ipairs(AllAvatarItemRowNames) do
@@ -63,6 +66,7 @@ function LogicAvatar.DealWithTable()
     end
   end
 end
+
 function LogicAvatar.RefreshDefaultAvatarData()
   local Index = UE.EAvatarPartType.None + 1
   for i = Index, UE.EAvatarPartType.TattooColor do
@@ -74,6 +78,7 @@ function LogicAvatar.RefreshDefaultAvatarData()
     end
   end
 end
+
 function LogicAvatar.GetDefaultAvatarDataByGender(Gender)
   local RGLobbySettings = UE.URGLobbySettings.GetLobbySettings()
   if not RGLobbySettings then
@@ -82,9 +87,11 @@ function LogicAvatar.GetDefaultAvatarDataByGender(Gender)
   local AvatarDefaultConfigList = RGLobbySettings.AvatarDefaultConfig:ToTable()
   return AvatarDefaultConfigList[Gender] and AvatarDefaultConfigList[Gender].Config:ToTable()
 end
+
 function LogicAvatar.GetPreAvatarInfo()
   return LogicAvatar.PreAvatarInfo
 end
+
 function LogicAvatar.SetPreAvatarInfo(InAvatarInfo)
   if not InAvatarInfo or next(InAvatarInfo) == nil or 0 == InAvatarInfo.MainBody then
     local DefaultAvatarConfig = LogicAvatar.GetDefaultAvatarDataByGender(LogicAvatar.CurGender)
@@ -97,6 +104,7 @@ function LogicAvatar.SetPreAvatarInfo(InAvatarInfo)
     end
   end
 end
+
 function LogicAvatar.SetPreAvatarInfoByType(Type, AvatarId)
   if Type == UE.EAvatarPartType.MainBody then
     local Result, RowInfo = GetDataLibraryObj().GetAvatarItemRowInfo(AvatarId)
@@ -118,6 +126,7 @@ function LogicAvatar.SetPreAvatarInfoByType(Type, AvatarId)
   LogicAvatar.PreAvatarInfo[Type] = AvatarId
   EventSystem.Invoke(EventDef.Avatar.OnPreAvatarInfoChanged, Type, AvatarId)
 end
+
 function LogicAvatar.RefreshAvatarRoleById(Type, Id)
   if not LogicAvatar.MainAvatarRole or not LogicAvatar.MainAvatarRole:IsValid() then
     local TargetActorList = UE.UGameplayStatics.GetAllActorsWithTag(GameInstance, "MainAvatarRole", nil)
@@ -132,6 +141,7 @@ function LogicAvatar.RefreshAvatarRoleById(Type, Id)
     LogicAvatar.MainAvatarRole:RefreshSkeletalMesh(TargetType, LogicAvatar.PreAvatarInfo[TargetType])
   end
 end
+
 function LogicAvatar.RefreshAvatarRoleAllMesh()
   LogicAvatar.RefreshAvatarRoleById(UE.EAvatarPartType.MainBody, LogicAvatar.PreAvatarInfo[UE.EAvatarPartType.MainBody])
   for Type, Id in pairs(LogicAvatar.PreAvatarInfo) do
@@ -140,6 +150,7 @@ function LogicAvatar.RefreshAvatarRoleAllMesh()
     end
   end
 end
+
 function LogicAvatar.RefreshTargetAllAvatarMesh(TargetActor, AvatarInfo)
   local TargetAvatarInfo = AvatarInfo
   if not AvatarInfo or next(AvatarInfo) == nil or 0 == AvatarInfo[UE.EAvatarPartType.MainBody] then
@@ -155,18 +166,23 @@ function LogicAvatar.RefreshTargetAllAvatarMesh(TargetActor, AvatarInfo)
     end
   end
 end
+
 function LogicAvatar.SetCurGender(InGender)
   LogicAvatar.CurGender = InGender
 end
+
 function LogicAvatar.GetCurGender()
   return LogicAvatar.CurGender
 end
+
 function LogicAvatar.GetAllItemListByType(Type)
   return LogicAvatar.AllItemList[Type]
 end
+
 function LogicAvatar.GetCurGenderMeshList()
   return LogicAvatar.OtherMeshGenderList[LogicAvatar.CurGender]
 end
+
 function LogicAvatar.ShowAvatarPanel(SaveButtonFunction)
   local AllCameraActors = UE.UGameplayStatics.GetAllActorsWithTag(GameInstance, "AvatarMainCamera", nil)
   local TargetCamera
@@ -187,6 +203,7 @@ function LogicAvatar.ShowAvatarPanel(SaveButtonFunction)
     UI:SetSaveButtonFunction(SaveButtonFunction)
   end
 end
+
 function LogicAvatar.RequestSetAvatarInfoToServer(SuccessFunction)
   local PreAvatarInfo = LogicAvatar.GetPreAvatarInfo()
   local CurAvatarInfo = DataMgr.GetAvatarInfo()
@@ -203,6 +220,7 @@ function LogicAvatar.RequestSetAvatarInfoToServer(SuccessFunction)
     return
   end
 end
+
 function LogicAvatar.Clear()
   LogicAvatar.IsInit = false
   LogicAvatar.AllItemList = {}

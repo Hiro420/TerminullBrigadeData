@@ -6,6 +6,7 @@ local GetCameraActor = function(self)
   self.AppearanceActor = LogicLobby.GetAppearanceActor(self)
   return self.AppearanceActor
 end
+
 function ComShowGoodsItem:Construct()
   self.Overridden.Construct(self)
   self.CameraActor = GetCameraActor(self)
@@ -19,9 +20,11 @@ function ComShowGoodsItem:Construct()
     [19] = self.InitPortrait
   }
 end
+
 function ComShowGoodsItem:Destruct()
   self.Overridden.Destruct(self)
 end
+
 function ComShowGoodsItem:ShowItem(ResourcesID, showSeq, ParentView)
   if ResourcesID ~= self.ResourcesID then
     self:StopVoice()
@@ -55,6 +58,7 @@ function ComShowGoodsItem:ShowItem(ResourcesID, showSeq, ParentView)
     end
   end
 end
+
 function ComShowGoodsItem:ChangeCameraMode(bMallExterior)
   self.CameraActor = GetCameraActor(self)
   self.CameraActor:UpdateActived(bMallExterior, true, false)
@@ -62,6 +66,7 @@ function ComShowGoodsItem:ChangeCameraMode(bMallExterior)
     self.CameraActor:ChangeToActivedCamera()
   end
 end
+
 function ComShowGoodsItem:InitCharacterSkin(GainResourcesID, bInitRoleScale)
   if self.CameraActor then
     local CharacterSkin = Logic_Mall.GetDetailRowDataByResourceId(GainResourcesID)
@@ -69,6 +74,7 @@ function ComShowGoodsItem:InitCharacterSkin(GainResourcesID, bInitRoleScale)
       local SkinId = CharacterSkin.SkinID
       local HeroId = CharacterSkin.CharacterID
       local WeaponId = DataMgr.GetShowWeaponId(HeroId)
+      local WeaponSkinId = SkinData.GetEquipedWeaponSkinIdByWeaponResId(WeaponId)
       local seq = LogicRole.GetSkinSequence(SkinId)
       if self.bIsDrawCardShow then
         if seq then
@@ -92,7 +98,7 @@ function ComShowGoodsItem:InitCharacterSkin(GainResourcesID, bInitRoleScale)
         end
         UIMgr:Show(ViewID.UI_MovieLevelSequence, true, SkinId, true, SequenceCallBack, SequenceEscView, seq, self.bIsDrawCardShow)
       else
-        self.CameraActor:InitAppearanceActor(HeroId, SkinId, WeaponId)
+        self.CameraActor:InitAppearanceActor(HeroId, SkinId, WeaponSkinId)
         if bInitRoleScale then
           self.CameraActor:InitRoleScaleByHeroId(HeroId)
         end
@@ -101,6 +107,7 @@ function ComShowGoodsItem:InitCharacterSkin(GainResourcesID, bInitRoleScale)
     end
   end
 end
+
 function ComShowGoodsItem:InitWeaponSkin(GainResourcesID)
   if self.CameraActor then
     local WeaponSkin = Logic_Mall.GetDetailRowDataByResourceId(GainResourcesID)
@@ -112,6 +119,7 @@ function ComShowGoodsItem:InitWeaponSkin(GainResourcesID)
     end
   end
 end
+
 function ComShowGoodsItem:InitCommuniRoulette(GainResourcesID)
   local CommuniRoulette = Logic_Mall.GetDetailRowDataByResourceId(GainResourcesID)
   if CommuniRoulette and 3 == CommuniRoulette.Type then
@@ -122,6 +130,7 @@ function ComShowGoodsItem:InitCommuniRoulette(GainResourcesID)
     self.WBP_SprayPreviewItem:InitSprayPreviewItemById(GainResourcesID)
   end
 end
+
 function ComShowGoodsItem:PlaySound(CommId)
   local RouletteId = CommunicationData.GetRoulleteIdByCommId(CommId)
   local Result, CommunicationRowInfo = GetRowData(DT.DT_CommunicationWheel, RouletteId)
@@ -135,24 +144,29 @@ function ComShowGoodsItem:PlaySound(CommId)
     self.PlayingVoiceId = PlaySound2DByName(SoundEventName, "ComShowGoodsItem:PlaySound")
   end
 end
+
 function ComShowGoodsItem:InitBanner(GainResourcesID)
   local Banner = Logic_Mall.GetDetailRowDataByResourceId(GainResourcesID)
   if Banner then
     self.ComBannerItem:InitComBannerItem(Banner.bannerIconPathInInfo, Banner.EffectPath)
   end
 end
+
 function ComShowGoodsItem:InitPortrait(GainResourcesID)
   local Portrait = Logic_Mall.GetDetailRowDataByResourceId(GainResourcesID)
   if Portrait then
     self.ComPortraitItem:InitComPortraitItem(Portrait.portraitIconPath, Portrait.EffectPath)
   end
 end
+
 function ComShowGoodsItem:InitCharacter(GainResourcesID)
   local HeroId = Logic_Mall.GetDetailRowDataByResourceId(GainResourcesID).HeroID
   local SkinId = SkinData.GetDefaultSkinIdByHeroId(HeroId)
   local WeaponId = DataMgr.GetShowWeaponId(HeroId)
-  self.CameraActor:InitAppearanceActor(HeroId, SkinId, WeaponId)
+  local WeaponSkinId = SkinData.GetEquipedWeaponSkinIdByWeaponResId(WeaponId)
+  self.CameraActor:InitAppearanceActor(HeroId, SkinId, WeaponSkinId)
 end
+
 function ComShowGoodsItem:InitWeapon(GainResourcesID)
   if self.CameraActor then
     local WeaponSkinId
@@ -165,12 +179,14 @@ function ComShowGoodsItem:InitWeapon(GainResourcesID)
     end
   end
 end
+
 function ComShowGoodsItem:StopVoice()
   if self.PlayingVoiceId then
     UE.URGBlueprintLibrary.StopVoice(self.PlayingVoiceId)
     self.PlayingVoiceId = nil
   end
 end
+
 function ComShowGoodsItem:Hide()
   self.CameraActor = GetCameraActor(self)
   self.CameraActor:UpdateActived(false, true, false)
@@ -178,7 +194,9 @@ function ComShowGoodsItem:Hide()
   self:StopVoice()
   self.ResourcesID = nil
 end
+
 function ComShowGoodsItem:SetIsDrawCardShow(bIsDrawCardShow)
   self.bIsDrawCardShow = bIsDrawCardShow
 end
+
 return ComShowGoodsItem

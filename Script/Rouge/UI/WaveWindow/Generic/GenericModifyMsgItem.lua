@@ -1,4 +1,5 @@
 local GenericModifyMsgItem = UnLua.Class()
+
 function GenericModifyMsgItem:InitGenericModifyMsgItem(ModifyData, ParentView, bLeft)
   self.ParentView = ParentView
   self.ModifyData = ModifyData
@@ -19,6 +20,7 @@ function GenericModifyMsgItem:InitGenericModifyMsgItem(ModifyData, ParentView, b
     end
   end
 end
+
 function GenericModifyMsgItem:InitSpecificModifyMsgItem(InscriptionID, ParentView, bLeft)
   self.ParentView = ParentView
   self.InscriptionID = InscriptionID
@@ -31,6 +33,7 @@ function GenericModifyMsgItem:InitSpecificModifyMsgItem(InscriptionID, ParentVie
     self.RGTextName:SetColorAndOpacity(ItemRarityData.GenericModifyDisplayNameColor)
   end
 end
+
 function GenericModifyMsgItem:OnMouseEnter()
   if not UE.RGUtil.IsUObjectValid(self.ParentView) then
     return
@@ -41,6 +44,7 @@ function GenericModifyMsgItem:OnMouseEnter()
     self.ParentView:ShowSpecificTips(true, self.InscriptionID, self.bLeft)
   end
 end
+
 function GenericModifyMsgItem:OnMouseLeave()
   if not UE.RGUtil.IsUObjectValid(self.ParentView) then
     return
@@ -51,4 +55,5 @@ function GenericModifyMsgItem:OnMouseLeave()
     self.ParentView:ShowSpecificTips(false, nil, self.bLeft)
   end
 end
+
 return GenericModifyMsgItem

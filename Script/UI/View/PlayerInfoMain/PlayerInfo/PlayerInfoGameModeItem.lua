@@ -1,7 +1,9 @@
 local PlayerInfoGameModeItem = Class()
+
 function PlayerInfoGameModeItem:Construct()
   self.Overridden.Construct(self)
 end
+
 function PlayerInfoGameModeItem:InitPlayerInfoGameModeItem(ModeId, StatisticWorldInfo, LevelConfig, bIsOwnerInfo)
   UpdateVisibility(self, true, true)
   local result, row = GetRowData(DT.DT_GameMode, tostring(ModeId))
@@ -74,13 +76,17 @@ function PlayerInfoGameModeItem:InitPlayerInfoGameModeItem(ModeId, StatisticWorl
     self.WBP_PlayerInfoGameModeBadgeItemDetails:Hide()
   end
 end
+
 function PlayerInfoGameModeItem:Hide()
   UpdateVisibility(self, false)
 end
+
 function PlayerInfoGameModeItem:OnMouseEnter(MyGeometry, MouseEvent)
   self.RGStateControllerHover:ChangeStatus(EHover.Hover)
 end
+
 function PlayerInfoGameModeItem:OnMouseLeave(MyGeometry, MouseEvent)
   self.RGStateControllerHover:ChangeStatus(EHover.UnHover)
 end
+
 return PlayerInfoGameModeItem

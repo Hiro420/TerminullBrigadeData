@@ -1,9 +1,12 @@
 local WBP_RGBeginnerGuidanceDescItem_C = UnLua.Class()
+
 function WBP_RGBeginnerGuidanceDescItem_C:Construct()
 end
+
 function WBP_RGBeginnerGuidanceDescItem_C:ShowFlagPanel()
   self.FlagPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_RGBeginnerGuidanceDescItem_C:SetFlagSelectedPanelVis(IsShow)
   if IsShow then
     self.FinishedPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -11,6 +14,7 @@ function WBP_RGBeginnerGuidanceDescItem_C:SetFlagSelectedPanelVis(IsShow)
     self.FinishedPanel:SetVisibility(UE.ESlateVisibility.Hidden)
   end
 end
+
 function WBP_RGBeginnerGuidanceDescItem_C:UpdateText(Desc, KeyInfoList)
   if not KeyInfoList or KeyInfoList:Length() <= 0 then
     self.Txt_LeftText:SetText(Desc)
@@ -52,4 +56,5 @@ function WBP_RGBeginnerGuidanceDescItem_C:UpdateText(Desc, KeyInfoList)
     end
   end
 end
+
 return WBP_RGBeginnerGuidanceDescItem_C

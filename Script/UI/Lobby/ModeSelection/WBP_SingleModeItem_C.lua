@@ -1,9 +1,11 @@
 local WBP_SingleModeItem_C = UnLua.Class()
+
 function WBP_SingleModeItem_C:Construct()
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
   self.Btn_Main.OnHovered:Add(self, self.BindOnMainButtonHovered)
   self.Btn_Main.OnUnhovered:Add(self, self.BindOnMainButtonUnhovered)
 end
+
 function WBP_SingleModeItem_C:BindOnMainButtonClicked()
   EventSystem.Invoke(EventDef.ModeSelection.OnChangeModeSelectionItem, self.WorldModeId, self.GameModeId)
   EventSystem.Invoke(EventDef.BeginnerGuide.OnSingleModeItemClicked)
@@ -16,18 +18,21 @@ function WBP_SingleModeItem_C:BindOnMainButtonClicked()
     end
   end
 end
+
 function WBP_SingleModeItem_C:BindOnMainButtonHovered()
   self.Img_Hovered:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   if not self.TeamUnLock then
     self.ParentView:ModeItem_OnHover(true, self, self.GameModeId, self.WorldModeId)
   end
 end
+
 function WBP_SingleModeItem_C:BindOnMainButtonUnhovered()
   self.Img_Hovered:SetVisibility(UE.ESlateVisibility.Collapsed)
   if not self.TeamUnLock then
     self.ParentView:ModeItem_OnHover(false)
   end
 end
+
 function WBP_SingleModeItem_C:Show(WorldModeId, ModeFloorInfo, ParentView)
   local Result, RowInfo = GetRowData(DT.DT_GameMode, tostring(WorldModeId))
   self.Img_Hovered:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -84,6 +89,7 @@ function WBP_SingleModeItem_C:Show(WorldModeId, ModeFloorInfo, ParentView)
   end
   EventSystem.AddListener(self, EventDef.ModeSelection.OnChangeModeSelectionItem, self.BindOnChangeModeSelectionItem)
 end
+
 function WBP_SingleModeItem_C:BindOnChangeModeSelectionItem(WorldModeId)
   if WorldModeId == self.WorldModeId then
     self.Img_Bottom:SetColorAndOpacity(self.SelectedBottomColor)
@@ -110,9 +116,11 @@ function WBP_SingleModeItem_C:BindOnChangeModeSelectionItem(WorldModeId)
     UpdateVisibility(self.SelectEffect_Panel, false)
   end
 end
+
 function WBP_SingleModeItem_C:SetLock(IsLock)
   UpdateVisibility(self.Icon_Mode, IsLock)
 end
+
 function WBP_SingleModeItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.WorldModeId = -1
@@ -120,7 +128,9 @@ function WBP_SingleModeItem_C:Hide()
   self.ModeFloorInfo = {}
   EventSystem.RemoveListener(EventDef.ModeSelection.OnChangeModeSelectionItem, self.BindOnChangeModeSelectionItem, self)
 end
+
 function WBP_SingleModeItem_C:Destruct()
   self:Hide()
 end
+
 return WBP_SingleModeItem_C

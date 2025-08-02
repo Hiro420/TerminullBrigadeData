@@ -1,4 +1,5 @@
 local WBP_ControlSettingItem = UnLua.Class()
+
 function WBP_ControlSettingItem:Show(InputType)
   if not UE.UKismetInputLibrary.Key_IsValid(self.KeyMapping) then
     return
@@ -51,4 +52,5 @@ function WBP_ControlSettingItem:Show(InputType)
     self.Text_KeyName:SetText(TargetKeyRowName)
   end
 end
+
 return WBP_ControlSettingItem

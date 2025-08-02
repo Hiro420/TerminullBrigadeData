@@ -10,6 +10,7 @@ Logic_IllustratedGuide.GenericModifySubGroup = {}
 Logic_IllustratedGuide.DataObjCls = UE.UClass.Load("/Game/Rouge/UI/IllustratedGuide/BP_IGuideData.BP_IGuideData_C")
 Logic_IllustratedGuide.CurGenericModifyInfo = nil
 Logic_IllustratedGuide.CurFocusGenericModifySubGroup = {}
+
 function Logic_IllustratedGuide.CreateItemData()
   local ItemData = {}
   ItemData.RowName = 0
@@ -20,6 +21,7 @@ function Logic_IllustratedGuide.CreateItemData()
   ItemData.bDual = false
   return ItemData
 end
+
 function Logic_IllustratedGuide.CreateGodListItemData()
   local ItemData = {}
   ItemData.RowName = 0
@@ -29,11 +31,13 @@ function Logic_IllustratedGuide.CreateGodListItemData()
   ItemData.bDual = false
   return ItemData
 end
+
 function Logic_IllustratedGuide.IsLobbyRoom()
   local world = GameInstance:GetWorld()
   local PC = UE.UGameplayStatics.GetPlayerController(world, 0)
   return not PC:Cast(UE.ARGPlayerController)
 end
+
 function Logic_IllustratedGuide.GetGodNameList()
   local NameList = GetAllRowNames(DT.DT_GenericModifyGroup)
   table.sort(NameList, function(a, b)
@@ -41,6 +45,7 @@ function Logic_IllustratedGuide.GetGodNameList()
   end)
   return NameList
 end
+
 function Logic_IllustratedGuide.GetGodListData()
   local ReturnTable = {}
   Logic_IllustratedGuide.DataObjCls = UE.UClass.Load("/Game/Rouge/UI/IllustratedGuide/BP_IGuideData.BP_IGuideData_C")
@@ -63,12 +68,14 @@ function Logic_IllustratedGuide.GetGodListData()
   end
   return ReturnTable
 end
+
 function Logic_IllustratedGuide.SetCurGodId(GodId)
   if Logic_IllustratedGuide.CurGodId == GodId then
     return
   end
   Logic_IllustratedGuide.CurGodId = GodId
 end
+
 function Logic_IllustratedGuide.GetGenericModifyByGodGroupId(GodGroup)
   if Logic_IllustratedGuide.GodGroup[GodGroup] then
     return Logic_IllustratedGuide.GodGroup[GodGroup]
@@ -91,6 +98,7 @@ function Logic_IllustratedGuide.GetGenericModifyByGodGroupId(GodGroup)
     end
   end
 end
+
 function Logic_IllustratedGuide.GetAllModifiesOfGroup(GodGroup)
   if Logic_IllustratedGuide.GodGroup[GodGroup] ~= nil then
     return Logic_IllustratedGuide.GodGroup[GodGroup]
@@ -107,6 +115,7 @@ function Logic_IllustratedGuide.GetAllModifiesOfGroup(GodGroup)
   Logic_IllustratedGuide.GodGroup[GodGroup] = CacheSubGroup
   return CacheSubGroup
 end
+
 function Logic_IllustratedGuide.GetAllModifiesDataOfGroup(GodGroup)
   local ReturnTable = {}
   Logic_IllustratedGuide.DataObjCls = UE.UClass.Load("/Game/Rouge/UI/IllustratedGuide/BP_IGuideData.BP_IGuideData_C")
@@ -142,6 +151,7 @@ function Logic_IllustratedGuide.GetAllModifiesDataOfGroup(GodGroup)
   end)
   return ReturnTable
 end
+
 function Logic_IllustratedGuide.IsObtained(ModifyId)
   local GenericModifyTable = Logic_IllustratedGuide.GetAllGenericModifyFromPlayer()
   if nil == GenericModifyTable then
@@ -154,6 +164,7 @@ function Logic_IllustratedGuide.IsObtained(ModifyId)
   end
   return false
 end
+
 function Logic_IllustratedGuide.MeetFrontCondition(FrontCondition)
   local GenericModifyArr = Logic_IllustratedGuide.GetAllGenericModifyFromPlayer()
   for key2, SetValue in pairs(FrontCondition.SubGroupIds:ToTable()) do
@@ -169,6 +180,7 @@ function Logic_IllustratedGuide.MeetFrontCondition(FrontCondition)
   end
   return false
 end
+
 function Logic_IllustratedGuide.UnLockGenericModify(FrontConditions)
   local UnLockNum = 0
   local UnLockIndex = false
@@ -211,11 +223,13 @@ function Logic_IllustratedGuide.UnLockGenericModify(FrontConditions)
   end
   return UnLockNum
 end
+
 function Logic_IllustratedGuide.IsLockGenericModify(FrontConditions)
   local Num = FrontConditions:Num()
   local UnLockNum = Logic_IllustratedGuide.UnLockGenericModify(FrontConditions)
   return Num > UnLockNum
 end
+
 function Logic_IllustratedGuide.GetAllGenericModifyFromPlayer()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -232,6 +246,7 @@ function Logic_IllustratedGuide.GetAllGenericModifyFromPlayer()
   end
   return ReturnTable
 end
+
 function Logic_IllustratedGuide.GetAllGenericModifyDataByCharacter(Character)
   if not Character then
     return
@@ -247,6 +262,7 @@ function Logic_IllustratedGuide.GetAllGenericModifyDataByCharacter(Character)
   end
   return ReturnTable
 end
+
 function Logic_IllustratedGuide.DoesPlayerHaveGenericModify(GenericModifyId, bSubGroupIdEqual)
   local PlayerGenericModifys = Logic_IllustratedGuide.GetAllGenericModifyFromPlayer()
   if nil == PlayerGenericModifys then
@@ -265,6 +281,7 @@ function Logic_IllustratedGuide.DoesPlayerHaveGenericModify(GenericModifyId, bSu
   end
   return false
 end
+
 function Logic_IllustratedGuide.GenericModify_SubGroupIdEqual(ModifyIdA, ModifyIdB)
   local ResultA, RowInfoA = GetRowData(DT.DT_GenericModify, ModifyIdA)
   if not ResultA then
@@ -276,6 +293,7 @@ function Logic_IllustratedGuide.GenericModify_SubGroupIdEqual(ModifyIdA, ModifyI
   end
   return RowInfoB.SubGroupId == RowInfoA.SubGroupId
 end
+
 function Logic_IllustratedGuide.LoadGenericModifyTable()
   local TutorialLevelSubSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGTutorialLevelSystem:StaticClass())
   if TutorialLevelSubSystem and TutorialLevelSubSystem:IsFreshPlayer() then
@@ -299,6 +317,7 @@ function Logic_IllustratedGuide.LoadGenericModifyTable()
     end
   end
 end
+
 function Logic_IllustratedGuide.FocusStatus(ModifyInfo)
   if Logic_IllustratedGuide.IsLobbyRoom() then
     Logic_IllustratedGuide.CurFocusGenericModifySubGroup = nil
@@ -320,6 +339,7 @@ function Logic_IllustratedGuide.FocusStatus(ModifyInfo)
   end
   return 0
 end
+
 function Logic_IllustratedGuide.FocusModify(ModifyInfo)
   local Status = Logic_IllustratedGuide.FocusStatus(ModifyInfo)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
@@ -343,20 +363,24 @@ function Logic_IllustratedGuide.FocusModify(ModifyInfo)
   elseif 2 == Status then
   end
 end
+
 Logic_IllustratedGuide.SearchKeyword = ""
 Logic_IllustratedGuide.KeywordCache = {}
 Logic_IllustratedGuide.AttributeModifySet = {}
 Logic_IllustratedGuide.UnLockAttributeModify = {}
+
 function Logic_IllustratedGuide.CreateSetListItemData()
   local ItemData = {}
   ItemData.Id = 0
   return ItemData
 end
+
 function Logic_IllustratedGuide.CreateAttributeModifyListItemData()
   local ItemData = {}
   ItemData.Id = 0
   return ItemData
 end
+
 function Logic_IllustratedGuide.GetSetListData()
   local ItemList = {}
   Logic_IllustratedGuide.DataObjCls = UE.UClass.Load("/Game/Rouge/UI/IllustratedGuide/BP_IGuideData.BP_IGuideData_C")
@@ -410,12 +434,14 @@ function Logic_IllustratedGuide.GetSetListData()
   end
   return ItemList
 end
+
 function Logic_IllustratedGuide.SortSetListData(ItemList)
   table.sort(ItemList, function(a, b)
     return a.Data.Id > b.Data.Id
   end)
   return ItemList
 end
+
 function Logic_IllustratedGuide.GetAttributeModifyListData(SetId)
   local ItemList = {}
   local AttributeModifyTable = Logic_IllustratedGuide.GetAttributeModifysBySetId(SetId)
@@ -447,6 +473,7 @@ function Logic_IllustratedGuide.GetAttributeModifyListData(SetId)
   end)
   return ItemList
 end
+
 function Logic_IllustratedGuide.LoadAttributeModifyCategory()
   print("LJS : LoadAttributeModifyCategory")
   Logic_IllustratedGuide.AttributeModifySet = {}
@@ -464,7 +491,9 @@ function Logic_IllustratedGuide.LoadAttributeModifyCategory()
     end
   end
 end
+
 Logic_IllustratedGuide.LoadAttributeModifyCategory()
+
 function Logic_IllustratedGuide.GetAttributeModifysBySetId(SetId)
   if Logic_IllustratedGuide.AttributeModifySet[tonumber(SetId)] then
     return Logic_IllustratedGuide.AttributeModifySet[tonumber(SetId)]
@@ -472,6 +501,7 @@ function Logic_IllustratedGuide.GetAttributeModifysBySetId(SetId)
   Logic_IllustratedGuide.LoadAttributeModifyCategory()
   return Logic_IllustratedGuide.AttributeModifySet[tonumber(SetId)]
 end
+
 function Logic_IllustratedGuide.PullUnLockAttributeModify()
   HttpCommunication.Request("resource/pulldigitalcollectionpack", {}, {
     GameInstance,
@@ -485,6 +515,7 @@ function Logic_IllustratedGuide.PullUnLockAttributeModify()
     end
   })
 end
+
 function Logic_IllustratedGuide.OnPullUnLockAttributeModifySuccess(JsonResponse)
   print("OnPullUnLockAttributeModifySuccess", JsonResponse.Content)
   local response = rapidjson.decode(JsonResponse.Content)
@@ -492,5 +523,6 @@ function Logic_IllustratedGuide.OnPullUnLockAttributeModifySuccess(JsonResponse)
     Logic_IllustratedGuide.UnLockAttributeModify[value.ID] = true
   end
 end
+
 function Logic_IllustratedGuide.OnPullUnLockAttributeModifyFail()
 end

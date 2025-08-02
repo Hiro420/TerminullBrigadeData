@@ -15,6 +15,7 @@ local SlotDropAvailable = function(self, DragDropItem, PickupItem, PointerEvent)
   CommunicationViewModel:EquipCommBySlotId(SlotId)
   print("SlotDropAvailable", SlotId)
 end
+
 function WBP_RouletteAreaItem_C:Construct()
   self.Overridden.Construct(self)
   self.SlotId = 0
@@ -28,6 +29,7 @@ function WBP_RouletteAreaItem_C:Construct()
   EventSystem.AddListenerNew(EventDef.Communication.OnRouletteStartDrag, self, self.OnRouletteStartDrag)
   EventSystem.AddListenerNew(EventDef.Communication.OnRouletteEndDrag, self, self.OnRouletteEndDrag)
 end
+
 function WBP_RouletteAreaItem_C:Destruct()
   self.Overridden.Destruct(self)
   EventSystem.RemoveListenerNew(EventDef.Communication.OnRouletteAreaSelectChanged, self, self.OnRouletteAreaSelectChanged)
@@ -36,6 +38,7 @@ function WBP_RouletteAreaItem_C:Destruct()
   EventSystem.RemoveListenerNew(EventDef.Communication.OnRouletteStartDrag, self, self.OnRouletteStartDrag)
   EventSystem.RemoveListenerNew(EventDef.Communication.OnRouletteEndDrag, self, self.OnRouletteEndDrag)
 end
+
 function WBP_RouletteAreaItem_C:InitByCommId(CommId, SlotId)
   local bChange = self.CommId ~= CommId
   self.SlotId = SlotId
@@ -96,15 +99,18 @@ function WBP_RouletteAreaItem_C:InitByCommId(CommId, SlotId)
     end
   end
 end
+
 function WBP_RouletteAreaItem_C:OnMouseButtonDown(MyGeometry, MouseEvent)
   if Logic_IllustratedGuide.IsLobbyRoom() then
     EventSystem.Invoke(EventDef.Communication.OnRouletteAreaSelectChanged, self.SlotId)
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function WBP_RouletteAreaItem_C:OnRouletteAreaSelectChanged(SlotId)
   self.RGStateController_Selected:ChangeStatus(self.SlotId == SlotId and "Selected" or "UnSelected")
 end
+
 function WBP_RouletteAreaItem_C:OnRouletteAreaHoverChanged(SlotId)
   if self.SlotId == SlotId then
     local TxtMarkSlot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.Canvas_TxtMark)
@@ -132,6 +138,7 @@ function WBP_RouletteAreaItem_C:OnRouletteAreaHoverChanged(SlotId)
     self.RGStateController_Hover:ChangeStatus("UnHover")
   end
 end
+
 function WBP_RouletteAreaItem_C:OnRouletteAreaUsed(SlotId)
   if self.CurCoolDownTime < 0 then
     return
@@ -150,6 +157,7 @@ function WBP_RouletteAreaItem_C:OnRouletteAreaUsed(SlotId)
     end
   end
 end
+
 function WBP_RouletteAreaItem_C:UpdateCoolDown(InDeltaTime)
   self.CurCoolDownTime = self.CurCoolDownTime + InDeltaTime
   if self.CurCoolDownTime < 0 and 0 ~= self.TotalCoolDownTime then
@@ -160,6 +168,7 @@ function WBP_RouletteAreaItem_C:UpdateCoolDown(InDeltaTime)
     self.RGStateController_Enable:ChangeStatus("Enable")
   end
 end
+
 function WBP_RouletteAreaItem_C:RefreshText()
   local TxtMarkSlot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.Canvas_TxtMark)
   local TxtNameSlot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.Txt_VoiceName)
@@ -170,10 +179,13 @@ function WBP_RouletteAreaItem_C:RefreshText()
     TxtNameSlot:SetPosition(UE.FVector2D(-self.TextMoveDistance, 0))
   end
 end
+
 function WBP_RouletteAreaItem_C:OnRouletteStartDrag()
   self.bIsDraging = true
 end
+
 function WBP_RouletteAreaItem_C:OnRouletteEndDrag()
   self.bIsDraging = false
 end
+
 return WBP_RouletteAreaItem_C

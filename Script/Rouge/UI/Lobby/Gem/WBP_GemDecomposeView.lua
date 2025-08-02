@@ -11,24 +11,29 @@ local EDecomposeButtonStatus = {
   Normal = 2
 }
 local DecomposeWaveId = 300007
+
 function WBP_GemDecomposeView:BindClickHandler()
   self.Btn_Filter.OnClicked:Add(self, self.BindOnFilterButtonClicked)
   self.Btn_Decompose.OnMainButtonClicked:Add(self, self.BindOnDecomposeButtonClicked)
   self.CheckBox_PickAll.OnCheckStateChanged:Add(self, self.BindOnPickAllCheckStateChanged)
 end
+
 function WBP_GemDecomposeView:UnBindClickHandler()
   self.Btn_Filter.OnClicked:Remove(self, self.BindOnFilterButtonClicked)
   self.Btn_Decompose.OnMainButtonClicked:Remove(self, self.BindOnDecomposeButtonClicked)
   self.CheckBox_PickAll.OnCheckStateChanged:Remove(self, self.BindOnPickAllCheckStateChanged)
 end
+
 function WBP_GemDecomposeView:OnInit()
   self.DataBindTable = {}
   self.ViewModel = UIModelMgr:Get("GemDecomposeViewModel")
   self:BindClickHandler()
 end
+
 function WBP_GemDecomposeView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_GemDecomposeView:OnShow(...)
   self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
   EventSystem.AddListenerNew(EventDef.Gem.OnUpdateGemPackageInfo, self, self.BindOnUpdateGemPackageInfo)
@@ -58,9 +63,11 @@ function WBP_GemDecomposeView:OnShow(...)
     end
   }, 0.02, false)
 end
+
 function WBP_GemDecomposeView:InitSortRuleComboBox(...)
   self.WBP_PuzzleSortRuleComboBox:Show(self, true)
 end
+
 function WBP_GemDecomposeView:RefreshGemItemList(...)
   self.RGTileViewGemList:RecyleAllData()
   local DataObjList = {}
@@ -117,6 +124,7 @@ function WBP_GemDecomposeView:RefreshGemItemList(...)
   end
   self.RGTileViewGemList:SetRGListItems(DataObjList, false, true)
 end
+
 function WBP_GemDecomposeView:RefreshFilterIconStatus(...)
   local FilterSelectList = self.ViewModel:GetGemFilterSelectStatus()
   local IsSelect = false
@@ -137,10 +145,12 @@ function WBP_GemDecomposeView:RefreshFilterIconStatus(...)
     self.RGStateController_Filter:ChangeStatus("NoFilter")
   end
 end
+
 function WBP_GemDecomposeView:BindOnSortRuleSelectionChanged(CurSelectedIndex)
   self.ViewModel:SetPuzzleSortRule(CurSelectedIndex)
   self:RefreshGemItemList()
 end
+
 function WBP_GemDecomposeView:BindOnFilterButtonClicked()
   if self.WBP_PuzzleFilterView:IsVisible() then
     self.WBP_PuzzleFilterView:Hide()
@@ -149,6 +159,7 @@ function WBP_GemDecomposeView:BindOnFilterButtonClicked()
     self.WBP_PuzzleFilterView:Show(self.ViewModel, true)
   end
 end
+
 function WBP_GemDecomposeView:BindOnDecomposeButtonClicked(...)
   if self.ButtonStatus == EDecomposeButtonStatus.Empty then
     return
@@ -169,6 +180,7 @@ function WBP_GemDecomposeView:BindOnDecomposeButtonClicked(...)
     WaveWindow:Show(GemIdList)
   end
 end
+
 function WBP_GemDecomposeView:BindOnPickAllCheckStateChanged(IsChecked)
   if IsChecked then
     local CurSelectIdList = self.ViewModel:GetCurSelectGemIdList()
@@ -194,6 +206,7 @@ function WBP_GemDecomposeView:BindOnPickAllCheckStateChanged(IsChecked)
     self.ViewModel:RemoveAllCurSelectGemIdList()
   end
 end
+
 function WBP_GemDecomposeView:BindOnUpdateGemPackageInfo(GemId)
   self:RefreshDecomposeButtonStatus()
   if not GemId or self.HoveredGemId == GemId then
@@ -208,6 +221,7 @@ function WBP_GemDecomposeView:BindOnUpdateGemPackageInfo(GemId)
     end
   end
 end
+
 function WBP_GemDecomposeView:BindOnUpdateGemItemHoverStatus(IsHover, GemId, IsPuzzleBoard)
   if IsHover then
     self.HoveredGemId = GemId
@@ -228,12 +242,14 @@ function WBP_GemDecomposeView:BindOnUpdateGemItemHoverStatus(IsHover, GemId, IsP
     end
   end
 end
+
 function WBP_GemDecomposeView:BindOnDecomposeGemSuccess(GemIdList)
   self:RefreshGemItemList()
   self:RefreshGemDevelopInfoItem()
   self:RefreshDecomposeButtonStatus()
   self:RefreshDecomposeResourceInfo()
 end
+
 function WBP_GemDecomposeView:BindOnGemItemSelected(GemId)
   local CurSelectedNum = table.count(self.ViewModel:GetCurSelectGemIdList())
   if self.CurSelectedNum and CurSelectedNum < self.CurSelectedNum then
@@ -244,6 +260,7 @@ function WBP_GemDecomposeView:BindOnGemItemSelected(GemId)
   self:RefreshDecomposeButtonStatus()
   self:RefreshDecomposeResourceInfo()
 end
+
 function WBP_GemDecomposeView:RefreshGemDevelopInfoItem()
   local CurSelectIdList = self.ViewModel:GetCurSelectGemIdList()
   UpdateVisibility(self.WBP_GemDevelopInfoItem, next(CurSelectIdList) ~= nil)
@@ -253,6 +270,7 @@ function WBP_GemDecomposeView:RefreshGemDevelopInfoItem()
     self.WBP_GemDevelopInfoItem:Show(TargetGemId)
   end
 end
+
 function WBP_GemDecomposeView:RefreshDecomposeButtonStatus(...)
   local CurSelectIdList = self.ViewModel:GetCurSelectGemIdList()
   local IsEmpty = next(CurSelectIdList) == nil
@@ -272,6 +290,7 @@ function WBP_GemDecomposeView:RefreshDecomposeButtonStatus(...)
   self.ButtonStatus = EDecomposeButtonStatus.Normal
   self.Btn_Decompose:SetStyleByBottomStyleRowName("Upgrade")
 end
+
 function WBP_GemDecomposeView:RefreshDecomposeResourceInfo(...)
   local ResourceList = {}
   local GemIdList = self.ViewModel:GetCurSelectGemIdList()
@@ -308,6 +327,7 @@ function WBP_GemDecomposeView:RefreshDecomposeResourceInfo(...)
   HideOtherItem(self.Horizontal_ResourceList, Index, true)
   UpdateVisibility(self.Horizontal_DecomposeResourceList, next(ResourceList) ~= nil)
 end
+
 function WBP_GemDecomposeView:OnMouseButtonDown(MyGeometry, MouseEvent)
   if self.WBP_PuzzleFilterView:IsVisible() then
     self.WBP_PuzzleFilterView:Hide()
@@ -315,6 +335,7 @@ function WBP_GemDecomposeView:OnMouseButtonDown(MyGeometry, MouseEvent)
   self.WBP_PuzzleSortRuleComboBox:HideExpandList()
   return UE.UWidgetBlueprintLibrary.Unhandled()
 end
+
 function WBP_GemDecomposeView:OnHide()
   self.ViewModel:OnViewClose()
   self.WBP_PuzzleFilterView:Hide()
@@ -329,7 +350,9 @@ function WBP_GemDecomposeView:OnHide()
   EventSystem.RemoveListenerNew(EventDef.Gem.OnUpdateGemItemHoverStatus, self, self.BindOnUpdateGemItemHoverStatus)
   EventSystem.RemoveListenerNew(EventDef.Gem.OnGemDecomposeSuccess, self, self.BindOnDecomposeGemSuccess)
 end
+
 function WBP_GemDecomposeView:Destruct(...)
   self:OnHide()
 end
+
 return WBP_GemDecomposeView

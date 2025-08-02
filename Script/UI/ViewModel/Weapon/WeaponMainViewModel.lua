@@ -7,12 +7,15 @@ local HttpService = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(RGUti
 local WeaponMainViewModel = CreateDefaultViewModel()
 WeaponMainViewModel.propertyBindings = {WeaponStatus = true, EquipWeaonInfo = nil}
 WeaponMainViewModel.subViewModels = {}
+
 function WeaponMainViewModel:OnInit()
   self.Super.OnInit(self)
 end
+
 function WeaponMainViewModel:OnShutdown()
   self.Super.OnShutdown(self)
 end
+
 function WeaponMainViewModel:UpdateCurHeroId(...)
   local tbParam = {
     ...
@@ -24,10 +27,12 @@ function WeaponMainViewModel:UpdateCurHeroId(...)
   WeaponSubViewModel:UpdateCurHeroId(CurHeroId)
   self:Switch(true)
 end
+
 function WeaponMainViewModel:SetCloseCallback(CloseCallback)
   local WeaponSubViewModel = UIModelMgr:Get("WeaponSubViewModel")
   WeaponSubViewModel:SetCloseCallback(CloseCallback)
 end
+
 function WeaponMainViewModel:Switch(WeaponStatusParam, SlotIdx, weaponResId, playAni)
   local WeaponSubViewModel = UIModelMgr:Get("WeaponSubViewModel")
   if UIMgr:IsShow(ViewID.UI_WeaponSub) then
@@ -40,4 +45,5 @@ function WeaponMainViewModel:Switch(WeaponStatusParam, SlotIdx, weaponResId, pla
   end
   WeaponSubViewModel:SwitchWeaponInfo(true, weaponResId, playAni)
 end
+
 return WeaponMainViewModel

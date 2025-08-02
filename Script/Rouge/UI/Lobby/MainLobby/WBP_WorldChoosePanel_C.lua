@@ -1,7 +1,9 @@
 local WBP_WorldChoosePanel_C = UnLua.Class()
+
 function WBP_WorldChoosePanel_C:Construct()
   self:InitUniformGridPanel()
 end
+
 function WBP_WorldChoosePanel_C:InitUniformGridPanel()
   self.ScrollBox_WorldSlot:ClearChildren()
   self.WorldSlotWidgetArray:Clear()
@@ -29,6 +31,7 @@ function WBP_WorldChoosePanel_C:InitUniformGridPanel()
     end
   end
 end
+
 function WBP_WorldChoosePanel_C:InitSortWorldTypeSlot()
   local widgetTable = self.WorldSlotWidgetArray:ToTable()
   local unlockWorldSlotWidgetArray = {}
@@ -55,6 +58,7 @@ function WBP_WorldChoosePanel_C:InitSortWorldTypeSlot()
     value:PlayAnimation(value.ani_worldslot_In)
   end
 end
+
 function WBP_WorldChoosePanel_C:InitChooseWorldSlot()
   local arrayWidgets = self.ScrollBox_WorldSlot:GetAllChildren()
   if arrayWidgets:Length() > 0 then
@@ -64,6 +68,7 @@ function WBP_WorldChoosePanel_C:InitChooseWorldSlot()
     end
   end
 end
+
 function WBP_WorldChoosePanel_C:OnClicked_WorldType(widget)
   self.ChooseWorldSlot = widget
   for key, value in iterator(self.ScrollBox_WorldSlot:GetAllChildren()) do
@@ -77,4 +82,5 @@ function WBP_WorldChoosePanel_C:OnClicked_WorldType(widget)
     self.WBP_GameTypePanel:RequestSetGameMod(widget.TableRow.ModeID)
   end
 end
+
 return WBP_WorldChoosePanel_C

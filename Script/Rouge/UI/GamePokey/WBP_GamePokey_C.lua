@@ -1,4 +1,5 @@
 local WBP_GamePokey_C = UnLua.Class()
+
 function WBP_GamePokey_C:Construct()
   EventSystem.AddListener(self, EventDef.GamePokey.OnWeaponMeshPressed, WBP_GamePokey_C.OnWeaponMeshPressed)
   EventSystem.AddListener(self, EventDef.GamePokey.OnWeaponMeshReleased, WBP_GamePokey_C.OnWeaponMeshReleased)
@@ -17,9 +18,11 @@ function WBP_GamePokey_C:Construct()
   self:BindOnEquipChanged(true)
   self:BindClearEquipSlotChoose(true)
 end
+
 function WBP_GamePokey_C:LuaTick(InDeltaTime)
   self:UpdateEquipSlotsPosition()
 end
+
 function WBP_GamePokey_C:Destruct()
   EventSystem.RemoveListener(EventDef.GamePokey.OnWeaponMeshPressed, WBP_GamePokey_C.OnWeaponMeshPressed)
   EventSystem.RemoveListener(EventDef.GamePokey.OnWeaponMeshReleased, WBP_GamePokey_C.OnWeaponMeshReleased)
@@ -32,6 +35,7 @@ function WBP_GamePokey_C:Destruct()
   self:BindClearEquipSlotChoose(false)
   self.Clicked = nil
 end
+
 function WBP_GamePokey_C:InitWeaponSwitch()
   self.WeaponSwitch:Clear()
   local widgetArray = self.VerticalBox_WeaponSwitch:GetAllChildren()
@@ -45,10 +49,12 @@ function WBP_GamePokey_C:InitWeaponSwitch()
     end
   end
 end
+
 function WBP_GamePokey_C:InitWeaponDisplayInfo()
   self.WBP_GPWeaponDisplayInfo:UpdateWeaponDisplayInfo(self.ChooseGun)
   self:InitCameraWeapon()
 end
+
 function WBP_GamePokey_C:InitChooseWeapon()
   local pawn = self:GetOwningPlayerPawn()
   if pawn then
@@ -67,9 +73,11 @@ function WBP_GamePokey_C:InitChooseWeapon()
     end
   end
 end
+
 function WBP_GamePokey_C:InitAccessoriesPanel()
   self.Accessories:Clear()
 end
+
 function WBP_GamePokey_C:InitCameraWeapon()
   if self.WeaponCapture and self.WeaponCapture:IsValid() then
     self.WeaponCapture:SetWeapon(self.ChooseGun)
@@ -77,6 +85,7 @@ function WBP_GamePokey_C:InitCameraWeapon()
     self.WeaponCapture:UpdateBGImage()
   end
 end
+
 function WBP_GamePokey_C:InitEquipSlot()
   local widgetArray = self.CanvasPanel_EquipSlot:GetAllChildren()
   local widget
@@ -87,6 +96,7 @@ function WBP_GamePokey_C:InitEquipSlot()
     end
   end
 end
+
 function WBP_GamePokey_C:InitAccessoriesByType()
   self.Accessories:Clear()
   if self.Selected then
@@ -94,11 +104,13 @@ function WBP_GamePokey_C:InitAccessoriesByType()
     self.WBP_AccessoriesPanel:CreateAccessoriesByType(self.Selected.AccessoryType, nil, false)
   end
 end
+
 function WBP_GamePokey_C:UnBindWeaponSwitch()
   for key, value in iterator(self.WeaponSwitch) do
     value.OnWeaponChoose:Remove(self, WBP_GamePokey_C.OnWeaponSwitchChoose)
   end
 end
+
 function WBP_GamePokey_C:BindOnAccessoryChanged(Bind)
   local accessoryComponent = self:GetAccessoryComp()
   if accessoryComponent then
@@ -113,6 +125,7 @@ function WBP_GamePokey_C:BindOnAccessoryChanged(Bind)
     end
   end
 end
+
 function WBP_GamePokey_C:BindOnBagChanged(Bind)
   local bagComponent = self:GetBagComp()
   if bagComponent then
@@ -123,6 +136,7 @@ function WBP_GamePokey_C:BindOnBagChanged(Bind)
     end
   end
 end
+
 function WBP_GamePokey_C:BindOnEquipChanged(Bind)
   local pawn = self:GetOwningPlayerPawn()
   if pawn then
@@ -136,6 +150,7 @@ function WBP_GamePokey_C:BindOnEquipChanged(Bind)
     end
   end
 end
+
 function WBP_GamePokey_C:BindClearEquipSlotChoose(Bind)
   if self.WeaponCapture and self.WeaponCapture:IsValid() then
     if Bind then
@@ -145,6 +160,7 @@ function WBP_GamePokey_C:BindClearEquipSlotChoose(Bind)
     end
   end
 end
+
 function WBP_GamePokey_C:OnAccessoryClicked(Clicked)
   self.CurrentChooseAccessory = Clicked
   for key, value in iterator(self.Accessories) do
@@ -153,13 +169,16 @@ function WBP_GamePokey_C:OnAccessoryClicked(Clicked)
     end
   end
 end
+
 function WBP_GamePokey_C:OnAccessoryHovered(ArticleId, Equipped)
   self.WBP_AccessoryCompare:InitInfoForGamePokey(ArticleId, self.ChooseGun, Equipped)
   self.WBP_AccessoryCompare:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_GamePokey_C:OnAccessoryUnHovered()
   self.WBP_AccessoryCompare:SetVisibility(UE.ESlateVisibility.Hidden)
 end
+
 function WBP_GamePokey_C:OnWeaponSwitchChoose(Clicked)
   if Clicked ~= self.Clicked then
     self.Clicked = Clicked
@@ -183,11 +202,13 @@ function WBP_GamePokey_C:OnWeaponSwitchChoose(Clicked)
     end
   end
 end
+
 function WBP_GamePokey_C:OnAccessoryChanged()
   self:InitWeaponDisplayInfo()
   self:CheckItemExist()
   self.WBP_AccessoriesPanel:RefreshState()
 end
+
 function WBP_GamePokey_C:OnAccessoryEquipped()
   local waveManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGWaveWindowManager:StaticClass())
   if waveManager then
@@ -196,10 +217,12 @@ function WBP_GamePokey_C:OnAccessoryEquipped()
   print(" WBP_GamePokey_C:OnAccessoryEquipped ")
   PlaySound2DEffect(30003, "")
 end
+
 function WBP_GamePokey_C:OnAccessoryUnEquip()
   PlaySound2DEffect(30002, "")
   print(" WBP_GamePokey_C:OnAccessoryUnEquip ")
 end
+
 function WBP_GamePokey_C:OnBagChanged()
   self.WBP_AccessoriesPanel:RefreshState()
   if self.Discard then
@@ -207,6 +230,7 @@ function WBP_GamePokey_C:OnBagChanged()
     self.Discard = false
   end
 end
+
 function WBP_GamePokey_C:OnEquipChanged()
   local widget
   for key, value in iterator(self.VerticalBox_WeaponSwitch:GetAllChildren()) do
@@ -221,6 +245,7 @@ function WBP_GamePokey_C:OnEquipChanged()
     self:InitChooseWeapon()
   end
 end
+
 function WBP_GamePokey_C:OnEquipSlotSelected(Selected)
   self.Selected = Selected
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -232,25 +257,31 @@ function WBP_GamePokey_C:OnEquipSlotSelected(Selected)
     end
   end
 end
+
 function WBP_GamePokey_C:OnClearEquipSlotChoose()
   self:ClearChooseEquipSlot()
 end
+
 function WBP_GamePokey_C:OnWeaponMeshPressed()
   self.CanvasPanel_EquipSlot:SetVisibility(UE.ESlateVisibility.Hidden)
 end
+
 function WBP_GamePokey_C:OnWeaponMeshReleased()
   self.CanvasPanel_EquipSlot:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_GamePokey_C:OnMainPanelEnter(Index)
   if 0 == Index then
     self:PlayAnimation(self.ani_33_gamepokey_in)
   end
 end
+
 function WBP_GamePokey_C:OnMainPanelExit(CurrentActivateWidget)
   if self == CurrentActivateWidget then
     self:PlayAnimation(self.ani_33_gamepokey_out)
   end
 end
+
 function WBP_GamePokey_C:OnActiveWidgetChange(LastActiveWidget, CurActiveWidget, MainPanel)
   self.MainPanel = MainPanel
   if CurActiveWidget == self then
@@ -259,12 +290,14 @@ function WBP_GamePokey_C:OnActiveWidgetChange(LastActiveWidget, CurActiveWidget,
     self:PlayAnimation(self.ani_33_gamepokey_in)
   end
 end
+
 function WBP_GamePokey_C:GetAccessoryComp()
   if self.ChooseGun then
     return self.ChooseGun.AccessoryComponent
   end
   return nil
 end
+
 function WBP_GamePokey_C:GetBagComp()
   local playerController = self:GetOwningPlayer()
   if playerController then
@@ -272,12 +305,14 @@ function WBP_GamePokey_C:GetBagComp()
   end
   return nil
 end
+
 function WBP_GamePokey_C:GetEquipComp(Actor)
   if Actor then
     return Actor:GetComponentByClass(UE.URGEquipmentComponent:StaticClass())
   end
   return nil
 end
+
 function WBP_GamePokey_C:GetCompanionAI()
   local pawn = self:GetOwningPlayerPawn()
   if pawn then
@@ -288,6 +323,7 @@ function WBP_GamePokey_C:GetCompanionAI()
   end
   return nil
 end
+
 function WBP_GamePokey_C:GetCurrentWeapon(Target)
   local equipmentComp = self:GetEquipComp(Target)
   if equipmentComp then
@@ -295,9 +331,11 @@ function WBP_GamePokey_C:GetCurrentWeapon(Target)
   end
   return nil
 end
+
 function WBP_GamePokey_C:GetAccessoryCompByActor(Target)
   return Target.AccessoryComponent
 end
+
 function WBP_GamePokey_C:HasBarrel(Target)
   local AccessoryComponent = self:GetAccessoryCompByActor(Target)
   if AccessoryComponent then
@@ -305,6 +343,7 @@ function WBP_GamePokey_C:HasBarrel(Target)
   end
   return nil
 end
+
 function WBP_GamePokey_C:GetNotChooseGun()
   if self.ChooseGun then
     if self.WBP_WeaponSwitch_Primary.Gun == self.ChooseGun then
@@ -315,12 +354,14 @@ function WBP_GamePokey_C:GetNotChooseGun()
   end
   return nil
 end
+
 function WBP_GamePokey_C:IsAccessoryRotate()
   if self.WeaponCapture and self.WeaponCapture:IsValid() then
     return self.WeaponCapture.RotateByAccessory
   end
   return false
 end
+
 function WBP_GamePokey_C:DiscardAccessory()
   if self.CurrentChooseAccessory and not self.CurrentChooseAccessory.Equipped then
     self.Discard = true
@@ -335,8 +376,10 @@ function WBP_GamePokey_C:DiscardAccessory()
     end
   end
 end
+
 function WBP_GamePokey_C:DiscardWeapon()
 end
+
 function WBP_GamePokey_C:WillShowMessage(AccessoryId)
   local accessoryComponent = self:GetAccessoryComp()
   if accessoryComponent then
@@ -348,12 +391,14 @@ function WBP_GamePokey_C:WillShowMessage(AccessoryId)
     end
   end
 end
+
 function WBP_GamePokey_C:UpdateEquipSlotPosition(AsSlot, InLocation)
   if self.WeaponCapture and self.WeaponCapture:IsValid() then
     local result, screenPosition = UE.UWidgetLayoutLibrary.ProjectWorldLocationToWidgetPosition(self:GetOwningPlayer(), UE.UKismetMathLibrary.TransformLocation(self.WeaponCapture.SKM_Basics:K2_GetComponentToWorld(), InLocation), nil, false)
     AsSlot:SetPosition(screenPosition)
   end
 end
+
 function WBP_GamePokey_C:ClearChooseEquipSlot()
   if self.Selected then
     self.Selected:ClearButtonClicked()
@@ -361,16 +406,20 @@ function WBP_GamePokey_C:ClearChooseEquipSlot()
     self.Selected = nil
   end
 end
+
 function WBP_GamePokey_C:RecoverAccessoriesPanel()
   self.WBP_AccessoriesPanel:CreateAccessories(self)
 end
+
 function WBP_GamePokey_C:CheckItemExist()
   self.WBP_AccessoryCompare:SetVisibility(UE.ESlateVisibility.Hidden)
   self.WBP_AccessoriesPanel:CheckItemExist()
 end
+
 function WBP_GamePokey_C:OnClose()
   self:RecoverDisplayCamera()
 end
+
 function WBP_GamePokey_C:RecoverDisplayCamera()
   if self.WeaponCapture and self.WeaponCapture:IsValid() then
     self.WeaponCapture:SetWeaponCaptureInfo(false, false, false)
@@ -380,6 +429,7 @@ function WBP_GamePokey_C:RecoverDisplayCamera()
     end
   end
 end
+
 function WBP_GamePokey_C:GetWeaponCapture()
   local outActors
   local weaponCaptureClass = UE.UClass.Load("/Game/Rouge/UI/Item/Weapon/BP_WeaponCapture.BP_WeaponCapture_C")
@@ -388,14 +438,17 @@ function WBP_GamePokey_C:GetWeaponCapture()
     self.WeaponCapture = outActors:Get(1)
   end
 end
+
 function WBP_GamePokey_C:SetDisplayCamera()
   if self.WeaponCapture and self.WeaponCapture:IsValid() then
     self.WeaponCapture:SetWeaponCaptureInfo(true, false, false)
   end
 end
+
 function WBP_GamePokey_C:InterpolationCameraWeapon(Selected, Equipped, AccessoryId)
   if Equipped and self.WeaponCapture and self.WeaponCapture:IsValid() then
     self.WeaponCapture:OnAccessoryClicked(Selected, AccessoryId)
   end
 end
+
 return WBP_GamePokey_C

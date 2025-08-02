@@ -1,17 +1,20 @@
 local RedDotView = UnLua.Class()
 local RedDotData = require("Modules.RedDot.RedDotData")
 local StateCanvasList = {}
+
 function RedDotView:Construct()
   self.Overridden.Construct(self)
   self:ChangeRedDotId(self.RedDotClass)
   EventSystem.AddListenerNew(EventDef.RedDot.OnRedDotStateChanged, self, self.BindOnRedDotStateChanged)
   EventSystem.AddListenerNew(EventDef.RedDot.OnPlayOnceAnimation, self, self.BindOnPlayOnceAnimation)
 end
+
 function RedDotView:Destruct()
   self.Overridden.Destruct(self)
   EventSystem.RemoveListenerNew(EventDef.RedDot.OnRedDotStateChanged, self, self.BindOnRedDotStateChanged)
   EventSystem.RemoveListenerNew(EventDef.RedDot.OnPlayOnceAnimation, self, self.BindOnPlayOnceAnimation)
 end
+
 function RedDotView:ChangeRedDotId(RedDotId, RedDotClass)
   self.RedDotId = RedDotId
   self.RedDotClass = RedDotClass or self.RedDotClass
@@ -22,6 +25,7 @@ function RedDotView:ChangeRedDotId(RedDotId, RedDotClass)
   end
   self:SetRedDotState(RedDotData:GetRedDotState(self.RedDotId))
 end
+
 function RedDotView:ChangeRedDotIdByTag(Tag)
   if Tag then
     self:ChangeRedDotId(self.RedDotClass .. "_" .. Tag)
@@ -29,12 +33,14 @@ function RedDotView:ChangeRedDotIdByTag(Tag)
     UnLua.LogError("RedDotView:ChangeRedDotIdByTag Tag is nil")
   end
 end
+
 function RedDotView:BindOnRedDotStateChanged(RedDotId)
   if RedDotId == self.RedDotId then
     local State = RedDotData:GetRedDotState(RedDotId)
     self:SetRedDotState(State)
   end
 end
+
 function RedDotView:SetRedDotState(State)
   self.RedDotState = State
   if not State then
@@ -66,12 +72,15 @@ function RedDotView:SetRedDotState(State)
   end
   self.StateAni = self["Ani_" .. State.RedDotType .. "_loop"]
 end
+
 function RedDotView:ChangeNum(delta)
   RedDotData:ChangeRedDotNum(self.RedDotId, delta)
 end
+
 function RedDotView:SetNum(Num)
   RedDotData:SetRedDotNum(self.RedDotId, Num)
 end
+
 function RedDotView:BindOnClick()
   local RedDotState = RedDotData:GetRedDotState(self.RedDotId, self.RedDotClass)
   if 0 == #RedDotState.StubbornChildList then
@@ -79,9 +88,11 @@ function RedDotView:BindOnClick()
     self:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function RedDotView:BindOnPlayOnceAnimation()
   if self.RedDotState and self.RedDotState.IsActive and self.StateAni and not self:IsAnimationPlaying(self.StateAni) then
     self:PlayAnimation(self.StateAni, 0, 1, UE.EUMGSequencePlayMode.Forward)
   end
 end
+
 return RedDotView

@@ -10,8 +10,10 @@ local EAppPage = {
   Popup = "popup"
 }
 _G.EAppPage = EAppPage
+
 function PandoraModule:Ctor()
 end
+
 function PandoraModule:OnInit()
   if not UE.URGPandoraSubsystem then
     return
@@ -44,6 +46,7 @@ function PandoraModule:OnInit()
   EventSystem.AddListener(self, EventDef.BeginnerGuide.OnBeginnerGuideFinished, self.BindOnBeginnerMissionFinished)
   PandoraModule.TipsWidget = nil
 end
+
 function PandoraModule:BindPandoraShowItemTip(MsgObj)
   print("PandoraModule:BindPandoraShowItemTip MsgObj:", MsgObj)
   local WidgetClassPath = "/Game/Rouge/UI/Common/WBP_CommonItemDetail.WBP_CommonItemDetail_C"
@@ -65,6 +68,7 @@ function PandoraModule:BindPandoraShowItemTip(MsgObj)
     UpdateVisibility(PandoraModule.TipsWidget)
   end
 end
+
 function PandoraModule:BindpandoraGetUserInfo(MsgObj)
   print("PandoraModule:BindpandoraGetUserInfo MsgObj:", MsgObj.content)
   DataMgr.GetOrQueryPlayerInfo({
@@ -83,6 +87,7 @@ function PandoraModule:BindpandoraGetUserInfo(MsgObj)
     end
   end)
 end
+
 function PandoraModule:ConstructUserInfo(PlayerInfo, content)
   local KeyDict = {
     AccountName = PlayerInfo.nickname,
@@ -97,6 +102,7 @@ function PandoraModule:ConstructUserInfo(PlayerInfo, content)
   end
   return FinalData
 end
+
 function PandoraModule:BindPandoraActCenterRedpoint(MsgObj)
   local RedDotId = "Activity_TabList_" .. MsgObj.appId
   print("PandoraModule:BindPandoraActCenterRedpoint MsgObj:", RedDotId, MsgObj.content)
@@ -105,6 +111,7 @@ function PandoraModule:BindPandoraActCenterRedpoint(MsgObj)
   RedDotState.Num = MsgObj.content
   RedDotData:UpdateRedDotState(RedDotId, RedDotState)
 end
+
 function PandoraModule:BindPandoraActCenterReady(MsgObj)
   print("PandoraModule:BindPandoraActCenterReady MsgObj:", MsgObj.appId, MsgObj.iconName)
   table.Print(MsgObj)
@@ -126,6 +133,7 @@ function PandoraModule:BindPandoraActCenterReady(MsgObj)
   end
   EventSystem.Invoke(EventDef.Activity.OnPandoraActivityRefresh, MsgObj.appId)
 end
+
 function PandoraModule:BindPandoraShowTextTip(MsgObj)
   print("PandoraModule:BindPandoraShowTextTip MsgObj:", MsgObj.content)
   if MsgObj and MsgObj.content then
@@ -134,7 +142,12 @@ function PandoraModule:BindPandoraShowTextTip(MsgObj)
     })
   end
 end
+
 function PandoraModule:BindOnPandoraActTabReady(MsgObj)
+  local IsNewCreate = RedDotData:CreateRedDotState(tonumber(MsgObj.appId), "Activity_Tab")
+  local RedDotState = {}
+  RedDotState.Num = tonumber(MsgObj.redPoint)
+  RedDotData:UpdateRedDotState(tonumber(MsgObj.appId), RedDotState)
   if not PandoraModule.ActivityTabInfo then
     PandoraModule.ActivityTabInfo = {}
   end
@@ -156,6 +169,7 @@ function PandoraModule:BindOnPandoraActTabReady(MsgObj)
   print("PandoraModule:BindOnPandoraActTabReady")
   EventSystem.Invoke(EventDef.Activity.OnPandoraRefreshActivitiesTab)
 end
+
 function PandoraModule:BindOnPandoraCloseApp(MsgObj)
   print("PandoraModule:BindOnPandoraCloseApp", MsgObj)
   local Pandora = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGPandoraSubsystem:StaticClass())
@@ -172,6 +186,7 @@ function PandoraModule:BindOnPandoraCloseApp(MsgObj)
     Pandora:CloseApp(MsgObj.targetAppId)
   end
 end
+
 function PandoraModule:BindOnPandoraOpened()
   print("PandoraModule:BindOnPandoraOpened...........")
   local PandoraSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGPandoraSubsystem:StaticClass())
@@ -183,6 +198,7 @@ function PandoraModule:BindOnPandoraOpened()
     PandoraSubsystem.OnPandoraPayWindowClose:Add(GameInstance, PandoraModule.BindOnPandoraPayWindowClose)
   end
 end
+
 function PandoraModule:BindOnPandoraClosed()
   print("PandoraModule:BindOnPandoraClosed...........")
   local PandoraSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGPandoraSubsystem:StaticClass())
@@ -194,16 +210,20 @@ function PandoraModule:BindOnPandoraClosed()
     PandoraSubsystem.OnPandoraPayWindowClose:Remove(GameInstance, PandoraModule.BindOnPandoraPayWindowClose)
   end
 end
+
 function PandoraModule:BindOnPandoraPaySuccess(MsgObj)
   PandoraHandler.SendMidasPayCallBack_WeGame(MsgObj)
 end
+
 function PandoraModule:BindOnPandoraPayWindowClose()
   PandoraHandler.SendPandoraPayWindowClose()
 end
+
 function PandoraModule:BindPandoraCopyMessageToClipboard(MsgObj)
   print("PandoraModule:BindPandoraCopyMessageToClipboard", MsgObj.content)
   UE.URGBlueprintLibrary.CopyMessageToClipboard(MsgObj.content)
 end
+
 function PandoraModule:BindPandoraMidasPay(MsgObj)
   print("PandoraModule:BindPandoraMidasPay", MsgObj.appId, MsgObj.payInfo)
   if UE.URGPlatformFunctionLibrary.IsIntlEdition() then
@@ -218,16 +238,19 @@ function PandoraModule:BindPandoraMidasPay(MsgObj)
     end
   end
 end
+
 function PandoraModule:OnPayClose()
   print("PandoraModule:OnPayClose")
   PandoraHandler.SendMidasPayCallBack()
 end
+
 function PandoraModule:BindCTIPayCallback()
   local PlatformSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGPlatformCommonSubsystemBase:StaticClass())
   if PlatformSubsystem then
     PlatformSubsystem.OnCtiPurchasePayCallback:Add(GameInstance, PandoraModule.BindOnPurchaseProductsResponseDelegate)
   end
 end
+
 function PandoraModule:BindOnPurchaseProductsResponseDelegate(Result)
   local PlatformSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGPlatformCommonSubsystemBase:StaticClass())
   if PlatformSubsystem then
@@ -235,6 +258,7 @@ function PandoraModule:BindOnPurchaseProductsResponseDelegate(Result)
   end
   PandoraModule:OnPayClose()
 end
+
 function PandoraModule:BindPandoraGetProductInfo(MsgObj)
   print("PandoraModule:BindPandoraGetProductInfo", MsgObj.unifiedProductIds, MsgObj.appid)
   UE.URGPlatformFunctionLibrary.CTIGetProductInfo(Split(MsgObj.unifiedProductIds, ","))
@@ -243,6 +267,7 @@ function PandoraModule:BindPandoraGetProductInfo(MsgObj)
     PlatformSubsystem.OnCtiGetProductInfoCallback:Add(GameInstance, PandoraModule.BindOnGetProductInfoCallback)
   end
 end
+
 function PandoraModule:BindOnGetProductInfoCallback(RetCode, ProductInfo)
   local PlatformSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGPlatformCommonSubsystemBase:StaticClass())
   if PlatformSubsystem then
@@ -250,15 +275,19 @@ function PandoraModule:BindOnGetProductInfoCallback(RetCode, ProductInfo)
   end
   PandoraHandler.SendGetProductInfoResult(ProductInfo)
 end
+
 function PandoraModule:OnSDKMessage(Message)
   print("PandoraModule:OnSDKMessage", Message)
   local MsgObj = rapidjson.decode(Message)
   PandoraHandler.ProcessProtocal(MsgObj.type, MsgObj)
 end
+
 function PandoraModule:BindOnPandoraWidgetCreated(Widget, AppId, AppInfo)
   local MsgObj = rapidjson.decode(AppInfo)
   print("PandoraModule:BindOnPandoraWidgetCreated", Widget, AppId, MsgObj.appPage)
-  if "7479" == AppId or "7485" == AppId then
+  local CarouselImageAppId = PandoraData:GetCarouselImageAppId()
+  local TreasureAppId = PandoraData:GetTreasureAppId()
+  if AppId == TreasureAppId or AppId == CarouselImageAppId then
     EventSystem.Invoke(EventDef.Pandora.pandoraWidgetCreated, Widget, AppId)
     return
   end
@@ -277,6 +306,7 @@ function PandoraModule:BindOnPandoraWidgetCreated(Widget, AppId, AppInfo)
     WidgetPanel:OnWidgetCreated(Widget, AppId, EAppPage.Index)
   end
 end
+
 function PandoraModule:BindOnPandoraWidgetAboutToDestroy(Widget, AppId, AppInfo)
   print("PandoraModule:OnPandoraWidgetAboutToDestroy")
   local MsgObj = rapidjson.decode(AppInfo)
@@ -295,9 +325,11 @@ function PandoraModule:BindOnPandoraWidgetAboutToDestroy(Widget, AppId, AppInfo)
     UIMgr:Hide(ViewID.UI_PandoraActivityPanel_Popup)
   end
 end
+
 function PandoraModule:BindOnShowEntrance(MsgObj)
   print("pandoraShowEntrance:", MsgObj.appId, MsgObj.appName)
 end
+
 function PandoraModule:BindOnADPositionReady(MsgObj)
   print("BindOnADPositionReady:", MsgObj.adId, MsgObj.openAppId, MsgObj.openAppName, MsgObj.materialCount, MsgObj.appId, MsgObj.appName)
   local AdInfo = {
@@ -322,14 +354,16 @@ function PandoraModule:BindOnADPositionReady(MsgObj)
   end
   EventSystem.Invoke(EventDef.Pandora.NotifyPandoraADPositionReady)
 end
+
 function PandoraModule:BindOnOpenUrl(MsgObj)
   print("pandoraOpenUrl:", MsgObj.content, MsgObj.urlType, MsgObj.appId, MsgObj.appName)
   if MsgObj.urlType == "1" then
     UIMgr:Show(ViewID.UI_WebBrowserView, false, MsgObj.content)
   elseif MsgObj.urlType == "2" then
-    PandoraHandler.GoPandoraActivity(9999)
+    UE.UKismetSystemLibrary.LaunchURL(MsgObj.content)
   end
 end
+
 function PandoraModule:BindOnGoSystem(MsgObj)
   print("pandoraGoSystem:", MsgObj.content, MsgObj.appId, MsgObj.appName)
   local JsonTable = rapidjson.decode(MsgObj.content)
@@ -361,6 +395,7 @@ function PandoraModule:BindOnGoSystem(MsgObj)
     print("pandoraGoSystem LinkId:", JsonTable.LinkId, JsonTable.LinkSource)
   end
 end
+
 function PandoraModule:OpenAnnounceApp()
   if not UE.URGPandoraSubsystem then
     return
@@ -371,9 +406,11 @@ function PandoraModule:OpenAnnounceApp()
     PandorSubsystem:OpenApp(AppId, "")
   end
 end
+
 function PandoraModule:BindOnShowRedpoint(MsgObj)
   print("pandoraShowRedpoint:", MsgObj.content, MsgObj.appId, MsgObj.appName)
 end
+
 function PandoraModule:BindPandoraGoPandora(MsgObj)
   local appId = MsgObj.appId
   local targetAppId = MsgObj.targetAppId
@@ -387,6 +424,7 @@ function PandoraModule:BindPandoraGoPandora(MsgObj)
     return PandorSubsystem:OpenApp(targetAppId, openArgs)
   end
 end
+
 function PandoraModule:BindOnBeginnerMissionFinished(GuideId)
   UE.UKismetSystemLibrary.K2_SetTimerDelegate({
     GameInstance,
@@ -403,6 +441,7 @@ function PandoraModule:BindOnBeginnerMissionFinished(GuideId)
     end
   }, 1, false)
 end
+
 function PandoraModule:OnShowLobbyMain()
   print("panameraADPositionReady,OnShowLobbyMain", not BeginnerGuideData:GetNowGuide())
   if BeginnerGuideData:GetNowGuide() then
@@ -423,12 +462,14 @@ function PandoraModule:OnShowLobbyMain()
     end
   }, 0.3, false)
 end
+
 function PandoraModule:AddUserData(Key, Value)
   local PandorSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGPandoraSubsystem:StaticClass())
   if PandorSubsystem then
     PandorSubsystem:AddUserData(Key, Value)
   end
 end
+
 function PandoraModule:OnShutdown()
   if not UE.URGPandoraSubsystem then
     return
@@ -452,4 +493,5 @@ function PandoraModule:OnShutdown()
   EventSystem.RemoveListener(EventDef.Pandora.pandoraCopyMessageToClipboard, self.BindPandoraCopyMessageToClipboard, self)
   EventSystem.RemoveListener(EventDef.Pandora.pandoraMidasPay, self.BindPandoraMidasPay, self)
 end
+
 return PandoraModule

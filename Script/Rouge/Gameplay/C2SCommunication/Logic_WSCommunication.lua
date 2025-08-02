@@ -26,6 +26,7 @@ if not LogicTalent then
 end
 local TimerCount = 0
 WSCommunication = WSCommunication or {IsInit = false}
+
 function WSCommunication.Init()
   WSCommunication.IsReconnectFail = false
   if WSCommunication.IsInit then
@@ -34,6 +35,7 @@ function WSCommunication.Init()
   WSCommunication.IsInit = true
   WSCommunication:RegisterEvent()
 end
+
 function WSCommunication:RegisterEvent()
   EventSystem.AddListener(nil, EventDef.WSMessage.ConnectWSSuccess, WSCommunication.BindOnWSConnSucc)
   EventSystem.AddListener(nil, EventDef.WSMessage.KickOut, WSCommunication.BindOnKickOut)
@@ -46,8 +48,9 @@ function WSCommunication:RegisterEvent()
     GateService.WSGate_OnMessageRecv:Add(GameInstance, WSCommunication.BindOnMessageRecv)
   end
 end
+
 function WSCommunication.BindOnWSConnSucc(Json)
-  print("LoginFlow", "WSCommunication.BindOnWSConnSucc - wsConnSucc \228\186\139\228\187\182\232\167\166\229\143\145\230\136\144\229\138\159")
+  printShipping("LoginFlow", "WSCommunication.BindOnWSConnSucc - wsConnSucc \228\186\139\228\187\182\232\167\166\229\143\145\230\136\144\229\138\159")
   if LogicAutoRobot and LogicAutoRobot.GetIsAutoBot() then
     print("WSCommunication.BindOnWSConnSucc return by Robot")
     return
@@ -80,6 +83,7 @@ function WSCommunication.BindOnWSConnSucc(Json)
   print("WSCommunication.BindOnWSConnSucc LoadMainTaskModule")
   ChatDataMgr.GetVoiceBanStatus(nil, true)
 end
+
 function WSCommunication.InitAccountInfo()
   LogicLobby.IsFirstTeamInfoUpdate = true
   WSCommunication.PullCurrencyList()
@@ -127,6 +131,7 @@ function WSCommunication.InitAccountInfo()
   local ClimbTowerTable = LuaTableMgr.GetLuaTableByName(TableNames.TBClimbTowerFloor)
   ClimbTowerData:PassRewardStatus(#ClimbTowerTable)
 end
+
 function WSCommunication.RequestWhenWSConNotInBattle()
   local callback = function(JsonTable)
     LogicOutsideWeapon.RequestEquippedWeaponInfo(JsonTable.equipHero)
@@ -136,6 +141,7 @@ function WSCommunication.RequestWhenWSConNotInBattle()
   end
   LogicRole.RequestMyHeroInfoToServer(callback)
 end
+
 function WSCommunication.BindOnKickOut()
   print("KickOut")
   local LobbyModule = ModuleManager:Get("LobbyModule")
@@ -152,6 +158,7 @@ function WSCommunication.BindOnKickOut()
     WSCommunication.bIskickOut = true
   end
 end
+
 function WSCommunication.BindOnKickByBan(Json)
   print("BindOnKickByBan ", Json)
   local JsonTable = rapidjson.decode(Json)
@@ -159,11 +166,13 @@ function WSCommunication.BindOnKickByBan(Json)
   WSCommunication.KickBanReason = JsonTable.banReason
   WSCommunication.KickBanEndTime = JsonTable.banEndTime
 end
+
 function WSCommunication.BindOnReconnectFailed()
   print("WSCommunication.BindOnReconnectFailed")
   WSCommunication.IsRealReconnectFail = true
   WSCommunication.StartExecuteReconnectFailLogic()
 end
+
 function WSCommunication.StartExecuteReconnectFailLogic()
   print("WSCommunication.StartExecuteReconnectFailLogic")
   WSCommunication.IsReconnectFail = true
@@ -190,6 +199,7 @@ function WSCommunication.StartExecuteReconnectFailLogic()
     }, 3.0, false)
   end
 end
+
 function WSCommunication.ExecuteReconnectFailLogic()
   print("WSCommunication.ExecuteReconnectFailLogic")
   WSCommunication.IsReconnectFail = false
@@ -209,6 +219,7 @@ function WSCommunication.ExecuteReconnectFailLogic()
   end
   WSCommunication.IsRealReconnectFail = false
 end
+
 function WSCommunication:BindOnReconnecting(ReconnectNum)
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
   if not WaveWindowManager then
@@ -220,11 +231,13 @@ function WSCommunication:BindOnReconnecting(ReconnectNum)
   table.insert(Param, ReconTxt)
   WaveWindowManager:ShowWaveWindow(100001, Param)
 end
+
 function WSCommunication:BindOnMessageRecv(Message)
   print("BindOnMessageRecv:", Message)
   local JsonTable = rapidjson.decode(Message)
   EventSystem.Invoke(JsonTable.method, Message)
 end
+
 function WSCommunication:BindOnUpdateLoadingView(CountDown)
   local WaitReconTxt = NSLOCTEXT("WSCommunication", "WaitReconTxt", "\231\173\137\229\190\133\233\135\141\232\191\158......{0}")
   local ReconTxt = UE.FTextFormat(WaitReconTxt(), CountDown)
@@ -238,6 +251,7 @@ function WSCommunication:BindOnUpdateLoadingView(CountDown)
     end
   end
 end
+
 function WSCommunication.PullCurrencyList()
   local CurrencyList = {}
   local TotalResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
@@ -279,6 +293,7 @@ function WSCommunication.PullCurrencyList()
     end
   })
 end
+
 function WSCommunication.PullPropBackpack()
   HttpCommunication.Request("resource/pullproppack", {}, {
     GameInstance,
@@ -309,6 +324,7 @@ function WSCommunication.PullPropBackpack()
     end
   })
 end
+
 function WSCommunication.Clear()
   WSCommunication.IsInit = false
   EventSystem.RemoveListener(EventDef.WSMessage.ConnectWSSuccess, WSCommunication.BindOnWSConnSucc)

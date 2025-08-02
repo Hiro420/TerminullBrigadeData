@@ -6,11 +6,13 @@ local MinGenericShowNum = 20
 local EscActionName = "PauseGame"
 local MainPanelLeftSwitchName = "MainPanelLeftSwitch"
 local MainPanelRightSwitchName = "MainPanelRightSwitch"
+
 function WBP_SettlementPlayerInfoView_C:Construct()
   self.RGToggleGroupPlayerInfoTitle.OnCheckStateChanged:Add(self, self.OnPlayerInfoTitleChanged)
   self.WBP_InteractTipWidgetEsc.Btn_Main.OnClicked:Add(self, self.ListenForEscInputAction)
   self.WBP_CommonButton_Save.OnMainButtonClicked:Add(self, self.OnOpenSaveGrowthSnap)
 end
+
 function WBP_SettlementPlayerInfoView_C:InitSettlemntPlayerInfo(SelectPlayerId)
   UpdateVisibility(self, true)
   self:PlayAnimation(self.Ani_in)
@@ -43,6 +45,7 @@ function WBP_SettlementPlayerInfoView_C:InitSettlemntPlayerInfo(SelectPlayerId)
   print("WBP_SettlementPlayerInfoView_C:InitSettlemntPlayerInfo", SelectPlayerId)
   self:UpdateIncomeInfo()
 end
+
 function WBP_SettlementPlayerInfoView_C:InitTitle()
   local playerList = LogicSettlement:GetOrInitPlayerList()
   self.RGToggleGroupPlayerInfoTitle:ClearGroup()
@@ -61,6 +64,7 @@ function WBP_SettlementPlayerInfoView_C:InitTitle()
   UpdateVisibility(self.CanvasPanelLeft, #playerList > 1)
   UpdateVisibility(self.CanvasPanelRight, #playerList > 1)
 end
+
 function WBP_SettlementPlayerInfoView_C:ListenForEscInputAction()
   if self:IsAnimationPlaying(self.Ani_out) then
     return
@@ -68,6 +72,7 @@ function WBP_SettlementPlayerInfoView_C:ListenForEscInputAction()
   self:StopAnimation(self.Ani_in)
   self:PlayAnimation(self.Ani_out)
 end
+
 function WBP_SettlementPlayerInfoView_C:OnOpenSaveGrowthSnap()
   if LogicSettlement:GetClearanceStatus() ~= SettlementStatus.Finish then
     ShowWaveWindow(1405)
@@ -85,6 +90,7 @@ function WBP_SettlementPlayerInfoView_C:OnOpenSaveGrowthSnap()
     settlementView:OpenSaveGrowthSnap()
   end
 end
+
 function WBP_SettlementPlayerInfoView_C:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     if IsListeningForInputAction(self, EscActionName) then
@@ -99,6 +105,7 @@ function WBP_SettlementPlayerInfoView_C:OnAnimationFinished(Animation)
     UpdateVisibility(self, false)
   end
 end
+
 function WBP_SettlementPlayerInfoView_C:ListenForLeftInputAction()
   local leftRoleId = -1
   local preRoleId = -1
@@ -131,6 +138,7 @@ function WBP_SettlementPlayerInfoView_C:ListenForLeftInputAction()
     self.RGToggleGroupPlayerInfoTitle:SelectId(leftRoleId)
   end
 end
+
 function WBP_SettlementPlayerInfoView_C:ListenForRightInputAction()
   local rightRoleId = -1
   local preRoleId = -1
@@ -164,6 +172,7 @@ function WBP_SettlementPlayerInfoView_C:ListenForRightInputAction()
     self.RGToggleGroupPlayerInfoTitle:SelectId(rightRoleId)
   end
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateModel()
   local Difficulty = LogicSettlement:GetClearanceDifficulty()
   self.RGTextDiffculty:SetText(Difficulty)
@@ -181,6 +190,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateModel()
   local TimeStr = string.format("%02d:%02d:%02d", Hour, Min, Sec)
   self.RGTextTime:SetText(TimeStr)
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateGenericList()
   local passiveModifyAry = LogicSettlement:GetPassiveModifyAryByPlayerId(self.SelectPlayerId)
   local index = 1
@@ -212,6 +222,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateGenericList()
   end
   HideOtherItem(self.CanvasPanelSlotModifyList, self.SlotList:Num() + 1)
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateScrollList()
   for i = 1, Logic_Scroll.MaxScrollNum do
     local v
@@ -224,6 +235,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateScrollList()
   end
   HideOtherItem(self.WrapBoxScrollList, Logic_Scroll.MaxScrollNum + 1)
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateScrollSetList()
   local scrollSetList = LogicSettlement:GetScrollSetListByPlayerId(self.SelectPlayerId)
   for i, v in ipairs(scrollSetList) do
@@ -232,6 +244,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateScrollSetList()
   end
   HideOtherItem(self.WrapBoxScrollSetList, #scrollSetList + 1)
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateWorldList()
   if LogicSettlement:GetGameModeType() == UE.EGameModeType.TowerClimb or LogicSettlement:GetGameModeType() == UE.EGameModeType.Survivor or LogicSettlement:GetGameModeType() == UE.EGameModeType.BossRush then
     UpdateVisibility(self.ScrollBoxWorldList, false)
@@ -261,6 +274,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateWorldList()
     end
   end
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateGenericModifyTipsFunc(bIsShow, Data, ModifyChooseTypeParam, Slot, item)
   if bIsShow then
     if ModifyChooseTypeParam == ModifyChooseType.GenericModify then
@@ -273,6 +287,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateGenericModifyTipsFunc(bIsShow, Dat
     self.WBP_GenericModifyBagTips:Hide()
   end
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateShowPickupTipsView(bIsShowTipsView, ScrollId, TargetItem, ScrollTipsOpenType, bIsNeedInit)
   print("WBP_SettlementPlayerInfoView_C:UpdateShowPickupTipsView", bIsShowTipsView, ScrollId, TargetItem, ScrollTipsOpenType, bIsNeedInit)
   if ScrollId and ScrollId > 0 then
@@ -283,6 +298,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateShowPickupTipsView(bIsShowTipsView
     UpdateVisibility(self.WBP_ScrollPickUpTipsView, false)
   end
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateScrollSetTips(bIsShow, ActivatedSetData, ScrollSetItem)
   UpdateVisibility(self.WBP_ScrollSetTips, bIsShow)
   if bIsShow then
@@ -296,6 +312,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateScrollSetTips(bIsShow, ActivatedSe
     end
   end
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateView()
   local Diff = LogicSettlement:GetClearanceDifficulty()
   self.RGTextDiffculty:SetText(Diff)
@@ -306,11 +323,13 @@ function WBP_SettlementPlayerInfoView_C:UpdateView()
   local TimeStr = string.format("%02d:%02d:%02d", Hour, Min, Sec)
   self.RGTextTime:SetText(TimeStr)
 end
+
 function WBP_SettlementPlayerInfoView_C:Destruct()
   self.RGToggleGroupPlayerInfoTitle.OnCheckStateChanged:Remove(self, self.OnPlayerInfoTitleChanged)
   self.WBP_InteractTipWidgetEsc.Btn_Main.OnClicked:Remove(self, self.ListenForEscInputAction)
   self.WBP_CommonButton_Save.OnMainButtonClicked:Remove(self, self.OnOpenSaveGrowthSnap)
 end
+
 function WBP_SettlementPlayerInfoView_C:InitBattleHistoryPlayerInfo(SelectPlayerId, HistoryData)
   UpdateVisibility(self, true)
   self.bIsFromBattleHistory = true
@@ -353,6 +372,7 @@ function WBP_SettlementPlayerInfoView_C:InitBattleHistoryPlayerInfo(SelectPlayer
   print("WBP_SettlementPlayerInfoView_C:InitBattleHistoryPlayerInfo", SelectPlayerId)
   self:PushInputAction()
 end
+
 function WBP_SettlementPlayerInfoView_C:InitBattleHistoryTitle()
   local userIdList = {}
   for i, v in ipairs(self.HistoryData) do
@@ -383,6 +403,7 @@ function WBP_SettlementPlayerInfoView_C:InitBattleHistoryTitle()
     UpdateVisibility(self.CanvasPanelRight, #playerList > 1)
   end)
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryModel(historyData)
   local Difficulty = historyData.hard
   self.RGTextDiffculty:SetText(Difficulty)
@@ -401,6 +422,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryModel(historyData)
   local TimeStr = string.format("%02d:%02d:%02d", Hour, Min, Sec)
   self.RGTextTime:SetText(TimeStr)
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryGenericList(historyData)
   local passiveModifyAry = {}
   local slotModifyMap = {}
@@ -464,6 +486,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryGenericList(historyDa
   end
   HideOtherItem(self.CanvasPanelSlotModifyList, self.SlotList:Num() + 1)
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryScrollList(historyData)
   for i = 1, Logic_Scroll.MaxScrollNum do
     local v = historyData.Collections[i]
@@ -472,6 +495,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryScrollList(historyDat
   end
   HideOtherItem(self.WrapBoxScrollList, Logic_Scroll.MaxScrollNum + 1)
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryScrollSetList(historyData)
   local setIdToNum = OrderedMap.New()
   for i, v in ipairs(historyData.Collections) do
@@ -501,6 +525,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryScrollSetList(history
   end
   HideOtherItem(self.WrapBoxScrollSetList, idx)
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryWorldList(historyData)
   local Count = 1
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
@@ -535,6 +560,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryWorldList(historyData
   end
   HideOtherItem(self.ScrollBoxWorldList, Count)
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryGenericModifyTipsFunc(bIsShow, Data, ModifyChooseTypeParam, Slot, item)
   if bIsShow then
     if ModifyChooseTypeParam == ModifyChooseType.GenericModify then
@@ -548,6 +574,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryGenericModifyTipsFunc
     self.WBP_GenericModifyBagTips:Hide()
   end
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryShowPickupTipsView(bIsShowTipsView, ScrollId, TargetItem, ScrollTipsOpenType, bIsNeedInit)
   print("WBP_SettlementPlayerInfoView_C:UpdateShowPickupTipsView", bIsShowTipsView, ScrollId, TargetItem, ScrollTipsOpenType, bIsNeedInit)
   if ScrollId and ScrollId > 0 then
@@ -558,6 +585,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryShowPickupTipsView(bI
     UpdateVisibility(self.WBP_ScrollPickUpTipsView, false)
   end
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryScrollSetTips(bIsShow, ActivatedSetData, ScrollSetItem)
   UpdateVisibility(self.WBP_ScrollSetTips, bIsShow)
   if bIsShow then
@@ -571,6 +599,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryScrollSetTips(bIsShow
     end
   end
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryView(HistoryData)
   local Diff = HistoryData.hard
   self.RGTextDiffculty:SetText(Diff)
@@ -583,6 +612,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateBattleHistoryView(HistoryData)
   self.RGTextDamageValue:SetText(math.floor(HistoryData.harm))
   self.RGTextKillsValue:SetText(HistoryData.kills)
 end
+
 function WBP_SettlementPlayerInfoView_C:OnPlayerInfoTitleChanged(PlayerId)
   print("WBP_SettlementPlayerInfoView_C:OnPlayerInfoTitleChanged", PlayerId)
   self.SelectPlayerId = PlayerId
@@ -615,6 +645,7 @@ function WBP_SettlementPlayerInfoView_C:OnPlayerInfoTitleChanged(PlayerId)
     UpdateVisibility(self.WBP_SaveGrowth_AutoSave, bShow)
   end
 end
+
 function WBP_SettlementPlayerInfoView_C:UpdateIncomeInfo()
   print("WBP_SettlementPlayerInfoView_C:UpdateIncomeInfo", self.SelectPlayerId)
   local gold_num = UE.URGBlueprintLibrary.GetStatisticData(self.SelectPlayerId, 30056)
@@ -625,6 +656,7 @@ function WBP_SettlementPlayerInfoView_C:UpdateIncomeInfo()
   self.RGTextKillsValue:SetText(num_kill)
   UpdateVisibility(self.CanvasPanelBattleHistory, true)
 end
+
 function WBP_SettlementPlayerInfoView_C:GetHistoryDataByRoleId(RoleId)
   for i, v in ipairs(self.HistoryData) do
     if tonumber(v.roleID) == tonumber(RoleId) then
@@ -633,4 +665,5 @@ function WBP_SettlementPlayerInfoView_C:GetHistoryDataByRoleId(RoleId)
   end
   return nil
 end
+
 return WBP_SettlementPlayerInfoView_C

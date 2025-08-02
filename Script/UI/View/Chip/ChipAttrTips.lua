@@ -1,8 +1,11 @@
 local ChipAttrTips = UnLua.Class()
+
 function ChipAttrTips:Construct()
 end
+
 function ChipAttrTips:Destruct()
 end
+
 function ChipAttrTips:InitChipAttrTips(ChipOrderedMap)
   local idx = 1
   for i, v in ipairs(ChipOrderedMap) do
@@ -17,6 +20,8 @@ function ChipAttrTips:InitChipAttrTips(ChipOrderedMap)
   end
   HideOtherItem(self.ScrollBoxAttrRoot, idx)
 end
+
 function ChipAttrTips:Hide()
 end
+
 return ChipAttrTips

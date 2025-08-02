@@ -1,25 +1,5 @@
 ﻿{
   "1": {
-    "SeasonAbilityID": 1,
-    "SeasonAbilityPointID": 300001,
-    "SeasonAbilityPhase": {
-      "1": {
-        "value": 0,
-        "key": 1
-      },
-      "2": {
-        "value": 10,
-        "key": 2
-      },
-      "3": {
-        "value": 30,
-        "key": 3
-      },
-      "4": {
-        "value": 100,
-        "key": 4
-      }
-    },
     "TalentGroupIDS": {
       "1": 20101,
       "2": 20102,
@@ -37,30 +17,30 @@
       "14": 20114,
       "15": 20115
     },
-    "HeroID": 1004,
-    "SeasonIDx": 1
+    "SeasonAbilityPhase": {
+      "1": {
+        "key": 1,
+        "value": 0
+      },
+      "2": {
+        "key": 2,
+        "value": 10
+      },
+      "3": {
+        "key": 3,
+        "value": 30
+      },
+      "4": {
+        "key": 4,
+        "value": 100
+      }
+    },
+    "SeasonAbilityID": 1,
+    "SeasonIDx": 1,
+    "SeasonAbilityPointID": 300001,
+    "HeroID": 1004
   },
   "2": {
-    "SeasonAbilityID": 2,
-    "SeasonAbilityPointID": 300001,
-    "SeasonAbilityPhase": {
-      "1": {
-        "value": 0,
-        "key": 1
-      },
-      "2": {
-        "value": 10,
-        "key": 2
-      },
-      "3": {
-        "value": 30,
-        "key": 3
-      },
-      "4": {
-        "value": 100,
-        "key": 4
-      }
-    },
     "TalentGroupIDS": {
       "1": 20201,
       "2": 20202,
@@ -78,30 +58,30 @@
       "14": 20214,
       "15": 20215
     },
-    "HeroID": 1005,
-    "SeasonIDx": 1
-  },
-  "3": {
-    "SeasonAbilityID": 3,
-    "SeasonAbilityPointID": 300001,
     "SeasonAbilityPhase": {
       "1": {
-        "value": 0,
-        "key": 1
+        "key": 1,
+        "value": 0
       },
       "2": {
-        "value": 10,
-        "key": 2
+        "key": 2,
+        "value": 10
       },
       "3": {
-        "value": 30,
-        "key": 3
+        "key": 3,
+        "value": 30
       },
       "4": {
-        "value": 100,
-        "key": 4
+        "key": 4,
+        "value": 100
       }
     },
+    "SeasonAbilityID": 2,
+    "SeasonIDx": 1,
+    "SeasonAbilityPointID": 300001,
+    "HeroID": 1005
+  },
+  "3": {
     "TalentGroupIDS": {
       "1": 20101,
       "2": 20102,
@@ -119,30 +99,30 @@
       "14": 20114,
       "15": 20115
     },
-    "HeroID": 1010,
-    "SeasonIDx": 1
-  },
-  "4": {
-    "SeasonAbilityID": 4,
-    "SeasonAbilityPointID": 300001,
     "SeasonAbilityPhase": {
       "1": {
-        "value": 0,
-        "key": 1
+        "key": 1,
+        "value": 0
       },
       "2": {
-        "value": 10,
-        "key": 2
+        "key": 2,
+        "value": 10
       },
       "3": {
-        "value": 30,
-        "key": 3
+        "key": 3,
+        "value": 30
       },
       "4": {
-        "value": 100,
-        "key": 4
+        "key": 4,
+        "value": 100
       }
     },
+    "SeasonAbilityID": 3,
+    "SeasonIDx": 1,
+    "SeasonAbilityPointID": 300001,
+    "HeroID": 1010
+  },
+  "4": {
     "TalentGroupIDS": {
       "1": 20201,
       "2": 20202,
@@ -160,30 +140,30 @@
       "14": 20214,
       "15": 20215
     },
-    "HeroID": 1020,
-    "SeasonIDx": 1
-  },
-  "5": {
-    "SeasonAbilityID": 5,
-    "SeasonAbilityPointID": 300001,
     "SeasonAbilityPhase": {
       "1": {
-        "value": 0,
-        "key": 1
+        "key": 1,
+        "value": 0
       },
       "2": {
-        "value": 10,
-        "key": 2
+        "key": 2,
+        "value": 10
       },
       "3": {
-        "value": 30,
-        "key": 3
+        "key": 3,
+        "value": 30
       },
       "4": {
-        "value": 100,
-        "key": 4
+        "key": 4,
+        "value": 100
       }
     },
+    "SeasonAbilityID": 4,
+    "SeasonIDx": 1,
+    "SeasonAbilityPointID": 300001,
+    "HeroID": 1020
+  },
+  "5": {
     "TalentGroupIDS": {
       "1": 20301,
       "2": 20302,
@@ -201,7 +181,27 @@
       "14": 20314,
       "15": 20315
     },
-    "HeroID": 1000,
-    "SeasonIDx": 1
+    "SeasonAbilityPhase": {
+      "1": {
+        "key": 1,
+        "value": 0
+      },
+      "2": {
+        "key": 2,
+        "value": 10
+      },
+      "3": {
+        "key": 3,
+        "value": 30
+      },
+      "4": {
+        "key": 4,
+        "value": 100
+      }
+    },
+    "SeasonAbilityID": 5,
+    "SeasonIDx": 1,
+    "SeasonAbilityPointID": 300001,
+    "HeroID": 1000
   }
 }

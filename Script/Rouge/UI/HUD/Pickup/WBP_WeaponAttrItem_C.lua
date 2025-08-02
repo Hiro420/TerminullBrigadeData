@@ -1,10 +1,12 @@
 local WBP_WeaponAttrItem_C = UnLua.Class()
+
 function WBP_WeaponAttrItem_C:InitAttributeInfo(Name, Value, Unit)
   self.RGTextAttrValue:SetText(Value)
   self.RGTextAttrValueUnit:SetText(Unit)
   self.RGTextAttrName:SetText(Name)
   self:UpdateCompareStatus(0)
 end
+
 function WBP_WeaponAttrItem_C:UpdateCompareStatus(Result, oldDisplayValue, newDisplayValue, Unit)
   if 0 == Result then
     UpdateVisibility(self.HorizontalCompareStatus, false)
@@ -32,4 +34,5 @@ function WBP_WeaponAttrItem_C:UpdateCompareStatus(Result, oldDisplayValue, newDi
     self.HorizontalCompareStatus:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
   end
 end
+
 return WBP_WeaponAttrItem_C

@@ -6,22 +6,27 @@ local ClimbTowerData = require("UI.View.ClimbTower.ClimbTowerData")
 local SeasonAbilityData = require("Modules.SeasonAbility.SeasonAbilityData")
 local ProficiencyData = require("Modules.Proficiency.ProficiencyData")
 local DailyRewardsView = Class(ViewBase)
+
 function DailyRewardsView:BindClickHandler()
   self.Btn_Receive.OnClicked:Add(self, self.Receive)
   self.Button_Close.OnClicked:Add(self, function()
     self:CloseWidget()
   end)
 end
+
 function DailyRewardsView:UnBindClickHandler()
   self.Btn_Receive.OnClicked:Remove(self, self.Receive)
 end
+
 function DailyRewardsView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function DailyRewardsView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function DailyRewardsView:OnShow(...)
   self.Closeing = false
   self.EquipCaChe = {}
@@ -42,11 +47,13 @@ function DailyRewardsView:OnShow(...)
   end)
   self:PlayAnimation(self.Anim_IN)
 end
+
 function DailyRewardsView:OnHide()
   EventSystem.RemoveListener(EventDef.ClimbTowerView.OnDailyRewardChange, self.InitHeroSlot)
   StopListeningForInputAction(self, "PauseGame", UE.EInputEvent.IE_Pressed)
   self.WBP_InteractTipWidget.OnMainButtonClicked:Remove(self, self.CloseWidget)
 end
+
 function DailyRewardsView:CloseWidget()
   if self.bExpand then
     UpdateVisibility(self.HeroSel, false)
@@ -60,6 +67,7 @@ function DailyRewardsView:CloseWidget()
   self.Closeing = true
   UIMgr:Hide(ViewID.UI_DailyRewards)
 end
+
 function DailyRewardsView:Receive()
   UpdateVisibility(self.HeroSel, false)
   EventSystem.Invoke(EventDef.ClimbTowerView.OnHeroPanelChange, -1)
@@ -67,6 +75,7 @@ function DailyRewardsView:Receive()
   ShowWaveWindow(304005)
   self:EquipDailyRewardHero()
 end
+
 function DailyRewardsView:InitHeroSlot()
   self.PointsAvailable:SetText(ClimbTowerData.DailyRewardInfo.rewardCount)
   self.CumulativeSpeed_1:SetText(ClimbTowerData.DailyRewardInfo.rewardRate)
@@ -134,6 +143,7 @@ function DailyRewardsView:InitHeroSlot()
   HideOtherItem(self.HeroList, Index, true)
   self:SetGainAttributes()
 end
+
 function DailyRewardsView:BindHeroItemClicked(HeroId, SlotId)
   self.CurClickedSlotId = SlotId
   UpdateVisibility(self.HeroSel, true)
@@ -141,6 +151,7 @@ function DailyRewardsView:BindHeroItemClicked(HeroId, SlotId)
   print("BindHeroItemClicked", self.CurClickedSlotId)
   EventSystem.Invoke(EventDef.ClimbTowerView.OnHeroPanelChange, SlotId)
 end
+
 function DailyRewardsView:BindHeroListItemClicked(HeroId, SlotId)
   for k, v in pairs(ClimbTowerData.DailyRewardInfo.heroSlots) do
     if v.heroID == HeroId then
@@ -161,12 +172,14 @@ function DailyRewardsView:BindHeroListItemClicked(HeroId, SlotId)
   self:InitHeroSlot()
   table.Print(self.EquipCaChe)
 end
+
 function DailyRewardsView:EquipDailyRewardHero()
   for k, v in pairs(self.EquipCaChe) do
     ClimbTowerData:EquipDailyRewardHero(k, v)
   end
   self.EquipCaChe = {}
 end
+
 function DailyRewardsView:SetGainAttributes()
   local Layer = DataMgr.GetFloorByGameModeIndex(ClimbTowerData.WorldId, ClimbTowerData.GameMode) - 1
   self.Txt_LayerTitle:SetText(UE.FTextFormat(self.LayerTitleText, Layer))
@@ -209,4 +222,5 @@ function DailyRewardsView:SetGainAttributes()
   end
   self.TxtHeroSpeed:SetText(UE.FTextFormat(self.SpeedText, HeroSpeed))
 end
+
 return DailyRewardsView

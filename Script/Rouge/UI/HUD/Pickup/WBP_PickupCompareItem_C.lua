@@ -1,6 +1,8 @@
 local WBP_PickupCompareItem_C = UnLua.Class()
+
 function WBP_PickupCompareItem_C:Construct()
 end
+
 function WBP_PickupCompareItem_C:IsEqualWorld(PickupActor, Weapon)
   local PickupWeapon = PickupActor:Cast(UE.ARGPickup_Weapon)
   if not PickupWeapon then
@@ -10,6 +12,7 @@ function WBP_PickupCompareItem_C:IsEqualWorld(PickupActor, Weapon)
   local WeaponWorldId = Weapon:GetWorldId()
   return PickupWorldId == WeaponWorldId
 end
+
 function WBP_PickupCompareItem_C:InitInfo(PickupActor, IsWeapon)
   self.PickupActor = PickupActor
   self.IsWeapon = IsWeapon
@@ -71,6 +74,7 @@ function WBP_PickupCompareItem_C:InitInfo(PickupActor, IsWeapon)
     self.Txt_Name:SetText("\230\173\166\229\153\168\228\186\140")
   end
 end
+
 function WBP_PickupCompareItem_C:BindOnReplaceButtonClicked()
   local EquipmentComp = self:GetOwningPlayerPawn():GetComponentByClass(UE.URGEquipmentComponent.StaticClass())
   if not EquipmentComp then
@@ -99,6 +103,8 @@ function WBP_PickupCompareItem_C:BindOnReplaceButtonClicked()
     MiscHelper:SelectSlotAndEquipAccessory(self.PickupActor, self.SlotId)
   end
 end
+
 function WBP_PickupCompareItem_C:Destruct()
 end
+
 return WBP_PickupCompareItem_C

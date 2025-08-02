@@ -8,6 +8,7 @@ local BeginnerGuidanceSystemTipsView = Class(ViewBase)
 local AreaParamNum = 2
 local EscActionName = "PauseGame"
 local SkipInteractTimerRate = 0.02
+
 function BeginnerGuidanceSystemTipsView:BindClickHandler()
   self.Button_Next.OnClicked:Add(self, self.OnNextClicked)
   self.Button_Next.OnHovered:Add(self, self.OnNextHovered)
@@ -18,6 +19,7 @@ function BeginnerGuidanceSystemTipsView:BindClickHandler()
   self.Button_Esc.OnClicked:Add(self, self.OnEscInputAction)
   self.Button_ForceNext.OnClicked:Add(self, self.OnNextClicked)
 end
+
 function BeginnerGuidanceSystemTipsView:UnBindClickHandler()
   self.Button_Next.OnClicked:Remove(self, self.OnNextClicked)
   self.Button_Next.OnHovered:Remove(self, self.OnNextHovered)
@@ -28,6 +30,7 @@ function BeginnerGuidanceSystemTipsView:UnBindClickHandler()
   self.Button_Esc.OnClicked:Remove(self, self.OnEscInputAction)
   self.Button_ForceNext.OnClicked:Remove(self, self.OnNextClicked)
 end
+
 function BeginnerGuidanceSystemTipsView:OnInit()
   self.DataBindTable = {}
   self.viewModel = UIModelMgr:Get("BeginnerGuidanceSystemTipsViewModel")
@@ -35,9 +38,11 @@ function BeginnerGuidanceSystemTipsView:OnInit()
   self.TargetWidget = nil
   self.SkipKeyName = "Space"
 end
+
 function BeginnerGuidanceSystemTipsView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function BeginnerGuidanceSystemTipsView:OnShow(...)
   local args = {
     ...
@@ -93,6 +98,7 @@ function BeginnerGuidanceSystemTipsView:OnShow(...)
   self:SetEnhancedInputActionBlocking(true)
   self:HideKeyboardUI()
 end
+
 function BeginnerGuidanceSystemTipsView:InitByGuideStepInfo(GuideStepInfo)
   self.Des = GuideStepInfo.content
   self.BtnName = tostring(GuideStepInfo.btncontent)
@@ -125,6 +131,7 @@ function BeginnerGuidanceSystemTipsView:InitByGuideStepInfo(GuideStepInfo)
   end
   self:UpdateTargetWidget()
 end
+
 function BeginnerGuidanceSystemTipsView:TryGetAreaInfo()
   local AreaInfoList = {}
   local ScreenScale = UE.UWidgetLayoutLibrary.GetViewportScale(self)
@@ -162,6 +169,7 @@ function BeginnerGuidanceSystemTipsView:TryGetAreaInfo()
   end
   return AreaInfoList
 end
+
 function BeginnerGuidanceSystemTipsView:OnTick()
   if LobbyModule.CurShowViewData ~= nil then
     print("ywtao, \229\189\147\229\137\141\230\156\137\229\188\185\231\170\151\230\152\190\231\164\186\239\188\140\229\188\186\229\136\182\233\128\128\229\135\186\229\189\147\229\137\141\229\188\149\229\175\188" .. UIDef[LobbyModule.CurShowViewData.ViewID].UIBP)
@@ -189,6 +197,7 @@ function BeginnerGuidanceSystemTipsView:OnTick()
     self.Img_BG:SetVisibility(UE.ESlateVisibility.Visible)
   end
 end
+
 function BeginnerGuidanceSystemTipsView:OnHide()
   self.viewModel:ClearNowGuideInfo()
   self.Super:DetachViewModel(self.viewModel, self.DataBindTable, self)
@@ -209,13 +218,16 @@ function BeginnerGuidanceSystemTipsView:OnHide()
   end
   self:ResetTargetUI()
 end
+
 function BeginnerGuidanceSystemTipsView:OnEscInputAction()
   UIMgr:Hide(ViewID.UI_BeginnerGuidanceSystemTips)
 end
+
 function BeginnerGuidanceSystemTipsView:OnNextClicked()
   self:StopAnimation(self.Ani_in)
   self:PlayAnimationForward(self.Ani_out)
 end
+
 function BeginnerGuidanceSystemTipsView:OnSkipClicked()
   self:ResetTargetUI()
   local IsForce = tostring(self.GuideStepInfo.btncontent) == "" and 1 or 0
@@ -224,6 +236,7 @@ function BeginnerGuidanceSystemTipsView:OnSkipClicked()
   self.viewModel:FinishNowGuide(true)
   UIMgr:Hide(ViewID.UI_BeginnerGuidanceSystemTips)
 end
+
 function BeginnerGuidanceSystemTipsView:ResetTargetUI()
   if next(self.GuideStepInfo.uiname) == nil then
   else
@@ -237,18 +250,23 @@ function BeginnerGuidanceSystemTipsView:ResetTargetUI()
     end
   end
 end
+
 function BeginnerGuidanceSystemTipsView:OnNextHovered()
   self:PlayAnimationForward(self.Ani_hover_in)
 end
+
 function BeginnerGuidanceSystemTipsView:OnNextUnhovered()
   self:PlayAnimationForward(self.Ani_hover_out)
 end
+
 function BeginnerGuidanceSystemTipsView:OnSkipHovered()
   self:PlayAnimationForward(self.Ani_hover_in_skip)
 end
+
 function BeginnerGuidanceSystemTipsView:OnSkipUnhovered()
   self:PlayAnimationForward(self.Ani_hover_out_skip)
 end
+
 function BeginnerGuidanceSystemTipsView:OnAnimationFinished(Animation)
   if self.Ani_out == Animation then
     self.viewModel:NextGuideStep()
@@ -256,6 +274,7 @@ function BeginnerGuidanceSystemTipsView:OnAnimationFinished(Animation)
   if self.Ani_in == Animation then
   end
 end
+
 function BeginnerGuidanceSystemTipsView:UpdateTargetWidget()
   local AreaInfoList = {
     Pos = UE.FVector2D(0, 0),
@@ -298,6 +317,7 @@ function BeginnerGuidanceSystemTipsView:UpdateTargetWidget()
   self.ActiveGuideAreaInfoList = AreaInfoList
   self:UpdateActiveAreas(AreaInfoList)
 end
+
 function BeginnerGuidanceSystemTipsView:UpdateActiveAreas(ActiveAreas)
   local ScreenScale = UE.UWidgetLayoutLibrary.GetViewportScale(self)
   local DynamicMaterial = self.Img_BG:GetDynamicMaterial()
@@ -359,6 +379,7 @@ function BeginnerGuidanceSystemTipsView:UpdateActiveAreas(ActiveAreas)
     self.CanvasPanel_Next:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function BeginnerGuidanceSystemTipsView:HideKeyboardUI()
   EventSystem.Invoke(EventDef.Lobby.ChangeLobbyMenuPanelVis, false)
   if UIMgr:IsShow(ViewID.UI_GameSettingsMain) then
@@ -366,15 +387,18 @@ function BeginnerGuidanceSystemTipsView:HideKeyboardUI()
     UIMgr:Hide(ViewID.UI_GameSettingsMain, true)
   end
 end
+
 function BeginnerGuidanceSystemTipsView:GetTipWidget(...)
   if UE.UKismetStringLibrary.IsEmpty(self.GuideStepInfo.TipUIName) then
     return self.Canvas_Tips
   end
   return self[self.GuideStepInfo.TipUIName]
 end
+
 function BeginnerGuidanceSystemTipsView:BindOnSkipKeyClicked()
   print("ywtao,BeginnerGuidanceSystemTipsView:BindOnSkipKeyClicked")
 end
+
 function BeginnerGuidanceSystemTipsView:BindOnEscKeyPressed(...)
   self:BindOnEscKeyReleased()
   self.Timer = UE.UKismetSystemLibrary.K2_SetTimerDelegate({
@@ -382,6 +406,7 @@ function BeginnerGuidanceSystemTipsView:BindOnEscKeyPressed(...)
     self.RefreshProgress
   }, SkipInteractTimerRate, true)
 end
+
 function BeginnerGuidanceSystemTipsView:RefreshProgress()
   if self.StartTime >= self.SkipTime then
     self:OnSkipClicked()
@@ -391,12 +416,14 @@ function BeginnerGuidanceSystemTipsView:RefreshProgress()
     self:UpdateProgress(self.StartTime / self.SkipTime)
   end
 end
+
 function BeginnerGuidanceSystemTipsView:UpdateProgress(Percent)
   local Mat = self.URGImageCircle:GetDynamicMaterial()
   if Mat then
     Mat:SetScalarParameterValue("percent", Percent)
   end
 end
+
 function BeginnerGuidanceSystemTipsView:BindOnEscKeyReleased(...)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.Timer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.Timer)
@@ -405,6 +432,7 @@ function BeginnerGuidanceSystemTipsView:BindOnEscKeyReleased(...)
   self:UpdateProgress(0)
   self.StartTime = 0
 end
+
 function BeginnerGuidanceSystemTipsView:OnMouseButtonDown(MyGeometry, MouseEvent)
   if self.GuideStepInfo.CanClickToNextStep then
     self:OnNextClicked()
@@ -414,7 +442,9 @@ function BeginnerGuidanceSystemTipsView:OnMouseButtonDown(MyGeometry, MouseEvent
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function BeginnerGuidanceSystemTipsView:Destruct(...)
   self:OnHide()
 end
+
 return BeginnerGuidanceSystemTipsView

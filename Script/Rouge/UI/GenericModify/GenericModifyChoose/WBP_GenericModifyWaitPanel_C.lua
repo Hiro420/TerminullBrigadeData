@@ -1,12 +1,15 @@
 local WBP_GenericModifyWaitPanel_C = UnLua.Class()
 local ChoosePanelPath = "/Game/Rouge/UI/GenericModify/GenericModifyChoose/WBP_GenericModifyChoosePanel.WBP_GenericModifyChoosePanel_C"
+
 function WBP_GenericModifyWaitPanel_C:OnCreate()
   self.Overridden.OnCreate(self)
 end
+
 function WBP_GenericModifyWaitPanel_C:FocusInput()
   self.Overridden.FocusInput(self)
   SetInputIgnore(self:GetOwningPlayerPawn(), true)
 end
+
 function WBP_GenericModifyWaitPanel_C:OnDisplay()
   self.Overridden.OnDisplay(self)
   if not UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.Timer) then
@@ -17,15 +20,18 @@ function WBP_GenericModifyWaitPanel_C:OnDisplay()
   end
   EventSystem.AddListener(self, EventDef.GenericModify.OnCancelInteract, WBP_GenericModifyWaitPanel_C.OnCancelChoosePanel)
 end
+
 function WBP_GenericModifyWaitPanel_C:UnfocusInput()
   self.Overridden.UnfocusInput(self)
   SetInputIgnore(self:GetOwningPlayerPawn(), false)
 end
+
 function WBP_GenericModifyWaitPanel_C:OnUnDisplay()
   self.Overridden.OnUnDisplay(self, true)
   EventSystem.RemoveListener(EventDef.GenericModify.OnCancelInteract, WBP_GenericModifyWaitPanel_C.OnCancelChoosePanel, self)
   self:Reset()
 end
+
 function WBP_GenericModifyWaitPanel_C:OnCancelChoosePanel(Target, Instigator)
   print("WBP_GenericModifyWaitPanel_C:OnCancelChoosePanel", Target, self.Target)
   if Target ~= self.Target then
@@ -33,15 +39,18 @@ function WBP_GenericModifyWaitPanel_C:OnCancelChoosePanel(Target, Instigator)
   end
   self:Exit()
 end
+
 function WBP_GenericModifyWaitPanel_C:OnClose()
   self.Overridden.OnClose(self)
   EventSystem.RemoveListener(EventDef.GenericModify.OnCancelInteract, WBP_GenericModifyWaitPanel_C.OnCancelChoosePanel, self)
   self:Reset()
 end
+
 function WBP_GenericModifyWaitPanel_C:InitGenericModifyWaitPanel(InteractComp, Target)
   self.InteractComp = InteractComp
   self.Target = Target
 end
+
 function WBP_GenericModifyWaitPanel_C:WaitFinish()
   local InteractComp = self.InteractComp
   local Target = self.Target
@@ -82,6 +91,7 @@ function WBP_GenericModifyWaitPanel_C:WaitFinish()
     LogicGenericModify.bCanFinish = true
   end
 end
+
 function WBP_GenericModifyWaitPanel_C:Reset()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.Timer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.Timer)
@@ -90,8 +100,10 @@ function WBP_GenericModifyWaitPanel_C:Reset()
   self.InteractComp = nil
   self.Target = nil
 end
+
 function WBP_GenericModifyWaitPanel_C:Destruct()
   self.Overridden.Destruct(self)
   self:Reset()
 end
+
 return WBP_GenericModifyWaitPanel_C

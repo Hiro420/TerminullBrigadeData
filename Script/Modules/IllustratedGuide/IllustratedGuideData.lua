@@ -7,9 +7,11 @@ local IllustratedGuideData = {
   NewUnlockSpecificModifyList = {},
   SpecificUnlockAniMap = {}
 }
+
 function IllustratedGuideData:Init()
   self:InitHeroSpecificMap()
 end
+
 function IllustratedGuideData:InitHeroSpecificMap()
   self.HeroSpecificModifyMap = {}
   local HeroIdList = GetAllRowNames(DT.DT_Hero)
@@ -31,20 +33,25 @@ function IllustratedGuideData:InitHeroSpecificMap()
     end
   end
 end
+
 function IllustratedGuideData:GetHeroIdListBySpecificModifyId(SpecificModifyId)
   return self.HeroSpecificModifyMap[tostring(SpecificModifyId)]
 end
+
 function IllustratedGuideData:GetSpecificModifyListByHeroId(HeroId)
   return self.HeroSpecificModifyMap[tostring(HeroId)]
 end
+
 function IllustratedGuideData:GetUnlockMethodDescBySpecificModifyId(SpecificModifyId)
   local t = LuaTableMgr.GetLuaTableByName(TableNames.TBInfiniteProp)
   return tostring(t[SpecificModifyId].unlockMethodDesc)
 end
+
 function IllustratedGuideData:GetIsInitUnlockBySpecificModifyId(SpecificModifyId)
   local t = LuaTableMgr.GetLuaTableByName(TableNames.TBInfiniteProp)
   return t[tonumber(SpecificModifyId)].initunlock
 end
+
 function IllustratedGuideData:GetSpecificUnlockTaskId(SpecificModifyId)
   local result, row = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBInfiniteProp, SpecificModifyId)
   if result then
@@ -52,6 +59,7 @@ function IllustratedGuideData:GetSpecificUnlockTaskId(SpecificModifyId)
   end
   return 0
 end
+
 function IllustratedGuideData:GetPlotFragmentWorldIdList()
   local WorldTable = LuaTableMgr.GetLuaTableByName("story_tbworld")
   local WorldIdList = {}
@@ -63,6 +71,7 @@ function IllustratedGuideData:GetPlotFragmentWorldIdList()
   end)
   return WorldIdList
 end
+
 function IllustratedGuideData:GetFragmentPropIdList()
   local FragmentTable = LuaTableMgr.GetLuaTableByName(TableNames.TBFragment)
   local FragmentPropIdList = {}
@@ -71,6 +80,7 @@ function IllustratedGuideData:GetFragmentPropIdList()
   end
   return FragmentPropIdList
 end
+
 function IllustratedGuideData:GetPlotFragmentIdListByWorldId(WorldId)
   local WorldTable = LuaTableMgr.GetLuaTableByName("story_tbworld")
   local ClueTable = LuaTableMgr.GetLuaTableByName("story_tbclue")
@@ -89,10 +99,12 @@ function IllustratedGuideData:GetPlotFragmentIdListByWorldId(WorldId)
   end
   return FragmentIdList
 end
+
 function IllustratedGuideData:GetClueInfoByClueId(ClueId)
   local ClueTable = LuaTableMgr.GetLuaTableByName("story_tbclue")
   return ClueTable[ClueId]
 end
+
 function IllustratedGuideData:GetWorldInfoByWorldId(WorldId)
   local WorldTable = LuaTableMgr.GetLuaTableByName("story_tbworld")
   local WorldTableRow
@@ -117,11 +129,13 @@ function IllustratedGuideData:GetWorldInfoByWorldId(WorldId)
   end
   return WorldInfo
 end
+
 function IllustratedGuideData:IsFragmentUnlock(FragmentId)
   local FragmentInfo = self:GetPlotFragmentInfoByFragmentId(FragmentId)
   local TaskId = FragmentInfo.taskID
   return table.Contain({2, 3}, Logic_MainTask.GetStateByTaskId(TaskId))
 end
+
 function IllustratedGuideData:IsClueUnlock(ClueId)
   local FragmentIdList = self:GetClueInfoByClueId(ClueId).fragmentIDList
   for k, FragmentId in pairs(FragmentIdList) do
@@ -131,15 +145,18 @@ function IllustratedGuideData:IsClueUnlock(ClueId)
   end
   return true
 end
+
 function IllustratedGuideData:GetPlotFragmentStateById(FragmentId)
   local FragmentInfo = self:GetPlotFragmentInfoByFragmentId(FragmentId)
   local TaskId = FragmentInfo.taskID
   return Logic_MainTask.GetStateByTaskId(TaskId)
 end
+
 function IllustratedGuideData:GetPlotFragmentInfoByFragmentId(FragmentId)
   local FragmentTable = LuaTableMgr.GetLuaTableByName(TableNames.TBFragment)
   return FragmentTable[FragmentId]
 end
+
 function IllustratedGuideData:GetPlotFragmentInfoByTaskId(TaskId)
   local FragmentTable = LuaTableMgr.GetLuaTableByName(TableNames.TBFragment)
   for k, FragmentInfo in pairs(FragmentTable) do
@@ -149,6 +166,7 @@ function IllustratedGuideData:GetPlotFragmentInfoByTaskId(TaskId)
   end
   return nil
 end
+
 function IllustratedGuideData:CheckClueFinishedByClueId(ClueId)
   local FragmentIdList = self:GetClueInfoByClueId(ClueId).fragmentIDList
   for k, FragmentId in pairs(FragmentIdList) do
@@ -158,6 +176,7 @@ function IllustratedGuideData:CheckClueFinishedByClueId(ClueId)
   end
   return true
 end
+
 function IllustratedGuideData:ClueProgressByClueId(ClueId)
   local Result = {}
   Result.FinishedCount = 0
@@ -171,6 +190,7 @@ function IllustratedGuideData:ClueProgressByClueId(ClueId)
   Result.TotalCount = #FragmentIdList
   return Result
 end
+
 function IllustratedGuideData:CheckIsPlotFragmentTask(TaskGroupId)
   local PlotFragmentClueTB = LuaTableMgr.GetLuaTableByName(TableNames.TBClue)
   for Index, ClueInfo in pairs(PlotFragmentClueTB) do
@@ -180,6 +200,7 @@ function IllustratedGuideData:CheckIsPlotFragmentTask(TaskGroupId)
   end
   return false
 end
+
 function IllustratedGuideData:CheckIsSpecificTask(TaskGroupId)
   for Idx, GroupId in ipairs(specificmodifyconfig.TaskGroupIdList) do
     if TaskGroupId == GroupId then
@@ -188,6 +209,7 @@ function IllustratedGuideData:CheckIsSpecificTask(TaskGroupId)
   end
   return false
 end
+
 function IllustratedGuideData:GetClueIdListByWorldId(WorldId)
   local WorldTable = LuaTableMgr.GetLuaTableByName("story_tbworld")
   local ClueIdList = {}
@@ -199,6 +221,7 @@ function IllustratedGuideData:GetClueIdListByWorldId(WorldId)
   end
   return ClueIdList
 end
+
 function IllustratedGuideData:GetPlotFragmentProgress()
   local WorldTable = LuaTableMgr.GetLuaTableByName("story_tbworld")
   local CurCount = 0
@@ -210,9 +233,11 @@ function IllustratedGuideData:GetPlotFragmentProgress()
   end
   return {CurCount, TotalCount}
 end
+
 function IllustratedGuideData:ClearNewUnlockSpecificData()
   self.NewUnlockSpecificModifyList = {}
 end
+
 function IllustratedGuideData:AddNewUnlockSpecificData(SpecificModifyData)
   for i, v in ipairs(self.NewUnlockSpecificModifyList) do
     if v.SpecificId == SpecificModifyData.SpecificId then
@@ -221,10 +246,12 @@ function IllustratedGuideData:AddNewUnlockSpecificData(SpecificModifyData)
   end
   table.insert(self.NewUnlockSpecificModifyList, SpecificModifyData)
 end
+
 function IllustratedGuideData:AddSpecificUnlockAniMap(SpecificId)
   if not SpecificId then
     return
   end
   self.SpecificUnlockAniMap[tostring(SpecificId)] = true
 end
+
 return IllustratedGuideData

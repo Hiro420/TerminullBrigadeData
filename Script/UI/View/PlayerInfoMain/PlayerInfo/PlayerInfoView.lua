@@ -4,6 +4,7 @@ local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local EscName = "PauseGame"
 local PlayerInfoView = Class(ViewBase)
+
 function PlayerInfoView:OnBindUIInput()
   if not IsListeningForInputAction(self, EscName) then
     ListenForInputAction(EscName, UE.EInputEvent.IE_Pressed, true, {
@@ -14,11 +15,13 @@ function PlayerInfoView:OnBindUIInput()
   self.WBP_InteractTipWidgetChangeChar:BindInteractAndClickEvent(self, self.OnShowChangeHeroClick)
   self.WBP_InteractTipWidgetSetting:BindInteractAndClickEvent(self, self.OnShowExchangeInfoClick)
 end
+
 function PlayerInfoView:OnUnBindUIInput()
   StopListeningForInputAction(self, EscName, UE.EInputEvent.IE_Pressed)
   self.WBP_InteractTipWidgetChangeChar:UnBindInteractAndClickEvent(self, self.OnShowChangeHeroClick)
   self.WBP_InteractTipWidgetSetting:UnBindInteractAndClickEvent(self, self.OnShowExchangeInfoClick)
 end
+
 function PlayerInfoView:OnRollback()
   if self.viewModel then
     local curShowHeroId = self.viewModel:GetCurShowHeroId()
@@ -30,6 +33,7 @@ function PlayerInfoView:OnRollback()
     end
   end
 end
+
 function PlayerInfoView:BindClickHandler()
   self.BP_ButtonWithSoundCopyID.OnClicked:Add(self, self.OnCopyUserIdClick)
   self.BP_ButtonWithSoundShowExchangeInfo.OnClicked:Add(self, self.OnShowExchangeInfoClick)
@@ -39,6 +43,7 @@ function PlayerInfoView:BindClickHandler()
   self.WBP_InteractTipWidgetEsc.Btn_Main.OnClicked:Add(self, self.ListenForEscInputAction)
   self.BP_ButtonReport.OnClicked:Add(self, self.Report)
 end
+
 function PlayerInfoView:UnBindClickHandler()
   self.BP_ButtonWithSoundCopyID.OnClicked:Remove(self, self.OnCopyUserIdClick)
   self.BP_ButtonWithSoundShowExchangeInfo.OnClicked:Remove(self, self.OnShowExchangeInfoClick)
@@ -48,14 +53,17 @@ function PlayerInfoView:UnBindClickHandler()
   self.WBP_InteractTipWidgetEsc.Btn_Main.OnClicked:Remove(self, self.ListenForEscInputAction)
   self.BP_ButtonReport.OnClicked:Remove(self, self.Report)
 end
+
 function PlayerInfoView:OnInit()
   self.DataBindTable = {}
   self.viewModel = UIModelMgr:Get("PlayerInfoViewModel")
   self:BindClickHandler()
 end
+
 function PlayerInfoView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function PlayerInfoView:OnShow(...)
   self.Super:AttachViewModel(self.viewModel, self.DataBindTable, self)
   self:SetPlayerInfoViewEmpty()
@@ -69,12 +77,14 @@ function PlayerInfoView:OnShow(...)
   self:UpdateBaseInfo()
   self:UpdateTheRoleIdAchievement()
 end
+
 function PlayerInfoView:OnRollback()
   LogicRole.ShowOrLoadLevel(-1)
   LogicRole.ShowSkinLightMap(LogicRole.GetHeroDefaultSkinId(self.viewModel:GetCurShowHeroId()))
   ChangeLobbyCamera(self, "PlayerInfo")
   LogicRole.ChangeRoleMainTransform("PlayerInfo")
 end
+
 function PlayerInfoView:OnShowLink(LinkParams)
   local firstToggleIdx = 1
   if LinkParams:IsValidIndex(1) then
@@ -83,11 +93,13 @@ function PlayerInfoView:OnShowLink(LinkParams)
   self.RGToggleGroupFirst:SelectId(firstToggleIdx)
   self.viewModel:SwitchLink(firstToggleIdx, LinkParams)
 end
+
 function PlayerInfoView:SetPlayerInfoViewEmpty()
   HideOtherItem(self.HorizontalBoxAchievementBadges, 1)
   HideOtherItem(self.ScrollBoxGameModeList, 1)
   UpdateVisibility(self.HorizontalBoxInfo, false)
 end
+
 function PlayerInfoView:UpdateBaseInfo()
   local playerInfoMainVM = UIModelMgr:Get("PlayerInfoMainViewModel")
   local roleID = playerInfoMainVM:GetCurRoleID()
@@ -122,6 +134,7 @@ function PlayerInfoView:UpdateBaseInfo()
     self.PlatformIconPanel:UpdateChannelInfo(roleID)
   end
 end
+
 function PlayerInfoView:UpdateTheRoleIdAchievement()
   local playerInfoMainVM = UIModelMgr:Get("PlayerInfoMainViewModel")
   local roleID = playerInfoMainVM:GetCurRoleID()
@@ -158,9 +171,11 @@ function PlayerInfoView:UpdateTheRoleIdAchievement()
     end
   end, false)
 end
+
 function PlayerInfoView:OnUpdateAchievementPoint(AchievementPoint)
   self.RGTextAchievementDotNum:SetText(AchievementPoint)
 end
+
 function PlayerInfoView:OnUpdateDisplayBadges(DisplayBadges)
   local achievementViewModel = UIModelMgr:Get("AchievementViewModel")
   local displayBadgesCopy = DeepCopy(DisplayBadges)
@@ -189,6 +204,7 @@ function PlayerInfoView:OnUpdateDisplayBadges(DisplayBadges)
   end
   HideOtherItem(self.HorizontalBoxAchievementBadges, achievementViewModel:GetMaxDisplayBadgesNum() + 1)
 end
+
 function PlayerInfoView:UpdateGameplayInfo(BattleStatistic)
   UpdateVisibility(self.HorizontalBoxInfo, true)
   self.WBP_GamePlayerInfoItemDuration:InitGamePlayerInfoItem(BattleStatistic)
@@ -197,11 +213,13 @@ function PlayerInfoView:UpdateGameplayInfo(BattleStatistic)
   self.WBP_GamePlayerInfoItemDifficult:InitGamePlayerInfoItem(BattleStatistic)
   self.WBP_GamePlayerInfoItemDamage:InitGamePlayerInfoItem(BattleStatistic)
 end
+
 function PlayerInfoView:UpdateGamePlayerInfoItemDamage(HighestTotalHarm)
   UpdateVisibility(self.WBP_GamePlayerInfoItemDamage, true)
   local battleStatistic = {totalHarm = HighestTotalHarm}
   self.WBP_GamePlayerInfoItemDamage:InitGamePlayerInfoItem(battleStatistic)
 end
+
 function PlayerInfoView:InitModeDifficultLevelConfig()
   local AllLevels = LuaTableMgr.GetLuaTableByName(TableNames.TBGameFloorUnlock)
   self.AllLevelConfigList = {}
@@ -216,6 +234,7 @@ function PlayerInfoView:InitModeDifficultLevelConfig()
     end
   end
 end
+
 function PlayerInfoView:UpdateCanvasPanelGameMode(BattleStatistic)
   local playerInfoMainVM = UIModelMgr:Get("PlayerInfoMainViewModel")
   local roleID = playerInfoMainVM:GetCurRoleID()
@@ -253,16 +272,19 @@ function PlayerInfoView:UpdateCanvasPanelGameMode(BattleStatistic)
   end
   HideOtherItem(self.ScrollBoxGameModeList, #AllLevelModeIdList + 1)
 end
+
 function PlayerInfoView:OnGetPortraitIds(PortraitsIDs)
   if CheckIsVisility(self.WBP_PlayerInfoChangeHeadIconTips) then
     self.WBP_PlayerInfoChangeHeadIconTips:InitPlayerInfoChangeHeadIconTips()
   end
 end
+
 function PlayerInfoView:OnGetBannerIds(BannerIDs)
   if CheckIsVisility(self.WBP_PlayerInfoChangeBannerTips) then
     self.WBP_PlayerInfoChangeBannerTips:InitPlayerInfoChangeBannerTips()
   end
 end
+
 function PlayerInfoView:ShowChangeHeadIconTips(bIsShow)
   if bIsShow then
     self.viewModel:RequestGetPortraits()
@@ -271,6 +293,7 @@ function PlayerInfoView:ShowChangeHeadIconTips(bIsShow)
     self.WBP_PlayerInfoChangeHeadIconTips:Hide()
   end
 end
+
 function PlayerInfoView:ShowChangeBannerTips(bIsShow)
   if bIsShow then
     self.viewModel:RequestGetBanners()
@@ -279,15 +302,17 @@ function PlayerInfoView:ShowChangeBannerTips(bIsShow)
     self.WBP_PlayerInfoChangeBannerTips:Hide()
   end
 end
+
 function PlayerInfoView:ShowChangeBadgesTips(bIsShow)
   if bIsShow then
-    self.WBP_AchievePlayerInfoBadgesTips:InitAchievePlayerInfoBadgesTips()
+    self.WBP_AchievePlayerInfoBadgesTips:InitAchievePlayerInfoBadgesTips(true)
     self.WBP_AchievePlayerInfoBadgesTips:StopAnimation(self.WBP_AchievePlayerInfoBadgesTips.Ani_out)
     self.WBP_AchievePlayerInfoBadgesTips:PlayAnimation(self.WBP_AchievePlayerInfoBadgesTips.Ani_in)
   else
     self.WBP_AchievePlayerInfoBadgesTips:Hide()
   end
 end
+
 function PlayerInfoView:UpdateRole(HeroId)
   LogicRole.ShowSkinLightMap(LogicRole.GetHeroDefaultSkinId(HeroId))
   local RoleActor = self:GetRoleActor()
@@ -309,6 +334,7 @@ function PlayerInfoView:UpdateRole(HeroId)
     end
   end
 end
+
 function PlayerInfoView:UpdateRoleByHeroInfo(HeroInfo, WeaponInfo)
   local HeroId = HeroInfo.id
   LogicRole.ShowSkinLightMap(LogicRole.GetHeroDefaultSkinId(HeroId))
@@ -324,6 +350,7 @@ function PlayerInfoView:UpdateRoleByHeroInfo(HeroInfo, WeaponInfo)
     RoleActor:ChangeWeaponMeshBySkinId(WeaponInfo.skin)
   end
 end
+
 function PlayerInfoView:GetRoleActor()
   if UE.RGUtil.IsUObjectValid(self.TargetRoleActor) then
     return self.TargetRoleActor
@@ -337,6 +364,7 @@ function PlayerInfoView:GetRoleActor()
   end
   return self.TargetRoleActor
 end
+
 function PlayerInfoView:ListenForEscInputAction()
   if CheckIsVisility(self.BP_ButtonWithSoundTipsMask) then
     self:OnHideTipsClick()
@@ -345,11 +373,13 @@ function PlayerInfoView:ListenForEscInputAction()
     playerInfoMainViewModel:HidePlayerMainView()
   end
 end
+
 function PlayerInfoView:UpdateAchievePlayerInfoBadgesTips()
   if CheckIsVisility(self.WBP_AchievePlayerInfoBadgesTips) then
     self.WBP_AchievePlayerInfoBadgesTips:InitAchievePlayerInfoBadgesTips()
   end
 end
+
 function PlayerInfoView:OnPreHide()
   LogicRole.ShowOrHideRoleMainHero(false)
   local RoleActor = self:GetRoleActor()
@@ -360,16 +390,19 @@ function PlayerInfoView:OnPreHide()
   self.Super:DetachViewModel(self.viewModel, self.DataBindTable, self)
   LogicRole.ShowOrLoadLevel(-1)
 end
+
 function PlayerInfoView:OnHide()
   self:OnHideTipsClick()
   LogicRole.ChangeRoleMainTransform("Default")
 end
+
 function PlayerInfoView:OnCopyUserIdClick()
   local playerInfoMainVM = UIModelMgr:Get("PlayerInfoMainViewModel")
   local roleID = playerInfoMainVM:GetCurRoleID()
   UE.URGBlueprintLibrary.CopyMessageToClipboard(tostring(roleID))
   ShowWaveWindow(1164)
 end
+
 function PlayerInfoView:OnShowExchangeInfoClick()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.INFORMATION_CHANGE) then
@@ -382,6 +415,7 @@ function PlayerInfoView:OnShowExchangeInfoClick()
     self.WBP_PlayerInfoChangeTips:InitPlayerInfoChangeTips(self)
   end
 end
+
 function PlayerInfoView:OnShowChangeHeroClick()
   if CheckIsVisility(self.WBP_PlayerInfoChangeHeroTips) then
     self.WBP_PlayerInfoChangeHeroTips:Hide()
@@ -390,13 +424,16 @@ function PlayerInfoView:OnShowChangeHeroClick()
     self.WBP_PlayerInfoChangeHeroTips:InitPlayerInfoChangeHeroTips()
   end
 end
+
 function PlayerInfoView:ShowTipsMask()
   UpdateVisibility(self.BP_ButtonWithSoundTipsMask, true, true)
 end
+
 function PlayerInfoView:OnShowChangeBadgesClick()
   self:ShowTipsMask()
   self.WBP_AchievePlayerInfoBadgesTips:InitAchievePlayerInfoBadgesTips()
 end
+
 function PlayerInfoView:OnHideTipsClick()
   UpdateVisibility(self.BP_ButtonWithSoundTipsMask, false)
   if CheckIsVisility(self.WBP_PlayerInfoChangeTips) then
@@ -415,6 +452,7 @@ function PlayerInfoView:OnHideTipsClick()
     self.WBP_PlayerInfoChangeHeadIconTips:Hide()
   end
 end
+
 function PlayerInfoView:Report()
   local playerInfoMainVM = UIModelMgr:Get("PlayerInfoMainViewModel")
   local roleID = playerInfoMainVM:GetCurRoleID()
@@ -455,4 +493,5 @@ function PlayerInfoView:Report()
     end
   })
 end
+
 return PlayerInfoView

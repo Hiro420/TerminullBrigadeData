@@ -1,0 +1,7958 @@
+[
+  {
+    "ID": 1010101,
+    "GroupID": 10101,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "生财有道Lv.1",
+    "Desc": "初始金币<CZ_HighLight>+100</>。",
+    "Inscription": [
+      5010101
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 20
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_csdgbzj_resource.Bat_csdgbzj_resource"
+  },
+  {
+    "ID": 1010102,
+    "GroupID": 10101,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "生财有道Lv.2",
+    "Desc": "初始金币<CZ_HighLight>+150</>。",
+    "Inscription": [
+      5010102
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 24
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_csdgbzj_resource.Bat_csdgbzj_resource"
+  },
+  {
+    "ID": 1010103,
+    "GroupID": 10101,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "生财有道Lv.3",
+    "Desc": "初始金币<CZ_HighLight>+250</>。",
+    "Inscription": [
+      5010103
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 30
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_csdgbzj_resource.Bat_csdgbzj_resource"
+  },
+  {
+    "ID": 1010201,
+    "GroupID": 10102,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "优惠购物Lv.1",
+    "Desc": "商店售价减少<CZ_HighLight>10%</>。",
+    "Inscription": [
+      5010201
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 30
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Sprite/IconTalent/Frames/Bat_sdsjjs_resource.Bat_sdsjjs_resource"
+  },
+  {
+    "ID": 1010202,
+    "GroupID": 10102,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "优惠购物Lv.2",
+    "Desc": "商店售价减少<CZ_HighLight>15%</>。",
+    "Inscription": [
+      5010202
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 36
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Sprite/IconTalent/Frames/Bat_sdsjjs_resource.Bat_sdsjjs_resource"
+  },
+  {
+    "ID": 1010203,
+    "GroupID": 10102,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "优惠购物Lv.3",
+    "Desc": "商店售价减少<CZ_HighLight>25%</>。",
+    "Inscription": [
+      5010203
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 45
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Sprite/IconTalent/Frames/Bat_sdsjjs_resource.Bat_sdsjjs_resource"
+  },
+  {
+    "ID": 1010301,
+    "GroupID": 10103,
+    "Level": 1,
+    "DisplayMaxLevel": 2,
+    "Name": "赏金猎人Lv.1",
+    "Desc": "击败普通敌人后，金币数量<CZ_HighLight>+1</>。",
+    "Inscription": [
+      5010301
+    ],
+    "FrontGroupsId": [
+      10101
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 30
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsxgdgbjcslzj_resource.Bat_jsxgdgbjcslzj_resource"
+  },
+  {
+    "ID": 1010302,
+    "GroupID": 10103,
+    "Level": 2,
+    "DisplayMaxLevel": 2,
+    "Name": "赏金猎人Lv.2",
+    "Desc": "击败普通敌人后，金币数量<CZ_HighLight>+2</>。",
+    "Inscription": [
+      5010302
+    ],
+    "FrontGroupsId": [
+      10101
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 36
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsxgdgbjcslzj_resource.Bat_jsxgdgbjcslzj_resource"
+  },
+  {
+    "ID": 1010401,
+    "GroupID": 10104,
+    "Level": 1,
+    "DisplayMaxLevel": 2,
+    "Name": "财富补给Lv.1",
+    "Desc": "击败精英敌人后，金币数量<CZ_HighLight>+20</>。",
+    "Inscription": [
+      5010401
+    ],
+    "FrontGroupsId": [
+      10101
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 30
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsxgdgbjcslzj_resource.Bat_jsxgdgbjcslzj_resource"
+  },
+  {
+    "ID": 1010402,
+    "GroupID": 10104,
+    "Level": 2,
+    "DisplayMaxLevel": 2,
+    "Name": "财富补给Lv.2",
+    "Desc": "击败精英敌人后，金币数量<CZ_HighLight>+30</>。",
+    "Inscription": [
+      5010402
+    ],
+    "FrontGroupsId": [
+      10101
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 36
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsxgdgbjcslzj_resource.Bat_jsxgdgbjcslzj_resource"
+  },
+  {
+    "ID": 1010501,
+    "GroupID": 10105,
+    "Level": 1,
+    "DisplayMaxLevel": 2,
+    "Name": "战争财宝Lv.1",
+    "Desc": "击败首领后，金币数量<CZ_HighLight>+50</>。",
+    "Inscription": [
+      5010501
+    ],
+    "FrontGroupsId": [
+      10101
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 30
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsxgdgbjcslzj_resource.Bat_jsxgdgbjcslzj_resource"
+  },
+  {
+    "ID": 1010502,
+    "GroupID": 10105,
+    "Level": 2,
+    "DisplayMaxLevel": 2,
+    "Name": "战争财宝Lv.2",
+    "Desc": "击败首领后，金币数量<CZ_HighLight>+80</>。",
+    "Inscription": [
+      5010502
+    ],
+    "FrontGroupsId": [
+      10101
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 36
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsxgdgbjcslzj_resource.Bat_jsxgdgbjcslzj_resource"
+  },
+  {
+    "ID": 1010601,
+    "GroupID": 10106,
+    "Level": 1,
+    "DisplayMaxLevel": 1,
+    "Name": "权限补给Lv.1",
+    "Desc": "权限刷新次数提升<CZ_HighLight>1</>次。",
+    "Inscription": [
+      5991017
+    ],
+    "FrontGroupsId": [
+      10103
+    ],
+    "FrontGroupsLevel": 2,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 100
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_gjlts_attack.Bat_gjlts_attack"
+  },
+  {
+    "ID": 1010701,
+    "GroupID": 10107,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "双倍惊喜Lv.1",
+    "Desc": "<CZ_HighLight>5%</>概率额外掉落一堆金币。",
+    "Inscription": [
+      5010701
+    ],
+    "FrontGroupsId": [
+      10104,
+      10105
+    ],
+    "FrontGroupsLevel": 4,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 40
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsjygdgbjcsl_resource.Bat_jsjygdgbjcsl_resource"
+  },
+  {
+    "ID": 1010702,
+    "GroupID": 10107,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "双倍惊喜Lv.2",
+    "Desc": "<CZ_HighLight>8%</>概率额外掉落一堆金币。",
+    "Inscription": [
+      5010702
+    ],
+    "FrontGroupsId": [
+      10104,
+      10105
+    ],
+    "FrontGroupsLevel": 4,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 48
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsjygdgbjcsl_resource.Bat_jsjygdgbjcsl_resource"
+  },
+  {
+    "ID": 1010703,
+    "GroupID": 10107,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "双倍惊喜Lv.3",
+    "Desc": "<CZ_HighLight>10%</>概率额外掉落一堆金币。",
+    "Inscription": [
+      5010703
+    ],
+    "FrontGroupsId": [
+      10104,
+      10105
+    ],
+    "FrontGroupsLevel": 4,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsjygdgbjcsl_resource.Bat_jsjygdgbjcsl_resource"
+  },
+  {
+    "ID": 1010801,
+    "GroupID": 10108,
+    "Level": 1,
+    "DisplayMaxLevel": 1,
+    "Name": "刷个痛快Lv.1",
+    "Desc": "商店的刷新价格减少30%。",
+    "Inscription": [
+      5010801
+    ],
+    "FrontGroupsId": [
+      10106
+    ],
+    "FrontGroupsLevel": 1,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 100
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sddsxjgjd_resource.Bat_sddsxjgjd_resource"
+  },
+  {
+    "ID": 1010901,
+    "GroupID": 10109,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "命源充足Lv.1",
+    "Desc": "打破箱子后，掉落回复道具的概率提升<CZ_HighLight>5%</>。",
+    "Inscription": [
+      5010901
+    ],
+    "FrontGroupsId": [
+      10107
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 100
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsgwgldlhxdj_survival.Bat_jsgwgldlhxdj_survival"
+  },
+  {
+    "ID": 1010902,
+    "GroupID": 10109,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "命源充足Lv.2",
+    "Desc": "打破箱子后，掉落回复道具的概率提升<CZ_HighLight>8%</>。",
+    "Inscription": [
+      5010902
+    ],
+    "FrontGroupsId": [
+      10107
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsgwgldlhxdj_survival.Bat_jsgwgldlhxdj_survival"
+  },
+  {
+    "ID": 1010903,
+    "GroupID": 10109,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "命源充足Lv.3",
+    "Desc": "打破箱子后，掉落回复道具的概率提升<CZ_HighLight>10%</>。",
+    "Inscription": [
+      5010903
+    ],
+    "FrontGroupsId": [
+      10107
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 500
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsgwgldlhxdj_survival.Bat_jsgwgldlhxdj_survival"
+  },
+  {
+    "ID": 1011001,
+    "GroupID": 10110,
+    "Level": 1,
+    "DisplayMaxLevel": 1,
+    "Name": "再来一次Lv.1",
+    "Desc": "商店刷新次数提升<CZ_HighLight>1</>次。",
+    "Inscription": [
+      5011001
+    ],
+    "FrontGroupsId": [
+      10108
+    ],
+    "FrontGroupsLevel": 1,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 1000
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sdsxcszj_resource.Bat_sdsxcszj_resource"
+  },
+  {
+    "ID": 1011101,
+    "GroupID": 10111,
+    "Level": 1,
+    "DisplayMaxLevel": 1,
+    "Name": "法则降临Lv.1",
+    "Desc": "商店刷新权限的概率提升<CZ_HighLight>20%</>。",
+    "Inscription": [
+      5011101
+    ],
+    "FrontGroupsId": [
+      10110
+    ],
+    "FrontGroupsLevel": 1,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 1000
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sdsxzfglzj_resource.Bat_sdsxzfglzj_resource"
+  },
+  {
+    "ID": 1011201,
+    "GroupID": 10112,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "更多秘宝Lv.1",
+    "Desc": "商店秘宝售卖槽位+1（功能有问题，暂时无效）",
+    "Inscription": [
+      5011201
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Sprite/IconTalent/Frames/Bat_sdmjsmcw_resource.Bat_sdmjsmcw_resource"
+  },
+  {
+    "ID": 1011202,
+    "GroupID": 10112,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "更多秘宝Lv.2",
+    "Desc": "商店秘宝售卖槽位+2（功能有问题，暂时无效）",
+    "Inscription": [
+      5011202
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Sprite/IconTalent/Frames/Bat_sdmjsmcw_resource.Bat_sdmjsmcw_resource"
+  },
+  {
+    "ID": 1021501,
+    "GroupID": 10215,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "超限攻击Lv.1",
+    "Desc": "攻击力提升<CZ_HighLight>5</>。",
+    "Inscription": [
+      5020101
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 40
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_xyyspzzfcxglts_special.Bat_xyyspzzfcxglts_special"
+  },
+  {
+    "ID": 1021502,
+    "GroupID": 10215,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "超限攻击Lv.2",
+    "Desc": "攻击力提升<CZ_HighLight>6</>。",
+    "Inscription": [
+      5020102
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 48
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_xyyspzzfcxglts_special.Bat_xyyspzzfcxglts_special"
+  },
+  {
+    "ID": 1021503,
+    "GroupID": 10215,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "超限攻击Lv.3",
+    "Desc": "攻击力提升<CZ_HighLight>7</>。",
+    "Inscription": [
+      5020103
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_xyyspzzfcxglts_special.Bat_xyyspzzfcxglts_special"
+  },
+  {
+    "ID": 1021504,
+    "GroupID": 10215,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "超限攻击Lv.4",
+    "Desc": "攻击力提升<CZ_HighLight>10</>。",
+    "Inscription": [
+      5020104
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 120
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_xyyspzzfcxglts_special.Bat_xyyspzzfcxglts_special"
+  },
+  {
+    "ID": 1021505,
+    "GroupID": 10215,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "超限攻击Lv.5",
+    "Desc": "攻击力提升<CZ_HighLight>11</>。",
+    "Inscription": [
+      5020105
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 128
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_xyyspzzfcxglts_special.Bat_xyyspzzfcxglts_special"
+  },
+  {
+    "ID": 1021506,
+    "GroupID": 10215,
+    "Level": 6,
+    "DisplayMaxLevel": 3,
+    "Name": "超限攻击Lv.6",
+    "Desc": "攻击力提升<CZ_HighLight>12</>。",
+    "Inscription": [
+      5020106
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 140
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_xyyspzzfcxglts_special.Bat_xyyspzzfcxglts_special"
+  },
+  {
+    "ID": 1021507,
+    "GroupID": 10215,
+    "Level": 7,
+    "DisplayMaxLevel": 3,
+    "Name": "超限攻击Lv.7",
+    "Desc": "攻击力提升<CZ_HighLight>15</>。",
+    "Inscription": [
+      5020107
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_xyyspzzfcxglts_special.Bat_xyyspzzfcxglts_special"
+  },
+  {
+    "ID": 1021508,
+    "GroupID": 10215,
+    "Level": 8,
+    "DisplayMaxLevel": 3,
+    "Name": "超限攻击Lv.8",
+    "Desc": "攻击力提升<CZ_HighLight>16</>。",
+    "Inscription": [
+      5020108
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 220
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_xyyspzzfcxglts_special.Bat_xyyspzzfcxglts_special"
+  },
+  {
+    "ID": 1021509,
+    "GroupID": 10215,
+    "Level": 9,
+    "DisplayMaxLevel": 3,
+    "Name": "超限攻击Lv.9",
+    "Desc": "攻击力提升<CZ_HighLight>17</>。",
+    "Inscription": [
+      5020109
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 240
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_xyyspzzfcxglts_special.Bat_xyyspzzfcxglts_special"
+  },
+  {
+    "ID": 1021510,
+    "GroupID": 10215,
+    "Level": 10,
+    "DisplayMaxLevel": 3,
+    "Name": "超限攻击Lv.10",
+    "Desc": "攻击力提升<CZ_HighLight>20</>。",
+    "Inscription": [
+      5020110
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 320
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_xyyspzzfcxglts_special.Bat_xyyspzzfcxglts_special"
+  },
+  {
+    "ID": 1020201,
+    "GroupID": 10202,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "弱点打击Lv.1",
+    "Desc": "武器对敌人造成的弱点伤害提升<CZ_HighLight>5%</>。",
+    "Inscription": [
+      5021301
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 30
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1020202,
+    "GroupID": 10202,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "弱点打击Lv.2",
+    "Desc": "武器对敌人造成的弱点伤害提升<CZ_HighLight>10%</>。",
+    "Inscription": [
+      5021302
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 36
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1020203,
+    "GroupID": 10202,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "弱点打击Lv.3",
+    "Desc": "武器对敌人造成的弱点伤害提升<CZ_HighLight>15%</>。",
+    "Inscription": [
+      5021303
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 45
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1020204,
+    "GroupID": 10202,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "弱点打击Lv.4",
+    "Desc": "武器对敌人造成的弱点伤害提升<CZ_HighLight>20%</>。",
+    "Inscription": [
+      5021304
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 90
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1020205,
+    "GroupID": 10202,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "弱点打击Lv.5",
+    "Desc": "武器对敌人造成的弱点伤害提升<CZ_HighLight>25%</>。",
+    "Inscription": [
+      5021305
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 96
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1020206,
+    "GroupID": 10202,
+    "Level": 6,
+    "DisplayMaxLevel": 3,
+    "Name": "弱点打击Lv.6",
+    "Desc": "武器对敌人造成的弱点伤害提升<CZ_HighLight>30%</>。",
+    "Inscription": [
+      5021306
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 105
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1020207,
+    "GroupID": 10202,
+    "Level": 7,
+    "DisplayMaxLevel": 3,
+    "Name": "弱点打击Lv.7",
+    "Desc": "武器对敌人造成的弱点伤害提升<CZ_HighLight>35%</>。",
+    "Inscription": [
+      5021307
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 150
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1020208,
+    "GroupID": 10202,
+    "Level": 8,
+    "DisplayMaxLevel": 3,
+    "Name": "弱点打击Lv.8",
+    "Desc": "武器对敌人造成的弱点伤害提升<CZ_HighLight>40%</>。",
+    "Inscription": [
+      5021308
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 165
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1020209,
+    "GroupID": 10202,
+    "Level": 9,
+    "DisplayMaxLevel": 3,
+    "Name": "弱点打击Lv.9",
+    "Desc": "武器对敌人造成的弱点伤害提升<CZ_HighLight>45%</>。",
+    "Inscription": [
+      5021309
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 180
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1020210,
+    "GroupID": 10202,
+    "Level": 10,
+    "DisplayMaxLevel": 3,
+    "Name": "弱点打击Lv.10",
+    "Desc": "武器对敌人造成的弱点伤害提升<CZ_HighLight>50%</>。",
+    "Inscription": [
+      5021310
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 240
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1020301,
+    "GroupID": 10203,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "超能强化Lv.1",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能伤害提升<CZ_HighLight>30%</>。",
+    "Inscription": [
+      5020301
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 30
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnbjlzj_attack.Bat_qjnbjlzj_attack"
+  },
+  {
+    "ID": 1020302,
+    "GroupID": 10203,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "超能强化Lv.2",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能伤害提升<CZ_HighLight>35%</>。",
+    "Inscription": [
+      5020302
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 36
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnbjlzj_attack.Bat_qjnbjlzj_attack"
+  },
+  {
+    "ID": 1020303,
+    "GroupID": 10203,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "超能强化Lv.3",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能伤害提升<CZ_HighLight>40%</>。",
+    "Inscription": [
+      5020303
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 45
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnbjlzj_attack.Bat_qjnbjlzj_attack"
+  },
+  {
+    "ID": 1020304,
+    "GroupID": 10203,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "超能强化Lv.4",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能伤害提升<CZ_HighLight>60%</>。",
+    "Inscription": [
+      5020304
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 90
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnbjlzj_attack.Bat_qjnbjlzj_attack"
+  },
+  {
+    "ID": 1020305,
+    "GroupID": 10203,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "超能强化Lv.5",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能伤害提升<CZ_HighLight>65%</>。",
+    "Inscription": [
+      5020305
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 96
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnbjlzj_attack.Bat_qjnbjlzj_attack"
+  },
+  {
+    "ID": 1020306,
+    "GroupID": 10203,
+    "Level": 6,
+    "DisplayMaxLevel": 3,
+    "Name": "超能强化Lv.6",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能伤害提升<CZ_HighLight>70%</>。",
+    "Inscription": [
+      5020306
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 105
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnbjlzj_attack.Bat_qjnbjlzj_attack"
+  },
+  {
+    "ID": 1020307,
+    "GroupID": 10203,
+    "Level": 7,
+    "DisplayMaxLevel": 3,
+    "Name": "超能强化Lv.7",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能伤害提升<CZ_HighLight>90%</>。",
+    "Inscription": [
+      5020307
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 150
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnbjlzj_attack.Bat_qjnbjlzj_attack"
+  },
+  {
+    "ID": 1020308,
+    "GroupID": 10203,
+    "Level": 8,
+    "DisplayMaxLevel": 3,
+    "Name": "超能强化Lv.8",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能伤害提升<CZ_HighLight>95%</>。",
+    "Inscription": [
+      5020308
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 165
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnbjlzj_attack.Bat_qjnbjlzj_attack"
+  },
+  {
+    "ID": 1020309,
+    "GroupID": 10203,
+    "Level": 9,
+    "DisplayMaxLevel": 3,
+    "Name": "超能强化Lv.9",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能伤害提升<CZ_HighLight>100%</>。",
+    "Inscription": [
+      5020309
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 180
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnbjlzj_attack.Bat_qjnbjlzj_attack"
+  },
+  {
+    "ID": 1020310,
+    "GroupID": 10203,
+    "Level": 10,
+    "DisplayMaxLevel": 3,
+    "Name": "超能强化Lv.10",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能伤害提升<CZ_HighLight>120%</>。",
+    "Inscription": [
+      5020310
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 240
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnbjlzj_attack.Bat_qjnbjlzj_attack"
+  },
+  {
+    "ID": 1020401,
+    "GroupID": 10204,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "战术增幅Lv.1",
+    "Desc": "<keyname id=\\\"3\\\"></>主要技能伤害提升<CZ_HighLight>15%</>。",
+    "Inscription": [
+      5020401
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 30
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnshzj_attack.Bat_ejnshzj_attack"
+  },
+  {
+    "ID": 1020402,
+    "GroupID": 10204,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "战术增幅Lv.2",
+    "Desc": "<keyname id=\\\"3\\\"></>主要技能伤害提升<CZ_HighLight>18%</>。",
+    "Inscription": [
+      5020402
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 36
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnshzj_attack.Bat_ejnshzj_attack"
+  },
+  {
+    "ID": 1020403,
+    "GroupID": 10204,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "战术增幅Lv.3",
+    "Desc": "<keyname id=\\\"3\\\"></>主要技能伤害提升<CZ_HighLight>21%</>。",
+    "Inscription": [
+      5020403
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 45
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnshzj_attack.Bat_ejnshzj_attack"
+  },
+  {
+    "ID": 1020404,
+    "GroupID": 10204,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "战术增幅Lv.4",
+    "Desc": "<keyname id=\\\"3\\\"></>主要技能伤害提升<CZ_HighLight>30%</>。",
+    "Inscription": [
+      5020404
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 90
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnshzj_attack.Bat_ejnshzj_attack"
+  },
+  {
+    "ID": 1020405,
+    "GroupID": 10204,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "战术增幅Lv.5",
+    "Desc": "<keyname id=\\\"3\\\"></>主要技能伤害提升<CZ_HighLight>33%</>。",
+    "Inscription": [
+      5020405
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 96
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnshzj_attack.Bat_ejnshzj_attack"
+  },
+  {
+    "ID": 1020406,
+    "GroupID": 10204,
+    "Level": 6,
+    "DisplayMaxLevel": 3,
+    "Name": "战术增幅Lv.6",
+    "Desc": "<keyname id=\\\"3\\\"></>主要技能伤害提升<CZ_HighLight>36%</>。",
+    "Inscription": [
+      5020406
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 105
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnshzj_attack.Bat_ejnshzj_attack"
+  },
+  {
+    "ID": 1020407,
+    "GroupID": 10204,
+    "Level": 7,
+    "DisplayMaxLevel": 3,
+    "Name": "战术增幅Lv.7",
+    "Desc": "<keyname id=\\\"3\\\"></>主要技能伤害提升<CZ_HighLight>45%</>。",
+    "Inscription": [
+      5020407
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 150
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnshzj_attack.Bat_ejnshzj_attack"
+  },
+  {
+    "ID": 1020408,
+    "GroupID": 10204,
+    "Level": 8,
+    "DisplayMaxLevel": 3,
+    "Name": "战术增幅Lv.8",
+    "Desc": "<keyname id=\\\"3\\\"></>主要技能伤害提升<CZ_HighLight>48%</>。",
+    "Inscription": [
+      5020408
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 165
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnshzj_attack.Bat_ejnshzj_attack"
+  },
+  {
+    "ID": 1020409,
+    "GroupID": 10204,
+    "Level": 9,
+    "DisplayMaxLevel": 3,
+    "Name": "战术增幅Lv.9",
+    "Desc": "<keyname id=\\\"3\\\"></>主要技能伤害提升<CZ_HighLight>51%</>。",
+    "Inscription": [
+      5020409
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 180
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnshzj_attack.Bat_ejnshzj_attack"
+  },
+  {
+    "ID": 1020410,
+    "GroupID": 10204,
+    "Level": 10,
+    "DisplayMaxLevel": 3,
+    "Name": "战术增幅Lv.10",
+    "Desc": "<keyname id=\\\"3\\\"></>主要技能伤害提升<CZ_HighLight>60%</>。",
+    "Inscription": [
+      5020410
+    ],
+    "FrontGroupsId": [
+      10201
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 240
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnshzj_attack.Bat_ejnshzj_attack"
+  },
+  {
+    "ID": 1020411,
+    "GroupID": 10205,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "暴击强化Lv.1",
+    "Desc": "武器暴击率提升<CZ_HighLight>2%</>。",
+    "Inscription": [
+      5020501
+    ],
+    "FrontGroupsId": [
+      10202
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 40
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1020412,
+    "GroupID": 10205,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "暴击强化Lv.2",
+    "Desc": "武器暴击率提升<CZ_HighLight>2.5%</>。",
+    "Inscription": [
+      5020502
+    ],
+    "FrontGroupsId": [
+      10202
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 48
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1020413,
+    "GroupID": 10205,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "暴击强化Lv.3",
+    "Desc": "武器暴击率提升<CZ_HighLight>3%</>。",
+    "Inscription": [
+      5020503
+    ],
+    "FrontGroupsId": [
+      10202
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1020414,
+    "GroupID": 10205,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "暴击强化Lv.4",
+    "Desc": "武器暴击率提升<CZ_HighLight>5%</>。",
+    "Inscription": [
+      5020504
+    ],
+    "FrontGroupsId": [
+      10202
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 120
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1020415,
+    "GroupID": 10205,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "暴击强化Lv.5",
+    "Desc": "武器暴击率提升<CZ_HighLight>5.5%</>。",
+    "Inscription": [
+      5020505
+    ],
+    "FrontGroupsId": [
+      10202
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 128
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1020416,
+    "GroupID": 10205,
+    "Level": 6,
+    "DisplayMaxLevel": 3,
+    "Name": "暴击强化Lv.6",
+    "Desc": "武器暴击率提升<CZ_HighLight>6%</>。",
+    "Inscription": [
+      5020506
+    ],
+    "FrontGroupsId": [
+      10202
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 140
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1020417,
+    "GroupID": 10205,
+    "Level": 7,
+    "DisplayMaxLevel": 3,
+    "Name": "暴击强化Lv.7",
+    "Desc": "武器暴击率提升<CZ_HighLight>8%</>。",
+    "Inscription": [
+      5020507
+    ],
+    "FrontGroupsId": [
+      10202
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1020418,
+    "GroupID": 10205,
+    "Level": 8,
+    "DisplayMaxLevel": 3,
+    "Name": "暴击强化Lv.8",
+    "Desc": "武器暴击率提升<CZ_HighLight>8.5%</>。",
+    "Inscription": [
+      5020508
+    ],
+    "FrontGroupsId": [
+      10202
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 220
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1020419,
+    "GroupID": 10205,
+    "Level": 9,
+    "DisplayMaxLevel": 3,
+    "Name": "暴击强化Lv.9",
+    "Desc": "武器暴击率提升<CZ_HighLight>9%</>。",
+    "Inscription": [
+      5020509
+    ],
+    "FrontGroupsId": [
+      10202
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 240
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1020420,
+    "GroupID": 10205,
+    "Level": 10,
+    "DisplayMaxLevel": 3,
+    "Name": "暴击强化Lv.10",
+    "Desc": "武器暴击率提升<CZ_HighLight>10%</>。",
+    "Inscription": [
+      5020510
+    ],
+    "FrontGroupsId": [
+      10202
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 320
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1020421,
+    "GroupID": 10206,
+    "Level": 1,
+    "DisplayMaxLevel": 5,
+    "Name": "致命打击Lv.1",
+    "Desc": "技能暴击率提升<CZ_HighLight>2%</>。",
+    "Inscription": [
+      5020601
+    ],
+    "FrontGroupsId": [
+      10203
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 40
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020422,
+    "GroupID": 10206,
+    "Level": 2,
+    "DisplayMaxLevel": 5,
+    "Name": "致命打击Lv.2",
+    "Desc": "技能暴击率提升<CZ_HighLight>2.5%</>。",
+    "Inscription": [
+      5020602
+    ],
+    "FrontGroupsId": [
+      10203
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 48
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020423,
+    "GroupID": 10206,
+    "Level": 3,
+    "DisplayMaxLevel": 5,
+    "Name": "致命打击Lv.3",
+    "Desc": "技能暴击率提升<CZ_HighLight>3%</>。",
+    "Inscription": [
+      5020603
+    ],
+    "FrontGroupsId": [
+      10203
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020424,
+    "GroupID": 10206,
+    "Level": 4,
+    "DisplayMaxLevel": 5,
+    "Name": "致命打击Lv.4",
+    "Desc": "技能暴击率提升<CZ_HighLight>5%</>。",
+    "Inscription": [
+      5020604
+    ],
+    "FrontGroupsId": [
+      10203
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 120
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020425,
+    "GroupID": 10206,
+    "Level": 5,
+    "DisplayMaxLevel": 5,
+    "Name": "致命打击Lv.5",
+    "Desc": "技能暴击率提升<CZ_HighLight>5.5%</>。",
+    "Inscription": [
+      5020605
+    ],
+    "FrontGroupsId": [
+      10203
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 128
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020426,
+    "GroupID": 10206,
+    "Level": 6,
+    "DisplayMaxLevel": 5,
+    "Name": "致命打击Lv.6",
+    "Desc": "技能暴击率提升<CZ_HighLight>6%</>。",
+    "Inscription": [
+      5020606
+    ],
+    "FrontGroupsId": [
+      10203
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 140
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020427,
+    "GroupID": 10206,
+    "Level": 7,
+    "DisplayMaxLevel": 5,
+    "Name": "致命打击Lv.7",
+    "Desc": "技能暴击率提升<CZ_HighLight>8%</>。",
+    "Inscription": [
+      5020607
+    ],
+    "FrontGroupsId": [
+      10203
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020428,
+    "GroupID": 10206,
+    "Level": 8,
+    "DisplayMaxLevel": 5,
+    "Name": "致命打击Lv.8",
+    "Desc": "技能暴击率提升<CZ_HighLight>8.5%</>。",
+    "Inscription": [
+      5020608
+    ],
+    "FrontGroupsId": [
+      10203
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 220
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020429,
+    "GroupID": 10206,
+    "Level": 9,
+    "DisplayMaxLevel": 5,
+    "Name": "致命打击Lv.9",
+    "Desc": "技能暴击率提升<CZ_HighLight>9%</>。",
+    "Inscription": [
+      5020609
+    ],
+    "FrontGroupsId": [
+      10203
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 240
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020430,
+    "GroupID": 10206,
+    "Level": 10,
+    "DisplayMaxLevel": 5,
+    "Name": "致命打击Lv.10",
+    "Desc": "技能暴击率提升<CZ_HighLight>10%</>。",
+    "Inscription": [
+      5020610
+    ],
+    "FrontGroupsId": [
+      10203
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 320
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020701,
+    "GroupID": 10207,
+    "Level": 1,
+    "DisplayMaxLevel": 5,
+    "Name": "奇点突破Lv.1",
+    "Desc": "技能暴伤倍率提升<CZ_HighLight>5%</>。",
+    "Inscription": [
+      5020701
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 40
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020702,
+    "GroupID": 10207,
+    "Level": 2,
+    "DisplayMaxLevel": 5,
+    "Name": "奇点突破Lv.2",
+    "Desc": "技能暴伤倍率提升<CZ_HighLight>6%</>。",
+    "Inscription": [
+      5020702
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 48
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020703,
+    "GroupID": 10207,
+    "Level": 3,
+    "DisplayMaxLevel": 5,
+    "Name": "奇点突破Lv.3",
+    "Desc": "技能暴伤倍率提升<CZ_HighLight>7%</>。",
+    "Inscription": [
+      5020703
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020704,
+    "GroupID": 10207,
+    "Level": 4,
+    "DisplayMaxLevel": 5,
+    "Name": "奇点突破Lv.4",
+    "Desc": "技能暴伤倍率提升<CZ_HighLight>14%</>。",
+    "Inscription": [
+      5020704
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 120
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020705,
+    "GroupID": 10207,
+    "Level": 5,
+    "DisplayMaxLevel": 5,
+    "Name": "奇点突破Lv.5",
+    "Desc": "技能暴伤倍率提升<CZ_HighLight>15%</>。",
+    "Inscription": [
+      5020705
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 128
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020706,
+    "GroupID": 10207,
+    "Level": 6,
+    "DisplayMaxLevel": 5,
+    "Name": "奇点突破Lv.6",
+    "Desc": "技能暴伤倍率提升<CZ_HighLight>16%</>。",
+    "Inscription": [
+      5020706
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 140
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020707,
+    "GroupID": 10207,
+    "Level": 7,
+    "DisplayMaxLevel": 5,
+    "Name": "奇点突破Lv.7",
+    "Desc": "技能暴伤倍率提升<CZ_HighLight>22%</>。",
+    "Inscription": [
+      5020707
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020708,
+    "GroupID": 10207,
+    "Level": 8,
+    "DisplayMaxLevel": 5,
+    "Name": "奇点突破Lv.8",
+    "Desc": "技能暴伤倍率提升<CZ_HighLight>23%</>。",
+    "Inscription": [
+      5020708
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 220
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020709,
+    "GroupID": 10207,
+    "Level": 9,
+    "DisplayMaxLevel": 5,
+    "Name": "奇点突破Lv.9",
+    "Desc": "技能暴伤倍率提升<CZ_HighLight>24%</>。",
+    "Inscription": [
+      5020709
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 240
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020710,
+    "GroupID": 10207,
+    "Level": 10,
+    "DisplayMaxLevel": 5,
+    "Name": "奇点突破Lv.10",
+    "Desc": "技能暴伤倍率提升<CZ_HighLight>30%</>。",
+    "Inscription": [
+      5020710
+    ],
+    "FrontGroupsId": [
+      10204
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 320
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjlts_attack.Bat_wqbjlts_attack"
+  },
+  {
+    "ID": 1020801,
+    "GroupID": 10208,
+    "Level": 1,
+    "DisplayMaxLevel": 4,
+    "Name": "极速换弹Lv.1",
+    "Desc": "<keyname id=\\\"11\\\"></>换弹速度提升<CZ_HighLight>5%</>。",
+    "Inscription": [
+      5020801
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 50
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wahdsdzj_attack.Bat_wahdsdzj_attack"
+  },
+  {
+    "ID": 1020802,
+    "GroupID": 10208,
+    "Level": 2,
+    "DisplayMaxLevel": 4,
+    "Name": "极速换弹Lv.2",
+    "Desc": "<keyname id=\\\"11\\\"></>换弹速度提升<CZ_HighLight>6%</>。",
+    "Inscription": [
+      5020802
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wahdsdzj_attack.Bat_wahdsdzj_attack"
+  },
+  {
+    "ID": 1020803,
+    "GroupID": 10208,
+    "Level": 3,
+    "DisplayMaxLevel": 4,
+    "Name": "极速换弹Lv.3",
+    "Desc": "<keyname id=\\\"11\\\"></>换弹速度提升<CZ_HighLight>7%</>。",
+    "Inscription": [
+      5020803
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 75
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wahdsdzj_attack.Bat_wahdsdzj_attack"
+  },
+  {
+    "ID": 1020804,
+    "GroupID": 10208,
+    "Level": 4,
+    "DisplayMaxLevel": 4,
+    "Name": "极速换弹Lv.4",
+    "Desc": "<keyname id=\\\"11\\\"></>换弹速度提升<CZ_HighLight>14%</>。",
+    "Inscription": [
+      5020804
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 150
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wahdsdzj_attack.Bat_wahdsdzj_attack"
+  },
+  {
+    "ID": 1020805,
+    "GroupID": 10208,
+    "Level": 5,
+    "DisplayMaxLevel": 4,
+    "Name": "极速换弹Lv.5",
+    "Desc": "<keyname id=\\\"11\\\"></>换弹速度提升<CZ_HighLight>15%</>。",
+    "Inscription": [
+      5020805
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 160
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wahdsdzj_attack.Bat_wahdsdzj_attack"
+  },
+  {
+    "ID": 1020806,
+    "GroupID": 10208,
+    "Level": 6,
+    "DisplayMaxLevel": 4,
+    "Name": "极速换弹Lv.6",
+    "Desc": "<keyname id=\\\"11\\\"></>换弹速度提升<CZ_HighLight>16%</>。",
+    "Inscription": [
+      5020806
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 175
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wahdsdzj_attack.Bat_wahdsdzj_attack"
+  },
+  {
+    "ID": 1020807,
+    "GroupID": 10208,
+    "Level": 7,
+    "DisplayMaxLevel": 4,
+    "Name": "极速换弹Lv.7",
+    "Desc": "<keyname id=\\\"11\\\"></>换弹速度提升<CZ_HighLight>22%</>。",
+    "Inscription": [
+      5020807
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 250
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wahdsdzj_attack.Bat_wahdsdzj_attack"
+  },
+  {
+    "ID": 1020808,
+    "GroupID": 10208,
+    "Level": 8,
+    "DisplayMaxLevel": 4,
+    "Name": "极速换弹Lv.8",
+    "Desc": "<keyname id=\\\"11\\\"></>换弹速度提升<CZ_HighLight>23%</>。",
+    "Inscription": [
+      5020808
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 275
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wahdsdzj_attack.Bat_wahdsdzj_attack"
+  },
+  {
+    "ID": 1020809,
+    "GroupID": 10208,
+    "Level": 9,
+    "DisplayMaxLevel": 4,
+    "Name": "极速换弹Lv.9",
+    "Desc": "<keyname id=\\\"11\\\"></>换弹速度提升<CZ_HighLight>24%</>。",
+    "Inscription": [
+      5020809
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wahdsdzj_attack.Bat_wahdsdzj_attack"
+  },
+  {
+    "ID": 1020810,
+    "GroupID": 10208,
+    "Level": 10,
+    "DisplayMaxLevel": 4,
+    "Name": "极速换弹Lv.10",
+    "Desc": "<keyname id=\\\"11\\\"></>换弹速度提升<CZ_HighLight>30%</>。",
+    "Inscription": [
+      5020810
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 400
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wahdsdzj_attack.Bat_wahdsdzj_attack"
+  },
+  {
+    "ID": 1020901,
+    "GroupID": 10209,
+    "Level": 1,
+    "DisplayMaxLevel": 4,
+    "Name": "射速强化Lv.1",
+    "Desc": "武器射速提升<CZ_HighLight>5%</>。",
+    "Inscription": [
+      5020901
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 50
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1020902,
+    "GroupID": 10209,
+    "Level": 2,
+    "DisplayMaxLevel": 4,
+    "Name": "射速强化Lv.2",
+    "Desc": "武器射速提升<CZ_HighLight>6%</>。",
+    "Inscription": [
+      5020902
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1020903,
+    "GroupID": 10209,
+    "Level": 3,
+    "DisplayMaxLevel": 4,
+    "Name": "射速强化Lv.3",
+    "Desc": "武器射速提升<CZ_HighLight>7%</>。",
+    "Inscription": [
+      5020903
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 75
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1020904,
+    "GroupID": 10209,
+    "Level": 4,
+    "DisplayMaxLevel": 4,
+    "Name": "射速强化Lv.4",
+    "Desc": "武器射速提升<CZ_HighLight>14%</>。",
+    "Inscription": [
+      5020904
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 150
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1020905,
+    "GroupID": 10209,
+    "Level": 5,
+    "DisplayMaxLevel": 4,
+    "Name": "射速强化Lv.5",
+    "Desc": "武器射速提升<CZ_HighLight>15%</>。",
+    "Inscription": [
+      5020905
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 160
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1020906,
+    "GroupID": 10209,
+    "Level": 6,
+    "DisplayMaxLevel": 4,
+    "Name": "射速强化Lv.6",
+    "Desc": "武器射速提升<CZ_HighLight>16%</>。",
+    "Inscription": [
+      5020906
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 175
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1020907,
+    "GroupID": 10209,
+    "Level": 7,
+    "DisplayMaxLevel": 4,
+    "Name": "射速强化Lv.7",
+    "Desc": "武器射速提升<CZ_HighLight>22%</>。",
+    "Inscription": [
+      5020907
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 250
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1020908,
+    "GroupID": 10209,
+    "Level": 8,
+    "DisplayMaxLevel": 4,
+    "Name": "射速强化Lv.8",
+    "Desc": "武器射速提升<CZ_HighLight>23%</>。",
+    "Inscription": [
+      5020908
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 275
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1020909,
+    "GroupID": 10209,
+    "Level": 9,
+    "DisplayMaxLevel": 4,
+    "Name": "射速强化Lv.9",
+    "Desc": "武器射速提升<CZ_HighLight>24%</>。",
+    "Inscription": [
+      5020909
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1020910,
+    "GroupID": 10209,
+    "Level": 10,
+    "DisplayMaxLevel": 4,
+    "Name": "射速强化Lv.10",
+    "Desc": "武器射速提升<CZ_HighLight>30%</>。",
+    "Inscription": [
+      5020910
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 400
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1021001,
+    "GroupID": 10210,
+    "Level": 1,
+    "DisplayMaxLevel": 4,
+    "Name": "暴能射击Lv.1",
+    "Desc": "武器暴伤倍率提升<CZ_HighLight>5%</>。",
+    "Inscription": [
+      5021001
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 50
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1021002,
+    "GroupID": 10210,
+    "Level": 2,
+    "DisplayMaxLevel": 4,
+    "Name": "暴能射击Lv.2",
+    "Desc": "武器暴伤倍率提升<CZ_HighLight>6%</>。",
+    "Inscription": [
+      5021002
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1021003,
+    "GroupID": 10210,
+    "Level": 3,
+    "DisplayMaxLevel": 4,
+    "Name": "暴能射击Lv.3",
+    "Desc": "武器暴伤倍率提升<CZ_HighLight>7%</>。",
+    "Inscription": [
+      5021003
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 75
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1021004,
+    "GroupID": 10210,
+    "Level": 4,
+    "DisplayMaxLevel": 4,
+    "Name": "暴能射击Lv.4",
+    "Desc": "武器暴伤倍率提升<CZ_HighLight>14%</>。",
+    "Inscription": [
+      5021004
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 150
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1021005,
+    "GroupID": 10210,
+    "Level": 5,
+    "DisplayMaxLevel": 4,
+    "Name": "暴能射击Lv.5",
+    "Desc": "武器暴伤倍率提升<CZ_HighLight>15%</>。",
+    "Inscription": [
+      5021005
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 160
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1021006,
+    "GroupID": 10210,
+    "Level": 6,
+    "DisplayMaxLevel": 4,
+    "Name": "暴能射击Lv.6",
+    "Desc": "武器暴伤倍率提升<CZ_HighLight>16%</>。",
+    "Inscription": [
+      5021006
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 175
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1021007,
+    "GroupID": 10210,
+    "Level": 7,
+    "DisplayMaxLevel": 4,
+    "Name": "暴能射击Lv.7",
+    "Desc": "武器暴伤倍率提升<CZ_HighLight>22%</>。",
+    "Inscription": [
+      5021007
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 250
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1021008,
+    "GroupID": 10210,
+    "Level": 8,
+    "DisplayMaxLevel": 4,
+    "Name": "暴能射击Lv.8",
+    "Desc": "武器暴伤倍率提升<CZ_HighLight>23%</>。",
+    "Inscription": [
+      5021008
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 275
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1021009,
+    "GroupID": 10210,
+    "Level": 9,
+    "DisplayMaxLevel": 4,
+    "Name": "暴能射击Lv.9",
+    "Desc": "武器暴伤倍率提升<CZ_HighLight>24%</>。",
+    "Inscription": [
+      5021009
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1021010,
+    "GroupID": 10210,
+    "Level": 10,
+    "DisplayMaxLevel": 4,
+    "Name": "暴能射击Lv.10",
+    "Desc": "武器暴伤倍率提升<CZ_HighLight>30%</>。",
+    "Inscription": [
+      5021010
+    ],
+    "FrontGroupsId": [
+      10205
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 400
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqbjshzj_attack.Bat_wqbjshzj_attack"
+  },
+  {
+    "ID": 1021101,
+    "GroupID": 10211,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "极速辅助Lv.1",
+    "Desc": "<keyname id=\\\"3\\\"></>主要技能充能时间减少<CZ_HighLight>5%</>。",
+    "Inscription": [
+      5021101
+    ],
+    "FrontGroupsId": [
+      10206,
+      10207
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 100
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnbjlzj_attack.Bat_ejnbjlzj_attack"
+  },
+  {
+    "ID": 1021102,
+    "GroupID": 10211,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "极速辅助Lv.2",
+    "Desc": "<keyname id=\\\"3\\\"></>主要技能充能时间减少<CZ_HighLight>10%</>。",
+    "Inscription": [
+      5021102
+    ],
+    "FrontGroupsId": [
+      10206,
+      10207
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnbjlzj_attack.Bat_ejnbjlzj_attack"
+  },
+  {
+    "ID": 1021103,
+    "GroupID": 10211,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "极速辅助Lv.3",
+    "Desc": "<keyname id=\\\"3\\\"></>主要技能充能时间减少<CZ_HighLight>15%</>。",
+    "Inscription": [
+      5021103
+    ],
+    "FrontGroupsId": [
+      10206,
+      10207
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 500
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnbjlzj_attack.Bat_ejnbjlzj_attack"
+  },
+  {
+    "ID": 1021201,
+    "GroupID": 10214,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之技Lv.1",
+    "Desc": "技能攻击力基于基础能力提升<CZ_HighLight>10%</>。",
+    "Inscription": [
+      5022001
+    ],
+    "FrontGroupsId": [
+      10211,
+      10212
+    ],
+    "FrontGroupsLevel": 11,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqsszj_attack.Bat_wqsszj_attack"
+  },
+  {
+    "ID": 1021202,
+    "GroupID": 10214,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之技Lv.2",
+    "Desc": "技能攻击力基于基础能力提升<CZ_HighLight>12%</>。",
+    "Inscription": [
+      5022002
+    ],
+    "FrontGroupsId": [
+      10211,
+      10212
+    ],
+    "FrontGroupsLevel": 11,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 72
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqsszj_attack.Bat_wqsszj_attack"
+  },
+  {
+    "ID": 1021203,
+    "GroupID": 10214,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之技Lv.3",
+    "Desc": "技能攻击力基于基础能力提升<CZ_HighLight>14%</>。",
+    "Inscription": [
+      5022003
+    ],
+    "FrontGroupsId": [
+      10211,
+      10212
+    ],
+    "FrontGroupsLevel": 11,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 90
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqsszj_attack.Bat_wqsszj_attack"
+  },
+  {
+    "ID": 1021204,
+    "GroupID": 10214,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之技Lv.4",
+    "Desc": "技能攻击力基于基础能力提升<CZ_HighLight>20%</>。",
+    "Inscription": [
+      5022004
+    ],
+    "FrontGroupsId": [
+      10211,
+      10212
+    ],
+    "FrontGroupsLevel": 11,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 180
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqsszj_attack.Bat_wqsszj_attack"
+  },
+  {
+    "ID": 1021205,
+    "GroupID": 10214,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之技Lv.5",
+    "Desc": "技能攻击力基于基础能力提升<CZ_HighLight>22%</>。",
+    "Inscription": [
+      5022005
+    ],
+    "FrontGroupsId": [
+      10211,
+      10212
+    ],
+    "FrontGroupsLevel": 11,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 192
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqsszj_attack.Bat_wqsszj_attack"
+  },
+  {
+    "ID": 1021206,
+    "GroupID": 10214,
+    "Level": 6,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之技Lv.6",
+    "Desc": "技能攻击力基于基础能力提升<CZ_HighLight>24%</>。",
+    "Inscription": [
+      5022006
+    ],
+    "FrontGroupsId": [
+      10211,
+      10212
+    ],
+    "FrontGroupsLevel": 11,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 210
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqsszj_attack.Bat_wqsszj_attack"
+  },
+  {
+    "ID": 1021207,
+    "GroupID": 10214,
+    "Level": 7,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之技Lv.7",
+    "Desc": "技能攻击力基于基础能力提升<CZ_HighLight>30%</>。",
+    "Inscription": [
+      5022007
+    ],
+    "FrontGroupsId": [
+      10211,
+      10212
+    ],
+    "FrontGroupsLevel": 11,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqsszj_attack.Bat_wqsszj_attack"
+  },
+  {
+    "ID": 1021208,
+    "GroupID": 10214,
+    "Level": 8,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之技Lv.8",
+    "Desc": "技能攻击力基于基础能力提升<CZ_HighLight>32%</>。",
+    "Inscription": [
+      5022008
+    ],
+    "FrontGroupsId": [
+      10211,
+      10212
+    ],
+    "FrontGroupsLevel": 11,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 330
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqsszj_attack.Bat_wqsszj_attack"
+  },
+  {
+    "ID": 1021209,
+    "GroupID": 10214,
+    "Level": 9,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之技Lv.9",
+    "Desc": "技能攻击力基于基础能力提升<CZ_HighLight>34%</>。",
+    "Inscription": [
+      5022009
+    ],
+    "FrontGroupsId": [
+      10211,
+      10212
+    ],
+    "FrontGroupsLevel": 11,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 360
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqsszj_attack.Bat_wqsszj_attack"
+  },
+  {
+    "ID": 1021210,
+    "GroupID": 10214,
+    "Level": 10,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之技Lv.10",
+    "Desc": "技能攻击力基于基础能力提升<CZ_HighLight>40%</>。",
+    "Inscription": [
+      5022010
+    ],
+    "FrontGroupsId": [
+      10211,
+      10212
+    ],
+    "FrontGroupsLevel": 11,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 480
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqsszj_attack.Bat_wqsszj_attack"
+  },
+  {
+    "ID": 1021301,
+    "GroupID": 10213,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之力Lv.1",
+    "Desc": "武器攻击力基于基础能力提升<CZ_HighLight>10%</>。",
+    "Inscription": [
+      5022011
+    ],
+    "FrontGroupsId": [
+      10208,
+      10209,
+      10210
+    ],
+    "FrontGroupsLevel": 12,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qxgjl_special.Bat_qxgjl_special"
+  },
+  {
+    "ID": 1021302,
+    "GroupID": 10213,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之力Lv.2",
+    "Desc": "武器攻击力基于基础能力提升<CZ_HighLight>12%</>。",
+    "Inscription": [
+      5022012
+    ],
+    "FrontGroupsId": [
+      10208,
+      10209,
+      10210
+    ],
+    "FrontGroupsLevel": 12,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 72
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qxgjl_special.Bat_qxgjl_special"
+  },
+  {
+    "ID": 1021303,
+    "GroupID": 10213,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之力Lv.3",
+    "Desc": "武器攻击力基于基础能力提升<CZ_HighLight>14%</>。",
+    "Inscription": [
+      5022013
+    ],
+    "FrontGroupsId": [
+      10208,
+      10209,
+      10210
+    ],
+    "FrontGroupsLevel": 12,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 90
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qxgjl_special.Bat_qxgjl_special"
+  },
+  {
+    "ID": 1021304,
+    "GroupID": 10213,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之力Lv.4",
+    "Desc": "武器攻击力基于基础能力提升<CZ_HighLight>20%</>。",
+    "Inscription": [
+      5022014
+    ],
+    "FrontGroupsId": [
+      10208,
+      10209,
+      10210
+    ],
+    "FrontGroupsLevel": 12,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 180
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qxgjl_special.Bat_qxgjl_special"
+  },
+  {
+    "ID": 1021305,
+    "GroupID": 10213,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之力Lv.5",
+    "Desc": "武器攻击力基于基础能力提升<CZ_HighLight>22%</>。",
+    "Inscription": [
+      5022015
+    ],
+    "FrontGroupsId": [
+      10208,
+      10209,
+      10210
+    ],
+    "FrontGroupsLevel": 12,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 192
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qxgjl_special.Bat_qxgjl_special"
+  },
+  {
+    "ID": 1021306,
+    "GroupID": 10213,
+    "Level": 6,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之力Lv.6",
+    "Desc": "武器攻击力基于基础能力提升<CZ_HighLight>24%</>。",
+    "Inscription": [
+      5022016
+    ],
+    "FrontGroupsId": [
+      10208,
+      10209,
+      10210
+    ],
+    "FrontGroupsLevel": 12,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 210
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qxgjl_special.Bat_qxgjl_special"
+  },
+  {
+    "ID": 1021307,
+    "GroupID": 10213,
+    "Level": 7,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之力Lv.7",
+    "Desc": "武器攻击力基于基础能力提升<CZ_HighLight>30%</>。",
+    "Inscription": [
+      5022017
+    ],
+    "FrontGroupsId": [
+      10208,
+      10209,
+      10210
+    ],
+    "FrontGroupsLevel": 12,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qxgjl_special.Bat_qxgjl_special"
+  },
+  {
+    "ID": 1021308,
+    "GroupID": 10213,
+    "Level": 8,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之力Lv.8",
+    "Desc": "武器攻击力基于基础能力提升<CZ_HighLight>32%</>。",
+    "Inscription": [
+      5022018
+    ],
+    "FrontGroupsId": [
+      10208,
+      10209,
+      10210
+    ],
+    "FrontGroupsLevel": 12,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 330
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qxgjl_special.Bat_qxgjl_special"
+  },
+  {
+    "ID": 1021309,
+    "GroupID": 10213,
+    "Level": 9,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之力Lv.9",
+    "Desc": "武器攻击力基于基础能力提升<CZ_HighLight>34%</>。",
+    "Inscription": [
+      5022019
+    ],
+    "FrontGroupsId": [
+      10208,
+      10209,
+      10210
+    ],
+    "FrontGroupsLevel": 12,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 360
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qxgjl_special.Bat_qxgjl_special"
+  },
+  {
+    "ID": 1021310,
+    "GroupID": 10213,
+    "Level": 10,
+    "DisplayMaxLevel": 3,
+    "Name": "卓越之力Lv.10",
+    "Desc": "武器攻击力基于基础能力提升<CZ_HighLight>40%</>。",
+    "Inscription": [
+      5022020
+    ],
+    "FrontGroupsId": [
+      10208,
+      10209,
+      10210
+    ],
+    "FrontGroupsLevel": 12,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 480
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qxgjl_special.Bat_qxgjl_special"
+  },
+  {
+    "ID": 1021401,
+    "GroupID": 10212,
+    "Level": 1,
+    "DisplayMaxLevel": 8,
+    "Name": "充能速率Lv.1",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能充能效率提升<CZ_HighLight>5%</>。",
+    "Inscription": [
+      5021401
+    ],
+    "FrontGroupsId": [
+      10206,
+      10207
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 50
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnshzj_attack.Bat_qjnshzj_attack"
+  },
+  {
+    "ID": 1021402,
+    "GroupID": 10212,
+    "Level": 2,
+    "DisplayMaxLevel": 8,
+    "Name": "充能速率Lv.2",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能充能效率提升<CZ_HighLight>6%</>。",
+    "Inscription": [
+      5021402
+    ],
+    "FrontGroupsId": [
+      10206,
+      10207
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnshzj_attack.Bat_qjnshzj_attack"
+  },
+  {
+    "ID": 1021403,
+    "GroupID": 10212,
+    "Level": 3,
+    "DisplayMaxLevel": 8,
+    "Name": "充能速率Lv.3",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能充能效率提升<CZ_HighLight>7%</>。",
+    "Inscription": [
+      5021403
+    ],
+    "FrontGroupsId": [
+      10206,
+      10207
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 75
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnshzj_attack.Bat_qjnshzj_attack"
+  },
+  {
+    "ID": 1021404,
+    "GroupID": 10212,
+    "Level": 4,
+    "DisplayMaxLevel": 8,
+    "Name": "充能速率Lv.4",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能充能效率提升<CZ_HighLight>10%</>。",
+    "Inscription": [
+      5021404
+    ],
+    "FrontGroupsId": [
+      10206,
+      10207
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 150
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnshzj_attack.Bat_qjnshzj_attack"
+  },
+  {
+    "ID": 1021405,
+    "GroupID": 10212,
+    "Level": 5,
+    "DisplayMaxLevel": 8,
+    "Name": "充能速率Lv.5",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能充能效率提升<CZ_HighLight>11%</>。",
+    "Inscription": [
+      5021405
+    ],
+    "FrontGroupsId": [
+      10206,
+      10207
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 160
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnshzj_attack.Bat_qjnshzj_attack"
+  },
+  {
+    "ID": 1021406,
+    "GroupID": 10212,
+    "Level": 6,
+    "DisplayMaxLevel": 8,
+    "Name": "充能速率Lv.6",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能充能效率提升<CZ_HighLight>12%</>。",
+    "Inscription": [
+      5021406
+    ],
+    "FrontGroupsId": [
+      10206,
+      10207
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 175
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnshzj_attack.Bat_qjnshzj_attack"
+  },
+  {
+    "ID": 1021407,
+    "GroupID": 10212,
+    "Level": 7,
+    "DisplayMaxLevel": 8,
+    "Name": "充能速率Lv.7",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能充能效率提升<CZ_HighLight>15%</>。",
+    "Inscription": [
+      5021407
+    ],
+    "FrontGroupsId": [
+      10206,
+      10207
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 250
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnshzj_attack.Bat_qjnshzj_attack"
+  },
+  {
+    "ID": 1021408,
+    "GroupID": 10212,
+    "Level": 8,
+    "DisplayMaxLevel": 8,
+    "Name": "充能速率Lv.8",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能充能效率提升<CZ_HighLight>16%</>。",
+    "Inscription": [
+      5021408
+    ],
+    "FrontGroupsId": [
+      10206,
+      10207
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 275
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnshzj_attack.Bat_qjnshzj_attack"
+  },
+  {
+    "ID": 1021409,
+    "GroupID": 10212,
+    "Level": 9,
+    "DisplayMaxLevel": 8,
+    "Name": "充能速率Lv.9",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能充能效率提升<CZ_HighLight>17%</>。",
+    "Inscription": [
+      5021409
+    ],
+    "FrontGroupsId": [
+      10206,
+      10207
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnshzj_attack.Bat_qjnshzj_attack"
+  },
+  {
+    "ID": 1021410,
+    "GroupID": 10212,
+    "Level": 10,
+    "DisplayMaxLevel": 8,
+    "Name": "充能速率Lv.10",
+    "Desc": "<keyname id=\\\"1\\\"></><keyname id=\\\"2\\\"></>终极技能充能效率提升<CZ_HighLight>20%</>。",
+    "Inscription": [
+      5021410
+    ],
+    "FrontGroupsId": [
+      10206,
+      10207
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 400
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnshzj_attack.Bat_qjnshzj_attack"
+  },
+  {
+    "ID": 1030101,
+    "GroupID": 10301,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "命源萃取Lv.1",
+    "Desc": "体力值上限<CZ_HighLight>+20</>。",
+    "Inscription": [
+      5030101
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 20
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_mtygxlhf_survival.Bat_mtygxlhf_survival"
+  },
+  {
+    "ID": 1030102,
+    "GroupID": 10301,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "命源萃取Lv.2",
+    "Desc": "体力值上限<CZ_HighLight>+25</>。",
+    "Inscription": [
+      5030102
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 24
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_mtygxlhf_survival.Bat_mtygxlhf_survival"
+  },
+  {
+    "ID": 1030103,
+    "GroupID": 10301,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "命源萃取Lv.3",
+    "Desc": "体力值上限<CZ_HighLight>+30</>。",
+    "Inscription": [
+      5030103
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 30
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_mtygxlhf_survival.Bat_mtygxlhf_survival"
+  },
+  {
+    "ID": 1030104,
+    "GroupID": 10301,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "命源萃取Lv.4",
+    "Desc": "体力值上限<CZ_HighLight>+40</>。",
+    "Inscription": [
+      5030104
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_mtygxlhf_survival.Bat_mtygxlhf_survival"
+  },
+  {
+    "ID": 1030105,
+    "GroupID": 10301,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "命源萃取Lv.5",
+    "Desc": "体力值上限<CZ_HighLight>+45</>。",
+    "Inscription": [
+      5030105
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 64
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_mtygxlhf_survival.Bat_mtygxlhf_survival"
+  },
+  {
+    "ID": 1030106,
+    "GroupID": 10301,
+    "Level": 6,
+    "DisplayMaxLevel": 3,
+    "Name": "命源萃取Lv.6",
+    "Desc": "体力值上限<CZ_HighLight>+60</>。",
+    "Inscription": [
+      5030106
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 70
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_mtygxlhf_survival.Bat_mtygxlhf_survival"
+  },
+  {
+    "ID": 1030107,
+    "GroupID": 10301,
+    "Level": 7,
+    "DisplayMaxLevel": 3,
+    "Name": "命源萃取Lv.7",
+    "Desc": "体力值上限<CZ_HighLight>+70</>。",
+    "Inscription": [
+      5030107
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 100
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_mtygxlhf_survival.Bat_mtygxlhf_survival"
+  },
+  {
+    "ID": 1030108,
+    "GroupID": 10301,
+    "Level": 8,
+    "DisplayMaxLevel": 3,
+    "Name": "命源萃取Lv.8",
+    "Desc": "体力值上限<CZ_HighLight>+75</>。",
+    "Inscription": [
+      5030108
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 110
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_mtygxlhf_survival.Bat_mtygxlhf_survival"
+  },
+  {
+    "ID": 1030109,
+    "GroupID": 10301,
+    "Level": 9,
+    "DisplayMaxLevel": 3,
+    "Name": "命源萃取Lv.9",
+    "Desc": "体力值上限<CZ_HighLight>+80</>。",
+    "Inscription": [
+      5030109
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 120
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_mtygxlhf_survival.Bat_mtygxlhf_survival"
+  },
+  {
+    "ID": 1030110,
+    "GroupID": 10301,
+    "Level": 10,
+    "DisplayMaxLevel": 3,
+    "Name": "命源萃取Lv.10",
+    "Desc": "体力值上限<CZ_HighLight>+100</>。",
+    "Inscription": [
+      5030110
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 160
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_mtygxlhf_survival.Bat_mtygxlhf_survival"
+  },
+  {
+    "ID": 1030201,
+    "GroupID": 10302,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "高效回溯Lv.1",
+    "Desc": "护盾上限<CZ_HighLight>+12</>。",
+    "Inscription": [
+      5030201
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 20
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_hdsxzj_survival.Bat_hdsxzj_survival"
+  },
+  {
+    "ID": 1030202,
+    "GroupID": 10302,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "高效回溯Lv.2",
+    "Desc": "护盾上限<CZ_HighLight>+15</>。",
+    "Inscription": [
+      5030202
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 24
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_hdsxzj_survival.Bat_hdsxzj_survival"
+  },
+  {
+    "ID": 1030203,
+    "GroupID": 10302,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "高效回溯Lv.3",
+    "Desc": "护盾上限<CZ_HighLight>+18</>。",
+    "Inscription": [
+      5030203
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 30
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_hdsxzj_survival.Bat_hdsxzj_survival"
+  },
+  {
+    "ID": 1030204,
+    "GroupID": 10302,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "高效回溯Lv.4",
+    "Desc": "护盾上限<CZ_HighLight>+24</>。",
+    "Inscription": [
+      5030204
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_hdsxzj_survival.Bat_hdsxzj_survival"
+  },
+  {
+    "ID": 1030205,
+    "GroupID": 10302,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "高效回溯Lv.5",
+    "Desc": "护盾上限<CZ_HighLight>+27</>。",
+    "Inscription": [
+      5030205
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 64
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_hdsxzj_survival.Bat_hdsxzj_survival"
+  },
+  {
+    "ID": 1030206,
+    "GroupID": 10302,
+    "Level": 6,
+    "DisplayMaxLevel": 3,
+    "Name": "高效回溯Lv.6",
+    "Desc": "护盾上限<CZ_HighLight>+30</>。",
+    "Inscription": [
+      5030206
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 70
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_hdsxzj_survival.Bat_hdsxzj_survival"
+  },
+  {
+    "ID": 1030207,
+    "GroupID": 10302,
+    "Level": 7,
+    "DisplayMaxLevel": 3,
+    "Name": "高效回溯Lv.7",
+    "Desc": "护盾上限<CZ_HighLight>+42</>。",
+    "Inscription": [
+      5030207
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 100
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_hdsxzj_survival.Bat_hdsxzj_survival"
+  },
+  {
+    "ID": 1030208,
+    "GroupID": 10302,
+    "Level": 8,
+    "DisplayMaxLevel": 3,
+    "Name": "高效回溯Lv.8",
+    "Desc": "护盾上限<CZ_HighLight>+45</>。",
+    "Inscription": [
+      5030208
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 110
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_hdsxzj_survival.Bat_hdsxzj_survival"
+  },
+  {
+    "ID": 1030209,
+    "GroupID": 10302,
+    "Level": 9,
+    "DisplayMaxLevel": 3,
+    "Name": "高效回溯Lv.9",
+    "Desc": "护盾上限<CZ_HighLight>+48</>。",
+    "Inscription": [
+      5030209
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 120
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_hdsxzj_survival.Bat_hdsxzj_survival"
+  },
+  {
+    "ID": 1030210,
+    "GroupID": 10302,
+    "Level": 10,
+    "DisplayMaxLevel": 3,
+    "Name": "高效回溯Lv.10",
+    "Desc": "护盾上限<CZ_HighLight>+60</>。",
+    "Inscription": [
+      5030210
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 160
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_hdsxzj_survival.Bat_hdsxzj_survival"
+  },
+  {
+    "ID": 1030301,
+    "GroupID": 10303,
+    "Level": 1,
+    "DisplayMaxLevel": 5,
+    "Name": "医疗专精Lv.1",
+    "Desc": "回复道具效果加强<CZ_HighLight>20%</>。",
+    "Inscription": [
+      5030301
+    ],
+    "FrontGroupsId": [
+      10301
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 30
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_fhhxlblts_survival.Bat_fhhxlblts_survival"
+  },
+  {
+    "ID": 1030302,
+    "GroupID": 10303,
+    "Level": 2,
+    "DisplayMaxLevel": 5,
+    "Name": "医疗专精Lv.2",
+    "Desc": "回复道具效果加强<CZ_HighLight>25%</>。",
+    "Inscription": [
+      5030302
+    ],
+    "FrontGroupsId": [
+      10301
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 36
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_fhhxlblts_survival.Bat_fhhxlblts_survival"
+  },
+  {
+    "ID": 1030303,
+    "GroupID": 10303,
+    "Level": 3,
+    "DisplayMaxLevel": 5,
+    "Name": "医疗专精Lv.3",
+    "Desc": "回复道具效果加强<CZ_HighLight>30%</>。",
+    "Inscription": [
+      5030303
+    ],
+    "FrontGroupsId": [
+      10301
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 45
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_fhhxlblts_survival.Bat_fhhxlblts_survival"
+  },
+  {
+    "ID": 1030304,
+    "GroupID": 10303,
+    "Level": 4,
+    "DisplayMaxLevel": 5,
+    "Name": "医疗专精Lv.4",
+    "Desc": "回复道具效果加强<CZ_HighLight>40%</>。",
+    "Inscription": [
+      5030304
+    ],
+    "FrontGroupsId": [
+      10301
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 90
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_fhhxlblts_survival.Bat_fhhxlblts_survival"
+  },
+  {
+    "ID": 1030305,
+    "GroupID": 10303,
+    "Level": 5,
+    "DisplayMaxLevel": 5,
+    "Name": "医疗专精Lv.5",
+    "Desc": "回复道具效果加强<CZ_HighLight>45%</>。",
+    "Inscription": [
+      5030305
+    ],
+    "FrontGroupsId": [
+      10301
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 96
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_fhhxlblts_survival.Bat_fhhxlblts_survival"
+  },
+  {
+    "ID": 1030306,
+    "GroupID": 10303,
+    "Level": 6,
+    "DisplayMaxLevel": 5,
+    "Name": "医疗专精Lv.6",
+    "Desc": "回复道具效果加强<CZ_HighLight>50%</>。",
+    "Inscription": [
+      5030306
+    ],
+    "FrontGroupsId": [
+      10301
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 105
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_fhhxlblts_survival.Bat_fhhxlblts_survival"
+  },
+  {
+    "ID": 1030307,
+    "GroupID": 10303,
+    "Level": 7,
+    "DisplayMaxLevel": 5,
+    "Name": "医疗专精Lv.7",
+    "Desc": "回复道具效果加强<CZ_HighLight>70%</>。",
+    "Inscription": [
+      5030307
+    ],
+    "FrontGroupsId": [
+      10301
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 150
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_fhhxlblts_survival.Bat_fhhxlblts_survival"
+  },
+  {
+    "ID": 1030308,
+    "GroupID": 10303,
+    "Level": 8,
+    "DisplayMaxLevel": 5,
+    "Name": "医疗专精Lv.8",
+    "Desc": "回复道具效果加强<CZ_HighLight>75%</>。",
+    "Inscription": [
+      5030308
+    ],
+    "FrontGroupsId": [
+      10301
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 165
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_fhhxlblts_survival.Bat_fhhxlblts_survival"
+  },
+  {
+    "ID": 1030309,
+    "GroupID": 10303,
+    "Level": 9,
+    "DisplayMaxLevel": 5,
+    "Name": "医疗专精Lv.9",
+    "Desc": "回复道具效果加强<CZ_HighLight>80%</>。",
+    "Inscription": [
+      5030309
+    ],
+    "FrontGroupsId": [
+      10301
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 180
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_fhhxlblts_survival.Bat_fhhxlblts_survival"
+  },
+  {
+    "ID": 1030310,
+    "GroupID": 10303,
+    "Level": 10,
+    "DisplayMaxLevel": 5,
+    "Name": "医疗专精Lv.10",
+    "Desc": "回复道具效果加强<CZ_HighLight>100%</>。",
+    "Inscription": [
+      5030310
+    ],
+    "FrontGroupsId": [
+      10301
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 240
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_fhhxlblts_survival.Bat_fhhxlblts_survival"
+  },
+  {
+    "ID": 1030401,
+    "GroupID": 10304,
+    "Level": 1,
+    "DisplayMaxLevel": 5,
+    "Name": "坚如磐石Lv.1",
+    "Desc": "受到的伤害降低<CZ_HighLight>2%</>。",
+    "Inscription": [
+      5030401
+    ],
+    "FrontGroupsId": [
+      10302
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sdmjsmcw_resource.Bat_sdmjsmcw_resource"
+  },
+  {
+    "ID": 1030402,
+    "GroupID": 10304,
+    "Level": 2,
+    "DisplayMaxLevel": 5,
+    "Name": "坚如磐石Lv.2",
+    "Desc": "受到的伤害降低<CZ_HighLight>3%</>。",
+    "Inscription": [
+      5030402
+    ],
+    "FrontGroupsId": [
+      10302
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 72
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sdmjsmcw_resource.Bat_sdmjsmcw_resource"
+  },
+  {
+    "ID": 1030403,
+    "GroupID": 10304,
+    "Level": 3,
+    "DisplayMaxLevel": 5,
+    "Name": "坚如磐石Lv.3",
+    "Desc": "受到的伤害降低<CZ_HighLight>4%</>。",
+    "Inscription": [
+      5030403
+    ],
+    "FrontGroupsId": [
+      10302
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 90
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sdmjsmcw_resource.Bat_sdmjsmcw_resource"
+  },
+  {
+    "ID": 1030404,
+    "GroupID": 10304,
+    "Level": 4,
+    "DisplayMaxLevel": 5,
+    "Name": "坚如磐石Lv.4",
+    "Desc": "受到的伤害降低<CZ_HighLight>5%</>。",
+    "Inscription": [
+      5030404
+    ],
+    "FrontGroupsId": [
+      10302
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 180
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sdmjsmcw_resource.Bat_sdmjsmcw_resource"
+  },
+  {
+    "ID": 1030405,
+    "GroupID": 10304,
+    "Level": 5,
+    "DisplayMaxLevel": 5,
+    "Name": "坚如磐石Lv.5",
+    "Desc": "受到的伤害降低<CZ_HighLight>6%</>。",
+    "Inscription": [
+      5030405
+    ],
+    "FrontGroupsId": [
+      10302
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 192
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sdmjsmcw_resource.Bat_sdmjsmcw_resource"
+  },
+  {
+    "ID": 1030501,
+    "GroupID": 10305,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "极速救援Lv.1",
+    "Desc": "救援玩家的时间减少<CZ_HighLight>15%</>。",
+    "Inscription": [
+      5030501
+    ],
+    "FrontGroupsId": [
+      10303,
+      10304
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 40
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_cjncdjs_attack.Bat_cjncdjs_attack"
+  },
+  {
+    "ID": 1030502,
+    "GroupID": 10305,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "极速救援Lv.2",
+    "Desc": "救援玩家的时间减少<CZ_HighLight>18%</>。",
+    "Inscription": [
+      5030502
+    ],
+    "FrontGroupsId": [
+      10303,
+      10304
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 48
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_cjncdjs_attack.Bat_cjncdjs_attack"
+  },
+  {
+    "ID": 1030503,
+    "GroupID": 10305,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "极速救援Lv.3",
+    "Desc": "救援玩家的时间减少<CZ_HighLight>20%</>。",
+    "Inscription": [
+      5030503
+    ],
+    "FrontGroupsId": [
+      10303,
+      10304
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_cjncdjs_attack.Bat_cjncdjs_attack"
+  },
+  {
+    "ID": 1030504,
+    "GroupID": 10305,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "极速救援Lv.4",
+    "Desc": "救援玩家的时间减少<CZ_HighLight>30%</>。",
+    "Inscription": [
+      5030504
+    ],
+    "FrontGroupsId": [
+      10303,
+      10304
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 120
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_cjncdjs_attack.Bat_cjncdjs_attack"
+  },
+  {
+    "ID": 1030505,
+    "GroupID": 10305,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "极速救援Lv.5",
+    "Desc": "救援玩家的时间减少<CZ_HighLight>32%</>。",
+    "Inscription": [
+      5030505
+    ],
+    "FrontGroupsId": [
+      10303,
+      10304
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 128
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_cjncdjs_attack.Bat_cjncdjs_attack"
+  },
+  {
+    "ID": 1030506,
+    "GroupID": 10305,
+    "Level": 6,
+    "DisplayMaxLevel": 3,
+    "Name": "极速救援Lv.6",
+    "Desc": "救援玩家的时间减少<CZ_HighLight>35%</>。",
+    "Inscription": [
+      5030506
+    ],
+    "FrontGroupsId": [
+      10303,
+      10304
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 140
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_cjncdjs_attack.Bat_cjncdjs_attack"
+  },
+  {
+    "ID": 1030507,
+    "GroupID": 10305,
+    "Level": 7,
+    "DisplayMaxLevel": 3,
+    "Name": "极速救援Lv.7",
+    "Desc": "救援玩家的时间减少<CZ_HighLight>40%</>。",
+    "Inscription": [
+      5030507
+    ],
+    "FrontGroupsId": [
+      10303,
+      10304
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_cjncdjs_attack.Bat_cjncdjs_attack"
+  },
+  {
+    "ID": 1030508,
+    "GroupID": 10305,
+    "Level": 8,
+    "DisplayMaxLevel": 3,
+    "Name": "极速救援Lv.8",
+    "Desc": "救援玩家的时间减少<CZ_HighLight>42%</>。",
+    "Inscription": [
+      5030508
+    ],
+    "FrontGroupsId": [
+      10303,
+      10304
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 220
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_cjncdjs_attack.Bat_cjncdjs_attack"
+  },
+  {
+    "ID": 1030509,
+    "GroupID": 10305,
+    "Level": 9,
+    "DisplayMaxLevel": 3,
+    "Name": "极速救援Lv.9",
+    "Desc": "救援玩家的时间减少<CZ_HighLight>45%</>。",
+    "Inscription": [
+      5030509
+    ],
+    "FrontGroupsId": [
+      10303,
+      10304
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 240
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_cjncdjs_attack.Bat_cjncdjs_attack"
+  },
+  {
+    "ID": 1030510,
+    "GroupID": 10305,
+    "Level": 10,
+    "DisplayMaxLevel": 3,
+    "Name": "极速救援Lv.10",
+    "Desc": "救援玩家的时间减少<CZ_HighLight>50%</>。",
+    "Inscription": [
+      5030510
+    ],
+    "FrontGroupsId": [
+      10303,
+      10304
+    ],
+    "FrontGroupsLevel": 10,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 320
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_cjncdjs_attack.Bat_cjncdjs_attack"
+  },
+  {
+    "ID": 1030601,
+    "GroupID": 10306,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "决斗回馈Lv.1",
+    "Desc": "击败敌人后，有<CZ_HighLight>5%</>概率掉落回复道具。",
+    "Inscription": [
+      5030601
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 50
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsgwgldlhxdj_survival.Bat_jsgwgldlhxdj_survival"
+  },
+  {
+    "ID": 1030602,
+    "GroupID": 10306,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "决斗回馈Lv.2",
+    "Desc": "击败敌人后，有<CZ_HighLight>6%</>概率掉落回复道具。",
+    "Inscription": [
+      5030602
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsgwgldlhxdj_survival.Bat_jsgwgldlhxdj_survival"
+  },
+  {
+    "ID": 1030603,
+    "GroupID": 10306,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "决斗回馈Lv.3",
+    "Desc": "击败敌人后，有<CZ_HighLight>7%</>概率掉落回复道具。",
+    "Inscription": [
+      5030603
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 75
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsgwgldlhxdj_survival.Bat_jsgwgldlhxdj_survival"
+  },
+  {
+    "ID": 1030604,
+    "GroupID": 10306,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "决斗回馈Lv.4",
+    "Desc": "击败敌人后，有<CZ_HighLight>10%</>概率掉落回复道具。",
+    "Inscription": [
+      5030604
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 150
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsgwgldlhxdj_survival.Bat_jsgwgldlhxdj_survival"
+  },
+  {
+    "ID": 1030605,
+    "GroupID": 10306,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "决斗回馈Lv.5",
+    "Desc": "击败敌人后，有<CZ_HighLight>11%</>概率掉落回复道具。",
+    "Inscription": [
+      5030605
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 160
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsgwgldlhxdj_survival.Bat_jsgwgldlhxdj_survival"
+  },
+  {
+    "ID": 1030606,
+    "GroupID": 10306,
+    "Level": 6,
+    "DisplayMaxLevel": 3,
+    "Name": "决斗回馈Lv.6",
+    "Desc": "击败敌人后，有<CZ_HighLight>12%</>概率掉落回复道具。",
+    "Inscription": [
+      5030606
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 175
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsgwgldlhxdj_survival.Bat_jsgwgldlhxdj_survival"
+  },
+  {
+    "ID": 1030607,
+    "GroupID": 10306,
+    "Level": 7,
+    "DisplayMaxLevel": 3,
+    "Name": "决斗回馈Lv.7",
+    "Desc": "击败敌人后，有<CZ_HighLight>15%</>概率掉落回复道具。",
+    "Inscription": [
+      5030607
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 250
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsgwgldlhxdj_survival.Bat_jsgwgldlhxdj_survival"
+  },
+  {
+    "ID": 1030608,
+    "GroupID": 10306,
+    "Level": 8,
+    "DisplayMaxLevel": 3,
+    "Name": "决斗回馈Lv.8",
+    "Desc": "击败敌人后，有<CZ_HighLight>16%</>概率掉落回复道具。",
+    "Inscription": [
+      5030608
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 275
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsgwgldlhxdj_survival.Bat_jsgwgldlhxdj_survival"
+  },
+  {
+    "ID": 1030609,
+    "GroupID": 10306,
+    "Level": 9,
+    "DisplayMaxLevel": 3,
+    "Name": "决斗回馈Lv.9",
+    "Desc": "击败敌人后，有<CZ_HighLight>17%</>概率掉落回复道具。",
+    "Inscription": [
+      5030609
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsgwgldlhxdj_survival.Bat_jsgwgldlhxdj_survival"
+  },
+  {
+    "ID": 1030610,
+    "GroupID": 10306,
+    "Level": 10,
+    "DisplayMaxLevel": 3,
+    "Name": "决斗回馈Lv.10",
+    "Desc": "击败敌人后，有<CZ_HighLight>20%</>概率掉落回复道具。",
+    "Inscription": [
+      5030610
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 400
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsgwgldlhxdj_survival.Bat_jsgwgldlhxdj_survival"
+  },
+  {
+    "ID": 1030701,
+    "GroupID": 10307,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "数字重生Lv.1",
+    "Desc": "被成功救援后，体力值比例提升<CZ_HighLight>10%</>。",
+    "Inscription": [
+      5030701
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 100
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jcxl_special.Bat_jcxl_special"
+  },
+  {
+    "ID": 1030702,
+    "GroupID": 10307,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "数字重生Lv.2",
+    "Desc": "被成功救援后，体力值比例提升<CZ_HighLight>15%</>。",
+    "Inscription": [
+      5030702
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jcxl_special.Bat_jcxl_special"
+  },
+  {
+    "ID": 1030703,
+    "GroupID": 10307,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "数字重生Lv.3",
+    "Desc": "被成功救援后，体力值比例提升<CZ_HighLight>20%</>。",
+    "Inscription": [
+      5030703
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 500
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jcxl_special.Bat_jcxl_special"
+  },
+  {
+    "ID": 1030801,
+    "GroupID": 10308,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "愈战愈勇Lv.1",
+    "Desc": "每通过一关，体力值恢复<CZ_HighLight>1%</>。",
+    "Inscription": [
+      5030801
+    ],
+    "FrontGroupsId": [
+      10306
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 120
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_hxdjxgjq_survival.Bat_hxdjxgjq_survival"
+  },
+  {
+    "ID": 1030802,
+    "GroupID": 10308,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "愈战愈勇Lv.2",
+    "Desc": "每通过一关，体力值恢复<CZ_HighLight>2%</>。",
+    "Inscription": [
+      5030802
+    ],
+    "FrontGroupsId": [
+      10306
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 144
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_hxdjxgjq_survival.Bat_hxdjxgjq_survival"
+  },
+  {
+    "ID": 1030803,
+    "GroupID": 10308,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "愈战愈勇Lv.3",
+    "Desc": "每通过一关，体力值恢复<CZ_HighLight>3%</>。",
+    "Inscription": [
+      5030803
+    ],
+    "FrontGroupsId": [
+      10306
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 180
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_hxdjxgjq_survival.Bat_hxdjxgjq_survival"
+  },
+  {
+    "ID": 1030804,
+    "GroupID": 10308,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "愈战愈勇Lv.4",
+    "Desc": "每通过一关，体力值恢复<CZ_HighLight>4%</>。",
+    "Inscription": [
+      5030804
+    ],
+    "FrontGroupsId": [
+      10306
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_hxdjxgjq_survival.Bat_hxdjxgjq_survival"
+  },
+  {
+    "ID": 1030805,
+    "GroupID": 10308,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "愈战愈勇Lv.5",
+    "Desc": "每通过一关，体力值恢复<CZ_HighLight>5%</>。",
+    "Inscription": [
+      5030805
+    ],
+    "FrontGroupsId": [
+      10306
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_hxdjxgjq_survival.Bat_hxdjxgjq_survival"
+  },
+  {
+    "ID": 1030901,
+    "GroupID": 10309,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "全息护盾Lv.1",
+    "Desc": "受到致命伤害时免疫本次伤害，冷却时间<CZ_HighLight>300</>秒。",
+    "Inscription": [
+      5030901
+    ],
+    "FrontGroupsId": [
+      10307
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 180
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_smsxzj_survival.Bat_smsxzj_survival"
+  },
+  {
+    "ID": 1030902,
+    "GroupID": 10309,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "全息护盾Lv.2",
+    "Desc": "受到致命伤害时免疫本次伤害，冷却时间<CZ_HighLight>240</>秒。",
+    "Inscription": [
+      5030902
+    ],
+    "FrontGroupsId": [
+      10307
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 360
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_smsxzj_survival.Bat_smsxzj_survival"
+  },
+  {
+    "ID": 1030903,
+    "GroupID": 10309,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "全息护盾Lv.3",
+    "Desc": "受到致命伤害时免疫本次伤害，冷却时间<CZ_HighLight>180</>秒。",
+    "Inscription": [
+      5030903
+    ],
+    "FrontGroupsId": [
+      10307
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 600
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_smsxzj_survival.Bat_smsxzj_survival"
+  },
+  {
+    "ID": 1020101,
+    "GroupID": 10201,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "超限射击Lv.1",
+    "Desc": "武器伤害提升<CZ_HighLight>15%</>。",
+    "Inscription": [
+      5020201
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 20
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sddshjd_survival.Bat_sddshjd_survival"
+  },
+  {
+    "ID": 1020102,
+    "GroupID": 10201,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "超限射击Lv.2",
+    "Desc": "武器伤害提升<CZ_HighLight>18%</>。",
+    "Inscription": [
+      5020202
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 24
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sddshjd_survival.Bat_sddshjd_survival"
+  },
+  {
+    "ID": 1020103,
+    "GroupID": 10201,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "超限射击Lv.3",
+    "Desc": "武器伤害提升<CZ_HighLight>21%</>。",
+    "Inscription": [
+      5020203
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 30
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sddshjd_survival.Bat_sddshjd_survival"
+  },
+  {
+    "ID": 1020104,
+    "GroupID": 10201,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "超限射击Lv.4",
+    "Desc": "武器伤害提升<CZ_HighLight>30%</>。",
+    "Inscription": [
+      5020204
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sddshjd_survival.Bat_sddshjd_survival"
+  },
+  {
+    "ID": 1020105,
+    "GroupID": 10201,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "超限射击Lv.5",
+    "Desc": "武器伤害提升<CZ_HighLight>33%</>。",
+    "Inscription": [
+      5020205
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 64
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sddshjd_survival.Bat_sddshjd_survival"
+  },
+  {
+    "ID": 1020106,
+    "GroupID": 10201,
+    "Level": 6,
+    "DisplayMaxLevel": 3,
+    "Name": "超限射击Lv.6",
+    "Desc": "武器伤害提升<CZ_HighLight>36%</>。",
+    "Inscription": [
+      5020206
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 70
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sddshjd_survival.Bat_sddshjd_survival"
+  },
+  {
+    "ID": 1020107,
+    "GroupID": 10201,
+    "Level": 7,
+    "DisplayMaxLevel": 3,
+    "Name": "超限射击Lv.7",
+    "Desc": "武器伤害提升<CZ_HighLight>45%</>。",
+    "Inscription": [
+      5020207
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 100
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sddshjd_survival.Bat_sddshjd_survival"
+  },
+  {
+    "ID": 1020108,
+    "GroupID": 10201,
+    "Level": 8,
+    "DisplayMaxLevel": 3,
+    "Name": "超限射击Lv.8",
+    "Desc": "武器伤害提升<CZ_HighLight>48%</>。",
+    "Inscription": [
+      5020208
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 110
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sddshjd_survival.Bat_sddshjd_survival"
+  },
+  {
+    "ID": 1020109,
+    "GroupID": 10201,
+    "Level": 9,
+    "DisplayMaxLevel": 3,
+    "Name": "超限射击Lv.9",
+    "Desc": "武器伤害提升<CZ_HighLight>51%</>。",
+    "Inscription": [
+      5020209
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 120
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sddshjd_survival.Bat_sddshjd_survival"
+  },
+  {
+    "ID": 1020110,
+    "GroupID": 10201,
+    "Level": 10,
+    "DisplayMaxLevel": 3,
+    "Name": "超限射击Lv.10",
+    "Desc": "武器伤害提升<CZ_HighLight>60%</>。",
+    "Inscription": [
+      5020210
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 160
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sddshjd_survival.Bat_sddshjd_survival"
+  },
+  {
+    "ID": 1021601,
+    "GroupID": 10216,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "急速回复Lv.1",
+    "Desc": "命中弱点击败敌人时，回复<CZ_HighLight>4%</>子弹数量。",
+    "Inscription": [
+      5021601
+    ],
+    "FrontGroupsId": [
+      10202
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 150
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnslzj_attack.Bat_qjnslzj_attack"
+  },
+  {
+    "ID": 1021602,
+    "GroupID": 10216,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "急速回复Lv.2",
+    "Desc": "命中弱点击败敌人时，回复<CZ_HighLight>5%</>子弹数量。",
+    "Inscription": [
+      5021602
+    ],
+    "FrontGroupsId": [
+      10202
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 150
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnslzj_attack.Bat_qjnslzj_attack"
+  },
+  {
+    "ID": 1021603,
+    "GroupID": 10216,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "急速回复Lv.3",
+    "Desc": "命中弱点击败敌人时，回复<CZ_HighLight>7%</>子弹数量。",
+    "Inscription": [
+      5021603
+    ],
+    "FrontGroupsId": [
+      10202
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 150
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnslzj_attack.Bat_qjnslzj_attack"
+  },
+  {
+    "ID": 1021604,
+    "GroupID": 10216,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "急速回复Lv.4",
+    "Desc": "命中弱点击败敌人时，回复<CZ_HighLight>8%</>子弹数量。",
+    "Inscription": [
+      5021604
+    ],
+    "FrontGroupsId": [
+      10202
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 150
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnslzj_attack.Bat_qjnslzj_attack"
+  },
+  {
+    "ID": 1021605,
+    "GroupID": 10216,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "急速回复Lv.5",
+    "Desc": "命中弱点击败敌人时，回复<CZ_HighLight>10%</>子弹数量。",
+    "Inscription": [
+      5021605
+    ],
+    "FrontGroupsId": [
+      10202
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 150
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_qjnslzj_attack.Bat_qjnslzj_attack"
+  },
+  {
+    "ID": 1021701,
+    "GroupID": 10217,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "越战越勇lv.1",
+    "Desc": "换弹后<CZ_HighLight>2</>秒内射速提高<CZ_HighLight>4%</>。",
+    "Inscription": [
+      5021701
+    ],
+    "FrontGroupsId": [
+      10216
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 50
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1021702,
+    "GroupID": 10217,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "越战越勇lv.2",
+    "Desc": "换弹后<CZ_HighLight>2</>秒内射速提高<CZ_HighLight>5%</>。",
+    "Inscription": [
+      5021702
+    ],
+    "FrontGroupsId": [
+      10216
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1021703,
+    "GroupID": 10217,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "越战越勇lv.3",
+    "Desc": "换弹后<CZ_HighLight>2</>秒内射速提高<CZ_HighLight>7%</>。",
+    "Inscription": [
+      5021703
+    ],
+    "FrontGroupsId": [
+      10216
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 75
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1021704,
+    "GroupID": 10217,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "越战越勇lv.4",
+    "Desc": "换弹后<CZ_HighLight>2</>秒内射速提高<CZ_HighLight>8%</>。",
+    "Inscription": [
+      5021704
+    ],
+    "FrontGroupsId": [
+      10216
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 150
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1021705,
+    "GroupID": 10217,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "越战越勇lv.5",
+    "Desc": "换弹后<CZ_HighLight>2</>秒内射速提高<CZ_HighLight>10%</>。",
+    "Inscription": [
+      5021705
+    ],
+    "FrontGroupsId": [
+      10216
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 160
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1021706,
+    "GroupID": 10217,
+    "Level": 6,
+    "DisplayMaxLevel": 3,
+    "Name": "越战越勇lv.6",
+    "Desc": "换弹后<CZ_HighLight>2</>秒内射速提高<CZ_HighLight>11%</>。",
+    "Inscription": [
+      5021706
+    ],
+    "FrontGroupsId": [
+      10216
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 175
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1021707,
+    "GroupID": 10217,
+    "Level": 7,
+    "DisplayMaxLevel": 3,
+    "Name": "越战越勇lv.7",
+    "Desc": "换弹后<CZ_HighLight>2</>秒内射速提高<CZ_HighLight>15%</>。",
+    "Inscription": [
+      5021707
+    ],
+    "FrontGroupsId": [
+      10216
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 250
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1021708,
+    "GroupID": 10217,
+    "Level": 8,
+    "DisplayMaxLevel": 3,
+    "Name": "越战越勇lv.8",
+    "Desc": "换弹后<CZ_HighLight>2</>秒内射速提高<CZ_HighLight>16%</>。",
+    "Inscription": [
+      5021708
+    ],
+    "FrontGroupsId": [
+      10216
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 275
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1021709,
+    "GroupID": 10217,
+    "Level": 9,
+    "DisplayMaxLevel": 3,
+    "Name": "越战越勇lv.9",
+    "Desc": "换弹后<CZ_HighLight>2</>秒内射速提高<CZ_HighLight>17%</>。",
+    "Inscription": [
+      5021709
+    ],
+    "FrontGroupsId": [
+      10216
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1021710,
+    "GroupID": 10217,
+    "Level": 10,
+    "DisplayMaxLevel": 3,
+    "Name": "越战越勇lv.10",
+    "Desc": "换弹后<CZ_HighLight>2</>秒内射速提高<CZ_HighLight>20%</>。",
+    "Inscription": [
+      5021710
+    ],
+    "FrontGroupsId": [
+      10216
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 400
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sszfcxglts_special.Bat_sszfcxglts_special"
+  },
+  {
+    "ID": 1021801,
+    "GroupID": 10218,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "锦上添花lv.1",
+    "Desc": "命中瘫痪状态的敌人伤害提高<CZ_HighLight>5%</>。",
+    "Inscription": [
+      5021801
+    ],
+    "FrontGroupsId": [
+      10215
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 50
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1021802,
+    "GroupID": 10218,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "锦上添花lv.2",
+    "Desc": "命中瘫痪状态的敌人伤害提高<CZ_HighLight>6%</>。",
+    "Inscription": [
+      5021802
+    ],
+    "FrontGroupsId": [
+      10215
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1021803,
+    "GroupID": 10218,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "锦上添花lv.3",
+    "Desc": "命中瘫痪状态的敌人伤害提高<CZ_HighLight>7%</>。",
+    "Inscription": [
+      5021803
+    ],
+    "FrontGroupsId": [
+      10215
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 75
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1021804,
+    "GroupID": 10218,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "锦上添花lv.4",
+    "Desc": "命中瘫痪状态的敌人伤害提高<CZ_HighLight>10%</>。",
+    "Inscription": [
+      5021804
+    ],
+    "FrontGroupsId": [
+      10215
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 150
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1021805,
+    "GroupID": 10218,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "锦上添花lv.5",
+    "Desc": "命中瘫痪状态的敌人伤害提高<CZ_HighLight>11%</>。",
+    "Inscription": [
+      5021805
+    ],
+    "FrontGroupsId": [
+      10215
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 160
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1021806,
+    "GroupID": 10218,
+    "Level": 6,
+    "DisplayMaxLevel": 3,
+    "Name": "锦上添花lv.6",
+    "Desc": "命中瘫痪状态的敌人伤害提高<CZ_HighLight>12%</>。",
+    "Inscription": [
+      5021806
+    ],
+    "FrontGroupsId": [
+      10215
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 175
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1021807,
+    "GroupID": 10218,
+    "Level": 7,
+    "DisplayMaxLevel": 3,
+    "Name": "锦上添花lv.7",
+    "Desc": "命中瘫痪状态的敌人伤害提高<CZ_HighLight>15%</>。",
+    "Inscription": [
+      5021807
+    ],
+    "FrontGroupsId": [
+      10215
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 250
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1021808,
+    "GroupID": 10218,
+    "Level": 8,
+    "DisplayMaxLevel": 3,
+    "Name": "锦上添花lv.8",
+    "Desc": "命中瘫痪状态的敌人伤害提高<CZ_HighLight>16%</>。",
+    "Inscription": [
+      5021808
+    ],
+    "FrontGroupsId": [
+      10215
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 275
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1021809,
+    "GroupID": 10218,
+    "Level": 9,
+    "DisplayMaxLevel": 3,
+    "Name": "锦上添花lv.9",
+    "Desc": "命中瘫痪状态的敌人伤害提高<CZ_HighLight>17%</>。",
+    "Inscription": [
+      5021809
+    ],
+    "FrontGroupsId": [
+      10215
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1021810,
+    "GroupID": 10218,
+    "Level": 10,
+    "DisplayMaxLevel": 3,
+    "Name": "锦上添花lv.10",
+    "Desc": "命中瘫痪状态的敌人伤害提高<CZ_HighLight>20%</>。",
+    "Inscription": [
+      5021810
+    ],
+    "FrontGroupsId": [
+      10215
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 400
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqdgwzcdrdshts_attack.Bat_wqdgwzcdrdshts_attack"
+  },
+  {
+    "ID": 1021901,
+    "GroupID": 10219,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "法则之王lv.1 （同类权限只会生效一次）",
+    "Desc": "根据已获得的权限数量，伤害提升<CZ_HighLight>8%</>",
+    "Inscription": [
+      5021901
+    ],
+    "FrontGroupsId": [
+      10218
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 60
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnccsxzj_attack.Bat_ejnccsxzj_attack"
+  },
+  {
+    "ID": 1021902,
+    "GroupID": 10219,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "法则之王lv.2 （同类权限只会生效一次）",
+    "Desc": "根据已获得的权限数量，伤害提升<CZ_HighLight>8.8%</>",
+    "Inscription": [
+      5021902
+    ],
+    "FrontGroupsId": [
+      10218
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 72
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnccsxzj_attack.Bat_ejnccsxzj_attack"
+  },
+  {
+    "ID": 1021903,
+    "GroupID": 10219,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "法则之王lv.3 （同类权限只会生效一次）",
+    "Desc": "根据已获得的权限数量，伤害提升<CZ_HighLight>10%</>",
+    "Inscription": [
+      5021903
+    ],
+    "FrontGroupsId": [
+      10218
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 90
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnccsxzj_attack.Bat_ejnccsxzj_attack"
+  },
+  {
+    "ID": 1021904,
+    "GroupID": 10219,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "法则之王lv.4 （同类权限只会生效一次）",
+    "Desc": "根据已获得的权限数量，伤害提升<CZ_HighLight>12%</>",
+    "Inscription": [
+      5021904
+    ],
+    "FrontGroupsId": [
+      10218
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 180
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnccsxzj_attack.Bat_ejnccsxzj_attack"
+  },
+  {
+    "ID": 1021905,
+    "GroupID": 10219,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "法则之王lv.5 （同类权限只会生效一次）",
+    "Desc": "根据已获得的权限数量，伤害提升<CZ_HighLight>12.8%</>",
+    "Inscription": [
+      5021905
+    ],
+    "FrontGroupsId": [
+      10218
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 192
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnccsxzj_attack.Bat_ejnccsxzj_attack"
+  },
+  {
+    "ID": 1021906,
+    "GroupID": 10219,
+    "Level": 6,
+    "DisplayMaxLevel": 3,
+    "Name": "法则之王lv.6 （同类权限只会生效一次）",
+    "Desc": "根据已获得的权限数量，伤害提升<CZ_HighLight>14%</>",
+    "Inscription": [
+      5021906
+    ],
+    "FrontGroupsId": [
+      10218
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 210
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnccsxzj_attack.Bat_ejnccsxzj_attack"
+  },
+  {
+    "ID": 1021907,
+    "GroupID": 10219,
+    "Level": 7,
+    "DisplayMaxLevel": 3,
+    "Name": "法则之王lv.7 （同类权限只会生效一次）",
+    "Desc": "根据已获得的权限数量，伤害提升<CZ_HighLight>16%</>",
+    "Inscription": [
+      5021907
+    ],
+    "FrontGroupsId": [
+      10218
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnccsxzj_attack.Bat_ejnccsxzj_attack"
+  },
+  {
+    "ID": 1021908,
+    "GroupID": 10219,
+    "Level": 8,
+    "DisplayMaxLevel": 3,
+    "Name": "法则之王lv.8 （同类权限只会生效一次）",
+    "Desc": "根据已获得的权限数量，伤害提升<CZ_HighLight>16.8%</>",
+    "Inscription": [
+      5021908
+    ],
+    "FrontGroupsId": [
+      10218
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 330
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnccsxzj_attack.Bat_ejnccsxzj_attack"
+  },
+  {
+    "ID": 1021909,
+    "GroupID": 10219,
+    "Level": 9,
+    "DisplayMaxLevel": 3,
+    "Name": "法则之王lv.9 （同类权限只会生效一次）",
+    "Desc": "根据已获得的权限数量，伤害提升<CZ_HighLight>18%</>",
+    "Inscription": [
+      5021909
+    ],
+    "FrontGroupsId": [
+      10218
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 360
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnccsxzj_attack.Bat_ejnccsxzj_attack"
+  },
+  {
+    "ID": 1021910,
+    "GroupID": 10219,
+    "Level": 10,
+    "DisplayMaxLevel": 3,
+    "Name": "法则之王lv.10 （同类权限只会生效一次）",
+    "Desc": "根据已获得的权限数量，伤害提升<CZ_HighLight>20%</>",
+    "Inscription": [
+      5021910
+    ],
+    "FrontGroupsId": [
+      10218
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 2,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 480
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_ejnccsxzj_attack.Bat_ejnccsxzj_attack"
+  },
+  {
+    "ID": 1031001,
+    "GroupID": 10310,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "皮毛小伤lv.1",
+    "Desc": "技能击败敌人后，<CZ_HighLight>3</>秒内伤害减免<CZ_HighLight>4%</>。",
+    "Inscription": [
+      5031101
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 100
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sdsjjs_resource.Bat_sdsjjs_resource"
+  },
+  {
+    "ID": 1031002,
+    "GroupID": 10310,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "皮毛小伤lv.2",
+    "Desc": "技能击败敌人后，<CZ_HighLight>3</>秒内伤害减免<CZ_HighLight>5%</>。",
+    "Inscription": [
+      5031102
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 200
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sdsjjs_resource.Bat_sdsjjs_resource"
+  },
+  {
+    "ID": 1031003,
+    "GroupID": 10310,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "皮毛小伤lv.3",
+    "Desc": "技能击败敌人后，<CZ_HighLight>3</>秒内伤害减免<CZ_HighLight>7%</>。",
+    "Inscription": [
+      5031103
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sdsjjs_resource.Bat_sdsjjs_resource"
+  },
+  {
+    "ID": 1031004,
+    "GroupID": 10310,
+    "Level": 4,
+    "DisplayMaxLevel": 3,
+    "Name": "皮毛小伤lv.4",
+    "Desc": "技能击败敌人后，<CZ_HighLight>3</>秒内伤害减免<CZ_HighLight>8%</>。",
+    "Inscription": [
+      5031104
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 400
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sdsjjs_resource.Bat_sdsjjs_resource"
+  },
+  {
+    "ID": 1031005,
+    "GroupID": 10310,
+    "Level": 5,
+    "DisplayMaxLevel": 3,
+    "Name": "皮毛小伤lv.5",
+    "Desc": "技能击败敌人后，<CZ_HighLight>3</>秒内伤害减免<CZ_HighLight>10%</>。",
+    "Inscription": [
+      5031105
+    ],
+    "FrontGroupsId": [
+      10305
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 500
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_sdsjjs_resource.Bat_sdsjjs_resource"
+  },
+  {
+    "ID": 1031101,
+    "GroupID": 10311,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "疾速飞驰lv.1",
+    "Desc": "护盾值为<CZ_HighLight>0</>时，移动速度在<CZ_HighLight>3</>秒内提升<CZ_HighLight>2%</>（冷却时间20秒）。",
+    "Inscription": [
+      5031201
+    ],
+    "FrontGroupsId": [
+      10310
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 240
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqshzj_attack.Bat_wqshzj_attack"
+  },
+  {
+    "ID": 1031102,
+    "GroupID": 10311,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "疾速飞驰lv.2",
+    "Desc": "护盾值为<CZ_HighLight>0</>时，移动速度在<CZ_HighLight>3</>秒内提升<CZ_HighLight>4%</>（冷却时间20秒）。",
+    "Inscription": [
+      5031202
+    ],
+    "FrontGroupsId": [
+      10310
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 560
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqshzj_attack.Bat_wqshzj_attack"
+  },
+  {
+    "ID": 1031103,
+    "GroupID": 10311,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "疾速飞驰lv.3",
+    "Desc": "护盾值为<CZ_HighLight>0</>时，移动速度在<CZ_HighLight>3</>秒内提升<CZ_HighLight>6%</>（冷却时间20秒）。",
+    "Inscription": [
+      5031203
+    ],
+    "FrontGroupsId": [
+      10310
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 3,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 1200
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_wqshzj_attack.Bat_wqshzj_attack"
+  },
+  {
+    "ID": 1011301,
+    "GroupID": 10113,
+    "Level": 1,
+    "DisplayMaxLevel": 3,
+    "Name": "秘宝富翁lv.1",
+    "Desc": "当收集到一整套秘宝时，立即获得<CZ_HighLight>400</>金币（本场战斗只会触发<CZ_HighLight>1</>次）。",
+    "Inscription": [
+      5011401
+    ],
+    "FrontGroupsId": [
+      10109
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 240
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsbossdgbjcsl_resource.Bat_jsbossdgbjcsl_resource"
+  },
+  {
+    "ID": 1011302,
+    "GroupID": 10113,
+    "Level": 2,
+    "DisplayMaxLevel": 3,
+    "Name": "秘宝富翁lv.2",
+    "Desc": "当收集到一整套秘宝时，立即获得<CZ_HighLight>500</>金币（本场战斗只会触发<CZ_HighLight>1</>次）。",
+    "Inscription": [
+      5011402
+    ],
+    "FrontGroupsId": [
+      10109
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 560
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsbossdgbjcsl_resource.Bat_jsbossdgbjcsl_resource"
+  },
+  {
+    "ID": 1011303,
+    "GroupID": 10113,
+    "Level": 3,
+    "DisplayMaxLevel": 3,
+    "Name": "秘宝富翁lv.3",
+    "Desc": "当收集到一整套秘宝时，立即获得<CZ_HighLight>700</>金币（本场战斗只会触发<CZ_HighLight>1</>次）。",
+    "Inscription": [
+      5011403
+    ],
+    "FrontGroupsId": [
+      10109
+    ],
+    "FrontGroupsLevel": 3,
+    "Direction": 1,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 1200
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jsbossdgbjcsl_resource.Bat_jsbossdgbjcsl_resource"
+  },
+  {
+    "ID": 1040101,
+    "GroupID": 10401,
+    "Level": 1,
+    "DisplayMaxLevel": 0,
+    "Name": "测试-初始金币增加",
+    "Desc": "玩家进入战局中初始金币提升",
+    "Inscription": [
+      5991001
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Sprite/IconTalent/Frames/Bat_csdgbzj_resource.Bat_csdgbzj_resource"
+  },
+  {
+    "ID": 1040102,
+    "GroupID": 10401,
+    "Level": 2,
+    "DisplayMaxLevel": 0,
+    "Name": "测试-初始金币增加",
+    "Desc": "玩家进入战局中初始金币提升",
+    "Inscription": [
+      5991001
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Sprite/IconTalent/Frames/Bat_csdgbzj_resource.Bat_csdgbzj_resource"
+  },
+  {
+    "ID": 1040103,
+    "GroupID": 10401,
+    "Level": 3,
+    "DisplayMaxLevel": 0,
+    "Name": "测试-初始金币增加",
+    "Desc": "玩家进入战局中初始金币提升",
+    "Inscription": [
+      5991001
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Sprite/IconTalent/Frames/Bat_csdgbzj_resource.Bat_csdgbzj_resource"
+  },
+  {
+    "ID": 1040201,
+    "GroupID": 10402,
+    "Level": 1,
+    "DisplayMaxLevel": 0,
+    "Name": "测试-锁血羁绊",
+    "Desc": "受到致命伤害时锁血",
+    "Inscription": [
+      5991007
+    ],
+    "FrontGroupsId": [
+      10401
+    ],
+    "FrontGroupsLevel": 1,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Sprite/IconTalent/Frames/Bat_csdgbzj_resource.Bat_csdgbzj_resource"
+  },
+  {
+    "ID": 1040202,
+    "GroupID": 10402,
+    "Level": 2,
+    "DisplayMaxLevel": 0,
+    "Name": "测试-锁血羁绊",
+    "Desc": "受到致命伤害时锁血",
+    "Inscription": [
+      5991007
+    ],
+    "FrontGroupsId": [
+      10401
+    ],
+    "FrontGroupsLevel": 1,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Sprite/IconTalent/Frames/Bat_csdgbzj_resource.Bat_csdgbzj_resource"
+  },
+  {
+    "ID": 1040203,
+    "GroupID": 10402,
+    "Level": 3,
+    "DisplayMaxLevel": 0,
+    "Name": "测试-锁血羁绊",
+    "Desc": "受到致命伤害时锁血",
+    "Inscription": [
+      5991007
+    ],
+    "FrontGroupsId": [
+      10401
+    ],
+    "FrontGroupsLevel": 1,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Sprite/IconTalent/Frames/Bat_csdgbzj_resource.Bat_csdgbzj_resource"
+  },
+  {
+    "ID": 1040301,
+    "GroupID": 10403,
+    "Level": 1,
+    "DisplayMaxLevel": 0,
+    "Name": "测试-双倍获得金币",
+    "Desc": "100%概率额外获得3倍金币",
+    "Inscription": [
+      5991002
+    ],
+    "FrontGroupsId": [
+      10402
+    ],
+    "FrontGroupsLevel": 1,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Sprite/IconTalent/Frames/Bat_csdgbzj_resource.Bat_csdgbzj_resource"
+  },
+  {
+    "ID": 1040302,
+    "GroupID": 10403,
+    "Level": 2,
+    "DisplayMaxLevel": 0,
+    "Name": "测试-双倍获得金币",
+    "Desc": "100%概率额外获得3倍金币",
+    "Inscription": [
+      5991002
+    ],
+    "FrontGroupsId": [
+      10402
+    ],
+    "FrontGroupsLevel": 1,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Sprite/IconTalent/Frames/Bat_csdgbzj_resource.Bat_csdgbzj_resource"
+  },
+  {
+    "ID": 1040303,
+    "GroupID": 10403,
+    "Level": 3,
+    "DisplayMaxLevel": 0,
+    "Name": "测试-双倍获得金币",
+    "Desc": "100%概率额外获得3倍金币",
+    "Inscription": [
+      5991002
+    ],
+    "FrontGroupsId": [
+      10402
+    ],
+    "FrontGroupsLevel": 1,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Sprite/IconTalent/Frames/Bat_csdgbzj_resource.Bat_csdgbzj_resource"
+  },
+  {
+    "ID": 1040401,
+    "GroupID": 10404,
+    "Level": 1,
+    "DisplayMaxLevel": 0,
+    "Name": "测试-刷新商店金币降低",
+    "Desc": "局内刷新商店价格降低50%",
+    "Inscription": [
+      5991003
+    ],
+    "FrontGroupsId": [
+      10403
+    ],
+    "FrontGroupsLevel": 1,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Sprite/IconTalent/Frames/Bat_csdgbzj_resource.Bat_csdgbzj_resource"
+  },
+  {
+    "ID": 1040402,
+    "GroupID": 10404,
+    "Level": 2,
+    "DisplayMaxLevel": 0,
+    "Name": "测试-刷新商店金币降低",
+    "Desc": "局内刷新商店价格降低50%",
+    "Inscription": [
+      5991003
+    ],
+    "FrontGroupsId": [
+      10403
+    ],
+    "FrontGroupsLevel": 1,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Sprite/IconTalent/Frames/Bat_csdgbzj_resource.Bat_csdgbzj_resource"
+  },
+  {
+    "ID": 1040403,
+    "GroupID": 10404,
+    "Level": 3,
+    "DisplayMaxLevel": 0,
+    "Name": "测试-刷新商店金币降低",
+    "Desc": "局内刷新商店价格降低50%",
+    "Inscription": [
+      5991003
+    ],
+    "FrontGroupsId": [
+      10403
+    ],
+    "FrontGroupsLevel": 1,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 300
+      }
+    ],
+    "TalentType": 1,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Sprite/IconTalent/Frames/Bat_csdgbzj_resource.Bat_csdgbzj_resource"
+  },
+  {
+    "ID": 1110101,
+    "GroupID": 11101,
+    "Level": 1,
+    "DisplayMaxLevel": 0,
+    "Name": "能量扩容",
+    "Desc": "<keyname id=\\\"3\\\"></>主要技能储存上限<CZ_HighLight>+1</>。",
+    "Inscription": [
+      5021201
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 600
+      }
+    ],
+    "TalentType": 3,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jzdysbhsw_special.Bat_jzdysbhsw_special"
+  },
+  {
+    "ID": 1110201,
+    "GroupID": 11102,
+    "Level": 1,
+    "DisplayMaxLevel": 0,
+    "Name": "背水一战",
+    "Desc": "体力低于<CZ_HighLight>20%</>时，每击败<CZ_HighLight>3</>个敌人会恢复<CZ_HighLight>1</>点体力。",
+    "Inscription": [
+      5031001
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 3000
+      }
+    ],
+    "TalentType": 3,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_jqwjdsjjs_survival.Bat_jqwjdsjjs_survival"
+  },
+  {
+    "ID": 1110301,
+    "GroupID": 11103,
+    "Level": 1,
+    "DisplayMaxLevel": 0,
+    "Name": "法则庇佑",
+    "Desc": "稀有以上品质权限出现概率提升<CZ_HighLight>10%</>。",
+    "Inscription": [
+      5110103
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 6000
+      }
+    ],
+    "TalentType": 3,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_gjlts_attack.Bat_gjlts_attack"
+  },
+  {
+    "ID": 1110401,
+    "GroupID": 11104,
+    "Level": 1,
+    "DisplayMaxLevel": 0,
+    "Name": "最佳拍档",
+    "Desc": "救助队友时不会被击败，体力值最低降为<CZ_HighLight>1</>。",
+    "Inscription": [
+      5110104
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 15000
+      }
+    ],
+    "TalentType": 3,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_szmshssx_survival.Bat_szmshssx_survival"
+  },
+  {
+    "ID": 1110501,
+    "GroupID": 11105,
+    "Level": 1,
+    "DisplayMaxLevel": 0,
+    "Name": "数据回涌",
+    "Desc": "每秒回复<CZ_HighLight>10%</>主要技能使用次数。",
+    "Inscription": [
+      5110105
+    ],
+    "FrontGroupsId": [],
+    "FrontGroupsLevel": 0,
+    "Direction": 0,
+    "RoleLevel": 0,
+    "ArrCost": [
+      {
+        "key": 99994,
+        "value": 35000
+      }
+    ],
+    "TalentType": 3,
+    "Url": "",
+    "ModId": 0,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconTalent/Frames/Bat_cjncdjs_attack.Bat_cjncdjs_attack"
+  }
+]

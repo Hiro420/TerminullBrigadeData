@@ -1,4 +1,5 @@
 local WBP_ModViewTip_C = UnLua.Class()
+
 function WBP_ModViewTip_C:InitModTipInfo(ModInfo, CurrentModLevel, ModLevelList)
   if not ModInfo then
     print("URG_InscriptionDataAsset is Nullptr")
@@ -22,4 +23,5 @@ function WBP_ModViewTip_C:InitModTipInfo(ModInfo, CurrentModLevel, ModLevelList)
   end
   UpdateVisibility(self.VerticalBox_ModLevel, Count > 0)
 end
+
 return WBP_ModViewTip_C

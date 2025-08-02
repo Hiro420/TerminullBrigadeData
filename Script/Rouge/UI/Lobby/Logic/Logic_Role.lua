@@ -29,6 +29,7 @@ LogicRole.BGMesh = {
   RoleMain = "/Game/Rouge/UI/Texture/Bg/Textures/Role_Bg_js_01.Role_Bg_js_01",
   HeroTalent = "/Game/Rouge/UI/Texture/Bg/Textures/RolePower_bg_01.RolePower_bg_01"
 }
+
 function LogicRole.Init(IsBattle)
   if LogicRole.IsInit then
     LogicRole.InitAllRoleLightActor()
@@ -52,6 +53,7 @@ function LogicRole.Init(IsBattle)
   LogicRole.InitAllRoleLightActor()
   LogicRole.DealWithDataTable()
 end
+
 function LogicRole.InitAllRoleLightActor()
   local LightActorClass = UE.UClass.Load("/Game/Rouge/Gameplay/Actor/RoleMain/BP_RoleLight.BP_RoleLight_C")
   local AllLightActors = UE.UGameplayStatics.GetAllActorsOfClass(GameInstance, LightActorClass)
@@ -59,6 +61,7 @@ function LogicRole.InitAllRoleLightActor()
     LogicRole.AllLightActors[SingleLightActor.HeroTagName] = SingleLightActor
   end
 end
+
 function LogicRole.InitFetterHero()
   local MainFetterHeroList = UE.UGameplayStatics.GetAllActorsWithTag(GameInstance, "MainFetterHero", nil)
   for i, SingleMainFetterHero in iterator(MainFetterHeroList) do
@@ -79,6 +82,7 @@ function LogicRole.InitFetterHero()
     end
   end
 end
+
 function LogicRole.GetHeroSkillInfo(SkillId)
   local HeroSkillTable = LuaTableMgr.GetLuaTableByName(TableNames.TBHeroSkill)
   if not HeroSkillTable then
@@ -91,6 +95,7 @@ function LogicRole.GetHeroSkillInfo(SkillId)
   end
   return nil
 end
+
 function LogicRole.DealWithDataTable()
   local HeroStarTable = LuaTableMgr.GetLuaTableByName(TableNames.TBHeroStar)
   local HeroSkillTable = LuaTableMgr.GetLuaTableByName(TableNames.TBHeroSkill)
@@ -115,11 +120,13 @@ function LogicRole.DealWithDataTable()
     end
   end
 end
+
 function LogicRole.InitMainFetterHeroMesh(HeroId)
   if LogicRole.MainFetterHero then
     LogicRole.MainFetterHero:ChangeBodyMesh(HeroId)
   end
 end
+
 function LogicRole.InitFetterHeroesMesh(HeroId)
   local FetterHeroInfo = DataMgr.GetFetterHeroInfoById(HeroId)
   for SlotId, SingleHero in pairs(LogicRole.FetterList) do
@@ -137,6 +144,7 @@ function LogicRole.InitFetterHeroesMesh(HeroId)
     end
   end
 end
+
 function LogicRole.GetCurHeroId()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if UE.RGUtil.IsUObjectValid(Character) then
@@ -144,6 +152,7 @@ function LogicRole.GetCurHeroId()
   end
   return LogicSettlement:GetOrInitCurHeroId()
 end
+
 function LogicRole.HideAllHeroLight()
   local AllLightActors = LogicRole.AllLightActors
   if not AllLightActors or next(AllLightActors) == nil then
@@ -158,6 +167,7 @@ function LogicRole.HideAllHeroLight()
     end
   end
 end
+
 function LogicRole.EditorChangeHeroLight(LightName)
   local AllLightActors = LogicRole.AllLightActors
   if not AllLightActors then
@@ -179,6 +189,7 @@ function LogicRole.EditorChangeHeroLight(LightName)
     end
   end
 end
+
 function LogicRole.ShowOrHideRoleMainHero(IsShow)
   if not LogicRole.RoleMainActor or not LogicRole.RoleMainActor:IsValid() then
     local RoleActorList = UE.UGameplayStatics.GetAllActorsWithTag(GameInstance, "RoleMainHero", nil)
@@ -196,6 +207,7 @@ function LogicRole.ShowOrHideRoleMainHero(IsShow)
     LogicRole.RoleMainActor:SetHiddenInGame(true)
   end
 end
+
 function LogicRole.ChangeRoleMainTransform(RowName)
   local result, row = GetRowData(DT.DT_RoleMainTransform, RowName)
   if result then
@@ -213,6 +225,7 @@ function LogicRole.ChangeRoleMainTransform(RowName)
     end
   end
 end
+
 function LogicRole.ChangeRoleSkyLight(IsRole)
   local RoleSkyLightList = UE.UGameplayStatics.GetAllActorsWithTag(GameInstance, "RoleSkyLight", nil)
   local LobbySkyLightList = UE.UGameplayStatics.GetAllActorsWithTag(GameInstance, "LobbySkyLight", nil)
@@ -223,6 +236,7 @@ function LogicRole.ChangeRoleSkyLight(IsRole)
     SingleLobbySkyLight:SetActorHiddenInGame(IsRole)
   end
 end
+
 function LogicRole.ChangeBGMesh(BGName)
   local RoleBGList = UE.UGameplayStatics.GetAllActorsWithTag(GameInstance, "RoleBG", nil)
   local RoleBG
@@ -239,9 +253,11 @@ function LogicRole.ChangeBGMesh(BGName)
     MaterialInstance:SetTextureParameterValue("Color", TargetTexture)
   end
 end
+
 function LogicRole.GetHeroStarInfo(HeroId)
   return LogicRole.HeroStarTable[HeroId]
 end
+
 function LogicRole.GetMaxHeroStar(HeroId)
   local HeroStarInfo = LogicRole.GetHeroStarInfo(HeroId)
   local MaxStar = 1
@@ -254,12 +270,14 @@ function LogicRole.GetMaxHeroStar(HeroId)
   end
   return MaxStar
 end
+
 function LogicRole.GetCharacterTableRow(HeroId)
   local RowInfo
   local CharacterTable = LuaTableMgr.GetLuaTableByName(TableNames.TBHeroMonster)
   RowInfo = CharacterTable[HeroId]
   return RowInfo
 end
+
 function LogicRole.CheckIsHeroMonster(ResourceId)
   local ResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   if ResourceTable and ResourceTable[ResourceId] then
@@ -267,6 +285,7 @@ function LogicRole.CheckIsHeroMonster(ResourceId)
   end
   return false
 end
+
 function LogicRole.GetFetterSkillGroupIdByHeroId(HeroId)
   local HeroRowInfo = LogicRole.GetCharacterTableRow(HeroId)
   if not HeroRowInfo then
@@ -280,6 +299,7 @@ function LogicRole.GetFetterSkillGroupIdByHeroId(HeroId)
   end
   return 0
 end
+
 function LogicRole.GetAllCanSelectCharacterList()
   local List = {}
   local CharacterTable = LuaTableMgr.GetLuaTableByName(TableNames.TBHeroMonster)
@@ -290,13 +310,16 @@ function LogicRole.GetAllCanSelectCharacterList()
   end
   return List
 end
+
 function LogicRole.CheckCharacterUnlock(CharacterId)
   return DataMgr.IsOwnHero(CharacterId)
 end
+
 function LogicRole.GetSkillTableRow(SkillGroupId)
   local RowInfo = LogicRole.HeroSkillTable[SkillGroupId]
   return RowInfo
 end
+
 function LogicRole.GetAllFetterSlotIds()
   local List = {}
   local FetterSlotTable = LuaTableMgr.GetLuaTableByName(TableNames.TBFetterSlot)
@@ -305,15 +328,18 @@ function LogicRole.GetAllFetterSlotIds()
   end
   return List
 end
+
 function LogicRole.GetFetterSlotInfoById(SlotId)
   local FetterSlotTable = LuaTableMgr.GetLuaTableByName(TableNames.TBFetterSlot)
   return FetterSlotTable[SlotId]
 end
+
 function LogicRole.IsSlotUnlock(SlotId)
   local HeroInfo = DataMgr.GetMyHeroInfo()
   local SlotStatus = HeroInfo.slots[SlotId]
   return SlotStatus and SlotStatus == TableEnums.ENUMSlotStatus.Open or false
 end
+
 function LogicRole.GetCurSlotHeroId(MainHeroId, SlotId)
   local FetterHeroInfo = DataMgr.GetFetterHeroInfoById(MainHeroId)
   local SlotHeroId = 0
@@ -326,6 +352,7 @@ function LogicRole.GetCurSlotHeroId(MainHeroId, SlotId)
   end
   return SlotHeroId
 end
+
 function LogicRole.RequestMyHeroInfoToServer(Callback)
   local HeroPath = "hero/getmyheroinfo?type=0"
   HttpCommunication.RequestByGet(HeroPath, {
@@ -359,6 +386,7 @@ function LogicRole.RequestMyHeroInfoToServer(Callback)
     end
   })
 end
+
 function LogicRole.RequestEquipHeroToServer(HeroId, Callback)
   HttpCommunication.Request("hero/equiphero", {heroId = HeroId}, {
     GameInstance,
@@ -375,6 +403,7 @@ function LogicRole.RequestEquipHeroToServer(HeroId, Callback)
     end
   })
 end
+
 function LogicRole.RequestGetHeroFetterInfoToServer(HeroId, SuccFuncList)
   HttpCommunication.Request("hero/getherofetterinfo", {heroId = HeroId}, {
     GameInstance,
@@ -393,6 +422,7 @@ function LogicRole.RequestGetHeroFetterInfoToServer(HeroId, SuccFuncList)
     end
   })
 end
+
 function LogicRole.RequestEquipFetterHeroToServer(SlotId, EquipHeroId, MainHeroId)
   local Param = {
     heroId = MainHeroId,
@@ -411,9 +441,11 @@ function LogicRole.RequestEquipFetterHeroToServer(SlotId, EquipHeroId, MainHeroI
     end
   })
 end
+
 function LogicRole.SetCurSelectRoleId(InHeroId)
   LogicRole.CurSelectHeroId = InHeroId
 end
+
 function LogicRole.ShowOrHideRoleChangeList(IsShow, SelectHeroId, AppointWidget)
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if UIManager then
@@ -441,6 +473,7 @@ function LogicRole.ShowOrHideRoleChangeList(IsShow, SelectHeroId, AppointWidget)
     end
   end
 end
+
 function LogicRole.GetSkinSequence(SkinId)
   local result, row = GetRowData(DT.DT_HeirloomSkin, tostring(SkinId))
   if result then
@@ -454,12 +487,14 @@ function LogicRole.GetSkinSequence(SkinId)
     return nil
   end
 end
+
 function LogicRole.GetSequenceActor()
   local OutActors = UE.UGameplayStatics.GetAllActorsWithTag(GameInstance, "SequencePos"):ToTable()
   if OutActors[1] then
     return OutActors[1]
   end
 end
+
 function LogicRole.AddLevel(FileNamePart, SoftPtr, ShowLevelSequence)
   if LogicRole.LevelBgMapData.LevelBgMap[FileNamePart] then
     if LogicRole.LevelBgMapData.LevelBgMap[FileNamePart].bShouldBeVisible == false then
@@ -480,6 +515,7 @@ function LogicRole.AddLevel(FileNamePart, SoftPtr, ShowLevelSequence)
     LogicRole.LevelBgMapData.LevelBgMap[FileNamePart] = UE.ULevelToolBPLibrary.ExLoadStreamLevelByObj(GameInstance, SoftPtr, transform)
   end
 end
+
 function LogicRole.ShowLevelForSequence(Show)
   local viewModel = UIModelMgr:Get("SkinViewModel")
   if not viewModel or not viewModel.ShowSeq then
@@ -500,6 +536,7 @@ function LogicRole.ShowLevelForSequence(Show)
     La_MetaverseCenter_START2_2:SetShouldBeVisible(Show)
   end
 end
+
 function LogicRole.GetSequenceLevel(SkinId)
   local result, row = GetRowData(DT.DT_DisplaySkin, tostring(SkinId))
   if result then
@@ -509,6 +546,7 @@ function LogicRole.GetSequenceLevel(SkinId)
   end
   return nil
 end
+
 function LogicRole.ShowOrLoadLevel(SkinId, ShowLevelSequence)
   local result, row = GetRowData(DT.DT_DisplaySkin, tostring(SkinId))
   if not LogicRole.LevelBgMapData then
@@ -566,6 +604,7 @@ function LogicRole.ShowOrLoadLevel(SkinId, ShowLevelSequence)
     LogicRole.ShowLevelForSequence(true)
   end
 end
+
 function LogicRole.HideAndUnloadAllBgStreamLevel()
   if LogicRole.LevelBgMapData.LevelBgMap then
     for i, v in ipairs(LogicRole.LevelBgMapData.LevelBgAry) do
@@ -579,6 +618,7 @@ function LogicRole.HideAndUnloadAllBgStreamLevel()
   LogicRole.LevelBgMapData.LevelBgAry = {}
   LogicRole.ShowLevelForSequence(true)
 end
+
 function LogicRole.HideCurSkinLightMap()
   local CurHeroSkinLightMap = LogicRole.HeroSkinLightMapList and LogicRole.HeroSkinLightMapList[LogicRole.CurHeroSkinLightMapName]
   if not CurHeroSkinLightMap or not CurHeroSkinLightMap:IsValid() then
@@ -591,6 +631,7 @@ function LogicRole.HideCurSkinLightMap()
     LogicRole.CurHeroSkinLightMapName = ""
   end
 end
+
 function LogicRole.ShowSkinLightMap(SkinId)
   LogicRole.HideCurSkinLightMap()
   local Result, RowInfo = GetRowData(DT.DT_DisplaySkin, tostring(SkinId))
@@ -622,12 +663,14 @@ function LogicRole.ShowSkinLightMap(SkinId)
   end
   LogicRole.CurHeroSkinLightMapName = LevelPath
 end
+
 function LogicRole.IsInRoleMain()
   if LogicRole.IsRoleMainShow or LogicRole.IsHeroTalentShow then
     return true
   end
   return false
 end
+
 function LogicRole.GetRoleChangeList()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if not UIManager then
@@ -637,6 +680,7 @@ function LogicRole.GetRoleChangeList()
   local Widget = UIManager:K2_GetUI(RoleChangeList, nil)
   return Widget
 end
+
 function LogicRole.EquipFetterHeroByPos(SlotId, MainHeroId, SoulCoreId)
   if not LogicRole.IsSlotUnlock(SlotId) then
     return
@@ -659,6 +703,7 @@ function LogicRole.EquipFetterHeroByPos(SlotId, MainHeroId, SoulCoreId)
     end
   })
 end
+
 function LogicRole.UnlockFetterSlot(SlotId)
   HttpCommunication.Request("hero/unlockfetterslot", {slot = SlotId}, {
     GameInstance,
@@ -671,10 +716,12 @@ function LogicRole.UnlockFetterSlot(SlotId)
     end
   })
 end
+
 function LogicRole.UpdateRole(CurHeroId, SkinChangedCallback)
   LogicRole.InitModelMesh(CurHeroId, SkinChangedCallback)
   LogicRole.ChangeRoleSkyLight(true)
 end
+
 function LogicRole.UpdateUICaptureBgActor(bIsShow)
   if UE.RGUtil.IsUObjectValid(LogicRole.Capture) then
     if bIsShow then
@@ -705,6 +752,7 @@ function LogicRole.UpdateUICaptureBgActor(bIsShow)
     end
   end
 end
+
 function LogicRole.UpdatePreCharacterLevelVis(bIsVis, SkinChangedCallback)
   if bIsVis then
     local succ = false
@@ -745,12 +793,14 @@ function LogicRole.UpdatePreCharacterLevelVis(bIsVis, SkinChangedCallback)
     end
   end
 end
+
 function LogicRole.SetLevelStreamVis(LevelName, bVisible)
   local TargetStreamLevel = UE.UGameplayStatics.GetStreamingLevel(GameInstance, LevelName)
   if TargetStreamLevel and TargetStreamLevel.bShouldBeVisible ~= bVisible then
     TargetStreamLevel:SetShouldBeVisible(bVisible)
   end
 end
+
 function LogicRole.InitModelMesh(HeroId, SkinChangedCallback)
   if UE.RGUtil.IsUObjectValid(LogicRole.LobbyRoleActor) then
     if SkinChangedCallback then
@@ -781,6 +831,7 @@ function LogicRole.InitModelMesh(HeroId, SkinChangedCallback)
     end
   end
 end
+
 function LogicRole.GetRoleMainActor()
   if not LogicRole.RoleMainActor or not LogicRole.RoleMainActor:IsValid() then
     local AllActors = UE.UGameplayStatics.GetAllActorsWithTag(GameInstance, "RoleMainHero", nil)
@@ -791,6 +842,7 @@ function LogicRole.GetRoleMainActor()
   end
   return LogicRole.RoleMainActor
 end
+
 function LogicRole.PlayCharacterActionByHeroSkinId(TargetActor, CharacterActionRowId)
   local MontageList = {}
   local Result, CharacterActionRowInfo = GetRowData(DT.DT_CharacterAction, CharacterActionRowId)
@@ -802,6 +854,7 @@ function LogicRole.PlayCharacterActionByHeroSkinId(TargetActor, CharacterActionR
     TargetActor:PlayImprovisation(MontageList)
   end
 end
+
 function LogicRole.UpdateCapturePos(Index)
   local Pos = RoleCaptureRolePos[Index]
   local CameraList = UE.TArray(UE.AActor)
@@ -813,6 +866,7 @@ function LogicRole.UpdateCapturePos(Index)
     Capture:K2_SetActorLocation(CapturePos, true, Result, true)
   end
 end
+
 function LogicRole.GetAttrInitValue(RightName, HeroId)
   local resultBasicAttrInit, rowBasicAttrInit = GetRowData(DT.DT_BasicAttributeSetInitTable, HeroId)
   if resultBasicAttrInit and rowBasicAttrInit[RightName] then
@@ -828,6 +882,7 @@ function LogicRole.GetAttrInitValue(RightName, HeroId)
   end
   return 0
 end
+
 function LogicRole.GetAttrDisplayNameList(AttributeDisplayPos)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -855,6 +910,7 @@ function LogicRole.GetAttrDisplayNameList(AttributeDisplayPos)
   end)
   return RowNameTb
 end
+
 function LogicRole.GetAttributeListNew(HeroId, AttributeDisplayPos)
   local Result, RowData = GetRowData(DT.DT_BasicAttributeSetInitTable, HeroId)
   if not Result then
@@ -1023,6 +1079,7 @@ function LogicRole.GetAttributeListNew(HeroId, AttributeDisplayPos)
   end
   return ModifyAttributeListNew, specificTb
 end
+
 function LogicRole.GetAttrValue(AttrName, HeroId, InscriptionIdList, PuzzleAttrTagToAttrData, InitValue)
   local Result, LeftName, RightName = UE.UKismetStringLibrary.Split(AttrName, ".", nil, nil)
   local Attribute = UE.URGBlueprintLibrary.MakeGameplayAttributeByName(AttrName)
@@ -1040,6 +1097,7 @@ function LogicRole.GetAttrValue(AttrName, HeroId, InscriptionIdList, PuzzleAttrT
   end
   return AttrValue
 end
+
 function LogicRole.GetSkillEInterval()
   local cls = UE.LoadClass(GA_SkillE_AutoRecoveryDefaultPath)
   if not cls then
@@ -1048,6 +1106,7 @@ function LogicRole.GetSkillEInterval()
   local skillEGA = cls:GetDefaultObject()
   return skillEGA.Interval
 end
+
 function LogicRole.GetHeroDefaultSkinId(HeroId)
   local SkinId = -1
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBHeroMonster, HeroId)
@@ -1056,6 +1115,7 @@ function LogicRole.GetHeroDefaultSkinId(HeroId)
   end
   return SkinId
 end
+
 function LogicRole.SetEffectState(Actor, SkinId, HeroID, IsShow)
   local result, rowInfo = GetRowData(DT.DT_DisplaySkin, SkinId)
   if result then
@@ -1090,6 +1150,7 @@ function LogicRole.SetEffectState(Actor, SkinId, HeroID, IsShow)
     end
   end
 end
+
 function LogicRole.GetCurUseHeroId()
   if GetCurSceneStatus() == UE.ESceneStatus.EBattle then
     local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
@@ -1104,6 +1165,7 @@ function LogicRole.GetCurUseHeroId()
     return -1
   end
 end
+
 function LogicRole.GetCurWeaponId()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if UE.RGUtil.IsUObjectValid(Character) then
@@ -1114,6 +1176,7 @@ function LogicRole.GetCurWeaponId()
   end
   return -1
 end
+
 function LogicRole.Clear()
   LogicRole.MainFetterHero = nil
   LogicRole.FetterList = {}

@@ -3,6 +3,7 @@ local MailData = require("Modules.Mail.MailData")
 local MailHandler = {}
 local ProtocolInterval = 2.0
 local MailExpiredErrorCode = 16004
+
 function MailHandler:RequestCheckToServer()
   HttpCommunication.Request("mail/check", {}, {
     GameInstance,
@@ -17,6 +18,7 @@ function MailHandler:RequestCheckToServer()
     end
   })
 end
+
 function MailHandler:RequestDeleteToServer(MailIdList)
   if MailHandler.LastRequestDeleteTime and GetCurrentUTCTimestamp() - MailHandler.LastRequestDeleteTime < ProtocolInterval then
     print("MailHandler:RequestDeleteToServer \229\164\132\228\186\142\229\143\145\233\128\129\229\141\143\232\174\174\233\151\180\233\154\148\228\184\173")
@@ -36,6 +38,7 @@ function MailHandler:RequestDeleteToServer(MailIdList)
     end
   })
 end
+
 function MailHandler:RequestGetContentToServer(MailId)
   local Path = "mail/getcontent?id=" .. MailId
   HttpCommunication.RequestByGet(Path, {
@@ -57,6 +60,7 @@ function MailHandler:RequestGetContentToServer(MailId)
     end
   })
 end
+
 function MailHandler:RequestGetMailListToServer(MailType, ReadType)
   MailType = MailType or 0
   ReadType = ReadType or 0
@@ -76,6 +80,7 @@ function MailHandler:RequestGetMailListToServer(MailType, ReadType)
     end
   })
 end
+
 function MailHandler:RequestMarkReadToServer(MailIdList)
   if MailHandler.LastRequestMarkReadTime and GetCurrentUTCTimestamp() - MailHandler.LastRequestMarkReadTime < ProtocolInterval then
     print("MailHandler:RequestMarkReadToServer \229\164\132\228\186\142\229\143\145\233\128\129\229\141\143\232\174\174\233\151\180\233\154\148\228\184\173")
@@ -95,6 +100,7 @@ function MailHandler:RequestMarkReadToServer(MailIdList)
     end
   })
 end
+
 function MailHandler:RequestReceiveAttachmentToServer(MailIdList)
   if MailHandler.LastRequestReceiveAttachmentTime and GetCurrentUTCTimestamp() - MailHandler.LastRequestReceiveAttachmentTime < ProtocolInterval then
     print("MailHandler:RequestReceiveAttachmentToServer \229\164\132\228\186\142\229\143\145\233\128\129\229\141\143\232\174\174\233\151\180\233\154\148\228\184\173")
@@ -125,6 +131,7 @@ function MailHandler:RequestReceiveAttachmentToServer(MailIdList)
       end
     })
   end
+  
   local function ShowOptionalGiftQueueWindow(optionalGiftInfos)
     if optionalGiftInfos then
       if self.OptionalGiftInfos == nil then
@@ -146,6 +153,7 @@ function MailHandler:RequestReceiveAttachmentToServer(MailIdList)
       break
     end
   end
+  
   self.OptionalGiftIdTable = {}
   local SelectNum = 0
   for index, value in ipairs(MailIdList) do
@@ -169,6 +177,7 @@ function MailHandler:RequestReceiveAttachmentToServer(MailIdList)
     OnConfirmClick()
   end
 end
+
 function MailHandler:IsOptional(ItemId)
   local TBGeneral = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   if TBGeneral[ItemId] then
@@ -176,4 +185,5 @@ function MailHandler:IsOptional(ItemId)
   end
   return false
 end
+
 return MailHandler

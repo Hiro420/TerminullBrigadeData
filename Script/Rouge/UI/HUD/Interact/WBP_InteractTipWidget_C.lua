@@ -1,4 +1,5 @@
 local WBP_InteractTipWidget_C = UnLua.Class()
+
 function WBP_InteractTipWidget_C:Construct()
   self:InitInfo()
   if self.CanInteract then
@@ -12,6 +13,7 @@ function WBP_InteractTipWidget_C:Construct()
     CommonInputSubsystem.OnInputMethodChanged:Add(self, self.BindOnInputMethodChanged)
   end
 end
+
 function WBP_InteractTipWidget_C:Destruct()
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   local CommonInputSubsystem = UE.USubsystemBlueprintLibrary.GetLocalPlayerSubsystem(PC, UE.UCommonInputSubsystem:StaticClass())
@@ -19,9 +21,11 @@ function WBP_InteractTipWidget_C:Destruct()
     CommonInputSubsystem.OnInputMethodChanged:Remove(self, self.BindOnInputMethodChanged)
   end
 end
+
 function WBP_InteractTipWidget_C:BindOnInputMethodChanged(InputType)
   self:UpdateSelfVisible()
 end
+
 function WBP_InteractTipWidget_C:UpdateSelfVisible()
   if not self.bEnableAutoControlVisible then
     return
@@ -35,6 +39,7 @@ function WBP_InteractTipWidget_C:UpdateSelfVisible()
     self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   end
 end
+
 function WBP_InteractTipWidget_C:CanTipWidgetShowByInputType()
   if self.bOnlyUseOnGamePad then
     local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
@@ -50,15 +55,19 @@ function WBP_InteractTipWidget_C:CanTipWidgetShowByInputType()
   end
   return true
 end
+
 function WBP_InteractTipWidget_C:BindOnMainButtonClicked()
   self.OnMainButtonClicked:Broadcast()
 end
+
 function WBP_InteractTipWidget_C:BindOnMainButtonHovered()
   self.WBP_CustomKeyName:PlayHoverOrUnhoverAnim(true)
 end
+
 function WBP_InteractTipWidget_C:BindOnMainButtonUnhovered()
   self.WBP_CustomKeyName:PlayHoverOrUnhoverAnim(false)
 end
+
 function WBP_InteractTipWidget_C:BindInteractAndClickEvent(Obj, Callback, KeyName)
   self.OnMainButtonClicked:Add(Obj, Callback)
   local keyName = KeyName
@@ -67,6 +76,7 @@ function WBP_InteractTipWidget_C:BindInteractAndClickEvent(Obj, Callback, KeyNam
     ListenForInputAction(keyName, UE.EInputEvent.IE_Pressed, true, {Obj, Callback})
   end
 end
+
 function WBP_InteractTipWidget_C:UnBindInteractAndClickEvent(Obj, Callback, KeyName)
   self.OnMainButtonClicked:Remove(Obj, Callback)
   local keyName = KeyName
@@ -75,6 +85,7 @@ function WBP_InteractTipWidget_C:UnBindInteractAndClickEvent(Obj, Callback, KeyN
     StopListeningForInputAction(Obj, keyName, UE.EInputEvent.IE_Pressed)
   end
 end
+
 function WBP_InteractTipWidget_C:SetWidgetConfig(IsNeedProgress, KeyRowName, KeyDesc, IsNeedShowDescBottom, KeyImage)
   self.IsNeedProgress = IsNeedProgress
   self.KeyRowName = KeyRowName
@@ -92,6 +103,7 @@ function WBP_InteractTipWidget_C:SetWidgetConfig(IsNeedProgress, KeyRowName, Key
   }, 0.01, false)
   self:SetWidgetStyle()
 end
+
 function WBP_InteractTipWidget_C:InitInfo()
   self:UpdateSelfVisible()
   if self.IsNeedProgress then
@@ -122,29 +134,35 @@ function WBP_InteractTipWidget_C:InitInfo()
     self.Txt_LeftDesc:SetText(self.KeyDesc)
   end
 end
+
 function WBP_InteractTipWidget_C:UpdateDescPanelVis(IsShow)
   UpdateVisibility(self.DescPanel, not self.IsShowLeftDesc and IsShow)
   UpdateVisibility(self.LeftDescPanel, self.IsShowLeftDesc and IsShow)
 end
+
 function WBP_InteractTipWidget_C:UpdateProgress(ProgressParam)
   local Mat = self.Img_Progress:GetDynamicMaterial()
   if Mat then
     Mat:SetScalarParameterValue("Percent", ProgressParam)
   end
 end
+
 function WBP_InteractTipWidget_C:UpdateKeyDesc(Desc)
   self.KeyDesc = Desc
   self.Txt_Desc:SetText(self.KeyDesc)
   self.Txt_LeftDesc:SetText(self.KeyDesc)
 end
+
 function WBP_InteractTipWidget_C:UpdateKeyIamge(Image)
   self.KeyImage = Image
   SetImageBrushBySoftObject(self.Img_Key, Image)
 end
+
 function WBP_InteractTipWidget_C:ShowImage()
   self:UpdateDescPanelVis(false)
   UpdateVisibility(self.Img_Key, true)
 end
+
 function WBP_InteractTipWidget_C:PlayInAnimation()
   if self:IsAnimationPlaying(self.Ani_out) then
     self.IsInitiativeStop = true
@@ -152,10 +170,12 @@ function WBP_InteractTipWidget_C:PlayInAnimation()
   end
   self:PlayAnimationForward(self.Ani_in)
 end
+
 function WBP_InteractTipWidget_C:PlayOutAnimation(AnimationFinishedEvent)
   self:PlayAnimationForward(self.Ani_out)
   self.OutAnimationFinishedEvent = AnimationFinishedEvent
 end
+
 function WBP_InteractTipWidget_C:OnAnimationFinished(Animation)
   if Animation == self.Ani_Out then
     if self.IsInitiativeStop then
@@ -165,6 +185,7 @@ function WBP_InteractTipWidget_C:OnAnimationFinished(Animation)
     end
   end
 end
+
 function WBP_InteractTipWidget_C:SetWidgetConfigFromCommonButton(KeyRowName, CanInteract, CustomKeyDisplayInfo, OnlyUseonGamePad, OnlyforDisplay, EnableAutoControlVisible)
   self.KeyRowName = KeyRowName
   self.CanInteract = CanInteract
@@ -183,4 +204,5 @@ function WBP_InteractTipWidget_C:SetWidgetConfigFromCommonButton(KeyRowName, Can
     }, 0.01, false)
   end
 end
+
 return WBP_InteractTipWidget_C

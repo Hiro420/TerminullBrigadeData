@@ -16,12 +16,14 @@ local FormatValue = function(value, AttributeDisplayType)
   end
   return "0"
 end
+
 function WBP_AttrItem_C:Construct()
   if IsValidObj(self.Btn_Desc) then
     self.Btn_Desc.OnHovered:Add(self, self.OnBtnDescHovered)
     self.Btn_Desc.OnUnhovered:Add(self, self.OnBtnDescUnhovered)
   end
 end
+
 function WBP_AttrItem_C:InitAttrItem(AttrDisplayData, AttrTagName, bIsAbridge)
   UpdateVisibility(self, true, true)
   self.RowData = AttrDisplayData
@@ -157,6 +159,7 @@ function WBP_AttrItem_C:InitAttrItem(AttrDisplayData, AttrTagName, bIsAbridge)
     UpdateVisibility(self.Txt_Unit, false)
   end
 end
+
 function WBP_AttrItem_C:InitAttrItemByValue(AttrDisplayData, Value, bIsAbridge)
   UpdateVisibility(self, true, true)
   self.RowData = AttrDisplayData
@@ -172,6 +175,7 @@ function WBP_AttrItem_C:InitAttrItemByValue(AttrDisplayData, Value, bIsAbridge)
   self.Txt_Unit:SetText(AttrDisplayData.DisplayUnitInUI)
   UpdateVisibility(self.Txt_Unit, true)
 end
+
 function WBP_AttrItem_C:InitAttrItemByWeapon(AttrDisplayData, Value, DisplayUnitInUI)
   UpdateVisibility(self, true, true)
   self.RowData = AttrDisplayData
@@ -187,10 +191,12 @@ function WBP_AttrItem_C:InitAttrItemByWeapon(AttrDisplayData, Value, DisplayUnit
   end
   UpdateVisibility(self.Txt_Unit, true)
 end
+
 function WBP_AttrItem_C:InitAttrItemBgByIndex(Index)
   local bgAlpha = 0 == Index % 2 and 0.04 or 0.08
   self.Bg_AttrItem:SetRenderOpacity(bgAlpha)
 end
+
 function WBP_AttrItem_C:InitLobbyAttrItem(RowData, Value)
   UpdateVisibility(self, true, true)
   self.RowData = RowData
@@ -208,12 +214,15 @@ function WBP_AttrItem_C:InitLobbyAttrItem(RowData, Value)
   end
   UpdateVisibility(self.Txt_Unit, true)
 end
+
 function WBP_AttrItem_C:ChangeDetailDescVis(IsShow)
   UpdateVisibility(self.Img_DetailDesc, IsShow, true)
   UpdateVisibility(self.Btn_Desc, IsShow, true)
 end
+
 function WBP_AttrItem_C:GetDetailDescToolTipWidget()
 end
+
 function WBP_AttrItem_C:PlayShowAni(Index)
   local delayTime = Index * 0.02
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.aniTimer) then
@@ -227,13 +236,16 @@ function WBP_AttrItem_C:PlayShowAni(Index)
     end
   }, delayTime, false)
 end
+
 function WBP_AttrItem_C:OnBtnDescHovered()
   self.DetailDescToolTipWidget = ShowCommonTips(nil, self.Btn_Desc, nil, TipsClassPath)
   self.DetailDescToolTipWidget:RefreshInfo(self.RowData)
 end
+
 function WBP_AttrItem_C:OnBtnDescUnhovered()
   UpdateVisibility(self.DetailDescToolTipWidget, false)
 end
+
 function WBP_AttrItem_C:Hide()
   UpdateVisibility(self, false)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.aniTimer) then
@@ -241,6 +253,7 @@ function WBP_AttrItem_C:Hide()
     self.aniTimer = nil
   end
 end
+
 function WBP_AttrItem_C:Destruct()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.aniTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.aniTimer)
@@ -251,4 +264,5 @@ function WBP_AttrItem_C:Destruct()
     self.Btn_Desc.OnUnhovered:Remove(self, self.OnBtnDescUnhovered)
   end
 end
+
 return WBP_AttrItem_C

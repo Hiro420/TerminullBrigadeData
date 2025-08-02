@@ -1,4 +1,5 @@
 local WBP_RoleWeaponSelectPanel_C = UnLua.Class()
+
 function WBP_RoleWeaponSelectPanel_C:InitInfo(CurHeroId, CurSelectWeaponSlotId)
   self.CurHeroId = CurHeroId
   self.CurSelectWeaponSlotId = CurSelectWeaponSlotId
@@ -8,9 +9,11 @@ function WBP_RoleWeaponSelectPanel_C:InitInfo(CurHeroId, CurSelectWeaponSlotId)
   EventSystem.AddListener(self, EventDef.Lobby.WeaponListChanged, WBP_RoleWeaponSelectPanel_C.BindOnWeaponListChanged)
   EventSystem.AddListener(self, EventDef.Lobby.WeaponSlotSelected, self.BindOnWeaponSlotSelected)
 end
+
 function WBP_RoleWeaponSelectPanel_C:BindOnWeaponListChanged()
   self:RefreshWeaponSelectList()
 end
+
 function WBP_RoleWeaponSelectPanel_C:WeaponSelectClick(WeaponInfo)
   local WeaponInfo = WeaponInfo.WeaponData
   self:HidePanel()
@@ -25,6 +28,7 @@ function WBP_RoleWeaponSelectPanel_C:WeaponSelectClick(WeaponInfo)
     LogicOutsideWeapon.RequestEquipWeapon(self.CurHeroId, WeaponInfo.uuid, self.CurSelectWeaponSlotId, WeaponInfo.resourceId)
   end
 end
+
 function WBP_RoleWeaponSelectPanel_C:Hover(IsHover, WeaponInfo, IsEquipped)
   local WeaponInfo = WeaponInfo.WeaponData
   if IsHover then
@@ -43,11 +47,13 @@ function WBP_RoleWeaponSelectPanel_C:Hover(IsHover, WeaponInfo, IsEquipped)
     self.CurWeaponItemDisplayInfo:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_RoleWeaponSelectPanel_C:BindOnWeaponSlotSelected(IsSelected)
   if not IsSelected then
     self:HidePanel()
   end
 end
+
 function WBP_RoleWeaponSelectPanel_C:RefreshWeaponDisplayInfoTip(TargetTipWidget, WeaponInfo, IsEquipped)
   local AccessoryList = {}
   local TipText
@@ -63,6 +69,7 @@ function WBP_RoleWeaponSelectPanel_C:RefreshWeaponDisplayInfoTip(TargetTipWidget
     TargetTipWidget:ShowTipPanel(TipText, IsShowOperateIcon)
   end
 end
+
 function WBP_RoleWeaponSelectPanel_C:RefreshWeaponSelectList()
   local AllChildren = self.LobbyWeaponList:GetAllChildren()
   for key, SingleItem in pairs(AllChildren) do
@@ -104,22 +111,28 @@ function WBP_RoleWeaponSelectPanel_C:RefreshWeaponSelectList()
     Index = Index + 1
   end
 end
+
 function WBP_RoleWeaponSelectPanel_C:OnWeaponSelectBGClicked()
   EventSystem.Invoke(EventDef.Lobby.WeaponSlotSelected, false)
 end
+
 function WBP_RoleWeaponSelectPanel_C:HidePanel()
   UIMgr:Hide(ViewID.UI_RoleWeaponSelectPanel)
 end
+
 function WBP_RoleWeaponSelectPanel_C:OnHide(...)
   self:RemoveAllListener()
 end
+
 function WBP_RoleWeaponSelectPanel_C:RemoveAllListener()
   EventSystem.RemoveListener(EventDef.Lobby.WeaponListChanged, WBP_RoleWeaponSelectPanel_C.BindOnWeaponListChanged, self)
   EventSystem.RemoveListener(EventDef.Lobby.LobbyWeaponItemHoverStatusChanged, WBP_RoleWeaponSelectPanel_C.BindOnLobbyWeaponItemHovered, self)
   EventSystem.RemoveListener(EventDef.Lobby.WeaponItemSelected, WBP_RoleWeaponSelectPanel_C.BindOnLobbyWeaponItemSelected, self)
   EventSystem.RemoveListener(EventDef.Lobby.WeaponSlotSelected, self.BindOnWeaponSlotSelected, self)
 end
+
 function WBP_RoleWeaponSelectPanel_C:Destruct()
   self:RemoveAllListener()
 end
+
 return WBP_RoleWeaponSelectPanel_C

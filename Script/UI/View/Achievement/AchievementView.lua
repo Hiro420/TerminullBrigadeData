@@ -7,6 +7,7 @@ local EscName = "PauseGame"
 local AchievementView = Class(ViewBase)
 local CurrentSelectedID = 1
 local AchievementTypeList = {}
+
 function AchievementView:OnBindUIInput()
   if not IsListeningForInputAction(self, EscName) then
     ListenForInputAction(EscName, UE.EInputEvent.IE_Pressed, true, {
@@ -18,12 +19,14 @@ function AchievementView:OnBindUIInput()
   self.WBP_InteractTipWidgetMenuNext:BindInteractAndClickEvent(self, self.OnSelectNextTab)
   self.WBP_InteractTipWidgetReward:BindInteractAndClickEvent(self, self.OnShowPointAwardListClick)
 end
+
 function AchievementView:OnUnBindUIInput()
   StopListeningForInputAction(self, EscName, UE.EInputEvent.IE_Pressed)
   self.WBP_InteractTipWidgetMenuPrev:UnBindInteractAndClickEvent(self, self.OnSelectPrevTab)
   self.WBP_InteractTipWidgetMenuNext:UnBindInteractAndClickEvent(self, self.OnSelectNextTab)
   self.WBP_InteractTipWidgetReward:UnBindInteractAndClickEvent(self, self.OnShowPointAwardListClick)
 end
+
 function AchievementView:BindClickHandler()
   self.RGToggleGroupAchievementType.OnCheckStateChanged:Add(self, self.OnToggleGroupAchievementTypeChanged)
   self.ButtonWithSoundLeft.OnClicked:Add(self, self.OnBtnAwardLeftClick)
@@ -32,6 +35,7 @@ function AchievementView:BindClickHandler()
   self.ButtonWithSoundAwardListDetails.OnClicked:Add(self, self.OnShowPointAwardListClick)
   self.ButtonWithSoundChangeShow.OnClicked:Add(self, self.OnShowDisplayClick)
 end
+
 function AchievementView:UnBindClickHandler()
   self.RGToggleGroupAchievementType.OnCheckStateChanged:Remove(self, self.OnToggleGroupAchievementTypeChanged)
   self.ButtonWithSoundLeft.OnClicked:Remove(self, self.OnBtnAwardLeftClick)
@@ -40,14 +44,17 @@ function AchievementView:UnBindClickHandler()
   self.ButtonWithSoundAwardListDetails.OnClicked:Remove(self, self.OnShowPointAwardListClick)
   self.ButtonWithSoundChangeShow.OnClicked:Remove(self, self.OnShowDisplayClick)
 end
+
 function AchievementView:OnInit()
   self.DataBindTable = {}
   self.viewModel = UIModelMgr:Get("AchievementViewModel")
   self:BindClickHandler()
 end
+
 function AchievementView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function AchievementView:OnShow(...)
   self.Super:AttachViewModel(self.viewModel, self.DataBindTable, self)
   self:SetViewEmpty()
@@ -58,19 +65,23 @@ function AchievementView:OnShow(...)
   self:PushInputAction()
   self:PlayAnimation(self.Ani_in)
 end
+
 function AchievementView:OnHide()
   self.viewModel:ResetData()
   self.WBP_InteractTipWidget.Btn_Main.OnClicked:Remove(self, self.ListenForEscInputAction)
   print("AchievementView:OnHide()")
   self.Super:DetachViewModel(self.viewModel, self.DataBindTable, self)
 end
+
 function AchievementView:SetViewEmpty()
   self.RGTextAchievementNumDetails:SetText("")
   self.RGTextPointAwardDescDetails:SetText("")
 end
+
 function AchievementView:SwitchShowModel(AchievementShowModel, tbTask, taskGroupId, NotUpdateAchievementList)
   self.viewModel:SwitchShowModel(AchievementShowModel, tbTask, taskGroupId, NotUpdateAchievementList)
 end
+
 function AchievementView:SelectItem(AchievementShowModel, tbTask, taskGroupId)
   local displayItemAry = self.RGTileViewAchievement:GetDisplayedEntryWidgets()
   for i, v in pairs(displayItemAry) do
@@ -87,6 +98,7 @@ function AchievementView:SelectItem(AchievementShowModel, tbTask, taskGroupId)
   end
   self.viewModel:SwitchShowModel(AchievementShowModel, tbTask, taskGroupId, true)
 end
+
 function AchievementView:OnSwitchShowModel(AchievementShowModel, tbTask, taskGroupId)
   self.RGStateControllerShowModel:ChangeStatus(tostring(AchievementShowModel), true)
   if AchievementShowModel == EAchievementShowModel.Details then
@@ -131,6 +143,7 @@ function AchievementView:OnSwitchShowModel(AchievementShowModel, tbTask, taskGro
     end
   end
 end
+
 function AchievementView:UpdateAchievementTypeToggleList()
   self.RGToggleGroupAchievementType:ClearGroup()
   AchievementTypeList = self.viewModel:GetAchievementToggleList()
@@ -141,6 +154,7 @@ function AchievementView:UpdateAchievementTypeToggleList()
   end
   self.RGToggleGroupAchievementType:SelectId(1)
 end
+
 function AchievementView:UpdateAchievementList(achievementItemDataList, SelectTaskId, SelectGroupId)
   if self.viewModel.AchievementShowModel == EAchievementShowModel.Details and (nil == SelectGroupId or nil == SelectTaskId) then
     local achievementItemData = achievementItemDataList[1]
@@ -222,6 +236,7 @@ function AchievementView:UpdateAchievementList(achievementItemDataList, SelectTa
   end
   self.RGTileViewAchievement:SetRGListItems(TileViewAry, true, true)
 end
+
 function AchievementView:ListenForEscInputAction()
   local achievementAwardList = self:GetAchievementAwardListObj()
   if CheckIsVisility(achievementAwardList) then
@@ -231,6 +246,7 @@ function AchievementView:ListenForEscInputAction()
   local playerInfoMainViewModel = UIModelMgr:Get("PlayerInfoMainViewModel")
   playerInfoMainViewModel:HidePlayerMainView()
 end
+
 function AchievementView:OnUpdateAchievementPoint(PointNum)
   self.RGTextAchievementNum:SetText(PointNum)
   self.RGTextAchievementNumDetails:SetText(PointNum)
@@ -247,12 +263,14 @@ function AchievementView:OnUpdateAchievementPoint(PointNum)
     achievementAwardList:InitPointNum(PointNum)
   end
 end
+
 function AchievementView:UpdateDetails(profyData)
   local tbProfy = LuaTableMgr.GetLuaTableByName(TableNames.TBProfy)
   if tbProfy and tbProfy[profyData.ProfyTaskTb.Level] then
     self.RGTextProficiencyName:SetText(tbProfy[profyData.ProfyTaskTb.Level].Name)
   end
 end
+
 function AchievementView:UpdateAchievementPointAward(award, needPointNum)
   self.PointAwardId = award.key
   self.WBP_CommonItemPointAward:InitCommonItem(award.key, award.value, false, function()
@@ -269,26 +287,33 @@ function AchievementView:UpdateAchievementPointAward(award, needPointNum)
     self.RGTextPointAwardDesc:SetText(str)
   end
 end
+
 function AchievementView:HoveredFunc()
   self.WBP_CommonItemDetail:InitCommonItemDetail(self.PointAwardId)
   UpdateVisibility(self.WBP_CommonItemDetail, true)
 end
+
 function AchievementView:UnHoveredFunc()
   UpdateVisibility(self.WBP_CommonItemDetail, false)
 end
+
 function AchievementView:OnToggleGroupAchievementTypeChanged(SelectId)
   CurrentSelectedID = SelectId
   self.viewModel:SelectToggle(SelectId)
 end
+
 function AchievementView:OnBtnAwardLeftClick()
   self.viewModel:SwitchLeftPointAward()
 end
+
 function AchievementView:OnBtnAwardRightClick()
   self.viewModel:SwitchRightPointAward()
 end
+
 function AchievementView:OnShowPointAwardListClick()
   self:ShowAchievementAwardList(true)
 end
+
 function AchievementView:OnSelectPrevTab()
   CurrentSelectedID = CurrentSelectedID - 1
   if CurrentSelectedID < 1 then
@@ -296,6 +321,7 @@ function AchievementView:OnSelectPrevTab()
   end
   self.RGToggleGroupAchievementType:SelectId(CurrentSelectedID)
 end
+
 function AchievementView:OnSelectNextTab()
   CurrentSelectedID = CurrentSelectedID + 1
   if CurrentSelectedID > #AchievementTypeList then
@@ -303,23 +329,30 @@ function AchievementView:OnSelectNextTab()
   end
   self.RGToggleGroupAchievementType:SelectId(CurrentSelectedID)
 end
+
 function AchievementView:OnShowDisplayClick()
   self.WBP_AchievementDisplayView:InitAchievementDisplayView()
 end
+
 function AchievementView:OnrHideProfyLvUpByOpacity()
   self.WBP_ProficiencyLvUp:SetRenderOpacity(0)
 end
+
 function AchievementView:OnReceivePointAwards(GroupId, TsakId, List)
 end
+
 function AchievementView:GetCurHeroId()
   return self.viewModel.CurHeroId
 end
+
 function AchievementView:ReceivePointAwards(TaskIds)
   Logic_MainTask.ReceiveAward(self.viewModel:GetAchivementPointTaskGroup(), nil, true, self.OnReceivePointAwards, self)
 end
+
 function AchievementView:ReceiveTaskAward(GroupId, TaskId)
   Logic_MainTask.ReceiveAward(GroupId, TaskId, nil, nil, nil, nil, true)
 end
+
 function AchievementView:ShowAchievementAwardList(bShow)
   local achievementAwardList = self:GetAchievementAwardListObj()
   if achievementAwardList then
@@ -350,20 +383,24 @@ function AchievementView:ShowAchievementAwardList(bShow)
     achievementAwardList:InitAchievementAwardList(tbAchievementPointSort, taskId, self)
   end
 end
+
 function AchievementView:GetAchievementAwardListObj()
   return self.WBP_AchievementAwardList
 end
+
 function AchievementView:UpdateAchievementAwardList()
   local achievementAwardList = self:GetAchievementAwardListObj()
   if CheckIsVisility(achievementAwardList) then
     self:ShowAchievementAwardList(true)
   end
 end
+
 function AchievementView:OnUpdateDisplayBadges()
   if CheckIsVisility(self.WBP_AchievementDisplayView) then
     self.WBP_AchievementDisplayView:UpdateBadgesTileView()
   end
 end
+
 function AchievementView:ShowAwardTips(bIsShow, BadgesId, HoverItem)
   if bIsShow then
     if UE.RGUtil.IsUObjectValid(self.HoveredTipWidget) then
@@ -378,4 +415,5 @@ function AchievementView:ShowAwardTips(bIsShow, BadgesId, HoverItem)
     UpdateVisibility(self.HoveredTipWidget, false)
   end
 end
+
 return AchievementView

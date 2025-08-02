@@ -4,7 +4,8 @@ local ELoginStep = {
   NotLoginAndNotShowAccountNameInputPanel = 1,
   LoggedInWaitClick = 2,
   SetNickName = 3,
-  AfterSetNickName = 4
+  AfterSetNickName = 4,
+  RegionClick = 5
 }
 _G.ELoginStep = ELoginStep
 local RegionCode = {
@@ -22,30 +23,39 @@ local LoginData = {
   ServerListLabel = nil,
   IsRequestServerList = false
 }
+
 function LoginData:SetUserIdStr(UserIdStr)
   LoginData.UserIdStr = UserIdStr
 end
+
 function LoginData:GetUserIdStr()
   return LoginData.UserIdStr
 end
+
 function LoginData:AddGetServerListCount()
   LoginData.GetServerListCount = LoginData.GetServerListCount + 1
 end
+
 function LoginData:IsOverGetServerListMaxCount()
   return LoginData.GetServerListCount >= 10
 end
+
 function LoginData:SetIsServerListInited(IsInit)
   LoginData.IsServerListInited = IsInit
 end
+
 function LoginData:GetIsServerListInited()
   return LoginData.IsServerListInited
 end
+
 function LoginData:SetServerListLabel(InServerListLabel)
   LoginData.ServerListLabel = InServerListLabel
 end
+
 function LoginData:GetServerListLabel()
   return LoginData.ServerListLabel
 end
+
 function LoginData:SetLobbyServerId(InLobbyServerId)
   LoginData.LobbyServerId = InLobbyServerId
   local RGAccountSubsystem = UE.URGAccountSubsystem.Get()
@@ -53,18 +63,23 @@ function LoginData:SetLobbyServerId(InLobbyServerId)
     RGAccountSubsystem:SetLobbyServerId(InLobbyServerId)
   end
 end
+
 function LoginData:GetLobbyServerId()
   return LoginData.LobbyServerId
 end
+
 function LoginData:SetIsLoginByDistributionChannel(IsLogin)
   LoginData.IsLoginByDistributionChannel = IsLogin
 end
+
 function LoginData:GetIsLoginByDistributionChannel()
   return LoginData.IsLoginByDistributionChannel
 end
+
 function LoginData:GetLoginSavedGameName()
   return "LoginSavedGame"
 end
+
 function LoginData:SaveLastSelectServeName(InServerName)
   local LoginSaveGameName = LoginData:GetLoginSavedGameName()
   local SaveGameObject
@@ -81,15 +96,19 @@ function LoginData:SaveLastSelectServeName(InServerName)
     HttpService:SetLastSelectedServerName(InServerName)
   end
 end
+
 function LoginData:SetIsRequestServerList(IsRequestServerList)
   LoginData.IsRequestServerList = IsRequestServerList
 end
+
 function LoginData:GetIsRequestServerList(...)
   return LoginData.IsRequestServerList
 end
+
 function LoginData:ClearData()
   LoginData.IsServerListInited = false
   LoginData.UserIdStr = "0"
   LoginData.GetServerListCount = 0
 end
+
 return LoginData

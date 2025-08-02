@@ -1,6 +1,7 @@
 local WBP_HUD_Right_C = UnLua.Class()
 local PunishTime = NSLOCTEXT("WBP_HUD_Right_C", "PunishTime", "+{0}\229\136\134\233\146\159")
 local PerfectTime = NSLOCTEXT("WBP_HUD_Right_C", "PerfectTime", "\229\174\140\231\190\142\233\128\154\229\133\179\239\188\154{0}:{1}.00")
+
 function WBP_HUD_Right_C:Construct()
   self.Overridden.Construct(self)
   EventSystem.AddListener(self, EventDef.HUD.UpdateSkillPanelPosXByWeaponVSkill, self.BindOnUpdateSkillPanelPosXByWeaponVSkill)
@@ -41,6 +42,7 @@ function WBP_HUD_Right_C:Construct()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   self:BindCharacterDelegate(Character)
 end
+
 function WBP_HUD_Right_C:BindOnUpdateSkillPanelPosXByWeaponVSkill(IsHasWeaponVSkill)
   local SkillPanelSlot = UE.UWidgetLayoutLibrary.SlotAsCanvasSlot(self.SkillListPanel)
   if not SkillPanelSlot then
@@ -54,9 +56,11 @@ function WBP_HUD_Right_C:BindOnUpdateSkillPanelPosXByWeaponVSkill(IsHasWeaponVSk
   end
   SkillPanelSlot:SetPosition(Position)
 end
+
 function WBP_HUD_Right_C:BindOnNotifyWorldInfo()
   self:SetLevelName()
 end
+
 function WBP_HUD_Right_C:BindOnPunshTimeDel()
   local GS = UE.UGameplayStatics.GetGameState(self)
   local GameLevelComponent = GS:GetComponentByClass(UE.URGGameLevelComponent:StaticClass())
@@ -64,6 +68,7 @@ function WBP_HUD_Right_C:BindOnPunshTimeDel()
     GameLevelComponent.BattleTimeChangeDelegate:Add(self, self.OnPunishTimeChange)
   end
 end
+
 function WBP_HUD_Right_C:SetLevelName()
   local name = UE.URGGameplayLibrary.RGGetLevelNameTxt(self)
   UpdateVisibility(self.TextBlock_LevelName, true)
@@ -131,6 +136,7 @@ function WBP_HUD_Right_C:SetLevelName()
     end
   end
 end
+
 function WBP_HUD_Right_C:OnPunishTimeChange(OldTime, NewTime)
   if 0 == math.ceil(OldTime) then
     self:PlayAnimation(self.Ani_PunishTime_in)
@@ -140,6 +146,7 @@ function WBP_HUD_Right_C:OnPunishTimeChange(OldTime, NewTime)
   local PunishTimeText = string.format("%.1f", NewTime / 60)
   self.TXT_PunishTime:SetText(UE.FTextFormat(PunishTime(), PunishTimeText))
 end
+
 function WBP_HUD_Right_C:OnHeroDying(Target)
   if Target ~= UE.UGameplayStatics.GetPlayerCharacter(self, 0) then
     return
@@ -147,6 +154,7 @@ function WBP_HUD_Right_C:OnHeroDying(Target)
   UpdateVisibility(self.SkillLinePanel, false)
   UpdateVisibility(self.SkillListPanel, false)
 end
+
 function WBP_HUD_Right_C:OnHeroRescue(Target)
   if Target ~= UE.UGameplayStatics.GetPlayerCharacter(self, 0) then
     return
@@ -154,12 +162,14 @@ function WBP_HUD_Right_C:OnHeroRescue(Target)
   UpdateVisibility(self.SkillLinePanel, true)
   UpdateVisibility(self.SkillListPanel, true)
 end
+
 function WBP_HUD_Right_C:CheckIsPerfectTime()
   if not UE.URGLevelLibrary:IsInPerfectTime() then
     self.TXT_PerfectTime:SetColorAndOpacity(self.EnableColor)
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.CheckPerfectTimer)
   end
 end
+
 function WBP_HUD_Right_C:Destruct()
   EventSystem.RemoveListener(EventDef.HUD.UpdateSkillPanelPosXByWeaponVSkill, self.BindOnUpdateSkillPanelPosXByWeaponVSkill, self)
   EventSystem.RemoveListener(EventDef.Battle.OnControlledPawnChanged, self.BindOnControlledPawnChanged, self)
@@ -188,12 +198,15 @@ function WBP_HUD_Right_C:Destruct()
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.CheckPerfectTimer)
   end
 end
+
 function WBP_HUD_Right_C:InitGloriaRobotInfo()
   self.WBP_GloriaRobotInfo:Init()
 end
+
 function WBP_HUD_Right_C:BindOnControlledPawnChanged(ControlledPawn)
   self:BindCharacterDelegate(ControlledPawn)
 end
+
 function WBP_HUD_Right_C:BindCharacterDelegate(ControlledPawn)
   self.ControlledPawn = ControlledPawn
   if not ControlledPawn then
@@ -209,10 +222,12 @@ function WBP_HUD_Right_C:BindCharacterDelegate(ControlledPawn)
     EquipmentComp.OnCurrentWeaponChanged:Add(self, self.BindOnCurrentWeaponChanaged)
   end
 end
+
 function WBP_HUD_Right_C:BindOnEquipmentChanged()
   print("WBP_HUD_Right_C:BindOnEquipmentChanged")
   self:BindOnCurrentWeaponChanaged()
 end
+
 function WBP_HUD_Right_C:BindOnCurrentWeaponChanaged(OldWeapon, NewWeapon)
   print("WBP_WeaponList_C:BindOnCurrentWeaponChanaged")
   local EquipmentComp = self:GetOwningPlayerPawn():GetComponentByClass(UE.URGEquipmentComponent.StaticClass())
@@ -242,4 +257,5 @@ function WBP_HUD_Right_C:BindOnCurrentWeaponChanaged(OldWeapon, NewWeapon)
   end
   EventSystem.Invoke(EventDef.HUD.UpdateSkillPanelPosXByWeaponVSkill, UE.UKismetSystemLibrary.IsValidClass(VAbilityClass))
 end
+
 return WBP_HUD_Right_C

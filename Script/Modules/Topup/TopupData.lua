@@ -7,6 +7,7 @@ local TopupData = {
   Age = 20,
   LastPayTime = 0
 }
+
 function TopupData:DealWithTable(...)
   TopupData.AllProductShelfInfo = {}
   TopupData.AllMidasProductIdList = {}
@@ -26,18 +27,23 @@ function TopupData:DealWithTable(...)
     end
   end
 end
+
 function TopupData:GetProductIdListByShelfId(ShelfId)
   return TopupData.AllProductShelfInfo[ShelfId] or {}
 end
+
 function TopupData:SetSDKProductInfo(ProductInfo)
   TopupData.AllSDKProductInfo[ProductInfo.unified_product_id] = ProductInfo
 end
+
 function TopupData:GetSDKProductInfo(ProductId)
   return TopupData.AllSDKProductInfo[ProductId]
 end
+
 function TopupData:GetProductIdByResourceId(InResourceId)
   return TopupData.AllMidasIdToProductIdList[tostring(InResourceId)] or 0
 end
+
 function TopupData:GetProductDisplayPrice(ProductId)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBPaymentMall, ProductId)
   if not Result then
@@ -56,16 +62,20 @@ function TopupData:GetProductDisplayPrice(ProductId)
   end
   return string.format("%s %.2f", Unit, RowInfo.Price)
 end
+
 function TopupData:GetPayChannel(...)
   return UE.URGBlueprintLibrary.IsOfficialPackage() and "os_midaspay" or "os_steam"
 end
+
 function TopupData:GetAllMidasProductIdList(...)
   return TopupData.AllMidasProductIdList
 end
+
 function TopupData:IsExecuteINTLPayLogic()
   local IsSteamCNChannel = UE.URGBlueprintLibrary.IsSteamCNChannel()
   return UE.URGPlatformFunctionLibrary.IsLIPassEnabled() or IsSteamCNChannel
 end
+
 function TopupData:InitTopupAge()
   local LobbySaveGame = LogicLobby.GetLobbySaveGame()
   local CurPayAge = LobbySaveGame:GetCurPayAge(DataMgr.GetUserId())
@@ -77,6 +87,7 @@ function TopupData:InitTopupAge()
     TopupData:SetTopupAge(13)
   end
 end
+
 function TopupData:SetTopupAge(InAge, IsNeedSave, IsExecuteINTLPayLogic)
   TopupData.Age = InAge
   if IsNeedSave then
@@ -88,7 +99,9 @@ function TopupData:SetTopupAge(InAge, IsNeedSave, IsExecuteINTLPayLogic)
     TopupHandler:RequestBuyMisdasProduct(TopupData.CurBuyProductId, TopupData.CurBuyQuantity)
   end
 end
+
 function TopupData:GetTopupAge()
   return TopupData.Age
 end
+
 return TopupData

@@ -62,13 +62,16 @@ local SetCameraData = function(self, skinId, MotionIdx)
   end
   CameraTimer = -1
 end
+
 function BP_WeaponSkinDisplayActor_C:ReceiveBeginPlay()
   self.Overridden.ReceiveBeginPlay(self)
   self:UpdateActived(self.bIsActived, true)
 end
+
 function BP_WeaponSkinDisplayActor_C:ReceiveEndPlay(EndPlayReason)
   self.Overridden.ReceiveEndPlay(self, EndPlayReason)
 end
+
 function BP_WeaponSkinDisplayActor_C:ReceiveTick(DeltaSeconds)
   self.Overridden.ReceiveTick(self, DeltaSeconds)
   if not NearlyEquals(CameraTimer, -1) then
@@ -114,9 +117,11 @@ function BP_WeaponSkinDisplayActor_C:ReceiveTick(DeltaSeconds)
     end
   end
 end
+
 function BP_WeaponSkinDisplayActor_C:BPLeftMouseButtonDown(bIsMouseDown)
   self.bIsMouseDown = bIsMouseDown
 end
+
 function BP_WeaponSkinDisplayActor_C:InitAppearanceActor(HeroId, SkinId, WeaponSkinId, bShowGlitchMatEffect)
   self.TransOffset = self.RoleCameraOffsetTransform
   self.SkinId = SkinId
@@ -137,6 +142,7 @@ function BP_WeaponSkinDisplayActor_C:InitAppearanceActor(HeroId, SkinId, WeaponS
   CameraMotionIdx = GetDefaultCameraIdx(SkinId)
   SetCameraData(self, SkinId, CameraMotionIdx)
 end
+
 function BP_WeaponSkinDisplayActor_C:InitWeaponMesh(WeaponSkinId, WeaponResId, TransOffset, bForceUpdate, bShowGlitchMatEffect)
   if not bForceUpdate and not self.ChildActorWeapon.bHiddenInGame and self.TransOffset == TransOffset and self.WeaponSkinId == WeaponSkinId then
     return
@@ -155,6 +161,7 @@ function BP_WeaponSkinDisplayActor_C:InitWeaponMesh(WeaponSkinId, WeaponResId, T
   CameraMotionIdx = GetDefaultCameraIdx(WeaponSkinId)
   SetCameraData(self, WeaponSkinId, CameraMotionIdx)
 end
+
 function BP_WeaponSkinDisplayActor_C:UpdateWeaponMeshDisplayData(WeaponResId, TransOffset)
   if not UE.RGUtil.IsUObjectValid(self.ChildActorWeapon.ChildActor) then
     print("BP_WeaponSkinDisplayActor_C:UpdateWeaponMeshDisplayData ChildActor IsNull")
@@ -184,6 +191,7 @@ function BP_WeaponSkinDisplayActor_C:UpdateWeaponMeshDisplayData(WeaponResId, Tr
     end
   end
 end
+
 function BP_WeaponSkinDisplayActor_C:MoveNextCameraTrans()
   if CameraMotionIdx <= 1 then
     return
@@ -202,6 +210,7 @@ function BP_WeaponSkinDisplayActor_C:MoveNextCameraTrans()
   CameraMotionIdx = CameraMotionIdx - 1
   CameraTimer = 0
 end
+
 function BP_WeaponSkinDisplayActor_C:MovePreCameraTrans()
   if not NearlyEquals(CameraTimer, -1) then
     return
@@ -224,6 +233,7 @@ function BP_WeaponSkinDisplayActor_C:MovePreCameraTrans()
   CameraMotionIdx = CameraMotionIdx + 1
   CameraTimer = 0
 end
+
 function BP_WeaponSkinDisplayActor_C:UpdateActived(bIsActived, bNotChangeRoleMainHeroVisble, bAutoQuit)
   if nil == bAutoQuit then
     bAutoQuit = true
@@ -265,6 +275,7 @@ function BP_WeaponSkinDisplayActor_C:UpdateActived(bIsActived, bNotChangeRoleMai
     LogicRole.HideCurSkinLightMap()
   end
 end
+
 function BP_WeaponSkinDisplayActor_C:GetTypeId(Widget)
   local Character = Widget:GetOwningPlayerPawn()
   if not Character then
@@ -272,6 +283,7 @@ function BP_WeaponSkinDisplayActor_C:GetTypeId(Widget)
   end
   return Character:GetTypeID()
 end
+
 function BP_WeaponSkinDisplayActor_C:HideMesh()
   self.ChildActorWeapon:SetHiddenInGame(true)
   self.ChildActor:SetHiddenInGame(true)
@@ -279,6 +291,7 @@ function BP_WeaponSkinDisplayActor_C:HideMesh()
     self.ChildActorProp:SetHiddenInGame(true)
   end
 end
+
 function BP_WeaponSkinDisplayActor_C:InitPropByActorPath(ActorPath)
   if not self.ChildActorProp then
     print("BP_WeaponSkinDisplayActor_C:InitPropByActorPath ChildActorProp IsNull")
@@ -294,13 +307,16 @@ function BP_WeaponSkinDisplayActor_C:InitPropByActorPath(ActorPath)
   self.ChildActorProp:SetHiddenInGame(false)
   SetCameraData(self, 0, 1)
 end
+
 function BP_WeaponSkinDisplayActor_C:RequestToDisableDraggingRole()
   DisableRoleMouseDraggingCounter = DisableRoleMouseDraggingCounter + 1
 end
+
 function BP_WeaponSkinDisplayActor_C:RequestToEnableDraggingRole()
   DisableRoleMouseDraggingCounter = DisableRoleMouseDraggingCounter - 1
   if DisableRoleMouseDraggingCounter < 0 then
     DisableRoleMouseDraggingCounter = 0
   end
 end
+
 return BP_WeaponSkinDisplayActor_C

@@ -4,6 +4,7 @@ local chipstrengthattritem = require("UI.View.Chip.ChipStrengthAttrItem")
 local ChipStrengthView = UnLua.Class()
 local tbGeneral = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
 local tbChipLevelUp = LuaTableMgr.GetLuaTableByName(TableNames.TBChipLevelUp)
+
 function ChipStrengthView:Construct()
   self.viewModel = UIModelMgr:Get("ChipViewModel")
   self.BP_ButtonWithSoundFilter.OnClicked:Add(self, self.OnFilterClick)
@@ -14,6 +15,7 @@ function ChipStrengthView:Construct()
   self.Btn_Left.OnClicked:Add(self, self.OnSwitchLeftRareLimit)
   self.Btn_Right.OnClicked:Add(self, self.OnSwitchRightRareLimit)
 end
+
 function ChipStrengthView:Destruct()
   self.viewModel = nil
   self.BP_ButtonWithSoundFilter.OnClicked:Remove(self, self.OnFilterClick)
@@ -24,11 +26,13 @@ function ChipStrengthView:Destruct()
   self.Btn_Left.OnClicked:Remove(self, self.OnSwitchLeftRareLimit)
   self.Btn_Right.OnClicked:Remove(self, self.OnSwitchRightRareLimit)
 end
+
 function ChipStrengthView:HideStrengthView()
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
     self.ParentView:HideViewByViewSet()
   end
 end
+
 function ChipStrengthView:OnSwitchLeftRareLimit()
   if self.viewModel:GetCurRareLimit() <= UE.ERGItemRarity.EIR_Excellent then
     self.viewModel:SetCurRareLimit(UE.ERGItemRarity.EIR_Excellent)
@@ -37,6 +41,7 @@ function ChipStrengthView:OnSwitchLeftRareLimit()
   end
   self.StateCtrl_RareLimit:ChangeStatus(tostring(self.viewModel:GetCurRareLimit()))
 end
+
 function ChipStrengthView:OnSwitchRightRareLimit()
   if self.viewModel:GetCurRareLimit() >= UE.ERGItemRarity.EIR_Immortal then
     self.viewModel:SetCurRareLimit(UE.ERGItemRarity.EIR_Immortal)
@@ -45,6 +50,7 @@ function ChipStrengthView:OnSwitchRightRareLimit()
   end
   self.StateCtrl_RareLimit:ChangeStatus(tostring(self.viewModel:GetCurRareLimit()))
 end
+
 function ChipStrengthView:InitChipStrengthView(ParentView, ChipBagItemData)
   self:PlayAnimation(self.Ani_in)
   self:PlayAnimation(self.Ani_icon_loop, 0, 0)
@@ -65,6 +71,7 @@ function ChipStrengthView:InitChipStrengthView(ParentView, ChipBagItemData)
   self:UpdateDetailsView()
   self:UpdateStrengthFilterStatus()
 end
+
 function ChipStrengthView:UpdateChipItemList(ChipOrderedMap)
   self.viewModel = UIModelMgr:Get("ChipViewModel")
   local UpdateChipItemListFunc = function(chipOrderedMap)
@@ -103,6 +110,7 @@ function ChipStrengthView:UpdateChipItemList(ChipOrderedMap)
     self.viewModel:FilterStrengthChipBagOrderedMap(self.ChipBagItemData, UpdateChipItemListFunc)
   end
 end
+
 function ChipStrengthView:UpdateChipItemListKeepSort()
   local chipItemList = self.RGTileViewChipItemRoot:GetListItems():ToTable()
   local ChatDataObjList = UE.TArray(UE.UObject)
@@ -126,6 +134,7 @@ function ChipStrengthView:UpdateChipItemListKeepSort()
   self.RGTileViewChipItemRoot:SetRGListItems(ChatDataObjList, true, true)
   self:UpdateFullStatus()
 end
+
 function ChipStrengthView:UpdateFullStatus()
   self.viewModel = UIModelMgr:Get("ChipViewModel")
   local num = self.viewModel:GetChipsTotalNum()
@@ -138,6 +147,7 @@ function ChipStrengthView:UpdateFullStatus()
     self.StateCtrl_Full:ChangeStatus("NotFull")
   end
 end
+
 function ChipStrengthView:UpdateStrengthLv()
   self.RGToggleGroupStrengthLv:ClearGroup()
   local idx = 1
@@ -153,6 +163,7 @@ function ChipStrengthView:UpdateStrengthLv()
   HideOtherItem(self.ScrollBoxStrengthLv, idx)
   self.RGToggleGroupStrengthLv:SelectId(-1)
 end
+
 function ChipStrengthView:UpdateStrength(Id, OldSubAttr)
   if nil == Id then
     self.SelectChipEatTb = {}
@@ -164,6 +175,7 @@ function ChipStrengthView:UpdateStrength(Id, OldSubAttr)
     self:UpdateDetailsView()
   end
 end
+
 function ChipStrengthView:UpdateDetailsView(bIsUpgrade, OldSubAttr)
   self.RGTextChipName:SetText(self.viewModel:GetChipName(self.ChipBagItemData))
   local rare = self.viewModel:GetChipRare(self.ChipBagItemData)
@@ -265,6 +277,7 @@ function ChipStrengthView:UpdateDetailsView(bIsUpgrade, OldSubAttr)
   UpdateVisibility(self.RGRichTextBlockSpecialDesc, self.ChipBagItemData.Chip.inscription > 0)
   UpdateVisibility(self.RGTextSpecialAttr, self.ChipBagItemData.Chip.inscription > 0)
 end
+
 function ChipStrengthView:ShowChipAttrListTip(bShow, ChipBagsItemData, bSelect)
   if bShow then
     if not self.viewModel:CheckIsChipUpgradeMat(ChipBagsItemData) then
@@ -286,18 +299,21 @@ function ChipStrengthView:ShowChipAttrListTip(bShow, ChipBagsItemData, bSelect)
     self.ParentView:UpdateCurHoverChipBagsItemData(nil)
   end
 end
+
 function ChipStrengthView:UpdateChipAttrListTip(ChipBagsItemData, bSelect)
   if self.RGAutoLoadPanelCompareChipAttrListTips.ChildWidget then
     self.RGAutoLoadPanelCompareChipAttrListTips.ChildWidget:InitChipAttrListTip(ChipBagsItemData, not bSelect, EChipAttrListTipSComparetate.Compare, EChipViewState.Strength)
     self.ParentView:UpdateCurHoverChipBagsItemData(ChipBagsItemData)
   end
 end
+
 function ChipStrengthView:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     UpdateVisibility(self, false)
     UpdateVisibility(self.AutoLoadPanel, false)
   end
 end
+
 function ChipStrengthView:Hide()
   UpdateVisibility(self, true)
   UpdateVisibility(self.AutoLoadPanel, true)
@@ -312,16 +328,19 @@ function ChipStrengthView:Hide()
   self.SelectChipUpgradeMatEatTb = {}
   self.viewModel = nil
 end
+
 function ChipStrengthView:OnFilterClick()
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
     self.ParentView:OnFilterClick(EChipViewState.Strength)
   end
 end
+
 function ChipStrengthView:OnOnlyCheckDiscard(bIsCheck)
   if self.viewModel then
     self.viewModel:OnlyCheckDiscard(bIsCheck)
   end
 end
+
 function ChipStrengthView:OnStrengthClick()
   local eatList = {}
   local eatChipUpgradeList = {}
@@ -355,6 +374,7 @@ function ChipStrengthView:OnStrengthClick()
   end
   self.viewModel:RequestUpgradeChip(eatList, self.ChipBagItemData.Chip.id, eatChipUpgradeList)
 end
+
 function ChipStrengthView:OnUpgradeChip(OldLv, NewLv)
   self:PlayAnimation(self.Ani_icon_strengthen_effect)
   self.StateCtrl_Slot:ChangeStatus(self.ChipBagItemData.TbChipData.Slot)
@@ -362,6 +382,7 @@ function ChipStrengthView:OnUpgradeChip(OldLv, NewLv)
     self:PlayAnimation(self.Ani_grade_hoist)
   end
 end
+
 function ChipStrengthView:UpdateStrengthFilterStatus()
   local bIsDefaultFilter = self.viewModel:CheckStrengthIsDefaultFilter()
   if bIsDefaultFilter then
@@ -370,6 +391,7 @@ function ChipStrengthView:UpdateStrengthFilterStatus()
     self.StateCtrl_Filter:ChangeStatus(EChipFilter.Filter)
   end
 end
+
 function ChipStrengthView:ToggleGroupStrengthLvChanged(SelectId)
   if -1 == SelectId then
     self.SelectChipEatTb = {}
@@ -392,6 +414,7 @@ function ChipStrengthView:ToggleGroupStrengthLvChanged(SelectId)
   self:UpdateChipItemList(self.ChipOrderedMap)
   self:UpdateDetailsView()
 end
+
 function ChipStrengthView:SelectEatChip(ChipBagItemData, bSelect, Callback)
   if ChipBagItemData.Chip and ChipBagItemData.Chip.state == EChipState.Lock then
     ShowWaveWindow(1162)
@@ -482,6 +505,7 @@ function ChipStrengthView:SelectEatChip(ChipBagItemData, bSelect, Callback)
   end
   self:UpdateDetailsView()
 end
+
 function ChipStrengthView:CheckInEatTb(ChipBagItemData)
   if not ChipBagItemData then
     return false
@@ -497,6 +521,7 @@ function ChipStrengthView:CheckInEatTb(ChipBagItemData)
   end
   return false
 end
+
 function ChipStrengthView:CheckCanSelect(ChipBagItemData)
   if not ChipBagItemData then
     return false
@@ -512,6 +537,7 @@ function ChipStrengthView:CheckCanSelect(ChipBagItemData)
   end
   return true
 end
+
 function ChipStrengthView:CheckCanEatByChipBagData(beEatedChipBagData)
   if not beEatedChipBagData then
     return false
@@ -522,4 +548,5 @@ function ChipStrengthView:CheckCanEatByChipBagData(beEatedChipBagData)
   local viewModel = UIModelMgr:Get("ChipViewModel")
   return viewModel:CheckCanEatByChipBagData(beEatedChipBagData, self.ChipBagItemData)
 end
+
 return ChipStrengthView

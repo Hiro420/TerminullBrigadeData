@@ -3,6 +3,7 @@ local rapidjson = require("rapidjson")
 local PuzzleData = require("Modules.Puzzle.PuzzleData")
 local GemData = require("Modules.Gem.GemData")
 local PuzzleInfoConfig = require("GameConfig.Puzzle.PuzzleInfoConfig")
+
 function PuzzleHandler:RequestEquipPuzzleToServer(PuzzleId, HeroId, SlotIdList)
   local JsonParams = {
     heroID = HeroId,
@@ -33,6 +34,7 @@ function PuzzleHandler:RequestEquipPuzzleToServer(PuzzleId, HeroId, SlotIdList)
     end
   })
 end
+
 function PuzzleHandler:RequestGetAllPuzzleDetailToServer()
   HttpCommunication.Request("hero/getallpuzzledetail", {}, {
     GameInstance,
@@ -46,6 +48,7 @@ function PuzzleHandler:RequestGetAllPuzzleDetailToServer()
     end
   })
 end
+
 function PuzzleHandler:RequestGetPuzzleDetailToServer(PuzzleIdList)
   local JsonParams = {puzzleIDs = PuzzleIdList}
   HttpCommunication.Request("hero/getpuzzledetail", JsonParams, {
@@ -60,6 +63,7 @@ function PuzzleHandler:RequestGetPuzzleDetailToServer(PuzzleIdList)
     end
   })
 end
+
 function PuzzleHandler:RequestLockPuzzleToServer(PuzzleId)
   local JsonParams = {uniqueID = PuzzleId}
   HttpCommunication.Request("hero/lockpuzzle", JsonParams, {
@@ -71,6 +75,7 @@ function PuzzleHandler:RequestLockPuzzleToServer(PuzzleId)
     end
   })
 end
+
 function PuzzleHandler:RequestPuzzlepackageToServer()
   HttpCommunication.RequestByGet("hero/puzzlepackage", {
     GameInstance,
@@ -84,6 +89,7 @@ function PuzzleHandler:RequestPuzzlepackageToServer()
     end
   })
 end
+
 function PuzzleHandler:RequestGetPuzzleSlotUnlockInfo()
   HttpCommunication.RequestByGet("hero/puzzleslotunlockinfo", {
     GameInstance,
@@ -95,6 +101,7 @@ function PuzzleHandler:RequestGetPuzzleSlotUnlockInfo()
     end
   })
 end
+
 function PuzzleHandler:RequestUnEquipPuzzleToServer(PuzzleId, HeroId)
   local JsonParams = {heroID = HeroId, uniqueID = PuzzleId}
   HttpCommunication.Request("hero/unequippuzzle", JsonParams, {
@@ -116,6 +123,7 @@ function PuzzleHandler:RequestUnEquipPuzzleToServer(PuzzleId, HeroId)
     end
   })
 end
+
 function PuzzleHandler:RequestUnEquipHeroAllPuzzleToServer(HeroId)
   local AllPackageInfo = PuzzleData:GetAllPuzzlePackageInfo()
   for PuzzleId, PuzzlePackageInfo in pairs(AllPackageInfo) do
@@ -124,8 +132,10 @@ function PuzzleHandler:RequestUnEquipHeroAllPuzzleToServer(HeroId)
     end
   end
 end
+
 function PuzzleHandler:RequestUpgradePuzzleToServer(PuzzleId, TargetLevel)
 end
+
 function PuzzleHandler:RequestResetPuzzleToServer(PuzzleId)
   HttpCommunication.Request("hero/resetpuzzle", {uniqueID = PuzzleId}, {
     GameInstance,
@@ -146,6 +156,7 @@ function PuzzleHandler:RequestResetPuzzleToServer(PuzzleId)
     end
   })
 end
+
 function PuzzleHandler:RequestDecomposePuzzleToServer(PuzzleIdList)
   HttpCommunication.Request("hero/decomposepuzzle", {uniqueIDs = PuzzleIdList}, {
     GameInstance,
@@ -159,6 +170,7 @@ function PuzzleHandler:RequestDecomposePuzzleToServer(PuzzleIdList)
     end
   })
 end
+
 function PuzzleHandler:RequestDiscardPuzzleToServer(PuzzleId)
   HttpCommunication.Request("hero/discardpuzzle", {uniqueID = PuzzleId}, {
     GameInstance,
@@ -169,6 +181,7 @@ function PuzzleHandler:RequestDiscardPuzzleToServer(PuzzleId)
     end
   })
 end
+
 function PuzzleHandler:RequestCancelLockOrDiscardPuzzle(PuzzleId)
   HttpCommunication.Request("hero/cancellockordiscardpuzzle", {uniqueID = PuzzleId}, {
     GameInstance,
@@ -179,6 +192,7 @@ function PuzzleHandler:RequestCancelLockOrDiscardPuzzle(PuzzleId)
     end
   })
 end
+
 function PuzzleHandler:RequestWashPuzzleFirstSubAttrToServer(PuzzleIdList)
   HttpCommunication.Request("hero/washpuzzlefirstsubattr", {uniqueIDs = PuzzleIdList}, {
     GameInstance,
@@ -192,6 +206,7 @@ function PuzzleHandler:RequestWashPuzzleFirstSubAttrToServer(PuzzleIdList)
     end
   })
 end
+
 function PuzzleHandler:RequestWashPuzzleLastSubAttrToServer(PuzzleIdList)
   HttpCommunication.Request("hero/washpuzzlelastsubattr", {uniqueIDs = PuzzleIdList}, {
     GameInstance,
@@ -205,6 +220,7 @@ function PuzzleHandler:RequestWashPuzzleLastSubAttrToServer(PuzzleIdList)
     end
   })
 end
+
 function PuzzleHandler:RequestWashPuzzleSubAttrToServer(PuzzleIdList)
   HttpCommunication.Request("hero/washpuzzlesubattr", {uniqueIDs = PuzzleIdList}, {
     GameInstance,
@@ -218,6 +234,7 @@ function PuzzleHandler:RequestWashPuzzleSubAttrToServer(PuzzleIdList)
     end
   })
 end
+
 function PuzzleHandler:RequestWashPuzzleSubAttrValueToServer(PuzzleIdList)
   HttpCommunication.Request("hero/washpuzzlesubattrvalue", {uniqueIDs = PuzzleIdList}, {
     GameInstance,
@@ -231,6 +248,7 @@ function PuzzleHandler:RequestWashPuzzleSubAttrValueToServer(PuzzleIdList)
     end
   })
 end
+
 function PuzzleHandler:RequestWashPuzzleInscriptionToServer(PuzzleIdList)
   HttpCommunication.Request("hero/washpuzzleinscription", {uniqueIDs = PuzzleIdList}, {
     GameInstance,
@@ -244,6 +262,7 @@ function PuzzleHandler:RequestWashPuzzleInscriptionToServer(PuzzleIdList)
     end
   })
 end
+
 function PuzzleHandler:RequestWashPuzzleShapeToServer(PuzzleIdList)
   HttpCommunication.Request("hero/washpuzzleshape", {uniqueIDs = PuzzleIdList}, {
     GameInstance,
@@ -257,6 +276,7 @@ function PuzzleHandler:RequestWashPuzzleShapeToServer(PuzzleIdList)
     end
   })
 end
+
 function PuzzleHandler:RequestWashPuzzleSlotAmountToServer(PuzzleIdList)
   HttpCommunication.Request("hero/washpuzzleslotamount", {uniqueIDs = PuzzleIdList}, {
     GameInstance,
@@ -289,6 +309,7 @@ function PuzzleHandler:RequestWashPuzzleSlotAmountToServer(PuzzleIdList)
     end
   })
 end
+
 function PuzzleHandler:RequestPuzzleMutationToServer(PuzzleIdList, IsSeniorMutation)
   local JsonParams = {uniqueIDs = PuzzleIdList, isSeniorMutation = IsSeniorMutation}
   HttpCommunication.Request("hero/puzzlemutation", JsonParams, {
@@ -342,4 +363,5 @@ function PuzzleHandler:RequestPuzzleMutationToServer(PuzzleIdList, IsSeniorMutat
     end
   })
 end
+
 return PuzzleHandler

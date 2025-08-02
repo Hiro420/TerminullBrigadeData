@@ -1,7 +1,5 @@
 ﻿{
   "1": {
-    "shapeID": 1,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "changePositions": {
       "1": {
         "pos": {
@@ -12,25 +10,25 @@
         }
       }
     },
+    "shapeID": 1,
     "note": "环都",
-    "group": 1,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "initPositions": {
       "1": {
         "key": 0,
         "value": 0
       }
     },
+    "group": 1,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "2": {
-    "shapeID": 2,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber02.Icon_Cyber02",
     "changePositions": {
       "1": {
         "pos": {
@@ -105,8 +103,9 @@
         }
       }
     },
+    "shapeID": 2,
     "note": "环都",
-    "group": 2,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber02.Icon_Cyber02",
     "initPositions": {
       "1": {
         "key": 0,
@@ -117,17 +116,16 @@
         "value": -1
       }
     },
+    "group": 2,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "3": {
-    "shapeID": 3,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber03_02.Icon_Cyber03_02",
     "changePositions": {
       "1": {
         "pos": {
@@ -226,8 +224,9 @@
         }
       }
     },
+    "shapeID": 3,
     "note": "环都",
-    "group": 3,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber03_02.Icon_Cyber03_02",
     "initPositions": {
       "1": {
         "key": 0,
@@ -242,17 +241,16 @@
         "value": 1
       }
     },
+    "group": 3,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": -20
+        "x": -20,
+        "y": -50
       }
     }
   },
   "4": {
-    "shapeID": 4,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber03.Icon_Cyber03",
     "changePositions": {
       "1": {
         "pos": {
@@ -351,8 +349,9 @@
         }
       }
     },
+    "shapeID": 4,
     "note": "环都",
-    "group": 3,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber03.Icon_Cyber03",
     "initPositions": {
       "1": {
         "key": 0,
@@ -367,17 +366,16 @@
         "value": 1
       }
     },
+    "group": 3,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "5": {
-    "shapeID": 5,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber03_01.Icon_Cyber03_01",
     "changePositions": {
       "1": {
         "pos": {
@@ -476,8 +474,9 @@
         }
       }
     },
+    "shapeID": 5,
     "note": "环都",
-    "group": 3,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber03_01.Icon_Cyber03_01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -492,17 +491,16 @@
         "value": 1
       }
     },
+    "group": 3,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "6": {
-    "shapeID": 6,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_08.Icon_Cyber04_08",
     "changePositions": {
       "1": {
         "pos": {
@@ -625,8 +623,9 @@
         }
       }
     },
+    "shapeID": 6,
     "note": "环都",
-    "group": 4,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_08.Icon_Cyber04_08",
     "initPositions": {
       "1": {
         "key": 0,
@@ -645,17 +644,16 @@
         "value": -2
       }
     },
+    "group": 4,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": -30
+        "x": -30,
+        "y": 50
       }
     }
   },
   "7": {
-    "shapeID": 7,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_09.Icon_Cyber04_09",
     "changePositions": {
       "1": {
         "pos": {
@@ -778,8 +776,9 @@
         }
       }
     },
+    "shapeID": 7,
     "note": "环都",
-    "group": 4,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_09.Icon_Cyber04_09",
     "initPositions": {
       "1": {
         "key": 0,
@@ -798,17 +797,16 @@
         "value": 1
       }
     },
+    "group": 4,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "8": {
-    "shapeID": 8,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_03.Icon_Cyber04_03",
     "changePositions": {
       "1": {
         "pos": {
@@ -931,8 +929,9 @@
         }
       }
     },
+    "shapeID": 8,
     "note": "环都",
-    "group": 4,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_03.Icon_Cyber04_03",
     "initPositions": {
       "1": {
         "key": 0,
@@ -951,17 +950,16 @@
         "value": -2
       }
     },
+    "group": 4,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "9": {
-    "shapeID": 9,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_04.Icon_Cyber04_04",
     "changePositions": {
       "1": {
         "pos": {
@@ -1084,8 +1082,9 @@
         }
       }
     },
+    "shapeID": 9,
     "note": "环都",
-    "group": 4,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_04.Icon_Cyber04_04",
     "initPositions": {
       "1": {
         "key": 0,
@@ -1104,17 +1103,16 @@
         "value": -1
       }
     },
+    "group": 4,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 30,
-        "x": -20
+        "x": -20,
+        "y": 30
       }
     }
   },
   "10": {
-    "shapeID": 10,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_07.Icon_Cyber04_07",
     "changePositions": {
       "1": {
         "pos": {
@@ -1237,8 +1235,9 @@
         }
       }
     },
+    "shapeID": 10,
     "note": "环都",
-    "group": 4,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_07.Icon_Cyber04_07",
     "initPositions": {
       "1": {
         "key": 0,
@@ -1257,17 +1256,16 @@
         "value": -1
       }
     },
+    "group": 4,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -10,
-        "x": -40
+        "x": -40,
+        "y": -10
       }
     }
   },
   "11": {
-    "shapeID": 11,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_06.Icon_Cyber04_06",
     "changePositions": {
       "1": {
         "pos": {
@@ -1390,8 +1388,9 @@
         }
       }
     },
+    "shapeID": 11,
     "note": "环都",
-    "group": 4,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_06.Icon_Cyber04_06",
     "initPositions": {
       "1": {
         "key": 0,
@@ -1410,17 +1409,16 @@
         "value": 1
       }
     },
+    "group": 4,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "12": {
-    "shapeID": 12,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_05.Icon_Cyber04_05",
     "changePositions": {
       "1": {
         "pos": {
@@ -1543,8 +1541,9 @@
         }
       }
     },
+    "shapeID": 12,
     "note": "环都",
-    "group": 4,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_05.Icon_Cyber04_05",
     "initPositions": {
       "1": {
         "key": 0,
@@ -1563,17 +1562,16 @@
         "value": 1
       }
     },
+    "group": 4,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "13": {
-    "shapeID": 13,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_02.Icon_Cyber04_02",
     "changePositions": {
       "1": {
         "pos": {
@@ -1696,8 +1694,9 @@
         }
       }
     },
+    "shapeID": 13,
     "note": "环都",
-    "group": 4,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_02.Icon_Cyber04_02",
     "initPositions": {
       "1": {
         "key": 0,
@@ -1716,17 +1715,16 @@
         "value": 2
       }
     },
+    "group": 4,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "14": {
-    "shapeID": 14,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_01.Icon_Cyber04_01",
     "changePositions": {
       "1": {
         "pos": {
@@ -1849,8 +1847,9 @@
         }
       }
     },
+    "shapeID": 14,
     "note": "环都",
-    "group": 4,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04_01.Icon_Cyber04_01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -1869,17 +1868,16 @@
         "value": 2
       }
     },
+    "group": 4,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "15": {
-    "shapeID": 15,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04.Icon_Cyber04",
     "changePositions": {
       "1": {
         "pos": {
@@ -2002,8 +2000,9 @@
         }
       }
     },
+    "shapeID": 15,
     "note": "环都",
-    "group": 4,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber04.Icon_Cyber04",
     "initPositions": {
       "1": {
         "key": 0,
@@ -2022,17 +2021,16 @@
         "value": 2
       }
     },
+    "group": 4,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "16": {
-    "shapeID": 16,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05.Icon_Cyber05",
     "changePositions": {
       "1": {
         "pos": {
@@ -2179,8 +2177,9 @@
         }
       }
     },
+    "shapeID": 16,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05.Icon_Cyber05",
     "initPositions": {
       "1": {
         "key": 0,
@@ -2203,17 +2202,16 @@
         "value": 2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "17": {
-    "shapeID": 17,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_01.Icon_Cyber05_01",
     "changePositions": {
       "1": {
         "pos": {
@@ -2360,8 +2358,9 @@
         }
       }
     },
+    "shapeID": 17,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_01.Icon_Cyber05_01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -2384,17 +2383,16 @@
         "value": 2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "18": {
-    "shapeID": 18,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_02.Icon_Cyber05_02",
     "changePositions": {
       "1": {
         "pos": {
@@ -2541,8 +2539,9 @@
         }
       }
     },
+    "shapeID": 18,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_02.Icon_Cyber05_02",
     "initPositions": {
       "1": {
         "key": 0,
@@ -2565,17 +2564,16 @@
         "value": 2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "19": {
-    "shapeID": 19,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_03.Icon_Cyber05_03",
     "changePositions": {
       "1": {
         "pos": {
@@ -2722,8 +2720,9 @@
         }
       }
     },
+    "shapeID": 19,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_03.Icon_Cyber05_03",
     "initPositions": {
       "1": {
         "key": 0,
@@ -2746,17 +2745,16 @@
         "value": -2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -20,
-        "x": -80
+        "x": -80,
+        "y": -20
       }
     }
   },
   "20": {
-    "shapeID": 20,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_04.Icon_Cyber05_04",
     "changePositions": {
       "1": {
         "pos": {
@@ -2903,8 +2901,9 @@
         }
       }
     },
+    "shapeID": 20,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_04.Icon_Cyber05_04",
     "initPositions": {
       "1": {
         "key": 0,
@@ -2927,17 +2926,16 @@
         "value": 2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": -30
+        "x": -30,
+        "y": -50
       }
     }
   },
   "21": {
-    "shapeID": 21,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_05.Icon_Cyber05_05",
     "changePositions": {
       "1": {
         "pos": {
@@ -3084,8 +3082,9 @@
         }
       }
     },
+    "shapeID": 21,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_05.Icon_Cyber05_05",
     "initPositions": {
       "1": {
         "key": 0,
@@ -3108,17 +3107,16 @@
         "value": 2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": -40
+        "x": -40,
+        "y": -50
       }
     }
   },
   "22": {
-    "shapeID": 22,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_06.Icon_Cyber05_06",
     "changePositions": {
       "1": {
         "pos": {
@@ -3265,8 +3263,9 @@
         }
       }
     },
+    "shapeID": 22,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_06.Icon_Cyber05_06",
     "initPositions": {
       "1": {
         "key": 0,
@@ -3289,17 +3288,16 @@
         "value": 2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "23": {
-    "shapeID": 23,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_07.Icon_Cyber05_07",
     "changePositions": {
       "1": {
         "pos": {
@@ -3446,8 +3444,9 @@
         }
       }
     },
+    "shapeID": 23,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_07.Icon_Cyber05_07",
     "initPositions": {
       "1": {
         "key": 0,
@@ -3470,17 +3469,16 @@
         "value": -2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "24": {
-    "shapeID": 24,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_08.Icon_Cyber05_08",
     "changePositions": {
       "1": {
         "pos": {
@@ -3627,8 +3625,9 @@
         }
       }
     },
+    "shapeID": 24,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_08.Icon_Cyber05_08",
     "initPositions": {
       "1": {
         "key": 0,
@@ -3651,17 +3650,16 @@
         "value": -1
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "25": {
-    "shapeID": 25,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_09.Icon_Cyber05_09",
     "changePositions": {
       "1": {
         "pos": {
@@ -3808,8 +3806,9 @@
         }
       }
     },
+    "shapeID": 25,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_09.Icon_Cyber05_09",
     "initPositions": {
       "1": {
         "key": 0,
@@ -3832,17 +3831,16 @@
         "value": -2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "26": {
-    "shapeID": 26,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_10.Icon_Cyber05_10",
     "changePositions": {
       "1": {
         "pos": {
@@ -3989,8 +3987,9 @@
         }
       }
     },
+    "shapeID": 26,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_10.Icon_Cyber05_10",
     "initPositions": {
       "1": {
         "key": 0,
@@ -4013,17 +4012,16 @@
         "value": -1
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "27": {
-    "shapeID": 27,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_11.Icon_Cyber05_11",
     "changePositions": {
       "1": {
         "pos": {
@@ -4170,8 +4168,9 @@
         }
       }
     },
+    "shapeID": 27,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_11.Icon_Cyber05_11",
     "initPositions": {
       "1": {
         "key": 0,
@@ -4194,17 +4193,16 @@
         "value": -2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "28": {
-    "shapeID": 28,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_12.Icon_Cyber05_12",
     "changePositions": {
       "1": {
         "pos": {
@@ -4351,8 +4349,9 @@
         }
       }
     },
+    "shapeID": 28,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_12.Icon_Cyber05_12",
     "initPositions": {
       "1": {
         "key": 0,
@@ -4375,17 +4374,16 @@
         "value": -1
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 60,
-        "x": -30
+        "x": -30,
+        "y": 60
       }
     }
   },
   "29": {
-    "shapeID": 29,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_13.Icon_Cyber05_13",
     "changePositions": {
       "1": {
         "pos": {
@@ -4532,8 +4530,9 @@
         }
       }
     },
+    "shapeID": 29,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_13.Icon_Cyber05_13",
     "initPositions": {
       "1": {
         "key": 0,
@@ -4556,17 +4555,16 @@
         "value": -2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 60,
-        "x": 60
+        "x": 60,
+        "y": 60
       }
     }
   },
   "30": {
-    "shapeID": 30,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_14.Icon_Cyber05_14",
     "changePositions": {
       "1": {
         "pos": {
@@ -4713,8 +4711,9 @@
         }
       }
     },
+    "shapeID": 30,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_14.Icon_Cyber05_14",
     "initPositions": {
       "1": {
         "key": 0,
@@ -4737,17 +4736,16 @@
         "value": 1
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -60,
-        "x": 0
+        "x": 0,
+        "y": -60
       }
     }
   },
   "31": {
-    "shapeID": 31,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_15.Icon_Cyber05_15",
     "changePositions": {
       "1": {
         "pos": {
@@ -4894,8 +4892,9 @@
         }
       }
     },
+    "shapeID": 31,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_15.Icon_Cyber05_15",
     "initPositions": {
       "1": {
         "key": 0,
@@ -4918,17 +4917,16 @@
         "value": 2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -30,
-        "x": 0
+        "x": 0,
+        "y": -30
       }
     }
   },
   "32": {
-    "shapeID": 32,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_16.Icon_Cyber05_16",
     "changePositions": {
       "1": {
         "pos": {
@@ -5075,8 +5073,9 @@
         }
       }
     },
+    "shapeID": 32,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_16.Icon_Cyber05_16",
     "initPositions": {
       "1": {
         "key": 0,
@@ -5099,17 +5098,16 @@
         "value": 2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -30,
-        "x": 0
+        "x": 0,
+        "y": -30
       }
     }
   },
   "33": {
-    "shapeID": 33,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_17.Icon_Cyber05_17",
     "changePositions": {
       "1": {
         "pos": {
@@ -5256,8 +5254,9 @@
         }
       }
     },
+    "shapeID": 33,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_17.Icon_Cyber05_17",
     "initPositions": {
       "1": {
         "key": 0,
@@ -5280,17 +5279,16 @@
         "value": -2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 80,
-        "x": 80
+        "x": 80,
+        "y": 80
       }
     }
   },
   "34": {
-    "shapeID": 34,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_25.Icon_Cyber05_25",
     "changePositions": {
       "1": {
         "pos": {
@@ -5437,8 +5435,9 @@
         }
       }
     },
+    "shapeID": 34,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_25.Icon_Cyber05_25",
     "initPositions": {
       "1": {
         "key": 0,
@@ -5461,17 +5460,16 @@
         "value": -2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 80,
-        "x": -80
+        "x": -80,
+        "y": 80
       }
     }
   },
   "35": {
-    "shapeID": 35,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_18.Icon_Cyber05_18",
     "changePositions": {
       "1": {
         "pos": {
@@ -5618,8 +5616,9 @@
         }
       }
     },
+    "shapeID": 35,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_18.Icon_Cyber05_18",
     "initPositions": {
       "1": {
         "key": 0,
@@ -5642,17 +5641,16 @@
         "value": 2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "36": {
-    "shapeID": 36,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_19.Icon_Cyber05_19",
     "changePositions": {
       "1": {
         "pos": {
@@ -5799,8 +5797,9 @@
         }
       }
     },
+    "shapeID": 36,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_19.Icon_Cyber05_19",
     "initPositions": {
       "1": {
         "key": 0,
@@ -5823,17 +5822,16 @@
         "value": 1
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "37": {
-    "shapeID": 37,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_20.Icon_Cyber05_20",
     "changePositions": {
       "1": {
         "pos": {
@@ -5980,8 +5978,9 @@
         }
       }
     },
+    "shapeID": 37,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_20.Icon_Cyber05_20",
     "initPositions": {
       "1": {
         "key": 0,
@@ -6004,17 +6003,16 @@
         "value": 2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 90
+        "x": 90,
+        "y": 0
       }
     }
   },
   "38": {
-    "shapeID": 38,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_22.Icon_Cyber05_22",
     "changePositions": {
       "1": {
         "pos": {
@@ -6161,8 +6159,9 @@
         }
       }
     },
+    "shapeID": 38,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_22.Icon_Cyber05_22",
     "initPositions": {
       "1": {
         "key": 0,
@@ -6185,17 +6184,16 @@
         "value": 2
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "39": {
-    "shapeID": 39,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_23.Icon_Cyber05_23",
     "changePositions": {
       "1": {
         "pos": {
@@ -6342,8 +6340,9 @@
         }
       }
     },
+    "shapeID": 39,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_23.Icon_Cyber05_23",
     "initPositions": {
       "1": {
         "key": 0,
@@ -6366,17 +6365,16 @@
         "value": 1
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "40": {
-    "shapeID": 40,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_24.Icon_Cyber05_24",
     "changePositions": {
       "1": {
         "pos": {
@@ -6523,8 +6521,9 @@
         }
       }
     },
+    "shapeID": 40,
     "note": "环都",
-    "group": 5,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber05_24.Icon_Cyber05_24",
     "initPositions": {
       "1": {
         "key": 0,
@@ -6547,17 +6546,16 @@
         "value": 0
       }
     },
+    "group": 5,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "301": {
-    "shapeID": 301,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales01.Icon_FairyTales01",
     "changePositions": {
       "1": {
         "pos": {
@@ -6568,25 +6566,25 @@
         }
       }
     },
+    "shapeID": 301,
     "note": "焦土",
-    "group": 301,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales01.Icon_FairyTales01",
     "initPositions": {
       "1": {
         "key": 0,
         "value": 0
       }
     },
+    "group": 301,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "302": {
-    "shapeID": 302,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales02.Icon_FairyTales02",
     "changePositions": {
       "1": {
         "pos": {
@@ -6661,8 +6659,9 @@
         }
       }
     },
+    "shapeID": 302,
     "note": "焦土",
-    "group": 302,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales02.Icon_FairyTales02",
     "initPositions": {
       "1": {
         "key": 0,
@@ -6673,17 +6672,16 @@
         "value": -1
       }
     },
+    "group": 302,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "303": {
-    "shapeID": 303,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales03_02.Icon_FairyTales03_02",
     "changePositions": {
       "1": {
         "pos": {
@@ -6782,8 +6780,9 @@
         }
       }
     },
+    "shapeID": 303,
     "note": "焦土",
-    "group": 303,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales03_02.Icon_FairyTales03_02",
     "initPositions": {
       "1": {
         "key": 0,
@@ -6798,17 +6797,16 @@
         "value": 1
       }
     },
+    "group": 303,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": -20
+        "x": -20,
+        "y": -50
       }
     }
   },
   "304": {
-    "shapeID": 304,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales03.Icon_FairyTales03",
     "changePositions": {
       "1": {
         "pos": {
@@ -6907,8 +6905,9 @@
         }
       }
     },
+    "shapeID": 304,
     "note": "焦土",
-    "group": 303,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales03.Icon_FairyTales03",
     "initPositions": {
       "1": {
         "key": 0,
@@ -6923,17 +6922,16 @@
         "value": 1
       }
     },
+    "group": 303,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "305": {
-    "shapeID": 305,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales03_01.Icon_FairyTales03_01",
     "changePositions": {
       "1": {
         "pos": {
@@ -7032,8 +7030,9 @@
         }
       }
     },
+    "shapeID": 305,
     "note": "焦土",
-    "group": 303,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales03_01.Icon_FairyTales03_01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -7048,17 +7047,16 @@
         "value": 1
       }
     },
+    "group": 303,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "306": {
-    "shapeID": 306,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_08.Icon_FairyTales04_08",
     "changePositions": {
       "1": {
         "pos": {
@@ -7181,8 +7179,9 @@
         }
       }
     },
+    "shapeID": 306,
     "note": "焦土",
-    "group": 304,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_08.Icon_FairyTales04_08",
     "initPositions": {
       "1": {
         "key": 0,
@@ -7201,17 +7200,16 @@
         "value": -2
       }
     },
+    "group": 304,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": -30
+        "x": -30,
+        "y": 50
       }
     }
   },
   "307": {
-    "shapeID": 307,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_09.Icon_FairyTales04_09",
     "changePositions": {
       "1": {
         "pos": {
@@ -7334,8 +7332,9 @@
         }
       }
     },
+    "shapeID": 307,
     "note": "焦土",
-    "group": 304,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_09.Icon_FairyTales04_09",
     "initPositions": {
       "1": {
         "key": 0,
@@ -7354,17 +7353,16 @@
         "value": 1
       }
     },
+    "group": 304,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "308": {
-    "shapeID": 308,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_03.Icon_FairyTales04_03",
     "changePositions": {
       "1": {
         "pos": {
@@ -7487,8 +7485,9 @@
         }
       }
     },
+    "shapeID": 308,
     "note": "焦土",
-    "group": 304,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_03.Icon_FairyTales04_03",
     "initPositions": {
       "1": {
         "key": 0,
@@ -7507,17 +7506,16 @@
         "value": -2
       }
     },
+    "group": 304,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "309": {
-    "shapeID": 309,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_04.Icon_FairyTales04_04",
     "changePositions": {
       "1": {
         "pos": {
@@ -7640,8 +7638,9 @@
         }
       }
     },
+    "shapeID": 309,
     "note": "焦土",
-    "group": 304,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_04.Icon_FairyTales04_04",
     "initPositions": {
       "1": {
         "key": 0,
@@ -7660,17 +7659,16 @@
         "value": -1
       }
     },
+    "group": 304,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 30,
-        "x": -20
+        "x": -20,
+        "y": 30
       }
     }
   },
   "310": {
-    "shapeID": 310,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_07.Icon_FairyTales04_07",
     "changePositions": {
       "1": {
         "pos": {
@@ -7793,8 +7791,9 @@
         }
       }
     },
+    "shapeID": 310,
     "note": "焦土",
-    "group": 304,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_07.Icon_FairyTales04_07",
     "initPositions": {
       "1": {
         "key": 0,
@@ -7813,17 +7812,16 @@
         "value": -1
       }
     },
+    "group": 304,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -10,
-        "x": -40
+        "x": -40,
+        "y": -10
       }
     }
   },
   "311": {
-    "shapeID": 311,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_06.Icon_FairyTales04_06",
     "changePositions": {
       "1": {
         "pos": {
@@ -7946,8 +7944,9 @@
         }
       }
     },
+    "shapeID": 311,
     "note": "焦土",
-    "group": 304,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_06.Icon_FairyTales04_06",
     "initPositions": {
       "1": {
         "key": 0,
@@ -7966,17 +7965,16 @@
         "value": 1
       }
     },
+    "group": 304,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "312": {
-    "shapeID": 312,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_05.Icon_FairyTales04_05",
     "changePositions": {
       "1": {
         "pos": {
@@ -8099,8 +8097,9 @@
         }
       }
     },
+    "shapeID": 312,
     "note": "焦土",
-    "group": 304,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_05.Icon_FairyTales04_05",
     "initPositions": {
       "1": {
         "key": 0,
@@ -8119,17 +8118,16 @@
         "value": 1
       }
     },
+    "group": 304,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "313": {
-    "shapeID": 313,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_02.Icon_FairyTales04_02",
     "changePositions": {
       "1": {
         "pos": {
@@ -8252,8 +8250,9 @@
         }
       }
     },
+    "shapeID": 313,
     "note": "焦土",
-    "group": 304,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_02.Icon_FairyTales04_02",
     "initPositions": {
       "1": {
         "key": 0,
@@ -8272,17 +8271,16 @@
         "value": 2
       }
     },
+    "group": 304,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "314": {
-    "shapeID": 314,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_01.Icon_FairyTales04_01",
     "changePositions": {
       "1": {
         "pos": {
@@ -8405,8 +8403,9 @@
         }
       }
     },
+    "shapeID": 314,
     "note": "焦土",
-    "group": 304,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04_01.Icon_FairyTales04_01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -8425,17 +8424,16 @@
         "value": 2
       }
     },
+    "group": 304,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "315": {
-    "shapeID": 315,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04.Icon_FairyTales04",
     "changePositions": {
       "1": {
         "pos": {
@@ -8558,8 +8556,9 @@
         }
       }
     },
+    "shapeID": 315,
     "note": "焦土",
-    "group": 304,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales04.Icon_FairyTales04",
     "initPositions": {
       "1": {
         "key": 0,
@@ -8578,17 +8577,16 @@
         "value": 2
       }
     },
+    "group": 304,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "316": {
-    "shapeID": 316,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05.Icon_FairyTales05",
     "changePositions": {
       "1": {
         "pos": {
@@ -8735,8 +8733,9 @@
         }
       }
     },
+    "shapeID": 316,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05.Icon_FairyTales05",
     "initPositions": {
       "1": {
         "key": 0,
@@ -8759,17 +8758,16 @@
         "value": 2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "317": {
-    "shapeID": 317,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_01.Icon_FairyTales05_01",
     "changePositions": {
       "1": {
         "pos": {
@@ -8916,8 +8914,9 @@
         }
       }
     },
+    "shapeID": 317,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_01.Icon_FairyTales05_01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -8940,17 +8939,16 @@
         "value": 2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "318": {
-    "shapeID": 318,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_02.Icon_FairyTales05_02",
     "changePositions": {
       "1": {
         "pos": {
@@ -9097,8 +9095,9 @@
         }
       }
     },
+    "shapeID": 318,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_02.Icon_FairyTales05_02",
     "initPositions": {
       "1": {
         "key": 0,
@@ -9121,17 +9120,16 @@
         "value": 2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "319": {
-    "shapeID": 319,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_03.Icon_FairyTales05_03",
     "changePositions": {
       "1": {
         "pos": {
@@ -9278,8 +9276,9 @@
         }
       }
     },
+    "shapeID": 319,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_03.Icon_FairyTales05_03",
     "initPositions": {
       "1": {
         "key": 0,
@@ -9302,17 +9301,16 @@
         "value": -2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -20,
-        "x": -80
+        "x": -80,
+        "y": -20
       }
     }
   },
   "320": {
-    "shapeID": 320,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_04.Icon_FairyTales05_04",
     "changePositions": {
       "1": {
         "pos": {
@@ -9459,8 +9457,9 @@
         }
       }
     },
+    "shapeID": 320,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_04.Icon_FairyTales05_04",
     "initPositions": {
       "1": {
         "key": 0,
@@ -9483,17 +9482,16 @@
         "value": 2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": -30
+        "x": -30,
+        "y": -50
       }
     }
   },
   "321": {
-    "shapeID": 321,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_05.Icon_FairyTales05_05",
     "changePositions": {
       "1": {
         "pos": {
@@ -9640,8 +9638,9 @@
         }
       }
     },
+    "shapeID": 321,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_05.Icon_FairyTales05_05",
     "initPositions": {
       "1": {
         "key": 0,
@@ -9664,17 +9663,16 @@
         "value": 2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": -40
+        "x": -40,
+        "y": -50
       }
     }
   },
   "322": {
-    "shapeID": 322,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_06.Icon_FairyTales05_06",
     "changePositions": {
       "1": {
         "pos": {
@@ -9821,8 +9819,9 @@
         }
       }
     },
+    "shapeID": 322,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_06.Icon_FairyTales05_06",
     "initPositions": {
       "1": {
         "key": 0,
@@ -9845,17 +9844,16 @@
         "value": 2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "323": {
-    "shapeID": 323,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_07.Icon_FairyTales05_07",
     "changePositions": {
       "1": {
         "pos": {
@@ -10002,8 +10000,9 @@
         }
       }
     },
+    "shapeID": 323,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_07.Icon_FairyTales05_07",
     "initPositions": {
       "1": {
         "key": 0,
@@ -10026,17 +10025,16 @@
         "value": -2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "324": {
-    "shapeID": 324,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_08.Icon_FairyTales05_08",
     "changePositions": {
       "1": {
         "pos": {
@@ -10183,8 +10181,9 @@
         }
       }
     },
+    "shapeID": 324,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_08.Icon_FairyTales05_08",
     "initPositions": {
       "1": {
         "key": 0,
@@ -10207,17 +10206,16 @@
         "value": -1
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "325": {
-    "shapeID": 325,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_09.Icon_FairyTales05_09",
     "changePositions": {
       "1": {
         "pos": {
@@ -10364,8 +10362,9 @@
         }
       }
     },
+    "shapeID": 325,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_09.Icon_FairyTales05_09",
     "initPositions": {
       "1": {
         "key": 0,
@@ -10388,17 +10387,16 @@
         "value": -2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "326": {
-    "shapeID": 326,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_10.Icon_FairyTales05_10",
     "changePositions": {
       "1": {
         "pos": {
@@ -10545,8 +10543,9 @@
         }
       }
     },
+    "shapeID": 326,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_10.Icon_FairyTales05_10",
     "initPositions": {
       "1": {
         "key": 0,
@@ -10569,17 +10568,16 @@
         "value": -1
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "327": {
-    "shapeID": 327,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_11.Icon_FairyTales05_11",
     "changePositions": {
       "1": {
         "pos": {
@@ -10726,8 +10724,9 @@
         }
       }
     },
+    "shapeID": 327,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_11.Icon_FairyTales05_11",
     "initPositions": {
       "1": {
         "key": 0,
@@ -10750,17 +10749,16 @@
         "value": -2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "328": {
-    "shapeID": 328,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_12.Icon_FairyTales05_12",
     "changePositions": {
       "1": {
         "pos": {
@@ -10907,8 +10905,9 @@
         }
       }
     },
+    "shapeID": 328,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_12.Icon_FairyTales05_12",
     "initPositions": {
       "1": {
         "key": 0,
@@ -10931,17 +10930,16 @@
         "value": -1
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 60,
-        "x": -30
+        "x": -30,
+        "y": 60
       }
     }
   },
   "329": {
-    "shapeID": 329,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_13.Icon_FairyTales05_13",
     "changePositions": {
       "1": {
         "pos": {
@@ -11088,8 +11086,9 @@
         }
       }
     },
+    "shapeID": 329,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_13.Icon_FairyTales05_13",
     "initPositions": {
       "1": {
         "key": 0,
@@ -11112,17 +11111,16 @@
         "value": -2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 60,
-        "x": 60
+        "x": 60,
+        "y": 60
       }
     }
   },
   "330": {
-    "shapeID": 330,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_14.Icon_FairyTales05_14",
     "changePositions": {
       "1": {
         "pos": {
@@ -11269,8 +11267,9 @@
         }
       }
     },
+    "shapeID": 330,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_14.Icon_FairyTales05_14",
     "initPositions": {
       "1": {
         "key": 0,
@@ -11293,17 +11292,16 @@
         "value": 1
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -60,
-        "x": 0
+        "x": 0,
+        "y": -60
       }
     }
   },
   "331": {
-    "shapeID": 331,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_15.Icon_FairyTales05_15",
     "changePositions": {
       "1": {
         "pos": {
@@ -11450,8 +11448,9 @@
         }
       }
     },
+    "shapeID": 331,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_15.Icon_FairyTales05_15",
     "initPositions": {
       "1": {
         "key": 0,
@@ -11474,17 +11473,16 @@
         "value": 2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -30,
-        "x": 0
+        "x": 0,
+        "y": -30
       }
     }
   },
   "332": {
-    "shapeID": 332,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_16.Icon_FairyTales05_16",
     "changePositions": {
       "1": {
         "pos": {
@@ -11631,8 +11629,9 @@
         }
       }
     },
+    "shapeID": 332,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_16.Icon_FairyTales05_16",
     "initPositions": {
       "1": {
         "key": 0,
@@ -11655,17 +11654,16 @@
         "value": 2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -30,
-        "x": 0
+        "x": 0,
+        "y": -30
       }
     }
   },
   "333": {
-    "shapeID": 333,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_17.Icon_FairyTales05_17",
     "changePositions": {
       "1": {
         "pos": {
@@ -11812,8 +11810,9 @@
         }
       }
     },
+    "shapeID": 333,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_17.Icon_FairyTales05_17",
     "initPositions": {
       "1": {
         "key": 0,
@@ -11836,17 +11835,16 @@
         "value": -2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 80,
-        "x": 80
+        "x": 80,
+        "y": 80
       }
     }
   },
   "334": {
-    "shapeID": 334,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_25.Icon_FairyTales05_25",
     "changePositions": {
       "1": {
         "pos": {
@@ -11993,8 +11991,9 @@
         }
       }
     },
+    "shapeID": 334,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_25.Icon_FairyTales05_25",
     "initPositions": {
       "1": {
         "key": 0,
@@ -12017,17 +12016,16 @@
         "value": -2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 80,
-        "x": -80
+        "x": -80,
+        "y": 80
       }
     }
   },
   "335": {
-    "shapeID": 335,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_18.Icon_FairyTales05_18",
     "changePositions": {
       "1": {
         "pos": {
@@ -12174,8 +12172,9 @@
         }
       }
     },
+    "shapeID": 335,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_18.Icon_FairyTales05_18",
     "initPositions": {
       "1": {
         "key": 0,
@@ -12198,17 +12197,16 @@
         "value": 2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "336": {
-    "shapeID": 336,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_19.Icon_FairyTales05_19",
     "changePositions": {
       "1": {
         "pos": {
@@ -12355,8 +12353,9 @@
         }
       }
     },
+    "shapeID": 336,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_19.Icon_FairyTales05_19",
     "initPositions": {
       "1": {
         "key": 0,
@@ -12379,17 +12378,16 @@
         "value": 1
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "337": {
-    "shapeID": 337,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_20.Icon_FairyTales05_20",
     "changePositions": {
       "1": {
         "pos": {
@@ -12536,8 +12534,9 @@
         }
       }
     },
+    "shapeID": 337,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_20.Icon_FairyTales05_20",
     "initPositions": {
       "1": {
         "key": 0,
@@ -12560,17 +12559,16 @@
         "value": 2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 90
+        "x": 90,
+        "y": 0
       }
     }
   },
   "338": {
-    "shapeID": 338,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_22.Icon_FairyTales05_22",
     "changePositions": {
       "1": {
         "pos": {
@@ -12717,8 +12715,9 @@
         }
       }
     },
+    "shapeID": 338,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_22.Icon_FairyTales05_22",
     "initPositions": {
       "1": {
         "key": 0,
@@ -12741,17 +12740,16 @@
         "value": 2
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "339": {
-    "shapeID": 339,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_23.Icon_FairyTales05_23",
     "changePositions": {
       "1": {
         "pos": {
@@ -12898,8 +12896,9 @@
         }
       }
     },
+    "shapeID": 339,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_23.Icon_FairyTales05_23",
     "initPositions": {
       "1": {
         "key": 0,
@@ -12922,17 +12921,16 @@
         "value": 1
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "340": {
-    "shapeID": 340,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
     "changePositions": {
       "1": {
         "pos": {
@@ -13079,8 +13077,9 @@
         }
       }
     },
+    "shapeID": 340,
     "note": "焦土",
-    "group": 305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
     "initPositions": {
       "1": {
         "key": 0,
@@ -13103,17 +13102,16 @@
         "value": 0
       }
     },
+    "group": 305,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "101": {
-    "shapeID": 101,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland01.Icon_Wasteland01",
     "changePositions": {
       "1": {
         "pos": {
@@ -13124,25 +13122,25 @@
         }
       }
     },
+    "shapeID": 101,
     "note": "焦土",
-    "group": 101,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland01.Icon_Wasteland01",
     "initPositions": {
       "1": {
         "key": 0,
         "value": 0
       }
     },
+    "group": 101,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "102": {
-    "shapeID": 102,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland02.Icon_Wasteland02",
     "changePositions": {
       "1": {
         "pos": {
@@ -13217,8 +13215,9 @@
         }
       }
     },
+    "shapeID": 102,
     "note": "焦土",
-    "group": 102,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland02.Icon_Wasteland02",
     "initPositions": {
       "1": {
         "key": 0,
@@ -13229,17 +13228,16 @@
         "value": -1
       }
     },
+    "group": 102,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "103": {
-    "shapeID": 103,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland03_02.Icon_Wasteland03_02",
     "changePositions": {
       "1": {
         "pos": {
@@ -13338,8 +13336,9 @@
         }
       }
     },
+    "shapeID": 103,
     "note": "焦土",
-    "group": 103,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland03_02.Icon_Wasteland03_02",
     "initPositions": {
       "1": {
         "key": 0,
@@ -13354,17 +13353,16 @@
         "value": 1
       }
     },
+    "group": 103,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": -20
+        "x": -20,
+        "y": -50
       }
     }
   },
   "104": {
-    "shapeID": 104,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland03.Icon_Wasteland03",
     "changePositions": {
       "1": {
         "pos": {
@@ -13463,8 +13461,9 @@
         }
       }
     },
+    "shapeID": 104,
     "note": "焦土",
-    "group": 103,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland03.Icon_Wasteland03",
     "initPositions": {
       "1": {
         "key": 0,
@@ -13479,17 +13478,16 @@
         "value": 1
       }
     },
+    "group": 103,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "105": {
-    "shapeID": 105,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland03_01.Icon_Wasteland03_01",
     "changePositions": {
       "1": {
         "pos": {
@@ -13588,8 +13586,9 @@
         }
       }
     },
+    "shapeID": 105,
     "note": "焦土",
-    "group": 103,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland03_01.Icon_Wasteland03_01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -13604,17 +13603,16 @@
         "value": 1
       }
     },
+    "group": 103,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "106": {
-    "shapeID": 106,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_08.Icon_Wasteland04_08",
     "changePositions": {
       "1": {
         "pos": {
@@ -13737,8 +13735,9 @@
         }
       }
     },
+    "shapeID": 106,
     "note": "焦土",
-    "group": 104,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_08.Icon_Wasteland04_08",
     "initPositions": {
       "1": {
         "key": 0,
@@ -13757,17 +13756,16 @@
         "value": -2
       }
     },
+    "group": 104,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": -30
+        "x": -30,
+        "y": 50
       }
     }
   },
   "107": {
-    "shapeID": 107,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_09.Icon_Wasteland04_09",
     "changePositions": {
       "1": {
         "pos": {
@@ -13890,8 +13888,9 @@
         }
       }
     },
+    "shapeID": 107,
     "note": "焦土",
-    "group": 104,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_09.Icon_Wasteland04_09",
     "initPositions": {
       "1": {
         "key": 0,
@@ -13910,17 +13909,16 @@
         "value": 1
       }
     },
+    "group": 104,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "108": {
-    "shapeID": 108,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_03.Icon_Wasteland04_03",
     "changePositions": {
       "1": {
         "pos": {
@@ -14043,8 +14041,9 @@
         }
       }
     },
+    "shapeID": 108,
     "note": "焦土",
-    "group": 104,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_03.Icon_Wasteland04_03",
     "initPositions": {
       "1": {
         "key": 0,
@@ -14063,17 +14062,16 @@
         "value": -2
       }
     },
+    "group": 104,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "109": {
-    "shapeID": 109,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_04.Icon_Wasteland04_04",
     "changePositions": {
       "1": {
         "pos": {
@@ -14196,8 +14194,9 @@
         }
       }
     },
+    "shapeID": 109,
     "note": "焦土",
-    "group": 104,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_04.Icon_Wasteland04_04",
     "initPositions": {
       "1": {
         "key": 0,
@@ -14216,17 +14215,16 @@
         "value": -1
       }
     },
+    "group": 104,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 30,
-        "x": -20
+        "x": -20,
+        "y": 30
       }
     }
   },
   "110": {
-    "shapeID": 110,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_07.Icon_Wasteland04_07",
     "changePositions": {
       "1": {
         "pos": {
@@ -14349,8 +14347,9 @@
         }
       }
     },
+    "shapeID": 110,
     "note": "焦土",
-    "group": 104,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_07.Icon_Wasteland04_07",
     "initPositions": {
       "1": {
         "key": 0,
@@ -14369,17 +14368,16 @@
         "value": -1
       }
     },
+    "group": 104,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -10,
-        "x": -40
+        "x": -40,
+        "y": -10
       }
     }
   },
   "111": {
-    "shapeID": 111,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_06.Icon_Wasteland04_06",
     "changePositions": {
       "1": {
         "pos": {
@@ -14502,8 +14500,9 @@
         }
       }
     },
+    "shapeID": 111,
     "note": "焦土",
-    "group": 104,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_06.Icon_Wasteland04_06",
     "initPositions": {
       "1": {
         "key": 0,
@@ -14522,17 +14521,16 @@
         "value": 1
       }
     },
+    "group": 104,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "112": {
-    "shapeID": 112,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_05.Icon_Wasteland04_05",
     "changePositions": {
       "1": {
         "pos": {
@@ -14655,8 +14653,9 @@
         }
       }
     },
+    "shapeID": 112,
     "note": "焦土",
-    "group": 104,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_05.Icon_Wasteland04_05",
     "initPositions": {
       "1": {
         "key": 0,
@@ -14675,17 +14674,16 @@
         "value": 1
       }
     },
+    "group": 104,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "113": {
-    "shapeID": 113,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_02.Icon_Wasteland04_02",
     "changePositions": {
       "1": {
         "pos": {
@@ -14808,8 +14806,9 @@
         }
       }
     },
+    "shapeID": 113,
     "note": "焦土",
-    "group": 104,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_02.Icon_Wasteland04_02",
     "initPositions": {
       "1": {
         "key": 0,
@@ -14828,17 +14827,16 @@
         "value": 2
       }
     },
+    "group": 104,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "114": {
-    "shapeID": 114,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_01.Icon_Wasteland04_01",
     "changePositions": {
       "1": {
         "pos": {
@@ -14961,8 +14959,9 @@
         }
       }
     },
+    "shapeID": 114,
     "note": "焦土",
-    "group": 104,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04_01.Icon_Wasteland04_01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -14981,17 +14980,16 @@
         "value": 2
       }
     },
+    "group": 104,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "115": {
-    "shapeID": 115,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04.Icon_Wasteland04",
     "changePositions": {
       "1": {
         "pos": {
@@ -15114,8 +15112,9 @@
         }
       }
     },
+    "shapeID": 115,
     "note": "焦土",
-    "group": 104,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland04.Icon_Wasteland04",
     "initPositions": {
       "1": {
         "key": 0,
@@ -15134,17 +15133,16 @@
         "value": 2
       }
     },
+    "group": 104,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "116": {
-    "shapeID": 116,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05.Icon_Wasteland05",
     "changePositions": {
       "1": {
         "pos": {
@@ -15291,8 +15289,9 @@
         }
       }
     },
+    "shapeID": 116,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05.Icon_Wasteland05",
     "initPositions": {
       "1": {
         "key": 0,
@@ -15315,17 +15314,16 @@
         "value": 2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "117": {
-    "shapeID": 117,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_01.Icon_Wasteland05_01",
     "changePositions": {
       "1": {
         "pos": {
@@ -15472,8 +15470,9 @@
         }
       }
     },
+    "shapeID": 117,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_01.Icon_Wasteland05_01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -15496,17 +15495,16 @@
         "value": 2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "118": {
-    "shapeID": 118,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_02.Icon_Wasteland05_02",
     "changePositions": {
       "1": {
         "pos": {
@@ -15653,8 +15651,9 @@
         }
       }
     },
+    "shapeID": 118,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_02.Icon_Wasteland05_02",
     "initPositions": {
       "1": {
         "key": 0,
@@ -15677,17 +15676,16 @@
         "value": 2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "119": {
-    "shapeID": 119,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_03.Icon_Wasteland05_03",
     "changePositions": {
       "1": {
         "pos": {
@@ -15834,8 +15832,9 @@
         }
       }
     },
+    "shapeID": 119,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_03.Icon_Wasteland05_03",
     "initPositions": {
       "1": {
         "key": 0,
@@ -15858,17 +15857,16 @@
         "value": -2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -20,
-        "x": -80
+        "x": -80,
+        "y": -20
       }
     }
   },
   "120": {
-    "shapeID": 120,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_04.Icon_Wasteland05_04",
     "changePositions": {
       "1": {
         "pos": {
@@ -16015,8 +16013,9 @@
         }
       }
     },
+    "shapeID": 120,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_04.Icon_Wasteland05_04",
     "initPositions": {
       "1": {
         "key": 0,
@@ -16039,17 +16038,16 @@
         "value": 2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": -30
+        "x": -30,
+        "y": -50
       }
     }
   },
   "121": {
-    "shapeID": 121,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_05.Icon_Wasteland05_05",
     "changePositions": {
       "1": {
         "pos": {
@@ -16196,8 +16194,9 @@
         }
       }
     },
+    "shapeID": 121,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_05.Icon_Wasteland05_05",
     "initPositions": {
       "1": {
         "key": 0,
@@ -16220,17 +16219,16 @@
         "value": 2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": -40
+        "x": -40,
+        "y": -50
       }
     }
   },
   "122": {
-    "shapeID": 122,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_06.Icon_Wasteland05_06",
     "changePositions": {
       "1": {
         "pos": {
@@ -16377,8 +16375,9 @@
         }
       }
     },
+    "shapeID": 122,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_06.Icon_Wasteland05_06",
     "initPositions": {
       "1": {
         "key": 0,
@@ -16401,17 +16400,16 @@
         "value": 2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "123": {
-    "shapeID": 123,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_07.Icon_Wasteland05_07",
     "changePositions": {
       "1": {
         "pos": {
@@ -16558,8 +16556,9 @@
         }
       }
     },
+    "shapeID": 123,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_07.Icon_Wasteland05_07",
     "initPositions": {
       "1": {
         "key": 0,
@@ -16582,17 +16581,16 @@
         "value": -2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "124": {
-    "shapeID": 124,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_08.Icon_Wasteland05_08",
     "changePositions": {
       "1": {
         "pos": {
@@ -16739,8 +16737,9 @@
         }
       }
     },
+    "shapeID": 124,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_08.Icon_Wasteland05_08",
     "initPositions": {
       "1": {
         "key": 0,
@@ -16763,17 +16762,16 @@
         "value": -1
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "125": {
-    "shapeID": 125,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_09.Icon_Wasteland05_09",
     "changePositions": {
       "1": {
         "pos": {
@@ -16920,8 +16918,9 @@
         }
       }
     },
+    "shapeID": 125,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_09.Icon_Wasteland05_09",
     "initPositions": {
       "1": {
         "key": 0,
@@ -16944,17 +16943,16 @@
         "value": -2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "126": {
-    "shapeID": 126,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_10.Icon_Wasteland05_10",
     "changePositions": {
       "1": {
         "pos": {
@@ -17101,8 +17099,9 @@
         }
       }
     },
+    "shapeID": 126,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_10.Icon_Wasteland05_10",
     "initPositions": {
       "1": {
         "key": 0,
@@ -17125,17 +17124,16 @@
         "value": -1
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "127": {
-    "shapeID": 127,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_11.Icon_Wasteland05_11",
     "changePositions": {
       "1": {
         "pos": {
@@ -17282,8 +17280,9 @@
         }
       }
     },
+    "shapeID": 127,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_11.Icon_Wasteland05_11",
     "initPositions": {
       "1": {
         "key": 0,
@@ -17306,17 +17305,16 @@
         "value": -2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "128": {
-    "shapeID": 128,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_12.Icon_Wasteland05_12",
     "changePositions": {
       "1": {
         "pos": {
@@ -17463,8 +17461,9 @@
         }
       }
     },
+    "shapeID": 128,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_12.Icon_Wasteland05_12",
     "initPositions": {
       "1": {
         "key": 0,
@@ -17487,17 +17486,16 @@
         "value": -1
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 60,
-        "x": -30
+        "x": -30,
+        "y": 60
       }
     }
   },
   "129": {
-    "shapeID": 129,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_13.Icon_Wasteland05_13",
     "changePositions": {
       "1": {
         "pos": {
@@ -17644,8 +17642,9 @@
         }
       }
     },
+    "shapeID": 129,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_13.Icon_Wasteland05_13",
     "initPositions": {
       "1": {
         "key": 0,
@@ -17668,17 +17667,16 @@
         "value": -2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 60,
-        "x": 60
+        "x": 60,
+        "y": 60
       }
     }
   },
   "130": {
-    "shapeID": 130,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_14.Icon_Wasteland05_14",
     "changePositions": {
       "1": {
         "pos": {
@@ -17825,8 +17823,9 @@
         }
       }
     },
+    "shapeID": 130,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_14.Icon_Wasteland05_14",
     "initPositions": {
       "1": {
         "key": 0,
@@ -17849,17 +17848,16 @@
         "value": 1
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -60,
-        "x": 0
+        "x": 0,
+        "y": -60
       }
     }
   },
   "131": {
-    "shapeID": 131,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_15.Icon_Wasteland05_15",
     "changePositions": {
       "1": {
         "pos": {
@@ -18006,8 +18004,9 @@
         }
       }
     },
+    "shapeID": 131,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_15.Icon_Wasteland05_15",
     "initPositions": {
       "1": {
         "key": 0,
@@ -18030,17 +18029,16 @@
         "value": 2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -30,
-        "x": 0
+        "x": 0,
+        "y": -30
       }
     }
   },
   "132": {
-    "shapeID": 132,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_16.Icon_Wasteland05_16",
     "changePositions": {
       "1": {
         "pos": {
@@ -18187,8 +18185,9 @@
         }
       }
     },
+    "shapeID": 132,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_16.Icon_Wasteland05_16",
     "initPositions": {
       "1": {
         "key": 0,
@@ -18211,17 +18210,16 @@
         "value": 2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -30,
-        "x": 0
+        "x": 0,
+        "y": -30
       }
     }
   },
   "133": {
-    "shapeID": 133,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_17.Icon_Wasteland05_17",
     "changePositions": {
       "1": {
         "pos": {
@@ -18368,8 +18366,9 @@
         }
       }
     },
+    "shapeID": 133,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_17.Icon_Wasteland05_17",
     "initPositions": {
       "1": {
         "key": 0,
@@ -18392,17 +18391,16 @@
         "value": -2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 80,
-        "x": 80
+        "x": 80,
+        "y": 80
       }
     }
   },
   "134": {
-    "shapeID": 134,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_25.Icon_Wasteland05_25",
     "changePositions": {
       "1": {
         "pos": {
@@ -18549,8 +18547,9 @@
         }
       }
     },
+    "shapeID": 134,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_25.Icon_Wasteland05_25",
     "initPositions": {
       "1": {
         "key": 0,
@@ -18573,17 +18572,16 @@
         "value": -2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 80,
-        "x": -80
+        "x": -80,
+        "y": 80
       }
     }
   },
   "135": {
-    "shapeID": 135,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_18.Icon_Wasteland05_18",
     "changePositions": {
       "1": {
         "pos": {
@@ -18730,8 +18728,9 @@
         }
       }
     },
+    "shapeID": 135,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_18.Icon_Wasteland05_18",
     "initPositions": {
       "1": {
         "key": 0,
@@ -18754,17 +18753,16 @@
         "value": 2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "136": {
-    "shapeID": 136,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_19.Icon_Wasteland05_19",
     "changePositions": {
       "1": {
         "pos": {
@@ -18911,8 +18909,9 @@
         }
       }
     },
+    "shapeID": 136,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_19.Icon_Wasteland05_19",
     "initPositions": {
       "1": {
         "key": 0,
@@ -18935,17 +18934,16 @@
         "value": 1
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "137": {
-    "shapeID": 137,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_20.Icon_Wasteland05_20",
     "changePositions": {
       "1": {
         "pos": {
@@ -19092,8 +19090,9 @@
         }
       }
     },
+    "shapeID": 137,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_20.Icon_Wasteland05_20",
     "initPositions": {
       "1": {
         "key": 0,
@@ -19116,17 +19115,16 @@
         "value": 2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 90
+        "x": 90,
+        "y": 0
       }
     }
   },
   "138": {
-    "shapeID": 138,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_22.Icon_Wasteland05_22",
     "changePositions": {
       "1": {
         "pos": {
@@ -19273,8 +19271,9 @@
         }
       }
     },
+    "shapeID": 138,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_22.Icon_Wasteland05_22",
     "initPositions": {
       "1": {
         "key": 0,
@@ -19297,17 +19296,16 @@
         "value": 2
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "139": {
-    "shapeID": 139,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_23.Icon_Wasteland05_23",
     "changePositions": {
       "1": {
         "pos": {
@@ -19454,8 +19452,9 @@
         }
       }
     },
+    "shapeID": 139,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_23.Icon_Wasteland05_23",
     "initPositions": {
       "1": {
         "key": 0,
@@ -19478,17 +19477,16 @@
         "value": 1
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "140": {
-    "shapeID": 140,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_24.Icon_Wasteland05_24",
     "changePositions": {
       "1": {
         "pos": {
@@ -19635,8 +19633,9 @@
         }
       }
     },
+    "shapeID": 140,
     "note": "焦土",
-    "group": 105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland05_24.Icon_Wasteland05_24",
     "initPositions": {
       "1": {
         "key": 0,
@@ -19659,17 +19658,16 @@
         "value": 0
       }
     },
+    "group": 105,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "1055": {
-    "shapeID": 1055,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "changePositions": {
       "1": {
         "pos": {
@@ -19692,8 +19690,9 @@
         }
       }
     },
+    "shapeID": 1055,
     "note": "",
-    "group": 1004,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -19712,11 +19711,10 @@
         "value": 2
       }
     },
+    "group": 1004,
     "DevelopViewOffsetAndScale": {}
   },
   "1054": {
-    "shapeID": 1054,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
     "changePositions": {
       "1": {
         "pos": {
@@ -19743,8 +19741,9 @@
         }
       }
     },
+    "shapeID": 1054,
     "note": "",
-    "group": 1305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
     "initPositions": {
       "1": {
         "key": 0,
@@ -19767,11 +19766,10 @@
         "value": 0
       }
     },
+    "group": 1305,
     "DevelopViewOffsetAndScale": {}
   },
   "1053": {
-    "shapeID": 1053,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
     "changePositions": {
       "1": {
         "pos": {
@@ -19798,8 +19796,9 @@
         }
       }
     },
+    "shapeID": 1053,
     "note": "",
-    "group": 1205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
     "initPositions": {
       "1": {
         "key": 0,
@@ -19822,11 +19821,10 @@
         "value": 0
       }
     },
+    "group": 1205,
     "DevelopViewOffsetAndScale": {}
   },
   "1052": {
-    "shapeID": 1052,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland01.Icon_Wasteland01",
     "changePositions": {
       "1": {
         "pos": {
@@ -19853,8 +19851,9 @@
         }
       }
     },
+    "shapeID": 1052,
     "note": "",
-    "group": 1105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland01.Icon_Wasteland01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -19877,11 +19876,10 @@
         "value": 0
       }
     },
+    "group": 1105,
     "DevelopViewOffsetAndScale": {}
   },
   "1051": {
-    "shapeID": 1051,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "changePositions": {
       "1": {
         "pos": {
@@ -19908,8 +19906,9 @@
         }
       }
     },
+    "shapeID": 1051,
     "note": "",
-    "group": 1005,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -19932,11 +19931,10 @@
         "value": 0
       }
     },
+    "group": 1005,
     "DevelopViewOffsetAndScale": {}
   },
   "1045": {
-    "shapeID": 1045,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "changePositions": {
       "1": {
         "pos": {
@@ -19959,8 +19957,9 @@
         }
       }
     },
+    "shapeID": 1045,
     "note": "",
-    "group": 1004,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -19979,11 +19978,10 @@
         "value": 2
       }
     },
+    "group": 1004,
     "DevelopViewOffsetAndScale": {}
   },
   "1044": {
-    "shapeID": 1044,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
     "changePositions": {
       "1": {
         "pos": {
@@ -20010,8 +20008,9 @@
         }
       }
     },
+    "shapeID": 1044,
     "note": "",
-    "group": 1305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
     "initPositions": {
       "1": {
         "key": 0,
@@ -20034,11 +20033,10 @@
         "value": 0
       }
     },
+    "group": 1305,
     "DevelopViewOffsetAndScale": {}
   },
   "1043": {
-    "shapeID": 1043,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
     "changePositions": {
       "1": {
         "pos": {
@@ -20065,8 +20063,9 @@
         }
       }
     },
+    "shapeID": 1043,
     "note": "",
-    "group": 1205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
     "initPositions": {
       "1": {
         "key": 0,
@@ -20089,11 +20088,10 @@
         "value": 0
       }
     },
+    "group": 1205,
     "DevelopViewOffsetAndScale": {}
   },
   "1042": {
-    "shapeID": 1042,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland01.Icon_Wasteland01",
     "changePositions": {
       "1": {
         "pos": {
@@ -20120,8 +20118,9 @@
         }
       }
     },
+    "shapeID": 1042,
     "note": "",
-    "group": 1105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland01.Icon_Wasteland01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -20144,11 +20143,10 @@
         "value": 0
       }
     },
+    "group": 1105,
     "DevelopViewOffsetAndScale": {}
   },
   "1041": {
-    "shapeID": 1041,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "changePositions": {
       "1": {
         "pos": {
@@ -20175,8 +20173,9 @@
         }
       }
     },
+    "shapeID": 1041,
     "note": "",
-    "group": 1005,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -20199,11 +20198,10 @@
         "value": 1
       }
     },
+    "group": 1005,
     "DevelopViewOffsetAndScale": {}
   },
   "1035": {
-    "shapeID": 1035,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "changePositions": {
       "1": {
         "pos": {
@@ -20226,8 +20224,9 @@
         }
       }
     },
+    "shapeID": 1035,
     "note": "",
-    "group": 1004,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -20246,11 +20245,10 @@
         "value": 2
       }
     },
+    "group": 1004,
     "DevelopViewOffsetAndScale": {}
   },
   "1034": {
-    "shapeID": 1034,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
     "changePositions": {
       "1": {
         "pos": {
@@ -20277,8 +20275,9 @@
         }
       }
     },
+    "shapeID": 1034,
     "note": "",
-    "group": 1305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
     "initPositions": {
       "1": {
         "key": 0,
@@ -20301,11 +20300,10 @@
         "value": 0
       }
     },
+    "group": 1305,
     "DevelopViewOffsetAndScale": {}
   },
   "1033": {
-    "shapeID": 1033,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
     "changePositions": {
       "1": {
         "pos": {
@@ -20332,8 +20330,9 @@
         }
       }
     },
+    "shapeID": 1033,
     "note": "",
-    "group": 1205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
     "initPositions": {
       "1": {
         "key": 0,
@@ -20356,11 +20355,10 @@
         "value": 0
       }
     },
+    "group": 1205,
     "DevelopViewOffsetAndScale": {}
   },
   "1032": {
-    "shapeID": 1032,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland01.Icon_Wasteland01",
     "changePositions": {
       "1": {
         "pos": {
@@ -20387,8 +20385,9 @@
         }
       }
     },
+    "shapeID": 1032,
     "note": "",
-    "group": 1105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland01.Icon_Wasteland01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -20411,11 +20410,10 @@
         "value": 0
       }
     },
+    "group": 1105,
     "DevelopViewOffsetAndScale": {}
   },
   "1031": {
-    "shapeID": 1031,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "changePositions": {
       "1": {
         "pos": {
@@ -20442,8 +20440,9 @@
         }
       }
     },
+    "shapeID": 1031,
     "note": "",
-    "group": 1005,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -20466,11 +20465,10 @@
         "value": 0
       }
     },
+    "group": 1005,
     "DevelopViewOffsetAndScale": {}
   },
   "201": {
-    "shapeID": 201,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar01.Icon_Interstellar01",
     "changePositions": {
       "1": {
         "pos": {
@@ -20481,25 +20479,25 @@
         }
       }
     },
+    "shapeID": 201,
     "note": "环都",
-    "group": 201,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar01.Icon_Interstellar01",
     "initPositions": {
       "1": {
         "key": 0,
         "value": 0
       }
     },
+    "group": 201,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "202": {
-    "shapeID": 202,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar02.Icon_Interstellar02",
     "changePositions": {
       "1": {
         "pos": {
@@ -20574,8 +20572,9 @@
         }
       }
     },
+    "shapeID": 202,
     "note": "环都",
-    "group": 202,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar02.Icon_Interstellar02",
     "initPositions": {
       "1": {
         "key": 0,
@@ -20586,17 +20585,16 @@
         "value": -1
       }
     },
+    "group": 202,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "203": {
-    "shapeID": 203,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar03_02.Icon_Interstellar03_02",
     "changePositions": {
       "1": {
         "pos": {
@@ -20695,8 +20693,9 @@
         }
       }
     },
+    "shapeID": 203,
     "note": "环都",
-    "group": 203,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar03_02.Icon_Interstellar03_02",
     "initPositions": {
       "1": {
         "key": 0,
@@ -20711,17 +20710,16 @@
         "value": 1
       }
     },
+    "group": 203,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": -20
+        "x": -20,
+        "y": -50
       }
     }
   },
   "204": {
-    "shapeID": 204,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar03.Icon_Interstellar03",
     "changePositions": {
       "1": {
         "pos": {
@@ -20820,8 +20818,9 @@
         }
       }
     },
+    "shapeID": 204,
     "note": "环都",
-    "group": 203,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar03.Icon_Interstellar03",
     "initPositions": {
       "1": {
         "key": 0,
@@ -20836,17 +20835,16 @@
         "value": 1
       }
     },
+    "group": 203,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "205": {
-    "shapeID": 205,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar03_01.Icon_Interstellar03_01",
     "changePositions": {
       "1": {
         "pos": {
@@ -20945,8 +20943,9 @@
         }
       }
     },
+    "shapeID": 205,
     "note": "环都",
-    "group": 203,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar03_01.Icon_Interstellar03_01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -20961,17 +20960,16 @@
         "value": 1
       }
     },
+    "group": 203,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "206": {
-    "shapeID": 206,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_08.Icon_Interstellar04_08",
     "changePositions": {
       "1": {
         "pos": {
@@ -21094,8 +21092,9 @@
         }
       }
     },
+    "shapeID": 206,
     "note": "环都",
-    "group": 204,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_08.Icon_Interstellar04_08",
     "initPositions": {
       "1": {
         "key": 0,
@@ -21114,17 +21113,16 @@
         "value": -2
       }
     },
+    "group": 204,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": -30
+        "x": -30,
+        "y": 50
       }
     }
   },
   "207": {
-    "shapeID": 207,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_09.Icon_Interstellar04_09",
     "changePositions": {
       "1": {
         "pos": {
@@ -21247,8 +21245,9 @@
         }
       }
     },
+    "shapeID": 207,
     "note": "环都",
-    "group": 204,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_09.Icon_Interstellar04_09",
     "initPositions": {
       "1": {
         "key": 0,
@@ -21267,17 +21266,16 @@
         "value": 1
       }
     },
+    "group": 204,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "208": {
-    "shapeID": 208,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_03.Icon_Interstellar04_03",
     "changePositions": {
       "1": {
         "pos": {
@@ -21400,8 +21398,9 @@
         }
       }
     },
+    "shapeID": 208,
     "note": "环都",
-    "group": 204,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_03.Icon_Interstellar04_03",
     "initPositions": {
       "1": {
         "key": 0,
@@ -21420,17 +21419,16 @@
         "value": -2
       }
     },
+    "group": 204,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "209": {
-    "shapeID": 209,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_04.Icon_Interstellar04_04",
     "changePositions": {
       "1": {
         "pos": {
@@ -21553,8 +21551,9 @@
         }
       }
     },
+    "shapeID": 209,
     "note": "环都",
-    "group": 204,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_04.Icon_Interstellar04_04",
     "initPositions": {
       "1": {
         "key": 0,
@@ -21573,17 +21572,16 @@
         "value": -1
       }
     },
+    "group": 204,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 30,
-        "x": -20
+        "x": -20,
+        "y": 30
       }
     }
   },
   "210": {
-    "shapeID": 210,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_07.Icon_Interstellar04_07",
     "changePositions": {
       "1": {
         "pos": {
@@ -21706,8 +21704,9 @@
         }
       }
     },
+    "shapeID": 210,
     "note": "环都",
-    "group": 204,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_07.Icon_Interstellar04_07",
     "initPositions": {
       "1": {
         "key": 0,
@@ -21726,17 +21725,16 @@
         "value": -1
       }
     },
+    "group": 204,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -10,
-        "x": -40
+        "x": -40,
+        "y": -10
       }
     }
   },
   "211": {
-    "shapeID": 211,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_06.Icon_Interstellar04_06",
     "changePositions": {
       "1": {
         "pos": {
@@ -21859,8 +21857,9 @@
         }
       }
     },
+    "shapeID": 211,
     "note": "环都",
-    "group": 204,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_06.Icon_Interstellar04_06",
     "initPositions": {
       "1": {
         "key": 0,
@@ -21879,17 +21878,16 @@
         "value": 1
       }
     },
+    "group": 204,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "212": {
-    "shapeID": 212,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_05.Icon_Interstellar04_05",
     "changePositions": {
       "1": {
         "pos": {
@@ -22012,8 +22010,9 @@
         }
       }
     },
+    "shapeID": 212,
     "note": "环都",
-    "group": 204,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_05.Icon_Interstellar04_05",
     "initPositions": {
       "1": {
         "key": 0,
@@ -22032,17 +22031,16 @@
         "value": 1
       }
     },
+    "group": 204,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "213": {
-    "shapeID": 213,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_02.Icon_Interstellar04_02",
     "changePositions": {
       "1": {
         "pos": {
@@ -22165,8 +22163,9 @@
         }
       }
     },
+    "shapeID": 213,
     "note": "环都",
-    "group": 204,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_02.Icon_Interstellar04_02",
     "initPositions": {
       "1": {
         "key": 0,
@@ -22185,17 +22184,16 @@
         "value": 2
       }
     },
+    "group": 204,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "214": {
-    "shapeID": 214,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_01.Icon_Interstellar04_01",
     "changePositions": {
       "1": {
         "pos": {
@@ -22318,8 +22316,9 @@
         }
       }
     },
+    "shapeID": 214,
     "note": "环都",
-    "group": 204,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04_01.Icon_Interstellar04_01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -22338,17 +22337,16 @@
         "value": 2
       }
     },
+    "group": 204,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "215": {
-    "shapeID": 215,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04.Icon_Interstellar04",
     "changePositions": {
       "1": {
         "pos": {
@@ -22471,8 +22469,9 @@
         }
       }
     },
+    "shapeID": 215,
     "note": "环都",
-    "group": 204,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar04.Icon_Interstellar04",
     "initPositions": {
       "1": {
         "key": 0,
@@ -22491,17 +22490,16 @@
         "value": 2
       }
     },
+    "group": 204,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "216": {
-    "shapeID": 216,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05.Icon_Interstellar05",
     "changePositions": {
       "1": {
         "pos": {
@@ -22648,8 +22646,9 @@
         }
       }
     },
+    "shapeID": 216,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05.Icon_Interstellar05",
     "initPositions": {
       "1": {
         "key": 0,
@@ -22672,17 +22671,16 @@
         "value": 2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "217": {
-    "shapeID": 217,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_01.Icon_Interstellar05_01",
     "changePositions": {
       "1": {
         "pos": {
@@ -22829,8 +22827,9 @@
         }
       }
     },
+    "shapeID": 217,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_01.Icon_Interstellar05_01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -22853,17 +22852,16 @@
         "value": 2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "218": {
-    "shapeID": 218,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_02.Icon_Interstellar05_02",
     "changePositions": {
       "1": {
         "pos": {
@@ -23010,8 +23008,9 @@
         }
       }
     },
+    "shapeID": 218,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_02.Icon_Interstellar05_02",
     "initPositions": {
       "1": {
         "key": 0,
@@ -23034,17 +23033,16 @@
         "value": 2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "219": {
-    "shapeID": 219,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_03.Icon_Interstellar05_03",
     "changePositions": {
       "1": {
         "pos": {
@@ -23191,8 +23189,9 @@
         }
       }
     },
+    "shapeID": 219,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_03.Icon_Interstellar05_03",
     "initPositions": {
       "1": {
         "key": 0,
@@ -23215,17 +23214,16 @@
         "value": -2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -20,
-        "x": -80
+        "x": -80,
+        "y": -20
       }
     }
   },
   "220": {
-    "shapeID": 220,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_04.Icon_Interstellar05_04",
     "changePositions": {
       "1": {
         "pos": {
@@ -23372,8 +23370,9 @@
         }
       }
     },
+    "shapeID": 220,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_04.Icon_Interstellar05_04",
     "initPositions": {
       "1": {
         "key": 0,
@@ -23396,17 +23395,16 @@
         "value": 2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": -30
+        "x": -30,
+        "y": -50
       }
     }
   },
   "221": {
-    "shapeID": 221,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_05.Icon_Interstellar05_05",
     "changePositions": {
       "1": {
         "pos": {
@@ -23553,8 +23551,9 @@
         }
       }
     },
+    "shapeID": 221,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_05.Icon_Interstellar05_05",
     "initPositions": {
       "1": {
         "key": 0,
@@ -23577,17 +23576,16 @@
         "value": 2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": -40
+        "x": -40,
+        "y": -50
       }
     }
   },
   "222": {
-    "shapeID": 222,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_06.Icon_Interstellar05_06",
     "changePositions": {
       "1": {
         "pos": {
@@ -23734,8 +23732,9 @@
         }
       }
     },
+    "shapeID": 222,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_06.Icon_Interstellar05_06",
     "initPositions": {
       "1": {
         "key": 0,
@@ -23758,17 +23757,16 @@
         "value": 2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -50,
-        "x": 0
+        "x": 0,
+        "y": -50
       }
     }
   },
   "223": {
-    "shapeID": 223,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_07.Icon_Interstellar05_07",
     "changePositions": {
       "1": {
         "pos": {
@@ -23915,8 +23913,9 @@
         }
       }
     },
+    "shapeID": 223,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_07.Icon_Interstellar05_07",
     "initPositions": {
       "1": {
         "key": 0,
@@ -23939,17 +23938,16 @@
         "value": -2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "224": {
-    "shapeID": 224,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_08.Icon_Interstellar05_08",
     "changePositions": {
       "1": {
         "pos": {
@@ -24096,8 +24094,9 @@
         }
       }
     },
+    "shapeID": 224,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_08.Icon_Interstellar05_08",
     "initPositions": {
       "1": {
         "key": 0,
@@ -24120,17 +24119,16 @@
         "value": -1
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "225": {
-    "shapeID": 225,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_09.Icon_Interstellar05_09",
     "changePositions": {
       "1": {
         "pos": {
@@ -24277,8 +24275,9 @@
         }
       }
     },
+    "shapeID": 225,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_09.Icon_Interstellar05_09",
     "initPositions": {
       "1": {
         "key": 0,
@@ -24301,17 +24300,16 @@
         "value": -2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "226": {
-    "shapeID": 226,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_10.Icon_Interstellar05_10",
     "changePositions": {
       "1": {
         "pos": {
@@ -24458,8 +24456,9 @@
         }
       }
     },
+    "shapeID": 226,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_10.Icon_Interstellar05_10",
     "initPositions": {
       "1": {
         "key": 0,
@@ -24482,17 +24481,16 @@
         "value": -1
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 50,
-        "x": 0
+        "x": 0,
+        "y": 50
       }
     }
   },
   "227": {
-    "shapeID": 227,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_11.Icon_Interstellar05_11",
     "changePositions": {
       "1": {
         "pos": {
@@ -24639,8 +24637,9 @@
         }
       }
     },
+    "shapeID": 227,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_11.Icon_Interstellar05_11",
     "initPositions": {
       "1": {
         "key": 0,
@@ -24663,17 +24662,16 @@
         "value": -2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "228": {
-    "shapeID": 228,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_12.Icon_Interstellar05_12",
     "changePositions": {
       "1": {
         "pos": {
@@ -24820,8 +24818,9 @@
         }
       }
     },
+    "shapeID": 228,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_12.Icon_Interstellar05_12",
     "initPositions": {
       "1": {
         "key": 0,
@@ -24844,17 +24843,16 @@
         "value": -1
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 60,
-        "x": -30
+        "x": -30,
+        "y": 60
       }
     }
   },
   "229": {
-    "shapeID": 229,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_13.Icon_Interstellar05_13",
     "changePositions": {
       "1": {
         "pos": {
@@ -25001,8 +24999,9 @@
         }
       }
     },
+    "shapeID": 229,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_13.Icon_Interstellar05_13",
     "initPositions": {
       "1": {
         "key": 0,
@@ -25025,17 +25024,16 @@
         "value": -2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 60,
-        "x": 60
+        "x": 60,
+        "y": 60
       }
     }
   },
   "230": {
-    "shapeID": 230,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_14.Icon_Interstellar05_14",
     "changePositions": {
       "1": {
         "pos": {
@@ -25182,8 +25180,9 @@
         }
       }
     },
+    "shapeID": 230,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_14.Icon_Interstellar05_14",
     "initPositions": {
       "1": {
         "key": 0,
@@ -25206,17 +25205,16 @@
         "value": 1
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -60,
-        "x": 0
+        "x": 0,
+        "y": -60
       }
     }
   },
   "231": {
-    "shapeID": 231,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_15.Icon_Interstellar05_15",
     "changePositions": {
       "1": {
         "pos": {
@@ -25363,8 +25361,9 @@
         }
       }
     },
+    "shapeID": 231,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_15.Icon_Interstellar05_15",
     "initPositions": {
       "1": {
         "key": 0,
@@ -25387,17 +25386,16 @@
         "value": 2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -30,
-        "x": 0
+        "x": 0,
+        "y": -30
       }
     }
   },
   "232": {
-    "shapeID": 232,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_16.Icon_Interstellar05_16",
     "changePositions": {
       "1": {
         "pos": {
@@ -25544,8 +25542,9 @@
         }
       }
     },
+    "shapeID": 232,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_16.Icon_Interstellar05_16",
     "initPositions": {
       "1": {
         "key": 0,
@@ -25568,17 +25567,16 @@
         "value": 2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": -30,
-        "x": 0
+        "x": 0,
+        "y": -30
       }
     }
   },
   "233": {
-    "shapeID": 233,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_17.Icon_Interstellar05_17",
     "changePositions": {
       "1": {
         "pos": {
@@ -25725,8 +25723,9 @@
         }
       }
     },
+    "shapeID": 233,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_17.Icon_Interstellar05_17",
     "initPositions": {
       "1": {
         "key": 0,
@@ -25749,17 +25748,16 @@
         "value": -2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 80,
-        "x": 80
+        "x": 80,
+        "y": 80
       }
     }
   },
   "234": {
-    "shapeID": 234,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
     "changePositions": {
       "1": {
         "pos": {
@@ -25906,8 +25904,9 @@
         }
       }
     },
+    "shapeID": 234,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
     "initPositions": {
       "1": {
         "key": 0,
@@ -25930,17 +25929,16 @@
         "value": -2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 80,
-        "x": -80
+        "x": -80,
+        "y": 80
       }
     }
   },
   "235": {
-    "shapeID": 235,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_18.Icon_Interstellar05_18",
     "changePositions": {
       "1": {
         "pos": {
@@ -26087,8 +26085,9 @@
         }
       }
     },
+    "shapeID": 235,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_18.Icon_Interstellar05_18",
     "initPositions": {
       "1": {
         "key": 0,
@@ -26111,17 +26110,16 @@
         "value": 2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "236": {
-    "shapeID": 236,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_19.Icon_Interstellar05_19",
     "changePositions": {
       "1": {
         "pos": {
@@ -26268,8 +26266,9 @@
         }
       }
     },
+    "shapeID": 236,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_19.Icon_Interstellar05_19",
     "initPositions": {
       "1": {
         "key": 0,
@@ -26292,17 +26291,16 @@
         "value": 1
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "237": {
-    "shapeID": 237,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_20.Icon_Interstellar05_20",
     "changePositions": {
       "1": {
         "pos": {
@@ -26449,8 +26447,9 @@
         }
       }
     },
+    "shapeID": 237,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_20.Icon_Interstellar05_20",
     "initPositions": {
       "1": {
         "key": 0,
@@ -26473,17 +26472,16 @@
         "value": 2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 90
+        "x": 90,
+        "y": 0
       }
     }
   },
   "238": {
-    "shapeID": 238,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_22.Icon_Interstellar05_22",
     "changePositions": {
       "1": {
         "pos": {
@@ -26630,8 +26628,9 @@
         }
       }
     },
+    "shapeID": 238,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_22.Icon_Interstellar05_22",
     "initPositions": {
       "1": {
         "key": 0,
@@ -26654,17 +26653,16 @@
         "value": 2
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "239": {
-    "shapeID": 239,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_23.Icon_Interstellar05_23",
     "changePositions": {
       "1": {
         "pos": {
@@ -26811,8 +26809,9 @@
         }
       }
     },
+    "shapeID": 239,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_23.Icon_Interstellar05_23",
     "initPositions": {
       "1": {
         "key": 0,
@@ -26835,17 +26834,16 @@
         "value": 1
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "240": {
-    "shapeID": 240,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_24.Icon_Interstellar05_24",
     "changePositions": {
       "1": {
         "pos": {
@@ -26992,8 +26990,9 @@
         }
       }
     },
+    "shapeID": 240,
     "note": "环都",
-    "group": 205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_24.Icon_Interstellar05_24",
     "initPositions": {
       "1": {
         "key": 0,
@@ -27016,17 +27015,16 @@
         "value": 0
       }
     },
+    "group": 205,
     "DevelopViewOffsetAndScale": {
       "1": {
         "z": 1,
-        "y": 0,
-        "x": 0
+        "x": 0,
+        "y": 0
       }
     }
   },
   "1025": {
-    "shapeID": 1025,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "changePositions": {
       "1": {
         "pos": {
@@ -27049,8 +27047,9 @@
         }
       }
     },
+    "shapeID": 1025,
     "note": "",
-    "group": 1004,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -27069,11 +27068,10 @@
         "value": 1
       }
     },
+    "group": 1004,
     "DevelopViewOffsetAndScale": {}
   },
   "1024": {
-    "shapeID": 1024,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
     "changePositions": {
       "1": {
         "pos": {
@@ -27100,8 +27098,9 @@
         }
       }
     },
+    "shapeID": 1024,
     "note": "",
-    "group": 1305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
     "initPositions": {
       "1": {
         "key": 0,
@@ -27124,11 +27123,10 @@
         "value": 2
       }
     },
+    "group": 1305,
     "DevelopViewOffsetAndScale": {}
   },
   "1023": {
-    "shapeID": 1023,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
     "changePositions": {
       "1": {
         "pos": {
@@ -27155,8 +27153,9 @@
         }
       }
     },
+    "shapeID": 1023,
     "note": "",
-    "group": 1205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
     "initPositions": {
       "1": {
         "key": 0,
@@ -27179,11 +27178,10 @@
         "value": 0
       }
     },
+    "group": 1205,
     "DevelopViewOffsetAndScale": {}
   },
   "1022": {
-    "shapeID": 1022,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland01.Icon_Wasteland01",
     "changePositions": {
       "1": {
         "pos": {
@@ -27210,8 +27208,9 @@
         }
       }
     },
+    "shapeID": 1022,
     "note": "",
-    "group": 1105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland01.Icon_Wasteland01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -27234,11 +27233,10 @@
         "value": 0
       }
     },
+    "group": 1105,
     "DevelopViewOffsetAndScale": {}
   },
   "1021": {
-    "shapeID": 1021,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "changePositions": {
       "1": {
         "pos": {
@@ -27265,8 +27263,9 @@
         }
       }
     },
+    "shapeID": 1021,
     "note": "",
-    "group": 1005,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -27289,11 +27288,10 @@
         "value": 0
       }
     },
+    "group": 1005,
     "DevelopViewOffsetAndScale": {}
   },
   "1011": {
-    "shapeID": 1011,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "changePositions": {
       "1": {
         "pos": {
@@ -27320,8 +27318,9 @@
         }
       }
     },
+    "shapeID": 1011,
     "note": "",
-    "group": 1005,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -27344,11 +27343,10 @@
         "value": 0
       }
     },
+    "group": 1005,
     "DevelopViewOffsetAndScale": {}
   },
   "1012": {
-    "shapeID": 1012,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland01.Icon_Wasteland01",
     "changePositions": {
       "1": {
         "pos": {
@@ -27375,8 +27373,9 @@
         }
       }
     },
+    "shapeID": 1012,
     "note": "",
-    "group": 1105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland01.Icon_Wasteland01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -27399,11 +27398,10 @@
         "value": 0
       }
     },
+    "group": 1105,
     "DevelopViewOffsetAndScale": {}
   },
   "1013": {
-    "shapeID": 1013,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
     "changePositions": {
       "1": {
         "pos": {
@@ -27430,8 +27428,9 @@
         }
       }
     },
+    "shapeID": 1013,
     "note": "",
-    "group": 1205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
     "initPositions": {
       "1": {
         "key": 0,
@@ -27454,11 +27453,10 @@
         "value": 0
       }
     },
+    "group": 1205,
     "DevelopViewOffsetAndScale": {}
   },
   "1014": {
-    "shapeID": 1014,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
     "changePositions": {
       "1": {
         "pos": {
@@ -27485,8 +27483,9 @@
         }
       }
     },
+    "shapeID": 1014,
     "note": "",
-    "group": 1305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
     "initPositions": {
       "1": {
         "key": 0,
@@ -27509,11 +27508,10 @@
         "value": 0
       }
     },
+    "group": 1305,
     "DevelopViewOffsetAndScale": {}
   },
   "1015": {
-    "shapeID": 1015,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "changePositions": {
       "1": {
         "pos": {
@@ -27536,8 +27534,9 @@
         }
       }
     },
+    "shapeID": 1015,
     "note": "",
-    "group": 1004,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -27556,11 +27555,10 @@
         "value": 1
       }
     },
+    "group": 1004,
     "DevelopViewOffsetAndScale": {}
   },
   "1005": {
-    "shapeID": 1005,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "changePositions": {
       "1": {
         "pos": {
@@ -27583,8 +27581,9 @@
         }
       }
     },
+    "shapeID": 1005,
     "note": "环都",
-    "group": 1004,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -27603,11 +27602,10 @@
         "value": 2
       }
     },
+    "group": 1004,
     "DevelopViewOffsetAndScale": {}
   },
   "1004": {
-    "shapeID": 1004,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
     "changePositions": {
       "1": {
         "pos": {
@@ -27630,8 +27628,9 @@
         }
       }
     },
+    "shapeID": 1004,
     "note": "焦土",
-    "group": 1305,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_FairyTales/Frames/Icon_FairyTales05_24.Icon_FairyTales05_24",
     "initPositions": {
       "1": {
         "key": 0,
@@ -27650,11 +27649,10 @@
         "value": -1
       }
     },
+    "group": 1305,
     "DevelopViewOffsetAndScale": {}
   },
   "1003": {
-    "shapeID": 1003,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
     "changePositions": {
       "1": {
         "pos": {
@@ -27681,8 +27679,9 @@
         }
       }
     },
+    "shapeID": 1003,
     "note": "环都",
-    "group": 1205,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Interstellar/Frames/Icon_Interstellar05_25.Icon_Interstellar05_25",
     "initPositions": {
       "1": {
         "key": 0,
@@ -27705,11 +27704,10 @@
         "value": 2
       }
     },
+    "group": 1205,
     "DevelopViewOffsetAndScale": {}
   },
   "1002": {
-    "shapeID": 1002,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland01.Icon_Wasteland01",
     "changePositions": {
       "1": {
         "pos": {
@@ -27736,8 +27734,9 @@
         }
       }
     },
+    "shapeID": 1002,
     "note": "焦土",
-    "group": 1105,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Wasteland/Frames/Icon_Wasteland01.Icon_Wasteland01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -27760,11 +27759,10 @@
         "value": 0
       }
     },
+    "group": 1105,
     "DevelopViewOffsetAndScale": {}
   },
   "1001": {
-    "shapeID": 1001,
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "changePositions": {
       "1": {
         "pos": {
@@ -27791,8 +27789,9 @@
         }
       }
     },
+    "shapeID": 1001,
     "note": "环都",
-    "group": 1005,
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconPuzzle/Icon_Cyber/Frames/Icon_Cyber01.Icon_Cyber01",
     "initPositions": {
       "1": {
         "key": 0,
@@ -27815,6 +27814,7 @@
         "value": 0
       }
     },
+    "group": 1005,
     "DevelopViewOffsetAndScale": {}
   }
 }

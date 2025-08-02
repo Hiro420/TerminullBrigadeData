@@ -1,9 +1,11 @@
 local WBP_PuzzleFilterView = UnLua.Class()
+
 function WBP_PuzzleFilterView:Construct()
   self.Btn_Confirm.OnMainButtonClicked:Add(self, self.BindOnConfirmButtonClicked)
   self.Btn_Cancel.OnMainButtonClicked:Add(self, self.BindOnCancelButtonClicked)
   self.Btn_Reset.OnMainButtonClicked:Add(self, self.BindOnResetButtonClicked)
 end
+
 function WBP_PuzzleFilterView:InitWorldFilter(...)
   local PuzzleWorldTable = LuaTableMgr.GetLuaTableByName(TableNames.TBPuzzleWorld)
   local WorldIdList = {}
@@ -21,6 +23,7 @@ function WBP_PuzzleFilterView:InitWorldFilter(...)
   end
   HideOtherItem(self.WrapBox_World, Index, true)
 end
+
 function WBP_PuzzleFilterView:InitQualityFilter(...)
   local AllRowNames = GetAllRowNames(DT.DT_ItemRarity)
   local Index = 1
@@ -31,6 +34,7 @@ function WBP_PuzzleFilterView:InitQualityFilter(...)
   end
   HideOtherItem(self.WrapBox_Quality, Index, true)
 end
+
 function WBP_PuzzleFilterView:InitSubAttrFilter(...)
   local AllRowNames = GetAllRowNames(DT.DT_AttributeModifyOp)
   local Index = 1
@@ -44,10 +48,12 @@ function WBP_PuzzleFilterView:InitSubAttrFilter(...)
   end
   HideOtherItem(self.WrapBox_SubAttr, Index, true)
 end
+
 function WBP_PuzzleFilterView:InitLockAndDiscardFilter()
   self.WBP_PuzzleFilterItem_Lock:Show(0, EPuzzleFilterType.Lock)
   self.WBP_PuzzleFilterItem_Discard:Show(0, EPuzzleFilterType.Discard)
 end
+
 function WBP_PuzzleFilterView:BindOnUpdatePuzzleFilterSelectStatus(Id, Type, IsSelected)
   if Type == EPuzzleFilterType.Lock then
     self.FilterLockSelected = IsSelected
@@ -59,6 +65,7 @@ function WBP_PuzzleFilterView:BindOnUpdatePuzzleFilterSelectStatus(Id, Type, IsS
     table.RemoveItem(self.FilterSelectStatus[Type], Id)
   end
 end
+
 function WBP_PuzzleFilterView:Show(TargetViewModel, IsGem)
   UpdateVisibility(self, true)
   self:PlayAnimation(self.Ani_in)
@@ -83,10 +90,12 @@ function WBP_PuzzleFilterView:Show(TargetViewModel, IsGem)
   self:RefreshItemSelectStatus()
   EventSystem.AddListenerNew(EventDef.Puzzle.UpdatePuzzleFilterSelectStatus, self, self.BindOnUpdatePuzzleFilterSelectStatus)
 end
+
 function WBP_PuzzleFilterView:Hide(...)
   UpdateVisibility(self, false)
   EventSystem.RemoveListenerNew(EventDef.Puzzle.UpdatePuzzleFilterSelectStatus, self, self.BindOnUpdatePuzzleFilterSelectStatus)
 end
+
 function WBP_PuzzleFilterView:BindOnConfirmButtonClicked(...)
   if self.TargetViewModel.SetPuzzleFilterDiscardSelected then
     self.TargetViewModel:SetPuzzleFilterDiscardSelected(self.FilterDiscardSelected)
@@ -101,9 +110,11 @@ function WBP_PuzzleFilterView:BindOnConfirmButtonClicked(...)
   end
   self:Hide()
 end
+
 function WBP_PuzzleFilterView:BindOnCancelButtonClicked(...)
   self:Hide()
 end
+
 function WBP_PuzzleFilterView:BindOnResetButtonClicked()
   self.FilterSelectStatus = {
     [EPuzzleFilterType.Quality] = {},
@@ -114,6 +125,7 @@ function WBP_PuzzleFilterView:BindOnResetButtonClicked()
   self.FilterLockSelected = false
   self:RefreshItemSelectStatus()
 end
+
 function WBP_PuzzleFilterView:RefreshItemSelectStatus(...)
   local AllChildren = self.WrapBox_World:GetAllChildren()
   for k, SingleItem in pairs(AllChildren) do
@@ -130,7 +142,9 @@ function WBP_PuzzleFilterView:RefreshItemSelectStatus(...)
   self.WBP_PuzzleFilterItem_Lock:RefreshSelectStatus(self.FilterLockSelected)
   self.WBP_PuzzleFilterItem_Discard:RefreshSelectStatus(self.FilterDiscardSelected)
 end
+
 function WBP_PuzzleFilterView:Destruct(...)
   EventSystem.RemoveListenerNew(EventDef.Puzzle.UpdatePuzzleFilterSelectStatus, self, self.BindOnUpdatePuzzleFilterSelectStatus)
 end
+
 return WBP_PuzzleFilterView

@@ -16,6 +16,7 @@ local BadgesSort = function(A, B)
 end
 AchievementViewModel.propertyBindings = {}
 AchievementViewModel.subViewModels = {}
+
 function AchievementViewModel:OnInit()
   self.Super.OnInit(self)
   EventSystem.AddListenerNew(EventDef.MainTask.OnMainTaskRefres, self, self.OnMainTaskRefres)
@@ -23,6 +24,7 @@ function AchievementViewModel:OnInit()
   EventSystem.AddListenerNew(EventDef.Achievement.GetAchievementInfo, self, self.OnGetAchievementInfo)
   EventSystem.AddListenerNew(EventDef.Achievement.SetDisplayBadges, self, self.OnSetDisplayBadges)
 end
+
 function AchievementViewModel:OnShutdown()
   EventSystem.RemoveListenerNew(EventDef.MainTask.OnMainTaskRefres, self, self.OnMainTaskRefres)
   EventSystem.RemoveListenerNew(EventDef.MainTask.OnReceiveAward, self, self.OnReceiveAward)
@@ -30,9 +32,11 @@ function AchievementViewModel:OnShutdown()
   EventSystem.RemoveListenerNew(EventDef.Achievement.SetDisplayBadges, self, self.OnSetDisplayBadges)
   self.Super.OnShutdown(self)
 end
+
 function AchievementViewModel:RequestGetAchievementInfo(RoleID, callback, bIsShowLoading)
   AchievementHandler.RequestGetAchievementInfo(RoleID, callback, bIsShowLoading)
 end
+
 function AchievementViewModel:RequestSetDisplayBadges(displayBadgesList)
   if AchievementData.MaxDisplayBadgesNum < #displayBadgesList then
     return
@@ -59,6 +63,7 @@ function AchievementViewModel:RequestSetDisplayBadges(displayBadgesList)
   end
   AchievementHandler.RequestSetDisplayBadges(displayBadgesList)
 end
+
 function AchievementViewModel:SwitchShowModel(AchievementShowModel, tbTask, taskGroupId, NotUpdateAchievementList)
   self.AchievementShowModel = EAchievementShowModel.Details
   self.CurSelectTaskGroupId = taskGroupId or nil
@@ -75,6 +80,7 @@ function AchievementViewModel:SwitchShowModel(AchievementShowModel, tbTask, task
     self:GetFirstView():UpdateAchievementAwardList()
   end
 end
+
 function AchievementViewModel:SelectToggle(ToggleType)
   local bIsChange = false
   if self.CurSelectToggleType ~= ToggleType then
@@ -92,6 +98,7 @@ function AchievementViewModel:SelectToggle(ToggleType)
     self:SwitchShowModel(self.AchievementShowModel, tbTask, self.CurSelectTaskGroupId)
   end
 end
+
 function AchievementViewModel:OnMainTaskRefres()
   self:SelectToggle(self.CurSelectToggleType)
   if self:GetFirstView() then
@@ -99,11 +106,13 @@ function AchievementViewModel:OnMainTaskRefres()
     self:GetFirstView():OnUpdateAchievementPoint(firstValue)
   end
 end
+
 function AchievementViewModel:OnTaskGroupAwardReceived(GroupId, List)
   if self:GetFirstView() then
     self:GetFirstView():OnTaskGroupAwardReceived(GroupId, List)
   end
 end
+
 function AchievementViewModel:OnReceiveAward(List, GroupId, TaskId)
   local tbTaskData = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskData)
   local tbTaskGroup = LuaTableMgr.GetLuaTableByName(TableNames.TBTaskGroupData)
@@ -130,6 +139,7 @@ function AchievementViewModel:OnReceiveAward(List, GroupId, TaskId)
     self:RequestGetAchievementInfo(DataMgr.GetUserId(), nil, true)
   end
 end
+
 function AchievementViewModel:UpdateAchievementList()
   if self:GetFirstView() then
     local achievementItemDataList = AchievementData:GetAchievementItemDataListByType(self.CurSelectToggleType)
@@ -138,6 +148,7 @@ function AchievementViewModel:UpdateAchievementList()
     end
   end
 end
+
 function AchievementViewModel:UpdateAchievementPointAward()
   if self:GetFirstView() then
     local rewardList, idx = AchievementData:GetCurDoingPointAwards()
@@ -150,6 +161,7 @@ function AchievementViewModel:UpdateAchievementPointAward()
     end
   end
 end
+
 function AchievementViewModel:SwitchLeftPointAward()
   if self.CurShowPointAwardIdx == nil then
     return
@@ -160,6 +172,7 @@ function AchievementViewModel:SwitchLeftPointAward()
   self.CurShowPointAwardIdx = self.CurShowPointAwardIdx - 1
   self:UpdateAchievementPointAwardByIdx(self.CurShowPointAwardIdx)
 end
+
 function AchievementViewModel:SwitchRightPointAward()
   if self.CurShowPointAwardIdx == nil then
     return
@@ -170,6 +183,7 @@ function AchievementViewModel:SwitchRightPointAward()
   self.CurShowPointAwardIdx = self.CurShowPointAwardIdx + 1
   self:UpdateAchievementPointAwardByIdx(self.CurShowPointAwardIdx)
 end
+
 function AchievementViewModel:UpdateAchievementPointAwardByIdx(Idx)
   if self:GetFirstView() then
     local rewardList = AchievementData:GetAwardsByIdx(Idx)
@@ -181,6 +195,7 @@ function AchievementViewModel:UpdateAchievementPointAwardByIdx(Idx)
     end
   end
 end
+
 function AchievementViewModel:OnGetAchievementInfo()
   self:UpdateAchievementList()
   self:UpdateAchievementPointAward()
@@ -189,16 +204,20 @@ function AchievementViewModel:OnGetAchievementInfo()
     self:GetFirstView():OnUpdateDisplayBadges()
   end
 end
+
 function AchievementViewModel:OnSetDisplayBadges()
   if self:GetFirstView() then
     self:GetFirstView():OnUpdateDisplayBadges()
   end
 end
+
 function AchievementViewModel:ResetData()
 end
+
 function AchievementViewModel:GetAchievementToggleList()
   return AchievementData:GetAchievementTypeList()
 end
+
 function AchievementViewModel:GetCurSelectAchievementItemData()
   local achievementItemDataList = AchievementData:GetAchievementItemDataListByType(self.CurSelectToggleType)
   for i, v in ipairs(achievementItemDataList) do
@@ -208,18 +227,23 @@ function AchievementViewModel:GetCurSelectAchievementItemData()
   end
   return nil
 end
+
 function AchievementViewModel:GetTBAchievementPointSort()
   return AchievementData.tbAchievementPointSort
 end
+
 function AchievementViewModel:GetDisplayBadges()
   return AchievementData:GetDisplayBadges()
 end
+
 function AchievementViewModel:GetAchievementDisplayToggleList()
   return AchievementData.AchievementDisplayToggle
 end
+
 function AchievementViewModel:GetAchievementItemDataListByType(CurSelectToggleType)
   return AchievementData:GetAchievementItemDataListByType(CurSelectToggleType)
 end
+
 function AchievementViewModel:GetCurDoingPointTaskNeedPoint()
   local rewardList, idx = AchievementData:GetCurDoingPointAwards()
   if rewardList then
@@ -230,15 +254,19 @@ function AchievementViewModel:GetCurDoingPointTaskNeedPoint()
   end
   return -1
 end
+
 function AchievementViewModel:GetTypeToTbAchievement()
   return AchievementData.TypeToTbAchievement
 end
+
 function AchievementViewModel:GetAchivementPointTaskGroup()
   return AchievementData.AchivementPointTaskGroup
 end
+
 function AchievementViewModel:GetMaxDisplayBadgesNum()
   return AchievementData.MaxDisplayBadgesNum
 end
+
 function AchievementViewModel:GetAchievementBadges()
   local badgesTb = {}
   local allAchievementItemDataList = AchievementData:GetAllAchievementItemDataList()
@@ -272,4 +300,5 @@ function AchievementViewModel:GetAchievementBadges()
   end
   return badgesTb
 end
+
 return AchievementViewModel

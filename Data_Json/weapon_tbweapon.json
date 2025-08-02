@@ -1,0 +1,442 @@
+[
+  {
+    "BarrelID": 100702,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1004
+    ],
+    "SkinID": 500701,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 0
+  },
+  {
+    "BarrelID": 100902,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1004
+    ],
+    "SkinID": 500701,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 0
+  },
+  {
+    "BarrelID": 200302,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1005
+    ],
+    "SkinID": 500701,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 0
+  },
+  {
+    "BarrelID": 200602,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1005
+    ],
+    "SkinID": 500701,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 0
+  },
+  {
+    "BarrelID": 100802,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1004
+    ],
+    "SkinID": 500701,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 0
+  },
+  {
+    "BarrelID": 101002,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1004
+    ],
+    "SkinID": 500701,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 0
+  },
+  {
+    "BarrelID": 200102,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1005
+    ],
+    "SkinID": 500701,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 0
+  },
+  {
+    "BarrelID": 200202,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1005
+    ],
+    "SkinID": 500701,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 0
+  },
+  {
+    "BarrelID": 200402,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1004
+    ],
+    "SkinID": 500701,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 0
+  },
+  {
+    "BarrelID": 200502,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1004
+    ],
+    "SkinID": 500701,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 0
+  },
+  {
+    "BarrelID": 5007,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1010
+    ],
+    "SkinID": 500701,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 1
+  },
+  {
+    "BarrelID": 5009,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1010
+    ],
+    "SkinID": 500901,
+    "HeroProfy": 2,
+    "HeirloomIconPath": "",
+    "LinkId": "1006",
+    "LinkDesc": "角色熟练度解锁",
+    "ParamList": [],
+    "Priority": 2
+  },
+  {
+    "BarrelID": 5008,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1020
+    ],
+    "SkinID": 500801,
+    "HeroProfy": 2,
+    "HeirloomIconPath": "",
+    "LinkId": "1006",
+    "LinkDesc": "角色熟练度解锁",
+    "ParamList": [],
+    "Priority": 2
+  },
+  {
+    "BarrelID": 5010,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1020
+    ],
+    "SkinID": 501001,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 1
+  },
+  {
+    "BarrelID": 5011,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1000
+    ],
+    "SkinID": 501101,
+    "HeroProfy": 2,
+    "HeirloomIconPath": "",
+    "LinkId": "1006",
+    "LinkDesc": "角色熟练度解锁",
+    "ParamList": [],
+    "Priority": 2
+  },
+  {
+    "BarrelID": 5012,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1000
+    ],
+    "SkinID": 501201,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 1
+  },
+  {
+    "BarrelID": 5005,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1004,
+      1005
+    ],
+    "SkinID": 500701,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 0
+  },
+  {
+    "BarrelID": 5006,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1004,
+      1005
+    ],
+    "SkinID": 500701,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 0
+  },
+  {
+    "BarrelID": 5014,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1040
+    ],
+    "SkinID": 501401,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 1
+  },
+  {
+    "BarrelID": 5017,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1040
+    ],
+    "SkinID": 501701,
+    "HeroProfy": 2,
+    "HeirloomIconPath": "",
+    "LinkId": "1006",
+    "LinkDesc": "角色熟练度解锁",
+    "ParamList": [],
+    "Priority": 2
+  },
+  {
+    "BarrelID": 5015,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1060
+    ],
+    "SkinID": 501501,
+    "HeroProfy": 2,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 1
+  },
+  {
+    "BarrelID": 5016,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1030
+    ],
+    "SkinID": 501601,
+    "HeroProfy": 2,
+    "HeirloomIconPath": "",
+    "LinkId": "1006",
+    "LinkDesc": "角色熟练度解锁",
+    "ParamList": [],
+    "Priority": 2
+  },
+  {
+    "BarrelID": 5018,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1010
+    ],
+    "SkinID": 501801,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_qiang02_01.Icon_qiang02_01",
+    "LinkId": "1039",
+    "LinkDesc": "兑换商城购买",
+    "ParamList": [
+      10707002
+    ],
+    "Priority": 3
+  },
+  {
+    "BarrelID": 5019,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1080
+    ],
+    "SkinID": 501901,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 1
+  },
+  {
+    "BarrelID": 5021,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1030
+    ],
+    "SkinID": 502101,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "枪械未解锁",
+    "ParamList": [],
+    "Priority": 1
+  },
+  {
+    "BarrelID": 5023,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1090
+    ],
+    "SkinID": 502301,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 1
+  },
+  {
+    "BarrelID": 5024,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1000
+    ],
+    "SkinID": 502401,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "1038",
+    "LinkDesc": "兑换商城购买",
+    "ParamList": [
+      10703003
+    ],
+    "Priority": 3
+  },
+  {
+    "BarrelID": 5028,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1090
+    ],
+    "SkinID": 502801,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 2
+  },
+  {
+    "BarrelID": 5027,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1060
+    ],
+    "SkinID": 502701,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "1006",
+    "LinkDesc": "角色熟练度解锁",
+    "ParamList": [],
+    "Priority": 2
+  },
+  {
+    "BarrelID": 5033,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1100
+    ],
+    "SkinID": 501101,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 1
+  },
+  {
+    "BarrelID": 50331,
+    "BarrelRarity": 4,
+    "HeroRelate": [
+      1100
+    ],
+    "SkinID": 501101,
+    "HeroProfy": 0,
+    "HeirloomIconPath": "",
+    "LinkId": "",
+    "LinkDesc": "",
+    "ParamList": [],
+    "Priority": 0
+  }
+]

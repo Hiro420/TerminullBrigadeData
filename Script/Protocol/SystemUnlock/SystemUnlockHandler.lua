@@ -3,6 +3,7 @@ local UnLua = _G.UnLua
 local rapidjson = require("rapidjson")
 local SystemUnlockData = require("Modules.SystemUnlock.SystemUnlockData")
 local SystemUnlockHandler = {}
+
 function SystemUnlockHandler:RequestGetSystemUnlockInfo()
   local path = "playergrowth/systemunlock/info"
   HttpCommunication.RequestByGet(path, {
@@ -22,6 +23,7 @@ function SystemUnlockHandler:RequestGetSystemUnlockInfo()
     end
   }, false, true)
 end
+
 function SystemUnlockHandler:RequestUnlockSystem(SystemId)
   local path = "dbg/playergrowth/systemunlock/unlock"
   HttpCommunication.Request(path, {
@@ -40,4 +42,5 @@ function SystemUnlockHandler:RequestUnlockSystem(SystemId)
     end
   }, false, true)
 end
+
 return SystemUnlockHandler

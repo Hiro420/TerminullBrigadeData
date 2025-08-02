@@ -5,20 +5,24 @@ local UIUtil = require("Framework.UIMgr.UIUtil")
 local LoginData = require("Modules.Login.LoginData")
 local EscKeyName = "PauseGame"
 local DrawCardRuleView = Class(ViewBase)
+
 function DrawCardRuleView:BindClickHandler()
   self.ScrollList.OnUserScrolled:Add(self, self.BindOnUserScrolled)
   self.Btn_Confirm.OnClicked:Add(self, self.BindOnConfirmButtonClicked)
   self.ExitGameKey.OnMainButtonClicked:Add(self, self.BindOnEscKeyPressed)
 end
+
 function DrawCardRuleView:UnBindClickHandler()
   self.ScrollList.OnUserScrolled:Remove(self, self.BindOnUserScrolled)
   self.Btn_Confirm.OnClicked:Remove(self, self.BindOnConfirmButtonClicked)
   self.ExitGameKey.OnMainButtonClicked:Remove(self, self.BindOnEscKeyPressed)
 end
+
 function DrawCardRuleView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function DrawCardRuleView:BindOnUserScrolled(CurrentOffset)
   local EndOffset = self.ScrollList:GetScrollOffsetOfEnd()
   local ViewOffsetFraction = self.ScrollList:GetViewOffsetFraction()
@@ -28,6 +32,7 @@ function DrawCardRuleView:BindOnUserScrolled(CurrentOffset)
     self.Btn_Confirm:SetIsEnabled(false)
   end
 end
+
 function DrawCardRuleView:BindOnConfirmButtonClicked()
   local LoginSaveGameName = LoginData:GetLoginSavedGameName()
   local SaveGameObject
@@ -40,12 +45,15 @@ function DrawCardRuleView:BindOnConfirmButtonClicked()
   UE.UGameplayStatics.SaveGameToSlot(SaveGameObject, LoginSaveGameName, 0)
   UIMgr:Hide(ViewID.UI_DrawCardRule)
 end
+
 function DrawCardRuleView:BindOnEscKeyPressed()
   UIMgr:Hide(ViewID.UI_DrawCardRule)
 end
+
 function DrawCardRuleView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function DrawCardRuleView:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -66,6 +74,7 @@ function DrawCardRuleView:OnShow(...)
     })
   end
 end
+
 function DrawCardRuleView:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -74,4 +83,5 @@ function DrawCardRuleView:OnHide()
     StopListeningForInputAction(self, EscKeyName, UE.EInputEvent.IE_Pressed)
   end
 end
+
 return DrawCardRuleView

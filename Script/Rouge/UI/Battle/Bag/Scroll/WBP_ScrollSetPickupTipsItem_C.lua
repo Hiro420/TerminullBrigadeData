@@ -1,8 +1,10 @@
 local WBP_ScrollSetPickupTipsItem_C = UnLua.Class()
 local SaveGrowthSnapData = require("Modules.SaveGrowthSnap.SaveGrowthSnapData")
+
 function WBP_ScrollSetPickupTipsItem_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_ScrollSetPickupTipsItem_C:InitScrollSetTipsItem(AttributeModifySetId, AttributeModifyId, bIsComplete, ScrollTipsOpenTypeParam, UserId)
   self.UserId = UserId
   UpdateVisibility(self, true)
@@ -125,6 +127,7 @@ function WBP_ScrollSetPickupTipsItem_C:InitScrollSetTipsItem(AttributeModifySetI
     HideOtherItem(self.VerticalBoxDesc, Index)
   end
 end
+
 function WBP_ScrollSetPickupTipsItem_C:GetAttributeModifySetDataBySetId(SetId)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   if Character and Character.AttributeModifyComponent then
@@ -136,6 +139,7 @@ function WBP_ScrollSetPickupTipsItem_C:GetAttributeModifySetDataBySetId(SetId)
   end
   return nil
 end
+
 function WBP_ScrollSetPickupTipsItem_C:GetAttributeSetDataBySetIdFromSettle(SetId)
   local ActivatedSets = LogicSettlement:GetScrollSetListByPlayerId(self.UserId)
   for i, v in ipairs(ActivatedSets) do
@@ -145,12 +149,16 @@ function WBP_ScrollSetPickupTipsItem_C:GetAttributeSetDataBySetIdFromSettle(SetI
   end
   return nil
 end
+
 function WBP_ScrollSetPickupTipsItem_C:CheckHaveScroll(AttributeModifId)
   return false
 end
+
 function WBP_ScrollSetPickupTipsItem_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_ScrollSetPickupTipsItem_C:Destruct()
 end
+
 return WBP_ScrollSetPickupTipsItem_C

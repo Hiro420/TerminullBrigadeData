@@ -1,16 +1,19 @@
 local ChipItem = UnLua.Class()
+
 function ChipItem:Construct()
   self.ButtonSelect.OnPressed:Add(self, self.OnBtnSelectPressed)
   self.ButtonSelect.OnReleased:Add(self, self.OnBtnSelectReleased)
   self.Btn_Cancel.OnPressed:Add(self, self.OnBtnCancelPressed)
   self.Btn_Cancel.OnReleased:Add(self, self.OnBtnCancelReleased)
 end
+
 function ChipItem:Destruct()
   self.ButtonSelect.OnPressed:Remove(self, self.OnBtnSelectPressed)
   self.ButtonSelect.OnReleased:Remove(self, self.OnBtnSelectReleased)
   self.Btn_Cancel.OnPressed:Remove(self, self.OnBtnCancelPressed)
   self.Btn_Cancel.OnReleased:Remove(self, self.OnBtnCancelReleased)
 end
+
 function ChipItem:OnListItemObjectSet(ListItemObj)
   self.RGStateControllerHover:ChangeStatus(EHover.UnHover)
   UpdateVisibility(self, true, true)
@@ -107,6 +110,7 @@ function ChipItem:OnListItemObjectSet(ListItemObj)
     UpdateVisibility(self.WBP_RedDotView, false)
   end
 end
+
 function ChipItem:BP_OnEntryReleased()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TimerLoopSelectHander) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(GameInstance, self.TimerLoopSelectHander)
@@ -118,10 +122,12 @@ function ChipItem:BP_OnEntryReleased()
   self.bNeedHoverWhenListObjSet = false
   self.DataObj = nil
 end
+
 function ChipItem:OnMouseEnter()
   self.bNeedHoverWhenListObjSet = true
   self:Hover()
 end
+
 function ChipItem:Hover()
   if not UE.RGUtil.IsUObjectValid(self.DataObj) then
     return
@@ -158,6 +164,7 @@ function ChipItem:Hover()
     self.DataObj.ParentView:ShowChipAttrListTip(true, self.DataObj.ChipItemData, bSelect)
   end
 end
+
 function ChipItem:OnMouseLeave()
   self.bNeedHoverWhenListObjSet = false
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.HoverTimer) then
@@ -173,12 +180,14 @@ function ChipItem:OnMouseLeave()
   self.RGStateControllerHover:ChangeStatus(EHover.UnHover)
   self.DataObj.ParentView:ShowChipAttrListTip(false)
 end
+
 function ChipItem:OnMouseButtonDown(MyGeometry, MouseEvent)
   if UE.UKismetInputLibrary.PointerEvent_GetEffectingButton(MouseEvent) == self.RightMouseButton then
     self:OnSelectClick(true)
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 function ChipItem:OnBtnSelectPressed()
   self:OnSelectClick(false)
   local viewModel = UIModelMgr:Get("ChipViewModel")
@@ -193,14 +202,17 @@ function ChipItem:OnBtnSelectPressed()
     self.HoverTimer = nil
   end
 end
+
 function ChipItem:OnBtnSelectReleased()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TimerLoopSelectHander) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.TimerLoopSelectHander)
   end
 end
+
 function ChipItem:TimerLoopSelect()
   self:OnSelectClick(false)
 end
+
 function ChipItem:OnBtnCancelPressed()
   self:OnCancelClick()
   local viewModel = UIModelMgr:Get("ChipViewModel")
@@ -211,14 +223,17 @@ function ChipItem:OnBtnCancelPressed()
     }, self.PressLoopRate, true)
   end
 end
+
 function ChipItem:OnBtnCancelReleased()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TimerLoopCancelHander) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.TimerLoopCancelHander)
   end
 end
+
 function ChipItem:TimerLoopCancel()
   self:OnCancelClick()
 end
+
 function ChipItem:OnSelectClick(bRightMouseBtnClick)
   if not UE.RGUtil.IsUObjectValid(self.DataObj) then
     return
@@ -265,6 +280,7 @@ function ChipItem:OnSelectClick(bRightMouseBtnClick)
     end)
   end
 end
+
 function ChipItem:OnCancelClick()
   if not UE.RGUtil.IsUObjectValid(self.DataObj) then
     return
@@ -299,6 +315,7 @@ function ChipItem:OnCancelClick()
     end)
   end
 end
+
 function ChipItem:CheckbSelect()
   if not self.DataObj then
     return false
@@ -312,4 +329,5 @@ function ChipItem:CheckbSelect()
     return self.DataObj.bSelect
   end
 end
+
 return ChipItem

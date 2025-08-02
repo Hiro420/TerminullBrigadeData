@@ -21,12 +21,14 @@ local ProrityQueue = {
   end,
   __ContainerName = "ProrityQueue"
 }
+
 function ProrityQueue.__index(tb, k)
   if tb.elements and tb.elements[k] then
     return tb.elements[k]
   end
   return ProrityQueue[k]
 end
+
 function ProrityQueue.New(tb, SortFunc)
   local obj = {
     elements = {}
@@ -43,6 +45,7 @@ function ProrityQueue.New(tb, SortFunc)
   setmetatable(obj, ProrityQueue)
   return obj
 end
+
 function ProrityQueue:Enqueue(value, SortFunc)
   table.insert(self.elements, value)
   if SortFunc then
@@ -52,15 +55,18 @@ function ProrityQueue:Enqueue(value, SortFunc)
     table.sort(self.elements, self.SortFunc)
   end
 end
+
 function ProrityQueue:Dequeue()
   if #self.elements > 0 then
     return table.remove(self.elements, 1)
   end
   return nil
 end
+
 function ProrityQueue:Peek()
   return self.elements[1]
 end
+
 function ProrityQueue:RemoveByIdx(Idx)
   if Idx then
     if self.elements[Idx] then
@@ -70,16 +76,20 @@ function ProrityQueue:RemoveByIdx(Idx)
     table.remove(self.elements, 1)
   end
 end
+
 function ProrityQueue:GetByIdx(Idx)
   local value = self.elements[Idx]
   return value
 end
+
 function ProrityQueue:Count()
   return #self.elements
 end
+
 function ProrityQueue:IsEmpty()
   return table.IsEmpty(self.elements)
 end
+
 function ProrityQueue:Sort(SortFunc)
   if SortFunc then
     self.SortFunc = SortFunc
@@ -88,7 +98,9 @@ function ProrityQueue:Sort(SortFunc)
     return
   end
 end
+
 function ProrityQueue:Clear()
   self.elements = {}
 end
+
 return ProrityQueue

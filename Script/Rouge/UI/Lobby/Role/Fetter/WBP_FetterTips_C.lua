@@ -1,10 +1,12 @@
 local WBP_FetterTips_C = UnLua.Class()
+
 function WBP_FetterTips_C:Construct()
   EventSystem.AddListener(self, EventDef.Lobby.FetterSlotItemClicked, WBP_FetterTips_C.BindOnFetterSlotItemClicked)
   EventSystem.AddListener(self, EventDef.Lobby.FetterHeroInfoUpdate, WBP_FetterTips_C.BindOnFetterHeroInfoUpdate)
   self.Btn_EquipStatus.OnClicked:Add(self, WBP_FetterTips_C.BindOnEquipStatusClicked)
   self.Btn_Upgrade.OnClicked:Add(self, WBP_FetterTips_C.BindOnUpgradeButtonClicked)
 end
+
 function WBP_FetterTips_C:BindOnEquipStatusClicked()
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGWaveWindowManager:StaticClass())
   if not self:IsSlotUnlock() then
@@ -42,6 +44,7 @@ function WBP_FetterTips_C:BindOnEquipStatusClicked()
     LogicRole.RequestEquipFetterHeroToServer(self.CurSlotId, self.CurHeroId, self.MainHeroId)
   end
 end
+
 function WBP_FetterTips_C:BindOnUpgradeButtonClicked()
   local CurLevel = DataMgr.GetHeroLevelByHeroId(self.CurHeroId)
   local MaxLevel = LogicRole.GetMaxHeroStar(self.CurHeroId)
@@ -63,6 +66,7 @@ function WBP_FetterTips_C:BindOnUpgradeButtonClicked()
     Widget:InitInfo(self.CurHeroId)
   end
 end
+
 function WBP_FetterTips_C:RefreshInfo(SkillGroupId, CurHeroId, MainHeroId)
   self:SetVisibility(UE.ESlateVisibility.Visible)
   self.CurHeroId = CurHeroId
@@ -109,6 +113,7 @@ function WBP_FetterTips_C:RefreshInfo(SkillGroupId, CurHeroId, MainHeroId)
     end
   end
 end
+
 function WBP_FetterTips_C:UpdateSkillLevelInfo(SkillGroupInfo)
   local AllLevelItems = self.SkillLevelPanel:GetAllChildren()
   for i, SingleItem in iterator(AllLevelItems) do
@@ -144,6 +149,7 @@ function WBP_FetterTips_C:UpdateSkillLevelInfo(SkillGroupInfo)
     Index = Index + 1
   end
 end
+
 function WBP_FetterTips_C:UpdateSkillTag(SkillTagList)
   local TagItemList = self.SkillTagList:GetAllChildren()
   for i, SingleTagItem in iterator(TagItemList) do
@@ -169,6 +175,7 @@ function WBP_FetterTips_C:UpdateSkillTag(SkillTagList)
     end
   end
 end
+
 function WBP_FetterTips_C:SetUpgradeButtonVisibility()
   local CurLevel = DataMgr.GetHeroLevelByHeroId(self.CurHeroId)
   local MaxLevel = LogicRole.GetMaxHeroStar(self.CurHeroId)
@@ -176,6 +183,7 @@ function WBP_FetterTips_C:SetUpgradeButtonVisibility()
   else
   end
 end
+
 function WBP_FetterTips_C:UpdateEquipStatus()
   self.Txt_Equipped:SetVisibility(UE.ESlateVisibility.Collapsed)
   local FetterHeroInfo = DataMgr.GetFetterHeroInfoById(self.MainHeroId)
@@ -205,6 +213,7 @@ function WBP_FetterTips_C:UpdateEquipStatus()
     self.Txt_EquipStatus:SetText(self.LockText)
   end
 end
+
 function WBP_FetterTips_C:GetCurSlotHeroId()
   local FetterHeroInfo = DataMgr.GetFetterHeroInfoById(self.MainHeroId)
   local SlotHeroId = 0
@@ -217,22 +226,26 @@ function WBP_FetterTips_C:GetCurSlotHeroId()
   end
   return SlotHeroId
 end
+
 function WBP_FetterTips_C:IsSlotUnlock()
   local HeroInfo = DataMgr.GetMyHeroInfo()
   local SlotStatus = HeroInfo.slots[self.CurSlotId]
   return SlotStatus and SlotStatus == TableEnums.ENUMSlotStatus.Open or false
 end
+
 function WBP_FetterTips_C:BindOnFetterSlotItemClicked(SlotId)
   self.CurSlotId = SlotId
   if self:IsVisible() then
     self:UpdateEquipStatus()
   end
 end
+
 function WBP_FetterTips_C:BindOnFetterHeroInfoUpdate()
   if self.CurHeroId then
     self:UpdateEquipStatus()
   end
 end
+
 function WBP_FetterTips_C:BindOnUpdateMyHeroInfo()
   if not self.CurHeroId then
     return
@@ -245,17 +258,21 @@ function WBP_FetterTips_C:BindOnUpdateMyHeroInfo()
   end
   self:SetUpgradeButtonVisibility()
 end
+
 function WBP_FetterTips_C:BindOnFetterSlotStatusUpdate()
   self:UpdateEquipStatus()
 end
+
 function WBP_FetterTips_C:HidePanel()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   EventSystem.RemoveListener(EventDef.Lobby.UpdateMyHeroInfo, WBP_FetterTips_C.BindOnUpdateMyHeroInfo, self)
   EventSystem.RemoveListener(EventDef.Lobby.FetterSlotStatusUpdate, WBP_FetterTips_C.BindOnFetterSlotStatusUpdate, self)
 end
+
 function WBP_FetterTips_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.FetterSlotItemClicked, WBP_FetterTips_C.BindOnFetterSlotItemClicked, self)
   EventSystem.RemoveListener(EventDef.Lobby.FetterHeroInfoUpdate, WBP_FetterTips_C.BindOnFetterHeroInfoUpdate, self)
   self:HidePanel()
 end
+
 return WBP_FetterTips_C

@@ -1,4 +1,5 @@
 local WBP_AttributeUpgradeItem_C = UnLua.Class()
+
 function WBP_AttributeUpgradeItem_C:Show(AttributeName, CurAttributeValue, TargetAttributeValue)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if DTSubsystem then
@@ -11,7 +12,9 @@ function WBP_AttributeUpgradeItem_C:Show(AttributeName, CurAttributeValue, Targe
   self.Txt_TargetAttributeValue:SetText(TargetAttributeValue)
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
 end
+
 function WBP_AttributeUpgradeItem_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 return WBP_AttributeUpgradeItem_C

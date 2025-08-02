@@ -24,6 +24,7 @@ local PickupArySort = function(A, B)
     end
   end
 end
+
 function WBP_ModScrollView_C:Construct()
   self.Overridden.Construct(self)
   EventSystem.AddListener(self, EventDef.Battle.OnControlledPawnChanged, WBP_ModScrollView_C.BindOnControlledPawnChanged)
@@ -43,6 +44,7 @@ function WBP_ModScrollView_C:Construct()
   self.BP_ButtonPickupAll.OnClicked:Add(self, self.OnPickupAllClick)
   self.WBP_OperatingHintsFour.Btn_Main.OnClicked:Add(self, self.OnEscClick)
 end
+
 function WBP_ModScrollView_C:OnOpen(MainPanel)
   self.PickupIdx = -1
   self.MainPanel = MainPanel
@@ -54,9 +56,11 @@ function WBP_ModScrollView_C:OnOpen(MainPanel)
   self:UpdateScrollList()
   self.WBP_ScrollItemBg1:SetFocus()
 end
+
 function WBP_ModScrollView_C:GamePadFocus()
   self.WBP_ScrollItemBg1:SetFocus()
 end
+
 function WBP_ModScrollView_C:UpdateUICaptureBgActor(bIsShow)
   self.bIsShow = bIsShow
   if self.Capture then
@@ -71,10 +75,12 @@ function WBP_ModScrollView_C:UpdateUICaptureBgActor(bIsShow)
   end
   self:OnResizeCapture()
 end
+
 function WBP_ModScrollView_C:OnResizeCapture()
   if not self.bIsShow or UE.RGUtil.IsUObjectValid(self.Capture) then
   end
 end
+
 function WBP_ModScrollView_C:BindOnMainPanelChanged(LastActiveWidget, CurActiveWidget, MainPanel)
   self.MainPanel = MainPanel
   if CurActiveWidget == self then
@@ -110,6 +116,7 @@ function WBP_ModScrollView_C:BindOnMainPanelChanged(LastActiveWidget, CurActiveW
     self.PickupIdx = -1
   end
 end
+
 function WBP_ModScrollView_C:BindOnControlledPawnChanged()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   print("WBP_ModScrollView_C:BindOnControlledPawnChanged", Character)
@@ -127,6 +134,7 @@ function WBP_ModScrollView_C:BindOnControlledPawnChanged()
     Character.AttributeModifyComponent.OnChangeSet:Add(self, self.OnChangeSet)
   end
 end
+
 function WBP_ModScrollView_C:UnBindOnControlledPawnChanged()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
   print("WBP_ModScrollView_C:UnBindOnControlledPawnChanged", Character)
@@ -139,17 +147,25 @@ function WBP_ModScrollView_C:UnBindOnControlledPawnChanged()
     Character.AttributeModifyComponent.OnChangeSet:Remove(self, self.OnChangeSet)
   end
 end
+
 function WBP_ModScrollView_C:TickScroll()
 end
+
 function WBP_ModScrollView_C:AttributeStore_AddItem()
   print("WBP_ModScrollView_C  AttributeStore_AddItem")
   self:UpdatePickupList()
 end
+
 function WBP_ModScrollView_C:AttributeStore_RemoveItem()
   print("WBP_ModScrollView_C  AttributeStore_RemoveItem")
   self:UpdatePickupList()
 end
+
 function WBP_ModScrollView_C:UpdatePickupList()
+  if not UE.RGUtil.IsUObjectValid(self.ActorSubSys) then
+    self.ActorSubSys = UE.URGActorSubsystem.GetSubsystem(self)
+    print("WBP_ModScrollView_C:UpdatePickupList Re Find ActorSubSys!!!")
+  end
   if UE.RGUtil.IsUObjectValid(self.ActorSubSys) then
     local Character = UGameplayStatics.GetPlayerCharacter(self, 0)
     if Character then
@@ -189,7 +205,7 @@ function WBP_ModScrollView_C:UpdatePickupList()
           })
         end
       end
-      print("UpdatePickupList   TBPublicModifyItems: " .. #TBPublicModifyItems .. "       TBSelfModifyItems:  " .. #TBSelfModifyItems)
+      print("UpdatePickupList   TBPublicModifyItems: ", #TBPublicModifyItems, "       TBSelfModifyItems:  ", #TBSelfModifyItems, "ShowAttributeModifyDatas", #self.ShowAttributeModifyDatas)
       self:CheckActivatedSets()
       table.sort(self.ShowAttributeModifyDatas, PickupArySort)
       local PrivateNum = 0
@@ -201,7 +217,7 @@ function WBP_ModScrollView_C:UpdatePickupList()
           PrivateNum = PrivateNum + 1
         end
       end
-      print("UpdatePickupList" .. #self.ShowAttributeModifyDatas)
+      print("UpdatePickupList", #self.ShowAttributeModifyDatas)
       HideOtherItem(self.ScrollBoxPickupScrollList, #self.ShowAttributeModifyDatas + 1)
       UpdateVisibility(self.RGTextPickupNull, #self.ShowAttributeModifyDatas <= 0)
       if not self.PickupIdx then
@@ -225,6 +241,7 @@ function WBP_ModScrollView_C:UpdatePickupList()
     print("Re Find ActorSubSys!!!")
   end
 end
+
 function WBP_ModScrollView_C:UpdateShowPickupTipsView(bIsShowTipsView, ScrollId, TargetItem, ScrollTipsOpenType, bIsNeedInit, Item)
   print("WBP_ModScrollView_C:UpdateShowPickupTipsView", bIsShowTipsView, ScrollId, TargetItem, ScrollTipsOpenType, bIsNeedInit)
   if ScrollId and ScrollId > 0 then
@@ -242,6 +259,7 @@ function WBP_ModScrollView_C:UpdateShowPickupTipsView(bIsShowTipsView, ScrollId,
     self.WBP_ScrollPickUpTipsView:Hide()
   end
 end
+
 function WBP_ModScrollView_C:HighLightSetList(ScrollId, bIsHighlight)
   if bIsHighlight then
     local Result, RowData = GetRowData(DT.DT_AttributeModify, tostring(ScrollId))
@@ -256,6 +274,7 @@ function WBP_ModScrollView_C:HighLightSetList(ScrollId, bIsHighlight)
     self:DisSelectSet()
   end
 end
+
 function WBP_ModScrollView_C:HighLightDropSlot(bIsHightLight)
   for i = 1, Logic_Scroll.MaxScrollNum do
     local SlotName = string.format("WBP_ScrollItemBg%d", i)
@@ -269,6 +288,7 @@ function WBP_ModScrollView_C:HighLightDropSlot(bIsHightLight)
     end
   end
 end
+
 function WBP_ModScrollView_C:UpdateScrollSetList()
   print("WBP_ModScrollView_C:UpdateScrollSetList")
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
@@ -309,6 +329,7 @@ function WBP_ModScrollView_C:UpdateScrollSetList()
     self.WBP_ScrollDetailTipsView:UpdateScrollSetList(Character.AttributeModifyComponent.ActivatedSets)
   end
 end
+
 function WBP_ModScrollView_C.ActivatedSetsSort(FistSet, SecondSet)
   if Logic_Scroll:CheckSetIsActived(FistSet) and not Logic_Scroll:CheckSetIsActived(SecondSet) then
     return true
@@ -318,6 +339,7 @@ function WBP_ModScrollView_C.ActivatedSetsSort(FistSet, SecondSet)
   end
   return false
 end
+
 function WBP_ModScrollView_C:UpdateScrollList()
   print("WBP_ModScrollView_C:UpdateScrollList")
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
@@ -349,13 +371,18 @@ function WBP_ModScrollView_C:UpdateScrollList()
     if 1 == Index then
       self:UpdateShowPickupTipsView(false, -1, nil, EScrollTipsOpenType.EFromScrollSlot)
     end
-    self.WBP_ScrollDetailTipsView:UpdateScrollDescList(activatedModifyies)
+    local Ok, Error = pcall(self.WBP_ScrollDetailTipsView.UpdateScrollDescList, self.WBP_ScrollDetailTipsView, activatedModifyies)
+    if not Ok then
+      UnLua.LogError("WBP_ModScrollView_C:UpdateScrollList Error:", Error)
+    end
     self:RefreshModifyShine()
   end
 end
+
 function WBP_ModScrollView_C:UpdateRemoveDropBg(bIsShow)
   UpdateVisibility(self.WBP_ScrollIRemoveDropBg, bIsShow)
 end
+
 function WBP_ModScrollView_C:UpdateScrollSetTips(bIsShow, ActivatedSetData, ScrollSetItem)
   if bIsShow then
     self:PlayAnimation(self.AniScrollSetTipsShow)
@@ -385,6 +412,7 @@ function WBP_ModScrollView_C:UpdateScrollSetTips(bIsShow, ActivatedSetData, Scro
     end
   end
 end
+
 function WBP_ModScrollView_C:CheckActivatedSets()
   local AttributeModifySet = {}
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
@@ -421,6 +449,7 @@ function WBP_ModScrollView_C:CheckActivatedSets()
     end
   end
 end
+
 function WBP_ModScrollView_C:RefreshModifyShine()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -457,6 +486,7 @@ function WBP_ModScrollView_C:RefreshModifyShine()
     v:RefreshShine(v.IsShine)
   end
 end
+
 function WBP_ModScrollView_C:GetAttributeModifySetMinCount(LevelInscriptionMap)
   local minNeedCount = 10
   local LevelInscriptionTable = LevelInscriptionMap:ToTable()
@@ -467,6 +497,7 @@ function WBP_ModScrollView_C:GetAttributeModifySetMinCount(LevelInscriptionMap)
   end
   return minNeedCount
 end
+
 function WBP_ModScrollView_C:DisSelectSet()
   if self.ScrollSetMap then
     for k, v in pairs(self.ScrollSetMap) do
@@ -474,22 +505,28 @@ function WBP_ModScrollView_C:DisSelectSet()
     end
   end
 end
+
 function WBP_ModScrollView_C:OnAddModify()
   self:UpdateScrollList()
 end
+
 function WBP_ModScrollView_C:OnRemoveModify()
   self:UpdateScrollList()
 end
+
 function WBP_ModScrollView_C:OnAddSet()
   self:UpdateScrollSetList()
 end
+
 function WBP_ModScrollView_C:OnRemoveSet()
   self:UpdateScrollSetList()
 end
+
 function WBP_ModScrollView_C:OnChangeSet()
   self:UpdateScrollList()
   self:UpdateScrollSetList()
 end
+
 function WBP_ModScrollView_C:OnMakeAllPublicClick()
   if not self.ShowAttributeModifyDatas then
     return
@@ -516,6 +553,7 @@ function WBP_ModScrollView_C:OnMakeAllPublicClick()
     end
   end
 end
+
 function WBP_ModScrollView_C:OnPickupAllClick()
   if not self.ShowAttributeModifyDatas then
     return
@@ -546,14 +584,17 @@ function WBP_ModScrollView_C:OnPickupAllClick()
     end
   end
 end
+
 function WBP_ModScrollView_C:OnEscClick()
   if UE.RGUtil.IsUObjectValid(self.MainPanel) then
     self.MainPanel:ExitMainPanel()
   end
 end
+
 function WBP_ModScrollView_C:OnExitPanel()
   self:PlayAnimation(self.Ani_out)
 end
+
 function WBP_ModScrollView_C:OnClose()
   LogicRole.HideAllHeroLight()
   LogicRole.ChangeRoleSkyLight(false)
@@ -562,6 +603,7 @@ function WBP_ModScrollView_C:OnClose()
   self:UnBindOnControlledPawnChanged()
   self:Reset()
 end
+
 function WBP_ModScrollView_C:Reset()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.PickupTimer) then
     print("WBP_ModScrollView_C:ClearPickupTimer")
@@ -577,6 +619,7 @@ function WBP_ModScrollView_C:Reset()
   self:DisSelectSet()
   self.PickupTargetItem = nil
 end
+
 function WBP_ModScrollView_C:Destruct()
   self.Overridden.Destruct(self)
   EventSystem.RemoveListener(EventDef.Battle.OnControlledPawnChanged, WBP_ModScrollView_C.BindOnControlledPawnChanged, self)
@@ -597,14 +640,17 @@ function WBP_ModScrollView_C:Destruct()
   self.ScrollSetMap = nil
   self.ScrollMap = nil
 end
+
 function WBP_ModScrollView_C:UpatePickupIdx(Idx)
   print("WBP_ModScrollView_C:UpatePickupIdx", self.PickupIdx, Idx)
   self.PickupIdx = Idx
 end
+
 function WBP_ModScrollView_C:ScrollPickUpItemRightNav()
   self.PickupIdx = -1
   return self.WBP_ScrollItemBg1
 end
+
 function WBP_ModScrollView_C:ScollPickUpItemUpNav()
   local ChildCount = self.ScrollBoxPickupScrollList:GetChildrenCount()
   for i = 1, ChildCount do
@@ -622,6 +668,7 @@ function WBP_ModScrollView_C:ScollPickUpItemUpNav()
   end
   return nil
 end
+
 function WBP_ModScrollView_C:ScollPickUpItemDownNav()
   local ChildCount = self.ScrollBoxPickupScrollList:GetChildrenCount()
   for i = 1, ChildCount do
@@ -639,6 +686,7 @@ function WBP_ModScrollView_C:ScollPickUpItemDownNav()
   end
   return nil
 end
+
 function WBP_ModScrollView_C:ScrollItemSlotLeftNav()
   if CheckIsVisility(self.WBP_ScrollPickupItem) then
     self.PickupIdx = 1
@@ -646,4 +694,5 @@ function WBP_ModScrollView_C:ScrollItemSlotLeftNav()
   end
   return nil
 end
+
 return WBP_ModScrollView_C

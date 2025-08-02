@@ -1,177 +1,177 @@
 ﻿{
   "1001": {
-    "Season": false,
-    "LevelIcon": "",
-    "ID": 1001,
-    "UnLockTextLocMeta": {
-      "InNamespace": "lobby_TBGameMode",
-      "InTextLiteral": "",
-      "InKey": "UnLockText_1001"
-    },
-    "NameLocMeta": {
-      "InNamespace": "lobby_TBGameMode",
-      "InTextLiteral": "常规模式",
-      "InKey": "Name_1001"
-    },
-    "SeasonLinkID": 0,
-    "TicketID": 0,
-    "IsPersistMode": false,
-    "SeasonModeIcon": "",
-    "Icon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ClimbTower/Bg_ModeTest_01.Bg_ModeTest_01",
-    "canTakeGrowthSnapshot": false,
-    "CanMulityPlayer": true,
     "CanRecrtuit": true,
     "CanMatching": true,
-    "CanUseTicketRule": false
+    "SeasonModeIcon": "",
+    "Icon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ClimbTower/Bg_ModeTest_01.Bg_ModeTest_01",
+    "ID": 1001,
+    "NameLocMeta": {
+      "InKey": "Name_1001",
+      "InTextLiteral": "常规模式",
+      "InNamespace": "lobby_TBGameMode"
+    },
+    "SeasonLinkID": 0,
+    "Season": false,
+    "canTakeGrowthSnapshot": false,
+    "CanUseTicketRule": false,
+    "IsPersistMode": false,
+    "LevelIcon": "",
+    "UnLockTextLocMeta": {
+      "InKey": "UnLockText_1001",
+      "InTextLiteral": "",
+      "InNamespace": "lobby_TBGameMode"
+    },
+    "TicketID": 0,
+    "CanMulityPlayer": true
   },
   "1002": {
-    "Season": true,
-    "LevelIcon": "",
-    "ID": 1002,
-    "UnLockTextLocMeta": {
-      "InNamespace": "lobby_TBGameMode",
-      "InTextLiteral": "",
-      "InKey": "UnLockText_1002"
-    },
-    "NameLocMeta": {
-      "InNamespace": "lobby_TBGameMode",
-      "InTextLiteral": "无尽模式",
-      "InKey": "Name_1002"
-    },
-    "SeasonLinkID": 1001,
-    "TicketID": 0,
-    "IsPersistMode": false,
+    "CanRecrtuit": false,
+    "CanMatching": true,
     "SeasonModeIcon": "",
     "Icon": "",
+    "ID": 1002,
+    "NameLocMeta": {
+      "InKey": "Name_1002",
+      "InTextLiteral": "无尽模式",
+      "InNamespace": "lobby_TBGameMode"
+    },
+    "SeasonLinkID": 1001,
+    "Season": true,
     "canTakeGrowthSnapshot": false,
-    "CanMulityPlayer": true,
-    "CanRecrtuit": false,
-    "CanMatching": true,
-    "CanUseTicketRule": false
+    "CanUseTicketRule": false,
+    "IsPersistMode": false,
+    "LevelIcon": "",
+    "UnLockTextLocMeta": {
+      "InKey": "UnLockText_1002",
+      "InTextLiteral": "",
+      "InNamespace": "lobby_TBGameMode"
+    },
+    "TicketID": 0,
+    "CanMulityPlayer": true
   },
   "1003": {
-    "Season": true,
-    "LevelIcon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_05.Icon_Barrier_05",
-    "ID": 1003,
-    "UnLockTextLocMeta": {
-      "InNamespace": "lobby_TBGameMode",
-      "InTextLiteral": "通关任意世界难度解锁",
-      "InKey": "UnLockText_1003"
-    },
-    "NameLocMeta": {
-      "InNamespace": "lobby_TBGameMode",
-      "InTextLiteral": "修正行动",
-      "InKey": "Name_1003"
-    },
-    "SeasonLinkID": 1026,
-    "TicketID": 0,
-    "IsPersistMode": false,
-    "SeasonModeIcon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_05.Icon_Barrier_05",
-    "Icon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ClimbTower/Bg_ModeTest_02.Bg_ModeTest_02",
-    "canTakeGrowthSnapshot": false,
-    "CanMulityPlayer": true,
     "CanRecrtuit": true,
     "CanMatching": true,
-    "CanUseTicketRule": false
+    "SeasonModeIcon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_05.Icon_Barrier_05",
+    "Icon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ClimbTower/Bg_ModeTest_02.Bg_ModeTest_02",
+    "ID": 1003,
+    "NameLocMeta": {
+      "InKey": "Name_1003",
+      "InTextLiteral": "修正行动",
+      "InNamespace": "lobby_TBGameMode"
+    },
+    "SeasonLinkID": 1026,
+    "Season": true,
+    "canTakeGrowthSnapshot": false,
+    "CanUseTicketRule": false,
+    "IsPersistMode": false,
+    "LevelIcon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_05.Icon_Barrier_05",
+    "UnLockTextLocMeta": {
+      "InKey": "UnLockText_1003",
+      "InTextLiteral": "通关任意世界难度解锁",
+      "InNamespace": "lobby_TBGameMode"
+    },
+    "TicketID": 0,
+    "CanMulityPlayer": true
   },
   "3000": {
-    "Season": true,
-    "LevelIcon": "",
-    "ID": 3000,
-    "UnLockTextLocMeta": {
-      "InNamespace": "lobby_TBGameMode",
-      "InTextLiteral": "",
-      "InKey": "UnLockText_3000"
-    },
-    "NameLocMeta": {
-      "InNamespace": "lobby_TBGameMode",
-      "InTextLiteral": "基础模式",
-      "InKey": "Name_3000"
-    },
-    "SeasonLinkID": 0,
-    "TicketID": 0,
-    "IsPersistMode": false,
+    "CanRecrtuit": false,
+    "CanMatching": true,
     "SeasonModeIcon": "",
     "Icon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ClimbTower/Bg_ModeTest_01.Bg_ModeTest_01",
-    "canTakeGrowthSnapshot": false,
-    "CanMulityPlayer": true,
-    "CanRecrtuit": false,
-    "CanMatching": true,
-    "CanUseTicketRule": false
-  },
-  "3001": {
-    "Season": true,
-    "LevelIcon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_06.Icon_Barrier_06",
-    "ID": 3001,
-    "UnLockTextLocMeta": {
-      "InNamespace": "lobby_TBGameMode",
-      "InTextLiteral": "通关修正行动层解锁",
-      "InKey": "UnLockText_3001"
-    },
+    "ID": 3000,
     "NameLocMeta": {
-      "InNamespace": "lobby_TBGameMode",
-      "InTextLiteral": "失序链区",
-      "InKey": "Name_3001"
-    },
-    "SeasonLinkID": 1025,
-    "TicketID": 1,
-    "IsPersistMode": false,
-    "SeasonModeIcon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_06.Icon_Barrier_06",
-    "Icon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ClimbTower/Bg_ModeTest_03.Bg_ModeTest_03",
-    "canTakeGrowthSnapshot": true,
-    "CanMulityPlayer": true,
-    "CanRecrtuit": false,
-    "CanMatching": false,
-    "CanUseTicketRule": true
-  },
-  "2001": {
-    "Season": false,
-    "LevelIcon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_02.Icon_Barrier_02",
-    "ID": 2001,
-    "UnLockTextLocMeta": {
-      "InNamespace": "lobby_TBGameMode",
-      "InTextLiteral": "",
-      "InKey": "UnLockText_2001"
-    },
-    "NameLocMeta": {
-      "InNamespace": "lobby_TBGameMode",
-      "InTextLiteral": "初入环都",
-      "InKey": "Name_2001"
+      "InKey": "Name_3000",
+      "InTextLiteral": "基础模式",
+      "InNamespace": "lobby_TBGameMode"
     },
     "SeasonLinkID": 0,
-    "TicketID": 0,
-    "IsPersistMode": false,
-    "SeasonModeIcon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_02.Icon_Barrier_02",
-    "Icon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_02.Icon_Barrier_02",
+    "Season": true,
     "canTakeGrowthSnapshot": false,
-    "CanMulityPlayer": false,
+    "CanUseTicketRule": false,
+    "IsPersistMode": false,
+    "LevelIcon": "",
+    "UnLockTextLocMeta": {
+      "InKey": "UnLockText_3000",
+      "InTextLiteral": "",
+      "InNamespace": "lobby_TBGameMode"
+    },
+    "TicketID": 0,
+    "CanMulityPlayer": true
+  },
+  "3001": {
     "CanRecrtuit": false,
     "CanMatching": false,
-    "CanUseTicketRule": false
+    "SeasonModeIcon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_06.Icon_Barrier_06",
+    "Icon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ClimbTower/Bg_ModeTest_03.Bg_ModeTest_03",
+    "ID": 3001,
+    "NameLocMeta": {
+      "InKey": "Name_3001",
+      "InTextLiteral": "失序链区",
+      "InNamespace": "lobby_TBGameMode"
+    },
+    "SeasonLinkID": 1025,
+    "Season": true,
+    "canTakeGrowthSnapshot": true,
+    "CanUseTicketRule": true,
+    "IsPersistMode": false,
+    "LevelIcon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_06.Icon_Barrier_06",
+    "UnLockTextLocMeta": {
+      "InKey": "UnLockText_3001",
+      "InTextLiteral": "通关修正行动层解锁",
+      "InNamespace": "lobby_TBGameMode"
+    },
+    "TicketID": 1,
+    "CanMulityPlayer": true
+  },
+  "2001": {
+    "CanRecrtuit": false,
+    "CanMatching": false,
+    "SeasonModeIcon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_02.Icon_Barrier_02",
+    "Icon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_02.Icon_Barrier_02",
+    "ID": 2001,
+    "NameLocMeta": {
+      "InKey": "Name_2001",
+      "InTextLiteral": "初入环都",
+      "InNamespace": "lobby_TBGameMode"
+    },
+    "SeasonLinkID": 0,
+    "Season": false,
+    "canTakeGrowthSnapshot": false,
+    "CanUseTicketRule": false,
+    "IsPersistMode": false,
+    "LevelIcon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_02.Icon_Barrier_02",
+    "UnLockTextLocMeta": {
+      "InKey": "UnLockText_2001",
+      "InTextLiteral": "",
+      "InNamespace": "lobby_TBGameMode"
+    },
+    "TicketID": 0,
+    "CanMulityPlayer": false
   },
   "3002": {
-    "Season": true,
-    "LevelIcon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_07.Icon_Barrier_07",
-    "ID": 3002,
-    "UnLockTextLocMeta": {
-      "InNamespace": "lobby_TBGameMode",
-      "InTextLiteral": "通关修正行动层解锁",
-      "InKey": "UnLockText_3002"
-    },
-    "NameLocMeta": {
-      "InNamespace": "lobby_TBGameMode",
-      "InTextLiteral": "病毒狂潮",
-      "InKey": "Name_3002"
-    },
-    "SeasonLinkID": 1024,
-    "TicketID": 2,
-    "IsPersistMode": false,
-    "SeasonModeIcon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_07.Icon_Barrier_07",
-    "Icon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ClimbTower/Bg_ModeTest_04.Bg_ModeTest_04",
-    "canTakeGrowthSnapshot": false,
-    "CanMulityPlayer": true,
     "CanRecrtuit": false,
     "CanMatching": true,
-    "CanUseTicketRule": true
+    "SeasonModeIcon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_07.Icon_Barrier_07",
+    "Icon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/ClimbTower/Bg_ModeTest_04.Bg_ModeTest_04",
+    "ID": 3002,
+    "NameLocMeta": {
+      "InKey": "Name_3002",
+      "InTextLiteral": "病毒狂潮",
+      "InNamespace": "lobby_TBGameMode"
+    },
+    "SeasonLinkID": 1024,
+    "Season": true,
+    "canTakeGrowthSnapshot": false,
+    "CanUseTicketRule": true,
+    "IsPersistMode": false,
+    "LevelIcon": "/Game/Rouge/UI/Atlas_DT/IconBarrier/Frames/Icon_Barrier_07.Icon_Barrier_07",
+    "UnLockTextLocMeta": {
+      "InKey": "UnLockText_3002",
+      "InTextLiteral": "通关修正行动层解锁",
+      "InNamespace": "lobby_TBGameMode"
+    },
+    "TicketID": 2,
+    "CanMulityPlayer": true
   }
 }

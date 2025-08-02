@@ -5,10 +5,12 @@ local RankData = {
   TeamRankingChange = {},
   ElementData = {}
 }
+
 function RankData.ClearData()
   RankData.TeamRankCache = {}
   RankData.TeamRankingChange = {}
 end
+
 function RankData.RequestServerData(SeasonId, GameMode, GameWorld, HeroId, TopCnt)
   local boardType = "?boardType=" .. RankData.GetBoardType(GameMode, HeroId, SeasonId)
   local boardMetaJson = {
@@ -41,12 +43,15 @@ function RankData.RequestServerData(SeasonId, GameMode, GameWorld, HeroId, TopCn
     RankData.OnRequestServerDataFail
   }, false, true)
 end
+
 function RankData.OnRequestServerDataSuccess(Target, JsonResponse)
   local JsonTable = rapidjson.decode(JsonResponse.Content)
   EventSystem.Invoke(EventDef.Rank.OnRequestServerDataSuccess, JsonTable)
 end
+
 function RankData.OnRequestServerDataFail(Target, JsonResponse)
 end
+
 function RankData.RequestServerElementData(SeasonId, GameMode, GameWorld, HeroId, UniqueID)
   local boardType = "?boardType=" .. RankData.GetBoardType(GameMode, HeroId, SeasonId)
   local boardMetaJson = {
@@ -72,6 +77,7 @@ function RankData.RequestServerElementData(SeasonId, GameMode, GameWorld, HeroId
     RankData.OnRequestServerElementDataFail
   }, false, true)
 end
+
 function RankData.OnRequestServerElementDataSuccess(Target, JsonResponse)
   local JsonTable = rapidjson.decode(JsonResponse.Content)
   if not JsonTable.data then
@@ -89,8 +95,10 @@ function RankData.OnRequestServerElementDataSuccess(Target, JsonResponse)
   end
   EventSystem.Invoke(EventDef.Rank.OnRequestServerElementDataSuccess, Data.List)
 end
+
 function RankData.OnRequestServerElementDataFail(Target, JsonResponse)
 end
+
 function RankData.DetectingRankingChanges(World, GameMode, HeroId, Index)
   local RemoveIndex = 0
   local Ranking = 0
@@ -115,6 +123,7 @@ function RankData.DetectingRankingChanges(World, GameMode, HeroId, Index)
   end
   return Ranking - Index
 end
+
 function RankData.GetPlayerInfo(RoleId)
   if not RankData.PlayerInfo then
     return
@@ -123,6 +132,7 @@ function RankData.GetPlayerInfo(RoleId)
     return RankData.PlayerInfo[RoleId]
   end
 end
+
 function RankData.SetPlayerInfo(RoleId, Data)
   if RankData.PlayerInfo == nil then
     RankData.PlayerInfo = {}
@@ -136,12 +146,14 @@ function RankData.SetPlayerInfo(RoleId, Data)
   RankData.PlayerInfo[RoleId] = Data
   EventSystem.Invoke(EventDef.Rank.OnRefreshMVP)
 end
+
 function RankData.GetPlayerName(RoleId)
   if RankData.PlayerInfo[RoleId] and RankData.PlayerInfo[RoleId].nickname then
     return RankData.PlayerInfo[RoleId].nickname
   end
   return nil
 end
+
 function RankData.GetBoardType(ModeId, HeroId, SeasonId)
   local TBRankModeTable = LuaTableMgr.GetLuaTableByName(TableNames.TBRankMode)
   for index, value in ipairs(TBRankModeTable) do
@@ -154,4 +166,5 @@ function RankData.GetBoardType(ModeId, HeroId, SeasonId)
     end
   end
 end
+
 return RankData

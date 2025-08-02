@@ -4,32 +4,40 @@ local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local RedDotData = require("Modules.RedDot.RedDotData")
 local BundleItemView = Class(ViewBase)
+
 function BundleItemView:BindClickHandler()
 end
+
 function BundleItemView:UnBindClickHandler()
 end
+
 function BundleItemView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function BundleItemView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function BundleItemView:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
   end
 end
+
 function BundleItemView:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
   end
 end
+
 function BundleItemView:BP_OnItemSelectionChanged(bIsSelected)
   if bIsSelected then
     self.WBP_RedDotView:SetNum(0)
   end
 end
+
 function BundleItemView:OnListItemObjectSet(ListItemObj)
   if ListItemObj then
     local TBMall = LuaTableMgr.GetLuaTableByName(TableNames.TBMall)
@@ -90,12 +98,15 @@ function BundleItemView:OnListItemObjectSet(ListItemObj)
     end
   end
 end
+
 function BundleItemView:OnMouseEnter(MyGeometry, MouseEvent)
   UpdateVisibility(self.Overlay_Hovered, true)
 end
+
 function BundleItemView:OnMouseLeave(MyGeometry, MouseEvent)
   UpdateVisibility(self.Overlay_Hovered, false)
 end
+
 function BundleItemView:SetQuality(Quality)
   local Re, Info = GetRowData(DT.DT_ItemRarity, Quality)
   if Re then
@@ -103,4 +114,5 @@ function BundleItemView:SetQuality(Quality)
     self.URGImage_Quality:SetColorAndOpacity(Info.SkinRareBgColor)
   end
 end
+
 return BundleItemView

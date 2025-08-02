@@ -1,4 +1,5 @@
 local WBP_SingleQuickFetterItem_C = UnLua.Class()
+
 function WBP_SingleQuickFetterItem_C:Construct()
   self.Btn_Main.OnHovered:Add(self, WBP_SingleQuickFetterItem_C.BindOnMainButtonHovered)
   self.Btn_Main.OnUnhovered:Add(self, WBP_SingleQuickFetterItem_C.BindOnMainButtonUnHovered)
@@ -6,6 +7,7 @@ function WBP_SingleQuickFetterItem_C:Construct()
   EventSystem.AddListener(self, EventDef.Lobby.FetterSlotItemClicked, WBP_SingleQuickFetterItem_C.BindOnFetterSlotItemClicked)
   EventSystem.AddListener(self, EventDef.Lobby.FetterSlotStatusUpdate, WBP_SingleQuickFetterItem_C.BindOnFetterSlotStatusUpdate)
 end
+
 function WBP_SingleQuickFetterItem_C:BindOnMainButtonHovered()
   if LogicRole.IsSlotUnlock(self.SlotIndex) then
     local SlotHeroId = LogicRole.GetCurSlotHeroId(self.MainHeroId, self.SlotIndex)
@@ -15,6 +17,7 @@ function WBP_SingleQuickFetterItem_C:BindOnMainButtonHovered()
   end
   self.Img_Hover:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
 end
+
 function WBP_SingleQuickFetterItem_C:BindOnMainButtonUnHovered()
   if LogicRole.IsSlotUnlock(self.SlotIndex) then
     local SlotHeroId = LogicRole.GetCurSlotHeroId(self.MainHeroId, self.SlotIndex)
@@ -24,6 +27,7 @@ function WBP_SingleQuickFetterItem_C:BindOnMainButtonUnHovered()
   end
   self.Img_Hover:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_SingleQuickFetterItem_C:BindOnMainButtonClicked()
   if not DataMgr.IsOwnHero(self.MainHeroId) then
     return
@@ -34,14 +38,18 @@ function WBP_SingleQuickFetterItem_C:BindOnMainButtonClicked()
     EventSystem.Invoke(EventDef.Lobby.FetterSlotItemClicked, self.SlotIndex, true)
   end
 end
+
 function WBP_SingleQuickFetterItem_C:BindOnFetterSlotStatusUpdate()
   self:RefreshStatus()
 end
+
 function WBP_SingleQuickFetterItem_C:BindOnFetterHeroInfoUpdate()
   self:RefreshStatus()
 end
+
 function WBP_SingleQuickFetterItem_C:BindOnFetterSlotItemClicked(SlotId)
 end
+
 function WBP_SingleQuickFetterItem_C:Show(SlotIndex, HeroId, CanNotClick)
   self.MainHeroId = HeroId
   self.SlotIndex = SlotIndex
@@ -51,6 +59,7 @@ function WBP_SingleQuickFetterItem_C:Show(SlotIndex, HeroId, CanNotClick)
   EventSystem.AddListener(self, EventDef.Lobby.FetterSlotStatusUpdate, WBP_SingleQuickFetterItem_C.BindOnFetterSlotStatusUpdate)
   EventSystem.AddListener(self, EventDef.Lobby.FetterHeroInfoUpdate, WBP_SingleQuickFetterItem_C.BindOnFetterHeroInfoUpdate)
 end
+
 function WBP_SingleQuickFetterItem_C:RefreshStatus()
   self.MainItem:SetVisibility(UE.ESlateVisibility.Hidden)
   self.EmptyPanel:SetVisibility(UE.ESlateVisibility.Hidden)
@@ -68,11 +77,13 @@ function WBP_SingleQuickFetterItem_C:RefreshStatus()
     end
   end
 end
+
 function WBP_SingleQuickFetterItem_C:IsSlotUnlock()
   local HeroInfo = DataMgr.GetMyHeroInfo()
   local SlotStatus = HeroInfo.slots[self.SlotIndex]
   return SlotStatus and SlotStatus == TableEnums.ENUMSlotStatus.Open or false
 end
+
 function WBP_SingleQuickFetterItem_C:Hide()
   self.HeroId = 0
   self.CanNotClick = false
@@ -80,9 +91,11 @@ function WBP_SingleQuickFetterItem_C:Hide()
   EventSystem.RemoveListener(EventDef.Lobby.FetterSlotStatusUpdate, WBP_SingleQuickFetterItem_C.BindOnFetterSlotStatusUpdate, self)
   EventSystem.RemoveListener(EventDef.Lobby.FetterHeroInfoUpdate, WBP_SingleQuickFetterItem_C.BindOnFetterHeroInfoUpdate, self)
 end
+
 function WBP_SingleQuickFetterItem_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.FetterSlotItemClicked, WBP_SingleQuickFetterItem_C.BindOnFetterSlotItemClicked, self)
   EventSystem.RemoveListener(EventDef.Lobby.FetterSlotStatusUpdate, WBP_SingleQuickFetterItem_C.BindOnFetterSlotStatusUpdate, self)
   EventSystem.RemoveListener(EventDef.Lobby.FetterHeroInfoUpdate, WBP_SingleQuickFetterItem_C.BindOnFetterHeroInfoUpdate, self)
 end
+
 return WBP_SingleQuickFetterItem_C

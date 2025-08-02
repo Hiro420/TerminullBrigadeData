@@ -1,8 +1,10 @@
 local PlayerInfoData = require("Modules.PlayerInfoMain.PlayerInfo.PlayerInfoData")
 local PlayerInfoBannerItem = Class()
+
 function PlayerInfoBannerItem:Construct()
   self.Overridden.Construct(self)
 end
+
 function PlayerInfoBannerItem:InitPlayerInfoBannerItem(tbBannerData, BannerState)
   if not tbBannerData then
     error("tbBannerData is nil, please check table tbBannerData:")
@@ -25,13 +27,17 @@ function PlayerInfoBannerItem:InitPlayerInfoBannerItem(tbBannerData, BannerState
     end
   end
 end
+
 function PlayerInfoBannerItem:Hide()
   UpdateVisibility(self, false)
 end
+
 function PlayerInfoBannerItem:OnMouseEnter(MyGeometry, MouseEvent)
   self.RGStateControllerHover:ChangeStatus(EHover.Hover)
 end
+
 function PlayerInfoBannerItem:OnMouseLeave(MyGeometry, MouseEvent)
   self.RGStateControllerHover:ChangeStatus(EHover.UnHover)
 end
+
 return PlayerInfoBannerItem

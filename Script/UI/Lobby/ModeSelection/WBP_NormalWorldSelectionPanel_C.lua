@@ -1,10 +1,13 @@
 local ViewBase = require("Framework.UIMgr.ViewBase")
 local BeginnerGuideData = require("Modules.Beginner.BeginnerGuideData")
 local WBP_NormalWorldSelectionPanel_C = UnLua.Class()
+
 function WBP_NormalWorldSelectionPanel_C:OnBindUIInput()
 end
+
 function WBP_NormalWorldSelectionPanel_C:OnUnBindUIInput()
 end
+
 function WBP_NormalWorldSelectionPanel_C:BindClickHandler()
   self.Btn_ChangeMode.OnClicked:Add(self, self.BindOnChangeModeButtonClicked)
   self.Btn_LeftChangeMode.OnClicked:Add(self, self.BindOnLeftChangeModeButtonClicked)
@@ -15,6 +18,7 @@ function WBP_NormalWorldSelectionPanel_C:BindClickHandler()
   self.Btn_ModifyPack.OnUnhovered:Add(self, self.BindOnBtnModifyPackUnhovered)
   self.Button_StartMatch.OnClicked:Add(self, self.BindOnStartMatchButtonClicked)
 end
+
 function WBP_NormalWorldSelectionPanel_C:UnBindClickHandler()
   self.Btn_ChangeMode.OnClicked:Remove(self, self.BindOnChangeModeButtonClicked)
   self.Btn_LeftChangeMode.OnClicked:Remove(self, self.BindOnLeftChangeModeButtonClicked)
@@ -25,13 +29,16 @@ function WBP_NormalWorldSelectionPanel_C:UnBindClickHandler()
   self.Btn_ModifyPack.OnUnhovered:Remove(self, self.BindOnBtnModifyPackUnhovered)
   self.Button_StartMatch.OnClicked:Remove(self, self.BindOnStartMatchButtonClicked)
 end
+
 function WBP_NormalWorldSelectionPanel_C:Construct()
   self:BindClickHandler()
 end
+
 function WBP_NormalWorldSelectionPanel_C:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function WBP_NormalWorldSelectionPanel_C:OnShow(...)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -54,9 +61,11 @@ function WBP_NormalWorldSelectionPanel_C:OnShow(...)
   self:RefreshModeList()
   self.WBP_CombatPowerTip:Show()
 end
+
 function WBP_NormalWorldSelectionPanel_C:OnRollback(...)
   ChangeToLobbyAnimCamera()
 end
+
 function WBP_NormalWorldSelectionPanel_C:InitModeDifficultLevelConfig()
   local AllLevels = LuaTableMgr.GetLuaTableByName(TableNames.TBGameFloorUnlock)
   self.AllLevelConfigList = {}
@@ -74,6 +83,7 @@ function WBP_NormalWorldSelectionPanel_C:InitModeDifficultLevelConfig()
     end
   end
 end
+
 function WBP_NormalWorldSelectionPanel_C:RefreshModeList()
   local AllChildren = self.ModeList:GetAllChildren()
   for key, SingleItem in pairs(AllChildren) do
@@ -126,8 +136,13 @@ function WBP_NormalWorldSelectionPanel_C:RefreshModeList()
     WorldId = LogicTeam.GetCurSeasonModeDefaultWorldId()
     ModeId = GetCurNormalMode()
   end
+  if 110 == BeginnerGuideData.NowGuideId then
+    WorldId = 23
+    ModeId = 1001
+  end
   EventSystem.Invoke(EventDef.ModeSelection.OnChangeModeSelectionItem, WorldId, ModeId)
 end
+
 function WBP_NormalWorldSelectionPanel_C:MediaPlayerFinish()
   local Result, RowInfo = GetRowData(DT.DT_GameMode, tostring(self.CurSelectedWorldIndex))
   if not Result then
@@ -146,6 +161,7 @@ function WBP_NormalWorldSelectionPanel_C:MediaPlayerFinish()
     UpdateVisibility(self.Img_Movie, false)
   end
 end
+
 function WBP_NormalWorldSelectionPanel_C:BindOnChangeModeSelectionItem(ModeId, GameModeId)
   local Result, RowInfo = GetRowData(DT.DT_GameMode, tostring(ModeId))
   if not Result then
@@ -222,6 +238,7 @@ function WBP_NormalWorldSelectionPanel_C:BindOnChangeModeSelectionItem(ModeId, G
   Floor = Floor > 0 and Floor or 1
   EventSystem.Invoke(EventDef.ModeSelection.OnChangeModeDifficultLevelItem, ModeId, Floor, GameModeId)
 end
+
 function WBP_NormalWorldSelectionPanel_C:RefreshGameFloorDesc(GameModeIndex, Floor)
   local ModeFloorInfo = self.AllLevelConfigList[GameModeIndex]
   local ModeRowId = ModeFloorInfo[Floor]
@@ -261,6 +278,7 @@ function WBP_NormalWorldSelectionPanel_C:RefreshGameFloorDesc(GameModeIndex, Flo
     UpdateVisibility(self.FloorExtraDescPanel, false)
   end
 end
+
 function WBP_NormalWorldSelectionPanel_C:RefreshUnderGroup()
   UpdateVisibility(self.CanvasPanel_UnderGroup, false)
   if LogicTeam.IsDefaultNeedMatchTeammate then
@@ -273,6 +291,7 @@ function WBP_NormalWorldSelectionPanel_C:RefreshUnderGroup()
     end
   end
 end
+
 function WBP_NormalWorldSelectionPanel_C:BindOnChangeModeDifficultLevelItem(WorldIndex, Floor, GameModeId)
   UpdateVisibility(self.DifficultLevelBottomPanel, false)
   self.DifficultLevelPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -310,6 +329,7 @@ function WBP_NormalWorldSelectionPanel_C:BindOnChangeModeDifficultLevelItem(Worl
     end
   end
 end
+
 function WBP_NormalWorldSelectionPanel_C:RefreshStartMatchStatus()
   local MaxUnLockFloor = DataMgr.GetFloorByGameModeIndex(self.CurSelectedWorldIndex)
   if MaxUnLockFloor < self.CurSelectedFloor then
@@ -318,6 +338,7 @@ function WBP_NormalWorldSelectionPanel_C:RefreshStartMatchStatus()
     self.RGStateController_Lock:ChangeStatus(ELock.UnLock)
   end
 end
+
 function WBP_NormalWorldSelectionPanel_C:RefreshCurSelectDifficultLevelInfo(WorldIndex, Floor)
   UpdateVisibility(self.Btn_LeftChangeMode, CheckIsInNormal(self.CurSelectMode))
   UpdateVisibility(self.Btn_ChangeMode, CheckIsInNormal(self.CurSelectMode))
@@ -409,6 +430,7 @@ function WBP_NormalWorldSelectionPanel_C:RefreshCurSelectDifficultLevelInfo(Worl
     self.RichTxt_UnlockTip:SetText(UnlockTipText)
   end
 end
+
 function WBP_NormalWorldSelectionPanel_C:RefreshFloorDropPanel(GameModeIndex, Floor)
   local ModeFloorInfo = self.AllLevelConfigList[GameModeIndex]
   local ModeRowId = ModeFloorInfo[Floor]
@@ -439,6 +461,7 @@ function WBP_NormalWorldSelectionPanel_C:RefreshFloorDropPanel(GameModeIndex, Fl
     UpdateVisibility(self.FloorDropPanel, false)
   end
 end
+
 function WBP_NormalWorldSelectionPanel_C:RefreshBeginnerClearRewardPanel()
   UpdateVisibility(self.SizeBox_BeginnerClearReward, self.CurSelectMode == TableEnums.ENUMGameMode.BEGINERGUIDANCE)
   if self.CurSelectMode ~= TableEnums.ENUMGameMode.BEGINERGUIDANCE then
@@ -465,8 +488,10 @@ function WBP_NormalWorldSelectionPanel_C:RefreshBeginnerClearRewardPanel()
     UpdateVisibility(self.SizeBox_BeginnerClearReward, false)
   end
 end
+
 function WBP_NormalWorldSelectionPanel_C:RefreshUnlockContentPanel(GameModeIndex, Floor)
 end
+
 function WBP_NormalWorldSelectionPanel_C:RefreshModifyPack()
   UpdateVisibility(self.Canvas_ModifyPack, false)
   local ModeFloorInfo = self.AllLevelConfigList[self.CurSelectedWorldIndex]
@@ -480,9 +505,11 @@ function WBP_NormalWorldSelectionPanel_C:RefreshModifyPack()
     end
   end
 end
+
 function WBP_NormalWorldSelectionPanel_C:BindOnUpdateGameFloorInfo()
   self:RefreshModeList(LogicTeam.GetWorldId())
 end
+
 function WBP_NormalWorldSelectionPanel_C:BindOnChangeModeButtonClicked()
   UpdateVisibility(self.DifficultLevelPanel, not self.DifficultLevelPanel:IsVisible())
   UpdateVisibility(self.DifficultLevelBottomPanel, not self.DifficultLevelBottomPanel:IsVisible())
@@ -491,6 +518,7 @@ function WBP_NormalWorldSelectionPanel_C:BindOnChangeModeButtonClicked()
   end
   EventSystem.Invoke(EventDef.BeginnerGuide.OnDifficultLevelPanelShow)
 end
+
 function WBP_NormalWorldSelectionPanel_C:BindOnLeftChangeModeButtonClicked()
   local AllWorldConfigInfo = self.AllLevelConfigList[self.CurSelectedWorldIndex]
   local TargetFloor = self.CurSelectedFloor - 1
@@ -505,6 +533,7 @@ function WBP_NormalWorldSelectionPanel_C:BindOnLeftChangeModeButtonClicked()
   end
   EventSystem.Invoke(EventDef.ModeSelection.OnChangeModeDifficultLevelItem, self.CurSelectedWorldIndex, TargetFloor, self.CurSelectMode)
 end
+
 function WBP_NormalWorldSelectionPanel_C:BindOnRightChangeModeButtonClicked()
   local AllWorldConfigInfo = self.AllLevelConfigList[self.CurSelectedWorldIndex]
   local TargetFloor = self.CurSelectedFloor + 1
@@ -519,18 +548,23 @@ function WBP_NormalWorldSelectionPanel_C:BindOnRightChangeModeButtonClicked()
   end
   EventSystem.Invoke(EventDef.ModeSelection.OnChangeModeDifficultLevelItem, self.CurSelectedWorldIndex, TargetFloor, self.CurSelectMode)
 end
+
 function WBP_NormalWorldSelectionPanel_C:BindOnBtnTipsHovered()
   UpdateVisibility(self.WBP_RuleDescription, true)
 end
+
 function WBP_NormalWorldSelectionPanel_C:BindOnBtnTipsUnhovered()
   UpdateVisibility(self.WBP_RuleDescription, false)
 end
+
 function WBP_NormalWorldSelectionPanel_C:BindOnBtnModifyPackHovered()
   UpdateVisibility(self.SizeBox_ModifyPackTips, true)
 end
+
 function WBP_NormalWorldSelectionPanel_C:BindOnBtnModifyPackUnhovered()
   UpdateVisibility(self.SizeBox_ModifyPackTips, false)
 end
+
 function WBP_NormalWorldSelectionPanel_C:BindOnStartMatchButtonClicked()
   local MaxUnLockFloor = DataMgr.GetFloorByGameModeIndex(self.CurSelectedWorldIndex)
   if MaxUnLockFloor < self.CurSelectedFloor then
@@ -540,6 +574,7 @@ function WBP_NormalWorldSelectionPanel_C:BindOnStartMatchButtonClicked()
   local LobbyPanelTagName = LogicLobby.GetLabelTagNameByUIName("UI_LobbyMain")
   LogicLobby.ChangeLobbyPanelLabelSelected(LobbyPanelTagName)
 end
+
 function WBP_NormalWorldSelectionPanel_C:ModeItem_OnHover(IsShow, ModeItem, ModeId, WorldId)
   if not IsShow then
     self.WBP_LockWordTip:SetRenderOpacity(0.0)
@@ -561,6 +596,7 @@ function WBP_NormalWorldSelectionPanel_C:ModeItem_OnHover(IsShow, ModeItem, Mode
     self.WBP_LockWordTip:SetRenderOpacity(1)
   end
 end
+
 function WBP_NormalWorldSelectionPanel_C:DifficultLevel_OnHover(IsShow, Floor)
   if not IsShow then
     self.WBP_LockWordTip:SetRenderOpacity(0.0)
@@ -580,6 +616,7 @@ function WBP_NormalWorldSelectionPanel_C:DifficultLevel_OnHover(IsShow, Floor)
     self.WBP_LockWordTip:SetRenderOpacity(1)
   end
 end
+
 function WBP_NormalWorldSelectionPanel_C:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -596,8 +633,10 @@ function WBP_NormalWorldSelectionPanel_C:OnHide()
   self.WBP_CombatPowerTip:Hide()
   self:StopAllAnimations()
 end
+
 function WBP_NormalWorldSelectionPanel_C:Destruct()
   self:OnHide()
   self:UnBindClickHandler()
 end
+
 return WBP_NormalWorldSelectionPanel_C

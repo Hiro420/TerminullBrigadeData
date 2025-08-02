@@ -9,20 +9,25 @@ local AwardState = {
   ReceiveNormal = 2,
   ReceivePremiun = 3
 }
+
 function BattlePassSmallItem:Construct()
   self.WBP_Item.OnClicked:Add(self, self.BtnOnClick)
   EventSystem.AddListenerNew(EventDef.BattlePass.GetBattlePassData, self, self.BindOnUpdateBattlePass)
 end
+
 function BattlePassSmallItem:Destruct()
   self.WBP_Item.OnClicked:Remove(self, self.BtnOnClick)
 end
+
 function BattlePassSmallItem:BtnOnClick()
   self.ParentView:OnItemClicked(self.ItemID, self.Level, self.Index)
   self.WBP_Item:SetSel(true)
 end
+
 function BattlePassSmallItem:OnListItemObjectSet(ListItemObj)
   self:InitItem(ListItemObj.ItemID, ListItemObj.Num, ListItemObj.ParentView, ListItemObj.Level, ListItemObj.IsPremium)
 end
+
 function BattlePassSmallItem:InitItem(ItemID, Num, ParentView, Level, IsPremium, Index)
   self.ParentView = ParentView
   self.ItemID = ItemID
@@ -33,9 +38,11 @@ function BattlePassSmallItem:InitItem(ItemID, Num, ParentView, Level, IsPremium,
   local typeText = self.IsPremium and "Premium" or "Normal"
   self.WBP_RedDotView:ChangeRedDotIdByTag(tostring(Level) .. "_" .. tostring(self.ItemID) .. "_" .. typeText)
 end
+
 function BattlePassSmallItem:SetLock(IsLock)
   self.WBP_Item:SetLock(IsLock)
 end
+
 function BattlePassSmallItem:SetReceive(CanReveice, IsReceived)
   if CanReveice then
     self.WBP_Item:UpdateReceivedPanelVis(IsReceived)
@@ -45,6 +52,7 @@ function BattlePassSmallItem:SetReceive(CanReveice, IsReceived)
     self.WBP_Item:UpdateReceivedPanelVis(false)
   end
 end
+
 function BattlePassSmallItem:SetState(State, IsNormal)
   self:SetLock(false)
   if State == AwardState.Lock then
@@ -82,4 +90,5 @@ function BattlePassSmallItem:SetState(State, IsNormal)
     self:SetLock(false)
   end
 end
+
 return BattlePassSmallItem

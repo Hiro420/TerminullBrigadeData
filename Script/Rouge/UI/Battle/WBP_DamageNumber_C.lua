@@ -1,9 +1,11 @@
 local WBP_DamageNumber_C = UnLua.Class()
 local DamageNumberConfig = require("GameConfig.DamageNumber.DamageNumberConfig")
+
 function WBP_DamageNumber_C:Initialize(Initializer)
   self.TablePos = 0
   self.StartViewportPosOffset = UE.FVector2D()
 end
+
 local DamageTextColor = {
   White = UE.FLinearColor(1.0, 1.0, 1.0, 1.0),
   Yellow = UE.FLinearColor(1.0, 0.957326, 0.0, 1.0),
@@ -11,6 +13,7 @@ local DamageTextColor = {
   Gold = UE.FLinearColor(1.0, 0.632107, 0.0, 1.0),
   Red = UE.FLinearColor(1.0, 0.0, 0.0, 1.0)
 }
+
 function WBP_DamageNumber_C:Construct()
   self.DefaultNormalSize = 14
   self.DefaultElementFontSize = 14
@@ -24,6 +27,7 @@ function WBP_DamageNumber_C:Construct()
   self.DefaultLuckyShotIconSize.X = self.Img_LuckyShot.Brush.ImageSize.X
   self.DefaultLuckyShotIconSize.Y = self.Img_LuckyShot.Brush.ImageSize.Y
 end
+
 function WBP_DamageNumber_C:Show(TargetActor, Params, HitReactionTag, HealthChangedValue)
   self.HitActor = TargetActor
   self.Params = Params
@@ -38,6 +42,7 @@ function WBP_DamageNumber_C:Show(TargetActor, Params, HitReactionTag, HealthChan
   self:InitInfo()
   self:SetVisibility(UE.ESlateVisibility.Visible)
 end
+
 function WBP_DamageNumber_C:GetDamageConfig()
   local RGGameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
   local DamageNumberStyleTag = UE.URGBlueprintLibrary.RequestNameToGameplayTag(LogicGameSetting.GetDamageNumberStyleTagName())
@@ -75,6 +80,7 @@ function WBP_DamageNumber_C:GetDamageConfig()
   end
   return RowInfo.Config
 end
+
 function WBP_DamageNumber_C:GetRandomStartTranslation()
   local DamageConfig = self:GetDamageConfig()
   local Length = UE.UKismetMathLibrary.RandomFloatInRange(DamageConfig.InnerCircleRadius, DamageConfig.OutCircleRadius)
@@ -85,6 +91,7 @@ function WBP_DamageNumber_C:GetRandomStartTranslation()
   Translation.Y = UE.UKismetMathLibrary.Abs(UE.UKismetMathLibrary.DegCos(self.OffsetAngle) * Length) * YFactor
   return Translation
 end
+
 function WBP_DamageNumber_C:GetTranslationByAngle(Length)
   local XFactor = self.OffsetAngle < 0 and -1.0 or 1.0
   local YFactor = UE.UKismetMathLibrary.InRange_FloatFloat(self.OffsetAngle, -90.0, 90.0, true, true) and -1.0 or 1.0
@@ -93,6 +100,7 @@ function WBP_DamageNumber_C:GetTranslationByAngle(Length)
   Translation.Y = UE.UKismetMathLibrary.Abs(UE.UKismetMathLibrary.DegCos(self.OffsetAngle) * Length) * YFactor
   return Translation
 end
+
 function WBP_DamageNumber_C:GetRandomAngle()
   local RandomFactor = UE.UKismetMathLibrary.RandomFloat()
   local DamageConfig = self:GetDamageConfig()
@@ -122,6 +130,7 @@ function WBP_DamageNumber_C:GetRandomAngle()
   local TargetAngle = UE.UKismetMathLibrary.RandomFloatInRange(MinAngle, MaxAngle)
   return TargetAngle
 end
+
 function WBP_DamageNumber_C:Hide()
   self.HitActor = nil
   self.Params = nil
@@ -149,6 +158,7 @@ function WBP_DamageNumber_C:Hide()
     self:StopAllAnimations()
   end
 end
+
 function WBP_DamageNumber_C:InitInfo()
   self:SetDamageText()
   local Quality = BattleUIScalability:GetDamageNumberScalability()
@@ -173,12 +183,15 @@ function WBP_DamageNumber_C:InitInfo()
     end
   }, self:GetFadeOutTime(), false)
 end
+
 function WBP_DamageNumber_C:GetFadeOutTime()
   return self.TargetDamageConfig.FadeOutTime
 end
+
 function WBP_DamageNumber_C:GetDamageOffsetCurve()
   return self.TargetDamageConfig.OffsetCurve
 end
+
 function WBP_DamageNumber_C:UpdateTextOffsetAngle()
   if self.TargetDamageConfig.IsFixedMove then
     self.OffsetAngle = self.TargetDamageConfig.MoveAngle
@@ -187,6 +200,7 @@ function WBP_DamageNumber_C:UpdateTextOffsetAngle()
     self.StartViewportPosOffset = self:GetRandomStartTranslation()
   end
 end
+
 function WBP_DamageNumber_C:UpdateTextAlignment()
   local Alignment = UE.FVector2D()
   if self.OffsetAngle > -90 and self.OffsetAngle < 0 then
@@ -215,6 +229,7 @@ function WBP_DamageNumber_C:UpdateTextAlignment()
   end
   self:SetAlignmentInViewport(Alignment)
 end
+
 function WBP_DamageNumber_C:GetDamageText()
   if self.HitReactionTag then
     local TagName = UE.UBlueprintGameplayTagLibrary.GetTagName(self.HitReactionTag)
@@ -243,6 +258,7 @@ function WBP_DamageNumber_C:GetDamageText()
     end
   end
 end
+
 function WBP_DamageNumber_C:TranslateDamageTxtCN(DamageValue)
   for i, v in ipairs(DamageNumberConfig.CN) do
     if v.MaxNumber and DamageValue < v.MaxNumber or not v.MaxNumber then
@@ -262,6 +278,7 @@ function WBP_DamageNumber_C:TranslateDamageTxtCN(DamageValue)
   end
   return tostring(math.ceil(DamageValue))
 end
+
 function WBP_DamageNumber_C:TranslateDamageTxtIntl(DamageValue)
   for i, v in ipairs(DamageNumberConfig.INTL) do
     if v.MaxNumber and DamageValue < v.MaxNumber or not v.MaxNumber then
@@ -281,10 +298,12 @@ function WBP_DamageNumber_C:TranslateDamageTxtIntl(DamageValue)
   end
   return tostring(math.ceil(DamageValue))
 end
+
 function WBP_DamageNumber_C:SetDamageText()
   local DamageText = self:GetDamageText()
   self.Txt_Damage:SetText(DamageText)
 end
+
 function WBP_DamageNumber_C:UpdateLuckyShotImageVis()
   if self.HitReactionTag or self.HealthChangedValue then
     self.Img_LuckyShot:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -294,15 +313,18 @@ function WBP_DamageNumber_C:UpdateLuckyShotImageVis()
     self.Img_LuckyShot:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_DamageNumber_C:GetInvincibleText()
   if UE.URGDamageStatics.IsInvincible(self.Params) then
     return self.InvincibleText, true
   end
   return "", false
 end
+
 function WBP_DamageNumber_C:GetDefaultFontSize()
   return self.DefaultNormalSize
 end
+
 function WBP_DamageNumber_C:GetTextColor()
   if self.HitReactionTag then
     local TagName = UE.UBlueprintGameplayTagLibrary.GetTagName(self.HitReactionTag)
@@ -323,6 +345,7 @@ function WBP_DamageNumber_C:GetTextColor()
     return self.TargetDamageConfig.TextColor, self.TargetDamageConfig.TextColor, self.TargetDamageConfig.TextColor
   end
 end
+
 function WBP_DamageNumber_C:UpdateTextColorAndSize()
   local TextInitColor, TextFinalColor, IconColor = self:GetTextColor()
   self.Txt_Damage:SetGradientColor(TextInitColor, TextFinalColor)
@@ -330,6 +353,7 @@ function WBP_DamageNumber_C:UpdateTextColorAndSize()
   self.IsBigDamage = LogicDamageNumber.IsBigDamage(self.Params)
   self:UpdateTextFont(false)
 end
+
 function WBP_DamageNumber_C:UpdateTextFont(IsLastestDamage)
   local Font = self.NormalFont
   if self.IsUseChineseFont then
@@ -371,6 +395,7 @@ function WBP_DamageNumber_C:UpdateTextFont(IsLastestDamage)
   Font.FontMaterial = CurFont.FontMaterial
   self.Txt_Damage:SetFont(Font)
 end
+
 function WBP_DamageNumber_C:GetHitLocation()
   local Pos = UE.FVector()
   if self.HitReactionTag or self.HealthChangedValue then
@@ -411,25 +436,30 @@ function WBP_DamageNumber_C:GetHitLocation()
   end
   return Pos
 end
+
 function WBP_DamageNumber_C:UpdatePosInViewport()
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
   local bResult, ViewportPos = UE.UWidgetLayoutLibrary.ProjectWorldLocationToWidgetPosition(PC, self.HitLocation, nil, false)
   local FinalViewportPos = ViewportPos + self.StartViewportPosOffset
   self:SetPositionInViewport(FinalViewportPos, false)
 end
+
 function WBP_DamageNumber_C:ShowOrHideLatestMark(IsShow)
   self:UpdateTextFont(IsShow)
 end
+
 function WBP_DamageNumber_C:CloseWidget()
   if self.ListContainer then
     self.ListContainer:HideItem(self)
   end
 end
+
 function WBP_DamageNumber_C:Destruct()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TranslationTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.TranslationTimer)
   end
 end
+
 function WBP_DamageNumber_C:StartShowAnim()
   local Quality = BattleUIScalability:GetDamageNumberScalability()
   if Quality < UIQuality.HIGH then
@@ -442,6 +472,7 @@ function WBP_DamageNumber_C:StartShowAnim()
     self:PlayAnimationForward(self.FadeInAnim)
   end
 end
+
 function WBP_DamageNumber_C:StartFadeOutAnim()
   local Quality = BattleUIScalability:GetDamageNumberScalability()
   if Quality < UIQuality.HIGH then
@@ -454,4 +485,5 @@ function WBP_DamageNumber_C:StartFadeOutAnim()
     self:PlayAnimationForward(self.FadeOutAnim)
   end
 end
+
 return WBP_DamageNumber_C

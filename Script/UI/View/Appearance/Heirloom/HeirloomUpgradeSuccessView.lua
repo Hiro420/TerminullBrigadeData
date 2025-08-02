@@ -5,17 +5,22 @@ local UIUtil = require("Framework.UIMgr.UIUtil")
 local HeirloomData = require("Modules.Appearance.Heirloom.HeirloomData")
 local EscName = "PauseGame"
 local HeirloomUpgradeSuccessView = Class(ViewBase)
+
 function HeirloomUpgradeSuccessView:BindClickHandler()
 end
+
 function HeirloomUpgradeSuccessView:UnBindClickHandler()
 end
+
 function HeirloomUpgradeSuccessView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function HeirloomUpgradeSuccessView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function HeirloomUpgradeSuccessView:OnShow(HeirloomId, Level, HeroId)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -41,8 +46,10 @@ function HeirloomUpgradeSuccessView:OnShow(HeirloomId, Level, HeroId)
   end
   self:PlayAnimationForward(self.Ani_upgrade)
 end
+
 function HeirloomUpgradeSuccessView:ListenForEscInputAction()
 end
+
 function HeirloomUpgradeSuccessView:OnAnimationFinished(Animation)
   if Animation == self.Ani_upgrade then
     local HeirloomRowInfo = HeirloomData:GetHeirloomInfoByLevel(self.HeirloomId, self.HeirloomLevel)
@@ -51,6 +58,7 @@ function HeirloomUpgradeSuccessView:OnAnimationFinished(Animation)
     UIMgr:Hide(ViewID.UI_HeirloomUpgradeSuccess)
   end
 end
+
 function HeirloomUpgradeSuccessView:OnHide()
   self:SetEnhancedInputActionBlocking(false)
   if IsListeningForInputAction(self, EscName) then
@@ -60,7 +68,9 @@ function HeirloomUpgradeSuccessView:OnHide()
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
   end
 end
+
 function HeirloomUpgradeSuccessView:Destruct()
   self:OnHide()
 end
+
 return HeirloomUpgradeSuccessView

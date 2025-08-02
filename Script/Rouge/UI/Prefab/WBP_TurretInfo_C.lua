@@ -1,6 +1,7 @@
 local ViewBase = require("Rouge.UI.Prefab.WBP_AIInfo_C")
 local WBP_TurretInfo_C = UnLua.Class(ViewBase)
 WBP_TurretInfo_C.bNeedOverrideHideFunc = true
+
 function WBP_TurretInfo_C:Construct()
   self.bIsShowPanel = false
   self.Super.Construct(self)
@@ -17,6 +18,7 @@ function WBP_TurretInfo_C:Construct()
     })
   end
 end
+
 function WBP_TurretInfo_C:Destruct()
   self.Super.Destruct(self)
   local CoreCom = self.OwningActor:GetComponentByClass(UE.URGCoreComponent:StaticClass())
@@ -31,24 +33,29 @@ function WBP_TurretInfo_C:Destruct()
     })
   end
 end
+
 function WBP_TurretInfo_C:BindOnHealthAttributeChanged(NewValue, OldValue)
   if NewValue < OldValue then
     self.ShowLeftTime = 3
   end
 end
+
 function WBP_TurretInfo_C:BindOnMaxShieldAttributeChanged(NewValue, OldValue)
   self:UpdateShieldBarVisibility()
 end
+
 function WBP_TurretInfo_C:ShowPanel()
   UpdateVisibility(self.HealthBar, true)
   self.bIsShowPanel = true
   self:UpdateShieldBarVisibility()
 end
+
 function WBP_TurretInfo_C:HidePanel()
   UpdateVisibility(self.HealthBar, false)
   self.bIsShowPanel = false
   self:UpdateShieldBarVisibility()
 end
+
 function WBP_TurretInfo_C:UpdateShieldBarVisibility()
   local MaxSheild = 0
   if self.OwningActor then
@@ -59,6 +66,7 @@ function WBP_TurretInfo_C:UpdateShieldBarVisibility()
   end
   UpdateVisibility(self.ShieldBar, MaxSheild > 0 and self.bIsShowPanel)
 end
+
 function WBP_TurretInfo_C:InitWidgetInfo(OwningActor)
   self.Super.InitWidgetInfo(self, OwningActor)
   if nil == OwningActor then
@@ -75,6 +83,7 @@ function WBP_TurretInfo_C:InitWidgetInfo(OwningActor)
     end
   end
 end
+
 function WBP_TurretInfo_C:LuaTick(InDeltaTime)
   if self.ShowLeftTime > 0 then
     self.ShowLeftTime = self.ShowLeftTime - InDeltaTime
@@ -86,4 +95,5 @@ function WBP_TurretInfo_C:LuaTick(InDeltaTime)
     UpdateVisibility(self.HorizontalBox_68, false)
   end
 end
+
 return WBP_TurretInfo_C

@@ -12,21 +12,27 @@ local PlayerInfoMainTypeToWidgetNameReflaction = {
 }
 PlayerInfoMainViewModel.propertyBindings = {}
 PlayerInfoMainViewModel.subViewModels = {}
+
 function PlayerInfoMainViewModel:OnInit()
   self.Super.OnInit(self)
 end
+
 function PlayerInfoMainViewModel:OnShutdown()
   self.Super.OnShutdown(self)
 end
+
 function PlayerInfoMainViewModel:RegisterPropertyChanged(BindingTable, View)
   self.Super.RegisterPropertyChanged(self, BindingTable, View)
 end
+
 function PlayerInfoMainViewModel:UpdateRoleID(RoleID)
   self.CurRoleID = RoleID
 end
+
 function PlayerInfoMainViewModel:GetCurRoleID()
   return self.CurRoleID
 end
+
 function PlayerInfoMainViewModel:Switch(PlayerInfoMainToggleTypeParam)
   if self.CurShowWidgetName then
     local Widget = UIMgr:GetFromActiveView(self.CurShowWidgetName)
@@ -40,11 +46,13 @@ function PlayerInfoMainViewModel:Switch(PlayerInfoMainToggleTypeParam)
     self.CurShowWidgetName = TargetWidgetName
   end
 end
+
 function PlayerInfoMainViewModel:SelectToggleId(ToggleIdx)
   if self:GetFirstView() then
     self:GetFirstView().RGToggleGroupFirst:SelectId(ToggleIdx)
   end
 end
+
 function PlayerInfoMainViewModel:SwitchLink(PlayerInfoMainToggleTypeParam, LinkParams)
   if self.CurShowWidgetName then
     local Widget = UIMgr:GetFromActiveView(self.CurShowWidgetName)
@@ -58,11 +66,13 @@ function PlayerInfoMainViewModel:SwitchLink(PlayerInfoMainToggleTypeParam, LinkP
     self.CurShowWidgetName = TargetWidgetName
   end
 end
+
 function PlayerInfoMainViewModel:HidePlayerMainView(withoutAnimation)
   if self:GetFirstView() then
     self:GetFirstView():ListenForEscInputAction(withoutAnimation)
   end
 end
+
 function PlayerInfoMainViewModel:UpdateHeroSkinDetailsView(skinId)
   if self:GetFirstView() then
     local result, row = GetRowData(DT.DT_DisplaySkinUIColor, skinId)
@@ -74,13 +84,16 @@ function PlayerInfoMainViewModel:UpdateHeroSkinDetailsView(skinId)
     end
   end
 end
+
 function PlayerInfoMainViewModel:ResetData()
   local playerInfoVM = UIModelMgr:Get("PlayerInfoViewModel")
   playerInfoVM:ResetData()
   local battleHistoryViewModel = UIModelMgr:Get("BattleHistoryViewModel")
   battleHistoryViewModel:ResetData()
 end
+
 function PlayerInfoMainViewModel:CheckIsOwnerInfo(roleID)
   return roleID == DataMgr.GetUserId()
 end
+
 return PlayerInfoMainViewModel

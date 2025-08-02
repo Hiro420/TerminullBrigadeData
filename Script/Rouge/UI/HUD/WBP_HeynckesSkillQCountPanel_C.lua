@@ -1,4 +1,5 @@
 local WBP_HeynckesSkillQCountPanel_C = UnLua.Class()
+
 function WBP_HeynckesSkillQCountPanel_C:Construct()
   ListenObjectMessage(nil, GMP.MSG_CharacterSkill_Heynckes_OnPrimaryMoveCountUpdate, self, self.BindOnPrimaryMoveCountUpdate)
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
@@ -8,6 +9,7 @@ function WBP_HeynckesSkillQCountPanel_C:Construct()
   end
   self.PrimaryMoveCount = 0
 end
+
 function WBP_HeynckesSkillQCountPanel_C:Show()
   self:BindOnInputMethodChanged()
   UpdateVisibility(self, true)
@@ -23,6 +25,7 @@ function WBP_HeynckesSkillQCountPanel_C:Show()
   end
   HideOtherItem(self.HrzBox_CountItemList, self.MaxNum + 1, true)
 end
+
 function WBP_HeynckesSkillQCountPanel_C:BindOnPrimaryMoveCountUpdate(CurrentCount)
   self.PrimaryMoveCount = CurrentCount
   self.Txt_Count:SetText(tostring(CurrentCount))
@@ -33,9 +36,11 @@ function WBP_HeynckesSkillQCountPanel_C:BindOnPrimaryMoveCountUpdate(CurrentCoun
   local QCountItem = GetOrCreateItem(self.HrzBox_CountItemList, CurrentCount + 1, self.WBP_HeynckesSkillQCountItem:GetClass())
   QCountItem.RGStateController:ChangeStatus("Disable")
 end
+
 function WBP_HeynckesSkillQCountPanel_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_HeynckesSkillQCountPanel_C:Destruct()
   UnListenObjectMessage(GMP.MSG_CharacterSkill_Heynckes_OnPrimaryMoveCountUpdate, self)
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
@@ -44,6 +49,7 @@ function WBP_HeynckesSkillQCountPanel_C:Destruct()
     CommonInputSubsystem.OnInputMethodChanged:Remove(self, self.BindOnInputMethodChanged)
   end
 end
+
 function WBP_HeynckesSkillQCountPanel_C:BindOnInputMethodChanged()
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   local CommonInputSubsystem = UE.USubsystemBlueprintLibrary.GetLocalPlayerSubsystem(PC, UE.UCommonInputSubsystem:StaticClass())
@@ -52,6 +58,7 @@ function WBP_HeynckesSkillQCountPanel_C:BindOnInputMethodChanged()
     self.RGStateController_Input:ChangeStatus(UE.ECommonInputType.GetNameStringByValue(UE.ECommonInputType.MouseAndKeyboard))
   end
 end
+
 function WBP_HeynckesSkillQCountPanel_C:LuaTick()
   local Character = self:GetOwningPlayerPawn()
   if self.PrimaryMoveCount > 0 then
@@ -76,4 +83,5 @@ function WBP_HeynckesSkillQCountPanel_C:LuaTick()
     end
   end
 end
+
 return WBP_HeynckesSkillQCountPanel_C

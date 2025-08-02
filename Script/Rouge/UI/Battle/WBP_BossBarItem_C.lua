@@ -1,4 +1,5 @@
 local WBP_BossBarItem_C = UnLua.Class()
+
 function WBP_BossBarItem_C:InitItem(Index, Num)
   UpdateVisibility(self.Image_On_up, false)
   UpdateVisibility(self.Image_On_down, true)
@@ -14,6 +15,7 @@ function WBP_BossBarItem_C:InitItem(Index, Num)
     SetImageBrushBySoftObject(self.Image_Off_down, ImageSoftPath)
   end
 end
+
 function WBP_BossBarItem_C:PlayAddAnimation()
   if not self.Off then
     return
@@ -26,6 +28,7 @@ function WBP_BossBarItem_C:PlayAddAnimation()
   PlaySound2DEffect(10050, "WBP_BossBarItem_C,PlayAddAnimation")
   self.Off = false
 end
+
 function WBP_BossBarItem_C:PlayDecreaseAnimation()
   if self.Off then
     return
@@ -34,6 +37,7 @@ function WBP_BossBarItem_C:PlayDecreaseAnimation()
   PlaySound2DEffect(10049, "WBP_BossBarItem_C,PlayDecreaseAnimation")
   self.Off = true
 end
+
 function WBP_BossBarItem_C:ShowSubBar(bShow)
   if self.Up then
     UpdateVisibility(self.SubBarUp, bShow)
@@ -41,6 +45,7 @@ function WBP_BossBarItem_C:ShowSubBar(bShow)
     UpdateVisibility(self.SubBarDown, bShow)
   end
 end
+
 function WBP_BossBarItem_C:OnInvincible(Invincible)
   if self.Off == true or self.Off == nil then
     return
@@ -51,4 +56,5 @@ function WBP_BossBarItem_C:OnInvincible(Invincible)
     self:PlayAnimation(self.Ani_invincible_out)
   end
 end
+
 return WBP_BossBarItem_C

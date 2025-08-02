@@ -1,8 +1,10 @@
 local WBP_RiftGuardianBarInfo = UnLua.Class()
+
 function WBP_RiftGuardianBarInfo:InitInfo(OwningActor)
   self.WBP_ProgressBar_Shield:InitInfo(OwningActor)
   self.WBP_ProgressBar_HP:InitInfo(OwningActor)
 end
+
 function WBP_RiftGuardianBarInfo:LuaTick()
   if self.TimeOffUTCStamp and self.TimeOffUTCStamp > 0 then
     local curtime = GetCurrentTimestamp(true)
@@ -17,15 +19,18 @@ function WBP_RiftGuardianBarInfo:LuaTick()
     end
   end
 end
+
 function WBP_RiftGuardianBarInfo:ShowRift(TimeOffUTCStamp, SpawnTimeStamp, TimeOffStamp)
   self.TimeOffUTCStamp = TimeOffUTCStamp
   self.SpawnTimeStamp = SpawnTimeStamp
   self.TimeOffStamp = TimeOffStamp
 end
+
 function WBP_RiftGuardianBarInfo:HideRift()
   self.TimeOffUTCStamp = nil
   self.SpawnTimeStamp = nil
   self.TimeOffStamp = nil
   UpdateVisibility(self.RGCanvasPanel_74, false)
 end
+
 return WBP_RiftGuardianBarInfo

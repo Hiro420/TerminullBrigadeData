@@ -2,6 +2,7 @@ local ProficiencyData = require("Modules.Proficiency.ProficiencyData")
 local ProficiencyHandler = require("Protocol.Proficiency.ProficiencyHandler")
 local WBP_ProficiencySynopsisDetailPanel_C = UnLua.Class()
 local EscKeyName = "PauseGame"
+
 function WBP_ProficiencySynopsisDetailPanel_C:OnShow(HeroId, Level)
   self.HeroId = HeroId
   self.Level = Level
@@ -31,6 +32,7 @@ function WBP_ProficiencySynopsisDetailPanel_C:OnShow(HeroId, Level)
   self.IsFinishPlay = false
   self:PlayDescText()
 end
+
 function WBP_ProficiencySynopsisDetailPanel_C:StartPlayDescText()
   if self.CurTextNum > UE.UKismetStringLibrary.Len(self.RichTextContext.PureString) then
     self.IsFinishPlay = true
@@ -42,6 +44,7 @@ function WBP_ProficiencySynopsisDetailPanel_C:StartPlayDescText()
     self.PlayDescText
   }, self.TextInterval, false)
 end
+
 function WBP_ProficiencySynopsisDetailPanel_C:PlayDescText()
   UpdateVisibility(self.Img_Loop_triangle, false)
   local TargetText = UE.URGBlueprintLibrary.GetRichTextSubString(self.RichTextContext, self.CurTextNum)
@@ -49,6 +52,7 @@ function WBP_ProficiencySynopsisDetailPanel_C:PlayDescText()
   self.CurTextNum = self.CurTextNum + 1
   self:StartPlayDescText()
 end
+
 function WBP_ProficiencySynopsisDetailPanel_C:OnEscKeyPressed()
   self.CurProgress = 0
   self.UpdateEscKeyPressTimer = UE.UKismetSystemLibrary.K2_SetTimerDelegate({
@@ -65,23 +69,28 @@ function WBP_ProficiencySynopsisDetailPanel_C:OnEscKeyPressed()
     end
   }, 0.02, true)
 end
+
 function WBP_ProficiencySynopsisDetailPanel_C:OnEscKeyReleased()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.UpdateEscKeyPressTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.UpdateEscKeyPressTimer)
   end
   self.WBP_InteractTipWidget:UpdateProgress(0)
 end
+
 function WBP_ProficiencySynopsisDetailPanel_C:BindOnEscKeyClicked()
   EventSystem.Invoke(EventDef.Proficiency.OnProficiencySynopsisDetailPanelVisChanged, false, self.HeroId, self.Level)
 end
+
 function WBP_ProficiencySynopsisDetailPanel_C:BindOnGetHeroProfyStoryRewardSuccess()
   self.IsNeedShowReceiveAwardTip = true
 end
+
 function WBP_ProficiencySynopsisDetailPanel_C:OnMouseButtonDown()
   if self.IsFinishPlay then
     EventSystem.Invoke(EventDef.Proficiency.OnProficiencySynopsisDetailPanelVisChanged, false, self.HeroId, self.Level)
   end
 end
+
 function WBP_ProficiencySynopsisDetailPanel_C:OnPreHide(...)
   UpdateVisibility(self, false)
   StopListeningForInputAction(self, EscKeyName, UE.EInputEvent.IE_Pressed)
@@ -95,6 +104,8 @@ function WBP_ProficiencySynopsisDetailPanel_C:OnPreHide(...)
   end
   EventSystem.RemoveListener(EventDef.Proficiency.OnGetHeroProfyStoryRewardSuccess, self.BindOnGetHeroProfyStoryRewardSuccess, self)
 end
+
 function WBP_ProficiencySynopsisDetailPanel_C:OnHide()
 end
+
 return WBP_ProficiencySynopsisDetailPanel_C

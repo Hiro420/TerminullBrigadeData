@@ -1,4 +1,5 @@
 local WBP_RegionServerItem_C = UnLua.Class()
+
 function WBP_RegionServerItem_C:Construct()
   if not self.bComboBox then
     self:InitRegionServerItem(LogicTeam.GetRegion())
@@ -6,15 +7,18 @@ function WBP_RegionServerItem_C:Construct()
   end
   EventSystem.AddListener(self, EventDef.Lobby.UpdateRegionPing, self.UpdateRegionPing)
 end
+
 function WBP_RegionServerItem_C:UpdateRegionPing()
   if not self.bComboBox then
     self:InitRegionServerItem(LogicTeam.GetRegion())
   end
   self:SetPingValue(LogicTeam.GetRegionPingValue(self.Region))
 end
+
 function WBP_RegionServerItem_C:BindOnUpdateMyTeamInfo()
   self:InitRegionServerItem(LogicTeam.GetRegion())
 end
+
 function WBP_RegionServerItem_C:InitRegionServerItem(Region)
   if nil == Region then
     return
@@ -28,6 +32,7 @@ function WBP_RegionServerItem_C:InitRegionServerItem(Region)
   local PingValue = LogicTeam.GetRegionPingValue(self.Region)
   self:SetPingValue(PingValue)
 end
+
 function WBP_RegionServerItem_C:SetPingValue(Value)
   if Value then
     self.Txt_ServerPing:SetText(Value .. "ms")
@@ -41,4 +46,5 @@ function WBP_RegionServerItem_C:SetPingValue(Value)
     self.RGStateController_Ping:ChangeStatus("Normal")
   end
 end
+
 return WBP_RegionServerItem_C

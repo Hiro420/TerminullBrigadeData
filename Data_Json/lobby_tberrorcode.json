@@ -1,0 +1,2024 @@
+[
+  {
+    "ID": 500,
+    "Module": "common",
+    "Annotation": "未知错误",
+    "Tips": "遇到未知错误，请稍后重试"
+  },
+  {
+    "ID": 10001,
+    "Module": "common",
+    "Annotation": "token无效",
+    "Tips": "token无效"
+  },
+  {
+    "ID": 10002,
+    "Module": "common",
+    "Annotation": "找不到user",
+    "Tips": "找不到user"
+  },
+  {
+    "ID": 10003,
+    "Module": "common",
+    "Annotation": "无效的value",
+    "Tips": "无效的value"
+  },
+  {
+    "ID": 10004,
+    "Module": "common",
+    "Annotation": "无效参数",
+    "Tips": "无效参数"
+  },
+  {
+    "ID": 10005,
+    "Module": "common",
+    "Annotation": "没有权限",
+    "Tips": "没有权限"
+  },
+  {
+    "ID": 10006,
+    "Module": "common",
+    "Annotation": "保存到数据库失败",
+    "Tips": "保存到数据库失败"
+  },
+  {
+    "ID": 10007,
+    "Module": "common",
+    "Annotation": "查询数据库失败",
+    "Tips": "查询数据库失败"
+  },
+  {
+    "ID": 10008,
+    "Module": "common",
+    "Annotation": "赛季id无效",
+    "Tips": "赛季id无效"
+  },
+  {
+    "ID": 10009,
+    "Module": "common",
+    "Annotation": "禁止操作",
+    "Tips": "禁止操作"
+  },
+  {
+    "ID": 10010,
+    "Module": "common",
+    "Annotation": "频率限制",
+    "Tips": "服务器繁忙，请稍后再试"
+  },
+  {
+    "ID": 10011,
+    "Module": "common",
+    "Annotation": "敏感文本",
+    "Tips": "存在不可用内容，请修改后再试"
+  },
+  {
+    "ID": 10012,
+    "Module": "common",
+    "Annotation": "系统锁定",
+    "Tips": "系统暂未解锁，请解锁后再来"
+  },
+  {
+    "ID": 11000,
+    "Module": "common",
+    "Annotation": "未知错误",
+    "Tips": "遇到未知错误，请稍后重试"
+  },
+  {
+    "ID": 11001,
+    "Module": "rankservice",
+    "Annotation": "排行榜不存在",
+    "Tips": "排行榜不存在"
+  },
+  {
+    "ID": 12001,
+    "Module": "heroservice",
+    "Annotation": "找不到英雄",
+    "Tips": "找不到英雄"
+  },
+  {
+    "ID": 12002,
+    "Module": "heroservice",
+    "Annotation": "英雄没有解锁",
+    "Tips": "英雄没有解锁"
+  },
+  {
+    "ID": 12003,
+    "Module": "heroservice",
+    "Annotation": "英雄已经解锁过了",
+    "Tips": "英雄已经解锁过了"
+  },
+  {
+    "ID": 12004,
+    "Module": "heroservice",
+    "Annotation": "找不到皮肤",
+    "Tips": "找不到皮肤"
+  },
+  {
+    "ID": 12005,
+    "Module": "heroservice",
+    "Annotation": "英雄不能装备该皮肤",
+    "Tips": "英雄不能装备该皮肤"
+  },
+  {
+    "ID": 12006,
+    "Module": "heroservice",
+    "Annotation": "找不到武器或者配件",
+    "Tips": "找不到武器或者配件"
+  },
+  {
+    "ID": 12007,
+    "Module": "heroservice",
+    "Annotation": "背包满",
+    "Tips": "背包满"
+  },
+  {
+    "ID": 12008,
+    "Module": "heroservice",
+    "Annotation": "资源不足",
+    "Tips": "资源不足"
+  },
+  {
+    "ID": 12009,
+    "Module": "heroservice",
+    "Annotation": "武器不能装备该皮肤",
+    "Tips": "武器不能装备该皮肤"
+  },
+  {
+    "ID": 12010,
+    "Module": "heroservice",
+    "Annotation": "传家宝mvp需要先激活",
+    "Tips": "传家宝mvp需要先激活"
+  },
+  {
+    "ID": 12011,
+    "Module": "heroservice",
+    "Annotation": "传家宝mvp升级到了最高级",
+    "Tips": "传家宝mvp升级到了最高级"
+  },
+  {
+    "ID": 12012,
+    "Module": "heroservice",
+    "Annotation": "外观id未解锁",
+    "Tips": "外观id未解锁"
+  },
+  {
+    "ID": 12013,
+    "Module": "heroservice",
+    "Annotation": "外观id已经解锁",
+    "Tips": "外观id已经解锁"
+  },
+  {
+    "ID": 12014,
+    "Module": "heroservice",
+    "Annotation": "英雄不能装备该外观id",
+    "Tips": "英雄不能装备该外观id"
+  },
+  {
+    "ID": 12015,
+    "Module": "heroservice",
+    "Annotation": "轮盘id未解锁",
+    "Tips": "轮盘id未解锁"
+  },
+  {
+    "ID": 12016,
+    "Module": "heroservice",
+    "Annotation": "轮盘id已经解锁",
+    "Tips": "轮盘id已经解锁"
+  },
+  {
+    "ID": 12017,
+    "Module": "heroservice",
+    "Annotation": "英雄不能装备该轮盘id",
+    "Tips": "英雄不能装备该轮盘id"
+  },
+  {
+    "ID": 12018,
+    "Module": "heroservice",
+    "Annotation": "天赋已经升级到满级了",
+    "Tips": "天赋已经升级到满级了"
+  },
+  {
+    "ID": 12019,
+    "Module": "heroservice",
+    "Annotation": "通用天赋已经升级过了",
+    "Tips": "通用天赋已经升级过了"
+  },
+  {
+    "ID": 12020,
+    "Module": "heroservice",
+    "Annotation": "该装备位没有装备",
+    "Tips": "该装备位没有装备"
+  },
+  {
+    "ID": 12021,
+    "Module": "heroservice",
+    "Annotation": "该装备位已经有相同的模组了",
+    "Tips": "该装备位已经有相同的模组了"
+  },
+  {
+    "ID": 12022,
+    "Module": "heroservice",
+    "Annotation": "模组背包满",
+    "Tips": "模组背包满"
+  },
+  {
+    "ID": 12023,
+    "Module": "heroservice",
+    "Annotation": "槽位没有开放",
+    "Tips": "槽位没有开放"
+  },
+  {
+    "ID": 12024,
+    "Module": "heroservice",
+    "Annotation": "赛季槽位没有开放",
+    "Tips": "赛季槽位没有开放"
+  },
+  {
+    "ID": 12025,
+    "Module": "heroservice",
+    "Annotation": "找不到模组",
+    "Tips": "找不到模组"
+  },
+  {
+    "ID": 12026,
+    "Module": "heroservice",
+    "Annotation": "不能装备模组到同一位置",
+    "Tips": "不能装备模组到同一位置"
+  },
+  {
+    "ID": 12027,
+    "Module": "heroservice",
+    "Annotation": "对应槽位没有模组",
+    "Tips": "对应槽位没有模组"
+  },
+  {
+    "ID": 12028,
+    "Module": "heroservice",
+    "Annotation": "槽位不对应",
+    "Tips": "槽位不对应"
+  },
+  {
+    "ID": 12029,
+    "Module": "heroservice",
+    "Annotation": "模组已装备",
+    "Tips": "模组已装备"
+  },
+  {
+    "ID": 12030,
+    "Module": "heroservice",
+    "Annotation": "模组升级到满级",
+    "Tips": "模组升级到满级"
+  },
+  {
+    "ID": 12031,
+    "Module": "heroservice",
+    "Annotation": "模组升级报错",
+    "Tips": "模组升级报错"
+  },
+  {
+    "ID": 12032,
+    "Module": "heroservice",
+    "Annotation": "错误的模组状态",
+    "Tips": "错误的模组状态"
+  },
+  {
+    "ID": 12033,
+    "Module": "heroservice",
+    "Annotation": "模组被锁,不能被吃",
+    "Tips": "模组处于锁定状态"
+  },
+  {
+    "ID": 12034,
+    "Module": "heroservice",
+    "Annotation": "模组被装备，不能被吃",
+    "Tips": "模组处于锁定状态"
+  },
+  {
+    "ID": 12035,
+    "Module": "heroservice",
+    "Annotation": "重复领取熟练度奖励",
+    "Tips": "重复领取熟练度奖励"
+  },
+  {
+    "ID": 12036,
+    "Module": "heroservice",
+    "Annotation": "熟练度等级错误",
+    "Tips": "熟练度等级错误"
+  },
+  {
+    "ID": 12037,
+    "Module": "heroservice",
+    "Annotation": "升级模组不能吃掉自己",
+    "Tips": "升级模组不能吃掉自己"
+  },
+  {
+    "ID": 12038,
+    "Module": "heroservice",
+    "Annotation": "模组不能装备到该英雄身上",
+    "Tips": "模组不能装备至该角色"
+  },
+  {
+    "ID": 12039,
+    "Module": "heroservice",
+    "Annotation": "模组升级材料不足",
+    "Tips": "模组升级材料不足"
+  },
+  {
+    "ID": 12040,
+    "Module": "heroservice",
+    "Annotation": "模组升级材料不能升级该模组",
+    "Tips": "模组升级材料不能给该模组升级"
+  },
+  {
+    "ID": 12041,
+    "Module": "heroservice",
+    "Annotation": "拼图背包满",
+    "Tips": "模组背包已满"
+  },
+  {
+    "ID": 12042,
+    "Module": "heroservice",
+    "Annotation": "找不到拼图",
+    "Tips": "找不到该模组"
+  },
+  {
+    "ID": 12043,
+    "Module": "heroservice",
+    "Annotation": "错误的拼图状态",
+    "Tips": "错误的模组状态"
+  },
+  {
+    "ID": 12044,
+    "Module": "heroservice",
+    "Annotation": "拼图升级到满级",
+    "Tips": "模组升至满级"
+  },
+  {
+    "ID": 12045,
+    "Module": "heroservice",
+    "Annotation": "升级拼图不能吃掉自己",
+    "Tips": "升级模组不能吞噬自身"
+  },
+  {
+    "ID": 12046,
+    "Module": "heroservice",
+    "Annotation": "拼图被装备，不能被吃",
+    "Tips": "模组已被装备，无法被吞噬"
+  },
+  {
+    "ID": 12047,
+    "Module": "heroservice",
+    "Annotation": "拼图升级材料不足",
+    "Tips": "模组升级材料不足"
+  },
+  {
+    "ID": 12048,
+    "Module": "heroservice",
+    "Annotation": "拼图已经装备到其他英雄身上了",
+    "Tips": "该模组已装备至其他角色矩阵中"
+  },
+  {
+    "ID": 12049,
+    "Module": "heroservice",
+    "Annotation": "拼图槽位重叠，不能装备",
+    "Tips": "模组槽位重叠，无法镶嵌"
+  },
+  {
+    "ID": 12050,
+    "Module": "heroservice",
+    "Annotation": "拼图槽位超出上限",
+    "Tips": "模组槽位超出上限"
+  },
+  {
+    "ID": 12051,
+    "Module": "heroservice",
+    "Annotation": "拼图世界槽位数量超出上限",
+    "Tips": "已超过该世界槽位限定的装备数量"
+  },
+  {
+    "ID": 12052,
+    "Module": "heroservice",
+    "Annotation": "拼图被锁定，不能被吃",
+    "Tips": "模组被锁定，无法被吞噬"
+  },
+  {
+    "ID": 12053,
+    "Module": "heroservice",
+    "Annotation": "拼图槽位不合法",
+    "Tips": "模组槽位不合法"
+  },
+  {
+    "ID": 12054,
+    "Module": "heroservice",
+    "Annotation": "拼图绑定的英雄不匹配",
+    "Tips": "模组绑定的角色不匹配"
+  },
+  {
+    "ID": 12055,
+    "Module": "heroservice",
+    "Annotation": "拼图升级资源不足",
+    "Tips": "模组升级材料不足"
+  },
+  {
+    "ID": 12056,
+    "Module": "heroservice",
+    "Annotation": "拼图分解拼图数量太多",
+    "Tips": "分解模组数量太多"
+  },
+  {
+    "ID": 12057,
+    "Module": "heroservice",
+    "Annotation": "重置拼图道具不足",
+    "Tips": "重置模组道具不足"
+  },
+  {
+    "ID": 12058,
+    "Module": "heroservice",
+    "Annotation": "找不到宝石",
+    "Tips": "找不到核芯"
+  },
+  {
+    "ID": 12059,
+    "Module": "heroservice",
+    "Annotation": "宝石背包满",
+    "Tips": "核芯已满"
+  },
+  {
+    "ID": 12060,
+    "Module": "heroservice",
+    "Annotation": "宝石升级到满级",
+    "Tips": "核芯已升至满级"
+  },
+  {
+    "ID": 12061,
+    "Module": "heroservice",
+    "Annotation": "宝石槽位不存在",
+    "Tips": "核芯槽位不存在"
+  },
+  {
+    "ID": 12062,
+    "Module": "heroservice",
+    "Annotation": "宝石槽位为空",
+    "Tips": "核芯槽位为空"
+  },
+  {
+    "ID": 12063,
+    "Module": "heroservice",
+    "Annotation": "宝石已经装备",
+    "Tips": "核芯已经装备"
+  },
+  {
+    "ID": 12064,
+    "Module": "heroservice",
+    "Annotation": "宝石不在拼图上",
+    "Tips": "核芯不在模组上"
+  },
+  {
+    "ID": 12065,
+    "Module": "heroservice",
+    "Annotation": "拼图洗练资源不足",
+    "Tips": "模组洗练资源不足"
+  },
+  {
+    "ID": 12066,
+    "Module": "heroservice",
+    "Annotation": "不能重复购买该皮肤",
+    "Tips": "不能重复购买该皮肤"
+  },
+  {
+    "ID": 12067,
+    "Module": "heroservice",
+    "Annotation": "皮肤兑换资源不足",
+    "Tips": "皮肤兑换资源不足"
+  },
+  {
+    "ID": 12068,
+    "Module": "heroservice",
+    "Annotation": "皮肤所属英雄没有解锁，无法购买",
+    "Tips": "皮肤所属英雄没有解锁，无法购买"
+  },
+  {
+    "ID": 12069,
+    "Module": "heroservice",
+    "Annotation": "皮肤原皮没有购买，无法购买",
+    "Tips": "皮肤原皮没有购买，无法购买"
+  },
+  {
+    "ID": 12070,
+    "Module": "heroservice",
+    "Annotation": "不是套装皮肤，无法设置效果状态",
+    "Tips": "不是套装皮肤，无法设置效果状态"
+  },
+  {
+    "ID": 12071,
+    "Module": "heroservice",
+    "Annotation": "皮肤套装没有全部购买，无法设置效果状态",
+    "Tips": "皮肤套装没有全部购买，无法设置效果状态"
+  },
+  {
+    "ID": 12072,
+    "Module": "heroservice",
+    "Annotation": "拼图形状洗练资源不足",
+    "Tips": "模组形状洗练资源不足"
+  },
+  {
+    "ID": 12073,
+    "Module": "heroservice",
+    "Annotation": "宝石重构资源不足",
+    "Tips": "核芯重构资源不足"
+  },
+  {
+    "ID": 12074,
+    "Module": "heroservice",
+    "Annotation": "拼图副属性洗练资源不足",
+    "Tips": "模组副属性洗练资源不足"
+  },
+  {
+    "ID": 12075,
+    "Module": "heroservice",
+    "Annotation": "拼图副属性洗练槽位类型错误",
+    "Tips": "该模组没有副属性，重置失败"
+  },
+  {
+    "ID": 12076,
+    "Module": "heroservice",
+    "Annotation": "拼图已经重构过了",
+    "Tips": "模组已经重构过了"
+  },
+  {
+    "ID": 12077,
+    "Module": "heroservice",
+    "Annotation": "拼图没有词条,不能洗练词条",
+    "Tips": "模组没有词条,不能洗练词条"
+  },
+  {
+    "ID": 12078,
+    "Module": "heroservice",
+    "Annotation": "宝石已经重构过了",
+    "Tips": "核芯已经重构过了"
+  },
+  {
+    "ID": 12079,
+    "Module": "heroservice",
+    "Annotation": "洗练拼图词条失败，池子是空的",
+    "Tips": "洗练模组词条失败，池子是空的"
+  },
+  {
+    "ID": 12080,
+    "Module": "heroservice",
+    "Annotation": "拼图已经装备了，不能被洗练",
+    "Tips": "模组已经装备了，不能被洗练"
+  },
+  {
+    "ID": 12081,
+    "Module": "heroservice",
+    "Annotation": "拼图副属性洗练槽位位置错误",
+    "Tips": "该模组没有副属性，重置失败"
+  },
+  {
+    "ID": 12082,
+    "Module": "heroservice",
+    "Annotation": "已经有该武器了",
+    "Tips": "已经有该武器了"
+  },
+  {
+    "ID": 12083,
+    "Module": "heroservice",
+    "Annotation": "已经有该武器皮肤了",
+    "Tips": "已经有该武器皮肤了"
+  },
+  {
+    "ID": 12084,
+    "Module": "heroservice",
+    "Annotation": "已经选择过英雄了",
+    "Tips": "已经选择过英雄了"
+  },
+  {
+    "ID": 12085,
+    "Module": "heroservice",
+    "Annotation": "不能选择该英雄",
+    "Tips": "不能选择该英雄"
+  },
+  {
+    "ID": 12086,
+    "Module": "heroservice",
+    "Annotation": "拼图装备了宝石不能被分解",
+    "Tips": "模组装备了核芯，无法被分解"
+  },
+  {
+    "ID": 12087,
+    "Module": "heroservice",
+    "Annotation": "拼图被装备了，不能被分解",
+    "Tips": "模组已被装备，无法被分解"
+  },
+  {
+    "ID": 12088,
+    "Module": "heroservice",
+    "Annotation": "拼图没有副属性，不能重构",
+    "Tips": ""
+  },
+  {
+    "ID": 12089,
+    "Module": "heroservice",
+    "Annotation": "拼图词条组是红色词条组，不能洗练",
+    "Tips": ""
+  },
+  {
+    "ID": 12093,
+    "Module": "heroservice",
+    "Annotation": "升级宝石传入的等级错误",
+    "Tips": "请勿频繁操作"
+  },
+  {
+    "ID": 15000,
+    "Module": "teamservice",
+    "Annotation": "已经在队伍中",
+    "Tips": "已经在队伍中"
+  },
+  {
+    "ID": 15001,
+    "Module": "teamservice",
+    "Annotation": "不在队伍中",
+    "Tips": "不在队伍中"
+  },
+  {
+    "ID": 15002,
+    "Module": "teamservice",
+    "Annotation": "队伍满",
+    "Tips": "队伍满"
+  },
+  {
+    "ID": 15003,
+    "Module": "teamservice",
+    "Annotation": "找不到队伍",
+    "Tips": "找不到队伍"
+  },
+  {
+    "ID": 15004,
+    "Module": "teamservice",
+    "Annotation": "队伍状态转换失败",
+    "Tips": "队伍状态转换失败"
+  },
+  {
+    "ID": 15005,
+    "Module": "teamservice",
+    "Annotation": "申请战斗服失败",
+    "Tips": "战斗区域繁忙，请稍后重试"
+  },
+  {
+    "ID": 15007,
+    "Module": "teamservice",
+    "Annotation": "没有权限操作队伍",
+    "Tips": "没有权限操作队伍"
+  },
+  {
+    "ID": 15008,
+    "Module": "teamservice",
+    "Annotation": "游戏楼层无效",
+    "Tips": "未解锁该难度"
+  },
+  {
+    "ID": 15009,
+    "Module": "teamservice",
+    "Annotation": "已经选定了英雄",
+    "Tips": "已经选定了英雄"
+  },
+  {
+    "ID": 15010,
+    "Module": "teamservice",
+    "Annotation": "玩家被暂时封禁，不能加入队伍",
+    "Tips": "玩家被暂时封禁，不能加入队伍"
+  },
+  {
+    "ID": 15011,
+    "Module": "teamservice",
+    "Annotation": "无效的队伍码",
+    "Tips": "原队伍不存在"
+  },
+  {
+    "ID": 15012,
+    "Module": "teamservice",
+    "Annotation": "我方已经进入匹配状态",
+    "Tips": "我方已经进入匹配状态"
+  },
+  {
+    "ID": 15013,
+    "Module": "teamservice",
+    "Annotation": "我方已经开始游戏",
+    "Tips": "我方已经开始游戏"
+  },
+  {
+    "ID": 15020,
+    "Module": "teamservice",
+    "Annotation": "我方队伍已满",
+    "Tips": "我方队伍已满"
+  },
+  {
+    "ID": 15021,
+    "Module": "teamservice",
+    "Annotation": "对方队伍已满",
+    "Tips": "对方队伍已满"
+  },
+  {
+    "ID": 15027,
+    "Module": "teamservice",
+    "Annotation": "对方队伍已经匹配",
+    "Tips": "对方队伍已经匹配"
+  },
+  {
+    "ID": 15028,
+    "Module": "teamservice",
+    "Annotation": "对方队伍已经开始游戏",
+    "Tips": "对方队伍已经开始游戏"
+  },
+  {
+    "ID": 15029,
+    "Module": "teamservice",
+    "Annotation": "版本不一致",
+    "Tips": "版本不一致"
+  },
+  {
+    "ID": 15030,
+    "Module": "teamservice",
+    "Annotation": "玩家不在战斗中",
+    "Tips": "玩家不在战斗中"
+  },
+  {
+    "ID": 15031,
+    "Module": "teamservice",
+    "Annotation": "邀请|被邀请加入队伍被ban",
+    "Tips": "禁止邀请组队"
+  },
+  {
+    "ID": 15032,
+    "Module": "teamservice",
+    "Annotation": "进入队伍被ban",
+    "Tips": "禁止加入队伍"
+  },
+  {
+    "ID": 15033,
+    "Module": "teamservice",
+    "Annotation": "自己不能多人组队",
+    "Tips": "自己不能多人组队"
+  },
+  {
+    "ID": 15034,
+    "Module": "teamservice",
+    "Annotation": "对方不能多人组队",
+    "Tips": "对方不能多人组队"
+  },
+  {
+    "ID": 15035,
+    "Module": "teamservice",
+    "Annotation": "爬塔模式-好友未解锁该难度",
+    "Tips": "好友暂未解锁"
+  },
+  {
+    "ID": 15036,
+    "Module": "teamservice",
+    "Annotation": "爬塔模式-队友未解锁该难度",
+    "Tips": "队友暂未解锁"
+  },
+  {
+    "ID": 15037,
+    "Module": "teamservice",
+    "Annotation": "爬塔模式-要加入的队伍难度太高",
+    "Tips": "暂未解锁，无法加入"
+  },
+  {
+    "ID": 15038,
+    "Module": "teamservice",
+    "Annotation": "爬塔模式-不能创建该难度的队伍",
+    "Tips": "无法创建该层数的队伍"
+  },
+  {
+    "ID": 15039,
+    "Module": "teamservice",
+    "Annotation": "爬塔模式-debuff不合法",
+    "Tips": "自身或队员的故障清单积分选择不足"
+  },
+  {
+    "ID": 15040,
+    "Module": "teamservice",
+    "Annotation": "爬塔模式-当前模式不是爬塔模式,不能设置debuff",
+    "Tips": "当前模式不是爬塔，无法设置故障清单"
+  },
+  {
+    "ID": 15041,
+    "Module": "teamservice",
+    "Annotation": "爬塔模式-异象-与其他队员英雄重复",
+    "Tips": "与其他队员使用角色重复"
+  },
+  {
+    "ID": 15042,
+    "Module": "teamservice",
+    "Annotation": "爬塔模式-异象-不支持的异象",
+    "Tips": "不支持的异象"
+  },
+  {
+    "ID": 15043,
+    "Module": "teamservice",
+    "Annotation": "招募-我的队伍已满",
+    "Tips": "我的队伍已满"
+  },
+  {
+    "ID": 15044,
+    "Module": "teamservice",
+    "Annotation": "招募-玩家不在申请列表中",
+    "Tips": "玩家已不再申请列表中"
+  },
+  {
+    "ID": 15045,
+    "Module": "teamservice",
+    "Annotation": "招募-已经申请过该队伍",
+    "Tips": "已申请过该队伍"
+  },
+  {
+    "ID": 15046,
+    "Module": "teamservice",
+    "Annotation": "招募-该队伍已经停止招募",
+    "Tips": "该队伍已停止招募"
+  },
+  {
+    "ID": 15047,
+    "Module": "teamservice",
+    "Annotation": "招募-该队伍申请列表已经满",
+    "Tips": "该队伍的招募申请列表已满"
+  },
+  {
+    "ID": 15048,
+    "Module": "teamservice",
+    "Annotation": "招募-自己队伍正在招募中",
+    "Tips": "我的队伍正在招募中"
+  },
+  {
+    "ID": 15049,
+    "Module": "teamservice",
+    "Annotation": "招募-对方队伍申请列表已满",
+    "Tips": "对方队伍申请列表已满"
+  },
+  {
+    "ID": 15050,
+    "Module": "teamservice",
+    "Annotation": "招募-申请招募CD",
+    "Tips": "请勿频繁申请"
+  },
+  {
+    "ID": 15051,
+    "Module": "teamservice",
+    "Annotation": "无法切换单人模式",
+    "Tips": "无法切换至教学模式"
+  },
+  {
+    "ID": 15052,
+    "Module": "teamservice",
+    "Annotation": "对方队伍是单人模式",
+    "Tips": "对方处于教学模式，无法组队"
+  },
+  {
+    "ID": 15053,
+    "Module": "teamservice",
+    "Annotation": "我方队伍是单人模式",
+    "Tips": "当前处于教学模式，无法组队"
+  },
+  {
+    "ID": 15054,
+    "Module": "teamservice",
+    "Annotation": "单人模式不能匹配",
+    "Tips": "教学模式无法匹配队友"
+  },
+  {
+    "ID": 15055,
+    "Module": "teamservice",
+    "Annotation": "单人模式不能招募",
+    "Tips": "教学模式无法招募队友"
+  },
+  {
+    "ID": 15056,
+    "Module": "teamservice",
+    "Annotation": "对方玩家不能加入队伍",
+    "Tips": "对方玩家不能加入队伍"
+  },
+  {
+    "ID": 15057,
+    "Module": "teamservice",
+    "Annotation": "当前玩家不能加入队伍",
+    "Tips": "当前玩家不能加入队伍"
+  },
+  {
+    "ID": 15058,
+    "Module": "teamservice",
+    "Annotation": "多人队伍不可以取消游戏",
+    "Tips": "多人队伍不可以取消游戏"
+  },
+  {
+    "ID": 15059,
+    "Module": "teamservice",
+    "Annotation": "不能取消游戏-队伍状态不是选择英雄中",
+    "Tips": "不能取消游戏-队伍状态不是选择英雄中"
+  },
+  {
+    "ID": 15060,
+    "Module": "teamservice",
+    "Annotation": "玩家已经通关了新手bd",
+    "Tips": "新手教学模式已关闭"
+  },
+  {
+    "ID": 15061,
+    "Module": "teamservice",
+    "Annotation": "只有BD模式才可以快速开始游戏",
+    "Tips": "只有教学模式可以快速开始游戏"
+  },
+  {
+    "ID": 15062,
+    "Module": "teamservice",
+    "Annotation": "有队员员没有解锁该模式",
+    "Tips": "有队伍成员未解锁该模式"
+  },
+  {
+    "ID": 15063,
+    "Module": "teamservice",
+    "Annotation": "有队员没有解锁该世界",
+    "Tips": "有队伍成员未解锁该世界"
+  },
+  {
+    "ID": 15064,
+    "Module": "teamservice",
+    "Annotation": "有队员没有解锁该难度",
+    "Tips": "有队伍成员未解锁该难度"
+  },
+  {
+    "ID": 15065,
+    "Module": "teamservice",
+    "Annotation": "我方队伍状态在空闲中",
+    "Tips": "我方队伍在空闲状态中"
+  },
+  {
+    "ID": 15066,
+    "Module": "teamservice",
+    "Annotation": "我方队伍在匹配中",
+    "Tips": "操作失败，我方队伍已在匹配中"
+  },
+  {
+    "ID": 15067,
+    "Module": "teamservice",
+    "Annotation": "我方队伍在准备中",
+    "Tips": "操作失败，我方队伍已在准备阶段"
+  },
+  {
+    "ID": 15068,
+    "Module": "teamservice",
+    "Annotation": "我方队伍在选择英雄中",
+    "Tips": "操作失败，我方队伍已在选择英雄阶段"
+  },
+  {
+    "ID": 15069,
+    "Module": "teamservice",
+    "Annotation": "我方队伍在战斗中",
+    "Tips": "操作失败，我方队伍已在战斗中"
+  },
+  {
+    "ID": 15070,
+    "Module": "teamservice",
+    "Annotation": "我方队伍在招募中",
+    "Tips": "操作失败，我方队伍已在招募中"
+  },
+  {
+    "ID": 15071,
+    "Module": "teamservice",
+    "Annotation": "对方队伍在空闲中",
+    "Tips": "对方队伍处于空闲状态中"
+  },
+  {
+    "ID": 15072,
+    "Module": "teamservice",
+    "Annotation": "对方队伍在匹配中",
+    "Tips": "操作失败，对方队伍已在匹配中"
+  },
+  {
+    "ID": 15073,
+    "Module": "teamservice",
+    "Annotation": "对方队伍在准备中",
+    "Tips": "操作失败，对方队伍已在准备阶段"
+  },
+  {
+    "ID": 15074,
+    "Module": "teamservice",
+    "Annotation": "对方队伍在选择英雄中",
+    "Tips": "操作失败，对方队伍已在选择英雄阶段"
+  },
+  {
+    "ID": 15075,
+    "Module": "teamservice",
+    "Annotation": "对方队伍在战斗中",
+    "Tips": "操作失败，对方队伍已在战斗中"
+  },
+  {
+    "ID": 15076,
+    "Module": "teamservice",
+    "Annotation": "对方队伍在招募中",
+    "Tips": "操作失败，对方队伍已在招募中"
+  },
+  {
+    "ID": 15077,
+    "Module": "teamservice",
+    "Annotation": "游戏服区域不合法",
+    "Tips": ""
+  },
+  {
+    "ID": 15078,
+    "Module": "teamservice",
+    "Annotation": "对方无法响应",
+    "Tips": "操作失败，对方暂时无法响应"
+  },
+  {
+    "ID": 15079,
+    "Module": "teamservice",
+    "Annotation": "门票数量不合法",
+    "Tips": ""
+  },
+  {
+    "ID": 15080,
+    "Module": "teamservice",
+    "Annotation": "队伍模式不支持扣除门票",
+    "Tips": ""
+  },
+  {
+    "ID": 15081,
+    "Module": "teamservice",
+    "Annotation": "门票规则不支持队员选择扣除门票数量",
+    "Tips": ""
+  },
+  {
+    "ID": 15082,
+    "Module": "teamservice",
+    "Annotation": "门票数量不足",
+    "Tips": ""
+  },
+  {
+    "ID": 15083,
+    "Module": "teamservice",
+    "Annotation": "错误的门票扣除类型",
+    "Tips": ""
+  },
+  {
+    "ID": 15084,
+    "Module": "teamservice",
+    "Annotation": "没有英雄，无法创建队伍",
+    "Tips": ""
+  },
+  {
+    "ID": 15085,
+    "Module": "teamservice",
+    "Annotation": "没有英雄，无法加入队伍",
+    "Tips": ""
+  },
+  {
+    "ID": 16001,
+    "Module": "mailservice",
+    "Annotation": "错误的邮件id",
+    "Tips": "错误的邮件id"
+  },
+  {
+    "ID": 16002,
+    "Module": "mailservice",
+    "Annotation": "错误的邮件模板id",
+    "Tips": "错误的邮件模板id"
+  },
+  {
+    "ID": 16003,
+    "Module": "mailservice",
+    "Annotation": "错误的邮件类型",
+    "Tips": "错误的邮件类型"
+  },
+  {
+    "ID": 17001,
+    "Module": "chatservice",
+    "Annotation": "玩家不在群组中",
+    "Tips": "玩家不在群组中"
+  },
+  {
+    "ID": 17002,
+    "Module": "chatservice",
+    "Annotation": "群组已经存在",
+    "Tips": "群组已经存在"
+  },
+  {
+    "ID": 17003,
+    "Module": "chatservice",
+    "Annotation": "玩家已经在群组中",
+    "Tips": "玩家已经在群组中"
+  },
+  {
+    "ID": 17004,
+    "Module": "chatservice",
+    "Annotation": "群组不存在",
+    "Tips": "群组不存在"
+  },
+  {
+    "ID": 17005,
+    "Module": "chatservice",
+    "Annotation": "玩家等级不足",
+    "Tips": "账号等级8级开启"
+  },
+  {
+    "ID": 17006,
+    "Module": "chatservice",
+    "Annotation": "内容太长",
+    "Tips": "内容太长"
+  },
+  {
+    "ID": 17007,
+    "Module": "chatservice",
+    "Annotation": "玩家被禁言",
+    "Tips": "玩家被禁言"
+  },
+  {
+    "ID": 17008,
+    "Module": "chatservice",
+    "Annotation": "玩家被静默",
+    "Tips": "玩家被静默"
+  },
+  {
+    "ID": 17009,
+    "Module": "chatservice",
+    "Annotation": "非好友不允许私聊",
+    "Tips": "非好友不允许私聊"
+  },
+  {
+    "ID": 17010,
+    "Module": "chatservice",
+    "Annotation": "禁止玩家实时语音",
+    "Tips": "禁止玩家实时语音"
+  },
+  {
+    "ID": 17011,
+    "Module": "chatservice",
+    "Annotation": "创建群组、添加玩家存在错误",
+    "Tips": ""
+  },
+  {
+    "ID": 18001,
+    "Module": "transferservice",
+    "Annotation": "找不到可用的服务器",
+    "Tips": "找不到可用的服务器"
+  },
+  {
+    "ID": 18002,
+    "Module": "transferservice",
+    "Annotation": "需要更新客户端",
+    "Tips": "需要更新客户端"
+  },
+  {
+    "ID": 18003,
+    "Module": "transferservice",
+    "Annotation": "转发失败",
+    "Tips": "转发失败"
+  },
+  {
+    "ID": 18004,
+    "Module": "transferservice",
+    "Annotation": "已经在家园中",
+    "Tips": "已经在家园中"
+  },
+  {
+    "ID": 18005,
+    "Module": "transferservice",
+    "Annotation": "连接战斗服失败",
+    "Tips": "连接战斗服失败"
+  },
+  {
+    "ID": 18006,
+    "Module": "transferservice",
+    "Annotation": "onenterbattle失败",
+    "Tips": "onenterbattle失败"
+  },
+  {
+    "ID": 18007,
+    "Module": "transferservice",
+    "Annotation": "战斗不存在",
+    "Tips": "战斗不存在"
+  },
+  {
+    "ID": 18008,
+    "Module": "transferservice",
+    "Annotation": "重连战斗服失败",
+    "Tips": "战斗已结束，重连失败"
+  },
+  {
+    "ID": 19001,
+    "Module": "matchservice",
+    "Annotation": "找不到匹配",
+    "Tips": "找不到匹配"
+  },
+  {
+    "ID": 19002,
+    "Module": "matchservice",
+    "Annotation": "匹配已满",
+    "Tips": "匹配已满"
+  },
+  {
+    "ID": 19003,
+    "Module": "matchservice",
+    "Annotation": "匹配未准备好",
+    "Tips": "匹配未准备好"
+  },
+  {
+    "ID": 19004,
+    "Module": "matchservice",
+    "Annotation": "匹配未开始",
+    "Tips": "匹配未开始"
+  },
+  {
+    "ID": 19005,
+    "Module": "matchservice",
+    "Annotation": "匹配已开始",
+    "Tips": "匹配已开始"
+  },
+  {
+    "ID": 19006,
+    "Module": "matchservice",
+    "Annotation": "匹配已结束",
+    "Tips": "匹配已结束"
+  },
+  {
+    "ID": 19007,
+    "Module": "matchservice",
+    "Annotation": "匹配已取消",
+    "Tips": "匹配已取消"
+  },
+  {
+    "ID": 19008,
+    "Module": "matchservice",
+    "Annotation": "匹配超时",
+    "Tips": "匹配超时"
+  },
+  {
+    "ID": 19009,
+    "Module": "matchservice",
+    "Annotation": "匹配失败",
+    "Tips": "匹配失败"
+  },
+  {
+    "ID": 20001,
+    "Module": "recordservice",
+    "Annotation": "找不到类型",
+    "Tips": "找不到类型"
+  },
+  {
+    "ID": 21001,
+    "Module": "resourceservice",
+    "Annotation": "找不到货币",
+    "Tips": "找不到货币"
+  },
+  {
+    "ID": 21002,
+    "Module": "resourceservice",
+    "Annotation": "解析表失败",
+    "Tips": "解析表失败"
+  },
+  {
+    "ID": 21003,
+    "Module": "resourceservice",
+    "Annotation": "解析数据库失败",
+    "Tips": "解析数据库失败"
+  },
+  {
+    "ID": 21004,
+    "Module": "resourceservice",
+    "Annotation": "扣除道具至负数",
+    "Tips": "道具不足"
+  },
+  {
+    "ID": 21005,
+    "Module": "resourceservice",
+    "Annotation": "背包空间不足",
+    "Tips": "背包空间不足"
+  },
+  {
+    "ID": 21006,
+    "Module": "resourceservice",
+    "Annotation": "奖励重复领取",
+    "Tips": "奖励重复领取"
+  },
+  {
+    "ID": 21007,
+    "Module": "resourceservice",
+    "Annotation": "资源无法兑换",
+    "Tips": "资源无法兑换"
+  },
+  {
+    "ID": 21008,
+    "Module": "resourceservice",
+    "Annotation": "无效的资源ID",
+    "Tips": "无效的资源ID"
+  },
+  {
+    "ID": 21009,
+    "Module": "resourceservice",
+    "Annotation": "无效的资源类型",
+    "Tips": "无效的资源类型"
+  },
+  {
+    "ID": 22001,
+    "Module": "mallservice",
+    "Annotation": "找不到奖池",
+    "Tips": "找不到奖池"
+  },
+  {
+    "ID": 22002,
+    "Module": "mallservice",
+    "Annotation": "找不到礼包",
+    "Tips": "找不到礼包"
+  },
+  {
+    "ID": 22003,
+    "Module": "mallservice",
+    "Annotation": "礼包随机失败",
+    "Tips": "礼包随机失败"
+  },
+  {
+    "ID": 22004,
+    "Module": "mallservice",
+    "Annotation": "找不到保底策略",
+    "Tips": "找不到保底策略"
+  },
+  {
+    "ID": 22005,
+    "Module": "mallservice",
+    "Annotation": "奖池未开启",
+    "Tips": "奖池未开启"
+  },
+  {
+    "ID": 22006,
+    "Module": "mallservice",
+    "Annotation": "商品表格数据不存在",
+    "Tips": "商品表格数据不存在"
+  },
+  {
+    "ID": 22007,
+    "Module": "mallservice",
+    "Annotation": "货架表格数据不存在",
+    "Tips": "货架表格数据不存在"
+  },
+  {
+    "ID": 22008,
+    "Module": "mallservice",
+    "Annotation": "超过商品购买上限",
+    "Tips": "超过商品购买上限"
+  },
+  {
+    "ID": 22009,
+    "Module": "mallservice",
+    "Annotation": "超过货架购买上限",
+    "Tips": "超过货架购买上限"
+  },
+  {
+    "ID": 22010,
+    "Module": "mallservice",
+    "Annotation": "获取资源的已拥有数量失败",
+    "Tips": "获取资源的已拥有数量失败"
+  },
+  {
+    "ID": 22011,
+    "Module": "mallservice",
+    "Annotation": "超过商品拥有购买上限",
+    "Tips": "超过商品拥有购买上限"
+  },
+  {
+    "ID": 22012,
+    "Module": "mallservice",
+    "Annotation": "商品的消耗资源ID错误",
+    "Tips": "商品的消耗资源ID错误"
+  },
+  {
+    "ID": 22013,
+    "Module": "mallservice",
+    "Annotation": "货架未开启",
+    "Tips": "货架未开启"
+  },
+  {
+    "ID": 23001,
+    "Module": "playerservice",
+    "Annotation": "无效的状态转换",
+    "Tips": "无效的状态转换"
+  },
+  {
+    "ID": 23002,
+    "Module": "playerservice",
+    "Annotation": "不可修改昵称",
+    "Tips": "当前暂时不可修改昵称"
+  },
+  {
+    "ID": 23003,
+    "Module": "playerservice",
+    "Annotation": "未拥有该头像",
+    "Tips": "未拥有该头像"
+  },
+  {
+    "ID": 23004,
+    "Module": "playerservice",
+    "Annotation": "未拥有该横幅",
+    "Tips": "未拥有该横幅"
+  },
+  {
+    "ID": 23005,
+    "Module": "playerservice",
+    "Annotation": "禁止修改昵称",
+    "Tips": "当前账号禁止修改昵称"
+  },
+  {
+    "ID": 23006,
+    "Module": "playerservice",
+    "Annotation": "禁止搜索玩家",
+    "Tips": "禁止搜索玩家"
+  },
+  {
+    "ID": 23007,
+    "Module": "playerservice",
+    "Annotation": "昵称不可用",
+    "Tips": "此昵称存在不可用词汇，请修改后再试"
+  },
+  {
+    "ID": 23008,
+    "Module": "playerservice",
+    "Annotation": "昵称有特殊字符",
+    "Tips": "用户昵称存在特殊字符，请修改后再试"
+  },
+  {
+    "ID": 23009,
+    "Module": "playerservice",
+    "Annotation": "昵称长度不合法",
+    "Tips": "用户昵称长度不得超过7个汉字或14个字母和数字"
+  },
+  {
+    "ID": 23010,
+    "Module": "playerservice",
+    "Annotation": "昵称重复",
+    "Tips": "用户昵称已存在，请修改后再试"
+  },
+  {
+    "ID": 23011,
+    "Module": "playerservice",
+    "Annotation": "新昵称与当前昵称相同",
+    "Tips": "新昵称与当前昵称相同"
+  },
+  {
+    "ID": 24001,
+    "Module": "playergrowthservice",
+    "Annotation": "奖励重复领取",
+    "Tips": "奖励重复领取"
+  },
+  {
+    "ID": 24002,
+    "Module": "playergrowthservice",
+    "Annotation": "表格数据错误",
+    "Tips": "表格数据错误"
+  },
+  {
+    "ID": 24003,
+    "Module": "playergrowthservice",
+    "Annotation": "重复完成新手关",
+    "Tips": "重复完成新手关"
+  },
+  {
+    "ID": 24004,
+    "Module": "playergrowthservice",
+    "Annotation": "引导ID不存在",
+    "Tips": "引导ID不存在"
+  },
+  {
+    "ID": 24005,
+    "Module": "playergrowthservice",
+    "Annotation": "错误的战斗遗产index",
+    "Tips": "错误的金手指index"
+  },
+  {
+    "ID": 24006,
+    "Module": "playergrowthservice",
+    "Annotation": "战斗遗产ID过期",
+    "Tips": "已超过30秒金手指领取时间"
+  },
+  {
+    "ID": 24007,
+    "Module": "playergrowthservice",
+    "Annotation": "错误的战斗遗产ID",
+    "Tips": "错误的金手指"
+  },
+  {
+    "ID": 24008,
+    "Module": "playergrowthservice",
+    "Annotation": "不能设置该勋章",
+    "Tips": "不能设置该勋章"
+  },
+  {
+    "ID": 24009,
+    "Module": "playergrowthservice",
+    "Annotation": "超过单个英雄消耗限制",
+    "Tips": "超过单个英雄消耗限制"
+  },
+  {
+    "ID": 24010,
+    "Module": "playergrowthservice",
+    "Annotation": "gameFloor不存在",
+    "Tips": "gameFloor不存在"
+  },
+  {
+    "ID": 24011,
+    "Module": "playergrowthservice",
+    "Annotation": "不存在的主线任务组id",
+    "Tips": "不存在的主线任务组id"
+  },
+  {
+    "ID": 24012,
+    "Module": "playergrowthservice",
+    "Annotation": "已经领取了七日奖励信息",
+    "Tips": "已经领取了七日奖励信息"
+  },
+  {
+    "ID": 24013,
+    "Module": "playergrowthservice",
+    "Annotation": "没有达到领取七日奖励条件",
+    "Tips": "没有达到领取七日奖励条件"
+  },
+  {
+    "ID": 24014,
+    "Module": "playergrowthservice",
+    "Annotation": "没有加成次数",
+    "Tips": "没有加成次数"
+  },
+  {
+    "ID": 24015,
+    "Module": "playergrowthservice",
+    "Annotation": "赛季能力预设方案未解锁",
+    "Tips": "赛季能力预设方案未解锁"
+  },
+  {
+    "ID": 24016,
+    "Module": "playergrowthservice",
+    "Annotation": "预设方案数达到上限",
+    "Tips": "预设方案数达到上限"
+  },
+  {
+    "ID": 24017,
+    "Module": "playergrowthservice",
+    "Annotation": "赛季能力点不足",
+    "Tips": "赛季能力点不足"
+  },
+  {
+    "ID": 24018,
+    "Module": "playergrowthservice",
+    "Annotation": "赛季能力点达到上限",
+    "Tips": "赛季能力点达到上限"
+  },
+  {
+    "ID": 24019,
+    "Module": "playergrowthservice",
+    "Annotation": "赛季能力无需重置",
+    "Tips": "赛季能力无需重置"
+  },
+  {
+    "ID": 24020,
+    "Module": "playergrowthservice",
+    "Annotation": "特殊能力未解锁",
+    "Tips": "特殊能力未解锁"
+  },
+  {
+    "ID": 24021,
+    "Module": "playergrowthservice",
+    "Annotation": "特殊能力已经激活",
+    "Tips": "特殊能力已经激活"
+  },
+  {
+    "ID": 24022,
+    "Module": "playergrowthservice",
+    "Annotation": "通行证等级不足",
+    "Tips": "等级暂未达到领奖条件"
+  },
+  {
+    "ID": 24023,
+    "Module": "playergrowthservice",
+    "Annotation": "高级通行证已经激活",
+    "Tips": "已拥有高级通行证"
+  },
+  {
+    "ID": 24024,
+    "Module": "playergrowthservice",
+    "Annotation": "典藏通行证已经激活",
+    "Tips": "已拥有典藏通行证"
+  },
+  {
+    "ID": 24025,
+    "Module": "playergrowthservice",
+    "Annotation": "通行证未开启",
+    "Tips": "通行证暂未开启"
+  },
+  {
+    "ID": 24026,
+    "Module": "playergrowthservice",
+    "Annotation": "无可领取的通行证奖励",
+    "Tips": "暂无可领取的奖励"
+  },
+  {
+    "ID": 24027,
+    "Module": "playergrowthservice",
+    "Annotation": "重复完成新手BD",
+    "Tips": "重复完成教学模式"
+  },
+  {
+    "ID": 24028,
+    "Module": "playergrowthservice",
+    "Annotation": "通行证已结束",
+    "Tips": "通行证已结束"
+  },
+  {
+    "ID": 24029,
+    "Module": "playergrowthservice",
+    "Annotation": "无效的battleid",
+    "Tips": ""
+  },
+  {
+    "ID": 24030,
+    "Module": "playergrowthservice",
+    "Annotation": "成长快照备注长度超过限制",
+    "Tips": "存档名称超过限制"
+  },
+  {
+    "ID": 24031,
+    "Module": "playergrowthservice",
+    "Annotation": "成长快照过期",
+    "Tips": "存档已过期"
+  },
+  {
+    "ID": 24032,
+    "Module": "playergrowthservice",
+    "Annotation": "高级通行证未激活",
+    "Tips": "高级通行证暂未激活"
+  },
+  {
+    "ID": 25001,
+    "Module": "taskservice",
+    "Annotation": "任务不存在",
+    "Tips": "任务不存在"
+  },
+  {
+    "ID": 25002,
+    "Module": "taskservice",
+    "Annotation": "任务组不存在",
+    "Tips": "任务组不存在"
+  },
+  {
+    "ID": 25003,
+    "Module": "taskservice",
+    "Annotation": "状态转换错误",
+    "Tips": "状态转换错误"
+  },
+  {
+    "ID": 25004,
+    "Module": "taskservice",
+    "Annotation": "当前状态禁止操作",
+    "Tips": "当前状态禁止操作"
+  },
+  {
+    "ID": 25005,
+    "Module": "taskservice",
+    "Annotation": "批量解锁事件接口错误",
+    "Tips": "批量解锁事件接口错误"
+  },
+  {
+    "ID": 25006,
+    "Module": "taskservice",
+    "Annotation": "批量完成事件接口错误",
+    "Tips": "批量完成事件接口错误"
+  },
+  {
+    "ID": 25007,
+    "Module": "taskservice",
+    "Annotation": "达成事件or解锁事件ID不存在",
+    "Tips": ""
+  },
+  {
+    "ID": 26001,
+    "Module": "sociaservice",
+    "Annotation": "玩家不能对自身操作",
+    "Tips": "玩家不能对自身操作"
+  },
+  {
+    "ID": 26002,
+    "Module": "sociaservice",
+    "Annotation": "已经是好友了",
+    "Tips": "已经是好友了"
+  },
+  {
+    "ID": 26003,
+    "Module": "sociaservice",
+    "Annotation": "已经是黑名单中了",
+    "Tips": "已经是黑名单中了"
+  },
+  {
+    "ID": 26004,
+    "Module": "sociaservice",
+    "Annotation": "已经是申请者了",
+    "Tips": "已经是申请者了"
+  },
+  {
+    "ID": 26005,
+    "Module": "sociaservice",
+    "Annotation": "不是申请者，无法同意申请请求",
+    "Tips": "不是申请者，无法同意申请请求"
+  },
+  {
+    "ID": 26006,
+    "Module": "sociaservice",
+    "Annotation": "删除失败",
+    "Tips": "删除失败"
+  },
+  {
+    "ID": 26007,
+    "Module": "sociaservice",
+    "Annotation": "好友已满",
+    "Tips": "好友已满"
+  },
+  {
+    "ID": 26008,
+    "Module": "sociaservice",
+    "Annotation": "黑名单已满",
+    "Tips": "黑名单已满"
+  },
+  {
+    "ID": 26009,
+    "Module": "sociaservice",
+    "Annotation": "申请者已满",
+    "Tips": "申请者已满"
+  },
+  {
+    "ID": 26010,
+    "Module": "sociaservice",
+    "Annotation": "申请加好友失败，在对方黑名单中",
+    "Tips": "申请加好友失败，在对方黑名单中"
+  },
+  {
+    "ID": 26011,
+    "Module": "sociaservice",
+    "Annotation": "不是好友，无法设置备注",
+    "Tips": "不是好友，无法设置备注"
+  },
+  {
+    "ID": 26012,
+    "Module": "sociaservice",
+    "Annotation": "禁止修改备注",
+    "Tips": "禁止修改备注"
+  },
+  {
+    "ID": 26013,
+    "Module": "sociaservice",
+    "Annotation": "禁止发送好友请求",
+    "Tips": "禁止发送好友请求"
+  },
+  {
+    "ID": 27001,
+    "Module": "diplomatservice",
+    "Annotation": "ACESDK服务初始化出错",
+    "Tips": "ACESDK服务初始化出错"
+  },
+  {
+    "ID": 27002,
+    "Module": "diplomatservice",
+    "Annotation": "ACESDK服务卸载出错",
+    "Tips": "ACESDK服务卸载出错"
+  },
+  {
+    "ID": 27003,
+    "Module": "diplomatservice",
+    "Annotation": "上传客户端数据包到ACESDK错误",
+    "Tips": "上传客户端数据包到ACESDK错误"
+  },
+  {
+    "ID": 27004,
+    "Module": "diplomatservice",
+    "Annotation": "玩家login数据到ACESDK失败",
+    "Tips": "玩家login数据到ACESDK失败"
+  },
+  {
+    "ID": 27005,
+    "Module": "diplomatservice",
+    "Annotation": "玩家logout数据到ACESDK失败",
+    "Tips": "玩家logout数据到ACESDK失败"
+  },
+  {
+    "ID": 27006,
+    "Module": "diplomatservice",
+    "Annotation": "玩家心跳数据到ACESDK失败",
+    "Tips": "玩家心跳数据到ACESDK失败"
+  },
+  {
+    "ID": 27007,
+    "Module": "diplomatservice",
+    "Annotation": "获取玩家登录信息失败",
+    "Tips": "获取玩家登录信息失败"
+  },
+  {
+    "ID": 27008,
+    "Module": "diplomatservice",
+    "Annotation": "ACEpush缓冲大小设置错误",
+    "Tips": "ACEpush缓冲大小设置错误"
+  },
+  {
+    "ID": 27009,
+    "Module": "diplomatservice",
+    "Annotation": "请求取消",
+    "Tips": "请求取消"
+  },
+  {
+    "ID": 27010,
+    "Module": "diplomatservice",
+    "Annotation": "acesdk调用出错",
+    "Tips": "acesdk调用出错"
+  },
+  {
+    "ID": 27011,
+    "Module": "diplomatservice",
+    "Annotation": "acesdk敏感词调用失败",
+    "Tips": "acesdk敏感词调用失败"
+  },
+  {
+    "ID": 28001,
+    "Module": "acticityservice",
+    "Annotation": "爬塔每日奖励英雄槽位已经解锁",
+    "Tips": "爬塔每日奖励英雄槽位已经解锁"
+  },
+  {
+    "ID": 28002,
+    "Module": "acticityservice",
+    "Annotation": "爬塔每日奖励英雄槽位未解锁",
+    "Tips": "爬塔每日奖励英雄槽位未解锁"
+  },
+  {
+    "ID": 28003,
+    "Module": "activityservice",
+    "Annotation": "爬塔每日奖励英雄已装备",
+    "Tips": "爬塔每日奖励英雄已装备"
+  },
+  {
+    "ID": 28004,
+    "Module": "activityservice",
+    "Annotation": "爬塔每日奖励英雄槽位未装备",
+    "Tips": "爬塔每日奖励英雄槽位未装备"
+  },
+  {
+    "ID": 28005,
+    "Module": "activityservice",
+    "Annotation": "活动未开启",
+    "Tips": ""
+  },
+  {
+    "ID": 28006,
+    "Module": "activityservice",
+    "Annotation": "法则任务活动奖励已经领取",
+    "Tips": ""
+  },
+  {
+    "ID": 28007,
+    "Module": "activityservice",
+    "Annotation": "法则任务活动奖励不能领取",
+    "Tips": ""
+  },
+  {
+    "ID": 28008,
+    "Module": "activityservice",
+    "Annotation": "无可领取的全服通关奖励",
+    "Tips": "无可领取的全服通关奖励"
+  },
+  {
+    "ID": 28009,
+    "Module": "activityservice",
+    "Annotation": "全服通关奖励已经领取",
+    "Tips": "全服通关奖励已经领取，无法重复领取"
+  },
+  {
+    "ID": 28010,
+    "Module": "activityservice",
+    "Annotation": "全服通关奖励未达成",
+    "Tips": "全服通关奖励未达成，领取失败"
+  },
+  {
+    "ID": 29001,
+    "Module": "payservice",
+    "Annotation": "订单已经发货",
+    "Tips": ""
+  },
+  {
+    "ID": 29002,
+    "Module": "payservice",
+    "Annotation": "国内支付禁用",
+    "Tips": ""
+  },
+  {
+    "ID": 29003,
+    "Module": "payservice",
+    "Annotation": "海外支付禁用",
+    "Tips": ""
+  },
+  {
+    "ID": 29005,
+    "Module": "payservice",
+    "Annotation": "midaspay渠道风控限额",
+    "Tips": "根据应用健康系统规定，暂时无法向未成年人提供付费服务，感谢您的理解。"
+  },
+  {
+    "ID": 29006,
+    "Module": "payservice",
+    "Annotation": "midaspay渠道制裁地区",
+    "Tips": "根据规定，暂时无法为您所在地区提供服务，感谢您的理解。"
+  },
+  {
+    "ID": 29007,
+    "Module": "payservice",
+    "Annotation": "midaspay渠道黑产",
+    "Tips": "您的交易存在风险，请规范行为，或联系客服投诉。"
+  },
+  {
+    "ID": 29008,
+    "Module": "payservice",
+    "Annotation": "midaspay渠道币种锁区",
+    "Tips": "非本地用户目前无法使用此货币进行交易，感谢您的理解。"
+  },
+  {
+    "ID": 30001,
+    "Module": "loginservice",
+    "Annotation": "找不到会话",
+    "Tips": "找不到会话"
+  },
+  {
+    "ID": 30002,
+    "Module": "loginservice",
+    "Annotation": "MSDK登录失败",
+    "Tips": "MSDK登录失败"
+  },
+  {
+    "ID": 30003,
+    "Module": "loginservice",
+    "Annotation": "DEV登录被禁用",
+    "Tips": "DEV登录被禁用"
+  },
+  {
+    "ID": 30004,
+    "Module": "loginservice",
+    "Annotation": "用户被封禁",
+    "Tips": "用户被封禁"
+  },
+  {
+    "ID": 30005,
+    "Module": "loginservice",
+    "Annotation": "中控防沉迷",
+    "Tips": "中控防沉迷"
+  },
+  {
+    "ID": 30006,
+    "Module": "loginservice",
+    "Annotation": "Wegame登录失败",
+    "Tips": "Wegame登录失败"
+  },
+  {
+    "ID": 30007,
+    "Module": "loginservice",
+    "Annotation": "封禁到期时间小于当前时间",
+    "Tips": "封禁到期时间小于当前时间"
+  },
+  {
+    "ID": 30008,
+    "Module": "loginservice",
+    "Annotation": "服务关闭",
+    "Tips": "服务器维护中，请稍后重试"
+  },
+  {
+    "ID": 30009,
+    "Module": "loginservice",
+    "Annotation": "LiPass登录失败",
+    "Tips": "登录态失效，请重新登录"
+  },
+  {
+    "ID": 30010,
+    "Module": "loginservice",
+    "Annotation": "lipass登录禁用",
+    "Tips": ""
+  },
+  {
+    "ID": 30011,
+    "Module": "loginservice",
+    "Annotation": "wegame登录禁用",
+    "Tips": ""
+  },
+  {
+    "ID": 31001,
+    "Module": "timerservice",
+    "Annotation": "找不到定时器",
+    "Tips": "找不到定时器"
+  },
+  {
+    "ID": 180007,
+    "Module": "transferservice",
+    "Annotation": "战斗不存在",
+    "Tips": ""
+  }
+]

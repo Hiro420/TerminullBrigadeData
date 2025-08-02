@@ -1,13 +1,16 @@
 local WBP_InteractScrollList_C = UnLua.Class()
 local Timer = -1
 local Interval = 0.3
+
 function WBP_InteractScrollList_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_InteractScrollList_C:UpdateInteractScrollListByIndex(Index)
   local interactList = LogicHUD:GetCanInteractTargetList()
   self:UpdateInteractScrollList(Index, interactList)
 end
+
 function WBP_InteractScrollList_C:UpdateInteractScrollList(Index, interactList)
   self.CurIdx = Index
   UpdateVisibility(self, true)
@@ -62,8 +65,10 @@ function WBP_InteractScrollList_C:UpdateInteractScrollList(Index, interactList)
     HideOtherItem(self.VerticalBoxInteract, totalNum + 1)
   end
 end
+
 function WBP_InteractScrollList_C:Hide()
   UpdateVisibility(self, false)
   self.CurIdx = -1
 end
+
 return WBP_InteractScrollList_C

@@ -1,66 +1,66 @@
 ﻿{
   "1": {
-    "UnlockConsumerResource": {
-      "1": {
-        "key": 300001,
-        "value": 10
-      }
-    },
+    "Remark": "",
     "PresentSchemeID": 1,
+    "SeasonIDX": 1,
     "NameLocMeta": {
       "InNamespace": "season_TBSeasonAbilityPresentScheme",
-      "InKey": "Name_1_1",
-      "InTextLiteral": "预设方案一"
+      "InTextLiteral": "预设方案一",
+      "InKey": "Name_1_1"
     },
-    "SeasonIDX": 1,
-    "Remark": ""
+    "UnlockConsumerResource": {
+      "1": {
+        "value": 10,
+        "key": 300001
+      }
+    }
   },
   "2": {
-    "UnlockConsumerResource": {
-      "1": {
-        "key": 300001,
-        "value": 10
-      }
-    },
+    "Remark": "",
     "PresentSchemeID": 2,
+    "SeasonIDX": 1,
     "NameLocMeta": {
       "InNamespace": "season_TBSeasonAbilityPresentScheme",
-      "InKey": "Name_2_1",
-      "InTextLiteral": "预设方案二"
+      "InTextLiteral": "预设方案二",
+      "InKey": "Name_2_1"
     },
-    "SeasonIDX": 1,
-    "Remark": ""
+    "UnlockConsumerResource": {
+      "1": {
+        "value": 10,
+        "key": 300001
+      }
+    }
   },
   "3": {
-    "UnlockConsumerResource": {
-      "1": {
-        "key": 300001,
-        "value": 10
-      }
-    },
+    "Remark": "",
     "PresentSchemeID": 3,
+    "SeasonIDX": 1,
     "NameLocMeta": {
       "InNamespace": "season_TBSeasonAbilityPresentScheme",
-      "InKey": "Name_3_1",
-      "InTextLiteral": "预设方案三"
+      "InTextLiteral": "预设方案三",
+      "InKey": "Name_3_1"
     },
-    "SeasonIDX": 1,
-    "Remark": ""
+    "UnlockConsumerResource": {
+      "1": {
+        "value": 10,
+        "key": 300001
+      }
+    }
   },
   "4": {
-    "UnlockConsumerResource": {
-      "1": {
-        "key": 300001,
-        "value": 10
-      }
-    },
+    "Remark": "",
     "PresentSchemeID": 4,
+    "SeasonIDX": 1,
     "NameLocMeta": {
       "InNamespace": "season_TBSeasonAbilityPresentScheme",
-      "InKey": "Name_4_1",
-      "InTextLiteral": "预设方案四"
+      "InTextLiteral": "预设方案四",
+      "InKey": "Name_4_1"
     },
-    "SeasonIDX": 1,
-    "Remark": ""
+    "UnlockConsumerResource": {
+      "1": {
+        "value": 10,
+        "key": 300001
+      }
+    }
   }
 }

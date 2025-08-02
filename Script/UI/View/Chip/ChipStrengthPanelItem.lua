@@ -1,8 +1,11 @@
 local ChipStrengthPanelItem = UnLua.Class()
+
 function ChipStrengthPanelItem:Construct()
 end
+
 function ChipStrengthPanelItem:Destruct()
 end
+
 function ChipStrengthPanelItem:InitChipStrengthPanelItem(ChipBagItemData, ParentView)
   self.ParentView = ParentView
   self.ChipItemData = ChipBagItemData
@@ -31,6 +34,7 @@ function ChipStrengthPanelItem:InitChipStrengthPanelItem(ChipBagItemData, Parent
   local strengthLv = string.format("%d", ChipBagItemData.Chip.level)
   self.RGTextStrength:SetText(strengthLv)
 end
+
 function ChipStrengthPanelItem:OnMouseEnter()
   self.RGStateControllerHover:ChangeStatus(EHover.Hover)
   if not UE.RGUtil.IsUObjectValid(self.ParentView) then
@@ -38,6 +42,7 @@ function ChipStrengthPanelItem:OnMouseEnter()
   end
   self.ParentView:ShowChipAttrListTip(true, self.ChipItemData)
 end
+
 function ChipStrengthPanelItem:OnMouseLeave()
   self.RGStateControllerHover:ChangeStatus(EHover.UnHover)
   if not UE.RGUtil.IsUObjectValid(self.ParentView) then
@@ -45,4 +50,5 @@ function ChipStrengthPanelItem:OnMouseLeave()
   end
   self.ParentView:ShowChipAttrListTip(false)
 end
+
 return ChipStrengthPanelItem

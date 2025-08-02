@@ -1,0 +1,68 @@
+[
+  {
+    "RowName": 1,
+    "Desc": "",
+    "SeasonId": 1,
+    "SeasonName": "S0赛季",
+    "bEnable": true,
+    "ModeId": 1001,
+    "ModeName": "常规模式",
+    "WorldIds": [
+      23,
+      24
+    ],
+    "SoloBoardType": 2,
+    "TeamBoardType": 1
+  },
+  {
+    "RowName": 2,
+    "Desc": "",
+    "SeasonId": 1,
+    "SeasonName": "S0赛季",
+    "bEnable": true,
+    "ModeId": 1003,
+    "ModeName": "修正行动",
+    "WorldIds": [
+      38
+    ],
+    "SoloBoardType": 3,
+    "TeamBoardType": 4
+  },
+  {
+    "RowName": 3,
+    "Desc": "",
+    "SeasonId": 1,
+    "SeasonName": "S0赛季",
+    "bEnable": true,
+    "ModeId": 3002,
+    "ModeName": "病毒狂潮",
+    "WorldIds": [
+      33,
+      34,
+      35,
+      36,
+      37
+    ],
+    "SoloBoardType": 0,
+    "TeamBoardType": 6
+  },
+  {
+    "RowName": 4,
+    "Desc": "",
+    "SeasonId": 1,
+    "SeasonName": "S0赛季",
+    "bEnable": true,
+    "ModeId": 3001,
+    "ModeName": "失序链区",
+    "WorldIds": [
+      100,
+      101,
+      102,
+      103,
+      104,
+      105
+    ],
+    "SoloBoardType": 0,
+    "TeamBoardType": 5
+  }
+]

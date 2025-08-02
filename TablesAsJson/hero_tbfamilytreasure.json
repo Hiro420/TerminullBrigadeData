@@ -1,28 +1,28 @@
 ﻿{
   "101": {
-    "ParamList": {},
     "LinkDescLocMeta": {
+      "InKey": "LinkDesc_101",
       "InTextLiteral": "商城捆绑包获取",
-      "InNamespace": "hero_TBFamilyTreasure",
-      "InKey": "LinkDesc_101"
+      "InNamespace": "hero_TBFamilyTreasure"
     },
-    "GiftID": 6201011,
+    "ParamList": {},
+    "LinkId": "1012",
     "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv1.Icon_FamilyHeirloom_Lv1",
     "ID": 101,
     "HeroID": 1010,
-    "LinkId": "1012"
+    "GiftID": 6201011
   },
   "1031": {
-    "ParamList": {},
     "LinkDescLocMeta": {
+      "InKey": "LinkDesc_1031",
       "InTextLiteral": "抽卡系统获取",
-      "InNamespace": "hero_TBFamilyTreasure",
-      "InKey": "LinkDesc_1031"
+      "InNamespace": "hero_TBFamilyTreasure"
     },
-    "GiftID": 6203011,
+    "ParamList": {},
+    "LinkId": "1005",
     "IconPath": "/Game/Rouge/UI/Atlas_DT/FamilyHeirloom/Frames/Icon_FamilyHeirloom_Lv1.Icon_FamilyHeirloom_Lv1",
     "ID": 1031,
     "HeroID": 1030,
-    "LinkId": "1005"
+    "GiftID": 6203011
   }
 }

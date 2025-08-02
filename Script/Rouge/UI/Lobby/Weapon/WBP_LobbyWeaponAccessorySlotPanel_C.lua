@@ -1,4 +1,5 @@
 local WBP_LobbyWeaponAccessorySlotPanel_C = UnLua.Class()
+
 function WBP_LobbyWeaponAccessorySlotPanel_C:RefreshSlotPanel(WeaponInfo, WorldTypeId)
   local AllItem = self.SlotPanel:GetAllChildren()
   local AccessoryCount = 0
@@ -20,4 +21,5 @@ function WBP_LobbyWeaponAccessorySlotPanel_C:RefreshSlotPanel(WeaponInfo, WorldT
     end
   end
 end
+
 return WBP_LobbyWeaponAccessorySlotPanel_C

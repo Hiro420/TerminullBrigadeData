@@ -1,0 +1,65 @@
+[
+  {
+    "Id": 1,
+    "desc": "超值首充",
+    "LinkId": 1015,
+    "JumpParams": "{\\\"locateAppId\\\":7449}",
+    "TabId": 6978,
+    "JumpParamsIntl": "{\\\"locateAppId\\\":3197}",
+    "TabIdIntl": 3074
+  },
+  {
+    "Id": 2,
+    "desc": "海岸魅影",
+    "LinkId": 1015,
+    "JumpParams": "{\\\"locateAppId\\\":7444}",
+    "TabId": 6978,
+    "JumpParamsIntl": "{\\\"locateAppId\\\":3196}",
+    "TabIdIntl": 3074
+  },
+  {
+    "Id": 3,
+    "desc": "夏日倾情",
+    "LinkId": 1015,
+    "JumpParams": "{\\\"locateAppId\\\":7468}",
+    "TabId": 6978,
+    "JumpParamsIntl": "{\\\"locateAppId\\\":3201}",
+    "TabIdIntl": 3074
+  },
+  {
+    "Id": 4,
+    "desc": "巅峰挑战",
+    "LinkId": 1015,
+    "JumpParams": "{\\\"locateAppId\\\":7430}",
+    "TabId": 6978,
+    "JumpParamsIntl": "{\\\"locateAppId\\\":3193}",
+    "TabIdIntl": 3074
+  },
+  {
+    "Id": 5,
+    "desc": "矩阵地铁",
+    "LinkId": 1015,
+    "JumpParams": "{\\\"locateAppId\\\":7427}",
+    "TabId": 6978,
+    "JumpParamsIntl": "{\\\"locateAppId\\\":3194}",
+    "TabIdIntl": 3074
+  },
+  {
+    "Id": 6,
+    "desc": "原爆点补给",
+    "LinkId": 1015,
+    "JumpParams": "{\\\"locateAppId\\\":7448}",
+    "TabId": 6978,
+    "JumpParamsIntl": "{\\\"locateAppId\\\":3198}",
+    "TabIdIntl": 3074
+  },
+  {
+    "Id": 9999,
+    "desc": "测试",
+    "LinkId": 1015,
+    "JumpParams": "{\\\"locateAppId\\\":6738}",
+    "TabId": 6978,
+    "JumpParamsIntl": "{\\\"locateAppId\\\":3201}",
+    "TabIdIntl": 3074
+  }
+]

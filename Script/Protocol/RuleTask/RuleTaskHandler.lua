@@ -1,6 +1,7 @@
 local RuleTaskHandler = {}
 local RuleTaskData = require("Modules.RuleTask.RuleTaskData")
 local rapidjson = require("rapidjson")
+
 function RuleTaskHandler:RequestGetRuleTaskDataToServer(ActivityId)
   local Path = "activity/ruletask/data?activityID=" .. ActivityId
   HttpCommunication.RequestByGet(Path, {
@@ -13,6 +14,7 @@ function RuleTaskHandler:RequestGetRuleTaskDataToServer(ActivityId)
     end
   })
 end
+
 function RuleTaskHandler:RequestReceiveRewardToServer(ActivityId)
   HttpCommunication.Request("activity/ruletask/receivereward", {activityID = ActivityId}, {
     GameInstance,
@@ -23,6 +25,7 @@ function RuleTaskHandler:RequestReceiveRewardToServer(ActivityId)
     end
   })
 end
+
 function RuleTaskHandler:RequestReceiveOptionalGiftRewardToServer(ActivityId, OptionalGiftInfos)
   HttpCommunication.Request("activity/ruletask/receivereward", {activityID = ActivityId, optionalGiftInfos = OptionalGiftInfos}, {
     GameInstance,
@@ -33,4 +36,5 @@ function RuleTaskHandler:RequestReceiveOptionalGiftRewardToServer(ActivityId, Op
     end
   })
 end
+
 return RuleTaskHandler

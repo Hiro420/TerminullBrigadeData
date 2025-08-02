@@ -8,17 +8,21 @@ local BattleHistoryHandler = require("Protocol.History.BattleHistoryHandler")
 local BattleHistoryViewModel = CreateDefaultViewModel()
 BattleHistoryViewModel.propertyBindings = {}
 BattleHistoryViewModel.subViewModels = {}
+
 function BattleHistoryViewModel:OnInit()
   self.Super.OnInit(self)
   EventSystem.AddListenerNew(EventDef.PlayerInfo.GetBattleHistory, self, self.OnGetBattleHistory)
 end
+
 function BattleHistoryViewModel:OnShutdown()
   EventSystem.RemoveListenerNew(EventDef.PlayerInfo.GetBattleHistory, self, self.OnGetBattleHistory)
   self.Super.OnShutdown(self)
 end
+
 function BattleHistoryViewModel:RegisterPropertyChanged(BindingTable, View)
   self.Super.RegisterPropertyChanged(self, BindingTable, View)
 end
+
 function BattleHistoryViewModel:SelectHeroId(HeroId, RoleID)
   local roleID = RoleID or DataMgr.GetUserId()
   local historyDatas = {}
@@ -45,34 +49,42 @@ function BattleHistoryViewModel:SelectHeroId(HeroId, RoleID)
     end
   end
 end
+
 function BattleHistoryViewModel:ResetCurSelectHero()
   BattleHistoryData.CurSelectBattleHistoryHeroId = BattleHistoryData.AllHeroSelectId
 end
+
 function BattleHistoryViewModel:RequestGetBattleHistory()
   local playerInfoMainVM = UIModelMgr:Get("PlayerInfoMainViewModel")
   local roleID = playerInfoMainVM:GetCurRoleID()
   BattleHistoryHandler.RequestGetBattleHistory(roleID)
 end
+
 function BattleHistoryViewModel:GetCurSelectBattleHistoryHeroId()
   return BattleHistoryData.CurSelectBattleHistoryHeroId
 end
+
 function BattleHistoryViewModel:GetAllHeroSelectId()
   return BattleHistoryData.AllHeroSelectId
 end
+
 function BattleHistoryViewModel:GetHeroStatisticsByHeroId(HeroId, RoleID)
   local roleID = RoleID or DataMgr.GetUserId()
   return PlayerInfoData.BattleStatistic[roleID].heroStatistics[tostring(HeroId)]
 end
+
 function BattleHistoryViewModel:GetMostUsedHeroInfo()
   local playerInfoMainVM = UIModelMgr:Get("PlayerInfoMainViewModel")
   local roleID = playerInfoMainVM:GetCurRoleID()
   return PlayerInfoData:GetMostUsedHeroInfo(roleID)
 end
+
 function BattleHistoryViewModel:GetMostUsedWeaponIdByHeroId(HeroId)
   local playerInfoMainVM = UIModelMgr:Get("PlayerInfoMainViewModel")
   local roleID = playerInfoMainVM:GetCurRoleID()
   return PlayerInfoData:GetMostUsedWeaponIdByHeroId(HeroId, roleID)
 end
+
 function BattleHistoryViewModel:OnGetBattleHistory(BattleHistory, RoleID)
   local roleID = RoleID or DataMgr.GetUserId()
   local HeroId = self:GetCurSelectBattleHistoryHeroId()
@@ -98,6 +110,7 @@ function BattleHistoryViewModel:OnGetBattleHistory(BattleHistory, RoleID)
     end
   end
 end
+
 function BattleHistoryViewModel:OnGetBattleStatisticSucc(BattleStatistic, RoleID)
   if self:GetFirstView() then
     local roleID = RoleID or DataMgr.GetUserId()
@@ -109,6 +122,7 @@ function BattleHistoryViewModel:OnGetBattleStatisticSucc(BattleStatistic, RoleID
     end
   end
 end
+
 function BattleHistoryViewModel:ResetData()
   local playerInfoMainVM = UIModelMgr:Get("PlayerInfoMainViewModel")
   local roleID = playerInfoMainVM:GetCurRoleID()
@@ -116,9 +130,11 @@ function BattleHistoryViewModel:ResetData()
     BattleHistoryData.BattleHistory[roleID] = nil
   end
 end
+
 function BattleHistoryViewModel:SetCurHistoryData(HistoryData)
   self.HistoryData = HistoryData
 end
+
 function BattleHistoryViewModel:GetHistoryDataByRoleId(RoleId)
   if not self.HistoryData then
     return
@@ -130,4 +146,5 @@ function BattleHistoryViewModel:GetHistoryDataByRoleId(RoleId)
   end
   return nil
 end
+
 return BattleHistoryViewModel

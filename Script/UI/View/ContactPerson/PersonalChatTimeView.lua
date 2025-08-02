@@ -1,4 +1,5 @@
 local PersonalChatTimeView = UnLua.Class()
+
 function PersonalChatTimeView:Show(Time)
   local CurTime = GetCurrentTimestamp(false)
   local DateTime = UE.URGBlueprintLibrary.MakeDateTimeFromUnixTimestamp(Time)
@@ -15,4 +16,5 @@ function PersonalChatTimeView:Show(Time)
   end
   self.Txt_Time:SetText(Str)
 end
+
 return PersonalChatTimeView

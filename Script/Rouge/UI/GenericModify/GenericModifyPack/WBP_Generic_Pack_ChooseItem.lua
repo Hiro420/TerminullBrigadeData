@@ -17,6 +17,7 @@ local GetGenericGroupId = function(self, Idx)
   end
   return GenericModifyRow.GroupId
 end
+
 function WBP_Generic_Pack_ChooseItem:GetGenericModifyPackItemAry()
   local packAryLua = {}
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
@@ -40,6 +41,7 @@ function WBP_Generic_Pack_ChooseItem:GetGenericModifyPackItemAry()
   end
   return packAryLua
 end
+
 function WBP_Generic_Pack_ChooseItem:GetGenericModifyPackData()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -55,16 +57,19 @@ function WBP_Generic_Pack_ChooseItem:GetGenericModifyPackData()
   end
   return -1, -1
 end
+
 function WBP_Generic_Pack_ChooseItem:Construct()
   self.Btn_Select.OnClicked:Add(self, self.OnBtnSelectClicked)
   self.Btn_Select.OnHovered:Add(self, self.OnHovered)
   self.Btn_Select.OnUnhovered:Add(self, self.OnUnhovered)
 end
+
 function WBP_Generic_Pack_ChooseItem:Destruct()
   self.Btn_Select.OnClicked:Remove(self, self.OnBtnSelectClicked)
   self.Btn_Select.OnHovered:Remove(self, self.OnHovered)
   self.Btn_Select.OnUnhovered:Remove(self, self.OnUnhovered)
 end
+
 function WBP_Generic_Pack_ChooseItem:OnBtnSelectClicked()
   if not LogicGenericModify.bCanOperator then
     print("WBP_Generic_Pack_ChooseItem:Select LogicGenericModify.bCanOperator false")
@@ -82,6 +87,7 @@ function WBP_Generic_Pack_ChooseItem:OnBtnSelectClicked()
   local PC = self:GetOwningPlayer()
   LogicGenericModify:AddGenericModifyPack(PC, self.Idx)
 end
+
 function WBP_Generic_Pack_ChooseItem:FadeIn()
   print("WBP_Generic_Pack_ChooseItem:FadeIn()")
   self.CanvasPanelAdditionNote:SetRenderOpacity(0)
@@ -91,11 +97,13 @@ function WBP_Generic_Pack_ChooseItem:FadeIn()
   self.CanvasPanelRoot:SetRenderOpacity(1)
   self:PlayAnimation(self.AniFadeIn)
 end
+
 function WBP_Generic_Pack_ChooseItem:FadeInFinished()
   print("WBP_Generic_Pack_ChooseItem:FadeInFinished()")
   self.bCanSelect = true
   self.CanvasPanelRoot:SetRenderOpacity(1)
 end
+
 function WBP_Generic_Pack_ChooseItem:FadeOut(Idx)
   local bIsShowEff = self.Idx == Idx
   self:PlayAnimation(self.ani_click, 0, 1, UE.EUMGSequencePlayMode.Forward, 2, true)
@@ -106,6 +114,7 @@ function WBP_Generic_Pack_ChooseItem:FadeOut(Idx)
     self.StateCtrl_ClickEff_Group:ChangeStatus("None")
   end
 end
+
 function WBP_Generic_Pack_ChooseItem:OnHovered()
   self.bIsHovered = true
   local screenX = UE.UWidgetLayoutLibrary.GetViewportSize(self).X
@@ -120,6 +129,7 @@ function WBP_Generic_Pack_ChooseItem:OnHovered()
   self:SetRenderScale(UE.FVector2D(1.01, 1.01) * self.ScaleOffset)
   self:PlayAnimation(self.ani_hover)
 end
+
 function WBP_Generic_Pack_ChooseItem:HoverItem()
   if not self.bIsHovered then
     return
@@ -141,6 +151,7 @@ function WBP_Generic_Pack_ChooseItem:HoverItem()
     self.ParentView:HoverItem(self.CurModifyId, true)
   end
 end
+
 function WBP_Generic_Pack_ChooseItem:OnUnhovered()
   if self.ParentView then
     self.ParentView:HoverItem(-1, false)
@@ -170,6 +181,7 @@ function WBP_Generic_Pack_ChooseItem:OnUnhovered()
     self.MediaPlayer:Close()
   end
 end
+
 function WBP_Generic_Pack_ChooseItem:InitGenericModifyPackChooseItem(GenericPackItemAry, Idx, HoverFunc, ParentView)
   self.bIsHovered = false
   self.StateCtrl_ClickEff_Group:ChangeStatus("None")
@@ -187,6 +199,7 @@ function WBP_Generic_Pack_ChooseItem:InitGenericModifyPackChooseItem(GenericPack
   end
   self:UpdateChooseItem()
 end
+
 function WBP_Generic_Pack_ChooseItem:UpdateChooseItem()
   self.CurModifyId = -1
   local rowId, groupId = self:GetGenericModifyPackData()
@@ -212,6 +225,7 @@ function WBP_Generic_Pack_ChooseItem:UpdateChooseItem()
     self.ParentView:HoverItem(-1, false)
   end
 end
+
 function WBP_Generic_Pack_ChooseItem:UpdateChooseItemByModifyId(ModifyId)
   self.CurModifyId = ModifyId
   local FollowStatu = self.WBP_FocusOnMarkWidget:Init(ModifyId)
@@ -240,6 +254,7 @@ function WBP_Generic_Pack_ChooseItem:UpdateChooseItemByModifyId(ModifyId)
     self:UpdateHoverStyle(ModifyId)
   end
 end
+
 function WBP_Generic_Pack_ChooseItem:UpdateHoverStyle(ModifyId)
   local ResultGenericModify, GenericModifyRow = GetRowData(DT.DT_GenericModify, tostring(ModifyId))
   if ResultGenericModify then
@@ -251,6 +266,7 @@ function WBP_Generic_Pack_ChooseItem:UpdateHoverStyle(ModifyId)
     end
   end
 end
+
 function WBP_Generic_Pack_ChooseItem:InitNameAndImg(GenericModifyId, Text)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -269,6 +285,7 @@ function WBP_Generic_Pack_ChooseItem:InitNameAndImg(GenericModifyId, Text)
     end
   end
 end
+
 function WBP_Generic_Pack_ChooseItem:UpdateDescList(InscriptionDataAsset)
   local DescItemCls = UE.UClass.Load("/Game/Rouge/UI/GenericModify/GenericModifyChoose/WBP_GenericModifyDescItem.WBP_GenericModifyDescItem_C")
   local Index = 1
@@ -284,6 +301,7 @@ function WBP_Generic_Pack_ChooseItem:UpdateDescList(InscriptionDataAsset)
   end
   HideOtherItem(self.VerticalBoxEffectDesc, Index)
 end
+
 function WBP_Generic_Pack_ChooseItem:UpdateTagList(InscriptionDataAsset)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -305,6 +323,7 @@ function WBP_Generic_Pack_ChooseItem:UpdateTagList(InscriptionDataAsset)
   end
   HideOtherItem(self.HorizontalBoxTag, Index)
 end
+
 function WBP_Generic_Pack_ChooseItem:UpdateHoverColor(Color, GlowColor)
   local glowColor = GlowColor or Color
   local matSelect1 = self.URGImageSelect_1:GetDynamicMaterial()
@@ -318,6 +337,7 @@ function WBP_Generic_Pack_ChooseItem:UpdateHoverColor(Color, GlowColor)
     mat:SetScalarParameterValue("alpha", glowColor.A)
   end
 end
+
 function WBP_Generic_Pack_ChooseItem:UpdateAdditionNotes(Inscription, ModifyId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -361,6 +381,7 @@ function WBP_Generic_Pack_ChooseItem:UpdateAdditionNotes(Inscription, ModifyId)
   end
   return bIsShowTips
 end
+
 function WBP_Generic_Pack_ChooseItem:FocusSelf()
   local Result = false
   local RowInfo = UE.FRGGenericModifyTableRow
@@ -386,6 +407,7 @@ function WBP_Generic_Pack_ChooseItem:FocusSelf()
   end
   return false
 end
+
 function WBP_Generic_Pack_ChooseItem:RefreshMedia(ObjRef)
   self.MediaPlayer:SetLooping(true)
   if ObjRef and UE.UKismetSystemLibrary.IsValidSoftObjectReference(ObjRef) then
@@ -399,6 +421,7 @@ function WBP_Generic_Pack_ChooseItem:RefreshMedia(ObjRef)
     UpdateVisibility(self.Movie, false)
   end
 end
+
 function WBP_Generic_Pack_ChooseItem:Item3_Nav_Right()
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
     local IdxTemp = self.Idx
@@ -413,6 +436,7 @@ function WBP_Generic_Pack_ChooseItem:Item3_Nav_Right()
   end
   return nil
 end
+
 function WBP_Generic_Pack_ChooseItem:Item1_Nav_Left()
   if UE.RGUtil.IsUObjectValid(self.ParentView) then
     local IdxTemp = self.Idx
@@ -427,7 +451,9 @@ function WBP_Generic_Pack_ChooseItem:Item1_Nav_Left()
   end
   return nil
 end
+
 function WBP_Generic_Pack_ChooseItem:Item_Nav_Down()
   return self
 end
+
 return WBP_Generic_Pack_ChooseItem

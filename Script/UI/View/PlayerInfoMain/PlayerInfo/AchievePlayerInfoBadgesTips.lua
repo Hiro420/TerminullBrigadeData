@@ -1,21 +1,25 @@
 local AchievePlayerInfoBadgesTips = Class()
+
 function AchievePlayerInfoBadgesTips:BindUIInput()
   self.WBP_InteractTipWidgetSave:BindInteractAndClickEvent(self, self.OnSaveClick)
   self.WBP_InteractTipWidgetAll:BindInteractAndClickEvent(self, self.LinkToAchievement)
 end
+
 function AchievePlayerInfoBadgesTips:UnBindUIInput()
   self.WBP_InteractTipWidgetSave:UnBindInteractAndClickEvent(self, self.OnSaveClick)
   self.WBP_InteractTipWidgetAll:UnBindInteractAndClickEvent(self, self.LinkToAchievement)
 end
+
 function AchievePlayerInfoBadgesTips:Construct()
   self.Overridden.Construct(self)
 end
-function AchievePlayerInfoBadgesTips:InitAchievePlayerInfoBadgesTips()
+
+function AchievePlayerInfoBadgesTips:InitAchievePlayerInfoBadgesTips(bResetDisplayEquipedCache)
   UpdateVisibility(self, true)
   self:BindUIInput()
   self.AchievementViewModel = UIModelMgr:Get("AchievementViewModel")
   local displayBadges = self.AchievementViewModel:GetDisplayBadges()
-  if self.DisplayEquipedCache == nil then
+  if self.DisplayEquipedCache == nil or bResetDisplayEquipedCache then
     self.DisplayEquipedCache = DeepCopy(displayBadges)
   end
   self.viewModel = UIModelMgr:Get("PlayerInfoViewModel")
@@ -33,6 +37,7 @@ function AchievePlayerInfoBadgesTips:InitAchievePlayerInfoBadgesTips()
   end
   HideOtherItem(self.WrapBoxBadgesList, #badgeSortList + 1)
 end
+
 function AchievePlayerInfoBadgesTips:ShowBadgesTips(bIsShow, BadgesId, HoverItem)
   if bIsShow then
     if UE.RGUtil.IsUObjectValid(self.HoveredTipWidget) then
@@ -47,6 +52,7 @@ function AchievePlayerInfoBadgesTips:ShowBadgesTips(bIsShow, BadgesId, HoverItem
     UpdateVisibility(self.HoveredTipWidget, false)
   end
 end
+
 function AchievePlayerInfoBadgesTips:GetTotalBadgesNum()
   local achievementViewModel = UIModelMgr:Get("AchievementViewModel")
   local typeToTbAchievement = achievementViewModel:GetTypeToTbAchievement()
@@ -56,6 +62,7 @@ function AchievePlayerInfoBadgesTips:GetTotalBadgesNum()
   end
   return maxNum
 end
+
 function AchievePlayerInfoBadgesTips:OperatorDisplayBadges(BadgesId)
   if table.Contain(self.DisplayEquipedCache, BadgesId) then
     table.RemoveItem(self.DisplayEquipedCache, BadgesId)
@@ -66,18 +73,22 @@ function AchievePlayerInfoBadgesTips:OperatorDisplayBadges(BadgesId)
   end
   return false
 end
+
 function AchievePlayerInfoBadgesTips:OnSaveClick()
   self.AchievementViewModel:RequestSetDisplayBadges(self.DisplayEquipedCache)
 end
+
 function AchievePlayerInfoBadgesTips:LinkToAchievement()
   local playerInfoMainViewModel = UIModelMgr:Get("PlayerInfoMainViewModel")
   playerInfoMainViewModel:SelectToggleId(EPlayerInfoMainToggleStatus.Achievement)
 end
+
 function AchievePlayerInfoBadgesTips:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     UpdateVisibility(self, false)
   end
 end
+
 function AchievePlayerInfoBadgesTips:Hide()
   local displayBadges = self.AchievementViewModel:GetDisplayBadges()
   self.DisplayEquipedCache = DeepCopy(displayBadges)
@@ -87,4 +98,5 @@ function AchievePlayerInfoBadgesTips:Hide()
   SetHitTestInvisible(self)
   self:PlayAnimation(self.Ani_out)
 end
+
 return AchievePlayerInfoBadgesTips

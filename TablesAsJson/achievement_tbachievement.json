@@ -1,6 +1,7 @@
 ﻿{
   "3": {
     "type": 2,
+    "Icon": "/Game/Rouge/UI/Atlas/Achievement/Frames/Icon_tab02_01.Icon_tab02_01",
     "taskgrouplist": {
       "1": 1103,
       "2": 1120,
@@ -12,13 +13,14 @@
       "8": 1132,
       "9": 1133,
       "10": 1134,
-      "11": 1135
+      "11": 1135,
+      "12": 1136
     },
-    "Icon": "/Game/Rouge/UI/Atlas/Achievement/Frames/Icon_tab02_01.Icon_tab02_01",
     "id": 3
   },
   "1": {
     "type": 0,
+    "Icon": "/Game/Rouge/UI/Atlas/Achievement/Frames/Icon_tab03_01.Icon_tab03_01",
     "taskgrouplist": {
       "1": 1104,
       "2": 1106,
@@ -28,11 +30,11 @@
       "6": 1110,
       "7": 1123
     },
-    "Icon": "/Game/Rouge/UI/Atlas/Achievement/Frames/Icon_tab03_01.Icon_tab03_01",
     "id": 1
   },
   "2": {
     "type": 1,
+    "Icon": "/Game/Rouge/UI/Atlas/Achievement/Frames/Icon_tab01_01.Icon_tab01_01",
     "taskgrouplist": {
       "1": 1102,
       "2": 1111,
@@ -48,7 +50,6 @@
       "12": 1127,
       "13": 1128
     },
-    "Icon": "/Game/Rouge/UI/Atlas/Achievement/Frames/Icon_tab01_01.Icon_tab01_01",
     "id": 2
   }
 }

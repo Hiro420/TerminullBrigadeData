@@ -2,12 +2,14 @@ local PersonalChatView = UnLua.Class()
 local ContactPersonData = require("Modules.ContactPerson.ContactPersonData")
 local ContactPersonHandler = require("Protocol.ContactPerson.ContactPersonHandler")
 local EscName = "PauseGame"
+
 function PersonalChatView:Construct()
   self.Edit_ChatInfo.OnTextCommitted:Add(self, self.BindOnChatInfoTextCommitted)
   self.Btn_Close.OnClicked:Add(self, self.BindOnCloseButtonClicked)
   self.Btn_EnterMsg.OnClicked:Add(self, self.BindOnEnterMsgButtonClicked)
   self.WBP_InteractTipWidget.OnMainButtonClicked:Add(self, self.BindOnCloseButtonClicked)
 end
+
 function PersonalChatView:Show(SelectPlayerInfo)
   self:SetFocus()
   self:StopAllAnimations()
@@ -27,12 +29,14 @@ function PersonalChatView:Show(SelectPlayerInfo)
   self:SetEnhancedInputActionBlocking(true)
   self:PushInputAction()
 end
+
 function PersonalChatView:ShowEmptyChatItemPanel()
   self.EmptyChatPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.ChatItemListView:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.Img_EmptyChatBG:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.Edit_ChatInfo:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function PersonalChatView:OnAnimationFinished(InAnimation)
   if InAnimation == self.Anim_OUT then
     self:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -40,6 +44,7 @@ function PersonalChatView:OnAnimationFinished(InAnimation)
     self.ChatItemListView:SetRGListItems({}, false, true)
   end
 end
+
 function PersonalChatView:Hide()
   self:PlayAnimationForward(self.Anim_OUT)
   if UIMgr:IsShow(ViewID.UI_ContactPersonOperateButtonPanel) then
@@ -55,9 +60,11 @@ function PersonalChatView:Hide()
   self:SetEnhancedInputActionBlocking(false)
   self:PopInputAction()
 end
+
 function PersonalChatView:ListenForEscInputAction()
   self:BindOnCloseButtonClicked()
 end
+
 function PersonalChatView:BindOnQueryPlayerInfoSucc(Params)
   local IsNeedRefresh = false
   local PersonalChatInfoList = ContactPersonData:GetPersonalChatInfo()
@@ -72,6 +79,7 @@ function PersonalChatView:BindOnQueryPlayerInfoSucc(Params)
     self:RefreshChatList()
   end
 end
+
 function PersonalChatView:RefreshChatList(SelectPlayerInfo)
   local PersonalChatInfo = ContactPersonData:GetPersonalChatInfo()
   if next(PersonalChatInfo) == nil and not SelectPlayerInfo then
@@ -137,6 +145,7 @@ function PersonalChatView:RefreshChatList(SelectPlayerInfo)
     self.ChatItemListView:BP_SetSelectedItem(CurSelectedItem)
   end
 end
+
 function PersonalChatView:BindOnChatItemSelectionChanged(DataObj, IsSelected)
   if not IsSelected then
     return
@@ -149,6 +158,7 @@ function PersonalChatView:BindOnChatItemSelectionChanged(DataObj, IsSelected)
   end
   self:RefreshChatInfoList(DataObj.Info.ChatInfo, DataObj.Info.PlayerInfo)
 end
+
 function PersonalChatView:BindOnRemovePersonalChatInfo(RoleId)
   ContactPersonData:RemovePersonalChatInfo(RoleId)
   local ContactPersonManager = ModuleManager:Get("ContactPersonModule")
@@ -157,6 +167,7 @@ function PersonalChatView:BindOnRemovePersonalChatInfo(RoleId)
   end
   self:RefreshChatList()
 end
+
 function PersonalChatView:BindOnPersonalChatInfoUpdate(RoleId, IsSendMsg)
   if IsSendMsg then
     self.Edit_ChatInfo:SetText("")
@@ -171,6 +182,7 @@ function PersonalChatView:BindOnPersonalChatInfoUpdate(RoleId, IsSendMsg)
   local ChatInfo = ContactPersonData:GetPersonalChatInfoById(RoleId)
   self:RefreshChatInfoList(ChatInfo, CurSelectedItem.Info.PlayerInfo)
 end
+
 function PersonalChatView:RefreshChatInfoList(ChatInfo, ChatPartnerPlayerInfo)
   if not ChatInfo then
     self.ChatInfoListView:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -197,15 +209,18 @@ function PersonalChatView:RefreshChatInfoList(ChatInfo, ChatPartnerPlayerInfo)
     self.ChatInfoListView:ScrollToBottom()
   end
 end
+
 function PersonalChatView:BindOnChatInfoTextCommitted(Text, CommitMethod)
   if CommitMethod ~= UE.ETextCommit.OnEnter then
     return
   end
   self:BindOnEnterMsgButtonClicked()
 end
+
 function PersonalChatView:BindOnCloseButtonClicked()
   EventSystem.Invoke(EventDef.ContactPerson.UpdatePersonalChatPanelVis, false)
 end
+
 function PersonalChatView:BindOnEnterMsgButtonClicked()
   local CurSelectedItem = self.ChatItemListView:BP_GetSelectedItem()
   if not CurSelectedItem then
@@ -249,6 +264,7 @@ function PersonalChatView:BindOnEnterMsgButtonClicked()
   end
   self:SendPersonalMsg(InputText, CurSelectedItem.Info.PlayerInfo)
 end
+
 function PersonalChatView:SendPersonalMsg(InputText, PlayerInfo, bSkipCheckAdult)
   if UE.UKismetStringLibrary.IsEmpty(InputText) then
     return
@@ -271,7 +287,9 @@ function PersonalChatView:SendPersonalMsg(InputText, PlayerInfo, bSkipCheckAdult
   end
   ContactPersonHandler:RequestSendPersonalMessageToServer(InputText, PlayerInfo)
 end
+
 function PersonalChatView:Destruct()
   self:Hide()
 end
+
 return PersonalChatView

@@ -20,6 +20,7 @@ local InitStartMapRadioInfoTable = function()
     ProgressIndex = -1
   }
 end
+
 function LogicRadio.Init()
   if LogicRadio.IsInit then
     print("Radio\229\183\178\229\136\157\229\167\139\229\140\150")
@@ -45,11 +46,14 @@ function LogicRadio.Init()
   end
   BindCharacterBeginInteract(true)
 end
+
 function LogicRadio.TriggerStartRadio()
   LogicRadio.ExecuteRadioConditionByConditionId(8, {})
 end
+
 function LogicRadio:BindOnBeginInteract(Target)
 end
+
 function LogicRadio.TransformRadioConditionDataTable()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -121,15 +125,18 @@ function LogicRadio.TransformRadioConditionDataTable()
     LogicRadio.RadioEventInfos[SingleRadioCondition.ID] = SingleRadioConditionTable
   end
 end
+
 function LogicRadio.UpdateStartMapRadioProgress(Id, Index)
   if LogicRadio.StartMapRadioInfoTable.RadioId ~= Id then
     return
   end
   LogicRadio.StartMapRadioInfoTable.ProgressIndex = Index
 end
+
 function LogicRadio.GetStartMapRadioInfoTable()
   return LogicRadio.StartMapRadioInfoTable
 end
+
 function LogicRadio.GetUITypeList(Id)
   local RadioEventInfo = LogicRadio.RadioEventInfos[Id]
   if RadioEventInfo.IsMutex then
@@ -139,6 +146,7 @@ function LogicRadio.GetUITypeList(Id)
     return RadioEventInfo.TypeList[1]
   end
 end
+
 function LogicRadio.ShowRadioPanel(Id, Params)
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if not UIManager then
@@ -242,6 +250,7 @@ function LogicRadio.ShowRadioPanel(Id, Params)
     end
   end
 end
+
 function LogicRadio.RemoveRadioPlayListById(Id)
   local RemoveIndex = 0
   for i, SinglePlayInfo in ipairs(LogicRadio.RadioPlayList) do
@@ -256,6 +265,7 @@ function LogicRadio.RemoveRadioPlayListById(Id)
     InitStartMapRadioInfoTable()
   end
 end
+
 function LogicRadio.GetAllRadioEventIdByTriggerConditionId(TriggerConditionId)
   local List = {}
   if LogicRadio.RadioEventInfos then
@@ -267,6 +277,7 @@ function LogicRadio.GetAllRadioEventIdByTriggerConditionId(TriggerConditionId)
   end
   return List
 end
+
 function LogicRadio.ExecuteRadioConditionByConditionId(ConditionId, RadioParams)
   local List = LogicRadio.GetAllRadioEventIdByTriggerConditionId(ConditionId)
   for index, SingleRadioConditionId in ipairs(List) do
@@ -299,12 +310,15 @@ function LogicRadio.ExecuteRadioConditionByConditionId(ConditionId, RadioParams)
     end
   end
 end
+
 function LogicRadio.GetRadioExecuteCount(RadioConditionId)
   return LogicRadio.RadioExecuteCount[RadioConditionId] and LogicRadio.RadioExecuteCount[RadioConditionId] or 0
 end
+
 function LogicRadio:BindOnShowRadioWindow(RadioEventId, Params)
   LogicRadio.ShowRadioPanel(RadioEventId, Params)
 end
+
 function LogicRadio.RandomListByWeight(Values, Weights)
   assert(#Values == #Weights)
   local tinsert = table.insert
@@ -383,6 +397,7 @@ function LogicRadio.RandomListByWeight(Values, Weights)
   end
   return Values[idx], Weights[idx]
 end
+
 function LogicRadio.ClearBattleData()
   LogicRadio.RadioWidget = nil
   LogicRadio.RadioPlayedList = {}

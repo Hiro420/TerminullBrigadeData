@@ -3,6 +3,7 @@ local UnLua = _G.UnLua
 local rapidjson = require("rapidjson")
 local SkinData = require("Modules.Appearance.Skin.SkinData")
 local RecruitHandle = {}
+
 function RecruitHandle:SendApplyRecruitTeam(Branch, TeamID)
   local url = "team/applyrecruitteam"
   print("Branch  " .. Branch .. "  TeamID  " .. TeamID .. "  Version  " .. LogicLobby.GetVersionID())
@@ -24,6 +25,7 @@ function RecruitHandle:SendApplyRecruitTeam(Branch, TeamID)
     end
   })
 end
+
 function RecruitHandle:SendGetRecruitTeamList(AutoJoin, Floor, GameMode, WorldID)
   local url = "team/getrecruitteamlist"
   print("SendGetRecruitTeamList Auto  " .. tostring(AutoJoin) .. "  Floor  " .. Floor .. "  GameMode  " .. GameMode .. "  World" .. WorldID)
@@ -44,6 +46,7 @@ function RecruitHandle:SendGetRecruitTeamList(AutoJoin, Floor, GameMode, WorldID
     end
   })
 end
+
 function RecruitHandle:SendGetRecruitApplyList(TeamID)
   local url = "team/getrecruitapplylist"
   HttpCommunication.Request(url, {teamID = TeamID}, {
@@ -58,16 +61,19 @@ function RecruitHandle:SendGetRecruitApplyList(TeamID)
     end
   })
 end
+
 function RecruitHandle:SendStartRecruit(AutoJoin, Content, Floor, GameMode, TeamID, WorldID)
   local url = "team/startrecruit"
   print("SendStartRecruit" .. "GameMode = " .. GameMode .. "  WorldID = " .. WorldID .. " Floor = " .. Floor .. "AutoJoin = " .. tostring(AutoJoin))
+  print("worldChatChannel", ChatDataMgr.ChatChannel or 0)
   HttpCommunication.Request(url, {
     autoJoin = AutoJoin,
     content = Content,
     floor = Floor,
     gameMode = GameMode,
     teamID = TeamID,
-    worldID = WorldID
+    worldID = WorldID,
+    worldChatChannel = ChatDataMgr.ChatChannel or 0
   }, {
     GameInstance,
     function(Target, JsonResponse)
@@ -81,6 +87,7 @@ function RecruitHandle:SendStartRecruit(AutoJoin, Content, Floor, GameMode, Team
     end
   })
 end
+
 function RecruitHandle:SendStopRecruit(TeamID)
   local url = "team/stoprecruit"
   print("SendStopRecruit")
@@ -96,6 +103,7 @@ function RecruitHandle:SendStopRecruit(TeamID)
     end
   })
 end
+
 function RecruitHandle:SendAgreeRecruitApply(RoleID, TeamID, Item)
   local url = "team/agreerecruitapply"
   HttpCommunication.Request(url, {roleID = RoleID, teamID = TeamID}, {
@@ -113,6 +121,7 @@ function RecruitHandle:SendAgreeRecruitApply(RoleID, TeamID, Item)
     end
   })
 end
+
 function RecruitHandle:SendRefuseRecruitApply(RoleID, TeamID, Item)
   local url = "team/refuserecruitapply"
   HttpCommunication.Request(url, {roleID = RoleID, teamID = TeamID}, {
@@ -130,6 +139,7 @@ function RecruitHandle:SendRefuseRecruitApply(RoleID, TeamID, Item)
     end
   })
 end
+
 function RecruitHandle:SendRolesGameFloorData(RoleIDs)
   local url = "playergrowth/gamefloor/rolesgamefloordata"
   HttpCommunication.Request(url, {roleIDs = RoleIDs}, {
@@ -146,4 +156,5 @@ function RecruitHandle:SendRolesGameFloorData(RoleIDs)
     end
   })
 end
+
 return RecruitHandle

@@ -1,13 +1,16 @@
 local WBP_TaskPanel_ChargeCount_C = UnLua.Class()
+
 function WBP_TaskPanel_ChargeCount_C:Construct()
   ListenObjectMessage(nil, GMP.MSG_World_BattleStage_Charge_LevelChange, self, self.OnLevelChange)
 end
+
 function WBP_TaskPanel_ChargeCount_C:OnLevelChange(Level)
   if Level > 3 then
     return
   end
   self.Txt_Count:SetText(Level)
 end
+
 function WBP_TaskPanel_ChargeCount_C:InitEventPanel(TaskEventConfig, EventId, TaskId)
   self.EventId = EventId
   self.TaskId = TaskId
@@ -18,6 +21,7 @@ function WBP_TaskPanel_ChargeCount_C:InitEventPanel(TaskEventConfig, EventId, Ta
     self:OnLevelChange(LogicBattleMode.BattleMode:GetCharge().CurLevel)
   end
 end
+
 function WBP_TaskPanel_ChargeCount_C:UpdateEventPanel(TaskInfo)
   for Index, EventData in ipairs(TaskInfo.Current:ToTable()) do
     if EventData.EventId == self.EventId and self.Status ~= EventData.Status then
@@ -26,6 +30,7 @@ function WBP_TaskPanel_ChargeCount_C:UpdateEventPanel(TaskInfo)
     end
   end
 end
+
 function WBP_TaskPanel_ChargeCount_C:SetWidgetStyle(Status)
   UpdateVisibility(self.Img_TaskCompleted, Status == UE.ERGActionEvent_TaskConditionStatus.Meet)
   if Status == UE.ERGActionEvent_TaskConditionStatus.Meet then
@@ -37,4 +42,5 @@ function WBP_TaskPanel_ChargeCount_C:SetWidgetStyle(Status)
     SetImageBrushBySoftObjectPath(self.Img_TaskState, self.TaskEventConfig.EventErrorIcon)
   end
 end
+
 return WBP_TaskPanel_ChargeCount_C

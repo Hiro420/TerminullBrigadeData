@@ -6,6 +6,7 @@ local PadLeftSwitch = "MainPanelLeftSwitch"
 local PadRightSwitch = "MainPanelRightSwitch"
 local RestoreBtnCDTip = 1408
 local DeleteAccountTagName = "Settings.Privacy.Agreement.Entrance6"
+
 function WBP_GameSettingsMain_C:Construct()
   if self.EscFunctionalButton.OnMainButtonClicked then
     self.EscFunctionalButton.OnMainButtonClicked:Add(self, self.BindOnEscButtonClicked)
@@ -22,6 +23,7 @@ function WBP_GameSettingsMain_C:Construct()
   self.Btn_TipCancel.OnClicked:Add(self, WBP_GameSettingsMain_C.BindOnTipCancelButtonClicked)
   self.Btn_Cancel.OnClicked:Add(self, self.BindOnCancelButtonClicked)
 end
+
 function WBP_GameSettingsMain_C:ChangeSaveButtonVis(IsShow)
   if IsShow then
     self.SaveFunctionalButton:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -29,20 +31,24 @@ function WBP_GameSettingsMain_C:ChangeSaveButtonVis(IsShow)
     self.SaveFunctionalButton:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_GameSettingsMain_C:OnShow(...)
   print("WBP_GameSettingsMain_C:OnShow CursorVirtualFocus 1")
   UE.URGBlueprintLibrary.CursorVirtualFocus(1)
   self:OnDisplay()
 end
+
 function WBP_GameSettingsMain_C:OnHide(...)
   print("WBP_GameSettingsMain_C:OnHide CursorVirtualFocus 0")
   UE.URGBlueprintLibrary.CursorVirtualFocus(0)
   self:OnUnDisplay()
 end
+
 function WBP_GameSettingsMain_C:BindOnTipConfirmButtonClicked()
   self:BindOnSaveButtonClicked()
   self:HidePanel()
 end
+
 function WBP_GameSettingsMain_C:BindOnTipCancelButtonClicked()
   for key, SingleIndependentWidget in ipairs(self.NeedSaveIndependentWidgetList) do
     if SingleIndependentWidget.CancelSaveSettings then
@@ -53,18 +59,22 @@ function WBP_GameSettingsMain_C:BindOnTipCancelButtonClicked()
   LogicGameSetting.ClearTempGameSettingValueList()
   self:HidePanel()
 end
+
 function WBP_GameSettingsMain_C:BindOnCancelButtonClicked(...)
   UpdateVisibility(self.SaveSettingsTip, false)
   self:Bp_InputTypeToGamePadUpdateFocus()
 end
+
 function WBP_GameSettingsMain_C:HidePanel()
   self:PlayAnimation(self.Ani_out, 0.0, 1, UE.EUMGSequencePlayMode.Forward, 1.0, false)
 end
+
 function WBP_GameSettingsMain_C:OnAnimationFinished(InAnimation)
   if self.Ani_out == InAnimation then
     LogicGameSetting.ShowGameSettingPanel()
   end
 end
+
 function WBP_GameSettingsMain_C:SaveScreenSettings()
   local RGGameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
   if not RGGameUserSettings then
@@ -103,6 +113,7 @@ function WBP_GameSettingsMain_C:SaveScreenSettings()
   self:SaveResolutionRatio()
   self:SavePrivacy()
 end
+
 function WBP_GameSettingsMain_C:SaveResolution()
   local RGGameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
   if not RGGameUserSettings then
@@ -114,6 +125,7 @@ function WBP_GameSettingsMain_C:SaveResolution()
     RGGameUserSettings:SetScreenResolutionByName(TargetValue)
   end
 end
+
 function WBP_GameSettingsMain_C:SaveFPSLimit()
   local RGGameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
   if not RGGameUserSettings then
@@ -127,6 +139,7 @@ function WBP_GameSettingsMain_C:SaveFPSLimit()
   local FinalValue = LogicGameSetting.GetFPSLimitValue(TargetValue)
   RGGameUserSettings:SetFrameRateLimit(FinalValue)
 end
+
 function WBP_GameSettingsMain_C:SaveAntiAliasingQuality()
   local RGGameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
   if not RGGameUserSettings then
@@ -140,6 +153,7 @@ function WBP_GameSettingsMain_C:SaveAntiAliasingQuality()
   local FinalValue = LogicGameSetting.GetAntiAliasingScalabilityValue(TargetValue)
   RGGameUserSettings:SetAntiAliasingQuality(FinalValue)
 end
+
 function WBP_GameSettingsMain_C:SaveGraphicsRHI()
   local RGGameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
   if not RGGameUserSettings then
@@ -151,6 +165,7 @@ function WBP_GameSettingsMain_C:SaveGraphicsRHI()
     UE.URGGameUserSettings.SetDefaultGraphicsRHI(TargetValue + 1)
   end
 end
+
 function WBP_GameSettingsMain_C:SaveMonitorSetting()
   local RGGameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
   if not RGGameUserSettings then
@@ -163,6 +178,7 @@ function WBP_GameSettingsMain_C:SaveMonitorSetting()
     EventSystem.Invoke(EventDef.GameSettings.OnMonitorValueChanged)
   end
 end
+
 function WBP_GameSettingsMain_C:SaveResolutionRatio(...)
   local RGGameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
   if not RGGameUserSettings then
@@ -175,6 +191,7 @@ function WBP_GameSettingsMain_C:SaveResolutionRatio(...)
   RGGameUserSettings:SetDLSSEnabled(1 == TargetValue)
   RGGameUserSettings:SetFSR2Enabled(2 == TargetValue)
 end
+
 function WBP_GameSettingsMain_C:SavePrivacy()
   local BattleRecord = LogicGameSetting.GetTempGameSettingValue("Settings.Privacy.Common.BattleRecord")
   if BattleRecord then
@@ -185,6 +202,7 @@ function WBP_GameSettingsMain_C:SavePrivacy()
     DataMgr.SetPlayerInvisible(2, RankValue)
   end
 end
+
 function WBP_GameSettingsMain_C:InitTitleButton()
   local GameSettingTreeStruct = LogicGameSetting.GameSettingsTreeStruct
   local AllChildren = self.TitleButtonPanel:GetAllChildren()
@@ -216,6 +234,7 @@ function WBP_GameSettingsMain_C:InitTitleButton()
     })
   end
 end
+
 function WBP_GameSettingsMain_C:OnDisplay()
   local RGGameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
   if RGGameUserSettings then
@@ -283,9 +302,11 @@ function WBP_GameSettingsMain_C:OnDisplay()
     end
   }, 0.1, false)
 end
+
 function WBP_GameSettingsMain_C:Bp_InputTypeToGamePadUpdateFocus(...)
   EventSystem.Invoke(EventDef.GameSettings.OnTitleButtonClicked, self.CurSelectedTagName, true)
 end
+
 function WBP_GameSettingsMain_C:BindOnTitleButtonClicked(TagName, IsNeedFocus)
   if self.CurSelectedTagName == TagName then
     return
@@ -312,6 +333,7 @@ function WBP_GameSettingsMain_C:BindOnTitleButtonClicked(TagName, IsNeedFocus)
     end
   end
 end
+
 function WBP_GameSettingsMain_C:BindOnEditItemClicked(TagName)
   local SettingRowInfo = LogicGameSetting.GetSettingsRowInfo(TagName)
   if UE.URGBlueprintLibrary.IsValidSoftObjectPath(SettingRowInfo.WidgetClassPath) then
@@ -337,6 +359,7 @@ function WBP_GameSettingsMain_C:BindOnEditItemClicked(TagName)
     print("\230\178\161\230\156\137\229\143\175\228\187\165\230\137\147\229\188\128\231\154\132\231\188\150\232\190\145\231\149\140\233\157\162,TagName:", TagName)
   end
 end
+
 function WBP_GameSettingsMain_C:OpenUrl(TagName)
   local SettingRowInfo = LogicGameSetting.GetSettingsRowInfo(TagName)
   if LogicLobby.IsLIPassLogin() then
@@ -351,8 +374,9 @@ function WBP_GameSettingsMain_C:OpenUrl(TagName)
     UE.UKismetSystemLibrary.LaunchURL(SettingRowInfo.DomesticUrlPath)
   end
 end
+
 function WBP_GameSettingsMain_C:BindOnUrlItemClicked(TagName)
-  if TagName == DeleteAccountTagName then
+  if TagName == DeleteAccountTagName and UE.URGPlatformFunctionLibrary.IsLIPassEnabled() then
     LogicLobby.DeleteAccount()
     return
   end
@@ -366,6 +390,7 @@ function WBP_GameSettingsMain_C:BindOnUrlItemClicked(TagName)
     self:OpenUrl(TagName)
   end
 end
+
 function WBP_GameSettingsMain_C:BindOnItemHovered(IsHovered, TagName)
   self.CurHoveredTagName = TagName
   if IsHovered then
@@ -421,9 +446,11 @@ function WBP_GameSettingsMain_C:BindOnItemHovered(IsHovered, TagName)
     end
   end
 end
+
 function WBP_GameSettingsMain_C:BindOnTempGameSettingListChanged(IsShow)
   self:ChangeSaveButtonVis(IsShow)
 end
+
 function WBP_GameSettingsMain_C:BindOnItemNavigation(Type)
   local SecondLabelList = LogicGameSetting.GetSecondLabelsByFirstLabel(self.CurSelectedTagName)
   local SettingsList = {}
@@ -479,6 +506,7 @@ function WBP_GameSettingsMain_C:BindOnItemNavigation(Type)
     EventSystem.Invoke(EventDef.GameSettings.OnTitleButtonClicked, self.CurSelectedTagName, true)
   end
 end
+
 function WBP_GameSettingsMain_C:DoCustomNavigation(Type)
   if Type == UE.EUINavigation.Right then
     local FirstLabelInfo = LogicGameSetting.GetLabelRowInfo(self.CurSelectedTagName)
@@ -499,6 +527,7 @@ function WBP_GameSettingsMain_C:DoCustomNavigation(Type)
     end
   end
 end
+
 function WBP_GameSettingsMain_C:RefreshEditWidgetVisibility(IsShowEditWidget, TagName)
   self.IsShowEditWidget = IsShowEditWidget
   if self.IsShowEditWidget then
@@ -512,6 +541,7 @@ function WBP_GameSettingsMain_C:RefreshEditWidgetVisibility(IsShowEditWidget, Ta
     end
   end
 end
+
 function WBP_GameSettingsMain_C:RefreshMainList()
   local AllChildren = self.MainList:GetAllChildren()
   for i, SingleChild in pairs(AllChildren) do
@@ -532,6 +562,7 @@ function WBP_GameSettingsMain_C:RefreshMainList()
   end
   self.MainList:ScrollToStart()
 end
+
 function WBP_GameSettingsMain_C:ShowIndependentPanel()
   local FirstLabelRowInfo = LogicGameSetting.GetLabelRowInfo(self.CurSelectedTagName)
   if FirstLabelRowInfo and UE.URGBlueprintLibrary.IsValidSoftObjectPath(FirstLabelRowInfo.WidgetClassPath) then
@@ -558,6 +589,7 @@ function WBP_GameSettingsMain_C:ShowIndependentPanel()
     print("WBP_GameSettingsMain_C:ShowIndependentPanel \230\178\161\230\137\190\229\136\176\231\139\172\231\171\139\231\149\140\233\157\162\231\177\187")
   end
 end
+
 function WBP_GameSettingsMain_C:OnUnDisplay()
   SetInputIgnore(self:GetOwningPlayerPawn(), false)
   if LogicLobby and not LogicLobby.IsInLobbyLevel() and self:GetOwningPlayer() then
@@ -569,6 +601,7 @@ function WBP_GameSettingsMain_C:OnUnDisplay()
   self.CurSelectedTagName = nil
   self:UnregisterScrollRecipient(self.MainList)
 end
+
 function WBP_GameSettingsMain_C:BindOnEscButtonClicked()
   if not self.IsShowEditWidget then
     local IsNeedShowSaveTip = false
@@ -594,12 +627,14 @@ function WBP_GameSettingsMain_C:BindOnEscButtonClicked()
       function ActiveWidget.ShowMainSettingWidget(Target, TagName)
         self:RefreshEditWidgetVisibility(false, TagName)
       end
+      
       ActiveWidget:ShowExitConfirmTip()
     else
       self:RefreshEditWidgetVisibility(false)
     end
   end
 end
+
 function WBP_GameSettingsMain_C:BindOnRestoreButtonClicked()
   if self.LastClickRestoreBtnTime and GetCurrentUTCTimestamp() - self.LastClickRestoreBtnTime < self.RestoreBtnCD then
     ShowWaveWindow(RestoreBtnCDTip)
@@ -668,6 +703,7 @@ function WBP_GameSettingsMain_C:BindOnRestoreButtonClicked()
   self:RefreshMainList()
   EventSystem.Invoke(EventDef.GameSettings.OnSettingsSaved)
 end
+
 function WBP_GameSettingsMain_C:BindOnSaveButtonClicked()
   local TargetWidget = self.TitleIndependentWidgetSwitcher:GetActiveWidget()
   if TargetWidget and TargetWidget.IsNeedShowSaveTip and TargetWidget:IsNeedShowSaveTip() and TargetWidget.SaveSettings then
@@ -711,21 +747,25 @@ function WBP_GameSettingsMain_C:BindOnSaveButtonClicked()
   end
   EventSystem.Invoke(EventDef.GameSettings.OnSettingsSaved)
 end
+
 function WBP_GameSettingsMain_C:BindOnPreviousKeyPressed(...)
   local TargetTagName = not self.IsShowEditWidget and self.CurHoveredTagName or nil
   if self.CurHoveredTagName or self.IsShowEditWidget then
     EventSystem.Invoke(EventDef.GameSettings.OnPreviousKeyPressed, TargetTagName)
   end
 end
+
 function WBP_GameSettingsMain_C:BindOnNextKeyPressed(...)
   local TargetTagName = not self.IsShowEditWidget and self.CurHoveredTagName or nil
   if self.CurHoveredTagName or self.IsShowEditWidget then
     EventSystem.Invoke(EventDef.GameSettings.OnNextKeyPressed, TargetTagName)
   end
 end
+
 function WBP_GameSettingsMain_C:ChangeScrollListConsumeMouseWheelStatus(Status)
   self.MainList:SetConsumeMouseWheel(Status)
 end
+
 function WBP_GameSettingsMain_C:RemoveEventListener()
   EventSystem.RemoveListener(EventDef.GameSettings.OnTitleButtonClicked, WBP_GameSettingsMain_C.BindOnTitleButtonClicked, self)
   EventSystem.RemoveListener(EventDef.GameSettings.OnEditItemClicked, WBP_GameSettingsMain_C.BindOnEditItemClicked, self)
@@ -749,6 +789,7 @@ function WBP_GameSettingsMain_C:RemoveEventListener()
     StopListeningForInputAction(self, PadRightSwitch, UE.EInputEvent.IE_Pressed)
   end
 end
+
 function WBP_GameSettingsMain_C:Destruct()
   self:RemoveEventListener()
   LogicGameSetting.ClearTempGameSettingValueList()
@@ -765,4 +806,5 @@ function WBP_GameSettingsMain_C:Destruct()
     self.MediaPlayer:Close()
   end
 end
+
 return WBP_GameSettingsMain_C

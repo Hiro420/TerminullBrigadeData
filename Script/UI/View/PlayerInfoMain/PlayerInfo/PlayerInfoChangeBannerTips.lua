@@ -1,14 +1,18 @@
 local PlayerInfoData = require("Modules.PlayerInfoMain.PlayerInfo.PlayerInfoData")
 local PlayerInfoChangeBannerTips = Class()
+
 function PlayerInfoChangeBannerTips:BindUIInput()
   self.WBP_InteractTipWidgetBuy:BindInteractAndClickEvent(self, self.OnLinkClicked)
 end
+
 function PlayerInfoChangeBannerTips:UnBindUIInput()
   self.WBP_InteractTipWidgetBuy:UnBindInteractAndClickEvent(self, self.OnLinkClicked)
 end
+
 function PlayerInfoChangeBannerTips:Construct()
   self.Overridden.Construct(self)
 end
+
 function PlayerInfoChangeBannerTips:InitPlayerInfoChangeBannerTips()
   self:StopAnimation(self.Ani_out)
   if not CheckIsVisility(self) then
@@ -46,11 +50,13 @@ function PlayerInfoChangeBannerTips:InitPlayerInfoChangeBannerTips()
   HideOtherItem(self.ScrollBoxBannerList, idx)
   self.RGToggleGroupBanner:SelectId(DataMgr.GetBasicInfo().banner)
 end
+
 function PlayerInfoChangeBannerTips:OnAnimationFinished(Animation)
   if Animation == self.Ani_out then
     UpdateVisibility(self, false)
   end
 end
+
 function PlayerInfoChangeBannerTips:GetTotalBannerNum()
   local sum = 0
   local tbBanner = LuaTableMgr.GetLuaTableByName(TableNames.TBBanner)
@@ -61,10 +67,12 @@ function PlayerInfoChangeBannerTips:GetTotalBannerNum()
   end
   return sum
 end
+
 function PlayerInfoChangeBannerTips:OnToggleGroupStateChanged(SelectId)
   self.SelectId = SelectId
   self:UpdateDetails(SelectId)
 end
+
 function PlayerInfoChangeBannerTips:UpdateLinkInfo()
   UpdateVisibility(self.BP_ButtonWithSoundLink, false)
   local tbBanner = LuaTableMgr.GetLuaTableByName(TableNames.TBBanner)
@@ -99,6 +107,7 @@ function PlayerInfoChangeBannerTips:UpdateLinkInfo()
     end
   end
 end
+
 function PlayerInfoChangeBannerTips:InitBuyPanel(LinkId, GoodsId, bUnlocked, tbBannerData)
   if bUnlocked then
     UpdateVisibility(self.CanvasPanelBuy, false)
@@ -119,6 +128,7 @@ function PlayerInfoChangeBannerTips:InitBuyPanel(LinkId, GoodsId, bUnlocked, tbB
     self.RGTextLink:SetText(tbBannerData.LinkDesc)
   end
 end
+
 function PlayerInfoChangeBannerTips:UpdateDetails(SelectId)
   local tbBannerData = self.viewModel:GetTBBannerDataByBannerId(SelectId)
   if not tbBannerData and SelectId > 0 then
@@ -137,9 +147,11 @@ function PlayerInfoChangeBannerTips:UpdateDetails(SelectId)
     end
   end
 end
+
 function PlayerInfoChangeBannerTips:OperatorBanner()
   self.viewModel:OperatorBanner(self.SelectId)
 end
+
 function PlayerInfoChangeBannerTips:OnLinkClicked()
   local tbBanner = LuaTableMgr.GetLuaTableByName(TableNames.TBBanner)
   if tbBanner then
@@ -162,17 +174,20 @@ function PlayerInfoChangeBannerTips:OnLinkClicked()
         ComLink(tostring(tbBannerDataTemp.acquirePathID), callback, roleID)
       else
         local callback
+        
         function callback()
           local playerInfoMainVMTemp = UIModelMgr:Get("PlayerInfoMainViewModel")
           playerInfoMainVMTemp:HidePlayerMainView(true)
           local LobbyDefaultLabelName = LogicLobby.GetDefaultSelectedLabelName()
           EventSystem.Invoke(EventDef.Lobby.OnLobbyLabelSelected, LobbyDefaultLabelName)
         end
+        
         ComLink(tostring(tbBannerDataTemp.acquirePathID), callback)
       end
     end
   end
 end
+
 function PlayerInfoChangeBannerTips:Hide()
   self.RGToggleGroupBanner.OnCheckStateChanged:Remove(self, self.OnToggleGroupStateChanged)
   self.BP_ButtonWithSoundLink.Onclicked:Remove(self, self.OnLinkClicked)
@@ -181,8 +196,11 @@ function PlayerInfoChangeBannerTips:Hide()
   SetHitTestInvisible(self)
   self:PlayAnimation(self.Ani_out)
 end
+
 function PlayerInfoChangeBannerTips:OnMouseEnter(MyGeometry, MouseEvent)
 end
+
 function PlayerInfoChangeBannerTips:OnMouseLeave(MyGeometry, MouseEvent)
 end
+
 return PlayerInfoChangeBannerTips

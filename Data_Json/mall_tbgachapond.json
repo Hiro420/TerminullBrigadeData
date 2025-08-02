@@ -1,0 +1,102 @@
+[
+  {
+    "ID": 1,
+    "Name": "浮世骇客",
+    "Desc": "影刃传家宝+曙光护士",
+    "BgPath": "/Game/Rouge/UI/Atlas_DT/Activity/Gacha/Banner_Gacha/Frames/Img_CardPools_02.Img_CardPools_02",
+    "TagName": "热卖",
+    "TagBgPath": "",
+    "ActorPath": "/Game/Rouge/NPC/Lobby/DrawCardChest/Chest01.Chest01_C",
+    "ExpendResource": [
+      {
+        "key": 210001,
+        "value": 1
+      }
+    ],
+    "GoodsId": 60000,
+    "RandomGiftId": 400001,
+    "GachaRewardID": 1,
+    "DynamicSafeguradID": 3,
+    "SafeguardIDList": [
+      {
+        "key": 1,
+        "value": 10
+      },
+      {
+        "key": 2,
+        "value": 20
+      },
+      {
+        "key": 3,
+        "value": 30
+      },
+      {
+        "key": 7,
+        "value": 40
+      }
+    ],
+    "SeasonID": 0,
+    "Rare": 5,
+    "SystemMsgID": 4,
+    "StartTime": "2025-06-01 00:00:00",
+    "EndTime": "2025-09-24 00:00:00",
+    "CharacterList": [
+      1010,
+      1040
+    ],
+    "CharacterTitle1": "影刃",
+    "CharacterName1": "浮世霓光·暮夜傀姬",
+    "CharacterTitle2": "曙光",
+    "CharacterName2": "甜心护士"
+  },
+  {
+    "ID": 2,
+    "Name": "浮世绘卷",
+    "Desc": "影刃传家宝+格罗莉亚兔兔警官",
+    "BgPath": "/Game/Rouge/UI/Atlas_DT/Activity/Gacha/Banner_Gacha/Frames/Img_CardPools_01.Img_CardPools_01",
+    "TagName": "热卖",
+    "TagBgPath": "",
+    "ActorPath": "/Game/Rouge/NPC/Lobby/DrawCardChest/Chest01.Chest01_C",
+    "ExpendResource": [
+      {
+        "key": 210001,
+        "value": 1
+      }
+    ],
+    "GoodsId": 60000,
+    "RandomGiftId": 400005,
+    "GachaRewardID": 2,
+    "DynamicSafeguradID": 6,
+    "SafeguardIDList": [
+      {
+        "key": 4,
+        "value": 10
+      },
+      {
+        "key": 5,
+        "value": 20
+      },
+      {
+        "key": 6,
+        "value": 30
+      },
+      {
+        "key": 7,
+        "value": 40
+      }
+    ],
+    "SeasonID": 0,
+    "Rare": 5,
+    "SystemMsgID": 4,
+    "StartTime": "2025-06-01 00:00:00",
+    "EndTime": "2025-09-24 00:00:00",
+    "CharacterList": [
+      1010,
+      1000
+    ],
+    "CharacterTitle1": "影刃",
+    "CharacterName1": "浮世霓光·暮夜傀姬",
+    "CharacterTitle2": "格罗莉亚",
+    "CharacterName2": "兔兔警官"
+  }
+]

@@ -4,6 +4,7 @@ local HeirloomData = {
   CurSelectHeirloomId = -1,
   CurSelectLevel = -1
 }
+
 function HeirloomData:DealWithHeirloomTable()
   local HeirloomTotalTable = LuaTableMgr.GetLuaTableByName(TableNames.TBFamilyTreasure)
   if not HeirloomTotalTable then
@@ -29,6 +30,7 @@ function HeirloomData:DealWithHeirloomTable()
     end
   end
 end
+
 function HeirloomData:GetHeirloomSkinID(HeirloomID, Level)
   local HeirloomUpgradeTable = LuaTableMgr.GetLuaTableByName(TableNames.TBFamilyTreasureUpgrade)
   if not HeirloomUpgradeTable then
@@ -56,19 +58,24 @@ function HeirloomData:GetHeirloomSkinID(HeirloomID, Level)
     end
   end
 end
+
 function HeirloomData:SetUnLockHeirloomList(InUnLockHeirloomList)
   HeirloomData.UnLockHeirloomList = DeepCopy(InUnLockHeirloomList)
 end
+
 function HeirloomData:SetCurSelectHeirloomIdAndLevel(InHeirloomId, InLevel)
   HeirloomData.CurSelectHeirloomId = InHeirloomId
   HeirloomData.CurSelectLevel = InLevel
 end
+
 function HeirloomData:GetCurSelectHeirloomId()
   return HeirloomData.CurSelectHeirloomId
 end
+
 function HeirloomData:GetCurSelectLevel()
   return HeirloomData.CurSelectLevel
 end
+
 function HeirloomData:IsUnLockHeirloom(HeirloomId, Level)
   for index, SingleHeirloomInfo in ipairs(HeirloomData.UnLockHeirloomList) do
     if SingleHeirloomInfo.id == HeirloomId and Level <= SingleHeirloomInfo.level then
@@ -77,9 +84,11 @@ function HeirloomData:IsUnLockHeirloom(HeirloomId, Level)
   end
   return false
 end
+
 function HeirloomData:IsUnLockHeirloomDataEmpty(...)
   return next(HeirloomData.UnLockHeirloomList) == nil
 end
+
 function HeirloomData:GetMaxUnLockHeirloomLevel(HeirloomId)
   local Level = 0
   for index, SingleHeirloomInfo in ipairs(HeirloomData.UnLockHeirloomList) do
@@ -89,6 +98,7 @@ function HeirloomData:GetMaxUnLockHeirloomLevel(HeirloomId)
   end
   return Level
 end
+
 function HeirloomData:GetAllResourceIdByGiftId(RandomGiftId)
   local Table = LuaTableMgr.GetLuaTableByName(TableNames.TBGift)
   local AllResourceId = {}
@@ -104,6 +114,7 @@ function HeirloomData:GetAllResourceIdByGiftId(RandomGiftId)
   end
   return AllResourceId
 end
+
 function HeirloomData:GetAllHeirloomByHeroId(HeroId)
   local HeirIdList = {}
   local FirstLevelInfo
@@ -115,14 +126,17 @@ function HeirloomData:GetAllHeirloomByHeroId(HeroId)
   end
   return HeirIdList
 end
+
 function HeirloomData:GetHeirloomInfoByLevel(HeirloomId, Level)
   local LevelInfoList = HeirloomData.AllHeirloomInfo[HeirloomId]
   return LevelInfoList and LevelInfoList[Level] or nil
 end
+
 function HeirloomData:GetHeirloomMaxLevel(HeirloomId)
   local LevelInfoList = HeirloomData.AllHeirloomInfo[HeirloomId]
   return LevelInfoList and table.count(LevelInfoList) or 0
 end
+
 function HeirloomData:GetHeroSkinByHeirloomLevel(InHeirloomId, InLevel)
   local TargetSkinId = -1
   local TargetSkinResourceId = -1
@@ -160,6 +174,7 @@ function HeirloomData:GetHeroSkinByHeirloomLevel(InHeirloomId, InLevel)
   TargetSkinId = RowInfo.SkinID
   return TargetSkinId, IsCurLevelHasSkin
 end
+
 function HeirloomData:GetHeirloomBySkinId(SkinId)
   local Tb = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   local HeroSkinTable = LuaTableMgr.GetLuaTableByName(TableNames.TBCharacterSkin)
@@ -179,6 +194,7 @@ function HeirloomData:GetHeirloomBySkinId(SkinId)
   end
   return -1, -1
 end
+
 function HeirloomData:GetHeirloomInfoListByHeirloomId(HeirloomId)
   local heirloomInfoList = {}
   if HeirloomData.AllHeirloomInfo[HeirloomId] then
@@ -188,6 +204,7 @@ function HeirloomData:GetHeirloomInfoListByHeirloomId(HeirloomId)
   end
   return heirloomInfoList
 end
+
 function HeirloomData:GetWeaponSkinByHeirloomLevel(InHeirloomId, InLevel)
   local TargetSkinId = -1
   local TargetSkinResourceId = -1
@@ -222,6 +239,7 @@ function HeirloomData:GetWeaponSkinByHeirloomLevel(InHeirloomId, InLevel)
   TargetSkinId = RowInfo.SkinID
   return TargetSkinId
 end
+
 function HeirloomData:GetHeirloomResourceId(HeirloomId)
   local TargetResourceId = 0
   local ResHeirloomTable = LuaTableMgr.GetLuaTableByName(TableNames.TBResFamilyTreasure)
@@ -233,4 +251,5 @@ function HeirloomData:GetHeirloomResourceId(HeirloomId)
   end
   return TargetResourceId
 end
+
 return HeirloomData

@@ -6,8 +6,10 @@ local VoiceReportID = {
   [12294] = 303017,
   [24577] = 303014
 }
+
 function TeamVoiceModule:Ctor()
 end
+
 function TeamVoiceModule:OnInit()
   if UE.RGUtil and not UE.RGUtil.IsEditor() and UE.RGUtil.IsDedicatedServer() then
     return
@@ -15,17 +17,24 @@ function TeamVoiceModule:OnInit()
   if UE.UGVoiceSubsystem == nil then
     return
   end
-  print("TeamVoiceModule:OnInit...........")
+  print("TeamVoiceModule:OnInit...........", UE.UGVoiceSubsystem)
+  EventSystem.AddListenerNew(EventDef.WSMessage.banVoice, self, self.OnBanVoice)
+end
+
+function TeamVoiceModule:InitGVoice()
   if UE.UGVoiceSubsystem ~= nil then
     local GVoice = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.UGVoiceSubsystem:StaticClass())
+    print("TeamVoiceModule:OnInit1111...........", GVoice)
     if GVoice then
       print("TeamVoiceModule:OnInit()", GVoice)
+      GVoice.JoinRoomDelegate:Remove(GVoice, self.OnGVoiceJoinRoom)
+      GVoice.ReportPlayerDelegate:Remove(GVoice, self.OnGVoiceReportPlayer)
       GVoice.JoinRoomDelegate:Add(GVoice, self.OnGVoiceJoinRoom)
       GVoice.ReportPlayerDelegate:Add(GVoice, self.OnGVoiceReportPlayer)
     end
   end
-  EventSystem.AddListenerNew(EventDef.WSMessage.banVoice, self, self.OnBanVoice)
 end
+
 function TeamVoiceModule:OnShutdown()
   if UE.RGUtil and not UE.RGUtil.IsEditor() and UE.RGUtil.IsDedicatedServer() then
     return
@@ -44,6 +53,7 @@ function TeamVoiceModule:OnShutdown()
   end
   EventSystem.RemoveListenerNew(EventDef.WSMessage.banVoice, self, self.OnBanVoice)
 end
+
 function TeamVoiceModule:OnGVoiceJoinRoom(Code, RoomName, MemberID)
   local curMemberId = LogicTeam.GetVoiceMemberIdByRoleId(DataMgr.GetUserId())
   local curGVoiceRoomName = ""
@@ -80,11 +90,13 @@ function TeamVoiceModule:OnGVoiceJoinRoom(Code, RoomName, MemberID)
     end
   end
 end
+
 function TeamVoiceModule:OnGVoiceReportPlayer(Code, CSZInfo)
   print(string.format("TeamVoiceModule:OnGVoiceReportPlayer Code:%d CSZInfo:%s", Code, CSZInfo))
   local code = VoiceReportID[Code] or 30301
   ShowWaveWindow(code)
 end
+
 function TeamVoiceModule:SetMicMode(Mode, bIsSaveGameSetting, bSkipCheckVoiceControl)
   if 0 == Mode then
     local VoiceControlModule = ModuleManager:Get("VoiceControlModule")
@@ -120,6 +132,7 @@ function TeamVoiceModule:SetMicMode(Mode, bIsSaveGameSetting, bSkipCheckVoiceCon
     callback()
   end
 end
+
 function TeamVoiceModule:OnBanVoice(jsonStr)
   if not jsonStr then
     return
@@ -144,6 +157,7 @@ function TeamVoiceModule:OnBanVoice(jsonStr)
   self:SetMicMode(1, true)
   self:ShowBanTips()
 end
+
 function TeamVoiceModule:ShowBanTips()
   print("TeamVoiceModule:ShowBanTips", ChatDataMgr.BanInfo.BanReasonId, ChatDataMgr.BanInfo.BanEndTime, ChatDataMgr.BanInfo.ErrorCode)
   local BanReason = "BanReason"
@@ -164,4 +178,5 @@ function TeamVoiceModule:ShowBanTips()
   }
   ShowWaveWindowWithConsoleCheck(BanTipId, Params, ChatDataMgr.BanInfo.ErrorCode)
 end
+
 return TeamVoiceModule

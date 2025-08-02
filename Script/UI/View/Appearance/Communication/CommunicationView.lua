@@ -13,14 +13,25 @@ local GetAppearanceActor = function(self)
   self.AppearanceActor = LogicLobby.GetAppearanceActor(self)
   return self.AppearanceActor
 end
+
+function CommunicationView:OnBindUIInput()
+  self.WBP_RedDotClearButtonView:BindInteractAndClickEvent()
+end
+
+function CommunicationView:OnUnBindUIInput()
+  self.WBP_RedDotClearButtonView:UnBindInteractAndClickEvent()
+end
+
 function CommunicationView:BindClickHandler()
   self.RGToggleGroupFirst.OnCheckStateChanged:Add(self, self.OnFirstGroupCheckStateChanged)
   self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Add(self, self.EscView)
 end
+
 function CommunicationView:UnBindClickHandler()
   self.RGToggleGroupFirst.OnCheckStateChanged:Remove(self, self.OnFirstGroupCheckStateChanged)
   self.WBP_InteractTipWidgetEsc.OnMainButtonClicked:Remove(self, self.EscView)
 end
+
 function CommunicationView:OnInit()
   self.DataBindTable = {
     {
@@ -59,9 +70,11 @@ function CommunicationView:OnInit()
   self.viewModel = UIModelMgr:Get("CommunicationViewModel")
   self:BindClickHandler()
 end
+
 function CommunicationView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function CommunicationView:OnShow(...)
   self.Super:AttachViewModel(self.viewModel, self.DataBindTable, self)
   UpdateVisibility(self.WBP_SprayPreviewItem, false)
@@ -82,8 +95,8 @@ function CommunicationView:OnShow(...)
   EventSystem.AddListenerNew(EventDef.Communication.OnRouletteAreaSelectChanged, self, self.OnRouletteAreaSelectChanged)
   EventSystem.AddListenerNew(EventDef.Communication.OnCommSelectChanged, self, self.OnCommSelectChanged)
   self:PlayAnimation(self.Anim_IN)
-  self.WBP_InteractTipWidgetSetting:BindInteractAndClickEvent(self, self.OpenSetting)
 end
+
 function CommunicationView:OnPreHide()
   if UE.RGUtil.IsUObjectValid(self.AppearanceActor) then
     self.AppearanceActor:UpdateActived(false)
@@ -92,6 +105,7 @@ function CommunicationView:OnPreHide()
   self.viewModel:UpdateCurSelectSpary(-1)
   self.viewModel:UpdateCurSelectVoice(-1)
 end
+
 function CommunicationView:OnHide()
   self:StopAllAnimations()
   self:StopVoice()
@@ -102,13 +116,13 @@ function CommunicationView:OnHide()
   self.WBP_CommonButton_Buy.OnMainButtonUnhovered:Remove(self, self.OnBuyUnhovered)
   EventSystem.RemoveListenerNew(EventDef.Communication.OnRouletteAreaSelectChanged, self, self.OnRouletteAreaSelectChanged)
   EventSystem.RemoveListenerNew(EventDef.Communication.OnCommSelectChanged, self, self.OnCommSelectChanged)
-  self.WBP_InteractTipWidgetSetting:UnBindInteractAndClickEvent(self, self.OpenSetting)
   UE.UWidgetBlueprintLibrary.CancelDragDrop()
 end
+
 function CommunicationView:OnHideByOther()
-  self.WBP_InteractTipWidgetSetting:UnBindInteractAndClickEvent(self, self.OpenSetting)
   UE.UWidgetBlueprintLibrary.CancelDragDrop()
 end
+
 function CommunicationView:OnFirstGroupCheckStateChanged(SelectId)
   print("OnFirstGroupCheckStateChanged", SelectId)
   self.viewModel:UpdateCurSelectCommunicationToggle(SelectId)
@@ -118,6 +132,7 @@ function CommunicationView:OnFirstGroupCheckStateChanged(SelectId)
     self:PlayAnimation(self.Ani_CanvasVoice_in)
   end
 end
+
 function CommunicationView:OnCurSelectCommunicationToggleUpdate(CurSelectCommunicationToggle)
   self.RGToggleGroupFirst:SelectId(CurSelectCommunicationToggle)
   UpdateVisibility(self.Canvas_SprayPreview, false)
@@ -133,13 +148,16 @@ function CommunicationView:OnCurSelectCommunicationToggleUpdate(CurSelectCommuni
   self:StopVoice()
   self:InitAppearanceActorByToggle(CurSelectCommunicationToggle)
 end
+
 function CommunicationView:SelectSpray(CommId)
   self.viewModel:UpdateCurSelectSpary(CommId)
 end
+
 function CommunicationView:SelectVoice(CommId)
   self.viewModel:UpdateCurSelectVoice(CommId)
   self:PlayVoiceByRouletteId(CommunicationData.GetRoulleteIdByCommId(CommId))
 end
+
 function CommunicationView:OnCurHeroIdUpdate(CurHeroId)
   if -1 == CurHeroId then
     return
@@ -148,6 +166,7 @@ function CommunicationView:OnCurHeroIdUpdate(CurHeroId)
   self.WBP_RedDotViewSpray:ChangeRedDotIdByTag(CurHeroId)
   self.WBP_RedDotViewVoice:ChangeRedDotIdByTag(CurHeroId)
 end
+
 function CommunicationView:OnShowSprayDataUpdate(ShowSprayData)
   if not ShowSprayData.SprayList then
     return
@@ -177,6 +196,7 @@ function CommunicationView:OnShowSprayDataUpdate(ShowSprayData)
     UpdateVisibility(self.Canvas_Spray, #ShowSprayData.SprayList > 0)
   end
 end
+
 function CommunicationView:OnShowVoiceDataUpdate(ShowVoiceData)
   if not ShowVoiceData.VoiceList then
     return
@@ -202,6 +222,7 @@ function CommunicationView:OnShowVoiceDataUpdate(ShowVoiceData)
     UpdateVisibility(self.Canvas_Voice, #ShowVoiceData.VoiceList > 0)
   end
 end
+
 function CommunicationView:OnCurSelectSparyIdUpdate(CurSelectSparyId)
   if -1 == CurSelectSparyId or self.viewModel.CurSelectCommunicationToggle ~= ECommunicationToggleStatus.Spray then
     return
@@ -241,6 +262,7 @@ function CommunicationView:OnCurSelectSparyIdUpdate(CurSelectSparyId)
   UpdateVisibility(self.WBP_CommonExpireAt, nil ~= ExpireAtData and "0" ~= ExpireAtData)
   self.WBP_CommonExpireAt:InitCommonExpireAt(ExpireAtData)
 end
+
 function CommunicationView:OnCurSelectVoiceIdUpdate(CurSelectVoiceId)
   if -1 == CurSelectVoiceId or self.viewModel.CurSelectCommunicationToggle ~= ECommunicationToggleStatus.Voice then
     return
@@ -272,6 +294,7 @@ function CommunicationView:OnCurSelectVoiceIdUpdate(CurSelectVoiceId)
   UpdateVisibility(self.WBP_CommonExpireAt, nil ~= ExpireAtData and "0" ~= ExpireAtData)
   self.WBP_CommonExpireAt:InitCommonExpireAt(ExpireAtData)
 end
+
 function CommunicationView:UpdateBuyButton(commData)
   if not commData then
     return
@@ -282,6 +305,7 @@ function CommunicationView:UpdateBuyButton(commData)
     UpdateVisibility(self.CanvasPanelBuy, false)
   end
 end
+
 function CommunicationView:InitBuyPanel(LinkId, GoodsId, bUnlocked, AccessDesc)
   if bUnlocked then
     UpdateVisibility(self.CanvasPanelBuy, false)
@@ -306,6 +330,7 @@ function CommunicationView:InitBuyPanel(LinkId, GoodsId, bUnlocked, AccessDesc)
     self.WBP_CommonButton_Buy:SetContentText(AccessDesc)
   end
 end
+
 function CommunicationView:OnBuyClick()
   local curCommData = self.viewModel:GetCurCommData()
   if self:LinkPurchaseConfirm(curCommData.RowInfo.LinkId, curCommData.RowInfo.ParamList) then
@@ -319,27 +344,34 @@ function CommunicationView:OnBuyClick()
         self.AppearanceActor:UpdateActived(false, true, false)
       end
     end
-    local luaInst = UIMgr:GetLuaFromActiveView(ViewID.UI_Apearance)
-    if UE.RGUtil.IsUObjectValid(luaInst) then
-      luaInst:ListenForEscInputAction()
+    if curCommData.RowInfo.LinkId ~= "9999" then
+      local luaInst = UIMgr:GetLuaFromActiveView(ViewID.UI_Apearance)
+      if UE.RGUtil.IsUObjectValid(luaInst) then
+        luaInst:ListenForEscInputAction()
+      end
+      EventSystem.Invoke(EventDef.Lobby.OnLobbyLabelSelected, "LobbyLabel.LobbyMain")
+      callback = nil
     end
-    EventSystem.Invoke(EventDef.Lobby.OnLobbyLabelSelected, "LobbyLabel.LobbyMain")
-    callback = nil
     if ViewID[row.UIName] == ViewID.UI_DevelopMain then
       ComLink(curCommData.RowInfo.LinkId, callback, self.viewModel.CurHeroId, self.viewModel.CurHeroId)
     else
-      ComLink(curCommData.RowInfo.LinkId, callback, self.viewModel.CurHeroId, curCommData.RowInfo.ParamList)
+      local ExtraData = {}
+      ExtraData.HeroId = self.viewModel.CurHeroId
+      ComLinkForParam(curCommData.RowInfo.LinkId, callback, curCommData.RowInfo.ParamList, ExtraData)
     end
   end
 end
+
 function CommunicationView:OnBuyHovered()
   self:StopAnimation(self.Ani_hover_out)
   self:PlayAnimation(self.Ani_hover_in, 0)
 end
+
 function CommunicationView:OnBuyUnhovered()
   self:StopAnimation(self.Ani_hover_in)
   self:PlayAnimation(self.Ani_hover_out, 0)
 end
+
 function CommunicationView:LinkPurchaseConfirm(LinkId, ParamList)
   if tonumber(LinkId) ~= 1007 then
     return false
@@ -347,26 +379,31 @@ function CommunicationView:LinkPurchaseConfirm(LinkId, ParamList)
   ComLink(LinkId, nil, ParamList[2], ParamList[1], 1)
   return true
 end
+
 function CommunicationView:OnRollback()
   self:RebackView()
-  self.WBP_InteractTipWidgetSetting:BindInteractAndClickEvent(self, self.OpenSetting)
 end
+
 function CommunicationView:RebackView()
   self:InitAppearanceActorByToggle(self.viewModel.CurSelectCommunicationToggle)
 end
+
 function CommunicationView:EscView()
   local luaInst = UIMgr:GetLuaFromActiveView(ViewID.UI_Apearance)
   if UE.RGUtil.IsUObjectValid(luaInst) then
     luaInst:ListenForEscInputAction()
   end
 end
+
 function CommunicationView:OnRouletteAreaSelectChanged(SlotId)
   local rouletteId = self.viewModel:GetRouletteIdBySlotId(SlotId)
   self:PlayVoiceByRouletteId(rouletteId)
 end
+
 function CommunicationView:OnCommSelectChanged(CommId)
   self:PlayAnimation(self.Ani_cut)
 end
+
 function CommunicationView:PlayVoiceByRouletteId(RouletteId)
   local Result, CommunicationRowInfo = GetRowData(DT.DT_CommunicationWheel, RouletteId)
   self:StopVoice()
@@ -374,22 +411,23 @@ function CommunicationView:PlayVoiceByRouletteId(RouletteId)
     self.PlayingVoiceId = PlayVoiceByRowName(CommunicationRowInfo.AudioRowName, self.AppearanceActor, SkinData.GetEquipedSkinIdByHeroId(self.viewModel.CurHeroId))
   end
 end
+
 function CommunicationView:StopVoice()
   if self.PlayingVoiceId then
     UE.URGBlueprintLibrary.StopVoice(self.PlayingVoiceId)
     self.PlayingVoiceId = nil
   end
 end
+
 function CommunicationView:OnIsEmptyShowListUpdate(IsEmptyShowList)
   UpdateVisibility(self.Canvas_Details, not IsEmptyShowList)
   UpdateVisibility(self.Canvas_Empty, IsEmptyShowList)
 end
+
 function CommunicationView:OnRedDotIdListUpdate(RedDotIdList)
   self.WBP_RedDotClearButtonView:UpdateRedDotIdList(RedDotIdList)
 end
-function CommunicationView:OpenSetting()
-  LogicGameSetting.ShowGameSettingPanel()
-end
+
 function CommunicationView:InitAppearanceActorByToggle(CommunicationToggle)
   if CommunicationToggle == ECommunicationToggleStatus.Spray then
     if UE.RGUtil.IsUObjectValid(self.AppearanceActor) then
@@ -399,11 +437,12 @@ function CommunicationView:InitAppearanceActorByToggle(CommunicationToggle)
     UpdateVisibility(self.Canvas_SprayPreview, true)
   elseif CommunicationToggle == ECommunicationToggleStatus.Voice then
     if UE.RGUtil.IsUObjectValid(self.AppearanceActor) then
-      local EquippedWeaponSkinId = DataMgr.GetShowWeaponId(self.viewModel.CurHeroId)
-      self.AppearanceActor:InitAppearanceActor(self.viewModel.CurHeroId, SkinData.GetEquipedSkinIdByHeroId(self.viewModel.CurHeroId), EquippedWeaponSkinId)
+      local WeaponResId = DataMgr.GetShowWeaponId(self.viewModel.CurHeroId)
+      self.AppearanceActor:InitAppearanceActor(self.viewModel.CurHeroId, SkinData.GetEquipedSkinIdByHeroId(self.viewModel.CurHeroId), SkinData.GetEquipedWeaponSkinIdByWeaponResId(WeaponResId))
       self.AppearanceActor:UpdateActived(true)
     end
     LogicLobby.ShowOrHideGround(true)
   end
 end
+
 return CommunicationView

@@ -1,0 +1,322 @@
+[
+  {
+    "ObjectID": 1,
+    "TrophyID": 1,
+    "TaskGroupid": 6001,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "初识矩阵",
+    "Taskcontent": "账号等级达到5级",
+    "PSPoint": 10,
+    "UnlockType": "Binary"
+  },
+  {
+    "ObjectID": 2,
+    "TrophyID": 2,
+    "TaskGroupid": 6002,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "心意相通",
+    "Taskcontent": "1名角色的熟练度达\n到4级",
+    "PSPoint": 10,
+    "UnlockType": "Binary"
+  },
+  {
+    "ObjectID": 3,
+    "TrophyID": 3,
+    "TaskGroupid": 6003,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "社交新人",
+    "Taskcontent": "拥有第1个好友",
+    "PSPoint": 10,
+    "UnlockType": "Binary"
+  },
+  {
+    "ObjectID": 4,
+    "TrophyID": 4,
+    "TaskGroupid": 6004,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "社交名流",
+    "Taskcontent": "拥有10个好友",
+    "PSPoint": 20,
+    "UnlockType": "Binary"
+  },
+  {
+    "ObjectID": 5,
+    "TrophyID": 5,
+    "TaskGroupid": 6005,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "精准命中",
+    "Taskcontent": "命中敌人弱点2000次",
+    "PSPoint": 20,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 6,
+    "TrophyID": 6,
+    "TaskGroupid": 6006,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "监管者",
+    "Taskcontent": "击败惩戒者1次",
+    "PSPoint": 10,
+    "UnlockType": "Binary"
+  },
+  {
+    "ObjectID": 7,
+    "TrophyID": 7,
+    "TaskGroupid": 6007,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "清理能手",
+    "Taskcontent": "击败400个敌人",
+    "PSPoint": 10,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 8,
+    "TrophyID": 8,
+    "TaskGroupid": 6008,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "团队合作",
+    "Taskcontent": "救援队友10次",
+    "PSPoint": 10,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 9,
+    "TrophyID": 9,
+    "TaskGroupid": 6009,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "巨人捕手",
+    "Taskcontent": "击败首领10次",
+    "PSPoint": 10,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 10,
+    "TrophyID": 10,
+    "TaskGroupid": 6010,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "燃起来了",
+    "Taskcontent": "打爆10个炸药桶",
+    "PSPoint": 10,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 11,
+    "TrophyID": 11,
+    "TaskGroupid": 6011,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "神之子",
+    "Taskcontent": "提升权限品质10次",
+    "PSPoint": 10,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 12,
+    "TrophyID": 12,
+    "TaskGroupid": 6012,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "第一名",
+    "Taskcontent": "获得3次MVP",
+    "PSPoint": 10,
+    "UnlockType": "Binary"
+  },
+  {
+    "ObjectID": 13,
+    "TrophyID": 13,
+    "TaskGroupid": 6013,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "欢迎光临",
+    "Taskcontent": "在商店购买商品10次",
+    "PSPoint": 10,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 14,
+    "TrophyID": 14,
+    "TaskGroupid": 6014,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "秘宝发掘者",
+    "Taskcontent": "首次获得传说品质稳\n宝",
+    "PSPoint": 10,
+    "UnlockType": "Binary"
+  },
+  {
+    "ObjectID": 15,
+    "TrophyID": 15,
+    "TaskGroupid": 6015,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "秘宝收藏家",
+    "Taskcontent": "获得20次传说品质秘\n宝",
+    "PSPoint": 20,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 16,
+    "TrophyID": 16,
+    "TaskGroupid": 6016,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "小插曲",
+    "Taskcontent": "在场景中拾取到10个\n数据情报",
+    "PSPoint": 10,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 17,
+    "TrophyID": 17,
+    "TaskGroupid": 6017,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "势不可当",
+    "Taskcontent": "成功通过1次任意世界",
+    "PSPoint": 10,
+    "UnlockType": "Binary"
+  },
+  {
+    "ObjectID": 18,
+    "TrophyID": 18,
+    "TaskGroupid": 6018,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "职业规划",
+    "Taskcontent": "激活任意1条能力模\n块的强化分支",
+    "PSPoint": 10,
+    "UnlockType": "Binary"
+  },
+  {
+    "ObjectID": 19,
+    "TrophyID": 19,
+    "TaskGroupid": 6019,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "熟能生巧",
+    "Taskcontent": "账号等级达到40级",
+    "PSPoint": 50,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 20,
+    "TrophyID": 20,
+    "TaskGroupid": 6020,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "亲密关系",
+    "Taskcontent": "3名角色的熟练度达\n到4级",
+    "PSPoint": 20,
+    "UnlockType": "Binary"
+  },
+  {
+    "ObjectID": 21,
+    "TrophyID": 21,
+    "TaskGroupid": 6021,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "战斗大师",
+    "Taskcontent": "获得10次MVP",
+    "PSPoint": 20,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 22,
+    "TrophyID": 22,
+    "TaskGroupid": 6022,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "一击必中",
+    "Taskcontent": "命中敌人弱点10000次",
+    "PSPoint": 50,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 23,
+    "TrophyID": 23,
+    "TaskGroupid": 6023,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "购物清单",
+    "Taskcontent": "在商店购买商品300次",
+    "PSPoint": 50,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 24,
+    "TrophyID": 24,
+    "TaskGroupid": 6024,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "大富翁",
+    "Taskcontent": "战斗内累计获得\n20000金币",
+    "PSPoint": 50,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 25,
+    "TrophyID": 25,
+    "TaskGroupid": 6025,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "秘宝专家",
+    "Taskcontent": "获得100次传说品质秘宝",
+    "PSPoint": 100,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 26,
+    "TrophyID": 26,
+    "TaskGroupid": 6026,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "势如破竹",
+    "Taskcontent": "成功通过50次任意世\n界",
+    "PSPoint": 50,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 27,
+    "TrophyID": 27,
+    "TaskGroupid": 6027,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "情报达人",
+    "Taskcontent": "在场景中拾取到50个数据情报",
+    "PSPoint": 50,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 28,
+    "TrophyID": 28,
+    "TaskGroupid": 6028,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "全面成长",
+    "Taskcontent": "激活全部3条能力模块的强化分支",
+    "PSPoint": 100,
+    "UnlockType": "Binary"
+  },
+  {
+    "ObjectID": 29,
+    "TrophyID": 29,
+    "TaskGroupid": 6029,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "智能眷顾",
+    "Taskcontent": "获得10次双重权限",
+    "PSPoint": 50,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 30,
+    "TrophyID": 30,
+    "TaskGroupid": 6030,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "巨人终结者",
+    "Taskcontent": "击败首领200次",
+    "PSPoint": 100,
+    "UnlockType": "Progressive"
+  },
+  {
+    "ObjectID": 31,
+    "TrophyID": 31,
+    "TaskGroupid": 6031,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "理想主义",
+    "Taskcontent": "通关难度10的环都1",
+    "PSPoint": 50,
+    "UnlockType": "Binary"
+  },
+  {
+    "ObjectID": 32,
+    "TrophyID": 32,
+    "TaskGroupid": 6032,
+    "trophyGroupObjectId": "_baseGameGroup",
+    "Taskname": "真正的信仰",
+    "Taskcontent": "通关难度10的炽热焦土1次",
+    "PSPoint": 50,
+    "UnlockType": "Binary"
+  }
+]

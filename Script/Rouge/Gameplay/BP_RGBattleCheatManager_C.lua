@@ -2,6 +2,7 @@ local rapidjson = require("rapidjson")
 local BP_RGBattleCheatManager_C = UnLua.Class()
 local BattleLagacyHandler = require("Protocol.BattleLagacy.BattleLagacyHandler")
 local BatchCheatCfg = require("GameConfig.Cheat.BatchCheatConfig")
+
 function BP_RGBattleCheatManager_C:DebugInteractAllActorLog(bIsLog)
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
   if not WaveWindowManager then
@@ -9,6 +10,7 @@ function BP_RGBattleCheatManager_C:DebugInteractAllActorLog(bIsLog)
   end
   local WaveWindow = WaveWindowManager:ShowWaveWindow(1124, nil, nil)
 end
+
 function BP_RGBattleCheatManager_C:Debug3DUIHoverWidget(bIsDebug)
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
   if not WaveWindowManager then
@@ -16,12 +18,15 @@ function BP_RGBattleCheatManager_C:Debug3DUIHoverWidget(bIsDebug)
   end
   local WaveWindow = WaveWindowManager:ShowWaveWindow(1124, nil, nil)
 end
+
 function BP_RGBattleCheatManager_C:CheatSetBattleLagacyList(Id1, Id2, Id3)
   BattleLagacyHandler:Setbattlelagacylist(Id1, Id2, Id3)
 end
+
 function BP_RGBattleCheatManager_C:CheatSetBattleLagacy(Id)
   BattleLagacyHandler:Setbattlelagacy(Id)
 end
+
 function BP_RGBattleCheatManager_C:CheatOpenLagacyModifyChoosePanel(Id1, Id2, Id3)
   local BattleLagacyList = {
     tonumber(Id1),
@@ -37,6 +42,7 @@ function BP_RGBattleCheatManager_C:CheatOpenLagacyModifyChoosePanel(Id1, Id2, Id
     end
   end
 end
+
 function BP_RGBattleCheatManager_C:CheatShowInscriptionBattleLagacy(Id)
   RGUIMgr:OpenUI(UIConfig.WBP_BattleLagacyInscriptionRewardReminder_C.UIName)
   local battleLagacyModifyRewardReminder_C = RGUIMgr:GetUI(UIConfig.WBP_BattleLagacyInscriptionRewardReminder_C.UIName)
@@ -47,6 +53,7 @@ function BP_RGBattleCheatManager_C:CheatShowInscriptionBattleLagacy(Id)
     }, false)
   end
 end
+
 function BP_RGBattleCheatManager_C:CheatShowModifyBattleLagacy(Id)
   RGUIMgr:OpenUI(UIConfig.WBP_BattleLagacyModifyRewardReminder_C.UIName)
   local battleLagacyModifyRewardReminder_C = RGUIMgr:GetUI(UIConfig.WBP_BattleLagacyModifyRewardReminder_C.UIName)
@@ -57,9 +64,11 @@ function BP_RGBattleCheatManager_C:CheatShowModifyBattleLagacy(Id)
     }, false)
   end
 end
+
 function BP_RGBattleCheatManager_C:SetVoiceLanguage(NewCulture)
   UE.UAudioManager.SetVoiceLanguage(NewCulture)
 end
+
 function BP_RGBattleCheatManager_C:PrintServerTime()
   local url = "dbg/hotfix/getservertime"
   HttpCommunication.Request(url, {}, {
@@ -81,6 +90,7 @@ function BP_RGBattleCheatManager_C:PrintServerTime()
     end
   })
 end
+
 function BP_RGBattleCheatManager_C:PrintHPAndSheild()
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -104,6 +114,7 @@ function BP_RGBattleCheatManager_C:PrintHPAndSheild()
   local displayMaxHealth = UE.UKismetMathLibrary.Round(tonumber(CoreComp:GetMaxHealth()))
   print("HP Info ", displayHealth, displayMaxHealth)
 end
+
 function BP_RGBattleCheatManager_C:BatchCheat(CfgIdx)
   local result, batchCheatInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBBattleBatchCheat, CfgIdx)
   if not result then
@@ -128,6 +139,7 @@ function BP_RGBattleCheatManager_C:BatchCheat(CfgIdx)
     end
   end
 end
+
 function BP_RGBattleCheatManager_C:CheatChatSystem(SystemMsgID)
   local result, row = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBSystemMsg, tonumber(SystemMsgID))
   if not result then
@@ -154,10 +166,12 @@ function BP_RGBattleCheatManager_C:CheatChatSystem(SystemMsgID)
   local msgJson = RapidJsonEncode(msg)
   chatComp:ServerSendChatMsg(DataMgr:GetUserId(), msgJson)
 end
+
 function BP_RGBattleCheatManager_C:GetMouseCaptureMode()
   local captureMode = UE.URGBlueprintLibrary.GetMouseCaptureMode(GameInstance)
   print("MouseCaptureMode", captureMode)
 end
+
 function BP_RGBattleCheatManager_C:HideDeviceUIInfo(bIsHide)
   local hud = RGUIMgr:GetUI(UIConfig.WBP_HUD_C.UIName)
   if hud then
@@ -165,6 +179,7 @@ function BP_RGBattleCheatManager_C:HideDeviceUIInfo(bIsHide)
     UpdateVisibility(hud.HorizontalBox_Device, not bIsHide, true)
   end
 end
+
 function BP_RGBattleCheatManager_C:GetHighestUIInst()
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
   if UIManager then
@@ -174,11 +189,14 @@ function BP_RGBattleCheatManager_C:GetHighestUIInst()
     end
   end
 end
+
 function BP_RGBattleCheatManager_C:CheckGenericModifyDialogue()
   function ShowError(ErrorTableName, ErrorRowname, ErrorParam, ErrorReason)
     local ShowString = "\230\179\149\229\136\153\229\175\185\232\175\157\233\133\141\231\189\174\230\163\128\230\181\139 \239\188\154 \229\188\130\229\184\184\232\161\168\230\160\188\229\145\189\239\188\154%s\227\128\130    \229\188\130\229\184\184RowName\239\188\154%s\227\128\130   \229\188\130\229\184\184\229\143\130\230\149\176\229\144\141\239\188\154%s\227\128\130    \229\188\130\229\184\184\229\142\159\229\155\160\239\188\154%s"
+    
     UE.URGBlueprintLibrary.AddMessageLog(string.format(ShowString, ErrorTableName, ErrorRowname, ErrorParam, ErrorReason, References))
   end
+  
   local GenericModifyDialogueRowNames = GetAllRowNames(DT.DT_GenericModifyDialogue)
   for indexRowName, vRowName in ipairs(GenericModifyDialogueRowNames) do
     local r, RowInfo = GetRowData(DT.DT_GenericModifyDialogue, vRowName)
@@ -205,6 +223,7 @@ function BP_RGBattleCheatManager_C:CheckGenericModifyDialogue()
     end
   end
 end
+
 function BP_RGBattleCheatManager_C:TriggerGenericModifyDialogue(Id)
   if not RGUIMgr:IsShown(UIConfig.WBP_GenericModifyDialog_C.UIName) then
     RGUIMgr:OpenUI(UIConfig.WBP_GenericModifyDialog_C.UIName, true)
@@ -214,10 +233,12 @@ function BP_RGBattleCheatManager_C:TriggerGenericModifyDialogue(Id)
     end
   end
 end
+
 function BP_RGBattleCheatManager_C:CheatMarquee(Content, Interval, RepeatCount, PriorityLevel)
   local MarqueeData = UE.FMarqueeData()
   MarqueeData = UE.URGBlueprintLibrary.InitMarqueeData(nil, Content, Interval, RepeatCount, PriorityLevel)
   UE.URGMarqueeSubsystem.Get(GameInstance):AddMarqueeData(MarqueeData)
   RGUIMgr:GetUI(UIConfig.WBP_Marquee.UIName):InitMarquee()
 end
+
 return BP_RGBattleCheatManager_C

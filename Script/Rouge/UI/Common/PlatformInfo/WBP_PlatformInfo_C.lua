@@ -1,5 +1,6 @@
 local WBP_PlatformInfo_C = UnLua.Class()
 local CurChannelInfo
+
 function WBP_PlatformInfo_C:Construct()
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   local UserOnlineSubsystem = UE.USubsystemBlueprintLibrary.GetLocalPlayerSubsystem(PC, UE.UUserOnlineSubsystem:StaticClass())
@@ -7,6 +8,7 @@ function WBP_PlatformInfo_C:Construct()
     UserOnlineSubsystem.OnUpdateUserInfoCompleteDelegate:Add(self, self.OnUpdateUserInfoComplete)
   end
 end
+
 function WBP_PlatformInfo_C:Destruct()
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   local UserOnlineSubsystem = UE.USubsystemBlueprintLibrary.GetLocalPlayerSubsystem(PC, UE.UUserOnlineSubsystem:StaticClass())
@@ -14,10 +16,12 @@ function WBP_PlatformInfo_C:Destruct()
     UserOnlineSubsystem.OnUpdateUserInfoCompleteDelegate:Remove(self, self.OnUpdateUserInfoComplete)
   end
 end
+
 function WBP_PlatformInfo_C:OnUpdateUserInfoComplete(ChannelUserId)
   DataMgr.PrintChannelInfoLog(string.format("ChannelInfo WBP_PlatformInfo_C OnUpdateUserInfoComplete: %s", tostring(ChannelUserId)))
   self:UpdateUserNickName(ChannelUserId)
 end
+
 function WBP_PlatformInfo_C:UpdateUserNickName(OnlineID)
   if self.Txt_ChannelID and CurChannelInfo.ChannelUserId == OnlineID then
     local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
@@ -32,6 +36,7 @@ function WBP_PlatformInfo_C:UpdateUserNickName(OnlineID)
     end
   end
 end
+
 function WBP_PlatformInfo_C:UpdateChannelInfo(UserID, bIsDarkIcon, ChannelUID, CallBackFunc)
   DataMgr.PrintChannelInfoLog(string.format("ChannelInfo WBP_PlatformInfo_C UserID: %s", tostring(UserID)))
   DataMgr.PrintChannelInfoLog(string.format("ChannelInfo WBP_PlatformInfo_C ChannelUID: %s", tostring(ChannelUID)))
@@ -64,6 +69,7 @@ function WBP_PlatformInfo_C:UpdateChannelInfo(UserID, bIsDarkIcon, ChannelUID, C
     end, nil, DataMgr.PLAYER_INFO_CACHE_DURATION, true)
   end
 end
+
 function WBP_PlatformInfo_C:DoUpdateWidget(ChannelInfo, bIsDarkIcon, CallBackFunc)
   DataMgr.PrintChannelInfoLog(string.format("ChannelInfo WBP_PlatformInfo_C DoUpdateWidget ChannelUserId: %s", tostring(ChannelInfo.ChannelUserId)))
   if not ChannelInfo or not DataMgr.CanChannelIDShow(ChannelInfo) then
@@ -103,4 +109,5 @@ function WBP_PlatformInfo_C:DoUpdateWidget(ChannelInfo, bIsDarkIcon, CallBackFun
     end
   end
 end
+
 return WBP_PlatformInfo_C

@@ -1,12 +1,15 @@
 local RedDotData = require("Modules.RedDot.RedDotData")
 local UnEquipedWeaponItem = UnLua.Class()
+
 function UnEquipedWeaponItem:Construct()
   self.Btn_Main.OnHovered:Add(self, UnEquipedWeaponItem.BindOnMainButtonHovered)
   self.Btn_Main.OnUnhovered:Add(self, UnEquipedWeaponItem.BindOnMainButtonUnHovered)
   self.Btn_Main.OnClicked:Add(self, UnEquipedWeaponItem.BindOnMainButtonClicked)
 end
+
 function UnEquipedWeaponItem:Destruct()
 end
+
 function UnEquipedWeaponItem:BindOnMainButtonHovered()
   self.Img_Hovered:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.Txt_Name:SetColorAndOpacity(self.HoveredTextColor)
@@ -14,6 +17,7 @@ function UnEquipedWeaponItem:BindOnMainButtonHovered()
     self.ParentView:Hover(true, self.WeaponInfo)
   end
 end
+
 function UnEquipedWeaponItem:BindOnMainButtonUnHovered()
   self.Img_Hovered:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.Txt_Name:SetColorAndOpacity(self.UnHoveredTextColor)
@@ -21,6 +25,7 @@ function UnEquipedWeaponItem:BindOnMainButtonUnHovered()
     self.ParentView:Hover(false, self.WeaponInfo)
   end
 end
+
 function UnEquipedWeaponItem:BindOnMainButtonClicked()
   if self.ParentView and self.ParentView.WeaponSelectClick then
     self.ParentView:WeaponSelectClick(self.WeaponInfo)
@@ -31,6 +36,7 @@ function UnEquipedWeaponItem:BindOnMainButtonClicked()
   end
   EventSystem.Invoke(EventDef.BeginnerGuide.OnClickWeaponBagItem)
 end
+
 function UnEquipedWeaponItem:InitUnEquipedWeaponItem(WeaponInfo, IsEquipped, ParentView, bIsSelect)
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.WeaponInfo = WeaponInfo
@@ -97,12 +103,14 @@ function UnEquipedWeaponItem:InitUnEquipedWeaponItem(WeaponInfo, IsEquipped, Par
     self.WBP_CommonCountdown:SetTargetTimestamp(nil)
   end
 end
+
 function UnEquipedWeaponItem:GetWeaponBodyId()
   if self.WeaponInfo then
     return tonumber(self.WeaponInfo.resourceId)
   end
   return -1
 end
+
 function UnEquipedWeaponItem:SetElementInfo()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -139,6 +147,7 @@ function UnEquipedWeaponItem:SetElementInfo()
     end
   end
 end
+
 function UnEquipedWeaponItem:GetInfoToolTipWidget()
   local WidgetClass = UE.UClass.Load("/Game/Rouge/UI/Lobby/Weapon/WBP_LobbyWeaponDisplayInfo.WBP_LobbyWeaponDisplayInfo_C")
   if WidgetClass and (not self.WeaponToolTipWidget or not self.WeaponToolTipWidget:IsValid()) then
@@ -169,9 +178,11 @@ function UnEquipedWeaponItem:GetInfoToolTipWidget()
   end
   return self.WeaponToolTipWidget
 end
+
 function UnEquipedWeaponItem:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.WeaponInfo = nil
   self.ParentView = nil
 end
+
 return UnEquipedWeaponItem

@@ -1,1442 +1,802 @@
 ﻿{
   "1": {
     "ShapeId": 1,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_1",
-      "InTextLiteral": "D1"
-    }
+    "Name": "D1",
+    "DevelopDesc": ""
   },
   "2": {
     "ShapeId": 2,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_2",
-      "InTextLiteral": "C1"
-    }
+    "Name": "C1",
+    "DevelopDesc": ""
   },
   "3": {
     "ShapeId": 3,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_3",
-      "InTextLiteral": "B1"
-    }
+    "Name": "B1",
+    "DevelopDesc": ""
   },
   "4": {
     "ShapeId": 4,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_4",
-      "InTextLiteral": "B2"
-    }
+    "Name": "B2",
+    "DevelopDesc": ""
   },
   "5": {
     "ShapeId": 5,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_5",
-      "InTextLiteral": "B3"
-    }
+    "Name": "B3",
+    "DevelopDesc": ""
   },
   "6": {
     "ShapeId": 6,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_6",
-      "InTextLiteral": "A1"
-    }
+    "Name": "A1",
+    "DevelopDesc": ""
   },
   "7": {
     "ShapeId": 7,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_7",
-      "InTextLiteral": "A2"
-    }
+    "Name": "A2",
+    "DevelopDesc": ""
   },
   "8": {
     "ShapeId": 8,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_8",
-      "InTextLiteral": "A3"
-    }
+    "Name": "A3",
+    "DevelopDesc": ""
   },
   "9": {
     "ShapeId": 9,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_9",
-      "InTextLiteral": "A4"
-    }
+    "Name": "A4",
+    "DevelopDesc": ""
   },
   "10": {
     "ShapeId": 10,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_10",
-      "InTextLiteral": "A5"
-    }
+    "Name": "A5",
+    "DevelopDesc": ""
   },
   "11": {
     "ShapeId": 11,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_11",
-      "InTextLiteral": "A6"
-    }
+    "Name": "A6",
+    "DevelopDesc": ""
   },
   "12": {
     "ShapeId": 12,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_12",
-      "InTextLiteral": "A7"
-    }
+    "Name": "A7",
+    "DevelopDesc": ""
   },
   "13": {
     "ShapeId": 13,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_13",
-      "InTextLiteral": "A8"
-    }
+    "Name": "A8",
+    "DevelopDesc": ""
   },
   "14": {
     "ShapeId": 14,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_14",
-      "InTextLiteral": "A9"
-    }
+    "Name": "A9",
+    "DevelopDesc": ""
   },
   "15": {
     "ShapeId": 15,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_15",
-      "InTextLiteral": "A10"
-    }
+    "Name": "A10",
+    "DevelopDesc": ""
   },
   "16": {
     "ShapeId": 16,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_16",
-      "InTextLiteral": "S1"
-    }
+    "Name": "S1",
+    "DevelopDesc": ""
   },
   "17": {
     "ShapeId": 17,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_17",
-      "InTextLiteral": "S2"
-    }
+    "Name": "S2",
+    "DevelopDesc": ""
   },
   "18": {
     "ShapeId": 18,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_18",
-      "InTextLiteral": "S3"
-    }
+    "Name": "S3",
+    "DevelopDesc": ""
   },
   "19": {
     "ShapeId": 19,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_19",
-      "InTextLiteral": "S4"
-    }
+    "Name": "S4",
+    "DevelopDesc": ""
   },
   "20": {
     "ShapeId": 20,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_20",
-      "InTextLiteral": "S5"
-    }
+    "Name": "S5",
+    "DevelopDesc": ""
   },
   "21": {
     "ShapeId": 21,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_21",
-      "InTextLiteral": "S6"
-    }
+    "Name": "S6",
+    "DevelopDesc": ""
   },
   "22": {
     "ShapeId": 22,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_22",
-      "InTextLiteral": "S7"
-    }
+    "Name": "S7",
+    "DevelopDesc": ""
   },
   "23": {
     "ShapeId": 23,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_23",
-      "InTextLiteral": "S8"
-    }
+    "Name": "S8",
+    "DevelopDesc": ""
   },
   "24": {
     "ShapeId": 24,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_24",
-      "InTextLiteral": "S9"
-    }
+    "Name": "S9",
+    "DevelopDesc": ""
   },
   "25": {
     "ShapeId": 25,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_25",
-      "InTextLiteral": "S10"
-    }
+    "Name": "S10",
+    "DevelopDesc": ""
   },
   "26": {
     "ShapeId": 26,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_26",
-      "InTextLiteral": "S11"
-    }
+    "Name": "S11",
+    "DevelopDesc": ""
   },
   "27": {
     "ShapeId": 27,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_27",
-      "InTextLiteral": "S12"
-    }
+    "Name": "S12",
+    "DevelopDesc": ""
   },
   "28": {
     "ShapeId": 28,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_28",
-      "InTextLiteral": "S13"
-    }
+    "Name": "S13",
+    "DevelopDesc": ""
   },
   "29": {
     "ShapeId": 29,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_29",
-      "InTextLiteral": "S14"
-    }
+    "Name": "S14",
+    "DevelopDesc": ""
   },
   "30": {
     "ShapeId": 30,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_30",
-      "InTextLiteral": "S15"
-    }
+    "Name": "S15",
+    "DevelopDesc": ""
   },
   "31": {
     "ShapeId": 31,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_31",
-      "InTextLiteral": "S16"
-    }
+    "Name": "S16",
+    "DevelopDesc": ""
   },
   "32": {
     "ShapeId": 32,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_32",
-      "InTextLiteral": "S17"
-    }
+    "Name": "S17",
+    "DevelopDesc": ""
   },
   "33": {
     "ShapeId": 33,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_33",
-      "InTextLiteral": "S18"
-    }
+    "Name": "S18",
+    "DevelopDesc": ""
   },
   "34": {
     "ShapeId": 34,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_34",
-      "InTextLiteral": "S19"
-    }
+    "Name": "S19",
+    "DevelopDesc": ""
   },
   "35": {
     "ShapeId": 35,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_35",
-      "InTextLiteral": "S20"
-    }
+    "Name": "S20",
+    "DevelopDesc": ""
   },
   "36": {
     "ShapeId": 36,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_36",
-      "InTextLiteral": "S21"
-    }
+    "Name": "S21",
+    "DevelopDesc": ""
   },
   "37": {
     "ShapeId": 37,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_37",
-      "InTextLiteral": "S22"
-    }
+    "Name": "S22",
+    "DevelopDesc": ""
   },
   "38": {
     "ShapeId": 38,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_38",
-      "InTextLiteral": "S23"
-    }
+    "Name": "S23",
+    "DevelopDesc": ""
   },
   "39": {
     "ShapeId": 39,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_39",
-      "InTextLiteral": "S24"
-    }
+    "Name": "S24",
+    "DevelopDesc": ""
   },
   "40": {
     "ShapeId": 40,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_40",
-      "InTextLiteral": "S25"
-    }
+    "Name": "S25",
+    "DevelopDesc": ""
   },
   "301": {
     "ShapeId": 301,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_301",
-      "InTextLiteral": "D1"
-    }
+    "Name": "D1",
+    "DevelopDesc": ""
   },
   "302": {
     "ShapeId": 302,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_302",
-      "InTextLiteral": "C1"
-    }
+    "Name": "C1",
+    "DevelopDesc": ""
   },
   "303": {
     "ShapeId": 303,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_303",
-      "InTextLiteral": "B1"
-    }
+    "Name": "B1",
+    "DevelopDesc": ""
   },
   "304": {
     "ShapeId": 304,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_304",
-      "InTextLiteral": "B2"
-    }
+    "Name": "B2",
+    "DevelopDesc": ""
   },
   "305": {
     "ShapeId": 305,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_305",
-      "InTextLiteral": "B3"
-    }
+    "Name": "B3",
+    "DevelopDesc": ""
   },
   "306": {
     "ShapeId": 306,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_306",
-      "InTextLiteral": "A1"
-    }
+    "Name": "A1",
+    "DevelopDesc": ""
   },
   "307": {
     "ShapeId": 307,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_307",
-      "InTextLiteral": "A2"
-    }
+    "Name": "A2",
+    "DevelopDesc": ""
   },
   "308": {
     "ShapeId": 308,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_308",
-      "InTextLiteral": "A3"
-    }
+    "Name": "A3",
+    "DevelopDesc": ""
   },
   "309": {
     "ShapeId": 309,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_309",
-      "InTextLiteral": "A4"
-    }
+    "Name": "A4",
+    "DevelopDesc": ""
   },
   "310": {
     "ShapeId": 310,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_310",
-      "InTextLiteral": "A5"
-    }
+    "Name": "A5",
+    "DevelopDesc": ""
   },
   "311": {
     "ShapeId": 311,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_311",
-      "InTextLiteral": "A6"
-    }
+    "Name": "A6",
+    "DevelopDesc": ""
   },
   "312": {
     "ShapeId": 312,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_312",
-      "InTextLiteral": "A7"
-    }
+    "Name": "A7",
+    "DevelopDesc": ""
   },
   "313": {
     "ShapeId": 313,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_313",
-      "InTextLiteral": "A8"
-    }
+    "Name": "A8",
+    "DevelopDesc": ""
   },
   "314": {
     "ShapeId": 314,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_314",
-      "InTextLiteral": "A9"
-    }
+    "Name": "A9",
+    "DevelopDesc": ""
   },
   "315": {
     "ShapeId": 315,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_315",
-      "InTextLiteral": "A10"
-    }
+    "Name": "A10",
+    "DevelopDesc": ""
   },
   "316": {
     "ShapeId": 316,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_316",
-      "InTextLiteral": "S1"
-    }
+    "Name": "S1",
+    "DevelopDesc": ""
   },
   "317": {
     "ShapeId": 317,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_317",
-      "InTextLiteral": "S2"
-    }
+    "Name": "S2",
+    "DevelopDesc": ""
   },
   "318": {
     "ShapeId": 318,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_318",
-      "InTextLiteral": "S3"
-    }
+    "Name": "S3",
+    "DevelopDesc": ""
   },
   "319": {
     "ShapeId": 319,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_319",
-      "InTextLiteral": "S4"
-    }
+    "Name": "S4",
+    "DevelopDesc": ""
   },
   "320": {
     "ShapeId": 320,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_320",
-      "InTextLiteral": "S5"
-    }
+    "Name": "S5",
+    "DevelopDesc": ""
   },
   "321": {
     "ShapeId": 321,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_321",
-      "InTextLiteral": "S6"
-    }
+    "Name": "S6",
+    "DevelopDesc": ""
   },
   "322": {
     "ShapeId": 322,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_322",
-      "InTextLiteral": "S7"
-    }
+    "Name": "S7",
+    "DevelopDesc": ""
   },
   "323": {
     "ShapeId": 323,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_323",
-      "InTextLiteral": "S8"
-    }
+    "Name": "S8",
+    "DevelopDesc": ""
   },
   "324": {
     "ShapeId": 324,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_324",
-      "InTextLiteral": "S9"
-    }
+    "Name": "S9",
+    "DevelopDesc": ""
   },
   "325": {
     "ShapeId": 325,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_325",
-      "InTextLiteral": "S10"
-    }
+    "Name": "S10",
+    "DevelopDesc": ""
   },
   "326": {
     "ShapeId": 326,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_326",
-      "InTextLiteral": "S11"
-    }
+    "Name": "S11",
+    "DevelopDesc": ""
   },
   "327": {
     "ShapeId": 327,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_327",
-      "InTextLiteral": "S12"
-    }
+    "Name": "S12",
+    "DevelopDesc": ""
   },
   "328": {
     "ShapeId": 328,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_328",
-      "InTextLiteral": "S13"
-    }
+    "Name": "S13",
+    "DevelopDesc": ""
   },
   "329": {
     "ShapeId": 329,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_329",
-      "InTextLiteral": "S14"
-    }
+    "Name": "S14",
+    "DevelopDesc": ""
   },
   "330": {
     "ShapeId": 330,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_330",
-      "InTextLiteral": "S15"
-    }
+    "Name": "S15",
+    "DevelopDesc": ""
   },
   "331": {
     "ShapeId": 331,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_331",
-      "InTextLiteral": "S16"
-    }
+    "Name": "S16",
+    "DevelopDesc": ""
   },
   "332": {
     "ShapeId": 332,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_332",
-      "InTextLiteral": "S17"
-    }
+    "Name": "S17",
+    "DevelopDesc": ""
   },
   "333": {
     "ShapeId": 333,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_333",
-      "InTextLiteral": "S18"
-    }
+    "Name": "S18",
+    "DevelopDesc": ""
   },
   "334": {
     "ShapeId": 334,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_334",
-      "InTextLiteral": "S19"
-    }
+    "Name": "S19",
+    "DevelopDesc": ""
   },
   "335": {
     "ShapeId": 335,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_335",
-      "InTextLiteral": "S20"
-    }
+    "Name": "S20",
+    "DevelopDesc": ""
   },
   "336": {
     "ShapeId": 336,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_336",
-      "InTextLiteral": "S21"
-    }
+    "Name": "S21",
+    "DevelopDesc": ""
   },
   "337": {
     "ShapeId": 337,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_337",
-      "InTextLiteral": "S22"
-    }
+    "Name": "S22",
+    "DevelopDesc": ""
   },
   "338": {
     "ShapeId": 338,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_338",
-      "InTextLiteral": "S23"
-    }
+    "Name": "S23",
+    "DevelopDesc": ""
   },
   "339": {
     "ShapeId": 339,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_339",
-      "InTextLiteral": "S24"
-    }
+    "Name": "S24",
+    "DevelopDesc": ""
   },
   "340": {
     "ShapeId": 340,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_340",
-      "InTextLiteral": "S25"
-    }
+    "Name": "S25",
+    "DevelopDesc": ""
   },
   "101": {
     "ShapeId": 101,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_101",
-      "InTextLiteral": "D1"
-    }
+    "Name": "D1",
+    "DevelopDesc": ""
   },
   "102": {
     "ShapeId": 102,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_102",
-      "InTextLiteral": "C1"
-    }
+    "Name": "C1",
+    "DevelopDesc": ""
   },
   "103": {
     "ShapeId": 103,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_103",
-      "InTextLiteral": "B1"
-    }
+    "Name": "B1",
+    "DevelopDesc": ""
   },
   "104": {
     "ShapeId": 104,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_104",
-      "InTextLiteral": "B2"
-    }
+    "Name": "B2",
+    "DevelopDesc": ""
   },
   "105": {
     "ShapeId": 105,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_105",
-      "InTextLiteral": "B3"
-    }
+    "Name": "B3",
+    "DevelopDesc": ""
   },
   "106": {
     "ShapeId": 106,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_106",
-      "InTextLiteral": "A1"
-    }
+    "Name": "A1",
+    "DevelopDesc": ""
   },
   "107": {
     "ShapeId": 107,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_107",
-      "InTextLiteral": "A2"
-    }
+    "Name": "A2",
+    "DevelopDesc": ""
   },
   "108": {
     "ShapeId": 108,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_108",
-      "InTextLiteral": "A3"
-    }
+    "Name": "A3",
+    "DevelopDesc": ""
   },
   "109": {
     "ShapeId": 109,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_109",
-      "InTextLiteral": "A4"
-    }
+    "Name": "A4",
+    "DevelopDesc": ""
   },
   "110": {
     "ShapeId": 110,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_110",
-      "InTextLiteral": "A5"
-    }
+    "Name": "A5",
+    "DevelopDesc": ""
   },
   "111": {
     "ShapeId": 111,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_111",
-      "InTextLiteral": "A6"
-    }
+    "Name": "A6",
+    "DevelopDesc": ""
   },
   "112": {
     "ShapeId": 112,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_112",
-      "InTextLiteral": "A7"
-    }
+    "Name": "A7",
+    "DevelopDesc": ""
   },
   "113": {
     "ShapeId": 113,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_113",
-      "InTextLiteral": "A8"
-    }
+    "Name": "A8",
+    "DevelopDesc": ""
   },
   "114": {
     "ShapeId": 114,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_114",
-      "InTextLiteral": "A9"
-    }
+    "Name": "A9",
+    "DevelopDesc": ""
   },
   "115": {
     "ShapeId": 115,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_115",
-      "InTextLiteral": "A10"
-    }
+    "Name": "A10",
+    "DevelopDesc": ""
   },
   "116": {
     "ShapeId": 116,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_116",
-      "InTextLiteral": "S1"
-    }
+    "Name": "S1",
+    "DevelopDesc": ""
   },
   "117": {
     "ShapeId": 117,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_117",
-      "InTextLiteral": "S2"
-    }
+    "Name": "S2",
+    "DevelopDesc": ""
   },
   "118": {
     "ShapeId": 118,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_118",
-      "InTextLiteral": "S3"
-    }
+    "Name": "S3",
+    "DevelopDesc": ""
   },
   "119": {
     "ShapeId": 119,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_119",
-      "InTextLiteral": "S4"
-    }
+    "Name": "S4",
+    "DevelopDesc": ""
   },
   "120": {
     "ShapeId": 120,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_120",
-      "InTextLiteral": "S5"
-    }
+    "Name": "S5",
+    "DevelopDesc": ""
   },
   "121": {
     "ShapeId": 121,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_121",
-      "InTextLiteral": "S6"
-    }
+    "Name": "S6",
+    "DevelopDesc": ""
   },
   "122": {
     "ShapeId": 122,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_122",
-      "InTextLiteral": "S7"
-    }
+    "Name": "S7",
+    "DevelopDesc": ""
   },
   "123": {
     "ShapeId": 123,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_123",
-      "InTextLiteral": "S8"
-    }
+    "Name": "S8",
+    "DevelopDesc": ""
   },
   "124": {
     "ShapeId": 124,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_124",
-      "InTextLiteral": "S9"
-    }
+    "Name": "S9",
+    "DevelopDesc": ""
   },
   "125": {
     "ShapeId": 125,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_125",
-      "InTextLiteral": "S10"
-    }
+    "Name": "S10",
+    "DevelopDesc": ""
   },
   "126": {
     "ShapeId": 126,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_126",
-      "InTextLiteral": "S11"
-    }
+    "Name": "S11",
+    "DevelopDesc": ""
   },
   "127": {
     "ShapeId": 127,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_127",
-      "InTextLiteral": "S12"
-    }
+    "Name": "S12",
+    "DevelopDesc": ""
   },
   "128": {
     "ShapeId": 128,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_128",
-      "InTextLiteral": "S13"
-    }
+    "Name": "S13",
+    "DevelopDesc": ""
   },
   "129": {
     "ShapeId": 129,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_129",
-      "InTextLiteral": "S14"
-    }
+    "Name": "S14",
+    "DevelopDesc": ""
   },
   "130": {
     "ShapeId": 130,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_130",
-      "InTextLiteral": "S15"
-    }
+    "Name": "S15",
+    "DevelopDesc": ""
   },
   "131": {
     "ShapeId": 131,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_131",
-      "InTextLiteral": "S16"
-    }
+    "Name": "S16",
+    "DevelopDesc": ""
   },
   "132": {
     "ShapeId": 132,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_132",
-      "InTextLiteral": "S17"
-    }
+    "Name": "S17",
+    "DevelopDesc": ""
   },
   "133": {
     "ShapeId": 133,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_133",
-      "InTextLiteral": "S18"
-    }
+    "Name": "S18",
+    "DevelopDesc": ""
   },
   "134": {
     "ShapeId": 134,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_134",
-      "InTextLiteral": "S19"
-    }
+    "Name": "S19",
+    "DevelopDesc": ""
   },
   "135": {
     "ShapeId": 135,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_135",
-      "InTextLiteral": "S20"
-    }
+    "Name": "S20",
+    "DevelopDesc": ""
   },
   "136": {
     "ShapeId": 136,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_136",
-      "InTextLiteral": "S21"
-    }
+    "Name": "S21",
+    "DevelopDesc": ""
   },
   "137": {
     "ShapeId": 137,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_137",
-      "InTextLiteral": "S22"
-    }
+    "Name": "S22",
+    "DevelopDesc": ""
   },
   "138": {
     "ShapeId": 138,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_138",
-      "InTextLiteral": "S23"
-    }
+    "Name": "S23",
+    "DevelopDesc": ""
   },
   "139": {
     "ShapeId": 139,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_139",
-      "InTextLiteral": "S24"
-    }
+    "Name": "S24",
+    "DevelopDesc": ""
   },
   "140": {
     "ShapeId": 140,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_140",
-      "InTextLiteral": "S25"
-    }
+    "Name": "S25",
+    "DevelopDesc": ""
   },
   "201": {
     "ShapeId": 201,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_201",
-      "InTextLiteral": "D1"
-    }
+    "Name": "D1",
+    "DevelopDesc": ""
   },
   "202": {
     "ShapeId": 202,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_202",
-      "InTextLiteral": "C1"
-    }
+    "Name": "C1",
+    "DevelopDesc": ""
   },
   "203": {
     "ShapeId": 203,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_203",
-      "InTextLiteral": "B1"
-    }
+    "Name": "B1",
+    "DevelopDesc": ""
   },
   "204": {
     "ShapeId": 204,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_204",
-      "InTextLiteral": "B2"
-    }
+    "Name": "B2",
+    "DevelopDesc": ""
   },
   "205": {
     "ShapeId": 205,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_205",
-      "InTextLiteral": "B3"
-    }
+    "Name": "B3",
+    "DevelopDesc": ""
   },
   "206": {
     "ShapeId": 206,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_206",
-      "InTextLiteral": "A1"
-    }
+    "Name": "A1",
+    "DevelopDesc": ""
   },
   "207": {
     "ShapeId": 207,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_207",
-      "InTextLiteral": "A2"
-    }
+    "Name": "A2",
+    "DevelopDesc": ""
   },
   "208": {
     "ShapeId": 208,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_208",
-      "InTextLiteral": "A3"
-    }
+    "Name": "A3",
+    "DevelopDesc": ""
   },
   "209": {
     "ShapeId": 209,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_209",
-      "InTextLiteral": "A4"
-    }
+    "Name": "A4",
+    "DevelopDesc": ""
   },
   "210": {
     "ShapeId": 210,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_210",
-      "InTextLiteral": "A5"
-    }
+    "Name": "A5",
+    "DevelopDesc": ""
   },
   "211": {
     "ShapeId": 211,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_211",
-      "InTextLiteral": "A6"
-    }
+    "Name": "A6",
+    "DevelopDesc": ""
   },
   "212": {
     "ShapeId": 212,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_212",
-      "InTextLiteral": "A7"
-    }
+    "Name": "A7",
+    "DevelopDesc": ""
   },
   "213": {
     "ShapeId": 213,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_213",
-      "InTextLiteral": "A8"
-    }
+    "Name": "A8",
+    "DevelopDesc": ""
   },
   "214": {
     "ShapeId": 214,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_214",
-      "InTextLiteral": "A9"
-    }
+    "Name": "A9",
+    "DevelopDesc": ""
   },
   "215": {
     "ShapeId": 215,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_215",
-      "InTextLiteral": "A10"
-    }
+    "Name": "A10",
+    "DevelopDesc": ""
   },
   "216": {
     "ShapeId": 216,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_216",
-      "InTextLiteral": "S1"
-    }
+    "Name": "S1",
+    "DevelopDesc": ""
   },
   "217": {
     "ShapeId": 217,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_217",
-      "InTextLiteral": "S2"
-    }
+    "Name": "S2",
+    "DevelopDesc": ""
   },
   "218": {
     "ShapeId": 218,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_218",
-      "InTextLiteral": "S3"
-    }
+    "Name": "S3",
+    "DevelopDesc": ""
   },
   "219": {
     "ShapeId": 219,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_219",
-      "InTextLiteral": "S4"
-    }
+    "Name": "S4",
+    "DevelopDesc": ""
   },
   "220": {
     "ShapeId": 220,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_220",
-      "InTextLiteral": "S5"
-    }
+    "Name": "S5",
+    "DevelopDesc": ""
   },
   "221": {
     "ShapeId": 221,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_221",
-      "InTextLiteral": "S6"
-    }
+    "Name": "S6",
+    "DevelopDesc": ""
   },
   "222": {
     "ShapeId": 222,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_222",
-      "InTextLiteral": "S7"
-    }
+    "Name": "S7",
+    "DevelopDesc": ""
   },
   "223": {
     "ShapeId": 223,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_223",
-      "InTextLiteral": "S8"
-    }
+    "Name": "S8",
+    "DevelopDesc": ""
   },
   "224": {
     "ShapeId": 224,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_224",
-      "InTextLiteral": "S9"
-    }
+    "Name": "S9",
+    "DevelopDesc": ""
   },
   "225": {
     "ShapeId": 225,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_225",
-      "InTextLiteral": "S10"
-    }
+    "Name": "S10",
+    "DevelopDesc": ""
   },
   "226": {
     "ShapeId": 226,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_226",
-      "InTextLiteral": "S11"
-    }
+    "Name": "S11",
+    "DevelopDesc": ""
   },
   "227": {
     "ShapeId": 227,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_227",
-      "InTextLiteral": "S12"
-    }
+    "Name": "S12",
+    "DevelopDesc": ""
   },
   "228": {
     "ShapeId": 228,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_228",
-      "InTextLiteral": "S13"
-    }
+    "Name": "S13",
+    "DevelopDesc": ""
   },
   "229": {
     "ShapeId": 229,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_229",
-      "InTextLiteral": "S14"
-    }
+    "Name": "S14",
+    "DevelopDesc": ""
   },
   "230": {
     "ShapeId": 230,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_230",
-      "InTextLiteral": "S15"
-    }
+    "Name": "S15",
+    "DevelopDesc": ""
   },
   "231": {
     "ShapeId": 231,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_231",
-      "InTextLiteral": "S16"
-    }
+    "Name": "S16",
+    "DevelopDesc": ""
   },
   "232": {
     "ShapeId": 232,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_232",
-      "InTextLiteral": "S17"
-    }
+    "Name": "S17",
+    "DevelopDesc": ""
   },
   "233": {
     "ShapeId": 233,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_233",
-      "InTextLiteral": "S18"
-    }
+    "Name": "S18",
+    "DevelopDesc": ""
   },
   "234": {
     "ShapeId": 234,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_234",
-      "InTextLiteral": "S19"
-    }
+    "Name": "S19",
+    "DevelopDesc": ""
   },
   "235": {
     "ShapeId": 235,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_235",
-      "InTextLiteral": "S20"
-    }
+    "Name": "S20",
+    "DevelopDesc": ""
   },
   "236": {
     "ShapeId": 236,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_236",
-      "InTextLiteral": "S21"
-    }
+    "Name": "S21",
+    "DevelopDesc": ""
   },
   "237": {
     "ShapeId": 237,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_237",
-      "InTextLiteral": "S22"
-    }
+    "Name": "S22",
+    "DevelopDesc": ""
   },
   "238": {
     "ShapeId": 238,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_238",
-      "InTextLiteral": "S23"
-    }
+    "Name": "S23",
+    "DevelopDesc": ""
   },
   "239": {
     "ShapeId": 239,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_239",
-      "InTextLiteral": "S24"
-    }
+    "Name": "S24",
+    "DevelopDesc": ""
   },
   "240": {
     "ShapeId": 240,
-    "DevelopDesc": "",
-    "NameLocMeta": {
-      "InNamespace": "puzzle_TBPuzzleShapeName",
-      "InKey": "Name_240",
-      "InTextLiteral": "S25"
-    }
+    "Name": "S25",
+    "DevelopDesc": ""
   }
 }

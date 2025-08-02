@@ -7,6 +7,7 @@ local TeamVoiceModule = require("Modules.TeamVoice.TeamVoiceModule")
 local ProficiencyData = require("Modules.Proficiency.ProficiencyData")
 local ModifyItemCountPerLine = 4
 local ExpandName = "ViewFullAttributeList"
+
 function WBP_SingleDamageItem_C:Construct()
   self.Overridden.Construct(self)
   self.Button_EarphoneInOpen.OnClicked:Add(self, WBP_SingleDamageItem_C.ForbidMemberVoice)
@@ -38,6 +39,7 @@ function WBP_SingleDamageItem_C:Construct()
     UpdateVisibility(self.Canvas_VoiceReport, false)
   end
 end
+
 function WBP_SingleDamageItem_C:UpdateMuteTag(Result, RoomName, MemberId)
   if not LogicTeam.CheckIsOwnerVoiceRoom(RoomName) then
     return
@@ -64,6 +66,7 @@ function WBP_SingleDamageItem_C:UpdateMuteTag(Result, RoomName, MemberId)
     end
   end
 end
+
 function WBP_SingleDamageItem_C:ForbidMemberVoice()
   if not self.PS then
     return
@@ -76,6 +79,7 @@ function WBP_SingleDamageItem_C:ForbidMemberVoice()
     end
   end
 end
+
 function WBP_SingleDamageItem_C:ResumeMemberVoice()
   if not self.PS then
     return
@@ -88,6 +92,7 @@ function WBP_SingleDamageItem_C:ResumeMemberVoice()
     end
   end
 end
+
 function WBP_SingleDamageItem_C:ForbidFreeMicrophone()
   local GameUserSettings = UE.UGameUserSettings.GetGameUserSettings()
   if not UE.URGBlueprintLibrary.IsPlatformConsole() then
@@ -102,6 +107,7 @@ function WBP_SingleDamageItem_C:ForbidFreeMicrophone()
     end
   end
 end
+
 function WBP_SingleDamageItem_C:ResumeFreeMicrophone()
   local GameUserSettings = UE.UGameUserSettings.GetGameUserSettings()
   if not UE.URGBlueprintLibrary.IsPlatformConsole() then
@@ -116,6 +122,7 @@ function WBP_SingleDamageItem_C:ResumeFreeMicrophone()
     end
   end
 end
+
 function WBP_SingleDamageItem_C:RefreshInfo(UserId, PS, UpdateScrollSetTips, UpdateGenericModifyTips, ParentView, Index)
   if not UserId then
     return
@@ -224,6 +231,7 @@ function WBP_SingleDamageItem_C:RefreshInfo(UserId, PS, UpdateScrollSetTips, Upd
     self.PlatformIconPanel:UpdateChannelInfo(self.UserId)
   end
 end
+
 function WBP_SingleDamageItem_C:CheckIsFreeChat()
   local GameUserSettings = UE.UGameUserSettings.GetGameUserSettings()
   if not UE.URGBlueprintLibrary.IsPlatformConsole() then
@@ -236,6 +244,7 @@ function WBP_SingleDamageItem_C:CheckIsFreeChat()
   end
   return false
 end
+
 function WBP_SingleDamageItem_C:UpdateScrollSetList(UpdateScrollSetTips, ParentView)
   for Index = 1, self.WrapBoxScroll:GetChildrenCount() do
     local SetItem = GetOrCreateItem(self.WrapBoxScroll, Index, self.WBP_TeamDamageActivatedModifyItem:GetClass())
@@ -297,6 +306,7 @@ function WBP_SingleDamageItem_C:UpdateScrollSetList(UpdateScrollSetTips, ParentV
     end
   end
 end
+
 function WBP_SingleDamageItem_C:UpdateScrollDamageInfoItemList()
   if not self.UserId then
     UnLua.LogWarn("WBP_SingleDamageItem_C:UpdateScrollDamageInfoItemList self.UserId is nil")
@@ -322,6 +332,7 @@ function WBP_SingleDamageItem_C:UpdateScrollDamageInfoItemList()
   end
   HideOtherItem(self.ScrollBox_DamageInfo_Summary, self.DamageInfo_Summary:Length() + 1)
 end
+
 function WBP_SingleDamageItem_C:UpdateScrollGenericModifyItemList(UpdateGenericModifyTips, ParentView)
   if not self.PS then
     self.RGTileView_GenericModify:ClearListItems()
@@ -350,6 +361,7 @@ function WBP_SingleDamageItem_C:UpdateScrollGenericModifyItemList(UpdateGenericM
     end
   end
 end
+
 function WBP_SingleDamageItem_C:IsEqualGenericModifies(t1, t2)
   if not t1 or not t2 then
     return false
@@ -364,6 +376,7 @@ function WBP_SingleDamageItem_C:IsEqualGenericModifies(t1, t2)
   end
   return true
 end
+
 function WBP_SingleDamageItem_C:ListenForExpandInputAction()
   if self.CanvasPanel_DamageDetail.Visibility == UE.ESlateVisibility.Visible then
     self.CanvasPanel_DamageDetail:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -376,6 +389,7 @@ function WBP_SingleDamageItem_C:ListenForExpandInputAction()
     self.CanvasPanel_Summay:SetVisibility(UE.ESlateVisibility.Visible)
   end
 end
+
 function WBP_SingleDamageItem_C:Destruct()
   self.PS = nil
   self.Button_EarphoneInOpen.OnClicked:Remove(self, WBP_SingleDamageItem_C.ForbidMemberVoice)
@@ -400,6 +414,7 @@ function WBP_SingleDamageItem_C:Destruct()
   end
   self:UnBindInputHandler()
 end
+
 function WBP_SingleDamageItem_C:Report()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.DELATE) then
@@ -410,6 +425,7 @@ function WBP_SingleDamageItem_C:Report()
   table.Print(PlayerInfo)
   UIMgr:Show(ViewID.UI_ReportView, false, 3, PlayerInfo.roleid, PlayerInfo.name)
 end
+
 function WBP_SingleDamageItem_C:VoiceReport()
   if UE.UGVoiceSubsystem ~= nil then
     local GVoice = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.UGVoiceSubsystem:StaticClass())
@@ -426,9 +442,11 @@ function WBP_SingleDamageItem_C:VoiceReport()
     end
   end
 end
+
 function WBP_SingleDamageItem_C:BindOnNavigation(Type)
   self.ParentView:BindOnNavigation(Type)
 end
+
 function WBP_SingleDamageItem_C:BindInputHandler()
   if not IsListeningForInputAction(self, ExpandName) then
     ListenForInputAction(ExpandName, UE.EInputEvent.IE_Pressed, false, {
@@ -437,29 +455,37 @@ function WBP_SingleDamageItem_C:BindInputHandler()
     })
   end
 end
+
 function WBP_SingleDamageItem_C:UnBindInputHandler()
   if IsListeningForInputAction(self, ExpandName) then
     StopListeningForInputAction(self, ExpandName, UE.EInputEvent.IE_Pressed)
   end
 end
+
 function WBP_SingleDamageItem_C:OnVoicePanelHovered()
   self.Canvas_Voice:SetRenderScale(UE.FVector2D(1.2, 1.2))
 end
+
 function WBP_SingleDamageItem_C:OnVoicePanelUnHovered()
   self.Canvas_Voice:SetRenderScale(UE.FVector2D(1, 1))
 end
+
 function WBP_SingleDamageItem_C:OnReportPanelHovered()
   self.Canvas_Report:SetRenderScale(UE.FVector2D(1.2, 1.2))
 end
+
 function WBP_SingleDamageItem_C:OnReportPanelUnHovered()
   self.Canvas_Report:SetRenderScale(UE.FVector2D(1, 1))
 end
+
 function WBP_SingleDamageItem_C:OnVoiceReportPanelHovered()
   self.Canvas_VoiceReport:SetRenderScale(UE.FVector2D(1.2, 1.2))
 end
+
 function WBP_SingleDamageItem_C:OnVoiceReportPanelUnHovered()
   self.Canvas_VoiceReport:SetRenderScale(UE.FVector2D(1, 1))
 end
+
 function WBP_SingleDamageItem_C:GetFirstFocusWidget()
   local VisibleFuncBtnList = self:GetVisibleFunctionBtnList()
   for Index, Widget in ipairs(VisibleFuncBtnList) do
@@ -469,6 +495,7 @@ function WBP_SingleDamageItem_C:GetFirstFocusWidget()
   end
   return self:DoCustomNavigation_ModifyItemFirst()
 end
+
 function WBP_SingleDamageItem_C:DoCustomNavigation_FunctionBtnLeft()
   local VisibleFuncBtnList = self:GetVisibleFunctionBtnList()
   if not VisibleFuncBtnList or #VisibleFuncBtnList < 1 then
@@ -482,6 +509,7 @@ function WBP_SingleDamageItem_C:DoCustomNavigation_FunctionBtnLeft()
   end
   return self:GetFunctionBtnLast()
 end
+
 function WBP_SingleDamageItem_C:GetFunctionBtnLeft(ItemIndex, bFromParent)
   local VisibleFuncBtnList = self:GetVisibleFunctionBtnList()
   if not VisibleFuncBtnList or #VisibleFuncBtnList < 1 then
@@ -496,6 +524,7 @@ function WBP_SingleDamageItem_C:GetFunctionBtnLeft(ItemIndex, bFromParent)
     return self.ParentView:GetFunctionBtnLeft(self.Index, ItemIndex)
   end
 end
+
 function WBP_SingleDamageItem_C:DoCustomNavigation_FunctionBtnRight()
   local VisibleFuncBtnList = self:GetVisibleFunctionBtnList()
   if not VisibleFuncBtnList or #VisibleFuncBtnList < 1 then
@@ -509,6 +538,7 @@ function WBP_SingleDamageItem_C:DoCustomNavigation_FunctionBtnRight()
   end
   return self:DoCustomNavigation_FunctionBtnFirst()
 end
+
 function WBP_SingleDamageItem_C:GetFunctionBtnRight(ItemIndex, bFromParent)
   local VisibleFuncBtnList = self:GetVisibleFunctionBtnList()
   if not VisibleFuncBtnList or #VisibleFuncBtnList < 1 then
@@ -523,6 +553,7 @@ function WBP_SingleDamageItem_C:GetFunctionBtnRight(ItemIndex, bFromParent)
     return self.ParentView:GetFunctionBtnRight(self.Index, ItemIndex)
   end
 end
+
 function WBP_SingleDamageItem_C:DoCustomNavigation_FunctionBtnFirst()
   local VisibleFuncBtnList = self:GetVisibleFunctionBtnList()
   if not VisibleFuncBtnList or #VisibleFuncBtnList < 1 then
@@ -530,6 +561,7 @@ function WBP_SingleDamageItem_C:DoCustomNavigation_FunctionBtnFirst()
   end
   return VisibleFuncBtnList[1]
 end
+
 function WBP_SingleDamageItem_C:GetFunctionBtnLast()
   local VisibleFuncBtnList = self:GetVisibleFunctionBtnList()
   if not VisibleFuncBtnList or #VisibleFuncBtnList < 1 then
@@ -537,6 +569,7 @@ function WBP_SingleDamageItem_C:GetFunctionBtnLast()
   end
   return VisibleFuncBtnList[#VisibleFuncBtnList]
 end
+
 function WBP_SingleDamageItem_C:DoCustomNavigation_ModifyItemFirst()
   local ItemWidget = self.WrapBoxScroll:GetChildAt(0)
   if ItemWidget then
@@ -544,6 +577,7 @@ function WBP_SingleDamageItem_C:DoCustomNavigation_ModifyItemFirst()
   end
   return self:DoCustomNavigation_FunctionBtnFirst()
 end
+
 function WBP_SingleDamageItem_C:DoCustomNavigation_ModifyItemLast()
   local ItemCount = self.WrapBoxScroll:GetChildrenCount()
   if 0 == ItemCount then
@@ -557,6 +591,7 @@ function WBP_SingleDamageItem_C:DoCustomNavigation_ModifyItemLast()
   end
   return self:DoCustomNavigation_FunctionBtnFirst()
 end
+
 function WBP_SingleDamageItem_C:GetModifyItemColunmIndex(ItemIndex)
   local ColumnIndex = ItemIndex % ModifyItemCountPerLine
   if 0 == ColumnIndex then
@@ -564,6 +599,7 @@ function WBP_SingleDamageItem_C:GetModifyItemColunmIndex(ItemIndex)
   end
   return ColumnIndex
 end
+
 function WBP_SingleDamageItem_C:GetModifyItemLeft(ItemIndex, bFromParent)
   local ColumnIndex = self:GetModifyItemColunmIndex(ItemIndex)
   local LineCount = math.ceil(ItemIndex / ModifyItemCountPerLine)
@@ -580,6 +616,7 @@ function WBP_SingleDamageItem_C:GetModifyItemLeft(ItemIndex, bFromParent)
     return ItemWidget.BP_ButtonWithSound
   end
 end
+
 function WBP_SingleDamageItem_C:GetModifyItemRight(ItemIndex, bFromParent)
   local ColumnIndex = self:GetModifyItemColunmIndex(ItemIndex)
   local LineCount = math.ceil(ItemIndex / ModifyItemCountPerLine)
@@ -596,6 +633,7 @@ function WBP_SingleDamageItem_C:GetModifyItemRight(ItemIndex, bFromParent)
     return ItemWidget.BP_ButtonWithSound
   end
 end
+
 function WBP_SingleDamageItem_C:GetModifyItemUp(ItemIndex)
   local ColumnIndex = self:GetModifyItemColunmIndex(ItemIndex)
   local LineCount = math.ceil(ItemIndex / ModifyItemCountPerLine)
@@ -610,6 +648,7 @@ function WBP_SingleDamageItem_C:GetModifyItemUp(ItemIndex)
     return ItemWidget.BP_ButtonWithSound
   end
 end
+
 function WBP_SingleDamageItem_C:GetModifyItemDown(ItemIndex)
   local ColumnIndex = self:GetModifyItemColunmIndex(ItemIndex)
   local LineCount = math.ceil(ItemIndex / ModifyItemCountPerLine)
@@ -629,6 +668,7 @@ function WBP_SingleDamageItem_C:GetModifyItemDown(ItemIndex)
     return ItemWidget.BP_ButtonWithSound
   end
 end
+
 function WBP_SingleDamageItem_C:GetVisibleFunctionBtnList()
   if not self.CanvasPanel_Microphone:IsVisible() then
     FuncBtnList = {
@@ -653,4 +693,5 @@ function WBP_SingleDamageItem_C:GetVisibleFunctionBtnList()
   end
   return VisibleFuncBtnList
 end
+
 return WBP_SingleDamageItem_C

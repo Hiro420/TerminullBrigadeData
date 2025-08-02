@@ -3,6 +3,7 @@ local CostTextColor = {
   White = UE.FLinearColor(1.0, 1.0, 1.0, 1.0),
   Gray = UE.FLinearColor(0.135633, 0.132868, 0.132868, 1.0)
 }
+
 function WBP_ModLevelDes_C:InitLevelDes(CurrentModLevel, LevelIndex, ModID)
   local logicCommandDataSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.ULogicCommandDataSubSystem:StaticClass())
   if logicCommandDataSubsystem then
@@ -22,4 +23,5 @@ function WBP_ModLevelDes_C:InitLevelDes(CurrentModLevel, LevelIndex, ModID)
     self.TextBlock_Level:SetDefaultColorAndOpacity(SlateColor)
   end
 end
+
 return WBP_ModLevelDes_C

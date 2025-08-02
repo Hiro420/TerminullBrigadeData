@@ -2,6 +2,7 @@ local WBP_ChatView_C = UnLua.Class()
 local rapidjson = require("rapidjson")
 local HideChatDelay = 6
 local TickRate = 0.2
+
 function WBP_ChatView_C:Construct()
   self.Overridden.Construct(self)
   LogicChat:Init(self)
@@ -31,12 +32,15 @@ function WBP_ChatView_C:Construct()
   end
   self:FocusChatView(false)
 end
+
 function WBP_ChatView_C:OnBindUIInput()
   self.WBP_InteractTipWidgetChat:BindInteractAndClickEvent(self, self.SendMsg)
 end
+
 function WBP_ChatView_C:OnUnBindUIInput()
   self.WBP_InteractTipWidgetChat:UnBindInteractAndClickEvent(self, self.SendMsg)
 end
+
 function WBP_ChatView_C:ChatTick()
   if self.bIsFocus then
     return
@@ -51,6 +55,7 @@ function WBP_ChatView_C:ChatTick()
     self.bIsHide = true
   end
 end
+
 function WBP_ChatView_C:FocusInput()
   if not IsListeningForInputAction(self, self.SendMsgName) then
     ListenForInputAction(self.SendMsgName, UE.EInputEvent.IE_Pressed, true, {
@@ -65,6 +70,7 @@ function WBP_ChatView_C:FocusInput()
     })
   end
 end
+
 function WBP_ChatView_C:UnfocusInput()
   if IsListeningForInputAction(self, self.SendMsgName) then
     StopListeningForInputAction(self, self.SendMsgName, UE.EInputEvent.IE_Pressed)
@@ -75,6 +81,7 @@ function WBP_ChatView_C:UnfocusInput()
   print("WBP_ChatView_C:UnfocusInput")
   self:FocusChatView(false)
 end
+
 function WBP_ChatView_C:FocusChatView(bIsFocus, bSkipCheckAdult)
   if bIsFocus and not bSkipCheckAdult and not UE.URGBlueprintLibrary.IsPlatformConsole() then
     local VoiceControlModule = ModuleManager:Get("VoiceControlModule")
@@ -136,12 +143,14 @@ function WBP_ChatView_C:FocusChatView(bIsFocus, bSkipCheckAdult)
     self:DelayScrollToBottom()
   end
 end
+
 function WBP_ChatView_C:DelayUpdateBtnScrollToBottomVisible()
   self.UpdateBtnTimer = UE.UKismetSystemLibrary.K2_SetTimerDelegate({
     self,
     self.UpdateBtnScrollToBottomVisible
   }, 0.05, false)
 end
+
 function WBP_ChatView_C:UpdateBtnScrollToBottomVisible()
   if self and self.HaveNewMsg then
     local Num = self.RGListViewChatList:GetNumItems()
@@ -157,6 +166,7 @@ function WBP_ChatView_C:UpdateBtnScrollToBottomVisible()
     self:UpdateListViewScrollBarVisible()
   end
 end
+
 function WBP_ChatView_C:UpdateListViewScrollBarVisible()
   if NearlyEquals(self.SizeBoxChatList:GetDesiredSize().Y, self.SizeBoxChatList.MaxDesiredHeight) then
     self.RGListViewChatList:SetScrollbarVisibility(UE.ESlateVisibility.Visible)
@@ -164,10 +174,12 @@ function WBP_ChatView_C:UpdateListViewScrollBarVisible()
     self.RGListViewChatList:SetScrollbarVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_ChatView_C:HideBtnScrollToBottom()
   UpdateVisibility(self.BP_ButtonWithSoundScrollToBottom, false, true)
   self.HaveNewMsg = false
 end
+
 function WBP_ChatView_C:ScrollToBottom()
   if self then
     if self.SizeBoxChatList:GetDesiredSize().Y - self.SizeBoxChatList.MaxDesiredHeight >= -1.0E-8 then
@@ -176,9 +188,11 @@ function WBP_ChatView_C:ScrollToBottom()
     self:HideBtnScrollToBottom()
   end
 end
+
 function WBP_ChatView_C:OnListViewScrolledChanged(ItemOffset, DistanceRemaining)
   self:UpdateBtnScrollToBottomVisible()
 end
+
 function WBP_ChatView_C:SetCurSelectChannel(SelectIndex)
   LogicChat.CurSelectChannel = SelectIndex
   local Channel = LogicChat.CurSelectChannel
@@ -196,6 +210,7 @@ function WBP_ChatView_C:SetCurSelectChannel(SelectIndex)
   self:UpdateChatList()
   self:DelayScrollToBottom()
 end
+
 function WBP_ChatView_C:DelayScrollToBottom()
   if self.bIsFocus then
     self.RGListViewChatList:ScrollToBottom()
@@ -215,6 +230,7 @@ function WBP_ChatView_C:DelayScrollToBottom()
     })
   end
 end
+
 function WBP_ChatView_C:ReceiveMsg(ChatContentData, needScrollToBottom)
   self:UpdateChatList(needScrollToBottom)
   self.HaveNewMsg = true
@@ -224,6 +240,7 @@ function WBP_ChatView_C:ReceiveMsg(ChatContentData, needScrollToBottom)
     UpdateVisibility(self, true)
   end
 end
+
 function WBP_ChatView_C:UpdateChatList(needScrollToBottom)
   local ContentList
   if LogicChat.CurSelectChannel == UE.EChatChannel.Composite then
@@ -284,10 +301,12 @@ function WBP_ChatView_C:UpdateChatList(needScrollToBottom)
     self:UpdateBtnScrollToBottomVisible()
   end
 end
+
 function WBP_ChatView_C:OnBackClick()
   print("WBP_ChatView_C:OnBackClick")
   self:FocusChatView(false)
 end
+
 function WBP_ChatView_C:OnEnterClick()
   local UserClickStatisticsMgr = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUserClickStatistics:StaticClass())
   if UserClickStatisticsMgr then
@@ -299,24 +318,29 @@ function WBP_ChatView_C:OnEnterClick()
   end
   self:FocusChatView(true)
 end
+
 function WBP_ChatView_C:OnChatHover()
   self.URGImagePreviewInputBg:SetRenderOpacity(0.7)
   UpdateVisibility(self.URGImagePreviewInputBg_Hover, true)
 end
+
 function WBP_ChatView_C:OnUnChatHover()
   self.URGImagePreviewInputBg:SetRenderOpacity(0.4)
   UpdateVisibility(self.URGImagePreviewInputBg_Hover, false)
 end
+
 function WBP_ChatView_C:OnTextInputCommit(TextParam, CommitMethod)
   if CommitMethod == UE.ETextCommit.OnEnter then
     self:SendMsg()
   end
 end
+
 function WBP_ChatView_C:OnHandleKeyDown(Geometry, KeyEvent)
   if UE.URGBlueprintLibrary.GetInputKey(KeyEvent).KeyName == "Tab" then
     self:ChangeChannel()
   end
 end
+
 function WBP_ChatView_C:OnShowChannelListClick()
   if CheckIsVisility(self.WBP_ChatChannelList) then
     UpdateVisibility(self.WBP_ChatChannelList, false)
@@ -325,11 +349,14 @@ function WBP_ChatView_C:OnShowChannelListClick()
     self.WBP_ChatChannelList:ShowChannelList(self)
   end
 end
+
 function WBP_ChatView_C:OnSendChatMsgSucc()
   self.RGEditableTextInput:SetText("")
 end
+
 function WBP_ChatView_C:OnSendChatMsgFailed(errcode, lastTime, period)
 end
+
 function WBP_ChatView_C:SendMsg()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.TEAM_INVITE) then
@@ -363,6 +390,7 @@ function WBP_ChatView_C:SendMsg()
     end
   end
 end
+
 function WBP_ChatView_C:ChangeChannel()
   if self.ChatType == ChatDataMgr.EChatType.Lobby and self.bIsFocus then
     local Channel = LogicChat.CurSelectChannel + 1
@@ -380,6 +408,7 @@ function WBP_ChatView_C:ChangeChannel()
     self.WBP_ChatChannelList.RGToggleGroupChannel:SelectId(Channel)
   end
 end
+
 function WBP_ChatView_C:OnLIPassEvent(evt)
   local VoiceControlModule = ModuleManager:Get("VoiceControlModule")
   VoiceControlModule:RemoveLiEvent()
@@ -402,15 +431,18 @@ function WBP_ChatView_C:OnLIPassEvent(evt)
     end
   end
 end
+
 function WBP_ChatView_C:OnRollback()
   print("WBP_LobbyPanel_C:OnRollback")
   self:PlayInLobbyPanelAnimation()
   self:BindConsoleKeys()
 end
+
 function WBP_ChatView_C:OnHideByOther()
   print("WBP_LobbyPanel_C:OnHideByOther")
   self:UnBindConsoleKeys()
 end
+
 function WBP_ChatView_C:Destruct()
   self.Overridden.Destruct(self)
   EventSystem.RemoveListener(EventDef.Chat.SendChatMsgSucc, self.OnSendChatMsgSucc, self)
@@ -450,4 +482,5 @@ function WBP_ChatView_C:Destruct()
     VoiceControlModule:RemoveLiEvent()
   end
 end
+
 return WBP_ChatView_C

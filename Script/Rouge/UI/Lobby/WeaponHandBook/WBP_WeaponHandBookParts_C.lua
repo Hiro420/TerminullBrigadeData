@@ -1,11 +1,14 @@
 local rapidjson = require("rapidjson")
 local WBP_WeaponHandBookParts_C = UnLua.Class()
+
 function WBP_WeaponHandBookParts_C:Construct()
 end
+
 function WBP_WeaponHandBookParts_C:Destruct()
   self.MouseEnterFunc = nil
   self.ParentView = nil
 end
+
 function WBP_WeaponHandBookParts_C:Init(AccessoryId, Rare, MouseEnterFunc, ParentView)
   UpdateVisibility(self, true)
   self.MouseEnterFunc = MouseEnterFunc
@@ -30,9 +33,11 @@ function WBP_WeaponHandBookParts_C:Init(AccessoryId, Rare, MouseEnterFunc, Paren
   end
   self.URGImageSelect:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_WeaponHandBookParts_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_WeaponHandBookParts_C:OnMouseEnter(MyGeometry, MouseEvent)
   if -1 == self.AccessoryId then
     return
@@ -41,9 +46,11 @@ function WBP_WeaponHandBookParts_C:OnMouseEnter(MyGeometry, MouseEvent)
     self.MouseEnterFunc(self.ParentView, self, self.AccessoryId, true)
   end
 end
+
 function WBP_WeaponHandBookParts_C:OnMouseLeave(MouseEvent)
   if self.MouseEnterFunc then
     self.MouseEnterFunc(self.ParentView, self, self.AccessoryId, false)
   end
 end
+
 return WBP_WeaponHandBookParts_C

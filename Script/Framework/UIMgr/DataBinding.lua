@@ -4,12 +4,14 @@ local UWidgetLayoutLibrary = UE.UWidgetLayoutLibrary
 local URGBlueprintLibrary = UE.URGBlueprintLibrary
 local UnLua = _G.UnLua
 local DataBinding = {}
+
 function DataBinding.ConvertInverseBool(source, param)
   if false == source then
     return true
   end
   return false
 end
+
 function DataBinding.UpdateText(target, convertedValue, sourceValue)
   if nil ~= target then
     target:SetText(convertedValue)
@@ -17,29 +19,37 @@ function DataBinding.UpdateText(target, convertedValue, sourceValue)
     UnLua.LogWarn("DataBinding.UpdateText - target is nil , UpdateText value is : ", convertedValue)
   end
 end
+
 function DataBinding.UpdateTextColor(target, convertedValue, sourceValue)
   target:SetColorAndOpacity(convertedValue)
 end
+
 function DataBinding.UpdateImageColorByStr(target, convertedValue, sourceValue)
   URGBlueprintLibrary.SetImageColor(target, convertedValue)
 end
+
 function DataBinding.UpdateLineHeightPercentage(target, convertedValue, sourceValue)
   if nil ~= target and nil ~= target.SetLineHeightPercentage then
     target:SetLineHeightPercentage(convertedValue)
   end
 end
+
 function DataBinding.UpdateOpacity(target, convertedValue, sourceValue)
   target:SetRenderOpacity(convertedValue)
 end
+
 function DataBinding.UpdateCheckStatus(target, convertedValue, sourceValue)
   target:SetCheckedState(convertedValue)
 end
+
 function DataBinding.UpdateEnable(target, convertedValue, sourceValue)
   target:SetIsEnabled(convertedValue)
 end
+
 function DataBinding.UpdateIsChecked(target, convertedValue, sourceValue)
   target:SetIsChecked(convertedValue)
 end
+
 function DataBinding.UpdateVisiblity(target, convertedValue, sourceValue)
   if nil == target then
     UnLua.LogWarn("target is nil , UpdateVisiblity ")
@@ -51,6 +61,7 @@ function DataBinding.UpdateVisiblity(target, convertedValue, sourceValue)
     target:SetVisibility(ESlateVisibility.Hidden)
   end
 end
+
 function DataBinding.UpdateSelfNotHitVisiblity(target, convertedValue, sourceValue)
   if true == convertedValue then
     target:SetVisibility(ESlateVisibility.SelfHitTestInvisible)
@@ -58,6 +69,7 @@ function DataBinding.UpdateSelfNotHitVisiblity(target, convertedValue, sourceVal
     target:SetVisibility(ESlateVisibility.Hidden)
   end
 end
+
 function DataBinding.UpdateNotHitVisiblity(target, convertedValue, sourceValue)
   if true == convertedValue then
     target:SetVisibility(ESlateVisibility.HitTestInvisible)
@@ -65,6 +77,7 @@ function DataBinding.UpdateNotHitVisiblity(target, convertedValue, sourceValue)
     target:SetVisibility(ESlateVisibility.Hidden)
   end
 end
+
 function DataBinding.UpdateCollapsedOrSelfNotHit(target, convertedValue, sourceValue)
   if true == convertedValue then
     target:SetVisibility(ESlateVisibility.SelfHitTestInvisible)
@@ -72,6 +85,7 @@ function DataBinding.UpdateCollapsedOrSelfNotHit(target, convertedValue, sourceV
     target:SetVisibility(ESlateVisibility.Collapsed)
   end
 end
+
 function DataBinding.UpdateCollapsedVisiblity(target, convertedValue, sourceValue)
   if true == convertedValue then
     target:SetVisibility(ESlateVisibility.Visible)
@@ -79,6 +93,7 @@ function DataBinding.UpdateCollapsedVisiblity(target, convertedValue, sourceValu
     target:SetVisibility(ESlateVisibility.Collapsed)
   end
 end
+
 function DataBinding.UpdateCollapsedOrNotHit(target, convertedValue, sourceValue)
   if true == convertedValue then
     target:SetVisibility(ESlateVisibility.HitTestInvisible)
@@ -86,19 +101,23 @@ function DataBinding.UpdateCollapsedOrNotHit(target, convertedValue, sourceValue
     target:SetVisibility(ESlateVisibility.Collapsed)
   end
 end
+
 function DataBinding.UpdateEnumVisibility(target, convertedValue, sourceValue)
   URGBlueprintLibrary.SetUIVisibility(target, convertedValue)
 end
+
 function DataBinding.UpdateImageSync(target, convertedValue, sourceValue)
   if sourceValue and string.len(convertedValue) > 0 then
     URGBlueprintLibrary.SetImageBrushFromAssetPathSync(target, convertedValue, false)
   end
 end
+
 function DataBinding.UpdateImageAsync(target, convertedValue, sourceValue)
   if sourceValue and string.len(convertedValue) > 0 then
     URGBlueprintLibrary.SetImageBrushFromAssetPath(target, convertedValue, false)
   end
 end
+
 function DataBinding.UpdateImageBrush(target, convertedValue, sourceValue)
   if nil ~= target and nil ~= sourceValue and "" ~= sourceValue then
     local bAsync, bMatchSize = table.unpack(convertedValue)
@@ -109,41 +128,50 @@ function DataBinding.UpdateImageBrush(target, convertedValue, sourceValue)
     end
   end
 end
+
 function DataBinding.UpdateImageTexture(target, convertedValue, sourceValue)
   if convertedValue and type(convertedValue) == "userdata" then
     target:SetBrushFromTexture(convertedValue, true)
   end
 end
+
 function DataBinding.UpdateImageAutoSizeSync(target, convertedValue, sourceValue)
   URGBlueprintLibrary.SetImageBrushFromAssetPathSync(target, convertedValue, true)
 end
+
 function DataBinding.UpdateImageAutoSizeAsync(target, convertedValue, sourceValue)
   URGBlueprintLibrary.SetImageBrushFromAssetPath(target, convertedValue, true)
 end
+
 function DataBinding.UpdateBrushTintColor(target, convertedValue, sourceValue)
   target:SetBrushTintColor(convertedValue)
 end
+
 function DataBinding.UpdateImageColor(target, convertedValue, sourceValue)
   if nil ~= target then
     target:SetColorAndOpacity(convertedValue)
   end
 end
+
 function DataBinding.UpdateImageMaterial(target, convertedValue, sourceValue)
   if not convertedValue or "" == convertedValue then
     return
   end
   URGBlueprintLibrary.SetImageBrushFromAssetPath(target, convertedValue, false)
 end
+
 function DataBinding.UpdateProgressBarImage(target, convertedValue, sourceValue)
   if string.len(convertedValue) > 0 then
     URGBlueprintLibrary.SetBrushFromAssetPath(target.WidgetStyle.FillImage, convertedValue)
   end
 end
+
 function DataBinding.UpdateProgressBarBackgroundImage(target, convertedValue, sourceValue)
   if string.len(convertedValue) > 0 then
     URGBlueprintLibrary.SetBrushFromAssetPath(target.WidgetStyle.BackgroundImage, convertedValue)
   end
 end
+
 function DataBinding.UpdateButtonAllStateImageAsync(target, convertedValue, sourceValue)
   if string.len(convertedValue) > 0 then
     URGBlueprintLibrary.SetBrushFromAssetPath(target.WidgetStyle.Normal, convertedValue)
@@ -151,27 +179,32 @@ function DataBinding.UpdateButtonAllStateImageAsync(target, convertedValue, sour
     URGBlueprintLibrary.SetBrushFromAssetPath(target.WidgetStyle.Pressed, convertedValue)
   end
 end
+
 function DataBinding.UpdateButtonClickMethod(target, convertedValue, sourceValue)
   if nil ~= target then
     target:SetClickMethod(convertedValue)
   end
 end
+
 function DataBinding.UpdateButtonTouchMethod(target, convertedValue, sourceValue)
   if nil ~= target then
     target:SetTouchMethod(convertedValue)
   end
 end
+
 function DataBinding.UpdateButtonPressMethod(target, convertedValue, sourceValue)
   if nil ~= target then
     target:SetPressMethod(convertedValue)
   end
 end
+
 function DataBinding.UpdateWidth(target, convertedValue, sourceValue)
   local slotCanvas = UWidgetLayoutLibrary.SlotAsCanvasSlot(target)
   local size = slotCanvas:GetSize()
   size.X = convertedValue
   slotCanvas:SetSize(size)
 end
+
 function DataBinding.UpdateAnchors(target, convertedValue, sourceValue)
   local canvasSlot = UWidgetLayoutLibrary.SlotAsCanvasSlot(target)
   if canvasSlot then
@@ -181,18 +214,21 @@ function DataBinding.UpdateAnchors(target, convertedValue, sourceValue)
     canvasSlot:SetAnchors(anchors)
   end
 end
+
 function DataBinding.UpdateSize(target, convertedValue, sourceValue)
   local slotCanvas = UWidgetLayoutLibrary.SlotAsCanvasSlot(target)
   if slotCanvas then
     slotCanvas:SetSize(convertedValue)
   end
 end
+
 function DataBinding.UpdatePosition(target, convertedValue, sourceValue)
   local canvasSlot = UWidgetLayoutLibrary.SlotAsCanvasSlot(target)
   if canvasSlot then
     URGBlueprintLibrary.SetUICanvasPosition(canvasSlot, convertedValue)
   end
 end
+
 function DataBinding.UpdateCanvasPanelSlotPositionX(target, convertedValue, sourceValue)
   local canvasPanelSlot = UWidgetLayoutLibrary.SlotAsCanvasSlot(target)
   if nil ~= canvasPanelSlot then
@@ -201,18 +237,21 @@ function DataBinding.UpdateCanvasPanelSlotPositionX(target, convertedValue, sour
     URGBlueprintLibrary.SetUICanvasPosition(canvasPanelSlot, position)
   end
 end
+
 function DataBinding.UpdateAlignment(target, convertedValue, sourceValue)
   local canvasSlot = UWidgetLayoutLibrary.SlotAsCanvasSlot(target)
   if canvasSlot then
     canvasSlot:SetAlignment(convertedValue)
   end
 end
+
 function DataBinding.UpdateAutoSize(target, convertedValue, sourceValue)
   local canvasSlot = UWidgetLayoutLibrary.SlotAsCanvasSlot(target)
   if canvasSlot then
     canvasSlot:SetAutoSize(convertedValue)
   end
 end
+
 function DataBinding.UpdateOffsets(target, convertedValue, sourceValue)
   local canvasSlot = UWidgetLayoutLibrary.SlotAsCanvasSlot(target)
   if canvasSlot then
@@ -228,6 +267,7 @@ function DataBinding.UpdateOffsets(target, convertedValue, sourceValue)
     canvasSlot:SetOffsets(offsets)
   end
 end
+
 function DataBinding.UpdateHorizontalBoxSlotPadding(target, convertedValue, sourceValue)
   local horizontalBoxSlot = UWidgetLayoutLibrary.SlotAsHorizontalBoxSlot(target)
   if nil ~= horizontalBoxSlot then
@@ -243,6 +283,7 @@ function DataBinding.UpdateHorizontalBoxSlotPadding(target, convertedValue, sour
     horizontalBoxSlot:SetPadding(padding)
   end
 end
+
 function DataBinding.UpdateHorizontalBoxSlotSize(target, convertedValue, sourceValue)
   local horizontalBoxSlot = UWidgetLayoutLibrary.SlotAsHorizontalBoxSlot(target)
   if nil ~= horizontalBoxSlot then
@@ -251,42 +292,52 @@ function DataBinding.UpdateHorizontalBoxSlotSize(target, convertedValue, sourceV
     horizontalBoxSlot:SetSize(size)
   end
 end
+
 function DataBinding.UpdateWidgetSwitcherActiveIndex(target, convertedValue, sourceValue)
   target:SetActiveWidgetIndex(convertedValue)
 end
+
 function DataBinding.UpdateProgressBarPercent(target, convertedValue, sourceValue)
   target:SetPercent(convertedValue)
 end
+
 function DataBinding.UpdateProgressBarColor(target, convertedValue, sourceValue)
   if target then
     target:SetFillColorAndOpacity(convertedValue)
   end
 end
+
 function DataBinding.UpdateSliderValue(target, convertedValue, sourceValue)
   target:SetValue(convertedValue)
 end
+
 function DataBinding.UpdateWidgetRotation(target, convertedValue, sourceValue)
 end
+
 function DataBinding.UpdateInvalidateCache(target, convertedValue, sourceValue)
   if target and convertedValue then
     target:InvalidateCache()
   end
 end
+
 function DataBinding.UpdateTranslation(target, convertedValue, source)
   if target then
     target:SetRenderTranslation(convertedValue)
   end
 end
+
 function DataBinding.UpdateScale(target, convertedValue, sourceValue)
   if target then
     target:SetRenderScale(convertedValue)
   end
 end
+
 function DataBinding.UpdateAngle(target, convertedValue, sourceValue)
   if nil ~= target then
     target:SetRenderAngle(convertedValue)
   end
 end
+
 function DataBinding.UpdateAlpha(target, convertedValue, sourceValue)
   if target then
     local color = target.ColorAndOpacity
@@ -294,6 +345,7 @@ function DataBinding.UpdateAlpha(target, convertedValue, sourceValue)
     target:SetColorAndOpacity(color)
   end
 end
+
 function DataBinding.UpdateZOrder(target, convertedValue, sourceValue)
   if target then
     local canvasSlot = UWidgetLayoutLibrary.SlotAsCanvasSlot(target)
@@ -302,11 +354,13 @@ function DataBinding.UpdateZOrder(target, convertedValue, sourceValue)
     end
   end
 end
+
 function DataBinding.UpdateSubViewModel(target, convertedValue, sourceValue)
   if target then
     target:ResetViewModel(convertedValue)
   end
 end
+
 DataBinding.PolicyBoolToVisiblity = {
   Converter = nil,
   ConverterParam = nil,
@@ -385,9 +439,11 @@ DataBinding.PolicyEnumToVisibility = {
   OnSourceChanged = DataBinding.UpdateEnumVisibility,
   OnTargetChanged = nil
 }
+
 function DataBinding.BoolToText()
   return DataBinding.PolicyBoolToText
 end
+
 function DataBinding.BoolToVisiblity(inverse, Collapsed)
   if true == inverse then
     if true == Collapsed then
@@ -402,6 +458,7 @@ function DataBinding.BoolToVisiblity(inverse, Collapsed)
   end
   return DataBinding.PolicyBoolToVisiblity
 end
+
 function DataBinding.BoolToNotHitVisiblity(inverse, collapsed)
   if true == inverse then
     if collapsed then
@@ -415,6 +472,7 @@ function DataBinding.BoolToNotHitVisiblity(inverse, collapsed)
     return DataBinding.PolicyBoolToNotHitVisiblity
   end
 end
+
 function DataBinding.BoolToSelfNotHiVisiblity(inverse, collapsed)
   if true == inverse then
     if collapsed then
@@ -428,9 +486,11 @@ function DataBinding.BoolToSelfNotHiVisiblity(inverse, collapsed)
     return DataBinding.PolicyBoolToSelfNotHitVisiblity
   end
 end
+
 function DataBinding:EnumToVisibility()
   return DataBinding.PolicyEnumToVisibility
 end
+
 function DataBinding.FormatNumToText(matchTable)
   return {
     Converter = DataBinding.ConvertFormatNumToString,
@@ -439,6 +499,7 @@ function DataBinding.FormatNumToText(matchTable)
     OnTargetChanged = nil
   }
 end
+
 function DataBinding.StringToImageAutoSize(async)
   if nil == async or true == async then
     return {
@@ -456,6 +517,7 @@ function DataBinding.StringToImageAutoSize(async)
     }
   end
 end
+
 DataBinding.PolicySetTextColor = {
   Converter = nil,
   ConverterParam = nil,
@@ -744,22 +806,28 @@ DataBinding.PolicyDirectImageVertexColor = {
   OnSourceChanged = DataBinding.UpdateImageVertexColor,
   OnTargetChanged = nil
 }
+
 function DataBinding.DirectText()
   return DataBinding.PolicyDirectText
 end
+
 function DataBinding.BoolToText(truTxt, flsTxt)
   DataBinding.PolicyBoolToText.ConverterParam = {truTxt, flsTxt}
   return DataBinding.PolicyBoolToText
 end
+
 function DataBinding.SetTextColor()
   return DataBinding.PolicySetTextColor
 end
+
 function DataBinding.SetImageStrColor()
   return DataBinding.PolicySetImageColorByStr
 end
+
 function DataBinding.SetLineHeightPercentage()
   return DataBinding.PolicySetLineHeightPercentage
 end
+
 function DataBinding.DirectImagePath(async)
   if nil == async or true == async then
     return DataBinding.PolicyDirectImageAsync
@@ -767,6 +835,7 @@ function DataBinding.DirectImagePath(async)
     return DataBinding.PolicyDirectImageSync
   end
 end
+
 function DataBinding.DirectImageBrush(bAsync, bMatchSize)
   return {
     Converter = function(source, converterParam)
@@ -777,96 +846,127 @@ function DataBinding.DirectImageBrush(bAsync, bMatchSize)
     OnTargetChanged = nil
   }
 end
+
 function DataBinding.DirectImageTexture()
   return DataBinding.PolicyDirectImageTexture
 end
+
 function DataBinding.DirectImageTintColor()
   return DataBinding.PolicyDirectImageTintColor
 end
+
 function DataBinding.DirectImageColor()
   return DataBinding.PolicyDirectImageColor
 end
+
 function DataBinding.NumToText()
   return DataBinding.PolicyNumToText
 end
+
 function DataBinding.DirectAnchors()
   return DataBinding.PolicyDirectAnchors
 end
+
 function DataBinding.DirectSize()
   return DataBinding.PolicyDirectSize
 end
+
 function DataBinding.AbsoluteToLocalSize()
   return DataBinding.PolicyAbsoluteToLocalSize
 end
+
 function DataBinding.DirectPosition()
   return DataBinding.PolicyDirectPosition
 end
+
 function DataBinding.DirectCanvasPanelSlotPositionX()
   return DataBinding.PolicyDirectCanvasPanelSlotPositionX
 end
+
 function DataBinding.DirectAlignment()
   return DataBinding.PolicyDirectAlignment
 end
+
 function DataBinding.DirectAutoSize()
   return DataBinding.PolicyDirectAutoSize
 end
+
 function DataBinding.DirectOffsets()
   return DataBinding.PolicyDirectOffsets
 end
+
 function DataBinding.DirectHorizontalBoxSlotPadding()
   return DataBinding.PolicyDirectHorizontalBoxSlotPadding
 end
+
 function DataBinding.DirectHorizontalBoxSlotSize()
   return DataBinding.PolicyDirectHorizontalBoxSlotSize
 end
+
 function DataBinding.NumToImagePercent()
   return DataBinding.PolicyNumToImagePercent
 end
+
 function DataBinding.NumToWidgetSwitcherActiveIndex()
   return DataBinding.PolicyNumToWidgetSwitcherActiveIndex
 end
+
 function DataBinding.NumToProgressBarPercent()
   return DataBinding.PolicyNumToProgressBarPercent
 end
+
 function DataBinding.DirectProgressBarColor()
   return DataBinding.PolicyDirectProgressBarColor
 end
+
 function DataBinding.NumToSliderValue()
   return DataBinding.PolicyNumToSliderValue
 end
+
 function DataBinding.ProgressBarImagePath()
   return DataBinding.PolicyProgressBarImagePath
 end
+
 function DataBinding.ProgressBarBackgroundImagePath()
   return DataBinding.PolicyProgressBarBackgroundImagePath
 end
+
 function DataBinding.DirectButtonClickMethod()
   return DataBinding.PolicyUpdateButtonClickMethod
 end
+
 function DataBinding.DirectButtonTouchMethod()
   return DataBinding.PolicyUpdateButtonTouchMethod
 end
+
 function DataBinding.DirectButtonPressMethod()
   return DataBinding.PolicyUpdateButtonPressMethod
 end
+
 function DataBinding.SubViewBinding()
   return DataBinding.PolicySubViewBinding
 end
+
 function DataBinding.SetRenderOpacity()
   return DataBinding.PolicySetRenderOpacity
 end
+
 function DataBinding.SetEnable()
   return DataBinding.PolicySetEnable
 end
+
 function DataBinding.SetDisable()
   return DataBinding.PolicySetDisable
 end
+
 function DataBinding.SetCheckStatus()
   return DataBinding.PolicySetCheckStatus
 end
+
 function DataBinding.SetIsChecked()
   return DataBinding.PolicySetIsChecked
 end
+
 function DataBinding.NumToWidth(valueMin, valueMax, widthMin, widthMax)
   return {
     Converter = DataBinding.ConvertNumRemap,
@@ -880,27 +980,35 @@ function DataBinding.NumToWidth(valueMin, valueMax, widthMin, widthMax)
     OnTargetChanged = nil
   }
 end
+
 function DataBinding.DirectWidth()
   return DataBinding.PolicyDirectWidth
 end
+
 function DataBinding.SetWidgetRotation()
   return DataBinding.PolicyWidgetRotation
 end
+
 function DataBinding.DirectTranslation()
   return DataBinding.PolicyDirectTranslation
 end
+
 function DataBinding.DirectScale()
   return DataBinding.PolicyDirectScale
 end
+
 function DataBinding.DirectAngle()
   return DataBinding.PolicyDirectAngle
 end
+
 function DataBinding.DirectAlpha()
   return DataBinding.PolicyDirectAlpha
 end
+
 function DataBinding.DirectZOrder()
   return DataBinding.PolicyDirectZOrder
 end
+
 function DataBinding.PlayAnimationHandler(target, convertedValue, sourceValue)
   local animName, loop, mode = table.unpack(convertedValue)
   if nil == target or nil == target[animName] then
@@ -919,9 +1027,11 @@ function DataBinding.PlayAnimationHandler(target, convertedValue, sourceValue)
     target:PlayAnimation(anim, 0, loop, mode or EUMGSequencePlayMode.Forward, 1)
   end
 end
+
 function DataBinding.ConvertToAnimName(source, param)
   return param
 end
+
 function DataBinding.ActivePlayAnimation(animName, loop, mode)
   return {
     Converter = DataBinding.ConvertToAnimName,
@@ -934,9 +1044,11 @@ function DataBinding.ActivePlayAnimation(animName, loop, mode)
     OnTargetChanged = nil
   }
 end
+
 function DataBinding.ConvertSourceToAnimName(source, param)
   return {source, param}
 end
+
 function DataBinding.PlayAnimationWithSource(loop)
   return {
     Converter = DataBinding.ConvertSourceToAnimName,
@@ -945,4 +1057,5 @@ function DataBinding.PlayAnimationWithSource(loop)
     OnTargetChanged = nil
   }
 end
+
 return DataBinding

@@ -1,0 +1,26 @@
+[
+  {
+    "ID": 1,
+    "ArrCost": [],
+    "DefaultOpen": true,
+    "LevelReq": 0
+  },
+  {
+    "ID": 2,
+    "ArrCost": [],
+    "DefaultOpen": true,
+    "LevelReq": 0
+  },
+  {
+    "ID": 3,
+    "ArrCost": [],
+    "DefaultOpen": true,
+    "LevelReq": 0
+  },
+  {
+    "ID": 4,
+    "ArrCost": [],
+    "DefaultOpen": true,
+    "LevelReq": 0
+  }
+]

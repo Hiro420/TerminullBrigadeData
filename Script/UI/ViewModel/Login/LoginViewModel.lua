@@ -33,6 +33,7 @@ LoginViewModel.propertyBindings = {
   IsShowLoginPanel = true,
   IsShowNicknamePanel = false
 }
+
 function LoginViewModel:OnInit()
   self.Super:OnInit()
   EventSystem.AddListenerNew(EventDef.Login.GetServerList, self, self.BindOnGetServerList)
@@ -46,6 +47,7 @@ function LoginViewModel:OnInit()
   DataMgr.SetDistributionChannel(self.DistributionChannel)
   UE.URGGameplayLibrary.TriggerOnClientInitialized(self)
 end
+
 function LoginViewModel:BindOnUIChangeDisplayState(IsDisplay)
   if not IsDisplay then
     local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
@@ -54,6 +56,7 @@ function LoginViewModel:BindOnUIChangeDisplayState(IsDisplay)
     end
   end
 end
+
 function LoginViewModel:RegisterPropertyChanged(BindingTable, View)
   self.Super.RegisterPropertyChanged(self, BindingTable, View)
   EventSystem.AddListener(self, EventDef.Login.OnLoginProtocolSuccess, self.BindOnLoginProtocolSuccess)
@@ -64,6 +67,7 @@ function LoginViewModel:RegisterPropertyChanged(BindingTable, View)
     UIManager.DisplayDelegate:Bind(GameInstance, LoginViewModel.BindOnUIChangeDisplayState)
   end
 end
+
 function LoginViewModel:UnRegisterPropertyChanged(BindingTable, View)
   self.Super.UnRegisterPropertyChanged(self, BindingTable, View)
   EventSystem.RemoveListener(EventDef.Login.OnLoginProtocolSuccess, self.BindOnLoginProtocolSuccess, self)
@@ -73,19 +77,28 @@ function LoginViewModel:UnRegisterPropertyChanged(BindingTable, View)
     UIManager.DisplayDelegate:Unbind()
   end
 end
+
 function LoginViewModel:OnShutdown()
   EventSystem.RemoveListenerNew(EventDef.Login.GetServerList, self, self.BindOnGetServerList)
   EventSystem.RemoveListener(EventDef.Login.GetServerListFailed, self.BindOnGetServerListFailed, self)
   self:UnRegisterPropertyChanged()
   self.Super:OnShutdown()
 end
+
 function LoginViewModel:ParseCommandLineParams()
   local CmdLine = UE.UKismetSystemLibrary.GetCommandLine()
   print("CmdLine", CmdLine)
   local Tokens, Switches, Params = UE.UKismetSystemLibrary.ParseCommandLine(CmdLine, nil, nil, nil)
   local DistributionChannel = Params:Find("dist_channel")
   print("\232\142\183\229\143\150\230\184\184\230\136\143\229\144\175\229\138\168\230\184\160\233\129\147", DistributionChannel)
-  DistributionChannel = DistributionChannel or LogicLobby.DistributionChannelList.Normal
+  if not DistributionChannel then
+    if UE.RGUtil and UE.RGUtil.IsEditor() then
+      DistributionChannel = LogicLobby.DistributionChannelList.Normal
+    else
+      UE.UKismetSystemLibrary.QuitGame(GameInstance, UE.UGameplayStatics.GetPlayerController(GameInstance, 0), UE.EQuitPreference.Quit, false)
+      return
+    end
+  end
   local LobbyServerID = Params:Find("lobby_server_id")
   if not LobbyServerID then
     LobbyServerID = "30001"
@@ -109,6 +122,7 @@ function LoginViewModel:ParseCommandLineParams()
   end
   return tonumber(DistributionChannel), LobbyServerID
 end
+
 function LoginViewModel:ExcuteLogicByDistributionChannel()
   local Logic = {
     [LogicLobby.DistributionChannelList.Normal] = function()
@@ -116,7 +130,7 @@ function LoginViewModel:ExcuteLogicByDistributionChannel()
       local View = self:GetFirstView()
       if LoginData:GetIsLoginByDistributionChannel() then
         self.AccountName = DataMgr.GetAccountName()
-        View:ChangeLoginPanelStep(ELoginStep.LoggedInWaitClick)
+        View:ChangeLoginPanelStep(ELoginStep.RegionClick)
       else
         View:ChangeLoginPanelStep(ELoginStep.NotLogin)
       end
@@ -125,7 +139,7 @@ function LoginViewModel:ExcuteLogicByDistributionChannel()
       print("ExecuteWeGameLogic")
       local View = self:GetFirstView()
       if LoginData:GetIsLoginByDistributionChannel() then
-        View:ChangeLoginPanelStep(ELoginStep.LoggedInWaitClick)
+        View:ChangeLoginPanelStep(ELoginStep.RegionClick)
       else
         View:ChangeLoginPanelStep(ELoginStep.NotLoginAndNotShowAccountNameInputPanel)
         local OnlineIdentitySystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.UOnlineIdentitySystem:StaticClass())
@@ -170,12 +184,20 @@ function LoginViewModel:ExcuteLogicByDistributionChannel()
           }
           print("[LIPass] ExecuteLIPassLogic Offical Packag region", ComplianceResult.Region, " AdultStatus", ComplianceResult.AdultStatus)
           IsChangeToWaitClick = true
+          local EncyptDataResult, EncryptedData = RGSailSDKSubsystem:GetEncyptData()
+          if EncyptDataResult then
+            local Result = UE.UINTLSDKAPI.SetAuthEncryptData(EncryptedData, true)
+            print("[LIPass] ExecuteLIPassLogic Offical Package SetAuthEncryptData Result:", Result)
+            if Result then
+              UE.UINTLSDKAPI.AutoLogin()
+            end
+          end
         end
         self:OnLIPassLoginResult(LipassResult, ComplianceResult)
       end
       if LoginData:GetIsLoginByDistributionChannel() then
         if not IsChangeToWaitClick then
-          View:ChangeLoginPanelStep(ELoginStep.LoggedInWaitClick)
+          View:ChangeLoginPanelStep(ELoginStep.RegionClick)
         end
       else
         View:ChangeLoginPanelStep(ELoginStep.NotLoginAndNotShowAccountNameInputPanel)
@@ -202,6 +224,7 @@ function LoginViewModel:ExcuteLogicByDistributionChannel()
     TargetFunc()
   end
 end
+
 function OpenMurSurvey()
   local INTLSDK = UE.UINTLSDKAPI
   if INTLSDK then
@@ -212,8 +235,8 @@ function OpenMurSurvey()
     end
   end
 end
+
 function LoginViewModel:ExecuteLIPassLogin()
-  UE.ULevelInfiniteAPI.SetUIRoot(UIMgr.UIRoot.RootPanel)
   print("[LIPass] UINTLSDKAPI call LoginChannelWithLIPASS")
   if UE.URGBlueprintLibrary.IsPlatformConsole() then
     local PlatformName = UE.URGBlueprintLibrary.GetPlatformName()
@@ -244,12 +267,14 @@ function LoginViewModel:ExecuteLIPassLogin()
     UE.ULevelInfiniteAPI.LoginChannelWithLIPASS(UE.EINTLLoginChannel.kChannelSteam)
   end
 end
+
 local METHODID_INTL_AUTH_AUTOLOGIN = 101
 local METHODID_LIPASS_AUTH_AUTOLOGIN = 163
 local METHODID_LIPASS_AUTH_LOGIN = 164
 local METHODID_LIPASS_AUTH_LOGIN_WITH_CHANNEL = 178
 local METHODID_LIPASS_AUTH_LOGIN_WITH_THIRD_CHANNEL = 172
 local METHODID_LIPASS_LOGIN_ENTER_GAME = 13100
+
 function LoginViewModel:OnLIPassEvent(evt)
   print("[LIPASS] OnLIPassEvent", evt.EventType, evt.ExtraJson)
   if evt.EventType == UE.ELIEventType.LIP_PANEL_CLOSE then
@@ -261,6 +286,7 @@ function LoginViewModel:OnLIPassEvent(evt)
     end
   end
 end
+
 function LoginViewModel:OnComplianceQueryUserInfo(ComplianceResult)
   local result = self.LipassAuthResult
   print("[LIPASS] OnComplianceQueryUserInfo", "OpenID", result.OpenID, "Token", result.Token, "ChannelID", result.ChannelID, "Region", ComplianceResult.Region, "AdultStatus", ComplianceResult.AdultStatus)
@@ -295,9 +321,11 @@ function LoginViewModel:OnComplianceQueryUserInfo(ComplianceResult)
   print("[LIPass] loginlipass params ", RapidJsonEncode(LoginViewModel.LIPassLoginParam))
   LoginViewModel:CheckLoginSuccessNextStep()
 end
+
 local str_isempty = function(s)
   return nil == s or "" == s
 end
+
 function LoginViewModel:CheckLoginSuccessNextStep()
   if UE.URGBlueprintLibrary.IsPlatformConsole() then
     local RGPlayerSessionSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGPlayerSessionSubsystem:StaticClass())
@@ -327,8 +355,11 @@ function LoginViewModel:CheckLoginSuccessNextStep()
   end
   local LoginViewModel = UIModelMgr:Get("LoginViewModel")
   local View = LoginViewModel:GetFirstView()
-  View:ChangeLoginPanelStep(ELoginStep.LoggedInWaitClick)
+  if View then
+    View:ChangeLoginPanelStep(ELoginStep.RegionClick)
+  end
 end
+
 function LoginViewModel:OnLIPassLoginResult(result, ComplianceResult)
   if result.MethodId == METHODID_LIPASS_LOGIN_ENTER_GAME then
     print("[LIPass] OnAuthResult: ", "OpenID", result.OpenID, "Token", result.Token, "TokenExpireTime", result.TokenExpireTime, "FirstLogin", "UserName", result.UserName, result.FirstLogin, "MethodId", result.MethodId, "RetCode", result.RetCode, "RetMsg", result.RetMsg, "ThirdCode", result.ThirdCode, "ThirdMsg", result.ThirdMsg, "ExtraJson", result.ExtraJson)
@@ -356,6 +387,7 @@ function LoginViewModel:OnLIPassLoginResult(result, ComplianceResult)
     end
   end
 end
+
 function LoginViewModel:ProcessPlatformError(result)
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
   if not WaveWindowManager then
@@ -382,6 +414,7 @@ function LoginViewModel:ProcessPlatformError(result)
     end
   })
 end
+
 function LoginViewModel:BindOnWeGameLoginComplete(bWasSuccessful, UserId, AuthToken, Error)
   print("BindOnWeGameLoginComplete")
   if bWasSuccessful then
@@ -389,6 +422,8 @@ function LoginViewModel:BindOnWeGameLoginComplete(bWasSuccessful, UserId, AuthTo
     local UserIdStr = UE.UOnlineIdentitySystem.UniqueNetIdReplToString(UserId)
     print("WeGameLoginComplete success, UserId:", UserIdStr, "Token:", AuthToken)
     local ChannelID = UE.URGLogLibrary.GetChannelID(GameInstance)
+    local DistID = UE.URGLogLibrary.GetWegameDistributeID(GameInstance)
+    print("WeGame DistributionChannelID", DistID)
     PandoraHandler.SetLoginChannel(ChannelID)
     UE.URGGameplayLibrary.TriggerOnClientLoginSuccess(GameInstance, "Wegame", UserIdStr, AuthToken)
     local LoginViewModel = UIModelMgr:Get("LoginViewModel")
@@ -397,15 +432,17 @@ function LoginViewModel:BindOnWeGameLoginComplete(bWasSuccessful, UserId, AuthTo
       deviceInfo = DeviceInfo,
       sessionTicket = AuthToken,
       uid = UserIdStr,
-      channelID = ChannelID
+      channelID = ChannelID,
+      distributionChannelID = DistID
     }
     local FirstView = LoginViewModel:GetFirstView()
-    FirstView:ChangeLoginPanelStep(ELoginStep.LoggedInWaitClick)
+    FirstView:ChangeLoginPanelStep(ELoginStep.RegionClick)
   else
     print("WeGameLoginComplete fail, ", "ErrorMessage:", Error)
     LoginViewModel:ShowWegameLoginFailWaveWindow(101003, {Error})
   end
 end
+
 function LoginViewModel:ShowWegameLoginFailWaveWindow(WaveId, Params)
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
   if not WaveWindowManager then
@@ -420,6 +457,7 @@ function LoginViewModel:ShowWegameLoginFailWaveWindow(WaveId, Params)
     end
   })
 end
+
 function LoginViewModel:ExecuteWeGameLogin()
   if self.DistributionChannel ~= LogicLobby.DistributionChannelList.WeGame then
     return
@@ -437,6 +475,7 @@ function LoginViewModel:ExecuteWeGameLogin()
     print("LoginViewModel:ExecuteWeGameLogin OnlineIdentitySystem login fail!")
   end
 end
+
 function LoginViewModel.BindOnCGMovieStop(MovieId)
   print("LoginViewModel:BindOnCGMovieStop", MovieId)
   local Settings = UE.URGLobbySettings.GetLobbySettings()
@@ -462,6 +501,7 @@ function LoginViewModel.BindOnCGMovieStop(MovieId)
     end)
   end
 end
+
 function LoginViewModel:BindOnGetServerList(data)
   LoginData:SetIsServerListInited(true)
   local DevelopServerIndex = 0
@@ -483,12 +523,14 @@ function LoginViewModel:BindOnGetServerList(data)
     View:UpdateLastSelectedServer(HttpService.LastSelectedServerName, DevelopServerIndex, self.IsForceServerId)
   end
 end
+
 function LoginViewModel:BindOnGetServerListFailed()
   local View = self:GetFirstView()
   if View then
     View:ShowRequestServerListFailed()
   end
 end
+
 function LoginViewModel:BindOnLoginProtocolSuccess()
   print("LoginFlow", "LoginViewModel:BindOnLoginProtocolSuccess - \229\188\128\229\167\139\230\139\137\229\143\150\232\167\146\232\137\178\228\191\161\230\129\175")
   LogicTeam.UpdateRegionPing()
@@ -500,6 +542,7 @@ function LoginViewModel:BindOnLoginProtocolSuccess()
     LoginViewModel:OnGetRoleError(ErrorMsg)
   end)
 end
+
 function LoginViewModel:Login(UserName)
   UserName = tostring(UserName)
   UE.UAsyncLoadingScreenLibrary.ResetLoadingScreenType("LoginToLobby")
@@ -507,7 +550,7 @@ function LoginViewModel:Login(UserName)
   if self:CheckUserNameIsValid(self.AccountName) then
     DataMgr.SetAccountName(self.AccountName)
     local FirstView = self:GetFirstView()
-    FirstView:ChangeLoginPanelStep(ELoginStep.LoggedInWaitClick)
+    FirstView:ChangeLoginPanelStep(ELoginStep.RegionClick)
     PandoraHandler.SetLoginChannel("Wooduan")
     UE.URGGameplayLibrary.TriggerOnClientLoginSuccess(GameInstance, "Wooduan", UserName, "")
     LoginData:SetIsLoginByDistributionChannel(true)
@@ -515,6 +558,7 @@ function LoginViewModel:Login(UserName)
     print("LoginViewModel:ChangeLoggedInWaitClickStepToNextStep UserName is Invalid!")
   end
 end
+
 function LoginViewModel:SetLastSelectedServer(selectedItem)
   if not UE.UKismetStringLibrary.IsEmpty(selectedItem) then
     LoginData:SaveLastSelectServeName(selectedItem)
@@ -525,6 +569,7 @@ function LoginViewModel:SetLastSelectedServer(selectedItem)
     UE.URGLogLibrary.TriggerClientLogEvent(GameInstance, UE.ERGClientLogEvent.Activation)
   end
 end
+
 function LoginViewModel:SetNicknameButtonClicked(nickname)
   local nickname = tostring(nickname)
   if not self:CheckNickNameIsVaild(nickname) then
@@ -534,6 +579,7 @@ function LoginViewModel:SetNicknameButtonClicked(nickname)
   local FirstView = self:GetFirstView()
   self:StartSetNickName()
 end
+
 function LoginViewModel:StartSetNickName()
   local FirstView = self:GetFirstView()
   local NickName = FirstView:GetInputNickName()
@@ -569,6 +615,7 @@ function LoginViewModel:StartSetNickName()
     end
   })
 end
+
 function LoginViewModel:OnFilterProfanity(bWasSuccessful, OutputMessage)
   print("LoginViewModel:OnFilterProfanity123", bWasSuccessful, OutputMessage)
   if not bWasSuccessful then
@@ -586,6 +633,7 @@ function LoginViewModel:OnFilterProfanity(bWasSuccessful, OutputMessage)
     end
   end
 end
+
 function LoginViewModel:ChangeLoggedInWaitClickStepToNextStep()
   local Logic = {
     [LogicLobby.DistributionChannelList.Normal] = function(self)
@@ -625,8 +673,9 @@ function LoginViewModel:ChangeLoggedInWaitClickStepToNextStep()
     TargetFunc(self)
   end
 end
+
 function LoginViewModel:ConnectWSGate()
-  print("LoginFlow", "LoginViewModel:ConnectWSGate - \229\188\128\229\167\139\232\191\158\230\142\165WebSocket")
+  printShipping("LoginFlow", "LoginViewModel:ConnectWSGate - \229\188\128\229\167\139\232\191\158\230\142\165WebSocket")
   local GateService = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.UWSGateService:StaticClass())
   local LoginViewModel = UIModelMgr:Get("LoginViewModel")
   local ServerName = HttpService.LastSelectedServerName
@@ -636,6 +685,7 @@ function LoginViewModel:ConnectWSGate()
     GateService:Connect(TargetServerInfo.ip, TargetServerInfo.port, HttpCommunication.GetToken(), TargetServerInfo.TLS)
   end
 end
+
 function LoginViewModel:CheckUserNameIsValid(userName)
   userName = tostring(userName)
   local WaveWindowManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGWaveWindowManager:StaticClass())
@@ -669,6 +719,7 @@ function LoginViewModel:CheckUserNameIsValid(userName)
   end
   return false
 end
+
 function LoginViewModel:CheckNickNameIsVaild(nickname)
   local Len = self:CalcNickNameLen(nickname)
   print("LoginView:CheckNickNameIsVaild Len:", Len)
@@ -692,6 +743,7 @@ function LoginViewModel:CheckNickNameIsVaild(nickname)
   end
   return true
 end
+
 function LoginViewModel:ShowNickNameErrorTip(ErrorCode)
   local TargetId = tonumber(ErrorCode)
   local Params = {}
@@ -705,9 +757,11 @@ function LoginViewModel:ShowNickNameErrorTip(ErrorCode)
   end
   ShowWaveWindowWithConsoleCheck(TargetId, Params, ErrorCode)
 end
+
 function LoginViewModel:CalcNickNameLen(NickNameParam)
   return UE.URGBlueprintLibrary.GetNickNameLength(NickNameParam)
 end
+
 function LoginViewModel:CheckSetNickName(NickName)
   print("LoginViewModel:CheckSetNickName", NickName)
   if nil == NickName or "" == NickName or NickName == ServerDefaultNickName then
@@ -732,9 +786,15 @@ function LoginViewModel:CheckSetNickName(NickName)
       end
     end
   else
+    local LoginViewModel = UIModelMgr:Get("LoginViewModel")
+    local FirstView = LoginViewModel:GetFirstView()
+    if FirstView then
+      FirstView:DelayChangeToLoggedInWaitClickStep()
+    end
     self:InitAccountInfo()
   end
 end
+
 function LoginViewModel:CheckNeedShowKickOutTip()
   if WSCommunication.bIskickOut then
     WSCommunication.bIskickOut = false
@@ -756,10 +816,11 @@ function LoginViewModel:CheckNeedShowKickOutTip()
     end
   end
 end
+
 function LoginViewModel:InitAccountInfo()
   self:RequestAccountInfoToServer()
-  self:ConnectWSGate()
 end
+
 function LoginViewModel:OnGetRoleSuccess(PlayerInfoList)
   print("OnGetRoleSuccess", RapidJsonEncode(PlayerInfoList))
   for i, SingleInfo in ipairs(PlayerInfoList) do
@@ -770,12 +831,21 @@ function LoginViewModel:OnGetRoleSuccess(PlayerInfoList)
     end
   end
 end
+
 function LoginViewModel:OnGetRoleError(ErrorMessage)
   print("OnGetRoleFail", ErrorMessage.ErrorMessage)
 end
+
 function LoginViewModel:RequestAccountInfoToServer()
-  print("LoginFlow", "LoginViewModel:RequestAccountInfoToServer - \229\188\128\229\167\139\230\139\137\229\143\150\232\139\177\233\155\132\230\149\176\230\141\174")
+  print("LoginFlow", "LoginViewModel:RequestAccountInfoToServer - \229\188\128\229\167\139\230\139\137\229\143\150\231\179\187\231\187\159\229\188\128\229\133\179\230\149\176\230\141\174")
+  local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
+  if SystemOpenMgr then
+    SystemOpenMgr:RequestSystemSwitchsInitData(self.ConnectWSGate)
+  else
+    printError("LoginViewModel:RequestAccountInfoToServer() - require SystemOpenMgr is nil!!!")
+  end
 end
+
 function LoginViewModel:PullCurrencyList()
   print("LoginFlow", "LoginViewModel:PullCurrencyList - \229\188\128\229\167\139\230\139\137\229\143\150\231\142\169\229\174\182\233\146\177\229\140\133\230\149\176\230\141\174")
   local CurrencyList = {}
@@ -797,6 +867,7 @@ function LoginViewModel:PullCurrencyList()
     LoginViewModel.OnPullCurrencyListFail
   })
 end
+
 function LoginViewModel:PullPropBackpack()
   print("LoginFlow", "LoginViewModel:PullPropBackpack - \229\188\128\229\167\139\230\139\137\229\143\150\231\142\169\229\174\182\232\131\140\229\140\133\230\149\176\230\141\174")
   HttpCommunication.Request("resource/pullproppack", {}, {
@@ -827,6 +898,7 @@ function LoginViewModel:PullPropBackpack()
     end
   })
 end
+
 function LoginViewModel:OnPullCurrencyListSuccess(JsonResponse)
   print("OnPullCurrencyListSuccess", JsonResponse.Content)
   local JsonTable = rapidjson.decode(JsonResponse.Content)
@@ -841,9 +913,11 @@ function LoginViewModel:OnPullCurrencyListSuccess(JsonResponse)
   end
   DataMgr.SetOutsideCurrencyList(CurrencyList)
 end
+
 function LoginViewModel:OnPullCurrencyListFail(ErrorMessage)
   print("OnPullCurrencyListFail")
 end
+
 function LoginViewModel:OnAnnouncementButtonClicked()
   if not PandoraData:HasApp() then
     ShowWaveWindow(1140, {})
@@ -852,13 +926,24 @@ function LoginViewModel:OnAnnouncementButtonClicked()
   local PandorSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGPandoraSubsystem:StaticClass())
   PandorSubsystem:OpenApp(PandoraData:GetAnnounceAppId(), "")
 end
+
 function LoginViewModel:OnExitAccountButtonClicked()
   print("OnExitAccountButtonClicked")
   local FirstView = self:GetFirstView()
   FirstView:ChangeLoginPanelStep(ELoginStep.NotLogin)
   LoginData:SetIsLoginByDistributionChannel(false)
 end
+
 function LoginViewModel:OnAgeReminderButtonClicked()
   UIMgr:Show(ViewID.UI_AgeReminder)
 end
+
+function LoginViewModel:OnCloseButtonClicked()
+  print("OnExitAccountButtonClicked")
+  local FirstView = self:GetFirstView()
+  if FirstView then
+    FirstView:ChangeLoginPanelStep(ELoginStep.LoggedInWaitClick)
+  end
+end
+
 return LoginViewModel

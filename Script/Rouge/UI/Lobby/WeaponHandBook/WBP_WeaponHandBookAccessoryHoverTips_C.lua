@@ -1,8 +1,11 @@
 local WBP_WeaponHandBookAccessoryHoverTips_C = UnLua.Class()
+
 function WBP_WeaponHandBookAccessoryHoverTips_C:Construct()
 end
+
 function WBP_WeaponHandBookAccessoryHoverTips_C:Destruct()
 end
+
 function WBP_WeaponHandBookAccessoryHoverTips_C:InitInfo(AccessoryId, Rare)
   local Item = LogicWeaponHandBook:GetItemDataByRowName(tostring(AccessoryId))
   if Item then
@@ -17,4 +20,5 @@ function WBP_WeaponHandBookAccessoryHoverTips_C:InitInfo(AccessoryId, Rare)
   end
   self.WBP_WeaponHandBookParts:Init(AccessoryId, Rare)
 end
+
 return WBP_WeaponHandBookAccessoryHoverTips_C

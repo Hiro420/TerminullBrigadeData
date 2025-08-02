@@ -11,17 +11,22 @@ local IsUseFreeRevival = NSLOCTEXT("WBP_DyingRevival", "IsUseFreeRevival", "\230
 local UseFreeRevival = NSLOCTEXT("WBP_DyingRevival", "UseFreeRevival", "\229\133\141\232\180\185\229\164\141\230\180\187(+{0}\229\136\134\233\146\159)")
 local RevivalEvent = "Revival"
 local GiveUpEvent = "GiveUpRevival"
+local IntervalTime = 1.0
+
 function WBP_DyingRevival:Construct()
   self.IsAllDying = false
+  self.SendTime = 0
   ListenObjectMessage(nil, GMP.MSG_Game_PlayerRevivalSuccess, self, self.Bind_MSG_Game_PlayerRevivalSuccess)
   ListenObjectMessage(nil, GMP.MSG_Game_PlayerRevivalError, self, self.Bind_MSG_Game_PlayerRevivalError)
   ListenObjectMessage(nil, GMP.MSG_Game_AllPlayerDying, self, self.Bind_MSG_Game_AllPlayerDying)
 end
+
 function WBP_DyingRevival:Destruct()
   UnListenObjectMessage(GMP.MSG_Game_PlayerRevivalSuccess, self)
   UnListenObjectMessage(GMP.MSG_Game_PlayerRevivalError, self)
   UnListenObjectMessage(GMP.MSG_Game_AllPlayerDying, self)
 end
+
 function WBP_DyingRevival:BindKey()
   if not IsListeningForInputAction(self, RevivalEvent) then
     ListenForInputAction(RevivalEvent, UE.EInputEvent.IE_Pressed, true, {
@@ -36,6 +41,7 @@ function WBP_DyingRevival:BindKey()
     })
   end
 end
+
 function WBP_DyingRevival:UnBindKey()
   if IsListeningForInputAction(self, RevivalEvent) then
     StopListeningForInputAction(self, RevivalEvent, UE.EInputEvent.IE_Pressed)
@@ -44,6 +50,7 @@ function WBP_DyingRevival:UnBindKey()
     StopListeningForInputAction(self, GiveUpEvent, UE.EInputEvent.IE_Pressed)
   end
 end
+
 function WBP_DyingRevival:ListenForRevivalEvent()
   local CanRevival = self:CheckCanRevival()
   if not CanRevival or self.IsHideInteract then
@@ -51,15 +58,24 @@ function WBP_DyingRevival:ListenForRevivalEvent()
     return
   end
   print("WBP_DyingRevival RequestRevival")
-  UE.URGLevelLibrary.RequestRevival(self, self:GetUserId())
+  local CurTime = GetLocalTimestampByServerTimeZone()
+  if CurTime - self.SendTime >= IntervalTime then
+    self.SendTime = CurTime
+    UE.URGLevelLibrary.RequestRevival(self, self:GetUserId())
+  end
 end
+
 function WBP_DyingRevival:ListenForGiveUpEvent()
   if self.IsHideInteract then
     return
   end
   print("WBP_DyingRevival CancelRequestRevival")
   if self:CheckIsNormalMode() then
-    UE.URGLevelLibrary.RequestFreeRevival(self, self:GetUserId())
+    local CurTime = GetLocalTimestampByServerTimeZone()
+    if CurTime - self.SendTime >= IntervalTime then
+      self.SendTime = CurTime
+      UE.URGLevelLibrary.RequestFreeRevival(self, self:GetUserId())
+    end
   elseif self.IsAllDying then
     if self:CheckIsTeam() then
       UpdateVisibility(self.Overlay_GiveUpRevival, false)
@@ -67,17 +83,24 @@ function WBP_DyingRevival:ListenForGiveUpEvent()
       UpdateVisibility(self.HBox_Expand, false)
       self.IsHideInteract = true
     end
-    UE.URGLevelLibrary.CancelRequestRevival(self, self:GetUserId())
+    local CurTime = GetLocalTimestampByServerTimeZone()
+    if CurTime - self.SendTime >= IntervalTime then
+      self.SendTime = CurTime
+      UE.URGLevelLibrary.CancelRequestRevival(self, self:GetUserId())
+    end
   end
 end
+
 function WBP_DyingRevival:Bind_MSG_Game_PlayerRevivalSuccess(UserId, RevivalCount, RevivalCoinNum)
   if self:GetUserId() == UserId then
     UpdateVisibility(self, false)
   end
   self:UpdateWaitRescureText()
 end
+
 function WBP_DyingRevival:Bind_MSG_Game_PlayerRevivalError()
 end
+
 function WBP_DyingRevival:Bind_MSG_Game_AllPlayerDying(IsAllDying)
   self.IsAllDying = IsAllDying
   if IsAllDying then
@@ -92,6 +115,7 @@ function WBP_DyingRevival:Bind_MSG_Game_AllPlayerDying(IsAllDying)
     self:SetDyingTextIsSingle(true)
   end
 end
+
 function WBP_DyingRevival:ShowRevivalInfo()
   self.IsHideInteract = false
   self.Txt_CountDown:SetText("")
@@ -146,6 +170,7 @@ function WBP_DyingRevival:ShowRevivalInfo()
   end
   self:BindKey()
 end
+
 function WBP_DyingRevival:StartCountDown()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.RemainTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.RemainTimer)
@@ -158,12 +183,14 @@ function WBP_DyingRevival:StartCountDown()
   }, 1.0, true)
   self:SetCountDownShow(true)
 end
+
 function WBP_DyingRevival:StopCountDown()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.RemainTimer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.RemainTimer)
   end
   self:SetCountDownShow(false)
 end
+
 function WBP_DyingRevival:UpdateCountDown()
   if self.CountDownTime < 0 then
     return
@@ -174,25 +201,32 @@ function WBP_DyingRevival:UpdateCountDown()
   end
   self.CountDownTime = self.CountDownTime - 1
 end
+
 function WBP_DyingRevival:UpdateWaitRescureText()
   UpdateVisibility(self.Txt_WaitRescure, self:CheckIsTeam() and not self:CheckCanRevival())
 end
+
 function WBP_DyingRevival:UpdateRevivalInteract()
   UpdateVisibility(self.HBox_Expand, true)
 end
+
 function WBP_DyingRevival:SetDyingTextIsSingle(IsSingle)
   self.Txt_Death:SetText(IsSingle and SingleDyingTxt or AllDyingTxt)
 end
+
 function WBP_DyingRevival:SetDyingInfo(RevivalTime, Expand)
   self.Txt_RemainTimeNum:SetText(RevivalTime)
   self.Txt_ExpandNum:SetText(Expand)
 end
+
 function WBP_DyingRevival:SetOwnText(RevivalNum)
   self.Txt_OwnNum:SetText(RevivalNum)
 end
+
 function WBP_DyingRevival:SetCountDownShow(IsShow)
   UpdateVisibility(self.Txt_CountDown, IsShow)
 end
+
 function WBP_DyingRevival:ShowCancelInteractTip()
   if self.IsAllDying then
     UpdateVisibility(self.Overlay_GiveUpRevival, true)
@@ -206,6 +240,7 @@ function WBP_DyingRevival:ShowCancelInteractTip()
     UpdateVisibility(self.Overlay_GiveUpRevival, false)
   end
 end
+
 function WBP_DyingRevival:CheckCanRevival()
   local TeamRevivalInfo, SelfRevivalInfo = self:GetTeamAndSelfRevivalInfo()
   if self:CheckIsTeamMode() then
@@ -220,25 +255,32 @@ function WBP_DyingRevival:CheckCanRevival()
     return SelfRevivalInfo.FreeRevivalCount > 0 or SelfRevivalInfo.RevivalCoinNum >= SelfRevivalInfo.OnceCostCoinNum
   end
 end
+
 function WBP_DyingRevival:CheckIsTeam()
   local TeamRevivalInfo, SelfRevivalInfo = self:GetTeamAndSelfRevivalInfo()
   return TeamRevivalInfo.PlayerRevivalInfos:Num() > 1
 end
+
 function WBP_DyingRevival:CheckIsTeamMode()
   return UE.URGLevelLibrary.IsTeamRevivalMode(self)
 end
+
 function WBP_DyingRevival:CheckInPerfectTime()
   return UE.URGLevelLibrary.IsInPerfectTime(self)
 end
+
 function WBP_DyingRevival:CheckIsNormalMode()
   return LogicTeam.GetModeId() == TableEnums.ENUMGameMode.NORMAL or LogicTeam.GetModeId() == TableEnums.ENUMGameMode.SEASONNORMAL
 end
+
 function WBP_DyingRevival:GetPerfectTime()
   return UE.URGLevelLibrary:GetPerfectTime()
 end
+
 function WBP_DyingRevival:GetPunishTime()
   return UE.URGLevelLibrary:GetRevivalPunishTime()
 end
+
 function WBP_DyingRevival:GetSelfRevivalInfo()
   local GS = UE.UGameplayStatics.GetGameState(self)
   if not GS then
@@ -248,6 +290,7 @@ function WBP_DyingRevival:GetSelfRevivalInfo()
   local PlayerRevivalManager = GS:GetComponentByClass(UE.URGPlayerRevivalManager:StaticClass())
   return PlayerRevivalManager:GetPlayerInfo(self:GetUserId())
 end
+
 function WBP_DyingRevival:GetTeamAndSelfRevivalInfo()
   local GS = UE.UGameplayStatics.GetGameState(self)
   if not GS then
@@ -259,6 +302,7 @@ function WBP_DyingRevival:GetTeamAndSelfRevivalInfo()
   local SelfRevivalInfo = PlayerRevivalManager:GetPlayerInfo(self:GetUserId())
   return TeamRevivalInfo, SelfRevivalInfo
 end
+
 function WBP_DyingRevival:GetUserId()
   local UserId = DataMgr.GetUserId()
   if UserId then
@@ -271,4 +315,5 @@ function WBP_DyingRevival:GetUserId()
     return UserId
   end
 end
+
 return WBP_DyingRevival

@@ -5,22 +5,27 @@ local UIUtil = require("Framework.UIMgr.UIUtil")
 local RuleTaskData = require("Modules.RuleTask.RuleTaskData")
 local RuleTaskHandler = require("Protocol.RuleTask.RuleTaskHandler")
 local WBP_RuleTaskPanel = Class(ViewBase)
+
 function WBP_RuleTaskPanel:BindClickHandler()
   self.Btn_ReceiveMainReward.OnMainButtonClicked:Add(self, self.BindOnReceiveMainRewardButtonClicked)
   self.Btn_MainRewardDetail.OnClicked:Add(self, self.BindOnMainRewardDetailButtonClicked)
 end
+
 function WBP_RuleTaskPanel:UnBindClickHandler()
   self.Btn_ReceiveMainReward.OnMainButtonClicked:Remove(self, self.BindOnReceiveMainRewardButtonClicked)
   self.Btn_MainRewardDetail.OnClicked:Remove(self, self.BindOnMainRewardDetailButtonClicked)
 end
+
 function WBP_RuleTaskPanel:OnInit()
   self.DataBindTable = {}
   self.ViewModel = UIModelMgr:Get("RuleTaskViewModel")
   self:BindClickHandler()
 end
+
 function WBP_RuleTaskPanel:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function WBP_RuleTaskPanel:OnShow(ActivityId)
   self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
   self.ViewModel:InitInfo(ActivityId)
@@ -38,6 +43,7 @@ function WBP_RuleTaskPanel:OnShow(ActivityId)
   self:PlayAnimation(self.Ani_in)
   self:PlayAnimation(self.Ani_loop, 0.0, 0, UE.EUMGSequencePlayMode.Forward, 1.0, false)
 end
+
 function WBP_RuleTaskPanel:InitMainRewardPanel()
   local Result, RuleTaskRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBRuleTask, self.ActivityId)
   UpdateVisibility(self.CanvasPanel_MainReward, Result)
@@ -68,6 +74,7 @@ function WBP_RuleTaskPanel:InitMainRewardPanel()
   end
   self:RefreshMainRewardStatus()
 end
+
 function WBP_RuleTaskPanel:RefreshMainRewardStatus(...)
   local AllMainTaskGroupList = self.ViewModel:GetMainTaskGroupList()
   local MaxNum = #AllMainTaskGroupList
@@ -82,6 +89,7 @@ function WBP_RuleTaskPanel:RefreshMainRewardStatus(...)
   self.Txt_CurFinishRuleTaskNum:SetText(FinishNum)
   self:RefreshReceiveMainRewardButtonStatus()
 end
+
 function WBP_RuleTaskPanel:GetMainRewardIconToolTipWidget()
   if not self.CanShowMainRewardToolTip then
     return
@@ -91,6 +99,7 @@ function WBP_RuleTaskPanel:GetMainRewardIconToolTipWidget()
   end
   return GetTips(self.MainRewardResourceId, self.MainRewardTipClass)
 end
+
 function WBP_RuleTaskPanel:RefreshReceiveMainRewardButtonStatus(...)
   local AllMainTaskGroupList = self.ViewModel:GetMainTaskGroupList()
   local MaxNum = #AllMainTaskGroupList
@@ -112,6 +121,7 @@ function WBP_RuleTaskPanel:RefreshReceiveMainRewardButtonStatus(...)
   end
   self.CanReceiveMainReward = FinishNum == MaxNum and RuleTaskData:GetMainRewardState(self.ActivityId) ~= EMainRewardState.Received
 end
+
 function WBP_RuleTaskPanel:InitRuleTaskItemPanel()
   local Result, RuleTaskRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBRuleTask, self.ActivityId)
   UpdateVisibility(self.CanvasPanel_RuleTask, Result)
@@ -133,6 +143,7 @@ function WBP_RuleTaskPanel:InitRuleTaskItemPanel()
     end
   end
 end
+
 function WBP_RuleTaskPanel:BindOnMainTaskGroupRefresh(TaskGroupIdList)
   local IsNeedRefresh = false
   local AllMainTaskGroupList = self.ViewModel:GetMainTaskGroupList()
@@ -159,6 +170,7 @@ function WBP_RuleTaskPanel:BindOnMainTaskGroupRefresh(TaskGroupIdList)
     end
   end
 end
+
 function WBP_RuleTaskPanel:BindOnReceiveMainRewardButtonClicked(...)
   if not self.CanReceiveMainReward then
     return
@@ -182,6 +194,7 @@ function WBP_RuleTaskPanel:BindOnReceiveMainRewardButtonClicked(...)
     end
   end
 end
+
 function WBP_RuleTaskPanel:IsOptional(ResourcesID)
   local TBGeneral = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   if TBGeneral[ResourcesID] then
@@ -189,6 +202,7 @@ function WBP_RuleTaskPanel:IsOptional(ResourcesID)
   end
   return false
 end
+
 function WBP_RuleTaskPanel:BindOnMainRewardDetailButtonClicked(...)
   local Result, HeroSkinRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBCharacterSkin, self.MainRewardResourceId)
   if not Result then
@@ -202,9 +216,11 @@ function WBP_RuleTaskPanel:BindOnMainRewardDetailButtonClicked(...)
     end
   end
 end
+
 function WBP_RuleTaskPanel:BindOnShowRuleTaskDetailPanel(RuleInfoId)
   UIMgr:Show(ViewID.UI_RuleTaskDetailPanel, false, RuleInfoId)
 end
+
 function WBP_RuleTaskPanel:BindOnChangeRuleTaskItemTipVis(IsShow, RuleInfoId, IsRight)
   UpdateVisibility(self.WBP_RuleTaskItemTip, IsShow)
   if IsShow then
@@ -219,9 +235,11 @@ function WBP_RuleTaskPanel:BindOnChangeRuleTaskItemTipVis(IsShow, RuleInfoId, Is
     Slot:SetPosition(TargetPos)
   end
 end
+
 function WBP_RuleTaskPanel:BindOnMainRewardStateChanged()
   self:RefreshReceiveMainRewardButtonStatus()
 end
+
 function WBP_RuleTaskPanel:OnPreHide()
   EventSystem.RemoveListenerNew(EventDef.RuleTask.OnShowRuleTaskDetailPanel, self, self.BindOnShowRuleTaskDetailPanel)
   EventSystem.RemoveListenerNew(EventDef.MainTask.OnMainTaskRefres, self, self.BindOnMainTaskGroupRefresh)
@@ -234,10 +252,13 @@ function WBP_RuleTaskPanel:OnPreHide()
     SingleItem:Hide()
   end
 end
+
 function WBP_RuleTaskPanel:OnHide()
   self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
 end
+
 function WBP_RuleTaskPanel:Destruct(...)
   self:OnPreHide()
 end
+
 return WBP_RuleTaskPanel

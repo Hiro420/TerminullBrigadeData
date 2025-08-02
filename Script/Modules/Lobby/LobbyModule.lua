@@ -26,8 +26,10 @@ local ViewQueuePrority = {
   [ViewID.UI_InitialRoleSelection] = 1000,
   [ViewID.UI_ProfyUpgradeAnimPanel] = 4
 }
+
 function LobbyModule:Ctor()
 end
+
 function LobbyModule:OnInit()
   print("LobbyModule:OnInit...........")
   EventSystem.AddListenerNew(EventDef.ViewAction.ViewOnHide, self, self.OnShowViewQueue)
@@ -40,6 +42,7 @@ function LobbyModule:OnInit()
   self.PagesVisbleDelegateList = {}
   self:AddLabelVisbleDelgate("LobbyLabel.Season", self, self.CheckIsInSeasonMode)
 end
+
 function LobbyModule:OnShutdown()
   self:RemoveLabelVisbleDelegate("LobbyLabel.Season", self, self.CheckIsInSeasonMode)
   self.PagesVisbleDelegateList = {}
@@ -54,6 +57,7 @@ function LobbyModule:OnShutdown()
   self:SaveRechargeDataToLocal()
   self:SaveVoiceControlDataToLocal()
 end
+
 function LobbyModule:BindOnLoginProtocolSuccess()
   LocalSpecificUnlockDataFilePath = UE.UKismetSystemLibrary.GetProjectSavedDirectory() .. "/SpecificUnlock/SpecificUnlockData_" .. DataMgr.GetUserId() .. ".json"
   local Result, FileStr = UE.URGBlueprintLibrary.LoadFileToString(LocalSpecificUnlockDataFilePath)
@@ -91,6 +95,7 @@ function LobbyModule:BindOnLoginProtocolSuccess()
     end
   end
 end
+
 function LobbyModule:EnterLobby()
   print("LobbyModule::EnterLobby CursorVirtualFocus 0")
   UE.URGBlueprintLibrary.CursorVirtualFocus(0)
@@ -113,6 +118,7 @@ function LobbyModule:EnterLobby()
     self:PushView(viewData)
   end
 end
+
 function LobbyModule:CheckIsInSeasonMode()
   local SeasonModule = ModuleManager:Get("SeasonModule")
   if not SeasonModule then
@@ -120,6 +126,7 @@ function LobbyModule:CheckIsInSeasonMode()
   end
   return SeasonModule:CheckIsInSeasonMode()
 end
+
 function LobbyModule:SaveSpecificDataToLocal()
   local newUnlockSpecificModifyListJson = RapidJsonEncode(IllustratedGuideData.NewUnlockSpecificModifyList)
   UE.URGBlueprintLibrary.SaveStringToFile(LocalSpecificUnlockDataFilePath, newUnlockSpecificModifyListJson)
@@ -128,6 +135,7 @@ function LobbyModule:SaveSpecificDataToLocal()
   })
   UE.URGBlueprintLibrary.SaveStringToFile(LocalSpecificAniDataFilePath, specificUnlockAniMapJson)
 end
+
 function LobbyModule:SaveGrowthSnapDataToLocal()
   local localSaveSnapData = {
     SaveGrowthSnapTipNoUseTimes = SaveGrowthSnapData.SaveGrowthSnapTipNoUseTimes,
@@ -136,14 +144,17 @@ function LobbyModule:SaveGrowthSnapDataToLocal()
   local localSaveGrowthSnapDataJson = RapidJsonEncode(localSaveSnapData)
   UE.URGBlueprintLibrary.SaveStringToFile(LocalSaveGrowthSnapFilePath, localSaveGrowthSnapDataJson)
 end
+
 function LobbyModule:SaveSurvivalDataToLocal()
   local newSurvivorDataListJson = RapidJsonEncode(SaveSurvivorData.LocalSaveData)
   UE.URGBlueprintLibrary.SaveStringToFile(LocalSurvivorDataFilePath, newSurvivorDataListJson)
 end
+
 function LobbyModule:SaveRechargeDataToLocal()
   local newRechargeDataListJson = RapidJsonEncode(SaveRechargeData.LocalSaveData)
   UE.URGBlueprintLibrary.SaveStringToFile(LocalRechargeDataFilePath, newRechargeDataListJson)
 end
+
 function LobbyModule:SaveVoiceControlDataToLocal()
   local VoiceControlModule = ModuleManager:Get("VoiceControlModule")
   if not VoiceControlModule or not VoiceControlModule.LocalVoiceControlData then
@@ -155,6 +166,7 @@ function LobbyModule:SaveVoiceControlDataToLocal()
   local localSaveGrowthSnapDataJson = RapidJsonEncode(VoiceControlModule.LocalVoiceControlData)
   UE.URGBlueprintLibrary.SaveStringToFile(LocalVoiceControlFilePath, localSaveGrowthSnapDataJson)
 end
+
 function LobbyModule:BindOnUpdateGameFloorInfo(...)
   local LobbySaveGame = LogicLobby.GetLobbySaveGame()
   local GameModeId = LogicTeam and GetCurNormalMode() or 1001
@@ -192,12 +204,14 @@ function LobbyModule:BindOnUpdateGameFloorInfo(...)
     end
   end
 end
+
 function LobbyModule:ExitLobby()
   if self.ViewProrityQueue then
     self.ViewProrityQueue:Clear()
   end
   self.CurShowViewData = nil
 end
+
 function LobbyModule:CheckCanShowQueueView()
   print("LobbyModule:CheckCanShowQueueView", self.CurShowViewData)
   if not self.CurShowViewData then
@@ -211,6 +225,7 @@ function LobbyModule:CheckCanShowQueueView()
   end
   return false
 end
+
 function LobbyModule:PushView(ViewData)
   if not self.ViewProrityQueue then
     self.ViewProrityQueue = ProrityQueue.New({}, self.SortQueue)
@@ -220,6 +235,7 @@ function LobbyModule:PushView(ViewData)
     self:OnShowViewQueue(nil, true)
   end
 end
+
 function LobbyModule:UpdateViewData(ViewData)
   if not self.ViewProrityQueue then
     self:PushView(ViewData)
@@ -239,6 +255,7 @@ function LobbyModule:UpdateViewData(ViewData)
     self:OnShowViewQueue(nil, true)
   end
 end
+
 function LobbyModule.SortQueue(A, B)
   if not ViewQueuePrority[A.ViewID] then
     error("Pls Check ViewQueuePrority Is Contain ViewID:", A.ViewID)
@@ -248,6 +265,7 @@ function LobbyModule.SortQueue(A, B)
   end
   return ViewQueuePrority[A.ViewID] > ViewQueuePrority[B.ViewID]
 end
+
 function LobbyModule:OnViewShow(ViewID)
   print("LobbyModule:OnViewShow", ViewID)
   if ShowViewQueueInViews[ViewID] and not self.CurShowViewData then
@@ -258,6 +276,7 @@ function LobbyModule:OnViewShow(ViewID)
     EventSystem.Invoke("OnViewShow_" .. GetViewNameByViewId(ViewID))
   end
 end
+
 function LobbyModule:OnShowViewQueue(ViewID, bForceDequeueView)
   if ViewID then
     print("LobbyModule:OnShowViewQueue", UIDef[ViewID].UIScript)
@@ -296,6 +315,7 @@ function LobbyModule:OnShowViewQueue(ViewID, bForceDequeueView)
     EventSystem.Invoke(EventDef.ViewAction.ViewProrityQueueEmpty, ViewID)
   end
 end
+
 function LobbyModule:AddLabelVisbleDelgate(LabelTag, Obj, Delegate)
   if not self.PagesVisbleDelegateList then
     self.PagesVisbleDelegateList = {}
@@ -305,6 +325,7 @@ function LobbyModule:AddLabelVisbleDelgate(LabelTag, Obj, Delegate)
   end
   table.insert(self.PagesVisbleDelegateList[LabelTag], {Obj, Delegate})
 end
+
 function LobbyModule:RemoveLabelVisbleDelegate(LabelTag, Obj, Delegate)
   if not self.PagesVisbleDelegateList then
     return
@@ -319,6 +340,7 @@ function LobbyModule:RemoveLabelVisbleDelegate(LabelTag, Obj, Delegate)
     end
   end
 end
+
 function LobbyModule:CheckLabelVisble(LabelTag)
   if not self.PagesVisbleDelegateList then
     return true
@@ -335,6 +357,7 @@ function LobbyModule:CheckLabelVisble(LabelTag)
   end
   return true
 end
+
 function LobbyModule:CheckShowInitialRoleSelection()
   local myHeroInfo = DataMgr.GetMyHeroInfo()
   if myHeroInfo and not myHeroInfo.bNotInited then
@@ -370,4 +393,5 @@ function LobbyModule:CheckShowInitialRoleSelection()
     LogicRole.RequestMyHeroInfoToServer(callback)
   end
 end
+
 return LobbyModule

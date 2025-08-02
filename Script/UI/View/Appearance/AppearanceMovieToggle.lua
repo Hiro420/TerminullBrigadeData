@@ -1,8 +1,11 @@
 local AppearanceMovieToggle = UnLua.Class()
+
 function AppearanceMovieToggle:OnMouseEnter(MyGeometry, MouseEvent)
 end
+
 function AppearanceMovieToggle:OnMouseLeave(MyGeometry, MouseEvent)
 end
+
 function AppearanceMovieToggle:InitMoiveToggle(FHeirloomMediaData)
   if UE.UKismetSystemLibrary.IsValidSoftObjectReference(FHeirloomMediaData.CoverImg) then
     local IconObj = GetAssetBySoftObjectPtr(FHeirloomMediaData.CoverImg, true)
@@ -17,4 +20,5 @@ function AppearanceMovieToggle:InitMoiveToggle(FHeirloomMediaData)
   self.RGTextTitleSelect:SetText(FHeirloomMediaData.Title)
   self.RGTextTitleUnSelect:SetText(FHeirloomMediaData.Title)
 end
+
 return AppearanceMovieToggle

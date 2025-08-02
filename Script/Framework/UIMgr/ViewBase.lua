@@ -5,6 +5,7 @@ local ViewBase = {
 }
 ViewBase.ViewModels = {}
 ViewBase._isViewBaseType = true
+
 function ViewBase:AttachViewModel(viewmodel, BindFunc, View)
   if UE_BUILD_SHIPPING == false then
     if not viewmodel then
@@ -21,6 +22,7 @@ function ViewBase:AttachViewModel(viewmodel, BindFunc, View)
     viewmodel:RegisterPropertyChanged(BindFunc, View)
   end
 end
+
 function ViewBase:DetachViewModel(viewmodel, BindFunc, View)
   if UE_BUILD_SHIPPING == false then
     if not viewmodel then
@@ -37,9 +39,11 @@ function ViewBase:DetachViewModel(viewmodel, BindFunc, View)
     viewmodel:UnRegisterPropertyChanged(BindFunc, View)
   end
 end
+
 function ViewBase:DetachAllViewModel(viewmodel)
   if nil ~= viewmodel then
     viewmodel:UnRegisterAllPropertyChanged()
   end
 end
+
 return ViewBase

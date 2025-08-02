@@ -1,11 +1,11 @@
 ﻿{
   "2": {
-    "id": 2,
     "nameLocMeta": {
       "InTextLiteral": "玩法",
       "InNamespace": "guide_TBGuidebooktype",
       "InKey": "name_2"
     },
+    "id": 2,
     "icon": ""
   }
 }

@@ -2,9 +2,11 @@ local rapidjson = require("rapidjson")
 Logic_Level = Logic_Level or {CurLevel = 1, CurLevelExp = 0}
 local MaxLevel = 80
 local LevelUpViewClsPath = "/Game/Rouge/UI/Grage/WBP_Grage.WBP_Grage_C"
+
 function Logic_Level.Init()
   Logic_Level.CurLevel = 1
 end
+
 function Logic_Level.OnLevelUp(Exp)
   local NewLevel, NewExp = DataMgr.CalcUpLevel(Exp)
   local Info = DeepCopy(DataMgr.GetBasicInfo())
@@ -29,6 +31,7 @@ function Logic_Level.OnLevelUp(Exp)
     end
   end
 end
+
 function Logic_Level.OnLevelUpNew(NewLevel, NewExp)
   local LobbyModule = ModuleManager:Get("LobbyModule")
   local viewData = {
@@ -42,14 +45,18 @@ function Logic_Level.OnLevelUpNew(NewLevel, NewExp)
   }
   LobbyModule:PushView(viewData)
 end
+
 function Logic_Level.HideSelf()
   UIMgr:Hide(ViewID.UI_LevelUp)
 end
+
 function Logic_Level.GetLevelTableRow(Level)
   return DataMgr.GetLevelTableRow(Level)
 end
+
 function Logic_Level.CalcUpLevel(Exp)
   return DataMgr.CalcUpLevel(Exp)
 end
+
 function Logic_Level.Clear()
 end

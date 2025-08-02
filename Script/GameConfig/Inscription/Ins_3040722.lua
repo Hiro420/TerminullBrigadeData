@@ -10,7 +10,7 @@ local Ins_3040722 =
 	InscriptionDataAry = 
 	{
 		{
-			GenericModifyLevelId = "3040722",
+			GenericModifyLevelId = "3040712",
 			bIsShowGenericModifyLevelDescInUI = false,
 			ModifyLevelDescShowType = 0,
 			bIsShowHelpInUI = false,

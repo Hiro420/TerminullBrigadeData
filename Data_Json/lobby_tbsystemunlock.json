@@ -1,0 +1,205 @@
+[
+  {
+    "SystemID": 1,
+    "SystemName": "Mall",
+    "Desc": "商城",
+    "UnlockEventsList": [
+      {
+        "id": 1,
+        "params": [],
+        "value": 1
+      }
+    ],
+    "ViewNameList": [],
+    "UnlockTips": ""
+  },
+  {
+    "SystemID": 2,
+    "SystemName": "BattlePass",
+    "Desc": "通行证",
+    "UnlockEventsList": [
+      {
+        "id": 1,
+        "params": [],
+        "value": 1
+      }
+    ],
+    "ViewNameList": [],
+    "UnlockTips": ""
+  },
+  {
+    "SystemID": 3,
+    "SystemName": "Puzzle",
+    "Desc": "战斗矩阵",
+    "UnlockEventsList": [
+      {
+        "id": 5,
+        "params": [
+          {
+            "id": 1,
+            "param": "1001"
+          },
+          {
+            "id": 2,
+            "param": "3"
+          }
+        ],
+        "value": 1
+      }
+    ],
+    "ViewNameList": [],
+    "UnlockTips": "完美通关任意世界难度3解锁战斗矩阵"
+  },
+  {
+    "SystemID": 4,
+    "SystemName": "RewardIncrease",
+    "Desc": "高能时刻",
+    "UnlockEventsList": [
+      {
+        "id": 5,
+        "params": [
+          {
+            "id": 1,
+            "param": "1001"
+          },
+          {
+            "id": 2,
+            "param": "3"
+          }
+        ],
+        "value": 1
+      }
+    ],
+    "ViewNameList": [],
+    "UnlockTips": "完美通关任意世界难度3解锁高能时刻"
+  },
+  {
+    "SystemID": 5,
+    "SystemName": "",
+    "Desc": "爬塔兑换商店Ⅱ",
+    "UnlockEventsList": [
+      {
+        "id": 5,
+        "params": [
+          {
+            "id": 1,
+            "param": "1003"
+          },
+          {
+            "id": 2,
+            "param": "5"
+          }
+        ],
+        "value": 1
+      }
+    ],
+    "ViewNameList": [],
+    "UnlockTips": "通关修正行动第5层后解锁"
+  },
+  {
+    "SystemID": 6,
+    "SystemName": "",
+    "Desc": "爬塔兑换商店Ⅲ",
+    "UnlockEventsList": [
+      {
+        "id": 5,
+        "params": [
+          {
+            "id": 1,
+            "param": "1003"
+          },
+          {
+            "id": 2,
+            "param": "10"
+          }
+        ],
+        "value": 1
+      }
+    ],
+    "ViewNameList": [],
+    "UnlockTips": "通关修正行动第10层后解锁"
+  },
+  {
+    "SystemID": 7,
+    "SystemName": "ClimbTower",
+    "Desc": "修正行动",
+    "UnlockEventsList": [
+      {
+        "id": 5,
+        "params": [
+          {
+            "id": 1,
+            "param": "1001"
+          },
+          {
+            "id": 2,
+            "param": "6"
+          }
+        ],
+        "value": 1
+      }
+    ],
+    "ViewNameList": [],
+    "UnlockTips": "完美通关任意世界难度6解锁"
+  },
+  {
+    "SystemID": 8,
+    "SystemName": "Survivor",
+    "Desc": "病毒狂潮",
+    "UnlockEventsList": [
+      {
+        "id": 5,
+        "params": [
+          {
+            "id": 1,
+            "param": "1003"
+          },
+          {
+            "id": 2,
+            "param": "10"
+          }
+        ],
+        "value": 1
+      }
+    ],
+    "ViewNameList": [],
+    "UnlockTips": "通关修正行动第10层后解锁"
+  },
+  {
+    "SystemID": 9,
+    "SystemName": "BossRush",
+    "Desc": "失序链区",
+    "UnlockEventsList": [
+      {
+        "id": 5,
+        "params": [
+          {
+            "id": 1,
+            "param": "1003"
+          },
+          {
+            "id": 2,
+            "param": "10"
+          }
+        ],
+        "value": 1
+      }
+    ],
+    "ViewNameList": [],
+    "UnlockTips": "通关修正行动第10层后解锁普通难度"
+  },
+  {
+    "SystemID": 101,
+    "SystemName": "",
+    "Desc": "熟练度（无实际功能）",
+    "UnlockEventsList": [
+      {
+        "id": 1,
+        "params": [],
+        "value": 100
+      }
+    ],
+    "ViewNameList": [],
+    "UnlockTips": "提升角色熟练度至3级后解锁"
+  }
+]

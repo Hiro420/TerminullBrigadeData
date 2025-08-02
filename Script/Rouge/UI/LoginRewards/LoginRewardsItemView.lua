@@ -1,8 +1,10 @@
 local rapidjson = require("rapidjson")
 local RedDotData = require("Modules.RedDot.RedDotData")
 local LoginRewardsItemView = UnLua.Class()
+
 function LoginRewardsItemView:Construct()
 end
+
 function LoginRewardsItemView:InitLoginRewardsItem(Index, bReceive)
   local IsNewCreate = RedDotData:CreateRedDotState("Event_LoginReward_Item_" .. Index, "Event_LoginReward_Item")
   local RedDotState = {}
@@ -37,6 +39,7 @@ function LoginRewardsItemView:InitLoginRewardsItem(Index, bReceive)
     self:SetStatus(0)
   end
 end
+
 function LoginRewardsItemView:GetToolTipWidget()
   if self.bSkin then
     local Config = LuaTableMgr.GetLuaTableByName(TableNames.TBSevenDayLogin)
@@ -45,6 +48,7 @@ function LoginRewardsItemView:GetToolTipWidget()
     end
   end
 end
+
 function LoginRewardsItemView:InitShowTime(Index)
   local Config = LuaTableMgr.GetLuaTableByName(TableNames.TBSevenDayLogin)
   if Config and Config[Index].unLockTime then
@@ -52,6 +56,7 @@ function LoginRewardsItemView:InitShowTime(Index)
     self.RGTextBlock_Time_1:SetText(Config[Index].unLockTime)
   end
 end
+
 function LoginRewardsItemView:InitSkin(Index)
   UpdateVisibility(self.Skin, true)
   local Config = LuaTableMgr.GetLuaTableByName(TableNames.TBSevenDayLogin)
@@ -60,6 +65,7 @@ function LoginRewardsItemView:InitSkin(Index)
   end
   self.bSkin = true
 end
+
 function LoginRewardsItemView:InitItem(Index)
   UpdateVisibility(self.Item, true)
   local Config = LuaTableMgr.GetLuaTableByName(TableNames.TBSevenDayLogin)
@@ -77,6 +83,7 @@ function LoginRewardsItemView:InitItem(Index)
   end
   self.bSkin = false
 end
+
 function LoginRewardsItemView:SetStatus(StatusId)
   self.StatusId = StatusId
   self.WBP_RedDotView:SetNum(0)
@@ -103,6 +110,7 @@ function LoginRewardsItemView:SetStatus(StatusId)
     UpdateVisibility(self.WBP_GenericModifyTipsChangeHover_Group_6, false)
   end
 end
+
 function LoginRewardsItemView:CloseAnim()
   UE.UKismetSystemLibrary.K2_SetTimerDelegate({
     self,
@@ -111,18 +119,23 @@ function LoginRewardsItemView:CloseAnim()
     end
   }, 0.05, false)
 end
+
 function LoginRewardsItemView:OnHover()
   self.RGStateController_Hover:ChangeStatus("Hover", true)
 end
+
 function LoginRewardsItemView:OnUnHover()
   self.RGStateController_Hover:ChangeStatus("UnHover", true)
 end
+
 function LoginRewardsItemView:OnMouseEnter(MyGeometry, MouseEvent)
   self:OnHover()
 end
+
 function LoginRewardsItemView:OnMouseLeave(MyGeometry, MouseEvent)
   self:OnUnHover()
 end
+
 function LoginRewardsItemView:OnMouseButtonDown(MyGeometry, MouseEvent)
   if UE.UKismetInputLibrary.PointerEvent_GetEffectingButton(MouseEvent) == self.RightMouseButton then
     if 1 ~= self.StatusId then
@@ -150,4 +163,5 @@ function LoginRewardsItemView:OnMouseButtonDown(MyGeometry, MouseEvent)
   end
   return UE.UWidgetBlueprintLibrary.Handled()
 end
+
 return LoginRewardsItemView

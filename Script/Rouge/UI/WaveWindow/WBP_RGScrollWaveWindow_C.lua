@@ -1,21 +1,16 @@
 local WBP_RGScrollWaveWindow_C = UnLua.Class()
 local MaxNum = 4
+
 function WBP_RGScrollWaveWindow_C:Construct()
-  local time = UE.UGameplayStatics.GetRealTimeSeconds(self)
-  local ReasonTime = self:GetOwningPlayerPawn().OnPawnAcknowTime
-  if time - ReasonTime <= 10 then
-    print("[#LJS:\230\184\184\230\136\143\230\151\182\233\151\180\229\176\143\228\186\142\228\184\164\231\167\146\239\188\140\228\184\141\230\152\190\231\164\186\229\175\134\229\141\183\229\136\157\229\167\139\229\140\150\229\188\185\231\170\151]")
-    self:SetVisibility(UE.ESlateVisibility.Hidden)
-    self:RemoveFromParent()
-    return
-  end
 end
+
 function WBP_RGScrollWaveWindow_C:SetWaveWindowParam(WaveWindowParamParam)
   local SetData = UE.FRGAttributeModifySetContext()
   SetData.Level = WaveWindowParamParam.IntParam0
   SetData.SetId = WaveWindowParamParam.IntParam1
   self:Show(SetData)
 end
+
 function WBP_RGScrollWaveWindow_C:Show(ScrollSetData)
   local StartTime = self.Info.Duration - self.DesistAnim:GetEndTime()
   if StartTime < 0 then
@@ -73,9 +68,11 @@ function WBP_RGScrollWaveWindow_C:Show(ScrollSetData)
     end
   end
 end
+
 function WBP_RGScrollWaveWindow_C:FadeOut()
   self:PlayAnimation(self.DesistAnim)
 end
+
 function WBP_RGScrollWaveWindow_C:Destruct()
   self.Overridden.Destruct(self)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.Timer) then
@@ -83,6 +80,8 @@ function WBP_RGScrollWaveWindow_C:Destruct()
     self.Timer = nil
   end
 end
+
 function WBP_RGScrollWaveWindow_C:Hide()
 end
+
 return WBP_RGScrollWaveWindow_C

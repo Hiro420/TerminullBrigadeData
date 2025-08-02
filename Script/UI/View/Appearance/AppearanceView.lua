@@ -15,6 +15,7 @@ local SubViewId = {
 local CurrentSelectIndex = 1
 local ToggleItemList = {}
 local AppearanceView = Class(ViewBase)
+
 function AppearanceView:OnBindUIInput()
   self.WBP_InteractTipWidgetMenuPrev:BindInteractAndClickEvent(self, self.OnSelectPrevMenu)
   self.WBP_InteractTipWidgetMenuNext:BindInteractAndClickEvent(self, self.OnSelectNextMenu)
@@ -25,25 +26,31 @@ function AppearanceView:OnBindUIInput()
     })
   end
 end
+
 function AppearanceView:OnUnBindUIInput()
   self.WBP_InteractTipWidgetMenuPrev:UnBindInteractAndClickEvent(self, self.OnSelectPrevMenu)
   self.WBP_InteractTipWidgetMenuNext:UnBindInteractAndClickEvent(self, self.OnSelectNextMenu)
   StopListeningForInputAction(self, EscName, UE.EInputEvent.IE_Pressed)
 end
+
 function AppearanceView:BindClickHandler()
   self.RGToggleGroupFirst.OnCheckStateChanged:Add(self, self.OnFirstGroupCheckStateChanged)
 end
+
 function AppearanceView:UnBindClickHandler()
   self.RGToggleGroupFirst.OnCheckStateChanged:Remove(self, self.OnFirstGroupCheckStateChanged)
 end
+
 function AppearanceView:OnInit()
   self.DataBindTable = {}
   self.viewModel = UIModelMgr:Get("AppearanceViewModel")
   self:BindClickHandler()
 end
+
 function AppearanceView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function AppearanceView:OnShow(...)
   self.Super:AttachViewModel(self.viewModel, self.DataBindTable, self)
   self.viewModel:UpdateCurHeroId(...)
@@ -83,6 +90,7 @@ function AppearanceView:OnShow(...)
   self.HeirloomRedDotView:ChangeRedDotIdByTag(CurHeroId)
   self.CommunicationRedDotView:ChangeRedDotIdByTag(CurHeroId)
 end
+
 function AppearanceView:OnShowLink(LinkParams)
   local firstToggleIdx = 1
   if LinkParams:IsValidIndex(1) then
@@ -91,15 +99,18 @@ function AppearanceView:OnShowLink(LinkParams)
   self.RGToggleGroupFirst:SelectId(firstToggleIdx)
   self.viewModel:SwitchLink(firstToggleIdx, LinkParams)
 end
+
 function AppearanceView:BindOnChangeAppearanceViewToggleGroupSelect(AppearanceToggleStatus)
   self.RGToggleGroupFirst:SelectId(AppearanceToggleStatus)
 end
+
 function AppearanceView:OnHide()
   LogicRole.HideAndUnloadAllBgStreamLevel()
   UpdateVisibility(self.CanvasPanelRoot, true)
   EventSystem.RemoveListener(EventDef.Heirloom.ChangeAppearanceViewToggleGroupSelect, self.BindOnChangeAppearanceViewToggleGroupSelect, self)
   self.Super:DetachViewModel(self.viewModel, self.DataBindTable, self)
 end
+
 function AppearanceView:ListenForEscInputAction(bWithoutAni)
   for i, v in ipairs(SubViewId) do
     local luaInst = UIMgr:GetLuaFromActiveView(v)
@@ -110,6 +121,7 @@ function AppearanceView:ListenForEscInputAction(bWithoutAni)
   end
   UIMgr:Hide(ViewID.UI_Apearance, true, nil, bWithoutAni)
 end
+
 function AppearanceView:ListenForUpdateAppearanceShowInputAction()
   local skinView = UIMgr:GetLuaFromActiveView(ViewID.UI_Skin)
   if UE.RGUtil.IsUObjectValid(skinView) and CheckIsVisility(self.WBP_AppearanceMovieList) then
@@ -135,10 +147,12 @@ function AppearanceView:ListenForUpdateAppearanceShowInputAction()
   end
   UpdateVisibility(self.CanvasPanelRoot, self.bIsAppearanceViewIsShow)
 end
+
 function AppearanceView:UpdateUIColor(UIColor)
   self.RGTextTitle:SetColorAndOpacity(UIColor)
   self.RGTextRoleName:SetColorAndOpacity(UIColor)
 end
+
 function AppearanceView:OnFirstGroupCheckStateChanged(SelectId)
   print("AppearanceView:OnFirstGroupCheckStateChanged", SelectId)
   if SelectId == EAppearanceToggleStatus.Heirloom then
@@ -146,6 +160,7 @@ function AppearanceView:OnFirstGroupCheckStateChanged(SelectId)
   end
   self.viewModel:Switch(SelectId)
 end
+
 function AppearanceView:OnSelectPrevMenu()
   CurrentSelectIndex = CurrentSelectIndex - 1
   if CurrentSelectIndex < 1 then
@@ -153,6 +168,7 @@ function AppearanceView:OnSelectPrevMenu()
   end
   self.RGToggleGroupFirst:SelectId(ToggleItemList[CurrentSelectIndex])
 end
+
 function AppearanceView:OnSelectNextMenu()
   CurrentSelectIndex = CurrentSelectIndex + 1
   if CurrentSelectIndex > #ToggleItemList then
@@ -160,4 +176,5 @@ function AppearanceView:OnSelectNextMenu()
   end
   self.RGToggleGroupFirst:SelectId(ToggleItemList[CurrentSelectIndex])
 end
+
 return AppearanceView

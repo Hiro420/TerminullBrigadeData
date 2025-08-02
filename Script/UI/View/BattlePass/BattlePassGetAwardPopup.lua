@@ -1,20 +1,24 @@
 local BattlePassGetAwardPopup = UnLua.Class()
+local BattlePassData = require("Modules.BattlePass.BattlePassData")
 local EscName = "PauseGame"
 local BattlePassState = {
   Normal = 0,
   Premiun = 1,
   Ultra = 2
 }
-local UnLockPremiun = NSLOCTEXT("BattlePassSubView", "UnLockPremiun", "\232\167\163\233\148\129\233\171\152\231\186\167\233\128\154\232\161\140\232\175\129")
-local UnLockUltra = NSLOCTEXT("BattlePassSubView", "UnLockUltra", "\229\133\184\232\151\143\233\128\154\232\161\140\232\175\129")
+local UnLockPremiun = NSLOCTEXT("BattlePassGetAwardPopup", "UnLockPremiun", "\232\167\163\233\148\129\233\171\152\231\186\167\233\128\154\232\161\140\232\175\129")
+local UnLockUltra = NSLOCTEXT("BattlePassGetAwardPopup", "UnLockUltra", "\229\133\184\232\151\143\233\128\154\232\161\140\232\175\129")
+
 function BattlePassGetAwardPopup:Construct()
   self.Button_Confirm.OnMainButtonClicked:Add(self, self.Button_Confirm_OnClicked)
   self.Button_UnLock.OnMainButtonClicked:Add(self, self.Button_UnLock_OnClicked)
 end
+
 function BattlePassGetAwardPopup:Destruct()
   self.Button_Confirm.OnMainButtonClicked:Remove(self, self.Button_Confirm_OnClicked)
   self.Button_UnLock.OnMainButtonClicked:Remove(self, self.Button_UnLock_OnClicked)
 end
+
 function BattlePassGetAwardPopup:ShowTip(UpAwardList, DownAwardList, BattlePassID, ActivateState)
   self.BattlePassID = BattlePassID
   self.ActivateState = ActivateState
@@ -46,14 +50,22 @@ function BattlePassGetAwardPopup:ShowTip(UpAwardList, DownAwardList, BattlePassI
   self.RGListView_Premium:SetRGListItems(ListViewAry_2, true, true)
   self:PlayAnimation(self.Anim_IN)
   self.WBP_CommonTipBg:PlayAnimation(self.WBP_CommonTipBg.Ani_in)
+  if self.ActivateState == BattlePassState.Normal then
+    local CurBattlePassPremiumPrice, OriginalBattlePassPremiumPrice = BattlePassData:GetBattlePassPriceById(self.BattlePassID, BattlePassState.Premiun)
+    self.Txt_CurPrice_Ultra:SetText(CurBattlePassPremiumPrice)
+    UpdateVisibility(self.Txt_OriginalPrice, false)
+  end
 end
+
 function BattlePassGetAwardPopup:Button_Confirm_OnClicked()
   UpdateVisibility(self, false)
   StopListeningForInputAction(self, EscName, UE.EInputEvent.IE_Pressed)
 end
+
 function BattlePassGetAwardPopup:Button_UnLock_OnClicked()
   UIMgr:Hide(ViewID.UI_BattlePassMainView, true)
   local UnlockView = UIMgr:Show(ViewID.UI_BattlePassUnLockView)
   UnlockView:InitInfo(self.BattlePassID, self.ActivateState)
 end
+
 return BattlePassGetAwardPopup

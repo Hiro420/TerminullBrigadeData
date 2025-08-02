@@ -28,6 +28,7 @@ ChatDataMgr = {
     [UE.EChatChannel.System] = true
   }
 }
+
 function ChatDataMgr.Init()
   EventSystem.AddListener(nil, EventDef.WSMessage.ChatMsg, ChatDataMgr.OnChatMsg)
   EventSystem.AddListener(nil, EventDef.WSMessage.SystemMsg, ChatDataMgr.OnChatMsg)
@@ -36,6 +37,7 @@ function ChatDataMgr.Init()
   EventSystem.AddListenerNew(EventDef.WSMessage.worldChatChannel, nil, ChatDataMgr.OnWorldChatChannel)
   ListenObjectMessage(nil, GMP.MSG_UI_Chat_ReceiveChatMsg, GameInstance, ChatDataMgr.BindDsReceiveChatMsg)
 end
+
 function ChatDataMgr.UpdateVoiceBanInfo(BanInfo)
   if BanInfo.ErrorCode == 17010 then
     ChatDataMgr.BanInfo = {
@@ -45,8 +47,10 @@ function ChatDataMgr.UpdateVoiceBanInfo(BanInfo)
     }
   end
 end
+
 function ChatDataMgr.ShowBanTips()
 end
+
 function ChatDataMgr.OnChatMsg(MsgJson)
   local Response = rapidjson.decode(MsgJson)
   if not Response then
@@ -142,6 +146,7 @@ function ChatDataMgr.OnChatMsg(MsgJson)
   end
   EventSystem.Invoke(EventDef.Chat.ReciveNewMsg, ChatContentData)
 end
+
 function ChatDataMgr.TranslateChatParams(Param, paramType)
   if paramType then
     if paramType == TableEnums.ENUMSystemMsgParamType.GachaPond then
@@ -165,6 +170,7 @@ function ChatDataMgr.TranslateChatParams(Param, paramType)
   end
   return Param
 end
+
 function ChatDataMgr.BindDsReceiveChatMsg(UserId, Msg)
   local msgJsonDecode = rapidjson.decode(Msg)
   if ChatDataMgr.CheckPlayerIsBeSheilded(UserId) then
@@ -205,6 +211,7 @@ function ChatDataMgr.BindDsReceiveChatMsg(UserId, Msg)
   })
   EventSystem.Invoke(EventDef.Chat.ReciveNewMsg, ChatContentData)
 end
+
 function ChatDataMgr.OnPersonalChatMsg(MsgJson)
   local Response = rapidjson.decode(MsgJson)
   if not Response then
@@ -228,6 +235,7 @@ function ChatDataMgr.OnPersonalChatMsg(MsgJson)
   })
   EventSystem.Invoke(EventDef.Chat.ReciveNewMsg, ChatContentData)
 end
+
 function ChatDataMgr.OnWorldChatChannel(ChatChannelData)
   print("ChatDataMgr.OnWorldChatChannel", ChatChannelData)
   if not ChatChannelData then
@@ -244,6 +252,7 @@ function ChatDataMgr.OnWorldChatChannel(ChatChannelData)
   end
   ChatDataMgr.ChatChannel = Response.chatChannel
 end
+
 function ChatDataMgr.OnDeletePersonalMsg(MsgJson)
   local Response = rapidjson.decode(MsgJson)
   if not Response then
@@ -283,6 +292,7 @@ function ChatDataMgr.OnDeletePersonalMsg(MsgJson)
   end
   EventSystem.Invoke(EventDef.Chat.ReciveNewMsg, nil)
 end
+
 function ChatDataMgr.SendChatMsg(Id, ChannelId, Msg)
   HttpCommunication.Request("chatservice/message", {
     group = {id = Id, channelId = ChannelId},
@@ -314,6 +324,7 @@ function ChatDataMgr.SendChatMsg(Id, ChannelId, Msg)
     end
   })
 end
+
 function ChatDataMgr.CheckVoiceBan(bNeedTips)
   if ChatDataMgr.BanInfo and 0 ~= ChatDataMgr.BanInfo.BanReasonId then
     if bNeedTips then
@@ -323,6 +334,7 @@ function ChatDataMgr.CheckVoiceBan(bNeedTips)
   end
   return false
 end
+
 function ChatDataMgr.GetVoiceBanStatus(Callback, bIsNoTips)
   local needRequest = true
   if ChatDataMgr.BanInfo then
@@ -362,6 +374,7 @@ function ChatDataMgr.GetVoiceBanStatus(Callback, bIsNoTips)
     })
   end
 end
+
 function ChatDataMgr.BufferMsg(ChannelId)
   local bNeedShrink = false
   local removeList = {}
@@ -398,6 +411,7 @@ function ChatDataMgr.BufferMsg(ChannelId)
     end
   end
 end
+
 function ChatDataMgr.AddErroMsgToChannel(ChannelIdParam, ErroMsg)
   local ChannelId = ChannelIdParam
   if ChannelId == UE.EChatChannel.Composite then
@@ -420,6 +434,7 @@ function ChatDataMgr.AddErroMsgToChannel(ChannelIdParam, ErroMsg)
   })
   EventSystem.Invoke(EventDef.Chat.ReciveNewMsg, ChatContentData)
 end
+
 function ChatDataMgr.AddCustomMsg(SendData)
   if ChatDataMgr.CheckPlayerIsBeSheilded(SendData.sender) then
     print("ChatDataMgr.AddCustomMsg Sheild Player Msg", SendData.sender)
@@ -443,6 +458,7 @@ function ChatDataMgr.AddCustomMsg(SendData)
   })
   EventSystem.Invoke(EventDef.Chat.ReciveNewMsg, ChatContentData)
 end
+
 function ChatDataMgr.SheildPlayerMsg(UserId, ChannelId, bIsSheild, NikcName)
   print("ChatDataMgr.SheildPlayerMsg UserId:", UserId, DataMgr.GetPlayerNickNameById(UserId))
   if bIsSheild then
@@ -455,6 +471,7 @@ function ChatDataMgr.SheildPlayerMsg(UserId, ChannelId, bIsSheild, NikcName)
     ChatDataMgr.AddErroMsgToChannel(ChannelId, Content)
   end
 end
+
 function ChatDataMgr.CheckPlayerIsBeSheilded(UserId)
   print("CheckPlayerIsBeSheilded:", UserId)
   if not UserId then
@@ -473,11 +490,13 @@ function ChatDataMgr.CheckPlayerIsBeSheilded(UserId)
   end
   return ChatDataMgr.SheildPlayerList[UserId]
 end
+
 function ChatDataMgr.BindOnTeamStateChanged(OldState, NewState)
   if NewState == LogicTeam.TeamState.None then
     ChatDataMgr.ClearDataWhenExitTeam()
   end
 end
+
 function ChatDataMgr.ClearDataWhenEnterBattle()
   print("ChatDataMgr.ClearDataWhenEnterBattle")
   local ChatCompositeDataListTemp = {}
@@ -493,6 +512,7 @@ function ChatDataMgr.ClearDataWhenEnterBattle()
     end
   end
 end
+
 function ChatDataMgr.ClearDataWhenExitTeam()
   print("ChatDataMgr.ClearDataWhenExitTeam")
   local ChatCompositeDataListTemp = {}
@@ -505,12 +525,14 @@ function ChatDataMgr.ClearDataWhenExitTeam()
   ChatDataMgr.ChatChannelToContentList[UE.EChatChannel.Team] = {}
   EventSystem.Invoke(EventDef.Chat.ReciveNewMsg, nil)
 end
+
 function ChatDataMgr.ClearData()
   print("ChatDataMgr.ClearData")
   ChatDataMgr.ChatChannelToContentList = {}
   ChatDataMgr.ChatCompositeDataList = {}
   ChatDataMgr.SheildPlayerList = {}
 end
+
 function ChatDataMgr.Clear()
   ChatDataMgr.ClearData()
   EventSystem.RemoveListener(EventDef.WSMessage.ChatMsg, ChatDataMgr.OnChatMsg)

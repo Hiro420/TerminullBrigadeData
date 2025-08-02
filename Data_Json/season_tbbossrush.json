@@ -1,0 +1,122 @@
+[
+  {
+    "Id": 1,
+    "BossName": "锁魂师",
+    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_GhastHook.Img_BossRush_GhastHook",
+    "LevelId": 300101,
+    "DifficultyType": 0,
+    "DifficultyName": "普通",
+    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem.WBP_BossRushModeItem",
+    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_GhastHook_BossRush.Img_GhastHook_BossRush",
+    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_01.Img_BossRush01_01",
+    "BossIconSel": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush02_01.Img_BossRush02_01",
+    "BossDes": "锁魂师",
+    "UnLockDes": "解锁条件：通关修正行动10层",
+    "Tickets": [
+      {
+        "key": 99018,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "BossName": "影刃",
+    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_Qing.Img_BossRush_Qing",
+    "LevelId": 300102,
+    "DifficultyType": 0,
+    "DifficultyName": "普通",
+    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem_Qing.WBP_BossRushModeItem_Qing",
+    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_Qing_BossRush.Img_Qing_BossRush",
+    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_06.Img_BossRush01_06",
+    "BossIconSel": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush02_06.Img_BossRush02_06",
+    "BossDes": "影刃",
+    "UnLockDes": "解锁条件：通关修正行动10层",
+    "Tickets": [
+      {
+        "key": 99018,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "Id": 3,
+    "BossName": "鬣狗大喇叭",
+    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_ZombieSlayer.Img_BossRush_ZombieSlayer",
+    "LevelId": 300103,
+    "DifficultyType": 0,
+    "DifficultyName": "普通",
+    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem_ZombieSlayer.WBP_BossRushModeItem_ZombieSlayer",
+    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_ZombieSlayer_BossRush.Img_ZombieSlayer_BossRush",
+    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_05.Img_BossRush01_05",
+    "BossIconSel": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush02_05.Img_BossRush02_05",
+    "BossDes": "鬣狗大喇叭",
+    "UnLockDes": "解锁条件：通关修正行动10层",
+    "Tickets": [
+      {
+        "key": 99018,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "Id": 4,
+    "BossName": "无相",
+    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_Wuxiang.Img_BossRush_Wuxiang",
+    "LevelId": 300104,
+    "DifficultyType": 1,
+    "DifficultyName": "困难",
+    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem_Wuxiang.WBP_BossRushModeItem_Wuxiang",
+    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_Wuxiang_BossRush.Img_Wuxiang_BossRush",
+    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_02.Img_BossRush01_02",
+    "BossIconSel": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush02_02.Img_BossRush02_02",
+    "BossDes": "无相",
+    "UnLockDes": "解锁条件：通关修正行动30层",
+    "Tickets": [
+      {
+        "key": 99034,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "Id": 5,
+    "BossName": "马尔科姆",
+    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_Captain.Img_BossRush_Captain",
+    "LevelId": 300105,
+    "DifficultyType": 1,
+    "DifficultyName": "困难",
+    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem_Captain.WBP_BossRushModeItem_Captain",
+    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_Captain_BossRush.Img_Captain_BossRush",
+    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_03.Img_BossRush01_03",
+    "BossIconSel": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush02_03.Img_BossRush02_03",
+    "BossDes": "马尔科姆",
+    "UnLockDes": "解锁条件：通关修正行动30层",
+    "Tickets": [
+      {
+        "key": 99034,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "Id": 6,
+    "BossName": "乔里",
+    "BossNameIcon": "/Game/Rouge/UI/Atlas_DT/BossRush/Frames/Img_BossRush_Chariot.Img_BossRush_Chariot",
+    "LevelId": 300106,
+    "DifficultyType": 1,
+    "DifficultyName": "困难",
+    "BossItemClass": "/Game/Rouge/UI/BossRush/WBP_BossRushModeItem_Chariot.WBP_BossRushModeItem_Chariot",
+    "BossBg": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_Chariot_BossRush.Img_Chariot_BossRush",
+    "BossIcon": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush01_04.Img_BossRush01_04",
+    "BossIconSel": "/Game/Rouge/UI/Atlas_Alpha/A_DT/BossRush/Img_BossRush02_04.Img_BossRush02_04",
+    "BossDes": "乔里",
+    "UnLockDes": "解锁条件：通关修正行动30层",
+    "Tickets": [
+      {
+        "key": 99034,
+        "value": 1
+      }
+    ]
+  }
+]

@@ -1,8 +1,10 @@
 local WBP_TeamMemberItem_C = UnLua.Class()
+
 function WBP_TeamMemberItem_C:Construct()
   self.LastIsHaveMemeber = nil
   self.CurIsHaveMemeber = false
 end
+
 function WBP_TeamMemberItem_C:Show(PlayerInfo, IsCaptain, IsReady)
   self.MemberInfoPanel:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   self.Img_Captain:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -34,6 +36,7 @@ function WBP_TeamMemberItem_C:Show(PlayerInfo, IsCaptain, IsReady)
   end
   self.CurIsHaveMemeber = true
 end
+
 function WBP_TeamMemberItem_C:UpdateReadyState(IsReady)
   if IsReady then
     self.Img_ReadyState:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
@@ -41,6 +44,7 @@ function WBP_TeamMemberItem_C:UpdateReadyState(IsReady)
     self.Img_ReadyState:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_TeamMemberItem_C:Hide()
   self.MemberInfoPanel:SetVisibility(UE.ESlateVisibility.Hidden)
   self.Img_Captain:SetVisibility(UE.ESlateVisibility.Hidden)
@@ -48,6 +52,7 @@ function WBP_TeamMemberItem_C:Hide()
   self.PlayerInfo = nil
   self.CurIsHaveMemeber = false
 end
+
 function WBP_TeamMemberItem_C:ShowTeamMemberAnimation()
   if self.LastIsHaveMemeber == self.CurIsHaveMemeber then
     return
@@ -59,10 +64,13 @@ function WBP_TeamMemberItem_C:ShowTeamMemberAnimation()
   end
   self.LastIsHaveMemeber = self.CurIsHaveMemeber
 end
+
 function WBP_TeamMemberItem_C:ShowNoMemebrAnimation()
   self:PlayAnimationForward(self.ani_NoMemberPanel_in)
 end
+
 function WBP_TeamMemberItem_C:ShowMemberAnimation()
   self:PlayAnimationForward(self.ani_MemberInfoPanel_in)
 end
+
 return WBP_TeamMemberItem_C

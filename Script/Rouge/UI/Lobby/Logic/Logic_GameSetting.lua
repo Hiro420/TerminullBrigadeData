@@ -1,6 +1,8 @@
 local M = {IsInit = false}
 _G.LogicGameSetting = _G.LogicGameSetting or M
 local GammaValueTagName = "Settings.Screen.Common.Lightness"
+local DefaultIdx = 1
+
 function LogicGameSetting.Init()
   if LogicGameSetting.IsInit then
     return
@@ -17,6 +19,7 @@ function LogicGameSetting.Init()
   LogicGameSetting.VisEffectByParentOptionTagList = {}
   LogicGameSetting.DealWithTable()
 end
+
 function LogicGameSetting.DealWithTable()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -106,6 +109,7 @@ function LogicGameSetting.DealWithTable()
     end
   end
 end
+
 function LogicGameSetting.InitGameSettingValue(RowInfo)
   local UserSetting = UE.UGameUserSettings.GetGameUserSettings()
   if not UserSetting then
@@ -120,15 +124,16 @@ function LogicGameSetting.InitGameSettingValue(RowInfo)
       local TargetSettingValue = 0
       for Number, CultureType in pairs(ECultureType) do
         local MatchStr = string.match(CultureType, ISO6391Str)
+        print("LogicGameSetting.InitGameSettingValue Language", MatchStr, CultureType, DefaultLanguage, ISO6391Str)
         if DefaultLanguage == CultureType or nil ~= MatchStr then
-          TargetLocale = DefaultLanguage
+          TargetLocale = CultureType
           TargetSettingValue = Number
           break
         end
       end
       if not TargetLocale then
-        TargetLocale = ECultureType[0]
-        TargetSettingValue = 0
+        TargetLocale = ECultureType[DefaultIdx]
+        TargetSettingValue = DefaultIdx
       end
       UserSetting:SetGameSettingByTag(RowInfo.Tag, TargetSettingValue)
       if not UE.RGUtil or not UE.RGUtil.IsEditor() then
@@ -139,11 +144,29 @@ function LogicGameSetting.InitGameSettingValue(RowInfo)
           UE.URGBlueprintLibrary.CustomSetCurrentCulture(TargetLocale, false)
         end
       end
+    elseif UE.UBlueprintGameplayTagLibrary.GetTagName(RowInfo.Tag) == "Settings.Language.Common.Voice" then
+      local DefaultLanguage = UE.UKismetSystemLibrary.GetDefaultLanguage()
+      local ISO6391Str = string.sub(DefaultLanguage, 1, 2)
+      local TargetSettingValue = -1
+      for CultureType, Number in pairs(CultureToVoice) do
+        local MatchStr = string.match(CultureType, ISO6391Str)
+        if DefaultLanguage == CultureType or nil ~= MatchStr then
+          print("LogicGameSetting.InitGameSettingValue Voice", MatchStr, CultureType, DefaultLanguage, ISO6391Str)
+          TargetSettingValue = Number
+          break
+        end
+      end
+      if -1 == TargetSettingValue then
+        TargetSettingValue = DefaultIdx
+      end
+      UserSetting:SetGameSettingByTag(RowInfo.Tag, TargetSettingValue)
+      UE.UAudioManager.SetVoiceLanguage(EVoiceCultureType[TargetSettingValue])
     else
       UserSetting:SetGameSettingByTag(RowInfo.Tag, RowInfo.DefaultValue)
     end
   end
 end
+
 local IsCurKeyType = function(Key, InputType)
   if UE.UKismetInputLibrary.Key_IsKeyboardKey(Key) then
     return UE.ECommonInputType.MouseAndKeyboard == InputType
@@ -152,6 +175,7 @@ local IsCurKeyType = function(Key, InputType)
   end
   return true
 end
+
 function LogicGameSetting.GetCurPlayerMappableKey(MappableKeyName, InputType)
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   local EnhancedInputLocalPlayerSystem = UE.USubsystemBlueprintLibrary.GetLocalPlayerSubsystem(PC, UE.UEnhancedInputLocalPlayerSubsystem:StaticClass())
@@ -173,6 +197,7 @@ function LogicGameSetting.GetCurPlayerMappableKey(MappableKeyName, InputType)
   end
   return TargetKey
 end
+
 function LogicGameSetting.InitCustomKeySetting()
   local InputSettings = UE.UInputSettings.GetInputSettings()
   if not InputSettings then
@@ -198,6 +223,7 @@ function LogicGameSetting.InitCustomKeySetting()
     EnhancedInputLocalPlayerSystem:AddPlayerMappedKey(KeyRowName, UE.URGBlueprintLibrary.MakeKey(CustomKeyData.KeyName, nil), Options)
   end
 end
+
 function LogicGameSetting.GetScreenSettingValueList()
   local ScreenSettingsList = {
     ["Settings.Screen.Quality.Overall"] = function()
@@ -374,6 +400,7 @@ function LogicGameSetting.GetScreenSettingValueList()
   }
   return ScreenSettingsList
 end
+
 function LogicGameSetting.GetScreenSettingValue(TagName)
   local ScreenSettingsList = LogicGameSetting.GetScreenSettingValueList()
   if not ScreenSettingsList[TagName] then
@@ -394,6 +421,7 @@ function LogicGameSetting.GetScreenSettingValue(TagName)
   end
   return Value
 end
+
 function LogicGameSetting.InitScreenSettingsValue()
   local ScreenSettingsList = LogicGameSetting.GetScreenSettingValueList()
   local RGGameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
@@ -424,6 +452,7 @@ function LogicGameSetting.InitScreenSettingsValue()
     end
   end
 end
+
 function LogicGameSetting.ExecuteScreenSettingsRecommendLogic()
   local RGGameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
   if not RGGameUserSettings then
@@ -432,6 +461,7 @@ function LogicGameSetting.ExecuteScreenSettingsRecommendLogic()
   RGGameUserSettings:RunHardwareBenchmark()
   RGGameUserSettings:ApplyHardwareBenchmarkResults()
 end
+
 function LogicGameSetting.InitGammaValue()
   local SettingGammaValue = LogicGameSetting.GetGameSettingValue(GammaValueTagName)
   local RGGameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
@@ -443,10 +473,12 @@ function LogicGameSetting.InitGammaValue()
     LogicGameSetting.SetGammaValue(SettingGammaValue)
   end
 end
+
 function LogicGameSetting.SetGammaValue(Value)
   local RGGameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
   RGGameUserSettings:SetGammaValue(Value / 10)
 end
+
 function LogicGameSetting.GetAllResolutions()
   local RGGameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
   if not RGGameUserSettings then
@@ -455,6 +487,7 @@ function LogicGameSetting.GetAllResolutions()
   local AllResolutions = RGGameUserSettings:Lua_GetAllResolutionsByName(nil)
   return AllResolutions:ToTable()
 end
+
 function LogicGameSetting.GetAllMonitorNames()
   local RGGameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
   if not RGGameUserSettings then
@@ -463,6 +496,7 @@ function LogicGameSetting.GetAllMonitorNames()
   local AllMonitors = RGGameUserSettings:Lua_GetAllMonitorNames(nil)
   return AllMonitors:ToTable()
 end
+
 function LogicGameSetting.GetDefaultResolution()
   local AllResolutions = LogicGameSetting.GetAllResolutions()
   if AllResolutions and AllResolutions[#AllResolutions] then
@@ -470,6 +504,7 @@ function LogicGameSetting.GetDefaultResolution()
   end
   return ""
 end
+
 function LogicGameSetting.GetAntiAliasingValue(InScalabilityValue)
   if InScalabilityValue > 0 then
     return 0
@@ -477,6 +512,7 @@ function LogicGameSetting.GetAntiAliasingValue(InScalabilityValue)
     return 1
   end
 end
+
 function LogicGameSetting.GetAntiAliasingScalabilityValue(SettingValue)
   if 0 == SettingValue then
     return 4
@@ -484,6 +520,7 @@ function LogicGameSetting.GetAntiAliasingScalabilityValue(SettingValue)
     return 0
   end
 end
+
 function LogicGameSetting.GetFPSList()
   local RowInfo = LogicGameSetting.GetSettingsRowInfo("Settings.Screen.Common.MaxFPS")
   local FPSList = {}
@@ -504,6 +541,7 @@ function LogicGameSetting.GetFPSList()
   print("LogicGameSetting.GetFPSList", "FPSList", table.count(FPSList))
   return FPSList
 end
+
 function LogicGameSetting.GetFPSLimitDisplayOptionIndex(InValue)
   print("LogicGameSetting.GetFPSLimitDisplayOptionIndex", "InValue", InValue)
   local FPSList = LogicGameSetting.GetFPSList()
@@ -515,6 +553,7 @@ function LogicGameSetting.GetFPSLimitDisplayOptionIndex(InValue)
   end
   return FPSList[tostring(math.ceil(InValue))] and FPSList[tostring(math.ceil(InValue))] or MaxOptionIndex
 end
+
 function LogicGameSetting.GetFPSLimitValue(Index)
   local FPSList = LogicGameSetting.GetFPSList()
   for Value, OptionIndex in pairs(FPSList) do
@@ -524,6 +563,7 @@ function LogicGameSetting.GetFPSLimitValue(Index)
   end
   return 0
 end
+
 function LogicGameSetting.ShowGameSettingPanel()
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
   if SystemOpenMgr and not SystemOpenMgr:IsSystemOpen(SystemOpenID.SETTINGS) then
@@ -554,12 +594,15 @@ function LogicGameSetting.ShowGameSettingPanel()
     end
   end
 end
+
 function LogicGameSetting.GetLabelRowInfo(TagName)
   return LogicGameSetting.AllGameSettingsLabelRowInfo[TagName]
 end
+
 function LogicGameSetting.GetSettingsRowInfo(TagName)
   return LogicGameSetting.AllGameSettingsRowInfo[TagName]
 end
+
 function LogicGameSetting.GetTempOverallQualityValue()
   local TagName = "Settings.Screen.Quality.Overall"
   local TempValue = LogicGameSetting.GetTempGameSettingValue(TagName)
@@ -568,6 +611,7 @@ function LogicGameSetting.GetTempOverallQualityValue()
   end
   return TempValue
 end
+
 function LogicGameSetting.SetTempGameSettingsValue(TagName, Value, IsNeedBroadcast)
   local CurrentSettingValue = LogicGameSetting.GetGameSettingValue(TagName)
   if CurrentSettingValue ~= Value then
@@ -604,14 +648,17 @@ function LogicGameSetting.SetTempGameSettingsValue(TagName, Value, IsNeedBroadca
     EventSystem.Invoke(EventDef.GameSettings.OnTempGameSettingListChanged, table.count(LogicGameSetting.TempGameSettingsValueList) > 0, TagName)
   end
 end
+
 function LogicGameSetting.GetTempGameSettingValue(TagName)
   return LogicGameSetting.TempGameSettingsValueList[TagName]
 end
+
 function LogicGameSetting.ClearTempGameSettingValueList()
   LogicGameSetting.TempGameSettingsValueList = {}
   UE.URGBlueprintLibrary.TriggerClearTempGameSettingValueList()
   EventSystem.Invoke(EventDef.GameSettings.OnTempGameSettingListChanged, table.count(LogicGameSetting.TempGameSettingsValueList) > 0)
 end
+
 function LogicGameSetting.SetPreCustomKeyList(KeyRowName, InKey, InKeyName, InOldKey)
   if InKey then
     local TempTable = {
@@ -625,13 +672,16 @@ function LogicGameSetting.SetPreCustomKeyList(KeyRowName, InKey, InKeyName, InOl
   end
   EventSystem.Invoke(EventDef.GameSettings.OnTempGameSettingListChanged, table.count(LogicGameSetting.PreCustomKeyList) > 0)
 end
+
 function LogicGameSetting.GetPreCustomKeyList()
   return LogicGameSetting.PreCustomKeyList
 end
+
 function LogicGameSetting.ClearPreCustomKeyList()
   LogicGameSetting.PreCustomKeyList = {}
   EventSystem.Invoke(EventDef.GameSettings.OnTempGameSettingListChanged, table.count(LogicGameSetting.PreCustomKeyList) > 0)
 end
+
 function LogicGameSetting.GetGameSettingValue(TagName)
   local RGGameUserSettings = UE.URGGameUserSettings.GetRGGameUserSettings()
   if not RGGameUserSettings then
@@ -644,12 +694,15 @@ function LogicGameSetting.GetGameSettingValue(TagName)
   local GameplayTag = UE.URGBlueprintLibrary.RequestNameToGameplayTag(TagName, nil)
   return RGGameUserSettings:GetGameSettingByTag(GameplayTag)
 end
+
 function LogicGameSetting.GetSecondLabelsByFirstLabel(LabelName)
   return LogicGameSetting.GameSettingsTreeStruct[LabelName]
 end
+
 function LogicGameSetting.GetSettingsBySecondLabel(LabelName)
   return LogicGameSetting.GameSettingsParentChildTreeStruct[LabelName]
 end
+
 function LogicGameSetting.GetCurSelectedKeyNameByKeyRowName(KeyRowName, KeyIconUseType, TargetInputType)
   local KeyName = KeyRowName
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
@@ -668,6 +721,7 @@ function LogicGameSetting.GetCurSelectedKeyNameByKeyRowName(KeyRowName, KeyIconU
   end
   return LogicGameSetting.GetKeyDisplayInfoByKeyName(KeyName, KeyIconUseType)
 end
+
 function LogicGameSetting.GetKeyDisplayInfoByKeyName(KeyName, KeyIconUseType)
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   local CommonInputSubsystem = UE.USubsystemBlueprintLibrary.GetLocalPlayerSubsystem(PC, UE.UCommonInputSubsystem:StaticClass())
@@ -697,21 +751,27 @@ function LogicGameSetting.GetKeyDisplayInfoByKeyName(KeyName, KeyIconUseType)
   end
   return KeyName, false
 end
+
 function LogicGameSetting.GetDamageNumberStyleTagName()
   return "Settings.GameSetting.DamageNumber.DamageNumberStyle"
 end
+
 function LogicGameSetting.GetTableRowNameByInputRowName(InputRowName)
   return LogicGameSetting.GamepadCustomKeyRowNameToTableRowName[InputRowName] and LogicGameSetting.GamepadCustomKeyRowNameToTableRowName[InputRowName] or InputRowName
 end
+
 function LogicGameSetting.GetGamepadCanNotChangeKeyNameList(...)
   return LogicGameSetting.GamepadCanNotChangeKeyNameList
 end
+
 function LogicGameSetting.SetVisEffectByParentOptionTag(TagName, IsShow)
   LogicGameSetting.VisEffectByParentOptionTagList[TagName] = IsShow
 end
+
 function LogicGameSetting.GetVisEffectByParentOptionTagList(...)
   return LogicGameSetting.VisEffectByParentOptionTagList
 end
+
 function LogicGameSetting.Clear()
   LogicGameSetting.IsInit = false
   LogicGameSetting.GameSettingsTreeStruct = {}

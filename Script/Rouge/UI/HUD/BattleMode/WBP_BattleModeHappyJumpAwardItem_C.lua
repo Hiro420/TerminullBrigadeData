@@ -8,9 +8,11 @@ local GameStage = {
   FailedStage = 5,
   SuccessStage = 6
 }
+
 function WBP_BattleModeHappyJumpAwardItem_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_BattleModeHappyJumpAwardItem_C:Init(ItemId, Num)
   UpdateVisibility(self, true)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
@@ -22,10 +24,13 @@ function WBP_BattleModeHappyJumpAwardItem_C:Init(ItemId, Num)
   end
   self.RgTextAwardNum:SetText(Num)
 end
+
 function WBP_BattleModeHappyJumpAwardItem_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_BattleModeHappyJumpAwardItem_C:Destruct()
   self.Overridden.Destruct(self)
 end
+
 return WBP_BattleModeHappyJumpAwardItem_C

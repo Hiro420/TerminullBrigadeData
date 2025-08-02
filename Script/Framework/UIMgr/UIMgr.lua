@@ -14,6 +14,7 @@ local UIMutexRule = require("UI.UIMutexRule")
 local UIMutexList = require("UI.UIMutexList")
 local SkinData = require("Modules.Appearance.Skin.SkinData")
 local UIMgr = LuaClass()
+
 function UIMgr:Ctor()
   self.bInited = false
   self.UIRoot = nil
@@ -35,6 +36,7 @@ function UIMgr:Ctor()
   self.bClearDirtyViewing = false
   self.bHideThenDestroy = false
 end
+
 function UIMgr:Init(RootZOrder)
   if UE.RGUtil.IsDedicatedServer() then
     return
@@ -55,22 +57,30 @@ function UIMgr:Init(RootZOrder)
   UIUtil.ViewportScale = scale
   UIUtil.ViewportScreenSize = screenSize
 end
+
 function UIMgr:IsInitialized()
   return self.bInited == true and self.UIRoot ~= nil
 end
+
 function UIMgr:Shutdown()
   self:_ClearTick()
 end
+
 function UIMgr:ClearDirtyView()
   print("=====UIMgr:ClearDirtyView()=====")
   self.bClearDirtyViewing = true
   UIModelMgr:ClearDirtyViewModel()
   self.bClearDirtyViewing = false
 end
+
 function UIMgr:InitRoot(RootZOrder)
   print("UIMgr:InitRoot()")
   if self.UIRoot == nil or UE.RGUtil.IsUObjectValid(self.UIRoot.Object) == false then
     self.UIRoot = UIUtil.GetWidgetLuaCtrl("/Game/Rouge/UI/WBP_Root")
+    if UE.URGPlatformFunctionLibrary.IsLIPassEnabled() then
+      print("UIMgr:InitRoot - LIPass is enabled, setting UIRoot to LIPass", self.UIRoot.RootPanel)
+      UE.ULevelInfiniteAPI.SetUIRoot(self.UIRoot.RootPanel)
+    end
     self.UIRootProxy = UnLua.Ref(self.UIRoot.Object)
   end
   local UIManager = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGUIManager:StaticClass())
@@ -84,6 +94,7 @@ function UIMgr:InitRoot(RootZOrder)
   end
   self.bAddToViewport = true
 end
+
 function UIMgr:Clear()
   print("=====UIMgr:Clear()=====")
   self:ClearAllViews(true)
@@ -92,7 +103,12 @@ function UIMgr:Clear()
     self.UIRootProxy = nil
   end
   self.UIRoot = nil
+  if UE.URGPlatformFunctionLibrary.IsLIPassEnabled() then
+    print("UIMgr:InitRoot - LIPass is enabled, clear UIRoot")
+    UE.ULevelInfiniteAPI.SetUIRoot(nil)
+  end
 end
+
 function UIMgr:Reset()
   if UE.RGUtil.IsDedicatedServer() then
     return
@@ -100,10 +116,12 @@ function UIMgr:Reset()
   print("=====UIMgr:Reset()=====")
   self:InitRoot()
 end
+
 function UIMgr:ToggleViewHideThenDestroy()
   self.bHideThenDestroy = not self.bHideThenDestroy
   print("UIMgr.bHideThenDestroy:", self.bHideThenDestroy)
 end
+
 function UIMgr:Show(viewId, bHideOther, ...)
   if self:IsInitialized() == false then
     print("UIMgr:Show - UIMgr is not initialized")
@@ -146,15 +164,18 @@ function UIMgr:Show(viewId, bHideOther, ...)
   luaInstance.bHideOther = bHideOther
   return luaInstance
 end
+
 function UIMgr:ShowLink(viewId, bHideOther, LinkParams, ...)
   local luaInst = self:Show(viewId, bHideOther, ...)
   if luaInst and luaInst.OnShowLink then
     luaInst:OnShowLink(LinkParams, ...)
   end
 end
+
 function UIMgr:IsSuppressExclusiveView()
   return self.SuppressExclusiveView and self.SuppressExclusiveView > 0
 end
+
 function UIMgr:IsExclusiveView(viewId)
   local rlt = false
   if UIMutexRule.Exclusive and next(UIMutexRule.Exclusive) then
@@ -167,6 +188,7 @@ function UIMgr:IsExclusiveView(viewId)
   end
   return rlt
 end
+
 function UIMgr:PushExclusiveView(viewId)
   self.ExclusiveViewRecoverList = self.ExclusiveViewRecoverList or {}
   self.SuppressExclusiveView = self.SuppressExclusiveView or 0
@@ -183,6 +205,7 @@ function UIMgr:PushExclusiveView(viewId)
     table.insert(self.ExclusiveViewRecoverList, viewId)
   end
 end
+
 function UIMgr:PopExclusiveView()
   self.ExclusiveViewRecoverList = self.ExclusiveViewRecoverList or {}
   local viewId = table.remove(self.ExclusiveViewRecoverList)
@@ -197,6 +220,7 @@ function UIMgr:PopExclusiveView()
   end
   self.SuppressExclusiveView = self.SuppressExclusiveView - 1
 end
+
 function UIMgr:ShowInit(luaInstance, viewId, bHideOther, ...)
   local viewDef = self:GetViewDefine(viewId)
   if not viewDef then
@@ -319,6 +343,7 @@ function UIMgr:ShowInit(luaInstance, viewId, bHideOther, ...)
     self.BackUIStack:Push(viewId, viewId)
   end
 end
+
 function UIMgr:DoShowView(viewId, bHideOther, ...)
   local viewDef = self:GetViewDefine(viewId)
   if not viewDef then
@@ -352,6 +377,7 @@ function UIMgr:DoShowView(viewId, bHideOther, ...)
   self:ShowInit(luaInstance, viewId, bHideOther, ...)
   return luaInstance
 end
+
 function UIMgr:_RollbackShow(viewId, bJustSendHideNotify)
   if not self.bInited then
     return
@@ -383,6 +409,7 @@ function UIMgr:_RollbackShow(viewId, bJustSendHideNotify)
   end
   self:_RegisterViewTick(viewId, luaInstance)
 end
+
 function UIMgr:HideAndRollback(viewIdToHide)
   if not viewIdToHide then
     return
@@ -414,6 +441,7 @@ function UIMgr:HideAndRollback(viewIdToHide)
     self:DestroyView(viewToHide, viewIdToHide)
   end
 end
+
 function UIMgr:Hide(viewId, bRollback, clear, withoutAnimation)
   if not viewId then
     error("UIMgr:Hide viewId is nil")
@@ -476,6 +504,7 @@ function UIMgr:Hide(viewId, bRollback, clear, withoutAnimation)
     return
   end
 end
+
 function UIMgr:ExcuteHide(viewId, clear)
   if self.DelayHideList[viewId] then
     GlobalTimer.DeleteDelayCallback(self.DelayHideList[viewId].timerId)
@@ -507,6 +536,7 @@ function UIMgr:ExcuteHide(viewId, clear)
     return
   end
 end
+
 function UIMgr:ShrinkLruDisableViews(maxLimitNum, destroyCntOnce)
   local breakIndex = 0
   while maxLimitNum < self.LruDisableViews:Count() do
@@ -521,6 +551,7 @@ function UIMgr:ShrinkLruDisableViews(maxLimitNum, destroyCntOnce)
     end
   end
 end
+
 function UIMgr:HideView(luaInstance, viewId, bHideOther, bJustSendHideNotify)
   if not bJustSendHideNotify then
     UIUtil.SetVisibility(luaInstance.Object, false)
@@ -538,6 +569,7 @@ function UIMgr:HideView(luaInstance, viewId, bHideOther, bJustSendHideNotify)
     end
   end
 end
+
 function UIMgr:HideViewImp(luaInstance, viewId, bHideOther)
   if luaInstance.OnHideCallback ~= nil then
     luaInstance.OnHideCallback()
@@ -585,6 +617,7 @@ function UIMgr:HideViewImp(luaInstance, viewId, bHideOther)
   end
   self:_UnregisterViewTick(viewId)
 end
+
 function UIMgr:HideAllActiveViews(exceptViewIds)
   if nil == exceptViewIds or nil == next(exceptViewIds) then
     self:ClearActiveViews()
@@ -603,16 +636,20 @@ function UIMgr:HideAllActiveViews(exceptViewIds)
     self:Hide(viewId, nil, false, true)
   end
 end
+
 function UIMgr:IsShow(viewId)
   local v = self.ActiveViews:Get(viewId)
   return nil ~= v and UIUtil.IsVisible(v.Object) == true
 end
+
 function UIMgr:IsDelayHide(viewId)
   return self.DelayHideList[viewId] ~= nil
 end
+
 function UIMgr:GetAllActiveViews()
   return self.ActiveViews._table
 end
+
 function UIMgr:IsViewInstanceShow(viewInstance)
   for k, v in pairs(self.ActiveViews._table) do
     if v.data ~= nil and v.data == viewInstance then
@@ -621,9 +658,11 @@ function UIMgr:IsViewInstanceShow(viewInstance)
   end
   return false
 end
+
 function UIMgr:GetViewDefine(viewId)
   return ViewInfoDef[viewId]
 end
+
 function UIMgr:GetFromActiveView(viewId)
   local luaInstance = self.ActiveViews:Get(viewId)
   if luaInstance then
@@ -631,12 +670,14 @@ function UIMgr:GetFromActiveView(viewId)
   end
   return nil
 end
+
 function UIMgr:GetLuaFromActiveView(viewId)
   if self:IsShow(viewId) then
     return self.ActiveViews:Get(viewId)
   end
   return nil
 end
+
 function UIMgr:GetFromDisableView(viewId)
   if self.DisableViews ~= nil then
     local luaInstance = self.DisableViews:Get(viewId)
@@ -650,6 +691,7 @@ function UIMgr:GetFromDisableView(viewId)
   end
   return nil
 end
+
 function UIMgr:GetFromDisableView(viewId)
   if self.DisableViews ~= nil then
     local luaInstance = self.DisableViews:Get(viewId)
@@ -663,6 +705,7 @@ function UIMgr:GetFromDisableView(viewId)
   end
   return nil
 end
+
 function UIMgr:GetLuaFromDisableView(viewId, bOnlyDisableViews)
   if self.DisableViews ~= nil then
     local luaInstance = self.DisableViews:Get(viewId)
@@ -673,22 +716,26 @@ function UIMgr:GetLuaFromDisableView(viewId, bOnlyDisableViews)
   end
   return nil
 end
+
 function UIMgr:GetLuaFromLruDisableView(viewId)
   local luaInstance = self.LruDisableViews:Get(viewId)
   return luaInstance
 end
+
 function UIMgr:GetUIRoot()
   if self.UIRoot then
     return self.UIRoot
   end
   return nil
 end
+
 function UIMgr:GetUIRootLayerObject(layer)
   if self.UIRoot then
     return self.UIRoot:GetLayerObject(layer)
   end
   return nil
 end
+
 function UIMgr:ClearDisableViews()
   print("UIMgr:ClearDisableViews")
   if self.DisableViews then
@@ -703,10 +750,12 @@ function UIMgr:ClearDisableViews()
   end
   self:ClearLruDisableViews(false)
 end
+
 function ClearUICache()
   print("UIMgr ClearUICache")
   self:ClearLruDisableViews(false)
 end
+
 function UIMgr:ClearActiveViews(saveHold)
   print("UIMgr:ClearActiveViews")
   if not self.ActiveViews then
@@ -731,6 +780,7 @@ function UIMgr:ClearActiveViews(saveHold)
     end
   end
 end
+
 function UIMgr:RevertHoldUI()
   if not self.HoldUIDic or not next(self.HoldUIDic) then
     return
@@ -739,6 +789,7 @@ function UIMgr:RevertHoldUI()
     self:Show(key, nil, table.unpack(value))
   end
 end
+
 function UIMgr:ClearDelayHideViews()
   print("UIMgr:ClearDelayHideViews")
   local HideList = {}
@@ -752,6 +803,7 @@ function UIMgr:ClearDelayHideViews()
     end
   end
 end
+
 function UIMgr:ClearLruDisableViews(bClearAll)
   print("UIMgr:ClearLruDisableViews")
   local nCount = self.LruDisableViews:Count()
@@ -762,6 +814,7 @@ function UIMgr:ClearLruDisableViews(bClearAll)
     end
   end
 end
+
 function UIMgr:ClearAllViews(IsSameMap)
   print("UIMgr:ClearAllViews")
   self:ClearDelayHideViews()
@@ -773,6 +826,7 @@ function UIMgr:ClearAllViews(IsSameMap)
   self.LayerZOrder = {}
   self:_ClearTick()
 end
+
 function UIMgr:DestroyView(luaInstance, viewId)
   if luaInstance then
     local viewDef = self:GetViewDefine(viewId)
@@ -791,6 +845,7 @@ function UIMgr:DestroyView(luaInstance, viewId)
     end
   end
 end
+
 function UIMgr:DoDestroyView(luaInstance)
   if luaInstance then
     if luaInstance.OnDestroy then
@@ -799,6 +854,7 @@ function UIMgr:DoDestroyView(luaInstance)
     UIUtil.ClearWhenDestroy(luaInstance)
   end
 end
+
 function UIMgr:CreateView(viewId, ...)
   local viewDef = self:GetViewDefine(viewId)
   if nil == viewDef then
@@ -828,6 +884,7 @@ function UIMgr:CreateView(viewId, ...)
   end
   return nil
 end
+
 function UIMgr:PreloadWidget(viewId, cnt)
   local preloadPool = self.PreloadWidgetPool[viewId]
   if preloadPool and cnt <= #preloadPool then
@@ -858,6 +915,7 @@ function UIMgr:PreloadWidget(viewId, cnt)
     end
   end
 end
+
 function UIMgr:GetPreloadWidget(viewId)
   local preloadPool = self.PreloadWidgetPool[viewId]
   if preloadPool and #preloadPool > 0 then
@@ -866,10 +924,12 @@ function UIMgr:GetPreloadWidget(viewId)
   end
   return nil
 end
+
 function UIMgr:ClearPreloadWidgets()
   print("UIMgr:ClearPreloadWidgets()")
   self.PreloadWidgetPool = {}
 end
+
 function UIMgr:CreateSubView(viewId, BP_obj, needClone, ...)
   local viewDef = self:GetViewDefine(viewId)
   if nil == viewDef then
@@ -897,15 +957,18 @@ function UIMgr:CreateSubView(viewId, BP_obj, needClone, ...)
   end
   return nil
 end
+
 function UIMgr:CreateWidget(bpClass, nameStr, isMain)
   local bpInst = UWidgetBlueprintLibrary.Create(GameInstance, bpClass)
   return bpInst
 end
+
 function UIMgr:InitLayer()
   for _, nLayer in pairs(UILayer) do
     self.MaxDepth[nLayer] = nLayer * 100 + 1
   end
 end
+
 function UIMgr:GenerateNewLayer(nLayerType)
   if self.MaxDepth[nLayerType] ~= nil then
     local LayerIdx = self.MaxDepth[nLayerType] + 1
@@ -914,9 +977,11 @@ function UIMgr:GenerateNewLayer(nLayerType)
   end
   return false
 end
+
 function UIMgr:GetLayerMaxDepth(nLayerType)
   return self.MaxDepth[nLayerType]
 end
+
 function UIMgr:IsOnShowArgChange(luaInstance, newArg)
   if not luaInstance then
     return true
@@ -930,6 +995,7 @@ function UIMgr:IsOnShowArgChange(luaInstance, newArg)
     return true
   end
 end
+
 function UIMgr:_InitTick()
   self.TickMap = {}
   self.TickDelMap = {}
@@ -939,10 +1005,12 @@ function UIMgr:_InitTick()
     self.TickIndex = nil
   end
 end
+
 function UIMgr:_ClearTick()
   self.TickMap = {}
   self.TickDelMap = {}
 end
+
 function UIMgr:_CheckAndStartTick()
   if self.TickMapCount > 0 and self.TickIndex == nil then
     self.TickIndex = GlobalTimer.AddTickTimer(function(deltaSeconds)
@@ -951,12 +1019,14 @@ function UIMgr:_CheckAndStartTick()
     end, 0)
   end
 end
+
 function UIMgr:_CheckAndStopTick()
   if 0 == self.TickMapCount and self.TickIndex then
     GlobalTimer.DeleteTickTimer(self.TickIndex)
     self.TickIndex = nil
   end
 end
+
 function UIMgr:_RegisterViewTick(viewId, viewInst)
   if not viewId or not viewInst then
     return
@@ -970,16 +1040,19 @@ function UIMgr:_RegisterViewTick(viewId, viewInst)
   end
   self:_CheckAndStartTick()
 end
+
 function UIMgr:_RemoveViewTick(viewId)
   if self.TickMap[viewId] ~= nil and not self.TickDelMap[viewId] then
     self.TickDelMap[viewId] = true
     self.TickMapCount = self.TickMapCount - 1
   end
 end
+
 function UIMgr:_UnregisterViewTick(viewId)
   self:_RemoveViewTick(viewId)
   self:_CheckAndStopTick()
 end
+
 function UIMgr:_LuaTick(deltaSeconds)
   for k, v in pairs(self.TickMap) do
     if not self.TickDelMap[k] and v.OnTick then
@@ -1007,4 +1080,5 @@ function UIMgr:_LuaTick(deltaSeconds)
     end
   end
 end
+
 _G.UIMgr = _G.UIMgr or UIMgr.New()

@@ -1,5 +1,6 @@
 local WBP_HeroSelectionRoleName_C = UnLua.Class()
 local ProficiencyData = require("Modules.Proficiency.ProficiencyData")
+
 function WBP_HeroSelectionRoleName_C:Show(PlayerInfo)
   self:SetVisibility(UE.ESlateVisibility.SelfHitTestInvisible)
   if self.PlayerInfo and self.PlayerInfo.roleid == PlayerInfo.roleid then
@@ -22,9 +23,11 @@ function WBP_HeroSelectionRoleName_C:Show(PlayerInfo)
     self.PlatformIconPanel:UpdateChannelInfo(self.PlayerInfo.roleid, true, self.PlayerInfo.channelUID)
   end
 end
+
 function WBP_HeroSelectionRoleName_C:BindOnUpdateMyTeamInfo()
   self:ChangePickStateVis()
 end
+
 function WBP_HeroSelectionRoleName_C:BindOnRoleItemClicked(HeroId)
   local RowInfo = LogicRole.GetCharacterTableRow(HeroId)
   if RowInfo then
@@ -34,6 +37,7 @@ function WBP_HeroSelectionRoleName_C:BindOnRoleItemClicked(HeroId)
   local MaxLevel = ProficiencyData:GetMaxProfyLevel(HeroId)
   self:UpdateProfyInfo(MaxUnLockLevel, MaxLevel)
 end
+
 function WBP_HeroSelectionRoleName_C:UpdateProfyInfo(MaxUnLockLevel, MaxLevel)
   self.RGTextProfyLv:SetText(MaxUnLockLevel)
   local Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBProfyLevel, MaxUnLockLevel)
@@ -51,6 +55,7 @@ function WBP_HeroSelectionRoleName_C:UpdateProfyInfo(MaxUnLockLevel, MaxLevel)
     UpdateVisibility(self.URGImage_BigAward_Recieved, false)
   end
 end
+
 function WBP_HeroSelectionRoleName_C:ChangePickStateVis()
   local TeamInfo = DataMgr.GetTeamInfo()
   for index, SinglePlayerInfo in ipairs(TeamInfo.players) do
@@ -73,6 +78,7 @@ function WBP_HeroSelectionRoleName_C:ChangePickStateVis()
     end
   end
 end
+
 function WBP_HeroSelectionRoleName_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   if not self.PlayerInfo then
@@ -82,8 +88,10 @@ function WBP_HeroSelectionRoleName_C:Hide()
   EventSystem.RemoveListener(EventDef.Lobby.UpdateMyTeamInfo, self.BindOnUpdateMyTeamInfo, self)
   EventSystem.RemoveListener(EventDef.Lobby.RoleItemClicked, self.BindOnRoleItemClicked, self)
 end
+
 function WBP_HeroSelectionRoleName_C:Destruct()
   EventSystem.RemoveListener(EventDef.Lobby.UpdateMyTeamInfo, self.BindOnUpdateMyTeamInfo, self)
   EventSystem.RemoveListener(EventDef.Lobby.RoleItemClicked, self.BindOnRoleItemClicked, self)
 end
+
 return WBP_HeroSelectionRoleName_C

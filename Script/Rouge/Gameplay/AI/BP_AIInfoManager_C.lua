@@ -1,4 +1,5 @@
 local BP_AIInfoManager_C = UnLua.Class()
+
 function BP_AIInfoManager_C:ClientBeginPlay()
   self.Overridden.ClientBeginPlay(self)
   self:BindBossHealthChangedDelegate()
@@ -9,6 +10,7 @@ function BP_AIInfoManager_C:ClientBeginPlay()
   ListenObjectMessage(nil, GMP.MSG_OnEnemyAICountChange, self, self.BindOnEnemyAICountChange)
   ListenObjectMessage(nil, GMP.MSG_UI_HUD_OnCreate, self, self.BindOnCreateHUD)
 end
+
 function BP_AIInfoManager_C:BindBossHealthChangedDelegate()
   if not (self.OwnerActor and self.OwnerActor.IsBossAI) or not self.OwnerActor:IsBossAI() then
     return
@@ -18,12 +20,14 @@ function BP_AIInfoManager_C:BindBossHealthChangedDelegate()
     CoreComponent.ClientHealthChanged:Add(self, self.BindOnHealthAttributeChanged)
   end
 end
+
 function BP_AIInfoManager_C:BindOnHealthAttributeChanged(NewValue, OldValue)
   local TypeId = self.OwnerActor:GetTypeID()
   local CoreComponent = self.OwnerActor:GetComponentByClass(UE.URGCoreComponent:StaticClass())
   local HealthPercent = CoreComponent:GetHealthPercent()
   BattleData.SetBossHealthInfo(TypeId, HealthPercent)
 end
+
 function BP_AIInfoManager_C:BindChangeAIInfoVisFunction()
   self.Overridden.BindChangeAIInfoVisFunction(self)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
@@ -31,12 +35,14 @@ function BP_AIInfoManager_C:BindChangeAIInfoVisFunction()
     Character.OnNotifyCurAimTargetPartIndex:Add(self, self.BindOnNotifyCurAimTargetPartIndex)
   end
 end
+
 function BP_AIInfoManager_C:BindOnNotifyCurAimTargetPartIndex(CurAimTarget, PartIndex)
   if CurAimTarget ~= self.OwnerActor then
     return
   end
   LogicBodyPart.ShowOrHidePartInfo(CurAimTarget, PartIndex)
 end
+
 function BP_AIInfoManager_C:BindOnPawnDeath()
   self.IsDeath = true
   self:ShowOrHideInfoWidget(false)
@@ -45,6 +51,7 @@ function BP_AIInfoManager_C:BindOnPawnDeath()
     self:RemoveAppearMark()
   end
 end
+
 function BP_AIInfoManager_C:BindOnEnemyAICountChange(Count)
   if self.IsBeginPlayMark then
     return
@@ -62,10 +69,12 @@ function BP_AIInfoManager_C:BindOnEnemyAICountChange(Count)
     self:RemoveAppearMark()
   end
 end
+
 function BP_AIInfoManager_C:BindOnForceChangeAIInfoVis(IsShow)
   self.IsForceHideAIInfo = not IsShow
   self:ShowOrHideInfoWidget(IsShow)
 end
+
 function BP_AIInfoManager_C:BindOnChangeAllUIVis(IsHide, IsShowDamageNumber)
   self.IsHideByGM = IsHide
   if self.IsHideByGM then
@@ -73,6 +82,7 @@ function BP_AIInfoManager_C:BindOnChangeAllUIVis(IsHide, IsShowDamageNumber)
   end
   LogicBodyPart.SetCanShowBodyPartWidget(IsHide)
 end
+
 function BP_AIInfoManager_C:GetWidgetComponent()
   local TargetWidgetComp
   if self.OwnerActor.InfoWidgetComp then
@@ -90,6 +100,7 @@ function BP_AIInfoManager_C:GetWidgetComponent()
   end
   return TargetWidgetComp
 end
+
 function BP_AIInfoManager_C:ShowOrHideInfoWidget(IsShow)
   self.Overridden.ShowOrHideInfoWidget(self, IsShow)
   self.IsShowInfoWidget = false
@@ -137,6 +148,7 @@ function BP_AIInfoManager_C:ShowOrHideInfoWidget(IsShow)
   end
   self.IsShowInfoWidget = not WidgetCom.bHiddenInGame
 end
+
 function BP_AIInfoManager_C:ShowAppearMark(IsBeginPlayMark)
   local Quality = BattleUIScalability:GetAIInfoScalability()
   if Quality == UIQuality.LOW then
@@ -153,6 +165,7 @@ function BP_AIInfoManager_C:ShowAppearMark(IsBeginPlayMark)
   end
   self:DoShowAppearMark(IsBeginPlayMark)
 end
+
 function BP_AIInfoManager_C:DoShowAppearMark(IsBeginPlayMark)
   local ActorId = self.OwnerActor.GetActorId and self.OwnerActor:GetActorId() or 0
   local MarkRowName = self.DefaultMarkRowName
@@ -167,6 +180,7 @@ function BP_AIInfoManager_C:DoShowAppearMark(IsBeginPlayMark)
     self.OnFinishAppearMarkTimer
   }, self.AppearMarkDuration, false)
 end
+
 function BP_AIInfoManager_C:OnFinishAppearMarkTimer()
   self.IsBeginPlayMark = nil
   if self.IsPermanentMark then
@@ -186,12 +200,14 @@ function BP_AIInfoManager_C:OnFinishAppearMarkTimer()
     end
   end
 end
+
 function BP_AIInfoManager_C:BindOnCreateHUD()
   if self.IsNeedTriggerMark then
     self:DoShowAppearMark(self.IsBeginPlayMark)
     self.IsNeedTriggerMark = nil
   end
 end
+
 function BP_AIInfoManager_C:OnBuffAdded_Event_0(AddedBuff)
   self.Overridden.OnBuffAdded_Event_0(self, AddedBuff)
   local BuffDataSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.UBuffDataGISubsystem:StaticClass())
@@ -218,6 +234,7 @@ function BP_AIInfoManager_C:OnBuffAdded_Event_0(AddedBuff)
     end
   end
 end
+
 function BP_AIInfoManager_C:OnBuffRemove_Event_0(AddedBuff)
   self.Overridden.OnBuffRemove_Event_0(self, AddedBuff)
   local WidgetCom = self:GetWidgetComponent()
@@ -237,9 +254,11 @@ function BP_AIInfoManager_C:OnBuffRemove_Event_0(AddedBuff)
     self:HideAIInfo()
   end
 end
+
 function BP_AIInfoManager_C:ShowOrHidePartInfoWidget(DamageParams)
   LogicBodyPart.ShowOrHidePartInfo(self.OwnerActor, UE.URGDamageStatics.GetPartIndex(DamageParams))
 end
+
 function BP_AIInfoManager_C:ReceiveEndPlay(EndPlayReason)
   self.Overridden.ReceiveEndPlay(self, EndPlayReason)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
@@ -256,6 +275,7 @@ function BP_AIInfoManager_C:ReceiveEndPlay(EndPlayReason)
   UnListenObjectMessage(GMP.MSG_UI_AIInfo_ForceChangeAIInfoVis, self)
   UnListenObjectMessage(GMP.MSG_GM_ChangeAllUIVis, self)
 end
+
 function BP_AIInfoManager_C:InitVirusInfo()
   if self.OwnerActor == nil or nil == self.OwnerActor.CurrentColor then
     return
@@ -268,6 +288,7 @@ function BP_AIInfoManager_C:InitVirusInfo()
   Widget:InitInfo(self.OwnerActor)
   ListenObjectMessage(nil, GMP.MSG_Level_LevelAffix_VirusColor, self, self.BindOnVirusColorChange)
 end
+
 function BP_AIInfoManager_C:BindOnVirusColorChange(Character, ColorProgress)
   local ownerCharacter = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if ownerCharacter ~= Character then
@@ -280,6 +301,7 @@ function BP_AIInfoManager_C:BindOnVirusColorChange(Character, ColorProgress)
   local Widget = WidgetCom:GetWidget()
   Widget:OnVirusColorChange(ColorProgress)
 end
+
 function BP_AIInfoManager_C:ReceiveTick(DeltaSeconds)
   self.Overridden.ReceiveTick(self, DeltaSeconds)
   if not self.OwnerActor then
@@ -303,10 +325,12 @@ function BP_AIInfoManager_C:ReceiveTick(DeltaSeconds)
     self:RemoveAppearMark()
   end
 end
+
 function BP_AIInfoManager_C:ReceiveEndPlay(EndPlayReason)
   self.Overridden.ReceiveEndPlay(self, EndPlayReason)
   self.IsEnd = true
 end
+
 function BP_AIInfoManager_C:ClearMarkTimer()
   if self.AppearMarkTimer then
     if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.AppearMarkTimer) then
@@ -315,4 +339,5 @@ function BP_AIInfoManager_C:ClearMarkTimer()
     self.AppearMarkTimer = nil
   end
 end
+
 return BP_AIInfoManager_C

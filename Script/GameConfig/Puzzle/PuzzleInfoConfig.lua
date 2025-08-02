@@ -15,6 +15,7 @@ local PuzzleInfoConfig = {
     MutationFailTipId = 300015,
     MutataionNotChangeTipId = 300014,
     IsShowGradeIcon = false,
+    InscriptionNameFmt = NSLOCTEXT("PuzzleData", "InscriptionNameFmt", "{0}{1}"),
 }
 
 return PuzzleInfoConfig

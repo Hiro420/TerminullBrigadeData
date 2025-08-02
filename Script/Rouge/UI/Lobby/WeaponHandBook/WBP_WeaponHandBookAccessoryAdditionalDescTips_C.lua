@@ -1,9 +1,12 @@
 local WBP_WeaponHandBookAccessoryAdditionalDescTips_C = UnLua.Class()
 local WeaponDescItemClsPath = "/Game/Rouge/UI/Lobby/WeaponHandBook/WBP_WeaponHandBookAccessoryAdditionalDescItem.WBP_WeaponHandBookAccessoryAdditionalDescItem_C"
+
 function WBP_WeaponHandBookAccessoryAdditionalDescTips_C:Construct()
 end
+
 function WBP_WeaponHandBookAccessoryAdditionalDescTips_C:Destruct()
 end
+
 function WBP_WeaponHandBookAccessoryAdditionalDescTips_C:InitInfo(AccessoryInscription)
   UpdateVisibility(self.VerticalBoxDesc, AccessoryInscription)
   local finalKeyArray = UE.TArray(0)
@@ -38,4 +41,5 @@ function WBP_WeaponHandBookAccessoryAdditionalDescTips_C:InitInfo(AccessoryInscr
   end
   HideOtherItem(self.VerticalBoxDesc, Index)
 end
+
 return WBP_WeaponHandBookAccessoryAdditionalDescTips_C

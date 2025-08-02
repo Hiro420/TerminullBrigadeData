@@ -1,4 +1,5 @@
 local WBP_SimplePickupTip_C = UnLua.Class()
+
 function WBP_SimplePickupTip_C:RefreshInfo(PickupActor)
   self.PickupActor = PickupActor
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
@@ -34,6 +35,7 @@ function WBP_SimplePickupTip_C:RefreshInfo(PickupActor)
     self.Img_QualityBottom:SetBrush(Brush)
   end
 end
+
 function WBP_SimplePickupTip_C:RefreshPanelInfo()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -46,11 +48,13 @@ function WBP_SimplePickupTip_C:RefreshPanelInfo()
     self:InitAccessoryInfo()
   end
 end
+
 function WBP_SimplePickupTip_C:InitWeaponInfo()
   self.DisablePanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.CanUseTipPanel:SetVisibility(UE.ESlateVisibility.Collapsed)
   self.Img_CompareQuality:SetVisibility(UE.ESlateVisibility.Collapsed)
 end
+
 function WBP_SimplePickupTip_C:InitAccessoryInfo()
   local EquipmentComp = self:GetOwningPlayerPawn():GetComponentByClass(UE.URGEquipmentComponent.StaticClass())
   if not EquipmentComp then
@@ -107,4 +111,5 @@ function WBP_SimplePickupTip_C:InitAccessoryInfo()
     end
   end
 end
+
 return WBP_SimplePickupTip_C

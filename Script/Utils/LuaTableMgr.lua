@@ -2,6 +2,7 @@ require("Tables.Types")
 UnLua.PackagePath = UnLua.PackagePath .. ";Saved/PersistentDownloadDir/Script/Tables/?.lua"
 LuaTableMgr = LuaTableMgr or {}
 local TablePathPrefix = "Tables."
+
 function LuaTableMgr.GetLuaTableByName(TableName)
   local Path = LuaTableMgr.GetLuaTablePath(TableName)
   if Path then
@@ -9,6 +10,7 @@ function LuaTableMgr.GetLuaTableByName(TableName)
   end
   return nil
 end
+
 function LuaTableMgr.GetLuaTableRowInfo(TableName, RowName)
   local Result, RowInfo = false
   local Table = LuaTableMgr.GetLuaTableByName(TableName)
@@ -24,6 +26,7 @@ function LuaTableMgr.GetLuaTableRowInfo(TableName, RowName)
   end
   return Result, RowInfo
 end
+
 function LuaTableMgr.GetLuaTablePath(TableName)
   if not TableName then
     return nil
@@ -31,6 +34,7 @@ function LuaTableMgr.GetLuaTablePath(TableName)
   local Path = TablePathPrefix .. TableName
   return Path
 end
+
 function LuaTableMgr.RemoveRequiredByName(TableName)
   for key, value in pairs(package.preload) do
     if string.find(tostring(key), TableName) then

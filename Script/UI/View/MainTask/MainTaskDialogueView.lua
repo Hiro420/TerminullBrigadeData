@@ -3,17 +3,22 @@ local ViewBase = require("Framework.UIMgr.ViewBase")
 local UKismetTextLibrary = UE.UKismetTextLibrary
 local UIUtil = require("Framework.UIMgr.UIUtil")
 local MainTaskDialogueView = Class(ViewBase)
+
 function MainTaskDialogueView:BindClickHandler()
 end
+
 function MainTaskDialogueView:UnBindClickHandler()
 end
+
 function MainTaskDialogueView:OnInit()
   self.DataBindTable = {}
   self:BindClickHandler()
 end
+
 function MainTaskDialogueView:OnDestroy()
   self:UnBindClickHandler()
 end
+
 function MainTaskDialogueView:OnShow(DialogueId)
   if self.ViewModel then
     self.Super:AttachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -51,13 +56,16 @@ function MainTaskDialogueView:OnShow(DialogueId)
   self:StopAllAnimations()
   self:PlayAnimation(self.ani_in, 0)
 end
+
 function MainTaskDialogueView:ReleasTimer()
   UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.UpdataTimer)
   self.WBP_InteractTipWidget:UpdateProgress(0)
 end
+
 function MainTaskDialogueView:PauseGame()
   print("PauseGame")
 end
+
 function MainTaskDialogueView:StartTimer()
   self.Progress = 0
   self.UpdataTimer = UE.UKismetSystemLibrary.K2_SetTimerDelegate({
@@ -73,6 +81,7 @@ function MainTaskDialogueView:StartTimer()
     end
   }, 0.02, true)
 end
+
 function MainTaskDialogueView:OnHide()
   if self.ViewModel then
     self.Super:DetachViewModel(self.ViewModel, self.DataBindTable, self)
@@ -81,6 +90,7 @@ function MainTaskDialogueView:OnHide()
   StopListeningForInputAction(self, self.CloseKey, UE.EInputEvent.IE_Released)
   StopListeningForInputAction(self, "PauseGame", UE.EInputEvent.IE_Pressed)
 end
+
 function MainTaskDialogueView:ShowDialogueChild(Index)
   if self.DialogueContent == nil or Index > self.DialogueContent:Num() then
     self:PlayAnimation(self.ani_out)
@@ -117,6 +127,7 @@ function MainTaskDialogueView:ShowDialogueChild(Index)
     self.ShowText:SetText("\231\130\185\229\135\187\231\187\167\231\187\173")
   end
 end
+
 function MainTaskDialogueView:OnMouseButtonDown(MyGeometry, MouseEvent)
   if self:IsAnimationPlaying(self.ani_out) or self:IsAnimationPlaying(self.ani_in) then
     return
@@ -126,6 +137,7 @@ function MainTaskDialogueView:OnMouseButtonDown(MyGeometry, MouseEvent)
     self:ShowDialogueChild(self.Index)
   end
 end
+
 function MainTaskDialogueView:CloseMainTaskDialogueView()
   if self.UpdataTimer then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.UpdataTimer)
@@ -134,6 +146,7 @@ function MainTaskDialogueView:CloseMainTaskDialogueView()
   UIMgr:Hide(ViewID.UI_MainTaskDialogueView)
   EventSystem.Invoke(EventDef.BeginnerGuide.OnLobbyShow)
 end
+
 function MainTaskDialogueView:OnAnimationFinished(Animation)
   if Animation == self.ani_out then
     self:CloseMainTaskDialogueView()
@@ -142,4 +155,5 @@ function MainTaskDialogueView:OnAnimationFinished(Animation)
     self:PlayAnimation(self.ani_loop, 0, 0)
   end
 end
+
 return MainTaskDialogueView

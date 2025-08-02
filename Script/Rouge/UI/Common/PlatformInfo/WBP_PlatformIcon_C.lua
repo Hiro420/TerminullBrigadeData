@@ -1,4 +1,5 @@
 local WBP_PlatformIcon_C = UnLua.Class()
+
 function WBP_PlatformIcon_C:UpdateChannelInfo(UserID, bIsDarkIcon, ChannelUID)
   DataMgr.PrintChannelInfoLog(string.format("ChannelInfo WBP_PlatformIcon_C UserID: %s", tostring(UserID)))
   DataMgr.PrintChannelInfoLog(string.format("ChannelInfo WBP_PlatformIcon_C ChannelUID: %s", tostring(ChannelUID)))
@@ -28,6 +29,7 @@ function WBP_PlatformIcon_C:UpdateChannelInfo(UserID, bIsDarkIcon, ChannelUID)
     end, nil, DataMgr.PLAYER_INFO_CACHE_DURATION, true)
   end
 end
+
 function WBP_PlatformIcon_C:DoUpdateWidget(ChannelInfo, bIsDarkIcon)
   DataMgr.PrintChannelInfoLog(string.format("ChannelInfo WBP_PlatformIcon_C DoUpdateWidget ChannelUserId: %s", tostring(ChannelInfo.ChannelUserId)))
   if not ChannelInfo or not DataMgr.CanChannelIconShow(ChannelInfo) then
@@ -56,6 +58,7 @@ function WBP_PlatformIcon_C:DoUpdateWidget(ChannelInfo, bIsDarkIcon)
     return true
   end
 end
+
 function WBP_PlatformIcon_C:UpdateChannelInfoByPlatform(PlatformName, bIsDarkIcon)
   Result, RowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBPlatformIcon, PlatformName)
   if Result then
@@ -71,4 +74,5 @@ function WBP_PlatformIcon_C:UpdateChannelInfoByPlatform(PlatformName, bIsDarkIco
   end
   return true
 end
+
 return WBP_PlatformIcon_C

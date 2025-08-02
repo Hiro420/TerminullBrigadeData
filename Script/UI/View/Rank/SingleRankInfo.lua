@@ -1,5 +1,6 @@
 local RankData = require("UI.View.Rank.RankData")
 local SingleRankInfo = UnLua.Class()
+
 function SingleRankInfo:OnListItemObjectSet(ListItemObj)
   if nil == ListItemObj then
     return
@@ -17,6 +18,7 @@ function SingleRankInfo:OnListItemObjectSet(ListItemObj)
     UpdateVisibility(self.WBP_SingleRankInfo_Single.Pnl_Self, false)
   end
 end
+
 function SingleRankInfo:BP_OnItemSelectionChanged(bIsSelected)
   self.Switcher:GetActiveWidget().bIsSelected = bIsSelected
   self.Switcher:GetActiveWidget():BP_OnItemSelectionChanged(bIsSelected)
@@ -32,6 +34,7 @@ function SingleRankInfo:BP_OnItemSelectionChanged(bIsSelected)
     self.Switcher:GetActiveWidget().RGStateController:ChangeStatus("TopSelect")
   end
 end
+
 function SingleRankInfo:SetSelfInfo(ListItemObj)
   if nil == ListItemObj then
     self.Switcher:SetActiveWidgetIndex(0)
@@ -63,4 +66,5 @@ function SingleRankInfo:SetSelfInfo(ListItemObj)
     UpdateVisibility(self.WBP_SingleRankInfo_Single.Pnl_Self, true)
   end
 end
+
 return SingleRankInfo

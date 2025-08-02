@@ -1,6 +1,7 @@
 local WBP_ProfySettlementUpgradeLevelView = UnLua.Class()
 local ProficiencyData = require("Modules.Proficiency.ProficiencyData")
 local SettlementConfig = require("GameConfig.Settlement.SettlementConfig")
+
 function WBP_ProfySettlementUpgradeLevelView:Show()
   UpdateVisibility(self, true)
   local PlayerInfo = LogicSettlement:GetPlayerInfoByPlayerId(tonumber(DataMgr.GetUserId()))
@@ -60,6 +61,7 @@ function WBP_ProfySettlementUpgradeLevelView:Show()
     self:PlayAnimationForward(self.Ani_add_experience)
   end
 end
+
 function WBP_ProfySettlementUpgradeLevelView:InitPrivilegeItem()
   local RGStatisticsSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGStatisticsSubsystem:StaticClass())
   local ProficiencyExpTotal = RGStatisticsSubsystem.AddProficiencyExpSettleData.Exp
@@ -85,10 +87,12 @@ function WBP_ProfySettlementUpgradeLevelView:InitPrivilegeItem()
   self.Txt_AddExp:SetText(ProficiencyExpTotal)
   self.Txt_PrivilegeIncrease:SetText(PrivilegeValueTxt)
 end
+
 function WBP_ProfySettlementUpgradeLevelView:GetAddExpValue(...)
   local RGStatisticsSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGStatisticsSubsystem:StaticClass())
   return RGStatisticsSubsystem.ProficiencyExp
 end
+
 function WBP_ProfySettlementUpgradeLevelView:UpdateLevelInfo(InLevel)
   self.Txt_Level:SetText(InLevel)
   local AResult, LevelRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBProfyLevel, InLevel)
@@ -97,6 +101,7 @@ function WBP_ProfySettlementUpgradeLevelView:UpdateLevelInfo(InLevel)
     return
   end
 end
+
 function WBP_ProfySettlementUpgradeLevelView:OnAnimationFinished(InAnimation)
   if InAnimation == self.Ani_in then
     self:StartPlayAddExpAnim()
@@ -111,6 +116,7 @@ function WBP_ProfySettlementUpgradeLevelView:OnAnimationFinished(InAnimation)
     end
   end
 end
+
 function WBP_ProfySettlementUpgradeLevelView:StartPlayAddExpAnim(...)
   self.ExpDiffValue = self.TargetProfyExp - self.OriginProfyExp
   if self.ExpDiffValue <= 0 then
@@ -134,6 +140,7 @@ function WBP_ProfySettlementUpgradeLevelView:StartPlayAddExpAnim(...)
   self.IsPlayExpDiffValue = true
   LogicAudio.StartAddExp()
 end
+
 function WBP_ProfySettlementUpgradeLevelView:PlayAddExpAnim(DeltaSeconds)
   if self.CurrentProfyExp >= self.TargetProfyExp then
     self:EndAddExpAnim()
@@ -166,23 +173,28 @@ function WBP_ProfySettlementUpgradeLevelView:PlayAddExpAnim(DeltaSeconds)
     self.Img_ExpAdded:SetClippingValue(0.0)
   end
 end
+
 function WBP_ProfySettlementUpgradeLevelView:EndAddExpAnim(...)
   self.IsPlayExpDiffValue = false
   LogicAudio.EndAddExp()
 end
+
 function WBP_ProfySettlementUpgradeLevelView:Hide(...)
   self:PlayAnimationForward(self.Ani_out)
 end
+
 function WBP_ProfySettlementUpgradeLevelView:PlayVoice()
   if not self.VoiceID then
     local RGVoiceSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGVoiceSubsystem:StaticClass())
     self.VoiceID = RGVoiceSubsystem:PlayVoiceByRowName("Voice.UpdateProfyLevel", nil, self.Skin)
   end
 end
+
 function WBP_ProfySettlementUpgradeLevelView:StopVoice()
   if self.VoiceID and self.VoiceID > 0 then
     UE.URGBlueprintLibrary.StopVoice(self.VoiceID)
     self.VoiceID = 0
   end
 end
+
 return WBP_ProfySettlementUpgradeLevelView

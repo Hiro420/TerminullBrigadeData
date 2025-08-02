@@ -1,6 +1,7 @@
 local WBP_BuffIcon_C = UnLua.Class()
 local ResourceMgr = require("Framework.Resource.ResourceMgr")
 local BattleResPreloadConfig = require("GameConfig.Preload.BattleResPreloadConfig")
+
 function WBP_BuffIcon_C:Show(BuffInfo, IsShowOmitIcon, OwningCharacter, ParentView)
   if nil == BuffInfo then
     return
@@ -19,6 +20,7 @@ function WBP_BuffIcon_C:Show(BuffInfo, IsShowOmitIcon, OwningCharacter, ParentVi
   self:RefreshInfo()
   self:SetVisibility(UE.ESlateVisibility.Visible)
 end
+
 function WBP_BuffIcon_C:RefreshBuffInfo(InBuffInfo)
   self.BuffInfo.ID = InBuffInfo.ID
   self.BuffInfo.CurrentCount = InBuffInfo.CurrentCount
@@ -31,6 +33,7 @@ function WBP_BuffIcon_C:RefreshBuffInfo(InBuffInfo)
   self:RefreshInfo()
   self:PlayAnimation(self.Ani_CDComplete, 0.0, 1, UE.EUMGSequencePlayMode.Forward, 1.0, false)
 end
+
 function WBP_BuffIcon_C:Hide()
   self:ResetBuffInfo()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -40,10 +43,12 @@ function WBP_BuffIcon_C:Hide()
     self._asyncLoadBuffIconHandleID = nil
   end
 end
+
 function WBP_BuffIcon_C:UpdateBuffIconSize(Size)
   self.MainSizeBox:SetWidthOverride(Size)
   self.MainSizeBox:SetHeightOverride(Size)
 end
+
 function WBP_BuffIcon_C:RefreshInfo()
   if self.BuffInfo.IsInscription then
     self.EndTime = self.BuffInfo.StartTime + self.BuffInfo.RemainTime
@@ -131,6 +136,7 @@ function WBP_BuffIcon_C:RefreshInfo()
     end
   end
 end
+
 function WBP_BuffIcon_C:GetIconToolTipWidget()
   if self.IsShowOmitIcon then
     return nil
@@ -139,6 +145,7 @@ function WBP_BuffIcon_C:GetIconToolTipWidget()
   Widget:InitInfo(self.BuffInfo)
   return Widget
 end
+
 function WBP_BuffIcon_C:SetIconRenderShear(NewRenderShear)
   if self.Img_BuffIcon then
     self.Img_BuffIcon:SetRenderShear(NewRenderShear)
@@ -147,17 +154,21 @@ function WBP_BuffIcon_C:SetIconRenderShear(NewRenderShear)
     self.Img_BuffIconProjection:SetRenderShear(NewRenderShear)
   end
 end
+
 function WBP_BuffIcon_C:OnMouseEnter(MyGeometry, MouseEvent)
   if self.ParentView and self.ParentView.Hover then
     self.ParentView:HoverBuffTips(true, self.BuffInfo, self)
   end
 end
+
 function WBP_BuffIcon_C:OnMouseLeave(MyGeometry, MouseEvent)
   if self.ParentView and self.ParentView.Hover then
     self.ParentView:HoverBuffTips(false)
   end
 end
+
 function WBP_BuffIcon_C:Destruct()
   self:Hide()
 end
+
 return WBP_BuffIcon_C

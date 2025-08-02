@@ -3,6 +3,7 @@ local SpaceName = "Space"
 local ProficiencyData = require("Modules.Proficiency.ProficiencyData")
 local ProficiencyHandler = require("Protocol.Proficiency.ProficiencyHandler")
 local WBP_ProficiencyLegendSynopsis = UnLua.Class()
+
 function WBP_ProficiencyLegendSynopsis:OnBindUIInput()
   self.WBP_InteractTipWidgetClaimRewards:BindInteractAndClickEvent(self, self.BindOnReceiveRewardButtonClicked)
   if not IsListeningForInputAction(self, EscName) then
@@ -12,10 +13,12 @@ function WBP_ProficiencyLegendSynopsis:OnBindUIInput()
     })
   end
 end
+
 function WBP_ProficiencyLegendSynopsis:OnUnBindUIInput()
   self.WBP_InteractTipWidgetClaimRewards:UnBindInteractAndClickEvent(self, self.BindOnReceiveRewardButtonClicked)
   StopListeningForInputAction(self, EscName, UE.EInputEvent.IE_Pressed)
 end
+
 function WBP_ProficiencyLegendSynopsis:Construct()
   self.RGToggleGroupProfySynop.OnCheckStateChanged:Add(self, self.OnToggleGroupProfySynopChanged)
   self.WBP_InteractTipWidget.OnMainButtonClicked:Add(self, self.BindOnListenEscKeyPressed)
@@ -24,6 +27,7 @@ function WBP_ProficiencyLegendSynopsis:Construct()
   self.Btn_SynopsisDetail.OnUnhovered:Add(self, self.BindOnSynopsisDetailButtonUnhovered)
   self.Btn_ClaimRewards.OnClicked:Add(self, self.BindOnReceiveRewardButtonClicked)
 end
+
 function WBP_ProficiencyLegendSynopsis:Destruct()
   self.RGToggleGroupProfySynop.OnCheckStateChanged:Remove(self, self.OnToggleGroupProfySynopChanged)
   self.WBP_InteractTipWidget.OnMainButtonClicked:Remove(self, self.BindOnListenEscKeyPressed)
@@ -32,6 +36,7 @@ function WBP_ProficiencyLegendSynopsis:Destruct()
   self.Btn_SynopsisDetail.OnUnhovered:Remove(self, self.BindOnSynopsisDetailButtonUnhovered)
   self.Btn_ClaimRewards.OnClicked:Remove(self, self.BindOnReceiveRewardButtonClicked)
 end
+
 function WBP_ProficiencyLegendSynopsis:OnShow(HeroId, Level)
   self.CurHeroId = HeroId
   self.CurSelectLevel = Level
@@ -42,6 +47,7 @@ function WBP_ProficiencyLegendSynopsis:OnShow(HeroId, Level)
   self:RefreshSynopsisItemList()
   EventSystem.AddListener(self, EventDef.Lobby.UpdateMyHeroInfo, self.BindOnUpdateMyHeroInfo)
 end
+
 function WBP_ProficiencyLegendSynopsis:RefreshSynopsisItemList()
   self.RGToggleGroupProfySynop:ClearGroup()
   local scrollWidget, Item
@@ -64,6 +70,7 @@ function WBP_ProficiencyLegendSynopsis:RefreshSynopsisItemList()
     self.ScrollBox_Synopsis:ScrollWidgetIntoView(scrollWidget, false)
   end
 end
+
 function WBP_ProficiencyLegendSynopsis:OnToggleGroupProfySynopChanged(SelectId)
   self.CurSelectLevel = SelectId
   local CurUnlockLevel = ProficiencyData:GetMaxUnlockProfyLevel(self.CurHeroId)
@@ -87,6 +94,7 @@ function WBP_ProficiencyLegendSynopsis:OnToggleGroupProfySynopChanged(SelectId)
     UpdateVisibility(self.Btn_ClaimRewards, not ProficiencyData:IsCurProfyStoryRewardReceived(self.CurHeroId, self.CurSelectLevel))
   end
 end
+
 function WBP_ProficiencyLegendSynopsis:RefreshAwardInfo(AwardList)
   local Index = 1
   for index, SingleAwardInfo in ipairs(AwardList) do
@@ -98,15 +106,19 @@ function WBP_ProficiencyLegendSynopsis:RefreshAwardInfo(AwardList)
   end
   HideOtherItem(self.AwardListPanel, Index, true)
 end
+
 function WBP_ProficiencyLegendSynopsis:BindOnSynopsisDetailButtonClicked()
   EventSystem.Invoke(EventDef.Proficiency.OnProficiencySynopsisDetailPanelVisChanged, true, self.CurHeroId, self.CurSelectLevel)
 end
+
 function WBP_ProficiencyLegendSynopsis:BindOnSynopsisDetailButtonHovered(...)
   UpdateVisibility(self.Img_SynopsisDetail_Hovered, true)
 end
+
 function WBP_ProficiencyLegendSynopsis:BindOnSynopsisDetailButtonUnhovered(...)
   UpdateVisibility(self.Img_SynopsisDetail_Hovered, false)
 end
+
 function WBP_ProficiencyLegendSynopsis:BindOnReceiveRewardButtonClicked(...)
   local BtnVisibility = self.UnlockDetailInfoPanel:GetVisibility()
   if BtnVisibility == UE.ESlateVisibility.Collapsed or BtnVisibility == UE.ESlateVisibility.Hidden then
@@ -116,6 +128,7 @@ function WBP_ProficiencyLegendSynopsis:BindOnReceiveRewardButtonClicked(...)
     ProficiencyHandler:RequestGetHeroProfyStoryRewardToServer(self.CurHeroId, self.CurSelectLevel)
   end
 end
+
 function WBP_ProficiencyLegendSynopsis:BindOnUpdateMyHeroInfo(...)
   self:RefreshSynopsisItemList()
   local AllItem = self.AwardListPanel:GetAllChildren()
@@ -125,12 +138,16 @@ function WBP_ProficiencyLegendSynopsis:BindOnUpdateMyHeroInfo(...)
     end
   end
 end
+
 function WBP_ProficiencyLegendSynopsis:BindOnListenEscKeyPressed(...)
   UIMgr:Hide(ViewID.UI_ProficiencyLegendSynopsis, true)
 end
+
 function WBP_ProficiencyLegendSynopsis:OnPreHide(...)
   EventSystem.RemoveListener(EventDef.Lobby.UpdateMyHeroInfo, self.BindOnUpdateMyHeroInfo, self)
 end
+
 function WBP_ProficiencyLegendSynopsis:OnHide()
 end
+
 return WBP_ProficiencyLegendSynopsis

@@ -1,22 +1,27 @@
 local WBP_EnterLevelTips_C = UnLua.Class()
+
 function WBP_EnterLevelTips_C:Construct()
   self.Overridden.Construct(self)
 end
+
 function WBP_EnterLevelTips_C:Init()
   ListenObjectMessage(nil, GMP.MSG_Level_BattleChange, self, self.Hide)
   ListenObjectMessage(nil, GMP.MSG_Level_OnLevelEntry, self, self.OnLevelEntry)
   EventSystem.AddListenerNew(EventDef.BossTips.BossTipsUI, self, self.ShowBossTips)
   self:Show()
 end
+
 function WBP_EnterLevelTips_C:UnInit()
   UnListenObjectMessage(GMP.MSG_Level_BattleChange, self)
   UnListenObjectMessage(GMP.MSG_Level_OnLevelEntry, self)
   EventSystem.RemoveListenerNew(EventDef.BossTips.BossTipsUI, self, self.ShowBossTips)
 end
+
 function WBP_EnterLevelTips_C:OnLevelEntry(LevelId)
   print("WBP_EnterLevelTips_C:OnLevelEntry", LevelId)
   self:Show(LevelId)
 end
+
 function WBP_EnterLevelTips_C:Show(LevelIdParam)
   local GameLevelSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGGameLevelSystem:StaticClass())
   if not GameLevelSystem then
@@ -63,6 +68,7 @@ function WBP_EnterLevelTips_C:Show(LevelIdParam)
     UpdateVisibility(self, false)
   end
 end
+
 function WBP_EnterLevelTips_C:ShowBossTips(BossType)
   local GameLevelSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGGameLevelSystem:StaticClass())
   if not GameLevelSystem then
@@ -130,6 +136,7 @@ function WBP_EnterLevelTips_C:ShowBossTips(BossType)
     self.TagText_1:SetText(RowInfo.TagText)
   end
 end
+
 function WBP_EnterLevelTips_C:GetBossActor()
   local aiCharacterActorAry = UE.UGameplayStatics.GetAllActorsOfClass(self, UE.AAICharacterBase.StaticClass(), nil)
   for i, v in iterator(aiCharacterActorAry) do
@@ -145,6 +152,7 @@ function WBP_EnterLevelTips_C:GetBossActor()
   end
   return nil
 end
+
 function WBP_EnterLevelTips_C:Hide(LevelBattleActor, RGBattleState)
   print("WBP_EnterLevelTips_C:Hide", RGBattleState)
   if RGBattleState ~= UE.ERGBattleState.Finished then
@@ -152,7 +160,9 @@ function WBP_EnterLevelTips_C:Hide(LevelBattleActor, RGBattleState)
   end
   UpdateVisibility(self, false)
 end
+
 function WBP_EnterLevelTips_C:Destruct()
   self.Overridden.Destruct(self)
 end
+
 return WBP_EnterLevelTips_C

@@ -1,6 +1,7 @@
 local RankData = require("UI.View.Rank.RankData")
 local rapidjson = require("rapidjson")
 local SingleRankInfo_Team = UnLua.Class()
+
 function SingleRankInfo_Team:InitSingleRankInfo(ListItemObj, bSelf, RankChange)
   self.bSelf = bSelf
   self.RankNumber = math.floor(ListItemObj.RankNumber)
@@ -61,6 +62,7 @@ function SingleRankInfo_Team:InitSingleRankInfo(ListItemObj, bSelf, RankChange)
     end
   end
 end
+
 function SingleRankInfo_Team:RequestRoleInfo(RoleIds)
   if nil == RoleIds or 0 == #RoleIds then
     return
@@ -85,9 +87,11 @@ function SingleRankInfo_Team:RequestRoleInfo(RoleIds)
     end
   end
 end
+
 function SingleRankInfo_Team:EnterGameRecordPanel_lua()
   UIMgr:Show(ViewID.UI_GRInfoView, nil, self.RankInfo.uniqueID, self.ListItemObj.WorldMode, self.ListItemObj.GameMode, self.RankInfo.score, true, nil, self.ListItemObj.SeasonId)
 end
+
 function SingleRankInfo_Team:GetPlayerNamme(Response, roleId)
   for i, SingleInfo in ipairs(Response.players) do
     if SingleInfo.roleid == roleId then
@@ -100,9 +104,11 @@ function SingleRankInfo_Team:GetPlayerNamme(Response, roleId)
     end
   end
 end
+
 function SingleRankInfo_Team:OnGetRoleFail(ErrorMessage)
   print("OnGetRoleFail", ErrorMessage.ErrorMessage)
 end
+
 function SingleRankInfo_Team:OnMouseButtonDown(MyGeometry, MouseEvent)
   if UE.UKismetInputLibrary.PointerEvent_GetEffectingButton(MouseEvent) == self.RightMouseButton then
     self:EnterGameRecordPanel_lua()
@@ -110,6 +116,7 @@ function SingleRankInfo_Team:OnMouseButtonDown(MyGeometry, MouseEvent)
   end
   return UE.UWidgetBlueprintLibrary.UnHandled()
 end
+
 function SingleRankInfo_Team:OnConsoleXButtonDown(MyGeometry, MouseEvent)
   if self.HoverIconWidget then
     self.HoverIconWidget:OnButtonPlayerClicked()
@@ -118,6 +125,7 @@ function SingleRankInfo_Team:OnConsoleXButtonDown(MyGeometry, MouseEvent)
   end
   self:StopListeningInput()
 end
+
 function SingleRankInfo_Team:OnMouseEnter(MyGeometry, MouseEvent)
   if self.bSelf then
     return
@@ -135,6 +143,7 @@ function SingleRankInfo_Team:OnMouseEnter(MyGeometry, MouseEvent)
     })
   end
 end
+
 function SingleRankInfo_Team:OnMouseLeave(MouseEvent)
   self:StopListeningInput()
   if self.bSelf then
@@ -147,22 +156,27 @@ function SingleRankInfo_Team:OnMouseLeave(MouseEvent)
     self:PlayAnimation(self.Ani_hover_out)
   end
 end
+
 function SingleRankInfo_Team:BP_OnItemSelectionChanged(bIsSelected)
   if bIsSelected then
     self:StopAnimation(self.Ani_hover_in)
     self:PlayAnimation(self.Ani_hover_out)
   end
 end
+
 function SingleRankInfo_Team:OnHoveredPlayerIcon(HoverIconWidget)
   self.HoverIconWidget = HoverIconWidget
 end
+
 function SingleRankInfo_Team:StopListeningInput()
   if IsListeningForInputAction(self, "CommonFaceButtonLeft") then
     StopListeningForInputAction(self, "CommonFaceButtonLeft", UE.EInputEvent.IE_Pressed)
   end
   self.HoverIconWidget = nil
 end
+
 function SingleRankInfo_Team:Destruct()
   self:StopListeningInput()
 end
+
 return SingleRankInfo_Team

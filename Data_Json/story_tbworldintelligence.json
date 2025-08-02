@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "",
+    "image": "/Game/Rouge/UI/Sprite/IconCharacterbust/Frames/Bat_djsboss_icon.Bat_djsboss_icon",
+    "story": ""
+  },
+  {
+    "id": 2,
+    "name": "",
+    "image": "/Game/Rouge/UI/Sprite/IconCharacterbust/Frames/Bat_DJQR_icon.Bat_DJQR_icon",
+    "story": ""
+  },
+  {
+    "id": 3,
+    "name": "",
+    "image": "/Game/Rouge/UI/Sprite/IconCharacterbust/Frames/Bat_FXB_icon.Bat_FXB_icon",
+    "story": ""
+  },
+  {
+    "id": 11,
+    "name": "",
+    "image": "/Game/Rouge/UI/Sprite/IconCharacterbust/Frames/Bat_djsboss_icon.Bat_djsboss_icon",
+    "story": ""
+  },
+  {
+    "id": 12,
+    "name": "",
+    "image": "/Game/Rouge/UI/Sprite/IconCharacterbust/Frames/Bat_DJQR_icon.Bat_DJQR_icon",
+    "story": ""
+  },
+  {
+    "id": 13,
+    "name": "",
+    "image": "/Game/Rouge/UI/Sprite/IconCharacterbust/Frames/Bat_FXB_icon.Bat_FXB_icon",
+    "story": ""
+  }
+]

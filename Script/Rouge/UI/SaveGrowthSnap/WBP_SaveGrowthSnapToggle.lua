@@ -1,7 +1,9 @@
 local SaveGrowthSnapData = require("Modules.SaveGrowthSnap.SaveGrowthSnapData")
 local WBP_SaveGrowthSnapToggle = UnLua.Class()
+
 function WBP_SaveGrowthSnapToggle:Construct()
 end
+
 function WBP_SaveGrowthSnapToggle:InitSaveGrowthSnapToggle(Pos, SnapData)
   if not SnapData or SnapData.SnapshotStagingTime == "0" or not SnapData.SnapshotStagingTime then
     self.StateCtrl_Empty:ChangeStatus(EEmpty.Empty)
@@ -29,7 +31,9 @@ function WBP_SaveGrowthSnapToggle:InitSaveGrowthSnapToggle(Pos, SnapData)
     UpdateVisibility(self.RGTxt_UseTimes_Select, false)
   end
 end
+
 function WBP_SaveGrowthSnapToggle:Destruct()
   print("WBP_SaveGrowthSnapToggle:Destruct()")
 end
+
 return WBP_SaveGrowthSnapToggle

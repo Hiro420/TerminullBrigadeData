@@ -1,5 +1,6 @@
 LogicBuffList = LogicBuffList or {IsInit = false}
 local ListContainer = require("Rouge.UI.Common.ListContainer")
+
 function LogicBuffList.Init()
   if LogicBuffList.IsInit then
     print("LogicBuffList \229\183\178\229\136\157\229\167\139\229\140\150")
@@ -15,6 +16,7 @@ function LogicBuffList.Init()
   LogicBuffList.BindCharacterDelegate()
   LogicBuffList.BuffIdList = {}
 end
+
 function LogicBuffList.BindCharacterDelegate(...)
   local Character = UE.UGameplayStatics.GetPlayerCharacter(GameInstance, 0)
   if not Character then
@@ -27,17 +29,21 @@ function LogicBuffList.BindCharacterDelegate(...)
     BuffComp.OnBuffRemove:Add(GameInstance, LogicBuffList.BindOnBuffRemove)
   end
 end
+
 function LogicBuffList.BindOnBuffAdded(Target, AddedBuff)
   EventSystem.Invoke(EventDef.Battle.OnBuffAdded, AddedBuff)
   LogicBuffList.BuffIdList[AddedBuff.ID] = AddedBuff.CurrentCount
 end
+
 function LogicBuffList.BindOnBuffChanged(Target, ChangedBuff)
   EventSystem.Invoke(EventDef.Battle.OnBuffChanged, ChangedBuff)
   LogicBuffList.BuffIdList[ChangedBuff.ID] = ChangedBuff.CurrentCount
 end
+
 function LogicBuffList.BindOnBuffRemove(Target, RemoveBuff)
   LogicBuffList.BuffIdList[RemoveBuff.ID] = nil
 end
+
 function LogicBuffList.Clear()
   print("Clear LogicBuffList")
   if LogicBuffList.ListContainer then

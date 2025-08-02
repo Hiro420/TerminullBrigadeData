@@ -8,6 +8,7 @@ local SaveGrowthSnapHandler = require("Protocol.SaveGrowthSnap.SaveGrowthSnapHan
 local TopupData = require("Modules.Topup.TopupData")
 local PayInfoConfig = require("GameConfig.PayInfoConfig")
 local LoginHandler = {}
+
 function IsShippingGameTitle()
   local VersionSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.URGVersionSubsystem:StaticClass())
   if VersionSubsystem and string.find(string.lower(VersionSubsystem.Branch), "shipping") then
@@ -15,6 +16,7 @@ function IsShippingGameTitle()
   end
   return false
 end
+
 function IsInBranch(branch)
   local VersionSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.URGVersionSubsystem:StaticClass())
   if VersionSubsystem and CompareStringsIgnoreCase(VersionSubsystem.Branch, branch) then
@@ -22,13 +24,14 @@ function IsInBranch(branch)
   end
   return false
 end
+
 function GetDefaultServerListLabel()
   local VersionSubsystem = UE.USubsystemBlueprintLibrary.GetEngineSubsystem(UE.URGVersionSubsystem:StaticClass())
   if VersionSubsystem then
     if IsInBranch("trunk") or IsInBranch("weekly") then
       return "dev"
     end
-    if (IsInBranch("shipping") or IsInBranch("intl")) and not IsShippingGameTitle() then
+    if (IsInBranch("shipping") or IsInBranch("publish")) and not IsShippingGameTitle() then
       return "test"
     end
     if IsInBranch("shipping") and IsShippingGameTitle() then
@@ -40,6 +43,7 @@ function GetDefaultServerListLabel()
   end
   return "dev"
 end
+
 function LoginHandler.SendServerListReq()
   LoginData:AddGetServerListCount()
   local url = "https://serverlist.infrastructure.wooduan.com/serverlist/api/server/list?project=rouge&serverlistname="
@@ -66,6 +70,7 @@ function LoginHandler.SendServerListReq()
     EventSystem.Invoke(EventDef.Login.GetServerList, JsonTable.data)
   end)
 end
+
 function LoginHandler.RequestLoginDevToServer(UserName, DeviceInfo)
   HttpCommunication.Request("login/logindev", {uid = UserName, deviceInfo = DeviceInfo}, {
     GameInstance,
@@ -78,6 +83,7 @@ function LoginHandler.RequestLoginDevToServer(UserName, DeviceInfo)
     end
   })
 end
+
 function LoginHandler.RequestLoginWeGameToServer(Params)
   HttpCommunication.Request("login/loginwegame", Params, {
     GameInstance,
@@ -90,6 +96,7 @@ function LoginHandler.RequestLoginWeGameToServer(Params)
     end
   })
 end
+
 function LoginHandler.RequestLoginLIPassToServer(Params)
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   local UserOnlineSubsystem = UE.USubsystemBlueprintLibrary.GetLocalPlayerSubsystem(PC, UE.UUserOnlineSubsystem:StaticClass())
@@ -128,6 +135,7 @@ function LoginHandler.RequestLoginLIPassToServer(Params)
     end
   })
 end
+
 function LoginHandler.OnLoginSuccess(Target, JsonResponse)
   print("LoginFlow", "LoginHandler.OnLoginSuccess - \232\180\166\229\143\183\231\153\187\229\189\149\230\136\144\229\138\159")
   local response = rapidjson.decode(JsonResponse.Content)
@@ -141,6 +149,7 @@ function LoginHandler.OnLoginSuccess(Target, JsonResponse)
   else
     UnLua.LogError("LoginHandler.OnLoginSuccess - Get RGAccountSubsystem failed!!!")
   end
+  printShipping("LoginFlow", "LoginHandler.OnLoginSuccess - \232\180\166\229\143\183\231\153\187\229\189\149\230\136\144\229\138\159 roleid:", response.roleId)
   HttpCommunication.SetToken(response.token)
   DataMgr.SetUserId(response.roleId)
   DataMgr.SetServerOpenTime(response.serverOpenTime)
@@ -178,17 +187,25 @@ function LoginHandler.OnLoginSuccess(Target, JsonResponse)
   SaveGrowthSnapHandler.RequestGetGrowthSnapShot()
   EventSystem.Invoke(EventDef.Login.OnLoginProtocolSuccess)
 end
+
 function LoginHandler.CheckNetBarState(RoleID)
   local IigwSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGIigwGameInstanceSubsystem:StaticClass())
   if IigwSubsystem then
-    local Ret, Ip, Mac, NetbarTokenBuffer = IigwSubsystem:RequestNetbar(RoleID)
+    local Ret, Ip, MacStr, NetbarTokenBuffer = IigwSubsystem:RequestNetbar(RoleID)
+    print("LoginHandler: Requestprivilege MacStr: ", Ret, " ", Ip, " ", MacStr)
     if 0 == Ret then
+      local MacTable = Split(MacStr, ";")
+      if "" == MacTable[#MacTable] then
+        table.remove(MacTable, #MacTable)
+      end
+      for Index, MacValue in pairs(MacTable) do
+        print("LoginHandler: Requestprivilege MacTable: ", Index, " ", MacValue)
+      end
       local Params = {
         ip = Ip,
-        macs = {Mac},
+        macs = MacTable,
         netbarToken = NetbarTokenBuffer
       }
-      print("LoginHandler: Requestprivilege", Params)
       HttpCommunication.Request("playergrowth/netbar/requestprivilege", Params, {
         GameInstance,
         function(Target, JsonResponse)
@@ -210,6 +227,7 @@ function LoginHandler.CheckNetBarState(RoleID)
     end
   end
 end
+
 function LoginHandler.RequestLogoutToServer()
   if not UE.UKismetStringLibrary.IsEmpty(HttpCommunication.GetToken()) then
     LogicLobby.SendLogoutTime = GetCurrentTimestamp(true)
@@ -222,6 +240,7 @@ function LoginHandler.RequestLogoutToServer()
     })
   end
 end
+
 function LoginHandler.BindOnLogoutSuccess(Target, JsonResponse)
   print("LogoutSuccess ", JsonResponse.Content)
   local JsonTable = rapidjson.decode(JsonResponse.Content)
@@ -239,10 +258,12 @@ function LoginHandler.BindOnLogoutSuccess(Target, JsonResponse)
     LogicLobby.OpenLevelByName("Login")
   end
 end
+
 function LoginHandler.BindOnLogoutFail()
   print("LogoutFail!")
   if WSCommunication.IsReconnectFail then
     WSCommunication.ExecuteReconnectFailLogic()
   end
 end
+
 return LoginHandler

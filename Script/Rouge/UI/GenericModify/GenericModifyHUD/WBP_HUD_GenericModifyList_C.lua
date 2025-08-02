@@ -5,6 +5,7 @@ local ShowStatus = {
   ShowAll = 2,
   ShowAllNoMask = 3
 }
+
 function WBP_HUD_GenericModifyList_C:Construct()
   self.BP_ButtonWithSoundHideMask.OnClicked:Add(self, self.HideMask)
   self.CanPlayAnim = false
@@ -16,6 +17,7 @@ function WBP_HUD_GenericModifyList_C:Construct()
   ListenObjectMessage(nil, GMP.MSG_World_GenericModify_OnUpdateTeamSpirit, self, self.OnUpdateTeamSpirit)
   self:InitHudGenericModifyList(self.bIsShowAll)
 end
+
 function WBP_HUD_GenericModifyList_C:UpdateCD()
   local Index = UE.ERGGenericModifySlot.None + 1
   for i = UE.ERGGenericModifySlot.None + 1, UE.ERGGenericModifySlot.Count - 1 do
@@ -26,6 +28,7 @@ function WBP_HUD_GenericModifyList_C:UpdateCD()
     Index = Index + 1
   end
 end
+
 function WBP_HUD_GenericModifyList_C:RefreshPassiveSlotSource(bIsFromMod)
   if bIsFromMod then
     LogicGenericModify:UpdateLastPassiveSlotStatus(ELastPassiveSlotStatus.bIsFromMod)
@@ -33,15 +36,18 @@ function WBP_HUD_GenericModifyList_C:RefreshPassiveSlotSource(bIsFromMod)
     LogicGenericModify:UpdateLastPassiveSlotStatus(ELastPassiveSlotStatus.bIsFromGenericModify)
   end
 end
+
 function WBP_HUD_GenericModifyList_C:RefreshPassiveSlotWhenChangeLevel()
   LogicGenericModify:UpdateLastPassiveSlotStatus(ELastPassiveSlotStatus.bIsChangeLevel)
 end
+
 function WBP_HUD_GenericModifyList_C:OnUpdateTeamSpirit(UserID)
   if UserID == tonumber(DataMgr.GetUserId()) then
     return
   end
   self:InitHudGenericModifyList(self.bIsShowAll)
 end
+
 function WBP_HUD_GenericModifyList_C:InitHudGenericModifyList(bIsShowAll)
   self.bIsShowAll = bIsShowAll
   local Character = UE.UGameplayStatics.GetPlayerCharacter(self, 0)
@@ -196,10 +202,12 @@ function WBP_HUD_GenericModifyList_C:InitHudGenericModifyList(bIsShowAll)
     HideOtherItem(self.WrapBoxGenericModifyList, Index)
   end
 end
+
 function WBP_HUD_GenericModifyList_C:PlayAcquireTipAnim()
   self.CanvasPanelInteract:SetVisibility(UE.ESlateVisibility.HitTestInvisible)
   self:PlayAnimationForward(self.ani_buttonB_in)
 end
+
 function WBP_HUD_GenericModifyList_C:UpdateGenericModifyTipsFunc(bIsShow, Data, ModifyChooseTypeParam)
   if bIsShow then
     if ModifyChooseTypeParam == ModifyChooseType.GenericModify then
@@ -212,9 +220,11 @@ function WBP_HUD_GenericModifyList_C:UpdateGenericModifyTipsFunc(bIsShow, Data, 
     self.WBP_GenericModifyBagTips:Hide()
   end
 end
+
 function WBP_HUD_GenericModifyList_C:HideMask()
   self:SelectClick(false)
 end
+
 function WBP_HUD_GenericModifyList_C:SelectClick(bIsShow, CanPlayAnim)
   if bIsShow then
     self.ShowStatus = ShowStatus.ShowAll
@@ -225,11 +235,13 @@ function WBP_HUD_GenericModifyList_C:SelectClick(bIsShow, CanPlayAnim)
   self.CanPlayAnim = CanPlayAnim
   self:InitHudGenericModifyList(bIsShow)
 end
+
 function WBP_HUD_GenericModifyList_C:ShowAllNoMask()
   self.ShowStatus = ShowStatus.ShowAllNoMask
   UpdateVisibility(self.CanvasPanelMask, false)
   self:InitHudGenericModifyList(true)
 end
+
 function WBP_HUD_GenericModifyList_C:HighLightModifyItem(Slot, bIsHighlight)
   for k, v in pairs(self.SlotToGenericModifyItem) do
     v:HightLight(false)
@@ -238,9 +250,11 @@ function WBP_HUD_GenericModifyList_C:HighLightModifyItem(Slot, bIsHighlight)
     self.SlotToGenericModifyItem[Slot]:HightLight(bIsHighlight)
   end
 end
+
 function WBP_HUD_GenericModifyList_C:Hide()
   UpdateVisibility(self, false)
 end
+
 function WBP_HUD_GenericModifyList_C:Destruct()
   self.Overridden.Destruct(self)
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.TimerHandle) then
@@ -248,9 +262,11 @@ function WBP_HUD_GenericModifyList_C:Destruct()
   end
   UnListenObjectMessage(GMP.MSG_World_GenericModify_OnUpdateTeamSpirit, self)
 end
+
 function WBP_HUD_GenericModifyList_C:InitFirstItemLeftNavTargetWidget(Widget)
   self.ItemDownNavWidget = Widget
 end
+
 function WBP_HUD_GenericModifyList_C:ItemDownNav()
   if self.ShowStatus == ShowStatus.ShowAll then
     return self.WBP_HUD_GenericModifyItem
@@ -259,16 +275,19 @@ function WBP_HUD_GenericModifyList_C:ItemDownNav()
   end
   return nil
 end
+
 function WBP_HUD_GenericModifyList_C:ItemFirst_1_LeftNav()
   if CheckIsVisility(self.WBP_HUD_GenericModifyItem_First_8) then
     return self.WBP_HUD_GenericModifyItem_First_8
   end
   return self.WBP_HUD_GenericModifyItem_First_5
 end
+
 function WBP_HUD_GenericModifyList_C:ItemFirst_5_RightNav()
   if CheckIsVisility(self.WBP_HUD_GenericModifyItem_First_8) then
     return self.WBP_HUD_GenericModifyItem_First_8
   end
   return self.WBP_HUD_GenericModifyItem_First_1
 end
+
 return WBP_HUD_GenericModifyList_C

@@ -1,8 +1,10 @@
 local WBP_DataTurbulenceDeliverCdBombInfo_C = UnLua.Class()
+
 function WBP_DataTurbulenceDeliverCdBombInfo_C:SetOwningBomb(OwningBomb)
   self.OwningBomb = OwningBomb
   self:InitWidget()
 end
+
 function WBP_DataTurbulenceDeliverCdBombInfo_C:InitWidget()
   if self.OwningBomb then
     self.CountdownTime = self.OwningBomb:GetDeliverCdTime()
@@ -27,6 +29,7 @@ function WBP_DataTurbulenceDeliverCdBombInfo_C:InitWidget()
     Mat2:SetScalarParameterValue("scale_speed", 0.0)
   end
 end
+
 local MappedRangeValueClamped = function(Value, InMin, InMax, OutMin, OutMax)
   if InMin == InMax then
     error("Input range is invalid (InMin should not be equal to InMax)")
@@ -35,6 +38,7 @@ local MappedRangeValueClamped = function(Value, InMin, InMax, OutMin, OutMax)
   local mappedValue = OutMin + (OutMax - OutMin) * normalized
   return math.clamp(mappedValue, OutMin, OutMax)
 end
+
 function WBP_DataTurbulenceDeliverCdBombInfo_C:UpdateWidgetPosition()
   local CameraManager = UE.UGameplayStatics.GetPlayerCameraManager(self, 0)
   if CameraManager and self.OwningBomb then
@@ -46,6 +50,7 @@ function WBP_DataTurbulenceDeliverCdBombInfo_C:UpdateWidgetPosition()
     self:SetRenderScale(UE.FVector2D(ScaleFactor, ScaleFactor))
   end
 end
+
 function WBP_DataTurbulenceDeliverCdBombInfo_C:LuaTick(InDeltaTime)
   self:UpdateWidgetPosition()
   if self.OwningBomb then
@@ -57,4 +62,5 @@ function WBP_DataTurbulenceDeliverCdBombInfo_C:LuaTick(InDeltaTime)
     self.txt_Countdown:SetText(math.ceil(self.CountdownTime))
   end
 end
+
 return WBP_DataTurbulenceDeliverCdBombInfo_C

@@ -1,4 +1,5 @@
 local WBP_GameSettingsItemListPanel_C = UnLua.Class()
+
 function WBP_GameSettingsItemListPanel_C:Show(TagName)
   self.TagName = TagName
   local LabelRowInfo = LogicGameSetting.GetLabelRowInfo(self.TagName)
@@ -9,6 +10,7 @@ function WBP_GameSettingsItemListPanel_C:Show(TagName)
   self.Txt_LabelName:SetText(LabelRowInfo.Name)
   self:RefreshItemList()
 end
+
 function WBP_GameSettingsItemListPanel_C:RefreshItemList()
   local AllChild = self.ItemList:GetAllChildren()
   for i, SingleChild in pairs(AllChild) do
@@ -33,9 +35,11 @@ function WBP_GameSettingsItemListPanel_C:RefreshItemList()
     end
   end
 end
+
 function WBP_GameSettingsItemListPanel_C:DoCustomNavigation(Type)
   EventSystem.Invoke(EventDef.GameSettings.OnItemNavigation, Type)
 end
+
 function WBP_GameSettingsItemListPanel_C:Hide()
   self:SetVisibility(UE.ESlateVisibility.Collapsed)
   local AllChild = self.ItemList:GetAllChildren()
@@ -43,4 +47,5 @@ function WBP_GameSettingsItemListPanel_C:Hide()
     SingleChild:Hide()
   end
 end
+
 return WBP_GameSettingsItemListPanel_C

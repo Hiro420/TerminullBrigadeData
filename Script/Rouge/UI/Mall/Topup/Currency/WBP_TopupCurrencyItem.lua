@@ -1,12 +1,14 @@
 local WBP_TopupCurrencyItem = UnLua.Class()
 local TopupHandler = require("Protocol.Topup.TopupHandler")
 local TopupData = require("Modules.Topup.TopupData")
+
 function WBP_TopupCurrencyItem:Construct()
   self.Btn_Main.OnClicked:Add(self, self.BindOnMainButtonClicked)
   self.Btn_Main.OnHovered:Add(self, self.BindOnMainButtonHovered)
   self.Btn_Main.OnUnhovered:Add(self, self.BindOnMainButtonUnhovered)
   SetImageBrushBySoftObject(self.Img_Bottom, self.BottomIconSoftObj)
 end
+
 function WBP_TopupCurrencyItem:Show(ProductId, Index)
   if 1 == Index then
     UpdateVisibility(self, true)
@@ -53,6 +55,7 @@ function WBP_TopupCurrencyItem:Show(ProductId, Index)
     UpdateVisibility(self.Overlay_SpecialDesc, false)
   end
 end
+
 function WBP_TopupCurrencyItem:BindOnMainButtonClicked(...)
   if not self.MidasProductId then
     return
@@ -62,6 +65,7 @@ function WBP_TopupCurrencyItem:BindOnMainButtonClicked(...)
     print("RequestBuyMisdasProduct failed")
   end
 end
+
 function WBP_TopupCurrencyItem:BindOnMainButtonHovered(...)
   if self.IsBigItem then
     self:PlayAnimation(self.Ani_hover_mask2)
@@ -69,6 +73,7 @@ function WBP_TopupCurrencyItem:BindOnMainButtonHovered(...)
     self:PlayAnimation(self.Ani_hover_mask1)
   end
 end
+
 function WBP_TopupCurrencyItem:BindOnMainButtonUnhovered(...)
   if self.IsBigItem then
     self:PlayAnimation(self.Ani_Unhover_mask2, 0.0, 1, UE.EUMGSequencePlayMode.Forward, 1.0, false)
@@ -76,6 +81,7 @@ function WBP_TopupCurrencyItem:BindOnMainButtonUnhovered(...)
     self:PlayAnimation(self.Ani_Unhover_mask1, 0.0, 1, UE.EUMGSequencePlayMode.Forward, 1.0, false)
   end
 end
+
 function WBP_TopupCurrencyItem:Hide(...)
   UpdateVisibility(self, false)
   self.MidasProductId = nil
@@ -83,7 +89,9 @@ function WBP_TopupCurrencyItem:Hide(...)
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.InAnimTimer)
   end
 end
+
 function WBP_TopupCurrencyItem:Destruct(...)
   self:Hide()
 end
+
 return WBP_TopupCurrencyItem

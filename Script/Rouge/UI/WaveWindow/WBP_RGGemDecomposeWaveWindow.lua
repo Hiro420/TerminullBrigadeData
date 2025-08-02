@@ -1,5 +1,6 @@
 local WBP_RGGemDecomposeWaveWindow = UnLua.Class()
 local GemData = require("Modules.Gem.GemData")
+
 function WBP_RGGemDecomposeWaveWindow:Show(GemIdList)
   local ResourceList = {}
   for index, GemId in ipairs(GemIdList) do
@@ -26,4 +27,5 @@ function WBP_RGGemDecomposeWaveWindow:Show(GemIdList)
   end
   HideOtherItem(self.Horizontal_ItemList, Index, true)
 end
+
 return WBP_RGGemDecomposeWaveWindow

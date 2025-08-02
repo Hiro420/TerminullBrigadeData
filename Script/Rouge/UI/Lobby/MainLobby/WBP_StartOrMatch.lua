@@ -1,5 +1,6 @@
 local ClimbTowerData = require("UI.View.ClimbTower.ClimbTowerData")
 local WBP_StartOrMatch = UnLua.Class()
+
 function WBP_StartOrMatch:Show(...)
   self.Button_StartMatch.OnClicked:Add(self, self.OnClicked_StartMatch)
   self.Button_StartMatch.OnHovered:Add(self, self.OnHovered_StartMatch)
@@ -35,9 +36,11 @@ function WBP_StartOrMatch:Show(...)
   EventSystem.AddListener(self, EventDef.Lobby.UpdateResourceInfo, self.BindOnResourceUpdate)
   EventSystem.AddListenerNew(EventDef.Lobby.UpdateRoomMembersInfo, self, self.BindOnUdpateTeamMembersInfo)
 end
+
 function WBP_StartOrMatch:BindOnResourceUpdate()
   self:UpdateTicketStatus(false)
 end
+
 function WBP_StartOrMatch:StartMatchOrStartGame(bStartGameOrStartMatch)
   if not bStartGameOrStartMatch then
     return
@@ -49,33 +52,40 @@ function WBP_StartOrMatch:StartMatchOrStartGame(bStartGameOrStartMatch)
     LogicTeam.RequestStartGameToServer()
   end
 end
+
 function WBP_StartOrMatch:BindOnUpdateMyTeamInfo(...)
   self:UpdateStartMatchButtonStatus()
   self:UpdateGameModeInfo()
   self:RefreshTeamFloorInfo()
   self:UpdateInputBoxNum()
 end
+
 function WBP_StartOrMatch:BindOnUdpateTeamMembersInfo(TargetPlayerList)
   self:UpdateTicketStatus(false)
 end
+
 function WBP_StartOrMatch:BindOnGetRolesGameFloorData()
   self:RefreshTeamFloorInfo()
 end
+
 function WBP_StartOrMatch:OnBindUIInput()
   if self.bBindConsoleInput then
     self.WBP_InteractTipWidgetStartGame:BindInteractAndClickEvent(self, self.OnClicked_StartMatch)
     self.WBP_InteractTipWidgetTeam:BindInteractAndClickEvent(self, self.BindOnMatchingButtonClicked)
   end
 end
+
 function WBP_StartOrMatch:OnUnBindUIInput()
   if self.bBindConsoleInput then
     self.WBP_InteractTipWidgetStartGame:UnBindInteractAndClickEvent(self, self.OnClicked_StartMatch)
     self.WBP_InteractTipWidgetTeam:UnBindInteractAndClickEvent(self, self.BindOnMatchingButtonClicked)
   end
 end
+
 function WBP_StartOrMatch:BindOnChangeDefaultNeedMatchTeammate(...)
   self:OnMatchingCheckStateChanged(LogicTeam.GetIsDefaultNeedMatchTeammate())
 end
+
 function WBP_StartOrMatch:RefreshTeamFloorInfo()
   UpdateVisibility(self.Img_CanNotStart, false)
   self.IsMatchFloorCondition = true
@@ -93,6 +103,7 @@ function WBP_StartOrMatch:RefreshTeamFloorInfo()
     end
   end
 end
+
 function WBP_StartOrMatch:UpdateGameModeInfo(...)
   local CurModeId = LogicTeam.GetModeId()
   local Result, GameModeRowInfo = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGameMode, CurModeId)
@@ -103,6 +114,7 @@ function WBP_StartOrMatch:UpdateGameModeInfo(...)
     end
   end
 end
+
 function WBP_StartOrMatch:BindOnTeamStateChanged(OldState, NewState)
   if NewState == LogicTeam.TeamState.Idle then
     self:UpdateGameModeInfo()
@@ -126,9 +138,11 @@ function WBP_StartOrMatch:BindOnTeamStateChanged(OldState, NewState)
     self:ChangeGameMode(nil, true)
   end
 end
+
 function WBP_StartOrMatch:UpdateCheckPanelTarget(IsOriPanel)
   self.TargetCheckPanel = IsOriPanel and self.Overlay_AllCheckMatchingPanel or self.Overlay_AllCheckMatchingPanel_1
 end
+
 function WBP_StartOrMatch:ChangeGameMode(GameModeId, bInLobbyMainPanel)
   UpdateVisibility(self.Overlay_1, false)
   UpdateVisibility(self.Overlay_0, false)
@@ -139,13 +153,17 @@ function WBP_StartOrMatch:ChangeGameMode(GameModeId, bInLobbyMainPanel)
   UpdateVisibility(self.Overlay_1, GameModeId == TableEnums.ENUMGameMode.NORMAL)
   UpdateVisibility(self.Overlay_0, GameModeId == TableEnums.ENUMGameMode.TOWERClIMBING)
 end
+
 function WBP_StartOrMatch:PlayClickedAnimation()
   self:PlayAnimation(self.Ani_click)
 end
+
 function WBP_StartOrMatch:PlayPressedAnimation()
 end
+
 function WBP_StartOrMatch:PlayReleasedAnimation()
 end
+
 function WBP_StartOrMatch:OnClicked_StartMatch()
   EventSystem.Invoke(EventDef.BeginnerGuide.OnClickedLobbyStartMatchButton)
   self:PlayClickedAnimation()
@@ -224,6 +242,7 @@ function WBP_StartOrMatch:OnClicked_StartMatch()
     end
   end
 end
+
 function WBP_StartOrMatch:IsNeedMatch()
   local IsChecked = LogicTeam.GetIsDefaultNeedMatchTeammate()
   if DataMgr.IsInTeam() then
@@ -234,9 +253,11 @@ function WBP_StartOrMatch:IsNeedMatch()
   end
   return IsChecked
 end
+
 function WBP_StartOrMatch:OnHovered_StartMatch()
   self:ChangeStartMatchButtonHoverVis(true)
 end
+
 function WBP_StartOrMatch:ChangeStartMatchButtonHoverVis(IsHover)
   if IsHover then
     self.Image_loop:SetVisibility(UE.ESlateVisibility.selfHitTestInvisible)
@@ -246,18 +267,23 @@ function WBP_StartOrMatch:ChangeStartMatchButtonHoverVis(IsHover)
     self.Image_loop_1:SetVisibility(UE.ESlateVisibility.Collapsed)
   end
 end
+
 function WBP_StartOrMatch:OnUnhovered_StartMatch()
   self:ChangeStartMatchButtonHoverVis(false)
 end
+
 function WBP_StartOrMatch:OnPressed_StartMatch()
   self:PlayPressedAnimation()
 end
+
 function WBP_StartOrMatch:OnReleased_StartMatch()
   self:PlayReleasedAnimation()
 end
+
 function WBP_StartOrMatch:BindOnMatchingButtonClicked(...)
   self:OnMatchingCheckStateChanged(false)
 end
+
 function WBP_StartOrMatch:BindOnNotMatchingButtonClicked(...)
   LuaAddClickStatistics("LobbyAutomaticMatching")
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
@@ -266,6 +292,7 @@ function WBP_StartOrMatch:BindOnNotMatchingButtonClicked(...)
   end
   self:OnMatchingCheckStateChanged(true)
 end
+
 function WBP_StartOrMatch:BindOnFillButtonClicked()
   local OwnNum = DataMgr.GetPackbackNumById(self.CostResId)
   if 0 == OwnNum then
@@ -274,6 +301,7 @@ function WBP_StartOrMatch:BindOnFillButtonClicked()
   end
   local TeamMemberCount = math.clamp(#DataMgr.GetTeamMembersInfo(), 1, 3)
   local SingleNeed = self.MaxNum / TeamMemberCount
+  local TeamTickNum = LogicTeam.GetTeamTicketNum(true)
   local SingleTick = LogicTeam:GetMemberTicketNum(DataMgr:GetUserId())
   if SingleNeed < SingleTick then
     if not DataMgr.IsInTeam() then
@@ -292,11 +320,11 @@ function WBP_StartOrMatch:BindOnFillButtonClicked()
       LogicTeam.RequestCreateTeamToServer({
         self,
         function()
-          LogicTeam.RequestPreDeductTicket(math.min(SingleNeed, OwnNum))
+          LogicTeam.RequestPreDeductTicket(math.min(SingleNeed, OwnNum, self.MaxNum - TeamTickNum))
         end
       })
     else
-      LogicTeam.RequestPreDeductTicket(math.min(SingleNeed, OwnNum))
+      LogicTeam.RequestPreDeductTicket(math.min(SingleNeed, OwnNum, self.MaxNum - TeamTickNum))
     end
     if OwnNum >= SingleNeed then
       ShowWaveWindow(1464)
@@ -305,6 +333,7 @@ function WBP_StartOrMatch:BindOnFillButtonClicked()
     end
   end
 end
+
 function WBP_StartOrMatch:OnMatchingCheckStateChanged(IsChecked)
   if IsChecked then
     self.StateCtrl_Match:ChangeStatus(EMatch.Match)
@@ -317,6 +346,7 @@ function WBP_StartOrMatch:OnMatchingCheckStateChanged(IsChecked)
   self:UpdateStartMatchButtonStatus()
   PlaySound2DEffect(1, "")
 end
+
 function WBP_StartOrMatch:UpdateStartMatchButtonStatus()
   self:UpdateTicketStatus(false)
   local TeamInfo = DataMgr.GetTeamInfo()
@@ -339,6 +369,7 @@ function WBP_StartOrMatch:UpdateStartMatchButtonStatus()
   self.Txt_StartMatch_Projection:SetText(self.StartGameText)
   self:UpdateModeStatus()
 end
+
 function WBP_StartOrMatch:UpdateTicketStatus(bStartGameOrStartMatch)
   UpdateVisibility(self.CanvasPanel_InputBox, false)
   local CurModeId = LogicTeam.GetModeId()
@@ -429,6 +460,7 @@ function WBP_StartOrMatch:UpdateTicketStatus(bStartGameOrStartMatch)
     EventSystem.Invoke(EventDef.Lobby.UpdateTicketStatus, false)
   end
 end
+
 function WBP_StartOrMatch:CheckCanAdd(CurNum)
   local OwnNum = DataMgr.GetPackbackNumById(self.CostResId)
   local MaxNum = 0
@@ -453,12 +485,14 @@ function WBP_StartOrMatch:CheckCanAdd(CurNum)
   end
   return CurNum < OwnNum and MaxNum > LogicTeam.GetTeamTicketNum()
 end
+
 function WBP_StartOrMatch:CheckCanChange(Num)
   local OwnNum = DataMgr.GetPackbackNumById(self.CostResId)
   local TeamMemberCount = math.clamp(#DataMgr.GetTeamMembersInfo(), 1, 3)
   local SingleNeed = self.MaxNum / TeamMemberCount
   return Num <= OwnNum and Num <= SingleNeed
 end
+
 function WBP_StartOrMatch:Hide(...)
   self.Button_StartMatch.OnClicked:Remove(self, self.OnClicked_StartMatch)
   self.Button_StartMatch.OnHovered:Remove(self, self.OnHovered_StartMatch)
@@ -479,6 +513,7 @@ function WBP_StartOrMatch:Hide(...)
   EventSystem.RemoveListener(EventDef.Lobby.PredeductTicketSucc, self.StartMatchOrStartGame, self)
   EventSystem.RemoveListenerNew(EventDef.Lobby.UpdateRoomMembersInfo, self, self.BindOnUdpateTeamMembersInfo)
 end
+
 function WBP_StartOrMatch:UpdateTicket(SelectNum)
   if not DataMgr.IsInTeam() then
     LogicTeam.RequestCreateTeamToServer({
@@ -491,6 +526,7 @@ function WBP_StartOrMatch:UpdateTicket(SelectNum)
     LogicTeam.RequestPreDeductTicket(SelectNum)
   end
 end
+
 function WBP_StartOrMatch:UpdateInputBoxNum()
   local TickNum = LogicTeam.GetMemberTicketNum(DataMgr.GetUserId())
   local OwnNum = DataMgr.GetPackbackNumById(99019)
@@ -500,12 +536,15 @@ function WBP_StartOrMatch:UpdateInputBoxNum()
     self.WBP_CommonInputBox.Btn_Reduce:SetStyleByBottomStyleRowName(0 ~= TickNum and "FrenzyVirus_Btn_Changes_0" or "FrenzyVirus_Btn_Changes_enable")
   end
 end
+
 function WBP_StartOrMatch:UpdateModeStatus()
   local CurModeId = LogicTeam.GetModeId()
   if CurModeId ~= TableEnums.ENUMGameMode.TOWERClIMBING or not ClimbTowerData:MeetFaultScore() then
   end
 end
+
 function WBP_StartOrMatch:Destruct(...)
   self:Hide()
 end
+
 return WBP_StartOrMatch

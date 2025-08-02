@@ -8,6 +8,7 @@ local WBP_SettlementInComeView_C = UnLua.Class()
 local ExpTxt = UE.URGBlueprintLibrary.TextFromStringTable("1151")
 local FinisCountDown = 9
 local IncreaseHour = 5
+
 function WBP_SettlementInComeView_C:Construct()
   self.Overridden.Construct(self)
   self.WBP_CommonButton_Finish.OnMainButtonClicked:Add(self, self.FinishClick)
@@ -26,11 +27,13 @@ function WBP_SettlementInComeView_C:Construct()
   EventSystem.AddListenerNew(EventDef.RewardIncrease.ReceiveRewardIncreaseFailed, self, self.OnRewardAbandomClick)
   EventSystem.AddListenerNew(EventDef.RewardIncrease.RewardIncreaseSucc, self, self.OnRewardIncreaseSucc)
 end
+
 function WBP_SettlementInComeView_C:Destruct()
   if UE.UKismetSystemLibrary.K2_IsValidTimerHandle(self.Timer) then
     UE.UKismetSystemLibrary.K2_ClearAndInvalidateTimerHandle(self, self.Timer)
   end
 end
+
 function WBP_SettlementInComeView_C:NextStep()
   self.StepTimer = 0
   self.CurSettleIncomeStep = self.CurSettleIncomeStep + 1
@@ -42,6 +45,7 @@ function WBP_SettlementInComeView_C:NextStep()
     end
   end
 end
+
 function WBP_SettlementInComeView_C:ShowInit()
   self.bIncreaseCountDownTimer = nil
   UpdateVisibility(self.CanvasPanelAchieved, false)
@@ -68,11 +72,13 @@ function WBP_SettlementInComeView_C:ShowInit()
     self.StateCtrl_Result:ChangeStatus(ESettleStatus.Failed)
   end
 end
+
 function WBP_SettlementInComeView_C:RefreshBtnSaveGrowthSnapVis()
   local bShow = LogicSettlement:CheckCanShowSaveGrowthBtn()
   UpdateVisibility(self.Btn_SaveGrowthSnap, bShow, true)
   UpdateVisibility(self.WBP_SaveGrowth_AutoSave, bShow)
 end
+
 function WBP_SettlementInComeView_C:ShowModeInfo()
   if LogicSettlement:GetClearanceStatus() == SettlementStatus.Finish then
     UpdateVisibility(self.CanvasPanelAchieved, true)
@@ -89,6 +95,7 @@ function WBP_SettlementInComeView_C:ShowModeInfo()
     self.RGTextWorldName:SetText(row.Name)
   end
 end
+
 function WBP_SettlementInComeView_C:ShowBattleLagacyStep()
   if LogicSettlement.CheckHaveBattleLagacy() then
     if LogicSettlement.BattleLegacyData.bIsGenericModify then
@@ -100,9 +107,11 @@ function WBP_SettlementInComeView_C:ShowBattleLagacyStep()
     self:NextStep()
   end
 end
+
 function WBP_SettlementInComeView_C:ShowProfy()
   self.WBP_ProfySettlementUpgradeLevelView:Show()
 end
+
 function WBP_SettlementInComeView_C:ShowChip()
   UpdateVisibility(self.CanvasPanelChip, true)
   self.Txt_Desc:SetText(self.PuzzleTxtDesc)
@@ -144,6 +153,7 @@ function WBP_SettlementInComeView_C:ShowChip()
     end
     self.curPuzzleNum = index
   end
+  print(string.format("\230\156\172\229\177\128\229\156\168\233\154\190\229\186\166:%d,\232\142\183\229\190\151\230\160\184\229\191\131\230\149\176\233\135\143\228\184\186:%d", LogicSettlement:GetClearanceDifficulty(), #gemList))
   HideOtherItem(self.ScrollBoxChipList, index, true)
   if index <= 1 then
     UpdateVisibility(self.CanvasPanelIcrease, false)
@@ -154,6 +164,7 @@ function WBP_SettlementInComeView_C:ShowChip()
     UpdateVisibility(self.SizeBox_ChipList, true)
   end
 end
+
 function WBP_SettlementInComeView_C:ShowIncome()
   UpdateVisibility(self.CanvasPanelOtherInCome, true)
   local BaseValueExp, IncrementValueExp = LogicSettlement:GetExp()
@@ -190,7 +201,7 @@ function WBP_SettlementInComeView_C:ShowIncome()
   for i, v in ipairs(SettlementIncomePropId) do
     if not IncomePropIdMap[v] then
       local item = GetOrCreateItem(self.WrapBoxInComeList, idx, self.SettlementIncomeItemPlotFragment:GetClass())
-      local num = LogicSettlement:GetSettlementItemStackByConfigId(LogicSettlement:GetOrInitSelfPlayerId(), tonumber(v))
+      local num, tbDetails, stackTotal = LogicSettlement:GetSettlementItemStackByConfigId(LogicSettlement:GetOrInitSelfPlayerId(), tonumber(v))
       item:InitByItemId(num, v, nil, true)
       idx = idx + 1
       IncomePropIdMap[v] = true
@@ -198,6 +209,16 @@ function WBP_SettlementInComeView_C:ShowIncome()
         bHasInCome = true
       end
       print("WBP_SettlementInComeView_C:ShowIncome SettlementIncomePropId", num, v)
+      if SettlementstatisticsIdMap[v] then
+        local ResName = ""
+        local resultGeneral, rowGeneral = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, v)
+        if resultGeneral then
+          ResName = tostring(rowGeneral.Name)
+        end
+        if stackTotal > 0 then
+          print(string.format("\230\156\172\229\177\128\229\156\168\233\154\190\229\186\166:%d,\232\142\183\229\190\151\231\187\147\231\174\151\233\129\147\229\133\183ID:%d,\229\144\141\231\167\176:%s,\229\159\186\231\161\128\230\149\176\233\135\143\228\184\186:%d,\230\157\131\231\155\138\229\138\160\230\136\144\230\149\176\233\135\143\228\184\186:%d,\230\128\187\230\149\176\233\135\143\228\184\186:%d", LogicSettlement:GetClearanceDifficulty(), v, ResName, num, tbDetails.Value or 0, stackTotal))
+        end
+      end
     else
       UnLua.LogWarn("SettlementIncomePropId \233\133\141\231\189\174\230\156\137\233\135\141\229\164\141", v)
     end
@@ -224,6 +245,7 @@ function WBP_SettlementInComeView_C:ShowIncome()
   self:UpdateIncreaseInfo(true)
   self:ShowBeginnerClearReward()
 end
+
 function WBP_SettlementInComeView_C:ShowBeginnerClearReward()
   if LogicTeam.GetModeId() ~= TableEnums.ENUMGameMode.BEGINERGUIDANCE then
     return
@@ -255,6 +277,7 @@ function WBP_SettlementInComeView_C:ShowBeginnerClearReward()
     HideOtherItem(self.BeginnerClearRewardList, Index, true)
   end
 end
+
 function WBP_SettlementInComeView_C:UpdateIncreaseInfo(bRequest)
   if bRequest then
     local RewardIncreaseModule = ModuleManager:Get("RewardIncreaseModule")
@@ -285,6 +308,7 @@ function WBP_SettlementInComeView_C:UpdateIncreaseInfo(bRequest)
     end
   end
 end
+
 function WBP_SettlementInComeView_C:ShowInteract()
   UpdateVisibility(self.CanvasPanelOperator, true)
   if LogicSettlement:GetClearanceStatus() == SettlementStatus.Finish then
@@ -298,12 +322,14 @@ function WBP_SettlementInComeView_C:ShowInteract()
     print("WBP_SettlementInComeView_C:ShowInteract OnSettlementFail")
   end
 end
+
 function WBP_SettlementInComeView_C:ShowInComeView(ParentView)
   self.ParentView = ParentView
   self.CurSettleIncomeStep = -1
   UpdateVisibility(self, true)
   self:NextStep()
 end
+
 function WBP_SettlementInComeView_C:TriggerIncomeAni()
   print("WBP_SettlementInComeView_C:TriggerIncomeAni")
   if self.curPuzzleNum > 0 then
@@ -316,10 +342,12 @@ function WBP_SettlementInComeView_C:TriggerIncomeAni()
     self:PlayAnimation(self.Ani_Other_In)
   end
 end
+
 function WBP_SettlementInComeView_C:TriggerAniOtherIn()
   print("WBP_SettlementInComeView_C:TriggerAniOtherIn")
   self:PlayAnimation(self.Ani_Other_In)
 end
+
 function WBP_SettlementInComeView_C:PlaySeq(SoftObjPath)
   local LevelSequenceAsset = UE.URGBlueprintLibrary.TryLoadSoftPath(SoftObjPath)
   if not LevelSequenceAsset then
@@ -334,6 +362,7 @@ function WBP_SettlementInComeView_C:PlaySeq(SoftObjPath)
   end
   SequencePlayer:Play()
 end
+
 function WBP_SettlementInComeView_C:UpdateClearanceStatus()
   if LogicSettlement:GetClearanceStatus() == SettlementStatus.Finish then
     UpdateVisibility(self.CanvasPanelAchieved, true)
@@ -344,6 +373,7 @@ function WBP_SettlementInComeView_C:UpdateClearanceStatus()
     UpdateVisibility(self.CanvasPanelExplorationEnded, true)
   end
 end
+
 function WBP_SettlementInComeView_C:GetIconById(ItemId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if DTSubsystem then
@@ -354,6 +384,7 @@ function WBP_SettlementInComeView_C:GetIconById(ItemId)
   end
   return nil
 end
+
 function WBP_SettlementInComeView_C:GetNameById(ItemId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if DTSubsystem then
@@ -364,9 +395,11 @@ function WBP_SettlementInComeView_C:GetNameById(ItemId)
   end
   return nil
 end
+
 function WBP_SettlementInComeView_C:FinishClick()
   LogicSettlement:HideSettlement()
 end
+
 function WBP_SettlementInComeView_C:OpenTalentClick()
   FuncUtil.AddClickStatistics("PromoteAbilitymodule")
   local SystemOpenMgr = ModuleManager:Get("SystemOpenMgr")
@@ -376,6 +409,7 @@ function WBP_SettlementInComeView_C:OpenTalentClick()
   EventSystem.Invoke(EventDef.Settlement.OnClickSettlementTalent)
   self.ParentView:OnOpenTalentClick()
 end
+
 function WBP_SettlementInComeView_C:OpenSaveGrowthSnap()
   if LogicSettlement:GetClearanceStatus() ~= SettlementStatus.Finish then
     ShowWaveWindow(1405)
@@ -390,16 +424,19 @@ function WBP_SettlementInComeView_C:OpenSaveGrowthSnap()
   end
   self.ParentView:OpenSaveGrowthSnap()
 end
+
 function WBP_SettlementInComeView_C:OnRewardIncrease()
   local RewardIncreaseModule = ModuleManager:Get("RewardIncreaseModule")
   RewardIncreaseModule:RequestReceiverewardIncrease()
 end
+
 function WBP_SettlementInComeView_C:OnRewardIncreasePressed()
   if LogicSettlement:CheckIsInscreaseReward() then
     self.IncreaseLongPressTimer = 0
     LogicAudio.StartPowerUpReward()
   end
 end
+
 function WBP_SettlementInComeView_C:OnRewardIncreaseReleased()
   if self.IncreaseLongPressTimer then
     self.bRevertIncreaseClip = true
@@ -407,14 +444,19 @@ function WBP_SettlementInComeView_C:OnRewardIncreaseReleased()
   self.IncreaseLongPressTimer = nil
   LogicAudio.EndPowerUpReward()
 end
+
 function WBP_SettlementInComeView_C:OnRewardIncreaseHovered()
 end
+
 function WBP_SettlementInComeView_C:OnRewardIncreaseUnHovered()
 end
+
 function WBP_SettlementInComeView_C:OnRewardAbandomClick()
 end
+
 function WBP_SettlementInComeView_C:OnAnimationFinished(Animation)
 end
+
 function WBP_SettlementInComeView_C:CheckClick()
   local SelfPlayerId = LogicSettlement:GetOrInitSelfPlayerId()
   print("WBP_SettlementInComeView_C:CheckClick", SelfPlayerId)
@@ -422,10 +464,12 @@ function WBP_SettlementInComeView_C:CheckClick()
     self.ParentView:ShowSettlementPlayerInfoView(SelfPlayerId)
   end
 end
+
 function WBP_SettlementInComeView_C:OnOpenTalentClick()
   UpdateVisibility(self.WBP_SettlementTalentView, true)
   self.WBP_SettlementTalentView:InitSettlementTalentView()
 end
+
 function WBP_SettlementInComeView_C:UpdateWorldList()
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   local WorldList = LogicSettlement:GetWorldList()
@@ -450,6 +494,7 @@ function WBP_SettlementInComeView_C:UpdateWorldList()
     HideOtherItem(self.ScrollBoxWorldList, Count)
   end
 end
+
 function WBP_SettlementInComeView_C:ShowPuzzleTips(bIsShow, Target, puzzlePackageInfo, puzzleDetailInfo)
   UpdateVisibility(self.RGAutoLoadPanelChipAttrListTips, bIsShow)
   if bIsShow then
@@ -477,6 +522,7 @@ function WBP_SettlementInComeView_C:ShowPuzzleTips(bIsShow, Target, puzzlePackag
     })
   end
 end
+
 function WBP_SettlementInComeView_C:ShowGemTips(bIsShow, Target, GemId, GemPackageInfo)
   UpdateVisibility(self.RGAutoLoadPanelGemTips, bIsShow)
   if bIsShow then
@@ -504,6 +550,7 @@ function WBP_SettlementInComeView_C:ShowGemTips(bIsShow, Target, GemId, GemPacka
     })
   end
 end
+
 function WBP_SettlementInComeView_C:ShowBattleLagacyModifyChoosePanel(BattleLagacyList)
   print("WBP_SettlementInComeView_C:ShowBattleLagacyModifyChoosePanel", BattleLagacyList)
   if not RGUIMgr:IsShown(UIConfig.WBP_GenericModifyChoosePanel_C.UIName) then
@@ -514,6 +561,7 @@ function WBP_SettlementInComeView_C:ShowBattleLagacyModifyChoosePanel(BattleLaga
     end
   end
 end
+
 function WBP_SettlementInComeView_C:ShowBattleLagacy(CurBattleLagacyData)
   print("WBP_SettlementInComeView_C:ShowBattleLagacy CurBattleLagacyData", CurBattleLagacyData)
   if not RGUIMgr:IsShown(UIConfig.WBP_BattleLagacyInscriptionRewardReminder_C.UIName) then
@@ -524,12 +572,14 @@ function WBP_SettlementInComeView_C:ShowBattleLagacy(CurBattleLagacyData)
     end
   end
 end
+
 function WBP_SettlementInComeView_C:OnTriggerBattleLagacyList(BattleLagacyList)
   self.BattleLagacyList = BattleLagacyList
   if self.bCanShowBattleLagacy then
     self:ShowBattleLagacyModifyChoosePanel(BattleLagacyList)
   end
 end
+
 function WBP_SettlementInComeView_C:OnTriggerCurrBattleLagacy(CurBattleLagacyData)
   self.CurBattleLagacyData = CurBattleLagacyData
   UpdateVisibility(self.Canvas_BattleLagacy, true)
@@ -548,10 +598,12 @@ function WBP_SettlementInComeView_C:OnTriggerCurrBattleLagacy(CurBattleLagacyDat
     end
   end
 end
+
 function WBP_SettlementInComeView_C:OnModifyClose()
   print("WBP_SettlementInComeView_C:OnModifyClose()")
   self:NextStep()
 end
+
 function WBP_SettlementInComeView_C:OnInscriptionReminderClose()
   print("WBP_SettlementInComeView_C:OnInscriptionReminderClose()")
   UpdateVisibility(self.Canvas_BattleLagacy, true)
@@ -562,12 +614,14 @@ function WBP_SettlementInComeView_C:OnInscriptionReminderClose()
   self.WBP_SettlementBattleLagacyInscriptionItem:InitSettlementBattleLagacyInscription(LogicSettlement.BattleLegacyData)
   self:NextStep()
 end
+
 function WBP_SettlementInComeView_C:InvokeBDSettlementFailEvent(...)
   print("WBP_SettlementInComeView_C:InvokeBDSettlementFailEvent", LogicSettlement:GetClearanceStatus(), self.IsShowBattleLegacyView, self.IsShowIncreaseRewardPanel)
   if LogicSettlement:GetClearanceStatus() ~= SettlementStatus.Finish and not self.IsShowBattleLegacyView and not self.IsShowIncreaseRewardPanel and LogicSettlement:GetGameModeType() ~= UE.EGameModeType.TowerClimb then
     EventSystem.Invoke(EventDef.Settlement.OnSettlementFail)
   end
 end
+
 function WBP_SettlementInComeView_C:LuaTick(InDeltaTime)
   if self.CurSettleIncomeStep and SettlementStepInfo[self.CurSettleIncomeStep] then
     self.StepTimer = self.StepTimer + InDeltaTime
@@ -640,15 +694,18 @@ function WBP_SettlementInComeView_C:LuaTick(InDeltaTime)
     self.PreTimeStamp = self.PreTimeStamp + InDeltaTime
   end
 end
+
 function WBP_SettlementInComeView_C:ShowGenericModifyBagTips(bIsShow, ModifyId)
   UpdateVisibility(self.WBP_GenericModifyBagTips, bIsShow)
   if bIsShow then
     self.WBP_GenericModifyBagTips:InitGenericModifyTips(tonumber(ModifyId), false, -1)
   end
 end
+
 function WBP_SettlementInComeView_C:OnRewardIncreaseSucc()
   self:UpdateIncreaseInfo()
 end
+
 function WBP_SettlementInComeView_C:OnReceiveRewardIncreaseSucc(resources)
   self.bReciveRewardIncreaseSucc = true
   LuaAddClickStatistics("ResultExtraReward")
@@ -717,6 +774,7 @@ function WBP_SettlementInComeView_C:OnReceiveRewardIncreaseSucc(resources)
   print("          \229\165\150\229\138\177\231\191\187\229\128\141             ")
   print("##############################")
 end
+
 function WBP_SettlementInComeView_C:Destruct()
   self.WBP_CommonButton_Finish.OnMainButtonClicked:Remove(self, self.FinishClick)
   self.WBP_CommonButton_CheckEff.OnMainButtonClicked:Remove(self, self.CheckClick)
@@ -733,4 +791,5 @@ function WBP_SettlementInComeView_C:Destruct()
   EventSystem.RemoveListenerNew(EventDef.RewardIncrease.ReceiveRewardIncreaseFailed, self, self.OnRewardAbandomClick)
   EventSystem.RemoveListenerNew(EventDef.RewardIncrease.RewardIncreaseSucc, self, self.OnRewardIncreaseSucc)
 end
+
 return WBP_SettlementInComeView_C

@@ -3,6 +3,7 @@ local WBP_NormalPickTipList_C = UnLua.Class()
 local FilterItemTypeTb = {
   [TableEnums.ENUMResourceType.Chip] = true
 }
+
 function WBP_NormalPickTipList_C:Construct()
   self.AllWidgets:Clear()
   self.TipList:ClearChildren()
@@ -21,8 +22,10 @@ function WBP_NormalPickTipList_C:Construct()
   EventSystem.AddListener(self, EventDef.PickTipList.OnAddPickTipList, self.BindOnAddPickTipList)
   EventSystem.AddListener(self, EventDef.PickTipList.HidePickTipItem, self.BindOnHidePickTipItem)
 end
+
 function WBP_NormalPickTipList_C:FocusInput()
 end
+
 function WBP_NormalPickTipList_C:CheckFilterPickTip(ItemId)
   local result, row = LuaTableMgr.GetLuaTableRowInfo(TableNames.TBGeneral, ItemId)
   if result and FilterItemTypeTb[row.Type] then
@@ -30,6 +33,7 @@ function WBP_NormalPickTipList_C:CheckFilterPickTip(ItemId)
   end
   return false
 end
+
 function WBP_NormalPickTipList_C:BindOnPostItemChanged(ArticleId, OldStack, NewStack)
   if NewStack - OldStack <= 0 then
     print("\231\137\169\229\147\129\229\135\143\229\176\145")
@@ -41,10 +45,12 @@ function WBP_NormalPickTipList_C:BindOnPostItemChanged(ArticleId, OldStack, NewS
   end
   self:CreateItemTip(itemID, NewStack - OldStack)
 end
+
 function WBP_NormalPickTipList_C:BindOnAddPickTipList(Widget)
   print("BindOnAddPickTipList")
   self:AddWidgetToPanel(Widget)
 end
+
 function WBP_NormalPickTipList_C:BindOnHidePickTipItem(ItemWidget)
   local WidgetLifeTimer = self.LifeTimerHandleList:Find(ItemWidget)
   if WidgetLifeTimer and UE.UKismetSystemLibrary.K2_IsValidTimerHandle(WidgetLifeTimer) then
@@ -65,6 +71,7 @@ function WBP_NormalPickTipList_C:BindOnHidePickTipItem(ItemWidget)
     end
   end
 end
+
 function WBP_NormalPickTipList_C:AddWidgetToPanel(Widget)
   local CurCount = self.AllWidgets:Length()
   local RemoveWidget
@@ -89,6 +96,7 @@ function WBP_NormalPickTipList_C:AddWidgetToPanel(Widget)
   self:RefreshOrAddWidgetLifeTime(Widget)
   self:RefreshOrAddFadeInTime(Widget)
 end
+
 function WBP_NormalPickTipList_C:RefreshOrAddWidgetLifeTime(Widget)
   local WidgetLifeTimer = self.LifeTimerHandleList:Find(Widget)
   if WidgetLifeTimer and UE.UKismetSystemLibrary.K2_IsValidTimerHandle(WidgetLifeTimer) then
@@ -108,6 +116,7 @@ function WBP_NormalPickTipList_C:RefreshOrAddWidgetLifeTime(Widget)
   }, self.Duration + ItemIndex * self.TipInterval, false)
   self.LifeTimerHandleList:Add(Widget, Timer)
 end
+
 function WBP_NormalPickTipList_C:RefreshOrAddFadeInTime(Widget)
   local WidgetFadeInTimer = self.FadeInTimerHandleList:Find(Widget)
   local TimerElapsedTime = 0
@@ -138,6 +147,7 @@ function WBP_NormalPickTipList_C:RefreshOrAddFadeInTime(Widget)
     Widget.IsFadeIn = true
   end
 end
+
 function WBP_NormalPickTipList_C:CreateItemTip(ItemId, Num)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(self, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -171,10 +181,12 @@ function WBP_NormalPickTipList_C:CreateItemTip(ItemId, Num)
     PlaySound2DEffect(10004, "WBP_NormalPickTipList_C:BindOnPostItemChanged")
   end
 end
+
 function WBP_NormalPickTipList_C:BindOnClientPickupNotice(ItemId)
   print("BindOnClientPickupNotice", ItemId)
   self:CreateItemTip(ItemId, 1)
 end
+
 function WBP_NormalPickTipList_C:LuaTick(InDeltaTime)
   if self.NeedRefreshPos then
     local Pos = UE.FVector2D(0.0, 0.0)
@@ -194,6 +206,7 @@ function WBP_NormalPickTipList_C:LuaTick(InDeltaTime)
     end
   end
 end
+
 function WBP_NormalPickTipList_C:Destruct()
   local PC = UE.UGameplayStatics.GetPlayerController(self, 0)
   if PC then
@@ -206,4 +219,5 @@ function WBP_NormalPickTipList_C:Destruct()
   EventSystem.RemoveListener(EventDef.PickTipList.OnAddPickTipList, self.BindOnAddPickTipList, self)
   EventSystem.RemoveListener(EventDef.PickTipList.HidePickTipItem, self.BindOnHidePickTipItem, self)
 end
+
 return WBP_NormalPickTipList_C

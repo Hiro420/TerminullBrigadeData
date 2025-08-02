@@ -1,4 +1,5 @@
 local WBP_AccessorySlotPanel_C = UnLua.Class()
+
 function WBP_AccessorySlotPanel_C:UpdateAccessorySlots(AccessoryDataTable)
   for key, widget in pairs(self.CanvasPanel_AccessorySlotSet:GetAllChildren()) do
     widget:UpdateAccessorySlotItem(false, nil, nil)
@@ -17,4 +18,5 @@ function WBP_AccessorySlotPanel_C:UpdateAccessorySlots(AccessoryDataTable)
     end
   end
 end
+
 return WBP_AccessorySlotPanel_C

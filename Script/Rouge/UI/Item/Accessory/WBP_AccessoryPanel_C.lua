@@ -1,4 +1,5 @@
 local WBP_AccessoryPanel_C = UnLua.Class()
+
 function WBP_AccessoryPanel_C:Construct()
   self.WidgetClass = UE.UClass.Load("/Game/Rouge/UI/Item/Accessory/WBP_AccessoryCard.WBP_AccessoryCard_C")
   self.DiscardButton.OnClicked:Add(self, WBP_AccessoryPanel_C.OnClicked_DiscardButton)
@@ -14,6 +15,7 @@ function WBP_AccessoryPanel_C:Construct()
   self.WBP_EquippedPendant.OnCardSelect:Add(self, WBP_AccessoryPanel_C.OnCardSelect)
   self.WBP_EquippedCoating.OnCardSelect:Add(self, WBP_AccessoryPanel_C.OnCardSelect)
 end
+
 function WBP_AccessoryPanel_C:OnOpenPanel()
   if self:GetWeaponCapture() == false then
     return
@@ -34,14 +36,17 @@ function WBP_AccessoryPanel_C:OnOpenPanel()
   end
   self.CurrentDropDownButton = nil
 end
+
 function WBP_AccessoryPanel_C:OnClosePanel()
   self:UnDropDownAccessoryBox()
 end
+
 function WBP_AccessoryPanel_C:OnLoadPanel()
   self:LoadAllAccessories()
   self:LoadAllEquippedAccessories()
   self:LoadWeapon()
 end
+
 function WBP_AccessoryPanel_C:OnCardSelect(WBP_BaseCard)
   if WBP_BaseCard:GetClass() == self.WidgetClass then
     self.WBP_AccessoryInfoBox:LoadAccessoryInfo(WBP_BaseCard.AccessoryId)
@@ -70,8 +75,10 @@ function WBP_AccessoryPanel_C:OnCardSelect(WBP_BaseCard)
     end
   end
 end
+
 function WBP_AccessoryPanel_C:OnCardUnselect(WBP_BaseCard)
 end
+
 function WBP_AccessoryPanel_C:OnClicked_DiscardButton()
   if self.CurrentSelected and self.CurrentSelected.bSelected then
     local bagComponent = self:GetOwningPlayer():GetComponentByClass(UE.URGBagComponent:StaticClass())
@@ -79,6 +86,7 @@ function WBP_AccessoryPanel_C:OnClicked_DiscardButton()
     end
   end
 end
+
 function WBP_AccessoryPanel_C:OnBagChanged()
   if self.CurrentDropDownButton then
     self:LoadAccessoriesByType(self.CurrentDropDownButton.AccessoryType)
@@ -87,10 +95,12 @@ function WBP_AccessoryPanel_C:OnBagChanged()
   end
   self:DropDownAccessoryBox()
 end
+
 function WBP_AccessoryPanel_C:OnWeaponChanged(OldWeapon, NewWeapon)
   self:LoadWeapon()
   self:LoadAllEquippedAccessories()
 end
+
 function WBP_AccessoryPanel_C:OnAccessoryChanged()
   self:LoadWeapon()
   if self.CurrentDropDownButton then
@@ -100,6 +110,7 @@ function WBP_AccessoryPanel_C:OnAccessoryChanged()
   end
   self:LoadAllEquippedAccessories()
 end
+
 function WBP_AccessoryPanel_C:OnClicked_EquipButton()
   if self.CurrentSelected then
     if self:WillShowMessage(self.CurrentSelected.AccessoryId) then
@@ -110,6 +121,7 @@ function WBP_AccessoryPanel_C:OnClicked_EquipButton()
     end
   end
 end
+
 function WBP_AccessoryPanel_C:OnClicked_UnEquipButton()
   if self.CurrentSelected then
     if self:WillShowMessage(self.CurrentSelected.AccessoryId) then
@@ -120,12 +132,15 @@ function WBP_AccessoryPanel_C:OnClicked_UnEquipButton()
     end
   end
 end
+
 function WBP_AccessoryPanel_C:BoxConfirmEquip(Box)
   self:ConfirmEquip()
 end
+
 function WBP_AccessoryPanel_C:BoxConfirmUnEquip(Box)
   self:ConfirmUnEquip()
 end
+
 function WBP_AccessoryPanel_C:ConfirmEquip()
   if self.CurrentSelected then
     local AccessoryId = self.CurrentSelected.AccessoryId
@@ -141,6 +156,7 @@ function WBP_AccessoryPanel_C:ConfirmEquip()
     end
   end
 end
+
 function WBP_AccessoryPanel_C:ConfirmUnEquip()
   if self.CurrentSelected then
     self.CurrentSelected:UnselectCard()
@@ -159,10 +175,12 @@ function WBP_AccessoryPanel_C:ConfirmUnEquip()
     end
   end
 end
+
 function WBP_AccessoryPanel_C:OnDropDownButtonClicked(Button)
   self.CurrentDropDownButton = Button
   self:LoadAccessoriesByType(Button.AccessoryType)
 end
+
 function WBP_AccessoryPanel_C:LoadWeapon()
   local equipmentComponent = self:GetOwningPlayerPawn():GetComponentByClass(UE.URGEquipmentComponent:StaticClass())
   if equipmentComponent then
@@ -178,6 +196,7 @@ function WBP_AccessoryPanel_C:LoadWeapon()
     end
   end
 end
+
 function WBP_AccessoryPanel_C:LoadAccessoriesByType(Type)
   self.ItemGridPanel:ClearChildren()
   local bagComponent = self:GetOwningPlayer():GetComponentByClass(UE.URGBagComponent:StaticClass())
@@ -204,6 +223,7 @@ function WBP_AccessoryPanel_C:LoadAccessoriesByType(Type)
     end
   end
 end
+
 function WBP_AccessoryPanel_C:LoadAllAccessories()
   self.ItemGridPanel:ClearChildren()
   local bagComponent = self:GetOwningPlayer():GetComponentByClass(UE.URGBagComponent:StaticClass())
@@ -224,6 +244,7 @@ function WBP_AccessoryPanel_C:LoadAllAccessories()
     end
   end
 end
+
 function WBP_AccessoryPanel_C:LoadAllEquippedAccessories()
   local currentWeapon = UE.URGCharacterStatics.GetCurrentWeapon(self:GetOwningPlayerPawn())
   if currentWeapon then
@@ -241,6 +262,7 @@ function WBP_AccessoryPanel_C:LoadAllEquippedAccessories()
     end
   end
 end
+
 function WBP_AccessoryPanel_C:DropDownAccessoryBox()
   self.bDropDown = true
   self.ItemPanel.AccessoryDropDownBox:ClearChildren()
@@ -294,6 +316,7 @@ function WBP_AccessoryPanel_C:DropDownAccessoryBox()
     end
   end
 end
+
 function WBP_AccessoryPanel_C:CreateAccessoryButtonBox(ButonContext, AccessoryType)
   local AccWidgetClass = UE.UClass.Load("/Game/Rouge/UI/Item/Accessory/WBP_AccessoryButtonBox.WBP_AccessoryButtonBox_C")
   local wbp_AccessoryButtonBox = UE4.UWidgetBlueprintLibrary.Create(self, AccWidgetClass, self:GetOwningPlayer())
@@ -301,10 +324,12 @@ function WBP_AccessoryPanel_C:CreateAccessoryButtonBox(ButonContext, AccessoryTy
   self.ItemPanel.AccessoryDropDownBox:AddChildtoVerticalBox(wbp_AccessoryButtonBox)
   wbp_AccessoryButtonBox.OnClicked:Add(self, WBP_AccessoryPanel_C.OnDropDownButtonClicked)
 end
+
 function WBP_AccessoryPanel_C:UnDropDownAccessoryBox()
   self.bDropDown = false
   self.ItemPanel.AccessoryDropDownBox:ClearChildren()
 end
+
 function WBP_AccessoryPanel_C:WillShowMessage(Accessory_Id)
   local currentWeapon = UE.URGCharacterStatics.GetCurrentWeapon(self:GetOwningPlayerPawn())
   if currentWeapon then
@@ -318,6 +343,7 @@ function WBP_AccessoryPanel_C:WillShowMessage(Accessory_Id)
     end
   end
 end
+
 function WBP_AccessoryPanel_C:SelectFirstinBag()
   local data = self.ItemGridPanel:GetChildAt(0)
   if data then
@@ -329,4 +355,5 @@ function WBP_AccessoryPanel_C:SelectFirstinBag()
     self.CurrentSelected = nil
   end
 end
+
 return WBP_AccessoryPanel_C

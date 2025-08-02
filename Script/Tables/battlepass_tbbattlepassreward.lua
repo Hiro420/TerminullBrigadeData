@@ -307,7 +307,7 @@ local battlepass_tbbattlepassreward = {
       {key = 99026, value = 1}
     },
     PremiumReward = {
-      {key = 99026, value = 2}
+      {key = 99031, value = 1}
     },
     IsGrandPrize = 0
   },
@@ -328,10 +328,10 @@ local battlepass_tbbattlepassreward = {
     BattlePassLevel = 28,
     Exp = 27000,
     NormalReward = {
-      {key = 99989, value = 500}
+      {key = 99989, value = 2000}
     },
     PremiumReward = {
-      {key = 99989, value = 1000}
+      {key = 99989, value = 5000}
     },
     IsGrandPrize = 0
   },
@@ -376,10 +376,10 @@ local battlepass_tbbattlepassreward = {
     BattlePassLevel = 32,
     Exp = 31000,
     NormalReward = {
-      {key = 99989, value = 500}
+      {key = 99989, value = 2000}
     },
     PremiumReward = {
-      {key = 99989, value = 1000}
+      {key = 99989, value = 5000}
     },
     IsGrandPrize = 0
   },
@@ -427,7 +427,7 @@ local battlepass_tbbattlepassreward = {
       {key = 99033, value = 1}
     },
     PremiumReward = {
-      {key = 99033, value = 2}
+      {key = 99032, value = 1}
     },
     IsGrandPrize = 0
   },
@@ -436,10 +436,10 @@ local battlepass_tbbattlepassreward = {
     BattlePassLevel = 37,
     Exp = 36000,
     NormalReward = {
-      {key = 99989, value = 500}
+      {key = 99989, value = 2000}
     },
     PremiumReward = {
-      {key = 99989, value = 1000}
+      {key = 99989, value = 5000}
     },
     IsGrandPrize = 0
   },
@@ -496,10 +496,10 @@ local battlepass_tbbattlepassreward = {
     BattlePassLevel = 42,
     Exp = 41000,
     NormalReward = {
-      {key = 99989, value = 500}
+      {key = 99989, value = 2000}
     },
     PremiumReward = {
-      {key = 99989, value = 1000}
+      {key = 99989, value = 5000}
     },
     IsGrandPrize = 0
   },
@@ -556,10 +556,10 @@ local battlepass_tbbattlepassreward = {
     BattlePassLevel = 47,
     Exp = 46000,
     NormalReward = {
-      {key = 99989, value = 500}
+      {key = 99989, value = 2000}
     },
     PremiumReward = {
-      {key = 99989, value = 1000}
+      {key = 99989, value = 5000}
     },
     IsGrandPrize = 0
   },

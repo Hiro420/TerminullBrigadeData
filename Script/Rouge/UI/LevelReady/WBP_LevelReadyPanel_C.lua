@@ -1,4 +1,5 @@
 local WBP_LevelReadyPanel_C = UnLua.Class()
+
 function WBP_LevelReadyPanel_C:CreateAllReadyWidget()
   local GS = UE.UGameplayStatics.GetGameState(self)
   if not GS then
@@ -22,4 +23,5 @@ function WBP_LevelReadyPanel_C:CreateAllReadyWidget()
     Item:InitInfo(SinglePS:BP_GetPawn(), SinglePS:GetTeamIndex())
   end
 end
+
 return WBP_LevelReadyPanel_C

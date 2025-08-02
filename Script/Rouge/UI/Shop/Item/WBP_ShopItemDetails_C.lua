@@ -1,4 +1,5 @@
 local WBP_ShopItemDetails_C = UnLua.Class()
+
 function WBP_ShopItemDetails_C:RefreshItemDetails(ItemInfo)
   if nil == ItemInfo then
     return
@@ -57,4 +58,5 @@ function WBP_ShopItemDetails_C:RefreshItemDetails(ItemInfo)
     UpdateVisibility(self.OperateTipPanel, not ItemInfo.bSoldOut)
   end
 end
+
 return WBP_ShopItemDetails_C

@@ -1,9 +1,11 @@
 local WBP_GunCommonAttributeItem_C = UnLua.Class()
+
 function WBP_GunCommonAttributeItem_C:InitAttributeInfo(Name, Value)
   self.Txt_Name:SetText(Name)
   self.Txt_Value:SetText(Value)
   self:UpdateCompareStatus(0)
 end
+
 function WBP_GunCommonAttributeItem_C:UpdateCompareStatus(Result)
   if 0 == Result then
     self.Img_CompareStatus:SetVisibility(UE.ESlateVisibility.Collapsed)
@@ -26,4 +28,5 @@ function WBP_GunCommonAttributeItem_C:UpdateCompareStatus(Result)
     end
   end
 end
+
 return WBP_GunCommonAttributeItem_C

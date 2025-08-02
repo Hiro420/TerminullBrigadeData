@@ -1,8 +1,10 @@
 local WBP_HUDRoulette_C = UnLua.Class()
+
 function WBP_HUDRoulette_C:Construct()
   self.Overridden.Construct(self)
   self.CurHoveredArea = 0
 end
+
 function WBP_HUDRoulette_C:FocusInput()
   self.Overridden.FocusInput(self)
   local Pawn = self:GetOwningPlayerPawn()
@@ -14,6 +16,7 @@ function WBP_HUDRoulette_C:FocusInput()
   InputComp:SetMoveInputIgnored(false)
   self:SetEnhancedInputActionBlocking(true)
 end
+
 function WBP_HUDRoulette_C:UnfocusInput()
   self.Overridden.UnfocusInput(self)
   local PC = self:GetOwningPlayer()
@@ -25,9 +28,11 @@ function WBP_HUDRoulette_C:UnfocusInput()
   SetInputIgnore(Pawn, false)
   self:SetEnhancedInputActionBlocking(false)
 end
+
 function WBP_HUDRoulette_C:Destruct()
   self.Overridden.Destruct(self)
 end
+
 function WBP_HUDRoulette_C:OnDisplay()
   self.Overridden.OnDisplay(self)
   local HeroInfo = DataMgr.GetMyHeroInfo()
@@ -56,19 +61,24 @@ function WBP_HUDRoulette_C:OnDisplay()
   WBP_Roulette:InitBySlots(RouletteSlots, true)
   WBP_Roulette:PlayAnimationIn()
 end
+
 function WBP_HUDRoulette_C:OnUnDisplay()
   self.Overridden.OnUnDisplay(self, true)
   local WBP_Roulette = self.WBP_Roulette
   WBP_Roulette:UseSelectedAreaComm()
   WBP_Roulette:PlayAnimationOut()
 end
+
 function WBP_HUDRoulette_C:LuaTick(InDeltaTime)
   self.WBP_Roulette:UpdateAreaCoolDown(InDeltaTime)
 end
+
 function WBP_HUDRoulette_C:OnMouseLeave()
   self.WBP_Roulette:OnMouseLeave()
 end
+
 function WBP_HUDRoulette_C:OnMouseMove(MyGeometry, MouseEvent)
   self.WBP_Roulette:OnMouseMove(MyGeometry, MouseEvent)
 end
+
 return WBP_HUDRoulette_C

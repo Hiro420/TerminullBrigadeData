@@ -26,6 +26,7 @@ local RankScoreRatio = {
   0.6,
   0.3
 }
+
 function LogicSettlement.Clear()
   LogicSettlement.PlayerInfoList = nil
   LogicSettlement.MvpPlayer = nil
@@ -50,6 +51,7 @@ function LogicSettlement.Clear()
   UnListenObjectMessage(GMP.MSG_OnSettlement, GameInstance)
   LogicSettlement.bInited = false
 end
+
 function LogicSettlement.ShowSettlement()
   UE.URGBlueprintLibrary.SetTimerForNextTick(GameInstance, {
     GameInstance,
@@ -63,6 +65,7 @@ function LogicSettlement.ShowSettlement()
     end
   })
 end
+
 function LogicSettlement.InitSettlementData()
   if LogicSettlement.bIsInited then
     return
@@ -90,6 +93,7 @@ function LogicSettlement.InitSettlementData()
   SaveGrowthSnapData.SnapshotStaging = UE.URGStatisticsSubsystem.Get(GameInstance).SnapshotJsonStr
   print("LogicSettlement.InitSettlementData", SaveGrowthSnapData.SnapshotStaging, UE.URGStatisticsSubsystem.Get(GameInstance).SnapshotJsonStr)
 end
+
 function LogicSettlement:InitBattleLegacyData(BattleLegacyData)
   LogicSettlement.BattleLegacyData = {
     bIsGenericModify = BattleLegacyData.bIsGenericModify,
@@ -99,6 +103,7 @@ function LogicSettlement:InitBattleLegacyData(BattleLegacyData)
   print("LogicSettlement:InitBattleLegacyData1", BattleLegacyData.bIsGenericModify, BattleLegacyData.InscriptionId)
   print("LogicSettlement:InitBattleLegacyData2", LogicSettlement.BattleLegacyData.bIsGenericModify, LogicSettlement.BattleLegacyData.BattleLagacyId)
 end
+
 function LogicSettlement.ChangeLevel()
   print("LogicSettlement.ChangeLevel()")
   UE.UAsyncLoadingScreenLibrary.ClearLoadingScreenType()
@@ -109,15 +114,18 @@ function LogicSettlement.ChangeLevel()
     LogicLobby.OpenLobbyLevel()
   end
 end
+
 function LogicSettlement.Init()
   if not LogicSettlement.bInited then
     ListenObjectMessage(nil, GMP.MSG_OnSettlement, GameInstance, LogicSettlement.ShowSettlement)
     LogicSettlement.bInited = true
   end
 end
+
 function LogicSettlement.IsShown()
   return RGUIMgr:IsShown(UIConfig.WBP_SettlementView_C.UIName)
 end
+
 function LogicSettlement:HideSettlement()
   if not RGUIMgr:IsShown(UIConfig.WBP_SettlementView_C.UIName) then
     return
@@ -127,6 +135,7 @@ function LogicSettlement:HideSettlement()
   LogicSettlement:CheckAndAutoSaveGrowth()
   LogicLobby.OpenLobbyLevel()
 end
+
 function LogicSettlement:CheckAndAutoSaveGrowth()
   if GetCurSceneStatus() ~= UE.ESceneStatus.ESettlement then
     print("LogicSettlement:CheckAndAutoSaveGrowth, not in settlement scene")
@@ -145,6 +154,7 @@ function LogicSettlement:CheckAndAutoSaveGrowth()
   local DefaultSaveName = UE.FTextFormat(DefaultSaveNameFmt, SavePos + 1)
   SaveGrowthSnapHandler.RequestSaveGrowthSnapShot(SavePos, tostring(DefaultSaveName))
 end
+
 function LogicSettlement:GetHadSave()
   if GetCurSceneStatus() ~= UE.ESceneStatus.ESettlement then
     return true
@@ -155,6 +165,7 @@ function LogicSettlement:GetHadSave()
   end
   return false
 end
+
 function LogicSettlement:GetAutoSavePos()
   local EmptyPos = SaveGrowthSnapData:FindEmptyPos()
   if EmptyPos > 0 then
@@ -167,6 +178,7 @@ function LogicSettlement:GetAutoSavePos()
   print("LogicSettlement:GetAutoSavePos", EmptyPos, EarliestSavePos)
   return 0
 end
+
 function LogicSettlement:CheckCanSaveGrowth()
   if not LogicSettlement:CheckCanShowSaveGrowthBtn() then
     return false
@@ -176,6 +188,7 @@ function LogicSettlement:CheckCanSaveGrowth()
   end
   return true
 end
+
 function LogicSettlement:CheckCanShowSaveGrowthBtn()
   if LogicSettlement:GetClearanceStatus() ~= SettlementStatus.Finish then
     return false
@@ -192,6 +205,7 @@ function LogicSettlement:CheckCanShowSaveGrowthBtn()
   end
   return true
 end
+
 function LogicSettlement:GetItemStackAry(PlayerId)
   for i, v in iterator(UE.URGStatisticsSubsystem.Get(GameInstance).ItemStackSettleDataAry) do
     if PlayerId == v.UserId then
@@ -200,6 +214,7 @@ function LogicSettlement:GetItemStackAry(PlayerId)
   end
   return nil
 end
+
 function LogicSettlement:GetItemStacByConfigId(PlayerId, ConfigId)
   for i, v in iterator(UE.URGStatisticsSubsystem.Get(GameInstance).ItemStackSettleDataAry) do
     if PlayerId == v.UserId then
@@ -212,15 +227,17 @@ function LogicSettlement:GetItemStacByConfigId(PlayerId, ConfigId)
   end
   return 0
 end
+
 function LogicSettlement:GetSettlementItemStackByConfigId(PlayerId, ConfigId)
   for i, v in iterator(UE.URGStatisticsSubsystem.Get(GameInstance).ItemStackSettleDataAry) do
     if PlayerId == v.UserId then
       for index, vItem in iterator(v.SettlementItemStackArray.Items) do
         if vItem.ItemId == ConfigId then
           local stackTotal = vItem.Stack
+          local stackNormal = stackTotal
           local tbDetails = {}
           for idxPrivilegeDetail, vPrivilegeDetail in iterator(vItem.Details) do
-            stackTotal = stackTotal - vPrivilegeDetail.Value
+            stackNormal = stackNormal - vPrivilegeDetail.Value
             table.insert(tbDetails, {
               PrivilegeSource = vPrivilegeDetail.Source,
               Value = vPrivilegeDetail.Value,
@@ -228,13 +245,14 @@ function LogicSettlement:GetSettlementItemStackByConfigId(PlayerId, ConfigId)
               IncreasePercent = vPrivilegeDetail.Percent
             })
           end
-          return stackTotal, tbDetails
+          return stackNormal, tbDetails, stackTotal
         end
       end
     end
   end
-  return 0, {}
+  return 0, {}, 0
 end
+
 function LogicSettlement:GetPrivilegeDetailList(PlayerId)
   for i, v in iterator(UE.URGStatisticsSubsystem.Get(GameInstance).ItemStackSettleDataAry) do
     if PlayerId == v.UserId then
@@ -258,6 +276,7 @@ function LogicSettlement:GetPrivilegeDetailList(PlayerId)
   end
   return {}
 end
+
 function LogicSettlement:GetChipListByPlayerId(PlayerId)
   local chipList = {}
   for i, v in iterator(UE.URGStatisticsSubsystem.Get(GameInstance).ItemStackSettleDataAry) do
@@ -274,6 +293,7 @@ function LogicSettlement:GetChipListByPlayerId(PlayerId)
   end
   return chipList
 end
+
 function LogicSettlement:GetChipList()
   local chipList = {}
   for i = UE.ERGItemRarity.EIR_Normal, UE.ERGItemRarity.EIR_Max - 1 do
@@ -284,12 +304,15 @@ function LogicSettlement:GetChipList()
   end
   return chipList
 end
+
 function LogicSettlement:GetClearanceWorlds()
   return self.ClearanceWorlds
 end
+
 function LogicSettlement:GetClearanceStatus()
   return self.ClearanceStatus
 end
+
 function LogicSettlement.SetClearanceStatus(Status)
   LogicSettlement.ClearanceStatus = Status
   if SettlementStatus.Finish == Status then
@@ -298,28 +321,34 @@ function LogicSettlement.SetClearanceStatus(Status)
     UE.UAudioManager.SetStateByName("Settlement", "Lose", "\231\187\147\231\174\151")
   end
 end
+
 function LogicSettlement:GetClearanceDifficulty()
   local difficult = LogicTeam.GetFloor()
   print("LogicSettlement:GetClearanceDifficulty", difficult)
   return difficult or -1
 end
+
 function LogicSettlement:GetWorldList()
   return self.WroldList or {}
 end
+
 function LogicSettlement:GetLevel(IncrementValue)
   print("LogicSettlement:GetLevel chj", IncrementValue)
   local LevelTemp, _ = DataMgr.CalcUpLevel(IncrementValue)
   return LevelTemp
 end
+
 function LogicSettlement:GetExp()
   local playerId = LogicSettlement:GetOrInitSelfPlayerId()
   print(playerId)
   return UE.URGBlueprintLibrary.GetPlayerExp(playerId), UE.URGBlueprintLibrary.GetPlayerExp(playerId)
 end
+
 function LogicSettlement:GetCommonSpirit()
   local playerId = LogicSettlement:GetOrInitSelfPlayerId()
   return UE.URGBlueprintLibrary.GetPlayerSoul(playerId), UE.URGBlueprintLibrary.GetPlayerSoul(playerId)
 end
+
 function LogicSettlement:GetRoleSpirit()
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   if not PC then
@@ -328,9 +357,11 @@ function LogicSettlement:GetRoleSpirit()
   local playerId = LogicSettlement:GetOrInitSelfPlayerId()
   return UE.URGBlueprintLibrary.GetPlayerRoleSoul(playerId), UE.URGBlueprintLibrary.GetPlayerRoleSoul(playerId)
 end
+
 function LogicSettlement:GetClearanceDuration()
   return self.ClearanceDuration
 end
+
 function LogicSettlement:GetPlayerInfoById(PlayerId)
   local GS = UE.UGameplayStatics.GetGameState(self)
   if not GS then
@@ -343,6 +374,7 @@ function LogicSettlement:GetPlayerInfoById(PlayerId)
   end
   return nil
 end
+
 function LogicSettlement:GetPlayerInfoByPlayerId(PlayerId)
   local playerList = LogicSettlement:GetOrInitPlayerList()
   for i, v in ipairs(playerList) do
@@ -352,6 +384,7 @@ function LogicSettlement:GetPlayerInfoByPlayerId(PlayerId)
   end
   return nil
 end
+
 function LogicSettlement:InitClearanceDuration()
   local PC = UE.UGameplayStatics.GetPlayerController(GameInstance, 0)
   if not PC then
@@ -365,6 +398,7 @@ function LogicSettlement:InitClearanceDuration()
     self.ClearanceDuration = UE.URGStatisticsSubsystem.Get(GameInstance).ClearDuration
   end
 end
+
 function LogicSettlement:InitWorldList()
   local GameLevelSystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGGameLevelSystem:StaticClass())
   if GameLevelSystem then
@@ -395,6 +429,7 @@ function LogicSettlement:InitWorldList()
     self.WroldList = WroldList
   end
 end
+
 function LogicSettlement:InitGenericList(ModifySettleDataAryParam)
   for i, v in iterator(ModifySettleDataAryParam) do
     local playerId = v.UserId
@@ -410,6 +445,7 @@ function LogicSettlement:InitGenericList(ModifySettleDataAryParam)
     end
   end
 end
+
 function LogicSettlement:GetPassiveModifyAryByPlayerId(PlayerId)
   for i, v in iterator(UE.URGStatisticsSubsystem.Get(GameInstance).ModifySettleDataAry) do
     if PlayerId == v.UserId then
@@ -418,6 +454,7 @@ function LogicSettlement:GetPassiveModifyAryByPlayerId(PlayerId)
   end
   return {}
 end
+
 function LogicSettlement:GetActivatedModifiesByPlayerId(PlayerId)
   for i, v in iterator(UE.URGStatisticsSubsystem.Get(GameInstance).ModifySettleDataAry) do
     if PlayerId == v.UserId then
@@ -426,6 +463,7 @@ function LogicSettlement:GetActivatedModifiesByPlayerId(PlayerId)
   end
   return {}
 end
+
 function LogicSettlement:GetGenericModifyBySlotByPlayerId(PlayerId, SlotParam)
   for i, v in iterator(UE.URGStatisticsSubsystem.Get(GameInstance).ModifySettleDataAry) do
     if PlayerId == v.UserId then
@@ -438,6 +476,7 @@ function LogicSettlement:GetGenericModifyBySlotByPlayerId(PlayerId, SlotParam)
   end
   return nil
 end
+
 function LogicSettlement:InitScrollList(AttributeModifySettleDataAryParam)
   for i, v in pairs(AttributeModifySettleDataAryParam) do
     if not self.PlayerToScrollListData then
@@ -452,6 +491,7 @@ function LogicSettlement:InitScrollList(AttributeModifySettleDataAryParam)
     end
   end
 end
+
 function LogicSettlement:InitScrollListByExit()
   if not self.PlayerToScrollListData then
     self.PlayerToScrollListData = {}
@@ -475,6 +515,7 @@ function LogicSettlement:InitScrollListByExit()
     end
   end
 end
+
 function LogicSettlement:InitGeneircListByExit()
   if not self.PlayerToGenericListData then
     self.PlayerToGenericListData = {}
@@ -499,6 +540,7 @@ function LogicSettlement:InitGeneircListByExit()
     UE.URGStatisticsSubsystem.Get(GameInstance).ModifySettleDataAry:Add(modify)
   end
 end
+
 function LogicSettlement:InitItemListByExit()
   if not self.PlayerToItemListData then
     self.PlayerToItemListData = {}
@@ -519,6 +561,7 @@ function LogicSettlement:InitItemListByExit()
     UE.URGStatisticsSubsystem.Get(GameInstance).ItemStackSettleDataAry:Add(ItemData)
   end
 end
+
 function LogicSettlement:InitItemList(ItemSettleDataAryParam)
   for i, v in iterator(ItemSettleDataAryParam) do
     if not self.PlayerToItemListData then
@@ -530,6 +573,7 @@ function LogicSettlement:InitItemList(ItemSettleDataAryParam)
     end
   end
 end
+
 function LogicSettlement:GetScrollListByPlayerId(PlayerId)
   print("LogicSettlement:GetScrollListByPlayerId", PlayerId)
   for i, v in iterator(UE.URGStatisticsSubsystem.Get(GameInstance).AttributeModifySettleDataAry) do
@@ -543,6 +587,7 @@ function LogicSettlement:GetScrollListByPlayerId(PlayerId)
   end
   return {}
 end
+
 function LogicSettlement:GetScrollSetListByPlayerId(PlayerId)
   for i, v in iterator(UE.URGStatisticsSubsystem.Get(GameInstance).AttributeModifySettleDataAry) do
     if PlayerId == v.UserId then
@@ -554,12 +599,15 @@ function LogicSettlement:GetScrollSetListByPlayerId(PlayerId)
   end
   return {}
 end
+
 function LogicSettlement:InitGameMode()
   LogicSettlement.GameMode = UE.URGGameLevelSystem.GetInstance(GameInstance).WorldConfigs.WorldModeID
 end
+
 function LogicSettlement:GetGameMode()
   return LogicSettlement.GameMode or 0
 end
+
 function LogicSettlement:GetGameModeType()
   local gameMode = LogicSettlement:GetGameMode()
   local result, row = GetRowData(DT.DT_GameMode, tostring(gameMode))
@@ -568,6 +616,7 @@ function LogicSettlement:GetGameModeType()
   end
   return UE.EGameModeType.Test
 end
+
 function LogicSettlement:GetOrInitPlayerList()
   if self.PlayerList then
     return self.PlayerList
@@ -594,6 +643,7 @@ function LogicSettlement:GetOrInitPlayerList()
   table.sort(self.PlayerList, self.PlayerListSort)
   return self.PlayerList
 end
+
 function LogicSettlement:GetOrInitSelfPlayerId()
   if LogicSettlement.SelfPlayerId > 0 then
     return LogicSettlement.SelfPlayerId
@@ -606,6 +656,7 @@ function LogicSettlement:GetOrInitSelfPlayerId()
   end
   return -1
 end
+
 function LogicSettlement:GetOrInitCurHeroId()
   if LogicSettlement.SelfHeroId and LogicSettlement.SelfHeroId > 0 then
     return LogicSettlement.SelfHeroId
@@ -617,6 +668,7 @@ function LogicSettlement:GetOrInitCurHeroId()
   end
   return -1
 end
+
 function LogicSettlement:GetOrInitPuzzleInfoList()
   if LogicSettlement.PuzzleInfoList then
     return LogicSettlement.PuzzleInfoList
@@ -652,6 +704,7 @@ function LogicSettlement:GetOrInitPuzzleInfoList()
   end
   return LogicSettlement.PuzzleInfoList
 end
+
 function LogicSettlement:GetOrInitGemInfoList()
   if LogicSettlement.GemInfoList then
     return LogicSettlement.GemInfoList
@@ -693,12 +746,15 @@ function LogicSettlement:GetOrInitGemInfoList()
   end
   return LogicSettlement.GemInfoList
 end
+
 function LogicSettlement.PlayerListSortByPlayerId(FistPlayer, SecondPlayer)
   return FistPlayer.PlayerId < SecondPlayer.PlayerId
 end
+
 function LogicSettlement.PlayerListSort(FistPlayer, SecondPlayer)
   return FistPlayer.roleid < SecondPlayer.roleid
 end
+
 function LogicSettlement:CheckIsTeamClearance()
   if self.ClearanceStatus == SettlementStatus.Exit then
     return false
@@ -706,6 +762,7 @@ function LogicSettlement:CheckIsTeamClearance()
     return #self:GetOrInitPlayerList() > 1
   end
 end
+
 function LogicSettlement:GetPlayerNum()
   if self.PlayerInfoList then
     return #self.PlayerInfoList
@@ -716,6 +773,7 @@ function LogicSettlement:GetPlayerNum()
   end
   return GS.PlayerArray:Num()
 end
+
 function LogicSettlement:CalcTitle()
   if self.PlayerTitleMap then
     return self.PlayerTitleMap
@@ -756,6 +814,7 @@ function LogicSettlement:CalcTitle()
   end
   return self.PlayerTitleMap
 end
+
 function LogicSettlement:GetPlayerList()
   local GS = UE.UGameplayStatics.GetGameState(GameInstance)
   if not GS then
@@ -765,6 +824,7 @@ function LogicSettlement:GetPlayerList()
   table.sort(PlayerList, self.PlayerListSortByPlayerId)
   return PlayerList
 end
+
 function LogicSettlement:CalMvp(bIsFromPc)
   if self.MvpPlayer then
     return self.MvpPlayer
@@ -857,6 +917,7 @@ function LogicSettlement:CalMvp(bIsFromPc)
   end
   return self.MvpPlayer
 end
+
 function LogicSettlement:GetBattleInfoList(PlayerId)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -881,6 +942,7 @@ function LogicSettlement:GetBattleInfoList(PlayerId)
   end
   return battleInfoList
 end
+
 function LogicSettlement.GetGameStatisticsItemValue(GameStatisticsItem)
   local Value
   if GameStatisticsItem.ParamType == UE.ERGParamType.Int then
@@ -894,14 +956,17 @@ function LogicSettlement.GetGameStatisticsItemValue(GameStatisticsItem)
   end
   return Value
 end
+
 function LogicSettlement.SortPlayerInfo(FirstInfo, SecondInfo)
   return FirstInfo.Score > SecondInfo.Score
 end
+
 function LogicSettlement.SortRow(FirstName, SecondName)
   local FirstRow = LogicSettlement.GetSettleTitleTableRow(FirstName)
   local SecondRow = LogicSettlement.GetSettleTitleTableRow(SecondName)
   return FirstRow.Queue < SecondRow.Queue
 end
+
 function LogicSettlement.GetSettleTitleTableRow(IdParam)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -915,6 +980,7 @@ function LogicSettlement.GetSettleTitleTableRow(IdParam)
   print("\233\133\141\231\189\174\229\188\130\229\184\184\239\188\140\232\175\165\231\173\137\231\186\167\229\156\168\232\161\168\228\184\173\228\184\141\229\173\152\229\156\168", IdParam)
   return nil
 end
+
 function LogicSettlement.GetHeroArtResTableRow(IdParam)
   local DTSubsystem = UE.USubsystemBlueprintLibrary.GetGameInstanceSubsystem(GameInstance, UE.URGDataTableSubsystem:StaticClass())
   if not DTSubsystem then
@@ -928,6 +994,7 @@ function LogicSettlement.GetHeroArtResTableRow(IdParam)
   print("\233\133\141\231\189\174\229\188\130\229\184\184\239\188\140\232\175\165\231\173\137\231\186\167\229\156\168\232\161\168\228\184\173\228\184\141\229\173\152\229\156\168", IdParam)
   return nil
 end
+
 function LogicSettlement.SortScore(FirstInfo, SecondInfo)
   if FirstInfo.Score > SecondInfo.Score then
     return true
@@ -937,6 +1004,7 @@ function LogicSettlement.SortScore(FirstInfo, SecondInfo)
   end
   return false
 end
+
 function LogicSettlement.GetPresetWeaponData(TableId)
   local ToralResourceTable = LuaTableMgr.GetLuaTableByName(TableNames.TBGeneral)
   if not ToralResourceTable then
@@ -944,6 +1012,7 @@ function LogicSettlement.GetPresetWeaponData(TableId)
   end
   return ToralResourceTable[TableId]
 end
+
 function LogicSettlement.GetLeftRole()
   if UE.RGUtil.IsUObjectValid(LogicSettlement.LeftRole) then
     return LogicSettlement.LeftRole
@@ -954,6 +1023,7 @@ function LogicSettlement.GetLeftRole()
   end
   return LogicSettlement.LeftRole
 end
+
 function LogicSettlement.GetMiddleRole()
   if UE.RGUtil.IsUObjectValid(LogicSettlement.MiddleRole) then
     return LogicSettlement.MiddleRole
@@ -964,6 +1034,7 @@ function LogicSettlement.GetMiddleRole()
   end
   return LogicSettlement.MiddleRole
 end
+
 function LogicSettlement.GetRightRole()
   if UE.RGUtil.IsUObjectValid(LogicSettlement.RightRole) then
     return LogicSettlement.RightRole
@@ -974,6 +1045,7 @@ function LogicSettlement.GetRightRole()
   end
   return LogicSettlement.RightRole
 end
+
 function LogicSettlement.GetSettleCamera()
   if UE.RGUtil.IsUObjectValid(LogicSettlement.TargetCamera) then
     return LogicSettlement.TargetCamera
@@ -985,23 +1057,29 @@ function LogicSettlement.GetSettleCamera()
   end
   return LogicSettlement.TargetCamera
 end
+
 function LogicSettlement.ResetBattleLagacy()
   BattleLagacyModule:Reset()
 end
+
 function LogicSettlement.GetCurrBattleLagacy()
   BattleLagacyModule:GetCurrBattleLagacy()
 end
+
 function LogicSettlement.GetBattleLagacyList()
   BattleLagacyModule:GetBattleLagacyList()
 end
+
 function LogicSettlement.UpdateBattleLagacyList(BattleLagacyList)
   BattleLagacyModule:UpdateBattleLagacyList(BattleLagacyList)
 end
+
 function LogicSettlement.UpdateCurBattleLagacyData(BattleLagacyID, BattleLagacyType)
   if nil ~= BattleLagacyID and tonumber(BattleLagacyID) > 0 then
     BattleLagacyModule:UpdateCurBattleLagacyData(BattleLagacyID, BattleLagacyType)
   end
 end
+
 function LogicSettlement.CheckIsInscreaseReward()
   local worldMode = LogicTeam.GetWorldId()
   local result, row = GetRowData(DT.DT_GameMode, tostring(worldMode))
@@ -1013,6 +1091,7 @@ function LogicSettlement.CheckIsInscreaseReward()
   end
   return DataMgr.RewardIncreaseCount > 0
 end
+
 function LogicSettlement.CheckHaveBattleLagacy()
   if not LogicSettlement.BattleLegacyData then
     return false
